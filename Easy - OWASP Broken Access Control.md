@@ -149,6 +149,32 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 ![image](https://github.com/user-attachments/assets/4b560bd3-db7b-403d-ae35-dbe3015c501d)
 
 
+
+<br>
+
+<p>What is the name of the parameter in the JSON response from the login request that contains a redirect link?</p>
+<code>redirect_link</code><br>
+
+<p>Inspected the interception of my login.</p>
+
+![image](https://github.com/user-attachments/assets/f1b24ad3-fee4-44b9-a760-51feaa5d4e18)
+
+<br>
+
+
+<p>What Burp Suite module allows us to capture requests and responses between ourselves and our target?</p>
+<code>Proxy</code><br>
+
+
+![image](https://github.com/user-attachments/assets/aeeca082-fd92-443b-8cde-5d1b9d88b0e4)
+
+<br>
+
+<p>What is the admin’s email that can be found in the online users’ table?</p>
+<code></code>
+
+
+
 <p>Used <code>nmap</code></p>
 
 ```bash
