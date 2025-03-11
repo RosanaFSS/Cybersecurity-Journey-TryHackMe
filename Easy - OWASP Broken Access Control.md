@@ -254,20 +254,23 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 
 <br>
 
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h4>
+<br>
 
-
-<p>What kind of privilege escalation happened after accessing admin.php?<br>
-<code>vertical</code></p>p>
+> 5.1. <em>What kind of privilege escalation happened after accessing admin.php?</em><br><a id='5.1'></a>
+>> <code><strong>vertical</strong></code>
 
 <br>
 
+> 5.2. <em>What parameter allows the attacker to access the admin page?</em><br><a id='5.2'></a>
+>> <code><strong>isadmin</strong></code>
 
-<p>What parameter allows the attacker to access the admin page?<br>
-<code>isadmin</code></p>
+<br>
 
-<p>What is the flag in the admin page?<br>
-<code>THM{I_C4n_3xpl01t_B4c}</code></p>
+> 5.3. <em>What is the flag in the admin page?</em><br><a id='5.3'></a>
+>> <code><strong>THM{I_C4n_3xpl01t_B4c}</strong></code>
 
+<br>
 
 <h2>Task 6 . Mitigation</h2>
 
