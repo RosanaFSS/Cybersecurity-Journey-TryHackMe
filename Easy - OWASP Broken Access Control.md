@@ -152,8 +152,8 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 
 <br>
 
-<p>What is the name of the parameter in the JSON response from the login request that contains a redirect link?</p>
-<code>redirect_link</code><br>
+<p>What is the name of the parameter in the JSON response from the login request that contains a redirect link?<br>
+<code>redirect_link</code></p>
 
 <p>Inspected the interception of my login.</p>
 
@@ -162,16 +162,16 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 <br>
 
 
-<p>What Burp Suite module allows us to capture requests and responses between ourselves and our target?</p>
-<code>Proxy</code><br>
+<p>What Burp Suite module allows us to capture requests and responses between ourselves and our target?<br>
+<code>Proxy</code></p>
 
 
 ![image](https://github.com/user-attachments/assets/aeeca082-fd92-443b-8cde-5d1b9d88b0e4)
 
 <br>
 
-<p>What is the admin’s email that can be found in the online users’ table?</p>
-<code>admin@admin.com</code><br>
+<p>What is the admin’s email that can be found in the online users’ table?<br>
+<code>admin@admin.com</code></p>
 
 ![image](https://github.com/user-attachments/assets/c72f4144-4769-4942-a92f-aace2f44985b)
 
@@ -195,34 +195,49 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 
 <br>
 
-
-<p>What kind of privilege escalation happened after accessing admin.php?</p>
-<code>vertical</code><br>
+![image](https://github.com/user-attachments/assets/32ba754e-b977-426a-b583-2607aed7c215)
 
 <br>
 
 
-<p>What parameter allows the attacker to access the admin page?</p>
-<code>isadmin</code><br>
 
-<p>What is the flag in the admin page?</p>
-<code>THM{I_C4n_3xpl01t_B4c}</code><br>
+<p>What kind of privilege escalation happened after accessing admin.php?<br>
+<code>vertical</code></p>p>
 
-
+<br>
 
 
+<p>What parameter allows the attacker to access the admin page?<br>
+<code>isadmin</code></p>
 
-<p>Used <code>nmap</code></p>
-
-```bash
-
-...
-```
+<p>What is the flag in the admin page?<br>
+<code>THM{I_C4n_3xpl01t_B4c}</code></p>
 
 
-''''
-''''
+<h2>Task 6 . Mitigation</h2>
 
 
+<p>Click me to proceed onto the next task.<br>
+<code>No answer needed</code></p>
 
+<br>
+
+<h2>Task 7 . Conclusion</h2>
+<p>Broken access control is a security vulnerability that occurs when a system fails to properly enforce access controls, which can result in unauthorized users gaining access to sensitive information or performing actions they are not authorized to do.<br>
+
+Horizontal privilege escalation occurs when a user is able to access data or perform actions that they are not authorized to do within their own privilege level. This can be dangerous because it can allow an attacker who has already gained access to the system to move laterally through the network and access additional resources or sensitive data.<br>
+
+Vertical privilege escalation occurs when a user is able to gain access to data or perform actions that are reserved for users with higher privilege levels, such as system administrators. This can be even more dangerous because it can allow an attacker to gain full control of the system and potentially take over the entire network.<br>
+
+The impact of these types of privilege escalation can vary depending on the specific system and the level of access that is gained. However, in general, the consequences can include unauthorized access to sensitive information, data loss or theft, disruption of critical systems or services, and even complete network compromise. Therefore, it is important to implement strong access controls and regularly monitor for any signs of unauthorized access or activity.<br>
+
+Here are some references that you can give to PHP developers to help them implement these mitigation strategies:<br>
+. OWASP PHP Configuration Cheat Sheet<br>
+. PHP The Right Way: Security<br>
+. Secure Coding in PHP</p>
+
+<br>
+
+<p>Click me to finish this room.<br>
+<code>No answer needed</code></p>
 
