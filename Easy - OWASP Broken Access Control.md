@@ -9,6 +9,45 @@ March 10, 2025, Day 308<br>
 
 <br>
 
+<h2>Task 1 . Introduction</h2>
+
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
+<br>
+
+> 1.1. <em>Click me to proceed onto the next task.</em><br><a id='1.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+
+<h2>Task 2 . Broken Access Control Introduction</h2>
+
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
+<br>
+
+> 2.1. <em>What is IDOR?</em><br><a id='2.1'></a>
+>> <code><strong>Insecure direct object reference</strong></code>
+
+<br>
+
+> 2.2. <em>What occurs when an attacker can access resources or data belonging to other users with the same level of access?</em><br><a id='2.2'></a>
+>> <code><strong>Horizontal privilege escalation</strong></code>
+
+<br>
+
+> 2.3. <em>What occurs when an attacker can access resources or data from users with higher access levels?</em><br><a id='2.3'></a>
+>> <code><strong>Vertical privilege escalation</strong></code>
+
+<br>
+
+> 2.4. <em>What is ABAC?</em><br><a id='2.4'></a>
+>> <code><strong>Attribute-Based Access Control</strong></code>
+
+<br>
+
+> 2.5. <em>What is RBAC?</em><br><a id='2.5'></a>
+>> <code><strong>Role-Based Access Control</strong></code>
+
+<br>
+
 <h2>Task 3 . Deploy the Machine</h2>
 
 <p>Added Target_IP and a domain name into <code>/etc/hosts</code>.<br>
@@ -19,7 +58,7 @@ Visited <code>http://Target_IP</code>.</p>
 <h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
 <br>
 
-> 3.1. <em>I have deployed the machine attached to the task.</em><br><a id='1.1'></a>
+> 3.1. <em>I have deployed the machine attached to the task.</em><br><a id='3.1'></a>
 >> <code><strong>No answer needed</strong></code>
 
 <br>
