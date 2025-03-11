@@ -17,10 +17,12 @@ March 10, 2025, Day 308<br>
 > 1.1. <em>Click me to proceed onto the next task.</em><br><a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code>
 
+<br>
+
 
 <h2>Task 2 . Broken Access Control Introduction</h2>
 
-<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h4>
 <br>
 
 > 2.1. <em>What is IDOR?</em><br><a id='2.1'></a>
