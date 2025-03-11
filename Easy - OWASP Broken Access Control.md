@@ -171,7 +171,44 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 <br>
 
 <p>What is the admin’s email that can be found in the online users’ table?</p>
-<code></code>
+<code>admin@admin.com</code><br>
+
+![image](https://github.com/user-attachments/assets/c72f4144-4769-4942-a92f-aace2f44985b)
+
+<br>
+
+<h2>Task 5 . Exploiting the Web Application</h2>
+
+<p>Copied the <code>is_admin</code> parameter, and used it in the <code>url</code>. But instead of simply copying, I changed from <code>false</code> to <code>true</code>.</p>
+
+![image](https://github.com/user-attachments/assets/d6bcba96-f6b5-4035-a9c9-bdfbe62a45f5)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/26e6a20f-887c-4998-b566-a8b6fb9b19d8)
+
+<br>
+
+
+
+![image](https://github.com/user-attachments/assets/7c0a6b2c-1328-4793-8219-442173130d56)
+
+<br>
+
+
+<p>What kind of privilege escalation happened after accessing admin.php?</p>
+<code>vertical</code><br>
+
+<br>
+
+
+<p>What parameter allows the attacker to access the admin page?</p>
+<code>isadmin</code><br>
+
+<p>What is the flag in the admin page?</p>
+<code>THM{I_C4n_3xpl01t_B4c}</code><br>
+
+
 
 
 
