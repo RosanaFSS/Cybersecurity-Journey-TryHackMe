@@ -274,9 +274,11 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 
 <h2>Task 6 . Mitigation</h2>
 
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
+<br>
 
-<p>Click me to proceed onto the next task.<br>
-<code>No answer needed</code></p>
+> 6.1. <em>Click me to proceed onto the next task.</em><br><a id='6.1'></a>
+>> <code><strong>No answer needed</strong></code>
 
 <br>
 
@@ -296,8 +298,11 @@ Here are some references that you can give to PHP developers to help them implem
 
 <br>
 
-<p>Click me to finish this room.<br>
-<code>No answer needed</code></p>
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
+<br>
+
+> 7.1. <em>Click me to finish this room</em><br><a id='7.1'></a>
+>> <code><strong>No answer needed</strong></code>
 
 <br>
 
