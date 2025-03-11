@@ -38,8 +38,11 @@ Notice that I was redirected to <code>http://Target_IP/login.php?result=Registra
 
 ![image](https://github.com/user-attachments/assets/e5014748-64c5-4005-af1e-d2a0356e8b87)
 
+<br>
 
 
+''''
+''''
 
 
 
