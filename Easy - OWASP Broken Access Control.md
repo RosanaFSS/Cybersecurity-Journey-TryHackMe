@@ -16,6 +16,12 @@ Visited <code>http://Target_IP</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/fd773358-d96b-403f-9813-f3f53bb3f06f)
 
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h4>
+<br>
+
+> 3.1. <em>I have deployed the machine attached to the task.</em><br><a id='1.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
 <br>
 
 <h2>Task 4 . Acessing the Web Application</h2>
@@ -155,8 +161,12 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 
 <br>
 
-<p>What is the name of the parameter in the JSON response from the login request that contains a redirect link?<br>
-<code>redirect_link</code></p>
+<h4 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h4>
+<br>
+
+> 4.1. <em>What is the name of the parameter in the JSON response from the login request that contains a redirect link?</em><br><a id='4.1'></a>
+>> <code><strong>redirect_link</strong></code>
+
 
 <p>Inspected the interception of my login.</p>
 
@@ -164,17 +174,18 @@ In the output of <code>nmap</code> scan we can also visualize it.</p>
 
 <br>
 
+> 4.2. <em>What Burp Suite module allows us to capture requests and responses between ourselves and our target?</em><br><a id='4.2'></a>
+>> <code><strong>Proxy</strong></code>
 
-<p>What Burp Suite module allows us to capture requests and responses between ourselves and our target?<br>
-<code>Proxy</code></p>
 
 
 ![image](https://github.com/user-attachments/assets/aeeca082-fd92-443b-8cde-5d1b9d88b0e4)
 
 <br>
 
-<p>What is the admin’s email that can be found in the online users’ table?<br>
-<code>admin@admin.com</code></p>
+> 4.3. <em>What is the admin’s email that can be found in the online users’ table?</em><br><a id='4.3'></a>
+>> <code><strong>admin@admin.com</strong></code>
+
 
 ![image](https://github.com/user-attachments/assets/c72f4144-4769-4942-a92f-aace2f44985b)
 
