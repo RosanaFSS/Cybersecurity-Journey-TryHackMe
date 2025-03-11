@@ -5,6 +5,9 @@ March 10, 2025, Day 308<br>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/9bc9dfea-7267-42b9-9338-70b0c4fcf00c)
+
+<br>
 
 <h2>Task 3 . Deploy the Machine</h2>
 
@@ -241,3 +244,52 @@ Here are some references that you can give to PHP developers to help them implem
 <p>Click me to finish this room.<br>
 <code>No answer needed</code></p>
 
+<br>
+
+<h2>Room Completed</h2>
+
+![image](https://github.com/user-attachments/assets/8b0771dc-077e-4ad0-83bf-113735a691e3)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/69da413b-865c-4f87-80ab-e2fed3696968)
+
+<br>
+
+
+
+<h2>My journey on TryHackMe</h2>
+
+```
+308 days streak 🎉 ▪ 86,309 points ▪ 613 rooms completed ▪ 59 badges🎖️
+Global ranking:    358ᵗʰ all time    ▪    323ʳᵈ monthly
+Brazil ranking:      8ᵗʰ all time    ▪      7ᵗʰ monthly
+```
+
+<br>
+
+<p>Global all time ranking: 323ʳᵈ</p>
+
+![image](https://github.com/user-attachments/assets/dad38196-d441-4413-82c2-3d3d2ed381a1)
+
+
+
+<br>
+
+<p>Brazil all time ranking: 8ᵗʰ</p>
+
+![image](https://github.com/user-attachments/assets/404cff32-3164-4c5b-a2ec-3ffb81a382a8)
+
+
+<br>
+
+<p>Global monthly ranking: 381st</p>
+
+![image](https://github.com/user-attachments/assets/439ff06c-6edc-4f18-b472-b7e9d370f928)
+
+
+<br>
+
+<p>Brazil monthly ranking: 7ᵗʰ</p>
+
+![image](https://github.com/user-attachments/assets/81b85838-1706-499f-aad7-805349923b88)
