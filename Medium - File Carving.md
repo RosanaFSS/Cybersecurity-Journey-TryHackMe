@@ -9,6 +9,7 @@ March 13, 2025 - Day 311<br>
 <br>
 <h3>Read my complete walkthrough in Medium.</h3>
 
+https://medium.com/@RosanaFS/file-carving-digital-forensics-tryhackme-walkthrough-8d0ed2f879ec
 
 
 <br>
