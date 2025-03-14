@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{TryHackMe}}$$ </h1>
-<h4 align="center">March 8, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
+<h4 align="center">March 13, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
 <h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
 
 <div align="center">
@@ -19,8 +19,8 @@
 
 <br>
 
-<p align="center">March 8, 2025 - My yearly activity<br>
-                 <img width="1000px" src="https://github.com/user-attachments/assets/1fa772ca-0cab-4e6a-9d75-c77dfa8946e0"/> </p>
+<p align="center">March 13, 2025 - My yearly activity<br>
+                 <img width="1000px" src="https://github.com/user-attachments/assets/380e024e-20ff-48e1-8f6e-91be4ae9c864"/> </p>
 
 
 
@@ -68,6 +68,7 @@
 |Date               |Streak    |All Time      |All Time      |Monthly       |Monthly       |Points    | Rooms     |
 |:------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
 |                   |          |Global        |Brazil        |Global        | Brazil       |          | Completed |
+| March 13, 2025    | 311      |        356ᵗʰ |          8ᵗʰ |        303ʳᵈ |          7ᵗʰ | 86,505   |       614 |
 | March 8, 2025     | 306      |        365ᵗʰ |          8ᵗʰ |        391ˢᵗ |          7ᵗʰ | 85,747   |       607 |
 | March 7, 2025     | 305      |        368ᵗʰ |          8ᵗʰ |        414ᵗʰ |          7ᵗʰ | 85,597   |       606 |
 | March 6, 2025     | 304      |        372ⁿᵈ |          8ᵗʰ |        637ᵗʰ |          9ᵗʰ | 85,477   |       605 |
