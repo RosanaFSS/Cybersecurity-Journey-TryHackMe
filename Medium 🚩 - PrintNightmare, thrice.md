@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{290}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{PrintNightmare, thrice!}}$$
 </h1>
-<p align="center">Practice Brim, FullEventLogView, Procmon, and Wireshark. The nightmare continues. Search the artifacts on the endpoint, again, to determine if the employee used any of the Windows Printer Spooler vulnerabilities to elevate their privileges. <a href="https://tryhackme.com/room/printnightmarec3kj">PrintNightmare, again!</a></p>
+<p align="center">Practice Brim, FullEventLogView, Procmon, and Wireshark. The nightmare continues. Search the artifacts on the endpoint, again, to determine if the employee used any of the Windows Printer Spooler vulnerabilities to elevate their privileges. <a href="https://tryhackme.com/room/printnightmarec3kj">PrintNightmare, thrice</a></p>
                                                               
 <p align="center">
   <img width="900px" src="https://github.com/user-attachments/assets/9eee584a-44eb-4ce8-8ba6-a7aa46db9d59">
