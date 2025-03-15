@@ -16,7 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{289}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-Learn about the most common Printer Hacking Techniques, and the Basics of IPP, Internet Printing Protocol. Locate and Exploit a Network Printer.
+https://medium.com/@RosanaFS/printer-hacking-101-tryhackme-walkthrough-3763128e3912
 
 <br>
 
