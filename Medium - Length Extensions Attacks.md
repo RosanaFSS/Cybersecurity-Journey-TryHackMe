@@ -2,8 +2,9 @@
 <p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{281}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
 
+
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Length Extensions Attacks}$$
+  $$\textcolor{#3bd62d}{\textnormal{Length Extensions Attacks}}$$
 </h1>
 <p align="center">Learn how hash functions enable attackers to extend and manipulate data using length extension attacks..</p>
 <p align="center"><a href="https://tryhackme.com/room/lengthextensionattacks">Length Extensions Attacks</a>.</p>
