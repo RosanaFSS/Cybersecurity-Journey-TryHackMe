@@ -30,7 +30,7 @@ This path is composed by 6 modules.</p>
 ✅  &nbsp;&nbsp;  day-124,  &nbsp;&nbsp; Walkthrough, Medium, &nbsp; [Windows Privilege Escalation](https://github.com/RosanaFSS/TryHackMe/blob/Red-Teaming-learning-path/3.3.%20Windows%20Privilege%20Escalation.md)<br>
 ✅  &nbsp;&nbsp;  day-126,  &nbsp;&nbsp; Walkthrough, Medium, &nbsp; [Windows Local Persistence](https://github.com/RosanaFSS/TryHackMe/blob/Red-Teaming-learning-path/3.4.%20Windows%20Local%20Persistance.md)<br>
 ✅  &nbsp;&nbsp;  day-195,  &nbsp;&nbsp; Walkthrough, Easy, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Lateral Movement and Pivoting](https://github.com/RosanaFSS/TryHackMe/blob/Red-Teaming-learning-path/3.5.%20Lateral%20Movement%20and%20Pivoting.md)<br>
-⬛  &nbsp;&nbsp;  day-XXX,  &nbsp;&nbsp; Walkthrough, Hard, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data Exfiltration, in progress<br>
+✅  &nbsp;&nbsp;  day-313,  &nbsp;&nbsp; Walkthrough, Hard, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Data Exfiltration](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/Red-Teaming-learning-path/3.6.%20Data%20Exfiltration.md)<br>
 
 <h2 align="left"> $$\textcolor{#3bd62d}{\textnormal{4.  Host Evasions}}$$ </h2>
 <p>Understand the techniques behind host-based security and bypass the most common security products in Windows operating systems.</p>
