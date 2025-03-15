@@ -8,6 +8,8 @@ December 21, 2024 - Day 229<br>
 
 <br>
 
+<h2>Read my complete walkthrough in Medium.</h2>
+
 https://medium.com/@RosanaFS/tryhackme-walkthrough-poster-7f843cbcdec7
 
 <br>
