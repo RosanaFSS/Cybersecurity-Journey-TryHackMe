@@ -6,6 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{281}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Length Extensions Attacks, Signature Forging & Cookie Manipulation}}$$
 </h1>
+
 <p align="center">Learn how hash functions enable attackers to extend and manipulate data using length extension attacks..</p>
 <p align="center"><a href="https://tryhackme.com/room/lengthextensionattacks">Length Extensions Attacks</a>.</p>
                                                               
