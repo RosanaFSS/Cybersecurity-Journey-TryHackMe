@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{281}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{Length Extensions Attacks}$$
 </h1>
 <p align="center">Learn how hash functions enable attackers to extend and manipulate data using length extension attacks..</p>
-<p align="center">Ac<a href="https://tryhackme.com/room/lengthextensionattacks">Warzone 1</a>.</p>
+<p align="center">Ac<a href="https://tryhackme.com/room/lengthextensionattacks">Length Extensions Attacks</a>.</p>
                                                               
 <p align="center">
   <img width="900px" src="https://github.com/user-attachments/assets/7bc665a2-6374-4cca-9bdd-637891733977">
