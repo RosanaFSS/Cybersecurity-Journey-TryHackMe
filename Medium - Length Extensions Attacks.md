@@ -4,7 +4,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{281}}$$-day-streak in  <a href="h
 
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Length Extensions Attacks, Signature Forging and Cookie Manipulation}}$$
+  $$\textcolor{#3bd62d}{\textnormal{Length Extensions Attacks}}$$
+<br>
+$$\textcolor{#3bd62d}{\textnormal{ignature Forging and Cookie Manipulation}}$$
 </h1>
 
 <p align="center">Learn how hash functions enable attackers to extend and manipulate data using length extension attacks..</p>
