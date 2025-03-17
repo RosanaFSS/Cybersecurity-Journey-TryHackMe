@@ -16,7 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{282}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-<h3 align="left"> Click here ➡️  <a href="https://medium.com/meetcyber/security-operations-incident-response-with-splunk-new-hire-old-artifacts-tryhackme-walkthrough-bf03b782ae03">PrintNightmare, thrice - Security Operations, Incident Response with Splun, 300 points,</a></h3>
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/meetcyber/security-operations-incident-response-with-splunk-new-hire-old-artifacts-tryhackme-walkthrough-bf03b782ae03">New Hire Old Artifacts</a> - Security Operations, Incident Response with Splunk, 300 points</h3>
 
 
 <br>
