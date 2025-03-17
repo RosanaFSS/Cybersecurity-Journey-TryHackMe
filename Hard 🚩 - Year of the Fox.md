@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{223}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{Year of the Fox}}$$
 </h1>
 <p align="center">Don't underestimate the sly old fox... </p>
-<p align="center">It is classified as a hard-level CTF, and ... <a href="https://tryhackme.com/room/yotfy">Year of the Fox</a>.</p>
+<p align="center">It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click the link below, and let’s get started!<a href="https://tryhackme.com/room/yotfy">Year of the Fox</a>.</p>
                                                               
 <p align="center">
   <img width="900px" src="https://github.com/user-attachments/assets/cbc169bb-1aff-4e14-a0d9-1ccc128531e2">
