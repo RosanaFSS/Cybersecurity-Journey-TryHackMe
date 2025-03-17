@@ -17,8 +17,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{290}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/security-operations-incident-response-with-brim-fulleventlogview-procmon-and-wireshark-windows-c56e62b0e063">PrintNightmare, thrice - TryHackMe Walkthrough</a></h3>
 
-https://medium.com/@RosanaFS/security-operations-incident-response-with-brim-fulleventlogview-procmon-and-wireshark-windows-c56e62b0e063
 
 <br>
 
