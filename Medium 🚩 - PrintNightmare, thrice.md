@@ -17,7 +17,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{290}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/security-operations-incident-response-with-brim-fulleventlogview-procmon-and-wireshark-windows-c56e62b0e063">PrintNightmare, thrice - Security Operations, Incident Response with Brim, FullEventLogView, Procmon and Wireshark - Windows Print Spooler RCE, CVE-2021–34527, 300 points</a></h3>
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/security-operations-incident-response-with-brim-fulleventlogview-procmon-and-wireshark-windows-c56e62b0e063">PrintNightmare, thrice</a> - Security Operations, Incident Response with Brim, FullEventLogView, Procmon and Wireshark - Windows Print Spooler RCE, CVE-2021–34527, 300 points</h3>
 
 
 <br>
