@@ -11,7 +11,10 @@ Day <strong>300</strong><br>
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-https://medium.com/@RosanaFS/escaping-a-python-jail-pyjail-tokyo-ghoul-tryhackme-walkthrough-270-points-a1a08bc0d7cd
+<h2>Read my complete walkthrough in Medium.</h2>
+
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/escaping-a-python-jail-pyjail-tokyo-ghoul-tryhackme-walkthrough-270-points-a1a08bc0d7cd">Tokyo Ghoul </a>Escaping a Python Jail , PyJail, 270 points</h3>
+
 
 <br>
 
