@@ -15,9 +15,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{269}}$$-day-streak in  <a href="h
 
 <br>
 
+
 <h2>Read my complete walkthrough in Medium.</h2>
 
-https://medium.com/meetcyber/network-security-monitoring-network-alerts-warzone-2-tryhackme-walkthrough-ef7a31b09736
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/meetcyber/network-security-monitoring-network-alerts-warzone-2-tryhackme-walkthrough-ef7a31b09736">Warzone 2</a> - Security Operations, Incident Response, 300 points</h3>
 
 <br>
 
