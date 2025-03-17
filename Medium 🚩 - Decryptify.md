@@ -16,7 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{286}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-<h3 align="left"> Click here ➡️  <a href="hhttps://medium.com/@RosanaFS/insecure-randomness-and-padding-oracle-web-exploitation-decryptify-tryhackme-walkthrough-60-642f93a0e137">Decryptify </a> - Insecure Randomness and Padding Oracle, Web Exploitation, 60 points</h3>
+<h3 align="left"> Click here ➡️  <a href="hhttps://medium.com/@RosanaFS/insecure-randomness-and-padding-oracle-web-exploitation-decryptify-tryhackme-walkthrough-60-642f93a0e137">Decryptify</a>, TryHackMe Walkthrough - Insecure Randomness and Padding Oracle, Web Exploitation, 60 points</h3>
 
 
 <br>
