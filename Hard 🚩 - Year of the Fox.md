@@ -1,7 +1,7 @@
 
 <p align="center">December 15, 2024</p>
 <p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{22386}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{223}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Year of the Fox}}$$
