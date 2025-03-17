@@ -16,8 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{280}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-https://medium.com/@RosanaFS/lfi-to-rce-web-exploitation-watcher-tryhackme-walkthrough-94240de32c45
-
+<h3 align="left"> Click here ➡️  <a href="">Watcher - TryHackMe Walkthrough</a></h3>
 
 <br>
 
