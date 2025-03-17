@@ -17,16 +17,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{268}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-<h2>Read my complete walkthrough in Medium.</h2>
-
 <h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/network-security-monitoring-network-alerts-warzone-1-tryhackme-walkthrough-59fe77d47165">Warzone 1</a> - Security Operations, Incident Response, 330 points</h3>
 
-https://medium.com/@RosanaFS/network-security-monitoring-network-alerts-warzone-1-tryhackme-walkthrough-59fe77d47165
 
 <br>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/69967d6a-9b79-4d0e-955b-19fefc83e5e3)
-
-
