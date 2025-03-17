@@ -18,11 +18,12 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{286}}$$-day-streak in  <a href="h
 
 https://medium.com/@RosanaFS/insecure-randomness-and-padding-oracle-web-exploitation-decryptify-tryhackme-walkthrough-60-642f93a0e137
 
-<br>
-
-![image](https://github.com/user-attachments/assets/b1438174-5ce1-4e3f-8be1-df69b77dd724)
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/75088fc3-3087-4157-a921-127e0da34b9a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b1438174-5ce1-4e3f-8be1-df69b77dd724)
 
