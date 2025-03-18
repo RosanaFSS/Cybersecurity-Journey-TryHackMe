@@ -10,7 +10,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{233}}$$-day-streak in  <a href="h
 <p align="center">Access this 🆓 TryHackMe CTF Room clicking <a href="https://tryhackme.com/r/room/overpass2hacked">Retro</a>.</p><br>
 <p align="center">
   <img height="150px" hspace="20" src="https://github.com/user-attachments/assets/549ef432-b001-4fe3-8c8b-3d2e75c0349a">
-  <img width="800px" src="https://github.com/user-attachments/assets/e757322f-5ed4-45d6-9963-c0d9e9f8c267">
+  <img width="800px" src="https://github.com/user-attachments/assets/e3a9fad3-f316-424c-9434-f5f6c626111d">
 </p>
 
 <br>
