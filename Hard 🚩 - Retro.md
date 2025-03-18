@@ -1,10 +1,6 @@
-<p>66%</p>
-
-<br>
-
-<p align="center">December 12, 2024</p>
+<p align="center">December 25, 2024</p>
 <p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{220}}$$-day-streak in  <a href="https://tryhackme.com/">TryHackMe</a>.</p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{233}}$$-day-streak in  <a href="https://tryhackme.com/">TryHackMe</a>.</p>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Retro}}$$
@@ -14,7 +10,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{220}}$$-day-streak in  <a href="h
 <p align="center">Access this 🆓 TryHackMe CTF Room clicking <a href="https://tryhackme.com/r/room/overpass2hacked">Retro</a>.</p><br>
 <p align="center">
   <img height="150px" hspace="20" src="https://github.com/user-attachments/assets/549ef432-b001-4fe3-8c8b-3d2e75c0349a">
-  <img width="800px" src="https://github.com/user-attachments/assets/728dd9a8-0a75-4a1c-9ece-4a0073abfec6">
+  <img width="800px" src="https://github.com/user-attachments/assets/e757322f-5ed4-45d6-9963-c0d9e9f8c267">
 </p>
 
 <br>
@@ -290,47 +286,10 @@ Please note that this machine does not respond to ping (ICMP) and may take a few
 ![image](https://github.com/user-attachments/assets/dfb595b6-9a85-45f3-9d25-1309fb166bb8)
 
 
-<p>  ....   Need to learn moren to be able to complete this room.  .....</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![December 25, 2024, TryHackMe, Retro - Room Completed - Header and Tasks](https://github.com/user-attachments/assets/92d09524-4ce5-41e1-9a62-9685d1f42d60)
 
 
 
