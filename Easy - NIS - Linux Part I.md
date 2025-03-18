@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{316}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{NIS - Linux Part I}}$$
 </h1>
 <p align="center">Practice Linux commands ls, cat , tac , head , tail , xxd , base64 , find , grep , sudo , echo , chmod , xargs , hexeditor , curl, wget, tar , gzip , 7zip, binwalk , man , and ssh . Enhance your Linux knowledge with this beginner friendly room!/p>
-<p align="center">It is classified as an easy-level walkthrough. <a href="https://tryhackme.com/room/nislinuxone">Watcher</a>.</p>
+<p align="center">It is classified as an easy-level walkthrough. <a href="https://tryhackme.com/room/nislinuxone">NIS - Linux Part I</a>.</p>
                                                               
 <p align="center">
   <img width="900px" src="https://github.com/user-attachments/assets/a71bdffe-bc71-4df0-8a60-43923b89bbfa">
