@@ -1,6 +1,6 @@
 
 <h1>NahamStore</h1>
-<h3> December 25, 2024</h3>
+<h3> December 25, 2024 - Day 292</h3>
 
 <br>
 
@@ -78,27 +78,5 @@ http://marketing.nahamstore.thm/?error>br>
 
 
 
-65,165 points, 493 rooms completed, 55 badges
-233-day-streak
-Global: 819 all time, 117 th monthly
-Brazil: 18th all time, 2nd monthly
-
-
-![image](https://github.com/user-attachments/assets/51dcf29e-7406-41de-a967-b730b3af0e5f)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/6ad2410f-ab66-4906-b43f-6a48582c7e9d)
-
-
-
-
-
-
-
-
-
-
-
-
+<p>I completed this challenge on my 292-day-streak.  Soon I will share a walkthrough.</p>
 
