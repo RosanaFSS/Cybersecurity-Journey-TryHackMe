@@ -285,11 +285,20 @@ Please note that this machine does not respond to ping (ICMP) and may take a few
 
 ![image](https://github.com/user-attachments/assets/dfb595b6-9a85-45f3-9d25-1309fb166bb8)
 
+<br>
+<br>
+
+![December 25, 2024, TryHackMe, Retro - Room Completed](https://github.com/user-attachments/assets/a1c87263-0e29-401e-85d2-3bd6c7d92662)
 
 
-
+<br>
 
 ![December 25, 2024, TryHackMe, Retro - Room Completed - Header and Tasks](https://github.com/user-attachments/assets/92d09524-4ce5-41e1-9a62-9685d1f42d60)
+
+<br>
+
+![December 25, 2024, TryHackMe, Retro - Room Completed - Yearly Activity](https://github.com/user-attachments/assets/8265eec4-9109-4dca-ab32-e2ee8da59688)
+
 
 
 
