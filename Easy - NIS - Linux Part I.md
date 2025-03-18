@@ -5,6 +5,12 @@
 
 <br>
 
+Enhance your Linux knowledge with this beginner friendly room!
+
+<br>
+
+
+
 ![image](https://github.com/user-attachments/assets/02bbcc03-3844-4fed-90d3-ae03ebcc73d2)
 
 <br>
