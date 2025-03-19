@@ -16,12 +16,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{273}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/security-operations-dfir-investigating-windows-2-0-a-tryhackme-walkthrough-900-points-f409027df258"</a>, TryHackMe Walkthrough</h3>
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/security-operations-dfir-investigating-windows-2-0-a-tryhackme-walkthrough-900-points-f409027df258">Investigating Windows 2.0</a>, TryHackMe Walkthrough</h3>
 
 
 <br>
-
-https://medium.com/@RosanaFS/security-operations-dfir-investigating-windows-2-0-a-tryhackme-walkthrough-900-points-f409027df258
 
 
 ![Fevereiro, 03, 2025,     room    Investigating Windos 2 0,  Header and Tasks](https://github.com/user-attachments/assets/9cb5c80b-95ca-4c2f-afec-f6104907415a)
