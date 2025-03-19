@@ -18,13 +18,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{301}}$$-day-streak in  <a href="h
 
 <h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/binary-reverse-engineering-0x41haz-tryhackme-walkthrough-30-points-11c4dbcf61cb">0x41haz</a>, TryHackMe Walkthrough</h3>
 
-
 <br>
-<br>
-
-<h2>Read my complete walkthrough in Medium.</h2>
-
-https://medium.com/@RosanaFS/binary-reverse-engineering-0x41haz-tryhackme-walkthrough-30-points-11c4dbcf61cb
 
 ![image](https://github.com/user-attachments/assets/d6d30b8c-2a94-4f5b-ae52-de61cf104aa1)
 
@@ -32,4 +26,3 @@ https://medium.com/@RosanaFS/binary-reverse-engineering-0x41haz-tryhackme-walkth
 
 
 ![image](https://github.com/user-attachments/assets/d4bb7079-2e67-42c9-ab57-61e41c81fe78)
-
