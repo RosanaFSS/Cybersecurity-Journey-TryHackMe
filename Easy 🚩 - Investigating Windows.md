@@ -1,13 +1,19 @@
-<h1>Investigating Windows</h1>
-<p>A windows machine has been hacked, its your job to go investigate this windows machine and find clues to what the hacker might have done.</p>
-<h3>67-day-streak</h3>
+<p align="center">March 3, 2025</p>
+<p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{67}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Investigating Windows}}$$
+</h1>
+<p align="center">A windows machine has been hacked, its your job to go investigate this windows machine and find clues to what the hacker might have done.</p>
+<p align="center">It is classified as an easy-level CTF. <a href="https://tryhackme.com/room/investigatingwindows">Investigating Windows</a>.</p>
+                                                              
+<p align="center">
+  <img width="900px" src="https://github.com/user-attachments/assets/0d73f01b-fd7a-443a-b564-e64651701b2b">
+</p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/0d73f01b-fd7a-443a-b564-e64651701b2b)
-
-<br>
-<br>
 
 ![image](https://github.com/user-attachments/assets/2bc10916-0f62-41b3-b4c4-d8a23aa899a8)
 
