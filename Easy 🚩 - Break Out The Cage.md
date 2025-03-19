@@ -16,8 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{296}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-https://medium.com/@RosanaFS/linux-privilege-escalation-break-out-the-cage-tryhackme-walkthrough-90-points-332d452f04e2
-
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/linux-privilege-escalation-break-out-the-cage-tryhackme-walkthrough-90-points-332d452f04e2">Break Out The Cage</a>, TryHackMe Walkthrough</h3>
 
 
 <br>
@@ -28,4 +27,3 @@ https://medium.com/@RosanaFS/linux-privilege-escalation-break-out-the-cage-tryha
 <br>
 
 ![image](https://github.com/user-attachments/assets/12959871-2880-467f-8910-35f24c844332)
-
