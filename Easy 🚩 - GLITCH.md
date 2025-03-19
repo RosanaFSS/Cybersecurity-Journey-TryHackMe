@@ -16,7 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{297}}$$-day-streak in  <a href="h
 
 <h2>Read my complete walkthrough in Medium.</h2>
 
-https://medium.com/@RosanaFS/node-deserialization-attack-web-exploitation-glitch-tryhackme-walkthrough-90-points-9fc303c898ab
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/node-deserialization-attack-web-exploitation-glitch-tryhackme-walkthrough-90-points-9fc303c898ab">GLITCH</a>, TryHackMe Walkthrough</h3>
 
 
 ![image](https://github.com/user-attachments/assets/d359609f-20d7-4aed-8ace-debc3c61aa57)
@@ -24,5 +24,3 @@ https://medium.com/@RosanaFS/node-deserialization-attack-web-exploitation-glitch
 <br>
 
 ![image](https://github.com/user-attachments/assets/79061824-8dbc-4ce6-9648-d885dd610616)
-
-
