@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{301}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{0x41haz}}$$
 </h1>
 <p align="center">Learn stabilizing the shell, basic enumeration, /etc, and important files in this beginner friendly TryHackMe walkthrough. Learn efficiently enumerate a linux machine and identify possible weaknesses. Practice using python3 -c 'import pty; pty.spawn("/bin/bash")', ssh-keygen, chmod, ssh, uname -a , uname -m , sudo -V , sudo -l , /etc/passwd , ~/.bash_history , /etc/shadow , /etc/hosts , find -type f -name “*.extension” 2>/dev/null , find / -perm -u=s -type f 2>/dev/null , grep , grep '' /etc/shadow , netstat -at | less , netstat -tulpn , linpeas, linenum, wget , id , whoami, pwd , ls , and cat .</p>
-<p align="center">It is classified as an easy-level walkthrough. <a href="https://tryhackme.com/room/lle">0x41haz</a>.</p>
+<p align="center">It is classified as an easy-level walkthrough. <a href="">0x41haz</a>.</p>
                                                               
 <p align="center">
   <img width="900px" src="https://github.com/user-attachments/assets/18d59cd3-8e64-4c1c-9481-31b4d81c4ace">
