@@ -1,7 +1,20 @@
-March 19, 2025 - Day 317<br>
+<p align="center">March 19, 2025</p>
+<p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{317}}$$-day-streak in  <a href="https://tryhackme.com/r/hacktivities">TryHackMe</a>.</p>
 
-<h2>Baron Samedit</h2>
-<p>A tutorial room exploring CVE-2021-3156 in the Unix Sudo Program. Room Three in the SudoVulns Series</p>
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Baron Samedit: CVE-2021-3156}}$$
+</h1>
+<p align="center">A tutorial room exploring CVE-2021-3156 in the Unix Sudo Program. Room Three in the SudoVulns Series.</p>
+<p align="center">Access this TryHackMe FREE Room clicking <a href="https://tryhackme.com/room/sudovulnssamedit">Baron Samedit: CVE-2021-3156</a>.</p>
+<br>
+
+<p align="center">
+  <img height="150px" hspace="20" src="https://github.com/user-attachments/assets/ea813132-a78d-406c-b90a-f1bb96745006">
+  <img height="150px" src="https://github.com/user-attachments/assets/0350c83f-51d0-441c-bf9d-a21369eb770a">
+</p>
+
+
 
 ![image](https://github.com/user-attachments/assets/0350c83f-51d0-441c-bf9d-a21369eb770a)
 
