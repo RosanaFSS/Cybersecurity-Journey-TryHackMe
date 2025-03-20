@@ -193,12 +193,11 @@ The user logged into the FTP server using a username and password and uploaded a
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 
-> 1.1. <em>Read the premise above, start the attached Windows analysis machine and find the transcription logs in the SantasLaptopLogs folder on the Desktop.
-> If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:Target_IP - The credentials for the machine are Administrator as the username, and grinch123! as the password.</em><a id='1.1'></a>
+> 1.1. <em>In the HTTP #1 - GET requests section, which directory is found on the web server?
+> <img width="500px" src="https://github.com/user-attachments/assets/bf7bcc5c-7ae3-45e1-a8d2-f2ac5ade0fa7"></em><br>Hint : Apply following filter: http.request.method == GET. Then Look for HTTP requests that have "200 OK" response.<a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code><br><br>
 
 
-<p>Used Remmina.  Entered the credentials provided for this task.</p>
 
 
 
