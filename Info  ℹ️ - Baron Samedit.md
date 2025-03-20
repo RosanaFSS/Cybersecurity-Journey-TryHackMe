@@ -16,7 +16,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{317}}$$-day-streak in  <a href="h
 
 
 
-![image](https://github.com/user-attachments/assets/0350c83f-51d0-441c-bf9d-a21369eb770a)
+<br>
 
 
 
