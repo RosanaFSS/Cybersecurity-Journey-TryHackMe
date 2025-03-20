@@ -150,8 +150,8 @@ The user logged into the FTP server using a username and password and uploaded a
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 
-> 1.1. <em>Read the premise above, start the attached Windows analysis machine and find the transcription logs in the SantasLaptopLogs folder on the Desktop.
-> If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:Target_IP - The credentials for the machine are Administrator as the username, and grinch123! as the password.</em><a id='1.1'></a>
+> 1.1. <em>In the HTTP #1 - GET requests section, which directory is found on the web server?
+> <img width="500px" src="https://github.com/user-attachments/assets/bf7bcc5c-7ae3-45e1-a8d2-f2ac5ade0fa7"></em><br>Hint : Apply following filter: http.request.method == GET. Then Look for HTTP requests that have "200 OK" response.<a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code><br><br>
 
 
@@ -187,39 +187,3 @@ The user logged into the FTP server using a username and password and uploaded a
 <p align="center"> Global monthly: 835ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/edff857b-d678-4f7b-8d9f-183195ef936e)"> </p>
 
 <p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/497d78b1-bef4-49d2-87db-c24261416a87"> </p></p>
-
-<br>
-
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
-
-
-> 1.1. <em>In the HTTP #1 - GET requests section, which directory is found on the web server?
-> <img width="500px" src="https://github.com/user-attachments/assets/bf7bcc5c-7ae3-45e1-a8d2-f2ac5ade0fa7"></em><br>Hint : Apply following filter: http.request.method == GET. Then Look for HTTP requests that have "200 OK" response.<a id='1.1'></a>
->> <code><strong>No answer needed</strong></code><br><br>
-
-
-
-
-
-<br>
-
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
-</h1>
-
-<div align="center">
-
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
-| March 20, 2025    | 318      |     354ᵗʰ    |        8ᵗʰ   |    835ᵗʰ    |      11ˢᵗ  |  87,001  |       621 |   59      |
-
-</div>
-
-<p align="center"> Global All Time: 354ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ab1fa808-049c-4dad-a848-b609307283dc"> </p>
-
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6d0501d4-836c-4397-90c3-f4fde161ae38"> </p>
-
-<p align="center"> Global monthly: 835ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/edff857b-d678-4f7b-8d9f-183195ef936e)"> </p>
-
-<p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/497d78b1-bef4-49d2-87db-c24261416a87"> </p>
