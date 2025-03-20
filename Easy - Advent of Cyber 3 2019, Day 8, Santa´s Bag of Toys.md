@@ -32,9 +32,8 @@ Note that for this task, you will interact with a Windows virtual machine to per
 
 
 > 1.1. <em>Read the premise above, start the attached Windows analysis machine and find the transcription logs in the SantasLaptopLogs folder on the Desktop.</em><br><a id='1.1'></a>
-> <em>If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:10.10.93.3 - The credentials for the machine are Administrator as the username, and grinch123! as the password.</em>
+> <em>If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:Target_IP - The credentials for the machine are Administrator as the username, and grinch123! as the password.</em>
 >> <code><strong>No answer needed</strong></code><br><br>
-
 
 
 <p>Used Remmina.  Entered the credentials provided for this task.</p>
@@ -47,13 +46,36 @@ Note that for this task, you will interact with a Windows virtual machine to per
 
 <br>
 
+<p>Each transcription log is a simple plain text file that you can open in any editor of your choice. While the filenames are random, you can get an idea as to which log "comes first" by looking at the Date Modified or Date Created attributes, or the timestamps just before the file extension!<br>
+
+Open the first transcription log. You can see the commands and output for everything that ran within PowerShell, like whoami and systeminfo!
+</p>
+
+> 1.2. <em>What operating system is Santa's laptop running ("OS Name")?</em><br><a id='1.2'></a>
+>> <code><strong>Microsoft Windows Pro</strong></code><br><br>
+
+
+
 <p>clicked on <code>SantasLaptopLogs</code></p>
 
 ![image](https://github.com/user-attachments/assets/136aa022-49db-4244-8227-1c1c974c12de)
 
 <br>
 
+<p>double-clicked the first file.</p>
 
+![image](https://github.com/user-attachments/assets/3da6119a-00fd-47fb-bb23-e95403c10f6e)
+
+<p>Review each transcription log to get an idea for what activity was performed on the laptop just after it went missing. In the "second" transcription log, it seems as if the perpetrator created a backdoor user account!</p>
+
+> 1.3. <em>What was the password set for the new "backdoor" account?</em><br><a id='1.2'></a>
+>> <code><strong>grinchstolechristmas</strong></code><br><br>
+
+
+![image](https://github.com/user-attachments/assets/a831cd5d-6a0c-4173-a308-ed7e5c858f86)
+
+
+<p>In one of the transcription logs,  the bad actor interacts with the target under the new backdoor user account, and copies a unique file to the Desktop. Before it is copied to the Desktop,</p>
 
 
 
