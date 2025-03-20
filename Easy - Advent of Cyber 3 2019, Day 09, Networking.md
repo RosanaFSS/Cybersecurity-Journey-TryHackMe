@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{[ Day 9 ] - Advent of Cyber 3 (2021)}}$$
 </h1>
-<p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">[ Day 8 ] - Advent of Cyber 3 (2021)</a>.</p>
+<p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">Advent of Cyber 3 (2021)</a>.</p>
                                                               
 <p align="center"> <img width="900px" src=""> </p>
 
@@ -61,7 +61,7 @@ Packet analysis is a technique used to capture and intercept network traffic tha
 
 <p>Wireshark is pre-installed on the THM AttackBox, and you can just launch the THM AttackBox by using the Start AttackBox button and opening Wireshark.</p>
 
-<p>If you want to do this challenge on your own computer, Wireshark can be downloaded from here: Download Wireshark.<br>
+<p>If you want to do this challenge on your own computer, Wireshark can be downloaded from here: <a href="https://www.wireshark.org/download.html">Download <code>Wireshark</code></a>.<br>
 
 For this task, we have prepared a PCAP file to download and follow the instructions and apply the required packet analysis skills using different scenarios. If you're using the AttackBox you don't need to download the file as it's already on the machine; the AoC3.pcap file is in the following location: /root/Rooms/AoC3/Day9/AoC3.pcap.<br>
 
@@ -78,58 +78,8 @@ We can run Wireshark and import the provided PCAP file as follows,</p>
 >> <code><strong>No answer needed</strong></code><br><br>
 
 
-<p>Used Remmina.  Entered the credentials provided for this task.</p>
 
 
-
-r account, and copies a unique file to the Desktop. Before it is copied to the Desktop, what is the full path of the original file? </em><br><a id='1.4'></a>
->> <code><strong>C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat</strong></code><br><br>
-
-
-<p>Double-clicked on the last file in the <code>SantasLaptopLogs</code>, and discovered the answer.</p>
-
-![image](https://github.com/user-attachments/assets/5e7e042e-be37-4dd2-8ec0-ad0ecc63319a)
-
-<br>
-
-> 1.5. <em>The actor uses a Living Off The Land binary (LOLbin) to encode this file, and then verifies it succeeded by viewing the output file. What is the name of this LOLbin?</em><br><a id='1.5'></a>
->> <code><strong>certutil.exe</strong></code><br><br>
-
-<p>Discovered the answer in the same file analyzed in the 1.4.</p>
-
-![image](https://github.com/user-attachments/assets/595af745-6996-4584-bf1f-0fe7c3324aa5)
-
-<br>
-
-<p>[ ... ]</p>
-
-> 1.6. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.6'></a>
->> <code><strong>No answer needed</strong></code><br><br>
-
-<p>Opened <code>ShellBagsExplorer.exe</code> directory which in located in the Desktop.<br>
-Double-clicked <code>ShellBagsExplorer</code>.</p>
-
-![image](https://github.com/user-attachments/assets/b42aa7ce-f56c-4bb3-aff0-38e2e2b179a0)
-
-<br>
-
-
-> 1.7. <em>Read the above and open the ShellBagsExplorer.exe application found in the folder on your Desktop.</em><br><a id='1.7'></a>
->> <code><strong>No answer needed</strong></code><br><br>
-
-<p>Opened <code>ShellBagsExplorer.exe</code> directory which in located in the Desktop.<br>
-Right-clicked <code>ShellBagsExplorer</code>.<br>
-Clicked <code>Run as Administrator</code>.</p>
-
-![image](https://github.com/user-attachments/assets/de717f4a-9d2c-417c-a4bf-457b9419e74d)
-
-
-> 1.8. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.8'></a>
->> <code><strong>github</strong></code><br><br>
-
-<p>Copied the content <code>santa.data</code> in <code>PowerShell_transcript.LAPTOP.Zw6PA+c4.20211128153734</code> file between <code>----BEGIN CERTIFICATE-----</code> and <code>-----END CERTIFICATE-----</code>.</p>
-
-![image](https://github.com/user-attachments/assets/304f4c29-52fc-41de-b93c-41d8cbd28215)
 
 
 
