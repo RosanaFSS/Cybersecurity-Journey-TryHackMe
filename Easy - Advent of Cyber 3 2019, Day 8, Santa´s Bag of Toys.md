@@ -189,7 +189,8 @@ Note that the TryHackMe Windows analysis machine does not have Internet access, 
 
 <p>Opened one of the <code>SantasLaptopLogs</code>, and discovered about this: <code>PS C:\Users\s4nta\Desktop> C:\Program` Files` `(x86`)\UHARC` CMD\bin\uharc.exe</code></p>
 
-![image](https://github.com/user-attachments/assets/9b1c42dc-8ae0-4c80-b403-62d260d6cc33)
+![image](https://github.com/user-attachments/assets/cbda9c6c-85ae-4095-97a0-715fa04ff7bb)
+
 
 <br>
 
