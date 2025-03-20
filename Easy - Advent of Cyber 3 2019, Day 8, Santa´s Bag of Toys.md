@@ -1,5 +1,19 @@
-<h2>Advent of Cyber 3 (2021)
-<h2>Day 8, Santa´s Bag of Toys</h2>
+<p align="center">March 20, 2025</p>
+<p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Advent of Cyber 3 (2021) - Day 8}}$$
+</h1>
+<p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas</p>
+<p align="center">It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">Advent of Cyber 3 (2021)</a>.</p>
+                                                              
+<p align="center">
+  <img width="900px" src="https://github.com/user-attachments/assets/cc46f5f1-ead9-4e28-bbb3-31714ee733a0">
+</p>
+
+<br>
+
 
 <p>McSkidy was notified of some terrible news! Santa's laptop, which he uses to prepare his bag of toys for Christmas, is missing! We believe a minion at the Grinch Enterprise stole it, but we need to find out for sure. It is up to us to determine what actor compromised the laptop and recover Santa's bag of toys!<br>
 
@@ -196,22 +210,60 @@ Note that the TryHackMe Windows analysis machine does not have Internet access, 
 
 <p>[ ... ]</p>
 
-> 1.14. <em>Following this, the actor looks to have removed everything from the bag of toys, and added in new things like coal, mold, worms, and more!  What are the contents of these "malicious" files (coal, mold, and all the others)? </em><br><a id='1.14'></a>
+> 1.14. <em>Following this, the actor looks to have removed everything from the bag of toys, and added in new things like coal, mold, worms, and more!  What are the contents of these "malicious" files (coal, mold, and all the others)? </em>Hint : Look closely at the GitHub commit that includes the bag_of_toys.uha file. :)<br><a id='1.14'></a>
 >> <code><strong>GRINCHMAS</strong></code><br><br>
 
 
+![image](https://github.com/user-attachments/assets/6d632f53-6555-4059-b4d0-3b12b15ac1a3)
+
 <br>
+
+![image](https://github.com/user-attachments/assets/ce6d3a6b-ee25-4b4b-847c-0e0d4c6b87d4)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/db465ea3-1d2c-4a1f-b35f-4153b9f9e337)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/04d8cdfb-058a-4988-838c-4aa8b516c6cb)
+
+<br>
+
+
 
 
 > 1.15. <em>We know that the actor seemingly collected the original bag of toys. Maybe there was a slight OPSEC mistake, and we might be able to recover Santa's Bag of Toys! Review the actor's repository for its planned operations... maybe in the commit messages, we could find the original archive and the password! </em><br><a id='1.15'></a>
 >> <code><strong>No answer neeeded</strong></code><br><br>
 
+<br>
+
+![image](https://github.com/user-attachments/assets/b65c0b58-c8fb-4462-bce3-8fbfe3e7a261)
+
+
+
 > 1.16. <em>We know that the actor seemingly collected the original bag of toys. Maybe there was a slight OPSEC mistake, and we might be able to recover Santa's Bag of Toys! Review the actor's repository for its planned operations... maybe in the commit messages, we could find the original archive and the password! </em><br><a id='1.16'></a>
 >> <code><strong>TheGrinchiestGrinchmasOfAll</strong></code><br><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2ae66a60-a2ed-4af0-a3de-a3d49fe4685c)
 
 
 > 1.17. <em>How many original files were present in Santa's Bag of Toys?</em><br><a id='1.17'></a>
 >> <code><strong>228</strong></code><br><br>
+
+![image](https://github.com/user-attachments/assets/78d30c36-9ab3-4ea6-855b-dc55879715a6)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/af2f3ef9-f284-48d9-b946-a7579957c1e6)
+
+<br>
+
+
+
+
 
 
 
