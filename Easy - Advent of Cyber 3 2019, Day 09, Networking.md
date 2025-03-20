@@ -151,8 +151,104 @@ The user logged into the FTP server using a username and password and uploaded a
 
 
 > 1.1. <em>In the HTTP #1 - GET requests section, which directory is found on the web server?
-> <img width="500px" src="https://github.com/user-attachments/assets/bf7bcc5c-7ae3-45e1-a8d2-f2ac5ade0fa7"></em><br>Hint : Apply following filter: http.request.method == GET. Then Look for HTTP requests that have "200 OK" response.<a id='1.1'></a>
->> <code><strong>No answer needed</strong></code><br><br>
+> <img width="700px" src="https://github.com/user-attachments/assets/bf7bcc5c-7ae3-45e1-a8d2-f2ac5ade0fa7"></em><br>Hint : Apply following filter: http.request.method == GET. Then Look for HTTP requests that have "200 OK" response.<a id='1.1'></a>
+>> <code><strong>login</strong></code><br><br>
+
+
+![image](https://github.com/user-attachments/assets/8989ef6a-219b-47a0-abc8-abb7b84ce052)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e7fb695c-8dca-4f21-85f6-995f1b6bf354)
+
+<p>Clicked <code>Open</code>.</p>
+
+<p>Typed <code>http.request.method == GET</code> in the <code>filter</code> field.<br>
+Hit <code>ENTER</code>.</p>
+
+![image](https://github.com/user-attachments/assets/8dac39e0-d78b-49b9-bc5a-2f738c040901)
+
+<p>The major part of the requests are related to <code>/login</code>.</p>
+
+
+<br>
+
+> 1.2. <em>What is the username and password used in the login page in the HTTP #2 - POST section? 
+> <img width="700px" src="https://github.com/user-attachments/assets/a1846739-2623-4a40-af49-cc8cea28ffc8"></em><br>Hint : Apply following filter: http.request.method == POST. Then select the required packet, and finally expand the HTML form URL encoded section.<a id='1.2'></a>
+>> <code><strong>McSkidy:Christmas2021</strong></code><br><br>
+
+<p>Typed <code>http.request.method == POST</code> in the <code>filter</code> field.<br>
+Hit <code>ENTER</code>.</p>
+
+
+![image](https://github.com/user-attachments/assets/7898dd39-79ee-4a8c-b404-ee44bc6b24af)
+
+<br>
+
+<p>Right-clicked over the first packet.<br>
+Clicked <code>Follow</code>.<br>
+Clicked <code>HTTP Stream</code>.</p>
+
+![image](https://github.com/user-attachments/assets/9fdf6296-5746-41cc-9435-4791b45b3a1a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/258c043f-3410-4868-8c6f-5aa1990f88ff)
+
+
+<br>
+
+> 1.3. <em>What is the User-Agent's name that has been sent in HTTP #2 - POST section?</em><br>Hint : Apply following filter: http.request.method == POST. Then select the required packet, and finally expand the Hypertext Transfer Protocol section. Find the User-Agent value.<a id='1.3'></a>
+>> <code><strongTryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}</strong></code><br><br>
+
+![image](https://github.com/user-attachments/assets/b3b1c75a-47f6-4bfb-a2c9-a21fda60da2f)
+
+<br>
+
+<p>Another way to discover the agent is perform the same steps as in 1.2..</p>
+
+
+![image](https://github.com/user-attachments/assets/51dd78bf-1c64-4d7c-aec3-39b6239dcb37)
+
+<br>
+
+> 1.4. <em>In the DNS section, there is a TXT DNS query. What is the flag in the message of that DNS query?</em><br>
+> <img width="700px" src="https://github.com/user-attachments/assets/802775c0-2e07-4b10-b8d5-4a52f69ed2f9"
+> Hint : Apply the following filter: dns or udp.port==53. Then find the required response packet which has TXT record. Finally right click on it, Follow -> UDP Stream.<a id='1.4'></a>
+>> <code><strongTryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}</strong></code><br><br>
+
+
+<p>Typed <code> dns or udp.port==53T</code> in the <code>filter</code> field.<br>
+Hit <code>ENTER</code>.</p>
+
+
+![image](https://github.com/user-attachments/assets/f83ecbe1-bad4-4057-93a1-202616228f2a)
+
+
+<br>
+
+<p>Right-clicked over the first packet.<br>
+Clicked <code>Follow</code>.<br>
+Clicked <code>UDP Stream</code>.</p>
+
+
+![image](https://github.com/user-attachments/assets/6ac5fad5-ae4c-4986-90d1-9d30331d299f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/679120ff-7bb7-4665-9458-b20163c33567)
+
+
+<br>
+
+<p>Navigated to the <code>streams</code>.  Note: the one above is <code>Stream 3</code>.</p>
+
+
+
+
+
+
 
 
 
