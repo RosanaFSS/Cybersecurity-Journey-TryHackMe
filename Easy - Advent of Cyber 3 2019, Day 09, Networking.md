@@ -238,6 +238,33 @@ Clicked <code>UDP Stream</code>.</p>
 
 
 
+<br>
+
+> 1.5. <em>In the FTP section, what is the FTP login password?</em><br>
+> Hint : Apply the following filter: ftp. Then, you need to find the FTP request that has FTP PASS command.<a id='1.5'></a>
+>> <code><strong>TryH@ckM3!</strong></code><br><br>
+
+
+<p>Typed <code>ftp</code> in the <code>filter</code> field.<br>
+Hit <code>ENTER</code>.</p>
+
+![image](https://github.com/user-attachments/assets/84b8d8da-22e2-413b-b1e2-dd97afd7f4cc)
+
+<br>
+
+<p>Right-clicked over the packet with the password request.<br>
+Clicked <code>Follow</code>.<br>
+Clicked <code>TCP Stream</code>.</p>
+
+
+![image](https://github.com/user-attachments/assets/5ca9c34f-23bb-4329-931d-0b4119daa364)
+
+
+
+<br>
+
+
+
 
 
 
