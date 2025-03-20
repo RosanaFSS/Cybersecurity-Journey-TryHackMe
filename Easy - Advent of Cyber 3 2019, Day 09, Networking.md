@@ -27,23 +27,45 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
 
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{[ Day 8 ] - Advent of Cyber 3 (2021)}}$$
+  $$\textcolor{#3bd62d}{\textnormal{[ Day 9 ] - Networking - Advent of Cyber 3 (2021)}}$$
 </h1>
 <p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">[ Day 8 ] - Advent of Cyber 3 (2021)</a>.</p>
                                                               
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/cc46f5f1-ead9-4e28-bbb3-31714ee733a0"> </p>
+<p align="center"> <img width="900px" src=""> </p>
 
 <br>
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/30985568-9a2f-49e1-8a15-03142bdc40c2"> </p>
+<p align="center"> <img width="900px" src=""> </p>
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Santa´s Bag of Toys | Special by John Hammond}}$$
+  $$\textcolor{#3bd62d}{\textnormal{[ Day 9 ] - Networking - Advent of Cyber 3 (2021)}}$$
 </h1>
 
 <br>
 
+<p>McSkidy recently found out that a large amount of traffic is entering one system on the network. Use your traffic analysis skills to determine what kind of activities Grinch Enterprises are performing.</p>
 
+<p>In this task, we will walk you through the required skills and knowledge to perform a basic packet analysis using Wireshark.<br>
+
+Packet analysis is a technique used to capture and intercept network traffic that passes the computer’s network interfaces. Packet analysis may also be called with different terms such as packet sniffer, packet analyzer, protocol analyzer, or network analyzer. As a cybersecurity individual, gaining packet analysis skills is an important requirement for network troubleshooting and communication protocol analysis. Using network analysis tools such as Wireshark, it captures network packets in real-time and displays them in a human-readable format. It provides many advanced features, including the live capture and offline analysis. This task covers the packet analysis steps in detail using Wireshark to analyze various protocols (unencrypted protocols) such as HTTP, DNS, and FTP.</p>
+
+<h3>Required Skills and Knowledge</h3>h3>
+
+<p>We’re assuming that the user has basic background skills to complete this task, requires theoretical and practical knowledge, including basic networking concepts, TCP/IP Stack, OSI Model, and TCP handshake. This applies not only to packet analysis but also to most other topics we will deal with in cybersecurity.</p>
+
+<h3>Packet Analysis Tools</h3>
+
+<p>There are many tools that are used in network traffic analysis and network sniffing. Each of these tools provides a different way to capture or dissect traffic. Some offer ways to copy and capture, while others read and ingest using different interfaces. In this room, we will explore Wireshark. Keep in mind that these tools require administrator privileges.</p>
+
+<h3>What is Wireshark?</h3>
+
+<p>Wireshark is pre-installed on the THM AttackBox, and you can just launch the THM AttackBox by using the Start AttackBox button and opening Wireshark.</p>
+
+<p>If you want to do this challenge on your own computer, Wireshark can be downloaded from here: Download Wireshark.<br>
+
+For this task, we have prepared a PCAP file to download and follow the instructions and apply the required packet analysis skills using different scenarios. If you're using the AttackBox you don't need to download the file as it's already on the machine; the AoC3.pcap file is in the following location: /root/Rooms/AoC3/Day9/AoC3.pcap.<br>
+
+We can run Wireshark and import the provided PCAP file as follows,</p>
 
 
 <br>
