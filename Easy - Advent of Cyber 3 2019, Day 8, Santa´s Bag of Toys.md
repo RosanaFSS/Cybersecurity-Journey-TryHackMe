@@ -262,9 +262,9 @@ Note that the TryHackMe Windows analysis machine does not have Internet access, 
 
 <br>
 
-
-<h2>My TryHackMe Journey</h2>
-
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
 
 <div align="center">
 
@@ -275,18 +275,13 @@ Note that the TryHackMe Windows analysis machine does not have Internet access, 
 
 </div>
 
-<p align="center"> Global All Time: 354th<br><br><img width="900px" src="https://github.com/user-attachments/assets/ab1fa808-049c-4dad-a848-b609307283dc"> </p>
+<p align="center"> Global All Time: 354ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ab1fa808-049c-4dad-a848-b609307283dc"> </p>
 
-<p align="center"> Brazil All Time: 8th<br><br><img width="900px" src="https://github.com/user-attachments/assets/6d0501d4-836c-4397-90c3-f4fde161ae38"> </p>
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6d0501d4-836c-4397-90c3-f4fde161ae38"> </p>
 
-<p align="center"> Global monthly: 835th<br><br><img width="900px" src="https://github.com/user-attachments/assets/edff857b-d678-4f7b-8d9f-183195ef936e)"> </p>
+<p align="center"> Global monthly: 835ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/edff857b-d678-4f7b-8d9f-183195ef936e)"> </p>
 
-<p align="center"> Brazil monthly: 11st<br><br><img width="900px" src="https://github.com/user-attachments/assets/497d78b1-bef4-49d2-87db-c24261416a87"> </p>
-
-
-
-
-
+<p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/497d78b1-bef4-49d2-87db-c24261416a87"> </p>
 
 
 
