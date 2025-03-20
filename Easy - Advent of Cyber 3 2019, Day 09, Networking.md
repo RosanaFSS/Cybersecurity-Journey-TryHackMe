@@ -19,18 +19,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{Networking | Where is All This Data Going}}$$
 </h1>
 
-
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{[ Day 9 ] - Networking - Advent of Cyber 3 (2021)}}$$
-</h1>
-<p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">[ Day 8 ] - Advent of Cyber 3 (2021)</a>.</p>
-                                                              
-<p align="center"> <img width="900px" src=""> </p>
-
-<br>
-
-<p align="center"> <img width="900px" src=""> </p>
-
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{[ Day 9 ] - Networking - Advent of Cyber 3 (2021)}}$$
 </h1>
