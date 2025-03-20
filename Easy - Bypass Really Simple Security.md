@@ -5,7 +5,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{275}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Bypass Really Simple Security}}$$
 </h1>
-<p align="center">Explore Broken Authentication, API2:2023 vulnerability. Learn how to exploit a WordPress website and understand various mitigation techniques./p>
+<p align="center">Explore Broken Authentication, API2:2023 vulnerability. Learn how to exploit a WordPress website and understand various mitigation techniques.</p>
 <p align="center">It is classified as as easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/bypassreallysimplesecurity">Bypass Really Simple Security</a>.</p>
                                                               
 <p align="center">
