@@ -163,7 +163,7 @@ Track down this SantaRat software online. It may be just as simple as searching 
 Note that the TryHackMe Windows analysis machine does not have Internet access, so you will need to explore in your own web browser.
 
 > 1.11. <em>What is the name of the user that owns the SantaRat repository? </em><br><a id='1.11'></a>
->> <code><strong>Grinchies</strong></code><br><br>
+>> <code><strong>Grinchiest</strong></code><br><br>
 
 <p>Used <code>Search</code> in <code>GitHub</code>.</p>
 
