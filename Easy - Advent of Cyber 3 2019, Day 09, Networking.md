@@ -37,7 +37,7 @@ Packet analysis is a technique used to capture and intercept network traffic tha
 
 <p>Wireshark is pre-installed on the THM AttackBox, and you can just launch the THM AttackBox by using the Start AttackBox button and opening Wireshark.</p>
 
-<p>If you want to do this challenge on your own computer, Wireshark can be downloaded from here: <a href="https://www.wireshark.org/download.html">Download <code>Wireshark</code></a>.<br>
+<p>If you want to do this challenge on your own computer, Wireshark can be downloaded from here: <a href="https://www.wireshark.org/download.html"><code>Download Wireshark</code></a>.<br>
 
 For this task, we have prepared a PCAP file to download and follow the instructions and apply the required packet analysis skills using different scenarios. If you're using the AttackBox you don't need to download the file as it's already on the machine; the AoC3.pcap file is in the following location: /root/Rooms/AoC3/Day9/AoC3.pcap.<br>
 
