@@ -19,12 +19,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{Networking | Where is All This Data Going}}$$
 </h1>
 
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{[ Day 9 ] - Networking - Advent of Cyber 3 (2021)}}$$
-</h1>
-
-<br>
-
 <p>McSkidy recently found out that a large amount of traffic is entering one system on the network. Use your traffic analysis skills to determine what kind of activities Grinch Enterprises are performing.</p>
 
 <p>In this task, we will walk you through the required skills and knowledge to perform a basic packet analysis using Wireshark.<br>
