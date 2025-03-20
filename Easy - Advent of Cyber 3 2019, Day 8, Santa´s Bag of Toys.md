@@ -282,9 +282,3 @@ Note that the TryHackMe Windows analysis machine does not have Internet access, 
 <p align="center"> Global monthly: 835ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/edff857b-d678-4f7b-8d9f-183195ef936e)"> </p>
 
 <p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/497d78b1-bef4-49d2-87db-c24261416a87"> </p>
-
-
-
-
-
-
