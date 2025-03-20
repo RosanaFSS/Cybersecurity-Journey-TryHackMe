@@ -297,12 +297,13 @@ Clicked <code>TCP Stream</code>.</p>
   $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
 </h1>
 
+
 <div align="center">
 
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
-| March 20, 2025    | 318      |     353ʳᵈ    |        8ᵗʰ   |    857ᵗʰ    |      11ˢᵗ  |  87,057  |       621 |   59      |
+| March 20, 2025    | 318      |     353ʳᵈ    |        8ᵗʰ   |    859ᵗʰ    |      11ˢᵗ  |  87,057  |       621 |   59      |
 
 </div>
 
@@ -310,6 +311,6 @@ Clicked <code>TCP Stream</code>.</p>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/fe54f765-a151-42f3-9282-d1fa36994f27"> </p>
 
-<p align="center"> Global monthly: 857ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/24f70053-0aa5-4531-88b2-114398a56f9"> </p>
+<p align="center"> Global monthly: 859ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ee8a92e1-ecbc-4d9b-b894-12066eb40ad2"> </p>
 
 <p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/1e59a6f4-64a3-4e9b-9508-d437745caaed"> </p></p>
