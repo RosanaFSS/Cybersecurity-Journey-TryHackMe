@@ -31,8 +31,8 @@ Note that for this task, you will interact with a Windows virtual machine to per
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 
-> 1.1. <em>Read the premise above, start the attached Windows analysis machine and find the transcription logs in the SantasLaptopLogs folder on the Desktop.</em><br><a id='1.1'></a>
-> <em>If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:Target_IP - The credentials for the machine are Administrator as the username, and grinch123! as the password.</em>
+> 1.1. <em>Read the premise above, start the attached Windows analysis machine and find the transcription logs in the SantasLaptopLogs folder on the Desktop.
+> If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:Target_IP - The credentials for the machine are Administrator as the username, and grinch123! as the password.</em><a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code><br><br>
 
 
