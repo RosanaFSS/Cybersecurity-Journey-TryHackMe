@@ -231,7 +231,6 @@ https://geoguessr.com/</p>
 
 
 <h2>My Journey<a id='3'></a></h2>
-<p></p>Following I share the status of my journey in TryHackMe.</p>
 
 <div align="center">
 
