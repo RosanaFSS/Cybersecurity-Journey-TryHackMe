@@ -1,0 +1,15 @@
+March 15, 2025 - Day 313<br>
+
+<h2>Data Exfiltration</h2>
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/5fcc2e13-1420-4c46-801c-39fb1baef240)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1949265c-9ef9-4296-8401-6225d60ebdaf)
+
+<br>
