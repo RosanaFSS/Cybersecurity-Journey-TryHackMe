@@ -200,7 +200,7 @@ Clicked <code>HTTP Stream</code>.</p>
 <br>
 
 > 1.3. <em>What is the User-Agent's name that has been sent in HTTP #2 - POST section?</em><br>Hint : Apply following filter: http.request.method == POST. Then select the required packet, and finally expand the Hypertext Transfer Protocol section. Find the User-Agent value.<a id='1.3'></a>
->> <code><strongTryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}</strong></code><br><br>
+>> <code><strong>TryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}</strong></code><br><br>
 
 ![image](https://github.com/user-attachments/assets/b3b1c75a-47f6-4bfb-a2c9-a21fda60da2f)
 
