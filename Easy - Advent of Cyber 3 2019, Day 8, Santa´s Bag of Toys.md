@@ -142,12 +142,78 @@ Clicked <code>Run as Administrator</code>.</p>
 
 <br>
 
+
+> 1.9. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.9'></a>
+>> <code><strong>github</strong></code><br><br>
+
 ![image](https://github.com/user-attachments/assets/9ba25aa6-432c-4ec4-abb2-a470fd7ab01b)
 
 <br>
 
-> 1.9. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.8'></a>
->> <code><strong>github</strong></code><br><br>
+> 1.10. <em>Additionally, there is a unique folder named "Bag of Toys" on the Desktop! This must be where Santa prepares his collection of toys, and this is certainly sensitive data that the actor could have compromised. What is the name of the file found in this folder? </em><br><a id='1.10'></a>
+>> <code><strong>bag_of_toys.zip</strong></code><br><br>
+
+![image](https://github.com/user-attachments/assets/bb25d544-8dcf-4e73-845d-6ceb0649ff30)
+
+
+<br>
+
+Track down this SantaRat software online. It may be just as simple as searching for the name of the software on the suggested website (Github).
+
+Note that the TryHackMe Windows analysis machine does not have Internet access, so you will need to explore in your own web browser.
+
+> 1.11. <em>What is the name of the user that owns the SantaRat repository? </em><br><a id='1.11'></a>
+>> <code><strong>Grinchies</strong></code><br><br>
+
+<p>Used <code>Search</code> in <code>GitHub</code>.</p>
+
+![image](https://github.com/user-attachments/assets/304f8f6d-7f7f-49db-815e-894256ec82b1)
+
+> 1.12. <em>Explore the other repositories that this user owns. What is the name of the repository that seems especially pertinent to our investigation? </em><br><a id='1.12'></a>
+>> <code><strong>operation-bag-of-toys</strong></code><br><br>
+
+<p>Used 1.11. to dicover the answer.</p>
+
+![image](https://github.com/user-attachments/assets/1d434f85-e640-44b5-8a5c-ddad5bcb77d5)
+
+<br>
+
+> 1.13. <em>Explore the other repositories that this user owns. What is the name of the repository that seems especially pertinent to our investigation? </em><br><a id='1.13'</a>
+>> <code><strong>uharc-cmd-install.exe</strong></code><br><br>
+
+<p>Clicked <code>SantaRat</code>.</p>
+
+![image](https://github.com/user-attachments/assets/b2b02061-f806-46a3-9c6c-476a904a1264)
+
+<br>
+
+<p>Opened one of the <code>SantasLaptopLogs</code>, and discovered about this: <code>PS C:\Users\s4nta\Desktop> C:\Program` Files` `(x86`)\UHARC` CMD\bin\uharc.exe</code></p>
+
+![image](https://github.com/user-attachments/assets/9b1c42dc-8ae0-4c80-b403-62d260d6cc33)
+
+<br>
+
+<p>[ ... ]</p>
+
+> 1.14. <em>Following this, the actor looks to have removed everything from the bag of toys, and added in new things like coal, mold, worms, and more!  What are the contents of these "malicious" files (coal, mold, and all the others)? </em><br><a id='1.14'></a>
+>> <code><strong>GRINCHMAS</strong></code><br><br>
+
+
+<br>
+
+
+> 1.15. <em>We know that the actor seemingly collected the original bag of toys. Maybe there was a slight OPSEC mistake, and we might be able to recover Santa's Bag of Toys! Review the actor's repository for its planned operations... maybe in the commit messages, we could find the original archive and the password! </em><br><a id='1.15'></a>
+>> <code><strong>No answer neeeded</strong></code><br><br>
+
+> 1.16. <em>We know that the actor seemingly collected the original bag of toys. Maybe there was a slight OPSEC mistake, and we might be able to recover Santa's Bag of Toys! Review the actor's repository for its planned operations... maybe in the commit messages, we could find the original archive and the password! </em><br><a id='1.16'></a>
+>> <code><strong>TheGrinchiestGrinchmasOfAll</strong></code><br><br>
+
+
+> 1.17. <em>How many original files were present in Santa's Bag of Toys?</em><br><a id='1.17'></a>
+>> <code><strong>228</strong></code><br><br>
+
+
+
 
 
 
