@@ -3,14 +3,17 @@
 It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Advent of Cyber 3 (2021) - Day 8}}$$
+  $$\textcolor{#3bd62d}{\textnormal{[ Day 8 ] - Advent of Cyber 3 (2021)}}$$
 </h1>
-<p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas</p>
-<p align="center">It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">Advent of Cyber 3 (2021)</a>.</p>
+<p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">[ Day 8 ] - Advent of Cyber 3 (2021)</a>.</p>
                                                               
 <p align="center">
   <img width="900px" src="https://github.com/user-attachments/assets/cc46f5f1-ead9-4e28-bbb3-31714ee733a0">
 </p>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Santa´s Bag of Toys | Special by John Hammond}}$$
+</h1>
 
 <br>
 
