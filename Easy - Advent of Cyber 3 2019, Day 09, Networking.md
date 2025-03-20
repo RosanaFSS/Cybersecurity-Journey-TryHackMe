@@ -29,9 +29,13 @@ Packet analysis is a technique used to capture and intercept network traffic tha
 
 <p>We’re assuming that the user has basic background skills to complete this task, requires theoretical and practical knowledge, including basic networking concepts, TCP/IP Stack, OSI Model, and TCP handshake. This applies not only to packet analysis but also to most other topics we will deal with in cybersecurity.</p>
 
+<br>
+
 <h3>Packet Analysis Tools</h3>
 
 <p>There are many tools that are used in network traffic analysis and network sniffing. Each of these tools provides a different way to capture or dissect traffic. Some offer ways to copy and capture, while others read and ingest using different interfaces. In this room, we will explore Wireshark. Keep in mind that these tools require administrator privileges.</p>
+
+<br>
 
 <h3>What is Wireshark?</h3>
 
@@ -52,6 +56,8 @@ The display filter section is where we can specify rules to find certain packets
 
 
 ![image](https://github.com/user-attachments/assets/f2d50d29-fbc2-44eb-8075-f16fd13a0c98)
+
+<br>
 
 <h3>Filters</h3>
 
@@ -79,6 +85,8 @@ Next, we can also specify certain protocols, such as HTTP showing all packets fo
 
 Note: Make sure to open the Wireshark tool, and the AoC3.pcap file is imported to follow up with the content.</p>
 
+<br>
+
 <h3>HTTP #1 - GET</h3>
 
 <p>We will be performing a packet analysis on the pre-captured network packets in the PCAP to analyze HTTP traffic. Once we open the PCAP using Wireshark, it will show a lot of network traffic since we connect using RDP protocol, making our work harder. However, we will be using a Wireshark filter to focus on web requests only. In this case, we are dealing with the HTTP protocol. Therefore, we can use Wireshark rules to make it easier. We can apply the following rule to the Wireshark filter to show only the HTTP traffic: http.<br>
@@ -89,11 +97,15 @@ The following figure shows all HTTP traffic that has been sent to and from the w
 
 <p>We can specify the HTTP method. In this case, we can specify to show all the GET requests using the following filter: <br>http.request.method == GET. Keep following the GET HTTP requests and answer the question in this task.</p>
 
+<br>
+
 <h3>HTTP #1 - POST</h3>
 
 <p>In the second scenario, we check HTTP POST requests used to log into a web portal. In this section, we will be performing packet analysis to capture the username and password of the POST request. Make sure to open the PCAP file to perform the packet analysis. Your goal in this section is to inspect the HTTP packet to get the username and password. For more details, you double-click on the required packet that has the POST request. We can see all the required information we need in the hexadecimal section in cleartext. In addition, there are other ways that show more information the HTTP request, which is to follow the HTTP stream. We can do that by right-clicking on the required packet and then selecting follow -> TCP Stream to see the web requests and their details.<br>
 
 In this section, we have to find the POST request and explore all packet information to answer question 2 and 3 in this task.</p>
+
+<br>
 
 <h3>DNS</h3>
 <p>DNS is like a giant phone book that takes a URL (Like https://tryhackme.com/) and turns it into an IP address. This means that people don’t have to remember IP addresses for their favorite websites.<br>
@@ -117,6 +129,7 @@ Next, we will be looking at the response to the DNS request. In Wireshark, note 
 
 <p>By double-clicking on the required packet, we can see that it has an answer section, where it has the answer to our query, which is Address: 127.0.0.1. This means that the type A DNS request of the packet.tryhackme.com  is 127.0.0.1. Note that the PCAP file may have different IPs or extra packets that have not been discussed. There are other DNS requests that have been generated in the PCAP file. Now, dig more into DNS queries and responses in Wireshark and answer question 4 in this task.</p>
 
+<br>
 
 
 <h3>FTP</h3>
