@@ -302,14 +302,14 @@ Clicked <code>TCP Stream</code>.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
-| March 20, 2025    | 318      |     354ᵗʰ    |        8ᵗʰ   |    835ᵗʰ    |      11ˢᵗ  |  87,001  |       621 |   59      |
+| March 20, 2025    | 318      |     353ʳᵈ    |        8ᵗʰ   |    857ᵗʰ    |      11ˢᵗ  |  87,057  |       621 |   59      |
 
 </div>
 
-<p align="center"> Global All Time: 354ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ab1fa808-049c-4dad-a848-b609307283dc"> </p>
+<p align="center"> Global All Time: 353ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ae1de988-3f9d-4974-a447-035f210e5bb1"> </p>
 
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6d0501d4-836c-4397-90c3-f4fde161ae38"> </p>
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/fe54f765-a151-42f3-9282-d1fa36994f27"> </p>
 
-<p align="center"> Global monthly: 835ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/edff857b-d678-4f7b-8d9f-183195ef936e)"> </p>
+<p align="center"> Global monthly: 857ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/24f70053-0aa5-4531-88b2-114398a56f9"> </p>
 
-<p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/497d78b1-bef4-49d2-87db-c24261416a87"> </p></p>
+<p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/1e59a6f4-64a3-4e9b-9508-d437745caaed"> </p></p>
