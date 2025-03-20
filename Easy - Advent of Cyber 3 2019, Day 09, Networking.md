@@ -242,7 +242,7 @@ Clicked <code>UDP Stream</code>.</p>
 
 <br>
 
-<p>Navigated to the <code>streams</code>.  Note: the one above is <code>Stream 3</code>.</p>
+<p>Navigated through the <code>streams</code>.  Note: the one above is <code>Stream 3</code>.</p>
 
 
 
