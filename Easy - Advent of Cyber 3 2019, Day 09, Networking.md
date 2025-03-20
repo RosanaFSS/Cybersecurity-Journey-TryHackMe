@@ -9,14 +9,14 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">Advent of Cyber 3 (2021)</a>.</p>
                                                               
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/4bb7ca2e-90f1-4cbe-96af-bb1b459f4ff3"> </p>
 
 <br>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/7fd172f6-3e11-423f-a897-aeadd231c0c6"> </p>
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Networking | Where is All This Data Going}}$$
+  $$\textcolor{#3bd62d}{\textnormal{Networking | Basic Packet Analysis using Wireshark | Where is All This Data Going}}$$
 </h1>
 
 <p>McSkidy recently found out that a large amount of traffic is entering one system on the network. Use your traffic analysis skills to determine what kind of activities Grinch Enterprises are performing.</p>
@@ -264,21 +264,30 @@ Clicked <code>TCP Stream</code>.</p>
 <br>
 
 
+> 1.6. <em>In the FTP section, what is the FTP command used to upload the secret.txt  file?</em><br>
+> <img width="700px" src="https://github.com/user-attachments/assets/b605084a-2616-4770-9749-9a1497e56a85"
+> Hint : Apply the following filter: ftp-data. Then find the required packet. Then expand the Transmission Control Protocol section, and look at the command value.<a id='1.6'></a>
+>> <code><strong>STOR</strong></code><br><br>
+
+<p>Discovered the answer when performing 1.5. activities.</p>
+
+![image](https://github.com/user-attachments/assets/14198e97-4ca2-4870-ac9f-95969ed6a302)
+
+<br>
+
+> 1.6. <em>In the FTP section, what is the content of the secret.txt file?</em><br>
+> <img width="700px" src="https://github.com/user-attachments/assets/6406e349-f4ee-454c-8ac0-238f999fac33"
+> Hint : Apply the following filter: ftp-data. Then find the required packet. Finally Expand the Line-base text data section. Only include the part after "AoC Flag:" as your answer.<a id='1.6'></a>
+>> <code><strong>123^-^321</strong></code><br><br>
 
 
+![image](https://github.com/user-attachments/assets/5cb076d0-0074-49a6-858d-13689df5873d)
 
+<br>
 
+<p>Expanded <code>Line-based texta data</code> section, and discovered the answer.</p>
 
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/c352d2de-4550-4a06-9095-ddefb81be5f3)
 
 
 
