@@ -2,6 +2,8 @@
 <p align="center">Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
 
+![image](https://github.com/user-attachments/assets/67d84414-d9e4-4068-be03-f10e812305dd)
+
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{[ Day 8 ] - Advent of Cyber 3 (2021)}}$$
 </h1>
@@ -36,12 +38,6 @@ Note that for this task, you will interact with a Windows virtual machine to per
 <h3>Additional Resources</h3>
 <p></p>If you are interested in learning more about the Windows Fundamentals, check out the Windows Fundamentals module on TryHackMe.</p>
 
-<br>
-
-![image](https://github.com/user-attachments/assets/67d84414-d9e4-4068-be03-f10e812305dd)
-
-<br>
-<br>
 
 <br>
 
