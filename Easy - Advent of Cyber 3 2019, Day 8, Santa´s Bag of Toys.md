@@ -18,3 +18,41 @@ Note that for this task, you will interact with a Windows virtual machine to per
 
 <h3>Additional Resources</h3>
 <p></p>If you are interested in learning more about the Windows Fundamentals, check out the Windows Fundamentals module on TryHackMe.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/67d84414-d9e4-4068-be03-f10e812305dd)
+
+<br>
+<br>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 1.1. <em>>Read the premise above, start the attached Windows analysis machine and find the transcription logs in the SantasLaptopLogs folder on the Desktop.<br>If you want to RDP into the machine, start the AttackBox and enter the following into a terminal: xfreerdp /u:Administrator /p:grinch123! /v:10.10.93.3 - The credentials for the machine are Administrator as the username, and grinch123! as the password.<br>
+</em><br><a id='1.1'></a>
+>> <code><strong>No answer needed</strong></code><br><br>
+
+
+
+<p>Used Remmina.  Entered the credentials provided for this task.</p>
+
+![image](https://github.com/user-attachments/assets/5f293f85-6956-4a96-b019-47173b1830be)
+
+<p>Clicked OK.</p>
+
+![image](https://github.com/user-attachments/assets/039d33d0-04e8-46c7-adc7-b3ff3791d3a3)
+
+<br>
+
+<p>clicked on <code>SantasLaptopLogs</code></p>
+
+![image](https://github.com/user-attachments/assets/136aa022-49db-4244-8227-1c1c974c12de)
+
+<br>
+
+
+
+
+
