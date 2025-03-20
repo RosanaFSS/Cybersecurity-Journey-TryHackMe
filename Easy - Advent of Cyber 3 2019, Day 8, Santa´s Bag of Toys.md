@@ -68,14 +68,88 @@ Open the first transcription log. You can see the commands and output for everyt
 
 <p>Review each transcription log to get an idea for what activity was performed on the laptop just after it went missing. In the "second" transcription log, it seems as if the perpetrator created a backdoor user account!</p>
 
-> 1.3. <em>What was the password set for the new "backdoor" account?</em><br><a id='1.2'></a>
+> 1.3. <em>What was the password set for the new "backdoor" account?</em><br><a id='1.3'></a>
 >> <code><strong>grinchstolechristmas</strong></code><br><br>
 
+
+<p>Double-clicked on the third file in the <code>SantasLaptopLogs</code>, and discovered the answer.</p>
 
 ![image](https://github.com/user-attachments/assets/a831cd5d-6a0c-4173-a308-ed7e5c858f86)
 
 
 <p>In one of the transcription logs,  the bad actor interacts with the target under the new backdoor user account, and copies a unique file to the Desktop. Before it is copied to the Desktop,</p>
+
+> 1.4. <em>In one of the transcription logs,  the bad actor interacts with the target under the new backdoor user account, and copies a unique file to the Desktop. Before it is copied to the Desktop, what is the full path of the original file? </em><br><a id='1.4'></a>
+>> <code><strong>C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat</strong></code><br><br>
+
+
+<p>Double-clicked on the last file in the <code>SantasLaptopLogs</code>, and discovered the answer.</p>
+
+![image](https://github.com/user-attachments/assets/5e7e042e-be37-4dd2-8ec0-ad0ecc63319a)
+
+<br>
+
+> 1.5. <em>The actor uses a Living Off The Land binary (LOLbin) to encode this file, and then verifies it succeeded by viewing the output file. What is the name of this LOLbin?</em><br><a id='1.5'></a>
+>> <code><strong>certutil.exe</strong></code><br><br>
+
+<p>Discovered the answer in the same file analyzed in the 1.4.</p>
+
+![image](https://github.com/user-attachments/assets/595af745-6996-4584-bf1f-0fe7c3324aa5)
+
+<br>
+
+<p>[ ... ]</p>
+
+> 1.6. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.6'></a>
+>> <code><strong>No answer needed</strong></code><br><br>
+
+<p>Opened <code>ShellBagsExplorer.exe</code> directory which in located in the Desktop.<br>
+Double-clicked <code>ShellBagsExplorer</code>.</p>
+
+![image](https://github.com/user-attachments/assets/b42aa7ce-f56c-4bb3-aff0-38e2e2b179a0)
+
+<br>
+
+
+> 1.7. <em>Read the above and open the ShellBagsExplorer.exe application found in the folder on your Desktop.</em><br><a id='1.7'></a>
+>> <code><strong>No answer needed</strong></code><br><br>
+
+<p>Opened <code>ShellBagsExplorer.exe</code> directory which in located in the Desktop.<br>
+Right-clicked <code>ShellBagsExplorer</code>.<br>
+Clicked <code>Run as Administrator</code>.</p>
+
+![image](https://github.com/user-attachments/assets/de717f4a-9d2c-417c-a4bf-457b9419e74d)
+
+
+> 1.8. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.8'></a>
+>> <code><strong>github</strong></code><br><br>
+
+<p>Copied the content <code>santa.data</code> in <code>PowerShell_transcript.LAPTOP.Zw6PA+c4.20211128153734</code> file between <code>----BEGIN CERTIFICATE-----</code> and <code>-----END CERTIFICATE-----</code>.</p>
+
+![image](https://github.com/user-attachments/assets/304f4c29-52fc-41de-b93c-41d8cbd28215)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6e9a0da8-b129-497b-9235-97197f5089b8)
+
+
+<br>
+
+<p>Chose <code>Download</code>, type a name for the file, clicked <code>OK</code>, selected <code>Open with</code>, clicked <code>Browse</code>, selected the <code>ShellBagsExplorer.exe</code>.</p>
+
+![image](https://github.com/user-attachments/assets/d463143d-4027-405c-a171-256986e5691b)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9ba25aa6-432c-4ec4-abb2-a470fd7ab01b)
+
+<br>
+
+> 1.9. <em>Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?</em><br><a id='1.8'></a>
+>> <code><strong>github</strong></code><br><br>
+
+
 
 
 
