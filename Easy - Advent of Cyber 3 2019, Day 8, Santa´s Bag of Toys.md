@@ -263,6 +263,9 @@ Note that the TryHackMe Windows analysis machine does not have Internet access, 
 <br>
 
 
+<h2>My TryHackMe Journey</h2>
+
+<p align="center"> Global All Time: 354th<br><img width="900px" src="https://github.com/user-attachments/assets/ab1fa808-049c-4dad-a848-b609307283dc"> </p>
 
 
 
