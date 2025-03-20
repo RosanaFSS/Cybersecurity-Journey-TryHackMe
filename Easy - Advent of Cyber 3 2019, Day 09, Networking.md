@@ -216,33 +216,27 @@ Clicked <code>HTTP Stream</code>.</p>
 > 1.4. <em>In the DNS section, there is a TXT DNS query. What is the flag in the message of that DNS query?</em><br>
 > <img width="700px" src="https://github.com/user-attachments/assets/802775c0-2e07-4b10-b8d5-4a52f69ed2f9"
 > Hint : Apply the following filter: dns or udp.port==53. Then find the required response packet which has TXT record. Finally right click on it, Follow -> UDP Stream.<a id='1.4'></a>
->> <code><strongTryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}</strong></code><br><br>
+>> <code><strong>THM{dd63a80bf9fdd21aabbf70af7438c257}</strong></code><br><br>
 
 
-<p>Typed <code> dns or udp.port==53T</code> in the <code>filter</code> field.<br>
+<p>Typed <code> dns</code> in the <code>filter</code> field.<br>
 Hit <code>ENTER</code>.</p>
 
-
-![image](https://github.com/user-attachments/assets/f83ecbe1-bad4-4057-93a1-202616228f2a)
-
+![image](https://github.com/user-attachments/assets/e60619a1-4a61-4405-8937-a5352c283c67)
 
 <br>
 
-<p>Right-clicked over the first packet.<br>
+<p>Right-clicked over the first packet with a TXT DNS query.<br>
 Clicked <code>Follow</code>.<br>
 Clicked <code>UDP Stream</code>.</p>
 
-
-![image](https://github.com/user-attachments/assets/6ac5fad5-ae4c-4986-90d1-9d30331d299f)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/679120ff-7bb7-4665-9458-b20163c33567)
-
+![image](https://github.com/user-attachments/assets/6e405b56-1fc7-464f-8a44-70a5ffbc531e)
 
 <br>
 
-<p>Navigated through the <code>streams</code>.  Note: the one above is <code>Stream 3</code>.</p>
+![image](https://github.com/user-attachments/assets/5d2a0d67-a5f7-4bba-9cec-b6c3f4790cf6)
+
+
 
 
 
