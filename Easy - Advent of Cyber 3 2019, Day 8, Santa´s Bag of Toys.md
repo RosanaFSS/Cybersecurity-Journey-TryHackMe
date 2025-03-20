@@ -12,9 +12,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">[ Day 8 ] - Advent of Cyber 3 (2021)</a>.</p>
                                                               
-<p align="center">
-  <img width="900px" src="https://github.com/user-attachments/assets/cc46f5f1-ead9-4e28-bbb3-31714ee733a0">
-</p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/cc46f5f1-ead9-4e28-bbb3-31714ee733a0"> </p>
+<p align="center"> <img width="900px" src="[https://github.com/user-attachments/assets/67d84414-d9e4-4068-be03-f10e812305dd](https://github.com/user-attachments/assets/a2a94ea2-381b-4592-a53e-1eff5643416e)">  </p>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Santa´s Bag of Toys | Special by John Hammond}}$$
