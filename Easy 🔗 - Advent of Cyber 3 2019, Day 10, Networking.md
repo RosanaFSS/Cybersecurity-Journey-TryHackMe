@@ -171,7 +171,7 @@ But the correct answer is http relative to port 80.</p>
 
 
 > 1.6. <em>By checking the vulnerabilities related to the installed web server, you learn that there is a critical vulnerability that allows path traversal and remote code execution. Now you can tell McSkidy that Grinch Enterprises used this vulnerability. What is the CVE number of the vulnerability that was solved in version 2.4.51?</em><br> Hint : 2.4.50 provided an incomplete fix for CVE-2021-41773.<a id='1.6'></a>
->> <code><strong>_____</strong></code><br><br>
+>> <code><strong>CVE-2021-42013</strong></code><br><br>
 
 <p>Googled <code>"Apache" AND "CVE-2021-41773" AND "fix"</code> .<br>
 Discovered the following...</p>
@@ -183,12 +183,17 @@ Discovered the following...</p>
 
 ![image](https://github.com/user-attachments/assets/7cb4f236-5a05-4146-b0b4-74244217e469)
 
-
 <br>
 
 
 > 1.7. <em>You are putting the pieces together and have a good idea of how your web server was exploited. McSkidy is suspicious that the attacker might have installed a backdoor. She asks you to check if there is some service listening on an uncommon port, i.e. outside the 1000 common ports that Nmap scans by default. She explains that adding -p1-65535 or -p- will scan all 65,535 TCP ports instead of only scanning the 1000 most common ports. What is the port number that appeared in the results now?</em><br> Hint : If the scan takes more than a few minutes, consider using Nmap with the options -sT -p20000-21000 -T4 (where -p20000-21000 limits the scan to ports between 20,000 and 21,000, while T4 makes Nmap aggressive and increases the speed).<a id='1.7'></a>
 >> <code><strong>_____</strong></code><br><br>
+
+```bash
+:~/Day10# nmap -sT -p- Target_IP
+```
+
+![image](https://github.com/user-attachments/assets/227579f9-26e5-4df3-9eed-70c590fad22f)
 
 <br>
 
