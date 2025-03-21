@@ -187,7 +187,7 @@ Discovered the following...</p>
 
 
 > 1.7. <em>You are putting the pieces together and have a good idea of how your web server was exploited. McSkidy is suspicious that the attacker might have installed a backdoor. She asks you to check if there is some service listening on an uncommon port, i.e. outside the 1000 common ports that Nmap scans by default. She explains that adding -p1-65535 or -p- will scan all 65,535 TCP ports instead of only scanning the 1000 most common ports. What is the port number that appeared in the results now?</em><br> Hint : If the scan takes more than a few minutes, consider using Nmap with the options -sT -p20000-21000 -T4 (where -p20000-21000 limits the scan to ports between 20,000 and 21,000, while T4 makes Nmap aggressive and increases the speed).<a id='1.7'></a>
->> <code><strong>_____</strong></code><br><br>
+>> <code><strong>20212</strong></code><br><br>
 
 ```bash
 :~/Day10# nmap -sT -p- Target_IP
@@ -199,7 +199,7 @@ Discovered the following...</p>
 
 
 > 1.8. <em>What is the name of the program listening on the newly discovered port?</em><br> Hint : Using Nmap with the option -sV should reveal the name under VERSION for the specified port(s). You may add something like -p20000-21000 to limit the range of ports you want to check.<a id='1.8'></a>
->> <code><strong>20212</strong></code><br><br>
+>> <code><strong>telnetd</strong></code><br><br>
 
 ```bash
 :~/Day10# nmap -sV -p 20212 Target_IP
