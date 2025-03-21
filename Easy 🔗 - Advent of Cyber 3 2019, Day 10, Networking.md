@@ -25,7 +25,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
 
 Before McSkidy starts firing up Nmap, let’s review some keywords related to her task. If you are familiar with the terms IP address, protocol, server, and port number, feel free to skip the following three sections and start directly with the Nmap section.</p>
 
-<h2>Check out Philip Wylie's walkthrough video for day 10 here</h2>h2>
+<h2>Check out Philip Wylie's walkthrough video for day 10 here</h2>
 
 <h3>IP Addresses</h3>
 <p>Every computer (host) that connects to a network needs to have a logical address. For instance, a host can be any system with network access, such as a laptop, a smartphone, and a Raspberry Pi. We refer to this address as logical because it's assigned by software and could change over time, for example, when the host connects to a new network. The logical address, in this case, is the IP address.<br>
@@ -131,12 +131,30 @@ To better understand the difference between -sT and -sS, we can use the analogy 
 <br>
 
 > 1.3. <em>What is the service related to the highest port number you found in the first question?</em><a id='1.3'></a>
->> <code><strong>_____</strong></code><br><br>
+>> <code><strong>http</strong></code><br><br>
+
+<p>I thought it was necessary to use namp to scan all ports. By doing this I discovered that port 20212 is open.<br>
+But the correct answer is http relative to port 80.</p>
+
+```bash
+:~/Day10# nmap -sT -p- Target_IP
+```
+
+![image](https://github.com/user-attachments/assets/227579f9-26e5-4df3-9eed-70c590fad22f)
+
 
 <br>
 
 > 1.4. <em>Now run nmap -sS MACHINE_IP. Did you get the same results? (Y/N)</em><a id='1.4'></a>
->> <code><strong>_____</strong></code><br><br>
+>> <code><strong>Y</strong></code><br><br>
+
+```bash
+:~/Day10# nmap -sS Target_IP
+```
+
+
+![image](https://github.com/user-attachments/assets/02ca4f53-88a1-4dd8-bd5c-7763c9eaece9)
+
 
 <br>
 
