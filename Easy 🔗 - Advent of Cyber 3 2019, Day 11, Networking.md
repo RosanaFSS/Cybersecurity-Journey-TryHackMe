@@ -56,6 +56,8 @@ Finally, the Invoices table will refer to a customer and one or more electronic 
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
+<br>
+
 
 > 1.1. <em>You decided that the first step would be to check the running services on <code>10.10.238.97</code>. You resort to yesterday’s tool, Nmap.<br>Knowing that <code>10.10.238.97</code> is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add <code>-Pn</code> to your <code>nmap</code> command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?</em>
 <a id='1.1'></a>
@@ -107,9 +109,22 @@ In the terminal below, we executed the query, <code>SELECT * FROM reindeer.dbo.n
 
 
 > 1.3. <em>We can see four columns in the table displayed above: id, first (name), last (name), and nickname. What is the first name of the reindeer of id 9? </em>Hint : The query won't be executed unless you type "go" on a separate line and hit the Enter/Return key as shown in the example terminal.<a id='1.3'></a>
->> <code><strong>_________________</strong></code><br><br>
+>> <code><strong>Rudolph</strong></code><br><br>
 
 <br>
+
+```bash
+:~/Day11# sqsh -S Target_IP -U sa -P "t7uLKzddQzVjVFJp"
+sqsh-2.5.16.1 Copyright (C) 1995-2001 Scott C. Gray
+Portions Copyright (C) 2004-2014 Michael Peppler and Martin Wesdorp
+This is free software with ABSOLUTELY NO WARRANTY
+For more information type '\warranty'
+1> SELECT * FROM reindeer.dbo.names;
+2> go
+```
+
+![image](https://github.com/user-attachments/assets/e94fa67a-828e-44c5-aeb4-0765f97885ab)
+
 
 
 > 1.4. <em>Check the table <code>schedule</code>. What is the destination of the trip scheduled on December 7? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table schedule.<a id='1.4'></a>
