@@ -9,11 +9,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{318}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">Advent of Cyber 3 (2021)</a>.</p>
                                                               
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/4b82fb43-d2cc-4d81-bd24-f375edd12d05"> </p>
 
 <br>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/a432a1d5-674e-4e3a-8326-2c08df594da7"> </p>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Offensive Is the Best Defence | Networking}}$$
@@ -201,6 +201,13 @@ Discovered the following...</p>
 > 1.8. <em>What is the name of the program listening on the newly discovered port?</em><br> Hint : Using Nmap with the option -sV should reveal the name under VERSION for the specified port(s). You may add something like -p20000-21000 to limit the range of ports you want to check.<a id='1.8'></a>
 >> <code><strong>_____</strong></code><br><br>
 
+```bash
+:~/Day10# nmap -sV -p 20212 Target_IP
+```
+
+
+![image](https://github.com/user-attachments/assets/c580fa4e-3aa2-494a-8769-32bbd3b53520)
+
 <br>
 
 
@@ -210,13 +217,27 @@ Discovered the following...</p>
 <br>
 
 
+<br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
 
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 20, 2025    | 318      |     352ⁿᵈ    |        8ᵗʰ   |    859ᵗʰ    |      13ʳᵈ  |  87,057  |       621 |   59      |
 
+</div>
 
+<p align="center"> Global All Time: 353ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0c430167-dcbe-41cc-a11d-d61af80a5843"> </p>
 
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/344cd29e-64ed-46aa-806b-f70476162802"> </p>
 
+<p align="center"> Global monthly: 859ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ee8a92e1-ecbc-4d9b-b894-12066eb40ad2"> </p>
 
-
+<p align="center"> Brazil monthly: 13ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6cd2321f-fbcc-4044-b8a2-bf3338af2baf"> </p></p>
 
