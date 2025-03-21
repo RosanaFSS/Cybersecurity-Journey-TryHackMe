@@ -80,12 +80,11 @@ Let’s try to run, sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</p>
 <br>
 
 <p>McDatabaseAdmin told us the database name is reindeer and it has three tables:<br>
-
 - names<br>
 - presents<br>
-- schedule<br><br>
-To display the table names, you could use the following syntax, SELECT * FROM table_name WHERE condition.
+- schedule<br>
 
+To display the table names, you could use the following syntax, SELECT * FROM table_name WHERE condition.<br>
 - SELECT * is used to return specific columns (attributes). * refers to all the columns.<br>
 - FROM table_name to specify the table you want to read from.<br>
 - WHERE condition to specify the rows (entities).<br><br>
