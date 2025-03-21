@@ -59,7 +59,13 @@ Finally, the Invoices table will refer to a customer and one or more electronic 
 
 > 1.1. <em>You decided that the first step would be to check the running services on <code>10.10.238.97</code>. You resort to yesterday’s tool, Nmap.<br>Knowing that <code>10.10.238.97</code> is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add <code>-Pn</code> to your <code>nmap</code> command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?</em>
 <a id='1.1'></a>
->> <code><strong>________</strong></code><br><br>
+>> <code><strong>1433</strong></code><br><br>
+
+```bash
+:~/Day11# nmap -sT Target_IP
+```
+
+![image](https://github.com/user-attachments/assets/42b91c24-8afe-4d35-951c-bbb4a71c57e6)
 
 
 <br>
@@ -75,9 +81,13 @@ Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code><
 
 
 > 1.2. <em>If the connection is successful, you will get a prompt. What is the prompt that you have received? </em><a id='1.2'></a>
->> <code><strong>McSkidy:Christmas2021</strong></code><br><br>
+>> <code><strong>1></strong></code><br><br>
 
-<br>
+```bash
+:~/Day11# sqsh -S Target_IP -U sa -P t7uLKzddQzVjVFJp
+```
+
+![image](https://github.com/user-attachments/assets/a94734f5-9c47-456b-b731-58a73dbe8d3c)
 
 <p>McDatabaseAdmin told us the database name is <code>reindeer</code> and it has three tables:<br>
 - <code>names</code><br>
