@@ -57,6 +57,7 @@ Finally, the Invoices table will refer to a customer and one or more electronic 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
+<br>
 
 
 > 1.1. <em>You decided that the first step would be to check the running services on <code>10.10.238.97</code>. You resort to yesterday’s tool, Nmap.<br>Knowing that <code>10.10.238.97</code> is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add <code>-Pn</code> to your <code>nmap</code> command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?</em>
@@ -92,6 +93,7 @@ Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code><
 >> <code><strong>1></strong></code><br><br>
 
 <br>
+<br>
 
 ```bash
 :~/Day11# sqsh -S Target_IP -U sa -P t7uLKzddQzVjVFJp
@@ -115,6 +117,7 @@ In the terminal below, we executed the query, <code>SELECT * FROM reindeer.dbo.n
 
 ![image](https://github.com/user-attachments/assets/9ccfad71-cf53-49c6-9a1a-6f3419f57951)
 
+<br>
 <br>
 
 
@@ -152,6 +155,7 @@ For more information type '\warranty'
 ![image](https://github.com/user-attachments/assets/8397d0eb-9f7e-417f-8192-0178a1bfe9c0)
 
 <br>
+<br>
 
 
 > 1.5. <em>Check the table <code>presents</code>. What is the quantity available for the present “Power Bank”? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table presents.<a id='1.5'></a>
@@ -185,6 +189,7 @@ The command syntax is <code>xp_cmdshell 'COMMAND';</code>. Let’s try a simple 
 ![image](https://github.com/user-attachments/assets/9c123480-6ca7-40a1-a526-113d9c24ab29)
 
 <br>
+<br>
 
 
 > 1.6. <em>There is a flag hidden in the <code>grinch</code> user's home directory. What are its contents?</em> Hint : Look in directories under C:\Users\grinch.<a id='1.6'></a>
@@ -215,7 +220,7 @@ The command syntax is <code>xp_cmdshell 'COMMAND';</code>. Let’s try a simple 
 
 
 
-> 1.7. <em>Congratulations, the flag you have recovered contains the password of <code>McDatabaseAdmin!</code> In this task, we learned how to use <code>sqsh</code> to interact with a MS SQL Server. We learned that if <code>xp_cmdshell</code> is enabled, we can execute system commands and read the output using <code>sqsh</code>.<a id='1.6'></a>
+> 1.7. <em>Congratulations, the flag you have recovered contains the password of <code>McDatabaseAdmin!</code> In this task, we learned how to use <code>sqsh</code> to interact with a MS SQL Server. We learned that if <code>xp_cmdshell</code> is enabled, we can execute system commands and read the output using <code>sqsh</code></em>.<a id='1.6'></a>
 >> <code><strong>No answer needed</strong></code><br><br>
 
 <br>
