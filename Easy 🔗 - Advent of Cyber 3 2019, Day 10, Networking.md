@@ -112,7 +112,7 @@ To better understand the difference between -sT and -sS, we can use the analogy 
 
 
 > 1.1. <em>Help McSkidy and run <code>nmap -sT MACHINE_IP</code>. How many ports are open between 1 and 100?</em><a id='1.1'></a>
->> <code><strong>_____</strong></code><br><br>
+>> <code><strong>2</strong></code><br><br>
 
 ```bash
 :~/Day10# nmap -sT Target_IP
