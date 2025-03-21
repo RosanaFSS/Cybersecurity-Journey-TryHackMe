@@ -63,9 +63,13 @@ Finally, the Invoices table will refer to a customer and one or more electronic 
 <a id='1.1'></a>
 >> <code><strong>1433</strong></code><br><br>
 
+<br>
+
 ```bash
 :~/Day11# nmap -sT Target_IP
 ```
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/42b91c24-8afe-4d35-951c-bbb4a71c57e6)
 
@@ -85,9 +89,13 @@ Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code><
 > 1.2. <em>If the connection is successful, you will get a prompt. What is the prompt that you have received? </em><a id='1.2'></a>
 >> <code><strong>1></strong></code><br><br>
 
+<br>
+
 ```bash
 :~/Day11# sqsh -S Target_IP -U sa -P t7uLKzddQzVjVFJp
 ```
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/a94734f5-9c47-456b-b731-58a73dbe8d3c)
 
@@ -131,6 +139,18 @@ For more information type '\warranty'
 >> <code><strong>_________________</strong></code><br><br>
 
 <br>
+
+```bash
+1> SELECT * FROM reindeer.dbo.schedule;
+2> go
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/8397d0eb-9f7e-417f-8192-0178a1bfe9c0)
+
+<br>
+
 
 > 1.5. <em>Check the table <code>presents</code>. What is the quantity available for the present “Power Bank”? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table presents.<a id='1.5'></a>
 >> <code><strong>_________________</strong></code><br><br>
