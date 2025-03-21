@@ -75,7 +75,41 @@ To name a few, these are some example TCP/IP protocols:<br>
 . Post Office Protocol version 3 (POP3) for delivering email<br>
 . Simple Mail Transfer Protocol (SMTP) for sending email<br>
 . Telnet for remote login<br>
-. Secure Shell (SSH) for secure remote login</p>
+. Secure Shell (SSH) for secure remote login<br>
+
+Each of these protocols are defined in detail in a Request for Comment (RFC) document. If you want to know more about these protocols, we suggest joining the Protocols and Servers room.</p>
+
+<h3>Ports</h3>h3>
+On a host, multiple processes (programs) can be accessing the network at the same time. These processes can use the network simultaneously. For the host to tell which process receives which packet, we need to use port numbers. To better understand the concept of IP addresses and port numbers, let’s consider the following analogy.<br>
+
+Let’s imagine TryHackMe’s company in London, and let’s imagine there are 100 offices for 100 content engineers there. The company address is like a public IP address. With the company address, the mailman (analogy for a router) knows how to reach the company and deliver mail packages. The port number is like the office number within the company. The mailman can deliver to the company address and hand it to the receptionist; however, a TryHackMe employee will deliver the package to the internal office.<br>
+
+When multiple processes are using the network or Internet simultaneously, each process can be recognized by the port number it is using. In public servers, default port numbers are used by different protocols so that clients don’t need to guess. The table below shows some of the common protocols and the port numbers they use by default.</p>
+
+
+![image](https://github.com/user-attachments/assets/aabd918b-cd2f-43da-8e47-4f18d802d550)
+
+
+<p>onsider the figure below. IP packets coming to the server with the IP address 10.10.13.13 will be delivered to the running process based on the destination port number.<br>
+
+. For packets of type TCP with port number 22, the destination process is the SSH server.<br>
+. For packets of type TCP with port number 80, the destination process is the HTTP server.<br>
+. For packets of type UDP (or TCP) with port number 53, the destination process is the DNS server.</p>
+
+![image](https://github.com/user-attachments/assets/66b4a7f4-4a10-4fa3-a0db-b2854fef75a8)
+
+<p>We will not cover TCP and UDP in detail in this task. All you need to know for now is that these two protocols live on top of the IP protocol and connect processes running on different hosts. Moreover, TCP requires a three-way handshake for a connection to be established, while UDP does not.</p>
+
+<h3>Nmap</h3>
+<p>McSkidy wants to discover what the attacker learned about her hosts and servers. She starts the AttackBox and starts the attached Virtual Machine (VM), and waits for both to fully load.<br>
+
+She wants to check which services she has installed on the VM. On the AttackBox, she opens a terminal and rushes to run an Nmap scan against the VM. McSkidy can run a very basic network port scan using the command nmap -sT MACHINE_IP or nmap -sS MACHINE_IP. By default, Nmap checks the 1000 most common TCP ports.<br>
+. TCP Connect Scan: To run this type of scan, the -sT option is required. Nmap will attempt to complete the three-way handshake in order to establish a connection with each port scanned.<br>
+. TCP SYN Scan: You can select this scan with the -sS option, and Nmap will not make a complete connection if the port is open. Technically speaking, Nmap does not complete a TCP three-way handshake.<br>
+To better understand the difference between -sT and -sS, we can use the analogy of knocking on a door. The TCP connect scan (-sT) is like knocking on a door, waiting for someone to open it, greeting each other, then excusing yourself to leave. The TCP SYN scan (-sS) resembles knocking, and once someone answers, you pretend that it was not you that knocked and walk away innocently. The latter will make it more difficult for the other party to remember you.</p>
+
+
+
 
 
 
