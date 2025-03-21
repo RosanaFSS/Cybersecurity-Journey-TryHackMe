@@ -85,7 +85,7 @@ Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code><
 - <code>schedule</code><br>
 
 To display the table <code>names</code>, you could use the following syntax, <code>SELECT * FROM table_name WHERE condition</code>.<br>
-- <code>SELECT *</code> is used to return specific columns (attributes). <code>*</code< refers to all the columns.<br>
+- <code>SELECT *</code> is used to return specific columns (attributes). <code>*</code> refers to all the columns.<br>
 - <code>FROM table_name</code>to specify the table you want to read from.<br>
 - <code>WHERE condition</code> to specify the rows (entities).<br><br>
 
