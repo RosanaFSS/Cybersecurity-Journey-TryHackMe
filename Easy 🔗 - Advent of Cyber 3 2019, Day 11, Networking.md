@@ -24,19 +24,17 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{319}}$$-day-streak in  <a href="h
 McDatabaseAdmin came rushing into the room and cried to McSkidy, “We’ve been locked out of the reindeer schedule - how will Santa’s transportation work for Christmas?” The grinch has locked McDatabaseAdmin of his system. You need to probe the external surface of the server to see if you get him his access back.<br>
 
 MS SQL Server is a Relational Database Management System (RDBMS). One simple way to think of a relational database is a group of tables that have relations. To gain a rough understanding of relational databases work, consider a shop's database with the following three tables:<br>
-
 - Electronic Items<br>
 - Customers<br>
 - Invoices<br><br>
 
 Each item in the Electronic Items table has:<br>
-
 - ID<br>
- Name<br>
+-  Name<br>
 - Price<br>
 - Quantity<br><br>
-Each item in the Customers table has its own attributes as well:<br>
 
+Each item in the Customers table has its own attributes as well:<br>
 - ID<br>
 - Name<br>
 - Email<br>
