@@ -71,7 +71,7 @@ A simple syntax would be sqsh -S server -U username -P password, where:<br>
 - <code>-S server</code> is used to specify the server, for example <code>-S 10.10.238.97</code><br>
 - <code>-U username</code> is used to provide the username; for example, <code>U sa</code> is the username that we have enabled.<br>
 - <code>-P password</code> lets us specify the password.<br><br>
-Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code<</p>
+Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code></p>
 
 
 > 1.2. <em>If the connection is successful, you will get a prompt. What is the prompt that you have received? </em><a id='1.2'></a>
