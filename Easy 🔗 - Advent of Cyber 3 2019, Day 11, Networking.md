@@ -30,7 +30,7 @@ MS SQL Server is a Relational Database Management System (RDBMS). One simple way
 
 Each item in the Electronic Items table has:<br>
 - ID<br>
--  Name<br>
+- Name<br>
 - Price<br>
 - Quantity<br>
 
@@ -57,21 +57,21 @@ Finally, the Invoices table will refer to a customer and one or more electronic 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 
-> 1.1. <em>You decided that the first step would be to check the running services on 10.10.238.97. You resort to yesterday’s tool, Nmap.<br>Knowing that 10.10.238.97 is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add -Pn to your nmap command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?</em>
+> 1.1. <em>You decided that the first step would be to check the running services on <code>10.10.238.97</code>. You resort to yesterday’s tool, Nmap.<br>Knowing that <code>10.10.238.97</code> is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add <code>-Pn</code> to your <code>nmap</code> command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?</em>
 <a id='1.1'></a>
 >> <code><strong>________</strong></code><br><br>
 
 
 <br>
 
-<p>Knowing the MS SQL Server is running and accessible over the network, we want to check if our username and password are still valid. Using the AttackBox terminal, we will use the command sqsh (pronounced skwish), an interactive database shell.<br>
+<p>Knowing the MS SQL Server is running and accessible over the network, we want to check if our username and password are still valid. Using the AttackBox terminal, we will use the command <code>sqsh</code> (pronounced skwish), an interactive database shell.<br>
 
 A simple syntax would be sqsh -S server -U username -P password, where:<br>
 
-- -S server is used to specify the server, for example -S 10.10.238.97<br>
-- -U username is used to provide the username; for example, -U sa is the username that we have enabled.<br>
-- -P password lets us specify the password.<br><br>
-Let’s try to run, sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</p>
+- <code>-S server</code> is used to specify the server, for example <code>-S 10.10.238.97</code><br>
+- <code>-U username</code> is used to provide the username; for example, <code>U sa</code> is the username that we have enabled.<br>
+- <code>-P password</code> lets us specify the password.<br><br>
+Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code<</p>
 
 
 > 1.2. <em>If the connection is successful, you will get a prompt. What is the prompt that you have received? </em><a id='1.2'></a>
@@ -79,17 +79,17 @@ Let’s try to run, sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</p>
 
 <br>
 
-<p>McDatabaseAdmin told us the database name is reindeer and it has three tables:<br>
-- names<br>
-- presents<br>
-- schedule<br>
+<p>McDatabaseAdmin told us the database name is <code>reindeer</code> and it has three tables:<br>
+- <code>names</code><br>
+- <code>presents</code><br>
+- <code>schedule</code><br>
 
-To display the table names, you could use the following syntax, SELECT * FROM table_name WHERE condition.<br>
-- SELECT * is used to return specific columns (attributes). * refers to all the columns.<br>
-- FROM table_name to specify the table you want to read from.<br>
-- WHERE condition to specify the rows (entities).<br><br>
+To display the table <code>names</code>, you could use the following syntax, <code>SELECT * FROM table_name WHERE condition</code>.<br>
+- <code>SELECT *</code> is used to return specific columns (attributes). <code>*</code< refers to all the columns.<br>
+- <code>FROM table_name</code>to specify the table you want to read from.<br>
+- <code>WHERE condition</code> to specify the rows (entities).<br><br>
 
-In the terminal below, we executed the query, SELECT * FROM reindeer.dbo.names;. This SQL query should dump all the contents of the table names from the database reindeer. Note that the ; indicates the end of the SQL query, while go sends a SQL batch to the database.</p>
+In the terminal below, we executed the query, <code>SELECT * FROM reindeer.dbo.names;</code>. This SQL query should dump all the contents of the table <code>names</code> from the database <code>reindeer</code>. Note that the <code>;</code> indicates the end of the SQL query, while <code>go</code> sends a SQL batch to the database.</p>
 
 ![image](https://github.com/user-attachments/assets/9ccfad71-cf53-49c6-9a1a-6f3419f57951)
 
@@ -102,24 +102,24 @@ In the terminal below, we executed the query, SELECT * FROM reindeer.dbo.names;.
 <br>
 
 
-> 1.4. <em>Check the table schedule. What is the destination of the trip scheduled on December 7? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table schedule.<a id='1.4'></a>
+> 1.4. <em>Check the table <code>schedule</code>. What is the destination of the trip scheduled on December 7? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table schedule.<a id='1.4'></a>
 >> <code><strong>_________________</strong></code><br><br>
 
 <br>
 
-> 1.5. <em>Check the table presents. What is the quantity available for the present “Power Bank”? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table presents.<a id='1.5'></a>
+> 1.5. <em>Check the table <code>presents</code>. What is the quantity available for the present “Power Bank”? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table presents.<a id='1.5'></a>
 >> <code><strong>_________________</strong></code><br><br>
 
 <br>
 
-<p>You have done fantastic work! You have helped McDatabaseAdmin retrieve the schedule! Now, let’s see if we can run MS Windows commands while interacting with the database. Some MS SQL Servers have xp_cmdshell enabled. If this is the case, we might have access to something similar to a command prompt.<br>
+<p>You have done fantastic work! You have helped McDatabaseAdmin retrieve the schedule! Now, let’s see if we can run MS Windows commands while interacting with the database. Some MS SQL Servers have <code>xp_cmdshell</code> enabled. If this is the case, we might have access to something similar to a command prompt.<br>
 
-The command syntax is xp_cmdshell 'COMMAND';. Let’s try a simple command, whoami, which shows the user running the commands. In the terminal output below, after connecting to MS SQL Server, we tried xp_cmdshell 'whoami';, and we can see that the user is nt service\mssqlserver. This means that any command we pass to xp_cmdshell will run as nt service\mssqlserver.</p>
+The command syntax is <code>xp_cmdshell 'COMMAND';</code>. Let’s try a simple command, <code>whoami</code>, which shows the user running the commands. In the terminal output below, after connecting to MS SQL Server, we tried <code>xp_cmdshell 'whoami';</code>, and we can see that the user is <code>nt service\mssqlserver</code>. This means that any command we pass to <code>xp_cmdshell</code> will run as <code>nt service\mssqlserver</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/850d133b-633b-4f8d-8368-543c00c011c3)
 
 
-<p>We can run other commands that we can execute on the MS Windows command line. For example, we can use dir to list files and directories and type filename to display the contents of a file. Consider the example in the terminal window below where we reveal the contents of the text file WindowsUpdate.log.</p>
+<p>We can run other commands that we can execute on the MS Windows command line. For example, we can use <code>dir</code> to list files and directories and <code>type filename</code> to display the contents of a file. Consider the example in the terminal window below where we reveal the contents of the text file <code>WindowsUpdate.log</code>.</p>
 
 <br>
 
@@ -128,12 +128,12 @@ The command syntax is xp_cmdshell 'COMMAND';. Let’s try a simple command, whoa
 <br>
 
 
-> 1.6. <em>There is a flag hidden in the grinch user's home directory. What are its contents?<a id='1.6'></a>
+> 1.6. <em>There is a flag hidden in the <code>grinch</code> user's home directory. What are its contents?<a id='1.6'></a>
 >> <code><strong>_________________</strong></code><br><br>
 
 <br>
 
-> 1.7. <em>Congratulations, the flag you have recovered contains the password of McDatabaseAdmin! In this task, we learned how to use sqsh to interact with a MS SQL Server. We learned that if xp_cmdshell is enabled, we can execute system commands and read the output using sqsh.<a id='1.6'></a>
+> 1.7. <em>Congratulations, the flag you have recovered contains the password of <code>McDatabaseAdmin!</code> In this task, we learned how to use <code>sqsh</code> to interact with a MS SQL Server. We learned that if <code>xp_cmdshell</code> is enabled, we can execute system commands and read the output using <code>sqsh</code>.<a id='1.6'></a>
 >> <code><strong>_________________</strong></code><br><br>
 
 <br>
