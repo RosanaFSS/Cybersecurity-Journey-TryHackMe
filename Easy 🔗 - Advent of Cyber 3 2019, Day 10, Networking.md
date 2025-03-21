@@ -159,12 +159,30 @@ But the correct answer is http relative to port 80.</p>
 <br>
 
 > 1.5. <em>If you want Nmap to detect the version info of the services installed, you can use nmap -sV MACHINE_IP. What is the version number of the web server?</em><a id='1.5'></a>
->> <code><strong>_____</strong></code><br><br>
+>> <code><strong>Apache httpd 2.4.49</strong></code><br><br>
+
+```bash
+:~/Day10# nmap -sV Target_IP
+```
+
+![image](https://github.com/user-attachments/assets/ede60193-b65a-495d-ab58-0d2633a4e1f2)
 
 <br>
 
+
 > 1.6. <em>By checking the vulnerabilities related to the installed web server, you learn that there is a critical vulnerability that allows path traversal and remote code execution. Now you can tell McSkidy that Grinch Enterprises used this vulnerability. What is the CVE number of the vulnerability that was solved in version 2.4.51?</em><br> Hint : 2.4.50 provided an incomplete fix for CVE-2021-41773.<a id='1.6'></a>
 >> <code><strong>_____</strong></code><br><br>
+
+<p>Googled <code>"Apache" AND "CVE-2021-41773" AND "fix"</code> .<br>
+Discovered the following...</p>
+
+![image](https://github.com/user-attachments/assets/b332bfc7-0c6f-4975-a460-59d8b0d8c83e)
+
+
+<p>Accessed it here <a href="https://httpd.apache.org/security/vulnerabilities_24.html">here</a></p>
+
+![image](https://github.com/user-attachments/assets/7cb4f236-5a05-4146-b0b4-74244217e469)
+
 
 <br>
 
