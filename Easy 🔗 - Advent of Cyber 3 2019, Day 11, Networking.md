@@ -9,11 +9,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{319}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Get started with Cyber Security in 25 Days - Learn the basics by doing a new, beginner friendly security challenge every day leading up to Christmas. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/adventofcyber3">Advent of Cyber 3 (2021)</a>.</p>
                                                               
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/9d05f7f8-7053-4448-8048-b72786f86a02"> </p>
 
 <br>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/b75c2531-b6fe-416a-a707-f8ab679638f1"> </p>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Where are The Reindeers? | Networking}}$$
@@ -86,6 +86,8 @@ A simple syntax would be sqsh -S server -U username -P password, where:<br>
 Let’s try to run, <code>sqsh -S 10.10.238.97 -U sa -P t7uLKzddQzVjVFJp</code></p>
 
 
+<br>
+
 > 1.2. <em>If the connection is successful, you will get a prompt. What is the prompt that you have received? </em><a id='1.2'></a>
 >> <code><strong>1></strong></code><br><br>
 
@@ -153,7 +155,7 @@ For more information type '\warranty'
 
 
 > 1.5. <em>Check the table <code>presents</code>. What is the quantity available for the present “Power Bank”? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table presents.<a id='1.5'></a>
->> <code><strong>_________________</strong></code><br><br>
+>> <code><strong>25000</strong></code><br><br>
 
 <br>
 
@@ -169,7 +171,7 @@ For more information type '\warranty'
 
 <br>
 
-<p>You have done fantastic work! You have helped McDatabaseAdmin retrieve the schedule! Now, let’s see if we can run MS Windows commands while interacting with the database. Some MS SQL Servers have <code>xp_cmdshell</code> enabled. If this is the case, we might have access to something similar to a command prompt.<br>
+<p>You have done fantastic work! You have helped <code>McDatabaseAdmin</code> retrieve the schedule! Now, let’s see if we can run MS Windows commands while interacting with the database. Some MS SQL Servers have <code>xp_cmdshell</code> enabled. If this is the case, we might have access to something similar to a command prompt.<br>
 
 The command syntax is <code>xp_cmdshell 'COMMAND';</code>. Let’s try a simple command, <code>whoami</code>, which shows the user running the commands. In the terminal output below, after connecting to MS SQL Server, we tried <code>xp_cmdshell 'whoami';</code>, and we can see that the user is <code>nt service\mssqlserver</code>. This means that any command we pass to <code>xp_cmdshell</code> will run as <code>nt service\mssqlserver</code>.</p>
 
@@ -185,14 +187,60 @@ The command syntax is <code>xp_cmdshell 'COMMAND';</code>. Let’s try a simple 
 <br>
 
 
-> 1.6. <em>There is a flag hidden in the <code>grinch</code> user's home directory. What are its contents?<a id='1.6'></a>
->> <code><strong>_________________</strong></code><br><br>
+> 1.6. <em>There is a flag hidden in the <code>grinch</code> user's home directory. What are its contents?</em> Hint : Look in directories under C:\Users\grinch.<a id='1.6'></a>
+>> <code><strong>THM{YjtKeUy2qT3v5dDH}</strong></code><br><br>
 
 <br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b9bd6d82-c95a-4172-af65-cae5a4721c72)
+
+
+<br>
+
+<p>Practiced with the example provided.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b2be0178-b651-461c-bbdb-36a742262477)
+
+<br>
+
+<p>Ran commands to get the flag.</p>
+
+![image](https://github.com/user-attachments/assets/98b8980a-309f-4f75-9484-04b8e5e1fecb)
+
+<br>
+
+
 
 > 1.7. <em>Congratulations, the flag you have recovered contains the password of <code>McDatabaseAdmin!</code> In this task, we learned how to use <code>sqsh</code> to interact with a MS SQL Server. We learned that if <code>xp_cmdshell</code> is enabled, we can execute system commands and read the output using <code>sqsh</code>.<a id='1.6'></a>
->> <code><strong>_________________</strong></code><br><br>
+>> <code><strong>No answer needed</strong></code><br><br>
+
+<br>
+<br>
 
 <br>
 
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
 
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 21, 2025    | 319      |     352ⁿᵈ    |        8ᵗʰ   |    926ᵗʰ    |      13ʳᵈ  |  87,169  |       621 |   59      |
+
+</div>
+
+<p align="center"> Global All Time: 352ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/17d7bc0e-ce15-4b66-a0dd-ab79d2b9a70b"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/52aefbc1-960e-4a82-93af-49c1fb935287"> </p>
+
+<p align="center"> Global monthly: 926ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/caa9cb57-1262-417c-a102-9324f8e55ea8"> </p>
+
+<p align="center"> Brazil monthly: 13ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bd768391-d0a6-4f64-b911-4e0c3f841bf2"> </p>
