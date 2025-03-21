@@ -57,7 +57,7 @@ Finally, the Invoices table will refer to a customer and one or more electronic 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 
-> 1.1. <em>You decided that the first step would be to check the running services on 10.10.238.97. You resort to yesterday’s tool, Nmap.<br>Knowing that 10.10.238.97 is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add -Pn to your nmap command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?
+> 1.1. <em>You decided that the first step would be to check the running services on 10.10.238.97. You resort to yesterday’s tool, Nmap.<br>Knowing that 10.10.238.97 is a MS Windows system, you expect it to not respond to ping probes by default; therefore, you need to add -Pn to your nmap command to perform the scan. <br>This instructs Nmap to skip pinging the target to see if the host is reachable. Without this option, Nmap will assume the target host is offline and not proceed with scanning.<br>There is an open port related to MS SQL Server accessible over the network. What is the port number?</em>
 <a id='1.1'></a>
 >> <code><strong>________</strong></code><br><br>
 
