@@ -20,9 +20,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{319}}$$-day-streak in  <a href="h
   $$\textcolor{#3bd62d}{\textnormal{Where are The Reindeers? | Networking}}$$
 </h1>
 
-<br>
-
-<h1>
 <p>Before we begin, we suggest that you start the attached Machine and the AttackBox as you will need to use these resources to answer the questions at the end.<br>
 
 McDatabaseAdmin came rushing into the room and cried to McSkidy, “We’ve been locked out of the reindeer schedule - how will Santa’s transportation work for Christmas?” The grinch has locked McDatabaseAdmin of his system. You need to probe the external surface of the server to see if you get him his access back.<br>
