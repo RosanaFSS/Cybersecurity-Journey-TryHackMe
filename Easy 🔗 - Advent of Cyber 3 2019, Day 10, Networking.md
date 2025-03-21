@@ -229,7 +229,7 @@ Discovered the following...</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
-| March 20, 2025    | 318      |     352ⁿᵈ    |        8ᵗʰ   |    859ᵗʰ    |      13ʳᵈ  |  87,057  |       621 |   59      |
+| March 20, 2025    | 318      |     352ⁿᵈ    |        8ᵗʰ   |    885ᵗʰ    |      13ʳᵈ  |  87,057  |       621 |   59      |
 
 </div>
 
@@ -237,7 +237,6 @@ Discovered the following...</p>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/344cd29e-64ed-46aa-806b-f70476162802"> </p>
 
-<p align="center"> Global monthly: 859ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ee8a92e1-ecbc-4d9b-b894-12066eb40ad2"> </p>
+<p align="center"> Global monthly: 885ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/59760924-05dc-4e75-9780-1d69c8bb024c"> </p>
 
-<p align="center"> Brazil monthly: 13ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6cd2321f-fbcc-4044-b8a2-bf3338af2baf"> </p></p>
-
+<p align="center"> Brazil monthly: 13ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6cd2321f-fbcc-4044-b8a2-bf3338af2baf"> </p>
