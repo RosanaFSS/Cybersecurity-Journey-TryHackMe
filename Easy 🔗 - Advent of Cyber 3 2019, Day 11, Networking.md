@@ -133,10 +133,10 @@ For more information type '\warranty'
 
 ![image](https://github.com/user-attachments/assets/e94fa67a-828e-44c5-aeb4-0765f97885ab)
 
-
+<br>
 
 > 1.4. <em>Check the table <code>schedule</code>. What is the destination of the trip scheduled on December 7? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table schedule.<a id='1.4'></a>
->> <code><strong>_________________</strong></code><br><br>
+>> <code><strong>Prague</strong></code><br><br>
 
 <br>
 
@@ -154,6 +154,18 @@ For more information type '\warranty'
 
 > 1.5. <em>Check the table <code>presents</code>. What is the quantity available for the present “Power Bank”? </em>Hint : You need to execute a query similar to the query displayed in the previous question, but for the table presents.<a id='1.5'></a>
 >> <code><strong>_________________</strong></code><br><br>
+
+<br>
+
+```bash
+1> SELECT * FROM reindeer.dbo.presents;
+2> go
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/493d73a9-c9ea-41fd-9bee-0dab724d8e81)
+
 
 <br>
 
