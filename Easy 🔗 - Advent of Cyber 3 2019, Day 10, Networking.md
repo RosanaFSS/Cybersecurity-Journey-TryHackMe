@@ -108,6 +108,62 @@ She wants to check which services she has installed on the VM. On the AttackBox,
 . TCP SYN Scan: You can select this scan with the -sS option, and Nmap will not make a complete connection if the port is open. Technically speaking, Nmap does not complete a TCP three-way handshake.<br>
 To better understand the difference between -sT and -sS, we can use the analogy of knocking on a door. The TCP connect scan (-sT) is like knocking on a door, waiting for someone to open it, greeting each other, then excusing yourself to leave. The TCP SYN scan (-sS) resembles knocking, and once someone answers, you pretend that it was not you that knocked and walk away innocently. The latter will make it more difficult for the other party to remember you.</p>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+
+> 1.1. <em>Help McSkidy and run <code>nmap -sT MACHINE_IP</code>. How many ports are open between 1 and 100?</em><a id='1.1'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+
+> 1.2. <em>What is the smallest port number that is open?</em><a id='1.2'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+> 1.3. <em>What is the service related to the highest port number you found in the first question?</em><a id='1.3'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+> 1.4. <em>Now run nmap -sS MACHINE_IP. Did you get the same results? (Y/N)</em><a id='1.4'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+> 1.5. <em>If you want Nmap to detect the version info of the services installed, you can use nmap -sV MACHINE_IP. What is the version number of the web server?</em><a id='1.5'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+> 1.6. <em>By checking the vulnerabilities related to the installed web server, you learn that there is a critical vulnerability that allows path traversal and remote code execution. Now you can tell McSkidy that Grinch Enterprises used this vulnerability. What is the CVE number of the vulnerability that was solved in version 2.4.51?</em><br> Hint : 2.4.50 provided an incomplete fix for CVE-2021-41773.<a id='1.6'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+
+> 1.7. <em>You are putting the pieces together and have a good idea of how your web server was exploited. McSkidy is suspicious that the attacker might have installed a backdoor. She asks you to check if there is some service listening on an uncommon port, i.e. outside the 1000 common ports that Nmap scans by default. She explains that adding -p1-65535 or -p- will scan all 65,535 TCP ports instead of only scanning the 1000 most common ports. What is the port number that appeared in the results now?</em><br> Hint : If the scan takes more than a few minutes, consider using Nmap with the options -sT -p20000-21000 -T4 (where -p20000-21000 limits the scan to ports between 20,000 and 21,000, while T4 makes Nmap aggressive and increases the speed).<a id='1.7'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+
+> 1.8. <em>What is the name of the program listening on the newly discovered port?</em><br> Hint : Using Nmap with the option -sV should reveal the name under VERSION for the specified port(s). You may add something like -p20000-21000 to limit the range of ports you want to check.<a id='1.8'></a>
+>> <code><strong>_____</strong></code><br><br>
+
+<br>
+
+
+> 1.9. <em>If you would like to learn more about the topics covered in today’s tasks, we recommend checking out the Network Security module.</em><a id='1.9'></a>
+>> <code><strong>No answer needed</strong></code><br><br>
+
+<br>
+
+
+
+
+
 
 
 
