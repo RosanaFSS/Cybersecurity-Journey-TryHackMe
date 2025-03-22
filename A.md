@@ -22,7 +22,7 @@ mget *.txt</p>
 
 <br>
 
-
+<p>cat  --> detail of <code>additional_notes.txt</code></p>
 
 ![image](https://github.com/user-attachments/assets/79a88c89-91d8-4e2b-8dcb-eb582c813b4f)
 
