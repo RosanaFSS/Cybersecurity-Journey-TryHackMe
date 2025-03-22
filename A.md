@@ -77,6 +77,67 @@ Discovered <code>abood</code> : <code>b9ed0e66d3c22asdda</code></p>
 
 ![image](https://github.com/user-attachments/assets/6a0a7585-a215-44a2-96d0-f91e3a92ca78)
 
+<p>Explored the Database using <code>mysql</code> command.</p>
+
+```bash
+# mysql -u abood -p -h Target-IP
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.40-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
+
+```
+
+<p>Discovered the Databases available.</p>
+
+```bash
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| admin_db           |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| users_db           |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> 
+
+```
+
+<p>Selected the <code>users_db</code>.</p>
+
+```bash
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| admin_db           |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| users_db           |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> 
+
+```
+
 
 <br>
 <h3>FLAG 13  : FLAG{ec16fcb9d51c178f8cbf91fc1edaa445}</h3>
@@ -100,8 +161,6 @@ Discovered <code>abood</code> : <code>b9ed0e66d3c22asdda</code></p>
 Discovered <code>Ehxb@thehiddengateway.thm</code></p>
 
 ![image](https://github.com/user-attachments/assets/63fa4d05-4e35-4712-8d0b-97d29b5c9d3a)
-
-
 
 
 <br>
