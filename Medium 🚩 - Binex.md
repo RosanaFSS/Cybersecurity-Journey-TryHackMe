@@ -19,4 +19,29 @@
 
 <br>
 
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 21, 2025    | 319      |     350ᵗʰ    |        8ᵗʰ   |   760ᵗʰ     |      9ᵗʰ   |  87,404  |       622 |   59      |
+
+</div>
+
+<p align="center"> Global All Time: 350ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7a75ae85-7c5b-47d0-8247-dda7656743fb"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/531111fc-5978-4f79-8480-1f584642d44a"> </p>
+
+<p align="center"> Global monthly: 760ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/caa9cb57-1262-417c-a102-9324f8e55ea8"> </p>
+
+<p align="center"> Brazil monthly: 9ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0e125364-0f0d-415a-8cce-fddcbfd56232"> </p>
+
+
+
+
 
