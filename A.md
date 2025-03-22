@@ -3,6 +3,13 @@ March 22, 2025 - Day 320<br>
 <h1>The Hidden Gateway</h1>
 <p>is a web and boot-to-root CTF challenge. Navigate through web vulnerabilities, exploit misconfigurations, and escalate privileges to ultimately gain root access. Only the most skilled hackers will unlock the hidden gateway and conquer the system.</p>
 
+![image](https://github.com/user-attachments/assets/d6a17ea6-e8be-4bf5-ab73-75f2d3f3a21a)
+
+<br>
+<br>
+<br>
+
+
 <p>Used <code>nmap</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/e96407fa-6f81-4e43-9aec-93da93c8c174)
@@ -79,7 +86,7 @@ March 22, 2025 - Day 320<br>
 ![image](https://github.com/user-attachments/assets/a605dae6-9c78-447d-b416-e4ee3b01e57c)
 
 <p>Navigated to <code>http://thehiddengateway.thm/Database/DB.py</code>.<br>
-Discovered <code>abood</code> : <code>b9ed0e66d3c22asdda</code></p>
+Discovered <code>abood</code> : <code>b9ed0e66d3c22a</code></p>
 
 <p>Used <code>ssh</code> and <code>abood</code>.</p>
 
@@ -142,16 +149,61 @@ https://www.devglan.com/online-tools/aes-encryption-decryption
 
 ![image](https://github.com/user-attachments/assets/89801b4b-1019-4d5a-8391-094fb1125f9a)
 
+<p>password: 4312a11c9e4e9cb9ed0e66d3c22asdda</p>
+
+![image](https://github.com/user-attachments/assets/4ec29604-80ee-4bb2-a9e5-8d2eead13b4d)
+
+
+<br>
+<p>FLAG 15: FLAG{3f64e31c87d7f6f3fa5d24b7e35ac4da}</p>
+
+<p>Used <code>su</code>.</p>
+
+![image](https://github.com/user-attachments/assets/ebee9df3-0363-4b72-817c-30fcdc1b10dd)
+
 
 <br>
 
+<p>Used <code>sudo -l</code>.</p>
+
+![image](https://github.com/user-attachments/assets/be58dc31-1778-466e-bb9e-a1422e76364d)
+
+
+<br>
+<p>FLAG 14: FLAG{74b87a9ec54d5a22c029763730d32ac3}</p>
+
+<p>Used <code>ls</code>.<br>
+Used <code>nano</code>.</p>
+
+![image](https://github.com/user-attachments/assets/1b2e303a-d945-49c7-aede-c7ef51a44bdc)
+
+<p>Used <code>sudo /home/ehxb/system_dashboard.sh</code>.</p>
+
+![image](https://github.com/user-attachments/assets/ffc2e5d2-1705-4175-b201-790100f6b7c7)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7743808f-2773-4d4c-ab12-fd9a24c678ad)
+
+<br>
+<p>FLAG 6: FLAG{91f66a5ea7b8a54e0e720a04ad6dbb8e}</p>
+
+
+
+![image](https://github.com/user-attachments/assets/28753db4-2f8a-44bf-8027-533d8594c4c0)
 
 
 
 <br>
+<p>FLAG 3: FLAG{d8f2a19e9469b7c85c4d12389f65beeb}}</p>
 
-4312a11c9e4e9cb9ed0e66d3c22asdda
 
+![image](https://github.com/user-attachments/assets/4ff6df59-56fb-4ae2-b2d1-76b00ac3a008)
+
+
+<br>
+<br>
+<br>
 
 
 
@@ -433,7 +485,44 @@ Discovered <code>Ehxb@thehiddengateway.thm</code></p>
 ![image](https://github.com/user-attachments/assets/cf5be001-4009-4e91-a7c2-0b608bcb837c)
 
 
+<br>
+<br>
+<br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+</h1>
+
+![image](https://github.com/user-attachments/assets/7990cf70-676c-43ef-b234-54991484da83)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d2869321-7046-49bd-a183-a5b0fef85cfa)
 
 
 
+<br>
 
+<br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 22, 2025    | 320      |     350ᵗʰ    |        8ᵗʰ   |    794ᵗʰ    |      9ᵗʰ   |  87,428  |       622 |   59      |
+
+</div>
+
+<p align="center"> Global All Time: 352ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/f014dd91-4bf4-4b94-8d86-1c0e4e8cccfa"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/b054fd8c-1aa2-431b-bbed-21dad5364a6"> </p>
+
+<p align="center"> Global monthly: 926ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/daafd34b-3a15-4281-abd8-54f88aaf8929"> </p>
+
+<p align="center"> Brazil monthly: 13ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/90d8d44d-9f24-49bb-a1e6-2119b7b1f0e4"> </p>
