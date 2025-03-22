@@ -15,9 +15,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h3 align="center">
+<h2 align="center">
   $$\textcolor{white}{\textnormal{Enumeration}}$$
-</h3>
+</h2>
 
 <p>Used <code>nmap</code>.</p>
 
