@@ -22,11 +22,13 @@ mget *.txt</p>
 
 <br>
 
+
+
 ![image](https://github.com/user-attachments/assets/79a88c89-91d8-4e2b-8dcb-eb582c813b4f)
 
 
 <br>
-TheHiddenGateway.thm <br>
+<p>/etc/hosts --> Target_IP + domain name = TheHiddenGateway.thm </p>
 
 ![image](https://github.com/user-attachments/assets/4025f4a1-0337-4be5-9859-ef68f2d50639)
 
