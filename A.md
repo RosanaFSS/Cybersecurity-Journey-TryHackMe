@@ -8,8 +8,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{The Hidden Gateway}}$$
 </h1>
-<p align="center">is a web and boot-to-root CTF challenge. Navigate through web vulnerabilities, exploit misconfigurations, and escalate privileges to ultimately gain root access. Only the most skilled hackers will unlock the hidden gateway and conquer the system.<br>
-It is classified as a medium-level CTF, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/thehiddengateway3">The Hidden Gateway</a>.</p>
+<p align="center">Is a web and boot-to-root CTF challenge. Navigate through web vulnerabilities, exploit misconfigurations, and escalate privileges to ultimately gain root access. Only the most skilled hackers will unlock the hidden gateway and conquer the system. It is classified as a medium-level CTF, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/thehiddengateway3">The Hidden Gateway</a>.</p>
                                                               
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/4b82fb43-d2cc-4d81-bd24-f375edd12d05"> </p>
 
