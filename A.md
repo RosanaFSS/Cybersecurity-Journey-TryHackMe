@@ -34,7 +34,55 @@ mget *.txt</p>
 
 <br>
 
+<p><code>http://thehiddengateway.thm/index.html</code><br>
+Discovered <code>js/modernizr.js"</code>, <code>js/jquery-3.2.1.min.js<code>, <code>js/plugins.js"<code>, <code>js/main.js</code>, <code>/images/The Hidden Gateway.png</code>, Flag 1, <code>Welcome.html</code>, <code>About.html</code>, <code>Resources.html</code></p>
+
 ![image](https://github.com/user-attachments/assets/7276d3a8-5586-4e87-917d-6b15c4e24618)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/abe1e86a-6f32-4cf5-b32f-bd1f60f95966)
+
+<br>
+<h3>FLAG 2  :  FLAG{19a3b5e6d14acb9ed0e66d3c22ad86b3}</h3>
+
+![image](https://github.com/user-attachments/assets/2254eeb9-fdd4-40f0-9078-fb4525c35671)
+
+<br>
+
+<p><code>http://thehiddengateway.thm/Database</code><br>
+
+![image](https://github.com/user-attachments/assets/a605dae6-9c78-447d-b416-e4ee3b01e57c)
+
+<p><code>http://thehiddengateway.thm/Database/DB.py</code><br>
+
+![image](https://github.com/user-attachments/assets/6a0a7585-a215-44a2-96d0-f91e3a92ca78)
+
+
+<br>
+<h3>FLAG 13  : FLAG{ec16fcb9d51c178f8cbf91fc1edaa445}</h3>
+
+![image](https://github.com/user-attachments/assets/ee2bc28d-e644-48ce-a4ef-4006efe16bd4)
+
+<br>
+
+
+
+<p><code>http://thehiddengateway.thm/images/</code></p>
+
+![image](https://github.com/user-attachments/assets/fcc3a88f-c131-45e4-90d5-74d820c517d5)
+
+
+<p><code>http://thehiddengateway.thm/welcome.html</code></p>
+
+![image](https://github.com/user-attachments/assets/076c5a5e-204e-473e-a4dc-f68cd7566ce9)
+
+<p><code>http://thehiddengateway.thm/welcome.html</code><br>
+Ehxb@thehiddengateway.thm</p>
+
+![image](https://github.com/user-attachments/assets/63fa4d05-4e35-4712-8d0b-97d29b5c9d3a)
+
+
 
 
 <br>
@@ -46,7 +94,6 @@ mget *.txt</p>
 
 <p>gobuster</p>
 
-![image](https://github.com/user-attachments/assets/646a1622-a5b9-434e-9cae-5373840183a1)
 
 
 <BR>
