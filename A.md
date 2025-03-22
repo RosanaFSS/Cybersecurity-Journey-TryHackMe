@@ -24,7 +24,7 @@ TheHiddenGateway.thm <br>
 ![image](https://github.com/user-attachments/assets/4025f4a1-0337-4be5-9859-ef68f2d50639)
 
 <br>
-FLAG 1  :  FLAG{b3f6f539c4312a11c9e4e9c88c1d3d7e}</h3>
+<h3>FLAG 1  :  FLAG{b3f6f539c4312a11c9e4e9c88c1d3d7e}</h3>
 
 
 ![image](https://github.com/user-attachments/assets/462026c1-9ce9-4f77-bbec-00976ae906ba)
