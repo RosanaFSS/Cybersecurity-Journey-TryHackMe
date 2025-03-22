@@ -17,14 +17,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 </h1>
 
 <br>
-
-![image](https://github.com/user-attachments/assets/d6a17ea6-e8be-4bf5-ab73-75f2d3f3a21a)
-
-<br>
 <br>
 <br>
 
-
+<h2>Enumeration</h2>
 <p>Used <code>nmap</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/e96407fa-6f81-4e43-9aec-93da93c8c174)
