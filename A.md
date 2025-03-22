@@ -9,6 +9,12 @@ March 22, 2025 - Day 320<br>
 
 <br>
 
+<p> SALT = cMd\x1E\x03a]bqmwD\x1F5\x03iuYu+</p>
+
+
+
+<br>
+
 <p>Used <code>ftp</code>, <code>ls</code>, and <code>mget *.txt</code>code>.<br>
 
 ![image](https://github.com/user-attachments/assets/3a5d72c0-da0e-43d9-adeb-a192516a2f79)
@@ -74,6 +80,79 @@ March 22, 2025 - Day 320<br>
 
 <p>Navigated to <code>http://thehiddengateway.thm/Database/DB.py</code>.<br>
 Discovered <code>abood</code> : <code>b9ed0e66d3c22asdda</code></p>
+
+<p>Used <code>ssh</code> and <code>abood</code>.</p>
+
+<br>
+<p>FLAG 12  :  FLAG{d1d1f383ae6c8e7d983586572145da21}</p>
+
+![image](https://github.com/user-attachments/assets/586dece1-b0f0-4398-8521-3c126db1044b)
+
+
+<br>
+
+<p>Transfered <code>Hi-abood.zip</code> using <code>scp</code>.</p>
+
+![image](https://github.com/user-attachments/assets/71aa7d7c-6eb6-4468-a885-96c07bccd3a2)
+
+<br>
+
+<p>Used <code>zip2john</code> to get the hash of the file.<br>
+Used <code>john</code> to discover the password of the zip file.</p>
+
+![image](https://github.com/user-attachments/assets/48dbc7ff-0d30-4d9e-8eae-63f60318fcb9)
+
+<br>
+
+<p>Used <code>unzip</code>.</p>
+
+![image](https://github.com/user-attachments/assets/005730ea-0510-4653-8435-7e56652eb3b4)
+
+<p>Used <code>cat</code>.</p>
+
+![image](https://github.com/user-attachments/assets/ea8db7c1-08e9-44f4-a90d-3432c664269b)
+
+<p>...</p>
+
+![image](https://github.com/user-attachments/assets/89ee0188-ddeb-4d80-b492-4f1c206ffe0c)
+
+```bash
+Hey abood,
+
+I just wanted to let you know that the encryption method you used is really powerful! I'm impressed by how strong it is.
+
+However, I wanted to point out that to prove its strength, here\u2019s my account password: C27B6748A18F65B3FEA73A226C730767C4789C37EE1966F6F6666031EB3A4300341DF88C4A28398A8E49D90BFAFD509F (in AES encryption) and the key used: 03228cfe5e8f261fe90b2aa2daawwaaf.
+
+I hope this helps you evaluate the method even better.
+
+Cheers,
+ehxb
+
+...
+
+3954C412C5F0F9C77AE385F84A04DCB8ED3198C2843CA66CBAF3F2FB04C3482D75D40079C6536B38C5CA368BE854A3B20E8F9BD45743F4DA51190D50692CF173
+
+```
+<br>
+
+https://www.devglan.com/online-tools/aes-encryption-decryption
+
+<br>
+<p>FLAG 11: FLAG{b8f60273a80bbd8b7c2a2433456fb5ff}</p>
+
+![image](https://github.com/user-attachments/assets/89801b4b-1019-4d5a-8391-094fb1125f9a)
+
+
+<br>
+
+
+
+
+<br>
+
+4312a11c9e4e9cb9ed0e66d3c22asdda
+
+
 
 
 ![image](https://github.com/user-attachments/assets/6a0a7585-a215-44a2-96d0-f91e3a92ca78)
@@ -152,31 +231,10 @@ mysql>
 
 
 ```bash
-mysql> use admin_db;
-Reading table information for completion of table and column names
-You can turn off this feature to get a quicker startup with -A
+...
 
-Database changed
-mysql> show tables;
-+--------------------+
-| Tables_in_admin_db |
-+--------------------+
-| admins             |
-+--------------------+
-1 row in set (0.00 sec)
 
-mysql> select * from admin;
-ERROR 1146 (42S02): Table 'admin_db.admin' doesn't exist
-mysql> select * from admins;
-+----+---------+------------------------------+----------------------------------+------------+---------------------+
-| id | name    | email                        | password                         | role       | created_at          |
-+----+---------+------------------------------+----------------------------------+------------+---------------------+
-|  1 | ehxb    | ehxb@thehiddengateway.thm    | 9015d7a0004e724719122195f019debd | superadmin | 2024-11-27 02:33:55 |
-|  2 | salameh | salameh@thehiddengateway.thm | 5f4dcc3b5aa765d61d8327deb882cf99 | admin      | 2024-11-27 02:33:55 |
-+----+---------+------------------------------+----------------------------------+------------+---------------------+
-2 rows in set (0.01 sec)
 
-mysql> 
 
 ```
 
@@ -211,7 +269,7 @@ hashcat (v6.1.1-66-g6a419d06) starting...
 
 ![image](https://github.com/user-attachments/assets/d9f89da2-3915-4c6f-bd7a-7881891216fe)
 
-<p>Discovered <code>admin</code>, and <code>superadmin</code> passwords.</p>
+<p>Discovered <code>admin</code> password.</p>
 
 
 ```bash
@@ -254,16 +312,20 @@ Candidates.#1....: password -> password
 
 <p>Used <code>cat</code> to view <code>HeySalameh.txt</code>´s content.</p>
 
+<p>Note: <code>HeySalameh.txt</code> may not run sudo.</p>
+
 ![image](https://github.com/user-attachments/assets/406b1a2a-af9a-4744-a419-7c561ebd987e)
 
+<br>
 
-```bash
+![image](https://github.com/user-attachments/assets/aeed8b7b-7246-41db-ae37-8ad7a0729bbb)
 
-:~/TheHiddenGateway# hashcat -m 0 -a 3 9015d7a0004e724719122195f019debd /usr/share/wordlists/rockyou.txt
-hashcat (v6.1.1-66-g6a419d06) starting...
-...
-```
 
+<br>
+
+![image](https://github.com/user-attachments/assets/bef7ba3d-99ca-4836-9c90-c9571afc7f29)
+
+<p><code>hashcat</code> did not crack the <code>superadmin</code> hash.</p>
 
 
 
@@ -282,6 +344,8 @@ mysql>
 ```
 
 <p>Checked the available <code>tables</code>, selected <code>users</code> table, filtered <code>users</code> information.</p>
+
+<p>FLAG 9  :  FLAG{eaeb216e0d60a3d9a64fb1c925f83a85}</p>
 
 ```bash
 mysql> show tables;
