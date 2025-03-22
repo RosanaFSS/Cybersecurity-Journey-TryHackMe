@@ -12,15 +12,12 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
                                                               
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/d6a17ea6-e8be-4bf5-ab73-75f2d3f3a21a"> </p>
 
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{The Hidden Gateway}}$$
-</h1>
-
-<br>
 <br>
 <br>
 
-<h3>Enumeration</h3>
+<h3 align="center">
+  $$\textcolor{white}{\textnormal{Enumeration}}$$
+</h3>
 
 <p>Used <code>nmap</code>.</p>
 
