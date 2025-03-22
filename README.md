@@ -36,6 +36,7 @@
 |Year Month      |Monthly         |All Time        |Achievement                                                                                        |
 |:---------------|---------------:|---------------:|:-------------------------------------------------------------------------------------------------:| 
 |                |Brazil          |Global          |                                                                                                   |
+|2025 February   |9ᵗʰ             |350ᵗʰ           |  |
 |2025 February   |1ˢᵗ             |385ᵗʰ           | <img src="https://github.com/user-attachments/assets/b4f048d4-5bd0-4aeb-b42c-16460f926cf8" style="width:300px;"/> |
 |2025 January    |2ⁿᵈ             |496ᵗʰ           | <img src="https://github.com/user-attachments/assets/00e64e74-4d33-4820-9064-67f67fa00614" style="width:300px;"/> |
 |2024 December   |2ⁿᵈ             |666ᵗʰ           | <img src="https://github.com/user-attachments/assets/e9457634-b6a4-47d4-953d-4c2e3217b8f2" style="width:300px;"/> |
@@ -67,6 +68,11 @@
 |Date               |Streak    |All Time      |All Time      |Monthly       |Monthly       |Points    | Rooms     |
 |:------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
 |                   |          |Global        |Brazil        |Global        | Brazil       |          | Completed |
+| March 21, 2025    | 319      |        350ᵗʰ |          8ᵗʰ |        760ᵗʰ |          9ᵗʰ | 87,404   |       622 |
+| March 20, 2025    | 318      |        352ⁿᵈ |          8ᵗʰ |        885ᵗʰ |         13ʳᵈ | 87,057   |       621 |
+| March 19, 2025    | 317      |        353ʳᵈ |          8ᵗʰ |        736ᵗʰ |         11ˢᵗ | 87,001   |       621 |
+| March 18, 2025    | 316      |        353ʳᵈ |          8ᵗʰ |        560ᵗʰ |          7ᵗʰ | 86,897   |       619 |
+| March 17, 2025    | 315      |        357ᵗʰ |          8ᵗʰ |        437ᵗʰ |          7ᵗʰ | 86,673   |       618 |
 | March 15, 2025    | 313      |        357ᵗʰ |          8ᵗʰ |        348ᵗʰ |          7ᵗʰ | 86,585   |       616 |
 | March 13, 2025    | 311      |        356ᵗʰ |          8ᵗʰ |        303ʳᵈ |          7ᵗʰ | 86,505   |       614 |
 | March 8, 2025     | 306      |        365ᵗʰ |          8ᵗʰ |        391ˢᵗ |          7ᵗʰ | 85,747   |       607 |
