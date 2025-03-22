@@ -6,13 +6,16 @@
 
 <br>
 
-<p>ftp</p>
+<p>ftp<br>
+mget</p>
 
 ![image](https://github.com/user-attachments/assets/3a5d72c0-da0e-43d9-adeb-a192516a2f79)
 
 <br>
 
 <h3>FLAG 4  :  FLAG{9b91f372b5600f14b3a0e2b520a0a8b8}</h3>
+
+<p>cat</p>
 
 ![image](https://github.com/user-attachments/assets/59b1225b-3c23-4840-a6b4-13fc7aab60e4)
 
