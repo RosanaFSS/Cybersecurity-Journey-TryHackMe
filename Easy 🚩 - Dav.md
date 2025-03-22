@@ -181,8 +181,6 @@ Listening on [0.0.0.0] (family 0, port 8080)
 ![Fevereiro, 24, 2025,   TryHackMe,  Day 295, DAV, Image 3](https://github.com/user-attachments/assets/9754fd47-1d0f-47a7-ab7c-19292ffe7610)
 
 
-
-
 <br>
 
 
