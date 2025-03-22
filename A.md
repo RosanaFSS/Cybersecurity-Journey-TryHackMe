@@ -20,7 +20,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h2>Enumeration</h2>
+<h3>Enumeration</h3>
+
 <p>Used <code>nmap</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/e96407fa-6f81-4e43-9aec-93da93c8c174)
