@@ -35,17 +35,13 @@ mget *.txt</p>
 <br>
 <h3>FLAG 1  :  FLAG{b3f6f539c4312a11c9e4e9c88c1d3d7e}</h3>
 
-<br>
+
+![image](https://github.com/user-attachments/assets/462026c1-9ce9-4f77-bbec-00976ae906ba)
 
 <p>gobuster</p>
 
 ![image](https://github.com/user-attachments/assets/646a1622-a5b9-434e-9cae-5373840183a1)
 
-
-<br>
-
-
-![image](https://github.com/user-attachments/assets/462026c1-9ce9-4f77-bbec-00976ae906ba)
 
 <BR>
 
