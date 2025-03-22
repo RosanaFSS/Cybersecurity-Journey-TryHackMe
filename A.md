@@ -24,6 +24,13 @@ TheHiddenGateway.thm <br>
 ![image](https://github.com/user-attachments/assets/4025f4a1-0337-4be5-9859-ef68f2d50639)
 
 <br>
+FLAG 1  :  FLAG{b3f6f539c4312a11c9e4e9c88c1d3d7e}</h3>
+
+
+![image](https://github.com/user-attachments/assets/462026c1-9ce9-4f77-bbec-00976ae906ba)
+
+<BR>
+
 
 ![image](https://github.com/user-attachments/assets/d934c431-96ef-43c0-88a7-25956836f95f)
 
@@ -32,6 +39,13 @@ TheHiddenGateway.thm <br>
 <h3>FLAG 5  :  FLAG{56a8b3be0e927a99d85fc6ec4a12fb35}</h3>
 
 ![image](https://github.com/user-attachments/assets/e16b2c5f-cd92-441b-8130-8154ae6f81fa)
+
+<br>
+
+<h3>FLAG 8  :  FLAG{501fe2f1a7c9f69b68f0f0cb4a3c9d3e}}</h3>
+
+![image](https://github.com/user-attachments/assets/cf5be001-4009-4e91-a7c2-0b608bcb837c)
+
 
 
 
