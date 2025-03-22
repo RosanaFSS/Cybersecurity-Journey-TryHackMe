@@ -34,8 +34,25 @@ mget *.txt</p>
 
 <br>
 
+<p>gobuster</p>
+
+![image](https://github.com/user-attachments/assets/74441b60-16bf-4637-85d5-8b302d181f40)
+
+
+<br>
+
+<p><code>http://thehiddengateway.thm/robots.txt</code><br>
+
+<br>
+<h3>FLAG 7  :  FLAG{9c1061fd4b34bba667fa11877474f19e}</h3>
+
+![image](https://github.com/user-attachments/assets/531560d4-3de9-46cc-8c15-75a168011b23)
+
+<br>
+
+
 <p><code>http://thehiddengateway.thm/index.html</code><br>
-Discovered <code>js/modernizr.js"</code>, <code>js/jquery-3.2.1.min.js<code>, <code>js/plugins.js"<code>, <code>js/main.js</code>, <code>/images/The Hidden Gateway.png</code>, Flag 1, <code>Welcome.html</code>, <code>About.html</code>, <code>Resources.html</code></p>
+
 
 ![image](https://github.com/user-attachments/assets/7276d3a8-5586-4e87-917d-6b15c4e24618)
 
@@ -92,12 +109,7 @@ Ehxb@thehiddengateway.thm</p>
 ![image](https://github.com/user-attachments/assets/09c17091-4629-4a03-ac27-3eb8188beff1)
 
 
-<p>gobuster</p>
-
-
-
-<BR>
-
+<br>
 
 ![image](https://github.com/user-attachments/assets/d934c431-96ef-43c0-88a7-25956836f95f)
 
