@@ -41,7 +41,7 @@ mget *.txt</p>
 
 <br>
 
-<p><code>http://thehiddengateway.thm/robots.txt</code><br>
+<p>Navigated to <code>http://thehiddengateway.thm/robots.txt</code>.<br>
 
 <br>
 <h3>FLAG 7  :  FLAG{9c1061fd4b34bba667fa11877474f19e}</h3>
@@ -51,7 +51,7 @@ mget *.txt</p>
 <br>
 
 
-<p><code>http://thehiddengateway.thm/index.html</code><br>
+<p>Navigated to <code>http://thehiddengateway.thm/index.html</code>.<br>
 
 
 ![image](https://github.com/user-attachments/assets/7276d3a8-5586-4e87-917d-6b15c4e24618)
@@ -67,7 +67,7 @@ mget *.txt</p>
 
 <br>
 
-<p><code>http://thehiddengateway.thm/Database</code><br>
+<p>Navigated to <code>http://thehiddengateway.thm/Database</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/a605dae6-9c78-447d-b416-e4ee3b01e57c)
 
@@ -85,16 +85,16 @@ mget *.txt</p>
 
 
 
-<p><code>http://thehiddengateway.thm/images/</code></p>
+<p>Navigated to <code>http://thehiddengateway.thm/images/</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/fcc3a88f-c131-45e4-90d5-74d820c517d5)
 
 
-<p><code>http://thehiddengateway.thm/welcome.html</code></p>
+<p>Navigated to <code>http://thehiddengateway.thm/welcome.html</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/076c5a5e-204e-473e-a4dc-f68cd7566ce9)
 
-<p><code>http://thehiddengateway.thm/welcome.html</code><br>
+<p>Navigated to <code>http://thehiddengateway.thm/welcome.html</code>.<br>
 Ehxb@thehiddengateway.thm</p>
 
 ![image](https://github.com/user-attachments/assets/63fa4d05-4e35-4712-8d0b-97d29b5c9d3a)
