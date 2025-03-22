@@ -7,7 +7,8 @@
 <br>
 
 <p>ftp<br>
-mget</p>
+ls<br>
+mget *.txt</p>
 
 ![image](https://github.com/user-attachments/assets/3a5d72c0-da0e-43d9-adeb-a192516a2f79)
 
