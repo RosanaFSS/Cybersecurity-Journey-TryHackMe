@@ -1,22 +1,23 @@
+March 22, 2025 - Day 320<br>
 
+<h1>The Hidden Gateway</h1>
+<p>is a web and boot-to-root CTF challenge. Navigate through web vulnerabilities, exploit misconfigurations, and escalate privileges to ultimately gain root access. Only the most skilled hackers will unlock the hidden gateway and conquer the system.</p>
 
-<p>nmap</p>
+<p>Used <code>nmap</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/e96407fa-6f81-4e43-9aec-93da93c8c174)
 
 <br>
 
-<p>ftp<br>
-ls<br>
-mget *.txt</p>
+<p>Used <code>ftp</code>, <code>ls</code>, and <code>mget *.txt</code>code>.<br>
 
 ![image](https://github.com/user-attachments/assets/3a5d72c0-da0e-43d9-adeb-a192516a2f79)
 
 <br>
 
-<h3>FLAG 4  :  FLAG{9b91f372b5600f14b3a0e2b520a0a8b8}</h3>
+<p>FLAG 4  :  FLAG{9b91f372b5600f14b3a0e2b520a0a8b8}</p>
 
-<p>cat</p>
+<p>Used <code>cat</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/59b1225b-3c23-4840-a6b4-13fc7aab60e4)
 
@@ -34,7 +35,7 @@ mget *.txt</p>
 
 <br>
 
-<p>gobuster</p>
+<p>Used <code>gobuster</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/74441b60-16bf-4637-85d5-8b302d181f40)
 
@@ -44,7 +45,7 @@ mget *.txt</p>
 <p>Navigated to <code>http://thehiddengateway.thm/robots.txt</code>.</p>
 
 <br>
-<h3>FLAG 7  :  FLAG{9c1061fd4b34bba667fa11877474f19e}</h3>
+<p>FLAG 7  :  FLAG{9c1061fd4b34bba667fa11877474f19e}</p>
 
 ![image](https://github.com/user-attachments/assets/531560d4-3de9-46cc-8c15-75a168011b23)
 
@@ -61,7 +62,7 @@ mget *.txt</p>
 ![image](https://github.com/user-attachments/assets/abe1e86a-6f32-4cf5-b32f-bd1f60f95966)
 
 <br>
-<h3>FLAG 2  :  FLAG{19a3b5e6d14acb9ed0e66d3c22ad86b3}</h3>
+<p>FLAG 2  :  FLAG{19a3b5e6d14acb9ed0e66d3c22ad86b3}</p>
 
 ![image](https://github.com/user-attachments/assets/2254eeb9-fdd4-40f0-9078-fb4525c35671)
 
@@ -245,7 +246,7 @@ Candidates.#1....: password -> password
 
 <br>
 
-<h3>FLAG 10  :  FLAG{b21c93b1e8c074d31f1ab9d65d7f95ad}</h3>
+<p>FLAG 10  :  FLAG{b21c93b1e8c074d31f1ab9d65d7f95ad}</p>
 
 ![image](https://github.com/user-attachments/assets/741d2a42-1f0d-44c6-a2ac-62f63bd17041)
 
@@ -321,7 +322,7 @@ mysql>
 
 
 <br>
-<h3>FLAG 13  : FLAG{ec16fcb9d51c178f8cbf91fc1edaa445}</h3>
+<p>FLAG 13  : FLAG{ec16fcb9d51c178f8cbf91fc1edaa445}</p>
 
 ![image](https://github.com/user-attachments/assets/ee2bc28d-e644-48ce-a4ef-4006efe16bd4)
 
@@ -345,7 +346,7 @@ Discovered <code>Ehxb@thehiddengateway.thm</code></p>
 
 
 <br>
-<h3>FLAG 1  :  FLAG{b3f6f539c4312a11c9e4e9c88c1d3d7e}</h3>
+<p>FLAG 1  :  FLAG{b3f6f539c4312a11c9e4e9c88c1d3d7e}</p>
 
 
 ![image](https://github.com/user-attachments/assets/09c17091-4629-4a03-ac27-3eb8188beff1)
@@ -357,7 +358,7 @@ Discovered <code>Ehxb@thehiddengateway.thm</code></p>
 
 <br>
 
-<h3>FLAG 5  :  FLAG{56a8b3be0e927a99d85fc6ec4a12fb35}</h3>
+<p>FLAG 5  :  FLAG{56a8b3be0e927a99d85fc6ec4a12fb35}</p>
 
 ![image](https://github.com/user-attachments/assets/e16b2c5f-cd92-441b-8130-8154ae6f81fa)
 
