@@ -18,7 +18,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 <h2 align="center">$$\textcolor{white}{\textnormal{Enumeration}}$$</h2>
 
 
-<p align="center">$$\textcolor{white}{\textnormal{Used <code>nmap</code>.<br>We have 5 ports open: <code>ftp/21</coded>, <code>ssh/22</code>,<code>ISC BIND/53</code>, <code>http/80</code>, and <code>mysql/3306</code>.}}$$</p>
+<p align="center">$$\textcolor{white}{\textnormal{Used <code>nmap</code>.<br>We have 5 ports open: <code>ftp/21</code>, <code>ssh/22</code>,<code>ISC BIND/53</code>, <code>http/80</code>, and <code>mysql/3306</code>.}}$$</p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/e96407fa-6f81-4e43-9aec-93da93c8c174"> </p>
 
