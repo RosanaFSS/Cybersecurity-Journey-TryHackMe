@@ -17,7 +17,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 
 <h2 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h2>
 
-<p align="center">There are have 5 ports open: <code>ftp/21</code>, <code>ssh/22</code>, <code>http/80</code>, and <code>http62337</code>.<br> <code>Anonymous</code> is allowed to <code>ftp</code></code></p>
+<p align="center">There are have 4 ports open: <code>ftp/21</code>, <code>ssh/22</code>, <code>http/80</code>, and <code>http62337</code>.<br> <code>Anonymous</code> is allowed to <code>ftp</code></code></p>
 
 ```bash
 :~/IDE# nmap -sC -sV -Pn -A -p- 10.10.127.74
