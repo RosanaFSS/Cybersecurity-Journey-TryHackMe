@@ -520,10 +520,10 @@ Discovered <code>Ehxb@thehiddengateway.thm</code></p>
 
 </div>
 
-<p align="center"> Global All Time: 352ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/f014dd91-4bf4-4b94-8d86-1c0e4e8cccfa"> </p>
+<p align="center"> Global All Time: 350ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/f014dd91-4bf4-4b94-8d86-1c0e4e8cccfa"> </p>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/b054fd8c-1aa2-431b-bbed-21dad5364a6"> </p>
 
-<p align="center"> Global monthly: 926ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/daafd34b-3a15-4281-abd8-54f88aaf8929"> </p>
+<p align="center"> Global monthly: 794ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/daafd34b-3a15-4281-abd8-54f88aaf8929"> </p>
 
-<p align="center"> Brazil monthly: 13ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/90d8d44d-9f24-49bb-a1e6-2119b7b1f0e4"> </p>
+<p align="center"> Brazil monthly: 9ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/90d8d44d-9f24-49bb-a1e6-2119b7b1f0e4"> </p>
