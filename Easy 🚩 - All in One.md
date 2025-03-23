@@ -273,31 +273,15 @@ Key = KeepGping</p>
 <br>
 
 
-
-
-<p>http://allin1.thm/wordpress/wp-content/plugins/mail-masta/</p>
-
-![image](https://github.com/user-attachments/assets/515adf30-48a2-4b30-aba2-393ae1601ca7)
-
-
-
-
-
-<p>http://allin1.thm/wordpress/wp-content/plugins/mail-masta/inc/campaign/</p>
-
-![image](https://github.com/user-attachments/assets/06f7434a-b6ba-416c-b7f6-9736b0eff06c)
-
-<br>
-
-
 <p>Try H@ckme@123 --> H@ckme@123 <br>
 elyana : H@ckme@123</p>
 
-<p>http://allin1.thm/wordpress/wp-admin was redirected to http://allin1.thm/wordpress/wp-admin/wp-login.php?redirect_to=http%3A%2F%2Fallin1.thm%2Fwordpress%2Fwp-admin%2F&reauth=1</p>
 
 ![image](https://github.com/user-attachments/assets/85d4808f-7927-4733-8540-2d8808607337)
 
 <br>
+
+<p>http://allin1.thm/wordpress/wp-admin was redirected to http://allin1.thm/wordpress/wp-admin/wp-login.php?redirect_to=http%3A%2F%2Fallin1.thm%2Fwordpress%2Fwp-admin%2F&reauth=1</p>
 
 ![image](https://github.com/user-attachments/assets/5370314b-a367-4bbe-8d98-3add872dcb11)
 
