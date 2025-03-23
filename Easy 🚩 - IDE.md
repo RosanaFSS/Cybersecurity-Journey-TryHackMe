@@ -52,7 +52,7 @@ PORT      STATE SERVICE VERSION
 
 <h2 align="center">$$\textcolor{white}{\textnormal{Service Enumeration}}$$</h2>
 
-<p align="center">Used <code>gobuster</code>.<br> :-(  :-(</p>
+<p align="center">Used <code>gobuster</code>. :-(</p>
 
 ```bash
 ~/IDE# gobuster dir -u http://10.10.127.74/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
