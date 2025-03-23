@@ -251,8 +251,7 @@ www-data@ide:/home/drac$
 
 <br>
 
-
-<h2 align="center">$$\textcolor{white}{\textnormalPrivilege Escalation - Vertical}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Privilege Escalation - Vertical}}$$</h2>
 
 ![image](https://github.com/user-attachments/assets/9c3fabe3-1dbd-4174-bd55-2452d0ad6d14)
 
