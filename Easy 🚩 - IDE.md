@@ -135,8 +135,6 @@ ftp> exit
 
 ![image](https://github.com/user-attachments/assets/cd34517c-10b0-4967-b6f0-fb62cdca910e)
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Exploit}}$$</h2>
-
 <br>
 
 ![image](https://github.com/user-attachments/assets/3c4db2ff-bb79-47fe-a488-64f31ebc5643)
@@ -147,6 +145,9 @@ ftp> exit
 
 <br>
 
+<h2 align="center">$$\textcolor{white}{\textnormal{Exploit}}$$</h2>
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/f0536143-dc00-42af-9357-f8821083380c)
 
