@@ -15,7 +15,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{320}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Enumeration}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h2>
 
 <p align="center">Used <code>nmap</code>.<br> We have 5 ports open: <code>ftp/21</code>, <code>ssh/22</code>, <code>http/80</code>, and <code>http62337</code>.<br> <code>Anonymous</code> is allowed to <code>ftp</code></code></p>
 
@@ -48,6 +48,33 @@ PORT      STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 |_http-title: Codiad 2.8.4
 ...
+```
+
+<h2 align="center">$$\textcolor{white}{\textnormal{Service Enumeration}}$$</h2>
+
+<p align="center">Used <code>gobuster</code>.<br> :-(  :-(</p>
+
+```bash
+~/IDE# gobuster dir -u http://10.10.127.74/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.127.74/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/server-status        (Status: 403) [Size: 277]
+Progress: 220560 / 220561 (100.00%)
+===============================================================
+Finished
+===============================================================
 ```
 
 <p align="center">Used <code>ftp</code>.</p>
@@ -108,7 +135,7 @@ ftp> exit
 
 ![image](https://github.com/user-attachments/assets/cd34517c-10b0-4967-b6f0-fb62cdca910e)
 
-
+<h2 align="center">$$\textcolor{white}{\textnormal{Exploit}}$$</h2>
 
 <br>
 
@@ -131,30 +158,6 @@ ftp> exit
 
 
 
-<p align="center">Used <code>gobuster</code>.<br> Discovered 1 directory.  :-(</p>
-
-```bash
-~/IDE# gobuster dir -u http://10.10.127.74/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.10.127.74/
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.6
-[+] Timeout:                 10s
-===============================================================
-Starting gobuster in directory enumeration mode
-===============================================================
-/server-status        (Status: 403) [Size: 277]
-Progress: 220560 / 220561 (100.00%)
-===============================================================
-Finished
-===============================================================
-```
 
 <h2 align="center">$$\textcolor{white}{\textnormal{Privilege Escalation - Horizontal}}$$</h2>
 <p align="center">Used <code>searchsploit</code>.</p>
