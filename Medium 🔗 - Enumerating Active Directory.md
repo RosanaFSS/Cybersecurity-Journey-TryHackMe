@@ -13,9 +13,3 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{322}}$$-day-streak in  <a href="h
 
 <br>
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/b75c2531-b6fe-416a-a707-f8ab679638f1"> </p>
-
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Enumerating Active Directory}}$$
-</h1>
-
