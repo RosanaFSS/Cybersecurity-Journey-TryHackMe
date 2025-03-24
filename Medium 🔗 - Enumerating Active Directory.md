@@ -48,7 +48,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{322}}$$-day-streak in  <a href="h
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
-| March 24, 2025    | 322      |     342ⁿᵈ    |        8ᵗʰ   |   689ᵗʰ     |     7ᵗʰ   |  877.954  |       626 |   59      |
+| March 24, 2025    | 322      |     342ⁿᵈ    |        8ᵗʰ   |   689ᵗʰ     |     7ᵗʰ   |  87.954  |       626 |   59      |
 
 </div>
 
