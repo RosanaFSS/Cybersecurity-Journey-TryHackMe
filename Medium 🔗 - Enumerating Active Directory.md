@@ -14,7 +14,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{322}}$$-day-streak in  <a href="h
 <br>
 
 <br>
-<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/node-deserialization-attack-web-exploitation-glitch-tryhackme-walkthrough-90-points-9fc303c898ab">GLITCH</a>, TryHackMe Walkthrough</h3>
+<h3 align="left"> Click here ➡️  <a href="">Enumerating Active Directory</a>, TryHackMe Walkthrough</h3>
 
 
 <br>
