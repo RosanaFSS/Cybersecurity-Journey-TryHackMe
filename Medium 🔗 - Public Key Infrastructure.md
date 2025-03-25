@@ -13,3 +13,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{323}}$$-day-streak in  <a href="h
 <br>
 
 <p align="center">In progress, 92%<br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/84a76373-1ede-450e-8547-8e319bd3828d)
+
