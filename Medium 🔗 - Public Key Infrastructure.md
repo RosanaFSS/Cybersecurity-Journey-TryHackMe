@@ -23,8 +23,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{323}}$$-day-streak in  <a href="h
 
 <p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/136c45a5-dab7-4455-9f7b-da468c02fc29"> </p>
 
-<br>
-
 <p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/48563804-fba8-4569-bd66-74c33fe50efb"> </p>
 
 <br>
