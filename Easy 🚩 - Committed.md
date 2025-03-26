@@ -14,8 +14,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h2>Coming soon a walkthrough in Medium.</h2>
-<p>🚧</p>
+<h2>Read my complete walkthrough in Medium.</h2>
+
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/committed-tryhackme-walkthrough-git-enumeration-5c6d07367240">Committed</a>, TryHackMe Walkthrough</h3>
+
 
 <br>
 
