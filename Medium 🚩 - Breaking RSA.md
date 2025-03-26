@@ -56,35 +56,34 @@ Used <code>gobuster</code>.<br>
 
 > 1.3. <em>What is the length of the discovered RSA key? (in bits)</em><br><a id='1.3'></a>
 >> <strong><code>4096</code></strong><br>
-<p><br></p>
+<p></p>
 
-http://breaking<br>
+Navigated to <code>http://Target_IP</code><br>
 
 ![image](https://github.com/user-attachments/assets/6185f1bf-7dab-4c1c-8591-f75c3cd46461)
 
 <br>
 
-http://breaking/development<br>
+Navigated to <code>http://Target_IP/development</code><br>
 
 ![image](https://github.com/user-attachments/assets/791aeed1-2f8c-4c56-a877-76d58ce27154)
 
 <br>
-http://breaking/development/log.txt<br>
+
+Navigated to <code>http://Target_IP/development/log.txt</code><br>
 
 ![image](https://github.com/user-attachments/assets/213f6c52-923c-45cf-9fbc-8faa4bb48023)
 
-<br>
 
 <br>
-http://breaking/development/id_rsa.pub<br>
 
+Navigated to <code>http://Target_IP/development/id_rsa.pub/code><br>
 
 ![image](https://github.com/user-attachments/assets/f7149fd3-b707-40f5-94d6-38ed6de615aa)
 
-<br>
 
 <br>
-ssh-keygen
+Used <code>ssh-keygen</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/c36ee36e-021b-4c97-8384-ad9ff2c4f868)
 
