@@ -8,11 +8,15 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{323}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Learn about Public Key Infrastructure and why it's important to secure certificate lifecycles.  It is classified as a medium-level walkthrough, and premium: for subscribers only. Can be accessed clicking <a href="https://tryhackme.com/room/publickeyinfrastructure">here</a>.</p>
                                                               
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/db5d7c71-ea07-4e66-8de6-e9644af375bb5"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/c68be3fd-3b6e-4e96-82c1-b689a69ee005"> </p>
 
 <br>
 
-<p align="center">In progress, 92%<br>
+
+![image](https://github.com/user-attachments/assets/136c45a5-dab7-4455-9f7b-da468c02fc29)
+
+
+
 
 <br>
 
