@@ -19,14 +19,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 
 
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/5d1e4020-da08-456c-87c1-9ab09e4ee4fe"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/f08587fe-df4f-4cb9-b896-d6ca1d3dca1c"> </p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/d77c17a5-d7d7-4a45-8805-44d74cf618c0"> </p>
 
-
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/f08587fe-df4f-4cb9-b896-d6ca1d3dca1c)
