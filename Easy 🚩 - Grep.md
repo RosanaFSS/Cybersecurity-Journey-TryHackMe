@@ -38,5 +38,5 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 
 </div>
 
-<p align="center"> <img width="900px" src="ttps://github.com/user-attachments/assets/c6a12501-4f28-4592-9a45-24b9e3d91bbe"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/c6a12501-4f28-4592-9a45-24b9e3d91bbe"> </p>
 
