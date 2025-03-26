@@ -19,10 +19,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{323}}$$-day-streak in  <a href="h
 
 <br>
 
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
-</h1>
-
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
 <p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/136c45a5-dab7-4455-9f7b-da468c02fc29"> </p>
 
