@@ -12,17 +12,51 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{323}}$$-day-streak in  <a href="h
 
 <br>
 
+<br>
 
-![image](https://github.com/user-attachments/assets/136c45a5-dab7-4455-9f7b-da468c02fc29)
+<br>
+
+<h2>Read my complete walkthrough in Medium.</h2>
+<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/public-key-infrastructure-tryhackme-walkthrough-9852bb67ade5">Public Key Infrastructure</a>, TryHackMe Walkthrough</h3>
 
 
 <br>
 
-![image](https://github.com/user-attachments/assets/48563804-fba8-4569-bd66-74c33fe50efb)
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+</h1>
+
 
 <br>
 
-![image](https://github.com/user-attachments/assets/95b79e40-3b0a-4b1c-a6db-d97baa064655)
+<br>
+
+<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/136c45a5-dab7-4455-9f7b-da468c02fc29"> </p>
+
+<br>
+
+<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/48563804-fba8-4569-bd66-74c33fe50efb"> </p>
+
+<br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 25, 2025    | 323      |     341ˢᵗ    |        8ᵗʰ   |   560ᵗʰ     |     7ᵗʰ    |  88,066  |       627 |   59      |
+
+</div>
+
+
+<br>
+
+<p align="center"> Global All Time: 341ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/95b79e40-3b0a-4b1c-a6db-d97baa064655"> </p>
 
 
 
