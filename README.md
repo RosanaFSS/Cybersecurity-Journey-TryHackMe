@@ -20,8 +20,11 @@
 <br>
 
 <p align="center">March 25, 2025 - My yearly activity<br>
-                 <img width="1000px" src="https://github.com/user-attachments/assets/ab8d870e-8457-4239-bcf2-bc82c48e2ba1"/><br>
+                 <img width="1000px" src="https://github.com/user-attachments/assets/5a62435d-7580-487d-b247-636931f10bfb"/><br>
                  <img width="1000px" src="https://github.com/user-attachments/assets/bf8ac1e5-4aa1-4fb2-a14b-caf9a99a16d1"/></p>
+
+
+
 
 
 <h2>My Journey<a id='5'></a></h2>
@@ -37,7 +40,7 @@
 |Year Month      |Monthly         |All Time        |Achievement                                                                                        |
 |:---------------|---------------:|---------------:|:-------------------------------------------------------------------------------------------------:| 
 |                |Brazil          |Global          |                                                                                                   |
-|2025 March      |7ᵗʰ             |342ⁿᵈ           | <img src="https://github.com/user-attachments/assets/03ef5d5d-a0a1-4919-802e-35f6a79c9a44" style="width:300px;"/> |
+|2025 March      |7ᵗʰ             |341           | <img src="https://github.com/user-attachments/assets/03ef5d5d-a0a1-4919-802e-35f6a79c9a44" style="width:300px;"/> |
 |2025 February   |1ˢᵗ             |385ᵗʰ           | <img src="https://github.com/user-attachments/assets/b4f048d4-5bd0-4aeb-b42c-16460f926cf8" style="width:300px;"/> |
 |2025 January    |2ⁿᵈ             |496ᵗʰ           | <img src="https://github.com/user-attachments/assets/00e64e74-4d33-4820-9064-67f67fa00614" style="width:300px;"/> |
 |2024 December   |2ⁿᵈ             |666ᵗʰ           | <img src="https://github.com/user-attachments/assets/e9457634-b6a4-47d4-953d-4c2e3217b8f2" style="width:300px;"/> |
