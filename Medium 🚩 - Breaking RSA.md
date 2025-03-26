@@ -38,7 +38,7 @@ Below is an implementation of Fermat's factorization algorithm in Python.</p>
 >> <strong><code>2</code></strong><br>
 <p><br></p>
 
-nmap<br>
+Used <code>nmap</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/5cd475ae-11f8-419b-b46c-04722928757f)
 
@@ -48,7 +48,7 @@ nmap<br>
 >> <strong><code>development</code></strong><br>
 <p><br></p>
 
-gobuster<br>
+Used <code>gobuster</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/fec7eb17-88bd-4157-908d-4e5e0c8c246d)
 
