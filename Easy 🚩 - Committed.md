@@ -17,9 +17,23 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 <h2>Coming soon a walkthrough in Medium.</h2>
 <p>🚧</p>
 
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/f08587fe-df4f-4cb9-b896-d6ca1d3dca1c"> </p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/d77c17a5-d7d7-4a45-8805-44d74cf618c0"> </p>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 26, 2025    | 324      |     341ˢᵗ    |        8ᵗʰ   |   524ᵗʰ     |     7ᵗʰ    |  88,246  |       629 |   59      |
+
+</div>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/ba84113a-ccb4-49a4-8e06-878d1316f506"> </p>
+
 
