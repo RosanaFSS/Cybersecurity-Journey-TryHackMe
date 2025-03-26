@@ -77,13 +77,13 @@ Navigated to <code>http://Target_IP/development/log.txt</code><br>
 
 <br>
 
-Navigated to <code>http://Target_IP/development/id_rsa.pub</code><br>
+Navigated to <code>http://Target_IP/development/id_rsa.pub</code>. Downloaded <code>id_rsa.pub</code><br>
 
 ![image](https://github.com/user-attachments/assets/f7149fd3-b707-40f5-94d6-38ed6de615aa)
 
 
 <br>
-Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
+Visualized the content of <code>id_rsa</code> using <code>cat</code>code>.Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/c36ee36e-021b-4c97-8384-ad9ff2c4f868)
 
