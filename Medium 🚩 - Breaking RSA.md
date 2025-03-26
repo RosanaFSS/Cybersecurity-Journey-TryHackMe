@@ -1,4 +1,34 @@
 
+<p align="center">March 26, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+  <img width="160px" src="https://github.com/user-attachments/assets/e8c02e37-2847-445d-9504-728b988618bf6"></p>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Breaking RSA}}$$
+</h1>
+<p align="center">Hop in and break poorly implemented RSA using Fermat's factorization algorithm. It is classified as a medium-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/breakrsa">here</a>.</p>
+                                                              
+<p align="center"> <img width="900px" src="> </p>
+
+<br>
+<br>
+
+<h2>Task 1 . Capture the flag</h2>
+<h3>﻿A brief overview of RSA</h3>
+<p>The security of RSA relies on the practical difficulty of factoring the product of two large prime numbers, the "factoring problem". RSA key pair is generated using 3 large positive integers -</p>
+
+![image](https://github.com/user-attachments/assets/6c332142-b272-4918-8751-e8062dc225a1)
+
+
+<p>(e, n) are public variables and make up the public key. d is the private key and is calculated using p and q. If we could somehow factorize n into p and q, we could then be able to calculate d and break RSA. However, factorizing a large number is very difficult and would take some unrealistic amount of time to do so, provided the two prime numbers are randomly chosen.</p>
+
+<h3>Introduction</h3>
+<p>In a recent analysis, it is found that an organization named JackFruit is using a deprecated cryptography library to generate their RSA keys. This library is known to implement RSA poorly. The two randomly selected prime numbers (p and q) are very close to one another, making it possible for an attacker to generate the private key from the public key using Fermat's Factorization method.<br>
+
+Below is an implementation of Fermat's factorization algorithm in Python.</p>
+
+
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
