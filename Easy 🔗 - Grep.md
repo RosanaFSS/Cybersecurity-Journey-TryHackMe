@@ -15,7 +15,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 <br>
 
 <h2>Coming soon a walkthrough in Medium.</h2>
-<h3 align="left"> Click here ➡️  <a href="">Grep</a>, TryHackMe Walkthrough</h3>
+<p>🚧</p>
 
 
 
