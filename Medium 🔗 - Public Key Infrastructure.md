@@ -16,9 +16,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{323}}$$-day-streak in  <a href="h
 ![image](https://github.com/user-attachments/assets/136c45a5-dab7-4455-9f7b-da468c02fc29)
 
 
-
-
 <br>
 
-![image](https://github.com/user-attachments/assets/84a76373-1ede-450e-8547-8e319bd3828d)
+![image](https://github.com/user-attachments/assets/48563804-fba8-4569-bd66-74c33fe50efb)
+
 
