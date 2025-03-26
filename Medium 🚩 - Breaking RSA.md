@@ -36,7 +36,7 @@ Below is an implementation of Fermat's factorization algorithm in Python.</p>
 
 > 1.1. <em>How many services are running on the box?</em><br><a id='1.1'></a>
 >> <strong><code>2</code></strong><br>
-<p><br></p>
+<p></p>
 
 Used <code>nmap</code>.<br>
 
@@ -46,7 +46,7 @@ Used <code>nmap</code>.<br>
 
 > 1.2. <em>What is the name of the hidden directory on the web server? (without leading '/')</em><br><a id='1.2'></a>
 >> <strong><code>development</code></strong><br>
-<p><br></p>
+<p></p>
 
 Used <code>gobuster</code>.<br>
 
