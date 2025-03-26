@@ -9,7 +9,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">A challenge that tests your reconnaissance and OSINT skills. Only the most skilled hackers will unlock the hidden gateway and conquer the system. It is classified as an easy-level walkthrough, and premium: for subscribers only. Can be accessed clicking <a href="https://tryhackme.com/room/greprtp">here</a>.</p>
                                                               
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/d6a17ea6-e8be-4bf5-ab73-75f2d3f3a21a"> </p>
+<p align="center"> <img width="900px" src=""> </p>
 
 <br>
 <br>
