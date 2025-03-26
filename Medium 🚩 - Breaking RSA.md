@@ -83,7 +83,7 @@ Navigated to <code>http://Target_IP/development/id_rsa.pub</code><br>
 
 
 <br>
-Used <code>ssh-keygen</code>.<br>
+Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/c36ee36e-021b-4c97-8384-ad9ff2c4f868)
 
