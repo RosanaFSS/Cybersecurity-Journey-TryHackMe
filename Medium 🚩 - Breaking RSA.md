@@ -58,32 +58,35 @@ Used <code>gobuster</code>.<br>
 >> <strong><code>4096</code></strong><br>
 <p></p>
 
-Navigated to <code>http://Target_IP</code><br>
+Navigated to <code>http://Target_IP</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/6185f1bf-7dab-4c1c-8591-f75c3cd46461)
 
 <br>
 
-Navigated to <code>http://Target_IP/development</code><br>
+Navigated to <code>http://Target_IP/development</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/791aeed1-2f8c-4c56-a877-76d58ce27154)
 
 <br>
 
-Navigated to <code>http://Target_IP/development/log.txt</code><br>
+Navigated to <code>http://Target_IP/development/log.txt</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/213f6c52-923c-45cf-9fbc-8faa4bb48023)
 
 
 <br>
 
-Navigated to <code>http://Target_IP/development/id_rsa.pub</code>. Downloaded <code>id_rsa.pub</code><br>
+Navigated to <code>http://Target_IP/development/id_rsa.pub</code>.<br>
+Downloaded <code>id_rsa.pub</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/f7149fd3-b707-40f5-94d6-38ed6de615aa)
 
 
 <br>
-Visualized the content of <code>id_rsa</code> using <code>cat</code>code>.Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
+
+Visualized the content of <code>id_rsa</code> using <code>cat</code>.<br>
+Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/c36ee36e-021b-4c97-8384-ad9ff2c4f868)
 
