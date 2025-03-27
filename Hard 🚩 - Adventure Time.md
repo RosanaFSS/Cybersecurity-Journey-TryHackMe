@@ -307,7 +307,7 @@ Discovered <code>/bananastock</code>.</p>
 
 
 ```bash
-:~/AdevntureTime# gobuster dir -u https://land-of-ooo.com/yellowdog/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+:~/AdventureTime# gobuster dir -u https://land-of-ooo.com/yellowdog/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
 ===============================================================
 Gobuster v3.6
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
@@ -331,36 +331,13 @@ Finished
 ```
 
 <p>Navigated to <code>https://land-of-ooo.com/yellowdog/bananastock</code>.<br>
-Discovered a <code>Morse</code> encoded message.<br>
-Used <code>CyberChef</code> to decoded it.<br>
-Discovered: <code>The Bananas are the Best</code>.</p>
+Discovered a <code>Morse</code> encoded message.</p>
 
 ![image](https://github.com/user-attachments/assets/3e12d97c-9226-4f79-a7c2-4eb4858361c8)
 
 
-```bash
-:~/AdevntureTime# gobuster dir -u https://land-of-ooo.com/yellowdog/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     https://land-of-ooo.com/yellowdog/
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.6
-[+] Timeout:                 10s
-===============================================================
-Starting gobuster in directory enumeration mode
-===============================================================
-/bananastock          (Status: 301) [Size: 334]
-Progress: 207643 / 207644 (100.00%)
-===============================================================
-Finished
-===============================================================
-
-```
+<P>Used <code>CyberChef</code> to decoded it.<br>
+Discovered: <code>THE BANANAS ARE THE BEST!!</code></p>
 
 <br>
 
@@ -370,11 +347,13 @@ Finished
 <!-- _/..../.\_.../._/_./._/_./._/...\._/._./.\_/..../.\_..././.../_/_._.__/_._.__/_._.__ -->
 ```
 
-<p>Used <code>CyberChef</code></p>
+<BR>
 
 ![image](https://github.com/user-attachments/assets/e757c81b-8ab9-44f7-aa7e-5464107e00c7)
 
 
+<p>Used <code>gobuster</code>.<br>
+Discovered <code>/princess</code>.</p>
 
 
 ```bash
@@ -399,7 +378,16 @@ Starting gobuster in directory enumeration mode
 
 <br>
 
-![image](https://github.com/user-attachments/assets/f99bac97-ad10-45d9-a3b4-14a18c79a379)
+<p>Navigated to <code>https://land-of-ooo.com/yellowdog/bananastock/princess/</code>.</p>
+
+![image](https://github.com/user-attachments/assets/fe320f0d-28c4-4886-a653-77ed3ae86795)
+
+<br>
+
+<p>Viewwd <code>Page Source</code> and discovered <code>Secrettext</code>, <code>Key</code>, <code>IV</code>, <code>Mode</code>, <code>Input</code> and <code>Output</code>.</p>
+
+![image](https://github.com/user-attachments/assets/48d26b63-fb4e-4d46-915c-2d28b44b2abc)
+
 
 <br>
 
