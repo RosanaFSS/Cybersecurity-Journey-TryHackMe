@@ -182,7 +182,7 @@ print(f"e =  {e}\n\n")
 
 from Crypto.PublicKey import RSA
 
-from gmpy2 import isqrt
+from gmpy2 import isqrt, invert, lcm
 
 def factorize(n):
     # since even nos. are always divisible by 2, one of the factors will
@@ -201,40 +201,56 @@ def factorize(n):
         a = a + 1
         bsq = a * a - n
         b = isqrt(bsq)
+        p = a + b
+        q = a - b
         if b * b == bsq:
             break
+    return p, q
 
-    return a + b, a - b
+def get_private_key(e, p, q):
+    aux = (p - 1) * (q - 1)
+    d = invert(e, aux)
+    return d
 
-f = open("id_rsa.pub", "r")
-key = RSA.importKey(f.read())
+with open("id_rsa.pub", "r") as f:
+    key = RSA.importKey(f.read())
 
-bit_size = key.size_in_bits()
 n = key.n
-e = key.e
+e = 65537
 last = str(n)[-10:]
 
 p, q = factorize(n)
 
+d = get_private_key(e, p, q)
+
+key_params = (n, e, d, p, q)
+key = RSA.construct((n,e,int(d)))
+
+with open("id_rsa","wb") as f:
+    f.write(key.export_key("PEM"))
+
 print(f"----------- Analyzing the Public-Private Key Pair\n\n")
-print(f"n =  {n}\n\n")
-print(f"e =  {e}\n\n")
+print(f"Modulus (n) =  {n}\n\n")
+print(f"Public Exponent (e) =  {e}\n\n")
 print(f"The last 10 digits of n =    {last}\n\n")
-print(f"The size of the Public Key in bits: {bit_size}")
-print(f"The difference between p and q is: {p - q}")
+print(f"The difference between p and q is: {p - q}\n\n")
+print(f"The Private Key is {key}\n\n")
+
 
 ```
+
+https://raw.githubusercontent.com/amnigam/SharedScripts/refs/heads/main/breakingRSA/rsaBreak.py
 
 <br>
 
 1.6. <em>What is the numerical difference between p and q?</em><br><a id='1.6'></a>
->> <strong><code>____</code></strong><br>
+>> <strong><code>1502</code></strong><br>
 <p><br></p>
 
 <br>
 
 1.7. <em>Generate the private key using p and q (take e = 65537)</em><br><a id='1.7'></a>
->> <strong><code>_______</code></strong><br>
+>> <strong><code>No answer needed_______</code></strong><br>
 <p><br></p>
 
 <br>
