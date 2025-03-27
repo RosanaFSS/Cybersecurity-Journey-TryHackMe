@@ -132,27 +132,34 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 >> <strong><code>1225222383</code></strong><br>
 <p></p>
 
-<p>Installed </p>
+<p>It is important that you have installed ...</p>
 
 ```bash
 :~/BreakingRSA# pip install pycryptodome
 ...
-:~/BreakingRSA#pip install gmpy2
+:~/BreakingRSA# sudo apt install python3-gmpy2
 ...
+
 ```
 
 <p align="left">Ran the script below.</p>
 
 ```bash
+#!/usr/bin/env python3
+
 from Crypto.PublicKey import RSA
+
 f = open("id_rsa.pub", "r")
+
 key = RSA.importKey(f.read())
+
 n = key.n
 e = key.e
 last = str(n)[-10:]
+
 print(f"----------- Analyzing the Public-Private Key Pair\n\n")
 print(f"n =  {n}\n\n")
-print(f"the last 10 digits of n =    {last}\n\n")
+print(f"The last 10 digits of n =    {last}\n\n")
 print(f"e =  {e}\n\n") 
 ```
 
@@ -166,7 +173,57 @@ print(f"e =  {e}\n\n")
 
 > 1.5. <em>Factorize n into prime numbers p and q</em><br><a id='1.5'></a>
 >> <strong><code>No answer needed</code></strong><br>
-<p><br></p>
+<p></p>
+
+<p align="left">Ran the script below which I named <code>factorize.py</code>.</p>
+
+```bash
+#!/usr/bin/env python3
+
+from Crypto.PublicKey import RSA
+
+from gmpy2 import isqrt
+
+def factorize(n):
+    # since even nos. are always divisible by 2, one of the factors will
+    # always be 2
+    if (n & 1) == 0:
+        return (n/2, 2)
+
+    # isqrt returns the integer square root of n
+    a = isqrt(n)
+
+    # if n is a perfect square the factors will be ( sqrt(n), sqrt(n) )
+    if a * a == n:
+        return a, a
+
+    while True:
+        a = a + 1
+        bsq = a * a - n
+        b = isqrt(bsq)
+        if b * b == bsq:
+            break
+
+    return a + b, a - b
+
+f = open("id_rsa.pub", "r")
+key = RSA.importKey(f.read())
+
+bit_size = key.size_in_bits()
+n = key.n
+e = key.e
+last = str(n)[-10:]
+
+p, q = factorize(n)
+
+print(f"----------- Analyzing the Public-Private Key Pair\n\n")
+print(f"n =  {n}\n\n")
+print(f"e =  {e}\n\n")
+print(f"The last 10 digits of n =    {last}\n\n")
+print(f"The size of the Public Key in bits: {bit_size}")
+print(f"The difference between p and q is: {p - q}")
+
+```
 
 <br>
 
