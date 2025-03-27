@@ -201,7 +201,7 @@ ftp> exit
 
 <p>Navigated to <code>https://Target_IP</code>.<br>
 I found <code>Finn</code>, discovered about <code>Jake</code>, and read the CA.<br>
-Confirmed <code>the-adveture-time.com<code> from <code>nmap</code> output, and a new one: <code>land-of-ooo.com</code></p>
+Confirmed <code>the-adveture-time.com</code>code> from <code>nmap</code> output, and a new one: <code>land-of-ooo.com</code></p>
 
 ![image](https://github.com/user-attachments/assets/48b7ccb5-c26c-4ae6-b26a-dacd968ceb2d)
 
