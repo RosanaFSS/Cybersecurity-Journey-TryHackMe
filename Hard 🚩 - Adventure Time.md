@@ -449,13 +449,21 @@ Discovered <code>Abadeer</code></p>
 
 <br>
 
-<p>Ran <code>helper</code> again, answered <code>yes</code>, typed what I discovered and got <code>My password</code>:<code>My Friend Finn</code>.</p>
+<p>Ran <code>helper</code> again, answered <code>yes</code>, typed what I discovered and got <code>My password</code>:<code>My friend Finn</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/9eff6264-948d-4732-8ede-3c2c7e1231e7)
 
 
+<p>Used <code>su marceline</code> with the password just discovered.<br>
+Discovered the second flag.<br>
+Discovered  a secret message.</p>
+
+![image](https://github.com/user-attachments/assets/56dc55b1-2ebc-4914-af8b-494d9120b830)
+
 <br>
-<br>
+
+![image](https://github.com/user-attachments/assets/9d2e6b67-cf65-4d5d-8341-ea7946373a1a)
+
 
 <br>
 
