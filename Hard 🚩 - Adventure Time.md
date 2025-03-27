@@ -39,11 +39,11 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
 <p>Identified 5 ports open.</p>
 
 <ul style="list-style-type:square">
-    <li><code>21</code>: ftp with <code>Anonymous</code> allowed.</li>
-    <li><code>22</code>: ssh.</li>
-    <li><code>80</code>: http.</li>
-    <li><code>443</code>: ssl/http.</li>
-    <li><code>31337</code> : Elite?.</li>
+    <li><code>21</code>: ftp with <code>Anonymous</code> allowed</li>
+    <li><code>22</code>: ssh</li>
+    <li><code>80</code>: http</li>
+    <li><code>443</code>: ssl/http</li>
+    <li><code>31337</code> : Elite?</li>
 </ul></p>
 
 ```bash
@@ -124,7 +124,7 @@ PORT      STATE SERVICE  VERSION
 ...
 ```
 
-<p>Acces <code>ftp</code> and downloaded all the files using <code>mget *</code></p>
+<p>Accessed <code>ftp</code> and downloaded all the files using <code>mget *</code> command.</p>
 
 ```bash
 :~/AdventureTime# ls
@@ -184,6 +184,8 @@ mget 6.jpg? y
 ftp> exit
 221 Goodbye.
 ```
+
+<p>Used <code>exiftool</code> to analyze the downloaded <p>.jpg</p> files.</p>
 
 <p>Used <code>exiftool</code>.</p>
 
