@@ -333,19 +333,20 @@ Finished
 <p>Navigated to <code>https://land-of-ooo.com/yellowdog/bananastock</code>.<br>
 Discovered a <code>Morse</code> encoded message.</p>
 
-![image](https://github.com/user-attachments/assets/3e12d97c-9226-4f79-a7c2-4eb4858361c8)
-
-
-<P>Used <code>CyberChef</code> to decoded it.<br>
-Discovered: <code>THE BANANAS ARE THE BEST!!</code></p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/bd2c1ae5-ae06-4222-b148-870e4bc79b88)
-
 ```bash
 <!-- _/..../.\_.../._/_./._/_./._/...\._/._./.\_/..../.\_..././.../_/_._.__/_._.__/_._.__ -->
 ```
+
+![image](https://github.com/user-attachments/assets/3e12d97c-9226-4f79-a7c2-4eb4858361c8)
+
+
+<P>Used <code>Morse Code Decoder</code>: https://www.dcode.fr/morse-code.<br>
+Discovered: <code>THE BANANAS ARE THE BEST!!!</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0d860316-6d69-4880-8573-9fffb22b8609)
+
 
 <BR>
 
