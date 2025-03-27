@@ -132,7 +132,16 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 >> <strong><code>1225222383</code></strong><br>
 <p></p>
 
-<p align="left">Ran the script below</code>.</p>
+<p>Installed </p>
+
+```bash
+:~/BreakingRSA# pip install pycryptodome
+...
+:~/BreakingRSA#pip install gmpy2
+...
+```
+
+<p align="left">Ran the script below.</p>
 
 ```bash
 from Crypto.PublicKey import RSA
