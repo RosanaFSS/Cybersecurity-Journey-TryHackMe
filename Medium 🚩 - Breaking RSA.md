@@ -94,34 +94,23 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 
  1.4. <em>What are the last 10 digits of n? (where 'n' is the modulus for the public-private key pair)</em><br><a id='1.4'></a>
 >> <strong><code>1225222383</code></strong><br>
-<p><br></p>
+<p></p>
+
+<p align="center">Ran the script below <code></code>.</p>
 
 
-<br>
-
-este.py
-
-<br>
-
+```bash
 from Crypto.PublicKey import RSA
-
 f = open("id_rsa.pub", "r")
-
 key = RSA.importKey(f.read())
-
 n = key.n
 e = key.e
-
 last = str(n)[-10:]
-
 print(f"----------- Analyzing the Public-Private Key Pair\n\n")
-
 print(f"n =  {n}\n\n")
-
 print(f"the last 10 digits of n =    {last}\n\n")
-
 print(f"e =  {e}\n\n") 
-
+```
 
 <br>
 
