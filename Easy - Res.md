@@ -26,11 +26,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="h
 
 <br>
 
-<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/bbd84717-a994-4360-8245-48830c34ed5e"> </p>
+<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/74a59235-aa39-490a-8596-3cea825f214e"> </p>
 
 <br>
 
-<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/35fec563-1401-4d1e-9286-37a5e4db942f"> </p>
+<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/74a59235-aa39-490a-8596-3cea825f214e"> </p>
 
 
 
@@ -50,12 +50,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="h
 
 </div>
 
-<p align="center"> Global All Time: 341ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/94125b27-7304-4994-90bb-f90e89ad18df"> </p>
 
-
-
-
-![image](https://github.com/user-attachments/assets/74a59235-aa39-490a-8596-3cea825f214e)
 
 
 
