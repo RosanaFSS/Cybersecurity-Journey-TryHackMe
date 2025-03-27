@@ -13,9 +13,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="h
 
 <br>
 
+<h2>Coming soon a walkthrough in Medium.</h2>
+<p>🚧</p>
+
 <br>
-
-
 
 <br>
 
@@ -26,11 +27,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="h
 
 <br>
 
-<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/2b6a07b4-297d-4269-bb4e-1e45427b6d87"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/2b6a07b4-297d-4269-bb4e-1e45427b6d87"> </p>
 
 <br>
 
-<p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/babfc5ea-301b-4848-9712-1de20a633982"> </p>
+<p align="center"> <br><img width="900px" src="https://github.com/user-attachments/assets/babfc5ea-301b-4848-9712-1de20a633982"> </p>
 
 
 
