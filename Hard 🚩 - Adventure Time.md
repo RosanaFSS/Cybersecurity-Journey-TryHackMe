@@ -442,7 +442,7 @@ Discovered <code>Gpnhkse</code>.</p>
 
 <br>
 
-<p>Used <code>Vignered Decoder</code>: https://www.dcode.fr/vigenere-cipher.<br>
+<p>Used <code>Vigenere Decoder</code>: https://www.dcode.fr/vigenere-cipher.<br>
 Discovered <code>Abadeer</code></p>
 
 ![image](https://github.com/user-attachments/assets/b4675ce9-1f6c-409e-952f-93b42c13b299)
@@ -462,58 +462,375 @@ Discovered  a secret message.</p>
 
 <br>
 
+```bash
+marceline@at:~$ cat I-got-a-secret.txt
+Hello Finn,
+
+I heard that you pulled a fast one over the banana guards.
+B was very upset hahahahaha.
+I also heard you guys are looking for BMO's resetcode.
+You guys broke him again with those silly games?
+
+You know I like you Finn, but I don't want to anger B too much.
+So I will help you a little bit...
+
+But you have to solve my little puzzle. Think you're up for it?
+Hahahahaha....I know you are.
+
+111111111100100010101011101011111110101111111111011011011011000001101001001011111111111111001010010111100101000000000000101001101111001010010010111111110010100000000000000000000000000000000000000010101111110010101100101000000000000000000000101001101100101001001011111111111111111111001010000000000000000000000000001010111001010000000000000000000000000000000000000000000001010011011001010010010111111111111111111111001010000000000000000000000000000000001010111111001010011011001010010111111111111100101001000000000000101001111110010100110010100100100000000000000000000010101110010100010100000000000000010100000000010101111100101001111001010011001010010000001010010100101011100101001101100101001011100101001010010100110110010101111111111111111111111111111111110010100100100000000000010100010100111110010100000000000000000000000010100111111111111111110010100101111001010000000000000001010
+marceline@at:~$ 
+```
+
+
+<br>
+<br>
+
+> 1.3. <em>Content of flag3 – format is tryhackme{************} Hint : If stuck do research on cutlery.</em>.<a id='1.3'></a>
+>> <code><strong>tryhackme{N0Bl4ckM4g1cH3r3}</strong></code><br>
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/9d2e6b67-cf65-4d5d-8341-ea7946373a1a)
 
 
 <br>
 
-![image](https://github.com/user-attachments/assets/2b0b6266-8be2-4e0b-bc46-66969d317366)
+<p><code>CyberChef</code>´s <code>Magic</code> tool was not able to discovered the encoding type.<br>
+Researched and discovered that it is about <code>spoon</code>.<br>
+Used https://www.dcode.fr/spoon-language and discovered <code>ApplePie</code>.</p>
+
+![image](https://github.com/user-attachments/assets/978d3988-94ea-4b08-8200-cb8cb3173757)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/ec30bcc4-1ada-4243-91ac-dfbc87b4c12c)
+<p>Used <code>nc Target_IP 31337</code> and the last magic word.<br>
+Discovered <code>peppermint-butler</code>:<code>That Black Magic</code>.</p>
 
-
-<br>
-
-![image](https://github.com/user-attachments/assets/b4675ce9-1f6c-409e-952f-93b42c13b299)
-
+![image](https://github.com/user-attachments/assets/05a362ef-4dc7-44f1-ac53-963d6ad73c93)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/4937802c-f211-4ff6-8df0-858c7c7d654f)
+<p>Discovered the third flag.</p>
 
-<p>su marceline<br>
-My friend Finn</p>
-
-![image](https://github.com/user-attachments/assets/2847ce5b-3e41-4c63-ad78-ccbe5a87b969)
+![image](https://github.com/user-attachments/assets/b0e35639-5232-4806-b944-d5a7c3e2fba2)
 
 
+<br>
+<br>
 
-
-
-
-
-> 1.2. <em>Content of flag2 – format is tryhackme{************} Hint : Can you search for someones files?</em>.<a id='1.2'></a>
->> <code><strong>tryhackme{N1c30n3Sp0rt}</strong></code><br>
+> 1.4. <em>Content of flag4 – format is tryhackme{************} Hint : Things can be hidden and hidden things can be unfold with the right passwords.</em>.<a id='1.4'></a>
+>> <code><strong>____</strong></code><br>
 <br>
 
 
+<p>Downloaded <code>butler-1.jpg</code> to <code>THM AttackBox</code> using <code>scp</code> command.</p>
 
+```bash
+peppermint-butler@at:~$ scp peppermint-butler@Target_IP:/home/peppermint-butler/butler-1.jpg .
+...
+peppermint-butler@10.10.43.130's password: 
+butler-1.jpg                                                                                                                                                    100%   84KB 942.4KB/s   00:00    
+peppermint-butler@at:~$ 
 
+```
 
-111111111100100010101011101011111110101111111111011011011011000001101001001011111111111111001010010111100101000000000000101001101111001010010010111111110010100000000000000000000000000000000000000010101111110010101100101000000000000000000000101001101100101001001011111111111111111111001010000000000000000000000000001010111001010000000000000000000000000000000000000000000001010011011001010010010111111111111111111111001010000000000000000000000000000000001010111111001010011011001010010111111111111100101001000000000000101001111110010100110010100100100000000000000000000010101110010100010100000000000000010100000000010101111100101001111001010011001010010000001010010100101011100101001101100101001011100101001010010100110110010101111111111111111111111111111111110010100100100000000000010100010100111110010100000000000000000000000010100111111111111111110010100101111001010000000000000001010
-
-https://www.dcode.fr/spoon-language
-
-
-![image](https://github.com/user-attachments/assets/aa743022-8267-4300-b3a6-e57a1d5c2ddd)
-
-<p>The magic word you are looking for is ApplePi</p>
+![image](https://github.com/user-attachments/assets/7535e7a3-1a83-4929-a606-ea54e2017885)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/56057e23-a99a-4338-88a9-1fbd1a5055fe)
+
+<p>Used <code>find</code> looking for files owned by <code>peppermint-butler</code>.<br>
+Discovered <code>/usr/share/xml/steg.txt</code></p>
+
+```bash
+peppermint-butler@at:~$ find / -type f -user peppermint-butler 2>/dev/null
+/usr/share/xml/steg.txt
+/etc/php/zip.txt
+/proc/1920/task/1920/fdinfo/0
+/proc/1920/task/1920/fdinfo/1
+/proc/1920/task/1920/fdinfo/2
+/proc/1920/task/1920/fdinfo/255
+/proc/1920/task/1920/environ
+/proc/1920/task/1920/auxv
+/proc/1920/task/1920/status
+/proc/1920/task/1920/personality
+/proc/1920/task/1920/limits
+/proc/1920/task/1920/sched
+/proc/1920/task/1920/comm
+/proc/1920/task/1920/syscall
+/proc/1920/task/1920/cmdline
+/proc/1920/task/1920/stat
+/proc/1920/task/1920/statm
+/proc/1920/task/1920/maps
+/proc/1920/task/1920/children
+/proc/1920/task/1920/numa_maps
+/proc/1920/task/1920/mem
+/proc/1920/task/1920/mounts
+/proc/1920/task/1920/mountinfo
+/proc/1920/task/1920/clear_refs
+/proc/1920/task/1920/smaps
+/proc/1920/task/1920/smaps_rollup
+/proc/1920/task/1920/pagemap
+/proc/1920/task/1920/attr/current
+/proc/1920/task/1920/attr/prev
+/proc/1920/task/1920/attr/exec
+/proc/1920/task/1920/attr/fscreate
+/proc/1920/task/1920/attr/keycreate
+/proc/1920/task/1920/attr/sockcreate
+/proc/1920/task/1920/attr/display_lsm
+/proc/1920/task/1920/attr/selinux/current
+/proc/1920/task/1920/attr/selinux/prev
+/proc/1920/task/1920/attr/selinux/exec
+/proc/1920/task/1920/attr/selinux/fscreate
+/proc/1920/task/1920/attr/selinux/keycreate
+/proc/1920/task/1920/attr/selinux/sockcreate
+/proc/1920/task/1920/attr/smack/current
+/proc/1920/task/1920/attr/apparmor/current
+/proc/1920/task/1920/attr/apparmor/prev
+/proc/1920/task/1920/attr/apparmor/exec
+/proc/1920/task/1920/wchan
+/proc/1920/task/1920/stack
+/proc/1920/task/1920/schedstat
+/proc/1920/task/1920/cpuset
+/proc/1920/task/1920/cgroup
+/proc/1920/task/1920/oom_score
+/proc/1920/task/1920/oom_adj
+/proc/1920/task/1920/oom_score_adj
+/proc/1920/task/1920/loginuid
+/proc/1920/task/1920/sessionid
+/proc/1920/task/1920/io
+/proc/1920/task/1920/uid_map
+/proc/1920/task/1920/gid_map
+/proc/1920/task/1920/projid_map
+/proc/1920/task/1920/setgroups
+/proc/1920/task/1920/patch_state
+/proc/1920/fdinfo/0
+/proc/1920/fdinfo/1
+/proc/1920/fdinfo/2
+/proc/1920/fdinfo/255
+/proc/1920/environ
+/proc/1920/auxv
+/proc/1920/status
+/proc/1920/personality
+/proc/1920/limits
+/proc/1920/sched
+/proc/1920/autogroup
+/proc/1920/comm
+/proc/1920/syscall
+/proc/1920/cmdline
+/proc/1920/stat
+/proc/1920/statm
+/proc/1920/maps
+/proc/1920/numa_maps
+/proc/1920/mem
+/proc/1920/mounts
+/proc/1920/mountinfo
+/proc/1920/mountstats
+/proc/1920/clear_refs
+/proc/1920/smaps
+/proc/1920/smaps_rollup
+/proc/1920/pagemap
+/proc/1920/attr/current
+/proc/1920/attr/prev
+/proc/1920/attr/exec
+/proc/1920/attr/fscreate
+/proc/1920/attr/keycreate
+/proc/1920/attr/sockcreate
+/proc/1920/attr/display_lsm
+/proc/1920/attr/selinux/current
+/proc/1920/attr/selinux/prev
+/proc/1920/attr/selinux/exec
+/proc/1920/attr/selinux/fscreate
+/proc/1920/attr/selinux/keycreate
+/proc/1920/attr/selinux/sockcreate
+/proc/1920/attr/smack/current
+/proc/1920/attr/apparmor/current
+/proc/1920/attr/apparmor/prev
+/proc/1920/attr/apparmor/exec
+/proc/1920/wchan
+/proc/1920/stack
+/proc/1920/schedstat
+/proc/1920/cpuset
+/proc/1920/cgroup
+/proc/1920/oom_score
+/proc/1920/oom_adj
+/proc/1920/oom_score_adj
+/proc/1920/loginuid
+/proc/1920/sessionid
+/proc/1920/coredump_filter
+/proc/1920/io
+/proc/1920/uid_map
+/proc/1920/gid_map
+/proc/1920/projid_map
+/proc/1920/setgroups
+/proc/1920/timers
+/proc/1920/timerslack_ns
+/proc/1920/patch_state
+/proc/2275/task/2275/fdinfo/0
+/proc/2275/task/2275/fdinfo/1
+/proc/2275/task/2275/fdinfo/2
+/proc/2275/task/2275/fdinfo/3
+/proc/2275/task/2275/fdinfo/4
+/proc/2275/task/2275/fdinfo/5
+/proc/2275/task/2275/fdinfo/7
+/proc/2275/task/2275/fdinfo/8
+/proc/2275/task/2275/fdinfo/9
+/proc/2275/task/2275/fdinfo/10
+/proc/2275/task/2275/environ
+/proc/2275/task/2275/auxv
+/proc/2275/task/2275/status
+/proc/2275/task/2275/personality
+/proc/2275/task/2275/limits
+/proc/2275/task/2275/sched
+/proc/2275/task/2275/comm
+/proc/2275/task/2275/syscall
+/proc/2275/task/2275/cmdline
+/proc/2275/task/2275/stat
+/proc/2275/task/2275/statm
+/proc/2275/task/2275/maps
+/proc/2275/task/2275/children
+/proc/2275/task/2275/numa_maps
+/proc/2275/task/2275/mem
+/proc/2275/task/2275/mounts
+/proc/2275/task/2275/mountinfo
+/proc/2275/task/2275/clear_refs
+/proc/2275/task/2275/smaps
+/proc/2275/task/2275/smaps_rollup
+/proc/2275/task/2275/pagemap
+/proc/2275/task/2275/attr/current
+/proc/2275/task/2275/attr/prev
+/proc/2275/task/2275/attr/exec
+/proc/2275/task/2275/attr/fscreate
+proc/2275/task/2275/attr/keycreate
+/proc/2275/task/2275/attr/sockcreate
+/proc/2275/task/2275/attr/display_lsm
+/proc/2275/task/2275/attr/selinux/current
+/proc/2275/task/2275/attr/selinux/prev
+/proc/2275/task/2275/attr/selinux/exec
+/proc/2275/task/2275/attr/selinux/fscreate
+/proc/2275/task/2275/attr/selinux/keycreate
+/proc/2275/task/2275/attr/selinux/sockcreate
+/proc/2275/task/2275/attr/smack/current
+/proc/2275/task/2275/attr/apparmor/current
+/proc/2275/task/2275/attr/apparmor/prev
+/proc/2275/task/2275/attr/apparmor/exec
+/proc/2275/task/2275/wchan
+/proc/2275/task/2275/stack
+/proc/2275/task/2275/schedstat
+/proc/2275/task/2275/cpuset
+/proc/2275/task/2275/cgroup
+/proc/2275/task/2275/oom_score
+/proc/2275/task/2275/oom_adj
+/proc/2275/task/2275/oom_score_adj
+/proc/2275/task/2275/loginuid
+/proc/2275/task/2275/sessionid
+/proc/2275/task/2275/io
+/proc/2275/task/2275/uid_map
+/proc/2275/task/2275/gid_map
+/proc/2275/task/2275/projid_map
+/proc/2275/task/2275/setgroups
+/proc/2275/task/2275/patch_state
+/proc/2275/fdinfo/0
+/proc/2275/fdinfo/1
+/proc/2275/fdinfo/2
+/proc/2275/fdinfo/3
+/proc/2275/fdinfo/4
+/proc/2275/fdinfo/6
+/proc/2275/fdinfo/7
+/proc/2275/environ
+/proc/2275/auxv
+/proc/2275/status
+/proc/2275/personality
+/proc/2275/limits
+/proc/2275/sched
+/proc/2275/autogroup
+/proc/2275/comm
+/proc/2275/syscall
+/proc/2275/cmdline
+/proc/2275/stat
+/proc/2275/statm
+/proc/2275/maps
+/proc/2275/numa_maps
+/proc/2275/mem
+/proc/2275/mounts
+/proc/2275/mountinfo
+/proc/2275/mountstats
+/proc/2275/clear_refs
+/proc/2275/smaps
+/proc/2275/smaps_rollup
+/proc/2275/pagemap
+/proc/2275/attr/current
+/proc/2275/attr/prev
+/proc/2275/attr/exec
+/proc/2275/attr/fscreate
+/proc/2275/attr/keycreate
+/proc/2275/attr/sockcreate
+/proc/2275/attr/display_lsm
+/proc/2275/attr/selinux/current
+/proc/2275/attr/selinux/prev
+/proc/2275/attr/selinux/exec
+/proc/2275/attr/selinux/fscreate
+/proc/2275/attr/selinux/keycreate
+/proc/2275/attr/selinux/sockcreate
+/proc/2275/attr/smack/current
+/proc/2275/attr/apparmor/current
+/proc/2275/attr/apparmor/prev
+/proc/2275/attr/apparmor/exec
+/proc/2275/wchan
+/proc/2275/stack
+/proc/2275/schedstat
+/proc/2275/cpuset
+/proc/2275/cgroup
+/proc/2275/oom_score
+/proc/2275/oom_adj
+/proc/2275/oom_score_adj
+/proc/2275/loginuid
+/proc/2275/sessionid
+/proc/2275/coredump_filter
+/proc/2275/io
+/proc/2275/uid_map
+/proc/2275/gid_map
+/proc/2275/projid_map
+/proc/2275/setgroups
+/proc/2275/timers
+/proc/2275/timerslack_ns
+/proc/2275/patch_state
+/home/peppermint-butler/.bashrc
+/home/peppermint-butler/.profile
+/home/peppermint-butler/flag3
+/home/peppermint-butler/.cache/motd.legal-displayed
+/home/peppermint-butler/.bash_logout
+/home/peppermint-butler/butler-1.jpg
+/home/peppermint-butler/.ssh/known_hosts
+peppermint-butler@at:~$ 
+
+```
+
+![image](https://github.com/user-attachments/assets/642e78d7-3fe4-4f78-b91f-a69136064e94)
+
+<br>
+
+<p>Used <code>cat</code> and discovered <code>ToKeepASecretSafe</code>.</p>
+
+![image](https://github.com/user-attachments/assets/c0d1c11a-004e-4dce-9925-a7919727c561)
+
+<br>
+
+<p>Used <code>cat</code> and discovered <code>TThisIsReallySave</code>.</p>
+
+![image](https://github.com/user-attachments/assets/2e9ede6a-df55-4725-8274-cd0e12161c5f)
+
+<br>
+
+<p>Used <code>steghide</code>against <code>butler-1.jpg</code>.<br>
+Discovered <code>The Ice King s????</code>.</p>
+
+
+
+
+
+
+
 
 
 
