@@ -422,17 +422,29 @@ apple-guards@at:~$
 <br>
 
 
-<p>Used <code>cat mbox</code>.</p>
+<p>Used <code>cat mbox</code> and dicovered <code>marceline</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/49f5ea7d-41f7-46f3-8c8d-7de565c70978)
 
 
+<p>Used <code>find / -user marceline -type f 2>/dev/null</code> researching for files owned by <code>marceline</code>.<br>
+Discovered <code>/etc/fonts/helper</code></p>.
+
+![image](https://github.com/user-attachments/assets/1825ec7a-f57b-4072-b656-6f5ac134520b)
+
+
+<p>Ran <code>helper</code>: <code>./helper</code>.<br>
+I answered <code>no</code>.<br>
+Discovered <code>Gpnhkse</code>.</p>
+
+![image](https://github.com/user-attachments/assets/1de81411-0126-4e46-8511-24c8d245dace)
+
+
 <br>
 
-![image](https://github.com/user-attachments/assets/04e0d922-5e1d-44ef-bc68-3a526aaa71dd)
+<p>Used <code>Vignered Decoder</code>: https://www.dcode.fr/vigenere-cipher.<br>
+Discovered <code></code></p>
 
-
-<p>./helper</p>
 
 ![image](https://github.com/user-attachments/assets/46f4dd59-846a-481e-a399-1a2c0ceb4bb1)
 
