@@ -185,9 +185,7 @@ ftp> exit
 221 Goodbye.
 ```
 
-<p>Used <code>exiftool</code> to analyze the downloaded <p>.jpg</p> files.</p>
-
-<p>Used <code>exiftool</code>.</p>
+<p>Used <code>exiftool</code> to analyze the downloaded <code>.jpg</code> files.</p>
 
 ```bash
 :~/AdventureTime# for i in {1..6}; do exiftool $i.jpg | grep "XP Comment" | cut -d ":" -f2;done
