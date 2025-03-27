@@ -519,7 +519,7 @@ Discovered <code>peppermint-butler</code>:<code>That Black Magic</code>.</p>
 <br>
 
 > 1.4. <em>Content of flag4 – format is tryhackme{************} Hint : Things can be hidden and hidden things can be unfold with the right passwords.</em>.<a id='1.4'></a>
->> <code><strong>____</strong></code><br>
+>> <code><strong>tryhackme{P1ngu1nsRul3!}</strong></code><br>
 <br>
 
 
@@ -528,7 +528,7 @@ Discovered <code>peppermint-butler</code>:<code>That Black Magic</code>.</p>
 ```bash
 peppermint-butler@at:~$ scp peppermint-butler@Target_IP:/home/peppermint-butler/butler-1.jpg .
 ...
-peppermint-butler@10.10.43.130's password: 
+peppermint-butler@Target_IP's password: 
 butler-1.jpg                                                                                                                                                    100%   84KB 942.4KB/s   00:00    
 peppermint-butler@at:~$ 
 
@@ -816,7 +816,7 @@ peppermint-butler@at:~$
 
 <br>
 
-<p>Used <code>cat</code> and discovered <code>TThisIsReallySave</code>.</p>
+<p>Used <code>cat</code> and discovered <code>ThisIsReallySave</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/2e9ede6a-df55-4725-8274-cd0e12161c5f)
 
@@ -824,6 +824,10 @@ peppermint-butler@at:~$
 
 <p>Used <code>steghide</code>against <code>butler-1.jpg</code>.<br>
 Discovered <code>The Ice King s????</code>.</p>
+
+<br>
+
+
 
 
 
