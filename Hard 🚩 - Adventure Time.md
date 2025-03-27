@@ -25,7 +25,7 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
 > 1.1. <em>Content of flag1 – format is tryhackme{************} Hint : Try to recursively enumerate the website.</em>.<a id='1.1'></a>
 >> <code><strong>System and Service Accounts</strong></code><br>
 
-<p>I started enumerating with nmap.</p>
+<p>I started enumerating with <code>nmap</code>.</p>
 
 <ul style="list-style-type:square">
     <li><code>-sC</code>: is equivalent to <code>--script=default</code>.</li>
@@ -131,7 +131,7 @@ PORT      STATE SERVICE  VERSION
 ```bash
 :~/AdventureTime# ls
 1.jpg  2.jpg  3.jpg  4.jpg  5.jpg  6.jpg
-root@ip-10-10-122-76:~/AdevntureTime# 
+root@ip-10-10-122-76:~/AdvenntureTime# 
 
 :~/AdventureTime# ftp 10.10.63.188
 Connected to 10.10.63.188.
@@ -292,12 +292,18 @@ Finished
 
 ```
 
-<p>Navigated to <code>https://land-of-ooo.com/yellowdog</code>.<br>
-Discovered <code>_____</code>.</p>
+<p>Navigated to <code>https://land-of-ooo.com/yellowdog</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/eb2864a6-8816-4b57-8bc3-48153b082040)
 
+<p>Saved the <code>yellow dog</code> image = <code>jake-2.png</code>.<br>
+Inspected it with <code>exiftool</code> ... nothing interesting.</p>
+
 ![image](https://github.com/user-attachments/assets/9106441f-1001-452a-acd2-ba5d328291cf)
+
+
+<p>Used <code>gobuster</code>.<br>
+Discovered <code>/bananastock</code>.</p>
 
 
 ```bash
@@ -325,8 +331,9 @@ Finished
 ```
 
 <p>Navigated to <code>https://land-of-ooo.com/yellowdog/bananastock</code>.<br>
-
-<p><code>The Bananas are the Best</code>.</p>
+Discovered a <code>Morse</code> encoded message.<br>
+Used <code>CyberChef</code> to decoded it.<br>
+Discovered: <code>The Bananas are the Best</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/3e12d97c-9226-4f79-a7c2-4eb4858361c8)
 
