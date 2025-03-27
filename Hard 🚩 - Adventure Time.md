@@ -409,12 +409,23 @@ apple-guards@at:~$
 
 ```
 
+<p>Discovered the first flag.</p>
+
+![image](https://github.com/user-attachments/assets/568e5d01-7e9c-4e42-9d53-ff9135a032dd)
 
 
-<p>tryhackme{Th1s1sJustTh3St4rt}
-</p>
+<br>
+<br>
 
-![image](https://github.com/user-attachments/assets/ed003a23-8794-4b55-88fc-8b157e1540ce)
+> 1.2. <em>Content of flag2 – format is tryhackme{************} Hint : Can you search for someones files?</em>.<a id='1.2'></a>
+>> <code><strong>tryhackme{N1c30n3Sp0rt}</strong></code><br>
+<br>
+
+
+<p>Used <code>cat mbox</code>.</p>
+
+![image](https://github.com/user-attachments/assets/49f5ea7d-41f7-46f3-8c8d-7de565c70978)
+
 
 <br>
 
