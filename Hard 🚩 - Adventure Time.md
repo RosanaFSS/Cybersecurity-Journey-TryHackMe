@@ -389,12 +389,9 @@ Starting gobuster in directory enumeration mode
 ![image](https://github.com/user-attachments/assets/48d26b63-fb4e-4d46-915c-2d28b44b2abc)
 
 
-<br>
+<p>Used <code>CyberChef</code> with the parameters just discovered.<br>
+The decoded information is <code>the magic safe is accessibel at port 31337. the magic word is: ricardio</code></p>
 
-![image](https://github.com/user-attachments/assets/0e3be83c-50cd-4d80-84dc-d376f472b0c9)
-
-<br>
-<p>the magic safe is accessibel at port 31337. the magic word is: ricardio</p>
 
 ![image](https://github.com/user-attachments/assets/7d08a515-01ee-4e04-a53b-8ac1559addab)
 
