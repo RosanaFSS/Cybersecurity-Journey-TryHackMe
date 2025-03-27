@@ -443,10 +443,19 @@ Discovered <code>Gpnhkse</code>.</p>
 <br>
 
 <p>Used <code>Vignered Decoder</code>: https://www.dcode.fr/vigenere-cipher.<br>
-Discovered <code></code></p>
+Discovered <code>Abadeer</code></p>
+
+![image](https://github.com/user-attachments/assets/b4675ce9-1f6c-409e-952f-93b42c13b299)
+
+<br>
+
+<p>Ran <code>helper</code> again, answered <code>yes</code>, typed what I discovered and got <code>My password</code>:<code>My Friend Finn</code>.</p>
+
+![image](https://github.com/user-attachments/assets/9eff6264-948d-4732-8ede-3c2c7e1231e7)
 
 
-![image](https://github.com/user-attachments/assets/46f4dd59-846a-481e-a399-1a2c0ceb4bb1)
+<br>
+<br>
 
 <br>
 
