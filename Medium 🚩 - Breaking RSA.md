@@ -28,6 +28,42 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 
 Below is an implementation of Fermat's factorization algorithm in Python.</p>
 
+```bash
+Below is an implementation of Fermat's factorization algorithm in Python.
+#!/usr/bin/python3
+# gmpy2 is a C-coded Python extension module that supports
+# multiple-precision arithmetic.
+# pip install gmpy2
+from gmpy2 import isqrt
+from math import lcm
+
+def factorize(n):
+    # since even nos. are always divisible by 2, one of the factors will
+    # always be 2
+    if (n & 1) == 0:
+        return (n/2, 2)
+
+    # isqrt returns the integer square root of n
+    a = isqrt(n)
+
+    # if n is a perfect square the factors will be ( sqrt(n), sqrt(n) )
+    if a * a == n:
+        return a, a
+
+    while True:
+        a = a + 1
+        bsq = a * a - n
+        b = isqrt(bsq)
+        if b * b == bsq:
+            break
+
+    return a + b, a - b
+
+print(factorize(105327569))
+```
+
+I suggest using the <a href="https://pypi.org/project/pycryptodome/">pycryptodome</a> Python library to answer the RSA-related questions below.
+
 
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
@@ -96,8 +132,7 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 >> <strong><code>1225222383</code></strong><br>
 <p></p>
 
-<p align="center">Ran the script below <code></code>.</p>
-
+<p align="left">Ran the script below</code>.</p>
 
 ```bash
 from Crypto.PublicKey import RSA
