@@ -2,7 +2,8 @@
 <p align="center">March 27, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-  <img width="160px" src="https://github.com/user-attachments/assets/50693229-314a-4a1c-a729-97cea308dc5"></p>
+  <img width="160px" src="https://github.com/user-attachments/assets/eed07ca3-4235-4190-9c7a-81d93c4593cf"></p>
+
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Res}}$$
