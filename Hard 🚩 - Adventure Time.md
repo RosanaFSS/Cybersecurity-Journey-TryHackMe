@@ -28,7 +28,7 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
 <p>I started enumerating with nmap.</p>
 
 <ul style="list-style-type:square">
-    <li><code>-sC</code>: is equivalent to <code>--scritp=default</code>.</li>
+    <li><code>-sC</code>: is equivalent to <code>--script=default</code>.</li>
     <li><code>-sV</code>: Probe open ports to determine service/version info.</li>
     <li><code>-sS</code>: TCP SYN.</li>
     <li><code>-Pn</code>: Treat all hosts as online.</li>
@@ -39,7 +39,7 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
 <p>Identified 5 ports open.</p>
 
 <ul style="list-style-type:square">
-    <li><code>21</code>: ftp with <code>Anonymous</code> allowed</li>
+    <li><code>21</code>: ftp with <code>Anonymous</code> allowed. It is in <code>ASCII</code>code></li>
     <li><code>22</code>: ssh</li>
     <li><code>80</code>: http</li>
     <li><code>443</code>: ssl/http</li>
