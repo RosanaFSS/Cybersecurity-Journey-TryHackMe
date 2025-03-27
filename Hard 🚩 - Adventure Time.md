@@ -44,7 +44,6 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
     <li><code>80</code>: http.</li>
     <li><code>443</code>: ssl/http.</li>
     <li><code>31337</code> : Elite?.</li>
-    <li><code>-p-</code>: Scan all ports.</li>
 </ul></p>
 
 ```bash
@@ -124,6 +123,87 @@ PORT      STATE SERVICE  VERSION
 |_    Accept: application/sdp
 ...
 ```
+
+<p>Acces <code>ftp</code> and downloaded all the files using <code>mget *</code></p>
+
+```bash
+:~# ftp 10.10.63.188
+Connected to 10.10.63.188.
+220 (vsFTPd 3.0.3)
+Name (10.10.63.188:root): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls -lah
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 ftp      ftp          4096 Sep 21  2019 .
+drwxr-xr-x    2 ftp      ftp          4096 Sep 21  2019 ..
+-r--r--r--    1 ftp      ftp       1401357 Sep 21  2019 1.jpg
+-r--r--r--    1 ftp      ftp        233977 Sep 21  2019 2.jpg
+-r--r--r--    1 ftp      ftp        524615 Sep 21  2019 3.jpg
+-r--r--r--    1 ftp      ftp        771076 Sep 21  2019 4.jpg
+-r--r--r--    1 ftp      ftp       1644395 Sep 21  2019 5.jpg
+-r--r--r--    1 ftp      ftp         40355 Sep 21  2019 6.jpg
+226 Directory send OK.
+ftp> mget *
+mget 1.jpg? y
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for 1.jpg (1401357 bytes).
+226 Transfer complete.
+1401357 bytes received in 0.32 secs (4.1195 MB/s)
+mget 2.jpg? y
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for 2.jpg (233977 bytes).
+226 Transfer complete.
+233977 bytes received in 0.09 secs (2.5800 MB/s)
+mget 3.jpg? y
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for 3.jpg (524615 bytes).
+226 Transfer complete.
+524615 bytes received in 0.10 secs (5.0726 MB/s)
+mget 4.jpg? y
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for 4.jpg (771076 bytes).
+226 Transfer complete.
+771076 bytes received in 0.29 secs (2.5531 MB/s)
+mget 5.jpg? y
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for 5.jpg (1644395 bytes).
+226 Transfer complete.
+1644395 bytes received in 0.18 secs (8.5536 MB/s)
+mget 6.jpg? y
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for 6.jpg (40355 bytes).
+226 Transfer complete.
+40355 bytes received in 0.07 secs (537.4296 kB/s)
+ftp> exit
+221 Goodbye.
+```
+
+<p>Used <code>exiftool</code>.</p>
+
+```bash
+:~# for i in {1..6}; do exiftool $i.jpg | grep "XP Comment" | cut -d ":" -f2;done
+ 01111001 01101111 01110101 00100000
+ 01110010 01100101 01100001 01101100 01101100 01111001 00100000
+ 01101100 01101001 01101011 01100101 00100000
+ 01110100 01101111 00100000
+ 01110000 01110101 01111010 01111010 01101100 01100101 00100000
+ 01100100 01101111 01101110 00100111 01110100 00100000 01111001 01100001
+```
+
+<p>Navigated to <code>https://Target_IP</code>.<br>
+I found <code>Finn</code>, discovered about <code>Jake</code>, and read the CA.
+
+
+![image](https://github.com/user-attachments/assets/b464ae84-f6de-4d00-a4a7-d601d0ff6487)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c85fc0b9-b601-4bb4-8cd1-6fbf60e8ff41)
+
+
 
 <br>
 
