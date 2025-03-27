@@ -397,6 +397,15 @@ The decoded information is <code>the magic safe is accessibel at port 31337. the
 
 <br>
 
+<p>Used <code>nc</code> command and dicovered that the new username is <code>apple-guards</code>.</p>
+
+![image](https://github.com/user-attachments/assets/e60a59a4-22d4-4a39-8940-5c8a8d83ee91)
+
+<p>Used <code>ssh</code>.</p>
+
+
+
+
 <p>tryhackme{Th1s1sJustTh3St4rt}
 </p>
 
