@@ -255,15 +255,13 @@ Finished
 
 <br>
 
-<p>Navigated to ...<br>
+<p>Navigated to <code>https://land-of-ooo.com</code>.<br>
 Discovered <code>Jake</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/a2d0c1f3-0d94-476e-97cc-63f2262031da)
 
-<p>Used <code>gobuster</code>.</p>
-
 <p>Used <code>gobuster</code>.<br>
-Discovered <code>/yellowdog</code></p>
+Discovered <code>/yellowdog</code>.</p>
 
 ```bash
 :~/AdevntureTime# gobuster dir -u https://land-of-ooo.com -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
@@ -291,7 +289,8 @@ Finished
 
 ```
 
-<p>Navigated to ...</p>
+<p>Navigated to <code>https://land-of-ooo.com/yellowdog</code>.<br>
+Discovered <code>_____</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/eb2864a6-8816-4b57-8bc3-48153b082040)
 
@@ -321,6 +320,8 @@ Finished
 ===============================================================
 
 ```
+
+<p>Navigated to <code>https://land-of-ooo.com/yellowdog/bananastock</code>.<br>
 
 <p><code>The Bananas are the Best</code>.</p>
 
