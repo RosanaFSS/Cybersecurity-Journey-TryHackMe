@@ -236,7 +236,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 Starting gobuster in directory enumeration mode
 ===============================================================
-/candybar             (Status: 301) [Size: 317] [--> https://Target_IP88/candybar/]
+/candybar             (Status: 301) [Size: 317] [--> https://Target_IPcandybar/]
 /server-status        (Status: 403) [Size: 301]
 Progress: 207643 / 207644 (100.00%)
 ===============================================================
