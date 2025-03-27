@@ -267,7 +267,7 @@ Discovered <code>Jake</code>.</p>
 Discovered <code>/yellowdog</code>.</p>
 
 ```bash
-:~/AdevntureTime# gobuster dir -u https://land-of-ooo.com -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+:~/AdventureTime# gobuster dir -u https://land-of-ooo.com -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
 ===============================================================
 Gobuster v3.6
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
@@ -384,7 +384,7 @@ Starting gobuster in directory enumeration mode
 
 <br>
 
-<p>Viewwd <code>Page Source</code> and discovered <code>Secrettext</code>, <code>Key</code>, <code>IV</code>, <code>Mode</code>, <code>Input</code> and <code>Output</code>.</p>
+<p>Viewed <code>Page Source</code> and discovered <code>Secrettext</code>, <code>Key</code>, <code>IV</code>, <code>Mode</code>, <code>Input</code> and <code>Output</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/48d26b63-fb4e-4d46-915c-2d28b44b2abc)
 
