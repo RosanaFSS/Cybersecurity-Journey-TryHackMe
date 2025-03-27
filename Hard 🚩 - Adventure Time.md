@@ -46,6 +46,8 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
     <li><code>31337</code> : Elite?</li>
 </ul></p>
 
+<p>Identified domain <code>adventure-time.com</code>.</p>
+
 ```bash
 :~/AdventureTime# nmap -sC -sV -sS -Pn -O -p- 10.10.63.188
 ...
