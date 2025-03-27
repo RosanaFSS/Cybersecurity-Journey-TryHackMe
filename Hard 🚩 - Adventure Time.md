@@ -22,7 +22,7 @@ This is not a real world challenge, but fun and game only (and maybe learn a thi
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
-> 1.1. <em>What type of accounts are used by the Windows operating system and various apps?</em>.<a id='1.1'></a>
+> 1.1. <em>Content of flag1 – format is tryhackme{************} Hint : Try to recursively enumerate the website.</em>.<a id='1.1'></a>
 >> <code><strong>System and Service Accounts</strong></code><br>
 
 <p>I started enumerating with nmap.</p>
@@ -127,7 +127,11 @@ PORT      STATE SERVICE  VERSION
 <p>Acces <code>ftp</code> and downloaded all the files using <code>mget *</code></p>
 
 ```bash
-:~# ftp 10.10.63.188
+:~/AdventureTime# ls
+1.jpg  2.jpg  3.jpg  4.jpg  5.jpg  6.jpg
+root@ip-10-10-122-76:~/AdevntureTime# 
+
+:~/AdventureTime# ftp 10.10.63.188
 Connected to 10.10.63.188.
 220 (vsFTPd 3.0.3)
 Name (10.10.63.188:root): anonymous
@@ -184,7 +188,7 @@ ftp> exit
 <p>Used <code>exiftool</code>.</p>
 
 ```bash
-:~# for i in {1..6}; do exiftool $i.jpg | grep "XP Comment" | cut -d ":" -f2;done
+:~/AdventureTime# for i in {1..6}; do exiftool $i.jpg | grep "XP Comment" | cut -d ":" -f2;done
  01111001 01101111 01110101 00100000
  01110010 01100101 01100001 01101100 01101100 01111001 00100000
  01101100 01101001 01101011 01100101 00100000
@@ -195,6 +199,10 @@ ftp> exit
 
 <p>Navigated to <code>https://Target_IP</code>.<br>
 I found <code>Finn</code>, discovered about <code>Jake</code>, and read the CA.
+
+![image](https://github.com/user-attachments/assets/48b7ccb5-c26c-4ae6-b26a-dacd968ceb2d)
+
+<br>
 
 
 ![image](https://github.com/user-attachments/assets/b464ae84-f6de-4d00-a4a7-d601d0ff6487)
@@ -207,7 +215,91 @@ I found <code>Finn</code>, discovered about <code>Jake</code>, and read the CA.
 
 <br>
 
-> 1.2. <em>What centrally manages local user accounts and domain accounts?</em>.<a id='1.2'></a>
->> <code><strong>Domain Controller</strong></code>
+<p>Used <code>gobuster</code>.<br>
+Discovered <code>/candybar</code>.</p>
 
+```bash
+:~/AdventureTime# gobuster dir -u https://Target_IP -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://Target_IP
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/candybar             (Status: 301) [Size: 317] [--> https://Target_IP88/candybar/]
+/server-status        (Status: 403) [Size: 301]
+Progress: 207643 / 207644 (100.00%)
+===============================================================
+Finished
+===============================================================
+
+```
+
+
+![image](https://github.com/user-attachments/assets/a5f2b2e4-a107-4ab7-9057-ecb4f0ba93fc)
+
+<br>
+
+<p>Added <code>Target_IP</code> and the 2 domain names to <code>/etc/hosts/</code>.</p>
+
+![image](https://github.com/user-attachments/assets/9ea88b96-bad3-4bfb-8111-45261a0757f1)
+
+
+<br>
+
+<p>Navigated to ...<br>
+Discovered <code>Jake</code>.</p>
+
+![image](https://github.com/user-attachments/assets/a2d0c1f3-0d94-476e-97cc-63f2262031da)
+
+<p>Used <code>gobuster</code>.</p>
+
+<p>Used <code>gobuster</code>.<br>
+Discovered <code>/yellowdog</code></p>
+
+```bash
+:~/AdevntureTime# gobuster dir -u https://land-of-ooo.com -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://land-of-ooo.com
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/yellowdog            (Status: 301) [Size: 322] [--> http://land-of-ooo.com/yellowdog/]
+/server-status        (Status: 403) [Size: 303]
+Progress: 207643 / 207644 (100.00%)
+===============================================================
+Finished
+===============================================================
+
+
+```
+
+<p>Navigated to ...</p>
+
+![image](https://github.com/user-attachments/assets/eb2864a6-8816-4b57-8bc3-48153b082040)
+
+![image](https://github.com/user-attachments/assets/9106441f-1001-452a-acd2-ba5d328291cf)
+
+
+
+
+> 1.2. <em>Content of flag2 – format is tryhackme{************} Hint : Can you search for someones files?</em>.<a id='1.2'></a>
+>> <code><strong>_____________________________</strong></code><br>
 <br>
