@@ -298,8 +298,174 @@ Finished
 ![image](https://github.com/user-attachments/assets/9106441f-1001-452a-acd2-ba5d328291cf)
 
 
+```bash
+:~/AdevntureTime# gobuster dir -u https://land-of-ooo.com/yellowdog/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://land-of-ooo.com/yellowdog/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/bananastock          (Status: 301) [Size: 334]
+Progress: 207643 / 207644 (100.00%)
+===============================================================
+Finished
+===============================================================
+
+```
+
+<p><code>The Bananas are the Best</code>.</p>
+
+![image](https://github.com/user-attachments/assets/3e12d97c-9226-4f79-a7c2-4eb4858361c8)
+
+
+```bash
+:~/AdevntureTime# gobuster dir -u https://land-of-ooo.com/yellowdog/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://land-of-ooo.com/yellowdog/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/bananastock          (Status: 301) [Size: 334]
+Progress: 207643 / 207644 (100.00%)
+===============================================================
+Finished
+===============================================================
+
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bd2c1ae5-ae06-4222-b148-870e4bc79b88)
+
+```bash
+<!-- _/..../.\_.../._/_./._/_./._/...\._/._./.\_/..../.\_..././.../_/_._.__/_._.__/_._.__ -->
+```
+
+<p>Used <code>CyberChef</code></p>
+
+![image](https://github.com/user-attachments/assets/e757c81b-8ab9-44f7-aa7e-5464107e00c7)
+
+
+
+
+```bash
+:~/AdventureTime# :~# gobuster dir -u https://land-of-ooo.com/yellowdog/bananastock/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -k
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://land-of-ooo.com/yellowdog/bananastock/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/princess             (Status: 301) [Size: 343]
+
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f99bac97-ad10-45d9-a3b4-14a18c79a379)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0e3be83c-50cd-4d80-84dc-d376f472b0c9)
+
+<br>
+<p>the magic safe is accessibel at port 31337. the magic word is: ricardio</p>
+
+![image](https://github.com/user-attachments/assets/7d08a515-01ee-4e04-a53b-8ac1559addab)
+
+<br>
+
+<p>tryhackme{Th1s1sJustTh3St4rt}
+</p>
+
+![image](https://github.com/user-attachments/assets/ed003a23-8794-4b55-88fc-8b157e1540ce)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/04e0d922-5e1d-44ef-bc68-3a526aaa71dd)
+
+
+<p>./helper</p>
+
+![image](https://github.com/user-attachments/assets/46f4dd59-846a-481e-a399-1a2c0ceb4bb1)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2b0b6266-8be2-4e0b-bc46-66969d317366)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ec30bcc4-1ada-4243-91ac-dfbc87b4c12c)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b4675ce9-1f6c-409e-952f-93b42c13b299)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4937802c-f211-4ff6-8df0-858c7c7d654f)
+
+<p>su marceline<br>
+My friend Finn</p>
+
+![image](https://github.com/user-attachments/assets/2847ce5b-3e41-4c63-ad78-ccbe5a87b969)
+
+
+
+
+
 
 
 > 1.2. <em>Content of flag2 – format is tryhackme{************} Hint : Can you search for someones files?</em>.<a id='1.2'></a>
->> <code><strong>_____________________________</strong></code><br>
+>> <code><strong>tryhackme{N1c30n3Sp0rt}</strong></code><br>
 <br>
+
+
+
+
+
+111111111100100010101011101011111110101111111111011011011011000001101001001011111111111111001010010111100101000000000000101001101111001010010010111111110010100000000000000000000000000000000000000010101111110010101100101000000000000000000000101001101100101001001011111111111111111111001010000000000000000000000000001010111001010000000000000000000000000000000000000000000001010011011001010010010111111111111111111111001010000000000000000000000000000000001010111111001010011011001010010111111111111100101001000000000000101001111110010100110010100100100000000000000000000010101110010100010100000000000000010100000000010101111100101001111001010011001010010000001010010100101011100101001101100101001011100101001010010100110110010101111111111111111111111111111111110010100100100000000000010100010100111110010100000000000000000000000010100111111111111111110010100101111001010000000000000001010
+
+https://www.dcode.fr/spoon-language
+
+
+![image](https://github.com/user-attachments/assets/aa743022-8267-4300-b3a6-e57a1d5c2ddd)
+
+<p>The magic word you are looking for is ApplePi</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/56057e23-a99a-4338-88a9-1fbd1a5055fe)
+
+
+
+
+
