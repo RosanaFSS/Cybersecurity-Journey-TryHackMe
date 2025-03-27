@@ -348,10 +348,6 @@ Discovered: <code>THE BANANAS ARE THE BEST!!!</code></p>
 ![image](https://github.com/user-attachments/assets/0d860316-6d69-4880-8573-9fffb22b8609)
 
 
-<BR>
-
-![image](https://github.com/user-attachments/assets/e757c81b-8ab9-44f7-aa7e-5464107e00c7)
-
 
 <p>Used <code>gobuster</code>.<br>
 Discovered <code>/princess</code>.</p>
@@ -402,8 +398,16 @@ The decoded information is <code>the magic safe is accessibel at port 31337. the
 
 ![image](https://github.com/user-attachments/assets/e60a59a4-22d4-4a39-8940-5c8a8d83ee91)
 
-<p>Used <code>ssh</code>.</p>
+<p>Used <code>ssh</code>.<br>
+ssh <code>apple-guards@land-of-ooo.com</code><br>
+password: <code>THE BANANAS ARE THE BEST!!!</code>.</p>
 
+```bash
+:~/AdventureTime# ssh apple-guards@land-of-ooo.com
+...
+apple-guards@at:~$
+
+```
 
 
 
