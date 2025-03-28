@@ -15,18 +15,19 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="h
 <br>
 
 <h2>Task 1 . Welcome to the Searchlight IMINT room</h2>
-<p>In this room we will be exploring the discipline of IMINT/GEOINT, which is short for Image intelligence and geospatial intelligence. This room is suited for those of you who are just beginning your OSINT journey or those brand new to the field of IMINT/GEOINT.
+<p>In this room we will be exploring the discipline of IMINT/GEOINT, which is short for Image intelligence and geospatial intelligence. This room is suited for those of you who are just beginning your OSINT journey or those brand new to the field of IMINT/GEOINT.<BR>
 
-This room will introduce you to several topics within IMINT, among them:
+This room will introduce you to several topics within IMINT, among them:<BR>
 
-Getting into the right mindset and how to be analytical
-Visually extracting key data points from an image or video
-Applying different tools to assist you in geolocation and answering context questions
-When you have completed this room you should be comfortable applying tools and methodologies to geolocate and answer context questions based on visual intelligence alone. This room will prepare you for harder CTF challenges in this category as well as real-world geolocation work.
+- Getting into the right mindset and how to be analytical<br>
+- Visually extracting key data points from an image or video<br>
+- Applying different tools to assist you in geolocation and answering context questions<br>
+- When you have completed this room you should be comfortable applying tools and methodologies to geolocate and answer context questions based on visual
+intelligence alone. This room will prepare you for harder CTF challenges in this category as well as real-world geolocation work.<br>
 
-Any thoughts, feedback or issues can be forwarded to me directly on the THM or OSINT Curious Discord. You'll find me there as zewen.
+Any thoughts, feedback or issues can be forwarded to me directly on the THM or OSINT Curious Discord. You'll find me there as zewen.<br>
 
-The flag format is: sl{flag}. This means that every answer needs to be submitted within the brackets, sl{your answer}. No capitalization is needed.
+The flag format is: sl{flag}. This means that every answer needs to be submitted within the brackets, sl{your answer}. No capitalization is needed.<br>
 
 If you are stuck or you want someone to discuss these challenges with, head on over to the OSINT Curious Discord server. You can also find me on Twitter if you have any questions!</p>
 
