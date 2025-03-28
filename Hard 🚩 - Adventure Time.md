@@ -984,7 +984,7 @@ gunter@at:/etc/exim4
 ```
 
 
-<p>Decided to use <code>Metasploit framework.</code></p>
+<p>Decided to use <code>Metasploit framework.</code> Did not work.</p>
 
 ![image](https://github.com/user-attachments/assets/68c5d047-b7d1-4094-befd-e48ccc012cce)
 
@@ -995,7 +995,8 @@ gunter@at:/etc/exim4
 ![image](https://github.com/user-attachments/assets/7bd27f52-079b-41d5-8338-cc97492fcca5)
 
 
-<p>Cloned a repository.</p>
+<p>Cloned a repository after dedicating some time researching.<br>
+https://raw.githubusercontent.com/AzizMea/CVE-2019-10149-privilege-escalation/master/wizard.py</p>
 
 
 ![image](https://github.com/user-attachments/assets/dc4ff159-d10f-4aa8-a84e-cf8bf7133377)
