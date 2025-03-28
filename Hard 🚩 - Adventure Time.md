@@ -1036,12 +1036,17 @@ gunter@at:/etc/exim4
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
-| March 27, 2025    | 325      |     338ᵗʰ    |        8ᵗʰ   |   524ᵗʰ     |     7ᵗʰ    |  88,606  |       631 |   59      |
+| March 27, 2025    | 325      |     338ᵗʰ    |        8ᵗʰ   |   473ʳᵈ     |     7ᵗʰ    |  88,606  |       631 |   59      |
 
 </div>
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/af0f993b-8122-45a9-9250-0c66bc5608dc"> </p>
+<p align="center"> Global All Time:  338ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6d2b5da4-5dd6-4cb4-8e62-f073f553bcba"> </p>
 
-![image](https://github.com/user-attachments/assets/6d2b5da4-5dd6-4cb4-8e62-f073f553bcba)
 
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/17d1280b-251c-4112-bf2e-817767dd6e14"> </p>
+
+
+<p align="center"> Global monthly: 473ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/31ccfa6d-dbad-4a7c-a722-836d52ad62bc"> </p>
+
+<p align="center"> Brazil monthly: 7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/fa9661cd-de26-4437-bb9b-8d120c24f2c0"> </p>
 
