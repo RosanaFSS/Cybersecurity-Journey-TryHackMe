@@ -15,9 +15,11 @@
 | | | | | | |
 |<h5>Fundamentals<br>Complete Beginner<br><br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/15dbd2c6-289a-4553-a3a4-360be5c6c8f1" style="height:130px;"/> <h6>THM-CIQLUJGLAL</h6> <img src="https://github.com/user-attachments/assets/1ba5ed82-dd1d-4ee1-bf24-dd9901805249" style="height:100px;"/> <br> [34 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/1.%20Easy%20-%20Complete%20Beginner.md) |<h5>Fundamentals<br>Intro to<br>Cyber Security<br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/71ce8452-f10f-4ff1-a041-39d8fd792270" style="height:130px;"/> <h6>THM-NTSZBUQQZS</h6> <img src="https://github.com/user-attachments/assets/bc47f681-895f-4dd6-bee8-f5dfff8f1ffd" style="height:100px;"/> <br> [8 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/2.%20Easy%20-%20Introduction%20to%20Cyber%20Security.md)|<h5>Fundamentals<br>Pre Security<br><br>✅<br>Jun, 2024</h5> <img src="https://github.com/user-attachments/assets/84208baa-b96e-4715-84d0-c50eb892f942" style="height:130px;"/> <h6>THM-X9TLJHAVDH</h6><img src="https://github.com/user-attachments/assets/6d578f28-7550-4dc9-b38c-0895082fe8b2" style="height:100px;"/> <br> [18 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/3.%20Easy%20-%20Pre%20Security.md)|<h5>Fundamentals<br>Cyber Security 101<br><br>✅<br>Oct, 2024</h5> <img src="https://github.com/user-attachments/assets/aee7cfc7-3456-4893-a315-4f96ad53a811" style="height:130px;"/> <h6>THM-SM811IJLKA</h6> <img src="https://github.com/user-attachments/assets/6bef8808-0962-4aa2-b091-071f3ab51182" style="height:100px;"/> <br> [54 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/4.%20Easy%20-%20Cyber%20Security%20101.md)| |
 
+</div>
 
+<br>
 
-<p align="center">March 25, 2025 - My yearly activity<br>
+<p align="center">March 27, 2025 - My yearly activity<br>
                  <img width="1000px" src="https://github.com/user-attachments/assets/6d2b5da4-5dd6-4cb4-8e62-f073f553bcba"/><br>
                  <img width="1000px" src="https://github.com/user-attachments/assets/b7f76fff-c02a-40aa-8ba4-177c6a496eb8"/></p>
 
