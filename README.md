@@ -19,9 +19,9 @@
 
 <br>
 
-<p align="center">March 27, 2025 - My yearly activity<br>
-                 <img width="1000px" src="https://github.com/user-attachments/assets/6d2b5da4-5dd6-4cb4-8e62-f073f553bcba"/><br>
-                 <img width="1000px" src="https://github.com/user-attachments/assets/b7f76fff-c02a-40aa-8ba4-177c6a496eb8"/></p>
+<h2 align="center"> $$\textcolor{white}{\textnormal{March 27, 2025 - My yearly activity}}$$ <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/6d2b5da4-5dd6-4cb4-8e62-f073f553bcba"/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/b7f76fff-c02a-40aa-8ba4-177c6a496eb8"/></h2>
 
 
 
