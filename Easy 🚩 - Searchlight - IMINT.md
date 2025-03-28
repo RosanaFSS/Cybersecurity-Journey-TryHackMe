@@ -157,7 +157,7 @@ Scan the image for data and remember the questions from the introduction - Do yo
 <br>
 
 > 4.3. <em>Which city is this building located in?</em><a id='4.3'></a>
->> <code><strong>sl{Richmond}</strong></code><br>
+>> <code><strong>sl{richmond}</strong></code><br>
 
 
 ![image](https://github.com/user-attachments/assets/6a8cab35-41e7-4b72-afc8-a7aaee3a34ab)
@@ -173,12 +173,12 @@ A friend of mine contacted me asking if I could help them locate a coffee shop t
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 5.1. <em>Which city is this coffee shop located in?</em>Hint: Remember the previous 'lessons'. Extract data from the text and the images and convert that to searchable information.<a id='5.1'></a>
->> <code><strong>sl{Vancouver International Airport}</strong></code><br>
+>> <code><strong>sl{blairgowrie}</strong></code><br>
 
 ![image](https://github.com/user-attachments/assets/d71c7d78-5286-4820-87a9-e51e4e334bf0)
 
 > 5.2. <em>Which street is this coffee shop located in?</em><a id='5.2'></a>
->> <code><strong>sl{Allan Street}</strong></code><br>
+>> <code><strong>sl{allan street}</strong></code><br>
 
 ![image](https://github.com/user-attachments/assets/fa869b22-94d7-49c5-ba84-e361bf537ee3)
 
@@ -200,14 +200,14 @@ A friend of mine contacted me asking if I could help them locate a coffee shop t
 
 
 > 5.5. <em>What is the surname of the owners?</em><a id='5.5'></a>
->> <code><strong>sl{Cochrane}</strong></code><br>
+>> <code><strong>sl{cochrane}</strong></code><br>
 
 ![image](https://github.com/user-attachments/assets/93692c9d-3130-430b-a050-f9a80df73849)
 
 
 <br>
 
-<h2>Task 5 . Reverse your thinking</h2>
+<h2>Task 6 . Reverse your thinking</h2>
 
 <p>...</p>
 
