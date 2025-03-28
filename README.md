@@ -23,11 +23,9 @@
 <img width="1000px" src="https://github.com/user-attachments/assets/6d2b5da4-5dd6-4cb4-8e62-f073f553bcba"/><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/b7f76fff-c02a-40aa-8ba4-177c6a496eb8"/></h2>
 
+<br>
 
-
-<h2>My Journey<a id='5'></a></h2>
-<p>Following I share the status of my journey in TryHackMe.</p>
-
+<h2 align="center"> $$\textcolor{white}{\textnormal{My Journey step-by-step}}$$</h2>
 
 <br>
 <p align="center">Highlights </p>
