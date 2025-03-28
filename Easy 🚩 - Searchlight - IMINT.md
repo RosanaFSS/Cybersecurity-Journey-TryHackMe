@@ -1,8 +1,9 @@
 
 <p align="center">March 27, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{325}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-  <img width="160px" src="https://github.com/user-attachments/assets/eed07ca3-4235-4190-9c7a-81d93c4593cf"></p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{326}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+  <img width="160px" src="https://github.com/user-attachments/assets/7a9af37b-cfd7-4fe1-92ca-3c04479abdf5"></p>
+
 
 
 <h1 align="center">
@@ -29,9 +30,198 @@ Any thoughts, feedback or issues can be forwarded to me directly on the THM or O
 
 The flag format is: sl{flag}. This means that every answer needs to be submitted within the brackets, sl{your answer}. No capitalization is needed.<br>
 
-If you are stuck or you want someone to discuss these challenges with, head on over to the OSINT Curious Discord server. You can also find me on Twitter if you have any questions!</p>
+If you are stuck or you want someone to discuss these challenges with, head on over to the OSINT Curious Discord server. You can also find me on Twitter if you have any questions!<br>
+
+The answer to the question below is: ready.</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 1.1. <em>Did you understand the flag format?</em>.<a id='1.1'></a>
+>> <code><strong>sl{ready}</strong></code><br><br>
+
+<h2>Task 2 . Your first challenge</h2>
+
+<h3>Your first geolocation challenge!</h3>
+<p>Let's introduce you to your first tool - your eyes!<br>
+
+Before we can apply a tool or a methodology for finding the location of an image, we should use our eyes to scan the image for important information. Extracting key data points from the image will allow you to apply the right tool, craft a good Google search or identify which part of the world the image might have been taken in.<br>
+
+There are 5 elements of IMINT that you should consider when looking at an image, according to Geoint expert Benjamin Strick:<br>
+
+- Context<br>
+- Foreground<br>
+- Background<br>
+- Map markings<br>
+- Trial and error<br><br>
+A geolocation challenge like this lacks one important factor, which is the context or the source of the image. In real-world cases, you usually have a context in which the image was produced or shared, usually called context clues. Most of these challenges will not have context clues but you may find clues in the titles and descriptions, or if you're stuck you can use the hint function.<br>
+
+Here are some questions you should ask yourself while looking at the upcoming challenges:<br>
+
+- Are there any obvious data in the image that reveals the location, like a street name or storefront signs?<br>
+- Can you determine the country or region of the image by, for instance, which side of the road they drive on, language or architectural characteristics that - may reveal a country or continent/region?<br>
+- Do you recognize road sign styles, nature and environmental characteristics, or popular motor vehicle brands or vehicle types?<br>
+- What is the quality of any visible infrastructure like? Is the road paved or do you see gravel roads?<br>
+- Do you see any unique landmarks, buildings, bridges, statues or mountains that can help you geolocate the image?<br><br>
+Download the attached image and answer the question below - good luck!</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 2.1. <em>What is the name of the street where this image was taken?</em>. Hint: Remember the flag format, sl{your answer}<a id='2.1'></a>
+>> <code><strong>sl{carnaby street}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/42402870-02f2-40f8-b618-28c4a8f4e32a)
+
+<br>
+
+<h2>Task 3 . Just Google it!</h2>
+
+
+<p>The last challenge wasn't really a challenge, was it?<br>
+
+Let me introduce you to your first tool, Google! If you see anything in the image that can be extracted into a keyword, phrase, a company name, telephone number or any other question you may have as a result of scanning the image up and down: GOOGLE IT!<br>
+
+Here (https://osintcurio.us/2019/12/20/google-dorks/) is a short introduction to what we call 'dorking', the art of using Google search queries to have Google return specific types of data. The next challenges will require you to do some basic Googling in order to answer the questions. You can also practice dorking by joining the Google Dorking room (https://tryhackme.com/room/googledorking).<br>
+
+When geolocating a picture finding the exact location is key, but we may need to answer other questions about the location or the image as well, usually referred to as context questions.<br>
+
+The next few challenges will ask multiple questions that you need to answer based on the information you extract from the image.</p>
+
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
-> 1.1. <em>Content of flag1 – format is tryhackme{************} Hint : Try to recursively enumerate the website.</em>.<a id='1.1'></a>
->> <code><strong>tryhackme{Th1s1sJustTh3St4rt}</strong></code><br>
+> 3.1. <em>Which city is the tube station located in?</em>. Hint: Remember the flag format, sl{your answer}<a id='3.1'></a>
+>> <code><strong>sl{London}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/826884dc-920b-4cad-8736-6bd4a1de217b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b674ce67-0826-4465-96bb-0e94b91c0138)
+
+<br>
+
+> 3.2. <em>Which tube station do these stairs lead to?</em><a id='3.2'></a>
+>> <code><strong>sl{Piccadilly Circus}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/b674ce67-0826-4465-96bb-0e94b91c0138)
+
+<br>
+
+> 3.3. <em>Which year did this station open?</em><a id='3.3'></a>
+>> <code><strong>sl{1906}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/dc3b3128-b88e-4bac-bed1-27ea7499c2b6)
+
+
+<br>
+
+> 3.4. <em>How many platforms are there in this station?</em><a id='3.4'></a>
+>> <code><strong>sl{4}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/4604ba2f-92c4-497d-b1bd-f7ae811bee67)
+
+
+
+<br>
+
+<h2>Task 4 . Keep at it!</h2>
+
+<p>Good job solving the last challenge! You were able to find the location of the image and by doing that, you could answer contextual questions about the location. This challenge will also require you to do some 'Google dorking' to answer the questions below.<br>
+
+Scan the image for data and remember the questions from the introduction - Do you see anything in the image that can be used in a search query or help you narrow down the potential location?</p>
+
+
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 4.1. <em>Which building is this photo taken in?</em><a id='4.1'></a>
+>> <code><strong>sl{Vancouver International Airport}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/89357fb6-67b4-4f0f-ba37-82d767ad2f4e)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2328c3af-ac82-46d6-a01d-a2b82e0ad336)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a0cf400a-9f3e-4904-be70-27cff81342a5)
+
+<br>
+
+> 4.2. <em>Which country is this building located in?</em><a id='4.2'></a>
+>> <code><strong>sl{Canada}</strong></code><br>
+
+<p>Discovered the answer in 4.1.</p>
+
+<br>
+
+> 4.3. <em>Which city is this building located in?</em><a id='4.3'></a>
+>> <code><strong>sl{Richmond}</strong></code><br>
+
+
+![image](https://github.com/user-attachments/assets/6a8cab35-41e7-4b72-afc8-a7aaee3a34ab)
+
+<br>
+
+<h2>Task 5 . Keep at it!</h2>
+
+<p>Now that you've started to learn some techniques I figured we could try and do some good while we hone our skills.<br>
+
+A friend of mine contacted me asking if I could help them locate a coffee shop that is supposed to serve the best lunch there is. They told me the coffee shop is somewhere in Scotland, and he sent me these two pictures. Do you think you could locate it and answer the questions below for me?</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 5.1. <em>Which city is this coffee shop located in?</em>Hint: Remember the previous 'lessons'. Extract data from the text and the images and convert that to searchable information.<a id='5.1'></a>
+>> <code><strong>sl{Vancouver International Airport}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/d71c7d78-5286-4820-87a9-e51e4e334bf0)
+
+> 5.2. <em>Which street is this coffee shop located in?</em><a id='5.2'></a>
+>> <code><strong>sl{Allan Street}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/fa869b22-94d7-49c5-ba84-e361bf537ee3)
+
+> 5.3. <em>What is their phone number?</em><a id='5.3'></a>
+>> <code><strong>sl{+447878 839128}</strong></code><br>
+
+<p>Discovered the answer in 5.2.</p>
+
+<br>
+
+
+> 5.4. <em>What is their email address?</em><a id='5.4'></a>
+>> <code><strong>sl{theweecoffeeshop@aol.com}</strong></code><br>
+
+
+![image](https://github.com/user-attachments/assets/e998301c-17b5-4660-836a-14a3c197a8d5)
+
+<br>
+
+
+> 5.5. <em>What is the surname of the owners?</em><a id='5.5'></a>
+>> <code><strong>sl{Cochrane}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/93692c9d-3130-430b-a050-f9a80df73849)
+
+
+<br>
+
+<h2>Task 5 . Reverse your thinking</h2>
+
+<p>...</p>
+
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 6.1. <em>Which restaurant was this picture taken at?</em>Hint: It has a famous nickname, which is what we're looking for.<a id='6.1'></a>
+>> <code><strong>sl{katz's deli}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/4ad7e931-8891-4fea-9fbf-139ccd0fc8be)
+
+> 6.2. <em>What is the name of the Bon Appétit editor that worked 24 hours at this restaurant?</em>Hint: It has a famous nickname, which is what we're looking for.<a id='6.2'></a>
+>> <code><strong>sl{andrew knowlton}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/dc5d8a45-8f01-4958-ba71-e42781de976d)
+
+
