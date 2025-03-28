@@ -4,14 +4,12 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{326}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
   <img width="160px" src="https://github.com/user-attachments/assets/7a9af37b-cfd7-4fe1-92ca-3c04479abdf5"></p>
 
-
-
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Searchlight - IMINT}}$$
 </h1>
 <p align="center">OSINT challenges in the imagery intelligence category. It is classified as an easy-level challenge,  and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/searchlightosint">here</a>.</p>
                                                               
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/8bacd20e-b9e6-48fd-9bb4-b107bcc553b0"> </p>
 
 <br>
 
@@ -291,9 +289,104 @@ I highly recommend watching this Ted talk by Amy Herman on visual intelligence: 
 <br>
 
 > 8.2. <em>where is this statue located?</em:Hint : the birthplace of a nation<a id='8.2'></a>
->> <code><strong>sl{lady justice}</strong></code><br>
+>> <code><strong>sl{alexandria, virginia}</strong></code><br>
 
 
 ![image](https://github.com/user-attachments/assets/44252d38-961d-432b-becc-06b998b30bc7)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/94c6fdf2-b22d-473a-af8b-348bd3ab764d)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e4582235-0988-4a60-999f-149672b9717d)
+
+<br>
+
+> 8.3. <em>What is the name of the building opposite from this statue?</em>Hint : The quality of this establishment is shown with stars<a id='8.3'></a>
+>> <code><strong>sl{The Westin Alexandria Old Town}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/c703e5bb-fb98-42b8-8b24-403b501d2762)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c6509c0c-16d5-4158-bf61-0c332b51b1f8)
+
+
+<br>
+
+<h2>Task 9 . THe view from my hotel room</h2>
+
+<p>Geolocating videos aren't much different from geolocating images. A video is just a string of images, usually played at 24 frames(or images) per second. In other words, a video will hold a whole lot more images that can be analyzed, reversed and scrutinized by you.<br>
+
+Here's a good writeup by Nixintel on a tool called FFmpeg, which will help you extract the key images from the video that you may need to solve this challenge. Download the attached video and follow Nixintel's guide!<br>
+
+You may have to apply other tools to solve this challenge as well!</p>
+
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 9.1. <em>What is the name of the hotel that my friend stayed in a few years ago?</em>Hint: There's a tool that will allow you to get the right perspective based on what you can see in the video.<a id='9.1'></a>
+>> <code><strong>sl{novotel singapore clarke quay}</strong></code><br>
+
+
+![image](https://github.com/user-attachments/assets/30b4aaad-2b91-4376-97e2-8ac47b21fe0f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/872db12c-b0c5-410b-8212-ef197efde110)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/85614207-8416-404f-9e0a-e0486793c6dd)
+
+<br>
+
+<p>Clarke Quay, Singapore</p>
+
+![image](https://github.com/user-attachments/assets/776299b2-0a3b-4eeb-98b5-4941b875b3a5)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5d698340-0956-4a67-af1e-cc5421d8a53b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1c244460-85ba-445a-b0fb-959c3a6820fc)
+
+
+<br>
+<br>
+
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/f35fc135-003d-4095-a44a-94bca5d4d122"> </p>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/cbaaa02e-b899-4c11-8b36-c9689885cbae"> </p>
+
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 28, 2025    | 326      |     336ᵗʰ    |        8ᵗʰ   |   358ᵗʰ     |     6ᵗʰ    |  89,266  |       632 |   59      |
+
+</div>
+
+<p align="center"> Global All Time:  336ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0444d7c5-5d86-40e4-a845-fd3ed0818749"> </p>
+
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a6d17ac3-38c8-4d55-a7bf-be428b0c5d5d"> </p>
+
+
+<p align="center"> Global monthly: 358ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bfcd54f8-6c63-4a95-b2bb-f88150551443"> </p>
+
+<p align="center"> Brazil monthly: 6ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/d1b15ff4-5c53-40fa-b50d-1f3353aa4b9b"> </p>
 
