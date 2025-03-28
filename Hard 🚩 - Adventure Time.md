@@ -853,7 +853,7 @@ peppermint-butler@at:~$
 <br>
 
 <p>Used <code>steghide</code>against <code>butler-1.jpg</code>.<br>
-Discovered <code></code>gunter<code> and <code>The Ice King s????</code>.</p>
+Discovered <code>gunter</code>code> and <code>The Ice King s????</code>.</p>
 
 <br>
 
