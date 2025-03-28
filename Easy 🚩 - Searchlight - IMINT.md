@@ -224,4 +224,76 @@ A friend of mine contacted me asking if I could help them locate a coffee shop t
 
 ![image](https://github.com/user-attachments/assets/dc5d8a45-8f01-4958-ba71-e42781de976d)
 
+<br>
+
+<h2>Task 7 . Locate this sculpture</h2>
+
+<p>This challenge will require you to apply some the techniques I have touched on so far: Scanning the image for visual clues, reverse image searching and Google dorking. Tools should not be your primary focus - don't underestimate how far you can get with dorking and scrolling search results.</p>
+
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 7.1. <em>What is the name of this statue?</em>Hint: "Og når det er vind og sno Blir han så kald på nesen, Så den lyser som en glo.".<a id='7.1'></a>
+>> <code><strong>sl{rudolph the chrome nosed reindeer}</strong></code><br>
+
+<p>The scukpture is located in Oslo.</p>
+
+![image](https://github.com/user-attachments/assets/7a78c515-a5ad-4926-a1a3-e20d2c0cb01a)
+
+<p>I translated the hint.</p>
+
+![image](https://github.com/user-attachments/assets/5d467fe0-5980-4000-b67b-778777d7aec5)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2fb3071f-f60e-4dc9-bbcf-5fabf46ecbdc)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c41beec0-4151-4892-8117-e344140eaf90)
+
+
+<br>
+
+> 7.2. <em>What is the name of the Bon Appétit editor that worked 24 hours at this restaurant?</em>Hint: If you know the location of the statue you may want to visitoslo.<a id='7.2'></a>
+>> <code><strong>sl{kjersti stensrud}</strong></code><br>
+
+![image](https://github.com/user-attachments/assets/30434b5a-7f95-412a-856f-85b2a574ecf8)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9e15482e-f03f-4785-b676-123218b5e7db)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/96d7901b-295c-435d-ad48-bb5869f78426)
+
+
+<br>
+
+<h2>Task 8 .... and justice for all</h2>
+
+<p>This challenge is a step up in difficulty from the previous challenges and you shouldn't expect to solve this quickly, especially if you are new to IMINT. While you can certainly apply the techniques and tools you've used to s far, this challenge may force you to revise your thinking and your approach while you're working on solving this challenge.<br>
+
+I highly recommend watching this Ted talk by Amy Herman on visual intelligence: "A lesson on looking" if you want a unique view on how you perceive visual data.</p>
+
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 8.1. <em>What is the name of the character that the statue depicts?</em>Hint: Check the title of the challenge.<a id='8.1'></a>
+>> <code><strong>sl{lady justice}</strong></code><br>
+
+
+
+![image](https://github.com/user-attachments/assets/19f24f10-46cd-44dd-a38b-9579a3accdad)
+
+<br>
+
+> 8.2. <em>where is this statue located?</em:Hint : the birthplace of a nation<a id='8.2'></a>
+>> <code><strong>sl{lady justice}</strong></code><br>
+
+
+![image](https://github.com/user-attachments/assets/44252d38-961d-432b-becc-06b998b30bc7)
+
 
