@@ -327,7 +327,7 @@ You may have to apply other tools to solve this challenge as well!</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
-> 9.1. <em>What is the name of the hotel that my friend stayed in a few years ago?</em>Hint: There's a tool that will allow you to get the right perspective based on what you can see in the video.<a id='9.1'></a>
+> 9.1. <em>What is the name of the hotel that my friend stayed in a few years ago?</em>Hint: There's a tool that will allow you to get the right perspective based on what you can see in the video.</em><a id='9.1'></a>
 >> <code><strong>sl{novotel singapore clarke quay}</strong></code><br>
 
 
