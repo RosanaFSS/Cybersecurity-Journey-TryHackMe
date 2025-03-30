@@ -56,7 +56,8 @@ The Windows Registry is a database of low-level operating systems and applicatio
 - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run - Run path when any user logs in<br>
 - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce - Run path when the current user logs in, then delete<br>
 - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce - Run path when any user logs in, then delete<br>
-To view these keys, open the Registry Editor by searching for "Regedit" on Windows Search or double-clicking on the Regedit icon pinned on the Windows taskbar.<br><br>
+
+<p>To view these keys, open the Registry Editor by searching for "Regedit" on Windows Search or double-clicking on the Regedit icon pinned on the Windows taskbar.<br>
 
 This is what the Registry Editor window looks like:</p>
 
@@ -71,7 +72,7 @@ This is what the Registry Editor window looks like:</p>
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 2.1. <em>What is the value "Name" of the suspicious registry entry that runs during startup? Include the parenthesis.</em>.<a id='2.1'></a>
->> <code><strong>Default</strong></code><br><br>
+>> <code><strong>Default</strong></code><br>
 
 ![image](https://github.com/user-attachments/assets/256d3491-4dfe-43c7-adec-996483052c03)
 
@@ -83,7 +84,7 @@ This is what the Registry Editor window looks like:</p>
 
 
 > 2.2. <em>What is the value "Data" of the suspicious registry entry that runs during startup?</em>.<a id='2.2'></a>
->> <code><strong>C:\Users\Administrator\AppData\Local\bd84\24d9.bat</strong></code><br><br>
+>> <code><strong>C:\Users\Administrator\AppData\Local\bd84\24d9.bat</strong></code><br>
 
 ![image](https://github.com/user-attachments/assets/1f987e7f-480e-458e-be0c-1bc1ce276181)
 
