@@ -4,7 +4,7 @@
 It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Registry Persistance Detection}}$$
+  $$\textcolor{#3bd62d}{\textnormal{Registry Persistence Detection}}$$
 </h1>
 <p align="center">Learn to use the AutoRuns PowerShell module to detect persistence mechanisms that use the Registry.</p>
 <p align="center">It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/registrypersistencedetection">here</a>.</p> 
