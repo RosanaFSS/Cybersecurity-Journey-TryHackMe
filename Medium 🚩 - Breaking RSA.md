@@ -1,7 +1,7 @@
 
 <p align="center">March 26, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
   <img width="160px" src="https://github.com/user-attachments/assets/e8c02e37-2847-445d-9504-728b988618bf6"></p>
 
 <h1 align="center">
@@ -9,7 +9,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{324}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Hop in and break poorly implemented RSA using Fermat's factorization algorithm. It is classified as a medium-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/breakrsa">here</a>.</p>
                                                               
-<p align="center"> <img width="900px" src="> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/939716b4-1f5e-43d9-987b-5ed4ce5a6dd3"> </p>
+
+
 
 <br>
 <br>
@@ -244,6 +246,9 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 
 <br>
 
+![image](https://github.com/user-attachments/assets/e75106bf-0312-4461-b9a8-2ee6aed6d921)
+
+
 <br>
 
 <br>
@@ -272,20 +277,36 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 <br>
 
 1.9. <em>What is the flag?</em><br><a id='1.7'></a>
->> <strong><code>________</code></strong><br>
+>> <strong><code>breakingRSAissuperfun20220809134031</code></strong><br>
 <p><br></p>
 
 
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/a274a434-88e1-4c32-a17b-b3298f3f5bcd"> </p>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/51650df1-998a-456b-b797-eef7c9f5fd49"> </p>
 
 
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 30, 2025    | 328      |     324ᵗʰ    |        8ᵗʰ   |   253ʳᵈ     |     6ᵗʰ    |  89,876  |       633 |   59      |
 
+</div>
 
+<p align="center"> Global All Time:  336ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7d3d9161-1630-46af-a743-eefd1171adc1"> </p>
 
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0357879f-bd20-4ef3-b3b7-69ba64b92521"> </p>
 
+<p align="center"> Global monthly: 253ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/d779681a-8b13-44aa-990c-d33515a4d4c8"> </p>
 
-
-
+<p align="center"> Brazil monthly: 6ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/c416b0f6-1a9e-4fd4-b473-9cb7fb5f15c5"> </p>
 
