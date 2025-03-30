@@ -118,6 +118,8 @@ Downloaded <code>id_rsa.pub</code>.<br>
 
 ![image](https://github.com/user-attachments/assets/f7149fd3-b707-40f5-94d6-38ed6de615aa)
 
+<p>Navigate to <code:http://Target_IP/development/log.txt</code> and identified <code>log.txt</code> content.</p>
+
 
 <br>
 
