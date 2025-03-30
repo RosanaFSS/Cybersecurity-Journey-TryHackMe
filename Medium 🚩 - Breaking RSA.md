@@ -246,12 +246,6 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 
 <br>
 
-
-![image](https://github.com/user-attachments/assets/66f91e45-001d-4631-a06d-51c535630765)
-
-
-https://raw.githubusercontent.com/amnigam/SharedScripts/refs/heads/main/breakingRSA/rsaBreak.py
-
 <br>
 
 1.6. <em>What is the numerical difference between p and q?</em><br><a id='1.6'></a>
@@ -267,6 +261,8 @@ https://raw.githubusercontent.com/amnigam/SharedScripts/refs/heads/main/breaking
 <p><br></p>
 
 <br>
+
+
 
 1.8. <em>Generate the private key using p and q (take e = 65537)</em><br><a id='1.7'></a>
 >> <strong><code>No answer needed</code></strong><br>
