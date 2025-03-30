@@ -96,7 +96,7 @@ This is what the Registry Editor window looks like:</p>
 
 ![image](https://github.com/user-attachments/assets/e1249e49-e75a-41e4-88ba-f51aa021eb01)
 
-
+<br>
 
 > 2.3. <em>What string is displayed on the console when the suspicious file runs?</em>.<a id='2.3'></a>
 >> <code><strong>pleaseletmepersist</strong></code><br>
@@ -114,7 +114,11 @@ This is what the Registry Editor window looks like:</p>
 
 A widely-used tool from Microsoft called AutoRuns checks all possible locations where a program can automatically run on start-up or when a user logs in. This tool does what we need, but it is not the one we'll be using for this room (If you still want to check it out, try the SysInternals room).</p>
 
-![image](https://github.com/user-attachments/assets/0d079083-0eb9-456d-9351-b8d6e16eb9b8)
+
+<p align="center">
+  <img width="160px" src="https://github.com/user-attachments/assets/0d079083-0eb9-456d-9351-b8d6e16eb9b8">
+</p>
+
 
 <p>For this room, we'll use the AutoRuns PowerShell module. It does the same thing as the original AutoRuns tool. Still, it allows us to leverage the benefits of PowerShell scripting and has a baseline feature for comparing current snapshots to previous ones. You'll see why these features are essential later on.<br>
 
@@ -128,15 +132,210 @@ The Windows machine already has the AutoRuns PowerShell module installed. To use
 
 ![image](https://github.com/user-attachments/assets/9018dbe2-6b8f-4c46-af7a-f6c713d73e68)
 
+<br>
 
+<p>https://github.com/user-attachments/assets/0d079083-0eb9-456d-9351-b8d6e16eb9b8</p>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
+> 3.1. <em>What AutoRun function is used for getting and displaying the auto-run entries?</em>.<a id='3.1'></a>
+>> <code><strong>Get-PSAutorun</strong></code><br>
+
+<br>
+
+> 3.2. <em>What AutoRun function is used for creating a baseline file from Autoruns artifact(s)?</em>.<a id='3.2'></a>
+>> <code><strong>New-AutoRunsBaseLine</strong></code><br>
+
+<br>
+
+> 3.3. <em>What AutoRun function is used for creating a baseline file from Autoruns artifact(s)?</em>.<a id='3.3'>/a>
+>> <code><strong>Compare-AutoRunsBaseLine</strong></code><br>
+
+<br>
 
 
 <h2>Task 4 . Filtering AutoRuns Entries</h2>
+<p>AutoRuns PowerShell has a function called Get-PSAutorun that will list all possible auto-start mechanisms available on the machine. It makes this list by looking at categories like the Registry, Windows services, WMI entries, DLL hijacking, and more. Because of this, the output of the command will return many results that might be challenging if not adequately filtered.</p>
+
+![image](https://github.com/user-attachments/assets/017b3c1a-181a-4ff4-aa17-8286bac08f1a)
+
+
+<p>Piping the result of the command above to the Out-GridView cmdlet can make the output more readable.</p>
+
+![image](https://github.com/user-attachments/assets/3e9b22b4-4c00-4ab2-93ff-fed2427d05ab)
+
+<br>
+
+<p>The above command will open a new window showing the following output:</p>
+
+![image](https://github.com/user-attachments/assets/0e0f4d45-0c92-4647-a277-c36ef741758b)
+
+<p><em>Note: Wait for a couple of minutes for the tool to finish populating the results</em></p>
+
+<p>The results above list all possible places a program can run on start-up. You can filter the results by specifying keywords in the "Filter" bar at the top of the window. You can also sort the results by clicking on the column headers.<br>
+
+We can specify parameter switches when calling the function to filter the result according to the previously mentioned categories. Open a new PowerShell window, and use the Get-Help command to list the available parameters.</p>
+
+![image](https://github.com/user-attachments/assets/26d38562-0344-4f7a-9556-ec7213f893d7)
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 4.1. <em>What parameter switch is used for filtering for artifacts related to boot execution of images? </em>.<a id='4.1'></a>
+>> <code><strong>BootExecute</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/970a2a60-59c0-4e21-b1e1-50f5c438a8e0)
+
+
+<br>
+
+
+> 4.2. <em>How many entries are outputted using the parameter switch from the previous question?</em>.<a id='4.2'></a>
+>> <code><strong>1</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/75e009ca-234f-4a3e-83d3-b24c2d7e4f26)
+
+<br>
+
+
+> 4.3. <em>What parameter switch is used for filtering for artifacts related to printer driver and status monitors?</em>.<a id='4.3'>/a>
+>> <code><strong>PrintMonitorDLLS</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6bd2a767-13ed-4c1e-af44-e47a504dd29b)
+
+
+<br>
+
+
+> 4.4. <em>How many entries are listed in the output using the parameter switch from the previous question?</em>.<a id='4.4'>/a>
+>> <code><strong>5</strong></code><br>
+
+<p>Discovered the answer in 4.3.</p>
+
+<br>
+
+> 4.5. <em>What parameter is used to add a new column to show whether a file is digitally signed?</em>.<a id='4.5'>/a>
+>> <code><strong>VerifyDigitalSignature</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f586d662-7039-47e2-989e-71db7b0e4fa0)
+
+<br>
+
+
+> 4.6. <em>Searching all categories, how many entries have the "Signed" column set to "false"?</em>. Hint : Specify the "VerifyDigitalSignature" parameter when calling Get-PSAutorun to get the "Signed" column.<a id='4.6'>/a>
+>> <code><strong>3</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ca1a3ab1-72a2-4a04-b9f6-1c34ec3cd3b6)
+
+<br>
+
+> 4.7. <em>Try to answer the previous question with just Powershell and without using Out-GridView.</em>.<a id='4.7'>/a>
+>> <code><strong>No answer needed</strong></code><br>
+
+<br>
 
 <h2>Task 5 . Comparing to a Baseline</h2>
 
+<p>While filtering via parameter switches helps reduce the output, there is still a lot to go through. This is where the baseline creation and comparison feature of the AutoRuns PowerShell module is helpful, as only the entries that differ from the baseline are shown in the results.<br>
+
+After creating this room's machine, a baseline file was generated and saved in the ~/Documents folder. This file serves as a snapshot of the Registry before the malware ran.</p>
+
+![image](https://github.com/user-attachments/assets/19089202-d2f8-4ab2-b114-8bffc9f69d89)
+
+
+<p>To check what Registry keys were changed, a new baseline file needs to be created using the New-AutoRunsBaseLine function.</p>
+
+![image](https://github.com/user-attachments/assets/c5605de6-1b86-4633-9f69-5362578569b9)
+
+
+
+<p><em>Note: Generating a new baseline file using the code above will take a few minutes. So please be patient.</em><br>
+When done, the new baseline file is added to the ~/Documents folder.</p>
+
+https://tryhackme-images.s3.amazonaws.com/user-uploads/5f2e7dc42867e661a3fb0afa/room-content/c061cb72d15e1890c3468c8d09a585bd.png
+
+
+<p>The two baseline files can now be compared using the following command:</p>
+
+![image](https://github.com/user-attachments/assets/abfdf3e9-06ed-4d83-8e40-d928d7cc137d)
+
+
+<p><em>Note:  Make sure there are always two baseline files in the ~/Documents folder when comparing. Delete the other files you do not need to avoid confusion.</em></p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 5.1. <em>There is another suspicious logon Registry entry. What is the full path of this key? </em>.<a id='5.1'></a>
+>> <code><strong>______________</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/8095124d-42ef-4b22-ba10-9ac0990af69b)
+
+<br>
+
+''''bash
+PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
+>> Where { -not($_.isOSbinary)} |
+>> New-AutoRunsBaseLine -Verbose
+''''
+
+![image](https://github.com/user-attachments/assets/e7fec6ef-c9a6-4b1a-a929-c97157201dd6)
+
+
+
+<br>
+
+
+> 5.2. <em>What is the value item name of the suspicious Registry entry from question #1?</em>.<a id='5.2'></a>
+>> <code><strong>_______________</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/75e009ca-234f-4a3e-83d3-b24c2d7e4f26)
+
+<br>
+
+
+> 5.3. <em>What is the value data of the suspicious Registry entry from question #1?</em>.<a id='5.3'>/a>
+>> <code><strong>____________________</strong></code><br>
+
+<br>
+
+
+
+
+<br>
+
+
+> 5.4. <em>What is the category that AutoRuns assigned to the entry from question #1?</em>.<a id='5.4'>/a>
+>> <code><strong>_______________</strong></code><br>
+
+
+
+<br>
+
+> 5.5. <em>What string is displayed on the console when the suspicious file ran?</em>.<a id='5.5'>/a>
+>> <code><strong>_______________</strong></code><br>
+
+<br>
+
+
+<br>
+
+
 
 <h2>Task 6 . Connclusion</h2>
+
+
 
