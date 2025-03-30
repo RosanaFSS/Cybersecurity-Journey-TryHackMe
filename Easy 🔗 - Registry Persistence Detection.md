@@ -431,4 +431,4 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
-<p align="center"><a href="****">tryhackme</a>, <a href="https://tryhackme.com/p/accidentalrebel">accidentalrebel</a>  and  <a href="https://tryhackme.com/p/arebel">arebel</a> for nvesting your time and effort to develop this walkthrough so that I can sharpen my skills!</p> 
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>, <a href="https://tryhackme.com/p/accidentalrebel">accidentalrebel</a>  and  <a href="https://tryhackme.com/p/arebel">arebel</a> for investing your time and effort to develop this walkthrough so that I can sharpen my skills!</p> 
