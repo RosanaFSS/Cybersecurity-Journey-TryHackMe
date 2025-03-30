@@ -34,7 +34,7 @@ This room will give you an overview of these techniques and introduce a tool tha
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
-> 1.1. <em>Read the above, start the machine, and log in.</em>.<a id='1.1'></a>
+> 1.1. <em>Read the above, start the machine, and log in.</em><a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code><br>
 
 <br>
@@ -71,7 +71,7 @@ This is what the Registry Editor window looks like:</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
-> 2.1. <em>What is the value "Name" of the suspicious registry entry that runs during startup? Include the parenthesis.</em>.<a id='2.1'></a>
+> 2.1. <em>What is the value "Name" of the suspicious registry entry that runs during startup? Include the parenthesis.</em><a id='2.1'></a>
 >> <code><strong>Default</strong></code><br>
 
 <br>
@@ -85,7 +85,7 @@ This is what the Registry Editor window looks like:</p>
 <br>
 
 
-> 2.2. <em>What is the value "Data" of the suspicious registry entry that runs during startup?</em>.<a id='2.2'></a>
+> 2.2. <em>What is the value "Data" of the suspicious registry entry that runs during startup?</em><a id='2.2'></a>
 >> <code><strong>C:\Users\Administrator\AppData\Local\bd84\24d9.bat</strong></code><br>
 
 <br>
@@ -98,7 +98,7 @@ This is what the Registry Editor window looks like:</p>
 
 <br>
 
-> 2.3. <em>What string is displayed on the console when the suspicious file runs?</em>.<a id='2.3'></a>
+> 2.3. <em>What string is displayed on the console when the suspicious file runs?</em><a id='2.3'></a>
 >> <code><strong>pleaseletmepersist</strong></code><br>
 
 <br>
