@@ -37,6 +37,8 @@ This room will give you an overview of these techniques and introduce a tool tha
 > 1.1. <em>Read the above, start the machine, and log in.</em>.<a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code><br>
 
+<br>
+
 
 <h2>Task 2 . Intro to Malware Persistance Mechanisms</h2>
 
