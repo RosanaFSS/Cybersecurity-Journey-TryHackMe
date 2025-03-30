@@ -30,7 +30,7 @@ This room will give you an overview of these techniques and introduce a tool tha
 - Connecting to the Machine<br>
 
 <p>We will use the Virtual Machine provided to complete the tasks in this room. You can start it in split-screen view by clicking on the green "Start Machine" button on the upper right section of this task. If the VM is not visible, use the blue "Show Split View" button at the top-right of the page. Alternatively, you can connect to</p>
-<p>[ Credentials provided by TryHackMe</p>
+<p>[ Credentials provided by TryHackMe ]</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
@@ -74,6 +74,8 @@ This is what the Registry Editor window looks like:</p>
 > 2.1. <em>What is the value "Name" of the suspicious registry entry that runs during startup? Include the parenthesis.</em>.<a id='2.1'></a>
 >> <code><strong>Default</strong></code><br>
 
+<br>
+
 ![image](https://github.com/user-attachments/assets/256d3491-4dfe-43c7-adec-996483052c03)
 
 <br>
@@ -86,6 +88,8 @@ This is what the Registry Editor window looks like:</p>
 > 2.2. <em>What is the value "Data" of the suspicious registry entry that runs during startup?</em>.<a id='2.2'></a>
 >> <code><strong>C:\Users\Administrator\AppData\Local\bd84\24d9.bat</strong></code><br>
 
+<br>
+
 ![image](https://github.com/user-attachments/assets/1f987e7f-480e-458e-be0c-1bc1ce276181)
 
 <br>
@@ -95,7 +99,9 @@ This is what the Registry Editor window looks like:</p>
 
 
 > 2.3. <em>What string is displayed on the console when the suspicious file runs?</em>.<a id='2.3'></a>
->> <code><strong>pleaseletmepersist</strong></code><br><br>
+>> <code><strong>pleaseletmepersist</strong></code><br>
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/c8ef8c75-2217-49d9-9423-f0b5947312aa)
 
