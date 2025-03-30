@@ -184,7 +184,8 @@ ftp> exit
 <h2 align="center">$$\textcolor{white}{\textnormal{Service Enumeration - Wordpress}}$$</h2>
 
 <br>
-<p align="center">Used <code>wpscan</code>. Discovered <code>elyana</code>.</p>
+<p align="center">Used <code>wpscan</code>. Discovered <code>elyana</code>.<br>
+To update <code>wpscan</code> use <code>gem update wpscan </code>.</p>
 
 ```bash
 ~/Allin1# wpscan --url http://10.10.227.146/wordpress -e u
