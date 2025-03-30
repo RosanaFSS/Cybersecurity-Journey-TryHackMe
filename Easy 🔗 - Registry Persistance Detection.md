@@ -134,13 +134,10 @@ The Windows machine already has the AutoRuns PowerShell module installed. To use
 
 <br>
 
-<p>You can also check out the tool's ReadMe page for more information.</p>
-
+<p>You can also check out the tool's ReadMe page for more information.<br>
+https://github.com/user-attachments/assets/0d079083-0eb9-456d-9351-b8d6e16eb9b8</p>
 
 <br>
-
-<p>https://github.com/user-attachments/assets/0d079083-0eb9-456d-9351-b8d6e16eb9b8</p>
-
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 3.1. <em>What AutoRun function is used for getting and displaying the auto-run entries?</em>.<a id='3.1'></a>
