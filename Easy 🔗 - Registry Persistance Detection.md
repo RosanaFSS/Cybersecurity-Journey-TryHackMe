@@ -184,7 +184,7 @@ We can specify parameter switches when calling the function to filter the result
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
-> 4.1. <em>What parameter switch is used for filtering for artifacts related to boot execution of images? </em>.<a id='4.1'></a>
+> 4.1. <em>What parameter switch is used for filtering for artifacts related to boot execution of images? </em><a id='4.1'></a>
 >> <code><strong>BootExecute</strong></code><br>
 
 <br>
@@ -195,7 +195,7 @@ We can specify parameter switches when calling the function to filter the result
 <br>
 
 
-> 4.2. <em>How many entries are outputted using the parameter switch from the previous question?</em>.<a id='4.2'></a>
+> 4.2. <em>How many entries are outputted using the parameter switch from the previous question?</em><a id='4.2'></a>
 >> <code><strong>1</strong></code><br>
 
 <br>
@@ -205,7 +205,7 @@ We can specify parameter switches when calling the function to filter the result
 <br>
 
 
-> 4.3. <em>What parameter switch is used for filtering for artifacts related to printer driver and status monitors?</em>.<a id='4.3'></a>
+> 4.3. <em>What parameter switch is used for filtering for artifacts related to printer driver and status monitors?</em><a id='4.3'></a>
 >> <code><strong>PrintMonitorDLLS</strong></code><br>
 
 <br>
@@ -216,14 +216,14 @@ We can specify parameter switches when calling the function to filter the result
 <br>
 
 
-> 4.4. <em>How many entries are listed in the output using the parameter switch from the previous question?</em>.<a id='4.4'></a>
+> 4.4. <em>How many entries are listed in the output using the parameter switch from the previous question?</em><a id='4.4'></a>
 >> <code><strong>5</strong></code><br>
 
 <p>Discovered the answer in 4.3.</p>
 
 <br>
 
-> 4.5. <em>What parameter is used to add a new column to show whether a file is digitally signed?</em>.<a id='4.5'></a>
+> 4.5. <em>What parameter is used to add a new column to show whether a file is digitally signed?</em><a id='4.5'></a>
 >> <code><strong>VerifyDigitalSignature</strong></code><br>
 
 <br>
@@ -242,7 +242,7 @@ We can specify parameter switches when calling the function to filter the result
 
 <br>
 
-> 4.7. <em>Try to answer the previous question with just Powershell and without using Out-GridView.</em>.<a id='4.7'></a>
+> 4.7. <em>Try to answer the previous question with just Powershell and without using Out-GridView.</em><a id='4.7'></a>
 >> <code><strong>No answer needed</strong></code><br>
 
 <br>
@@ -278,7 +278,7 @@ When done, the new baseline file is added to the ~/Documents folder.</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
-> 5.1. <em>There is another suspicious logon Registry entry. What is the full path of this key? </em>.<a id='5.1'></a>
+> 5.1. <em>There is another suspicious logon Registry entry. What is the full path of this key? </em><a id='5.1'></a>
 >> <code><strong>______________</strong></code><br>
 
 <br>
@@ -302,7 +302,7 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 <br>
 
 
-> 5.2. <em>What is the value item name of the suspicious Registry entry from question #1?</em>.<a id='5.2'></a>
+> 5.2. <em>What is the value item name of the suspicious Registry entry from question #1?</em><a id='5.2'></a>
 >> <code><strong>_______________</strong></code><br>
 
 <br>
@@ -312,7 +312,7 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 <br>
 
 
-> 5.3. <em>What is the value data of the suspicious Registry entry from question #1?</em>.<a id='5.3'>/a>
+> 5.3. <em>What is the value data of the suspicious Registry entry from question #1?</em><a id='5.3'>/a>
 >> <code><strong>____________________</strong></code><br>
 
 <br>
@@ -323,14 +323,14 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 <br>
 
 
-> 5.4. <em>What is the category that AutoRuns assigned to the entry from question #1?</em>.<a id='5.4'>/a>
+> 5.4. <em>What is the category that AutoRuns assigned to the entry from question #1?</em><a id='5.4'>/a>
 >> <code><strong>_______________</strong></code><br>
 
 
 
 <br>
 
-> 5.5. <em>What string is displayed on the console when the suspicious file ran?</em>.<a id='5.5'>/a>
+> 5.5. <em>What string is displayed on the console when the suspicious file ran?</em><a id='5.5'>/a>
 >> <code><strong>_______________</strong></code><br>
 
 <br>
