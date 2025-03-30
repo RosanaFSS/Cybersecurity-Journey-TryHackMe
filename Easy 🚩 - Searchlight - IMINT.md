@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{326}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Searchlight - IMINT}}$$
 </h1>
-<p align="center">OSINT challenges in the imagery intelligence category. It is classified as an easy-level challenge,  and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/searchlightosint">here</a>.</p>
+<p align="center">OSINT challenges in the imagery intelligence category. It is classified as an easy-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/searchlightosint">here</a>.</p>
                                                               
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/8bacd20e-b9e6-48fd-9bb4-b107bcc553b0"> </p>
 
