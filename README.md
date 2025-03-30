@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{TryHackMe}}$$ </h1>
-<h4 align="center">March 28, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
+<h4 align="center">March 30, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
 <h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
 
 <div align="center">
@@ -19,11 +19,13 @@
 
 <br>
 
-<h2 align="center"> $$\textcolor{white}{\textnormal{March 28, 2025 - My yearly activity}}$$ <br>
-<img width="1000px" src="https://github.com/user-attachments/assets/0444d7c5-5d86-40e4-a845-fd3ed0818749"/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/b7f76fff-c02a-40aa-8ba4-177c6a496eb8"/></h2>
+<h2 align="center"> $$\textcolor{white}{\textnormal{March 30, 2025 - My yearly activity}}$$ <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/7fae21da-fec3-408e-a032-415b37a143049"/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/fec94ac6-f1a8-4a19-bd28-d7003d29e62d"/></h2>
 
 <br>
+
+
 
 <h2 align="center"> $$\textcolor{white}{\textnormal{My Journey step-by-step}}$$</h2>
 
@@ -67,7 +69,8 @@
 |Date               |Streak    |All Time      |All Time      |Monthly       |Monthly       |Points    | Rooms     |
 |:------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
 |                   |          |Global        |Brazil        |Global        | Brazil       |          | Completed |
-| March 28, 2025    | 325      |        336ᵗʰ |          8ᵗʰ |        358ᵗʰ |          6ᵗʰ | 89,266   |       631 |
+| March 30, 2025    | 328      |        324ᵗʰ |          8ᵗʰ |        253ʳᵈ |          6ᵗʰ | 89,876   |       633 | 
+| March 28, 2025    | 326      |        336ᵗʰ |          8ᵗʰ |        358ᵗʰ |          6ᵗʰ | 89,266   |       631 |
 | March 27, 2025    | 325      |        338ᵗʰ |          8ᵗʰ |        473ʳᵈ |          7ᵗʰ | 88,606   |       631 |
 | March 25, 2025    | 323      |        341ˢᵗ |          8ᵗʰ |        560ᵗʰ |          7ᵗʰ | 88,066   |       627 |
 | March 24, 2025    | 322      |        342ⁿᵈ |          8ᵗʰ |        689ᵗʰ |          7ᵗʰ | 87,954   |       626 |
