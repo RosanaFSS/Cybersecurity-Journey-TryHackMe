@@ -22,7 +22,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 
 This room will give you an overview of these techniques and introduce a tool that can help detect them and aid in removal.</p>
 
-<h3>Learning Objectives</h3>h3>
+<h3>Learning Objectives</h3>
 
 - Learn how malware persists in a machine<br>
 - Learn how malware uses the Registry as a persistence mechanism<br>
@@ -35,7 +35,7 @@ This room will give you an overview of these techniques and introduce a tool tha
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 > 1.1. <em>Read the above, start the machine, and log in.</em>.<a id='1.1'></a>
->> <code><strong>No answer needed</strong></code><br><br>
+>> <code><strong>No answer needed</strong></code><br>
 
 
 <h2>Task 2 . Intro to Malware Persistance Mechanisms</h2>
