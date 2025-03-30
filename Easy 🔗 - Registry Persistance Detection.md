@@ -283,10 +283,6 @@ When done, the new baseline file is added to the ~/Documents folder.</p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/8095124d-42ef-4b22-ba10-9ac0990af69b)
-
-<br>
-
 ```bash
 PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 >> Where { -not($_.isOSbinary)} |
@@ -297,10 +293,33 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 
 ![image](https://github.com/user-attachments/assets/e7fec6ef-c9a6-4b1a-a929-c97157201dd6)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/afaf1d2d-98ce-4834-a7ef-089f84c32a98)
 
 
 <br>
 
+
+
+![image](https://github.com/user-attachments/assets/8095124d-42ef-4b22-ba10-9ac0990af69b)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/caeb9910-f2b0-4592-bf4c-2438d026ef08)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/212d9680-9031-4cf4-b868-950f0b068ca8)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/83dd6957-975d-4115-81a9-5cb866ee24af)
+
+
+<br>
 
 > 5.2. <em>What is the value item name of the suspicious Registry entry from question #1?</em><a id='5.2'></a>
 >> <code><strong>_______________</strong></code><br>
