@@ -136,6 +136,11 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code> to determine the lenght in bits of
 
 <p>It is important that you have installed <code>istall python3-gmp2</code>...</p>
 
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3a419da0-e15c-4c44-ad02-d7247e4722c5)
+
 ```bash
 #!/usr/bin/env python3
 from Crypto.PublicKey import RSA
@@ -152,10 +157,15 @@ print(f"e = {e}")
 
 ```
 
+
+> 1.5. <em>Factorize n into prime numbers p and q</em><br><a id='1.5'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
 <p align="left">Ran the script below.</p>
 
 ```bash
-mport gmpy2
+import gmpy2
 
 from Crypto.PublicKey import RSA
 
@@ -234,79 +244,8 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 
 <br>
 
-![image](https://github.com/user-attachments/assets/3a419da0-e15c-4c44-ad02-d7247e4722c5)
-
-
-
 <br>
 
-> 1.5. <em>Factorize n into prime numbers p and q</em><br><a id='1.5'></a>
->> <strong><code>No answer needed</code></strong><br>
-<p></p>
-
-<p align="left">Ran the script below which I named <code>factorize.py</code>.</p>
-
-```bash
-#!/usr/bin/env python3
-
-from Crypto.PublicKey import RSA
-
-from gmpy2 import isqrt, invert, lcm
-
-def factorize(n):
-    # since even nos. are always divisible by 2, one of the factors will
-    # always be 2
-    if (n & 1) == 0:
-        return (n/2, 2)
-
-    # isqrt returns the integer square root of n
-    a = isqrt(n)
-
-    # if n is a perfect square the factors will be ( sqrt(n), sqrt(n) )
-    if a * a == n:
-        return a, a
-
-    while True:
-        a = a + 1
-        bsq = a * a - n
-        b = isqrt(bsq)
-        p = a + b
-        q = a - b
-        if b * b == bsq:
-            break
-    return p, q
-
-def get_private_key(e, p, q):
-    aux = (p - 1) * (q - 1)
-    d = invert(e, aux)
-    return d
-
-with open("id_rsa.pub", "r") as f:
-    key = RSA.importKey(f.read())
-
-n = key.n
-e = 65537
-last = str(n)[-10:]
-
-p, q = factorize(n)
-
-d = get_private_key(e, p, q)
-
-key_params = (n, e, d, p, q)
-key = RSA.construct((n,e,int(d)))
-
-with open("id_rsa","wb") as f:
-    f.write(key.export_key("PEM"))
-
-print(f"----------- Analyzing the Public-Private Key Pair\n\n")
-print(f"Modulus (n) =  {n}\n\n")
-print(f"Public Exponent (e) =  {e}\n\n")
-print(f"The last 10 digits of n =    {last}\n\n")
-print(f"The difference between p and q is: {p - q}\n\n")
-print(f"The Private Key is {key}\n\n")
-
-
-```
 
 ![image](https://github.com/user-attachments/assets/66f91e45-001d-4631-a06d-51c535630765)
 
@@ -318,6 +257,8 @@ https://raw.githubusercontent.com/amnigam/SharedScripts/refs/heads/main/breaking
 1.6. <em>What is the numerical difference between p and q?</em><br><a id='1.6'></a>
 >> <strong><code>1502</code></strong><br>
 <p><br></p>
+
+<P>Discovered the answer in 1.5.</P>
 
 <br>
 
