@@ -263,7 +263,8 @@ After creating this room's machine, a baseline file was generated and saved in t
 <p><em>Note: Generating a new baseline file using the code above will take a few minutes. So please be patient.</em><br>
 When done, the new baseline file is added to the ~/Documents folder.</p>
 
-https://tryhackme-images.s3.amazonaws.com/user-uploads/5f2e7dc42867e661a3fb0afa/room-content/c061cb72d15e1890c3468c8d09a585bd.png
+![image](https://github.com/user-attachments/assets/5202f5b7-0b83-4022-88c0-39081bc3993c)
+
 
 
 <p>The two baseline files can now be compared using the following command:</p>
