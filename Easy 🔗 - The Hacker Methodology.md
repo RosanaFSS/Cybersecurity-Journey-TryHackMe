@@ -21,7 +21,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 <p>While you might think that a hacker does whatever he/she wants, it is actually true that professional hackers/penetration tester generally follow an established process to understand and exploit their targets. This ensures that there is consistency between how assessments are performed throughout the industry, and is the methodology that drives assessments.<br>
 
 
-<h3>The Process that pentesters follow is summarized in the following steps:</h3>h3>
+<h3>The Process that pentesters follow is summarized in the following steps:</h3>
 
 - Reconnaissance<br>
 - Enumeration/Scanning<br>
