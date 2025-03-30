@@ -130,7 +130,12 @@ The Windows machine already has the AutoRuns PowerShell module installed. To use
 
 <p>To learn more about each AutoRuns command, we can use the Get-help cmdlet along with each AutoRun command name as shown below:</p>
 
-![image](https://github.com/user-attachments/assets/9018dbe2-6b8f-4c46-af7a-f6c713d73e68)
+![image](https://github.com/user-attachments/assets/0f612d1a-5da7-4dec-ab30-c44b449898c9)
+
+<br>
+
+<p>You can also check out the tool's ReadMe page for more information.</p>
+
 
 <br>
 
