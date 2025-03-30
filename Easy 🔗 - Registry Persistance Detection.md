@@ -279,7 +279,7 @@ When done, the new baseline file is added to the ~/Documents folder.</p>
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 5.1. <em>There is another suspicious logon Registry entry. What is the full path of this key? </em><a id='5.1'></a>
->> <code><strong>______________</strong></code><br>
+>> <code><strong>HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon</strong></code><br>
 
 <br>
 
@@ -326,7 +326,7 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 
 <br>
 
-![image](https://github.com/user-attachments/assets/75e009ca-234f-4a3e-83d3-b24c2d7e4f26)
+
 
 <br>
 
