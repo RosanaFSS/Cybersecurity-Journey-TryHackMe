@@ -262,7 +262,7 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 <br>
 
 1.7. <em>Generate the private key using p and q (take e = 65537)</em><br><a id='1.7'></a>
->> <strong><code>No answer needed_______</code></strong><br>
+>> <strong><code>No answer needed</code></strong><br>
 <p><br></p>
 
 <br>
@@ -284,7 +284,7 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="180 points"> </p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/51650df1-998a-456b-b797-eef7c9f5fd49"> </p>
 
