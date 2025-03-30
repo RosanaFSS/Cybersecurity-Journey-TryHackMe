@@ -137,34 +137,99 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code> to determine the lenght in bits of
 <p>It is important that you have installed <code>istall python3-gmp2</code>...</p>
 
 ```bash
-:~/BreakingRSA#>>>from Crypto.PublicKey import RSA
->>>f = open("id_rsa.pub", "r")
->>>key = RSA.importKey(f.read())
->>>print key.n #displays n
->>>print key.e #displays e
-...
-
-```
-
-<p align="left">Ran the script below.</p>
-
-```bash
 #!/usr/bin/env python3
-
 from Crypto.PublicKey import RSA
-
 f = open("id_rsa.pub", "r")
 
 key = RSA.importKey(f.read())
 
 n = key.n
 e = key.e
-last = str(n)[-10:]
 
-print(f"----------- Analyzing the Public-Private Key Pair\n\n")
-print(f"n =  {n}\n\n")
-print(f"The last 10 digits of n =    {last}\n\n")
-print(f"e =  {e}\n\n") 
+print(f"n = {n}")
+print(f"e = {e}")
+
+
+```
+
+<p align="left">Ran the script below.</p>
+
+```bash
+mport gmpy2
+
+from Crypto.PublicKey import RSA
+
+def fermat_factorization(n):
+    """Fermat's Factorization Method"""
+    a = gmpy2.isqrt(n) + 1
+    b2 = gmpy2.square(a) - n
+    while not gmpy2.is_square(b2):
+        a += 1
+        b2 = gmpy2.square(a) - n
+    p = a + gmpy2.isqrt(b2)
+    q = a - gmpy2.isqrt(b2)
+    return p, q
+
+
+def calculate_private_key(p, q, e):
+    """Calculate the private key 'd'"""
+    phi = (p - 1) * (q - 1)
+    d = gmpy2.invert(e, phi)
+    return d
+
+
+# Open the RSA key file
+with open("id_rsa.pub", "r") as f:
+    # Import the RSA key
+    key = RSA.importKey(f.read())
+
+
+# Retrieve the modulus (n) and public exponent (e)
+n = key.n
+e = key.e
+
+# Print the modulus and public exponent
+print(f"Modulus (n): {n}")
+print(f"Public Exponent (e): {e}")
+
+# Factorize n into p and q using Fermat's Factorization
+p, q = fermat_factorization(n)
+
+# Calculate private key 'd' using p, q, and public exponent 'e'
+n = key.n
+e = key.e
+
+# Print the modulus and public exponent
+print(f"Modulus (n): {n}")
+print(f"Public Exponent (e): {e}")
+
+# Factorize n into p and q using Fermat's Factorization
+p, q = fermat_factorization(n)
+
+# Calculate private key 'd' using p, q, and public exponent 'e'
+d = calculate_private_key(p, q, e)
+difference = abs(p - q)
+print(f"p : {p}")
+print(f"q : {q}")
+print(f"Dference between q and p: {difference}")
+print(f"Private Key (d): {d}")
+
+
+
+key_params = (n, e, d, p, q)
+
+key = RSA.construct((n,e,int(d)))
+
+
+
+# Export the private key to a file
+
+with open('id_rsa', 'wb') as f:
+    f.write(key.export_key('PEM'))
+
+
+
+print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 ```
 
 <br>
