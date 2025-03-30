@@ -284,11 +284,13 @@ https://tryhackme-images.s3.amazonaws.com/user-uploads/5f2e7dc42867e661a3fb0afa/
 
 <br>
 
-''''bash
+```bash
 PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 >> Where { -not($_.isOSbinary)} |
 >> New-AutoRunsBaseLine -Verbose
-''''
+```
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/e7fec6ef-c9a6-4b1a-a929-c97157201dd6)
 
