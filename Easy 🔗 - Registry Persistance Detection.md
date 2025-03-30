@@ -205,7 +205,7 @@ We can specify parameter switches when calling the function to filter the result
 <br>
 
 
-> 4.3. <em>What parameter switch is used for filtering for artifacts related to printer driver and status monitors?</em>.<a id='4.3'>/a>
+> 4.3. <em>What parameter switch is used for filtering for artifacts related to printer driver and status monitors?</em>.<a id='4.3'></a>
 >> <code><strong>PrintMonitorDLLS</strong></code><br>
 
 <br>
@@ -216,14 +216,14 @@ We can specify parameter switches when calling the function to filter the result
 <br>
 
 
-> 4.4. <em>How many entries are listed in the output using the parameter switch from the previous question?</em>.<a id='4.4'>/a>
+> 4.4. <em>How many entries are listed in the output using the parameter switch from the previous question?</em>.<a id='4.4'></a>
 >> <code><strong>5</strong></code><br>
 
 <p>Discovered the answer in 4.3.</p>
 
 <br>
 
-> 4.5. <em>What parameter is used to add a new column to show whether a file is digitally signed?</em>.<a id='4.5'>/a>
+> 4.5. <em>What parameter is used to add a new column to show whether a file is digitally signed?</em>.<a id='4.5'></a>
 >> <code><strong>VerifyDigitalSignature</strong></code><br>
 
 <br>
@@ -233,7 +233,7 @@ We can specify parameter switches when calling the function to filter the result
 <br>
 
 
-> 4.6. <em>Searching all categories, how many entries have the "Signed" column set to "false"?</em>. Hint : Specify the "VerifyDigitalSignature" parameter when calling Get-PSAutorun to get the "Signed" column.<a id='4.6'>/a>
+> 4.6. <em>Searching all categories, how many entries have the "Signed" column set to "false"?</em>. Hint : Specify the "VerifyDigitalSignature" parameter when calling Get-PSAutorun to get the "Signed" column</em>.<a id='4.6'></a>
 >> <code><strong>3</strong></code><br>
 
 <br>
@@ -242,7 +242,7 @@ We can specify parameter switches when calling the function to filter the result
 
 <br>
 
-> 4.7. <em>Try to answer the previous question with just Powershell and without using Out-GridView.</em>.<a id='4.7'>/a>
+> 4.7. <em>Try to answer the previous question with just Powershell and without using Out-GridView.</em>.<a id='4.7'></a>
 >> <code><strong>No answer needed</strong></code><br>
 
 <br>
