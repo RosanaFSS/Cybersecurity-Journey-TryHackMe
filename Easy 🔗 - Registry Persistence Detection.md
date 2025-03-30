@@ -424,11 +424,9 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 
 <br>
 
-<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
 
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-
-<p>Follow me on Medium, GitHub, LinkedIN for more about cloud computing and cybersecurity.</p>
 
 <br>
 
