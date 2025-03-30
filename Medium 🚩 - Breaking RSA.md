@@ -2,7 +2,7 @@
 <p align="center">March 26, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-  <img width="160px" src="https://github.com/user-attachments/assets/e8c02e37-2847-445d-9504-728b988618bf6"></p>
+  <img width="160px" src="https://github.com/user-attachments/assets/a274a434-88e1-4c32-a17b-b3298f3f5bcd"></p>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Breaking RSA}}$$
@@ -284,7 +284,7 @@ print("\033[92mPrivate key generated and saved as 'id_rsa'.\033[0m")
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/a274a434-88e1-4c32-a17b-b3298f3f5bcd"> </p>
+<p align="center"> <img width="900px" src=""> </p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/51650df1-998a-456b-b797-eef7c9f5fd49"> </p>
 
