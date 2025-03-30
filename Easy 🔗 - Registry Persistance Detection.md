@@ -10,7 +10,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 <p align="center">It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/registrypersistencedetection">here</a>.</p> 
                                                               
 <p align="center">
-  <img width="900px" src="">
+  <img width="900px" src="https://github.com/user-attachments/assets/c2e8ce45-2d85-4128-a9e3-3c62f79e30e3">
 </p>
 
 
@@ -312,54 +312,125 @@ PS C:\Users\Administrator> Get-PsAutorun -VerifyDigitalSignature |
 
 <br>
 
-![image](https://github.com/user-attachments/assets/212d9680-9031-4cf4-b868-950f0b068ca8)
+
+![image](https://github.com/user-attachments/assets/83dd6957-975d-4115-81a9-5cb866ee24af)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/83dd6957-975d-4115-81a9-5cb866ee24af)
+![image](https://github.com/user-attachments/assets/212d9680-9031-4cf4-b868-950f0b068ca8)
+
+<br>
 
 
 <br>
 
 > 5.2. <em>What is the value item name of the suspicious Registry entry from question #1?</em><a id='5.2'></a>
->> <code><strong>_______________</strong></code><br>
+>> <code><strong>Userinit</strong></code><br>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/91773abb-203c-4aed-b376-bc7e82b35d5b)
 
 
 <br>
 
 
 > 5.3. <em>What is the value data of the suspicious Registry entry from question #1?</em><a id='5.3'>/a>
->> <code><strong>____________________</strong></code><br>
+>> <code><strong>C:\Windows\system32\userinit.exe,C:\Users\Administrator\AppData\Local\THM\789a.bat</strong></code><br>
 
 <br>
 
-
+![image](https://github.com/user-attachments/assets/c257ae30-6c49-4af6-9884-1cb96f41238a)
 
 
 <br>
 
 
 > 5.4. <em>What is the category that AutoRuns assigned to the entry from question #1?</em><a id='5.4'>/a>
->> <code><strong>_______________</strong></code><br>
+>> <code><strong>Logon</strong></code><br>
 
+<br>
+
+![image](https://github.com/user-attachments/assets/1918877c-921c-4d53-b6a1-5246dcb6605e)
 
 
 <br>
 
 > 5.5. <em>What string is displayed on the console when the suspicious file ran?</em><a id='5.5'>/a>
->> <code><strong>_______________</strong></code><br>
+>> <code><strong>letmestaymyfriend</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d98bc4b0-ecb1-43c5-b796-f0ac59751fa9)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/66fb20dd-9b3b-476c-9c8b-6b668afaf504)
 
 <br>
 
 
+<h2>Task 6 . Conclusion</h2>
+
+<p>We can now take the necessary steps to remove the malicious registry keys and files we found. In this case, it is as easy as deleting or modifying the entries via "RegEdit" and ensuring they are gone after a reboot.</p>
+
 <br>
 
+![image](https://github.com/user-attachments/assets/a01f5eaf-cef6-4d19-9cb3-b5dbba2be6e2)
 
 
-<h2>Task 6 . Connclusion</h2>
+<br>
+
+<p>Hopefully, this room has given you an idea of how malware uses the Windows Registry to maintain persistence on a target machine. While there are other techniques that malware uses, the same tool can be used in detecting most of them.</p>
 
 
+<br>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 6.1. <em>Congratulations! You have cleaned your machine of persistence mechanisms... for now.</em><a id='6.1'></a>
+>> <code><strong>No answer needed</strong></code><br>
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/d6e9e7c9-4fd5-4fbf-b9f2-8e235ccb7329"> </p>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/3deb8e08-e896-4f44-b71d-1b7e07d4ed3b"> </p>
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 30, 2025    | 328      |     323ʳᵈ    |        8ᵗʰ   |   261ˢᵗ     |     6ᵗʰ    |  90,108  |       635 |   59      |
+
+</div>
+
+<p align="center"> Global All Time: 323ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/99e38b8f-f74d-4bad-83a7-6a1e4c3f939f"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/af20bd73-7958-459a-b961-7bb2c251ebad"> </p>
+
+<p align="center"> Global monthly: 261ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/10f35276-a67a-4341-be9a-7042c6d8d9e8"> </p>
+
+<p align="center"> Brazil monthly: 6ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4eb60ef6-8e83-41df-b21d-fa07985fd684"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<p>Follow me on Medium, GitHub, LinkedIN for more about cloud computing and cybersecurity.</p>
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="****">tryhackme</a>, <a href="https://tryhackme.com/p/accidentalrebel">accidentalrebel</a>  and  <a href="https://tryhackme.com/p/arebel">arebel</a> for nvesting your time and effort to develop this walkthrough so that I can sharpen my skills!</p> 
