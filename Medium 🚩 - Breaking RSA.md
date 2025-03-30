@@ -124,7 +124,7 @@ Downloaded <code>id_rsa.pub</code>.<br>
 <br>
 
 Visualized the content of <code>id_rsa</code> using <code>cat</code>.<br>
-Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
+Used <code>ssh-keygen -l -f id_rsa.pub</code> to determine the lenght in bits of the Public Key. .<br>
 
 ![image](https://github.com/user-attachments/assets/c36ee36e-021b-4c97-8384-ad9ff2c4f868)
 
@@ -134,12 +134,14 @@ Used <code>ssh-keygen -l -f id_rsa.pub</code>.<br>
 >> <strong><code>1225222383</code></strong><br>
 <p></p>
 
-<p>It is important that you have installed ...</p>
+<p>It is important that you have installed <code>istall python3-gmp2</code>...</p>
 
 ```bash
-:~/BreakingRSA# pip install pycryptodome
-...
-:~/BreakingRSA# sudo apt install python3-gmpy2
+:~/BreakingRSA#>>>from Crypto.PublicKey import RSA
+>>>f = open("id_rsa.pub", "r")
+>>>key = RSA.importKey(f.read())
+>>>print key.n #displays n
+>>>print key.e #displays e
 ...
 
 ```
