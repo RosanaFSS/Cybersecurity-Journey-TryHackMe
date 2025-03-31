@@ -13,6 +13,12 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 <br>
 <br>
 
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Read my complete walkthrough in Medium}}$$</h1>
+<h3 align="center"> Click here ➡️  <a href="">Weasel </a> : TryHackMe Walkthrough - Privilege Escalation, 60 points</h3>
+
+<br>
+<br>
+
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/980c7651-48cc-4c94-ba45-dcecfdd63bf6"> </p>
