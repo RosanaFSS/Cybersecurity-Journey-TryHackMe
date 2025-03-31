@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Weasel}}$$</h1>
-<p align="center">Practice smbclient, crackmapexec, smbmap, ssh, chmod, nmap, powershell, sudo, mount, file, whoami, uname, pwd, cat, nano, ls, cp and  mv.<br>I think the data science team has been a bit fast and loose with their project resources. It is classified as a medium-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/weasel">here</a>.</p>
+<p align="center">Practice smbclient, crackmapexec, smbmap, ssh, chmod, nmap, powershell, sudo, mount, file, whoami, uname, pwd, cat, nano, ls, cp and  mv.<br>I think the data science team has been a bit fast and loose with their project resources.<br> It is classified as a medium-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. <br>Can be accessed clicking <a href="https://tryhackme.com/room/weasel">here</a>.</p>
                                                               
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/2deeaff2-2912-4d73-876c-66cf547bf0a9"> </p>
 
