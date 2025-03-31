@@ -12,7 +12,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 
 <br>
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Click ➡️  <a href="">here</a> to read my complete walkthrough in Medium.}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Click <a href=" ">here</a> to read my complete walkthrough in Medium.}}$$</h1>
 
 <br>
 
