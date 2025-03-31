@@ -11,12 +11,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/2deeaff2-2912-4d73-876c-66cf547bf0a9"> </p>
 
 <br>
-<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Read my complete walkthrough in Medium}}$$</h1>
 <h3 align="center"> Click here ➡️  <a href="">Weasel </a> : TryHackMe Walkthrough - Privilege Escalation, 60 points</h3>
 
-<br>
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
@@ -25,10 +23,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/8b028cf7-f6df-440b-ac5b-e061cb67eebb"> </p>
 
+<br>
 
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
-</h1>
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
 <div align="center">
 
