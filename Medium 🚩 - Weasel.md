@@ -11,8 +11,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/2deeaff2-2912-4d73-876c-66cf547bf0a9"> </p>
 
 <br>
-
-<p align="center">Click <a href=" ">here</a> to read my complete walkthrough in Medium.}}$$</p>
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Walkthrough}}$$</h1>
+<p align="center">Click <a href=" ">here</a> to read my complete walkthrough in Medium.</p>
 
 <br>
 
