@@ -28,17 +28,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{331}}$$-day-streak in  <a href="h
 </h1>
 
 
-<br>
-
 <p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/47cf9ca8-6759-447a-91fd-ccc14a02c760"> </p>
 
-<br>
 
 <p align="center"> <br><br><img width="900px" src="https://github.com/user-attachments/assets/1127f883-6604-474c-ac48-2ac6ae85989e"> </p>
 
-
-
-<br>
 
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
@@ -50,7 +44,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{331}}$$-day-streak in  <a href="h
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          | Global       | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 2, 2025     | 331      |     316ᵗʰ    |        8ᵗʰ   |   567ᵗʰ     |     9ᵗʰ    |  90,704  |       640 |   59      |
+| April 2, 2025     | 331      |     316ᵗʰ    |        8ᵗʰ   |   925ᵗʰ     |     9ᵗʰ    |  90,704  |       640 |   59      |
 
 </div>
 
