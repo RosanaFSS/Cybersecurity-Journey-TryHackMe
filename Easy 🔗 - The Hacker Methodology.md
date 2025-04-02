@@ -246,8 +246,3 @@ A full formal report sample can be found here: https://github.com/hmaverickadams
 
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
-<br>
-
-<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$ for investing your time and effort to develop this walkthrough so that I can sharpen my skills!</h1> 
-
-
