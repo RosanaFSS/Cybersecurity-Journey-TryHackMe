@@ -30,4 +30,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 
 ![March 30, 2025 - TryHackMe - Aratus - Room Completed - Header ands Tasks](https://github.com/user-attachments/assets/14e94dba-5a4a-4083-a9bb-3b8fb446f2ca)
 
+<br>
+
+![March 30, 2025 - TryHackMe - Aratus - Yearly Activity](https://github.com/user-attachments/assets/700e9ca6-586e-4ac0-b2fc-9907e43a4e0a)
+
+
 
