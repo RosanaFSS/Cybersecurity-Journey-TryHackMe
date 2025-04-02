@@ -48,9 +48,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{331}}$$-day-streak in  <a href="h
 
 </div>
 
-![image](https://github.com/user-attachments/assets/22c0b22e-d227-4482-8447-1773d1dc49c2)
-
-
 <p align="center"> Global All Time: 316ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/73690cf5-c1d7-4cf8-b88d-0300aa3d89c9"> </p>
 
 <p align="center"> Brazil All Time:  8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/22c0b22e-d227-4482-8447-1773d1dc49c2"> </p>
