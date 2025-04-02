@@ -9,9 +9,9 @@ March 9, 2025, Day 307<br>
 
 <br>
 
-<h3>Read my complete walkthrough in Medium.</h3>
+<h3>Soon you will read my complete walkthrough in Medium.</h3>
 
-https://medium.com/@RosanaFS/billing-tryhackme-walkthrough-60-points-652abba6f3c5
+<br>
 
 ![image](https://github.com/user-attachments/assets/b81359b0-0706-4952-a068-f1810e0069d2)
 
