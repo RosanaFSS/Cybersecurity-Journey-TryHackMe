@@ -248,6 +248,6 @@ A full formal report sample can be found here: https://github.com/hmaverickadams
 
 <br>
 
-<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>> for investing your time and effort to develop this walkthrough so that I can sharpen my skills!</p> 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>> for investing your time and effort to develop this walkthrough so that I can sharpen my skills!</h1> 
 
 
