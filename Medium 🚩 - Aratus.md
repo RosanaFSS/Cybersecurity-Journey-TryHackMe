@@ -20,6 +20,12 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 
 
 <br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+</h1>
+
+<br>
 <br>
 
 ![March 30, 2025 - TryHackMe - Aratus - Room Completed](https://github.com/user-attachments/assets/09faa9ee-0570-4048-ad92-ee7c1b3f5159)
