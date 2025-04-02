@@ -8,7 +8,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 </h1>
 <p align="center">Do you like reading? Do you like to go through tons of text? Aratus has what you need! Aratus is classified as a medium-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/aratus">here</a>.</p>
                                                               
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/fdb063d7-7b4f-4808-95fa-64784107b8ac"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/47174b5a-1a26-480f-a2af-c7adb57704c6"> </p>
+
+<br>
+
 
 <br>
 
@@ -21,9 +24,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 
 ![March 30, 2025 - TryHackMe - Aratus - Room Completed](https://github.com/user-attachments/assets/09faa9ee-0570-4048-ad92-ee7c1b3f5159)
 
-<br>
-
-![March 30, 2025 - TryHackMe - Aratus - Room Completed - Header](https://github.com/user-attachments/assets/47174b5a-1a26-480f-a2af-c7adb57704c6)
 
 
 <br>
