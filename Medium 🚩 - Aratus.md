@@ -32,6 +32,20 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{328}}$$-day-streak in  <a href="h
 
 <br>
 
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 30, 2025    | 328      |     323ʳᵈ    |        8ᵗʰ   |   254ᵗʰ     |     6ᵗʰ    |  90,198  |       636 |   59      |
+
+</div>
+
+
 ![March 30, 2025 - TryHackMe - Aratus - Yearly Activity](https://github.com/user-attachments/assets/700e9ca6-586e-4ac0-b2fc-9907e43a4e0a)
 
 
