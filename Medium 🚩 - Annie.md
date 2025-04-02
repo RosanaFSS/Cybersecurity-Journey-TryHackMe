@@ -26,4 +26,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 
 ![Marc 31, 2025 - TryHackMe - Annie - Tasks and Header](https://github.com/user-attachments/assets/ecdf64c7-f308-445f-9707-7a5b4ff58414)
 
+<br>
+
+![March 31, 2025 - TryHackMe - My Yearly Activity - 320th Globall All Time](https://github.com/user-attachments/assets/f8637552-6f91-48b5-9666-cac7e18caaa3)
+
+
 
