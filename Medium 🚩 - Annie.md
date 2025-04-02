@@ -20,11 +20,34 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{329}}$$-day-streak in  <a href="h
 <br>
 <br>
 
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+</h1>
+
+<br>
+
 ![March 31, 2025 - TryHackMe - Annie - Room Completed](https://github.com/user-attachments/assets/6c6600cb-55e8-4c32-8d5e-9e9fd727c5d6)
 
 <br>
 
 ![Marc 31, 2025 - TryHackMe - Annie - Tasks and Header](https://github.com/user-attachments/assets/ecdf64c7-f308-445f-9707-7a5b4ff58414)
+
+
+<br>
+
+<h1 align="center">
+  $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$
+</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | WorldWide    | Brazil       | WorldWide   | Brazil     |          | Completed |           |
+| March 31, 2025    | 329      |     320ᵗʰ    |        8ᵗʰ   |   244ᵗʰ     |     5ᵗʰ    |  90,288  |       638 |   59      |
+
+</div>
+
 
 <br>
 
