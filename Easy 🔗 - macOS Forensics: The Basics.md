@@ -20,6 +20,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{331}}$$-day-streak in  <a href="h
 <h2>Read my complete walkthrough in Medium.</h2>
 <h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/macos-forensics-the-basics-tryhackme-walkthrough-35b6a567db9b">macOS Forensics: The Basics</a>, TryHackMe Walkthrough</h3>
 
+<br>
+
+![Task 8](Easy 🔗 - macOS Forensics The Basics.gif)
+
 
 <br>
 
