@@ -22,7 +22,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{331}}$$-day-streak in  <a href="h
 
 <br>
 
-![Task 8](Easy 🔗 - macOS Forensics The Basics.gif)
+![Task 8](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20macOS%20Forensics%20The%20Basics.gif)
 
 
 <br>
