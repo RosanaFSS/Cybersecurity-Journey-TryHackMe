@@ -17,7 +17,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h2>Click  [ <a href="">Regular Expressions: Penetration Testing</a> ] to read my detailed walkthrough in Medium.</h3>
+<h2>Click  [ <a href="https://medium.com/@RosanaFS/regular-expressions-tryhackme-walkthrough-penetration-testing-7c97f7d67e09">Regular Expressions: Penetration Testing</a> ] to read my detailed walkthrough in Medium.</h3>
 
 <br>
 <br>
