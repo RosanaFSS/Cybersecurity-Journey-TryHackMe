@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Penetration Testing: Regular Expressions}}$$
+  $$\textcolor{#3bd62d}{\textnormal{Regular Expressions: Penetration Testing}}$$
 </h1>
 <p align="center">Learn and practice using regular expressions. It is classified a medium-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/catregex">here</a>.</p>
 
@@ -17,7 +17,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h2>Click  [ <a href="">Penetration Testing: Regular Expressions</a> ] to read my detailed walkthrough in Mediu.</h3>
+<h2>Click  [ <a href="">Regular Expressions: Penetration Testing</a> ] to read my detailed walkthrough in Medium.</h3>
 
 <br>
 <br>
