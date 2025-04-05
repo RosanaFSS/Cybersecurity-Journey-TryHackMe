@@ -21,9 +21,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 <img width="900px" src="https://github.com/user-attachments/assets/83b8a179-655b-48b8-8d9b-686faf762cda"> <br>
 <img width="900px" src="https://github.com/user-attachments/assets/ab08737d-3a01-4729-896e-6b810b219a27"> </h1>
 
-
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
-
 
 <div align="center">
 
@@ -34,11 +32,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 
 </div>
 
+<p align="center"> Global All Time: 313ʳᵈ<br><img width="900px" src="https://github.com/user-attachments/assets/4006da0d-739b-4b86-865e-eb13f34b930c"> </p>
 
-<p align="center"> Global All Time: 313ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4006da0d-739b-4b86-865e-eb13f34b930c"> </p>
+<p align="center"> Brazil All Time: 8ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/ec82e05d-6cf4-4242-b529-65faf49992ef"> </p>
 
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/ec82e05d-6cf4-4242-b529-65faf49992ef"> </p>
+<p align="center"> Global monthly: 1,730ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/4a2cd1be-26f5-477e-b3d8-51e4cfbdcd02"> </p>
 
-<p align="center"> Global monthly: 1,730ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4a2cd1be-26f5-477e-b3d8-51e4cfbdcd02"> </p>
-
-<p align="center"> Brazil monthly: 14ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/8d737c51-8895-45f1-8656-142627f22311"> </p>
+<p align="center"> Brazil monthly: 14ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/8d737c51-8895-45f1-8656-142627f22311"> </p>
