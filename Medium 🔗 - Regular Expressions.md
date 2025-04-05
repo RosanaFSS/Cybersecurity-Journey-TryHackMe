@@ -8,7 +8,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 <h1 align="center">
   $$\textcolor{#3bd62d}{\textnormal{Penetration Testing: Regular Expressions}}$$
 </h1>
-<p align="center">Learn and practise using regular expressions. It is classified a medium-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/catregex">here</a>.</p>
+<p align="center">Learn and practice using regular expressions. It is classified a medium-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/catregex">here</a>.</p>
 
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/297439d2-1954-4da3-9c75-65aec208649e"> </p>
