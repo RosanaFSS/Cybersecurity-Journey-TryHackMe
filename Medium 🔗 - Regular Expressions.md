@@ -17,6 +17,13 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 <br>
 <br>
 
+<h2>Read my complete walkthrough in Medium.</h2>
+
+<h3 align="left"> Click here ➡️  <a href="">Penetration Testing: Regular Expressions</a>, TryHackMe Walkthrough</h3>
+
+<br>
+,br>
+
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
 <img width="900px" src="https://github.com/user-attachments/assets/83b8a179-655b-48b8-8d9b-686faf762cda"> <br>
 <img width="900px" src="https://github.com/user-attachments/assets/ab08737d-3a01-4729-896e-6b810b219a27"> </h1>
