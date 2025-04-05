@@ -22,7 +22,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 <h3 align="left"> Click here ➡️  <a href="">Penetration Testing: Regular Expressions</a>, TryHackMe Walkthrough</h3>
 
 <br>
-,br>
+<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
 <img width="900px" src="https://github.com/user-attachments/assets/83b8a179-655b-48b8-8d9b-686faf762cda"> <br>
