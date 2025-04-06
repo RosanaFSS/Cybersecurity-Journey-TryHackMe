@@ -40,7 +40,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/9bc464d1-61aa-4b9c-9a56-10cb90a679a1"> </p>
 
-<p align="center"> Global monthly: 1,773<br><img width="900px" src="https://github.com/user-attachments/assets/4c979d56-1f61-4d10-bbfb-3f29c9c5eb89"> </p>
+<p align="center"> Global monthly: 1,773ʳᵈ<br><img width="900px" src="https://github.com/user-attachments/assets/4c979d56-1f61-4d10-bbfb-3f29c9c5eb89"> </p>
 
 <p align="center"> Brazil monthly: 14ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/8d737c51-8895-45f1-8656-142627f22311"> </p>
-
