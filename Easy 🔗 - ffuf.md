@@ -36,10 +36,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{334}}$$-day-streak in  <a href="h
 
 </div>
 
-<p align="center"> Global All Time: 312ⁿᵈ<br><img width="900px" src="https://github.com/user-attachments/assets/4006da0d-739b-4b86-865e-eb13f34b930c"> </p>
+<p align="center"> Global All Time: 312ⁿᵈ<br><img width="900px" src="https://github.com/user-attachments/assets/bd347108-5741-4413-a836-3a89e5d61154"> </p>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/9bc464d1-61aa-4b9c-9a56-10cb90a679a1"> </p>
 
 <p align="center"> Global monthly: 1,773<br><img width="900px" src="https://github.com/user-attachments/assets/4c979d56-1f61-4d10-bbfb-3f29c9c5eb89"> </p>
 
 <p align="center"> Brazil monthly: 14ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/8d737c51-8895-45f1-8656-142627f22311"> </p>
+
