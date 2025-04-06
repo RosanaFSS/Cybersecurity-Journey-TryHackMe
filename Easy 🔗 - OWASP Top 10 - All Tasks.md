@@ -12,7 +12,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{335}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h2>Click  [ <a href="">OWASP Top 10</a> - Penetration Testing ]<br> to read my detailed walkthrough in Medium.</h3>
+<h2 align="center">Click  [ <a href="">OWASP Top 10</a> - Penetration Testing ]<br> to read my detailed walkthrough in Medium.</h2>
 
 <br>
 <br>
