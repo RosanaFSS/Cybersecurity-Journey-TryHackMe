@@ -5,7 +5,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{335}}$$-day-streak in  <a href="h
   <img width="160px" src="https://github.com/user-attachments/assets/cfb71f6b-0be3-43e8-a883-a2071693e9c8"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{OWASP Top 10 -  Penetration Testing}}$$</h1>
-<p align="center">Learn about and exploit each of the OWASP Top 10 vulnerabilities; the 10 most critical web security risks. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/owasptop10">here</a>.</p>
+<p align="center">Learn about and exploit each of the OWASP Top 10 vulnerabilities; the 10 most critical web security risks. It is classified as an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br> Can be accessed clicking <a href="https://tryhackme.com/room/owasptop10">here</a>.</p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/73d54065-8b50-4855-af8e-e3588c656dac"> </p>
 
