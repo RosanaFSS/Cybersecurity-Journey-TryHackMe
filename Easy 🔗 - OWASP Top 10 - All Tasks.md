@@ -17,10 +17,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{335}}$$-day-streak in  <a href="h
 <br>
 <br>
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
-<img width="900px" src="https://github.com/user-attachments/assets/5d66e9f5-e2bc-4e25-a0a4-5ccc621ad6d3"> <br>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p></p><img width="900px" src="https://github.com/user-attachments/assets/5d66e9f5-e2bc-4e25-a0a4-5ccc621ad6d3"> <br>
 <img width="900px" src="https://github.com/user-attachments/assets/58991793-e9a9-4eef-9dce-c04c4ff6263b"> <br>
-<img width="900px" src="https://github.com/user-attachments/assets/7f4e364d-6b04-4dab-a83d-cfab04a471f2"> </h1>
+<img width="900px" src="https://github.com/user-attachments/assets/7f4e364d-6b04-4dab-a83d-cfab04a471f2"> </p>
 
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
