@@ -52,8 +52,6 @@ Webmin has been exposed to a variety of vulnerabilities.</p>
 
 ![image](https://github.com/user-attachments/assets/d2987222-9565-4ac2-bbff-c715424d452a)
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Added domain name and Target IP to /etc/hosts}}$$</h2>
-
 <br>
 
 
