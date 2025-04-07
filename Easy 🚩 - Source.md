@@ -32,6 +32,20 @@ PORT      STATE SERVICE VERSION
 ...
 ```
 
+<br>
+
+<h2 align="center">$$\textcolor{white}{\textnormal{Webmin}}$$</h2>
+<p>Webmin is a program that simplifies the process of managing a Linux or Unix system.<br><br>
+Webmin has been exposed to a variety of vulnerabilities.</p>
+![image](https://github.com/user-attachments/assets/a0be3850-3c1f-44f7-9f8a-e4d8bf27b1c9)
+
+<br>
+
+
+<h2 align="center">$$\textcolor{white}{\textnormal{Gobuster}}$$</h2>
+<p>Tried to enumerate files and directories using <code>gobuster</code> but did not got anything.</p>
+<br>
+
 <h2 align="center">$$\textcolor{white}{\textnormal{Navigated to http://TargetIP:10000}}$$</h2>
 
 
@@ -162,5 +176,4 @@ root@source:~#
 
 <p align="center"> Global monthly: 317ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/920d0340-25e7-448a-9cca-225516274788"> </p>
 
-<p align="center"> Brazil monthly: 4ᵗʰ<br><br><img width="900px" src=https://github.com/user-attachments/assets/c1f8f43d-f0c0-4e51-85e7-960209177240"> </p>
-
+<p align="center"> Brazil monthly: 4ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/c1f8f43d-f0c0-4e51-85e7-960209177240"> </p>
