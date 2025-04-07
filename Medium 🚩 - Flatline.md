@@ -10,9 +10,41 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{336}}$$-day-streak in  <a href="h
    and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br> Can be accessed clicking <a 
    href="https://tryhackme.com/room/flatline">here</a>.</p>
                                                               
-<p align="center"> <img width="900px" src="image](https://github.com/user-attachments/assets/944b6e4d-a22d-42b3-b679-883bcdeec880"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/f395bebb-6d31-436c-a7f0-e2b50d48e949"> </p>
+
 
 <br>
+<br>
+
+<h2 align="center">Click <a href="">OWASP Top 10</a> <br> to read my detailed<br> walkthrough in Medium.</h2>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p></p><img width="900px" src="https://github.com/user-attachments/assets/5d66e9f5-e2bc-4e25-a0a4-5ccc621ad6d3"> <br>
+<img width="900px" src="https://github.com/user-attachments/assets/58991793-e9a9-4eef-9dce-c04c4ff6263b"> <br>
+<img width="900px" src="https://github.com/user-attachments/assets/7f4e364d-6b04-4dab-a83d-cfab04a471f2"> </p>
+
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          | Global       | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 5, 2025     | 335      |     309ᵗʰ    |     8ᵗʰ      | 2,078ᵗʰ     |     17ᵗʰ   |  91,336  |       645 |   59      |
+
+</div>
+
+<p align="center"> Global All Time: 309ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/43b222d1-3ca1-4f78-ba0a-f1e439a79a60"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/7f750622-f911-47cc-af08-f68a4ab15955"> </p>
+
+<p align="center"> Global monthly: 2,078ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/fa0c23ba-bea8-458a-aa31-7ccc5f24b3c6"> </p>
+
+<p align="center"> Brazil monthly: 17ᵗʰ<br><img width="900px" src="https://github.com/user-attachments/assets/a9fde543-481b-4b1a-a72f-e7eaf7e47a4b"> </p>
 
 
 <br>
