@@ -2,7 +2,7 @@
 <p align="center">April 7, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{336}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-  <img width="160px" src="https://github.com/user-attachments/assets/fc1265c6-2733-4273-9cb7-bb0dfddf3ffd"></p>
+  <img width="160px" src="https://github.com/user-attachments/assets/2618b170-66fb-4cd0-8989-4baf6071e985"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Source}}$$</h1>
 
@@ -32,7 +32,7 @@ PORT      STATE SERVICE VERSION
 ...
 ```
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Navigated to <code>http://TargetIP:10000</code>}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Navigated to http://TargetIP:10000}}$$</h2>
 
 
 ![image](https://github.com/user-attachments/assets/d2987222-9565-4ac2-bbff-c715424d452a)
