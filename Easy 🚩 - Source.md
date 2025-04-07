@@ -18,7 +18,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{336}}$$-day-streak in  <a href="h
 <h2 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h2>
 
 
-<p align="center">There are have 3 ports open: <code>ftp/21</code>, <code>ssh/22</code>, and <code>http/80</code>.<br><code>Anonymous</code> is allowed to <code>ftp</code>. </p>
+<p align="center">There are have 2 ports open: <code>ssh/22</code> and <code>webmin/10000</code>. </p>
 
 ```bash
 ~/Source# nmap -sC -sV -sS -Pn -p- -A TargetIP
@@ -32,7 +32,7 @@ PORT      STATE SERVICE VERSION
 ...
 ```
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Navigated to http://TargetIP:10000}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Navigated to <code>http://TargetIP:10000</code>}}$$</h2>
 
 
 ![image](https://github.com/user-attachments/assets/d2987222-9565-4ac2-bbff-c715424d452a)
