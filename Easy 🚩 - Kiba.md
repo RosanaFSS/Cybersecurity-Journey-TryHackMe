@@ -119,7 +119,8 @@ CVE-2019-7609-kibana-rce.py
 
 <br>
 
-<h2 align="center">$$\textcolor{white}{\textnorma{Got the shell}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Got the Shell}}$$</h2>
+
 
 ```bash
 :~/kiba# nc -lnvp 4444
