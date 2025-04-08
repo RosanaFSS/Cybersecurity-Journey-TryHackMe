@@ -95,7 +95,7 @@ PORT     STATE SERVICE   VERSION
 <br>
 
 
-<h2 align="center">$$\textcolor{white}{\textnormal{ve-2019-7609}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{CVE-2019-7609}}$$</h2>
 
 https://nvd.nist.gov/vuln/detail/cve-2019-7609
 
