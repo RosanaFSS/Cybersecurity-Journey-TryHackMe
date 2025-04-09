@@ -46,7 +46,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>Discovered <code>p</code> and <code>q</code>.<br><br>
+<p>Discovered <code>p</code> and <code>q</code>.</p>
 
 <br>
 
@@ -65,10 +65,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 ![image](https://github.com/user-attachments/assets/3e2d1919-7e3c-4690-a3aa-4ffc00d63190)
 
-
-
-
-
 <br>
 
 <h2>Task 3 . Breaking Hashes</h2>
@@ -83,7 +79,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <br>
 
 <p>Ran the script <a href="https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Breaking%20Crypto%20the%20Simple%20Way%20-%20Task%203.py">Task3.py</a>.</p>
-
 
 <br>
 
@@ -115,6 +110,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <br>
 
 <p>Ran the script <a href="https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Breaking%20Crypto%20the%20Simple%20Way%20-%20Task%205.py">Task5.py</a>.<br>
+<br>  
 It just worked using <code>python3.9</code>.</p>
 
 <br>
@@ -165,8 +161,6 @@ Refreshed the webpage.</p>
 
 
 ![image](https://github.com/user-attachments/assets/e9489568-a885-4f07-b1b0-6345f161419a)
-
-
 
 <br>
 
