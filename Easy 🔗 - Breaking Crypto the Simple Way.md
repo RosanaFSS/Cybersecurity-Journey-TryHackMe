@@ -38,8 +38,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 > 2.1. <em>What is the flag?</em>.<a id='2.1'></a>
 >> <code><strong>THM{Psssss_4nd_Qsssssss}</strong></code><br>
 
-<p>Navigated to <code>http://TargetIP</code> after adding it to <code>/etc/hosts</code>.</p>
-
 <br>
 
 <p>Navigated to <code>https://factordb.com/</code>.</p>
