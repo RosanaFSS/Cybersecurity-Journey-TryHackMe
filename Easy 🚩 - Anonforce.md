@@ -77,7 +77,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p><code>john</code> with the hash file just created.</p>
+<p>- used <code>john</code> to crack the hash</p>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 15 - usei o comando john com wordlist](https://github.com/user-attachments/assets/c24ac1e2-dd8e-4ce8-b8ec-5e2ea0b8479d)
 
