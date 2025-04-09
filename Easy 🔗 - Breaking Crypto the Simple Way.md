@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 <p align="center">Exploiting common cryptographic mistakes. It is classified as an easy-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click <a href="https://tryhackme.com/room/breakingcryptothesimpleway">here</a>.</p>
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/fc1265c6-2733-4273-9cb7-bb0dfddf3ffd"> </p>
+<p align="center"> <img width="900px" src=""> </p>
 
 <br>
 <br>
