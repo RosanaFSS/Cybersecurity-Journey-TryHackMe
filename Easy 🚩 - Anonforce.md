@@ -3,7 +3,7 @@
 It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.</p>
 
 <h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{Simple CTF}}$$
+  $$\textcolor{#3bd62d}{\textnormal{Anonforce}}$$
 </h1>
 <p align="center">It is classified as an easy-level challenge.
 <br>You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.
