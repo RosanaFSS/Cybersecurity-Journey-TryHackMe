@@ -81,6 +81,12 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 > 3.1. <em>What is the flag?</em><a id='3.1'></a>
 >> <code><strong>sunshine</strong></code><br>
 
+
+<br>
+
+<p>Ran the script <a href="https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Breaking%20Crypto%20the%20Simple%20Way%20-%20Task%203.py">Task3.py</a>.</p>
+
+
 <br>
 
 ![image](https://github.com/user-attachments/assets/3d301f4d-dd00-4332-a503-93fac5ed0990)
@@ -109,6 +115,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 ![image](https://github.com/user-attachments/assets/1779da3d-143a-489f-9835-b06cf6f36f98)
 
 <br>
+
+<p>Ran the script <a href="https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Breaking%20Crypto%20the%20Simple%20Way%20-%20Task%205.py">Task3.py</a>.<br>
+It just worked using <code>python3.9</code>.</p></p>
 
 <p>Ran the <code>script.py</code>.<br>It just worked using <code>python3.9</code>.</p>
 
