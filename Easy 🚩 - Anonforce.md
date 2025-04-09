@@ -15,7 +15,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>nmap</p>
+<p><code>nmap -sV</code> Target IP</p>
 
 <p></p>
 
@@ -23,7 +23,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>nmap -T4 -sVC TargetIP</p>
+<p><code>nmap -T4 -sVC</code> TargetIP</p>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 1 - Starting again from zero](https://github.com/user-attachments/assets/2f925be6-c3de-46dc-a15d-547e3b6b0125)
 
