@@ -6,14 +6,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{337}}$$-day-streak in  <a href="h
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Kiba}}$$</h1>
 
 
-<p align="center">Identify the critical security flaw in the data visualization dashboard, that allows execute remote code execution. It is classified as an easy-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click <a href="https://tryhackme.com/room/kiba">Kiba</a>.</p>
-
-<p align="center"> <img width="900px" src=""> </p>
-
 <br>
-<br> It is classified as an easy-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click <a href="https://tryhackme.com/room/kiba">Kiba</a>.</p>
+<br> Identify the critical security flaw in the data visualization dashboard, that allows execute remote code execution. It is classified as an easy-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click <a href="https://tryhackme.com/room/kiba">Kiba</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/a9e7e443-b292-4e82-80a7-8353fde25c4a"> </p>
 
 <br>
 <br>
@@ -857,45 +853,28 @@ THM{pr1v1lege_escalat1on_us1ng_capab1l1t1es}<br>
 
 <br>
 
-
-
-
-![image](https://github.com/user-attachments/assets/2ecf8920-7f7f-4704-8300-9e1d4473c170)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/a9e7e443-b292-4e82-80a7-8353fde25c4a)
-
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+<br><img width="900px" src="https://github.com/user-attachments/assets/2ecf8920-7f7f-4704-8300-9e1d4473c170">
+<br><img width="900px" src="https://github.com/user-attachments/assets/752cbb57-5523-4832-95ef-fb16c20cf0c1"></h1>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/752cbb57-5523-4832-95ef-fb16c20cf0c1)
-
-<br><br><br>
-
-![image](https://github.com/user-attachments/assets/c2a4e1aa-e20d-4851-b4a9-989d38d83ae6)
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
 
 
-<br>
+<div align="center">
 
-![image](https://github.com/user-attachments/assets/93fdcaa9-7ebf-4438-86b8-1a89136de91f)
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 9, 2025     | 338      |     299ᵗʰ    |        8ᵗʰ   |    328ᵗʰ    |     4ᵗʰ    |  92,006  |       649 |   59      |
 
-<br>
+</div>
 
-![image](https://github.com/user-attachments/assets/22783291-4002-461d-9a5b-1ecaf57e6b03)
+<p align="center"> Global All Time: 299ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/c2a4e1aa-e20d-4851-b4a9-989d38d83ae6"> </p>
 
-<br>
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/93fdcaa9-7ebf-4438-86b8-1a89136de91f"> </p>
 
+<p align="center"> Global monthly: 328ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/22783291-4002-461d-9a5b-1ecaf57e6b03"> </p>
 
-![image](https://github.com/user-attachments/assets/475a8ac0-d251-4f48-8cbb-6256ff776eef)
-
-
-
-
-
-
-
-
-
-
-
+<p align="center"> Brazil monthly: 4ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/475a8ac0-d251-4f48-8cbb-6256ff776eef"> </p>
