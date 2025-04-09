@@ -60,8 +60,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 <br>
 
 <p>- <code>strings</code> backup.pgp<br>
-- <code>gpg2jhon</code> backup.pgp<br>
 - <code>gpg2jhon</code> private.asc<br>
+- <code>gpg2jhon</code> backup.pgp<br>
 - created a file with the hash</p>
 
 <br>
@@ -77,17 +77,50 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>- used <code>john</code> to crack the hash</p>
+<p>- used <code>john</code> to crack and to show the hash</p>
 
-![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 15 - usei o comando john com wordlist](https://github.com/user-attachments/assets/c24ac1e2-dd8e-4ce8-b8ec-5e2ea0b8479d)
-
-
-<br>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 16 - encontrei a senha](https://github.com/user-attachments/assets/f5ee1db4-d249-4fa9-ae9d-5296acf9a17d)
 
 
 <br>
+
+<p>- used <code>gpg</code> to import and to decrypt backup.pgp<br><br>
+<code>gpg --import private.asc<br>
+...<br>
+gpgp --decrypt backup.pgp</code></p>
+
+![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 18](https://github.com/user-attachments/assets/fe8a2d61-5ec2-4a35-beb2-d27fa25be151)
+
+<br>
+
+<p>created a file root hash<br>
+<br>
+used <code>john</code> to crack and show root´s hash</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3cb0488c-d04c-4115-b73a-563ed63524a1)
+
+<br>
+
+<p>used <code>ssh</code> to get access as root and find root.txt</p>
+
+<br>
+
+![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 21](https://github.com/user-attachments/assets/2af603a9-bd29-4621-9fd6-07434583d8ea)
+
+
+
+
+<br>
+
+<br>
+
+![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 22 - room complete](https://github.com/user-attachments/assets/cce16c5f-d2f5-44ab-bce8-0a2afd245a21)
+
+<br>
+
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 22 - room complete - full view](https://github.com/user-attachments/assets/fc5860bd-8eb9-4cfe-bb46-b16ed311c0fc)
 
