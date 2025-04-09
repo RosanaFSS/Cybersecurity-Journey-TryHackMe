@@ -31,7 +31,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 <br>
 
 
-<p><code>ftp</code></p>
+<p><code>ftp</code> TargetIP</p>
 
 <br>
 
@@ -39,7 +39,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p><code>get</code></p>
+<p><code>get</code> user.txt</p>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 3 - ftp e acessei diretorio home, melodias](https://github.com/user-attachments/assets/a1601151-a3b0-4725-ab78-8fc6c9724276)
 
