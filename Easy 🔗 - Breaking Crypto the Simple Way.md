@@ -176,13 +176,15 @@ Refreshed the webpage.</p>
 <br>
 <br>
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
 <p align="center"><img width="900px" src="https://github.com/user-attachments/assets/f75badee-e26d-4d1a-87d2-fc4c1aee3b99">
 <br><img width="900px" src="ttps://github.com/user-attachments/assets/8506dc32-b0f9-4ab6-959e-de9004c8d848"></p>
 
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
 
 
 <div align="center">
