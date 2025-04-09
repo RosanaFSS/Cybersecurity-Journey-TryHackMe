@@ -724,12 +724,94 @@ dovecot credentials Not Found
 [+] SUID - Check easy privesc, exploits and write perms
 [i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
 
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/bin/chfn		--->	SuSE_9.3/10
+/usr/bin/newgrp		--->	HP-UX_10.20
+/usr/bin/passwd		--->	Apple_Mac_OSX(03-2006)/Solaris_8/9(12-2004)/SPARC_8/9/Sun_Solaris_2.3_to_2.5.1(02-1997)
+/usr/bin/sudo		--->	/sudo$
+/usr/bin/chsh
+/usr/bin/vmware-user-suid-wrapper
+/usr/bin/gpasswd
+/bin/ping
+/bin/umount		--->	BSD/Linux(08-1996)
+/bin/mount		--->	Apple_Mac_OSX(Lion)_Kernel_xnu-1699.32.7_except_xnu-1699.24.8
+/bin/ping6
+/bin/su
+/bin/fusermount
+
+[+] SGID
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+/usr/bin/ssh-agent
+/usr/bin/chage
+/usr/bin/expiry
+/usr/bin/bsd-write
+/usr/bin/crontab
+/usr/bin/mlocate
+/usr/bin/wall
+/sbin/unix_chkpwd
+/sbin/pam_extrausers_chkpwd
+
+[+] Writable folders configured in /etc/ld.so.conf.d/
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#etc-ld-so-conf-d
+/usr/local/lib
+/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/mesa-egl
+/usr/lib/x86_64-linux-gnu/mesa
+
+[+] Capabilities
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#capabilities
+/home/kiba/.hackmeplease/python3 = cap_setuid+ep
+/usr/bin/mtr = cap_net_raw+ep
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+/usr/bin/systemd-detect-virt = cap_dac_override,cap_sys_ptrace+ep
+
+[+] Users with capabilities
+/etc/security/capability.conf Not Found
+
+[+] Files with ACLs
+files with acls in searched folders Not Found
+
+[+] .sh files in path
+/usr/bin/gettext.sh
+/usr/bin/metricbeat.sh
+
+[+] Unexpected folders in root
+
+[+] Files (scripts) in /etc/profile.d/
+total 16
+drwxr-xr-x  2 root root 4096 Mar 31  2020 .
+drwxr-xr-x 95 root root 4096 Jul 23  2020 ..
+-rw-r--r--  1 root root  663 May 18  2016 bash_completion.sh
+-rw-r--r--  1 root root 1003 Dec 29  2015 cedilla-portuguese.sh
+
+[+] Hashes inside passwd file? ........... No
+[+] Hashes inside group file? ............ No
+[+] Credentials in fstab/mtab? ........... No
+[+] Can I read shadow files? ............. No
+[+] Can I read root folder? .............. No
+
+[+] Searching root files in home dirs (limit 20)
+/home
+/home/kiba/.hackmeplease/python3
+/home/kiba/.wget-hsts
+
+[+] Searching others files in folders owned by me
+....
+
 ```
 
+<br><br>
 
 
 
+<br>
 
+THM{pr1v1lege_escalat1on_us1ng_capab1l1t1es}<br>
+
+![image](https://github.com/user-attachments/assets/9e44fec0-bb39-4334-84dc-57a89eb97295)
 
 
 
@@ -771,9 +853,46 @@ dovecot credentials Not Found
 <br>
 
 > 1.7. <em>Escalate privileges and obtain root.txt</em><br><a id='1.6'></a>
->> <code><strong>getcap -r /</strong></code>
+>> <code><strong>THM{pr1v1lege_escalat1on_us1ng_capab1l1t1es}<br></strong></code>
 
 <br>
+
+
+
+
+![image](https://github.com/user-attachments/assets/2ecf8920-7f7f-4704-8300-9e1d4473c170)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a9e7e443-b292-4e82-80a7-8353fde25c4a)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/752cbb57-5523-4832-95ef-fb16c20cf0c1)
+
+<br><br><br>
+
+![image](https://github.com/user-attachments/assets/c2a4e1aa-e20d-4851-b4a9-989d38d83ae6)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/93fdcaa9-7ebf-4438-86b8-1a89136de91f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/22783291-4002-461d-9a5b-1ecaf57e6b03)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/475a8ac0-d251-4f48-8cbb-6256ff776eef)
+
+
+
+
+
 
 
 
