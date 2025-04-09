@@ -149,7 +149,32 @@ In there discovered <code>database.php</code>.</p>
 
 
 
+<br>
+
+
+<p>Discovered important information about the database...<br>
+some credentials.<br><br>
+Used <code>su -</code>, typed the password just discovered and got root access.</p>
 
 <br>
-![October-02-2024 - TryHackMe - Ignite - CTF - Easy - Image 35 - room complete - another view](https://github.com/user-attachments/assets/f98c448b-b362-4468-96d8-6b4ecabaded3)
+
+![October-02-2024 - TryHackMe - Ignite - CTF - Easy - Image 32 - got privileged access using    sudo -](https://github.com/user-attachments/assets/bb041f8e-dfa8-4add-98d5-d64d31bc952c)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d2e489ca-a5cf-4c8b-a0bc-0dc2a1543b49)
+
+<br><br>
+
+<br>
+
+![October-02-2024 - TryHackMe - Ignite - CTF - Easy - Image 34 - room completed](https://github.com/user-attachments/assets/d08e1ecd-f40a-4bd8-8784-652bf7d7a6c3)
+
+<br>
+
+![October-02-2024 - TryHackMe - Ignite - CTF - Easy - Image 35 - room complete - another view](https://github.com/user-attachments/assets/bee60a29-4bb2-4eae-b80c-4a355c0f8c33)
+
+
+
 
