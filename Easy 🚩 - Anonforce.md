@@ -56,18 +56,13 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 ![October-01-2024 - TryHackMe - Anonforce - CTF - Easy - Image 4](https://github.com/user-attachments/assets/214ff01a-672a-4a82-88fa-79efce07f21d)
 
 
-<br>
-
-<p><code>gpg</code></p>
-
-![October-01-2024 - TryHackMe - Anonforce - CTF - Easy - Image 7](https://github.com/user-attachments/assets/93125179-5f97-4106-a8fb-b893f3053460)
-
-
 
 <br>
-<p><code>strings</code> backup.pgp<br>
-<p><code>gpg2jhon</code> backup.pgp<br>
-<code>gpg2jhon</code> private.asc</p>
+
+<p>. <code>strings</code> backup.pgp<br>
+. <code>gpg2jhon</code> backup.pgp<br>
+. <code>gpg2jhon</code> private.asc<br>
+. created a file with the hash</p>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 11 - usei o comando gpg2john no arquivo backup-pgp](https://github.com/user-attachments/assets/8cb31f01-683c-47d8-9ef7-4bba067e640d)
 
