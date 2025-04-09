@@ -46,13 +46,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>Discovered <code>p</code> and <code>q</code><br><br>
-. <code>p</code> = 20523746132000083582181213901326___0933 and<br>
-. <code>q</code> = 21410233340851304069415___550512987959</p>
+<p>Discovered <code>p</code> and <code>q</code>.<br><br>
 
 <br>
 
-<p>Ran the script <a href="">Task2-1.py</a>.</p>
+<p>Ran the script <a href="https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Breaking%20Crypto%20the%20Simple%20Way%20-%20Task%202-1.py">Task2-1.py</a>.</p>
 
 <br>
 
@@ -185,6 +183,7 @@ Refreshed the webpage.</p>
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+<br>
 <br><img width="900px" src="https://github.com/user-attachments/assets/f75badee-e26d-4d1a-87d2-fc4c1aee3b99">
 <br><img width="900px" src="ttps://github.com/user-attachments/assets/8506dc32-b0f9-4ab6-959e-de9004c8d848"></h1>
 
