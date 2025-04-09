@@ -860,7 +860,7 @@ THM{pr1v1lege_escalat1on_us1ng_capab1l1t1es}<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
 
-<p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/ab60c0db-94e1-4202-92f3-a8c047fe2dee"> </p>
+<p align="center"> <img width="300px" src="https://github.com/user-attachments/assets/ab60c0db-94e1-4202-92f3-a8c047fe2dee"> </p>
 
 
 
