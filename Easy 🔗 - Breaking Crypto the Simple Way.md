@@ -210,3 +210,15 @@ Refreshed the webpage.</p>
 <p align="center"> Global monthly: 354ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bf1107f3-05cf-40f6-88b6-203e87a5b315"> </p>
 
 <p align="center"> Brazil monthly: 3ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a413e51a-c2a3-48fa-809a-26498fe717eb"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> and  <a href="https://tryhackme.com/p/l000g1c">l000g1c</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
