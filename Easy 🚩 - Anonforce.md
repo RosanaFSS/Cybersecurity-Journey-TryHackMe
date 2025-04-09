@@ -62,18 +62,11 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 ![October-01-2024 - TryHackMe - Anonforce - CTF - Easy - Image 7](https://github.com/user-attachments/assets/93125179-5f97-4106-a8fb-b893f3053460)
 
-<br>
-
-<p><code>strings</code> <code>backup.gpg</code></p>
-
-<br>
-
-![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 10 - usei o comando strings no arquivo](https://github.com/user-attachments/assets/094a2464-0485-4ab6-bc4d-ecc7fe1e06ca)
 
 
 <br>
-
-<p><code>gpg2jhon</code> <code>backup.gpg</code></p>
+<p><code>strings</code> backup.gpg<br>
+<p><code>gpg2jhon</code> backup.gpg</p>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 11 - usei o comando gpg2john no arquivo backup-pgp](https://github.com/user-attachments/assets/8cb31f01-683c-47d8-9ef7-4bba067e640d)
 
