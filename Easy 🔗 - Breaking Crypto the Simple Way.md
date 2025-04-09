@@ -47,18 +47,21 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <br>
 
 <p>Discovered <code>p</code> and <code>q</code><br><br>
-. <code>p</code> = 205237461320000835821812139013267110933 and<br>
-. <code>q</code> = 214102333408513040694153189550512987959</p>
+. <code>p</code> = 20523746132000083582181213901326___0933 and<br>
+. <code>q</code> = 21410233340851304069415___550512987959</p>
 
+<br>
 
-<p>Ran a script: <code>Task2-1.py</code>.</p>
+<p>Ran the script <a href="">Task2-1.py</a>.</p>
+
+<br>
 
 
 ![image](https://github.com/user-attachments/assets/d7c04856-662f-456e-bb3d-f845d15cb715)
 
 <br>
 
-<p>Ran a script: <code>Task2-2.py</code>.</p>
+<p>Ran the script <a href="">Task2-2.py</a>.</p>
 
 <br>
 
