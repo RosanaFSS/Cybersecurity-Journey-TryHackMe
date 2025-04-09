@@ -1,7 +1,6 @@
-<p align="center"><p align="center">April 7, 2025<br>
+<p align="center"><p align="center">April 9, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{337}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-  <img width="160px" src="https://github.com/user-attachments/assets/fd531592-487b-4cb5-8259-63887615d678"></p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Kiba}}$$</h1>
 
@@ -867,7 +866,7 @@ THM{pr1v1lege_escalat1on_us1ng_capab1l1t1es}<br>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 9, 2025     | 338      |     299ᵗʰ    |        8ᵗʰ   |    328ᵗʰ    |     4ᵗʰ    |  92,006  |       649 |   59      |
+| April 9, 2025     | 338      |     299ᵗʰ    |        8ᵗʰ   |    338ᵗʰ    |     4ᵗʰ    |  92,006  |       649 |   59      |
 
 </div>
 
@@ -875,6 +874,6 @@ THM{pr1v1lege_escalat1on_us1ng_capab1l1t1es}<br>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/93fdcaa9-7ebf-4438-86b8-1a89136de91f"> </p>
 
-<p align="center"> Global monthly: 328ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/22783291-4002-461d-9a5b-1ecaf57e6b03"> </p>
+<p align="center"> Global monthly: 338ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/22783291-4002-461d-9a5b-1ecaf57e6b03"> </p>
 
 <p align="center"> Brazil monthly: 4ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/475a8ac0-d251-4f48-8cbb-6256ff776eef"> </p>
