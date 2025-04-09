@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 <p align="center">Exploiting common cryptographic mistakes. It is classified as an easy-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click <a href="https://tryhackme.com/room/breakingcryptothesimpleway">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/37769b50-72b8-4de9-9c5c-362dcfcda5e9"> </p>
 
 <br>
 <br>
@@ -36,9 +36,46 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 > 2.1. <em>What is the flag?</em>.<a id='2.1'></a>
->> <code><strong>___________________</strong></code><br>
+>> <code><strong>THM{Psssss_4nd_Qsssssss}</strong></code><br>
 
 <p>Navigated to <code>http://TargetIP</code> after adding it to <code>/etc/hosts</code>.</p>
+
+<br>
+
+<p>Navigated to <code>https://factordb.com/</code>.</p>
+
+![image](https://github.com/user-attachments/assets/c69fe52c-d256-45b4-9deb-31e58156f1ad)
+
+<br>
+
+<p><code>p</code>code>=205237461320000835821812139013267110933<br>
+<code>q</code>code>=214102333408513040694153189550512987959</p>
+
+
+from sympy import factorint
+from Crypto.Util.number import inverse, long_to_bytes
+
+n = 43941819371451617899582143885098799360907134939870946637129466519309346255747
+c = 9002431156311360251224219512084136121048022631163334079215596223698721862766
+
+p = 205237461320000835821812139013267110933
+q = 214102333408513040694153189550512987959
+
+phi_n = (p - 1) * (q - 1)
+print("Phi(n) =", phi_n)
+
+e = 65537
+d = inverse(e, phi_n)
+print("Private key (d):", d)
+
+
+![image](https://github.com/user-attachments/assets/d7c04856-662f-456e-bb3d-f845d15cb715)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3e2d1919-7e3c-4690-a3aa-4ffc00d63190)
+
+
 
 
 
@@ -91,8 +128,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <h2>Task 5 . Bit Flipping Attacks</h2>
 <br>
 
-<br>
-
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
@@ -134,8 +169,49 @@ Refreshed the webpage.</p>
 
 
 
+<br>
+
+<h2>Task 6 .Conclusion</h2>
+<br>
 
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 6.1. <em>Click me to proceed to the next task.?</em>.<a id='6.1'></a>
+>> <code><strong>No answer needed</strong></code><br>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$
+<br><img width="900px" src="https://github.com/user-attachments/assets/f75badee-e26d-4d1a-87d2-fc4c1aee3b99">
+<br><img width="900px" src="ttps://github.com/user-attachments/assets/8506dc32-b0f9-4ab6-959e-de9004c8d848"></h1>
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
 
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 7, 2025     | 336      |     299ᵗʰ    |        8ᵗʰ   |    354ᵗʰ    |     3ʳᵈ    |  92,038  |       650 |   59      |
+
+</div>
+
+<br>
+
+<p align="center">League<br><br><img width="300px" src="https://github.com/user-attachments/assets/35c02f68-2fbc-4da9-a282-357432eaf2da"> </p>
+
+
+<br>
+
+<p align="center"> Global All Time: 299ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/3f8e44e6-6775-4fd5-b5c3-46e01bfd6190"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/5ec0e0dd-31e1-4cbe-9c74-e25bfab3975b"> </p>
+
+<p align="center"> Global monthly: 354ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bf1107f3-05cf-40f6-88b6-203e87a5b315"> </p>
+
+<p align="center"> Brazil monthly: 3ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a413e51a-c2a3-48fa-809a-26498fe717eb"> </p>
