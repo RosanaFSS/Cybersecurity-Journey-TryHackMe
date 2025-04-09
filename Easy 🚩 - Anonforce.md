@@ -59,17 +59,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>. <code>strings</code> backup.pgp<br>
-. <code>gpg2jhon</code> backup.pgp<br>
-. <code>gpg2jhon</code> private.asc<br>
-. created a file with the hash</p>
-
-![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 11 - usei o comando gpg2john no arquivo backup-pgp](https://github.com/user-attachments/assets/8cb31f01-683c-47d8-9ef7-4bba067e640d)
-
-<br>
-
-
-![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 12 - usei o comando gpg2john no arquivo private-asc](https://github.com/user-attachments/assets/6ab9e38f-f1a7-46d2-bc85-48dc1a38b030)
+<p>- <code>strings</code> backup.pgp<br>
+- <code>gpg2jhon</code> backup.pgp<br>
+- <code>gpg2jhon</code> private.asc<br>
+- created a file with the hash</p>
 
 <br>
 
@@ -77,8 +70,6 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 
 <br>
-
-<p>Create a file.</p>
 
 ![October-02-2024 - TryHackMe - Anonforce - CTF - Easy - Image 14 - criei um nano com a parte selecionada](https://github.com/user-attachments/assets/79abbdb2-3252-4b58-8c7a-e2eeedb37601)
 
