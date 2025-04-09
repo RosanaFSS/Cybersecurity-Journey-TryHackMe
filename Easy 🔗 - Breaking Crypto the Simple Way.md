@@ -126,7 +126,7 @@ Clicked <code>Login</code>.</p>
 
 <br>
 
-<p>Copied the <code>Modified Token</code> content and pasted in the <code>Value</code> field of the <code>role<code> cookie.<br>
+<p>Copied the <code>Modified Token</code> content and pasted in the <code>Value</code> field of the <code>role</code> cookie.<br>
 Refreshed the webpage.</p>
 
 
