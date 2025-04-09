@@ -49,7 +49,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
-> 3.1. <em>What is the flag?</em>.<a id='3.1'></a>
+> 3.1. <em>What is the flag?</em><a id='3.1'></a>
 >> <code><strong>sunshine</strong></code><br>
 
 <br>
@@ -69,8 +69,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 > 4.1. <em>What is the flag?</em>.<a id='4.1'></a>
->> <code><strong>THM{3nD_2_3nd_is_n0t_c0mpl1c4ted}{ready}</strong></code><br>
+>> <code><strong>THM{3nD_2_3nd_is_n0t_c0mpl1c4ted}</strong></code><br>
 
+<br>
 
 ![image](https://github.com/user-attachments/assets/3a4066c5-2cb2-4b04-b2df-0a285be59e75)
 
