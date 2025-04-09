@@ -47,8 +47,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <br>
 
 <p>Discovered<br>
-<code>p</code>code>=205237461320000835821812139013267110933 and<br>
-<code>q</code>code>=214102333408513040694153189550512987959</p>
+<code>p</code> = 205237461320000835821812139013267110933 and<br>
+<code>q</code> = 214102333408513040694153189550512987959</p>
 
 
 <p>Ran a script: <code>Task2-1.py</code>.</p>
