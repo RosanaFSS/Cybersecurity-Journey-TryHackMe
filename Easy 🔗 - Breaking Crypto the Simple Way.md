@@ -19,7 +19,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 > 1.1. <em>I have started the target machine and I'm ready to break crypto!</em>.<a id='1.1'></a>
->> <code><strong>No answer needed{ready}</strong></code><br>
+>> <code><strong>No answer needed</strong></code><br>
+
+<br>
 
 <p>Navigated to <code>http://TargetIP</code> after adding it to <code>/etc/hosts</code>.</p>
 
@@ -48,7 +50,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 > 3.1. <em>What is the flag?</em>.<a id='3.1'></a>
->> <code><strong>sunshine{ready}</strong></code><br>
+>> <code><strong>sunshine</strong></code><br>
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/3d301f4d-dd00-4332-a503-93fac5ed0990)
 
