@@ -51,10 +51,14 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <code>q</code>code>=214102333408513040694153189550512987959</p>
 
 
-<p>Ran a script: <code>Task2.py</code>.</p>
+<p>Ran a script: <code>Task2-1.py</code>.</p>
 
 
 ![image](https://github.com/user-attachments/assets/d7c04856-662f-456e-bb3d-f845d15cb715)
+
+<br>
+
+<p>Ran a script: <code>Task2-2.py</code>.</p>
 
 <br>
 
