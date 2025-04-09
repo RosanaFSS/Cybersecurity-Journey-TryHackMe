@@ -51,7 +51,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{149}}$$-day-streak in  <a href="h
 
 <br>
 
-<p>user.txt</p>
+<p><code>cat</code> user.txt</p>
 
 ![October-01-2024 - TryHackMe - Anonforce - CTF - Easy - Image 4](https://github.com/user-attachments/assets/214ff01a-672a-4a82-88fa-79efce07f21d)
 
