@@ -1,9 +1,8 @@
 
 <p align="center">April 10, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br></p>
-
-https://github.com/user-attachments/assets/f091ab8b-6389-45e2-a36d-01b50b863eeb
+It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="160px" src="https://github.com/user-attachments/assets/f091ab8b-6389-45e2-a36d-01b50b863eeb"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{SOC L1 Alert Triage}}$$</h1>
 
@@ -124,7 +123,7 @@ It is classified as an easy-level walkthrough room, and you can join it for 🆓
 
 
 <h3>Picking the Right Alert</h3>
-<p>Every SOC team decides on its own prioritisation rules and usually automates them by setting the appropriate alert sorting logic in SIEM or EDR. Below, you may see the generic, simplest, and most commonly used approach::<br>
+<p>Every SOC team decides on its own prioritisation rules and usually automates them by setting the appropriate alert sorting logic in SIEM or EDR. Below, you may see the generic, simplest, and most commonly used approach:<br>
 <ol type="1. ">
     <li><code>Filter the alerts</code> | Make sure you don't take the alert that other analysts have already reviewed, or that is already being investigated by one of your teammates. You should only take new, yet unseen and unresolved alerts.</li>
     <li><code>Sort by severity</code> | Start with critical alerts, then high, medium, and finally low. This is because detection engineers design rules so that critical alerts are much more likely to be real, major threats and cause much more impact than medium or low ones.</li>
