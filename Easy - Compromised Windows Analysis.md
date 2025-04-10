@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 
 <p align="center">"Learn about some key forensic artifacts and solve an interesting case of a compromised Windows workstation." It is classified as an easy-level walkthrough room,  and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking  <a href="https://tryhackme.com/room/compromisedwindowsanalysis">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/92cac26d-8c7c-41d0-826c-c8aef3fbbcbc"> </p>
 
 <br>
 <br>
@@ -237,21 +237,93 @@ Processing C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent\Amazo
 
 <br>
 
-> 7.1. <em>What is the full path of the malicious file?</em><br><a id='7.1'></a>
->> <strong><code>c:\users\administrator\desktop\cursed\cipher.exe</code></strong><br>
+> 8.1. <em>When was Defender disabled? Answer in 12 hour clock format. e.g. hours:minutes:seconds AM/PM</em><br><a id='8.1'></a>
+>> <strong><code>10:25:14 AM</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/24cd5fb5-cf8d-4791-88bc-104b51a35e41)
+![image](https://github.com/user-attachments/assets/4d1cca40-8018-4168-8d07-027488706faf)
+
 
 <br>
 
-![image](https://github.com/user-attachments/assets/113a9506-0211-40fc-bb84-9d9b2b245672)
+<br>
+
+> 8.2. <em>What is the IP address of the attacker's system?</em><br><a id='8.2'></a>
+>> <strong><code>10.11.90.211</code></strong><br>
+<p></p>
+
+
 
 <br>
 
-![image](https://github.com/user-attachments/assets/7b10d522-85d5-4bdf-ab33-5627e3acc4b2)
+![image](https://github.com/user-attachments/assets/7ad31548-b1ea-4771-8857-8c552163fcbd)
+
+<br>
+
+<h2>Task 9 . Chronological Order of Attack</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 9.1. <em>Complete the room!</em><br><a id='9.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+<br><br>
+
+<br>
+<br>
 
 
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/9f7aa2cc-899c-4c4c-ab77-7f9a86d8de77">
+<br><img width="900px" src="https://github.com/user-attachments/assets/f6321872-5caf-4976-9ac6-3a589a700e61"></p>
 
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 9, 2025     | 338      |     297ᵗʰ    |        8ᵗʰ   |    272ⁿᵈ    |     2ⁿᵈ    |  92,142  |       651 |   59      |
+
+</div>
+
+<br>
+
+<p align="center">Bronze League 7ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/16033216-661b-4505-9b89-d15d4176cee4"> </p>
+
+<br>
+
+<p align="center"> Global All Time: 297ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a6f4ecb1-2159-43da-8951-80fc12a113d6"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="ttps://github.com/user-attachments/assets/b8af675b-c7b8-4b59-87e9-d49b8fbb989d"> </p>
+
+<p align="center"> Global monthly: 272ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/e7629a3f-197f-413e-a072-636c0ec9bd955"> </p>
+
+<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/87dd5dec-7e70-463e-84f2-b0f718672f00"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>, <a href="https://tryhackme.com/p/aashirmasood">aashirmasood</a> and  <a href="https://tryhackme.com/p/Aashir.Masood">Aashir.Masood</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
