@@ -5,12 +5,10 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{338}}$$-day-streak in  <a href="h
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Compromised Windows Analysis}}$$</h1>
 
 
-<p align="center">"Learn about some key forensic artifacts and solve an interesting case of a compromised Windows workstation." It is classified as an easy-level walkthrough room,  and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking  <a href="https://tryhackme.com/room/compromisedwindowsanalysis">here</a>.</p>
+<p align="center">"Learn about some key forensic artifacts and solve an interesting case of a compromised Windows workstation." <br>
+It is classified as an easy-level walkthrough room, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br> Can be accessed clicking  <a href="https://tryhackme.com/room/compromisedwindowsanalysis">here</a>.</p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/92cac26d-8c7c-41d0-826c-c8aef3fbbcbc"> </p>
-
-<br>
-<br>
 
 <br>
 <br>
