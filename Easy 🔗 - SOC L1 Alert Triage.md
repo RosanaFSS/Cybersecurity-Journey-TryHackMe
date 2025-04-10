@@ -55,7 +55,7 @@ It is classified as an easy-level walkthrough room, and you can join it for 🆓
 <br>
 
 > 2.1. <em>What is the number of alerts you see in the SOC dashboard?</em><br><a id='2.1'></a>
->> <strong><code>___</code></strong><br>
+>> <strong><code>5</code></strong><br>
 <p></p>
 
 <br>
@@ -124,11 +124,12 @@ It is classified as an easy-level walkthrough room, and you can join it for 🆓
 
 
 <h3>Picking the Right Alert</h3>
-<p>Every SOC team decides on its own prioritisation rules and usually automates them by setting the appropriate alert sorting logic in SIEM or EDR. Below, you may see the generic, simplest, and most commonly used approach:</p>
-1.
-2.
-3.
-
+<p>Every SOC team decides on its own prioritisation rules and usually automates them by setting the appropriate alert sorting logic in SIEM or EDR. Below, you may see the generic, simplest, and most commonly used approach::<br>
+<ol type="1. ">
+    <li><code>Filter the alerts</code> | Make sure you don't take the alert that other analysts have already reviewed, or that is already being investigated by one of your teammates. You should only take new, yet unseen and unresolved alerts.</li>
+    <li><code>Sort by severity</code> | Start with critical alerts, then high, medium, and finally low. This is because detection engineers design rules so that critical alerts are much more likely to be real, major threats and cause much more impact than medium or low ones.</li>
+    <li><code>Sort by time</code> | Start with the oldest alerts and end with the newest ones. The idea is that if both alerts are about two breaches, the hacker from the older breach is likely already dumping your data, while the "newcomer" has just started the discovery.</li>
+</ol></p>
 
 
 <br>
