@@ -12,7 +12,7 @@ It is classified as an easy-level walkthrough room.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/b07902ee-d6f5-4adf-b647-1aa34b7ba849"> </p>
 
 <br>
 <br>
@@ -175,8 +175,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">
 <h3>Final Actions</h3>
 <p>Your decisions here determine whether you found or missed the potential cyberattack. Some actions like Escalation or Commenting will be explained in the following rooms, so don't worry if they sound complex right now. First, decide if the alert you investigated is malicious (True Positive) or not (False Positive). Then, prepare your detailed comment explaining your analysis steps and verdict reasoning, return to the dashboard and move it to the Closed status.</p>
 
-<br>
-
 <h4>SOC Dashboard Notes</h4>
 <p>If you didn't receive a flag after your triage, it means that the values you set are wrong.<br>
 You can reset the SOC dashboard by clicking Restart on the top right in the TryHackMe SIEM.</p>
@@ -202,14 +200,87 @@ To finish this process I chose <code>Close</code> and clicked <code>Save</code>.
 
 
 > 5.2. <em>Which flag did you receive after you correctly triaged the second-priority alert?</em><br><a id='5.2'></a>
->> <strong><code>_____________________</code></strong><br>
+>> <strong><code>THM{how_could_this_user_fall_for_it?}</code></strong><br>
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/a0871647-f4a5-4118-8432-4efecfd8d13c)
+
+<br>
+
 
 > 5.3. <em>Which flag did you receive after you correctly triaged the third-priority alert?</em><br><a id='5.3'></a>
->> <strong><code>____________________</code></strong><br>
+>> <strong><code>THM{should_we_allow_github_for_devs?}</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/989e31f0-d03d-4bd2-b9a0-732d9eb285ae)
+
+
+<br>
+
+<br><br>
+
+<h2>Task 6 . Conclusion</h2>
+<p>Congratulations on successfully triaging the alerts! Of course, closing the alert as True Positive won't prevent the attack, but it is a great start. Next, you will learn about proper alert commenting and case reporting, correct escalation procedures, and actions made by L2 analysts after the escalation. We hope you enjoyed the room!</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questionsbelow}}$$ </h3>
+
+<br>
+
+> 6.1. <em>I am ready to move on!.</em><br><a id='6.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/ceaeb216-fe67-4aa9-9ba1-a32e80fd7722"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/473e4439-5baf-4c76-b8bb-37bcd9e29a49"></p>
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 10, 2025    | 339      |     298ᵗʰ    |        8ᵗʰ   |    250ᵗʰ    |     2ⁿᵈ    |  92,222  |       652 |   59      |
+
+</div>
+
+<br>
+
+<p align="center">League<br><br><img width="300px" src="https://github.com/user-attachments/assets/29b35e41-b041-4696-985d-7b4bd6fb88ff"> </p>
+
+
+<br>
+
+<p align="center"> Global All Time: 298ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/d52c4fd8-067f-449a-aa9a-d11f9f899241"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a8f0de66-46ad-4594-8ed0-ddda17bc1981"> </p>
+
+<p align="center"> Global monthly: 250ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/30c2bf9f-7ce8-4ca3-95d9-c901bb0e86a9"> </p>
+
+<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/057a1277-d151-457c-aa6e-f4b0ae5ac00e"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> and  <a href="https://tryhackme.com/p/TactfulTurtle">TactfulTurtle</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
