@@ -53,8 +53,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/servidae">here</a>
 
 To further our understanding, we can discuss each component in a bit more detail:</p>
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/e1726518-236e-46a9-95f4-828410cbbb12)
 
 <h3>Elasticsearch</h3>
