@@ -57,9 +57,6 @@ To further our understanding, we can discuss each component in a bit more detail
 
 ![image](https://github.com/user-attachments/assets/e1726518-236e-46a9-95f4-828410cbbb12)
 
-<br>
-
-
 <h3>Elasticsearch</h3>
 <p>As the central component of the Elastic Stack, Elasticsearch is an open-source, distributed search and analytics engine designed for storing and indexing large volumes of data. Its highly scalable system can store and search various data types, including structured, unstructured, and semi-structured data. Elasticsearch is built on top of Apache Lucene, an open-source search engine library, and provides a simple REST API for indexing, searching, and analyzing data.
 
