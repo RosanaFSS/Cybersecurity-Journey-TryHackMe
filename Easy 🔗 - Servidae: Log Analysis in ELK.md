@@ -419,7 +419,7 @@ That's a great start; we've narrowed our search to the dates and times we are in
 <br>
 
 > 9.3. <em>What is the name of the registry value that the attacker added?</em>Hint : <em>In the "reg add" command, the "/v" flag is used to specify the name of the registry value being added or modified.</em><br><a id='9.1'></a>
->> <strong><code>___</code></strong><br>
+>> <strong><code>BackdoorShell</code></strong><br>
 <p></p>
 
 <br>
