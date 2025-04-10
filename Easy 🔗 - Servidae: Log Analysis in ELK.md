@@ -26,12 +26,12 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/servidae">here</a>
 <p>.  Get familiar with the Elastic (ELK) Stack and its components.<br>
 .  Understand the significance of log data analysis in detecting and investigating security incidents.<br>
 .  Get introduced to Kibana and its key functionalities for data analysis, visualization, and exploration.<br>
-.  Gain hands-on experience with analyzing log data to identify real-world security threats and anomalies.</p><br>
+.  Gain hands-on experience with analyzing log data to identify real-world security threats and anomalies.</p>
 
 <h3>Room Prerequisites</h3>
 
 <p>.  General familiarity with Windows - check out the Windows Fundamentals module.<br>
-.  General context on SIEMs and how they're used - the Introduction to SIEM is an excellent room for this.</p><br><br>
+.  General context on SIEMs and how they're used - the Introduction to SIEM is an excellent room for this.</p>
 
 <p>Once you are ready to go, click on the Start Machine button attached to this task! I recommend starting it now, as Elasticsearch may take up to 5 minutes to fully start up.</p><br>
 
