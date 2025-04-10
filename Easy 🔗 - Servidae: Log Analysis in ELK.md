@@ -12,7 +12,7 @@ It is classified as an easy-level walkthrough room.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/servidae">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/04406bd9-e5fa-4974-adf5-38098e180fcc"> </p>
 
 <br>
 <br>
@@ -277,7 +277,7 @@ That's a great start; we've narrowed our search to the dates and times we are in
 
 <br>
 
-> 5.1. <em>What was the process ID (PID) of the potentially malicious PowerShell script?</em> Hint : <em>You can find this information under the "message" field or the "process.pid" field on the third page.</em><br><a id='5.1'></a>
+> 6.1. <em>What was the process ID (PID) of the potentially malicious PowerShell script?</em> Hint : <em>You can find this information under the "message" field or the "process.pid" field on the third page.</em><br><a id='6.1'></a>
 >> <strong><code>6712</code></strong><br>
 <p></p>
 
@@ -319,10 +319,254 @@ That's a great start; we've narrowed our search to the dates and times we are in
 
 <br>
 
-> 5.2. <em>What was the parent process name of the process that spawned powershell.exe?</em> Hint : <em>Check under "process.parent.name".</em><br><a id='5.1'></a>
->> <strong><code>6712</code></strong><br>
+> 6.2. <em>What was the parent process name of the process that spawned powershell.exe?</em> Hint : <em>Check under "process.parent.name".</em><br><a id='6.2'></a>
+>> <strong><code>explorer.exe</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/2a5c9f06-9177-425d-8c17-91ecb74fc709)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/d510db38-8930-4c69-ae72-e0c0d9eaaf00)
+
+<br>
+<br>
+<h2>Task 7 . Indicator of Compromise: Discovery</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 7.1. <em>What is the domain name of the attacker's server hosting the winPEAS executable?</em>Hint : <em>You can find this in the "-Uri" argument of the PowerShell command.</em><br><a id='7.1'></a>
+>> <strong><code>evilparrot.thm</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/df6329e4-5341-4e4c-b31b-d40a5d8262fa)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/47b734eb-677d-4b8c-8191-123dc7f039bc)
+
+<br>
+
+> 7.2. <em>What is the full path of the HKEY_LOCAL_MACHINE registry entry that was queried?</em>Hint : <em>Check under the process.command_line field! Ensure you're looking at the correct registry tree..</em><br><a id='7.2'></a>
+>> <strong><code>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6c1c04b1-8fe5-4429-8859-23051ee18c8d)
+
+<br>
+<br>
+<h2>Task 8 . Indicator of Compromise: Privilege Escalation</h2>
+
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 8.1. <em>What is the name of the malicious .msi file?</em>Hint : <em>Expand the event logs to see what was run. The file name was specified in the -OutFile argument of the PowerShell cmdlet.</em><br><a id='8.1'></a>
+>> <strong><code>adminshell.msi</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e1dce8fa-d6b2-4c9f-8252-6989fb638d6c)
+
+
+<br>
+<br>
+<h2>Task 9 . Indicator of Compromise: Persistence</h2>
+
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 9.1. <em>What is the name of the user account that the attacker created to maintain privileged access?</em>Hint : <em>The syntax for this command is typically "net user [username] [password]".</em><br><a id='9.1'></a>
+>> <strong><code>backdoor</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6ffd0734-7215-4ba9-8ade-3422e3379ebe)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e12864ca-d7ae-4f39-ac83-78d9e8fbbd47)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/927557a8-f796-426a-8f1b-27bf272c30e2)
+
+
+<br>
+
+> 9.2. <em>What is the flag sent via cURL requests to the evilparrot.thm server?</em>Hint : <em>The flag can be found in the URL parameter of the HTTP request. The URL parameters follow the "?" character in the URL.</em><br><a id='9.1'></a>
+>> <strong><code>THM{C4N_y0U_h34r_m3}</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7e9ad464-5dc5-4dc9-bada-8beae4a01867)
+
+<br>
+
+> 9.3. <em>What is the name of the registry value that the attacker added?</em>Hint : <em>In the "reg add" command, the "/v" flag is used to specify the name of the registry value being added or modified.</em><br><a id='9.1'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d6440f43-5085-49df-9995-0ec1463558c1)
+
+
+<br>
+<br>
+<h2>Task 10 . Indicator of Compromise: Lateral Movement</h2>
+
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 10.1. <em>What was the password that the attacker used to access Bill's user account on the internal payroll website?</em>Hint : <em>The PHPSESSID KQL query mentioned earlier may come in handy here.</em><br><a id='10.1'></a>
+>> <strong><code>Password123!</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d6c4bc7a-142c-4135-957a-7b345485ecbe)
+
+
+<br>
+
+> 10.2. <em>What flag was included within the HTTP requests during the attacker's successful logins?</em>Hint : <em>Check the request parameters for the flag.</em><br><a id='10.2'></a>
+>> <strong><code>THM{1m_1N_Y0ur_P4YR0LL}!</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5a1b480e-84bd-4eea-a38f-a1ea757c0eae)
+
+<br>
+
+> 10.3. <em>What was the session cookie value that the attacker included in the cURL request at 18:58:08.001?</em>Hint : <em>PHPSESSID=*******</em><br><a id='10.3'></a>
+>> <strong><code>dt5qhq423goknmq269rg1tal1a</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4ed938a1-a990-4e4d-8f65-f0daeb33fefb)
+
+<br>
+
+> 10.4. <em>What is the name of the sensitive file that the attacker downloaded?</em>Hint : <em>PHPSESSID=*******</em><br><a id='10.4'></a>
+>> <strong><code>![image](https://github.com/user-attachments/assets/7065596f-e710-49c3-943d-00d104e02af6)
+</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a50ed049-cba5-4737-8d99-8c83f9c70894)
+
+<br>
+<br>
+<h2>Task 11 . Conclusion</h2>
+
+<h3>Conclusion</h3>
+<p>To summarize our analysis, we identified several indicators of compromise on Bill's workstation. We mapped several of these log events to common tactics and techniques conducted by threat actors. Through a comprehensive exploration of search and filter functions in Kibana, we successfully deciphered the actions performed by a malicious actor on the compromised system.
+
+We gained practical insights into the attacker's tactics and techniques and enhanced our understanding of real-world cyber security incident scenarios. This exercise highlighted the significance of log analysis and its role in detecting and mitigating security incidents, reinforcing the importance of continuous monitoring and analysis of log data to fortify our defences against malicious actors.</p>
+
+<br>
+
+<h3>Next Steps</h3>
+<p>After completing the log analysis and gaining valuable insights into the actions of the malicious actor, it is essential to highlight that the analysis phase is just one component of the broader incident response process. Typically, the remaining incident response process involves additional crucial steps that are beyond the scope of this room but equally as important:<br>
+
+.  Containment: Isolating the affected system or network segment to prevent further damage.<br>
+.  Eradication: Removing the malicious presence from the compromised system.<br>
+.  Recovery: Restoring the system or network to its normal functioning state.<br>
+.  Post-Incident Activity: Assessing the incident, identifying root causes, documenting lessons learned, and implementing security enhancements.<br><br>
+
+The Computer Security Incident Handling Guide by NIST (National Institute of Standards and Technology) is a fantastic resource for in-depth guidelines and best practices for effectively responding to computer security incidents.</p>
+
+<h3>Further Research</h3>
+<p>.  elastic.co/elastic-stack: The Elastic Stack's official website.<br>
+.  ECS Field Reference: ECS (Elastic Common Schema) field reference guide.<br>
+.  attack.mitre.org: The official website of the MITRE ATT&CK framework.</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 11.1. <em>What was the password that the attacker used to access Bill's user account on the internal payroll website?</em>Hint : <em>The PHPSESSID KQL query mentioned earlier may come in handy here.</em><br><a id='11.1'></a>
+>> <strong><code>Click and continue learning!</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/0942f634-b12f-43f2-953b-9a544a6fdd13"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/b7577cee-53ae-443e-8284-577379e50948"></p>
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 10, 2025    | 339      |     298ᵗʰ    |        8ᵗʰ   |    257ᵗʰ    |     2ⁿᵈ    |  92,366  |       653 |   59      |
+
+</div>
+
+<br>
+
+
+<p align="center">Weekly League: Bronze 7ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/e08f6039-88ca-4e21-8ec9-a29e1104081a"> </p>
+
+
+<br>
+
+<p align="center"> Global All Time: 298ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/1a765417-841e-4e48-98f0-4fdd634780e7"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6b620e38-c130-4f22-8b13-eea6b36e79d1"> </p>
+
+<p align="center"> Global monthly: 257ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0b936b49-5462-42fc-88fa-0a0e361f18bf"> </p>
+
+<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/9314c3ba-1011-4199-9dfd-1866bee6ba71"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
