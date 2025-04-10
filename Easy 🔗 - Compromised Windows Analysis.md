@@ -313,7 +313,7 @@ Processing C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Recent\Amazo
 
 <p align="center"> Global All Time: 297ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a6f4ecb1-2159-43da-8951-80fc12a113d6"> </p>
 
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="ttps://github.com/user-attachments/assets/b8af675b-c7b8-4b59-87e9-d49b8fbb989d"> </p>
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/b8af675b-c7b8-4b59-87e9-d49b8fbb989d"> </p>
 
 <p align="center"> Global monthly: 272ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/e7629a3f-197f-413e-a072-636c0ec9bd955"> </p>
 
