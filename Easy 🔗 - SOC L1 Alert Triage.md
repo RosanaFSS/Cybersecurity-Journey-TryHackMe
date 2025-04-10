@@ -35,8 +35,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">
 <h3>SOC Dashboard</h3>
 <p>You were granted access to the SOC dashboard in the TryHackMe SIEM, and you will need it to complete most of the tasks. Open the attached website in a separate window, familiarise yourself with it, and move on to the next task!</p>
 
-<br>
-
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
@@ -48,8 +46,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">
 <br><br>
 
 <h2>Task 2 . Events and Alerts</h2>
-
-<br>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
@@ -92,8 +88,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">
 ![image](https://github.com/user-attachments/assets/c602afea-8410-45b3-a407-dfd39a491a07)
 
 
-<br>
-
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
@@ -132,8 +126,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">
     <li><code>Sort by time</code> | Start with the oldest alerts and end with the newest ones. The idea is that if both alerts are about two breaches, the hacker from the older breach is likely already dumping your data, while the "newcomer" has just started the discovery.</li>
 </ol></p>
 
-
-<br>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
@@ -189,7 +181,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">
 <p>If you didn't receive a flag after your triage, it means that the values you set are wrong.<br>
 You can reset the SOC dashboard by clicking Restart on the top right in the TryHackMe SIEM.</p>
 
-<br>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
