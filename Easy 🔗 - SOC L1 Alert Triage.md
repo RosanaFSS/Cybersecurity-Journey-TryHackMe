@@ -8,7 +8,9 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="h
 
 
 <p align="center">"Learn more about SOC alerts and build a systematic approach to efficiently triaging them." <br>
-It is classified as an easy-level walkthrough room, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br> Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">here</a>.</p>
+It is classified as an easy-level walkthrough room.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alerttriage">here</a>.</p>
 
 <p align="center"> <img width="900px" src=""> </p>
 
