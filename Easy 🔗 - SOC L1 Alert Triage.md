@@ -171,11 +171,13 @@ It is classified as an easy-level walkthrough room, and you can join it for 🆓
 <p>The initial steps are designed to ensure that you take ownership of the assigned alert and avoid interfering with alerts being handled by other analysts, and confirm that you are fully prepared to proceed with the detailed investigation. You achieve it by first assigning the alert to yourself, moving it to In Progress, and then familiarising yourself with the alert details like its name, description, and key indicators.</p>
 
 <h3>Investigation</h3>
-<p>This is the most complex step, requiring you to apply your technical knowledge and experience to understand the activity and properly analyse its legitimacy in SIEM or EDR logs. To support L1 analysts with this step, some teams develop Workbooks (also known as playbooks or runbooks) - instructions on how to investigate the specific category of alerts. If workbooks are not available, below are some key recommendations:</p>
-1.
-2.
-3.
-4.
+<p>This is the most complex step, requiring you to apply your technical knowledge and experience to understand the activity and properly analyse its legitimacy in SIEM or EDR logs. To support L1 analysts with this step, some teams develop Workbooks (also known as playbooks or runbooks) - instructions on how to investigate the specific category of alerts. If workbooks are not available, below are some key recommendations:<br>
+<ol type="1. ">
+    <li>Understand who is under threat, like the affected user, hostname, cloud, network, or website</li>
+    <li>Note the action described in the alert, like whether it was a suspicious login, malware, or phishing</li>
+    <li>Review surrounding events, looking for suspicious actions shortly after or before the alert</li>
+    <li>Use threat intelligence platforms or other available resources to verify your thoughts</li>
+</ol></p>
 
 <h3>Final Actions</h3>
 <p>Your decisions here determine whether you found or missed the potential cyberattack. Some actions like Escalation or Commenting will be explained in the following rooms, so don't worry if they sound complex right now. First, decide if the alert you investigated is malicious (True Positive) or not (False Positive). Then, prepare your detailed comment explaining your analysis steps and verdict reasoning, return to the dashboard and move it to the Closed status.</p>
