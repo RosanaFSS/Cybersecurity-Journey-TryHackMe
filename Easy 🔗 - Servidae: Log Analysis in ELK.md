@@ -460,7 +460,7 @@ That's a great start; we've narrowed our search to the dates and times we are in
 <br>
 
 > 10.3. <em>What was the session cookie value that the attacker included in the cURL request at 18:58:08.001?</em>Hint : <em>PHPSESSID=*******</em><br><a id='10.3'></a>
->> <strong><code>dt5qhq423goknmq269rg1tal1a</code></strong><br>
+>> <strong><code>bank-details.csv</code></strong><br>
 <p></p>
 
 <br>
@@ -470,7 +470,7 @@ That's a great start; we've narrowed our search to the dates and times we are in
 <br>
 
 > 10.4. <em>What is the name of the sensitive file that the attacker downloaded?</em>Hint : <em>PHPSESSID=*******</em><br><a id='10.4'></a>
->> <strong><code>![image](https://github.com/user-attachments/assets/7065596f-e710-49c3-943d-00d104e02af6)
+>> <strong><code>dt5qhq423goknmq269rg1tal1a</code></strong><br>
 </code></strong><br>
 <p></p>
 
@@ -510,7 +510,7 @@ The Computer Security Incident Handling Guide by NIST (National Institute of Sta
 
 <br>
 
-> 11.1. <em>What was the password that the attacker used to access Bill's user account on the internal payroll website?</em>Hint : <em>The PHPSESSID KQL query mentioned earlier may come in handy here.</em><br><a id='11.1'></a>
+> 11.1. <em>Click and continue learning!</em><br><a id='11.1'></a>
 >> <strong><code>Click and continue learning!</code></strong><br>
 <p></p>
 
