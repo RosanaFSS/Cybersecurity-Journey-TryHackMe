@@ -192,7 +192,7 @@ Refreshed the webpage.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 7, 2025     | 336      |     299ᵗʰ    |        8ᵗʰ   |    354ᵗʰ    |     3ʳᵈ    |  92,038  |       650 |   59      |
+| April 9, 2025     | 338      |     299ᵗʰ    |        8ᵗʰ   |    354ᵗʰ    |     3ʳᵈ    |  92,038  |       650 |   59      |
 
 </div>
 
