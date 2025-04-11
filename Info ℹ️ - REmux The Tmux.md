@@ -398,92 +398,137 @@ prefix and command. This will run on the first tmux session. The session running
 
 <br>
 
-> 2.1. <em>How to create a new pane split horizontally?</em><br><a id='2.1'></a>
+> 3.1. <em>How to create a new pane split horizontally?</em><br><a id='3.1'></a>
+>> <strong><code>ctrl b shift "</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f86540ef-d69c-4456-9124-65b371dd24f1)
+
+
+
+<br>
+
+> 3.2. <em>How to close a tmux pane like closing a ssh session?</em><br><a id='3.2'></a>
+>> <strong><code>exit</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7ce05736-c684-483a-914c-755599c3888d)
+
+
+
+<br>
+
+> 3.3. <em>How to create a new pane split vertically?</em><br><a id='3.3'></a>
+>> <strong><code>ctrl b shift %</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ae3eae99-54f8-407c-bb8c-c6a4ee871f0c)
+
+
+
+<br>
+
+> 3.4. <em>How to cycle between tmux pre built layout options? Starting with the number 1.</em><br><a id='3.4'></a>
+>> <strong><code>ctrl b esc 1</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/574d75e7-2def-4d13-a381-b56fa712d507)
+
+
+<br>
+
+
+> 3.5. <em>How to cycle/toggle between tmux layouts, one at a time?</em><br><a id='3.5'></a>
+>> <strong><code>ctrl b spacebar</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4e80a8f0-cf01-4784-b284-494c7b0d9953)
+
+
+
+<br>
+
+> 3.6. <em>How to force quit a frozen, crashed or borked pane?</em><br><a id='3.6'></a>
+>> <strong><code>ctrl b x y</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e9f35bf3-d657-454f-b5b9-7a8e5e162747)
+
+
+
+<br>
+
+> 3.7. <em>How to move between the two must used tmux panes for the current tmux window?</em><br><a id='3.7'></a>
+>> <strong><code>ctrl b ;</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/51ea0577-af0b-4935-bce6-f784a4d5ea61)
+
+
+
+<br>
+
+> 3.8. <em>Can you use the arrow to move to the desired pane? yea/nay</em><br><a id='3.8'></a>
+>> <strong><code>yea</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/47260759-c161-4898-a824-fd26c77102b2)
+
+
+<br>
+
+> 3.9.<em>How to move the currently selected pane clockwise?</em><br><a id='3.9'></a>
+>> <strong><code>ctrl b shift }</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e8ba4379-4f8c-4222-b2cb-84073e18693a)
+
+
+![image](https://github.com/user-attachments/assets/bd085349-743b-4ea3-a3f7-f8b4da149d44)
+
+
+<br>
+
+> 3.10.<em>How to move the currently selected pane counter-clockwise?</em><br><a id='3.10'></a>
+>> <strong><code>ctrl b shift }</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 3.11.<em>Before using swap-pane. How to check for which pane has what number?</em><br><a id='3.11'></a>
 >> <strong><code>___</code></strong><br>
 <p></p>
 
 
 <br>
 
-> 2.2. <em>How to close a tmux pane like closing a ssh session?</em><br><a id='2.2'></a>
+> 3.12.<em>How to swap two panes and move with the swapped pane?  Within tmux prompt mode. 1 -> 3 location</em><br><a id='3.12'></a>
 >> <strong><code>___</code></strong><br>
 <p></p>
 
 
 <br>
 
-> 2.3. <em>How to create a new pane split vertically?</em><br><a id='2.3'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.4. <em>How to cycle between tmux pre built layout options? Starting with the number 1.</em><br><a id='2.4'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-
-> 2.5. <em>How to cycle/toggle between tmux layouts, one at a time?</em><br><a id='2.5'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.6. <em>How to force quit a frozen, crashed or borked pane?</em><br><a id='2.6'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.7. <em>How to move between the two must used tmux panes for the current tmux window?</em><br><a id='2.7'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.8. <em>Can you use the arrow to move to the desired pane? yea/nay</em><br><a id='2.8'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.9.<em>How to move the currently selected pane clockwise?</em><br><a id='2.9'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.10.<em>How to move the currently selected pane counter-clockwise?</em><br><a id='2.10'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.11.<em>Before using swap-pane. How to check for which pane has what number?</em><br><a id='2.11'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.12.<em>How to swap two panes and move with the swapped pane?  Within tmux prompt mode. 1 -> 3 location</em><br><a id='2.12'></a>
->> <strong><code>___</code></strong><br>
-<p></p>
-
-
-<br>
-
-> 2.13.<em>How to swap two panes without changing the currently selected pane location? Within tmux prompt mode. 1 -> 4 pane number</em><br><a id='2.13'></a>
+> 3.13.<em>How to swap two panes without changing the currently selected pane location? Within tmux prompt mode. 1 -> 4 pane number</em><br><a id='3.13'></a>
 >> <strong><code>___</code></strong><br>
 <p></p>
 
