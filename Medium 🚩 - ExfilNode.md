@@ -84,10 +84,6 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 <br>
 
-2025-03-19 09:07:41
-
-
-
 
 > 1.2. <em>What was the timezone of Liam’s device?</em><br><a id='1.2'></a>
 >> <strong><code>__</code></strong><br>
