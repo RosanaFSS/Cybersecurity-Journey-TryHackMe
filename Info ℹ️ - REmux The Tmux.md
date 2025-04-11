@@ -3,10 +3,7 @@
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"></p>
-
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{REmux The Tmux}}$$</h1>
-
-
 <p align="center">"Updated, how to use tmux guide. Defaults and customize your workflow." <br>
 It is classified as an info room.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
