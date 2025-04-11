@@ -178,6 +178,36 @@ Password: Redacted</p>
 
 <br>
 
+> 2.13. <em>Is tmux case sensitive. Will hitting the caps lock break tmux? yea/nay</em><br><a id='2.13'></a>
+>> <strong><code>yea</code></strong><br>
+<p></p>
+
+<br>
+
+> 2.14. <em>Within tmux prompt or command mode how would you change the tmux directory? Where a new window or pane will start from the changed directory of /opt.</em>Hint : <em>the short version of attach -c /new/path</em><br><a id='2.14'></a>
+>> <strong><code>a -c /opt</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e26562a8-26f8-4d2e-88fe-cd8753cbfd3e)
+
+<br>
+
+> 2.15. <em>How to kill all tmux sessions accept the one currently in use? With the name "notes".</em>Hint : <em>the short version of attach -c /new/path</em><br><a id='2.15'></a>
+>> <strong><code>a -c /opt</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/132ab1b1-8b2e-42d6-8fce-0551aa93f2d5)
+
+<br>
+<br>
+
+
+
+
 <h2>Task 3 . Manage tmux "Panes"</h2>
 
 
