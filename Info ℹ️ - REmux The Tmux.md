@@ -494,7 +494,7 @@ prefix and command. This will run on the first tmux session. The session running
 <br>
 
 > 3.9.<em>How to move the currently selected pane clockwise?</em><br><a id='3.9'></a>
->> <strong><code>ctrl b shift }</code></strong><br>
+>> <strong><code>ctrl b shift {</code></strong><br>
 <p></p>
 
 <br>
@@ -502,14 +502,15 @@ prefix and command. This will run on the first tmux session. The session running
 ![image](https://github.com/user-attachments/assets/e8ba4379-4f8c-4222-b2cb-84073e18693a)
 
 
-![image](https://github.com/user-attachments/assets/bd085349-743b-4ea3-a3f7-f8b4da149d44)
-
-
 <br>
 
 > 3.10.<em>How to move the currently selected pane counter-clockwise?</em><br><a id='3.10'></a>
 >> <strong><code>ctrl b shift }</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bd085349-743b-4ea3-a3f7-f8b4da149d44)
 
 
 <br>
