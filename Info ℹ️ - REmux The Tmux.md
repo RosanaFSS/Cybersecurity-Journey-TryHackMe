@@ -1,5 +1,5 @@
 
-<p align="center">April 10, 2025<br>
+<p align="center">April 11, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"></p>
@@ -10,6 +10,17 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a>.</p>
 
 <p align="center"> <img width="900px" src=""> </p>
+
+<br>
+<br>
+
+<p>As my contribution I share the official <code>REMnux</code> website:<br>
+https://remnux.org/<br><br>
+
+REMnux® is a Linux Toolkit for Malware Analysis.<br><br>
+REMnux® is a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools.<,/P
+
+
 
 <h2>Task 1 . Tmux practice machine</h2>
 <p>Tmux is known as a terminal multiplexer. That allows you to craft a single terminal however you need it.<br>
@@ -37,14 +48,195 @@ Password: Redacted</p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/f966cd63-4fbd-49e6-9c11-94d34817e3ad)
+![image](https://github.com/user-attachments/assets/089ab743-1efa-49e5-8de6-8e51f718d807)
+
 
 <br>
 
 <h2>Task 2 . Starting tmux "Sessions" and default tmux "prefix"</h2>
+<p>﻿To start a new tmux session just run the tmux command with no arguments. The first session create will have the name "0". By default, tmux status bar will be green. With session name on the left. Windows in the middle and window names in the middle. Hostname, time, and date on the right of the bottom green bar.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/60215eda-a049-496f-9272-5c19055f4fe0)
+
+<br>
+
+<p>﻿Tmux doesn't allow to create of a nested tmux within a tmux unless you force it to. When running the tmux command a second time.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1d9620ed-f364-4e89-93d0-21eca2db6d55)
+
+<br>
+
+<p>To change the session name from "0" -> "box-dev". Must first learn how tmux is called. All commands within a tmux session all start with the tmux prefix is. By default, the tmux prefix is "Ctrl b".<br>
+
+After the tmux prefix. To the hotkeys to change the current tmux session's name is "shift $". </p>
+
+<h3>ctrl b shift $</h3>h3>
+
+<p>Retype the new name and then enter-key to save the new session name.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/35cd225c-ba9d-4b88-b8a9-98a2e76178e3)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bec14419-82e6-40d2-8a44-ad826a9653e3)
+
+<br>
+
+
+<p>If there is a need to create another tmux session within the current one. Use the -d argument with the tmux command. To spawn a new tmux session without attaching to it. In the example image below. The -s argument is used to specify the session name for the new session. Typed as "tmux new -s <new-session-name> -d".</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/917c8a48-6541-4490-9420-a889a469fdc6)
+
+<br>
+
+<p>To list all active tmux sessions. Run tmux with list-sessions. Or the short version of list-sessions as ls. In the example below. Running tmux ls also shows the current session in use. Marked by "(attached)".</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/fdb75a49-b496-4f9e-af7d-2893592be659)
+
+<br>
+
+
+<p>To list all active tmux sessions. Run tmux with list-sessions. Or the short version of list-sessions as ls. In the example below. Running tmux ls also shows the current session in use. Marked by "(attached)".</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a10e1dc6-fe85-48c0-9e21-c8ec840074cf)
+
+<br>
+
+<p>Exiting a tmux session without closing it can be done with the prefix. Followed by d</p><br>
+
+<h3>ctrl b d</h3>
+<p>Checking again with the tmux ls command. "(attached)" is missing from both sessions. This means the sessions are active but we are detached and are unable to interact with either session.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3a124f37-0719-4b09-b80a-af7ae80caf03)
 
 
 <br>
+
+<p>To reattach to an active tmux session. Run tmux with the attach option and -t followed by the desired session name.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e02120d5-ae82-4025-ac26-92de4edec326)
+
+<br>
+
+<p>The tmux session name has changed to the attached session of "tryhackme". Double-checking with tmux ls. Can confirm that "(attached)" also on the "tryhackme" session name.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b9ba851a-9231-4719-bc5c-30f9f0ebb275)
+
+<br>
+
+<p>Delete a single session by its session name. Is done with the kill-session option with tmux. Followed by -t and the <target-session-name-to-delete></p>
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c36c3748-d56f-40c6-8439-52482b9cec19)
+
+<br>
+
+<p>Listing sessions with tmux ls. This shows that the session name of box-dev has been removed. WARNING! By deleting the session. Anything open in that session will be lost if not saved before the tmux kill-session.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f3ee4528-f38a-470b-9eeb-649a9e8b1fe5)
+
+<br>
+
+<p>In the example below there are many sessions open. Another way to swap sessions without having to detach and reattach to another session. Is to use the prefix. Followed by the s-key to list all open sessions. Using up or down arrow keys to navigate to the desired tmux session. Then enter to select the new session.</p>
+
+<br>
+
+<h3>ctrl b s</h3>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/71defe81-1f20-4316-bae2-6db1c5883eab)
+
+<br>
+
+<p>Change from session name "0" to "tmux_remux" without having to leave the current tmux session.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e1a2035b-5f15-4e9f-9963-689dbec54c61)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/944f1bb9-fae5-4182-a2c5-9717b749cff9)
+
+<br>
+
+<p>From the five active sessions above. If there was a need to kill all the sessions except for a single one. When using the tmux kill-session. Use the -a argument to close all sessions except the one specified by the -t argument. Closing all tmux sessions except for the one named "is-0day-0k?". Checked with the tmux list-sessions.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9e2b19fc-8858-4566-bd3b-2dfe9333d788)
+
+<br>
+
+<p>When spiting the session into different sized panes ("which will be covered in more detail in a later task"). The new pane will spawn in the directory that the tmux session was first started in. </p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/04d8b683-6f36-49a0-9464-d4ee5ef0ac77)
+
+<br>
+
+<p>To change the base starting directory. Must first learn about tmux prompt or command mode. The tmux prompt allows tmux sessions to run tmux commands without the tmux binary name. Useful when the terminal has been filled with other text. Enter a tmux prompt with prefix shift :</p>
+
+<br>
+
+<h3>ctrl b shift :</h3>
+
+<p>Followed by "attach -c /path/to/new/starting/directory"</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/539bb2b0-b0ab-43cf-82b2-b6ba1e589158)
+
+
+<br>
+
+<p>With the updated starting or base directory done above as /dev/shm. Creating a new pane start in the /dev/shm directory.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ef119be9-e341-43a0-bf29-1fa5a0902ca3)
+
+<br>
+
+<p>Even though at the start tmux doesn't allow nested tmux within a tmux. Attaching or starting a new tmux session on another computer by an ssh connection. Can make a nested tmux. Not a problem. Just by changing the number of prefix used before the following command. Can determine which session gets the command.<br>
+
+prefix, prefix, and command. This will run on the second nested tmux session of the ssh ubuntu machine.<br>
+
+prefix and command. This will run on the first tmux session. The session running on the current machine's localhost.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d7a462ed-b5c5-43e5-b92d-4afd72881432)
+
+
+<br>
+
+
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
@@ -245,7 +437,7 @@ Password: Redacted</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 10, 2025    | 339      |     297ᵗʰ    |        8ᵗʰ   |    259ᵗʰ    |     2ⁿᵈ    |  92,486  |       653 |   59      |
+| April 11, 2025    | 339      |     297ᵗʰ    |        8ᵗʰ   |    259ᵗʰ    |     2ⁿᵈ    |  92,486  |       653 |   59      |
 
 </div>
 
