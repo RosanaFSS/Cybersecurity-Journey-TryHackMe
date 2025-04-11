@@ -5,7 +5,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="h
 <img width="160px" src="https://github.com/user-attachments/assets/f091ab8b-6389-45e2-a36d-01b50b863eeb"></p>
 <br>
 
-<img width="160px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"></p>
+<img width="400px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{REmux The Tmux}}$$</h1>
 
