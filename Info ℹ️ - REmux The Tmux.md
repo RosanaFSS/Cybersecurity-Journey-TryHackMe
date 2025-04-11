@@ -493,24 +493,26 @@ prefix and command. This will run on the first tmux session. The session running
 
 <br>
 
-> 3.9.<em>How to move the currently selected pane clockwise?</em><br><a id='3.9'></a>
+> 3.9.<em>How to move the currently selected pane <code>clockwise/code>?</em><br><a id='3.9'></a>
 >> <strong><code>ctrl b shift {</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/e8ba4379-4f8c-4222-b2cb-84073e18693a)
+![image](https://github.com/user-attachments/assets/3c3e65ea-0cb8-4bd5-b654-6127b35dc952)
+
 
 
 <br>
 
-> 3.10.<em>How to move the currently selected pane counter-clockwise?</em><br><a id='3.10'></a>
+> 3.10.<em>How to move the currently selected pane <code>counter-clockwise</code>?</em><br><a id='3.10'></a>
 >> <strong><code>ctrl b shift }</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/bd085349-743b-4ea3-a3f7-f8b4da149d44)
+![image](https://github.com/user-attachments/assets/929627a3-044b-4703-9e6f-006666a90a62)
+
 
 
 <br>
@@ -529,17 +531,38 @@ prefix and command. This will run on the first tmux session. The session running
 
 <br>
 
-> 3.13.<em>How to swap two panes without changing the currently selected pane location? Within tmux prompt mode. 1 -> 4 pane number</em><br><a id='3.13'></a>
+> 3.13.<em>How to swap two panes without changing the currently selected pane location? Within tmux prompt mode. 1 -> 4 pane number?</em><br><a id='3.13'></a>
 >> <strong><code>___</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d2e3c88f-6d40-498d-82e7-8733eb70e6eb)
+
 
 
 <br>
 
+> 3.14.<em>How to swap two panes and move with the swapped pane?  Within tmux prompt mode. 1 -> 3 location?</em><br><a id='3.14'></a>
+>> <strong><code>swap-pane -s 3 -t 1</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2995f350-b0ac-4136-ba31-55012bd6cc33)
+
+<br>
+
+> 3.15.<em>How to swap two panes without changing the currently selected pane location? Within tmux prompt mode. 1 -> 4 pane number?</em><br><a id='3.15'></a>
+>> <strong><code>swap-pane -t 4 -s 1</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e3d987c3-3a74-4109-817f-403626d9fea9)
 
 
-
-
+<br>
 
 
 
