@@ -2,7 +2,8 @@
 <p align="center">April 11, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{339}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"></p>
+<img width="300px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/6fcbf656-d31e-4b81-950f-0c4c980e3b43"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{REmux The Tmux}}$$</h1>
 <p align="center">"Updated, how to use tmux guide. Defaults and customize your workflow." <br>
 It is classified as an info room.<br>
@@ -10,6 +11,9 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a>.</p>
 
 <p align="center"> <img width="900px" src=""> </p>
+
+
+
 
 <br>
 <br>
@@ -385,6 +389,110 @@ prefix and command. This will run on the first tmux session. The session running
 
 
 <h2>Task 3 . Manage tmux "Panes"</h2>
+
+<br>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 2.1. <em>How to create a new pane split horizontally?</em><br><a id='2.1'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.2. <em>How to close a tmux pane like closing a ssh session?</em><br><a id='2.2'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.3. <em>How to create a new pane split vertically?</em><br><a id='2.3'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.4. <em>How to cycle between tmux pre built layout options? Starting with the number 1.</em><br><a id='2.4'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+
+> 2.5. <em>How to cycle/toggle between tmux layouts, one at a time?</em><br><a id='2.5'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.6. <em>How to force quit a frozen, crashed or borked pane?</em><br><a id='2.6'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.7. <em>How to move between the two must used tmux panes for the current tmux window?</em><br><a id='2.7'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.8. <em>Can you use the arrow to move to the desired pane? yea/nay</em><br><a id='2.8'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.9.<em>How to move the currently selected pane clockwise?</em><br><a id='2.9'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.10.<em>How to move the currently selected pane counter-clockwise?</em><br><a id='2.10'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.11.<em>Before using swap-pane. How to check for which pane has what number?</em><br><a id='2.11'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.12.<em>How to swap two panes and move with the swapped pane?  Within tmux prompt mode. 1 -> 3 location</em><br><a id='2.12'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 2.13.<em>How to swap two panes without changing the currently selected pane location? Within tmux prompt mode. 1 -> 4 pane number</em><br><a id='2.13'></a>
+>> <strong><code>___</code></strong><br>
+<p></p>
+
+
+<br>
+
+
+
+
 
 
 
