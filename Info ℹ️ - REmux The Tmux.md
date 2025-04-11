@@ -12,9 +12,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a
 
 <p align="center"> <img width="900px" src=""> </p>
 
-
-
-
 <br>
 <br>
 
@@ -605,25 +602,25 @@ prefix and command. This will run on the first tmux session. The session running
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 11, 2025    | 339      |     297ᵗʰ    |        8ᵗʰ   |    259ᵗʰ    |     2ⁿᵈ    |  92,486  |       653 |   59      |
+| April 11, 2025    | 340      |     295ᵗʰ    |        8ᵗʰ   |    286ᵗʰ    |     2ⁿᵈ    |  92,590  |       653 |   59      |
 
 </div>
 
 <br>
 
 
-<p align="center">Weekly League: Bronze 6ᵗʰ<br><br><img width="300px" src=""> </p>
+<p align="center">Weekly League: Bronze 5ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/5c28fd77-9b27-4571-9e24-e04b84eff5f1"> </p>
 
 
 <br>
 
-<p align="center"> Global All Time: 297ᵗʰ<br><br><img width="900px" src=""> </p>
+<p align="center"> Global All Time: 295ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0c8c3bba-497b-4d08-a366-0786ef1c75be"> </p>
 
-<p align="center"> Brazil All Time:   8ᵗʰ<br><br><img width="900px" src=""> </p>
+<p align="center"> Brazil All Time:   8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/b384cfec-ea7a-46c2-ab7d-b01a2fe9d073"> </p>
 
-<p align="center"> Global monthly:  259ᵗʰ<br><br><img width="900px" src=""> </p>
+<p align="center"> Global monthly:  286ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/da5f644c-21f2-4a1c-800a-5c27025b7bad"> </p>
 
-<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src=""> </p>
+<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/2f89ef68-bd53-462d-af65-cc2fa971635a"> </p>
 
 
 <br>
