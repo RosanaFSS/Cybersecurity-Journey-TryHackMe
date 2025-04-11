@@ -11,9 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a
 
 <p align="center"> <img width="900px" src=""> </p>
 
-<br>
-<br>
-
 <h2>Task 1 . Tmux practice machine</h2>
 <p>Tmux is known as a terminal multiplexer. That allows you to craft a single terminal however you need it.<br>
 
