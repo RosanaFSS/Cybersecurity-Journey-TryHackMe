@@ -40,7 +40,6 @@ Password: Redacted</p>
 ![image](https://github.com/user-attachments/assets/f966cd63-4fbd-49e6-9c11-94d34817e3ad)
 
 <br>
-<br>
 
 <h2>Task 2 . Starting tmux "Sessions" and default tmux "prefix"</h2>
 
