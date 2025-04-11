@@ -86,7 +86,7 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 
 > 1.2. <em>What was the timezone of Liam’s device?</em><br><a id='1.2'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>America/Toronto</code></strong><br>
 <p></p>
 
 <br>
