@@ -101,15 +101,6 @@ After the tmux prefix. To the hotkeys to change the current tmux session's name 
 
 <br>
 
-![image](https://github.com/user-attachments/assets/fdb75a49-b496-4f9e-af7d-2893592be659)
-
-<br>
-
-
-<p>To list all active tmux sessions. Run tmux with list-sessions. Or the short version of list-sessions as ls. In the example below. Running tmux ls also shows the current session in use. Marked by "(attached)".</p>
-
-<br>
-
 ![image](https://github.com/user-attachments/assets/a10e1dc6-fe85-48c0-9e21-c8ec840074cf)
 
 <br>
