@@ -2,7 +2,7 @@
 <p align="center">April 11, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/5cd808a1-d047-4a49-b4e0-00f2682a28e4" alt="Your Image Badge"><br>
 <img width="300px" src="https://github.com/user-attachments/assets/6fcbf656-d31e-4b81-950f-0c4c980e3b43"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{REmux The Tmux}}$$</h1>
 <p align="center">"Updated, how to use tmux guide. Defaults and customize your workflow." <br>
@@ -11,11 +11,6 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a>.</p>
 
 <p align="center"> <img width="900px" src=""> </p>
-
-<img src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge" />
-
-![image](https://github.com/user-attachments/assets/5cd808a1-d047-4a49-b4e0-00f2682a28e4)
-
 
 <br>
 <br>
