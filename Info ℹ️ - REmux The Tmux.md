@@ -12,6 +12,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a
 
 <p align="center"> <img width="900px" src=""> </p>
 
+<img src="https://tryhackme-badges.s3.amazonaws.com/Rosana.png" alt="Your Image Badge" />
+
+![image](https://github.com/user-attachments/assets/5cd808a1-d047-4a49-b4e0-00f2682a28e4)
+
+
 <br>
 <br>
 
