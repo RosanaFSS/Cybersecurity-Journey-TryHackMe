@@ -74,7 +74,7 @@ Password: Redacted</p>
 
 After the tmux prefix. To the hotkeys to change the current tmux session's name is "shift $". </p>
 
-<h3>ctrl b shift $</h3>h3>
+<h3>ctrl b shift $</h3>
 
 <p>Retype the new name and then enter-key to save the new session name.</p>
 
