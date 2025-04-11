@@ -195,7 +195,7 @@ Password: Redacted</p>
 <br>
 
 > 2.15. <em>How to kill all tmux sessions accept the one currently in use? With the name "notes".</em>Hint : <em>the short version of attach -c /new/path</em><br><a id='2.15'></a>
->> <strong><code>a -c /opt</code></strong><br>
+>> <strong><code>tmux kill-session -t notes -a</code></strong><br>
 <p></p>
 
 <br>
