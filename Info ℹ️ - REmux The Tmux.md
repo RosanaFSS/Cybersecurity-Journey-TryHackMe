@@ -183,7 +183,7 @@ After the tmux prefix. To the hotkeys to change the current tmux session's name 
 
 <br>
 
-<p>When spiting the session into different sized panes ("which will be covered in more detail in a later task"). The new pane will spawn in the directory that the tmux session was first started in. </p>
+<p>When spliting the session into different sized panes ("which will be covered in more detail in a later task"). The new pane will spawn in the directory that the tmux session was first started in. </p>
 
 <br>
 
