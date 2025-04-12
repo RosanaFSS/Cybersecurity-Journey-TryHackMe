@@ -236,10 +236,15 @@ Unfortunately I don´t know how to convert to a readble format.</p>
 <br>
 
 > 1.13. <em>Liam thought the work was done, but the external entity had other plans. Which IP address was connected via SSH to Liam's machine a few hours after the exfiltration?</em><br><a id='1.13'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>94.102.51.15</code></strong><br>
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/e74bea5d-a226-4ccd-95c5-e4400b0b3d9e)
+
+<br>
+
 
 > 1.14. <em>Which cronjob did the external entity set up inside Liam’s machine?</em><br><a id='1.14'></a>
 >> <strong><code>__</code></strong><br>
