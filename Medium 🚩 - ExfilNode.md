@@ -91,6 +91,11 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 <br>
 
+![image](https://github.com/user-attachments/assets/62b4e00f-4ad6-427f-af4c-da7b4703b3ac)
+
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/5093b1b4-2016-46c7-bc00-6faf42e5d51c)
 
 <br>
@@ -161,6 +166,11 @@ Unfortunately I don´t know how to convert to a readble format.</p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/a6e54a02-786c-4d5a-bc1c-e74e0aebf832)
+
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/dd185680-dfd8-43cf-b8cf-ca73b4d98159)
 
 
@@ -208,8 +218,20 @@ Unfortunately I don´t know how to convert to a readble format.</p>
 <br>
 
 > 1.12. <em>Which files are likely timstomped in this .hidden/ directory (answer in alphabetical order, ascending, separated by a comma. e.g example1.txt,example2.txt)</em><br><a id='1.12'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>file3.txt,file7.txt</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b2a31e80-ef4f-416a-9e6d-d1e29856a4ec)
+
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/68504009-f841-4107-aff2-c9768e672956)
+
+
 
 <br>
 
