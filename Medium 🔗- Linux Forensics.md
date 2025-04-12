@@ -90,9 +90,84 @@ For learning more about Linux, it is highly recommended that you go through the 
 <h3>Syslog</h3>
 <p>The Syslog contains messages that are recorded by the host about system activity. The detail which is recorded in these messages is configurable through the logging level. We can use the <code>cat</code> utility to view the Syslog, which can be found in the file <code>/var/log/syslog</code>. Since the Syslog is a huge file, it is easier to use <code>tail</code>,<code>head</code>, <code>more</code> or <code>less</code>utilities to help make it more readable.</p>
 
+<p><em>Syslog</em></p>
+
+```bash
+user@machine$ cat /var/log/syslog* | head
+Mar 29 00:00:37 tryhackme systemd-resolved[519]: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.
+Mar 29 00:00:37 tryhackme rsyslogd: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="635" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Mar 29 00:00:37 tryhackme systemd[1]: man-db.service: Succeeded.
+Mar 29 00:00:37 tryhackme systemd[1]: Finished Daily man-db regeneration.
+Mar 29 00:09:01 tryhackme CRON[7713]: (root) CMD (   test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond)
+Mar 29 00:17:01 tryhackme CRON[7726]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 29 00:30:45 tryhackme snapd[2930]: storehelpers.go:721: cannot refresh: snap has no updates available: "amazon-ssm-agent", "core", "core18", "core20", "lxd"
+Mar 29 00:30:45 tryhackme snapd[2930]: autorefresh.go:536: auto-refresh: all snaps are up-to-date
+Mar 29 01:17:01 tryhackme CRON[7817]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 29 01:50:37 tryhackme systemd[1]: Starting Cleanup of Temporary Directories...
+
+```
+<p>The above terminal shows the system time, system name, the process that sent the log [the process id], and the details of the log. We can see a couple of cron jobs being run here in the logs above, apart from some other activity. We can see an asterisk(*) after the syslog. This is to include rotated logs as well. With the passage of time, the Linux machine rotates older logs into files such as syslog.1, syslog.2 etc, so that the syslog file doesn't become too big. In order to search through all of the syslogs, we use the asterisk(*) wildcard.</p>
+
+<h3>Auth logs</h3>
+<p>We have already discussed the auth logs in the previous tasks. The auth logs contain information about users and authentication-related logs. The below terminal shows a sample of the auth logs..</p>
+
+<p><em>Auth logs</em></p>
+
+```bash
+user@machine$ cat /var/log/auth.log* |head
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: new group: name=ubuntu, GID=1000
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'adm'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'dialout'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'cdrom'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'floppy'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'sudo'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'audio'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'dip'
+Feb 27 13:52:33 ip-10-10-238-44 useradd[392]: add 'ubuntu' to group 'video'
+
+```
+
+<p>We can see above that the log stored information about the creation of a new group, a new user, and the addition of the user into different groups.</p>
+
+<h3>Third-party logs</h3>
+
+<p>Similar to the syslog and authentication logs, the <code>/var/log/</code> directory contains logs for third-party applications such as webserver, database, or file share server logs. We can investigate these by looking at the <code>/var/log/</code>code> directory.</p>
+
+<p><em>Third-party logs</em></p>
+
+```bash
+user@machine$ ls /var/log
+Xorg.0.log          apt                    cloud-init.log  dmesg.2.gz      gdm3                    kern.log.1         prime-supported.log  syslog.2.gz
+Xorg.0.log.old      auth.log               cups            dmesg.3.gz      gpu-manager-switch.log  landscape          private              syslog.3.gz
+alternatives.log    auth.log.1             dist-upgrade    dmesg.4.gz      gpu-manager.log         lastlog            samba                syslog.4.gz
+alternatives.log.1  btmp                   dmesg           dpkg.log        hp                      lightdm            speech-dispatcher    syslog.5.gz
+amazon              btmp.1                 dmesg.0         dpkg.log.1      journal                 openvpn            syslog               unattended-upgrades
+apache2             cloud-init-output.log  dmesg.1.gz      fontconfig.log  kern.log                prime-offload.log  syslog.1             wtmp
+```
+
+<p>As is obvious, we can find the apache logs in the apache2 directory and samba logs in the samba directory.</p>
+
+<p><em>Apache Logs</em></p>
+
+```bash
+user@machine$  ls /var/log/apache2/
+access.log  error.log  other_vhosts_access.log
+```
+
+<p>Similarly, if any database server like MySQL is installed on the system, we can find the logs in this directory.</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 7.1. <em>Though the machine's current hostname is the one we identified in Task 4. The machine earlier had a different hostname. What was the previous hostname of the machine?</em><br><a id='7.1'></a>
+>> <strong><code>tryhackme</code></strong><br>
+<p></p>
+
 <br><br>
 
-<h2>Task 8 . Conslusions</h2>
+<h2>Task 8 . Conclusions</h2>
 
 <p>Well, that's a wrap for this room. That was interesting!!<br>
 
