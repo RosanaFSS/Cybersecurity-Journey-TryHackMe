@@ -2,19 +2,18 @@
 <p align="center">April 11, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/5cd808a1-d047-4a49-b4e0-00f2682a28e4" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/51fb15ac-ba56-46aa-8864-66875356af39" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/6fcbf656-d31e-4b81-950f-0c4c980e3b43"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode, in progress}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode, 71%}}$$</h1>
 <p align="center">"Continue hunting for the exfiltration footprints in the ex-employee's personal workstation." <br>
 It is classified as a medium-level CTF.<br>
 It is a premium room: for subscribers only.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/exfilnode">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
-
 <br>
 <br>
 
+![image](https://github.com/user-attachments/assets/51fb15ac-ba56-46aa-8864-66875356af39)
 
 
 <h2>Task 1 . The End</h2>
@@ -254,11 +253,58 @@ Unfortunately I don´t know how to convert to a readble format.</p>
 
 
 
+![image](https://github.com/user-attachments/assets/a154780f-46f8-4f7b-a715-39f7417cb3e6)
 
 
 
 
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src=""><br>
+<img width="900px" src=""></p>
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
 
 
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 11, 2025    | 340      |     291ˢᵗ    |        8ᵗʰ   |    150ᵗʰ    |     2ⁿᵈ    |  92,890  |       653 |   59      |
+
+</div>
+
+<br>
 
 
+<p align="center">Weekly League: Bronze 4ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/e0e98cbe-0457-4ebd-b55f-789307bbb4581"> </p>
+
+
+<br>
+
+<p align="center"> Global All Time: 291ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bb739e13-84b7-4606-80fc-d51b8cdbd0d1"> </p>
+
+<p align="center"> Brazil All Time:   8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/461a0a6e-b565-4251-bd66-d05c5d339909"> </p>
+
+<p align="center"> Global monthly:  150ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7a01d951-55d2-4481-a946-2d8d38508599"> </p>
+
+<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4206e6b2-6e4f-4dd2-bae6-2811e6c87b53"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/Aashir.Masood">Aashir.Masood</a>  for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
