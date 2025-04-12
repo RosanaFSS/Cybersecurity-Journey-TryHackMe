@@ -1,6 +1,6 @@
 <p align="center">2024<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{___}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br></p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Linux Forensics}}$$</h1>
 <p align="center"><em>Learn about the common forensic artifacts found in the file system of Linux Operating System</em> It is classified as a medium-level walkthrough.<br>
 It is premium: only for subscribers.<br>
