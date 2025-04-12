@@ -119,9 +119,12 @@ From the 2ⁿᵈ of 3 parts -----> b = <code>02</code>.</p>
 <p><code>e9</code> XOR <code>61</code> = <code>88</code><br>
 <code>61</code> is the value of <code>a</code><br><br>
 
-The leaked cyphert: <code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1
-<br> transforms into<br>
+The leaked cyphertext:<br>
+<code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1
+<br><br> transforms into<br><br>
 <code>88</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1</p>
+
+<br>
 
 
 ![image](https://github.com/user-attachments/assets/1b437de7-1260-4adb-8dcc-48089e62fba2)
