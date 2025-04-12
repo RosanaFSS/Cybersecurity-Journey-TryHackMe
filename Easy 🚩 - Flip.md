@@ -4,8 +4,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{341}}$$-day-streak in  <a href="h
 <img width="300px" src="https://github.com/user-attachments/assets/670400e3-4ebe-4f41-a592-24eb5bab0810" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/d8306acc-b031-4901-a1b9-9b3187902b21"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Flip}}$$</h1>
-<p align="center">"Hey, do a flip!"<br>
-It is classified as an easy-level CTF.<br>
+<p align="center"><em>Hey, do a flip!</em> It is classified as an easy-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/flip">here</a>.</p>
 
@@ -170,7 +169,7 @@ The leaked cyphertext:<br>
 
 <br>
 
-<p align="center">Week League: 4ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/24d07cc5-a176-46df-83b7-a6a65bdb104b"> </p>
+<p align="center">Weekly League: 4ᵗʰ Bronze<br><br><img width="900px" src="https://github.com/user-attachments/assets/24d07cc5-a176-46df-83b7-a6a65bdb104b"> </p>
 
 <br>
 
