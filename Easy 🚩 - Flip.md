@@ -66,14 +66,14 @@ Did not work.  :-(</p>
 
 <p></p>
 
-<p>Ran <code></code>nc TargetIP</code> using username as <code>bdmin</code> and the same password as before.<br>
-Got a <code>Leaked ciphertext</code>.<br><br>
+<p>Ran <code>nc TargetIP</code> using username as <code>bdmin</code> and the same password as before.<br>
+Got a <code>Leaked ciphertext</code>, the one below.<br><br>
 8bb00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1</p>
 
 
 <p>Based on the analysis of the <code>Task File</code> provided, I learned that the ciphertext has 3 equal size parts:<br>
-8bb00996f6a7705fbefb7a96fcd2532f<br>
-02d7a95e7e18b6c3be7c79ed855e7f24<br>
+<code>8b</code>b00996f6a7705fbefb7a96fcd2532f<br>
+<code>02</code>d7a95e7e18b6c3be7c79ed855e7f24<br>
 ea0a857cf91c100e299f3c81b5c80ca1</p>
 <br>
 
