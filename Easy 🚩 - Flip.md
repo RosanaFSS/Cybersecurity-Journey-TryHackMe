@@ -51,8 +51,8 @@ The server is listening on port 1337 via TCP. You can connect to it using Netcat
 <br><br>
 
 
-<p>Discovered in the script the information below.<br>br>
-admin&password=sUp3rPaSs1</p>
+<p>Discovered in the script the information below.<br><br>
+<code>admin&password=sUp3rPaSs1</code></p>
 
 
 <p>Ran <code></code>nc TargetIP</code> using usernamed as <code>admin</code> and the password just discovered.<br>
