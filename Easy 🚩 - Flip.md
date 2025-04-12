@@ -1,7 +1,7 @@
 <p align="center">April 12, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{341}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/51fb15ac-ba56-46aa-8864-66875356af39" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/670400e3-4ebe-4f41-a592-24eb5bab0810" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/d8306acc-b031-4901-a1b9-9b3187902b21"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Flip}}$$</h1>
 <p align="center">"Hey, do a flip!"<br>
@@ -88,11 +88,12 @@ ea0a857cf91c100e299f3c81b5c80ca1</p>
 admin&password=s<br>
 Up3rPaSs1$$$$$$$</code></p>
 
-<p>From the 1st of 3 parts -----> a = <code>8b</code><br>
-From the 2nd of 3 parts -----> b = <code>02</code></p>
+<p>
+From the 1ˢᵗ of 3 parts -----> a = <code>8b</code>.<br>
+From the 2ⁿᵈ of 3 parts -----> b = <code>02</code>.</p>
 
 
-<p>[ 1st part ] XOR [ 2nd part decrypted ] XOR [ 3rd part].</p>
+<p>[ 1ˢᵗ part ] XOR [ 2ⁿᵈ part decrypted ] XOR [ 3ʳᵈ part].</p>
 
 <br>
 
@@ -118,9 +119,9 @@ From the 2nd of 3 parts -----> b = <code>02</code></p>
 <p><code>e9</code> XOR <code>61</code> = <code>88</code><br>
 <code>61</code> is the value of <code>a</code><br><br>
 
-The leaked cyphert: <code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1<br> thansforms into<br>
-<code>88</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1  
-</p>
+The leaked cyphert: <code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1
+<br> transforms into<br>
+<code>88</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1</p>
 
 
 ![image](https://github.com/user-attachments/assets/1b437de7-1260-4adb-8dcc-48089e62fba2)
@@ -135,7 +136,8 @@ The leaked cyphert: <code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c
 <br>
 <p align="center">
 <img width="900px" src="https://github.com/user-attachments/assets/a2321577-5e64-4a11-9c4d-0d1af82b39b4"><br>
-<img width="900px" src="https://github.com/user-attachments/assets/96ef066a-dc44-457d-8337-13bd0815715f"></p>
+<img width="900px" src="https://github.com/user-attachments/assets/d3f18e8e-5a06-4711-95d8-6ea841289358"></p>
+
 
 <br>
 
@@ -148,25 +150,24 @@ The leaked cyphert: <code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 10, 2025    | 339      |     298ᵗʰ    |        8ᵗʰ   |    250ᵗʰ    |     2ⁿᵈ    |  92,222  |       652 |   59      |
+| April 12, 2025    | 441      |     290ᵗʰ    |        8ᵗʰ   |    182ⁿᵈ    |     2ⁿᵈ    |  92,920  |       654 |   59      |
 
 </div>
 
 <br>
 
-<p align="center">League<br><br><img width="300px" src="https://github.com/user-attachments/assets/29b35e41-b041-4696-985d-7b4bd6fb88ff"> </p>
+<p align="center"> Global All Time: 290ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/df5f5daf-bfbf-4707-bd1c-4e268704dde7"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4359417b-dc62-4e49-8105-4a52272d7cec"> </p>
+
+<p align="center"> Global monthly: 182ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/eefe4839-d008-454f-95a9-f143944542a6"> </p>
+
+<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/b8148be9-3b29-4df1-a557-bb7060f943b3"> </p>
 
 
 <br>
 
-<p align="center"> Global All Time: 298ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/d52c4fd8-067f-449a-aa9a-d11f9f899241"> </p>
-
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a8f0de66-46ad-4594-8ed0-ddda17bc1981"> </p>
-
-<p align="center"> Global monthly: 250ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/30c2bf9f-7ce8-4ca3-95d9-c901bb0e86a9"> </p>
-
-<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/057a1277-d151-457c-aa6e-f4b0ae5ac00e"> </p>
-
+<p align="center">Week League: 4ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/24d07cc5-a176-46df-83b7-a6a65bdb104b"> </p>
 
 <br>
 
