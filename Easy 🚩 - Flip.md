@@ -78,7 +78,7 @@ ea0a857cf91c100e299f3c81b5c80ca1</p>
 <br>
 
 <p>Discovered also in the script<br><br>
-<code> message = 'access_username=' + username +'&password=' + password</code><br><br>
+<code>message = 'access_username=' + username +'&password=' + password</code><br><br>
 -----><br>
 <code>message = 'access_username=' + username +'&password=' + password</code><br><br>
 -----><br>
@@ -92,15 +92,11 @@ Up3rPaSs1$$$$$$$</code></p>
 From the 2nd of 3 parts -----> b = <code>02</code></p>
 
 
-<p>1st part<br>
-XOR<br>
-2nd part decrypted AES<br>
-XOR<br>
-3rd part.</p>
+<p>[ 1st part ] XOR [ 2nd part decrypted ] XOR [ 3rd part].</p>
 
 <br>
 
-<p>We need the value of 26 XOR decrypted (7x).</p>
+<p>We need the value of  <code>8b</code> XOR decrypted <code>02</code>.</p>
 
 <br>
 
@@ -110,16 +106,20 @@ XOR<br>
 
 ![image](https://github.com/user-attachments/assets/794c3d6d-c7b4-415c-91f9-df0bd975fe06)
 
-<p>8b XOR 62 = e9</p>
+
+<p><code>8b</code> XOR decrypted <code>62</code> = <code>e9</code><br>
+<code>62</code> is the value of <code>b</code></p>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/7006f78f-71b7-4762-abc6-1c40ec24b3a2)
 
 
-<p>e9 XOR 61 = 88  ==><br><br>
-8bb00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1 ==>
-88b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1  
+<p><code>e9</code> XOR <code>61</code> = <code>88</code><br>
+<code>61</code> is the value of <code>a</code><br><br>
+
+The leaked cyphert: <code>8b</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1<br> thansforms into<br>
+<code>88</code>b00996f6a7705fbefb7a96fcd2532f02d7a95e7e18b6c3be7c79ed855e7f24ea0a857cf91c100e299f3c81b5c80ca1  
 </p>
 
 
