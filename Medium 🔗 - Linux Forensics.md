@@ -67,3 +67,45 @@ For learning more about Linux, it is highly recommended that you go through the 
 
 <br><br>
 
+<h2>Task 3 . OS and account information</h2>
+
+<br><br>
+
+<h2>Task 4 . System Configuration</h2>
+
+<br><br>
+
+<h2>Task 5 . Persistance Mechanisms</h2>
+
+<br><br>
+
+<h2>Task 6 . Evidence of Execution</h2>
+
+<br><br>
+
+<h2>Task 7 . Log Files</h2>
+
+<br><br>
+
+<h2>Task 8 . Conslusions</h2>
+
+<p>Well, that's a wrap for this room. That was interesting!!<br>
+
+If you found it difficult to remember all the forensic artifacts, here is a cheatsheet that you can reference. </p>
+
+<br>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/f0f87d05-1803-4189-8293-00ca93bc2e05"> </p>
+
+<br>
+
+<p>You can stick around and find out what other exciting artifacts you found in the VM. You can let us know what you found interesting in this room using our Discord channel or Twitter account.</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 8.1. <em>Check out the cheat sheet and social links</em><br><a id='8.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
