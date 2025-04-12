@@ -113,6 +113,27 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 <br>
 
+<p>First I tried using <code>grep -i USB dmsesg</code>.<br>
+Discovered <code>USB 2.0 started</code>.<br>
+Unfortunately I don´t know how to convert to a readble format.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2e0db5a6-dfa8-43a7-bf2f-a735e852f5b0)
+
+<br>
+
+<p>So I tried something different ...</p>
+
+<br>
+
+
+
+<br>
+
+
+<br>
+
 > 1.5. <em>What command was executed when Liam ran 'transferfiles'?</em>Hint : <em>Liam was smart. He used a nickname for his long command. Where could have he placed this command?</em><br><a id='1.5'></a>
 >> <strong><code>cp -r \"/media/liam/46E8E28DE8E27A97/Critical Data TECH THM\" /home/liam/Documents/Data</code></strong><br>
 <p></p>
