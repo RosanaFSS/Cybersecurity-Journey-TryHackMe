@@ -127,7 +127,7 @@ iface eth0 inet dhcp
 
 <br>
 
-<p>Similarly, to find information about the MAC and IP addresses of the different interfaces, we can use the <code>ip</code> utility. To learn more about the <code>ip</code> utility, we can see its <code>man/code> page.<br>
+<p>Similarly, to find information about the MAC and IP addresses of the different interfaces, we can use the <code>ip</code> utility. To learn more about the <code>ip</code> utility, we can see its <code>man</code> page.<br>
 
 <code>man ip/code><br>
 
