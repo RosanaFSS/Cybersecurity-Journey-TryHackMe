@@ -4,7 +4,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/5cd808a1-d047-4a49-b4e0-00f2682a28e4" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/6fcbf656-d31e-4b81-950f-0c4c980e3b43"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode, in progress}}$$</h1>
 <p align="center">"Continue hunting for the exfiltration footprints in the ex-employee's personal workstation." <br>
 It is classified as a medium-level CTF.<br>
 It is a premium room: for subscribers only.<br>
