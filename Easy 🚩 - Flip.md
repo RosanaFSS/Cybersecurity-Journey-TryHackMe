@@ -77,29 +77,30 @@ Got a <code>Leaked ciphertext</code>, the one below.<br><br>
 ea0a857cf91c100e299f3c81b5c80ca1</p>
 <br>
 
-<p>Discovered also in the script <code> message = 'access_username=' + username +'&password=' + password</code>.</p>
-
-<p>message = 'access_username=' + username +'&password=' + password    ==><br><br>
-access_username=admin&password=sUp3rPaSs1  ==><br><br>
-access_username=<br>
+<p>Discovered also in the script<br><br>
+<code> message = 'access_username=' + username +'&password=' + password</code><br><br>
+-----><br>
+<code>message = 'access_username=' + username +'&password=' + password<code><br><br>
+-----><br>
+<code>access_username=admin&password=sUp3rPaSs1</code><br><br>
+----><br>
+<code>access_username=<br>
 admin&password=s<br>
-Up3rPaSs1$$$$$$$</p>
+Up3rPaSs1$$$$$$$</code></p>
 
-<p>From the first of the three parts ==> a = 8b<br>
-From the second of the three parts ==> b = 02</p>
+<p>From the 1st of 3 parts -----> a = <code>8b</code><br>
+From the 2nd of 3 parts -----> b = <code>02</code></p>
 
 
-<p>First Part<br>
+<p>1st part<br>
 XOR<br>
-Second Part decrypted AES<br>
+2nd part decrypted AES<br>
 XOR<br>
-Thri Part.</p>
+3rd part.</p>
 
 <br>
 
-<p>Now ... hands-on:<br><br>
-
-We need the value of 26 XOR decrypted (7x).</p>
+<p>We need the value of 26 XOR decrypted (7x).</p>
 
 <br>
 
