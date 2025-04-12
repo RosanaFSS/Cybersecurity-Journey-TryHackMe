@@ -85,6 +85,11 @@ For learning more about Linux, it is highly recommended that you go through the 
 
 <h2>Task 7 . Log Files</h2>
 
+<p>One of the most important sources of information on the activity on a Linux host is the log files. These log files maintain a history of activity performed on the host and the amount of logging depends on the logging level defined on the system. Let's take a look at some of the important log sources. Logs are generally found in the <code>/var/log</code> directory.</p>
+
+<h3>Syslog</h3>
+<p>The Syslog contains messages that are recorded by the host about system activity. The detail which is recorded in these messages is configurable through the logging level. We can use the <code>cat</code> utility to view the Syslog, which can be found in the file <code>/var/log/syslog</code>. Since the Syslog is a huge file, it is easier to use <code>tail</code>,<code>head</code>, <code>more</code> or <code>less</code>utilities to help make it more readable.</p>
+
 <br><br>
 
 <h2>Task 8 . Conslusions</h2>
