@@ -80,7 +80,7 @@ ea0a857cf91c100e299f3c81b5c80ca1</p>
 <p>Discovered also in the script<br><br>
 <code> message = 'access_username=' + username +'&password=' + password</code><br><br>
 -----><br>
-<code>message = 'access_username=' + username +'&password=' + password<code><br><br>
+<code>message = 'access_username=' + username +'&password=' + password</code><br><br>
 -----><br>
 <code>access_username=admin&password=sUp3rPaSs1</code><br><br>
 ----><br>
