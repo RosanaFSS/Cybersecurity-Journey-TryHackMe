@@ -73,6 +73,224 @@ For learning more about Linux, it is highly recommended that you go through the 
 
 <h2>Task 4 . System Configuration</h2>
 
+<p>Once we have identified the OS and account information, we can start looking into the system configuration of the host.</p>
+
+<h3>Hostname</h3>
+
+<p>The hostname is stored in the <code>/etc/hostname</code> file on a Linux Host. It can be accessed using the <code>cat</code> utility.</p>
+
+<p><em>Hostname</em></p>
+
+```bash
+user@machine$ cat /etc/hostname 
+tryhackme
+
+```
+
+<br>
+
+<h3>Timezone</h3>
+
+<p>Timezone information is a significant piece of information that gives an indicator of the general location of the device or the time window it might be used in. Timezone information can be found at the location <code>/etc/timezone</code> and it can be read using the <code>cat</code> utility.</p>
+
+<p><em>Timezone</em></p>
+
+```bash
+user@machine$ cat /etc/timezone
+Etc/UTC
+
+```
+
+<br>
+
+<h3>Network Configuration</h3>
+
+<p>To find information about the network interfaces, we can <code>cat</code> the <code>/etc/network/interfaces</code> file. The output on your machine might be different from the one shown here, depending on your configuration.</p>
+
+<p><em>Network Configuration</em></p>
+
+```bash
+user@machine$ cat /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+```
+
+<br>
+
+<p>Similarly, to find information about the MAC and IP addresses of the different interfaces, we can use the <code>ip</code> utility. To learn more about the <code>ip</code> utility, we can see its <code>man/code> page.<br>
+
+<code>man ip/code><br>
+
+The below terminal shows the usage of the <code>ip</code> utility. Note that this will only be helpful on a live system.</p>
+
+<p><em>IP Information</em></p>
+
+```bash
+user@machine$ ip address show 
+1: lo:  mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0:  mtu 9001 qdisc mq state UP group default qlen 1000
+    link/ether 02:20:61:f1:3c:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.10.95.252/16 brd 10.10.255.255 scope global dynamic eth0
+       valid_lft 2522sec preferred_lft 2522sec
+    inet6 fe80::20:61ff:fef1:3ce9/64 scope link 
+       valid_lft forever preferred_lft forever
+
+```
+
+<br>
+
+<h3>Active network connections</h3>
+
+<p>On a live system, knowing the active network connections provides additional context to the investigation. We can use the <code>netstat</code> utility to find active network connections on a Linux host. We can learn more about the <code>netstat</code> utility by reading its <code>man</code> page.<br>
+
+<code>man netstat</code><br>
+
+The below terminal shows the usage of the <code>netstat</code> utility.</p>
+
+<p><em>Active network connections</em></p>
+
+```bash
+user@machine$ netstat -natp
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:5901          0.0.0.0:*               LISTEN      829/Xtigervnc       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:60602         127.0.0.1:5901          ESTABLISHED -                   
+tcp        0      0 10.10.95.252:57432      18.66.171.77:443        ESTABLISHED -                   
+tcp        0      0 10.10.95.252:80         10.100.1.33:51934       ESTABLISHED -                   
+tcp        0      0 127.0.0.1:5901          127.0.0.1:60602         ESTABLISHED 829/Xtigervnc       
+tcp6       0      0 ::1:5901                :::*                    LISTEN      829/Xtigervnc       
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+tcp6       0      0 ::1:631                 :::*                    LISTEN      -               
+```
+
+<h3>Running processes</h3>
+
+<p>If performing forensics on a live system, it is helpful to check the running processes. The  <code>ps</code> utility shows details about the running processes. To find out about the <code>ps</code> utility, we can use the <code>man</code> page.</p>
+
+<code>man ps</code><br>
+
+The below terminal shows the usage of the <code>ps</code> utility.</p>
+
+<p><em>Running processes</em></p>
+
+```bash
+user@machine$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         729  0.0  0.0   7352  2212 ttyS0    Ss+  17:28   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         738  0.0  0.0   5828  1844 tty1     Ss+  17:28   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         755  0.0  1.5 272084 63736 tty7     Ssl+ 17:28   0:00 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+ubuntu      1672  0.0  0.1   5264  4588 pts/0    Ss   17:29   0:00 bash
+ubuntu      1985  0.0  0.0   5892  2872 pts/0    R+   17:40   0:00 ps au          
+```
+
+<br>
+
+<h3>DNS Information</h3>
+
+<p>The file <code>/etc/hosts</code> contains the configuration for the DNS name assignment. We can use the <code>cat</code> utility to read the hosts file. To learn more about the hosts file, we can use the <code>man</code> page.<br>
+
+<code>man hosts</code><br>
+
+The below terminal shows a sample output of the hosts file.</p>
+
+
+<p><em>hosts file</em></p>
+
+```bash
+user@machine$ cat /etc/hosts
+127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts     
+```
+
+<p>The information about DNS servers that a Linux host talks to for DNS resolution is stored in the resolv.conf file. Its location is <code>/etc/resolv.conf</code>. We can use the <code>cat</code> utility to read this file.</p>
+
+<p><em>Resolv.conf</em></p>
+
+```bash
+user@machine$ cat /etc/resolv.conf 
+# This file is managed by man:systemd-resolved(8). Do not edit.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs must not access this file directly, but only through the
+# symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a different way,
+# replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search eu-west-1.compute.internal
+```
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 4.1. <em>What is the hostname of the attached VM?</em><br><a id='4.1'></a>
+>> <strong><code>Linux4n6</code></strong><br>
+<p></p>
+
+<br>
+
+> 4.2. <em>What is the timezone of the attached VM?</em><br><a id='4.2'></a>
+>> <strong><code>Asia/Karachi</code></strong><br>
+<p></p>
+
+<br>
+
+> 4.3. <em>What program is listening on the address 127.0.0.1:5901?</em><br><a id='4.3'></a>
+>> <strong><code>Xtigervnc</code></strong><br>
+<p></p>
+
+<br>
+
+> 4.4. <em>What is the full path of this program?</em><br><a id='4.4'></a>
+>> <strong><code>/usr/bin/Xtigervnc</code></strong><br>
+<p></p>
+
+<br>
+
+> 4.5. <em>Read about the flags used above with the netstat and ps commands in their respective man pages.</em><br><a id='4.5'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
 <br><br>
 
 <h2>Task 5 . Persistance Mechanisms</h2>
