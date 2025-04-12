@@ -10,7 +10,8 @@ It is classified as an info room.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/b5977194-1f76-4924-aa5a-214538257091"> </p>
+
 
 <br>
 <br>
