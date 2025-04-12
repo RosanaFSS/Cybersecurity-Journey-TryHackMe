@@ -19,7 +19,7 @@
 
 <br>
 
-<h2 align="center"> $$\textcolor{white}{\textnormal{April 11, 2025 - My yearly activity}}$$ <br>
+<h2 align="center"> $$\textcolor{white}{\textnormal{April 12, 2025 - My yearly activity}}$$ <br>
 <img width="1000px" src="https://github.com/user-attachments/assets/033e2f48-3447-4127-8024-3f287465d220"/><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/19deea5c-e3dc-4797-b5e7-87559b94bbdd"/></h2>
 
