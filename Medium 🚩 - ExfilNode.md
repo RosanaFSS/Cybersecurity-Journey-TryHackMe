@@ -13,9 +13,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/exfilnode">here</a
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/51fb15ac-ba56-46aa-8864-66875356af39)
-
-
 <h2>Task 1 . The End</h2>
 
 <h3>Room Prerequisites</h3>
