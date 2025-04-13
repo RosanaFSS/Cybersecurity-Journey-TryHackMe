@@ -3,8 +3,8 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/af2cb93f-e7c3-4bad-aa90-d496ef276726" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/962ae40d-abca-4ea0-9255-663cad56a1a5"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Flip}}$$</h1>
-<p align="center"><em>Hey, do a flip!</em> It is classified as an easy-level CTF.<br>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Capture!}}$$</h1>
+<p align="center"><em>"   ".<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/capture">here</a>.</p>
 
