@@ -1,7 +1,7 @@
 <p align="center">April 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/7853bb5f-3f01-459c-8ff6-e37e175bd632" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/d9caf519-77b9-4f47-89e4-90d5cd742fd5" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/962ae40d-abca-4ea0-9255-663cad56a1a5"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Epoch}}$$</h1>
 <p align="center"><em>Be honest, you have always wanted an online tool that could help you convert UNIX dates and timestamps!</em>.<br>
@@ -194,21 +194,20 @@ Got the shell.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 13, 2025    | 342      |     286ᵗʰ    |        8ᵗʰ   |    217ᵗʰ    |     2ⁿᵈ    |  93,198  |       656 |   59      |
+| April 13, 2025    | 342      |     285ᵗʰ    |        7ᵗʰ   |    216ᵗʰ    |     2ⁿᵈ    |  93,258  |       658 |   59      |
 
 </div>
 
 <br>
 
 
+<p align="center"> Global All Time: 285ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/26a04606-d7c9-416d-8969-1ae49bbaa3fa"> </p>
 
-<p align="center"> Global All Time: 290ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/72d1031c-d96b-4bdc-b5cd-1a913b198b75"> </p>
+<p align="center"> Brazil All Time: 7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0187a77c-edb8-4fed-a6ee-1c4246b84840"> </p>
 
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/9fb390af-8d36-419b-966f-385c4e473fb8"> </p>
+<p align="center"> Global monthly: 216ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4bae9aaf-ff66-4f1a-b5eb-0f3ba19a4dd5"> </p>
 
-<p align="center"> Global monthly: 217ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0739ecfe-df6d-46d9-b8a3-31db605b53326"> </p>
-
-<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a6c2f602-87bf-47e7-a4eb-bc16eaa9d4fd"> </p>
+<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/f3950c51-b660-46cf-950f-a0b63a6a4420"> </p>
 
 
 <br>
