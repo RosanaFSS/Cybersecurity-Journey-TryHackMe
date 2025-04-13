@@ -64,10 +64,10 @@ Two files were inflated:<br>
 
 
 <p>Used <code>nmapo</code>.  Discovered:<br>
-.  just port 80 is open.<br>
+.  just port <code>80</code> is open.<br>
 .  <code>Requested resource was /login</code>.<br>
 .  <code>http-server-header: Werkzeug/2.2.2 Python/3.8.10</code></br>
-.  <code>ttp-title: Site doesn't have a title (text/html; charset=utf-8).</code></p>
+.  <code>http-title: Site doesn't have a title (text/html; charset=utf-8).</code></p>
 
 
 ```bash
