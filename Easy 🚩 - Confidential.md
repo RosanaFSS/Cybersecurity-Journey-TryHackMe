@@ -140,7 +140,7 @@ The file you need is located in /home/ubuntu/confidential on the VM.</p>
 
 <br>
 
-<p align="center">Weekly League: 3ʳᵈ Bronze<br><br><img width="900px" src="hhttps://github.com/user-attachments/assets/8c3e4d06-fc14-4d41-8c6a-7e472d5955b5"> </p>
+<p align="center">Weekly League: 3ʳᵈ Bronze<br><br><img width="900px" src="https://github.com/user-attachments/assets/8c3e4d06-fc14-4d41-8c6a-7e472d5955b5"> </p>
 
 <br>
 
