@@ -1,7 +1,7 @@
 <p align="center">April 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/593042df-84f0-4fa9-acac-e12fe583466a" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/962ae40d-abca-4ea0-9255-663cad56a1a5"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{HaskHell}}$$</h1>
 <p align="center"><em>Teach your CS professor that his PhD isn't in security.</em>.<br>
@@ -9,8 +9,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="h
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/haskhell">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
-
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/79a36bfe-f4f6-47f9-97b8-8db55453b671"> </p>
 
 <br>
 <br>
@@ -248,15 +247,51 @@ root@haskhell:/root#
 <br>
 <br>
 
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/5627a792-ea2b-4ba1-a925-65a6ac4225dd"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/edfdb963-92c1-4dfe-9b9c-5587d213e114"></p>
 
 
-![image](https://github.com/user-attachments/assets/5627a792-ea2b-4ba1-a925-65a6ac4225dd)
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
 
 
-<
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 13, 2025    | 342      |     285ᵗʰ    |        7ᵗʰ   |    208ᵗʰ    |     3ʳᵈ    |  93,318  |       659 |   59      |
+
+</div>
+
+<br>
+
+<p align="center"> Global All Time: 285ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/f2b0b700-f076-4407-92d3-0cfdb40ed674"> </p>
+
+<p align="center"> Brazil All Time: 7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/87d2e15d-6965-4dc1-9984-f5047897c9f9"> </p>
+
+<p align="center"> Global monthly: 208ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/839bf560-f74d-43ce-9d03-e62e9e54ba1f"> </p>
+
+<p align="center"> Brazil monthly: 3ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/369ecd02-3c71-4d3d-adfc-ec7f92ed6624"> </p>
 
 
+<br>
 
 
+<p align="center">Weekly League: 3ʳᵈ Bronze<br><br><img width="300px" src="https://github.com/user-attachments/assets/4573fb4b-7cb6-4bf5-b3d8-edda8829a928"> </p>
 
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/sgtscout">sgtscout</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
