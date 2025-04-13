@@ -4,7 +4,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="h
 <img width="300px" src="https://github.com/user-attachments/assets/af2cb93f-e7c3-4bad-aa90-d496ef276726" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/962ae40d-abca-4ea0-9255-663cad56a1a5"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Capture!}}$$</h1>
-<p align="center"><em>"   "</em>.<br>
+<p align="center"><em>Can you bypass the login form?</em>.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/capture">here</a>.</p>
 
@@ -289,7 +289,7 @@ Discovered <code>sk8board</code></p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 12, 2025    | 342      |     286ᵗʰ    |        8ᵗʰ   |    217ᵗʰ    |     2ⁿᵈ    |  93,198  |       656 |   59      |
+| April 13, 2025    | 342      |     286ᵗʰ    |        8ᵗʰ   |    217ᵗʰ    |     2ⁿᵈ    |  93,198  |       656 |   59      |
 
 </div>
 
