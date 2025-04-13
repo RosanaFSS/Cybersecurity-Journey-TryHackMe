@@ -92,30 +92,78 @@ Password: Redacted</p>
 
 <h3>OS release information</h3>
 
+<p>Lorem Ysum.</p>
+
+<p><em>OS release</em></p>
+
+```bash
+Lorem Ypsum
+```
+
 
 <br>
 
 <h3>User accounts</h3>
+
+<p>Lorem Ysum.</p>
+
+<p><em>OS release</em></p>
+
+```bash
+Lorem Ypsum
+```
 
 
 <br>
 
 <h3>Group Information</h3>
 
+<p>Lorem Ysum.</p>
+
+<p><em>OS release</em></p>
+
+```bash
+Lorem Ypsum
+```
+
 
 <br>
 
 <h3>Sudoers List</h3>
+
+<p>Lorem Ysum.</p>
+
+<p><em>OS release</em></p>
+
+```bash
+Lorem Ypsum
+```
 
 
 <br>
 
 <h3>Login information</h3>
 
+<p>Lorem Ysum.</p>
+
+<p><em>OS release</em></p>
+
+```bash
+Lorem Ypsum
+```
+
 
 <br>
 
 <h3>Authentication Logs</h3>
+
+<p>Lorem Ysum.</p>
+
+<p><em>OS release</em></p>
+
+```bash
+Lorem Ypsum
+```
 
 
 <br>
@@ -126,19 +174,19 @@ Password: Redacted</p>
 
 <br>
 
-> 3.1. <em>Which two users are the members of the group <code>audio</code>?</em><br><a id='3.1'></a>
+> 3.1. <em>Which two users are the members of the group <code>audio</code>?</em>Hint : <em>See group information</em><br><a id='3.1'></a>
 >> <strong><code>ubuntu,pulse</code></strong><br>
 <p></p>
 
 <br>
 
-> 3.2. <em>In the attached VM, there is a user account named tryhackme. What is the uid of this account?</em><br><a id='3.2'></a>
+> 3.2. <em>In the attached VM, there is a user account named tryhackme. What is the uid of this account?</em>Hint : <em>See the /etc/passwd file</em><br><a id='3.2'></a>
 >> <strong><code>1001</code></strong><br>
 <p></p>
 
 <br>
 
-> 3.3. <em>A session was started on this machine on Sat Apr 16 20:10. How long did this session last?</em><br><a id='3.3'></a>
+> 3.3. <em>A session was started on this machine on Sat Apr 16 20:10. How long did this session last?</em>Hint : <em>Get this info from wtmp</em><br><a id='3.3'></a>
 >> <strong><code>01:32</code></strong><br>
 <p></p>
 
