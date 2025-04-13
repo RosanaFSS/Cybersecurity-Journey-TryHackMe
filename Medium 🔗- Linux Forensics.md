@@ -69,6 +69,81 @@ For learning more about Linux, it is highly recommended that you go through the 
 
 <h2>Task 3 . OS and account information</h2>
 
+<p>As we did in the Windows Forensics rooms, we will start by identifying the system and finding basic information about the system. In the case of Windows, we identified that the Windows Registry contains information about the Windows machine. For a Linux system, everything is stored in a file. Therefore, to identify forensic artifacts, we will need to know the locations of these files and how to read them. Below, we will start by identifying System information on a Linux host.</p>
+
+<p>[ Start Machine ]</p>
+
+<h3>Access the attached machine</h3>
+<p>Let's start by accessing the machine attached to the room. To access the machine, press the "Start Machine" icon, which will open the machine in the split view.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3d51e717-c60a-4487-8691-ad24c5073c44)
+
+<br>
+
+<p>Alternatively, you can access the machine using the following credentials:<br>
+
+Username: Redacted<br>
+
+Password: Redacted</p>
+
+<br>
+
+<h3>OS release information</h3>
+
+
+<br>
+
+<h3>User accounts</h3>
+
+
+<br>
+
+<h3>Group Information</h3>
+
+
+<br>
+
+<h3>Sudoers List</h3>
+
+
+<br>
+
+<h3>Login information</h3>
+
+
+<br>
+
+<h3>Authentication Logs</h3>
+
+
+<br>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 3.1. <em>Which two users are the members of the group <code>audio</code>?</em><br><a id='3.1'></a>
+>> <strong><code>ubuntu,pulse</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.2. <em>In the attached VM, there is a user account named tryhackme. What is the uid of this account?</em><br><a id='3.2'></a>
+>> <strong><code>1001</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.3. <em>A session was started on this machine on Sat Apr 16 20:10. How long did this session last?</em><br><a id='3.3'></a>
+>> <strong><code>01:32</code></strong><br>
+<p></p>
+
+<br>
+
 <br><br>
 
 <h2>Task 4 . System Configuration</h2>
