@@ -20,8 +20,8 @@
 <br>
 
 <h2 align="center"> $$\textcolor{white}{\textnormal{April 12, 2025 - My yearly activity}}$$ <br>
-<img width="1000px" src="https://github.com/user-attachments/assets/033e2f48-3447-4127-8024-3f287465d220"/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/19deea5c-e3dc-4797-b5e7-87559b94bbdd"/></h2>
+<img width="1000px" src="https://github.com/user-attachments/assets/7d5dc7d6-e45f-44c7-a33f-44f09da4dac5be"/><br>
+<img width="1000px" src=""/></h2>
 
 <br>
 
@@ -37,7 +37,7 @@
 |Year Month      |Monthly         |All Time        |Achievement                                                                                        |
 |:---------------|---------------:|---------------:|:-------------------------------------------------------------------------------------------------:| 
 |                |Brazil          |Global          |                                                                                                   |
-|2025 April      |2ⁿᵈ             |290ᵗʰ           | <img src="https://github.com/user-attachments/assets/82951abb-799b-48b4-86e5-8ae329feccb6" style="width:300px;"/> |           
+|2025 April      |2ⁿᵈ             |286ᵗʰ           | <img src="https://github.com/user-attachments/assets/4ff5a1db-47d3-4eca-9806-6b6a1bb39516" style="width:300px;"/> |           
 |2025 March      |5ᵗʰ             |321ˢᵗ           | <img src="https://github.com/user-attachments/assets/ea6b7eae-ae33-4491-927c-2b9ad8166323" style="width:300px;"/> |
 |2025 February   |1ˢᵗ             |385ᵗʰ           | <img src="https://github.com/user-attachments/assets/b4f048d4-5bd0-4aeb-b42c-16460f926cf8" style="width:300px;"/> |
 |2025 January    |2ⁿᵈ             |496ᵗʰ           | <img src="https://github.com/user-attachments/assets/00e64e74-4d33-4820-9064-67f67fa00614" style="width:300px;"/> |
@@ -69,7 +69,7 @@
 |Date               |Streak    |All Time      |All Time      |Monthly       |Monthly       |Points    | Rooms     |
 |:------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
 |                   |          |Global        |Brazil        |Global        | Brazil       |          |           | 
-| April 12, 2025    | 341      |         290ᵗʰ|          8ᵗʰ |         182ⁿᵈ|           2ⁿᵈ| 92,920   |       654 | 
+| April 12, 2025    | 341      |         286ᵗʰ|          8ᵗʰ |         188ᵗʰ|           2ⁿᵈ| 93,168   |       655 | 
 | April 11, 2025    | 340      |         295ᵗʰ|          8ᵗʰ |         286ᵗʰ|           2ⁿᵈ| 92,590   |       653 | 
 | April 10, 2025    | 339      |         298ᵗʰ|          8ᵗʰ |         257ᵗʰ|           2ⁿᵈ| 92,366   |       653 | 
 | April &nbsp; 9, 2025     | 338      |         297ᵗʰ|          8ᵗʰ |         272ⁿᵈ|           2ⁿᵈ| 92,142   |       651 | 
