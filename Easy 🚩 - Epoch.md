@@ -8,13 +8,13 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="h
 It is classified as an easy-level CTF.<br>It is premium: only for subscribers.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/epoch">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/0058d539-b29b-4000-af22-a21fa745fce9"> </p>
 
 
 <br>
 <br>
 
-<h2>Task 1 . Confidential </h2>
+<h2>Task 1 . Epoch </h2>
 
 <p>[  Start Machine  ]</p>
 
@@ -172,25 +172,60 @@ Got the shell.</p>
 <br>
 
 
+<br>
+<br>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/4493b313-6ee2-4a37-85d8-64779999ce98"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/b9ce85b2-cd94-476b-aa67-da8e5a73306c"></p>
+
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 13, 2025    | 342      |     286ᵗʰ    |        8ᵗʰ   |    217ᵗʰ    |     2ⁿᵈ    |  93,198  |       656 |   59      |
+
+</div>
+
+<br>
 
 
 
+<p align="center"> Global All Time: 290ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/72d1031c-d96b-4bdc-b5cd-1a913b198b75"> </p>
+
+<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/9fb390af-8d36-419b-966f-385c4e473fb8"> </p>
+
+<p align="center"> Global monthly: 217ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0739ecfe-df6d-46d9-b8a3-31db605b53326"> </p>
+
+<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a6c2f602-87bf-47e7-a4eb-bc16eaa9d4fd"> </p>
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f65c56a0-5fdd-43e5-bc08-cd03cf2458a2)
 
 
 
+<p align="center">Weekly League: 3ʳᵈ Bronze<br><br><img width="900px" src="https://github.com/user-attachments/assets/f65c56a0-5fdd-43e5-bc08-cd03cf2458a2"> </p>
 
-<p>Used <code>gobuster</code>.  Discovered:<br>
-.  <code>/home</code><br>
-.  <code>/login</code></p>
+<br>
 
-```bash
-:~/Capture# gobuster dir -u http://TargetIP -w /usr/share/wordlists/dirb/common.txt --random-agent -r -e -x html,php,aspx,asp,txt -b 403,404,501,502,503 -o report.txt
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://TargetIP
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/wordlists/dirb/
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
 
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/cmnatic">cmnatic</a>  for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
