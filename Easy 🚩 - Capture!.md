@@ -297,7 +297,7 @@ Discovered <code>sk8board</code></p>
 
 
 
-<p align="center"> Global All Time: 290ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/72d1031c-d96b-4bdc-b5cd-1a913b198b75"> </p>
+<p align="center"> Global All Time: 286ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/72d1031c-d96b-4bdc-b5cd-1a913b198b75"> </p>
 
 <p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/9fb390af-8d36-419b-966f-385c4e473fb8"> </p>
 
