@@ -35,9 +35,86 @@ Please send comments/concerns/hatemail to @passthehashbrwn on Twitter.</p>
 
 <br>
 
+
+<p>Used <code>nmapo</code>.  Discovered:<br>
+.  2 ports open:  <code>22/ssh</code> and <code>5001/Gunicorn</code>code>.<br>
+.  <code>http-server-header: gunicorn/19.7.1</code></br>
+.  <code>http-title: Homepage</code></p>
+
+
+```bash
+:~/HaskHell# nmap -sC -sV -sS -Pn -A -p- -T4 TargetIP
+...
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
+5001/tcp open  http    Gunicorn 19.7.1
+|_http-server-header: gunicorn/19.7.1
+|_http-title: Homepage
+```
+
+<br>
+
+<p>Navigated to <code>http://TargetIP:5001</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/708e34e1-f698-44b5-a307-8568e07661d6)
+
+<br>
+
+<p>Viewed page source.<br>
+Identified:<br>
+. <code>/homework1</code><br>
+. <code>Our book for the course (free!): http://learnyouahaskell.com/chapters</code><br>
+. <code>The complete Haskell package repository. ... grading system: https://hackage.haskell.org/</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5f7f31e7-2f3d-43be-ac82-04d84697c2f7)
+
+<br>
+
+
+<p>Added <code>Homepage</code> and <code>TargetIP</code> to <code>/etc/hosts</code>.</p>
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/c8afea6a-d981-44a2-a115-5fbccd5f61a6)
+
+<br>
+
+<p>Clicked <code>homework here</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0a21fae4-ede3-4692-a0e1-99711e0cd9bf)
+
+<br>
+
+
+
+
+
+```bash
+:~/HaskHell# nmap -sC -sV -sS -Pn -A -p- -T4 TargetIP
+...
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
+5001/tcp open  http    Gunicorn 19.7.1
+|_http-server-header: gunicorn/19.7.1
+|_http-title: Homepage
+```
+
 > 1.2. <em>Obtain the flag in root.txt.</em><br><a id='1.2'></a>
 >> <strong><code>___</code></strong><br>
 <p></p>
 
 <br><br>
+
+
 
