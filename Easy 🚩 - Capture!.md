@@ -132,10 +132,8 @@ PORT   STATE SERVICE VERSION
 <br>
 
 <p>Used <code>gobuster</code>.  Discovered:<br>
-.  just port 80 is open.<br>
-.  <code>Requested resource was /login</code>.<br>
-.  <code>http-server-header: Werkzeug/2.2.2 Python/3.8.10</code><br>
-.  <code>ttp-title: Site doesn't have a title (text/html; charset=utf-8).</code></p>
+.  <code>/home</code><br>
+.  <code>/login</code></p>
 
 ```bash
 :~/Capture# gobuster dir -u http://TargetIP -w /usr/share/wordlists/dirb/common.txt --random-agent -r -e -x html,php,aspx,asp,txt -b 403,404,501,502,503 -o report.txt
