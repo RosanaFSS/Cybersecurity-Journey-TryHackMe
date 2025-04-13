@@ -561,7 +561,7 @@ prefix and command. This will run on the first tmux session. The session running
 
 
 
-<h2>Task 7 . Oreo´s open-source .tmux.conf file/h2>
+<h2>Task 7 . Oreo´s open-source .tmux.conf file</h2>
 
 
 
