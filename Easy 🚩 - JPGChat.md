@@ -14,13 +14,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/jpgchat">here</a>.
 <br>
 <br>
 
-<h2>Task 1 . HaskHell </h2>
+<h2>Task 1 . Flags </h2>
 
 <p>[  Start Machine  ]</p>
 
-<p>Show your professor that his PhD isn't in security.<br>
-
-Please send comments/concerns/hatemail to @passthehashbrwn on Twitter.</p>
+<p>Hack into the machine and retrieve the flag.<br>
 
 <br>
 
