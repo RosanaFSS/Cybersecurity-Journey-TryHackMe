@@ -95,21 +95,42 @@ Identified:<br>
 
 <br>
 
-
-
-
+<p>Used <code>gobuster</code>.<br>
+Discovered <code>/submit</code>.</p>
 
 ```bash
-:~/HaskHell# nmap -sC -sV -sS -Pn -A -p- -T4 TargetIP
-...
-PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-...
-5001/tcp open  http    Gunicorn 19.7.1
-|_http-server-header: gunicorn/19.7.1
-|_http-title: Homepage
+~/HaskHell# gobuster dir -u http://TargetIP:5001/ -w /usr/share/wordlists/dirb/common.txt
 ```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/634271ab-2344-4528-b452-80683ee6d185)
+
+<br>
+
+<p>Navigated to <code>http://TargetIP:5001/submit</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c12cf2fb-810f-4a13-9f63-1b627ce13f02)
+
+<br>
+
+<p>Set up a listener.</p>
+
+<br>
+
+<p>Browsed my payload and clicked <code>/Upload></code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e99dc82a-2489-4f12-a540-f22323e118cb)
+
+
+
+
+
+
 
 > 1.2. <em>Obtain the flag in root.txt.</em><br><a id='1.2'></a>
 >> <strong><code>___</code></strong><br>
