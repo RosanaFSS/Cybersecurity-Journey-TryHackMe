@@ -34,8 +34,163 @@ Check out similar content on TryHackMe:<br>
 
 <br>
 
-> 1.1. <em>Find the flag in this vulnerable web application!</em><br><a id='1.1'></a>
->> <strong><code>_____</code></strong><br>
+> 1.1. <em>Find the flag in this vulnerable web application!</em> Hint : <em>The developer likes to store data in environment variables, can you find anything of interest there?</em><br><a id='1.1'></a>
+>> <strong><code>flag{7da6c7debd40bd611560c13d8149b647}</code></strong><br>
 <p></p>
 
 <br>
+
+<p>Used <code>nmap</code>.  Discovered:<br>
+.  Ports <code>22</code> and <code>80</code> are open.<br>
+.  <code>Supported Methods: GET HEAD</code>.<br></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/53e60f01-24ac-4a88-8bc7-811061b0b402)
+
+<br>
+
+
+
+```bash
+:~/Epoch# nmap -sC -sV -sS -Pn -A -p- -T4 10.10.121.208
+...
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Sun, 13 Apr 2025 ...
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 1184
+|     Connection: close
+|     <!DOCTYPE html>
+|     <head>
+|     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+|     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+|     <style>
+|     body,
+|     html {
+|     height: 100%;
+|     </style>
+|     </head>
+|     <body>
+|     <div class="container h-100">
+|     <div class="row mt-5">
+|     <div class="col-12 mb-4">
+|     class="text-center">Epoch to UTC convertor 
+|     </h3>
+|     </div>
+|     <form class="col-6 mx-auto" action="/">
+|     <div class=" input-group">
+|     <input name="epoch" value="" type="text" class="form-control" placeholder="Epoch"
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Date: Sun, 13 Apr 2025 ...
+|     Content-Type: text/plain; charset=utf-8
+|     Content-Length: 18
+|     Allow: GET, HEAD
+|     Connection: close
+|_    Method Not Allowed
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+```
+
+<br>
+
+<p>Navigated to <code>http://TargetIP</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f7269da5-ecc3-44ea-96e2-174c510abaff)
+
+<br>
+
+<p>Googled to know what is and <code>Epoch Converter</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4f36e95e-0c74-485b-8b34-2ba76450db62)
+
+<br>
+
+<p>For exampled here is an online <code>Epoch Converter</code> app -----> https://www.epochconverter.com/</p>
+
+<br>
+
+<p>Entered <code>1743543172</code> that means <code>Sun, 1 Apr 2025 21:32:52 GMT</code>.<br>
+Worked smoothly .... but<br>
+Discovered <code>/?epoch=</code>, and in this room introduction there is a suggestion: <code>Check out similar content on TryHackMe: Command Injection</code></p></code>.</p>
+
+
+![image](https://github.com/user-attachments/assets/01875d7d-3f37-4127-b15c-7ee30306d874)
+
+
+<br>
+
+<p>Tried <code>1743543172;ls</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ed4105a5-21c8-41bc-8f1d-31ad9f472833)
+
+<br>
+
+<p>Tried <code>1743543172;ls -la /home</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5ab3ff85-b1b8-495c-a097-9746aa3eca73)
+
+<br>
+
+<p>Set up a listener.</p>
+
+<p>Tried <code>1743543172;ls -la /home/challenge</code>.<br><br>
+Got the shell.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f2d33fbd-fb11-433b-baa0-3ecec8898c44)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/274b1f88-d74f-46b6-b00d-6cb2d32d9b1f)
+
+<br>
+
+<p>Used command <code>printenv</code> because in the hint there is: <code>The developer likes to store data in environment variables, can you find anything of interest there?</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3249ad4c-0573-4b44-825f-5a812f311407)
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<p>Used <code>gobuster</code>.  Discovered:<br>
+.  <code>/home</code><br>
+.  <code>/login</code></p>
+
+```bash
+:~/Capture# gobuster dir -u http://TargetIP -w /usr/share/wordlists/dirb/common.txt --random-agent -r -e -x html,php,aspx,asp,txt -b 403,404,501,502,503 -o report.txt
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://TargetIP
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/
+
