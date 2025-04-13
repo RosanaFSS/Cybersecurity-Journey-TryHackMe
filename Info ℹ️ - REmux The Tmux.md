@@ -1,16 +1,17 @@
 
-<p align="center">April 11, 2025<br>
+<p align="center">April 12, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/5cd808a1-d047-4a49-b4e0-00f2682a28e4" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/6fcbf656-d31e-4b81-950f-0c4c980e3b43"></p>
+<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="200px" src=""></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{REmux The Tmux}}$$</h1>
 <p align="center">"Updated, how to use tmux guide. Defaults and customize your workflow." <br>
 It is classified as an info room.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/tmuxremux">here</a>.</p>
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/b5977194-1f76-4924-aa5a-214538257091"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/22ed5ee1-8f96-4952-a1df-6c315edc3400"> </p>
+
 
 
 <br>
@@ -569,11 +570,13 @@ prefix and command. This will run on the first tmux session. The session running
 <br>
 <br>
 
+
+
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="900px" src=""><br>
-<img width="900px" src=""></p>
+<img width="900px" src="https://github.com/user-attachments/assets/5b871bb9-273c-4bba-93af-f6522b6174f6"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/05d226b9-aced-4000-8931-c04d2903dcc9"></p>
 
 <br>
 
@@ -586,26 +589,25 @@ prefix and command. This will run on the first tmux session. The session running
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 11, 2025    | 340      |     295ᵗʰ    |        8ᵗʰ   |    286ᵗʰ    |     2ⁿᵈ    |  92,590  |       653 |   59      |
+| April 12, 2025    | 341      |     286ᵗʰ    |        8ᵗʰ   |    188ᵗʰ    |     2ⁿᵈ    |  93,168  |       655 |   59      |
 
 </div>
 
 <br>
 
 
-<p align="center">Weekly League: Bronze 5ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/5c28fd77-9b27-4571-9e24-e04b84eff5f1"> </p>
+<p align="center">Weekly League: Bronze 4ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/d3a558c1-9055-4487-8667-49d71b0774e6"> </p>
 
 
 <br>
 
-<p align="center"> Global All Time: 295ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/0c8c3bba-497b-4d08-a366-0786ef1c75be"> </p>
+<p align="center"> Global All Time: 286ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7d5dc7d6-e45f-44c7-a33f-44f09da4dac5be"> </p>
 
-<p align="center"> Brazil All Time:   8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/b384cfec-ea7a-46c2-ab7d-b01a2fe9d073"> </p>
+<p align="center"> Brazil All Time:   8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/12cc5fdc-230c-4fc8-a88f-8f1f38c3dd7b"> </p>
 
-<p align="center"> Global monthly:  286ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/da5f644c-21f2-4a1c-800a-5c27025b7bad"> </p>
+<p align="center"> Global monthly:  188ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/738e56d1-37ee-467c-8343-27f9d85aa4fd"> </p>
 
-<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/2f89ef68-bd53-462d-af65-cc2fa971635a"> </p>
-
+<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4ff5a1db-47d3-4eca-9806-6b6a1bb39516"> </p>
 
 <br>
 
