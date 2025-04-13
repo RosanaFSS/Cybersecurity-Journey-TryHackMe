@@ -1,10 +1,47 @@
+<p align="center">April 13, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="https://github.com/user-attachments/assets/af2cb93f-e7c3-4bad-aa90-d496ef276726" alt="Your Image Badge"><br>
+<img width="200px" src="https://github.com/user-attachments/assets/962ae40d-abca-4ea0-9255-663cad56a1a5"></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Capture!}}$$</h1>
+<p align="center"><em>We got our hands on a confidential case file from some self-declared "black hat hackers"... it looks like they have a secret invite code.</em>.<br>
+It is classified as an easy-level CTF.<br>It is premium: only for subscribers.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/confidential">here</a>.</p>
+
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/db36bf1b-0d08-4d07-9bd3-60d6d977b067"> </p>
+
+
+<br>
+<br>
+
+<h2>Task 1 . Confidential </h2>
+
+<p>[  Start Machine  ]</p>
+
+
+<br>
+
+<p>We got our hands on a confidential case file from some self-declared "black hat hackers"... it looks like they have a secret invite code available within a QR code, but it's covered by some image in this PDF! If we want to thwart whatever it is they are planning, we need your help to uncover what that QR code says!<br><br>
 
 
 
+Access this challenge by deploying the machine attached to this task by pressing the green "Start Machine" button. This machine shows in Split View in your browser, if it doesn't automatically display you may need to click "Show Split View" in the top right.<br><br>
 
-![image](https://github.com/user-attachments/assets/db36bf1b-0d08-4d07-9bd3-60d6d977b067)
+The file you need is located in /home/ubuntu/confidential on the VM.</p>
 
 
+
+<p>Check out similar content on TryHackMe:<br>
+
+. Intro to digital forensics</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 1.1. <em>Uncover and scan the QR code to retrieve the flag!</em><br><a id='1.1'></a>
+>> <strong><code>flag{e08e6ce2f077a1b420cfd4a5d1a57a8d}</code></strong><br>
+<p></p>
 
 <br>
 
