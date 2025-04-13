@@ -152,7 +152,7 @@ The leaked cyphertext:<br>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 12, 2025    | 441      |     290ᵗʰ    |        8ᵗʰ   |    182ⁿᵈ    |     2ⁿᵈ    |  92,920  |       654 |   59      |
+| April 12, 2025    | 341      |     290ᵗʰ    |        8ᵗʰ   |    182ⁿᵈ    |     2ⁿᵈ    |  92,920  |       654 |   59      |
 
 </div>
 
