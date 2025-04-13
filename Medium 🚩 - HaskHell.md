@@ -30,7 +30,7 @@ Please send comments/concerns/hatemail to @passthehashbrwn on Twitter.</p>
 <br>
 
 > 1.1. <em>Get the flag in the user.txt file.</em><br><a id='1.1'></a>
->> <strong><code>___</code></strong><br>
+>> <strong><code>flag{academic_dishonesty}</code></strong><br>
 <p></p>
 
 <br>
@@ -126,8 +126,43 @@ Discovered <code>/submit</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/e99dc82a-2489-4f12-a540-f22323e118cb)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/46da7ecc-b4ce-4f54-badc-9518d8cd3836)
 
 
+<br>
+
+![image](https://github.com/user-attachments/assets/f2d0204b-0b41-45b5-b6d0-3fbb4ff06d0b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/be6040b4-b932-4bb6-9e1e-a4ef853b1bf1)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7f43ddee-600a-473b-ab2a-e73ea7dac235)
+
+
+<p>In the room introduction was mentioned <code>Show your professor that his PhD isn't in security.</code><br>
+Decided to check <code>/prof</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/40f40a98-b506-4f24-aa82-16d7acb02693)
+
+<br>
+
+
+<p>I should have done "this" before ...<br>
+It is still time ...</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/352789c3-4ded-42e3-93bb-062709026beb)
+
+
+<br>
 
 
 
@@ -137,6 +172,29 @@ Discovered <code>/submit</code>.</p>
 <p></p>
 
 <br><br>
+
+<p>Copied the content of <code>/home/prof/.id_rsa</code> and created a file with it.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/13043383-55f5-40e2-8aae-a0890cf9970d)
+
+<br>
+
+<p>Used <code>ssh</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2880d23f-f3f3-4bf8-b429-cd1232bf0391)
+
+<br>
+
+<p>Now we got access as <code>prof</code> and know that he has <code>root</code> privileges.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5af79eaf-ccae-4b97-843c-afcd171a07b2)
+
 
 
 
