@@ -309,7 +309,7 @@ Discovered <code>sk8board</code></p>
 <br>
 
 
-<p align="center">Weekly League: 4ᵗʰ Bronze<br><br><img width="900px" src="https://github.com/user-attachments/assets/f3caafb3-aa48-436d-b1dd-3754c223eef2"> </p>
+<p align="center">Weekly League: 4ᵗʰ Bronze<br><br><img width="300px" src="https://github.com/user-attachments/assets/f3caafb3-aa48-436d-b1dd-3754c223eef2"> </p>
 
 <br>
 
