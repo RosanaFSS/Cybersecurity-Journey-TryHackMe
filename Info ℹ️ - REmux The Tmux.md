@@ -1,9 +1,8 @@
-
 <p align="center">April 12, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
-<img width="200px" src=""></p>
+<img width="300px" src="https://github.com/user-attachments/assets/b0b60e59-74ba-4a4a-84bd-c68f13374f5b" alt="Your Image Badge"><br>
+<img width="200px" src="https://github.com/user-attachments/assets/d8306acc-b031-4901-a1b9-9b3187902b21"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{REmux The Tmux}}$$</h1>
 <p align="center">"Updated, how to use tmux guide. Defaults and customize your workflow." <br>
 It is classified as an info room.<br>
