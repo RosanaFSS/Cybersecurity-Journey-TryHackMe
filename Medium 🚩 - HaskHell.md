@@ -195,6 +195,18 @@ It is still time ...</p>
 
 ![image](https://github.com/user-attachments/assets/5af79eaf-ccae-4b97-843c-afcd171a07b2)
 
+<br>
+
+<p>Googled Flask Python and learned what I should do.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6d650dd2-1c55-4eec-810d-c22b898a1bbf)
+
+
+
+
+![image](https://github.com/user-attachments/assets/c5788e20-aea0-4a09-8cf4-c73909c4fafd)
 
 
 
