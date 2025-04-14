@@ -120,7 +120,7 @@ Discovered a <code>script</code>.</p>
 <br>
 
 <p>Viewed page source.<br>
-Discovered <code>access</code>code> cookie <code>Value</code> field as <code>denied</code>.</p>
+Discovered an <code>access</code> cookie with a <code>Value</code> field as <code>denied</code>.</p>
 
 <br>
 
