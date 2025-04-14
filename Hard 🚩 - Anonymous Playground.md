@@ -401,13 +401,10 @@ spooky@anonymous-playground:/home/spooky$
 
 <br>
 
-<p>Ran <code>linpeas.sh</code>.
-
-<br><br>
-
+<p>Ran <code>linpeas.sh</code>.<br>
 - Discovered<br><br>
 - <code>root</code> has an unexpected folder ----- <code>/cdrom</code>.<br><br>
-- <code>SGID</code> ----- <code>/usr/bin/at</code> -----<code>CVE-2002-1614</code>.</p>
+- <code>SGID</code> ----- <code>/usr/bin/at</code> -----<code>CVE-2002-1614</code>.
 
 
 <br>
@@ -416,7 +413,7 @@ spooky@anonymous-playground:/home/spooky$
 
 <br>
 
-<p>- <code>root files in home dirs</code>.</p>
+- <code>root files in home dirs</code>.<br>
 
 <br>
 
@@ -424,7 +421,7 @@ spooky@anonymous-playground:/home/spooky$
 
 <br>
 
-<p>- modified interesting file in the last 5 mins 😃:<br><br> <code>/var/backups/spooky.tgz</code>.</p>
+- <code>modified interesting file in the last 5 mins</code> 😃 ----- <code>/var/backups/spooky.tgz</code>.</p>
 
 <br>
 
