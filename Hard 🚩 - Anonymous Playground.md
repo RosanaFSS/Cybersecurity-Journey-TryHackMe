@@ -56,11 +56,12 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 
 <br>
 
-<p>Used <code>nmap</code>.  Discovered:<br>
-.  two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
-.  <code>http-robots.txt: 1 disallowed entry </code>.<br>
-.  an endpoint <code>|/zYdHuAKjP</code></br>
-.  <code>|_http-title: Proving Grounds</code></p>
+<p>Used <code>nmap</code>.<br>
+ Discovered:<br>
+-  two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
+-  <code>http-robots.txt: 1 disallowed entry </code>.<br>
+-  an endpoint <code>|/zYdHuAKjP</code></br>
+-  <code>|_http-title: Proving Grounds</code></p>
 
 
 ```bash
@@ -81,11 +82,11 @@ PORT   STATE SERVICE VERSION
 <br>
 
 <p>Used <code>nmap</code> again in order to enumerate http.</p>
-.  Discovered:<br>
-.  <code>/robots.txt</code><br>
-.  <code>/css/</code></br>
-.  <code>/images</code><br>
-.  <code>/js</code><br>
+-  Discovered:<br>
+-  <code>/robots.txt</code><br>
+-  <code>/css/</code></br>
+-  <code>/images</code><br>
+-  <code>/js</code><br>
 </p>
 
 <br>
@@ -156,6 +157,8 @@ hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN
 
 <br>
 
+<p>Wrote a script named <code>discovery.py</code>.</p>
+
 ```bash
 cipher = "zA"
 print("Cipher:", cipher)
@@ -171,7 +174,7 @@ print("Final :",a)
 
 <br>
 
-<p>Ran the script created.</p>
+<p>Ran the script.</p>
 
 <br>
 
@@ -179,7 +182,8 @@ print("Final :",a)
 
 <br>
 
-<p>Since my Python skill is basic, I changed the previous script to analyze 2 characters per round.</p>
+<p>Since my Python skills are basic, I changed the previous script to analyze a pair of characters per round.<br>
+Ran it.</p>
 
 <br>
 
@@ -203,12 +207,13 @@ print("Final :",a)
 
 <br>
 
-<br>I have ...<br>
-hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN<br>
-hE zA dC fH zA  -----  m { g n {<br>
-hE zA dC fH zA   hA iJ   zA eI    aD jB cB hH gA zA fH fN ----- m { g n {   i s   { n    e l e p h { n t<br><br>
-I am guessing { is a. <br>
+<br>Identified previously <code>hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN<code>.<br><br>
+Discovered <code>hE zA dC fH zA</code>  -----  <code>m { g n {<br></code>.<br><br>
+Discovered <code>hE zA dC fH zA   hA iJ   zA eI    aD jB cB hH gA zA fH fN</code> ----- <code>m { g n {   i s   { n    e l e p h { n t</code>.<br><br>
+I am guessing <code>{</code> is <code>a</code>. <br><br>
 Let´s keep analysing!</p>
+
+<br>
 
 <p>Navigated to <code>http://TargetIP/operatives.php</code>.<br>
 It looks like name of team members.<br><br>
