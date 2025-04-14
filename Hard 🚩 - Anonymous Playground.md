@@ -188,7 +188,7 @@ Ran it.</p>
 <br>
 
 ```bash
-ipher =  input("Hey!  Please entre 2 characters: ")
+cipher =  input("Hey!  Please entre 2 characters: ")
 print("Cipher:", cipher)
 
 firstchar  = cipher[0]
@@ -207,7 +207,7 @@ print("Final :",a)
 
 <br>
 
-<br>Identified previously <code>hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN<code>.<br><br>
+<p>Identified previously <code>hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN</code>code>.<br><br>
 Discovered <code>hE zA dC fH zA</code>  -----  <code>m { g n {<br></code>.<br><br>
 Discovered <code>hE zA dC fH zA   hA iJ   zA eI    aD jB cB hH gA zA fH fN</code> ----- <code>m { g n {   i s   { n    e l e p h { n t</code>.<br><br>
 I am guessing <code>{</code> is <code>a</code>. <br><br>
