@@ -223,16 +223,6 @@ It looks like name of team members.</p>
 ![image](https://github.com/user-attachments/assets/91f5726c-6998-4ea3-9947-a58853750c36)
 
 
-<p>8:-)<br><br>
-There is <code>magna</code> among the list!<br><br>
-So ...<code>magna::magnaisanelephant</code>.<br><br>
-Credentials!</p>
-
-<br>
-
-
-![image](https://github.com/user-attachments/assets/91f5726c-6998-4ea3-9947-a58853750c36)
-
 <br>
 
 <p>Saved it.</p>
@@ -263,38 +253,20 @@ itsunda
 <br>
 
 
-
-
+<p>8:-)<br><br>
+There is <code>magna</code> among the list!<br><br>
+So ...<code>magna::magnaisanelephant</code>.<br><br>
+Credentials!</p>
 
 <br>
 
 
+![image](https://github.com/user-attachments/assets/91f5726c-6998-4ea3-9947-a58853750c36)
+
+<br>
 
 
-
-
-![image](https://github.com/user-attachments/assets/547696de-3cf5-4791-afa4-ff5182e6aeb1)
-
-![image](https://github.com/user-attachments/assets/956199b1-7288-4058-b9c6-633733241a78)
-
-
----
-
-
-![image](https://github.com/user-attachments/assets/eef4c330-b464-4668-b0ef-494fdbf67a0c)
-
-![image](https://github.com/user-attachments/assets/6ed2d642-0ca5-467d-9045-09f241b93c6d)
-
-![image](https://github.com/user-attachments/assets/4b010762-1831-4d90-b059-48646ac784dd)
-
-
-
-
-
-
-
-
-
+<br>
 
 
 
