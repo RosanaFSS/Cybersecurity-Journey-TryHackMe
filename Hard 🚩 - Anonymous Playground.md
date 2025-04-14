@@ -216,11 +216,16 @@ Let´s keep analysing!</p>
 <br>
 
 <p>Navigated to <code>http://TargetIP/operatives.php</code>.<br>
-It looks like name of team members.<br><br>
-8:-)<br>
-There is <code>magna</code> among the list!<br><br>
+It looks like name of team members.</p>
 
-So ...<code>magna::magaisanelephant</code>.<br><br>
+<br>
+
+![image](https://github.com/user-attachments/assets/91f5726c-6998-4ea3-9947-a58853750c36)
+
+
+<p>8:-)<br><br>
+There is <code>magna</code> among the list!<br><br>
+So ...<code>magna::magnaisanelephant</code>.<br><br>
 Credentials!</p>
 
 <br>
