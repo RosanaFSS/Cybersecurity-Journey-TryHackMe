@@ -38,7 +38,7 @@ Check out similar content on TryHackMe:<br>
 <br>
 
 > 1.1. <em>Uncover the flag on the hidden application page.</em><br><a id='1.1'></a>
->> <strong><code>____</code></strong><br>
+>> <strong><code>flag{6255c55660e292cf0116c053c9937810}</code></strong><br>
 <p></p>
 
 <br>
@@ -103,7 +103,8 @@ Discovered<br><br>
   
 - <code>Admin</code> and <code>Kate</code>.<br>
 - <code>export2pdf tool</code> for <code>daily system reports</code>.<br>
-- <code>Admin</code> is "using" default credentials.</p>
+- <code>Admin</code> is "using" default credentials.<br>
+- there is an <code>internal server</code> up.</p>
 
 <br>
 
@@ -122,5 +123,106 @@ Kate: Hello.. ?
 
 
 <br>
+
+
+<p>Navigated to <code>http://TargetIP/login.php</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5183efb9-a093-4fca-bcfe-06e3c6c60b2d)
+
+<br>
+
+<p>Used <code>admin</code>:<code>admin</code>.<br><br>Clicked <code>Login</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e3ddce7b-0957-4842-9943-275f43834861)
+
+<br>
+
+<p>Discovered <code>/internal/admin.php</code> and <code>172.17.0.2</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7d567ee5-eb79-40e8-b79e-0c8d3b3592a9)
+
+
+
+<br>
+
+<p>Navigated to <code>http://TargetIP/internal/admin.php</code>.<br><br>Received the message: <code>This page can only be accesssed locally.</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/42dfe4a7-5858-42bf-a7f1-bc1a061b7ad2)
+
+<br>
+
+<p>Returned the <code>admin</code>´s dashboard and scrolled down.<br><br>There is an <code>EXport to PDF</code> feature.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/351b774c-3e60-40cf-ba74-c675cc22a4bb)
+
+<br>
+
+<p>Clicked it and got something juicy.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c5780393-0545-4d40-a5e7-62cd9ff4cadc)
+
+<br>
+
+
+<p>Got back to <code>http://TargetIP/index.php</code>.<br><br>
+Launched <code>Burp Suite</code> and enabled <code>FoxyProxy</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d8580e19-959d-4fde-8944-6b83dd65b00d)
+
+<br>
+
+<p>Clicked <code>Export to PDF</code>.</p>
+
+<br>
+
+<p>Analyzed what <code>Burp Suite</code> intercepted.</p>
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/819850c7-6bae-4cee-bbaa-c9437ce19a4f)
+
+<br>
+
+<p>Costumized the <code>url</code> to point to the path discovered.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/05616d9e-daa5-484f-a0ba-69f996d3f93b)
+
+<br>
+
+<p>Clicked <code>Forward</code> and checked the web browser.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/cd0bbd6a-a076-4d9a-9e8f-06a6aa583aab)
+
+
+<br>
+<br>
+
+  
+
+
+![image](https://github.com/user-attachments/assets/2e3c4dc9-ea6e-4ac3-8bc4-f04f84eb9e07)
+
+
+
+
 
 
