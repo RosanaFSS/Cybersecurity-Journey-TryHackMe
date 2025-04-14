@@ -1,8 +1,8 @@
 <p align="center">April 14, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{343}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/3806c21e-9391-4850-9d15-47920c0db9d8" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/962ae40d-abca-4ea0-9255-663cad56a1a5"></p>
+<img width="200px" src="https://github.com/user-attachments/assets/4fe1cc18-807a-4b4f-8db2-7dc5f7c421ba"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{JPGChat}}$$</h1>
 <p align="center"><em>Exploiting poorly made custom chatting service written in a certain language...</em>.<br>
  It is classified as an easy-level CTF.<br>
@@ -10,7 +10,6 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/jpgchat">here</a>.</p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/832d852f-eed4-4d70-b711-5480ac3e50d4"> </p>
-
 
 <br>
 <br>
