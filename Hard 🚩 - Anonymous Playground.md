@@ -60,9 +60,9 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 
 
 <p>Used <code>nmap</code>.  Discovered:<br>
-.   two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
+.  two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
 .  <code>http-robots.txt: 1 disallowed entry </code>.<br>
-.  <code>|_/zYdHuAKjP</code></br>
+.  an endpoint <code>|/zYdHuAKjP</code></br>
 .  <code>|_http-title: Proving Grounds</code></p>
 
 
@@ -112,7 +112,152 @@ PORT   STATE SERVICE VERSION
 <p>Added <code>TargetIP</code> and a domain name to <code>etc/hosts</code>.</p>
 
 <br>
+
+<p>Navigated to <code>http://TargetIP</code>.<br>
+Discovered a <code>script</code>.</p>
 <br>
+
+![image](https://github.com/user-attachments/assets/b777a1cf-20f3-4835-8c68-a2d984221c35)
+
+<br>
+
+<p>Viewed page source.<br>
+Discovered <code>access</code>code> cookie <code>Value</code> field as <code>denied</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/833214d3-dfae-4a01-8cb5-b500aa304e7a)
+
+
+<br>
+
+<p>Navigated to<code>http://TargetIP/robots.txt</code>.<br>
+Confirmed the endpoint discovered in the first nmap.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0176a7ce-b3b1-4a98-bdd8-540ef0192761)
+
+<br>
+
+
+<p>Navigated to <code>http://TargetIP/zYdHuAKjP</code>.<br>
+Saved <code>granted</code> instead of <code>denied</code> and refreshed the webpage.<br><br>
+Discovered something that might have the format <code>user</code>::<code>password</code>.<br><br>
+Which user? Which password?<br><br>
+Read the hint: <code>You're going to want to write a Python script for this. 'zA' = 'a'</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4e6dc7dd-1d48-41ce-8a63-79be69dba928)
+
+<br>
+
+```bash
+hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN
+```
+
+<br>
+
+```bash
+cipher = "zA"
+print("Cipher:", cipher)
+
+firstchar  = cipher[0]
+secondchar = cipher[1]
+needed     = (ord(firstchar)+(ord(secondchar)%65)+1)
+print("Needed :", needed) 
+a =chr(needed) 
+print("Final :",a)
+
+```
+
+<br>
+
+<p>Ran the script created.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1c0e04f0-f149-4b06-8f31-985c2406d0dc)
+
+<br>
+
+<p>Since my Python skill is basic, I changed the previous script to analyze 2 characters per round.</p>
+
+<br>
+
+```bash
+ipher =  input("Hey!  Please entre 2 characters: ")
+print("Cipher:", cipher)
+
+firstchar  = cipher[0]
+secondchar = cipher[1]
+needed     = (ord(firstchar)+(ord(secondchar)%65)+1)
+print("Needed :", needed) 
+a =chr(needed)
+print("Final :",a)
+```
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/a194b3de-f214-4ba0-9db2-13e542b597b1)
+
+
+<br>
+
+<br>I have ...<br>
+hEzAdCfHzA::hEzAdCfHzAhAiJzAeIaDjBcBhHgAzAfHfN<br>
+hE zA dC fH zA  -----  m { g n {<br>
+hE zA dC fH zA   hA iJ   zA eI    aD jB cB hH gA zA fH fN ----- m { g n {   i s   { n    e l e p h { n t<br><br>
+I am guessing { is a. <br>
+Let´s keep analysing!</p>
+
+<p>Navigated to <code>http://TargetIP/operatives.php</code>.<br>
+It looks like name of team members.<br><br>
+8:-)<br>
+There is <code>magna</code> among the list!<br><br>
+
+So <code>maga is an elephant</code>.</p>
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/91f5726c-6998-4ea3-9947-a58853750c36)
+
+<br>
+
+<p>Saved it.</p>
+
+```bash
+themayor
+spooky
+darkstar
+akaelite
+ninja
+w0rmer
+nameless0ne
+0day
+szymex
+ma1ware
+paradox
+bee
+iamwill
+jammy
+magna
+cryillic
+skidy
+naughty
+thealchemist
+itsunda
+```
+
+<br>
+
+
+
+
+
 <br>
 
 
