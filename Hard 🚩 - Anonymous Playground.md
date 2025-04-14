@@ -38,7 +38,7 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 
 <br>
 
-> 1.2. <em>User 2 Flag.<br><a id='1.2'></a>
+> 1.2. <em>User 2 Flag.</em><br><a id='1.2'></a>
 >> <strong><code>69ee352fb139c9d0699f6f399b63d9d7</code></strong><br>
 <p></p>
 
