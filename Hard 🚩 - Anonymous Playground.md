@@ -46,7 +46,7 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 
 <br>
 
-> 1.3. <em>Root Flag.<br><a id='1.3'></a>
+> 1.3. <em>Root Flag.</em><br><a id='1.3'></a>
 >> <strong><code>____</code></strong><br>
 <p></p>
 
