@@ -538,4 +538,4 @@ bc55a426e98deb673beabda50f24ce66
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
-<p align="center"><a href="https://tryhackme.com/p/Nameless0ne">Nameless0ne</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
+<p align="center"><a href="https://tryhackme.com/p/Nameless0ne">Nameless0ne</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
