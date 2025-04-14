@@ -17,11 +17,19 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/surfer">here</a>.<
 
 <p>[  Start Machine  ]</p>
 
-<p>
-<em>Also credit goes to Sq00ky for the super special idea found in the initial foothold stage (not going to give any
-spoilers away!)</em><br>
+<p> Woah, check out this radical app! Isn't it narly dude? We've been surfing through some webpages and we want to get you on board too! They said this application has some functionality that is only available for internal usage -- but if you catch the right wave, you can probably find the sweet stuff!<br><br>
 
-Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" button.<br>
+
+
+Access this challenge by deploying both the vulnerable machine by pressing the green "Start Machine" button located within this task, and the TryHackMe AttackBox by pressing the  "Start AttackBox" button located at the top-right of the page.<br><br>
+
+Navigate to the following URL using the AttackBox: HTTP://TargetIP<br><br>
+
+
+
+Check out similar content on TryHackMe:<br>
+
+- SSRF</p>
 
 <br>
 
@@ -29,8 +37,8 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 
 <br>
 
-> 1.1. <em>User 1 Flag.</em>Hint : <em>You're going to want to write a Python script for this. 'zA' = 'a'</em><br><a id='1.1'></a>
->> <strong><code>9184177ecaa83073cbbf36f1414cc029</code></strong><br>
+> 1.1. <em>Uncover the flag on the hidden application page.</em><br><a id='1.1'></a>
+>> <strong><code>____</code></strong><br>
 <p></p>
 
 <br>
@@ -91,7 +99,7 @@ Disallow: /backup/chat.txt
 
 <br>
 <p>Checked the content in <code>http://TargeIP/backup/chat.txt</code>.<br><br>
-Discovered <code>Admin</code>, <code>Kate</code>, <code>export2pdf tool</code> for <code>daily system reports</code>code> and <code>username>/code<:<code>password</code>covered in the <code>.</p>
+Discovered <code>Admin</code>, <code>Kate</code>, <code>export2pdf tool</code> for <code>daily system reports</code> and <code>username</code>:<code>password</code>.</p>
 
 <br>
 
