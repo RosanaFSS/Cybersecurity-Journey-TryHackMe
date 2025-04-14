@@ -81,8 +81,35 @@ PORT   STATE SERVICE VERSION
 ...
 ```
 
+<br>
 
+<p>Used <code>nmap</code> again in order to enumerate http.</p>
+.  Discovered:<br>
+.  <code>/robots.txt</code><br>
+.  <code>/css/</code></br>
+.  <code>/images</code><br>
+.  <code>/js</code><br>
+</p>
 
+<br>
+
+```bash
+:~/AnonymousPlayground# nmap -sV --script=http-enum -A TargetIP
+...
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-enum: 
+|   /robots.txt: Robots file
+|   /css/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+|   /images/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+|_  /js/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+```
+
+<br<
+
+<p>Added <code>TargetIP</code> and a domain name to <code>etc/hosts</code>.</p>
 
 <br>
 <br>
