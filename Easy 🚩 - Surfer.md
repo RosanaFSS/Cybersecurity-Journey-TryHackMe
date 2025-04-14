@@ -1,14 +1,14 @@
 <p align="center">April 14, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{343}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/01dc672d-a7c9-425f-b466-64c242f8042c" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/e50c0c1e-db21-4aa6-bde4-60b1784e500b" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/4fe1cc18-807a-4b4f-8db2-7dc5f7c421ba"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Surfer}}$$</h1>
 <p align="center"><em>Surf some internal webpages to find the flag!</em>.<br>
 It is classified as an easy-level CTF.<br>It is premium: only for subscribers.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/surfer">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/7f28836a-2869-46b1-be12-3c3b5dbe2cf5"> </p>
 
 <br>
 <br>
@@ -209,20 +209,49 @@ Launched <code>Burp Suite</code> and enabled <code>FoxyProxy</code>.</p>
 <p>Clicked <code>Forward</code> and checked the web browser.</p>
 
 <br>
+<br>
 
-![image](https://github.com/user-attachments/assets/cd0bbd6a-a076-4d9a-9e8f-06a6aa583aab)
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/2e3c4dc9-ea6e-4ac3-8bc4-f04f84eb9e07"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/6c763410-e9da-4b5c-8d6e-cf50c70856bf"></p>
 
 
 <br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
 <br>
 
-  
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 14, 2025    | 343      |     286ᵗʰ    |        7ᵗʰ   |    233ʳᵈ    |     3ʳᵈ    |  93,443  |       662 |   59      |
+
+</div>
+
+<br>
 
 
-![image](https://github.com/user-attachments/assets/2e3c4dc9-ea6e-4ac3-8bc4-f04f84eb9e07)
+<p align="center"> Global All Time: 286ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/6ba7c668-85e1-4de8-b0b5-230d60f1d792"> </p>
+
+<p align="center"> Brazil All Time: 7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7d0e07cf-2ec4-4ea0-aa38-c25b864ae991"> </p>
+
+<p align="center"> Global monthly: 233ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/37aa28b4-c266-44d3-9f2c-d3132d4bc831"> </p>
+
+<p align="center"> Brazil monthly: 3ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/8a106b00-bb1e-4b1c-b7da-0361c297ea27"> </p>
 
 
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
 
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
