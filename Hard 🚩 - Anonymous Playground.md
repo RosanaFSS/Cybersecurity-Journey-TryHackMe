@@ -215,7 +215,8 @@ It looks like name of team members.<br><br>
 8:-)<br>
 There is <code>magna</code> among the list!<br><br>
 
-So <code>magna is an elephant</code>.</p>
+So ...<code>magna::magaisanelephant</code>.<br><br>
+Credentials!</p>
 
 <br>
 
@@ -260,16 +261,7 @@ itsunda
 
 
 
-![image](https://github.com/user-attachments/assets/f3041164-e86c-496c-be53-9902a86acd0a)
 
-![image](https://github.com/user-attachments/assets/615c8212-d4ee-4766-b9ca-652bbcf88f3c)
-
-![image](https://github.com/user-attachments/assets/1a8fc6d6-a68d-41f5-ad1e-51e0179e938d)
-
-
-![image](https://github.com/user-attachments/assets/343358f9-6c4a-4286-b5a4-994314a316f8)
-
-![image](https://github.com/user-attachments/assets/739e730a-b5fc-44b6-b3b7-6f6451927ed7)
 
 ![image](https://github.com/user-attachments/assets/547696de-3cf5-4791-afa4-ff5182e6aeb1)
 
