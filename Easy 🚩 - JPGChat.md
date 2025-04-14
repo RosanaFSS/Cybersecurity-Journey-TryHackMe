@@ -329,7 +329,7 @@ https://github.com/optionalCTF
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 14, 2025    | 342      |     286ᵗʰ    |        7ᵗʰ   |    224ᵗʰ    |     3ʳᵈ    |  93,378  |       660 |   59      |
+| April 14, 2025    | 343      |     286ᵗʰ    |        7ᵗʰ   |    224ᵗʰ    |     3ʳᵈ    |  93,378  |       660 |   59      |
 
 </div>
 
