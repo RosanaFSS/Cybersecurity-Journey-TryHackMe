@@ -74,6 +74,13 @@ OS details: Linux 3.10 - 3.13
 <br>
 <br>
 
+<p>Yesterday (April 13, 2025 sending the payload in the "report" worked.<br>
+Today I am continuing the room and it is not working.<br>
+So let´s try to figure out another way ...</p>
+
+<br>
+<br>
+
 > 1.2. <em>Escalate your privileges to root and read root.txt.</em> Hint : <em>In the sudo -l output, you can see that PYTHONPATH variable will be kept. Can you exploit this? Google around</em><br><a id='1.2'></a>
 >> <strong><code>_____</code></strong><br>
 <p></p>
