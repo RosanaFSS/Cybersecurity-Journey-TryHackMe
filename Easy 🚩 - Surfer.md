@@ -99,7 +99,11 @@ Disallow: /backup/chat.txt
 
 <br>
 <p>Checked the content in <code>http://TargeIP/backup/chat.txt</code>.<br><br>
-Discovered <code>Admin</code>, <code>Kate</code>, <code>export2pdf tool</code> for <code>daily system reports</code> and <code>username</code>:<code>password</code>.</p>
+Discovered<br><br>
+  
+- <code>Admin</code> and <code>Kate</code>.<br>
+- <code>export2pdf tool</code> for <code>daily system reports</code>.<br>
+- <code>Admin</code> is "using" default credentials.</p>
 
 <br>
 
@@ -115,4 +119,8 @@ Kate: Also Don't forget to change the creds, plz stop using your username as pas
 Kate: Hello.. ?
 :~/Surfer# 
 ```
+
+
+<br>
+
 
