@@ -79,3 +79,61 @@ OS details: Linux 3.10 - 3.13
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/bbd807e2-77e5-4280-8e61-eb4655972d27)
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="><br>
+<img width="900px" src=""></p>
+
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 13, 2025    | 342      |     285ᵗʰ    |        7ᵗʰ   |    205ᵗʰ    |     2nd    |  93,348  |       659 |   59      |
+
+</div>
+
+
+<br>
+
+<p align="center"> Global All Time: 285ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/e3896364-0ef1-48b7-b2c6-acbc1b3e805d"> </p>
+
+<p align="center"> Brazil All Time: 7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/3f5c244e-b5d3-47cd-80f0-40327dbf9b9b"> </p>
+
+<p align="center"> Global monthly: 205ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/920015f8-e9f7-41fb-a500-2b572354c6a4"> </p>
+
+<p align="center"> Brazil monthly: 2nd<br><br><img width="900px" src="https://github.com/user-attachments/assets/fb61879c-53f6-4d1f-8b7e-22b3ff9f56c8"> </p>
+
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/Mozzie1">Mozzie1</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
+
+
