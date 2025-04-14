@@ -9,7 +9,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{342}}$$-day-streak in  <a href="h
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/jpgchat">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/832d852f-eed4-4d70-b711-5480ac3e50d4"> </p>
 
 <br>
 <br>
