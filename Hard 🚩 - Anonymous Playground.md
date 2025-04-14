@@ -407,7 +407,7 @@ spooky@anonymous-playground:/home/spooky$
 
 - Discovered<br><br>
 - <code>root</code> has an unexpected folder ----- <code>/cdrom</code>.<br><br>
-- <code>SGID<code> ----- <code>/usr/bin/at</code> -----<code>CVE-2002-1614</code>.</p>
+- <code>SGID</code> ----- <code>/usr/bin/at</code> -----<code>CVE-2002-1614</code>.</p>
 
 
 <br>
