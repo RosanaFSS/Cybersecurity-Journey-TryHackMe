@@ -54,6 +54,34 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 <br>
 <br>
 
+<br>
+
+10.10.201.47
+
+
+<p>Used <code>nmap</code>.  Discovered:<br>
+.   two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
+.  <code>http-robots.txt: 1 disallowed entry </code>.<br>
+.  <code>|_/zYdHuAKjP</code></br>
+.  <code>|_http-title: Proving Grounds</code></p>
+
+
+```bash
+:~/AnonymousPlayground# nmap -sC -sV -sS -Pn -A -p- -T4 TargetIP
+...
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/zYdHuAKjP
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Proving Grounds
+...
+```
+
+
 
 
 <br>
