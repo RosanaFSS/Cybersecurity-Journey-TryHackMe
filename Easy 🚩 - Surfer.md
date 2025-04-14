@@ -209,6 +209,11 @@ Launched <code>Burp Suite</code> and enabled <code>FoxyProxy</code>.</p>
 <p>Clicked <code>Forward</code> and checked the web browser.</p>
 
 <br>
+
+![Screenshot 2025-04-14 184417](https://github.com/user-attachments/assets/3677bd2d-155d-4a96-a150-663aca556c64)
+
+
+<br>
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
