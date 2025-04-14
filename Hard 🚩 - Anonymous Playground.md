@@ -56,9 +56,6 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 
 <br>
 
-10.10.201.47
-
-
 <p>Used <code>nmap</code>.  Discovered:<br>
 .  two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
 .  <code>http-robots.txt: 1 disallowed entry </code>.<br>
@@ -218,7 +215,7 @@ It looks like name of team members.<br><br>
 8:-)<br>
 There is <code>magna</code> among the list!<br><br>
 
-So <code>maga is an elephant</code>.</p>
+So <code>magna is an elephant</code>.</p>
 
 <br>
 
@@ -261,14 +258,6 @@ itsunda
 <br>
 
 
-![image](https://github.com/user-attachments/assets/057f811b-e397-450b-bdfe-cae198031f9c)
-
-<br>
-
-
-![image](https://github.com/user-attachments/assets/a222a17f-a88b-46e2-a517-89229ce15e8d)
-
-![image](https://github.com/user-attachments/assets/3cc859f3-91c3-4537-8bf5-bbfe8dd92467)
 
 
 ![image](https://github.com/user-attachments/assets/f3041164-e86c-496c-be53-9902a86acd0a)
