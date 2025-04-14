@@ -57,7 +57,7 @@ Please allow 3-5 minutes for the box to fully deploy once you hit the "Deploy" b
 <br>
 
 <p>Used <code>nmap</code>.<br>
- Discovered:<br>
+Discovered:<br>
 -  two ports open: <code>22/ssh</code> and  <code>80/http</code>.<br>
 -  <code>http-robots.txt: 1 disallowed entry </code>.<br>
 -  an endpoint <code>|/zYdHuAKjP</code></br>
@@ -82,7 +82,7 @@ PORT   STATE SERVICE VERSION
 <br>
 
 <p>Used <code>nmap</code> again in order to enumerate http.</p>
--  Discovered:<br>
+Discovered:<br>
 -  <code>/robots.txt</code><br>
 -  <code>/css/</code></br>
 -  <code>/images</code><br>
@@ -105,7 +105,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 ```
 
-<br<
+<br>
 
 <p>Added <code>TargetIP</code> and a domain name to <code>etc/hosts</code>.</p>
 
