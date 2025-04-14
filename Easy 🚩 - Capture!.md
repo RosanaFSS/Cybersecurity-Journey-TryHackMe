@@ -63,7 +63,7 @@ Two files were inflated:<br>
 <br>
 
 
-<p>Used <code>nmapo</code>.  Discovered:<br>
+<p>Used <code>nmap</code>.  Discovered:<br>
 .  just port <code>80</code> is open.<br>
 .  <code>Requested resource was /login</code>.<br>
 .  <code>http-server-header: Werkzeug/2.2.2 Python/3.8.10</code></br>
