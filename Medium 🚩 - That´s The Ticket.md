@@ -252,29 +252,6 @@ adminaccount@itsupport.thm and 3.251.105.234
 
 <br>
 
-<p>Remember the tool provided?  I clicked <code>Create Session</code>.<br><br><code>7ef262a90eea7ea25af17345f13927ab.log.tryhackme.tech</code></p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/cbba1834-6bb9-4106-94c6-c65173b9aa07)
-
-
-<br>
-
-<p></p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/5a1e9f05-7735-4f83-8ff8-d73d5902efc6)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/07e4d955-3475-4bcf-be43-bc52a621f67a)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/1d10e502-7aef-47a2-84fe-d53171bebc2c)
-
 
 
 <br>
