@@ -89,7 +89,7 @@ Progress: 4614 / 4615 (99.98%)
 ===============================================================
 Finished
 ===============================================================
-root@ip-10-10-13-8:~/Ticket# 
+:~/Ticket# 
 
 
 ```
@@ -128,15 +128,12 @@ root@ip-10-10-13-8:~/Ticket#
 ![image](https://github.com/user-attachments/assets/197ffce0-76c0-46be-a590-5a094b628929)
 
 
-
-oi@abc.com
-
 <br>
 
 <p>Created a ticket.</p>
 
 
-<p>Clicked <code>Back Dashboard</code> and my ticket is there.</p>
+<p>Clicked <code>Back Dashboard</code> and my ticket was there. LoL</p>
 
 <br>
 
@@ -151,7 +148,7 @@ oi@abc.com
 <br>
 
 
-<p>Since it was provided this tool and we have a ticket system I will try some specific payload.</p>
+<p>Since there is thistool and we have a ticket system used some specific payloads.</p>
 
 </textarea><img src="http:eebc335a022c7f0d3b1c224d2b1da6c0.log.tryhackme.tech"><textarea>
 
