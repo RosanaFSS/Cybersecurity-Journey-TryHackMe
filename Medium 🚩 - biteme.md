@@ -29,7 +29,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 <br>
 
 > 1.1. <em>What is the user flag?</em><br><a id='1.1'></a>
->> <strong><code>adminaccount@itsupport.thm</code></strong><br>
+>> <strong><code>______</code></strong><br>
 <p></p>
 
 <br>
