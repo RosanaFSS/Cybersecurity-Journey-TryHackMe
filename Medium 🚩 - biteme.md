@@ -3,7 +3,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{343}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/4fe1cc18-807a-4b4f-8db2-7dc5f7c421ba"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{That´s The Ticket}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{biteme}}$$</h1>
 <p align="center"><em>Stay out of my server!</em>.<br>
 It is classified as a medium-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
