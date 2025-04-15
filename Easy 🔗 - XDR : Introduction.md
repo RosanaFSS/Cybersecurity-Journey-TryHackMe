@@ -1,9 +1,3 @@
-
-
-![image](https://github.com/user-attachments/assets/65998568-647c-4e9b-bbe4-266632123309)
-
-
-
 <br>
 
 ![image](https://github.com/user-attachments/assets/52c2a9ee-cac4-450d-8227-70463d0679df)
