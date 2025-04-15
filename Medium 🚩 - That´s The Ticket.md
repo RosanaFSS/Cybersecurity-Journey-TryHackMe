@@ -117,7 +117,7 @@ root@ip-10-10-13-8:~/Ticket#
 
 <br>
 
-<p>Created and account.</p>
+<p>Created an account.</p>
 
 <br>
 
