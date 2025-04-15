@@ -238,19 +238,6 @@ adminaccount@itsupport.thm and 3.251.105.234
 
 <br>
 
-![image](https://github.com/user-attachments/assets/0f60ef93-df76-4445-92dc-e37c9a7974a6)
-
-
-
-
-![image](https://github.com/user-attachments/assets/f42739bb-6b61-463e-bcc9-1d5b9c87612e)
-
-
-<br>
-
-![image](https://github.com/user-attachments/assets/6655b577-9e81-42b7-915c-81cced0123ef)
-
-<br>
 
 
 
