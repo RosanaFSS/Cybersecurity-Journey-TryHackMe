@@ -283,7 +283,7 @@ root@haskhell:/root#
 <br>
 
 
-<p align="center">Weekly League: 3ʳᵈ Bronze<br><br><img width="300px" src="https://github.com/user-attachments/assets/4573fb4b-7cb6-4bf5-b3d8-edda8829a928"> </p>
+<p align="center">Weekly League: 3ʳᵈ Bronze<br><br><img width="900px" src="https://github.com/user-attachments/assets/4573fb4b-7cb6-4bf5-b3d8-edda8829a928"> </p>
 
 <br>
 
