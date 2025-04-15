@@ -33,9 +33,6 @@
 <br>
 
 
-![image](https://github.com/user-attachments/assets/2e965ce7-b0cd-46d9-b769-e4b5861f69cd)
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/2042500f-e99b-4a5f-9a48-473167e091fa)
 
