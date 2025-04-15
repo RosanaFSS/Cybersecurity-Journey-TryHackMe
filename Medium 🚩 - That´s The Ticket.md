@@ -1,7 +1,7 @@
 <p align="center">April 14, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{343}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/52457342-d2cf-457a-870d-88929348b4f3" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/4fe1cc18-807a-4b4f-8db2-7dc5f7c421ba"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{That´s The Ticket}}$$</h1>
 <p align="center"><em>IT Support are going to have a bad day, can you get into the admin account?</em>.<br>
@@ -9,7 +9,8 @@ It is classified as a medium-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/thatstheticket">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/4477c4ec-5b0d-455b-b356-30162dba49af"> </p>
+
 
 <br>
 <br>
@@ -238,12 +239,55 @@ adminaccount@itsupport.thm and 3.251.105.234
 
 <br>
 
+<br>
+<br>
 
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/8f329523-bcc1-4ccd-a9f6-5d3020096927"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/dea05b5b-cabb-4abd-b20f-824c5a0d657b"></p>
 
 
 <br>
 
-![image](https://github.com/user-attachments/assets/8f329523-bcc1-4ccd-a9f6-5d3020096927)
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
 
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| April 14, 2025    | 343      |     284ᵗʰ    |        7ᵗʰ   |    229ᵗʰ    |     3ʳᵈ    |  93,443  |       663 |   59      |
+
+</div>
+
+<br>
+
+
+<p align="center"> Global All Time: 284ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/e4cdc4a1-e7f0-4fe7-b3dd-9be191907a6f"> </p>
+
+<p align="center"> Brazil All Time: 7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4c2a7227-95cb-41a2-93d2-f4fcfab7feb0"> </p>
+
+<p align="center"> Global monthly: 229ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/24b4dce2-5304-4fc9-86c4-89257aaf3ffc"> </p>
+
+<p align="center"> Brazil monthly: 3ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/794075d5-57fe-4e74-b0ee-a04cd18e39cb"> </p>
+
+
+<br>
+
+
+<p align="center">Weekly League: 13ʳᵈ Silver<br><br><img width="900px" src="https://github.com/user-attachments/assets/7dc2ec2e-7843-4ead-b5c8-21fb598fca65"> </p>
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
