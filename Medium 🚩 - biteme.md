@@ -333,7 +333,76 @@ Discovered <code>bin2hex</code>.</p>
 <br>
 
 
+<p>Finally... after spending time in <code>secureimage</code> instead of <code>secruimage</code> ...</p>
 
+
+<br>
+
+![image](https://github.com/user-attachments/assets/03ea6750-45ee-45f0-ad5f-2056b9007f85)
+
+
+<br>
+
+<p>I just learned after a long long time in this challenge ...<br>
+That the function I highlighted before is coded in <code>java</code><br>Used <code>https://deobfuscate.io/</code>.</p>
+
+<p>This is obfuscated ...</p>
+
+<br>
+
+```bash
+       function handleSubmit() {
+        eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('0.1(\'2\').3=\'4\';5.6(\'@7 8 9 a b c d e f g h i... j\');',20,20,'document|getElementById|clicked|value|yes|console|log|fred|I|turned|on|php|file|syntax|highlighting|for|you|to|review|jason'.split('|'),0,{}))
+        return true;
+      }
+
+```
+
+<p>now it is</p>
+
+<br>
+
+```bash
+
+function handleSubmit() {
+  eval(function (p, a, c, k, e, r) {
+    e = function (c) {
+      return c.toString(a);
+    };
+    if (!"".replace(/^/, String)) {
+      while (c--) r[e(c)] = k[c] || e(c);
+      k = [function (e) {
+        return r[e];
+      }];
+      e = function () {
+        return "\\w+";
+      };
+      c = 1;
+    }
+    ;
+    while (c--) if (k[c]) p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
+    return p;
+  }("0.1('2').3='4';5.6('@7 8 9 a b c d e f g h i... j');", 20, 20, "document|getElementById|clicked|value|yes|console|log|fred|I|turned|on|php|file|syntax|highlighting|for|you|to|review|jason".split("|"), 0, {}));
+  return true;
+}
+```
+
+<br>
+
+```bash
+
+document|getElementById|clicked|value|yes|console|log|fred|I|turned|on|php|file|syntax|highlighting|for|you|to|review|jason".split("|"), 0, {}));
+```
+
+<br>
+
+<p>To be continued ...</p>
+
+
+
+ 
+
+<p></p>
 
 
 
