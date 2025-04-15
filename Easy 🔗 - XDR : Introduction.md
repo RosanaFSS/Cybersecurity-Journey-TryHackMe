@@ -1,16 +1,4 @@
-<h1>XDR: Introduction</h1>
 
-
-<br><br>
-
-
-![image](https://github.com/user-attachments/assets/f8fbb384-71ab-42c6-b5ae-6e19b91bea03)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/f6448dd8-a58d-490b-9841-60c6c577aad2)
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/65998568-647c-4e9b-bbe4-266632123309)
 
