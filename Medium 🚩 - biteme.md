@@ -244,6 +244,46 @@ securimage              [Status: 301, Size: 325, Words: 20, Lines: 10]
 :: Progress: [13965/13965] :: Job [1/1] :: 314 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 :~/biteme# 
 ```
+
+<p>And again and again and again to enumerate <code>securimage</code>.<br>
+Pay attention: it is NOT  <code>secureimage</code>.<br>I lost a bit of time here.</p>
+
+```bash
+:~/biteme# ffuf -u http://biteme.thm/console/securimage/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -fr '/\..*'
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://biteme.thm/console/securimage/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+ :: Filter           : Regexp: /\..*
+________________________________________________
+
+audio                   [Status: 301, Size: 331, Words: 20, Lines: 10]
+backgrounds             [Status: 301, Size: 337, Words: 20, Lines: 10]
+database                [Status: 301, Size: 334, Words: 20, Lines: 10]
+examples                [Status: 301, Size: 334, Words: 20, Lines: 10]
+.htpasswd               [Status: 403, Size: 277, Words: 20, Lines: 10]
+images                  [Status: 301, Size: 332, Words: 20, Lines: 10]
+.hta                    [Status: 403, Size: 277, Words: 20, Lines: 10]
+.htaccess               [Status: 403, Size: 277, Words: 20, Lines: 10]
+:: Progress: [4655/4655] :: Job [1/1] :: 49 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
+:~/biteme# 
+
+```
  
 <br>
 
@@ -280,6 +320,17 @@ Discovered <code>bin2hex</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/6de91091-4eeb-4c8a-9917-89d01515fdd6)
 
+
+
+<br>
+
+<p>Used <code>CyberChef</code>.<br><br>Discovered<code>jason_test_account</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1dc17bab-0ff1-488e-8fa6-18c3c0103cb0)
+
+<br>
 
 
 
