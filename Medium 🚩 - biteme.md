@@ -154,7 +154,7 @@ It is a <code>sign in</code> web page with <code>captcha</code>.</p>
 <br>
 
 
-<p>Viewed source code.</p>
+<p>Viewed source code.<br><br>Wow ... many discoveries.</p>
 
 <br>
 
@@ -201,7 +201,7 @@ ________________________________________________
 :: Progress: [39/39] :: Job [1/1] :: 26 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 ```
 
--  directory<code>/console</code> and <code>index.html</code>.<br>
+<br>
 
 ```bash
 
