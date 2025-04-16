@@ -1,10 +1,9 @@
 
-<p align="center">April 11, 2025<br>
+<p align="center">April 16, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/51fb15ac-ba56-46aa-8864-66875356af39" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/6fcbf656-d31e-4b81-950f-0c4c980e3b43"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode, in progress}}$$</h1>
+<img width="300px" src="" alt="Your Image Badge"><br></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode}}$$</h1>
 <p align="center">"Continue hunting for the exfiltration footprints in the ex-employee's personal workstation." <br>
 It is classified as a medium-level CTF.<br>
 It is a premium room: for subscribers only.<br>
@@ -52,31 +51,12 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 <br>
 
 > 1.1. <em>When did Liam last logged into the system? (Format: YYYY-MM-DD HH:MM:SS).</em> Hint : <em>Focus on the graphical logins only.</em><br><a id='1.1'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>2025-02-28T10:59:07</code></strong><br>
 <p></p>
 
 <br>
 
-<p>Here is <code>Liam´s disk image</code>: <code>/home/ubuntu</code>.</p>
-<br>
-
-![image](https://github.com/user-attachments/assets/3ddbe1eb-6999-4ccc-90eb-49d9bb63d30c)
-
-<br>
-
-<p>Here is <code>Autopsy</code>.</p>
-<br>
-
-![image](https://github.com/user-attachments/assets/7fb30c43-0221-471c-8ef3-c8222dddcd71)
-
-
-<br>
-
-<p>Let´s start launching <code>Autopsy</code>, selecting <code>Open Recent Case</code> and clicking <code>Open</code>.</p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/c059b8c8-8e0b-4cc3-8a45-c620473db4c7)
+![image](https://github.com/user-attachments/assets/c46db247-25b9-4129-8a18-210fd11c982a)
 
 <br>
 
@@ -103,34 +83,23 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 <br>
 
-![image](https://github.com/user-attachments/assets/4ce7f42e-2fc2-4e80-90c3-5d74ef33ec6d)
+<p><code>ubuntu@tryhackme:/mnt/liam_disk/var/log$ grep -i "usb" syslog</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e1735841-527f-4cd2-a216-81765d4ee16a)
+
 
 <br>
 
 
 > 1.4. <em>When was the USB connected to the system? (Format: YYYY-MM-DD HH:MM:SS)</em><br><a id='1.4'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>2025-02-28T10:59:25</code></strong><br>
 <p></p>
 
 <br>
 
-<p>First I tried using <code>grep -i USB dmsesg</code>.<br>
-Discovered <code>USB 2.0 started</code>.<br>
-Unfortunately I don´t know how to convert to a readble format.</p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/2e0db5a6-dfa8-43a7-bf2f-a735e852f5b0)
-
-<br>
-
-<p>So I tried something different ...</p>
-
-<br>
-
-
-
-<br>
+![image](https://github.com/user-attachments/assets/848c27f9-aa97-43f9-9e87-052f9d808d33)
 
 
 <br>
@@ -197,8 +166,15 @@ Unfortunately I don´t know how to convert to a readble format.</p>
 <br>
 
 > 1.10. <em>When was the USB disconnected by Liam? (Format: YYYY-MM-DD HH:MM:SS)</em><br><a id='1.10'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>2025-02-28T11:44:00</code></strong><br>
 <p></p>
+
+<br>
+
+<p><code>ubuntu@tryhackme:/mnt/liam_disk/var/log$ grep -i "usb" syslog</code></p>
+
+![image](https://github.com/user-attachments/assets/498349be-821e-484a-95c3-51e1a63a8099)
+
 
 <br>
 
@@ -248,10 +224,11 @@ Unfortunately I don´t know how to convert to a readble format.</p>
 
 <br>
 
+<p>I di not find anything in <code>/etc/crontab</code>.</p>
 
+<br>
 
-![image](https://github.com/user-attachments/assets/a154780f-46f8-4f7b-a715-39f7417cb3e6)
-
+![image](https://github.com/user-attachments/assets/3d10e5c6-9418-483d-81fa-8606a1157ea0)
 
 
 
