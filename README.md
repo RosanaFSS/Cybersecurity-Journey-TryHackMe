@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{TryHackMe}}$$ </h1>
-<h4 align="center">April 15, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
+<h4 align="center">April 17, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
 <h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
 
 <div align="center">
@@ -20,9 +20,10 @@
 <br>
 
 
-<h2 align="center"> $$\textcolor{white}{\textnormal{April 15, 2025 - My yearly activity}}$$ <br>
-<img width="1000px" src="https://github.com/user-attachments/assets/06c4b800-b074-490a-a9b1-40ea694ad503"/><br>
-<img width="1000px" src=""/></h2>
+<h2 align="center"> $$\textcolor{white}{\textnormal{April 17, 2025 - My yearly activity}}$$ <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/bd95ecd0-0dee-4984-9b84-bba08439abbd"/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/42d900b6-32e7-48b1-bc2c-b91d0aa1b05b"/></h2>
+
 
 <br>
 
@@ -37,7 +38,7 @@
 |Year Month      |Monthly         |All Time        |Achievement                                                                                        |
 |:---------------|---------------:|---------------:|:-------------------------------------------------------------------------------------------------:| 
 |                |Brazil          |Global          |                                                                                                   |
-|2025 April      |2ⁿᵈ             |279ᵗʰ           | <img src="https://github.com/user-attachments/assets/04a9e8d7-7404-4d56-82d0-a437793e1a12" style="width:300px;"/>|
+|2025 April      |2ⁿᵈ             |272ⁿᵈ           | <img src="https://github.com/user-attachments/assets/3e799729-405f-4e7c-8a34-ce922f53510e" style="width:300px;"/>|
 |2025 March      |5ᵗʰ             |321ˢᵗ           | <img src="https://github.com/user-attachments/assets/ea6b7eae-ae33-4491-927c-2b9ad8166323" style="width:300px;"/> |
 |2025 February   |1ˢᵗ             |385ᵗʰ           | <img src="https://github.com/user-attachments/assets/b4f048d4-5bd0-4aeb-b42c-16460f926cf8" style="width:300px;"/> |
 |2025 January    |2ⁿᵈ             |496ᵗʰ           | <img src="https://github.com/user-attachments/assets/00e64e74-4d33-4820-9064-67f67fa00614" style="width:300px;"/> |
@@ -66,21 +67,23 @@
 <div align="center">
 
 
-|Date               |Streak    |All Time      |All Time      |Monthly       |Monthly       |Points    | Rooms     |
-|:------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
-|                   |          |Global        |Brazil        |Global        | Brazil       |          |           | 
-| April 15, 2025    | 344      | 279ᵗʰ        | 6ᵗʰ          |     241ˢᵗ    |      2ⁿᵈ     | 94,505   |  666      |
-| April 14, 2025    | 343      | 286ᵗʰ        | 7ᵗʰ          |     229ᵗʰ    |      3ʳᵈ     | 93,413   |  661      |
-| April 13, 2025    | 342      | 285ᵗʰ        | 7ᵗʰ          |     208ᵗʰ    |      3ʳᵈ     | 93,318   |  659      |
-| April 12, 2025    | 341      |         286ᵗʰ|          8ᵗʰ |         188ᵗʰ|           2ⁿᵈ| 93,168   |       655 | 
-| April 11, 2025    | 340      |         295ᵗʰ|          8ᵗʰ |         286ᵗʰ|           2ⁿᵈ| 92,590   |       653 | 
-| April 10, 2025    | 339      |         298ᵗʰ|          8ᵗʰ |         257ᵗʰ|           2ⁿᵈ| 92,366   |       653 | 
-| April &nbsp; 9, 2025     | 338      |         297ᵗʰ|          8ᵗʰ |         272ⁿᵈ|           2ⁿᵈ| 92,142   |       651 | 
-| April &nbsp; 8, 2025     | 337      |         304ᵗʰ|          8ᵗʰ |         317ᵗʰ|           4ᵗʰ| 91,786   |       648 | 
-| April &nbsp; 7, 2025     | 336      |         304ᵗʰ|          8ᵗʰ |         317ᵗʰ|           4ᵗʰ| 91,786   |       648 | 
-| April &nbsp; 6, 2025     | 335      |         309ᵗʰ|          8ᵗʰ |       2,078ᵗʰ|          17ᵗʰ| 91,336   |       645 | 
-| April &nbsp; 5, 2025     | 334      |         312ⁿᵈ|          8ᵗʰ |       1,773ʳᵈ|          14ᵗʰ| 91,256   |       644 | 
-| April &nbsp; 5, 2025     | 334      |         313ʳᵈ|          8ᵗʰ |       1,730ᵗʰ|          14ᵗʰ| 91,112   |       643 |
+|Date                       |Streak    |      All Time|      All Time|       Monthly|       Monthly|Points    | Rooms     |
+|:--------------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
+|                           |          |        Global|        Brazil|        Global|        Brazil|          |           | 
+| April 17, 2025            | 346      |         272ⁿᵈ|           6ᵗʰ|          51ˢᵗ|           2ⁿᵈ| 95,433   |       671 |
+| April 16, 2025            | 345      |         276ᵗʰ|           6ᵗʰ|          91ˢᵗ|           2ⁿᵈ| 94,923   |       669 |
+| April 15, 2025            | 344      |         286ᵗʰ|           7ᵗʰ|         241ˢᵗ|           3ʳᵈ| 93,845   |       666 |
+| April 14, 2025            | 343      |         286ᵗʰ|           7ᵗʰ|         229ᵗʰ|           3ʳᵈ| 93,413   |       661 |
+| April 13, 2025            | 342      |         285ᵗʰ|           7ᵗʰ|         208ᵗʰ|           3ʳᵈ| 93,318   |       659 |
+| April 12, 2025            | 341      |         286ᵗʰ|          8ᵗʰ |         188ᵗʰ|           2ⁿᵈ| 93,168   |       655 | 
+| April 11, 2025            | 340      |         295ᵗʰ|          8ᵗʰ |         286ᵗʰ|           2ⁿᵈ| 92,590   |       653 | 
+| April 10, 2025            | 339      |         298ᵗʰ|          8ᵗʰ |         257ᵗʰ|           2ⁿᵈ| 92,366   |       653 | 
+| April &nbsp; 9, 2025      | 338      |         297ᵗʰ|          8ᵗʰ |         272ⁿᵈ|           2ⁿᵈ| 92,142   |       651 | 
+| April &nbsp; 8, 2025      | 337      |         304ᵗʰ|          8ᵗʰ |         317ᵗʰ|           4ᵗʰ| 91,786   |       648 | 
+| April &nbsp; 7, 2025      | 336      |         304ᵗʰ|          8ᵗʰ |         317ᵗʰ|           4ᵗʰ| 91,786   |       648 | 
+| April &nbsp; 6, 2025      | 335      |         309ᵗʰ|          8ᵗʰ |       2,078ᵗʰ|          17ᵗʰ| 91,336   |       645 | 
+| April &nbsp; 5, 2025      | 334      |         312ⁿᵈ|          8ᵗʰ |       1,773ʳᵈ|          14ᵗʰ| 91,256   |       644 | 
+| April &nbsp; 5, 2025      | 334      |         313ʳᵈ|          8ᵗʰ |       1,730ᵗʰ|          14ᵗʰ| 91,112   |       643 |
 | April  &nbsp; 4, 2025     | 333      |         315ᵗʰ|          8ᵗʰ |       1,477ᵗʰ|          14ᵗʰ| 90,880   |       642 |
 | April  &nbsp; 3, 2025     | 332      |         315ᵗʰ|          8ᵗʰ |       1,086ᵗʰ|          11ˢᵗ| 90,784   |       641 | 
 | April  &nbsp; 2, 2025     | 331      |         316ᵗʰ|          8ᵗʰ |         925ᵗʰ|           8ᵗʰ| 90,804   |       640 | 
