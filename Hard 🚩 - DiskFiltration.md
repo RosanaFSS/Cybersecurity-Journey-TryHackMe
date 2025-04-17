@@ -107,8 +107,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
-<p>Exported <code>Shadow_Plan.zip</p> to the same directory of <code>exiftool.exe</code>.<br><br>
-Unzipped <code>Shadow_Plan.zip</code> using the <code>password</code> just discovered.</code>p>
+<p>Exported <code>Shadow_Plan.zip</code> to the same directory of <code>exiftool.exe</code>.<br><br>
+Unzipped <code>Shadow_Plan.zip</code> using the <code>password</code> just discovered.</p>
 
 <br>
 
