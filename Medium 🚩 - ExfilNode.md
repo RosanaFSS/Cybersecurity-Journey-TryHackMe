@@ -1,8 +1,8 @@
 
 <p align="center">April 16, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{340}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br></p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{345}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="https://github.com/user-attachments/assets/818047b1-b60d-40b7-b5ca-a8c2213dae0b" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ExfilNode}}$$</h1>
 <p align="center">"Continue hunting for the exfiltration footprints in the ex-employee's personal workstation." <br>
 It is classified as a medium-level CTF.<br>
@@ -254,25 +254,25 @@ To use Autopsy, open a terminal and navigate to <code>/home/ubuntu/autopsy/autop
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 11, 2025    | 340      |     291ˢᵗ    |        8ᵗʰ   |    150ᵗʰ    |     2ⁿᵈ    |  92,890  |       653 |   59      |
+| April 16, 2025    | 345      |     274ᵗʰ    |        6ᵗʰ   |    75ᵗʰ     |     2ⁿᵈ    |  95,043  |       670 |   59      |
 
 </div>
 
 <br>
 
-
-<p align="center">Weekly League: Bronze 4ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/e0e98cbe-0457-4ebd-b55f-789307bbb4581"> </p>
+<p align="center">Weekly League: Bronze 2ⁿᵈ<br><br><img width="300px" src="https://github.com/user-attachments/assets/ca5765a6-dec3-4d54-b477-c13c4098d6d41"> </p>
 
 
 <br>
 
-<p align="center"> Global All Time: 291ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bb739e13-84b7-4606-80fc-d51b8cdbd0d1"> </p>
 
-<p align="center"> Brazil All Time:   8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/461a0a6e-b565-4251-bd66-d05c5d339909"> </p>
+<p align="center"> Global All Time: 291ˢᵗ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bdb72e2d-b564-4e5f-b1c4-1e6e5d00dfad"> </p>
 
-<p align="center"> Global monthly:  150ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7a01d951-55d2-4481-a946-2d8d38508599"> </p>
+<p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="900px" src=""> </p>
 
-<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4206e6b2-6e4f-4dd2-bae6-2811e6c87b53"> </p>
+<p align="center"> Global monthly:  75ʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/82d25e23-509f-471c-9ea9-a2f79adca97b"> </p>
+
+<p align="center"> Brazil monthly:   2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a7022196-963f-4c65-b82d-0f63d1bd9b28"> </p>
 
 
 <br>
