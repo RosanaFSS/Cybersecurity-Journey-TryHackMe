@@ -11,11 +11,52 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8e5a3c8b-b8fd-4d79-9628-b29253f67ec9"> </p>
 
+<br>
 
-<h2>Task 2 . The Exfiltratopm Hunt </h2>
+
+<h2>Task 1 . Attack Chain </h2>
+<p>An overview of the attack chain is provided in the table below:</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d804cc64-c54d-4b10-aee6-11ac530a8bbe)
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 1.1. <em>Ready for the challenge?</em><br><a id='1.1'></a>
+>> <strong><code>NO answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 2 . The Exfiltration Hunt </h2>
 
 <p>[  Start Machine  ]</p>
 
+<h3>Room Prerequisites</h3>
+
+<p>Before solving this room, it is recommended to go through the following rooms:<br>
+
+- Autopsy<br>
+- Expediting Registry Analysis<br>
+- File Carving<br>
+- NTFS Analysis<br>
+- Windows Forensics 1<br>
+- Windows Forensics 2<br>
+- Scenario</p>
+
+<h3>Scenario</h3>
+<p>Tech THM discovered their critical data had been leaked to the competitors. After an internal investigation, the company suspects Liam, a recently terminated employee who was working as a system engineer with Tech THM. This suspicion was raised as Liam had access to the leaked data in his company-provided workstation. He often worked late hours without clear justification for his extended presence. He was also caught roaming around the critical server room and taking pictures of the entry gate. Following these suspicions, Liam’s workstation (provided by the company) was investigated. The initial investigation suggests that an external entity was also helping Liam.<br><br>
+
+Let's use the knowledge we gained from the previous modules of this path to search for traces of Liam's activities.</p>
+
+<h3>Starting the Machine</h3>
 <p>...</p>
 
 
@@ -31,39 +72,41 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
-<p>Launched <code>Autopsy</code>.</p>
+<p align="center">Launched <code>Autopsy</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/533ac813-78e5-4832-afd6-baf7e16e7195)
 
 <br>
 
-<p>Double-clicked <code>Open a Recent Case</code>.</p>
+<p align="center">Double-clicked <code>Open a Recent Case</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/919eaa3f-0000-450b-9e2d-b2b9b8853bf1)
 
 <br>
 
-
-<p>Clicked <code>Open</code>.</p>
+<p align="center">Clicked <code>Open</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/da45f725-1563-4b60-9ecc-7d0d693534ce)
 
 <br>
 
-<p>Clicked <code>Artifacts</code>.</p>
+<p align="center">Clicked <code>Artifacts</code>.</p>
+
 
 ![image](https://github.com/user-attachments/assets/3ad77b06-ee4b-4e3e-abb1-cca2dd1a9040)
 
 
 <br>
 
-<p>Clicked <code>USB Device Attached</code>.</p>
+<p align="center">Clicked <code>USB Device Attached</code>.</p>
+
 
 ![image](https://github.com/user-attachments/assets/df8fb5c0-b56f-4b9e-94e1-57d4b64bf887)
 
 <br>
 
-<p>Analyzed the <code>Device ID</code> field following the guidance provided in the hint.</p>
+<p align="center">nalyzed the <code>Device ID</code> field following the guidance provided in the hint.</p>
+
 
 ![image](https://github.com/user-attachments/assets/618d5e99-6e5b-4451-b653-11e459849aaa)
 
