@@ -58,7 +58,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <p>Clicked <code>USB Device Attached</code>.</p>
 
-[image](https://github.com/user-attachments/assets/df8fb5c0-b56f-4b9e-94e1-57d4b64bf887)
+![image](https://github.com/user-attachments/assets/df8fb5c0-b56f-4b9e-94e1-57d4b64bf887)
 
 <br>
 
