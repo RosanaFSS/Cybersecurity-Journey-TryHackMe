@@ -32,32 +32,24 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <p>Launched <code>Autopsy</code>.</p>
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/533ac813-78e5-4832-afd6-baf7e16e7195)
 
 <br>
 
 <p>Double-clicked <code>Open a Recent Case</code>.</p>
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/919eaa3f-0000-450b-9e2d-b2b9b8853bf1)
 
 <br>
 
 
-<p>Clicked <code>Open</p>
-
-<br>
+<p>Clicked <code>Open</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/da45f725-1563-4b60-9ecc-7d0d693534ce)
 
 <br>
 
 <p>Clicked <code>Artifacts</code>.</p>
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/3ad77b06-ee4b-4e3e-abb1-cca2dd1a9040)
 
@@ -66,9 +58,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <p>Clicked <code>USB Device Attached</code>.</p>
 
-<br>
-
-![image](https://github.com/user-attachments/assets/df8fb5c0-b56f-4b9e-94e1-57d4b64bf887)
+[image](https://github.com/user-attachments/assets/df8fb5c0-b56f-4b9e-94e1-57d4b64bf887)
 
 <br>
 
