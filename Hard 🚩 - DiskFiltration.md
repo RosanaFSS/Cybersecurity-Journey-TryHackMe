@@ -77,8 +77,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 ![image](https://github.com/user-attachments/assets/5ef140fb-43fa-4046-8a51-3e627da34502)
 
-ProfileName	REG_SZ	Liam's Iphone
-
 <br>
 
 > 1.3. <em>What is the name of the zip file Liam copied from the USB to the machine for exfiltration instructions?</em><br><a id='1.3'></a>
