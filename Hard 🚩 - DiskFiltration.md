@@ -101,22 +101,31 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
-<p>I practiced another way to discover the answer.<br><br>
-Used <code>Exiftool</code>.</p>
+> 1.5. <em>Time to reveal the external entity helping Liam! Who is the author of the PDF file stored in the zip file?</em><br><a id='1.5'></a>
+>> <strong><code>Henry</code></strong><br>
+<p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/b341b1b5-bca4-4c7d-b6bc-067e8294cdc1)
+<p>Exported <code>Shadow_Plan.zip</p> to the same directory of <code>exiftool.exe</code>.<br><br>
+Unzipped <code>Shadow_Plan.zip</code> using the <code>password</code> just discovered.</code>p>
 
 <br>
 
-
-
-
-<br>
+![image](https://github.com/user-attachments/assets/f0944d12-260f-49eb-ad9f-b747dcdc104b)
 
 <br>
 
+> 1.6. <em>What is the correct extension of the file that has no extension in the zip folder?</em><br><a id='1.6'></a>
+>> <strong><code>png</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/14278bb5-7b9f-4fb1-b1ae-87e87bffd1f7)
+
+
+<br>
 <br>
 
 > 1.7. <em>It looks like Liam searched for some files inside the file explorer. What are the names of these files? (alphabetical order)</em>Hint : <em>Spinning around the Wheel!</em><br><a id='1.7'></a>
@@ -182,11 +191,14 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 <br>
 
-> 1.10. <em>Liam received a hidden flag inside a file (in the zip folder) from the external entity helping him. What was that?<br><a id='1.10'></a>
+> 1.10. <em>Liam received a hidden flag inside a file (in the zip folder) from the external entity helping him. What was that?<br></em>Hint : <em>Ask meta where is your data?</em><a id='1.10'></a>
 >> <strong><code>______</code></strong><br>
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/78d74893-d89a-4031-bbd9-94c89cac3a6d)
+
 
 <br>
 
