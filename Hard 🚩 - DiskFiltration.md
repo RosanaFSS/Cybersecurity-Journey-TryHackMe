@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{346}}$$-day-streak in  <a href="h
 <p align="center"><em>Test your Windows investigation skills on a critical data exfiltration case.</em>.<br>
 It is classified as a hard-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/diskfiltration">here</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8e5a3c8b-b8fd-4d79-9628-b29253f67ec9"> </p>
 
