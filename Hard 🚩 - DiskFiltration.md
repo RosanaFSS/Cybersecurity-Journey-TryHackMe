@@ -343,7 +343,7 @@ In 2 minutes the report was generated.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |   Brazil     |    Global   |   Brazil   |          | Completed |           |
-| April 17, 2025    |   346    |     272ⁿᵈ    |     6ᵗʰ      |     75ᵗʰ    |     2ⁿᵈ    |  95,433  |    671    |    59     |
+| April 17, 2025    |   346    |     272ⁿᵈ    |     6ᵗʰ      |      51ˢᵗ    |     2ⁿᵈ    |  95,433  |    671    |    59     |
 
 </div>
 
