@@ -83,32 +83,6 @@ In 2 minutes the report was generated.</p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/9fb1d7cd-4b42-4fe0-aded-e69f6010fadb)
-
-
-<br>
-
-![image](https://github.com/user-attachments/assets/ee763ac9-d8a6-4996-a21f-4ba1e29ded5a)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/e6939f5c-3470-4f73-9852-66e9552b3b6a)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/5f8e56a2-138b-46a0-bb91-74296b8f8703)
-
-
-<br>
-
-<p>Identified the highlighted <code>change</code> in the system.</p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/adb77d8e-6061-4c2c-ae87-704a8fae5cbf)
-
-<br>
-
 ![image](https://github.com/user-attachments/assets/5ef140fb-43fa-4046-8a51-3e627da34502)
 
 ProfileName	REG_SZ	Liam's Iphone
@@ -249,6 +223,32 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 <br>
 
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9fb1d7cd-4b42-4fe0-aded-e69f6010fadb)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ee763ac9-d8a6-4996-a21f-4ba1e29ded5a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e6939f5c-3470-4f73-9852-66e9552b3b6a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5f8e56a2-138b-46a0-bb91-74296b8f8703)
+
+
+<br><br><br>
+
+<p>Identified the highlighted <code>change</code> in the system.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/adb77d8e-6061-4c2c-ae87-704a8fae5cbf)
 
 
 
