@@ -102,11 +102,15 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 <br>
 
 <p>I practiced another way to discover the answer.<br><br>
-Launched <code>Exiftool</code>.</p>
+Used <code>Exiftool</code>.</p>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/b341b1b5-bca4-4c7d-b6bc-067e8294cdc1)
+
+<br>
+
+
 
 
 <br>
