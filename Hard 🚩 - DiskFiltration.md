@@ -270,7 +270,7 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 
 
-> 1.12. <em>Which social media site did Liam search for using his web browser? Likely to avoid suspicion, thinking somebody was watching him. (Full URL)<br><a id='1.12'></a>
+> 1.12. <em>Which social media site did Liam search for using his web browser? Likely to avoid suspicion, thinking somebody was watching him. (Full URL)</em><br><a id='1.12'></a>
 >> <strong><code>https://www.facebook.com/</code></strong><br>
 <p></p>
 
@@ -280,7 +280,7 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 <br>
 
-> 1.13. <em>What is the PowerShell command Liam executed as per the plan?<br><a id='1.13'></a>
+> 1.13. <em>What is the PowerShell command Liam executed as per the plan?</em><br><a id='1.13'></a>
 >> <strong><code>Get-WmiObject -Class Win32_Share | Select-Object Name, Path</code></strong><br>
 <p></p>
 
