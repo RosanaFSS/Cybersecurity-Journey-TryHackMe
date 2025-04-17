@@ -72,21 +72,18 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
->1.2. <em>What is the profile name of the personal hotspot Liam used to evade network-level detection?<br><a id='1.2'></a>
+>1.2. <em>What is the profile name of the personal hotspot Liam used to evade network-level detection?</em><br><a id='1.2'></a>
 >> <strong><code>Liam's Iphone</code></strong><br>
 <p></p>
 
 <br>
 
-<p>Clicked <code>Genertate Report</code> in <code>Autopsy</code>.<br><br>
+<p>Clicked <code>Generate Report</code> in <code>Autopsy</code>.<br><br>
 In 2 minutes the report was generated.</p>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/9fb1d7cd-4b42-4fe0-aded-e69f6010fadb)
-
-
-<br>
 
 
 <br>
