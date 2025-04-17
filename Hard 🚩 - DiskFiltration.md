@@ -21,9 +21,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 ![image](https://github.com/user-attachments/assets/d804cc64-c54d-4b10-aee6-11ac530a8bbe)
 
-<br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
