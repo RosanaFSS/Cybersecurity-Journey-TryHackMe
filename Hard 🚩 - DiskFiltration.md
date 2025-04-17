@@ -233,7 +233,7 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 <br>
 
-> 1.10. <em>Liam received a hidden flag inside a file (in the zip folder) from the external entity helping him. What was that?<br></em>Hint : <em>Ask meta where is your data?</em><a id='1.10'></a>
+> 1.10. <em>Liam received a hidden flag inside a file (in the zip folder) from the external entity helping him. What was that?</em>Hint : <em>Ask meta where is your data?</em><br><a id='1.10'></a>
 >> <strong><code>FLAGT{THM_TECH_DATA}</code></strong><br>
 <p></p>
 
