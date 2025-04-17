@@ -42,74 +42,105 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alertreportin
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
+<br>
+
+<p>Accessed the <code>SOC dashboard</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/06d93ca4-a521-4440-8df3-a56755ca3815)
+
+
 <br><br>
 
-<h2>Task 2 . Events and Alerts</h2>
+<h2>Task 2 . Alert Funnel</h2>
+
+<p>In the previous room, you learned how to classify and triage the alerts. But you might be curious about what happens next. How does your triage help prevent threats and stop breaches? This is a whole new topic that this room will cover soon, but for now, let's recall the path of the alerts.<br><br>
+
+First, L1 analysts receive the alerts in a SIEM, EDR, or a ticket management platform. Most of the alerts are closed as False Positives or are handled on L1 level, but complex and threatening ones are sent to L2 that remediate most breaches. And to send the alerts further, you need to learn three new terms: reporting, escalation, and communication.</p>
+
+<br>
+
+<h3>Alert Reporting</h3>
+<p>Before closing or passing the alert to L2, you might have to report it. Depending on team standards and alert severity, instead of a short alert comment, you can be required to document your investigation in detail, ensuring all relevant evidence is included. This is especially important for True Positives, which require escalation.</p>
+
+<h3>Alert Escalation</h3>
+<p>If the True Positive alert requires additional actions or deeper investigation, escalate it to the L2 analyst for further review following the agreed procedures. That's where your alert report comes in handy since L2 will use it to get the initial context and spend less on the analysis from scratch.</p>
+
+<h3>Communication</h3>
+<p>You may also need to communicate with other departments during or after the analysis. For example, ask the IT team if they confirm granting administrative privileges to some users or contact HR to get more information about the newly hired employee.</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
 
 > 2.1. <em>What is the number of alerts you see in the SOC dashboard?</em><br><a id='2.1'></a>
->> <strong><code>5</code></strong><br>
+>> <strong><code>Alert Escalation</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/43314fe1-9d0b-43fe-a4bc-20566cb44f32)
 
-<br>
-
-
-> 2.2. <em>What is the name of the most recent alert you see?</em><br><a id='2.2'></a>
->> <strong><code>Double-Extension File Creation</code></strong><br>
+> 2.2. <em>What is the process of formally describing alert details and findings?</em><br><a id='2.2'></a>
+>> <strong><code>Alert Reporting</code></strong><br>
 <p></p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/6b2a8fe9-2157-4422-ab70-7e24e2263c43)
-
-<br>
 
 <br><br>
 
-<h2>Task 3 .  Alert Properties</h2>
-<p>Now that you know how alerts are generated, it's time to review their content. While the details differ for every SIEM or security solution, the alerts generally have a few main properties you must understand before taking them. Don't worry if you find some confusing, as you will hear more about some in the upcoming tasks.</p>
+<h2>Task 3 .  Reporting Guide</h2>
+
+<p>Before we move on, it is essential to clarify why anyone would want L1 analysts to write reports in addition to marking them as True or False Positives and why this topic can not be underestimated. Having L1 analysts write alert reports serves several key purposes:</p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/d6096eb2-b346-42b4-9584-ac98b9cffe01)
-
-<h3>Alert Properties</h3>
+![image](https://github.com/user-attachments/assets/e49f94a0-0100-446a-9c11-5a4f9ee749aa)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/c602afea-8410-45b3-a407-dfd39a491a07)
+<h3>Report Format</h3>
+<p>Imagine yourself as an L2 analyst, a DFIR team member, or an IT professional who needs to understand the alert. What would you want to see in the report? We recommend you follow the Five Ws approach and include at least these items in the report:<br>
+
+- Who: Which user logs in, runs the command, or downloads the file<br>
+- What: What exact action or event sequence was performed<br>
+- When: When exactly did the suspicious activity start and ended<br>
+- Where: Which device, IP, or website was involved in the alert<br>
+- Why: The most important W, the reasoning for your final verdict</p>
 
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
 
-> 3.1. <em>What was the verdict for the "Unusual VPN Login Location" alert?</em><br><a id='3.1'></a>
->> <strong><code>False Positive</code></strong><br>
+> 3.1. <em>According to the SOC dashboard, which user email leaked the sensitive document?</em><br><a id='3.1'></a>
+>> <strong><code>m.boslan@tryhackme.thm</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/01e90150-fdca-4e52-8541-24b474fd1fd7)
+![image](https://github.com/user-attachments/assets/f594486a-ff9f-47d2-8cd5-156ee659ac50)
+
 
 <br>
 
 
-> 3.2. <em>What user was mentioned in the "Unusual VPN Login Location" alert?</em><br><a id='3.2'></a>
->> <strong><code>M.Clark</code></strong><br>
+> 3.2. <em>Looking at the new alerts, who is the "sender" of the suspicious, likely phishing email?</em><br><a id='3.2'></a>
+>> <strong>support@microsoft.com</code></strong><br>
 <p></p>
 
 <br>
 
 
-![image](https://github.com/user-attachments/assets/c5dab760-1f41-4290-8981-adf2da4ee328)
+![image](https://github.com/user-attachments/assets/738bac99-9328-435a-8cc6-915376c1aaa5)
+
+<br>
+
+
+> 3.3. <em>Open the phishing alert, read its details, and try to understand the activity.Using the Five Ws template, what flag did you receive after writing a good report?</em>Hint : <em>See previously closed alerts for reference on how to write alert reports.</em><br><a id='3.3'></a>
+>> <strong>___</code></strong><br>
+<p></p>
+
+<br>
+
 
 <br><br>
 
