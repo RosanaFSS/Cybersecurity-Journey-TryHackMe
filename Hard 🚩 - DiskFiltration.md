@@ -75,11 +75,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
-<p>Clicked <code>Generate Report</code> in <code>Autopsy</code>.<br><br>
-In 2 minutes the report was generated.</p>
-
-<br>
-
 ![image](https://github.com/user-attachments/assets/5ef140fb-43fa-4046-8a51-3e627da34502)
 
 ProfileName	REG_SZ	Liam's Iphone
@@ -220,7 +215,10 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 <br>
 
+<br><br><br><br<
 
+<p>Clicked <code>Generate Report</code> in <code>Autopsy</code>.<br><br>
+In 2 minutes the report was generated.</p>
 <br>
 
 ![image](https://github.com/user-attachments/assets/9fb1d7cd-4b42-4fe0-aded-e69f6010fadb)
