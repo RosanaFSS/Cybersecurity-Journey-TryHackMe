@@ -2,7 +2,7 @@
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{345}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br>
-<img width="300px" src="https://github.com/user-attachments/assets/dbaabd6d-47b5-4cd6-9800-eb50114e599d" alt="streak"></p>
+<img width="200px" src="https://github.com/user-attachments/assets/dbaabd6d-47b5-4cd6-9800-eb50114e599d" alt="streak"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{DiskFiltration}}$$</h1>
 <p align="center"><em>Stay out of my server!</em>.<br>
 It is classified as a hard-evel CTF.<br>
@@ -10,9 +10,6 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.</p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/0356038c-47eb-454e-8a0e-a259e5da0a15"> </p>
-
-
-![image](https://github.com/user-attachments/assets/dbaabd6d-47b5-4cd6-9800-eb50114e599d)
 
 
 <h2>Task 2 . The Exfiltratopm Hunt </h2>
