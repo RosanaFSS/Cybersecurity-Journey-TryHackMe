@@ -222,7 +222,7 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 
 <br>
 
-> 1.9. <em>The external entity didn't fully trust Liam for the exfiltration so they asked him to execute file_uploader.exe, through the instructions in PDF. When was this file last executed and how many times was it executed? (YYYY-MM-DD HH:MM:SS, number of execution times)<br><a id='1.4'></a>
+> 1.9. <em>The external entity didn't fully trust Liam for the exfiltration so they asked him to execute file_uploader.exe, through the instructions in PDF. When was this file last executed and how many times was it executed? (YYYY-MM-DD HH:MM:SS, number of execution times)</em><br><a id='1.4'></a>
 >> <strong><code>2025-01-29 11:26:09, 2</code></strong><br>
 <p></p>
 
