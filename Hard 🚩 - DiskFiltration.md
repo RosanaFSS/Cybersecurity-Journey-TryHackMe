@@ -73,10 +73,48 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 <br>
 
 >1.2. <em>What is the profile name of the personal hotspot Liam used to evade network-level detection?<br><a id='1.2'></a>
->> <strong><code>2651931097993496666	</code></strong><br>
+>> <strong><code>Liam's Iphone</code></strong><br>
 <p></p>
 
 <br>
+
+<p>Clicked <code>Genertate Report</code> in <code>Autopsy</code>.<br><br>
+In 2 minutes the report was generated.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9fb1d7cd-4b42-4fe0-aded-e69f6010fadb)
+
+
+<br>
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ee763ac9-d8a6-4996-a21f-4ba1e29ded5a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e6939f5c-3470-4f73-9852-66e9552b3b6a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5f8e56a2-138b-46a0-bb91-74296b8f8703)
+
+
+<br>
+
+<p>Identified the highlighted <code>change</code> in the system.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/adb77d8e-6061-4c2c-ae87-704a8fae5cbf)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5ef140fb-43fa-4046-8a51-3e627da34502)
+
+ProfileName	REG_SZ	Liam's Iphone
 
 <br>
 
@@ -102,6 +140,44 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
+<p>I practiced another way to discover the answer.<br><br>
+Launched <code>Exiftool</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b341b1b5-bca4-4c7d-b6bc-067e8294cdc1)
+
+
+<br>
+
+<br>
+
+<br>
+
+> 1.7. <em>It looks like Liam searched for some files inside the file explorer. What are the names of these files? (alphabetical order)</em>Hint : <em>Spinning around the Wheel!</em><br><a id='1.7'></a>
+>> <strong><code>Financial, Revenue</code></strong><br>
+<p></p>
+
+<br>
+
+<p><code>/img_dis.E01/vol_vol3/Users/Administrator</code><br><br>
+In <code>Application</code> window -----<code>Software\Microsoft\Windows\CurrentVersion\Explorer\WorWheelQuery</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b182e66c-6567-4beb-8781-30d01b47a526)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9a8f8c24-1f44-43db-8a5c-d224ee74268e)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/49179d6d-7041-4d3c-a4fe-491353ac2657)
+
+
+<br>
+
 > 1.8. <em>What are the names of the folders that were present on the USB device? (alphabetical order)</em>Hint : <em>What the shell!</em><br><a id='1.4'></a>
 >> <strong><code>Critical Data TECH THM, Exfiltration Plan</code></strong><br>
 <p></p>
@@ -120,7 +196,38 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 ![image](https://github.com/user-attachments/assets/61443edc-4180-413c-bbf5-a0356370cd8a)
 
+<br>
 
+<p>After I generated the Autopsy report, I just clicked <code>Recent Documents</code> and could easily visualized the documents in <code>E:\</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3eaffc0b-89a5-497b-8445-d92f1c4424fa)
+
+<br>
+
+> 1.9. <em>The external entity didn't fully trust Liam for the exfiltration so they asked him to execute file_uploader.exe, through the instructions in PDF. When was this file last executed and how many times was it executed? (YYYY-MM-DD HH:MM:SS, number of execution times)<br><a id='1.4'></a>
+>> <strong><code>2025-01-29 11:26:09, 2</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5ce51ccf-b57c-453d-927a-bb774754a6cb)
+
+
+<br>
+
+> 1.10. <em>Liam received a hidden flag inside a file (in the zip folder) from the external entity helping him. What was that?<br><a id='1.10'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+<br>
+
+<br>
+
+> 1.11. <em>It seems like Liam caused one last damage before leaving. When did Liam delete "Tax Records.docx"? (YYYY-MM-DD HH:MM:SS)<br><a id='1.11'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
 
 <br>
 
@@ -135,9 +242,16 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 <br>
 
 > 1.13. <em>What is the PowerShell command Liam executed as per the plan?<br><a id='1.13'></a>
->> <strong><code>https://www.facebook.com/</code></strong><br>
+>> <strong><code>Get-WmiObject -Class Win32_Share | Select-Object Name, Path</code></strong><br>
 <p></p>
 
 <br>
+
+
+![image](https://github.com/user-attachments/assets/5496eb67-f7b6-48d1-8324-9d09872d5a85)
+
+<br>
+
+
 
 
