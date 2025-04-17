@@ -192,7 +192,7 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 <br>
 
 > 1.10. <em>Liam received a hidden flag inside a file (in the zip folder) from the external entity helping him. What was that?<br></em>Hint : <em>Ask meta where is your data?</em><a id='1.10'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>FLAGT{THM_TECH_DATA}</code></strong><br>
 <p></p>
 
 <br>
@@ -207,6 +207,26 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/a3b0eed7-a66d-48e7-a33c-5816d1a117ff)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/93da41ea-a94e-4104-abf3-8e308d7f5ad9)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/dca60083-e63a-4e57-87ef-2c4bbbc3f643)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6025bc65-84e3-47f6-888d-8af5b2b6f7d0)
+
+<br>
+
+
+
+
 
 > 1.12. <em>Which social media site did Liam search for using his web browser? Likely to avoid suspicion, thinking somebody was watching him. (Full URL)<br><a id='1.12'></a>
 >> <strong><code>https://www.facebook.com/</code></strong><br>
@@ -228,8 +248,9 @@ In <code>Application</code> window -----<code>Software\Microsoft\Windows\Current
 ![image](https://github.com/user-attachments/assets/5496eb67-f7b6-48d1-8324-9d09872d5a85)
 
 <br>
+<br>
 
-<br><br><br><br<
+<h2>Here is how I generated the report in <code>Autopsy</code>.</h2>
 
 <p>Clicked <code>Generate Report</code> in <code>Autopsy</code>.<br><br>
 In 2 minutes the report was generated.</p>
@@ -258,6 +279,11 @@ In 2 minutes the report was generated.</p>
 <br>
 
 ![image](https://github.com/user-attachments/assets/adb77d8e-6061-4c2c-ae87-704a8fae5cbf)
+
+
+<br><br><br>
+![image](https://github.com/user-attachments/assets/219e61ed-76ba-4a81-96ee-24ce4acf6693)
+
 
 
 
