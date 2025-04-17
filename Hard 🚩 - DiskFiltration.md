@@ -47,7 +47,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 <br>
 
 
-<p>Clicked <code>Open</p>.
+<p>Clicked <code>Open</p>
 
 <br>
 
@@ -55,9 +55,25 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/biteme">here</a>.<
 
 <br>
 
+<p>Clicked <code>Artifacts</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3ad77b06-ee4b-4e3e-abb1-cca2dd1a9040)
 
 
 <br>
+
+<p>Clicked <code>USB Device Attached</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/df8fb5c0-b56f-4b9e-94e1-57d4b64bf887)
+
+<br>
+
+<p>Analyzed the <code>Device ID</code> field following the guidance provided in the hint.</p>
+
 
 ![image](https://github.com/user-attachments/assets/618d5e99-6e5b-4451-b653-11e459849aaa)
 
