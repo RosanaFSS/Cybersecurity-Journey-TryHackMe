@@ -1,9 +1,8 @@
-
 <p align="center">April 18, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{346}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/dbaabd6d-47b5-4cd6-9800-eb50114e599d" alt="streak"></p>
+<img width="200px" src="https://github.com/user-attachments/assets/515f9049-42dc-4683-80a3-f51908ea1361" alt="streak"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{macOS Forensics: Artefacts}}$$</h1>
 <p align="center"><em>Understand the forensic artefacts in macOS and learn to leverage them for forensic analysis.</em>.<br>
 It is classified as a hard-level CTF.<br>
@@ -62,7 +61,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 <br>
 
 > 3.1. <em>When was the OS installed on the disk image present in the attached VM? Write your answer as GMT in the format: YYYY-MM-DD hh:mm:ss </em><br><a id='3.1'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>2024-12-08 17:42:28</code></strong><br>
 <p></p>
 
 <br>
@@ -88,19 +87,44 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 ![image](https://github.com/user-attachments/assets/56fe91c7-fa91-42f9-8912-d5c78648d1f0)
 
+<br>
 
+<p>The default is <code>UTC</code>.<br><br>
+<code>UTC</code> = <code>GMT</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/07f1e324-b76d-4a1d-8ce2-8d3e5e1128ac)
+
+<br>
 
 > 3.2. <em>What is the country code for this machine?</em>Hint : Which artefact gives you the country locale?<br><a id='3.2'></a>
 >> <strong><code>___________</code></strong><br>
 <p></p>
 
+
 <br>
 
-> 3.3. <em>When was the last time this machine booted up? Write your answer as GMT in the format: YYYY-MM-DD hh:mm:ss<br><a id='3.3'></a>
->> <strong><code>___________</code></strong><br>
+![image](https://github.com/user-attachments/assets/9a8c20e8-2d76-46f3-8d63-f194cf213b1a)
+
+
+
+> 3.3. <em>When was the last time this machine booted up? Write your answer as GMT in the format: YYYY-MM-DD hh:mm:ss</em>Hint : <em>You will need to convert the time from Unix epoch to human-readable format</em><br><a id='3.3'></a>
+>> <strong><code>2025-01-19 15:47:05</code></strong><br>
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/7fbf999e-567a-4f21-a2f9-6be85aca1411)
+
+<br>
+
+<p>Used <code>unixtimestamp.com</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2066a6c9-0282-4bf4-a654-4a4bd773d0f9)
+
 <br>
 
 
