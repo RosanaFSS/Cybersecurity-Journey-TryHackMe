@@ -42,6 +42,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 <p></p>
 
 <br>
+
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/346588ce-1889-4f6f-960f-f29b4f6b9282">[Brazil monthly:      2ⁿᵈ](https://man.archlinux.org/)<br> </p>
+
+
+<br>
 <br>
 
 
