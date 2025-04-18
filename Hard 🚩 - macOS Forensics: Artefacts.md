@@ -151,7 +151,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 <br>
 
-![image](https://github.com/user-attachments/assets/f1b2dd42-5215-40da-9c77-20954e1ec4b3)
+![image](https://github.com/user-attachments/assets/9586b01c-b6c2-4480-9b63-a37752d8e31a)
+
 
 <br>
 
