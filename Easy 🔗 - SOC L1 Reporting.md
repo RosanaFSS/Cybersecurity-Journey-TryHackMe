@@ -295,11 +295,6 @@ Do not skip the alert - investigate what you can and report the issue to your L2
 
 <br>
 
-<p align="center">Weekly League: Silver 3ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/30a85e18-496e-4088-b525-715c62222b17"> </p>
-
-
-<br>
-
 
 <p align="center"> Global All Time: 271ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/c5ab5e94-44fa-4b15-8cd1-81b443f425d7"> </p>
 
@@ -309,6 +304,10 @@ Do not skip the alert - investigate what you can and report the issue to your L2
 
 <p align="center"> Brazil monthly:      2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0e90fcab-7bde-4922-833b-4eea5e6c352b"> </p>
 
+
+<br>
+
+<p align="center">Weekly League: Silver 3ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/30a85e18-496e-4088-b525-715c62222b17"> </p>
 
 <br>
 
