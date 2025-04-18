@@ -136,16 +136,37 @@ First, L1 analysts receive the alerts in a SIEM, EDR, or a ticket management pla
 
 
 > 3.3. <em>Open the phishing alert, read its details, and try to understand the activity.Using the Five Ws template, what flag did you receive after writing a good report?</em>Hint : <em>See previously closed alerts for reference on how to write alert reports.</em><br><a id='3.3'></a>
->> <strong>___</code></strong><br>
+>> <strong>THM{nice_attempt_faking_microsoft_support}</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/7aabce0d-d1a7-467c-b164-cb340c36e680)
+
+
 
 <br><br>
 
-<h2>Task 4 . Alert Prioritisation</h2>
-<p>Okay, you can now read and understand the alert. What's next? Recall the second task, where you see hundreds of alerts but have to choose which to pick up first. The process of deciding which to take is called Alert Prioritisation, and it is crucial to ensure timely detection of a threat, especially with many alerts in the queue.</p>
+<h2>Task 4 . Escalation Guide</h2>
+<p>After you have made a verdict and written your alert report, you must choose whether to escalate the alert to L2. Again, the answer may differ from team to team, but the following recommendations would generally fit most SOC teams. You should escalate the alerts if:<br>
+
+The alert is an indicator of a major cyberattack requiring deeper investigation or DFIR<br>
+- Remediation actions like malware removal, host isolation, or password reset are required<br>
+- Communication with customers, partners, management, or law enforcement agencies is required<br>
+- You just do not fully understand the alert and need some help from more senior analysts</p>
+
+<h3>Escalation Steps</h3>
+<p>To escalate the alert, in most cases, all you have to do is to reassign the alert to the L2 on shift and ping them in corporate chat or in person. In some teams though, you may be required to create a formal written escalation request with dozens of required fields.<br><br>
+
+No matter what the agreements are, L2 will eventually receive the ticket from you, read your report, and contact you in case of any questions. Once everything is clear, the L2 analyst will typically research the alert details further, validate if the alert is indeed a True Positive, communicate with other departments if needed, and, for major incidents, start a formal Incident Response process.</p>
+
+<h4>SOC Dashboard Escalation Procedure</h4>
+<p>1. Write an alert report and provide your verdict; move the alert to In Progress status<br>
+2. Assign the alert to your L2 on shift. L2 will receive a notification and start from your report</p>
+
+<h3>Escalating Threats to L2</h3>
+
+
 
 
 <h3>Picking the Right Alert</h3>
