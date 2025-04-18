@@ -16,12 +16,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 
 <h2>Task 1 . Introduction </h2>
-<p>An overview of the attack chain is provided in the table below:</p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/d804cc64-c54d-4b10-aee6-11ac530a8bbe)
-
+<p>...</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
