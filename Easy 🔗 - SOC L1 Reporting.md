@@ -2,7 +2,7 @@
 <p align="center">April 17, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{346}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/cfa31fa8-1653-4223-a087-dbe1ad1a7623" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/dbaabd6d-47b5-4cd6-9800-eb50114e599d" alt="streak"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{SOC L1 Reporting}}$$</h1>
 <p align="center"><em>Learn how to properly report, escalate, and communicate about high-risk SOC alerts.</em>.<br>
@@ -10,7 +10,8 @@ It is classified as an easy-level challenge.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/socl1alertreporting">here</a>.</p>
 
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bd750bca-8ef5-41a0-9186-eabaca1d64b0"> </p>
+
 
 <br>
 <br>
@@ -166,133 +167,115 @@ No matter what the agreements are, L2 will eventually receive the ticket from yo
 
 <h3>Escalating Threats to L2</h3>
 
+![image](https://github.com/user-attachments/assets/76a65a4b-bd07-4e8f-b2da-c4ea0f9734ff)
+
+<h3Requesting L2 Support</h3>
+
+![image](https://github.com/user-attachments/assets/08a6489b-87cb-4acf-8b87-930881d6a3e6)
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 4.1. <em>Who is your current L2 in the SOC dashboard that you can assign (escalate) the alerts to?</em><br><a id='4.1'></a>
+>> <strong><code>E.Fleming</code></strong><br>
+<p></p>
+
+<br>
+
+
+> 4.2. <em>What flag did you receive after correctly escalating the alert from the previous task to L2? Note: If you correctly escalated the alert earlier, just edit the alert and click "Save" again</em><br><a id='4.2'></a>
+>> <strong><code>THM{good_job_escalating_your_first_alert}</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/df6ad5b6-f1a8-479c-88e9-90b3668c23cf)
+
+<br>
+
+> 4.3. <em>Now, investigate the second new alert in the queue and provide a detailed alert comment. Then, decide if you need to escalate this alert and move on according to the process. After you finish your triage, you should receive a flag, which is your answer!</em>Hint : <em>You should add a correct comment, verdict, status, and assignee.</em><br><a id='4.3'></a>
+>> <strong><code>THM{looks_like_webshell_via_old_exchange}</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/534f43f5-792f-4536-9ba0-fc4ada6ba563)
 
 
 
-<h3>Picking the Right Alert</h3>
-<p>Every SOC team decides on its own prioritisation rules and usually automates them by setting the appropriate alert sorting logic in SIEM or EDR. Below, you may see the generic, simplest, and most commonly used approach:<br>
+<br><br>
+
+<h2>Task 5 . SOC Communication</h2>
+<p>The escalation and reporting topics should sound straightforward and logical to you. But, as always, it's easier said than done, and you should be prepared for unexpected scenarios and know what to do in critical cases. In the best scenario, the SOC team has its own Crisis Communication procedures - the guides and processes to help you and your teammates resolve the issues. If not, you are advised to read the cases below and be prepared to handle them effectively.</p>
+
+
+<h3>Initial Actions</h3>
+<p>The initial steps are designed to ensure that you take ownership of the assigned alert and avoid interfering with alerts being handled by other analysts, and confirm that you are fully prepared to proceed with the detailed investigation. You achieve it by first assigning the alert to yourself, moving it to In Progress, and then familiarising yourself with the alert details like its name, description, and key indicators.</p>
+
+<h3>Communication Cases</h3>
+<p>This is the most complex step, requiring you to apply your technical knowledge and experience to understand the activity and properly analyse its legitimacy in SIEM or EDR logs. To support L1 analysts with this step, some teams develop Workbooks (also known as playbooks or runbooks) - instructions on how to investigate the specific category of alerts. If workbooks are not available, below are some key recommendations:<br>
 <ol type="1. ">
-    <li><code>Filter the alerts</code> | Make sure you don't take the alert that other analysts have already reviewed, or that is already being investigated by one of your teammates. You should only take new, yet unseen and unresolved alerts.</li>
-    <li><code>Sort by severity</code> | Start with critical alerts, then high, medium, and finally low. This is because detection engineers design rules so that critical alerts are much more likely to be real, major threats and cause much more impact than medium or low ones.</li>
-    <li><code>Sort by time</code> | Start with the oldest alerts and end with the newest ones. The idea is that if both alerts are about two breaches, the hacker from the older breach is likely already dumping your data, while the "newcomer" has just started the discovery.</li>
+    <li>You need to escalate an urgent, critical alert, but L2 is unavailable and does not respond for 30 minutes.
+Ensure you know where to find emergency contacts. First, try to call L2, then L3, and finally your manager.</li>
+    <li>The alert about Slack/Teams account compromise requires you to validate the login with the affected user.
+Do not contact the user through the breached chat - use alternative contact methods like a phone call.</li>
+    <li>You receive an overwhelming number of alerts during a short period of time, some of which are critical.
+Prioritise the alerts according to the workflow, but inform your L2 on shift about the situation.</li>
+    <li>After a few days, you realise that you misclassified the alert and likely missed a malicious action.
+Immediately reach out to your L2 explaining your concerns. Threat actors can be silent for weeks before impact.</li>
+    <li>You can not complete the alert triage since the SIEM logs are not parsed correctly or are not searchable.
+Do not skip the alert - investigate what you can and report the issue to your L2 on shift or SOC engineer.</li>
 </ol></p>
+
+<br>
+
+<h3>Communication By L2</h3>
+
+![image](https://github.com/user-attachments/assets/fc8e25d9-d408-48a0-9f4e-52c712be2fdf)
+
 
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
 
-> 4.1. <em>Should you first prioritise medium over low severity alerts? (Yea/Nay)</em><br><a id='4.1'></a>
->> <strong><code>Yea</code></strong><br>
-<p></p>
-
-<br>
-
-> 4.2. <em>Should you first take the newest alerts and then the older ones? (Yea/Nay)</em><br><a id='4.2'></a>
+> 5.1. <em>Should you first try to contact your manager in case of a critical threat (Yea/Nay)?</em><br><a id='5.1'></a>
 >> <strong><code>Nay</code></strong><br>
 <p></p>
 
 <br>
 
-> 4.3. <em>Assign yourself to the first-priority alert and change its status to In Progress.<br>The name of your selected alert will be the answer to the question.</em><br><a id='4.3'></a>
->> <strong><code>Potential Data Exfiltration</code></strong><br>
+
+> 5.2. <em>Should you immediately contact your L2 if you think you missed the attack (Yea/Nay)?</em><br><a id='5.2'></a>
+>> <strong><code>Yea</code></strong><br>
 <p></p>
 
-<br>
-
-![image](https://github.com/user-attachments/assets/a7234faa-c891-42e2-81f2-438ef167f068)
-
-
-
-<br><br>
-
-<h2>Task 5 . Alert Triage</h2>
-<p>Finally, you are ready to review the chosen alert! The process is quite operationally heavy, but you will soon see why every step is important. Also, note that the alert review by SOC analysts can also be called alert triage, alert handling, alert processing, alert investigation, or alert analysis. During this module, we will stick to the Alert Triage option.</p>
-
-![image](https://github.com/user-attachments/assets/fdb42bfc-2c87-433b-a3c5-414a6bbdede5)
-
-<h3>Initial Actions</h3>
-<p>The initial steps are designed to ensure that you take ownership of the assigned alert and avoid interfering with alerts being handled by other analysts, and confirm that you are fully prepared to proceed with the detailed investigation. You achieve it by first assigning the alert to yourself, moving it to In Progress, and then familiarising yourself with the alert details like its name, description, and key indicators.</p>
-
-<h3>Investigation</h3>
-<p>This is the most complex step, requiring you to apply your technical knowledge and experience to understand the activity and properly analyse its legitimacy in SIEM or EDR logs. To support L1 analysts with this step, some teams develop Workbooks (also known as playbooks or runbooks) - instructions on how to investigate the specific category of alerts. If workbooks are not available, below are some key recommendations:<br>
-<ol type="1. ">
-    <li>Understand who is under threat, like the affected user, hostname, cloud, network, or website</li>
-    <li>Note the action described in the alert, like whether it was a suspicious login, malware, or phishing</li>
-    <li>Review surrounding events, looking for suspicious actions shortly after or before the alert</li>
-    <li>Use threat intelligence platforms or other available resources to verify your thoughts</li>
-</ol></p>
-
-<h3>Final Actions</h3>
-<p>Your decisions here determine whether you found or missed the potential cyberattack. Some actions like Escalation or Commenting will be explained in the following rooms, so don't worry if they sound complex right now. First, decide if the alert you investigated is malicious (True Positive) or not (False Positive). Then, prepare your detailed comment explaining your analysis steps and verdict reasoning, return to the dashboard and move it to the Closed status.</p>
-
-<h4>SOC Dashboard Notes</h4>
-<p>If you didn't receive a flag after your triage, it means that the values you set are wrong.<br>
-You can reset the SOC dashboard by clicking Restart on the top right in the TryHackMe SIEM.</p>
-
-
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
-
-<br>
-
-> 5.1. <em>Which flag did you receive after you correctly triaged the first-priority alert?</em> Hint : <em>Triage means providing a comment and setting the correct status, verdict, and assignee.</em><br><a id='5.1'></a>
->> <strong><code>THM{looks_like_lots_of_zoom_meetings}</code></strong><br>
-<p></p>
-
-<br>
-
-<p>I set up the <code>Status</code> to <code>In Progress</code>, <code>Assignee</code> as You anc clicked <code>Save</code><br>
-Next I analysed the scenario.  Afterwards I choose the <code>Verdict</code> as <code>False Positive</code> and wrote my analysis in the <code>Analyst Comment</code>.<br>
-To finish this process I chose <code>Close</code> and clicked <code>Save</code>.</p>
-
-![image](https://github.com/user-attachments/assets/41af7237-2ca3-4a74-8a75-d4e063d70ebe)
-
-<br>
-
-
-> 5.2. <em>Which flag did you receive after you correctly triaged the second-priority alert?</em><br><a id='5.2'></a>
->> <strong><code>THM{how_could_this_user_fall_for_it?}</code></strong><br>
-<p></p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/a0871647-f4a5-4118-8432-4efecfd8d13c)
-
-<br>
-
-
-> 5.3. <em>Which flag did you receive after you correctly triaged the third-priority alert?</em><br><a id='5.3'></a>
->> <strong><code>THM{should_we_allow_github_for_devs?}</code></strong><br>
-<p></p>
-
-<br>
-
-![image](https://github.com/user-attachments/assets/989e31f0-d03d-4bd2-b9a0-732d9eb285ae)
-
-
-<br>
 
 <br><br>
 
 <h2>Task 6 . Conclusion</h2>
-<p>Congratulations on successfully triaging the alerts! Of course, closing the alert as True Positive won't prevent the attack, but it is a great start. Next, you will learn about proper alert commenting and case reporting, correct escalation procedures, and actions made by L2 analysts after the escalation. We hope you enjoyed the room!</p>
+<p>Great job learning three important SOC skills: alert reporting, escalation, and communication. These skills are essential for any L1 analysts: Alert reporting helps to preserve and provide activity context for L2, escalation ensures threats are remediated in time, and communication makes the coordination between SOC and other departments clear and effective.</p>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questionsbelow}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
-> 6.1. <em>I am ready to move on!.</em><br><a id='6.1'></a>
+> 6.1. <em>I am ready to move on!</em><br><a id='6.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
 <br>
 
+
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="900px" src="https://github.com/user-attachments/assets/ceaeb216-fe67-4aa9-9ba1-a32e80fd7722"><br>
-<img width="900px" src="https://github.com/user-attachments/assets/473e4439-5baf-4c76-b8bb-37bcd9e29a49"></p>
+<img width="900px" src="https://github.com/user-attachments/assets/e0a94ad4-d6f3-4497-88e3-3ee1b8dba4a0"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/f0cf789a-cca0-430e-a4a4-e277a0a06acf"></p>
 
 <br>
 
@@ -302,27 +285,29 @@ To finish this process I chose <code>Close</code> and clicked <code>Save</code>.
 
 <div align="center">
 
+
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
-| April 10, 2025    | 339      |     298ᵗʰ    |        8ᵗʰ   |    250ᵗʰ    |     2ⁿᵈ    |  92,222  |       652 |   59      |
+|                   |          |    Global    |   Brazil     |    Global   |   Brazil   |          | Completed |           |
+| April 17, 2025    |   346    |     271ˢᵗ    |     6ᵗʰ      |      40ᵗʰ   |     2ⁿᵈ    |  95,513  |    672    |    59     |
 
 </div>
 
 <br>
 
-<p align="center">League<br><br><img width="300px" src="https://github.com/user-attachments/assets/29b35e41-b041-4696-985d-7b4bd6fb88ff"> </p>
+<p align="center">Weekly League: Silver 3ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/30a85e18-496e-4088-b525-715c62222b17"> </p>
 
 
 <br>
 
-<p align="center"> Global All Time: 298ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/d52c4fd8-067f-449a-aa9a-d11f9f899241"> </p>
 
-<p align="center"> Brazil All Time: 8ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a8f0de66-46ad-4594-8ed0-ddda17bc1981"> </p>
+<p align="center"> Global All Time: 271ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/c5ab5e94-44fa-4b15-8cd1-81b443f425d7"> </p>
 
-<p align="center"> Global monthly: 250ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/30c2bf9f-7ce8-4ca3-95d9-c901bb0e86a9"> </p>
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/639c2124-98b9-4451-aac5-a4e50a016233"> </p>
 
-<p align="center"> Brazil monthly: 2ⁿᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/057a1277-d151-457c-aa6e-f4b0ae5ac00e"> </p>
+<p align="center"> Global monthly:     40ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/277e5955-486a-4250-a1e7-005e49f973f8"> </p>
+
+<p align="center"> Brazil monthly:      2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0e90fcab-7bde-4922-833b-4eea5e6c352b"> </p>
 
 
 <br>
