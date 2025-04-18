@@ -67,6 +67,19 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 <br>
 
+![image](https://github.com/user-attachments/assets/c667267f-5f85-4c57-943f-c64a09485f5d)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/67eb08d1-b0f3-4793-8007-f61559382c30)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/8f722bbf-ce47-40ba-87c9-6b1f0b0ac7cc)
+
+
+
+
 > 3.2. <em>What is the country code for this machine?</em>Hint : Which artefact gives you the country locale?<br><a id='3.2'></a>
 >> <strong><code>___________</code></strong><br>
 <p></p>
