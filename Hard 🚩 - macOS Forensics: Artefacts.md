@@ -56,7 +56,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 <h2>Task 3 . System Information </h2>
 <p>...</p>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
 
@@ -135,18 +135,18 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 ![image](https://github.com/user-attachments/assets/2066a6c9-0282-4bf4-a654-4a4bd773d0f9)
 
-<br>
+<br><br>
 
 
 <h2>Task 4 . Network Information </h2>
 <p>...</p>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
 
 > 4.1. <em>What is the name of the machine's built-in network interface? </em><br><a id='4.1'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>en0</code></strong><br>
 <p></p>
 
 <br>
@@ -160,8 +160,47 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 
 > 4.2. <em>What is the IP address of the router this machine was last connected to?<br><a id='4.2'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>192.168.64.1</code></strong><br>
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/5355783d-91ca-401b-9c53-c3bba4d14e9b)
+
+<br><br>
+
+
+<h2>Task 5 . Account Activity </h2>
+<p>...</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 5.1. <em>What is the name of the last logged in user? </em><br><a id='5.1'></a>
+>> <strong><code>_________</code></strong><br>
+<p></p>
+
+<br>
+
+
+
+<br>
+
+> 5.2. <em>What is the password hint for the user?<br><a id='5.2'></a>
+>> <strong><code>__________</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.3. <em>When was the last time a user logged out of the machine? Format MMM DD hh:mm:ss?<br><a id='5.2'></a>
+>> <strong><code>__________</code></strong><br>
+<p></p>
+
+<br>
+
+
+<br>
+
+
 
