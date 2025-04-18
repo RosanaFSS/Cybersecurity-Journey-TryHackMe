@@ -75,8 +75,18 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 <br>
 
+<p><code>thm</code>:<code>12345</code><br><br>
+<code>ubuntu</code>:<code>TryHackMe!</code></p>
+
 ![image](https://github.com/user-attachments/assets/8f722bbf-ce47-40ba-87c9-6b1f0b0ac7cc)
 
+<br>
+
+<p>Localtime:</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/56fe91c7-fa91-42f9-8912-d5c78648d1f0)
 
 
 
