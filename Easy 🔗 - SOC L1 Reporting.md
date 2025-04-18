@@ -169,7 +169,7 @@ No matter what the agreements are, L2 will eventually receive the ticket from yo
 
 ![image](https://github.com/user-attachments/assets/76a65a4b-bd07-4e8f-b2da-c4ea0f9734ff)
 
-<h3Requesting L2 Support</h3>
+<h3>Requesting L2 Support</h3>
 
 ![image](https://github.com/user-attachments/assets/08a6489b-87cb-4acf-8b87-930881d6a3e6)
 
