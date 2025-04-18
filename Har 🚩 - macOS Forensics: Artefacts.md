@@ -27,6 +27,10 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 <p></p>
 
 <br>
+
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/c51c7320-6265-4dea-8ba1-4be1abe78ec8">https://github.com/sgan81/apfs-fuse<br> </p>
+
+<br>
 <br>
 
 
