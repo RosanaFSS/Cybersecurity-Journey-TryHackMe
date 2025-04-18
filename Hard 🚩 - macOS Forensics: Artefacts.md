@@ -151,6 +151,13 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 <br>
 
+![image](https://github.com/user-attachments/assets/f1b2dd42-5215-40da-9c77-20954e1ec4b3)
+
+<br>
+
+
+
+
 > 4.2. <em>What is the IP address of the router this machine was last connected to?<br><a id='4.2'></a>
 >> <strong><code>___________</code></strong><br>
 <p></p>
