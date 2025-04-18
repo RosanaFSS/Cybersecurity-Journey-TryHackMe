@@ -99,7 +99,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 <br>
 
 > 3.2. <em>What is the country code for this machine?</em>Hint : Which artefact gives you the country locale?<br><a id='3.2'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>AE</code></strong><br>
 <p></p>
 
 
@@ -107,6 +107,16 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 ![image](https://github.com/user-attachments/assets/9a8c20e8-2d76-46f3-8d63-f194cf213b1a)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/60d434f3-0d4e-4f4a-9f19-ae6dde3c1753)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bed4564a-b97f-48ba-8824-f00e80e58118)
+
+<br>
 
 
 > 3.3. <em>When was the last time this machine booted up? Write your answer as GMT in the format: YYYY-MM-DD hh:mm:ss</em>Hint : <em>You will need to convert the time from Unix epoch to human-readable format</em><br><a id='3.3'></a>
