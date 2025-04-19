@@ -196,19 +196,102 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 
 > 5.2. <em>What is the password hint for the user?<br><a id='5.2'></a>
->> <strong><code>__________</code></strong><br>
+>> <strong><code>Count to 5</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6c462a03-bcba-4651-bc42-3e651da5f1f7)
+
 
 <br>
 
 > 5.3. <em>When was the last time a user logged out of the machine? Format MMM DD hh:mm:ss?<br><a id='5.2'></a>
->> <strong><code>__________</code></strong><br>
+>> <strong><code>Jan 19 07:52:43</code></strong><br>
 <p></p>
 
 <br>
 
 
+![image](https://github.com/user-attachments/assets/62d8da9b-90fe-4bbf-8313-23d1fe7f05e4)
+
+
+<br><br>
+
+
+<h2>Task 6 . Evidence of Execution </h2>
+<p>Evidence of execution is an important type of forensic data that we need in most investigations. In this task, we will review some of the important evidence of execution artefacts found in a machine.</p>
+
+<h3>Terminal History</h3>
+<p>...</p>
+
+
+<h3>Terminal Usage</h3>
+<p>...</p>
+
 <br>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 6.1. <em>What was the last command executed by the user on the machine?</em><br><a id='6.1'></a>
+>> <strong><code>vim creds.txt</code></strong><br>
+<p></p>
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/f623976a-7468-4a32-a083-f9f82641bf24)
+
+<br>
+
+<br>
+
+> 6.2. <em>What is the GUID of the terminal session in which this command was executed?</em><br><a id='6.2'></a>
+>> <strong><code>452AEA93-AEE7-420B-871E-C57053E15DD0</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4becbd06-f8bd-4889-8165-d14029b272dc)
+
+<br>
+
+> 6.3. <em>When was the last time the user closed the terminal? Format YYYY-MM-DD hh:mm:ss</em>Hint : <em>Browse the KnowledgeC database in db browser and use the query from the APOLLO app usage module</em><br><a id='6.2'></a>
+>> <strong><code>_____</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d2be612f-790d-4b5a-b198-f3c22c96046c)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b3e8613e-96dd-4447-85b6-32842f0a2eb5)
+
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/4bc2ef5a-2605-4cac-922a-e76606b1ed9c)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4f7b943c-a645-44ee-9728-853607d8f1a4)
+
+
+
+
+![image](https://github.com/user-attachments/assets/335ff8d3-44f4-4ff1-9473-d401dd25d983)
+
+
+![image](https://github.com/user-attachments/assets/0f62beac-ad4f-4be9-b58c-cad215fbc652)
+
+![image](https://github.com/user-attachments/assets/5fe4d9cf-ca81-42f6-89fa-aa495bec92c1)
+
+![image](https://github.com/user-attachments/assets/7e737657-c0a1-4116-8b98-0b567b2d6613)
+
+![image](https://github.com/user-attachments/assets/cb4aa49d-0c4a-435f-8e3d-b85476bc37f7)
 
 
