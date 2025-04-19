@@ -194,7 +194,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingecboracle
 ![image](https://github.com/user-attachments/assets/69cad735-a557-4d17-ab76-60cccb11b263)
 
 
-<p>Oracl/p>
+<p>Oracl</p>
 
 <br>
 
@@ -202,11 +202,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingecboracle
 
 <br>
 
-<p>Oracle</p>
-
-<br>
-
-<p>OracleK</p>
+<p>Oracle<br>
+OracleK</p>
 
 <br>
 
