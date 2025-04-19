@@ -176,16 +176,16 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingecboracle
 
 ![image](https://github.com/user-attachments/assets/9d0fcd21-7dac-49cb-b666-6edde192acd7)
 
-<p>r</p>
+<p>Or</p>
 
 ![image](https://github.com/user-attachments/assets/039c645b-7039-483c-9921-a988e656438a)
 
-<p>a</p>
+<p>Ora</p>
 
 ![image](https://github.com/user-attachments/assets/3b8bb1ff-913d-467d-9b27-96be4fb93c56)
 
 
-<p>c</p>
+<p>Orac</p>
 
 ![image](https://github.com/user-attachments/assets/fbdec159-e1ae-445c-882c-50dae22b7aba)
 
@@ -194,7 +194,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingecboracle
 ![image](https://github.com/user-attachments/assets/69cad735-a557-4d17-ab76-60cccb11b263)
 
 
-<p>l</p>
+<p>Oracl/p>
 
 <br>
 
@@ -202,11 +202,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingecboracle
 
 <br>
 
-<p>e</p>
+<p>Oracle</p>
 
 <br>
 
-<p>K ----- Oracled K</p>
+<p>OracleK</p>
 
 <br>
 
