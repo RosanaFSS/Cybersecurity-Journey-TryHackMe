@@ -167,7 +167,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingecboracle
 <br>
 
 > 5.4. <em>Now for the challenge, upgrade the script to recover the entire secret from the oracle. What is this secret?</em>Hint : <em>Once you have extracted the first character, you want to calculate a new reference chunk with one less injected character. Then, since you know the character, you can add it back again and then stage an attack against the oracle to find the second character. The reference chunk for calculating the second byte (using all As) is 13a23afdd6652229dafd95506a4677ba, if you get a different reference chunk, it is most likely because you are "adding too much data" when generating your chunk.</em><br><a id='5.2'></a>
->> <strong><code>Oracleknows</code></strong><br>
+>> <strong><code>OracleKnows</code></strong><br>
 <p></p>
 
 <br>
