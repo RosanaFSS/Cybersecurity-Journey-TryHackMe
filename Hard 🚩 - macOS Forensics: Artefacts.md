@@ -11,9 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 <p align="center"> <img width="1000px" src=""> </p>
 
-![image](https://github.com/user-attachments/assets/fe537998-ff5f-4aff-a6b6-a9a3f6a39e03)
-
-
 <br>
 
 
