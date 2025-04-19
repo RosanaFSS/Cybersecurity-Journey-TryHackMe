@@ -178,14 +178,22 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 <br>
 
 > 5.1. <em>What is the name of the last logged in user? </em><br><a id='5.1'></a>
->> <strong><code>_________</code></strong><br>
+>> <strong><code>thm</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/e05402a8-aa2b-4a92-ab9e-84812942057c)
 
 
 <br>
+
+![image](https://github.com/user-attachments/assets/ded961b1-602d-4ffe-aacc-31add68a8512)
+
+<br>
+
+
+
 
 > 5.2. <em>What is the password hint for the user?<br><a id='5.2'></a>
 >> <strong><code>__________</code></strong><br>
