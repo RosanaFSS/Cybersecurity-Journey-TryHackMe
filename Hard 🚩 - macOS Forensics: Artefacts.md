@@ -9,7 +9,8 @@ It is classified as a hard-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsartefacts">here</a>.</p>
 
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a34df0d7-17bb-420a-b1e0-870d3e1972ce"> </p>
+
 
 <br>
 
@@ -262,19 +263,35 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 >> <strong><code>_____</code></strong><br>
 <p></p>
 
-<br>
+<br><br><br>
 
-![image](https://github.com/user-attachments/assets/d2be612f-790d-4b5a-b198-f3c22c96046c)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/b3e8613e-96dd-4447-85b6-32842f0a2eb5)
-
+![image](https://github.com/user-attachments/assets/b1c1cad9-95ba-4e64-9ba0-4681b23e9df0)
 
 <br>
 
+![image](https://github.com/user-attachments/assets/144e47ae-f2bd-46a5-8c55-b26e9b03a94f)
 
-![image](https://github.com/user-attachments/assets/4bc2ef5a-2605-4cac-922a-e76606b1ed9c)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/4198497f-b7e9-4496-aa5a-c299dfcaf14b)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/aa14150f-f249-4414-8a81-8ef8dc3363e7)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3d09fd12-0496-406d-bd3c-57f2c59d41a6)
+
+
+
+
+<br>
+
+
+!![image](https://github.com/user-attachments/assets/adb8f814-360c-45be-a287-b2f2b4a5056a)
+
 
 <br>
 
@@ -283,15 +300,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/macosforensicsarte
 
 
 
-![image](https://github.com/user-attachments/assets/335ff8d3-44f4-4ff1-9473-d401dd25d983)
+![image](https://github.com/user-attachments/assets/64a6b502-0f2f-4abd-a5bc-125a8ed9242d)
 
 
-![image](https://github.com/user-attachments/assets/0f62beac-ad4f-4be9-b58c-cad215fbc652)
 
-![image](https://github.com/user-attachments/assets/5fe4d9cf-ca81-42f6-89fa-aa495bec92c1)
+![image](https://github.com/user-attachments/assets/e40b83a9-c182-4bb6-8577-e364a6c521a1)
 
-![image](https://github.com/user-attachments/assets/7e737657-c0a1-4116-8b98-0b567b2d6613)
-
-![image](https://github.com/user-attachments/assets/cb4aa49d-0c4a-435f-8e3d-b85476bc37f7)
 
 
