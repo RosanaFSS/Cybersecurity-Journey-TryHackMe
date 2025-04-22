@@ -4,7 +4,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{350}}$$-day-streak in  <a href="h
 <img width="300px" src="https://github.com/user-attachments/assets/c8acf34f-6919-4fc5-bfb1-9dd7caa7b2cb" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Mayhem}}$$</h1>
 <p align="center"><em>Can you find the secrets inside the sea of mayhem?</em>.<br>
-It is classified as a medium-level CTF.<br>It is premium: only for subscribers.<br>
+It is classified as a medium-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/mayhemroom">here</a>.</p>
 
