@@ -14,8 +14,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/mayhemroom">here</
 <br>
 
 
-<h2>Read my complete walkthrough in Medium.</h2>
-<h3 align="left"> Click here ➡️  <a href="https://medium.com/@RosanaFS/mayhem-tryhackme-walkthrough-dfir-180-points-fd691d72960c">Mayhem</a></h3>
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/mayhem-tryhackme-walkthrough-dfir-180-points-fd691d72960c">Mayhem</a></h3>
 
 
 <br>
