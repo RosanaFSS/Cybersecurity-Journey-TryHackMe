@@ -99,6 +99,13 @@ Finished
 ```
 
 <br>
+<br>
+
+> 1.2. <em>What is the login path for the wordpress installation?d</em><br><a id='1.2'></a>
+>> <strong><code>/?devtools</code></strong><br>
+<p></p>
+
+<br>
 
 <p>-  Used <code>dirsearch</code>.</p>
 
@@ -157,13 +164,7 @@ Warning: You are still using the default password ('password'). Please change yo
 
 <br>
 
-<p>-  Ran it an got the shell as www-data.</p>
-
-<br>
-
-
-
-<p>Got the shell and estabilized it.</p>
+<p>- Got the shell and estabilized it.</p>
 
 <br>
 
