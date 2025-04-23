@@ -114,5 +114,5 @@ This background knowledge should serve as helpful context as you further explore
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
-<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>, <a href="https://tryhackme.com/p/wesladd">wesladd</a>, <a href="https://tryhackme.com/p/1337rce">1337rce</a> <a href="https://tryhackme.com/p/MonAha">MonAha</a> and for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>, <a href="https://tryhackme.com/p/wesladd">wesladd</a>, <a href="https://tryhackme.com/p/1337rce">1337rce</a> and  <a href="https://tryhackme.com/p/MonAha">MonAha</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
 
