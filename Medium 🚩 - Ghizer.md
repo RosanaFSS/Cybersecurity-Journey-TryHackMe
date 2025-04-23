@@ -121,7 +121,7 @@ Finished
 
  <br>
 
- [image](https://github.com/user-attachments/assets/976e48fd-b8c9-4acd-b3d7-23172adde165)
+ ![image](https://github.com/user-attachments/assets/976e48fd-b8c9-4acd-b3d7-23172adde165)
 
  <br>
 
@@ -132,6 +132,8 @@ Finished
 
 ![image](https://github.com/user-attachments/assets/48f7ec47-d964-4604-ba0b-ef036c9f8fa8)
 
+<br>
+
 <p>- Entered the credentials just discovered.<br>
  -  Clicked Login.<br>
  -  Noticed a warning in the upper right corner:<br>
@@ -141,7 +143,7 @@ Warning: You are still using the default password ('password'). Please change yo
 
 <br>
 
-image](https://github.com/user-attachments/assets/189b7473-c3ed-4328-a1f1-1c28de07834d)
+![image](https://github.com/user-attachments/assets/189b7473-c3ed-4328-a1f1-1c28de07834d)
 
 <br>
 
