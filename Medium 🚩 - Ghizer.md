@@ -108,6 +108,59 @@ Finished
 
 <br>
 
+<p>-  Googled to understand what is LimeSurvey.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a4bbe530-88bf-4257-adf9-29c8c873033d)
+
+<br>
+
+<p>- Researched for default credentials for LimeSurvey´s admin.<br>
+ -  Guess what? admin :password.</p>
+
+ <br>
+
+ [image](https://github.com/user-attachments/assets/976e48fd-b8c9-4acd-b3d7-23172adde165)
+
+ <br>
+
+<p>-  Navigated to http://TargetIP/admin and was redirected to http://TargetIP/index.php/admin/authentication/sa/login.</p>
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/48f7ec47-d964-4604-ba0b-ef036c9f8fa8)
+
+<p>- Entered the credentials just discovered.<br>
+ -  Clicked Login.<br>
+ -  Noticed a warning in the upper right corner:<br>
+Warning: You are still using the default password ('password'). Please change your password and re-login again.<br>
+ -  Identified version 3.15.9.</p>
+
+
+<br>
+
+image](https://github.com/user-attachments/assets/189b7473-c3ed-4328-a1f1-1c28de07834d)
+
+<br>
+
+<p>-  Used searchsploit  to locate a LimeSurvey RCE exploit.<br>
+ -  Discovered 50573.py. Copied, ran it and it did not work.<br>
+-  Used searchploit again and discovered 46634.py.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b0f6c2d5-5b5f-48f1-882d-2aafec971ae3)
+
+<br>
+
+<p>-  Ran it an got the shell as www-data.</p>
+
+<br>
+
+
+
 <p>Got the shell and estabilized it.</p>
 
 <br>
@@ -151,6 +204,8 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 127.0.0.1:18001         0.0.0.0:*               LISTEN      -               
 ...
 ```
+
+<br><br>
 
 > 1.3. <em>Compromise the machine and locate user.txt</em><br><a id='1.3'></a>
 >> <strong><code>THM{EB0C770CCEE1FD73204F954493B1B6C5E7155B177812AAB47EFB67D34B37EBD3}</code></strong><br>
