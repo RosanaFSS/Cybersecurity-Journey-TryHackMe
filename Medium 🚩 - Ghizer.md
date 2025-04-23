@@ -101,11 +101,6 @@ Finished
 <br>
 <br>
 
-> 1.2. <em>What is the login path for the wordpress installation?d</em><br><a id='1.2'></a>
->> <strong><code>/?devtools</code></strong><br>
-<p></p>
-
-<br>
 
 <p>-  Used <code>dirsearch</code>.</p>
 
@@ -114,6 +109,7 @@ Finished
 ![image](https://github.com/user-attachments/assets/796e4f19-3993-4a22-8392-39bf36dc82a1)
 
 <br>
+
 
 <p>-  Googled to understand what is LimeSurvey.</p>
 
@@ -171,6 +167,70 @@ Warning: You are still using the default password ('password'). Please change yo
 ![image](https://github.com/user-attachments/assets/105bfab7-133f-490e-b006-1425f67ec672)
 
 <br>
+
+<p>-  Identified config.php.<br>
+ -  Visualized its content.</p>
+
+ <br>
+
+ ![image](https://github.com/user-attachments/assets/d870089a-eb01-487d-987a-31216dd6fac3)
+
+
+<br>
+
+ 
+> 1.2. <em>What is the login path for the wordpress installation?d</em><br><a id='1.2'></a>
+>> <strong><code>/?devtools</code></strong><br>
+<p></p>
+
+<br>
+
+<p>Navigated to https://TargetIP<br><br>
+It is about <code>Wordpress</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/fc5ccdad-7030-4d44-8d56-3a51e0f83072)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/78a674ad-c707-4c1b-9ba0-d09e3c539c8e)
+
+<br>
+
+<p>Used <code>Anny</code>´s credentials to login.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a5215a6e-6fa3-4d06-a8bf-1017d9a3df5b)
+
+
+<br>
+
+<p>The emial is correct.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d861c073-87b2-49bb-ba46-9d27eaae0dd8)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4af21cb2-f3a6-4400-ad10-7bd168921699)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/65b34af4-9bdb-4480-8c18-e20a361245a6)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e432d120-6ac8-4d60-9fb1-7345417cadc9)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/fbda7f7f-bade-4138-a235-179cd6c0d9a2)
+
+
 
 ```bash
 :~/Ghidra# ls
