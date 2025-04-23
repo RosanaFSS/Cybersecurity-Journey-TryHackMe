@@ -83,3 +83,29 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsbasicconcepts">
 > 4.2. <em>If your AWS account was created prior to 2017, what is your account's default region?</em>Hint : <em>Use all upper case.</em><br><a id='4.2'></a>
 >> <strong><code>US-EAST-1</code></strong><br>
 <p></p>
+
+<br>
+<br>
+
+<h2>Task 5 . Basic Concept - AWS Organizations</h2>
+<p>[ ... ]</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 5.1. <em>What year was AWS Organizations made generally available for AWS customers?</em><br><a id='5.1'></a>
+>> <strong><code>2017</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.2. <em>What is the sub-container for accounts in AWS Organizations?</em>Hint : <em>Spell it out; abbreviation will not work.</em><br><a id='5.2'></a>
+>> <strong><code>Organizational Unit</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.3. <em>What AWS Organizations account does Service Control Policies not apply to?<br><a id='5.3'></a>
+>> <strong><code>Organization Management</code></strong><br>
+<p></p>
