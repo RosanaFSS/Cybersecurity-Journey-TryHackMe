@@ -105,7 +105,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsbasicconcepts">
 
 <br>
 
-> 5.3. <em>What AWS Organizations account does Service Control Policies not apply to?<br><a id='5.3'></a>
+> 5.3. <em>What AWS Organizations account does Service Control Policies not apply to?</em><br><a id='5.3'></a>
 >> <strong><code>Organization Management</code></strong><br>
 <p></p>
 
