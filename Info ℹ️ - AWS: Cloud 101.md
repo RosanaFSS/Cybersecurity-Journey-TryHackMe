@@ -3,7 +3,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{351}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/2fbf7a5d-544b-4571-9b24-780fc7f4281a" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{AWS: Cloud 101}}$$</h1>
-<p align="center"><em>An introduction to AWS and how cloud has changed computing.</em>.<br>
+<p align="center"><em>An introduction to AWS and how cloud has changed computing</em>.<br>
 It is classified as an info room.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/cloud101aws">here</a>.</p>
