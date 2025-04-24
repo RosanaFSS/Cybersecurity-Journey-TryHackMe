@@ -25,10 +25,9 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/customtoolingpytho
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="900px" src="https://github.com/user-attachments/assets/60c0a838-2a98-4fa3-9d9c-7437fa7b58ca"><br>
-<img width="900px" src="https://github.com/user-attachments/assets/a137f286-3b5c-4187-9541-56dcb4d995fb"></p>
-
-
+<img width="1000px" src="https://github.com/user-attachments/assets/703eadec-f21f-47bb-872e-e41cefb6b6e7"> <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/c8a8243c-7e46-443f-8a3b-4e0d7ec75458"> </p>
+  
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
@@ -46,9 +45,9 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/customtoolingpytho
 
 <br>
 
-<p align="center"> Global All Time:  263ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/703eadec-f21f-47bb-872e-e41cefb6b6e7"> </p>
+<p align="center"> Global All Time:  263ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60c0a838-2a98-4fa3-9d9c-7437fa7b58ca"> </p>
 
-<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/c8a8243c-7e46-443f-8a3b-4e0d7ec75458"> </p>
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/a137f286-3b5c-4187-9541-56dcb4d995fb"> </p>
 
 <p align="center"> Global monthly:      49ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f03c6364-efb5-4395-a41c-ce92f20c46e5"> </p>
 
