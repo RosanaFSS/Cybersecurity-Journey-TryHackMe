@@ -17,6 +17,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/memoryanalysisintr
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
 <h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/memory-analysis-introduction-tryhackme-walkthrough-dfir-ed2cb5ba2b74">Memory Analysis Introduction</a></h3>
+![image](https://github.com/user-attachments/assets/0fc43f18-1086-4cc3-a0d7-e0f5034c24f2)
 
 
 <br>
@@ -25,7 +26,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/memoryanalysisintr
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="1000px" src="https://github.com/user-attachments/assets/ca4ac339-3159-460a-9054-e98a84d4107c"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/29670da3-3faa-440a-af71-604ed3affcab"><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/70bbbfdb-f194-4696-9f64-49e0c7183e1c"></p>
 
 
