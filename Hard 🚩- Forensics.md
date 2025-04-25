@@ -18,3 +18,55 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/forensics">here</a
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
 <h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/forensics-tryhackme-walkthrough-dfir-360-points-822b5be5222c">Forensics</a></h3>
 
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="1000px" src="https://github.com/user-attachments/assets/6b26d97b-6d5b-444b-9f35-80d32030a091"> <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/4b5da037-c1d5-4164-b756-a80a30aa48cc"> </p>
+  
+<br>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |   Brazil     |    Global   |   Brazil   |          | Completed |           |
+| April 24, 2025    |   353    |     259ᵗʰ    |     6ᵗʰ      |      47ᵗʰ   |     2ⁿᵈ    |  96,841  |    684    |    59     |
+
+</div>
+
+<br>
+
+<p align="center"> Global All Time:   259ᵗʰ <br><br><img width="1000px" src="https://github.com/user-attachments/assets/49203899-ff66-4ebe-bbc1-0ce2660bf75e"> </p>
+
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f298d014-0bca-4653-b928-8320d9a752a7"> </p>
+
+<p align="center"> Global monthly:    47ᵗʰ<br><br><img width="1000px" src="![image](https://github.com/user-attachments/assets/49e3dbd2-a8fa-40e4-91da-f7420aa42da6)"> </p>
+
+<p align="center"> Brazil monthly:      2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/7c1d2734-144a-4be5-a642-fd1b02480f23"> </p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ae6b6a84-b2d9-46a4-b0c9-7ccebea2f28b)
+
+
+<p align="center"> Weekly League:  4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/ae6b6a84-b2d9-46a4-b0c9-7ccebea2f28b"> </p>
+
+
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/Whiteheart">Whiteheart</a>  for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
