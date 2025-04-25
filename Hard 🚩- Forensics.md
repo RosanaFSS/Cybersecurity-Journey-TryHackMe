@@ -16,5 +16,5 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/forensics">here</a
 
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/forensics-tryhackme-walkthrough-dfir-360-points-822b5be5222c</a></h3>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/forensics-tryhackme-walkthrough-dfir-360-points-822b5be5222c"</a></h3>
 
