@@ -49,13 +49,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/forensics">here</a
 
 <p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f298d014-0bca-4653-b928-8320d9a752a7"> </p>
 
-<p align="center"> Global monthly:    47ᵗʰ<br><br><img width="1000px" src="![image](https://github.com/user-attachments/assets/49e3dbd2-a8fa-40e4-91da-f7420aa42da6)"> </p>
+<p align="center"> Global monthly:    47ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/49e3dbd2-a8fa-40e4-91da-f7420aa42da6"> </p>
 
 <p align="center"> Brazil monthly:      2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/7c1d2734-144a-4be5-a642-fd1b02480f23"> </p>
 
 <br>
-
-![image](https://github.com/user-attachments/assets/ae6b6a84-b2d9-46a4-b0c9-7ccebea2f28b)
 
 
 <p align="center"> Weekly League:  4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/ae6b6a84-b2d9-46a4-b0c9-7ccebea2f28b"> </p>
