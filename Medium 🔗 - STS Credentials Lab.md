@@ -42,8 +42,56 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/stscredentialslab"
 
 
 <h2>Task 3 . Create the Padawan User</h2>
+<p>We will start by creating the IAM user "padawan". IAM Users are the easiest way to grant access to a system outside of your cloud environment. </p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/fd16a750-9bbc-4fea-b9ea-222a2d0ec8bf)
+
+<br>
+
+<p>Run these commands in your CloudShell:</p>
+
+<br>
+
+```bash
+[cloudshell-user@ip-10-1-94-78 ~]$ aws iam create-user --user-name padawan
+{
+    "User": {
+        "Path": "/",
+        "UserName": "padawan",
+        "UserId": "AIDAZOHYLBQBMPAQSXF3G",
+        "Arn": "arn:aws:iam::123456789012:user/padawan",
+        "CreateDate": "2021-10-30T22:48:36+00:00"
+    }
+}
+```
+
+<br>
+
+
+<p>Next, grant that user some permission by adding them to the padawans group.</p>
+
+<br>
+
+```bash
+aws iam add-user-to-group --user-name padawan --group-name padawans
+```
+
+<br>
+
+<p>Now that you have created the user identity, we will create the access keys for use on your AttackBox in the next task. Save the output of the create-user command so you can validate your identity in a later task.</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+```bash
+aws iam list-groups-for-user --user-name padawan
+```
+
 
 > 3.1. <em>What are the first four letters of the GroupId of the padawans group?</em><br><a id='3.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
@@ -51,6 +99,21 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/stscredentialslab"
 
 <br>
 
+<br>
+
+```bash
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PermitEC2",
+            "Effect": "Allow",
+            "Action": ["ec2:*", "XXX:*"],
+            "Resource": "*"
+        }
+    ]
+}
+```
 
 <h2>Task 4 . Create an Access Key for the Padwan</h2>
 
