@@ -34,6 +34,10 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/stscredentialslab"
 
 <br>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
 > 2.1. <em>Generate environment or set up your credentials</em><br><a id='2.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
@@ -92,36 +96,180 @@ aws iam add-user-to-group --user-name padawan --group-name padawans
 aws iam list-groups-for-user --user-name padawan
 ```
 
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
 
 > 3.1. <em>What are the first four letters of the GroupId of the padawans group?</em><br><a id='3.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
+<br>
+
+
+<h2>Task 4 . Create an Access Key for the Padwan</h2>
+<p>Having created the identity and granted permissions (by adding the user to the group) you have configured authorization for this user. In this task we configure the ability to authenticate to the AWS APIs.<br><br>
+
+To use the Padawan user on the AttackBox, you'll need to generate an access key like so:</p>
 
 <br>
 
 ```bash
+[cloudshell-user@ip-10-1-94-78 ~]$ aws iam create-access-key --user-name padawan
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PermitEC2",
-            "Effect": "Allow",
-            "Action": ["ec2:*", "XXX:*"],
-            "Resource": "*"
-        }
-    ]
+    "AccessKey": {
+        "UserName": "padawan",
+        "AccessKeyId": "AKIAZOEXAMPLE",
+        "Status": "Active",
+        "SecretAccessKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "CreateDate": "2021-10-30T22:48:53+00:00"
+    }
 }
 ```
 
-<h2>Task 4 . Create an Access Key for the Padwan</h2>
+<br>
 
+<p>Using the information above, go to your AttackBox and issue these two commands:</p>
+
+<br>
+
+
+```bash
+export AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+export AWS_ACCESS_KEY_ID=AKIAZOEXAMPLE
+```
+
+<br>
+
+<p>Like running <code>aws configure</code>, setting these environment variables tells the AWS CLI what credentials to use. Next we will verify you're using the right set of credentials.</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 4.1. <em>What is the character length of the SecretAccessKey?</em><br><a id='4.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
 
 <h2>Task 5 . Validate Your Status on the AttackBox</h2>
+<p>The <code>aws sts get-caller-identity</code> command is the AWS equivalent of the Unix command <code>whoami</code>. You should use it regularly to make sure you know which account and user/role you're working with.</p>
+
+<br>
+
+
+```bash
+user@machine$ aws sts get-caller-identity
+{
+    "UserId": "AIDAZOHYLBQBMPAQSXF3G",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::123456789012:user/padawan"
+}
+```
+
+<br>
+
+<p>The UserId you see here should match the one from Task 2.  Hold on to the account ID returned above. You will need it for the next task when our padawan user assumes a new role with more permissions.</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 5.1. <em>I can confirm I'm using the "padawan" user.</em><br><a id='5.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
 
 
 <h2>Task 6 . Assume the Role of Jedi Master</h2>
+<p>Now that you've used long-term access keys from an IAM User, we are going to generate short-term keys for an IAM Role. In many attack scenarios, you'll be leveraging these short term credentials, so it's important to understand the basics of these role credentials.<br><br>
+
+The next step is to assume the role of Jedi Master.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0f8022d9-cdd3-4dad-8478-211d3f73a96a)
+
+<br>
+
+<p>To do this, you'll need three things:<br>
+
+- Permission to assume the "jedi" role. This is provided by the policy attached to the "padawans" IAM Group. Refer to Task 2 where we added the user to the padawans IAM Group.<br>
+- The Amazon Resource Name (ARN) of the Role you want to assume. This will be <code>arn:aws:iam::Account-ID-From-TASK4:role/jedi</code><br>
+- A Role Session Name - This string will appear in CloudTrail logs and help administrators distinguish who or why a specific role was assumed. For this we shall use the name of someone who almost became a Jedi master.</p>
+
+<br>
+
+```bash
+user@machine$ aws sts assume-role --role-arn arn:aws:iam::Account-ID-From-TASK4:role/jedi --role-session-name Ahsoka
+{
+    "Credentials": {
+        "AccessKeyId": "ASIAZOHYLBQBDEXAMPLE",
+        "SecretAccessKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "SessionToken": "IQoJb3JpZ2luX2VjEEgaCXVzLWVhc3QtMSJGMEQCIFTdMvEsoMLGygfmP5c9mjfWuUXAtro5oODwxSGgY7ncAiBvamMVsFfdaUDKjjDs/
+        ucCGqaydbZYDRy2XqEcigBzBSqbAgjg//////////8BEAAaDDY0OTA2MDg3OTM2MiIM7DMiASHRTnXU+SJrKu8B+bTZr6DmOIKMai10A
+        k2cnRQrcpvlfFLKQqhAOkfX6s3BJR0P6l3XNa7Bs3buoajzYlTvyBYw/1Bnn/DQ1yj+TZLsoM29pORwFbcAefaxUZjrXrcZORT97EeVj1ZrDw/
+jFwQCS3Su2ETpBCNmbX4yTlNEUX8RWlRlCYRBSLbSa9ZfvGfVqJjG/
+        7X8Xvh3R5E3IUjTcn/0pksOavXawxbRciDt0KKw87xFu1nzoAb1uj5u+drO1R1SWZBwgmDbYLGF2QrKMvs8U1NwTcBb0YAhK4JGKeOmL      
+LpSNWsUrYXmapSzCwb8gfX9RDg0wF/0ilswpqb3iwY6ngFqjjSgiD+rikPTE9xYNMFdexpJ712iKHcnbjJU7VAnUv93RYZtZycj2yCTO9IwhJa8O484mxIMDg0VBV/
+        lU5zkXsoihp0Z9dfFgvoPOOeKkeA5FYuTADK4iSR4YK6pEMenU5j8SeHt8aoR3WdYf3uObs0Zyts0XYx9hxLYXWayRNp7TushFaECg
+        nkQRJYulS5DykRHiib5PfP/Xjjcrw==",
+        "Expiration": "2021-10-31T00:20:06+00:00"
+    },
+    "AssumedRoleUser": {
+        "AssumedRoleId": "AROAZOHYLBQBOHPGGIRC2:Ahsoka",
+        "Arn": "arn:aws:sts::123456789012:assumed-role/jedi/Ahsoka"
+    }
+}
+```
+
+<br>
+
+<p>Now take the output of the <code>assume-role</code> command and set the three AWS CLI environment variables required to use temporary credentials for the Role (rather than the user):</p>
+
+<br>
+
+```bash
+export AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+export AWS_ACCESS_KEY_ID=ASIAZOHYLBQBDEXAMPLE
+export AWS_SESSION_TOKEN=IQoJb3JpZ2luX2VjEEgaCXVzLWVhc3QtMSJGMEQCIFTdMvEsoMLGygfmP5c9mjfWuUXAtro5oODwxSGgY7ncAiBvam
+MVsFfdaUDKjjDs/ucCGqaydbZYDRy2XqEcigBzBSqbAgjg//////////8BEAAaDDY0OTA2MDg3OTM2MiIM7DMiASHRTnXU+SJrKu8B+bTZr6DmOIKMa
+i10Ak2cnRQrcpvlfFLKQqhAOkfX6s3BJR0P6l3XNa7Bs3buoajzYlTvyBYw/1Bnn/DQ1yj+TZLsoM29pORwFbcAefaxUZjrXrcZORT97EeVj1ZrDw/
+jFwQCS3Su2ETpBCNmbX4yTlNEUX8RWlRlCYRBSLbSa9ZfvGfVqJjG/7X8Xvh3R5E3IUjTcn/
+0pksOavXawxbRciDt0KKw87xFu1nzoAb1uj5u+drO1R1SWZBwgmDbYLGF2QrKMvs8U1NwTcBb0YAhK4JGKeOmLLpSNWsUrYXmapSzCwb8gfX9RDg0wF/
+0ilswpqb3iwY6ngFqjjSgiD+rikPTE9xYNMFdexpJ712iKHcnbjJU7VAnUv93RYZtZycj2yCTO9IwhJa8O484mxIMDg0VBV/lU5zkXsoihp0Z9dfFgv
+oPOOeKkeA5FYuTADK4iSR4YK6pEMenU5j8SeHt8aoR3WdYf3uObs0Zyts0XYx9hxLYXWayRNp7TushFaECgnkQRJYulS5DykRHiib5PfP/Xjjcrw==
+```
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 6.1. <em>How many minutes are your session credentials good for?</em>Hint : <em>The API call will return the expiration time in UTC. If you need to see the current time in UTC, you can run `date` on your CloudShell session.</em><br><a id='6.1'></a>
+>> <strong><code>__________________________________</code></strong><br>
+<p></p>
+
+<br>
+
+> 6.2. <em>How many AWS CLI environment variables were required to be set?</em><br><a id='6.1'></a>
+>> <strong><code>__________________________________</code></strong><br>
+<p></p>
+
+<br>
+<br>
 
 
 <h2>Task 7 . Validate Your Newly Found Powers</h2>
