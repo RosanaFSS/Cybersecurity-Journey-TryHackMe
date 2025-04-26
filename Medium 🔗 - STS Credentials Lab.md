@@ -17,12 +17,39 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/stscredentialslab"
 
 <h2>Task 1 . Introduction to STS Credentials</h2>
 
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 1.1. <em>My AttackBox and CloudShell are ready to go!.</em><br><a id='1.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
 
 <h2>Task 2 . Accessing the environment</h2>
 
+<br>
+
+> 2.1. <em>Generate environment or set up your credentials</em><br><a id='2.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
 
 
 <h2>Task 3 . Create the Padawan User</h2>
+
+<br>
+
+> 3.1. <em>What are the first four letters of the GroupId of the padawans group?</em><br><a id='3.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
 
 
 <h2>Task 4 . Create an Access Key for the Padwan</h2>
