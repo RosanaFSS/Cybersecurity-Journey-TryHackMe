@@ -21,8 +21,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/resourcepoliciessc
 
 <p>While 80% of the time when working with AWS you'll be using IAM Policies, there are two other types of policies you need to know about. They use the same statement structure as an IAM Policy but are attached to resources or accounts to affect how access is authorized.</p>
 
-<br>
-
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
@@ -37,8 +35,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/resourcepoliciessc
 <h2>Task 2 . Accessing the Environament</h2>
 
 <p>[ ... ]</p>
-
-<br>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
