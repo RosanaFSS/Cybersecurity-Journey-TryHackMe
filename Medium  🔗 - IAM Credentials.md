@@ -1,7 +1,7 @@
 <p align="center">April 26, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{355}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/59a3f9a9-09da-4563-883c-95bc2adafea3" alt="Your Image Badge"><br>
 <img width="300px" src="https://github.com/user-attachments/assets/13f4c27b-45b5-4246-be5f-de6d1805ed82" alt="streak"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{IAM Credentials}}$$</h1>
 <p align="center"><em>Learn how IAM handles credentials for authentication to AWS APIs</em>.<br>
@@ -10,7 +10,9 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/iamcredentials">here</a>.</p>
 
 
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/444af653-20e3-4b27-b56e-83e63fd51af7"> </p>
+
+
 
 <br>
 <br>
@@ -98,7 +100,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/iamcredentials">he
 <br>
 <br>
 
-<h2>Task 5 . AWS APi Access Key</h2>
+<h2>Task 5 . AWS API Access Key</h2>
 
 <p>[ ... ]</p>
 
@@ -234,7 +236,51 @@ curl $AWS_CONTAINER_CREDENTIALS_FULL_URI -H "X-aws-ec2-metadata-token: $AWS_CONT
 <br>
 
 
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="900px" src="https://github.com/user-attachments/assets/4708bc01-8372-4120-8c77-40406545580e"><br>
+<img width="900px" src="https://github.com/user-attachments/assets/63d14c5f-fd0e-4623-bdad-cb6f64d148a0"></p>
 
-![image](https://github.com/user-attachments/assets/4708bc01-8372-4120-8c77-40406545580e)
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
 
 
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| April 26, 2025    | 355      |     254ᵗʰ    |      6ᵗʰ     |     50ᵗʰ    |     2ⁿᵈ    |  97,337  |    686    |     59    |
+
+</div>
+
+<br>
+
+
+<p align="center"> Global All Time:  254ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/2cef33ec-dc0f-4855-b50f-bfb5ffd7e5bd"> </p>
+
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/18f88e50-b8de-4f08-ae7b-a09726071891"> </p>
+
+<p align="center"> Global monthly:    50ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/4c4bbaa8-b8fc-43ed-99ea-9286dd043042"> </p>
+
+<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/6b8e50f6-e589-4524-bd86-ebfeabe6e250"> </p>
+
+<br>
+<br>
+
+<p align="center"> Weekly League:    5ᵗʰ Gold<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f25d6184-051d-4982-b8f7-b84796876422"> </p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> and <a href="https://tryhackme.com/p/jcfarris">jcfarris</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
