@@ -30,7 +30,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/resourcepoliciessc
 <br>
 <br>
 
-<h2>Task 2 . Accessing the Environament</h2>
+<h2>Task 2 . Accessing the Environment</h2>
 
 <p>[ ... ]</p>
 
