@@ -3,7 +3,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{355}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/13f4c27b-45b5-4246-be5f-de6d1805ed82" alt="streak"><br></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Resource Policies & CSPs}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Resource Policies and CSPs}}$$</h1>
 <p align="center"><em>Learn how AWS resources can have their own permissions.</em>.<br>
 It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
