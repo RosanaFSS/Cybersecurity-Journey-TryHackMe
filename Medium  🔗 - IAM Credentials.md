@@ -2,7 +2,7 @@
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{355}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/59a3f9a9-09da-4563-883c-95bc2adafea3" alt="Your Image Badge"><br>
-<img width="300px" src="https://github.com/user-attachments/assets/13f4c27b-45b5-4246-be5f-de6d1805ed82" alt="streak"><br></p>
+<img width="200px" src="https://github.com/user-attachments/assets/13f4c27b-45b5-4246-be5f-de6d1805ed82" alt="streak"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{IAM Credentials}}$$</h1>
 <p align="center"><em>Learn how IAM handles credentials for authentication to AWS APIs</em>.<br>
 It is classified as a medium-level walkthrough.<br>
