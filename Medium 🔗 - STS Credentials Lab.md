@@ -13,6 +13,11 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/stscredentialslab"
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/d93eb872-f204-40a8-ae4e-d8545d2b69b4"> </p>
 
 <br>
+
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/efa35f28-fdea-4925-96fe-b5db6a9109e9"> </p>
+
+
+<br>
 <br>
 
 <h2>Task 1 . Introduction to STS Credentials</h2>
