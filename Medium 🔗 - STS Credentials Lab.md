@@ -1,7 +1,7 @@
 <p align="center">April 26, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{355}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/3303d964-a1bd-4551-ac6e-fb6549bd157b" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/13f4c27b-45b5-4246-be5f-de6d1805ed82" alt="streak"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{STS Credentials Lab}}$$</h1>
 <p align="center"><em>Learn how to assume roles and get temporary credentials.</em>.<br>
@@ -10,7 +10,7 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/stscredentialslab">here</a>.</p>
 
 
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/d93eb872-f204-40a8-ae4e-d8545d2b69b4"> </p>
 
 <br>
 <br>
@@ -107,6 +107,12 @@ aws iam list-groups-for-user --user-name padawan
 <p></p>
 
 <br>
+
+![image](https://github.com/user-attachments/assets/5fcc31d1-6402-4839-a601-18fe46221701)
+
+
+
+<br>
 <br>
 
 
@@ -153,8 +159,18 @@ export AWS_ACCESS_KEY_ID=AKIAZOEXAMPLE
 <br>
 
 > 4.1. <em>What is the character length of the SecretAccessKey?</em><br><a id='4.1'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>40</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/28b6adf2-a083-4e76-8e4b-09fbd79aad70)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9184af23-7842-4db9-abc4-f107c1301c3e)
+
+
 
 <br>
 <br>
@@ -187,6 +203,11 @@ user@machine$ aws sts get-caller-identity
 > 5.1. <em>I can confirm I'm using the "padawan" user.</em><br><a id='5.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ca2f064c-a93e-457c-b9e4-e5eb3b061966)
+
 
 <br>
 <br>
@@ -259,14 +280,30 @@ oPOOeKkeA5FYuTADK4iSR4YK6pEMenU5j8SeHt8aoR3WdYf3uObs0Zyts0XYx9hxLYXWayRNp7TushFa
 <br>
 
 > 6.1. <em>How many minutes are your session credentials good for?</em>Hint : <em>The API call will return the expiration time in UTC. If you need to see the current time in UTC, you can run `date` on your CloudShell session.</em><br><a id='6.1'></a>
->> <strong><code>__________________________________</code></strong><br>
+>> <strong><code>60</code></strong><br>
 <p></p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/5f73215a-2894-4bc2-9a78-f277f993ce49)
+
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/27e4f243-fcb6-47db-952b-e4106493ea29)
+
+<br>
+
+
 > 6.2. <em>How many AWS CLI environment variables were required to be set?</em><br><a id='6.1'></a>
->> <strong><code>__________________________________</code></strong><br>
+>> <strong><code>3</code></strong><br>
 <p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1c700f30-32db-4449-8033-635f174ba49b)
+
 
 <br>
 <br>
@@ -274,16 +311,30 @@ oPOOeKkeA5FYuTADK4iSR4YK6pEMenU5j8SeHt8aoR3WdYf3uObs0Zyts0XYx9hxLYXWayRNp7TushFa
 
 <h2>Task 7 . Validate Your Newly Found Powers</h2>
 
+<br>
+
+
+![image](https://github.com/user-attachments/assets/15e518d7-6124-4843-bab8-db266a19da5e)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/930c11b2-527b-4f5f-8113-fc82adcfc7b5)
+
+
+
 
 <br>
 <br>
+
+
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="1000px" src="https://github.com/user-attachments/assets/335c04be-1dc5-4f86-8f71-625d98751153"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/919c38bc-60dc-495c-8ceb-dccc7eda65af"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/e46cbfe8-c420-4a35-8b10-be1b2da3efd9"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/e666b71e-e060-4cb8-a6f4-aaf4a7025571"></p>
 
 <br>
 
@@ -296,24 +347,25 @@ oPOOeKkeA5FYuTADK4iSR4YK6pEMenU5j8SeHt8aoR3WdYf3uObs0Zyts0XYx9hxLYXWayRNp7TushFa
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| April 26, 2025    | 355      |     254ᵗʰ    |      6ᵗʰ     |     50ᵗʰ    |     2ⁿᵈ    |  97,337  |    687    |     59    |
+| April 26, 2025    | 355      |     254ᵗʰ    |      6ᵗʰ     |     50ᵗʰ    |     2ⁿᵈ    |  97,433  |    688    |     59    |
 
 </div>
 
 <br>
 
-<p align="center"> Global All Time:  254ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/93ee117c-f5d5-4034-a5ae-62a242bc2482"> </p>
 
-<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/bf547bea-c2c5-481b-a5fd-cfb6e5395d5d"> </p>
+<p align="center"> Global All Time:  254ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/14bb7fa2-d4bf-4e2c-bd4b-2033141bf7c7"> </p>
 
-<p align="center"> Global monthly:    50ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/51837972-3297-41ac-a185-762dacba92a8"> </p>
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/41181a22-5b6d-48a8-b60e-b63f37005f70"> </p>
 
-<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/e4e2f957-1da4-417d-b798-f061e3a51a1d"> </p>
+<p align="center"> Global monthly:    50ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/9c9b53b2-8e4b-4a59-a75d-97b42094203d"> </p>
+
+<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b7eacee0-e2e9-4385-862c-48565a50e4f2"> </p>
 
 <br>
 <br>
 
-<p align="center"> Weekly League:    5ᵗʰ Gold<br><br><img width="1000px" src="https://github.com/user-attachments/assets/527a9117-2669-42f4-bcb2-f59ccad53cb6"> </p>
+<p align="center"> Weekly League:    5ᵗʰ Gold<br><br><img width="1000px" src="https://github.com/user-attachments/assets/8cce4abc-1974-4658-9863-1193b8ece40d"> </p>
 
 <br>
 <br>
