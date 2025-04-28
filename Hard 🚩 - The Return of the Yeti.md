@@ -9,9 +9,7 @@
 
 
 
-![image](https://github.com/user-attachments/assets/db349646-d5e3-431b-ad42-992b23fd1265)
 
-<br>
 
 
 ![image](https://github.com/user-attachments/assets/f1ea325a-9569-465a-bb8b-f8a67f8d0c4c)
