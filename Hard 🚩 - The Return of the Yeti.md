@@ -12,11 +12,17 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/adv3nt0fdbopsjcap"
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a766a869-b372-45a8-8403-f9cfabe26506"> </p>
 
+<br>
+<br>
 
+
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="">The Return of the Yeti</a></h3>
 
 
 <br>
 <br>
+
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
