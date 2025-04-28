@@ -31,9 +31,9 @@
 
 <p align="center"> Global All Time:  250ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/4c679d0d-9043-468d-b1f3-b0ea9ce5374f"> </p>
 
-<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/eaaefe20-6037-45fb-a2d6-8f43356dd81e"> </p>
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/7f457e47-f61d-4536-9b06-cf1ab4582d19"> </p>
 
-<p align="center"> Global monthly:      43ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b233bdd0-fe77-47a5-aca2-8ebae4f6b9b5"> </p>
+<p align="center"> Global monthly:      43ʳᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0f687809-1388-4107-89e1-f7197fbd01e7"> </p>
 
 <p align="center"> Brazil monthly:      2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/a16649f7-1a68-4bb3-9d48-d0c850168376"> </p>
 
