@@ -2,12 +2,6 @@
 ![image](https://github.com/user-attachments/assets/d600b3a1-4270-4e21-beef-60c4e01ca78d)
 
 
-![image](https://github.com/user-attachments/assets/6d2f9a4b-43b0-405f-9303-04c368725d75)
-
-![image](https://github.com/user-attachments/assets/24e292c6-02b6-4257-8c66-dee214fdf3b6)
-
-
-
 <br>
 <br>
 
