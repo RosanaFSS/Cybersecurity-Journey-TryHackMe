@@ -1,4 +1,4 @@
-<p align="center">April 26, 2025<br>
+<p align="center">April 27, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{356}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/fa3c68f3-dccd-4b64-84be-303b3e4c833b" alt="Your Image Badge"><br>
