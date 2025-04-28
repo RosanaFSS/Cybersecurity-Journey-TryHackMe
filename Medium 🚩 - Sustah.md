@@ -39,17 +39,16 @@
 
 <br>
 
+<p align="center"> Weekly League: 14th Sapphire<br><br><img width="400px" src="https://github.com/user-attachments/assets/aec28c39-1904-4153-99d4-7df83532d9b0"> </p>
 
-![image](https://github.com/user-attachments/assets/7f457e47-f61d-4536-9b06-cf1ab4582d19)
-
-![image](https://github.com/user-attachments/assets/0f687809-1388-4107-89e1-f7197fbd01e7)
-
+<br>
 
 
-![image](https://github.com/user-attachments/assets/020da55c-3df1-49f0-a18c-802894e9ef7a)
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
 
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
+<br>
 
-![image](https://github.com/user-attachments/assets/aec28c39-1904-4153-99d4-7df83532d9b0)
-
-
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/kiransau">kiransau</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p> 
