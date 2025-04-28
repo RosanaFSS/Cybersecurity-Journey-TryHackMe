@@ -12,16 +12,7 @@
 
 
 
-![image](https://github.com/user-attachments/assets/f1ea325a-9569-465a-bb8b-f8a67f8d0c4c)
-
 <br>
-
-![image](https://github.com/user-attachments/assets/fa99cf4d-27c3-4568-856f-c9962df2d798)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/c28523e5-ab33-42de-9927-fc927a8c0bb1)
-
 
 <br>
 <br>
@@ -29,8 +20,8 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <img width="1000px" src="https://github.com/user-attachments/assets/c28523e5-ab33-42de-9927-fc927a8c0bb1"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/910a07ff-634c-4466-a3f8-e20725f61f8d"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/82a67307-4989-486a-92a9-3d3a67a97e4b"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/f1ea325a-9569-465a-bb8b-f8a67f8d0c4c"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/fa99cf4d-27c3-4568-856f-c9962df2d798"></p>
 
 <br>
 
