@@ -13,8 +13,8 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="900px" src="https://github.com/user-attachments/assets/351a36d6-a508-4687-9e87-dcbffcd93d59"><br>
-<img width="900px" src="https://github.com/user-attachments/assets/26f29e70-2666-463f-89ee-60071c6e090d"></p>
+<img width="900px" src=""><br>
+<img width="900px" src=""></p>
 
 
 <br>
