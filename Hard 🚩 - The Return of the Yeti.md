@@ -1,10 +1,10 @@
 <p align="center">April 26, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{355}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{356}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/fa3c68f3-dccd-4b64-84be-303b3e4c833b" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/f9614aac-687b-4052-920b-1a9c26c19f13"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{The Return of the Yeti}}$$</h1>
-<p align="center"><em>The Yeti needs a plan for 2023. Help him out!</em>.<br>
+<p align="center"><em>The Yeti needs a plan for 2023. Help him out</em>!<br>
 It is classified as a hard-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/adv3nt0fdbopsjcap">here</a>.</p>
