@@ -1,5 +1,25 @@
+<p align="center">April 28, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{357}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="https://github.com/user-attachments/assets/d600b3a1-4270-4e21-beef-60c4e01ca78d" alt="Your Image Badge"><br></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Sustah}}$$</h1>
+<p align="center"><em>Play a game to gain access to a vulnerable CMS. Can you beat the odds?</em>.<br>
+It is classified as a medium-level CTF.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/sustah">here</a>.</p>
 
-![image](https://github.com/user-attachments/assets/d600b3a1-4270-4e21-beef-60c4e01ca78d)
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/58f3f044-4982-4b6d-82c2-c3e966029770"> </p>
+
+<br>
+<br>
+
+
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="">Sustah</a></h3>
+
+
+<br>
+<br>
 
 
 <br>
