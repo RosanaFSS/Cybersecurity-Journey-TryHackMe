@@ -1,4 +1,3 @@
-
 <p align="center">April 27, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{356}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
@@ -10,8 +9,7 @@ It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/localpotato">here</a>.</p>
 
-
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/2e002911-684b-429a-9df8-dcd9ea3bce8d"> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/aa184ebc-65a8-4429-bbe0-ebbcafb6f761"> </p>
 
 
 <br>
