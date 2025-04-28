@@ -3,13 +3,13 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{356}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/fa3c68f3-dccd-4b64-84be-303b3e4c833b" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/f9614aac-687b-4052-920b-1a9c26c19f13"><br></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{The Return of the Yeti}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{LocalPotato}}$$</h1>
 <p align="center"><em>Learn how to elevate your privileges on Windows using LocalPotato (CVE-2023-21746).</em><br>
 It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/localpotato">here</a>.</p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/aa184ebc-65a8-4429-bbe0-ebbcafb6f761"> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/73b9f89a-e2b0-43b0-9c04-1b4988aaadaf"> </p>
 
 
 <br>
@@ -17,7 +17,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/localpotato">here<
 
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href="">The Return of the Yeti</a></h3>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/localpotato-cve-2023-21746-tryhackme-walkthrough-dde02f2828db">LocalPotato</a></h3>
 
 
 <br>
