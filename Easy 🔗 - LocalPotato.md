@@ -19,14 +19,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/localpotato">here<
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
 <h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/localpotato-cve-2023-21746-tryhackme-walkthrough-dde02f2828db">LocalPotato</a></h3>
 
-
-
-
-
-![image](https://github.com/user-attachments/assets/f9614aac-687b-4052-920b-1a9c26c19f13)
-
-
-
 <br>
 <br>
 
