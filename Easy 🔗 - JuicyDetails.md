@@ -306,9 +306,10 @@ cat auth.log | grep "Accepted password"
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Skills Matrix}}$$</h1>
-<br>
-<p align="center">Security Engineer<br><br<img width="600px" src="https://github.com/user-attachments/assets/8dd3b7bc-1d62-40eb-a27a-0519120658fe"></p>
-<p align="center">Security Analyst<br><br<img width="600px" src="https://github.com/user-attachments/assets/df04f425-b7f6-4c5f-9299-8cbf9786b72d"></p>
+
+
+<p align="center"> Security Engineer <br><br<img width="600px" src="https://github.com/user-attachments/assets/8dd3b7bc-1d62-40eb-a27a-0519120658fe"> </p>
+<p align="center"> Security Analyst  <br><br<img width="600px" src="https://github.com/user-attachments/assets/df04f425-b7f6-4c5f-9299-8cbf9786b72d"> </p>
 
 
 
