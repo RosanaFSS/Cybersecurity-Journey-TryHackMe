@@ -203,9 +203,16 @@ grep "Hydra" access.log | grep "200"
 
 <br>
 
-<p>- <code>grep "/rest/products/search" access.log | grep "200" > analysis</code></p>
+```bash
+grep "/rest/products/search" access.log | grep "200" > analysis
+```
 
-<p>- CyberChef</p>
+<br>
+
+
+<p>Opened <code>analysis</code> in </code>CyberChef</code>.</p>
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/4cdbb0c6-c71c-47fb-9538-671b5a4f0e53)
 
