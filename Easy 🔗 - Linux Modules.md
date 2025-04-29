@@ -17,7 +17,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/linuxmodules">here
 
 <h2>Task 1 . Let´s introduce </h2>
 
-<p align="center"> <img width="1000px" src="(https://github.com/user-attachments/assets/0bb9610d-c538-43cc-b8c4-26a6ed560c4f"> <br>This image and all the theoretical content of the present article is TryHackMe´s property.</p>
+<p align="center"> <img width="900px" src="(https://github.com/user-attachments/assets/0bb9610d-c538-43cc-b8c4-26a6ed560c4f"> <br>This image and all the theoretical content of the present article is TryHackMe´s property.</p>
 
 
 
