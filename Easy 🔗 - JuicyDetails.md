@@ -168,7 +168,7 @@ Look carefully at:<br>
 <br>
 
 ```bash
-awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+cat access.log | grep "review" | sort -u
 ```
 
 <br>
