@@ -9,11 +9,10 @@ It is classified as an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/linuxmodules">here</a>.</p>
 
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/ffac3837-9590-4dfa-a56d-e018ed098959"> </p>
 
 <br>
 <br>
-
 
 <h2>Task 1 . Let´s introduce </h2>
 
@@ -407,13 +406,13 @@ ippsec:john:thecybermentor:liveoverflow:nahamsec:stok:
 <br>
 
 > 7.1. <em>How would you substitute every 3rd occurrence of the word 'hack' to 'back' on every line inside the file file.txt?</em>Hint : <em>sed 's/hack/back/3g' file.txt</em><br><a id='7.1'></a>
->> <strong><code>____</code></strong><br>
+>> <strong><code>sed 's/hack/back/3g' file.txt</code></strong><br>
 <p></p>
 
 <br>
 
 > 7.2. <em>How will you do the same operation only on 3rd and 4th line in file.txt?</em>Hint : <em>sed '3,4 s/hack/back/3g' file.txt</em><br><a id='7.2'></a>
->> <strong><code>____</code></strong><br>
+>> <strong><code>sed '3,4 s/hack/back/3g' file.txt</code></strong><br>
 <p></p>
 
 <br>
