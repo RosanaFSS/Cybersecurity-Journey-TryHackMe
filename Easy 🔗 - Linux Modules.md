@@ -33,7 +33,7 @@ Happy Learning ;)</p>
 <br>
 
 > 1.1. <em>Read the above</em><br><a id='1.1'></a>
->> <strong><codeNo answer needed</code></strong><br>
+>> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
@@ -51,7 +51,7 @@ Happy Learning ;)</p>
 <br>
 
 > 2.1. <em>Read the above</em><br><a id='2.1'></a>
->> <strong><codeNo answer needed</code></strong><br>
+>> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
