@@ -188,7 +188,7 @@ cat access.log | grep "review" | sort -u
 <br>
 
 ```bash
-awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+grep "Hydra" access.log | grep "200"
 ```
 
 <br>
