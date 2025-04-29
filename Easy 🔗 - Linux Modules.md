@@ -395,3 +395,46 @@ ippsec:john:thecybermentor:liveoverflow:nahamsec:stok:
 <br>
 
 
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="1000px" src=""><br>
+<img width="1000px" src=""></p>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| April 29, 2025    | 358      |     246ᵗʰ    |      6ᵗʰ     |     52ⁿᵈ    |     2ⁿᵈ    |  98,475  |    696    |     60    |
+
+</div>
+
+<br>
+
+<p align="center"> Global All Time:  246ᵗʰ<br><br><img width="1000px" src=""> </p>
+
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src=""> </p>
+
+<p align="center"> Global monthly:    52ⁿᵈ<br><br><img width="1000px" src=""> </p>
+
+<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src=""> </p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/j4x0n">j4x0n</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
+
