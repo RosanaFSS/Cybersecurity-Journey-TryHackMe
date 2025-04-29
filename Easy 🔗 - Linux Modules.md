@@ -140,3 +140,36 @@ grep -i "comment" grep.txt
 
 <br>
 <br>
+
+
+<h2>Task 4 . Did someone said <code>STROPS</code></h2>
+
+<p>I believe from here on, things are going to be a little different other than grepping the patterns. To keep things as simple as possible, we are going to start with a short note on what and where.</p>p>
+
+<h3>String Manipulations (STRing OPerationS)</h3>
+
+<p>Many people discard this topic in their tutorials/courses, which I believe is leaving behind the true power of linux and it's terminal interface. You ever see someone typing a very long command piping their outputs into some other commands? Well believe me when I say, you can select a single byte character from a GB long array of string bytes, if you could master that.<br><br>
+
+If you're from a programming background you might have used indexing in arrays, slicing in python, or even grepping in terminal... All are a means of string manipulations. Especially in bash, we have a TON of tools to perform a same kind of operation, with different flags or string patterns specified, but obviously we will be choosing the one, providing us the shortest and easiest syntax possible. <br><br>
+
+For strops, we have the following tools that I always keep in my arsenal and you should too:<br>
+
+- tr<br>
+- awk<br>
+- sed<br>
+- xargs<br><br>
+Other commands to be familiar with:<br>
+
+- sort<br>
+- uniq<br><br>
+I am gonna walk you through the commands I mentioned above in the following tasks.  </p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 4.1. <em>Press any key to continue...</em><br><a id='4.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
