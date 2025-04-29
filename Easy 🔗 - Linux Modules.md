@@ -393,6 +393,66 @@ ippsec:john:thecybermentor:liveoverflow:nahamsec:stok:
 ```
 
 <br>
+<br>
+
+
+<h2>Task 7 . <code>sed</code></h2>
+
+<p>[ ... ]</p>
+
+</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 7.1. <em>How would you substitute every 3rd occurrence of the word 'hack' to 'back' on every line inside the file file.txt?</em>Hint : <em>sed 's/hack/back/3g' file.txt</em><br><a id='7.1'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.2. <em>How will you do the same operation only on 3rd and 4th line in file.txt?</em>Hint : <em>sed '3,4 s/hack/back/3g' file.txt</em><br><a id='7.2'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.3. <em>Download the given file, and try formatting the trailing spaces in sed1.txt with a colon(:).</em><br><a id='7.3'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.4. <em>View the  sed2 file in the directory. Try putting all alphabetical values together, to get the answer for this question.</em>Hint : <em>I hope you will do this using sed.</em><br><a id='7.4'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.5. <em>What pattern did you use to reach that answer string?</em>Hint : <em>Think of this the other way around, why try to put the alphabets together when you can remove all the digits, instead.</em><br><a id='7.5'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.6. <em>Alternatively, you can use tr to remove all the digits, and then pipe the output in sed to remove trailing whitespaces.<br>
+
+cat sed2.txt | tr '[:digit:]' ' ' | sed 's/  *//g'<br>
+
+[Update] Another good way suggested by a room do-er. You can simply use tr -d command to delete all the digits from the file.<br>
+
+cat sed2.txt | tr -d '[:digit:]'</em><br><a id='7.6'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.6. <em>What did she sed?(In double quotes)</em>Hint : <em>"That's What"</em><br><a id='7.6'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
 
 
 <br>
