@@ -365,8 +365,33 @@ Ending this task with a fun fact, AWK is abbreviated after it's creators (Aho, W
 > liveoverflow:45345<br>
 > nahamsec:12365<br>
 > stok:1234 <a id='5.2'></a>
->> <strong><code>:digit:</code></strong><br>
+>> <strong><code>awk 'BEGIN{OFS=":"} {print $1, $4}' awk.txt</code></strong><br>
 <p></p>
 
 <br>
+
+```bash
+awk 'BEGIN{OFS=":"} {print $1, $4}' awk.txt
+ippsec:34024
+john:50024
+thecybermentor:25923
+liveoverflow:45345
+nahamsec:12365
+stok:1234
+```
+
+<br>
+
+> 5.3. <em>How will you make the output as following (there can be multiple; answer it using the above specified variables in BEGIN pattern):</em> Hint : <e>You can use ORS. Single quotes->Command, Double quotes->Values</em><br>
+> <em>ippsec, john, thecybermentor, liveoverflow, nahamsec, stok,</em><br>
+>> <strong><code>awk 'BEGIN{ORS=", "} {print $1}' awk.txt</code></strong><br>
+<p></p>
+
+```bash
+awk 'BEGIN{ORS=", "} {print $1}' awk.txt
+ippsec:john:thecybermentor:liveoverflow:nahamsec:stok:
+```
+
+<br>
+
 
