@@ -66,7 +66,9 @@ Look carefully at:<br>
 
 <p>To order by occurrence in the log I used<br><br>
 
-<code>awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u</code></p>
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
 
 ![image](https://github.com/user-attachments/assets/2b76f8db-997e-4256-b44d-9689ac4cd866)
 
@@ -77,6 +79,10 @@ Look carefully at:<br>
 <p></p>
 
 <br>
+
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
 
 ![image](https://github.com/user-attachments/assets/f1e0ab90-d938-4a0b-bbed-6fd17e840da7)
 
@@ -89,6 +95,12 @@ Look carefully at:<br>
 
 <br>
 
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/a6456a77-8118-4aa6-8de5-eba32ef05454)
 
 
@@ -97,6 +109,12 @@ Look carefully at:<br>
 > 2.4. <em>What parameter was used for the SQL injection?</em><br><a id='2.4'></a>
 >> <strong><code>q</code></strong><br>
 <p></p>
+
+<br>
+
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
 
 <br>
 
