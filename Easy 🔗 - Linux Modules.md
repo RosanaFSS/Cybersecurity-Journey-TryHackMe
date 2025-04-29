@@ -17,32 +17,126 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/linuxmodules">here
 
 <h2>Task 1 . Let´s introduce </h2>
 
-<p align="center"> <img width="900px" src="(https://github.com/user-attachments/assets/0bb9610d-c538-43cc-b8c4-26a6ed560c4f"> <br>This image and all the theoretical content of the present article is TryHackMe´s property.</p>
+<p>[ ...]</p>
 
+<h3>Scope ot this room</h3>
+<p>﻿This room is based on understanding these tools so that they can reduce our effort while working with the command line. Also, this skill that you develop will help you manage your terminal sessions efficiently while working on a pentest or any project.<br><br>
 
+Just make sure that you're using a linux VM, so that you can get a hands on if you want to. Or simply start the attackbox(free users can deploy the attackbox for an hour, which I think is pretty much enough time to complete this room). I highly recommend to complete the "Linux Fundamentals" rooms before proceeding further with these topics. <br><br>
+
+Happy Learning ;)</p>
 
                                       
-
-<p>You were hired as a SOC Analyst for one of the biggest Juice Shops in the world and an attacker has made their way into your network. <br><br>
-
-Your tasks are:<br>
-
-- Figure out what techniques and tools the attacker used<br>
-- What endpoints were vulnerable<br>
-- What sensitive data was accessed and stolen from the environment<br>
-- An IT team has sent you a zip file containing logs from the server. Download the attached file, type in "I am ready!" and get to work! There's no time to lose!</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
-> 1.1. <em>Are you ready?</em><br><a id='1.1'></a>
->> <strong><code>I am ready!</code></strong><br>
+> 1.1. <em>Read the above</em><br><a id='1.1'></a>
+>> <strong><codeNo answer needed</code></strong><br>
 <p></p>
 
 <br>
 <br>
 
 
-<h2>Task 2 . Reconnaissance</h2>
-<h3>Reconnaissance</h3>
+<h2>Task 2 . <code>du</code></h2>
+<h3>About the command</h3>
+<p><code>du</code>code> is a command in linux (short for disk usage) which helps you identify what files/directories are consuming how much space. If you run a simple du command in terminal...</p>
+
+<p>[ ... ]</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 2.1. <em>Read the above</em><br><a id='2.1'></a>
+>> <strong><codeNo answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 3 . <code>Grep</code>, <code>EGrep</code>, <code>FGrep</code></h2>
+<p>IMPORTANT: To proceed further with this task, make sure you have completed the "Regular Expressions" room by concatenate. This room will brief you about the regular expressions that can come handy while working with egrep.
+
+There are a lot of rooms that you must have already done where you used grep a lot of times, so most of this task will sound familiar to you, or this is your first attempt on reading about grep, in any case, a 5 min read won't harm your busy day...</p>
+
+<p>[ Download Task Files ]</p>
+
+<h3>Introduction</h3>
+<p>[ ... ]</p>
+
+<h3>The Famuly Tree</h3>
+<p>egrep and fgrep are no different from grep(other than 2 flags that can be used with grep to function as both). In simple words, egrep matches the regular expressions in a string, and fgrep searches for a fixed string inside text. Now grep can do both their jobs by using -E and -F flag, respectively.
+
+<p>[ ... ]</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 3.1. <em>Read the above</em><br><a id='3.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.2. <em>Is there a difference between egrep and fgrep? (Yea/Nay)</em><br><a id='3.2'></a>
+>> <strong><code>Yea</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.3. <em>Which flag do you use to list out all the lines NOT containing the 'PATTERN'?</em><br><a id='3.3'></a>
+>> <strong><code>-v</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.4. <em>Download the above given file and answer the following questions.</em><br><a id='3.4'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.5. <em>What user did you find in that file?</em>Hint : <em>Case Insensitive may be??</em><br><a id='3.5'></a>
+>> <strong><code>bobthebuilder</code></strong><br>
+<p></p>
+
+<br>
+
+```bash
+grep -i "user" grep.txt
+uxx6x84XZw5VsQTHzVMN7F6fuxx6x84XZw5VsQTHzVMN7F6fuxx6x84XZw5VsQTHzVMN7F6fuxx6x84XZw5VsQTHzVMN7FuSeR:bobthebuilder6fuxx6x84XZw5VsQTHzVMN7F6fuxx6x84XZw5VsQTHzVMN7F6fuxx6x84XZw5VsQTHzVMN7F6f
+```
+
+<br>
+
+> 3.6. <em>What is the password of that user?</em>Hint : <em>Uhm, did you checked the line properly?</em><br><a id='3.6'></a>
+>> <strong><code>LinuxIsGawd</code></strong><br>
+<p></p>
+
+<br>
+
+```bash
+grep -i "password" grep.txt
+qEqbDkrSFzmhRdDSQNWqaMTXqEqbDkrSFzmhRdDSQNWqaMTthispAsSwOrDistoosensitive:'LinuxIsGawd'XqEqbDkrSFzmhRdDSQNWqaMTXqEqbDkrSFzmhRdDSQNWqaMTXqEqbDkrSFzmhRdDSQNWqaMTXqEqbDkrSFzmhRdDSQNWqaMTXqEqbDkrSFzmhRdDSQNWqaMTX
+```
+
+<br>
+
+> 3.7. <em>Can you find the comment that user just left?</em><br><a id='3.7'></a>
+>> <strong><code>fs0ciety</code></strong><br>
+<p></p>
+
+<br>
+
+```bash
+grep -i "comment" grep.txt
+8gmdNXTN4gn2u73SuX5cewcM8gmdNXTN4gn2comment:'fs0ciety'u73SuX5cewcM8gmdNXTN4gn2u73SuX5cewcM8gmdNXTN4gn2u73SuX5cewcM8gmdNXTN4gn2u73SuX5cewcM8gmdNXTN4gn2u73SuX5cewcM8gmdNXTN4gn2u73SuX5cewcM
+```
+
+<br>
+<br>
