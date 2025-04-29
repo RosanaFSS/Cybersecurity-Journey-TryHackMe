@@ -64,11 +64,13 @@ Look carefully at:<br>
 >> <strong><code>nmap, hydra, sqlmap, curl, feroxbuster</code></strong><br>
 <p></p>
 
-<p>To order by occurrence in the log I used<br><br>
+<br>
 
 ```bash
 awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
 ```
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/2b76f8db-997e-4256-b44d-9689ac4cd866)
 
@@ -83,6 +85,8 @@ awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log 
 ```bash
 awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
 ```
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/f1e0ab90-d938-4a0b-bbed-6fd17e840da7)
 
@@ -129,6 +133,12 @@ awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log 
 
 <br>
 
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/5e381749-de4a-417f-bc1b-3a7a11aca781)
 
 
@@ -157,6 +167,14 @@ Look carefully at:<br>
 
 <br>
 
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
+
+<br>
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/90e52fa9-ff39-4013-a9b4-e876c9703303)
 
 <br>
@@ -166,6 +184,12 @@ Look carefully at:<br>
 > 3.2. <em>Was their brute-force attack successful? If so, what is the timestamp of the successful login? (Yay/Nay, 11/Apr/2021:09:xx:xx +0000)</em><br><a id='3.2'></a>
 >> <strong><code>Yay, 11/Apr/2021:09:16:31 +0000</code></strong><br>
 <p></p>
+
+<br>
+
+```bash
+awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u
+```
 
 <br>
 
