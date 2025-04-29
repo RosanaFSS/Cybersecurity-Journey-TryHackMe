@@ -224,7 +224,12 @@ grep "/rest/products/search" access.log | grep "200" > analysis
 
 <br>
 
-<p><code>grep "GET /ftp/" access.log</code></p>
+```bash
+grep "GET /ftp/" access.log
+```
+
+<br>
+
 
 ![image](https://github.com/user-attachments/assets/10b8fb8b-d09c-4170-a120-60877596d1ad)
 
@@ -237,7 +242,12 @@ grep "/rest/products/search" access.log | grep "200" > analysis
 
 <br>
 
-<p><code>cat vsftpd.log</code></p>
+```bash
+cat vsftpd.log
+```
+
+<br>
+
 
 ![image](https://github.com/user-attachments/assets/47ea3f84-3646-4a5b-90c2-34fd593591ae)
 
@@ -247,7 +257,15 @@ grep "/rest/products/search" access.log | grep "200" > analysis
 
 <br>
 
-<p><code>cat auth.log | grep "Accepted password"</code></p>
+<br>
+
+```bash
+cat auth.log | grep "Accepted password"
+```
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/63e2c8dd-7182-4e66-8874-c55ca3d62d39)
 
