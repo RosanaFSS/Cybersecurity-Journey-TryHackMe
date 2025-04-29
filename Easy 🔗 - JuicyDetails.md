@@ -1,7 +1,7 @@
 <p align="center">April 29, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{358}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/0ad6d78e-0e08-4d29-a43e-96d980b519d8" alt="Your Image Badge"><br>
 <img width="300px" src="https://github.com/user-attachments/assets/9050e33f-101f-4a0f-bb58-9640a7b72eff" alt="streak"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Juicy Details}}$$</h1>
 <p align="center"><em>A popular juice shop has been breached! Analyze the logs to see what had happened.</em>.<br>
@@ -9,7 +9,7 @@ It is classified as an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/juicydetails">here</a>.</p>
 
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/eaf189e0-2c85-47e3-8423-07d1df447c3f"> </p>
 
 <br>
 <br>
@@ -170,14 +170,38 @@ Look carefully at:<br>
 <br>
 
 > 3.4. <em>What files did they try to download from the vulnerable endpoint? (endpoint from the previous task, question #5)</em><br><a id='3.4'></a>
->> <strong><code>Yay, 11/Apr/2021:09:16:31 +0000</code></strong><br>
+>> <strong><code>coupons_2013.md.bak, www-data.bak</code></strong><br>
 <p></p>
 
 <br>
 
+<p><code>grep "GET /ftp/" access.log</code></p>
+
+![image](https://github.com/user-attachments/assets/10b8fb8b-d09c-4170-a120-60877596d1ad)
 
 
 <br>
+
+> 3.5. <em>What service and account name were used to retrieve files from the previous question? (service, username)</em>Hint : <em>What other log files do you have?</em><br><a id='3.5'></a>
+>> <strong><code>ftp, anonymous</code></strong><br>
+<p></p>
+
+<br>
+
+<p><code>cat vsftpd.log</code></p>
+
+![image](https://github.com/user-attachments/assets/47ea3f84-3646-4a5b-90c2-34fd593591ae)
+
+> 3.6. <em>What service and username were used to gain shell access to the server? (service, username)</em><br><a id='3.6'></a>
+>> <strong><code>ftp, anonymous</code></strong><br>
+<p></p>
+
+<br>
+
+<p><code>cat auth.log | grep "Accepted password"</code></p>
+
+![image](https://github.com/user-attachments/assets/63e2c8dd-7182-4e66-8874-c55ca3d62d39)
+
 
 <br>
 <br>
@@ -186,32 +210,31 @@ Look carefully at:<br>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="1000px" src="https://github.com/user-attachments/assets/df20cd0f-543e-4319-b801-bf1a52738cff"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/911d8634-0f7a-4364-a5c2-bc82a0b1e3e6"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/2b1a5df6-ed2e-4602-91cc-d450df62d0e2"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/79778ae4-f43e-416b-a6de-729c5eef360a"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
 <br>
-
 
 <div align="center">
 
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| April 28, 2025    | 357      |     248ᵗʰ    |      6ᵗʰ     |     58ᵗʰ    |     2ⁿᵈ    |  98,075  |    695    |     60    |
+| April 29, 2025    | 358      |     246ᵗʰ    |      6ᵗʰ     |     52ⁿᵈ    |     2ⁿᵈ    |  98,435  |    696    |     60    |
 
 </div>
 
 <br>
 
+<p align="center"> Global All Time:  246ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/3714de89-7508-45b0-9b43-ee6d0229d726"> </p>
 
-<p align="center"> Global All Time:  248ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b762d079-1215-4985-820c-b5df91add7c9"> </p>
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/dc860106-35b3-47c5-8cb0-0075654c418f"> </p>
 
-<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/eb64b7a7-8bac-46cc-8ee7-dd43cf9493af"> </p>
+<p align="center"> Global monthly:    52ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/7eb36126-2d8f-4fab-ba74-9c35cbeca501"> </p>
 
-<p align="center"> Global monthly:    58ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/4090a3af-f4d7-4ab3-98bd-df4295f819f2"> </p>
+<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0d436687-94a7-495a-98a0-19d3aca99fd5"> </p>
 
-<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/6097afe2-c4da-45cc-b09c-e9effe672143"> </p>
 
 
 <br>
@@ -224,4 +247,4 @@ Look carefully at:<br>
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
-<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>, <a href="https://tryhackme.com/p/zieglers">zieglers</a> and <a href="https://tryhackme.com/p/HumaneJard">HumaneJard</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
+<p align="center"><a href="https://tryhackme.com/p/GEEZET1">GEEZET1</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
