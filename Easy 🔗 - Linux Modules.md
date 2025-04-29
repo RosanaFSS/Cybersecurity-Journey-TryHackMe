@@ -42,7 +42,7 @@ Happy Learning ;)</p>
 
 <h2>Task 2 . <code>du</code></h2>
 <h3>About the command</h3>
-<p><code>du</code>code> is a command in linux (short for disk usage) which helps you identify what files/directories are consuming how much space. If you run a simple du command in terminal...</p>
+<p><code>du</code> is a command in linux (short for disk usage) which helps you identify what files/directories are consuming how much space. If you run a simple du command in terminal...</p>
 
 <p>[ ... ]</p>
 
