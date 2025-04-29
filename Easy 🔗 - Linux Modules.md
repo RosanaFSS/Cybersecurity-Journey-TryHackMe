@@ -352,19 +352,19 @@ Ending this task with a fun fact, AWK is abbreviated after it's creators (Aho, W
 
 <br>
 
-> 5.1. <em>Read the above</em><br><a id='4.1'></a>
+> 6.1. <em>Read the above</em><br><a id='6.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
 
-> 5.2. <em>Download the above given file awk.txt, and use the awk command to print the following output:</em>Hint : <em>It starts as: awk 'BEGIN{OFS=...</em><br>
+> 6.2. <em>Download the above given file awk.txt, and use the awk command to print the following output:</em>Hint : <em>It starts as: awk 'BEGIN{OFS=...</em><br>
 > ippsec:34024<br>
 > john:50024<br>
 > thecybermentor:25923<br>
 > liveoverflow:45345<br>
 > nahamsec:12365<br>
-> stok:1234 <a id='5.2'></a>
+> stok:1234 <a id='6.2'></a>
 >> <strong><code>awk 'BEGIN{OFS=":"} {print $1, $4}' awk.txt</code></strong><br>
 <p></p>
 
@@ -382,8 +382,8 @@ stok:1234
 
 <br>
 
-> 5.3. <em>How will you make the output as following (there can be multiple; answer it using the above specified variables in BEGIN pattern):</em> Hint : <e>You can use ORS. Single quotes->Command, Double quotes->Values</em><br>
-> <em>ippsec, john, thecybermentor, liveoverflow, nahamsec, stok,</em><br>
+> 6.3. <em>How will you make the output as following (there can be multiple; answer it using the above specified variables in BEGIN pattern):</em> Hint : <e>You can use ORS. Single quotes->Command, Double quotes->Values</em><br>
+> <em>ippsec, john, thecybermentor, liveoverflow, nahamsec, stok,</em><br><a id='6.3'></a>
 >> <strong><code>awk 'BEGIN{ORS=", "} {print $1}' awk.txt</code></strong><br>
 <p></p>
 
