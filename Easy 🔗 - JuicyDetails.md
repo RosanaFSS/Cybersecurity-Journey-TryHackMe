@@ -71,6 +71,27 @@ Look carefully at:<br>
 
 <br>
 
+> 2.2. <em>What endpoint was vulnerable to a brute-force attack?</em><br><a id='2.2'></a>
+>> <strong><code>/rest/user/login</code></strong><br>
+<p></p>
+
+<br>
+
+> 2.3. <em>What endpoint was vulnerable to SQL injection?</em><br><a id='2.3'></a>
+>> <strong><code>/rest/products/search</code></strong><br>
+<p></p>
+
+<br>
+
+> 2.4. <em>What parameter was used for the SQL injection?</em><br><a id='2.4'></a>
+>> <strong><code>q</code></strong><br>
+<p></p>
+
+<br>
+
+> 2.5. <em>What endpoint did the attacker try to use to retrieve files? (Include the /)</em><br><a id='2.5'></a>
+>> <strong><code>/ftp</code></strong><br>
+<p></p>
 
 <h2>Task 3 . Technique - PowerShell </h2>
 <p>[ ... ]</p>
