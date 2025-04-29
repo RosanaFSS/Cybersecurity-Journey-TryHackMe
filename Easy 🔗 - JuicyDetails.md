@@ -1,46 +1,74 @@
-<p align="center">April 28, 2025<br>
+<p align="center">April 29, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{357}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/31522e39-894f-48bb-9cf7-6cbbe0541657" alt="Your Image Badge"><br></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{XDR : Execution}}$$</h1>
-<p align="center"><em>Investigate and prevent techniques that run malicious code on local or remote systems using Defender XDR.</em>.<br>
-It is classified as a medium-level walkthrough.<br>
+<img width="300px" src="" alt="Your Image Badge"><br></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Juicy Details}}$$</h1>
+<p align="center"><em>A popular juice shop has been breached! Analyze the logs to see what had happened.</em>.<br>
+It is classified as an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/xdrexecution">here</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/juicydetails">here</a>.</p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/31cebadd-110e-4f53-bf1d-73e918fa1975"> </p>
+<p align="center"> <img width="1000px" src=""> </p>
 
 <br>
 <br>
 
 
 <h2>Task 1 . Introduction </h2>
-<p>[ ... ]</p>
+<h3>Introduction</h3>
+
+<p>[ Download Task Files ]</p>
+
+                                      
+
+<p>You were hired as a SOC Analyst for one of the biggest Juice Shops in the world and an attacker has made their way into your network. <br><br>
+
+Your tasks are:<br>
+
+- Figure out what techniques and tools the attacker used<br>
+- What endpoints were vulnerable<br>
+- What sensitive data was accessed and stolen from the environment<br>
+- An IT team has sent you a zip file containing logs from the server. Download the attached file, type in "I am ready!" and get to work! There's no time to lose!</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
-> 1.1. <em>Cool, let's go!</em><br><a id='1.1'></a>
->> <strong><code>No answer needed</code></strong><br>
+> 1.1. <em>Are you ready?</em><br><a id='1.1'></a>
+>> <strong><code>I am ready!</code></strong><br>
 <p></p>
 
 <br>
 <br>
 
 
-<h2>Task 2 . Execution Attack Tatics </h2>
-<p>[ ... ]</p>
+<h2>Task 2 . Reconnaissance</h2>
+<h3>Reconnaissance</h3>
+
+                                      
+
+<p>Analyze the provided log files.<br><br>
+
+Look carefully at:<br>
+
+- What tools the attacker used<br>
+- What endpoints the attacker tried to exploit<br>
+- What endpoints were vulnerable</h3>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
-> 2.1. <em>What technique is it when a threat actor tries to use command-line tools to execute malicious commands?</em><br><a id='2.1'></a>
->> <strong><code>Command and scripting</code></strong><br>
+> 2.1. <em>What tools did the attacker use? (Order by the occurrence in the log)</em><br><a id='2.1'></a>
+>> <strong><code>nmap, hydra, sqlmap, curl, feroxbuster</code></strong><br>
 <p></p>
 
-<br>
+<p>To order by occurrence in the log I used<br><br>
+
+<code>awk '{ cmd = $12 " " $13 " " $14; if (!seen[cmd]++) print $0, cmd }' access.log | sort -u</code></p>
+
+![image](https://github.com/user-attachments/assets/2b76f8db-997e-4256-b44d-9689ac4cd866)
+
 <br>
 
 
