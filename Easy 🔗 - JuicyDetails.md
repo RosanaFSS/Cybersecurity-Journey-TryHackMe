@@ -270,7 +270,7 @@ cat auth.log | grep "Accepted password"
 ![image](https://github.com/user-attachments/assets/63e2c8dd-7182-4e66-8874-c55ca3d62d39)
 
 
-<br>
+
 <br>
 <br>
 
@@ -301,6 +301,15 @@ cat auth.log | grep "Accepted password"
 <p align="center"> Global monthly:    52ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/7eb36126-2d8f-4fab-ba74-9c35cbeca501"> </p>
 
 <p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0d436687-94a7-495a-98a0-19d3aca99fd5"> </p>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Skills Matrix}}$$</h1>
+<br>
+<p align="center">Security Engineer<br><br<img width="600px" src="https://github.com/user-attachments/assets/8dd3b7bc-1d62-40eb-a27a-0519120658fe"></p>
+<p align="center">Security Analyst<br><br<img width="600px" src="https://github.com/user-attachments/assets/df04f425-b7f6-4c5f-9299-8cbf9786b72d"></p>
+
 
 
 
