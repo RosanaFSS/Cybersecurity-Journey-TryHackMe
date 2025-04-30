@@ -3,7 +3,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{358}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br>
 <img width="200px" src=""><br></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{The Return of the Yeti}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Chrome}}$$</h1>
 <p align="center"><em>Let us place all of our trust in a password manager.</em>!<br>
 It is classified as a hard-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
