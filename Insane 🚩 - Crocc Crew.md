@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{360}}$$-day-streak in  <a href="h
 <p align="center"><em>Crocc Crew has created a backdoor on a Cooctus Corp Domain Controller. We're calling in the experts to find the real back door!</em>!<br>
 It is classified as an insane-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/chrome">here</a>.</p>
+Can be accessed clicking  <a href="">here</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/db2daae3-0809-4567-8776-3eaca7223785"> </p>
 
