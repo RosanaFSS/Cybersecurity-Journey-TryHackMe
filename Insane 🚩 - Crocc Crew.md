@@ -1,17 +1,15 @@
 <p align="center">May 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{360}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="h" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/20b25a8f-4077-45ff-8093-d62f63b8e143"><br></p>
+<img width="300px" src="https://github.com/user-attachments/assets/87c8d0be-06d6-4123-9fb7-983611769dfc" alt="Your Image Badge"><br>
+<img width="200px" src="https://github.com/user-attachments/assets/28b561fc-e1c5-4660-a1d1-35253055f98b"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Crocc Crew}}$$</h1>
 <p align="center"><em>Crocc Crew has created a backdoor on a Cooctus Corp Domain Controller. We're calling in the experts to find the real back door!</em>!<br>
 It is classified as an insane-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/chrome">here</a>.</p>
 
-<p align="center"> <img width="1000px" src=""> </p>
-
-![image](https://github.com/user-attachments/assets/28b561fc-e1c5-4660-a1d1-35253055f98b)
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/db2daae3-0809-4567-8776-3eaca7223785"> </p>
 
 
 <br>
@@ -1054,19 +1052,20 @@ c:\PerfLogs\Admin>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| April 30, 2025    | 359      |     245ᵗʰ    |      6ᵗʰ     |     54ᵗʰ   |     2ⁿᵈ    |  98,687  |    697    |     60    |
+| May 1, 2025       | 360      |     244ᵗʰ    |      6ᵗʰ     |     281ˢᵗ   |    10ᵗʰ    |  98,807  |    698    |     60    |
 
 </div>
 
 <br>
 
-<p align="center"> Global All Time:  245ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0c414a78-1bdc-411e-8268-41cdc0257f4e"> </p>
+<p align="center"> Global All Time:  244ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5acfbc0b-e27d-4c82-a3da-6042277ec757"> </p>
 
-<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f2370644-b337-4557-9a1f-2f119d7b5eb9"> </p>
+<p align="center"> Brazil All Time:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/57792014-f88c-4d10-b114-c4ede0a2cbb6"> </p>
+"> </p>
 
-<p align="center"> Global monthly:    54ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/a198bf71-3853-4e6e-ac82-625c953551d0"> </p>
+<p align="center"> Global monthly:    281ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/a198bf71-3853-4e6e-ac82-625c953551d0"> </p>
 
-<p align="center"> Brazil monthly:    2ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/ed8d3f14-f15f-4f5d-b618-e57c429205c7"> </p>
+<p align="center"> Brazil monthly:    10ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f79eac33-6556-4fc1-ab83-0fa82b9c1bf4"> </p>
 
 <br>
 <br>
