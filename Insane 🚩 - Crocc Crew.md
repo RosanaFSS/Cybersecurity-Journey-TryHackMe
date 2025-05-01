@@ -16,10 +16,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/chrome">here</a>.<
 <br>
 
 <h2>Task 1 . Get Connected!</h2>
-
-![image](https://github.com/user-attachments/assets/4c9e3508-5673-46aa-b1ce-6573ba9ae1c4)
-
-
 <p>[ ... ]</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
