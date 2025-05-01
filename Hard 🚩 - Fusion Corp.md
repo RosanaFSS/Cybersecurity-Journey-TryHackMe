@@ -15,7 +15,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/fusioncorp">here</
 <br>
 <br>
 
-<h2>Task 1 . Fuscion Corp</h2>
+<h2>Task 1 . Fusion Corp</h2>
 
 
 <p>You had an engagement a while ago for Fusion Corp. They contacted you saying they've patched everything reported and you can start retesting.</p>
@@ -98,6 +98,11 @@ Host script results:
 
 <br>
 
+![Hard 🚩 - Fusion Corp - 01 - nmap](https://github.com/user-attachments/assets/b8313e24-0f4a-416c-8223-3676d3cbc6dc)
+
+<br>
+
+
 <h2 align="center">dirb</h2>
 
 ```bash
@@ -127,9 +132,22 @@ GENERATED WORDS: 4612
 :~/FusionCorp# 
 ```
 
+<br>
+
+![Hard 🚩 - Fusion Corp - 2 - dirb](https://github.com/user-attachments/assets/7c787bf6-796e-4c07-b642-4ad9f2acf3cc)
+
+<br>
+
+![Hard 🚩 - Fusion Corp - 03 - domain name in etc hosts](https://github.com/user-attachments/assets/d82410a7-107a-4291-97d4-1a69e0afa746)
+
+<br>
+
 <h2 align="center">http://TargetIP</h2>
 
 <br>
+
+![Hard 🚩 - Fusion Corp - 04 - Navigated to TargetIP](https://github.com/user-attachments/assets/e931621e-c40e-4d41-a9f8-99a59b0311bf)
+
 
 <br>
 
@@ -137,51 +155,57 @@ GENERATED WORDS: 4612
 
 <br>
 
+![Hard 🚩 - Fusion Corp - 05 - Navigated to TargetIP-backup](https://github.com/user-attachments/assets/f4cbeadd-2f88-4b99-a182-40ad3d018b31)
+
+
 <br>
 
 <h2 align="center">http://TargetIP/backup/employees.ods</h2>
 
 <br>
 
-<p>Used <code>wget</code> <code>http://TargetIP/backup/employees.ods</code>.<br><br>
+<p>Clicked <code>employees.ods</code>.<br><br>
 Double-clicked <code>employees.ods</code> and opened it in <code>LibbreOffice</code>.<br><br>
 Created a file with the <code>usernames</code> --> <code>usernames.txt</code></p>
 
 <br>
 
-<br>
+![Hard 🚩 - Fusion Corp - 06 - Downloaded employees ods](https://github.com/user-attachments/assets/02011a1c-d380-41ca-8d4f-9a3a883880e2)
+
 
 <br>
 
-<br>
+![Hard 🚩 - Fusion Corp - 07 - Opened employees ods in LibreOffice Calc](https://github.com/user-attachments/assets/0810a149-c192-4411-a400-d95caf767af6)
 
-<br>
-
-<h2 align="center">smbclient</h2>
-<p>- Checked if <code>anonymous</code> is enabled.</p>
-
-<br>
-
-<br>
-
-<p>- Checked the <code>shares</code>.</p>
-
-<br>
 
 
 
 <h2 align="center">kerbrute</h2>
-<p>Used <code>kerbrute</code> which user(s) are/is valid.</p>
+<p>Used <code>kerbrute</code> which user(s) are/is valid.<br><br>
+Downloaded and used <code>kerbrute</code>.<br><br>
+Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64</p>
 
 <br>
 
+```bash
+:~/FusionCorp# chmod +x kerbrute_linux_amd64
+...
+~/FusionCorp# ./kerbrute_linux_amd64 userenum -d fusion.corp --dc TargetIP /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
+```
 <br>
 
 <h2 align="center">Impacket GetNPUsers</h2>
 
 <br>
 
+python3 /opt/impacket/build/scripts-3.9/GetNPUsers.py fusion.corp/ -no-pass -usersfile usernames.txt
+
 <br>
+
+![Hard 🚩 - Fusion Corp - 09 - Impacket GetNPUsers](https://github.com/user-attachments/assets/b7e01d3b-e565-4020-b3d2-f7e89a10761d)
+
+<br>
+
 
 
 <h2 align="center">hashcat</h2>
@@ -191,9 +215,34 @@ Confirmed <code>Kerberos</code>´ <code>lparker@FUSION.CORP</code>;</p>
 
 <br>
 
+![Hard 🚩 - Fusion Corp - 10 - Created a file with the hash](https://github.com/user-attachments/assets/68f6fa69-3928-4eac-82b4-314a1a430891)
+
 
 <br>
 
+![Hard 🚩 - Fusion Corp - 11 - Ran hashcat](https://github.com/user-attachments/assets/3d155e30-b881-4616-a8c6-2234c2e57b5d)
+
+<br>
+
+![Hard 🚩 - Fusion Corp - 12 - Discovered a valid user and its password](https://github.com/user-attachments/assets/11de4802-49c3-46f9-bd3b-782956619c88)
+
+<br>
+
+
+
+<p><code>lparker@FUSION.CORP</code>:<code>!!abbylvzsvs2k6!</code></p>
+
+<br>
+
+<br>
+
+<h2 align="center">crackmapexec</h2>
+<p>Installed <code>crackmapexec</code> and used it to </p>
+
+<br>
+
+```bash
+:~/FusionCorp# snap install crackmapexec
 
 <br>
 
