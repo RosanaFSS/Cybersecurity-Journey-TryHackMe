@@ -372,7 +372,7 @@ Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download
 :~/CroccCrew# chmod +x kerbrute_linux_amd64
 ...
 
-~/CroccCrew# ./kerbrute_linux_amd64 userenum -d COOCTUS.CORP --dcTargetIP /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
+~/CroccCrew# ./kerbrute_linux_amd64 userenum -d COOCTUS.CORP --dc TargetIP /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
 
     __             __               __     
    / /_____  _____/ /_  _______  __/ /____ 
