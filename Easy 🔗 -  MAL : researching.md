@@ -1,14 +1,17 @@
-<p align="center">May 1, 2025<br>
+<p align="center">May 2, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{360}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/e96bcd74-9ef3-4a20-ac8d-638b6bf6b6cc" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/28b561fc-e1c5-4660-a1d1-35253055f98b"><br></p>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{361}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="200px" src=""><br></p>
 
-<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{SOC Workbooks and Lookups}}$$</h1>
-<p align="center">Discover useful corporate resources to help you structure and simplify L1 alert triage.<br> It is classified an easy-level walkthrough, and premium: only for subscribers. Can be accessed clicking <a href="https://tryhackme.com/room/socworkbookslookups">here</a>.</p>
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{MAL : researching}}$$</h1>
+<p align="center">Understanding checksums, how to generate them and their use throughout malware analysis with online sandboxing &  reporting services<br>
+It is classified an easy-level walkthrough.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/malresearching">here</a>.</p>
 
 
-<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/6a2c9e73-11b0-4a47-9cae-3ac45c20b67b"> </p>
+<p align="center"> <img width="900px" src="b"> </p>
 
 <br>
 
