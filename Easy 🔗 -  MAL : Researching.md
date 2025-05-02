@@ -10,7 +10,7 @@ It is classified an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/malresearching">here</a>.</p>
 
-<p align="center"> <img width="900px" src="[b](https://github.com/user-attachments/assets/f2ffb3ff-eba4-406e-a5ab-7dd8f4b9b22c)"> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/f2ffb3ff-eba4-406e-a5ab-7dd8f4b9b22c"> </p>
 
 <br>
 
