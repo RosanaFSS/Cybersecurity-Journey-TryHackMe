@@ -1,7 +1,7 @@
 <p align="center">May 2, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{361}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/82848d24-fc44-4f4e-b3fd-39a9692e0436" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/1acd3213-b0f0-4ec2-a142-8e36ab0df272"><br></p>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Phishing: HiddenEye}}$$</h1>
@@ -10,7 +10,7 @@ It is classified an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/phishinghiddeneye">here</a>.</p>
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/32281660-7412-4651-ad37-b7a2ce83fe01"> </p>
 
 <br>
 
@@ -460,25 +460,30 @@ This task will help you understand the difference between a legit/official page 
 |       Date        |   Streak |   All Time   |   All Time   |   Monthly   |   Monthly  |  Points  |   Rooms   |   Badges  |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-|    May 2, 2025    |    361   |     241ˢᵗ    |      6ᵗʰ     |     603ʳᵈ   |     7ᵗʰ    |  99,151  |    701    |     60    |
+|    May 2, 2025    |    361   |     241ˢᵗ    |      6ᵗʰ     |     644ᵗʰ   |     7ᵗʰ    |  99,183  |    702    |     60    |
 
 </div>
 
 <br>
 
-<p align="center"> Global All Time: 241ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/8c9ab271-5562-4a82-9725-625be132d71f"> </p>
+![image](https://github.com/user-attachments/assets/3f9911e5-57e8-417b-910f-8aaec8fea687)
 
-<p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/835516a0-6720-4ee8-a236-628db691bfdf"> </p>
 
-<p align="center"> Global monthly:  603ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bcc7f5ca-b428-4a92-a2ac-23cdb4244248"> </p>
 
-<p align="center"> Brazil monthly:    7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/fa66de90-f182-4a49-b4c1-8929c2efb22d"> </p>
+<p align="center"> Global All Time: 241ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/37519dd4-2717-4c66-b857-c45495590599"> </p>
+
+<p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/bbe765bd-efa0-4625-9f4f-e1cf9f0bb9b6"> </p>
+
+<p align="center"> Global monthly:  644ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/3f9911e5-57e8-417b-910f-8aaec8fea687"> </p>
+
+<p align="center"> Brazil monthly:    7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/c5322da0-ed51-45e2-9bca-353888285c09"> </p>
+
 
 
 <br>
 <br>
 
-<p align="center"> Weekly League:    12ⁿᵈ Platinum<br><br><img width="1000px" src="https://github.com/user-attachments/assets/98e9c8eb-cf59-4292-bb23-2dfed2e6535c"> </p>
+<p align="center"> Weekly League:    13ʳᵈ Platinum<br><br><img width="1000px" src="https://github.com/user-attachments/assets/3a52879f-b4f4-41a0-bd96-6e08add21806"> </p>
 
 <br>
 <br>
@@ -490,4 +495,4 @@ This task will help you understand the difference between a legit/official page 
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
-<p align="center"><a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
+<p align="center"><a href="https://tryhackme.com/p/i7md">i7md</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
