@@ -1,9 +1,8 @@
 <p align="center">May 2, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{361}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/e554cfd8-159a-4be4-8595-199b269421df" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/1acd3213-b0f0-4ec2-a142-8e36ab0df272"><br></p>
-
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{MAL: Researching}}$$</h1>
 <p align="center">Understanding checksums, how to generate them and their use throughout malware analysis with online sandboxing &  reporting services<br>
@@ -11,14 +10,13 @@ It is classified an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/malresearching">here</a>.</p>
 
-
-<p align="center"> <img width="900px" src="b"> </p>
+<p align="center"> <img width="900px" src="[b](https://github.com/user-attachments/assets/f2ffb3ff-eba4-406e-a5ab-7dd8f4b9b22c)"> </p>
 
 <br>
 
 
 <h2>Task 1 . Intro</h2>
-<p>Preface:
+<p>Preface:<br><br>
 
 Welcome to 2. MP: Research section of my malware analysis series. <br><br>
 
@@ -453,12 +451,74 @@ Read the report provided (here) to answer the questions provided.</p>
 <h2>Task 7 . Future Reading (References)</h2>
 
 <h3>Cryptography and Cheskcums</h3>
-<p align="left">- <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=1020&context=etd_projects">A Meaningful MD5 Hash Collision Attack</a>- (Narayana D. Kashyap., 2008)
+<p align="left">- <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=1020&context=etd_projects">A Meaningful MD5 Hash Collision Attack</a> - (Narayana D. Kashyap., 2008)</p>
+<p align="left">- <a href="https://dl.acm.org/doi/book/10.5555/1209579">Cryptography & Network Security</a> - Cryptography & Network Security</p>
+<p align="left">- <a href="https://shattered.io/static/shattered.pdf">The first collision for full SHA-1</a> - - (Stevens et al., 2017) / (Shattered.io)</p>
+
+<h3>Blog (Selfless Promo)</h3>
+<p align="left">- <a href="https://blog.cmnatic.co.uk/posts/so-you-want-to-analyse-malware/">So you want to analyse malware?</a></p>
+
+
+<h3>Sandboxes Engine</h3>
+<p align="left">- <a href="https://any.run/">any.run</a></p>
+<p align="left">- <a href="https://hybrid-analysis.com/">hubrid.analysis</a></p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
-> 7.1. <em>What flag did you receive after completing the first workbook?</em><br><a id='7.1'></a>
->> <code><strong>THM{the_most_common_soc_workbook}</strong></code>
+> 7.1. <em>Thanks! I'll stay tuned for more.</em><br><a id='7.1'></a>
+>> <code><strong>NO answer needed</strong></code>
 
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+<p align="center">
+<img width="1000px" src="https://github.com/user-attachments/assets/83784394-9ede-440b-a383-7b407b843dcd"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/e2895dc1-33bb-4718-a263-de2aa88dc9ed"></p>
+
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+|       Date        |   Streak |   All Time   |   All Time   |   Monthly   |   Monthly  |  Points  |   Rooms   |   Badges  |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+|    May 2, 2025    |    361   |     241ˢᵗ    |      6ᵗʰ     |     603ʳᵈ   |     7ᵗʰ    |  99,151  |    701    |     60    |
+
+</div>
+
+<br>
+
+<p align="center"> Global All Time: 241ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/8c9ab271-5562-4a82-9725-625be132d71f"> </p>
+
+<p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/835516a0-6720-4ee8-a236-628db691bfdf"> </p>
+
+<p align="center"> Global monthly:  603ʳᵈ<br><br><img width="900px" src="https://github.com/user-attachments/assets/bcc7f5ca-b428-4a92-a2ac-23cdb4244248"> </p>
+
+<p align="center"> Brazil monthly:    7ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/fa66de90-f182-4a49-b4c1-8929c2efb22d"> </p>
+
+
+<br>
+<br>
+
+<p align="center"> Weekly League:    12ⁿᵈ Platinum<br><br><img width="1000px" src="https://github.com/user-attachments/assets/98e9c8eb-cf59-4292-bb23-2dfed2e6535c"> </p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
