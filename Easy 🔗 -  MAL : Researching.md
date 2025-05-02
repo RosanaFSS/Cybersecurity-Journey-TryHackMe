@@ -16,7 +16,34 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/malresearching">he
 <br>
 
 
-<h2>Task 1 . Introduction</h2>
+<h2>Task 1 . Intro</h2>
+<p>Preface:
+
+Welcome to 2. MP: Research section of my malware analysis series. <br><br>
+
+ 
+
+Although we will be covering some cryptography theory, I've kept it relevant and visualised it as best I can. I've provided some resources at the end of the room in the "Further Reading" task for each of the topics covered. <br><br>
+
+You can expect to learn about file checksums, why these values are important in not only day-to-day life but more so how we can utilise them in malware analysis. The first few tasks are theory-heavy, so bear with me. However, towards the end of the room, you will be generating your own checksums, learning how to use online sandboxing, and analysing the reports generated from these.<br><br>
+
+.:.<br><br>
+
+As always, any feedback regarding the content covered through the series so far is greatly appreciated. I always welcome ideas of topics, tools, and techniques that could be covered.<br><br>
+
+.:.<br><br>
+
+~CMNatic</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 1.1. <em>Let's go!</em><br><a id='1.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br><br>
 
 <h2>Task 2 . Assets & Identities</h2>
 
