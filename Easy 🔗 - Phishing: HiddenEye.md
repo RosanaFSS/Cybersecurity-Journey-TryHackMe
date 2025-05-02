@@ -74,7 +74,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.4. <em>sudo chmod +x HiddenEye.py</em>Hint : <em>Run it with root permissions.</em><br><a id='1.4'></a>
+> 1.4. <em>sudo chmod +x HiddenEye.py</em> Hint : <em>Run it with root permissions.</em><br><a id='1.4'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -85,7 +85,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.5. <em>sudo pip3 install -r requirements.txt </em>Hint : <em>If it did not work, type "sudo apt install python3-pip" Then install the requirements again.</em><br><a id='1.5'></a>
+> 1.5. <em>sudo pip3 install -r requirements.txt </em> Hint : <em>If it did not work, type "sudo apt install python3-pip" Then install the requirements again.</em><br><a id='1.5'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -103,7 +103,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.6. <em>sudo ./HiddenEye.py -f </em>Hint : <em>It will install Ngrok and all other dependencies.</em><br><a id='1.6'></a>
+> 1.6. <em>sudo ./HiddenEye.py -f </em> Hint : <em>It will install Ngrok and all other dependencies.</em><br><a id='1.6'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -114,7 +114,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.7. <em>It will ask to install LOCALTUNNEL, Enter N.</em>Hint : <em>Choosing not to download LOCALTUNNEL as most of the time it does not work.</em><br><a id='1.7'></a>
+> 1.7. <em>It will ask to install LOCALTUNNEL, Enter N.</em> Hint : <em>Choosing not to download LOCALTUNNEL as most of the time it does not work.</em><br><a id='1.7'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -125,7 +125,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 <br>
 
 
-> 1.8. <em>Please state Y to use this tool for educational/testing purposes ONLY.</em>Hint : <em>Use the exact numbers only. for Example use 02 instead of 2.</em><br><a id='1.8'></a>
+> 1.8. <em>Please state Y to use this tool for educational/testing purposes ONLY.</em> Hint : <em>Use the exact numbers only. for Example use 02 instead of 2.</em><br><a id='1.8'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -152,7 +152,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 <br>
 
 
-> 1.10. <em>Choose whether you want to add a key logger or not.</em>Hint : <em>Key logger will log every single word the victim types.</em><br><a id='1.10'></a>
+> 1.10. <em>Choose whether you want to add a key logger or not.</em> Hint : <em>Key logger will log every single word the victim types.</em><br><a id='1.10'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -184,7 +184,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.13. <em>Enter a custom redirect link. </em>Hint <em>This will redirect the user to any page after submitting their credentials. *https://example.com*</em><br><a id='1.12'></a>
+> 1.13. <em>Enter a custom redirect link. </em> Hint: <em>This will redirect the user to any page after submitting their credentials. *https://example.com*</em><br><a id='1.12'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -204,7 +204,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.15. <em>You can select any server to use.</em>Hint : <em>Ngrok is your best choice for great results.</em><a id='1.15'></a>
+> 1.15. <em>You can select any server to use.</em> Hint : <em>Ngrok is your best choice for great results.</em><a id='1.15'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -214,7 +214,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 1.16. <em>Two links will be provided, copy the link and send it to your target. {Educational Purposes Only}</em>Hint : <em>Copy the link other than the localhost link.</em><a id='1.16'></a>
+> 1.16. <em>Two links will be provided, copy the link and send it to your target. {Educational Purposes Only}</em> Hint : <em>Copy the link other than the localhost link.</em><a id='1.16'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
@@ -231,7 +231,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-> 2.1. <em>I've deployed my instance and ensured I am connected to the THM VPN!</em>Hint : <em>Do not copy the localhost link.</em><br><a id='2.1'></a>
+> 2.1. <em>I've deployed my instance and ensured I am connected to the THM VPN!</em> Hint : <em>Do not copy the localhost link.</em><br><a id='2.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
