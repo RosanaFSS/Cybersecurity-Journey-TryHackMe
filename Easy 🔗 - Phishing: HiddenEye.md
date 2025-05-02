@@ -311,95 +311,143 @@ This task will help you understand the difference between a legit/official page 
 
 <br>
 
+![image](https://github.com/user-attachments/assets/e5b2a303-4359-4b23-a712-c9c922902767)
+
 
 <br>
 
-
-
-
-<h2>Task 4 . </h2>
-
-
-
-
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+![image](https://github.com/user-attachments/assets/9b404d0f-68ca-4682-b77d-38fc4c9b6ce3)
 
 <br>
 
-> 6.1. <em>Navigate to the "Details" tab, what is the other filename and extension reported as present?</em><br><a id='6.1'></a>
->> <strong><code>HxD.exe</code></strong><br>
+> 3.6. <em>And choose option 02, to create Gmail fake page.</em><br><a id='3.6'></a>
+>> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
 
-<p>Navigated to <code>VirusTotal</code> using the link provided in the walkthrough: https://www.virustotal.com/gui/file/6f870c80361062e8631282d31a16872835f7962222457730bc55676a61ad1ee0/details.</p>
+![image](https://github.com/user-attachments/assets/fb318f26-79cf-4cbd-baeb-8fb281a53766)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/9eae83eb-df4c-4957-9e19-a7b5b83328d8)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/207520c4-8731-4e94-bfbf-baa4bac0dfd3)
-
-
-<br>
-
-
-> 6.2. <em>In the same "Details" tab, what is the reported compilation timestamp?</em><br><a id='6.2'></a>
->> <strong><code>2020-02-28 11:16:36 UTC</code></strong><br>
+> 3.7. <em>Three options will be provided. Choose Standard Page Phishing.</em> Hint : <em>Explore the other two options.</em><br><a id='3.7'></a>
+>> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/5962cc3f-3136-4153-89e9-3fd1d6ac89fb)
-
+![image](https://github.com/user-attachments/assets/02747231-e4bc-4b16-9904-dd695fa0cd7c)
 
 <br>
 
-> 6.3. <em>What is the THM{} formatted flag on the report?</em>Hint : <em>Look through the tabs!</em><br><a id='6.3'></a>
->> <strong><code>HM{TryHackMe_Malware_Series_Research_Flag}</code></strong><br>
+![image](https://github.com/user-attachments/assets/07e0e385-5437-4ef8-9717-458c461b5d77)
+
+
+> 3.8. <em>As I explained in Task 1, the next options are optional.</em> Hint : <em>Better to use CloudFlare and port 8080.</em><br><a id='3.8'></a>
+>> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/f8cb210b-1641-446c-9720-d2450d4000cb)
+![image](https://github.com/user-attachments/assets/a468ab07-4f6f-4de0-ac77-163baf7be0d5)
 
+<br>
+
+
+> 3.9. <em>Use option 1 Ngrok as a server. </em><br><a id='3.9'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/29771802-1e88-4c2d-a0e6-545611543618)
+
+
+
+<br>
+
+> 3.10. <em>Task 2, copy NGROK URL and mask it. </em><br><a id='3.10'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+
+> 3.11. <em>Task 2, copy NGROK URL and mask it. </em><br><a id='3.11'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+
+> 3.12. <em>Send the masked link to the target.</em><br><a id='3.12'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+
+> 3.13. <em>I used a fake login details email: TryHackMeTest and Password: Test1 as an example just to show how it works.</em> Hint : <em>This is what the target will see when they click on the link you sent.</em><br><a id='3.13'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1003bff5-46db-4ef8-abbf-399d09c532f0)
+
+
+<br>
+
+
+> 3.14. <em>After the targets enters the login details and hit NEXT, the data will be visible to us in our terminal. </em> Hint : <em>Educational Purposes ONLY.</em><br><a id='3.13'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2697a123-891b-4fdc-847e-4936c52bfd58)
+
+
+
+<br>
+
+
+> 3.15. <em>And thats all, we have got the target's login details !!!</em><br><a id='3.15'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+
+<br>
+
+
+> 3.16. <em>What will you use this tool for?</em> Hint :<em>Use it for Educational Purposes ONLY.</em><br><a id='3.16'></a>
+>> <strong><code>Educational Purposes</code></strong><br>
+<p></p>
+
+<br>
+
+
+> 3.17. <em>What is the weakest link in cyber-security? </em> Hint :<em>Hu_a_s</em><br><a id='3.17'></a>
+>> <strong><code>Humans</code></strong><br>
+<p></p>
+
+<br>
+
+
+> 3.18. <em>Do most phishing pages have HTTPS (Yay/Nay)?</em><br><a id='3.18'></a>
+>> <strong><code>Yay</code></strong><br>
+<p></p>
 
 <br>
 <br>
 
-<h2>Task 7 . Future Reading (References)</h2>
-
-<h3>Cryptography and Cheskcums</h3>
-<p align="left">- <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=1020&context=etd_projects">A Meaningful MD5 Hash Collision Attack</a> - (Narayana D. Kashyap., 2008)</p>
-<p align="left">- <a href="https://dl.acm.org/doi/book/10.5555/1209579">Cryptography & Network Security</a> - Cryptography & Network Security</p>
-<p align="left">- <a href="https://shattered.io/static/shattered.pdf">The first collision for full SHA-1</a> - - (Stevens et al., 2017) / (Shattered.io)</p>
-
-<h3>Blog (Selfless Promo)</h3>
-<p align="left">- <a href="https://blog.cmnatic.co.uk/posts/so-you-want-to-analyse-malware/">So you want to analyse malware?</a></p>
-
-
-<h3>Sandboxes Engine</h3>
-<p align="left">- <a href="https://any.run/">any.run</a></p>
-<p align="left">- <a href="https://hybrid-analysis.com/">hubrid.analysis</a></p>
-
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
-
-<br>
-
-> 7.1. <em>Thanks! I'll stay tuned for more.</em><br><a id='7.1'></a>
->> <code><strong>NO answer needed</strong></code>
-
-
-<br>
-<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="1000px" src="https://github.com/user-attachments/assets/83784394-9ede-440b-a383-7b407b843dcd"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/e2895dc1-33bb-4718-a263-de2aa88dc9ed"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/35b927fd-cf51-486a-a8c2-b782280fbd7c"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/f0715423-2415-4107-85ee-29588e3e8541"></p>
 
 <br>
 
