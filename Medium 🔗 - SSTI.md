@@ -42,9 +42,10 @@ This means that vulnerabilities are even more critical, because instead of an ac
 The possibilities are endless, however the main goal is typically to gain remote code execution.</p>
 
 <h3>Deploy!</h3>
+
 <p>Deploy the virtual machine associated with this lab and follow along as we exploit SSTI together!<br><br>
 
-You can access the web server by navigating to <code>http://XX.XX.XXX.XXX::5000.<br><br>
+You can access the web server by navigating to <code>http://XX.XX.XXX.XXX::5000</code>.<br><br>
 
 Note: The endpoint / does not exist, and you will receive a 404 error.</p>
 
