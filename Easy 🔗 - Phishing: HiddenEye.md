@@ -16,33 +16,89 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/phishinghiddeneye"
 
 
 <h2>Task 1 . Installation & Creating your first phishing page!</h2>
-<p>Preface:<br><br>
+<p><code>Hidden Eye</code>  is a Modern Phishing Tool with Advanced Functionality And Multiple Tunneling Services {Android-Support-Available}. Supports over 34 pages to clone and phish. Also, supports key loggers.</p>
 
-Welcome to 2. MP: Research section of my malware analysis series. <br><br>
+<p>Clone the following github page:<br><br>
+Previous version link: <code>https://github.com/DarkSecDevelopers/HiddenEye.git</code> <br><br>
+Updated link: <code>https://gitlab.com/an0nud4y/HiddenEye</code></p>
 
- 
 
-Although we will be covering some cryptography theory, I've kept it relevant and visualised it as best I can. I've provided some resources at the end of the room in the "Further Reading" task for each of the topics covered. <br><br>
+<p>Enjoy the room and use it for educational/testing purposes ONLY.</p>
 
-You can expect to learn about file checksums, why these values are important in not only day-to-day life but more so how we can utilise them in malware analysis. The first few tasks are theory-heavy, so bear with me. However, towards the end of the room, you will be generating your own checksums, learning how to use online sandboxing, and analysing the reports generated from these.<br><br>
+<p>Questions? Twitter: i7m4d</p>
 
-.:.<br><br>
+<p>Special Thanks to MuirlandOracle for helping me polish this amazing room !<br><br>
 
-As always, any feedback regarding the content covered through the series so far is greatly appreciated. I always welcome ideas of topics, tools, and techniques that could be covered.<br><br>
+Check out his blog at https://muirlandoracle.co.uk/ </p>
 
-.:.<br><br>
-
-~CMNatic</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
 <br>
 
-> 1.1. <em>Let's go!</em><br><a id='1.1'></a>
+> 1.1. <em>cd to your preferred location </em><br><a id='1.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
-<br><br>
+<br>
+
+> 1.2. <em>git clone https://github.com/DarkSecDevelopers/HiddenEye.git </em><br><a id='1.2'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+<p>Navigated to the <code>updated link</code> provided in the walkthrough: <code>https://gitlab.com/an0nud4y/HiddenEye</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2cd3120e-5755-4f2b-a631-90877ddb8b75)
+
+<br>
+
+<p>Cloned it.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f685729c-8528-40e6-b52b-f8bf90f1bbcc)
+
+<br>
+
+> 1.3. <em>cd HiddenEye</em><br><a id='1.3'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/286ec6ac-c530-43e1-8aaa-96cfe27e9bd3)
+
+<br>
+
+> 1.4. <em>sudo chmod +x HiddenEye.py</em>Hint : <em>Run it with root permissions.</em><br><a id='1.4'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c8698023-754b-42f0-9987-dede15d60720)
+
+
+<br>
+
+<br>
+
+> 1.5. <em>sudo pip3 install -r requirements.txt </em>Hint : <em>If it did not work, type "sudo apt install python3-pip" Then install the requirements again.</em><br><a id='1.5'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e5114e00-9a92-4146-aa68-fcd42171a889)
+
+<br>
+
+
+
 
 <h2>Task 2 . Deploy!</h2>
 
