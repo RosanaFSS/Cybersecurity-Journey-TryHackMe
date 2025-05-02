@@ -32,7 +32,7 @@ Updated link: <code>https://gitlab.com/an0nud4y/HiddenEye</code></p>
 Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 <br>
 
@@ -85,8 +85,6 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
-<br>
-
 > 1.5. <em>sudo pip3 install -r requirements.txt </em>Hint : <em>If it did not work, type "sudo apt install python3-pip" Then install the requirements again.</em><br><a id='1.5'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
@@ -97,16 +95,137 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/18b73af7-9861-4a77-af37-ed893dfb9172)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d74a0cb0-b6b9-4a02-8e14-85a76a21b255)
+
+<br>
+
+> 1.6. <em>sudo ./HiddenEye.py -f </em>Hint : <em>It will install Ngrok and all other dependencies.</em><br><a id='1.6'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ba7fac48-f208-451d-8da4-85c7d9fa93e5)
 
 
+<br>
 
-<h2>Task 2 . Deploy!</h2>
+> 1.7. <em>It will ask to install LOCALTUNNEL, Enter N.</em>Hint : <em>Choosing not to download LOCALTUNNEL as most of the time it does not work.</em><br><a id='1.7'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
 
-<p>Deploy the instance attached to this task by left-clicking the green "Deploy" button on the top-right of this task!<br><br>
+<br>
 
- 
+![image](https://github.com/user-attachments/assets/0f526966-9d05-4cf0-a6b2-1d3f5ac318bd)
 
-You are not expected to interact with the instance just yet - you will be provided credentials later on throughout the room. But please ensure you are connected to the TryHackMe OpenVPN before proceeding.</p>
+<br>
+
+
+> 1.8. <em>Please state Y to use this tool for educational/testing purposes ONLY.</em>Hint : <em>Use the exact numbers only. for Example use 02 instead of 2.</em><br><a id='1.8'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bc6d997b-352c-4a26-abc9-decd8eff0e8c)
+
+<br>
+
+
+> 1.9. <em>Choose any site to clone.</em></em><br><a id='1.9></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+<p>Chose <code>16</code>:<code>GitLab</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/67383961-8f98-4f3e-a263-58179f22b99e)
+
+
+<br>
+
+
+> 1.10. <em>Choose whether you want to add a key logger or not.</em>Hint : <em>Key logger will log every single word the victim types.</em><br><a id='1.10'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+<p>Chose <code>Y</code></p>
+
+<br>
+
+> 1.11. <em>Choose to use CLOUDFLARE Protection </em><br><a id='1.11'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/aef1f960-0614-4c4f-b4e5-10803ebb8f74)
+
+<br>
+
+<br>
+
+> 1.12. <em>It optional whether you want the data to be emailed to you.</em><br><a id='1.12'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+<p>Chose <code>N</code></p>
+
+<br>
+
+> 1.13. <em>Enter a custom redirect link. </em>Hint <em>This will redirect the user to any page after submitting their credentials. *https://example.com*</em><br><a id='1.12'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+<p>Chose to redirect to <code>Rick Astley</code> Youtube video: <code>https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw</code></p>
+
+<br>
+
+> 1.14. <em>Choose any port.</em><br>Hint : <em>Use 8080 for better results.</em><a id='1.14'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/cfe48b88-ec4b-4db8-b679-7cb2f36f7608)
+
+<br>
+
+> 1.15. <em>You can select any server to use.</em>Hint : <em>Ngrok is your best choice for great results.</em><a id='1.15'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a8dc7efa-4266-40fa-887f-7e90c49d6bd8)
+
+<br>
+
+> 1.16. <em>Two links will be provided, copy the link and send it to your target. {Educational Purposes Only}</em>Hint : <em>Copy the link other than the localhost link.</em><a id='1.16'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 2 .Masking Your Link.</h2>
+
+<p>After creating your phishing page, obviously you will not send the link provided by the tool as it is suspicious. </p>
+
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
