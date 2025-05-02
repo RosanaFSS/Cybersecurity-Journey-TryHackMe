@@ -4,7 +4,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{361}}$$-day-streak in  <a href="h
 <img width="300px" src="" alt="Your Image Badge"><br>
 <img width="200px" src=""><br></p>
 
-<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{MAL : researching}}$$</h1>
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{MAL: Researching}}$$</h1>
 <p align="center">Understanding checksums, how to generate them and their use throughout malware analysis with online sandboxing &  reporting services<br>
 It is classified an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
