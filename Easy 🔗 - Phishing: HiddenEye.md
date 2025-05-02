@@ -256,7 +256,7 @@ Check out his blog at https://muirlandoracle.co.uk/ </p>
 <br>
 <br>
 
-<h2>Task 3 . Creating 1</Gmail Phishing Page!>
+<h2>Task 3 . Creating mail Phishing Page!</h2>
 <p>It is excellent to understand what a phishing page looks like to help secure yourself from leaking your credentials by accident.<br><br>
 
 In cyber-security the weakest link is humans.<br><br>
