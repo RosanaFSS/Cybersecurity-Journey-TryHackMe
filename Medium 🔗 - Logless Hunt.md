@@ -1,16 +1,15 @@
 <p align="center">May 3, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{362}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/a05d8b96-0b6f-433d-ad76-00200da7298a" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/93512cf9-8443-4639-8359-18137e0dd1c3"><br></p>
-
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Logless Hunt}}$$</h1>
 <p align="center">Detect every attack step on a Windows machine even after threat actors cleared Security logs.<br>
 It is classified a medium-level walkthrough, , and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/loglesshunt">here</a>.</p>
 
 
-<p align="center"> <img width="900px" src=""> </p>
+<p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/b6916bf7-2f29-41c9-9805-ce569bc937d6"> </p>
 
 <br>
 
@@ -282,9 +281,80 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 
 <br>
 
+![image](https://github.com/user-attachments/assets/17633297-699a-4cc0-9e9f-8a5a1adf1dc2)
+
+
 <br>
 <br>
 
 <h2>Task 8 . Conclusion</h2>
+<h3>/h3>.Conclusion</h3>
+<p>And what was next? What did the adversary find in the Mimikatz dump? Was there any further lateral movement? Likely yes! But for now, let's return to the customer and see what they can say about the findings on HR01-SRV. Other servers have already recovered, and there will be much more work to do soon, perhaps without any logs at all!<br><br>
+
+In summary, in this room we covered:<br><br>
+
+- Basics of web access logs and their use in detecting web shell upload and usage<br>
+- Three types of PowerShell logs, their differences, and use in tracking malicious actions<br>
+- RDP session logs as a simpler, more compact alternative to the Security 4624 event ID<br>
+- Task scheduler logs, their use to build execution timeline of scheduled tasks<br>
+- Windows Defender logs, their use in malware detection and classification</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 8.1. <em>Hope you enjoyed this room! </em>.<a id='8.1'></a>
+>> <code><strong>No answer needed</strong></code><br>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+
+<p align="center">
+<img width="1000px" src="https://github.com/user-attachments/assets/638b317c-20e9-49ea-9d2c-91617db0a538"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/d7bf5131-af88-467e-a927-c68951968fa4"></p>
 
 
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
+<br>
+
+
+<div align="center">
+
+|       Date        |   Streak |   All Time   |   All Time   |   Monthly   |   Monthly  |  Points  |   Rooms   |   Badges  |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+|    May 3, 2025    |    362   |     238ᵗʰ    |      6ᵗʰ     |     371ˢᵗ   |     5ᵗʰ    |  99,411  |    705   |     60    |
+
+</div>
+
+<br>
+
+
+<p align="center"> Global All Time: 238ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/ca3fa11f-3ca4-4b3b-9cdb-9bc98da4b8df"> </p>
+
+<p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/cb35fa39-6081-4b73-a8fc-2876f7bfa9c2"> </p>
+
+<p align="center"> Global monthly:  371ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/c2e223e0-974b-4dc8-b9e9-a5fca1249528"> </p>
+
+<p align="center"> Brazil monthly:    5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/151c6579-9a21-4ed3-ac0d-2a487a65c0d8"> </p>
+
+<br>
+<br>
+
+
+<p align="center"> Weekly League:    10ᵗʰ Platinum<br><br><img width="1000px" src="https://github.com/user-attachments/assets/fd8c4162-6923-4a85-a004-83e70c070e4a"> </p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/TactfulTurtle">TactfulTurtle</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
