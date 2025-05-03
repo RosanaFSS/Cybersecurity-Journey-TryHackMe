@@ -102,6 +102,34 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 
 <h2>Task 4 . From Web to RDP | PowerShell Logs</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+> 4.1. <em>What was the first command entered by the attacker?</em>.<a id='4.1'></a>
+>> <code><strong>whoami</strong></code><br><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/21995adc-8920-4a1d-8bcc-423e67d97bdb)
+
+<br>
+
+> 4.2. <em>What is the full URL of the file that the attacker attempted to download?</em>.<a id='4.2'></a>
+>> <code><strong>http://10.10.23.190:8080/httpd-proxy.exe)</strong></code><br><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1a30f473-d0b6-4d9e-96c8-83793686d80d)
+
+<br>
+
+> 4.3. <em>What command was run to exclude the file from Windows Defender?</em>.<a id='4.3'></a>
+>> <code><strong>Add-MpPreference -ExclusionPath C:\Apache24</strong></code><br><br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7b46b75a-6caf-49fb-a579-a5117dd02007)
+
+
 <h2>Task 5 . Breached Admin | RDP Session Logs</h2>
 
 <h2>Task 6 . Persistance Traces | Scheduled Tools</h2>
