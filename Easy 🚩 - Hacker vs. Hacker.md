@@ -76,7 +76,7 @@ GENERATED WORDS: 4612
     (Use mode '-w' if you want to scan it anyway)
                                                                                                                                          
 ---- Entering directory: http://TargetIP/cvs/ ----
-+ http://10.10.46.123/cvs/index.html (CODE:200|SIZE:26)                                                                                  
++ http://TargetIP/cvs/index.html (CODE:200|SIZE:26)                                                                                  
                                                                                                                                          
 ---- Entering directory: http://TargetIP/dist/ ----
 (!) WARNING: Directory IS LISTABLE. No need to scan it.                        
@@ -125,45 +125,20 @@ Intercepted it through <code>Burp Suite</code>code></code></p>
 <br>
 
 
-<h3 align="center">fuff    |     enumerating web extensions in <code>/cvs</code></h3>
+<h3 align="center">gobuster</h3>
 
 
 ```bash
-:~/Hacker.vs.Hacker# ffuf -u http://TargetIP/cvs/indexFUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
-
-        /'___\  /'___\           /'___\       
-       /\ \__/ /\ \__/  __  __  /\ \__/       
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
-         \ \_\   \ \_\  \ \____/  \ \_\       
-          \/_/    \/_/   \/___/    \/_/       
-
-       v1.3.1
-________________________________________________
-
- :: Method           : GET
- :: URL              : http://TargetIP/cvs/indexFUZZ
- :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 40
- :: Matcher          : Response status: 200,204,301,302,307,401,403,405
-________________________________________________
-
-.phps                   [Status: 403, Size: 277, Words: 20, Lines: 10]
-.html                   [Status: 200, Size: 26, Words: 3, Lines: 1]
-:: Progress: [39/39] :: Job [1/1] :: 15 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
-                                          
+:~/Hacker.vs.Hacker# gobuster dir --url http:/TargetIP/cvs/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 60 -k -x pdf.php,php.pdf
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+...
+/shell.pdf.php        (Status: 200) [Size: 18]                                      
 ```
 
 <br>
-
-<h3 align="center">gobuster    |     enumerating the files which contains php extensiond</h3>
-
-```bash
-
-```
 
 
 ![image](https://github.com/user-attachments/assets/ba7ad885-2dad-4bd2-a6fd-3a4aef8bd519)
