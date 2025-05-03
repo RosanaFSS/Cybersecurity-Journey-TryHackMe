@@ -25,9 +25,21 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 
 <br>
 
-![image](https://github.com/user-attachments/assets/0a7edfca-56fe-41fa-8b3a-c390109a8dee)
+![image](https://github.com/user-attachments/assets/1d4c3a1d-b556-49ba-afd1-4dcc399a0756)
+
 
 <br>
+
+![image](https://github.com/user-attachments/assets/92013c6e-76b4-4931-96ca-99078596e692)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/8a3a7056-d54c-4540-b883-ce05d38db537)
+
+
+<br>
+<br>
+
 
 
 <h2>Task 3 . Scenario</h2>
