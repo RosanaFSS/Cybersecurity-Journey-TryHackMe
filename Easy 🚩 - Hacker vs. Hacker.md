@@ -285,9 +285,9 @@ thm{7b708e5224f666d3562647816ee2a1d4}
 
 <p align="center"> Brazil All Time:   6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/3ef56879-5983-4686-8bb8-27ea64d4a676"> </p>
 
-<p align="center"> Global monthly:  597ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/a7925b93-33a6-4a6c-9997-117ec6d7873d"> </p>
+<p align="center"> Global monthly:  597ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/a7925b93-33a6-4a6c-9997-117ec6d7873d"> </p>
 
-<p align="center"> Brazil monthly:    6ᵗʰ<br><br><img width="900px" src="https://github.com/user-attachments/assets/4a9fccde-6a1f-409b-b002-61267a7ab870"> </p>
+<p align="center"> Brazil monthly:    6ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/4a9fccde-6a1f-409b-b002-61267a7ab870"> </p>
 
 <br>
 <br>
