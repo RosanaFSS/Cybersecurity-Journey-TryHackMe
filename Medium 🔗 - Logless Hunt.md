@@ -57,7 +57,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 3.1. <em>What is the title of the HR01-SRV web app hosted on 80 port?</em>.<a id='3.1'></a>
->> <code><strong>Salary Raise Approver v0.1</strong></code><br><br>
+>> <code><strong>Salary Raise Approver v0.1</strong></code><br>
 
 
 <br>
@@ -68,7 +68,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <br>
 
 > 3.2. <em>Which IP performed an extensive web scan on the HR01-SRV web app?</em>.<a id='3.2'></a>
->> <code><strong>10.10.23.190</strong></code><br><br>
+>> <code><strong>10.10.23.190</strong></code><br>
 
 
 <br>
@@ -80,7 +80,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <br>
 
 > 3.3. <em>What is the absolute path to the file that the suspicious IP uploaded?</em>.<a id='3.3'></a>
->> <code><strong>C:\Apache24\htdocs\uploads\search.php</strong></code><br><br>
+>> <code><strong>C:\Apache24\htdocs\uploads\search.php</strong></code><br>
 
 <br>
 
@@ -89,7 +89,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <br>
 
 > 3.4. <em>Clearly, that's suspicious! What would you call the uploaded malware / backdoor?</em> Hint : <em>Note how the file is then repeatedly used by the attacker to achieve code execution.</em><br><a id='3.3'></a>
->> <code><strong>Web Shell</code><br><br>
+>> <code><strong>Web Shell</code><br>
 
 <br>
 
@@ -105,7 +105,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 4.1. <em>What was the first command entered by the attacker?</em>.<a id='4.1'></a>
->> <code><strong>whoami</strong></code><br><br>
+>> <code><strong>whoami</strong></code><br>
 
 <br>
 
@@ -114,7 +114,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <br>
 
 > 4.2. <em>What is the full URL of the file that the attacker attempted to download?</em>.<a id='4.2'></a>
->> <code><strong>http://10.10.23.190:8080/httpd-proxy.exe)</strong></code><br><br>
+>> <code><strong>http://10.10.23.190:8080/httpd-proxy.exe</strong></code><br>
 
 <br>
 
