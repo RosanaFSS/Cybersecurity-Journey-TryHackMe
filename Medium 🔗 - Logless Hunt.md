@@ -16,6 +16,14 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 
 <h2>Task 1 . Introduction</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 1.1. <em>Let´s begin</em>.<a id='1.1'></a>
+>> <code><strong>No answer needed</strong></code><br><br>
+
+<br>
+<br>
+
 <h2>Task 2 . Scenario</h2>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
@@ -102,6 +110,4 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 
 <h2>Task 8 . Conclusion</h2>
 
-
-![image](https://github.com/user-attachments/assets/531af264-bb6b-42aa-b672-44f07603bd58)
 
