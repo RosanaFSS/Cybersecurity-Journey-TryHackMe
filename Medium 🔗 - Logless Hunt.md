@@ -111,7 +111,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 
 ![image](https://github.com/user-attachments/assets/21995adc-8920-4a1d-8bcc-423e67d97bdb)
 
-<br>
+<br> 
 
 > 4.2. <em>What is the full URL of the file that the attacker attempted to download?</em>.<a id='4.2'></a>
 >> <code><strong>http://10.10.23.190:8080/httpd-proxy.exe</strong></code><br>
