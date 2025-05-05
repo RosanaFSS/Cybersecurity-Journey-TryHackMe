@@ -7,14 +7,18 @@ Day 136<br>
 
 <br>
 
+
+
+![Captura de tela 2024-09-19 191140](https://github.com/user-attachments/assets/b4a7a6b0-eb8a-4471-8148-3cd2046017fb)
+
+<br>
+
+
 ![Captura de tela 2024-09-19 191257](https://github.com/user-attachments/assets/a2a81014-f4f4-4582-a80f-5157e8ead9e1)
 
 
 <br>
 
-![Captura de tela 2024-09-19 195238](https://github.com/user-attachments/assets/886f6bad-5a1c-41e8-b938-607cfcada981)
-
-<br>
 
 ![Captura de tela 2024-09-19 191807](https://github.com/user-attachments/assets/af0d2107-9d7a-4d0f-9898-73e48e8be19e)
 
