@@ -8,13 +8,6 @@ Day 126<br>
 <br>
 
 
-![image](https://github.com/user-attachments/assets/69ab5862-f765-4150-8e4a-fcece81e43b1)
-
-
-
-<br>
-
-
 ![Captura de tela 2024-09-09 180844](https://github.com/user-attachments/assets/17e3ac78-de14-4d47-b056-d7da39c33d4c)
 
 <br>
