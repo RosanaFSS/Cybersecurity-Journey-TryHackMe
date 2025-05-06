@@ -125,6 +125,8 @@ Day 135<br>
 
 ![Captura de tela 2024-09-18 010318](https://github.com/user-attachments/assets/1452e02a-7b64-41d0-bbab-f3a5dd3fc1ef)
 
+<br>
+<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
 <br>
