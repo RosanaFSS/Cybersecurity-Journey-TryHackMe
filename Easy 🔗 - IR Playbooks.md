@@ -26,6 +26,11 @@ Day 131<br>
 
 <br>
 
+![Captura de tela 2024-09-14 111323](https://github.com/user-attachments/assets/6fe4a254-7fe2-4ac0-9ee4-d984331cb5c1)
+
+
+<br>
+
 Brazil All Time:  50ᵗʰ <br>
 
 ![Captura de tela 2024-09-14 111840](https://github.com/user-attachments/assets/952a154c-a70c-449d-81cb-753fc705e01a)
@@ -36,10 +41,6 @@ Brazil All Time:  50ᵗʰ <br>
 
 
 Global Monthly: 1,784ᵗʰ<br>
-
-![Captura de tela 2024-09-14 111323](https://github.com/user-attachments/assets/6fe4a254-7fe2-4ac0-9ee4-d984331cb5c1)
-
-<br>
 
 ![Captura de tela 2024-09-14 111357](https://github.com/user-attachments/assets/eb94a4e5-4aba-43aa-8ae8-938ef213aa8e)
 
