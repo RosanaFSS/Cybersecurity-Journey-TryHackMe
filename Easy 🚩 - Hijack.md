@@ -1,3 +1,12 @@
+September 18, 2024<br>
+Day 135<br>
+
+
+<h1>Hijack</h1>
+
+![Captura de tela 2024-09-18 010318](https://github.com/user-attachments/assets/c1a3b198-532c-4132-bb3a-3c5d2475656b)
+
+<br>
 
 
 ![Captura de tela 2024-09-17 223119](https://github.com/user-attachments/assets/737f046e-3748-4b6b-9f82-93a392c5aa08)
