@@ -46,6 +46,8 @@ Global Monthly: 1,784ᵗʰ<br>
 
 <br>
 
+Brazil Montly:  24ᵗʰ <br>
+
 ![Captura de tela 2024-09-14 111519](https://github.com/user-attachments/assets/f52e564b-f038-4ea4-af0a-82edb5626a0e)
 
 
