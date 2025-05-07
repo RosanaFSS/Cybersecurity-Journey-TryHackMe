@@ -456,6 +456,16 @@ THM{d4f76179c80c0dcf46e0f8e43c9abd62}
 <br>
 <br>
 
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Module Completed: Starters}}$$</h1>
+<br>
+<p align="center">
+<img width="1000px" src="https://github.com/user-attachments/assets/47c279e1-029d-4b23-a4c3-d626527b1a33"></p>
+
+
+<br>
+<br>
+
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
