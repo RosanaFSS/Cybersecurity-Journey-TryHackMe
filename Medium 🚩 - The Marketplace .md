@@ -459,7 +459,7 @@ THM{d4f76179c80c0dcf46e0f8e43c9abd62}
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
-<img width="1000px" src=https://github.com/user-attachments/assets/a723b82d-8bbc-4536-bfe4-7e3a5501852f"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/a723b82d-8bbc-4536-bfe4-7e3a5501852f"><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/764d17f7-4c7d-4218-8e4d-71755c30f4c8"></p>
 
 
