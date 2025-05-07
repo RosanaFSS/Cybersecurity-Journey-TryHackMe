@@ -14,7 +14,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/sqhell</a>.</p>
 <br>
 <br>
 
-<h2>Task 1 . Find all the Fçags!</h2>
+<h2>Task 1 . Find all the Flags!</h2>
 <p>Give the machine a minute to boot and then connect to http://MACHINE_IP<br><br>
 
 There are 5 flags to find but you have to defeat the different SQL injection types.<br><br>
