@@ -54,8 +54,16 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsiamenumeration"
 <br>
 
 
+<p align="center"> Weekly League [ Diamond ]:    16ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/3166dbdd-8a6f-437a-8cf5-8e6c415ce1f2"> </p>
 
-![image](https://github.com/user-attachments/assets/3166dbdd-8a6f-437a-8cf5-8e6c415ce1f2)
+<br>
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
 
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/wesladd">wesladd</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
