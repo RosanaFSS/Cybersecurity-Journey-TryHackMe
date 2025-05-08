@@ -20,9 +20,16 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsiamenumeration"
 
 <br>
 
-https://medium.com/@RosanaFS/aws-iam-enumeration-tryhackme-walkthrough-d2a66ffc35ef
+<br>
 
-![image](https://github.com/user-attachments/assets/94f428ab-14b9-494d-b56c-2f50e3d5d140)
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/94f428ab-14b9-494d-b56c-2f50e3d5d140"> </p>
+
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/5023dcb2-0a08-4885-9a63-d7e14662ce84"> </p>
+
+<br>
+
 
 
 ![image](https://github.com/user-attachments/assets/5023dcb2-0a08-4885-9a63-d7e14662ce84)
