@@ -10,6 +10,9 @@
 
 <br>
 
+
+https://medium.com/@RosanaFS/aws-iam-enumeration-tryhackme-walkthrough-d2a66ffc35ef
+
 ![image](https://github.com/user-attachments/assets/94f428ab-14b9-494d-b56c-2f50e3d5d140)
 
 
