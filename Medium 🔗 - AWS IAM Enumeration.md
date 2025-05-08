@@ -29,32 +29,31 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsiamenumeration"
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/5023dcb2-0a08-4885-9a63-d7e14662ce84"> </p>
 
 <br>
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
+<div align="center">
 
-![image](https://github.com/user-attachments/assets/5023dcb2-0a08-4885-9a63-d7e14662ce84)
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |   Global     |   Brazil     |   Global    |   Brazil   |          | Completed |           |
+| May 8, 2025       | 367      |    232ⁿᵈ     |        5ᵗʰ   |   626ᵗʰ     |    11ˢᵗ    |  100,373 |       716 |   62      |
+
+</div>
+
+<p align="center"> Global All Time:  232ⁿᵈ <br><br><img width="1000px" src="https://github.com/user-attachments/assets/0f7b8186-87bd-48db-ac92-cf230d32a841"> </p>
+
+<p align="center"> Brazil All Time: 5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/93b3503f-fbe2-43c7-9a9b-62e00d6a80af"> </p>
+
+<p align="center"> Global monthly: 626ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5476b261-ad21-4e99-9cda-7dfcdedb5ae7"> </p>
+
+<p align="center"> Brazil monthly: 11ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/4dac251d-0e75-4720-9bb6-ed51b2182087"> </p>
 
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/0f7b8186-87bd-48db-ac92-cf230d32a841)
 
-<br>
-
-![image](https://github.com/user-attachments/assets/93b3503f-fbe2-43c7-9a9b-62e00d6a80af)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/5476b261-ad21-4e99-9cda-7dfcdedb5ae7)
-
-
-<br>
-
-![image](https://github.com/user-attachments/assets/4dac251d-0e75-4720-9bb6-ed51b2182087)
-
-
-<br>
-<br>
 
 ![image](https://github.com/user-attachments/assets/3166dbdd-8a6f-437a-8cf5-8e6c415ce1f2)
 
