@@ -1,15 +1,24 @@
+<p align="center">May 8, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{366}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="https://github.com/user-attachments/assets/5de7e45c-ca16-4810-9e30-0def642b4821" alt="Your Image Badge"><br>
+<img width="200px" src="https://github.com/user-attachments/assets/182be5a0-6470-4121-abd5-6374db6e48ff" alt="streak"><br></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{AWS IAM Enumeration}}$$</h1>
+<p align="center"><em>Attacking and Defending AWS → IAM Privilege Escalation → AWS IAM Enumeration → 1 of 2. Learn enumerating IAM Principals and implemented services.</em>.<br>
+It is classified as a medium-level walkthrough.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/awsiamenumeration">here</a>.</p>
 
-![image](https://github.com/user-attachments/assets/5de7e45c-ca16-4810-9e30-0def642b4821)
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bfc7a924-287e-4c05-a8b5-cbe2418e7fea"> </p>
 
-
-![image](https://github.com/user-attachments/assets/182be5a0-6470-4121-abd5-6374db6e48ff)
-
-
-
-![image](https://github.com/user-attachments/assets/bfc7a924-287e-4c05-a8b5-cbe2418e7fea)
 
 <br>
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Walkthrough}}$$</h1>
+<p align="center">Click <a href="https://medium.com/@RosanaFS/aws-iam-enumeration-tryhackme-walkthrough-d2a66ffc35ef">here</a> to read my complete walkthrough in Medium.</p>
+
+<br>
 
 https://medium.com/@RosanaFS/aws-iam-enumeration-tryhackme-walkthrough-d2a66ffc35ef
 
