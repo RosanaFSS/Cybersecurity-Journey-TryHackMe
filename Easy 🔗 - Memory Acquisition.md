@@ -12,12 +12,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/memoryacquisition"
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bd4c55f5-e5be-4f48-b8c5-0c696dfb6a8a"> </p>
 
 <br>
-<br>
-
-<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Walkthrough}}$$</h1>
-<p align="center">Click <a href="">here</a> to read my complete walkthrough in Medium.</p>
-
-<br>
 
 <br>
 
