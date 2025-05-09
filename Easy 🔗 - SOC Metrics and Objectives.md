@@ -71,5 +71,5 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/socmetricsobjectiv
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
-<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/wesladd">wesladd</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/TactfulTurtle">TactfulTurtle</a> for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
 
