@@ -1,7 +1,7 @@
 <p align="center">May 8, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{367}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/46b7b06f-7ab9-450a-9b16-209ea2b0dc0d" alt="Your Image Badge"><br>
+<img width="300px" src="https://github.com/user-attachments/assets/73e7932a-ec1b-44b9-9638-de57a0af5a57" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/182be5a0-6470-4121-abd5-6374db6e48ff" alt="streak"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{SOC Metrics and Objectives}}$$</h1>
 <p align="center"><em>Explore key metrics driving SOC effectiveness and discover ways to improve them</em>.<br>
@@ -10,10 +10,6 @@ It is premium: only for subscribers.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/socmetricsobjectives">here</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8b7907f3-4637-48e6-ba8d-4eb3f3a09821"> </p>
-
-
-![image](https://github.com/user-attachments/assets/73e7932a-ec1b-44b9-9638-de57a0af5a57)
-
 
 <br>
 <br>
