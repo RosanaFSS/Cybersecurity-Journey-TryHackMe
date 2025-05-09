@@ -9,8 +9,7 @@ It is classified as an easy-level walkthrough.<br>
 It is premium: only for subscribers.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/socmetricsobjectives">here</a>.</p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/71a8a908-9655-441d-acb3-34fe072f9478"> </p>
-
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8b7907f3-4637-48e6-ba8d-4eb3f3a09821"> </p>
 
 
 <br>
