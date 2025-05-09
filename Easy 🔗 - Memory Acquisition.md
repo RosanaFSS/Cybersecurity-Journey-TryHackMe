@@ -2,7 +2,7 @@
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{368}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/8427818b-cd39-403e-b2e1-7e7f82ff1ee6" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/182be5a0-6470-4121-abd5-6374db6e48ff" alt="streak"><br></p>
+<img width="200px" src="https://github.com/user-attachments/assets/fd1ff8c2-73f1-4a65-8d38-2b2d9cbcaf21" alt="streak"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Memory Acquisition}}$$</h1>
 <p align="center"><em>Learn the techniques and best practices to acquire digitally sound memory.</em>.<br>
 It is classified as an easy-level walkthrough.<br>
@@ -10,7 +10,6 @@ It is premium: only for subscribers.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/memoryacquisition">here</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bd4c55f5-e5be-4f48-b8c5-0c696dfb6a8a"> </p>
-
 
 <br>
 <br>
@@ -58,7 +57,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/memoryacquisition"
 <br>
 
 
-<p align="center"> Weekly League [ Diamond ]:    12ⁿᵈ<br><br><img width="1000px" src=""> </p>
+<p align="center"> Weekly League [ Diamond ]:    12ⁿᵈ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/fc4f7790-7aab-4e54-ab8a-a69255e82000"> </p>
+
 
 <br>
 <br>
