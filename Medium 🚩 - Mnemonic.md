@@ -48,7 +48,7 @@ https://www.youtube.com/watch?v=pBSR3DyobIY</p>
 
 <h3 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h3>
 
-<p align="center">There are have 3 ports open: <code>21/ftp</code>, <code>80/tcp</code> and <code>1337/ssh</code>. </p>
+<p align="center">There are have 3 ports open: <code>21/ftp</code>, <code>80/http</code> and <code>1337/ssh</code>. </p>
 
 ```bash
 nmap -sC -sV -Pn -p- -T4 TargetIP
@@ -59,7 +59,7 @@ PORT     STATE SERVICE VERSION
 | http-robots.txt: 1 disallowed entry 
 |_/webmasters/*
 |_http-server-header: Apache/2.4.29 (Ubuntu)
-|_http-title: Site doesn't have a title (text/html).
+|_http-title: Site doesn't have a title (text/html)
 1337/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
 ...
