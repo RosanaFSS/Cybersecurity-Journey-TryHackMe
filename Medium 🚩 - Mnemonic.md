@@ -46,7 +46,7 @@ https://tryhackme.com/room/mnemonic<br>
 <br>
 
 
-<h2 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h2>
+<h3 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h3>
 
 <p align="center">There are have 3 ports open: <code>21/ftp</code>, <code>80/tcp</code> and <code>1337/ssh</code>. </p>
 
