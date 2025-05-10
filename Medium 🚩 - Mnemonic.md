@@ -257,9 +257,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-05-10 03:05:
 ```
 
 <br>
+<br>
 
 > 3.3. <em>What is the ssh username?</em><a id='3.3'></a>
->> <code><strong>_____</strong></code><br>
+>> <code><strong>james</strong></code><br>
 
 <br>
 
