@@ -1,5 +1,8 @@
-May 9, 2025<br>
-Day 368<br>
+May 10, 2025<br>
+Day 369<br>
+
+![image](https://github.com/user-attachments/assets/b9685fff-7fb0-4c80-bc24-0057ea686289)
+
 
 <h1>Mnemonic</h1>
 
