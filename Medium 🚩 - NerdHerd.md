@@ -216,7 +216,7 @@ function alertFunc() {
 ```
 
 
-<h2 align="center">$$\textcolor{white}{\textnormal{[http://TargetIP:1337](https://www.youtube.com/watch?v=9Gc4QTqslN4)}}$$</h2>
+<h2 align="center">$$\textcolor{white}{\textnormal{Youtube}}$$</h2>
 
 ![image](https://github.com/user-attachments/assets/1fe91c07-98a9-4bbd-b65b-1428d04467f3)
 
