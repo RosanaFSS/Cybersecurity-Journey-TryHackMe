@@ -3,6 +3,20 @@ Day 368<br>
 
 <h1>NerdHerd</h1>
 
+https://tryhackme.com/room/nerdherd<br>
+
+![image](https://github.com/user-attachments/assets/7fa43ea1-b728-4cc7-b018-31e429c30629)
+
+<br>
+
+
+
+
+![image](https://github.com/user-attachments/assets/2f093892-fa55-4536-95ae-34a83a5271f1)
+
+
+
+
 <br>
 <br>
 
@@ -453,6 +467,62 @@ chuck@nerdherd:~$ pwd
 chuck@nerdherd:~$ ls
 Desktop    Downloads         Music                Pictures  Templates  Videos
 Documents  examples.desktop  nerdherd_classified  Public    user.txt
+chuck@nerdherd:~$ ls -la
+total 192
+drwxr-xr-x 19 chuck chuck  4096 May 10 04:05 .
+drwxr-xr-x  4 root  root   4096 Eyl 11  2020 ..
+-rwxrwxr-x  1 chuck chuck 13728 May 10 03:59 45010.c
+-rw-------  1 chuck chuck   742 Kas  5  2020 .bash_history
+-rw-r--r--  1 chuck chuck   220 Eyl 11  2020 .bash_logout
+-rw-r--r--  1 chuck chuck  3771 Eyl 11  2020 .bashrc
+drwx------ 14 chuck chuck  4096 Eyl 14  2020 .cache
+drwx------  3 chuck chuck  4096 Eyl 11  2020 .compiz
+drwx------ 15 chuck chuck  4096 Kas  5  2020 .config
+drwxr-xr-x  2 chuck chuck  4096 Kas  5  2020 Desktop
+-rw-r--r--  1 chuck chuck    25 Eyl 11  2020 .dmrc
+drwxr-xr-x  2 chuck chuck  4096 Eyl 11  2020 Documents
+drwxr-xr-x  3 chuck chuck  4096 Eyl 11  2020 Downloads
+-rw-r--r--  1 chuck chuck  8980 Eyl 11  2020 examples.desktop
+-rwxrwxr-x  1 chuck chuck 18432 May 10 04:05 exploit
+-rwxrwxr-x  1 chuck chuck 18432 May 10 04:03 expoit
+drwx------  2 chuck chuck  4096 Eki 19  2020 .gconf
+drwx------  3 chuck chuck  4096 Kas  5  2020 .gnupg
+-rw-------  1 chuck chuck  4564 Kas  5  2020 .ICEauthority
+drwx------  3 chuck chuck  4096 Eyl 11  2020 .local
+drwx------  4 chuck chuck  4096 Eyl 11  2020 .mozilla
+drwxr-xr-x  2 chuck chuck  4096 Eyl 11  2020 Music
+drwxrwxr-x  2 chuck chuck  4096 Eyl 11  2020 .nano
+drwxr-xr-x  2 root  root   4096 Eyl 11  2020 nerdherd_classified
+drwxr-xr-x  2 chuck chuck  4096 Eyl 11  2020 Pictures
+-rw-r--r--  1 chuck chuck   655 Eyl 11  2020 .profile
+drwxr-xr-x  2 chuck chuck  4096 Eyl 11  2020 Public
+-rw-r--r--  1 chuck chuck     0 Eyl 11  2020 .sudo_as_admin_successful
+drwxr-xr-x  2 chuck chuck  4096 Eyl 11  2020 Templates
+-rw-rw-r--  1 chuck chuck    46 Eyl 14  2020 user.txt
+drwxr-xr-x  2 chuck chuck  4096 Eyl 11  2020 Videos
+-rw-------  1 root  root    511 Eyl 11  2020 .viminfo
+-rw-------  1 chuck chuck    53 Kas  5  2020 .Xauthority
+-rw-------  1 chuck chuck    82 Kas  5  2020 .xsession-errors
+-rw-------  1 chuck chuck    82 Kas  5  2020 .xsession-errors.old
+chuck@nerdherd:~$ strings .bash_history
+exit
+exit
+exit
+ifconfig 
+clear
+ftp localhost
+clear
+cd /Desk
+cd /home/chuck/Desktop/
+clear
+ftp localhost
+service restart ftp
+service ftpd restart
+why are you looking at my logs????
+clear
+ftp localhost
+restart
+reboot
 chuck@nerdherd:~$ cat user.txt
 THM{7fc91d70e22e9b70f98aaf19f9a1c3ca710661be}
 chuck@nerdherd:~$ 
@@ -473,6 +543,10 @@ chuck@nerdherd:~$ uname -r
 
 
 <h2 align="center">$$\textcolor{white}{\textnormal{ExploitDB}}$$</h2>
+
+<p>CVE-2017-16995</p>
+
+<br>
 
 ```bash
 http://www.exploit-db.com/exploits/45010
@@ -549,6 +623,78 @@ nOOt nOOt! you've found the real flag, congratz!
 
 THM{5c5b7f0a81ac1c00732803adcee4a473cf1be693}
 # 
-
-
 ```
+
+<br>
+
+<h2 align="center">$$\textcolor{white}{\textnormal{.bash_history}}$$</h2>
+
+```bash
+# cat .bash_history
+...
+rm creds.html 
+nano creds.txt 
+cd ..
+cd pu
+cd ftp/
+cd pub/
+ls -la
+cp youfoundme.png /home/chuck/Desktop/
+ls -la
+rm youfoundme.png 
+THM{a975c295ddeab5b1a5323df92f61c4cc9fc88207}
+mv /home/chuck/Downloads/youfoundme.png .
+rm youfoundme.png 
+mv /home/chuck/Downloads/youfoundme.png .
+clear
+...
+```
+
+<br>
+<br>
+
+<h1>Room Completed</h1>
+
+![image](https://github.com/user-attachments/assets/cabfb6d5-d54d-49b9-9c9b-ad044f72014b)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6d90054e-d65b-4f36-b189-10680f9f83c5)
+
+<br>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |Global        | Brazil       | Global      | Brazil     |          | Completed |           |
+| May 9, 2025       | 368      |     231ˢᵗ    |        5ᵗʰ   |   419ᵗʰ     |     8ᵗʰ    |100,723   |       721 |   62      |
+
+</div>
+
+
+![image](https://github.com/user-attachments/assets/f5c00ea6-15df-4a4b-aa30-2390c63cd422)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9018e14b-bdb5-4737-b6a3-43b0e5d222b5)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/73d78a0e-69af-42e0-88bd-715e41d92501)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ade772a3-9ca3-4a9c-b1cc-341b6b273564)
+
+
+<br>
+<br>
+
+
+![image](https://github.com/user-attachments/assets/f1df0a66-28f2-4b8a-8885-5fe79bf9ca03)
+
+
+
+
