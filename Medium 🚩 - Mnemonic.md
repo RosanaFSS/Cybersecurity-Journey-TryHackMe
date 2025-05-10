@@ -19,8 +19,8 @@ https://tryhackme.com/room/mnemonic<br>
 <h2>Task 1 . Mnemonic</h2>
 
 <h3>Hit me!</h3>
-<p>You need 1 things : hurry up<br><br>
-  https://www.youtube.com/watch?v=pBSR3DyobIY</p>
+<p>You need 1 things : hurry up<br>
+https://www.youtube.com/watch?v=pBSR3DyobIY</p>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
