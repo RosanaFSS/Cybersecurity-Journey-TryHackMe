@@ -84,10 +84,15 @@ PORT     STATE SERVICE VERSION
 <br>
 
 <h3 align="center">$$\textcolor{white}{\textnormal{http://TargetIP/robots.txt}}$$</h3>
-<p align="center"><code>Dissalow: /work</code></p>
+<p align="center"><code>Dissalow: /webmasters/*</code></p>
 
 
 ![image](https://github.com/user-attachments/assets/a58d7b7e-5495-4542-abb5-55ac60c0a747)
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{Gobuster x http://TargetIP/webmasters/}}$$</h3>
+<p align="center"><code>/admin/</code> and <code>/backups/</code></p>
 
 <br>
 
@@ -105,6 +110,11 @@ Finished
 ===============================================================
 ```
 
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{Gobuster x http://TargetIP/webmasters/backups/}}$$</h3>
+<p align="center"><code>backups.zip</code> and <code>index.html</code></p>
 
 <br>
 
@@ -128,7 +138,7 @@ Starting gobuster in directory enumeration mode
 ...
 /backups.zip          (Status: 200) [Size: 409]
 /index.html           (Status: 200) [Size: 0]
-/index.html           (Status: 200) [Size: 0]
+...
 ```
 
 <br>
