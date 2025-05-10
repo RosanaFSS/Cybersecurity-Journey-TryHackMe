@@ -8,7 +8,7 @@ Day 368<br>
 
 <h2 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h2>
 
-<p align="center">There are have 2 ports open: <code>22/tcp</code> and <code>80/tcp</code>. </p>
+<p align="center">There are have 4 ports open: <code>21/ftp</code>, <code>22/ssh</code>, <code>139/smbd</code> and <code>445/smdb</code>. </p>
 
 ```bash
 ~# nmap -sC -sV -sS -A -O TargetIP
