@@ -75,14 +75,14 @@ PORT     STATE SERVICE VERSION
 
 
 
-<h3 align="center">$$\textcolor{white}{\textnormal{[Nmap](http://TargetIP)}}$$</h3>
+<h3 align="center">$$\textcolor{white}{\textnormal{http://TargetIP}}$$</h3>
 
 
 ![image](https://github.com/user-attachments/assets/9cf02354-efcf-430e-9edd-15a53962d9cd)
 
 <br>
 
-<h3 align="center">$$\textcolor{white}{\textnormal{[Nmap](http://TargetIP/robots.txt)}}$$</h3>
+<h3 align="center">$$\textcolor{white}{\textnormal{http://TargetIP/robots.txt}}$$</h3>
 
 ![image](https://github.com/user-attachments/assets/a58d7b7e-5495-4542-abb5-55ac60c0a747)
 
