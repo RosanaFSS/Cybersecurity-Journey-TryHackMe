@@ -151,6 +151,13 @@ Starting gobuster in directory enumeration mode
 > 3.1. <em>ftp user name?</em><a id='3.1'></a>
 >> <code><strong>ftpuser</strong></code><br>
 
+<br>
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{http://TargetIP/webmasters/backups/backups.zip}}$$</h3>
+<p align="center"><code>backups.zip</code> downloaded</p>
+
 
 
 ![image](https://github.com/user-attachments/assets/e4cdd597-d5f3-4635-87a5-4fe269bfc372)
