@@ -84,6 +84,8 @@ PORT     STATE SERVICE VERSION
 <br>
 
 <h3 align="center">$$\textcolor{white}{\textnormal{http://TargetIP/robots.txt}}$$</h3>
+<p align="center"><code>Dissalow: /work</code></p>
+
 
 ![image](https://github.com/user-attachments/assets/a58d7b7e-5495-4542-abb5-55ac60c0a747)
 
