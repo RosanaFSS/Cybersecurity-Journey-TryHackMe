@@ -164,6 +164,11 @@ Starting gobuster in directory enumeration mode
 
 <br>
 
+<h3 align="center">$$\textcolor{white}{\textnormal{zip2john X backups.zip }}$$</h3>
+<p align="center"><code>hash</code></p>
+
+<br>
+
 
 ```bash
 :~# file backups.zip
@@ -178,6 +183,16 @@ ver 1.0 backups.zip/backups/ is not encrypted, or stored with non-handled compre
 ver 2.0 efh 5455 efh 7875 backups.zip/backups/note.txt PKZIP Encr: 2b chk, TS_chk, cmplen=67, decmplen=60, crc=AEE718A8 type=8
 :~# cat hash
 backups.zip/backups/note.txt:$pkzip2$1*2*2*0*43*3c*aee718a8*42*4a*8*43*aee7*24e2*2918f93964f9ffa39d4a5fc0d589cae4222fd228a12bc6459bf7b383bdc3cd74557af7a16783ba3217388d2db639162dcee0456f5264bb1839b0f63a28de19581bda79*$/pkzip2$:backups/note.txt:backups.zip::backups.zip
+```
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{john X hash }}$$</h3>
+<p align="center"><code>note.txt</code></p>
+
+<br>
+
+```bash
 :~# john hash --wordlist=/usr/share/wordlists/rockyou.txt
 Using default input encoding: UTF-8
 Loaded 1 password hash (PKZIP [32/64])
@@ -194,6 +209,16 @@ Archive:  backups.zip
 :~# cd backups
 :~/backups# ls
 note.txt
+```
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{cat X note.txt }}$$</h3>
+<p align="center"><code>ftp username</code></p>
+
+<br>
+
+```bash
 :~/backups# cat note.txt
 @vill
 
@@ -202,6 +227,7 @@ we have to work hard
 :~/backups# 
 ```
 
+<br>
 <br>
 
 > 3.2. <em>ftp password?</em><a id='3.2'></a>
