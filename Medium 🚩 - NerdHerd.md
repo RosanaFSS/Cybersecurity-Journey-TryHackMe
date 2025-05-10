@@ -124,6 +124,13 @@ ftp> exit
 <p>Discovered <code>Owner Name</code> : <code>fijbxslz</code>.<br><br>
 Googled <code>fijbxslz</code> and discovered it is about <code>Vigenére cipher</code>.</p>
 
+<br>
+
+![image](https://github.com/user-attachments/assets/96a8df77-97c4-47bf-bbbb-3efcdb949bdb)
+
+<br>
+
+
 ```bash
 exiftool youfoundme.png
 ExifTool Version Number         : 11.88
