@@ -70,13 +70,16 @@ PORT     STATE SERVICE VERSION
 
 <br>
 
-<h3>http://TargetIP</h3>
+
+
+<h3 align="center">$$\textcolor{white}{\textnormal{[Nmap](http://TargetIP)}}$$</h3>
+
 
 ![image](https://github.com/user-attachments/assets/9cf02354-efcf-430e-9edd-15a53962d9cd)
 
 <br>
 
-<h3>http://TargetIP/robots.txt</h3>
+<h3 align="center">$$\textcolor{white}{\textnormal{[Nmap](http://TargetIP/robots.txt)}}$$</h3>
 
 ![image](https://github.com/user-attachments/assets/a58d7b7e-5495-4542-abb5-55ac60c0a747)
 
@@ -100,12 +103,12 @@ Finished
 <br>
 
 ```bash
-:~# gobuster dir -u http://10.10.235.220/webmasters/backups/ -w /usr/share/wordlists/dirb/common.txt -t 100 -x php,html,zip,tar,gz,back.old,js,txt
+:~# gobuster dir -u http://TargetIP/webmasters/backups/ -w /usr/share/wordlists/dirb/common.txt -t 100 -x php,html,zip,tar,gz,back.old,js,txt
 ===============================================================
 Gobuster v3.6
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
-[+] Url:                     http://10.10.235.220/webmasters/backups/
+[+] Url:                     http://TargetIP/webmasters/backups/
 [+] Method:                  GET
 [+] Threads:                 100
 [+] Wordlist:                /usr/share/wordlists/dirb/common.txt
