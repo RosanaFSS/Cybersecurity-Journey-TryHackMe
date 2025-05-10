@@ -270,10 +270,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-05-10 03:05:
 <br>
 
 ```bash
-~/Mnemonic# ftp 10.10.229.90
-Connected to 10.10.229.90.
-220 (vsFTPd 3.0.3)
-Name (10.10.229.90:root): ftpuser
+~/Mnemonic# ftp TargetIP
+Connected to TargetIP
+...
+Name (TargetIP:root): ftpuser
 331 Please specify the password.
 Password:
 230 Login successful.
