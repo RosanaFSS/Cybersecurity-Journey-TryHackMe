@@ -188,7 +188,7 @@ backups.zip/backups/note.txt:$pkzip2$1*2*2*0*43*3c*aee718a8*42*4a*8*43*aee7*24e2
 <br>
 
 <h3 align="center">$$\textcolor{white}{\textnormal{john X hash }}$$</h3>
-<p align="center"><code>00385007</code>code> --> <code>note.txt</code></p>
+<p align="center"><code>00385007</code> --> <code>note.txt</code></p>
 
 <br>
 
