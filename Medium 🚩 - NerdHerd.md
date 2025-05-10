@@ -121,7 +121,8 @@ ftp> exit
 
 <h2 align="center">$$\textcolor{white}{\textnormal{youfoundme.png}}$$</h2>
 
-<p><code>Owner Name</code>:<code>fijbxslz</code></p>
+<p>Discovered <code>Owner Name</code> : <code>fijbxslz</code>.<br><br>
+Googled <code>fijbxslz</code> and discovered it is about <code>Vigenére cipher</code>.</p>
 
 ```bash
 exiftool youfoundme.png
