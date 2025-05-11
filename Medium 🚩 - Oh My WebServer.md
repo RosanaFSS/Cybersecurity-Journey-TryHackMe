@@ -9,7 +9,7 @@ It is classified as a medium-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/ohmyweb"</a>.</p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/2f0a63a8-2483-42b8-b053-a95b3d25b10b"> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/08681c2c-7c81-4709-bac5-031dbe92094e"> </p>
 
 <br>
 <br>
