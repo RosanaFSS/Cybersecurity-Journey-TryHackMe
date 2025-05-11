@@ -1328,9 +1328,3 @@ bash-4.4#
 
 
 
-![image](https://github.com/user-attachments/assets/717fc34a-47e9-4ad0-83ba-9d842bdd1cc4)
-
-
-
-
-
