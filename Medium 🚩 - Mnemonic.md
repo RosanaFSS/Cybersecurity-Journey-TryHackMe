@@ -1144,25 +1144,14 @@ bash-4.4#
 ![image](https://github.com/user-attachments/assets/bb09e7a3-8187-499d-8fe2-01f92084d36f)
 
 
-<br>
-<br>
-
-![image](https://github.com/user-attachments/assets/65129f46-1c17-46ca-a43f-fbc87a38e965)
-
-<br>
-<br>
-
-![image](https://github.com/user-attachments/assets/c87038ae-6d6c-4399-bfcd-ed8da50453be)
-
-<br>
-<br>
-
 
 ![image](https://github.com/user-attachments/assets/bb16b73c-56af-4038-9bdb-4bf6948ece66)
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/25ad13df-4178-4a1d-811f-5ec90625c938)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/2569ffcb-389f-4ccb-b9e9-bc21e1e9a750)
 
