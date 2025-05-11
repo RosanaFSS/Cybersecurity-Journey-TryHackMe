@@ -9,8 +9,7 @@ It is classified as a mediumlevel CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/mnemonic</a>.</p>
 
-<p align="center"> <img width="1000px" src=""> </p>
-
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/062c628e-f610-40b6-be3e-4ddf1e26ade9"> </p>
 
 <br>
 <br>
@@ -1126,14 +1125,11 @@ bash-4.4#
 <br>
 <br>
 
-<br>
-<br>
-
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
 <img width="1000px" src="https://github.com/user-attachments/assets/f399a328-a10b-4f52-bcb4-2ff6b0873c95"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/bb09e7a3-8187-499d-8fe2-01f92084d36f"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/9a240d15-a1c3-46ec-ab3b-2fe168e47856"></p>
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
@@ -1144,7 +1140,7 @@ bash-4.4#
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| May 7, 2025       | 360      |     234ᵗʰ    |      6ᵗʰ     |     613ʳᵈ   |    12ⁿᵈ    |  100,219 |    715    |     62    |
+| May 11, 2025      | 370      |     231ˢᵗ    |      5ᵗʰ     |     613ʳᵈ   |    12ⁿᵈ    |  100,219 |    715    |     62    |
 
 </div>
 
