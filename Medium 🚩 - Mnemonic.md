@@ -1129,21 +1129,11 @@ bash-4.4#
 <br>
 <br>
 
-
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Module Completed: Starters}}$$</h1>
-<br>
-<p align="center">
-<img width="1000px" src="https://github.com/user-attachments/assets/47c279e1-029d-4b23-a4c3-d626527b1a33"></p>
-
-
-<br>
-<br>
-
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <br>
 <p align="center">
 <img width="1000px" src="https://github.com/user-attachments/assets/f399a328-a10b-4f52-bcb4-2ff6b0873c95"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/764d17f7-4c7d-4218-8e4d-71755c30f4c8"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/bb09e7a3-8187-499d-8fe2-01f92084d36f"></p>
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$ </h1>
@@ -1160,15 +1150,6 @@ bash-4.4#
 
 <br>
 
-
-
-<br>
-
-
-![image](https://github.com/user-attachments/assets/c666ded7-3998-4fb2-ac7c-7aae65687f42)
-
-<br>
-<br>
 
 ![image](https://github.com/user-attachments/assets/bb09e7a3-8187-499d-8fe2-01f92084d36f)
 
