@@ -14,7 +14,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/ohmyweb"</a>.</p>
 <br>
 <br>
 
-<h2>Task 1 .oh-My-Webserver</h2>
+<h2>Task 1 . oh-My-Webserver</h2>
 
 <h3>Hit me!</h3>
 <p>Deploy the machine attached to this task and happy hacking!</p>
@@ -32,5 +32,43 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/ohmyweb"</a>.</p>
 >> <code><strong>__________</strong></code><br>
 
 <br>
+<br>
+
+
+<h3 align="center">$$\textcolor{white}{\textnormal{Nmap}}$$</h3>
+<p align="center">There are have 2 ports open: <code>22/ssh/OpenSSH 8.2p1</code> and <code>80/http/Apache httpd 2.4.49</code>.</p>
+
+```bash
+:~/OhMyWebServer# nmap -sC -sV -Pn -p- -T4 ohmywebserver
+...
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.49 ((Unix))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.49 (Unix)
+|_http-title: Consult - Business Consultancy Agency Template | Home
+...
+```
+
+<br>
+<h3 align="center">$$\textcolor{white}{\textnormal{Gobuster x http://TargetIP/webmasters/}}$$</h3>
+<p align="center">Discovered <code>/assets/</code> and <code>/cgi-bin/</code>.</p>
+
+<br>
+
+```bash
+:~# gobuster dir -u http://ohmywebserver/webmasters/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -fc 403 -t 100
+...
+===============================================================
+/assets/              (Status: 200) [Size: 404]
+/cgi-bin/             (Status: 403) [Size: 199]
+Progress: 220560 / 220561 (100.00%)
+===============================================================
+Finished
+===============================================================
+```
+
+
 <br>
 
