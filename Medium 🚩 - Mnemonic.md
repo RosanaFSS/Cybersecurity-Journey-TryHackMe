@@ -1134,7 +1134,7 @@ bash-4.4#
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| May 11, 2025      | 370      |     231ˢᵗ    |      5ᵗʰ     |     613ʳᵈ   |    7ᵗʰ     |  101,023 |    722    |     62    |
+| May 11, 2025      | 370      |     231ˢᵗ    |      5ᵗʰ     |    425ᵗʰ    |    7ᵗʰ     |  101,023 |    722    |     62    |
 
 </div>
 
@@ -1143,9 +1143,6 @@ bash-4.4#
 
 ![image](https://github.com/user-attachments/assets/bb09e7a3-8187-499d-8fe2-01f92084d36f)
 
-
-
-![image](https://github.com/user-attachments/assets/bb16b73c-56af-4038-9bdb-4bf6948ece66)
 
 <br>
 
@@ -1158,6 +1155,10 @@ bash-4.4#
 <br>
 
 
-
-
 ![image](https://github.com/user-attachments/assets/ce99fc40-db8f-4e4e-816f-ec56b829422a)
+
+<br>
+<br>
+
+
+![image](https://github.com/user-attachments/assets/bb16b73c-56af-4038-9bdb-4bf6948ece66)
