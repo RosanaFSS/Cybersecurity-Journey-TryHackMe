@@ -39,7 +39,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/ohmyweb"</a>.</p>
 <p align="center">There are have 2 ports open: <code>22/ssh/OpenSSH 8.2p1</code> and <code>80/http/Apache httpd 2.4.49</code>.</p>
 
 ```bash
-:~/OhMyWebServer# nmap -sC -sV -Pn -p- -T4 ohmywebserver
+:~/OhMyWebServer# nmap -sC -sV -A -T4 ohmywebserver
 ...
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
@@ -52,13 +52,13 @@ PORT   STATE SERVICE VERSION
 ```
 
 <br>
-<h3 align="center">$$\textcolor{white}{\textnormal{Gobuster x http://TargetIP/webmasters/}}$$</h3>
+<h3 align="center">$$\textcolor{white}{\textnormal{Gobuster x http://ohmywebserver/}}$$</h3>
 <p align="center">Discovered <code>/assets/</code> and <code>/cgi-bin/</code>.</p>
 
 <br>
 
 ```bash
-:~# gobuster dir -u http://ohmywebserver/webmasters/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -fc 403 -t 100
+:~# gobuster dir -u http://ohmywebserver/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -fc 403 -t 100
 ...
 ===============================================================
 /assets/              (Status: 200) [Size: 404]
@@ -71,4 +71,55 @@ Finished
 
 
 <br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{Gobuster x http://ohmywebserver/cgi-bin/}}$$</h3>
+<p align="center">Discovered <code>/dcode</code>.</p>
+
+<br>
+
+```bash
+:~# gobuster dir -u http://ohmywebserver/cgi-bin/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
+...
+===============================================================
+Progress: 162130 / 220561 (73.51%)[ERROR] Get "http://ohmywebserver/cgi-bin/dccode": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Progress: 220560 / 220561 (100.00%)
+===============================================================
+Finished
+===============================================================
+```
+
+<h3 align="center">$$\textcolor{white}{\textnormal{Vulnerability}}$$</h3>
+<p align="center">In a previous challenge I learned that <code>Apache</code> and <code>/cgi-bin/</code> is conbination that might be vulnerable.<br>
+  
+  - Navigated to <code>https://httpd.apache.org</code> and researched the vulnerabilities reported.<br>
+  - Googled <code>"Apache"</code> <code>AND</code> <code>"/cgi/bin"</code>.<br>
+  - Discovered <code>CVE-2021-41773</code>.<br>
+  - Used <code>searchploit -s apache 2.4.49</code> and got <code>50383.sh</code>.<br>
+  - Used the exploit.</p>
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/a0dba432-fe59-4edd-b17b-345e5c4661c2)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/61020d46-1855-4c3c-ac1e-d21d84d7c7ba)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7528725c-435a-4ac9-b8de-6edeafc9079c)
+
+<br>
+
+<h3 align="center">$$\textcolor{white}{\textnormal{CVE-2021-41773}}$$</h3>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/71808b0e-a365-4d27-a428-98ee59598eca)
+
+<br>
+
+
+
 
