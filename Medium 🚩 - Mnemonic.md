@@ -976,8 +976,6 @@ root@ip-10-10-108-227:~#
 <br>
 
 
-![image](https://github.com/user-attachments/assets/717fc34a-47e9-4ad0-83ba-9d842bdd1cc4)
-
 <br>
 
 ```bash
@@ -1318,6 +1316,11 @@ bash-4.4#
 ```
 
 
+
+
+
+
+![image](https://github.com/user-attachments/assets/717fc34a-47e9-4ad0-83ba-9d842bdd1cc4)
 
 
 
