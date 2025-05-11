@@ -989,7 +989,9 @@ root@ip-10-10-108-227:~#
 
 
 
-![image](https://github.com/user-attachments/assets/ce4e1871-0064-49af-aaa9-848b7ad501d2)
+![image](https://github.com/user-attachments/assets/717fc34a-47e9-4ad0-83ba-9d842bdd1cc4)
+
+
 
 <br>
 
@@ -1215,38 +1217,6 @@ def run(): # run function
 
 run()
 condor@mnemonic:~$ 
-
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/38d8ecd1-2619-4f0a-9a63-b942c168ecb2)
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/2e5435f8-7fa6-462d-9ad0-0d8a88512e47)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/7eb9ffbe-0965-4537-8cd0-fe19aa989463)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/acff34b3-5d1f-476e-9d38-fe1cb25bc09f)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/6e3bcec3-8df8-427e-84eb-6309755f7700)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/835ee8f7-4d44-44dc-82b1-36528e599d6d)
-
-```
-
 <br>
 
 <p><code>THM{congratulationsyoumadeithashme}</code></p>
@@ -1314,6 +1284,44 @@ b' 17:25:04 up 19 min,  1 user,  load average: 0.00, 0.05, 0.18\nUSER     TTY   
 THM{congratulationsyoumadeithashme}
 bash-4.4# 
 ```
+
+
+<br>
+
+<p><code>THM{congratulationsyoumadeithashme}</code></p>
+
+
+<br>
+<br>
+
+
+
+![image](https://github.com/user-attachments/assets/ce4e1871-0064-49af-aaa9-848b7ad501d2)
+
+
+![image](https://github.com/user-attachments/assets/38d8ecd1-2619-4f0a-9a63-b942c168ecb2)
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/2e5435f8-7fa6-462d-9ad0-0d8a88512e47)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7eb9ffbe-0965-4537-8cd0-fe19aa989463)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/acff34b3-5d1f-476e-9d38-fe1cb25bc09f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6e3bcec3-8df8-427e-84eb-6309755f7700)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/835ee8f7-4d44-44dc-82b1-36528e599d6d)
 
 
 
