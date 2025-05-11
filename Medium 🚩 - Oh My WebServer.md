@@ -108,10 +108,6 @@ Finished
 
 <br>
 
-![image](https://github.com/user-attachments/assets/7528725c-435a-4ac9-b8de-6edeafc9079c)
-
-<br>
-
 <h3 align="center">$$\textcolor{white}{\textnormal{CVE-2021-41773}}$$</h3>
 
 <br>
