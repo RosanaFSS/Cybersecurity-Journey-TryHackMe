@@ -198,126 +198,20 @@ proc/225/task/225/io
 daemon@4a70924bafa0:/$ cd /proc
 cd /proc
 daemon@4a70924bafa0:/proc$ ls  
-ls
-1
-10
-11
-121
-122
-177
-211
-226
-8
-9
-93
-acpi
-buddyinfo
-bus
-cgroups
+...
 cmdline
-consoles
-cpuinfo
-crypto
-devices
-diskstats
-dma
-driver
-execdomains
-fb
-filesystems
-fs
-interrupts
-iomem
+...
 ioports
-irq
-kallsyms
-kcore
-key-users
-keys
-kmsg
-kpagecgroup
-kpagecount
-kpageflags
-loadavg
-locks
-mdstat
-meminfo
-misc
-modules
-mounts
-mtrr
-net
-pagetypeinfo
-partitions
-pressure
-sched_debug
-schedstat
-scsi
-self
-slabinfo
-softirqs
-stat
-swaps
-sys
-sysrq-trigger
-sysvipc
-thread-self
-timer_list
-tty
-uptime
-version
-version_signature
-vmallocinfo
-vmstat
-xen
-zoneinfo
+...
+
 daemon@4a70924bafa0:/proc$ find / -name *.txt 2>/dev/null
 find / -name *.txt 2>/dev/null
-/usr/local/lib/python3.7/dist-packages/urllib3-1.26.7.dist-info/top_level.txt
-/usr/local/lib/python3.7/dist-packages/urllib3-1.26.7.dist-info/LICENSE.txt
-/usr/local/lib/python3.7/dist-packages/idna-3.2.dist-info/top_level.txt
-/usr/local/lib/python3.7/dist-packages/requests-2.26.0.dist-info/top_level.txt
-/usr/local/lib/python3.7/dist-packages/certifi-2021.5.30.dist-info/top_level.txt
-/usr/local/lib/python3.7/dist-packages/charset_normalizer-2.0.6.dist-info/top_level.txt
+...
 /usr/local/lib/python3.7/dist-packages/charset_normalizer-2.0.6.dist-info/entry_points.txt
-/usr/share/perl/5.28.1/unicore/SpecialCasing.txt
-/usr/share/perl/5.28.1/unicore/NamedSequences.txt
-/usr/share/perl/5.28.1/unicore/Blocks.txt
+...
 /usr/share/perl/5.28.1/Unicode/Collate/allkeys.txt
 /usr/share/perl/5.28.1/Unicode/Collate/keys.txt
-/usr/share/gnupg/help.be.txt
-/usr/share/gnupg/help.da.txt
 ...
-/usr/lib/python3/dist-packages/cryptography-2.6.1.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/cryptography-2.6.1.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/cryptography-2.6.1.egg-info/requires.txt
-/usr/lib/python3/dist-packages/keyrings.alt-3.1.1.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/keyrings.alt-3.1.1.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/keyrings.alt-3.1.1.egg-info/requires.txt
-/usr/lib/python3/dist-packages/keyrings.alt-3.1.1.egg-info/entry_points.txt
-/usr/lib/python3/dist-packages/wheel-0.32.3.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/wheel-0.32.3.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/wheel-0.32.3.egg-info/requires.txt
-/usr/lib/python3/dist-packages/wheel-0.32.3.egg-info/entry_points.txt
-/usr/lib/python3/dist-packages/six-1.12.0.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/six-1.12.0.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/setuptools-40.8.0.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/setuptools-40.8.0.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/setuptools-40.8.0.egg-info/entry_points.txt
-/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/requires.txt
-/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/keyring-17.1.1.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/keyring-17.1.1.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/keyring-17.1.1.egg-info/requires.txt
-/usr/lib/python3/dist-packages/keyring-17.1.1.egg-info/entry_points.txt
-/usr/lib/python3/dist-packages/PyGObject-3.30.4.egg-info/dependency_links.txt
-/usr/lib/python3/dist-packages/PyGObject-3.30.4.egg-info/top_level.txt
-/usr/lib/python3/dist-packages/PyGObject-3.30.4.egg-info/requires.txt
-daemon@4a70924bafa0:/proc$ cd /usr/lib/python3/dist-packages
-cd /usr/lib/python3/dist-packages
 daemon@4a70924bafa0:/usr/lib/python3/dist-packages$ ls
 ls
 Crypto
@@ -325,7 +219,6 @@ Crypto
 pyxdg-0.25.egg-info
 secretstorage
 setuptools
-
 ...
 daemon@4a70924bafa0:/usr/lib/python3/dist-packages/secretstorage$ cat defines.py
 <python3/dist-packages/secretstorage$ cat defines.py              
@@ -338,20 +231,10 @@ daemon@4a70924bafa0:/usr/lib/python3/dist-packages/secretstorage$ cat defines.py
 
 SS_PREFIX = 'org.freedesktop.Secret.'
 SS_PATH = '/org/freedesktop/secrets'
-
-
-DBUS_UNKNOWN_METHOD  = 'org.freedesktop.DBus.Error.UnknownMethod'
-DBUS_ACCESS_DENIED   = 'org.freedesktop.DBus.Error.AccessDenied'
-DBUS_SERVICE_UNKNOWN = 'org.freedesktop.DBus.Error.ServiceUnknown'
-DBUS_EXEC_FAILED     = 'org.freedesktop.DBus.Error.Spawn.ExecFailed'
-DBUS_NO_REPLY        = 'org.freedesktop.DBus.Error.NoReply'
-DBUS_NOT_SUPPORTED   = 'org.freedesktop.DBus.Error.NotSupported'
-DBUS_NO_SUCH_OBJECT  = 'org.freedesktop.Secret.Error.NoSuchObject'
-
-ALGORITHM_PLAIN = 'plain'
-ALGORITHM_DH = 'dh-ietf1024-sha256-aes128-cbc-pkcs7'
+...
 daemon@4a70924bafa0:/usr/lib/python3/dist-packages/secretstorage$
-
+...
+...
 ...
 daemon@4a70924bafa0:/tmp$ getcap -r / 2>/dev/null
 getcap -r / 2>/dev/null
