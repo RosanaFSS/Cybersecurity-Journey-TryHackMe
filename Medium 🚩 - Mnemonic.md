@@ -1285,6 +1285,19 @@ THM{congratulationsyoumadeithashme}
 bash-4.4# 
 ```
 
+<br>
+
+```bash
+:~/Mnemonic# echo -n "congratulationsyoumadeithashme" | md5sum
+2a4825f50b0c16636984b448669b0586  -
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7fb3ab12-9f8a-43c6-bcda-ff7346b0faf0)
+
+
+
 
 <br>
 
