@@ -14,12 +14,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/mnemonic</a>.</p>
 <br>
 <br>
 
-
-![image](https://github.com/user-attachments/assets/b3d9f441-f92c-4d5c-b68e-2d5d25456004)
-
-<br>
-<br>
-
 <h2>Task 1 . Mnemonic</h2>
 
 <h3>Hit me!</h3>
