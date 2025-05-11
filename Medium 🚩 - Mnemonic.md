@@ -1,8 +1,8 @@
 <p align="center">May 11, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{370}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/62cf4572-71af-43ed-898e-31c0887632ce" alt="Your Image Badge"></p>
+<img width="300px" src="https://github.com/user-attachments/assets/65129f46-1c17-46ca-a43f-fbc87a38e965" alt="Your Image Badge"><br>
+<img width="200px" src="https://github.com/user-attachments/assets/62cf4572-71af-43ed-898e-31c0887632ce" alt="streak"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Mnemonic}}$$</h1>
 <p align="center"><em>I hope you have fun.</em>.<br>
 It is classified as a mediumlevel CTF.<br>
@@ -1134,7 +1134,7 @@ bash-4.4#
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| May 11, 2025      | 370      |     231ˢᵗ    |      5ᵗʰ     |     613ʳᵈ   |    12ⁿᵈ    |  100,219 |    715    |     62    |
+| May 11, 2025      | 370      |     231ˢᵗ    |      5ᵗʰ     |     613ʳᵈ   |    7ᵗʰ     |  101,023 |    722    |     62    |
 
 </div>
 
