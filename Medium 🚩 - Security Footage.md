@@ -31,7 +31,7 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
     <li>Protocol hierarchy &nbsp; | &nbsp; analyzed it clicking <code>Statistics</code> --> <code>Protocol Hierarchy</code>.<br>
         There are protocols <code>TCP</code> and <code>HTTP</code>.<br><br></li>
     <li>There is just 1 <code>HTTP</code> packet. Related to<br> - <code>Source IP</code> : <code>10.0.2.15</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; <code>Source Port</code> : <code>42312</code><br>- <code>Destination IP</code> : <code>192.168.1.100</code> &nbsp; | &nbsp; <code>Destination Port</code> : <code>8081</code>.<br><br></li>
-    <li>TCP stream &nbsp; | &nbsp; Right-clicked the 1st TCP packet, selected <code>Follow</code> and <code>TCP stream</code>.<br><br></li>
+    <li>TCP &nbsp; | &nbsp; Used <code>tcp</code> to filter the packaged.<br>Right-clicked the 1st TCP packet.<br>Selected <code>Follow</code> and <code>TCP stream</code>.<br>Selected <code>Raw</code> for the <code>Show as</code> field.<br>Defined the filename <code>tcpstream</code>code> clicking <code>Save as...</code>, typing the name and clicking <code>Save</code>.<br><br></li>
     <li>Chunks &nbsp; | &nbsp; <code>jpeg</code> images were sent in chunks.<br><br></li>
     <li>Boundary &nbsp; | &nbsp; <code>--BoundaryString</code> was used to separate the images´s frames.<br>
         Identified the header <code>JFIF</code>.<br><br></li>
@@ -47,7 +47,10 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 
 <br>
 
-<p align="center">4 . TCP stream<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5586fb7a-9770-4730-8503-c8b41d51163e"></p>
+<p align="center">4 . TCP<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5586fb7a-9770-4730-8503-c8b41d51163e"><br>
+                                <img width="1000px" src="https://github.com/user-attachments/assets/d43de789-a12d-415f-b609-55ecad5fae4a"><br>
+                                <img width="1000px" src="https://github.com/user-attachments/assets/d43de789-a12d-415f-b609-55ecad5fae4a"></p>
+
 
 <br>
 
