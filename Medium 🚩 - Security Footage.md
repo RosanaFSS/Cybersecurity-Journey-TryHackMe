@@ -31,33 +31,27 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
     <li>Protocol hierarchy &nbsp; | &nbsp; analyzed it clicking <code>Statistics</code> --> <code>Protocol Hierarchy</code>.<br>
         There are protocols <code>TCP</code> and <code>HTTP</code>.<br><br></li>
     <li>There is just 1 <code>HTTP</code> packet. Related to<br> - <code>Source IP</code> : <code>10.0.2.15</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; <code>Source Port</code> : <code>42312</code><br>- <code>Destination IP</code> : <code>192.168.1.100</code> &nbsp; | &nbsp; <code>Destination Port</code> : <code>8081</code>.<br><br></li>
-    <li>TCP &nbsp; | &nbsp; Righed-clicked the 1st TCP packet, selected <code>Follow</code> and <code>TCP stream</code>.<br><br></li>
-    <li>chunked &nbsp; | &nbsp; <code>jpeg</code> images were set to be sent in chunks.<br><br></li>
+    <li>TCP stream &nbsp; | &nbsp; Right-clicked the 1st TCP packet, selected <code>Follow</code> and <code>TCP stream</code>.<br><br></li>
+    <li>Chunks &nbsp; | &nbsp; <code>jpeg</code> images were sent in chunks.<br><br></li>
     <li>Boundary &nbsp; | &nbsp; <code>--BoundaryString</code> was used to separate the images´s frames.<br>
         Identified the header <code>JFIF</code>.<br><br></li>
     <li>jpeg header and footer &nbsp; | &nbsp; learned in <a href="https://tryhackme.com/room/filecarving">File Carving</a> challenge the signatures for a jpeg file.<br><br></li>
 </ol></p>
 
 
-<p align="center">2. Protocol hierarchy<br><img width="1000px" src="https://github.com/user-attachments/assets/d4a353f5-5f82-4978-a144-2aa081a702ca"></p>
+<p align="center">2 . Protocol hierarchy<br><br><img width="1000px" src="https://github.com/user-attachments/assets/d4a353f5-5f82-4978-a144-2aa081a702ca"></p>
 
 <br>
 
-<p>3</p>
-
-![image](https://github.com/user-attachments/assets/31c4b598-e588-405b-8875-9d3c6393d9aa)
+<p align="center">3 . HTTP<br><br><img width="1000px" src="https://github.com/user-attachments/assets/31c4b598-e588-405b-8875-9d3c6393d9aa"></p>
 
 <br>
 
-<p>4</p>
-
-![image](https://github.com/user-attachments/assets/5586fb7a-9770-4730-8503-c8b41d51163e)
+<p align="center">4 . TCP stream<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5586fb7a-9770-4730-8503-c8b41d51163e"></p>
 
 <br>
 
-<p>5</p>
-
-![image](https://github.com/user-attachments/assets/a99ace5d-420f-4ad3-80b3-42749a1866a0)
+<p align="center">5 . Chunks<br><br><img width="1000px" src="https://github.com/user-attachments/assets/a99ace5d-420f-4ad3-80b3-42749a1866a0"></p>
 
 <br>
 
