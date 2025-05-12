@@ -55,15 +55,13 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 
 <br>
 
-![image](https://github.com/user-attachments/assets/f027ff99-c3e6-42d7-b8e2-af2c9ae47a50)
-
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/f027ff99-c3e6-42d7-b8e2-af2c9ae47a50"></p>
 
 <br>
 
-<p>6</p>
+<p align="center">7 . Boundary<br><br><img width="1000px" src="https://github.com/user-attachments/assets/9b5b9f01-e306-46d2-965a-fced1f88261d"></p>
 
-![image](https://github.com/user-attachments/assets/9b5b9f01-e306-46d2-965a-fced1f88261d)
-
+<br>
 
 <br>
 
