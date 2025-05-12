@@ -35,7 +35,7 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
     <li>Chunks &nbsp; | &nbsp; <code>jpeg</code> images were sent in chunks.<br><br></li>
     <li>Boundary &nbsp; | &nbsp; <code>--BoundaryString</code> was used to separate the images´s frames.<br>
         Identified the header <code>JFIF</code>.<br><br></li>
-    <li>jpeg header and footer &nbsp; | &nbsp; learned in <a href="https://tryhackme.com/room/filecarving">File Carving</a> challenge the signatures for a jpeg file.<br><br></li>
+    <li>Signature &nbsp; | &nbsp; learned in <a href="https://tryhackme.com/room/filecarving">File Carving</a> challenge the signatures for a jpeg file.<br><br></li>
 </ol></p>
 
 
@@ -59,15 +59,13 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 
 <br>
 
-<p align="center">7 . Boundary<br><br><img width="1000px" src="https://github.com/user-attachments/assets/9b5b9f01-e306-46d2-965a-fced1f88261d"></p>
+<p align="center">6 . Boundary<br><br><img width="1000px" src="https://github.com/user-attachments/assets/9b5b9f01-e306-46d2-965a-fced1f88261d"></p>
 
 <br>
 
+<p align="center">7 . Signature<br><br><img width="1000px" src="https://github.com/user-attachments/assets/22482162-0fae-45ac-9755-ae764b2a5362"></p>
+
 <br>
-
-<p>7</p>
-
-![image](https://github.com/user-attachments/assets/22482162-0fae-45ac-9755-ae764b2a5362)
 
 
 <br>
