@@ -92,24 +92,20 @@ PORT   STATE SERVICE VERSION
 
 <p>
 - <code>assets/js/html5shiv.js</code><br>
-- <code>assets/js/respond.min.js<br>
+- <code>assets/js/respond.min.js</code><br>
 - ...<br>
 - <code>index.php?page=services.html</code><br>
 - <code>assets/images/person_1.png</code><br>
 - <code>assets/images/person_2.png</code><br>
 - <code>assets/images/person_3.png</code><br>
-- <code>http://webthemez.com/</code></p>
-
-
-<script src="assets/js/modernizr-latest.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.cslider.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/custom.js"></script>
-
-<p>......</p>
+- <code>http://webthemez.com/</code><br>
+- <code>assets/js/modernizr-latest.js</code><br>
+- <code>http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js</code><br>
+- <code>http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js</code><br>
+- <code>assets/js/jquery.cslider.js</code><br>
+- <code>assets/js/headroom.min.js</code><br>
+- <code>assets/js/jQuery.headroom.min.js</code><br>
+- <code>assets/js/custom.js</code></p>
 
 
 <h3 align="center">$$\textcolor{white}{\textnormal{Testing for LFI}}$$</h3>
@@ -135,7 +131,7 @@ PORT   STATE SERVICE VERSION
 
 
 <p align="center">Tested <code>?page=php://filter/resource=/etc/passwd</code><br>
-Identified users <code>root</code>, <code>blue</code>code> and <code>red</code>.</p>
+Identified users <code>root</code>, <code>blue</code> and <code>red</code>.</p>
 
 <br>
 
