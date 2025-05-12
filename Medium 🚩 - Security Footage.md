@@ -79,6 +79,8 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 
 <p align="center">8 . Foremost<br><br></p>
 
+<br>
+
 ```bash
 $ foremost -i RCPstream -t jpeg -o solution
 Processing: tcpstream.bin
@@ -121,6 +123,8 @@ $ ls
 
 <p align="center">9 . FFmpeg<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0087d756-60f3-4ed0-a8cb-8734e8b62424"></p>
 
+<br>
+
 ```bash
 $ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420p solved.mp4
 ```
@@ -138,9 +142,6 @@ $ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420
 
 <p align="center">10 . Parole<br><br><img width="1000px" src="https://github.com/user-attachments/assets/2b464c04-ddfb-4d6b-a87e-b2725731784e"></p>
 
-```bash
-$ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420p solved.mp4
-```
 
 <br>
 <br>
