@@ -36,10 +36,14 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
     <li>Protocol hierarchy &nbsp; | &nbsp; analyzed it clicking <code>Statistics</code> --> <code>Protocol Hierarchy</code>.<br>
         There are protocols <code>TCP</code> and <code>HTTP</code>.<br><br></li>
     <li>There is just 1 <code>HTTP</code> packet. Related to<br> - <code>Source IP</code> : <code>10.0.2.15</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; <code>Source Port</code> : <code>42312</code><br>- <code>Destination IP</code> : <code>192.168.1.100</code> &nbsp; | &nbsp; <code>Destination Port</code> : <code>8081</code>.<br><br></li>
-    <li>xx &nbsp; | &nbsp; xx.<br><br></li>
-    <li>xx &nbsp; | &nbsp; xx.<br><br></li>
-    <li>xx &nbsp; | &nbsp; xx.<br><br></li>
+    <li>TCP &nbsp; | &nbsp; Righed-clicked the 1st TCP packet, selected <code>Follow</code> and <code>TCP stream</code>.<br><br></li>
+    <li>chunked &nbsp; | &nbsp; <code>jpeg</code> images were set to be sent in chunks.<br><br></li>
+    <li>Boundary &nbsp; | &nbsp; <code>--BoundaryString</code> was used to separate the images´s frames.<br>
+        Identified the header <code>JFIF</code>.<br><br></li>
+    <li>jpeg header and footer &nbsp; | &nbsp; learned in <a href="https://tryhackme.com/room/filecarving">File Carving</a> challenge the signatures for a jpeg file.<br><br></li>
 </ol></p>
+
+flag{5ebf457ea66b2877fdbca2de9ec86f31}
 
 <p>2</p>
 
@@ -53,6 +57,52 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 
 <br>
 
+<p>4</p>
+
+![image](https://github.com/user-attachments/assets/5586fb7a-9770-4730-8503-c8b41d51163e)
+
+<br>
+
+<p>5</p>
+
+![image](https://github.com/user-attachments/assets/a99ace5d-420f-4ad3-80b3-42749a1866a0)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f027ff99-c3e6-42d7-b8e2-af2c9ae47a50)
+
+
+<br>
+
+<p>6</p>
+
+![image](https://github.com/user-attachments/assets/9b5b9f01-e306-46d2-965a-fced1f88261d)
+
+
+<br>
+
+<p>7</p>
+
+![image](https://github.com/user-attachments/assets/22482162-0fae-45ac-9755-ae764b2a5362)
+
+
+<br>
+
+
+<p><code>(tcp.flags.ack == True && tcp.flags.push == True && frame contains "Boundar" && frame.number != 1108)</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/513b8c01-4a66-4b6f-bab2-84ccaf608f29)
+
+<br>
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/6212e09c-3c0d-4ae5-ac1d-5e520f1813cc)
 
 
 
