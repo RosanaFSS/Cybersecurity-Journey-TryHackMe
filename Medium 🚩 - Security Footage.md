@@ -38,11 +38,8 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
     <li>jpeg header and footer &nbsp; | &nbsp; learned in <a href="https://tryhackme.com/room/filecarving">File Carving</a> challenge the signatures for a jpeg file.<br><br></li>
 </ol></p>
 
-flag{5ebf457ea66b2877fdbca2de9ec86f31}
 
-<p>2</p>
-
-![image](https://github.com/user-attachments/assets/d4a353f5-5f82-4978-a144-2aa081a702ca)
+<p align="center">2. Protocol hierarchy<br><img width="1000px" src="https://github.com/user-attachments/assets/d4a353f5-5f82-4978-a144-2aa081a702ca"></p>
 
 <br>
 
