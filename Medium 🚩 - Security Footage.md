@@ -31,6 +31,30 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 
 <br>
 
+<p><ol type="1. ">
+    <li>Downloaded Task File | &nbsp; security-footage-1648933966395.pcap.<br><br></li>
+    <li>Protocol hierarchy &nbsp; | &nbsp; analyzed it clicking <code>Statistics</code> --> <code>Protocol Hierarchy</code>.<br>
+        There are protocols <code>TCP</code> and <code>HTTP</code>.<br><br></li>
+    <li>xx &nbsp; | &nbsp; Tehere is just 1 <code>HTTP</code> packet.<br>
+           Related to <code>Source IP</code> : <code>10.0.2.15</code><br><code>Source Port</code> : <code>42312</code><br><code>Destination IP</code> : <code>192.168.1.100</code><br><code>Destination Port</code> : <code>8081</code>.<br><br></li>
+    <li>xx &nbsp; | &nbsp; xx.<br><br></li>
+    <li>xx &nbsp; | &nbsp; xx.<br><br></li>
+    <li>xx &nbsp; | &nbsp; xx.<br><br></li>
+</ol></p>
+
+<p>2</p>
+
+![image](https://github.com/user-attachments/assets/d4a353f5-5f82-4978-a144-2aa081a702ca)
+
+<br>
+
+<p>3</p>
+
+![image](https://github.com/user-attachments/assets/31c4b598-e588-405b-8875-9d3c6393d9aa)
+
+<br>
+
+
 
 
 
