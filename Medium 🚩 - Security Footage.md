@@ -130,8 +130,8 @@ $ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420
 <ul style="list-style-type:square">
     <li><code>-framerate 15</code> &nbsp; | &nbsp; sets the frame rate of the output video adjusting it to <code>15</code> pictures per second. The default is 25.<br><br></li>
     <li><code>-pattern_type glob -i '*.jpg'</code> &nbsp; | &nbsp;  specifies the input images location using a glob pattern.<br><br></li>
-    <li>code>-c:v libx264 -pix_fmt yuv420p</code> &nbsp; | &nbsp; specifies the video codec (libx264) and pixel format.<br></li>
-    <li>code>solved.mp4</code> &nbsp; | &nbsp; specifies the output filename and its extension.<br></li>
+    <li><code>-c:v libx264 -pix_fmt yuv420p</code> &nbsp; | &nbsp; specifies the video codec (libx264) and pixel format.<br></li>
+    <li><code>solved.mp4</code> &nbsp; | &nbsp; specifies the output filename and its extension.<br></li>
 </ul></p>
 
 <br>
