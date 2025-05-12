@@ -1,6 +1,6 @@
 <p align="center">May 12, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{370}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{371}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/51810771-2c6a-4810-b8ae-f276f9525f6f" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/5c310a08-6e8d-4bc7-bbe4-7d1b5189f24b" alt="streak"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Security Footage}}$$</h1>
