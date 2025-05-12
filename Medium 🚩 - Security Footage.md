@@ -26,13 +26,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/securityfootage"</
 Note: If you are using the AttackBox, you can find the task files inside the /root/Rooms/securityfootage/ directory.</p>
 
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
-
-> 1.1. <em>What is the flag?</em><a id='1.1'></a>
->> <code><strong>flag{5ebf457ea66b2877fdbca2de9ec86f31}</strong></code><br>
-
-<br>
-
 <p><ol type="1. ">
     <li>Downloaded Task File | &nbsp; security-footage-1648933966395.pcap.<br><br></li>
     <li>Protocol hierarchy &nbsp; | &nbsp; analyzed it clicking <code>Statistics</code> --> <code>Protocol Hierarchy</code>.<br>
@@ -96,6 +89,16 @@ flag{5ebf457ea66b2877fdbca2de9ec86f31}
 <br>
 
 ![image](https://github.com/user-attachments/assets/513b8c01-4a66-4b6f-bab2-84ccaf608f29)
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+> 1.1. <em>What is the flag?</em><a id='1.1'></a>
+>> <code><strong>flag{5ebf457ea66b2877fdbca2de9ec86f31}</strong></code><br>
+
+<br>
+
 
 <br>
 <br>
