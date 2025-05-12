@@ -126,7 +126,7 @@ $ ls
 <br>
 
 ```bash
-$ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420p solved.mp4
+$ ffmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420p solved.mp4
 ```
 
 <br>
