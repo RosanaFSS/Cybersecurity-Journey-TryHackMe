@@ -36,8 +36,13 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
     <li>Boundary &nbsp; | &nbsp; <code>--BoundaryString</code> was used to separate the images´s frames.<br>
         Identified the header <code>JFIF</code>.<br><br></li>
     <li>Signature &nbsp; | &nbsp; learned in <a href="https://tryhackme.com/room/filecarving">File Carving</a> challenge the signatures for a jpeg file.<br><br></li>
+    <li>Foremost &nbsp; | &nbsp; used foremost to extract the images files.<br><br></li>
+    <li>FFmpeg &nbsp; | &nbsp; used ffmpeg to convert a series of images to a .mp4 video.<br><br></li>
+    <li>Parole &nbsp; | &nbsp; used Parole Media Player to watchthe video.<br><br></li>
 </ol></p>
 
+<br>
+<br>
 
 <p align="center">2 . Protocol hierarchy<br><br><img width="1000px" src="https://github.com/user-attachments/assets/d4a353f5-5f82-4978-a144-2aa081a702ca"></p>
 
@@ -72,15 +77,72 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 <br>
 
 
+<p align="center">8 . Foremost<br><br></p>
+
+```bash
+$ foremost -i RCPstream -t jpeg -o solution
+Processing: tcpstream.bin
+|*|
+...
+$ cd solution
+...
+$ ls
+audit.txt  jpg
+...
+$ cat audit.txt
+...
+------------------------------------------------------------------
+File: tcpstream.bin
+Start: Mon May 12 13:53:04 2025
+Length: 5 MB (5963201 bytes)
+Num      Name (bs=512)         Size      File Offset     Comment 
+0:      00000001.jpg          10 KB             601      
+1:      00000021.jpg          10 KB           11111      
+2:      00000041.jpg          10 KB           21449      
+3:      00000062.jpg           9 KB           31787      
+4:      00000082.jpg          10 KB           42090      
+5:      00000103.jpg          10 KB           52752      
+6:      00000123.jpg          10 KB           63414      
+7:      00000144.jpg          10 KB           74237      
+8:      00000166.jpg          10 KB           85060      
+9:      00000186.jpg          10 KB           95687      
+10:     00000207.jpg          10 KB          106117      
+11:     00000227.jpg           9 KB          116547
+...
+$ cd jpg
+...
+$ ls
+00000001.jpg  00001066.jpg  00002148.jpg  00003227.jpg  00004299.jpg  00005390.jpg  00006474.jpg  00007546.jpg  00008608.jpg  00009697.jpg  00010791.jpg
+00000021.jpg  00001088.jpg  00002170.jpg  00003248.jpg  00004321.jpg  00005412.jpg  00006496.jpg  00007567.jpg  00008630.jpg  00009719.jpg  00010813.jpg
+...
+```
+
 <br>
 
+<p align="center">9 . FFmpeg<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0087d756-60f3-4ed0-a8cb-8734e8b62424"></p>
 
-<p><code>(tcp.flags.ack == True && tcp.flags.push == True && frame contains "Boundar" && frame.number != 1108)</code></p>
+```bash
+$ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420p solved.mp4
+```
 
 <br>
 
-![image](https://github.com/user-attachments/assets/513b8c01-4a66-4b6f-bab2-84ccaf608f29)
+<ul style="list-style-type:square">
+    <li><code>-framerate 15</code> &nbsp; | &nbsp; sets the frame rate of the output video adjusting it to <code>15</code> pictures per second. The default is 25.<br><br></li>
+    <li><code>-pattern_type glob -i '*.jpg'</code> &nbsp; | &nbsp;  specifies the input images location using a glob pattern.<br><br></li>
+    <li>code>-c:v libx264 -pix_fmt yuv420p</code> &nbsp; | &nbsp; specifies the video codec (libx264) and pixel format.<br></li>
+    <li>code>solved.mp4</code> &nbsp; | &nbsp; specifies the output filename and its extension.<br></li>
+</ul></p>
 
+<br>
+
+<p align="center">10 . Parole<br><br><img width="1000px" src="https://github.com/user-attachments/assets/2b464c04-ddfb-4d6b-a87e-b2725731784e"></p>
+
+```bash
+$ fmpeg -framerate 15 -pattern_type glob -i '*.jpg' -c:v libx264 -pix_fmt yuv420p solved.mp4
+```
+
+<br>
 <br>
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
@@ -88,10 +150,6 @@ Note: If you are using the AttackBox, you can find the task files inside the /ro
 > 1.1. <em>What is the flag?</em><a id='1.1'></a>
 >> <code><strong>flag{5ebf457ea66b2877fdbca2de9ec86f31}</strong></code><br>
 
-<br>
-
-
-<br>
 <br>
 <br>
 
