@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{366}}$$-day-streak in  <a href="h
 <p align="center"><em>Can you take over The Marketplace's infrastructure?</em>.<br>
 It is classified as a mediumlevel walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/marketplace>here</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/marketplace">here</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8815edcb-552d-4ad4-807a-bd9c1b9a8dc3"> </p>
 
