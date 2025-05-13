@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{370}}$$-day-streak in  <a href="h
 <p align="center"><em>A classic battle for the ages.</em>.<br>
 It is classified as an easy-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/redisl33t"</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/redisl33t"</a>here.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/55a12fea-3dcc-40f2-b687-034e823b9541"> </p>
 
