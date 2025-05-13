@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{372}}$$-day-streak in  <a href="h
 <p align="center"><em>Learn about EC2 and how to compromise an EC2 Instance.</em>.<br>
 It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/amazonec2attackdefense"</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/amazonec2attackdefense"</a>here.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/f303a1f3-b35a-49fb-8bbb-4479bf8e9337"> </p>
 
