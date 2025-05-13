@@ -4,7 +4,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{346}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/cfa31fa8-1653-4223-a087-dbe1ad1a7623" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/dbaabd6d-47b5-4cd6-9800-eb50114e599d" alt="streak"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{SOC L1 Reporting}}$$</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{SOC L1 Alert Reporting}}$$</h1>
 <p align="center"><em>Learn how to properly report, escalate, and communicate about high-risk SOC alerts.</em>.<br>
 It is classified as an easy-level challenge.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
