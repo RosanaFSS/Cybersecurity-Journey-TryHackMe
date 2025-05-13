@@ -15,7 +15,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/attackingdefending
 
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href="">AWS VPC - Attack and Defense</a></h3>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/aws-vpc-attack-and-defense-tryhackme-walkthrough-991cd64b473c">AWS VPC - Attack and Defense</a></h3>
 
 
 <br>
