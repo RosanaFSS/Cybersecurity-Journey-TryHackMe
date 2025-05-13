@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{370}}$$-day-streak in  <a href="h
 <p align="center"><em>Can you root me?</em>.<br>
 It is classified as a medium-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/ohmyweb"</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/ohmyweb"</a>here.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/08681c2c-7c81-4709-bac5-031dbe92094e"> </p>
 
