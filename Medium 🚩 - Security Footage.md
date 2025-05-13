@@ -7,7 +7,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{371}}$$-day-streak in  <a href="h
 <p align="center"><em>Perform digital forensics on a network capture to recover footage from a camera.</em>.<br>
 It is classified as an easy-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/securityfootage"</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/securityfootage"</a>here.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/49f59741-e668-4f92-804b-8cd2cf54eeca"> </p>
 
