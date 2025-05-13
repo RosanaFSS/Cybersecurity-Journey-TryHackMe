@@ -14,6 +14,14 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/amazonec2attackdef
 <br>
 
 
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="">Amazon EC2 - Attack & Defense</a></h3>
+
+
+<br>
+<br>
+
+
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
