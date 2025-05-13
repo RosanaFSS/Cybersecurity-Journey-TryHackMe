@@ -6,7 +6,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{372}}$$-day-streak in  <a href="h
 <p align="center"><em>Learn the basics of AWS Virtual Private Cloud.</em>.<br>
 It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href=""</a>.</p>
+Can be accessed clicking  <a href="https://tryhackme.com/room/attackingdefendingvpcs"</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/89b65c01-76b9-4a53-b6b6-02ba0589790c"> </p>
 
@@ -15,7 +15,7 @@ Can be accessed clicking  <a href=""</a>.</p>
 
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href="">Amazon EC2 - Attack & Defense</a></h3>
+<h3 align="center"> Click here ➡️  <a href="">AWS VPC - Attack and Defense</a></h3>
 
 
 <br>
