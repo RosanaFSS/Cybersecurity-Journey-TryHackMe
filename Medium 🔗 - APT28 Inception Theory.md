@@ -9,7 +9,7 @@ It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/apt28inceptiontheory"</a>here.</p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/89b65c01-76b9-4a53-b6b6-02ba0589790c"> </p>
+<p align="center"> <img width="1000px" src=""> </p>
 
 <br>
 <br>
