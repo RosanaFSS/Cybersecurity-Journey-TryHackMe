@@ -1,14 +1,24 @@
-May 14, 2025<br>
-Day 373<br>
+<p align="center">May 13, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{373}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="https://github.com/user-attachments/assets/3e7f2867-802a-4bc8-9066-a37cc667909a" alt="Your Image Badge"></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{AWS S3 - Attack and Defense}}$$</h1>
+<p align="center"><em>An overview of security features and common attacks for the AWS S3 service.</em>.<br>
+It is classified as a medium-level walkthrough.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/awss3service"</a>here.</p>
 
-![image](https://github.com/user-attachments/assets/3e7f2867-802a-4bc8-9066-a37cc667909a)
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/597ef441-7af4-466c-a221-ddd8a037fc1d"> </p>
+
+<br>
+<br>
 
 
-<h1>AWS S3 - Attack and Defense</h1>
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/aws-vpc-attack-and-defense-tryhackme-walkthrough-991cd64b473c">AWS VPC - Attack and Defense</a></h3>
 
-![image](https://github.com/user-attachments/assets/597ef441-7af4-466c-a221-ddd8a037fc1d)
 
-
+<br>
 <br>
 
 <h2>Task 1 . Introduction</h2>
