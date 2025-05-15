@@ -108,7 +108,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awss3service"</a>h
 
 <h2>Task 7 . S3: AWS Service Substrate</h2>
 
-<code>AWS Service Substrate<br>
+AWS Service Substrate<br>
 
 <br>
 <br>
