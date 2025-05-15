@@ -63,7 +63,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awss3service"</a>h
 
 <br>
 
-<p>Navigated to <code>assets.bestcloudcompany.org<code>.</p>
+<p>Navigated to <code>assets.bestcloudcompany.org</code>.</p>
 
 <br>
 
