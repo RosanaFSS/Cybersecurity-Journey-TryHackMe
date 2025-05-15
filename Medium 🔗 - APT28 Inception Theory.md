@@ -17,7 +17,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/apt28inceptiontheo
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
-<p align="center"> <img width="1000px" src="ttps://github.com/user-attachments/assets/bca8c767-0e25-4176-8c73-af6bf06411a8"> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bca8c767-0e25-4176-8c73-af6bf06411a8"> </p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/4fe888b7-e94b-4b92-a919-9bc763a6a71e"> </p>
 
@@ -43,7 +43,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/apt28inceptiontheo
 </div>
 
 
-<p align="center"> Global All Time: 228ᵗʰ <br><br><img width="1000px" src="https://github.com/user-attachments/assets/eab91e17-ce5a-4f5d-b488-f0fccd45882b"> </p>
+<p align="center"> Global All Time: 227ᵗʰ <br><br><img width="1000px" src="https://github.com/user-attachments/assets/eab91e17-ce5a-4f5d-b488-f0fccd45882b"> </p>
 
 <p align="center"> Brazil All Time: 5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/c0a1002a-7395-4f5f-97b0-52e50d704103"> </p>
 
