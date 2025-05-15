@@ -1,7 +1,7 @@
 <p align="center">May 15, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{374}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/9175ba1e-886a-4a65-af94-06a634fb58bd" alt="Your Image Badge"><br></p>
+<img width="300px" src="https://github.com/user-attachments/assets/1152c36c-e7cb-4495-a5cb-4af61edfda80" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{AD Certificate Templates}}$$</h1>
 <p align="center"><em>Walkthrough on the exploitation of misconfigured AD certificate templates.</em>.<br>
 It is classified as a medium-level walkthrough.<br>
@@ -13,10 +13,13 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/adcertificatetempl
 <br>
 <br>
 
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="">🚧 AD Certificate Templates</a></h3>
 
 
 <br>
 <br>
+
 
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
@@ -54,4 +57,14 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/adcertificatetempl
 
 
 <br>
+<br>
 
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="https://tryhackme.com/p/am03bam4n">am03bam4n</a>  for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
