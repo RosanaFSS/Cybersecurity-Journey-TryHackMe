@@ -39,7 +39,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/adcertificatetempl
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |   Global     |   Brazil     |   Global    |   Brazil   |          | Completed |           |
-| May 15, 2025      | 374      |    227ᵗʰ     |        5ᵗʰ   |   235ᵗʰ     |    5ᵗʰ     |  102,047 |       731 |   62      |
+| May 15, 2025      | 374      |    227ᵗʰ     |        5ᵗʰ   |   276ᵗʰ     |    5ᵗʰ     |  102,047 |       731 |   62      |
 
 </div>
 
@@ -48,7 +48,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/adcertificatetempl
 
 <p align="center"> Brazil All Time: 5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/7e1c41f1-e864-437e-ba13-1b63d5452570"> </p>
 
-<p align="center"> Global monthly: 369ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/1666bb8b-009e-4ac1-8637-6ee95d401a1d"> </p>
+<p align="center"> Global monthly: 276ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/1666bb8b-009e-4ac1-8637-6ee95d401a1d"> </p>
 
 <p align="center"> Brazil monthly: 5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/6144d31e-0792-4145-804e-ce528dad2ca1"> </p>
 
