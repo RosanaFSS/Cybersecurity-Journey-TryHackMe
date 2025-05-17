@@ -15,8 +15,7 @@ Investigate a suspected intrusion by the notorious APT group Volt Typhoon in a m
 
 </div>
 
-<br>
-<p align="center"> Global All Time: 223ʳᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br>
+<p align="center"> Global All Time: 223ʳᵈ <br><img width="400px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/626232c5-e8a0-440d-87c6-ed0ab497a555"><br><br>
                    Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/2bfeb793-d507-4ca1-87fc-fa88590f6cb1"><br><br>
                    Global monthly:   158ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676"><br><br>
