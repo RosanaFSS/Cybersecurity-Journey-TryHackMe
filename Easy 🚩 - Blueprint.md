@@ -12,19 +12,19 @@ Hack into this Windows machine and escalate your privileges to Administrator: an
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 17, 2025      |     376    |          223ʳᵈ         |            5ᵗʰ       |        158ᵗʰ         |           4ᵗʰ        |       102,561      |             733       |    62       |
+| May 17, 2025      |     376    |          223ʳᵈ         |            5ᵗʰ       |        160ᵗʰ         |           4ᵗʰ        |       102,621      |             734       |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 223ʳᵈ <br><img width="400px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/626232c5-e8a0-440d-87c6-ed0ab497a555"><br><br>
-                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/2bfeb793-d507-4ca1-87fc-fa88590f6cb1"><br><br>
-                   Global monthly:   158ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676"><br><br>
-                   Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/f57c29db-5d97-4aeb-83c4-6669bcb6f734"><br><br>
-            Weekly League, Diamond:  14ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/e78f5513-42f0-4190-b763-5df1502b0ca2"><br>
-                                             <img width="1000px" src="https://github.com/user-attachments/assets/3fecda40-b793-4c95-8a6b-f57d659f1e51"></p>
+<p align="center"> Global All Time: 223ʳᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/385957d4-54f2-4956-8c45-5d5e729df593" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/8fe3d65b-42bd-4309-a554-18c9740d113e"><br><br>
+                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/74a4c664-72a5-4776-b7d7-3dafc5e16e20"><br><br>
+                   Global monthly:   160ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/6ec423cd-8b18-4fd2-a1df-3c6975ff2927"><br><br>
+                   Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/4e9cae33-a787-4408-a802-05cd50421a0d"><br><br>
+            Weekly League, Diamond:  13ʳᵈ<br><img width="300px" src="https://github.com/user-attachments/assets/23ab3903-a211-4fdf-a365-5fc49de6fac1"><br>
+                                             <img width="1000px" src="https://github.com/user-attachments/assets/d4f93008-3c41-46b3-870b-1f70ffa99400"></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 <br>
-<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/tryhackme">TryHackMe</a> and <a href="https://tryhackme.com/p/ryla">ryla</a><br>for developinng this experience so that I could sharpen my skills!</h1>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/MrSeth6797">MrSeth6797</a> <br>for developinng this experience so that I could sharpen my skills!</h1>
