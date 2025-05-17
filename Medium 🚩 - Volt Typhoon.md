@@ -24,9 +24,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>he
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8fad533f-6663-4d86-a18f-5863a880f575"> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/d0c32ff0-45c7-46ce-8b86-cc805eebf43c"> </p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/fbe576b6-e9e8-4d30-a813-3efd5ed5e905"> </p>
 
 <br>
 <br>
