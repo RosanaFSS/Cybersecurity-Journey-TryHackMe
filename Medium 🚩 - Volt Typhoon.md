@@ -9,7 +9,6 @@ You can join it for 🆓 using your own virtual machine with openVPN<br> or TryH
 Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>here.</p>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/7368f690-71ad-4134-a509-5c96078ab8af"> </p>
 <br>
-<h2 align="center"></h2>
 <h2 align="center">Read my walkthrough in Medium<br>clicking <a href="">🚧 Volt Typhoon</a>.</h2>
 <br>
 <h1 align="center">Room Completed</h1>
