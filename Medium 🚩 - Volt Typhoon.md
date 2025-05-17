@@ -3,7 +3,7 @@
 and I’m excited to<br>join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{376}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 <img width="300px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br>
 Investigate a suspected intrusion by the notorious APT group Volt Typhoon in a medium-level 🚩 Capture The Flag (CTF).<br>
-Join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Access it clicking <a href="https://tryhackme.com/room/volttyphoon"</a>here<br>
+Join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/volttyphoon"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/7368f690-71ad-4134-a509-5c96078ab8af"></p>
 <br>
 <h2 align="center">Read my walkthrough in Medium<br>clicking <a href="">🚧 Volt Typhoon</a>.</h2>
