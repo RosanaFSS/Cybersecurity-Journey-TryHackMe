@@ -13,7 +13,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>he
 <br>
 <br>
 <h2 align="center"></h2>
-<h2 align="center">Read my walkthrough in Medium clicking here ➡️  <a href="">🚧 Volt Typhoon</a>.</h2>
+<h2 align="center">Read my walkthrough in Medium clicking ➡️  <a href="">🚧 Volt Typhoon</a>.<br></h2>
 
 
 
