@@ -3,7 +3,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my $$\textcolor{#FF69B4}{\textbf{376}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Volt Typhoon}}$$</h1>
-<p align="center"><em>Investigate a suspected intrusion by the notorious APT group Volt Typhoon.</em>.<br><br>
+<p align="center">Investigate a suspected intrusion by the notorious APT group Volt Typhoon.<br><br>
 It is classified as a medium-level Capture The Flag(CTF).<br>
 You can join it for 🆓 using your own virtual machine with openVPN<br> or TryHackMe´s AttackBox if you are subscribed.<br><br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>here.</p>
