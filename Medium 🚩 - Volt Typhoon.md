@@ -59,14 +59,12 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>he
 <img width="1000px" src="https://github.com/user-attachments/assets/3fecda40-b793-4c95-8a6b-f57d659f1e51"></p>
 
 <br>
-<br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
 
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
 <br>
-https://tryhackme.com/p/tryhackme
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
 <p align="center"><a href="ttps://tryhackme.com/p/tryhackme">TryHackMe</a> and <a href="https://tryhackme.com/p/ryla">ryl</a>  for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
