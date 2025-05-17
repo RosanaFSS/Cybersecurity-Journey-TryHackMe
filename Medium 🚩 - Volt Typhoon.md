@@ -20,17 +20,11 @@ Investigate a suspected intrusion by the notorious APT group Volt Typhoon in a m
                                               <img width="1000px" src="https://github.com/user-attachments/assets/626232c5-e8a0-440d-87c6-ed0ab497a555"><br><br>
                    Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/2bfeb793-d507-4ca1-87fc-fa88590f6cb1"><br><br>
                    Global monthly:   158ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676"><br><br>
-                   Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/f57c29db-5d97-4aeb-83c4-6669bcb6f734"><br><br></p>
+                   Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/f57c29db-5d97-4aeb-83c4-6669bcb6f734"><br><br>
+            Weekly League, Diamond:  14ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/e78f5513-42f0-4190-b763-5df1502b0ca2"><br>
+                                             <img width="1000px" src="https://github.com/user-attachments/assets/3fecda40-b793-4c95-8a6b-f57d659f1e51"></p>
 
-<br>
-
-<p align="center"> Weekly League:   Diamond, 14ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/e78f5513-42f0-4190-b763-5df1502b0ca2"><br><br>
-                                                         <img width="1000px" src="https://github.com/user-attachments/assets/3fecda40-b793-4c95-8a6b-f57d659f1e51"></p>
-
-<br>
-<h1 align="center">Thanks for Coming!</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-
-<br>
 <h1 align="center">Thank you very much<a href="ttps://tryhackme.com/p/tryhackme">TryHackMe</a> and <a href="https://tryhackme.com/p/ryla">ryla</a></h1>
 <p align="center">for developinng this experience so that I could sharpen my skills!</p>
