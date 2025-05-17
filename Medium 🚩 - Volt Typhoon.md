@@ -26,5 +26,4 @@ Investigate a suspected intrusion by the notorious APT group Volt Typhoon in a m
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-<h1 align="center">Thank you very much <a href="ttps://tryhackme.com/p/tryhackme">TryHackMe</a> and <a href="https://tryhackme.com/p/ryla">ryla</a></h1>
-<p align="center">for developinng this experience so that I could sharpen my skills!</p>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/tryhackme">TryHackMe</a> and <a href="https://tryhackme.com/p/ryla">ryla</a> for developinng this experience so that I could sharpen my skills!</h1>
