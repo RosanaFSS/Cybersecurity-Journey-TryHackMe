@@ -41,17 +41,15 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>he
 
 </div>
 
-![image](https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676)
-
-
+<br>
 
 <p align="center"> Global All Time: 223ʳᵈ <br><br><img width="1000px" src="https://github.com/user-attachments/assets/626232c5-e8a0-440d-87c6-ed0ab497a555"> </p>
 
 <p align="center"> Brazil All Time:   5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/2bfeb793-d507-4ca1-87fc-fa88590f6cb1"> </p>
 
-<p align="center"> Global monthly:   276ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676"> </p>
+<p align="center"> Global monthly:   158ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676"> </p>
 
-<p align="center"> Brazil monthly:    5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f57c29db-5d97-4aeb-83c4-6669bcb6f734"> </p>
+<p align="center"> Brazil monthly:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f57c29db-5d97-4aeb-83c4-6669bcb6f734"> </p>
 
 
 <br>
