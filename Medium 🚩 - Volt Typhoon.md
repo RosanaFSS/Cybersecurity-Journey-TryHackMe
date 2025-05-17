@@ -2,7 +2,7 @@
 <p align="center">May 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{376}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Investigate a suspected intrusion by the notorious APT group Volt Typhoon in a medium-level 🚩 Capture The Flag (CTF). You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/volttyphoon"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/7368f690-71ad-4134-a509-5c96078ab8af"></p>
-<h2 align="center">Read my walkthrough in Medium<br>clicking <a href="">🚧 Volt Typhoon</a>.</h2>
+<h2 align="center">Read my walkthrough in Medium clicking <a href="">🚧 Volt Typhoon</a>.</h2>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/d0c32ff0-45c7-46ce-8b86-cc805eebf43c"> </p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
