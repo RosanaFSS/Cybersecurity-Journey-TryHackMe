@@ -33,10 +33,9 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>he
 
 <div align="center">
 
-| Date              |  Streak  |   All Time   |   All Time   |  Monthly    |  Monthly   |  SHOGUN  |   Rooms   |  Badges   |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------: | :-------: | :-------: |
-|                   |          |   Global     |    Brazil    |   Global    |   Brazil   |  Points  | Completed |           |
-| May 17, 2025      |   376    |    223ʳᵈ     |      5ᵗʰ     |    158ᵗʰ    |     4ᵗʰ    |  102,561 |     733   |    62     |
+| Date              |  Streak  |   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges   |
+| :---------------: | :------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :-------: |
+| May 17, 2025      |   376    |          223ʳᵈ         |            5ᵗʰ       |        158ᵗʰ         |           4ᵗʰ        |       102,561      |             733        |    62     |
 
 </div>
 
