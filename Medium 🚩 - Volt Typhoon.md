@@ -1,0 +1,75 @@
+<p align="center">May 17, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{376}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Volt Typhoon}}$$</h1>
+<p align="center"><em>Investigate a suspected intrusion by the notorious APT group Volt Typhoon.</em>.<br>
+It is classified as a medium-level Capture The Flag(CTF).<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/volttyphoon"</a>here.</p>
+
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/7368f690-71ad-4134-a509-5c96078ab8af"> </p>
+
+<br>
+<br>
+
+<h2 align="center">Read my walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="">🚧 Volt Typhoon</a></h3>
+
+
+<br>
+<br>
+
+
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8fad533f-6663-4d86-a18f-5863a880f575"> </p>
+
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/fbe576b6-e9e8-4d30-a813-3efd5ed5e905"> </p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+
+<div align="center">
+
+| Date              |  Streak  |   All Time   |   All Time   |  Monthly    |  Monthly   |  Points  |   Rooms   |  Badges   |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |   Global     |   Brazil     |   Global    |   Brazil   |          | Completed |           |
+| May 17, 2025      |   376     |    223ʳᵈ     |      5ᵗʰ     |    158ᵗʰ    |     4ᵗʰ    |  102,047 |     731   |    62     |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676)
+
+
+
+<p align="center"> Global All Time: 223ʳᵈ <br><br><img width="1000px" src="https://github.com/user-attachments/assets/626232c5-e8a0-440d-87c6-ed0ab497a555"> </p>
+
+<p align="center"> Brazil All Time:   5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/2bfeb793-d507-4ca1-87fc-fa88590f6cb1"> </p>
+
+<p align="center"> Global monthly:   276ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/51136333-8793-4db8-952b-6bb2125c9676"> </p>
+
+<p align="center"> Brazil monthly:    5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f57c29db-5d97-4aeb-83c4-6669bcb6f734"> </p>
+
+
+<br>
+<br>
+
+<p align="center"> Weekly League:   Diamond, 14ᵗʰ<br><br><img width="300px" src="https://github.com/user-attachments/assets/e78f5513-42f0-4190-b763-5df1502b0ca2"><br><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/3fecda40-b793-4c95-8a6b-f57d659f1e51"></p>
+
+<br>
+<br>
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thanks for coming!!!}}$$</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+https://tryhackme.com/p/tryhackme
+
+<h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Thank you}}$$</h1>
+<p align="center"><a href="ttps://tryhackme.com/p/tryhackme">TryHackMe</a> and <a href="https://tryhackme.com/p/ryla">ryl</a>  for investing your time and effort to develop this walkthrough so that I could sharpen my skills!</p>
