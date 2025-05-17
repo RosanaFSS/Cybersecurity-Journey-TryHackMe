@@ -1,6 +1,6 @@
 <p align="center">May 17, 2025<br>
-Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{376}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.
+It´s part of my $$\textcolor{#FF69B4}{\textbf{376}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/4e5e0c48-ca61-4a5c-9ec9-b782bc1dbe53" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Volt Typhoon}}$$</h1>
 <p align="center">Investigate a suspected intrusion by the notorious APT group Volt Typhoon.<br><br>
