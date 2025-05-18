@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{ColddBox}}$$</h1>
-<p align="center">May 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{377}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+<p align="center">May 18, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{377}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 An easy level machine with multiple ways to escalate privileges. By Hixec: an easy-level 🚩 Capture The Flag (CTF). You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/colddboxeasy"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/42e3863d-104a-4d6b-8b64-ee1ddb80e6af"></p>
 <h1 align="center">Read my walkthrough in Medium clicking <a href="">🚧 ColddBox</a>.</h1>
