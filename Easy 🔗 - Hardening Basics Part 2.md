@@ -12,8 +12,12 @@ LContinue learning about hardening: an easy-level walkthrough. It is Premium: on
 In this room, we will cover the following:<br>
 
 1. SSH and Encryption (Chapter 3)<br>
-2. Mandatory Access Control (Chapter 4)<br><br>
-This was mentioned in Part 1 but in case you did not do that room:<br><br>
+2. Mandatory Access Control (Chapter 4)
+<br>
+<br>
+This was mentioned in Part 1 but in case you did not do that room:
+<br>
+<br>
 
 There are no questions related to performing tasks on a virtual machine. However, I have provided a semi-configured Ubuntu 18.04 environment for you to play around with while you go through the different tasks. Things that have been configured at a basic level will be:<br>
 
