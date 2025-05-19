@@ -1,7 +1,7 @@
-
-![image](https://github.com/user-attachments/assets/69200fb4-5976-4433-a063-1862037c68c0)
-
-
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Hardening Basics Part 1}}$$</h1>
+<p align="center">May 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{378}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+Learn how to harden an Ubuntu Server! Covers a wide range of topics (Part 1): an easy-level walkthrough. You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/hardeningbasicspart1"</a>here.<br><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/69200fb4-5976-4433-a063-1862037c68c0"></p>
 
 <br>
 
@@ -654,22 +654,11 @@ Now it's time to complete a little skills check and see how well you understand 
 <br>
 
 
-
-
-![image](https://github.com/user-attachments/assets/77a39478-53bd-4a2f-a9bf-645fa395e1c9)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/afc51110-2675-45b8-b34f-4a8186ac5e39)
-
-<br>
-
-
-![image](https://github.com/user-attachments/assets/dbc97f40-e2cb-4399-880d-57ccc2368029)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/5177ef22-c328-4e9a-ad73-d74c8493f0b9)
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/77a39478-53bd-4a2f-a9bf-645fa395e1c9"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/dff63490-1dfb-487a-9b6b-ed8e09f20392"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/dbc97f40-e2cb-4399-880d-57ccc2368029"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/5177ef22-c328-4e9a-ad73-d74c8493f0b9"></p>
 
 <br>
 <br>
