@@ -96,19 +96,33 @@ Note: You are going to get an error if you deploy the app at this point since we
 
 
 ```bash
-:~/IntroductionToFlask# sudo apt update && apt upgrade -y
+:~# sudo apt update && apt upgrade -y
 ...
-:~/IntroductionToFlask# sudo apt install python3-pip -y
+:~# sudo apt install python3-pip -y
 ...
-:~/IntroductionToFlask# pip3 install Flask
+:~# pip3 install Flask
 ...
-:~/IntroductionToFlask# mkdir myproject
-:~/IntroductionToFlask# cd myproject
-:~/IntroductionToFlask# python3 -m venv .venv
-:~/IntroductionToFlask# source .venv/bin/activate
-:~/IntroductionToFlask# pip install Flask
-:~/IntroductionToFlask/myproject# export FLASK_APP=hello.py
+:~# mkdir my
+:~# cd my
+:~/my# python3 -m venv .venv
+(.venv) :~# source .venv/bin/activate
+(.venv) :~# pip install Flask
+(.venv) :~/my# export FLASK_APP=hello.py
+(.venv) :~/my# flask run
+...
 ```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/99512bf2-d98f-4b96-8870-dfe02759f787)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/dd7f4d1e-5b82-4c3f-bb8a-910af4f35ff2)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/47a8cd4e-7d90-490d-875b-cd712d5435ee)
 
 <br>
 <br>
@@ -130,6 +144,26 @@ Note: You are going to get an error if you deploy the app at this point since we
 
 ![image](https://github.com/user-attachments/assets/f666324c-40ce-4693-8120-4b713986c247)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/266dae20-7cab-48fc-af0e-0bc720805361)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/dd164be1-6473-432c-81ab-3c23bf7a4cfc)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9e56e577-4980-4cc6-8367-b54752539617)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/52414082-30b0-4522-aa09-d46b29d72fe0)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d5c9254c-da58-4bd6-947f-728183d239d1)
 
 <br>
 <br>
@@ -150,6 +184,22 @@ Note: You are going to get an error if you deploy the app at this point since we
 >> <code><strong>HTML</strong></code>
 
 <br>
+
+```bash
+(.venv) :~/my# export FLASK_APP=a.py
+(.venv) :~/my# flask run
+...
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/30b073b4-0df4-4f8a-bca8-fd84c7bf813b)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/09bc64c3-3634-4f5c-a207-49cf349984ce)
+
 <br>
 
 <h2>Task 5 . File Upload</h2>
@@ -162,8 +212,47 @@ Note: You are going to get an error if you deploy the app at this point since we
 > 5.1. <em>Awesome!</em><br><a id='5.1'></a>
 >> <code><strong>No answer needed</strong></code>
 
+<br>
+
+<p><em>fileuploads.py</em></p>
+
+```bash
+from flask import request
+from werkzeug.utils import secure_filename
+from flask import render_template
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['filename']
+        f.save('uploads/' + secure_filename(f.filename))
+    return render_template('upload.html')
+```
 
 <br>
+
+<p><em>upload.html</em></p>
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+</body>
+</html>
+```
+
+<br>
+
+
 <br>
 
 <h2>Task 6 . Flask Injection</h2>
@@ -206,6 +295,27 @@ This vulnerability can be easily mitigated by using a single quotation mark (' '
 >> <code><strong>_____</strong></code>
 
 <br>
+
+<p>Navigated to <code>targetIP:5000/vuln?name={{ person.password }}</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7d61f8c4-e6f3-4838-8f8b-fcb49c6299cc)
+
+<br>
+
+<p>Navigated to <code>targetIP:5000/vuln?name=={{ get_user_file("/etc/passwd") }}</code></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/bfa28bbc-0919-4afa-a6dd-7dbd94e79e94)
+
+<br>
+
+<p>Navigated to <code>targetIP:5000/vuln?name=={{ get_user_file("/etc/passwd") }</code></p>
+
+<br>
+
 
 <h2>Task 7 . References and Sources</h2>
 
