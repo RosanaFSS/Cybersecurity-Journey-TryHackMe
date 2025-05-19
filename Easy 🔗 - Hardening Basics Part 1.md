@@ -1,6 +1,6 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Hardening Basics Part 1}}$$</h1>
 <p align="center">May 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{378}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
-Learn how to harden an Ubuntu Server! Covers a wide range of topics (Part 1): an easy-level walkthrough. You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/hardeningbasicspart1"</a>here.<br><br>
+Learn how to harden an Ubuntu Server! Covers a wide range of topics (Part 1): an easy-level walkthrough. It is Premium: only for subscribers.  Access it clicking <a href="https://tryhackme.com/room/hardeningbasicspart1"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/69200fb4-5976-4433-a063-1862037c68c0"></p>
 
 <br>
