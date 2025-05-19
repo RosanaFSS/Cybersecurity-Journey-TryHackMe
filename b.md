@@ -27,7 +27,7 @@ The hope is that by the end of this room, you'll be able to clearly explain and 
 
 Topics have been chosen from this book. I looked through the table of contents and picked out the ones that would be the most important and allow the room to have the best content while still keeping it within the proper limits. I think the above 4 topics are the best and will give you the most knowledge on how to harden a system. If you have a subscription to O'Reilly through work or school, I suggest checking the book out.</p>
 
-<h3>Disclaimer</h3>h3>
+<h3>Disclaimer</h3>
 
 <p>All tasks for this room were completed using Ubuntu 18.04 LTS. That being said, pretty much everything that applies to 18.04 can apply to 20.04 as well. If you take what you learn out of this room and try to apply it in the real world for practice and fun and something does not work, be sure to check the documentation for what you are trying to do. </p>
 
@@ -36,6 +36,10 @@ Topics have been chosen from this book. I looked through the table of contents a
 
 > 1.1. <em>Deploy the VM and let's get started!!</em><br><a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a2e114f2-2620-48ee-9b3b-8aeffe3b61c3)
 
 <br>
 
@@ -65,6 +69,7 @@ There is a tool in Linux that allows users to use their standard user accounts b
 > 3.1. <em>No questions</em><br><a id='3.1'></a>
 >> <code><strong>No answer needed</strong></code>
 
+
 <br>
 
 <h2>Task 4 . Sudo (Part 1)</h2>
@@ -88,10 +93,56 @@ Each of these tasks will require Nick to use sudo before being able to perform t
 
 <h3>﻿Adding Users to a Predefined Admin Group</h3>
 <h4>Method 1</h4>
-<p>...</p>
+<p>This is the first way to add users to the sudo group. Generally, this is considered the easiest method to allow users to use the sudo command. On Ubuntu 18.04, unless otherwise specified upon account creation, the user is automatically added to the sudo group. Let's take a look at nick's groups with the groups command.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6b0c9b8d-b9e0-4d92-8894-b72c5ec8922c)
+
+<br>
+
+<p>We can see that Nick is a part of the sudo group (as well as a few others). If Nick was not part of the sudo group already, we could easily add him with one simple command: usermod -aG sudo nick. The -aG options here will add Nick to the group sudo. Using the -a option helps Nick retain any previously existing groups. You can also directly add a user to the sudo group upon creation with the command, useradd -G sudo james .<br><br>
+
+But what does adding a user to the sudo group in Ubuntu mean? By default, Ubuntu allows sudo users to execute any program as root with their password. There are a few ways we can check this information. The first way is as Nick with sudo -l .</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d84546f7-e875-4d7c-9c9d-ddc4e8d8b2b7)
+
+<br>
+
+<p>The important information are in the last lines. This is saying that Nick (as part of the sudo group) may run all commands as any user on any machine. <br><br> 
+
+There's another way to view this information and that's with visudo. This opens the sudo policy file. The sudo policy file is stored in /etc/sudoers. We can do it here as Nick, but we would need to use sudo if we want to edit it since it can only be edited by the root user (using just visudo as Nick actually gives a permission denied).</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/73b58b68-dcef-426e-ab97-605a87066679)
+
+<br>
+
+<p>This gives the same information as sudo -l but it has one difference; the "%sudo" indicates that it's for the group, sudo. There are other groups in this file such as "admin". This is where administrators can set what programs a user in a certain group can perform and whether or not they need a password. You may have seen sometimes %sudo ALL=(ALL:ALL) ALL NOPASSWD: ALL. That NOPASSWD part says that the user that is part of the sudo group does not need to enter their local password to use sudo privileges. Generally, this is not recommended - even for home use.</p>
+
+
+<br>
 
 <h4>Method 2</h4>
-<p>...</p>
+<p>This next method utilizes the sudo policy file mentioned in Method 1. It's nice to be able to modify what an entire group can do, but that's just for Ubuntu.  If you're managing users in a network across multiple flavors of Linux (CentOS, Red Hat, etc.), where the sudo group may be called something different, this method may be more preferable.<br><br>
+
+What you can do is add a User Alias to the policy file and add users to that alias (below), or add lines for individual users.  The first image below creates the ADMIN User Alias and assigns 3 users to it and then says that this Alias has full sudo powers.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c2d22b16-43fc-43bd-a6b8-6d944de5f0fc)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d479d27f-79e4-498c-b84a-172842578c2d)
+
+<br>
+
+
+<p>I would not recommend the second option (individual user aliases) in a large network since this can become unwieldy very quickly.﻿ The first option is going to be your best bet as you'll see in the next Task that we can simply add users to this alias and control which commands they have access to with sudo very easily.</p>
 
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
