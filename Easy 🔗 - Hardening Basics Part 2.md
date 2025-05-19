@@ -235,8 +235,6 @@ INFO is the default setting. This is one of the two we would normally care about
 <code>#LogLevel INFO</code><br><br>
 We can uncomment that line and change it to any of the available levels above. And just like that, you'll now see more detailed logs in the /var/log/auth.log file.</p>
 
-<br>
-
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 <br>
 
@@ -244,4 +242,116 @@ We can uncomment that line and change it to any of the available levels above. A
 >> <code><strong>No answer needed</strong></code>
 
 <br>
+<br>
 
+<h2>Task 10 . ~~~~~ Chapter 4: Mandatory Access Control ~~~~~</h2>
+<h3>﻿Mandatory Access Control</h3>
+<p>﻿Mandatory Access Control (MAC) is a type of Access Control. It goes along with Discretionary Access Control, Role Based Access Control, and Rule Based Access Control. MAC is considered the strongest form of access control due to allowing more control over who has access over what. In a Linux system, there are multiple ways to implement MAC. Two of which being SELinux and AppArmor.  We're going to take a look at AppArmor in this chapter and see how a system administrator or security enthusiast could harden their systems using MAC. </p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 10.1. <em>Have fun!</em><br><a id='10.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+<br>
+<br>
+
+<h2>Task 11 . Introduction to <code>AppArmor</code></h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 11.1. <em>Have fun!</em><br><a id='11.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+
+<br>
+<br>
+
+<h2>Task 12 . <code>AppArmor</code> Command Line Utilities</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 12.1. <em>Have fun!</em><br><a id='12.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+
+<br>
+<br>
+
+<h2>Task 13 . ~~~~~ Chapter 4 Quiz ~~~~~</h2>
+<h3>Summary</h3>
+<p>You did it! You've completed every chapter in the room and are now ready for the final quiz. This was a short chapter on AppArmor and Mandatory Access Control. Remember what you've learned and answer the questions!</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+<br>
+
+> 13.1. <em>Where are the AppArmor profiles located?</em><br><a id='13.1'></a>
+>> <code><strong>/etc/apparmor.d</strong></code>
+
+<br>
+
+> 13.2. <em>This directory includes partial profiles to be used in your own custom profiles</em><br><a id='13.2'></a>
+>> <code><strong>abstractions</strong></code>
+
+<br>
+
+> 13.3. <em>This punctuation mark is REQUIRED at the end of every rule in a profile</em><br><a id='13.3'></a>
+>> <code><strong>,</strong></code>
+
+<br>
+
+> 13.4. <em>This AppArmor mode enforces the profiles but also logs them</em><br><a id='13.4'></a>
+>> <code><strong>audit</strong></code>
+
+<br>
+
+> 13.5. <em>This command checks the status of AppArmor</em><br><a id='13.5'></a>
+>> <code><strong>aa-status</strong></code>
+
+<br>
+<br>
+
+<h2>Task 14 . ~~~~~ Chapter 3: SSH and Encryption ~~~~~</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 14.1. <em>No questions</em><br><a id='14.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+
+<br>
+<br>
+
+<h2>Task 15 . Conclusion & Optional Challenges</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+<br>
+
+> 15.1. <em>Have fun!</em><br><a id='15.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+
+<br>
+<br>
