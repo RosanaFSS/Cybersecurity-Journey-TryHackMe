@@ -173,15 +173,21 @@ Following that, the program will proceed to generate random bytes for the key. I
 - <code>Real name</code>: <code>Nobody</code><br>
 - <code>Email address</gpg></code>:</gpg><code>fake@mail.com</code><br>
 - confirmed typing <code>O</code>:<code>Okay</code> and hit <code>ENTER</code>.<BR>
-- <code>Passphrase</code>:<code>************/code><br>
-- again code>Passphrase</code>:<code>************/code><br></p>
+- <code>Passphrase</code>:<code>************</code><br>
+- again <code>Passphrase</code>:<code>************</code><br></p>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/e9f2febf-6b96-4377-bc2c-622fe91efb29)
 
 <br>
+
+<p>Used <code>gpg --list-keys</code></p>
+
 <br>
+
+<br>
+
 
 <h2>Task 4 . Encrypting Your Files</h2>
 <h3>Encrypting Your Files with GPG</h3>
