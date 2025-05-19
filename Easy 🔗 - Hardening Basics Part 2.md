@@ -1,7 +1,7 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Hardening Basics Part 2}}$$</h1>
 <p align="center">May 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{378}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Continue learning about hardening: an easy-level walkthrough. It is Premium: only for subscribers.  Access it clicking <a href="https://tryhackme.com/room/hardeningbasicspart2"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/88cfbce6-309d-4c4f-a24f-814314d91aa4"></p>
 
 <br>
 
@@ -617,5 +617,67 @@ And lastly, it took a lot of research and effort to make this room.  I didn't kn
 <p></p> <code>[Easy]</code> Make a User Alias called "ADMINS". Then make a Command Alias called "ADMIN COMMANDS" and assign it some commands. Practice what you learned. Assign it to someone other than spooky. You can test the configuration by trying commands that are not assigned to the alias. You can enter visudo as spooky with sudo.</p>
 
 
+<br>
+
+![image](https://github.com/user-attachments/assets/7a5706b8-e669-46fe-abfc-82ccf7910d4b)
 
 <br>
+
+![image](https://github.com/user-attachments/assets/78bb27fc-823e-463a-99e4-505a82c04a13)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/2702ce05-2f45-4b0f-96d8-d852a1ba5a41)
+
+
+<br>
+<br>
+
+<h3>Challenge B</h3>
+<p></p><code>[Medium]</code> Spooky has a group that we talked about that should not be left on. Exploit it (research will be needed for this).</p>
+
+<p>- <code>git clone https://github.com/saghul/lxd-alpine-builder.git</code><br>
+- set up an http server</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/96aca480-86ab-429e-bf0e-81482721b540)
+
+
+<br>
+
+<p>Chlallenges to be implemented ...</p>
+
+<br>
+<br>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/7fa3a6f2-61e7-45e8-836e-d14f3c87ee91"><br>
+                   <img width="600px" src="https://github.com/user-attachments/assets/ffb5fd80-ea07-40c3-aee3-a177db7c6a77"></p>
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+
+
+<div align="center">
+
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| May 19, 2025      |     378    |          218ᵗʰ         |            5ᵗʰ       |        172ⁿᵈ         |           5ᵗʰ        |       103,469      |             738      |    62       |
+
+</div>
+
+<p align="center"> Global All Time: 218ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/0c092087-89f6-437b-ad2d-1889f8674011" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/cf17c698-cc73-4032-9f2e-0bb881b11045"><br><br>
+                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/452e0381-510e-4b38-bc89-bc4ad9b7b1da"><br><br>
+                   Global monthly:   172ⁿᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/2c18d0e6-0db1-46ea-9646-61f187ff24a6"><br><br>
+                   Brazil monthly:    5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/ad18dde8-0592-495c-9b6c-5721a05a9b69"><br><br></p>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<br>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/Nameless0ne">Nameless0ne</a> and <a href="https://tryhackme.com/p/Aashir.Masood">Aashir.Masood</a><br>for developinng this experience so that I could sharpen my skills!</h1>
