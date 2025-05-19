@@ -365,7 +365,7 @@ The max key size with ECDSA is 521 bits. However, NIST does not recommend this k
 <p>Neat. There's a few different levels of logging that you can find in the man pages of <code>sshd_config</code>.  They are<br>
 
 - QUIET<br>
--FATAL<br>
+- FATAL<br>
 - ERROR<br>
 - INFO<br>
 - VERBOSE<br>
@@ -402,6 +402,41 @@ We can uncomment that line and change it to any of the available levels above. A
 <br>
 
 <h2>Task 11 . Introduction to <code>AppArmor</code></h2>
+<h3>AppArmor</h3>
+<p>﻿AppArmor comes preinstalled with Ubuntu so that means no additional tools to install (yay!). Both, AppArmor and SELinux can be used to implement MAC on a Linux system but since we're going over AppArmor in this walkthrough, let's look at some of the benefits of AppArmor.<br><br>
+
+- It can prevent malicious actors from accessing the data on your systems. As a system administrator, this is extremely important; protecting the confidentiality of your data<br>
+- Applications have their own profiles thus making it a little easier<br>
+- SELinux and AppArmor have the capability to create your own custom profiles but the scripting in AppArmor is a little easier to understand and reduces the learning curve</p>
+
+<h3>AppArmor Configuratuin</h3>
+<p>The AppArmor directory is located at <code>/etc/apparmor.d</code>. This directory contains all of the AppArmor profiles. The <code>sbin.dhclient</code> and <code>usr.*</code> files are AppArmor profiles.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/8ed7e581-1d88-4e0b-bdea-f8415ca9c7ae)
+
+<br>
+
+The <code>abstractions</code> directory is a sort of "includes" folder that has partially written profiles that can be used and included in your own profiles. Part of the work has already been done for you. Here is a listing of the <code>abstractions</code> directory
+
+<br>
+
+![image](https://github.com/user-attachments/assets/170ab18d-2e0e-4cf9-b11b-e7b4c66a68eb)
+
+<br>
+
+<p>Lots of things here for you to use in your custom profiles! Let's take a look at one. I've already gone through and checked a lot of these out and I picked one that I think goes over quite a bit. For this example, let's look at the gnupg file.
+
+</p>
+
+![image](https://github.com/user-attachments/assets/dd7f2e52-0110-4ce0-af5a-e0b48f69dfc4)
+
+<br>
+
+<p>You'll notice that each line/rule ends in a comma. This is required syntax (even for the last rule). You'll also notice that each rule has an <code>owner @{HOME}</code> portion for each listing. The <code>@{HOME}</code> is an AppArmor variable that allows the rule to work with any user's home directory. The access methods before the end of the rule are what you'd expect <code>-r</code> for reading, <code>w</code> for writing. These indicate that the AppArmor daemon have those permissions to read and write to that location preceding it. Easy, right? The only one that you may not know is <code>m</code> which indicates that the file can be used for executable mapping - the file can be mapped into memory using <code>nmap</code>. Remember, these are not configured profiles. They are partials meant to be included in custom profiles. The only two profiles upon a fresh install of Ubuntu are the few mentioned earlier, <code>sbin.dhclient</code> and <code>usr.*</code>. There are a few in the <code>lxc</code>  directory and <code>lxc-containers</code>  file but not much.<br><br>
+
+Additional profiles can be installed with <code>sudo apt install apparmor-profiles apparmor-profiles-extra</code>.</p>
 
 <br>
 
@@ -417,6 +452,32 @@ We can uncomment that line and change it to any of the available levels above. A
 <br>
 
 <h2>Task 12 . <code>AppArmor</code> Command Line Utilities</h2>
+<h3>AppArmor Command-Line Utilities</h3>
+<p>﻿When working with AppArmor, you're going to undoubtedly need to know the commands to interact with it. But before you do that, you should probably know the different modes of AppArmor. A few have direct comparisons to SELinux if you know them already but to make things less confusing, I won't mention the comparisons.<br><br>
+
+To get the AppArmor status, we can enter <code>aa-status</code>. This gives us quite a long output.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/73adcdd1-d950-409f-af4c-d08edd3765c1)
+
+<br>
+
+<p>We can see that AppArmor is indeed loaded and it is currently set to enforce mode. There are 19 profiles loaded. This segues nicely into the different AppArmor modes.<br><br>
+
+- Enforce - Enforces the active profiles<br>
+- Complain - Allows processes to perform disallowed actions by the profile and are logged<br>
+- Audit - The same as Enforce mode but allowed and disallowed actions get logged to <code>/var/log/audit/audit.log</code> or system log (depending on if <code>auditd</code> is installed)<br><br>
+In order to use any of the command-line utilities I'm about to show, you'll need to perform the following, <code>sudo apt install apparmor-utils</code>. This will enable the following commands, <code>aa-enforce</code>, <code>aa-disable</code>, <code>aa-audit</code>, <code<aa-complain</code>.  Let's set the <code>usr.sbin.rsyslogd</code> profile to enforce mode and then check the status</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3bb5d9db-596e-4ab9-b742-9205acbd2bd3)
+
+<br>
+
+<p>From the output you can see that 20 profiles are now loaded which is 1 more than from the previous status we ran.</p>
+
 
 <br>
 
@@ -468,6 +529,23 @@ We can uncomment that line and change it to any of the available levels above. A
 <br>
 
 <h2>Task 14 . ~~~~~ Chapter 3: SSH and Encryption ~~~~~</h2>
+<h3>Chapter 3: SSH and Encryption</h3>
+<p>Encryption is a super important topic. Everything needs encryption! Whether its that super secret puppy gif collection, corporate documents, personal documents, even entire hard drives; it can all be encrypted! Understanding how to put encryption into effect and in place at home and work is a vital piece of information to have. It could save your personal files from being compromised or work documents from being stolen.<br><br>
+
+Encryption covers a lot of different things. Just in the Sec+ alone, you cover symmetric and asymmetric encryption, private and public keys, various ciphers, hashing...it's a lot. This is going to be less than that and more focused on encryption as it pertains to Ubuntu and hardening your system/server. So sit back and let's get ready. We're going to cover a lot of things here.  Topics will include:<br>
+
+- GNU Privacy Guard<br>
+  - Encrypting files with GPG<br>
+- SSH<br>
+  - Disabling SSH Protocol 1<br>
+  - Creating Keys<br>
+  - Disabling username/password logins<br>
+  - Configuring SSH encryption<br>
+  - More detailed logging<br>
+  - Disabling SSH Tunneling<br>
+  - Disabling X11 Forwarding<br><br>
+  
+Let's get started!</p>
 
 <br>
 
@@ -483,6 +561,48 @@ We can uncomment that line and change it to any of the available levels above. A
 <br>
 
 <h2>Task 15 . Conclusion & Optional Challenges</h2>
+<h3>Closing Thoughts﻿</h3>
+<p>Well, you made it.  Thanks for sticking around and congratulations on completing this room.  We've gone through a lot and I hope you've learned something that you can take away and implement in your corporate/work environment or home environment or labs.<br><br>
+
+Really, there's so much to cover in terms of hardening.  It was really hard to pick which topics to go over but after a lot of thought, the ones I chose were ultimately the ones I felt that would have the most benefit for the users here on TryHackMe.  We could have an entire room on Firewall hardening and rules and logging and testing (and maybe someone will do that), but I wanted to give a good overview of hardening concepts and best practices.<br><br>
+
+If you're interested in learning more, I highly recommend the book, Mastering Linux Security and Hardening by Donald A. Tevault.  There's just so much I couldn't cover that is explained in great detail in this book.  A lot of the material in this room came from this book.  Check it out.<br><br>
+
+And lastly, it took a lot of research and effort to make this room.  I didn't know about all of the topics covered when I first started.  And I definitely didn't know about all of the secure practices covered.  That being said, I'm only human and if I missed something or if some information here is wrong or misleading, let me know in the Discord or a DM on the site and I'll do my best to fix it.</p>
+
+<h3>Resources﻿</h3>
+- https://www.tecmint.com/configure-pam-in-centos-ubuntu-linux/<br>
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/s2-wstation-privileges-noroot<br>
+- https://help.ubuntu.com/community/IptablesHowTo#Saving_iptables<br>
+- https://help.ubuntu.com/community/UFW<br>
+- https://manpages.ubuntu.com/manpages/xenial/man5/apparmor.d.5.html<br>
+- http://manpages.ubuntu.com/manpages/bionic/man7/PAM.7.html<br>
+- https://www.digitalocean.com/community/tutorials/how-to-use-pam-to-configure-authentication-on-an-ubuntu-12-04-vps<br>
+- https://linux.die.net/man/8/pam_pwhistory<br>
+- https://www.amazon.com/Mastering-Linux-Security-Hardening-intruders/dp/1788620305</p>
+
+<h3>Challenges</h3>
+<p>I've set up some challenges for you to try to figure out while you play with the machine. You do not have to do these. They are entirely optional but will help cement the material and commands that you have learned. Enjoy!</p>
+
+<h4>Challenge List</h4>
+<p><code>[Easy]</code> Make a User Alias called "ADMINS". Then make a Command Alias called "ADMIN COMMANDS" and assign it some commands. Practice what you learned. Assign it to someone other than spooky. You can test the configuration by trying commands that are not assigned to the alias. You can enter visudo as spooky with sudo.<br><br>
+
+<code>[Medium]</code> Spooky has a group that we talked about that should not be left on. Exploit it (research will be needed for this).<br><br>
+
+<code>[Easy]</code> Spooky has gone and mucked up the firewall. Users outside the organization are reporting that they cannot reach the webpage on port 80. Figure out what he did and make it right! (<code>spooky:tryhackme</code>)<br><br>
+
+<code>[Medium]</code> James has been notified that he needs to change his password as it is too simple. Login as James and change his password. You will need to conform to the following requirements. (<code>james:easy</code>)<br>
+- minlen=8<br>
+- difok=3<br>
+- lcredit=-1<br>
+- dcredit=-1<br>
+- ucredit=-1<br>
+- ocredit=-1<br><br>
+
+<code>[Easy]</code> Using James and Spooky, play around with Gnu Privacy Guard and encrypt and decrypt a file. Try using both, symmetric and asymmetric encryption types. <code>If you did the challenge above and reset James's password, don't forget to write it down and use the new password</code>!<br><br>
+
+<code>[Easy]</code> Configure SSH for Public Key Encryption. You do not need to change or modify anything in <code>/etc/ssh/sshd_config</code>. Test it with spooky. You should not need root login for this. If you need a hint, look in Task 21.</p>
+
 
 <br>
 
