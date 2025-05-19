@@ -26,7 +26,7 @@ Flask is a micro web framework written in Python. It is classified as a microfra
 <br>
 <br>
 
-<h2>Task 2. Installation and Deployment basics</h2>
+<h2>Task 2 . Installation and Deployment basics</h2>
 <p>Let's proceed with basic installation. For this room, we are going to use Python3. You can get it for both Windows and Linux here:<br><br>
 <a href="https://www.python.org/"</a>Link</p>
 
@@ -79,6 +79,133 @@ Note: You are going to get an error if you deploy the app at this point since we
 <br>
 
 > 2.1. <em>Which environment variable do you need to change in order to run Flask?</em><br><a id='2.1'></a>
+>> <code><strong>FLASK_APP</strong></code>
+
+<br>
+
+<p>Navigated to the provided repository.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b2a14645-4b39-4dd8-be03-a005b96a1f13)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3a5c24c7-6124-4bf1-961a-25a461a81f6e)
+
+
+
+```bash
+:~/IntroductionToFlask# sudo apt update && apt upgrade -y
+...
+:~/IntroductionToFlask# sudo apt install python3-pip -y
+...
+:~/IntroductionToFlask# pip3 install Flask
+...
+:~/IntroductionToFlask# mkdir myproject
+:~/IntroductionToFlask# cd myproject
+:~/IntroductionToFlask# python3 -m venv .venv
+:~/IntroductionToFlask# source .venv/bin/activate
+:~/IntroductionToFlask# pip install Flask
+:~/IntroductionToFlask/myproject# export FLASK_APP=hello.py
+```
+
+<br>
+<br>
+
+<h2>Task 3 . Basic syntax and routing</h2>
+
+<p>[ ... ]</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
+
+> 3.1. <em>What's the default deployment port used by Flask?</em><br><a id='3.1'></a>
+>> <code><strong>FLASK_APP</strong></code>
+
+<br>
+
+> 3.2. <em>Is it possible to change that port? (yay/nay)</em><br><a id='3.2'></a>
+>> <code><strong>yayP</strong></code>
+
+![image](https://github.com/user-attachments/assets/f666324c-40ce-4693-8120-4b713986c247)
+
+
+<br>
+<br>
+
+<h2>Task 4 . HTTP Methods and Template Rendering</h2>
+
+<p>[ ... ]</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
+
+> 4.1. <em>Does Flask support POST requests? (yay/nay)</em><br><a id='4.1'></a>
+>> <code><strong>yay</strong></code>
+
+<br>
+
+> 4.2. <em>What markdown language can you use to make templates for Flask? </em><br><a id='4.2'></a>
+>> <code><strong>HTML</strong></code>
+
+<br>
+<br>
+
+<h2>Task 5 . File Upload</h2>
+
+<p>[ ... ]</p>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 5.1. <em>Awesome!</em><br><a id='5.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+
+<br>
+<br>
+
+<h2>Task 6 . Flask Injection</h2>
+
+<p>At this point, it looks like Flask is a great framework for young developers. It definitely is a great tool but a simple misconfiguration may lead to severe security consequences. A major vulnerability was found in Flask's template rendering. The template engine provided within the Flask framework may allow developers to introduce Server-Side Template Injection (SSTI) vulnerabilities.  An attacker can execute code within the context of the server. In some cases, it may lead to a full Remote Code Execution (RCE).<br><br>
+
+For the sake of this room let's take a look at a bad code configuration and see how it can be used to exploit a Local File Inclusion (LFI)!</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/083e298b-03bf-4219-8e59-268cb4df4d4f)
+
+<br>
+
+<p>The main reason for this vulnerability is that Jinja2 (template rendering engine) uses curly braces to surround variables used in the template. As you can see on the line with # Problem, our template is put in ''' ''' brackets which allow us to abuse the Jinja template mechanism. A variable after hello is parsing a name from a variable person. But because this is a vulnerable code we can make it output the password.<br><br>
+
+Go to the <code>MACHINE_IP:5000/vuln?name=</code><br><br>
+
+Simply put <code>{{ person.password }}</code> at the end of the link to see the password being displayed in cleartext. </p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/eaf39fff-8624-4405-b313-eb01e8246865)
+
+<br>
+
+<p>Now let's take that vulnerability to another level and read files (LFI).<br><br>
+<code>{{ get_user_file("/etc/passwd") }}</code>
+
+The above string will allow you to read the /etc/passwd file or any other if you simply change the name.<br><br>
+
+This vulnerability can be easily mitigated by using a single quotation mark (' ') in the template variable (instead of ''' '''').  It may look ridiculous, but many python developers make these kinds of mistakes, and unintentionally make their websites vulnerable to SSTI.</p>
+
+
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 6.1. <em>What's inside /home/flask/flag.txt ?</em><br><a id='6.1'></a>
 >> <code><strong>_____</strong></code>
 
+<br>
+
+<h2>Task 7 . References and Sources</h2>
 
