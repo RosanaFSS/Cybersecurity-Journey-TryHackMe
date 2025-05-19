@@ -14,7 +14,6 @@ In this room, we will cover the following:<br>
 1. SSH and Encryption (Chapter 3)<br>
 2. Mandatory Access Control (Chapter 4)
 <br>
-<br>
 This was mentioned in Part 1 but in case you did not do that room:
 <br>
 <br>
