@@ -526,7 +526,7 @@ Ubuntu actually comes with the Uncomplicated Firewall (ufw), which is an easy to
 <p>iptables actually has 4 different components to it that all come together to give the utility its overall functionality. They are:<br>
 
 - <code>Filter table</code> - offers the basic protection that you'd expect a firewall to provide<br>
-- <code>Network Address Translation table<code> - connects the public interwebs to the private networks<br>
+- <code>Network Address Translation table</code> - connects the public interwebs to the private networks<br>
 - <code>Mangle table</code> - for mangling them packets as they go through the firewall<br>
 - <code>Security table</code> - only used by SELinux</p>
 
