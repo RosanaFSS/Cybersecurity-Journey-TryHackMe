@@ -587,11 +587,11 @@ And lastly, it took a lot of research and effort to make this room.  I didn't kn
 <h4>Challenge List</h4>
 <p><strong>A)</strong> <code>[Easy]</code> Make a User Alias called "ADMINS". Then make a Command Alias called "ADMIN COMMANDS" and assign it some commands. Practice what you learned. Assign it to someone other than spooky. You can test the configuration by trying commands that are not assigned to the alias. You can enter visudo as spooky with sudo.<br><br>
 
-<code>[Medium]</code> Spooky has a group that we talked about that should not be left on. Exploit it (research will be needed for this).<br><br>
+<strong>B)</strong> <code>[Medium]</code> Spooky has a group that we talked about that should not be left on. Exploit it (research will be needed for this).<br><br>
 
-<code>[Easy]</code> Spooky has gone and mucked up the firewall. Users outside the organization are reporting that they cannot reach the webpage on port 80. Figure out what he did and make it right! (<code>spooky:tryhackme</code>)<br><br>
+<strong>C)</strong>  <code>[Easy]</code> Spooky has gone and mucked up the firewall. Users outside the organization are reporting that they cannot reach the webpage on port 80. Figure out what he did and make it right! (<code>spooky:tryhackme</code>)<br><br>
 
-<code>[Medium]</code> James has been notified that he needs to change his password as it is too simple. Login as James and change his password. You will need to conform to the following requirements. (<code>james:easy</code>)<br>
+<strong>D)</strong> <code>[Medium]</code> James has been notified that he needs to change his password as it is too simple. Login as James and change his password. You will need to conform to the following requirements. (<code>james:easy</code>)<br>
 - minlen=8<br>
 - difok=3<br>
 - lcredit=-1<br>
@@ -599,9 +599,9 @@ And lastly, it took a lot of research and effort to make this room.  I didn't kn
 - ucredit=-1<br>
 - ocredit=-1<br><br>
 
-<code>[Easy]</code> Using James and Spooky, play around with Gnu Privacy Guard and encrypt and decrypt a file. Try using both, symmetric and asymmetric encryption types. <code>If you did the challenge above and reset James's password, don't forget to write it down and use the new password</code>!<br><br>
+<strong>E)</strong>  <code>[Easy]</code> Using James and Spooky, play around with Gnu Privacy Guard and encrypt and decrypt a file. Try using both, symmetric and asymmetric encryption types. <code>If you did the challenge above and reset James's password, don't forget to write it down and use the new password</code>!<br><br>
 
-<code>[Easy]</code> Configure SSH for Public Key Encryption. You do not need to change or modify anything in <code>/etc/ssh/sshd_config</code>. Test it with spooky. You should not need root login for this. If you need a hint, look in Task 21.</p>
+<strong>F)</strong> <code>[Easy]</code> Configure SSH for Public Key Encryption. You do not need to change or modify anything in <code>/etc/ssh/sshd_config</code>. Test it with spooky. You should not need root login for this. If you need a hint, look in Task 21.</p>
 
 
 <br>
