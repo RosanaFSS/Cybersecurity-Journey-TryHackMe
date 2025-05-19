@@ -33,6 +33,8 @@ The hope is that by the end of this room, you'll be able to clearly explain and 
 
 Topics have been chosen from this book. I looked through the table of contents and picked out the ones that would be the most important and allow the room to have the best content while still keeping it within the proper limits. I think the above 4 topics are the best and will give you the most knowledge on how to harden a system. If you have a subscription to O'Reilly through work or school, I suggest checking the book out.</p>
 
+<p>book chosen --> https://learning.oreilly.com/library/view/mastering-linux-security/9781788620307/</p>
+
 <h3>Disclaimer</h3>
 <p>All tasks for this room were completed using Ubuntu 18.04 LTS. That being said, pretty much everything that applies to 18.04 can apply to 20.04 as well. If you take what you learn out of this room and try to apply it in the real world for practice and fun and something does not work, be sure to check the documentation for what you are trying to do. </p>
 
@@ -42,6 +44,15 @@ Topics have been chosen from this book. I looked through the table of contents a
 
 > 1.1. <em>Deploy the VM if necessary and let's go!</em><br><a id='1.1'></a>
 >> <code><strong>No answer needed</strong></code>
+
+<br>
+
+<p>Used <code>ssh</code> with the credentials <code>spooky</code>:<code>tryhackme</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/fe97603d-1ed2-47e6-b66c-9e67523a223d)
+
 
 <br>
 <br>
@@ -108,8 +119,47 @@ Now it's time to complete a little skills check and see how well you understand 
 <br>
 
 <h2>Task 3 . GNU Privacy Guard</h2>
-<h3> GNU Privacy Guard</h3>
-<p>[ ... ]</p>
+<h3>GNU Privacy Guard</h3>
+<p>To understand what GNU Privacy Guard (GPG) is and does, we need to start with the original encryption system it's based off of; Pretty Good Privacy.</p>
+<h4>Overview of Pretty Good Privacy</h4>
+<p>Pretty Good Privacy (PGP) is used widely to encrypt and decrypt email by using asymmetrical and symmetrical systems. When you first send your email, it is encrypted with your own public key, as well as a session key, which is a one-time use random number called a nonce. The session key is then encrypted into the public key and sent with the cipher text. To decrypt your email, the receiving end must use their private key in order to discover the session key. The session key combined with the private key are then used to decrypt the cipher text back into the original document.</p>
+<p>This is where GPG comes in. GPG is actually directly based off of the OpenPGP standard. GPG comes pre-installed on Ubuntu and comes with several advantages:<br>
+
+- Easy encryption for email and files<br>
+- Even the NSA can't crack PGP (https://twitter.com/Snowden/status/878686842631139334?s=20)<br>
+- Asymmetric encryption removes the need to provide a password for decrypting or unlocking files thus improving security overall</p>
+<br>
+<h3>Using GPG</h3>
+<h4>Creating GPG Keys</h4>
+<p>When you first want to use GPG, it requires you to create your own keys. To do that we use <code>gpg --gen-key</code>.</p>
+<p>This process is extremely simple. Once you press Enter after inputting the above command, it will create some files and directories as well as ask for some information:</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/8624a276-d56b-4adc-9950-2157354c9653)
+
+<p>I've just entered fake information for this user (the key generation process will still work).<br><br>
+
+Following that, the program will proceed to generate random bytes for the key. It informs the user that</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/057270a2-b0bd-4d8e-a8d6-c66308819dc5)
+
+<br>
+
+<p>So go ahead and move your mouse, type some stuff out or engage the disks. I just moved the mouse around...a lot. After quite some time, the process will complete and create another directory in your home directory called <code>.gnugpg</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/645f8e09-805e-4649-bfb5-7a2044c078da)
+
+<br>
+
+<p>You can verify the keys were created with <code>gpg --list-keys</code>.</p>
+
+<br>
+
 
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 <br>
