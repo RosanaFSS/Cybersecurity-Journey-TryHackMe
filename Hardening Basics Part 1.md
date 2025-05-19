@@ -417,37 +417,38 @@ So take some time to grab a drink, stretch, and re-read some Tasks if you have t
 
 <br>
 
-> 11.5. <em>When in visudo and you see %____, what does the % sign indicate that you are dealing with?</em><br><a id='11.5></a>
+
+> 11.5. <em>When in visudo and you see %____, what does the % sign indicate that you are dealing with?</em><br><a id='11.5'></a>
 >> <code><strong>group</strong></code>
 
 <br>
 
-> 11.6. <em>This Alias lets the user assign a name, like "ADMINS" to a group of people </em><br><a id='11.6></a>
+> 11.6. <em>This Alias lets the user assign a name, like "ADMINS" to a group of people </em><br><a id='11.6'></a>
 >> <code><strong>user</strong></code>
 
 <br>
 
-> 11.7. <em>Which Alias allows you to create a set of commands that you can then assign to a User Alias?</em> Hint : <em>It's abbreviated in visudo, but spell out the whole word</em><br><a id='11.7></a>
+> 11.7. <em>Which Alias allows you to create a set of commands that you can then assign to a User Alias?</em> Hint : <em>It's abbreviated in visudo, but spell out the whole word</em><br><a id='11.7'></a>
 >> <code><strong>command</strong></code>
 
 <br>
 
-> 11.8. <em>Yey/Ney - emacs has a shell escape</em><br><a id='11.8></a>
+> 11.8. <em>Yey/Ney - emacs has a shell escape</em><br><a id='11.8'></a>
 >> <code><strong>Yey</strong></code>
 
 <br>
 
-> 11.9. <em>What is the minimum recommended password length set by NIST?</em><br><a id='11.9></a>
+> 11.9. <em>What is the minimum recommended password length set by NIST?</em><br><a id='11.9'></a>
 >> <code><strong>8</strong></code>
 
 <br>
 
-> 11.10. <em>When using the pwhistory module, which file will contain the previous passwords for the user?</em><br><a id='11.10></a>
+> 11.10. <em>When using the pwhistory module, which file will contain the previous passwords for the user?</em><br><a id='11.10'></a>
 >> <code><strong>opasswd</strong></code>
 
 <br>
 
-> 11.11. <em>What principle states that every user only has enough access to do their daily duties and tasks</em><br><a id='11.11></a>
+> 11.11. <em>What principle states that every user only has enough access to do their daily duties and tasks</em><br><a id='11.11'></a>
 >> <code><strong>principle of least privilege</strong></code>
 
 <br>
