@@ -585,7 +585,7 @@ And lastly, it took a lot of research and effort to make this room.  I didn't kn
 <p>I've set up some challenges for you to try to figure out while you play with the machine. You do not have to do these. They are entirely optional but will help cement the material and commands that you have learned. Enjoy!</p>
 
 <h4>Challenge List</h4>
-<p><code>[Easy]</code> Make a User Alias called "ADMINS". Then make a Command Alias called "ADMIN COMMANDS" and assign it some commands. Practice what you learned. Assign it to someone other than spooky. You can test the configuration by trying commands that are not assigned to the alias. You can enter visudo as spooky with sudo.<br><br>
+<p><strong>A)</strong> <code>[Easy]</code> Make a User Alias called "ADMINS". Then make a Command Alias called "ADMIN COMMANDS" and assign it some commands. Practice what you learned. Assign it to someone other than spooky. You can test the configuration by trying commands that are not assigned to the alias. You can enter visudo as spooky with sudo.<br><br>
 
 <code>[Medium]</code> Spooky has a group that we talked about that should not be left on. Exploit it (research will be needed for this).<br><br>
 
