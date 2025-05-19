@@ -194,7 +194,7 @@ Following that, the program will proceed to generate random bytes for the key. I
 
 <h2>Task 4 . Encrypting Your Files</h2>
 <h3>Encrypting Your Files with GPG</h3>
-<h4>/h4>.Symmetric</h4>
+<h4>.Symmetric</h4>
 <p>[ ... ]</p>
 <br>
 <h4>Asymmetric</h4>
@@ -281,15 +281,35 @@ Remember from our discussion earlier on public and private keys. Well, this comm
 Article link --> https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604</p>
 <br>
 <h3>Copying Manually</h3>
-<p>[ ... ]</p>
+<p>You can copy the keys manually as well. If you still have password access to your remote host, you can perform the following (this should be done as root and after keys have been generated):<br><br>
+
+<code>mkdir -p ~/.ssh</code><br><br>
+
+From here, you'll want to create or modify an <code>authorized_keys</code> file in which you'll place your public key string into in a minute. Once this file is created you can <code>cat /home/user/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys</code> and that will copy the output of your public key into the <code>authorized_keys</code> file.<br><br>
+
+Once that is done, be sure (still as root in this case) to run <code>chmod -R go= ~/.ssh</code> which will recursively (<code>-R</code>) remove group and other permissions on the <code>~/.ssh</code> directory.<br><br>
+
+If, after doing all of this, your remote host is still prompting for a password, be sure to check your permissions. I found that this Stack Exchange article helped me the most. However, that being said, permissions should be set up correctly when using the <code>ssh-keygen</code> command and if you are logged in as root when making the <code>.ssh</code> and <code>authorized_keys</code> directory and file, those permissions should be okay as well.<br><br>
+Stack Exchanged article --> https://unix.stackexchange.com/questions/36540/why-am-i-still-getting-a-password-prompt-with-ssh-with-public-key-authentication</p>
+<br>
 <h3>Creating Keys with Updated Encryption Algorithms</h3>
-<p>[ ... ]</p>
+<p>In the previous task, we used ssh-keygen to create our keys. By default this uses RSA with a 2048 size key. Generally this is pretty okay and fine for day to day going abouts. However, you should be aware that there are other supported encryption algorithms and bit sizes. And this wouldn't be a room about hardening without discussing at least how to create these keys.<br><br>
+
+The U.S. National Institute of Standards and Technology (NIST) are now recommending RSA of at least 3072 bits or an Elliptic Curve Digital Signature Algorithm (ECDSA) key of at least 384 bits.</p>
 <br>
 <h3>RSA</h3>
-<p>[ ... ]</p>
+<p>To create that modified RSA key, we can use the following command during key generation<br><br>
+
+<code>ssh-keygen -t rsa -b 3072</code><br><br>
+
+The <code>-t</code> option specifies the encryption type and the <code>-b</code> option specifies the bit size.  </p>
 <br>
 <h3>ECDSA</h3>
-<p>[ ... ]</p>
+<p>By now you probably can guess how you'd go about creating your ECDSA key.<br><br>
+
+<code>ssh-keygen -t ecdsa -b 384</code>
+
+The max key size with ECDSA is 521 bits. However, NIST does not recommend this key size as they could be susceptible to padding attacks. 384 bits is quite strong and although the key size is smaller than RSA's 3072 key size, it's just as strong as RSA while also requiring less computing power, which is a plus.</p>
 <br>
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 <br>
