@@ -169,7 +169,7 @@ Following that, the program will proceed to generate random bytes for the key. I
 
 <br>
 
-<p>Used <code><gpg --gen-key</code>:<br>
+<p>Used <code>gpg --gen-key</code><br>
 - <code>Real name</code>: <code>Nobody</code><br>
 - <code>Email address</gpg></code>:</gpg><code>fake@mail.com</code><br>
 - confirmed typing <code>O</code>:<code>Okay</code> and hit <code>ENTER</code>.<BR>
