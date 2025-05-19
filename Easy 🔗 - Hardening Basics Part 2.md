@@ -161,11 +161,24 @@ Following that, the program will proceed to generate random bytes for the key. I
 <br>
 
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 <br>
 
 > 3.1. <em>No questions</em><br><a id='3.1'></a>
 >> <code><strong>No answer needed</strong></code>
+
+<br>
+
+<p>Used <code><gpg --gen-key</code>:<br>
+- <code>Real name</code>: <code>Nobody</code><br>
+- <code>Email address</gpg></code>:</gpg><code>fake@mail.com</code><br>
+- confirmed typing <code>O</code>:<code>Okay</code> and hit <code>ENTER</code>.<BR>
+- <code>Passphrase</code>:<code>************/code><br>
+- again code>Passphrase</code>:<code>************/code><br></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/e9f2febf-6b96-4377-bc2c-622fe91efb29)
 
 <br>
 <br>
@@ -185,7 +198,33 @@ Following that, the program will proceed to generate random bytes for the key. I
 >> <code><strong>No answer needed</strong></code>
 
 <br>
+
+<p>Created a <code>Task4-File.txt</code> and run <code>gpg -c</code> against it to encrypt it.<br>
+Typed and confirmed a passphrase.</p>
+
 <br>
+
+![image](https://github.com/user-attachments/assets/ef518214-9f49-41ab-b432-71982ace1acb)
+
+
+<br>
+
+<p>A <code>Task4-File.gpg</code> was generated.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ba007259-5510-41e0-aed8-55f2abd78127)
+
+<br>
+
+<p>Used <code>gpg -d </code> against the <code>.gpg</code> file to decrypt the file and visualize what´s inside.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6440dd17-84cf-4fa0-941d-92d6dfc3a55a)
+
+<br>
+
 
 <h2>Task 5 . SSh Protocol 1</h2>
 <h3>SSH Protocol 1</h3>
