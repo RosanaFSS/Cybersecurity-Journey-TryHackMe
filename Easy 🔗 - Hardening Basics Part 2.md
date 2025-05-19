@@ -604,15 +604,18 @@ And lastly, it took a lot of research and effort to make this room.  I didn't kn
 <strong>F)</strong> <code>[Easy]</code> Configure SSH for Public Key Encryption. You do not need to change or modify anything in <code>/etc/ssh/sshd_config</code>. Test it with spooky. You should not need root login for this. If you need a hint, look in Task 21.</p>
 
 
-<br>
-
 <h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
 
-<br>
 
 > 15.1. <em>Have fun!</em><br><a id='15.1'></a>
 >> <code><strong>No answer needed</strong></code>
 
 
 <br>
+
+<h3>Challenge A</h3>
+<p></p> <code>[Easy]</code> Make a User Alias called "ADMINS". Then make a Command Alias called "ADMIN COMMANDS" and assign it some commands. Practice what you learned. Assign it to someone other than spooky. You can test the configuration by trying commands that are not assigned to the alias. You can enter visudo as spooky with sudo.</p>
+
+
+
 <br>
