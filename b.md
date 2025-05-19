@@ -74,14 +74,14 @@ There is a tool in Linux that allows users to use their standard user accounts b
 
 <h2>Task 4 . Sudo (Part 1)</h2>
 <h3>What is sudo?</h3>
-<p>sudo stands for "super-user do". Sudo allows any non-root user to run applications as root. It's as simple as that.</p>
+<p><code>sudo</code> stands for "super-user do". Sudo allows any non-root user to run applications as root. It's as simple as that.</p>
 
 <h3>Why is sudo Important?</h3>
-<p>sudo is important to system administrators because it means they can allow certain users to perform actions with sudo while still having that user keep his/her privileges.<br><br>
+<p><code>sudo</code> is important to system administrators because it means they can allow certain users to perform actions with sudo while still having that user keep his/her privileges.<br><br>
 Let's say Nick is a Junior System Administrator and he's asked by his senior to perform some tasks. He's asked to:<br>
 
-1. Install a package that the team will need (apt install)<br>
-2. Reload the Apache web server after the senior made some configuration changes (systemctl reload apache2)<br><br>
+1. Install a package that the team will need (<code>apt install</code>)<br>
+2. Reload the Apache web server after the senior made some configuration changes (<code>systemctl reload apache2</code>)<br><br>
 Each of these tasks will require Nick to use sudo before being able to perform them. Doing so will grant him root user privileges for the duration of that program and then returns back to Nick's default privileges.</p>
 
 <h3>Advantages of sudo</h3>
@@ -93,7 +93,7 @@ Each of these tasks will require Nick to use sudo before being able to perform t
 
 <h3>﻿Adding Users to a Predefined Admin Group</h3>
 <h4>Method 1</h4>
-<p>This is the first way to add users to the sudo group. Generally, this is considered the easiest method to allow users to use the sudo command. On Ubuntu 18.04, unless otherwise specified upon account creation, the user is automatically added to the sudo group. Let's take a look at nick's groups with the groups command.</p>
+<p>This is the first way to add users to the sudo group. Generally, this is considered the easiest method to allow users to use the sudo command. On Ubuntu 18.04, unless otherwise specified upon account creation, the user is automatically added to the sudo group. Let's take a look at nick's groups with the <code>groups</code> command.</p>
 
 <br>
 
@@ -101,9 +101,9 @@ Each of these tasks will require Nick to use sudo before being able to perform t
 
 <br>
 
-<p>We can see that Nick is a part of the sudo group (as well as a few others). If Nick was not part of the sudo group already, we could easily add him with one simple command: usermod -aG sudo nick. The -aG options here will add Nick to the group sudo. Using the -a option helps Nick retain any previously existing groups. You can also directly add a user to the sudo group upon creation with the command, useradd -G sudo james .<br><br>
+<p>We can see that Nick is a part of the sudo group (as well as a few others). If Nick was not part of the sudo group already, we could easily add him with one simple command: <code>usermod -aG</code>. The <code>-aG</code> options here will add Nick to the group sudo. Using the -a option helps Nick retain any previously existing groups. You can also directly add a user to the sudo group upon creation with the command, <code>useradd -G sudo james</code>.<br><br>
 
-But what does adding a user to the sudo group in Ubuntu mean? By default, Ubuntu allows sudo users to execute any program as root with their password. There are a few ways we can check this information. The first way is as Nick with sudo -l .</p>
+But what does adding a user to the sudo group in Ubuntu mean? By default, Ubuntu allows sudo users to execute any program as root with their password. There are a few ways we can check this information. The first way is as Nick with <code>sudo -l</code>.</p>
 
 <br>
 
@@ -113,7 +113,7 @@ But what does adding a user to the sudo group in Ubuntu mean? By default, Ubuntu
 
 <p>The important information are in the last lines. This is saying that Nick (as part of the sudo group) may run all commands as any user on any machine. <br><br> 
 
-There's another way to view this information and that's with visudo. This opens the sudo policy file. The sudo policy file is stored in /etc/sudoers. We can do it here as Nick, but we would need to use sudo if we want to edit it since it can only be edited by the root user (using just visudo as Nick actually gives a permission denied).</p>
+There's another way to view this information and that's with <code>visudo</code>. This opens the sudo policy file. The sudo policy file is stored in /etc/sudoers. We can do it here as Nick, but we would need to use sudo if we want to edit it since it can only be edited by the root user (using just visudo as Nick actually gives a permission denied).</p>
 
 <br>
 
@@ -121,7 +121,7 @@ There's another way to view this information and that's with visudo. This opens 
 
 <br>
 
-<p>This gives the same information as sudo -l but it has one difference; the "%sudo" indicates that it's for the group, sudo. There are other groups in this file such as "admin". This is where administrators can set what programs a user in a certain group can perform and whether or not they need a password. You may have seen sometimes %sudo ALL=(ALL:ALL) ALL NOPASSWD: ALL. That NOPASSWD part says that the user that is part of the sudo group does not need to enter their local password to use sudo privileges. Generally, this is not recommended - even for home use.</p>
+<p>This gives the same information as <code>sudo -l</code> but it has one difference; the <code>%sudo</code> indicates that it's for the group, sudo. There are other groups in this file such as "admin". This is where administrators can set what programs a user in a certain group can perform and whether or not they need a password. You may have seen sometimes <code>%sudo ALL=(ALL:ALL) ALL NOPASSWD: ALL</code>. That NOPASSWD part says that the user that is part of the sudo group does not need to enter their local password to use sudo privileges. Generally, this is not recommended - even for home use.</p>
 
 
 <br>
