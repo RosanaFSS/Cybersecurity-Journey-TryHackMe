@@ -41,8 +41,10 @@
 
 
 <p>5.2.</p>
-<p><code>PS C:\Users\asrepuser1\Downloads\PowerSploit-master\Recon> Import-Module .\PowerView.ps1<br><br><code>PS C:\Users\asrepuser1\Downloads\PowerSploit-master\Recon> Get-DomainGroup *admin* | Select-Object "samaccountname"</code> 
-</p>
+<p><code>PS C:\Users\asrepuser1\Downloads\PowerSploit-master\Recon> Import-Module .\PowerView.ps1</code>code><br><br>
+<code>PS C:\Users\asrepuser1\Downloads\PowerSploit-master\Recon> Get-DomainGroup *admin* | Select-Object "samaccountname"</code></p>
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/1c822d29-7e3a-48a5-8457-336fefee72ca)
 
