@@ -1,4 +1,4 @@
-
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{AD: Authenticated Enumeration}}$$</h1>
 
 
 ![image](https://github.com/user-attachments/assets/8d1fb5ea-885d-4ae5-8643-9a2f84b20f52)
