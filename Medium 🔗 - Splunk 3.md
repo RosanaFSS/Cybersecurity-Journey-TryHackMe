@@ -32,7 +32,7 @@ Part of the Blue Primer series. This room is based on version 3 of the Boss of t
 <p align="center"> Global All Time: 215ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/cacef24c-f9e6-4ecc-b8f5-b9e82d7592a6" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/c2c97053-b1a5-48e4-a982-9b2b32388eef"><br><br>
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/39c0af06-4801-47b9-a0fa-0d080c1654af"><br><br>
-                   Global monthly:   193ʳᵈbr><img width="1000px" src="https://github.com/user-attachments/assets/e1db57ee-b3eb-4a01-be1e-ee43b98f43d7"><br><br>
+                   Global monthly:   193ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/e1db57ee-b3eb-4a01-be1e-ee43b98f43d7"><br><br>
                    Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/52c38a9c-9ccc-498b-a73c-957ea9a77b9d"><br><br></p>
 
 
