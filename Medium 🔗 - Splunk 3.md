@@ -25,7 +25,7 @@ Part of the Blue Primer series. This room is based on version 3 of the Boss of t
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 22, 2025      |     381    |          215ᵗʰ         |            4ᵗʰ       |        193ʳᵈ         |           4ᵗʰ        |       103,469      |             738      |    62       |
+| May 22, 2025      |     381    |          215ᵗʰ         |            4ᵗʰ       |        193ʳᵈ         |           4ᵗʰ        |       103,997      |             740      |    62       |
 
 </div>
 
