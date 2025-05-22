@@ -1,6 +1,6 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Splunk 3}}$$</h1>
 <p align="center">May 22, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{381}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
-Continue learning about hardening: an easy-level walkthrough. It is Premium: only for subscribers.  Access it clicking <a href="https://tryhackme.com/room/splunk3zs"</a>here.<br><br>
+Part of the Blue Primer series. This room is based on version 3 of the Boss of the SOC (BOTS) competition by Splunk. It is a medium-level walkthrough, and premium: only for subscribers.  Access it clicking <a href="https://tryhackme.com/room/splunk3zs"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/f7ed89a7-fb6c-4f7b-8a73-ed3c8fdd3a21"></p>
 
 <br>
