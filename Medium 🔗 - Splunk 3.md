@@ -4,6 +4,14 @@ Part of the Blue Primer series. This room is based on version 3 of the Boss of t
 <img width="1000px" src="https://github.com/user-attachments/assets/f7ed89a7-fb6c-4f7b-8a73-ed3c8fdd3a21"></p>
 
 <br>
+<br>
+
+<h1 align="center">Read my walkthrough in Medium<br>
+                   <a href="https://medium.com/@RosanaFS/splunk-3-task-3-tryhackme-walkthrough-security-operations-aws-incident-response-with-splunk-39bdb4fa0c4c">Splunk 3 - Task 3</a><br>
+                   <a href="https://medium.com/@RosanaFS/splunk-3-task-4-tryhackme-walkthrough-security-operations-aws-incident-response-with-splunk-25188f76d221">Splunk 3 - Task 4</a><br>
+                   <a href="https://medium.com/@RosanaFS/splunk-3-task-5-tryhackme-walkthrough-security-operations-aws-incident-response-with-splunk-b9e088df36f0">Splunk 3 - Task 5</a><br>
+                   <a href="https://medium.com/@RosanaFS/splunk-3-task-6-tryhackme-walkthrough-security-operations-aws-incident-response-with-splunk-4ab8b4afa7f4">Splunk 3 : Task 6</a><br>
+                   <a href="">🚧 Splunk 3 : Task 7</a><br></h1>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/6136ec9a-a41b-4544-8cc2-319c3caf0895"><br>
