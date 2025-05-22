@@ -19,15 +19,16 @@ Part of the Blue Primer series. This room is based on version 3 of the Boss of t
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 19, 2025      |     378    |          218ᵗʰ         |            5ᵗʰ       |        172ⁿᵈ         |           5ᵗʰ        |       103,469      |             738      |    62       |
+| May 22, 2025      |     381    |          215ᵗʰ         |            4ᵗʰ       |        193ʳᵈ         |           4ᵗʰ        |       103,469      |             738      |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 218ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/0c092087-89f6-437b-ad2d-1889f8674011" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/cf17c698-cc73-4032-9f2e-0bb881b11045"><br><br>
-                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/452e0381-510e-4b38-bc89-bc4ad9b7b1da"><br><br>
-                   Global monthly:   172ⁿᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/2c18d0e6-0db1-46ea-9646-61f187ff24a6"><br><br>
-                   Brazil monthly:    5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/ad18dde8-0592-495c-9b6c-5721a05a9b69"><br><br></p>
+
+<p align="center"> Global All Time: 218ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/c2c97053-b1a5-48e4-a982-9b2b32388eef" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/c2c97053-b1a5-48e4-a982-9b2b32388eef"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/39c0af06-4801-47b9-a0fa-0d080c1654af"><br><br>
+                   Global monthly:   193ʳᵈbr><img width="1000px" src="https://github.com/user-attachments/assets/e1db57ee-b3eb-4a01-be1e-ee43b98f43d7"><br><br>
+                   Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/52c38a9c-9ccc-498b-a73c-957ea9a77b9d"><br><br></p>
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
