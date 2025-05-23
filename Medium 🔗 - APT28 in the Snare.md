@@ -16,17 +16,15 @@ Continue learning about hardening: an easy-level walkthrough. It is Premium: onl
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 23, 2025      |     382    |          221ˢᵗ         |            5ᵗʰ       |        165ᵗʰ         |           4ᵗʰ        |       102,977      |             736       |    62       |
+| May 23, 2025      |     382    |          213ʳᵈ         |            4ᵗʰ       |        161ˢᵗ         |           3ʳᵈ        |       104,213      |             741       |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 221ˢᵗ <br><img width="300px" src="https://github.com/user-attachments/assets/cda3aedf-9d4c-44dd-b859-397c9f474bae" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/041f147a-854f-49ee-b8cb-f4c05c1c21a4"><br><br>
-                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/b83bfe2b-2a78-404e-81c2-04dc3570c366"><br><br>
-                   Global monthly:   165ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/57c70874-7415-4f0e-9a3e-c3f6f2e87604"><br><br>
-                   Brazil monthly:    4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/9e50072b-2282-4ac9-9d35-edec1bbcb055"><br><br>
-            Weekly League, Diamond:  12ⁿᵈ<br><img width="300px" src="https://github.com/user-attachments/assets/027cfe3c-3b56-4458-8753-9756bfad534c"><br>
-                                             <img width="1000px" src="https://github.com/user-attachments/assets/515590ba-6fa9-4005-8d60-0aa836ebdd0f"></p>
+<p align="center"> Global All Time: 221ˢᵗ <br><img width="300px" src="https://github.com/user-attachments/assets/3cdb4939-f591-4656-967d-4d0429bb466e" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/7b1e3ada-c9e1-42a7-a2c0-eaee2512e8ca"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/5350b4d1-475f-4f54-9b98-8a6574ccb4c6"><br><br>
+                   Global monthly:   161ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/0925b546-f955-4c95-a0fd-2b675242489a"><br><br>
+                   Brazil monthly:   3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/34fd5078-81ae-4ca7-984c-06d0233f9c09"><br><br></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
