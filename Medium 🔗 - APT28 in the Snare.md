@@ -1,14 +1,14 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{APT28 in the Snare}}$$</h1>
 <p align="center">May 23, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{382}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Continue learning about hardening: an easy-level walkthrough. It is Premium: only for subscribers.  Access it clicking <a href="https://tryhackme.com/room/apt28inthesnare"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/7978dfc3-0750-435b-aa3f-3179bed8dc51"></p>
+
+<h1 align="center">Read my walkthrough in Medium clicking <a href=""> APT28 in the Snare</a>.</h1>
 
 
-
-<h1 align="center">Read my walkthrough in Medium clicking <a href="">🚧 Wordpress: CVE-2021-29447</a>.</h1>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/251e17f0-b2d5-47e7-95fb-7f4b4f158be67"><br>
-                   <img width="1000px" src="https://github.com/user-attachments/assets/dff63490-1dfb-487a-9b6b-ed8e09f20392"></p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bcc07be3-dc62-4f9b-b9c2-ec014810d8f7"><br>
+                   <img width="1000px" src="hhttps://github.com/user-attachments/assets/1c32fa03-1b09-4aed-878f-6c8e0ad159b1"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
 
@@ -31,7 +31,4 @@ Continue learning about hardening: an easy-level walkthrough. It is Premium: onl
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 <br>
-<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/stuxnet">stuxnet</a> <br>for developinng this experience so that I could sharpen my skills!</h1>
-
-
-<br>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/tryhackme">tryhackme</a> and <a href="https://tryhackme.com/p/krotovolb">krotovolb</a><br>for developinng this experience so that I could sharpen my skills!</h1>
