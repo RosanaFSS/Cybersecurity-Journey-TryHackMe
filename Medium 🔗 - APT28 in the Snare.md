@@ -3,7 +3,7 @@
 Continue learning about hardening: an easy-level walkthrough. It is Premium: only for subscribers.  Access it clicking <a href="https://tryhackme.com/room/apt28inthesnare"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/7978dfc3-0750-435b-aa3f-3179bed8dc51"></p>
 
-<h1 align="center">Read my walkthrough in Medium clicking <a href=""> APT28 in the Snare</a>.</h1>
+<h1 align="center">Read my walkthrough in Medium clicking <a href="https://medium.com/@RosanaFS/apt28-in-the-snare-tryhackme-walkthrough-blue-team-advanced-persistent-threats-apts-ca5b1eafcb29"> APT28 in the Snare</a>.</h1>
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
