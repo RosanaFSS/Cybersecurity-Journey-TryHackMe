@@ -9,7 +9,7 @@ You can join it for 🆓 using your own virtual machine with openVPN or TryHackM
 Can be accessed clicking  <a href="https://tryhackme.com/room/sqhell</a>.</p>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8815edcb-552d-4ad4-807a-bd9c1b9a8dc3"> </p>
-
+<br>
 
 <br>
 <br>
