@@ -8,6 +8,7 @@ boot2root machine for FIT and bsides Guatemala CTF Access it clicking <a href="h
 
 
 <h2>Task 1 . Develpy</h2>
+<p>read user.txt and root.txt</p>
 
 <br>
 
