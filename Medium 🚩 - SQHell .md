@@ -1,6 +1,6 @@
 <p align="center">May 25, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{366}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{384}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{SQHell}}$$</h1>
 <p align="center"><em>Try and find all the flags in the SQL Injections</em>.<br>
@@ -8,7 +8,7 @@ It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/sqhell</a>.</p>
 
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8815edcb-552d-4ad4-807a-bd9c1b9a8dc3"> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/f45e7c94-2c68-4713-966a-0821fe7ca6d8"> </p>
 <br>
 
 <br>
@@ -547,5 +547,19 @@ http://TargetIP/user?id=2%20union%20all%20select%20%221%20union%20select%201,fla
 ```
 
 ![image](https://github.com/user-attachments/assets/40fb484c-b54a-48ae-92ce-18c7aee2fdce)
+
+<br><br><br>
+
+<h1>Room Completed</h1>
+
+![image](https://github.com/user-attachments/assets/3daa9104-57ff-45f3-8717-0fed6841e464)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5744e4bb-f01e-4872-8673-39dd34a70928)
+
+<br><br>
+
+
 
 
