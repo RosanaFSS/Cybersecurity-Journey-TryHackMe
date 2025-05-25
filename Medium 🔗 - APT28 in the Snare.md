@@ -8,7 +8,7 @@ Continue learning about hardening: an easy-level walkthrough. It is Premium: onl
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bcc07be3-dc62-4f9b-b9c2-ec014810d8f7"><br>
-                   <img width="1000px" src="hhttps://github.com/user-attachments/assets/1c32fa03-1b09-4aed-878f-6c8e0ad159b1"></p>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/1c32fa03-1b09-4aed-878f-6c8e0ad159b1"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
 
