@@ -569,7 +569,7 @@ http://TargetIP/user?id=2%20union%20all%20select%20%221%20union%20select%201,fla
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/9e82ebdb-b401-4485-b176-5b6538194532"><br><br>
                    Global monthly:   161ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/6deb9a65-dcb9-4912-8d7c-b17b0d48b448"><br><br>
                    Brazil monthly:   3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/0bea5431-ad86-4780-8044-ab99b94eb4dc"><br><br>
-                   Weekly League, Diamond:   19ᵗʰ <br><img width="1000px" src="https://github.com/user-attachments/assets/dd31b8f0-dd6d-4d73-afc0-67b2146fe78b"><br>
+                   Weekly League, Diamond:   19ᵗʰ <br><img width="400px" src="https://github.com/user-attachments/assets/dd31b8f0-dd6d-4d73-afc0-67b2146fe78b"><br>
                                                       <img width="1000px" src="https://github.com/user-attachments/assets/09b547f9-d400-4376-8b66-af4251921f72"><br></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
