@@ -35,7 +35,7 @@ Hint: Unless displayed on the page the flags are stored in the flag table in the
 <br>
 
 <p>Used the script below to discover the flag.<br>
-https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%9A%A9%20-%20%20SQHell%20-%20Script%20-%20Time-Based%20SQL%20Injection.py</p>
+Script: https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%9A%A9%20-%20%20SQHell%20-%20Script%20-%20Time-Based%20SQL%20Injection.py</p>
 
 <br>
 
@@ -100,7 +100,7 @@ https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos
 - The response was <code>true</code>.</p>
 
 <p>Used the script below to automate boolean-based SQL inject and to discover the third flag.<br>
-Script: </p>
+Script: https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%9A%A9%20-%20SQHell-%20Script%20-%20Boolean-Based%20SQL%20Injection.py</p>
 
 
 ![image](https://github.com/user-attachments/assets/9aa107fb-8baa-465b-ba23-5798326e773f)
