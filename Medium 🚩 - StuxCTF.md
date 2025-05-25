@@ -1,13 +1,10 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{StuxCTF}}$$</h1>
 <p align="center">May 25, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{384}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Crypto, serealization, priv scalation and more ...! Access it clicking <a href="https://tryhackme.com/room/stuxctf"</a>here.<br><br>
-<img width="1000px" src=""></p>
-
-<h1 align="center">Read my walkthrough in Medium clicking <a href="https://medium.com/@RosanaFS/apt28-in-the-snare-tryhackme-walkthrough-blue-team-advanced-persistent-threats-apts-ca5b1eafcb29"> APT28 in the Snare</a>.</h1>
+<img width="1000px" src="https://github.com/user-attachments/assets/7262bde9-79c5-418f-97f1-cd3c2024f830"></p>
 
 <br>
 <br>
-
 
 
 <h2>Task 1 . StuxCTF</h2>
@@ -288,8 +285,8 @@ user.txt
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
-<p align="center"> <img width="1000px" src=""><br>
-                   <img width="1000px" src=""></p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/18216b56-67e1-407c-830e-015d11a32656"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/bb7cf2a3-48fc-479d-98d8-3d20eba3142e"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
 
@@ -297,15 +294,19 @@ user.txt
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 25, 2025      |     384    |          213ʳᵈ         |            4ᵗʰ       |        161ˢᵗ         |           3ʳᵈ        |       104,213      |             741       |    62       |
+| May 25, 2025      |     384    |          212nd         |            4ᵗʰ       |        159ᵗʰ         |           3ʳᵈ        |       104,661      |             747      |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 221ˢᵗ <br><img width="300px" src="" alt="Your Image Badge"><br>
-                                              <img width="1000px" src=""><br><br>
-                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src=""><br><br>
-                   Global monthly:   161ˢᵗ<br><img width="1000px" src=""><br><br>
-                   Brazil monthly:   3ʳᵈ<br><img width="1000px" src=""><br><br></p>
+<p align="center"> Global All Time: 212nd <br><img width="300px" src="https://github.com/user-attachments/assets/d2179306-d0cb-445e-b72e-4e1cbcf3b613" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/4e577230-2956-4dcc-897d-cf0f781cbcd7"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/90fd130c-4951-4969-85e1-3c1d289be463"><br><br>
+                   Global monthly:    159ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/c74e6ce3-8095-4c01-bda9-5d206ec0eae8"><br><br>
+                   Brazil monthly:   3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/d8e91625-9dfc-4cd8-826b-e9c8464d622c"><br><br>
+Weekly League, Dimaond:   17ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/324bc662-45aa-4f2d-960f-cf6fc0bd8c51"><br>
+	                          <img width="1000px" src="https://github.com/user-attachments/assets/1081036a-9373-49a2-95b5-eea1d5b2360a"><br><br><br></p>
+
+
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
