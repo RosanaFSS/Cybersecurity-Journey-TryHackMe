@@ -550,16 +550,28 @@ http://TargetIP/user?id=2%20union%20all%20select%20%221%20union%20select%201,fla
 
 <br><br><br>
 
-<h1>Room Completed</h1>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/3daa9104-57ff-45f3-8717-0fed6841e464"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/5744e4bb-f01e-4872-8673-39dd34a70928"></p>
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
-![image](https://github.com/user-attachments/assets/3daa9104-57ff-45f3-8717-0fed6841e464)
 
+<div align="center">
+
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| May 25, 2025      |     384    |          213ʳᵈ         |            4ᵗʰ       |        161ˢᵗ         |           3ʳᵈ        |       104,571      |             746       |    62       |
+
+</div>
+
+<p align="center"> Global All Time: 213ʳᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/4f6a4557-4c0a-4aa5-ba33-ab03c3fc3b7e" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="(https://github.com/user-attachments/assets/d84a2b03-b619-46a0-ae0b-c969389c18ff"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/9e82ebdb-b401-4485-b176-5b6538194532"><br><br>
+                   Global monthly:   161ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/6deb9a65-dcb9-4912-8d7c-b17b0d48b448"><br><br>
+                   Brazil monthly:   3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/0bea5431-ad86-4780-8044-ab99b94eb4dc"><br><br></p>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 <br>
-
-![image](https://github.com/user-attachments/assets/5744e4bb-f01e-4872-8673-39dd34a70928)
-
-<br><br>
-
-
-
-
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/tryhackme">tryhackme</a><br>for developinng this experience so that I could sharpen my skills!</h1>
