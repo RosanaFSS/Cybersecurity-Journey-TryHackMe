@@ -20,6 +20,12 @@ boot2root machine for FIT and bsides Guatemala CTF Access it clicking <a href="h
 
 <br>
 
+> 1.2. <em>root.txt</em><br><a id='1.2'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+<br>
+
 <br>
 
 ```bash
