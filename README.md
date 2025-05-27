@@ -20,12 +20,9 @@
 <br>
 
 
-<h2 align="center"> $$\textcolor{white}{\textnormal{April 24, 2025 - My yearly activity}}$$ <br>
-<img width="1000px" src="https://github.com/user-attachments/assets/603775b1-fbf5-4c87-9570-f8aeaa5f0b69"/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/23546754-39c1-402f-8ba4-7c970d812e1f"/><br>228/406</h2>
-
-
-
+<h2 align="center"> $$\textcolor{white}{\textnormal{May 27, 2025 - My yearly activity}}$$ <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/54ec64ac-d93d-400b-a24e-098cf23f011c"/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/edf33221-2b33-428e-b01d-1b6f937e691a"/><br>228/406</h2>
 
 <br>
 
@@ -40,6 +37,7 @@
 |Year Month      |Monthly         |All Time        |Achievement                                                                                        |
 |:---------------|---------------:|---------------:|:-------------------------------------------------------------------------------------------------:| 
 |                |Brazil          |Global          |                                                                                                   |
+|2025 May        |3ʳᵈ             |207ᵗʰ           |  |
 |2025 April      |2ⁿᵈ             |263ʳᵈ           | <img src="https://github.com/user-attachments/assets/95802e5e-b0d6-41b0-8b71-7450936af8f3" style="width:300px;"/>|
 |2025 March      |5ᵗʰ             |321ˢᵗ           | <img src="https://github.com/user-attachments/assets/ea6b7eae-ae33-4491-927c-2b9ad8166323" style="width:300px;"/> |
 |2025 February   |1ˢᵗ             |385ᵗʰ           | <img src="https://github.com/user-attachments/assets/b4f048d4-5bd0-4aeb-b42c-16460f926cf8" style="width:300px;"/> |
