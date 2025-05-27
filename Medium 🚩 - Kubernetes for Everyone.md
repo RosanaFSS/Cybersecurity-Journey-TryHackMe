@@ -590,8 +590,8 @@ root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snaps
 
 </div>
 
-<p align="center"> Global All Time:    209ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/ae9177f2-e011-491f-abb4-e7819b3f13cc" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/56b582d5-a355-411c-9b0c-8d9af0698745"><br><br>
+<p align="center"> Global All Time:    209ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/674ba2a0-6d60-4d56-9781-bd7581949b9a" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/599eadcd-80b0-4210-ba53-9e2bb9256b1"><br><br>
                    Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/096417ea-86d2-4e2c-a326-d728dff3b9d7"><br><br>
                    Global monthly:    151ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/a76893bf-21f9-4a4d-b9c4-fad4fd73732b"><br><br>
                    Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/84015348-2166-4f9e-a67b-6ad0342429ef"><br><br></p>
