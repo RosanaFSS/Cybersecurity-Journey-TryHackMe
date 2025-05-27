@@ -58,11 +58,54 @@ PORT     STATE SERVICE           VERSION
 
 
 <h2>Task 2 . Your Secret Crush</h2>
+<p>If you want to keep a secret, you must also hide it from yourself. Find the secret!</p>
 
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+
+> 2.1. <em>What secret did you find?</em><br><a id='2.1'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+
+<br>
 
 
 <h2>Task 3 . Powerhouse of Pod´s Storage</h2>
+<p>Pods are the smallest deployable computing units you can create and manage in Kubernetes. <br><br>
 
+The Pod also shares storage.  Enumerate the pod-shared storage location and find the flag!</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+
+> 3.1. <em>What is the volume flag?</em><br><a id='3.1'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+
+<br>
 
 
 <h2>Task 4 . Hack a Job at FANG</h2>
+
+<p>You have been shortlisted and you have upcoming interview rounds for a FANG company! Find the secret that has been left behind.<br><br>
+
+I hope you have learned a lot through the challenges. Thank you so much for doing my first room and I want to personally thank kiransau. Feel free to provide feedback via Twitter.</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+
+> 4.1. <em>What's the secret to the FANG interview?</em><br><a id='4.1'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+
+<br>
+<br>
