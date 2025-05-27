@@ -569,13 +569,11 @@ root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snaps
 
 <br>
 
-![image](https://github.com/user-attachments/assets/faa0445a-598c-4314-9ac9-dbd779ec92ae)
-
 <br>
 <br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/3f102707-7df6-49ba-8929-e56b31ee7cc"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/c0aefef2-6e16-43aa-a5f7-1b0d6cc502c8"><br>
                    <img width="1000px" src="https://github.com/user-attachments/assets/abf3801e-4662-41f6-ae19-6b6b2b72f5af"></p>
 
 
@@ -602,6 +600,6 @@ root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snaps
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 <br>
-<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/cmnatic">TryHackMe</a>  and <a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for developinng this experience so that I could sharpen my skills!</h1>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/csaju">csaju</a>  and <a href="https://tryhackme.com/p/teardown">teardown</a> for developinng this experience so that I could sharpen my skills!</h1>
 
 
