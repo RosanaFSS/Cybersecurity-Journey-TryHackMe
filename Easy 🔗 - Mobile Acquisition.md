@@ -26,7 +26,7 @@ Prepare for mobile acquisition with the challenges and methods used throughout t
 
 <br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
 
 
 > 2.1. <em>In what country was it where there is a famous example of mobile devices being used within investigations?</em><br><a id='2.1'></a>
@@ -42,6 +42,117 @@ Prepare for mobile acquisition with the challenges and methods used throughout t
 <br>
 
 
+<h2>Task 3 . Challenges With Mobile Device Forensics</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+
+> 3.1. <em>Which manufacturer protection prevents untrusted code from loading during boot?</em><br><a id='3.1'></a>
+>> <strong><code>Secure boot process</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.2. <em>Are encryption keys stored in software or hardware?</em><br><a id='3.2'></a>
+>> <strong><code>hardware</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 4 . APTs Meet Mobile Devices</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+
+> 4.1. <em>What app store was found to have malicious applications available to users?</em><br><a id='4.1'></a>
+>> <strong><code>Google Play</code></strong><br>
+<p></p>
+
+<br>
+
+> 4.2. <em>What is the name of the sophisticated malware that used a combination of "one click" and "zero click" attacks?</em><br><a id='4.2'></a>
+>> <strong><code>Pegasus</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 5 . Acquisition Techniques</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+
+> 5.1. <em>If I wanted to recover deleted data, what acquisition method would I try?</em><br><a id='5.1'></a>
+>> <strong><code>Physical</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.2. <em>Which acquisition method involves using features of the Operating System to extract data?</em><br><a id='5.2'></a>
+>> <strong><code>Logical Acquisition</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.3. <em>What is the name of the tool that can be used to perform a backup of an Iphone, via the CLI?</em><br><a id='5.3'></a>
+>> <strong><code>idevicebackup2</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.4. <em>What is the name of the tool that can be used to perform a backup of an Android, via the CLI? Please note that we are looking for the acronym.</em><br><a id='5.4'></a>
+>> <strong><code>ADB</code></strong><br>
+<p></p>
+
+
+<br>
+<br>
+
+
+<h2>Task 6 . Specialist Acquisition Techniques</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+
+> 6.1. <em>What is the name of the technique that boots the device into a temporary Operating System, often bypassing security mechanisms?</em><br><a id='6.1'></a>
+>> <strong><code>Custom Boot Loading</code></strong><br>
+<p></p>
+
+<br>
+
+> 6.2. <em>What is the name of the technique that exploits a known vulnerability within the device? Granting it full or "root" access?</em><br><a id='6.2'></a>
+>> <strong><code>Jailbreaking</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+
+<h2>Task 7 . Practical</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+
+> 7.1. <em>After creating the case and adding the iPhone as evidence, perform the data capture. What is the flag displayed once the capture is complete?</em><br><a id='7.1'></a>
+>> <strong><code>THM{MOBILE_ACQUISITION}</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
 ![image](https://github.com/user-attachments/assets/d4e1ba78-19cc-4385-b431-d5e72ad99f0d)
 
 
@@ -53,6 +164,20 @@ Prepare for mobile acquisition with the challenges and methods used throughout t
 <br>
 <br>
 
+
+<h2>Task 8 . Conclusion</h2>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+
+
+> 8.1. <em>Proceed through the rest of the module to learn about iOS and Android analysis!</em><br><a id='8.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a3fe6c6b-2d3c-41a9-b03d-b9ae52201835"><br>
