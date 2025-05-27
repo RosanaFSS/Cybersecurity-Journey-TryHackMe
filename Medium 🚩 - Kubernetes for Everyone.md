@@ -266,7 +266,7 @@ curl http://TargetIP:3000/public/plugins/alertlist/../../../../../../../../../..
 
 
 > 2.1. <em>What secret did you find?</em><br><a id='2.1'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>THM{yes_there_$s_no_$ecret}</code></strong><br>
 <p></p>
 
 
@@ -283,10 +283,6 @@ curl http://TargetIP:3000/public/plugins/alertlist/../../../../../../../../../..
 ![image](https://github.com/user-attachments/assets/83a72478-074e-4cb7-9283-49d518b04e70)
 
 
-<br>
-
-
-![image](https://github.com/user-attachments/assets/26553414-0f70-4fd1-ba57-24a6b3022549)
 
 <br>
 
@@ -301,6 +297,39 @@ kube-ap+  1663  2.0  5.2 768320 51620 ?        Sl   20:49   2:01 /var/lib/k0s/bi
 root      1941  0.0  0.0      0     0 ?        I    21:47   0:00 [kworker/0:0]
 ...
 ```
+
+<br>
+
+<h3>k0s</h3>
+
+```bash
+root@johnny:~# k0s kubectl get secret
+NAME                  TYPE                                  DATA   AGE
+default-token-nhwb5   kubernetes.io/service-account-token   3      3y107d
+k8s.authentication    Opaque                                1      3y107d
+root@johnny:~# 
+...
+k0s kubectl edit secret k8s.authentication
+...
+  id: VEhNe3llc190aGVyZV8kc19ub18kZWNyZXR9
+kind: Secret
+
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/377e3e58-bd52-4935-b64f-54ea46fc7009)
+
+<br>
+
+<h3>CyberChef</h3>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c836a17e-41bb-46c4-afe1-563f8378528d)
+
+
+<br>
 
 
 
