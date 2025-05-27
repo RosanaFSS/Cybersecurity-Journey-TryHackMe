@@ -7,7 +7,7 @@ Inspired by a real-world pentesting engagement Access it clicking <a href="https
 <br>
 
 
-<h2>Task 1 . Submit Glags!</h2>
+<h2>Task 1 . Submit Flags!</h2>
 
 <br>
 
