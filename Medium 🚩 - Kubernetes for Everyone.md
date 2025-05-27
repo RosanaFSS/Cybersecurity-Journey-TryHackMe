@@ -569,6 +569,9 @@ root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snaps
 
 <br>
 
+![Screenshot 2025-05-27 195303](https://github.com/user-attachments/assets/e44eb3f6-5dcc-4e93-9715-5975e0cdaf91)
+
+
 <br>
 <br>
 
