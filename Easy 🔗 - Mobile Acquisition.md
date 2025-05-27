@@ -153,12 +153,21 @@ Prepare for mobile acquisition with the challenges and methods used throughout t
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/d4e1ba78-19cc-4385-b431-d5e72ad99f0d)
 
 
-<br>
 
-![image](https://github.com/user-attachments/assets/5c802855-ff46-4cf4-b7f3-742cb110406b)
+<p align="center"> 1 . and 2 . <br><img width="800px" src="https://github.com/user-attachments/assets/39a9b027-91db-4754-abb6-f8fcd5f4c43b"><br><br>
+                   3 . <br><img width="1000px" src="https://github.com/user-attachments/assets/8b1b6eea-a38f-4117-b739-343956c7f312"><br><br>
+                   4 . <br><img width="1000px" src="https://github.com/user-attachments/assets/423d8621-7fc8-424b-8b9e-90b82b9f2a58"><br><br>
+                   5 . <br><img width="1000px" src="https://github.com/user-attachments/assets/e3e8d163-1de5-4a1b-81c4-fa1b027ac210"><br><br>
+                   6 . <br><img width="1000px" src="https://github.com/user-attachments/assets/10a8c498-2966-43b0-af4b-4adcc1390e7e"><br><br>
+                   7 . <br><img width="1000px" src="https://github.com/user-attachments/assets/cf7fbc10-d0a2-4bb5-84a7-52329766f79d"><br><br>
+                   8 . <br><img width="1000px" src="https://github.com/user-attachments/assets/a17404d0-77e7-414c-bc89-fcaba56133dd"><br><br>
+                   9 . <br><img width="1000px" src="https://github.com/user-attachments/assets/df7b388d-5b65-400f-8f54-d791a12149ba"><br><br>
+                   10 . <br><img width="1000px" src="https://github.com/user-attachments/assets/68b4b20f-fbea-47c8-adc9-fbed4ee5db3b"><br><br>
+                   11 . <br><img width="1000px" src="https://github.com/user-attachments/assets/0397de74-cb4c-483b-9d58-14a69d465747"><br><br>
+                   12 . <br><img width="1000px" src="https://github.com/user-attachments/assets/bd218212-65b6-4b96-aa73-d1305a85a190"><br><br>
+                   13 . <br><img width="1000px" src="https://github.com/user-attachments/assets/d64b65bf-4a37-4a8d-8a00-594a912a641e"><br><br></p>
 
 
 <br>
