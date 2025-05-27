@@ -2,12 +2,10 @@
 <p align="center"><img width="180px" src="https://github.com/user-attachments/assets/dea7aa5d-00b4-4a3a-a417-28d7040d7c9c"><br>
 May 27, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{386}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 A Kubernetes hacking challenge for DevOps/SRE enthusiasts. Access it clicking <a href="https://tryhackme.com/room/kubernetesforyouly"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/a22f5f5b-aa13-4348-abd2-c36d65e3e732"></p>
 
 <br>
 <br>
-
-
 
 
 <h2>Task 1 . Access the Cluster</h2>
@@ -446,9 +444,170 @@ I hope you have learned a lot through the challenges. Thank you so much for doin
 
 
 > 4.1. <em>What's the secret to the FANG interview?</em><br><a id='4.1'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>chidori</code></strong><br>
 <p></p>
 
 
 <br>
+
+<h3>k0s kubectl get job -n internship</h3>
+
 <br>
+
+```bash
+# k0s kubectl get job -n internship
+NAME             COMPLETIONS   DURATION   AGE
+internship-job   1/1           3m10s      3y107d
+
+```
+
+<br>
+
+<h3>k0s kubectl get job -n internship</h3>
+
+<br>
+
+```bash
+# k0s kubectl get job -n internship -o json
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "batch/v1",
+            "kind": "Job",
+            "metadata": {
+                "annotations": {
+                    "batch.kubernetes.io/job-tracking": ""
+                },
+                "creationTimestamp": "2022-02-10T18:55:33Z",
+                "generation": 1,
+                "labels": {
+                    "controller-uid": "11cf55dc-7903-4b78-b9d3-62cf241ad26d",
+                    "job-name": "internship-job"
+                },
+                "name": "internship-job",
+                "namespace": "internship",
+                "resourceVersion": "579",
+                "uid": "11cf55dc-7903-4b78-b9d3-62cf241ad26d"
+            },
+            "spec": {
+                "backoffLimit": 6,
+                "completionMode": "NonIndexed",
+                "completions": 1,
+                "parallelism": 1,
+                "selector": {
+                    "matchLabels": {
+                        "controller-uid": "11cf55dc-7903-4b78-b9d3-62cf241ad26d"
+                    }
+                },
+                "suspend": false,
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "controller-uid": "11cf55dc-7903-4b78-b9d3-62cf241ad26d",
+                            "job-name": "internship-job"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "command": [
+                                    "echo",
+                                    "26c3d1c068e7e01599c3612447410b5e56c779f1"
+                                ],
+                                "image": "busybox",
+                                "imagePullPolicy": "Always",
+                                "name": "internship-job",
+                                "resources": {},
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Never",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                }
+            },
+            "status": {
+                "completionTime": "2022-02-10T18:59:26Z",
+                "conditions": [
+                    {
+                        "lastProbeTime": "2022-02-10T18:59:26Z",
+                        "lastTransitionTime": "2022-02-10T18:59:26Z",
+                        "status": "True",
+                        "type": "Complete"
+                    }
+                ],
+                "startTime": "2022-02-10T18:56:16Z",
+                "succeeded": 1,
+                "uncountedTerminatedPods": {}
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}
+root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/38/fs/home/ubuntu/jokes# 
+```
+<br>
+
+
+<h3>Hash</h3>
+
+<p><code>26c3d1c068e7e01599c3612447410b5e56c779f1</code></p>
+
+<br>
+
+<h3>Crackstation</h3>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/faa0445a-598c-4314-9ac9-dbd779ec92ae)
+
+<br>
+<br>
+
+
+![image](https://github.com/user-attachments/assets/3f102707-7df6-49ba-8929-e56b31ee7cc4)
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a76893bf-21f9-4a4d-b9c4-fad4fd73732b"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/abf3801e-4662-41f6-ae19-6b6b2b72f5af"></p>
+
+
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+
+
+<div align="center">
+
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| May 27, 2025      |     386    |         209ᵗʰ          |            4ᵗʰ       |        151ˢᵗ         |           3ʳᵈ        |       104,917      |             750     |    62       |
+
+</div>
+
+<p align="center"> Global All Time:    209ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/ae9177f2-e011-491f-abb4-e7819b3f13cc" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/56b582d5-a355-411c-9b0c-8d9af0698745"><br><br>
+                   Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/096417ea-86d2-4e2c-a326-d728dff3b9d7"><br><br>
+                   Global monthly:    151ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/a76893bf-21f9-4a4d-b9c4-fad4fd73732b"><br><br>
+                   Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/84015348-2166-4f9e-a67b-6ad0342429ef"><br><br></p>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<br>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/cmnatic">TryHackMe</a>  and <a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for developinng this experience so that I could sharpen my skills!</h1>
+
+
