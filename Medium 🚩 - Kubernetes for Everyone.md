@@ -589,15 +589,16 @@ root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snaps
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 27, 2025      |     386    |         209ᵗʰ          |            4ᵗʰ       |        151ˢᵗ         |           3ʳᵈ        |       104,917      |             750     |    62       |
+| May 27, 2025      |     386    |         207ᵗʰ          |            4ᵗʰ       |        148ᵗʰ         |           3ʳᵈ        |       104,917      |             750     |    62       |
 
 </div>
 
-<p align="center"> Global All Time:    209ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/674ba2a0-6d60-4d56-9781-bd7581949b9a" alt="Your Image Badge"><br>
+<p align="center"> Global All Time:    207ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/674ba2a0-6d60-4d56-9781-bd7581949b9a" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/599eadcd-80b0-4210-ba53-9e2bb9256b1"><br><br>
-                   Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/096417ea-86d2-4e2c-a326-d728dff3b9d7"><br><br>
-                   Global monthly:    151ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/a76893bf-21f9-4a4d-b9c4-fad4fd73732b"><br><br>
-                   Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/84015348-2166-4f9e-a67b-6ad0342429ef"><br><br></p>
+                   Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/67f9599e-3114-4eba-8fce-07b80ccc8775"><br><br>
+                   Global monthly:    148ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/768d10b5-b126-4c36-ab9d-2804f6e1e4fb"><br><br>
+                   Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/71ee760a-22da-4e72-ac46-03fc6f49c030"><br><br></p>
+
 
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
