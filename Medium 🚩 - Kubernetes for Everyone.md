@@ -574,14 +574,8 @@ root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snaps
 <br>
 <br>
 
-
-![image](https://github.com/user-attachments/assets/3f102707-7df6-49ba-8929-e56b31ee7cc4)
-
-<br>
-<br>
-
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a76893bf-21f9-4a4d-b9c4-fad4fd73732b"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/3f102707-7df6-49ba-8929-e56b31ee7cc"><br>
                    <img width="1000px" src="https://github.com/user-attachments/assets/abf3801e-4662-41f6-ae19-6b6b2b72f5af"></p>
 
 
