@@ -253,7 +253,8 @@ curl http://TargetIP:3000/public/plugins/alertlist/../../../../../../../../../..
 
 ![image](https://github.com/user-attachments/assets/1c2b362e-e256-4998-bf22-8bc144173a7b)
 
-
+<br>
+<br>
 
 
 <h2>Task 2 . Your Secret Crush</h2>
@@ -270,6 +271,37 @@ curl http://TargetIP:3000/public/plugins/alertlist/../../../../../../../../../..
 
 
 <br>
+
+<h3>SSH</h3>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9c28f11e-41f7-4eed-b68e-d9d9318cca70)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/83a72478-074e-4cb7-9283-49d518b04e70)
+
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/26553414-0f70-4fd1-ba57-24a6b3022549)
+
+<br>
+
+<h3>ps aux</h3>
+
+```bash
+root@johnny:~# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+...
+kube-sc+  1647  0.1  1.6 754040 16496 ?        Sl   20:49   0:07 /var/lib/k0s/bin/kube-scheduler --authorization-kubeconfig
+kube-ap+  1663  2.0  5.2 768320 51620 ?        Sl   20:49   2:01 /var/lib/k0s/bin/kube-controller-manager --authorization-k
+root      1941  0.0  0.0      0     0 ?        I    21:47   0:00 [kworker/0:0]
+...
+```
+
 
 
 <h2>Task 3 . Powerhouse of Pod´s Storage</h2>
