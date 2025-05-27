@@ -214,7 +214,7 @@ Prepare for mobile acquisition with the challenges and methods used throughout t
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 <br>
-<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/cmnatic">TryHackMe</a>  and <a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for developinng this experience so that I could sharpen my skills!</h1>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/tryhackme">TryHackMe</a>  and <a href="https://tryhackme.com/p/cmnatic">cmnatic</a> for developinng this experience so that I could sharpen my skills!</h1>
 
 
 ![image](https://github.com/user-attachments/assets/a76893bf-21f9-4a4d-b9c4-fad4fd73732b)
