@@ -1,9 +1,6 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Kubernetes for Everyone}}$$</h1>
 
-<p align="center"><img width="300px" src="https://github.com/user-attachments/assets/dea7aa5d-00b4-4a3a-a417-28d7040d7c9c"></p>
-
-![image](https://github.com/user-attachments/assets/dea7aa5d-00b4-4a3a-a417-28d7040d7c9c)
-
+<p align="center"><img width="200px" src="https://github.com/user-attachments/assets/dea7aa5d-00b4-4a3a-a417-28d7040d7c9c"></p>
 <p align="center">May 27, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{386}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 A Kubernetes hacking challenge for DevOps/SRE enthusiasts. Access it clicking <a href="https://tryhackme.com/room/kubernetesforyouly"</a>here.<br><br>
 <img width="1000px" src=""></p>
