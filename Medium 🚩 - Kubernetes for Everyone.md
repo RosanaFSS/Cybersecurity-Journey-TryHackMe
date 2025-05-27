@@ -344,7 +344,7 @@ The Pod also shares storage.  Enumerate the pod-shared storage location and find
 
 
 > 3.1. <em>What is the volume flag?</em><br><a id='3.1'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>THM{this_joke_is_cold_joke}</code></strong><br>
 <p></p>
 
 
@@ -363,6 +363,72 @@ kube-system   coredns-6d9f49dcbb-9vbff          1/1     Running     0          3
 kube-system   kube-proxy-jws4q                  1/1     Running     0          3y107d
 root@johnny:~# 
 ```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/5b7aafae-91c9-4275-8d28-becaa319cadc)
+
+
+<br>
+
+```bash
+root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/38/fs/home/ubuntu/jokes# git log --pretty=oneline
+224b741fa904ee98c75913eafbefa12ac820659f (HEAD -> master, origin/master, origin/HEAD) feat: add programming.jokes
+22cd540f3df22a2f373d95e145056d5370c058f5 feat: add crush.jokes
+4b2c2d74b31d922252368c112a3907c5c1cf1ba3 feat: add cold.joke
+2be20457c290fa1e8cc8d18cd5b546cec474691c feat: add mom.jokes
+cc342469e2a4894e34a3e6cf3c7e63603bd4753e feat: add dad.jokes
+root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/38/fs/home/ubuntu/jokes# git show 4b2c2d74b31d922252368c112a3907c5c1cf1ba3
+commit 4b2c2d74b31d922252368c112a3907c5c1cf1ba3
+Author: Aju100 <ajutamang10@outlook.com>
+Date:   Mon Feb 7 22:37:13 2022 +0545
+
+    feat: add cold.joke
+
+diff --git a/king.jokes b/king.jokes
+new file mode 100644
+index 0000000..1b7d703
+--- /dev/null
++++ b/king.jokes
+@@ -0,0 +1 @@
++THM{this_joke_is_cold_joke}
+:...skipping...
+commit 4b2c2d74b31d922252368c112a3907c5c1cf1ba3
+Author: Aju100 <ajutamang10@outlook.com>
+Date:   Mon Feb 7 22:37:13 2022 +0545
+
+    feat: add cold.joke
+
+diff --git a/king.jokes b/king.jokes
+new file mode 100644
+index 0000000..1b7d703
+--- /dev/null
++++ b/king.jokes
+@@ -0,0 +1 @@
++THM{this_joke_is_cold_joke}
+\ No newline at end of file
+:...skipping...
+commit 4b2c2d74b31d922252368c112a3907c5c1cf1ba3
+Author: Aju100 <ajutamang10@outlook.com>
+Date:   Mon Feb 7 22:37:13 2022 +0545
+
+    feat: add cold.joke
+
+diff --git a/king.jokes b/king.jokes
+new file mode 100644
+index 0000000..1b7d703
+--- /dev/null
++++ b/king.jokes
+@@ -0,0 +1 @@
++THM{this_joke_is_cold_joke}
+\ No newline at end of file
+~
+root@johnny:/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/38/fs/home/ubuntu/jokes# 
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/391d769d-5732-4cef-956a-25381d81eeeb)
 
 <br>
 <br>
