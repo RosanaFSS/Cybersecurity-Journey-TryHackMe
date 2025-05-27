@@ -300,7 +300,7 @@ root      1941  0.0  0.0      0     0 ?        I    21:47   0:00 [kworker/0:0]
 
 <br>
 
-<h3>k0s</h3>
+<h3>k0s kubectl</h3>
 
 ```bash
 root@johnny:~# k0s kubectl get secret
@@ -348,6 +348,23 @@ The Pod also shares storage.  Enumerate the pod-shared storage location and find
 <p></p>
 
 
+<br>
+
+<h3>k0s kubectl get pods -A</h3>
+
+```bash
+root@johnny:~# k0s kubectl get pods -A
+NAMESPACE     NAME                              READY   STATUS      RESTARTS   AGE
+internship    internship-job-5drbm              0/1     Completed   0          3y107d
+kube-system   kube-router-vsq85                 1/1     Running     0          3y107d
+kube-system   metrics-server-74c967d8d4-pvv8l   1/1     Running     0          3y107d
+kube-system   kube-api                          1/1     Running     0          3y107d
+kube-system   coredns-6d9f49dcbb-9vbff          1/1     Running     0          3y107d
+kube-system   kube-proxy-jws4q                  1/1     Running     0          3y107d
+root@johnny:~# 
+```
+
+<br>
 <br>
 
 
