@@ -292,13 +292,40 @@ Brute-force complete!
 - Typed the credentials and hit ENTER.<br><br></p>
 
 <br>
+![image](https://github.com/user-attachments/assets/29e601fe-2558-4345-bfb2-85eaa39f2367)
 
-![image](https://github.com/user-attachments/assets/80475fad-cc72-4902-bf39-0ea598158f0f)
+<br>
+
+![image](https://github.com/user-attachments/assets/92abecbd-034d-4066-92e6-3c23253aa913)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/74d81c49-599e-4dbd-bffd-49400ec11ccc)
 
 <br>
 
 
 
+
+
+![image](https://github.com/user-attachments/assets/80475fad-cc72-4902-bf39-0ea598158f0f)
+
+<br>
+
+<p>Repeated the steps from the previous tack using <code>ecorp_adm</code>.</p>
+
+<br>
+
+
+
+
+<br>
+
+
+```bash
+Decryption Success: Welcome NFT member! Your secret code is THM{Breaking.Custom.Crypto.Is.Fun}. Your NFT wallet private key is: HOLD
+Brute-force complete!
+```
 
 
 
