@@ -20,7 +20,7 @@ Can't see the VM? Press the "Split Screen" button at the top of the page.<br><br
 
 <em>Please note that the document may take approximately a minute to launch for the first time.</em><br><br>
 
-Check out similar content on TryHackMe: <code>Phishing Module>/code></p>
+Check out similar content on TryHackMe: <code>Phishing Module</code></p>
 
 <br>
 
