@@ -292,6 +292,14 @@ Brute-force complete!
 - Typed the credentials and hit ENTER.<br><br></p>
 
 <br>
+
+
+
+![image](https://github.com/user-attachments/assets/80475fad-cc72-4902-bf39-0ea598158f0f)
+
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/29e601fe-2558-4345-bfb2-85eaa39f2367)
 
 <br>
