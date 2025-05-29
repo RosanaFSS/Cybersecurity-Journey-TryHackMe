@@ -1,4 +1,8 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Windows Memory and Processes}}$$</h1>
+
+<h1 align="center"> Windows Mwmory & Processes<br><img width="300px" src="https://github.com/user-attachments/assets/3399c45d-8f64-4da2-bbc8-3fa15993181f"><br>
+
+
 <p align="center"><img width="180px" src="https://github.com/user-attachments/assets/eec07c31-df33-48de-a52b-2b9b701ba625"><br>
 May 28, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{387}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Analyze a memory dump of a Windows host and uncover malicious processes. Access it clicking <a href="https://tryhackme.com/room/windowsmemoryandprocs"</a>here.<br><br>
@@ -7,7 +11,7 @@ Analyze a memory dump of a Windows host and uncover malicious processes. Access 
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/3aca536a-02ea-4db0-88c4-91389ec9bc44)
+
 
 
 <p>THe hashes are the same.</p>
