@@ -1,8 +1,10 @@
+
+<h1 align="center">Memory Analysis Introduction<br><img width="1200px" src="https://github.com/user-attachments/assets/3c611801-4d91-40e8-b35b-a2395cf04ada"><br>
+
 <p align="center">April 23, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{352}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="https://github.com/user-attachments/assets/a4993370-db5e-4a3a-8b37-b8e0d1486dfc" alt="Your Image Badge"><br></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Memory Analysis Introduction}}$$</h1>
 <p align="center"><em>Learn how memory analysis helps detect threats during live investigations.</em>.<br>
 It is classified as an easy-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
