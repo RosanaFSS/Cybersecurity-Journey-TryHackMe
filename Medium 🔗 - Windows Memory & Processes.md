@@ -1,6 +1,6 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Windows Memory and Processes}}$$</h1>
 
-<h1 align="center"> Windows Mwmory & Processes<br><img width="300px" src="https://github.com/user-attachments/assets/3399c45d-8f64-4da2-bbc8-3fa15993181f"><br>
+<h1 align="center"> Windows Memory & Processes<br><img width="300px" src="https://github.com/user-attachments/assets/3c611801-4d91-40e8-b35b-a2395cf04ada"><br>
 
 
 <p align="center"><img width="180px" src="https://github.com/user-attachments/assets/eec07c31-df33-48de-a52b-2b9b701ba625"><br>
