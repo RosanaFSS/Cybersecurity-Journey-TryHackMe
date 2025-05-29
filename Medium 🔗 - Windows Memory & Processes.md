@@ -7,6 +7,9 @@ Analyze a memory dump of a Windows host and uncover malicious processes. Access 
 <br>
 <br>
 
+![image](https://github.com/user-attachments/assets/3aca536a-02ea-4db0-88c4-91389ec9bc44)
+
+
 <p>THe hashes are the same.</p>
 
 <br>
