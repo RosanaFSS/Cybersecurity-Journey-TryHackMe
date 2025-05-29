@@ -306,15 +306,15 @@ Analyzing processes is only the beginning. The next steps are analyzing user and
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| May 27, 2025      |     386    |         206ᵗʰ          |            4ᵗʰ       |        147ᵗʰ         |           3ʳᵈ        |       105,097      |             752       |    62       |
+| May 28, 2025      |     387    |         206ᵗʰ          |            4ᵗʰ       |        133rd         |           3ʳᵈ        |       105,249      |             753       |    62       |
 
 </div>
 
-<p align="center"> Global All Time:    206ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/6a3f4f40-451b-4231-be41-e34cba94d38e" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/b740ad71-5488-4541-bf75-c0ef9f1f8010"><br><br>
-                   Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/65d17fb1-178a-45cc-8754-e497a2b65b2f"><br><br>
-                   Global monthly:    147ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/1ada0fba-b629-4c2c-805a-f66f9ae7b80e"><br><br>
-                   Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/15b883b7-8f78-4706-9f35-85ecb7dc8084"><br><br></p>
+<p align="center"> Global All Time:    206ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/02b37c5c-0d9f-4556-8d41-c3ba7bf9fced" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/af4f172c-b35d-4f96-9fd1-54f65c68e2d9"><br><br>
+                   Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/cc88a1eb-7ece-453f-a99d-e20dbfa244e8"><br><br>
+                   Global monthly:    133rd<br><img width="1000px" src="https://github.com/user-attachments/assets/5672cee7-375e-4574-a526-91e2d39b3070"><br><br>
+                   Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/ecb82df8-78df-4e53-b500-faf3dffef7b0"><br><br></p>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
