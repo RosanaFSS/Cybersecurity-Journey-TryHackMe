@@ -1,3 +1,11 @@
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Windows Memory & Processes}}$$</h1>
+<p align="center"><img width="180px" src="https://github.com/user-attachments/assets/eec07c31-df33-48de-a52b-2b9b701ba625"><br>
+May 28, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{387}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+Analyze a memory dump of a Windows host and uncover malicious processes. Access it clicking <a href="https://tryhackme.com/room/windowsmemoryandprocs"</a>here.<br><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/b38ff0f8-0cac-4043-9249-4776d5c57a45"></p>
+
+<br>
+<br>
 
 <p>THe hashes are the same.</p>
 
@@ -231,6 +239,24 @@ ubuntu@tryhackme:~$ ls 5252 | grep -E ".docm|.dotm" -i
 
 <p>:-!</p>
 
+<br>
+
+```bash
+ubuntu@tryhackme:~$ mkdir 5252
+ubuntu@tryhackme:~$ cd 5252
+ubuntu@tryhackme:~/5252$ vol3 -f ../THM-WIN-001_071528_07052025.mem windows.dumpfiles --pid 5252
+...
+ubuntu@tryhackme:~$ ls 5252 | grep -E ".docm|.dotm" -i
+
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/fd7582aa-3b17-406c-a64c-9378eb405e68)
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/f898bd32-9445-4f28-8f96-215382b057b3)
 
@@ -247,3 +273,50 @@ ubuntu@tryhackme:~$ ls 5252 | grep -E ".docm|.dotm" -i
 
 
 
+<br>
+
+<h2>Task 9 . Conclusion</h2>
+<p>This room was the first in a series of three that dives into analyzing a memory dump. You went through a real-life scenario and analyzed a memory dump with a focus on extracting processes and their information. You uncovered a potential attack chain and multiple suspicious artifacts.<br><br>
+
+Analyzing processes is only the beginning. The next steps are analyzing user and network activity.</p>
+
+<br>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+
+
+> 9.1. <em>I am ready to apply my newly obtained skills!</em><br><a id='9.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+
+
+<br>
+<br>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/1a3111a6-ee8c-44ee-8e51-2baa60b2718b"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/01d32ff6-51d5-45da-b262-094eea1c8208"></p>
+
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+
+
+<div align="center">
+
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| May 27, 2025      |     386    |         206ᵗʰ          |            4ᵗʰ       |        147ᵗʰ         |           3ʳᵈ        |       105,097      |             752       |    62       |
+
+</div>
+
+<p align="center"> Global All Time:    206ᵗʰ<br><img width="300px" src="https://github.com/user-attachments/assets/6a3f4f40-451b-4231-be41-e34cba94d38e" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/b740ad71-5488-4541-bf75-c0ef9f1f8010"><br><br>
+                   Brazil All Time:     4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/65d17fb1-178a-45cc-8754-e497a2b65b2f"><br><br>
+                   Global monthly:    147ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/1ada0fba-b629-4c2c-805a-f66f9ae7b80e"><br><br>
+                   Brazil monthly:      3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/15b883b7-8f78-4706-9f35-85ecb7dc8084"><br><br></p>
+
+<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<br>
+<h1 align="center">Thank you very much <a href="https://tryhackme.com/p/Gensane">Gensane</a>   for developinng this experience so that I could sharpen my skills!</h1>
