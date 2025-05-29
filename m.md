@@ -49,18 +49,10 @@ TopTierConversions LTD is proud to present its latest product launch..  Access i
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/40bd35cd-26ad-467b-9aae-a807d69a9d5a)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/cba14bc4-a7ce-4b4c-aa2b-d705c64e8cf4)
-
-<br>
-<br>
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bcc07be3-dc62-4f9b-b9c2-ec014810d8f7"><br>
-                   <img width="1000px" src="https://github.com/user-attachments/assets/1c32fa03-1b09-4aed-878f-6c8e0ad159b1"></p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/40bd35cd-26ad-467b-9aae-a807d69a9d5a"><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/cba14bc4-a7ce-4b4c-aa2b-d705c64e8cf4"></p>
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
 
 
