@@ -1,5 +1,5 @@
 <h1 align="center">Physical Security Intro<br><br>
-<img width="80px" src="https://github.com/user-attachments/assets/11ae4056-32b2-4dac-a397-5b86b40f56f8"></h1
+<img width="80px" src="https://github.com/user-attachments/assets/11ae4056-32b2-4dac-a397-5b86b40f56f8"></h1>
 
 <p align="center">May 28, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
