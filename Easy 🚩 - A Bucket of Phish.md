@@ -7,6 +7,14 @@ From the Hackfinity Battle CTF event.<br>  Access it clicking <a href="https://t
 <br>
 
 
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="">A Bucket of Phish</a></h3>
+
+
+<br>
+<br>
+
+
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/b7fec8ed-b3b1-4bbc-b89b-3c12af6aab28"><br>
                    <img width="1000px" src="https://github.com/user-attachments/assets/4d75be97-8826-4ac2-85e7-a33c6b1d3720"></p>
