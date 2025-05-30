@@ -29,7 +29,7 @@ From the Hackfinity Battle CTF event.<br>Access it clicking <a href="https://try
 
 </div>
 
-<p align="center"> Global All Time: 205ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/aa0d9df8-d633-4097-a1f7-190e6b4b6394" alt="Your Image Badge"><br>
+<p align="center"> Global All Time: 204ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/aa0d9df8-d633-4097-a1f7-190e6b4b6394" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/ca10d595-9cc9-4f58-bbd6-616fc93b4371"><br><br>
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/cf4101d1-38c6-4b57-b1b1-b810fc18a48b"><br><br>
                    Global monthly:  134ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/cb077f92-d57c-49a3-a0dc-038acbfa55d5"><br><br>
