@@ -8,7 +8,7 @@ From the Hackfinity Battle CTF event.<br>Access it clicking <a href="https://try
 <br>
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href=">A Bucket of Phish</a></h3>
+<h3 align="center"> Click here ➡️  <a href="">A Bucket of Phish</a></h3>
 
 
 <br>
