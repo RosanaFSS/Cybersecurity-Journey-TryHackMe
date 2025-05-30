@@ -8,7 +8,7 @@ From the Hackfinity Battle CTF event.<br>  Access it clicking <a href="https://t
 
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href="">A Bucket of Phish</a></h3>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/a-bucket-of-phish-tryhackme-walkthrough-cloud-computing-aws-30-points-0d966b7e0d1d">A Bucket of Phish</a></h3>
 
 
 <br>
