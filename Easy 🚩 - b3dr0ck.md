@@ -29,15 +29,12 @@ Server trouble in Bedrock.<br>Access it clicking <a href="https://tryhackme.com/
 
 </div>
 
-![image](https://github.com/user-attachments/assets/d44badff-f514-4c04-aabf-77cd214bf726)
-
-
 <p align="center"> Global All Time: 205ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/de66ac84-47cc-4dab-b28c-1b66da5fd5b4" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/e9cb2b28-7560-4311-9394-918b1ccd666a"><br><br>
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/8f1a8a2f-e4f9-4c74-80ee-f8efee2eafea"><br><br>
                    Global monthly:  142ⁿᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/e9b92b99-2f39-4d69-8793-2867caa05908"><br><br>
                    Brazil monthly:   3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/01c12a06-1821-4bdc-a4b4-1e494d3afe6f"><br><br>
-                   Weekly League:   15ᵗʰ, Diadmon<br><img width="200px" src="https://github.com/user-attachments/assets/d44badff-f514-4c04-aabf-77cd214bf726"><br>
+                   Weekly League:   15ᵗʰ, Diamond<br><img width="200px" src="https://github.com/user-attachments/assets/d44badff-f514-4c04-aabf-77cd214bf726"><br>
                                                      <img width="1000px" src="https://github.com/user-attachments/assets/b18f34df-ef67-4c18-ac3f-791a43d1a46d"></p>
 
 <h1 align="center">Thanks for coming!</h1>
