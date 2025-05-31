@@ -15,11 +15,11 @@ Practice how to investigate the content of an Amazon S3 bucket.<br> It is a Linu
 <br>
 
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<h1 align="center">Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/b7fec8ed-b3b1-4bbc-b89b-3c12af6aab28"><br>
                    <img width="1000px" src="https://github.com/user-attachments/assets/4d75be97-8826-4ac2-85e7-a33c6b1d3720"></p>
                    
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+<h1 align="center">My TryHackMe Journey</h1>
 
 
 <div align="center">
@@ -36,7 +36,7 @@ Practice how to investigate the content of an Amazon S3 bucket.<br> It is a Linu
                    Global monthly:  134ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/7c4bedf6-2178-41af-8be7-bab1dfe024ee"><br><br>
                    Brazil monthly:   3ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/193b856f-91e2-499f-8576-fb3dd65bb13f"><br><br></p>
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Thanks for coming!}}$$</h1>
+<h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 <br>
 <h1 align="center">Thank you very much <a href="https://tryhackme.com/p/tryhackme">tryhackme</a>, <a href="https://tryhackme.com/p/munra">munra</a> and <a href="https://tryhackme.com/p/hadrian3689">hadrian3689</a><br>for developinng this experience so that I could sharpen my skills!</h1>
