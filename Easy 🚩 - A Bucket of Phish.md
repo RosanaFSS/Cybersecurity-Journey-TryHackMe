@@ -1,4 +1,4 @@
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{A Bucket of Phish}}$$</h1>
+<h1 align="center">A Bucket of Phish</h1>
 <p align="center"><img width="120px" src="https://github.com/user-attachments/assets/5656aeb7-1a0f-4d54-8d8a-178a67ad6d9a"><br>May 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{389}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Practice how to investigate the content of an Amazon S3 bucket.<br> It is a Linux challenge from the Hackfinity Battle CTF event.<br>Access it clicking <a href="https://tryhackme.com/room/hfb1abucketofphish"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/a478009a-2a5d-4a60-bc3f-4925ccbb44a6"></p>
