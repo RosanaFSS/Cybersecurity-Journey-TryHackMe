@@ -1,5 +1,5 @@
 <h1 align="center">b3dr0ck</h1>
-<p align="center"><img width="120px" src="https://github.com/user-attachments/assets/479a199e-c64d-4f8c-bd35-39b4b5ed1f80"><br>May 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 389-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+<p align="center"><img width="90px" src="https://github.com/user-attachments/assets/479a199e-c64d-4f8c-bd35-39b4b5ed1f80"><br>May 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 389-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Server trouble in Bedrock.<br>Access it clicking <a href="https://tryhackme.com/room/b3dr0ck"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/f385a0aa-23e1-4447-b187-5a12a293043b"></p>
 
