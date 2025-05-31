@@ -29,7 +29,7 @@ Server trouble in Bedrock.<br>Access it clicking <a href="https://tryhackme.com/
 
 </div>
 
-<p align="center"> Global All Time: 205ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/de66ac84-47cc-4dab-b28c-1b66da5fd5b4" alt="Your Image Badge"><br>
+<p align="center"> Global All Time: 204ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/de66ac84-47cc-4dab-b28c-1b66da5fd5b4" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/e9cb2b28-7560-4311-9394-918b1ccd666a"><br><br>
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/8f1a8a2f-e4f9-4c74-80ee-f8efee2eafea"><br><br>
                    Global monthly:  142ⁿᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/e9b92b99-2f39-4d69-8793-2867caa05908"><br><br>
