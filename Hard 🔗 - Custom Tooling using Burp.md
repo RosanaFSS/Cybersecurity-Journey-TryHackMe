@@ -1,6 +1,6 @@
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Custom Tooling using Burp, in progress}}$$</h1>
+<h1 align="center">Custom Tooling using Burp, in progress</h1>
 <p align="center"><img width="180px" src="https://github.com/user-attachments/assets/a74da0a4-04dc-432a-add8-95a9454fd5ef"><br>
-May 27, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{386}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+May 27, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 386-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Creating custom tooling for application testing using Burp Plugins. Access it clicking <a href="https://tryhackme.com/room/customtoolingviaburp"</a>here.<br><br>
 <img width="1000px" src=""></p>
 
