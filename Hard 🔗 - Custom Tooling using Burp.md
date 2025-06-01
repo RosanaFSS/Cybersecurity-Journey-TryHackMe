@@ -345,7 +345,7 @@ const rawAesKey = window.crypto.getRandomValues(new Uint8Array(16));
 <br>
 
 - Clicked <code>this room</code> and started the second VM.<br><br>
-- Second_IP is the second VM IP in my hands-on.<br><br><
+- Second_IP is the second VM IP in my hands-on.<br><br>
 - Typed <code>ecorp_user</code> for username, and the IP mentioned above followed by :8443.<br><br>
 
 ![image](https://github.com/user-attachments/assets/b351e886-a18b-4897-9c3a-26d36deb62a7)
@@ -359,11 +359,6 @@ const rawAesKey = window.crypto.getRandomValues(new Uint8Array(16));
 
 
 
-<br>
-
-![image](https://github.com/user-attachments/assets/e25cf0a5-2da1-4178-9cec-84706a975b2f)
-
-
 
 ```bash
 Decryption Success: Welcome NFT member! Your secret code is THM{Breaking.Custom.Crypto.Is.Fun}. Your NFT wallet private key is: HOLD
@@ -373,15 +368,18 @@ Brute-force complete!
 <br>
 <br>
 
+
 <h2>Task 5 . Modifying a Burp Extension</h2>
 
 <br>
 <br>
 
-<p>-Navigated to the THM AttackBox.<br><br>
-- Typed the credentials and hit ENTER.<br><br></p>
+![image](https://github.com/user-attachments/assets/1777a0b0-ee34-46f6-9117-00d91b388553)
+
 
 <br>
+
+![image](https://github.com/user-attachments/assets/4159f3bf-86bb-4f4c-b033-6f1bfb06224f)
 
 
 
