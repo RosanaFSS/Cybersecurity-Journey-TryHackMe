@@ -17,7 +17,7 @@ In this room, we will focus on using <code>Burp</code> plugins to create tools a
 
 <br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<h3 align="left">Answer the question below</h3>
 
 
 > 1.1. <em>I am ready to learn about creating custom Burp plugins!</em><br><a id='1.1'></a>
