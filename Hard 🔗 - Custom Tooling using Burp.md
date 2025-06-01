@@ -181,13 +181,125 @@ The following JS snippet shows how the web application encrypts credentials befo
 
 <br>
 
-<p>TargetIP:8443</p>
+<p>SecondTargetIP:8443</p>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/14ad9154-a7d5-4df7-b58e-0f5687e1ef3d)
+![image](https://github.com/user-attachments/assets/e9bfe57d-d8f5-4ca8-a944-9598d9938595)
+
 
 <br>
+
+![image](https://github.com/user-attachments/assets/feaa369c-ffec-4e2d-9ebe-ebd9cb6105ff)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/1a2b1166-8239-4f13-887d-7283e122742d)
+
+<br>
+
+<p>Viewed Page Source.<br><br>
+static/form-submit.js</p>p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/66cd24f5-4c1e-4e95-a2b5-bdb5537d112c)
+
+
+<br>
+
+<p>Navigated to <code>https://SecondTargetIP:8443/static/form-submit.js</code></p>
+
+<br>
+
+
+```bash
+const form = document.querySelector('#login-form');
+const enc = new TextEncoder()
+
+function str2ab(str) {
+    const buf = new ArrayBuffer(str.length);
+    const bufView = new Uint8Array(buf);
+    for (let i = 0, strLen = str.length; i < strLen; i++) {
+      bufView[i] = str.charCodeAt(i);
+    }
+    return buf;
+}
+
+async function getSecretKey(key) {
+    return await window.crypto.subtle.importKey("raw", key, "AES-CBC", true,
+        ["encrypt", "decrypt"]
+    );
+}
+
+async function encryptMessage(key, message) {
+	console.log(key);
+	console.log(message);
+    iv = enc.encode("0000000000000000").buffer;
+    return await window.crypto.subtle.encrypt(
+      {
+        name: "AES-CBC",
+        iv
+      },
+      key,
+      message
+    );
+}
+
+async function decryptMessage(key, message) {
+    iv = enc.encode("0000000000000000").buffer;
+    return await window.crypto.subtle.decrypt(
+      {
+        name: "AES-CBC",
+        iv
+      },
+      key,
+      message
+    );
+}
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = (new FormData(form));
+    const formDataObj = {};
+    formData.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj)
+
+    const rawAesKey = window.crypto.getRandomValues(new Uint8Array(16));
+    const aesKey = await getSecretKey(rawAesKey)
+    console.log(aesKey)
+    let rawdata = "username=" + formDataObj["username"] + "&password=" + formDataObj["password"]
+    let data = window.btoa(String.fromCharCode(...new Uint8Array(await encryptMessage(aesKey, enc.encode(rawdata).buffer))))
+
+    const response = await fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        },
+        body: "mac=" + encodeURIComponent(window.btoa(String.fromCharCode(...rawAesKey))) + "&data=" + encodeURIComponent(data)
+    });
+    if (response.ok && response.status == 200 && (await response.text()).startsWith("result=")) {
+        window.location.href = '/authenticate';
+    } else {
+        alert('Login failed');
+    }
+});
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3ab3b5c2-0306-4f32-842d-5094287f2508)
+
+<br>
+
+<p>Clicked <code>Extensions</code>.<br><br>
+Clicked <code>Installed</code>.<br><br>
+Clicked <code>Add</code>.<br><br>
+</p>
+
+
 
 
 ![image](https://github.com/user-attachments/assets/f78d5e54-d777-43b4-81c9-01d8e0a153b2)
