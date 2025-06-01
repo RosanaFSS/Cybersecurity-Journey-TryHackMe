@@ -409,6 +409,9 @@ Brute-force complete!
 
 <br>
 
+![image](https://github.com/user-attachments/assets/59957c63-783a-4dc2-a5b9-31e16e470187)
+
+
 
 ```bash
 Decryption Success: Welcome NFT member! Your secret code is THM{Breaking.Custom.Crypto.Is.Fun}. Your NFT wallet private key is: HOLD
