@@ -411,6 +411,11 @@ Brute-force complete!
 
 ![image](https://github.com/user-attachments/assets/59957c63-783a-4dc2-a5b9-31e16e470187)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/a0005053-3699-4f5f-b73c-ff109efa1b62)
+
+
 
 
 ```bash
