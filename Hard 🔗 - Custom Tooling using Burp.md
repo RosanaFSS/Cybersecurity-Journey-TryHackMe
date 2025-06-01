@@ -200,7 +200,7 @@ The following JS snippet shows how the web application encrypts credentials befo
 <br>
 
 <p>Viewed Page Source.<br><br>
-static/form-submit.js</p>p>
+static/form-submit.js</p>
 
 <br>
 
@@ -301,16 +301,6 @@ Clicked <code>Add</code>.<br><br>
 
 
 
-
-![image](https://github.com/user-attachments/assets/f78d5e54-d777-43b4-81c9-01d8e0a153b2)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/433c9f0e-5831-40e8-8f85-202bf38f8cd4)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/1f1ae6f9-e295-440c-8866-92a816d43ce8)
 
 <br>
 
