@@ -46,7 +46,7 @@ In this room, we will focus on using <code>Burp</code> plugins to create tools a
 
 <br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left">Answer the questions below</h3>
 
 
 > 2.1. <em>Which intercepting proxy currently only has support for Windows?</em><br><a id='2.1'></a>
@@ -118,7 +118,7 @@ Now, let's explore the Decoder Improved extension and use it to Base64 encode a 
 
 <br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left">Answer the questions below</h3>
 
 
 > 3.1. <em>What is the decoded value for the string VEhNezEwMUJ1cnB9?</em><br><a id='3.1'></a>
@@ -166,7 +166,7 @@ The following JS snippet shows how the web application encrypts credentials befo
 
 <br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left">Answer the questions below</h3>
 
 
 > 4.1. <em>What is the password for the user ecorp_user?</em><br><a id='4.1'></a>
@@ -364,7 +364,7 @@ By combining solid intercepting proxy knowledge with scripting or plugin develop
 
 <br>
 
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left">Answer the questions below</h3>
 
 
 > 7.1. <em>I understand the importance of using plugins to develop custom tooling!</em><br><a id='7.1'></a>
