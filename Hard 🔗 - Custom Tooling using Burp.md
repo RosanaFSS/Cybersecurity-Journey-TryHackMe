@@ -415,6 +415,35 @@ Brute-force complete!
 
 ![image](https://github.com/user-attachments/assets/a0005053-3699-4f5f-b73c-ff109efa1b62)
 
+<br>
+
+![image](https://github.com/user-attachments/assets/0cbf0d1d-79cb-4776-a91d-002efb8977bb)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a1c06e8e-95a2-4457-8aab-d65d659a6338)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c38730d4-ede9-4b3f-a9ea-4e652a73aeac)
+
+
+<br>
+
+<p>Secret was accepted and verified!</p>
+
+![image](https://github.com/user-attachments/assets/ab00df1b-0373-46a5-bccf-4dbb18f8087f)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/90175d17-5879-404c-826a-2f9ddf13eee9)
+
+<br>
+
+
+
 
 
 
