@@ -306,66 +306,64 @@ const rawAesKey = window.crypto.getRandomValues(new Uint8Array(16));
 
 <p>- Typed <code>code</code> in a terminal in the <code>CustomTooling-Buro.v.1.8 VM</code>.<br><br>
 - Launched <code>VS Code Editor</code>.<br><br>
+
+![image](https://github.com/user-attachments/assets/c8b927c5-f159-42a8-a432-ebc6a690ec05)
+
+<br>
+
+ 
 - Clicked <code>101Burp</code> > <code>src</code> > <code>main</code> > <code>java</code> > <code>BruteForce.java</code>.<br><br>
-- Launched a <code>terminal</code>.<br><br>  
+
+![image](https://github.com/user-attachments/assets/206e3da8-8eee-424b-bde6-63132e847d58)
+
+<br>
+
 - Ran <code>cd ~/101Burp/</code>code>.<br><br>
+
+![image](https://github.com/user-attachments/assets/0ef1a435-9d6f-4eaf-9ccd-748d9b805ae8)
+
+<br>
+
 - Ran <code>gradle build</code>code>.
+
+![image](https://github.com/user-attachments/assets/a139a821-72a4-44e2-8bcd-2e9bd678fc0f)
+
+<br>
+
 - Launched <code>Burp Suite</code>.<br><br>
 - Clicked <code>Extensions</code> > <code>Add</code> > <code>Select file ...</code> > <code>/101Burp/build/libs/101Burp-1.0-SNAPSHOT.jar</code> > <code>Open</code>.<br><br>
+
+![image](https://github.com/user-attachments/assets/0c1c38f6-dd16-448f-a1c4-1acff2c3ffe1)
+
+<br>
+
+
 - Clicked <code>Next</code>.<br><br>
+
+![image](https://github.com/user-attachments/assets/a8fb40dc-7ee3-4f99-b3c2-fa197e765583)
+
+<br>
+
 - Clicked <code>this room</code> and started the second VM.<br><br>
 - Second_IP is the second VM IP in my hands-on.<br><br><
 - Typed <code>ecorp_user</code> for username, and the IP mentioned above followed by :8443.<br><br>
+
+![image](https://github.com/user-attachments/assets/b351e886-a18b-4897-9c3a-26d36deb62a7)
+
+<br>
+
 - Clicked <code>Start Attack</code>.<br><br>
 - <code>Brute Force Success</code>: <code>0007</code>.<br><br></p>
 
+![image](https://github.com/user-attachments/assets/3b38d91b-601e-4266-baec-e91d3c5cb1cc)
 
-<br>
-
-![image](https://github.com/user-attachments/assets/e56dcbb8-4938-40d4-9eb9-eb71ce054ca3)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/182f4792-e472-4c94-b3fc-57c2534feb5e)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/86c32bef-59c9-4349-85cb-ce52c870c1f4)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/07538a14-5571-4c18-9db6-8e46ca7e9a5a)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/2f5bbbf9-7883-44e7-976c-0c1e387af5cc)
 
 
 <br>
 
-![image](https://github.com/user-attachments/assets/3252fab0-302d-47d9-8480-36d6357c52c9)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/052d2195-a1e8-4255-8099-89e03d96b7e9)
+![image](https://github.com/user-attachments/assets/e25cf0a5-2da1-4178-9cec-84706a975b2f)
 
 
-<br>
-
-![image](https://github.com/user-attachments/assets/2c4be59d-991e-4476-baa2-347146388a6b)
-
-
-<br>
-
-![image](https://github.com/user-attachments/assets/4d3b8f0f-c549-4ef2-af29-0f82f58f7e91)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/8c184911-513e-4e1e-8e3f-cdcf73b0edb6)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/672dce1a-51c0-43f0-b451-61e8e426c916)
 
 ```bash
 Decryption Success: Welcome NFT member! Your secret code is THM{Breaking.Custom.Crypto.Is.Fun}. Your NFT wallet private key is: HOLD
