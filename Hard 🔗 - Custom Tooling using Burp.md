@@ -1,8 +1,9 @@
 <h1 align="center">Custom Tooling using Burp, in progress</h1>
 <p align="center"><img width="180px" src="https://github.com/user-attachments/assets/a74da0a4-04dc-432a-add8-95a9454fd5ef"><br>
-May 27, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 386-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+Jun 1, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 391-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Creating custom tooling for application testing using Burp Plugins. Access it clicking <a href="https://tryhackme.com/room/customtoolingviaburp"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/971a1553-af84-4268-8d87-52bdecbd7504"></p>
+
 
 <br>
 <br>
@@ -443,31 +444,21 @@ Brute-force complete!
 <br>
 
 
+![image](https://github.com/user-attachments/assets/fcda5e66-cf4a-4b37-a543-6733b7a32eb1)
 
+<br>
 
-
-
-```bash
-Decryption Success: Welcome NFT member! Your secret code is THM{Breaking.Custom.Crypto.Is.Fun}. Your NFT wallet private key is: HOLD
-Brute-force complete!
-```
-
-
-
-![image](https://github.com/user-attachments/assets/0c2cc433-8e84-4c0c-b900-f4a824edf2f6)
-
+![image](https://github.com/user-attachments/assets/af595af9-3c76-4ed0-a019-d3f0d45e0c41)
 
 
 <h2>Task 6 . Challenge</h2>
-
-<br>
-<br>
 
 <h2>Task 7 . Conclusion</h2>
 <h3>Mastering Plugins and Proxies</h3>
 <p>Custom plugins within intercepting proxies are an essential skillset for any red teamer dealing with mobile applications or complex client-side protections. When traditional tools fall short due to custom cryptography or application hardening, custom plugins give you the power to intercept, decrypt, and modify requests and responses in real-time.
 <br>
 <br>
+
 
 In this room, we explored why intercepting proxies like Burp Suite are so valuable—especially when paired with custom logic designed to reverse engineer and bypass protections. Rather than building an exploit from scratch, the goal here was to enable visibility and control, allowing your existing red teaming tools and techniques to shine.
 <br>
@@ -484,10 +475,46 @@ By combining solid intercepting proxy knowledge with scripting or plugin develop
 <h3 align="left">Answer the questions below</h3>
 
 
-> 7.1. <em>I understand the importance of using plugins to develop custom tooling!</em><br><a id='7.1'></a>
->> <strong><code>No answer needed</code></strong><br>
-<p></p>
+![image](https://github.com/user-attachments/assets/6f62b9ce-37c6-4f8e-acb3-98c1acf9bc3f)
+
+
+![image](https://github.com/user-attachments/assets/0c2cc433-8e84-4c0c-b900-f4a824edf2f6)
+
+
+![image](https://github.com/user-attachments/assets/d4ee3b72-9d51-4e8b-bce2-56d90b81a3bd)
+
+![image](https://github.com/user-attachments/assets/8a13fb0a-7558-4ad6-9082-7a057b55fdb0)
+
+![image](https://github.com/user-attachments/assets/dfe65d29-3704-4c81-9f7a-bb0547b3555a)
 
 <br>
 <br>
+
+![image](https://github.com/user-attachments/assets/e3c01c94-d098-45dc-b6dc-43058542c4db)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/53031ae0-e4f9-43f9-9a72-a2b2a12ff533)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/fa5e43c0-8164-4a94-b891-38242688a33f)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/d49db1b3-6f78-47fd-b7c1-e5067aa9a289)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/4af21287-c969-418f-af16-c64a9cff5e4b)
+
+
+
+
+
+
+
 
