@@ -387,20 +387,18 @@ Brute-force complete!
 
 ![image](https://github.com/user-attachments/assets/ceedb8c8-aee7-4509-8580-7ec7828e9527)
 
+<br>
 
 
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/80475fad-cc72-4902-bf39-0ea598158f0f)
+![image](https://github.com/user-attachments/assets/31b560fc-c974-401b-a00f-4bdd2c15e283)
 
 <br>
 
-<p>Repeated the steps from the previous tack using <code>ecorp_adm</code>.</p>
+![image](https://github.com/user-attachments/assets/fe8a37d6-01d1-4813-9857-613ef57d407f)
 
 <br>
+
+![image](https://github.com/user-attachments/assets/d600f78c-7f62-4961-a6e8-0baedd023924)
 
 
 
