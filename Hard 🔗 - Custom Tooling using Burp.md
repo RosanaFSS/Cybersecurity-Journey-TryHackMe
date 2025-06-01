@@ -294,16 +294,6 @@ form.addEventListener('submit', async (e) => {
 
 <br>
 
-<p>Clicked <code>Extensions</code>.<br><br>
-Clicked <code>Installed</code>.<br><br>
-Clicked <code>Add</code>.<br><br>
-</p>
-
-
-
-
-<br>
-
 ```bash
 const rawAesKey = window.crypto.getRandomValues(new Uint8Array(16));
     const aesKey = await getSecretKey(rawAesKey)
