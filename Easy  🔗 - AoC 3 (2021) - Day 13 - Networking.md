@@ -103,7 +103,7 @@
 - Toggled <code>Run a program or open external file</code>.<br>
 - Clicked <code>Select</code>.<br>
 - Chose <code>C:\Users\McSkidy\Desktop\evil.bat</code>.<br>
-- Clicked <code>Open<code>.<br>
+- Clicked <code>Open</code>.<br>
 - Clicked <code>Next</code>.<br>
 - Clicked <code>OK</code>.<br>
 - A new <code>Backup job</code> was created, named <code>Documents</code>.<br>
