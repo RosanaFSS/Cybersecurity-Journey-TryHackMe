@@ -10,9 +10,9 @@
 
 <p>
   
-- Launched <code>PowerShell</code><br><br>
+- Launched <code>PowerShell</code><br>
 
-- Executed <code>net users</code><br><br>
+- Executed <code>net users</code><br>
 
 ![image](https://github.com/user-attachments/assets/57ad735d-d55b-40a7-a986-ee10b4b36140)
 
@@ -47,11 +47,16 @@
 
 ![image](https://github.com/user-attachments/assets/50f95368-8c15-49d7-9549-b6eed707ed51)
 
+<br>
+
+
+1.3. What backup service did you find running on the system?<br>
+<code>IperiusSvc</code><br>
 
 <br>
 
-- Executed <code>wmic service list >> services.txt</code><br><br>
-- Executed <code>Select-String -Path services.txt -Pattern backup</code>.<br><br>
+- Executed <code>wmic service list >> services.txt</code><br>
+- Executed <code>Select-String -Path services.txt -Pattern backup</code>.<br>
 
 <br>
 
@@ -59,10 +64,6 @@
 
 <br>
 
-1.3. What backup service did you find running on the system?<br>
-<code>IperiusSvc</code><br>
-
-<br>
 
 1.4. What is the path of the executable for the backup service you have identified?<br>
 <code>C:\Program Files (x86)\Iperius Backup\IperiusService.exe</code><br>
@@ -83,37 +84,36 @@
 <br>
 
 
-- Navigated to <code>THM Attackbox</code> virtual machine.<br><br>
-- Looked at the right upper corner and discovered my <code>AttackIP</code>:<code>10.10.72.55</code>.<br><br>
-- Launched <code>Command Prompt</code>.<br><br>
-- Practice also executing the command <code>ifconfig</code>, and confirmed the IP there in the <code>ens5</code> section.<br><br>
-- Set up a listener using <code>nc -nlvp 4444</code>.<br><br>
+- Navigated to <code>THM Attackbox</code> virtual machine.<br>
+- Looked at the right upper corner and discovered my <code>AttackIP</code>:<code>10.10.72.55</code>.<br>
+- Launched <code>Command Prompt</code>.<br>
+- Practice also executing the command <code>ifconfig</code>, and confirmed the IP there in the <code>ens5</code> section.<br>
+- Set up a listener using <code>nc -nlvp 1337</code>.<br>
 -----------------------------------<br>
-- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine.<br><br>
-- Note: the <code>TargetIP</code> I am using is <code>10.10.203.205</code>.<br><br>
+- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine.<br>
+- Note: the <code>TargetIP</code> I am using is <code>10.10.203.205</code>.<br>
 - Launched <code>notepad</code><br><br>
-- Added content to a <code>notepad</code> file.<br><br>
-- Saved it as <code>evil.bat</code> in the <code>C:\Users\McSkidy\Desktop</code> path.<br><br>
-- Navigated to <code>Desktop</code>.<br><br>
-- Double-clicked <code>evil.bat</code>.<br><br>
+- Added content to a <code>notepad</code> file.<br>
+- Saved it as <code>evil.bat</code> in the <code>C:\Users\McSkidy\Desktop</code> path.<br>
+- Navigated to <code>Desktop</code>.<br>
+- Double-clicked <code>evil.bat</code>.<br>
 -----------------------------------<br>
-- Navigated to <code>THM Attackbox</code> virtual machine.<br><br>
+- Navigated to <code>THM Attackbox</code> virtual machine.<br>
 -----------------------------------<br>
-- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine.<br><br>
-- Launched <code>Iperius Backup</code> application.<br><br>
-- Clicked <code>Create a New Backup Job</code>.<br><br>
-- Clicked <code>Add folder</code>.<br><br>
-- Clicked <code>Select</code>.<br><br>
-- Chose <code>C:\Users</code>.<br><br>
-- Clicked <code>OK</code>.<br><br>
-- Clicked <code>Next</code>.<br><br>
-- Navigated to the <code>Other processes</code> tab.<br><br>
-- Toggled <code>Run a program or open external file</code>.<br><br>
-- Clicked <code>Select</code>.<br><br>
-- Chose <code>C:\Users\McSkidy\Desktop\evil.bat</code>.<br><br>
-- Clicked <code>Next</code>, and <code>OK</code>.<br><br>
-- Typed <code>Plan</code> for the <code>Job name</code>, and clicked <code>OK</code>.<br><br>
--
+- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine.<br>
+- Launched <code>Iperius Backup</code> application.<br>
+- Clicked <code>Create a New Backup Job</code>.<br>
+- Clicked <code>Add folder</code>.<br>
+- Clicked <code>Select</code>.<br>
+- Chose <code>C:\Users</code>.<br>
+- Clicked <code>OK</code>.<br>
+- Clicked <code>Next</code>.<br>
+- Navigated to the <code>Other processes</code> tab.<br>
+- Toggled <code>Run a program or open external file</code>.<br>
+- Clicked <code>Select</code>.<br>
+- Chose <code>C:\Users\McSkidy\Desktop\evil.bat</code>.<br>
+- Clicked <code>Next</code>, and <code>OK</code>.<br>
+- Typed <code>Plan</code> for the <code>Job name</code>, and clicked <code>OK</code>.<br>
 
 
 <br>
@@ -157,8 +157,6 @@
 
 <br>
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/b5242ba3-4a26-4f2a-9701-5affc5b8eb9e)
 
 <br>
@@ -178,3 +176,8 @@
 <br>
 
 ![image](https://github.com/user-attachments/assets/72eb6bde-91c7-4c2d-be87-6993646dd6df)
+
+<br>
+<br>
+
+
