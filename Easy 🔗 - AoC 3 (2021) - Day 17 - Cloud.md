@@ -1,7 +1,7 @@
 <h1 align="center">Advent of Cyber 3 (2021) - Cloud - Day 17 -  Elf Leaks</h1> 
 <p align="center"><img width="200px" src="https://github.com/user-attachments/assets/6371db5c-9eec-4f49-bdff-02ec11b425c9"><br>Jun 3, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 393-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>
 <br>Access Advent of Cyber 3 (2021) clicking <a href="https://tryhackme.com/room/adventofcyber3"</a>here.<br><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/a7093acb-aa87-46da-a90e-b0aa67d449c9"></p>
+<img width="1000px" src=""></p>
 
 <br>
 <br>
