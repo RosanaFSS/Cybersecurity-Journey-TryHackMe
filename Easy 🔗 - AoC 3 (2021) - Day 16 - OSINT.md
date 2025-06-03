@@ -1,7 +1,7 @@
 <h1 align="center">Advent of Cyber 3 (2021) - OSINT - Day 16 -  Ransomware Madness</h1> 
 <p align="center"><img width="200px" src="https://github.com/user-attachments/assets/6371db5c-9eec-4f49-bdff-02ec11b425c9"><br>Jun 3, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 393-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 <br>Access Adevent of Cyber 3 (2021) clicking <a href="https://tryhackme.com/room/adventofcyber3"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/a7093acb-aa87-46da-a90e-b0aa67d449c9"></p>
 
 <br>
 <br>
@@ -103,5 +103,32 @@
 ![image](https://github.com/user-attachments/assets/139fd610-3f72-4f59-aa07-aa8e6f039594)
 
 
+<br>
+<br>
 
+
+<h1 align="center">Challenge in Progress, 68%</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/652b2dea-14ce-44cb-b1ce-846447ee97c0"></p>
+                   
+<h1 align="center">My TryHackMe Journey</h1>
+
+
+<div align="center">
+
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| Jun 3, 2025       |     393    |          200ᵗʰ         |            4ᵗʰ       |        5,771st       |         100ᵗʰ        |       106,027     |             762       |    62       |
+
+</div>
+
+<p align="center"> Global All Time: 200ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/dc733589-7af7-4b98-8875-b7bd3e6cfcf6" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/1fa46313-d6c4-4da6-81fb-1124dad660f3"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/4869226f-9292-4ab6-bce9-37efe4dba598"><br><br>
+                   Global monthly: 5,771st<br><img width="1000px" src="https://github.com/user-attachments/assets/0255c1be-313d-4d3b-a060-a89a3543aed3"><br><br>
+                   Brazil monthly:   100ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/8330f668-d580-442f-9b98-2e9f5cbf539a"><br><br></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<br><br>
+<h1 align="center">Thank you very much ben, ashu, tryhackme, cmnatic, timtaylor, strategos, umairalizafar, jcfarris, and wesladd for developinng this experience so that I could sharpen my skills!</h1>
 
