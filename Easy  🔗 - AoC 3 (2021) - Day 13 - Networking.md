@@ -72,7 +72,6 @@
 1.6. What is the content of the flag.txt file?<br>
 <code>THM-736635221</code><br>
 
-<br>
 - Navigated to <code>THM Attackbox</code> virtual machine.<br>
 - Looked at the right upper corner.<br>
 - Identified my <code>AttackIP</code>:<code>10.10.72.55</code>.<br>
