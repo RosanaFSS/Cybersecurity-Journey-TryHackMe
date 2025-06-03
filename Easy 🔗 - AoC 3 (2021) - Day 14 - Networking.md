@@ -6,20 +6,40 @@
 <br>
 <br>
 
-<p>1.1. How many pages did the dirb scan find with its default wordlist?<br>
+<p>1.1. How many pages did the <code>dirb</code> scan find with its default wordlist?<br>
 <code>4</code><br>
 
 
 <br>
 
+<h3><code>THM AttackBox</code></h3>
+
+<p>
+
+- <code>TargetIP</code>:<code>10.10.253.231</code>.<br>
+- <code>AttackIP</code>:<code>10.10.43.30</code><br>
+- Executed <code>dirb</code>.</p>
+
+
+![image](https://github.com/user-attachments/assets/acd2c91b-3c3b-447e-83a0-8af09cb27a92)
+
 
 <br>
+
 
 <p>1.2. How many scripts do you see in the /home/thegrinch/scripts folder?<br>
 <code>4</code><br>
 
-
 <br>
+
+<h3><code>AOC_CICD</code></h3>
+
+<p>
+  
+- Navigated to the path <code>/home/thegrinch/script</code>.<br>
+- Executed <code>ls</code>.</p>
+
+![image](https://github.com/user-attachments/assets/cb356180-46a3-4785-a695-6c688f5865db)
 
 
 <br>
