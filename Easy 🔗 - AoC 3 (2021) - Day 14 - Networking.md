@@ -9,10 +9,7 @@
 <p>1.1. How many pages did the <code>dirb</code> scan find with its default wordlist?<br>
 <code>4</code><br>
 
-
-<br>
-
-<h3><code>THM AttackBox</code></h3>
+<h3>THM AttackBox</h3>
 
 <p>
 
@@ -30,9 +27,7 @@
 <p>1.2. How many scripts do you see in the /home/thegrinch/scripts folder?<br>
 <code>4</code><br>
 
-<br>
-
-<h3><code>AOC_CICD</code></h3>
+<h3>AOC_CICD</h3>
 
 <p>
   
