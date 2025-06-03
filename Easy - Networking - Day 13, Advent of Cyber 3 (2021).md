@@ -12,6 +12,11 @@
 
 <br>
 
+1.1. Complete the username: p.....<br>
+<code>pepper</code><br>
+
+<br>
+
 
 <p>
   
@@ -21,11 +26,6 @@
 
 ![image](https://github.com/user-attachments/assets/57ad735d-d55b-40a7-a986-ee10b4b36140)
 
-
-<br>
-
-1.1. Complete the username: p.....<br>
-<code>pepper</code><br>
 
 <br>
 
