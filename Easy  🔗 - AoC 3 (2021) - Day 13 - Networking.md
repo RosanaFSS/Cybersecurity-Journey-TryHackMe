@@ -181,9 +181,6 @@
 <br>
 <br>
 
-<br>
-<br>
-
 <h1 align="center">Challenge in Progress, 60%</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/c8e905ef-e357-4b57-a5a1-8d2eb1e7df5f"></p>
                    
