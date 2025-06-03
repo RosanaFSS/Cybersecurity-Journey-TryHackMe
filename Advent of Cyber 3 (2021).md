@@ -8,7 +8,7 @@
 
 <h1>[ Day 13 ] Networking - They Lost The PLan!</h1>
 
-<p>-Launched <code>PowerShell</code><br><br>
+<p>- Launched <code>PowerShell</code><br><br>
 
 - Executed <code>net users</code><br><br>
 
