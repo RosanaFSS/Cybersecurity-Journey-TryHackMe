@@ -14,15 +14,12 @@
 <p>
 
 - <code>TargetIP</code>:<code>10.10.253.231</code>.<br>
-- <code>AttackIP</code>:<code>10.10.43.30</code><br>
+- <code>AttackIP</code>:<code>10.10.43.30</code>.<br>
 - Executed <code>dirb</code>.</p>
-
 
 ![image](https://github.com/user-attachments/assets/acd2c91b-3c3b-447e-83a0-8af09cb27a92)
 
-
 <br>
-
 
 <p>1.2. How many scripts do you see in the /home/thegrinch/scripts folder?<br>
 <code>4</code><br>
@@ -36,14 +33,68 @@
 
 ![image](https://github.com/user-attachments/assets/cb356180-46a3-4785-a695-6c688f5865db)
 
-
 <br>
 
 <p>1.3. What are the five characters following $6$G in pepper's password hash?<br>
 <code>ZUP42</code><br>
 
+<h3>THM AttackBox</h3>
+
+<p>
+
+- Executed <code>ssh</code> with the credentials provided.<br>
+
+![image](https://github.com/user-attachments/assets/72de3045-4c14-454f-8bef-59c04667b6af)
 
 <br>
+
+- Inspected the content of the  <code>loot.sh</code> script.<br>
+
+![image](https://github.com/user-attachments/assets/9eeedb28-a42a-47de-b6bc-0d4cd98ead2e)
+
+<br>
+
+- Launched <code>nano</code> to inspect the content of the <code>loot.sh</code> script.<br>
+
+![image](https://github.com/user-attachments/assets/2f8fa0de-3340-4530-87ff-981b0d494ec7)
+
+<br>
+
+- There is permission to edit <code>loot.sh</code>.<br>
+- Changed it.<br>
+
+![image](https://github.com/user-attachments/assets/d4bc108e-0287-4208-a0b4-32d1a0105f3f)
+
+<br>
+
+
+- Navigated to the path <code>/home/thegrinch/loot</code>.<br>
+- Identified <code>4</code> files.<br>
+
+![image](https://github.com/user-attachments/assets/0d5b4d90-139a-4592-8afa-0aed757c7855)
+
+<br>
+
+- Launched the web browser.<br>
+- Navigated to <code>10.10.253.231/admin</code>.<br>
+
+![image](https://github.com/user-attachments/assets/29a3cbce-d68b-474a-8524-edba4b006273)
+
+
+<br>
+
+- Viewed page source.<br>
+- Clicked <code>ls.html</code>.<br>
+
+![image](https://github.com/user-attachments/assets/840a6469-6777-4f99-b988-5c956c6dc4f3)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/08240b88-abe9-4de8-a59e-301b13db7cfe)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/61be6c74-c520-4892-90b0-6ba5ed3ee062)
 
 
 <br>
