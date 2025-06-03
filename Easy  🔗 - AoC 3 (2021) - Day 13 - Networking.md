@@ -6,14 +6,10 @@
 <br>
 <br>
 
-1.1. Complete the username: p.....<br>
+<p>1.1. Complete the username: p.....<br>
 <code>pepper</code><br>
 
-<br>
 
-
-<p>
-  
 - Launched <code>PowerShell</code><br>
 
 - Executed <code>net users</code><br>
@@ -32,9 +28,7 @@
 <br>
 
 1.2. What is the OS version?<br>
-<code>10.0.17763 N/A Build 17763</code>
-
-<br>
+<code>10.0.17763 N/A Build 17763</code><br>
 
 - Listed the services running on the system, executing <code>wmic service list</code>.<br>
 
@@ -51,8 +45,6 @@
 
 1.3. What backup service did you find running on the system?<br>
 <code>IperiusSvc</code><br>
-
-<br>
 
 - Executed <code>wmic service list >> services.txt</code><br>
 - Executed <code>Select-String -Path services.txt -Pattern backup</code>.<br>
@@ -81,8 +73,6 @@
 <code>THM-736635221</code><br>
 
 <br>
-
-
 - Navigated to <code>THM Attackbox</code> virtual machine.<br>
 - Looked at the right upper corner.<br>
 - Identified my <code>AttackIP</code>:<code>10.10.72.55</code>.<br>
