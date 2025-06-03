@@ -30,6 +30,8 @@
 
 ![image](https://github.com/user-attachments/assets/c1b96525-8167-451c-aee0-f6ebc880991e)
 
+<br>
+
 1.2. What is the OS version?<br>
 <code>10.0.17763 N/A Build 17763</code>
 
@@ -54,6 +56,8 @@
 <br>
 
 ![image](https://github.com/user-attachments/assets/1be6672e-74d8-4bfe-a2d0-b41a6bcbcc3c)
+
+<br>
 
 1.3. What backup service did you find running on the system?<br>
 <code>IperiusSvc</code><br>
