@@ -1,7 +1,7 @@
 <h1 align="center">Advent of Cyber 3 (2021) - Networking - Day 14 - Dev(Insecure)Ops</h1> 
 <p align="center"><img width="200px" src="https://github.com/user-attachments/assets/6371db5c-9eec-4f49-bdff-02ec11b425c9"><br>Jun 3, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 393-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 <br>Access Adevent of Cyber 3 (2021) clicking <a href="https://tryhackme.com/room/adventofcyber3"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/3a71876c-9c51-42f4-aac8-cc3badbd1113"></p>
 
 <br>
 <br>
@@ -84,7 +84,7 @@
 <br>
 
 - Viewed page source.<br>
-- Clicked <code>ls.html</code>.<br>
+- Clicked <code>ls.html</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/840a6469-6777-4f99-b988-5c956c6dc4f3)
 
@@ -100,17 +100,27 @@
 <br>
 
 <p>1.4. What is the content of the flag.txt file on the Grinch's user’s desktop?<br>
-<code>____</code><br>
+<code>DI3H4rdIsTheBestX-masMovie!</code><br>
 
 
 <br>
 
+- Modified the <code>loot.sh</code> script.<br>
+
+![image](https://github.com/user-attachments/assets/4f58012e-fa3a-4330-a1f7-5d03a33116b9)
+
+
+<br>
+
+- Refreshed the web page.<br>
+
+![image](https://github.com/user-attachments/assets/3b513c25-c5c9-4645-88b4-85668b20c21c)
 
 <br>
 <br>
 
-<h1 align="center">Challenge in Progress, 60%</h1>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/c8e905ef-e357-4b57-a5a1-8d2eb1e7df5f"></p>
+<h1 align="center">Challenge in Progress, 61%</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/b761eff4-0bae-4f75-b012-2c366ad24699"></p>
                    
 <h1 align="center">My TryHackMe Journey</h1>
 
@@ -119,15 +129,16 @@
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| Jun 3, 2025       |     393    |          205ᵗʰ         |            4ᵗʰ       |        5,648ᵗʰ       |           95ᵗʰ        |       105,955      |             762       |    62       |
+| Jun 3, 2025       |     393    |          205ᵗʰ         |            4ᵗʰ       |        5,709ᵗʰ       |           96ᵗʰ        |       105,963      |             762       |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 205ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/098b3c2c-f36e-4d8e-801d-9737842d1284" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/a56654c5-8cba-40e2-81e9-61a8850f553e"><br><br>
-                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/d95638f5-9949-4d85-8e38-c13046e20ba4"><br><br>
-                   Global monthly: 5,648ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/d6a17191-1e9d-49e3-a02a-0c7f94ab67cc"><br><br>
-                   Brazil monthly:   95ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/710fdd3c-76f6-402b-871e-cd4a1d66183e"><br><br></p>
+
+<p align="center"> Global All Time: 205ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/5d9f86b9-7d31-4aa9-bbc0-ad8b50344d2d" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/a3fb375d-2e4a-440e-a0fb-3dcd46be1703"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/b453c334-16d5-4477-8eab-44ca4db900fc"><br><br>
+                   Global monthly: 5,709ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/87d2154d-6730-4582-8d3d-6ade2a147e20"><br><br>
+                   Brazil monthly:   96ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/8808eb17-3fca-4284-9c28-eafd61a5b706"><br><br></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
