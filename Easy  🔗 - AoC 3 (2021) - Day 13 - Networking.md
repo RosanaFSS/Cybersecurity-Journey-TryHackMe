@@ -184,7 +184,7 @@
 <br>
 <br>
 
-<h1 align="center">Challenge in Progress</h1>
+<h1 align="center">Challenge in Progress, 60%</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/c8e905ef-e357-4b57-a5a1-8d2eb1e7df5f"></p>
                    
 <h1 align="center">My TryHackMe Journey</h1>
@@ -206,6 +206,5 @@
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-<br>
+<br><br>
 <h1 align="center">Thank you very much ben, ashu, tryhackme, cmnatic, timtaylor, strategos, umairalizafar, jcfarris, and wesladd for developinng this experience so that I could sharpen my skills!</h1>
-
