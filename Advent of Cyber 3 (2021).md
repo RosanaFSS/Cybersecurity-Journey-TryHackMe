@@ -48,7 +48,7 @@
 
 <br>
 
-- Executed <code>wmic service list >> services.txt<br><br>
+- Executed <code>wmic service list >> services.txt</code><br><br>
 - Executed <code>Select-String -Path services.txt -Pattern backup</code>.<br><br>
 
 <br>
