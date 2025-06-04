@@ -99,7 +99,22 @@
 <br>
 
 <p>1.7. What is the database password stored in Secrets Manager?<br>
-<code>No answer needed</code><br></p>
+<code>Winter2021!</code><br></p>
+
+![image](https://github.com/user-attachments/assets/ca3657a5-18b4-4d32-ac19-67775417d4e2)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/f533edff-6a53-4c58-b001-c3b2a0fb1d11)
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/8aa03d1c-6974-43b5-9040-33f339f9bca3)
+
+<br>
+
+
 
 <br>
 <br>
