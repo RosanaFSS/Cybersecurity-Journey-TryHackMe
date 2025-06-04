@@ -14,7 +14,7 @@
 - Right-clicked the image.<br>
 - Clicked <code>Copy image address</code>.<br>
 - Launched the web browser.<br>
-- Navigated to <code>https://tryhackme.com/img/events/christmas/tree.png</code>.<br>
+- Navigated to <code>https://tryhackme.com/img/events/christmas/tree.png</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/be9a1f54-83d6-4fe2-9f53-64572242b279)
 
@@ -22,11 +22,11 @@
 
 ![image](https://github.com/user-attachments/assets/b02a32af-f65b-453a-8973-104331f4ce58)
 
-<br>
+<p>
 
 - Right-clicked the other image.<br>
 - Clicked <code>Copy image address</code>.<br>
-- Navigated to <code>https://s3.amazonaws.com/images.bestfestivalcompany.com/tree.png</code>.<br>
+- Navigated to <code>https://s3.amazonaws.com/images.bestfestivalcompany.com/tree.png</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/f9ea44f0-382f-4f49-b6a4-9a90620e2fe2)
 
