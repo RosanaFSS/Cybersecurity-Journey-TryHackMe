@@ -14,7 +14,7 @@
 - Right-clicked the image.<br>
 - Clicked <code>Copy image address</code>.<br>
 - Launched the web browser.<br>
-- Navigated to <code>https://tryhackme.com/img/events/christmas/tree.png</code>.</p>
+- Navigated to <code> https://tryhackme.com/img/events/christmas/tree.png</code>.</p>
 
 ![image](https://github.com/user-attachments/assets/be9a1f54-83d6-4fe2-9f53-64572242b279)
 
