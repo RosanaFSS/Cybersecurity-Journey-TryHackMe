@@ -11,9 +11,7 @@ boot2root machine for FIT and bsides Guatemala CTF <a href="https://tryhackme.co
 <h2>Task 1 . Develpy</h2>
 <p>read user.txt and root.txt</p>
 
-<br>
-
-<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<h3 align="left">Answer the questions below</h3>
 
 
 > 1.1. <em>user.txt</em><br><a id='1.1'></a>
@@ -162,7 +160,7 @@ root.txt
 <br>
 
 
-<h1 align="center">Challenge in Progress, 73%</h1>
+<h1 align="center">Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a1b0aa51-9820-40b3-95e7-221e7c64813b"><br>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/ee9ae759-f232-45fb-a352-5ba4875dddc9"></p>
                    
