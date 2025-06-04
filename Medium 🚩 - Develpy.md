@@ -6,13 +6,10 @@ boot2root machine for FIT and bsides Guatemala CTF <a href="https://tryhackme.co
 <img width="1000px" src="https://github.com/user-attachments/assets/e9be1861-90dc-467d-8c3e-47542f7b3c61"></p>
 
 <br>
-<br>
-
 <h2>Task 1 . Develpy</h2>
 <p>read user.txt and root.txt</p>
 
 <h3 align="left">Answer the questions below</h3>
-
 
 > 1.1. <em>user.txt</em><br><a id='1.1'></a>
 >> <strong><code>cf85ff769cfaaa721758949bf870b019</code></strong><br>
