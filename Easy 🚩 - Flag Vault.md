@@ -115,7 +115,7 @@ print(conn.recvall().decode())
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| Jun 4, 2025       |     394    |          200ᵗʰ         |            4ᵗʰ       |       3,295ᵗʰ        |           8ᵗʰ        |       106,181      |             764       |    62       |
+| Jun 4, 2025       |     394    |          200ᵗʰ         |            4ᵗʰ       |       3,295ᵗʰ        |           48ᵗʰ        |       106,181      |             764       |    62       |
 
 </div>
 
@@ -123,7 +123,7 @@ print(conn.recvall().decode())
                                               <img width="1000px" src="https://github.com/user-attachments/assets/a152aaf7-3e4c-4353-bd48-913fd2b67300"><br><br>
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/4a1cae11-2454-4490-93aa-27915ce3c788"><br><br>
                    Global monthly:  3,295ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/cb80e1c8-0436-42d8-a975-b82f0e8e98e0"><br><br>
-                   Brazil monthly:   8ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/392acecb-b9eb-4407-8d67-1f4794b22c9a"><br><br></p>
+                   Brazil monthly:   48ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/392acecb-b9eb-4407-8d67-1f4794b22c9a"><br><br></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
