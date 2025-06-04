@@ -24,8 +24,6 @@ Understand the basics of buffer overflows.<br>Access it clicking <a href="https:
 
 
 
-<h3> Format String Injection</h3>
-
 ```bash
 #include <stdio.h>
 #include <string.h>
