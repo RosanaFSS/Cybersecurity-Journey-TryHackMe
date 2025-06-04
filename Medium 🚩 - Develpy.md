@@ -1,7 +1,7 @@
 <h1 align="center">Develpy</h1>
-<img width="160px" src="https://github.com/user-attachments/assets/1ca89a64-9b14-40a3-86ab-6a7979d90269"></p>
-<p align="center">Jun 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 394-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
-boot2root machine for FIT and bsides Guatemala CTF <a href="https://tryhackme.com/room/bsidesgtdevelpy"</a>here.<br><br>
+<p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/1ca89a64-9b14-40a3-86ab-6a7979d90269"><br>
+Jun 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 394-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+boot2root machine for FIT and bsides Guatemala CTF <a href="https://tryhackme.com/room/bsidesgtdevelpy"</a>here.<br>
 <img width="1000px" src="https://github.com/user-attachments/assets/e9be1861-90dc-467d-8c3e-47542f7b3c61"></p>
 
 <br>
