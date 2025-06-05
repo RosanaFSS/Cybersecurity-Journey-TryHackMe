@@ -204,17 +204,29 @@ root@ip-10-10-88-113:~/aoc#
 ![image](https://github.com/user-attachments/assets/f316d548-47bb-44eb-96d9-0165ddc61725)
 
 <br>
-
-
-<br>
 <br>
 
 <h1 align="center">Challenge in Progress, 75%</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8fd87011-8da8-4307-b0f0-79f5f18246cd"></p>
 
 
+<h1 align="center">My TryHackMe Journey</h1>
 
-<h1>TryHackMe platform is not working properly since yesterday!</h1>
+<div align="center">
 
-<p>It do not show my profile data.</p>
-<p>the platform has been presenting many issues, that is the main reason I decided to go to Hack The Box.</p>
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| Jun 5, 2025       |     395    |          200ᵗʰ         |            4ᵗʰ       |        2,618ᵗʰ       |         36ᵗʰ        |       106,243       |             765       |    62       |
+
+</div>
+
+<p align="center"> Global All Time: 200ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/4d1ff9c5-6baa-4efd-bdf6-47b2c64371be" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/c3644218-8e94-40ab-80fb-dd8f8753b535"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/fe2923df-745a-4249-99e0-82a97f6faee8"><br><br>
+                   Global monthly: 2,618ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/a00c157c-3c85-41f6-951a-3224d2d03fdf"><br><br>
+                   Brazil monthly:   36ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/d8739b3f-40c4-45cb-96ca-0efd217ddaa0"><br><br></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<br><br>
+<h1 align="center">Thank you very much ben, ashu, tryhackme, cmnatic, timtaylor, strategos, umairalizafar, jcfarris, and wesladd for developinng this experience so that I could sharpen my skills!</h1>
