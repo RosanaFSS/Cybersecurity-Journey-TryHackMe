@@ -462,6 +462,9 @@ python -m venv sstv_venv
 python setup.py install
 ```
 
+![Screenshot 2025-06-06 170405](https://github.com/user-attachments/assets/44a16d7b-e2a4-406c-a8f3-3d56bdae8b99)
+
+
 <br>
 <br>
 
