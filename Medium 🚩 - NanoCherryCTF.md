@@ -28,6 +28,48 @@ PORT   STATE SERVICE VERSION
 
 ![image](https://github.com/user-attachments/assets/919e142e-baa2-49bf-a545-f65037bef738)
 
+<p>I52WK43U = Guest</p>
+
+![image](https://github.com/user-attachments/assets/9dba4a2f-e5e6-42c3-a902-19a44562e9dd)
+
+![image](https://github.com/user-attachments/assets/c15907c7-8e4e-4b99-869e-ca0eac8ab664)
+
+<p>sam-sprinkles = ONQW2LLTOBZGS3TLNRSXG===</p>
+
+![image](https://github.com/user-attachments/assets/588ef78c-2f26-4854-898e-04bdb7f9819a)
+
+<p>bob-boba = MJXWELLCN5RGC===</p>
+
+<p></p>
+
+![image](https://github.com/user-attachments/assets/6614a73c-ad54-4b49-9c6d-ac8f0ada052e)
+
+
+<h3>Burp Suite</h3>
+
+![image](https://github.com/user-attachments/assets/b4b2f782-38ff-4f86-b516-39f6e129c726)
+
+
+![image](https://github.com/user-attachments/assets/579284ea-b2a9-46d2-bca7-91a8412a17d2)
+
+![image](https://github.com/user-attachments/assets/46b38251-4f13-44d8-b5f1-08727d603835)
+
+![image](https://github.com/user-attachments/assets/d67adc54-d330-45e6-a00e-c1e692814861)
+
+
+<p><code>w1llb3</code></p>
+
+![image](https://github.com/user-attachments/assets/78a3ddf7-0ac0-4731-a0d9-9a206bb022d2)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/a3b914c0-d367-466b-9593-2d88245dfd43)
+
+
+![image](https://github.com/user-attachments/assets/991a61f6-4ba5-47a3-9966-c4294b89ac35)
+
+
+
 ![image](https://github.com/user-attachments/assets/c22f7765-2b39-48f3-a7d6-4ff9cf52d525)
 
 ![image](https://github.com/user-attachments/assets/beb90b45-b05f-4734-8b49-71e8a8d0305a)
@@ -36,6 +78,22 @@ PORT   STATE SERVICE VERSION
 
 ![image](https://github.com/user-attachments/assets/f0eb8306-918b-4422-a6e3-c1d8859c2999)
 
+
+<p>su chad-cherry<br>
+n4n0ch3rryw1llb37h3fu7ur3</p>
+
+<p>THM{P4SS3S_C0LL3CT3D}</p>
+
+![image](https://github.com/user-attachments/assets/9a2d9a1f-f642-405f-ac96-aba3ee854b56)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/3545b8bd-9aa7-4762-9217-ab4d7bdd8a70)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/80e863ed-d98b-4e4e-a4d6-25a6787a7242)
 
 
 <h3>ssh</h3>
@@ -78,6 +136,20 @@ PORT   STATE SERVICE VERSION
 <p><code>n4n0ch3rry</code></p>
 
 ![image](https://github.com/user-attachments/assets/0a43fdae-2364-41d0-ba3f-ab2b974585e8)
+
+
+
+```bash
+sudo apt-get install qsstv
+...
+qsstv
+
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/822c7b02-0167-4bc5-83d8-43cd00e3b892)
+
 
 
 
