@@ -281,6 +281,8 @@ root@ip-10-10-57-149:~#
 
 ```
 
+<br>
+
 > 2.1. <em>Gain access to Molly's Dashboard. What is the flag?</em><br><a id='2.1'></a>
 >> <strong><code>THM{BL4CK_M4I1}</code></strong><br>
 
@@ -306,8 +308,9 @@ root@ip-10-10-57-149:~#
 
 ![image](https://github.com/user-attachments/assets/d67adc54-d330-45e6-a00e-c1e692814861)
 
+<br>
 
-> 2.3. <emWhat is the second part of Chad Cherry's password?</em><br><a id='2.3'></a>
+> 2.3. <em>What is the second part of Chad Cherry's password?</em><br><a id='2.3'></a>
 >> <strong><code>w1llb3</code></strong><br>
 
 <h3>Chad´s key, Part 2 : <code>w1llb3/code></h3>
@@ -324,9 +327,10 @@ root@ip-10-10-57-149:~#
 
 <h3>http://nano.cherryontop.thm</h3>
 
+<br>
+
 > 2.2. <em>What is the first part of Chad Cherry's password?</em><br><a id='2.2'></a>
 >> <strong><code>n4n0ch3rry</code></strong><br>
-
 
 <h3>Chad´s key, Part 1 : <code>n4n0ch3rry</code></h3>
 
@@ -336,6 +340,8 @@ root@ip-10-10-57-149:~#
 
 <p><code>su chad-cherry</code><br>
 <code>n4n0ch3rryw1llb37h3fu7ur3</code></p>
+
+<br>
 
 > 2.5. <em>Put the three parts of Chad Cherry's password together and access his account. What is the flag you obtained?</em><br><a id='2.5'></a>
 >> <strong><code>THM{P4SS3S_C0LL3CT3D}</code></strong><br>
