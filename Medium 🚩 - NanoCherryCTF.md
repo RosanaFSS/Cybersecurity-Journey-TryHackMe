@@ -289,6 +289,10 @@ root@ip-10-10-57-149:~#
 
 <p>I52WK43U = Guest</p>
 
+![image](https://github.com/user-attachments/assets/c22f7765-2b39-48f3-a7d6-4ff9cf52d525)
+
+![image](https://github.com/user-attachments/assets/beb90b45-b05f-4734-8b49-71e8a8d0305a)
+
 ![image](https://github.com/user-attachments/assets/9dba4a2f-e5e6-42c3-a902-19a44562e9dd)
 
 ![image](https://github.com/user-attachments/assets/c15907c7-8e4e-4b99-869e-ca0eac8ab664)
@@ -313,17 +317,13 @@ root@ip-10-10-57-149:~#
 > 2.3. <em>What is the second part of Chad Cherry's password?</em><br><a id='2.3'></a>
 >> <strong><code>w1llb3</code></strong><br>
 
-<h3>Chad´s key, Part 2 : <code>w1llb3/code></h3>
+<h3>Chad´s key, Part 2 : <code>w1llb3</code></h3>
 
 ![image](https://github.com/user-attachments/assets/78a3ddf7-0ac0-4731-a0d9-9a206bb022d2)
 
 ![image](https://github.com/user-attachments/assets/a3b914c0-d367-466b-9593-2d88245dfd43)
 
 ![image](https://github.com/user-attachments/assets/991a61f6-4ba5-47a3-9966-c4294b89ac35)
-
-![image](https://github.com/user-attachments/assets/c22f7765-2b39-48f3-a7d6-4ff9cf52d525)
-
-![image](https://github.com/user-attachments/assets/beb90b45-b05f-4734-8b49-71e8a8d0305a)
 
 <h3>http://nano.cherryontop.thm</h3>
 
