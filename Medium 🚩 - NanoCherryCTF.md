@@ -13,6 +13,16 @@ PORT   STATE SERVICE VERSION
 
 <br>
 
+```bash
+nmap -F -Pn cherryontop.thm
+...
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+```
+
+<br>
+
 <h3>wfuzz</h3>
 
 ![image](https://github.com/user-attachments/assets/9eb94647-9055-4408-b4d0-5757d50b1c53)
