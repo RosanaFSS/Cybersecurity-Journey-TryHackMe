@@ -312,7 +312,24 @@ root@ip-10-10-57-149:~#
 
 ![image](https://github.com/user-attachments/assets/d67adc54-d330-45e6-a00e-c1e692814861)
 
-<br>
+![image](https://github.com/user-attachments/assets/80e863ed-d98b-4e4e-a4d6-25a6787a7242)
+
+![image](https://github.com/user-attachments/assets/69804947-1026-45b9-83c8-ffce755c5d5e)
+
+![image](https://github.com/user-attachments/assets/77322e5f-ca45-42ea-a112-301f92b310ff)
+
+![image](https://github.com/user-attachments/assets/2ad07753-0329-4fca-bc16-abcd1673a115)
+
+![image](https://github.com/user-attachments/assets/4d16d678-afe4-420a-b7ab-a69ee6c88cf7)
+
+![image](https://github.com/user-attachments/assets/687234ab-0ebc-42e8-a889-af84ab839a9a)
+
+
+<p>THM{BL4CK_M4I1}</p>
+
+![image](https://github.com/user-attachments/assets/cdc6177a-8a42-40f1-a6d4-e36eba86539a)
+
+![image](https://github.com/user-attachments/assets/e06b49bf-df73-46e6-98fa-86b459283224)
 
 > 2.3. <em>What is the second part of Chad Cherry's password?</em><br><a id='2.3'></a>
 >> <strong><code>w1llb3</code></strong><br>
@@ -352,24 +369,6 @@ root@ip-10-10-57-149:~#
 
 ![image](https://github.com/user-attachments/assets/3545b8bd-9aa7-4762-9217-ab4d7bdd8a70)
 
-![image](https://github.com/user-attachments/assets/80e863ed-d98b-4e4e-a4d6-25a6787a7242)
-
-![image](https://github.com/user-attachments/assets/69804947-1026-45b9-83c8-ffce755c5d5e)
-
-![image](https://github.com/user-attachments/assets/77322e5f-ca45-42ea-a112-301f92b310ff)
-
-![image](https://github.com/user-attachments/assets/2ad07753-0329-4fca-bc16-abcd1673a115)
-
-![image](https://github.com/user-attachments/assets/4d16d678-afe4-420a-b7ab-a69ee6c88cf7)
-
-![image](https://github.com/user-attachments/assets/687234ab-0ebc-42e8-a889-af84ab839a9a)
-
-
-<p>THM{BL4CK_M4I1}</p>
-
-![image](https://github.com/user-attachments/assets/cdc6177a-8a42-40f1-a6d4-e36eba86539a)
-
-![image](https://github.com/user-attachments/assets/e06b49bf-df73-46e6-98fa-86b459283224)
 
 
 <p>ChadCherrysFutureWife</p>
