@@ -17,8 +17,6 @@ Explore a double-sided site and escalate to root! <a href="https://tryhackme.com
 > 1.1. <em>I updated my /etc/hosts file and read the story!</em><br><a id='1.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 
-<br>
-<br>
 
 <h2>Task 2 . NanoCherryCTFp</h2>
 
