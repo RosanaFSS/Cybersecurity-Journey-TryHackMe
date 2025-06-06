@@ -324,6 +324,16 @@ root@ip-10-10-57-149:~#
 
 ![image](https://github.com/user-attachments/assets/687234ab-0ebc-42e8-a889-af84ab839a9a)
 
+<p>ChadCherrysFutureWife</p>
+
+![image](https://github.com/user-attachments/assets/306b9001-e090-4a1b-95d7-4669e0fd4b64)
+
+<p><code>n4n0ch3rry</code></p>
+
+![image](https://github.com/user-attachments/assets/0a43fdae-2364-41d0-ba3f-ab2b974585e8)
+
+<br>
+
 
 <p>THM{BL4CK_M4I1}</p>
 
@@ -370,104 +380,74 @@ root@ip-10-10-57-149:~#
 ![image](https://github.com/user-attachments/assets/3545b8bd-9aa7-4762-9217-ab4d7bdd8a70)
 
 
-
-<p>ChadCherrysFutureWife</p>
-
-![image](https://github.com/user-attachments/assets/306b9001-e090-4a1b-95d7-4669e0fd4b64)
-
-<p><code>n4n0ch3rry</code></p>
-
-![image](https://github.com/user-attachments/assets/0a43fdae-2364-41d0-ba3f-ab2b974585e8)
-
-<br>
-
 > 2.6. <em>What is the root flag?</em><br><a id='2.6'></a>
 >> <strong><code>THM{P4SS3S_C0LL3CT3D}</code></strong><br>
-
-```bash
-sudo apt-get install qsstv
-...
-qsstv
-
-```
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/822c7b02-0167-4bc5-83d8-43cd00e3b892)
 
 
-
-
-<h3>/etc/passwd</h3>
-<p>bob-boba::x:1003:1003::/home/bob-boba:/bin/sh</p>
+<p>Target VM</p>
 
 ```bash
-notsus@ip-10-10-58-153:/tmp$ cat /etc/passwd
-root:x:0:0:root:/root:/bin/bash
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-bin:x:2:2:bin:/bin:/usr/sbin/nologin
-sys:x:3:3:sys:/dev:/usr/sbin/nologin
-sync:x:4:65534:sync:/bin:/bin/sync
-games:x:5:60:games:/usr/games:/usr/sbin/nologin
-man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
-gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
-nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
-_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
-systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
-systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
-messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
-systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
-pollinate:x:105:1::/var/cache/pollinate:/bin/false
-sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
-usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
-chad-cherry:x:1000:1000:Chad Cherry:/home/chad-cherry:/bin/bash
-molly-milk:x:1001:1001::/home/molly-milk:/bin/sh
-sam-sprinkles:x:1002:1002::/home/sam-sprinkles:/bin/sh
-bob-boba:x:1003:1003::/home/bob-boba:/bin/sh
-notsus:x:1004:1004::/home/.notsus:/bin/sh
-lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
-ssm-user:x:1005:1005::/home/ssm-user:/bin/sh
-ubuntu:x:1006:1007:Ubuntu:/home/ubuntu:/bin/bash
-notsus@ip-10-10-58-153:/tmp$ clear
+root@ip-10-10-65-210:~# ssh chad-cherry@10.10.131.250
+...
+chad-cherry@ip-10-10-131-250:~$ pwd
+/home/chad-cherry
+chad-cherry@ip-10-10-131-250:~$ ls
+Hello.txt  chad-flag.txt  rootPassword.wav
+chad-cherry@ip-10-10-131-250:~$ which python3
+/usr/bin/python3
+chad-cherry@ip-10-10-131-250:~$ python3 -m http.server 9999
+Serving HTTP on 0.0.0.0 port 9999 (http://0.0.0.0:9999/) ...
+```
+
+<p>Attack VM</p>
+
+```bash
+root@ip-10-10-65-210:~# wget http://10.10.131.250:9999/rootPassword.wav
+--2025-06-06 19:53:05--  http://10.10.131.250:9999/rootPassword.wav
+Connecting to 10.10.131.250:9999... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3326066 (3.2M) [audio/x-wav]
+Saving to: \u2018rootPassword.wav\u2019
+
+rootPassword.wav    100%[===================>]   3.17M  5.39MB/s    in 0.6s    
+
+2025-06-06 19:53:05 (5.39 MB/s) - \u2018rootPassword.wav\u2019 saved [3326066/3326066]
+
+root@ip-10-10-65-210:~# 
 
 ```
 
-<h3>linpeas.sh</h3>
-
-![image](https://github.com/user-attachments/assets/3da6d3ed-a1bf-4c53-888b-3a19ed51fc1a)
-
-![image](https://github.com/user-attachments/assets/1b386e27-bec2-44d4-a6b8-55f38247d9c8)
-
-
-![image](https://github.com/user-attachments/assets/f31a632a-cd7d-457f-bbff-feacf8e365b7)
-
-![image](https://github.com/user-attachments/assets/5a1360ac-829a-48e2-bb33-838260bd15cd)
-
-![image](https://github.com/user-attachments/assets/7d83956b-b50d-49c6-aabe-5994eab95df3)
-
-<h3>Target VM</h3>
+<p>Target VM</p>
 
 ```bash
-notsus@ip-10-10-58-153:/tmp$ echo "10.10.218.30 cherryontop" >> /etc/hosts
+chad-cherry@ip-10-10-131-250:~$ python3 -m http.server 9999
+Serving HTTP on 0.0.0.0 port 9999 (http://0.0.0.0:9999/) ...
+10.10.65.210 - - [06/Jun/2025 18:53:04] "GET /rootPassword.wav HTTP/1.1" 200 -
+
 ```
 
-<h3>Exploit</h3>
+<p>Attack VM</p>
 
-![image](https://github.com/user-attachments/assets/b85b448f-2d84-40cc-886c-d4ad0efc893e)
+```bash
+apt install audacity
+...
+```
 
+<p>Opened the <code>.wav</code file in <code>Audacity</code>.</p>
 
+![image](https://github.com/user-attachments/assets/0fc65c74-b02c-4609-8947-f94a2e287016)
 
+![image](https://github.com/user-attachments/assets/1e7eed3b-76b7-4160-9fb6-47405ae28c87)
 
+<p>Chose <code>Spectogram</code>.</p>
 
+![image](https://github.com/user-attachments/assets/7132ac16-d461-4132-b3c5-506c4bce8003)
+
+<p>Identified a  pattern of a <code>SSTV</code> tansmission.</p>
+
+![image](https://github.com/user-attachments/assets/5c249573-14c2-4fcf-818b-78ed9d4b7f7e)
 
 
 
