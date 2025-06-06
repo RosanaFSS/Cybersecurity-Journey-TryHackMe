@@ -379,7 +379,10 @@ root@ip-10-10-57-149:~#
 
 ![image](https://github.com/user-attachments/assets/0a43fdae-2364-41d0-ba3f-ab2b974585e8)
 
+<br>
 
+> 2.6. <em>What is the root flag?</em><br><a id='2.6'></a>
+>> <strong><code>THM{P4SS3S_C0LL3CT3D}</code></strong><br>
 
 ```bash
 sudo apt-get install qsstv
