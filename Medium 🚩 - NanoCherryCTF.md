@@ -1,6 +1,6 @@
 <h1 align="center">NanoCherryCTF</h1>
 <p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/4f58f330-acaf-469d-9d2f-1c4822e39fa2"><br>
-Jun 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
+Jun 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 396-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Explore a double-sided site and escalate to root! <a href="https://tryhackme.com/room/nanocherryctf"</a>here.<br><br>
 <img width="1000px" src=""></p>
