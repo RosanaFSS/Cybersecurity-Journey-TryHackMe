@@ -70,7 +70,7 @@ PORT   STATE SERVICE
 
 <h3>ssh</h3>
 
-<p>Identified <code>bob-boba curl cherryontop.tld:8000/home/bob-boba/coinflip.sh | bash</code> in <code>/etc/crontab</p>code></p>
+<p>Identified <code>bob-boba curl cherryontop.tld:8000/home/bob-boba/coinflip.sh | bash</code> in <code>/etc/crontab</code>code></p>
 
 ```bash
 root@ip-10-10-57-149:~# ssh notsus@cherryontop.thm
