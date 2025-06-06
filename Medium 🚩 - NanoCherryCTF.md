@@ -3,7 +3,7 @@
 Jun 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 396-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Explore a double-sided site and escalate to root! <a href="https://tryhackme.com/room/nanocherryctf"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/bfb07c76-d35d-4315-957b-7c935df0317c"></p>
 
 <br>
 
@@ -381,7 +381,7 @@ root@ip-10-10-57-149:~#
 
 
 > 2.6. <em>What is the root flag?</em><br><a id='2.6'></a>
->> <strong><code>THM{P4SS3S_C0LL3CT3D}</code></strong><br>
+>> <strong><code>THM{YOU_NEVER_WERE_A_SCRIPT_KIDDIE}}</code></strong><br>
 
 ![image](https://github.com/user-attachments/assets/822c7b02-0167-4bc5-83d8-43cd00e3b892)
 
@@ -448,6 +448,52 @@ apt install audacity
 <p>Identified a  pattern of a <code>SSTV</code> tansmission.</p>
 
 ![image](https://github.com/user-attachments/assets/5c249573-14c2-4fcf-818b-78ed9d4b7f7e)
+
+
+```bash
+git clone https://github.com/colaclanth/sstv.git
+...
+cd sstv
+...
+python -m venv sstv_venv
+...
+. ./sstv_venv/bin/activate
+...
+python setup.py install
+```
+
+<br>
+<br>
+
+
+<h1 align="center">Room Completed</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/0beb6dd0-749f-4778-bd45-8455a9fd8bbc"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/b28b8021-b29a-46e2-bcce-446b187ea63f"></p>
+                   
+<h1 align="center">My TryHackMe Journey</h1>
+
+
+![image](https://github.com/user-attachments/assets/efbadbb9-fbb5-4813-882f-8759c9bb1dd3)
+
+
+<div align="center">
+
+| Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
+| :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
+| Jun 6, 2025       |     396    |          202ⁿᵈ         |            4ᵗʰ       |        2,091ˢᵗ       |         30ᵗʰ         |       106,423      |             766      |    62       |
+
+</div>
+
+<p align="center"> Global All Time: 202ⁿᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/b7d3f0c7-2d6e-4f7c-a384-ffa394e07672" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/d0eac96b-56de-41be-b6e6-02fdf926a61f"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/fdaaa8e5-51bb-466c-8daa-31f352d50351"><br><br>
+                   Global monthly: 2,091ˢᵗ<br><img width="1000px" src="https://github.com/user-attachments/assets/efbadbb9-fbb5-4813-882f-8759c9bb1dd3"><br><br>
+                   Brazil monthly:   30ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/feca6c3e-e251-4b1b-81e6-e31ad2f2efc1"><br><br></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<br><br>
+<h1 align="center">Thank you very much stuxnet and dsneddon00 for developinng this experience so that I could sharpen my skills!</h1>
 
 
 
