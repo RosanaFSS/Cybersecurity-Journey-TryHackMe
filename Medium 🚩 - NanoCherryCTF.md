@@ -148,7 +148,7 @@ find: \u2018/etc/ssl/private\u2019: Permission denied
 notsus@ip-10-10-149-100:~$ 
 ```
 
-<h3>Added to <code>/etc/hosts</code>code> in the Target VM</h3>
+<h3><code>/etc/hosts</code> in the Target VM</h3>
 
 <p>Added <code>AttackIP</code> and <code>cherryontop.tld</code>.</p>
 
