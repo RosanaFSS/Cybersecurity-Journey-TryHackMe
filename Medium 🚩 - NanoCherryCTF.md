@@ -203,8 +203,6 @@ bash: no job control in this shell
 bob-boba@ip-10-10-149-100:~$
 ```
 
-<br>
-
 ```bash
 bob-boba@ip-10-10-149-100:~$ whoami
 whoami
