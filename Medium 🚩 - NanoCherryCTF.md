@@ -299,17 +299,10 @@ root@ip-10-10-57-149:~#
 
 ![image](https://github.com/user-attachments/assets/588ef78c-2f26-4854-898e-04bdb7f9819a)
 
-<p>bob-boba = MJXWELLCN5RGC===</p>
-
-<p></p>
-
-![image](https://github.com/user-attachments/assets/6614a73c-ad54-4b49-9c6d-ac8f0ada052e)
-
 
 <h3>Burp Suite</h3>
 
 ![image](https://github.com/user-attachments/assets/b4b2f782-38ff-4f86-b516-39f6e129c726)
-
 
 ![image](https://github.com/user-attachments/assets/579284ea-b2a9-46d2-bca7-91a8412a17d2)
 
@@ -318,18 +311,16 @@ root@ip-10-10-57-149:~#
 ![image](https://github.com/user-attachments/assets/d67adc54-d330-45e6-a00e-c1e692814861)
 
 
-<p><code>w1llb3</code></p>
+> 2.3. <emWhat is the second part of Chad Cherry's password?</em><br><a id='2.3'></a>
+>> <strong><code>w1llb3</code></strong><br>
+
+<h3>Chad´s key, Part 2 : <code>w1llb3/code></h3>
 
 ![image](https://github.com/user-attachments/assets/78a3ddf7-0ac0-4731-a0d9-9a206bb022d2)
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/a3b914c0-d367-466b-9593-2d88245dfd43)
 
-
 ![image](https://github.com/user-attachments/assets/991a61f6-4ba5-47a3-9966-c4294b89ac35)
-
-
 
 ![image](https://github.com/user-attachments/assets/c22f7765-2b39-48f3-a7d6-4ff9cf52d525)
 
@@ -337,42 +328,37 @@ root@ip-10-10-57-149:~#
 
 <h3>http://nano.cherryontop.thm</h3>
 
+> 2.2. <em>What is the first part of Chad Cherry's password?</em><br><a id='2.2'></a>
+>> <strong><code>n4n0ch3rry</code></strong><br>
+
+
+<h3>Chad´s key, Part 1 : <code>n4n0ch3rry</code></h3>
+
 ![image](https://github.com/user-attachments/assets/f0eb8306-918b-4422-a6e3-c1d8859c2999)
 
+<h3>Chad´s key: <code>n4n0ch3rryw1llb37h3fu7ur3</code></h3>
 
-<p>su chad-cherry<br>
-n4n0ch3rryw1llb37h3fu7ur3</p>
+<p><code>su chad-cherry</code><br>
+<code>n4n0ch3rryw1llb37h3fu7ur3</code></p>
+
+> 2.5. <em>Put the three parts of Chad Cherry's password together and access his account. What is the flag you obtained?</em><br><a id='2.5'></a>
+>> <strong><code>THM{P4SS3S_C0LL3CT3D}</code></strong><br>
 
 <p>THM{P4SS3S_C0LL3CT3D}</p>
 
 ![image](https://github.com/user-attachments/assets/9a2d9a1f-f642-405f-ac96-aba3ee854b56)
 
-
-<br>
-
 ![image](https://github.com/user-attachments/assets/3545b8bd-9aa7-4762-9217-ab4d7bdd8a70)
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/80e863ed-d98b-4e4e-a4d6-25a6787a7242)
 
-
-
 ![image](https://github.com/user-attachments/assets/69804947-1026-45b9-83c8-ffce755c5d5e)
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/77322e5f-ca45-42ea-a112-301f92b310ff)
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/2ad07753-0329-4fca-bc16-abcd1673a115)
 
-<br>
-
 ![image](https://github.com/user-attachments/assets/4d16d678-afe4-420a-b7ab-a69ee6c88cf7)
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/687234ab-0ebc-42e8-a889-af84ab839a9a)
 
