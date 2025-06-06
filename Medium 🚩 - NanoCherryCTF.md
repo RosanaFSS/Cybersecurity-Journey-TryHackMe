@@ -135,8 +135,6 @@ notsus@ip-10-10-149-100:~$
 ...
 ```
 
-<br>
-
 <h3>Writable files</h3>
 <p>We are allowed to write to <code>/etc/hosts</code>.</p>
 
@@ -242,9 +240,26 @@ cat chads-key3.txt
 7h3fu7ur3
 ```
 
-> 2.1. <em>Gain access to Molly's Dashboard. What is the flag?</em><br><a id='2.1'></a>
->> <strong><code>THM{BL4CK_M4I1}</code></strong><br>
+<p>- http server ...</p>
 
+```bash
+root@ip-10-10-57-149:~# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.10.149.100 - - [06/Jun/2025 18:24:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:25:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:26:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:27:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:28:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:29:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:30:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:31:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:32:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:33:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:34:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:35:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:36:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+10.10.149.100 - - [06/Jun/2025 18:37:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
+```
 
 <p>- Inspected <code>blobLog.txt</code></p>
 
@@ -270,28 +285,9 @@ root@ip-10-10-57-149:~#
 
 ```
 
-<p>- http server ...</p>
+> 2.1. <em>Gain access to Molly's Dashboard. What is the flag?</em><br><a id='2.1'></a>
+>> <strong><code>THM{BL4CK_M4I1}</code></strong><br>
 
-```bash
-root@ip-10-10-57-149:~# python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-10.10.149.100 - - [06/Jun/2025 18:24:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:25:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:26:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:27:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:28:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:29:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:30:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:31:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:32:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:33:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:34:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:35:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:36:01] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-10.10.149.100 - - [06/Jun/2025 18:37:02] "GET /home/bob-boba/coinflip.sh HTTP/1.1" 200 -
-```
-
-<br>
 
 <p>I52WK43U = Guest</p>
 
