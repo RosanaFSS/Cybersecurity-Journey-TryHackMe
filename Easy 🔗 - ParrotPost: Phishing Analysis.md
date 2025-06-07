@@ -1,5 +1,5 @@
 <h1 align="center">ParrotPost: Phishing Analysis</h1>
-Jun 7 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
+<p align="center">Jun 7 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 397-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Reveal how attackers can craft client-side credential-stealing webpages that evade detection by security tools. <a href="https://tryhackme.com/room/parrotpost"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/56996277-ca5c-4bc0-91f3-4786a36fde3b"></p>
