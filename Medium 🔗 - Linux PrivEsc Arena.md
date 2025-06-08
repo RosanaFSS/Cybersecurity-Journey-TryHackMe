@@ -825,11 +825,11 @@ In command prompt type: <code>echo 'int main() { setgid(0); setuid(0); system("/
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| Jun 8, 2025       |     398    |          202nd         |            4ᵗʰ       |        1,340ᵗʰ       |         25ᵗʰ         |       106,675      |             770      |    62       |
+| Jun 8, 2025       |     398    |          202ⁿᵈ         |            4ᵗʰ       |        1,340ᵗʰ       |         25ᵗʰ         |       106,675      |             770      |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 202nd <br><img width="300px" src="https://github.com/user-attachments/assets/ef216c3f-3b8f-474c-9b43-db720ffa12af" alt="Your Image Badge"><br>
+<p align="center"> Global All Time: 202ⁿᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/ef216c3f-3b8f-474c-9b43-db720ffa12af" alt="Your Image Badge"><br>
                                               <img width="1000px" src="https://github.com/user-attachments/assets/1c452465-c78b-4fa1-8892-48e97a5070c5"><br><br>
                    Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/d2a6c05d-6879-486f-9e6e-59176120fca0"><br><br>
                    Global monthly: 1,340ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/ff6c6b1f-a9c7-4912-9a7c-77b2435815f9"><br><br>
