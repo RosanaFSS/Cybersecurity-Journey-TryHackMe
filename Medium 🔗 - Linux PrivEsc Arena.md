@@ -1,4 +1,4 @@
-<h1 align="center">PLinux PrivEsc Arena</h1>
+<h1 align="center">Linux PrivEsc Arena</h1>
 <p align="center">Jun 7 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 397-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Students will learn how to escalate privileges using a very vulnerable Linux VM. SSH is open. Your credentials are TCM:Hacker123 <a href="https://tryhackme.com/room/linuxprivescarena"</a>here.<br><br>
