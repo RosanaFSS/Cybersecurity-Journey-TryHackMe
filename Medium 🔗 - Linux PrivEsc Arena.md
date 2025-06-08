@@ -771,9 +771,11 @@ In command prompt type: <code>echo 'int main() { setgid(0); setuid(0); system("/
 > 19.1. <em>Click 'Completed' once you have successfully elevated the machine</em><br><a id='19.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 
-```bash
+![image](https://github.com/user-attachments/assets/58b4a80a-f866-4a31-91c7-1a56cd4c7f4c)
 
-```
+![image](https://github.com/user-attachments/assets/01c6fa95-c7f2-4dec-a2c7-d7934b2a8410)
+
+![image](https://github.com/user-attachments/assets/5c1872fb-e1d3-4991-a4e6-5abc64a0860b)
 
 <br>
 <br>
