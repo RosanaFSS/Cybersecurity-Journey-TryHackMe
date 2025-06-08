@@ -1,9 +1,37 @@
 <h1 align="center">Linux PrivEsc Arena</h1>
 <p align="center">Jun 8 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
-part of my 397-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+part of my 398-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Students will learn how to escalate privileges using a very vulnerable Linux VM. SSH is open. Your credentials are TCM:Hacker123 <a href="https://tryhackme.com/room/linuxprivescarena"</a>here.<br><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/94b9a480-2895-4126-92c1-b114a5de092c"></p>
-  
+<img width="1000px" src="https://github.com/user-attachments/assets/787d7a4e-3795-4d1b-a467-7bc6cc0b7cccc"></p>
+
+<br>
+
+<h2>Task 1 . [Optional] Connecting to the TryHackMe network</h2>
+<p>You can either use the browser-based terminal (which appears when you deploy the machine), or you can connect to TryHackMe's network (via OpenVPN) and SSH in directly. If you've not done this before, first complete the OpenVPN room and learn how to connect.</p>
+
+<h3 align="left">Answer the question below</h3>
+
+> 1.1. <em>Read the above.</em><br><a id='1.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+
+<br>
+
+<h2>Task 2 . Deploy the vulnerable machine</h2>
+
+<p>This room will teach you a variety of Linux privilege escalation tactics, including kernel exploits, sudo attacks, SUID attacks, scheduled task attacks, and more. This lab was built utilizing Sagi Shahar's privesc workshop (https://github.com/sagishahar/lpeworkshop) and utilized as part of The Cyber Mentor's Linux Privilege Escalation Udemy course (http://udemy.com/course/linux-privilege-escalation-for-beginners).<br><br>
+
+All tools needed to complete this course are in the user folder (/home/user/tools).<br><br>
+
+Let's first connect to the machine. SSH is open on port 22. Your credentials are:<br>
+
+username: TCM<br>
+password: Hacker123</p>
+
+<h3 align="left">Answer the question below</h3>
+
+> 2.1. <em>Deploy the machine and log into the user account via SSH (or use the browser-based terminal).</em><br><a id='2.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+
 <br>
 
 <h2>Task 3 . Privilege Escalation - Kernel Exploits</h2>
@@ -780,9 +808,16 @@ In command prompt type: <code>echo 'int main() { setgid(0); setuid(0); system("/
 <br>
 <br>
 
+<h1 align="center">Badge Earned</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/91ce4446-5238-4e32-801b-11f44de496d0"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/11e25fb6-0968-4bae-8984-0f86a2baf66c"></p>
+
+<br>
+<br>
+
 <h1 align="center">Room Completed</h1>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/17bed83c-0760-4f0c-95f2-31e860569009"><br>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bedeaea0-73a7-44cc-a7f9-de63a903fd8d"></p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/d1e97f7f-d88b-4ace-804a-8fa9f90dedc3"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/687cd1ba-bc7b-4b55-a794-f100a27c40e8"></p>
                    
 <h1 align="center">My TryHackMe Journey</h1>
 
@@ -790,15 +825,15 @@ In command prompt type: <code>echo 'int main() { setgid(0); setuid(0); system("/
 
 | Date<br>          |  Streak<br>|   All Time<br>Global   |   All Time<br>Brazil |  Monthly<br>Global   |  Monthly<br>Brazil   |  SHOGUN<br>points  |   Rooms<br>completed  |  Badges<br> |
 | :---------------: | :--------: | :--------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-------------------: | :---------: |
-| Jun 7, 2025       |     396    |          201ˢᵗ         |            4ᵗʰ       |        1,144ᵗʰ       |         17ᵗʰ         |       106,675      |             767      |    62       |
+| Jun 8, 2025       |     398    |          202nd         |            4ᵗʰ       |        1,340ᵗʰ       |         25ᵗʰ         |       106,675      |             770      |    62       |
 
 </div>
 
-<p align="center"> Global All Time: 201ˢᵗ <br><img width="300px" src="https://github.com/user-attachments/assets/fcb20c7e-47a5-46e5-97f9-396a36a21aec" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/79a6d9d8-a55d-4247-811c-d155118f42e2"><br><br>
-                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/da85e450-b4a9-42cc-a5d4-89ea18067145"><br><br>
-                   Global monthly: 1,144ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/e0120149-ea55-4ef2-9403-18546998d216"><br><br>
-                   Brazil monthly:   17ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/b1d0fd6a-c419-4fbe-b1a3-ba8e390afc37"><br><br></p>
+<p align="center"> Global All Time: 202nd <br><img width="300px" src="https://github.com/user-attachments/assets/ef216c3f-3b8f-474c-9b43-db720ffa12af" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/1c452465-c78b-4fa1-8892-48e97a5070c5"><br><br>
+                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/d2a6c05d-6879-486f-9e6e-59176120fca0"><br><br>
+                   Global monthly: 1,340ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/ff6c6b1f-a9c7-4912-9a7c-77b2435815f9"><br><br>
+                   Brazil monthly:   25ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/1c813a32-7041-4cbc-bcf4-5d23bb0fe211"><br><br></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
