@@ -1,4 +1,4 @@
-<h1>AD> Bad Successor</h1>
+<h1>AD: Bad Successor</h1>
 
 ![image](https://github.com/user-attachments/assets/3a4de66f-9ea1-438b-8281-89bd33765402)
 
