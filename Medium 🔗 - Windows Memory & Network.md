@@ -500,8 +500,8 @@ From there, windows-update.exe launched updater.exe. Using netscan, we identifie
 <br>
 
 > 7.2. <em>Which folder is used for persistence by the attack we analyzed within this memory dump?</em><br><a id='7.2'></a>
->> <code>C:\Users\operator\AppData\Roaming\Microsoft\Windows\StartMenu\Programs\Startup\</code><br>
-<p></p>
+![image](https://github.com/user-attachments/assets/2dc5a77a-3206-4015-8ab1-23a0801a7257)
+
 
 ![image](https://github.com/user-attachments/assets/f340a34a-bf40-4193-a1f0-c4575c59be12)
 
