@@ -1,5 +1,8 @@
 ![image](https://github.com/user-attachments/assets/c66eec1f-5587-403c-b87c-a9f265708241)<h1>Azure DevSecOps</h1>
 
+![image](https://github.com/user-attachments/assets/a4bcc270-14b7-4e26-80db-5fb86cf27e3a)
+
+
 <h2>Task 3 . Welcome to Azure</h2>
 <h3>Setting the Scene</h3>
 <p>Welcome to the Team! That is, today is your first day in the DevSecOps Engineering team for a company called FinkFactory. FinkFactory is an online merchant which sells PC parts to those looking to build a PC. They sell everything from storage, to processors, to RAM, and cases. If you’re building a PC, it’s a one-stop shop! They are a fully online operation and have no physical stores so all business takes place through their eShop web application. Their web application is currently being hosted in the cloud, on an Azure tenant. You have been hired to help secure the development and deployment processes of this web application. However, before you can help FinkFactory secure their Azure-hosted web application, you’ll need access to the Azure tenant!</p>
@@ -119,4 +122,32 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 > 7.1. <em>All done!</em><br><a id='7.1'></a>
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
+
+
+![image](https://github.com/user-attachments/assets/d33f748e-7ff3-44b8-9613-7bb21a6232f5)
+
+![image](https://github.com/user-attachments/assets/5cb41a0a-7ab9-4709-bc95-754f7a10264d)
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82)
+
+
+
+
+![image](https://github.com/user-attachments/assets/e74b42b6-0597-43bd-8000-81c89017d1bc)
+
+![image](https://github.com/user-attachments/assets/da8d4f7a-177d-432a-97ff-7521aa6698a4)
+
+
+![image](https://github.com/user-attachments/assets/54542d83-4372-4568-ab84-9e72f53c2cf6)
+
+![image](https://github.com/user-attachments/assets/e91925d8-2ea2-4312-bd91-9bacfbd0be61)
+
+![image](https://github.com/user-attachments/assets/c9938d7a-e20b-4cc8-a652-e678c1f55a36)
+
+
+
+
 
