@@ -199,8 +199,8 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 
 <h1 align="center">Room Completed</h1>
 <br>
-<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82"><br>
-                  <img width="1000px" src="https://github.com/user-attachments/assets/6d77d2c7-50bf-4a4e-9bd1-2d3deef073d0"></p>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/d33f748e-7ff3-44b8-9613-7bb21a6232f5"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/5cb41a0a-7ab9-4709-bc95-754f7a10264d"></p>
 
 
 <h1 align="center"> My TryHackMe Journey</h1>
@@ -216,7 +216,7 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 </div>
 
 <p align="center"> Global All Time:  204ᵗʰ<br><br>
-<img width="240px" src="https://github.com/user-attachments/assets/e2dbc695-ba3c-4d5e-badc-6305ef0f6688"><br>
+<img width="240px" src="https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82"><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
 
 <p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/89053e09-b1cd-45f0-8dea-d1e98862d74e"> </p>
