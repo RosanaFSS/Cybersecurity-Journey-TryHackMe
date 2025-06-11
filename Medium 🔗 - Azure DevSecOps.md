@@ -174,10 +174,6 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 <p></p>
 
 
-![image](https://github.com/user-attachments/assets/d33f748e-7ff3-44b8-9613-7bb21a6232f5)
-
-![image](https://github.com/user-attachments/assets/5cb41a0a-7ab9-4709-bc95-754f7a10264d)
-
 <br>
 <br>
 
