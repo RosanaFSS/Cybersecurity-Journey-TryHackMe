@@ -1,18 +1,9 @@
-<h1 align="center">Windows Memory & User Activity</h1>
-<p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/4f58f330-acaf-469d-9d2f-1c4822e39fa2"><br>
-Jun 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
-part of my 396-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
-Use your red teaming knowledge to pwn a Linux machine. <a href="https://tryhackme.com/room/expose"</a>here.<br><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/f0ecc479-be5a-437b-bea0-65a0823f892"></p>
-
-
 <h1 align="center"> Windows Memory & User Activity<br><img width="1200px" src="https://github.com/user-attachments/assets/3c611801-4d91-40e8-b35b-a2395cf04ada"></h1>
-
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/d7050f1e-1ab4-48ec-a5a2-6f5e33e422dc5"><br>
-June 11, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/ed2cafc4-bc0c-4950-b338-1c21dba2939f"><br>
+June 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
-part of my <code>401</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-Identify C2 traffic & post-exploit activity in Windows memory.<a href="https://tryhackme.com/room/windowsmemoryandnetwork"</a>here.<br>
+part of my <code>396</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+Identify C2 traffic & post-exploit activity in Windows memory.<a href="https://tryhackme.com/room/windowsmemoryanduseractivity"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9"></p>
 
 <br>
