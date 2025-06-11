@@ -4,10 +4,54 @@ June 10, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.
 and I’m excited to join you on this adventure,<br>
 part of my <code>400</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 With this room begins your journey into the world of Azure DevSecOps. <a href="https://tryhackme.com/room/azuredevsecops"</a>here.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9"></p>
-  
-![image](https://github.com/user-attachments/assets/a4bcc270-14b7-4e26-80db-5fb86cf27e3a)
+<img width="1200px" src="https://github.com/user-attachments/assets/a4bcc270-14b7-4e26-80db-5fb86cf27e3a"></p>
 
+
+<h2>Task 1 . Introduction</h2>
+<p>So, you’ve learned the basics of DevSecOps, have adopted a shift left mentality, and have gotten to grips with many of the tools and terms that come along with DevSecOps? Well, what now? As you aim to specialise in DevSecOps, the mission then becomes preparing yourself for the real-life scenarios that these roles would find you in. With DevSecOps pipelines becoming more and more prevalent in the cloud, it becomes a more and more valuable skill set. This room aims to give you access to a realistic Azure cloud environment where you will interact with the DevOps services available within Azure, guiding you through how you may interact with these services as a DevSecOps Engineer. </p>
+
+<h3>Learning Prerequisites</h3>
+<p></p>This advanced module assumes knowledge of concepts like CSPs, container technologies, DevSecOps processes, and IaC. If you are unfamiliar with these concepts, it is recommended that you complete the DevSecOps pathway before beginning this room/module.</p>
+
+<h3>Learning Objectives<h3>
+<p>
+
+- Understand the Azure cloud platform and how to navigate it<br>
+- Understand Azure Repos from a security perspective, including key concepts such as branches and pull requests<br>
+- Understand how Azure YAML Pipelines are defined<br>
+- Understand Azure App Service and App Service plans<br>
+- Understand how to secure an Azure Pipeline</p>
+
+<h3 align="left"> Answer the question below</h3>
+
+> 1.1. <em>I'm ready to learn about Azure DevSecOps!</em><br><a id='1.1'></a>
+>> <strong><code>No answer neededs</code></strong><br>
+<p></p>
+
+<br>
+
+<h2>Task 2 . Azure DevSecOps</h2>
+<h3>CI/CD in the Cloud</h3>
+<p>In the modern world, CI/CD is practised by an increasing number of organisations, and with this comes a rising need to develop methods of securing the environment that is being built/deployed in and have DevSecOps engineers carry this out. Of course, when you are hired by a company in one of these roles and asked to secure their CI/CD environment, the methods you use to secure it will differ depending on the type of installation. Is it on-premises or cloud-based? Of course, there are overlapping similarities that are common to implementing CI/CD security in both kinds of installations. Still, some unique considerations must be taken into account due to the nature of each. On-premises CI/CD has been covered in the CI/CD and Build Security room. In this room, we begin to focus on how to secure an environment in the cloud. Before we do that, let's explain why you might choose to host your application in the cloud vs. on-premises. <br><br>
+
+<p>An on-premises CI/CD solution offers the security benefit of having complete control over the hardware that runs it, all the configurations made to that hardware, and the isolation of the environment from the Internet using firewall rules. If this complete control is desired or, in many cases, required (by organisations requiring this level of control for compliance purposes), then on-premises would be the way to go. However, a cloud-based solution offers many benefits, including (but not limited to) easy-to-setup, fast, reliable deployments that can scale up or down based on demand. <br><br<
+
+These benefits are enough on their own to make an argument for a cloud-based solution, especially for modern demand-driven applications, with the almost infinite scalability unlocking all kinds of power for your application and the billing for what is used aspect of the cloud providing, in many cases, a more cost-efficient solution. The answer to the question "which one should I use?", of course, entirely depends on what is being hosted/deployed and will change on a case-by-case basis. Still, the vital thing to note for this room is that just because a cloud-based solution doesn't offer full control of hardware, doesn't mean a cloud-based CI/CD solution can't be secure; you just need to know cloud-specific security considerations and the right services/tools to make use of. Welcome then to Azure DevSecOps.</p>
+
+<h3>Azure DevSecOps </h3>
+<p>With the scope set at cloud-based CI/CD, let's narrow it even further. The responsibilities of DevSecOps engineers can differ depending on whether the cloud-based CI/CD installation is Self Managed (the cloud-hosted infrastructure that you would install and manage CI/CD software on) or Fully Managed (you are provided with an out-of-the-box pre-installed CI/CD pipeline). For this room/module, we focus on a fully managed CI/CD suite and the greater cloud environment in which it is hosted. The chosen CSP for this module is Azure; you will be placed into a realistic DevOps project, which will need to be secured over the coming rooms using DevSecOps practices. The following task will brief you on your DevSecOps mission and give you the keys to your new Azure home. </p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 2.1. <em>Which solution would give you more control over your environment?</em><br><a id='2.1'></a>
+>> <strong><code>On-premises</code></strong><br>
+<p></p>
+
+> 2.2. <em>Which solution is ideal for environments which to scale up or down rapidly?</em><br><a id='2.2'></a>
+>> <strong><code>Cloud</code></strong><br>
+<p></p>
+
+<br>
 
 <h2>Task 3 . Welcome to Azure</h2>
 <h3>Setting the Scene</h3>
