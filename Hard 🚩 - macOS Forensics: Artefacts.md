@@ -1,9 +1,11 @@
+<h1 align="center">DFIR, Digital Forensics and Incident Response<br>macOS Forensics<br><img width="660px" src="https://github.com/user-attachments/assets/5e7f8c2d-53bf-43b7-81af-08b943f5b2b0"><br>macOS Forensics: Artefacts</h1>
+
 <p align="center">April 18, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{346}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="300px" src="" alt="Your Image Badge"><br>
 <img width="200px" src="https://github.com/user-attachments/assets/fe537998-ff5f-4aff-a6b6-a9a3f6a39e03" alt="streak"></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{macOS Forensics: Artefacts}}$$</h1>
+
 <p align="center"><em>Understand the forensic artefacts in macOS and learn to leverage them for forensic analysis.</em>.<br>
 It is classified as a hard-level CTF.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
