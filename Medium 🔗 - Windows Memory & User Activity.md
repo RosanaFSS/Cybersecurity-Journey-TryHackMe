@@ -4,7 +4,7 @@ June 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.l
 and I’m excited to join you on this adventure,<br>
 part of my <code>396</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Identify C2 traffic & post-exploit activity in Windows memory.<a href="https://tryhackme.com/room/windowsmemoryanduseractivity"</a>here.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/ddda580c-34b0-439f-ad9c-d1e9b34543c1"></p>
 
 <br>
 <br>
