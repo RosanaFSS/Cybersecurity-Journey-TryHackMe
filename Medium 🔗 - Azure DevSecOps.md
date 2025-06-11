@@ -177,14 +177,6 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 <br>
 <br>
 
-
-![image](https://github.com/user-attachments/assets/e74b42b6-0597-43bd-8000-81c89017d1bc)
-
-![image](https://github.com/user-attachments/assets/da8d4f7a-177d-432a-97ff-7521aa6698a4)
-
-
-![image](https://github.com/user-attachments/assets/54542d83-4372-4568-ab84-9e72f53c2cf6)
-
 ![image](https://github.com/user-attachments/assets/e91925d8-2ea2-4312-bd91-9bacfbd0be61)
 
 ![image](https://github.com/user-attachments/assets/c9938d7a-e20b-4cc8-a652-e678c1f55a36)
@@ -207,15 +199,15 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     60    |
+| June 10 2025      | 400      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  106,923  |    772    |     62    |
 
 </div>
 
 <p align="center"> Global All Time:  204ᵗʰ<br><br>
 <img width="240px" src="https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
+<img width="1000px" src="https://github.com/user-attachments/assets/da8d4f7a-177d-432a-97ff-7521aa6698a4"> </p>
 
-<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/89053e09-b1cd-45f0-8dea-d1e98862d74e"> </p>
+<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/54542d83-4372-4568-ab84-9e72f53c2cf6"> </p>
 "> </p>
 
 <p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
