@@ -119,6 +119,7 @@ Note: This command can take some time to finish, depending on CPU usage and the 
 
 <p>Example Terminal</p>
 
+
 ```bash
 user@tryhackme~$ vol -f THM-WIN-001_071528_07052025.mem windows.netscan >  netscan.txt
 user@tryhackme$cat netscan.txt
