@@ -1,4 +1,2 @@
-<h1 align="center">Windows Memory & Network<br><img width="1200px" src="https://github.com/user-attachments/assets/3c611801-4d91-40e8-b35b-a2395cf04ada"></h1>
+<h1 align="center">DFIR, Digital Forensics and Incident Response<br>macOS Forensics<br><img width="660px" src="https://github.com/user-attachments/assets/5e7f8c2d-53bf-43b7-81af-08b943f5b2b0"><br>macOS Forensics: Applications</h1>
 
-
-![image](https://github.com/user-attachments/assets/5bc0607b-9c20-4ec1-8d1b-34c552794fb8)
