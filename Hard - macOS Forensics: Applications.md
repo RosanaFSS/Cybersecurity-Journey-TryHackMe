@@ -13,7 +13,6 @@ Learn about macOS forensic artefacts related to different applications. Access i
 
 <h3>Learning Objectives</h3>
 <p>
-
 - Leverage application data to perform forensic analysis on a Mac device.<br>
 - Explore persistence mechanisms in macOS.<br>
 - Identify user activity in built-in apps such as mail, calendar, phone, and messages.<br>
