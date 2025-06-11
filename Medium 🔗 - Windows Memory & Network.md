@@ -340,29 +340,188 @@ In the next task, we’ll shift focus to possible exfiltration attempts or furth
 <h3 align="left"> Answer the questions below</h3>
 
 > 5.1. <em>What Volatility plugin can be used to correlate memory regions showing suspicious execution permissions with processes, helping to detect Meterpreter-like behavior?</em><br><a id='5.1'></a>
->> <strong><code>55985</code></strong><br>
+>> <strong><code>windows.malfind</code></strong><br>
 <p></p>
-
-
 
 <br>
 
 > 5.2. <em>What is the virtual memory address space of the suspicious injected region in updater.exe? Answer format: 0xABCDEF</em> Hint : <em>Locate the pop r10 instruction using malfind.</em><br><a id='5.2'></a>
->> <strong><code>192.168.0.30</code></strong><br>
+>> <strong><code>0x1a0000</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/403f4e9c-da51-4fdd-a627-7c77d7ac8960)
+
+<br>
+
+> 5.3. <em>What is the first 2-bytes signature found in the shellcode that was extracted from updater.exe using windows.malfind? Answer format: In hex.</em><br><a id='5.3'></a>
+>> <strong><code>4d5a</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/fa2b5bec-b804-4f51-a9e3-89018881c2ce)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/c4c76a49-53bb-4ea4-9d1a-835760dc86e4)
+
+<br>
+
+
+<h2> Task 6 .  Post-Exploitation Communication</h2>
+<p>In the previous step, we discovered that updater.exe had been injected with shellcode matching known Meterpreter patterns. That connection reached out to the attacker's infrastructure at <code>10.0.0.129:8081</code>. In this task, we shift focus to what happened after that foothold was established.</p>p>
+
+<h3>Looking for Post-Exploitation Traffic</h3>
+<p></p>Now that the attacker had a reverse shell running, it’s reasonable to expect secondary connections for lateral movement, data staging, or command retrieval. We already observed two suspicious indicators from the <code>windows.netscan</code> output:<br>
+
+- powershell.exe (<code>PID 6984</code>) established a connection to <code>192.168.0.30:22</code>, which appears to be a lateral move within the internal network.<br>
+- windows-update.exe (</code>PID 10084</code>), previously seen listening on port <code>4443</code>, may have also generated outbound traffic.</p>
+
+<p>Let’s confirm if any of these processes performed external communication.<br><br>
+
+We'll begin by confirming again that the network session is tied to <code>powershell.exe</code>. Re-analyzing the output of the command <code>vol -f THM-WIN-001_071528_07052025.mem windows.netscan</code>, which we previously saved in netscan.txt. We’ll search for any connection entries associated with the <code>powershell.exe</code>. process using grep, as shown below.</p>
+
+<p>Example Terminal</p>
+
+```bash
+Example Terminal
+user@tryhackme~$ cat netscan.txt |grep powershell
+0x990b29ab8010	TCPv4	192.168.1.192	55987	192.168.0.30	22	ESTABLISHED	6984	powershell.exe	2025-05-07 07:15:15.000000 UTC    
+```
+
+<p>The <code>PID</code> of the process <code>powershell.exe</code> can be observed above (<code>6984</code>). Let's dump that process and investigate further with the command <code>vol -f THM-WIN-001_071528_07052025.mem windows.memmap --pid 6984 --dump</code>code><br><br>
+
+After that, we could look for interesting strings, but since we are already familiar with the connection we spotted, we can search for the IP we observed the connection made to, <code>192.168.0.30</code>. We can achieve that with the command strings, as shown below.</p>
+
+<p>Example Terminal</p>
+
+```bash
+user@tryhackme~$ strings pid.6984.dmp|grep "192.168.0.30"
+$client=New-Object Net.Sockets.TcpClient; $client.Connect("192.168.0.30",22); while($client.Connected){Start-Sleep 1}
+$client=New-Object Net.Sockets.TcpClient; $client.Connect("192.168.0.30",22); while($client.Connected){Start-Sleep 1}
+```
+
+<p>As we can observe, we had two matches from our search, revealing the command used to connect to the host at 192.168.0.30 (server network) that was used to connect to and from the previous analysis. We know it's involved in the attack chain and was installed for persistence.<br><br>
+
+Let’s dump the memory space of the process that initiates this chain: windows-update.exe (PID 10084) to examine whether HTTP content was stored in memory, perhaps from a C2 address or data exfiltration, for that, we'll use the command vol -f THM-WIN-001_071528_07052025.mem windows.memmap --pid 10084 --dump<br><br>
+
+After creating the dump, we can search for the known domain attacker.thm by using the strings command in combination with grep, as shown below.</p>
+
+<p>Example Terminal</p>
+
+```bash
+user@tryhackme~$ strings pid.10084.dmp |grep "attacker.thm"
+attacker.thm
+http://attacker.thm/updater.exe
+external-attacker.thm
+Failed to connect to external-attacker.thm:25
+Connected to external-attacker.thm:25 successfully.
+[REDACTED]
+```
+
+<p>We can see that, in addition to the domain attacker.thm, a subdomain external.attacker.thm also appears in the process memory. There's also a possible connection over port 25 (SMTP), based on the extracted strings.<br><br>
+
+Next, we’ll search for the term POST to check if any HTTP requests were made, possibly as part of a data exfiltration attempt. We'll use the -C 8 option with grep to display 8 lines before and after each match for better context.</p>
+
+<p>Example Terminal</p>
+
+```bash
+ubuntu@tryhackme:~$ strings pid.10084.dmp |grep "POST" -C 8
+bad cast
+attacker.thm
+C:\Windows\System32\drivers\etc\hosts
+[!] Failed to open hosts file.
+Exfiltrator
+[!] InternetOpenA failed.
+[!] InternetConnectA failed.
+Content-Type: application/x-www-form-urlencoded
+POST
+[!] HttpOpenRequestA failed.
+[!] HttpSendRequestA failed.
+[+] Hosts file exfiltrated to http://
+[*] Executing hello()
+```
+
+<p>As we can observe, the process tried a <code>POST</code> connection, but it seemed to fail. We've confirmed that <code>powershell.exe</code> established a live connection to another host, and windows-update.exe attempted to send an <code>HTTP</code> <code>POST</code> request to the attacker's domain. These behaviors point to continued activity beyond initial access, suggesting both processes were involved in the post-exploitation stage of the attack.</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 6.1. <em>Which local port was used by powershell.exe to connect to the internal host 192.168.0.30?</em><br><a id='6.1'></a>
+>> <strong><code>55987</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/73b7d4b7-9398-4e70-92d0-7e757a990edb)
+
+
+<br>
+
+> 6.2. <em>What was the remote IP address targeted by windows-update.exe during its HTTP POST attempt?</em><br><a id='6.2'></a>
+>> <strong><code>10.0.0.129</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/60d69473-8fc7-421b-ac35-c53b38583add)
+
+
+<br>
+
+> 6.3. <em>What port was windows-update.exe listening on, based on the netscan output?</em><br><a id='6.3'></a>
+>> <strong><code>4443</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/175f98af-92c2-4233-8e56-7c821f339df5)
+
+<br>
+
+
+<h2> Task 7 .  Putting it All Together</h2>
+
+<p>Across these three rooms, we reconstructed a full attack chain that started with a phishing-style document and ended with a Meterpreter shell and lateral movement. Each stage was uncovered by correlating memory artifacts using Volatility 3. Our starting point was a malicious macro-enabled Word document (.docm) opened by WINWORD.EXE. Using plugins like pslist, cmdline, and memmap, we observed the macro spawning pdfupdater.exe, a first-stage dropper that quickly launched windows-update.exe.<br><br>
+
+From there, windows-update.exe launched updater.exe. Using netscan, we identified an active outbound connection from updater.exe to an external IP address (10.0.0.129:8081). Following this, we observed post-exploitation activity. cmd.exe and powershell.exe were both launched under the same session as the earlier processes, and PowerShell established a connection to an internal host (192.168.0.30) over port 22. This behavior strongly indicates lateral movement. We can summarize the attack chain below.<br><br>
+
+- Initial Access: The user opened a macro-enabled .docm document with WINWORD.EXE, which loaded a .docm template file containing a VBA macro. The macro downloaded and executed pdfupdater.exe.
+- Execution & Persistence: pdfupdater.exe launched windows-update.exe, a malicious binary placed in the user’s Startup folder for persistence. This process spawned updater.exe.
+- Remote Access (C2): updater.exe established an outbound connection to 10.0.0.129:8081, where reflective DLL injection was confirmed using malfind, and Meterpreter shellcode was detected via vadyarascan.
+- Post-Exploitation: Following the C2 session, cmd.exe and powershell.exe were launched. The latter connected to 192.168.0.30:22, suggesting lateral movement to a second internal host. The PowerShell payload was recovered from memory.
+- Exfiltration Attempts: Memory strings in windows-update.exe showed attempts to POST data to attacker.thm and external-attacker.thm, although the exfiltration failed.</p>
+
+
+<h3>MITRE ATT&CK Technique Mapping</h3>
+<p>Below is a table summarizing each discovery, the corresponding Volatility plugin used to uncover it, and the mapped MITRE ATT&CK technique.</p>
+
+![image](https://github.com/user-attachments/assets/5888f172-07e8-4b24-a46a-e5dd7fd68f6c)
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 7.1. <em>What IP did updater.exe connect to for the reverse shell?</em><br><a id='7.1'></a>
+>> <strong><code>10.0.0.129</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/085692b3-5e18-4cb6-911e-18d249dd649e)
+
+
+<br>
+
+> 7.2. <em>Which folder is used for persistence by the attack we analyzed within this memory dump?</em><br><a id='7.2'></a>
+>> <strong><code>10.0.0.129</code></strong><br>
+<p></p>
+
 
 
 
 <br>
 
-> 5.3. <em>What is the first 2-bytes signature found in the shellcode that was extracted from updater.exe using windows.malfind? Answer format: In hex.</em><br><a id='5.3'></a>
->> <strong><code>192.168.0.30</code></strong><br>
+> 7.3. <em>Which MITRE technique matches the reflective DLL injection used by updater.exe?</em><br><a id='7.3'></a>
+>> <strong><code>4443</code></strong><br>
+<p></p>
+
+<br>
+
+> 7.4. <em>What is the domain that was discovered within the windows-update.exe file?</em><br><a id='7.4'></a>
+>> <strong><code>4443</code></strong><br>
 <p></p>
 
 
-<h2> Task 6 .  Post-Exploitation Communication</h2>
 
-<h2> Task 7 .  Putting it All Together</h2>
+<br>
 
 <h2> Task 8 .  Conclusion</h2>
 
