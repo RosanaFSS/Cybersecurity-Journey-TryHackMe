@@ -1,13 +1,10 @@
+<h1 align="center">DFIR, Digital Forensics and Incident Response<br>macOS Forensics<br><img width="660px" src="https://github.com/user-attachments/assets/5e7f8c2d-53bf-43b7-81af-08b943f5b2b0"><br>macOS Forensics: The Basicss</h1>
 
 <p align="center">April 2, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{331}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
   <img width="160px" src="https://github.com/user-attachments/assets/84045cc3-bffc-4702-a7fa-1c6c96ba085c"></p>
 
-
-<h1 align="center">
-  $$\textcolor{#3bd62d}{\textnormal{macOS Forensics: The Basics}}$$
-</h1>
 <p align="center">Learn the basics to prepare for performing forensics on macOS. It is classified an easy-level walkthrough, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Can be accessed clicking <a href="https://tryhackme.com/room/macosforensicsbasics">here</a>.</p>
 
 
