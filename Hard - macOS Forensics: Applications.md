@@ -4,7 +4,7 @@
 June 11, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
 part of my <code>401</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-Learn about macOS forensic artefacts related to different applications.<a href="https://tryhackme.com/room/macosforensicsapplications"</a>here.<br>
+Learn about macOS forensic artefacts related to different applications. Access it <a href="https://tryhackme.com/room/macosforensicsapplications"</a>here.<br>
 <img width="1200px" src=""></p>
 
 <h2> Task 1 . Introduction</h2>
