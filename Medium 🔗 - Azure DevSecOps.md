@@ -1,4 +1,4 @@
-<h1>Azure DevSecOps</h1>
+![image](https://github.com/user-attachments/assets/c66eec1f-5587-403c-b87c-a9f265708241)<h1>Azure DevSecOps</h1>
 
 <h2>Task 3 . Welcome to Azure</h2>
 <h3>Setting the Scene</h3>
@@ -44,4 +44,79 @@
 <h2>Task 5 . Azure Pipelines</h2>
 
 
-![Uploading image.png…]()
+<h3 align="left"> Answer the questions below</h3>
+
+> 5.1. <em>The Azure App Service runs within a what?</em><br><a id='5.1'></a>
+>> <strong><code>Azure App Service Plan</code></strong><br>
+<p></p>
+
+
+> 5.2. <em>Azure App Service has some security benefits, including the ability to protect against which vulnerability?</em><br><a id='5.2'></a>
+>> <strong><code>subdomain takeovers</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/47601ca9-e336-40f7-abc7-8a037ce438a4)
+
+![image](https://github.com/user-attachments/assets/0b84c70e-996a-48a2-8775-e00cd9851012)
+
+![image](https://github.com/user-attachments/assets/b4d835de-bea7-48d9-91a0-6c312961bbcf)
+
+![image](https://github.com/user-attachments/assets/1961cc8e-f1d0-4796-bafd-9893aa63b514)
+
+![image](https://github.com/user-attachments/assets/f34a23e3-9175-4d0c-b7d2-956818f57239)
+
+
+<br>
+
+<h2>Task 6 . Azure Pipelines</h2>
+<h3>Securing Pipelines</h3>h3>
+<p>As a DevSecOps Engineer, part of your job would be to implement security controls around the application and deployment code written by the dev team. Let's take the FinkFactory web app deployment pipeline YAML as an example. As described in the previous task, this YAML pipeline sets up various reusable variables before the 'steps' section defines a series of tasks that deploy the application code as an Azure App Service. We will now take a look at some ways we can secure this process.</p>
+
+<p>[ ... ]</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 6.1. <em>Azure CLI supports bash and what other language? </em><br><a id='6.1'></a>
+>> <strong><code>PowerShell</code></strong><br>
+<p></p>
+
+> 6.2. <em>What flag is used in the Azure CLI command/script to enforce HTTPS on the Azure App Service? </em><br><a id='6.2'></a>
+>> <strong><code>--httpsOnly=true</code></strong><br>
+<p></p>
+
+> 6.3. <em>We were able to require a minimum amount of reviewers using a what?  </em><br><a id='6.3'></a>
+>> <strong><code>Branch Policy</code></strong><br>
+<p></p>
+
+
+![image](https://github.com/user-attachments/assets/ba13ce04-83fc-4fbe-8ef7-9df236a59abf)
+
+![image](https://github.com/user-attachments/assets/438a24b1-5657-4aab-94fe-2745a1192717)
+
+![image](https://github.com/user-attachments/assets/6595f5d2-6e2b-4eb9-a3f6-e0b6f072839c)
+
+![image](https://github.com/user-attachments/assets/32a05283-e785-4395-b3a7-148bf218c75d)
+
+![image](https://github.com/user-attachments/assets/38d1b566-9909-464f-8b41-d09895bc2c6c)
+
+<br>
+
+<h2>Task 7 . Conclusion</h2>
+
+<h3>A Warm Welcome to the World of Azure DevSecOps</h3>
+<p>This room has introduced you to your new role as DevSecOps Engineer at FinkTech as well as DevSecOps in the world of Azure. Step by step, you have been down around your new ‘office in the cloud’, so as you continue to learn more advanced Azure DevSecOps topics, you can be familiar with your environment and all of the services that integrate to enable FinkFactory's workflow. In the process, we have covered:<br>
+
+The benefits of hosting a web application in a cloud-hosted environment<br>
+
+- Azure DevOps and it's landscape<br>
+-Azure Repos service and some security considerations <br>
+-Azure Pipelines, Azure YAML Pipelines, and Azure App Services / App Service plans<br>
+-Methods of securing a web application running in an Azure web applications and how to implement some basic branch policies</p>
+
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 7.1. <em>All done!</em><br><a id='7.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
