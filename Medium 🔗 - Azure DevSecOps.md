@@ -11,9 +11,9 @@ With this room begins your journey into the world of Azure DevSecOps. <a href="h
 <p>So, you’ve learned the basics of DevSecOps, have adopted a shift left mentality, and have gotten to grips with many of the tools and terms that come along with DevSecOps? Well, what now? As you aim to specialise in DevSecOps, the mission then becomes preparing yourself for the real-life scenarios that these roles would find you in. With DevSecOps pipelines becoming more and more prevalent in the cloud, it becomes a more and more valuable skill set. This room aims to give you access to a realistic Azure cloud environment where you will interact with the DevOps services available within Azure, guiding you through how you may interact with these services as a DevSecOps Engineer. </p>
 
 <h3>Learning Prerequisites</h3>
-<p></p>This advanced module assumes knowledge of concepts like CSPs, container technologies, DevSecOps processes, and IaC. If you are unfamiliar with these concepts, it is recommended that you complete the DevSecOps pathway before beginning this room/module.</p>
+<p>This advanced module assumes knowledge of concepts like CSPs, container technologies, DevSecOps processes, and IaC. If you are unfamiliar with these concepts, it is recommended that you complete the DevSecOps pathway before beginning this room/module.</p>
 
-<h3>Learning Objectives<h3>
+<h3>Learning Objectives</h3>h3>
 <p>
 
 - Understand the Azure cloud platform and how to navigate it<br>
