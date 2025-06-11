@@ -52,12 +52,12 @@ We’ll walk through real indicators tied to remote shells, persistence via star
 
 <p>
 
-- On May 5th, 2025, at 07:30 CET, TryHatMe initiated its incident response plan and escalated the incident to us. After an initial triage, our team found a Windows host that was potentially compromised. The details of the host are as follows:<nbr>
---- Hostname: WIN-001
---- OS: Windows 1022H 10.0.19045
+- On May 5th, 2025, at 07:30 CET, TryHatMe initiated its incident response plan and escalated the incident to us. After an initial triage, our team found a Windows host that was potentially compromised. The details of the host are as follows:<br>
+--- Hostname: WIN-001<br>
+--- OS: Windows 1022H 10.0.19045<br><br<
   
-- At 07:45 CET, our analyst Steve Stevenson took a full memory dump of the Windows host and made a hash to ensure its integrity. The memory dump details are:
----Name: <code>THM-WIN-001_071528_07052025.dmp</code>
+- At 07:45 CET, our analyst Steve Stevenson took a full memory dump of the Windows host and made a hash to ensure its integrity. The memory dump details are:<br>
+---Name: <code>THM-WIN-001_071528_07052025.dmp</code><br>
 ---MD5-hash: <code>78535fc49ab54fed57919255709ae650</code></p>
 
 
