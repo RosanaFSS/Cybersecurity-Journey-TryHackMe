@@ -1,4 +1,4 @@
-<h1 align="center">Azure DevSecOps<br>
+<h1 align="center">Azure DevSecOps</h1>
 <p align="center"><img width="80px" src="hhttps://github.com/user-attachments/assets/f9b09cec-4fb7-4b01-a1d0-c189b861086f"><br>
 June 10, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
