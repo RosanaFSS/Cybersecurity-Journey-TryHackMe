@@ -42,6 +42,11 @@ In the coming tasks, we will demonstrate the artefacts on a live Mac machine and
 >> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
+<p>macOS disk image named <code>mac-disk.img</code></p>
+
+![image](https://github.com/user-attachments/assets/b6c07b96-e740-4d05-886f-fdaa24942193)
+
+
 <br>
 
 <h2> Task 2 . Common Application Information</h2>
@@ -210,3 +215,33 @@ umair@Umairs-MacBook-Pro ~ % cat /var/log/install.log|grep Installed
 
 <p>Now let's practice extracting these artefacts from the disk image in the attached VM.</p>
 
+<h3 align="left"> Answer the questions below</h3>
+
+> 2.1. <em>When was Microsoft 365 and Office installed on the disk image in the attached VM? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='2.1'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+> 2.2. <em>What is the name of the package used to install Microsoft Word?</em><br><a id='2.1'></a>
+>> <strong><code>____</code></strong><br>
+<p></p>
+
+<br>
+
+
+```bash
+ubuntu@tryhackme:~$ apfsutil mac-disk.img
+```
+
+![image](https://github.com/user-attachments/assets/219aabc6-c057-41d5-b3ed-0d3f39fb23b5)
+
+```bash
+ubuntu@tryhackme:~$ sudo su
+root@tryhackme:/home/ubuntu# apfs-fuse mac-disk.img mac/
+root@tryhackme:/home/ubuntu# ls mac
+private-dir  root
+...
+root@tryhackme:/home/ubuntu/mac/root# ls
+Applications  Library  System  Users  Volumes  bin  cores  dev  etc  opt  private  sbin  tmp  usr  var
+root@tryhackme:/home/ubuntu/mac/root#
