@@ -77,6 +77,26 @@ We’ll walk through real indicators tied to remote shells, persistence via star
 
 <h2> Task 3 . Environment & Setup</h2>
 
+<p>Before moving forward, start the VM by clicking the Start Machine button on the right.<br><br>
+
+It will take around 2 minutes to load properly. The VM will be accessible on the right side of the split screen. If the VM is not visible, use the blue Show Split View button at the top of the page.<br><br>
+
+The details for the assignment are:<br>
+
+- File Name: <code>THM-WIN-001_071528_07052025.mem</code><br>
+- File MD5 Hash: <code>78535fc49ab54fed57919255709ae650</code><br>
+- File Location: <code>/home/ubuntu</code></p>
+
+<p>To run volatility, you can use the vol command in the VM. For example: vol -h will display the help menu for volatility.</p>
+
+<h3 align="left"> Answer the question below</h3>
+
+> 3.1. <em>Click here if you were able to start your environment.</em><br><a id='3.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
 <h2> Task 4 . Analyzing Active Connections</h2>
 
 <h2> Task 5 .  Investigating Remote Access and C2 Communications</h2>
