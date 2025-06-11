@@ -1,5 +1,10 @@
-![image](https://github.com/user-attachments/assets/c66eec1f-5587-403c-b87c-a9f265708241)<h1>Azure DevSecOps</h1>
-
+<h1 align="center">Azure DevSecOps<br>
+<p align="center"><img width="80px" src="hhttps://github.com/user-attachments/assets/f9b09cec-4fb7-4b01-a1d0-c189b861086f"><br>
+June 10, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure,<br>
+part of my <code>400</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+With this room begins your journey into the world of Azure DevSecOps. <a href="https://tryhackme.com/room/azuredevsecops"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9"></p>
 ![image](https://github.com/user-attachments/assets/a4bcc270-14b7-4e26-80db-5fb86cf27e3a)
 
 
