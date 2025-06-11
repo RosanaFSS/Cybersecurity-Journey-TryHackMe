@@ -181,10 +181,6 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82)
-
-
-
 
 ![image](https://github.com/user-attachments/assets/e74b42b6-0597-43bd-8000-81c89017d1bc)
 
@@ -198,6 +194,44 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 ![image](https://github.com/user-attachments/assets/c9938d7a-e20b-4cc8-a652-e678c1f55a36)
 
 
+<br>
+<br>
+
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/6d77d2c7-50bf-4a4e-9bd1-2d3deef073d0"></p>
+
+
+<h1 align="center"> My TryHackMe Journey</h1>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     60    |
+
+</div>
+
+<p align="center"> Global All Time:  204ᵗʰ<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/e2dbc695-ba3c-4d5e-badc-6305ef0f6688"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
+
+<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/89053e09-b1cd-45f0-8dea-d1e98862d74e"> </p>
+"> </p>
+
+<p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
+
+<p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe"> </p>
+
+<h1 align="center">Thanks for coming!!!</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<h1 align="center">Thank you</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/rePl4stic">rePl4stic</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
 
 
 
