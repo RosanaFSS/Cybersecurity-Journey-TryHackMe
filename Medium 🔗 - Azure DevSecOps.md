@@ -174,10 +174,6 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 <p></p>
 
 
-<br>
-<br>
-
-![image](https://github.com/user-attachments/assets/e91925d8-2ea2-4312-bd91-9bacfbd0be61)
 
 ![image](https://github.com/user-attachments/assets/c9938d7a-e20b-4cc8-a652-e678c1f55a36)
 
@@ -205,12 +201,11 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 
 <p align="center"> Global All Time:  204ᵗʰ<br><br>
 <img width="240px" src="https://github.com/user-attachments/assets/8e4e9166-b6dc-43ba-82c2-f38d42bacb82"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/da8d4f7a-177d-432a-97ff-7521aa6698a4"> </p>
+<img width="1000px" src="https://github.com/user-attachments/assets/da8d4f7a-177d-432a-97ff-7521aa6698a4"></p>
 
-<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/54542d83-4372-4568-ab84-9e72f53c2cf6"> </p>
-"> </p>
+<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/54542d83-4372-4568-ab84-9e72f53c2cf6"></p>
 
-<p align="center"> Global monthly:    1,078ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
+<p align="center"> Global monthly:    1,078ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/c9938d7a-e20b-4cc8-a652-e678c1f55a36"></p>
 
 <p align="center"> Brazil monthly:    17ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/e91925d8-2ea2-4312-bd91-9bacfbd0be61"> </p>
 
@@ -219,7 +214,4 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
 <h1 align="center">Thank you</h1>
-<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/rePl4stic">rePl4stic</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
-
-
-
+<p align="center"><a href="https://tryhackme.com/p/Maxablancas">Maxablancas</a>  for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
