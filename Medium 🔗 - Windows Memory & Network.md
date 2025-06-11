@@ -566,11 +566,6 @@ Let's continue our memory analysis journey in the next room of this module.</p>
 
 </div>
 
-![image](https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe)
-
-
-<br>
-
 <p align="center"> Global All Time:  204ᵗʰ<br><br>
 <img width="240px" src="https://github.com/user-attachments/assets/e2dbc695-ba3c-4d5e-badc-6305ef0f6688"><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
@@ -582,14 +577,9 @@ Let's continue our memory analysis journey in the next room of this module.</p>
 
 <p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe"> </p>
 
-<br>
-<br>
-
 <h1 align="center">Thanks for coming!!!</h1>
 
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
-<br>
-
-<h1 align="center">Thank you}</h1>
+<h1 align="center">Thank you</h1>
 <p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/rePl4stic">rePl4stic</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
