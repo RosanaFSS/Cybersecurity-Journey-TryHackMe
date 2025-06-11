@@ -4,7 +4,7 @@
 June 11, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
 part of my <code>401</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-Identify C2 traffic & post-exploit activity in Windows memory.<a href="https://tryhackme.com/room/windowsmemoryandnetwork"</a>here.<br><br>
+Identify C2 traffic & post-exploit activity in Windows memory.<a href="https://tryhackme.com/room/windowsmemoryandnetwork"</a>here.<br>
 <img width="1000px" src="[5](https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9)"></p>
 
 <h2> Task 1 . Introduction</h2>
