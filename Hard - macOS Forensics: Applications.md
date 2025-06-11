@@ -25,14 +25,14 @@ Learn about macOS forensic artefacts related to different applications. Access i
 <p>Before starting this room, it is highly recommended that you complete:<br>
 
 - macOS Forensics: The Basics<br>
-- macOS Forensics: Artefacts<br><br>
+- macOS Forensics: Artefacts<br>
 
 Please note that, similar to the previous room, this room requires advanced knowledge of the Linux command line and an understanding of the tools and techniques used in the earlier rooms.</p>
 
 <h3>Machine Access</h3>
-<p>Before moving forward, please press the Start Machine button below to start the attached VM.<br><br>
-[ Start Machine ]<br><br>
-The machine will open in split view. The attached machine is a Linux machine with a macOS disk image named mac-disk.img. The image is placed in the home directory. As we learned previously, we will mount this disk image using the apfs-fuse utility and perform analysis on the image.<br><br>
+<p>Before moving forward, please press the Start Machine button below to start the attached VM.<br>
+[ Start Machine ]<br>
+The machine will open in split view. The attached machine is a Linux machine with a macOS disk image named mac-disk.img. The image is placed in the home directory. As we learned previously, we will mount this disk image using the apfs-fuse utility and perform analysis on the image.<br>
 
 In the coming tasks, we will demonstrate the artefacts on a live Mac machine and practice analysing them on the disk image in the attached Linux VM. Instructions will be provided on accessing the artefacts in the Linux VM if they differ from those in a live machine.</p>
 
