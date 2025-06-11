@@ -210,9 +210,9 @@ The benefits of hosting a web application in a cloud-hosted environment<br>
 <p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/54542d83-4372-4568-ab84-9e72f53c2cf6"> </p>
 "> </p>
 
-<p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
+<p align="center"> Global monthly:    1,078ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
 
-<p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe"> </p>
+<p align="center"> Brazil monthly:    17ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/e91925d8-2ea2-4312-bd91-9bacfbd0be61"> </p>
 
 <h1 align="center">Thanks for coming!!!</h1>
 
