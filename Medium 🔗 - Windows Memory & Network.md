@@ -176,7 +176,7 @@ Great, at this point, we’ve confirmed:<br>
 <p>These findings help confirm suspicions of remote control via C2, plus lateral movement activity. In the next section, we'll explore more into this in order to confirm our findings.</p>
 
 
-<h3 align="left"> Answer the question below</h3>
+<h3 align="left"> Answer the questions below</h3>
 
 > 4.1. <em>What is the remote source port number used in the connection between 192.168.1.192 and 10.0.0.129:8081?</em><br><a id='4.1'></a>
 >> <strong><code>55985</code></strong><br>
@@ -227,6 +227,138 @@ Great, at this point, we’ve confirmed:<br>
 <br>
 
 <h2> Task 5 .  Investigating Remote Access and C2 Communications</h2>
+<p>In the previous task, we discovered that updater.exe (PID 10032) was communicating with the external IP 10.0.0.129 over port 8081. This activity was flagged as highly suspicious, especially considering the context: a process spawned from a malicious Word document chain, and now reaching out to what appears to be attacker infrastructure.<br><br>
+
+Let’s take a closer look at this binary. The goal now is to determine whether this process was being used to maintain remote access. through a Meterpreter session or another C2 framework, and whether any evidence of post-exploitation activity can be uncovered directly in memory.</p>
+
+<h3>Confirming Process Relationships</h3>
+
+<p>We already confirmed in the previous room the relationship between this process and their PIDs, but if we need to gather the information again, we can use the commands listed below to identify them.<br><br>
+
+<code>vol -f THM-WIN-001_071528_07052025.mem windows.pslist > pslist.txt</code><br>
+<code>vol -f THM-WIN-001_071528_07052025.mem windows.cmdline > cmdline.txt</code><br>
+
+This matches the chain we had already suspected: A Word document opened by the user, followed by the execution of three suspicious binaries in sequence, pddfupdater.exe, windows-update.exe, leading to updater.exe. On the other hand, from the cmdline plugin output that we already have (we can execute the command to get the output again by typing: <code>vol -f THM-WIN-001_071528_07052025.mem windows.cmdline > cmdline.txt</code>), we can try to determine how it was invoked. Let's inspect with the following command to filter by process ID <code>cat cmdline.txt | grep 10032</code></p>
+
+<p>Example Terminal</p>
+
+```bash
+user@tryhackme~$ cat cmdline.txt | grep 10032
+10032	updater.exe	"C:\Users\operator\Downloads\updater.exe"
+```
+
+<p>As we can observe, no arguments have been passed. This is common for binaries that serve as droppers or loaders, especially those that use in-memory injection or reflective loading techniques, something Meterpreter is known for. Let's try to confirm our suspicions.</p>
+
+<h3>Scanning for Code Injection: Detecting Meterpreter</h3>
+<p>We’ll now inspect whether any foreign code was injected into updater.exe. Volatility’s windows.malfind plugin is useful for detecting memory regions with suspicious execution permissions (like PAGE_EXECUTE_READWRITE), or shellcode that was injected at runtime using the command vol -f THM-WIN-001_071528_07052025.mem windows.malfind --pid 10032 > malfind_10032.txt. Then, let's analyze the output using cat, as displayed below.</p>
+
+<p>Example Terminal</p>
+
+```bash
+user@tryhackme~$ cat malfind_10032.txt 
+Volatility 3 Framework 2.26.0
+
+PID	Process	Start VPN	End VPN	Tag	Protection	CommitCharge	PrivateMemory	File output	Notes	Hexdump	Disasm
+
+10032	updater.exe	0x1a0000	0x1d1fff	VadS	PAGE_EXECUTE_READWRITE	50	1	Disabled	MZ header	
+4d 5a 41 52 55 48 89 e5 48 83 ec 20 48 83 e4 f0 MZARUH..H.. H...
+e8 00 00 00 00 5b 48 81 c3 37 5e 00 00 ff d3 48 .....[H..7^....H
+81 c3 b4 b1 02 00 48 89 3b 49 89 d8 6a 04 5a ff ......H.;I..j.Z.
+d0 00 00 00 00 00 00 00 00 00 00 00 f8 00 00 00 ................    
+[REDACTED]:    pop    r10
+[REDACTED]:    push   r10
+[REDACTED]:    push   rbp
+[REDACTED]:    mov    rbp, rsp
+[REDACTED]:    sub    rsp, 0x20
+[REDACTED]:    and    rsp, 0xfffffffffffffff0
+[REDACTED]:    call   0x1a0015
+[REDACTED]:    pop    rbx
+[REDACTED]:    add    rbx, 0x5e37
+[REDACTED]:    call   rbx
+[REDACTED]:    add    rbx, 0x2b1b4
+[REDACTED]:    mov    qword ptr [rbx], rdi
+[REDACTED]:    mov    r8, rbx
+[REDACTED]:    push   4
+[REDACTED]:    pop    rdx
+[REDACTED]:    call   rax
+```
+
+<p>If we spot a memory region marked with suspicious flags and containing what looks like a shellcode or executable, this is a strong indication of runtime injection. Meterpreter, in particular, is known to use reflective DLL injection, which shows up this way. From the above, we can observe an injection or traces of process injection since we can observe the characters MZ, which are usually the first bytes of a PE executable, meaning that updater.exe injected this into memory.<br><br>
+
+Note: We can dump the memory for the process updater.exe PID (10032) for further inspection with the following command vol -f THM-WIN-001_071528_07052025.mem windows.memmap --pid 10032 --dump. This should create a file called pid.10032.dmp in our current directory, which contains the information on the process in memory.</p>
+
+<h3>Confirming Meterpreter with YARA</h3>
+<p>YARA is often used to search for known patterns or signatures inside malicious files. It allows us to define readable string or byte patterns that can help identify specific tools or payloads, like Meterpreter, based on their presence in memory or binaries.<br><br>
+
+Since we suspect that updater.exe may be running a Meterpreter session, we can validate this by applying a YARA rule that searches for known Meterpreter-related patterns within the process memory. We'll use a rule based on common Meterpreter patterns as shown below.</p>
+
+```bash
+rule meterpreter_reverse_tcp_shellcode {
+    meta:
+        description = "Metasploit reverse_tcp shellcode"
+    strings:
+        $s1 = { fce8 8?00 0000 60 }
+        $s2 = { 648b ??30 }
+        $s3 = { 4c77 2607 }
+        $s4 = "ws2_"
+        $s5 = { 2980 6b00 }
+        $s6 = { ea0f dfe0 }
+        $s7 = { 99a5 7461 }
+    condition:
+        5 of them
+}
+```
+
+<p>The rule below is designed to detect Metasploit's reverse_tcp shellcode by matching a combination of known byte patterns and strings commonly found in such payloads. It triggers if at least 5 of the listed patterns are present. Let's execute the command vol -f THM-WIN-001_071528_07052025.mem windows.vadyarascan --pid 10032 --yara-file meterpreter.yar to see if we can have match. This will scan only the memory regions allocated to the specified process, increasing the accuracy of detection. If the condition is met, it strongly suggests the presence of Meterpreter shellcod</p>
+
+<p>Example Terminal</p>
+
+```bash
+user@tryhackme~$ vol -f THM-WIN-001_071528_07052025.mem windows.vadyarascan --pid 10032 --yara-file meterpreter.yar
+Volatility 3 Framework 2.26.0
+Progress:  100.00		PDB scanning finished                        
+Offset	PID	Rule	Component	Value
+
+0x140004104	10032	meterpreter_reverse_tcp_shellcode	$s3	
+4c 77 26 07                                     Lw&.            
+0x1400040d9	10032	meterpreter_reverse_tcp_shellcode	$s4	
+77 73 32 5f                                     ws2_            
+0x140004115	10032	meterpreter_reverse_tcp_shellcode	$s5	
+29 80 6b 00                                     ).k.            
+0x140004135	10032	meterpreter_reverse_tcp_shellcode	$s6	
+ea 0f df e0                                     ....            
+0x14000414a	10032	meterpreter_reverse_tcp_shellcode	$s7	
+99 a5 74 61                                     ..ta   
+```
+
+<p>As we can observe from the output above, there are five matches within the process 10032 (updater.exe), confirming the presence of a Meterpreter session.<br><br>
+
+By combining live connection details from windows.netscan, process ancestry and launch context via pslist and cmdline, memory injection indicators from malfind, signature-based confirmation through yarascan, and dump analysis using memdump and strings, we've confirmed that updater.exe isn't just suspicious by behavior. It was injected with malicious code and was almost certainly acting as a reverse shell handler (Meterpreter), closing the loop on the attacker’s foothold.<br><br>
+
+In the next task, we’ll shift focus to possible exfiltration attempts or further staging activity using HTTP requests or services found in memory.</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 5.1. <em>What Volatility plugin can be used to correlate memory regions showing suspicious execution permissions with processes, helping to detect Meterpreter-like behavior?</em><br><a id='5.1'></a>
+>> <strong><code>55985</code></strong><br>
+<p></p>
+
+
+
+<br>
+
+> 5.2. <em>What is the virtual memory address space of the suspicious injected region in updater.exe? Answer format: 0xABCDEF</em> Hint : <em>Locate the pop r10 instruction using malfind.</em><br><a id='5.2'></a>
+>> <strong><code>192.168.0.30</code></strong><br>
+<p></p>
+
+
+
+<br>
+
+> 5.3. <em>What is the first 2-bytes signature found in the shellcode that was extracted from updater.exe using windows.malfind? Answer format: In hex.</em><br><a id='5.3'></a>
+>> <strong><code>192.168.0.30</code></strong><br>
+<p></p>
+
 
 <h2> Task 6 .  Post-Exploitation Communication</h2>
 
