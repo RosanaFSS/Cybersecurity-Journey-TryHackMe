@@ -3,7 +3,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/eec07c31-df33-48de-a52b-2b9b701ba625"><br>
 June 11, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my401-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Identify C2 traffic & post-exploit activity in Windows memory. <a href="https://tryhackme.com/room/windowsmemoryandnetwork"</a>here.<br><br>
-<img width="1000px" src="5"></p>
+<img width="1000px" src="[5](https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9)"></p>
 
 <br>
 <br>
@@ -501,30 +501,96 @@ From there, windows-update.exe launched updater.exe. Using netscan, we identifie
 <br>
 
 > 7.2. <em>Which folder is used for persistence by the attack we analyzed within this memory dump?</em><br><a id='7.2'></a>
->> <strong><code>10.0.0.129</code></strong><br>
+>> <strong><code>C:\Users\operator\AppData\Roaming\Microsoft\Windows\StartMenu\Programs\Startup\</code></strong><br>
 <p></p>
 
-
-
+![image](https://github.com/user-attachments/assets/f340a34a-bf40-4193-a1f0-c4575c59be12)
 
 <br>
 
 > 7.3. <em>Which MITRE technique matches the reflective DLL injection used by updater.exe?</em><br><a id='7.3'></a>
->> <strong><code>4443</code></strong><br>
+>> <strong><code>T1055.002</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/fe1015bd-224b-4e27-b1eb-35ba79e30b73)
 
 <br>
 
 > 7.4. <em>What is the domain that was discovered within the windows-update.exe file?</em><br><a id='7.4'></a>
->> <strong><code>4443</code></strong><br>
+>> <strong><code>external-attacker.thm</code></strong><br>
 <p></p>
 
+![image](https://github.com/user-attachments/assets/a115095c-f747-4b61-ac87-9f2962975cf7)
 
 
 <br>
 
 <h2> Task 8 .  Conclusion</h2>
+<p>In this room, we extended our forensic investigation by focusing on network activity and post-exploitation behavior captured in memory. We traced connections to attacker infrastructure, confirmed malicious payloads, and uncovered evidence of lateral movement, all from a single memory snapshot.<br><br>
+
+What we practiced:<br>
+
+- Identifying active and closed network connections
+- Correlating connections with processes.
+- Detecting memory injection.
+- Dumping and analyzing process memory.
+- Matching Meterpreter shellcode.
+- Investigating PowerShell-based lateral movement and HTTP from memory.<br><br>
+
+Let's continue our memory analysis journey in the next room of this module.</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 8.1. <em>Click to finish the room.</em><br><a id='8.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
 
 
+<br>
+<br>
+
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/c05f961c-a881-4b1c-aeb3-4167fc648734"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/6d77d2c7-50bf-4a4e-9bd1-2d3deef073d0"></p>
 
 
+<h1 align="center"> My TryHackMe Journey</h1>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     60    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe)
+
+
+<br>
+
+<p align="center"> Global All Time:  204ᵗʰ<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/e2dbc695-ba3c-4d5e-badc-6305ef0f6688"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
+
+<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/89053e09-b1cd-45f0-8dea-d1e98862d74e"> </p>
+"> </p>
+
+<p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
+
+<p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe"> </p>
+
+<br>
+<br>
+
+<h1 align="center">Thanks for coming!!!</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<br>
+
+<h1 align="center">Thank you}</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a>  and <a href="https://tryhackme.com/p/rePl4stic">rePl4stic</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
