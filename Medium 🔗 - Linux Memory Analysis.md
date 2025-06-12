@@ -766,20 +766,20 @@ In this room, we examined a Linux memory dump to look for the footprints of the 
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     60    |
+| June 12 2025      | 402      |     202nd    |      4ᵗʰ     |     461ˢᵗ   |     9ᵗʰ    |  107,529  |    776    |     62    |
 
 </div>
 
-<p align="center"> Global All Time:  204ᵗʰ<br><br>
-<img width="240px" src="https://github.com/user-attachments/assets/e2dbc695-ba3c-4d5e-badc-6305ef0f6688"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/799b2dc8-a596-4b43-8457-3a597f3261ed"> </p>
+<p align="center"> Global All Time:  202nd<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/880c185a-d1d4-48a9-9932-0163cc0dab53"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/40d0a27d-9c31-4374-b075-b433ad4a2e2d"> </p>
 
-<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/89053e09-b1cd-45f0-8dea-d1e98862d74e"> </p>
+<p align="center"> Brazil All Time:    4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f355553c-c889-4ec8-b123-8f58de4609f9"> </p>
 "> </p>
 
-<p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/60a3f005-9d8e-43cb-86a1-6d2e62b3e4c5"> </p>
+<p align="center"> Global monthly:    721ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b643d2ce-410d-4b6c-a158-da90efd51753"> </p>
 
-<p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/b77b4e0d-751a-46ad-af56-2511e8aa85fe"> </p>
+<p align="center"> Brazil monthly:    15ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/1e310a7b-eb22-4cd0-8846-8d43debcf7e7"> </p>
 
 <h1 align="center">Thanks for coming!!!</h1>
 
