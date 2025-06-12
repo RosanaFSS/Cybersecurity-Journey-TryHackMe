@@ -231,17 +231,12 @@ umair@Umairs-MacBook-Pro ~ % cat /var/log/install.log|grep Installed
 
 
 ```bash
-ubuntu@tryhackme:~$ apfsutil mac-disk.img
+ubuntu@tryhackme:~$ sudo su
+root@tryhackme:/home/ubuntu# apfs-fuse -v 4 mac-disk.img mac
+root@tryhackme:/home/ubuntu# ls mac/root/Users
+Shared  umair-thm
+root@tryhackme:/home/ubuntu#
+
 ```
 
-![image](https://github.com/user-attachments/assets/219aabc6-c057-41d5-b3ed-0d3f39fb23b5)
-
-```bash
-ubuntu@tryhackme:~$ sudo su
-root@tryhackme:/home/ubuntu# apfs-fuse mac-disk.img mac/
-root@tryhackme:/home/ubuntu# ls mac
-private-dir  root
-...
-root@tryhackme:/home/ubuntu/mac/root# ls
-Applications  Library  System  Users  Volumes  bin  cores  dev  etc  opt  private  sbin  tmp  usr  var
 root@tryhackme:/home/ubuntu/mac/root#
