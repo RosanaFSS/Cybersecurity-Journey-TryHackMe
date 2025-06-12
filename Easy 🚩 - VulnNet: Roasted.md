@@ -1,4 +1,3 @@
-
 <h1 align="center">VulnNet: Roasted</h1>
 
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/a7d1b069-774d-4cd1-8b39-0bddddcc5a055"><br>
@@ -9,7 +8,7 @@ VulnNet Entertainment quickly deployed another management instance on their very
 <img width="1200px" src="https://github.com/user-attachments/assets/f6e8b9de-8345-4114-b2bd-aed648f013a9"></p>
 
 
-<h2>Task 2 . Vulnet: Roasted</h2>
+<h2>Task 1 . Vulnet: Roasted</h2>
 
 <h3>nmap</h3>
 <p><code>vulnnet-rst.local0</code></p>
