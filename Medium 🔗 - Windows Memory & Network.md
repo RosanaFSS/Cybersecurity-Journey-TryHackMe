@@ -562,7 +562,7 @@ Let's continue our memory analysis journey in the next room of this module.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     60    |
+| June 11 2025      | 401      |     204ᵗʰ    |      4ᵗʰ     |     721ˢᵗ   |    15ᵗʰ    |  107,051  |    773    |     62    |
 
 </div>
 
