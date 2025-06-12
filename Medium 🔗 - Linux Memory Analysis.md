@@ -479,6 +479,144 @@ PID    Process    Start    End    Flags    PgOff    Major    Minor    Inode    F
 <br>
 
 <h2> Task 6 . Hunting for Suspicious Network Activities</h2>
+<p>Analyzing memory for suspicious network connections is crucial when investigating malware, persistence, or lateral movement. Attackers often use reverse shells, backdoors, or tunnels; memory may be the only place to detect them. In the memory, we can look for the footprints of the network connections and hunt for the suspicious ones.<br><br>
+
+Some of the key information we can look for in terms of network connection in the Linux memory is:</p>
+
+<p>
+
+- Open Network connections
+- Reverse Shell
+- Socket details
+- Network Interfaces</p>
+
+<h3>Identify IP Information</h3>
+
+
+```bash
+ubuntu@tryhackme:~/Desktop/artifacts$ vol3 -f FS-01.mem linux.ip.Addr          
+Volatility 3 Framework 2.26.2
+Progress:  100.00		Stacking attempts finished           
+NetNS	Index	Interface	MAC	Promiscuous	IP	Prefix	Scope Type	State
+4026531840	1	lo	00:00:00:00:00:00	False	127.0.0.1	8	host	UNKNOWN
+4026531840	1	lo	00:00:00:00:00:00	False	::1	128	host	UNKNOWN
+4026531840	2	ens5	02:83:88:6b:5a:1f	False	[--REDACTED--]	16	global	UP
+4026531840	2	ens5	02:83:88:6b:5a:1f	False	fe80::83:88ff:fe6b:5a1f	64	link	UP
+4026532265	1	lo	00:00:00:00:00:00	False	127.0.0.1	8	host	UNKNOWN
+4026532265	1	lo	00:00:00:00:00:00	False	::1	128	host	UNKNOWN
+```
+
+<p>The command's output is already placed in the ip.addr_output file. This command provides information about the network interfaces, corresponding MAC addresses, and associated IP addresses.</p>
+
+<h3>Identify Network Interface Information</h3>
+
+<p>The following command will show the layer two interface information from the memory image. It shows the network devices/interfaces recognized by the kernel.<br><br>
+
+Command: vol3 -f FS-01.mem linux.ip.Link</p>
+
+<p>Network Interface Information</p>
+
+```bash
+ubuntu@tryhackme:~/Desktop/artifacts$ vol3 -f FS-01.mem linux.ip.Link         
+Volatility 3 Framework 2.26.2
+Volatility 3 Framework 2.26.2
+Progress:  100.00        Stacking attempts finished  
+         
+NS           Interface    MAC               State    MTU      Qdisc                Qlen        Flags
+026531840      lo    00:00:00:00:00:00    UNKNOWN    65536    noqueue    1000    LOOPBACK,LOWER_UP,UP
+4026531840    ens5    [REDACTED]    UP     9001       mq    1000    BROADCAST,LOWER_UP,MULTICAST,UP
+4026532265     lo    00:00:00:00:00:00    UNKNOWN    65536    noqueue    1000    LOOPBACK,LOWER_UP,UP
+```
+
+<p>The command's output is already placed in the ip.link_output file. From a forensics point of view, we can examine the network interface information to identify some suspicious VPN tunneling or interfaces.</p>
+
+<h3>Explore Socket Details</h3>
+<p>We can extract the socket usage statistics from the kernel's perspective using the following command:<br><br>
+
+Commandline: vol3 -f FS-01.mem linux.sockstat.Sockstat</p>
+
+<p>Checking Socket Details/p>
+
+```bash
+ubuntu@tryhackme:~/Desktop/artifacts$ vol3 -f FS-01.mem linux.sockstat.Sockstat
+Volatility 3 Framework 2.26.2
+NetNS    Process Name    PID    TID    FD    Sock Offset    Family    Type    Proto    Source Addr    Source Port    Destination Addr    Destination Port    State    Filter
+026531840    systemd    1    1    126    0x8be20fd74440    AF_UNIX    STREAM    -    /run/systemd/journal/stdout      4738760    -    4738759    ESTABLISHED    -
+4026531840    systemd    1    1    127    0x8be207236a80    AF_UNIX    STREAM    -    /run/systemd/journal/stdout    4738761    -    4739223    ESTABLISHED    -
+4026531840    systemd    1    1    135    0x8be2038bfb80    AF_UNIX    STREAM    -    /run/avahi-daemon/socket       19420    -    -    LISTEN    -
+4026531840    systemd    1    1    137    0x8be204ed2200    AF_UNIX    STREAM    -    /run/lvm/lvmpolld.socket    1746    -    -    LISTEN    -
+4026531840    systemd    1    1    138    0x8be204edc880    AF_UNIX    STREAM    -    /run/snapd.socket    19429    -    -    LISTEN    -
+4026531840    systemd    1    1    139    0x8be204edd980    AF_UNIX    STREAM    -    /run/snapd-snap.socket    19431    -    -    LISTEN    -
+4026531840    systemd    1    1    140    0x8be2038b1540    AF_UNIX    STREAM    -    /run/acpid.socket    19807    -    -    LISTEN    -
+4026531840    systemd    1    1    141    0x8be2038bea80    AF_UNIX    STREAM    -    /run/dbus/system_bus_socket    19424    -    -    LISTEN    -
+4026531840    systemd    1    1    142    0x8be204ed2a80    AF_UNIX    STREAM    -    /run/systemd/journal/stdout    1759    -    -    LISTEN    -
+4026531840    systemd    1    1    144    0x8be204ed0440    AF_UNIX    DGRAM    -    /run/systemd/journal/socket    1761    -    -    UNCONNECTED    -
+4026531840    systemd    1    1    145    0x8be2038beec0    AF_UNIX    STREAM    -        19426    -    -    LISTEN    -
+4026531840    systemd    1    1    146    0x8be204ed0880    AF_UNIX    DGRAM    -    /run/systemd/journal/dev-log    1757    -    -    UNCONNECTED    -
+4026531840    systemd    1    1    147    0x8be203cb7000    AF_NETLINK    RAW    NETLINK_ROUTE    groups:0x800405d5    1    group:0x000000000    UNCONNECTED    -
+4026531840    systemd    1    1    148    0x8be203cb2800    AF_NETLINK    RAW    NETLINK_AUDIT    groups:0x00000001    1    group:0x000000000    UNCONNECTED    -
+4026531840    systemd    1    1    194    0x8be204ed1dc0    AF_UNIX    SEQPACKET    -    /run/udev/control    1764    -    -    UNCONNEC
+```
+
+<p>Note: The command takes about 2 minutes to fully execute. You can also find the information stored in the socket_output file.<br><br>
+
+Let's break down some key information we get from this command:</p>
+
+
+<p>
+
+- Process Name: Name of the process using the socket (from /proc/<pid>/comm).<br>
+- PID: Process ID that owns the socket.<br>
+- Source Address: the file path bound to the socket.<br>
+- STATE: Socket state: LISTEN, ESTABLISHED, UNCONNECTED, etc.<br>
+- Source Port / Destination Port: Source Port / Destination Port associated with the socket.</p>
+
+<h5>Forensics Value</h5>
+<p>
+
+- Detects overall network activity from the kernel’s view, helping confirm if the system was engaged in active connections during the memory capture. <br>
+- Identifies potential backdoors or reverse shells by revealing unexpected socket usage.<br>
+- Helps examine and hunt for abnormal socket counts or excessive memory usage allocated to network connections.</p>
+
+<p>Investigating the footprints of network-based activity in memory is an important part of forensics. It provides visibility into all networking layers: -interfaces, IP configurations, and socket-level behavior.<br><br>
+
+Examine the network connections and see if you can find any suspicious connections and associated processes.</p>
+
+</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 6.1. <em>What is the IP address of the remote server, to which a TCP connection was established using python?</em><br><a id='6.1'></a>
+>> <strong><code>10.100.1.125</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/ed8dabb3-a88f-4f3f-b51a-859ff33c3afc)
+
+
+<br>
+
+> 6.2. <em>What was the IP address of the infected host found in the record?</em><br><a id='6.2'></a>
+>> <strong><code>10.10.163.215head socket_outp</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/94047dc4-3813-4555-8325-adfd0f10b935)
+
+
+<br>
+
+> 6.3. <em>What is the MAC address of the network interface associated with the infected device?</em><br><a id='6.3'></a>
+>> <strong><code>02:83:88:6b:5a:1f</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/03eabeff-e069-42d6-9a10-846e9f8a4df3)
+
+
+<br>
+
+> 6.4. <em>What is the port number opened for the reverse shell by the adversary on the infected host?</em><br><a id='6.4'></a>
+>> <strong><code>_____</code></strong><br>
+<p></p>
+
 
 <br>
 
