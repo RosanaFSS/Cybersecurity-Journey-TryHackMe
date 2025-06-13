@@ -218,25 +218,50 @@ umair@Umairs-MacBook-Pro ~ % cat /var/log/install.log|grep Installed
 <h3 align="left"> Answer the questions below</h3>
 
 > 2.1. <em>When was Microsoft 365 and Office installed on the disk image in the attached VM? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='2.1'></a>
->> <strong><code>____</code></strong><br>
+>> <strong><code>2025-04-26 06:41:43</code></strong><br>
 <p></p>
-
-<br>
-
-> 2.2. <em>What is the name of the package used to install Microsoft Word?</em><br><a id='2.1'></a>
->> <strong><code>____</code></strong><br>
-<p></p>
-
-<br>
-
 
 ```bash
 ubuntu@tryhackme:~$ sudo su
 root@tryhackme:/home/ubuntu# apfs-fuse -v 4 mac-disk.img mac
-root@tryhackme:/home/ubuntu# ls mac/root/Users
-Shared  umair-thm
-root@tryhackme:/home/ubuntu#
-
+...
+root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# ls
+InstallHistory.plist  db
+root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# cat InstallHistory.plist
+...
+root@tryhackme:/home/ubuntu/mac/root/Applications/Microsoft Outlook.app/Contents# plistutil -p Info.plist
 ```
 
-root@tryhackme:/home/ubuntu/mac/root#
+![image](https://github.com/user-attachments/assets/f80c2462-53e4-4d0e-9220-cd094ee68778)
+
+
+![image](https://github.com/user-attachments/assets/17e548e1-485a-41c5-a10d-49a77e17a4cc)
+
+![image](https://github.com/user-attachments/assets/2db63c0f-dd8a-4e96-850b-29a321fa4900)
+
+![image](https://github.com/user-attachments/assets/b2f664d9-62b4-4353-b209-b2b782d6fd15)
+
+<br>
+
+> 2.2. <em>What is the name of the package used to install Microsoft Word?</em><br><a id='2.1'></a>
+>> <strong><code>Microsoft_Word_Internal.pkg</code></strong><br>
+<p></p>
+
+<br>
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root# plistutil -p private/var/db/receipts/com.microsoft.package.Microsoft_Word.app.plist
+{
+  "PackageVersion": "16.96.25041326",
+  "PackageIdentifier": "com.microsoft.package.Microsoft_Word.app",
+  "InstallPrefixPath": "Applications",
+  "InstallDate": 2025-04-26 06:41:42 +0000,
+  "PackageFileName": "Microsoft_Word_Internal.pkg",
+  "InstallProcessName": "Installer"
+}
+```
+
+![image](https://github.com/user-attachments/assets/f3a472f2-e988-4ff8-ba7a-637ce0245b74)
+
+
+
