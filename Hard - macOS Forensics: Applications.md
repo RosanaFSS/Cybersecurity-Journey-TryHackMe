@@ -276,4 +276,122 @@ root@tryhackme:/home/ubuntu/mac/root# plistutil -p private/var/db/receipts/com.m
 ![image](https://github.com/user-attachments/assets/f3a472f2-e988-4ff8-ba7a-637ce0245b74)
 
 
+<br>
+
+<h2> Task 3 . Autostart Items</h2>
+<p>We might have observed that applications can be configured to start at login in macOS. When applications restart, they often start from the same context from which they were shut down.</p>
+
+<h3>Launch Agents and Daemons</h3>
+<p>There are often background (or foreground) applications running in the OS that start with every reboot or login event, similar to applications in the autorun registry keys or Services in Windows. In macOS, these are called LaunchAgents or LaunchDaemons. LaunchAgents are user applications that execute at login, and LaunchDaemons are system applications that run with elevated privileges. LaunchAgents and LaunchDaemons are present in the /System/Library, /Library and ~/Library directories, e.g. ~/Library/LaunchAgents/net.tunnelblick.tunnelblick.LaunchAtLogin.plist as shown in the terminal below. </p>
+
+<p>LaunchAgent Plist File</p>
+
+```bash
+umair@Umairs-MacBook-Pro LaunchAgents % pwd   
+/Users/umair/Library/LaunchAgents
+umair@Umairs-MacBook-Pro LaunchAgents % plutil -p net.tunnelblick.tunnelblick.LaunchAtLogin.plist 
+{
+  "ExitTimeOut" => 0
+  "Label" => "net.tunnelblick.tunnelblick.LaunchAtLogin"
+  "LimitLoadToSessionType" => "Aqua"
+  "ProcessType" => "Interactive"
+  "ProgramArguments" => [
+    0 => "/Applications/Tunnelblick.app/Contents/Resources/Tunnelblick-LaunchAtLogin"
+  ]
+  "RunAtLoad" => 1
+}
+```
+
+<p>We can see some critical information in this plist file that can be helpful. We can see that the ProcessType has a value of Interactive, meaning this is a process with a GUI. The ProgramArguments key contains the executable path that will execute when logged in. We can also see that the RunAtLoad key has a value of 1, indicating that this application is supposed to run at login. Please note that this information can be different for different types of files, as seen in the example below.</p>
+
+
+<p>Launch Agents and Daemons</p>
+
+```bash
+umair@Umairs-MacBook-Pro LaunchAgents % pwd   
+/Library/LaunchAgents
+umair@Umairs-MacBook-Pro LaunchAgents % plutil -p com.microsoft.OneDriveStandaloneUpdater.plist 
+{
+  "Label" => "com.microsoft.OneDriveStandaloneUpdater"
+  "Program" => "/Applications/OneDrive.app/Contents/StandaloneUpdater.app/Contents/MacOS/OneDriveStandaloneUpdater"
+  "ProgramArguments" => [
+  ]
+  "RunAtLoad" => 1
+  "StartInterval" => 86400
+}
+umair@Umairs-MacBook-Pro LaunchAgents % cd ..
+umair@Umairs-MacBook-Pro /Library % cd LaunchDaemons 
+umair@Umairs-MacBook-Pro LaunchDaemons % plutil -p org.filezilla-project.filezilla-server.service.plist 
+{
+  "AssociatedBundleIdentifiers" => [
+    0 => "org.filezilla-project.filezilla-server"
+  ]
+  "Disabled" => 0
+  "EnvironmentVariables" => {
+    "LC_CTYPE" => "en_US.UTF-8"
+  }
+  "GroupName" => "wheel"
+  "Label" => "org.filezilla-project.filezilla-server.service"
+  "ProgramArguments" => [
+    0 => "/Applications/FileZilla Server.app/Contents/MacOS/filezilla-server"
+    1 => "--config-dir=/Library/Preferences/org.filezilla-project.filezilla-server.service"
+  ]
+  "RunAtLoad" => 1
+  "UserName" => "root"
+}
+umair@Umairs-MacBook-Pro LaunchDaemons % cd /System/Library/LaunchAgents
+umair@Umairs-MacBook-Pro LaunchAgents % plutil -p com.apple.wallpaper.plist  
+{
+  "KeepAlive" => {
+    "AfterInitialDemand" => 1
+    "SuccessfulExit" => 0
+  }
+  "Label" => "com.apple.wallpaper.agent"
+  "LimitLoadToSessionType" => [
+    0 => "Aqua"
+  ]
+  "MachServices" => {
+    "com.apple.usernotifications.delegate.com.apple.wallpaper.notifications.sonoma-first-run" => 1
+    "com.apple.wallpaper" => 1
+    "com.apple.wallpaper.CacheDelete" => 1
+  }
+  "POSIXSpawnType" => "App"
+  "Program" => "/System/Library/CoreServices/WallpaperAgent.app/Contents/MacOS/WallpaperAgent"
+  "RunAtLoad" => 0
+  "ThrottleInterval" => 1
+}
+```
+
+<p>Here, we explore three different plist files and observe that they often contain different information depending on the type of plist file and the program. <br><br>
+
+Since macOS is based on Unix, it also supports cron jobs. However, most persistence mechanisms in macOS use LaunchAgents and LaunchDaemons, and cron jobs are rarely used.</p>
+
+<h3>Saved Application State</h3>
+<p>When a system reboots or a user logs in, the applications that are executed often execute in the same state as they were before the reboot. These saved states can be set when the user selects to reopen windows when logging in during a reboot or shutdown event. Therefore, we can consider the existence of these artefacts as evidence that the user used these applications at some point. <br><br>
+
+This information about the state of applications is saved in macOS in the directory ~/Library/Saved Application State/<application>.savedState for legacy applications, and ~/Library/Containers/<application>/Data/Library/Application Support/<application>/Saved Application State/<application>.savedState for sandboxed macOS applications. </p>
+
+<p>Saved Application States</p>
+
+```bash
+Saved Application States
+umair@Umairs-MacBook-Pro ~ % cd Library/Saved\ Application\ State 
+umair@Umairs-MacBook-Pro Saved Application State % ls
+cc.arduino.Arduino.savedState
+cc.arduino.IDE2.savedState
+com.Autodesk.eagle.savedState
+com.amazon.aiv.AIVApp.savedState
+org.filezilla-project.filezilla.savedState
+com.apple.Maps.savedState				
+com.electron.ollama.savedState				
+org.raspberrypi.imagingutility.savedState
+com.apple.Notes.savedState
+com.apple.iCal.savedState
+```
+
+<h3 align="left">Answer the question below</h3>
+
+> 3.1. <em>What arguments does the Microsoft update agent launch with? Format "Argument 1", "Argument 2"</em><br><a id='3.1'></a>
+>> <strong><code>_________</code></strong><br>
+<p></p>
 
