@@ -574,7 +574,24 @@ SELECT
 <p></p>
 
 
+```bash
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/CoreDuet/People# ls
+Feedback  interactionC.db  interactionC.db-shm  interactionC.db-wal
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/CoreDuet/People# cp interactionC.db /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/CoreDuet/People# 
+```
+
 <br>
+
+![image](https://github.com/user-attachments/assets/80c419af-7a77-41d5-a6c5-d44356e71ca0)
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/CoreDuet/People# ls
+Feedback  interactionC.db  interactionC.db-shm  interactionC.db-wal
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/CoreDuet/People# cp interactionC.db /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/CoreDuet/People# 
+```
+
 
 > 5.2. <em>A call was made using FaceTime on 2025-04-26 05:40:04. Was this call answered? Y/N</em><br><a id='5.2'></a>
 >> <strong><code>______</code></strong><br>
