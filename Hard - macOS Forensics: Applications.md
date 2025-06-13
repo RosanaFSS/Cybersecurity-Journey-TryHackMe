@@ -392,6 +392,203 @@ com.apple.iCal.savedState
 <h3 align="left">Answer the question below</h3>
 
 > 3.1. <em>What arguments does the Microsoft update agent launch with? Format "Argument 1", "Argument 2"</em><br><a id='3.1'></a>
->> <strong><code>_________</code></strong><br>
+>> <strong><code>"/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app/Contents/MacOS/Microsoft Update Assistant.app/Contents/MacOS/Microsoft Update Assistant", "--launchByAgent"</code></strong><br>
 <p></p>
 
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Library/LaunchAgents# plistutil -p com.microsoft.update.agent.plist
+{
+  "ProgramArguments": [
+    "/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app/Contents/MacOS/Microsoft Update Assistant.app/Contents/MacOS/Microsoft Update Assistant",
+    "--launchByAgent"
+  ],
+  "StartInterval": 7200,
+  "Label": "com.microsoft.update.agent",
+  "Disabled": false,
+  "RunAtLoad": true,
+  "MachServices": {
+    "com.microsoft.update.xpc": true
+  }
+}
+```
+
+![image](https://github.com/user-attachments/assets/ea9ec25d-5005-477f-bfd6-0e7bd42cfa1d)
+
+
+<br>
+
+<h2> Task 4 . Notifications and Permissions</h2>
+
+<p>[ ... ]</p>
+
+
+<h3 align="left"> Answer the question below</h3>
+
+> 4.1. <em>Which application has Full Disk Access permissions?</em><br><a id='2.1'></a>
+>> <strong><code>com.apple.Terminal</code></strong><br>
+<p></p>
+
+
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm# ls
+Desktop  Documents  Downloads  Library  Movies  Music  Pictures  Public
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm# ls Library/Group\ Containers/group.com.apple.usernoted/db2/db
+'Library/Group Containers/group.com.apple.usernoted/db2/db'
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm#
+```
+
+```bash
+...
+ubuntu@tryhackme:~$ mkdir sql
+...
+ubuntu@tryhackme:~/sql$ mkdir notifications
+ubuntu@tryhackme:~/sql$
+```
+
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm# cp Library/Group\ Containers/group.com.apple.usernoted/db2/db* /home/ubuntu/sql/notifications/
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm# 
+```
+
+![image](https://github.com/user-attachments/assets/27e7f9b4-d669-4448-b78b-07cf8b693e96)
+
+![image](https://github.com/user-attachments/assets/bab244d4-b2cd-4c6f-98d8-bc882d2f5e8f)
+
+
+```bash
+ubuntu@tryhackme:~$ cd ~/APOLLO
+ubuntu@tryhackme:~/APOLLO$ ubuntu@tryhackme:~/APOLLO$ ls
+LICENSE  README.md  apollo.py  modules
+ubuntu@tryhackme:~/APOLLO$ cd modules
+ubuntu@tryhackme:~/APOLLO/modules$ ls
+...
+netusage_zprocess.txt
+notifications_db.txt
+passes23_unique_passes_cards.txt
+...
+ubuntu@tryhackme:~/APOLLO/modules$ cat notifications_db.txt
+# --------------------------------------------------------------------------------
+#       Copyright (c) 2018-2020 Sarah Edwards (Station X Labs, LLC, 
+#       @iamevltwin, mac4n6.com). All rights reserved.
+...
+[Module Metadata]
+AUTHOR=Sarah Edwards/mac4n6.com/@iamevltwin
+MODULE_NOTES=App Notifications (Under /db2/)
+
+[Database Metadata]
+DATABASE=db
+PLATFORM=MACOS
+VERSIONS=10.13,10.14,10.15,10.16
+
+[Query Metadata]
+QUERY_NAME=notifications
+ACTIVITY=Notification
+KEY_TIMESTAMP=DATE DELIVERED
+
+[SQL Query 10.14,10.15,10.16]
+QUERY=
+	SELECT 
+		DATETIME(RECORD.DELIVERED_DATE+978307200,'UNIXEPOCH') AS 'DATE DELIVERED',
+		APP.IDENTIFIER AS 'BUNDLE ID',
+		APP.BADGE AS 'APP BADGE',
+		RECORD.PRESENTED AS 'PRESENTED',
+		RECORD.STYLE AS 'STYLE',
+		RECORD.SNOOZE_FIRE_DATE AS 'SNOOZE FIRE DATE',
+		HEX(RECORD.DATA) AS 'NOTIFICATION DATA (HEX)',
+		HEX(CATEGORIES.CATEGORIES) AS 'CATEGORIES (HEX)',
+		RECORD.REQUEST_DATE AS 'REQUEST DATE',
+		RECORD.REQUEST_LAST_DATE AS 'REQUEST LAST DATE',
+		HEX(RECORD.UUID) AS 'UUID (HEX)',
+		RECORD.REC_ID AS "RECORD TABLE ID"
+	FROM RECORD
+	LEFT JOIN APP ON APP.APP_ID == RECORD.APP_ID
+	LEFT JOIN CATEGORIES ON CATEGORIES.APP_ID == RECORD.APP_ID
+
+[SQL Query 10.13]
+QUERY=
+	SELECT 
+		DATETIME(RECORD.DELIVERED_DATE+978307200,'UNIXEPOCH') AS 'DATE DELIVERED',
+		APP.IDENTIFIER AS 'BUNDLE ID',
+		RECORD.PRESENTED AS 'PRESENTED',
+		RECORD.STYLE AS 'STYLE',
+		RECORD.SNOOZE_FIRE_DATE AS 'SNOOZE FIRE DATE',
+		HEX(RECORD.DATA) AS 'NOTIFICATION DATA (HEX)',
+		RECORD.REQUEST_DATE AS 'REQUEST DATE',
+		RECORD.REQUEST_LAST_DATE AS 'REQUEST LAST DATE',
+		HEX(RECORD.UUID) AS 'UUID (HEX)',
+		RECORD.REC_ID AS "RECORD TABLE ID"
+	FROM RECORD
+ubuntu@tryhackme:~/APOLLO/modules$ 
+```
+
+![image](https://github.com/user-attachments/assets/a32a5141-c667-48ac-984f-68d8e0edcc9c)
+
+![image](https://github.com/user-attachments/assets/ebda6cce-aa89-4fb2-836d-a54625ced339)
+
+![image](https://github.com/user-attachments/assets/54a2a1f7-dc2a-4dd7-939e-a1d73b49221e)
+
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Library/Application Support/com.apple.TCC# cp /home/ubuntu/mac/root/Library/'Application Support'/com.apple.TCC/* /home/ubuntu/sql/
+root@tryhackme:/home/ubuntu/mac/root/Library/Application Support/com.apple.TCC# 
+```
+
+![image](https://github.com/user-attachments/assets/f4d4db64-bd48-4cf0-bedf-554a145c78ce)
+
+![image](https://github.com/user-attachments/assets/fc03f1b5-ff31-4afc-b92e-7e363a7b959b)
+
+![image](https://github.com/user-attachments/assets/eb295206-903d-40ec-bbc2-8c9d5937573b)
+
+
+```bash
+SELECT 
+		DATETIME(LAST_MODIFIED,'UNIXEPOCH') AS "LAST MODIFIED",
+		SERVICE AS 'SERVICE',
+		CLIENT AS 'CLIENT',
+		CASE AUTH_VALUE 
+			WHEN 0 THEN 'NOT ALLOWED'
+			WHEN 2 THEN 'ALLOWED'
+		END AS 'ALLOWED',
+		AUTH_REASON AS 'AUTH REASON',
+		CLIENT_TYPE AS 'CLIENT TYPE',
+		INDIRECT_OBJECT_IDENTIFIER AS 'INDIRECT OBJECT IDENTIFIER'
+	FROM ACCESS
+```
+
+![image](https://github.com/user-attachments/assets/17a084c6-0d7f-409b-97ed-6da9fe02f492)
+
+
+<br>
+
+<h2> Task 5 . Contacts, Calls, and Messages</h2>
+
+<p>[ ... ]</p>
+
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 5.1. <em>What is the email address of the user using this machine?</em><br><a id='5.1'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 5.2. <em>A call was made using FaceTime on 2025-04-26 05:40:04. Was this call answered? Y/N</em><br><a id='5.2'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+<br>
+
+> 5.3. <em>The user received a message on 2025-04-26 05:38:20. This message contained an image as an attachment. What animal is present in that image?</em><br><a id='5.3'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+
+<br>
+
+> 5.4. <em>On what date and time was the previous message read? Format YYYY-MM-DD hh:mm:ss</em><br><a id='5.3'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
