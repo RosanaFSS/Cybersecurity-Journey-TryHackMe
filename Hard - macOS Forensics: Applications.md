@@ -229,17 +229,29 @@ root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# ls
 InstallHistory.plist  db
 root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# cat InstallHistory.plist
 ...
-root@tryhackme:/home/ubuntu/mac/root/Applications/Microsoft Outlook.app/Contents# plistutil -p Info.plist
+root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# plistutil -p InstallHistory.plist
+...
+{
+    "date": 2025-04-26 06:41:43 +0000,
+    "displayName": "Microsoft 365 and Office for Mac",
+    "displayVersion": "",
+    "packageIdentifiers": [
+      "com.microsoft.package.Microsoft_Word.app",
+      "com.microsoft.package.Microsoft_Outlook.app",
+      "com.microsoft.package.Microsoft_AutoUpdate.app",
+      "com.microsoft.pkg.licensing",
+      "com.microsoft.package.DFonts",
+      "com.microsoft.package.Frameworks",
+      "com.microsoft.package.Proofing_Tools"
+    ],
+    "processName": "Installer"
+  }
+]
+root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# 
 ```
 
-![image](https://github.com/user-attachments/assets/f80c2462-53e4-4d0e-9220-cd094ee68778)
+![image](https://github.com/user-attachments/assets/986ebc8b-4e54-4b0a-9aa0-c8cb95ae6469)
 
-
-![image](https://github.com/user-attachments/assets/17e548e1-485a-41c5-a10d-49a77e17a4cc)
-
-![image](https://github.com/user-attachments/assets/2db63c0f-dd8a-4e96-850b-29a321fa4900)
-
-![image](https://github.com/user-attachments/assets/b2f664d9-62b4-4353-b209-b2b782d6fd15)
 
 <br>
 
