@@ -1305,6 +1305,8 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/17/2# cp IMG_3050.jpeg /home/ubuntu/IMG_3050.jpeg
 ```
 
+![image](https://github.com/user-attachments/assets/3a446e0d-b251-414c-8ada-5961a4f1a0ef)
+
 <br>
 
 > 6.6. <em>The user has saved a reminder that has not been completed yet. What is the due date of this reminder? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='6.6'></a>
@@ -1355,8 +1357,6 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7
 	name=Report-updated.rtf
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# 
 ```
-
-![image](https://github.com/user-attachments/assets/3a446e0d-b251-414c-8ada-5961a4f1a0ef)
 
 
 ```bash
