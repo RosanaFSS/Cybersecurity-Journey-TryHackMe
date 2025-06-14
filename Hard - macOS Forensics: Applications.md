@@ -1309,16 +1309,32 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7
 
 <br>
 
-> 6.6. <em>The user has saved a reminder that has not been completed yet. What is the due date of this reminder? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='6.6'></a>
->> <strong><code>______</code></strong><br>
+> 6.6. <em>The user has saved a reminder that has not been completed yet. What is the due date of this reminder? Format in GMT YYYY-MM-DD hh:mm:ss</em> Hint : <em>Check the columns in the database to find the one reminder not completed. Convert time from Mac Epoch to human readable as discussed previously.</em><br><a id='6.6'></a>
+>> <strong><code>2025-04-26 21:00:00</code></strong><br>
 <p></p>
 
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores# ls
+Data-2FBE6ADB-3265-4593-A7AD-037852BE690E.sqlite      Data-A49B540B-861A-43FD-AADF-E33510CDEA4E.sqlite      Data-D3B1D04C-086F-41BF-9D99-5DDE225D0B6D.sqlite      Data-local.sqlite
+Data-2FBE6ADB-3265-4593-A7AD-037852BE690E.sqlite-shm  Data-A49B540B-861A-43FD-AADF-E33510CDEA4E.sqlite-shm  Data-D3B1D04C-086F-41BF-9D99-5DDE225D0B6D.sqlite-shm  Data-local.sqlite-shm
+Data-2FBE6ADB-3265-4593-A7AD-037852BE690E.sqlite-wal  Data-A49B540B-861A-43FD-AADF-E33510CDEA4E.sqlite-wal  Data-D3B1D04C-086F-41BF-9D99-5DDE225D0B6D.sqlite-wal  Data-local.sqlite-wal
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores# cp Data-2FBE6ADB-3265-4593-A7AD-037852BE690E.sqlite* /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores# cp Data-A49B540B-861A-43FD-AADF-E33510CDEA4E.sqlite* /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores# cp Data-D3B1D04C-086F-41BF-9D99-5DDE225D0B6D.sqlite* /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores# cp Data-local.sqlite* /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores# 
+```
 
+![image](https://github.com/user-attachments/assets/4573946c-e075-4843-87d7-a07760c29a34)
+
+<p>767394000</p>
+
+![image](https://github.com/user-attachments/assets/2f9bf10d-ec13-4aa6-8bba-8dfa86d37eb9)
 
 <br>
 
-> 6.7. <em>What is the complete path of the last file opened using Microsoft Word?ss</em><br><a id='6.7'></a>
->> <strong><code>______</code></strong><br>
+> 6.7. <em>What is the complete path of the last file opened using Microsoft Word?</em><br><a id='6.7'></a>
+>> <strong><code>/Users/umair-thm/Downloads/Report-final-updated.pdf</code></strong><br>
 <p></p>
 
 ```bash
@@ -1334,6 +1350,8 @@ Report1.doc
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/5# ls
 Report-updated.rtf
 ```
+
+![image](https://github.com/user-attachments/assets/7ebe7f5e-e6b9-4e51-abc0-7647bba1e3e0)
 
 
 <br>
