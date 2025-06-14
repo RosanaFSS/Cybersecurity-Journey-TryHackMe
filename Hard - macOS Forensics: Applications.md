@@ -1387,30 +1387,3 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/gr
 
 
 ![image](https://github.com/user-attachments/assets/5dd60eef-a2dd-4a81-90cc-cf681f6b64e4)
-
-
-```bash
-ubuntu@tryhackme:~/mac_apt$ python3 mac_apt.py -o /home/ubuntu/sql/ -c DD /home/ubuntu/mac-disk.img NOTES
-Output path was : /home/ubuntu/sql
-MAIN-INFO-Started macOS Artifact Parsing Tool, version 1.12.0.dev (20250110)
-MAIN-INFO-Dates and times are in UTC unless the specific artifact being parsed saves it as local time!
-MAIN-INFO-Python version = 3.12.3 (main, Sep 11 2024, 14:17:37) [GCC 13.2.0]
-MAIN-INFO-Pytsk  version = 20221228
-MAIN-INFO-Pyewf  version = 20240506
-...
-AIN-INFO-Running plugin NOTES
-MAIN.NOTES-INFO-Processing notes for user 'umair-thm' from file /Users/umair-thm/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV7.storedata
-MAIN.NOTES-INFO-Processing notes for user 'umair-thm' from file /Users/umair-thm/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite
-MAIN.NOTES-INFO-2 note(s) found
-MAIN-INFO---------------------------------------------------
-MAIN-INFO-Finished in time = 00:02:06
-MAIN-INFO-Review the Log file and report any ERRORs or EXCEPTIONS to the developers
-ubuntu@tryhackme:~/mac_apt$ 
-```
-
-
-![image](https://github.com/user-attachments/assets/e7cf9693-96a3-4068-b798-c661dc3d6ef9)
-
-```bash
-```
-
