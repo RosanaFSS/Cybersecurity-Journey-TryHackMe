@@ -99,22 +99,96 @@ Below are a few tips on how different lateral movement techniques can be identif
 <p>Volatility Terminal</p>
 
 ```bash
-umair@Umairs-MacBook-Pro LaunchAgents % pwd   
-/Users/umair/Library/LaunchAgents
-umair@Umairs-MacBook-Pro LaunchAgents % plutil -p net.tunnelblick.tunnelblick.LaunchAtLogin.plist 
-{
-  "ExitTimeOut" => 0
-  "Label" => "net.tunnelblick.tunnelblick.LaunchAtLogin"
-  "LimitLoadToSessionType" => "Aqua"
-  "ProcessType" => "Interactive"
-  "ProgramArguments" => [
-    0 => "/Applications/Tunnelblick.app/Contents/Resources/Tunnelblick-LaunchAtLogin"
-  ]
-  "RunAtLoad" => 1
-}
+analyst@tryhackme$ vol -f ransomhub.dmp windows.pstree
+PID     PPID    ImageFileName
+4       0       System
+* 272   4       smss.exe
+* 384     376     csrss.exe
+* 460     376       wininit.exe
+* 600     460         services.exe
+** 3772   600           psexesvc.exe
+*** 3916  3772            512370d.exe
 ```
 
+<h3>Detecting Lateral Movement via WMI Execution</h3>
 
+<p>Volatility Terminal</p>
+
+```bash
+analyst@tryhackme$ vol -f conti.dmp windows.pstree
+PID     PPID    ImageFileName
+4       0       System
+* 272   4       smss.exe
+* 384     376     csrss.exe
+* 460     376       wininit.exe
+* 600     460         services.exe
+** 1244   600           svchost.exe
+*** 2416  1244            wmiprvse.exe
+**** 5156 2416             cobaltrs.exe
+```
+
+<h3>Detecting Lateral Movement via PowerShell Remote</h3>
+
+<p>Volatility Terminal</p>
+
+```bash
+analyst@tryhackme$ vol -f FIN12.dmp windows.pstree
+PID     PPID    ImageFileName
+4       0       System
+* 272   4       smss.exe
+* 384     376     csrss.exe
+* 460     376       wininit.exe
+* 600     460         services.exe
+** 1280   600           svchost.exe
+*** 2532  1280            wsmprovhost.exe
+**** 4896 2532              cmd.exe
+***** 5012 4896               conhost.exe
+***** 5144 4896               trickbot.exe
+```
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 3.1. <em>The IR team suspects that the threat actor may have performed lateral movement to this host. Which executed process provides evidence of this activity?</em><br><a id='3.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.2. <em>What is the MITRE technique ID associated with the lateral movement method used by the threat actor?</em><br><a id='3.2'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.3. <em>Which other process was executed as part of the lateral movement activity to this host?</em><br><a id='3.3'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.4. <em>What is the Security Identifier (SID) of the user account under which the process was executed on this host?</em><br><a id='3.4'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.5. <em>What is the name of the domain-related security group the user account was a member of?</em><br><a id='3.5'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.6. <em>Which processes related to discovery activity were executed by the threat actor on this host? Format: In alphabetical order</em><br><a id='3.6'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+
+> 3.7. <em>What is the Command and Control IP address that the threat actor connected to from this host as a result of the previously executed actions? Format: IP Address:Port</em><br><a id='3.7'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
 
 <h2> Task 4 . Privilege Ecalation and Credential Dumping</h2>
 
