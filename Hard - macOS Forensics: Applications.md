@@ -1338,45 +1338,82 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/gr
 <p></p>
 
 ```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/2# ls
-Report-final-updated.pdf
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/3# ls
-Report-final.docx
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/4# ls
-Report1.doc
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/5# ls
-Report-updated.rtf
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Containers/com.microsoft.Word/Data/Library/Preferences# plistutil -p com.microsoft.Word.securebookmarks.plist
 ```
 
-![image](https://github.com/user-attachments/assets/7ebe7f5e-e6b9-4e51-abc0-7647bba1e3e0)
-
+![image](https://github.com/user-attachments/assets/4b5632ff-2579-4d73-b6d6-1cf69c8aaa43)
 
 <br>
 
+<h2>Task 7 . Browsing History, Downloads, and Bookmarks</h2>
+
+<p>[ ... ]</p>
+
+<h3 align="left"> Answer the question below</h3>
+
+> 7.1. <em>The user seems to be a fan of TryHackMe. What is the URL of the THM room the user visited using Safari?</em><br><a id='7.1'></a>
+>> <strong><code>https://tryhackme.com/room/macosforensicsartefacts</code></strong><br>
+<p></p>
+
+
 ```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/17/2#
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 10.partial.emlx | grep name
-<!DOCTYPE html><html lang=3D"en"><head><meta name=3D"format-detection" cont=
-ent=3D"email=3Dno"/><meta name=3D"format-detection" content=3D"date=3Dno"/>=
-"name" content=3D"Review Activity"/></div></div><table border=3D"0" cellspa=
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 22.partial.emlx | grep name
-	filename=Report-final-updated.pdf
-	name=Report-final-updated.pdf
-	filename=Report-final.docx
-	name=Report-final.docx
-	filename=Report1.doc
-	name=Report1.doc
-	filename=Report-updated.rtf
-	name=Report-updated.rtf
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# 
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Safari# ls
+ AutoFillCorrections.db           CloudAutoFillCorrections.db-shm        'Favicon Cache'                     LocalStorage                           RecentlyClosedTabs.plist
+ AutoFillCorrections.db-shm       CloudAutoFillCorrections.db-wal         History.db                        'Metadata Cache'                        SitesAllowedToAutoplay.plist
+ AutoFillCorrections.db-wal       CloudBookmarksMigrationCoordinator      History.db-lock                    OfflineSearchRemoteDisablement.plist  'Template Icons'
+ AutomaticBookmarksBackup.html    CloudHistoryRemoteConfiguration.plist   History.db-shm                     PasswordBreachStore.plist              TopSites.plist
+ BlockedBannerHighlights.db       ContentBlockerStatistics.db             History.db-wal                     PerSitePreferences.db                 'Touch Icons Cache'
+ BlockedBannerHighlights.db-wal   ContentBlockerStatistics.db-wal         IgnoredSiriSuggestedSites.db       PerSitePreferences.db-shm              UserDefinedContentBlockers.db
+ Bookmarks.plist                  Databases                               IgnoredSiriSuggestedSites.db-shm   PerSitePreferences.db-wal              UserDefinedContentBlockers.db-shm
+ CloudAutoFillCorrections.db      Downloads.plist                         IgnoredSiriSuggestedSites.db-wal   PerSiteZoomPreferences.plist           UserDefinedContentBlockers.db-wal
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Safari# cp History.db /home/ubuntu/sql
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Safari#
 ```
 
-![image](https://github.com/user-attachments/assets/352b2b57-9abb-4211-9d2f-229dbcc53767)
+![image](https://github.com/user-attachments/assets/6764a3b2-f492-4afe-bae0-e0f3f630f1c3)
+
+
+```bash
+SELECT
+		DATETIME(HISTORY_VISITS.VISIT_TIME+978307200,'UNIXEPOCH') AS "VISIT TIME",
+		HISTORY_ITEMS.URL AS "URL",
+		HISTORY_ITEMS.VISIT_COUNT AS "VISIT COUNT",
+		HISTORY_VISITS.TITLE AS "TITLE",
+		CASE HISTORY_VISITS.ORIGIN
+			WHEN 1 THEN "ICLOUD SYNCED DEVICE"
+			WHEN 0 THEN "VISITED FROM THIS DEVICE"
+			ELSE HISTORY_VISITS.ORIGIN
+		END "ICLOUD SYNC",
+		HISTORY_VISITS.LOAD_SUCCESSFUL AS "LOAD SUCCESSFUL",
+		HISTORY_VISITS.id AS "VISIT ID",
+		HISTORY_VISITS.REDIRECT_SOURCE AS "REDIRECT SOURCE",
+		HISTORY_VISITS.REDIRECT_DESTINATION AS "REDIRECT DESTINATION",
+		HISTORY_VISITS.ID AS "HISTORY ITEM ID"
+	FROM HISTORY_ITEMS
+	LEFT OUTER JOIN HISTORY_VISITS ON HISTORY_ITEMS.ID == HISTORY_VISITS.HISTORY_ITEM
+```
+
+
+![image](https://github.com/user-attachments/assets/46d85b9b-ac35-4684-b33e-3e43fe55b8d1)
+
+![image](https://github.com/user-attachments/assets/27894aa9-8652-4b96-967a-8b491e65e8fa)
+
+<br>
+
+<h2>Task 8 . Photos and Apple Pay</h2>
+
+<p>[ ... ]
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 8.1. <em>When using APOLLO queries to parse passes, to what should we change the field PAYMENT_TRANSACTION.PASS_PID on newer macOS versions?</em><br><a id='8.1'></a>
+>> <strong><code>PAYMENT_TRANSACTION.PID</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/b210e64e-77d2-44c8-a7ff-759a90fa7f5d)
+
+
+![image](https://github.com/user-attachments/assets/ab113cc5-1b8b-4cb8-a88c-572defc3277c)
 
 
 
