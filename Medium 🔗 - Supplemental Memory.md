@@ -25,9 +25,9 @@ This room is designed for DFIR team members, Threat Hunters, and SOC L2/L3 analy
 
 <p>It is suggested to clear the following rooms first before proceeding:<br>
 
-- Windows Memory & Processes<br>
-- Windows Memory & User Activity<br>
-- Windows Memory & Network</p>
+- <a href="https://tryhackme.com/room/windowsmemoryandprocs/">Windows Memory & Processes</a><br>
+- <a href="https://tryhackme.com/room/windowsmemoryanduseractivity">Windows Memory & User Activity</a><br>
+- <a href="https://tryhackme.com/room/windowsmemoryandnetwork">Windows Memory & Network</a></p>
 
 <h3 align="left"> Answer the question below</h3>
 
