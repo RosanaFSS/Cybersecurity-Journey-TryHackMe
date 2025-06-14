@@ -47,6 +47,115 @@ In the coming tasks, we will demonstrate the artefacts on a live Mac machine and
 ![image](https://github.com/user-attachments/assets/b6c07b96-e740-4d05-886f-fdaa24942193)
 
 
+<p>Volume 4</p>
+
+```bash
+ubuntu@tryhackme:~$ apfsutil mac-disk.img
+Found partitions:
+69646961-6700-11AA-11AA-00306543ECAC B4782C91-2F42-4887-9AAB-F1D600786E1F 0000000000000028 00000000000FA027 0000000000000000 iBootSystemContainer
+7C3457EF-0000-11AA-11AA-00306543ECAC 2F091A53-8341-4774-D38F-9EF3A47DF781 00000000000FA028 0000000005000027 0000000000000000 Container
+52637672-7900-11AA-11AA-00306543ECAC 8B484BA1-3C0A-4EFF-F5BA-FB27DA5681E2 0000000005000028 00000000059FFFD7 0000000000000000 RecoveryOSContainer
+First APFS partition is 1
+
+Volume 0 4A63C141-38C0-42DD-B1EB-7DAC6CD3AAD6
+---------------------------------------------
+Role:               System
+Name:               Macintosh HD (Case-insensitive)
+Capacity Consumed:  11244146688 Bytes
+FileVault:          No
+Snapshots:
+    35 : 'com.apple.os.update-83920663FCCF8FEE21340F708B980423F7822AE195EAD15998C70BD0F7B8AF23'
+
+Volume 1 7FE047CD-AF2F-4E4B-A96A-39A3E4A3ED52
+---------------------------------------------
+Role:               Preboot
+Name:               Preboot (Case-insensitive)
+Capacity Consumed:  6065201152 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 2 7E8AC68F-1100-438C-A154-2F1AB49F2C12
+---------------------------------------------
+Role:               Recovery
+Name:               Recovery (Case-insensitive)
+Capacity Consumed:  1003020288 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 3 66A495E5-2A2F-45DF-9A4B-8E8E7746464B
+---------------------------------------------
+Role:               Update
+Name:               Update (Case-insensitive)
+Capacity Consumed:  233472 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 4 1975111D-300A-4FDF-9BE1-7ECBA3E3189D
+---------------------------------------------
+Role:               Data
+Name:               Data (Case-insensitive)
+Capacity Consumed:  9581592576 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 5 D604C892-E4F4-481F-B1F0-87B5A40B02D1
+---------------------------------------------
+Role:               VM
+Name:               VM (Case-insensitive)
+Capacity Consumed:  20480 Bytes
+FileVault:          No
+Snapshots:
+```
+
+
+```bash
+ubuntu@tryhackme:~$ sudo su
+root@tryhackme:/home/ubuntu# apfs-fuse
+apfs-fuse [options] <device> <dir>
+
+Options:
+-d level      : Enable debug output in the console.
+-f device     : Specify secondary device for fusion drives.
+-o options    : Additional mount options (see below).
+-v volume-id  : Specify number of volume to be mounted.
+-r passphrase : Specify volume passphrase. The driver will ask for it if it is
+                needed and hasn't been specified here.
+-s offset     : Specify offset to the beginning of the container.
+-p partition  : Specify partition id containing the container.
+-l            : Allow driver to return potentially corrupt data instead of
+                failing, if it can't handle something.
+
+Additional mount options (using -o):
+uid=N         : Pretend that all files have UID N.
+gid=N         : Pretend that all files have GID N.
+vol=N         : Same as -v, select volume id to mount.
+blksize=N     : Set physical block size. Only needed if a partition table needs
+                to be parsed and the sector size is not 512 bytes.
+pass=...      : Specify volume passphrase (same as -r).
+xid=N         : Mount specific xid.
+snap=N        : Mount snapshot with given id. Use apfsutil for getting the ids.
+
+root@tryhackme:/home/ubuntu# 
+```
+
+```bash
+root@tryhackme:/home/ubuntu# apfs-fuse -v 4 mac-disk.img mac
+root@tryhackme:/home/ubuntu# ls
+APOLLO   Documents  Music     Public     Videos     bomutils  mac-disk.img  macimg
+Desktop  Downloads  Pictures  Templates  apfs-fuse  mac       mac_apt       snap
+root@tryhackme:/home/ubuntu# cd mac
+root@tryhackme:/home/ubuntu/mac# ls
+private-dir  root
+...
+root@tryhackme:/home/ubuntu/mac_apt# ls
+AUTHORS.md   Libraries_For_Windows  extract_apfs_fs.py        mac_apt_mounted_sys_data.py  plugins
+CHANGES.txt  Licenses               ios_apt.py                macos_installer              requirements.txt
+Dockerfile   README.md              mac_apt.py                other_dependencies           version.py
+LICENSE.txt  __pycache__            mac_apt_artifact_only.py  plugin.py
+root@tryhackme:/home/ubuntu/mac_apt# 
+```
+
+
 <br>
 
 <h2> Task 2 . Common Application Information</h2>
