@@ -1372,18 +1372,5 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/gr
 
 ![image](https://github.com/user-attachments/assets/352b2b57-9abb-4211-9d2f-229dbcc53767)
 
-<p>https://www.epochconverter.com/coredata</p>
 
 
-<p>2025-04-27 11:00:00</p>
-
-![image](https://github.com/user-attachments/assets/bc0c8834-7e8e-427e-bd9b-e02404b8e719)
-
-![image](https://github.com/user-attachments/assets/1e03d899-06f1-44e6-af74-47fbc3c54232)
-
-
-
-![image](https://github.com/user-attachments/assets/134d214c-0ef1-41f1-8a8d-6204fd456570)
-
-
-![image](https://github.com/user-attachments/assets/5dd60eef-a2dd-4a81-90cc-cf681f6b64e4)
