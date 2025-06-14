@@ -1358,18 +1358,6 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# 
 ```
 
-
-```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.calendar# cp Calendar.sqlitedb /home/ubuntu/sql/Calendar.sqlitedb
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.calendar# 
-```
-
-![image](https://github.com/user-attachments/assets/f6a6e680-f3ca-42f2-bfa1-ecf61e6d53c9)
-
-
-![image](https://github.com/user-attachments/assets/45c04135-9efa-4131-ac72-5cc8a391aa56)
-
-
 ![image](https://github.com/user-attachments/assets/352b2b57-9abb-4211-9d2f-229dbcc53767)
 
 
