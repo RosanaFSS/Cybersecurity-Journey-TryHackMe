@@ -1,11 +1,11 @@
 <h1 align="center">DFIR, Digital Forensics and Incident Response<br>macOS Forensics<br><img width="660px" src="https://github.com/user-attachments/assets/5e7f8c2d-53bf-43b7-81af-08b943f5b2b0"><br>macOS Forensics: Applications</h1>
 
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/a2c9e9c5-8d86-4447-8d3b-0a395b457c20"><br>
-June 11, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+June 14, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
-part of my <code>401</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+part of my <code>404</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Learn about macOS forensic artefacts related to different applications. Access it <a href="https://tryhackme.com/room/macosforensicsapplications"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/c05c5979-05d8-4644-9a2f-8d9025672fbe"></p>
 
 <h2> Task 1 . Introduction</h2>
 
@@ -1437,3 +1437,34 @@ Do you know of any other artefacts that can be found in a macOS machine? Let us 
 
 <br>
 <br>
+
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/72df4890-1a75-4f3f-b2cf-0356b51d4bbc"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/9486aff2-0b5e-43da-a961-63254f65a812"></p>
+
+<h1 align="center"> My TryHackMe Journey</h1>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 14 2025      | 404      |     203ʳᵈ    |      4ᵗʰ     |     450ᵗʰ   |     8ᵗʰ    |  107,665 |    777    |     62    |
+
+</div>
+
+<p align="center"> Global All Time:  203ʳᵈ<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/b5f40ba3-ab25-4b57-a798-9df6f95c8d5"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/d606c3cc-5af5-4d55-9953-6c31245a51f5"></p>
+<p align="center"> Brazil All Time:     4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5458a0d4-1895-45e5-8717-a4fcf6004e39"> </p>
+<p align="center"> Global monthly:    450ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/07c12d0f-f38a-40c5-8bab-4a0195a5cff4"> </p
+<p align="center"> Brazil monthly:       8ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/8be1eb6c-2b1e-4dcb-b486-bd592b72d55b"> </p>
+
+<h1 align="center">Thanks for coming!!!</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<h1 align="center">Thank you</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> and <a href="https://tryhackme.com/p/umairalizafar">umairalizafar</a> for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
