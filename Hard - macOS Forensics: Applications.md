@@ -1415,5 +1415,25 @@ SELECT
 
 ![image](https://github.com/user-attachments/assets/ab113cc5-1b8b-4cb8-a88c-572defc3277c)
 
+<br>
 
+<h2>Task 9 . COnclusion</h2>
+<p>And that's a wrap! In this room, we learned to trace user activity across multiple applications. In summary, we discovered:<br><br>
 
+- Where applications reside in macOS and how to trace their installation history.<br>
+- What type of persistence mechanisms are present in macOS<br>
+- How do you extract notifications from different applications, and what permissions do the applications have?<br>
+- Contacts and interactions with contacts using calls, messages and FaceTime on a Mac.<br>
+- What kind of artefacts do productivity apps like Notes, Reminders, and Calendars leave on macOS.<br>
+- Sensitive information of a Mac user, such as browsing history, photos, and wallet information.<br><br>
+
+Do you know of any other artefacts that can be found in a macOS machine? Let us know in our Discord channel or X account. See you around.</p>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 9.1. <em>I am confident I can forensicate a Mac now and am ready for a challenge!</em><br><a id='9.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
