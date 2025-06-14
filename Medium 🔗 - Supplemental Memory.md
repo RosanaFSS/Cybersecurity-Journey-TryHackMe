@@ -149,20 +149,36 @@ PID     PPID    ImageFileName
 <h3 align="left"> Answer the questions below</h3>
 
 > 3.1. <em>The IR team suspects that the threat actor may have performed lateral movement to this host. Which executed process provides evidence of this activity?</em><br><a id='3.1'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>wmiprvse.exe</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/34ca2e6e-92d1-4692-941e-5624170e0847)
+
 
 <br>
 
 > 3.2. <em>What is the MITRE technique ID associated with the lateral movement method used by the threat actor?</em><br><a id='3.2'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>t1021.006</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/7de65b12-cd40-49bd-85c2-91d24fff89e1)
+
+![image](https://github.com/user-attachments/assets/be6d698a-df55-49cd-b278-4b89e40ec8cb)
+
+
 
 <br>
 
 > 3.3. <em>Which other process was executed as part of the lateral movement activity to this host?</em><br><a id='3.3'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>TeamsView.exe</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/459a4558-fc48-4a41-ade9-d5ab4f34631a)
+
+![image](https://github.com/user-attachments/assets/adfe70e7-001f-4d06-a3ce-ef3bcbc8c175)
+
+![image](https://github.com/user-attachments/assets/74b859e3-64c3-440a-a251-4eb38f2a5ff8)
+
 
 <br>
 
@@ -179,14 +195,20 @@ PID     PPID    ImageFileName
 <br>
 
 > 3.6. <em>Which processes related to discovery activity were executed by the threat actor on this host? Format: In alphabetical order</em><br><a id='3.6'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>ipconfig.exe,systeminfo.exe,whoami.exe</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/76a812b0-7af8-4ce8-a6fa-6fb919db4568)
 
 <br>
 
 > 3.7. <em>What is the Command and Control IP address that the threat actor connected to from this host as a result of the previously executed actions? Format: IP Address:Port</em><br><a id='3.7'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>34.244.169.133:1995</code></strong><br>
 <p></p>
+
+
+![image](https://github.com/user-attachments/assets/735b6e47-9602-4f66-8058-6bad3a5ae8d2)
+
 
 <br>
 
