@@ -1182,13 +1182,39 @@ SELECT
 <p></p>
 
 
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# ls
+10.partial.emlx  11.partial.emlx  13.emlx  16.emlx  17.partial.emlx  20.emlx  22.partial.emlx  23.partial.emlx  24.emlx
+...
+```
+
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.calendar# cp Calendar.sqlitedb /home/ubuntu/calendar
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.calendar# .
+```
+
+![image](https://github.com/user-attachments/assets/d6dbc2ba-35b2-4630-b137-21d8be691d3e)
+
+<p>CalendarItem</p>
+
+![image](https://github.com/user-attachments/assets/b1bf52ac-9042-451d-9b42-dd90883761c0)
+
+
+
 <br>
 
 > 6.2. <em>What was the timezone of the sender of the email invite? Format: GMT+XX:XX</em><br><a id='6.2'></a>
->> <strong><code>______m</code></strong><br>
+>> <strong><code>GMT+03:00</code></strong><br>
 <p></p>
 
-<br>
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/Trash.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 25.partial.emlx | grep GMT
+Subject: Invitation: Discussion @ Sun Apr 27, 2025 2pm - 3pm (GMT+3) (thmguy535@gmail.com)
+```
+
+![image](https://github.com/user-attachments/assets/a4233b1b-8444-4f9c-86a3-c63dcfda7c11)
+
 
 > 6.3. <em>The user's calendar has another entry named "Jungle cruise". When is this event going to start? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='6.3'></a>
 >> <strong><code>2025-04-25 16:00:00</code></strong><br>
@@ -1203,64 +1229,39 @@ SELECT
 <br>
 
 > 6.5. <em>One of the notes has an attachment we already viewed while analysing iMessage. What animal is present in the other attachment?</em><br><a id='6.5'></a>
->> <strong><code>Giraffem</code></strong><br>
+>> <strong><code>Giraffe</code></strong><br>
 <p></p>
 
 <br>
 
 > 6.6. <em>The user has saved a reminder that has not been completed yet. What is the due date of this reminder? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='6.6'></a>
->> <strong><code>______m</code></strong><br>
+>> <strong><code>______</code></strong><br>
 <p></p>
+
+
 
 <br>
 
-> 6.7. <emWhat is the complete path of the last file opened using Microsoft Word?ss</em><br><a id='6.7'></a>
->> <strong><code>______m</code></strong><br>
+> 6.7. <em>What is the complete path of the last file opened using Microsoft Word?ss</em><br><a id='6.7'></a>
+>> <strong><code>______</code></strong><br>
 <p></p>
 
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/2# ls
+Report-final-updated.pdf
+...
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/3# ls
+Report-final.docx
+...
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/4# ls
+Report1.doc
+...
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/22/5# ls
+Report-updated.rtf
+```
+
+
 <br>
-
-```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox# plistutil -p Info.plist
-{
-  "MailboxID": "FD71CF77-45C4-4F6D-AAC1-328F7367E0A9",
-  "MailboxName": "[Gmail]"
-}
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox# 
-```
-
-![image](https://github.com/user-attachments/assets/29f39773-d9a2-4434-a21f-389887587d0a)
-
-```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/INBOX.mbox# ls
-Info.plist
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/INBOX.mbox# plistutil -p Info.plist
-{
-  "CategoriesEnabled": "YES",
-  "DisplayInThreadedMode": "YES",
-  "FilterEnabled": "NO",
-  "FocusEnabled": "YES",
-  "IMAPMailboxUnseenCount": 0,
-  "MailboxID": "F632D580-AC91-41FF-9DFF-5AA6E1CF0F94",
-  "MailboxName": "INBOX",
-  "MailboxViewingState": {
-    "ScrollPositionType": 0,
-    "ThreadIdentifiers": [
-      12
-    ]
-  },
-  "ReadLaterEnabled": "NO",
-  "SelectedBucket": 1,
-  "SelectedFilters": [
-    {
-      "FilterIdentifier": "Unread"
-    }
-  ],
-  "SortOrder": "received-date",
-  "SortedDescending": "YES"
-}
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/INBOX.mbox
-```
 
 ```bash
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox# ls
