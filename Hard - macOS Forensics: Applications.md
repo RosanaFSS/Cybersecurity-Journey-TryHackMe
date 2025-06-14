@@ -991,7 +991,7 @@ SELECT
 ```bash
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Application Support/CallHistoryDB# ls
 CallHistory.storedata  CallHistory.storedata-shm  CallHistory.storedata-wal  com.apple.callhistory.databaseInfo.plist
-oot@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Application Support/CallHistoryDB# cp CallHistory.storedata /home/ubuntu/sql/CallHistory.storedata
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Application Support/CallHistoryDB# cp CallHistory.storedata /home/ubuntu/sql/CallHistory.storedata
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Application Support/CallHistoryDB# 
 ```
 
@@ -1183,13 +1183,6 @@ SELECT
 
 
 ```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# ls
-10.partial.emlx  11.partial.emlx  13.emlx  16.emlx  17.partial.emlx  20.emlx  22.partial.emlx  23.partial.emlx  24.emlx
-...
-```
-
-
-```bash
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.calendar# cp Calendar.sqlitedb /home/ubuntu/calendar
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/group.com.apple.calendar# .
 ```
@@ -1200,6 +1193,13 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/gr
 
 ![image](https://github.com/user-attachments/assets/b1bf52ac-9042-451d-9b42-dd90883761c0)
 
+<p>com.apple.mail</p>
+
+![image](https://github.com/user-attachments/assets/3e3ce2a4-de4d-4c1f-b606-5d3b1a041c96)
+
+<p>https://www.epochconverter.com/coredata</p>
+
+![image](https://github.com/user-attachments/assets/3eec2d22-ccca-4d51-a595-f3f7b9f4014e)
 
 
 <br>
@@ -1208,6 +1208,13 @@ root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Group Containers/gr
 >> <strong><code>GMT+03:00</code></strong><br>
 <p></p>
 
+<p>Asia/Riyadh</p>
+
+![image](https://github.com/user-attachments/assets/83fa7b2b-c053-4f42-95cd-a18ff2507d7d)
+
+![image](https://github.com/user-attachments/assets/e2de1da8-e958-4e23-bf4e-d358c28b47ea)
+
+
 ```bash
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/Trash.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 25.partial.emlx | grep GMT
 Subject: Invitation: Discussion @ Sun Apr 27, 2025 2pm - 3pm (GMT+3) (thmguy535@gmail.com)
@@ -1215,10 +1222,17 @@ Subject: Invitation: Discussion @ Sun Apr 27, 2025 2pm - 3pm (GMT+3) (thmguy535@
 
 ![image](https://github.com/user-attachments/assets/a4233b1b-8444-4f9c-86a3-c63dcfda7c11)
 
+<br>
 
 > 6.3. <em>The user's calendar has another entry named "Jungle cruise". When is this event going to start? Format in GMT YYYY-MM-DD hh:mm:ss</em><br><a id='6.3'></a>
 >> <strong><code>2025-04-25 16:00:00</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/aedf506b-1e15-4bbb-a800-504183d7d0fb)
+
+<p>https://www.epochconverter.com/coredata</p>
+
+![image](https://github.com/user-attachments/assets/7dfa2b32-8f35-42a8-a01a-ecb037862698)
 
 <br>
 
@@ -1226,11 +1240,70 @@ Subject: Invitation: Discussion @ Sun Apr 27, 2025 2pm - 3pm (GMT+3) (thmguy535@
 >> <strong><code>Aquickbrownfoxjumpedoverthelazydog</code></strong><br>
 <p></p>
 
+![image](https://github.com/user-attachments/assets/ca2f7744-191e-4d15-a379-d54e6a76ea9e)
+
+```bash
+ubuntu@tryhackme:~/mac_apt$ python3 mac_apt.py -o /home/ubuntu/notes -c DD /home/ubuntu/mac-disk.img notes
+Output path was : /home/ubuntu/notes
+MAIN-INFO-Started macOS Artifact Parsing Tool, version 1.12.0.dev (20250110)
+MAIN-INFO-Dates and times are in UTC unless the specific artifact being parsed saves it as local time!
+MAIN-INFO-Python version = 3.12.3 (main, Sep 11 2024, 14:17:37) [GCC 13.2.0]
+MAIN-INFO-Pytsk  version = 20221228
+MAIN-INFO-Pyewf  version = 20240506
+MAIN-INFO-Pyvmdk version = 20240510
+MAIN-INFO-PyAFF4 version = 0.31
+MAIN-INFO-Plugins to run: NOTES
+MAIN-INFO-Plugins not to run: 
+MAIN-INFO-Opened image /home/ubuntu/mac-disk.img
+MAIN-INFO-Looking at FS with volume label 'iBootSystemContainer'  @ offset 20480
+MAIN-INFO-Looking at FS with volume label 'Container'  @ offset 524308480
+MAIN-INFO-Found an APFS container with uuid: 6274F385-52F7-4FF3-98FF-4E2EF18E3826
+MAIN-INFO-Reading APFS volumes from container, this may take a few minutes ...
+MAIN.HELPERS.APFS_READER-INFO-Vol_2_Preboot Type=inode  Count=138
+MAIN.HELPERS.APFS_READER-INFO-Vol_2_Preboot Type=xattr  Count=18
+MAIN.HELPERS.APFS_READER-INFO-Vol_2_Preboot Type=dstream_id  Count=66
+MAIN.HELPERS.APFS_READER-INFO-Vol_2_Preboot Type=file_extent  Count=84
+...
+MAIN-INFO---------------------------------------------------
+MAIN-INFO-Running plugin NOTES
+MAIN.NOTES-INFO-Processing notes for user 'umair-thm' from file /Users/umair-thm/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV7.storedata
+MAIN.NOTES-INFO-Processing notes for user 'umair-thm' from file /Users/umair-thm/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite
+MAIN.NOTES-INFO-2 note(s) found
+MAIN-INFO---------------------------------------------------
+MAIN-INFO-Finished in time = 00:02:22
+MAIN-INFO-Review the Log file and report any ERRORs or EXCEPTIONS to the developers
+ubuntu@tryhackme:~/mac_apt$ 
+```
+
+![image](https://github.com/user-attachments/assets/ac0d3762-4132-4e0e-8a69-f21e1ef5f2b3)
+
+![image](https://github.com/user-attachments/assets/03a61fc8-2ed5-4122-9ced-43e35e85b474)
+
+![image](https://github.com/user-attachments/assets/173ab0cc-24c1-43f1-87b1-38b06be33d9e)
+
 <br>
 
 > 6.5. <em>One of the notes has an attachment we already viewed while analysing iMessage. What animal is present in the other attachment?</em><br><a id='6.5'></a>
 >> <strong><code>Giraffe</code></strong><br>
 <p></p>
+
+
+![image](https://github.com/user-attachments/assets/13f47979-6a51-44b3-993d-fe87996d84bb)
+
+
+```bash
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 16.emlx | grep name
+	filename=IMG_0027.jpeg
+	name="IMG_0027.jpeg"
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# 
+
+...
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 17.partial.emlx | grep name
+	filename=IMG_3050.jpeg
+	name=IMG_3050.jpeg
+...
+root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/17/2# cp IMG_3050.jpeg /home/ubuntu/IMG_3050.jpeg
+```
 
 <br>
 
@@ -1264,34 +1337,6 @@ Report-updated.rtf
 <br>
 
 ```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox# ls
-708E1A15-F24E-40B5-8A69-FFD9A89FF251  Info.plist
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox# plistutil -p Info.plist
-{
-  "IMAPMailboxUnseenCount": 0,
-  "MailboxID": "A857F3FA-85BC-4BA7-8550-41864D236370",
-  "MailboxIsFirstTimeSync": "NO",
-  "MailboxLastSyncDate": 2025-04-26 08:06:38 +0000,
-  "MailboxName": "All Mail",
-  "SupportsCustomFlags": "YES",
-  "UIDNEXT": "16",
-  "UIDVALIDITY": "12"
-}
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 16.emlx | grep name
-	filename=IMG_0027.jpeg
-	name="IMG_0027.jpeg"
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# 
-
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 17.partial.emlx | grep name
-	filename=IMG_3050.jpeg
-	name=IMG_3050.jpeg
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages#
-...
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/17/2# ls
-IMG_3050.jpeg
-root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/17/2# cp IMG_3050.jpeg /home/ubuntu/IMG_3050.jpeg
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Attachments/17/2#
 ...
 root@tryhackme:/home/ubuntu/mac/root/Users/umair-thm/Library/Mail/V10/DEC2D507-7869-4151-98C3-E2F920A935CF/[Gmail].mbox/All Mail.mbox/708E1A15-F24E-40B5-8A69-FFD9A89FF251/Data/Messages# cat 10.partial.emlx | grep name
