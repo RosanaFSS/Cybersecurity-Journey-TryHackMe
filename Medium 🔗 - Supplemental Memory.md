@@ -183,13 +183,16 @@ PID     PPID    ImageFileName
 <br>
 
 > 3.4. <em>What is the Security Identifier (SID) of the user account under which the process was executed on this host?</em><br><a id='3.4'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>S-1-5-21-3147497877-3647478928-1701467185-1008</code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/dcbd996c-8c35-4e06-b3b3-83526aebb6c4)
+
 
 <br>
 
 > 3.5. <em>What is the name of the domain-related security group the user account was a member of?</em><br><a id='3.5'></a>
->> <strong><code>No answer needed</code></strong><br>
+>> <strong><code>Domain Users</code></strong><br>
 <p></p>
 
 <br>
