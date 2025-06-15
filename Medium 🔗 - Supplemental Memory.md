@@ -218,6 +218,55 @@ PID     PPID    ImageFileName
 <h2> Task 4 . Privilege Ecalation and Credential Dumping</h2>
 
 
+> 4.1. <em>Conduct a deeper investigation and identify another suspicious process on the host. Provide a full path to the process in your answer.</em><br><a id='4.1'></a>
+>> <strong><code>C:\Windows\Temp\pan.exe</code></strong><br>
+<p></p>
+
+
+![image](https://github.com/user-attachments/assets/bb068cd0-6ac6-49f0-ab8a-0d976189bf68)
+
+<br>
+
+> 4.2. <em>Which account was used to execute this malicious process?</em><br><a id='4.2'></a>
+>> <strong><code>Local System</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/e490c87d-6af0-4a38-a757-cd6611b2ded9)
+
+<br>
+
+> 4.3. <em>What was the malicious command line executed by the process?</em><br><a id='4.3'></a>
+>> <strong><code>privilege::debug sekurlsa::logonpasswords</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/2cb7863c-95c4-41df-b8ba-06a356ef77cc)
+
+<br>
+
+> 4.4. <em>Given the command line from the previous question, which well-known hacker tool is most likely the malicious process?</em><br><a id='4.4'></a>
+>> <strong><code>Mimikatz</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/422324c2-3692-4e2c-be85-b5192724c867)
+
+<br>
+
+> 4.5. <em>Which MITRE ATT&CK technique ID corresponds to the method the attacker employed to evade detection, as identified in the previous steps?</em><br><a id='4.5'></a>
+>> <strong><code>Mimikatz</code></strong><br>
+<p></p>
+
+
+![image](https://github.com/user-attachments/assets/cb76cc0e-5c24-4a11-aeb4-74717ce22c52)
+
+![image](https://github.com/user-attachments/assets/b2fd10be-aa82-4276-8180-1b5ade591890)
+
+T1003.001
+
+dwm.exe 1304
+pan.exe 4840
+cmd.exe 6268
+
+
 <h2> Task 5 . Conclusion</h2>
 
 
