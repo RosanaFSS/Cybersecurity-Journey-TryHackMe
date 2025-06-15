@@ -77,3 +77,7 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 
 
 
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/db191cb0-416a-4c64-9bf2-e70959b8e4d5"></p>
+
