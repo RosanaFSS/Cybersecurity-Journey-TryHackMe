@@ -87,9 +87,28 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 <h2>Task 7 . Anonymous FTP Login Reporting</h2>
 
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 7.1. <em>What is the anon_ftp flag?</em><br><a id='7.1'></a>
+>> <code><strong>THM{f20b5ff5a3d4c779e99c3a93d1f68c6d}</strong></code>
+
+<br>
 
 <h2>Task 8 . Weak Passwords</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
+
+> 8.1. <emWhat is the change_pass flag?</em><br><a id='8.1'></a>
+>> <code><strong>THM{be74a521c3982298d2e9b0e347a3807d}</strong></code>
+
+<br>
+
+> 8.2. <emWhat is the change_pass flag?</em><br><a id='8.2'></a>
+>> <code><strong>THM{be74a521c3982298d2e9b0e347a3807d}</strong></code>
+
+<br>
 
 
 <h2>Task 9 . Review Sudo Permissions</h2>
@@ -102,8 +121,8 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 
 <br>
 
-> 9.2. <em>What is the sudoers_mary flag?</em><br><a id='9.2'></a>
->> <code><strongTHM{a0bcb9b72fd26d0ad55cdcdcd21698f1}</strong></code>
+> 9.2. <em>What is the unused_accounts flag?</em><br><a id='9.2'></a>
+>> <code><strong>THM{1b354db0e71f75057abe69de26a637ab}</strong></code>
 
 <br>
 
