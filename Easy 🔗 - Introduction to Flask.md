@@ -1,7 +1,7 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Introduction to Flask}}$$</h1>
-<p align="center">June 16, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{4058}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+<p align="center">June 16, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{405}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 How it works and how can I exploit it? It is an easy-level walkthrough. You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/flask"</a>here.<br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/7a1b1dc7-cf96-43d6-ae78-5529489cc24c"></p>
 
 <br>
 
@@ -364,3 +364,33 @@ This vulnerability can be easily mitigated by using a single quotation mark (' '
 <br>
 <br>
 
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/b21c8e27-d772-4cec-9dd8-7c088a8d057c"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/55269c1c-b34a-454b-9c41-1efcf991a75a"></p>
+
+<h1 align="center"> My TryHackMe Journey</h1>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 15 2025      | 405      |     203ʳᵈ    |      4ᵗʰ     |     450ᵗʰ   |     8ᵗʰ    |  107,665 |    777    |     62    |
+
+</div>
+
+<p align="center"> Global All Time:  203ʳᵈ<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/b5f40ba3-ab25-4b57-a798-9df6f95c8d5"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/d606c3cc-5af5-4d55-9953-6c31245a51f5"></p>
+<p align="center"> Brazil All Time:     4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5458a0d4-1895-45e5-8717-a4fcf6004e39"> </p>
+<p align="center"> Global monthly:    450ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/07c12d0f-f38a-40c5-8bab-4a0195a5cff4"> </p
+<p align="center"> Brazil monthly:       8ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/8be1eb6c-2b1e-4dcb-b486-bd592b72d55b"> </p>
+
+<h1 align="center">Thanks for coming!!!</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<h1 align="center">Thank you</h1>
+<p align="center"><a href="https://tryhackme.com/p/Swafox">Swafox</a>  for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
