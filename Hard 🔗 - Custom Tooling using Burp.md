@@ -2,7 +2,11 @@
 <p align="center"><img width="180px" src="https://github.com/user-attachments/assets/a74da0a4-04dc-432a-add8-95a9454fd5ef"><br>
 Jun 1, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my 391-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Creating custom tooling for application testing using Burp Plugins. Access it clicking <a href="https://tryhackme.com/room/customtoolingviaburp"</a>here.<br><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/971a1553-af84-4268-8d87-52bdecbd7504"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/d09f4ae6-96e4-4dbe-8ec3-3d4b25de796d"></p>
+
+https://github.com/user-attachments/assets/d09f4ae6-96e4-4dbe-8ec3-3d4b25de796d
+
+https://github.com/user-attachments/assets/971a1553-af84-4268-8d87-52bdecbd7504
 
 
 <br>
