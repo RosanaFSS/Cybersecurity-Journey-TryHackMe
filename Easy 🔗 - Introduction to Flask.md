@@ -333,65 +333,34 @@ This vulnerability can be easily mitigated by using a single quotation mark (' '
 <br>
 
 > 6.1. <em>What's inside /home/flask/flag.txt ?</em><br><a id='6.1'></a>
->> <code><strong>_____</strong></code>
+>> <code><strong>THM{flask_1njected}</strong></code>
 
 <br>
 
 
-<p><em>vulnerability.py</em></p>
-
-```bash
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Click on the "Choose File" button to upload a file:</p>
-
-<form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
-  <input type="file" id="myFile" name="filename">
-  <input type="submit">
-</form>
-</body>
-</html>
-```
-
-![image](https://github.com/user-attachments/assets/54add052-a852-47ac-942d-1e0aea1c4adb)
-
-```bash
-(venv) :~/venv# export FLASK_APP=vulnerability.py
-(venv) :~/venv# flask run
- * Serving Flask app 'vulnerability.py'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
-Press CTRL+C to quit
-...
-```
-
-![image](https://github.com/user-attachments/assets/3c0355d9-0d37-4e8d-8ad0-b36491a7c63e)
-
-
-<p>Now ... I navigated to <code>targetIP:5000/vuln?name={{ person.password }}</code></p>
-
-<br>
+<p>Navigated to <code>targetIP:5000/vuln?name={{ person.password }}</code></p>
 
 ![image](https://github.com/user-attachments/assets/7d61f8c4-e6f3-4838-8f8b-fcb49c6299cc)
 
-<br>
-
-<p>Navigated to <code>targetIP:5000/vuln?name=={{ get_user_file("/etc/passwd") }}</code></p>
-
-<br>
+<p>Navigated to <code>>http://TargetIP:5000/vuln?name=={{ get_user_file("/etc/passwd") }</code></p>
 
 ![image](https://github.com/user-attachments/assets/1a8df1de-f9ad-4de7-94cd-c235b91affed)
 
-
+<p>Navigated to <code>http://TargetIP:5000/vuln?name={{%20get_user_file(%22/home/flask/flag.txt%22)%20}}</code>p>
 <br>
 
-<p>Navigated to <code>targetIP:5000/vuln?name=={{ get_user_file("/etc/passwd") }</code></p>
+![image](https://github.com/user-attachments/assets/f4833651-531f-4e23-b2dd-fb868f4e141b)
 
 <br>
-
 
 <h2>Task 7 . References and Sources</h2>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 7.1. <em>See you in the next room!</em><br><a id='7.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+<br>
+<br>
 
