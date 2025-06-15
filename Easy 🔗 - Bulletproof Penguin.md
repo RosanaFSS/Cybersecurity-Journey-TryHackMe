@@ -7,12 +7,33 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 
 <h2>Task 1 . Introduction</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 1.1. <em>Click and continue learning!</em><br><a id='1.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+<br>
 
 <h2>Task 2 . Redis Server No Password</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 2.1. <em>What is the redis_nopass flag?</em><br><a id='2.1'></a>
+>> <code><strong>THM{ae4e5bb7aac2c2252363ca466f10ffd0}</strong></code>
+
+<br>
 
 <h2>Task 3 . Report Default Community Names of the SNMP Agent</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 3.1. <em>What is the redis_nopass flag?</em><br><a id='3.1'></a>
+>> <code><strong>THM{aa397a808d527fd71f023c78d3c04591}</strong></code>
+
+<br>
 
 <h2>Task 4 . Nginx running as root</h2>
 
@@ -74,8 +95,7 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 >> <code><strong>No answer needed</strong></code>
 
 <br>
-
-
+<br>
 
 <h1 align="center">Room Completed</h1>
 <br>
