@@ -217,6 +217,8 @@ PID     PPID    ImageFileName
 
 <h2> Task 4 . Privilege Ecalation and Credential Dumping</h2>
 
+<h3 align="left"> Answer the questions below</h3>
+
 
 > 4.1. <em>Conduct a deeper investigation and identify another suspicious process on the host. Provide a full path to the process in your answer.</em><br><a id='4.1'></a>
 >> <strong><code>C:\Windows\Temp\pan.exe</code></strong><br>
@@ -252,22 +254,19 @@ PID     PPID    ImageFileName
 <br>
 
 > 4.5. <em>Which MITRE ATT&CK technique ID corresponds to the method the attacker employed to evade detection, as identified in the previous steps?</em><br><a id='4.5'></a>
->> <strong><code>Mimikatz</code></strong><br>
+>> <strong><code>_________________________z</code></strong><br>
 <p></p>
 
 
-![image](https://github.com/user-attachments/assets/cb76cc0e-5c24-4a11-aeb4-74717ce22c52)
-
-![image](https://github.com/user-attachments/assets/b2fd10be-aa82-4276-8180-1b5ade591890)
-
-T1003.001
-
-dwm.exe 1304
-pan.exe 4840
-cmd.exe 6268
-
+<br>
 
 <h2> Task 5 . Conclusion</h2>
+
+<h3 align="left"> Answer the questionsbelow</h3>
+
+> 4.5. <em>Well Done!</em><br><a id='5.1'></a>
+>> <strong><code>_________________________z</code></strong><br>
+<p></p>
 
 
 
