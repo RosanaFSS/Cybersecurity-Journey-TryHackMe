@@ -36,9 +36,34 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 
 <h2>Task 9 . Review Sudo Permissions</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
+
+> 9.1. <em>What is the sudoers_munra flag?</em><br><a id='9.1'></a>
+>> <code><strong>THM{1e9ee13fb42fea2a9eb2730c51448241}</strong></code>
+
+<br>
+
+> 9.2. <em>What is the sudoers_mary flag?</em><br><a id='9.2'></a>
+>> <code><strongTHM{a0bcb9b72fd26d0ad55cdcdcd21698f1}</strong></code>
+
+<br>
+
 
 <h2>Task 10 . Exposed Database Ports</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
+
+> 10.1. <em>What is the mysql_port_public flag?</em><br><a id='10.1'></a>
+>> <code><strong>THM{526e33142b54e13bb47b17056823ab60}</strong></code>
+
+<br>
+
+> 10.2. <em>What is the mysql_port_public flag?</em><br><a id='10.2'></a>
+>> <code><strong>THM{20a809866dbcf94109189c5bafabc5c2}</strong></code>
+
+<br>
 
 <h2>Task 11 . The End</h2>
 
