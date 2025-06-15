@@ -510,10 +510,3 @@ By combining solid intercepting proxy knowledge with scripting or plugin develop
 
 ![image](https://github.com/user-attachments/assets/4af21287-c969-418f-af16-c64a9cff5e4b)
 
-
-
-
-
-
-https://github.com/user-attachments/assets/971a1553-af84-4268-8d87-52bdecbd7504
-
