@@ -308,7 +308,8 @@ This vulnerability can be easily mitigated by using a single quotation mark (' '
 
 <br>
 
-![image](https://github.com/user-attachments/assets/bfa28bbc-0919-4afa-a6dd-7dbd94e79e94)
+![image](https://github.com/user-attachments/assets/1a8df1de-f9ad-4de7-94cd-c235b91affed)
+
 
 <br>
 
