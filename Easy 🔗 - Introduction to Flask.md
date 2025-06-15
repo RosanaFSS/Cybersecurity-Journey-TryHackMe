@@ -252,7 +252,7 @@ def admin():
 
 <br>
 
-<p><em>fileuploads.py</em></p>
+<p><em>fileupload.py</em></p>
 
 ```bash
 from flask import request
@@ -268,6 +268,8 @@ def upload_file():
         f.save('uploads/' + secure_filename(f.filename))
     return render_template('upload.html')
 ```
+
+![image](https://github.com/user-attachments/assets/3003ab9c-8e3c-42ce-b2d2-7b52103eb725)
 
 <br>
 
@@ -288,7 +290,13 @@ def upload_file():
 </html>
 ```
 
+![image](https://github.com/user-attachments/assets/f77baf0f-86b5-497d-a675-be97a9357e77)
+
+
 <br>
+
+
+![image](https://github.com/user-attachments/assets/6694992b-5125-4c74-a85e-52fb1cb2360f)
 
 
 <br>
