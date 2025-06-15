@@ -290,13 +290,8 @@ def upload_file():
 </html>
 ```
 
-![image](https://github.com/user-attachments/assets/f77baf0f-86b5-497d-a675-be97a9357e77)
+![image](https://github.com/user-attachments/assets/c7878e9c-4e7b-4b19-82cc-b4d04c0eb0c0)
 
-
-<br>
-
-
-![image](https://github.com/user-attachments/assets/6694992b-5125-4c74-a85e-52fb1cb2360f)
 
 
 <br>
