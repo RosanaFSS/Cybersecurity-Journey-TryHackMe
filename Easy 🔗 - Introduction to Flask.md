@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Introduction to Flask}}$$</h1>
-<p align="center">June 16, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{405}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+<p align="center">June 15, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my $$\textcolor{#FF69B4}{\textbf{405}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 How it works and how can I exploit it? It is an easy-level walkthrough. You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.  Access it clicking <a href="https://tryhackme.com/room/flask"</a>here.<br>
 <img width="1000px" src="https://github.com/user-attachments/assets/7a1b1dc7-cf96-43d6-ae78-5529489cc24c"></p>
 
@@ -377,16 +377,17 @@ This vulnerability can be easily mitigated by using a single quotation mark (' '
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| June 15 2025      | 405      |     203ʳᵈ    |      4ᵗʰ     |     450ᵗʰ   |     8ᵗʰ    |  107,665 |    777    |     62    |
+| June 15 2025      | 405      |     203ʳᵈ    |      4ᵗʰ     |     321ˢᵗ   |     7ᵗʰ    |  107,867 |    779    |     62    |
 
 </div>
 
+
 <p align="center"> Global All Time:  203ʳᵈ<br><br>
-<img width="240px" src="https://github.com/user-attachments/assets/b5f40ba3-ab25-4b57-a798-9df6f95c8d5"><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/d606c3cc-5af5-4d55-9953-6c31245a51f5"></p>
-<p align="center"> Brazil All Time:     4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/5458a0d4-1895-45e5-8717-a4fcf6004e39"> </p>
-<p align="center"> Global monthly:    450ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/07c12d0f-f38a-40c5-8bab-4a0195a5cff4"> </p
-<p align="center"> Brazil monthly:       8ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/8be1eb6c-2b1e-4dcb-b486-bd592b72d55b"> </p>
+<img width="240px" src="https://github.com/user-attachments/assets/e13fbb83-14f0-49cf-b8c5-8ae4448e069e"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/5874e4ff-9887-401e-983e-b231ac1e10865"></p>
+<p align="center"> Brazil All Time:     4ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/65805c53-4439-42ed-acbb-53e45de04a"> </p>
+<p align="center"> Global monthly:    321ˢᵗ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/0d8ad8bb-75dc-49e9-a966-b0954eadea09"> </p
+<p align="center"> Brazil monthly:       7ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/29ec658b-0434-48b8-8e74-95ef22e8907a"> </p>
 
 <h1 align="center">Thanks for coming!!!</h1>
 
