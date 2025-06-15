@@ -140,7 +140,7 @@ Note: You are going to get an error if you deploy the app at this point since we
 <br>
 
 > 3.2. <em>Is it possible to change that port? (yay/nay)</em><br><a id='3.2'></a>
->> <code><strong>yayP</strong></code>
+>> <code><strong>yay</strong></code>
 
 ![image](https://github.com/user-attachments/assets/f666324c-40ce-4693-8120-4b713986c247)
 
@@ -181,7 +181,7 @@ Note: You are going to get an error if you deploy the app at this point since we
 <br>
 
 > 4.2. <em>What markdown language can you use to make templates for Flask? </em><br><a id='4.2'></a>
->> <code><strong>HTML</strong></code>
+>> <code><strong>html</strong></code>
 
 <br>
 
