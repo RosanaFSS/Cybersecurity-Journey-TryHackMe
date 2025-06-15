@@ -337,7 +337,41 @@ This vulnerability can be easily mitigated by using a single quotation mark (' '
 
 <br>
 
-<p>Navigated to <code>targetIP:5000/vuln?name={{ person.password }}</code></p>
+
+<p><em>vulnerability.py</em></p>
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+</body>
+</html>
+```
+
+![image](https://github.com/user-attachments/assets/54add052-a852-47ac-942d-1e0aea1c4adb)
+
+```bash
+(venv) :~/venv# export FLASK_APP=vulnerability.py
+(venv) :~/venv# flask run
+ * Serving Flask app 'vulnerability.py'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+...
+```
+
+![image](https://github.com/user-attachments/assets/3c0355d9-0d37-4e8d-8ad0-b36491a7c63e)
+
+
+<p>Now ... I navigated to <code>targetIP:5000/vuln?name={{ person.password }}</code></p>
 
 <br>
 
