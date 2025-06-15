@@ -100,17 +100,40 @@ Note: You are going to get an error if you deploy the app at this point since we
 ...
 :~# sudo apt install python3-pip -y
 ...
-:~# pip3 install Flask
+:~# pip3 install virtualenv
 ...
-:~# mkdir my
-:~# cd my
-:~/my# python3 -m venv .venv
-(.venv) :~# source .venv/bin/activate
+:~# mkdir venv
+:~# cd venv
+:~/venv# python3 -m venv ./venv
+:~/venv# source ./venv/bin/activate
+(venv) root@ip-10-10-163-109:~/venv# 
+(.venv) :~# pip3 install Flask
 (.venv) :~# pip install Flask
-(.venv) :~/my# export FLASK_APP=hello.py
-(.venv) :~/my# flask run
 ...
 ```
+
+```bash
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello():   
+    return 'Hello TryHackMe community!!!'
+```
+
+```bash
+(.venv) :~/my# export FLASK_APP=hello.py
+(.venv) :~/my# flask run
+(venv) root@ip-10-10-163-109:~/venv# flask run
+ * Serving Flask app 'hello.py'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+
+```
+
+
 
 <br>
 
@@ -166,7 +189,31 @@ Note: You are going to get an error if you deploy the app at this point since we
 ![image](https://github.com/user-attachments/assets/d5c9254c-da58-4bd6-947f-728183d239d1)
 
 <br>
+
+
+```bash
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'Home Page'
+
+@app.route('/admin')
+def admin():
+    return 'Admin Page'
+```
+
 <br>
+
+![image](https://github.com/user-attachments/assets/9088aef4-b1bd-413e-bdbc-82fd7277b172)
+
+
+![image](https://github.com/user-attachments/assets/62093242-0760-4914-84a6-50150ccf302b)
+
+<br>
+
+
 
 <h2>Task 4 . HTTP Methods and Template Rendering</h2>
 
@@ -185,10 +232,44 @@ Note: You are going to get an error if you deploy the app at this point since we
 
 <br>
 
+<p>fileupload.py</p>
+
 ```bash
-(.venv) :~/my# export FLASK_APP=a.py
-(.venv) :~/my# flask run
-...
+from flask import request
+from werkzeug.utils import secure_filename
+from flask import render_template
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['filename']
+        f.save('uploads/' + secure_filename(f.filename))
+    return render_template('upload.html')
+```
+
+<p>upload.html</p>
+
+```bash
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+</body>
+</html>
+```
+
+```bash
+(venv) :~/venv# mkdir uploads
+(venv) :~/venv# export FLAS_APP=fileupload.py
+(venv) :~/venv# 
 ```
 
 <br>
