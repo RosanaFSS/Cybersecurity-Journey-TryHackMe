@@ -37,13 +37,50 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 
 <h2>Task 4 . Nginx running as root</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 4.1. <em>What is the nginx_asroot flag?</em><br><a id='4.1'></a>
+>> <code><strong>THM{bebb02b22bb56b2f79ba706975714ee2}</strong></code>
+
+<br>
+
 
 
 <h2>Task 5 . Cleartext Protocolst</h2>
 
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
 
+> 5.1. <em>What other cleartext service is running on port 69/udp?</em><br><a id='5.1'></a>
+>> <code><strong>TFTP</strong></code>
+
+<br>
+
+> 5.2. <em>What other cleartext service is running on port 69/udp?</em><br><a id='5.2'></a>
+>> <code><strong>THM{33704d74ec53c8cf50daf817bea836a1}</strong></code>
+
+<br>
 
 <h2>Task 6 . Weak SSH Crypto</h2>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the questions below}}$$ </h3>
+<br>
+
+> 6.1. <em>What is the ssh_weak_macs flag?</em><br><a id='6.1'></a>
+>> <code><strong>THM{e3d6b82f291b64f95213583dcd89b659}</strong></code>
+
+<br>
+
+> 6.2. <em>What is the ssh_weak_kex flag?</em><br><a id='6.2'></a>
+>> <code><strong>THM{d9baf598ee934d79346f425a81bd693a}</strong></code>
+
+<br>
+
+> 6.3. <em>What is the ssh_weak_ciphers flag?</em><br><a id='6.3'></a>
+>> <code><strong>THM{9ff9c182cad601291d45951c01d0b2c7}</strong></code>
+
+<br>
 
 
 
