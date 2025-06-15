@@ -6,3 +6,49 @@ Can you harden this Linux server? It is an easy-level walkthrough. You can join 
 <br>
 
 <h2>Task 1 . Introduction</h2>
+
+
+<h2>Task 2 . Redis Server No Password</h2>
+
+
+<h2>Task 3 . Report Default Community Names of the SNMP Agent</h2>
+
+
+<h2>Task 4 . Nginx running as root</h2>
+
+
+
+<h2>Task 5 . Cleartext Protocolst</h2>
+
+
+
+<h2>Task 6 . Weak SSH Crypto</h2>
+
+
+
+<h2>Task 7 . Anonymous FTP Login Reporting</h2>
+
+
+
+<h2>Task 8 . Weak Passwords</h2>
+
+
+
+<h2>Task 9 . Review Sudo Permissions</h2>
+
+
+<h2>Task 10 . Exposed Database Ports</h2>
+
+
+<h2>Task 11 . The End</h2>
+
+<h3 align="left"> $$\textcolor{#f00c17}{\textnormal{Answer the question below}}$$ </h3>
+<br>
+
+> 11.1. <em>Click and continue learning!</em><br><a id='11.1'></a>
+>> <code><strong>No answer needed</strong></code>
+
+<br>
+
+
+
