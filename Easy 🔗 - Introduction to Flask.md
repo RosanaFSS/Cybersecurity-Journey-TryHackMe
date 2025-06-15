@@ -133,8 +133,6 @@ Press CTRL+C to quit
 
 ```
 
-
-
 <br>
 
 ![image](https://github.com/user-attachments/assets/99512bf2-d98f-4b96-8870-dfe02759f787)
@@ -232,47 +230,6 @@ def admin():
 
 <br>
 
-<p>fileupload.py</p>
-
-```bash
-from flask import request
-from werkzeug.utils import secure_filename
-from flask import render_template
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/upload', methods=['GET', 'POST'])
-def upload_file():
-    if request.method == 'POST':
-        f = request.files['filename']
-        f.save('uploads/' + secure_filename(f.filename))
-    return render_template('upload.html')
-```
-
-<p>upload.html</p>
-
-```bash
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Click on the "Choose File" button to upload a file:</p>
-
-<form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
-  <input type="file" id="myFile" name="filename">
-  <input type="submit">
-</form>
-</body>
-</html>
-```
-
-```bash
-(venv) :~/venv# mkdir uploads
-(venv) :~/venv# export FLAS_APP=fileupload.py
-(venv) :~/venv# 
-```
-
-<br>
 
 ![image](https://github.com/user-attachments/assets/30b073b4-0df4-4f8a-bca8-fd84c7bf813b)
 
