@@ -1,3 +1,5 @@
+<h1 align="center">Advent of Cyber 3 (2021) - Blue Teaming - Days 19 to 23</h1> 
+
 <p>Jun 16, 2025</p>
 
 https://tryhackme.com/room/adventofcyber3
@@ -330,4 +332,97 @@ ahNtWnl0cVNHa25EeREaT0BaYRNBWmFid3RlVkJ0ZVp1Tk9aenRURGhkSxNHa2FZbEobVUdrR1NHa3FP
 <br>
 
 
+<h1>Day 23 - AoC 3 (2021), Blue Teaming</h1>
 
+![image](https://github.com/user-attachments/assets/f052c34d-6e78-4370-bdf4-6b447bd9d186)
+
+
+
+<p>1 . What command was executed as Elf McNealy to add a new user to the machine?<br>
+<code>Invoke-Nightmare</code></p>
+
+![image](https://github.com/user-attachments/assets/58d7057f-8de4-488c-9660-8aa80bfb697d)
+
+
+![image](https://github.com/user-attachments/assets/f1d19747-4140-4d0a-a6a9-5aab4cea6c7c)
+
+
+<br>
+
+<p>2 . What user executed the PowerShell file to send the password.txt file from the administrator's desktop to a remote server?<br>
+<code>adm1n</code></p>
+
+![image](https://github.com/user-attachments/assets/ac67e73f-5d02-4dfa-a72d-df1d23544069)
+
+<br>
+
+<p>3 . What was the IP address of the remote server? What was the port used for the remote connection? (format: IP,Port)<br>
+<code>10.10.148.96,4321</code></p>
+
+<br>
+
+<p>4 . What was the encryption key used to encrypt the contents of the text file sent to the remote server?<br>
+<code>j3pn50vkw21hhurbqmxjlpmo9doiukyb</code></p>
+
+![image](https://github.com/user-attachments/assets/04da8256-678c-487f-84a7-5097fb8d77dc)
+
+<br>
+
+<p>5 . What application was used to delete the password.txt file?<br>
+<code>sdelete.exe</code></p>
+
+![image](https://github.com/user-attachments/assets/fe9b7910-3479-4048-8ec8-7ab04f99d557)
+
+<br>
+
+<p>6 . What is the date and timestamp the logs show that password.txt was deleted? (format: MM/DD/YYYY H:MM:SS PM)<br>
+<code>11/11/2021 7:29:27 PM</code></p>
+
+![image](https://github.com/user-attachments/assets/8b40ea50-d149-4ec5-ab57-d4345ce27bd5)
+
+
+<br>
+
+<p>7 . What were the contents of the deleted password.txt file?<br>
+<code>Mission Control: letitsnowletitsnowletitsnow</code></p>
+
+![image](https://github.com/user-attachments/assets/24b496be-ba4b-40af-9de7-59d8ffe07efd)
+
+<p>j3pn50vkw21hhurbqmxjlpmo9doiukyb</p>
+
+<p>76492d1116743f0423413b16050a5345MgB8AEcAVwB1AFMATwB1ADgALwA0AGQAKwBSAEYAYQBHAE8ANgBHAG0AcQBnAHcAPQA9AHwAMwBlADAAYwBmADAAYQAzAGEANgBmADkAZQA0ADUAMABiADkANgA4ADcAZgA3ADAAMQA3ADAAOABiADkAZAA2ADgAOQA2ADAANQA3AGEAZAA4AGMANQBjADIAMAA4ADYAYQA0ADMAMABkADkAMwBiADUAYQBhADIANwA5AGMAYQA1ADYAYQAzAGEAYQA2ADUAMABjADAAMwAzADYANABlADYAOAA4ADQAYwAxAGMAYwAxADkANwBiADIANAAzADMAMAAzADgAYQA5ADYANAAzADEANAA2AGUAZgBkAGEAMAA3ADcANQAyADcAZgBlADMAZQA3ADUANwAyADkAZAAwAGUAOQA5ADQAOQA1AGQAYQBkADEANQAxADYANwA2AGIAYQBjADAAMQA0AGEAOQA3ADYAYgBkAGMAOAAxAGMAZgA2ADYAOABjADEAMABmADcAZgAyADcAZgBjADEAYgA3AGYAOAA3AGIANQAyAGUAMwA4ADgAYQAxADkANgA4ADMA</p>
+
+
+![image](https://github.com/user-attachments/assets/2f20d492-949e-41c2-a51d-2a5cf299f0f1)
+
+
+![image](https://github.com/user-attachments/assets/6075faa0-8ab0-4821-8442-ce1acbb6bebb)
+
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/6fd5ac2f-6d91-4751-a429-9d9010cd6920)
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 16 2025      | 406      |     201st    |      4ᵗʰ     |     383rd   |     8ᵗʰ    |  108,131 |    780    |     62    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/3bd3831b-18d8-4ee2-8d37-8008396c2853)
+
+
+![image](https://github.com/user-attachments/assets/9b739be3-9943-4896-9483-6b4d9c614cf6)
+
+
+![image](https://github.com/user-attachments/assets/ae3e5edf-605e-427d-b933-9fbd392c9744)
+
+![image](https://github.com/user-attachments/assets/afb87284-7d28-4f6b-80b6-60df2b607e3f)
+
+
+![image](https://github.com/user-attachments/assets/ccd96134-3f69-47fd-b270-b16c7c38e273)
