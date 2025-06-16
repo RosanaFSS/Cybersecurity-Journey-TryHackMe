@@ -3,7 +3,10 @@
 <p align="center">Jun 16, 2025<br>
 Click <a href="https://tryhackme.com/room/adventofcyber3"> here to dive into this challenge.</p>
 
-<h1>Day 19 - AoC 3 (2021), Blue Teaming</h1>
+<br>
+<br>
+
+<h1 align="center">Day 19 - AoC 3 (2021), Blue Teaming</h1>
 
 ![image](https://github.com/user-attachments/assets/ddeba83e-52ca-4370-ae05-d247d6dc1ede)
 
@@ -85,7 +88,7 @@ Click <a href="https://tryhackme.com/room/adventofcyber3"> here to dive into thi
 <br><br><br>
 
 
-<h1>Day 20 - AoC 3 (2021), Blue Teaming</h1>
+<h1 align="center">Day 20 - AoC 3 (2021), Blue Teaming</h1>
 
 ![image](https://github.com/user-attachments/assets/8acab888-00fe-4bed-ad1b-117d8b0ef5a8)
 
@@ -171,7 +174,7 @@ Click <a href="https://tryhackme.com/room/adventofcyber3"> here to dive into thi
 <br><br><br>
 
 
-<h1>Day 21 - AoC 3 (2021), Blue Teaming</h1>
+<h1 align="center">Day 21 - AoC 3 (2021), Blue Teaming</h1>
 
 ![image](https://github.com/user-attachments/assets/3e124b80-a426-4c99-9135-f16fbbfa7fed)
 
@@ -240,7 +243,7 @@ Click <a href="https://tryhackme.com/room/adventofcyber3"> here to dive into thi
 <br>
 
 
-<h1>Day 22 - AoC 3 (2021), Blue Teaming</h1>
+<h1 align="center">Day 22 - AoC 3 (2021), Blue Teaming</h1>
 
 ![image](https://github.com/user-attachments/assets/8ac2ddb3-b2e8-4a2c-82f2-16bf4cb16e56)
 
@@ -331,7 +334,7 @@ ahNtWnl0cVNHa25EeREaT0BaYRNBWmFid3RlVkJ0ZVp1Tk9aenRURGhkSxNHa2FZbEobVUdrR1NHa3FP
 <br>
 
 
-<h1>Day 23 - AoC 3 (2021), Blue Teaming</h1>
+<h1 align="center">Day 23 - AoC 3 (2021), Blue Teaming</h1>
 
 ![image](https://github.com/user-attachments/assets/f052c34d-6e78-4370-bdf4-6b447bd9d186)
 
