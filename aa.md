@@ -1,4 +1,4 @@
-<p>Jun 16, 2025</p>p>
+<p>Jun 16, 2025</p>
 
 https://tryhackme.com/room/adventofcyber3
 
