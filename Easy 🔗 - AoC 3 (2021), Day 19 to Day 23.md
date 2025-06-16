@@ -1,7 +1,7 @@
 <h1 align="center">Advent of Cyber 3 (2021) - Blue Teaming - Days 19 to 23</h1> 
 
 <p align="center">Jun 16, 2025<br>
-Click <a href="https://tryhackme.com/room/adventofcyber3"> here to dive into this challenge.</p>
+Click <a href="https://tryhackme.com/room/adventofcyber3"> here</a> to dive into this challenge.</p>
 
 <br>
 <br>
