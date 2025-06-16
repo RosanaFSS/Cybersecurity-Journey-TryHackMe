@@ -1,11 +1,11 @@
 <h1 align="center">Supplemental memory<br><img width="1200px" src="https://github.com/user-attachments/assets/3c611801-4d91-40e8-b35b-a2395cf04ada"></h1>
 
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/a6a395b7-d5e5-4749-81f1-45cc4619f512"><br>
-June 14, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+June 16, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
-part of my <code>404</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+part of my <code>406</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Investigate lateral movement, credential theft, and additional adversary actions in a memory dump.<a href="https://tryhackme.com/room/supplementalmemory"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/387d68a7-8bc3-476c-8c23-fc20467bc0ec"></p>
 
 <h2> Task 1 . Introduction</h2>
 
@@ -254,7 +254,7 @@ PID     PPID    ImageFileName
 <br>
 
 > 4.5. <em>Which MITRE ATT&CK technique ID corresponds to the method the attacker employed to evade detection, as identified in the previous steps?</em><br><a id='4.5'></a>
->> <strong><code>_________________________z</code></strong><br>
+>> <strong><code>T1036</code></strong><br>
 <p></p>
 
 
@@ -264,10 +264,40 @@ PID     PPID    ImageFileName
 
 <h3 align="left"> Answer the questionsbelow</h3>
 
-> 4.5. <em>Well Done!</em><br><a id='5.1'></a>
->> <strong><code>_________________________z</code></strong><br>
+> 5.1. <em>Well Done!</em><br><a id='5.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
 <p></p>
 
+<br>
+<br>
 
+<h1 align="center">Room Completed</h1>
+<br>
+<p align="center"><img width="1000px" src="https://github.com/user-attachments/assets/d3951dc3-7aef-4f94-9da6-261fb65911a3"><br>
+                  <img width="1000px" src="https://github.com/user-attachments/assets/c4341a4b-daf3-4506-8292-0f52fba07e9"></p>
 
+<h1 align="center"> My TryHackMe Journey</h1>
+<br>
 
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 16 2025      | 406      |     203ʳᵈ    |      5ᵗʰ     |     374ᵗʰ   |     7ᵗʰ    |  107,875 |    780    |     62    |
+
+</div>
+
+<p align="center"> Global All Time:  203ʳᵈ<br><br>
+<img width="240px" src="https://github.com/user-attachments/assets/a46986cc-1b45-4fc7-a835-624107ab6eb1"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/f1353cd2-5441-44ab-807a-6dbb39e87351"></p>
+<p align="center"> Brazil All Time:     5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/f3aa2835-1a45-47f8-b71a-171445593e98"> </p>
+<p align="center"> Global monthly:    374ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/35f846df-aa20-49b4-b8fe-58db6d177d4c"> </p
+<p align="center"> Brazil monthly:       7ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/ddab973b-d995-44e5-ab35-fcf97b46eb13"> </p>
+
+<h1 align="center">Thanks for coming!!!</h1>
+
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<h1 align="center">Thank you</h1>
+<p align="center"><a href="https://tryhackme.com/p/tryhackme">tryhackme</a> and <a href="https://tryhackme.com/p/krotovolb">krotovolb</a>  for investing your time and effort to develop this challenge so that I could sharpen my skills!</p> 
