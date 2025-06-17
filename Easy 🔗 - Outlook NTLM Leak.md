@@ -3,7 +3,7 @@ June 16, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.
 and I’m excited to join you on this adventure,<br>
 part of my <code>406</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Leak password hashes from a user by sending them an email by abusing CVE-2023-23397. Click <a href="https://tryhackme.com/room/outlookntlmleak"</a> here to access this challenge.<br>
-<img width="1200px" src="></p>
+<img width="1200px" src=""></p>
 
 
 
