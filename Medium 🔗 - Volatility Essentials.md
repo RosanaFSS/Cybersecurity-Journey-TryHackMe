@@ -5,7 +5,7 @@ June 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.
 and I’m excited to join you on this adventure,<br>
 part of my <code>407</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Learn how to perform memory forensics with Volatility!<br>Click <a href="https://tryhackme.com/room/volatilityessentials"</a>here to acces this walkthrough.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/c413eacf-dd51-470b-a064-639f4a5f354b"></p>
 
 <h2> Task 1 . Introduction</h2>
 
@@ -400,7 +400,7 @@ Investigation-2.raw
 
 > 7.1. <em>What suspicious process is running at PID 740?</em><br><a id='7.1'></a>
 
-![image](https://github.com/user-attachments/assets/c85b1591-806a-4420-b8e7-1be4f0c12ba5)
+![image](https://github.com/user-attachments/assets/56b365f8-390f-4bce-96cc-1b8ffa4e8c3e)
 
 
 ```bash
@@ -412,6 +412,9 @@ ubuntu@tryhackme:~/Desktop/volatility3$ python3 vol.py -f ~/Desktop/Investigatio
 <br>
 
 > 7.2. <em>What is the full path of the suspicious binary in PID 740?</em><br><a id='7.2'></a>
+
+![image](https://github.com/user-attachments/assets/bb8f50f2-8d8f-4c78-8282-06e4be69abb4)
+
 
 ```bash
 ubuntu@tryhackme:~/Desktop/volatility3$ python3 vol.py -f ~/Desktop/Investigations/Investigation-2.raw windows.dlllist --pid 740
@@ -435,8 +438,7 @@ ubuntu@tryhackme:~/Desktop/volatility3$ python3 vol.py -f ~/Desktop/Investigatio
 
 > 7.4. <em>From our current information, what malware is present on the system?</em><br><a id='7.4'></a>
 
-![image](https://github.com/user-attachments/assets/dfe74630-6a8c-4e7a-acd6-44bde458f95e)
-
+![image](https://github.com/user-attachments/assets/57678bfa-0dfa-44a3-bf4b-d6d5d0bd3ced)
 
 
 ![image](https://github.com/user-attachments/assets/8b6c998d-58a5-4c91-9029-a1a584954569)
@@ -473,12 +475,89 @@ ubuntu@tryhackme:~/Desktop/volatility3$ python3 vol.py -h | grep -i scan
     windows.filescan.FileScan
                         Scans for file objects present in a particular windows
     windows.mbrscan.MBRScan
-...
+                        Scans for and parses potential Master Boot Records
+    windows.mftscan.ADS
+                        Scans for Alternate Data Stream
+    windows.mftscan.MFTScan
+                        Scans for MFT FILE objects present in a particular
+    windows.mftscan.ResidentData
+                        Scans for MFT Records with Resident Data
+    windows.modscan.ModScan
+                        Scans for modules present in a particular windows
+    windows.mutantscan.MutantScan
+                        Scans for mutexes present in a particular windows
+    windows.netscan.NetScan
+                        Scans for network objects present in a particular
+    windows.poolscanner.PoolScanner
+                        A generic pool scanner plugin.
+    windows.psscan.PsScan
+                        Scans for processes present in a particular windows
+    windows.registry.hivescan.HiveScan
+                        Scans for registry hives present in a particular
+                        scanning to find rootkits
+    windows.svcscan.SvcScan
+                        Scans for windows services.
+    windows.symlinkscan.SymlinkScan
+                        Scans for links present in a particular windows memory
+    windows.thrdscan.ThrdScan
+                        Scans for windows threads.
+    windows.vadregexscan.VadRegExScan
+                        Scans all virtual memory areas for tasks using RegEx.
+    windows.vadyarascan.VadYaraScan
+                        Scans all the Virtual Address Descriptor memory maps
+                        Scans for top level Windows Stations
+    yarascan.YaraScan   Scans kernel memory using yara rules (string or fil
 ```
 
 <br>
 
-<h2>Conclusion</h2>
+<h2>Task 8 . Conclusion</h2>
+
+<p>We have only covered a very thin layer of memory forensics with Volatility, which can go much deeper when analysing the Windows, Mac, and Linux architectures. If you're looking for a deep dive into memory forensics, I suggest reading The Art of Memory Forensics.<br>
+
+Additionally, the following is a list of worthy plugin mentions that you can be aware of and read more on:<br>
+
+- <code>windows.callbacks</code>: Malware may register malicious callbacks for process creation, image loading, or thread creation. We can use this plugin to inspect callback functions for unknown driver associations or non-standard modules.<br>
+- windows.driverirp: This plugin examines IRP (I/O Request Packet) dispatch tables of drivers. Suspicious drivers may register no IRP functions or point to non-driver memory.<br>
+- windows.modscan: This plugin scans for loaded kernel modules without relying on linked lists. It can be used to uncover stealth drivers that evade both modules and driverscan.<br>
+- windows.moddump: This plugin allows analysts to extract suspicious drivers or modules from memory for static analysis. Further investigation with tools such as Ghidra or IDA can be done to reverse engineer dumped modules.<br>
+- windows.memmap: This plugin can perform deeper analysis of injected code or memory artefacts, to extract memory regions from specific processes.<br>
+- yarascan: This plugin will search for strings, patterns, and compound rules against a rule set by using a YARA file as an argument or listing rules within the command line.<br>
+In the next room, Memory Acquisition, we will cover memory acquisition in detail, covering all the necessary techniques and approaches.</p>
 
 
+<h3 align="left"> Answer the question below</h3>
+
+> 8.1. <em>Ready the above and continue learning!</em><br><a id='8.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/d3f3a3e4-4040-41bd-a93c-247d713fa257)
+
+![image](https://github.com/user-attachments/assets/aaa9b9f2-5fc7-4ff3-b669-6933e976357f)
+
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 17 2025      | 407      |     199ᵗʰ    |      5ᵗʰ     |     301ˢᵗ   |     6ᵗʰ    |  108,485 |    784    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/34e894c8-1d3d-4c3a-9c2c-5d39f36b1010)
+
+![image](https://github.com/user-attachments/assets/a6fbc023-e199-489b-8f5c-d29e9ba976ba)
+
+![image](https://github.com/user-attachments/assets/4c4a2a57-dc51-4a16-8b2f-e365fd4c78da)
+
+![image](https://github.com/user-attachments/assets/e1363df8-1565-4276-ae28-789b9cf27db5)
+
+![image](https://github.com/user-attachments/assets/27792a90-fec0-4a95-950c-2405a1d91b9c)
 
