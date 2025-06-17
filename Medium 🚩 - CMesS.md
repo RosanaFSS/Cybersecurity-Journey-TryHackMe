@@ -2,7 +2,7 @@
 June 16, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
 part of my <code>406</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-Can you root this Gila CMS box? Click <a href="an you root this Gila CMS box?"</a> here to access this challenge.<br>
+Can you root this Gila CMS box? Click <a href=""</a> here to access this challenge.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/f49dc633-3ceb-4b0d-8219-09094a541620"></p>
 
 
