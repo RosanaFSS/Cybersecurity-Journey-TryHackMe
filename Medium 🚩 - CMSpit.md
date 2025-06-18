@@ -251,7 +251,7 @@ App.request('/auth/check', {
 
 ![image](https://github.com/user-attachments/assets/e99edc48-7ded-4fe3-85ac-991f92c06ee3)
 
-<h3>//settings</h3>
+<h3>/settings</h3>
 
 ![image](https://github.com/user-attachments/assets/1d0965a9-af33-46e2-ac88-cd1cd2e6decc)
 
@@ -300,7 +300,7 @@ App.request('/auth/check', {
 >> <strong><code>thm{c3d1af8da23926a30b0c8f4d6ab71bf851754568}</code></strong><br>
 <p></p>
 
-<p>navigated to <code>http://TargetIP/rev.php</code></p>
+<p>Navigated to <code>http://TargetIP/rev.php</code></p>
 
 ```bash
 :~# nc -nlvp 9001
