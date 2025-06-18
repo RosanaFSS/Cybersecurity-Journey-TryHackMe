@@ -10,7 +10,7 @@ Click <a href="https://tryhackme.com/room/cmspit">here </a>to access the "room".
 
 Your mission is to exploit these vulnerabilities and compromise the web server.</p>
 
-<h4 align="left"> Answer the question below</h4>
+<h4 align="left"> Answer the questions below</h4>
 
 > 1.1. <em>What is the name of the Content Management System (CMS) installed on the server?</em><br><a id='1.1'></a>
 >> <strong><code>cockpit</code></strong><br>
