@@ -2,7 +2,7 @@
 June 18, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
 part of my <code>408</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-My first CTF ! <br>Click <a href="https://tryhackme.com/room/olympusroom">here</a>to access the "room".<br>
+My first CTF ! <br>Click <a href="https://tryhackme.com/room/olympusroom">here </a>to access the "room".<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/2de07292-e13c-4919-b141-6d467fd656d0"></p>
 
 <h2> Task 1 . Connection</h2>
