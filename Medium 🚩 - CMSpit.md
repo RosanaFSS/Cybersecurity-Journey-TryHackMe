@@ -69,14 +69,13 @@ PORT   STATE SERVICE VERSION
 <h3>rustscan</h3>
 <p>
   
-- <code>-a</code> = __<br>
-- <code>-b</code> = __<br>
-- <code>-A</code> = __<br> 
-- <code>--ulimit</code> = ___</p>
+- <code>-a</code> = used to perform a comprehensive scan of all TCP ports on the target<br>
+- <code>-A</code> = a flag used by nmap<br> 
+- <code>--ulimit</code> = option used to managee the speed at which ports will be scanned</p>
 
 
 ```bash
-:~# rustscan -a TargetIP --ulimit 5500 -b 65535 -- -A -Pn
+:~# rustscan -a TargetIP --ulimit 5500 -- -A -Pn
 ...
 PORT   STATE SERVICE REASON  VERSION
 22/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
