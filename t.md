@@ -1662,4 +1662,30 @@ Hope you liked the room ;)
 ![image](https://github.com/user-attachments/assets/326f4899-a5b6-40bf-953d-ebe1d0ad7c24)
 
 
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 18 2025      | 408      |     198ᵗʰ    |      5ᵗʰ     |     275ᵗʰ   |     4ᵗʰ    |  108,669 |    787    |     63    |
+
+</div>
+
+
+![image](https://github.com/user-attachments/assets/0e3aae98-9390-4209-b5b5-2a16862a12a7)
+
+
+![image](https://github.com/user-attachments/assets/5ed0bf1a-6641-48c8-b300-ec9b97358ee2)
+
+![image](https://github.com/user-attachments/assets/fbcb0049-08f1-44d5-b1b4-80c2321b5707)
+
+
+![image](https://github.com/user-attachments/assets/d4e8a4ec-5954-4396-8274-ea8890901db3)
+
+![image](https://github.com/user-attachments/assets/5d975076-c3d4-4df5-9ec8-da63410d9cc2)
+
+
+
 
