@@ -113,7 +113,7 @@ PORT   STATE SERVICE REASON  VERSION
 <br>
 
 > 1.3. <em>What is the path that allow user enumeration?</em><br><a id='1.3'></a>
->> <strong><code>0.11.1</code></strong><br>
+>> <strong><code>/auth/check</code></strong><br>
 <p></p>
 
 <p>Identified in page source ...</p>
@@ -163,10 +163,6 @@ App.request('/auth/check', {
 
 <br>
 <br>
-
-> 1.3. <em>What is the path that allow user enumeration?</em><br><a id='1.3'></a>
->> <strong><code>0.11.1</code></strong><br>
-<p></p>
 
 <h3>ExploitdB</h3>
 
