@@ -220,7 +220,10 @@ App.request('/auth/check', {
  	 Password : $<#aV+G^4l
 ```
 
-<p>Logged in as <code>admin</code> in <code>>http://TargetIP/auth/login?to=/</code></p>
+<p>Logged in as <code>admin</code> in ...</p>
+
+![image](https://github.com/user-attachments/assets/557a4cc9-315c-4478-bbe1-5d5f3b393cce)
+
 
 ![image](https://github.com/user-attachments/assets/8b4e59c5-6275-4466-90a2-efbe28407c66)
 
