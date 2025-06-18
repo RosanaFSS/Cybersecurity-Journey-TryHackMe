@@ -1,4 +1,4 @@
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/4e78a905-f5e9-4106-93dd-f06e53ee9178"><br>
+<p align="center"><img width="80px" src=""><br>
 June 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
 part of my <code>407</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
