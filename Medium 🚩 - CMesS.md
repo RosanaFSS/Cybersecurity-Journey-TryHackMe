@@ -26,7 +26,7 @@ PORT   STATE SERVICE VERSION
 ```
 
 ```bash
- dirsearch -u http://10.10.31.7 --exclude-status=401,4502,403,404 > dirsearch__
+dirsearch -u http://10.10.31.7 --exclude-status=401,402,403,404 > dirsearch__
 ...
 [01:42:39] Starting: 
 [01:42:45] 200 -    1KB - /0
