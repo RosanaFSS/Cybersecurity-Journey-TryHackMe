@@ -5,10 +5,6 @@ part of my <code>408</code>-day-streak in <a href="https://tryhackme.com">TryHac
 My first CTF ! <br>Click <a href="https://tryhackme.com/room/olympusroom">here</a>to access the "room".<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/2de07292-e13c-4919-b141-6d467fd656d0"></p>
 
-
-![image](https://github.com/user-attachments/assets/7368cf5e-ce9c-4f56-9e8d-b3c37da70405)
-
-
 <h2> Task 1 . Connection</h2>
 
 <h3 align="left"> Answer the question below</h3>
@@ -21,7 +17,7 @@ My first CTF ! <br>Click <a href="https://tryhackme.com/room/olympusroom">here</
 
 <h2>Task 2 . Flag submission</h2>
 
-<p><img width="1200px" src="https://github.com/user-attachments/assets/7368cf5e-ce9c-4f56-9e8d-b3c37da70405""></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/7368cf5e-ce9c-4f56-9e8d-b3c37da70405""></p>
 
 <h3 align="left"> Answer the questions below</h3>
 
