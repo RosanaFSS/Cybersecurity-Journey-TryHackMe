@@ -23,6 +23,7 @@ Your mission is to exploit these vulnerabilities and compromise the web server.<
 <p>
   
 </p>
+
 - <code>-sS</code>/<code>-sT</code>/<code>-sA</code>/<code>-sW</code>/<code>-SM</code> = <code>TCP SYN</code>/<code>Connect()</code>/<code>ACK</code>/<code>Window</code>/<code>Maimon scans</code><br>
 - <code>-sC</code> = equivalent to --script=default<br>
 - <code>-p</code> =scan all ports<br>
