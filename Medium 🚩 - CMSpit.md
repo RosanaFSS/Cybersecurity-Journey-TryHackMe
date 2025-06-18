@@ -68,7 +68,7 @@ PORT   STATE SERVICE VERSION
 <h3>rustscan</h3>
 <p>
   
-- <code>-a</code> = __br>
+- <code>-a</code> = __<br>
 - <code>-b</code> = __<br>
 - <code>-A</code> = __<br> 
 - <code>--ulimit</code> = ___</p>
