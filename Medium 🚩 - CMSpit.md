@@ -1,8 +1,9 @@
-<h1 align="center">CMSpit<br><img width="1200px" src=""></h1>
+<h1 align="center">CMSpit<br><img width="1200px" src="https://github.com/user-attachments/assets/0e71499b-e0dd-4791-b4da-ae7097f4e71b"></h1>
 <p align="center">June 18, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>408</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>This is a machine that allows you to practise web app hacking and privilege escalation using recent vulnerabilities.</em><br>
 Click <a href="https://tryhackme.com/room/cmspit">here </a>to access the "room".<br>
 <img width="80px" src="https://github.com/user-attachments/assets/5d595d6b-e29e-4ce1-9c1d-6bc04341b4d2"><br></p>
+
 
 <h2> Task 1 . Ready Set Go</h2>
 <p>You've identified that the CMS installed on the web server has several vulnerabilities that allow attackers to enumerate users and change account passwords.<br>
@@ -480,13 +481,33 @@ root.txt
 thm{bf52a85b12cf49b9b6d77643771d74e90d4d5ada}
 ```
 
-
 ![image](https://github.com/user-attachments/assets/31ad4101-7799-4dd7-ad65-beb3a3f9297e)
 
+<br>
+<br>
 
 
-<p>Logged in as <code>admin</code> again.<br>
-Navigated to <code>System</code> > <code>Accounts</code><br>
-Changed <code>darkStar7471</code>´s and <code>Ekoparty</code>´s passwords</p>
+![image](https://github.com/user-attachments/assets/60b2df0a-83bb-4d71-9ab8-024efddb4d3c)
 
+![image](https://github.com/user-attachments/assets/60ebef00-9120-42b2-a920-a09172feef01)
 
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 18 2025      | 408      |     193ʳᵈ    |      5ᵗʰ     |     242ⁿᵈ   |     4ᵗʰ    |  109,029 |    788    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/c18efc6d-bba2-40bb-a647-1eeec5d3347b)
+
+![image](https://github.com/user-attachments/assets/95ed8e68-cbfb-458e-b2ca-24d0122a0e0c)
+
+![image](https://github.com/user-attachments/assets/d395642b-65e7-4974-ac2e-b837af0581fb)
+
+![image](https://github.com/user-attachments/assets/6a139684-a8e4-4453-9afc-49a335737744)
+
+![image](https://github.com/user-attachments/assets/cb107dc8-e4de-420c-8e67-918562ed00f2)
