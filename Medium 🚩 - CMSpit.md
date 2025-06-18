@@ -145,6 +145,7 @@ App.request('/auth/check', {
 ```
 
 <p><em>Decoded Payload</em></p>
+
 ```bash
 {
   "csfr": "login"
