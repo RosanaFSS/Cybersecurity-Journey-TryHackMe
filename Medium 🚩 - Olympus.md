@@ -1,9 +1,10 @@
+<h1 align="center">Olympus<br><img width="1200px" src="https://github.com/user-attachments/assets/2de07292-e13c-4919-b141-6d467fd656d0"></h1>
+
 <h1 align="center">Olympus</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/760dba27-7082-4766-8c68-a3d36f9acbdb"><br>
 June 18, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my <code>408</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-My first CTF ! <br>Click <a href="https://tryhackme.com/room/olympusroom">here </a>to access the "room".<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/2de07292-e13c-4919-b141-6d467fd656d0"></p>
+My first CTF ! <br>Click <a href="https://tryhackme.com/room/olympusroom">here </a>to access the "room".</p>
 
 <h2> Task 1 . Connection</h2>
 
