@@ -126,13 +126,13 @@ Table: users
 
 ![image](https://github.com/user-attachments/assets/088d15f8-5d97-4c3a-8301-90f61bfd81c8)
 
+<h3>ssh</h3>
+
 ```bash
 :~/Biblioteca# ssh hazel@biblioteca
 ```
 
 ![image](https://github.com/user-attachments/assets/e50422de-e525-455a-81a4-dc748d191d5f)
-
-<h3>ssh</h3>
 
 ```bash
 hazel@ip-xx-xx-xxx-xx:~$ pwd
@@ -142,7 +142,7 @@ hasher.py  user.txt
 hazel@ip-xx-xx-xxx-xx:~$ cat user.txt
 ```
 
-![image](https://github.com/user-attachments/assets/ecf4c3eb-5ec2-4db3-a20f-5afc0fde8394)
+![image](https://github.com/user-attachments/assets/457dc5cd-ede2-4d73-85ba-24ec6b32562b)
 
 <h3>hasher.py</h3>
 
