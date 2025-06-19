@@ -130,16 +130,16 @@ Table: users
 :~/Biblioteca# ssh hazel@biblioteca
 ```
 
-![image](https://github.com/user-attachments/assets/27f9b0c7-f0e9-4a7b-8d96-cff2989371a2)
+![image](https://github.com/user-attachments/assets/e50422de-e525-455a-81a4-dc748d191d5f)
 
 <h3>ssh</h3>
 
 ```bash
-hazel@ip-10-10-229-62:~$ pwd
+hazel@ip-xx-xx-xxx-xx:~$ pwd
 /home/hazel
-hazel@ip-10-10-229-62:~$ ls
+hazel@ip-xx-xx-xxx-xx:~$ ls
 hasher.py  user.txt
-hazel@ip-10-10-229-62:~$ cat user.txt
+hazel@ip-xx-xx-xxx-xx:~$ cat user.txt
 ```
 
 ![image](https://github.com/user-attachments/assets/ecf4c3eb-5ec2-4db3-a20f-5afc0fde8394)
