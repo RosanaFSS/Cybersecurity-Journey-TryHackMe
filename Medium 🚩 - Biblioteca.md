@@ -150,7 +150,7 @@ hazel@ip-xx-xx-xxx-xx:~$ cat user.txt
 
 <h3>sudo -l</h3>
 
-![image](https://github.com/user-attachments/assets/8800d740-4235-4524-8cc5-04b90e0a64af)
+![image](https://github.com/user-attachments/assets/dd8e2eda-02c1-45f1-b3ba-bc5c36ca4a15)
 
 <p><code>hazel</code>code> can run <code>/usr/bin/python3 /home/hazel/hasher.py</code>code></p>
 
