@@ -116,8 +116,7 @@ Table: users
 
 ![image](https://github.com/user-attachments/assets/d556c288-0d78-4195-a46d-03902bb0ee49)
 
-![image](https://github.com/user-attachments/assets/b1ab31ee-5033-4992-81fb-a4f557cab02f)
-
+![image](https://github.com/user-attachments/assets/6d137507-6bc2-48f3-aa28-c0b9adeca9aa)
 
 <h3>hydra</h3>
 
