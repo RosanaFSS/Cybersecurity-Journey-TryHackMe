@@ -1,4 +1,4 @@
-<h1 align="center">Madeye´s Castle<br><img width="1200px" src=""></h1>
+![image](https://github.com/user-attachments/assets/347ea02d-086a-45dc-a129-6488b5c84a6e)<h1 align="center">Madeye´s Castle<br><img width="1200px" src=""></h1>
 <p align="center">June 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>408</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Shhh. Be very very quiet, no shouting inside the biblioteca.</em><br>
 Click <a href="https://tryhackme.com/room/biblioteca">here </a>to access the "room".<br>
@@ -146,8 +146,7 @@ hazel@ip-xx-xx-xxx-xx:~$ cat user.txt
 
 <h3>hasher.py</h3>
 
-![image](https://github.com/user-attachments/assets/617f6cf5-7419-49cf-a1ba-c046e7e30433)
-
+![image](https://github.com/user-attachments/assets/50d3e7ec-f664-455f-b70f-c6bbe9f7a876)
 
 <h3>sudo -l</h3>
 
