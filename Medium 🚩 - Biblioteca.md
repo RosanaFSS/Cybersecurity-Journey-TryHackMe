@@ -1,4 +1,4 @@
-<h1 align="center">Biblioteca<br><img width="1200px" src=""></h1>
+<h1 align="center">Biblioteca<br><img width="1200px" src="https://github.com/user-attachments/assets/be87e06e-2336-426b-aa6f-207ed9fae3c4"></h1>
 <p align="center">June 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>409</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Shhh. Be very very quiet, no shouting inside the biblioteca.</em><br>
 Click <a href="https://tryhackme.com/room/biblioteca">here </a>to access the "room".<br>
@@ -177,3 +177,28 @@ rootl@ip-xx-xx-xxx-xx:/tmp#
 
 <br>
 <br>
+
+![image](https://github.com/user-attachments/assets/4a26fccf-1468-4eec-aa88-9e3e27798eab)
+
+![image](https://github.com/user-attachments/assets/54bb117e-483c-4776-a833-7bef4ffa09e8)
+
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 19 2025      | 409      |     193ʳᵈ    |      5ᵗʰ     |     244ᵗʰ   |     5ᵗʰ    |  109,149 |    789    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/b0d3bbcf-8ee0-46c6-b69e-c54cd2f192c9)
+
+![image](https://github.com/user-attachments/assets/a657b6f8-35f9-42fb-9ff6-fbf3c449d1fd)
+
+![image](https://github.com/user-attachments/assets/4ebfd7c7-5d12-4f56-a6d0-1cbcc37b98d1)
+
+![image](https://github.com/user-attachments/assets/1fad5c84-964b-4964-81ff-0d6be51af05c)
+
+![image](https://github.com/user-attachments/assets/08ea70ea-7b0a-4edb-8afd-b945634add9c)
