@@ -24,52 +24,25 @@ Click <a href="https://tryhackme.com/room/zeno">here </a>to access the "room".<b
 <h3>nmap</h3>
 
 ```bash
-root@ip-10-10-74-47:~# nmap -A -sV -p- -Pn 10.10.222.29
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-06-19 23:45 BST
-Nmap scan report for 10.10.222.29
-Host is up (0.00019s latency).
-Not shown: 65533 filtered ports
+:~# nmap -A -sV -p- -Pn 10.10.222.29
+...
 PORT      STATE SERVICE VERSION
 22/tcp    open  ssh     OpenSSH 7.4 (protocol 2.0)
 | ssh-hostkey: 
-|   2048 09:23:62:a2:18:62:83:69:04:40:62:32:97:ff:3c:cd (RSA)
-|   256 33:66:35:36:b0:68:06:32:c1:8a:f6:01:bc:43:38:ce (ECDSA)
-|_  256 14:98:e3:84:70:55:e6:60:0c:c2:09:77:f8:b7:a6:1c (ED25519)
+...
 12340/tcp open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
 | http-methods: 
 |_  Potentially risky methods: TRACE
 |_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
 |_http-title: We&#39;ve got some trouble | 404 - Resource not found
-MAC Address: 02:B8:07:FA:90:05 (Unknown)
-Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Device type: general purpose|specialized
-Running (JUST GUESSING): Linux 3.X (98%), Crestron 2-Series (90%)
-OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:crestron:2_series
-Aggressive OS guesses: Linux 3.10 - 3.13 (98%), Linux 3.8 (92%), Crestron XPanel control system (90%)
-No exact OS matches for host (test conditions non-ideal).
-Network Distance: 1 hop
-
-TRACEROUTE
-HOP RTT     ADDRESS
-1   0.19 ms 10.10.222.29
-
-OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 149.30 seconds
-root@ip-10-10-74-47:~# 
-
+...
 ```
 
 <h3>dirsearch</h3>
 
-```bash
-
-```
-
 ![image](https://github.com/user-attachments/assets/d5cdd587-b578-4b66-b1ef-4051ef6e3a96)
 
-
 ![image](https://github.com/user-attachments/assets/671ca678-dffa-461f-83a8-58e382b1eb4b)
-
 
 ![image](https://github.com/user-attachments/assets/bda1be4a-3205-4b77-8dbe-3f9805404331)
 
@@ -85,7 +58,6 @@ root@ip-10-10-74-47:~#
 ![image](https://github.com/user-attachments/assets/d962a75c-e421-4a76-8421-d4db2a046867)
 
 ![image](https://github.com/user-attachments/assets/96043564-c438-4140-a4b3-9eab02da784c)
-
 
 <p>47520.py</p>
 
