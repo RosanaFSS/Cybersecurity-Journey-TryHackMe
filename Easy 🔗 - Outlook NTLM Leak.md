@@ -6,8 +6,6 @@ part of my <code>412</code>-day-streak in<a href="https://tryhackme.com">TryHack
 Leak password hashes from a user by sending them an email by abusing CVE-2023-23397. Click <a href="https://tryhackme.com/room/outlookntlmleak"</a> here to access this challenge.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/96b130a3-7b9a-41a5-8622-2e04a5154fc5"></p>
 
-![image](https://github.com/user-attachments/assets/96b130a3-7b9a-41a5-8622-2e04a5154fc5)
-
 <h2> Task 1 . Introduction</h2>
 
 ![image](https://github.com/user-attachments/assets/a5104a37-6234-45f4-aad6-ed26b703f8a3)
