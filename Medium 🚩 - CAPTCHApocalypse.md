@@ -36,16 +36,3 @@ Note: Use the first 100 lines of rockyou.txt</p>
                    Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/8bdfe614-93e3-44eb-bcba-07261df2fe7a"><br><br>
                    Global monthly:   289ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/a0cad15b-f371-413d-a187-792563c0f6cf"><br><br>
                    Brazil monthly:    6ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/14e0c193-948f-439a-9f2a-c8e9abcd0522"><br><br><p>
-
-![image](https://github.com/user-attachments/assets/4bd88763-3b1b-4e1c-8b87-4a143ca8204b)
-
-![image](https://github.com/user-attachments/assets/49e42aff-339c-485f-b7e8-24bb799daf68)
-
-![image](https://github.com/user-attachments/assets/e0591b28-70ac-4f93-ad44-3a2c3344c39e)
-
-![image](https://github.com/user-attachments/assets/8bdfe614-93e3-44eb-bcba-07261df2fe7a)
-
-![image](https://github.com/user-attachments/assets/a0cad15b-f371-413d-a187-792563c0f6cf)
-
-
-![image](https://github.com/user-attachments/assets/14e0c193-948f-439a-9f2a-c8e9abcd0522)
