@@ -1,8 +1,9 @@
-<h1 align="center">CAPTCHApocalypse<br><img width="1200px" src="https://github.com/user-attachments/assets/9a59cdaa-fc3d-4006-9ef3-15f55c83d18c"></h1>
+<h1 align="center">CAPTCHApocalypse<br>
+<img width="80px" src="https://github.com/user-attachments/assets/7b40150e-a888-4a6b-ac7f-ac13630277cc"><br>
+<img width="1200px" src="https://github.com/user-attachments/assets/9a59cdaa-fc3d-4006-9ef3-15f55c83d18c"></h1>
 <p align="center">June 23, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>413</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>When crypto interferes, automate.</em><br>
-Click <a href="https://tryhackme.com/room/captchapocalypse">here </a>to access the "room".<br>
-<img width="80px" src="https://github.com/user-attachments/assets/7b40150e-a888-4a6b-ac7f-ac13630277cc"><br></p>
+Click <a href="https://tryhackme.com/room/captchapocalypse">here </a>to access the "room".<br></p>
 
 <h2> Task 1 . Challenge</h2>
 <p>Can you guess the password of the admin user and log in to the dashboard?<br>
