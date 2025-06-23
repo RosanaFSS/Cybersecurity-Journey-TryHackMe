@@ -16,15 +16,17 @@ Note: Use the first 100 lines of rockyou.txt</p>
 >> <strong><code>THM{8938aed9fbf43bddb7c0a98f292dca00}</code></strong><br>
 <p></p>
 
-<BR>
+<br>
 
 <h1 align="center">My walkthrough will be available on <code>Medium</code> soon. 🚧</h1>
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
+<br>
+
+<h1 align="center"> Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/661958f1-2089-4380-9adb-63261935e646"><br>
                    <img width="1000px" src="https://github.com/user-attachments/assets/7bdc1513-6da0-4d68-98b9-19f55c834370"></p>
 
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{My TryHackMe Journey}}$$</h1>
+<h1 align="center"> My TryHackMe Journey</h1>
 
 <div align="center">
 
