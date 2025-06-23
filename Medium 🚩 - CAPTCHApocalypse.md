@@ -11,7 +11,7 @@ Note: Use the first 100 lines of rockyou.txt</p>
 
 <h4 align="left"> Answer the question below</h4>
 
-> 1.1. <em>user.txt</em><br><a id='1.1'></a>
+> 1.1. <em>What is the flag?</em><br><a id='1.1'></a>
 >> <strong><code>THM{8938aed9fbf43bddb7c0a98f292dca00}</code></strong><br>
 <p></p>
 
