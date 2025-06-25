@@ -41,8 +41,8 @@ agent47@linuxagency:~$
 <br>
 
 <h1>Task 3 . Linux Fundamentals</h1>
-<p>Agent 47, we are ICA, the Linux Agency. We will test your Linux Fundamentals. Let's see if you can pass all these challenges of basic Linux. The password of the next mission will be the flag of that mission. Example: mission1{1234567890} will be the password for the mission1 user.
-<h3>Mission Active</h3></p>
+<p>Agent 47, we are ICA, the Linux Agency. We will test your Linux Fundamentals. Let's see if you can pass all these challenges of basic Linux. The password of the next mission will be the flag of that mission. Example: mission1{1234567890} will be the password for the mission1 user.</p>
+<h3>Mission Active</h3>
 
 <p>3.1. What is the mission1 flag?<br>
 <code>mission1{174dc8f191bcbb161fe25f8a5b58d1f0}</code></p>
@@ -433,4 +433,226 @@ mission24@linuxagency:~$ ./bribe
 Here ya go!!!
 mission25{61b93637881c87c71f220033b22a921b}
 Don't tell police about the deal man ;)
+```
+
+<p>3.26. What is the mission26 flag?<br>
+<code>mission26{cb6ce977c16c57f509e9f8462a120f00}</code></p>
+
+```bash
+mission24@linuxagency:~$ su mission25
+Password:
 ...
+mission25@linuxagency:~$ find / -type f -name "flag.txt" 2>/dev/null
+mission25@linuxagency:~$ echo '<flag.txt'
+<flag.txt
+mission25@linuxagency:~$ echo $PATH
+
+mission25@linuxagency:~$ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin/:/usr/bin:/sbin:/bin
+mission25@linuxagency:~$ ls
+flag.txt
+mission25@linuxagency:~$ cat flag.txt
+mission26{cb6ce977c16c57f509e9f8462a120f00}
+```
+
+<p>3.27. What is the mission27 flag?<br>
+<code>mission27{444d29b932124a48e7dddc0595788f4d}</code></p>
+
+```bash
+mission25@linuxagency:~$ su mission26
+Password: 
+...mission26@linuxagency:~$ ls -lah
+total 100K
+drwxr-x---  2 mission26 mission26 4.0K Jan 12  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission26 mission26    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission26 mission26 3.7K Jan 12  2021 .bashrc
+-r--------  1 mission26 mission26  84K Jan 12  2021 flag.jpg
+-rw-r--r--  1 mission26 mission26  807 Jan 12  2021 .profile
+mission26@linuxagency:~$ file flag.jpg
+flag.jpg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 100x100, segment length 16, comment: "mission27{444d29b932124a48e7dddc0595788f4d}", progressive, precision 8, 1000x1870, frames 3
+```
+
+<p>3.28. What is the mission28 flag?<br>
+<code>mission28{03556f8ca983ef4dc26d2055aef9770f}</code></p>
+
+```bash
+mission26@linuxagency:~$ su mission27
+Password: 
+...
+mission27@linuxagency:~$ ls -lah
+total 20K
+drwxr-x---  2 mission27 mission27 4.0K Jan 12  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission27 mission27    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission27 mission27 3.7K Jan 12  2021 .bashrc
+-rw-r--r--  1 mission27 mission27  136 Jan 12  2021 flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png.gz
+-rw-r--r--  1 mission27 mission27  807 Jan 12  2021 .profile
+mission27@linuxagency:~$ file flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png.gz
+flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png.gz: gzip compressed data, was "flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png", last modified: Mon Jan 11 06:42:10 2021, from Unix
+mission27@linuxagency:~$ gunzip -k flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png.gz
+mission27@linuxagency:~$ ls
+flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png  flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png.gz
+mission27@linuxagency:~$ file flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png
+flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.png: GIF image data, version 87a, 27914 x 29545
+mission27@linuxagency:~$ cat *
+GIF87a
+mission28{03556f8ca983ef4dc26d2055aef9770f}
+B\ufffd\ufffd_flag.mp3.mp4.exe.elf.tar.php.ipynb.py.rb.html.css.zip.gz.jpg.pngs\ufffdt\ufffd0O\ufffd\ufffd\ufffd,.\ufffd\ufffd\ufffd3\ufffd\ufffd60655K\ufffdHN\ufffd\ufffd0NM3II62K1205MLM\ufffd477H\ufffd\ufffd\ufffd\ufffd]33mission27@linuxagency:~$ 
+```
+
+<p>3.29. What is the mission29 flag?<br>
+<code>mission29{8192b05d8b12632586e25be74da2fff1}</code></p>
+
+```bash
+mission27@linuxagency:~$ su mission28
+Password: 
+irb(main):001:0> exec '/bin/bash'
+mission28@linuxagency:/home/mission27$ pwd
+/home/mission27
+mission28@linuxagency:/home/mission27$ cd ..
+mission28@linuxagency:/home$ cd mission28
+mission28@linuxagency:~$ ls -lah
+total 40K
+drwxr-x---  3 mission28 mission28 4.0K Jan 12  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission28 mission28    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission28 mission28  220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 mission28 mission28 3.7K Jan 12  2021 .bashrc
+-rw-r--r--  1 mission28 mission28 8.8K Jan 12  2021 examples.desktop
+drwxr-xr-x  3 mission28 mission28 4.0K Jan 12  2021 .local
+-rw-r--r--  1 mission28 mission28  807 Jan 12  2021 .profile
+-r--------  1 mission28 mission28   44 Jan 12  2021 txt.galf
+mission28@linuxagency:~$ file txt.galf
+txt.galf: ASCII text
+mission28@linuxagency:~$ cat txt.galf
+}1fff2ad47eb52e68523621b8d50b2918{92noissim
+mission28@linuxagency:~$ irb
+irb(main):001:0> '}1fff2ad47eb52e68523621b8d50b2918{92noissim'.reverse
+=> "mission29{8192b05d8b12632586e25be74da2fff1}"
+irb(main):002:0> exec '/bin/bash'
+```
+
+<p>3.30. What is the mission30 flag?<br>
+<code>viktor{b52c60124c0f8f85fe647021122b3d9a}</code></p>
+
+```bash
+mission28@linuxagency:~$ su mission29
+Password: 
+...
+mission29@linuxagency:~$ ls -lah
+total 20K
+drwxr-x---  3 mission29 mission29 4.0K Jan 12  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission29 mission29    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission29 mission29 3.7K Jan 12  2021 .bashrc
+drwxr-xr-x  7 mission29 mission29 4.0K Jan 12  2021 bludit
+-rw-r--r--  1 mission29 mission29  807 Jan 12  2021 .profile
+mission29@linuxagency:~$ grep -rn 'mission30' /var 2>/dev/null
+Binary file /var/log/journal/e5c33f65843d4fde84404ee7ae1a0806/user-1029.journal matches
+mission29@linuxagency:~$ grep -rn 'mission30'
+bludit/.htpasswd:1:mission30{d25b4c9fac38411d2fcb4796171bda6e} 
+```
+
+<p>3.31. What is viktor's Flag?<br>
+<code> viktor{b52c60124c0f8f85fe647021122b3d9a}</code></p>
+
+```bash
+mission29@linuxagency:/home$ su mission30
+Password:
+...
+mission30@linuxagency:~$ grep -r viktor /home/mission30 2>/dev/null
+/home/mission30/Escalator/.git/logs/HEAD:0000000000000000000000000000000000000000 e0b807dbeb5aba190d6307f072abb60b34425d44 root <root@Xyan1d3> 1610359600 +0530	commit (initial): Your flag is viktor{b52c60124c0f8f85fe647021122b3d9a}
+/home/mission30/Escalator/.git/logs/refs/heads/master:0000000000000000000000000000000000000000 e0b807dbeb5aba190d6307f072abb60b34425d44 root <root@Xyan1d3> 1610359600 +0530	commit (initial): Your flag is viktor{b52c60124c0f8f85fe647021122b3d9a}
+mission30@linuxagency:~$ 
+```
+
+<br>
+
+<h2>Task 4 . Privilege Escalation</h2>
+<p>Welcome to Privilege Escalation, 47. Glad you made it this far!!! Now, here are some special targets. Your Target is to teach these bad guys a lesson.<br>
+
+Good luck 47!!!!</p>
+<h3>Mission Active</h3>
+
+<p>4.1. su into viktor user using viktor's flag as password<br>
+<code>No answer needed</code></p>
+
+```bash
+mission30@linuxagency:~$ su viktor
+Password:
+viktor@linuxagency:~$ 
+```
+
+<p>4.2. What is dalia's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.3. What is silvio's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.4. What is reza's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.5. What is jordan's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.6. What is ken's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.7. What is sean's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.8. What is penelope's flag?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.9. What is robert's Passphrase?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.10. What is user.txt?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<p>4.11. What is root.txt?<br>
+<code>______</code></p>
+
+```bash
+
+```
+
+<br>
+<br>
+
