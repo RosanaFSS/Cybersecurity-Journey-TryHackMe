@@ -3,24 +3,6 @@
 
 ![image](https://github.com/user-attachments/assets/91e1a9a0-af85-44fc-9f55-bac1e8df82e6)
 
-
-
-<h1>I learned in <code>Intrusion Detection</code></code>:</h1>
-<p>
-
-- <code>IDS</code> = Introduction Detection Systems<br>
-- IDS apply 2 detection methodologies: <code>Signature (or rule) based</code> and <code>Anomaly-based</code>.<br>
-- once an incident is detected, the IDS will generate and <code>alert</code>.<br>
-- <code>Suricata</code> is a <code>NIDS</code>, Network-based IDS .<br>
-- <code>Wazuh</code>  is an HIDS, Host-based IDS.<br>
-- <code>NIDS</code> monitor networks for malicious activity by checking packets for traces of activity associated with a wide variety of hostile or unwanted activity: Malware command and control, Exploitation tools, Scanning, Data exfiltration, Contact with phishing sites andCorporate policy violations. <code>NIDS</code> are more prone to generating false positives than other IDS.<br>
-- ...<br>
-- nmap and other scanners are active sonar, then open-source intelligence or OSINT is passive sonar<br>
-
-
-  
-</p>
-
 <br>
 
 <h2>Task 1 . Introduction</h2>
