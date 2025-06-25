@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{TryHackMe}}$$ </h1>
-<h4 align="center">May 27, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
+<h4 align="center">Jun 25, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
 <h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
 
 <div align="center">
@@ -20,9 +20,9 @@
 <br>
 
 
-<h2 align="center"> $$\textcolor{white}{\textnormal{May 27, 2025 - My yearly activity}}$$ <br>
-<img width="1000px" src="https://github.com/user-attachments/assets/54ec64ac-d93d-400b-a24e-098cf23f011c"/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/edf33221-2b33-428e-b01d-1b6f937e691a"/><br>255/414</h2>
+<h2 align="center"> $$\textcolor{white}{\textnormal{Jun 25, 2025 - My yearly activity}}$$ <br>
+<img width="1000px" src=""/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/b8a51f45-d154-4059-96f7-d0b64e03ce37"/><br>255/414</h2>
 
 <br>
 
@@ -37,6 +37,7 @@
 |Year Month      |Monthly         |All Time        |Achievement                                                                                        |
 |:---------------|---------------:|---------------:|:-------------------------------------------------------------------------------------------------:| 
 |                |Brazil          |Global          |                                                                                                   |
+|2025 Jun        |6ᵗʰ             |184ᵗʰ           | <img src="https://github.com/user-attachments/assets/2eebd4f7-6e56-460e-bba8-ff16519d5e2c" style="width:300px;"/>|
 |2025 May        |3ʳᵈ             |207ᵗʰ           | <img src="https://github.com/user-attachments/assets/71ee760a-22da-4e72-ac46-03fc6f49c030" style="width:300px;"/>|
 |2025 April      |2ⁿᵈ             |263ʳᵈ           | <img src="https://github.com/user-attachments/assets/95802e5e-b0d6-41b0-8b71-7450936af8f3" style="width:300px;"/>|
 |2025 March      |5ᵗʰ             |321ˢᵗ           | <img src="https://github.com/user-attachments/assets/ea6b7eae-ae33-4491-927c-2b9ad8166323" style="width:300px;"/> |
@@ -70,6 +71,7 @@
 |Date                       |Streak    |      All Time|      All Time|       Monthly|       Monthly|Points    | Rooms     |
 |:--------------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
 |                           |          |        Global|        Brazil|        Global|        Brazil|          |           | 
+| Jun 25, 2025              | 415      |         184ᵗʰ|           5ᵗʰ|         275ᵗʰ|           6ᵗʰ| 110,197  |       801 |
 | May 27, 2025              | 386      |         207ᵗʰ|           4ᵗʰ|         148ᵗʰ|           3ʳᵈ| 104,917  |       750 |
 | May &nbsp; 1, 2025        | 360      |         241ˢᵗ|           6ᵗʰ|         298ᵗʰ|           5ᵗʰ| 99,015   |       700 |
 | April 30, 2025            | 359      |         245ᵗʰ|           6ᵗʰ|          54ᵗʰ|           2ⁿᵈ| 98,687   |       697 |
