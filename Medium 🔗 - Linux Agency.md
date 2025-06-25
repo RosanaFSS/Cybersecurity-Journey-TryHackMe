@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/11c9a09d-13f0-45b1-b70f-ebbf55560625)![image](https://github.com/user-attachments/assets/11c9a09d-13f0-45b1-b70f-ebbf55560625)<p>June 25, 2025</p>
+<p>June 25, 2025</p>
 <h1>Linux Agency</h1>
 <p>This Room will help you to sharpen your Linux Skills and help you to learn basic privilege escalation in a HITMAN theme. So, pack your briefcase and grab your SilverBallers as its gonna be a tough ride.</p>
 
