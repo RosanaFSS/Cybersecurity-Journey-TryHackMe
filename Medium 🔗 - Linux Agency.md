@@ -2,6 +2,8 @@
 <h1>Linux Agency</h1>
 <p>This Room will help you to sharpen your Linux Skills and help you to learn basic privilege escalation in a HITMAN theme. So, pack your briefcase and grab your SilverBallers as its gonna be a tough ride.</p>
 
+<br>
+
 <h1>Task 1 . Deploy the Machine</h1>
 
 <p>1.1. Deploy This Machine.<br>
@@ -21,6 +23,8 @@ Each flag found will serve as the password for the next user. The flag includes 
 The order of users: agent47 --> mission1 --> mission30 will be part of Task 3: Linux Fundamentals.<br>
 
 After those missions, the next levels will be in Task 4: Privilege Escalation.</p>
+
+<br>
 
 <p>2.1. SSH into the box as agent47<br>
 <code>No answer needed</code></p>
@@ -144,10 +148,289 @@ mission7{53fd6b2bad6e85519c7403267225def5}
 ```
 
 <p>3.8. What is the mission8 flag?<br>
-<code>mission7{53fd6b2bad6e85519c7403267225def5}</code></p>
+<code>mission8{3bee25ebda7fe7dc0a9d2f481d10577b}</code></p>
 
 ```bash
 mission6@linuxagency:~$ su mission7
 Password:
+mission7@linuxagency:/home/mission7$ ls
+flag.txt
+mission7@linuxagency:/home/mission7$ cat flag.txt
+mission8{3bee25ebda7fe7dc0a9d2f481d10577b}
 ```
 
+<p>3.9. What is the mission9 flag?<br>
+<code>mission9{ba1069363d182e1c114bef7521c898f5}</code></p>
+
+```bash
+mission7@linuxagency:/home/mission7$ su mission8
+Password: 
+...
+mission8@linuxagency:~$ find / -type f -name "flag.txt" 2>/dev/null
+/flag.txt
+...
+mission8@linuxagency:/$ cat flag.txt
+mission9{ba1069363d182e1c114bef7521c898f5}
+```
+
+<p>3.10. What is the mission10 flag?<br>
+<code>mission10{0c9d1c7c5683a1a29b05bb67856524b6}</code></p>
+
+```bash
+mission8@linuxagency:/home/mission8$ su mission9
+Password: 
+...
+mission9@linuxagency:~$ grep -r "mission10" /home 2>/dev/null
+/home/mission9/rockyou.txt:mission101
+/home/mission9/rockyou.txt:mission10
+/home/mission9/rockyou.txt:mission10{0c9d1c7c5683a1a29b05bb67856524b6}
+/home/mission9/rockyou.txt:mission1098
+/home/mission9/rockyou.txt:mission108
+```
+
+<p>3.11. What is the mission11 flag?<br>
+<code>mission11{db074d9b68f06246944b991d433180c0}</code></p>
+
+```bash
+mission9@linuxagency:/home/mission9$ su mission10
+Password: 
+...
+mission10@linuxagency:~$ find / -type f -name "flag.txt" 2>/dev/null
+/home/mission10/folder/L4D8/L3D7/L2D2/L1D10/flag.txt
+/flag.txt
+mission10@linuxagency:~$ cat /home/mission10/folder/L4D8/L3D7/L2D2/L1D10/flag.txt
+mission11{db074d9b68f06246944b991d433180c0}
+```
+
+<p>3.12. What is the mission12 flag?<br>
+<code>mission12{f449a1d33d6edc327354635967f9a720}</code></p>
+
+```bash
+mission9@linuxagency:/home/mission9$ su mission10
+Password: 
+...
+mission11@linuxagency:~$ env | grep mission12
+FLAG=mission12{f449a1d33d6edc327354635967f9a720}
+flag=mission12{f449a1d33d6edc327354635967f9a720}
+```
+
+<p>3.13. What is the mission13 flag?<br>
+<code>mission13{076124e360406b4c98ecefddd13ddb1f}</code></p>
+
+```bash
+mission12@linuxagency:/$ ls /home/mission12/flag.txt
+/home/mission12/flag.txt
+mission12@linuxagency:/$ ls -l /home/mission12/flag.txt
+---------- 1 mission12 mission12 44 Jan 12  2021 /home/mission12/flag.txt
+mission12@linuxagency:/$ chmod 777 /home/mission12/flag.txt
+mission12@linuxagency:/$ ls -l /home/mission12/flag.txt
+-rwxrwxrwx 1 mission12 mission12 44 Jan 12  2021 /home/mission12/flag.txt
+mission12@linuxagency:/$ cat /home/mission12/flag.txt
+mission13{076124e360406b4c98ecefddd13ddb1f}
+```
+
+<p>3.14. What is the mission14 flag?<br>
+<code>mission14{d598de95639514b9941507617b9e54d2}</code></p>
+
+```bash
+mission13@linuxagency:/$ cat /home/mission13/flag.txt
+bWlzc2lvbjE0e2Q1OThkZTk1NjM5NTE0Yjk5NDE1MDc2MTdiOWU1NGQyfQo=
+mission13@linuxagency:/$ echo 'bWlzc2lvbjE0e2Q1OThkZTk1NjM5NTE0Yjk5NDE1MDc2MTdiOWU1NGQyfQo=' | base64 -d
+mission14{d598de95639514b9941507617b9e54d2}
+```
+
+<p>3.15. What is the mission15 flag?<br>
+<code>mission15{fc4915d818bfaeff01185c3547f25596}</code></p>
+
+```bash
+mission14@linuxagency:/$ cat /home/mission14/flag.txt
+01101101011010010111001101110011011010010110111101101110001100010011010101111011011001100110001100110100001110010011000100110101011001000011100000110001001110000110001001100110011000010110010101100110011001100011000000110001001100010011100000110101011000110011001100110101001101000011011101100110001100100011010100110101001110010011011001111101
+```
+
+<p>used <code>RapidTables</code></p>
+
+![image](https://github.com/user-attachments/assets/d794e4b9-b586-45a9-b370-1e21429d60cc)
+
+
+<p>3.16. What is the mission16 flag?<br>
+<code>mission16{884417d40033c4c2091b44d7c26a908e}</code></p>
+
+```bash
+mission15@linuxagency:/$ cat /home/mission15/flag.txt
+6D697373696F6E31367B38383434313764343030333363346332303931623434643763323661393038657D
+mission15@linuxagency:/$ echo '6D697373696F6E31367B38383434313764343030333363346332303931623434643763323661393038657D' | xxd -r -p
+mission16{884417d40033c4c2091b44d7c26a908e}
+```
+
+<p>3.17. What is the mission17 flag?<br>
+<code>mission17{49f8d1348a1053e221dfe7ff99f5cbf4}</code></p>
+
+```bash
+mission16@linuxagency:~$ file flag
+flag: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=1606102f7b80d832eabee1087180ea7ce24a96ca, not stripped
+mission16@linuxagency:~$ chmod 777 flag
+mission16@linuxagency:~$ ./flag
+mission17{49f8d1348a1053e221dfe7ff99f5cbf4}
+```
+
+<p>3.18. What is the mission18 flag?<br>
+<code>mission18{f09760649986b489cda320ab5f7917e8}</code></p>
+
+```bash
+mission17@linuxagency:~$ ls -lah
+total 20K
+drwxr-x---  2 mission17 mission17 4.0K Jan 12  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission17 mission17    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission17 mission17 3.7K Jan 12  2021 .bashrc
+-rwxr-xr-x  1 mission17 mission17  475 Jan 12  2021 flag.java
+-rw-r--r--  1 mission17 mission17  807 Jan 12  2021 .profile
+mission17@linuxagency:~$ file flag.java
+flag.java: C source, ASCII text, with CRLF line terminators
+mission17@linuxagency:~$ javac flag.java
+mission17@linuxagency:~$ ls
+flag.class  flag.java
+mission17@linuxagency:~$ java flag
+mission18{f09760649986b489cda320ab5f7917e8}
+```
+
+<p>3.19. What is the mission19 flag?<br>
+<code>mission19{a0bf41f56b3ac622d808f7a4385254b7}</code></p>
+
+```bash
+mission18@linuxagency:~$ ls
+flag.rb
+mission18@linuxagency:~$ file flag.rb
+flag.rb: Ruby script, ASCII text
+mission18@linuxagency:~$ ruby flag.rb
+mission19{a0bf41f56b3ac622d808f7a4385254b7}
+```
+
+<p>3.20. What is the mission20 flag?<br>
+<code>mission20{b0482f9e90c8ad2421bf4353cd8eae1c}</code></p>
+
+```bash
+mission19@linuxagency:~$ ls
+flag.c
+mission19@linuxagency:~$ file flag.c
+flag.c: C source, ASCII text
+mission19@linuxagency:~$ gcc flag.c -o flag
+flag.c: In function \u2018main\u2019:
+flag.c:5:18: warning: implicit declaration of function \u2018strlen\u2019 [-Wimplicit-function-declaration]
+     int length = strlen(flag);
+                  ^~~~~~
+flag.c:5:18: warning: incompatible implicit declaration of built-in function \u2018strlen\u2019
+flag.c:5:18: note: include \u2018<string.h>\u2019 or provide a declaration of \u2018strlen\u2019
+mission19@linuxagency:~$ ls
+flag  flag.c
+mission19@linuxagency:~$ ./flag
+mission20{b0482f9e90c8ad2421bf4353cd8eae1c}
+```
+
+<p>3.21. What is the mission21 flag?<br>
+<code>mission21{7de756aabc528b446f6eb38419318f0c}</code></p>
+
+```bash
+mission20@linuxagency:~$ ls -lah
+total 20K
+drwxr-x---  2 mission20 mission20 4.0K Jan 12  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission20 mission20    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission20 mission20 3.7K Jan 12  2021 .bashrc
+-r--------  1 mission20 mission20  186 Jan 12  2021 flag.py
+-rw-r--r--  1 mission20 mission20  807 Jan 12  2021 .profile
+mission20@linuxagency:~$ which python3
+/usr/bin/python3
+mission20@linuxagency:~$ python3 flag.py
+mission21{7de756aabc528b446f6eb38419318f0c}
+```
+
+<p>3.22. What is the mission22 flag?<br>
+<code>mission22{24caa74eb0889ed6a2e6984b42d49aaf}</code></p>
+
+```bash
+mission20@linuxagency:~$ su mission21
+Password: 
+$ bash
+mission22{24caa74eb0889ed6a2e6984b42d49aaf}
+```
+
+<p>3.23. What is the mission23 flag?<br>
+<code>mission23{3710b9cb185282e3f61d2fd8b1b4ffea}</code></p>
+
+```bash
+mission21@linuxagency:~$ su mission22
+Password: 
+Python 3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exec(open("/home/mission22/flag.txt").read())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 1
+    mission23{3710b9cb185282e3f61d2fd8b1b4ffea}
+             ^
+SyntaxError: invalid syntax
+>>> 
+```
+
+<p>3.24. What is the mission24 flag?<br>
+<code>mission24{dbaeb06591a7fd6230407df3a947b89c}</code></p>
+
+```bash
+mission21@linuxagency:~$ su mission23
+Password:
+...
+mission23@linuxagency:~$ ls -lah
+total 24K
+drwxr-x---  3 mission23 mission23 4.0K Jan 15  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission23 mission23    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission23 mission23 3.7K Jan 12  2021 .bashrc
+drwxrwxr-x  3 mission23 mission23 4.0K Jan 12  2021 .local
+-r--------  1 mission23 mission23   69 Jan 15  2021 message.txt
+-rw-r--r--  1 mission23 mission23  807 Jan 12  2021 .profile
+mission23@linuxagency:~$ cat message.txt
+The hosts will help you.
+[OPTIONAL] Maybe you will need curly hairs.
+mission23@linuxagency:~$ grep -r 'mission24' /var 2>/dev/null
+Binary file /var/log/journal/e5c33f65843d4fde84404ee7ae1a0806/user-1023.journal matches
+/var/www/html/index.html:    <title>mission24{dbaeb06591a7fd6230407df3a947b89c}</title>
+```
+
+<p>3.25. What is the mission25 flag?<br>
+<code>mission25{61b93637881c87c71f220033b22a921b}</code></p>
+
+```bash
+mission23@linuxagency:~$ su mission24
+Password:
+mission24@linuxagency:~$ ls -lah
+total 40K
+drwxr-x---  3 mission24 mission24 4.0K Feb  1  2021 .
+drwxr-xr-x 45 root      root      4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 mission24 mission24    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 mission24 mission24 3.7K Jan 12  2021 .bashrc
+-rwxr-xr-x  1 mission24 mission24 8.4K Jan 12  2021 bribe
+drwxr-xr-x  3 mission24 mission24 4.0K Jan 12  2021 .local
+-rw-r--r--  1 mission24 mission24  807 Jan 12  2021 .profile
+-rw-------  1 mission24 mission24 4.9K Jan 12  2021 .viminfo
+mission24@linuxagency:~$ file bribe
+bribe: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=006516d8c62bb8a5f5a41595ce4529d4bcb159b8, not stripped
+mission24@linuxagency:~$ ./bribe
+
+
+There is a guy who is smuggling flags
+Bribe this guy to get the flag
+Put some money in his pocket to get the flag
+
+Words are not the price for your flag
+Give Me money Man!!!
+
+mission24@linuxagency:~$ grep -r 'mission25' /var 2>/dev/null
+Binary file /var/log/journal/e5c33f65843d4fde84404ee7ae1a0806/user-1024.journal matches
+mission24@linuxagency:~$ export pocket=money
+mission24@linuxagency:~$ ./bribe
+Here ya go!!!
+mission25{61b93637881c87c71f220033b22a921b}
+Don't tell police about the deal man ;)
+...
