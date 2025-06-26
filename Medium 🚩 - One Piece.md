@@ -33,6 +33,7 @@ Please note that if you are currently reading/watching One Piece and if you did 
 <p>2.1. What is the name of the tree that contains the 1st Road Poneglyph?<br>
 <code>the whale_</code></p>
 
+<br>
 
 <h3>Nmap</h3>
 <p><code>21/ftp/vsftpf,Anonynous<code>, <code>22/ssh</code> and <code>80/Apache</code></p>
@@ -130,5 +131,56 @@ ftp> exit
 :~# cat welcome.txt
 Welcome to Zou. It is an island located on the back of a massive, millennium-old elephant named Zunesha that roams the New World.
 Except this, there is not much to say about this island.
-
 ```
+
+<h3>.road_poneglyph.jpeg</h3>
+
+![image](https://github.com/user-attachments/assets/206c8fd0-5d80-41c3-824d-2c635f15bbed)
+
+```bash
+~# file .road_poneglyph.jpeg
+.road_poneglyph.jpeg: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 270x187, components 3
+```
+
+![image](https://github.com/user-attachments/assets/99bb64fc-eaf3-4ed7-8b2a-e91404fa833a)
+
+```bash
+:~# steghide extract -sf .road_poneglyph.jpeg
+Enter passphrase: 
+wrote extracted data to "road_poneglyphe1.txt".
+~# cat road_poneglyphe1.txt
+FUWS2LJNEAWS2LJNFUQC4LJNFUWSALRNFUWS2IBNFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWQULJNFUWS2IBNFUWS2LJAFYWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNBIWS2LJNFUQC2LJNFUWSALRNFUWS2IBNFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWSALJNFUWS2CRNFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWSALJNFUWS2IBOFUWS2LJAFUWS2LJNEAWS2LJNFUFC2LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LIKFUWS2LJNEAWS2LJNFUQC4LJNFUWSALJNFUWS2IBNFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWQULJNFUWS2IBNFUWS2LJAFYWS2LJNEAXC2LJNFUQC2LJNFUWSALRNFUWS2IBNFUWS2LJAFYWS2LJNBIWS2LJNFUQC2LJNFUWSALRNFUWS2IBOFUWS2LJAFUWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2CRNFUWS2LJAFUWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LJAFUWS2LJNEAWS2LJNFUFC2LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNEAWS2LJNFUQC4LJNFUWSALJNFUWS2IBOFUWS2LIKFUWS2LJNEAWS2LJNFUQC4LJNFUWSALRNFUWS2IBOFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWQULJNFUWS2IBNFUWS2LJAFYWS2LJNEAWS2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LJAFUWS2LJNBIWS2LJNFUQC2LJNFUWSALRNFUWS2IBOFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWSALJNFUWS2CRNFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWSALRNFUWS2IBNFUWS2LJAFUWS2LJNEAXC2LJNFUFC2LJNFUWSALJNFUWS2IBOFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LIKFUWS2LJNEAWS2LJNFUQC4LJNFUWSALRNFUWS2IBNFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWQULJNFUWS2IBNFUWS2LJAFYWS2LJNEAXC2LJNFUQC4LJNFUWSALJNFUWS2IBNFUWS2LJAFYWS2LJNBIWS2LJNFUQC2LJNFUWSALRNFUWS2IBNFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWSALJNFUWS2CRNFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNEAWS2LJNFUFC2LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2IBOFUWS2LIKFUWS2LJNEAWS2LJNFUQC4LJNFUWSALJNFUWS2IBNFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWQULJNFUWS2IBNFUWS2LJAFYWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNBIWS2LJNFUQC2LJNFUWSALRNFUWS2IBOFUWS2LJAFUWS2LJNEAWS2LJNFUQC4LJNFUWSALJNFUWS2CRNFUWS2LJAFUWS2LJNEAXC2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LJAFUWS2LJNEAWS2LJNFUFC2LJNFUWSALJNFUWS2IBOFUWS2LJAFYWS2LJNEAWS2LJNFUQC4LJNFUWSALJNFUWS2IBOFUWS2LIKFUWS2LJNEAWS2LJNFUQC4LJNFUWSALRNFUWS2IBNFUWS2LJAFYWS2LJNEAWS2LJNFUQC2LJNFUWQULJNFUWS2IBNFUWS2LJAFYWS2LJNEAWS2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LJAFUWS2LJNBIWS2LJNFUQC2LJNFUWSALRNFUWS2IBOFUWS2LJAFUWS2LJNEAWS2LJNFUQC4LJNFUWSALRNFUWS2CRNFUWS2LJAFUWS2LJNEAXC2LJNFUQC4LJNFUWSALJNFUWS2IBNFUWS2LJAFYWS2LJNEAWS2LJNFUFC2LJNFUWSALJNFUWS2IBOFUWS2LJAFUWS2LJNEAWS2LJNFUQC2LJNFUWSALJNFUWS2IBNFUWS2LIK
+```
+
+<h3>.secret_room.txt</h3>
+<p>
+  
+- <code>Inuarashi</code><br>
+- <code>Nekomamushi</code><br>
+- <code>Luffy</code><br>
+- <code>Laugh Tale</code>
+- <code>Pirate King</code> and <code>Gol D Roger</code><br>
+- <code>Big Mom</code> and <code>Kaid</code></p>
+
+```bash
+~# cat .secret_room.txt
+Inuarashi: You reached the center of the Whale, the majestic tree of Zou.
+Nekomamushi: We have hidden this place for centuries.
+Inuarashi: Indeed, it holds a secret.
+Nekomamushi: Do you see this red stele ? This is a Road Poneglyph.
+Luffy: A Road Poneglyph ??
+Inuarashi: There are four Road Poneglyphs around the world. Each of them gives one of the key to reach Laugh Tale and to find the One Piece.
+Luffy: The One Piece ?? That's my dream ! I will find it and I will become the Pirate King !!!
+Nekomamushi: A lot have tried but only one succeeded over the centuries, Gol D Roger, the former Pirate King.
+Inuarashi: It is commonly known that both Emperors, Big Mom and Kaido, own a Road Poneglyph but no one knows where is the last one.
+Nekomamushi: The other issue is the power of Big Mom and Kaido, they are Emperor due to their strength, you won't be able to take them down easily.
+Luffy: I will show them, there can be only one Pirate King and it will be me !!
+Inuarashi: There is another issue regarding the Road Poneglyph.
+Nekomamushi: They are written in an ancient language and a very few people around the world can actually read them.
+```
+
+
+
+
+<p>2.2. What is the name of the 1st pirate you meet navigating the Apache Sea?<br>
+<code>t____</code></p>
