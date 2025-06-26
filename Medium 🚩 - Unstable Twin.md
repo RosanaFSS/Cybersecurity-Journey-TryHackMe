@@ -2,6 +2,9 @@
 <h1>Unstable Twin</h1>
 <p>A Services based room, extracting information from HTTP Services and finding the hidden messages.</p>
 
+![image](https://github.com/user-attachments/assets/a4e129a9-007b-44aa-b29c-d3f683695910)
+
+
 <br>
 
 <h2>Task 1 . Unstable Twin</h2>
@@ -546,7 +549,31 @@ Yellow - jKLNAAeCdl2J8BCRuXVX
 
 ![image](https://github.com/user-attachments/assets/c6842e6d-9e3a-4b9a-891c-03cc33da56c4)
 
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/e3a81cfc-1f23-4e27-945e-d4c57546a4d1)
+
+![image](https://github.com/user-attachments/assets/f825c7ac-2864-4825-9c8a-775800b8d859)
 
 
+<br>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 26, 2025     | 416      |     179ᵗʰ    |      5ᵗʰ     |     261st   |     6ᵗʰ    |  110,801 |    804   |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/f28c15a5-c213-42a5-9985-7b595ce4bb6d)
+
+![image](https://github.com/user-attachments/assets/51aefe68-ad6e-4483-a9e5-990c67ba2666)
+
+![image](https://github.com/user-attachments/assets/ca35bdd9-5b19-4ded-b83f-00a7d1485be3)
+
+![image](https://github.com/user-attachments/assets/1da044a5-e4dc-4d80-989c-2d70ec1d6165)
+
+![image](https://github.com/user-attachments/assets/57581ae8-2b32-415d-a9aa-a65b006a0b20)
