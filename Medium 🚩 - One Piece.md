@@ -125,7 +125,7 @@ ftp> exit
   
 - Island = <code>Zou</code><br>
 - elephant named <code>Zunesah</code><br>
-- <code>New World</p>
+- <code>New World</code></p>
 
 ```bash
 :~# cat welcome.txt
