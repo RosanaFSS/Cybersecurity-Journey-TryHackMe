@@ -48,9 +48,7 @@ agent47@linuxagency:~$
 <code>mission1{174dc8f191bcbb161fe25f8a5b58d1f0}</code></p>
 
 <p>3.2. What is the mission2 flag?<br>
-<code>mission1{174dc8f191bcbb161fe25f8a5b58d1f0}</code></p>
-
-<p>used <code>mission2{8a1b68bb11e4a35245061656b5b9fa0d}</code> as password.</p>
+<code>mission2{8a1b68bb11e4a35245061656b5b9fa0d}</code></p>
 
 ```bash
 :~/LinuxAgency# ssh agent47@TargetIP
@@ -371,7 +369,8 @@ Traceback (most recent call last):
     mission23{3710b9cb185282e3f61d2fd8b1b4ffea}
              ^
 SyntaxError: invalid syntax
->>> 
+>>> import pty
+>>> pty.spawn("/bin/bash")
 ```
 
 <p>3.24. What is the mission24 flag?<br>
