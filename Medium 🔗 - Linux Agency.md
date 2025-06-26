@@ -53,17 +53,20 @@ agent47@linuxagency:~$
 <code>mission2{8a1b68bb11e4a35245061656b5b9fa0d}</code></p>
 
 ```bash
-:~# nmap -sC -sV -O -A -p- -T4 TargetIP
+:~/LinuxAgency# ssh agent47@TargetIP
 ...
-PORT      STATE SERVICE   VERSION
-22/tcp    open  ssh       OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-...
-80/tcp    open  http      Apache httpd 2.4.29 ((Ubuntu))
-|_http-server-header: Apache/2.4.29 (Ubuntu)
-|_http-title: Did not follow redirect to http://cybercrafted.thm/
-25565/tcp open  minecraft Minecraft 1.7.2 (Protocol: 127, Message: ck00r lcCyberCraftedr ck00rrck00r e-TryHackMe-r  ck00r, Users: 0/1)
-...
+mission1{174dc8f191bcbb161fe25f8a5b58d1f0}
+agent47@linuxagency:~$ su mission1
+Password: 
+mission1@linuxagency:/home/agent47/Documents$ cd /home
+mission1@linuxagency:/home$ ls
+0z09e    jordan    mission10  mission14  mission18  mission21  mission25  mission29  mission5  mission9  silvio
+agent47  ken       mission11  mission15  mission19  mission22  mission26  mission3   mission6  penelope  viktor
+dalia    maya      mission12  mission16  mission2   mission23  mission27  mission30  mission7  reza      xyan1d3
+diana    mission1  mission13  mission17  mission20  mission24  mission28  mission4   mission8  sean
+mission1@linuxagency:/home$ cd mission1
+mission1@linuxagency:~$ ls
+mission2{8a1b68bb11e4a35245061656b5b9fa0d}
 ```
 
 <p>3.3. What is the mission3 flag?<br>
