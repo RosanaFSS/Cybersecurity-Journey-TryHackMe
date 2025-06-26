@@ -36,7 +36,7 @@ Please note that if you are currently reading/watching One Piece and if you did 
 <br>
 
 <h3>Nmap</h3>
-<p><code>21/ftp/vsftpf,Anonynous<code>, <code>22/ssh</code> and <code>80/Apache</code></p>
+<p><code>21/ftp/vsftpf,Anonynous</code>code>, <code>22/ssh</code> and <code>80/Apache</code></p>
 
 ```bash
 :~# nmap -sC -sV -sS -v -T4 TargetIP
