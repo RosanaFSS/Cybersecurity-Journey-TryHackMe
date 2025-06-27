@@ -25,7 +25,7 @@ This room is some sort of game, some sort of puzzle.<br>
 
 Please note that if you are currently reading/watching One Piece and if you did not finish Zou arc, you will get spoiled during this room.</p>
 
-<p>1.1. Deploy the machine and hoist the sails<br>
+<p>1.1. Deploy the machine and host the sails<br>
 <code>No answer needed</code></p>
 
 <br>
