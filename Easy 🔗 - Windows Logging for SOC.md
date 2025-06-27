@@ -1,9 +1,11 @@
 <h1 align="center">Windows Logging for SOC<br>
 <img width="80px" src="https://github.com/user-attachments/assets/34e29bd4-8487-4153-b673-a3f39d5fd84b"><br>
-<img width="1200px" src="https://github.com/user-attachments/assets/9a59cdaa-fc3d-4006-9ef3-15f55c83d18c"></h1>
+<img width="1200px" src="https://github.com/user-attachments/assets/b70678c2-e645-4667-b8c9-80191cffc86d"></h1>
 <p align="center">June 27, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>417</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Start your Windows monitoring journey by learning how to use key system logs to detect threats..</em><br>
 Click <a href="https://tryhackme.com/room/windowsloggingforsoc">here </a>to access the "room".<br></p>
+
+![image](https://github.com/user-attachments/assets/b70678c2-e645-4667-b8c9-80191cffc86d)
 
 <br>
 <br>
@@ -31,8 +33,8 @@ Click <a href="https://tryhackme.com/room/windowsloggingforsoc">here </a>to acce
 </div>
 
 <p align="center"> Global All Time: 176ᵗʰ <br><img width="300px" src="https://github.com/user-attachments/assets/aa0d9df8-d633-4097-a1f7-190e6b4b6394" alt="Your Image Badge"><br>
-                                              <img width="1000px" src="https://github.com/user-attachments/assets/d1d38aa1-7cbb-4dfc-8c98-e11073005ab1"><br><br>
-                   Brazil All Time:   4ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/c1699917-66f6-44e7-ae54-639d90d3c4f7"><br><br>
+                                            <img width="1000px" src="https://github.com/user-attachments/assets/d1d38aa1-7cbb-4dfc-8c98-e11073005ab1"><br><br>
+                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/c1699917-66f6-44e7-ae54-639d90d3c4f7"><br><br>
                    Global monthly:  226ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/27322b50-646e-40d7-8679-da46987a4340"><br><br>
                    Brazil monthly:   6ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/c868e686-dc3b-475c-82ff-ba94c831e6c8"><br><br></p>
 
