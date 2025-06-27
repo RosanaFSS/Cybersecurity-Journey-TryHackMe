@@ -5,8 +5,6 @@
 <em>Start your Windows monitoring journey by learning how to use key system logs to detect threats..</em><br>
 Click <a href="https://tryhackme.com/room/windowsloggingforsoc">here </a>to access the "room".<br></p>
 
-![image](https://github.com/user-attachments/assets/b70678c2-e645-4667-b8c9-80191cffc86d)
-
 <br>
 <br>
 
