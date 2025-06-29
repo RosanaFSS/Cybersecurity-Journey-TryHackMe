@@ -298,7 +298,7 @@ http://onepiece.thm/dr3ssr0s4.html       (Status: 200) [Size: 3985]
 
 
 <h3>exiftool</h3>
-<p><code>DoFlamingo is <code>./ko.jpg</code></p>
+<p><code>DoFlamingo</code> is <code>./ko.jpg</code></p>
 
 ```bash
 :~# exiftool king_kong_gun.jpeg
