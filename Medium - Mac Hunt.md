@@ -62,7 +62,7 @@ root@tryhackme:/home/ubuntu/mac/root/Users/jake/Library/Preferences# plistutil -
 <br>
 
 > 1.2. <em>Which social platform did the attacker use to deliver the document?</em><br><a id='1.2'></a>
->> <strong><code>Download</code></strong><br>
+>> <strong><code>LinkedIN</code></strong><br>
 <p></p>
 
 ```bash
@@ -112,7 +112,7 @@ SELECT
 <br>
 
 > 1.4. <em>Which network did Jake connect to after reading the instructions in the PDF?</em><br><a id='1.4'></a>
->> <strong><code>http://files.techthm.careers.thm:8080/MeetMeLiveInstaller.pkg</code></strong><br>
+>> <strong><code>Jake M. iPhone</code></strong><br>
 <p></p>
 
 ```bash
