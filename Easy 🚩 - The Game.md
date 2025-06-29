@@ -19,7 +19,7 @@ part of my <code>419</code>-day-streak in<a href="https://tryhackme.com">TryHack
 
 <p>
 
--  downloaded and estracted <code>Task Files</code><br>
+-  downloaded and extracted <code>Task Files</code><br>
 -  installed <code>Godot RE Tools</code> = https://github.com/GDRETools/gdsdecomp/releases/tag/v1.00-beta.3<br>
 -  clicked <code>RE Tools</code><br>
 -  clicked <code>Recover Project</code><br>
