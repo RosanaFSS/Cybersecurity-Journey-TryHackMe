@@ -385,7 +385,7 @@ You end up reaching a strange island: /r4nd0m.html
 <p>
   
 - <code>brain_teaser.css</code><br>
-- <code>brain_teaser.js</p>
+- <code>brain_teaser.js</code></p>
 
 ![image](https://github.com/user-attachments/assets/b1220cae-bff7-430d-857c-c82a4fe82557)
 
@@ -484,7 +484,7 @@ window.addEventListener("mousemove", function(e){
 
 ![image](https://github.com/user-attachments/assets/71f4a054-23b2-4db6-9274-a99ac66533ab)
 
-<h3><code>./images/kaido.jpeg</code</h3>
+<h3><code>./images/kaido.jpeg</code></h3>
 
 ![image](https://github.com/user-attachments/assets/c3f65a28-77f2-40fd-83db-c8a0fc516591)
 
