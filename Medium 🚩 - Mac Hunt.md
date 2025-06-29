@@ -5,7 +5,9 @@ June 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.
 and I’m excited to join you on this adventure,<br>
 part of my <code>419</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Utilize your macOS investigation skills to reveal the mystery behind a compromise. Access it <a href="https://tryhackme.com/room/machunt"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/3ef2f331-a9bd-4e9f-8278-1270f84e0b86"></p>
+
+<br>
 
 <h2> Task 1 . Job Phish</h2>
 
@@ -186,7 +188,7 @@ root@tryhackme:/home/ubuntu/mac/root/Library/Receipts# plistutil -p InstallHisto
 <br>
 
 > 1.7. <em>What is the human-friendly name for the permission the user explicitly granted for the application??</em><br><a id='1.7'></a>
->> <strong><code>Full Disk Access_</code></strong><br>
+>> <strong><code>Full Disk Access</code></strong><br>
 <p></p>
 
 ```bash
@@ -232,6 +234,28 @@ exit 0
 <br>
 <br>
 
+![image](https://github.com/user-attachments/assets/3b33a812-f68d-41a1-8262-a274d5dd6ce4)
+
+![image](https://github.com/user-attachments/assets/78b31516-b39c-42ed-b01b-e4f50db7127b)
 
 
+<br>
 
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 29, 2025     | 419      |     171ˢᵗ    |      5ᵗʰ     |     227ᵗʰ   |     5ᵗʰ    |  111,789 |    812    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/a161a82f-44c2-408c-a2d7-9cf65c54ad9a)
+
+![image](https://github.com/user-attachments/assets/e60aabd9-7bea-4875-b040-c8cb4fbe29e8)
+
+![image](https://github.com/user-attachments/assets/b109f497-e975-4136-a2b0-d6cd962fb06a)
+
+![image](https://github.com/user-attachments/assets/d62d9aad-e2ef-4f15-b99d-3c0c649dee22)
+
+![image](https://github.com/user-attachments/assets/c5dac9c8-e057-4266-af18-f669f5acaca5)
