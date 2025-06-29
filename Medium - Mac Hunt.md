@@ -139,20 +139,18 @@ root@tryhackme:/home/ubuntu/mac/root/Library/Preferences# plistutil -p com.apple
 <p></p>
 
 ```bash
-root@tryhackme:/home/ubuntu/mac/root/Library/Preferences# plistutil -p com.apple.wifi.known-networks.plist
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/dhcpclient/leases# ls
+en0.plist
+root@tryhackme:/home/ubuntu/mac/root/private/var/db/dhcpclient/leases# plistutil -p en0.plist
 {
-  "wifi.network.ssid.Jake M. iPhone": {
-    "__OSSpecific__": {
-      "ChannelHistory": [
-        {
-          "Channel": 6,
-          "Timestamp": 2025-04-30 09:51:00 +0000
-        }
-      ],
-      "CollocatedGroup": [],
-      "RoamingProfileType": "None",
-      "TemporarilyDisabled": 0
-...
+  "ClientIdentifier": <010e9b93 d8a493>,
+  "IPAddress": "192.168.64.2",
+  "LeaseLength": 3600,
+  "LeaseStartDate": 2025-04-30 08:47:23 +0000,
+  "PacketData": <02010600 42c92337 00000000 00000000 ... 666903 636f6d00 ff>,
+  "RouterHardwareAddress": <52a6d84a 0064>,
+  "RouterIPAddress": "192.168.64.1"
+}
 ```
 
 <br>
