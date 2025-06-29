@@ -2,7 +2,7 @@
 June 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
 part of my <code>419</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-<emPractice your Game Hacking skills.</em>. Access it <a href="https://tryhackme.com/room/hfb1thegame"</a>here.<br>
+<em></em>Practice your Game Hacking skills.</em>.<br>Access it <a href="https://tryhackme.com/room/hfb1thegame"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/4cffcabc-e4ad-4929-9479-0d57a791c951"></p>
 
 <br>
