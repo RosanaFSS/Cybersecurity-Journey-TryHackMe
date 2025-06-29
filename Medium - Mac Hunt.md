@@ -1,9 +1,9 @@
 <h1 align="center">DFIR, Digital Forensics and Incident Response<br>macOS Forensics<br><img width="660px" src="https://github.com/user-attachments/assets/5e7f8c2d-53bf-43b7-81af-08b943f5b2b0"><br>Mac Hunt</h1>
 
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/a2c9e9c5-8d86-4447-8d3b-0a395b457c20"><br>
-June 14, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+June 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
-part of my <code>404</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+part of my <code>419</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Utilize your macOS investigation skills to reveal the mystery behind a compromise. Access it <a href="https://tryhackme.com/room/machunt"</a>here.<br>
 <img width="1200px" src=""></p>
 
@@ -13,7 +13,7 @@ Utilize your macOS investigation skills to reveal the mystery behind a compromis
 <h3 align="left"> Answer the question below</h3>
 
 > 1.1. <em>What is the name of the most recently accessed folder by the user?</em><br><a id='1.1'></a>
->> <strong><code>Download</code></strong><br>
+>> <strong><code>Downloads</code></strong><br>
 <p></p>
 
 
