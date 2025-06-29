@@ -116,14 +116,23 @@ SELECT
 <p></p>
 
 ```bash
-root@tryhackme:/home/ubuntu/mac/root/Users/jake/Library/Safari# cp History.db /home/ubuntu/History.db
-root@tryhackme:/home/ubuntu/mac/root/Users/jake/Library/Safari# 
+root@tryhackme:/home/ubuntu/mac/root/Library/Preferences# plistutil -p com.apple.wifi.known-networks.plist
+{
+  "wifi.network.ssid.Jake M. iPhone": {
+    "__OSSpecific__": {
+      "ChannelHistory": [
+        {
+          "Channel": 6,
+          "Timestamp": 2025-04-30 09:51:00 +0000
+        }
+      ],
+      "CollocatedGroup": [],
+      "RoamingProfileType": "None",
+      "TemporarilyDisabled": 0
+...
 ```
 
-![image](https://github.com/user-attachments/assets/df8dacc6-82c9-454b-9139-7a2f629aec60)
-
-![image](https://github.com/user-attachments/assets/9be15435-7d8b-4bbc-8bf9-6efdee89faa7)
-
+<br>
 
 > 1.5. <em>What was the  IP address assigned to Jake’s system?</em><br><a id='1.5'></a>
 >> <strong><code>Jake M. iPhone</code></strong><br>
