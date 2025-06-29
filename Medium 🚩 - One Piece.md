@@ -212,7 +212,7 @@ TargetIP  onepiece.thm
 - <code>Luffy</code><br>
 - <code>Laugh Tale</code>
 - <code>Pirate King</code> and <code>Gol D Roger</code><br>
-- <code>Big Mom</code> and <code>Kaid</code></p>
+- <code>Big Mom</code> and <code>Kaido</code></p>
 
 ```bash
 ~# cat .secret_room.txt
@@ -281,7 +281,7 @@ http://onepiece.thm/dr3ssr0s4.html       (Status: 200) [Size: 3985]
 <p>
 
 - <code>Dressrosa</code> island<br>
-- <code>Donquixote Doflaminfo</p>
+- <code>Donquixote Doflaminfo</code></p>
 
 ![image](https://github.com/user-attachments/assets/163f7a37-c5ee-4af1-a110-197a2a034e80)
 
