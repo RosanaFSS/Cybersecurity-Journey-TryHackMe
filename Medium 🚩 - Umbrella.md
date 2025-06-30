@@ -378,7 +378,7 @@ Ng1-f3!Pe7-e5?Nf3xe5
 
 ...
 
-mysql -u root -p -h 10.10.251.251
+mysql -u root -p -h TargetIP
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 2
