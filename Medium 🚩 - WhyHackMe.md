@@ -1,9 +1,8 @@
 <h1 align="center">WhyHackMe</h1>
-<p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/4f58f330-acaf-469d-9d2f-1c4822e39fa2"><br>
 Jun 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 419-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Dive into the depths of security and analysis with WhyHackMe. <a href="https://tryhackme.com/room/whyhackme"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/56bba94d-0468-4c3a-9518-90b3a2d98ba4"></p>
 
 <br>
 
@@ -199,7 +198,7 @@ jack@ubuntu:~$ cat user.txt
 <br>
 
 > 1.2. <em>What is the root flag?</em><br><a id='1.2'></a>
->> <strong><code>_______________</code></strong><br>
+>> <strong><code>4dbe2259ae53846441cc2479b5475c72</code></strong><br>
 
 
 ```bash
@@ -306,8 +305,34 @@ GET /cgi-bin/5UP3r53Cr37.py?key=48pfPHUrj4pmHzrC&iv=VZukhsCo8TlTXORN&cmd=id HTTP
 
 ![image](https://github.com/user-attachments/assets/b97c0e41-e494-44cb-8df7-8ef6fee432c3)
 
-<p>https://10.10.110.79:41312/cgi-bin/5UP3r53Cr37.py?key=48pfPHUrj4pmHzrC&iv=VZukhsCo8TlTXORN&cmd=sudo%20cat%20/root/root.txt</p>p>
+<p>Navigated to https://10.10.110.79:41312/cgi-bin/5UP3r53Cr37.py?key=48pfPHUrj4pmHzrC&iv=VZukhsCo8TlTXORN&cmd=sudo%20cat%20/root/root.txt</p
 
 ![image](https://github.com/user-attachments/assets/bb94c873-cb8e-450f-96ef-0fb9c171476a)
 
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/9dc063e3-8706-410f-a3f4-3ac4365c3064)
+
+![image](https://github.com/user-attachments/assets/7582f35f-a4b6-4ec5-af9e-fdd6d3373e9d)
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 29, 2025     | 420      |     171ˢᵗ    |      5ᵗʰ     |     220ᵗʰ   |    6ᵗʰ    |  111,909 |    815    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/b2cc0cf4-af50-40e0-8417-c27a72956e40)
+
+![image](https://github.com/user-attachments/assets/e209c486-0c62-44b9-9845-6e8e1c2594d9)
+
+![image](https://github.com/user-attachments/assets/974a0b50-d772-4808-8199-1771fef124ae)
+
+![image](https://github.com/user-attachments/assets/4f431974-794b-402f-b9ad-0d31eab6575d)
+
+![image](https://github.com/user-attachments/assets/21d79850-3863-410b-8d17-a5901ac2ad23)
 
