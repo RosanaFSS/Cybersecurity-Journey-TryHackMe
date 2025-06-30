@@ -110,7 +110,7 @@ PORT     STATE SERVICE VERSION
 
 <p>
   
-- <code>TargetIP:8080/css/code></p>
+- <code>TargetIP:8080/css/</code></p>
 
 ```bash
 :~/Umbrella# gobuster dir -u http://TargetIP:8080/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -t 80
