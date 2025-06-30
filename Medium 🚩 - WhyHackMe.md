@@ -1,5 +1,5 @@
 <h1 align="center">WhyHackMe</h1>
-Jun 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
+<p align="center">Jun 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
 part of my 419-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Dive into the depths of security and analysis with WhyHackMe. <a href="https://tryhackme.com/room/whyhackme"</a>here.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/56bba94d-0468-4c3a-9518-90b3a2d98ba4"></p>
