@@ -695,7 +695,7 @@ nc -nlvp 4444
 
 <br>
 
-- copied the <code>/bin/bash</code> to <code>/logs</code<br>
+- copied the <code>/bin/bash</code> to <code>/logs</code><br>
 - used <code>chmod s+u</code> to enforce group ownership<br>
 - accessed it</p>
 
