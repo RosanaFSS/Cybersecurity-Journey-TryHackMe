@@ -148,7 +148,7 @@ time                    [Status: 302, Size: 23, Words: 4, Lines: 1]
 
 <br>
 
-<h2>TargetIP:5000/v2/_catalog</h2>
+<h3>TargetIP:5000/v2/_catalog</h3>
 
 <h3>curl</h3>
 
@@ -431,11 +431,13 @@ mysql> select * from users;
 mysql>
 ```
 
+<h3>CRackStation</h3>h3>
+
 <p>claire-r:Password1</p>
 
 ![image](https://github.com/user-attachments/assets/f945223a-4381-49cf-aedb-72512e75e1bd)
 
-<p>chris-r:letmeinord1</p>
+<p>chris-r:letmein</p>
 
 
 ![image](https://github.com/user-attachments/assets/9bff208d-6f06-4df4-b1a8-ff7968d92604)
@@ -443,6 +445,8 @@ mysql>
 <p>jill-v:sunshine1</p>
 
 ![image](https://github.com/user-attachments/assets/02c416f7-cfaa-41a2-ae26-9e200c140d21)
+
+<p>barry-b-v:sandwich</p>
 
 ![image](https://github.com/user-attachments/assets/ae77cb2d-5b03-419a-92bc-2f4630d5887f)
 
