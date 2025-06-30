@@ -6,7 +6,7 @@ part of my 420-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 
 <br>
 
-<h2>Task 1 . Umbrealla</h2>
+<h2>Task 1 . Umbrella</h2>
 
 <p>Umbrella Corp has been developing a time-tracking application.<br>
 
