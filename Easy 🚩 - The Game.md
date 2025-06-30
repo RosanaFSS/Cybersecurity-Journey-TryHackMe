@@ -27,7 +27,7 @@ part of my <code>419</code>-day-streak in<a href="https://tryhackme.com">TryHack
 -  clicked <code>Extract</code><br>
 -  installed and launched <code>Godot Engine</code><br>
 -  clicked <code>Import</code><br>
--  bowsed and selected <code>project.godot</code><br>
+-  browsed and selected <code>project.godot</code><br>
 -  clicked <code>Open</code><br>
 -  clicked <code>Import</code><br>
 -  navigated to <code>GUI.gd</code><br>
