@@ -481,3 +481,8 @@ claire-r@ip-10-10-251-251:~/timeTracker-src$
 
 ```
 
+
+
+![image](https://github.com/user-attachments/assets/0db93ea8-b3cf-4721-bb30-d5d513d02c36)
+
+
