@@ -431,7 +431,7 @@ mysql> select * from users;
 mysql>
 ```
 
-<h3>CRackStation</h3>h3>
+<h3>CrackStation</h3>
 
 <p>claire-r:Password1</p>
 
@@ -450,15 +450,19 @@ mysql>
 
 ![image](https://github.com/user-attachments/assets/ae77cb2d-5b03-419a-92bc-2f4630d5887f)
 
+<br>
+
+<h3>ssh</h3>
+
 ```bash
-ssh claire-r@10.10.251.251
+ssh claire-r@TargetIP
 ...
-claire-r@ip-10-10-251-251:~$ cat user.txt
+claire-r@ip-xx-xx-xxx-xxx:~$ cat user.txt
 THM{d832c0e4cf71312708686124f7a6b25e}
-claire-r@ip-10-10-251-251:~$ cd timeTracker-src
-claire-r@ip-10-10-251-251:~/timeTracker-src$ ls
+claire-r@ip-xx-xx-xxx-xxx:~$ cd timeTracker-src
+claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ ls
 app.js  db  docker-compose.yml  Dockerfile  logs  package.json  package-lock.json  public  views
-claire-r@ip-10-10-251-251:~/timeTracker-src$ cat docker-compose.yml
+claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ cat docker-compose.yml
 version: '3.3'
 services:
   db:
@@ -478,11 +482,8 @@ services:
       - '8080:8080'
     volumes:
       - ./logs:/logs
-claire-r@ip-10-10-251-251:~/timeTracker-src$ 
-
-
+claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ 
 ```
-
 
 
 ![image](https://github.com/user-attachments/assets/0db93ea8-b3cf-4721-bb30-d5d513d02c36)
