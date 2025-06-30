@@ -727,33 +727,34 @@ THM{1e15fbe7978061c6bb1924124fd9eab2}
 
 ![image](https://github.com/user-attachments/assets/47f96969-5d85-4ec0-a438-1f33486ae5f3)
 
-
-<br>
 <br>
 
-![image](https://github.com/user-attachments/assets/ca972dec-5b93-4971-afac-60f377cb0f6f)
+<div align="center">
 
-<p>Global all time = 171st</p>
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| June 30, 2025     | 420      |     170ᵗʰ    |      5ᵗʰ     |     220ᵗʰ   |     5ᵗʰ    |  111,999 |    816    |     63    |
 
-![image](https://github.com/user-attachments/assets/25b78a11-f884-47df-9aa5-1a1c63da5d8f)
+</div>
 
-![image](https://github.com/user-attachments/assets/cce375f6-b458-468f-b584-a4eaeb40e9bd)
+<p>Global all time =  170ᵗʰ</p>
+
+![image](https://github.com/user-attachments/assets/797b270e-6c18-4f25-9190-57a96c4be6b0)
+
+![image](https://github.com/user-attachments/assets/9b432a11-580d-4e6e-8761-26e1b4472531)
 
 
 <p>Brazil  all time = 5th</p>
 
-![image](https://github.com/user-attachments/assets/4dcd1e33-d427-4ab2-af4c-7edbaa85895e)
-
-<p>Global Monthly = 222nd</p>
-
-![image](https://github.com/user-attachments/assets/341a5876-3fbb-46a2-86ec-6a4ee0400d51)
+![image](https://github.com/user-attachments/assets/e3df5255-588f-4836-88a8-f3eba02cf05d)
 
 
-<p>Brazil Monthly = 6th</p>
+<p>Global Monthly = 220ᵗʰ</p>
 
-![image](https://github.com/user-attachments/assets/c91d43b5-84ea-41a8-ab95-4d3d978634cb)
-
-
+![image](https://github.com/user-attachments/assets/05a0c06b-f1ac-4713-b932-03d757b96784)
 
 
+<p>Brazil Monthly = 5th</p>
 
+![image](https://github.com/user-attachments/assets/1361f83a-e7da-45d1-b5a2-1305066e1fdc)
