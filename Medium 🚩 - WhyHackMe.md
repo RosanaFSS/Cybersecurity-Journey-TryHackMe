@@ -1,7 +1,7 @@
 <h1 align="center">WhyHackMe</h1>
 <p align="center"> <img width="160px" src="https://github.com/user-attachments/assets/4f58f330-acaf-469d-9d2f-1c4822e39fa2"><br>
-Jun 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
-part of my 396-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
+Jun 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure,<br>
+part of my 419-day-streak in  <a href="https://tryhackme.com">TryHackMe</a><br>
 Dive into the depths of security and analysis with WhyHackMe. <a href="https://tryhackme.com/room/whyhackme"</a>here.<br><br>
 <img width="1000px" src=""></p>
 
@@ -24,7 +24,7 @@ Please allow the machine 2 - 3 minutes to boot up.</p>
 <h3>nmap</h3>
 
 ```bash
-:~# nmap -sC -sV -Pn -p- -T4 10.10.161.40
+:~# nmap -sC -sV -Pn -p- -T4 TargetIP
 ...
 Host is up (0.00072s latency).
 Not shown: 65531 closed ports
@@ -35,7 +35,7 @@ PORT      STATE    SERVICE VERSION
 | ftp-syst: 
 |   STAT: 
 | FTP server status:
-|      Connected to 10.10.101.19
+|      Connected to xx.xx.xxx.xx
 |      Logged in as ftp
 |      TYPE: ASCII
 |      No session bandwidth limit
@@ -56,8 +56,8 @@ PORT      STATE    SERVICE VERSION
 <h3>FTP</h3>
 
 ```bash
-:~# ftp 10.10.161.40
-Connected to 10.10.161.40.
+:~# ftp TargetIP
+Connected to TargetIP.
 220 (vsFTPd 3.0.3)
 Name (10.10.161.40:root): anonymous
 331 Please specify the password.
@@ -94,11 +94,11 @@ Hey I just removed the old user mike because that account was compromised and fo
 <h3>gobuster</h3>
 
 ```bash
-:~# gobuster dir -u http://10.10.161.40/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 100
+:~# gobuster dir -u http://TargetIP0/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 100
 ...
 /.php                 (Status: 403) [Size: 277]
 /dir                  (Status: 403) [Size: 277]
-/assets               (Status: 301) [Size: 313] [--> http://10.10.161.40/assets/]
+/assets               (Status: 301) [Size: 313] [--> http://TargetIP/assets/]
 /login.php            (Status: 200) [Size: 523]
 /blog.php             (Status: 200) [Size: 3102]
 /logout.php           (Status: 302) [Size: 0] [--> login.php]
@@ -107,6 +107,21 @@ Hey I just removed the old user mike because that account was compromised and fo
 /register.php         (Status: 200) [Size: 643]
 ...
 /server-status        (Status: 403) [Size: 277]
+```
+
+<br>
+
+```bash
+:~# gobuster dir -u http://TargetIP -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+...
+/.hta                 (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/assets               (Status: 301) [Size: 315] [--> http://TargetIP/assets/]
+/cgi-bin/             (Status: 403) [Size: 278]
+/dir                  (Status: 403) [Size: 278]
+/index.php            (Status: 200) [Size: 563]
+/server-status        (Status: 403) [Size: 278]
 ```
 
 <h3>http://TargetIP/register.php</h3>
