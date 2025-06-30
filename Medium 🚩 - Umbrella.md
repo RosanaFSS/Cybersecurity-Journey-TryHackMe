@@ -97,8 +97,7 @@ PORT     STATE SERVICE VERSION
 
 <p>
   
-- <code>TargetIP:5000/v2</code><br>
-- <code>TargetIP:5000/.</code></p>
+- <code>TargetIP:5000/v2</code><br></p>
 
 ```bash
 :~/Umbrella# gobuster dir -u http://TargetIP:5000/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -t 80
@@ -111,8 +110,7 @@ PORT     STATE SERVICE VERSION
 
 <p>
   
-- <code>TargetIP:8080/css/code><br>
-- <code>TargetIP:8080/.</code></p>
+- <code>TargetIP:8080/css/code></p>
 
 ```bash
 :~/Umbrella# gobuster dir -u http://TargetIP:8080/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -t 80
