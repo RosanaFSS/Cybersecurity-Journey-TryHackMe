@@ -1,8 +1,8 @@
 <h1 align="center">Jack</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/51214f37-6075-45cd-8dd1-a287156c39b0"><br>
-June 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+July 1, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure,<br>
-part of my <code>420</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+part of my <code>421</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Compromise a web server running Wordpress, obtain a low privileged user and escalate your privileges to root using a Python module.</em>.<br>
 Access it <a href="https://tryhackme.com/room/jack"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/7df9a119-cc74-4e02-969d-13f7fd928a3c"></p>
