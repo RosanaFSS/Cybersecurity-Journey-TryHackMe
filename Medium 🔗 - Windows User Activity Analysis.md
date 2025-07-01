@@ -200,6 +200,23 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/windowsuseractivit
 
 ![image](https://github.com/user-attachments/assets/57cf727a-dd41-41e3-b357-d9c7d6d799f5)
 
+<br>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 1, 2025      | 421      |     168ᵗʰ    |      5ᵗʰ     |    1,981ˢᵗ  |     33ʳᵈ   |  112,254 |    816    |     63    |
 
+</div>
+
+![image](https://github.com/user-attachments/assets/aef1608b-57b4-4429-b9e8-a1e9b6654b10)
+
+![image](https://github.com/user-attachments/assets/0e22157a-15fa-4389-9abb-6b5d1a6287bf)
+
+![image](https://github.com/user-attachments/assets/13fd39e6-5536-4c87-bf79-e3b08722d4c8)
+
+![image](https://github.com/user-attachments/assets/43cb6f41-b8df-45bb-b385-1e8ce6fffee9)
+
+![image](https://github.com/user-attachments/assets/b0c6f99e-a33c-4ac5-b86a-aa5be2e4078c)
