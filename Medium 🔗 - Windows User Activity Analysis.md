@@ -1,6 +1,4 @@
-<h1 align="center">Windows Endpoint Investigation<br>Advanced Endpoint Investigation<img width="660px" src=""><br>Windows User Activity Analysis</h1>
-
-
+<h1 align="center">Windows Endpoint Investigation<br>Advanced Endpoint Investigation<img width="660px" src="https://github.com/user-attachments/assets/5f257bab-be7b-455e-8d8a-95556bf3e38d"><br>Windows User Activity Analysis</h1>
 
 <p align="center"July 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
@@ -201,8 +199,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/windowsuseractivit
 
 ![image](https://github.com/user-attachments/assets/f8cd042b-72f4-42e4-80ab-69868728eeb8)
 
-![image](https://github.com/user-attachments/assets/794161d7-d615-492a-aab2-6605c99a8601)
-
+![image](https://github.com/user-attachments/assets/57cf727a-dd41-41e3-b357-d9c7d6d799f5)
 
 
 
