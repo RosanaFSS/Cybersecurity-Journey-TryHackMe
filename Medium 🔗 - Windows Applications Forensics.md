@@ -81,4 +81,43 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/windowsapplication
 
 ![image](https://github.com/user-attachments/assets/30c63055-6eca-405a-aa2d-21df253ea135)
 
+<br>
+
+<br>
+
+<h2> Task 4 . Manual Inspection II: Services</h2>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 4.1. <em>Aside from the service determined through logs, what is the full path of the binary executed by the second malicious service?</em><br><a id='4.1'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+<br>
+
+> 4.2. <em>What is the last write time of the second malicious service? (format: MM/DD/YYYY HH:MM:SS)</em><br><a id='4.2'></a>
+>> <strong><code>______</code></strong><br>
+<p></p>
+
+<br>
+
+<br>
+
+<h2> Task 5 . Dissecting Browser Artefacts I: Mozilla Firefox</h2>
+
+<h2> Task 6 . Dissecting Browser Artefacts II: Google Chrome</h2>
+
+<h2> Task 7. Dissecting Browser Artefacts III: Microsoft Edge</h2>
+
+<h2> Task 8 . Deep-diving on Office Applications I: Microsoft Outlook</h2>
+
+<h2> Task 9 . Deep-diving on Office Applications II: Microsoft Teams</h2>
+
+<h2> Task 10 . Deep-diving on Office Applications III: Microsoft</h2>
+
+<h2> Task 11 . Conclusion</h2>
+
+
+
+
 
