@@ -3,7 +3,7 @@
 <p align="center"July 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{421}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="https://github.com/user-attachments/assets/dc169c77-5e5b-4c1d-9c92-0bb5b74d708" alt="Your Image Badge"><br></p>
+<img width="300px" src="https://github.com/user-attachments/assets/dc169c77-5e5b-4c1d-9c92-0bb5b74d708"><br></p>
 <p align="center"><em>Perform a live analysis on Windows systems, focused on determining the outliers based on known behaviour of scheduled tasks, services, and installed applications.</em>.<br>
 It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
