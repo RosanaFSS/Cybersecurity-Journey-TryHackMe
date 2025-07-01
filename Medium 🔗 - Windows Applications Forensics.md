@@ -90,8 +90,10 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/windowsapplication
 <h3 align="left"> Answer the questions below</h3>
 
 > 4.1. <em>Aside from the service determined through logs, what is the full path of the binary executed by the second malicious service?</em><br><a id='4.1'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code></code></strong><br>
 <p></p>
+
+![image](https://github.com/user-attachments/assets/02080d31-5306-46f5-9d73-56d31de36feb)
 
 <br>
 
