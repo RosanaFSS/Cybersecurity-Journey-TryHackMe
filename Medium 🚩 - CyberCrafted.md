@@ -85,8 +85,6 @@ Finished
 ===============================================================
 ```
 
-![image](https://github.com/user-attachments/assets/c82bf909-f213-46dd-85fe-efd93d40a12b)
-
 
 <p>Target IP cybercrafted.thm admin.cybercrafted.thm store.acybercrafted.thm www.cybercrafted.thm</p>
 
