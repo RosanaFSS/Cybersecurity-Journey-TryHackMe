@@ -42,7 +42,7 @@ TargetIp  cybercrated.thm
 
 
 ```bash
-~# gobuster vhost -u cybercrafted.thm -w root@ip-10-10-157-140:~# gobuster vhost -u cybercrafted.thm -w subdomains-top1million-110000.txt --append-domain -t 80 --append-domain -t 80
+:~# gobuster vhost -u cybercrafted.thm -w subdomains-top1million-110000.txt --append-domain -t 80
 ===============================================================
 Gobuster v3.6
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
