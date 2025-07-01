@@ -1,5 +1,7 @@
 <h1 align="center">Windows Endpoint Investigation<br>Advanced Endpoint Investigation<img width="660px" src=""><br>Windows User Activity Analysis</h1>
 
+
+
 <p align="center"July 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my $$\textcolor{#FF69B4}{\textbf{421}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
@@ -150,6 +152,57 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/windowsuseractivit
 ![image](https://github.com/user-attachments/assets/45e99d2c-8ea1-4d52-91bb-3b9431fdd13d)
 
 ![image](https://github.com/user-attachments/assets/978e1eaa-4977-4c5c-9585-cf5871806864)
+
+
+<br>
+
+<h2> Task 7 . JumpList: Leap Through Time</h2>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 7.1. <em>A text file named code.txt was accessed from a tmp directory. What is the full path of the tmp directory?</em><br><a id='7.1'></a>
+>> <strong><code>C:\system\home\tmp\code.txt</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/3778eb7f-511d-456c-9dd8-795e838e2ff8)
+
+![image](https://github.com/user-attachments/assets/aff7db58-cae9-49d1-8b2f-ead720389b05)
+
+![image](https://github.com/user-attachments/assets/367e6258-2210-47d7-bb39-47ad787b374c)
+
+<br>
+
+> 7.2. <em>What URL was accessed using Internet Explorer?</em><br><a id='7.2'></a>
+>> <strong><code>http://10.10.17.228/</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/207500f4-baae-4efe-9326-16e1c060d8b5)
+
+<br>
+
+> 7.3. <em>When did the user access the "How to Hack.pdf" file?</em><br><a id='7.3'></a>
+>> <strong><code>2024-03-04 12:28:26</code></strong><br>
+<p></p>
+
+![image](https://github.com/user-attachments/assets/a7b575b3-affe-4862-91f5-368eb4760540)
+
+<br>
+
+<h2> Task 8 . Conclusion</h2>
+
+<h3 align="left"> Answer the questions below</h3>
+
+> 8.1. <em>A text file named code.txt was accessed from a tmp directory. What is the full path of the tmp directory?</em><br><a id='8.1'></a>
+>> <strong><code>No answer needed</code></strong><br>
+<p></p>
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/f8cd042b-72f4-42e4-80ab-69868728eeb8)
+
+![image](https://github.com/user-attachments/assets/794161d7-d615-492a-aab2-6605c99a8601)
+
 
 
 
