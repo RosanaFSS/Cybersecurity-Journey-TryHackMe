@@ -9,8 +9,7 @@ It is classified as a medium-level walkthrough.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/windowsuseractivity">here</a>.</p>
 
-
-<p align="center"> <img width="1000px" src=""> </p>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/8e14f087-3856-4388-afcd-368f1b4288e7"> </p>
 
 <br>
 <br>
