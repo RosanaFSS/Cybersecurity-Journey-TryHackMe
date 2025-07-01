@@ -634,7 +634,7 @@ root@jack:~#
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| June 30, 2025     | 420      |     168ᵗʰ    |      5ᵗʰ     |     216ᵗʰ   |     10ᵗʰ    |  111,999 |    816    |     63    |
+| July 1, 2025      | 421      |     168ᵗʰ    |      5ᵗʰ     |     216ᵗʰ   |     10ᵗʰ    |  111,999 |    816    |     63    |
 
 </div>
 
