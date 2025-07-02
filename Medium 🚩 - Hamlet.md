@@ -1,3 +1,15 @@
+<h1 align="center" Hamlet</h1>
+
+<p align="center"July 1, 2025<br>
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
+It´s part of my $$\textcolor{#FF69B4}{\textbf{421}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
+<img width="300px" src="" alt="Your Image Badge"><br></p>
+<p align="center"><em>What happened in those 36 hours? A forensics case to solve.</em>.<br>
+It is classified as a medium-level walkthrough.<br>
+You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/windowsuseractivity">here</a>.</p>
+
+
 <p>June 27, 2025</p>
 <h1>Hamlet</h1>
 <p>A Shakespeare/Hamlet-inspired room in which you will explore an uncommon web application used in linguistic/NLP research.</p>
@@ -16,9 +28,11 @@ There's a total of six flags. You don't necessarily have to find them in order. 
 
 Please note that the machine takes a while to boot fully, and some services will only become available after a few minutes.</p>
 
+<h3 align="left"> Answer the question below</h3>
 
-<p>1.1. What is Michael's password? Hint : You will, most likely, create a wordlist and test against WebAnno.<br>
-<code>____</code></p>
+> 1.1. <em>What is Michael's password? Hint : You will, most likely, create a wordlist and test against WebAnno.</em><br><a id='1.1'></a>
+>> <strong><code>_____</code></strong><br>
+<p></p>
 
 <br>
 
