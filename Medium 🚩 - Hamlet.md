@@ -1,4 +1,4 @@
-<h1 align="center" Hamlet</h1>
+<h1 align="center">Hamlet</h1>
 
 <p align="center"July 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
