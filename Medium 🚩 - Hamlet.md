@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f43a9865-9fd2-4f3d-8631-ecd36dba5184)<p>June 27, 2025</p>
+<p>June 27, 2025</p>
 <h1>Hamlet</h1>
 <p>A Shakespeare/Hamlet-inspired room in which you will explore an uncommon web application used in linguistic/NLP research.</p>
 
@@ -585,3 +585,6 @@ root@66505608bd11:/mnt/disk/root#
 
 <p>1.7. Flag 6<br>
 <code>____</code></p>
+
+
+![image](https://github.com/user-attachments/assets/f43a9865-9fd2-4f3d-8631-ecd36dba5184)
