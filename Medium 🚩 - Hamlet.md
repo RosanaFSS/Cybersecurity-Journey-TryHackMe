@@ -586,5 +586,3 @@ root@66505608bd11:/mnt/disk/root#
 <p>1.7. Flag 6<br>
 <code>____</code></p>
 
-
-![image](https://github.com/user-attachments/assets/f43a9865-9fd2-4f3d-8631-ecd36dba5184)
