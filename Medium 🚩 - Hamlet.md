@@ -232,6 +232,7 @@ To                         Action      From
 
 <h3>nc</h3>
 
+<br>
 
 <p>1.3. Flag 2<br>
 <code>THM{2_ophelia_s_grave}</code></p>
@@ -288,6 +289,7 @@ gallows
 THM{2_ophelia_s_grave}
 ```
 
+<br>
 
 <p>1.2. Flag 1<br>
 <code>THM{1_most_mechanical_and_dirty_hand}</code></p>
@@ -404,8 +406,10 @@ curl http:/TargetIP:8000/repository/project/0/document/1/source/rev.php
 ...
 ```
 
+<br>
+
 <p>1.5. Flag 4<br>
-<codeTHM{4_the_murder_of_gonzago}</code></p>
+<code>THM{4_the_murder_of_gonzago}</code></p>
 
 ```bash
 python3 -c "import pty; pty.spawn('/bin/bash')" || python -c "import pty; pty.spawn('/bin/bash')" || /usr/bin/script -qc /bin/bash /dev/null
@@ -460,7 +464,9 @@ THM{4_the_murder_of_gonzago}
 www-data@66505608bd11:/stage$ 
 ```
 
-<p>1.5. Flag 5<br>
+<br>
+
+<p>1.6. Flag 5<br>
 <code>THM{5_murder_most_foul}</code></p>
 
 ```bash
@@ -470,6 +476,8 @@ murder           (?)
 ...
 Session completed. 
 ```
+
+
 
 ```bash
 root@66505608bd11:/stage# cd /root
@@ -561,7 +569,14 @@ drwxr-xr-x 14 root root       4096 Sep 15  2021 var
 lrwxrwxrwx  1 root root         31 Sep 15  2021 vmlinuz -> boot/vmlinuz-4.15.0-156-generic
 lrwxrwxrwx  1 root root         31 Sep 15  2021 vmlinuz.old -> boot/vmlinuz-4.15.0-156-generic
 ...
+```
 
+<br>
+
+<p>1.7. Flag 6<br>
+<code>THM{6_though_this_be_madness_yet_there_is_method_in_t}</code></p>
+
+```bash
 root@66505608bd11:/mnt/disk/root# ls
 ls
 flag
@@ -576,22 +591,4 @@ root@66505608bd11:/mnt/disk/root#
 
 
 <br>
-
-<p>1.4. Flag 3<br>
-<code>____</code></p>
-
 <br>
-
-<p>1.5. Flag 4<br>
-<code>____</code></p>
-
-<br>
-
-<p>1.6. Flag 5<br>
-<code>____</code></p>
-
-<br>
-
-<p>1.7. Flag 6<br>
-<code>____</code></p>
-
