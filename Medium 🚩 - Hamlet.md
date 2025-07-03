@@ -345,6 +345,17 @@ GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
 GET GUTINDEX.ALL [to get a listing of ALL books]
 ```
 
+<h3>cewl</h3>
+
+```bash
+:~# apt install cewl
+...
+:~# cewl -m 12 -w wordlist.txt --lowercase http://TargetIP/hamlet.txt
+```
+
+<br>
+
+
 <h3>hamlet.thm:8080/login.html</h3>
 
 ![image](https://github.com/user-attachments/assets/adfd8940-0054-4b0d-abd7-f28d86b42ef5)
@@ -359,14 +370,6 @@ GET GUTINDEX.ALL [to get a listing of ALL books]
 
 ![image](https://github.com/user-attachments/assets/e823eb6d-6aeb-48fb-9dba-be4f7d71b3a7)
 
-
-<h3>cewl</h3>
-
-```bash
-:~# apt install cewl
-...
-:~# cewl -m 12 -w wordlist.txt --lowercase http://TargetIP/hamlet.txt
-```
 
 <h3>ghost : vnsanctified</h3>
 
