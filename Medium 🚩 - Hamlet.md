@@ -8,10 +8,7 @@ It´s part of my $$\textcolor{#FF69B4}{\textbf{421}}$$-day-streak in  <a href="h
 It is classified as a medium-level challenge. You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if<br> you are subscribed.
 Can be accessed clicking  <a href="https://tryhackme.com/room/hamlet">here</a>.</p>
 
-
 ![image](https://github.com/user-attachments/assets/47779636-9242-4f4b-a9fb-02d07bd75ccc)
-
-
 
 <h2>Task 1 . To hack, or not to hack, that is the question.</h2>
 <p>Welcome to <code>Hamlet</code>!</p>
@@ -366,7 +363,9 @@ GET GUTINDEX.ALL [to get a listing of ALL books]
 <h3>cewl</h3>
 
 ```bash
-apt install cewl
+:~# apt install cewl
+...
+:~# cewl -m 12 -w wordlist.txt --lowercase http://TargetIP/hamlet.txt
 ```
 
 <h3>ghost : vnsanctified</h3>
