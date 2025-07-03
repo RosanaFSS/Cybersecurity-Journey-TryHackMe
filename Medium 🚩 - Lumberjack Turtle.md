@@ -112,6 +112,10 @@ GENERATED WORDS: 4612
 
 <h3><code>CVE-2021-44228</code> in <code>X-Api-Version</code></h3>
 
+![image](https://github.com/user-attachments/assets/c448eedf-ceeb-4223-955a-41b74c3dca2f)
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/b0fce418-0531-4a0d-aef9-9558d14f8cd3)
 
 ![image](https://github.com/user-attachments/assets/53d458c3-14ee-4ddf-8fe5-b07c6faaf279)
@@ -119,9 +123,6 @@ GENERATED WORDS: 4612
 <br>
 
 <h3>maven</h3>
-
-
-![image](https://github.com/user-attachments/assets/c448eedf-ceeb-4223-955a-41b74c3dca2f)
 
 ```bash
 :~/LumberjackTurtle# sudo apt install maven
