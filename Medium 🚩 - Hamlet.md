@@ -26,7 +26,7 @@ Please note that the machine takes a while to boot fully, and some services will
 <h3 align="left"> Answer the question below</h3>
 
 > 1.1. <em>What is Michael's password? Hint : You will, most likely, create a wordlist and test against WebAnno.</em><br><a id='1.1'></a>
->> <strong><code>_____</code></strong><br>
+>> <strong><code>vnsanctified</code></strong><br>
 <p></p>
 
 <br>
