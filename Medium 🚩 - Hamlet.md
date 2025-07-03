@@ -1,14 +1,12 @@
-<p align="center">July 2, 2025</p>
 <h1 align="center">Hamlet</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/d1a4d2af-0080-4073-8e58-8e812939db31"><br>
+July 3, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>423</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>A Shakespeare/Hamlet-inspired room in which you will explore an uncommon web application used in linguistic/NLP research</em>.<br>
+Access it <a href="https://tryhackme.com/room/hamlet"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/c9816170-0a7f-4522-b598-f45442ae6cf8"></p>
 
-<p align="center"July 1, 2025<br>
-Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{421}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>A Shakespeare/Hamlet-inspired room in which you will explore an uncommon web application used in linguistic/NLP research.</em>.<br>
-It is classified as a medium-level challenge. You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if<br> you are subscribed.
-Can be accessed clicking  <a href="https://tryhackme.com/room/hamlet">here</a>.</p>
-
-![image](https://github.com/user-attachments/assets/47779636-9242-4f4b-a9fb-02d07bd75ccc)
+<br>
 
 <h2>Task 1 . To hack, or not to hack, that is the question.</h2>
 <p>Welcome to <code>Hamlet</code>!</p>
@@ -389,6 +387,53 @@ GET GUTINDEX.ALL [to get a listing of ALL books]
 
 <p>changed admin´s and ophelia´s password</p>
 
+
+![image](https://github.com/user-attachments/assets/9ac7fded-9a88-482f-8447-b3ec06a04163)
+
+<br>
+
+<h3>ftp > ophelia > KEQehFDWwuQbMbKW</h3>
+
+
+```bash
+:~# ftp TargetIP
+...
+Name (TargetIP:root): ophelia
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> passive
+Passive mode on.
+ftp> ls
+227 Entering Passive Mode (10,10,2,57,198,77).
+150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001           31 Sep 16  2021 flag
+226 Directory send OK.
+ftp> ls -la
+227 Entering Passive Mode (10,10,2,57,198,88).
+150 Here comes the directory listing.
+drwxr-xr-x    2 1001     1001         4096 Sep 15  2021 .
+drwxr-xr-x    5 0        0            4096 Sep 15  2021 ..
+-rw-r--r--    1 1001     1001           31 Sep 16  2021 flag
+226 Directory send OK.
+ftp> get flag
+local: flag remote: flag
+227 Entering Passive Mode (10,10,2,57,196,102).
+150 Opening BINARY mode data connection for flag (31 bytes).
+226 Transfer complete.
+31 bytes received in 0.00 secs (12.3717 kB/s)
+ftp> exit
+221 Goodbye.
+:~# 
+```
+
+```bash
+:~# cat flag
+THM{3_i_was_the_more_deceived}
+```
+
 ![image](https://github.com/user-attachments/assets/52f1a7cc-a34f-40eb-ba42-f8b8593d062a)
 
 ![image](https://github.com/user-attachments/assets/e0f26af0-7ef1-4375-a883-db977d93c46c)
@@ -595,3 +640,29 @@ root@66505608bd11:/mnt/disk/root#
 
 <br>
 <br>
+
+
+![image](https://github.com/user-attachments/assets/e8cc8c22-6263-42b7-82b4-efd7fe75dbd2)
+
+![image](https://github.com/user-attachments/assets/558670fe-4fcb-48f5-8979-4f553d7c2953)
+
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 3, 2025      | 423      |     164ᵗʰ    |      5ᵗʰ     |    4,608ᵗʰ  |     78ᵗʰ   |  112,634 |    821    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/09ab72e7-7654-4d6f-9300-f2cff4a3b11e)
+
+![image](https://github.com/user-attachments/assets/3e8e31dc-6fe8-4e4a-bb69-740e6f97b574)
+
+![image](https://github.com/user-attachments/assets/13c0df31-c5c0-479d-bb77-bdafaa6d5007)
+
+![image](https://github.com/user-attachments/assets/f69a32fc-7b1b-4bd8-a5b6-8d7925af799a)
+
+![image](https://github.com/user-attachments/assets/71f7a13a-1ecf-44d6-8e8f-af260f21a8d5)
