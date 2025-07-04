@@ -1,5 +1,5 @@
 <h1 align="center">Oracle 9</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/8f194657-c8b8-4674-8c13-0c79195e29a5"><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/00b95b16-4b6d-43cf-966c-dbf8e01af0bd"><br>
 July 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>424</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>My designation is Oracle 9, I carry with me a sealed transmission.</em>.<br>
