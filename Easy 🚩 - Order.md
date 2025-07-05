@@ -4,7 +4,7 @@ July 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.l
 and I’m excited to join you on this adventure, part of my <code>424</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>erform a known-plaintext attack to recover a repeating-key XOR key and decrypt a hidden message</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1order"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/452a3eef-3e09-4871-82cf-13b76ff5db43"></p>
 
 <br>
 
@@ -52,6 +52,18 @@ print("The decrypted message is:", decrypted.decode())
 
 ![image](https://github.com/user-attachments/assets/c8aae5c9-684b-4999-b48e-7fe2058bdecf)
 
+![image](https://github.com/user-attachments/assets/162143a8-5c5d-4135-8b48-cbebe22a1b78)
 
+
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 4, 2025      | 424      |     164ᵗʰ    |      5ᵗʰ     |   1,445ᵗʰ   |    38ᵗʰ    |  112,818 |    827    |     63    |
+
+</div>
 
 
