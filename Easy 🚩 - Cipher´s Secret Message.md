@@ -34,7 +34,7 @@ with open("message.txt", "w") as f:
 
 <p>Note: Wrap the decoded message within the flag format THM{} </p>
 
-<p><em></em>Answer the question below</p>em></p>
+<p><em>Answer the question below</em></p>
 
 <p>1.1. What is the flag?<br>
 <code></code></p>
