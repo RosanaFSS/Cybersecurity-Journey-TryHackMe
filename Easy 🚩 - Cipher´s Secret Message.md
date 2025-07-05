@@ -1,12 +1,10 @@
 <h1 align="center">Cipher´s Secret Message</h1>
-<p align="center"><img width="80px" src="Sharpen your cryptography skills by analyzing code to get the flag."><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/ed955759-2b59-4cd8-b1e0-4597741ad0bc"><br>
 July 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>424</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Sharpen your cryptography skills by analyzing code to get the flag.</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1cipherssecretmessage"</a>here.<br>
 <img width="1200px" src=""></p>
-
-![image](https://github.com/user-attachments/assets/ed955759-2b59-4cd8-b1e0-4597741ad0bc)
 
 
 <br>
@@ -82,6 +80,9 @@ print(decoded_message)
 
 
 ![image](https://github.com/user-attachments/assets/4b171bb8-77a7-43c6-8f69-af9e39d93e11)
+
+![image](https://github.com/user-attachments/assets/a5045760-2d30-4aa8-9cc1-2cb08183dd67)
+
 
 
 
