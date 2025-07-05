@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/6eab5e86-d9b1-4474-9f84-dd5ed984bcac"><br>
 July 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>424</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>erform a known-plaintext attack to recover a repeating-key XOR key and decrypt a hidden message</em>.<br>
+<em>Perform a known-plaintext attack to recover a repeating-key XOR key and decrypt a hidden message</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1order"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/452a3eef-3e09-4871-82cf-13b76ff5db43"></p>
 
