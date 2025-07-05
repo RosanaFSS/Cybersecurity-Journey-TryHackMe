@@ -40,21 +40,6 @@ with open("message.txt", "w") as f:
 <p>1.1. What is the flag?<br>
 <code></code></p>
 
-```bash
-from secret import FLAG
-
-def enc(plaintext):
-    return "".join(
-        chr((ord(c) - (base := ord('A') if c.isupper() else ord('a')) + i) % 26 + base) 
-        if c.isalpha() else c
-        for i, c in enumerate(plaintext)
-    )
-
-with open("message.txt", "w") as f:
-    f.write(enc(FLAG))
-```
-
-
 <p>Based on the script provided I crafted the script below:</p>
 
 ```bash
@@ -81,11 +66,10 @@ print(decoded_message)
 
 ![image](https://github.com/user-attachments/assets/4b171bb8-77a7-43c6-8f69-af9e39d93e11)
 
-![image](https://github.com/user-attachments/assets/a5045760-2d30-4aa8-9cc1-2cb08183dd67)
-
-
-
-
+<br>
+<br>
 
 ![image](https://github.com/user-attachments/assets/f4c7828d-3393-4c47-a318-a92ea96632a8)
+
+![image](https://github.com/user-attachments/assets/a5045760-2d30-4aa8-9cc1-2cb08183dd67)
 
