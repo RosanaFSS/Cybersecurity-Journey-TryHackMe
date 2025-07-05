@@ -62,8 +62,16 @@ print("The decrypted message is:", decrypted.decode())
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| July 4, 2025      | 424      |     164ᵗʰ    |      5ᵗʰ     |   1,445ᵗʰ   |    38ᵗʰ    |  112,818 |    827    |     63    |
+| July 4, 2025      | 424      |     163rdʰ   |      5ᵗʰ     |   1,045ᵗʰ   |    28ᵗʰ    |  112,848 |    828    |     63    |
 
 </div>
 
+![image](https://github.com/user-attachments/assets/f8f7d85b-6f83-44cd-9516-9ec16641d1e0)
 
+![image](https://github.com/user-attachments/assets/9bdffbbb-bb14-44c7-ac51-0be6b1bbf611)
+
+![image](https://github.com/user-attachments/assets/242d6008-c013-4135-ae36-2c7148150a19)
+
+![image](https://github.com/user-attachments/assets/eb45b4f7-286f-4b7c-8e0f-31f89b39c160)
+
+![image](https://github.com/user-attachments/assets/b226e878-1be6-47f8-866a-25f764cd94e1)
