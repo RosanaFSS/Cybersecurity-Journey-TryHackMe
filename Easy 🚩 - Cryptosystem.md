@@ -39,7 +39,7 @@ c = pow(bytes_to_long(FLAG.encode()), e, n)
 <p><em>Answer the question below</em></p>
 
 <p>1.1. What is the flag?<br>
-<code></code></p>
+<code>THM{Just_s0m3_small_amount_of_RSA!}</code></p>
 
 ```bash
 from Crypto.Util.number import long_to_bytes, inverse, isPrime
