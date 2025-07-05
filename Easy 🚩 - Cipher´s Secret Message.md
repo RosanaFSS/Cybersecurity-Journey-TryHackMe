@@ -4,8 +4,7 @@ July 4, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.l
 and I’m excited to join you on this adventure, part of my <code>424</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Sharpen your cryptography skills by analyzing code to get the flag.</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1cipherssecretmessage"</a>here.<br>
-<img width="1200px" src=""></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/51364d9a-3f9d-4244-bb18-ebe3e45ffbf7"></p>
 
 <br>
 
@@ -35,7 +34,7 @@ with open("message.txt", "w") as f:
 
 <p>Note: Wrap the decoded message within the flag format THM{} </p>
 
-<p>Answer the question below</p>
+<p><em></em>Answer the question below</p>em></p>
 
 <p>1.1. What is the flag?<br>
 <code></code></p>
@@ -73,3 +72,23 @@ print(decoded_message)
 
 ![image](https://github.com/user-attachments/assets/a5045760-2d30-4aa8-9cc1-2cb08183dd67)
 
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 4, 2025      | 424      |     164ᵗʰ    |      5ᵗʰ     |    3,265ᵗʰ  |     57ᵗʰ   |  112,758 |    825    |     63    |
+
+</div>
+
+![image](https://github.com/user-attachments/assets/10b57b1f-c794-454b-8d02-0275b70cc2bd)
+
+![image](https://github.com/user-attachments/assets/9817aa6c-fa2c-4411-b734-426380680904)
+
+![image](https://github.com/user-attachments/assets/fe9785a9-5eba-4436-bfe4-a39838d66ead)
+
+![image](https://github.com/user-attachments/assets/dfd146da-7660-459b-a412-98cf6dfe07a2)
+
+![image](https://github.com/user-attachments/assets/b4a1ff3b-4951-47fa-8198-b883ab5e9b8d)
