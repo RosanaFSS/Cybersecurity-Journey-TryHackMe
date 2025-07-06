@@ -13,10 +13,10 @@ Access it <a href="https://tryhackme.com/room/recovery"</a>here.<br>
 
 I'm not going to beat around the bush here; I need your help. As you know I work at a company called Recoverysoft. I work on the website side of things, and I setup a Ubuntu web server to run it. Yesterday one of my work colleagues sent me the following email:<br><br>
 
-<code>Hi Alex,<br>
+Hi Alex,<br>
 A recent security vulnerability has been discovered that affects the web server. Could you please run this binary on the server to implement the fix?<br>
 Regards<br>
-- Teo</code><br><br>
+- Teo<br><br>
 
 Attached was a linux binary called fixutil. As instructed, I ran the binary, and all was good. But this morning, I tried to log into the server via SSH and I received this message:</p>
 
