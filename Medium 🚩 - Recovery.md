@@ -16,7 +16,7 @@ I'm not going to beat around the bush here; I need your help. As you know I work
 Hi Alex,<br>
 A recent security vulnerability has been discovered that affects the web server. Could you please run this binary on the server to implement the fix?<br>
 Regards<br>
-- Teo<br><br>
+Teo<br><br>
 
 Attached was a linux binary called fixutil. As instructed, I ran the binary, and all was good. But this morning, I tried to log into the server via SSH and I received this message:</p>
 
@@ -34,7 +34,7 @@ Password: xxxxxxxx<br><br>
 <code>I have setup a control panel to track your progress on port 1337</code>. Access it via your web browser. As you repair the damage, you can refresh the page to receive those "flags" I know you love hoarding.<br>
 
 Good luck!<br>
-- Your friend Alex</p>
+Your friend Alex</p>
 
 <br>
 
