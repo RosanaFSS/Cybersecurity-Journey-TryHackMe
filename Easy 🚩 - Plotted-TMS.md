@@ -274,8 +274,7 @@ VHJ1c3QgbWUgaXQgaXMgbm90IHRoaXMgZWFzeS4ubm93IGdldCBiYWNrIHRvIGVudW1lcmF0aW9uIDpE
 <p>
 
 - clicked <code>Automated Scan</code><br>
-- URL to attack: http://<code>TargetIP>/code>
-</p>
+- URL to attack: http://<code>TargetIP</code></p>
 
 ![image](https://github.com/user-attachments/assets/f7d7774a-0a00-4cab-b72c-f6142af38cc4)
 
