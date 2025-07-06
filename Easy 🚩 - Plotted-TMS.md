@@ -1,11 +1,10 @@
 <h1 align="center">Plotted-TMS</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/7cb2d5fb-6bd8-4d1d-9562-83ad9ae19e2e"><br>
 July 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>426</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+and I’m excited to join you on this adventure, part of my <code>426</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Everything here is plotted</em>!<br>
-Access it <a href="https://tryhackme.com/room/plottedtms</a>here.<br>
+Access it <a href="https://tryhackme.com/room/plottedtms"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/cb0bcf61-2cf0-48c3-bf9a-1b069faedf41"></p>
-
 
 <br>
 
