@@ -1,21 +1,42 @@
-<h1 align="center">Evil-GPT v2</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/7bb3b4e2-a72c-4685-bae8-f0da548c14a6"><br>
-July 5, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+<h1 align="center">Recovery</h1>
+<p align="center"><img width="80px" src=""><br>
+July 6, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>425</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>Put your LLM hacking skills to the test one more time</em>.<br>
-Access it <a href="https://tryhackme.com/room/hfb1evilgptv2"</a>here.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/f2540df8-2466-440b-9e79-eb9fbbfb2bcc"></p>
+<em>Not your conventional CTF</em>.<br>
+Access it <a href="https://tryhackme.com/room/recovery"</a>here.<br>
+<img width="1200px" src=""></p>
 
 <br>
 
-<h2>Task 1 . LLM | Evil-GPT v2</h2>
-<p>We’ve got a new problem—another AI just popped up, and this one’s nothing like Cipher. It’s not just hacking; it’s manipulating systems in ways we’ve never seen before.<br>
+<h2>Task 1 . Help Alex!</h2>
+<p>Hi, it's me, your friend Alex.<br>
 
-The machine takes 5/6 minutes to fully boot up.<br>
+I'm not going to beat around the bush here; I need your help. As you know I work at a company called Recoverysoft. I work on the website side of things, and I setup a Ubuntu web server to run it. Yesterday one of my work colleagues sent me the following email:<br><br>
 
-To connect to the target machine, navigate to the IP address below using a web browser from your VPN connected VM or AttackBox:<br>
+<code>Hi Alex,<br>
+A recent security vulnerability has been discovered that affects the web server. Could you please run this binary on the server to implement the fix?<br>
+Regards<br>
+- Teo</code><br><br>
 
-<code>TargetIP</code></p>
+Attached was a linux binary called fixutil. As instructed, I ran the binary, and all was good. But this morning, I tried to log into the server via SSH and I received this message:</p>
+
+![image](https://github.com/user-attachments/assets/5624a763-81e9-4d36-89f5-c02383f86e29)
+
+<p>It turns out that Teo got his mail account hacked, and fixutil was a targeted malware binary specifically built to destroy my webserver!<br>
+
+when I opened the website in my browser I get some crazy nonsense. The webserver files had been encrypted! Before you ask, I don't have any other backups of the webserver (I know, I know, horrible practice, etc...), I don't want to tell my boss, he'll fire me for sure.<br>
+
+Please access the web server and repair all the damage caused by fixutil. You can find the binary in my home directory. Here are my ssh credentials:<br><br>
+
+Username: xxxxxxxx<br>
+Password: xxxxxxxx<br><br>
+
+<code>I have setup a control panel to track your progress on port 1337</code>. Access it via your web browser. As you repair the damage, you can refresh the page to receive those "flags" I know you love hoarding.<br>
+
+Good luck!<br>
+- Your friend Alex</p>
+
+<br>
 
 <p><em>Answer the question below</em></p>
 
