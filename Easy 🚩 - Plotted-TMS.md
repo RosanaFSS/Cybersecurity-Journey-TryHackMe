@@ -31,7 +31,7 @@ Host script results:
 |_smb2-time: Protocol negotiation failed (SMB2)
 ```
 
-<h3>dirsearch</h3>
+<h3>dirb</h3>
 
 ```bash
 :~/Plotted-TMS# dirb http://TargetP/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
