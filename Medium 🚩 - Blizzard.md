@@ -321,29 +321,98 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
 <p><em>Answer the questions below</em></p>
 
 <p>3.1. <em>When did the victim receive the malicious phishing message? (format: MM/DD/YYYY HH:MM:SS)</em><br>
-<code>____</code></p>
+<code>03/24/2024 18:36:34</code></p>
 
+![image](https://github.com/user-attachments/assets/728e5880-d833-4d70-aa5f-2eb57bb1e44f)
+
+![image](https://github.com/user-attachments/assets/97d0ccd7-b885-4612-b937-21d453d6cae8)
+
+![image](https://github.com/user-attachments/assets/27f64f00-f85b-4f45-bc17-0db808bedb77)
+
+```bash
+ C:\Tools\ms_teams_parser.exe -f C:\Users\a.ramirez\AppData\Roaming\Microsoft\Teams\IndexedDB\https_teams.microsoft.com_0.indexeddb.leveldb -o ./teams.txt
+```
+
+![image](https://github.com/user-attachments/assets/8d48060f-b292-4f11-bb61-aa920d86b779)
+
+![image](https://github.com/user-attachments/assets/8e9e27dd-8171-4650-8f3a-5ad457697f96)
+
+```bash
+"e.johnson@healthspheresolutions.onmicrosoft.com"
+    },
+    {
+        "attachments": [],
+        "cachedDeduplicationKey": "8:live:.cid.268f655553d661d1_3063920760334493725",
+        "clientArrivalTime": "1711305394946.0",
+        "clientmessageid": "3063920760334493725",
+        "composetime": "1711305394946.0",
+        "content": "Dear Alexis,\n\n\n\nWe value the security of your Microsoft account and want to ensure that it remains protected at all times.\n\n\nRecently, there has been activity related to your account that requires your attention. While there is no immediate cause for concern, we recommend reviewing your account settings and security information to ensure everything is up-to-date and secure.\n\n\nAs part of our security measures, we kindly ask you to confirm your identity by accessing the following link. \n\n\n\nhttps://login.sourcesecured.com/support/id/XkSkj321\n\n\nThis will help us verify that you are the account's rightful owner.\n\n\nIf you did not initiate any recent account activity or have any concerns about the security of your account, please contact our support team immediately.\n\n\nThank you for being so cooperative in helping us maintain the security of your account.\n\n\nSincerely,\r\nMicrosoft Identity Provider",
+        "contenttype": "text",
+        "conversationId": "19:uni01_kwqsezf3kqqfcqfwllsbwohsk34sqwo4bzuxkwxzrmr5geomteea@thread.v2",
+        "createdTime": "2024-03-24T18:36:34.946000",
+        "creator": "8:live:.cid.268f655553d661d1",
+        "isFromMe": false,
+        "messageKind": null,
+        "messagetype": "RichText/Html",
+        "origin_file": "C:\\Users\\a.ramirez\\AppData\\Roaming\\Microsoft\\Teams\\IndexedDB\\https_teams.microsoft.com_0.indexeddb.leveldb",
+        "originalArrivalTime": "1711305394038.0",
+        "properties": {
+            "importance": "",
+            "languageStamp": "languages=en:100;fil:61;id:59;length:928;&detector=Bling",
+            "subject": ""
+        },
+        "record_type": "message",
+        "version": "2024-03-24T18:36:34.038000"
+    },
+```
 
 <p>3.2. <em>What is the display name of the attacker?</em><br>
-<code>____</code></p>
+<code>Microsoft Identity Provider</code></p>
+
+<p>Discovered the answer in 3.1.</p>
 
 <br>
 
 <p>3.3. <em>What is the URL of the malicious phishing link? (format: defanged)</em><br>
-<code>____</code></p>
+<code>hxxps[://]login[.]sourcesecured[.]com/support/id/XkSkj321</code></p>
+
+<p>Discovered the answer in 3.1.</p>
+
+```bash
+https://login.sourcesecured.com/support/id/XkSkj321
+```
+
+```bash
+hxxps[://]login[.]sourcesecured[.]com/support/id/XkSkj321
+```
 
 <br>
 
 <p>3.4. <em>What is the title of the phishing website?</em><br>
-<code>____</code></p>
+<code>Sign in to your account</code></p>
+
+![image](https://github.com/user-attachments/assets/8d0f69bf-1e7f-4f8d-916c-8882404e6d38)
+
+![image](https://github.com/user-attachments/assets/34cf49e4-62ff-43b1-a6d6-78467c5eb690)
+
+![image](https://github.com/user-attachments/assets/401247da-a6d1-4ae9-96fd-db8e0aa4a123)
+
+
+<br>
+
+![image](https://github.com/user-attachments/assets/39b42347-a64c-497f-b088-4fb1bd25b7da)
+
+![image](https://github.com/user-attachments/assets/0da10043-9971-4db4-a547-4187daffadfa)
+
+![image](https://github.com/user-attachments/assets/26c9c821-c11c-4bc9-94da-ca59f1c85e38)
+
 
 <br>
 
 <p>3.5. <em>When did the victim first access the phishing website? (format: MM/DD/YYYY HH:MM:SS in UTC)</em><br>
-<code>____</code></p>
+<code>Sign in to your account</code></p>
 
 <br>
-<br>
 
-
+![image](https://github.com/user-attachments/assets/c22d9ef3-968b-4844-86b2-8858dd246333)
 
