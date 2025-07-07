@@ -43,7 +43,7 @@
 
 <p>The IT team has also shared that the infected database server is set up for internal access only and is not yet linked to other systems, as it is still in the setup phase. This information could help narrow down potential sources of the threat.</p>
 
-<p><em>Answer the questions below</p>em></p>
+<p><em>Answer the questions below</em></p>
 
 <p>1.1. <em>When did the attacker access this machine from another internal machine? (format: MM/DD/YYYY HH:MM:SS)</em><br>
 <code>03/24/2024 19:38:48</code></p>
