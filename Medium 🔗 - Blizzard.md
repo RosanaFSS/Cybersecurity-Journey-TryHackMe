@@ -1,8 +1,12 @@
-![image](https://github.com/user-attachments/assets/caaacd76-9fa8-420e-b12f-bf3322057cdd)
+<h1 align="center">Blizzard</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/caaacd76-9fa8-420e-b12f-bf3322057cdd"><br>
+July 7, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>427</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>A critical alert was triggered from a sensitive server. You are tasked to perform a live investigation on multiple machines to determine the root cause of the incident.</em>.<br>
+Access it <a href="https://tryhackme.com/room/blizzard"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/928fed2c-c9c2-4549-a8f6-78dfaa62d722"></p>
 
-
-<p>July 7, 2025</p>
-<h1>Blizzard</h1>
+<br>
 
 <h2>Task 1 . Introduction: Analysing the Impact</h2>
 <p>Health Sphere Solutions, a healthcare systems provider on the path to expansion, is taking its first steps towards fortifying its infrastructure security. With the rise of cyber threats, particularly the emergence of Midnight Blizzard, a sophisticated threat group targeting the healthcare sector, the company recognizes the urgent need to protect sensitive customer data.</p>
@@ -410,9 +414,24 @@ hxxps[://]login[.]sourcesecured[.]com/support/id/XkSkj321
 <br>
 
 <p>3.5. <em>When did the victim first access the phishing website? (format: MM/DD/YYYY HH:MM:SS in UTC)</em><br>
-<code>Sign in to your account</code></p>
+<code>03/24/2024 18:38:29</code></p>
 
 <br>
 
 ![image](https://github.com/user-attachments/assets/c22d9ef3-968b-4844-86b2-8858dd246333)
+
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/6d503703-74ae-43f0-b9ba-52a4d44a3a92)
+
+![image](https://github.com/user-attachments/assets/f93df32e-6ac2-47bc-9ab2-00503d34e31f)
+
+![image](https://github.com/user-attachments/assets/660600ff-107e-476f-9afd-337a2f5b9b79)
+
+
+
+
+
+
 
