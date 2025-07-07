@@ -45,6 +45,20 @@ Your friend Alex</p>
 
 <br>
 
+![image](https://github.com/user-attachments/assets/322a470b-6d87-484c-92f3-c38ef0b3c1ed)
+
+![image](https://github.com/user-attachments/assets/e5f17af3-6047-4406-a149-bfde00db8f40)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9c644579-c7d8-48df-9de7-da2e811012e9)
+
+![image](https://github.com/user-attachments/assets/8f8e7564-bec3-48a5-a3a3-77d2d6ac511d)
+
+![image](https://github.com/user-attachments/assets/0ca090e1-7eb9-4ded-8601-0825599b1d62)
+
+
+<h3>ssh parameters</h3>
 
 ```bash
 man ssh
@@ -59,23 +73,29 @@ man ssh
 ```
 
 ```bash
+:~/Recovery/alex# scp .bashrc alex@recovery:.bashrc
+alex@recovery's password: 
+.bashrc                                                                                                   100% 3526     4.4MB/s   00:00    
+:~/Recovery/alex# ssh alex@recovery
+alex@recovery's password: 
+Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu...UTC 2020 x86_64
 
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jul  ... 2025 from TargetIP
+alex@recoveryserver:~$ logout
+Connection to recovery closed.
+:~/Recovery/alex# 
 ```
 
-```bash
-:~# ssh alex@1TargetIP /bin/sh
-alex@TargetIP's password: 
-id
-uid=1000(alex) gid=1000(alex) groups=1000(alex)
-pwd
-/home/alex
-which python3
-ls -lah
-total 60K
-drwxr-xr-x 1 alex alex 4.0K Jun 17  2020 .
-drwxr-xr-x 1 root root 4.0K Jun 17  2020 ..
--rw-r--r-- 1 alex alex  220 Apr 18  2019 .bash_logout
--rw-r--r-- 1 alex alex 3.6K Jun 17  2020 .bashrc
+![image](https://github.com/user-attachments/assets/35d946fb-adc6-40df-85f3-110640171abf)
+
+
+
 -rw-r--r-- 1 alex alex  807 Apr 18  2019 .profile
 -rwxrwxr-x 1 root root  37K Jun 12  2020 fixutil
 cat .bashrc
