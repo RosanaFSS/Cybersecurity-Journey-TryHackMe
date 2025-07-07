@@ -1,10 +1,8 @@
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{TryHackMe}}$$ </h1>
-<h4 align="center">Jul 7, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
-<h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
+<h1 align="center"> TryHackMe</h1>
+<p align="center">Jul 7, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></p>
+<h2 align="center">My accomplishments in my THM account, active since December 2023.</h2>
 
-
-<p align="center">Jul 7, 2025 - My yearly activity</p>
-<h3align="center">Completed <code>298</code> out of <code>430</code> challenges available.<br>
+<h3 align="center">Completed <code>298</code> out of <code>430</code> challenges available.<br>
 Completed <code>13</code> out of <code>15</code> learning paths available.<br>
 <img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"/><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"/>/h3>
