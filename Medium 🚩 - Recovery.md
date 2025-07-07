@@ -56,6 +56,10 @@ Your friend Alex</p>
 
 <br>
 
+```bash
+:~/Recovery# scp -r alex@recovery:/home/alex/ .
+```
+
 ![image](https://github.com/user-attachments/assets/9c644579-c7d8-48df-9de7-da2e811012e9)
 
 ![image](https://github.com/user-attachments/assets/8f8e7564-bec3-48a5-a3a3-77d2d6ac511d)
