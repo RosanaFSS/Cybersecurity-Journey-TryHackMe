@@ -282,17 +282,19 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
 
 <br>
 
-<p>2.4. <em>What is the domain accessed by the malicious implant? (format: defanged)</em><br>
-<code>_____</code></p>
-
-<br>
-
 <p>2.5. <em>What file did the attacker leverage to gain access to the database server? Provide the password found in the file.</em><br>
 <code>db@dm1ns3cur3Pass!</code></p>
 
 ![image](https://github.com/user-attachments/assets/9792e98c-f5f4-413e-83a6-5f9b01e69b6c)
 
 ![image](https://github.com/user-attachments/assets/bc0c1c0c-ac83-4e55-bfcf-f6d5139854fa)
+
+<br>
+
+<p>2.4. <em>What is the domain accessed by the malicious implant? (format: defanged)</em><br>
+<code>_____</code></p>
+
+<br>
 
 
 
