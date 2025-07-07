@@ -4,8 +4,11 @@
 
 <div align="center">
 
+![image](https://github.com/user-attachments/assets/18976243-475f-4d78-89ce-22efb863e036)
+
+
   
-|<h5>Fundamentals<br>Complete Beginner<br><br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/15dbd2c6-289a-4553-a3a4-360be5c6c8f1" style="height:130px;"/> <h6>THM-CIQLUJGLAL</h6> <img src="https://github.com/user-attachments/assets/1ba5ed82-dd1d-4ee1-bf24-dd9901805249" style="height:100px;"/> <br> [34 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/1.%20Easy%20-%20Complete%20Beginner.md) |||| ||
+|<h5>Advanced Endpoint Investigations<br><br>✅<br>Julk, 2025</h5> <img src="https://github.com/user-attachments/assets/eb8761d7-34d7-4dab-be7d-01aa24cd6b10" style="height:130px;"/> <h6>THM-4Q0QKPJVP6</h6> <img src="https://github.com/user-attachments/assets/18976243-475f-4d78-89ce-22efb863e036" style="height:100px;"/> <br> [40 hands-on](https://tryhackme.com/certificate/THM-4Q0QKPJVP6) |||| ||
 |:-------------------------------:|:-------------------------------:|:-------------------------------:|:------------------------------:|:-------------------------------:|:-------------------------------:|
 | | | | | | |
 |<h5>Penetration Tester<br>CompTIA Pentest+<br><br>✅<br>Nov, 2024</h5> |<h5>Penetration Tester<br>Jr Penetration Tester<br><br>✅<br>Oct, 2024</h5>|<h5>Penetration Tester<br>Web Fundamentals<br><br>✅<br>Sep, 2024</h5>|<h5>Penetration Tester<br>Web App Pentesting<br><br>✅<br>Dec, 2024</h5>|<h5>Penetration Tester<br>Red Teaming<br><br>📈<br>99%</h5>|<h5>Penetration Tester<br>Offensive Pentesting<br><br>📈<br>95%</h5>|
