@@ -1,9 +1,6 @@
 <p>July 7, 2025</p>
 <h1>Blizzard</h1>
 
-![image](https://github.com/user-attachments/assets/04537ed7-a4c7-4c7f-a2db-891f8526355e)
-
-
 <h2>Task 1 . Introduction: Analysing the Impact</h2>
 <p>Health Sphere Solutions, a healthcare systems provider on the path to expansion, is taking its first steps towards fortifying its infrastructure security. With the rise of cyber threats, particularly the emergence of Midnight Blizzard, a sophisticated threat group targeting the healthcare sector, the company recognizes the urgent need to protect sensitive customer data.</p>
 
@@ -50,6 +47,8 @@
 
 <p>1.1. <em>When did the attacker access this machine from another internal machine? (format: MM/DD/YYYY HH:MM:SS)</em><br>
 <code>03/24/2024 19:38:48</code></p>
+
+![image](https://github.com/user-attachments/assets/04537ed7-a4c7-4c7f-a2db-891f8526355e)
 
 <h3>EvtxECmd</h3>
 
