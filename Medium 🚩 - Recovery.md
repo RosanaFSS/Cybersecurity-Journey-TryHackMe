@@ -62,7 +62,11 @@ Your friend Alex</p>
 
 ![image](https://github.com/user-attachments/assets/9c644579-c7d8-48df-9de7-da2e811012e9)
 
+<p>edit <em>.bashrc</em></p>
+
 ![image](https://github.com/user-attachments/assets/8f8e7564-bec3-48a5-a3a3-77d2d6ac511d)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/0ca090e1-7eb9-4ded-8601-0825599b1d62)
 
