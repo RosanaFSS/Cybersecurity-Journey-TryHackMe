@@ -1,5 +1,5 @@
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{TryHackMe}}$$ </h1>
-<h4 align="center">Jun 25, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
+<h4 align="center">Jul 7, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
 <h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
 
 <div align="center">
@@ -19,10 +19,14 @@
 
 <br>
 
+![image](https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04)
 
-<h2 align="center"> $$\textcolor{white}{\textnormal{Jun 25, 2025 - My yearly activity}}$$ <br>
-<img width="1000px" src=""/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/b8a51f45-d154-4059-96f7-d0b64e03ce37"/><br>255/414</h2>
+
+
+<h2 align="center"> $$\textcolor{white}{\textnormal{Jul 7, 2025 - My yearly activity}}$$ <br>
+<img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"/><br>Completed <code>298</code> out of <code>430</code> challenges available.<br>
+Completed <code>13</code> out of <code>15</code> learning paths available.</h2>
 
 <br>
 
@@ -71,6 +75,7 @@
 |Date                       |Streak    |      All Time|      All Time|       Monthly|       Monthly|Points    | Rooms     |
 |:--------------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
 |                           |          |        Global|        Brazil|        Global|        Brazil|          |           | 
+| Jul &nbsp; 7, 2025        | 427      |         163ʳᵈ|           5ᵗʰ|         824ᵗʰ|          19ᵗʰ| 113,315  |       833 |
 | Jun 25, 2025              | 415      |         184ᵗʰ|           5ᵗʰ|         275ᵗʰ|           6ᵗʰ| 110,197  |       801 |
 | May 27, 2025              | 386      |         207ᵗʰ|           4ᵗʰ|         148ᵗʰ|           3ʳᵈ| 104,917  |       750 |
 | May &nbsp; 1, 2025        | 360      |         241ˢᵗ|           6ᵗʰ|         298ᵗʰ|           5ᵗʰ| 99,015   |       700 |
