@@ -44,6 +44,11 @@ Your friend Alex</p>
 <code>THM{d8b5c89061ed767547a782e0f9b0b0fe}</code></p>
 
 <br>
+<br>
+
+```bash
+:~/Recovery# ssh alex@recovery
+```
 
 ![image](https://github.com/user-attachments/assets/322a470b-6d87-484c-92f3-c38ef0b3c1ed)
 
