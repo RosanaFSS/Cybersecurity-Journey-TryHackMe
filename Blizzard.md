@@ -5,8 +5,46 @@
 
 
 <h2>Task 1 . Introduction: Analysing the Impact</h2>
+<p>Health Sphere Solutions, a healthcare systems provider on the path to expansion, is taking its first steps towards fortifying its infrastructure security. With the rise of cyber threats, particularly the emergence of Midnight Blizzard, a sophisticated threat group targeting the healthcare sector, the company recognizes the urgent need to protect sensitive customer data.</p>
+
+<p>Midnight Blizzard, a notorious threat group, has been implicated in cyber-attacks against healthcare providers. Employing ransomware and phishing tactics, this group has successfully breached healthcare systems, causing significant data loss and operational interruptions.</p>
+
+<h3>Prerequisites</h3>
+<p>It is suggested to clear the following rooms first before proceeding with this room:<br>
+
+- Windows Forensics 1<br>
+- Expediting Registry Analysis<br>
+- Windows Network Analysis<br>
+- Windows User Activity Analysis<br>
+- Windows User Account Forensics<br>
+- Windows Applications Forensics</p>
+
+<h3>Scenario</h3>
+<p>A critical alert was detected on one of Health Sphere Solutions' database servers, highlighting the company's early challenges in securing its network. </p>
+
+![image](https://github.com/user-attachments/assets/7ce0c360-5d17-4cf4-b3eb-a4c2a65e50c2)
+
+<p>Since the security controls are still being established, alerts have only come from servers, and only network-level events are being audited, it's essential to manually investigate both servers and workstations to connect the dots and fully understand the incident.</p>
+
+<h3>Connection Details</h3>
+
+<p>Before we proceed with the investigation, start the attached virtual machine by clicking the Start Machine button at the top-right of this task. The machine will start in Split-Screen view. If the VM is not visible, use the blue Show Split View button at the top of the page. You can also use these credentials to access the machine via RDP.</p>
 
 <br>
+
+<p>In addition, your team has prepared the following items to assist your investigation:<br>
+
+- Standalone tools in the C:\Tools directory.
+- Tools prepared as desktop shortcuts.</p>
+
+<h3>Investigation Guide</h3>
+<p>As part of your playbook, you are tasked to determine the following information during the investigation:<br>
+
+- Determine any unusual login attempts to the database server.<br>
+- Note any suspicious binaries executed within the server.<br>
+- Look for typical persistence mechanisms deployed in the server.</p>
+
+<p>The IT team has also shared that the infected database server is set up for internal access only and is not yet linked to other systems, as it is still in the setup phase. This information could help narrow down potential sources of the threat.</p>
 
 <p><em>Answer the questions below</p>em></p>
 
@@ -75,14 +113,55 @@
 <h3>Windows Explorer</h3>
 <p><em>rclone.conf</em></p>
 
+<p>with Windows PowerShell</p>
+
+![image](https://github.com/user-attachments/assets/99b5c6bb-4afd-47e8-aa56-c706835d1aa0)
+
+![image](https://github.com/user-attachments/assets/f0b8702c-1404-444e-8a0e-2f69162a2d70)
+
+<p>with Windows Explorer</p>
+
 ![image](https://github.com/user-attachments/assets/5c133a91-d530-4836-ba40-9aacbaedecb0)
 
 ![image](https://github.com/user-attachments/assets/5c133a91-d530-4836-ba40-9aacbaedecb0)
+
+<br>
+
+<p>1.4. <em>Where did the attacker store a persistent implant in the registry? Provide the registry value name.</em><br>
+<code>SecureUpdate</code></p>
+
+
+<h3>Registry Editor</h3>
+
+![image](https://github.com/user-attachments/assets/979ae801-5ccd-48bb-912f-27649f11fc0c)
+
+![image](https://github.com/user-attachments/assets/8bc80e6a-d855-4989-80dd-840bb4f7e8db)
+
+<br>
+
+<p>1.5. <em>Aside from the registry implant, another persistent implant is stored within the machine. When did the attacker implant the alternative backdoor? (format: MM/DD/YYYY HH:MM:SS).</em><br>
+<code>03/24/2024 20:04:05</code></p>
 
 ```bash
+PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null —and $_.State —ne "Disabled"} | Sort-Object Date | select Date,TaskName,Author,State,TaskPath | ft
 ```
 
+![image](https://github.com/user-attachments/assets/f2480007-1618-4ddf-9520-c10832b9eecb)
 
+
+<p><em>CDPUserSvc_9286x</em></p>
+
+![image](https://github.com/user-attachments/assets/1d1c35b5-1e8b-451a-8461-7c2db658ab8a)
+
+![image](https://github.com/user-attachments/assets/ba17980f-7ae6-48b1-84d0-fbdf3c8015c1)
+
+![image](https://github.com/user-attachments/assets/296cf905-38d8-4323-8bb1-f1520f8b317f)
+
+<p>code>2024-03-24 20:04:05</code> --> <code>03/24/2024 20:04:05</code></p>
+
+<br>
+
+<h2>Task 2 . Lateral Movemnt: Backtracking the Pivot Point</h2>
 
 
 
