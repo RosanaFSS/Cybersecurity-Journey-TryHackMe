@@ -5,8 +5,6 @@ and I’m excited to join you on this adventure, part of my <code>427</code>-day
 Access it <a href="https://tryhackme.com/room/blizzard"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/928fed2c-c9c2-4549-a8f6-78dfaa62d722"></p>
 
-<br>
-
 <h2>Task 1 . Introduction: Analysing the Impact</h2>
 <p>Health Sphere Solutions, a healthcare systems provider on the path to expansion, is taking its first steps towards fortifying its infrastructure security. With the rise of cyber threats, particularly the emergence of Midnight Blizzard, a sophisticated threat group targeting the healthcare sector, the company recognizes the urgent need to protect sensitive customer data.</p>
 
