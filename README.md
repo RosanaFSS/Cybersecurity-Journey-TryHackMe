@@ -5,7 +5,7 @@
 <div align="center">
 
   
-|<h5>Fundamentals<br>Complete Beginner<br><br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/15dbd2c6-289a-4553-a3a4-360be5c6c8f1" style="height:130px;"/> <h6>THM-CIQLUJGLAL</h6> <img src="https://github.com/user-attachments/assets/1ba5ed82-dd1d-4ee1-bf24-dd9901805249" style="height:100px;"/> <br> [34 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/1.%20Easy%20-%20Complete%20Beginner.md) |||| |
+|<h5>Fundamentals<br>Complete Beginner<br><br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/15dbd2c6-289a-4553-a3a4-360be5c6c8f1" style="height:130px;"/> <h6>THM-CIQLUJGLAL</h6> <img src="https://github.com/user-attachments/assets/1ba5ed82-dd1d-4ee1-bf24-dd9901805249" style="height:100px;"/> <br> [34 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/1.%20Easy%20-%20Complete%20Beginner.md) |||| ||
 |:-------------------------------:|:-------------------------------:|:-------------------------------:|:------------------------------:|:-------------------------------:|:-------------------------------:|
 | | | | | | |
 |<h5>Penetration Tester<br>CompTIA Pentest+<br><br>✅<br>Nov, 2024</h5> |<h5>Penetration Tester<br>Jr Penetration Tester<br><br>✅<br>Oct, 2024</h5>|<h5>Penetration Tester<br>Web Fundamentals<br><br>✅<br>Sep, 2024</h5>|<h5>Penetration Tester<br>Web App Pentesting<br><br>✅<br>Dec, 2024</h5>|<h5>Penetration Tester<br>Red Teaming<br><br>📈<br>96%</h5>|<h5>Penetration Tester<br>Offensive Pentesting<br><br>📈<br>96%</h5>|
