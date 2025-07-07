@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/caaacd76-9fa8-420e-b12f-bf3322057cdd)
+
+
 <p>July 7, 2025</p>
 <h1>Blizzard</h1>
 
@@ -194,8 +197,41 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 
 ![image](https://github.com/user-attachments/assets/3d642686-3c92-4de1-a712-0b5b5716bcd5)
 
+<br>
+
+```bash
+PS C:\Users> ls C:\Users\ | foreach {ls "C:\Users\$_\AppData\Local\Microsoft\Outlook\" 2>$null | findstr Directory}
+```
+
+![image](https://github.com/user-attachments/assets/178b3ccd-ca45-49e6-9f16-719893d93e98)
 
 <br>
+
+```bash
+PS C:\Users> ls C:\Users\ ls C:\Users\m.anderson\AppData\Local\Microsoft\Outlook\*.ost
+```
+
+![image](https://github.com/user-attachments/assets/58a437ed-37f1-431a-86f3-ae1daa3bb5fc)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/b1898d3c-d0a2-4911-b025-a61876b35ebb)
+
+![image](https://github.com/user-attachments/assets/bcafeb8f-17e2-4acd-a9c1-e745ff807284)
+
+![image](https://github.com/user-attachments/assets/d39c1438-fe34-4ffd-b6b4-fd896cc5c641)
+
+![image](https://github.com/user-attachments/assets/0927f60d-6cbe-4720-8651-4e494b1c6f3b)
+
+![image](https://github.com/user-attachments/assets/ecb3d9d5-8489-4476-b68b-462693218821)
+
+![image](https://github.com/user-attachments/assets/cf5eb99f-4de6-4408-9b2b-ce3b03c52b67)
+
+![image](https://github.com/user-attachments/assets/25a785b1-03b0-4de3-9fc8-813a25e97143)
+
+
+
+
 
 <p>2.2. <em>When did the victim open the malicious payload? (format: MM/DD/YYYY HH:MM:SS)</em><br>
 <code>_____</code></p>
@@ -215,6 +251,6 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 <p>2.5. <em>What file did the attacker leverage to gain access to the database server? Provide the password found in the file.</em><br>
 <code>_____</code></p>
 
-![image](https://github.com/user-attachments/assets/04537ed7-a4c7-4c7f-a2db-891f8526355e)
+
 
 
