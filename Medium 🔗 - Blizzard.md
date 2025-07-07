@@ -370,6 +370,8 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
     },
 ```
 
+<br>
+
 <p>3.2. <em>What is the display name of the attacker?</em><br>
 <code>Microsoft Identity Provider</code></p>
 
@@ -423,15 +425,29 @@ hxxps[://]login[.]sourcesecured[.]com/support/id/XkSkj321
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/6d503703-74ae-43f0-b9ba-52a4d44a3a92)
+<h1 align="center">Room Completed</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/6d503703-74ae-43f0-b9ba-52a4d44a3a92"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/660600ff-107e-476f-9afd-337a2f5b9b79"><br>
 
-![image](https://github.com/user-attachments/assets/f93df32e-6ac2-47bc-9ab2-00503d34e31f)
+<h1 align="center">Badge Earned</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/f93df32e-6ac2-47bc-9ab2-00503d34e31f"></p>
 
-![image](https://github.com/user-attachments/assets/660600ff-107e-476f-9afd-337a2f5b9b79)
+<h1 align="center">My TryHackMe Journey</h1>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 7, 2025      | 427      |     163ʳᵈ    |      5ᵗʰ     |     824ᵗʰ   |    19ᵗʰ    |  113,315 |    833    |     64   |
 
+</div>
 
+<p align="center"> Global All Time: 163ʳᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/8d7cc290-f26e-48fe-8f89-b72b0076ac31" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/d63c5c81-42f2-4e1b-b389-b5b2978c68a4"><br><br>
+                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/75b02799-1905-47ee-b2ae-b748b5f9d0f2"><br><br>
+                   Global monthly: 824ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/ef33a7d7-7f63-4175-9f04-7779d57a7ad9"><br><br>
+                   Brazil monthly:   19ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/a18ba29e-4b07-4cf3-a375-c4c13a274f5a"><br><br></p>
 
 
 
