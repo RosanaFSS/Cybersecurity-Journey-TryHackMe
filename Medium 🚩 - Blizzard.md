@@ -269,7 +269,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
 <br>
 
 <p>2.3. <em>When was the malicious persistent implant created? (format: MM/DD/YYYY HH:MM:SS)</em><br>
-<code>03/24/2024 19:16:23/code></p>
+<code>03/24/2024 19:16:23</code></p>
 
 ![image](https://github.com/user-attachments/assets/49c6d859-4e20-4dce-b75f-428e29d21223)
 
