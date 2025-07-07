@@ -2,6 +2,15 @@
 <h4 align="center">Jul 7, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br></h4>
 <h2 align="center"> $$\textcolor{white}{\textnormal{My accomplishments in my THM account, active since December 2023.}}$$ </h2>
 
+
+<p align="center">Jul 7, 2025 - My yearly activity</p>
+<h3align="center">Completed <code>298</code> out of <code>430</code> challenges available.<br>
+Completed <code>13</code> out of <code>15</code> learning paths available.<br>
+<img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"/><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"/>/h3>
+
+<br>
+
 <div align="center">
 
 |<h5>Advanced Endpoint Investigations<br><br>✅<br>Jul, 2025</h5> <img src="https://github.com/user-attachments/assets/eb8761d7-34d7-4dab-be7d-01aa24cd6b10" style="height:130px;"/> <h6>THM-4Q0QKPJVP6</h6> <img src="https://github.com/user-attachments/assets/18976243-475f-4d78-89ce-22efb863e036" style="height:100px;"/> <br> [40 hands-on](https://tryhackme.com/certificate/THM-4Q0QKPJVP6) |||| ||
@@ -17,15 +26,6 @@
 |<h5>Fundamentals<br>Complete Beginner<br><br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/15dbd2c6-289a-4553-a3a4-360be5c6c8f1" style="height:130px;"/> <h6>THM-CIQLUJGLAL</h6> <img src="https://github.com/user-attachments/assets/1ba5ed82-dd1d-4ee1-bf24-dd9901805249" style="height:100px;"/> <br> [34 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/1.%20Easy%20-%20Complete%20Beginner.md) |<h5>Fundamentals<br>Intro to<br>Cyber Security<br>✅<br>May, 2024</h5> <img src="https://github.com/user-attachments/assets/71ce8452-f10f-4ff1-a041-39d8fd792270" style="height:130px;"/> <h6>THM-NTSZBUQQZS</h6> <img src="https://github.com/user-attachments/assets/bc47f681-895f-4dd6-bee8-f5dfff8f1ffd" style="height:100px;"/> <br> [8 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/2.%20Easy%20-%20Introduction%20to%20Cyber%20Security.md)|<h5>Fundamentals<br>Pre Security<br><br>✅<br>Jun, 2024</h5> <img src="https://github.com/user-attachments/assets/84208baa-b96e-4715-84d0-c50eb892f942" style="height:130px;"/> <h6>THM-X9TLJHAVDH</h6><img src="https://github.com/user-attachments/assets/6d578f28-7550-4dc9-b38c-0895082fe8b2" style="height:100px;"/> <br> [18 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/3.%20Easy%20-%20Pre%20Security.md)|<h5>Fundamentals<br>Cyber Security 101<br><br>✅<br>Oct, 2024</h5> <img src="https://github.com/user-attachments/assets/aee7cfc7-3456-4893-a315-4f96ad53a811" style="height:130px;"/> <h6>THM-SM811IJLKA</h6> <img src="https://github.com/user-attachments/assets/6bef8808-0962-4aa2-b091-071f3ab51182" style="height:100px;"/> <br> [54 hands-on](https://github.com/RosanaFSS/TryHackMe/blob/main/4.%20Easy%20-%20Cyber%20Security%20101.md)| |
 
 </div>
-
-<br>
-
-
-<h2 align="center"> $$\textcolor{white}{\textnormal{Jul 7, 2025 - My yearly activity}}$$ <br>
-Completed <code>298</code> out of <code>430</code> challenges available.<br>
-Completed <code>13</code> out of <code>15</code> learning paths available.<br>
-<img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"/>/h2>
 
 <br>
 
