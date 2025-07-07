@@ -20,14 +20,12 @@
 
 <br>
 
-![image](https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04)
-
-
 
 <h2 align="center"> $$\textcolor{white}{\textnormal{Jul 7, 2025 - My yearly activity}}$$ <br>
+Completed <code>298</code> out of <code>430</code> challenges available.<br>
+Completed <code>13</code> out of <code>15</code> learning paths available.<br>
 <img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"/><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"/><br>Completed <code>298</code> out of <code>430</code> challenges available.<br>
-Completed <code>13</code> out of <code>15</code> learning paths available.</h2>
+<img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"/>/h2>
 
 <br>
 
