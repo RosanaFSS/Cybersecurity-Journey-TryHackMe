@@ -98,6 +98,12 @@ Connection to recovery closed.
 
 ![image](https://github.com/user-attachments/assets/35d946fb-adc6-40df-85f3-110640171abf)
 
+<br>
+<br>
+
+<p>1.2. Flag 1<br>
+<code>THM{4c3e355694574cb182ca3057a685509d}</code></p>
+
 
 <h3>ssh parameters</h3>
 
@@ -115,7 +121,7 @@ man ssh
 
 
 
-
+```bash
 -rw-r--r-- 1 alex alex  807 Apr 18  2019 .profile
 -rwxrwxr-x 1 root root  37K Jun 12  2020 fixutil
 cat .bashrc
