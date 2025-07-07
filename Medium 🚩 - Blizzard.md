@@ -159,7 +159,7 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 
 ![image](https://github.com/user-attachments/assets/296cf905-38d8-4323-8bb1-f1520f8b317f)
 
-<p>code>2024-03-24 20:04:05</code> --> <code>03/24/2024 20:04:05</code></p>
+<p><code>2024-03-24 20:04:05</code> --> <code>03/24/2024 20:04:05</code></p>
 
 <br>
 
