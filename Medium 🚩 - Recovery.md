@@ -62,28 +62,19 @@ Your friend Alex</p>
 
 ![image](https://github.com/user-attachments/assets/9c644579-c7d8-48df-9de7-da2e811012e9)
 
-<p>edit <em>.bashrc</em></p>
+<p>
+	
+- edited <em>.bashrc</em><br>
+- deleted <code>while :; do echo "YOU DIDN’T SAY THE MAGIC WORD!"; done &</code></p>
 
 ![image](https://github.com/user-attachments/assets/8f8e7564-bec3-48a5-a3a3-77d2d6ac511d)
 
 <br>
 
-![image](https://github.com/user-attachments/assets/0ca090e1-7eb9-4ded-8601-0825599b1d62)
-
-
-<h3>ssh parameters</h3>
-
 ```bash
-man ssh
-...
-    -s      May be used to request invocation of a subsystem on the remote system.  Subsystems facilitate the use of SSH as a secure transport for other applications
-             (e.g. sftp(1)).  The subsystem is specified as the remote command.
-
-     -T      Disable pseudo-terminal allocation.
-
-     -t      Force pseudo-terminal allocation.  This can be used to execute arbitrary screen-based programs on a remote machine, which can be very useful, e.g. when
-             implementing menu services.  Multiple -t options force tty allocation, even if ssh has no local tty.
+:~/Recovery/alex# scp .bashrc alex@recovery:.bashrc
 ```
+![image](https://github.com/user-attachments/assets/0ca090e1-7eb9-4ded-8601-0825599b1d62)
 
 ```bash
 :~/Recovery/alex# scp .bashrc alex@recovery:.bashrc
@@ -106,6 +97,22 @@ Connection to recovery closed.
 ```
 
 ![image](https://github.com/user-attachments/assets/35d946fb-adc6-40df-85f3-110640171abf)
+
+
+<h3>ssh parameters</h3>
+
+```bash
+man ssh
+...
+    -s      May be used to request invocation of a subsystem on the remote system.  Subsystems facilitate the use of SSH as a secure transport for other applications
+             (e.g. sftp(1)).  The subsystem is specified as the remote command.
+
+     -T      Disable pseudo-terminal allocation.
+
+     -t      Force pseudo-terminal allocation.  This can be used to execute arbitrary screen-based programs on a remote machine, which can be very useful, e.g. when
+             implementing menu services.  Multiple -t options force tty allocation, even if ssh has no local tty.
+```
+
 
 
 
