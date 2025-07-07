@@ -161,9 +161,53 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 <br>
 
 <h2>Task 2 . Lateral Movemnt: Backtracking the Pivot Point</h2>
+<h3>Scenario</h3>
+<p>Following the detection of unusual login attempts on the database server, the investigation has pivoted towards examining a specific workstation used by an IT employee, which has been identified as the potential origin of the suspicious login to the database server.</p>p>
+
+<h3>Connection Details</h3>
+
+<p>To continue the investigation in the next machine, start the attached VM by clicking the Start Machine button at the top-right of this task. The machine will start in Split-Screen view. If the VM is not visible, use the blue Show Split View button at the top of the page. You can also use these credentials to access the machine via RDP.</p>
 
 
+<p>In addition, your team has prepared the following items to assist your investigation:<br>
 
+- Standalone tools in the C:\Tools directory.<br>
+- Tools prepared as desktop shortcuts.</p>
 
+<h3>Investigation Guide</h3>
+<p></p>Your task is to meticulously analyse the workstation's artefacts by following your incident response playbook.<br>
+
+- Determine any unusual emails or chats to cover the social engineering attack vectors.<br>
+- Inspect the user's browser activity and determine if any malicious files have been downloaded or links have been accessed.<br>
+- Note any suspicious binaries executed within the workstation.<br>
+- Look for typical persistence mechanisms deployed in the workstation.<br>
+- Review the network connections made by the workstation and see if there are potential C2 connections invoked.</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>2.1. <em>When did the attacker send the malicious email? (format: MM/DD/YYYY HH:MM:SS)</em><br>
+<code>_____</code></p>
+
+<br>
+
+<p>2.2. <em>When did the victim open the malicious payload? (format: MM/DD/YYYY HH:MM:SS)</em><br>
+<code>_____</code></p>
+
+<br>
+
+<p>2.3. <em>When was the malicious persistent implant created? (format: MM/DD/YYYY HH:MM:SS)</em><br>
+<code>_____</code></p>
+
+<br>
+
+<p>2.4. <em>What is the domain accessed by the malicious implant? (format: defanged)</em><br>
+<code>_____</code></p>
+
+<br>
+
+<p>2.5. <em>What file did the attacker leverage to gain access to the database server? Provide the password found in the file.</em><br>
+<code>_____</code></p>
+
+![image](https://github.com/user-attachments/assets/04537ed7-a4c7-4c7f-a2db-891f8526355e)
 
 
