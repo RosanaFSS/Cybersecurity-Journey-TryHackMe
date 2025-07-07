@@ -1,4 +1,4 @@
-<h1 align="center">Blizzard</h1>
+<h1 align="center">Windows Endpoint Investigation<br>Advanced Endpoint Investigation<img width="660px" src="https://github.com/user-attachments/assets/5f257bab-be7b-455e-8d8a-95556bf3e38d"><br>Blizzard</h1>
 <p align="center">July 7, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>427</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>A critical alert was triggered from a sensitive server.<br> You are tasked to perform a live investigation on multiple machines to determine the root cause of the incident.</em>.<br>
