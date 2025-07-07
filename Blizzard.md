@@ -163,7 +163,7 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 
 <br>
 
-<h2>Task 2 . Lateral Movemnt: Backtracking the Pivot Point</h2>
+<h2>Task 2 . Lateral Movement: Backtracking the Pivot Point</h2>
 <h3>Scenario</h3>
 <p>Following the detection of unusual login attempts on the database server, the investigation has pivoted towards examining a specific workstation used by an IT employee, which has been identified as the potential origin of the suspicious login to the database server.</p>
 
@@ -266,11 +266,10 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
 
 ![image](https://github.com/user-attachments/assets/63415727-bce5-4c4a-958a-dfef2d2af79b)
 
-
 <br>
 
 <p>2.3. <em>When was the malicious persistent implant created? (format: MM/DD/YYYY HH:MM:SS)</em><br>
-<code>_____</code></p>
+<code>03/24/2024 19:16:23/code></p>
 
 ![image](https://github.com/user-attachments/assets/49c6d859-4e20-4dce-b75f-428e29d21223)
 
@@ -278,7 +277,14 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
 
 <p>:-(</p>
 
+![image](https://github.com/user-attachments/assets/0cf4070e-7de8-44c9-9822-15e284fabe13)
 
+<br>
+
+<p>2.4. <em>What is the domain accessed by the malicious implant? (format: defanged)</em><br>
+<code>advancedsolutions[.]net</code></p>
+
+![image](https://github.com/user-attachments/assets/1ff661ff-15ff-4788-aeea-5d7754f578a6)
 
 <br>
 
@@ -291,12 +297,53 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nop -windowstyle hidd
 
 <br>
 
-<p>2.4. <em>What is the domain accessed by the malicious implant? (format: defanged)</em><br>
-<code>_____</code></p>
+
+<h2>Task 3 . Initial Access: Discovering the Root Cause</h2>
+<h3>Scenario</h3>
+<p>The investigation pivoted to a workstation belonging to a user suspected of sending an internal phishing attack after discovering that this malicious activity compromised an IT employee's workstation. The primary aim is to uncover how the sender's Office 365 (O365) account was compromised, initiating the phishing attack.</p>
+
+<h3>Connection Details</h3>
+<p>To continue the investigation in the next machine, start the attached VM by clicking the Start Machine button at the top-right of this task. The machine will start in Split-Screen view. If the VM is not visible, use the blue Show Split View button at the top of the page. You can also use these credentials to access the machine via RDP.</p>
+
+<p>In addition, your team has prepared the following items to assist your investigation:<br>
+
+- Standalone tools in the C:\Tools directory.<br>
+- Tools prepared as desktop shortcuts.</p>
+
+<h3>Investigation Guide</h3>
+<p>Your task is to meticulously analyse the workstation's artefacts by following your incident response playbook.<br>
+
+- Determine any unusual emails or chats to cover the social engineering attack vectors.<br>
+- Inspect the user's browser activity and determine if any malicious files have been downloaded or links have been accessed.</p>
+
+<p>This focused approach aims to trace back the steps leading to the phishing attack, thereby understanding how the attacker accessed the victim's O365 account and used it for internal phishing attempts.</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>3.1. <em>When did the victim receive the malicious phishing message? (format: MM/DD/YYYY HH:MM:SS)</em><br>
+<code>____</code></p>
+
+
+<p>3.2. <em>What is the display name of the attacker?</em><br>
+<code>____</code></p>
 
 <br>
 
+<p>3.3. <em>What is the URL of the malicious phishing link? (format: defanged)</em><br>
+<code>____</code></p>
 
+<br>
+
+<p>3.4. <em>What is the title of the phishing website?</em><br>
+<code>____</code></p>
+
+<br>
+
+<p>3.5. <em>When did the victim first access the phishing website? (format: MM/DD/YYYY HH:MM:SS in UTC)</em><br>
+<code>____</code></p>
+
+<br>
+<br>
 
 
 
