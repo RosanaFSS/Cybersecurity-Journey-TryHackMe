@@ -162,7 +162,7 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 
 <h2>Task 2 . Lateral Movemnt: Backtracking the Pivot Point</h2>
 <h3>Scenario</h3>
-<p>Following the detection of unusual login attempts on the database server, the investigation has pivoted towards examining a specific workstation used by an IT employee, which has been identified as the potential origin of the suspicious login to the database server.</p>p>
+<p>Following the detection of unusual login attempts on the database server, the investigation has pivoted towards examining a specific workstation used by an IT employee, which has been identified as the potential origin of the suspicious login to the database server.</p>
 
 <h3>Connection Details</h3>
 
