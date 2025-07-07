@@ -188,6 +188,13 @@ PS C:\Users\Administrator> Get-ScheduledTask | Where-Object {$_.Date —ne $null
 <p>2.1. <em>When did the attacker send the malicious email? (format: MM/DD/YYYY HH:MM:SS)</em><br>
 <code>_____</code></p>
 
+![image](https://github.com/user-attachments/assets/ea7596dd-19b5-494c-94ae-f2f718a7fd29)
+
+![image](https://github.com/user-attachments/assets/99406f27-a65a-41ca-a56d-b149dc8f3723)
+
+![image](https://github.com/user-attachments/assets/3d642686-3c92-4de1-a712-0b5b5716bcd5)
+
+
 <br>
 
 <p>2.2. <em>When did the victim open the malicious payload? (format: MM/DD/YYYY HH:MM:SS)</em><br>
