@@ -1,6 +1,5 @@
 <h1 align="center">Blizzard</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/caaacd76-9fa8-420e-b12f-bf3322057cdd"><br>
-July 7, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+<p align="center">July 7, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>427</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>A critical alert was triggered from a sensitive server. You are tasked to perform a live investigation on multiple machines to determine the root cause of the incident.</em>.<br>
 Access it <a href="https://tryhackme.com/room/blizzard"</a>here.<br>
