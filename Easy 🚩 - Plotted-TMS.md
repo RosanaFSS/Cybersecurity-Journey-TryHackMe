@@ -20,7 +20,7 @@ Tip: Enumeration is key!</p>
 <h3>nmap</h3>
 
 ```bash
-:~/Plotted-TMS# nmap -sS -sS -p -Pn -T4 TargetIP
+:~/Plotted-TMS# nmap -sS -p -Pn -T4 TargetIP
 PORT    STATE SERVICE
 22/tcp  open  ssh
 80/tcp  open  http
