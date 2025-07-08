@@ -98,7 +98,7 @@ PORT   STATE SERVICE VERSION
 
 ![image](https://github.com/user-attachments/assets/53ea5a2a-e1e8-4ea6-97b2-2e32e14d0ba6)
 
-<p><strong><em>It´s about Node.js deserialization</strong>.<br>
+<p><strong><em>It´s about Node.js deserialization</em></strong>.<br>
 I learned it in a previous challenge: <code>VulNet: Node</code></p>
 
 <h3>HackTricks</h3>
