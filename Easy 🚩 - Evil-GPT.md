@@ -18,8 +18,6 @@ To connect to the target machine use the following command:<br>
 
 <code>nc TargetIP 1337</code></p>
 
-<br>
-
 <p><em>Answer the question below</em></p>
 
 <p>1.1. What is the flag?<br>
