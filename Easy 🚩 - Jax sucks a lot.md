@@ -17,6 +17,11 @@ Thanks to @Luma for testing the room.</p>
 
 The competition is now over. The results have been announced in the TryHackMe Discord Server.</p>
 
+<p><em>Answer the questions below</em></p>
+
+<p>1.1. <em>user.txt</em><br>
+<code>0ba48780dee9f5677a4461f588af217c</code></p>
+
 <h3>nmap</h3>
 
 ```bash
@@ -360,6 +365,12 @@ ubuntu@ip-xx-xx-xxx-xxx:/home/dylan$ cat user.txt
 0ba48780dee9f5677a4461f588af217c
 ```
 
+<br>
+
+<p>1.2. <em>root.txt</em><br>
+<code>2cd5a9fd3a0024bfa98d01d69241760e</code></p>
+
+
 ```bash
 ubuntu@ip-xx-xx-xxx-xxx:/home/dylan$ sudo -l
 sudo -l
@@ -382,6 +393,7 @@ root@ip-xx-xx-xxx-xxx:~# cat root.txt
 2cd5a9fd3a0024bfa98d01d69241760e
 ```
 
+<br>
 
 <h1 align="center">Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/9dec6b81-5b87-4168-b3cc-10225487e232"><br>
