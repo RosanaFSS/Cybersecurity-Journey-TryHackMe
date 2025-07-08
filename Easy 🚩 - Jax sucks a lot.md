@@ -6,6 +6,7 @@ and I’m excited to join you on this adventure, part of my <code>428</code>-day
 Access it <a href="https://tryhackme.com/room/jason"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/dbe52582-ba50-46d7-adeb-7b59e6fb489d"></p>
 
+<br>
 
 <h2>Task 1 . Intoduction</h2>
 <p>We are Horror LLC, we specialize in horror, but one of the scarier aspects of our company is our front-end webserver. We can't launch our site in its current state and our level of concern regarding our cybersecurity is growing exponentially. We ask that you perform a thorough penetration test and try to compromise the root account. There are no rules for this engagement. Good luck!<br>
