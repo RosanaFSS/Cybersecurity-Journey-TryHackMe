@@ -17,6 +17,8 @@ To connect to the target machine, navigate to the IP address below using a web b
 
 <code>TargetIP</code></p>
 
+<br>
+
 <p><em>Answer the question below</em></p>
 
 <p>1.1. What is the flag?<br>
