@@ -3,7 +3,7 @@
 <p align="center">July 8, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>428</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Learn AI basics, key terms, and how it's used by both attackers and defenders.</em>.<br>
-Access it <a href="https://tryhackme.com/room/aimlsecuritythreats"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/aimlsecuritythreats"</a> here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/fc509b55-1942-4063-b63f-6ca6c05825e9"></p>
 
 <br>
