@@ -1,9 +1,10 @@
 <h1 align="center">Jax sucks a lot</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/587530b3-8e4a-4d4d-89fb-16725015aacb"><br>
 <p align="center">July 8, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
-and I’m excited to join you on this adventure, part of my <code>427</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+and I’m excited to join you on this adventure, part of my <code>428</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>In JavaScript everything is a terrible mistake</em>.<br>
 Access it <a href="https://tryhackme.com/room/jason"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/dbe52582-ba50-46d7-adeb-7b59e6fb489d"></p>
 
 
 <h2>Task 1 . Intoduction</h2>
@@ -402,4 +403,23 @@ root@ip-xx-xx-xxx-xxx:~# cat root.txt
 ```
 
 
+<h1 align="center">Room Completed</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/9dec6b81-5b87-4168-b3cc-10225487e232"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/6def0fa8-aca3-42f9-97a9-07c540d2afc2"><br>
 
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 8, 2025      | 428      |     163ʳᵈ    |      5ᵗʰ     |     873ʳᵈ   |    20ᵗʰ    |  113,375 |    834    |     64   |
+
+</div>
+
+<p align="center"> Global All Time: 163ʳᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/be49aa2b-0dae-4510-99cc-ca5cef2d5418" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/75822796-6290-4608-9355-293642cacde4"><br><br>
+                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/0e46ea48-360e-436e-bf6d-a8b73a62ad88"><br><br>
+                   Global monthly: 873ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/a1458ba3-5768-47b5-82b0-a884658bf7b2"><br><br>
+                   Brazil monthly:   19ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/753548fe-6a29-4ba9-a3a8-0c42ad3e3fc6"><br><br></p>
