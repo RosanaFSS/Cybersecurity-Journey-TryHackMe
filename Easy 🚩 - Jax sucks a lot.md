@@ -16,10 +16,6 @@ Thanks to @Luma for testing the room.</p>
 
 The competition is now over. The results have been announced in the TryHackMe Discord Server.</p>
 
-
-
-
-
 <h3>nmap</h3>
 
 ```bash
@@ -59,10 +55,6 @@ PORT   STATE SERVICE VERSION
 |_http-title: Horror LLC
 ```
 
-<br>
-
-<br>
-
 <h3>dirsearch</h3>
 
 ```bash
@@ -70,8 +62,6 @@ PORT   STATE SERVICE VERSION
 ```
 
 ![image](https://github.com/user-attachments/assets/73fa4267-c162-43bb-b7de-50c009d40a94)
-
-<br>
 
 <h3>gobuster</h3>
 
@@ -81,7 +71,6 @@ PORT   STATE SERVICE VERSION
 
 ![image](https://github.com/user-attachments/assets/9314569a-f27b-469f-baef-3d69943067f5)
 
-<br>
 
 <h3>http://TargetIP</h3>
 
@@ -93,8 +82,6 @@ PORT   STATE SERVICE VERSION
 
 <p>The the cookie is base64 encoded.<br>
 <code>eyJlbWFpbCI6InJlc2VhcmNoZXJAbWFpbC5jb20ifQ==</code> = <code>{"email":"researcher@mail.com"}</code></p>
-
-<br>
 
 <h3>Burp Suite and FoxyProxy</h3>
 
@@ -108,14 +95,10 @@ PORT   STATE SERVICE VERSION
 <p><strong><em>It´s about Node.js deserialization</strong>.<br>
 I learned it in a previous challenge: <code>VulNet: Node</code></p>
 
-<br>
-
 <h3>HackTricks</h3>
 <p>https://hacktricks.boitatech.com.br/pentesting-web/deserialization</p>
 
 ![image](https://github.com/user-attachments/assets/dc064da6-cbcd-4dc5-8c50-ef2e8dc477ac)
-
-<br>
 
 <h3>OPSECX</h3>
 
@@ -123,11 +106,7 @@ I learned it in a previous challenge: <code>VulNet: Node</code></p>
 
 ![image](https://github.com/user-attachments/assets/90731ab4-13c2-41e8-b914-adeddd8779d3)
 
-
-<br>
-
 <h3>nodejsshel.py</h3>
-
 
 ```bash
 :~/JaxSucksaLot# wget https://raw.githubusercontent.com/ajinabraham/Node.Js-Security-Course/refs/heads/master/nodejsshell.py
