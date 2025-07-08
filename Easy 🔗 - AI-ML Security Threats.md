@@ -8,8 +8,6 @@ Access it <a href="https://tryhackme.com/room/aimlsecuritythreats"</a>here.<br>
 
 <br>
 
-
-
 ![image](https://github.com/user-attachments/assets/03b55b06-bdc2-4246-9f9b-6d07a78539c4)
 
 <br>
