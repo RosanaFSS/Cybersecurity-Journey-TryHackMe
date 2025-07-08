@@ -15,6 +15,23 @@ Access it <a href="https://tryhackme.com/room/aimlsecuritythreats"</a>here.<br>
 <br>
 <br>
 
-![image](https://github.com/user-attachments/assets/cb4bd3b8-847e-4ea6-bd54-3c6e2709589a)
+<h1 align="center">Room Completed</h1>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/cb4bd3b8-847e-4ea6-bd54-3c6e2709589a"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/fb24e943-70f9-4621-a08a-c385913e13be"><br>
 
-![image](https://github.com/user-attachments/assets/fb24e943-70f9-4621-a08a-c385913e13be)
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 8, 2025      | 428      |     162ⁿᵈ    |      5ᵗʰ     |     483ʳᵈ   |     15ᵗʰ   |  113,525 |    836    |     64   |
+
+</div>
+
+<p align="center"> Global All Time: 162ⁿᵈ <br><img width="300px" src="https://github.com/user-attachments/assets/21266c02-b395-41a3-a2eb-25bc583b06b9" alt="Your Image Badge"><br>
+                                              <img width="1000px" src="https://github.com/user-attachments/assets/72e58bdc-39cc-4ded-b87d-9bc05b9a10ef"><br><br>
+                   Brazil All Time:   5ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/057ee316-9f60-4f17-b34e-a51ed0133770"><br><br>
+                   Global monthly: 483ʳᵈ<br><img width="1000px" src="https://github.com/user-attachments/assets/675d19bc-9ac7-449f-8c2b-5fa39dc8cbc9"><br><br>
+                   Brazil monthly:   15ᵗʰ<br><img width="1000px" src="https://github.com/user-attachments/assets/ee5150e0-ac4b-4bbb-bcbc-734e685c32c8"><br><br></p>
