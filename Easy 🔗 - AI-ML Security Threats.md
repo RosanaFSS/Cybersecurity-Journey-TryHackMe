@@ -11,7 +11,6 @@ Access it <a href="https://tryhackme.com/room/aimlsecuritythreats"</a>here.<br>
 ![image](https://github.com/user-attachments/assets/03b55b06-bdc2-4246-9f9b-6d07a78539c4)
 
 <br>
-<br>
 
 <h1 align="center">Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/cb4bd3b8-847e-4ea6-bd54-3c6e2709589a"><br>
