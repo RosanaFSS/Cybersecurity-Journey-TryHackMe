@@ -1,4 +1,4 @@
-<h1 align="center">Jax sucks a lot<img</h1>
+<h1 align="center">Jax sucks a lot</h1>
 <p align="center">July 8, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>427</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>In JavaScript everything is a terrible mistake</em>.<br>
