@@ -3,7 +3,7 @@
 <p align="center">July 8, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>428</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>After the previous breach, VulnNet Entertainment states it won't happen again. Can you prove they're wrong</em>?<br>
-Access it <a href="[https://tryhackme.com/room/jason](https://tryhackme.com/room/vulnnetnode)"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/vulnnetnode"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/abfc5f93-69b3-4893-9344-485cef4c5015"></p>
 
 <br>
