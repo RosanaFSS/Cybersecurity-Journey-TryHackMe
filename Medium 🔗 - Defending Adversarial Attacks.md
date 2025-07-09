@@ -1,4 +1,4 @@
-<h1 align="center">Defending Adversarial Attacks"</h1>
+<h1 align="center">Defending Adversarial Attacks</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/7cdd56e7-3180-4fa2-958f-8ea2a924f341"><br>
 <p align="center">July 8, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>428</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
