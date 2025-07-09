@@ -3,7 +3,7 @@
 <p align="center">July 8, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>428</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Learn defence mechanisms to harden machine learning models</em>.<br>
-Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/66a3d937-42dc-4e78-9470-da6e247431b1"></p>
 
 <h2>Task 1 . Introduction</h2>
