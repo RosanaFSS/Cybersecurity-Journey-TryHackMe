@@ -1,18 +1,22 @@
-ContAInment
-Day 429
-![image](https://github.com/user-attachments/assets/21b7b3e5-0e22-4fd0-bbce-6e543ccf1f0c)
+<h1 align="center">ContAInment</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/21b7b3e5-0e22-4fd0-bbce-6e543ccf1f0c"><br>
+<p align="center">July 9, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
+and I’m excited to join you on this adventure, part of my <code>429</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>Can you help contain the ransomware threat with the help of AI?</em>.<br>
+Access it <a href="https://tryhackme.com/room/containment"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/18a8393d-1ee4-4af6-95cf-b8de92276563"></p>
 
-https://tryhackme.com/room/containment
-
-Can you help contain the ransomware threat with the help of AI?
-
+<br>
+<br>
 
 
-![image](https://github.com/user-attachments/assets/18a8393d-1ee4-4af6-95cf-b8de92276563)
-
+<h2 align="center">Read my complete walkthrough in Medium.</h2>
+<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/containment-tryhackme-walkthrough-ai-ml-dfir-08bb7aedfba7">ContAInment</a></h3>
 
 
 <br>
+<br>
+
 
 <h1 align="center">Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/6e2addb0-5621-4a68-aa7b-88484a7d69cb"><br>
