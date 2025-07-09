@@ -46,7 +46,7 @@ Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 
 <h1 align="center">Room Completed</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/204a3f91-d68b-4dee-b712-0c55b2d45b78"><br>
-<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/a17831b8-bb27-47cf-9bfd-07f221d9526"><br>
+<p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/2c6bb411-c299-4092-8d82-f6fa60602305"><br>
 
 <h1 align="center">My TryHackMe Journey</h1>
 
