@@ -24,9 +24,27 @@ Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 
 <h2>Task 5 . Practical - The Digital TRail</h2>
 
+<br>
+
+```bash
+ubuntu@tryhackme:~$ source /opt/dfir-env/bin/activate
+```
+
 ![image](https://github.com/user-attachments/assets/b370fe9a-7814-47e1-be7f-d7d4ac57bff5)
 
+<br>
+
+```bash
+ubuntu@tryhackme:~$ python3 /opt/dfir-lab/classify_logs.py /var/log/auth.log
+```
+
 ![image](https://github.com/user-attachments/assets/4f6f157e-68ca-4d96-a72a-4251122e916c)
+
+<br>
+
+```bash
+(dfir-env) ubuntu@tryhackme:~$ python3 /opt/dfir-lab/file_anomalies.py
+```
 
 ![image](https://github.com/user-attachments/assets/26bf3b6c-4676-460f-9251-aeeb93091889)
 
