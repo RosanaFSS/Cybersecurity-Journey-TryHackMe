@@ -38,10 +38,7 @@ Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 
 <br>
 
-<h2>task 5 . Conclusion</h2>
-
-<br>
-<br>
+<h2>Task 5 . Conclusion</h2>
 
 
 <br>
