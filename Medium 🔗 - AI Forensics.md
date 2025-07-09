@@ -14,19 +14,26 @@ Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 
 <br>
 
-<h2>AI & DFIR</h2>
+<h2>Task 3 . AI & DFIR</h2>
 
 <br>
 
-<h2>AI Legal & Ethical Implications</h2>
+<h2>Task 4 . AI Legal & Ethical Implications</h2>
 
 <br>
 
-<h2>Practical - The Digital TRail</h2>
+<h2>Task 5 . Practical - The Digital TRail</h2>
+
+![image](https://github.com/user-attachments/assets/b370fe9a-7814-47e1-be7f-d7d4ac57bff5)
+
+![image](https://github.com/user-attachments/assets/4f6f157e-68ca-4d96-a72a-4251122e916c)
+
+![image](https://github.com/user-attachments/assets/26bf3b6c-4676-460f-9251-aeeb93091889)
+
 
 <br>
 
-<h2>Conclusion</h2>
+<h2>Task 6 . Conclusion</h2>
 
 <br>
 
