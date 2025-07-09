@@ -1,6 +1,6 @@
 <h1 align="center">ContAInment</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/21b7b3e5-0e22-4fd0-bbce-6e543ccf1f0c"><br>
-<p align="center">July 9, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
+July 9, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>429</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Can you help contain the ransomware threat with the help of AI?</em>.<br>
 Access it <a href="https://tryhackme.com/room/containment"</a>here.<br>
