@@ -22,7 +22,7 @@ Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 
 <br>
 
-<h2>Task 5 . Practical - The Digital TRail</h2>
+<h2>Task 5 . Practical - The Digital Trail</h2>
 
 <br>
 
@@ -205,7 +205,7 @@ base64 /tmp/src.tgz > /dev/shm/.core_dump_2025.tgz.enc
 
 <p>
 
-- <code>/home/j.morgan/Documents/Invoices/invoice_Q1_2075.ods</p>
+- <code>/home/j.morgan/Documents/Invoices/invoice_Q1_2075.ods</code></p>
 
 ```bash
 (dfir-env) ubuntu@tryhackme:/home/j.morgan/Documents/Invoices$ ls -la
