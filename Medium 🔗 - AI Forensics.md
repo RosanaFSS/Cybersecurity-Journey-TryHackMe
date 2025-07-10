@@ -66,7 +66,7 @@ drwxrwxr-x 3 j.morgan j.morgan 4096 May 19 15:43 Mail
 
 <p>
 
-- <code>akeane@poseidonenergy.net</code><br>
+- <code> akeane@poseidonenergy.net</code><br>
 - <code>invoice_Q1_2075.ods</code></p>
 
 ```bash
