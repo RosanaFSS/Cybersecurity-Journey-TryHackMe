@@ -16,10 +16,6 @@ Access it <a href="https://tryhackme.com/room/windowsthreatdetection1"</a>here.<
 
 <h2>Task 3 . Initial Access via RDP</h2>
 
-<br>
-
-<h2>Task 4 . </h2>
-
 
 ![image](https://github.com/user-attachments/assets/99b05770-4456-40c0-8595-56124db3342d)
 
@@ -35,7 +31,7 @@ Access it <a href="https://tryhackme.com/room/windowsthreatdetection1"</a>here.<
 
 <br>
 
-<h2>Task 5 . Initial Access via Phishing</h2>
+<h2>Task 4 . Initial Access via Phishing</h2>
 
 ![image](https://github.com/user-attachments/assets/4828702a-0ade-44cc-a544-96f8f2387a31)
 
@@ -53,7 +49,7 @@ Access it <a href="https://tryhackme.com/room/windowsthreatdetection1"</a>here.<
 
 <br>
 
-<h2>Task 6 . Continuing Phishing Topic</h2>
+<h2>Task 5 . Continue Phishing Topic</h2>
 
 ![image](https://github.com/user-attachments/assets/d79640dc-d1d2-4b0c-93ee-2dc0e56cc94b)
 
@@ -84,6 +80,10 @@ Access it <a href="https://tryhackme.com/room/windowsthreatdetection1"</a>here.<
 <br>
 
 ![image](https://github.com/user-attachments/assets/9255a641-2bbd-4b63-803e-0c81892d8204)
+
+<br>
+
+<h2>Task 7 . Conclusion</h2>
 
 <br>
 <br>
