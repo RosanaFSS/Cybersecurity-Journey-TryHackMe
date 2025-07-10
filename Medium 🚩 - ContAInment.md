@@ -9,10 +9,8 @@ Access it <a href="https://tryhackme.com/room/containment"</a>here.<br>
 <br>
 <br>
 
-
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
 <h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/containment-tryhackme-walkthrough-ai-ml-dfir-08bb7aedfba7">ContAInment</a></h3>
-
 
 <br>
 <br>
