@@ -3,7 +3,7 @@
 <p align="center">July 9, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>429</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Explore AI DFIR and learn how it boosts your investigation capabilities</em>.<br>
-Access it <a href=https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/defadversarialattacks"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/13ec6995-ab55-4f35-a5c2-9258b1471fdd"></p>
 
 <h2>Task 1 . Introduction</h2>
