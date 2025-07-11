@@ -1,8 +1,7 @@
 <p>July 11, 2025</p>
 <h1>Infinity Shell</h1>
-<p>Investigate and analyse the traces of an attack from an implanted webshell.
-<p>https://tryhackme.com/room/hfb1infinityshell</p>
-
+<p>Investigate and analyse the traces of an attack from an implanted webshell.<br>
+https://tryhackme.com/room/hfb1infinityshell<br>
 <img width="1901" height="380" alt="image" src="https://github.com/user-attachments/assets/22b1734b-2771-4861-8816-aae4796299e4" />
 
 
