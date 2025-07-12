@@ -1,4 +1,4 @@
-<p>July 12, 2025</p>
+<p>July 12, 2025 - Day 432</p>
 <h1>Stolen Mount</h1>
 <p>Analyse network traffic related to an unauthenticated file share access attempt, focusing on potential signs of data exfiltration.</p>
 <p>https://tryhackme.com/room/hfb1stolenmount</p>
