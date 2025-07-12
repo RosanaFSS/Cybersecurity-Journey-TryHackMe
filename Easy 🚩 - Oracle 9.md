@@ -17,7 +17,7 @@ Access it <a href="https://tryhackme.com/room/oracle9"</a>here.<br>
 - <code>22/ssh/OpenSSH 8.9p1</code><br>
 - <code>80/http/AI Assistant</code><br>
 - <code>5000/upnp</code><br>
-- <code>11434/unknown</p>
+- <code>11434/unknown</code></p>
 
 ```bash
 ~# nmap -sC -sS -p- TargetIP
