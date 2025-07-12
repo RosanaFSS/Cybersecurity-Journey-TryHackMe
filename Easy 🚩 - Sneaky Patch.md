@@ -25,7 +25,6 @@
 <img width="926" height="147" alt="image" src="https://github.com/user-attachments/assets/5809f8cc-d2bd-457a-b90e-4102221a95ae" />
 
 <h3>log</h3>
-<p><code>spatch</code> is <code>kernel</code></p>
 
 <img width="1039" height="308" alt="image" src="https://github.com/user-attachments/assets/bb1de024-493e-4f66-957c-23f0ac52ba33" />
 
