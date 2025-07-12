@@ -1,4 +1,4 @@
-<p>July 12, 2025</p>
+<p>July 12, 2025 - Day 432</p>
 <h1>Sneaky Patch</h1>
 <p>Investigate the potential kernel backdoor implanted within the compromised system.</p>
 <p>https://tryhackme.com/room/hfb1sneakypatch</p>
@@ -54,15 +54,12 @@
 <br>
 <br>
 
+<img width="421" height="274" alt="image" src="https://github.com/user-attachments/assets/a044eba1-0b0d-40b6-8112-22693883da68" />
 
+<img width="1901" height="896" alt="image" src="https://github.com/user-attachments/assets/0326d3f1-dbe4-4169-b9d5-d9708e920015" />
 
+<img width="1896" height="897" alt="image" src="https://github.com/user-attachments/assets/dc64dca6-1ac5-48a0-9d45-5eb70118fc3c" />
 
+<img width="1901" height="894" alt="image" src="https://github.com/user-attachments/assets/ffcd5857-1553-4ee6-aeaa-429b79b924c0" />
 
-
-
-
-
-
-
-
-
+<img width="1900" height="894" alt="image" src="https://github.com/user-attachments/assets/de56e9d8-f181-4163-b0c1-8e0a8569ee6f" />
