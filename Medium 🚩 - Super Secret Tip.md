@@ -4,6 +4,8 @@
 
 <p>https://tryhackme.com/room/supersecrettip</p>
 
+<br>
+
 ```bash
 :~/SuperSecretTip# sudo nmap -p- --min-rate 5000 -Pn 10.10.44.2
 ...
