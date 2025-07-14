@@ -1,4 +1,4 @@
-<palign="center">July 13, 2025</p>
+<p align="center">July 13, 2025</p>
 <h1 align="center">Napping</h1>
 <p align="center"><em>Even Admins can fall asleep on the job</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
