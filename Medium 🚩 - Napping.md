@@ -6,7 +6,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>. It is classified as a medium-levelchallenge.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">here</a>.<br>
-<img width="1000px" src="https://github.com/user-attachments/assets/da3bda99-de43-41a4-a47d-5d9376d74440"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/da3bda99-de43-41a4-a47d-5d9376d74440"></p>
 
 <br>
 
@@ -140,7 +140,7 @@ TargetIP
 
 <p>
 
-- clicked <code>Here</code.<br>
+- clicked <code>Here</code>.<br>
 - was redirected to Google</p>
 
 <h3>Source Code of <code>napping.thm/welcome.php</code></h3>
