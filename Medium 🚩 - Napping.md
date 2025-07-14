@@ -34,20 +34,6 @@ PORT   STATE SERVICE VERSION
 |_http-title: Login
 ```
 
-```bash
-:~/Napping# nmap -sC -sV -p- -T4 TargetIP
-...
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
-80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
-| http-cookie-flags: 
-|   /: 
-|     PHPSESSID: 
-|_      httponly flag not set
-|_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Login
-```
-
 <h3>TargetIP</h3>
 
 <img width="1109" height="272" alt="image" src="https://github.com/user-attachments/assets/c66696f0-01a3-4ed6-aa45-34840ff4051e" />
