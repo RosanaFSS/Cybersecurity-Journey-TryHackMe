@@ -1,5 +1,5 @@
 <h1 align="center">Napping</h1>
-<p align="center"><img width="120px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
 July 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br>
