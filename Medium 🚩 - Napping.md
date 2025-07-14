@@ -6,10 +6,9 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>. It is classified as a medium-levelchallenge.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
 Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">here</a>.<br>
-<img width="1000px" src="https://github.com/user-attachments/assets/69cd1d3a-d3ff-484b-b4c5-2a631cfb191"></p>
+<img width="1000px" src="https://github.com/user-attachments/assets/da3bda99-de43-41a4-a47d-5d9376d74440"></p>
 
 <br>
-
 
 <h2>Task 1 .Napping Flags</h2>
 <p>To hack into this machine, you must look at the source and focus on the target.</p>
@@ -19,12 +18,12 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">her
 <p><em>Answer the questions below</em></p>
 
 <p>1.1. What is the user flag?<br>
-<code></code></p>
+<code>THM{Wh@T_1S_Tab_NAbbiN6_&_PrinCIPl3_of_L3A$t_PriViL36E}</code></p>
 
 <br>
 
 <p>1.2. What is the root flag?<br>
-<code></code></p>
+<code>THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}</code></p>
 
 
 
