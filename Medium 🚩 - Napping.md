@@ -345,16 +345,12 @@ THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}
 
 
 <br>
-<br>
 
 <h1 align="center">Room Completed</h1>
 <br>
 <p align="center">
 <img width="1000px" src="https://github.com/user-attachments/assets/b055798e-3034-4c03-838f-e28f2be8fce8"><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/35b6fa04-89b8-4121-af76-2bdbca5b00b3"></p>
-
-<br>
-<br>
 
 
 <h1 align="center">My TryHackMe Journey</h1>
@@ -368,7 +364,7 @@ THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}
 
 </div>
 
-<p align="center"> Global All Time:  160ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/bdf625a9-57f9-4ffb-8544-40c39a5a71fd"><br>
+<p align="center"> Global All Time:  160ᵗʰ<br><br><img width="200px" src="https://github.com/user-attachments/assets/bdf625a9-57f9-4ffb-8544-40c39a5a71fd"><br>
                                                   <img width="1000px" src="https://github.com/user-attachments/assets/2144b4e2-39f5-4865-9eef-dadd4174973c"></p>
 
 <p align="center"> Brazil All Time:   5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/633dd9dd-2b91-4604-b92e-8d9f9ecbf26f"> </p>
