@@ -1,11 +1,11 @@
-<p align="center">July 13, 2025</p>
 <h1 align="center">Napping</h1>
 <p align="center"><em>Even Admins can fall asleep on the job</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
+July 13, 2025</p>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>. It is classified as a medium-levelchallenge.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">here</a>.<br>
+Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">here</a>.<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/da3bda99-de43-41a4-a47d-5d9376d74440"></p>
 
 <br>
