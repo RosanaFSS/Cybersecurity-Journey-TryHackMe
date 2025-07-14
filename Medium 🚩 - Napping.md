@@ -1,7 +1,7 @@
 <p align="center">July 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{433}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<img width="120px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
+It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<img width="120px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5">
 <h1 align="center">Napping</h1>
 <p align="center"><em>Can you take over The Marketplace's infrastructure?</em>.<br>
 It is classified as a medium-levelchallenge.<br>
