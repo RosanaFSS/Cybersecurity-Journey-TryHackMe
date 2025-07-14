@@ -365,7 +365,7 @@ THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}
 
 </div>
 
-<p align="center"> Global All Time:  160ᵗʰ<br><br><img width="200px" src="https://github.com/user-attachments/assets/bdf625a9-57f9-4ffb-8544-40c39a5a71fd"><br>
+<p align="center"> Global All Time:  160ᵗʰ<br><br><img width="400px" src="https://github.com/user-attachments/assets/bdf625a9-57f9-4ffb-8544-40c39a5a71fd"><br>
                                                   <img width="1000px" src="https://github.com/user-attachments/assets/2144b4e2-39f5-4865-9eef-dadd4174973c"></p>
 
 <p align="center"> Brazil All Time:   5ᵗʰ<br><br><img width="1000px" src="https://github.com/user-attachments/assets/633dd9dd-2b91-4604-b92e-8d9f9ecbf26f"> </p>
