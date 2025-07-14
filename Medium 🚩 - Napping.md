@@ -3,7 +3,7 @@
 <img width="80px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
 July 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.
-It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>. It is classified as a medium-levelchallenge.
+It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>. It is classified as a medium-level CTF.
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.
 Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">here</a>.<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/da3bda99-de43-41a4-a47d-5d9376d74440"></p>
