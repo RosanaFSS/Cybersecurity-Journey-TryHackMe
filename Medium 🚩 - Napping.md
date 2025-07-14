@@ -1,14 +1,13 @@
 <h1 align="center">Napping</h1>
-<img width="120px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5">
-<p align="center">July 13, 2025<br>
+<p align="center"><img width="120px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
+July 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
 It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Can you take over The Marketplace's infrastructure?</em>.<br>
 It is classified as a medium-levelchallenge.<br>
 You can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed.<br>
-Can be accessed clicking  <a href="Even Admins can fall asleep on the job<br>https://tryhackme.com/room/nappingis1337">here</a>.</p>
-
-<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/69cd1d3a-d3ff-484b-b4c5-2a631cfb191" />
+Can be accessed clicking  <a href="Even Admins can fall asleep on the job<br>https://tryhackme.com/room/nappingis1337">here</a>.<br>
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/69cd1d3a-d3ff-484b-b4c5-2a631cfb191" /></p>
 
 <br>
 
