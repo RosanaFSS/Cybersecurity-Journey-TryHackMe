@@ -12,9 +12,7 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/learnssti">here</a
 
 <p align="center"> <img width="900px" src="https://github.com/user-attachments/assets/cf88c38c-9822-4232-83e9-d0631e6ea002"> </p>
 
-
 <br>
-
 
 <h2>Task 1 . Introduction</h2>
 <h3>What is Server Side Template Injection?</h3>
