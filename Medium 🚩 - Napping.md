@@ -34,7 +34,7 @@ PORT   STATE SERVICE VERSION
 |_http-title: Login
 ```
 
-<h3>TargetIP</h3>
+<h3>Web</h3>
 
 <img width="1109" height="272" alt="image" src="https://github.com/user-attachments/assets/c66696f0-01a3-4ed6-aa45-34840ff4051e" />
 
