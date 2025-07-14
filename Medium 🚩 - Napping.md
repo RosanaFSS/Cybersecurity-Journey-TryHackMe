@@ -25,7 +25,8 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/nappingis1337">her
 <p>1.2. What is the root flag?<br>
 <code>THM{Adm1n$_jU$t_c@n'T_stAy_Aw@k3_T$k_tsk_tSK}</code></p>
 
-
+<br>
+<br>
 
 <h1>Reconnaissance</h1>
 <h2>Active Reconnaissance</h2>
