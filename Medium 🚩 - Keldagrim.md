@@ -1,11 +1,12 @@
 <h1 align="center">Keldagrim</h1>
 <p align="center"><em>The dwarves are hiding their gold</em>!<br>
-<img width="80px" src="https://github.com/user-attachments/assets/9d1fc95b-0e87-4b3e-a0a3-b11fbfb933e5"><br>
+<img width="80px" src="https://github.com/user-attachments/assets/ab6bbba1-eb21-4189-8b67-d239ae0f6af0"><br>
 July 13, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.
 It´s part of my <code>433</code>-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>. It is classified as a medium-level CTF.
-You can join it clicking  <a href="https://tryhackme.com/room/nappingis1337">here</a>.<br><br>
-<img width="1200px" src="h"></p>
+You can join it clicking  <a href="https://tryhackme.com/room/keldagrim">here</a>.<br><br>
+<img width="1200px" src=""></p>
+
 
 <br>
 
@@ -23,7 +24,7 @@ Target = 10.10.64.159
 <h3>Port Scanning with <code>nmap</code></h3>
 
 ```bash
-:~/Keldagrim# nmap -sC -sV -p- -T4 10.10.64.159
+:~/Keldagrim# nmap -sC -sV -p- -T4 TargetIP
 ...
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
