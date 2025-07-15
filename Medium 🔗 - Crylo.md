@@ -28,6 +28,7 @@ Crylo</p>
 ```
 
 <h3>nmap</h3>
+
 <p>
 
   - Used nmap. Identified 2 ports open: 22/ssh , and 80/http.</p>
@@ -82,9 +83,9 @@ Finished
 ===============================================================
 ```
 
-<p>
-
 <h3>http://crylo.thm/debug</h3>
+  
+<p>
   
 -  Navigated to http://crylo.thm/debug. Indeed it is forbidden.</p>
 
