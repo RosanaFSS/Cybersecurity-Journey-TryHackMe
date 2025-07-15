@@ -46,7 +46,7 @@ PORT   STATE SERVICE VERSION
 ```
 
 
-<h3>Directory Enumeration</h3>h3>
+<h3>Directory Enumeration</h3>
 <p>1.2. <em>What is the 403/forbidden web page?</em> Hint : Try directory enumeration.<br>
 <code>debug</code></p>
 
@@ -88,6 +88,11 @@ Finished
   
 -  Navigated to http://crylo.thm/debug. Indeed it is forbidden.</p>
 
+<img width="1768" height="711" alt="image" src="https://github.com/user-attachments/assets/c2955624-e0cf-41c0-9712-2d5ad69aaac1" />
+
+
+<br>
+
 <h2>Task 2 . Injection</h2>
 <p>The goal is to find a way to bypass the login. Find the username and password.</p>
 <p><em>Answer the questions below</em></p>
@@ -95,13 +100,15 @@ Finished
 <p>2.1. <em>What is the name of the first username?</em><br>
 <code>admin</code>
   
+<h3>http://crylo.thm</h3>
+
+<img width="1769" height="669" alt="image" src="https://github.com/user-attachments/assets/21268d76-9e37-4a33-bfdf-eeb103b4fcd5" />
+
+
 <p>
-
-- Navigated to http://crylo.thm.</p>
-
-http://crylo.thm
--  Launched Burp Suite.
- -  Clicked Login.
- -  Enabled FoxyProxy in the right upper corner of the web browser.
--  Tried to log in with the credentials admin:admin.
- -  Right-clicked over the Burp Suite´s Request panel, defined the name request.txt, and clicked Save.
+  
+-  Launched Burp Suite.<br>
+-  Clicked Login.<br>
+-  Enabled FoxyProxy in the right upper corner of the web browser.<br>
+-  Tried to log in with the credentials admin:admin.<br>
+-  Right-clicked over the Burp Suite´s Request panel, defined the name request.txt, and clicked Save.</p>
