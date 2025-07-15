@@ -51,6 +51,8 @@ PORT   STATE SERVICE VERSION
 <p>1.2. <em>What is the 403/forbidden web page?</em> Hint : Try directory enumeration.<br>
 <code>debug</code></p>
 
+<h3>gobuster</h3>
+
 <p>
   
 - Used gobuster to enumerate the directories, and identify the 403 one.</p>
@@ -106,10 +108,10 @@ Finished
 <img width="1769" height="669" alt="image" src="https://github.com/user-attachments/assets/21268d76-9e37-4a33-bfdf-eeb103b4fcd5" />
 
 
-<p>
-  
-- Launched Burp Suite<br>
+<p>- Launched Burp Suite<br>
 - Clicked Login<br>
 - Enabled FoxyProxy in the right upper corner of the web browser<br>
 - Tried to log in with the credentials admin:admin<br>
 - Right-clicked over the Burp Suite´s Request panel, defined the name request.txt, and clicked Save</p>
+
+
