@@ -5,7 +5,6 @@ https://tryhackme.com/room/crylo4a<br>
 <p>Crylo is part of my 435ᵗʰ day on TryHackMe. It is classified as a medium-level challenge, and you can join it for 🆓 using your own virtual machine with openVPN or TryHackMe´s AttackBox if you are subscribed. Click the link below, and let's get started!
 Crylo</p>
 
-
 <br>
 
 <br>
