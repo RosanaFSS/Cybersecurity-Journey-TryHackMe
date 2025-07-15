@@ -108,7 +108,11 @@ Finished
 <p>
   
 - Launched Burp Suite.<br>
+
 - Clicked Login.<br>
+
 - Enabled FoxyProxy in the right upper corner of the web browser.<br>
+
 - Tried to log in with the credentials admin:admin.<br>
+
 - Right-clicked over the Burp Suite´s Request panel, defined the name request.txt, and clicked Save.</p>
