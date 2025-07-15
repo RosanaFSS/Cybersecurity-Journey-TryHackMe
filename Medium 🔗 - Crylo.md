@@ -30,7 +30,7 @@ Crylo</p>
 <h3>nmap</h3>
 <p>
 
-  - Used nmap. Identified 2 ports open: 22/ssh , and 80/http.<br>
+  - Used nmap. Identified 2 ports open: 22/ssh , and 80/http.</p>
 
 
 ```bash
@@ -46,10 +46,15 @@ PORT   STATE SERVICE VERSION
 ```
 
 
-Directory Enumeration
-1.2. What is the 403/forbidden web page? Hint : Try directory enumeration.
-/debug
-- Used gobuster to enumerate the directories, and identify the 403 one.
+<h3>Directory Enumeration</h3>h3>
+<p>1.2. <em>What is the 403/forbidden web page?</em> Hint : Try directory enumeration.<br>
+<code>debug</code></p>
+
+<p>
+  
+- Used gobuster to enumerate the directories, and identify the 403 one.</p>
+
+```bash
 :~/Crylo# gobuster dir -u http://crylo.thm -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
 ===============================================================
 Gobuster v3.6
@@ -75,18 +80,24 @@ Progress: 220560 / 220561 (100.00%)
 ===============================================================
 Finished
 ===============================================================
--  Navigated to http://crylo.thm/debug. Indeed it is forbidden.
+```
 
-http://crylo.thm/debug
+<p>
 
----
+<h3>http://crylo.thm/debug</h3>
+  
+-  Navigated to http://crylo.thm/debug. Indeed it is forbidden.</p>
 
-Task 2 . Injection
-The goal is to find a way to bypass the login. Find the username and password.
-Answer the questions below
-2.1. What is the name of the first username?
-admin
-- Navigated to http://crylo.thm.
+<h2>Task 2 . Injection</h2>
+<p>The goal is to find a way to bypass the login. Find the username and password.</p>
+<p><em>Answer the questions below</em></p>
+
+<p>2.1. <em>What is the name of the first username?</em><br>
+<code>admin</code>
+  
+<p>
+
+- Navigated to http://crylo.thm.</p>
 
 http://crylo.thm
 -  Launched Burp Suite.
