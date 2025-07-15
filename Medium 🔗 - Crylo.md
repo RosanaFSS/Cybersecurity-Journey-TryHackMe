@@ -46,8 +46,6 @@ PORT   STATE SERVICE VERSION
 |_http-title: Spicyo
 ```
 
-
-<h3>Directory Enumeration</h3>
 <p>1.2. <em>What is the 403/forbidden web page?</em> Hint : Try directory enumeration.<br>
 <code>debug</code></p>
 
