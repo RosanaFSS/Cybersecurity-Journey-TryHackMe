@@ -1,6 +1,12 @@
 <p>July 14, 2025 - Day 434</p>
 <h1>pyLon</h1>
-<p><em></em>Can you penetrate the defenses and become root?</em></p>
+<p><em>Can you penetrate the defenses and become root?</em><br>
+https://tryhackme.com/room/pylonzf</p>
+
+<br>
+
+<img width="1889" height="383" alt="image" src="https://github.com/user-attachments/assets/86a94a79-51c1-463d-82ca-6d49028bd9c2" />
+
 
 <br>
 
@@ -686,6 +692,27 @@ $6$abc$rvqzMBuMVukmply9mZJpW0wJMdDfgUKLDrSNxf9l66h/ytQiKNAdqHSj5YPJpxWJpVjRXibQX
 
 ```
 
+<br>
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 13, 2025     | 433      |     159ᵗʰ    |      5ᵗʰ     |    192nd    |     8ᵗʰ    |  114,735 |    855    |     64    |
+
+</div>
 
 
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/fd1ae2cb-879a-4e9f-9e38-784952da9370" />
 
+<img width="1892" height="895" alt="image" src="https://github.com/user-attachments/assets/ef2d3d02-420f-4ead-81a4-e79fb979a64b" />
+
+<img width="1890" height="895" alt="image" src="https://github.com/user-attachments/assets/765bf4c1-4c7c-498a-b486-0c76f1ef34ba" />
+
+<img width="1898" height="892" alt="image" src="https://github.com/user-attachments/assets/f7bd74a7-5a3d-46a5-9d74-7dd01e03f14b" />
+
+<img width="1892" height="890" alt="image" src="https://github.com/user-attachments/assets/efd42a69-dcb0-4233-a2fb-8babdfb9323f" />
