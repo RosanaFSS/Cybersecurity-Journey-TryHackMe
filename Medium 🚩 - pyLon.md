@@ -702,7 +702,7 @@ $6$abc$rvqzMBuMVukmply9mZJpW0wJMdDfgUKLDrSNxf9l66h/ytQiKNAdqHSj5YPJpxWJpVjRXibQX
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| July 13, 2025     | 433      |     159ᵗʰ    |      5ᵗʰ     |    192nd    |     8ᵗʰ    |  114,735 |    855    |     64    |
+| July 14, 2025     | 433      |     159ᵗʰ    |      5ᵗʰ     |    192nd    |     8ᵗʰ    |  114,735 |    855    |     64    |
 
 </div>
 
