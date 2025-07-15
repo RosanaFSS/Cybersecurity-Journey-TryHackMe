@@ -119,6 +119,19 @@ Finished
 <img width="1174" height="371" alt="image" src="https://github.com/user-attachments/assets/d7571bab-aef3-407c-b002-9d6df7e61451" />
 
 <h3>sqlmap</h3>
+<p>
+  
+- Used sqlmap command to test SQLI (SQL Injection). <code>sqlmap</code> is an open-source penetration testing tool used to help automate the detection and exploitation of SQL injection vulnerabilities in web applications, as well as set up database security parameters.</p>
+
+<p>
+
+. -r : path to a request file<br>
+. -dbs : enumerate DBMS databases<br>
+. --batch : never ask for user inout, use the default behavior.<br>
+. --level : customize the detection phase. It is about the level of tests to perform (1 to 5, default 1)<br>
+. --risk : specifies the risk of tests to perfom. Threa are 3 risk values. The default is 1 . Risk value adds to the default level the teste for heavy query tome-based SQL injectios. Riska value 3 adds also OR-based SQL injections tests.
+  
+</p>
 
 ```bash
 :~/Crylo# sqlmap -r request --dbs --batch --level=2 --risk=2
