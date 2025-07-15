@@ -26,7 +26,7 @@ https://tryhackme.com/room/insekube</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| July 15, 2025     | 434      |     158ᵗʰ    |      5ᵗʰ     |    203rd    |     7ᵗʰ    |  114,859 |    858    |    71     |
+| July 15, 2025     | 435      |     158ᵗʰ    |      5ᵗʰ     |    203rd    |     7ᵗʰ    |  114,859 |    858    |    71     |
 
 </div>
 
