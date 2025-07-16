@@ -11,8 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsiamenumeration"
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bfc7a924-287e-4c05-a8b5-cbe2418e7fea"> </p>
 
-
-<br>
 <br>
 
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Walkthrough}}$$</h1>
