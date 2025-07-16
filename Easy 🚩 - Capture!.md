@@ -12,7 +12,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/capture">here</a>.
 
 
 <br>
-<br>
 
 <h2>Task 1 . General Information </h2>
 
