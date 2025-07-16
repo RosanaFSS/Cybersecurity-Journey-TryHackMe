@@ -11,7 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/introductiontoawsi
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/1790477a-cd2f-48a2-88fa-62200466abaf"> </p>
 <br>
-<br>
 
 <h2>Task 1 . Introduction</h2>
 <p>Understanding IAM - AWS’s Identity and Access Management service - is critical to attacking or defending an AWS account. IAM is a highly complex service with multiple parts. In this module, you’ll learn about:</p>
