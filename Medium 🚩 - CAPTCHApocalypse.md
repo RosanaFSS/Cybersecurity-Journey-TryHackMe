@@ -19,7 +19,6 @@ Note: Use the first 100 lines of rockyou.txt</p>
 <p></p>
 
 <br>
-<br>
 
 <h1 align="center">My walkthrough will be available on <code>Medium</code> soon. 🚧</h1>
 
