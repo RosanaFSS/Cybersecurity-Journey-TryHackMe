@@ -11,8 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsiaminitialacces
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/71a8a908-9655-441d-acb3-34fe072f9478"> </p>
 
-
-
 <br>
 <br>
 
