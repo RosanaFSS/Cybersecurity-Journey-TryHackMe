@@ -11,7 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/cloud101aws">here<
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/6622057a-34c4-4096-a391-6132ab755b50"> </p>
 
 <br>
-<br>
 
 <h2>Task 10 . Summary</h2>
 <p>During this room, you have learned some history about cloud technology and the basic benefits of using "the cloud". You should now understand:<br>
