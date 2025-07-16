@@ -11,7 +11,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awss3service"</a>h
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/597ef441-7af4-466c-a221-ddd8a037fc1d"> </p>
 
 <br>
-<br>
 
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
