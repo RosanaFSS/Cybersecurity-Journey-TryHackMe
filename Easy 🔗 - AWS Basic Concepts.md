@@ -10,7 +10,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/awsbasicconcepts">
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/6f0a2e5b-3730-4092-b6a9-a67684a4e628"> </p>
 <br>
-<br>
 
 <h2>Task 1 . Introduction</h2>
 <p>[ ... ]</p>
