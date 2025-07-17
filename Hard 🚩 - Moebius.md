@@ -4,7 +4,7 @@ July 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.
 and I’m excited to join you on this adventure, part of my <code>437</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>A place where you start at some point, and you have to go back to it in the end</em>.<br>
 Access it <a href="https://tryhackme.com/room/moebius">here</a>.<br><br>
-I was able to complete this CTF following jaxafed walkthrough.  Thank you!<br><br>
+I was able to complete this CTF following jaxafed´s walkthrough.  Thank you!<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/7d7d2845-babe-4e9b-99cd-6f4662cbb6ce"></p>
 
 <br>
