@@ -351,7 +351,7 @@ data=PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL ... PC90ZD48L3RyPgo8L3RhYmxlPgo8L
  
 - decode <code>data</code> file from Base64<br>
 - identify <code>HTTP_COOKIE</code> value<br>
-- notice that using <code>inspect</code< in the web page registered the <code>PHPSESSID</code> did not change<br>
+- notice that using <code>inspect</code> in the web page registered the <code>PHPSESSID</code> did not change<br>
 - substitute it by the <code>HTTP_COOKIE</code> decoded<br>
 - reload<br>
 - Kept </p>
