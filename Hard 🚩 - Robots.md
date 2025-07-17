@@ -13,7 +13,7 @@ Access it <a href="https://tryhackme.com/room/robots"</a>here.<br>
 
 Note: Please allow 5 minutes for the VM to fully boot.</p>
 
-<h3 align="left"> Answer the question below</h3>
+<h3 align="left"> Answer the questions below</h3>
 
 > 1.1. <em>What is the value of the user flag?</em><br><a id='1.1'></a>
 >> <strong><code>THM{2a279561f5eea907f7617df3982cee24}</code></strong><br>
