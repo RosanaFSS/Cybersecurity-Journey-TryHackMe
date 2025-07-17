@@ -1,6 +1,6 @@
 <h1 align="center">Robots</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/b00e2a6b-a091-42a9-9a2d-a7cdfb3efbed"><br>
-July 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+July 17, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>437</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>A (small) tribute to I. Asimov.</em>.<br>
 Access it <a href="https://tryhackme.com/room/robots"</a>here.<br>
