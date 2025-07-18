@@ -46,7 +46,7 @@ Remember, this is a high-stakes mission, and the information you gather will be 
 - <code>22</code>/ssh<br>
 - <code>80</code>/http<br>
 - <code>1311</code>/https = ssl/rxmon<br>
-- <code>ms-wbt-server</code>/RDP = ms-wbt-server</p>
+- <code>3389</code>/RDP = ms-wbt-server</p>
 
 ```bash
 :~/HackSmarterSecurity# nmap -sC -sV -Pn -p- -n -T4 TargetIP
