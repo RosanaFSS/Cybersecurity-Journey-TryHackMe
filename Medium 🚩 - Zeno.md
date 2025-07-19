@@ -10,7 +10,7 @@ Click <a href="https://tryhackme.com/room/zeno">here </a>to access the "room".<b
 
 <h4 align="left"> Answer the questions below</h4>
 
-> 1.1. <em>user.txt</em<br><a id='1.1'></a>
+> 1.1. <em>user.txt</em><br><a id='1.1'></a>
 >> <strong><code>THM{070cab2c9dc622e5d25c0709f6cb0510</code></strong><br>
 <p></p>
 
