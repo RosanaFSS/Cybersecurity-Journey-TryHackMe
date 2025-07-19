@@ -17,7 +17,7 @@ Click <a href="https://tryhackme.com/room/zeno">here </a>to access the "room".<b
 
 <h2> Task 2 . Get Both flags</h2>
 
-> 2.1. <em>user.txt</em<br><a id='2.1'></a>
+> 2.1. <em>user.txt</em><br><a id='2.1'></a>
 >> <strong><code>THM{070cab2c9dc622e5d25c0709f6cb0510</code></strong><br>
 <p></p>
 
