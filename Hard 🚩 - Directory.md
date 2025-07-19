@@ -76,3 +76,70 @@ $ tshark -r trafficc.pcap -Y "ip.src == 10.0.2.75 && tcp.dstport ==47879 && tcp.
 3269
 5357
 ```
+
+<br>
+
+<p>1.2. What ports did the threat actor initially find open? <em>Format: from lowest to highest, separated by a comma.</em><br>
+<code>directory.thm\larry.doe</code></p>
+
+
+<img width="1762" height="102" alt="image" src="https://github.com/user-attachments/assets/0c01ce32-537c-4814-9419-84b06956a4a2" />
+
+
+
+
+tcp.flags.syn == 1 && tcp.flags.ack == 1 && http.response.code == 200 ip.sr == 10.0.2.75
+
+smb2.preauth_hash != ""
+
+
+
+
+smb2.preauth_hash != ""
+
+_ws.col.info == "HTTP/1.1 200   (application/http-spnego-session-encrypted)"
+
+
+packet 4887
+
+username = larry.doe
+domain = directory.thm
+nt proof string = e18eca5d5ed8a7a08682a3cd4e993b3e
+session key = ecec611716ddf3199dfebd17161a37fc
+session id = 0x000014 0000000019
+server challenge = ec89ba 38b848e655
+
+00000000000001ec89ba38b848e655
+
+00140000000019ec89ba38b848e655
+
+larry.doee  directory.thm  18eca5d5ed8a7a08682a3cd4e993b3e
+01010000000000008212cb751250da01fc1010028b6c723900000000020012004400490052004500430054004f0052005900010010004100440053004500520056004500520004001a006400690072006500630074006f00720079002e00740068006d0003002c00410044005300650072007600650072002e006400690072006500630074006f00720079002e00740068006d0005001a006400690072006500630074006f00720079002e00740068006d00070008008212cb751250da0109001e00570053004d0041004e002f00310030002e0030002e0032002e003700350006000400020000000000000000000000
+
+
+-Y "ntlmssp.messagetype == 0x00000003 || ntlmssp.messagetype == 0x00000002": Filters for NTLM messages (type 3 for authentication, type 2 for challenge).
+
+$ tshark -r trafficc.pcap -Y "ntlmssp.messagetype == 0x00000002" -T fields -e ntlmssp.auth.username -e ntlmssp.auth.domain -e ntlmssp.ntlmv2_response.ntproofstr -e ntlmssp.auth.sesskey -e smb2.sesid -e ntlmssp.ntlmserverchallenge
+                                0x0000140000000019      481505fc3d08ad40
+                                        4d466ef19179c690
+                                        ec89ba38b848e655
+$ tshark -r trafficc.pcap -Y "ntlmssp.messagetype == 0x00000003" -T fields -e ntlmssp.auth.username -e ntlmssp.auth.domain -e ntlmssp.ntlmv2_response.ntproofstr -e ntlmssp.auth.sesskey -e smb2.sesid -e ntlmssp.ntlmserverchallenge
+NULL    NULL            eb6bc50093580c7ede4d6929150ad05d        0x0000140000000019
+larry.doe       directory.thm   e18eca5d5ed8a7a08682a3cd4e993b3e        ecec611716ddf3199dfebd17161a37fc
+larry.doe       NULL    f6dd396748ca42ed9b5c4dedf23aeec0        08c0b176a089fbb82149510f3663a96d
+
+
+
+
+]^ N;>uPlr9DIRECTORYADSERVERdirectory.thm,ADServer.directory.thmdirectory.thmuP	WSMAN/10.0.2.75
+
+e18eca5d5ed8a7a08682a3cd4e993b3e01010000000000008212cb751250da01fc1010028b6c723900000000020012004400490052004500430054004f0052005900010010004100440053004500520056004500520004001a006400690072006500630074006f00720079002e00740068006d0003002c00410044005300650072007600650072002e006400690072006500630074006f00720079002e00740068006d0005001a006400690072006500630074006f00720079002e00740068006d00070008008212cb751250da0109001e00570053004d0041004e002f00310030002e0030002e0032002e0037003500
+
+00040
+00200
+00000
+00000
+00000
+00000
+
+
