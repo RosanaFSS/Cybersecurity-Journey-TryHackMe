@@ -1,4 +1,4 @@
-<h1 align="center">TryHack3M: BUrg3r Bytes</h1>
+<h1 align="center">TryHack3M: Burg3r Bytes</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/05f1224c-0546-497c-a1bb-d7ef4ceb1de6"><br>
 July 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>438</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
