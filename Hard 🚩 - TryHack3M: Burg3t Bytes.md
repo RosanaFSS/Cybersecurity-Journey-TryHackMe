@@ -812,6 +812,17 @@ File sent successfully
 
 
 
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 19, 2025     | 439      |     155ᵗʰ    |      5ᵗʰ     |    170ᵗʰ    |     7ᵗʰ    | 115,419  |    865    |    72     |
+
+
+
 
 
 
