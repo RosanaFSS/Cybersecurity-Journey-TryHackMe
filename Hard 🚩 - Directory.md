@@ -25,7 +25,7 @@ Note: For free users using the AttackBox, the challenge is best done using your 
 
 <h3 align="left"> Answer the questions below</h3>
 
-<p>1.1. <em>What ports did the threat actor initially find open? Format: from lowest to highest, separated by a comma.</em><br>
+<p>1.1. What ports did the threat actor initially find open? <em>Format: from lowest to highest, separated by a comma.</em><br>
 <code>53,80,88,135,139,389,445,464,593,636,3268,3269,5357</code></p>
 
 <br>
@@ -38,6 +38,7 @@ tcp.completeness.syn-ack == True && ip.src == 10.0.2.75 && tcp.dstport == 47879
 
 <img width="1386" height="306" alt="image" src="https://github.com/user-attachments/assets/67e912ce-a77f-4244-8bbf-441aa3d47a45" />
 
+<br>
 <br>
 
 <p><em>TShark</em></p>
