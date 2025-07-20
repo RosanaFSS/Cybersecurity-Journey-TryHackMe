@@ -1,6 +1,13 @@
-<p>July 21, 2025 - Day 440</p>
-<h1>DNS Manipulation</h1>
 
+<h1 align="center">DNS Manipulation</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
+July 20, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
+and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Manipulating DNS queries to our advantage</em>.<br>
+Access it <a href="https://tryhackme.com/room/dnsmanipulation">here</a>.<br><br>
+<img width="1200px" src="https://github.com/user-attachments/assets/fd6bf7ce-a5d6-436d-922d-1d84b91d9a8e"></p>
+
+<br>
 <br>
 
 <h2>Task 1 . Introduction</h2>
@@ -674,6 +681,12 @@ user@user1:~/challenges/infiltration$ python3 .mal.py
 
 <br>
 <br>
+
+<img width="1913" height="880" alt="image" src="https://github.com/user-attachments/assets/50af6f93-977e-4ef0-a0b8-5fe9d5e305a3" />
+
+<img width="1902" height="899" alt="image" src="https://github.com/user-attachments/assets/aaba68c9-3f5f-4eff-83c4-b3dbece0e28e" />
+
+
 
 
 
