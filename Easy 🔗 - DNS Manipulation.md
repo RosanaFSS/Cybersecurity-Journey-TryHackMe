@@ -4,10 +4,9 @@
 <em>Manipulating DNS queries to our advantage</em>.<br>
 Access it <a href="https://tryhackme.com/room/dnsmanipulation">here</a>.<br><br>
 July 20, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
-and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/fd6bf7ce-a5d6-436d-922d-1d84b91d9a8e"></p>
 
-<br>
 <br>
 
 <h2>Task 1 . Introduction</h2>
