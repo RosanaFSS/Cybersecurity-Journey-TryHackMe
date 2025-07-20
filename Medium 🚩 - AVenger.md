@@ -1,4 +1,5 @@
-<h1 align="center">AVenger</h1>
+<h1 align="center">AVenger<br>
+ AV Evasion and UAC Bypassing</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/f8d71468-229c-4347-8113-b834229b77f3"><br>
 <em>You’ve been asked to exploit all the vulnerabilities present</em>.<br>
 Access it <a href="https://tryhackme.com/room/avenger">here</a>.<br><br>
