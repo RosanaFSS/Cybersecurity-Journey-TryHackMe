@@ -1,4 +1,3 @@
-
 <h1 align="center">Cactus</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/a4f1fa34-dbe0-4172-868d-48180fe34961"><br>
 <em>Bypass authentication and execute commands remotely on Cacti using CVE-2022-46169.</em>.<br>
@@ -6,7 +5,6 @@ Access it <a href="https://tryhackme.com/room/cactus">here</a>.<br><br>
 July 20, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/0620d218-255f-42ab-86fb-b97c9cab81a5"></p>
-
 
 <br>
 
