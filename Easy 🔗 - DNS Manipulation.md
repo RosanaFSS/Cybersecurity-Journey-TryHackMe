@@ -686,7 +686,23 @@ user@user1:~/challenges/infiltration$ python3 .mal.py
 <img width="1902" height="899" alt="image" src="https://github.com/user-attachments/assets/aaba68c9-3f5f-4eff-83c4-b3dbece0e28e" />
 
 
+<br>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 20, 2025     | 440      |     153ʳᵈ    |      5ᵗʰ     |    180ᵗʰ    |     7ᵗʰ    | 115,655 |    867    |    72     |
 
+</div>
 
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/d913f6b3-83f9-48c8-957c-e29142675bd8" />
+
+<img width="1907" height="895" alt="image" src="https://github.com/user-attachments/assets/801da7af-2b1e-44b9-a8ab-b02b30f1c7bb" />
+
+<img width="1897" height="889" alt="image" src="https://github.com/user-attachments/assets/877c6e18-dba3-4bb0-84d5-d4adc5470b7c" />
+
+<img width="1896" height="891" alt="image" src="https://github.com/user-attachments/assets/4b935c35-8158-4b07-8e6b-e4ec84375f9d" />
+
+<img width="1905" height="891" alt="image" src="https://github.com/user-attachments/assets/3fec78f3-5448-4296-947a-b5a4319beeea" />
