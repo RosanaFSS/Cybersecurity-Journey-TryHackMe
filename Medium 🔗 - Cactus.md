@@ -353,6 +353,23 @@ THM{de0c87d30debe82e7747c594574db1eb}
 
 <img width="1899" height="901" alt="image" src="https://github.com/user-attachments/assets/75d46428-aca1-4145-b61d-c7fd86ab5d32" />
 
+<br>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 20, 2025     | 440      |     153ʳᵈ    |      5ᵗʰ     |    181st    |     7ᵗʰ    | 115,751 |    868    |    72     |
 
+</div>
+
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/6039b689-c244-431b-8d3b-cace076302f0" />
+
+<img width="1909" height="889" alt="image" src="https://github.com/user-attachments/assets/b5280b67-1faf-42c1-8966-bd7ee9fe7e6f" />
+
+<img width="1888" height="884" alt="image" src="https://github.com/user-attachments/assets/6d913255-d8a2-49c1-88cd-d348a2418621" />
+
+<img width="1891" height="886" alt="image" src="https://github.com/user-attachments/assets/1bef8000-fe49-47a7-90c9-1a0d841dd4cf" />
+
+<img width="1895" height="888" alt="image" src="https://github.com/user-attachments/assets/3f422d6e-a33a-4e07-a276-70b1f964b34f" />
