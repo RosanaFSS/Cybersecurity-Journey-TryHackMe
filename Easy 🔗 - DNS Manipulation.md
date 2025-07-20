@@ -1,10 +1,10 @@
 
 <h1 align="center">DNS Manipulation</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
-July 20, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
-and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Manipulating DNS queries to our advantage</em>.<br>
 Access it <a href="https://tryhackme.com/room/dnsmanipulation">here</a>.<br><br>
+July 20, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
+and I’m excited to join you on this adventure, part of my <code>440</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/fd6bf7ce-a5d6-436d-922d-1d84b91d9a8e"></p>
 
 <br>
