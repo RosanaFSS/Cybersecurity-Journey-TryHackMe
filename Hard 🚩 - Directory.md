@@ -112,6 +112,26 @@ larry.doe@DIRECTORY.THM:f8716efbaa984508ddde606756441480$805ab8be8cfb018a282718f
 
 
 
+
+```bash
+$ tshark -r trafficc.pcap -Y "ip.src == 10.0.2.75 && tcp.dstport ==47879 && tcp.flags.syn == 1 && tcp.flags.ack ==1" -T fields -e tcp.srcport | sort -n
+53
+80
+88
+135
+139
+389
+445
+464
+593
+636
+3268
+3269
+5357
+```
+
+
+
 ```bash
 tcp.flags.syn == 1 && tcp.flags.ack == 1 && http.response.code == 200 ip.sr == 10.0.2.75
 ```
