@@ -387,4 +387,21 @@ This system architecture is RME{M@rK-3veRy-hOur-0135d3f8ab9fd5bf}
 
 <br>
 
+<div align="center">
 
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 21, 2025     | 441      |     153ʳᵈ    |      5ᵗʰ     |    179ᵗʰ    |     8ᵗʰ    | 116,003 |    871    |    72     |
+
+</div>
+
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/6d7c4a17-642a-4fa2-88dc-9d8d28ebd6d4" />
+
+<img width="1903" height="906" alt="image" src="https://github.com/user-attachments/assets/7aa13146-2a91-45d7-a763-3abc92b1e19e" />
+
+<img width="1893" height="893" alt="image" src="https://github.com/user-attachments/assets/a4883cc9-144f-4a72-8b59-74ca3c740947" />
+
+<img width="1893" height="887" alt="image" src="https://github.com/user-attachments/assets/38e24dac-90d6-437c-8c9c-a40a074f24d7" />
+
+<img width="1882" height="896" alt="image" src="https://github.com/user-attachments/assets/eef9f350-53d9-4152-b2ad-f74ff55d81c7" />
