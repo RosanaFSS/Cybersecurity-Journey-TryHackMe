@@ -7,6 +7,9 @@ Crylo</p>
 
 <br>
 
+<img width="1891" height="372" alt="image" src="https://github.com/user-attachments/assets/cb77f09e-b1aa-4052-a214-6abbd8127e90" />
+
+
 <br>
 
 <h2>Task 1 . Enumeration</h2>
@@ -261,7 +264,59 @@ Table: accounts_pin
 
 ```
 
-FtuO1/k2BbSVICzPhGNTSl/lRA3BJHiRue0GNvkWUmNFp6ouLOTQ4Ntkd8Srs9to
+
+<p>accounts_pintoken</p>
+
+<p>5.4. Which user is part of the sudo group?<br>
+<code>anof</code></p>
+
+<br>
+
+
+<p>5.5. What is the password for the above user?<br>
+<code>anof</code></p>
+
+```bash
+:~/Crylo#  pip3 install pycryptodome
+```
+
+```bash
+from Crypto.Util.Padding import pad, unpad
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+from base64 import b64encode, b64decode
+import base64
+
+data = b'toor'   # 9 bytes
+key = b'\xc9;\xd4b\xce\xc15\x19;\x00Z^Nw\xafp\x10\xce/r\x0c\xf1\x1c&\x1c\x12a\xd9&b"\xc3'
+iv = b'!6\x0b\xc7Xg@\xcc\xe3KY\xcfN\x9b\x81\x91'
+
+# from VH6Hj4+eQn5uYGVAxy8Ht7pkVO9oePUpELDdiXFq1V0= base64 to hex
+password = b'\x54\x7e\x87\x8f\x8f\x9e\x42\x7e\x6e\x60\x65\x40\xc7\x2f\x07\xb7\xba\x64\x54\xef\x68\x78\xf5\x29\x10\xb0\xdd\x89\x71\x6a\xd5\x5d'
+
+cipher1 = AES.new(key, AES.MODE_CBC, iv)
+cipher2 = AES.new(key, AES.MODE_CBC, iv)
+ct = cipher1.encrypt(pad(data, 16))
+plain = cipher2.decrypt(pad(ct, 16))
+
+cipher3 = AES.new(key, AES.MODE_CBC, iv)
+plain_pass = cipher3.decrypt(pad(password, 16))
+
+print(ct)
+print(plain)
+
+```
+
+
+```bash
+:~/Crylo#  python3 dec.py
+b'\x9f\xc9P\xff\xb3Z\x94\x84\x8a\xeb1\xa2/\xba\x8d\xa5'
+b"toor\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x81X\xe782\x7fG\x1a\xdcDk\x0b\x17'*\xb8"
+b'@Pass123@666666666\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\xa4\xf5\xe3(\xe9]&\xb7F\x1f\x87 I\xf7r@'
+```
+
+
+
 
 <p>To practice ...<br>
 Used sqlmap to discover the tables in <code>food</code> database.</p>
@@ -392,13 +447,46 @@ pbkdf2_sha256$260000$HxnWVrw647R53GeEUksjW5$SggM3ZAh86qRZtnn0VbWOSmHWhckfVvIsMG+
 <img width="1115" height="356" alt="image" src="https://github.com/user-attachments/assets/9e301024-f19f-4b52-a176-05017dd1db89" />
 
 
-  
-- right-clicked Burp request panel<br>
-- clicked <code>Do intercept</code><br>
-- clicked <code>Response to this request</code><br>
-- clicked <code>Forward</code></p>
+```bash  
+anof@ip-xx-xx-xxx-xx:~$ sudo /bin/bash
+[sudo] password for anof: 
+root@ip-xx-xx-xxx-xx:/home/anof# cd ..
+root@ip-xx-xx-xxx-xx:/home# ls
+anof  crylo  ubuntu
+root@ip-xx-xx-xxx-xx:/home# cd /root
+root@ip-xx-xx-xxx-xx:~# ls
+flag.txt  snap
+root@ip-xx-xx-xxx-xx:~# cat flag.txt
+201ea4139d9755d6c9384783df06dc7e
+```
+
+<br>
+<br>
+
+<img width="1904" height="863" alt="image" src="https://github.com/user-attachments/assets/7ea4ba9f-3831-499f-9b65-7f380f2b4f92" />
+
+<img width="1898" height="892" alt="image" src="https://github.com/user-attachments/assets/634a6913-cf2a-4093-a806-98d23188a260" />
 
 
-.....
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 20, 2025     | 440      |     153ʳᵈ    |      5ᵗʰ     |    172nd    |     7ᵗʰ    | 115,973 |    870    |    72     |
+
+</div>
+
+<img width="1884" height="887" alt="image" src="https://github.com/user-attachments/assets/c91da25a-2203-4eb5-8898-5eecee4384e0" />
+
+
+<img width="1898" height="886" alt="image" src="https://github.com/user-attachments/assets/07b0e12a-217f-4dd4-a3cb-9196545b0e1d" />
+
+<img width="1891" height="896" alt="image" src="https://github.com/user-attachments/assets/b6fdc6c2-50fa-4064-865b-064387de2f4b" />
+
+
+<img width="1900" height="901" alt="image" src="https://github.com/user-attachments/assets/da3cf3ff-1ce5-4cac-a725-d1a933032374" />
 
 
