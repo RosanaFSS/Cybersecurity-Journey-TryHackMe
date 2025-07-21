@@ -1,10 +1,9 @@
 <h1 align="center">Madeye´s Castle</h1>
 <p align="center">July 21, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>441</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>A boot2root box that is modified from a box used in CuCTF by the team at Runcode.ninja.</em><br>
+<img width="80px" src="https://github.com/user-attachments/assets/04450265-813a-469a-a168-a914f2932e65"><br>
 Click <a href="https://tryhackme.com/room/madeyescastle">here </a>to access the "room".<br>
-<img width="80px" src="https://github.com/user-attachments/assets/04450265-813a-469a-a168-a914f2932e65"><br></p>
-
-<img width="1200px" src="https://github.com/user-attachments/assets/b1f6a2c7-73b3-41e4-beb6-c4e88ea21f18">
+<img width="1200px" src="https://github.com/user-attachments/assets/b1f6a2c7-73b3-41e4-beb6-c4e88ea21f18"></p>
 
 
 
