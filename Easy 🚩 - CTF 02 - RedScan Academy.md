@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/91a4c48a-17fd-4eb6-9e1e-d43e74e6f83d"><br>
 July 18, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>437</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>https://github.com/user-attachments/assets/91a4c48a-17fd-4eb6-9e1e-d43e74e6f83d</em>.<br>
+<em </em>.<br>
 Access it <a href="https://tryhackme.com/room/ctf2redscanacademy">here</a>.<br><br>
 <img width="1200px" src=""></p>
 
