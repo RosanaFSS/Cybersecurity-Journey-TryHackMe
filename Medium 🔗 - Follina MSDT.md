@@ -1,4 +1,4 @@
-<h1 align="center">Follina MSDT . CVE-2022-30190</h1>
+<h1 align="center">Follina MSDT . CVE-2022-30190 . Windows . RCE MSDT service</h1>
 <p align="center">July 22, 2025<br>
 <img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
 <em>A walkthrough on the CVE-2022-30190, the MSDT service, exploitation of the service vulnerability,<br>and consequent detection techniques and remediation processes</em>.  Access it <a href="https://tryhackme.com/room/follinamsdt">here</a>.<br>
