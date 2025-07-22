@@ -1,12 +1,11 @@
 <h1 align="center">Follina MSDT<br>
 CVE-2022-30190 . Windows . RCE vulnerability in MSDT service</h1>
 <p align="center">July 22, 2025<br>
-<img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
+<img width="80px" src="https://github.com/user-attachments/assets/d7780755-3513-4c21-8c48-3736e7cdbc2f"><br>
 <em>A walkthrough on the CVE-2022-30190, the MSDT service, exploitation of the service vulnerability,<br>and consequent detection techniques and remediation processes</em>.  Access it <a href="https://tryhackme.com/room/follinamsdt">here</a>.<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>442</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/20feb5dc-cfd9-454f-b6b4-7b2d254dc1a7"></p>
-
 
 
 <br>
@@ -423,9 +422,16 @@ This room will be updated from time to time.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| July 20, 2025     | 440      |     153ʳᵈ    |      5ᵗʰ     |    180ᵗʰ    |     7ᵗʰ    | 115,655 |    867    |    72     |
+| July 20, 2025     | 442      |     152ⁿᵈ    |      5ᵗʰ     |    192ⁿᵈ    |     8ᵗʰ    | 116,187  |    872    |    72     |
 
 </div>
 
+<p align="center"><img width="300px" src="https://github.com/user-attachments/assets/a2cd97d0-ef8a-4122-9b5a-9087230a2077"></p>
 
+<img width="1894" height="904" alt="image" src="https://github.com/user-attachments/assets/5d7abcb1-f7ad-4651-95b6-47422d2ff884" />
 
+<img width="1895" height="890" alt="image" src="https://github.com/user-attachments/assets/20440467-186f-4530-9d12-59e3468242b6" />
+
+<img width="1908" height="894" alt="image" src="https://github.com/user-attachments/assets/1ebb4ae1-24a9-43c2-9d5c-33d96e2e1dfa" />
+
+<img width="1903" height="896" alt="image" src="https://github.com/user-attachments/assets/068f410b-8ea2-4e09-b799-1147d132b42f" />
