@@ -26,8 +26,8 @@ It just waited.</p>
 <h2>Mission</h2>
 <p>
 
-- <code>Review threat intel and hypothesis</code>: The Threat Intel hub contains IOCs, attack timelines, analyst notes, and a working hypothesis to assess. Study the intel closely to understand the full context and spot any gaps. Your task is to prove or disprove the hypothesis through investigation.<br>
-- <code>Investigate and reconstruct the attack chain</code>: Use the SIEM and virtual machine to trace the attack. Correlate logs, analyze forensic data, and map each step the adversary took. Build your attack chain to understand how and why it happened.<br>
+- <code>Review threat intel and hypothesis</code>: The Threat Intel hub contains IOCs, attack timelines, analyst notes, and a working hypothesis to assess. Study the intel closely to understand the full context and spot any gaps. Your task is to prove or disprove the hypothesis through investigation.<br><br>
+- <code>Investigate and reconstruct the attack chain</code>: Use the SIEM and virtual machine to trace the attack. Correlate logs, analyze forensic data, and map each step the adversary took. Build your attack chain to understand how and why it happened.<br><br>
 - <code>Review report and conclude</code>: Submit your attack chain and review the AI-generated report, which details the timeline from initial foothold to full compromise. Then, state whether you accept or refute the hypothesis. Hit Submit to finish.
 </p>
 
