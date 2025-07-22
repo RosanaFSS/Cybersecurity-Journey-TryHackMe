@@ -1,5 +1,4 @@
-
-<h1 align="centerFollina MSDT</h1>
+<h1 align="center">Follina MSDT</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
 <em>A walkthrough on the CVE-2022-30190, the MSDT service, exploitation of the service vulnerability, and consequent detection techniques and remediation processes</em>.<br>
 Access it <a href="https://tryhackme.com/room/follinamsdt">here</a>.<br><br>
