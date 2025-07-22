@@ -1,8 +1,9 @@
 <h1 align="center">Follina MSDT</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
+<p align="center">July 22, 2025<br>
+<img width="80px" src="https://github.com/user-attachments/assets/c0f58782-fd5e-49ad-9990-d7e2466b1f87"><br>
 <em>A walkthrough on the CVE-2022-30190, the MSDT service, exploitation of the service vulnerability, and consequent detection techniques and remediation processes</em>.<br>
 Access it <a href="https://tryhackme.com/room/follinamsdt">here</a>.<br><br>
-July 22, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
+Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>442</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br><br>
 <img width="1200px" src=""></p>
 
