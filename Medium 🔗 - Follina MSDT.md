@@ -11,9 +11,8 @@ and I’m excited to join you on this adventure, part of my <code>442</code>-day
 <h2>Task 1 . Introduction</h2>
 <p>Microsoft explains that “a remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word. An attacker who successfully exploits this vulnerability can run arbitrary code with the privileges of the calling application. The attacker can then install programs, view, change, or delete data, or create new accounts in the context allowed by the user’s rights”</p>
 
-<img width="600px" src="https://github.com/user-attachments/assets/a4e09d76-91bc-438e-a142-17ba937e113a"></p>
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/a4e09d76-91bc-438e-a142-17ba937e113a"></p>
 
-<img width="1000" height="620" alt="image" src="https://github.com/user-attachments/assets/a4e09d76-91bc-438e-a142-17ba937e113a" />
 
 
 <h3>Learning Objectives:</h3>
