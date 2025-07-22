@@ -107,25 +107,22 @@ The company operates with a small creative team, collaborative tools, and a high
 
 <h4>Stage 1 of 3</h4>
 <p>  
+
 - Title: Initial Access<br>
-- Adeversary step descrirption: Initial Access was gained at Jul 21st 2025 10:58:27 by installing  "healthchk-lib@1.0.1" NPM package.
-
-Next "postintall.ps1" was downloaded and installed through PowerShell employing the following syntax to cover the related actions "-NoP -W Hidden -EncodedCommand".
-
- "postinstall.ps1" execute automotically and was downloaded from global-update.windows.thm.<br>
- - Timestamp: Jul 21st 2025 10:58:27<br>
- - Tactic: Initial Acces<br>
- - Technique: Supply Chain Compromise<br>
- - User: tom@pawpress.me<br>
- - Asset: paw-tom<br>
- - List of IOCs:<br>
+- Adversary step descrirption: Initial Access was gained at Jul 21st 2025 10:58:27 by installing  "healthchk-lib@1.0.1" NPM package. Next "postintall.ps1" was downloaded and installed through PowerShell employing the following syntax to cover the related actions "-NoP -W Hidden -EncodedCommand".  "postinstall.ps1" execute automotically and was downloaded from global-update.windows.thm.<br>
+- Timestamp: Jul 21st 2025 10:58:27<br>
+- Tactic: Initial Acces<br>
+- Technique: Supply Chain Compromise<br>
+- User: tom@pawpress.me<br>
+- Asset: paw-tom<br>
+- List of IOCs:<br>
    --- Host = pwa-tom
    --- Current Directory = C:\Development\node_modules\healthchk-lib\<br>
    --- Process ID = 5880<br>
    --- Image = C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe<br>
    --- Parent Image = C:\Windows\System32\cmd.exe<br>
    --- Parent Process ID = 1616<br>
- - SIEM URL Link: Redacted
+- SIEM URL Link: Redacted
 </p>
 
 
