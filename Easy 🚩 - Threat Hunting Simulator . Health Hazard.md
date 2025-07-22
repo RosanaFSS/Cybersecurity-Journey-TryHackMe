@@ -77,7 +77,7 @@ These weaponized libraries often act as stagers for follow-on actions—such as 
 
 <br>
 
-<h2>Documentation</h2>h2>
+<h2>Documentation</h2>
 <h3>Company Information</h3>
 <p><code>PassPressMe</code> is a lean online media company that helps small brands and startups tell their stories through digital content, ebooks, and social media strategy.<br>
 
@@ -103,7 +103,7 @@ The company operates with a small creative team, collaborative tools, and a high
 - <strong>Executive Summary</strong>: <code>npm</code> and <code>Python</code> repositories<br>
 - <strong>Documentation</strong> > <strong>Asset Inventory</strong>: <codePassPressMe Corporate LAN</code> : <code>10.10.50.0/24</code> and <code>Backup Server</code> : <code>pawnbackup</code> : <code>10.10.150.5</code></p>
 
-
+<br>
 
 <h4>Stage 1 of 3</h4>
 <p>  
@@ -129,10 +129,10 @@ Next "postintall.ps1" was downloaded and installed through PowerShell employing 
 </p>
 
 
-<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/ae24ab3d-a36b-4b24-b6de-33b71433c964"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/85017168-5759-4541-9d99-ce42cd57a03b"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/c03e7479-1977-4590-acba-965af0f48a2c"><br><
-                  <img width="160px" src="https://github.com/user-attachments/assets/0639c45a-2532-48af-89c4-2776c1c8080b"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ae24ab3d-a36b-4b24-b6de-33b71433c964"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/85017168-5759-4541-9d99-ce42cd57a03b"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/c03e7479-1977-4590-acba-965af0f48a2c"><br>
+                  <img width="250px" src="https://github.com/user-attachments/assets/0639c45a-2532-48af-89c4-2776c1c8080b"></p>
                   
 
 
