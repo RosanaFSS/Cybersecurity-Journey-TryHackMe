@@ -422,7 +422,7 @@ This room will be updated from time to time.</p>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| July 20, 2025     | 442      |     152ⁿᵈ    |      5ᵗʰ     |    192ⁿᵈ    |     8ᵗʰ    | 116,187  |    872    |    72     |
+| July 22, 2025     | 442      |     152ⁿᵈ    |      5ᵗʰ     |    192ⁿᵈ    |     8ᵗʰ    | 116,187  |    872    |    72     |
 
 </div>
 
