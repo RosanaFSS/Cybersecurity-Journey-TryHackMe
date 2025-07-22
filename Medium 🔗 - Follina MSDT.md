@@ -9,8 +9,13 @@ and I’m excited to join you on this adventure, part of my <code>442</code>-day
 <br>
 
 <h2>Task 1 . Introduction</h2>
+<p>Microsoft explains that “a remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word. An attacker who successfully exploits this vulnerability can run arbitrary code with the privileges of the calling application. The attacker can then install programs, view, change, or delete data, or create new accounts in the context allowed by the user’s rights”</p>
 
-<br>
+<h3>Learning Objectives:</h3>
+<p>In this room, we will explore what the Microsoft Support Diagnostic Tool is and the discovered vulnerability that it has. In the process, we will be able to experience exploiting this vulnerability and consequently learn some techniques to detect and mitigate its exploitation in our own environments.</p>
+
+<h3>Room Prerequisites and Expectation Setting:</h3>
+<p>There are no hard prerequisites in order to gain value from this room, however it would be very helpful to have a basic understanding of various scripting tools e.g. Windows CLI, Linux Bash Terminal, and PowerShell. Further, this room will touch upon Windows Processes and Data Correlation in lieu of Threat Hunting, albeit nothing too deep nor too complex to be understood.</p>
 
 <h3 align="left"> Answer the question below</h3>
 
@@ -52,9 +57,10 @@ It’s not until the discovery of nao_sec, which has been made public in twitter
 - Rapid Response: Microsoft Office RCE - “Follina” MSDT Attack (huntress.com)
 </p>
 
-<br>
-
 <h3 align="left"> Answer the questions below</h3>
 
 <p>2.1. Hope you enjoy this room<br>
 <code>No answer needed</code></p>
+
+
+
