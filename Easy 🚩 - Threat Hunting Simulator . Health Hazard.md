@@ -13,6 +13,8 @@ Then, a strange file appeared on the system. No one could say where it came from
 
 It just waited.</p>
 
+<br>
+
 <h2>Objectives</h2>
 
 <p>
@@ -22,6 +24,8 @@ It just waited.</p>
 - Identify any mechanisms the attacker used to maintain access across system restarts or user sessions. Look for indicators of persistence that could allow long-term control.
   
 </p>
+
+<br>
 
 <h2>Mission</h2>
 <p>
@@ -47,8 +51,12 @@ Identify the impacted users, systems, and assets. Understanding the full scope i
 Based on your findings and the reconstructed attack chain, compile a final Threat Hunting report highlighting the key observations and affected entities.<br>
 </p>
 
+<br>
+
 <h2>Hypothesis</h2>
 <p>An attacker may have leveraged a compromised third-party software package to gain initial access to the system and silently stage a payload for later execution. They likely established persistence to maintain access without immediate detection.</p>
+
+<br>
 
 <h2>IOCs</h2>
 
@@ -57,6 +65,8 @@ Based on your findings and the reconstructed attack chain, compile a final Threa
 <br>
 
 <h2>Practice</h2>
+
+
 
 
 
