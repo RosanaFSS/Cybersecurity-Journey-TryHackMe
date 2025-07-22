@@ -15,10 +15,10 @@ and I’m excited to join you on this adventure, part of my <code>442</code>-day
 
 
 
-<h3>Learning Objectives:</h3>
+<h3>Learning Objectives</h3>
 <p>In this room, we will explore what the Microsoft Support Diagnostic Tool is and the discovered vulnerability that it has. In the process, we will be able to experience exploiting this vulnerability and consequently learn some techniques to detect and mitigate its exploitation in our own environments.</p>
 
-<h3>Room Prerequisites and Expectation Setting:</h3>
+<h3>Room Prerequisites and Expectation Setting</h3>
 <p>There are no hard prerequisites in order to gain value from this room, however it would be very helpful to have a basic understanding of various scripting tools e.g. Windows CLI, Linux Bash Terminal, and PowerShell. Further, this room will touch upon Windows Processes and Data Correlation in lieu of Threat Hunting, albeit nothing too deep nor too complex to be understood.</p>
 
 <h3 align="left"> Answer the question below</h3>
@@ -26,8 +26,6 @@ and I’m excited to join you on this adventure, part of my <code>442</code>-day
 <p>1.1. Hope you enjoy this room<br>
 <code>No answer needed</code></p>
 
-
-<br>
 
 <h2>Task 2 . CVE-2022-30190</h2>
 <p>The MSDT exploit is not something new - in fact, a bachelor’s thesis has been published August of 2020 regarding techniques on how to use MSDT for code execution. Almost two years after that initial publication, pieces of evidence of MSDT exploitation as well as code execution via Office URIs has triggered several independent researchers to file separate reports to MSRC, the latter of which has been patched (specifically in Microsoft Teams) whereas the former remained vulnerable.<br><br>
