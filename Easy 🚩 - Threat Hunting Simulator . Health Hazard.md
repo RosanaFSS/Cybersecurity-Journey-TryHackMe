@@ -35,15 +35,15 @@ It just waited.</p>
 
 <p>Your task as a Threat Hunter is to conduct a comprehensive hunting session in the TryGovMe environment to identify potential anomalies and threats. You are expected to:<br>
   
-- 1. <strong>1. Validate a Hunting Hypothesis</strong><br>
+- <strong>1. Validate a Hunting Hypothesis</strong><br>
 Investigate the given hypothesis and determine - based on your findings - whether it is valid or not.<br>
-- 2. <strong>Review IOCs from External Sources</strong><br>
+- <strong>Review IOCs from External Sources</strong><br>
 Analyse the list of Indicators of Compromise provided by security teams from compromised partner organisations. These may lead you to uncover additional malicious activity or pivot points.<br>
-- 3. <strong>Reconstruct the Attack Chain</strong><br>
+- <strong>Reconstruct the Attack Chain</strong><br>
 Perform a detailed investigation within the environment and reconstruct the attack chain, starting from the initial point of compromise to the attacker's final objective.<br>
-- 4. <strong>Determine the Scope of the Incident</strong><br>
+- <strong>Determine the Scope of the Incident</strong><br>
 Identify the impacted users, systems, and assets. Understanding the full scope is critical for response and containment.<br>
-- 5. <strong> Generate a Final Threat Hunting Report</strong><br>
+- <strong> Generate a Final Threat Hunting Report</strong><br>
 Based on your findings and the reconstructed attack chain, compile a final Threat Hunting report highlighting the key observations and affected entities.<br>
 </p>
 
