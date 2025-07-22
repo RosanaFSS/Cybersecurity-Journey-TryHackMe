@@ -1,4 +1,4 @@
-<h1 align="center">Threat Hunter Simulator . Health Hazard</h1>
+<h1 align="center">Threat Hunting Simulator<br>Health Hazard</h1>
 <p align="center">July 22, 2025<br><br>
 <img width="80px" src="https://github.com/user-attachments/assets/5004481d-32ab-4e7a-93e4-a81298688e73"></p>
 
