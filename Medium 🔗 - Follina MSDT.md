@@ -411,11 +411,23 @@ This room will be updated from time to time.</p>
 <br>
 <br>
 
+<h1 align="center">Room Completed</h1>
+
 <img width="1892" height="879" alt="image" src="https://github.com/user-attachments/assets/e6ecc369-02a3-4d16-bbac-099d758b7172" />
 
 <img width="1888" height="901" alt="image" src="https://github.com/user-attachments/assets/3de9c2cb-d062-4302-929a-6ae3c4f9434b" />
 
 <br>
+
+<h1 align="center">Module Completed</h1>
+
+<p align="center"><img width="300px" src="image" src="https://github.com/user-attachments/assets/fc6d1b37-fa0e-4f67-a564-f221582d84e8"><br><br>
+                  <img width="300px" src="https://github.com/user-attachments/assets/ee08f66a-ae87-4c3b-8bf6-8999e9655be9"><br><br>
+                  <img width="300px" src="https://github.com/user-attachments/assets/586af32c-77dc-47d0-bfc9-5529227cdffa"></p>
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
 
 <div align="center">
 
