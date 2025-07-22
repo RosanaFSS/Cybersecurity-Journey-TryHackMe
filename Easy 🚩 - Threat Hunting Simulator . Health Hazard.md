@@ -106,6 +106,7 @@ The company operates with a small creative team, collaborative tools, and a high
 <br>
 
 <h4>Stage 1 of 3</h4>
+
 <p>  
 
 - Title: Initial Access<br>
@@ -125,11 +126,19 @@ The company operates with a small creative team, collaborative tools, and a high
 - SIEM URL Link: Redacted
 </p>
 
+```bash
+* node
+| table _time category subject host ComputerName Account_Domain Account_Name  EventCode OriginalFileName CommandLine ParentCommandLine Image ParentImage Hashes
+|  sort by +_time
+```
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ae24ab3d-a36b-4b24-b6de-33b71433c964"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/85017168-5759-4541-9d99-ce42cd57a03b"><br>
+                    <img width="1200px" src="https://github.com/user-attachments/assets/fa05d3c5-4a84-46d8-a093-6077bfbe20cf"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/c03e7479-1977-4590-acba-965af0f48a2c"><br>
                   <img width="250px" src="https://github.com/user-attachments/assets/0639c45a-2532-48af-89c4-2776c1c8080b"></p>
+
+
                   
 
 
