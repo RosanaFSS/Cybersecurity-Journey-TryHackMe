@@ -44,7 +44,7 @@ Click <a href="https://tryhackme.com/room/windowsthreatdetection3">here </a>to a
 
 <p><em>Answer the question below</em></p>
 
-<p>2.1. Let´s go!<br>
+<p>1.1. Let´s go!<br>
 <code>No answer needed</code></p>
 
 <br>
