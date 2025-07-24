@@ -1,4 +1,4 @@
-August20, 2024 - Day 106<br>
+2024, August 20 - Day 106<br>
 
 
 <h2>Session Management.</h2>
