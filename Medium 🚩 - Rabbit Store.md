@@ -90,10 +90,10 @@ TargetIP   cloudsite.thm storage.cloudsite.thm
 - registered a new user through Burp<br>
 - logged in through Burp = OK<br>
 - logged also directly in the web = OK<br>
-- landed in a web page woth <code>upload</code> feature: <code>Upload From Localhost</code>, <code>Upload From URL</code> and <code>Uploaded Files</code><br>
-- inspecting its source, identified <code>/assets/js/custom_script_active.js</code.<br>
+- landed in a web page with <code>upload</code> feature: <code>Upload From Localhost</code>, <code>Upload From URL</code> and <code>Uploaded Files</code><br>
+- inspecting its source, identified <code>/assets/js/custom_script_active.js</code><br>
 - opened it in a new tab<br>
-- crafted a <code>hi.txt<code> file<br>
+- crafted a <code>hi.txt</code> file<br>
 - loaded it through the <code>Upload From URl</code> functionality<br>
 - navigated to the path of the uploaded file<br></p>
 
