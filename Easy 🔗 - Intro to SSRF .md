@@ -1,4 +1,4 @@
-<p>2024, September 26 - Day 142</p>p>
+<p>2024, September 26 - Day 142</p>
 <h1>Intro to SSRF</h1>
 
 <br>
