@@ -1,4 +1,4 @@
-<p>2024, August 30</p>
+<p>2024, August 30 - Day 115</p>
 <h1>Active Directory Hardening</h1>
 
 <br>
