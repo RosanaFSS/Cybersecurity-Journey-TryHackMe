@@ -1,4 +1,4 @@
-August 18, 2024 - Day 105<br>
+August 19, 2024 - Day 105<br>
 
 <h2>Ninja Skills</h2>
 
