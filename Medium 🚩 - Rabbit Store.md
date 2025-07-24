@@ -85,7 +85,7 @@ TargetIP   cloudsite.thm storage.cloudsite.thm
 - clicked <code>Forward</code><br<
 - clicked <code>Forward</code> again<br>
 - identified a <code>jwt</code><br>
-- used <code>Inspector<code><br>
+- used <code>Inspector</code><br>
 - identified "subscription":"<code>inactive</code>"<br>
 - registered a new user through Burp<br>
 - logged in through Burp = OK<br>
