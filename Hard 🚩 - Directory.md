@@ -1,7 +1,7 @@
 <h1 align="center">Directory</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/ab43a0db-8c50-40e9-abc1-31e4bdd49630"><br>
-July 19, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
-and I’m excited to join you on this adventure, part of my <code>438</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+July 24, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, 
+and I’m excited to join you on this adventure, part of my <code>444</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Do you have what it takes to crack this case?</em>.<br>
 Access it <a href="https://tryhackme.com/room/directorydfirroom">here</a>.<br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/07ccf47c-c3fa-4496-b8b7-92aa43c9cdb2"></p>
