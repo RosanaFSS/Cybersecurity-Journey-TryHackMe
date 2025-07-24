@@ -1,4 +1,4 @@
-August 2-, 2024 - Day 106<br>
+2024, August 20 - Day 106<br>
 
 <h2>Easy - Microservices Architectures.md</h2>
 
