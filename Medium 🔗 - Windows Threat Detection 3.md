@@ -48,8 +48,9 @@
 <br>
 
 <p>3.2. After the successful login, which backdoor user did the attacker create?<br>
-<code>C:\Users\Administrator\AppData\Roaming\update.exe</code></p>
+<code>____</code></p>
 
+<br>
 
 <p>3.3. Which privileged group was the backdoor user added to?<br>
   
@@ -62,6 +63,21 @@
 <br>
 
 <h2>Task 4 . Persistence: Tasks and Services</h2>
+
+<br>
+
+<p>4.1. Which Windows service was created to persist the Nessie malware?<br>
+<code>____</code></p>
+
+<br>
+
+<p>4.2. Which scheduled task was created to persist the Troy malware?<br>
+<code>____</code></p>
+
+<br>
+
+<p>4.3. What flag do you get after finding and running the Troy malware?<br>
+<code>____</code></p>
 
 <br>
 
