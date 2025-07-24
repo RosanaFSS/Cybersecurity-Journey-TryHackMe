@@ -10,12 +10,6 @@ Click <a href="https://tryhackme.com/room/rabbitstore">here </a>to access this T
 
 <h2>Task 1 . Good luck!!!</h2>
 
-<br>
-
-<p><em>Answer the questions below</em></p>
-
-<p>1.1. Let´s go!<br>
-<code>No answer needed</code></p>
 
 <h3>nmap</h3>
 
