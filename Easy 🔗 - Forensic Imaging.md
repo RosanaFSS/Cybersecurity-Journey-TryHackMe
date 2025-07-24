@@ -1,7 +1,5 @@
-July 31, 2024<br>
-Day 86<br>
-
-<h2>Forensic Imaging</h2>
+<p>2024, August 20 - Day 106</p>
+<h1>Forensic Imaging</h1>
 
 <br>
 
