@@ -17,8 +17,6 @@ Click <a href="https://tryhackme.com/room/rabbitstore">here </a>to access this T
 <p>1.1. Let´s go!<br>
 <code>No answer needed</code></p>
 
-<br>
-
 <h3>nmap</h3>
 
 <p>
