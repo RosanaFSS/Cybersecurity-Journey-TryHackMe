@@ -111,3 +111,33 @@
 
 <img width="1253" height="508" alt="image" src="https://github.com/user-attachments/assets/644d8a85-0aca-41be-a8e1-bd1dfeed8479" />
 
+
+
+<br>
+
+<h2>Task 6 . Impact and Threat Detection Recap</h2>
+
+<br>
+
+<br>
+
+<p>6.1. What is the biggest threat to most corporate Windows networks?<br>
+<code>Ransomware</code>
+
+<br>
+
+<p>6.2. At which stage is it best to detect and stop the attack (e.g. Exfiltration)?<br>
+<code>Initial Access</code>
+
+<br>
+
+<h2>Task 7. Conclusion</h2>
+
+<br>
+
+<p>7.1. Complete the room!<br>
+<code>No answer needed</code>
+
+<br>
+<br>
+
