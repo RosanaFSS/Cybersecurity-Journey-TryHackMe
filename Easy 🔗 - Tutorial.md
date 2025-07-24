@@ -1,4 +1,4 @@
-July 4, 2024<br>
+June 4, 2024<br>
 Day 59<br>
 
 <p><h3> Welcome to the <em>TryHackMe</em></h3>
