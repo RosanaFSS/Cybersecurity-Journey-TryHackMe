@@ -70,8 +70,6 @@ We can use <code>apt list --installed | grep policykit-1</code> to check the ins
 
 <p>The original description of this vulnerability can be found in a post written by Kevin Backhouse, here = https://github.blog/2021-06-10-privilege-escalation-polkit-root-on-linux-with-bug/</p>
 
-<br>
-
 <h3>What is Polkit?</h3>
 <p>The logical question to be asking right now is: "What is polkit?"<br>
 
@@ -85,7 +83,8 @@ When interacting with polkit we can use <code>pkexec</code>, instead of <code>su
 <p>In a CLI session, we get a text-based prompt instead:</p>
 
 <p align="center"><img width="400px" src="https://github.com/user-attachments/assets/2d70b397-6bf1-4798-996d-7c2a46e39274"></p>
-<br>
+
+<p>To summarise, the policy toolkit can be thought of as a fine-grained alternative to the simpler sudo system.</p>
 
 <h3>How is Polkit vulnerable?</h3>
 <p>The next logical question is of course: "How can we exploit polkit"?<br>
@@ -93,7 +92,6 @@ When interacting with polkit we can use <code>pkexec</code>, instead of <code>su
 The short answer is: by manually sending dbus messages to the dbus-daemon (effectively an API to allow different processes the ability to communicate with each other), then killing the request before it has been fully processed, we can trick polkit into authorising the command. If you are not familiar with daemons, they are effectively background services running on Linux. The dbus-daemon is a program running in the background which brokers messages between applications.<br>
 
 For the sake of keeping this room relatively light, we won't go too deep into the specifics behind this (although reading the full article on the vulnerability is highly recommended). Effectively, the vulnerability can be boiled down to these steps:</p>
-
 
 <p>
 
