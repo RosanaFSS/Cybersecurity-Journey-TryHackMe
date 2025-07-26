@@ -78,7 +78,7 @@ We can use <code>apt list --installed | grep policykit-1</code> to check the ins
 Polkit is part of the Linux authorisation system. In effect, when you try to perform an action which requires a higher level of privileges, the policy toolkit can be used to determine whether you have the requisite permissions. It is integrated with systemd and is much more configurable than the traditional sudo system. Indeed, it is sometimes referred to as the "sudo of systemd".<br>
 
 When interacting with polkit we can use <code>pkexec</code>, instead of <code>sudo</code>. As an example, attempting to run the <code>useradd</code> command through pkexec in a GUI session results in a pop-up asking for credentials:<br>
-<code>pkexec useradd test1234</code<</p>
+<code>pkexec useradd test1234</code></p>
 
 <p align="center"><img width="400px" src="https://github.com/user-attachments/assets/227b93f3-88de-4cfc-830a-82a04de21abc"></p>
 
