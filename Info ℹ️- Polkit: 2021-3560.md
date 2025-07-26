@@ -50,11 +50,8 @@ Everything in the file should be submitted as a flag -- including any symbols or
 <br>
 
 <h2>Task 3 . Tutorial . Background</h2>
-
-<br>
-
 <h3>Overview</h3>
-<p>In early 2021 a researcher named Kevin Backhouse discovered a seven year old privilege escalation vulnerability (since designated CVE-2021-3560) in the Linux polkit utility. Fortunately, different distributions of Linux (and even different versions of the same distributions) use different versions of the software, meaning that only some are vulnerable.<br>
+<p>In early 2021 a researcher named <strong>Kevin Backhouse</strong> discovered a seven year old privilege escalation vulnerability (since designated CVE-2021-3560) in the Linux polkit utility. Fortunately, different distributions of Linux (and even different versions of the same distributions) use different versions of the software, meaning that only some are vulnerable.<br>
 
 Specifically, the following mainstream distributions, amongst others, were vulnerable:<br<
 
