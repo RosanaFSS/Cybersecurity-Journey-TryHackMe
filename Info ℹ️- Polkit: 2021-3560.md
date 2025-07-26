@@ -28,9 +28,6 @@ The exploit detailed in this room would often make use of a GUI desktop. For the
 
 <p>
 
-<img width="696" height="35" alt="image" src="https://github.com/user-attachments/assets/392df7fe-07c8-43cf-9080-afdec1353bbf" />
-
-
 - When you complete the box you will find a flag at <code>/root/root.txt</code>. This will not look like a regular TryHackMe flag:<br><img width="696" height="35" alt="image" src="https://github.com/user-attachments/assets/392df7fe-07c8-43cf-9080-afdec1353bbf" /><br>
 Everything in the file should be submitted as a flag -- including any symbols or special characters.<br>
 - This flag will be different every time you deploy the box. Each flag can be used exactly once, and will expire after six hours (so make sure to submit quickly!)<br>
