@@ -193,7 +193,7 @@ Now let's finish this! 5 milliseconds worked last time, so it should work here t
 <p><em>Answer the questions below</em></p>
 
 <p>4.1. Read the information above<br>
-<code>No answer needed</p>
+<code>No answer needed</code></p>
 
 <br>
 
