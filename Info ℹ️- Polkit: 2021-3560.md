@@ -190,7 +190,7 @@ Now let's finish this! 5 milliseconds worked last time, so it should work here t
 
 <p>With a hop, su, and a <code>sudo -s</code>code>, we have root!</p>
 
-<p><em>Answer the questions below</em></p>
+<p><em>Answer the question below</em></p>
 
 <p>4.1. Read the information above<br>
 <code>No answer needed</code></p>
@@ -198,13 +198,23 @@ Now let's finish this! 5 milliseconds worked last time, so it should work here t
 <br>
 
 <h2> Task 5 . Practical . Do it yourself!</h2>
+<p>You've seen the theory, so now it's time to try for yourself!<br><br>
+
+If you would like to SSH into the target machine, the credentials are:<br>
+
+- Username: tryhackme<br>
+- Password: TryHackMe123!<br><br>
+
+Otherwise please feel free to use the in-browser access on the right hand side of the screen. Bear in mind that the AttackBox can be deployed in tandem with the target machine.<br>
+
+Perform the CVE-2021-3560 exploit and get the flag from <code>/root/root.txt</code>!<br>
+
+<strong>Remember to submit the flag you find on the box to https://flag.muir.land/ in order to receive the final flag to submit below</strong>.</p>
 
 
-<p><em>Answer the questions below</em></p>
+<p><em>Answer the question below</em></p>
 
-<br>
-
-<p>1.1. User Flag<br>
+<p>5.1. Root Flagg<br>
 <code>____</code></p>
 
 <br>
