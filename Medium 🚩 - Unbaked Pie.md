@@ -3,10 +3,7 @@
 <em>Don't over-baked your pie!</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/d890fb0e-d6a1-4543-a23b-ba6498d576df"><br>
 Click <a href="https://tryhackme.com/room/unbakedpie">here </a>to access this TryHackMe CTF.<br>
-<img width="1200px" src=""></p>
-
-
-<img width="1879" height="373" alt="image" src="https://github.com/user-attachments/assets/bb0fd327-e2d2-4528-9371-022c1586180c" />
+<img width="1200px" src="https://github.com/user-attachments/assets/bb0fd327-e2d2-4528-9371-022c1586180c"></p>
 
 
 <br>
