@@ -37,8 +37,7 @@ Everything in the file should be submitted as a flag -- including any symbols or
 ----- The box code. In most instances this will be the same as the room code. For this room the code will be: polkit<br>
 ----- The flag<br>
 
-
-<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/bdedc881-d9a0-44d2-9d15-77ff719c4e12"></p>
+<p align="center"><img width="400px" src="https://github.com/user-attachments/assets/bdedc881-d9a0-44d2-9d15-77ff719c4e12"></p>
 
 - When you submit all three pieces of information correctly, another flag will appear at the top of the page. This will be in the standard TryHackMe format (<code>THM{HASH}</code>). You should submit this flag to the task below in order to complete the room.</p>
 
