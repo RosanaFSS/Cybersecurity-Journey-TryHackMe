@@ -32,7 +32,7 @@ The exploit detailed in this room would often make use of a GUI desktop. For the
 Everything in the file should be submitted as a flag -- including any symbols or special characters.<br><br>
 - This flag will be different every time you deploy the box. Each flag can be used exactly once, and will expire after six hours (so make sure to submit quickly!)<br><br>
 - When you have retrieved the flag, do not submit it directly into the TryHackMe answer field. Dynamic flags should be submitted to https://flag.muir.land/. This site is run by the room author and is not affiliated directly with TryHackMe.<br><br>
-- You will be asked to submit three pieces of information:<br><
+- You will be asked to submit three pieces of information:<br>
 ----- Your username. It is very important that this is identical to your TryHackMe username!<br>
 ----- The box code. In mo<br>
 
