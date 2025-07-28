@@ -255,7 +255,7 @@ You can find my other THM rooms on my THM profile.</p>
 
 </div>
 
-<p align="center">Global All Time:   151ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/bbdc5c05-5160-4534-9c53-66be5337a006"><br>
+<p align="center">Global All Time:   147ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/bbdc5c05-5160-4534-9c53-66be5337a006"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/aa7a991f-72a6-4a1f-80c4-44a51420625f"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b87ed072-2364-41d4-8c28-9a0128133da7"><br>
                   Global monthly:    129ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/59b4637d-d112-418e-9002-c91cd4db6832"><br>
