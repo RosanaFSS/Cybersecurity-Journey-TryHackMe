@@ -5,8 +5,6 @@
 Click <a href="https://tryhackme.com/room/redstoneonecarat">here </a>to access this TryHackMe CTF.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/c1ab3147-e67d-4b3f-94a8-fcda14d22133"></p>
 
-
-<br>
 <br>
 
 <h2>Task 1 . <code>Info</code> . Intro</h2>
