@@ -7,7 +7,7 @@ Click <a href="https://tryhackme.com/room/theserverfromhell">here </a>to access 
 
 <br>
 
-<h2>Task 1 . Hacking the server/h2>
+<h2>Task 1 . Hacking the server</h2>
 <p>Start at port 1337 and enumerate your way.<br>
 Good luck.</p>
 
