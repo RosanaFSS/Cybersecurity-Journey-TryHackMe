@@ -3,7 +3,7 @@
 <em>Understand why and how people are targeted in cyber attacks and how the SOC helps defend them.</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/009da389-8d8d-46ca-8a3a-9504cfb8a093"><br>
 Click <a href="https://tryhackme.com/room/humansattackvectors">here </a>to access this TryHackMe CTF.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/30b95bcf-deb9-4530-b0e6-913d677d452b"></p>
 
 
 
@@ -48,7 +48,8 @@ Click <a href="https://tryhackme.com/room/humansattackvectors">here </a>to acces
 
 </div>
 
-<p align="center">Global All Time:   144ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ad87dd84-8140-4c53-862d-d2bcbe7d75df"><br>
+
+<p align="center">Global All Time:   144ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b61e4b32-f502-4d3d-b2c7-4733904b258b"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/65c75060-fbaf-477c-a4e4-e9ae61dac818"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/43b5d700-6d02-4341-9d28-6ff88ca33375"><br>
                   Global monthly:    127ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e78c3ae1-c62b-4c29-a12b-de718b0bff81"><br>
