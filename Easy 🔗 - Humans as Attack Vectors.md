@@ -1,5 +1,5 @@
 <h1 align="center">Humans as Attack Vectors</h1>
-<p align="center">July 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>449</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">July 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>450</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Understand why and how people are targeted in cyber attacks and how the SOC helps defend them.</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/009da389-8d8d-46ca-8a3a-9504cfb8a093"><br>
 Click <a href="https://tryhackme.com/room/humansattackvectors">here </a>to access this TryHackMe CTF.<br>
