@@ -56,7 +56,7 @@ PORT   STATE SERVICE VERSION
 ________________________________________________
 
  :: Method           : GET
- :: URL              : http://10.10.229.158/FUZZ
+ :: URL              : http://TargetIP/FUZZ
  :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt
  :: Follow redirects : false
  :: Calibration      : false
@@ -81,7 +81,7 @@ wordpress               [Status: 301, Size: 178, Words: 6, Lines: 8]
 - /wordpress/license.txt<br>
 - /wordpress/readme.html<br>
 - /wordpress/images<br>
-- /wordpress/wp-admin --> <code>http://mountaineer.thm/wordpress/](http://mountaineer.thm/wordpress/wp-login.php?redirect_to=http%3A%2F%2F10.10.229.158%2Fwordpress%2Fwp-admin%2F&reauth=1)</code><br>
+- /wordpress/wp-admin --> <code>http://mountaineer.thm/wordpress/](http://mountaineer.thm/wordpress/wp-login.php?redirect_to=http%3A%2F%2FTargetIP%2Fwordpress%2Fwp-admin%2F&reauth=1)</code><br>
 - /wordpress/wp-admin/admin-ajax.php<br>
 - /wordpress/wp-admin/setup-config.php<br>
 - /wordpress/wp-admin/install.php<br>
@@ -112,10 +112,14 @@ TargetIP    mountaineer.thm
 
 ```bash
 :~/Mountaineer# wpscan --url http://mountaineer.thm/wordpress/ -e ap,vt,tt,cb,dbe,u,m
-
 ```
 
+<img width="929" height="175" alt="image" src="https://github.com/user-attachments/assets/bf73db99-43e5-4acb-8930-efe82e574052" />
 
+
+```bash
+:~/Mountaineer# wpscan --url http://mountaineer.thm/wordpress/ -e ap,vt,tt,cb,dbe,u,m
+```
 
 <h3>mountaineer.thm/wordpress/wp-login.php?registration=<code>enabled</code>enabled</code></h3>
 
@@ -657,7 +661,7 @@ a41824310a621855d9ed507f29eed757
                                               <img width="1200px" src="https://github.com/user-attachments/assets/ae3cff4a-afda-4ef5-b6c6-a4ee6a9ddb5d"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e6036538-69bd-4245-b191-9d9a03313c52"><br>
                   Global monthly:    125ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/54876b3b-524e-42c6-97db-27ac99ab8f29"><br>
-                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/54876b3b-524e-42c6-97db-27ac99ab8f29"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src=""><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
