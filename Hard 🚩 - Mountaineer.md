@@ -358,9 +358,7 @@ exploit.py                         100%[========================================
 
 <p>
 
-- navigated to <code>http://mountaineer.thm:80/wordpress//wp-content/uploads/shell.php
-
-</p>
+- navigated to <code>http://mountaineer.thm:80/wordpress//wp-content/uploads/shell.php</code></p>
 
 <img width="1124" height="399" alt="image" src="https://github.com/user-attachments/assets/7da4058f-8358-48dc-87ed-ec05cad37325" />
 
