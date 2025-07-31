@@ -286,8 +286,9 @@ images                  [Status: 301, Size: 332, Words: 20, Lines: 10]
 
 <img width="932" height="174" alt="image" src="https://github.com/user-attachments/assets/953ee7e3-6c9c-45ba-bc30-e38cd8fbca6e" />
 
+<br>
 
-<h3>words.tst</h3>
+<h3>words.txt</h3>
 
 ```bash
 :~/biteme# wget http://biteme.thm/console/securimage/words/words.txt
@@ -295,6 +296,93 @@ images                  [Status: 301, Size: 332, Words: 20, Lines: 10]
 
 <p>Navigated to <code>http://biteme.thm/console/config.phps</code>.<br><br>
 Discovered a <code>LOGIN_USER</code>:<code>6a61736f6e5f746573745f6163636f756e74</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/7d7cb122-aebd-428c-bcc7-42614440bc53)
+
+<br>
+
+<br>
+
+<p>Navigated to <code>http://biteme.thm/console/index.phps</code>.<br><br>
+There are details of the access method.<br>
+Ii is a friendlier view of the source code of <code>index.html</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/ea634c53-ea5f-49a5-b28e-b75672cbdeae)
+
+<br>
+
+<p>Navigated to <code>http://biteme.thm/console/functions.phps</code>.<br><br>
+Discovered <code>bin2hex</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/6de91091-4eeb-4c8a-9917-89d01515fdd6)
+
+<p>I just learned after a long long time in this challenge ...<br>
+That the function I highlighted before is coded in <code>java</code><br>Used <code>https://deobfuscate.io/</code>.</p>
+
+<p>This is obfuscated ...</p>
+
+<br>
+
+```bash
+       function handleSubmit() {
+        eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('0.1(\'2\').3=\'4\';5.6(\'@7 8 9 a b c d e f g h i... j\');',20,20,'document|getElementById|clicked|value|yes|console|log|fred|I|turned|on|php|file|syntax|highlighting|for|you|to|review|jason'.split('|'),0,{}))
+        return true;
+      }
+
+```
+
+<p>now it is</p>
+
+<br>
+
+```bash
+
+function handleSubmit() {
+  eval(function (p, a, c, k, e, r) {
+    e = function (c) {
+      return c.toString(a);
+    };
+    if (!"".replace(/^/, String)) {
+      while (c--) r[e(c)] = k[c] || e(c);
+      k = [function (e) {
+        return r[e];
+      }];
+      e = function () {
+        return "\\w+";
+      };
+      c = 1;
+    }
+    ;
+    while (c--) if (k[c]) p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
+    return p;
+  }("0.1('2').3='4';5.6('@7 8 9 a b c d e f g h i... j');", 20, 20, "document|getElementById|clicked|value|yes|console|log|fred|I|turned|on|php|file|syntax|highlighting|for|you|to|review|jason".split("|"), 0, {}));
+  return true;
+}
+```
+
+<br>
+
+```bash
+
+document|getElementById|clicked|value|yes|console|log|fred|I|turned|on|php|file|syntax|highlighting|for|you|to|review|jason".split("|"), 0, {}));
+```
+
+<br>
+
+<p>Used <code>CyberChef</code>.<br><br>Discovered<code>jason_test_account</code>.</p>
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1dc17bab-0ff1-488e-8fa6-18c3c0103cb0)
+
+<br>
+
 
 
 ```bash
@@ -304,10 +392,6 @@ Interactive mode enabled
 php > echo hex2bin('6a61736f6e5f746573745f6163636f756e74');
 jason_test_account
 php >
-```
-
-```bash
-
 ```
 
 
