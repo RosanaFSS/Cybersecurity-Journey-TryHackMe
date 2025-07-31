@@ -651,18 +651,13 @@ a41824310a621855d9ed507f29eed757
 | July 30, 2025     | 450      |     144ᵗʰ    |      5ᵗʰ     |     125ᵗʰ   |     7ᵗʰ    | 118,080  |    884    |    72     |
 
 
-<img width="1890" height="895" alt="image" src="https://github.com/user-attachments/assets/e6036538-69bd-4245-b191-9d9a03313c52" />
-
-<img width="1898" height="897" alt="image" src="https://github.com/user-attachments/assets/54876b3b-524e-42c6-97db-27ac99ab8f29" />
-
-
 </div>
 
 <p align="center">Global All Time:   144ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/3c8bac90-f7b1-4027-80bf-12318e0ccbb1"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/ae3cff4a-afda-4ef5-b6c6-a4ee6a9ddb5d"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/55ae2acb-dd53-48c4-9dea-6e9ed89b9f0f"><br>
-                  Global monthly:    125ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e6036538-69bd-4245-b191-9d9a03313c52"><br>
-                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="mage" src="https://github.com/user-attachments/assets/54876b3b-524e-42c6-97db-27ac99ab8f29"><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e6036538-69bd-4245-b191-9d9a03313c52"><br>
+                  Global monthly:    125ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/54876b3b-524e-42c6-97db-27ac99ab8f29"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/54876b3b-524e-42c6-97db-27ac99ab8f29"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
