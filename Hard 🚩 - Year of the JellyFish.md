@@ -83,9 +83,10 @@ LICENSE                 [Status: 200, Size: 1085, Words: 156, Lines: 22]
 ```
 
 <h3>monitorr.robyns-petshop.thm</h3>
+
 <p>
 
-- Monitorr version 1.7.6
+- Monitorr version <code>1.7.6</code>
 </p>
 
 <img width="1066" height="537" alt="image" src="https://github.com/user-attachments/assets/b527311f-1658-4059-b4b1-0ae6e1bf8414" />
@@ -95,7 +96,7 @@ LICENSE                 [Status: 200, Size: 1085, Words: 156, Lines: 22]
 <img width="1069" height="258" alt="image" src="https://github.com/user-attachments/assets/2142ccb3-38d2-46cd-befc-f710b049b038" />
 
 
-<h3>10.10.185.86>8096</h3>
+<h3>10.10.185.86:8096</h3>
 
 ```bash
 :~/YearOfTheJellyFish# curl -s http://robyns-petshop.thm:8096/system/info/public/
