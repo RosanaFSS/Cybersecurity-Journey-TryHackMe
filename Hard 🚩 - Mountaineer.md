@@ -81,13 +81,13 @@ wordpress               [Status: 301, Size: 178, Words: 6, Lines: 8]
 - /wordpress/license.txt<br>
 - /wordpress/readme.html<br>
 - /wordpress/images<br>
-- /wordpress/wp-admin --> <code>http://mountaineer.thm/wordpress/](http://mountaineer.thm/wordpress/wp-login.php?redirect_to=http%3A%2F%2F10.10.229.158%2Fwordpress%2Fwp-admin%2F&reauth=1)</cpode><br>
+- /wordpress/wp-admin --> <code>http://mountaineer.thm/wordpress/](http://mountaineer.thm/wordpress/wp-login.php?redirect_to=http%3A%2F%2F10.10.229.158%2Fwordpress%2Fwp-admin%2F&reauth=1)</code><br>
 - /wordpress/wp-admin/admin-ajax.php<br>
 - /wordpress/wp-admin/setup-config.php<br>
-- /wordpress/wp-admin/install.php
-- /wordpress/wp-content  ->  http://TargetIP8/wordpress/wp-content/
-- /wordpress/wp-content/plugins/akismet/akismet.php
-- /wordpress/wp-content/uploads/
+- /wordpress/wp-admin/install.php<br>
+- /wordpress/wp-content  ->  http://TargetIP8/wordpress/wp-content/<br>
+- /wordpress/wp-content/plugins/akismet/akismet.php<br>
+- /wordpress/wp-content/uploads/<br>
 - /wordpress/wp-content/upgrade/<br>
 - /wordpress/wp-includes</p>
 
