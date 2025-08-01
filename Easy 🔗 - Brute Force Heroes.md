@@ -154,7 +154,7 @@ Now. This is where I have a confession to make. The screenshot below shows me tr
 
 <p align="center"><img width="800px" src="https://github.com/user-attachments/assets/60f8d80e-b187-45bf-a46c-5b2b2582c7a6"></p>
 
-<p><em></em>(N.B. For those of you about to try and just look through the password file to work out the correct value - I replaced the value at that location in the file with the correct password. I like your thinking, but it won't be that easy. Try it if you don't believe me. )</p>e>
+<p><em>(N.B. For those of you about to try and just look through the password file to work out the correct value - I replaced the value at that location in the file with the correct password. I like your thinking, but it won't be that easy. Try it if you don't believe me. )</em></p>
 
 The strange thing is that the response codes and response lengths are all the same, even for the successful password. You have no evidence from the attack dialogue box that this is the correct password, but it is, I promise, and I can even prove it (sort of).<br>
 
