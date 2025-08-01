@@ -36,8 +36,6 @@ Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this T
 <p>1.1. Read the task above.<br>
 <code>No answer needed</code></p>
 
-<br>
-
 <h2>Task 2 . Treasure Among the Lines: Logs</h2>
 <h3>Logs</h3>
 <p>Logs are the footprints of digital components and invaluable tools and resources in the storytelling of systems, applications and networks. However, harnessing the power of logs is a challenging task. First, you need to understand the different types, formats, offerings and importance of logs. Then, you can start to uncover the insights, patterns and "treasures" among the lines!<br>
