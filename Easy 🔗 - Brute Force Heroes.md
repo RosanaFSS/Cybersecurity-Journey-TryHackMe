@@ -353,7 +353,7 @@ Available modules:
 - <code>user.txt</code> is a file containing <code>admin</code></p>
 
 
-<p><em>PoC</em></p>
+<p align="center"><em>PoC</em></p>
 
 ```bash
 #!/bin/bash
