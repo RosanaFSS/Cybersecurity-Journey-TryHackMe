@@ -69,13 +69,13 @@ Or visit the github page<br><br>
 
 If you're using the attack box that comes with THM, and  sudo apt install patator, then to get patator working correctly, you will need to link it to a python2 runtime. One way to do that is to setup a virtual python environment. If you're unsure how to do that, follow these steps (which assume you're using the THM box and running as root):<br>
 
-<code>apt install virtualenv</code><br><br>
+<code>apt install virtualenv</code><br>
 
-<code>cd ~</code><br><br>
+<code>cd ~</code><br>
 
-<code>virtualenv -p `which python2` venv</code><br><br>
+<code>virtualenv -p `which python2` venv</code><br>
 
-<code>source venv/bin/activate</code><br><br><br>
+<code>source venv/bin/activate</code><br><br>
 You should then see that your shell prompt has <code>(venv</code> in front of it and that patator runs with no problems like this:</p>
 
 <p align="center"><img width="500px" src="https://github.com/user-attachments/assets/2330b353-3275-4d07-b7e9-59be8a87d252"></p>
