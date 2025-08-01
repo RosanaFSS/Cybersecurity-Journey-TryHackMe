@@ -1,5 +1,5 @@
 <h1 align="center">Year of the Jellyfish</h1>
-<p align="center">July 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>451</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">July 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Some boxes sting...</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/01604da2-cb70-418c-8b90-a487cc81ed81"><br>
 Click <a href="https://tryhackme.com/room/yearofthejellyfish">here </a>to access this TryHackMe CTF.<br>
@@ -7,7 +7,7 @@ Click <a href="https://tryhackme.com/room/yearofthejellyfish">here </a>to access
 
 <br>
 
-<h2>Task 1 .Flags</h2>
+<h2>Task 1 . Flags</h2>
 <p>Hack your way in. Get the Flags. Don't get stung.<br>
 
 Be warned -- this box deploys with a public IP. Think about what that means for how you should approach this challenge. ISPs are often unhappy if you enumerate public IP addresses at a high speed...<br>
