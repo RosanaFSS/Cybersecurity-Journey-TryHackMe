@@ -7,9 +7,6 @@ Click <a href="https://tryhackme.com/room/bruteforceheroes">here </a>to access t
 <img width="160px" src="https://github.com/user-attachments/assets/e404db20-0897-43ed-8baf-5e39a97a9c5f"><br>
 <img width="1200px" src=""></p>
 
-
-
-
 <br>
 
 <h2>Task 1 . Launch The VM</h2>
@@ -272,7 +269,7 @@ Add the -x ignore: action to the end of your existing patator command (right aft
 
 <br>
 
-<p>5.2 .What is the admin password? <br>
+<p>5.2. What is the admin password?<br>
 <code>1qaz@WSX</code></p>
 
 <br>
@@ -423,11 +420,76 @@ rm -f /tmp/dvwa.cookie
 [i] ---------- Password : 1qaz@WSX
 ```
 
-
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e4f34daf-e280-4141-b711-b53a0da0f8d2"></p>
 
+<br>
+
+<h2>Task 6 . Brute forcing - ZAP</h2>
+<p>Congratulations! Not only did you brute force the main login for the admin, but you did it while the security was set to "Impossible" - If this is your first time brute forcing be impressed with yourself, time for tea and medals all round.<br>
+
+But we can't rest on our laurels for long. Remember, we were beaten at the first hurdle with a GUI tool. So let's see if we can't redeem ourselves in that area. Download the userlist.txt we've attached, and let's get started. This task will focus on the use of OWASP ZAP, a great tool for web application pen testing; just remember to take the automated warnings and alerts with a pinch of salt. A good pen tester should manually check listed vulnerabilities reported by automated tools, you'll look silly if it comes to report time, and it turns out the tool (and now, by extension, you) were wrong.<br>
+
+But we're not going to go into the different uses of OWASP ZAP here (though I recommend playing around with the tool and checking out the room linked in the introduction). We're focused on how it can help us brute force.<br>
+
+First things first, start the OWASP ZAP application. Depending on the platform you are using, this may be in a number of different places. If you are using the THM AttackBox, this is found at the Applications->Web->OWASP ZAP menu option. The latest versions of Kali have this tool pre-installed, and it is located at Applications->Web Application Analysis->ZAP. Older Kali or other distributions may not have this pre-installed. If not, you can install it from the ZAP Download page.<br>
+
+Once it is running, click Manual Explore. In the URL to explore, type in 10.201.107.100 and then click Launch Browser (you have a choice between Firefox and Chrome, it doesn't really matter which you pick). This will take you to the main login page. Use the admin credentials we discovered in the previous task and login.<br>
+
+From there, head to the DVWA Security page (xx.xxx.xxx.xxx/security.php) - Change the security to Low and click submit:</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/96684b4e-8ff1-43d6-a388-da41c967c615"></p>
+
+<p>The security level has been set to low (as you can see here)<br>
+
+From there, head to the Brute Force section (<code>xx.xxx.xxx.xxx/vulnerabilities/brute/</code>). Your screen should now look like this:</p>
+
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/427e2df3-1062-420a-bc62-a4cfdeb019a0"></p>
+
+
+<p>This is where we'll take on brute force round two. Let's try a test login using ZAP, as we did before with Burp Suite. Only this time, we have some valid credentials to use. Login using the username: admin and the password from the last task. You should get a message saying you logged into the admin area. Next, try a test login with some wrong credentials like test/testing:</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/527eb3dc-42a1-45d4-bf22-2ec1010a76e6"></p>
+
+<p>From within ZAP's History tab, we can compare our two login requests. (In our example, this is ID 96 and 100). One was valid (96), and the other wasn't (100) - Both got a 200 response code, but each one was different in size. So we can use that. We know there is a second set of login credentials - But this time we don't even know the username, never mind the password... Fear not though. ZAP can save the day!<br>
+
+In our most recent login attempt in the request, double click on the username used (in this case test) and then right click and select Fuzz </p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/d22685e8-1f4d-4eb0-8fae-76264ac9af36"></p>
+
+<p>This will then cause a popup to appear with the username highlighted. Click <strong>Payloads</strong> ... and this will open a second popup. Click <strong>Add</strong> ... . This will... You guessed it another, popup. Here select <strong>File</strong>  from the drop-down at the top and select the userlist.txt file that we provided:</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/7019e97a-db20-4dc8-81f0-45eb3a1a556"></p>
+
+<p>Click <strong>Add</strong> and then <strong>Ok</strong> (we'll work our way back to that original popup). Now in the Fuzzer box highlight the password we used and then click <strong>Add</strong> ...</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/9b99ba9b-8f80-4e22-867b-2b8812550f1d"></p>
+
+<p>Go back through the various popups, but this time select the passwords.txt we used in the previous task. At the end, you should have two positions highlighted and two payloads. You Fuzzer box should look like this:</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/ee792f07-3707-4d71-b3b4-a86f6a79eed0"></p>
+
+<p>Don't worry if the colours are different. ZAP likes to be decorative, is all. Now click <strong>Start Fuzzer</strong>. This will create a new tab along the bottom which shows the Fuzzer in progress... You should see a load of 200 responses, all with the same Size Response (4,237 bytes). Click one at random as they whiz by and check out the response. Scroll down, and you'll see these are "<strong>Username and/or password incorrect</strong>. "messages. Click on the <strong>Size Resp. Body</strong> column and organise the results so that the largest response size is at the top. After a few minutes, you should find that you get a different response size... Like this:</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/b115b628-d751-4c4f-9dc7-488cb786c37f"></p>
+
+<p>It looks like we might have a winner here... Pause the Fuzzer (or leave it running... But there probably isn't much need now. It'll just be generating needless traffic) and check out the response to our standout fuzzed request. It should say "<strong>Welcome to the password protected area <username></strong>" instead of the previous incorrect message. You can either look at the <strong>Request</strong> tab, or further examine the <strong>Payload</strong> column to see the password that was used with this username.<br>
+
+We did it! We got the username and password from scratch (sort of). Now, if you want to, you can play around with the different security settings. Try Burp Suite again (though maybe with a smaller, curated list of passwords and usernames if you're on the free version). You can even try your hand at using the CLI tools. Though keep in mind people have reported issues using Hydra shipped with Kali against DVWA brute force before. So you'll need to make sure you've got a working version (not 9.1).</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>6.1. What is the username you found?<br>
+<code>____</code></p>
 
 <br>
+
+<p>6.2. What is their password?<br>
+<code>____</code></p>
+
+<br>
+
+
+
 
 
 
