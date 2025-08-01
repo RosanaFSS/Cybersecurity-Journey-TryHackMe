@@ -479,10 +479,10 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 <code>____</code></p>
 
 
-<h6 align="center"><img width="300px" src="hhttps://github.com/user-attachments/assets/757af97f-7621-43c0-9924-79e71d495541"><br><br>
-                   <img width="300px" src="https://github.com/user-attachments/assets/a731f892-4edc-4e6f-a34c-c7d5b5c4ef46"><br><br>
-                   <img width="1200px" src="https://github.com/user-attachments/assets/55939ec7-b352-47bb-941d-218548b7ad65"><br><br>
-                   <img width="1200px" src="https://github.com/user-attachments/assets/b2c905c5-e0e3-46dd-9501-1417645a6ee6"></h6>
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/b2c905c5-e0e3-46dd-9501-1417645a6ee6"><br><br>
+                   <img width="300px" src=""><br><br>
+                   <img width="1200px" src=""><br><br>
+                   <img width="1200px" src=""></h6>
 
 
 <img width="333" height="343" alt="image" src="https://github.com/user-attachments/assets/757af97f-7621-43c0-9924-79e71d495541" />
