@@ -32,7 +32,7 @@ If you're already familiar with the concepts behind brute forcing please feel fr
 <h3>What is brute forcing?</h3>
 <p>Simply put brute forcing is just guesswork - Though we try our best to make it educated:</p>
 
-<p align="center"><img width="300px" src="https://github.com/user-attachments/assets/bce82b8a-79ec-4f41-a610-199e041c513e"></p>
+<p align="center"><img width="200px" src="https://github.com/user-attachments/assets/bce82b8a-79ec-4f41-a610-199e041c513e"></p>
 
 <p>The difference between doing it in person and trying to login to a service or resource is that we have to try and make sure our guesses are not only correct but that we're also speaking the correct language and we've formatted our guess correctly.<br>
 
