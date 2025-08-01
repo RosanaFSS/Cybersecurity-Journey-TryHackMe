@@ -508,6 +508,75 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 
 <br>
 <h2>Task 8 . Brute forcing - Hashes</h2>
+<p>Hash cracking? But I thought this was a brute force lab?<br>
+
+Well, it is - Hash cracking is really a form of brute forcing. This isn't a hash cracking / algorithm room, but the basics you need to know:<br>
+
+- Hash functions are one-way functions. This means they are easy to compute and should be hard to reverse ( we won't go into things like SHAttered here, but it is worth looking at if you're interested)<br>
+- The same input will create the same output (we'll cover the use of salts further down the line)<br><br>
+
+So as we cannot reverse the hash function, to crack a password hash, if we know what the algorithm used was, we can create a list of hashes using common or known passwords (a wordlist, for example). We can then compare our created hash to the hash we are trying to "crack". If you've got a match, you know the password. <br>
+
+So you see, when you're cracking a hash really, you're engaging in a brute force attack by simply testing your luck creating hashes until you find a match. Not only that but brute force is a type of hash cracking - Brute force-ception. The most common use case for hash cracking is that you provide a wordlist (like the ever popular rockyou) and let the cracker cycle through until it finds a match for the hash. But if you don't have a wordlist, or you've tried that already and got nowhere, you can double down on the brute force and have the cracker create it's own passwords on the fly to hash. This is what we'll be looking at in this task.<br>
+
+Now, of course, these aren't the only hash cracking methods. Lookup tables with all the pre-cracked hashes (like crackstation) and rainbow tables are other hash cracking methods but also outside the scope of this room. So back to the room and task at hand - lets begin!<br>
+
+We have now got full SSH access to our VM now as our username and encoded password from Task 7, so we can log in via SSH and look around and see if there is anything interesting. One of the first things we might want is to see what our current user can and can't do. In this instance, let's try running a sudo command as our user:<br><br>
+<code>sudo cat /etc/shadow</code><br><br>
+
+The shadow file is a great place to start (especially if we're after some hashes to crack) - But no such luck... Let's check the shadow files permissions though. Maybe there is more than one way to cat a file.<br>
+
+If we check the permissions using the command <code>ls -l /etc/shadow</code>, it looks like anyone can read the shadow file... Their mistake is our gain. Plus, it looks like if we read through the file there is another user on the system. Copy out the whole line starting with the username and add it to a file on your Kali or AttackBox machine. In this case, I've created the file hash.txt. The username is intentionally blanked out in the screenshot so that you can work out the correct user.</p>
+
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/14072f58-1cca-4912-a249-c7f0b4a1b9c8"></p>
+
+<p>Now there are two tools that (I at least think) are synonymous with hash cracking - John the ripper and Hashcat. There are pros and cons to both, and we won't get bogged down here going into that in detail. Safe to say, either one is going to be fine for our purpose here. Let's start with Hashcat.<br>
+
+If we want to use Hashcat the first thing we'll need to do is work out the hash type we've got. Some of the Linux ninjas out there might not need to even bother with that. But it's handy to know how to. So let's start there. If we look at the Hashcat wiki there is a link, for Example hashes. If we go to that page, we can see that it lists the hash mode, hash name and shows us an example. Your first challenge, working out the hash type we're dealing with here and subsequent mode.<br>
+
+Once we have the mode, we can build our Hashcat command.  If we look at the Hashcat help command (<code>hashcat -h</code>) at the end, it will show some basic examples. We can use those to build our command. Now a commonly seen use for Hashcat is to use a wordlist, like<br><br>
+<code>hashcat -a 0 -m <mode> hash.txt <wordlist></code><br><br>
+But in this case, we don't know if our password is in a wordlist, and use cases like that are covered very widely. So instead we're going to use the hashcat brute force attack.<br><br>
+<code>hashcat -a 3 -m <mode> hash.txt <mask></code><br><br>
+Now the mask is essentially how we tell Hashcat the key space to brute force. It requires that we know a few details about the password we're cracking in advance, like how many characters and what those characters are (ideally). The more information we have, the more we can make sure our mask is accurate and reduce the key space, making our brute force hash crack attempt quicker. Using this information we can use the hashcat built in charsets to create a mask to match our password and crack it. For example, using the charsets provided by hashcat if we wanted to brute force a 5 character password that is made up of all digit characters, except the middle one, which is an upper case character our mask would be:<br><br>
+<code>?d?d?u?d?d</code><br><br>
+Making our whole command (if this was say an SHA1 hash):<br><br>
+<code>hashcat -a 3 -m 100 hash.txt ?d?d?u?d?d</code><br><br>
+This will then cycle through creating passwords that match this mask, for example 11A11, 21A11, 31A11, etc. Hashing them (using the provided hash type, in this case SHA1), and then testing them to see if they match the provided hash. So if our hashed password was 12E45, eventually this would happen:</p>
+
+```bash
+11A11-> Hashed = 1F4A4922FFFDB189E4D3D479C1376C69CC24026A - Incorrect!
+
+11A12 -> Hashed = 6DCD18DD86B0B6350BF82EEF98A1256B0AEC7026 - Incorrect!
+...
+
+...
+
+...
+
+11E45 -> Hashed = 3B88EF20F8305D09681CB6CF0F9EAC9963B8947E - Incorrect!
+
+12E45 -> Hashed = BBB1BD3B59508DBC913D758ECF492F3327F7B634 - Correct!
+```
+
+<p>The way the keyspace is searched will depend on the number of characters provided and is detailed in the provided link above. This is simply to illustrates how the process will work, when using the mask brute force attack.<br>
+
+In our case, we can tell you that the password is 5 characters long and is made up of all lower case characters, except the middle one, which is a digit. If you're wondering how do we know that, we used a tried and tested method to work it out, best illustrated here. Armed with this information, we can create our mask. Check the page linked above to see how to format your mask to check for two lowercase characters, a digit, followed by two more lower case characters.<br>
+
+Now we have all the puzzle pieces, it's time to get cracking - Brute force style! This might take a bit of time, but it will work I promise. If you get beyond 10%  progress (you can view this by entering  <code>s</code> during your Hashcat crack to view the status), something has gone wrong. Make sure you copied the correct line and use the right mode, mask, etc.<br>
+
+Once the password has been cracked, Hashcat will display to the screen the hash that was found, followed by a colon and then the password. Alternatively, Hashcat remembers the found passwords, and you can run the following command to display the cracked hashes:<br><br>
+<code>hashcat -m <mode> --show hash.txt</code><br><br>
+Using the same mask as we did with Hashcat (to view the mask options refer to the relevant docs), John will crack the hash just like Hashcat. Due to the way it explores the search-space, it may need to get up to 50% progress to find the password. Likewise, you can pass John the --show option to display cracked passwords again once the password has been found.</p>
+
+<h3>BONUS:</h3>
+<p>In the new users home directory is a folder that contains a python script and a .txt file. If you want to play around some more with the use of masks and hashcracking feel free to use the contents of these files.<br>
+
+If you read the python script, you'll see that this makes use of a hash and salt - Remember what we said before about how the same input creates the same output? Well, one way people have worked around this issue is the use of a salt. A salt is a value which is not part of the initial value / password but which can be appended or prepended during the hash process so that the same password creates a different hash.<br>
+
+Be warned if you want to try and brute force this hash using a mask attack, it will take a long time, so we didn't include it here. But it might give you an idea of how long trying to brute force a hash would be in a real user situation.  You can also use a wordlist attack for this one (the provided passwords file will work fine as a wordlist here). Just make sure you've got the right mode (refer to the Example hashes).<br>
+
+One final note - If you look at the page for example hashes you'll notice there are a lot of them. The different algorithms being used can again be made different depending on the use of salts and even where the salt sits (before or after the password). You can get an idea of that just looking through the page. There is clearly a lot to the subject, which is beyond the scope of this room, but if you want to learn more a good place to start might be Hashing vs Encryption vs Encoding as well as How hashing works. </p>
 
 <p><em>Answer the questions below</em></p>
 
