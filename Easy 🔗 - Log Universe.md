@@ -1,7 +1,7 @@
 <h1 align="center">Log Universe</h1>
 <h3 align="center"> Practice $$\textcolor{#3bd62d}{\textnormal{ULogViewer}}$$.</h3>
 <p align="center">August 1, 2025<br>
-Explore log files from various systems and learn how to carve data to adopt a course of action!
+Learn and experience the various log types generated from different systems and carve data from the log files.
 Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe CTF<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/26cdddef-0a94-480a-9645-be58cb7c33f4"><br>
@@ -10,12 +10,61 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 <br>
 
 <h2>Task 1 .Introduction</h2>
+<h3>Introduction: Log Universe</h3>
+<p>In this room, you will learn and experience the various log types generated from different systems and carve data from the log files.</p>
 
+<h3>Learning Objectives</h3>
+<p>
+
+- Learn how to identify and use different log sources.<br>
+- Understand what to expect from different log types.<br>
+- Gain hands-on experience in data carving from the log files.<br>
+</p>
+
+<h3>Room Prerequisites</h3>
+<p>
+
+- Working knowledge of MS Windows and Linux<br>
+- Working knowledge of network and endpoint log systems<br>
+- Intro to Logs<br>
+- Log Operations<br>
+- Windows Event Logs<br>
+</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>1.1. Read the task above.<br>
+<code>No answer needed</code></p>
+
+<br>
 
 <h2>Task 2 . Treasure Among the Lines: Logs</h2>
+<h3>Logs</h3>
+<p>Logs are the footprints of digital components and invaluable tools and resources in the storytelling of systems, applications and networks. However, harnessing the power of logs is a challenging task. First, you need to understand the different types, formats, offerings and importance of logs. Then, you can start to uncover the insights, patterns and "treasures" among the lines!<br>
 
+Logs provide visibility, context, and carry evidence value in security operations, incident response, threat hunting, compliance, cyber resilience, and cyber maturity. Most importantly, the ability to correlate simultaneous and distinct events among distributed networks and systems is also achieved with the visibility and context gained by logs. No matter what kind of security operation is being implemented, the logs are one of the essential components.</p>
+
+<h3>Data Sources</h3>
+<p>There are various log sources to deal with, so categorising them is a great practice to start. Data sources can be divided into two main categories.</p>
+<p>[ ... ]</p>
+
+<h3>Data Specifications</h3>
+<p>[ ... ]</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>2.1. Read the task above.<br>
+<code>No answer needed</code></p>
+
+<br>
 
 <h2>Task 3 . Toolset and Hints</h2>
+<p>[ ... ]</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>3.1. Read this task and proceed to the next one.<br>
+<code>No answer needed</code></p>
 
 
 <h2>Task 4 . Zoom In: Windows Event Logs</h2>
@@ -34,7 +83,7 @@ After getting familiar with the log file formats, it is time to identify the eve
 
 <img width="917" height="635" alt="image" src="https://github.com/user-attachments/assets/4a45ff90-5cde-4b8f-897d-45e1b75b0d48" />
 
-<p>The following table breaks down the anatomy of the event logs and explains the main elements. In case you can't recall what a Windows event Log file looks like, use the given hints and image. </p>
+<p>The following table breaks down the anatomy of the event logs and explains the main elements. In case you can't recall what a Windows event Log file looks like, use the given hints and image.</p>
 
 <img width="921" height="97" alt="image" src="https://github.com/user-attachments/assets/0ab7f13a-cc21-4935-bd1c-a4a0847c0f6a" />
 
