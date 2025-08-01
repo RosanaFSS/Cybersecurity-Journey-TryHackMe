@@ -326,29 +326,26 @@ Available modules:
 - Method: <code>POST</code><br>
 - Cookie: <code>PHPSESSID=45eu1udsigp66r4dacbk2d14o7; security=impossible</code><br>
 - Data: <code>username=admin&password=password&Login=Login&user_token=642ad57c2e23f5ad18648f8798c1fb41</code><br>
-- Exit Condition: <ode>Location: login.php</code>
+- Exit Condition: <ode>Location: login.php</code></p>
 
-</p>
-
+<br>
 
 <h3>Patator</h3>
-
 <p>Did not work</p>
 
 <br>
 
 <h3>gotm1lk</h3>
-<p>https://blog.g0tmi1k.com/dvwa/login/</p>
+<p>
+    
+- navigated to https://<coe>blog.g0tmi1k.com/dvwa/login/</code></p>
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/51c62612-58e6-45b9-abf4-1564e0dfe08c"></p>
-
-<h4>PoC</h4>
 
 <p>
 
 - <code>passwords.txt</code> is the Task File downloaded<br>
 - <code>user.txt</code> is a file containing <code>admin</code></p>
-
 
 <p align="center"><em>PoC</em></p>
 
@@ -409,7 +406,7 @@ done < ${PASS_LIST}
 rm -f /tmp/dvwa.cookie
 ```
 
-<p>admin : Username : 1qaz@WSX</p>
+<p><code>admin</code> : <code>1qaz@WSX</code></p>
 
 ```bash
 :~/BruteForceHeroes# ./PoC
