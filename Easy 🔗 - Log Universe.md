@@ -63,10 +63,30 @@ Logs provide visibility, context, and carry evidence value in security operation
 <p>2.1. Read the task above.<br>
 <code>No answer needed</code></p>
 
-<br>
-
 <h2>Task 3 . Toolset and Hints</h2>
-<p>[ ... ]</p>
+<h3>VM and Toolset</h3>
+<p>You have a custom Ubuntu machine with an open-source log parser tool (ULogViewer) and sample logs to investigate details and sample log files to discover each covered log file and practice.</p>
+
+<img width="979" height="195" alt="image" src="https://github.com/user-attachments/assets/a9cbd456-2204-4db6-9f28-11a7ab406996" />
+
+<p>Let's start the Virtual Machine by pressing the Start Machine button at the top of this task. The machine will start in split-screen view. In case the VM is not visible, use the blue Show Split View button at the top-right of the page.<br>
+
+There are a variety of tools used in log analysis and discovery phases. Each tool has advantages and disadvantages, so the tool preference varies between analysts and the environment. One of the most important details of the log analysis tool is flexibility, compatibility, and support for parsing multiple log formats. We will use "ULogViewer" to parse and analyse various log file types in this room. Details are listed below.</p>
+
+<img width="898" height="832" alt="image" src="https://github.com/user-attachments/assets/dc2f000b-a0c2-4923-a1ee-b5f42229bc2e" />
+
+<img width="861" height="204" alt="image" src="https://github.com/user-attachments/assets/ae0888f3-98e5-47a2-8976-d5d35efbc304" />
+
+<p> Refer to the following explanations in case you opened the application and couldn't select a profile and ended up with an empty screen similar to the one shared above.<br>
+
+- Select the log profile to be parsed.<br>
+- Add the log file to be parsed.<br>
+- Filter logs and perform search.<br>
+- Delete the loaded logs from the UI.<br>
+- Open a new tab for a different log source.<br><br>
+In addition to the processes discussed above, the image below shows what to expect after data parsing and viewing the log message with filter options.</p>
+
+<img width="786" height="450" alt="image" src="https://github.com/user-attachments/assets/c4789a47-4027-4b27-9b2e-6f3bb8e6b733" />
 
 <p><em>Answer the question below</em></p>
 
