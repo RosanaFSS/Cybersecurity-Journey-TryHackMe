@@ -3,9 +3,12 @@
 <em>Explore log files from various systems and learn how to carve data to adopt a course of action!</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/26cdddef-0a94-480a-9645-be58cb7c33f4"><br>
 Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe CTF.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/e8b18d56-f7cd-42a1-b3e8-5de9514d3646"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/4c36267d-6c2c-43ac-819c-f1614daac306"></p>
 <br><br>
-<h3 align="center">Practice <code>ULogViewer</code>.</h3>
+
+<h3 align="center"> Practice $$\textcolor{#3bd62d}{\textnormal{ULogViewer}}$$</h3>
+
+
 
 <br>
 
