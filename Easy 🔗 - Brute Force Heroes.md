@@ -1,5 +1,5 @@
 <h1 align="center">Brute Force Heroes</h1>
-<h3 align="center">Practice $$\textcolor{#3bd62d}{\textnormal{Burp Suite  .  Patator}}$$.</h3>
+<h3 align="center">Practice $$\textcolor{#3bd62d}{\textnormal{Burp Suite . Hydra . Patator . OWASP ZAP . John The Ripper . Hashcat}}$$.</h3>
 <p align="center">August 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 Walkthrough room to look at the different tools that can be used when brute forcing, as well as the different situations that might favour one tool over another.<br>
