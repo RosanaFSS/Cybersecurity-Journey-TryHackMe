@@ -3,13 +3,13 @@
 <p align="center">August 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 Learn and experience the various log types generated from different systems and carve data from the log files.<br>
-Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe CTF.<br>
+Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe walkthrough.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/26cdddef-0a94-480a-9645-be58cb7c33f4"><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/4c36267d-6c2c-43ac-819c-f1614daac306"></p>
 
 <br>
 
-<h2>Task 1 .Introduction</h2>
+<h2>Task 1 . Introduction</h2>
 <h3>Introduction: Log Universe</h3>
 <p>In this room, you will learn and experience the various log types generated from different systems and carve data from the log files.</p>
 
