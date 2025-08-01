@@ -5,7 +5,7 @@ Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/ro
 Walkthrough room to look at the different tools that can be used when brute forcing, as well as the different situations that might favour one tool over another.<br>
 Click <a href="https://tryhackme.com/room/bruteforceheroes">here </a>to access this TryHackMe walkthrough.<br>
 <img width="160px" src="https://github.com/user-attachments/assets/e404db20-0897-43ed-8baf-5e39a97a9c5f"><br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/b8a95a6d-fe53-4092-801c-045e614f59a0"></p>
 
 <br>
 
@@ -478,6 +478,16 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 <p>6.1. What is the username you found? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
 <code>____</code></p>
 
+
+<h6 align="center"><img width="300px" src="hhttps://github.com/user-attachments/assets/757af97f-7621-43c0-9924-79e71d495541"><br><br>
+                   <img width="300px" src="https://github.com/user-attachments/assets/a731f892-4edc-4e6f-a34c-c7d5b5c4ef46"><br><br>
+                   <img width="1200px" src="https://github.com/user-attachments/assets/55939ec7-b352-47bb-941d-218548b7ad65"><br><br>
+                   <img width="1200px" src="https://github.com/user-attachments/assets/b2c905c5-e0e3-46dd-9501-1417645a6ee6"></h6>
+
+
+<img width="333" height="343" alt="image" src="https://github.com/user-attachments/assets/757af97f-7621-43c0-9924-79e71d495541" />
+
+
 <br>
 
 <p>6.2. What is their password? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
@@ -631,17 +641,17 @@ So thank you for completing the room. The material covered within this room was 
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 1    | 452      |     142ⁿᵈ    |      5ᵗʰ     |   2,645ᵗʰ   |    31ˢᵗ    | 118,384  |    887    |    73     |
+| 2025, August 1    | 452      |     141ˢᵗ    |      5ᵗʰ     |   3,338ᵗʰ   |    43ʳᵈ    | 118,424  |    887    |    73     |
 
 
 
 </div>
 
-<p align="center">Global All Time:   142ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/6f03e5b2-b5d2-4fa7-adef-ddcae96280f0"><br>
+<p align="center">Global All Time:   141ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/b8c1746f-be18-4435-96f3-347d4bf43ed9"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/e34c9e2a-8f75-4c9a-9b99-971e217c1960"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3ab8dc46-cb3a-4e2d-9bc7-9e8b57263471"><br>
-                  Global monthly:   2,645ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a6e9e22d-bb63-4926-8fca-642d7e3fbc22"><br>
-                  Brazil monthly:      31ˢᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/bd02f264-ad45-4619-ad6c-eb9e6b597391"><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6bdcc963-23e1-485d-b40e-e4c089fd1dd3"><br>
+                  Global monthly:   3,338ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/327d6d05-8c11-43eb-8e2a-4e07c23d5ae5"><br>
+                  Brazil monthly:      43ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/206fe1c3-6e3d-4a67-92e9-7b65cbb00ae7"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
