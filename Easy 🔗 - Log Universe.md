@@ -1,5 +1,5 @@
 <h1 align="center">Log Universe</h1>
-<h2 align="center"> Practice $$\textcolor{#3bd62d}{\textnormal{ULogViewer}}$$.</h2>
+<h3 align="center"> Practice $$\textcolor{#3bd62d}{\textnormal{ULogViewer}}$$.</h3>
 <p align="center">Explore log files from various systems and learn how to carve data to adopt a course of action!.<br>
 Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe CTF.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/26cdddef-0a94-480a-9645-be58cb7c33f4"><br>
