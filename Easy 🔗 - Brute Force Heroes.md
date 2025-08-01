@@ -443,7 +443,7 @@ From there, head to the DVWA Security page (xx.xxx.xxx.xxx/security.php) - Chang
 
 From there, head to the Brute Force section (<code>xx.xxx.xxx.xxx/vulnerabilities/brute/</code>). Your screen should now look like this:</p>
 
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/427e2df3-1062-420a-bc62-a4cfdeb019a0"></p>
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/427e2df3-1062-420a-bc62-a4cfdeb019a0"></p>
 
 
 <p>This is where we'll take on brute force round two. Let's try a test login using ZAP, as we did before with Burp Suite. Only this time, we have some valid credentials to use. Login using the username: admin and the password from the last task. You should get a message saying you logged into the admin area. Next, try a test login with some wrong credentials like test/testing:</p>
@@ -478,23 +478,105 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 
 <p><em>Answer the questions below</em></p>
 
-<p>6.1. What is the username you found?<br>
+<p>6.1. What is the username you found? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
 <code>____</code></p>
 
 <br>
 
-<p>6.2. What is their password?<br>
+<p>6.2. What is their password? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
+<code>____</code></p>
+
+
+
+<br>
+<h2>Task 7 . Brute forcing - SSH (Hydra + Patator)</h2>
+
+
+<p><em>Answer the questions below</em></p>
+
+<p>7.1. What is the SSH username?<br>
 <code>____</code></p>
 
 <br>
 
+<p>7.2. What is their password (the encoded version) ?<br>
+<code>____</code></p>
+
+<br>
+
+<p>7.3. What kind of encoding is this? <br>
+<code>____</code></p>
 
 
 
+<br>
+<h2>Task 8 . Brute forcing - Hashes</h2>
+
+<p><em>Answer the questions below</em></p>
+
+<p>8.1. Which user can we crack the password for? Hint: <em>read the shadow file</em><br>
+<code>____</code></p>
+
+<br>
+
+<p>8.2. What mode do we need for the user's hash? Hint: <em>Check the example page and run a Find for the first 3 chars of the hash</em><br>
+<code>____</code></p>
+
+<br>
+
+<p>8.3. What is the cracked password?<br>
+<code>____</code></p>
+
+<br>
+
+<p>8.4. What is the mask value we need to use? Hint: <em>Check the hashcat built in charsets</em><br>
+<code>____</code></p>
 
 
 
+<br>
+<h2>Task 9 . Conclusion</h2>
+<p>That's it. You've reached the end, and if you've managed all of the above, you can now call yourself a brute force hero and in your utility belt a few more tools.<br>
+
+Most importantly, you hopefully know not only how to use these tools, but what tools can be used when and why they should (or shouldn't) be used. Knowing what command to run or how to run it is great. But if you know why, that is the most important thing because you'll find yourself getting stuck a lot less.<br>
+
+So thank you for completing the room. The material covered within this room was in part taken (with permission) from a Cyber Security masters course.</p>
+
+<p align="center">This room was created by myself (kafaka157) and Heisenberg.</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>9.1. Read the above<br>
+<code>No answerr needed</code></p>
+
+<br>
+<br>
+
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ec3adeed-c4ee-43f0-bee9-5d6f78c5a43"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/ccf7439e-5dbd-4f44-9ee3-9297839a9bac"></p>
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 1    | 452      |     142ⁿᵈ    |      5ᵗʰ     |   2,645ᵗʰ   |    31ˢᵗ    | 118,384  |    887    |    73     |
 
 
 
+</div>
 
+<p align="center">Global All Time:   142ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/6f03e5b2-b5d2-4fa7-adef-ddcae96280f0"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/e34c9e2a-8f75-4c9a-9b99-971e217c1960"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3ab8dc46-cb3a-4e2d-9bc7-9e8b57263471"><br>
+                  Global monthly:   2,645ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a6e9e22d-bb63-4926-8fca-642d7e3fbc22"><br>
+                  Brazil monthly:      31ˢᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/bd02f264-ad45-4619-ad6c-eb9e6b597391"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
