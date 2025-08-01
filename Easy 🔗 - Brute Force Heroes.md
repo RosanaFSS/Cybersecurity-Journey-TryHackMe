@@ -4,7 +4,7 @@
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 Walkthrough room to look at the different tools that can be used when brute forcing, as well as the different situations that might favour one tool over another.<br>
 Click <a href="https://tryhackme.com/room/bruteforceheroes">here </a>to access this TryHackMe walkthrough.<br>
-<img width="80px" src="https://github.com/user-attachments/assets/e404db20-0897-43ed-8baf-5e39a97a9c5f"><br>
+<img width="160px" src="https://github.com/user-attachments/assets/e404db20-0897-43ed-8baf-5e39a97a9c5f"><br>
 <img width="1200px" src=""></p>
 
 
