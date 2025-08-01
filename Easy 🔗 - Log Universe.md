@@ -3,7 +3,7 @@
 <p align="center">August 1, 2025<br>
 Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 Learn and experience the various log types generated from different systems and carve data from the log files.<br>
-Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe CTF<br>
+Click <a href="https://tryhackme.com/room/loguniverse">here </a>to access this TryHackMe CTF.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/26cdddef-0a94-480a-9645-be58cb7c33f4"><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/4c36267d-6c2c-43ac-819c-f1614daac306"></p>
 
@@ -46,10 +46,19 @@ Logs provide visibility, context, and carry evidence value in security operation
 
 <h3>Data Sources</h3>
 <p>There are various log sources to deal with, so categorising them is a great practice to start. Data sources can be divided into two main categories.</p>
-<p>[ ... ]</p>
+
+<img width="1020" height="590" alt="image" src="https://github.com/user-attachments/assets/117f6ff5-421a-4ba1-b377-1519086510d5" />
+
+<p>Note that each data source produces different logs and serves a different purpose. The Intro to Logs room covers common log types, formats and standards. If you are unfamiliar with the details of logs, you can find more information in this room.</p>
 
 <h3>Data Specifications</h3>
-<p>[ ... ]</p>
+<p>We have learned that multiple data sources generate different logs for different purposes. However, to avoid log noise and to enable log management, correlation, and investigation, some "minimum qualification requirements" must be present in each log. Common base qualifications are listed below:<br>
+
+- The system which created the log.<br>
+- The log creation time (date, time and timezone).<br>
+- The event that caused the log to be created (message).<br>
+- The severity of the log.<br>
+- The source associated with the log (IP and port, MAC address, username, or system name).</p>
 
 <p><em>Answer the question below</em></p>
 
