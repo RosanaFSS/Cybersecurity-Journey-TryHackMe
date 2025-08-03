@@ -1,5 +1,5 @@
 <h1 align="center">Soupedecode 01</h1>
-<p align="center">2025, August 2<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>453</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, August 3<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>454</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Test your enumeration skills on this boot-to-root machine.</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/dd6c5cb4-8f98-4b69-b70f-92228d41555a"><br>
 Click <a href=https://tryhackme.com/room/soupedecode01">here </a>to access this TryHackMe CTF.<br>
@@ -453,7 +453,7 @@ C:\Windows\system32> type C:\Users\Administrator\Desktop\root.txt
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 2    | 453      |     140ᵗʰ    |      5ᵗʰ     |   1,463rd   |    25ᵗʰ    | 118,544  |    889    |    73     |
+| 2025, August 3    | 454      |     140ᵗʰ    |      5ᵗʰ     |   1,463rd   |    25ᵗʰ    | 118,544  |    889    |    73     |
 
 
 </div>
