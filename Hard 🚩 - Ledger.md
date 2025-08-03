@@ -5,10 +5,6 @@
 Click <a href="https://tryhackme.com/room/ledger">here </a>to access this TryHackMe CTF.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/ece47b2d-4a71-42d9-902e-42e6f3b86948"></p>
 
-
-<p align="center"> <img width="1000px" src=""> </p>
-
-
 <br>
 <br>
 
