@@ -193,9 +193,8 @@ It worked... My evil plan is going smoothly.
 
 <p>
 
-- Wireless LAN
-- Infinixmofil_36...
-</p>
+- Wireless LAN<br>
+- Infinixmofil_36...</p>
 
 ```bash
 :~/SuperSpam# wireshark SamsNetwork.cap
