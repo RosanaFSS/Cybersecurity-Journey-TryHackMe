@@ -683,16 +683,35 @@ THM{REDACTED}
 <img width="1388" height="775" alt="image" src="https://github.com/user-attachments/assets/da6019fb-d559-4c34-8dab-7c875fe467cf" />
 
 
-<br>
-<br>
-
-<img width="1906" height="883" alt="image" src="https://github.com/user-attachments/assets/3dae5c81-4a75-4432-b5ce-0beae6f15d44" />
-
 
 <br>
+<br>
 
-![image](https://github.com/user-attachments/assets/d0eea22e-f924-4d37-95fc-a73d3579038a)
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3dae5c81-4a75-4432-b5ce-0beae6f15d44"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/bb09ec5a-f27a-4a6f-9548-aad5355e30df"></p>
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 2    | 453      |     142nd    |      5ᵗʰ     |   4,096ᵗʰ   |    67ᵗʰ    | 118,484  |    888    |    73     |
 
 
+</div>
 
+<p align="center">Global All Time:   142nd<br><img width="250px" src="https://github.com/user-attachments/assets/7312a204-1b7e-4886-a7ae-19e059f8c725"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/006a21b2-0171-416e-9cc4-812bd12f6a03"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2798c525-2e0b-4671-8059-aa738481e75a"><br>
+                  Global monthly:  4,096ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b7c7301a-25f1-4e40-aff3-7404bac487bf"><br>
+                  Brazil monthly:     67ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d19f9047-9f59-4276-84ef-e0ef59f29063"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
 
