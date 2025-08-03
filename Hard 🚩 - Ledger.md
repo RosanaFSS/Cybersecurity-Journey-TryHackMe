@@ -34,6 +34,7 @@ Note: The VM takes about 5 minutes to fully boot up. All the necessary tools are
 <h3>nmap</h3>
 
 <p>There are many ports open.<br><br>
+	
 - port <code> 53/tcp</code>:<code>domain?</code><br>
 - port <code> 80/tcp</code>:<code>http</code><br>
 - port <code> 88/tcp</code>:<code>kerberos-sec</code><br>
@@ -48,7 +49,7 @@ Note: The VM takes about 5 minutes to fully boot up. All the necessary tools are
 - port <code>3268/tcp</code>:<code>ldap</code><br>
 - ...<br><br>
 
-- <code>labyrinth.thm.local</code>, <code>thm.local</code> and <code>LABYTINTH</code></p>
+- <code>labyrinth.thm.local</code>, <code>thm.local</code> and <code>LABYRINTH</code></p>
 
 
 <br>
