@@ -185,7 +185,7 @@ PORT      STATE  SERVICE    VERSION
 <h3>/etc/hosts</h3>
 
 ```bash
-TargetIP    labyrinth.thm.local thm.local LABYTINTH  
+TargetIP    labyrinth.thm.local thm.local LABYRINTH  
 ```
 
 <br>
@@ -565,7 +565,7 @@ Certificate Templates
 
 
 ```bash
-(venv) :~/Ledger#  certipy req -u 'Susanna_McKnight@thm.local' -p 'Cxxxxxxxxx23!' -dc-ip 'TargetIP' -target 'labyrinth.thm.local' -ca 'thm-LABYRINTH-CA' -template 'ServerAuth' -upn 'Bradley_Ortiz@thm.local'
+(venv) :~/Ledger# certipy req -u 'Susanna_McKnight@thm.local' -p 'Cxxxxxxxxx23!' -dc-ip 'TargetIP' -target 'labyrinth.thm.local' -ca 'thm-LABYRINTH-CA' -template 'ServerAuth' -upn 'Bradley_Ortiz@thm.local'
 Certipy v4.8.2 - by Oliver Lyak (ly4k)
 
 [*] Requesting certificate via RPC
@@ -714,4 +714,3 @@ THM{REDACTED}
 <br>
 <h1 align="center">Thanks for Coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-
