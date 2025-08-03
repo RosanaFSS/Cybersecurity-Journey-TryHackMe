@@ -255,9 +255,9 @@ It worked... My evil plan is going smoothly.
 
 - <code>Edit</code> > <code>Preferences</code> > <code>Protocols</code> > <code>IEEE 802.11</code> > Decryption keys <code>Edit...</code><br>
 - clicked <code>+</code><br>
-- selected <code>wpa-pwd</code for Key type<<br>
+- selected <code>wpa-pwd</code> for Key type<<br>
 - pasted the key uncovered by aircrack-ng<br>
-- hit <code>ENTER</code>
+- hit <code>ENTER</code><br>
 - clicked <code>OK</code><br>
 - clicked <code>Apply</code><br>
 - clicked <code>OK</code></p>
@@ -377,7 +377,7 @@ It worked... My evil plan is going smoothly.
 - clicked <code>Close</code><br>
 - navigated to the link provided for the uploaded file<br>
 - got the shell<br>
-- stabilized the shell<br>
+- stabilized the shell</p>
 
 
 
