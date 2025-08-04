@@ -3,7 +3,7 @@
 Learn basic techniques to recover an AD in case of compromise</strong>.<br>
 Access it clicking <a href="https://tryhackme.com/room/recoveringactivedirectory">here </a>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/a180eb09-b28c-4d55-95a2-7d4a94cc8368"><br><br>
-<img width="80px" src="https://github.com/user-attachments/assets/b2bf7e3e-a2c4-450f-b7fe-2c71b64e1a29"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/b2bf7e3e-a2c4-450f-b7fe-2c71b64e1a29"></p>
 
 <br>
 <h2>Task 1 . Introduction</h2>
