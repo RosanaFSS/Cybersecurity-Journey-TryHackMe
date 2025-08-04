@@ -2,9 +2,10 @@
 <p align="center">2025, August 4 - Day 455<br>
 Learn basic techniques to recover an AD in case of compromise</strong>.<br>
 Access it clicking <a href="https://tryhackme.com/room/recoveringactivedirectory">here </a>.<br>
-<img width="80px" src="https://github.com/user-attachments/assets/a180eb09-b28c-4d55-95a2-7d4a94cc8368"><br></p>
+<img width="80px" src="https://github.com/user-attachments/assets/a180eb09-b28c-4d55-95a2-7d4a94cc8368"><br><br>
+<img width="80px" src="https://github.com/user-attachments/assets/b2bf7e3e-a2c4-450f-b7fe-2c71b64e1a29"></p>
 
-
+<br>
 <h2>Task 1 . Introduction</h2>
 <p>We learned basic concepts on implementing group policies and the least privilege model in the previous room (Active Directory Hardening).<br>
 In this room, we will focus on Active Directory vulnerabilities, methods for recovering the compromised Active Directory domain controller, and preventive measures to avoid hacking attempts.<br>
@@ -331,19 +332,14 @@ In this room, we have learned that the monitoring and identification of attacks 
 <p>8.1. I have completed the room.<br>
 <code>No answer needed</code></p>
 
-<br>
-<br>
-
-<img width="1880" height="934" alt="image" src="https://github.com/user-attachments/assets/b2baaca3-ff09-47d0-9e31-e1855a0cfe8f" />
-
-
 
 <br>
 <br>
 
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3dae5c81-4a75-4432-b5ce-0beae6f15d44"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/bb09ec5a-f27a-4a6f-9548-aad5355e30df"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b2baaca3-ff09-47d0-9e31-e1855a0cfe8f"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/83e25d27-25cd-4542-8aa9-a7f85e1263dc"></p>
+
 
 <br>
 
