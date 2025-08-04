@@ -1,7 +1,7 @@
 <h1 align="center">Recovering Active Directory</h1>
 <p align="center">2025, August 4 - Day 455<br>
 Learn basic techniques to recover an AD in case of compromise</strong>.<br>
-Access it clicking <a href="https://tryhackme.com/room/recoveringactivedirectory">here </a>here.<br>
+Access it clicking <a href="https://tryhackme.com/room/recoveringactivedirectory">here </a>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/a180eb09-b28c-4d55-95a2-7d4a94cc8368"><br></p>
 
 
