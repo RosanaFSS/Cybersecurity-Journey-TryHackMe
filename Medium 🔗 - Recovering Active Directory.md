@@ -350,16 +350,15 @@ In this room, we have learned that the monitoring and identification of attacks 
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 2    | 453      |     142nd    |      5ᵗʰ     |   4,096ᵗʰ   |    67ᵗʰ    | 118,484  |    888    |    73     |
-
+| 2025, August 4    | 455      |    134ᵗʰ     |      5ᵗʰ     |   1,082ⁿᵈ   |    23ʳᵈ    | 119,074  |    893    |    73     |
 
 </div>
 
-<p align="center">Global All Time:   142nd<br><img width="250px" src="https://github.com/user-attachments/assets/7312a204-1b7e-4886-a7ae-19e059f8c725"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/006a21b2-0171-416e-9cc4-812bd12f6a03"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2798c525-2e0b-4671-8059-aa738481e75a"><br>
-                  Global monthly:  4,096ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b7c7301a-25f1-4e40-aff3-7404bac487bf"><br>
-                  Brazil monthly:     67ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d19f9047-9f59-4276-84ef-e0ef59f29063"><br>
+<p align="center">Global All Time:   134ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/5459cd2e-5427-4e04-91bc-5a519c34326f"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/39a1775e-ca0f-4082-9ee8-458f7e4f114c"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/451c3694-381f-4f8b-8d96-0e75198f91a8"><br>
+                  Global monthly:  1,082ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/d877d4d5-f85f-4d28-ba89-83230b7bbbb7"><br>
+                  Brazil monthly:    23ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/9a2c57ec-4e36-4225-8cc3-fa54877bb3fd"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
