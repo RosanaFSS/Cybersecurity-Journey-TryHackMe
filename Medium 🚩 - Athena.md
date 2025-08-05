@@ -93,43 +93,6 @@ Host script results:
 </html>
 ```
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Athena - Gods of olympus</title>
-    <meta name="description" content="Page about Athena, the Greek goddess of wisdom, war strategy and the arts.">
-    <meta name="author" content="matheuz">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Athena - Gods of Olympus</h1>
-      <p class="subtitle">The Greek goddess of wisdom, war strategy and the arts</p>
-    </header>
-    <main>
-      <section>
-        <h2>Who is Athena?</h2>
-        <p>Athena is the daughter of Zeus and the goddess Metis, who was swallowed by Zeus when she was pregnant. Athena was born from the head of Zeus, fully armed and adult. She is the goddess of wisdom, war strategy and the arts. She is often portrayed with an owl, which symbolizes wisdom, on her shoulder.</p>
-      </section>
-      <section>
-        <h2>Athena and Greek Mythology</h2>
-        <p>In addition to being the goddess of wisdom, Athena is known for helping Greek heroes in their battles against monsters and other mythological creatures. She was also one of the most important designees for the city of Athens, which was named after the goddess.</p>
-        <img src="athena.jpg" alt="Athena">
-      </section>
-    </main>
-  </body>
-</html>
-
-
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6123d0ea-50a9-41b3-b7cb-30c8b26a4798"></p>
 
