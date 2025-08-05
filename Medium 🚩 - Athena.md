@@ -1154,10 +1154,32 @@ CREATE VIRTUAL TABLE fts5 USING fts5(content="fts_view", "nco:phoneNumber", "nfo
 /etc/ssl/openssl.cnf:challengePassword_min		= 4
 /var/backups/dpkg.status.0: used in a passwd like program. The idea is simple: try to prevent
 /var/backups/dpkg.status.0:Depends: passwd, debconf (>= 0.5) | debconf-2.0
-
-
 ```
 
+
+
+```bash
+www-data@routerpanel:/var/www/html/myrouterpanel$ ls -la /usr/share/backup/backup.sh
+-rwxr-xr-x 1 www-data athena 258 May 28  2023 /usr/share/backup/backup.sh
+```
+
+```bash
+www-data@routerpanel:/var/www/html/myrouterpanel$cat /usr/share/backup/backup.sh
+#!/bin/bash
+
+backup_dir_zip=~/backup
+
+mkdir -p "$backup_dir_zip"
+
+cp -r /home/athena/notes/* "$backup_dir_zip"
+
+zip -r "$backup_dir_zip/notes_backup.zip" "$backup_dir_zip"
+
+rm /home/athena/backup/*.txt
+rm /home/athena/backup/*.sh
+
+echo "Backup completed..."
+```
 
 ```bash
 
