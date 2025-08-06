@@ -25,7 +25,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/detect
 
 <br>
 
-<p>2.2. What file extension is commonly used for web shells targeting Microsoft Exchange?</p>
+<p>2.2. What file extension is commonly used for web shells targeting Microsoft Exchange?<br>
 <code>.aspx</code></p>
 
 <br>
@@ -141,7 +141,7 @@ Note that each request shares the same client IP and user agent. Response codes 
 <p><em>Answer the questions below</em></p>
 
 <p>4.1. What is the part of the URL that associates values to parameters and can be a valuable indicator of web shell activity?<br>
-<code><query strings/code></p>
+<code>query strings</code></p>
 
 <br>
 
