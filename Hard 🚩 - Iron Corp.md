@@ -86,8 +86,8 @@ PORT      STATE SERVICE
 - <code>&nbsp;&nbsp;&nbsp;53</code> : domain?<br>
 - <code>&nbsp;&nbsp;135</code> : msrpc : Microsoft Windows RPC<br>
 - <code>&nbsp;3389</code> : ms-wbt-server : Microsoft Terminal Services<br>
-- <code>&nbsp;&nbsp;5985</code> : http : Microsoft-HTTPAPI/2.0<br>
-- <code>&nbsp;&nbsp;8080</code> : http : Microsoft-IIS/10.0<br>
+- <code>;&nbsp;5985</code> : http : Microsoft-HTTPAPI/2.0<br>
+- <code>&nbsp;8080</code> : http : Microsoft-IIS/10.0<br>
 - <code>11025</code> : http : syn-ack Apache httpd 2.4.41 : TRACE<br>
 - <code>49667</code> : msrpc : Microsoft Windows RPC<br>
 - <code>49670</code> : msrpc : Microsoft Windows RPC</p>
