@@ -163,7 +163,7 @@ PORT      STATE SERVICE       REASON  VERSION
 
 <h3>dirb</h3>
 <br>
-<p>xx.xxx.xx.xxx:11025
+<p>xx.xxx.xx.xxx:<code>8080</code><br>
 
 - /index.html<br>
 - /assets/ <br>
@@ -233,12 +233,31 @@ PORT      STATE SERVICE       REASON  VERSION
 ```
 
 <br>
-<p>xx.xxx.xx.xxx:11025<<br>
+<p>xx.xxx.xx.xxx:<code>11025</code><br>
  
--
-
-
-</p>
+- /aux<br>
+- /cgi-bin/<br>
+- /com1<br>
+- /com2<br>
+- /com3<br>
+- /con<br>
+- /css/<br>
+- /img/<br>
+- /examples<br>
+- /index.html<br>
+- /js/<br>
+- /license<br>
+- /LICENSE<br>
+- /licenses<br>
+- /lpt1<br>
+- /lpt2<br>
+- /nul<br>
+- /phpmyadmin<br>
+- /prn<br>
+- /server-info<br>
+- /server-status<br>
+- /vendor/<br>
+- /webalizer</p>
 
 ```bash
 :~/IronCorp# dirb http://xx.xxx.xx.xxx:11025
