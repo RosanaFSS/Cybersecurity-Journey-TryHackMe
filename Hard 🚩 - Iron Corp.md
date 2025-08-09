@@ -348,7 +348,7 @@ TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 - ironcorp.me:8080<br>
 ----- <code>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</code><br>
-- internal.ironcorp.me:8080 --> <br>
+- internal.ironcorp.me:8080<br>
 ----- <code>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</code><br>
 ----- <code>/assets/js/pace.min.js</code> : 200<br>
 ----- <code>/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css</code> : 400<br>
@@ -364,15 +364,9 @@ TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ----- <code> /assets/js/index.js</code> : 200<br>
 - admin.ironcorp.me:11025 --> Authentication required!<br>
 ----- Authorization: Basic <code>YWRtaW46YWRtaW4=</code> = <code>admin</code> : <code>admin</code> == Authentication required!<br>
------ Authorization: Basic <code>YWRtaW46cGFzc3dvcmQxMjM=</code> = <code>admin</code> : <code>password123</code< == Hello<br>
+----- Authorization: Basic <code>YWRtaW46cGFzc3dvcmQxMjM=</code> = <code>admin</code> : <code>password123</code> == Hello<br>
 ---------- Response = <code>method="GET"</code>, <code>action="#"</code>, <code>name="r"</code>, <code>type="submit"</code><br>
----------- Search = <code>ls</code> = 200 OK = <code>/?r=ls#</code><br>
-
-
-
-
-
-</p>
+---------- Search = <code>ls</code> = 200 OK = <code>/?r=ls#</code></p>
 
 
 <h3>ironcorp.me:8080</h3>
