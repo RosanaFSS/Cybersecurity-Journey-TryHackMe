@@ -380,10 +380,43 @@ TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
 <img width="1134" height="716" alt="image" src="https://github.com/user-attachments/assets/fd1b1996-a020-4c34-9190-6589b44f9e86" />
 
 <br>
+<br>
 
 <img width="1127" height="680" alt="image" src="https://github.com/user-attachments/assets/805b1a3a-f6f2-444b-b08c-7eaff6955d20" />
 
 <br>
+<h3>Search = <code>http://internal.ironcorp.me:8080</code></h3>
+
+<img width="1130" height="671" alt="image" src="https://github.com/user-attachments/assets/b4f5eb98-454c-472f-bf4a-fa24fc4b34f5" />
+
+<br>
+<h3>Search = <code>http://internal.ironcorp.me:11025</code></h3>
+
+<img width="1129" height="202" alt="image" src="https://github.com/user-attachments/assets/820f7a68-76bb-45c2-a6b9-f4aa6cf3167a" />
+
+<br>
+<br>
+
+<img width="966" height="243" alt="image" src="https://github.com/user-attachments/assets/060e069b-f1c9-491f-ad0c-0864b2baa3fd" />
+
+<br>
+<br>
+
+<img width="1129" height="325" alt="image" src="https://github.com/user-attachments/assets/52facf0a-9ba8-4576-96fc-37caa817e1ca" />
+
+<p>
+ 
+- http://internal.ironcorp.me:11025/name.php?name=</p>
+
+
+<img width="678" height="231" alt="image" src="https://github.com/user-attachments/assets/141cfcae-1816-4f1c-83c7-ad01b8137582" />
+
+<p>
+ 
+- http://internal.ironcorp.me:11025/name.php?name=hi</p>
+
+<img width="1245" height="340" alt="image" src="https://github.com/user-attachments/assets/2a30456e-3b84-4a54-a88f-8717b2c96d9d" />
+
 
 
 
