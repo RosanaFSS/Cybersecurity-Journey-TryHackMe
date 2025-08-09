@@ -137,7 +137,7 @@ TargetIP  fusion.corp
 
 <br>
 
-<h3>Web 80</h3>h3>
+<h3>Web 80</h3>
 
 <img width="1128" height="557" alt="image" src="https://github.com/user-attachments/assets/9eb3903a-b03f-4de9-b829-08b77d6b847f" />
 
@@ -304,7 +304,6 @@ Info: Establishing connection to remote endpoint
 
 <br>
 
-
 ```bash
 *Evil-WinRM* PS C:\Users\lparker\Desktop> dir
 
@@ -349,12 +348,11 @@ Mandatory Label\Medium Plus Mandatory Level Label            S-1-16-8448
 
 <br>
 
-<h3>l</h3>
+<h3>ldapdomaindump</h3>
 
 ```bash
 ldapdomaindump $IP -u 'fusion.corp\lparker' -p '****************' --no-json --no-grep
 ```
-
 
 <br>
 
