@@ -368,12 +368,13 @@ TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ---------- Response = <code>method="GET"</code>, <code>action="#"</code>, <code>name="r"</code>, <code>type="submit"</code><br>
 ---------- Search = <code>ls</code> = 200 OK = <code>/?r=ls#</code></p>
 
-
+<br>
+<br>
 <h3>ironcorp.me:8080</h3>
 
 <img width="1126" height="716" alt="image" src="https://github.com/user-attachments/assets/f85ee496-57c0-4e3e-b1d8-77c9613c3dc1" />
 
-
+<br>
 <h3>admin.ironcorp.me:11025</h3>
 
 <img width="1125" height="345" alt="image" src="https://github.com/user-attachments/assets/ab6aab11-a423-4104-80e6-c4c7b7f31eb4" />
