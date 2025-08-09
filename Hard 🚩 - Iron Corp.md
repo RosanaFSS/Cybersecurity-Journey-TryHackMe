@@ -1,16 +1,17 @@
 <h1 align="center">Iron Corp</h1>
-<p align="center">July 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>Can you get access to Iron Corp's system?</em>.<br>
-<img width="80px" src="https://github.com/user-attachments/assets/b3ed0f80-a066-4e1e-9f3a-1beb3be2e98c"><br>
-Click <a href="https://tryhackme.com/room/ironcorp">here </a>to access this TryHackMe CTF.<br>
-<img width="1200px" src=""></p>
-
-
-
+<p align="center">2025, August 9<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>460</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Can you get access to Iron Corp's system?</em>?<br>
+<img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
+Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironcorp">here </a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/b7cf893f-e0ad-4b8e-9f53-46b54516f860"></p>
 
 <br>
 
-<h2>Task 1 .Flags</h2>
+<p align="center">Practice <code>nmap</code>, <code>rustscan</code>, <code>dirb</code>, </p>
+
+<br>
+
+<h2>Task 1 . Iron Corp</h2>
 <p>Iron Corp suffered a security breach not long time ago.<br>
 
 You have been chosen by Iron Corp to conduct a penetration test of their asset. They did system hardening and are expecting you not to be able to access their system.<br>
@@ -19,9 +20,13 @@ The asset in scope is: ironcorp.me<br>
 
 Note: Edit your config file and add ironcorp.me<br>
 
-Note 2: It might take around 5-7 minutes for the VM to fully boot, so please be patient.</p>
+Note 2: It might take around 5-7 minutes for the VM to fully boot, so please be patient.<br>
+
+Happy hacking!</p>
 
 <p><em>Answer the questions below</em></p>
+
+<br>
 
 <p>1.1. user.txtbr>
 <code>_____</code></p>
@@ -40,8 +45,7 @@ Note 2: It might take around 5-7 minutes for the VM to fully boot, so please be 
 TargetIP     ironcorp.me
 ```
 
-
-<h3>Nmap</h3>
+<h3>nmap</h3>
 
 ```bash
 :~/IronCorp# nmap -p- -vv ironcorp.me
@@ -57,8 +61,10 @@ PORT      STATE SERVICE       REASON
 49670/tcp open  unknown       syn-ack ttl 128
 ```
 
+<br>
+
 ```bash
-:~/IronCorp# nmap -sS -Pn -p- -T5 ironcorp.me
+:~/IronCorp# nmap -sS -Pn -p- ironcorp.me
 ...
 PORT      STATE SERVICE
 53/tcp    open  domain
@@ -71,90 +77,24 @@ PORT      STATE SERVICE
 49670/tcp open  unknown
 ```
 
+<br>
+
+<h3>rustscan</h3>
+
+<p>
+ 
+- <code>&nbsp;&nbsp;&nbsp;53</code> : domain?<br>
+- <code>&nbsp;&nbsp;135</code> : msrpc : Microsoft Windows RPC<br>
+- <code>&nbsp;3389</code> : ms-wbt-server : Microsoft Terminal Services<br>
+- <code>&nbsp;&nbsp;5985</code> : http : Microsoft-HTTPAPI/2.0<br>
+- <code>&nbsp;&nbsp;8080</code> : http : Microsoft-IIS/10.0<br>
+- <code>11025</code> : http : syn-ack Apache httpd 2.4.41 : TRACE<br>
+- <code>49667</code> : msrpc : Microsoft Windows RPC<br>
+- <code>49670</code> : msrpc : Microsoft Windows RPC</p>
+
 ```bash
-:~/IronCorp# rustscan -a xx.xx.xx.xxx --ulimit 5000 -b 65535 -- -A -Pn
+:~/IronCorp# rustscan -a xx.xx.xx.xxx --ulimit 5500 -b 65535 -- -A -Pn
 ...
-PORT      STATE SERVICE
-53/tcp    open  domain
-135/tcp   open  msrpc
-3389/tcp  open  ms-wbt-server
-5985/tcp  open  wsman
-8080/tcp  open  http-proxy
-11025/tcp open  unknown
-49667/tcp open  unknown
-49670/tcp open  unknown
-```
-
-```bash
-:~/IronCorp# rustscan -a 10.10.27.103 --ulimit 5500 -b 65535 -- -A -Pn
-.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
-| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
-| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
-`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
-The Modern Day Port Scanner.
-________________________________________
-: https://discord.gg/GFrQsGy           :
-: https://github.com/RustScan/RustScan :
- --------------------------------------
-Nmap? More like slowmap.\U0001f422
-
-[~] The config file is expected to be at "/home/rustscan/.rustscan.toml"
-[~] Automatically increasing ulimit value to 5500.
-[!] File limit is lower than default batch size. Consider upping with --ulimit. May cause harm to sensitive servers
-Open 10.10.27.103:53
-Open 10.10.27.103:135
-Open 10.10.27.103:3389
-Open 10.10.27.103:5985
-Open 10.10.27.103:8080
-Open 10.10.27.103:11025
-Open 10.10.27.103:49670
-Open 10.10.27.103:49667
-[~] Starting Script(s)
-[>] Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
-
-[~] Starting Nmap 7.80 ( https://nmap.org ) at 2025-08-01 01:16 UTC
-NSE: Loaded 151 scripts for scanning.
-NSE: Script Pre-scanning.
-NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 01:16
-Completed NSE at 01:16, 0.00s elapsed
-NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 01:16
-Completed NSE at 01:16, 0.00s elapsed
-NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 01:16
-Completed NSE at 01:16, 0.00s elapsed
-Initiating Parallel DNS resolution of 1 host. at 01:16
-Completed Parallel DNS resolution of 1 host. at 01:16, 0.00s elapsed
-DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
-Initiating Connect Scan at 01:16
-Scanning ip-10-10-27-103.eu-west-1.compute.internal (10.10.27.103) [8 ports]
-Discovered open port 135/tcp on 10.10.27.103
-Discovered open port 53/tcp on 10.10.27.103
-Discovered open port 8080/tcp on 10.10.27.103
-Discovered open port 3389/tcp on 10.10.27.103
-Discovered open port 49670/tcp on 10.10.27.103
-Discovered open port 49667/tcp on 10.10.27.103
-Discovered open port 5985/tcp on 10.10.27.103
-Discovered open port 11025/tcp on 10.10.27.103
-Completed Connect Scan at 01:16, 0.24s elapsed (8 total ports)
-Initiating Service scan at 01:16
-Scanning 8 services on ip-10-10-27-103.eu-west-1.compute.internal (10.10.27.103)
-Completed Service scan at 01:19, 143.62s elapsed (8 services on 1 host)
-NSE: Script scanning 10.10.27.103.
-NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 01:19
-Completed NSE at 01:19, 14.45s elapsed
-NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 01:19
-Completed NSE at 01:19, 1.21s elapsed
-NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 01:19
-Completed NSE at 01:19, 0.00s elapsed
-Nmap scan report for ip-10-10-27-103.eu-west-1.compute.internal (10.10.27.103)
-Host is up, received user-set (0.22s latency).
-Scanned at 2025-08-01 01:16:57 UTC for 160s
-
 PORT      STATE SERVICE       REASON  VERSION
 53/tcp    open  domain?       syn-ack
 | fingerprint-strings: 
@@ -170,14 +110,14 @@ PORT      STATE SERVICE       REASON  VERSION
 |   DNS_Domain_Name: WIN-8VMBKF3G815
 |   DNS_Computer_Name: WIN-8VMBKF3G815
 |   Product_Version: 10.0.14393
-|_  System_Time: 2025-08-01T01:19:21+00:00
+|_  System_Time: 2025-xx-xxTxx:xx:xx+00:00
 | ssl-cert: Subject: commonName=WIN-8VMBKF3G815
 | Issuer: commonName=WIN-8VMBKF3G815
 | Public Key type: rsa
 | Public Key bits: 2048
 | Signature Algorithm: sha256WithRSAEncryption
-| Not valid before: 2025-07-31T00:48:43
-| Not valid after:  2026-01-30T00:48:43
+| Not valid before: 2025-xx-xxTxx:xx:xx
+| Not valid after:  2026-xx-xxTxx:xx:xx
 | MD5:   9278 1461 c030 09f6 3d60 0acd 12e5 d20a
 | SHA-1: 56dc 8460 f7cf 4a05 fe76 7c81 3ba1 2e21 3eda 2b85
 | -----BEGIN CERTIFICATE-----
@@ -198,7 +138,7 @@ PORT      STATE SERVICE       REASON  VERSION
 | eqDo7JphpRmrTFVMEevsUfG4CIQFesyvPxtC0OSiSnC7c38isAuokbAAB/wvfXMv
 | DhIOctQDwqctVRPklaMvpydWlkMnOQ==
 |_-----END CERTIFICATE-----
-|_ssl-date: 2025-08-01T01:19:35+00:00; -1s from scanner time.
+|_ssl-date: 2025-xx-xxTxx:xx:xx+00:00; -1s from scanner time.
 5985/tcp  open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
 |_http-server-header: Microsoft-HTTPAPI/2.0
 |_http-title: Not Found
@@ -219,12 +159,149 @@ PORT      STATE SERVICE       REASON  VERSION
 49670/tcp open  msrpc         syn-ack Microsoft Windows RPC
 ```
 
-<h3>dig</h3>
+<br>
+
+<h3>dirb</h3>
+<br>
+<p>xx.xxx.xx.xxx:11025
+
+- /index.html<br>
+- /assets/ <br>
+- /assets/css/<br>
+- /assets/flags/<br>
+- /assets/flags/1x1/<br>
+- /assets/fonts/<br>
+- /assets/images/ <br>
+- /assets/images/gallery/<br>
+- /assets/images/timeline/<br>
+- /assets/images/favicon.ico<br>
+- /assets/Images/<br>
+- /assets/Images/gallery/<br>
+- /assets/Images/timeline/<br>
+- /assets/js/<br>
+- /assets/plugins/</p>
 
 ```bash
-:~/IronCorp# dig axfr ironcorp.me @10.10.248.146
+:~/IronCorp# dirb http://xx.xxx.xx.xxx:8080
+...                                                        
 
-; <<>> DiG 9.18.28-0ubuntu0.20.04.1-Ubuntu <<>> axfr ironcorp.me @10.10.248.146
+---- Scanning URL: http://xx.xxx.xx.xxx:8080/ ----
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/                                                                                                                                                                                           
++ http://xx.xxx.xx.xxx:8080/index.html (CODE:200|SIZE:20040)                                                                                                                                                                               
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/ ----
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/css/                                                                                                                                                                                       
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/flags/                                                                                                                                                                                     
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/fonts/                                                                                                                                                                                     
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/images/                                                                                                                                                                                    
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/Images/                                                                                                                                                                                    
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/js/                                                                                                                                                                                        
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/plugins/                                                                                                                                                                                   
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/css/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/flags/ ----
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/flags/1x1/                                                                                                                                                                                 
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/fonts/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/images/ ----
++ http://xx.xxx.xx.xxx:8080/assets/images/favicon.ico (CODE:200|SIZE:1150)                                                                                                                                                                 
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/images/gallery/                                                                                                                                                                            
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/images/timeline/                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/Images/ ----
++ http://xx.xxx.xx.xxx:8080/assets/Images/favicon.ico (CODE:200|SIZE:1150)                                                                                                                                                                 
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/Images/gallery/                                                                                                                                                                            
+==> DIRECTORY: http://xx.xxx.xx.xxx:8080/assets/Images/timeline/                                                                                                                                                                           
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/js/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/plugins/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/flags/1x1/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/images/gallery/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/images/timeline/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/Images/gallery/ ----
+                                                                                                                                                                                                                                           
+---- Entering directory: http://xx.xxx.xx.xxx:8080/assets/Images/timeline/ ----
+                                                                                                                                                                                                                                           
+-----------------
+```
+
+<br>
+<p>xx.xxx.xx.xxx:11025<<br>
+ 
+-
+
+
+</p>
+
+```bash
+:~/IronCorp# dirb http://xx.xxx.xx.xxx:11025
+...
+---- Scanning URL: http://xx.xxx.xx.xxx:11025/ ----
++ http://xx.xxx.xx.xxx:11025/aux (CODE:403|SIZE:1047)                                                                                                              
++ http://xx.xxx.xx.xxx:11025/cgi-bin/ (CODE:403|SIZE:1061)                                                                                                         
++ http://xx.xxx.xx.xxx:11025/com1 (CODE:403|SIZE:1047)                                                                                                             
++ http://xx.xxx.xx.xxx:11025/com2 (CODE:403|SIZE:1047)                                                                                                             
++ http://xx.xxx.xx.xxx:11025/com3 (CODE:403|SIZE:1047)                                                                                                             
++ http://xx.xxx.xx.xxx:11025/con (CODE:403|SIZE:1047)                                                                                                              
+==> DIRECTORY: http://xx.xxx.xx.xxx:11025/css/                                                                                                                     
++ http://xx.xxx.xx.xxx:11025/examples (CODE:503|SIZE:1061)                                                                                                         
+==> DIRECTORY: http://xx.xxx.xx.xxx:11025/img/                                                                                                                     
++ http://xx.xxx.xx.xxx:11025/index.html (CODE:200|SIZE:2739)                                                                                                       
+==> DIRECTORY: http://xx.xxx.xx.xxx:11025/js/                                                                                                                      
++ http://xx.xxx.xx.xxx:11025/license (CODE:200|SIZE:1093)                                                                                                          
++ http://xx.xxx.xx.xxx:11025/LICENSE (CODE:200|SIZE:1093)                                                                                                          
++ http://xx.xxx.xx.xxx:11025/licenses (CODE:403|SIZE:1206)                                                                                                         
++ http://xx.xxx.xx.xxx:11025/lpt1 (CODE:403|SIZE:1047)                                                                                                             
++ http://xx.xxx.xx.xxx:11025/lpt2 (CODE:403|SIZE:1047)                                                                                                             
++ http://xx.xxx.xx.xxx:11025/nul (CODE:403|SIZE:1047)                                                                                                              
++ http://xx.xxx.xx.xxx:11025/phpmyadmin (CODE:403|SIZE:1047)                                                                                                       
++ http://xx.xxx.xx.xxx:11025/prn (CODE:403|SIZE:1047)                                                                                                              
++ http://xx.xxx.xx.xxx:11025/server-info (CODE:403|SIZE:1206)                                                                                                      
++ http://xx.xxx.xx.xxx:11025/server-status (CODE:403|SIZE:1206)                                                                                                    
+==> DIRECTORY: http://xx.xxx.xx.xxx:11025/vendor/                                                                                                                  
++ http://xx.xxx.xx.xxx:11025/webalizer (CODE:403|SIZE:1047)                                                                                                        
+                                                                                                                                                                   
+---- Entering directory: http://xx.xxx.xx.xxx:11025/css/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                                                                   
+---- Entering directory: http://xx.xxx.xx.xxx:11025/img/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                                                                   
+---- Entering directory: http://xx.xxx.xx.xxx:11025/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                                                                                                   
+---- Entering directory: http://xx.xxx.xx.xxx:11025/vendor/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                               
+-----------------
+```
+
+<br>
+
+<h3>dig</h3>
+
+<p>
+
+- <code>ironcorp.me</code>
+- <code>admin.ironcorp.me</code><br>
+- <code>internal.ironcorp.me</code>
+</p>
+
+```bash
+:~/IronCorp# dig axfr ironcorp.me @TargetIP
+
+; <<>> DiG 9.18.28-0ubuntu0.20.04.1-Ubuntu <<>> axfr ironcorp.me @TargetIP
 ;; global options: +cmd
 ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ironcorp.me.		3600	IN	NS	win-8vmbkf3g815.
@@ -232,20 +309,69 @@ admin.ironcorp.me.	3600	IN	A	127.0.0.1
 internal.ironcorp.me.	3600	IN	A	127.0.0.1
 ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ;; Query time: 480 msec
-;; SERVER: 10.10.248.146#53(10.10.248.146) (TCP)
+;; SERVER:TargetIP#53(TargetIP) (TCP)
 ;; WHEN: Fri Aug 01 03:53:39 BST 2025
 ;; XFR size: 5 records (messages 1, bytes 238)
 ```
+
+<br>
 <h3>/etc/hosts</h3>
 
-
 ```bash
-10.10.76.56 ironcorp.me admin.ironcorp.me internal.ironcorp.me
+TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
+
+<br>
+
+
+
+<p>
+
+- ironcorp.me:8080<br>
+----- <code>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</code><br>
+- internal.ironcorp.me:8080 --> <br>
+----- <code>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</code><br>
+----- <code>/assets/js/pace.min.js</code> : 200<br>
+----- <code>/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css</code> : 400<br>
+----- <code>/110x110</code> -<br>
+----- <code>/assets/js/jquery.min.js</code> 200<br>
+----- <code>/assets/plugins/simplebar/js/simplebar.js</code> : 200<br>
+----- <code>/assets/js/bootstrap.min.js</code> : 200<br>
+----- <code>/assets/js/popper.min.js</code> : 200<br>
+----- <code>assets/js/sidebar-menu.js</code> : 200<br>
+----- !!! <code>/assets/js/jquery.loading-indicator.js</code> : 404<br>
+----- <code>/assets/js/app-script.js</code> : 200<br>
+----- <code>/assets/plugins/Chart.js/Chart.min.js</code> : 200<br>
+----- <code> /assets/js/index.js</code> : 200<br>
+- admin.ironcorp.me:11025 --> Authentication required!<br>
+----- <code>Authorization: Basic <code>YWRtaW46YWRtaW4=</code> = <code>admin</code> : <code>admin</code> == Authentication required!<br>
+----- <code>Authorization: Basic <code>YWRtaW46cGFzc3dvcmQxMjM=</code> = <code>admin</code> : <code>password123</code< == Hello<br>
+---------- Response = <code>method="GET"</code>, <code>action="#"</code>, <code>name="r"</code>, <code>type="submit"</code><br>
+---------- Search = <code>hello</code> = 200 OK = <code>/?r=r%3Dhi%23</code><br>
+
+
+
+
+
+</p>
+
 
 <h3>ironcorp.me:8080</h3>
 
-<img width="1059" height="674" alt="image" src="https://github.com/user-attachments/assets/4c6a6b40-2ef8-4231-ab51-d61e07065034" />
+<img width="1126" height="716" alt="image" src="https://github.com/user-attachments/assets/f85ee496-57c0-4e3e-b1d8-77c9613c3dc1" />
+
+
+<h3>admin.ironcorp.me:11025</h3>
+
+<img width="1125" height="345" alt="image" src="https://github.com/user-attachments/assets/ab6aab11-a423-4104-80e6-c4c7b7f31eb4" />
+
+<br>
+
+<img width="1135" height="683" alt="image" src="https://github.com/user-attachments/assets/6ef0b3d3-6b20-48f1-aa3f-1fe7a4d2b77b" />
+
+
+
+
 
 <h3>ironcorp.me:8080/login.html</h3>
 
