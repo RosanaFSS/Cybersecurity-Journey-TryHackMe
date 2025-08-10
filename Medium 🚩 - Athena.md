@@ -450,7 +450,7 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 <p>
 
-- <code>ls -lah /home/athena</code< = <code>ls%20-lah%20/home/athena</code></p>
+- <code>ls -lah /home/athena</code> = <code>ls%20-lah%20/home/athena</code></p>
 
 <img width="898" height="272" alt="image" src="https://github.com/user-attachments/assets/4fa0d50f-9086-4b94-a7dd-a709252b3462" />
 
