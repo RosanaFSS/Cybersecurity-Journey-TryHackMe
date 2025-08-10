@@ -51,20 +51,20 @@ PORT   STATE SERVICE VERSION
 ```
 
 <br>
-<h3>/home.html | /login.html</h3>
+<h3><code>/home.html</code>, <code>login.html</code></h3>
 
 <p>
 
 - <code>/api/login</code><br>
 - <code>POST</code><br>
-- <code>Create Account</p>
+- <code>Create Account</code></p>
 
 <img width="1054" height="354" alt="image" src="https://github.com/user-attachments/assets/b49579ac-0469-4fe8-8d38-c0ffd4c9761f" />
 
 <img width="1051" height="133" alt="image" src="https://github.com/user-attachments/assets/7c91c3ec-a155-4b03-8305-bb70b9db54a1" />
 
 <br>
-<h3>Account A | create</h3>
+<h3>Accounts <code>A</code> and <code>B</code></h3>
 
 <img width="1019" height="354" alt="image" src="https://github.com/user-attachments/assets/61deb176-b3f1-462c-b975-3172abfa63a1" />
 
