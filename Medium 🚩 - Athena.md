@@ -6,7 +6,6 @@ Access the CTF<a href="https://tryhackme.com/room/4th3n4">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/ad972fbe-aeb4-473c-96ee-26b0a9070b49"></p>
 
 <br>
-<br>
 
 <h2>Task 1 . Athena</h2>
 <p>Are you capable of mastering the entire system and exploiting all vulnerabilities?<br>
