@@ -729,7 +729,7 @@ www-data@routerpanel:/dev/shm$ ./linpeas.sh
 
 <p>
 
-- <code>/usr/share/backup/backup.shM/code></p>
+- <code>/usr/share/backup/backup.sh</code></p>
 
 
 ```bash
