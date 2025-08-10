@@ -64,7 +64,7 @@ PORT   STATE SERVICE VERSION
 <img width="1051" height="133" alt="image" src="https://github.com/user-attachments/assets/7c91c3ec-a155-4b03-8305-bb70b9db54a1" />
 
 <br>
-<h3>Accounts <code>A</code> and <code>B</code></h3>
+<h3>Account <code>A</code></h3>
 
 <img width="1019" height="354" alt="image" src="https://github.com/user-attachments/assets/61deb176-b3f1-462c-b975-3172abfa63a1" />
 
@@ -111,7 +111,7 @@ Server: nginx/1.14.0 (Ubuntu)
 ```
 
 <br>
-<h3>Account A | login</h3>
+<h3><h3>Account <code>A</code></h3>, login</h3>
 
 <p><em>Request</em></p>
 
@@ -182,7 +182,7 @@ Welcome to Racetrack Bank! To get you started, we have given you 1 gold (how gen
 <img width="1054" height="235" alt="image" src="https://github.com/user-attachments/assets/7e6280ae-5a2b-4c69-aa85-1ef3ff26f977" />
 
 <br>
-<h3>Target | Site map</h3>
+<h3>Target, Site map</h3>
 <p>
 
 - <code>givegold</code></p>
@@ -191,7 +191,7 @@ Welcome to Racetrack Bank! To get you started, we have given you 1 gold (how gen
 
 
 <br>
-<h3>Account B | login</h3>
+<h3>Account <code>B</code></h3>
 
 <img width="1053" height="213" alt="image" src="https://github.com/user-attachments/assets/7b98d762-7c00-4f0a-8ddf-575aead22cfd" />
 
