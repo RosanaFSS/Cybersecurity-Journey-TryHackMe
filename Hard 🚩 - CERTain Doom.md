@@ -45,9 +45,9 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaind
 
 <p>
 
-- <code>&nbsp;&nbsp;22</code> &nbsp; : &nbsp; <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ssh</code> &nbsp; : &nbsp; <code>OpenSSH 8.0</code><br>
-- <code>&nbsp;&nbsp;80</code> &nbsp; : &nbsp; <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http</code> &nbsp; : &nbsp; <code>hastatic-1.0.0</code><br>
-- <code>8080</code>           &nbsp; : &nbsp; <code>http-proxy</code> &nbsp; : <code>Apache Tomcat 97</code></p>
+- <code>&nbsp;&nbsp;22</code> &nbsp; : &nbsp; <code>ssh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> &nbsp; : &nbsp; <code>OpenSSH 8.0</code><br>
+- <code>&nbsp;&nbsp;80</code> &nbsp; : &nbsp; <code>http&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code> &nbsp; : &nbsp; <code>hastatic-1.0.0</code><br>
+- <code>8080</code>           &nbsp; : &nbsp; <code>http-proxy</code> &nbsp; : <code> &nbsp; Apache Tomcat 97</code></p>
 
 ```bash
 :~/CERTainDoom# nmap -sC -sV -Pn -n -p- -T4 xx.xxx.xxx.xxx
