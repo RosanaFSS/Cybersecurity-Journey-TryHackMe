@@ -44,6 +44,13 @@ Use Sonic Visualizer to analyze the audio.</p>
 
 <br>
 
+<br>
+
+```bash
+$ sudo apt-get install sonic-visualiser
+```
+
+
 <img width="1916" height="1028" alt="image" src="https://github.com/user-attachments/assets/cf94ad73-b965-4964-8807-ebad25eb3ac8" />
 
 <br><br>
@@ -154,11 +161,15 @@ find the hidden message inside of the image file.</p>
 <p>4.2. What link is given? Hint : Base64<br>
 <code>https://imgur.com/a/c0ZSZga</code></p>
 
+<br>
+
 ```bash
 $ steghide extract -sf welcome.jpg
 Enter passphrase:
 wrote extracted data to "invitation.txt".
 ```
+
+<br>
 
 ```bash
 $ cat invitation.txt
@@ -167,11 +178,157 @@ https://imgur.com/a/c0ZSZga
 
 <br>
 <h2>Task 5 . FInd Hidden Files</h2>
+<p>I am surprised you have made it this far...<br>
+
+I doubt you will make it any further.<br>
+
+-3301<br>
+
+Use Stego tools to find the hidden files inside of the image</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>5.1. Using stego tools find the hidden file inside of the image Hint : Use the same tool used to extract data in the original Cicada challenges<br>
+<code>No answer needed</code></p>
+
 <br>
 
+<p>5.2. What tool did you use to find the hidden file.<br>
+<code>outguess</code></p>
+
+<br>
+
+<p>
+
+- navigated to the linked discovered in the previous task<br>
+- downloaded the image<br>
+- used outguess</p>
+
+<br>
+
+<img width="1126" height="666" alt="image" src="https://github.com/user-attachments/assets/28fb2975-0aee-474c-a364-86cdd8567ac9" />
+
+<br>
+
+```bash
+$ sudo apt-get install outguess
+```
+
+<br>
+
+```bash
+$ outguess -r Imgur.jpg outputmessage
+Reading Imgur.jpg....
+Extracting usable bits:   29035 bits
+Steg retrieve: seed: 38, len: 1351
+```
+
+<br>
+
+```bash
+$ cat outputmessage
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Welcome again.
+
+Here is a book code.  To find the book, break this hash:
+
+b6a233fb9b2d8772b636ab581169b58c98bd4b8df25e452911ef75561df649edc8852846e81837136840f3aa453e83d86323082d5b6002a16bc20c1560828348
+
+Use positive integers to go forward in the text use negative integers to go backwards in the text.
+
+I:1:6
+I:2:15
+I:3:26
+I:5:4
+I:6:15
+I:10:26
+/
+/
+I:13:5
+I:13:1
+I:14:7
+I:3:29
+I:19:8
+I:22:25
+/
+I:23:-1
+I:19:-1
+I:2:21
+I:5:9
+I:24:-2
+I:22:1
+I:38:1
+
+
+Good luck.
+
+3301
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQIcBAEBAgAGBQJQ5QoZAAoJEBgfAeV6NQkPf2IQAKWgwI5EC33Hzje+YfeaLf6m
+sLKjpc2Go98BWGReikDLS4PpkjX962L4Q3TZyzGenjJSUAEcyoHVINbqvK1sMvE5
+9lBPmsdBMDPreA8oAZ3cbwtI3QuOFi3tY2qI5sJ7GSfUgiuI6FVVYTU/iXhXbHtL
+boY4Sql5y7GaZ65cmH0eA6/418d9KL3Qq3qkTcM/tRAHhOZFMZfT42nsbcvZ2sWi
+YyrAT5C+gs53YhODxEY0T9M2fam5AgUIWrMQa3oTRHSoNAefrDuOE7YtPy40j7kk
+5/5RztmAzeEdRd8QS1ktHMezXEhdDP/DEdIJCLT5eA27VnTY4+x1Ag9tsDFuitY4
+2kEaVtCrf/36JAAwEcwOg2B/stdjXe10RHFStY0N9wQdReW3yAOBohvtOubicbYY
+mSCS1Bx91z7uYOo2QwtRaxNs69beSSy+oWBef4uTir8Q6WmgJpmzgmeG7ttEHquj
+69CLSOWOm6Yc6qixsZy7ZkYDrSVrPwpAZdEXip7OHST5QE/Rd1M8RWCOODba16Lu
+URKvgl0/nZumrPQYbB1roxAaCMtlMoIOvwcyldO0iOQ/2iD4Y0L4sTL7ojq2UYwX
+bCotrhYv1srzBIOh+8vuBhV9ROnf/gab4tJII063EmztkBJ+HLfst0qZFAPHQG22
+41kaNgYIYeikTrweFqSK
+=Ybd6
+-----END PGP SIGNATURE-----
+```
+
+<br>
 
 <h2>Task 6 . Book Cipher</h2>
+<p></p>We have one last challenge to find our individuals<br>
+
+Find the last clue, crack the hash, decipher the message<br>
+
+Good Luck<br>
+
+-3301<BR>
+
+Use Hash cracking tools to reveal the text to the text<br>
+
+Use methods like Cicada to decipher the message</p>
 <br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>6.1. Crack the Hash<br>
+<code>No answer needed</code></p>
+
+<br>
+
+<p>6.2.What is the Hash type? Hint : SHA... Figure out the rest<br>
+<code>SHA512</code></p>
+
+<br>
+
+```bash
+$ sudo apt-get install hashid
+```
+
+```bash
+$ hashid b6a233fb9b2d8772b636ab581169b58c98bd4b8df25e452911ef75561df649edc8852846e81837136840f3aa453e83d86323082d5b6002a16bc20c1560828348
+Analyzing 'b6a233fb9b2d8772b636ab581169b58c98bd4b8df25e452911ef75561df649edc8852846e81837136840f3aa453e83d86323082d5b6002a16bc20c1560828348'
+[+] SHA-512
+[+] Whirlpool
+[+] Salsa10
+[+] Salsa20
+[+] SHA3-512
+[+] Skein-512
+[+] Skein-1024(512)
+```
+
 
 
 <h2>Task 7 . The Final Song</h2>
