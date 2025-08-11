@@ -379,8 +379,12 @@ $ sudo apt-get install hashid
 - ...
 </p>
 
+<br>
+
 <p>
+  
 Chapter I<br>
+
 1. Had! T<code>h</code>e manifestation of Nuit.<br>
  
 2. The unveiling of <code>t</code>he company of heaven.<br>
