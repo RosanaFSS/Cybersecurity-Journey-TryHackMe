@@ -24,7 +24,7 @@ PORT     STATE SERVICE     VERSION
 
 <br>
 <h2 align="center">2025, August</h2>
-<div align="center"><h6>
+<div align="left"><p>
 
 |nmap                                                       |
 |:---------------------------------------------------------:|
@@ -49,5 +49,5 @@ PORT     STATE SERVICE     VERSION
 
 <br>|
 
-</h6></div><br>
+</p></div><br>
 
