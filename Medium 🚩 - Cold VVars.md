@@ -26,8 +26,8 @@ PORT     STATE SERVICE     VERSION
 <h2 align="center">2025, August</h2>
 <div align="center"><h6>
 
-|nmap                                                       |gobuster                                                   |
-|:---------------------------------------------------------:|:---------------------------------------------------------:|
+|nmap                                                       |
+|:---------------------------------------------------------:|
 |
 
 <br>
@@ -47,7 +47,7 @@ PORT     STATE SERVICE     VERSION
 |_http-title: Site doesn't have a title (text/html; charset=UTF-8).
 ```
 
-<br>|                                                   |
+<br>|
 
 </h6></div><br>
 
