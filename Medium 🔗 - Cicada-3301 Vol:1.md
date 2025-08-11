@@ -373,9 +373,9 @@ $ sudo apt-get install hashid
 
 <p>
 
-- <code>I:1:6</code> = <code>1.</code>, <code>6</code>th character<br> = <code>h</code><br>
-- <code>I:2:15</code> = <code>2.</code>, <code>15</code>th character<br> = <code>t</code><br>
-- <code>I:3:26</code> = <code>3.</code>, <code>26</code>th character<br> = <code>t</code><br>
+- <code>I:1:6</code> = <code>1.</code>, <code>6</code>th character = <code>h</code><br>
+- <code>I:2:15</code> = <code>2.</code>, <code>15</code>th character = <code>t</code><br>
+- <code>I:3:26</code> = <code>3.</code>, <code>26</code>th character = <code>t</code><br>
 - ...
 </p>
 
