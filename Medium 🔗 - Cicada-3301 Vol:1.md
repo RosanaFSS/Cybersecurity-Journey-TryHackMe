@@ -125,11 +125,11 @@ Cicada
 
 <img width="461" height="118" alt="image" src="https://github.com/user-attachments/assets/4a1bb106-9ae4-4dac-ae3a-985e4547f000" />
 
-<br>
+<br><br>
 
 <img width="436" height="259" alt="image" src="https://github.com/user-attachments/assets/be2883a4-9e97-4f37-9e48-adbb9734c3e3" />
 
-<br>
+<br><br>
 
 <img width="358" height="311" alt="image" src="https://github.com/user-attachments/assets/65015a08-87c1-4fa9-b583-336a0c073e82" />
 
