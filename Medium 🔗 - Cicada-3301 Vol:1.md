@@ -269,15 +269,7 @@ Good luck.
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQIcBAEBAgAGBQJQ5QoZAAoJEBgfAeV6NQkPf2IQAKWgwI5EC33Hzje+YfeaLf6m
-sLKjpc2Go98BWGReikDLS4PpkjX962L4Q3TZyzGenjJSUAEcyoHVINbqvK1sMvE5
-9lBPmsdBMDPreA8oAZ3cbwtI3QuOFi3tY2qI5sJ7GSfUgiuI6FVVYTU/iXhXbHtL
-boY4Sql5y7GaZ65cmH0eA6/418d9KL3Qq3qkTcM/tRAHhOZFMZfT42nsbcvZ2sWi
-YyrAT5C+gs53YhODxEY0T9M2fam5AgUIWrMQa3oTRHSoNAefrDuOE7YtPy40j7kk
-5/5RztmAzeEdRd8QS1ktHMezXEhdDP/DEdIJCLT5eA27VnTY4+x1Ag9tsDFuitY4
-2kEaVtCrf/36JAAwEcwOg2B/stdjXe10RHFStY0N9wQdReW3yAOBohvtOubicbYY
-mSCS1Bx91z7uYOo2QwtRaxNs69beSSy+oWBef4uTir8Q6WmgJpmzgmeG7ttEHquj
-69CLSOWOm6Yc6qixsZy7ZkYDrSVrPwpAZdEXip7OHST5QE/Rd1M8RWCOODba16Lu
+...
 URKvgl0/nZumrPQYbB1roxAaCMtlMoIOvwcyldO0iOQ/2iD4Y0L4sTL7ojq2UYwX
 bCotrhYv1srzBIOh+8vuBhV9ROnf/gab4tJII063EmztkBJ+HLfst0qZFAPHQG22
 41kaNgYIYeikTrweFqSK
@@ -308,7 +300,7 @@ Use methods like Cicada to decipher the message</p>
 
 <br>
 
-<p>6.2.What is the Hash type? Hint : SHA... Figure out the rest<br>
+<p>6.2. What is the Hash type? Hint : SHA... Figure out the rest<br>
 <code>SHA512</code></p>
 
 <br>
@@ -316,6 +308,8 @@ Use methods like Cicada to decipher the message</p>
 ```bash
 $ sudo apt-get install hashid
 ```
+
+<br>
 
 ```bash
 $ hashid b6a233fb9b2d8772b636ab581169b58c98bd4b8df25e452911ef75561df649edc8852846e81837136840f3aa453e83d86323082d5b6002a16bc20c1560828348
@@ -330,6 +324,81 @@ Analyzing 'b6a233fb9b2d8772b636ab581169b58c98bd4b8df25e452911ef75561df649edc8852
 ```
 
 
+<br>
+
+<p>6.3. What is the Link from the hash? Hint : Answer is not in conventional wordlists, try an online service<br>
+<code>https://pastebin.com/6FNiVLh5</code></p>
+
+<br>
+
+```bash
+$ sudo apt-get install hashid
+```
+
+<p>
+
+- navigated to https://md5hashing.net/hash/sha512<br>
+- pasted the hash in <code>Reverse sha512 decoder</code><br>
+- clicked <code>Decode!</code></p>
+
+<br>
+
+<img width="1605" height="477" alt="image" src="https://github.com/user-attachments/assets/e25b63be-ea7b-4a4c-9364-09da1e28c6e2" />
+
+<br>
+
+<p>6.4. Decipher the message. Hint : Use the same techniques the Cicada participants used<br>
+<code>No need to answer</code></p>
+
+<br>
+
+<p>
+
+- navigated to the link discovered in the previous step
+</p>
+
+<img width="1214" height="876" alt="image" src="https://github.com/user-attachments/assets/1fb6f362-d385-47cc-81ec-048aa6ddec11" />
+
+
+<br>
+
+<p>6.5. What is the link?<br>
+<code>https://bit.ly/39pw2NH</code></p>
+
+<br>
+
+
+<p>
+
+- <code>I:1:6<code> = <code>1.</code>, <code>6</code>th character<br> = <code>h</code><br>
+- <code>I:2:15<code> = <code>2.</code>, <code>15</code>th character<br> = <code>t</code><br>
+- <code>I:3:26<code> = <code>3.</code>, <code>26</code>th character<br> = <code>t</code><br>
+- ...
+</p>
+
+<p>
+Chapter I<br>
+1. Had! T<code>h</code>e manifestation of Nuit.<br>
+ 
+2. The unveiling of <code>t</code>he company of heaven.<br>
+ 
+3. Every man and every woman is a s<code>t</code>ar.<br>
+ 
+4. Every number is infinite; there is no difference.<br>
+ 
+5. Hel<code>p</code> me, o warrior lord of Thebes, in my unveiling before the Children of men!<br>
+ 
+6. Be thou Hadit, my <code>s</code>ecret centre, my heart & my tongue!<br>
+ 
+7. Behold! it is revealed by Aiwass the minister of Hoor-paar-kraat.<br>
+ 
+8. The Khabs is in the Khu, not the Khu in the Khabs.<br>
+ 
+9. Worship then the Khabs, and behold my light shed over you!<br>
+ 
+10. Let my servants be few & secret<code>:</code> they shall rule the many & the known.</p>
+
+<br>
 
 <h2>Task 7 . The Final Song</h2>
 <br>
