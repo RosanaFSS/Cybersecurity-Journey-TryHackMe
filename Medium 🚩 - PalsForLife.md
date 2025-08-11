@@ -45,6 +45,25 @@ Source: https://hearthstone.fandom.com/wiki/Leeroy_Jenkins</p>
 <br>
 <h3>nmap</h3>
 
+<br>
+
+<p><code>&nbsp;&nbsp;&nbsp;22</code> &nbsp; : &nbsp; <code>ssh</code> &nbsp; : &nbsp; <code>OpenSSH 7.6p1 Ubuntu 4ubuntu0.3</code></p>
+
+<p><code>&nbsp;6443</code> &nbsp; : &nbsp; <code>ssl/sun-sr-https?</code> &nbsp; : &nbsp; <code>Kubernetes API Server</code><br>
+
+- <code>xx.xxx.xx.xxx</code>, <code>10.43.0.1</code>, <code>127.0.0.1</code>, <code>172.30.18.136</code>, <code>192.168.1.244</code><br>
+- <code>kubernetes</code>, <code>kubernetes.default</code>, <code>localhost</code>, <code>kubernetes.default.svc.cluster.local</code></p>
+
+<p><code>10250</code> &nbsp; : &nbsp; <code>ssl/http</code> &nbsp; : &nbsp; <code>Kubelet API</code> &nbsp; : &nbsp; <code>Golang net/http server (Go-IPFS json-rpc or InfluxDB API)</code></p>
+
+<p><code>30180</code> &nbsp; : &nbsp; <code>http</code> &nbsp; : &nbsp; <code>Nginx 1.21.0</code></p>
+
+<p><code>31111</code> &nbsp; : &nbsp; <code>Gitea</code> &nbsp; : &nbsp; <code>CSRF</code></p>
+
+<p><code>31112</code> &nbsp; : &nbsp; <code>ssh</code></p>
+
+<br>
+
 ```bash
 :~/PalsForLife# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
 ...
@@ -136,22 +155,7 @@ PORT      STATE SERVICE           VERSION
 ...
 ```
 
-<br>
 
-<p><code>22</code> : ssh : OpenSSH 7.6p1 Ubuntu 4ubuntu0.3</p>
-
-<p><code>6443</code> : ssl/sun-sr-https?<br>
-
-- <code>xx.xxx.xx.xxx</code>, <code>10.43.0.1</code>, <code>127.0.0.1</code>, <code>172.30.18.136</code>, <code>192.168.1.244</code><br>
-- <code>kubernetes</code>, <code>kubernetes.default</code>, <code>localhost</code><br>, <code>kubernetes.default.svc.cluster.local</code></p>
-
-<p><code>10250</code> : ssl/http : Golang net/http server (Go-IPFS json-rpc or InfluxDB API)</p>
-
-<p><code>30180</code> : http : nginx 1.21.0</p>
-
-<p><code>31111</code> : Gitea</p>
-
-<p><code>31112</code> : ssh</p>
 
 <br>
 <h3>gobuster</h3>
