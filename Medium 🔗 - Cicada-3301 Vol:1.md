@@ -205,9 +205,11 @@ Use Stego tools to find the hidden files inside of the image</p>
 - used outguess</p>
 
 <br>
+<br>
 
 <img width="1126" height="666" alt="image" src="https://github.com/user-attachments/assets/28fb2975-0aee-474c-a364-86cdd8567ac9" />
 
+<br>
 <br>
 
 ```bash
@@ -337,7 +339,7 @@ $ sudo apt-get install hashid
 
 <p>
 
-- navigated to https://md5hashing.net/hash/sha512<br>
+- navigated to <code>https://md5hashing.net/hash/sha512</code><br>
 - pasted the hash in <code>Reverse sha512 decoder</code><br>
 - clicked <code>Decode!</code></p>
 
@@ -354,8 +356,9 @@ $ sudo apt-get install hashid
 
 <p>
 
-- navigated to the link discovered in the previous step
-</p>
+- navigated to the link discovered in the previous step</p>
+
+<br>
 
 <img width="1214" height="876" alt="image" src="https://github.com/user-attachments/assets/1fb6f362-d385-47cc-81ec-048aa6ddec11" />
 
@@ -370,9 +373,9 @@ $ sudo apt-get install hashid
 
 <p>
 
-- <code>I:1:6<code> = <code>1.</code>, <code>6</code>th character<br> = <code>h</code><br>
-- <code>I:2:15<code> = <code>2.</code>, <code>15</code>th character<br> = <code>t</code><br>
-- <code>I:3:26<code> = <code>3.</code>, <code>26</code>th character<br> = <code>t</code><br>
+- <code>I:1:6</code> = <code>1.</code>, <code>6</code>th character<br> = <code>h</code><br>
+- <code>I:2:15</code> = <code>2.</code>, <code>15</code>th character<br> = <code>t</code><br>
+- <code>I:3:26</code> = <code>3.</code>, <code>26</code>th character<br> = <code>t</code><br>
 - ...
 </p>
 
