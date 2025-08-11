@@ -18,9 +18,7 @@ Please allow 5 minutes for the machine to fully boot up.</p>
 <br>
 <h2>Task 2 . Compromise the machine</h2>
 <p align="center">Are you able to compromise this World Of Warcraft themed machine?<br><br>
-
 <img width="300px" src="https://github.com/user-attachments/assets/f3c2644f-418d-458b-b771-86ce8143f9be"><br>
-
 Source: https://hearthstone.fandom.com/wiki/Leeroy_Jenkins</p>
 
 <p><em>Answer the questions below</em></p>
