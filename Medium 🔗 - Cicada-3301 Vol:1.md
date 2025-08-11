@@ -461,7 +461,7 @@ Chapter I<br>
 <p align="center">Global All Time:   126ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ce6ab721-f601-4f8a-a55b-9de40602bd82"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/1a83a5b6-66d7-4c3f-874e-7231ddc42f81"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/faca4f31-5550-4156-939c-b23cd9b788c8"><br>
-                  Global monthly:    314ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/686d15e3-8a56-4bb6-800d-6c19939ba097"><br>
+                  Global monthly:    364ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/686d15e3-8a56-4bb6-800d-6c19939ba097"><br>
                   Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f638c626-c74c-48cd-b0b3-297e155572bd"><br>
 
 <br>
