@@ -1,7 +1,7 @@
 <h1 align="center">Cicada-3301 Vol:1</h1>
 <p align="center">2025, August 11<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>462</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>A basic steganography and cryptography challenge room based on the Cicada 3301 challenges</em>.<br>
-<img width="80px" src=https://github.com/user-attachments/assets/4fadd8a0-4df0-4906-8d4d-f5d80db1f61f"><br>
+<img width="80px" src="https://github.com/user-attachments/assets/4fadd8a0-4df0-4906-8d4d-f5d80db1f61f"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/cicada3301vol1">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b5cdc3f5-c330-4f5c-a1f6-e9eeb8d9b451"></p>
 
