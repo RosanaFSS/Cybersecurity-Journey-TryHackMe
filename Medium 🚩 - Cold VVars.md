@@ -30,8 +30,6 @@ PORT     STATE SERVICE     VERSION
 |:---------------------------------------------------------:|:---------------------------------------------------------:|
 |
 
-<br>
-
 ```bash
 :~/ColdVVars# nmap -sC -sV -Pn -T4 TargetIP
 ...
@@ -45,9 +43,7 @@ PORT     STATE SERVICE     VERSION
 |_http-title: Apache2 Ubuntu Default Page: It works
 8082/tcp open  http        Node.js Express framework
 |_http-title: Site doesn't have a title (text/html; charset=UTF-8).
-```
-
-   <br> |                                                   |
+```|                                                   |
 
 </h6></div><br>
 
