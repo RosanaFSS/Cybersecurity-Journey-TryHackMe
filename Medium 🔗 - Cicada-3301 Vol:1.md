@@ -92,6 +92,8 @@ access the metadata of Welcome.jpg<br>
 <p>3.5. What is the final passphrase. Hint : Encode using Vigenere Cipher<br>
 <code>Ju5T_4_P455phr453!</code></p>
 
+<br>
+
 <p>
   
 - navigated to the link discovered in the previous task<br>
@@ -105,7 +107,7 @@ access the metadata of Welcome.jpg<br>
 
 <img width="1282" height="286" alt="image" src="https://github.com/user-attachments/assets/050354ff-ef69-4ddb-bf02-b8fb4ffb8fc4" />
 
-<br>
+<br><br>
 
 ```bash
 $ echo "SG01Ul80X1A0NTVtaHA0NTMh" | base64 -d
