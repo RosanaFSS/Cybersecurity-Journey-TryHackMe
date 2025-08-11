@@ -46,11 +46,11 @@ Use Sonic Visualizer to analyze the audio.</p>
 
 <img width="1916" height="1028" alt="image" src="https://github.com/user-attachments/assets/cf94ad73-b965-4964-8807-ebad25eb3ac8" />
 
-<br>
+<br><br>
 
 <img width="261" height="202" alt="image" src="https://github.com/user-attachments/assets/b7d13869-c29a-45e3-9088-7da24514bbae" />
 
-<br>
+<br><br>
 
 <img width="1358" height="237" alt="image" src="https://github.com/user-attachments/assets/26bb5516-d7d5-4373-8c5b-8a692b1c9416" />
 
@@ -92,9 +92,8 @@ access the metadata of Welcome.jpg<br>
 <p>3.5. What is the final passphrase. Hint : Encode using Vigenere Cipher<br>
 <code>Ju5T_4_P455phr453!</code></p>
 
-<br>
-
-
+<p>
+  
 - navigated to the link discovered in the previous task<br>
 - discovered Passphrase: SG01Ul80X1A0NTVtaHA0NTMh<br>
 - discovered Key: Q2ljYWRh<br>
