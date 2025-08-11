@@ -5,13 +5,7 @@
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/cicada3301vol1">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b5cdc3f5-c330-4f5c-a1f6-e9eeb8d9b451"></p>
 
-
 <br>
-
-
-<h1>Cicada-3301 Vol:1</h1>
-<p>A basic steganography and cryptography challenge room based on the Cicada 3301 challenges
-<p>2025, August 11 - Day 462</p>
 
 
 <h2>Task 1 . Download</h2>
