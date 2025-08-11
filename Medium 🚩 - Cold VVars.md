@@ -185,15 +185,6 @@ xx.xxx.xx.xxx    coldvvars.thm
 <p>It´s vulnerable to <code>XPath Injection.</code></p>
 
 <br>
-
-```bash
-:~/ColdVVars# nxc smb coldvvars.thm -u guest -p ''
-```
-
-<br>
-
-<img width="1131" height="93" alt="image" src="https://github.com/user-attachments/assets/8ff283e7-165c-45ef-84f6-386eccb977e5" />
-
 <br>
 <br>
 <h3><code>admin"or 1=1 or ""="</code></h3>
