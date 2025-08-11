@@ -215,6 +215,7 @@ ArthurMorgan DeadEye
 <br>
 <br>
 <h3>for the same purpose ...</h3>
+<p>OR ...</p>
 
 ```bash
 POST /login HTTP/1.1
@@ -232,11 +233,7 @@ Username Password<br>Tove             Jani<br>Godzilla             KONGistheKING
 <img width="1744" height="132" alt="image" src="https://github.com/user-attachments/assets/9bc55124-f0f7-495b-901c-d7b7951fde56" />
 
 <br>
-
-<p>OR ...</p>
-
 <br>
-<img width="1282" height="70" alt="image" src="https://github.com/user-attachments/assets/47a696af-d369-48d0-93e8-26627613a445" />
 
 ```bash
 :~/ColdVVars# nxc smb coldvvars.thm -u 'ArthurMorgan' -p 'DeadEye' --continue-on-success
