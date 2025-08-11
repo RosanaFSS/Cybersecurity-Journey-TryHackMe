@@ -1,6 +1,18 @@
+<h1 align="center">Cicada-3301 Vol:1</h1>
+<p align="center">2025, August 11<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>462</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>A basic steganography and cryptography challenge room based on the Cicada 3301 challenges</em>.<br>
+<img width="80px" src=https://github.com/user-attachments/assets/4fadd8a0-4df0-4906-8d4d-f5d80db1f61f"><br>
+Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/cicada3301vol1">here </a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/b5cdc3f5-c330-4f5c-a1f6-e9eeb8d9b451"></p>
+
+
+<br>
+
+
 <h1>Cicada-3301 Vol:1</h1>
 <p>A basic steganography and cryptography challenge room based on the Cicada 3301 challenges
 <p>2025, August 11 - Day 462</p>
+
 
 <h2>Task 1 . Download</h2>
 <p>Hello, We are looking for highly intelligentindividuals. To find them, we have devised a test.<br>
@@ -408,4 +420,50 @@ Chapter I<br>
 <br>
 
 <h2>Task 7 . The Final Song</h2>
+<p>We have found the individuals we sought<br>
+
+-3301</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>7.1. What is the song linked?<br>
+<code>The Instar Emergence</code></p>
+
 <br>
+
+<img width="429" height="33" alt="image" src="https://github.com/user-attachments/assets/87b10c16-3749-4497-9104-3d5c0a8cb018" />
+
+<br>
+
+<img width="1162" height="339" alt="image" src="https://github.com/user-attachments/assets/b47b0020-2242-4300-832b-0b070f6ee57d" />
+
+<br>
+<br>
+
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c64adecd-0d6c-4853-81a6-c3ae7c33f90e"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/eba0bfc3-4156-419a-9111-1b18df444dea"></p>
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 11   |   462    |     128ᵗʰ    |      5ᵗʰ     |     364ᵗʰ   |     7ᵗʰ    | 120,476  |    909    |    73     |
+
+
+</div>
+
+<p align="center">Global All Time:   126ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ce6ab721-f601-4f8a-a55b-9de40602bd82"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/1a83a5b6-66d7-4c3f-874e-7231ddc42f81"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/faca4f31-5550-4156-939c-b23cd9b788c8"><br>
+                  Global monthly:    314ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/686d15e3-8a56-4bb6-800d-6c19939ba097"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f638c626-c74c-48cd-b0b3-297e155572bd"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
