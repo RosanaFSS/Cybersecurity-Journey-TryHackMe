@@ -103,7 +103,7 @@ access the metadata of Welcome.jpg<br>
 
 <br>
 
-<img width="501" height="427" alt="image" src="https://github.com/user-attachments/assets/552079f1-fa89-4d1b-8f53-0bf6d2193741" />
+<img width="1282" height="286" alt="image" src="https://github.com/user-attachments/assets/050354ff-ef69-4ddb-bf02-b8fb4ffb8fc4" />
 
 <br>
 
