@@ -22,7 +22,7 @@ Welcome.<br>
 
 Good Luck<br>
 
--3301<br<
+-3301<br>
 
 Use Sonic Visualizer to analyze the audio.</p>
 
@@ -36,7 +36,7 @@ Use Sonic Visualizer to analyze the audio.</p>
 <p>
 
 - launched <code>Sonic Visualiser</code><br>
-- opened <code>3301.wav</code<<br>
+- opened <code>3301.wav</code><br>
 - clicked <code>Pane</code> > <code>Add Spectrogram</code><br>
 - saved the QR code<br>
 - uploaded the file in <code>CyberChef</code><br>
