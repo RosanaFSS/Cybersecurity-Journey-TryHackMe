@@ -17,7 +17,7 @@ A new machine means a new web implementation. Foothold should be rather easy-goi
 
 Icon made by Freepik from www.flaticon.com</p>
 
-<p><em>Answer the questios below</em></p>
+<p><em>Answer the questions below</em></p>
 
 
 <br>
