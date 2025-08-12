@@ -23,15 +23,8 @@ Source: https://hearthstone.fandom.com/wiki/Leeroy_Jenkins</p>
 
 <p><em>Answer the questions below</em></p>
 
-<p>1.2. Flag 2. Hint : Get a shell<br>
-<code>flag{_G0ddamit_Leeroy_}</code></p>
 
-
-<br>
-<br>
 <h3>nmap</h3>
-
-<br>
 
 <p>
   
@@ -337,7 +330,7 @@ flag{*****************}
 
 <br>
 
-<p>1.3. Flag 3. Hint : kubectl<br>
+<p>1.2. Flag 2.<br>
 <code>flag{*****************}</code></p>
 
 <br>
@@ -450,7 +443,7 @@ flag{*****************}
 
 <br>
 
-<p>1.3. Flag 3. Hint : kubectl<br>
+<p>1.3. Flag 3.<br>
 <code>flag{*****************}</code></p>
 
 <br>
