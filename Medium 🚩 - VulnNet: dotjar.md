@@ -38,6 +38,11 @@ PORT     STATE SERVICE VERSION
 
 <br>
 
+<p>
+
+- Apache Tomcat - AJP Ghostcat
+</p>
+
 ```bash
 :~/VulnNetDotJAR# nmap --script ajp-auth,ajp-headers,ajp-methods,ajp-request -n -p8009 xx.xxx.xx.xxx
 ...
@@ -108,6 +113,11 @@ PORT     STATE SERVICE
 | 
 |_</html>
 ```
+
+<br>
+<h3>CVE-2020-1938</h3>
+
+<img width="1899" height="465" alt="image" src="https://github.com/user-attachments/assets/ca37932d-d7b9-40ad-b52c-f88e7bb9fd40" />
 
 
 <br>
@@ -335,6 +345,7 @@ ubuntu:x:1003:1004:Ubuntu:/home/ubuntu:/bin/bash
 ```
 
 <br>
+<h3>Unshadow</h3>
 
 ```bash
 :~/VulnNetDotJAR# unshadow passwd.txt shadow.txt
@@ -348,11 +359,11 @@ ssm-user:x:1002:1002::/home/ssm-user:/bin/sh
 ubuntu:x:1003:1004:Ubuntu:/home/ubuntu:/bin/bash
 ```
 
-<br>
+<br><br>
 
 <img width="1312" height="729" alt="image" src="https://github.com/user-attachments/assets/debf80c1-e713-4743-bc0b-9ff98a68b809" />
 
-<br>
+<br><br>
 <h3>hashes</h3>
 
 ```bash
