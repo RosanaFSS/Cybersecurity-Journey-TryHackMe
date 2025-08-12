@@ -231,13 +231,14 @@ msf6 auxiliary(admin/http/tomcat_ghostcat) >
 ```
 
 <br>
-
+<h3>Credentials</h3>
 
 ```bash
 webdev:**********$Fa@21
 ```
 
 <br>
+<h3>Login</h3>
 
 <img width="1129" height="720" alt="image" src="https://github.com/user-attachments/assets/04938d49-0cde-46a5-a273-f31cad2e7035" />
 
