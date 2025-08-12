@@ -498,9 +498,30 @@ THM{464c29e3ffae05c2e67e6f0c5064759c}
 <br>
 <br>
 
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ad1d913c-01e8-47e9-a5a2-68d2a3804f3a"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/adb1374b-f9eb-41b3-807d-c30239a9778d"></p>
 
-<img width="1911" height="895" alt="image" src="https://github.com/user-attachments/assets/ad1d913c-01e8-47e9-a5a2-68d2a3804f3a" />
+<br>
 
-<img width="1912" height="890" alt="image" src="https://github.com/user-attachments/assets/adb1374b-f9eb-41b3-807d-c30239a9778d" />
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 12   |   463    |     127ᵗʰ    |      5ᵗʰ     |     361ˢᵗ   |     7ᵗʰ    | 120,656  |    911    |    73     |
 
 
+</div>
+
+<p align="center">Global All Time:   127ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/6dd218dd-da2b-4fdb-8f9c-ff99ac02d3d2"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/20774ffa-238e-4b00-b347-675e21d1c9cb"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/10688cef-9967-4cd1-be27-8f840a03ee5d"><br>
+                  Global monthly:    361ˢᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/1b00abab-4b85-49fe-9ab8-e610306b94f6"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/196b77e7-c3fe-4f32-94d8-407b9e70838b"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
