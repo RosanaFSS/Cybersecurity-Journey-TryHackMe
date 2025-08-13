@@ -10,8 +10,8 @@ Access this CTF <a href="https://tryhackme.com/room/revenge">here </a>.<br>
 <h2>Task 1 . Message from Billy Joel</h2>
 <p>Billy Joel has sent you a message regarding your mission.  Download it, read it and continue on.</p>
 
-<p align="center"><img width="200px" src="https://github.com/user-attachments/assets/388955d8-3e39-4590-a4fc-25428bdd128b"><br>
-Image from freepik.com</p>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/388955d8-3e39-4590-a4fc-25428bdd128b"><br>
+Image from freepik.com</h6>
 
 <p><em>Answer the question below</em></p>
 
@@ -22,8 +22,8 @@ Image from freepik.com</p>
 <br>
 <h2>Task 2 . Revenge!</h2>
 
-<p align="center"><img width="200px" src="https://github.com/user-attachments/assets/03a4c57d-5d8c-44b9-8016-0225fe5fff0d"><br>
-Image from freepik.com</p>
+<ph6align="center"><img width="200px" src="https://github.com/user-attachments/assets/03a4c57d-5d8c-44b9-8016-0225fe5fff0d"><br>
+Image from freepik.com</h6>
 
 <p>This is revenge! You've been hired by Billy Joel to break into and deface the Rubber Ducky Inc. webpage. He was fired for probably good reasons but who cares, you're just here for the money. Can you fulfill your end of the bargain?<br>
 
@@ -33,7 +33,7 @@ All images on the webapp, including the navbar brand logo, 404 and 500 pages, an
 
 Please hack responsibly. Do not attack a website or domain that you do not own the rights to. TryHackMe does not condone illegal hacking. This room is just for fun and to tell a story.</p>
 
-<p><em>Answer the question below</em></p>
+<p><em>Answer the questions below</em></p>
 
 <br>
 <br>
