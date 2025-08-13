@@ -140,15 +140,8 @@ $ python3 a.py
 <p>1.5. What is the Administrator NTLM hash that the attacker found?<br>
 <code>13b1e64400203ecf38b1fdea2b11a09f</code></p>
 
-<br>
 
-<img width="1899" height="762" alt="image" src="https://github.com/user-attachments/assets/85592bcc-bd6a-441b-b01d-d28d491a548a" />
 
-<br>
-
-```bash
-$ tshark -r traffic.pcapng -Y 'http.request.method == POST' -T fields -e http.file_data
-```
 
 <br>
 <br>
