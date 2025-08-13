@@ -32,6 +32,7 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 <img width="1724" height="68" alt="image" src="https://github.com/user-attachments/assets/7081a1e8-f295-41d1-a916-1a9ad443e816" />
 
 <br>
+<br>
 
 <p>1.2. What was the body of the email that was sent by the attacker?<br>
 <code>Tom! I have done it! I have found the mass of the black hole we found! Run this script as the AdministratOr! Your BEst friend DOm</code></p>
