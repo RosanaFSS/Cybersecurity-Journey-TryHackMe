@@ -3,7 +3,7 @@
 <em>Unearth the secrets beyond the Event Horizon.</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/317f46fa-cd76-40e1-8eac-dd8a7ba2de1d"><br>
 Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhorizonroom">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/62b55b16-1bf1-45ec-b74c-660cb302af9c"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/56d54675-8a78-4b45-8196-38d7279b8b1b"></p>
 
 <br>
 
@@ -155,4 +155,21 @@ $ python3 a.py
 
 
 <img width="1903" height="899" alt="image" src="https://github.com/user-attachments/assets/2446c058-3bb0-495c-9600-5a9092f91ed9" />
+
+<img width="1905" height="902" alt="image" src="https://github.com/user-attachments/assets/a0ca7b59-fa92-4f45-bf9e-91b10ec47952" />
+
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 13   |   463    |     124ᵗʰ    |      5ᵗʰ     |     336ᵗʰ   |     8ᵗʰ    | 120,866  |    914    |    73     |
+
+
+</div>
+
+<img width="1892" height="888" alt="image" src="https://github.com/user-attachments/assets/aef68c9b-50ea-4656-9ac6-6064b4ee3ba4" />
+
+
 
