@@ -92,6 +92,15 @@ Algorithm       Hash                                                            
 SHA256          6F89901021C14ABD9A89F6014AD282759CF36E7E9940F5A96D55D47C16CD9A89       ...
 ```
 
+<br>
+
+<img width="1588" height="135" alt="image" src="https://github.com/user-attachments/assets/1f2eddd7-8b73-4353-9729-44a9768b476c" />
+
+<br>
+
+<img width="1333" height="587" alt="image" src="https://github.com/user-attachments/assets/cf510def-f005-4bbd-964f-1ddd9f0f68d1" />
+
+<br>
 
 <br>
 
@@ -110,17 +119,6 @@ open("OUTCOME.bin", "wb").write(decompressed_data)
 ```bash
 $ python3 a.py
 ```
-
-<br>
-
-<img width="1588" height="135" alt="image" src="https://github.com/user-attachments/assets/1f2eddd7-8b73-4353-9729-44a9768b476c" />
-
-<br>
-
-<img width="1333" height="587" alt="image" src="https://github.com/user-attachments/assets/cf510def-f005-4bbd-964f-1ddd9f0f68d1" />
-
-<br>
-
 
 
 <br>
