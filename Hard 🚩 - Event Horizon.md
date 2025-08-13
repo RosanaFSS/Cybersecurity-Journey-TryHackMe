@@ -53,11 +53,11 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 
 <img width="1914" height="986" alt="image" src="https://github.com/user-attachments/assets/b49d08c6-9233-422c-b64c-442e9340e1fb" />
 
-<br>
+<br><br>
 
 <img width="1771" height="589" alt="image" src="https://github.com/user-attachments/assets/6ab1d8e6-4a0c-41b2-957c-b09196cd1236" />
 
-<br>
+<br><br>
 
 <img width="1906" height="875" alt="image" src="https://github.com/user-attachments/assets/47b6bb1c-2039-48e7-95a5-73ed02f1a572" />
 
@@ -97,11 +97,23 @@ SHA256          6F89901021C14ABD9A89F6014AD282759CF36E7E9940F5A96D55D47C16CD9A89
 <img width="1588" height="135" alt="image" src="https://github.com/user-attachments/assets/1f2eddd7-8b73-4353-9729-44a9768b476c" />
 
 <br>
+<br>
 
 <img width="1333" height="587" alt="image" src="https://github.com/user-attachments/assets/cf510def-f005-4bbd-964f-1ddd9f0f68d1" />
 
 <br>
+<br>
 
+<img width="1888" height="902" alt="image" src="https://github.com/user-attachments/assets/5840398e-55fe-419f-8140-7e60eb35e8dd" />
+
+<br>
+<br>
+
+
+<img width="1898" height="896" alt="image" src="https://github.com/user-attachments/assets/5ab88435-e809-471a-8759-b15afb88d15f" />
+
+
+<br>
 <br>
 
 ```bash
