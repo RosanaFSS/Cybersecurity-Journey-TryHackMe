@@ -8,8 +8,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/frankan
 
 <br>
 
-
-
 <h2>Task 1 . Frank & Herb Nake and App!</h2>
 <p>Make sure to wait 5 minutes after the machine starts up before starting recon.<br>
 
