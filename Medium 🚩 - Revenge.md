@@ -22,7 +22,7 @@ Image from freepik.com</h6>
 <br>
 <h2>Task 2 . Revenge!</h2>
 
-<ph6align="center"><img width="200px" src="https://github.com/user-attachments/assets/03a4c57d-5d8c-44b9-8016-0225fe5fff0d"><br>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/03a4c57d-5d8c-44b9-8016-0225fe5fff0d"><br>
 Image from freepik.com</h6>
 
 <p>This is revenge! You've been hired by Billy Joel to break into and deface the Rubber Ducky Inc. webpage. He was fired for probably good reasons but who cares, you're just here for the money. Can you fulfill your end of the bargain?<br>
