@@ -5,6 +5,7 @@
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/palsforlife">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/662c32eb-7220-422c-b97b-20c7b1047b66"></p>
 
+<br>
 
 <h2>Task 1 . Download</h2>
 <p>Connect to our network and deploy this machine. If you are unsure on how to get connected, complete the OpenVPN room first.<br>
