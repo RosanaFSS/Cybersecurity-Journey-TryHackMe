@@ -446,7 +446,208 @@ GET `/flag=THM%7BTh1s_4udio_S0unds_N1ce%7D`
 ```
 
 <br>
+<br>
+<br>
 <h2>Task 8 . CSP Sandbox :: Defend Challenges</h2>
+<p>To deploy the machine, go to the <strong>CSP Sandbox</strong> task.<br><br>
+
+<strong>Defend</strong> challenges require you to defend the website from XSS attacks by creating a CSP header that blocks them, whilst allowing the legitimate scripts to execute.</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>8.1. What is the flag for defend-1?<br>
+<code>THM{N0_0utside_S0urces}</code></p>
+
+<br>
+
+<img width="1119" height="138" alt="image" src="https://github.com/user-attachments/assets/477f32dc-a403-449a-9194-661818c7b6dd" />
+
+<br>
+<br>
+
+```bash
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 615
+ETag: W/"267-BP86b/pS4qwW5ko90IpiLspvqsM"
+Date: T...
+```
+
+<br>
+
+<p><em>View Source</em><br>
+http://xxx.xx.xxx.xxx:3008</p>
+
+<br>
+
+```bash
+ <script src="/defend-1.js"></script>
+```
+
+<br>
+
+<img width="1123" height="227" alt="image" src="https://github.com/user-attachments/assets/d8d73d52-6b50-4dbc-8ecc-0a1f88d6e62e" />
+
+<br>
+<p><em>payload</em></p>
+
+```bash
+script-src 'self';
+```
+
+<br>
+<br>
+
+<img width="1120" height="163" alt="image" src="https://github.com/user-attachments/assets/26be0d11-132d-42b7-9d0b-3079fb707eea" />
+
+
+<br>
+<br>
+<br>
+<p>8.2. What is the flag for defend-2?<br>
+<code>THM{M4k3_Sure_Y0ur_N0nce_1s_R4ndom}</code></p>
+
+<br>
+
+<img width="1111" height="156" alt="image" src="https://github.com/user-attachments/assets/809cdda1-745c-4765-8d41-4b79e809aeab" />
+
+<br>
+<br>
+
+```bash
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 615
+ETag: W/"267-BP86b/pS4qwW5ko90IpiLspvqsM"
+Date: T...
+```
+
+<br>
+
+<p><em>View Source</em><br>
+http://xxx.xx.xxx.xxx
+
+<br>
+
+```bash
+<script nonce="ae3b00">defend2Real=true;console.log("__defend-2_REAL="+defend2Real)</script>
+```
+
+<br>
+
+<img width="1106" height="425" alt="image" src="https://github.com/user-attachments/assets/f3641ab2-610c-4646-9a9d-daa706c50ed0" />
+
+<br>
+<p><em>payload</em></p>
+
+```bash
+script-src 'nonce-ae3b00'
+```
+
+<br>
+<br>
+
+<img width="1116" height="172" alt="image" src="https://github.com/user-attachments/assets/25ca63d9-821f-4234-b3b2-d205224527f6" />
+
+<br>
+<br>
+<br>
+<p>8.3. What is the flag for defend-3?<br>
+<code>THM{Hash_Y0ur_1nl1ne_Scr1pts}</code></p>
+<br>
+
+<img width="1109" height="115" alt="image" src="https://github.com/user-attachments/assets/f57647ab-2bf4-44e2-a1a1-659096622d62" />
+
+<br>
+<br>
+
+```bash
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 575
+ETag:  W/"320-hSI+j9+cvNsDURMubb8nm4rStRY"
+Date: ...
+```
+
+<br>
+
+<p><em>View Page Source</em><br>
+http://xxx.xx.xxx.xxx:3009</p>
+
+<br>
+
+```bash
+<script>console.log("__defend-3_REAL=true")</script>
+```
+
+<br>
+
+<img width="1116" height="241" alt="image" src="https://github.com/user-attachments/assets/cc9510bd-0ebc-49cd-9ea9-61d6ef4e3e4e" />
+
+
+
+<br>
+
+<p><em>Report URI</em><br>
+https://report-uri.com/home/hash</p>
+
+<br>
+
+```bash
+console.log("__defend-3_REAL=true")
+```
+
+<br>
+
+<img width="1109" height="287" alt="image" src="https://github.com/user-attachments/assets/680b40c1-268c-4ff0-9560-7b226f3857b7" />
+
+<br>
+
+<img width="1122" height="358" alt="image" src="https://github.com/user-attachments/assets/e89ad6eb-019b-4a82-a6a9-5a15fc7ecda1" />
+
+
+<br>
+
+```bash
+'sha256-8gQ3l0jVGr5ZXaOeym+1jciekP8wsfNgpZImdHthDRo='
+```
+
+<br>
+
+<br>
+<p><em>payload</em></p>
+
+```bash
+script-src 'sha256-8gQ3l0jVGr5ZXaOeym+1jciekP8wsfNgpZImdHthDRo='
+```
+
+<br>
+<br>
+
+<img width="1118" height="149" alt="image" src="https://github.com/user-attachments/assets/40a1eea1-7197-447e-b3f4-80258e793328" />
+
+<br>
+<br>
+
+<img width="1118" height="295" alt="image" src="https://github.com/user-attachments/assets/9a3044d7-04d7-45b6-b5be-e7ec157fdb64" />
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<br>
+<br>
+<br>
+
+
+
 
 
 
