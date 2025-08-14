@@ -1,4 +1,4 @@
-<h1 align="center">The Docker Rodei</h1>
+<h1 align="center">The Docker Rodeo</h1>
 <p align="center">2025, August 14<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>465</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Learn a wide variety of Docker vulnerabilities in this guided showcase.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/e91b1b0f-626f-4433-b412-9ba0058f9e33"><br>
