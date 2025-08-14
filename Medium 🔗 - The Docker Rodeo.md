@@ -21,7 +21,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 <p>
 
 - <code>sudo nano /etc/hosts</code><br>
-- Add the entry so that it looks like the following: <code>MACHINE_IP    docker-rodeo.thm</code><br><h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/461a4493-46b5-4dce-b58e-22801833ef6"><br><br><em>TryHackMe</em></h6><br>
+- Add the entry so that it looks like the following: <code>MACHINE_IP    docker-rodeo.thm</code><br><h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/672e65f9-973d-4615-80c4-175f4be66ca9"><br><br><em>TryHackMe</em></h6><br>
 - Save and close the file.</p>
 
 <h3>Tell Docker to Trust your Instance</h3>
