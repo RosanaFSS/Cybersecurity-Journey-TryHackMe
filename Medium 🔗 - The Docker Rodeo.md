@@ -97,7 +97,7 @@ Since Docker images are essentially just instruction manuals as we discussed ear
 <p><em>Answer the question below</em></p>
 
 <p>4.1. I've learnt about Docker registries<br>
-<code>Nay</code></p>
+<code>No answer needed</code></p>
 
 <br>
 <h2>Task 5 . Interacting with a Docker Registry</h2>
