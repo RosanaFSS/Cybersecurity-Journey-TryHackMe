@@ -3,7 +3,7 @@
 <em>In this room you'll learn what CSP is, what it's used for and how to recognize vulnerabilities in a CSP header.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/d871aa14-a71f-4051-8ce6-0a55c59f0168"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/csp">here </a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/5787e197-d1f3-44c8-aa11-d92285cf31c8"></p>
 
 <br>
 
@@ -654,3 +654,32 @@ script-src 'sha256-8gQ3l0jVGr5ZXaOeym+1jciekP8wsfNgpZImdHthDRo='
 
 <br>
 <br>
+
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/cc63f69d-43d5-4605-8794-205e92325052"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/43463fd8-3967-421f-92a2-d724c1fb9d17"></p>
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 14   |   465    |     121ˢᵗ    |      5ᵗʰ     |     376ᵗʰ   |     10ᵗʰ    | 121,066  |    916    |    73     |
+
+
+</div>
+
+
+<p align="center">Global All Time:   121ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/0cd6793e-8b28-4ab4-9821-8be53953ba94"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/7bae7454-7a05-4c8f-96ed-31fe3e3d80ab"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/9ff8c7e3-7391-49b6-81cd-8eb61bdf9409"><br>
+                  Global monthly:    376ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3af0b36e-2cae-4392-8de5-8de88fde04d2"><br>
+                  Brazil monthly:     10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d77c511f-4d29-40ae-8ad3-88bfbd9e3877"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
