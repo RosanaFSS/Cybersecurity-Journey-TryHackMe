@@ -194,16 +194,7 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 
 <p>
 
-- naviagted to <code>xx.xxx.xxx.xxx:30001</code></p>
-
-<br>
-
-<img width="1250" height="787" alt="image" src="https://github.com/user-attachments/assets/789a62ae-0845-4312-b4ec-decfc28d791c" />
-
-<br>
-
-<p>
-
+- navigated to <code>xx.xxx.xxx.xxx:30001</code><br><br><img width="1250" height="787" alt="image" src="https://github.com/user-attachments/assets/789a62ae-0845-4312-b4ec-decfc28d791c" /><br><br>
 - navigated to <code>https://csp-evaluator.withgoogle.com</code> to check if the policy has any potential bypass vectors in it<br>
 - pasted <code>xx.xxx.xxx.xxx:30001</code><br>
 - clicked <code>CHECK CSP</code><br>
