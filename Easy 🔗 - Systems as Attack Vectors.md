@@ -8,11 +8,55 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/systems
 <br>
 
 <h2>Task 1 . Introduction</h2>
+<p>Continue exploring the SOC role in protecting the digital world, now focusing on systems as attack vectors. In this room, you will learn what the systems are, why and how threat groups target them, and what you can do as a SOC analyst to keep your company secure.</p>
 
+<br>
+<h3>Learning Objectives</h3>
+<p>
 
+- Learn the role of a system in a modern digital world<br>
+- Explore a variety of real-world attacks targeting systems<br>
+- Practice the acquired knowledge in two realistic scenarios</p>
+
+<h3>Prerequisites</h3>
+<p>
+
+- Complete the <strong>Junior Security Analyst</strong> room
+- Complete the <strong>Humans as Attack Vectors</strong> room</p>
+
+<br>
+<p><em>Answer the question below</em></p>
+
+<p>1.1. I´m ready to learn!<br>
+<code>No answer needed</code></p>
+<br>
+<br>
 <h2>Task 2 . Definition of System</h2>
+<p>Imagine a castle again, but now with a trained gatekeeper who knows how to identify phishing and how to combat deepfakes. However, if the lock on the main gate is fragile and cheap, guardian skills do not matter, as the enemy can just sneak into the castle while no one is watching. In cyber terms, threat actors can attack insecure systems directly, without the users' knowledge.</p>
 
+<br>
 
+<h6 align="center"><img width=90px" src="https://github.com/user-attachments/assets/6632e5de-0442-4afc-a139-0270461652a6"><br><em>TryHackMe</em></h6>
+
+<br>
+<h3>Definition of System</h3>
+<p>Where do the banks store your cards, or where are your emails stored? The answer - on a system: a physical server, a virtual machine, or a cloud platform like Microsoft 365. Protecting such systems is crucial: if the attackers breach one user's mailbox via phishing, they compromise a single mailbox, but if they breach a mail server, they now control all thousands of mailboxes. Each system type can have a different value for threat actors, for example:</p>
+<br>
+
+<h6 align="center"><img width=900px" src="https://github.com/user-attachments/assets/fbe96049-24f7-4d9d-89a0-d418e5bf007b"><br><em>TryHackMe</em></h6>
+
+<br>
+<p><em>Answer the questions below</em></p>
+
+<p>2.1. Can cyber attacks happen without victim intervention (Yea/Nay)?<br>
+<code>Yea</code></p>
+<br>
+
+<p>2.2. Can a breach of just a single system lead to disastrous consequences (Yea/Nay)?<br>
+<code>Yea</code></p>
+
+<br>
+<br> 
 <h2>Task 3 . Attacks on Systems</h2>
 <p>In most serious attacks, the first goal is to gain access to the target system. What happens next depends on the attacker's motivation: stealing data, deploying ransomware, or even destroying information without a way to recover. However, nearly all attacks begin the same way. Let's look at three examples of how systems are attacked.</p>
 <h3>Human-Led Attacks
