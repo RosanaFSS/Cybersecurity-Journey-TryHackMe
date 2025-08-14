@@ -186,6 +186,58 @@ Note the response - specifically the "history" key;  albeit slightly hard to rea
 <h2>Task 6 . Vulnerability #2: Reverse Engineering Docker Images</h2>
 
 
+
+<br>
+<p><em>Answer the questions below</em></p>
+
+<p>6.1. What is the "IMAGE_ID" for the "challenge" Docker image that you just downloaded?<br>
+<code>2a0a63ea5d88</code></p>
+
+<br>
+
+<img width="1069" height="402" alt="image" src="https://github.com/user-attachments/assets/49279176-5505-4d4a-b892-0a53cc62ce93" />
+
+<br>
+<p>6.2. Using Dive, how many "Layers" are there in this image?<br>
+<code>7</code></p>
+
+<br>
+
+<img width="1069" height="402" alt="image" src="https://github.com/user-attachments/assets/49279176-5505-4d4a-b892-0a53cc62ce93" />
+
+<br>
+<p>6.3. What user is successfully added?<br>
+<code>7</code></p>
+
+<br>
+
+```bash
+:~/TheDockerRodeo# wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
+```
+
+<br>
+
+```bash
+:~/TheDockerRodeo# sudo apt install ./dive_0.9.2_linux_amd64.deb
+```
+
+<br>
+
+```bash
+:~/TheDockerRodeo# dive 2a0a63ea5d88
+Image Source: docker://2a0a63ea5d88
+Fetching image... (this can take a while for large images)
+Analyzing image...
+Building cache...
+```
+
+<br>
+
+<img width="1233" height="452" alt="image" src="https://github.com/user-attachments/assets/d58387ff-3681-46ea-9001-8ca7073cebbf" />
+
+<br>
+
+
 <h2>Task 7 . Vulnerability #3: Uploading Malicious Docker Images</h2>
 
 
