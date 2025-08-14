@@ -49,7 +49,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 <img width="941" height="130" alt="image" src="https://github.com/user-attachments/assets/cf59d801-e9df-4052-9193-3702d7e36a0f" />
 
 <br>
-<br>
 <h2>Task 2 . Introduction to Docker</h2>
 <h3> What is Docker?</h3>
 
@@ -66,7 +65,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 <code>Nay</code></p>
 
 <br>
-<br>
 <h2>Task 3 . Vulnerability #1: Abusing a Docker Registry</h2>
 <p>This task is a divider, please proceed onto the next task.</p>
 
@@ -74,9 +72,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 <p><em>Answer the question below</em></p>
 
 <p>3.1.<br>
-<code>Nay</code></p>
+<code>No answer needed</code></p>
 
-<br>
 <br>
 <h2>Task 4 . What is a Docker Registry?</h2>
 <p>Before we begin exploiting a Docker Registry, we need to first understand not only how we interact with them, but as to why they are so lucrative for us pentesters.<br>
@@ -102,7 +99,6 @@ Since Docker images are essentially just instruction manuals as we discussed ear
 <p>4.1. I've learnt about Docker registries<br>
 <code>Nay</code></p>
 
-<br>
 <br>
 <h2>Task 5 . Interacting with a Docker Registry</h2>
 <p>As with any system that we are going to be penetration testing, we need to enumerate the services running to understand any potential entry points. In our case, Docker Registry runs on port 5000 by default, however, this can be easily changed, so it is worth confirming via with a nmap scan like so: sudo nmap -sV xx.xxx.xx.xx</p>
