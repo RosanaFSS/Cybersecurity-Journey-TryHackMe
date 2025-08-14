@@ -245,14 +245,11 @@ Building cache...
 <p><em>Answer the questions below</em></p>
 
 <p>7.1. Escape Successful<br>
-<code>No asnwer needed</code></p>
+<code>No answer needed</code></p>
 
 ```bash
-root@ip-10-201-47-228:~/TheDockerRodeo# ssh danny@10.201.72.13 -p 2233
-The authenticity of host '[10.201.72.13]:2233 ([10.201.72.13]:2233)' can't be established.
-ECDSA key fingerprint is SHA256:7oK8ZTV//nYMLxtlI8foW0/nO7lqjhwXRAG+YS/kYx8.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '[10.201.72.13]:2233' (ECDSA) to the list of known hosts.
+:~/TheDockerRodeo# ssh danny@10.201.72.13 -p 2233
+...
 danny@10.201.72.13's password: 
 danny@3d8fe1db6635:~$ id
 uid=1000(danny) gid=1000(danny) groups=1000(danny),999(docker)
