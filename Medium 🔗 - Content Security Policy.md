@@ -1,5 +1,5 @@
 <h1 align="center">Content Security Policy</h1>
-<p align="center">2025, August 12<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>464</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, August 14<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>465</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>In this room you'll learn what CSP is, what it's used for and how to recognize vulnerabilities in a CSP header.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/d871aa14-a71f-4051-8ce6-0a55c59f0168"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/csp">here </a>.<br>
