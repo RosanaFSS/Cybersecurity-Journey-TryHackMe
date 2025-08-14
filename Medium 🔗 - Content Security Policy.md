@@ -379,9 +379,11 @@ Content-Security-Policy: default-src 'none'; img-src *; style-src 'self'; script
 ```
 
 <br>
+<br>
 
 <img width="1105" height="401" alt="image" src="https://github.com/user-attachments/assets/6cc66344-7318-45c3-8f1b-14828160ee0b" />
 
+<br>
 <br>
 <p><em>payload</em></p>
 
@@ -400,6 +402,7 @@ Content-Security-Policy: default-src 'none'; img-src *; style-src 'self'; script
 
 <img width="406" height="409" alt="image" src="https://github.com/user-attachments/assets/e4ae928b-dc57-4308-be55-1f0b915aa7e2" />
 
+<br>
 <br>
 
 ```bash
@@ -420,6 +423,7 @@ Content-Security-Policy: default-src 'none'; media-src *; style-src 'self'; scri
 ```
 
 <br>
+<br>
 
 <img width="1109" height="400" alt="image" src="https://github.com/user-attachments/assets/95bf664c-cc4b-4c27-8112-3a023f281065" />
 
@@ -435,10 +439,12 @@ Content-Security-Policy: default-src 'none'; media-src *; style-src 'self'; scri
 
 <p><em>researcher.beeceptor.com</em></p>
 <br>
+<br>
 
 <img width="418" height="252" alt="image" src="https://github.com/user-attachments/assets/67a69c19-5495-48ec-840f-977656012e69" />
 
 
+<br>
 <br>
 
 ```bash
@@ -486,6 +492,7 @@ http://xxx.xx.xxx.xxx:3008</p>
 ```
 
 <br>
+<br>
 
 <img width="1123" height="227" alt="image" src="https://github.com/user-attachments/assets/d8d73d52-6b50-4dbc-8ecc-0a1f88d6e62e" />
 
@@ -509,6 +516,7 @@ script-src 'self';
 <code>THM{M4k3_Sure_Y0ur_N0nce_1s_R4ndom}</code></p>
 
 <br>
+<br>
 
 <img width="1111" height="156" alt="image" src="https://github.com/user-attachments/assets/809cdda1-745c-4765-8d41-4b79e809aeab" />
 
@@ -527,7 +535,7 @@ Date: T...
 <br>
 
 <p><em>View Source</em><br>
-http://xxx.xx.xxx.xxx
+http://xxx.xx.xxx.xxx:3009</p>
 
 <br>
 
@@ -536,9 +544,11 @@ http://xxx.xx.xxx.xxx
 ```
 
 <br>
+<br>
 
 <img width="1106" height="425" alt="image" src="https://github.com/user-attachments/assets/f3641ab2-610c-4646-9a9d-daa706c50ed0" />
 
+<br>
 <br>
 <p><em>payload</em></p>
 
@@ -556,6 +566,7 @@ script-src 'nonce-ae3b00'
 <br>
 <p>8.3. What is the flag for defend-3?<br>
 <code>THM{Hash_Y0ur_1nl1ne_Scr1pts}</code></p>
+<br>
 <br>
 
 <img width="1109" height="115" alt="image" src="https://github.com/user-attachments/assets/f57647ab-2bf4-44e2-a1a1-659096622d62" />
@@ -584,16 +595,17 @@ http://xxx.xx.xxx.xxx:3009</p>
 ```
 
 <br>
+<br>
 
 <img width="1116" height="241" alt="image" src="https://github.com/user-attachments/assets/cc9510bd-0ebc-49cd-9ea9-61d6ef4e3e4e" />
 
-
-
+<br>
 <br>
 
 <p><em>Report URI</em><br>
 https://report-uri.com/home/hash</p>
 
+<br>
 <br>
 
 ```bash
@@ -601,14 +613,16 @@ console.log("__defend-3_REAL=true")
 ```
 
 <br>
+<br>
 
 <img width="1109" height="287" alt="image" src="https://github.com/user-attachments/assets/680b40c1-268c-4ff0-9560-7b226f3857b7" />
 
 <br>
+<br>
 
 <img width="1122" height="358" alt="image" src="https://github.com/user-attachments/assets/e89ad6eb-019b-4a82-a6a9-5a15fc7ecda1" />
 
-
+<br>
 <br>
 
 ```bash
@@ -634,21 +648,8 @@ script-src 'sha256-8gQ3l0jVGr5ZXaOeym+1jciekP8wsfNgpZImdHthDRo='
 
 <img width="1118" height="295" alt="image" src="https://github.com/user-attachments/assets/9a3044d7-04d7-45b6-b5be-e7ec157fdb64" />
 
-
-
 <br>
 <br>
-<br>
-
-
-
-<br>
-<br>
-<br>
-
-
-
-
 
 
 <br>
