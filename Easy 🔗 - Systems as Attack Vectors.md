@@ -3,14 +3,13 @@
 <em>Learn how attackers exploit vulnerable and misconfigured systems, and how you can protect them.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/0c8bcb7f-0b48-4f59-8e72-a391b1dd6b0c"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/systemsattackvectors">here </a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/d5a73436-420b-4537-8b99-a5bcc4871223"></p>
 
 <br>
 
 <h2>Task 1 . Introduction</h2>
 <p>Continue exploring the SOC role in protecting the digital world, now focusing on systems as attack vectors. In this room, you will learn what the systems are, why and how threat groups target them, and what you can do as a SOC analyst to keep your company secure.</p>
 
-<br>
 <h3>Learning Objectives</h3>
 <p>
 
@@ -21,7 +20,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/systems
 <h3>Prerequisites</h3>
 <p>
 
-- Complete the <strong>Junior Security Analyst</strong> room
+- Complete the <strong>Junior Security Analyst Intro</strong> room
 - Complete the <strong>Humans as Attack Vectors</strong> room</p>
 
 <br>
@@ -155,7 +154,7 @@ Another common scenario is when the IT department unknowingly introduces new fla
 <br>
 <br>
 <h2>Task 6 . Practice</h2>
-<p>Remember our fortress analogy? Attackers are opportunists. They'll often seek the easiest path, whether through a flaw in the building itself or by manipulating someone to open a door. Attackers don't see "human hacking" and "system hacking" as separate, so you should apply equal effort into protecting both humans and systems, combining Mitigation and Detection:</p>
+<p>Remember our fortress analogy? Attackers are opportunists. They'll often seek the easiest path, whether through a flaw in the building itself or by manipulating someone to open a door. Attackers don't see "human hacking" and "system hacking" as separate, so you should apply equal effort into protecting both humans and systems, combining <strong>Mitigation</strong> and <strong>Detection</strong>:</p>
 
 <br>
 
@@ -183,12 +182,12 @@ Another common scenario is when the IT department unknowingly introduces new fla
 <p><em>Answer the questions below</em></p>
 
 <p>6.1. What flag did you receive after completing the "Systems at Risk" challenge?<br>
-<code>_________________________</code></p>
+<code>THM{patch_or_reconfigure?}</code></p>
 
 <br>
 
 <p>6.2. What flag did you receive after completing the "Remediation Plan" challenge?<br>
-<code>_________________________</code></p>
+<code>THM{best_systems_defender!}</code></p>
 
 <br>
 <br>
@@ -208,10 +207,9 @@ Another common scenario is when the IT department unknowingly introduces new fla
 <br>
 <br>
 <br>
-
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src=""><br>
-                  <img width="1200px" src=""></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c53eaace-633f-42b0-97a7-bad05af2974e"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/fc8af68a-2368-4b2a-ad29-dac5251d26a7"></p>
 
 <br>
 
@@ -222,16 +220,16 @@ Another common scenario is when the IT department unknowingly introduces new fla
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 14   |   465    |     120ᵗʰ    |      5ᵗʰ     |     381ˢᵗ   |     10ᵗʰ   | 121,274  |    918    |    73     |
+| 2025, August 14   |   465    |     120ᵗʰ    |      5ᵗʰ     |     302ⁿᵈ   |     9ᵗʰ    | 121,354  |    918    |    73     |
 
 
 </div>
 
-<p align="center">Global All Time:   120ᵗʰ<br><img width="250px" src=""><br>
-                                              <img width="1200px" src=""><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src=""><br>
-                  Global monthly:    381ˢᵗ<br><img width="1200px" src=""><br>
-                  Brazil monthly:     10ᵗʰ<br><img width="1200px" src=""><br>
+<p align="center">Global All Time:   120ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/8d119e4e-91b6-4ab8-a3af-3fbfa679d192"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/61afe0ca-9142-4ea4-819c-0d88fd813c0e"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/81f47408-c7fd-44d9-90be-7af80e29a569"><br>
+                  Global monthly:    302ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/118c785e-5529-477c-a07b-5eaf5c64c6b1"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2499cbee-ad76-46b4-9add-aa1ddf53215b"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
