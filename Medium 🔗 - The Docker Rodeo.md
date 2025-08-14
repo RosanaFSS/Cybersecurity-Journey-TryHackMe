@@ -41,23 +41,129 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 
 <p><em>Answer the questions below</em></p>
 
-<p>1.1.Let´s go<br>
+<p>1.1. Let´s go<br>
 <code>No answer needed</code></p>
 
 <br>
 <br>
 <h2>Task 2 . Introduction to Docker</h2>
+<h3> What is Docker?</h3>
 
 
+<h3>What are Docker "containers" & why are they used?</h3>
+
+
+<h3> What are Docker Images?</h3>
+
+<br>
+<p><em>Answer the question below</em></p>
+
+<p>2.1. Does Docker run on a Hypervisor? (Yay/Nay)<br>
+<code>Nay</code></p>
+
+<br>
+<br>
 <h2>Task 3 . Vulnerability #1: Abusing a Docker Registry</h2>
+<p>This task is a divider, please proceed onto the next task.</p>
 
+<br>
+<p><em>Answer the question below</em></p>
 
+<p>3.1.<br>
+<code>Nay</code></p>
+
+<br>
+<br>
 <h2>Task 4 . What is a Docker Registry?</h2>
+<p>Before we begin exploiting a Docker Registry, we need to first understand not only how we interact with them, but as to why they are so lucrative for us pentesters.<br>
 
+If you're familiar with Git and services such as GitHub and Gitlab, this'll be a breeze. However, let's explain a bit further to ensure we're all on the same page.<br>
 
+Docker Registries, at their fundamental, are used to store and provide published Docker images for use. Using repositories, creators of Docker images can switch between multiple versions of their applications and share them with other people with ease.<br>
+
+Public registries such as DockerHub exist, however, many organisations using Docker will host their own "private" registry.<br>
+
+Take for example the RustScan DockerHub registry. The developers have created a "tag" for every version of RustScan. As this is public, anyone can switch between the version of RustScan that they want to use with ease by downloading the image for the tag they want to use.</p>
+<br>
+
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/0eca69d7-9888-4449-bc87-bc9879570513"><br><br><em>TryHackMe</em></h6>
+
+<br>
+<p>I could simply do docker pull rustscan/rustscan:1.8.0 to use version 1.8.0 of RustScan, or I could use docker pull rustscan/rustscan:latest for the most recent update. For a Docker repository to do this, the repository must store the data about every tag - this is what we'll be exploiting.<br>
+
+Since Docker images are essentially just instruction manuals as we discussed earlier, they can be reversed to understand what commands took place when the image was being built - this information is stored in layers...We will come onto unpacking these layers in Task 4.</p>
+<br>
+<p><em>Answer the question below</em></p>
+
+<p>4.1. I've learnt about Docker registries<br>
+<code>Nay</code></p>
+
+<br>
+<br>
 <h2>Task 5 . Interacting with a Docker Registry</h2>
+<p>As with any system that we are going to be penetration testing, we need to enumerate the services running to understand any potential entry points. In our case, Docker Registry runs on port 5000 by default, however, this can be easily changed, so it is worth confirming via with a nmap scan like so: sudo nmap -sV xx.xxx.xx.xx</p>
 
 
+
+<p>Not only is Nmap capable of discovering the Docker Registry, but also the API version - this is important to note for how we will interact with it.<br>
+
+The Docker Registry is a JSON endpoint, so we cannot just simply interact with it like we would a normal website - we will have to query it. Whilst this can be done via the terminal or browser, dedicated tools such as Postman or Insomnia are much better suited for the job. I will be using Postman in this room.<br>
+
+To understand what routes are available to us, we need to read the Docker Registry Documentation. Please take the time to read this at your leisure.</p>
+<h3>Discovering Repositories </h3>
+<p>We need to send a <code>GET</code> request to <code>http://docker-rodeo.thm:5000/v2/_catalog</code> to list all the repositories registered on the registry</p>
+
+<p>In this example, we're given a response of three repositories. For now, we are only going to focus on "cmnatic/myapp1".<br>
+
+Before we can begin analysing a repository, we need two key pieces of information:<br>
+
+- The repository name<br>
+- Any repository tag(s) published</p>
+
+<p>We currently have the repository name (cmnatic/myapp1) now we just need to list all tags that have been published. Every repository will have a minimum of one tag. This tag is the "latest" tag, but there can be many tags, all with different code, for example, major software versions or two tags for "production" and "development".<br>
+
+Send a <code>GET</code> request to  <code>http://docker-rodeo.thm:5000/v2/repository/name/tags/list</code> to query all published tags. For our application, our request would look like so: <code>http://docker-rodeo.thm:5000/v2/cmnatic/myapp1/tags/list</code>:</p>
+
+
+<p>Note here we have three tags? That "notsecure" tag sure sounds interesting. We now have both pieces of information to retrieve the manifest files of the image for analysis.</p>
+
+<h3>Grabbing the Data!</h3>
+<p>With these two important pieces of information about a repository known, we can enumerate that specific repository for a manifest file. This manifest file contains various pieces of information about the application, such as size, layers and other information. I'm going to grab the manifest file for the "notsecure" tag via the following GET request: http://docker-rodeo.thm:5000/v2/cmnatic/myapp1/manifests/notsecure<br>
+
+Note the response - specifically the "history" key;  albeit slightly hard to read, we have a command that was executed during the image building stage stored in plaintext (echo \\\"here's a flag\\\" \\u003e /root/root.txt\"]` ). In this image, it's a string insert into /root/root.txt on the container. Although imagine if this was a password!</p>
+
+
+
+<h3>Now it's Your Turn...</h3>
+<p>Apply what we have done above, enumerate the 2nd Docker registry running on the Instance, find out what repositories are stored within it and ultimately extract some credentials for a database.</p>
+<br>
+<p><em>Answer the questions below</em></p>
+
+<p>5.1. What is the port number of the 2nd Docker registry?<br>
+<code>____</code></p>
+
+<br>
+
+<p>5.2. What is the name of the repository within this registry?<br>
+<code>____</code></p>
+
+<br>
+
+<p>5.3. What is the name of the tag that has been published?<br>
+<code>____</code></p>
+
+<br>
+
+<p>5.4. What is the Username in the database configuration?<br>
+<code>____</code></p>
+
+<br>
+
+<p>5.5. What is the Password in the database configuration?<br>
+<code>____</code></p>
+
+<br>
+<br>
 <h2>Task 6 . Vulnerability #2: Reverse Engineering Docker Images</h2>
 
 
