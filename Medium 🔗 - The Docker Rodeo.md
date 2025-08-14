@@ -45,6 +45,10 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 <code>No answer needed</code></p>
 
 <br>
+
+<img width="941" height="130" alt="image" src="https://github.com/user-attachments/assets/cf59d801-e9df-4052-9193-3702d7e36a0f" />
+
+<br>
 <br>
 <h2>Task 2 . Introduction to Docker</h2>
 <h3> What is Docker?</h3>
@@ -140,27 +144,46 @@ Note the response - specifically the "history" key;  albeit slightly hard to rea
 <p><em>Answer the questions below</em></p>
 
 <p>5.1. What is the port number of the 2nd Docker registry?<br>
-<code>____</code></p>
+<code>7000</code></p>
 
 <br>
 
+<img width="946" height="299" alt="image" src="https://github.com/user-attachments/assets/e08cca66-54ef-445f-b611-c5d4777b0161" />
+
+<br>
 <p>5.2. What is the name of the repository within this registry?<br>
-<code>____</code></p>
+<code>securesolutions/webserver</code></p>
+
+
+<img width="1133" height="205" alt="image" src="https://github.com/user-attachments/assets/710d0166-c696-44b2-a9bd-f4422457a1cf" />
+
+<br>
+
+<img width="672" height="31" alt="image" src="https://github.com/user-attachments/assets/62bd9386-f8cf-4766-8f68-65c4a6789ea0" />
 
 <br>
 
 <p>5.3. What is the name of the tag that has been published?<br>
-<code>____</code></p>
+<code>production</code></p>
+
+<br>
+
+<img width="1125" height="92" alt="image" src="https://github.com/user-attachments/assets/ccb4fc97-98bc-453d-bff3-09e8bf9b5ca1" />
+
 
 <br>
 
 <p>5.4. What is the Username in the database configuration?<br>
-<code>____</code></p>
+<code>admin</code></p>
+
+<br>
+
+<img width="1126" height="288" alt="image" src="https://github.com/user-attachments/assets/07096de0-281d-4a33-87db-276635083ff4" />
 
 <br>
 
 <p>5.5. What is the Password in the database configuration?<br>
-<code>____</code></p>
+<code>production_admin</code></p>
 
 <br>
 <br>
