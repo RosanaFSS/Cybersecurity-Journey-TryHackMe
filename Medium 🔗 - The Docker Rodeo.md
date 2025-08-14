@@ -17,7 +17,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerr
 - Take note of  the IP address for your deployed Instance: <code>MACHINE_IP</code></p>
 
 <h3>Add your Instance IP address to /etc/hosts</h3>
-<p>Once you have been given your IP address, you will need to create an entry in your <code>/etc/hosts</code>code> file with both the IP address and <code></code>docker-rodeo.thm</p>code></p>
+<p>Once you have been given your IP address, you will need to create an entry in your <code>/etc/hosts</code>code> file with both the IP address and <code>docker-rodeo.thm</p>code></p>
 <p>
 
 - <code>sudo nano /etc/hosts</code><br>
