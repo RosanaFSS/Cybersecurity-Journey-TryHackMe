@@ -1,5 +1,5 @@
 <h1 align="center">Event Horizon</h1>
-<p align="center">2025, August 8<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>459</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, August 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>464</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Unearth the secrets beyond the Event Horizon.</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/317f46fa-cd76-40e1-8eac-dd8a7ba2de1d"><br>
 Access this hard-level CTF clicking <a href="https://tryhackme.com/room/eventhorizonroom">here </a>.<br>
@@ -164,12 +164,9 @@ $ python3 a.py
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 13   |   463    |     124ᵗʰ    |      5ᵗʰ     |     336ᵗʰ   |     8ᵗʰ    | 120,866  |    914    |    73     |
+| 2025, August 13   |   464    |     124ᵗʰ    |      5ᵗʰ     |     336ᵗʰ   |     8ᵗʰ    | 120,866  |    914    |    73     |
 
 
 </div>
 
 <img width="1892" height="888" alt="image" src="https://github.com/user-attachments/assets/aef68c9b-50ea-4656-9ac6-6064b4ee3ba4" />
-
-
-
