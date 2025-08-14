@@ -68,8 +68,6 @@ A CSP policy can also be included within the page's HTML source code, using the 
 <p>2.3. If we want to log CSP violations, which directive do we need to set to have the browser report violations to us?<br>
 <code>report-uri</code></p>
 
-
-<br>
 <br>
 <h2>Task 3 . Sources</h2>
 <h3>Sources</h3>
@@ -102,8 +100,6 @@ A CSP policy can also be included within the page's HTML source code, using the 
 <p>3.2. What directive-source combination should we add to our policy if we want to specifically block all JavaScript content from running on our website??<br>
 <code>script-src 'none'</code></p>
 
-
-<br>
 <br>
 <h2>Task 4 . Creating a Content Security Policy</h2>
 <p>Now that we've mentioned some of the most commonly used sources, we can talk about how to build your security policy for your website. For a more interactive way of building your policy, I'd recommend report-uri.com's CSP generator as it's a great tool that you can use to experiment with various CSP settings without having to type them out manually. <br><br><br>
