@@ -12,11 +12,11 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 <p>
   
 - Nmap: 22/ssh and 80/http open<br>
-- Web port  80  .  Source Code . A : <br>Base64 decoding<br>BrainFuck decoding<br>Knock 1 3 5<br>Nmap<br>Gobuster<br><br>
-- Web port  80  .  Source Code . B : <br>Base58 decoding<br><br>
-- Web port 445  .  Source Code : <br>discovered a passowrd<br><br>
-- FTP port 21: <br>downloaded files<br>extracted out.txt from cool.jpeg<br><br>
-- Web port 445: <br>discovered a key<br>discovered username:password using CyberChef<br>logged in<br>
+- Web port  80  .  Source Code . A : Base64 decoding, BrainFuck decoding, Knock 1 3 5, Nmap, Gobuster<br><br>
+- Web port  80  .  Source Code . B :Base58 decoding<br><br>
+- Web port 445  .  Source Code : discovered a passowrd<br><br>
+- FTP port 21: downloaded files, extracted out.txt from cool.jpeg<br><br>
+- Web port 445: discovered a key, >discovered username:password using CyberChef, logged in<br>
 - Web port 8080: </p>
 
 <h2>Lateral Movement</h2>
