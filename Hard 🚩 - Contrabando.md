@@ -60,10 +60,7 @@ Please allow the VM 5 minutes to fully boot up.</p>
 
 <br>
 
-<img width="1352" height="495" alt="image" src="https://github.com/user-attachments/assets/c97d7380-f8e4-458d-8876-cc8d229f8e0e" />
 
-
-<br>
 
 <img width="1294" height="360" alt="image" src="https://github.com/user-attachments/assets/7d6a8114-b216-4012-a7f0-96ee35a69054" />
 
