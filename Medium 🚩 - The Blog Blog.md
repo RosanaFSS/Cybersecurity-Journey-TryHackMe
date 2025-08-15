@@ -8,7 +8,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 <br>
 <br>
 
-<h2>Enumeration</h2>
+<h2 align="center">Enumeration</h2>
 <p>
   
 - Nmap: 22/ssh and 80/http open<br>
@@ -19,7 +19,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 - Web port 445: discovered a key, >discovered username:password using CyberChef, logged in<br>
 - Web port 8080: </p>
 
-<h2>Lateral Movement</h2>
+<h2 align="center">Lateral Movement</h2>
 <p>
   
 - Reverse shell<br>
@@ -29,7 +29,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 - checked the files owned by bobloblaw, downloaded binary, analyzed it with Ghidra, run the binary with specific paremeters
 - shell as bobloblaw, discovered bobloblaw´s flag</p>
 
-<h2>Privilege Escalation</h2>
+<h2 align="center">Privilege Escalation</h2>
 <p>
 
 - connected via SSH using bobloblaw´s SSH private key<br>
@@ -53,7 +53,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 <p><em>Answer the questions below</em></p>
 
 
-<h2>Enumeration</h2>
+<h2 align="center">Enumeration</h2>
 <br>
 <h3>Nmap</h3>
 
@@ -325,7 +325,7 @@ Remember this next time bob, you need it to get into the blog! I'm taking this d
 <img width="1063" height="799" alt="image" src="https://github.com/user-attachments/assets/3da519b0-1adb-4b63-afde-558de8c21b33" />
 
 <br>
-<h2>Lateral Movement</h2>
+<h2 align="center">Lateral Movement</h2>
 <br>
 <h3>Reverse Shell</h3>
 
@@ -543,6 +543,7 @@ bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$
 
 <br>
 <br>
+<h2 align="center">Privilege Escalation</h2>
 
 <h3>SSH</h3>
 
