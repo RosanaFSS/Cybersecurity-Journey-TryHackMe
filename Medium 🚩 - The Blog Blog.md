@@ -12,21 +12,22 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 <p>
   
 - Nmap: 22/ssh and 80/http open<br>
-- Web port  80  .  Source Code . A : Base64 decoding, BrainFuck decoding, Knock 1 3 5, Nmap, Gobuster<br><br>
-- Web port  80  .  Source Code . B :Base58 decoding<br><br>
-- Web port 445  .  Source Code : discovered a passowrd<br><br>
-- FTP port 21: downloaded files, extracted out.txt from cool.jpeg<br><br>
+- Web port  80  .  Source Code . A : Base64 decoding, BrainFuck decoding, Knock 1 3 5, Nmap, Gobuster<br>
+- Web port  80  .  Source Code . B :Base58 decoding<br>
+- Web port 445  .  Source Code : discovered a passowrd<br>
+- FTP port 21: downloaded files, extracted out.txt from cool.jpeg<br>
 - Web port 445: discovered a key, >discovered username:password using CyberChef, logged in<br>
 - Web port 8080: </p>
 
 <h2>Lateral Movement</h2>
 <p>
   
-- Reverse shell<br><br>
-- shell as www-data<br><br>
-- reno.png and reno2.png : downloaded file reno.jpg and reno2.jpg<br>extracted dog.txt ad doggo.txt = rabbit hole<br><br>
-- identified an active cronjob<br><br>
-- checked the files owned by bobloblaw<br>downloaded binary<br>analyzed it with Ghidra<br><br>run the binary with specific paremeters<br>got a shell as bobloblaw<br>discovered bobloblaw´s flag</p>
+- Reverse shell<br>
+- shell as www-data<br>
+- reno.png and reno2.png : downloaded file reno.jpg and reno2.jpg<br>extracted dog.txt ad doggo.txt = rabbit hole<br>
+- identified an active cronjob<br>
+- checked the files owned by bobloblaw, downloaded binary, analyzed it with Ghidra, run the binary with specific paremeters
+- shell as bobloblaw, discovered bobloblaw´s flag</p>
 
 <h2>Privilege Escalation</h2>
 <p>
