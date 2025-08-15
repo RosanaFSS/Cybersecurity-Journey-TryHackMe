@@ -24,7 +24,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
   
 - Reverse shell<br>
 - shell as www-data<br>
-- reno.png and reno2.png : downloaded file reno.jpg and reno2.jpg<br>extracted dog.txt ad doggo.txt = rabbit hole<br>
+- reno.png and reno2.png : downloaded file reno.jpg and reno2.jpg, extracted dog.txt ad doggo.txt = rabbit hole<br>
 - identified an active cronjob<br>
 - checked the files owned by bobloblaw, downloaded binary, analyzed it with Ghidra, run the binary with specific paremeters
 - shell as bobloblaw, discovered bobloblaw´s flag</p>
@@ -32,12 +32,16 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblob
 <h2>Privilege Escalation</h2>
 <p>
 
-- connected via SSH using bobloblaw´s SSH private key<br><br>
-- lookatme.jpg and dontlookatthis.jpg: <br>donwloaded<br> extracted whatscooking.txt and dontlook.txt<br> = rabbit hole<br><br>
-- checked bobloblaw´s privileges<br><br>
-- executed pspy64 : <br>discovered a root´s task compiled in c and executed every minute = .boring_file.c<br>identified the availability of write permission<br>substituted its content<br><br>
-- set up a listener and waited one minute<br>
-- shell as root: <br> discovered root´s flag</p>
+- connected via SSH using bobloblaw´s SSH private key<br>
+- lookatme.jpg and dontlookatthis.jpg: donwloaded, extracted whatscooking.txt and dontlook.txt = rabbit hole<br>
+- checked bobloblaw´s privileges<br>
+- executed pspy64 : discovered a root´s task compiled in c and executed every minute = .boring_file.c<br>
+- there is write permission for .boring_file.c<br>
+- substituted its content<br>
+- set up a listener<br>
+- waited one minute<br>
+- shell as root<br>
+- discovered root´s flag</p>
 
 <br>
 <br>
