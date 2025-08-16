@@ -6,7 +6,6 @@ Access this TryHackMe´s CTF <a href="https://tryhackme.com/room/theblobblog">he
 <img width="1200px" src="https://github.com/user-attachments/assets/e6db0a83-3f62-44c9-844c-bfafcc9675fd"></p>
 
 <br>
-<br>
 
 <h2 align="center">Enumeration</h2>
 <p>
