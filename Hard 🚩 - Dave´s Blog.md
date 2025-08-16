@@ -1,9 +1,38 @@
 <h1 align="center">Dave´s Blog</h1>
-<p align="center">2025, August 15<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>467</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, August 16<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>467</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>My friend Dave made his own blog!</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/9554f5a6-ef1d-4ce2-8ea4-beb861619ebe"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/davesblog">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/9e2c0aa1-cf03-410c-beac-94f4d00e155c"></p>
+
+<br>
+<br>
+
+```bash
+:~/DavesBlog# nikto -h xx.xxx.xx.xxx
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          xx.xxx.xx.xxx
++ Target Hostname:    ip-xx.xxx.xx.xxx.ec2.internal
++ Target Port:        80
++ Start Time:         2025-08-16 xx:xx:xx (GMT1)
+---------------------------------------------------------------------------
++ Server: nginx/1.14.0 (Ubuntu)
++ Retrieved x-powered-by header: Express
++ Server leaks inodes via ETags, header found with file /, fields: 0xW/22e 0x8R1oIqXXVVXgZl/aE2f24LJICp0 
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ "robots.txt" contains 1 entry which should be manually viewed.
++ Uncommon header 'x-content-type-options' found, with contents: nosniff
++ Uncommon header 'content-security-policy' found, with contents: default-src 'self'
++ Allowed HTTP Methods: GET, HEAD 
++ 6544 items checked: 0 error(s) and 7 item(s) reported on remote host
++ End Time:           2025-08-16 xx:xx:xx (GMT1) (21 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+```
+
 
 <br>
 <br>
