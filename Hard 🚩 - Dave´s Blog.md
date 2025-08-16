@@ -457,9 +457,16 @@ dave@daves-blog:/$
 <br>
 
 
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 16   |   467    |     120ᵗʰ    |      5ᵗʰ     |     314ᵗʰ   |     6ᵗʰ    | 121,606  |    919    |    73     |
 
 
-
-
-
-
+</div>
