@@ -484,6 +484,62 @@ dave@daves-blog:/$
 
 <br>
 <br>
+<br>
+
+```bash
+:~/DavesBlog# nano import.py
+```
+
+<br>
+
+```bash
+:~/DavesBlog# cat import.py
+from pwn import *
+
+target_ip = "10.201.13.209"
+port = 4444
+
+print(f"[+] Connecting to {target_ip}:{port}...")
+conn = remote(target_ip, port)
+
+binary_data = conn.recvall()
+conn.close()
+print("[+] Binary received. Saving to disk...")
+
+with open("uid_checker", "wb") as f:
+    f.write(binary_data)
+
+print("[+] File saved as 'uid_checker'.")
+```
+
+<br>
+
+```bash
+# sender.py
+from pwn import *
+
+binary_path = "/uid_checker"
+port = 9001
+
+with open(binary_path, "rb") as f:
+    binary_data = f.read()
+
+server = listen(port)
+print(f"[+] Listening on port {port}...")
+
+conn = server.wait_for_connection()
+conn.send(binary_data)
+conn.close()
+print("[+] Binary sent.")
+```
+
+
+:~/DavesBlog# nc -nlvp 9001
+Listening on 0.0.0.0 9001
+
+
+<br>
+<br>
 
 
 <br>
