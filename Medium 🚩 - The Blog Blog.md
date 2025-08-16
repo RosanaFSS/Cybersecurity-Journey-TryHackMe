@@ -2,7 +2,7 @@
 <p align="center">2025, August 15<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>466</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Successfully hack into bobloblaw's computer</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/f40eb58c-ae86-4a46-b25f-3b48d57624ea"><br>
-Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/theblobblog">here </a>.<br>
+Access this TryHackMe´s CTF <a href="https://tryhackme.com/room/theblobblog">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/e6db0a83-3f62-44c9-844c-bfafcc9675fd"></p>
 
 <br>
