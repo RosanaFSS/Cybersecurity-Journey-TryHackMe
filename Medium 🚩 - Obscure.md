@@ -246,7 +246,8 @@ crtstuff.c
 <h3>/web/login</h3>
 <br>
 
-<img width="1130" height="361" alt="image" src="https://github.com/user-attachments/assets/78720187-3d69-4b9b-9835-5838ceaca5f3" />
+<img width="1223" height="334" alt="image" src="https://github.com/user-attachments/assets/7f9f502b-2b5e-4853-bfae-8196fd9aed18" />
+
 
 <br>
 <br>
