@@ -617,8 +617,7 @@ THM{581bfc26b53f2e167a05613eecf039bb}
 
 <br>
 
-<img width="1879" height="932" alt="image" src="https://github.com/user-attachments/assets/c46df186-4258-4562-9ca5-2568274c72f" />
-
+<img width="1907" height="900" alt="Screenshot 2025-08-17 182732" src="https://github.com/user-attachments/assets/d2fe9627-71f0-4fd2-8a53-d21997238d0c" />
 
 <br>
 
@@ -629,9 +628,17 @@ THM{581bfc26b53f2e167a05613eecf039bb}
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 17   |   468    |     120ᵗʰ    |      5ᵗʰ     |     328ᵗʰ   |     6ᵗʰ    | 121,636  |    920    |    73     |
+| 2025, August 17   |   468    |     121ˢᵗ    |      5ᵗʰ     |     330ᵗʰ   |     7ᵗʰ    | 121,786  |    921    |    73     |
 
 
 </div>
 
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/8b23511a-14fb-45af-8ee1-74c2f9f3eee0" />
 
+<img width="1902" height="891" alt="image" src="https://github.com/user-attachments/assets/ec655282-4610-4626-b13a-65ced729ad7c" />
+
+<img width="1892" height="890" alt="image" src="https://github.com/user-attachments/assets/d3f5a4cd-39f9-445e-afba-54bac2a522e9" />
+
+<img width="1896" height="898" alt="image" src="https://github.com/user-attachments/assets/5eb25330-ba3e-4130-8e1d-53b0ddeed86c" />
+
+<img width="1903" height="895" alt="image" src="https://github.com/user-attachments/assets/dcd23abd-5b9e-49fc-9186-11f5360ffe3a" />
