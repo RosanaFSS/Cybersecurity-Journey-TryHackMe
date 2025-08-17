@@ -3,7 +3,7 @@
 <em>Map? Where we are going, we don't need maps.</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/5d7c7537-2dee-4f46-9cd2-a126bd1444eb"><br>
 Access this CTF <a href="https://tryhackme.com/room/kitty">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/5d7c7537-2dee-4f46-9cd2-a126bd1444eb"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/e8a874e5-c332-4d56-9b12-beda9c8c1b2a"></p>
 
 
 <br>
@@ -25,11 +25,6 @@ Whenever you are ready, click on the Start Machine button to fire up the Virtual
 <code>THM{581bfc26b53f2e167a05613eecf039bb}</code></p>
 
 <br>
-
-
-<img width="1902" height="378" alt="image" src="https://github.com/user-attachments/assets/e8a874e5-c332-4d56-9b12-beda9c8c1b2a" />
-
-
 
 
 <h3>Nmap</h3>
