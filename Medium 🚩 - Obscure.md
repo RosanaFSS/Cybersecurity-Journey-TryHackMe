@@ -1,10 +1,9 @@
-
+<h1>Obscure</h1>
+<p>2025, August 16 - Day 467</p>
 <img width="1882" height="372" alt="image" src="https://github.com/user-attachments/assets/4acb4ddb-c100-440a-aa18-22443196fcf9" />
 
 
 <br>
-
-<h3>Nikto</h3>
 
 
 <h3>Nmap</h3>
