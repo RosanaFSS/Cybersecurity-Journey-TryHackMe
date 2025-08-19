@@ -139,13 +139,15 @@ apktool d file.apk
 <br>
 <br>
 
-<p><codejadx-gui</code>:   UI version of jadx.</p>
+<p><code>jadx-gui</code>:   UI version of jadx.</p>
 
 ```bash
 jadx\bin\jadx-gui
 ```
 
-<p><em>Answer the question below</em></p>
+<br>
+
+<p><em>Answer the questions below</em></p>
 
 <p>5.1. Tool for convert dex file to smali code?<br>
 <code>d2j-dex2smali</code></p>
@@ -301,7 +303,7 @@ With your favorite editor of text, Gedit/Vim/subl, etc…, grep or GUI decompile
 <h3>How to automatize this process?</h3>
 <p>It is very entertaining to do this manually, but in a real pentest the time is not our friend.</p>
 
-<h1 aign="center"> STATIC ANALYSIS - FRAMEWORKS</h1>
+<h1 align="center"> STATIC ANALYSIS - FRAMEWORKS</h1>
 <br>
 <h3>MARA Framework/h3>
 <p>Is a Mobile Application Reverse engineering and Analysis Framework. It is a tool that puts together commonly used mobile application reverse engineering and analysis tools, to assist in testing mobile applications against the OWASP mobile security threats. Its objective is to make this task easier and friendlier to mobile application developers and security professionals.</p>
@@ -334,9 +336,6 @@ and more....</p>
 <h3>MobSF</h3>
 <p>My favorite tool :3 is Mobile Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.</p>
 
-
-
-
 <p>
 
 - <code>Information<br>: Display data such as app icon, app name, size, package name etc.MD5 & SHA1 are also shown. They can be useful to detect known malicious applications.<br>
@@ -352,3 +351,21 @@ and more....</p>
 - <code>Malware analysis</code>: Determine the functionality, origin & potential impact of a given malware sample such as virus.<br>
 - <code>Reconnaissance</code><be>URL: Display list of URLs, IP addresses & the files in which they are stores or called. Analyzes where the android app sends the data & where it stores the info.<br>Emails<br>Strings: Analyzes the text files that are in the res directory. May contain sensitive data.<br>
 - <code>Components</code>: Display a complete list of components (activity, service, content provider & receiver), imported libraries & files without defining the extension.</p>
+
+<br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>6.1. What is the name of the firebase instance in the app Black Hat Europe?<br>
+<code>d2j-dex2smali</code></p>
+
+<br>
+
+<p>6.2. Android-InsecureBankv2 debug release, check this and what activity is not Protected.<br>
+<code>b</code></p>
+
+<br>
+
+<p>6.3. what is the malicious permissions in the app Android-InsecureBankv2?<br>
+<code>/data/app/com.swapcard.apps.android.blackhat=/base.apk</code></p>
+
