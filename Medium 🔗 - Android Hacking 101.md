@@ -305,7 +305,7 @@ With your favorite editor of text, Gedit/Vim/subl, etc…, grep or GUI decompile
 
 <h1 align="center"> STATIC ANALYSIS - FRAMEWORKS</h1>
 <br>
-<h3>MARA Framework/h3>
+<h3>MARA Framework</h3>
 <p>Is a Mobile Application Reverse engineering and Analysis Framework. It is a tool that puts together commonly used mobile application reverse engineering and analysis tools, to assist in testing mobile applications against the OWASP mobile security threats. Its objective is to make this task easier and friendlier to mobile application developers and security professionals.</p>
 <h4>Features:</h4>
 <h5>APK Manifest Analysis</h5>
@@ -338,7 +338,7 @@ and more....</p>
 
 <p>
 
-- <code>Information<br>: Display data such as app icon, app name, size, package name etc.MD5 & SHA1 are also shown. They can be useful to detect known malicious applications.<br>
+- <code>Information</code>: Display data such as app icon, app name, size, package name etc.MD5 & SHA1 are also shown. They can be useful to detect known malicious applications.<br>
 - <code> Scan options</code>: Rescan the application, Start the dynamic analysis, Check the java code & the manifest file
 - <br>
 - <code>Signer certificate</code>: Display certificate info, Determine if an application has come from its original source.<br>
