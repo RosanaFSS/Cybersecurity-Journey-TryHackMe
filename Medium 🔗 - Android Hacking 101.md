@@ -50,8 +50,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/android
 
 <p><em>Answer the question below</em></p>
 
-<p>3.1. <br>
-<code>No answer needed</code></p>
+<p><code>No answer needed</code></p>
+
 
 <br>
 <br>
@@ -290,7 +290,6 @@ git clone https://github.com/shivsahni/FireBaseScanner
 python FireBaseScanner.py -p /path/apk
 ```
 
-
 <br>
 <h3>Sensitive data in the cod</h3>
 <p> Users, passwords, internal IP and more ... <br>
@@ -357,15 +356,70 @@ and more....</p>
 <p><em>Answer the questions below</em></p>
 
 <p>6.1. What is the name of the firebase instance in the app Black Hat Europe?<br>
-<code>d2j-dex2smali</code></p>
+<code>swapcard-android-app-2014</code></p>
 
 <br>
 
 <p>6.2. Android-InsecureBankv2 debug release, check this and what activity is not Protected.<br>
-<code>b</code></p>
+<code>com.android.insecurebankv2.ChangePassword</code></p>
 
 <br>
 
+<img width="975" height="408" alt="image" src="https://github.com/user-attachments/assets/85f24f00-8173-422b-8563-e8a8e5a3acbd" />
+
+<br>
+<br>
+
+<h3>https://mobsf.live/</h3>
+
+<img width="964" height="244" alt="image" src="https://github.com/user-attachments/assets/147aaca1-2414-413e-aa17-efe5238bed5c" />
+
+<br>
+<br>
+
+<img width="969" height="264" alt="image" src="https://github.com/user-attachments/assets/93d7dcf5-4f1f-46b3-b7f2-8fd5bd7f31f1" />
+
+<br>
+<br>
+
+<img width="974" height="507" alt="image" src="https://github.com/user-attachments/assets/638532a5-46e7-4773-a29b-a6d880aa397b" />
+
+<br>
+<br>
+
+<img width="979" height="296" alt="image" src="https://github.com/user-attachments/assets/48511956-08b5-46b0-a409-dcd12cb4ccbf" />
+
+<br>
+<br>
+
+<img width="945" height="174" alt="image" src="https://github.com/user-attachments/assets/9a9f4e2d-e381-453a-9d59-b9ab042ca005" />
+
+<br>
+<br>
 <p>6.3. what is the malicious permissions in the app Android-InsecureBankv2?<br>
-<code>/data/app/com.swapcard.apps.android.blackhat=/base.apk</code></p>
+<code>android.permission.SEND_SMSk</code></p>
+
+<br>
+
+<img width="960" height="141" alt="image" src="https://github.com/user-attachments/assets/0bf9eeda-75da-4203-ad4d-5fe675ca326b" />
+
+<br>
+<br>
+<h2>Task 7 . Static Analysis - Complications</h2>
+
+<p>
+
+- <code>Obfuscate Code</code>: is the process of modifying an executable so that it is no longer useful to a hacker but remains fully functional. While the process may modify actual method instructions or metadata, it does not alter the output of the program. To be clear, with enough time and effort, almost all code can be reverse engineered. However, on some platforms (such as Java, Android, iOS and .NET) free decompilers can easily reverse-engineer source code from an executable or library in virtually no time and with no effort. Automated code obfuscation makes reverse-engineering a program difficult and economically unfeasible. <br>
+- <code>Proguard</code>: To obfuscate the code, use the Proguard utility, which makes these actions:<br>Removes unused variables, classes, methods, and attributes;<br>Eliminates unnecessary instructions;<br>Removes Tutorial information: obfuscate Androiddepuración code;<br>Renames classes, fields, and methods with unlegible names.<br>
+- <code>DEXGUARD</code>:The enhanced commercial version of Proguard. This tool is capable of implementing the text encryption technique and renaming classes and methods with non-ASCII symbols.<br>
+- <code>Deguard</code>: It is based on powerful probabilistic graphical models learned from thousands of open source programs. Using these models, Deguard retrieves important information in Android APK, including method and class names, as well as third-party libraries. Deguard can reveal string decoders and classes that handle sensitive data in Android malware.</p>
+
+<h1 = align="center">Static analysis – Deobfuscation</h1>
+
+<br>
+
+<p><em>Answer the question below</em></p>
+
+<p><code>No answer needed</code></p>
+
 
