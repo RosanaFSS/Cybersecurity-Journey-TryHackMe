@@ -301,7 +301,7 @@ With your favorite editor of text, Gedit/Vim/subl, etc…, grep or GUI decompile
 <h3>How to automatize this process?</h3>
 <p>It is very entertaining to do this manually, but in a real pentest the time is not our friend.</p>
 
-<h1 align="center"> STATIC ANALYSIS - FRAMEWORKS</h1>
+<h3 align="center"> STATIC ANALYSIS - FRAMEWORKS</h3>
 <br>
 <h3>MARA Framework</h3>
 <p>Is a Mobile Application Reverse engineering and Analysis Framework. It is a tool that puts together commonly used mobile application reverse engineering and analysis tools, to assist in testing mobile applications against the OWASP mobile security threats. Its objective is to make this task easier and friendlier to mobile application developers and security professionals.</p>
@@ -408,9 +408,9 @@ and more....</p>
 
 <p>
 
-- <code>Obfuscate Code</code>: is the process of modifying an executable so that it is no longer useful to a hacker but remains fully functional. While the process may modify actual method instructions or metadata, it does not alter the output of the program. To be clear, with enough time and effort, almost all code can be reverse engineered. However, on some platforms (such as Java, Android, iOS and .NET) free decompilers can easily reverse-engineer source code from an executable or library in virtually no time and with no effort. Automated code obfuscation makes reverse-engineering a program difficult and economically unfeasible. <br>
-- <code>Proguard</code>: To obfuscate the code, use the Proguard utility, which makes these actions:<br>Removes unused variables, classes, methods, and attributes;<br>Eliminates unnecessary instructions;<br>Removes Tutorial information: obfuscate Androiddepuración code;<br>Renames classes, fields, and methods with unlegible names.<br>
-- <code>DEXGUARD</code>:The enhanced commercial version of Proguard. This tool is capable of implementing the text encryption technique and renaming classes and methods with non-ASCII symbols.<br>
+- <code>Obfuscate Code</code>: is the process of modifying an executable so that it is no longer useful to a hacker but remains fully functional. While the process may modify actual method instructions or metadata, it does not alter the output of the program. To be clear, with enough time and effort, almost all code can be reverse engineered. However, on some platforms (such as Java, Android, iOS and .NET) free decompilers can easily reverse-engineer source code from an executable or library in virtually no time and with no effort. Automated code obfuscation makes reverse-engineering a program difficult and economically unfeasible. <br><br>
+- <code>Proguard</code>: To obfuscate the code, use the Proguard utility, which makes these actions:<br>Removes unused variables, classes, methods, and attributes;<br>Eliminates unnecessary instructions;<br>Removes Tutorial information: obfuscate Androiddepuración code;<br>Renames classes, fields, and methods with unlegible names.<br><br>
+- <code>DEXGUARD</code>:The enhanced commercial version of Proguard. This tool is capable of implementing the text encryption technique and renaming classes and methods with non-ASCII symbols.<br><br>
 - <code>Deguard</code>: It is based on powerful probabilistic graphical models learned from thousands of open source programs. Using these models, Deguard retrieves important information in Android APK, including method and class names, as well as third-party libraries. Deguard can reveal string decoders and classes that handle sensitive data in Android malware.</p>
 
 <h3 = align="center">Static analysis – Deobfuscation</h3>
