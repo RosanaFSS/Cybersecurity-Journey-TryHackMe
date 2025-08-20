@@ -414,12 +414,166 @@ and more....</p>
 - <code>DEXGUARD</code>:The enhanced commercial version of Proguard. This tool is capable of implementing the text encryption technique and renaming classes and methods with non-ASCII symbols.<br>
 - <code>Deguard</code>: It is based on powerful probabilistic graphical models learned from thousands of open source programs. Using these models, Deguard retrieves important information in Android APK, including method and class names, as well as third-party libraries. Deguard can reveal string decoders and classes that handle sensitive data in Android malware.</p>
 
-<h1 = align="center">Static analysis – Deobfuscation</h1>
+<h3 = align="center">Static analysis – Deobfuscation</h3>
 
 <br>
 
 <p><em>Answer the question below</em></p>
 
 <p><code>No answer needed</code></p>
+
+<br>
+<br>
+<h2>Task 8 . </h2>
+
+<p>is done running the program, <br>
+
+How install applications with adb?</p>
+
+```bash
+adb install apkfilename.apk
+```
+
+<p>okay, now how intercept traffic of the application?<br>
+
+<h3>Burp Suite</h3>
+<code>Burp Suite</code>: Is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application’s attack surface, through to finding and exploiting security vulnerabilities.</p>
+
+<h3>Configure the Burp Proxy Listener</h3>
+<p>Installing trusted CA at the Android OS level (Root device/Emulator) for Android N+ as the following:</p>
+
+```bash
+openssl x509 -inform PEM -subject_hash -in BurpCA.pem | head -1
+```
+
+<br>
+
+```bash
+cat BurpCA.pem > 9a5ba580.0
+```
+
+<br>
+
+```bash
+openssl x509 -inform PEM -text -in BurpCA.pem -out /dev/null >> 9a5ba580.0
+```
+
+<br>
+
+```bash
+adb root
+```
+
+<br>
+
+```bash
+openssl x509 -inform PEM -subject_hash -in BurpCA.pem | head -1
+```
+
+<br>
+
+```bash
+abd remount
+```
+
+<br>
+
+```bash
+adb push 9a5ba580.0 /system/etc/security/cacerts/
+```
+
+<br>
+
+```bash
+adb shell "chmod 644 /system/etc/security/cacerts/9a5ba580.0"
+```
+
+<br>
+
+```bash
+adb shell "reboot"
+```
+
+<br>
+
+<h3>PID Cat</h3>
+<p>Tool for</p>
+
+<br>
+
+<img width="2276" height="1736" alt="image" src="https://github.com/user-attachments/assets/5087e792-8a7b-4c79-8ae6-c77b8139c16f" />
+
+<br>
+<br>
+<h3>Drozer</h3>
+<p><code>Drozer</code> helps to provide confidence that Android apps and devices being developed by, or deployed across, your organisation do not pose an unacceptable level of risk. By allowing you to interact with the Dalvik VM, other apps’ IPC endpoints and the underlying OS.<br>
+
+drozer provides tools to help you use and share public exploits for Android. For remote exploits, it can generate shellcode to help you to deploy the drozer Agent as a remote administrator tool, with maximum leverage on the device.<br>
+
+drozer is a comprehensive security audit and attack framework for Android.<br>
+
+Basic example, Abusing unprotected activities:<br>
+
+The requirement for this is you have install drozer in your computer and drozer agent in your emulator or devices.</p>
+
+
+<p>
+  
+- Click in the title, for the tutorial of how install...<br>Commands:
+
+```bash
+adb forward tcp:31415 tcp:31415
+```
+
+```bash
+drozer console connect
+```
+
+- Now download and install apk for this example<br>
+- Retrieving package information:<br>
+
+```bash
+run app.package.list -> see all the packages installed
+```
+
+```bash
+run app.package.info -a -> view package information.
+```
+
+- Identifying the attack surface -> activities unprotected and more....<br>
+
+```bash
+run app.package.attacksurface package_name
+```
+
+- view what activities can be exploited<br>
+
+```bash
+run app.activity.info -f package_name
+```
+
+- start activities unprotected<br>
+
+```bash
+run app.activity.start --component package name component_name
+```
+
+<br>
+<br>
+<h3>Basic Cheatsheet of Drozer</h3>
+
+
+<div align="center">
+
+|Exploiting Content Provider                                       |Exploiting Service                                                 |
+| :--------------------------------------------------------------: |  :--------------------------------------------------------------: | 
+| run app.provider.info -a package_name<br>run scanner.provider.finduris -a package_name<br>run app.provider.query uri<br>run app.provider.update uri --selection conditions selection_arg column data<br>run scanner.provider.sqltables -a <br>package_name<br>run scanner.provider.injection -a package_name<br>run scanner.provider.traversal -a package_name|run app.service.info -a package_name<br>run app.service.start --action action --component package_name component_name<br>run app.service.send package_name component_name --msg what arg1 arg2 --extra type key value --bundle-as-obj<br><br><br<br>         | 
+
+</div>
+
+<p>
+  
+- https://github.com/as0ler/Android-Examples/raw/master/sieve.apk</p>
+
 
 
