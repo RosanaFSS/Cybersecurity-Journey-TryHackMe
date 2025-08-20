@@ -3,8 +3,7 @@
 <em>Android Mobile Application Penetration Testing</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/d4b70e24-b3e5-45eb-9209-6917d009c79c"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/androidhacking101">here </a>.<br>
-<img width="1200px" src=""></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/9a4745a8-6511-42c7-a60b-19609e62cf7d"></p>
 
 <br>
 <h2>Task 1 .  Introduction</h2>
@@ -424,7 +423,7 @@ and more....</p>
 
 <br>
 <br>
-<h2>Task 8 . </h2>
+<h2>Task 8 . Dynamic Analysis</h2>
 
 <p>is done running the program, <br>
 
@@ -439,7 +438,7 @@ adb install apkfilename.apk
 <h3>Burp Suite</h3>
 <code>Burp Suite</code>: Is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application’s attack surface, through to finding and exploiting security vulnerabilities.</p>
 
-<h3>Configure the Burp Proxy Listener</h3>
+<h4>Configure the Burp Proxy Listener</h4>
 <p>Installing trusted CA at the Android OS level (Root device/Emulator) for Android N+ as the following:</p>
 
 ```bash
@@ -536,6 +535,8 @@ drozer console connect
 run app.package.list -> see all the packages installed
 ```
 
+<br>
+
 ```bash
 run app.package.info -a -> view package information.
 ```
@@ -558,7 +559,6 @@ run app.activity.info -f package_name
 run app.activity.start --component package name component_name
 ```
 
-
 <h3>Basic Cheatsheet of Drozer</h3>
 
 <div align="center"><h6>
@@ -569,9 +569,167 @@ run app.activity.start --component package name component_name
 
 </h6></div><br>
 
-<p>
+<h3>Inspeckage - Android Package Inspector</h3>
+<p>My favorite tool, Inspeckage is a tool developed to offer dynamic analysis of Android applications. By applying hooks to functions of the Android API, Inspeckage will help you understand what an Android application is doing at runtime. Inspeckage will let you interact with some elements of the app, such as activities and providers (even unexported ones), and apply some settings on Android.<br>
+
+Since dynamic analysis of Android applications (usually through hooks) is a core part of several mobile application security tests, the need of a tool that can help us do said tests is real. Even though there are other tools that promise to help you do that, I’ve run across some limitations when testing them:<br>
+
+- Lack of interaction with the user doing the tests;<br>
+- Only work in emulators;<br>
+- Plenty of time to update the tool after an Android update;<br>
+- Very poor output;<br>
+- Very costly setup.</p>
+
+<h4>Android Package Inspector Features</h4>
+<p>With Inspeckage, we can get a good amount of information about the application’s behavior:
+
+- Information gathering:<br>Requested Permissions;<br>App Permissions;<br>Shared Libraries;<br>Exported and Non-exported Activities, Content Providers,Broadcast Receivers and Services;<br>Check if the app is debuggable or not;<br>Version, UID and GIDs;<br>etc.<bbr>
+- Hooks: With the hooks, we can see what the application is doing in real time:<br>Shared Preferences (log and file);<br>Serialization;<br>Crypto;<br>Hashes;<br>SQLite;<br>HTTP (an HTTP proxy tool is still the best alternative);<br>File System;<br>Miscellaneous (Clipboard, URL.Parse());<br>WebView;<br>IPC</p>
+
+<h3>Important: Insecure Data Storage</h3>
+<p> ... </p>
+
+<p><em>Answer the question below</em></p>
+
+<p>7.1. Read the above.<br>
+<code>No answer needed</code></p>
+
+<br>
+<br>
+<h2>Task 9 . Dynamic Analysis - Complications</h2>
+<h3>Root Detection in Android device:</h3>
+<br>
+<p>...</p>
+
+
+<h3>Emulator Detection:</h3>
+<br>
+<p>...</p>
+
+<h3>SSL Pinning: </h3>
+<br>
+<p>...</p>
+
+
+<p><em>Answer the question below</em></p>
+
+<p><code>No answer needed</code></p>
+
+<br>
+<br>
+<h2>Task 10 . Bypass - Complications in Dynamic Analysis</h2>
+<h3>Hooking applications:</h3>
+<p>Techniques used to alter the behaviour of applications
+
+<h4>Frida</h4>
+<p>In short, it is a dynamic instrumentation framework, which enables function hooking and allows to provide a definition to it during runtime. Basically, it injects JavaScript code into a process. Suppose, there is a function called “foo” in a program with a specific body/implementation. Using “Frida”, one can change the body/implementation of the “foo” function during runtime. “Frida” supports a variety of platforms like Windows, macOS, GNU/Linux, iOS, Android, and QNX. More information on “Frida” can be found here.<br>
+
+- for install<br>
+
+```bash
+pip install frida-tools
+```
+
+- Now check version and download the server, in my case is 12.6.8<br>
+
+```bash
+frida --version
+```
+
+- unzip file and push the server in the local system /data/local/tmp<br>
+
+```bash
+adb push /path/serverfrida /data/local/tmp
+```
+
+- Permissions<br>
+
+```bash
+adb shell chmod 777 /data/local/tmp/frida-server
+```
+
+- run frida server<br>
+
+```bash
+adb shell /data/local/tmp/frida-servername&
+```
+
+- now execute in your command line <code>frida-ps -U</code><br>
+
+- <a href="https://medium.com/@ved_wayal/hail-frida-the-universal-ssl-pinning-bypass-for-android-e9e1d733d29">Bypass SSL pinning tutorial</a></p>
+
+<p>More hooks :v is your mision :33 </p>
+
+<p><em>Answer the question below</em></p>
+
+<p><code>No answer needed</code></p>
+
   
-- https://github.com/as0ler/Android-Examples/raw/master/sieve.apk</p>
+```bash
+:~/AndroidHacking101# pip3 install frida-tools
+...
+:~/AndroidHacking101# frida --version
+```
+
+<br>
+
+<img width="981" height="107" alt="image" src="https://github.com/user-attachments/assets/a6502c58-8744-4028-8455-cd86d11711a1" />
+
+<br>
+<br>
+<h2>Task 11.Final</h2>
+
+<p>This is a basic introduction to what is android hacking. Applications in CTFs are much more difficult than a real-life application.<br>
+
+Questions?<br>
+
+In discord: stuxnet, in twitter: _stuxnet, telelegram: stuxnet<br>
+
+You want to know more?<br>
+
+Check this<br>
+
+- <a href="https://www.owasp.org/index.php/Mobile_Top_10_2016-Top_10">Owasp Mobile Top 10</a><br>
+- <a href="https://www.owasp.org/index.php/OWASP_Mobile_Security_Testing_Guide">Mobile Security Testing Guide (MSTG)</a><br>
+- <a href="https://twitter.com/mobilesecurity">Mobile Security Twitter</a><br><br>
+
+See you in other occasion! good luck hacker <br>
+
+Try Harder! </p>
+
+<p><em>Answer the question below</em></p>
+
+<p><code>No answer needed</code></p>
 
 
+<br>
+<br>
 
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ac73e28d-9710-4220-b65f-49648b458808"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/d1ae8ce0-719c-4644-9012-8c20b85a0c9d"></p>
+
+<br>
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 19   | 470      |    120ᵗʰ     |      5ᵗʰ     |     385ᵗʰ   |     9ᵗʰ    | 122,030  |    923    |    73     |
+
+</div>
+
+<p align="center">Global All Time:   120ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/bbc50483-18ee-4687-88ea-679c94626469"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/8a9eab70-0db2-41b6-97b6-7d864abbf0e9"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/1d64fe11-f76e-4fad-a862-608495bfefb5"><br>
+                  Global monthly:    385ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/333ef8af-c92c-48ca-a7de-1874acafb3f3"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7e24cff8-f04f-4ff4-9141-eb5c07ae1dd9"><br>
+
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
