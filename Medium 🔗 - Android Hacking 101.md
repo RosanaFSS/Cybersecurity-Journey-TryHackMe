@@ -558,16 +558,14 @@ run app.activity.info -f package_name
 run app.activity.start --component package name component_name
 ```
 
-<br>
-<br>
-<h3>Basic Cheatsheet of Drozer</h3>
 
+<h3>Basic Cheatsheet of Drozer</h3>
 
 <div align="center">
 
-|Exploiting Content Provider                                       |Exploiting Service                                                 |
-| :--------------------------------------------------------------: |  :--------------------------------------------------------------: | 
-| run app.provider.info -a package_name<br>run scanner.provider.finduris -a package_name<br>run app.provider.query uri<br>run app.provider.update uri --selection conditions selection_arg column data<br>run scanner.provider.sqltables -a <br>package_name<br>run scanner.provider.injection -a package_name<br>run scanner.provider.traversal -a package_name|run app.service.info -a package_name<br>run app.service.start --action action --component package_name component_name<br>run app.service.send package_name component_name --msg what arg1 arg2 --extra type key value --bundle-as-obj<br><br><br<br>         | 
+|Exploiting Content Provider                                      |Exploiting Service                                                 |
+| :-------------------------------------------------------------- |  :-------------------------------------------------------------- | 
+| run app.provider.info -a package_name<br>run scanner.provider.finduris -a package_name<br>run app.provider.query uri<br>run app.provider.update uri --selection conditions selection_arg column data<br>run scanner.provider.sqltables -a <br>package_name<br>run scanner.provider.injection -a package_name<br>run scanner.provider.traversal -a package_name|run app.service.info -a package_name<br>run app.service.start --action action --component package_name component_name<br>run app.service.send package_name component_name --msg what arg1 arg2 --extra type key value --bundle-as-obj<br><br><br<br>| 
 
 </div>
 
