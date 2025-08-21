@@ -233,7 +233,6 @@ index=task5 (process=CRON OR process=crontab) *connect*
 
 <p>6.1. Which URI path had the highest number of requests?<br>
 <code>/wp-login.php</code>
-
 <br>
 
 ```bash
@@ -243,7 +242,6 @@ index=task6
 ```
 
 <br>
-<br>
 
 <img width="935" height="646" alt="image" src="https://github.com/user-attachments/assets/d65337b4-b9eb-44d0-8973-047c3901ae8c" />
 
@@ -251,7 +249,6 @@ index=task6
 <br>
 <p>6.2. Which IP address was the source of the activity?<br>
 <code>10.10.243.134</code>
-
 <br>
 
 ```bash
@@ -261,7 +258,6 @@ index=task6 *wp-login.php*
 ```
 
 <br>
-<br>
 
 <img width="1175" height="360" alt="image" src="https://github.com/user-attachments/assets/7b09ba79-5d60-498d-9045-8b6e0810fa46" />
 
@@ -269,6 +265,12 @@ index=task6 *wp-login.php*
 <br>
 <p>6.3. How can this activity be classified?<br>
 <code>Brute Force</code>
+  
+  
+<br>
+<br>
+<p>6.3. Which tool did the threat actor use?<br>
+<code>WPScan</code>
 
 <br>
 
