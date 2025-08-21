@@ -94,7 +94,10 @@ index=task4  DestinationPort=5678
 
 <p>
 
-- Source</p>
+- click <code>Event Actions</code><br>
+- click <code>Show Source</p>
+
+<br>
 
 <img width="1274" height="399" alt="image" src="https://github.com/user-attachments/assets/2ce6dfee-4c7d-4dc1-9405-ba61893bab0f" />
 
