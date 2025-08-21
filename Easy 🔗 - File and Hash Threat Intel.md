@@ -193,10 +193,10 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <br>
 <br>
 <p>4.4. The payroll.pdf application seems to be masquerading as which known Windows file?<br>
-<code>svchost.exe</code>
+<code>svchost.exe</code></p>
 <br>
 
-<img width="1077" height="501" alt="image" src="https://github.com/user-attachments/assets/4de2b29d-f59d-4363-86da-9bdc9ffb0481" />
+<p><img width="1077" height="501" alt="image" src="https://github.com/user-attachments/assets/4de2b29d-f59d-4363-86da-9bdc9ffb0481" /></p>
 
 <br>
 <br>
@@ -204,34 +204,33 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <p>
   
 - D202ED020ED8E36BD8A0F5B571A19D386C12ABECB2A28C989D50BBF92C78F54E</p>
+<br>
 
-
-<img width="1311" height="682" alt="image" src="https://github.com/user-attachments/assets/a9e6e6c6-01ba-4d99-bf39-22c5f80b1470" />
-
+<p><img width="1311" height="682" alt="image" src="https://github.com/user-attachments/assets/a9e6e6c6-01ba-4d99-bf39-22c5f80b1470" /></p>
 
 <br>
 <br>
 
-<img width="1226" height="757" alt="image" src="https://github.com/user-attachments/assets/e299db91-ebf2-4cae-8bd7-9785ca43a027" />
+<p><img width="1226" height="757" alt="image" src="https://github.com/user-attachments/assets/e299db91-ebf2-4cae-8bd7-9785ca43a027" /></p>
 
 
 <br>
 <br>
 <br>
 <p>4.5. What associated URL is linked to the file?<br>
-<code>hxxp://121.182.174.27:3000/server.exe</code>
+<code>hxxp://121.182.174.27:3000/server.exe</code></p>
 <br>
 
-<img width="1222" height="308" alt="image" src="https://github.com/user-attachments/assets/cff088b4-1f8d-4ff1-9b39-f9895a36e200" />
+<p><img width="1222" height="308" alt="image" src="https://github.com/user-attachments/assets/cff088b4-1f8d-4ff1-9b39-f9895a36e200" /></p>
 
 <br>
 <br>
 <br>
 <p>4.6. How many extracted strings were identified from the sandbox analysis of the file?<br>
-<code>454</code>
+<code>454</code></p>
 <br>
 
-<img width="1222" height="301" alt="image" src="https://github.com/user-attachments/assets/6bbfef03-3421-4643-9d56-0834e4033faa" />
+<p><img width="1222" height="301" alt="image" src="https://github.com/user-attachments/assets/6bbfef03-3421-4643-9d56-0834e4033faa" /></p>
 
 <br>
 <br>
