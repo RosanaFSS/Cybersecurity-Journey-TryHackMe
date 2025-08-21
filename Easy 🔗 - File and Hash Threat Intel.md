@@ -190,7 +190,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <img width="1306" height="346" alt="image" src="https://github.com/user-attachments/assets/09948fe1-d5cb-4a66-a223-9b3f716bc0de" />
 
 <br>
-<br><br>
+<br>
+<br>
 <p>4.4. The payroll.pdf application seems to be masquerading as which known Windows file?<br>
 <code>svchost.exe</code>
 <br>
@@ -227,10 +228,12 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <br>
 <br>
 <p>4.6. How many extracted strings were identified from the sandbox analysis of the file?<br>
-<code>_________</code>
+<code>454</code>
 <br>
 
+<img width="1222" height="301" alt="image" src="https://github.com/user-attachments/assets/6bbfef03-3421-4643-9d56-0834e4033faa" />
 
+<br>
 <br>
 <br>
 <h2>Task 5 . Threat Intelligence Challenge</h2>
