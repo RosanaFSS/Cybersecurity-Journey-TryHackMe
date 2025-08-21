@@ -158,26 +158,26 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <p>5.1. What is the SHA256 hash of the file?<br>
 <code>43b0ac119ff957bb209d86ec206ea1ec3c51dd87bebf7b4a649c7e6c7f3756e7</code></p>
-<br>
 
 <img width="871" height="86" alt="image" src="https://github.com/user-attachments/assets/f6f6af05-8915-422a-94b2-8a34d32ce51e" />
 
 <br>
 <br>
+<br>
 <p>5.2. What family labels are assigned to the file on VirusTotal?<br>
 <code>akira, filecryptor</code></p>
-<br>
 
 <img width="1336" height="457" alt="image" src="https://github.com/user-attachments/assets/f186d540-be43-4495-9919-46608c1b240e" />
 
 <br>
 <br>
+<br>
 <p>5.3. How many security vendors have flagged the file as malicious?.<br>
 <code>61</code></p>
-<br>
 
 <img width="1335" height="467" alt="image" src="https://github.com/user-attachments/assets/9cc7f9bd-c9a2-4221-ab5b-ba92fafeb0ea" />
 
+<br>
 <br>
 <br>
 <p>5.4. Name the text file dropped during the execution of the malicious file.<br>
@@ -187,6 +187,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 <br>
+<br>
 <p>5.5. What PowerShell script is observed to be executed?<br>
 <code>Get-WmiObject Win32_Shadowcopy | Remove-WmiObject</code></p>
 
@@ -194,10 +195,9 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 <br>
+<br>
 <p>5.6. What is the MITRE ATT&CK ID associated with this execution? <br>
 <code>T1490</code></p>
-<br>
-
 <p>
   
 - https://attack.mitre.org/versions/v14/techniques/T1490/</p>
