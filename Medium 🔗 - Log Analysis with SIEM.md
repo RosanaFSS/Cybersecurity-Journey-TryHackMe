@@ -308,13 +308,9 @@ index=task6 uri_path="/wp-login.php" clientip="10.10.243.134" method=POST
 <br>
 <br>
 
-<img width="1903" height="888" alt="image" src="https://github.com/user-attachments/assets/cb4cfc0c-7de7-4184-8e0c-e6aaaf671cbb" />
-
-
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/835bd5fa-43e1-453d-bb8f-aa2abc4392f1"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/0198cbf1-79d3-4d7a-91a9-b94fcc18ff8d"></p>
-
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/cb4cfc0c-7de7-4184-8e0c-e6aaaf671cbb"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/68acb283-7e70-4e1b-9585-de8ed7df0c06"></p>
 
 <br>
 
