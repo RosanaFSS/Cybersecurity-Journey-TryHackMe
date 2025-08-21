@@ -327,9 +327,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 
-<img width="1892" height="889" alt="image" src="https://github.com/user-attachments/assets/34711c50-a11f-44bb-b8d7-768fe50e793d" />
-
-
 <h1 align="center">My TryHackMe Journey</h1>
 
 <div align="center">
