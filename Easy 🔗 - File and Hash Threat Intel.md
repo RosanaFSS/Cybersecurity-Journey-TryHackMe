@@ -30,7 +30,10 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <h3>Lab Access</h3>
 <p>Before proceeding, start the lab by clicking the <strong>Start Machine</strong> button below. The VM will open in split view and take about 2 minutes to load fully. If it is not visible, click the Show Split View button at the top of the page.</p>
-<p> ... </p>
+
+<br>
+
+<p><img width="400px" src="https://github.com/user-attachments/assets/65bf2167-f533-452d-8a5c-1c6bbc5378fe"></p>
 
 <br>
 
