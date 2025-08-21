@@ -1,5 +1,5 @@
 <h1 align="center">File and Hash Threat Intel</h1>
-<p align="center">2025, August 19<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>471</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, August 21<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>472</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>AThis room seeks to teach on enriching file and hash artefacts using threat intelligence.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/8b0dd014-2e1b-4ce7-8d84-43e508ba3842"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileandhashthreatintel">here </a>.<br>
@@ -33,7 +33,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 
-<p><img width="400px" src="https://github.com/user-attachments/assets/65bf2167-f533-452d-8a5c-1c6bbc5378fe"></p>
+<p align="center"><img width="400px" src="https://github.com/user-attachments/assets/65bf2167-f533-452d-8a5c-1c6bbc5378fe"></p>
 
 <br>
 
@@ -46,16 +46,41 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <br>
 <h2>Task 2 . Filenames and Paths</h2>
 <p>You might encounter a suspicious file, such as Setup.exe, and must get as much context about it as possible. Human-readable strings, such as filepaths, are the earliest heuristics available to an analyst. When alone, they do not prove maliciousness but can reveal attacker tradecraft patterns when viewed with scepticism.</p>
-<p> ... </p>
+<h3>Filepath Analysis</h3>
+<p>File paths and names are like crime scene clues, revealing attacker behaviour. Attackers may use different disk locations to hide their actions and reduce visibility. For example:
+
+- <code>C:\</code> (System drive) can be a common target for persistence mechanisms.<br>
+- <code>C:\Users\Public</code> profile can enable cross-user access of detonated adversary tools.<br>
+- <code>C:\Users\Public\Public Downloads</code> provides a high-traffic directory that would often evade strict monitoring.</p>
+
+<p>Additionally, adversaries may utilise other malware staging patterns such as:<br>
+
+- Utilising temporary directories such as <code>C:\Windows\Temp\</code> for ephemeral payloads.<br>
+- Placing payloads in writable system paths, such as <code>C:\ProgramData\</code> for stealth persistence.</p>
+
+<h3>Filename Heuristic Indicators</h3>
+<p>Attackers are also known to modify filenames to escape detection through implementing various types of heuristic indicators, including:<br><br>
+
+- <code>Double extensions</code> - An example of this would be <code>invoice.pdf.exe</code>, which leverages default Windows settings that hide file extensions.<br><br>
+
+- <code>System binary impersonation</code> - A filename such as <code>scvhost.exe</code> abuses the user's familiarity with core system processes. Defenders should include legitimate locations for system processes in an allowlist, rather than standalone filenames.<br><br>
+
+- <code>High-entropy Strings</code> – A filename such as <code>jh8F21.exe</code> suggests automated packing or polymorphic generation, which is commonly used in a high-churn phishing operation.<br><br>
+
+- <code>Masquerading</code> - Filenames such as <code>backup-2300.exe</code> can blend with routine files, thus leveraging on reduced suspicion. Another example is a single character substitution, which can bypass detection while looking visually legitimate to an unsuspecting employee.</p>
 
 <br>
 
 <p><em>Answer the question below</em></p>
 
 <p>2.1. One file displays one of the indicators mentioned. Can you identify the file and the indicator? (Answer: file, property)<br>
-<code>___________________________</code></p>
+<code>payroll.pdf, Double extensions</code></p>
 
+<br>
 
+<img width="1002" height="594" alt="image" src="https://github.com/user-attachments/assets/9ac9b125-eb86-447f-a7be-778e855b0184" />
+
+<br>
 <br>
 <br>
 <h2>Task 3 . File Hash Lookup</h2>
@@ -67,7 +92,10 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <code>2672b6688d7b32a90f9153d2ff607d6801e6cbde61f509ed36d0450745998d58</code></p>
 <br>
 
+<img width="1299" height="480" alt="image" src="https://github.com/user-attachments/assets/32f2ed54-a545-45cc-b24c-7395f580eca9" />
 
+<br>
+<br>
 <br>
 <p>3.2. On VirusTotal, what is the threat label used to identify the malicious file?<br>
 <code>trojan.graftor/flystudio</code></p>
@@ -76,6 +104,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <img width="1878" height="893" alt="image" src="https://github.com/user-attachments/assets/0d180f18-c3b8-48bd-81f4-cf4bd98d5aff" />
 
 <br>
+<br>
+<br>
 <p>3.3. When was the file first submitted for analysis? (Answer format: YYYY-MM-DD HH:MM:SS)<br>
 <code>2025-05-15 12:03:49</code></p>
 <br>
@@ -83,19 +113,49 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <img width="1898" height="208" alt="image" src="https://github.com/user-attachments/assets/14d0f27e-3f7b-4074-a798-9b1e91661ef6" />
 
 <br>
+<br>
+<br>
 <p>3.4. According to MalwareBazaar, which vendor classified the Morse-Code-Analyzer file as non-malicious?<br>
 <code>CyberFortress</code></p>
 <br>
 
+<p>
 
+- https://bazaar.abuse.ch/</p>
+<br>
+
+sha256:1F8806869616C18CBAE9FFCF581C0428915D32FB70119DF16D08078D92D1A5E3
+
+
+<img width="1307" height="128" alt="image" src="https://github.com/user-attachments/assets/98fe8dcf-c9ec-4509-8da5-7a65aa890b97" />
+
+<br>
+<br>
+
+<img width="1257" height="583" alt="image" src="https://github.com/user-attachments/assets/c176f9d7-1bc0-4f03-9a75-501b8bc78de1" />
+
+<br>
+<br>
+
+<img width="1307" height="405" alt="image" src="https://github.com/user-attachments/assets/99bc1484-2e5c-4a76-b69a-407e5a8a1e8a" />
+
+<br>
+<br>
 <br>
 <p>3.5. On VirusTotal, what MITRE technique has been flagged for persistence and privilege escalation for the Morse-Code-Analyzer file?<br>
 <code>DLL Side-Loading</code></p>
 <br>
 
+<img width="1896" height="731" alt="image" src="https://github.com/user-attachments/assets/2f29707f-92d0-4122-9c47-0bfdd228eda2" />
 
 <br>
 <br>
+
+<img width="1902" height="290" alt="image" src="https://github.com/user-attachments/assets/df3a29a9-6b7e-4803-aebc-e4ee1a6f5b76" />
+
+<br>
+<br>
+
 <h2>Task 4 . Sandbox Analysis</h2>
 <br>
 
@@ -224,5 +284,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <br>
 <p>D</p>
 <p>1f8806869616c18cbae9ffcf581c0428915d32fb70119df16d08078d92d1a5e3</p>
+1f8806869616c18cbae9ffcf581c0428915d32fb70119df16d08078d92d1a5e
+
+2672B6688D7B32A90F9153D2FF607D6801E6CBDE61F509ED36D0450745998D58
 
 <img width="1886" height="885" alt="image" src="https://github.com/user-attachments/assets/3266a111-509a-4a7f-9521-8b88c3af767e" />
