@@ -57,11 +57,10 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/loganal
 
 <p>4.1. Which IP address was the connection established with?<br>
 <code>10.10.114.80</code></p>
-<br>
+
 <p>
 
 - select <code>All time</code></p>
-<br>
 
 <br>
 
