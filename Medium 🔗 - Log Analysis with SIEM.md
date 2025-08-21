@@ -1,8 +1,8 @@
 <h1 align="center">Log Analysis with SIEM</h1>
 <p align="center">2025, August 21<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>472</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>AThis room seeks to teach on enriching file and hash artefacts using threat intelligence.</em><br>
-<img width="80px" src="https://github.com/user-attachments/assets/8b0dd014-2e1b-4ce7-8d84-43e508ba3842"><br>
-Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileandhashthreatintel">here </a>.<br>
+<em>Learn how SIEM solutions can be used to detect and analyse different types of malicious behaviour.</em><br>
+<img width="80px" src="https://github.com/user-attachments/assets/ea97b004-3844-459e-9d17-021c2523a7bc"><br>
+Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/loganalysiswithsiem">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/dae64b77-18e1-4b0e-93a7-8cccf1328d32"></p>
 
 
