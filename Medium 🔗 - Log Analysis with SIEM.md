@@ -313,13 +313,6 @@ index=task6 uri_path="/wp-login.php" clientip="10.10.243.134" method=POST
                   <img width="1200px" src="https://github.com/user-attachments/assets/68acb283-7e70-4e1b-9585-de8ed7df0c06"></p>
 
 <br>
-
-<img width="1892" height="889" alt="image" src="https://github.com/user-attachments/assets/34711c50-a11f-44bb-b8d7-768fe50e793d" />
-
-<img width="1912" height="900" alt="image" src="https://github.com/user-attachments/assets/20242dc5-99d4-491d-972a-62e0a3a838e8" />
-
-
-
 <h1 align="center">My TryHackMe Journey</h1>
 
 <div align="center">
