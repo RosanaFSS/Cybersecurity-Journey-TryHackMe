@@ -3,8 +3,7 @@
 <em>AThis room seeks to teach on enriching file and hash artefacts using threat intelligence.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/8b0dd014-2e1b-4ce7-8d84-43e508ba3842"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileandhashthreatintel">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/7023575a-62f2-48d1-8e29-8e5895daf862"></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/dae64b77-18e1-4b0e-93a7-8cccf1328d32"></p>
 
 
 <br>
@@ -320,3 +319,34 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 <br>
+
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/835bd5fa-43e1-453d-bb8f-aa2abc4392f1"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/0198cbf1-79d3-4d7a-91a9-b94fcc18ff8d"></p>
+
+
+<br>
+
+<img width="1892" height="889" alt="image" src="https://github.com/user-attachments/assets/34711c50-a11f-44bb-b8d7-768fe50e793d" />
+
+
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     326ᵗʰ   |     9ᵗʰ    | 122,182  |    922    |    73     |
+
+</div>
+
+<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/1fe63294-45db-49ca-ae7a-e1aa600bdc80"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/34711c50-a11f-44bb-b8d7-768fe50e793d"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fe556708-5e07-44ea-950b-d685c9c2e90f"><br>
+                  Global monthly:    382ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/898eec3e-e12a-4af8-884d-b73a2d3dbbb6"><br>
+                  Brazil monthly:      8ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/090b3f6a-787b-4aa5-9f92-90f05a5e203b"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
