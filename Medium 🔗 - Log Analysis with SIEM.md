@@ -3,8 +3,7 @@
 <em>Learn how SIEM solutions can be used to detect and analyse different types of malicious behaviour.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/ea97b004-3844-459e-9d17-021c2523a7bc"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/loganalysiswithsiem">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/dae64b77-18e1-4b0e-93a7-8cccf1328d32"></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/1e7bb856-5b4c-46d1-a871-98bbe15c376b"></p>
 
 <br>
 <h2>Task 1 . Introduction</h2>
