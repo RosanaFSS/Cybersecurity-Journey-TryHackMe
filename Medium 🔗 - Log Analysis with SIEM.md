@@ -60,8 +60,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/loganal
 
 <p>
 
-- index=task4<br>
-- All time</p>
+- select <code>All time</code></p>
+<br>
 
 ```bash
 index=task4  DestinationPort=5678
