@@ -298,10 +298,3 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 <br>
-<p>D</p>
-<p>1f8806869616c18cbae9ffcf581c0428915d32fb70119df16d08078d92d1a5e3</p>
-1f8806869616c18cbae9ffcf581c0428915d32fb70119df16d08078d92d1a5e
-
-2672B6688D7B32A90F9153D2FF607D6801E6CBDE61F509ED36D0450745998D58
-
-<img width="1886" height="885" alt="image" src="https://github.com/user-attachments/assets/3266a111-509a-4a7f-9521-8b88c3af767e" />
