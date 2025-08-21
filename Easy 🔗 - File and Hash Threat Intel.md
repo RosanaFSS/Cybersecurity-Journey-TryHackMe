@@ -52,23 +52,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <p>2.1. One file displays one of the indicators mentioned. Can you identify the file and the indicator? (Answer: file, property)<br>
 <code>___________________________</code></p>
 
-<br>
-<br>
-<br>
-<br>
-
-<p>B</p>
-
-<img width="1345" height="485" alt="image" src="https://github.com/user-attachments/assets/bda52203-b0dc-46b4-bf32-86daa201be9f" />
-
-<p>C</p>
-
-<img width="1141" height="93" alt="image" src="https://github.com/user-attachments/assets/19918b7c-fa1e-47da-9c0a-7007f866109f" />
-
-<p>D</p>
-<p>1f8806869616c18cbae9ffcf581c0428915d32fb70119df16d08078d92d1a5e3</p>
-
-<img width="1886" height="885" alt="image" src="https://github.com/user-attachments/assets/3266a111-509a-4a7f-9521-8b88c3af767e" />
 
 <br>
 <br>
@@ -182,6 +165,12 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <br>
 <p>5.4. Name the text file dropped during the execution of the malicious file.<br>
 <code>akira_readme.txt</code></p>
+<br>
+
+<img width="1141" height="93" alt="image" src="https://github.com/user-attachments/assets/19918b7c-fa1e-47da-9c0a-7007f866109f" />
+
+<br>
+<br>
 
 <img width="1344" height="207" alt="image" src="https://github.com/user-attachments/assets/36118ca9-4807-4467-86bb-30b82d5d8570" />
 
@@ -226,3 +215,11 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 <br>
+
+
+<br>
+<br>
+<p>D</p>
+<p>1f8806869616c18cbae9ffcf581c0428915d32fb70119df16d08078d92d1a5e3</p>
+
+<img width="1886" height="885" alt="image" src="https://github.com/user-attachments/assets/3266a111-509a-4a7f-9521-8b88c3af767e" />
