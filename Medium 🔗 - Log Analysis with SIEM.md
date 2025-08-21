@@ -319,12 +319,13 @@ index=task6 uri_path="/wp-login.php" clientip="10.10.243.134" method=POST
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     326ᵗʰ   |     9ᵗʰ    | 122,182  |    922    |    73     |
+| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     326ᵗʰ   |     9ᵗʰ    | 122,318  |    925    |    73     |
 
 </div>
 
-<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/1fe63294-45db-49ca-ae7a-e1aa600bdc80"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/34711c50-a11f-44bb-b8d7-768fe50e793d"><br><br>
+
+<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/020d55e5-3eac-4ee6-87fa-4d5d5ff5ac38"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/ef4c45b9-4029-4455-b4a2-29c445acc51a"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fe556708-5e07-44ea-950b-d685c9c2e90f"><br>
                   Global monthly:    382ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/898eec3e-e12a-4af8-884d-b73a2d3dbbb6"><br>
                   Brazil monthly:      8ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/090b3f6a-787b-4aa5-9f92-90f05a5e203b"><br>
