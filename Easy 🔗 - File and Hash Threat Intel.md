@@ -195,16 +195,36 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <code>svchost.exe</code>
 <br>
 
-<img width="1101" height="696" alt="image" src="https://github.com/user-attachments/assets/ac89220d-8c5e-493c-ad2f-a8441095cc7a" />
+<img width="1077" height="501" alt="image" src="https://github.com/user-attachments/assets/4de2b29d-f59d-4363-86da-9bdc9ffb0481" />
+
+<br>
+<br>
+
+<p>
+  
+- D202ED020ED8E36BD8A0F5B571A19D386C12ABECB2A28C989D50BBF92C78F54E</p>
+
+
+<img width="1311" height="682" alt="image" src="https://github.com/user-attachments/assets/a9e6e6c6-01ba-4d99-bf39-22c5f80b1470" />
+
+
+<br>
+<br>
+
+<img width="1226" height="757" alt="image" src="https://github.com/user-attachments/assets/e299db91-ebf2-4cae-8bd7-9785ca43a027" />
+
 
 <br>
 <br>
 <br>
 <p>4.5. What associated URL is linked to the file?<br>
-<code>_________</code>
+<code>hxxp://121.182.174.27:3000/server.exe</code>
 <br>
 
+<img width="1222" height="308" alt="image" src="https://github.com/user-attachments/assets/cff088b4-1f8d-4ff1-9b39-f9895a36e200" />
 
+<br>
+<br>
 <br>
 <p>4.6. How many extracted strings were identified from the sandbox analysis of the file?<br>
 <code>_________</code>
