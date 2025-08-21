@@ -334,14 +334,14 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     326ᵗʰ   |     9ᵗʰ    | 122,182  |    924    |    73     |
+| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     326ᵗʰ   |     8ᵗʰ    | 122,182  |    924    |    73     |
 
 </div>
 
 <p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/1fe63294-45db-49ca-ae7a-e1aa600bdc80"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/34711c50-a11f-44bb-b8d7-768fe50e793d"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fe556708-5e07-44ea-950b-d685c9c2e90f"><br>
-                  Global monthly:    382ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/898eec3e-e12a-4af8-884d-b73a2d3dbbb6"><br>
+                  Global monthly:    326ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/898eec3e-e12a-4af8-884d-b73a2d3dbbb6"><br>
                   Brazil monthly:      8ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/090b3f6a-787b-4aa5-9f92-90f05a5e203b"><br>
 
 <br>
