@@ -121,10 +121,9 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <p>
 
-- https://bazaar.abuse.ch/</p>
+- https://bazaar.abuse.ch/<br>
+- sha256:1F8806869616C18CBAE9FFCF581C0428915D32FB70119DF16D08078D92D1A5E3</p>
 <br>
-
-sha256:1F8806869616C18CBAE9FFCF581C0428915D32FB70119DF16D08078D92D1A5E3
 
 
 <img width="1307" height="128" alt="image" src="https://github.com/user-attachments/assets/98fe8dcf-c9ec-4509-8da5-7a65aa890b97" />
@@ -159,30 +158,47 @@ sha256:1F8806869616C18CBAE9FFCF581C0428915D32FB70119DF16D08078D92D1A5E3
 <h2>Task 4 . Sandbox Analysis</h2>
 <br>
 
+<p><em>Answer the questions below</em></p>
+
 <p>4.1. What tags are used to identify the bl0gger.exe malicious file on Hybrid Analysis? (Answer: Tag1, Tag2, Tag3)<br>
 <code>BlackMoon, Discovery, windows-server-utility</code></p>
 <br>
 
+<img width="1316" height="455" alt="image" src="https://github.com/user-attachments/assets/b59a869f-979b-45ff-bcad-51859bd684fb" />
 
+<br>
+<br>
 <br>
 <p>4.2. What was the stealth command line executed from the file?<br>
 <code>regsvr32 %WINDIR%\Media\ActiveX.ocx /s</code></p>
 <br>
 
+<img width="1308" height="303" alt="image" src="https://github.com/user-attachments/assets/c54a0365-83c2-4000-9f79-1d45af675524" />
 
+<br>
+<br>
+
+<img width="1310" height="409" alt="image" src="https://github.com/user-attachments/assets/600b7a86-f116-408f-8f88-ff3e652d06b9" />
+
+<br>
+<br>
 <br>
 <p>4.3. Which other process was spawned according to the process tree?<br>
 <code>werfault.exe</code></p>
 <br>
 
+<img width="1306" height="346" alt="image" src="https://github.com/user-attachments/assets/09948fe1-d5cb-4a66-a223-9b3f716bc0de" />
 
 <br>
+<br><br>
 <p>4.4. The payroll.pdf application seems to be masquerading as which known Windows file?<br>
 <code>svchost.exe</code>
 <br>
 
 <img width="1101" height="696" alt="image" src="https://github.com/user-attachments/assets/ac89220d-8c5e-493c-ad2f-a8441095cc7a" />
 
+<br>
+<br>
 <br>
 <p>4.5. What associated URL is linked to the file?<br>
 <code>_________</code>
