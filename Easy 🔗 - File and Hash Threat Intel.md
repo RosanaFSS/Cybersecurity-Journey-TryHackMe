@@ -49,14 +49,14 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <h3>Filepath Analysis</h3>
 <p>File paths and names are like crime scene clues, revealing attacker behaviour. Attackers may use different disk locations to hide their actions and reduce visibility. For example:
 
-- <code>C:\</code> (System drive) can be a common target for persistence mechanisms.<br>
-- <code>C:\Users\Public</code> profile can enable cross-user access of detonated adversary tools.<br>
-- <code>C:\Users\Public\Public Downloads</code> provides a high-traffic directory that would often evade strict monitoring.</p>
+- C:\ (System drive) can be a common target for persistence mechanisms.<br>
+- C:\Users\Public profile can enable cross-user access of detonated adversary tools.<br>
+- C:\Users\Public\Public Downloads provides a high-traffic directory that would often evade strict monitoring.</p>
 
 <p>Additionally, adversaries may utilise other malware staging patterns such as:<br>
 
-- Utilising temporary directories such as <code>C:\Windows\Temp\</code> for ephemeral payloads.<br>
-- Placing payloads in writable system paths, such as <code>C:\ProgramData\</code> for stealth persistence.</p>
+- Utilising temporary directories such as C:\Windows\Temp\ for ephemeral payloads.<br>
+- Placing payloads in writable system paths, such as C:\ProgramData\ for stealth persistence.</p>
 
 <h3>Filename Heuristic Indicators</h3>
 <p>Attackers are also known to modify filenames to escape detection through implementing various types of heuristic indicators, including:<br><br>
