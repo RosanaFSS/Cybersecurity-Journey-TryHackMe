@@ -57,10 +57,12 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/loganal
 
 <p>4.1. Which IP address was the connection established with?<br>
 <code>10.10.114.80</code></p>
-
+<br>
 <p>
 
 - select <code>All time</code></p>
+<br>
+
 <br>
 
 ```bash
@@ -68,7 +70,6 @@ index=task4  DestinationPort=5678
 | sort +_time
 ```
 
-<br>
 <br>
 
 <img width="1062" height="456" alt="image" src="https://github.com/user-attachments/assets/485fa3ec-f07b-430e-b0ef-dc938dd108be" />
@@ -92,10 +93,11 @@ index=task4  DestinationPort=5678
 <p>4.3. What is the MD5 hash of the malicious process from the previous question?<br>
 <code>770D14FFA142F09730B415506249E7D1</code></p>
 
+<br>
 <p>
 
 - click <code>Event Actions</code><br>
-- click <code>Show Source</p>
+- click <code>Show Source</code></p>
 
 <br>
 
