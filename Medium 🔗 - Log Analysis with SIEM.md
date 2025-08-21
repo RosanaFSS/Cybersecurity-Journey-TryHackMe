@@ -92,7 +92,6 @@ index=task4  DestinationPort=5678
 <p>4.3. What is the MD5 hash of the malicious process from the previous question?<br>
 <code>770D14FFA142F09730B415506249E7D1</code></p>
 
-<br>
 <p>
 
 - click <code>Event Actions</code><br>
