@@ -319,20 +319,17 @@ index=task6 uri_path="/wp-login.php" clientip="10.10.243.134" method=POST
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     326ᵗʰ   |     9ᵗʰ    | 122,318  |    925    |    73     |
+| 2025, August 21   | 472      |     118ᵗʰ    |      5ᵗʰ     |     265ᵗʰ   |     6ᵗʰ    | 122,318  |    925    |    73     |
 
 </div>
 
 
 <p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/020d55e5-3eac-4ee6-87fa-4d5d5ff5ac38"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/ef4c45b9-4029-4455-b4a2-29c445acc51a"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fe556708-5e07-44ea-950b-d685c9c2e90f"><br>
-                  Global monthly:    382ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/898eec3e-e12a-4af8-884d-b73a2d3dbbb6"><br>
-                  Brazil monthly:      8ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/090b3f6a-787b-4aa5-9f92-90f05a5e203b"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/5de1d487-3a91-46f4-b64c-9fa007396972"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/29127268-bfda-41a8-baab-28bb616a8679"><br>
+                  Global monthly:    265ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/12556e75-b5b9-4b99-a163-f45db4295351"><br>
+                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d62cdfac-2409-4c7e-bad1-56c451a8db7d"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
-<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-
-
-
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
