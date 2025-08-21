@@ -129,6 +129,7 @@ index=task4 Description="*Sched*"
 
 <p>5.1. What was the timestamp of the remote-ssh account creation? Answer Format Example: 2025-01-15 12:30:45<br>
 <code>2025-08-12 09:52:57</code>
+<br>
 
 ```bash
 index=task5 process=useradd
@@ -139,13 +140,17 @@ index=task5 process=useradd
 
 <img width="1271" height="376" alt="image" src="https://github.com/user-attachments/assets/fcee9abc-9b6e-42fe-9f7d-cd0e371ffe12" />
 
+<br>
+<br>
 
+<img width="1337" height="413" alt="image" src="https://github.com/user-attachments/assets/0304d7ed-5bdb-4f39-be60-d8d87a22add7" />
 
 <br>
 <br>
 
 <p>5.2. Which user successfully escalated their privileges to root prior to the action from the first question?<br>
 <code>jack-brown</code>
+<br>
 
 ```bash
 index=task5 (process=sudo OR process=su)
@@ -303,16 +308,8 @@ index=task6 uri_path="/wp-login.php" clientip="10.10.243.134" method=POST
 
 <br>
 <br>
-
-
-<br>
 <br>
 
-<img width="1337" height="413" alt="image" src="https://github.com/user-attachments/assets/0304d7ed-5bdb-4f39-be60-d8d87a22add7" />
-
-
-
-<img width="1344" height="459" alt="image" src="https://github.com/user-attachments/assets/5aa6f946-f1a8-4799-af49-d488bb01d902" />
 
 
 
