@@ -57,11 +57,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 <br>
 <br>
 
-<p>A</p>
-
-<img width="871" height="86" alt="image" src="https://github.com/user-attachments/assets/f6f6af05-8915-422a-94b2-8a34d32ce51e" />
-
-
 <p>B</p>
 
 <img width="1345" height="485" alt="image" src="https://github.com/user-attachments/assets/bda52203-b0dc-46b4-bf32-86daa201be9f" />
@@ -115,7 +110,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <br>
 <br>
-<h2>Task 4 . Sandbox Analysis/h2>
+<h2>Task 4 . Sandbox Analysis</h2>
+<br>
 
 <p>4.1. What tags are used to identify the bl0gger.exe malicious file on Hybrid Analysis? (Answer: Tag1, Tag2, Tag3)<br>
 <code>BlackMoon, Discovery, windows-server-utility</code></p>
@@ -162,6 +158,9 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/fileand
 
 <p>5.1. What is the SHA256 hash of the file?<br>
 <code>43b0ac119ff957bb209d86ec206ea1ec3c51dd87bebf7b4a649c7e6c7f3756e7</code></p>
+<br>
+
+<img width="871" height="86" alt="image" src="https://github.com/user-attachments/assets/f6f6af05-8915-422a-94b2-8a34d32ce51e" />
 
 <br>
 <br>
