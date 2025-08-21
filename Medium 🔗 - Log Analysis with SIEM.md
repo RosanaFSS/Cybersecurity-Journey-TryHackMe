@@ -168,8 +168,8 @@ index=task5 (process=sudo OR process=su)
 <br>
 
 <p>5.3. From which IP address did the user from the previous question successfully log in to the system?<br>
-<code>___________________________</code>
-
+<code>10.14.94.82</code>
+<br>
 
 ```bash
 index=task5
@@ -191,6 +191,7 @@ index=task5
 <p>5.4. How many failed login attempts occurred prior to this successful login?<br>
 <code>4</code>
 
+<br>
 
 ```bash
 index=task5 source=auth.log *status 22*
@@ -225,12 +226,12 @@ index=task5 (process=CRON OR process=crontab) *connect*
 <br>
 <br>
 <h3>Task 6 . Web Application Logs</h3>
-
 <br>
+
 <p><em>Answer the questions below</em></p>
 
 
-<p>6.1. What was the timestamp of the remote-ssh account creation? Answer Format Example: 2025-01-15 12:30:45<br>
+<p>6.1. Which URI path had the highest number of requests?<br>
 <code>/wp-login.php</code>
 
 <br>
@@ -248,8 +249,8 @@ index=task6
 
 <br>
 <br>
-<p>6.2. What was the timestamp of the remote-ssh account creation? Answer Format Example: 2025-01-15 12:30:45<br>
-<code>/wp-login.php</code>
+<p>6.2. Which IP address was the source of the activity?<br>
+<code>10.10.243.134</code>
 
 <br>
 
@@ -265,6 +266,10 @@ index=task6 *wp-login.php*
 <img width="1175" height="360" alt="image" src="https://github.com/user-attachments/assets/7b09ba79-5d60-498d-9045-8b6e0810fa46" />
 
 <br>
+<br>
+<p>6.3. How can this activity be classified?<br>
+<code>Brute Force</code>
+
 <br>
 
 ```bash
