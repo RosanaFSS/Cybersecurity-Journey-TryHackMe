@@ -122,12 +122,14 @@ Host script results:
 <h3>User level flag</h3>
 <p>
  
-- discovered for <code>encodedflag</code> file in <code>evader</code>´s Desktop<br>
+- discovered <code>encodedflag</code> file in <code>evader</code>´s Desktop<br>
 - inspected its content<br>
-- Base64 dedcoded <code>encodedflag</code><br>
-- navigated to stealth.com:8080/ahahdgaghdadghag<br>
-- deleted <code>log.txt</code>,considering the message there<br>
-- refreshed <code>stealth.com:8080/dhjdshjdshjdsjh</code><br>
+- Base64 dedcoded it<br>
+- navigated to <code>stealth.com:8080/asdasdadas ... .php</code><br>
+- checked <code>file.ps1</code>´s content<br>
+- identified path <code>C:\xampp\htdocs\<code><br>
+- deleted its <code>log.txt</code> file considering the message in the web page<br>
+- refreshed the web page<br>
 - uncovered user level flag</p>
 
 <br>
