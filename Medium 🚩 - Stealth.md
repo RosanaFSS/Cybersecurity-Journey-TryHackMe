@@ -212,10 +212,10 @@ Host script results:
 - downloaded <code>EFsPotato.cs</code> tool from <code>https://github.com/zcgonvh/EfsPotato</code><br>
 - copied it as <code>Potato.cs</code> to the Target<br>
 - compiled it executing:<code>csc.exe Potato.cs</code><br>
-- confirmed that <code>Potato.exe</code> was generated<br><br>
+- confirmed that <code>Potato.exe</code> was generated<br>
 - added user <code>lili</code>
 - added <code>lili</code> to <code>administrators</code>´ localgroup<br>
-- confirmed that <code>lili</code> was added to <code>administrators</code>´ localgroup<br><br>
+- confirmed that <code>lili</code> was added to <code>administrators</code>´ localgroup<br>
 - executed <code>xfreerdp</code> and accessed Windows environment<br>
 - dicovered the flag in <code>Administrator</code>´s Desktop</p>
 
