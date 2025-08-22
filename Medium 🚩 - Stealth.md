@@ -168,17 +168,17 @@ Host script results:
 <code>THM{1010_EVASION_LOCAL_USER}</code></p>
 
 <br>
-<h3></h3>
-
+<h3>Root level flag</h3>
+<h4>Enumeration</h4>
 
 <p>
 
 - searched for <code>Windows Privilege Escalation Scanner</code><br>
 - navigated to <code>https://github.com/itm4n/PrivescCheck</code><br>
 - downloaded <code>PrivescCheck.ps1</code><br>
-- set up an http server<br>
+- set up an HTTP server<br>
 - copied <code>PrivescCheck.ps1</code> to the Target<br>
-- copied command line from the GitHub repository for a Basic Check: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code><br>
+- executed GitHub´s command line: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code><br>
 - it did not work<br>
 - exited the session</p>
 
