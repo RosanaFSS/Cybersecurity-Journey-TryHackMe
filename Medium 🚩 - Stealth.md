@@ -378,23 +378,31 @@ C:\xampp\htdocs>
 <br>
 <br>
 <br>
-
-<img width="1901" height="885" alt="image" src="https://github.com/user-attachments/assets/0a57dfcc-e4b2-492f-8203-c56722d97188" />
-
-
-<img width="1904" height="899" alt="image" src="https://github.com/user-attachments/assets/cdb35037-374d-44cd-9c2f-984dfcd6e8b0" />
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0a57dfcc-e4b2-492f-8203-c56722d97188"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/cdb35037-374d-44cd-9c2f-984dfcd6e8b0"></p>
 
 <br>
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 22   | 473      |     118ᵗʰ    |      5ᵗʰ     |     277ᵗʰ   |     7ᵗʰ    | 122,378  |    926   |    73     |
+
+</div>
+
+<img width="1895" height="889" alt="image" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387" />
+
+
+<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b44a3e0f-3113-4f6b-b7fc-4a8661c61ec4"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e152812d-9ad6-473a-915f-cf19d9dfbace"><br>
+                  Global monthly:    277ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/93cb4795-dd93-4de8-92a3-1b3c1dd0dab7"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0587e98d-acfc-468a-85ec-6a5eb2dd127a"><br>
+
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
