@@ -20,7 +20,6 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/stealth
 :~/Stealth# nano /etc/hosts
 ```
 
-<br>
 <h3>Nmap</h3>
 
 ```bash
