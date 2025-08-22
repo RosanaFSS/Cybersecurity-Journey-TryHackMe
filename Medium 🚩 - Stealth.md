@@ -17,17 +17,14 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/stealth
 <h3>/etc/hosts</h3>
 
 ```bash
-:~/Stealth# nano /etc/hosts
+xx.xxx.xxx.xx stealth.thm
 ```
 
 <h3>Nmap</h3>
 
 ```bash
 :~/Stealth# nmap -sT -Pn stealth.thm
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-08-22 19:49 BST
-Nmap scan report for stealth.thm (10.201.124.246)
-Host is up (0.0013s latency).
-Not shown: 994 filtered ports
+...
 PORT     STATE SERVICE
 139/tcp  open  netbios-ssn
 445/tcp  open  microsoft-ds
@@ -35,17 +32,12 @@ PORT     STATE SERVICE
 8000/tcp open  http-alt
 8080/tcp open  http-proxy
 8443/tcp open  https-alt
-
-Nmap done: 1 IP address (1 host up) scanned in 4.91 seconds
 ```
 
 
 ```bash
 :~/Stealth# nmap -sC -sV -sT -Pn -p- stealth.thm
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-08-22 19:50 BST
-Nmap scan report for stealth.thm (10.201.124.246)
-Host is up (0.00081s latency).
-Not shown: 65520 filtered ports
+...
 PORT      STATE SERVICE       VERSION
 139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
 445/tcp   open  microsoft-ds?
@@ -57,11 +49,11 @@ PORT      STATE SERVICE       VERSION
 |   DNS_Domain_Name: HostEvasion
 |   DNS_Computer_Name: HostEvasion
 |   Product_Version: 10.0.17763
-|_  System_Time: 2025-08-22T18:53:11+00:00
+|_  System_Time: 2025-08-22Txx:xx:xx+00:00
 | ssl-cert: Subject: commonName=HostEvasion
-| Not valid before: 2025-08-21T18:44:46
-|_Not valid after:  2026-02-20T18:44:46
-|_ssl-date: 2025-08-22T18:53:51+00:00; -1s from scanner time.
+| Not valid before: 2025-08-21Txx:xx:xx
+|_Not valid after:  2026-02-20Txx:xx:xx
+|_ssl-date: 2025-08-22Txx:xx:xx+00:00; -1s from scanner time.
 5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
 |_http-server-header: Microsoft-HTTPAPI/2.0
 |_http-title: Not Found
@@ -75,8 +67,8 @@ PORT      STATE SERVICE       VERSION
 |_http-server-header: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28
 |_http-title: PowerShell Script Analyser
 | ssl-cert: Subject: commonName=localhost
-| Not valid before: 2009-11-10T23:48:47
-|_Not valid after:  2019-11-08T23:48:47
+| Not valid before: 2009-11-10Txx:xx:xx
+|_Not valid after:  2019-11-08Txx:xx:xx
 |_ssl-date: TLS randomness does not represent time
 | tls-alpn: 
 |_  http/1.1
@@ -94,16 +86,13 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Host script results:
 |_clock-skew: mean: -1s, deviation: 0s, median: -1s
-|_nbstat: NetBIOS name: HOSTEVASION, NetBIOS user: <unknown>, NetBIOS MAC: 16:ff:ca:45:d6:1b (unknown)
+|_nbstat: NetBIOS name: HOSTEVASION, NetBIOS user: <unknown>, NetBIOS MAC: xx:xx:xx:xx:xx:xx (unknown)
 | smb2-security-mode: 
 |   2.02: 
 |_    Message signing enabled but not required
 | smb2-time: 
-|   date: 2025-08-22T18:53:11
+|   date: 2025-08-22Txx:xx:xx
 |_  start_date: N/A
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 202.37 seconds
 ```
 
 <h3>Web port 8080</h3>
