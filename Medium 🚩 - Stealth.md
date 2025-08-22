@@ -106,10 +106,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 202.37 seconds
 ```
 
-<br>
 <h3>Web port 8080</h3>
-
-<br>
 
 <img width="1131" height="477" alt="image" src="https://github.com/user-attachments/assets/43c85fc3-5a06-4f78-9c9c-43c091760bb2" />
 
