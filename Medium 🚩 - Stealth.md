@@ -200,7 +200,7 @@ Host script results:
 - uploaded <code>powershell-reverse-shell.ps1</code> again<br>
 - navigated to <code>C:\xampp\htdocs\uploads</code><br>
 - executed: <code>powershell.exe</code><br>
-- executed: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code.<br>
+- executed: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code><br>
 - waited ...<br>
 - identified status: <code>Vulnerable - High</code>, Name: <code>Apache 2.4</code>, ImagePath: <code>"C:\xampp\apache\bin\httpd.exe"</code><br>
 - searched for <code>GitHub Windows PHP Reverse Shell</code><br>
