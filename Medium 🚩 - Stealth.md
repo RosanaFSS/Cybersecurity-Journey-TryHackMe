@@ -119,16 +119,16 @@ Host script results:
 
 <br>
 <br>
-
+<h3>User level flag</h3>
 <p>
-
-- researched for <code>GitHub PowerShell Reverse Shell</code><br>
-- navigated to <code>stealth.thm:8000/asdasdadasdjakjdnsdfsdfs.php</code><br>
-- downloaded <code>powershell-reverse-shell.ps1</code><br>
-- updated the IP<br>
-- set up a listener<br>
-- navigated to <code>stealth.com:8080</code><br>
-- browsed and uploaded <code>powershell-reverse-shell.ps1</code></p>
+ 
+- discovered for <code>encodedflag</code> file in <code>evader</code>´s Desktop<br>
+- inspected its content<br>
+- Base64 dedcoded <code>encodedflag</code><br>
+- navigated to stealth.com:8080/ahahdgaghdadghag<br>
+- deleted <code>log.txt</code>,considering the message there<br>
+- refreshed <code>stealth.com:8080/dhjdshjdshjdsjh</code><br>
+- uncovered user level flag</p>
 
 <br>
 
