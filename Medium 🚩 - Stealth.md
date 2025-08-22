@@ -127,7 +127,7 @@ Host script results:
 - Base64 dedcoded it<br>
 - navigated to <code>stealth.com:8080/asdasdadas ... .php</code><br>
 - checked <code>file.ps1</code>´s content<br>
-- identified path <code>xampp\htdocs\uploads\</code><br>
+- identified path <code>xampp</code> > <code>htdocs</code> > <code>uploads</code><br>
 - deleted its <code>log.txt</code> file considering the message in the web page<br>
 - refreshed the web page<br>
 - uncovered user level flag</p>
