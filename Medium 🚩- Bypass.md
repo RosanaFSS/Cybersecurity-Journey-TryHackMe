@@ -304,7 +304,7 @@ The username is the computer's hostname, and the password is the same as the pre
 <br>
 
 <p align="center">🔴</p>
-<h1 align="center">Penetration Tester  .  Red Teaming<br><img width="1200px" src="https://github.com/user-attachments/assets/86278db7-7cb4-4c1c-98bc-9658b04da827"><h1>
+<h1 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/86278db7-7cb4-4c1c-98bc-9658b04da827"><br>Penetration Tester  .  Red Teaming<h1>
 <h4 align="center">✅ Done &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  ⬛  To-Do  &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  🌌  In Progress  &nbsp;&nbsp;&nbsp;&nbsp;<br><br>Last update: 2025, August 23<br></h4>
 
 <div align="center"><h6>
