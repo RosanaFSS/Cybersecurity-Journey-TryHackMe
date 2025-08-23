@@ -416,5 +416,14 @@ Last update: 2025, August 23<br></h4>
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ NerdHerd                                  |Medium|
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Looking Glass                             |Medium|
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |🌌 WWBuddy                                   |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Ghizer                                    |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Mnemonic                                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Mindgames                                 |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Peak Hill                                 |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Nax                                       |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ dogcat                                    |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Binex                                     |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Break it                                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ GoldenEye                                 |Medium|
 
 </h6></div><br>
