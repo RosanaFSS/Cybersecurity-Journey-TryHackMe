@@ -309,7 +309,7 @@ The username is the computer's hostname, and the password is the same as the pre
 <h4 align="center">✅ Done &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  ⬛  To-Do  &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  🌌  In Progress  &nbsp;&nbsp;&nbsp;&nbsp;<br>
 Last update: 2025, August 23<br></h4>
 
-<div align="center">
+<div align="center"><h6>
 
 |Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
@@ -416,4 +416,4 @@ Last update: 2025, August 23<br></h4>
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |🌌 WWBuddy                                   |Medium|
 
 
-</div>
+</h6></div><br>
