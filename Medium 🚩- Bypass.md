@@ -32,6 +32,7 @@ Nmap done: 1 IP address (1 host up) scanned in 104.56 seconds
 ```
 
 <br>
+<h3>Web port 80</h3>
 <br>
 
 <img width="1061" height="670" alt="image" src="https://github.com/user-attachments/assets/ad575ec8-3580-49ba-a3f7-db2e1d562da8" />
