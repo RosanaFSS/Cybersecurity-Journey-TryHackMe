@@ -33,19 +33,19 @@ Icon made by <a href="https://www.freepik.com/">Freepik</a> from <a href="http:/
 <p> 14 open ports:
 
 - &nbsp;&nbsp;&nbsp; <code>53</code> &nbsp; : &nbsp; DNS<br>
-- &nbsp; &nbsp; <code>135</code>  &nbsp; : &nbsp; MSRPC<br>
-- &nbsp;&nbsp; <code>139</code>  &nbsp; : &nbsp; SMB<br>
-- &nbsp;&nbsp; <code>445</code>  &nbsp; : &nbsp; SMB<br>
-- &nbsp;&nbsp; <code>464</code>  &nbsp; : &nbsp; kpasswd5<br>
-- &nbsp; <code>6379</code>  &nbsp; : &nbsp; Redis &nbsp; : &nbsp; 2.8.2402<br>
-- &nbsp; <code>9389</code>  &nbsp; : &nbsp; .Net Message Framing<br>
-- <code>49666</code>  &nbsp; : &nbsp; Microsoft Windows RPC<br>
-- <code>49668</code>  &nbsp; : &nbsp; Microsoft Windows RPC<br>
-- <code>49669</code>  &nbsp; : &nbsp; Microsoft Windows RPC<br>
-- <code>49670</code>  &nbsp; : &nbsp; Microsoft Windows RPC<br>
-- <code>49677</code>  &nbsp; : &nbsp; Microsoft Windows RPC<br>
-- <code>49704</code>  &nbsp; : &nbsp; Microsoft Windows RPC<br>
-- <code>49796</code>  &nbsp; : &nbsp; Microsoft Windows RPC</p>
+- &nbsp; &nbsp; <code>135</code> &nbsp; : &nbsp; MSRPC<br>
+- &nbsp;&nbsp; <code>139</code> &nbsp; : &nbsp; SMB<br>
+- &nbsp;&nbsp; <code>445</code> &nbsp; : &nbsp; SMB<br>
+- &nbsp;&nbsp; <code>464</code> &nbsp; : &nbsp; kpasswd5<br>
+- &nbsp; <code>6379</code> &nbsp; : &nbsp; Redis &nbsp; : &nbsp; 2.8.2402<br>
+- &nbsp; <code>9389</code> &nbsp; : &nbsp; .Net Message Framing<br>
+- <code>49666</code> &nbsp; : &nbsp; Microsoft Windows RPC<br>
+- <code>49668</code> &nbsp; : &nbsp; Microsoft Windows RPC<br>
+- <code>49669</code> &nbsp; : &nbsp; Microsoft Windows RPC<br>
+- <code>49670</code> &nbsp; : &nbsp; Microsoft Windows RPC<br>
+- <code>49677</code> &nbsp; : &nbsp; Microsoft Windows RPC<br>
+- <code>49704</code> &nbsp; : &nbsp; Microsoft Windows RPC<br>
+- <code>49796</code> &nbsp; : &nbsp; Microsoft Windows RPC</p>
 
 ```bash
 :~/VulnNetActive# nmap -sT xx.xxx.xx.xx
