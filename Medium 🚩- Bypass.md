@@ -31,8 +31,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 104.56 seconds
 ```
 
-<h3>Web port 80</h3>
 <br>
+<h3>Web port 80</h3>
 
 <img width="1061" height="670" alt="image" src="https://github.com/user-attachments/assets/ad575ec8-3580-49ba-a3f7-db2e1d562da8" />
 
@@ -44,7 +44,6 @@ Nmap done: 1 IP address (1 host up) scanned in 104.56 seconds
 
 <br>
 <h3>Web port 80, /mail</h3>
-<br>
 
 <img width="1056" height="247" alt="image" src="https://github.com/user-attachments/assets/ca64e4e2-9b4f-46cf-8ee8-a52db4bfc385" />
 
