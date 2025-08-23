@@ -303,120 +303,120 @@ The username is the computer's hostname, and the password is the same as the pre
 
 <div align="center"><h6>
 
-|Path                       |Skill                   |Type           |Name                                      |Level |
-|:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
-|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Shells Overview                           |      |
-|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Nmap: The Basics                          ||
-|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Meterpreter                   ||
-|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Introduction                  ||
-|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Exploitation                  ||
-|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ REmux The Tmux                            ||
-|<br><br>                           |                        |               |                                              ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Intro to Malware Analysis                 ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Basic Port Scans                     ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Advanced Port Scans                  ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Live Host Discovery                  ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Security Operations                       ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ OWASP Top 1-2021                          ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ OWASP Broken Access Control               ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MISP                                      ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ OpenCTI                                   ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Wireshark: Traffic Analysis               ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Investigating with ELK 101                ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Brim                                      ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Erlang/OTP SSH: CVE-2025-32433            ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ ParrotPost: Phishing Analysis             ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Outlook NTLM Leak                         ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Hosted Hypervisors                        ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Forensic Imaging                          ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Linux File System Analysis                ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Redline                                   ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Content Discovery                         ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Intro to Pwntools                         ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ SQLMAP                                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Core Windows Processes                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Sysmon                                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ What the Shell?                           ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MITRE                                     ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MAL: REMux - The Redux                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MAL: Strings                              ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Rustscan                                  ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Network Services                          ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Network Services 2                        ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Upload Vulnerabilities                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ YARA                                      ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Buffer Overflows                          ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Critical                                  ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Eviction                                  ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Probe                                     ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Trooper                                   ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Boogeyman 1                               ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Empire                                    ||
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Juicy Details                             |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Cat Picturess                             |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ GLITCH                                    |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Magician                                  |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Res                                       |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Chocolate Factory                         |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ GamingServer                              |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Easy Peasy                                |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Madness                                   |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Reversing ELF                             |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Ninja Skills                              |Easy|
+|Path                       |Type           |Name                                      |Level |
+|:--------------------------:--------------|:-----------------------------------------|:-----|
+|<code>Entry</code> Penetration Tester|Walkthrough    |✅ Shells Overview                           |      |
+|<code>Entry</code> Penetration Tester|Walkthrough    |✅ Nmap: The Basics                          ||
+|<code>Entry</code> Penetration Tester|Walkthrough    |✅ Metasploit: Meterpreter                   ||
+|<code>Entry</code> Penetration TesterWalkthrough    |✅ Metasploit: Introduction                  ||
+|<code>Entry</code> Penetration TesterWalkthrough    |✅ Metasploit: Exploitation                  ||
+|<code>Entry</code> Penetration TesterWalkthrough    |✅ REmux The Tmux                            ||
+|<br><br>                                          |                                              ||
+|<code>Junior</code> Penetration Tester  Walkthrough    |✅ Passive Reconnaissance                    ||
+|<code>Junior</code> Penetration Tester  Walkthrough    |✅ Intro to Malware Analysis                 ||
+|<code>Junior</code> Penetration Tester  Walkthrough    |✅ Nmap Basic Port Scans                     ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Nmap Advanced Port Scans                  ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Nmap Live Host Discovery                  ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Security Operations                       ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ OWASP Top 1-2021                          ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ OWASP Broken Access Control               ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ MISP                                      ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ OpenCTI                                   ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Wireshark: Traffic Analysis               ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Investigating with ELK 101                ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Brim                                      ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Erlang/OTP SSH: CVE-2025-32433            ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ ParrotPost: Phishing Analysis             ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Outlook NTLM Leak                         ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Hosted Hypervisors                        ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Forensic Imaging                          ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Linux File System Analysis                ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Redline                                   ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Content Discovery                         ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Intro to Pwntools                         ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ SQLMAP                                    ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Core Windows Processes                    ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Sysmon                                    ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ What the Shell?                           ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ MITRE                                     ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ MAL: REMux - The Redux                    ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ MAL: Strings                              ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Rustscan                                  ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Network Services                          ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Network Services 2                        ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Upload Vulnerabilities                    ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ YARA                                      ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Buffer Overflows                          ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Critical                                  ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Eviction                                  ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Probe                                     ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Trooper                                   ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Boogeyman 1                               ||
+|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Empire                                    ||
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Juicy Details                             |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Cat Picturess                             |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ GLITCH                                    |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Magician                                  |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Res                                       |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Chocolate Factory                         |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ GamingServer                              |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Easy Peasy                                |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Madness                                   |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Reversing ELF                             |Easy|
+|<code>Junior</code> Penetration Tester  |CTF, Challenge |✅ Ninja Skills                              |Easy|
 |<br><br>                        |                        |               |                                              ||
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Supplemental Memory                       |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ APT28 in the Snare                        |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ APT28 Inception Theory                    |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Logless Hunt                              |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting With YARA                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Windows Incident Surface                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Baselines and Anomalies                   |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Eradication and Remediation               |Easy|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Atomic Bird Goes Purple #1                |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Atomic Bird Goes Purple #2                |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ CVE-2023-38408                            |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Intel & Containment                |Easy|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Intro to Threat Emulation                 |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting: Introduction              |Easy|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting: Endgame                   |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting: Pivoting                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ LocalPotato                               |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Crylo                                     |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Atomic Red Team                           |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Tactical Detection                        |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Aurora EDR                                |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Tardigrade                                |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Signature Evasion                         |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Sandbox Evasion                           |Hard|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ CALDERA                                   |Hard|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Living Off the Land                       |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Runtime Detection Evasion                 |Hard|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Red Team Recon                            |Easy|
-|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Weaponization                             |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Lockdown                                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ Fortress                                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Git and Crumpets                          |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ Binary Heaven                             |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ VulnNet: Active                           |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ VulnNet: dotjar                           |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ SafeZone                                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Tokyo Goul                                |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Lunizz CTF                                |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Madeye´s Castle                           |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ The Server From Hell                      |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ NerdHerd                                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Looking Glass                             |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |🌌 WWBuddy                                   |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Ghizer                                    |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Mnemonic                                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Mindgames                                 |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Peak Hill                                 |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Nax                                       |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ dogcat                                    |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Binex                                     |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Break it                                  |Medium|
-|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ GoldenEye                                 |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Supplemental Memory                       |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ APT28 in the Snare                        |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ APT28 Inception Theory                    |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Logless Hunt                              |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Threat Hunting With YARA                  |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Windows Incident Surface                  |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Baselines and Anomalies                   |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Eradication and Remediation               |Easy|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Atomic Bird Goes Purple #1                |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Atomic Bird Goes Purple #2                |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ CVE-2023-38408                            |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Threat Intel & Containment                |Easy|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Intro to Threat Emulation                 |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Threat Hunting: Introduction              |Easy|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Threat Hunting: Endgame                   |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Threat Hunting: Pivoting                  |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ LocalPotato                               |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Crylo                                     |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Atomic Red Team                           |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Tactical Detection                        |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Aurora EDR                                |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Tardigrade                                |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Signature Evasion                         |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Sandbox Evasion                           |Hard|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ CALDERA                                   |Hard|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Living Off the Land                       |Medium|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Runtime Detection Evasion                 |Hard|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Red Team Recon                            |Easy|
+|<code>Mid</code> Penetration Tester     |Walkthrough    |✅ Weaponization                             |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Lockdown                                  |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |⬛ Fortress                                  |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Git and Crumpets                          |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |⬛ Binary Heaven                             |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |⬛ VulnNet: Active                           |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ VulnNet: dotjar                           |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |⬛ SafeZone                                  |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Tokyo Goul                                |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Lunizz CTF                                |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Madeye´s Castle                           |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ The Server From Hell                      |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ NerdHerd                                  |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Looking Glass                             |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |🌌 WWBuddy                                   |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Ghizer                                    |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Mnemonic                                  |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Mindgames                                 |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Peak Hill                                 |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Nax                                       |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ dogcat                                    |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Binex                                     |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ Break it                                  |Medium|
+|<code>Mid</code> Penetration Tester     |CTF, Challenge |✅ GoldenEye                                 |Medium|
 
 </h6></div><br>
 
