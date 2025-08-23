@@ -311,13 +311,13 @@ The username is the computer's hostname, and the password is the same as the pre
 
 |Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
-|<strong>Entry</strong> Penetration Tester   |Red Teaming             |Walkthrough    |✅ Shells Overview                           |      |
+|<code>Entry</xode> Penetration Tester   |Red Teaming             |Walkthrough    |✅ Shells Overview                           |      |
 |                           |                        |               |✅ Nmap: The Basics                          ||
 |                           |                        |               |✅ Metasploit: Meterpreter                   ||
 |                           |                        |               |✅ Metasploit: Introduction                  ||
 |                           |                        |               |✅ Metasploit: Exploitation                  ||
 |                           |                        |               |✅ REmux The Tmux                            ||
-|<strong>Junior</strong> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
 |                           |                        |               |✅ Intro to Malware Analysis                 ||
 |                           |                        |               |✅ Nmap Basic Port Scans                     ||
 |                           |                        |               |✅ Nmap Advanced Port Scans                  ||
@@ -358,7 +358,7 @@ The username is the computer's hostname, and the password is the same as the pre
 |                           |                        |               |✅ Trooper                                   ||
 |                           |                        |               |✅ Boogeyman 1                               ||
 |                           |                        |               |✅ Empire                                    ||
-|<strong>Junior</strong> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Juicy Details                             |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Juicy Details                             |Easy|
 |                           |                        |               |✅ Cat Picturess                             |Easy|
 |                           |                        |               |✅ GLITCH                                    |Easy|
 |                           |                        |               |✅ Magician                                  |Easy|
