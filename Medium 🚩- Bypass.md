@@ -306,7 +306,8 @@ The username is the computer's hostname, and the password is the same as the pre
 <p align="center">🔴<br></p>
 
 <h1 align="center">Penetration Tester  .  Red Teaming</h1>
-<p align="center">Last update: 2025, August 23</p>
+<h4 align="center">✅ Done &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  ⬛  To-Do  &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  🌌  In Progress  &nbsp;&nbsp;&nbsp;&nbsp;<br>
+Last update: 2025, August 23<br></h4>
 
 <div align="center">
 
@@ -399,6 +400,20 @@ The username is the computer's hostname, and the password is the same as the pre
 |<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Runtime Detection Evasion                 |Hard|
 |<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Red Team Recon                            |Easy|
 |<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Weaponization                             |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Lockdown                                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ Fortress                                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Git and Crumpets                          |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ Binary Heaven                             |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ VulnNet: Active                           |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ VulnNet: dotjar                           |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |⬛ SafeZone                                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Tokyo Goul                                |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Lunizz CTF                                |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Madeye´s Castle                           |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ The Server From Hell                      |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ NerdHerd                                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Looking Glass                             |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |🌌 WWBuddy                                   |Medium|
 
 
 </div>
