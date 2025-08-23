@@ -301,7 +301,10 @@ The username is the computer's hostname, and the password is the same as the pre
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
 <br>
-<p align="center>🔴<br></p>
+<br>
+
+<p align="center">🔴<br></p>
+
 <h1 align="center">Penetration Tester  .  Red Teaming</h1>
 
 <div align="center">
