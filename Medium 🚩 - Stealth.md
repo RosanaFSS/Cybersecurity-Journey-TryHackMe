@@ -390,12 +390,9 @@ C:\xampp\htdocs>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 22   | 473      |     118ᵗʰ    |      5ᵗʰ     |     277ᵗʰ   |     7ᵗʰ    | 122,378  |    926   |    73     |
+| 2025, August 22   | 473      |     118ᵗʰ    |      5ᵗʰ     |     277ᵗʰ   |     7ᵗʰ    | 122,378  |    923   |    73     |
 
 </div>
-
-<img width="1895" height="889" alt="image" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387" />
-
 
 <p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b44a3e0f-3113-4f6b-b7fc-4a8661c61ec4"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387"><br><br>
