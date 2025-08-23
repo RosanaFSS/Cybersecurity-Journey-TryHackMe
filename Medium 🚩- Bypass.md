@@ -317,7 +317,7 @@ The username is the computer's hostname, and the password is the same as the pre
 |                           |                        |               |✅ Metasploit: Introduction                  ||
 |                           |                        |               |✅ Metasploit: Exploitation                  ||
 |                           |                        |               |✅ REmux The Tmux                            ||
-|<strong>Junior</strong> Penetration Tester  |Red Teaming                        |Walkthrough    |✅ Passive Reconnaissance                    ||
+|<strong>Junior</strong> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
 |                           |                        |               |✅ Intro to Malware Analysis                 ||
 |                           |                        |               |✅ Nmap Basic Port Scans                     ||
 |                           |                        |               |✅ Nmap Advanced Port Scans                  ||
@@ -358,7 +358,7 @@ The username is the computer's hostname, and the password is the same as the pre
 |                           |                        |               |✅ Trooper                                   ||
 |                           |                        |               |✅ Boogeyman 1                               ||
 |                           |                        |               |✅ Empire                                    ||
-|                           |                        |CTF, Challenge |✅ Juicy Details                             |Easy|
+|<strong>Junior</strong> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Juicy Details                             |Easy|
 |                           |                        |               |✅ Cat Picturess                             |Easy|
 |                           |                        |               |✅ GLITCH                                    |Easy|
 |                           |                        |               |✅ Magician                                  |Easy|
