@@ -6,7 +6,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/vulnnet
 <img width="1200px" src=""></p>
 
 <br>
-<h2>Task 1 . Bypass</h2>
+<h2>Task 1 . VulnNet: Active</h2>
 <p>﻿VulnNet Entertainment had a bad time with their previous network which suffered multiple breaches. Now they moved their entire infrastructure and hired you again as a core penetration tester. Your objective is to get full access to the system and compromise the domain.<br><br>
 
 - Difficulty: Medium
