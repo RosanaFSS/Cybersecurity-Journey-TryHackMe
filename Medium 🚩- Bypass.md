@@ -311,53 +311,53 @@ The username is the computer's hostname, and the password is the same as the pre
 
 |Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
-|<code>Entry</xode> Penetration Tester   |Red Teaming             |Walkthrough    |✅ Shells Overview                           |      |
-|                           |                        |               |✅ Nmap: The Basics                          ||
-|                           |                        |               |✅ Metasploit: Meterpreter                   ||
-|                           |                        |               |✅ Metasploit: Introduction                  ||
-|                           |                        |               |✅ Metasploit: Exploitation                  ||
-|                           |                        |               |✅ REmux The Tmux                            ||
+|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Shells Overview                           |      |
+|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Nmap: The Basics                          ||
+|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Meterpreter                   ||
+|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Introduction                  ||
+|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Exploitation                  ||
+|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ REmux The Tmux                            ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
-|                           |                        |               |✅ Intro to Malware Analysis                 ||
-|                           |                        |               |✅ Nmap Basic Port Scans                     ||
-|                           |                        |               |✅ Nmap Advanced Port Scans                  ||
-|                           |                        |               |✅ Nmap Live Host Discovery                  ||
-|                           |                        |               |✅ Security Operations                       ||
-|                           |                        |               |✅ OWASP Top 1-2021                          ||
-|                           |                        |               |✅ OWASP Broken Access Control               ||
-|                           |                        |               |✅ MISP                                      ||
-|                           |                        |               |✅ OpenCTI                                   ||
-|                           |                        |               |✅ Wireshark: Traffic Analysis               ||
-|                           |                        |               |✅ Investigating with ELK 101                ||
-|                           |                        |               |✅ Brim                                      ||
-|                           |                        |               |✅ Erlang/OTP SSH: CVE-2025-32433            ||
-|                           |                        |               |✅ ParrotPost: Phishing Analysis             ||
-|                           |                        |               |✅ Outlook NTLM Leak                         ||
-|                           |                        |               |✅ Hosted Hypervisors                        ||
-|                           |                        |               |✅ Forensic Imaging                          ||
-|                           |                        |               |✅ Linux File System Analysis                ||
-|                           |                        |               |✅ Redline                                   ||
-|                           |                        |               |✅ Content Discovery                         ||
-|                           |                        |               |✅ Intro to Pwntools                         ||
-|                           |                        |               |✅ SQLMAP                                    ||
-|                           |                        |               |✅ Core Windows Processes                    ||
-|                           |                        |               |✅ Sysmon                                    ||
-|                           |                        |               |✅ What the Shell?                           ||
-|                           |                        |               |✅ MITRE                                     ||
-|                           |                        |               |✅ MAL: REMux - The Redux                    ||
-|                           |                        |               |✅ MAL: Strings                              ||
-|                           |                        |               |✅ Rustscan                                  ||
-|                           |                        |               |✅ Network Services                          ||
-|                           |                        |               |✅ Network Services 2                        ||
-|                           |                        |               |✅ Upload Vulnerabilities                    ||
-|                           |                        |               |✅ YARA                                      ||
-|                           |                        |               |✅ Buffer Overflows                          ||
-|                           |                        |               |✅ Critical                                  ||
-|                           |                        |               |✅ Eviction                                  ||
-|                           |                        |               |✅ Probe                                     ||
-|                           |                        |               |✅ Trooper                                   ||
-|                           |                        |               |✅ Boogeyman 1                               ||
-|                           |                        |               |✅ Empire                                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Intro to Malware Analysis                 ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Basic Port Scans                     ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Advanced Port Scans                  ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Live Host Discovery                  ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Security Operations                       ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ OWASP Top 1-2021                          ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ OWASP Broken Access Control               ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MISP                                      ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ OpenCTI                                   ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Wireshark: Traffic Analysis               ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Investigating with ELK 101                ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Brim                                      ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Erlang/OTP SSH: CVE-2025-32433            ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ ParrotPost: Phishing Analysis             ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Outlook NTLM Leak                         ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Hosted Hypervisors                        ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Forensic Imaging                          ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Linux File System Analysis                ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Redline                                   ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Content Discovery                         ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Intro to Pwntools                         ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ SQLMAP                                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Core Windows Processes                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Sysmon                                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ What the Shell?                           ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MITRE                                     ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MAL: REMux - The Redux                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ MAL: Strings                              ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Rustscan                                  ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Network Services                          ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Network Services 2                        ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Upload Vulnerabilities                    ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ YARA                                      ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Buffer Overflows                          ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Critical                                  ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Eviction                                  ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Probe                                     ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Trooper                                   ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Boogeyman 1                               ||
+|<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Empire                                    ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Juicy Details                             |Easy|
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Cat Picturess                             |Easy|
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ GLITCH                                    |Easy|
