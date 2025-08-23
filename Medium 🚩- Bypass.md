@@ -259,14 +259,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 <br>
 
-<img width="564" height="402" alt="image" src="https://github.com/user-attachments/assets/a1e349ee-c53c-489c-91e1-0609e2eb43dc" />
-
-<br>
-
-<img width="562" height="472" alt="image" src="https://github.com/user-attachments/assets/91048557-d50b-4b59-9732-2120525f447d" />
-
-<br>
-
 ```bash
 From: steve@cctv.thm
 To: mark@cctv.thm
