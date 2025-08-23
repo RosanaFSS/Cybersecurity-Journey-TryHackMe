@@ -303,10 +303,10 @@ The username is the computer's hostname, and the password is the same as the pre
 <br>
 <br>
 
-<p align="center">🔴<br></p>
+<p align="center">🔴</p>
 
 <h1 align="center">Penetration Tester  .  Red Teaming</h1>
-<h4 align="center">✅ Done &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  ⬛  To-Do  &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  🌌  In Progress  &nbsp;&nbsp;&nbsp;&nbsp;<br>
+<h4 align="center">✅ Done &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  ⬛  To-Do  &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  🌌  In Progress  &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
 Last update: 2025, August 23<br></h4>
 
 <div align="center"><h6>
@@ -414,6 +414,5 @@ Last update: 2025, August 23<br></h4>
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ NerdHerd                                  |Medium|
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ Looking Glass                             |Medium|
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |🌌 WWBuddy                                   |Medium|
-
 
 </h6></div><br>
