@@ -306,6 +306,7 @@ The username is the computer's hostname, and the password is the same as the pre
 <p align="center">🔴<br></p>
 
 <h1 align="center">Penetration Tester  .  Red Teaming</h1>
+<p align="center">Last update: 2025, August 23</p>
 
 <div align="center">
 
