@@ -255,18 +255,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 <br>
 
 <p>1.7. What is the lsb_release -r -s command output from the attached machine?<br>
-<code>___</code></p>
-
-<br>
-
-```bash
-From: steve@cctv.thm
-To: mark@cctv.thm
-...
-For the second layer of security, I have enabled a wholly sandboxed login environment with no connection to the database and no possibility of command execution.
-
-The username is the computer's hostname, and the password is the same as the previous password.
-```
+<code>20.04</code></p>
 
 <br>
 
@@ -284,6 +273,19 @@ The username is the computer's hostname, and the password is the same as the pre
 <img width="746" height="493" alt="image" src="https://github.com/user-attachments/assets/1730c316-b2d1-426b-99f0-8e9bb980d8ac" />
 
 <br>
+
+<p>1.8. What is the username for the CCTV web panel?<br>
+<code>bypass</code></p>
+
+<br>
+
+```bash
+...
+For the second layer of security, I have enabled a wholly sandboxed login environment with no connection to the database and no possibility of command execution.
+
+The username is the computer's hostname, and the password is the same as the previous password.
+```
+
 <br>
 
 <img width="746" height="488" alt="image" src="https://github.com/user-attachments/assets/ee11eca2-0d96-4b2f-ad2e-565f7ce1dc1d" />
