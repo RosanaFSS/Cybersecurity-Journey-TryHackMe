@@ -1,3 +1,17 @@
+<h1 align="center">Bypass</h1>
+<p align="center">2025, August 23<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>474</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Use your defence evasion skills to take control of a secure network.</em><br>
+<img width="80px" src="https://github.com/user-attachments/assets/8cab783d-2a47-4e1b-bb76-71ba226fa3b1"><br>
+Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/bypass">here </a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/be25c468-7493-49e9-9f4c-b80b26e45157"></p>
+
+
+<br>
+<h2>Task 1 . Bypass</h2>
+
+<p>Start the VM by clicking the <code>Start Machine</code> button at the top right of the task. You can complete the challenge by connecting through a VPN or the AttackBox containing all the essential tools.</p>
+
+<p><em>The network security team has implemented state-of-the-art protection mechanisms using an IDS. Your task is to bypass the network security solution and gain access to the CCTV web panel of the company.</em></p>
 
 <p><em>Answer the questions below</em></p>
 
@@ -209,8 +223,9 @@ After receiving all the flags, you can visit the MACHINE IP that will ask you fo
 The first password will be concatenated values of all five flags you have received above.
 ```
 
-<p><code>THM{10001}</code> + <code>THM{10125}</code> + <code>THM{1 + 3231}</code> + <code>THM{33120}</code> + <code>THM{12319}</p>
+<p><code>THM{10001}</code> + <code>THM{10125}</code> + <code>THM{13231}</code> + <code>THM{33120}</code> + <code>THM{12319}</p>
 
+<br>
 <br>
 <p>1.7. What is the lsb_release -r -s command output from the attached machine?<br>
 <code>20.04</code></p>
@@ -257,5 +272,31 @@ The username is the computer's hostname, and the password is the same as the pre
 <br>
 <br>
 <br>
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0a57dfcc-e4b2-492f-8203-c56722d97188"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/cdb35037-374d-44cd-9c2f-984dfcd6e8b0"></p>
+
+<br>
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 22   | 473      |     118ᵗʰ    |      5ᵗʰ     |     277ᵗʰ   |     7ᵗʰ    | 122,378  |    926   |    73     |
+
+</div>
+
+<img width="1895" height="889" alt="image" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387" />
 
 
+<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b44a3e0f-3113-4f6b-b7fc-4a8661c61ec4"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e152812d-9ad6-473a-915f-cf19d9dfbace"><br>
+                  Global monthly:    277ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/93cb4795-dd93-4de8-92a3-1b3c1dd0dab7"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0587e98d-acfc-468a-85ec-6a5eb2dd127a"><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
