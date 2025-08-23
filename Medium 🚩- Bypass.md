@@ -94,8 +94,6 @@ Dev Ops Engineer
 hi
 ```
 
-<br>
-
 ```bash
 https://cctv.thm/fpassword.php/?id=1?
 ```
@@ -122,14 +120,9 @@ https://cctv.thm/fpassword.php/?id=1?
 </body></html>
 ```
 
-<br>
-
 ```bash
 https://cctv.thm/fpassword.php/?id=2?
 ```
-
-<br>
-<br>
 
 <img width="1057" height="166" alt="image" src="https://github.com/user-attachments/assets/3b7d6729-6161-4a9e-b149-7a4b6dc22888" />
 
@@ -145,8 +138,6 @@ https://cctv.thm/fpassword.php/?id=2?
 4d6f7a696c6c61
 ```
 
-<br>
-
 ```bash
 :~# ping -c 2 cctv.thm -p 4d6f7a696c6c61
 PATTERN: 0x4d6f7a696c6c61
@@ -159,14 +150,9 @@ PING cctv.thm (10.201.7.109) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.552/0.731/0.911/0.179 ms
 ```
 
-<br>
-
 ```bash
 https://cctv.thm/fpassword.php/?id=3?
 ```
-
-<br>
-<br>
 
 <img width="1056" height="241" alt="image" src="https://github.com/user-attachments/assets/af301fb2-e06a-42c9-aeca-c8e0df03a571" />
 
