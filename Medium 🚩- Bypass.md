@@ -401,22 +401,37 @@ The username is the computer's hostname, and the password is the same as the pre
 |<code>Mid</code>           | 🚩    |⬛ VulnNet: Active                           |Medium|
 |<code>Mid</code>           | 🚩    |✅ VulnNet: dotjar                           |Medium|
 |<code>Mid</code>           | 🚩    |⬛ SafeZone                                  |Medium|
-|<code>Mid</code>           | 🚩 |✅ Tokyo Goul                                |Medium|
-|<code>Mid</code>           | 🚩 |✅ Lunizz CTF                                |Medium|
-|<code>Mid</code>           | 🚩 |✅ Madeye´s Castle                           |Medium|
-|<code>Mid</code>           | 🚩 |✅ The Server From Hell                      |Medium|
-|<code>Mid</code>           | 🚩 |✅ NerdHerd                                  |Medium|
-|<code>Mid</code>           | 🚩 |✅ Looking Glass                             |Medium|
-|<code>Mid</code>           | 🚩 |🌌 WWBuddy                                   |Medium|
-|<code>Mid</code>           | 🚩 |✅ Ghizer                                    |Medium|
-|<code>Mid</code>           | 🚩 |✅ Mnemonic                                  |Medium|
-|<code>Mid</code>           | 🚩 |✅ Mindgames                                 |Medium|
-|<code>Mid</code>           | 🚩 |✅ Peak Hill                                 |Medium|
-|<code>Mid</code>           | 🚩 |✅ Nax                                       |Medium|
-|<code>Mid</code>           | 🚩 |✅ dogcat                                    |Medium|
-|<code>Mid</code>           | 🚩 |✅ Binex                                     |Medium|
-|<code>Mid</code>           | 🚩 |✅ Break it                                  |Medium|
-|<code>Mid</code>           | 🚩 |✅ GoldenEye                                 |Medium|
+|<code>Mid</code>           | 🚩    |✅ Tokyo Goul                                |Medium|
+|<code>Mid</code>           | 🚩    |✅ Lunizz CTF                                |Medium|
+|<code>Mid</code>           | 🚩    |✅ Madeye´s Castle                           |Medium|
+|<code>Mid</code>           | 🚩    |✅ The Server From Hell                      |Medium|
+|<code>Mid</code>           | 🚩    |✅ NerdHerd                                  |Medium|
+|<code>Mid</code>           | 🚩    |✅ Looking Glass                             |Medium|
+|<code>Mid</code>           | 🚩    |🌌 WWBuddy                                   |Medium|
+|<code>Mid</code>           | 🚩    |✅ Ghizer                                    |Medium|
+|<code>Mid</code>           | 🚩    |✅ Mnemonic                                  |Medium|
+|<code>Mid</code>           | 🚩    |✅ Mindgames                                 |Medium|
+|<code>Mid</code>           | 🚩    |✅ Peak Hill                                 |Medium|
+|<code>Mid</code>           | 🚩    |✅ Nax                                       |Medium|
+|<code>Mid</code>           | 🚩    |✅ dogcat                                    |Medium|
+|<code>Mid</code>           | 🚩    |✅ Binex                                     |Medium|
+|<code>Mid</code>           | 🚩    |✅ Break it                                  |Medium|
+|<code>Mid</code>           | 🚩    |✅ GoldenEye                                 |Medium|
+|<br>                       |       |                                              |      |
+|<code>Senior</code>        | 🔗    |✅ Zero Logon                                |Hard|
+|<code>Senior</code>        | 🔗    |✅ Robots                                    |Hard|
+|<code>Senior</code>        | 🔗    |✅ Racetrack Bank                            |Hard|
+|<code>Senior</code>        | 🚩    |🌌 TryPwnMe Two                              |Hard|
+|<code>Senior</code>        | 🚩    |⬛ Hack Back                                 |Hard|
+|<code>Senior</code>        | 🚩    |⬛ Bandit                                    |Hard|
+|<code>Senior</code>        | 🚩    |⬛ Rocket                                    |Hard|
+|<code>Senior</code>        | 🚩    |⬛ GameBuzz                                  |Hard|
+|<code>Senior</code>        | 🚩    |⬛ M4tr1x: Exit Denied                       |Hard|
+|<code>Senior</code>        | 🚩    |⬛ Misguided Ghosts                          |Hard|
+|<code>Senior</code>        | 🚩    |⬛ For Business Reasons                      |Hard|
+|<code>Senior</code>        | 🚩    |⬛ Python Playground                         |Hard|
+|<code>Senior</code>        | 🚩    |⬛ Snowy ARMageddon                          |Insane|
+|<code>Senior</code>        | 🚩    |⬛ CCT2019                                   |Insane|
 
 </h6></div><br>
 
