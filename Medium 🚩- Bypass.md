@@ -297,10 +297,6 @@ The username is the computer's hostname, and the password is the same as the pre
                   Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/cded0009-8584-4306-9a38-dc369712d76f"><br>
 
 <br>
-<h1 align="center">Thanks for Coming!</h1>
-<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-<br>
 <br>
 <h1 align="center">Penetration Tester  .  Red Teaming<br><img width="1200px" src="https://github.com/user-attachments/assets/86278db7-7cb4-4c1c-98bc-9658b04da827"></h1>
 <p align="center">✅ Done &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  ⬛  To-Do  &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;  🌌  In Progress  &nbsp;&nbsp;&nbsp;&nbsp;<br><br>Last update: 2025, August 23<br></p>
@@ -423,3 +419,7 @@ The username is the computer's hostname, and the password is the same as the pre
 |<code>Mid</code> Penetration Tester     |Red Teaming|CTF, Challenge |✅ GoldenEye                                 |Medium|
 
 </h6></div><br>
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
