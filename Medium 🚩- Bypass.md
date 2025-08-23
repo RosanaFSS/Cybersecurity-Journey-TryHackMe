@@ -82,12 +82,12 @@ Dev Ops Engineer
 
 <br>
 <br>
+<h3>Crafted Packets</h3>
+
 <p>1.1. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=1?<br>
 <code>THM{10001}</code></p>
-<br>
-<h3>Crafted Packets</h3>
+
 <h4>Make a <code>UDP</code> request<br>to the machine with source port number 5000.<br>Once done, you can fetch the flag through /fpassword.php?id=1</h4>
-<br>
 
 ```bash
 :~# nc -u -p 5000 cctv.thm 6666
@@ -104,13 +104,10 @@ https://cctv.thm/fpassword.php/?id=1?
 
 <br>
 <br>
-
 <p>1.2. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=2?<br>
 <code>THM{10125}</code></p>
 
-<br>
 <h4>Make a <code>TCP</code> request<br>to fpassword.php?id=2 with user-agent set as "I am Steve Friend".<br>Once done, you can fetch the flag through /fpassword.php?id=2</h4>
-<br>
 
 ```bash
 :~# curl -s 'http://cctv.thm/' -H 'User-Agent: I am Steve Friend'
@@ -141,9 +138,7 @@ https://cctv.thm/fpassword.php/?id=2?
 <p>1.3. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=3?<br>
 <code>THM{13231}</code></p>
 
-<br>
 <h4>Send a <code>ping</code> packet<br>to the machine appearing as Mozilla browser<br>(Hint: packet content with user agent set as Mozilla).<br>Once done, you can fetch the flag through /fpassword.php?id=3</h4>
-<br>
 
 ```bash
 :~# echo -n Mozilla | xxd -p
@@ -179,9 +174,8 @@ https://cctv.thm/fpassword.php/?id=3?
 <br>
 <p>1.4. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=4?<br>
 <code>THM{33120}</code></p>
-<br>
+
 <h4>Attempt to login to the <code>FTP</code> server<br>with content containing the word "user" in it.<br>Once done, you can fetch the flag from /fpassword.php?id=4</h4>
-<br>
 
 ```bash
 :~# ftp huser@cctv.thm
@@ -202,9 +196,8 @@ https://cctv.thm/fpassword.php/?id=4?
 <br>
 <p>1.5. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=5?<br>
 <code>THM{12319}</code></p>
-<br>
+
 <h4>Send <code>TCP</code>code> request<br>to flagger.cgi endpoint with a host header containing more than 50 characters.<br>Once done, you can fetch the flag from /fpassword.php?id=5</h4>
-<br>
 
 ```bash
 :~# for i in {1..50}; do echo -n A; done; echo
@@ -233,21 +226,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 <br>
 <br>
-<h4>Send <code>TCP</code>code> request<br>to flagger.cgi endpoint with a host header containing more than 50 characters.<br>Once done, you can fetch the flag from /fpassword.php?id=5</h4>
-<br>
-
 <p>1.6. What is the password value for the first layer of security for the CCTV web panel?<br>
 <code>THM{10001}THM{10125}THM{13231}THM{33120}THM{12319}</code></p>
-
-<br>
 
 ```bash
 ...
 After receiving all the flags, you can visit the MACHINE IP that will ask you for the password.
 The first password will be concatenated values of all five flags you have received above.
 ```
-
-<br>
 
 <p><code>THM{10001}</code> + <code>THM{10125}</code> + <code>THM{1 + 3231}</code> + <code>THM{33120}</code> + <code>THM{12319}</p>
 
