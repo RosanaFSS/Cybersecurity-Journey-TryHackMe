@@ -167,15 +167,9 @@ https://cctv.thm/fpassword.php/?id=3?
 :~# ftp huser@cctv.thm
 ```
 
-<br>
-
 ```bash
 https://cctv.thm/fpassword.php/?id=4?
 ```
-
-<br>
-<br>
-
 <img width="1062" height="171" alt="image" src="https://github.com/user-attachments/assets/7ff9068a-aabe-414a-9eeb-55cdcbc9bc45" />
 
 <br>
@@ -190,8 +184,6 @@ https://cctv.thm/fpassword.php/?id=4?
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ```
 
-<br>
-
 ```bash
 :~# curl -s 'http://cctv.thm/flagger.cgi' -H 'Host: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
@@ -204,10 +196,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 <address>Apache/2.4.41 (Ubuntu) Server at aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Port 80</address>
 </body></html>
 ```
-
-<br>
-<br>
-
 <img width="1057" height="188" alt="image" src="https://github.com/user-attachments/assets/310b18fe-d055-4bfe-a362-9d995cf2fd15" />
 
 <br>
@@ -232,22 +220,17 @@ The first password will be concatenated values of all five flags you have receiv
 <img width="554" height="237" alt="image" src="https://github.com/user-attachments/assets/2b9fc05b-1f11-4ea9-8c8f-8c086931ab77" />
 
 <br>
-<br>
-
 
 <img width="747" height="488" alt="image" src="https://github.com/user-attachments/assets/c43318fb-fd02-4feb-866a-bf81c97f233b" />
 
-<br>
 <br>
 
 <img width="746" height="493" alt="image" src="https://github.com/user-attachments/assets/1730c316-b2d1-426b-99f0-8e9bb980d8ac" />
 
 <br>
-
+<br>
 <p>1.8. What is the username for the CCTV web panel?<br>
 <code>bypass</code></p>
-
-<br>
 
 ```bash
 ...
@@ -265,14 +248,14 @@ The username is the computer's hostname, and the password is the same as the pre
 <p>1.9. What is the flag value after logging into the CCTV web panel?<br>
 <code>THM{CCTV_HACKED_1011110}</code></p>
 
-<br>
-
 <p><code>bypass</code> : <code>THM{10001}THM{10125}THM{13231}THM{33120}THM{12319}</code></p>
 
 <br>
 
 <img width="553" height="419" alt="image" src="https://github.com/user-attachments/assets/e58f16cf-055c-4167-8821-af8134fe3deb" />
 
-
+<br>
+<br>
+<br>
 
 
