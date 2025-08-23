@@ -319,6 +319,7 @@ Last update: 2025, August 23<br></h4>
 |<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Introduction                  ||
 |<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Exploitation                  ||
 |<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ REmux The Tmux                            ||
+|                           |                        |               |                                              ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Intro to Malware Analysis                 ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Basic Port Scans                     ||
@@ -371,6 +372,7 @@ Last update: 2025, August 23<br></h4>
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Madness                                   |Easy|
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Reversing ELF                             |Easy|
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Ninja Skills                              |Easy|
+|                           |                        |               |                                              ||
 |<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Supplemental Memory                       |Medium|
 |<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ APT28 in the Snare                        |Medium|
 |<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ APT28 Inception Theory                    |Medium|
