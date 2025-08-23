@@ -3,8 +3,7 @@
 <em>Use your defence evasion skills to take control of a secure network.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/8cab783d-2a47-4e1b-bb76-71ba226fa3b1"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/bypass">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/be25c468-7493-49e9-9f4c-b80b26e45157"></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/a692f188-386c-49ad-a516-3c47e7ea5dde"></p>
 
 <br>
 <h2>Task 1 . Bypass</h2>
@@ -274,9 +273,10 @@ The username is the computer's hostname, and the password is the same as the pre
 <br>
 <br>
 <br>
+
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0a57dfcc-e4b2-492f-8203-c56722d97188"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/cdb35037-374d-44cd-9c2f-984dfcd6e8b0"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/dbdb0cee-cdba-441d-a7bb-393c289a040a"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/fe05ccf2-deb4-44cc-af41-a48b6c539142"></p>
 
 <br>
 <h1 align="center">My TryHackMe Journey</h1>
@@ -286,19 +286,83 @@ The username is the computer's hostname, and the password is the same as the pre
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 22   | 473      |     118ᵗʰ    |      5ᵗʰ     |     277ᵗʰ   |     7ᵗʰ    | 122,378  |    926   |    73     |
+| 2025, August 23   | 473      |     118ᵗʰ    |      5ᵗʰ     |     298ᵗʰ   |     7ᵗʰ    | 122,450  |    924   |    73     |
 
 </div>
 
-<img width="1895" height="889" alt="image" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387" />
-
-
-<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b44a3e0f-3113-4f6b-b7fc-4a8661c61ec4"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/d86e547b-1f68-4e55-8d03-ae717e209387"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e152812d-9ad6-473a-915f-cf19d9dfbace"><br>
-                  Global monthly:    277ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/93cb4795-dd93-4de8-92a3-1b3c1dd0dab7"><br>
-                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0587e98d-acfc-468a-85ec-6a5eb2dd127a"><br>
+<p align="center">Global All Time:   118ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/6575961d-bd3b-45aa-af01-fce10169270c"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/5dc751e5-e901-4619-9f37-0b737ca5f793"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b2ee4d80-408f-4a3e-b0be-bb06eb2a4d0e"><br>
+                  Global monthly:    298ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f5f4a89a-3ea7-41f6-973a-f511f9a54be9"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/cded0009-8584-4306-9a38-dc369712d76f"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
+
+<br>
+
+<div align="center">
+
+|Path                       |Skill                   |CTF, Challenge |Name                                      |Level |
+|:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
+|Entry Penetration Tester   |Red Teaming             |Walkthrough    |Shells Overview                           |      |
+|                           |                        |               |Nmap: The Basics                          ||
+|                           |                        |               |Metasploit: Meterpreter                   ||
+|                           |                        |               |Metasploit: Introduction                  ||
+|                           |                        |               |Metasploit: Exploitation                  ||
+|                           |                        |               |REmux The Tmux                            ||
+|Junior Penetration Tester  |                        |Walkthrough    |Passive Reconnaissance                    ||
+|                           |                        |               |Intro to Malware Analysis                 ||
+|                           |                        |               |Nmap Basic Port Scans                     ||
+|                           |                        |               |Nmap Advanced Port Scans                  ||
+|                           |                        |               |Nmap Live Host Discovery                  ||
+|                           |                        |               |Security Operations                       ||
+|                           |                        |               |OWASP Top 1-2021                          ||
+|                           |                        |               |OWASP Broken Access Control               ||
+|                           |                        |               |MISP                                      ||
+|                           |                        |               |OpenCTI                                   ||
+|                           |                        |               |Wireshark: Traffic Analysis               ||
+|                           |                        |               |Investigating with ELK 101                ||
+|                           |                        |               |Brim                                      ||
+|                           |                        |               |Erlang/OTP SSH: CVE-2025-32433            ||
+|                           |                        |               |ParrotPost: Phishing Analysis             ||
+|                           |                        |               |Outlook NTLM Leak                         ||
+|                           |                        |               |Hosted Hypervisors                        ||
+|                           |                        |               |Forensic Imaging                          ||
+|                           |                        |               |Linux File System Analysis                ||
+|                           |                        |               |Redline                                   ||
+|                           |                        |               |Content Discovery                         ||
+|                           |                        |               |Intro to Pwntools                         ||
+|                           |                        |               |SQLMAP                                    ||
+|                           |                        |               |Core Windows Processes                    ||
+|                           |                        |               |Sysmon                                    ||
+|                           |                        |               |What the Shell?                           ||
+|                           |                        |               |MITRE                                     ||
+|                           |                        |               |MAL: REMux - The Redux                    ||
+|                           |                        |               |MAL: Strings                              ||
+|                           |                        |               |Rustscan                                  ||
+|                           |                        |               |Network Services                          ||
+|                           |                        |               |Network Services 2                        ||
+|                           |                        |               |Upload Vulnerabilities                    ||
+|                           |                        |               |YARA                                      ||
+|                           |                        |               |Buffer Overflows                          ||
+|                           |                        |               |Critical                                  ||
+|                           |                        |               |Eviction                                  ||
+|                           |                        |               |Probe                                     ||
+|                           |                        |               |Trooper                                   ||
+|                           |                        |               |Boogeyman 1                               ||
+|                           |                        |               |Empire                                    ||
+|                           |                        |CTF, Challenge |Juicy Details                             |Easy|
+|                           |                        |               |Cat Picturess                             |Easy|
+|                           |                        |               |GLITCH                                    |Easy|
+|                           |                        |               |Magician                                  |Easy|
+|                           |                        |               |Res                                       |Easy|
+|                           |                        |               |Chocolate Factory                         |Easy|
+|                           |                        |               |GamingServer                              |Easy|
+|                           |                        |               |Easy Peasy                                |Easy|
+|                           |                        |               |Madness                                   |Easy|
+|                           |                        |               |Reversing ELF                             |Easy|
+|                           |                        |               |Ninja Skills                              |Easy
+
+</div>
