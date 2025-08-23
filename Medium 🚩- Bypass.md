@@ -53,7 +53,7 @@ Nmap done: 1 IP address (1 host up) scanned in 104.56 seconds
 <br>
 <br>
 <h3>Crafted Packets</h3>
-<h4>Make a UDP request to the machine with source port number 5000. Once done, you can fetch the flag through /fpassword.php?id=1</h4>
+<h4>Make a <code>UDP</code> request<br>to the machine with source port number 5000.<br>Once done, you can fetch the flag through /fpassword.php?id=1</h4>
 <br>
 
 ```bash
@@ -77,7 +77,7 @@ https://cctv.thm/fpassword.php/?id=1?
 
 <br>
 <br>
-<h4>Make a TCP request to fpassword.php?id=2 with user-agent set as "I am Steve Friend". Once done, you can fetch the flag through /fpassword.php?id=2</h4>
+<h4>Make a <code>TCP</code> request<br>to fpassword.php?id=2 with user-agent set as "I am Steve Friend".<br>Once done, you can fetch the flag through /fpassword.php?id=2</h4>
 <br>
 
 ```bash
@@ -113,7 +113,7 @@ https://cctv.thm/fpassword.php/?id=2?
 
 <br>
 <br>
-<h4>Send a ping packet to the machine appearing as Mozilla browser (Hint: packet content with user agent set as Mozilla). Once done, you can fetch the flag through /fpassword.php?id=3</h4>
+<h4>Send a <code>ping</code> packet<br>to the machine appearing as Mozilla browser<br>(Hint: packet content with user agent set as Mozilla).<br>Once done, you can fetch the flag through /fpassword.php?id=3</h4>
 <br>
 
 ```bash
@@ -154,7 +154,7 @@ https://cctv.thm/fpassword.php/?id=3?
 
 <br>
 <br>
-<h4>Attempt to login to the FTP server with content containing the word "user" in it. Once done, you can fetch the flag from /fpassword.php?id=4</h4>
+<h4>Attempt to login to the <code>FTP</code> server<br>with content containing the word "user" in it.<br>Once done, you can fetch the flag from /fpassword.php?id=4</h4>
 <br>
 
 ```bash
@@ -180,7 +180,7 @@ https://cctv.thm/fpassword.php/?id=4?
 
 <br>
 <br>
-<h4>Send TCP request to flagger.cgi endpoint with a host header containing more than 50 characters. Once done, you can fetch the flag from /fpassword.php?id=5</h4>
+<h4>Send <code>TCP</code>code> request<br>to flagger.cgi endpoint with a host header containing more than 50 characters.<br>Once done, you can fetch the flag from /fpassword.php?id=5</h4>
 <br>
 
 ```bash
