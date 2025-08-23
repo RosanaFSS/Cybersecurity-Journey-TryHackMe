@@ -311,13 +311,13 @@ The username is the computer's hostname, and the password is the same as the pre
 
 |Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
-|Entry Penetration Tester   |Red Teaming             |Walkthrough    |✅ Shells Overview                           |      |
+|<strong>Entry</strong> Penetration Tester   |Red Teaming             |Walkthrough    |✅ Shells Overview                           |      |
 |                           |                        |               |✅ Nmap: The Basics                          ||
 |                           |                        |               |✅ Metasploit: Meterpreter                   ||
 |                           |                        |               |✅ Metasploit: Introduction                  ||
 |                           |                        |               |✅ Metasploit: Exploitation                  ||
 |                           |                        |               |✅ REmux The Tmux                            ||
-|Junior Penetration Tester  |                        |Walkthrough    |✅ Passive Reconnaissance                    ||
+|<strong>Junior</strong> Penetration Tester  |Red Teaming                        |Walkthrough    |✅ Passive Reconnaissance                    ||
 |                           |                        |               |✅ Intro to Malware Analysis                 ||
 |                           |                        |               |✅ Nmap Basic Port Scans                     ||
 |                           |                        |               |✅ Nmap Advanced Port Scans                  ||
