@@ -224,7 +224,7 @@ After receiving all the flags, you can visit the MACHINE IP that will ask you fo
 The first password will be concatenated values of all five flags you have received above.
 ```
 
-<p><code>THM{10001}</code> + <code>THM{10125}</code> + <code>THM{13231}</code> + <code>THM{33120}</code> + <code>THM{12319}</p>
+<p><code>THM{10001}</code> + <code>THM{10125}</code> + <code>THM{13231}</code> + <code>THM{33120}</code> + <code>THM{12319}</code>code></p>
 
 <br>
 <br>
