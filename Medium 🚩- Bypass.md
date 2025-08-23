@@ -304,7 +304,7 @@ The username is the computer's hostname, and the password is the same as the pre
 <div align="center"><h6>
 
 |Path                       |Type           |Name                                      |Level |
-|:--------------------------:--------------|:-----------------------------------------|:-----|
+|:--------------------------|:--------------|:-----------------------------------------|:-----|
 |<code>Entry</code> Penetration Tester|Walkthrough    |✅ Shells Overview                           |      |
 |<code>Entry</code> Penetration Tester|Walkthrough    |✅ Nmap: The Basics                          ||
 |<code>Entry</code> Penetration Tester|Walkthrough    |✅ Metasploit: Meterpreter                   ||
