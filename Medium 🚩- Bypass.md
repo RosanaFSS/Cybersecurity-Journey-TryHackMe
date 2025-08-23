@@ -359,15 +359,15 @@ The username is the computer's hostname, and the password is the same as the pre
 |                           |                        |               |✅ Boogeyman 1                               ||
 |                           |                        |               |✅ Empire                                    ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Juicy Details                             |Easy|
-|                           |                        |               |✅ Cat Picturess                             |Easy|
-|                           |                        |               |✅ GLITCH                                    |Easy|
-|                           |                        |               |✅ Magician                                  |Easy|
-|                           |                        |               |✅ Res                                       |Easy|
-|                           |                        |               |✅ Chocolate Factory                         |Easy|
-|                           |                        |               |✅ GamingServer                              |Easy|
-|                           |                        |               |✅ Easy Peasy                                |Easy|
-|                           |                        |               |✅ Madness                                   |Easy|
-|                           |                        |               |✅ Reversing ELF                             |Easy|
-|                           |                        |               |✅ Ninja Skills                              |Easy
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Cat Picturess                             |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ GLITCH                                    |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Magician                                  |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Res                                       |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Chocolate Factory                         |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ GamingServer                              |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Easy Peasy                                |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Madness                                   |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Reversing ELF                             |Easy|
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Ninja Skills                              |Easy
 
 </div>
