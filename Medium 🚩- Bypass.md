@@ -304,7 +304,7 @@ The username is the computer's hostname, and the password is the same as the pre
 
 <div align="center">
 
-|Path                       |Skill                   |CTF, Challenge |Name                                      |Level |
+|Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
 |Entry Penetration Tester   |Red Teaming             |Walkthrough    |Shells Overview                           |      |
 |                           |                        |               |Nmap: The Basics                          ||
