@@ -369,6 +369,36 @@ The username is the computer's hostname, and the password is the same as the pre
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Easy Peasy                                |Easy|
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Madness                                   |Easy|
 |<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Reversing ELF                             |Easy|
-|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Ninja Skills                              |Easy
+|<code>Junior</code> Penetration Tester  |Red Teaming|CTF, Challenge |✅ Ninja Skills                              |Easy|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Supplemental Memory                       |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ APT28 in the Snare                        |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ APT28 Inception Theory                    |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Logless Hunt                              |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting With YARA                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Windows Incident Surface                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Baselines and Anomalies                   |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Eradication and Remediation               |Easy|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Atomic Bird Goes Purple #1                |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Atomic Bird Goes Purple #2                |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ CVE-2023-38408                            |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Intel & Containment                |Easy|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Intro to Threat Emulation                 |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting: Introduction              |Easy|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting: Endgame                   |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Threat Hunting: Pivoting                  |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ LocalPotato                               |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Crylo                                     |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Atomic Red Team                           |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Tactical Detection                        |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Aurora EDR                                |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Tardigrade                                |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Signature Evasion                         |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Sandbox Evasion                           |Hard|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ CALDERA                                   |Hard|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Living Off the Land                       |Medium|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Runtime Detection Evasion                 |Hard|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Red Team Recon                            |Easy|
+|<code>Mid</code> Penetration Tester     |Red Teaming|Walkthrough    |✅ Weaponization                             |Medium|
+
 
 </div>
