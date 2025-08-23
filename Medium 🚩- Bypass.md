@@ -82,6 +82,9 @@ Dev Ops Engineer
 
 <br>
 <br>
+<p>1.1. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=1?<br>
+<code>THM{10001}</code></p>
+<br>
 <h3>Crafted Packets</h3>
 <h4>Make a <code>UDP</code> request<br>to the machine with source port number 5000.<br>Once done, you can fetch the flag through /fpassword.php?id=1</h4>
 <br>
@@ -102,10 +105,9 @@ https://cctv.thm/fpassword.php/?id=1?
 <br>
 <br>
 
-<p>1.1. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=1?<br>
-<code>THM{10001}</code></p>
+<p>1.2. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=2?<br>
+<code>THM{10125}</code></p>
 
-<br>
 <br>
 <h4>Make a <code>TCP</code> request<br>to fpassword.php?id=2 with user-agent set as "I am Steve Friend".<br>Once done, you can fetch the flag through /fpassword.php?id=2</h4>
 <br>
@@ -136,12 +138,9 @@ https://cctv.thm/fpassword.php/?id=2?
 
 <br>
 <br>
+<p>1.3. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=3?<br>
+<code>THM{13231}</code></p>
 
-<p>1.2. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=2?<br>
-<code>THM{10125}</code></p>
-
-
-<br>
 <br>
 <h4>Send a <code>ping</code> packet<br>to the machine appearing as Mozilla browser<br>(Hint: packet content with user agent set as Mozilla).<br>Once done, you can fetch the flag through /fpassword.php?id=3</h4>
 <br>
@@ -178,11 +177,8 @@ https://cctv.thm/fpassword.php/?id=3?
 
 <br>
 <br>
-
-<p>1.3. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=3?<br>
-<code>THM{13231}</code></p>
-
-<br>
+<p>1.4. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=4?<br>
+<code>THM{33120}</code></p>
 <br>
 <h4>Attempt to login to the <code>FTP</code> server<br>with content containing the word "user" in it.<br>Once done, you can fetch the flag from /fpassword.php?id=4</h4>
 <br>
@@ -204,11 +200,8 @@ https://cctv.thm/fpassword.php/?id=4?
 
 <br>
 <br>
-
-<p>1.4. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=4?<br>
-<code>THM{33120}</code></p>
-
-<br>
+<p>1.5. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=5?<br>
+<code>THM{12319}</code></p>
 <br>
 <h4>Send <code>TCP</code>code> request<br>to flagger.cgi endpoint with a host header containing more than 50 characters.<br>Once done, you can fetch the flag from /fpassword.php?id=5</h4>
 <br>
@@ -240,12 +233,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 <br>
 <br>
-
-<p>1.5. What is the flag value after accessing the endpoint cctv.thm/fpassword.php?id=5?<br>
-<code>THM{12319}</code></p>
-
-<br>
-<br>
 <h4>Send <code>TCP</code>code> request<br>to flagger.cgi endpoint with a host header containing more than 50 characters.<br>Once done, you can fetch the flag from /fpassword.php?id=5</h4>
 <br>
 
@@ -254,6 +241,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 <br>
 
+```bash
+...
+After receiving all the flags, you can visit the MACHINE IP that will ask you for the password.
+The first password will be concatenated values of all five flags you have received above.
+```
+
+<br>
+
+<p><code>THM{10001}</code> + <code>THM{10125}</code> + <code>THM{1 + 3231}</code> + <code>THM{33120}</code> + <code>THM{12319}</p>
+
+<br>
 <p>1.7. What is the lsb_release -r -s command output from the attached machine?<br>
 <code>20.04</code></p>
 
@@ -292,22 +290,12 @@ The username is the computer's hostname, and the password is the same as the pre
 
 <br>
 <br>
-
-<img width="750" height="487" alt="image" src="https://github.com/user-attachments/assets/b10f643e-c4ad-493c-a227-36512eafe1cd" />
-
-<br>
-<br>
-
-<img width="753" height="517" alt="image" src="https://github.com/user-attachments/assets/520b5e52-c995-4e0c-8355-69b3c76b9298" />
-
-<br>
-<br>
 <p>1.9. What is the flag value after logging into the CCTV web panel?<br>
 <code>THM{CCTV_HACKED_1011110}</code></p>
 
 <br>
 
-<p><code>bupass</code> : <code>THM{10001}THM{10125}THM{13231}THM{33120}THM{12319}</code></p>
+<p><code>bypass</code> : <code>THM{10001}THM{10125}THM{13231}THM{33120}THM{12319}</code></p>
 
 <br>
 
