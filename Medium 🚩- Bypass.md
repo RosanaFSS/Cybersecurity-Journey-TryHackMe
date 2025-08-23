@@ -311,12 +311,12 @@ The username is the computer's hostname, and the password is the same as the pre
 
 |Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
-|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Shells Overview                           |      |
-|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Nmap: The Basics                          ||
-|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Meterpreter                   ||
-|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Introduction                  ||
-|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Exploitation                  ||
-|<code>Entry</xode> Penetration Tester|Red Teaming   |Walkthrough    |✅ REmux The Tmux                            ||
+|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Shells Overview                           |      |
+|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Nmap: The Basics                          ||
+|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Meterpreter                   ||
+|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Introduction                  ||
+|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ Metasploit: Exploitation                  ||
+|<code>Entry</code> Penetration Tester|Red Teaming   |Walkthrough    |✅ REmux The Tmux                            ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Passive Reconnaissance                    ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Intro to Malware Analysis                 ||
 |<code>Junior</code> Penetration Tester  |Red Teaming|Walkthrough    |✅ Nmap Basic Port Scans                     ||
