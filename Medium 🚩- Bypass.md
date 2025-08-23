@@ -308,14 +308,14 @@ The username is the computer's hostname, and the password is the same as the pre
 |<code>Entry</code> Penetration Tester|Walkthrough    |✅ Shells Overview                           |      |
 |<code>Entry</code> Penetration Tester|Walkthrough    |✅ Nmap: The Basics                          ||
 |<code>Entry</code> Penetration Tester|Walkthrough    |✅ Metasploit: Meterpreter                   ||
-|<code>Entry</code> Penetration TesterWalkthrough    |✅ Metasploit: Introduction                  ||
-|<code>Entry</code> Penetration TesterWalkthrough    |✅ Metasploit: Exploitation                  ||
-|<code>Entry</code> Penetration TesterWalkthrough    |✅ REmux The Tmux                            ||
+|<code>Entry</code> Penetration Tester|Walkthrough    |✅ Metasploit: Introduction                  ||
+|<code>Entry</code> Penetration Tester|Walkthrough    |✅ Metasploit: Exploitation                  ||
+|<code>Entry</code> Penetration Tester|Walkthrough    |✅ REmux The Tmux                            ||
 |<br><br>                                          |                                              ||
-|<code>Junior</code> Penetration Tester  Walkthrough    |✅ Passive Reconnaissance                    ||
-|<code>Junior</code> Penetration Tester  Walkthrough    |✅ Intro to Malware Analysis                 ||
-|<code>Junior</code> Penetration Tester  Walkthrough    |✅ Nmap Basic Port Scans                     ||
-|<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Nmap Advanced Port Scans                  ||
+|<code>Junior</code> Penetration Tester|Walkthrough    |✅ Passive Reconnaissance                    ||
+|<code>Junior</code> Penetration Tester|Walkthrough    |✅ Intro to Malware Analysis                 ||
+|<code>Junior</code> Penetration Tester|Walkthrough    |✅ Nmap Basic Port Scans                     ||
+|<code>Junior</code> Penetration Tester|Walkthrough    |✅ Nmap Advanced Port Scans                  ||
 |<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Nmap Live Host Discovery                  ||
 |<code>Junior</code> Penetration Tester  |Walkthrough    |✅ Security Operations                       ||
 |<code>Junior</code> Penetration Tester  |Walkthrough    |✅ OWASP Top 1-2021                          ||
