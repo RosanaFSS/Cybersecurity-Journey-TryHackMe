@@ -302,69 +302,69 @@ The username is the computer's hostname, and the password is the same as the pre
 
 <br>
 <br>
-<h1 align="center">Penetration Tester  .  Red Teaming</h1>
+<h1 align="center">🔴<br><br>Penetration Tester  .  Red Teaming</h1>
 
 <div align="center">
 
 |Path                       |Skill                   |Type           |Name                                      |Level |
 |:--------------------------|:-----------------------|:--------------|:-----------------------------------------|:-----|
-|Entry Penetration Tester   |Red Teaming             |Walkthrough    |Shells Overview                           |      |
-|                           |                        |               |Nmap: The Basics                          ||
-|                           |                        |               |Metasploit: Meterpreter                   ||
-|                           |                        |               |Metasploit: Introduction                  ||
-|                           |                        |               |Metasploit: Exploitation                  ||
-|                           |                        |               |REmux The Tmux                            ||
-|Junior Penetration Tester  |                        |Walkthrough    |Passive Reconnaissance                    ||
-|                           |                        |               |Intro to Malware Analysis                 ||
-|                           |                        |               |Nmap Basic Port Scans                     ||
-|                           |                        |               |Nmap Advanced Port Scans                  ||
-|                           |                        |               |Nmap Live Host Discovery                  ||
-|                           |                        |               |Security Operations                       ||
-|                           |                        |               |OWASP Top 1-2021                          ||
-|                           |                        |               |OWASP Broken Access Control               ||
-|                           |                        |               |MISP                                      ||
-|                           |                        |               |OpenCTI                                   ||
-|                           |                        |               |Wireshark: Traffic Analysis               ||
-|                           |                        |               |Investigating with ELK 101                ||
-|                           |                        |               |Brim                                      ||
-|                           |                        |               |Erlang/OTP SSH: CVE-2025-32433            ||
-|                           |                        |               |ParrotPost: Phishing Analysis             ||
-|                           |                        |               |Outlook NTLM Leak                         ||
-|                           |                        |               |Hosted Hypervisors                        ||
-|                           |                        |               |Forensic Imaging                          ||
-|                           |                        |               |Linux File System Analysis                ||
-|                           |                        |               |Redline                                   ||
-|                           |                        |               |Content Discovery                         ||
-|                           |                        |               |Intro to Pwntools                         ||
-|                           |                        |               |SQLMAP                                    ||
-|                           |                        |               |Core Windows Processes                    ||
-|                           |                        |               |Sysmon                                    ||
-|                           |                        |               |What the Shell?                           ||
-|                           |                        |               |MITRE                                     ||
-|                           |                        |               |MAL: REMux - The Redux                    ||
-|                           |                        |               |MAL: Strings                              ||
-|                           |                        |               |Rustscan                                  ||
-|                           |                        |               |Network Services                          ||
-|                           |                        |               |Network Services 2                        ||
-|                           |                        |               |Upload Vulnerabilities                    ||
-|                           |                        |               |YARA                                      ||
-|                           |                        |               |Buffer Overflows                          ||
-|                           |                        |               |Critical                                  ||
-|                           |                        |               |Eviction                                  ||
-|                           |                        |               |Probe                                     ||
-|                           |                        |               |Trooper                                   ||
-|                           |                        |               |Boogeyman 1                               ||
-|                           |                        |               |Empire                                    ||
-|                           |                        |CTF, Challenge |Juicy Details                             |Easy|
-|                           |                        |               |Cat Picturess                             |Easy|
-|                           |                        |               |GLITCH                                    |Easy|
-|                           |                        |               |Magician                                  |Easy|
-|                           |                        |               |Res                                       |Easy|
-|                           |                        |               |Chocolate Factory                         |Easy|
-|                           |                        |               |GamingServer                              |Easy|
-|                           |                        |               |Easy Peasy                                |Easy|
-|                           |                        |               |Madness                                   |Easy|
-|                           |                        |               |Reversing ELF                             |Easy|
-|                           |                        |               |Ninja Skills                              |Easy
+|Entry Penetration Tester   |Red Teaming             |Walkthrough    |✅ Shells Overview                           |      |
+|                           |                        |               |✅ Nmap: The Basics                          ||
+|                           |                        |               |✅ Metasploit: Meterpreter                   ||
+|                           |                        |               |✅ Metasploit: Introduction                  ||
+|                           |                        |               |✅ Metasploit: Exploitation                  ||
+|                           |                        |               |✅ REmux The Tmux                            ||
+|Junior Penetration Tester  |                        |Walkthrough    |✅ Passive Reconnaissance                    ||
+|                           |                        |               |✅ Intro to Malware Analysis                 ||
+|                           |                        |               |✅ Nmap Basic Port Scans                     ||
+|                           |                        |               |✅ Nmap Advanced Port Scans                  ||
+|                           |                        |               |✅ Nmap Live Host Discovery                  ||
+|                           |                        |               |✅ Security Operations                       ||
+|                           |                        |               |✅ OWASP Top 1-2021                          ||
+|                           |                        |               |✅ OWASP Broken Access Control               ||
+|                           |                        |               |✅ MISP                                      ||
+|                           |                        |               |✅ OpenCTI                                   ||
+|                           |                        |               |✅ Wireshark: Traffic Analysis               ||
+|                           |                        |               |✅ Investigating with ELK 101                ||
+|                           |                        |               |✅ Brim                                      ||
+|                           |                        |               |✅ Erlang/OTP SSH: CVE-2025-32433            ||
+|                           |                        |               |✅ ParrotPost: Phishing Analysis             ||
+|                           |                        |               |✅ Outlook NTLM Leak                         ||
+|                           |                        |               |✅ Hosted Hypervisors                        ||
+|                           |                        |               |✅ Forensic Imaging                          ||
+|                           |                        |               |✅ Linux File System Analysis                ||
+|                           |                        |               |✅ Redline                                   ||
+|                           |                        |               |✅ Content Discovery                         ||
+|                           |                        |               |✅ Intro to Pwntools                         ||
+|                           |                        |               |✅ SQLMAP                                    ||
+|                           |                        |               |✅ Core Windows Processes                    ||
+|                           |                        |               |✅ Sysmon                                    ||
+|                           |                        |               |✅ What the Shell?                           ||
+|                           |                        |               |✅ MITRE                                     ||
+|                           |                        |               |✅ MAL: REMux - The Redux                    ||
+|                           |                        |               |✅ MAL: Strings                              ||
+|                           |                        |               |✅ Rustscan                                  ||
+|                           |                        |               |✅ Network Services                          ||
+|                           |                        |               |✅ Network Services 2                        ||
+|                           |                        |               |✅ Upload Vulnerabilities                    ||
+|                           |                        |               |✅ YARA                                      ||
+|                           |                        |               |✅ Buffer Overflows                          ||
+|                           |                        |               |✅ Critical                                  ||
+|                           |                        |               |✅ Eviction                                  ||
+|                           |                        |               |✅ Probe                                     ||
+|                           |                        |               |✅ Trooper                                   ||
+|                           |                        |               |✅ Boogeyman 1                               ||
+|                           |                        |               |✅ Empire                                    ||
+|                           |                        |CTF, Challenge |✅ Juicy Details                             |Easy|
+|                           |                        |               |✅ Cat Picturess                             |Easy|
+|                           |                        |               |✅ GLITCH                                    |Easy|
+|                           |                        |               |✅ Magician                                  |Easy|
+|                           |                        |               |✅ Res                                       |Easy|
+|                           |                        |               |✅ Chocolate Factory                         |Easy|
+|                           |                        |               |✅ GamingServer                              |Easy|
+|                           |                        |               |✅ Easy Peasy                                |Easy|
+|                           |                        |               |✅ Madness                                   |Easy|
+|                           |                        |               |✅ Reversing ELF                             |Easy|
+|                           |                        |               |✅ Ninja Skills                              |Easy
 
 </div>
