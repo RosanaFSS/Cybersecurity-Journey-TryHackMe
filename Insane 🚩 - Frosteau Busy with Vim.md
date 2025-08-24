@@ -560,7 +560,7 @@ root@tryhackme:~# cat yetikey3.txt
 3-d2dc6a02db03******************************6b8c6294f8c5a2c8e01f60
 ```
 
-<p>1.5.What is the value of the third Yetikey that has been placed in the root directory to verify the compromise?<br>
+<p>1.5. What is the value of the third Yetikey that has been placed in the root directory to verify the compromise?<br>
 <code>3-d2dc6a02db03******************************6b8c6294f8c5a2c8e01f60</code></p>
 
 <br>
