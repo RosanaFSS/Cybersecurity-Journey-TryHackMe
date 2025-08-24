@@ -197,11 +197,7 @@ SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763
 :~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | grep Print
 ```
 
-<br>
-
 <img width="1092" height="153" alt="image" src="https://github.com/user-attachments/assets/0000e99c-8695-430d-8749-512b6cc1d2d0" />
-
-<br>
 
 ```bash
 :~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | egrep 'MS-RPRN|MS-PAR'
@@ -219,8 +215,6 @@ Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol
 :~/VulnNetActive# redis-cli -h vulnnet.thm
 vulnnet.thm:6379>
 ```
-
-<br>
 
 <img width="1091" height="142" alt="image" src="https://github.com/user-attachments/assets/b750486e-2402-46a3-96d7-237fce0b9761" />
 
