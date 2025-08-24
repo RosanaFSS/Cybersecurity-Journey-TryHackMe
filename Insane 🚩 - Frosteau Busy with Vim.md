@@ -418,9 +418,6 @@ THM{*****************************}
     
 - [ENTER]</p>
 
-<br>
-<br>
-
 <img width="1126" height="306" alt="image" src="https://github.com/user-attachments/assets/21415ada-84e9-412f-bfbc-0c9738afaf39" />
 
 <br>
