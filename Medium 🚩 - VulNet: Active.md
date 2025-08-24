@@ -240,11 +240,6 @@ run_id:fd5deedf4803915e1c9d9977c607e834a7d47642
 ...
 ```
 
-<p>
-
-- C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402</p>
-
-
 ```bash 
 vulnnet.thm:6379> CONFIG GET pidfile
 1) "pidfile"
@@ -264,6 +259,10 @@ vulnnet.thm:6379> CONFIG GET logfile
 2) ""
 3) ```
 ```
+
+<p>
+
+- C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402</p>
 
 ```bash
 vulnnet.thm:6379> CONFIG GET dir
