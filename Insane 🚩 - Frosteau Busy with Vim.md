@@ -232,12 +232,12 @@ PORT     STATE SERVICE REASON         VERSION
 
 <br>
 <h2>port 80</h2>
-<h4>files</h4>
 
 <img width="1135" height="268" alt="image" src="https://github.com/user-attachments/assets/311cfba0-9a37-44f2-9793-20d24e061068" />
 
 <br>
 <h2>port 8075</h2>
+<h4>files</h4>
 
 ```bash
 :~/FrosteauBusyWithVim# telnet xx.xxx.xx.xxx 8075
