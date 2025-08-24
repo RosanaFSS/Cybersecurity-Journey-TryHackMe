@@ -448,6 +448,7 @@ Escape character is '^]'.
 <img width="1009" height="245" alt="image" src="https://github.com/user-attachments/assets/b35a0906-1502-47c5-b5e9-c2bf5f1476ea" />
 
 <br>
+<h2>SSH</h2>
 <p>
 
 - create a SSH key within your virtual machine</p>
@@ -469,6 +470,8 @@ Escape character is '^]'.
 ubuntu@tryhackme:~$
 ```
 
+<h2>The path of the 3ʳᵈ flag</h2>
+
 ```bash
 ubuntu@tryhackme:~$ find / -name "flag-3*" 2>/dev/null
 /home/ubuntu/containers/flag-3-of-4.txt
@@ -485,6 +488,8 @@ Dockerfile~  FROST-2247-SP.txt  busybox         flag-1-of-4.txt     frostling_ba
 Dockerfily~  YETI-1125-SP.txt   busybox-x86_64  flag-2-of-4.sh      frostling_five.png  script.py     vsftpd.sh  yeti_mugshot.png
 ```
 
+<h2>3ʳᵈ flag</h2>
+
 ```bash
 ubuntu@tryhackme:~/containers$ cat flag-3-of-4.txt
 THM{**********************************}
@@ -495,9 +500,8 @@ THM{**********************************}
 <p>1.3. What is the value of the third flag? Hint : You can see that this machine does not just use a standard shell, and although you can see the shell that it uses, you don't have access to it. Is there any way you can create your very own similar shell?<br>
 <code>THM{**********************************}</code></p>
 
-<br>
-<br>
-<h3>ubuntu´s privileges</h3>
+
+<h2>ubuntu´s privileges</h2>
 
 ```bash
 ubuntu@tryhackme:/$ sudo -l
@@ -518,7 +522,7 @@ User ubuntu may run the following commands on tryhackme:
 ```
 
 <br>
-<h3>path of the fourth flag</h3>
+<h3>The path of the 4ᵗʰ flag</h3>
 
 ```bash
 ubuntu@tryhackme:/$ sudo find / -name "flag-4*" 2>/dev/null
@@ -530,30 +534,33 @@ ubuntu@tryhackme:/$ sudo find / -name "flag-4*" 2>/dev/null
 
 ```bash
 ubuntu@tryhackme:/$ sudo su root
-root@tryhackme:/# pwd
+root@tryhackme:/#
+```
+
+```bash
+root@tryhackme:/#pwd
 /
 root@tryhackme:/# cd /root
+```
+
+```bash
 root@tryhackme:~# ls
 flag-4-of-4.txt  snap  yetikey3.txt
 root@tryhackme:~# cat flag-4-of-4.txt
 THM{*********************************************}
 ```
 
-<br>
+<h2>4ᵗʰflag</h2>
 
 <p>1.4. What is the value of the fourth flag?<br>
 <code>THM{*********************************************}</code></p>
 
-<br>
-<br>
-<h3>Yeti´s key</h3>
+<h2>Yeti´s Key</h2>
 
 ```bash
 root@tryhackme:~# cat yetikey3.txt
 3-d2dc6a02db03******************************6b8c6294f8c5a2c8e01f60
 ```
-
-<br>
 
 <p>1.5.What is the value of the third Yetikey that has been placed in the root directory to verify the compromise?<br>
 <code>3-d2dc6a02db03******************************6b8c6294f8c5a2c8e01f60</code></p>
@@ -575,7 +582,7 @@ root@tryhackme:~# cat yetikey3.txt
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 24   | 475      |     115ᵗʰ    |      5ᵗʰ     |     292nd   |     7ᵗʰ    | 122,630  |    925    |    73     |
+| 2025, August 24   | 475      |     115ᵗʰ    |      5ᵗʰ     |     292ⁿᵈ   |     7ᵗʰ    | 122,630  |    925    |    73     |
 
 </div>
 
@@ -583,7 +590,7 @@ root@tryhackme:~# cat yetikey3.txt
 <p align="center">Global All Time:   115ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ae950b47-190d-4082-adc6-338bdcf5bf5d"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/e9cea3a1-1374-4516-bb5e-316c23b9b0cf"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fa434319-7931-466a-8100-a4f0985a21a4"><br>
-                  Global monthly:    292nd<br><img width="1200px" src="https://github.com/user-attachments/assets/79335c1e-3a9f-4835-a901-a3d61885e16a"><br>
+                  Global monthly:    292ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/79335c1e-3a9f-4835-a901-a3d61885e16a"><br>
                   Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/4d065189-ed80-462d-9041-944b163c2024"><br>
 
 <br>
