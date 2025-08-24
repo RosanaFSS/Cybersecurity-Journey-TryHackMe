@@ -416,19 +416,12 @@ THM{*****************************}
 
 <p>
     
-- [ENTER]</p>
-
-<p>
-    
+- [ENTER]<br>    
 - /usr<br>
 - /frosty<br>
 - sh*</p>
 
 <img width="1126" height="306" alt="image" src="https://github.com/user-attachments/assets/21415ada-84e9-412f-bfbc-0c9738afaf39" />
-
-
-
-<img width="1121" height="286" alt="image" src="https://github.com/user-attachments/assets/fcaac6cf-0ac4-4f97-8097-df050c3193ce" />
 
 <br>
 <p>
