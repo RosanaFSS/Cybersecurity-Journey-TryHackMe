@@ -426,8 +426,8 @@ THM{*****************************}
 <br>
 <p>
 
-- /proc/1274/root/</p>
-
+- #!/usr/frosty/sh<br>
+- :wq!</p>
 
 <img width="969" height="775" alt="image" src="https://github.com/user-attachments/assets/0a0d6ed5-707e-457a-ab75-1e656c003e0b" />
 
@@ -442,7 +442,9 @@ Escape character is '^]'.
 ```
 
 <br>
-<br>
+<p>
+
+- /proc/1274/root/usr/bin</p>
 
 <img width="1016" height="259" alt="image" src="https://github.com/user-attachments/assets/95ac4063-1ff7-4faf-9b51-58563c041fca" />
 
