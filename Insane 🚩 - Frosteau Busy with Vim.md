@@ -424,15 +424,6 @@ THM{*****************************}
 <img width="1126" height="306" alt="image" src="https://github.com/user-attachments/assets/21415ada-84e9-412f-bfbc-0c9738afaf39" />
 
 <br>
-<p>
-
-- #!/usr/frosty/sh<br>
-- :wq!</p>
-
-<img width="969" height="775" alt="image" src="https://github.com/user-attachments/assets/0a0d6ed5-707e-457a-ab75-1e656c003e0b" />
-
-<br>
-<br>
 
 ```bash
 $ telnet xx.xxx.xx.xxx 8085
