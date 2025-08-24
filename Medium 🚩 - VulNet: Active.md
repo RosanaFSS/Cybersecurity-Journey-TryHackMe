@@ -288,19 +288,16 @@ vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\
 (error) ERR Error running script (call to f_ce5d85ea1418770097e56c1b605053114cc3ff2e): @user_script:1: C:\Users\enterprise-security\Desktop\user.txt:1: malformed number near '3eb176aee96432d5b100bc93580b291e' 
 ```
 
-<br>
-
 <img width="1086" height="106" alt="image" src="https://github.com/user-attachments/assets/30437ddd-c49c-425c-8407-688916217194" />
 
 <br>
 <br>
 
-<p>1.1. What is the user flag? (Desktop\user.txt)<br>
+<p>1.1.  What is the user flag? (Desktop\user.txt)<br>
 <code>THM{3eb176aee96432d5b100bc93580b291e}</code></p>
 
 <br>
 
-<img width="768" height="189" alt="image" src="https://github.com/user-attachments/assets/f8e02cc4-f944-4615-b501-dc6ba2bb0fbc" />
 
 <br>
 
