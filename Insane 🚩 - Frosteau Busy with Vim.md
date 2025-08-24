@@ -231,27 +231,6 @@ PORT     STATE SERVICE REASON         VERSION
 ```
 
 <br>
-
-<img width="997" height="204" alt="image" src="https://github.com/user-attachments/assets/feeb9c85-a532-410f-9a30-74d40c8f4ff4" />
-
-<br>
-<br>
-
-<img width="991" height="309" alt="image" src="https://github.com/user-attachments/assets/64079947-0008-4efe-b118-71264fa4e535" />
-
-<br>
-<br>
-
-<img width="998" height="197" alt="image" src="https://github.com/user-attachments/assets/8ea70a29-3d1a-4f99-8928-d0ddcb472f63" />
-
-<br>
-<br>
-
-<img width="994" height="289" alt="image" src="https://github.com/user-attachments/assets/b837d701-5a38-4c0d-93f9-2f610dc764a9" />
-
-
-<br>
-<br>
 <h3>Web port 80</h3>
 
 <img width="1135" height="268" alt="image" src="https://github.com/user-attachments/assets/311cfba0-9a37-44f2-9793-20d24e061068" />
