@@ -521,14 +521,14 @@ User ubuntu may run the following commands on tryhackme:
     (ALL) NOPASSWD: ALL
 ```
 
-<h3>The path of the 4ᵗʰ flag</h3>
+<h2>The path of the 4ᵗʰ flag</h2>
 
 ```bash
 ubuntu@tryhackme:/$ sudo find / -name "flag-4*" 2>/dev/null
 /root/flag-4-of-4.txt
 ```
 
-<h3>Privilege Escalation</h3>
+<h2>Privilege Escalation</h2>
 
 ```bash
 ubuntu@tryhackme:/$ sudo su root
