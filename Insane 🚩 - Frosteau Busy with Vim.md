@@ -428,20 +428,8 @@ THM{*****************************}
 
 - sh*</p>
 
-<br>
-<br>
-
 <img width="1121" height="286" alt="image" src="https://github.com/user-attachments/assets/fcaac6cf-0ac4-4f97-8097-df050c3193ce" />
 
-<br>
-<p>
-
-- #!/etc/file/busybox<br>
-- :wq!<br>
-- "/usr/frosty/sh" 2L, 21B written<br>Connection closed by foreign host.
-</p>
-
-<br>
 <br>
 
 <img width="969" height="775" alt="image" src="https://github.com/user-attachments/assets/0a0d6ed5-707e-457a-ab75-1e656c003e0b" />
