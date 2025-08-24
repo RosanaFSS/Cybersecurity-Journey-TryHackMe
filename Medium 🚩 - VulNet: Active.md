@@ -200,10 +200,42 @@ SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763
 
 ```bash
 :~/VulnNetActive# redis-cli -h vulnnet.thm
-vulnnet.thm:6379> 
-
+vulnnet.thm:6379> info
+# Server
+redis_version:2.8.2402
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:b2a45a9622ff23b7
+redis_mode:standalone
+os:Windows  
+arch_bits:64
+multiplexing_api:winsock_IOCP
+process_id:2112
+run_id:fd5deedf4803915e1c9d9977c607e834a7d47642
+...
 ```
 
+```bash
+vulnnet.thm:6379> config get *
+  1) "dbfilename"
+  2) "dump.rdb"
+  3) "requirepass"
+  4) ""
+  5) "masterauth"
+...
+104) "C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402"
+...
+```
 
+<br>
 
+<img width="768" height="189" alt="image" src="https://github.com/user-attachments/assets/f8e02cc4-f944-4615-b501-dc6ba2bb0fbc" />
+
+<br>
+<h3>searchploit</h3>
+<p>
+
+- researched <code>GitHub Redis 2.8.2402 exploit</code><br>
+- identified Redis RCE related to this version<br>
+- learned in HackTricks how to enumerate Redis</p>
 
