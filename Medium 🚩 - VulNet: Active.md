@@ -199,6 +199,8 @@ SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763
 
 <img width="1092" height="153" alt="image" src="https://github.com/user-attachments/assets/0000e99c-8695-430d-8749-512b6cc1d2d0" />
 
+<br>
+
 ```bash
 :~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | egrep 'MS-RPRN|MS-PAR'
 Protocol: [MS-RPRN]: Print System Remote Protocol 
@@ -297,6 +299,8 @@ vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\
 <br>
 
 <img width="768" height="189" alt="image" src="https://github.com/user-attachments/assets/f8e02cc4-f944-4615-b501-dc6ba2bb0fbc" />
+
+<br>
 
 ```bash
 vulnnet.thm:6379> config get *
