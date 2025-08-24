@@ -428,6 +428,10 @@ THM{*****************************}
 <img width="1121" height="286" alt="image" src="https://github.com/user-attachments/assets/fcaac6cf-0ac4-4f97-8097-df050c3193ce" />
 
 <br>
+<p>
+
+- /proc/1274/root/</p>
+
 
 <img width="969" height="775" alt="image" src="https://github.com/user-attachments/assets/0a0d6ed5-707e-457a-ab75-1e656c003e0b" />
 
