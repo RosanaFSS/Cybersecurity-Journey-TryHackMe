@@ -448,16 +448,18 @@ Escape character is '^]'.
 <img width="1009" height="245" alt="image" src="https://github.com/user-attachments/assets/b35a0906-1502-47c5-b5e9-c2bf5f1476ea" />
 
 <br>
+<p>
+
+- create a SSH key within your virtual machine</p>
 
 ```bash
 :~/FrosteauBusyWithVim# ssh-keygen
 ```
 
-<br>
 <p>
 
 - /proc/1274/root/home/ubuntu/.ssh/authorized_keys<br>
-- paste your public key<br>
+- add your Publiv Key to the Target virtual machine<br>
 - SSH</p>
 
 ```bash
