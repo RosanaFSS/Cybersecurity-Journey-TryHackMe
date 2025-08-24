@@ -419,7 +419,7 @@ THM{*****************************}
 - [ENTER]<br>    
 - /usr<br>
 - /frosty<br>
-- sh*</p>
+- /sh*</p>
 
 <img width="1126" height="306" alt="image" src="https://github.com/user-attachments/assets/21415ada-84e9-412f-bfbc-0c9738afaf39" />
 
@@ -441,12 +441,24 @@ Escape character is '^]'.
 <img width="1016" height="259" alt="image" src="https://github.com/user-attachments/assets/95ac4063-1ff7-4faf-9b51-58563c041fca" />
 
 <br>
-<br>
+<p>
+
+- /proc/1274/root/home/ubuntu/.ssh</p>
 
 <img width="1009" height="245" alt="image" src="https://github.com/user-attachments/assets/b35a0906-1502-47c5-b5e9-c2bf5f1476ea" />
 
 <br>
+
+```bash
+:~/FrosteauBusyWithVim# ssh-keygen
+```
+
 <br>
+<p>
+
+- /proc/1274/root/home/ubuntu/.ssh/authorized_keys<br>
+- paste your public key<br>
+- SSH</p>
 
 ```bash
 :~/FrosteauBusyWithVim# ssh ubuntu@xx.xxx.xx.xxx -i id_rsa
