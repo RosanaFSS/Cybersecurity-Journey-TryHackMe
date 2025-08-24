@@ -424,6 +424,8 @@ THM{*****************************}
 <img width="1126" height="306" alt="image" src="https://github.com/user-attachments/assets/21415ada-84e9-412f-bfbc-0c9738afaf39" />
 
 <br>
+<br>
+<br>
 
 ```bash
 $ telnet xx.xxx.xx.xxx 8085
@@ -432,7 +434,6 @@ Connected to xx.xxx.xx.xxx.
 Escape character is '^]'.
 ```
 
-<br>
 <p>
 
 - /proc/1274/root/usr/bin</p>
