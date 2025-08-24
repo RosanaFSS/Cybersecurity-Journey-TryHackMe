@@ -231,7 +231,6 @@ PORT     STATE SERVICE REASON         VERSION
 ```
 
 <br>
-<br>
 
 <img width="997" height="204" alt="image" src="https://github.com/user-attachments/assets/feeb9c85-a532-410f-9a30-74d40c8f4ff4" />
 
