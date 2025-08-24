@@ -231,13 +231,13 @@ PORT     STATE SERVICE REASON         VERSION
 ```
 
 <br>
-<h3>Web port 80</h3>
+<h2>port 80</h2>
 <h4>files</h4>
 
 <img width="1135" height="268" alt="image" src="https://github.com/user-attachments/assets/311cfba0-9a37-44f2-9793-20d24e061068" />
 
 <br>
-<h3>port 8075</h3>
+<h2>port 8075</h2>
 
 ```bash
 :~/FrosteauBusyWithVim# telnet xx.xxx.xx.xxx 8075
@@ -289,12 +289,10 @@ ftp> bye
 <img width="912" height="848" alt="image" src="https://github.com/user-attachments/assets/6a838c4d-df48-4efe-8df4-bf398c49e97b" />
 
 <br>
-<br>
 <h4>Types</h4>
 
 <img width="1016" height="426" alt="image" src="https://github.com/user-attachments/assets/765d9c70-b370-43da-8c78-391024bbc0c0" />
 
-<br>
 <br>
 <h4>Contents</h4>
 
@@ -381,7 +379,7 @@ All personnel involved in the apprehension of the Frostling Five are to exercise
 
 <br>
 <br>
-<h3>port 8085</h3>
+<h2>port 8085</h2>
 
 ```bash
 $ telnet xx.xxx.xx.xxx 8085
