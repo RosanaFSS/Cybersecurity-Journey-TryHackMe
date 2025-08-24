@@ -232,10 +232,10 @@ PORT     STATE SERVICE REASON         VERSION
 
 <br>
 <h3>Web port 80</h3>
+<h4>files</h4>
 
 <img width="1135" height="268" alt="image" src="https://github.com/user-attachments/assets/311cfba0-9a37-44f2-9793-20d24e061068" />
 
-<br>
 <br>
 <h3>port 8075</h3>
 
@@ -284,7 +284,6 @@ ftp> bye
 221 Operation successful
 ```
 
-<br>
 <br>
 
 <img width="912" height="848" alt="image" src="https://github.com/user-attachments/assets/6a838c4d-df48-4efe-8df4-bf398c49e97b" />
