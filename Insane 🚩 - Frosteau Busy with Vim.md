@@ -237,7 +237,7 @@ PORT     STATE SERVICE REASON         VERSION
 
 <br>
 <h2>port 8075</h2>
-<h4>files</h4>
+<h3>Files</h3>
 
 ```bash
 :~/FrosteauBusyWithVim# telnet xx.xxx.xx.xxx 8075
@@ -284,17 +284,15 @@ ftp> bye
 221 Operation successful
 ```
 
-<br>
-
 <img width="912" height="848" alt="image" src="https://github.com/user-attachments/assets/6a838c4d-df48-4efe-8df4-bf398c49e97b" />
 
 <br>
-<h4>Types</h4>
+<h3>Types</h3>
 
 <img width="1016" height="426" alt="image" src="https://github.com/user-attachments/assets/765d9c70-b370-43da-8c78-391024bbc0c0" />
 
 <br>
-<h4>Contents</h4>
+<h3>Contents</h3>
 
 ```bash
 $ cat flag-1-of-4.txt | cut -c 1-8
@@ -416,10 +414,9 @@ THM{*****************************}
 :Ex
 ```
 
-<p>[ENTER]</p>
-
-
-- frosty</p>
+<p>
+    
+- [ENTER]</p>
 
 <br>
 <br>
