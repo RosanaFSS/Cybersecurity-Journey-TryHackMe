@@ -298,7 +298,7 @@ vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\
 
 <br>
 
-<h2>reponder</h2>
+<h2>Reponder</h2>
 
 ```bash
 :~/VulnNetActive# responder -I ens5
