@@ -21,12 +21,6 @@ Please allow the VM 5 minutes to fully boot up.</p>
 <p><em>Answer the questions below</em></p>
 
 <br>
-
-<p>1.2. What is the second flag?<br>
-<code>_________________________</code></p>
-
-<br>
-
 <h2>Nikto</h2>
 
 ```bash
@@ -271,7 +265,7 @@ ________________________________________________
  :: Filter           : Response size: 100-203
 ________________________________________________
 
-home                                                                                                                                     [Status: 200, Size: 873, Words: 121, Lines: 63]
+home                           [Status: 200, Size: 873, Words: 121, Lines: 63]
 ...
 :: Progress: [218275/218275] :: Job [1/1] :: 2511 req/sec :: Duration: [0:04:19] :: Errors: 0 ::
 ```
@@ -304,7 +298,7 @@ ________________________________________________
  :: Filter           : Response size: 100-200
 ________________________________________________
 
-gen                                                                                                                                       [Status: 200, Size: 392, Words: 65, Lines: 15]
+gen                                       [Status: 200, Size: 392, Words: 65, Lines: 15]
 ...
 :: Progress: [218275/218275] :: Job [1/1] :: 900 req/sec :: Duration: [0:03:56] :: Errors: 0 ::
 ```
@@ -360,7 +354,6 @@ gen                                                                             
 <h2>GET /page/localhost:8080/gen.php</h2>
 
 <br>
-
 <h2>GET /page/hello</h2>
 
 <img width="1215" height="350" alt="image" src="https://github.com/user-attachments/assets/635709b5-0625-449d-9fe3-b367db0eb8ae" />
@@ -814,6 +807,13 @@ hansolo@contrabando:/opt/generator$ sudo /usr/bin/python2 /opt/generator/app.py
 ```
 
 <img width="1243" height="225" alt="image" src="https://github.com/user-attachments/assets/16ad50b3-2ddf-49fe-897e-18503e072a2a" />
+
+<br>
+,br>
+
+<p>1.2. What is the second flag?<br>
+<code>THM{***...}</code></p>
+
 
 <br>
 <br>
