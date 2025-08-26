@@ -809,7 +809,7 @@ hansolo@contrabando:/opt/generator$ sudo /usr/bin/python2 /opt/generator/app.py
 <img width="1243" height="225" alt="image" src="https://github.com/user-attachments/assets/16ad50b3-2ddf-49fe-897e-18503e072a2a" />
 
 <br>
-,br>
+<br>
 
 <p>1.2. What is the second flag?<br>
 <code>THM{***...}</code></p>
