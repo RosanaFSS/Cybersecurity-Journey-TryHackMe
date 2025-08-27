@@ -1,5 +1,5 @@
 <h1 align="center">CERTain Doom</h1>
-<p align="center">2025, August 10<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>461</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, August 27<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>476</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Bob has since joined the CERT team and developed a nifty new site. Is there more than meets the eye</em>?<br>
 <img width="80px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48"><br>
 Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaindoom">here </a>.<br>
@@ -25,7 +25,7 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaind
 <code>No answer needed</code></p>
 
 <br>
-<h2>Task 2 . Flagz</h2>
+<h2>Task 2 . Flags</h2>
 <p>There's no way in, or is there?</p>
 
 <p><em>Answer the questions below</em></p>
@@ -66,7 +66,7 @@ PORT     STATE  SERVICE    VERSION
 |     HTTP/1.0 200 OK
 |     Content-Length: 117674
 |     Accept-Ranges: bytes
-|     Date: Sun, 10 Aug 2025 xx:xx:xx GMT
+|     Date: Sun, 27 Aug 2025 xx:xx:xx GMT
 |     Server: hastatic-1.0.0
 |     Content-Type: text/html
 |     Cache-Control: no-transform,public,max-age=300,s-maxage=900
@@ -96,7 +96,7 @@ PORT     STATE  SERVICE    VERSION
 |     Content-Type: text/html;charset=utf-8
 |     Content-Language: en
 |     Content-Length: 431
-|     Date: Sun, 10 Aug 2025 xx:xx:xx GMT
+|     Date: Sun, 27 Aug 2025 xx:xx:xx GMT
 |     Connection: close
 |     Server: Apache Tomcat 9?
 |     <!doctype html><html lang="en"><head><title>HTTP Status 404 
@@ -107,7 +107,7 @@ PORT     STATE  SERVICE    VERSION
 |     Content-Type: text/html;charset=utf-8
 |     Content-Language: en
 |     Content-Length: 435
-|     Date: Sun, 10 Aug 2025 12:57:17 GMT
+|     Date: Sun, 27 Aug 2025 12:57:17 GMT
 |     Connection: close
 |     Server: Apache Tomcat 9?
 |     <!doctype html><html lang="en"><head><title>HTTP Status 400 
@@ -132,7 +132,6 @@ PORT     STATE  SERVICE    VERSION
 <img width="1108" height="673" alt="image" src="https://github.com/user-attachments/assets/b545411a-8e2c-4399-b7b7-0818b9d17660" />
 
 <br>
-
 <p>
 
 - was redirected to YouTube</p>
@@ -144,7 +143,6 @@ PORT     STATE  SERVICE    VERSION
 
 <img width="1126" height="47" alt="image" src="https://github.com/user-attachments/assets/ee378940-4a9b-478f-80e8-6b61c10e5791" />
 
-
 <br>
 <h2>ffuf</h2>
 
@@ -153,11 +151,7 @@ PORT     STATE  SERVICE    VERSION
 :~/CERTainDoom# ffuf -u http://xx.xxx.xxx.xxx:8080/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt -mc all -t 100 -ic -fc 404
 ...
 reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
-http%3A%2F%2Fwww        [Status: 400, Size: 435, Words: 32, Lines: 1]
-http%3A%2F%2Fyoutube    [Status: 400, Size: 435, Words: 32, Lines: 1]
-http%3A%2F%2Fblog       [Status: 400, Size: 435, Words: 32, Lines: 1]
-http%3A%2F%2Fblogs      [Status: 400, Size: 435, Words: 32, Lines: 1]
-**http%3A%2F%2Fwww      [Status: 400, Size: 435, Words: 32, Lines: 1]
+...
 ```
 
 <br>
