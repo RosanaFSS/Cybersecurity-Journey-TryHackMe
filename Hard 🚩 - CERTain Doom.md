@@ -119,6 +119,14 @@ PORT     STATE  SERVICE    VERSION
 ```
 
 <br>
+<h2>ffuf</h2>
+
+
+```bash
+:~/CERTainDoom# gobuster -u http://xx.xxx.xxx.xxx/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
+...
+...
+```
 
 <h2>Web 80</h2>
 
