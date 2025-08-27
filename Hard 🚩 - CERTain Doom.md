@@ -175,56 +175,9 @@ reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 
 <div align="center"><h6>
 
-|Request                                                                                      |Response                                                                 |
+|Request                                                                                      |Response                                                                                     |
 |:--------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|
-|POST /reports/upload HTTP/1.1<br>
-Host: xx.xxx.xxx.xx:8080<br>
-User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0<br>
-Accetp: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8<br>
-Accept-Language: en-US,en;q=0.5<br>
-Accep-Encoding: gzip, deflate, br<br>
-Content-Type: multipart/form-data;<br>
-boundary=---...<br>
-Content-Length: 21<br>
-Origin: http://xx.xxx.xxx.xx::8080<br>
-Connection: keep-alive<br>
-Referer: http://xx.xxx.xxx.xx::8080/reports/<br>
-Cookie: JSESSIONID=...<br>
-Upgrade-Insecure-Requests: 1<br>
-<br>
----...<br>
-Content-DIsposition: form-data; name="uploadFile"; filename="Test.txt"<br>
-Content-Type: text/plain<br>
-<br>
-worked<br>
-<br>
--------27.....<br>|
-HTTP/1.1 200<br>
-Content-Type: text/html;charset=UTF-8<br>
-Content-Length: 340<br>
-Date: xxx<br>
-Keep-Alive: timeout=20<br>
-Connection: keep-alive<br>
-Server: Apache Tomcat 9?
-
-<!DOCTYPE html PUBLIC ......<br>
-<html><br>
-<br>
-  <head><br>
-    <meta ....<br>
-    </title><br>
-       Upload Result<br>
-    </title<br>  
-  </head><br>
-<br>
-  <body><br>
-    <h2><br>
-      File /usr/local/tomvat/temp/uploads/Test.txt has uploaded successfulle!<br>
-    </h2><br>
-  </body><br>
-</html><br>
-  
-</body><br>|
+|POST /reports/upload HTTP/1.1<br>Host: xx.xxx.xxx.xx:8080<br>User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0<br>Accetp: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8<br>Accept-Language: en-US,en;q=0.5<br>Accep-Encoding: gzip, deflate, br<br>Content-Type: multipart/form-data;<br>boundary=---...<br>Content-Length: 21<br>Origin: http://xx.xxx.xxx.xx::8080<br>Connection: keep-alive<br>Referer: http://xx.xxx.xxx.xx::8080/reports/<br>Cookie: JSESSIONID=...<br>Upgrade-Insecure-Requests: 1<br><br>---...<br>Content-DIsposition: form-data; name="uploadFile"; filename="Test.txt"<br>Content-Type: text/plain<br><br>worked<br><br>-------27.....<br>|HTTP/1.1 200<br>Content-Type: text/html;charset=UTF-8<br>Content-Length: 340<br>Date: xxx<br>Keep-Alive: timeout=20<br>Connection: keep-alive<br>Server: Apache Tomcat 9?<br><br><!DOCTYPE html PUBLIC ......<br><html><br><br>  <head><br>    <meta ....<br>    </title><br>       Upload Result<br>    </title<br>   </head><br><br>  <body><br>    <h2><br>      File /usr/local/tomvat/temp/uploads/Test.txt has uploaded successfulle!<br>    </h2><br>  </body><br></html><br></body><br>|
 
 
 
