@@ -45,7 +45,7 @@ Access this hard-level CTF clicking <a href="https://tryhackme.com/room/certaind
 
 <br>
 
-<h3>nmap</h3>
+<h3>Nmap</h3>
 
 <p>
 
@@ -118,9 +118,7 @@ PORT     STATE  SERVICE    VERSION
 9090/tcp closed zeus-admin
 ```
 
-<br>
 <h2>Gobuster</h2>
-
 
 ```bash
 :~/CERTainDoom# gobuster -u http://xx.xxx.xxx.xxx -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
