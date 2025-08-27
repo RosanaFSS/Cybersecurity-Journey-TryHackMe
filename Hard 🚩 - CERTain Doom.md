@@ -119,7 +119,7 @@ PORT     STATE  SERVICE    VERSION
 ```
 
 <br>
-<h2>ffuf</h2>
+<h2>Gobuster</h2>
 
 
 ```bash
