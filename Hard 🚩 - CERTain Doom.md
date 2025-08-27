@@ -170,7 +170,8 @@ reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 - <code>File Upload Form</code> to browse and upload vulnerabilities in PDF format<br>
 - upload a <code>Test.txt</code> containing <code>Hello</code><br>
 - used <code>Burp Suite</code> with <code>Foxy Proxy</code> to intercept it<br>
-- sent the <code>Request</code> to Burp´s <code>Repater</code><b/p>
+- sent the <code>Request</code> to Burp´s <code>Repater</code>
+- file with format different than PDF can be uploaded<br></p>
 
 
 <div align="left">
