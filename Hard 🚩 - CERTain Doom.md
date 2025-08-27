@@ -162,7 +162,6 @@ reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 ...
 ```
 
-<br>
 <h2>Web 8080/reports</h2>
 
 <img width="1125" height="669" alt="image" src="https://github.com/user-attachments/assets/17f8ce23-5b8f-444c-8b23-ceaf35f26622" />
