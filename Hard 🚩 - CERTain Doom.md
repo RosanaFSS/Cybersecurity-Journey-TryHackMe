@@ -123,7 +123,7 @@ PORT     STATE  SERVICE    VERSION
 
 
 ```bash
-:~/CERTainDoom# gobuster -u http://xx.xxx.xxx.xxx/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
+:~/CERTainDoom# gobuster -u http://xx.xxx.xxx.xxx -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
 ...
 ...
 ```
