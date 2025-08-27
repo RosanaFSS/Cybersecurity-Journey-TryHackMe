@@ -173,15 +173,13 @@ reports                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 - sent the <code>Request</code> to Burp´s <code>Repater</code><b/p>
 
 
-<div align="center"><h6>
+<div align="center">
 
 |Request                                                                                      |Response                                                                                     |
 |:--------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|
-|<img width="80px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48">|<img width="80px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48">|
+|<img width="200px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48">|<img width="200px" src="https://github.com/user-attachments/assets/7c079b1a-7fa9-4ade-9565-1f55cda42c48">|
 
-
-
-</h6></div><br>
+</div>
 
 
 </p>
