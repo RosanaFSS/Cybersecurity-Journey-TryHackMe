@@ -206,7 +206,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <code>signature-based</code></p>
 
 <br>
-<h2 align="center">>Task 6 . Practice Scenario</h2>
+<h2 align="center">Task 6 . Practice Scenario</h2>
 
 <p><em>Answer the questions below</em></p>
 <p>Let's take a more hands-on look at the security measures you've learned about in this room by applying them to a real-world scenario. Your site, Secure-A-Site, is currently being developed and will be deployed soon. Your goal is to help prepare the web application, web server, and host machine for launch by ensuring they are as secure as possible. </p>
@@ -239,7 +239,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <br>
 <br>
 
-<p align="center"><strong>Web Application Security</strong><br><<img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
+<p align="center"><strong>Web Application Security</strong><br><img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
 
 
 
