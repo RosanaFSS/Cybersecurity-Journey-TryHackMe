@@ -86,7 +86,7 @@ Web applications are among the most common entry points for attackers because th
 
 <p><em>Answer the questions below</em></p>
 
-<p>3.1. HWhat does your web browser send to a server to receive a web page?<br>
+<p>3.1. What does your web browser send to a server to receive a web page?<br>
 <code>Request</code></p>
 
 <p>3.2. What web server is most commonly used to host WordPress websites?<br>
@@ -142,10 +142,17 @@ Note that <code>GET</code> requests are used to retrieve a resource from the ser
 
 Although this series of events is expected and not out of the ordinary, you can see how the verbosity of these logs can help analysts and incident responders reconstruct a possible attack sequence.</p>
 
+<h6 align="center"><img width="00px" src="https://github.com/user-attachments/assets/d1258011-c5b8-4153-9115-b893193e9050"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<h6 align="center"><img width="00px" src="https://github.com/user-attachments/assets/bd0e5efc-cc43-4c1e-992b-aebcf00e90a5"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<p><em>Answer the questions below</em></p>
 
-<br
+<p>4.1. What cyber security concept involves stopping or limiting damage from threats?<br>
+<code>mitigation</code></p>
+
+<p>4.2. What security control involves ensuring all software and components are up to date?<br>
+<code>Patch Management</code></p>
+
+<br>
 <h2>Task 5 . Defense Systems</h2>
 <h3>Content Delivery Network (CDN)</h3>
 <p><strong>CDN</strong>s store and serve cached content from servers closer to the user to reduce latency. Imagine you have a main server housed in a central location. This main server provides information to edge servers worldwide so your customers can access data more quickly and safely. Aside from speed, CDNs also help in a security sense by acting as a buffer between the user and the origin server.</p>
@@ -202,6 +209,19 @@ While web attacks usually target the application layer, not the host machine, AV
 <h2>Task 6 . Practice Scenario</h2>
 
 <p><em>Answer the questions below</em></p>
+<p>Let's take a more hands-on look at the security measures you've learned about in this room by applying them to a real-world scenario. Your site, Secure-A-Site, is currently being developed and will be deployed soon. Your goal is to help prepare the web application, web server, and host machine for launch by ensuring they are as secure as possible. </p>
+
+<p>You'll work through the three layers and apply the best practices that you learned about in the previous tasks:<br>
+
+- Web Application<br>
+- Web Server<br>
+- Host Machine</p>
+
+<h3>Practice</h3>
+<p> [ View Site ] </p>
+<p>Open <strong>Secure-A-Site</strong> by clicking the <strong>View Site</strong> button above. Once you complete each section, claim the flags and answer the task questions!</p>
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>6.1. What flag did you receive for securing the Web Application?<br>
 <code>_____</code></p>
@@ -211,6 +231,11 @@ While web attacks usually target the application layer, not the host machine, AV
 
 <p>6.3. What flag did you receive for securing the Host Machine?<br>
 <code>_____</code></p>
+
+<br>
+
+<h6 align="center">Welcome to Secure-A-Site!<br><img width="900px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</h6>
+
 
 <br>
 <h2>Task 7 . Conclusion</h2>
