@@ -10,7 +10,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/introdu
 <h2>Task 1 . Introduction</h2>
 <p>Endpoint Detection and Response (EDR) is a security solution designed to monitor, detect, and respond to advanced threats at the endpoint level. As a SOC analyst, it is essential for you to understand how the EDR works since it is a widely adopted solution in organizations to protect their endpoints. In this room, we will see how an EDR differs from a traditional antivirus and what data it collects from the endpoints. We will also discuss the detection and response capabilities it provides.</p>
 
-<h3>Learning Objectives<h3>
+<h3>Learning Objectives</h3>
 
 <p>
   
