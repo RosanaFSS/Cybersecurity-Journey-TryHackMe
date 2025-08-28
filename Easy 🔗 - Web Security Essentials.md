@@ -142,7 +142,7 @@ Note that <code>GET</code> requests are used to retrieve a resource from the ser
 
 Although this series of events is expected and not out of the ordinary, you can see how the verbosity of these logs can help analysts and incident responders reconstruct a possible attack sequence.</p>
 
-<h6 align="center"><img width="00px" src="https://github.com/user-attachments/assets/ff8862e6-29f0-4c52-a6cf-b6b00e67d2a3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/ff8862e6-29f0-4c52-a6cf-b6b00e67d2a3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the questions below</em></p>
 
