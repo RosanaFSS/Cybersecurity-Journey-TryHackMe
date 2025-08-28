@@ -221,11 +221,14 @@ While web attacks usually target the application layer, not the host machine, AV
 <p align="center">[ View Site ]</p>
 <p align="center">Open <strong>Secure-A-Site</strong> by clicking the <strong>View Site</strong> button above. Once you complete each section, claim the flags and answer the task questions!</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<br>
 
 <p>6.1. What flag did you receive for securing the Web Application?<br>
 <code>THM{****************}</code></p>
 
+<br>
 <br>
 
 <p align="center"><strong>Welcome to Secure-A-Site!</strong><br>Help prepare your site for launch bysecuring each component of your web service.<br>Answer the questions and claim the flags!<br><img width="700px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</p>
@@ -245,17 +248,52 @@ While web attacks usually target the application layer, not the host machine, AV
 
 <p align="center"><strong>Secure your Web Application 2 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/dd2c5f48-1603-4d17-aca8-9a9ed42c2fb8"><br>Rosana´s Practice</p>
 
-
+<br>
+<br>
 <p>6.2. What flag did you receive for securing the Web Server?<br>
-<code>_____</code></p>
+<code>THM{**********************}</code></p>
 
+<br>
+<br>
+
+<p align="center"><strong>Secure your Web Server 1 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/f3e1b481-8c43-4d3a-a909-4fe4c9d62619"><br>Rosana´s Practice</p>
+
+<br>
+<br>
+
+<p align="center"><strong>Secure your Web Server 2 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/70814993-ce74-4f6d-bdd7-74187637678f"><br>Rosana´s Practice</p>
+
+<br>
+<br>
+
+<p align="center"><strong>Secure your Web Server 3 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/f1bb9e36-491c-46b0-85d2-5a9589f1b642"><br>Rosana´s Practice</p>
+
+<br>
+<br>
 <p>6.3. What flag did you receive for securing the Host Machine?<br>
-<code>_____</code></p>
+<code>THM{***********************}</code></p>
 
+<br>
+<br>
 
+<p align="center"><strong>Secure your Host Machine 1 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/17964ec5-62ae-420a-b8b9-c7e6f3d4c264"><br>Rosana´s Practice</p>
 
+<br>
+<br>
 
+<p align="center"><strong>Secure your Host Machine 2 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/c8cc5ac0-4593-495d-b82b-bdd31ea7775e"><br>Rosana´s Practice</p>
 
+<br>
+<br>
+
+<p align="center"><strong>Secure your Host Machine 3 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/c7cc5a69-0751-4877-86ee-7456c512e0e2"><br>Rosana´s Practice</p>
+
+<br>
+<br>
+
+<p align="center"><strong>Practice Completion</strong><br><img width="700px" src="https://github.com/user-attachments/assets/a7b7b386-5d5a-4bbb-a899-717a2f70b4cc"><br>Rosana´s Practice</p>
+
+<br>
 <br>
 <h2 align="center">Task 7 . Conclusion</h2>
 <p>In this room, you explored the essentials of web security, starting with the shift from traditional desktop applications to modern web applications. You learned why web applications are targeted by attackers, often holding sensitive data and serving as entry points into larger systems. We covered how web requests and servers work. Finally, we learned about the protections used by security professionals to prevent, detect, and mitigate common threats to web applications.</p>
