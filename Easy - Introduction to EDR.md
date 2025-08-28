@@ -25,8 +25,8 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/introdu
 <h3>Room Prerequisites</h3>
 <p>
   
--Basic knowledge of different endpoints (Windows, Linux, Mac) and the common attacks on them<br>
--Awareness of the role of the SOC team</p>
+- Basic knowledge of different endpoints (Windows, Linux, Mac) and the common attacks on them<br>
+- Awareness of the role of the SOC team</p>
 
 <p><em>Answer the question below</em></p>
 
