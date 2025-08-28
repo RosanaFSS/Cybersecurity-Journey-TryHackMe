@@ -182,7 +182,7 @@ This sets a strong baseline for working with essential security solutions. In th
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 85   | 479      |     113ʳᵈ    |      5ᵗʰ     |     249ᵗʰ   |     5ᵗʰ    | 123,012  |    930    |    73     |
+| 2025, August 28   | 479      |     113ʳᵈ    |      5ᵗʰ     |     249ᵗʰ   |     5ᵗʰ    | 123,012  |    930    |    73     |
 
 </div>
 
