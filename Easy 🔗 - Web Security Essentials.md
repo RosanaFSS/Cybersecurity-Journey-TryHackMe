@@ -32,17 +32,18 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/websecu
 <p>1.1. I understand the learning objectives and am ready to learn about web security!<br>
 <code>No answer needed</code></p>
 
+<br>
 <h2>Task 2 . Why Web?</h2>
 <p>The shift from desktop to web-based applications has been ongoing for decades. In the 1990s, desktop applications were the norm because of speed and connectivity limitations. As web technology advanced, the 2000s gave way to much more widely used dynamic web applications for email, social media, and banking. In the 2010s, there was a massive rise in cloud computing and software as a service (SaaS), and today, nearly everything can be done in a browser.</p>
 
-<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/e6037956-d218-4614-aa67-f58c4c2e90db"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</p>
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/e6037956-d218-4614-aa67-f58c4c2e90db"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>From a Security Perspective</h3>
 <p>The shift to web apps brings some amazing advantages, including increased accessibility, faster updates, better compatibility, and reduced resource usage on the user's end. Think of it, you can browse online marketplaces and social networks, play games, edit images and video, and even run virtual machines all through your browser. However, these benefits come with tradeoffs in terms of security. The more powerful and widespread the web becomes, the more opportunities it introduces for attackers.<br>
 
 Web applications are among the most common entry points for attackers because they are always available and exposed. They often connect to back-end systems like databases and other infrastructure, offering attackers high-impact opportunities. A vulnerable web application is often the first stage in a larger attack sequence. Let's take a look at the risks faced by both web app owners and their users.</p>
 
-<img width="999" height="330" alt="image" src="https://github.com/user-attachments/assets/7aa1440d-ad92-4539-8da4-d7420d33a5d3" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/7aa1440d-ad92-4539-8da4-d7420d33a5d3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Real-World Examples</h3>
 
@@ -58,6 +59,7 @@ Web applications are among the most common entry points for attackers because th
 <p>2.2. Who is ultimately responsible for ensuring the security of users' data within a web application?<br>
 <code>Web App Owner</code></p>
 
+<br>
 <h2>Task 3 . Web Infrasctructure</h2>
 <p>When you visit a website, your browser sends a request to a web server. The server processes the request, verifies access, and returns a response to the user. This response can be a webpage, an image, or data like search results or your account information. This request-response cycle is the foundation of how the web functions. Attackers can abuse this request-response cycle by overwhelming servers with requests, bypassing access controls, or even tricking the server into executing harmful commands.</p>
 
@@ -68,7 +70,7 @@ Web applications are among the most common entry points for attackers because th
 - <strong>Web Server</strong>: This component hosts the application. It listens for requests and returns a response to the user.<br>
 - <strong>Host Machine</strong>: The underlying operating system, Linux or Windows, that runs the web server and the application.</p>
 
-<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/649ed413-c41e-4740-b302-7a4c84d0cdfc"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</p>
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/649ed413-c41e-4740-b302-7a4c84d0cdfc"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>In the next task, we will investigate the security measures available to protect these three components.</p>
 
@@ -93,6 +95,7 @@ Web applications are among the most common entry points for attackers because th
 <p>3.3. What do we call the OS and environment that runs the web server and application?<br>
 <code>Host Machine</code></p>
 
+<br>
 <h2>Task 4 . Protecting the Web</h2>
 
 <h3>Best Practices</h3>
@@ -140,11 +143,9 @@ Note that <code>GET</code> requests are used to retrieve a resource from the ser
 Although this series of events is expected and not out of the ordinary, you can see how the verbosity of these logs can help analysts and incident responders reconstruct a possible attack sequence.</p>
 
 
-<p align="center"><img width="00px" src="https://github.com/user-attachments/assets/bd0e5efc-cc43-4c1e-992b-aebcf00e90a5"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</p>
+<h6 align="center"><img width="00px" src="https://github.com/user-attachments/assets/bd0e5efc-cc43-4c1e-992b-aebcf00e90a5"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-
-
+<br
 <h2>Task 5 . Defense Systems</h2>
 <h3>Content Delivery Network (CDN)</h3>
 <p><strong>CDN</strong>s store and serve cached content from servers closer to the user to reduce latency. Imagine you have a main server housed in a central location. This main server provides information to edge servers worldwide so your customers can access data more quickly and safely. Aside from speed, CDNs also help in a security sense by acting as a buffer between the user and the origin server.</p>
@@ -174,14 +175,13 @@ Let's take a closer look at the types of WAFs available to us as defenders, then
 <h4><strong>Functionatility</strong></h4>
 <p>As stated above, WAFs inspect HTTP requests to detect anomalies, attacks, or known suspicious patterns. Below are some of the methods used, along with examples of requests that may be blocked.</p>
 
-
-<img width="1002" height="304" alt="image" src="https://github.com/user-attachments/assets/588ee2eb-3beb-4081-90ad-4e2fabb8b99c" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/588ee2eb-3beb-4081-90ad-4e2fabb8b99c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>The above table is not exhaustive, as detection methods are constantly evolving, and custom rules can be created based on the specific needs of the web application owner.
 
 Below is a screenshot of the Cloudflare dashboard for <code>tryhackme.thm</code>, focused on the security panel. In it, we can see all requests for the last 24 hours, including requests blocked by the integrated web application firewall.</p>
 
-<img width="3025" height="1222" alt="image" src="https://github.com/user-attachments/assets/4f0fefbd-06c3-42cb-99a6-9078902746e6" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/4f0fefbd-06c3-42cb-99a6-9078902746e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Antivirus (AV)</h3>
 
@@ -198,7 +198,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <p>5.2. Which common WAF detection technique works by matching incoming requests against known malicious patterns?<br>
 <code>signature-based</code></p>
 
-
+<br>
 <h2>Task 6 . Practice Scenario</h2>
 
 <p><em>Answer the questions below</em></p>
@@ -212,7 +212,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <p>6.3. What flag did you receive for securing the Host Machine?<br>
 <code>_____</code></p>
 
-
+<br>
 <h2>Task 7 . Conclusion</h2>
 <p>In this room, you explored the essentials of web security, starting with the shift from traditional desktop applications to modern web applications. You learned why web applications are targeted by attackers, often holding sensitive data and serving as entry points into larger systems. We covered how web requests and servers work. Finally, we learned about the protections used by security professionals to prevent, detect, and mitigate common threats to web applications.</p>
 
@@ -220,6 +220,8 @@ While web attacks usually target the application layer, not the host machine, AV
 
 <p>7.1. Complete the room and continue on your cyber learning journey!<br>
 <code>No answer needed</code></p>
+
+<br>
 
 <br>
 
