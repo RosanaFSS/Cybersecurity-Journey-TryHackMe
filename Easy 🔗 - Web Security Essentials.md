@@ -221,7 +221,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <p> [ View Site ] </p>
 <p>Open <strong>Secure-A-Site</strong> by clicking the <strong>View Site</strong> button above. Once you complete each section, claim the flags and answer the task questions!</p>
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>6.1. What flag did you receive for securing the Web Application?<br>
 <code>_____</code></p>
@@ -234,7 +234,7 @@ While web attacks usually target the application layer, not the host machine, AV
 
 <br>
 
-<h6 align="center">Welcome to Secure-A-Site!<br><img width="900px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</h6>
+<h6 align="center">Welcome to Secure-A-Site!<br><img width="500px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</h6>
 
 
 <br>
