@@ -224,13 +224,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>6.1. What flag did you receive for securing the Web Application?<br>
-<code>_____</code></p>
-
-<p>6.2. What flag did you receive for securing the Web Server?<br>
-<code>_____</code></p>
-
-<p>6.3. What flag did you receive for securing the Host Machine?<br>
-<code>_____</code></p>
+<code>THM{****************}</code></p>
 
 <br>
 
@@ -239,7 +233,26 @@ While web attacks usually target the application layer, not the host machine, AV
 <br>
 <br>
 
-<p align="center"><strong>Web Application Security</strong><br><img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
+<p align="center"><strong>Secure your Web Application 1 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
+
+<br>
+<br>
+
+<p align="center"><strong>Secure your Web Application 2 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/a2a9a3d2-bf73-4cce-b3f3-39ec11fe655b"><br>Rosana´s Practice</p>
+
+<br>
+<br>
+
+<p align="center"><strong>Secure your Web Application 2 of 3</strong><br><img width="700px" src="https://github.com/user-attachments/assets/dd2c5f48-1603-4d17-aca8-9a9ed42c2fb8"><br>Rosana´s Practice</p>
+
+
+<p>6.2. What flag did you receive for securing the Web Server?<br>
+<code>_____</code></p>
+
+<p>6.3. What flag did you receive for securing the Host Machine?<br>
+<code>_____</code></p>
+
+
 
 
 
