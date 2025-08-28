@@ -21,7 +21,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/websecu
 </p>
 
 
-<h3>Prerequisites</h3>h3>
+<h3>Prerequisites</h3>
 <p>
 
 - <a href="https://tryhackme.com/room/webapplicationbasics">Web Application Basics</a> provides an excellent overview of the essentials of web applications<br>
