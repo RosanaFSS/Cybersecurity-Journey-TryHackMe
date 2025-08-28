@@ -234,9 +234,11 @@ While web attacks usually target the application layer, not the host machine, AV
 
 <br>
 
-<p align="center"><strong>Welcome to Secure-A-Site!</strong><br>Help prepare your site for launch bysecuring each component of your web service.<br>Answer the questions and claim the flags!<br><br><img width="700px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</p>
+<p align="center"><strong>Welcome to Secure-A-Site!</strong><br>Help prepare your site for launch bysecuring each component of your web service.<br>Answer the questions and claim the flags!<br><img width="700px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</p>
 
-<p align="center"><strong>Web Application Security</strong><br>Help prepare your site for launch bysecuring each component of your web service.<br>Answer the questions and claim the flags!<br><br><img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
+<br>
+
+<p align="center"><strong>Web Application Security</strong><br><<img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
 
 
 
