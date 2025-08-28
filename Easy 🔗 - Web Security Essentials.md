@@ -188,7 +188,7 @@ Let's take a closer look at the types of WAFs available to us as defenders, then
 
 Below is a screenshot of the Cloudflare dashboard for <code>tryhackme.thm</code>, focused on the security panel. In it, we can see all requests for the last 24 hours, including requests blocked by the integrated web application firewall.</p>
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/4f0fefbd-06c3-42cb-99a6-9078902746e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/2faf9f92-5fa4-4d17-baab-77566700cbb7"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Antivirus (AV)</h3>
 
