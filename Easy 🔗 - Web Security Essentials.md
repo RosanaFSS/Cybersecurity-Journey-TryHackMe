@@ -7,10 +7,10 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/websecu
 
 <br>
 
-<h2>Task 1 . Introduction</h2>
+<h2 align="center">Task 1 . Introduction</h2>
 <p>The internet is behind many aspects of modern life, from banking and shopping to social media and beyond. As a result, websites and web applications are among attackers' most targeted assets. Whether you're defending a company's website or investigating an incident, understanding how the web works and how to secure it is crucial.</p>
 
-<h3>Learning Objectives</h3>
+<h3 align="center">Learning Objectives</h3>
 
 <p>
 
@@ -21,7 +21,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/websecu
 </p>
 
 
-<h3>Prerequisites</h3>
+<h3 align="center">Prerequisites</h3>
 <p>
 
 - <a href="https://tryhackme.com/room/webapplicationbasics">Web Application Basics</a> provides an excellent overview of the essentials of web applications<br>
@@ -33,19 +33,19 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/websecu
 <code>No answer needed</code></p>
 
 <br>
-<h2>Task 2 . Why Web?</h2>
+<h2 align="center">Task 2 . Why Web?</h2>
 <p>The shift from desktop to web-based applications has been ongoing for decades. In the 1990s, desktop applications were the norm because of speed and connectivity limitations. As web technology advanced, the 2000s gave way to much more widely used dynamic web applications for email, social media, and banking. In the 2010s, there was a massive rise in cloud computing and software as a service (SaaS), and today, nearly everything can be done in a browser.</p>
 
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/e6037956-d218-4614-aa67-f58c4c2e90db"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<h3>From a Security Perspective</h3>
+<h3 align="center">From a Security Perspective</h3>
 <p>The shift to web apps brings some amazing advantages, including increased accessibility, faster updates, better compatibility, and reduced resource usage on the user's end. Think of it, you can browse online marketplaces and social networks, play games, edit images and video, and even run virtual machines all through your browser. However, these benefits come with tradeoffs in terms of security. The more powerful and widespread the web becomes, the more opportunities it introduces for attackers.<br>
 
 Web applications are among the most common entry points for attackers because they are always available and exposed. They often connect to back-end systems like databases and other infrastructure, offering attackers high-impact opportunities. A vulnerable web application is often the first stage in a larger attack sequence. Let's take a look at the risks faced by both web app owners and their users.</p>
 
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/7aa1440d-ad92-4539-8da4-d7420d33a5d3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<h3>Real-World Examples</h3>
+<h3 align="center">Real-World Examples</h3>
 
 <p>In 2017,  <a href="https://archive.epic.org/privacy/data-breach/equifax/">Equifax´s</a> sensitive customer data of nearly 150 million Americans was compromised due to an Apache <a href="https://www.cve.org/CVERecord?id=CVE-2017-5638">Equifax´s</a>. By abusing this vulnerability, the attackers were able to access internal databases storing valuable customer data.<br>
 
@@ -60,10 +60,10 @@ Web applications are among the most common entry points for attackers because th
 <code>Web App Owner</code></p>
 
 <br>
-<h2>Task 3 . Web Infrasctructure</h2>
+<h2 align="center">Task 3 . Web Infrasctructure</h2>
 <p>When you visit a website, your browser sends a request to a web server. The server processes the request, verifies access, and returns a response to the user. This response can be a webpage, an image, or data like search results or your account information. This request-response cycle is the foundation of how the web functions. Attackers can abuse this request-response cycle by overwhelming servers with requests, bypassing access controls, or even tricking the server into executing harmful commands.</p>
 
-<h3>Components of a Web Service</h3>
+<h3 align="center">Components of a Web Service</h3>
 <p>For example, any web service, like <a href="https://tryhackme.com/">tryhackme.com</a>, requires three main components to function.
 
 - <strong>Application</strong>: The code, images, styles, and icons that dictate how the website looks and functions.<br>
@@ -74,7 +74,7 @@ Web applications are among the most common entry points for attackers because th
 
 <p>In the next task, we will investigate the security measures available to protect these three components.</p>
 
-<h3>Web Servers</h3>
+<h3 align="center">Web Servers</h3>
 <p>When you visit a website, your web browser sends a request to a web server, as discussed above. Web servers listen for incoming requests and return an appropriate response. Web servers are positioned in front of websites and applications, making them a crucial aspect of the internet's foundation. Because they are publicly exposed and handle all incoming web requests, web servers are a common target for attackers.</p>
 
 <p>Here are some of the most common web servers that you will encounter.<br>
@@ -96,19 +96,19 @@ Web applications are among the most common entry points for attackers because th
 <code>Host Machine</code></p>
 
 <br>
-<h2>Task 4 . Protecting the Web</h2>
+<h2 align="center">Task 4 . Protecting the Web</h2>
 
-<h3>Best Practices</h3>
+<h3 align="center">Best Practices</h3>
 <p>Various security measures are available when securing websites and web applications. Some solutions provide visibility, while others can actively stop or limit an attack, commonly known as mitigation. Referencing Task 3, where we discussed the three essential components of any web service: the application, the web server, and the host machine, let's now examine the protections available for each of these components.</p>
 
-<h4><strong>Protecting the Application</strong></h4>
+<h4 align="center"><strong>Protecting the Application</strong></h4>
 <p>
 
 - Secure Coding: Avoid insecure functions, ensure proper handling of errors, and remove sensitive information.<br>
 - Input Validation & Sanitization: Validate and sanitize user input to prevent injection attacks.<br>
 - Access Control: Restrict access based on user roles.</p>
 
-<h4><strong>Protecting the Web Server</strong></h4>
+<h4 align="center"><strong>Protecting the Web Server</strong></h4>
 <p>
 
 - Logging: Keep a detailed record of all web requests with access logs.<br>
@@ -122,13 +122,13 @@ Web applications are among the most common entry points for attackers because th
 - System Hardening: Disable unnecessary services and close unused ports.<br>
 - Antivirus: Add endpoint-level protection that blocks known malware.</p>
 
-<h4><strong>Security Tips for All Three Components</strong></h4>
+<h4 align="center"><strong>Security Tips for All Three Components</strong></h4>
 <p>
 
 - Strong Authentication: Don't just let anyone access your code, admin panels, or host machine.<br>
 Patch Management: Ensure your app dependencies, web server, and host machine are up to date.</p>
 
-<h3>Logging</h3>
+<h3 align="center">Logging</h3>
 <p>Web servers can create logs for every request they receive. We call these access logs, and they are incredibly valuable from a security perspective because they track information about every interaction with the server, including the client's IP address, timestamp, requested page or data, response status from the server, and user agent. These fields can play an important role in investigations, helping analysts detect potential malicious activity and trace attacker behavior.<br><br>
 
 Let's take a look at a benign series of events that we might find in an access log to get a feel for the type of data we can observe.<br>
@@ -153,11 +153,11 @@ Although this series of events is expected and not out of the ordinary, you can 
 <code>Patch Management</code></p>
 
 <br>
-<h2>Task 5 . Defense Systems</h2>
-<h3>Content Delivery Network (CDN)</h3>
+<h2 align="center">Task 5 . Defense Systems</h2>
+<h3 align="center">Content Delivery Network (CDN)</h3>
 <p><strong>CDN</strong>s store and serve cached content from servers closer to the user to reduce latency. Imagine you have a main server housed in a central location. This main server provides information to edge servers worldwide so your customers can access data more quickly and safely. Aside from speed, CDNs also help in a security sense by acting as a buffer between the user and the origin server.</p>
 
-<h4><strong>Security Benefits</strong></h4>
+<h4 align="center"><strong>Security Benefits</strong></h4>
 
 <p>
 
@@ -168,7 +168,7 @@ Although this series of events is expected and not out of the ordinary, you can 
 
 <p>In essence, CDNs allow web apps to deliver data to customers more efficiently and securely.</p>
 
-<h3>Web Application Firewall (WAF)</h3>
+<h3 align="center">Web Application Firewall (WAF)</h3>
 <p><strong>WAF</strong>s are a powerful tool that can be integrated as another layer of protection for websites and web applications. They inspect incoming HTTP traffic and block or log potentially harmful requests based on security rules. Think of the analogy of a bouncer at a bar or club. Every person (web request) that wants to enter must be checked by the bouncer (firewall). Anyone (any request) that doesn't meet the standard requirement will be rejected.<br>
 
 Let's take a closer look at the types of WAFs available to us as defenders, then dive deeper into their functionality.</p>
@@ -179,7 +179,7 @@ Let's take a closer look at the types of WAFs available to us as defenders, then
 - Host-based: Software deployed directly on the web server and offers control for each application.<br>
 - Network-based: A physical or virtual appliance situated on the network perimeter. More suited for enterprise environments.</p>
 
-<h4><strong>Functionatility</strong></h4>
+<h4 align="center"><strong>Functionatility</strong></h4>
 <p>As stated above, WAFs inspect HTTP requests to detect anomalies, attacks, or known suspicious patterns. Below are some of the methods used, along with examples of requests that may be blocked.</p>
 
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/588ee2eb-3beb-4081-90ad-4e2fabb8b99c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
@@ -190,7 +190,7 @@ Below is a screenshot of the Cloudflare dashboard for <code>tryhackme.thm</code>
 
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/2faf9f92-5fa4-4d17-baab-77566700cbb7"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<h3>Antivirus (AV)</h3>
+<h3 align="center">Antivirus (AV)</h3>
 
 <p><strong>AV</strong>s are often misunderstood as a blanket protection measure, but they are primarily made to safeguard endpoints, such as desktops, laptops, and servers, from known malicious files and programs. Most AVs rely on signature-based detection, which means they compare files with a database of known malware or patterns.<br>
 
@@ -206,7 +206,7 @@ While web attacks usually target the application layer, not the host machine, AV
 <code>signature-based</code></p>
 
 <br>
-<h2>Task 6 . Practice Scenario</h2>
+<h2 align="center">>Task 6 . Practice Scenario</h2>
 
 <p><em>Answer the questions below</em></p>
 <p>Let's take a more hands-on look at the security measures you've learned about in this room by applying them to a real-world scenario. Your site, Secure-A-Site, is currently being developed and will be deployed soon. Your goal is to help prepare the web application, web server, and host machine for launch by ensuring they are as secure as possible. </p>
@@ -217,9 +217,9 @@ While web attacks usually target the application layer, not the host machine, AV
 - Web Server<br>
 - Host Machine</p>
 
-<h3>Practice</h3>
-<p> [ View Site ] </p>
-<p>Open <strong>Secure-A-Site</strong> by clicking the <strong>View Site</strong> button above. Once you complete each section, claim the flags and answer the task questions!</p>
+<h3 align="center">Practice</h3>
+<p align="center">[ View Site ]</p>
+<p align="center">Open <strong>Secure-A-Site</strong> by clicking the <strong>View Site</strong> button above. Once you complete each section, claim the flags and answer the task questions!</p>
 
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/99876d70-98a5-48c2-91ad-5bf793327abd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
@@ -237,13 +237,14 @@ While web attacks usually target the application layer, not the host machine, AV
 <p align="center"><strong>Welcome to Secure-A-Site!</strong><br>Help prepare your site for launch bysecuring each component of your web service.<br>Answer the questions and claim the flags!<br><img width="700px" src="https://github.com/user-attachments/assets/30a37e47-7b14-47b2-9ce0-bd951b00b127"><br>Rosana´s Practice</p>
 
 <br>
+<br>
 
 <p align="center"><strong>Web Application Security</strong><br><<img width="700px" src="https://github.com/user-attachments/assets/1ebf1050-5549-4b8f-9fbc-5d549b23c1f1"><br>Rosana´s Practice</p>
 
 
 
 <br>
-<h2>Task 7 . Conclusion</h2>
+<h2 align="center">Task 7 . Conclusion</h2>
 <p>In this room, you explored the essentials of web security, starting with the shift from traditional desktop applications to modern web applications. You learned why web applications are targeted by attackers, often holding sensitive data and serving as entry points into larger systems. We covered how web requests and servers work. Finally, we learned about the protections used by security professionals to prevent, detect, and mitigate common threats to web applications.</p>
 
 <p><em>Answer the question below</em></p>
