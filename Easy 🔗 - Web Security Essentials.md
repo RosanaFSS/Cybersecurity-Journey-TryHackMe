@@ -3,7 +3,7 @@
 <em>Learn how the web works, common website security risks, and protections for a safer internet.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/f5632150-32ef-4139-8e38-0bc699bf2d1a"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/websecurityessentials">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/24850cd1-b2af-4559-b6a8-961c4a5e83a8"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/9772c229-f631-45d0-a31f-e73efd945c08"></p>
 
 <br>
 
@@ -304,6 +304,34 @@ While web attacks usually target the application layer, not the host machine, AV
 <code>No answer needed</code></p>
 
 <br>
-
+<br>
 <br>
 
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a7a42b61-58c4-4b46-b679-c421874d2ce8"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/1204a624-e3fd-4bfd-b455-a29850aa684e"></p>
+
+
+<br>
+<h1 align="center">My TryHackMe Journey</h1>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 28   | 479      |     113ʳᵈ    |      5ᵗʰ     |     239ᵗʰ   |     5ᵗʰ    | 123,068  |    931    |    73     |
+
+</div>
+
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/646f9e3a-1404-450d-b648-548b65b13b27"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/1dfcfc9a-63b7-425f-98fc-be79c2c930d1"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3a0fa2ea-9472-4d13-99c9-2ff7ce55107d"><br>
+                  Global monthly:    239ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b7d42bab-e43c-4441-9ed2-fa2ebe45262b"><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a991aea8-3937-47f4-90de-c18d3bc3ae53"><br>
+
+<br>
+<br>
+
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
