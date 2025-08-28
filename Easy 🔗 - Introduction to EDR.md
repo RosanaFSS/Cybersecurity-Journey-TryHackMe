@@ -1,7 +1,7 @@
 <h1 align="center">Introduction to EDR</h1>
 <p align="center">2025, August 28<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>479</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Learn the fundamentals of EDR and explore its features and working.</em><br>
-<img width="80px" src="https://github.com/user-attachments/assets/8aef2fd8-b9fd-4862-9c82-f1815a528ba"><br>
+<img width="80px" src="https://github.com/user-attachments/assets/6f30bbdc-9804-413c-a054-c620f09b8202"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/introductiontoedrs">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/aa7e6aca-93b7-42ad-9f22-137cff53f9ba"></p>
 
@@ -191,7 +191,7 @@ This sets a strong baseline for working with essential security solutions. In th
                                               <img width="1200px" src="https://github.com/user-attachments/assets/c3a68ff1-1df1-454d-a574-e0760df4f2e9"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b7db00c9-a14c-46ad-a844-46f7a0aa5877"><br>
                   Global monthly:    249ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0a49434d-0263-46b6-a069-7cb2b3e195ba"><br>
-                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/81aab0e4-cf1b-4325-917c-2fcefd1a610c"><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/81aab0e4-cf1b-4325-917c-2fcefd1a610c"><br>
 
 <br>
 <br>
