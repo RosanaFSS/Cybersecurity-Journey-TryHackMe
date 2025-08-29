@@ -307,7 +307,7 @@ Connection: close
 <br>
 <br>
 
-<p>1.2. What is the first web application flag? Hint : <em>Think about the information you have gathered so far from the web application - usernames, company name, etc. You might want to generate a password list or make educated guesses</em>.<br>
+<p>1.1. What is the first web application flag? Hint : <em>Think about the information you have gathered so far from the web application - usernames, company name, etc. You might want to generate a password list or make educated guesses</em>.<br>
 <code>THM{*******************************}</code></p>
 
 <br>
