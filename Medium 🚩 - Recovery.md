@@ -1,5 +1,5 @@
 <h1 align="center">Recovery</h1>
-<p align="center"><img width="80px" src=""><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/6de52e20-6b19-4bf6-89e8-694905265fcd"><br>
 August 29, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>480</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Not your conventional CTF</em>.<br>
