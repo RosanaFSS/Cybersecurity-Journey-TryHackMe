@@ -35,11 +35,11 @@ Start the VM by pressing the green "Start Machine" button. Please allow the mach
 <p>
 
 - &nbsp;&nbsp;&nbsp;&nbsp;<code>7</code><br>
-- &nbsp;&nbsp;&nbsp;<code>21</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>FTP</code> &nbsp;&nbsp; ・ &nbsp;&nbsp;<br>
-- &nbsp;&nbsp;&nbsp;<code>22</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>SSH</code> &nbsp;&nbsp; ・ &nbsp;&nbsp;<br>
-- &nbsp;&nbsp;&nbsp;<code>23</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>TCPWRAPPED</code> &nbsp;&nbsp; ・ &nbsp;&nbsp;<br>
-- &nbsp;&nbsp;&nbsp;<code>80</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>SHTTPH</code> &nbsp;&nbsp; ・ &nbsp;&nbsp;<br>
-- <code>8080</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>HTTP-PROXY</code> &nbsp;&nbsp; ・ &nbsp;&nbsp;<br></p>
+- &nbsp;&nbsp;&nbsp;<code>21</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>FTP</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; vsftpd 3.0.5<br>
+- &nbsp;&nbsp;&nbsp;<code>22</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>SSH</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)<br>
+- &nbsp;&nbsp;&nbsp;<code>23</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>TCPWRAPPED</code><br>
+- &nbsp;&nbsp;&nbsp;<code>80</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>SHTTP</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; Apache httpd 2.4.41 ((Ubuntu))<br>
+- <code>8080</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; <code>HTTP-PROXY</code> &nbsp;&nbsp; ・ &nbsp;&nbsp; Werkzeug/2.2.2 Python/3.8.10</p>
 
 ```bash
 (rosana) :~/Intranet# nmap -sC -sV xx.xxx.x.xxx
