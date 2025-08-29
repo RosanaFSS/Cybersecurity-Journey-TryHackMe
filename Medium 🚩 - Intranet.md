@@ -5,9 +5,6 @@
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/securesolacodersintra">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/6eda3422-fab3-4e64-8a3d-6a3129a99354"></p>
 
-<br>
-<br>
-
 <h2>Task 1 . Find vulnerabilities and gain root access</h2>
 <p>The web application development company SecureSolaCoders has created their own intranet page. The developers are still very young and inexperienced, but they ensured their boss (Magnus) that the web application was secured appropriately. The developers said, "Don't worry, Magnus. We have learnt from our previous mistakes. It won't happen again". However, Magnus was not convinced, as they had introduced many strange vulnerabilities in their customers' applications earlier.<br>
 
