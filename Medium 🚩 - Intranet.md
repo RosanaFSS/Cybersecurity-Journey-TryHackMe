@@ -834,9 +834,7 @@ anders@...:/home/anders$ cat user2.txt
 THM{**********************}
 ```
 
-<br>
-<br>
-<p> 1.6. What is the user2.txtflag?</em>.<br>
+<p> 1.6. What is the user2.txt flag?</em>.<br>
 <code>THM{**********************}</code></p>
 
 <br>
