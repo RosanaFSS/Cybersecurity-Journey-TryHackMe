@@ -151,11 +151,10 @@ Finished
 <br>
 <p>
 
-- for <code>usr</code> <code>E-mail</code>: type="text" placeholder="firstname@securesolacoders.no" name="username" id="username" value="" required<br>
-- for <code>psw</code> <code>Password</code>: type="password" placeholder="Password" name="password" id="passworde" value="" required<br>
-- method <code>POST</code.<br>
-- For any inquiries, contact <code>devops@securesolacoders.no</code><br>Sincerely, <code>anders</code> (Senior Developer)<br>
-</p>
+- for <code>usr</code> &nbsp;&nbsp; <code>E-mail</code>: type="text" placeholder="firstname@securesolacoders.no" name="username" id="username" value="" required<br>
+- for <code>psw</code> &nbsp;&nbsp; <code>Password</code>: type="password" placeholder="Password" name="password" id="passworde" value="" required<br>
+- method <code>POST</code><br>
+- for any inquiries, contact <code>devops</code>@securesolacoders.no<br>Sincerely, <code>anders</code> (Senior Developer)</p>
 
 <img width="1264" height="577" alt="image" src="https://github.com/user-attachments/assets/c2d2edd3-377e-472e-bb6a-3b32b42002dd" />
 
