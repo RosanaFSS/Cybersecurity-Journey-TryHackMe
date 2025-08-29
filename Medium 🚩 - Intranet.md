@@ -141,7 +141,7 @@ Finished
 ===============================================================
 ```
 
-<h1 align="center">Web application</h1>
+<h2 align="center">Web application</h2>
 
 <img width="1062" height="552" alt="image" src="https://github.com/user-attachments/assets/aed4e827-9606-465d-80f1-e9cb1de5fb36" />
 
