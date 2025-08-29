@@ -113,10 +113,10 @@ PORT     STATE SERVICE    VERSION
 xx.xxx.x.xxx intranet.thm
 ```
 
-<h2>gobuster</h2>
+<h2>Gobuster</h2>
 <p>
 
-- http://intranet.thm:8080/temporary</p>
+- <code>intranet.thm:8080/temporary</code> > <code>intranet.thm:8080/home</code> > <code>intranet.thm:8080/login</code></p>
 
 ```bash
 (rosana) :~/Intranet# gobuster dir -u http://intranet.thm:8080/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -t 80
