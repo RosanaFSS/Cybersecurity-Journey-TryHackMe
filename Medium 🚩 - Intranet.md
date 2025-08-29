@@ -19,7 +19,7 @@ Start the VM by pressing the green "Start Machine" button. Please allow the mach
 <p><em>Answer the questions below</em></p>
 
 <br>
-<h2>virtual environment</h2>
+<h2>Virtual Environment</h2>
 
 ```bash
 :~/Intranet# python3 -m venv rosana
