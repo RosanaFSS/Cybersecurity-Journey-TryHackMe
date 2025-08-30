@@ -1,7 +1,7 @@
 <h1 align="center">Fortress</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/b9472b86-f92d-480b-b908-ce58cc7128e2"><br>
 August 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>481</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
+and I’m excited to join you on this adventure, part of my <code>481</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Hack this machine and reclaim the fortress from the Evil Overlord!</em>.<br>
 Access it <a href="https://tryhackme.com/room/fortress"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/df979e98-b488-43fc-ac5e-8be4a7bded16"></p>
