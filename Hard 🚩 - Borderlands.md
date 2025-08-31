@@ -11,10 +11,12 @@ Access it <a href=""</a>here.<br>
 <br>
 <br>
 
-<p align="left">Summary &nbsp;&nbsp;</p> ▪️
+<p align="left">Summary &nbsp;&nbsp;</p>
     
-▪️ [Nmap](#1)<br>
-▪️ [API Key "AND*"](#2)<br>
+<p>
+    
+- [Nmap](#1)<br>
+- [API Key "AND*"](#2)<br></p>
     
 <br>
 
