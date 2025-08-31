@@ -32,16 +32,16 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 <h3 align="center">Web port 80</h3>
 <p  align="center">403 Forbidden</p>
 
-<h3 align="center">mobile-app-prototype.apk</h>
+<p  align="center">Downloaded mobile-app-prototype.apk clicking <code>here</code>.</p>
 
-<img width="1120" height="351" alt="image" src="https://github.com/user-attachments/assets/5adc39ba-8e0f-4623-81aa-005e5da10c7e" />
+<img width="800px" src="https://github.com/user-attachments/assets/5adc39ba-8e0f-4623-81aa-005e5da10c7e"></p>
 
 ```bash
 :~/Borderlands# ls
 mobile-app-prototype.apk
 ```
 
-<h3 align="center">apktool</h3>
+<p  align="center">Installed <code>apktool</code>.</p>
 
 ```bash
 :~/Borderlands# apt install apktool
@@ -52,7 +52,7 @@ mobile-app-prototype.apk
 I: Using Apktool 2.4.0-dirty on mobile-app-prototype.apk
 I: Loading resource table...
 I: Decoding AndroidManifest.xml with resources...
-I: Loading resource table from file: /root/.local/share/apktool/framework/1.apk
+I: Loading resource table from file: .../.local/share/apktool/framework/1.apk
 I: Regular manifest package...
 I: Decoding file-resources...
 I: Decoding values */* XMLs...
