@@ -609,7 +609,7 @@ os-shell>
 <code>{FLAG:UDP:3bb271d020df6cbe599a46d20e9fcb3c}</code></p>
 <br>
 
-<h2 align="center">Transmission from server to client over UDP<a id='8'></a></h2>
+<h2 align="center">Transmission from server to client over TCP<a id='8'></a></h2>
 <br>
 <p> 1.7. What flag is transmitted from flag_server to flag_client over TCP? {FLAG:TCP:XXX}em> Hint : use python to portscan</em><br>
 <code>{FLAG:TCP:__________________________}</code></p>
