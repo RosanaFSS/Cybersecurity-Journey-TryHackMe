@@ -15,7 +15,7 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 <h2>Task 1 . Introduction</h2>
 
 
-<h2>Nmap</h2>
+<h2 align="center">Nmap</h2>
 <p>
 
 - 22 : SSH<br>
@@ -28,12 +28,13 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 
 ```
 
-<h2>Web port 80</h2>
+<h2 align="center">API Key</h2>
+<h3 align="center">Web port 80</h3>
 <p>
 
 - 403 Forbidden</p>
 
-<h2>mobile-app-prototype.apk</h2>
+<h2 align="center">mobile-app-prototype.apk</h2>
 
 <img width="1120" height="351" alt="image" src="https://github.com/user-attachments/assets/5adc39ba-8e0f-4623-81aa-005e5da10c7e" />
 
@@ -42,7 +43,7 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 mobile-app-prototype.apk
 ```
 
-<h3>apktool</h3>
+<h3 align="center">apktool</h3>
 
 ```bash
 :~/Borderlands# apt install apktool
@@ -66,8 +67,6 @@ I: Copying original files...
 <img width="914" height="231" alt="image" src="https://github.com/user-attachments/assets/a935e1d0-7520-412c-a665-ccd845abf3c9" />
 
 <br>
-
-<h3>API key</h3>
 
 ```bash
 :~/Borderlands/mobile-app-prototype/res/values# ls
