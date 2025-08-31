@@ -1,3 +1,5 @@
+<p>Networking . BGP, Border Gateway Protocol . Exploitation</p>
+
 <h1 align="center">Borderlands</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/6aec40ad-4820-4c26-9c07-bb189b72aebb"><br>
 August 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
@@ -9,18 +11,32 @@ Access it <a href=""</a>here.<br>
 <br>
 <br>
 
-Networking . BGP, Border Gateway Protocol . Exploitation
-
+<p align="left">Summary &nbsp;&nbsp; ▪️
+<ol type="1. ">
+    <li>[Nmap](#1)</li>
+    <li>[API Key "AND*"](#2)</li>
+    <li>...</li>
+    <li>...</li>
+</ol></p>
+    
+<br>
 
 <h2>Task 1 . Introduction</h2>
 
-
-<h2 align="center">Nmap</h2>
+<p><em>Answer the questions below</em></p>
+<br>
+<br>
+<h2 align="center">Nmap<a id='1'></a></h2>
 <p>
 
 - 22 : SSH<br>
-- 80 : HTTP : nginx 1.14.0<br> xx.xxx.xx.xx:80/.git<br>
-- 8080 : </p>
+- 80 : HTTP : nginx 1.14.0<br> xx.xxx.xx.xx:80/.git<br></p>
+
+```bash
+:~/Borderlands# nmap -sC -sV -sS -p- -O -A xx.xxx.xx.xx
+
+
+```
 
 ```bash
 :~/Borderlands# nmap -A xx.xxx.xx.xx
@@ -28,13 +44,14 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 
 ```
 
-<h2 align="center">API Key</h2>
+<h2 align="center">API Key "AND*"<a id='2'></a></h2>
+<br>
 <h3 align="center">Web port 80</h3>
 <p  align="center">403 Forbidden</p>
 <br>
 <br>
 <h3 align="center">apktool</h3>
-<p  align="center">Downloaded mobile-app-prototype.apk clicking <code>here</code>.</p>
+<p  align="center">Downloaded the APK <code>mobile-app-prototype.apk</code> from the Web Application clicking <code>here</code>.</p>
 
 <p align = "center"><img width="800px" src="https://github.com/user-attachments/assets/5adc39ba-8e0f-4623-81aa-005e5da10c7e"></p>
 
@@ -51,6 +68,10 @@ mobile-app-prototype.apk
 :~/Borderlands# apt install apktool
 ```
 
+<br>
+<br>
+<p  align="center">Executed <code>apktool</code> to decompile <code>mobile-app-prototype.apk</code>.</p>
+
 ```bash
 :~/Borderlands# apktool d mobile-app-prototype.apk
 I: Using Apktool 2.4.0-dirty on mobile-app-prototype.apk
@@ -66,27 +87,20 @@ I: Copying unknown files...
 I: Copying original files...
 ```
 
-<img width="914" height="231" alt="image" src="https://github.com/user-attachments/assets/a935e1d0-7520-412c-a665-ccd845abf3c9" />
+<p align = "center"><img width="800px" src="https://github.com/user-attachments/assets/a935e1d0-7520-412c-a665-ccd845abf3c9"></p>
 
 <br>
+<br>
+<p  align="center">Checked the decompiled content.</p>
 
 ```bash
 :~/Borderlands/mobile-app-prototype/res/values# ls
 attrs.xml  bools.xml  colors.xml  dimens.xml  drawables.xml  ids.xml  integers.xml  public.xml  strings.xml  styles.xml
 ```
 
-<p>encoded api key : <code>CBQOSTEFZNL5U8LJB2hhBTDvQi2zQo</code></p>
-
-```bash
-:~/Borderlands/mobile-app-prototype/res/values# grep -rn encrypted
-public.xml:892:    <public type="string" name="encrypted_api_key" id="0x7f0b0028" />
-strings.xml:43:    <string name="encrypted_api_key">CBQOSTEFZNL5U8LJB2hhBTDvQi2zQo</string>
-```
-
-```bash
-:~/Borderlands/mobile-app-prototype/res/values# cat strings.xml | grep api_key
-    <string name="encrypted_api_key">CBQOSTEFZNL5U8LJB2hhBTDvQi2zQo</string>
-```
+<br>
+<br>
+<p  align="center">Discovered the encrypted API Key using <code>grep</code>.</p>
 
 ```bash
 :~/Borderlands/mobile-app-prototype/res/values# grep -rn key
@@ -105,23 +119,26 @@ attrs.xml:352:    <attr name="layout_keyline" format="integer" />
 strings.xml:43:    <string name="encrypted_api_key">CBQOSTEFZNL5U8LJB2hhBTDvQi2zQo</string>
 ```
 
+<br>
+<br>
+<p  align="center">Discovered the API Key "AND*" using <code>CyberChef</code> and the Key.</p>
 
-<p><code>context</code></p>
-
-<img width="1131" height="171" alt="image" src="https://github.com/user-attachments/assets/ee87b70e-17a0-4b1b-83c0-21b63ee9e986" />
+<p align = "center"><img width="800px" src="https://github.com/user-attachments/assets/ee87b70e-17a0-4b1b-83c0-21b63ee9e986"></p>
 
 <br>
 
+<p align = "center"><img width="800px" src="https://github.com/user-attachments/assets/39c424d7-ba9c-40af-8ff1-c34b7e5705e0"></p>
+
+<br>
+<br>
 <p> 1.1. What is the API key that fits the following pattern: "AND*"<br>
 <code>ANDVOWLDLAS5Q8OQZ2tuIPGcOu2mXk</code></p>
 
-<h4>CyberChef</h4>
-
-<img width="1126" height="168" alt="image" src="https://github.com/user-attachments/assets/39c424d7-ba9c-40af-8ff1-c34b7e5705e0" />
-
 <br>
-
-<h3>GitTools</h3>
+<h2 align="center">API Key "WEB*"</h2>
+<h3 align="center">GitTools</h3>
+<br>
+<p align="center">Cloned GitTools repository.</p>
 
 ```bash
 :~/Borderlands# git clone https://github.com/internetwache/GitTools
@@ -137,10 +154,12 @@ Dumper  Extractor  Finder  LICENSE.md  README.md
 gitdumper.sh  README.md
 ```
 
-<h3>Gitdumper</h3>
+<br>
+<br>
+<p  align="center">Executed <code>gitdumper</code>.</p>
 
 ```bash
-:~/Borderlands/GitTools/Dumper# ./gitdumper.sh http://TargetIP/.git/ /root/Borderlands/Target/
+:~/Borderlands/GitTools/Dumper# ./gitdumper.sh http://xx.xxx.xx.xx/.git/ ~/Borderlands/xx.xxx.xx.xx/
 ###########
 # GitDumper is part of https://github.com/internetwache/GitTools
 #
@@ -198,19 +217,22 @@ gitdumper.sh  README.md
 [+] Downloaded: objects/22/29eb414d7945688b90d7cd0a786fd888bcc6a4
 [+] Downloaded: objects/4f/4ced90fcad774ca4f9f966dbb227ebe7f77a83
 [+] Downloaded: objects/b9/953f00f7ad7a26460fa249e00fe05eb52d224c
-:~/Borderlands/GitTools/Dumper# 
 ```
 
+<h3 align="center">GitHack</h3>
 <br>
-
-<h3>GitHack</h3>
+<p align="center">Cloned GitHack repository.</p>
 
 ```bash
 :~/Borderlands/GitHack# git clone https://github.com/lijiejie/GitHack
 ```
 
+<br>
+<br>
+<p  align="center">Executed <code>gitdumperGitHack</code>.</p>
+
 ```bash
-:~/Borderlands/GitHack# python3 GitHack.py http://TargetIP/.git
+:~/Borderlands/GitHack# python3 GitHack.py http://xx.xxx.xx.xx/.git
 [+] Download and parse index file ...
 [+] CTX_WSUSpect_White_Paper.pdf
 [+] Context_Red_Teaming_Guide.pdf
@@ -234,46 +256,71 @@ gitdumper.sh  README.md
 [OK] Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf
 ```
 
+<br>
+<br>
+<p  align="center">Checked the content.</p>
 
 ```bash
-:~/Borderlands/GitHack/10.10.143.3# ls
+:~/Borderlands/GitHack/xx.xxx.xx.xx# ls
 api.php                               CTX_WSUSpect_White_Paper.pdf                            Glibc_Adventures-The_Forgotten_Chunks.pdf  info.php
 Context_Red_Teaming_Guide.pdf         Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf  home.php
 Context_White_Paper_Pen_Test_101.pdf  functions.php
 ```
 
 <br>
-
-<p> 1.2. What is the API key that fits the following pattern: "WEB*"<br>
-<code>WEBLhvOJAH8d50Z4y5G5g4McG1GMGD</code></p>
-
+<br>
+<p  align="center">Discovered the API Key "WEB*" using <code>grep</code>.</p>
 
 ```bash
-:~/Borderlands/GitHack/10.10.143.3# grep -rn WEB
+:~/Borderlands/GitHack/xx.xxx.xx.xx# grep -rn WEB
 home.php:26:    echo ('<li><a href="api.php?documentid='.$documentid.'&amp;apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD">'.$document_name.'</a></li>');
 home.php:41:            echo ('<input type="hidden" id="apikey" name="apikey" value="WEBLhvOJAH8d50Z4y5G5g4McG1GMGD" />');
 api.php:5:if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "WEBLhvOJAH8d50Z4y5G5") && substr($_GET['apikey'], 0, 20) !== "ANDVOWLDLAS5Q8OQZ2tu" && substr($_GET['apikey'], 0, 20) !== "GITtFi80llzs4TxqMWtC"))
 ```
 
+<br>
+<p> 1.2. What is the API key that fits the following pattern: "WEB*"<br>
+<code>WEBLhvOJAH8d50Z4y5G5g4McG1GMGD</code></p>
+
+<br>
+<h2 align="center">API Key GIT*"</h2>
+<br>
+<p  align="center">I have just discovered the API Key "GIT*" in the previous step.</p>
 
 ```bash
-:~/Borderlands/Target/.git# ls
+:~/Borderlands/GitHack/xx.xxx.xx.xx# grep -rn WEB
+home.php:26:    echo ('<li><a href="api.php?documentid='.$documentid.'&amp;apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD">'.$document_name.'</a></li>');
+home.php:41:            echo ('<input type="hidden" id="apikey" name="apikey" value="WEBLhvOJAH8d50Z4y5G5g4McG1GMGD" />');
+api.php:5:if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "WEBLhvOJAH8d50Z4y5G5") && substr($_GET['apikey'], 0, 20) !== "ANDVOWLDLAS5Q8OQZ2tu" && substr($_GET['apikey'], 0, 20) !== "GITtFi80llzs4TxqMWtC"))
+```
+
+<br>
+<br>
+<p  align="center">Even tough, practice more.</p>
+
+```bash
+:~/Borderlands/xx.xxx.xx.xx/.git# ls
 COMMIT_EDITMSG  config  description  HEAD  index  info  logs  objects  refs
 ```
 
+<br>
+<br>
+<p  align="center">Identified two directories within <code>logs</code>code>:
+    
+- <code>HEAD</code><br>
+- <code>refs</code></p>
 
 ```bash
-:~/Borderlands/Target/.git/logs# ls
+:~/Borderlands/xx.xxx.xx.xx/.git/logs# ls
 HEAD  refs
 ```
 
 <br>
-
-<p> 1.3. What is the API key that fits the following pattern: "GIT*"<br>
-<code>GITtFi80llzs4TxqMWtCotiTZpf0HC</code></p>
+<br>
+<p  align="center">Even tough, practice more.</p>
 
 ```bash
-:~/Borderlands/Target/.git# git log
+:~/Borderlands/xx.xxx.xx.xx/.git# git log
 commit 6db3cf70b469de942f2f529166088cdfbbd5f764 (HEAD -> master)
 Author: Context Information Security <recruitment@contextis.com>
 Date:   Tue Sep 10 14:44:31 2019 +0100
@@ -328,6 +375,12 @@ Date:   Tue Sep 10 14:31:11 2019 +0100
 ```
 
 <br>
+<p> 1.3. What is the API key that fits the following pattern: "GIT*"<br>
+<code>GITtFi80llzs4TxqMWtCotiTZpf0HC</code></p>
+
+<br>
+<br>
+<p  align="center">Discovered the API Key "GIT*" using <code>git log</code>.</p>
 
 ```bash
 :~/Borderlands/Target/.git# git cat-file -p 2229eb414d7945688b90d7cd0a786fd888bcc6a4
