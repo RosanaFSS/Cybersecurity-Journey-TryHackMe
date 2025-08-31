@@ -31,7 +31,9 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 <h2 align="center">API Key</h2>
 <h3 align="center">Web port 80</h3>
 <p  align="center">403 Forbidden</p>
-
+<br>
+<br>
+<h3 align="center">apktool</h3>
 <p  align="center">Downloaded mobile-app-prototype.apk clicking <code>here</code>.</p>
 
 <img width="800px" src="https://github.com/user-attachments/assets/5adc39ba-8e0f-4623-81aa-005e5da10c7e"></p>
