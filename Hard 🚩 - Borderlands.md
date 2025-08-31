@@ -513,7 +513,14 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
+<p align="center">Logged in</p>
+
 <img width="975" height="362" alt="image" src="https://github.com/user-attachments/assets/166a9a58-12c6-48bd-b53b-8fc06652dd12" />
+
+<br>
+
+<img width="1125" height="131" alt="image" src="https://github.com/user-attachments/assets/edf0fc73-5da6-4e2f-81b9-b8bb2b715001" />
+
 
 <br>
 <h3 align="center">Testing the suggested payloads to practice</h3>
