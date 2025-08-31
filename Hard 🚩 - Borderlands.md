@@ -16,7 +16,9 @@ Access it <a href=""</a>here.<br>
 <p>
     
 - [Nmap](#1)<br>
-- [API Key "AND*"](#2)<br></p>
+- [API Key "AND*"](#2)<br>
+- [API Key "WEB*"](#3)<br>
+- [API Key "GIT*"](#4)<br></p>
     
 <br>
 
@@ -134,7 +136,7 @@ strings.xml:43:    <string name="encrypted_api_key">CBQOSTEFZNL5U8LJB2hhBTDvQi2z
 <code>ANDVOWLDLAS5Q8OQZ2tuIPGcOu2mXk</code></p>
 
 <br>
-<h2 align="center">API Key "WEB*"</h2>
+<h2 align="center">API Key "WEB*"<a id='3'></a></h2>
 <h3 align="center">GitTools</h3>
 <br>
 <p align="center">Cloned GitTools repository.</p>
@@ -282,7 +284,7 @@ api.php:5:if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "W
 <code>WEBLhvOJAH8d50Z4y5G5g4McG1GMGD</code></p>
 
 <br>
-<h2 align="center">API Key GIT*"</h2>
+<h2 align="center">API Key "GIT*"<a id='4'></a></h2>
 <br>
 <p  align="center">I have just discovered the API Key "GIT*" in the previous step.</p>
 
