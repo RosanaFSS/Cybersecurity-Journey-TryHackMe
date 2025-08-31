@@ -12,12 +12,7 @@ Access it <a href=""</a>here.<br>
 <br>
 
 <p align="left">Summary &nbsp;&nbsp; ▪️
-<ol type="1. ">
-    <li>[Nmap](#1)</li>
-    <li>[API Key "AND*"](#2)</li>
-    <li>...</li>
-    <li>...</li>
-</ol></p>
+[Nmap](#1) [API Key "AND*"](#2)</p>
     
 <br>
 
