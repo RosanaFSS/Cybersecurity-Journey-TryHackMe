@@ -43,6 +43,8 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 mobile-app-prototype.apk
 ```
 
+<br>
+<br>
 <p  align="center">Installed <code>apktool</code>.</p>
 
 ```bash
