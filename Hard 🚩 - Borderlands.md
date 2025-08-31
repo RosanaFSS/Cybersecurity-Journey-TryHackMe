@@ -18,7 +18,7 @@ Networking . BGP, Border Gateway Protocol . Exploitation
 <h2>Nmap</h2>
 <p>
 
-- 22 : SHH<br>
+- 22 : SSH<br>
 - 80 : HTTP : nginx 1.14.0<br> xx.xxx.xx.xx:80/.git<br>
 - 8080 : </p>
 
