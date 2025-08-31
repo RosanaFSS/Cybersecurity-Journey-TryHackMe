@@ -306,7 +306,7 @@ COMMIT_EDITMSG  config  description  HEAD  index  info  logs  objects  refs
 
 <br>
 <br>
-<p  align="center">Identified two directories within <code>logs</code>code>:
+<p  align="center">Identified two directories within <code>logs</code>:<br>
     
 - <code>HEAD</code><br>
 - <code>refs</code></p>
