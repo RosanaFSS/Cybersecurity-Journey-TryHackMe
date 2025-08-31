@@ -1,6 +1,39 @@
+<h1 align="center">Borderlands</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/6aec40ad-4820-4c26-9c07-bb189b72aebb"><br>
+August 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>481</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>Hack this machine and reclaim the fortress from the Evil Overlord!</em>.<br>
+Access it <a href="https://tryhackme.com/room/fortress"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/df979e98-b488-43fc-ac5e-8be4a7bded16"></p>
+
+<br>
+<br>
+
+Networking . BGP, Border Gateway Protocol . Exploitation
 
 
-<h3>mobile-app-prototype.apk</h3>
+<h2>Task 1 . Introduction</h2>
+
+
+<h2>Nmap</h2>
+<p>
+
+- 22 : SHH<br>
+- 80 : HTTP : nginx 1.14.0<br> xx.xxx.xx.xx:80/.git<br>
+- 8080 : </p>
+
+```bash
+:~/Borderlands# nmap -A xx.xxx.xx.xx
+
+
+```
+
+<h2>Web port 80</h2>
+<p>
+
+- 403 Forbidden</p>
+
+<h2>mobile-app-prototype.apk</h2>
 
 <img width="1120" height="351" alt="image" src="https://github.com/user-attachments/assets/5adc39ba-8e0f-4623-81aa-005e5da10c7e" />
 
@@ -8,8 +41,6 @@
 :~/Borderlands# ls
 mobile-app-prototype.apk
 ```
-
-<br>
 
 <h3>apktool</h3>
 
