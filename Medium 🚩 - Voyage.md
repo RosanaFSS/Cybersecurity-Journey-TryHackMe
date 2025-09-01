@@ -1,7 +1,7 @@
 <h1 align="center">Voyage</h1>
 <p align="center"><img width="80px" src="ttps://github.com/user-attachments/assets/a8f21cd2-2cc8-4d78-8755-4a91ee36f507"><br>
-August 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>481</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+2025, Spetember 1<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>483</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Chain multiple vulnerabilities to gain control of a system</em>.<br>
 Access it <a href="https://tryhackme.com/room/voyage"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/636454cc-082f-471e-9edc-cc6e7b8a397f"></p>
