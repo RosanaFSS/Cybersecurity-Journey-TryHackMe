@@ -1,5 +1,5 @@
 <h1 align="center">Voyage</h1>
-<p align="center"><img width="80px" src="ttps://github.com/user-attachments/assets/a8f21cd2-2cc8-4d78-8755-4a91ee36f507"><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/a8f21cd2-2cc8-4d78-8755-4a91ee36f507"><br>
 2025, Spetember 1<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>483</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Chain multiple vulnerabilities to gain control of a system</em>.<br>
