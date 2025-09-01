@@ -7,8 +7,6 @@ Access it <a href="https://tryhackme.com/room/voyage"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/636454cc-082f-471e-9edc-cc6e7b8a397f"></p>
 
 <br>
-<br>
-
 <h2>Task 1 . Voyage</h2>
 
 <p>Sometimes in a pentest, you get root access very quickly. But is it the real root or just a container? The voyage might still be going on.<br>
