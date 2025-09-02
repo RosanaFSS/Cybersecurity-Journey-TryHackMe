@@ -53,6 +53,7 @@ Access it <a href="https://tryhackme.com/room/voyage"</a>here.<br>
 <img width="1325" height="74" alt="image" src="https://github.com/user-attachments/assets/7b7d1ed7-7fcb-49f9-beb6-0c918dd5cc9d" />
 
 <br>
+<br>
 <p>3.2. Based on the logs, what kind of tokens are we dealing with?<br>
 <code>JWT</code></p>
 
@@ -63,11 +64,13 @@ Access it <a href="https://tryhackme.com/room/voyage"</a>here.<br>
 <img width="523" height="357" alt="image" src="https://github.com/user-attachments/assets/6cd8db92-2055-42dc-b400-a616befa38d1" />
 
 <br>
+<br>
 <p>3.3. What is the IdP server that issued the tokens?<br>
 <code>auth.catportal.internal</code></p>
 
 <img width="1055" height="102" alt="image" src="https://github.com/user-attachments/assets/ebde3d48-1d8a-4dcb-9092-881c14cde6b9" />
 
+<br>
 <br>
 <p>3.4. Which user has requested the tokens?<br>
 <code>FluffyCat</code>
@@ -79,14 +82,15 @@ Access it <a href="https://tryhackme.com/room/voyage"</a>here.<br>
 <img width="1279" height="128" alt="image" src="https://github.com/user-attachments/assets/5c1deceb-6411-4917-9220-1965c4f20cf0" />
 
 <br>
-<p>3.5. What was the malicious token used?<br>
+<br>
+<p>3.5. Which role change triggered the warning?<br>
 <code>admin</code>
 
 <img width="1312" height="193" alt="image" src="https://github.com/user-attachments/assets/f63581ce-5c32-442e-8aef-10d37ef89b5b" />
 
-
 <br>
-<p>3.6. Which role change triggered the warning?<br>
+<br>
+<p>3.6. What was the malicious token used?<br>
 <code>eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6IkZsdWZmeUNhdCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTQzMTgwMCwiZXhwIjoxNzIxNDM1NDAwfQ</code>
 
 <img width="1339" height="111" alt="image" src="https://github.com/user-attachments/assets/f32e3d2a-ea01-4753-b67c-8dd531ff1fc1" />
