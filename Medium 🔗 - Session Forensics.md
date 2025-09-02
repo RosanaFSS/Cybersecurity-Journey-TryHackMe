@@ -16,7 +16,7 @@ Access it <a href="https://tryhackme.com/room/sessionforensics">here</a><br>
 <p>
 
 - <a href="https://tryhackme.com/room/jwtsecurity">JWT Security</a><br>
-- <a href="hhttps://tryhackme.com/room/sessionmanagement">Session Management</a></p>
+- <a href="https://tryhackme.com/room/sessionmanagement">Session Management</a></p>
 
 
 <h3>Learning Objectives</h3>
