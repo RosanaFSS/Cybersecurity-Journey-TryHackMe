@@ -47,7 +47,7 @@ Access it <a href="https://tryhackme.com/room/sessionforensics">here</a><br>
 
 <p><em>Answer the questions below</em></p>
 
-<p>3.1. Where would you find logs useful for investigating privilege escalation?.<br>
+<p>3.1. Where would you find logs useful for investigating privilege escalation?<br>
 <code>application logs</code></p>
 
 <p>3.2. Where would you find logs useful for mapping user-agent and IP addresses?<br>
@@ -166,8 +166,6 @@ Access it <a href="https://tryhackme.com/room/sessionforensics">here</a><br>
 <p>6.1. I´m ready for the next room!<br>
 <code>No answer needed</code></p>
 
-<img width="1896" height="897" alt="image" src="https://github.com/user-attachments/assets/4129980c-b1c2-4e31-a881-f3e4ec94a08f" />
-
 <br>
 <br>
 <h1 align="center">Completed</h1>
@@ -183,20 +181,18 @@ Access it <a href="https://tryhackme.com/room/sessionforensics">here</a><br>
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, September 1 | 483      |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
+| 2025, September 2 | 484      |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
 
 </div>
 
-
-<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/87d4d449-43d0-42d9-b8a5-1ad6e6672963"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/a871adaa-f233-4df4-a6f0-43b060277aa9"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d540e5de-8a3a-47f4-bfae-0b99755bbb0f"><br>
-                  Global monthly:    849ʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/95a24424-5106-404f-9643-b555a1705957"><br>
-                  Brazil monthly:     15ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d7d7d0a3-6733-4eff-9422-2469b316a6fc"><br>
+<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/342d3267-7cb7-439d-a38c-c830fcd2505e"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/95107821-91f0-467e-904e-2fc1eb5b641b"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/93be0ca3-5d3d-44de-90c2-4af865af595a"><br>
+                  Global monthly:    706ᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/284fc586-0a95-49c5-8cb8-c7004226e874"><br>
+                  Brazil monthly:     14ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ef2e27d3-0ffa-44d4-b8d8-961064cf27df"><br>
 
 <br>
 <br>
 
 <h1 align="center">Thanks for Coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
