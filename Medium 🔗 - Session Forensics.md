@@ -3,17 +3,28 @@
 2025, Spetember 2<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>484</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Analyse sessions and tokens for web application investigation</em>.<br>
-Access it <a href="https://tryhackme.com/room/voyage"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/sessionforensics">here</a><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/ecfcf137-e005-4c13-822e-f71dc3956ba0"></p>
+
+
 
 <br>
 <h2>Task 1 . Introduction</h2>
 <p>In this room, we'll dive into different session types and how to investigate several log types at the application level to identify compromise.</p>
 
+<h3>Learning Prerequisites</h3>
 <p>
 
-- JWT Security
-- Session Manageent</p>
+- <a href="https://tryhackme.com/room/jwtsecurity">JWT Security</a><br>
+- <a href="hhttps://tryhackme.com/room/sessionmanagement">Session Management</a></p>
+
+
+<h3>Learning Objectives</h3>
+<p>
+
+- Understand log types to perform application-level forensics<br>
+- Identify key behaviours that lead to session compromise<br>
+- Build alerting and detection capabilities tailored to application-level logs</p>
 
 <p><em>Answer the question below</em></p>
 
