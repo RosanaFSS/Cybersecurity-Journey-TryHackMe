@@ -19,14 +19,14 @@ My achievements<br>
 |2025, Jul    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf">Advanced Endpoint Investigations</a>  |
 |2025, May    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LSCBWVPOX6.pdf">Attacking and Defending AWS</a>       |
 |2025, May    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PUCW503MLQ.pdf">Defending Azure</a>                   |
-|2024, Dec    |Global all time:  &nbsp; &nbsp;666ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXU8Y5OMJ1.pdf">CTF . Advent of Cyber 2024</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf">Web Application Pentesting</a>|
-|2024, Nov    |Global all time: &nbsp;1,063ʳᵈ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf">CompTIA Pentest+</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf">DevSecOps</a>|
-|2024, Oct    |Global all time: &nbsp;1,451ˢᵗ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a>|
-|2024, Sep<br><br>    |Global all time: &nbsp;2,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a>|
-|2024, Aug<br>    |Global all time: &nbsp;3,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a> |
-|2024, Jul<br><br>    |Global all time: &nbsp;6,798ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a>|
-|2024, Jun<br>    |Global all time: 17,817ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf">SOC Level 1</a>|
-|2024, May<br>    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf">Pre Security</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf">Introduction to Cyber Security</a>|
+|2024, Dec<br><br><br>    |Global all time:  &nbsp; &nbsp;666ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXU8Y5OMJ1.pdf">CTF . Advent of Cyber 2024</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf">Web Application Pentesting</a>|
+|2024, Nov<br><br><br>    |Global all time: &nbsp;1,063ʳᵈ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf">CompTIA Pentest+</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf">DevSecOps</a>|
+|2024, Oct<br><br><br>    |Global all time: &nbsp;1,451ˢᵗ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a>|
+|2024, Sep<br><br><br>    |Global all time: &nbsp;2,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a>|
+|2024, Aug<br><br>    |Global all time: &nbsp;3,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a> |
+|2024, Jul<br><br><br>    |Global all time: &nbsp;6,798ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a>|
+|2024, Jun<br><br>    |Global all time: 17,817ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf">SOC Level 1</a>|
+|2024, May<br><br>    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf">Pre Security</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf">Introduction to Cyber Security</a>|
 
 </h6></div><br>
 
