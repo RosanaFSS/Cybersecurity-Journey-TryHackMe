@@ -5,8 +5,7 @@ I´m an active user since December 2023.</p>
 <p align="center">Completed 82% of the challenges available = <code>362</code> out of <code>442</code><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"></p>
 
-<p align="center">Completed <code>18</code> out of <code>18</code> learning paths available.<br>
-<img width="1000px" src="https://github.com/user-attachments/assets/f9883071-ca35-45ad-9739-3211a5fd0b0f"></p>
+<p align="center">Completed <code>18</code> out of <code>18</code> learning paths available.</p>
 
 
 
