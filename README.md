@@ -1,6 +1,6 @@
 <h1 align="center"> TryHackMe</h1>
 <p align="center">2025, September 3. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br>
-My accomplishments in my THM account, active since December 2023.</p>
+I´m an active user in TryHackMe since December 2023.</p>
 
 <p align="center">Completed <code>18</code> out of <code>18</code> learning paths available.<br>
 <img width="1000px" src="https://github.com/user-attachments/assets/f9883071-ca35-45ad-9739-3211a5fd0b0f"><br><br>
