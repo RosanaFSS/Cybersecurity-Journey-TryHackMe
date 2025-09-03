@@ -188,7 +188,7 @@ Access it <a href="https://tryhackme.com/room/sessionforensics">here</a><br>
 <p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/342d3267-7cb7-439d-a38c-c830fcd2505e"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/95107821-91f0-467e-904e-2fc1eb5b641b"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/93be0ca3-5d3d-44de-90c2-4af865af595a"><br>
-                  Global monthly:    706ᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/284fc586-0a95-49c5-8cb8-c7004226e874"><br>
+                  Global monthly:    706ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/284fc586-0a95-49c5-8cb8-c7004226e874"><br>
                   Brazil monthly:     14ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ef2e27d3-0ffa-44d4-b8d8-961064cf27df"><br>
 
 <br>
