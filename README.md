@@ -2,10 +2,10 @@
 <p align="center">2025, September 3. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my TryHackMe profile.<br><br>
 I´m an active user since December 2023.</p>
 
-<p align="center">Completed <code>82%</code> of the available challenge &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> out of <code>442</code>.<br>
+<p align="center">Completed <code>82%</code> of the available challenges &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> &nbsp; / &nbsp; <code>442</code>.<br>
 <img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"></p>
 
-<p align="center">Completed <code>100%</code> of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> out of <code>18</code>.</p>
+<p align="center">Completed <code>100%</code> of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> &nbsp; / &nbsp; <code>18</code>.</p>
 
 
 
