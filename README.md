@@ -26,7 +26,7 @@ My achievements<br>
 |2024, Oct    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a>|
 |2024, Sep    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a>|
 |2024, Aug    |Global all Time: &nbsp;3,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a> |
-|2024, Jul    |Global all Time: &nbsp;6,798ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br>a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a>|
+|2024, Jul    |Global all Time: &nbsp;6,798ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a>|
 |2024, Jun    |Global all Time: 17,817ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf">SOC Level 1</a>|
 |2024, May    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf">Pre Security</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf">Introduction to Cyber Security</a>|
 
