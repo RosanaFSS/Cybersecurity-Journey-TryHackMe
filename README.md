@@ -1,11 +1,19 @@
 <h1 align="center"> TryHackMe</h1>
 <p align="center">Update : 2025, September 3<br><br>I´m active since December 2023. Click <a href="https://tryhackme.com/p/Rosana">here</a> to access my profile.</p>
 
-<p align="center">Completed &nbsp; <code>82%</code> &nbsp; of the available challenges &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> / <code>442</code>.<br>
+<p align="center">Completed &nbsp; <code>82%</code> &nbsp; of the available challenges &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> / <code>442</code>.<br><br>
 <img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e"></p>
 
 <p align="center">Completed &nbsp; <code>100%</code> &nbsp; of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> / <code>18</code>.
 
+- 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a><br> 
+- 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf">Offensive Pentesting</a><br> 
+- 2025, Jul &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf">Advanced Endpoint Investigations</a><br> 
+- 2025, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LSCBWVPOX6.pdf">Attacking and Defending AWS</a><br> 
+- 2025, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PUCW503MLQ.pdf">Defending Azure</a><br>
+- 2024, Dec &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf">Web Application Pentesting</a><br>
+- 2024, Nov &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf">CompTIA Pentest+</a><br>
+- 2024, Nov &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf">DevSecOps</a><br>
 - 2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br>
 - 2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a><br>
 - 2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br>
