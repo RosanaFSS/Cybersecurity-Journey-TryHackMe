@@ -8,7 +8,7 @@ I´m an active user since December 2023.</p>
 <p align="center">Completed &nbsp; <code>100%</code> &nbsp; of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> / <code>18</code>.
 
 - 2024, Oct 29 &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br>
-- 2024, Oct &nbsp;6 &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a><br>
+- 2024, Oct &nbsp;&nbsp;6 &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a><br>
 - 2024, Sep 28 &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br>
 </p>
 
