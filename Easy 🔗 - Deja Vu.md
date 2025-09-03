@@ -1,4 +1,10 @@
-
+<h1 align="center">Deja Vu</h1>
+<p align="center"><img width="80px" src=""><br>
+2025, August 29<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>480</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>Exploit a recent code injection vulnerability to take over a website full of cute dog pictures!</em>.<br>
+Access it <a href=" ">here</a><br>
+<img width="1200px" src="https://github.com/user-attachments/assets/7f6e0c49-0709-4a50-8810-350f7618a986"></p>
 
 
 <h2>Task 1 . Deja Vu</h2>
@@ -30,17 +36,8 @@ Open up Burp Suite with your browser of choice (I like the integrated Chromium) 
 <p>2.3. Perform an Nmap scan of the target. What version of SSH is in use?<br>
 <code>OpenSSH 8.0 (protocol 2.0)</code></p>
 
-```bash
-
-```
-
-```bash
-
-```
-
 <h2>Task 3 . Vulnerability Discovery</h2>
 <h3>Delving deeper</h3>
-
 
 <h3>Discovering the overly versobe API</h3>
 <p>Burp Suite's target site map should have discovered 2 API routes that the website uses to retrieve information about the dog pictures. One retrieves the title and caption, and the other is used to retrieve the date and author. The full paths have been redacted, so that you find them yourself.</p>
@@ -97,7 +94,7 @@ Exiftool follows a similar story here. In early 2021, an exploit was discovered 
 
 
 
-<h3>Understanding the code, and the danger
+<h3>Understanding the code, and the danger</h3>h3>
 <p>The dangerous function here is the call to eval on line 233. Eval is used to run Perl code that's contained in a variable, and the variable comes from EXIF data in our image. Control over code that's executed is our goal, so it currently seems like the only barrier between us and arbitrary code execution is the filter found on line 231.</p>
 
 
@@ -157,24 +154,39 @@ Exploit target:
 msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) > 
 ```
 
-
 <h3>More information</h3>
-
-
-
-
 
 ```bash
 msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) > run
 [+] msf.jpg stored at /root/.msf4/local/msf.jpg
 ```
 
-:~/DejaVu# ls
-msf.jpg
-
 <img width="1120" height="287" alt="image" src="https://github.com/user-attachments/assets/02b6e807-1cfa-48a7-bede-5b1672050e13" />
 
 <img width="1121" height="219" alt="image" src="https://github.com/user-attachments/assets/3377dc3e-754c-4ab6-9fcf-3e30b236c370" />
 
+<br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/34fd9940-751c-4c57-916b-66e2b1c6ac87"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/9e4c2edb-c5a6-453b-9934-a9a08314027f"></p>
 
 
+<h2 align="center">My TryHackMe Journey</h2>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, August 29   | 480      |     111ˢᵗ    |      5ᵗʰ     |     238ᵗʰ   |    5ᵗʰ    | 123,336  |    933    |    73     |
+
+</div>
+
+<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/a638bd45-3b13-4c4c-97c5-2467fd2c4b2d"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d129cd57-3a73-4234-8dbf-6dfe8d09b26b"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d5b9a0e6-aa08-4b2a-9be8-dbfda497f8f6"><br>
+                  Global monthly:    238ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/077037e2-fe26-4ea5-8912-b4a65ffe4d0c"><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/56714663-2098-4409-a1b2-be3cbe20b3a1"><br>
+
+<h2>Thanks for coming!</h2>
+<p align="left">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
