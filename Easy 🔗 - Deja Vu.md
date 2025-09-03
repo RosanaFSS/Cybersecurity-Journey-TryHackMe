@@ -1,13 +1,25 @@
 <h1 align="center">Deja Vu</h1>
-<p align="center"><img width="80px" src=""><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/e151a71b-1f29-4a59-995f-b65f1bceadf0"><br>
 2025, August 29<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>480</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Exploit a recent code injection vulnerability to take over a website full of cute dog pictures!</em>.<br>
-Access it <a href=" ">here</a><br>
+Access it <a href="https://tryhackme.com/room/dejavu">here</a><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/7f6e0c49-0709-4a50-8810-350f7618a986"></p>
 
-
 <h2>Task 1 . Deja Vu</h2>
+<p>This room aims to teach:<br>
+
+- Exploring a webapp to discover potential vulnerabilities<br>
+- Exploiting a discovered vulnerability with Metasploit<br>
+- Privilege Escalation by PATH exploitation<br><br>
+
+While this room is a walkthrough, some elements will rely on individual research and troubleshooting.<br>
+
+Credit to Varg for the room icon, webapp logo, and design help throughout the webapp.<br>
+
+Cute animal pictures sourced from the TryHackMe Discord community staff.<br>
+
+Writeups in the format of a Penetration Testing Report are more than welcome. Other writeup formats will be accepted based on quality and novelty.</p>
 
 <p><em>Answer the question below</em></p>
 
@@ -78,6 +90,7 @@ Open up Burp Suite with your browser of choice (I like the integrated Chromium) 
 
 <img width="1186" height="198" alt="image" src="https://github.com/user-attachments/assets/701f36a5-7056-4b8b-8ece-3cc28e59ac0c" />
 
+<br>
 <h2>Task 4 . Exploitation</h2>
 <p>Now that we've discovered a potential method of exploiting the box, we should try it!<br>
 
@@ -92,12 +105,25 @@ Exiftool follows a similar story here. In early 2021, an exploit was discovered 
 <h3>Looking for the patch</h3>
 <p>Researching the vulnerability, we can see it was assigned CVE-2021-22204. Looking at the NVD CVE page for the flaw shows that it was patched in 12.24. The page also has a link to the patch, which is very useful here because we can see how they fixed the vulnerability. The git diff is copied below.</p>
 
-
+```bash
+-	230	# must protect unescaped "$" and "@" symbols, and "\" at end of string
+-	231	$tok =~ s{\\(.)|([\$\@]|\\$)}{'\\'.($2 || $1)}sge;
+-	232	# convert C escape sequences (allowed in quoted text)
+-	233	$tok = eval qq{"$tok"};
++	230	# convert C escape sequences, allowed in quoted text
++	231	# (note: this only converts a few of them!)
++	232	my %esc = ( a => "\a", b => "\b", f => "\f", n => "\n",
++	233	r => "\r", t => "\t", '"' => '"', '\\' => '\\' );
++	234	$tok =~ s/\\(.)/$esc{$1}||'\\'.$1/egs;
+```
 
 <h3>Understanding the code, and the danger</h3>h3>
 <p>The dangerous function here is the call to eval on line 233. Eval is used to run Perl code that's contained in a variable, and the variable comes from EXIF data in our image. Control over code that's executed is our goal, so it currently seems like the only barrier between us and arbitrary code execution is the filter found on line 231.</p>
 
-
+```bash
+# must protect unescaped "$" and "@" symbols, and "\" at end of string
+$tok =~ s{\\(.)|([\$\@]|\\$)}{'\\'.($2 || $1)}sge;
+```
 
 <p>It's worth explaining the =~ that's used here. It's a Perl operator usually used with regular expressions, and it can be very very complicated. Importantly for us, the first character after the ~ is 's'. This means that the operator will perform a search and replace with the regular expression that follows.<br>
 
@@ -155,6 +181,23 @@ msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) >
 ```
 
 <h3>More information</h3>
+<p>If you didn't like my explanations, want to learn more, or you want to see how the proof of concepts were created, please see the links below.<br>
+
+- https://blog.convisoappsec.com/en/a-case-study-on-cve-2021-22204-exiftool-rce/<br>
+- https://blogs.blackberry.com/en/2021/06/from-fix-to-exploit-arbitrary-code-execution-for-cve-2021-22204-in-exiftool<br>
+- https://www.openwall.com/lists/oss-security/2021/05/10/5</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>4.1. Generate an image payload with Metasploit<br>
+<code>No answer needed</p>
+
+<p>4.2. Get code execution on the target machine<br>
+<code>No answer needed</p>
+
+<p>4.3. Retrieve the flag located in /home/dogpics/user.txt. What is the user flag?<br>
+<code>dejavu{735c0553063625f41879e57d5b4f3352}</p>
+
 
 ```bash
 msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) > run
