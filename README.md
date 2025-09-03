@@ -5,7 +5,7 @@ Active since <strong>2023</strong>, December.<br><a href="https://tryhackme.com/
 Challenges Completed: &nbsp; <strong>82%</strong> &nbsp; -  &nbsp; <strong>362</strong> / <strong>442</strong><br>
 <img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e"></p>
 
-<p align="center">Completed &nbsp; <code>100%</code> &nbsp; of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> / <code>18</code>.<br>
+<p align="center">Learning Paths Completed: &nbsp; <strong>100%</strong> &nbsp; -  &nbsp; <strong>18</strong> / <strong>18</strong><br>
 Completed <code>2</code> seasonal CTF´s.<br>
 
 - 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a><br> 
