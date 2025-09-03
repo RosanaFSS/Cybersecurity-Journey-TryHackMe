@@ -6,7 +6,7 @@ Challenges Completed: &nbsp; <strong>82%</strong> &nbsp; -  &nbsp; <strong>362</
 <img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e"></p>
 
 <p align="center">Learning Paths Completed: &nbsp; <strong>100%</strong> &nbsp; -  &nbsp; <strong>18</strong> / <strong>18</strong><br>
-Completed <code>2</code> seasonal CTF´s.<br>
+Seasonal CTF´s Completed:  &nbsp; <strong>2</strong> <br>
 
 - 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a><br> 
 - 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf">Offensive Pentesting</a><br>
