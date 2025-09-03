@@ -9,28 +9,28 @@ Challenges Completed: &nbsp; <strong>82%</strong> &nbsp; -  &nbsp; <strong>362</
 Seasonal CTF´s Completed:  &nbsp; <strong>2</strong><br><br>
 Here’s a timeline of my achievements:<br>
 
-|Date|Certificate|
-|------------|--------------------------------------------------|
-|2025, Aug | <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a>|
-- 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf">Offensive Pentesting</a><br>
-- 2025, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WIMDSMXDFF.pdf">CTF . Honeynet Collapse</a><br> 
-- 2025, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf">Advanced Endpoint Investigations</a><br> 
-- 2025, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LSCBWVPOX6.pdf">Attacking and Defending AWS</a><br> 
-- 2025, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PUCW503MLQ.pdf">Defending Azure</a><br>
-- 2024, Dec &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXU8Y5OMJ1.pdf">CTF . Advent of Cyber 2024</a><br> 
-- 2024, Dec &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf">Web Application Pentesting</a><br>
-- 2024, Nov &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf">CompTIA Pentest+</a><br>
-- 2024, Nov &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf">DevSecOps</a><br>
-- 2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br>
-- 2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a><br>
-- 2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br>
-- 2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a><br>
-- 2024, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a><br>
-- 2024, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br>
-- 2024, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a><br>
-- 2024, Jun &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf">SOC Level 1</a><br>
-- 2024, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf">Pre Security</a><br>
-- 2024, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf">Introduction to Cyber Security</a><br>
+|Date         |Certificate                                                                                                                  |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------|
+|2025, Aug    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a>                       |
+|2025, Aug    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf">Offensive Pentesting</a>              |
+|2025, Jul    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WIMDSMXDFF.pdf">CTF . Honeynet Collapse</a>           |
+|2025, Jul    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf">Advanced Endpoint Investigations</a>  |
+|2025, May    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LSCBWVPOX6.pdf">Attacking and Defending AWS</a>       |
+|2025, May    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PUCW503MLQ.pdf">Defending Azure</a>                   |
+|2024, Dec    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXU8Y5OMJ1.pdf">CTF . Advent of Cyber 2024</a>        |
+|2024, Dec &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf">Web Application Pentesting</a><br>
+|2024, Nov &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf">CompTIA Pentest+</a><br>
+|2024, Nov &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf">DevSecOps</a><br>
+|2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br>
+|2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a><br>
+|2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br>
+|2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a><br>
+|2024, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a><br>
+|2024, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br>
+|2024, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a><br>
+|2024, Jun &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf">SOC Level 1</a><br>
+|2024, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf">Pre Security</a><br>
+|2024, May &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf">Introduction to Cyber Security</a><br>
 
 
 
