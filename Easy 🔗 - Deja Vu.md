@@ -77,6 +77,7 @@ Open up Burp Suite with your browser of choice (I like the integrated Chromium) 
 <code>CVE-2021-22204</code>
 
 <br>
+<br>
 
 <img width="1121" height="367" alt="image" src="https://github.com/user-attachments/assets/3b7ca6f6-ad5d-4ec1-b0e3-b6aaf23cb588" />
 
