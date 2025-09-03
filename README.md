@@ -1,9 +1,9 @@
 <h1 align="center"> TryHackMe</h1>
-<p align="center">Jul 7, 2025. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br>
+<p align="center">2025, September 3. Clicking <a href="https://tryhackme.com/p/Rosana">here</a> you can access my THM profile.<br>
 My accomplishments in my THM account, active since December 2023.</p>
 
-<p align="center">Completed <code>13</code> out of <code>15</code> learning paths available<br>
-and <code>298</code> out of <code>430</code> challenges available.<br><br>
+<p align="center">Completed <code>15</code> out of <code>15</code> learning paths available.<br>
+and <code>362</code> out of <code>442</code> challenges available.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"></p>
 
