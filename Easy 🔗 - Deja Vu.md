@@ -382,7 +382,7 @@ From there, you should have a root shell. As a warning, your HOME variable is st
 <p><em>Answer the questions below</em></p>
 
 <p>5.1. Stabilise your reverse shell to ensure that you can run interactive binaries<br>
-<code>No answer needed/code></p>
+<code>No answer needed</code></p>
 
 <p>5.2. WFind the SUID binary<br>
 <code>No answer needed</code></p>
@@ -392,23 +392,12 @@ Try running the same command as the binary yourself - systemctl status dogpics -
 <code>No answer needed</code></p>
 
 <p>5.4. Create your fake systemctl, ensure it's correctly added to PATH, and escalate your privileges.<br>
-<code>No answer needed</code>
+<code>No answer needed</code></p>
 
 <p>5.5. Retrieve the root flag from /root/root.txt. What is the root flag?<br>
-<code>dejavu{5ad931368bdc46f856febe4834ace627}</code>
+<code>dejavu{5ad931368bdc46f856febe4834ace627}</code></p>
 
 <br>
-<br>
-
-```bash
-msf6 exploit(unix/fileformat/exiftool_djvu_ant_perl_injection) > run
-[+] msf.jpg stored at /root/.msf4/local/msf.jpg
-```
-
-<img width="1120" height="287" alt="image" src="https://github.com/user-attachments/assets/02b6e807-1cfa-48a7-bede-5b1672050e13" />
-
-<img width="1121" height="219" alt="image" src="https://github.com/user-attachments/assets/3377dc3e-754c-4ab6-9fcf-3e30b236c370" />
-
 <br>
 <h2 align="center">Completed</h2>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/34fd9940-751c-4c57-916b-66e2b1c6ac87"><br>
