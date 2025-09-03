@@ -29,6 +29,61 @@ Completed <code>2</code> seasonal CTF´s.<br>
 </p>
 
 
+
+
+<h1 align="center">🚀 TryHackMe Progress Tracker</h1>
+
+<p align="center">
+  <em>Last updated: September 3, 2025</em><br>
+  <img width="200px" src="https://github.com/user-attachments/assets/b40ce0a8-78cb-4b3a-94b8-b785f878f3be"><br><br>
+  Active since <strong>December 2023</strong><br>
+  🔗 <a href="https://tryhackme.com/p/Rosana">View My TryHackMe Profile</a><br><br>
+  <strong>Challenges Completed:</strong> <code>362</code> / <code>442</code> (<code>82%</code>)<br><br>
+  <img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e">
+</p>
+
+---
+
+### 📚 Learning Paths
+
+✅ Completed: <code>18</code> / <code>18</code> (100%)  
+🎯 Seasonal CTFs: <code>2</code>
+
+---
+
+### 🏅 Certifications & Achievements
+
+Here’s a timeline of my completed certifications and CTFs:
+
+| Date       | Title                                           | Certificate |
+|------------|--------------------------------------------------|-------------|
+| 2025-08    | Red Teaming                                      | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf) |
+| 2025-08    | Offensive Pentesting                             | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf) |
+| 2025-07    | CTF: Honeynet Collapse                           | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WIMDSMXDFF.pdf) |
+| 2025-07    | Advanced Endpoint Investigations                 | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf) |
+| 2025-05    | Attacking and Defending AWS                      | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LSCBWVPOX6.pdf) |
+| 2025-05    | Defending Azure                                  | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PUCW503MLQ.pdf) |
+| 2024-12    | CTF: Advent of Cyber 2024                        | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXU8Y5OMJ1.pdf) |
+| 2024-12    | Web Application Pentesting                       | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf) |
+| 2024-11    | CompTIA Pentest+                                 | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf) |
+| 2024-11    | DevSecOps                                        | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf) |
+| 2024-10    | Cyber Security 101                               | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf) |
+| 2024-10    | Jr Penetration Tester                            | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf) |
+| 2024-09    | Web Fundamentals                                 | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf) |
+| 2024-09    | Security Engineer                                | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf) |
+| 2024-08    | Complete Beginner                                | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf) |
+| 2024-07    | Cyber Defense                                    | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf) |
+| 2024-07    | SOC Level 2                                      | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf) |
+| 2024-06    | SOC Level 1                                      | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf) |
+| 2024-05    | Pre Security                                     | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf) |
+| 2024-05    | Introduction to Cyber Security                   | [View PDF](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf) |
+
+---
+
+Let me know if you’d like to add badges, GitHub stats, or a short bio to make it even more personal. You’ve built something impressive—let’s make sure it looks the part!
+
+
+
 <br>
 
 <h2 align="center"> $$\textcolor{white}{\textnormal{My Journey step-by-step}}$$</h2>
