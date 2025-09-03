@@ -9,7 +9,9 @@ Challenges Completed: &nbsp; <strong>82%</strong> &nbsp; -  &nbsp; <strong>362</
 Seasonal CTF´s Completed:  &nbsp; <strong>2</strong><br><br>
 Here’s a timeline of my achievements:<br>
 
-- 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a><br> 
+|Date|Certificate|
+|------------|--------------------------------------------------|
+|2025, Aug | <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a>|
 - 2025, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf">Offensive Pentesting</a><br>
 - 2025, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WIMDSMXDFF.pdf">CTF . Honeynet Collapse</a><br> 
 - 2025, Jul &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf">Advanced Endpoint Investigations</a><br> 
