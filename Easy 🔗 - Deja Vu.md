@@ -118,7 +118,7 @@ Exiftool follows a similar story here. In early 2021, an exploit was discovered 
 +	234	$tok =~ s/\\(.)/$esc{$1}||'\\'.$1/egs;
 ```
 
-<h3>Understanding the code, and the danger</h3>h3>
+<h3>Understanding the code, and the danger</h3>
 <p>The dangerous function here is the call to eval on line 233. Eval is used to run Perl code that's contained in a variable, and the variable comes from EXIF data in our image. Control over code that's executed is our goal, so it currently seems like the only barrier between us and arbitrary code execution is the filter found on line 231.</p>
 
 ```bash
