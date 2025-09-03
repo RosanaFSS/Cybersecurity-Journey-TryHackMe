@@ -2,9 +2,7 @@
 <p align="center"> <em>Last updated : 2025, September 3</em>em><br>
 <img width="250px" src="https://github.com/user-attachments/assets/d562fc18-2841-47a5-a0b3-429e7e71418f"><br><br>
 Active since <strong>2023</strong>, December.<br><a href="https://tryhackme.com/p/Rosana">View my TryHackMe profile here</a>.<br><br>
-Challenges Completed: &nbsp; <strong><code>362</code></strong> / <strong><code>442</code></strong> &nbsp; [<strong><code>82%</code></strong>]<br>
-  
-Completed &nbsp; <code>82%</code> &nbsp; of the available challenges &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> / <code>442</code>.<br><br>
+Challenges Completed: &nbsp; <strong>362</strong> / <strong>442</strong> &nbsp; [<strong>82%</strong>]<br>
 <img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e"></p>
 
 <p align="center">Completed &nbsp; <code>100%</code> &nbsp; of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> / <code>18</code>.<br>
