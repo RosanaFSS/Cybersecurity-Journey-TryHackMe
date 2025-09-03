@@ -3,8 +3,8 @@
 My accomplishments in my THM account, active since December 2023.</p>
 
 <p align="center">Completed <code>18</code> out of <code>18</code> learning paths available.<br>
-and <code>362</code> out of <code>442</code> challenges available.<br><br>
-<img width="1000px" src="https://github.com/user-attachments/assets/b1ebf4f3-e8ba-40ad-aa02-b7c30b9dff83"><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/f9883071-ca35-45ad-9739-3211a5fd0b0f"><br><br>
+Completed <code>362</code> out of <code>442</code> challenges available = 82%.<br><br>
 <img width="1000px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"></p>
 
 <br>
