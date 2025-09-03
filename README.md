@@ -3,7 +3,7 @@
 I´m an active user since December 2023.</p>
 
 <p align="center">Completed &nbsp; <code>82%</code> &nbsp; of the available challenges &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> &nbsp; / &nbsp; <code>442</code>.<br>
-<img width="500px" src="https://github.com/user-attachments/assets/0638785d-fdc3-4c27-861f-bdd6bece8f04"></p>
+<img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e"></p>
 
 <p align="center">Completed &nbsp; <code>100%</code> &nbsp; of the available learning paths  &nbsp;&nbsp; : &nbsp;&nbsp; <code>18</code> &nbsp; / &nbsp; <code>18</code>.
 
