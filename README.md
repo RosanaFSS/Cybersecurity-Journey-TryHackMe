@@ -9,7 +9,7 @@
 - 2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br>
 - 2024, Oct &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a><br>
 - 2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br>
-- 2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a><br>
+- 2024, Sep &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a><br>
 - 2024, Aug &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a><br>
 - 2024, Jul &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br>
 - 2024, Jul &nbsp;&nbsp; . &nbsp;&nbsp; <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a><br>
