@@ -1,5 +1,5 @@
 <h1 align="center"> TryHackMe</h1>
-<p align="center">updated in 2025, September 3<br><img width="200px" src="https://github.com/user-attachments/assets/b40ce0a8-78cb-4b3a-94b8-b785f878f3be"><br><br>I´m active since December 2023. Click <a href="https://tryhackme.com/p/Rosana">here</a> to access my profile.<br><br>
+<p align="center">Last updated : 2025, September 3<br><img width="200px" src="https://github.com/user-attachments/assets/b40ce0a8-78cb-4b3a-94b8-b785f878f3be"><br><br>I´m active since December 2023. Click <a href="https://tryhackme.com/p/Rosana">here</a> to access my profile.<br><br>
 Completed &nbsp; <code>82%</code> &nbsp; of the available challenges &nbsp;&nbsp; : &nbsp;&nbsp; <code>362</code> / <code>442</code>.<br><br>
 <img width="700px" src="https://github.com/user-attachments/assets/a4541d28-0df2-47db-81fb-0105a99f6a9e"></p>
 
