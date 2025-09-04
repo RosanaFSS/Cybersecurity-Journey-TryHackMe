@@ -34,7 +34,7 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 - 69[.]197[.]185[.]26<br>
 - 85[.]188[.]1[.]133</p>
 
-<h6 align="center"><img width="540px" src="https://github.com/user-attachments/assets/ca522511-4aec-4701-8508-43c240dec86c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="550px" src="https://github.com/user-attachments/assets/ca522511-4aec-4701-8508-43c240dec86c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the question below</em><br>
 <ol type="1.">
@@ -53,7 +53,7 @@ For SOC analysts, DNS is one of the richest early-warning datasets. Suspicious d
 <h4>Core DNS Records for Triage</h4>
 <p>When you enrich a domain, these are the records that matter most:<br>
 
-- <strong>A / AAAA Records</strong: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a> and follow with pasting the IP into VirusTotal for a quick read.<br><br>
+- <strong>A / AAAA Records</strong>: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a> and follow with pasting the IP into VirusTotal for a quick read.<br><br>
 - <strong>NS Records</strong>: Identify the nameservers controlling the domain. Unusual or recently changed NS entries can mark fresh set up. As L1 analysts, we should note the provider name rather than chasing low-level details.
 MX Records: Define which servers handle email. Attackers may configure MX records to deliver phishing campaigns directly. If the alert relates to web browsing, just record whether MX exists.<br><br>
 - <strong>TXT Records</strong>: Store SPF and DKIM rules or verification tags. Poorly configured or absent SPF can increase risk in mail cases.<br><br>
