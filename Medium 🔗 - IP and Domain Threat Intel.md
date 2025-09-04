@@ -285,12 +285,14 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
 <p>Analysts need to understand how to turn intelligence into safe action. The risk here is missing an attack and breaking legitimate business applications through overbroad controls. We avoid that outcome by being precise and planning for expiry and review.</p>
 
 <h3>Safe Integration Patterns</h3>
+<p>
+
 - Prefer hostnames when domains are stable: IPs change frequently on CDNs or anycast platforms. Use DNS response policy zones, proxy categories, or SNI filtering.<br>
 - Use narrow IPs for single-purpose VPS: When an address is clearly dedicated to staging or command and control, a /32 block is effective with minimal blast radius.<br>
-- Set expiry on blocks: Infrastructure is reused and recycled. A seven-day or fourteen-day expiry, with auto-renew on re-observation, prevents permanent collateral damage.<br>Document evidence in SOAR: Include screenshots, RDAP events, certificate excerpts, and reasoning.<br><br>
+- Set expiry on blocks: Infrastructure is reused and recycled. A seven-day or fourteen-day expiry, with auto-renew on re-observation, prevents permanent collateral damage.<br>Document evidence in SOAR: Include screenshots, RDAP events, certificate excerpts, and reasoning.</p>
 
-<h3>Georeferencing Cautions</h3>
-<p></p>Country blocks feel attractive; however, they often break real workflows. Colleagues travel, third-party services use overseas PoPs, and some vendors terminate TLS in unexpected regions. We treat geolocation as enrichment to raise priority, not as a primary control, unless the risk decision has been reviewed with the business and tested.</p>
+<h3>Geofencing Cautions</h3>
+<p>Country blocks feel attractive; however, they often break real workflows. Colleagues travel, third-party services use overseas PoPs, and some vendors terminate TLS in unexpected regions. We treat geolocation as enrichment to raise priority, not as a primary control, unless the risk decision has been reviewed with the business and tested.</p>
 
 <h3>Cloud and Large Provider Pitfalls</h3>
 <p>Do not add entire CDN IP ranges like Amazon or Microsoft to a deny list. These providers reuse IPs across many customers and services. Blocking a large cloud block will eventually impact business systems. If a malicious hostname is served from a cloud edge network, take action at the domain or path level and consider vendor abuse processes.</p>
