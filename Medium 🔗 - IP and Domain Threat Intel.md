@@ -331,8 +331,8 @@ Use the skills and tools covered in the room to enrich the three indicators and 
 </ol></p>
 
 
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/3bc1f3d4-44ce-4bc6-b224-fc2a0fe26287"><br><a href="    ">ipinfo.io</a><br><br>
-                   <img width="700px" src="https://github.com/user-attachments/assets/74746a65-ba33-4a2b-b7a8-3429294de361"><br>code>nslookup satantagift.shop</code<br><br>
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/3bc1f3d4-44ce-4bc6-b224-fc2a0fe26287"><br>ipinfo.io<br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/74746a65-ba33-4a2b-b7a8-3429294de361"><br><code>nslookup satantagift.shop</code><br><br>
                    <img width="700px" src="https://github.com/user-attachments/assets/f16a20c0-49bf-46ab-8410-70a2e6963b30"><br><code>whois 52.92.1.132</code><br><br>
                    <img width="700px" src="https://github.com/user-attachments/assets/fae69d78-412b-4f58-8246-64cbd5a1d705"><br>Whois . DNS Records<br><br>
                    <img width="700px" src="https://github.com/user-attachments/assets/b92f9d0a-e17a-476f-a01e-d214711e75b9"><br>Whois</h6>
