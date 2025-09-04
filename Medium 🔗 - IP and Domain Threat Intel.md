@@ -132,9 +132,9 @@ Some heuristic examples of ASN classification include:<br>
 - <strong>AS16509 - Amazon AWS</strong>: This would cover a massive cloud space, and attackers would often abuse it for short-lived servers. Blocking the entire ASN would be catastrophic, so we scope to the FQDN or narrow the CIDR.<br>
 - <strong>AS124888 - Vodafone</strong>: This covers an ISP. Malicious activity would likely be from a compromised customer device.</p>
 
-<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/fb97c2ba-3a5d-46a9-894e-e3cf18335aac"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/fb97c2ba-3a5d-46a9-894e-e3cf18335aac"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<h3>Geolocation: Value and Limitations</h3>h3>
+<h3>Geolocation: Value and Limitations</h3>
 <p>GeoIP is widely used but often misunderstood. Tools like <a href="https://ipinfo.io/">ipinfo.io</a> and <a href="https://iplocation.net/">iplocation.net</a> provide approximate country and city. However, it is worth observing that:<br>
 
 - <strong>Country mismatches</strong> are common. CDN and cloud providers may register ranges in one country but host edges globally.<br>
@@ -143,7 +143,7 @@ Some heuristic examples of ASN classification include:<br>
 
 <strong>Best practice</strong>: Record the country reported by at least two sources and note discrepancies. Treat this as a hint, not a fact.</p>
 
-<h3>SOC Analyst Workflow</h3>h>
+<h3>SOC Analyst Workflow</h3
 <p>At this stage, our workflow in the SOC could resemble the following, though it may vary depending on established organisational processes and practices.<br>
 
 - <strong>Start with RDAP</strong>: Confirm netrange, org, ASN, and abuse contacts.<br>
