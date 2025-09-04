@@ -46,48 +46,49 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 <p>Network-based threat intelligence is an essential aspect of modern cyber security defence. Examining IP addresses and domains from a threat intelligence perspective involves investigating beyond network connectivity to understand the malicious intent and capability behind the digital assets in a way that supports quick, safe triage for SOC L1 analysts.</p>
 
 <h3>Why DNS Metters in SOC</h3>
-<p>Every time a user clicks a link or a system resolves a hostname, the Domain Name System (DNS) springs into action. DNS is the mechanism that converts human-friendly names like www.tryhackme.com into IP addresses that machines understand. Because of its central role in making the internet usable, DNS is also a favourite playground for attackers.<br>
+<p>Every time a user clicks a link or a system resolves a hostname, the Domain Name System (DNS) springs into action. DNS is the mechanism that converts human-friendly names like <a href="https://www.tryhackme.com/">www.tryhackme.com</a> into IP addresses that machines understand. Because of its central role in making the internet usable, DNS is also a favourite playground for attackers.<br>
 
 For SOC analysts, DNS is one of the richest early-warning datasets. Suspicious domains will appear in alerts long before a payload hash is known. Adversaries rapidly register, configure, and abandon domains to stay ahead of defences. Our job as analysts is to turn a raw domain into a contextual artefact: who owns it, what IPs it resolves to, how often it changes, and whether it behaves more like a normal content delivery network (CDN) or a throwaway setup.</p>
 
 <h4>Core DNS Records for Triage</h4>
 <p>When you enrich a domain, these are the records that matter most:<br>
 
-- <strong>A / AAAA Records</strong: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from nslookup.io or dnschecker.org and follow with pasting the IP into VirusTotal for a quick read.<br>
+- <strong>A / AAAA Records</strong: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a> and follow with pasting the IP into VirusTotal for a quick read.<br><br>
 - <strong>NS Records</strong>: Identify the nameservers controlling the domain. Unusual or recently changed NS entries can mark fresh set up. As L1 analysts, we should note the provider name rather than chasing low-level details.
-MX Records: Define which servers handle email. Attackers may configure MX records to deliver phishing campaigns directly. If the alert relates to web browsing, just record whether MX exists.<br>
-- <strong>TXT Records</strong>: Store SPF and DKIM rules or verification tags. Poorly configured or absent SPF can increase risk in mail cases.<br>
-- <strong>SOA Record</strong>: Points to the zone's primary authority and often includes contact information. It will be worth noting the primary host and serial, which will support a basic ownership picture.<br>
+MX Records: Define which servers handle email. Attackers may configure MX records to deliver phishing campaigns directly. If the alert relates to web browsing, just record whether MX exists.<br><br>
+- <strong>TXT Records</strong>: Store SPF and DKIM rules or verification tags. Poorly configured or absent SPF can increase risk in mail cases.<br><br>
+- <strong>SOA Record</strong>: Points to the zone's primary authority and often includes contact information. It will be worth noting the primary host and serial, which will support a basic ownership picture.<br><br>
 - <strong>TTL (Time To Live)</strong>: Tells resolvers how long to cache answers. Very low TTLs, seconds or minutes, can point to frequent changes, and should be treated as clues.</p>
 
+<h6 align="center"><img width="250px" src="https://github.com/user-attachments/assets/65c02c03-4e9c-4424-ae49-a8a98fdd06b3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
 <h3>SOC Use Cases</h3>
-<p>Based on our scenario, the SIEM raises an alert pointing to the domain advanced-ip-sccanner[.]com. As L1 analysts, we need to enrich this artefact by gathering the above DNS records using tools such as nslookup.io or dnschecker.org</p>
+<p>Based on our scenario, the SIEM raises an alert pointing to the domain advanced-ip-sccanner[.]com. As L1 analysts, we need to enrich this artefact by gathering the above DNS records using tools such as <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a>.</p>
 
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/fa3e6a14-8e53-4858-a168-90d36769288"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Attack Techniques Using DNS</h3>
 <p>
     
-- <strong>Fast Flux Hosting)</strong>: Adversaries rotate many IPs quickly with short cache times to avoid simple blocks. We need to record and escalate when we identify a domain that resolves to changing IPs within a short period and across different providers.<br>
-- <strong>CDN Abuse)</strong>: Legitimate CDNs like Cloudflare or Akamai change IPs too, but done within their ASN ecosystem. If the A record points to a major CDN and other values are normal, take note and carry reputation and ownership checks.<br>
-- <strong>Typosquatting)</strong>: Domains like paypa1[.]com or micros0ft[.]net trick users visually. If a name looks like a brand clone, treat it as high risk and escalate it.<br>
+- <strong>Fast Flux Hosting)</strong>: Adversaries rotate many IPs quickly with short cache times to avoid simple blocks. We need to record and escalate when we identify a domain that resolves to changing IPs within a short period and across different providers.<br><br>
+- <strong>CDN Abuse)</strong>: Legitimate CDNs like Cloudflare or Akamai change IPs too, but done within their ASN ecosystem. If the A record points to a major CDN and other values are normal, take note and carry reputation and ownership checks.<br><br>
+- <strong>Typosquatting)</strong>: Domains like paypa1[.]com or micros0ft[.]net trick users visually. If a name looks like a brand clone, treat it as high risk and escalate it.<br><br>
 - <strong>IDN (Internationalised Domain Names)</strong>: Attackers exploit Unicode, creating look-alike domains. Decode Punycode, for example xn--ppaypal-3ya[.]com, and compare to known brands using simple online decoder.</p>
 
 <h3>SOC Analyst Workflow</h3>
 <p>At this stage, our workflow in the SOC could look as follows. Be mindful that this would vary depending on established organisational processes and practices.<br>
 
-- <strong>Snapshot Current DNS</strong>: Capture A, NS, MX, TXT, SOA, and TTL values for the domain in question using a single page view and simple.<br>
-- <strong>Basic Ownership Check</strong>: Use WHOIS to note registrat, creation date and contact pattern, which supports a light ownership picture of the ticket.<br>
-- <strong>Interpret Patterns</strong>: Assess whether the DNS behaviour aligns with benign CDN activity or indicates malicious throwaway domain, noting down the details of the changing IPs.<br>
-- <strong>Log Evidence</strong>: Save screenshots or JSON extracts DNS and reputation pages to the case file for audit and escalation.<br>
+- <strong>Snapshot Current DNS</strong>: Capture A, NS, MX, TXT, SOA, and TTL values for the domain in question using a single page view and simple.<br><br>
+- <strong>Basic Ownership Check</strong>: Use WHOIS to note registrat, creation date and contact pattern, which supports a light ownership picture of the ticket.<br><br>
+- <strong>Interpret Patterns</strong>: Assess whether the DNS behaviour aligns with benign CDN activity or indicates malicious throwaway domain, noting down the details of the changing IPs.<br><br>
+- <strong>Log Evidence</strong>: Save screenshots or JSON extracts DNS and reputation pages to the case file for audit and escalation.<br><br>
 - <strong>Recommend Action</strong>: Based on findings, advise blocking if high risk, monitor if suspicious but inconclusive, or close if determined benign.</p>
 
-<p><em>Answer the question below</em><br>
+<p><em>Answer the questions below</em><br>
 <ol type="1.">
     <li>From the downloadable report, what are the IP addresses for the A Record associated with our flagged domain, advanced-ip-sccanner[.]com? Answer: IP-1, IP-2.&nbsp;&nbsp;&nbsp;<code>172.67.189.143,104.21.9.202</li></code></li>
     <li>What nameserver addresses are associated with the IP address? Defang the addresses.&nbsp;&nbsp;&nbsp;<code>jaziel[.]ns[.]cloudflare[.]com, summer[.]ns[.]cloudflare[.]com</li></code></li>
 </ol></p>
-
 
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/501ebbc0-b1da-461c-b1bc-c1f3e2df93d6"><br>Task File<br><br>
                    <img width="500px" src="https://github.com/user-attachments/assets/5e516942-5db5-4458-be8b-30309164474a"><br>Task File</h6>
@@ -95,34 +96,115 @@ MX Records: Define which servers handle email. Attackers may configure MX record
 
 <br>
 <h2>Task 3 . IP Enrichment: Geolocation and ASN</h2>
+<h3>IP Enrichment Within the SOC</h3>
+<p></p>Most SIEM or EDR alerts contain at least one IP address. An IP address is ambiguous by itself: it could belong to a compromised router in a home office, a shared CDN edge, or a cloud service used by thousands of tenants. Without enrichment, we risk overreacting (blocking legitimate infrastructure) or underreacting (ignoring a real command-and-control server).<br>
+
+<strong>Enrichment</strong> is adding ownership, ASN (Autonomous System Number), geolocation, and service context to an IP so that our decision is evidence-driven. SOC Level 1 analysts must perform this consistently, since IPs are the most common indicators in alert queues.</p>
+
+<h3>The Role of RDAP</h3>
+<p></p>The <strong>Registration Data Access Protocol (RDAP)</strong> is the authoritative source for IP ownership. Unlike commercial GeoIP services or provider marketing pages, RDAP data is maintained by Regional Internet Registries (RIRs) such as RIPE NCC, ARIN, and APNIC. It tells us precisely who has been provided with the netblock.<br><br>
+
+From RDAP, we obtain:<br>
+
+- NetRange: The range of addresses delegated.<br>
+- Organisation: The registered holder (e.g., Amazon, Vodafone, TryHackMe).<br>
+- Remarks: Often include whether the block is used for hosting, broadband, or mobile.<br>
+- Abuse Contact: The official mailbox for incident reporting.<br>
+
+In our scenario, we can retrieve RDAP details on the IP address 64[.]31[.]63[.]194.</p>
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/82ec356b-de43-46ab-be4f-b0756a83414a"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<p>If our alert points to suspicious traffic, we should pivot to the domain or certificate to narrow the scope.<br>
+
+We should also preserve audit evidence of this data in reliable formats such as raw RDAP JSON, preventing reliance on potentially outdated secondary sources.</p>
+
+<h3>Autonomous Systems and Heuristics</h3>
+<p>An Autonomous System (AS) is a collection of IP prefixes under a single organisation’s control. Each AS is assigned a unique 16 or 32-bit number (ASN), only required for external communications. Looking at the ASN helps analysts assess the likely role of an IP.<br>
+
+- <strong>Hosting ASNs</strong>: Many small netblocks, often with diverse tenants. Suspicious domains are frequently hosted here.<br>
+- <strong>Residential ISPs</strong>: These have huge ranges covering millions of users. Alerts on these may indicate compromised home routers or consumer devices.<br>
+- <strong>Cloud/CDN ASNs</strong>: Global anycast, dozens of prefixes, shared edges. Blocking whole ranges here causes collateral damage.<br><br>
+
+Some heuristic examples of ASN classification include:<br>
+
+- <strong>AS32934 - Facebook/Meta</strong>: Traffic from here is based on the social media infrastructure. Malicious use may likely indicate an account issue, and not malicious hosting.<br>
+- <strong>AS16509 - Amazon AWS</strong>: This would cover a massive cloud space, and attackers would often abuse it for short-lived servers. Blocking the entire ASN would be catastrophic, so we scope to the FQDN or narrow the CIDR.<br>
+- <strong>AS124888 - Vodafone</strong>: This covers an ISP. Malicious activity would likely be from a compromised customer device.</p>
+
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/fb97c2ba-3a5d-46a9-894e-e3cf18335aac"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<h3>Geolocation: Value and Limitations</h3>h3>
+<p>GeoIP is widely used but often misunderstood. Tools like <a href="https://ipinfo.io/">ipinfo.io</a> and <a href="https://iplocation.net/">iplocation.net</a> provide approximate country and city. However, it is worth observing that:<br>
+
+- <strong>Country mismatches</strong> are common. CDN and cloud providers may register ranges in one country but host edges globally.<br>
+- <strong>City-level accuracy</strong> is unreliable. SOC analysts should never justify a block based on a city.<br>
+- <strong>Jurisdiction</strong> matters in legal escalations: legal teams may pursue takedown requests via the abuse contact if a host is located in a cooperative country.<br><br>
+
+<strong>Best practice</strong>: Record the country reported by at least two sources and note discrepancies. Treat this as a hint, not a fact.</p>
+
+<h3>SOC Analyst Workflow</h3>h>
+<p>At this stage, our workflow in the SOC could resemble the following, though it may vary depending on established organisational processes and practices.<br>
+
+- <strong>Start with RDAP</strong>: Confirm netrange, org, ASN, and abuse contacts.<br>
+- <strong>Add ASN Context</strong>: Check bgpview.io or ipinfo.io for ASN details and role.<br>
+- <strong>Check Geolocation</strong>: Capture country from at least two sources. Record mismatches.<br>
+- <strong>Look for rDNS Patterns</strong>: Reverse DNS can hint at hosting type (e.g., *[.]btcentralplus[.]com = UK broadband). Do not base decisions solely on rDNS.<br>
+- <strong>Consult Internal Logs</strong>: Has this IP appeared in the last 30 days? If yes, in what context?<br>
+- <strong>Classify Role</strong>: Hosting, residential, CDN, or cloud. Record reasoning.<br>
+- <strong>Plan Outreach</strong>: If confirmed malicious and in a cooperative ASN, prepare a report for the abuse contact.</p>
 
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
-    <li>Open client.rdap.org and identify when the 64[.]31[.]63[.]194 IP was logged for registration. (Answer in UTC: MM/DD/YY, H:MM:SS AM/PM)&nbsp;&nbsp;&nbsp;<code>12/27/2010, 3:51:03 PM</code></li>
-    <li>OWhat roles are assigned to the entity Entity NOC2791-ARIN associated with the IP address 64[.]31[.]63[.]194?&nbsp;&nbsp;&nbsp;<code>administrative,technical</code></li>
+    <li>Open <a href="https://client.rdap.org/">client.rdap.org</a> and identify when the 64[.]31[.]63[.]194 IP was logged for registration. (Answer in UTC: MM/DD/YY, H:MM:SS AM/PM)&nbsp;&nbsp;&nbsp;<code>12/27/2010, 3:51:03 PM</code></li>
+    <li>What roles are assigned to the entity Entity NOC2791-ARIN associated with the IP address 64[.]31[.]63[.]194?&nbsp;&nbsp;&nbsp;<code>administrative,technical</code></li>
     <li>What is the country's name for the IP 64[.]31[.]63[.]194? &nbsp;&nbsp;&nbsp;<code>France</code></li>
     <li>Can you identify the Autonomous System linked with the IP 64[.]31[.]63[.]194?&nbsp;&nbsp;&nbsp;<code>AS136258</code></li>
 </ol></p>
 
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/7d98e445-46d9-4828-8545-afde505eddaa"><br>RDAP.org<br><br>
-                   <img width="700px" src="https://github.com/user-attachments/assets/d5615375-b6af-45ec-9aaf-126d04c59cb5"><br>RDAP.org<br><br>
-                   <img width="700px" src="https://github.com/user-attachments/assets/a42618cf-2faa-41be-9a7e-f2e0c447f070"><br>iplocation.net<br><br>
-                   <img width="700px" src="https://github.com/user-attachments/assets/2984a4ee-ed1a-44c8-a168-3d909cb43a56"><br>ipinfo.io</h6>
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/7d98e445-46d9-4828-8545-afde505eddaa"><br><a href="https://client.rdap.org/">client.rdap.org</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/d5615375-b6af-45ec-9aaf-126d04c59cb5"><br><a href="https://client.rdap.org/">client.rdap.org</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/a42618cf-2faa-41be-9a7e-f2e0c447f070"><br> <a href="https://iplocation.net/">iplocation.net</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/2984a4ee-ed1a-44c8-a168-3d909cb43a56"><br><a href="https://ipinfo.io/">ipinfo.io</a></h6>
 
 <br>
 <h2>Task 4 . Service Exposure</h2>
 <h3>Services and Certificates</h3>
-
+<p>Looking at an IP or domain's location data also helps us understand its function. Exposed services provide information on the system's intent and potential blast radius if abused. For example, an IP with RDP exposed on port 3389 may be a target for a brute-force attack.</p>
 
 <h3>Shodan Reconnaissance</h3>
+<p>Shodan is a powerful reconnaissance tool for IP address analysis. By indexing internet-connected devices and services, Shodan provides detailed information about open ports, running services, and system configurations. Queries like org:example[.]com reveal all systems associated with specific organisations, while searches for specific software versions help identify vulnerable systems.<br>
 
+Let us look at a sample IP search associated with the IP address from our flagged list, 69[.]197[.]185[.]26.</p>
+
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/b7473b95-b329-475c-84f6-a885a4a4975e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<p>From our search, we can extract information on:<br>
+
+- <strong>Open Ports</strong>: This is the first fingerprint of exposure.<br>
+- <strong>Service Banners</strong>: These provide hints on server types and frameworks used. Additionally, software versions and cookies in RDP/HTTP banners can inform us about operator markers.</p>
 
 <h3>TLS Certificates as Infrastructure Clues</h3>
+<p>We can look at TLS certificate information using tools such as  <a href=https://crt.sh/">crt.sh</a> as a gold mine for enrichment. Certificate Transparency logs every publicly trusted certificate. The key fields to look out for include:<br>
 
+- <strong>Issuer</strong>: This field provides details on who signed the certificate. For example, Let's Encrypt is a common but neutral vendor. A self-signed certificate may be a sign of a hastily deployed system.<br>
+- <strong>Validity Period</strong>: Short-lived certificates of up to 90 days are normal for usage. Analysts must look for bursts of reissued certificates and investigate suspected phishing infrastructure.<br>
+- <strong>Subject Alternative Names</strong>: This provides details on the domains covered by the certificate.</p>
 
+<h4>Pivoting and Mapping</h4>
+<p>Tools like  <a href=https://search.censys.io/">Censys.io</a> allow analysts to pivot by finding siblings with the same certificate or using a subject fragment to find look-alike clusters. However, some of these features may require an account on the platform.<br>
+As analysts, we are to identify suspicious patterns. For example, a burst of issuance within a short period that maps to many domains and mixed hosting ASNs suggests automated kit use.</p>
 
-<h3>SOC Analyst Workflow</h3>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/c1142473-f2ce-4c61-9808-5a514429d0f"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
+<h3>SOC Analyst Workflow</h3>h3>
+<p></p>At this stage, our workflow in the SOC could resemble the following, though it may vary depending on established organisational processes and practices.<br>
+
+- <strong>Check Shodan/Censys banners</strong>: Identify exposed services and possible misconfigurations.
+- <strong>Review TLS certificates</strong>: Ensure to record issuer, SANs, and validity period.
+- <strong>Look for anomalies</strong>: Instances of multiple SANs, brand look-alikes or sudden bursts of issuance.
+- <strong>Pivot</strong>: Utilise the certificate or banner artefacts to uncover related infrastructure.
+- <strong>Assess blast radius</strong>:<br> - RDP/SSH on residential ASN → shows a likelihood of a compromised endpoint.<br> - TLS with many unrelated SANs on CDN ASN → shared infrastructure, avoid IP block.</p>
 
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
@@ -133,11 +215,9 @@ MX Records: Define which servers handle email. Attackers may configure MX record
 </ol></p>
 
 
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/d7cf2ddb-8603-4805-a622-2118ebef95d7"><br>shodan.io</h6>
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/920736b9-6fa3-41da-954e-4aafe76e0415"><br>search.censys.io</h6>
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/7ba0151e-9e96-4f25-a196-4e018535236e"><br>search.censys.io</h6>
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/d7cf2ddb-8603-4805-a622-2118ebef95d7"><br><a href="https://www.shodan.io/">shodan.io</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/920736b9-6fa3-41da-954e-4aafe76e0415"><br><a href="https://search.censys.io/">search.censys.io</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/7ba0151e-9e96-4f25-a196-4e018535236e"><br><a href="https://search.censys.io/">search.censys.io</a></h6>
 
 <br>
 <h2>Task 5 . Repuration Checks and Passive DNS</h2>
