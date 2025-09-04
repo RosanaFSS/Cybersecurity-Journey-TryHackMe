@@ -219,7 +219,7 @@ As analysts, we are to identify suspicious patterns. For example, a burst of iss
                    <img width="700px" src="https://github.com/user-attachments/assets/7ba0151e-9e96-4f25-a196-4e018535236e"><br><a href="https://search.censys.io/">search.censys.io</a></h6>
 
 <br>
-<h2>Task 5 . Repuration Checks and Passive DNS</h2>
+<h2>Task 5 . Reputation Checks and Passive DNS</h2>
 <h3>Why Reputation and History Matter</h3>
 <p>By this stage of enrichment, we have uncovered two major intelligence avenues: “Who owns this IP/domain?” and “What services does it expose?” However, we still need to identify more, especially regarding what the infrastructure has been doing over time.<br>
 
@@ -236,7 +236,7 @@ Another resource is Cisco Talos Intelligence, which provides frequently updated 
 <h4>Talos Dashboard</h4>
 <p>By default, the dashboard presents an overview of email traffic across numerous countries, with indicators of whether the emails are legitimate, spam, or malware. Any of these markers will produce more information associated with IP and hostname addresses, daily volume, and type.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/9ab883fc-4473-45ac-94fe-8c989716dcef"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="550px" src="https://github.com/user-attachments/assets/9ab883fc-4473-45ac-94fe-8c989716dcef"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Additionally, there are other features useful for enrichment:<br>
 
@@ -246,30 +246,30 @@ Another resource is Cisco Talos Intelligence, which provides frequently updated 
 <h4>IP2Proxy</h4>
 <p>IP2Proxy is another vital resource for labelling VPN, proxy, and Tor exit nodes. These are legitimate shared egress points, which can weaken attribution.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/35f43bbb-6730-4d42-897e-ffb94e5d75fb"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="550px" src="https://github.com/user-attachments/assets/35f43bbb-6730-4d42-897e-ffb94e5d75fb"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Passive DNS</h3>
 <p>Passive DNS adds time context in domain enrichment, providing a historical record of how domains resolved over time. The key signals to look at include:<br>
 
- First Seen/Last Seen: These tell us if a domain is new or long-lived.<br>
- Number of IPs in Time Window: A high churn over days would suggest flux or agile hosting.<br>
-- ASN Spread: If IPs belong to many unrelated ASNs, this should be marked as suspicious, while those limited to one ASN should be marked as stable or belonging to a CDN mapping.<br><br>
+- <strong>First Seen/Last Seen</strong>: These tell us if a domain is new or long-lived.<br>
+- <strong>Number of IPs in Time Window</strong>: A high churn over days would suggest flux or agile hosting.<br>
+- <strong>ASN Spread</strong>: If IPs belong to many unrelated ASNs, this should be marked as suspicious, while those limited to one ASN should be marked as stable or belonging to a CDN mapping.<br><br>
 
 Beyond using passive DNS to gather domain history, other valuable sources include:<br>
 
-- Certificate Transparency (CT) Logs: These logs show certificate issuance history. They are useful for detecting sudden bursts of domains registered under phishing themes.<br>
-- Wayback Machine: Reveals historical website content. A domain that hosted a blog for years but switched to a phishing kit last week is high-risk.</p>
+- <strong>Certificate Transparency (CT) Logs</strong>: These logs show certificate issuance history. They are useful for detecting sudden bursts of domains registered under phishing themes.<br>
+- <strong>Wayback Machine</strong>: Reveals historical website content. A domain that hosted a blog for years but switched to a phishing kit last week is high-risk.</p>
 
 <h3>SOC Analyst Workflow</h3>
 <p>In summary, our workflow in the SOC would look as follows. Be mindful that this would vary depending on established organisational processes and practices.<br>
 
-- Check VirusTotal: Record detection ratio, First Seen, Last Seen, and any community notes.<br>
-- Check Cisco Talos: Record reputation score and category, noting any changes in the last 30 days.<br>
-- Check IP2Proxy: Flag if VPN/proxy/Tor; adjust severity accordingly.<br>
-- Check Passive DNS: Record First Seen, Last Seen, number of IPs in the last 7 days, and ASN spread.<br>
-- Check CT Logs: Note certificate bursts, suspicious SANs.<br>
-- Cross-Reference with Wayback: Identify content shifts (benign → phishing).<br>
-- Decision: Block, monitor, or close, with expiry tied to observed activity.</p>
+- <strong>Check VirusTotal</strong>: Record detection ratio, First Seen, Last Seen, and any community notes.<br>
+- <strong>Check Cisco Talos</strong>: Record reputation score and category, noting any changes in the last 30 days.<br>
+- <strong>Check IP2Proxy</strong>: Flag if VPN/proxy/Tor; adjust severity accordingly.<br>
+- <strong>Check Passive DNS</strong>: Record First Seen, Last Seen, number of IPs in the last 7 days, and ASN spread.<br>
+- <strong>Check CT Logs</strong>: Note certificate bursts, suspicious SANs.<br>
+- <strong>Cross-Reference with Wayback</strong>: Identify content shifts (benign → phishing).<br>
+- <strong>Decision</strong>: Block, monitor, or close, with expiry tied to observed activity.</p>
 
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
@@ -277,31 +277,26 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
     <li>What organisation is identified on historical WHOIS lookups?&nbsp;&nbsp;&nbsp;<code>Ace Data Centers, Inc.</code></li>
 </ol></p>
 
-virustotal.com, Detection
-
-<img width="1904" height="594" alt="image" src="https://github.com/user-attachments/assets/d5396318-7544-4fa7-b221-072d30b50242" />
-
-virustotal.com, Relations
-
-<img width="1889" height="886" alt="image" src="https://github.com/user-attachments/assets/74746a65-ba33-4a2b-b7a8-3429294de361" />
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/d5396318-7544-4fa7-b221-072d30b50242"><br><a href="https://www.virustotal.com/">VirusTotal . Detection</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/74746a65-ba33-4a2b-b7a8-3429294de361"><br><a href="https://www.virustotal.com/">VirusTotal . Relations</a></h6>
 
 <br>
 <h2>Task 6 . Operation Integrtion</h2>
-<p>Analysts need to understand how to turn intelligence into safe action. The risk here is missing an attack and breaking legitimate business applications through overbroad controls. We avoid that outcome by being precise and planning for expiry and review.</p>p>
+<p>Analysts need to understand how to turn intelligence into safe action. The risk here is missing an attack and breaking legitimate business applications through overbroad controls. We avoid that outcome by being precise and planning for expiry and review.</p>
 
 <h3>Safe Integration Patterns</h3>
 - Prefer hostnames when domains are stable: IPs change frequently on CDNs or anycast platforms. Use DNS response policy zones, proxy categories, or SNI filtering.<br>
 - Use narrow IPs for single-purpose VPS: When an address is clearly dedicated to staging or command and control, a /32 block is effective with minimal blast radius.<br>
 - Set expiry on blocks: Infrastructure is reused and recycled. A seven-day or fourteen-day expiry, with auto-renew on re-observation, prevents permanent collateral damage.<br>Document evidence in SOAR: Include screenshots, RDAP events, certificate excerpts, and reasoning.<br><br>
 
-<h3>Geofencing Cautions</h3>h3>
-Country blocks feel attractive; however, they often break real workflows. Colleagues travel, third-party services use overseas PoPs, and some vendors terminate TLS in unexpected regions. We treat geolocation as enrichment to raise priority, not as a primary control, unless the risk decision has been reviewed with the business and tested.
+<h3>Georeferencing Cautions</h3>
+<p></p>Country blocks feel attractive; however, they often break real workflows. Colleagues travel, third-party services use overseas PoPs, and some vendors terminate TLS in unexpected regions. We treat geolocation as enrichment to raise priority, not as a primary control, unless the risk decision has been reviewed with the business and tested.</p>
 
 <h3>Cloud and Large Provider Pitfalls</h3>
-<p></p>Do not add entire CDN IP ranges like Amazon or Microsoft to a deny list. These providers reuse IPs across many customers and services. Blocking a large cloud block will eventually impact business systems. If a malicious hostname is served from a cloud edge network, take action at the domain or path level and consider vendor abuse processes.</p>
+<p>Do not add entire CDN IP ranges like Amazon or Microsoft to a deny list. These providers reuse IPs across many customers and services. Blocking a large cloud block will eventually impact business systems. If a malicious hostname is served from a cloud edge network, take action at the domain or path level and consider vendor abuse processes.</p>
 
-<h3>Legal and Provider Considerations</h3>h3>
-<p></p>Knowing the provider and country informs whether evidence preservation or rapid takedown is achievable. Some providers have strong abuse desks and comply quickly with requests. Others are slower or operate under legal frameworks that make urgent actions difficult. Record the RIR ownership and the abuse contacts gathered from RDAP for escalation paths.</p>
+<h3>Legal and Provider Considerations</h3>
+<p>Knowing the provider and country informs whether evidence preservation or rapid takedown is achievable. Some providers have strong abuse desks and comply quickly with requests. Others are slower or operate under legal frameworks that make urgent actions difficult. Record the RIR ownership and the abuse contacts gathered from RDAP for escalation paths.</p>
 
 <h3>From Data to Decision</h3>
 <p>We can now follow a simple playbook to make informed decisions when investigating an indicator.<br>
@@ -312,7 +307,7 @@ Country blocks feel attractive; however, they often break real workflows. Collea
 - Decide: Block, monitor, or allow. Prefer precise controls, add expiry, and document.<br>
 - Hunt and notify: Search for related indicators, inform stakeholders, and create follow-up tasks.</p>
 
-<img width="1401" height="1080" alt="image" src="https://github.com/user-attachments/assets/567a2104-fdf9-48a2-b758-dc42e7ea4fea" />
+<h6 align="center"><img width="250px" src="https://github.com/user-attachments/assets/567a2104-fdf9-48a2-b758-dc42e7ea4fea"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the question below</em><br>
 <ol type="1.">
