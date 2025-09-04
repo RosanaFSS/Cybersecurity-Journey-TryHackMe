@@ -113,7 +113,7 @@ From RDAP, we obtain:<br>
 
 In our scenario, we can retrieve RDAP details on the IP address 64[.]31[.]63[.]194.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/82ec356b-de43-46ab-be4f-b0756a83414a"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="550px" src="https://github.com/user-attachments/assets/82ec356b-de43-46ab-be4f-b0756a83414a"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>If our alert points to suspicious traffic, we should pivot to the domain or certificate to narrow the scope.<br>
 
