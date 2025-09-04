@@ -280,7 +280,7 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
                    <img width="700px" src="https://github.com/user-attachments/assets/74746a65-ba33-4a2b-b7a8-3429294de361"><br><a href="https://www.virustotal.com/">VirusTotal . Relations</a></h6>
 
 <br>
-<h2>Task 6 . Operation Integrtion</h2>
+<h2>Task 6 . Operation Integration</h2>
 <p>Analysts need to understand how to turn intelligence into safe action. The risk here is missing an attack and breaking legitimate business applications through overbroad controls. We avoid that outcome by being precise and planning for expiry and review.</p>
 
 <h3>Safe Integration Patterns</h3>
@@ -353,8 +353,6 @@ We have learned how to enrich and transform raw IPs and domains into decisions l
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/192387f1-ca47-4eb1-a158-32f3a90bf464"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/885b6a4b-26cc-48d6-af27-e876c68d5b5f"></p>
 
-
-
 <h2 align="center">My TryHackMe Journey</h2>
 
 <div align="center">
@@ -362,22 +360,15 @@ We have learned how to enrich and transform raw IPs and domains into decisions l
 | Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
 | :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, September 3 | 485      |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, September 3 | 485      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,018  |    940    |    73     |
 
 </div>
 
-<p align="center">Global All Time:   112ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/b5c0eb3f-eec8-4b9e-9b3f-9d49b4187caf"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/ab79edb0-c7a3-4ce8-aa39-9837d5da56c1"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c0464bcc-2fec-4349-a73b-e7ccb7fc4750"><br>
-                  Global monthly:    714ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/4ddb0c0f-36a1-4cb4-94ba-d18ce835e0b7"><br>
-                  Brazil monthly:     13ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/8e7cac62-423d-4ff7-963e-8d0e8645d9d9"><br>
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/85f1cc9b-26b2-4647-91aa-6a5bf5972cb1"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/5fb99c70-d663-4b5e-b459-cb2e7e6f8d7e"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7b483c12-5fa7-4c1c-8abe-866f8d93d529"><br>
+                  Global monthly:    579ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/250000c5-31eb-47d6-b878-e3f8531f0430"><br>
+                  Brazil monthly:     10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/32dccf93-5821-460f-9164-a7eb7ea388c8"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="left">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
-
-
-
-
