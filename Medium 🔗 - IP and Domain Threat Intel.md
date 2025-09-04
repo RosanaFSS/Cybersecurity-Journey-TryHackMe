@@ -1,4 +1,4 @@
-<h1 align="center">IP and DOmain Threat Intel</h1>
+<h1 align="center">IP and Domain Threat Intel</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/3c4c5c59-8c89-40f8-8562-9ee9712b751e"><br>
 2025, September 4<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>486</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
