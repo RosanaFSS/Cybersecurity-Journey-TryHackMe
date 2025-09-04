@@ -42,7 +42,6 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
     <li>All set to login&nbsp;&nbsp;&nbsp;<code>No answer needed</li></code></li>
 </ol></p>
 
-
 <br>
 <h2>Task 2 . IP Building Blocks</h2>
 
@@ -69,6 +68,8 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 <h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/a42618cf-2faa-41be-9a7e-f2e0c447f070"><br>iplocation.net</h6>
 
 <h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/e4c331a7-1fcc-4942-872b-92316187cf3d"><br>bgpview.io</h6>
+
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/6c7d2efa-b2f9-4151-a821-9f89ce0e5938"><br>ipinfo.io</h6>
 
 
 <br>
@@ -211,12 +212,37 @@ Use the skills and tools covered in the room to enrich the three indicators and 
 
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
-    <li>What is the RIR associated with 170[.]130[.]202[.]134?&nbsp;&nbsp;&nbsp;<code>__________________________________</code></li>
+    <li>What is the RIR associated with 170[.]130[.]202[.]134?&nbsp;&nbsp;&nbsp;<code>ARIN</code></li>
     <li>What ASN is the IP connected with?&nbsp;&nbsp;&nbsp;<code>__________________________________</code></li>
-    <li>Identify the number of NS records for the domain santagift[.]shop.&nbsp;&nbsp;&nbsp;<code>__________________________________</code></li>
-    <li>Which NS is identified as the Start of Authority (SOA) for the domain?&nbsp;&nbsp;&nbsp;<code>__________________________________</code></li>
-    <li>When was the domain registered? (Answer:DD/MM/YYYY)&nbsp;&nbsp;&nbsp;<code>__________________________________</code></li>
+    <li>Identify the number of NS records for the domain santagift[.]shop.&nbsp;&nbsp;&nbsp;<code>4</code></li>
+    <li>Which NS is identified as the Start of Authority (SOA) for the domain?&nbsp;&nbsp;&nbsp;<code>ns-298.awsdns-37.com</code></li>
+    <li>When was the domain registered? (Answer:DD/MM/YYYY)&nbsp;&nbsp;&nbsp;<code>30/10/2022</code></li>
 </ol></p>
+
+ipinfo.io
+
+<img width="1868" height="474" alt="image" src="https://github.com/user-attachments/assets/3bc1f3d4-44ce-4bc6-b224-fc2a0fe26287" />
+
+
+
+nslookup santagift.shop
+
+whois 52.92.1.132
+
+<img width="1172" height="732" alt="image" src="https://github.com/user-attachments/assets/f16a20c0-49bf-46ab-8410-70a2e6963b30" />
+
+
+
+
+Whois DNS Records
+
+<img width="1884" height="814" alt="image" src="https://github.com/user-attachments/assets/fae69d78-412b-4f58-8246-64cbd5a1d705" />
+
+
+Whois
+
+<img width="1887" height="822" alt="image" src="https://github.com/user-attachments/assets/b92f9d0a-e17a-476f-a01e-d214711e75b9" />
+
 
 
 <h2>Task 8 .Conclusion</h2>
