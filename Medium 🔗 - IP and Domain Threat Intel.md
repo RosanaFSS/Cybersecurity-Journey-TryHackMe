@@ -317,50 +317,36 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
 </ol></p>
 
 <h2>Task 7 . Challenge</h2>
-<p>It’s 09:10 on a Monday. Over the weekend, Finance reported a burst of “account verification” emails that looked unusually polished. Your secure email gateway caught a subset; one clicked sample was redirected to <code>santagift[.]shop</code>.<br><br>
+<p>It’s 09:10 on a Monday. Over the weekend, Finance reported a burst of “account verification” emails that looked unusually polished. Your secure email gateway caught a subset; one clicked sample was redirected to <code>santagift[.]shop</code>.<br>
 At the same time, your EDR shows workstations briefly beaconing to 170[.]130[.]202[.]134.<br><br>
-
 Use the skills and tools covered in the room to enrich the three indicators and answer the questions below.</p>
 
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
     <li>What is the RIR associated with 170[.]130[.]202[.]134?&nbsp;&nbsp;&nbsp;<code>ARIN</code></li>
-    <li>What ASN is the IP connected with?&nbsp;&nbsp;&nbsp;<code>__________________________________</code></li>
+    <li>What ASN is the IP connected with?&nbsp;&nbsp;&nbsp;<code>AS62904</code></li>
     <li>Identify the number of NS records for the domain santagift[.]shop.&nbsp;&nbsp;&nbsp;<code>4</code></li>
     <li>Which NS is identified as the Start of Authority (SOA) for the domain?&nbsp;&nbsp;&nbsp;<code>ns-298.awsdns-37.com</code></li>
     <li>When was the domain registered? (Answer:DD/MM/YYYY)&nbsp;&nbsp;&nbsp;<code>30/10/2022</code></li>
 </ol></p>
 
-ipinfo.io
 
-<img width="1868" height="474" alt="image" src="https://github.com/user-attachments/assets/3bc1f3d4-44ce-4bc6-b224-fc2a0fe26287" />
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/3bc1f3d4-44ce-4bc6-b224-fc2a0fe26287"><br><a href="    ">ipinfo.io</a><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/74746a65-ba33-4a2b-b7a8-3429294de361"><br>code>nslookup satantagift.shop</code<br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/f16a20c0-49bf-46ab-8410-70a2e6963b30"><br><code>whois 52.92.1.132</code><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/fae69d78-412b-4f58-8246-64cbd5a1d705"><br>Whois . DNS Records<br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/b92f9d0a-e17a-476f-a01e-d214711e75b9"><br>Whois</h6>
 
-
-
-nslookup santagift.shop
-
-whois 52.92.1.132
-
-<img width="1172" height="732" alt="image" src="https://github.com/user-attachments/assets/f16a20c0-49bf-46ab-8410-70a2e6963b30" />
-
-
-
-
-Whois DNS Records
-
-<img width="1884" height="814" alt="image" src="https://github.com/user-attachments/assets/fae69d78-412b-4f58-8246-64cbd5a1d705" />
-
-
-Whois
-
-<img width="1887" height="822" alt="image" src="https://github.com/user-attachments/assets/b92f9d0a-e17a-476f-a01e-d214711e75b9" />
-
-
-
+<br>
 <h2>Task 8 .Conclusion</h2>
+<p>Congratulations on gaining more skills in threat intelligence.<br>
 
+We have learned how to enrich and transform raw IPs and domains into decisions leadership can trust. We looked at RDAP for source-of-truth ownership, ASN role to judge risk, DNS patterns to tell flux from CDN, banners, and certificates to infer purpose and discover siblings, reputation, and history to add time context. Furthermore, we also looked at safe-block practices to avoid collateral damage. This workflow scales when automated, and remains effective even as adversaries churn infrastructure.</p>
 
-
+<p><em>Answer the question below</em><br>
+<ol type="1.">
+    <li>Complete the room.&nbsp;&nbsp;&nbsp;<code>No answer needed</code></li>
+</ol></p>
 
 <br>
 <br>
