@@ -43,12 +43,57 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 
 <br>
 <h2>Task 2 . IP Building Blocks</h2>
+<p>Network-based threat intelligence is an essential aspect of modern cyber security defence. Examining IP addresses and domains from a threat intelligence perspective involves investigating beyond network connectivity to understand the malicious intent and capability behind the digital assets in a way that supports quick, safe triage for SOC L1 analysts.</p>
+
+<h3>Why DNS Metters in SOC</h3>
+<p>Every time a user clicks a link or a system resolves a hostname, the Domain Name System (DNS) springs into action. DNS is the mechanism that converts human-friendly names like www.tryhackme.com into IP addresses that machines understand. Because of its central role in making the internet usable, DNS is also a favourite playground for attackers.<br>
+
+For SOC analysts, DNS is one of the richest early-warning datasets. Suspicious domains will appear in alerts long before a payload hash is known. Adversaries rapidly register, configure, and abandon domains to stay ahead of defences. Our job as analysts is to turn a raw domain into a contextual artefact: who owns it, what IPs it resolves to, how often it changes, and whether it behaves more like a normal content delivery network (CDN) or a throwaway setup.</p>
+
+<h4>Core DNS Records for Triage</h4>
+<p>When you enrich a domain, these are the records that matter most:<br>
+
+- <strong>A / AAAA Records</strong: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from nslookup.io or dnschecker.org and follow with pasting the IP into VirusTotal for a quick read.<br>
+- <strong>NS Records</strong>: Identify the nameservers controlling the domain. Unusual or recently changed NS entries can mark fresh set up. As L1 analysts, we should note the provider name rather than chasing low-level details.
+MX Records: Define which servers handle email. Attackers may configure MX records to deliver phishing campaigns directly. If the alert relates to web browsing, just record whether MX exists.<br>
+- <strong>TXT Records</strong>: Store SPF and DKIM rules or verification tags. Poorly configured or absent SPF can increase risk in mail cases.<br>
+- <strong>SOA Record</strong>: Points to the zone's primary authority and often includes contact information. It will be worth noting the primary host and serial, which will support a basic ownership picture.<br>
+- <strong>TTL (Time To Live)</strong>: Tells resolvers how long to cache answers. Very low TTLs, seconds or minutes, can point to frequent changes, and should be treated as clues.</p>
+
+<h3>SOC Use Cases</h3>
+<p>Based on our scenario, the SIEM raises an alert pointing to the domain advanced-ip-sccanner[.]com. As L1 analysts, we need to enrich this artefact by gathering the above DNS records using tools such as nslookup.io or dnschecker.org</p>
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/fa3e6a14-8e53-4858-a168-90d36769288"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<h3>Attack Techniques Using DNS</h3>
+<p>
+    
+- <strong>Fast Flux Hosting)</strong>: Adversaries rotate many IPs quickly with short cache times to avoid simple blocks. We need to record and escalate when we identify a domain that resolves to changing IPs within a short period and across different providers.<br>
+- <strong>CDN Abuse)</strong>: Legitimate CDNs like Cloudflare or Akamai change IPs too, but done within their ASN ecosystem. If the A record points to a major CDN and other values are normal, take note and carry reputation and ownership checks.<br>
+- <strong>Typosquatting)</strong>: Domains like paypa1[.]com or micros0ft[.]net trick users visually. If a name looks like a brand clone, treat it as high risk and escalate it.<br>
+- <strong>IDN (Internationalised Domain Names)</strong>: Attackers exploit Unicode, creating look-alike domains. Decode Punycode, for example xn--ppaypal-3ya[.]com, and compare to known brands using simple online decoder.</p>
+
+<h3>SOC Analyst Workflow</h3>
+<p>At this stage, our workflow in the SOC could look as follows. Be mindful that this would vary depending on established organisational processes and practices.<br>
+
+- <strong>Snapshot Current DNS</strong>: Capture A, NS, MX, TXT, SOA, and TTL values for the domain in question using a single page view and simple.<br>
+- <strong>Basic Ownership Check</strong>: Use WHOIS to note registrat, creation date and contact pattern, which supports a light ownership picture of the ticket.<br>
+- <strong>Interpret Patterns</strong>: Assess whether the DNS behaviour aligns with benign CDN activity or indicates malicious throwaway domain, noting down the details of the changing IPs.<br>
+- <strong>Log Evidence</strong>: Save screenshots or JSON extracts DNS and reputation pages to the case file for audit and escalation.<br>
+- <strong>Recommend Action</strong>: Based on findings, advise blocking if high risk, monitor if suspicious but inconclusive, or close if determined benign.</p>
 
 <p><em>Answer the question below</em><br>
 <ol type="1.">
-    <li>All set to login&nbsp;&nbsp;&nbsp;<code>No answer needed</li></code></li>
+    <li>From the downloadable report, what are the IP addresses for the A Record associated with our flagged domain, advanced-ip-sccanner[.]com? Answer: IP-1, IP-2.&nbsp;&nbsp;&nbsp;<code>172.67.189.143,104.21.9.202</li></code></li>
+    <li>What nameserver addresses are associated with the IP address? Defang the addresses.&nbsp;&nbsp;&nbsp;<code>jaziel[.]ns[.]cloudflare[.]com, summer[.]ns[.]cloudflare[.]com</li></code></li>
 </ol></p>
 
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/501ebbc0-b1da-461c-b1bc-c1f3e2df93d6"><br>Task File<br><br>
+                   <img width="500px" src="https://github.com/user-attachments/assets/5e516942-5db5-4458-be8b-30309164474a"><br>Task File</h6>
+
+
+<br>
 <h2>Task 3 . IP Enrichment: Geolocation and ASN</h2>
 
 <p><em>Answer the questions below</em><br>
@@ -59,15 +104,10 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
     <li>Can you identify the Autonomous System linked with the IP 64[.]31[.]63[.]194?&nbsp;&nbsp;&nbsp;<code>AS136258</code></li>
 </ol></p>
 
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/7d98e445-46d9-4828-8545-afde505eddaa"><br>RDAP.org</h6>
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/d5615375-b6af-45ec-9aaf-126d04c59cb5"><br>RDAP.org</h6>
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/a42618cf-2faa-41be-9a7e-f2e0c447f070"><br>iplocation.net</h6>
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/2984a4ee-ed1a-44c8-a168-3d909cb43a56"><br>ipinfo.io</h6>
-
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/7d98e445-46d9-4828-8545-afde505eddaa"><br>RDAP.org<br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/d5615375-b6af-45ec-9aaf-126d04c59cb5"><br>RDAP.org<br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/a42618cf-2faa-41be-9a7e-f2e0c447f070"><br>iplocation.net<br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/2984a4ee-ed1a-44c8-a168-3d909cb43a56"><br>ipinfo.io</h6>
 
 <br>
 <h2>Task 4 . Service Exposure</h2>
