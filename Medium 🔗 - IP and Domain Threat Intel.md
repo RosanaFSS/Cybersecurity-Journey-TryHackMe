@@ -65,7 +65,7 @@ MX Records: Define which servers handle email. Attackers may configure MX record
 <h3>SOC Use Cases</h3>
 <p>Based on our scenario, the SIEM raises an alert pointing to the domain advanced-ip-sccanner[.]com. As L1 analysts, we need to enrich this artefact by gathering the above DNS records using tools such as <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a>.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/fa3e6a14-8e53-4858-a168-90d36769288"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/dc0ffd00-9b1c-4c95-8a9c-78b57b276ba2"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Attack Techniques Using DNS</h3>
 <p>
