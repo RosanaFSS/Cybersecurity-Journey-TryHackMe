@@ -177,7 +177,7 @@ Some heuristic examples of ASN classification include:<br>
 
 Let us look at a sample IP search associated with the IP address from our flagged list, 69[.]197[.]185[.]26.</p>
 
-<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/b7473b95-b329-475c-84f6-a885a4a4975e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width=550px" src="https://github.com/user-attachments/assets/b7473b95-b329-475c-84f6-a885a4a4975e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>From our search, we can extract information on:<br>
 
@@ -195,7 +195,7 @@ Let us look at a sample IP search associated with the IP address from our flagge
 <p>Tools like  <a href=https://search.censys.io/">Censys.io</a> allow analysts to pivot by finding siblings with the same certificate or using a subject fragment to find look-alike clusters. However, some of these features may require an account on the platform.<br>
 As analysts, we are to identify suspicious patterns. For example, a burst of issuance within a short period that maps to many domains and mixed hosting ASNs suggests automated kit use.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/c1142473-f2ce-4c61-9808-5a514429d0f"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/587bba8a-8361-43f0-97cd-c381ef96507d"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>SOC Analyst Workflow</h3>h3>
 <p></p>At this stage, our workflow in the SOC could resemble the following, though it may vary depending on established organisational processes and practices.<br>
