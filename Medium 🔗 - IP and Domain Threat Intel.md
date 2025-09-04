@@ -273,7 +273,7 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
 
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
-    <li>What file has been linked to the IP 166[.]1.160[.]118?&nbsp;&nbsp;&nbsp;<code></code>ff4c287c60ede1990442115bddd68201d25a735458f76786a938a0aa881d14ef.exe</code></li>
+    <li>What file has been linked to the IP 166[.]1.160[.]118?&nbsp;&nbsp;&nbsp;<code>ff4c287c60ede1990442115bddd68201d25a735458f76786a938a0aa881d14ef.exe</code></li>
     <li>What organisation is identified on historical WHOIS lookups?&nbsp;&nbsp;&nbsp;<code>Ace Data Centers, Inc.</code></li>
 </ol></p>
 
