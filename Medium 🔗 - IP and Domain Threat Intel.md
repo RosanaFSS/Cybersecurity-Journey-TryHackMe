@@ -34,7 +34,7 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 - 69[.]197[.]185[.]26<br>
 - 85[.]188[.]1[.]133</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/ca522511-4aec-4701-8508-43c240dec86c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="540px" src="https://github.com/user-attachments/assets/ca522511-4aec-4701-8508-43c240dec86c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the question below</em><br>
 <ol type="1.">
