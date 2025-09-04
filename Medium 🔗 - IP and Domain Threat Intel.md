@@ -60,12 +60,12 @@ MX Records: Define which servers handle email. Attackers may configure MX record
 - <strong>SOA Record</strong>: Points to the zone's primary authority and often includes contact information. It will be worth noting the primary host and serial, which will support a basic ownership picture.<br><br>
 - <strong>TTL (Time To Live)</strong>: Tells resolvers how long to cache answers. Very low TTLs, seconds or minutes, can point to frequent changes, and should be treated as clues.</p>
 
-<h6 align="center"><img width="250px" src="https://github.com/user-attachments/assets/65c02c03-4e9c-4424-ae49-a8a98fdd06b3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/65c02c03-4e9c-4424-ae49-a8a98fdd06b3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>SOC Use Cases</h3>
 <p>Based on our scenario, the SIEM raises an alert pointing to the domain advanced-ip-sccanner[.]com. As L1 analysts, we need to enrich this artefact by gathering the above DNS records using tools such as <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a>.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/dc0ffd00-9b1c-4c95-8a9c-78b57b276ba2"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="550px" src="https://github.com/user-attachments/assets/dc0ffd00-9b1c-4c95-8a9c-78b57b276ba2"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Attack Techniques Using DNS</h3>
 <p>
