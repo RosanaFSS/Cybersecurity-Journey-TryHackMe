@@ -4,9 +4,8 @@
 and I’m excited to join you on this adventure, part of my <code>486</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>A look into enriching IP and domain insights with open source threat intelligence</em>.<br>
 Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><br>
-<img width="1200px" src=""</p>
+<img width="1200px" src="https://github.com/user-attachments/assets/783042a7-c62a-468a-8af8-87bcae48bb5b"></p>
 
-<br>
 <h2>Task 1 . Introduction</h2>
 <p>Security Operations runbooks still revolve around the process <code>verify → enrich → decide</code>, but when the alert is a lone IP address or domain, the enrichment phase looks different. Instead of hashes, we pivot on geolocation, ASNs, open-service footprints, and passive DNS to learn whether a connection is routine SaaS traffic or an adversary foothold beacon.</p>
 
@@ -350,8 +349,31 @@ We have learned how to enrich and transform raw IPs and domains into decisions l
 
 <br>
 <br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/192387f1-ca47-4eb1-a158-32f3a90bf464"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/885b6a4b-26cc-48d6-af27-e876c68d5b5f"></p>
 
 
+
+<h2 align="center">My TryHackMe Journey</h2>
+
+<div align="center">
+
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, September 3 | 485      |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+
+</div>
+
+<p align="center">Global All Time:   112ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/b5c0eb3f-eec8-4b9e-9b3f-9d49b4187caf"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/ab79edb0-c7a3-4ce8-aa39-9837d5da56c1"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c0464bcc-2fec-4349-a73b-e7ccb7fc4750"><br>
+                  Global monthly:    714ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/4ddb0c0f-36a1-4cb4-94ba-d18ce835e0b7"><br>
+                  Brazil monthly:     13ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/8e7cac62-423d-4ff7-963e-8d0e8645d9d9"><br>
+
+<h2 align="center">Thanks for coming!</h2>
+<p align="left">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
 
 
