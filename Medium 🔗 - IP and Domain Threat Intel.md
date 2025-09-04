@@ -209,9 +209,9 @@ As analysts, we are to identify suspicious patterns. For example, a burst of iss
 <p><em>Answer the questions below</em><br>
 <ol type="1.">
     <li>Using <a href="https://www.shodan.io/">shodan.io</a>, find which service is primarily associated with the IP address 85[.]188[.]1[.]133.&nbsp;&nbsp;&nbsp;<code>12/27/2010, 3:51:03 PM</code></li>
-    <li>Using <a href="https://www.shodan.io/">shodan.io</a>, find which service is primarily associated with the IP address 85[.]188[.]1[.]133.&nbsp;&nbsp;&nbsp;<code>a6</code></li>
+    <li>Using <a href="https://www.shodan.io/">shodan.io</a>, find which service is primarily associated with the IP address 85[.]188[.]1[.]133.&nbsp;&nbsp;&nbsp;<code>6</code></li>
     <li>Using <a href="https://search.censys.io/">search.censys.io</a>, identify the TLS certificate fingerprint for the IP address.&nbsp;&nbsp;&nbsp;<code>48d6057099841bd18809fd61aa990b17779176de7799f301dac24879da553456</code></li>
-    <li>According to  <a href="https://crt.sh/">crt.sh</a>, are there Certificate Transparency log entries captured associated with the TLS certificate identified above? (Answer: Yay or Nay)&nbsp;&nbsp;&nbsp;<code>yAY</code></li>
+    <li>According to  <a href="https://crt.sh/">crt.sh</a>, are there Certificate Transparency log entries captured associated with the TLS certificate identified above? (Answer: Yay or Nay)&nbsp;&nbsp;&nbsp;<code>Yay</code></li>
 </ol></p>
 
 <h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/d7cf2ddb-8603-4805-a622-2118ebef95d7"><br><a href="https://www.shodan.io/">shodan.io</a><br><br>
