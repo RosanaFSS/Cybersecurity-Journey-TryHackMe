@@ -4,7 +4,7 @@
 and I’m excited to join you on this adventure, part of my <code>486</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>A look into enriching IP and domain insights with open source threat intelligence</em>.<br>
 Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><br>
-<img width="1200px" src="h></p>
+<img width="1200px" src=""</p>
 
 <br>
 <h2>Task 1 . Introduction</h2>
