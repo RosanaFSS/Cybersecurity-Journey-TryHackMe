@@ -8,7 +8,7 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 
 <br>
 <h2>Task 1 . Introduction</h2>
-<p>Security Operations runbooks still revolve around the process <code></code>erify → enrich → decide</code>, but when the alert is a lone IP address or domain, the enrichment phase looks different. Instead of hashes, we pivot on geolocation, ASNs, open-service footprints, and passive DNS to learn whether a connection is routine SaaS traffic or an adversary foothold beacon.</p>
+<p>Security Operations runbooks still revolve around the process <code>verify → enrich → decide</code>, but when the alert is a lone IP address or domain, the enrichment phase looks different. Instead of hashes, we pivot on geolocation, ASNs, open-service footprints, and passive DNS to learn whether a connection is routine SaaS traffic or an adversary foothold beacon.</p>
 
 <h3>Learning Objectives</h3>
 <p>By the end of this room, you will be able to:<br>
