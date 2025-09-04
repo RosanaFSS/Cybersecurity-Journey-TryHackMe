@@ -313,7 +313,7 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
 
 <p><em>Answer the question below</em><br>
 <ol type="1.">
-    <li>I´m ready to move to the final challenge&nbsp;&nbsp;&nbsp;<code></code>No answer needed</code></li>
+    <li>I´m ready to move to the final challenge&nbsp;&nbsp;&nbsp;<code>No answer needed</code></li>
 </ol></p>
 
 <h2>Task 7 . Challenge</h2>
