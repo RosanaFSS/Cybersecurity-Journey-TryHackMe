@@ -53,11 +53,11 @@ For SOC analysts, DNS is one of the richest early-warning datasets. Suspicious d
 <h4>Core DNS Records for Triage</h4>
 <p>When you enrich a domain, these are the records that matter most:<br>
 
-- <strong>A / AAAA Records</strong>: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a> and follow with pasting the IP into VirusTotal for a quick read.<br><br>
+- <strong>A / AAAA Records</strong>: Map the domain to IPv4 and IPv6 addresses. If you see several A records that hop between different networks, raise suspicion of rapid rotation. In practice, copy the A record from <a href="https://www.nslookup.io/">nslookup.io</a> or <a href="https://dnschecker.org/">dnschecker.org</a> and follow with pasting the IP into VirusTotal for a quick read.<br>
 - <strong>NS Records</strong>: Identify the nameservers controlling the domain. Unusual or recently changed NS entries can mark fresh set up. As L1 analysts, we should note the provider name rather than chasing low-level details.
-MX Records: Define which servers handle email. Attackers may configure MX records to deliver phishing campaigns directly. If the alert relates to web browsing, just record whether MX exists.<br><br>
-- <strong>TXT Records</strong>: Store SPF and DKIM rules or verification tags. Poorly configured or absent SPF can increase risk in mail cases.<br><br>
-- <strong>SOA Record</strong>: Points to the zone's primary authority and often includes contact information. It will be worth noting the primary host and serial, which will support a basic ownership picture.<br><br>
+MX Records: Define which servers handle email. Attackers may configure MX records to deliver phishing campaigns directly. If the alert relates to web browsing, just record whether MX exists.<br>
+- <strong>TXT Records</strong>: Store SPF and DKIM rules or verification tags. Poorly configured or absent SPF can increase risk in mail cases.<br>
+- <strong>SOA Record</strong>: Points to the zone's primary authority and often includes contact information. It will be worth noting the primary host and serial, which will support a basic ownership picture.<br>
 - <strong>TTL (Time To Live)</strong>: Tells resolvers how long to cache answers. Very low TTLs, seconds or minutes, can point to frequent changes, and should be treated as clues.</p>
 
 <h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/65c02c03-4e9c-4424-ae49-a8a98fdd06b3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
@@ -70,18 +70,18 @@ MX Records: Define which servers handle email. Attackers may configure MX record
 <h3>Attack Techniques Using DNS</h3>
 <p>
     
-- <strong>Fast Flux Hosting)</strong>: Adversaries rotate many IPs quickly with short cache times to avoid simple blocks. We need to record and escalate when we identify a domain that resolves to changing IPs within a short period and across different providers.<br><br>
-- <strong>CDN Abuse)</strong>: Legitimate CDNs like Cloudflare or Akamai change IPs too, but done within their ASN ecosystem. If the A record points to a major CDN and other values are normal, take note and carry reputation and ownership checks.<br><br>
-- <strong>Typosquatting)</strong>: Domains like paypa1[.]com or micros0ft[.]net trick users visually. If a name looks like a brand clone, treat it as high risk and escalate it.<br><br>
+- <strong>Fast Flux Hosting)</strong>: Adversaries rotate many IPs quickly with short cache times to avoid simple blocks. We need to record and escalate when we identify a domain that resolves to changing IPs within a short period and across different providers.<br>
+- <strong>CDN Abuse)</strong>: Legitimate CDNs like Cloudflare or Akamai change IPs too, but done within their ASN ecosystem. If the A record points to a major CDN and other values are normal, take note and carry reputation and ownership checks.<br>
+- <strong>Typosquatting)</strong>: Domains like paypa1[.]com or micros0ft[.]net trick users visually. If a name looks like a brand clone, treat it as high risk and escalate it.<br>
 - <strong>IDN (Internationalised Domain Names)</strong>: Attackers exploit Unicode, creating look-alike domains. Decode Punycode, for example xn--ppaypal-3ya[.]com, and compare to known brands using simple online decoder.</p>
 
 <h3>SOC Analyst Workflow</h3>
 <p>At this stage, our workflow in the SOC could look as follows. Be mindful that this would vary depending on established organisational processes and practices.<br>
 
-- <strong>Snapshot Current DNS</strong>: Capture A, NS, MX, TXT, SOA, and TTL values for the domain in question using a single page view and simple.<br><br>
-- <strong>Basic Ownership Check</strong>: Use WHOIS to note registrat, creation date and contact pattern, which supports a light ownership picture of the ticket.<br><br>
-- <strong>Interpret Patterns</strong>: Assess whether the DNS behaviour aligns with benign CDN activity or indicates malicious throwaway domain, noting down the details of the changing IPs.<br><br>
-- <strong>Log Evidence</strong>: Save screenshots or JSON extracts DNS and reputation pages to the case file for audit and escalation.<br><br>
+- <strong>Snapshot Current DNS</strong>: Capture A, NS, MX, TXT, SOA, and TTL values for the domain in question using a single page view and simple.<br>
+- <strong>Basic Ownership Check</strong>: Use WHOIS to note registrat, creation date and contact pattern, which supports a light ownership picture of the ticket.<br>
+- <strong>Interpret Patterns</strong>: Assess whether the DNS behaviour aligns with benign CDN activity or indicates malicious throwaway domain, noting down the details of the changing IPs.<br>
+- <strong>Log Evidence</strong>: Save screenshots or JSON extracts DNS and reputation pages to the case file for audit and escalation.<br>
 - <strong>Recommend Action</strong>: Based on findings, advise blocking if high risk, monitor if suspicious but inconclusive, or close if determined benign.</p>
 
 <p><em>Answer the questions below</em><br>
