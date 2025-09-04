@@ -34,8 +34,7 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 - 69[.]197[.]185[.]26<br>
 - 85[.]188[.]1[.]133</p>
 
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/ca522511-4aec-4701-8508-43c240dec86c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/ca522511-4aec-4701-8508-43c240dec86c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the question below</em><br>
 <ol type="1.">
@@ -118,7 +117,7 @@ Another resource is Cisco Talos Intelligence, which provides frequently updated 
 <h4>Talos Dashboard</h4>
 <p>By default, the dashboard presents an overview of email traffic across numerous countries, with indicators of whether the emails are legitimate, spam, or malware. Any of these markers will produce more information associated with IP and hostname addresses, daily volume, and type.</p>
 
-<img width="1916" height="982" alt="image" src="https://github.com/user-attachments/assets/9ab883fc-4473-45ac-94fe-8c989716dcef" />
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/9ab883fc-4473-45ac-94fe-8c989716dcef"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Additionally, there are other features useful for enrichment:<br>
 
@@ -128,7 +127,7 @@ Another resource is Cisco Talos Intelligence, which provides frequently updated 
 <h4>IP2Proxy</h4>
 <p>IP2Proxy is another vital resource for labelling VPN, proxy, and Tor exit nodes. These are legitimate shared egress points, which can weaken attribution.</p>
 
-<img width="1800" height="1996" alt="image" src="https://github.com/user-attachments/assets/35f43bbb-6730-4d42-897e-ffb94e5d75fb" />
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/35f43bbb-6730-4d42-897e-ffb94e5d75fb"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Passive DNS</h3>
 <p>Passive DNS adds time context in domain enrichment, providing a historical record of how domains resolved over time. The key signals to look at include:<br>
@@ -141,7 +140,6 @@ Beyond using passive DNS to gather domain history, other valuable sources includ
 
 - Certificate Transparency (CT) Logs: These logs show certificate issuance history. They are useful for detecting sudden bursts of domains registered under phishing themes.<br>
 - Wayback Machine: Reveals historical website content. A domain that hosted a blog for years but switched to a phishing kit last week is high-risk.</p>
-
 
 <h3>SOC Analyst Workflow</h3>
 <p>In summary, our workflow in the SOC would look as follows. Be mindful that this would vary depending on established organisational processes and practices.<br>
