@@ -67,9 +67,7 @@ Access it <a href="https://tryhackme.com/room/ipanddomainthreatintel">here</a><b
 
 <h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/a42618cf-2faa-41be-9a7e-f2e0c447f070"><br>iplocation.net</h6>
 
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/e4c331a7-1fcc-4942-872b-92316187cf3d"><br>bgpview.io</h6>
-
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/6c7d2efa-b2f9-4151-a821-9f89ce0e5938"><br>ipinfo.io</h6>
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/2984a4ee-ed1a-44c8-a168-3d909cb43a56"><br>ipinfo.io</h6>
 
 
 <br>
