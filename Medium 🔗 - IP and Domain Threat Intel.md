@@ -371,4 +371,4 @@ We have learned how to enrich and transform raw IPs and domains into decisions l
                   Brazil monthly:     10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/32dccf93-5821-460f-9164-a7eb7ea388c8"><br>
 
 <h2 align="center">Thanks for coming!</h2>
-<p align="left">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
