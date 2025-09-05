@@ -4,7 +4,8 @@
 and I’m excited to join you on this adventure, part of my <code>486</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Part of Incognito CTF</em>.<br>
 Access it <a href="https://tryhackme.com/room/coldvvars">here</a><br>
-<img width="1200px" src="https://github.com/user-attachments/assets/a9d8190f-19f5-4f48-90ce-ee5e6d6b8fb"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/e6a883be-dfaa-41eb-86f8-a583255e06bb"></p>
+
 
 <h1>Task 1 . Challenge</h1>
 <p>Part of Incognito 2.0 CTF<br>
@@ -389,7 +390,7 @@ ssm-user:x:1003:1004::/home/ssm-user:/bin/sh
 ubuntu:x:1004:1006:Ubuntu:/home/ubuntu:/bin/bash
 ```
 
-<h2>ArtgurMorgan</h2>
+<h2>ArthurMorgan</h2>
 
 ```bash
 www-data@...:/var/www/html/dev$ su ArthurMorgan                        
@@ -650,8 +651,6 @@ root.txt
 
 <br>
 <br>
-
-<img width="1297" height="428" alt="image" src="https://github.com/user-attachments/assets/b26814e6-7ee1-4a64-b011-696a529bafb9" />
 
 
 <img width="1902" height="902" alt="image" src="https://github.com/user-attachments/assets/53ec1079-bcd4-4b40-974a-6ef7c1d36b8b" />
