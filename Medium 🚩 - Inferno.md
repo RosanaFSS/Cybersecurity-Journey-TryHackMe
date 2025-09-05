@@ -423,15 +423,3 @@ mindsflee
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-<img width="1904" height="901" alt="image" src="https://github.com/user-attachments/assets/c24e782e-eca1-4d31-86c4-b3a8f58e1498" />
-
-<img width="1874" height="886" alt="image" src="https://github.com/user-attachments/assets/0387c8f4-2c87-49f5-a53e-dfc875f836c9" />
-
-<img width="1872" height="899" alt="image" src="https://github.com/user-attachments/assets/282b212b-296b-4546-9d20-cb5f87961a4b" />
-
-
-
-
-
