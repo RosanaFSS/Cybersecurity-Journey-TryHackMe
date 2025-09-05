@@ -522,21 +522,21 @@ Done.
 
 <div align="center">
 
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, September 4 | 486      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| Date              | Room      |Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: |  :------:|:----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, September 5 |Easy 🔗 - Psycho Break| 487      |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    941    |    73     |
+| 2025, September 4 |Medium 🔗 - IP and Domain Threat Intel|486|	113ʳᵈ|	5ᵗʰ	|579ᵗʰ|	10ᵗʰ|	124,018|	940	|73|
+| 2025, September 4 |Medium 🚩 - Cold VVars | 486      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
 
 </div>
 
-<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/9703ee03-2b78-413d-ab69-edfcea7f0201"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/52311282-18b4-44e4-a58d-b37e863e2a6d"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c8ae9ed1-e073-4c8b-a0f1-e468987b0b44"><br>
-                  Global monthly:    579ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b10fad27-b103-485d-8cc6-8e4276ed11ae"><br>
-                  Brazil monthly:     10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0cd48454-86e5-4ed0-bcff-75cca706c929"><br>
+
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/f39f20c4-3417-4d45-92ef-8e971f5c7da0"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/c6237b9d-d65c-45d1-bc1e-cc49b4d48780"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e06e8b02-1ac4-4cca-87e5-d6ea52fd63bb"><br>
+                  Global monthly:    724ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7dc69b33-6c5f-40ff-ae6b-057a438383dd"><br>
+                  Brazil monthly:     10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/785e2d51-f8f3-4938-8569-3123194e6d6d"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
