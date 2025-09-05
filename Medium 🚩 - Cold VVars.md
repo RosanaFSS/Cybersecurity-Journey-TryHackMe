@@ -651,16 +651,26 @@ root.txt
 
 <br>
 <br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/53ec1079-bcd4-4b40-974a-6ef7c1d36b8b"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/5ac31bbe-41dd-41fc-b885-f4ef5f4e32f9"></p>
 
+<h2 align="center">My TryHackMe Journey</h2>
 
-<img width="1902" height="902" alt="image" src="https://github.com/user-attachments/assets/53ec1079-bcd4-4b40-974a-6ef7c1d36b8b" />
+<div align="center">
 
-<img width="1908" height="894" alt="image" src="https://github.com/user-attachments/assets/5ac31bbe-41dd-41fc-b885-f4ef5f4e32f9" />
+| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, September 4 | 486      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
 
+</div>
 
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/95c0523e-609f-4eee-be81-e64070c1c48"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/52311282-18b4-44e4-a58d-b37e863e2a6d"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c8ae9ed1-e073-4c8b-a0f1-e468987b0b44"><br>
+                  Global monthly:    579ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b10fad27-b103-485d-8cc6-8e4276ed11ae"><br>
+                  Brazil monthly:     10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0cd48454-86e5-4ed0-bcff-75cca706c929"><br>
 
-
-
-
-
-
+<h2 align="center">Thanks for coming!</h2>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
