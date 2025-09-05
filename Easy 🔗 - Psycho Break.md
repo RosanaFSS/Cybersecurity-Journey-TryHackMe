@@ -522,12 +522,13 @@ Done.
 
 <div align="center">
 
-| Date              | Room      |Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: |  :------:|:----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, September 5 |Easy 🔗 - Psycho Break| 487      |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    941    |    73     |
-| 2025, September 4 |Medium 🔗 - IP and Domain Threat Intel|486|	113ʳᵈ|	5ᵗʰ	|579ᵗʰ|	10ᵗʰ|	124,018|	940	|73|
-| 2025, September 4 |Medium 🚩 - Cold VVars | 486      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| Date              | Room                  |Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
+| :--------------- | :-------------------  |  :------:|:----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                       |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break | 487      |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    941    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel|486|	113ʳᵈ|	5ᵗʰ	|579ᵗʰ|	10ᵗʰ|	124,018|	940	|73|
+| 2025, Sep 4       |Medium 🚩 - Cold VVars | 486      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 4       |Easy 🔗 - Malware Classification | 485     |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
 
 </div>
 
