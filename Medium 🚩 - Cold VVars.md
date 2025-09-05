@@ -666,7 +666,7 @@ root.txt
 
 </div>
 
-<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/95c0523e-609f-4eee-be81-e64070c1c48"><br>
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/9703ee03-2b78-413d-ab69-edfcea7f0201"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/52311282-18b4-44e4-a58d-b37e863e2a6d"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c8ae9ed1-e073-4c8b-a0f1-e468987b0b44"><br>
                   Global monthly:    579ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b10fad27-b103-485d-8cc6-8e4276ed11ae"><br>
