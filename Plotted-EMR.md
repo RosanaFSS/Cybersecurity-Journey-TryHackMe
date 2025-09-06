@@ -582,18 +582,16 @@ Flag1 : ******************
 ```
 
 <p>2.1. What is flag 1?<br>
-<code>******************</code</p>
-
+<code>******************</code></p>
 <br>
 
 ```bash
 www-data@plotted:/var/www$ ps aux
 ```
 
-<h2>Cronjob</h2>h2>
+<h2>Cronjob</h2>
 <p>
-- plot_admin cd /var/www/html/portal/config && rsync -t * plot_admin@127.0.0.1:~/backup
-</p>
+- plot_admin cd /var/www/html/portal/config && rsync -t * plot_admin@127.0.0.1:~/backup</p>
 
 ```bash
 www-data@plotted:/etc$ cat crontab
