@@ -878,35 +878,34 @@ Content-Type: text/html; charset=UTF-8
 <br>
 <h2 align="center">Completed</h2>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/57e84a98-64fb-43a1-9805-9e7c3c134e10"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/85ff3f02-f2db-4b97-adb0-2b48ad78d687"></p>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/85ff3f02-f2db-4b97-adb0-2b48ad78d687"></p>
 
 <h2 align="center">My TryHackMe Journey</h2>
 
 <div align="center">
 
-| Date              | Room                  |Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :--------------- | :-------------------  |  :------:|:----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |                       |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, Sep 6       |Medium 🚩 - <code>Plotted-EMR</code> | 488      |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
-| 2025, Sep 5       |Medium 🚩 - Inferno | 487      |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ   |    12ⁿᵈ    | 124,236  |    943    |    73     |
-| 2025, Sep 5       |Easy 🔗 - Psycho Break | 487      |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    942    |    73     |
-| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel|486|	113ʳᵈ|	5ᵗʰ	|579ᵗʰ|	10ᵗʰ|	124,018|	940	|73|
-| 2025, Sep 4       |Medium 🚩 - Cold VVars | 486      |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
-| 2025, Sep 3       |Easy 🔗 - Malware Classification | 485     |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939   |    73     |
-| 2025, Sep 2       |Medium 🔗 - Session Forencics | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938   |    73     |
-| 2025, Sep 1       |Medium 🚩 - Voyage | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937   |    73     |
+| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
+| 2025, Sep 6       |Hard 🚩 - <code>Extract</code>         | 488     |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ   |    13ʳᵈ    | 124,386  |    945    |    73     |
+| 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488     |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
+| 2025, Sep 5       |Medium 🚩 - Inferno                    | 487     |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ   |    12ⁿᵈ    | 124,236  |    943    |    73     |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487     |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    942    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486     |	   113ʳᵈ   |	     5ᵗʰ   	|      579ᵗʰ   |	  10ᵗʰ    |	124,018  |	  940	   |    73     |
+| 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486     |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485     |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
+| 2025, Sep 1       |Medium 🚩 - Voyage                     | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
 
 </div>
 
-<p align="center">Global All Time:   114ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/8ca5c4b9-04d1-4237-a64d-157a55304477"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/d75c2844-bb94-4d43-b689-f8702b5b50a1"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e1a5a0e1-9413-4001-89e1-c816b23fb8d6"><br>
-                  Global monthly:    844ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2a50d58d-da67-428a-a2d8-311bfbc58b19"><br>
-                  Brazil monthly:     12ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/90cc0c4b-ec77-4431-b244-b27f87cca18d"><br>
+<br>
+
+<p align="center">Global All Time:   114ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/a0a9f4a1-04ae-4b2b-94b0-6f5bd7791ef6"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/79bb8f11-33ee-4c4e-be97-d96a6ed0226f"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f027be8f-d77a-434d-9e36-fbcbe04eb02a"><br>
+                  Global monthly:    716ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/54f75e3f-7482-42bd-a2f3-4f1153aebd30"><br>
+                  Brazil monthly:     13ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/14f4a4ad-70ec-4e24-b3a1-3e9f2f666b34"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
-
