@@ -19,7 +19,7 @@ March 8, 2025, Day 306
     <li>Get  &nbsp; <code>User Flag</code> practicing<br>
 	    <code>rsync --list-only rsync://rsync-connect@[IP]:[Port]/[Path]</code>,  &nbsp; <code>LRANGE authlist [range]</code>,  &nbsp; <code>echo " " | base64 -d</code>,  &nbsp; <code>cat</code>,  &nbsp; <code>ls</code>,  &nbsp; <code>cd</code>,  &nbsp; <code>dir</code>.</li><br>
     <li>Get  &nbsp; <code>Root Flag</code>  &nbsp; practicing<br>
-	    .... <strong>in progress</strong></li>
+	    </li>
 </ul></p>
 
 <br>
