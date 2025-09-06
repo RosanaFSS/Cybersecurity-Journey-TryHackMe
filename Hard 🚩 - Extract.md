@@ -874,9 +874,10 @@ Content-Type: text/html; charset=UTF-8
 <code>THM{********************************}</code></p>
 
 <br>
+
 <br>
 <h2 align="center">Completed</h2>
-<p align="center"><img width="1200px" src=https://github.com/user-attachments/assets/14e95223-0189-4ed0-b6da-0e08aa743c05"><br>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/57e84a98-64fb-43a1-9805-9e7c3c134e10"><br>
                   <img width="800px" src="https://github.com/user-attachments/assets/85ff3f02-f2db-4b97-adb0-2b48ad78d687"></p>
 
 <h2 align="center">My TryHackMe Journey</h2>
