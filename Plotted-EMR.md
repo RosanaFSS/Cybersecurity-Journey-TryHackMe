@@ -44,9 +44,9 @@ Tip: Enumeration is key!</p>
 
 - 21 : FTP<br>
 - 22 : SSH<br>
-- 80 : HTTP<br>
-- 5900 : mysql<br>
-- 8890 : </p>
+- 80 : HTTP : Apache httpd 2.4.41 ((Ubuntu))<br>
+- 5900 : mysql : MySQL 5.5.5-10.3.31-MariaDB-0+deb10u1<br>
+- 8890 : HTTP : Apache httpd 2.4.41 ((Ubuntu))</p>
 
 ```bash
 :~# nmap -sT -p- -T4 xx.xxx.xx.xxx
@@ -175,8 +175,7 @@ Progress: 654825 / 654828 (100.00%)
 <p>
 
 - /index.php<br>
-- /logout.php<br>
-/p>
+- /logout.php</p>
 
 ```bash
 :~# gobuster dir -u http://xx.xxx.xx.xxx:8890/portal/interface/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x php
