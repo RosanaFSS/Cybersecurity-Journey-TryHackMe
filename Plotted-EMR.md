@@ -584,9 +584,11 @@ Flag1 : ******************
 <p>2.1. What is flag 1?<br>
 <code>******************</code</p>
 
+<br>
 
 ```bash
 www-data@plotted:/var/www$ ps aux
+```
 
 <h2>Cronjob</h2>h2>
 <p>
@@ -914,20 +916,3 @@ plot_admin@plotted:/tmp$
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
-
-
-
-<img width="1908" height="893" alt="image" src="https://github.com/user-attachments/assets/3e6d886f-bafb-4f01-83a4-b42fd887d7ac" />
-
-
-
-<img width="1902" height="894" alt="image" src="https://github.com/user-attachments/assets/22b17222-0f0d-4f21-9b8b-1861f9274e43" />
-
-<img width="1874" height="891" alt="image" src="https://github.com/user-attachments/assets/b1a7ed0e-ea88-4e25-b360-f52aa5c20a4e" />
-
-<img width="971" height="908" alt="image" src="https://github.com/user-attachments/assets/4097a7f2-c965-4192-94ac-7ecfbf6764cd" />
-
-
