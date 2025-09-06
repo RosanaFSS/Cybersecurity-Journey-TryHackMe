@@ -1,7 +1,7 @@
 <h1 align="center">Plotted-EMR</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/c73c4e43-529b-43a1-9cdd-57930a7382db"><br>
-August 30, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>481</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+2025, September 6<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>488</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Everything here is plotted!</em>.<br>
 Access it <a href="https://tryhackme.com/room/plottedemr"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/5435d3e6-1f99-429a-8f3e-2636a5c19fdb"></p>
