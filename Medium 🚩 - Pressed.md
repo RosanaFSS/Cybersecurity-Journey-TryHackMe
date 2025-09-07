@@ -34,10 +34,27 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 <br>
-<h2>Cipher Suite</h2>
+<h2>Statistics Endpoints</h2>
 
-<img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
+<p>IPv4</p>
 
+<img width="1729" height="178" alt="image" src="https://github.com/user-attachments/assets/13e3f781-3c44-444d-85ed-5f33f91bf22a" />
+
+<br>
+<br>
+<br>
+<p>TCP</p>
+
+<img width="1734" height="186" alt="image" src="https://github.com/user-attachments/assets/ea4ed973-db86-42a7-9ea7-c2c4f2a60465" />
+
+<br>
+<br>
+<br>
+<p>UDP</p>
+
+<img width="1728" height="188" alt="image" src="https://github.com/user-attachments/assets/69ca2e4e-d2ad-43c2-aa1d-73af97a1e967" />
+
+<br>
 <br>
 <br>
 <h2>Statistics Protocol Hierarchy</h2>
@@ -88,29 +105,6 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
-<br>
-<h2>Statistics Endpoints</h2>
-
-<p>IPv4</p>
-
-<img width="1729" height="178" alt="image" src="https://github.com/user-attachments/assets/13e3f781-3c44-444d-85ed-5f33f91bf22a" />
-
-<br>
-<br>
-<br>
-<p>TCP</p>
-
-<img width="1734" height="186" alt="image" src="https://github.com/user-attachments/assets/ea4ed973-db86-42a7-9ea7-c2c4f2a60465" />
-
-<br>
-<br>
-<br>
-<p>UDP</p>
-
-<img width="1728" height="188" alt="image" src="https://github.com/user-attachments/assets/69ca2e4e-d2ad-43c2-aa1d-73af97a1e967" />
-
-<br>
-<br>
 <h2>GET</h2>
 <p>
 
@@ -121,15 +115,20 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 <br>
+<h2>Cipher Suite</h2>
+
+<img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
+
+<br>
+<br>
+<br>
 <h2>port 443</h2>
 <p>
 
-- Change Cipher</p>
+- cipher change</p>
 
 <img width="1736" height="767" alt="image" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
-<br>
-<br>
 <p>
 
 - saved base64 encoded data into <code>file.txt</code></p>
