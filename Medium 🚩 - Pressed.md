@@ -26,15 +26,6 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <p><em>Answer the questiona below</em></p>
 
 <br>
-<br>
-
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/557fdc6f-6225-4273-870f-bf060c317170" />
-
-<br>
-
-<img width="1892" height="394" alt="image" src="https://github.com/user-attachments/assets/b53f9a29-2a27-4beb-8ea1-92f594f1fa23" />
-
-<br>
 <h2>Statistics Protocol Hierarchy</h2>
 
 <img width="1729" height="454" alt="image" src="https://github.com/user-attachments/assets/7f438aae-0369-455d-b983-f7ee021fa930" />
