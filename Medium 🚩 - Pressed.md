@@ -67,12 +67,12 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<img width="1727" height="266" alt="image" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">frame 2921<br><i<img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
 
-<img width="1695" height="637" alt="image" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354" />
+<img width="1200px" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354"></p>
 
 <br>
 <br>
