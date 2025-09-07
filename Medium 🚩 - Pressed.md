@@ -242,24 +242,6 @@ VWSUATAUAVAW
 
 <img width="1347" height="447" alt="image" src="https://github.com/user-attachments/assets/3cb1982e-f90b-4c80-8e6f-3aadeab10e10" />
 
-<br>
-<br>
-<h2 align="center">Wireshark</h2>
-
-```bash
-ip.src == 10.13.44.207 && tcp.port == 443
-```
-
-<img width="1617" height="374" alt="image" src="https://github.com/user-attachments/assets/a9f1c0cf-d801-4868-a95c-2cd8d7b0864e" />
-
-<br>
-
-<img width="1608" height="619" alt="image" src="https://github.com/user-attachments/assets/d8d8fcdd-496c-40de-90ee-308283e6d173" />
-
-<br>
-
-<img width="1611" height="704" alt="image" src="https://github.com/user-attachments/assets/ba07666b-ea6c-4a0f-93f0-f79fe02a3626" />
-
 <h2 align="center">Key UTF-8</h2>
 <p>
  
