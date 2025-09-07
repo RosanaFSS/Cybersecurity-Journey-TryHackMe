@@ -8,44 +8,60 @@ https://tryhackme.com/room/pylonzf</p>
 <img width="1889" height="383" alt="image" src="https://github.com/user-attachments/assets/86a94a79-51c1-463d-82ca-6d49028bd9c2" />
 
 
-<br>
-
-<h3>file</h3>
+<h2 align="center">nmap</h3>
 
 ```bash
-$ file pepper.jpg
+:~/pyLon# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
+...
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+...
+222/tcp open  ssh     OpenSSH 8.4 (protocol 2.0)
+```
+
+<h2 align="center">/etc/hosts</h3>
+
+```bash
+xx.xxx.xx.xx  pylon.thm
+```
+
+<h2 align="center">file</h2>
+
+```bash
+:~/pyLon# file pepper.jpg
 pepper.jpg: JPEG image data, baseline, precision 8, 2551x1913, components 3
 ```
 
-<h3>stegseek</h3>
+<h2 align="center">stegseek</h2>
 
 ```bash
-$ stegseek --crack pepper.jpg /usr/share/wordlists/rockyou.txt
+:~/pyLon# stegseek --crack pepper.jpg /usr/share/wordlists/rockyou.txt
 ...
 [i] Found passphrase: "pepper"           
 [i] Original filename: "lone".
 [i] Extracting to "pepper.jpg.out".
 ```
 
-<h3>steghide</h3>
+<h2 align="center">steghide</h2>
 
 ```bash
-$ steghide extract -sf pepper.jpg
+:~/pyLon# steghide extract -sf pepper.jpg
 Enter passphrase:
 wrote extracted data to "lone".
 ```
 
-<h3>file</h3>
+<h2 align="center">file</h2>
 
 ```bash
-$ file lone
+:~/pyLon# file lone
 lone: ASCII text
 ```
 
-<h3>cat</h3>
+<h2 align="center">lone</h2>
 
 ```bash
-$ cat lone
+:~/pyLon# cat lone
 H4sIAAAAAAAAA+3Vya6zyBUA4H/NU9w9ilxMBha9KObZDMY2bCIGG2MmMw9P39c3idRZtJJNK4rE
 J6FT0imkoupQp2zq+9/z9NdfCXyjafoTMZoCf4wfBEnQvzASAJKkAX7EfgEMo2jw6wv8pav6p7Ef
 ou7r69e7aVKQ/fm8/5T/P/W3D06UVevrZIuW5ylftqte4Fn80sXgJ4vEBFfGtbVFPNaFt2JIXyL8
@@ -75,7 +91,7 @@ RpsO4vnx8xPyBEfFMjs6yj8idFSBg77Mzb/9hvy0N9ES/rz1/a/b82632+12u91ut9vtdrvdbrfb
 7Xa73W632+12/5XfActiLj0AKAAA
 ```
 
-<h3>exiftool</h3>
+<h2 align="center">exiftool</h2>
 <p>
 
 - Subject                         : https://gchq.github.io/CyberChef/#recipe=To_Hex('None',0)To_Base85('!-u',false)<br>  
@@ -83,7 +99,7 @@ RpsO4vnx8xPyBEfFMjs6yj8idFSBg77Mzb/9hvy0N9ES/rz1/a/b82632+12u91ut9vtdrvdbrfb
 </p>
 
 ```bash
-$ exiftool pepper.jpg
+:~/pyLon# exiftool pepper.jpg
 ExifTool Version Number         : 12.76
 File Name                       : pepper.jpg
 Directory                       : .
@@ -107,47 +123,47 @@ Image Size                      : 2551x1913
 Megapixels                      : 4.9
 ```
 
-<h3>CyberChef</h3>
+<h2 align="center">CyberChef</h2>
 
 <img width="1354" height="438" alt="image" src="https://github.com/user-attachments/assets/bd635d1f-87e2-4ea2-98b7-0a98b1a7bd2c" />
 
 
-<h3>Base64 decoded</h3>
+<h2 align="center">Base64 decoded</h3>
 
 ```bash
-$ base64 -d lone > lodeBase64decoded
+:~/pyLon# base64 -d lone > lodeBase64decoded
 ```
 
-<h3>file</h3>
+<h2 align="center">file</h3>
 
 ```bash
-$ file loneBase64decoded
+:~/pyLon# file loneBase64decoded
 loneBase64decoded: gzip compressed data, from Unix, original size modulo 2^32 10240
 ```
 
-<h3>mv</h3>
+<h3 align="center">mv</h3>
 
 ```bash
-$ mv loneBase64decoded lone.gz
+:~/pyLon# mv loneBase64decoded lone.gz
 ```
 
-<h3>file</h3>
+<h3 align="center">file</h3>
 
 ```bash
-$ file lone
+:~/pyLon# file lone
 lone: POSIX tar archive (GNU)
 ```
 
-<h3>tar</h3>
+<h3 align="center">tar</h3>
 
 ```bash
-$ mv loneBase64decoded lone.gz
+:~/pyLon# mv loneBase64decoded lone.gz
 ```
 
-<h3>cat</h3>
+<h2 align="center">lone_id</h2>
 
 ```bash
-$ cat lone_id
+:~/pyLon# cat lone_id
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAQEA45nVhEtT37sKnNBWH2VYsXbjA8vAK8e04HfrgF06NiGGQsRBLtJw
@@ -177,16 +193,18 @@ nx3u2SBx9KM6uqA2w80UlqJb8BVyM4SscUoHdmbqc9Wx5f+nG5Ab8EPPq0FNPrzrBJP5m0
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-<h3>nmap</h3>
+<h2 align="center">SSH</h2>
 
 ```bash
-$ nmap 
+:~/pyLon# chmod 600 lone_id
 ```
 
-<h3>ssh</h3>
+```bash
+:~/pyLon# ssh -i lone_id lone@pylon.thm -p 222
+```
 
 ```bash
-$ ssh -i lone_id lone@TargetIP -p 222
+:~/pyLon# ssh -i lone_id lone@pylon.thm -p 222
 ```
 
 <h3>key</h3>
@@ -202,6 +220,8 @@ $ ssh -i lone_id lone@TargetIP -p 222
 <img width="985" height="244" alt="image" src="https://github.com/user-attachments/assets/dbd4ef61-401e-466e-aeab-bcfa3b3547e5" />
 
 ```bash
+
+:~/pyLon#
                
                   /               
       __         /       __    __
