@@ -67,7 +67,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<p align="center">There is <strong>1</strong> IMF packet.<br>Right-click.<br>Select as Filter.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">There is <strong>1</strong> IMF packet. Right-click. Apply as Filer > Select.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
