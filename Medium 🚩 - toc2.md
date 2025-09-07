@@ -3,7 +3,7 @@
 2025, September 6<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>488</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>It's a setup... Can you get the flags in time?</em>.<br>
-Access it <a href="hhttps://tryhackme.com/room/toc2"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/toc2"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/a98bff4f-1db6-4b31-b665-12ef97b33634"></p>
 
 <h2>Task 1 . Get Connected</h2>
