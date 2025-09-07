@@ -54,54 +54,37 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <p align="center">Identified <strong>1</strong> IMF packet. Right-clicked > <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
-<br>
 
 <p align="center"><strong>2921</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354" />
 
-<br>
-<br>
-<br>
 <h2 align="center">TCP stream</code></h2>
 
 <p align="center">Right-clicked <strong>2921</strong> and followed <strong>TCP stream</strong> 1205.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
-<br>
 
 <p align="center">Identified in <strong>TCP stream</strong> 1205 <strong>MAIL</strong>, Username: <strong>hazel@pressed.thm</strong> and Password: <strong>password</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
 <br>
-<br>
 
 <p align="center">Copied base64 encoded excerpt and saved it into <strong>file.txt</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
-<br>
-<br>
 <h2 align="center">GET</h2>
 
 <p align="center">Identified that <strong>GET</strong> request method was used with <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
-<br>
-<br>
-<br>
 <h2>Chipher Change</h2>
 
 <p align="center"><strong>29</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
-<br>
-<br>
-<br>
 <h2 align="center">Cipher Suite</h2>
 
 <p align="center"><strong>2948</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
-<br>
-<br>
 
 <p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>. Identified <strong>SMTP</strong> packets. Right-clicked <strong>SMTP</strong>strong></strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>. Identified <strong>6728</strong> and saved the content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
-<br>
 <br>
 <p>
 
