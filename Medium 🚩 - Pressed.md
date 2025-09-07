@@ -67,7 +67,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<p align="center">Frame <strong>1</strong> IMF packet<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">There is <strong>1</strong> IMF packet.<br>Right-click.<br>Select as Filter.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
@@ -79,7 +79,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>TCP stream</code></h2>
 
-<p align="center">Follow TCP Stream - <strong>2921</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
+<p align="center">Right click <strong>2921</strong>. Follow TCP stream.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
 <br>
