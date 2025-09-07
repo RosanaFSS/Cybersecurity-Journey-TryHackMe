@@ -82,8 +82,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <p>
 
 - copied base64 encoded excerpt<br>
-- saved it to <br>
-- Password: password</p>
+- saved it to  <code>file.txt</code></p>
 
 <img width="1690" height="631" alt="image" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
