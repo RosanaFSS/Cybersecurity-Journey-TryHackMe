@@ -32,13 +32,16 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1729" height="454" alt="image" src="https://github.com/user-attachments/assets/7f438aae-0369-455d-b983-f7ee021fa930" />
 
 <br>
+<br>
 
 <img width="1727" height="266" alt="image" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
+<br>
 
 <img width="1695" height="637" alt="image" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354" />
 
+<br>
 <br>
 <br>
 <h2>TCP stream</code></h2>
@@ -49,13 +52,16 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1690" height="635" alt="image" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
+<br>
 
 <img width="1689" height="633" alt="image" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
 <br>
+<br>
 
 <img width="1690" height="631" alt="image" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
+<br>
 <br>
 <br>
 <h2>Statistics Endpoints</h2>
@@ -66,10 +72,12 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
+<br>
 <p>TCP</p>
 
 <img width="1734" height="186" alt="image" src="https://github.com/user-attachments/assets/ea4ed973-db86-42a7-9ea7-c2c4f2a60465" />
 
+<br>
 <br>
 <br>
 <p>UDP</p>
@@ -77,9 +85,11 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1728" height="188" alt="image" src="https://github.com/user-attachments/assets/69ca2e4e-d2ad-43c2-aa1d-73af97a1e967" />
 
 <br>
+<br>
 
 <img width="1691" height="511" alt="image" src="https://github.com/user-attachments/assets/c0921d31-47a6-49f4-a870-5c60c1dabc4d" />
 
+<br>
 <br>
 
 <img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
@@ -90,6 +100,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <img width="1692" height="410" alt="image" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
+<br>
 <br>
 <br>
 <h2>port 443</h2>
