@@ -41,7 +41,10 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
-<h2>Follow <code>TCP Stream</code></h2>
+<h2>TCP stream</code></h2>
+<p>
+
+- follow</p>
 
 <img width="1690" height="635" alt="image" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
@@ -107,15 +110,15 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 - unziped sheet.ods</p>
 
 ```bash
-:~# cat file.txt | base64 -d > sheet.ods
+:~/Pressed#  cat file.txt | base64 -d > sheet.ods
 ```
 
 ```bash
-:~# file sheet.ods
+:~/Pressed#  file sheet.ods
 sheet.ods: OpenDocument Spreadsheet
 
 
-:~# unzip sheet.ods
+:~/Pressed#  unzip sheet.ods
 Archive:  sheet.ods
  extracting: mimetype                
   inflating: Basic/Standard/evil.xml  
@@ -140,12 +143,12 @@ Archive:  sheet.ods
 ```
 
 ```bash
-:~/Basic# ls
+:~/Pressed#  ls
 script-lc.xml  Standard
 ```
 
 ```bash
-:~/Basic# cat script-lc.xml
+:~/Pressed#  cat script-lc.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE library:libraries PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "libraries.dtd">
 <library:libraries xmlns:library="http://openoffice.org/2000/library" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -154,12 +157,12 @@ script-lc.xml  Standard
 ```
 
 ```bash
-:~/Basic/Standard# ls
+:~/Pressed# ls
 evil.xml  script-lb.xml
 ```
 
 ```bash
-:~/Basic/Standard# cat evil.xml
+:~/Pressed#  cat evil.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="evil" script:language="StarBasic" script:moduleType="normal">Sub Main
@@ -172,12 +175,11 @@ End Sub
 ```
 
 ```bash
-:~/Basic/Standard# echo 'VEhNe0FfQzJfTUF5Xw==' | base64 -d
+:~/Pressed# echo 'VEhNe0FfQzJfTUF5Xw==' | base64 -d
 THM{A_C2_MAy_root@ip-10-201-26-122:~/Basic/Standard# cd ..
 ```
 
 ```bash
-:~# cd Configurations2
 :~/Configurations2# ls
 accelerator  floater  images  menubar  popupmenu  progressbar  statusbar  toolbar  toolpanel
 ```
@@ -188,16 +190,16 @@ accelerator  floater  images  menubar  popupmenu  progressbar  statusbar  toolba
 <img width="1209" height="242" alt="image" src="https://github.com/user-attachments/assets/2ad7055c-06c7-45cf-9192-a7bef33a06ef" />
 
 ```bash
-:~# file client.exe
+:~/Pressed#  file client.exe
 client.exe: PE32+ executable (console) x86-64, for MS Windows
 ```
 
 ```bash
-:~# strings client.exe > s
+:~/Pressed#  strings client.exe > s
 ```
 
 ```bash
-:~# nano s
+:~/Pressed#  nano s
 ...
 GHASH for x86_64, CRYPTOGAMS by <appro@openssl.org>
 ...
@@ -266,7 +268,7 @@ ip.src == 10.13.44.207 && tcp.port == 443
 <br>
 
 ```bash
-:~/Desktop# file data.dat
+:~/Pressed#  file data.dat
 data.dat: data
 ```
 
@@ -289,6 +291,14 @@ data.dat: data
 
 <br>
 <br>
+<h2>IV UTF-8</h2>
+
+```bash
+pEw8P3PU9kCcG4sj
+```
+
+<br>
+<br>
 <h2>IV Hex</h2>
 
 ```bash
@@ -302,7 +312,7 @@ data.dat: data
 <h2>AES 256</h2>
 
 ```bash
-:~/Desktop# openssl enc -aes-256-cbc -d -K 7268493159617a4a4c614c5667577634564b6637455149766c387073364d4a6a -iv 7045773850335055396b43634734736a -in data.dat -out outcome.txt
+:~/Pressed#  openssl enc -aes-256-cbc -d -K 7268493159617a4a4c614c5667577634564b6637455149766c387073364d4a6a -iv 7045773850335055396b43634734736a -in data.dat -out outcome.txt
 ```
 
 <p>
@@ -312,7 +322,7 @@ data.dat: data
 - RWx1RDNfWTB1X1doM25fWW91Xw==</p>
 
 ```bash
-:~/Desktop# cat outcome.txt
+:~/Pressed# cat outcome.txt
 whoami
 
 
@@ -402,11 +412,16 @@ TT\u06c0"ministrator\Desktop\clients.csvr\ufffdI\ufffd\ufffd\ufffd\ufffd`\ufffd\
 <code>VEhNe0FfQzJfTUF5Xw==</code></p>
 <br>
 
+```bash
+:~/Pressed# echo 'VEhNe0FfQzJfTUF5Xw==' | base64 -d
+THM{A_C2_MAy_root@ip-10-201-26-122:~/Basic/Standard# cd ..
+```
+
 <p>1.2. What is the second part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
 <code>RWx1RDNfWTB1X1doM25fWW91Xw==</code></p>
 
 ```bash
-# echo 'RWx1RDNfWTB1X1doM25fWW91Xw==' | base64 -d
+:~/Pressed# echo 'RWx1RDNfWTB1X1doM25fWW91Xw==' | base64 -d
 EluD3_Y0u_Wh3n_You_
 ```
 
@@ -415,7 +430,7 @@ EluD3_Y0u_Wh3n_You_
 <code>QXJlX1ByZSRzM2RfNF9UaW0zfQ==</code></p>
 
 ```bash
-# echo 'QXJlX1ByZSRzM2RfNF9UaW0zfQ==' | base64 -d
+:~/Pressed# echo 'QXJlX1ByZSRzM2RfNF9UaW0zfQ==' | base64 -d
 Are_Pre$s3d_4_Tim3}
 ```
 
@@ -465,12 +480,13 @@ Are_Pre$s3d_4_Tim3}
 <h2 align="center">My TryHackMe Journey</h2>
 
 
-<div align="center">
+<div align="center"><h6>
 
 | Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
-| 2025, Sep 6       |Easy 🚩 - <code>Classic Passwd</code> | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
+| 2025, Sep 7       |Medium 🚩 - <code><strong>Pressed</strong></code>                    | 489     |     113ʳᵈ    |     5ᵗʰ      |    508ᵗʰ   |     9ᵗʰ    | 124,886  |  948      |    73     |
+| 2025, Sep 6       |Easy 🚩 - Classic Passwd               | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
 | 2025, Sep 6       |Medium 🚩 - toc2                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ   |    12ⁿᵈ    | 124,446  |    946    |    73     |
 | 2025, Sep 6       |Hard 🚩 - Extract                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ   |    13ʳᵈ    | 124,386  |    945    |    73     |
 | 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488     |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
@@ -482,22 +498,15 @@ Are_Pre$s3d_4_Tim3}
 | 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
 | 2025, Sep 1       |Medium 🚩 - Voyage                     | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
 
-</div>
+</h6></div><br>
 
 <br>
 
-<p align="center">Global All Time:   114ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/78dec1e9-6e35-44df-bf5f-147923121f43"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/d3cd2a00-621e-47be-ac04-8f93de00bd81"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/87ddf1c2-847e-4e63-8407-1f7955272b40"><br>
-                  Global monthly:    683ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/5a5d189a-6fb8-4b64-b4b2-f40a476d22f7"><br>
-                  Brazil monthly:     12ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/10432dad-2839-4851-983e-c6bb6f9baa63"><br>
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/3b40a83d-b0ad-4075-9a3e-5b113ffebd9f"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/349d61b4-f8e5-4280-8cf0-dfd1d9b24029"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3b4753fb-92ca-4337-99d4-166819240de0"><br>
+                  Global monthly:    508ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b84172f5-3d97-46eb-92f9-121b35f95b91"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dbd475d5-1dbc-4d35-aede-5b77a7d75021"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
-
-
-
-
