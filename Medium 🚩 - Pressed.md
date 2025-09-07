@@ -42,12 +42,16 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>Statistics Protocol Hierarchy</h2>
 
+<br>
+<br>
+<h3>SMTP, Simple Message Transfer Protocol</h3>
+
 <img width="1729" height="454" alt="image" src="https://github.com/user-attachments/assets/7f438aae-0369-455d-b983-f7ee021fa930" />
+
 
 <br>
 <br>
-<br>
-<h2>Information</code></h2>
+<h3>IMF, Information Message Format</h3>
 
 <img width="1727" height="266" alt="image" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
