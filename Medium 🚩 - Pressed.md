@@ -69,7 +69,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <p align="center">Copied base64 encoded excerpt and saved it into <strong>file.txt</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
-<h2 align="center">GET</h2>
+<h2 align="center">GET</h2> 
 
 <p align="center"><strong>2962</strong>. Identified that <strong>GET</strong> request method was used with <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
