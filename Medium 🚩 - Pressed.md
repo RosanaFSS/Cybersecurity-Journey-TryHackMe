@@ -103,6 +103,9 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 <h2>GET</h2>
+<p>
+
+- client.exe</p>
 
 <img width="1692" height="410" alt="image" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
@@ -110,6 +113,9 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 <h2>port 443</h2>
+<p>
+
+- Change Cipher</p>
 
 <img width="1736" height="767" alt="image" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
