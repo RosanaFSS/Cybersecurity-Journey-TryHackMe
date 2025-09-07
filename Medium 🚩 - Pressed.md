@@ -27,6 +27,15 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
+<h2>Expert Information</h2>
+
+<img width="1691" height="511" alt="image" src="https://github.com/user-attachments/assets/c0921d31-47a6-49f4-a870-5c60c1dabc4d" />
+
+<br>
+<br>
+
+<br>
+<br>
 <h2>Statistics Protocol Hierarchy</h2>
 
 <img width="1729" height="454" alt="image" src="https://github.com/user-attachments/assets/7f438aae-0369-455d-b983-f7ee021fa930" />
