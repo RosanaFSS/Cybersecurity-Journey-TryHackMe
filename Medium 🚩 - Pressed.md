@@ -69,6 +69,11 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
+<p>
+
+- MAIL<br>
+- Username:<br>
+- Password:</p>
 
 <img width="1689" height="633" alt="image" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
