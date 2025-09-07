@@ -398,7 +398,7 @@ lone@pylon:/home$ ls
 lone  pood  pylon
 ```
 
-<h4 align="center">sudo privileges</h4>
+<h4 align="center">lone´s privileges</h4>
 
 ```bash
 lone@pylon:~$ sudo -l
