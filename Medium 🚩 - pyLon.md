@@ -880,9 +880,6 @@ pood ALL=(ALL:ALL) ALL
 Press any key to continue...
 ```
 
-<br>
-<br>
-
 <img width="978" height="99" alt="image" src="https://github.com/user-attachments/assets/5c1994ff-56c4-4226-8e67-0ccead0d1947" />
 
 <br>
@@ -933,7 +930,6 @@ Press any key to continue...
 
 <br>
 <br>
-- :q</p>
 
 <img width="1016" height="215" alt="image" src="https://github.com/user-attachments/assets/dd2a5310-ec45-43b5-8ce5-f012f6654c5d" />
 
