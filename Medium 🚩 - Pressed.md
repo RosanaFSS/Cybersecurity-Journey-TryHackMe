@@ -87,7 +87,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 
-<p align="center"><br>Saved <strong>TCP stream</strong> 1208 in <strong>data.dat</strong> setting <strong>Show as</strong> as <strong>Raw</strong>, clicking <strong>Save as ...</strong> and choosing a filename and a path.<br<img width="1200px" src="https://github.com/user-attachments/assets/feaf8271-2aa1-4d8b-bb64-735b0a546101" />
+<p align="center">Saved <strong>TCP stream</strong> 1208 in <strong>data.dat</strong> setting <strong>Show as</strong> as <strong>Raw</strong>, clickedg <strong>Save as ...</strong> and chose a filename and a path.<br><img width="1200px" src="https://github.com/user-attachments/assets/feaf8271-2aa1-4d8b-bb64-735b0a546101" />
 
 <br>
 
