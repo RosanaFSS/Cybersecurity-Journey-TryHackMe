@@ -75,15 +75,15 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <h2>Chipher Change</h2>
 
-<p align="center"><strong>29</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
+<p align="center"><strong>29</strong>. Identified that occurred a chipher change.<br><img width="1200px" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
 <h2 align="center">Cipher Suite</h2>
 
-<p align="center"><strong>2948</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
+<p align="center"><strong>2948</strong>. Identified <strong>AES 256</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
 
-<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>. Identified <strong>SMTP</strong> packets. Right-clicked <strong>SMTP</strong>strong></strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>. Identified <strong>6728</strong> and saved the content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>.<br>Right-clicked <strong>SMTP</strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>. Identified <strong>6728</strong> and saved the content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
 <br>
 <p>
