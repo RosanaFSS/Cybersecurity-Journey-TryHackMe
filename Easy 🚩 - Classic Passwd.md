@@ -4,7 +4,8 @@
 and I’m excited to join you on this adventure, part of my <code>488</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Practice your skills in reversing and get the flag bypassing the login</em>.<br>
 Access it <a href="https://tryhackme.com/room/classicpasswd"</a>here.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/8b7b3986-9a26-40dc-95de-8adb373b7f0c"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/5310755f-3c9c-4ace-971b-c87f6e26034e"></p>
+
 
 <h2>Task 1 . Get Connected</h2>
 <p>I forgot my password, can you give me access to the program?</p>
