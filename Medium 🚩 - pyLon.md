@@ -924,7 +924,7 @@ Press any key to continue...
 <br>
 <p>
 
-- ENTER</p>
+- :wq</p>
 
 <img width="1006" height="54" alt="image" src="https://github.com/user-attachments/assets/1859c953-3912-4c31-8ec4-652c36287c18" />
 
@@ -967,21 +967,6 @@ ThM{******************}
 <code>ThM{******************}</code></p>
 <br>
 
-
-
-
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| July 14, 2025     | 433      |     159ᵗʰ    |      5ᵗʰ     |    192nd    |     8ᵗʰ    |  114,735 |    855    |     64    |
-
-
-
-
-
-
-
-
 <br>
 <br>
 <h2 align="center">Completed</h2>
@@ -996,7 +981,7 @@ ThM{******************}
 | Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
-| 2025, Sep 7       |Medium 🚩 - <code><strong>pyLon</strong></code>| 489     |     113ʳᵈ    |     5ᵗʰ      |    508ᵗʰ   |     9ᵗʰ    | 124,886  |  948      |    73     |
+| 2025, Sep 7       |Medium 🚩 - <code><strong>pyLon</strong></code>| 489|     114ᵗʰ |     5ᵗʰ      |    535ᵗʰ   |     9ᵗʰ    | 124,716  |  949      |    73     |
 | 2025, Sep 7       |Medium 🚩 - Pressed                    | 489     |     113ʳᵈ    |     5ᵗʰ      |    508ᵗʰ   |     9ᵗʰ    | 124,886  |  948      |    73     |
 | 2025, Sep 6       |Easy 🚩 - Classic Passwd               | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
 | 2025, Sep 6       |Medium 🚩 - toc2                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ   |    12ⁿᵈ    | 124,446  |    946    |    73     |
@@ -1014,12 +999,11 @@ ThM{******************}
 
 <br>
 
-<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/3b40a83d-b0ad-4075-9a3e-5b113ffebd9f"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/349d61b4-f8e5-4280-8cf0-dfd1d9b24029"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3b4753fb-92ca-4337-99d4-166819240de0"><br>
-                  Global monthly:    508ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b84172f5-3d97-46eb-92f9-121b35f95b91"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dbd475d5-1dbc-4d35-aede-5b77a7d75021"><br>
+<p align="center">Global All Time:   113ʳᵈ<br><img width="250px" src="https://https://github.com/user-attachments/assets/b15ea474-0f58-4f5b-a4b2-d501890ac058"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/6d45dcca-c22a-478c-81ae-28babc0255d2"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d094c5d2-338e-4d32-afe5-da64989c8a53"><br>
+                  Global monthly:    535ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/abee1c82-04ad-4a9b-a840-9716d8b9f5f3"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/aadbffd1-c4f7-4cdc-9c10-1bdb013cd69a"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
