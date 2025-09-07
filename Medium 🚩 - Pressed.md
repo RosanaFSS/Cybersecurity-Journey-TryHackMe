@@ -79,17 +79,17 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>TCP stream</code></h2>
 
-<p align="center">Right-clicked <strong>2921</strong> and followed <strong>TCP stream</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
+<p align="center">Right-clicked <strong>2921</strong> and followed <strong>TCP stream</strong> 1205.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
 <br>
 
-<p align="center">Identified in <strong>TCP stream</strong>: <strong>MAIL</strong>, Username: <strong>hazel@pressed.thm</strong> and Password: <strong>password</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
+<p align="center">Identified in <strong>TCP stream</strong> 1205 <strong>MAIL</strong>, Username: <strong>hazel@pressed.thm</strong> and Password: <strong>password</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
 <br>
 <br>
 
-<p align="center">Copied base64 encoded excerpt and saved it into </strong>file.txt<strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
+<p align="center">Copied base64 encoded excerpt and saved it into <strong>file.txt</strong>strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
 <br>
 <br>
@@ -102,14 +102,14 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>Chipher Change</h2>
 
-<p align="center"><strong>28</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
+<p align="center"><strong>29</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
 <br>
 <br>
 <br>
 <h2>Cipher Suite</h2>
 
-<p align="center"><strong>6666</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
+<p align="center"><strong>2948</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
 <br>
@@ -120,7 +120,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 </p>
 - saved base64 encoded data into <code>file.txt</code></p>
 
-<img width="1735" height="764" alt="image" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+<p align="center"><strong>2948</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
 <br>
 <br>
