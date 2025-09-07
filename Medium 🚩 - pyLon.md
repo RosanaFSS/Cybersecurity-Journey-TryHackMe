@@ -869,7 +869,8 @@ pood@pylon:/tmp$ chmod +x exploit.sh
 
 <p>
 
-- pood ALL=(ALL:ALL) ALL</p>
+- pood ALL=(ALL:ALL) ALL<br>
+- ENTER</p>
 
 ```bash 
 pood@pylon:/tmp$ ./exploit.sh
@@ -881,15 +882,15 @@ Press any key to continue...
 
 <br>
 <br>
-<p>
-
-- ENTER</p>
-
 
 <img width="978" height="99" alt="image" src="https://github.com/user-attachments/assets/5c1994ff-56c4-4226-8e67-0ccead0d1947" />
 
 <br>
 <br>
+<p>
+
+- ENTER</p>
+
 
 <img width="1015" height="742" alt="image" src="https://github.com/user-attachments/assets/e3eb9d2d-28e6-448a-92a8-05c8951bc72e" />
 
