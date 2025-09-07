@@ -67,7 +67,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<p align="center">There is <strong>1</strong> IMF packet. Right-click. <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">Identified <strong>1</strong> IMF packet. Right-clicked > <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
@@ -89,7 +89,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 
-<p align="center">Copied base64 encoded excerpt and saved it into <strong>file.txt</strong>strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
+<p align="center">Copied base64 encoded excerpt and saved it into <strong>file.txt</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
 <br>
 <br>
@@ -115,12 +115,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 
-<p>
- 
-</p>
-- saved base64 encoded data into <code>file.txt</code></p>
-
-<p align="center"><strong>2948</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+<p align="center">Navigated to Protocol Hierarchy Statistics. Identified <strong>SMTP</strong> packets. Right-clicked SMTP > <strong>Apply as Filter</strong> > <strong>Selected</strong>. Identified <strong>6728</strong> and saved the content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
 <br>
 <br>
