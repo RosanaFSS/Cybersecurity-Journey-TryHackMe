@@ -897,6 +897,8 @@ Press any key to continue...
 
 <br>
 <br>
+<p>
+  
 - :wq</p>
 
 <img width="996" height="70" alt="image" src="https://github.com/user-attachments/assets/d9f30090-d897-42ad-876c-6728ee924a9b" />
@@ -905,15 +907,18 @@ Press any key to continue...
 <br>
 <p>
 
-- :q</p>
+- ENTER</p>
 
 <img width="1006" height="54" alt="image" src="https://github.com/user-attachments/assets/1859c953-3912-4c31-8ec4-652c36287c18" />
 
 <br>
 <br>
+- :q</p>
 
 <img width="1016" height="215" alt="image" src="https://github.com/user-attachments/assets/dd2a5310-ec45-43b5-8ce5-f012f6654c5d" />
 
+<br>
+<br>
 
 ```bash 
 root@pylon:~# id
