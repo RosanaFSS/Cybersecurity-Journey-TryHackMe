@@ -210,10 +210,8 @@ VWSUATAUAVAW
 VWSUATAUAVAW
 ```
 
-<br>
 <h2>Ghidra</h2>
 
-<br>
 <h4>Key UTF-8</h4>
 <p>
  
