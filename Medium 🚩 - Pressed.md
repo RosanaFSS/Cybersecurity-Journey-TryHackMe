@@ -72,13 +72,18 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <p>
 
 - MAIL<br>
-- Username:<br>
-- Password:</p>
+- Username: hazel@pressed.thm<br>
+- Password: password</p>
 
 <img width="1689" height="633" alt="image" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
 <br>
 <br>
+<p>
+
+- copied base64 encoded excerpt<br>
+- saved it to <br>
+- Password: password</p>
 
 <img width="1690" height="631" alt="image" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
@@ -128,7 +133,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <p>
 
-- save Base64 encoded data into <code>file.txt</code></p>
+- saved base64 encoded data into <code>file.txt</code></p>
 
 <img width="1735" height="764" alt="image" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
@@ -136,8 +141,8 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <p>
 
-- base64 decoded <code>file.txt</code> into <code>sheet.ods</code><br>
-- unziped code>sheet.ods</code></p>
+- decoded <code>file.txt</code> into <code>sheet.ods</code><br>
+- unziped <code>sheet.ods</code></p>
 
 ```bash
 :~/Pressed#  cat file.txt | base64 -d > sheet.ods
