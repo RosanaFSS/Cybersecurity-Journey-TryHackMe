@@ -843,6 +843,7 @@ User pood may run the following commands on pylon:
 pood@pylon:~$ sudoedit /opt/openvpn/client.ovpn
 ```
 
+<br>
 <h2 align="center">CVE-2023-22809, Sudo Edit Privilege Escalation</h2>
 
 ```bash 
@@ -866,11 +867,6 @@ pood ALL=(ALL:ALL) ALL
 Press any key to continue...
 ```
 
-<p>
-
-- added <strong>pood ALL=(ALL:ALL) ALL</strong></p>
-
-
 <img width="978" height="99" alt="image" src="https://github.com/user-attachments/assets/5c1994ff-56c4-4226-8e67-0ccead0d1947" />
 
 <br>
@@ -880,11 +876,17 @@ Press any key to continue...
 
 <br>
 <br>
+<p>
+
+- added <strong>pood ALL=(ALL:ALL) ALL</strong></p>
 
 <img width="1011" height="739" alt="image" src="https://github.com/user-attachments/assets/1f2e76f7-dbed-4a48-a258-25f102395bc8" />
 
 <br>
 <br>
+<p>
+
+- :wq</p>
 
 <img width="1015" height="659" alt="image" src="https://github.com/user-attachments/assets/7bbcbdac-d8db-4cef-b051-f2151a354b22" />
 
