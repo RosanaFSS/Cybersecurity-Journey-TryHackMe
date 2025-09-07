@@ -33,6 +33,10 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
+<br>
+<h2>Cipher Suite</h2>
+
+<img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
 <br>
@@ -92,16 +96,6 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <p>UDP</p>
 
 <img width="1728" height="188" alt="image" src="https://github.com/user-attachments/assets/69ca2e4e-d2ad-43c2-aa1d-73af97a1e967" />
-
-<br>
-<br>
-
-<img width="1691" height="511" alt="image" src="https://github.com/user-attachments/assets/c0921d31-47a6-49f4-a870-5c60c1dabc4d" />
-
-<br>
-<br>
-
-<img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
 <br>
