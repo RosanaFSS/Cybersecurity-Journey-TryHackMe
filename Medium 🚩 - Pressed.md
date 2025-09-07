@@ -67,7 +67,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<p align="center">Frame <strong>2921</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">Frame <strong>1 IMF packet</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
