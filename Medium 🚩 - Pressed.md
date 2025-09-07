@@ -79,7 +79,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>TCP stream</code></h2>
 
-<p align="center">Right click <strong>2921</strong>. Follow <strong>TCP stream</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
+<p align="center">Right-clicked <strong>2921</strong> and followed <strong>TCP stream</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
 <br>
@@ -95,23 +95,21 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>GET</h2>
 
-<p align="center">Identified </strong>client.exe<strong>. GET request method was used.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
+<p align="center"><strong>GET</strong> request method was used. Identified <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
 <br>
 <br>
 <br>
-
 <h2>Chipher Change</h2>
 
-<img width="1736" height="767" alt="image" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
+<p align="center"><strong>28</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/be15e4f5-611d-4913-b53a-80545bc111a3" />
 
 <br>
 <br>
 <br>
 <h2>Cipher Suite</h2>
 
-<img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
-
+<p align="center"><strong>6666</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
 <br>
