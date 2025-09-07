@@ -27,45 +27,29 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
-<h2>Expert Information</h2>
+<h2 align="center">Expert Information</h2>
 
-<img width="1691" height="511" alt="image" src="https://github.com/user-attachments/assets/c0921d31-47a6-49f4-a870-5c60c1dabc4d" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c0921d31-47a6-49f4-a870-5c60c1dabc4d" />
 
-<br>
-<br>
-<br>
-<h2>Statistics Endpoints</h2>
+<h2 align="center">Statistics Endpoints</h2>
 
-<p>IPv4</p>
-
-<img width="1729" height="178" alt="image" src="https://github.com/user-attachments/assets/13e3f781-3c44-444d-85ed-5f33f91bf22a" />
+<p align="center">IPV4<br><img width="1200px" src="https://github.com/user-attachments/assets/13e3f781-3c44-444d-85ed-5f33f91bf22a" />
 
 <br>
-<br>
-<br>
-<p>TCP</p>
 
-<img width="1734" height="186" alt="image" src="https://github.com/user-attachments/assets/ea4ed973-db86-42a7-9ea7-c2c4f2a60465" />
+<p align="center">TCP<br><img width="1200px" src="https://github.com/user-attachments/assets/ea4ed973-db86-42a7-9ea7-c2c4f2a60465" />
 
 <br>
-<br>
-<br>
-<p>UDP</p>
 
-<img width="1728" height="188" alt="image" src="https://github.com/user-attachments/assets/69ca2e4e-d2ad-43c2-aa1d-73af97a1e967" />
+<p align="center">UDP<br><img width="1200px" src="https://github.com/user-attachments/assets/69ca2e4e-d2ad-43c2-aa1d-73af97a1e967" />
 
-<br>
-<br>
-<br>
-<h2>Statistics Protocol Hierarchy</h2>
+<h2 align="center">Statistics Protocol Hierarchy</h2>
 
-<h3>SMTP, Simple Message Transfer Protocol</h3>
+<h3 align="center">SMTP, Simple Message Transfer Protocol</h3>
 
 <img width="1729" height="454" alt="image" src="https://github.com/user-attachments/assets/7f438aae-0369-455d-b983-f7ee021fa930" />
 
-
-<br>
-<h3>IMF, Information Message Format</h3>
+<h3 align="center">IMF, Information Message Format</h3>
 
 <p align="center">Identified <strong>1</strong> IMF packet. Right-clicked > <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
@@ -77,7 +61,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 <br>
-<h2>TCP stream</code></h2>
+<h2 align="center">TCP stream</code></h2>
 
 <p align="center">Right-clicked <strong>2921</strong> and followed <strong>TCP stream</strong> 1205.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
@@ -93,9 +77,9 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
-<h2>GET</h2>
+<h2 align="center">GET</h2>
 
-<p align="center"><strong>GET</strong> request method was used. Identified <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
+<p align="center">Identified that <strong>GET</strong> request method was used with <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
 <br>
 <br>
@@ -107,7 +91,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 <br>
-<h2>Cipher Suite</h2>
+<h2 align="center">Cipher Suite</h2>
 
 <p align="center"><strong>2948</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
@@ -115,7 +99,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <br>
 
-<p align="center">Navigated to Protocol Hierarchy Statistics. Identified <strong>SMTP</strong> packets. Right-clicked SMTP > <strong>Apply as Filter</strong> > <strong>Selected</strong>. Identified <strong>6728</strong> and saved the content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>. Identified <strong>SMTP</strong> packets. Right-clicked <strong>SMTP</strong>strong></strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>. Identified <strong>6728</strong> and saved the content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
 <br>
 <br>
