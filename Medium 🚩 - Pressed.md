@@ -67,7 +67,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<p align="center">There is <strong>1</strong> IMF packet. Right-click. Apply as Filer > Select.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">There is <strong>1</strong> IMF packet. Right-click. <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
@@ -89,7 +89,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 - Username: hazel@pressed.thm<br>
 - Password: password</p>
 
-<img width="1689" height="633" alt="image" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
 <br>
 <br>
