@@ -880,6 +880,11 @@ Press any key to continue...
 ```
 
 <br>
+<br>
+<p>
+
+- ENTER</p>
+
 
 <img width="978" height="99" alt="image" src="https://github.com/user-attachments/assets/5c1994ff-56c4-4226-8e67-0ccead0d1947" />
 
