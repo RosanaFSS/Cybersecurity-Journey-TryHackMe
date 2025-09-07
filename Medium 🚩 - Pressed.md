@@ -26,6 +26,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <p><em>Answer the questiona below</em></p>
 
 <br>
+<br>
 <h2>Statistics Protocol Hierarchy</h2>
 
 <img width="1729" height="454" alt="image" src="https://github.com/user-attachments/assets/7f438aae-0369-455d-b983-f7ee021fa930" />
@@ -39,9 +40,8 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1695" height="637" alt="image" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354" />
 
 <br>
-
-<p>
-- Follow <code>TCP Stream</code></p
+<br>
+<h2>Follow <code>TCP Stream</code></h2>
 
 <img width="1690" height="635" alt="image" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
@@ -53,7 +53,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <img width="1690" height="631" alt="image" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
-
+<br>
 <br>
 <h2>Statistics Endpoints</h2>
 
@@ -62,10 +62,12 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1729" height="178" alt="image" src="https://github.com/user-attachments/assets/13e3f781-3c44-444d-85ed-5f33f91bf22a" />
 
 <br>
+<br>
 <p>TCP</p>
 
 <img width="1734" height="186" alt="image" src="https://github.com/user-attachments/assets/ea4ed973-db86-42a7-9ea7-c2c4f2a60465" />
 
+<br>
 <br>
 <p>UDP</p>
 
@@ -80,10 +82,12 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <img width="1693" height="299" alt="image" src="https://github.com/user-attachments/assets/71d4e1c3-46a9-47e5-bde8-33e0a11adc30" />
 
 <br>
+<br>
 <h2>GET</h2>
 
 <img width="1692" height="410" alt="image" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
+<br>
 <br>
 <h2>port 443</h2>
 
@@ -172,15 +176,13 @@ End Sub
 THM{A_C2_MAy_root@ip-10-201-26-122:~/Basic/Standard# cd ..
 ```
 
-
 ```bash
 :~# cd Configurations2
 :~/Configurations2# ls
 accelerator  floater  images  menubar  popupmenu  progressbar  statusbar  toolbar  toolpanel
 ```
 
-
-
+<br>
 <h2>client.exe</h2>
 
 <img width="1209" height="242" alt="image" src="https://github.com/user-attachments/assets/2ad7055c-06c7-45cf-9192-a7bef33a06ef" />
@@ -190,11 +192,9 @@ accelerator  floater  images  menubar  popupmenu  progressbar  statusbar  toolba
 client.exe: PE32+ executable (console) x86-64, for MS Windows
 ```
 
-
 ```bash
 :~# strings client.exe > s
 ```
-
 
 ```bash
 :~# nano s
@@ -229,6 +229,7 @@ VWSUATAUAVAW
 <img width="1347" height="513" alt="image" src="https://github.com/user-attachments/assets/19a77669-6e64-42fa-a39e-faf21e820708" />
 
 <br>
+<br>
 <h4>IV UTF-8</h4>
 <p>
 - pEw8P3PU9kCcG4sj</p>
@@ -236,13 +237,13 @@ VWSUATAUAVAW
 <img width="1347" height="447" alt="image" src="https://github.com/user-attachments/assets/3cb1982e-f90b-4c80-8e6f-3aadeab10e10" />
 
 <br>
+<br>
 <h2>Wireshark</h2>
 
 ```bash
 ip.src == 10.13.44.207 && tcp.port == 443
 ```
 
-<br>
 <img width="1617" height="374" alt="image" src="https://github.com/user-attachments/assets/a9f1c0cf-d801-4868-a95c-2cd8d7b0864e" />
 
 <br>
@@ -252,14 +253,16 @@ ip.src == 10.13.44.207 && tcp.port == 443
 <br>
 
 <img width="1611" height="704" alt="image" src="https://github.com/user-attachments/assets/ba07666b-ea6c-4a0f-93f0-f79fe02a3626" />
-<br>
 
+<br>
+<br>
 <p>
 - Show as <code>Raw</code><br>
 - <code>Save as ...</code></p>
 
 <img width="1075" height="856" alt="image" src="https://github.com/user-attachments/assets/feaf8271-2aa1-4d8b-bb64-735b0a546101" />
 
+<br>
 <br>
 
 ```bash
@@ -271,15 +274,18 @@ data.dat: data
 <p>
 - rhI1YazJLaLVgWv4VKf7EQIvl8ps6MJj</code></p>
 
-
 <img width="1364" height="203" alt="image" src="https://github.com/user-attachments/assets/d00018e9-d974-4235-af64-1f17fc89f432" />
 
+<br>
+<br>
 <h2>Key Hex</h2>
 
 ```bash
 7268493159617a4a4c614c5667577634564b6637455149766c387073364d4a6a
 ```
 
+<br>
+<br>
 <h2>IV Hex</h2>
 
 ```bash
@@ -288,10 +294,9 @@ data.dat: data
 
 <img width="1359" height="184" alt="image" src="https://github.com/user-attachments/assets/7298121d-af6e-470d-91ed-1555774064b7" />
 
-
-
-<h2>Decrypt</h2>
-
+<br>
+<br>
+<h2>AES 256</h2>
 
 ```bash
 :~/Desktop# openssl enc -aes-256-cbc -d -K 7268493159617a4a4c614c5667577634564b6637455149766c387073364d4a6a -iv 7045773850335055396b43634734736a -in data.dat -out outcome.txt
@@ -389,10 +394,10 @@ TT\u06c0"ministrator\Desktop\clients.csvr\ufffdI\ufffd\ufffd\ufffd\ufffd`\ufffd\
 30,Michal,5462675671244662
 ```
 
-
+<br>
 <p>1.1. What is the first part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
 <code>VEhNe0FfQzJfTUF5Xw==</code></p>
-
+<br>
 
 <p>1.2. What is the second part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
 <code>RWx1RDNfWTB1X1doM25fWW91Xw==</code></p>
@@ -406,7 +411,6 @@ EluD3_Y0u_Wh3n_You_
 <p>1.3. What is the third part of the encoded flag value? Format: Paste the encoded value. Not the decoded value.<br>
 <code>QXJlX1ByZSRzM2RfNF9UaW0zfQ==</code></p>
 
-
 ```bash
 # echo 'QXJlX1ByZSRzM2RfNF9UaW0zfQ==' | base64 -d
 Are_Pre$s3d_4_Tim3}
@@ -414,16 +418,15 @@ Are_Pre$s3d_4_Tim3}
 
 <img width="1614" height="707" alt="image" src="https://github.com/user-attachments/assets/21d21ee1-eb22-48e7-b10b-9fc55fe87a2e" />
 
-
 <br>
 <br>
 <p>1.4. What is the flag? Format: Paste the decoded values.<br>
 <code>THM{A_C2_MAy_EluD3_Y0u_Wh3n_You_Are_Pre$s3d_4_Tim3}</code></p>
-
 <br>
 
 <img width="1740" height="178" alt="image" src="https://github.com/user-attachments/assets/9e2f7b81-81df-4d60-a4af-56b079487ea9" />
 
+<br>
 <br>
 <p>
  
@@ -432,13 +435,11 @@ Are_Pre$s3d_4_Tim3}
 - C = QXJlX1ByZSRzM2RfNF9UaW0zfQ==  Are_Pre$s3d_4_Tim3}<br>
 - A + B + C = THM{A_C2_MAy_EluD3_Y0u_Wh3n_You_Are_Pre$s3d_4_Tim3}</p>
 
-
-
+<br>
 <h2>CyberChef</h2>
 <p>
 
 - AES Decrypt recipe</p>
-
 
 <img width="1735" height="244" alt="image" src="https://github.com/user-attachments/assets/52ab0148-4018-4a2a-b2b2-2bb107d3b9cc" />
 
@@ -453,13 +454,43 @@ Are_Pre$s3d_4_Tim3}
 
 <br>
 <br>
+<br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/90f9e6c2-dd7e-4f2e-87eb-a185420e42c9"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/94097061-113b-4f16-b043-b338df6ee583"></p>
+
+<h2 align="center">My TryHackMe Journey</h2>
 
 
+<div align="center">
 
-<img width="1905" height="893" alt="image" src="https://github.com/user-attachments/assets/90f9e6c2-dd7e-4f2e-87eb-a185420e42c9" />
+| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
+| 2025, Sep 6       |Easy 🚩 - <code>Classic Passwd</code> | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
+| 2025, Sep 6       |Medium 🚩 - toc2                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ   |    12ⁿᵈ    | 124,446  |    946    |    73     |
+| 2025, Sep 6       |Hard 🚩 - Extract                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ   |    13ʳᵈ    | 124,386  |    945    |    73     |
+| 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488     |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
+| 2025, Sep 5       |Medium 🚩 - Inferno                    | 487     |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ   |    12ⁿᵈ    | 124,236  |    943    |    73     |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487     |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    942    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486     |	   113ʳᵈ   |	     5ᵗʰ   	|      579ᵗʰ   |	  10ᵗʰ    |	124,018  |	  940	   |    73     |
+| 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486     |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485     |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
+| 2025, Sep 1       |Medium 🚩 - Voyage                     | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
 
-<img width="1907" height="897" alt="image" src="https://github.com/user-attachments/assets/94097061-113b-4f16-b043-b338df6ee583" />
+</div>
 
+<br>
+
+<p align="center">Global All Time:   114ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/78dec1e9-6e35-44df-bf5f-147923121f43"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d3cd2a00-621e-47be-ac04-8f93de00bd81"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/87ddf1c2-847e-4e63-8407-1f7955272b40"><br>
+                  Global monthly:    683ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/5a5d189a-6fb8-4b64-b4b2-f40a476d22f7"><br>
+                  Brazil monthly:     12ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/10432dad-2839-4851-983e-c6bb6f9baa63"><br>
+
+<h2 align="center">Thanks for coming!</h2>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
 
 
