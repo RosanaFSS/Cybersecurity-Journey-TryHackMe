@@ -71,7 +71,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <h2 align="center">GET</h2>
 
-<p align="center">Identified that <strong>GET</strong> request method was used with <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
+<p align="center"><strong>2962</strong>. Identified that <strong>GET</strong> request method was used with <strong>client.exe</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
 <h2>Chipher Change</h2>
 
@@ -83,7 +83,7 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 
-<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>.<br>Right-clicked <strong>SMTP</strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>. <strong>40</strong> were filtered.<br>Right-clicked and followed <strong>TCP stream</strong> 1208.<br>Identified <strong>6728</strong> and saved its content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>.<br>Right-clicked <strong>SMTP</strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br> <strong>40</strong> packets were filtered. Right-clicked and followed <strong>TCP stream</strong> 1208.<br>Identified <strong>6728</strong> and saved its content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
 
 <br>
 <p>
