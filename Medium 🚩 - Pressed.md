@@ -83,7 +83,19 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 
-<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>.<br>Right-clicked <strong>SMTP</strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br> <strong>40</strong> packets were filtered. Right-clicked and followed <strong>TCP stream</strong> 1208.<br>Saved its content into a file.<br><img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+<p align="center">Navigated to <strong>Statistics Protocol Hierarchy</strong>.<br>Right-clicked <strong>SMTP</strong> > <strong>Apply as Filter</strong> > <strong>Selected</strong>.<br> <strong>40</strong> packets were filtered. Right-clicked and followed <strong>TCP stream</strong> 1208.<img width="1200px" src="https://github.com/user-attachments/assets/fd496ef2-7816-4db5-8afb-55067b4e0569" />
+
+<br>
+
+<p align="center"><br>Saved <strong>TCP stream</strong> 1208 in <strong>data.dat</strong> setting <strong>Show as</strong> as <strong>Raw</strong>, clicking <strong>Save as ...</strong> and choosing a filename and a path.<br<img width="1200px" src="https://github.com/user-attachments/assets/feaf8271-2aa1-4d8b-bb64-735b0a546101" />
+
+<br>
+
+```bash
+:~/Pressed#  file data.dat
+data.dat: data
+```
+
 
 <br>
 <p>
@@ -178,7 +190,7 @@ THM{A_C2_MAy_root@ip-10-201-26-122:~/Basic/Standard# cd ..
 ```
 
 <br>
-<h2>client.exe</h2>
+<h2 align="center">client.exe</h2>
 
 <img width="1209" height="242" alt="image" src="https://github.com/user-attachments/assets/2ad7055c-06c7-45cf-9192-a7bef33a06ef" />
 
@@ -205,9 +217,9 @@ VWSUATAUAVAW
 VWSUATAUAVAW
 ```
 
-<h4>Ghidra</h4>
+<h4 align="center">Ghidra</h4>
 
-<h5>Key UTF-8</h5>
+<h5 align="center">Key UTF-8</h5>
 <p>
  
 - A = rhI1YazJLaLVgWv4<br>
@@ -223,7 +235,7 @@ VWSUATAUAVAW
 
 <br>
 <br>
-<h5>IV UTF-8</h5>
+<h5 align="center">IV UTF-8</h5>
 <p>
  
 - pEw8P3PU9kCcG4sj</p>
@@ -232,7 +244,7 @@ VWSUATAUAVAW
 
 <br>
 <br>
-<h2>Wireshark</h2>
+<h2 align="center">Wireshark</h2>
 
 ```bash
 ip.src == 10.13.44.207 && tcp.port == 443
@@ -248,51 +260,27 @@ ip.src == 10.13.44.207 && tcp.port == 443
 
 <img width="1611" height="704" alt="image" src="https://github.com/user-attachments/assets/ba07666b-ea6c-4a0f-93f0-f79fe02a3626" />
 
-<br>
-<br>
-<p>
- 
-- Show as <code>Raw</code><br>
-- <code>Save as ...</code></p>
-
-<img width="1075" height="856" alt="image" src="https://github.com/user-attachments/assets/feaf8271-2aa1-4d8b-bb64-735b0a546101" />
-
-<br>
-<br>
-
-```bash
-:~/Pressed#  file data.dat
-data.dat: data
-```
-
-<br>
-<br>
-<h2>Key UTF-8</h2>
+<h2 align="center">Key UTF-8</h2>
 <p>
  
 - rhI1YazJLaLVgWv4VKf7EQIvl8ps6MJj</code></p>
 
 <img width="1364" height="203" alt="image" src="https://github.com/user-attachments/assets/d00018e9-d974-4235-af64-1f17fc89f432" />
 
-<br>
-<br>
-<h2>Key Hex</h2>
+
+<h2 align="center">Key Hex</h2>
 
 ```bash
 7268493159617a4a4c614c5667577634564b6637455149766c387073364d4a6a
 ```
 
-<br>
-<br>
-<h2>IV UTF-8</h2>
+<h2 align="center">IV UTF-8</h2>
 
 ```bash
 pEw8P3PU9kCcG4sj
 ```
 
-<br>
-<br>
-<h2>IV Hex</h2>
+<h2 align="center">IV Hex</h2>
 
 ```bash
 7045773850335055396b43634734736a
@@ -300,9 +288,8 @@ pEw8P3PU9kCcG4sj
 
 <img width="1359" height="184" alt="image" src="https://github.com/user-attachments/assets/7298121d-af6e-470d-91ed-1555774064b7" />
 
-<br>
-<br>
-<h2>AES 256</h2>
+
+<h2 align="center">AES 256</h2>
 
 ```bash
 :~/Pressed#  openssl enc -aes-256-cbc -d -K 7268493159617a4a4c614c5667577634564b6637455149766c387073364d4a6a -iv 7045773850335055396b43634734736a -in data.dat -out outcome.txt
@@ -452,7 +439,7 @@ Are_Pre$s3d_4_Tim3}
 - A + B + C = THM{A_C2_MAy_EluD3_Y0u_Wh3n_You_Are_Pre$s3d_4_Tim3}</p>
 
 <br>
-<h2>CyberChef</h2>
+<h2 align="center">CyberChef</h2>
 <p>
 
 - AES Decrypt recipe</p>
