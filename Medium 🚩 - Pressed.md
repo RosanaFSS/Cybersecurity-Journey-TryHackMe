@@ -67,22 +67,19 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h3>IMF, Information Message Format</h3>
 
-<p align="center">Frame <strong>1 IMF packet</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
+<p align="center">Frame <strong>1</strong> IMF packet<br><img width="1200px" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
 <br>
 <br>
 
-<p align="center">Frame <strong>2921</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354" />
+<p align="center"><strong>2921</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/13a62aa0-c254-4ec2-9420-e05b6cc63354" />
 
 <br>
 <br>
 <br>
 <h2>TCP stream</code></h2>
-<p>
 
-- follow</p>
-
-<img width="1690" height="635" alt="image" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
+<p align="center">Follow TCP Stream - <strong>2921</strong><br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
 <br>
