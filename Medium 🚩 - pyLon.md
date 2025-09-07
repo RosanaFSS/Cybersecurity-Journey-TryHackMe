@@ -410,6 +410,9 @@ User lone may run the following commands on pylon:
     (root) /usr/sbin/openvpn /opt/openvpn/client.ovpn
 ```
 
+<h4 align="center">/pylon</h4>
+
+
 ```bash
 lone@pylon:~$ cd pylon/
 ```
@@ -426,6 +429,8 @@ drwxrwxr-x 8 lone lone 4096 Jan 30  2021 .git/
 -rw-rw-r-- 1 lone lone 2195 Jan 30  2021 pyLon_crypt.py
 -rw-rw-r-- 1 lone lone 3973 Jan 30  2021 pyLon_db.py
 ```
+
+<h4 align="center">.git</h4>
 
 ```bash
 lone@pylon:~/pylon$ cd .git
@@ -860,12 +865,21 @@ pood@pylon:/tmp$ nano exploit.sh
 
 ```bash 
 pood@pylon:/tmp$ chmod +x exploit.sh
+```
+
+<p>
+
+- pood ALL=(ALL:ALL) ALL</p>
+
+```bash 
 pood@pylon:/tmp$ ./exploit.sh
 > BINGO! User exploitable
 > Opening sudoers file, please add the following line to the file in order to do the privesc:
 pood ALL=(ALL:ALL) ALL
 Press any key to continue...
 ```
+
+<br>
 
 <img width="978" height="99" alt="image" src="https://github.com/user-attachments/assets/5c1994ff-56c4-4226-8e67-0ccead0d1947" />
 
@@ -899,7 +913,7 @@ Press any key to continue...
 <br>
 <p>
   
-- :wq</p>
+- ENTER</p>
 
 <img width="996" height="70" alt="image" src="https://github.com/user-attachments/assets/d9f30090-d897-42ad-876c-6728ee924a9b" />
 
