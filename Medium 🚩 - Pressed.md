@@ -79,35 +79,23 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 <br>
 <h2>TCP stream</code></h2>
 
-<p align="center">Right click <strong>2921</strong>. Follow TCP stream.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
+<p align="center">Right click <strong>2921</strong>. Follow <strong>TCP stream</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/37d1cc7c-329f-4bf6-acde-403c551c35f4" />
 
 <br>
 <br>
-<p>
 
-- MAIL<br>
-- Username: hazel@pressed.thm<br>
-- Password: password</p>
-
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
+<p align="center">Identified in <strong>TCP stream</strong>: <strong>MAIL</strong>, Username: <strong>hazel@pressed.thm</strong> and Password: <strong>password</strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/c1bcbcff-8093-410c-9065-6e216b813adb" />
 
 <br>
 <br>
-<p>
 
-- copied base64 encoded excerpt<br>
-- saved it to  <code>file.txt</code></p>
-
-<img width="1690" height="631" alt="image" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
+<p align="center">Copied base64 encoded excerpt and saved it into </strong>file.txt<strong>.<br><img width="1200px" src="https://github.com/user-attachments/assets/bdb6b7fe-0715-4295-afdb-04c0e7f84a86" />
 
 <br>
 <br>
 <h2>GET</h2>
-<p>
 
-- client.exe</p>
-
-<img width="1692" height="410" alt="image" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
+<p align="center">Identified </strong>client.exe<strong>. GET request method was used.<br><img width="1200px" src="https://github.com/user-attachments/assets/664ece8a-2814-40ee-a86b-0c04c25bf1ca" />
 
 <br>
 <br>
