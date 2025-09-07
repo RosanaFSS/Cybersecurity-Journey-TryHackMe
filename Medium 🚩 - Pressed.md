@@ -46,6 +46,8 @@ Note: If in <code>split-screen view</code>, you see the Dock panel in the middle
 
 <br>
 <br>
+<br>
+<h2>Information</code></h2>
 
 <img width="1727" height="266" alt="image" src="https://github.com/user-attachments/assets/b3c99074-fbea-46d0-b2f5-f31690c55da4" />
 
