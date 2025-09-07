@@ -1,5 +1,5 @@
 <h1 align="center">pyLon</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/135028fa-b078-4382-9e63-20837b7f5094"><br>
+<p align="center"><img width="120px" src="https://github.com/user-attachments/assets/135028fa-b078-4382-9e63-20837b7f5094"><br>
 2025, September 7<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>489</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Can you penetrate the defenses and become root</em>?<br>
