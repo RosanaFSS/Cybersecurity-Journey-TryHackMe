@@ -457,9 +457,6 @@ PS C:\Users\enterprise-security\Downloads>
 
 <img width="1290" height="628" alt="image" src="https://github.com/user-attachments/assets/fe62514c-b69d-4470-a475-be13f27f336f" />
 
-<img width="1298" height="617" alt="image" src="https://github.com/user-attachments/assets/9b0c793d-5f28-41f1-b4e4-52879ab64313" />
-
-
 <br>
 <p>1.1.  What is the user flag? (Desktop\user.txt)<br>
 <code>THM{*****************************}</code></p>
