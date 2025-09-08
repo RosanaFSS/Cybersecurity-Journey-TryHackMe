@@ -18,29 +18,31 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/iosfore
 
 <img width="1023" height="488" alt="image" src="https://github.com/user-attachments/assets/798857a3-8f37-4867-8a42-8978b2077753" />
 
-
+<br>
 <p>9.2. What did the SMS message say?<br>
 <code>Did you get the goods?</code>
 
 <img width="1019" height="484" alt="image" src="https://github.com/user-attachments/assets/7048e379-bacb-4364-a45f-adecb94cb4bb" />
 
-
+<br>
 <p>9.3. Looking at the address book, what is the first name of the other person in the contacts?<br>
-<code>Jenny/code></p>
+<code>Jenny</code></p>
 
 <img width="1018" height="489" alt="image" src="https://github.com/user-attachments/assets/73447743-b491-48ae-91f4-15eadd135560" />
 
+<br>
 <p>9.4. Following on from Question #3, what is their listed "Organization"<br>
 <code>Transportation</code></p>
 
 <img width="1023" height="488" alt="image" src="https://github.com/user-attachments/assets/254c05b0-b4cc-4883-8f6b-737019347419" />
 
+<br>
 <p>9.5. Investigate their browsing history, what is the address of the website that they have bookmarked?    <br>
 <code>https://blog.cmnatic.co.uk</code></p>
 
 <img width="1022" height="493" alt="image" src="https://github.com/user-attachments/assets/7f67547c-2680-4449-8b41-9633231998b6" />
 
-
+<br>
 <p>9.6. The suspected received an email, what is the remote_id of the sender?<br>
 <code>51.32.56.12</code>
 
@@ -51,12 +53,13 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/iosfore
 
 <img width="1222" height="480" alt="image" src="https://github.com/user-attachments/assets/2cec9a0e-769f-4add-8be5-8beb0fc97eb9" />
 
-
+<br>
 <p>9.7. What is the name of the company on one of the images stored on the suspects phone?<br>
 <code>TryHackMe</code>
 
 <img width="836" height="306" alt="image" src="https://github.com/user-attachments/assets/c9bc82d1-4daf-4644-8265-2795a48e9dc8" />
 
+<br>
 <p>9.8.What is the value of the cookie that was left behind?<br>
 <code>THM{COOKIES!!!}</code>
 
@@ -64,7 +67,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/iosfore
 
 <img width="811" height="357" alt="image" src="https://github.com/user-attachments/assets/3f9cde64-9c1a-499f-a3c6-67f053afaa4f" />
 
-
+<br>
 <h2Task 10 . Bonus: You have the loot, but I´ve got the body.</H2>
 
 <p><em>Answer the question below</em></p>
