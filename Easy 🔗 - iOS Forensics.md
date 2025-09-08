@@ -44,7 +44,7 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/iosfore
 
 <br>
 <p>9.6. The suspected received an email, what is the remote_id of the sender?<br>
-<code>51.32.56.12</code>
+<code>51.32.56.12</code></p>
 
 
 <img width="1017" height="472" alt="image" src="https://github.com/user-attachments/assets/88af8f90-e49b-4490-94db-bdd30a849e92" />
@@ -55,13 +55,13 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/iosfore
 
 <br>
 <p>9.7. What is the name of the company on one of the images stored on the suspects phone?<br>
-<code>TryHackMe</code>
+<code>TryHackMe</code></p>
 
 <img width="836" height="306" alt="image" src="https://github.com/user-attachments/assets/c9bc82d1-4daf-4644-8265-2795a48e9dc8" />
 
 <br>
 <p>9.8.What is the value of the cookie that was left behind?<br>
-<code>THM{COOKIES!!!}</code>
+<code>THM{COOKIES!!!}</code></p>
 
 <img width="836" height="218" alt="image" src="https://github.com/user-attachments/assets/87dd0e64-975e-4a83-8114-aefbaabb8122" />
 
