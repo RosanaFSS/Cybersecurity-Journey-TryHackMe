@@ -1,4 +1,4 @@
-<h1 align="center">web Enumeration</h1>
+<h1 align="center">Web Enumeration</h1>
 <p align="center">2025, September 8<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>490</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Learn the methodology of enumerating websites by using tools such as Gobuster, Nikto and WPScan</em><br>
 <img width="80px" src="image" src="https://github.com/user-attachments/assets/6e0971b8-6c5d-4d01-8303-8571ffa96e14"><br>
@@ -132,8 +132,8 @@ Any answer that has a list of items will have its answer formatted in the follow
 <br>
 <br>
 <h2 align="center">Completed</h2>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/fd7043b1-287c-408d-83c5-04c75bfd58f6"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/c0215c8a-e109-4143-abce-a47250212167"></p>
+<p align="center"><img width="1200px" src=""><br>
+                  <img width="800px" src=""></p>
 
 <h2 align="center">My TryHackMe Journey</h2>
 
