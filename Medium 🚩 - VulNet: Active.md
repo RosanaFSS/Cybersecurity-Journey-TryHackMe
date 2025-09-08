@@ -478,15 +478,6 @@ SeCreateGlobalPrivilege       Create global objects                     Enabled
 SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled
 ```
 
-
-
-
-
-<img width="1293" height="177" alt="image" src="https://github.com/user-attachments/assets/5c449796-39fd-43bd-a50e-5d89d5fcc915" />
-
-
-<img width="1265" height="248" alt="image" src="https://github.com/user-attachments/assets/c26c4acd-6ac6-4f82-8652-686ecfab3625" />
-
 <br>
 <br>
 <p>Walkthrough will be completed ... I invest a lot of time writing it and learn a lot.</p>
