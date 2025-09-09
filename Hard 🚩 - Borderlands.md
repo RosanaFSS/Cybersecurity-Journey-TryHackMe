@@ -742,6 +742,45 @@ Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document L
 Document ID: qxbkqXzWECvmnUcosAfIYfPrXjgLwTlDoAYsCHCowjAmHqqbqq<br />Document Name: <br />Document Location: <br />
 ```
 
+
+<h2>/index.php</h2>
+<p>
+
+- billg : potato</p>
+
+<img width="1126" height="554" alt="image" src="https://github.com/user-attachments/assets/8f510bdd-4c9c-4b95-88b3-3c283730756c" />
+
+<br>
+<br>
+
+<img width="1128" height="273" alt="image" src="https://github.com/user-attachments/assets/8d5f243f-99ff-4481-81d3-76dfea6d5b5e" />
+
+<br>
+<br>
+<h2>/info.php</h2>
+
+<img width="1128" height="303" alt="image" src="https://github.com/user-attachments/assets/72e737fd-3a39-4a9a-97e7-c53ca0b87349" />
+
+<br>
+<br>
+
+<p>
+
+- HTTP HOST = 10.201.65.90<br>
+- SERVER NAME = 127.0.0.1<br>
+- SERVER PORT = 80<br>
+- SERVER ADDR = 172.18.0.2<br>
+- REMOTE PORT = 34892<br>
+- REMOTE ADDR = 10.201.71.77<br>
+- SERVER SOFTWARE = nginx/1.14.0<br>
+- DOCUMENTO ROOT = /var/www/html
+</p>
+
+<img width="1132" height="714" alt="image" src="https://github.com/user-attachments/assets/4a0a3d74-0924-4f58-9f64-bec2002a1b8e" />
+
+<br>
+<br>
+
 ```bash
 :~/Borderlands# sqlmap -r request.txt -D myfirstwebsite --os-shell
 ...
