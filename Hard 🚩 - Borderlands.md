@@ -296,7 +296,7 @@ api.php:5:if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "W
 
 <br>
 <br>
-<p  align="center">Even tough, practice more.</p>
+<p  align="center">Practiced more.</p>
 
 ```bash
 :~/Borderlands/xx.xxx.xx.xx/.git# ls
@@ -314,7 +314,7 @@ HEAD  refs
 
 <br>
 <br>
-<p  align="center">Even tough, practice more.</p>
+<p  align="center">Practiced more.</p>
 
 ```bash
 :~/Borderlands/xx.xxx.xx.xx/.git# git log
@@ -423,17 +423,25 @@ if ($docDetails !== null)
 <p> 1.4. What is the flag in the /var/www directory of the web app host? {FLAG:Webapp:XXX} <em> Hint : /var/www/flag.txt</em><br>
 <code>{FLAG:Webapp:48a5f4bfef44c8e9b34b926051ad35a6}</code></p>
 
-<p align="center">Navigated to the path below, intercepted it with Burp Suite and saved the request as <code>req</code>.</p>
+<p align="center">
+    
+- navigated to the path below<br>
+- intercepted it with Burp Suite<br>
+- saved the request as <code>req</code>.</p>
 
 ```bash
 http:///xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD&documentid=1
 ```
 
+<img width="1128" height="253" alt="image" src="https://github.com/user-attachments/assets/62a9b49b-52ee-4a63-bfbc-0f514eec9d56" />
+
+<br>
+<br>
 <h6>Request</h6>
 
 ```bash
 GET /api.php?documentid=1&apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD HTTP/1.1
-Host: 10.201.90.105
+Host: xx.xxx.xx.xx
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
@@ -449,7 +457,7 @@ Priority: u=0, i
 ```bash
 HTTP/1.1 200 OK
 Server: nginx/1.14.0 (Ubuntu)
-Date: Sun, 31 Aug 2025 16:39:32 GMT
+Date: Sun, 9 Sep 2025 xx:xx:xx GMT
 Content-Type: text/html; charset=UTF-8
 Connection: keep-alive
 Content-Length: 124
