@@ -28,6 +28,10 @@ PORT   STATE SERVICE
 22/tcp open  ssh
 ```
 
+<img width="919" height="261" alt="image" src="https://github.com/user-attachments/assets/9ab37d0f-2c18-4519-bc31-c9e13fb98eac" />
+
+<br>
+<br>
 <br>
 
 ```bash
