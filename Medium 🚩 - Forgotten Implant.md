@@ -1,7 +1,7 @@
 <h1 align="center">Forgotten Implant</h1>
 <p align="center">2025, September 8<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>490</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>With almost no attack surface, you must use a forgotten C2 implant to get initial access</em>.<br>
-<img width="80px" src="image" src="https://github.com/user-attachments/assets/6069cbaa-6fcd-4cdd-81d7-5eaee3b5afe5"><br>
+<img width="80px" src="https://github.com/user-attachments/assets/6069cbaa-6fcd-4cdd-81d7-5eaee3b5afe5"><br>
 Access this TryHackMe´s challenge <a href="https://tryhackme.com/room/forgottenimplant ">here </a>.<br>
 <img width="1200px" src=" "></p>
 
