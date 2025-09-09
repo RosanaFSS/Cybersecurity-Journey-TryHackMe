@@ -215,6 +215,13 @@ gitdumper.sh  README.md
 ```
 
 <h3 align="center">GitHack</h3>
+
+```bash
+:~/Borderlands/GitHack# git clone https://github.com/lijiejie/GitHack
+```
+
+
+<h3 align="center">GitHack</h3>
 <br>
 <p align="center">Cloned GitHack repository.</p>
 
@@ -261,6 +268,163 @@ api.php                               CTX_WSUSpect_White_Paper.pdf              
 Context_Red_Teaming_Guide.pdf         Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf  home.php
 Context_White_Paper_Pen_Test_101.pdf  functions.php
 ```
+
+<h3 align="center">functions.php</h3>
+
+```bash
+:~/Borderlands/GitHack/xx.xxx.xx.xx# cat functions.php
+<?php
+
+function setup_db_connection()
+{
+    $db_servername = "localhost";
+    $db_username = "root";
+    $db_password = "CCv4@he2MaHbIP7mB89TNKdei0VZ0Y";
+    $db_name = "myfirstwebsite";
+
+    // Create connection
+    $conn = new mysqli($db_servername, $db_username, $db_password, $db_name);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("failed to connect to the database. Something has gone horribly wrong...: " . $conn->connect_error);
+    }else{
+        return $conn;
+    }
+}
+
+function ShowDocuments ($conn) 
+{
+    echo ("<p>Below you will find a list of documents that are available to download</p>");
+
+    echo ("<ul>");
+
+    $stmt = $conn -> prepare('SELECT documentname, location FROM documents');
+
+    $stmt -> execute();
+    $stmt -> store_result();
+    $stmt -> bind_result($document_name, $location);
+    
+    while ($stmt -> fetch()) {
+        echo ('<li><a href="'.$location.'">'.$document_name.'</a></li>');
+    }
+    echo ("</ul>");
+}
+
+function ShowLoggedOutView ($conn)
+{
+    echo ("<p>Welcome to our site. Please bear with us whilst we get everything up and running.</p>");
+    
+    /*
+    $options = [
+        'salt' => 'wWeyIzGcD7TVwZ7y7d3UCRIMYK'
+    ];
+    echo password_hash("hello", PASSWORD_BCRYPT, $options);
+    */
+
+    ShowDocuments($conn);
+
+
+    echo ("<p>login below to edit documents</p>");
+
+    echo ('<form method="POST">');
+    echo ('username: <input type="text" name="username" id="username"><br />');
+    echo ('password: <input type="password" name="password" id="password"><br />');
+    echo ('<input type="submit">');
+}
+
+function CheckLogon ($conn)
+{
+    $options = [
+        'salt' => 'wWeyIzGcD7TVwZ7y7d3UCRIMYK'
+    ];
+    //do logon check
+    $username = $_POST['username'];
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT, $options);
+
+    $stmt = $conn->prepare("SELECT userid FROM users WHERE username=? AND password=?");
+    $stmt->bind_param("ss", $username, $password);
+    $stmt->execute();
+    $stmt -> store_result();
+
+    if ($stmt->num_rows == 1) {
+        //echo ("logged on successfully");
+        $_SESSION['loggedin'] = true;
+        header("Location: home.php");
+        die();
+    }else{
+        echo ("bad username or password");
+    }
+}
+
+function UpdateDocumentName($conn, $documentid, $documentName)
+{
+    $sql = "update documents SET documentname='".$documentName."' WHERE documentid=".$documentid;
+    //echo $sql;
+    if (mysqli_query($conn, $sql)) {
+        echo ('Document renamed. Click <a href="home.php">here</a> to go back');
+    }else{
+        echo ('Sorry. There was a problem renaming the document. Click <a href="home.php">here</a> to go back');
+    }
+}
+
+function GetDocumentDetails($conn, $documentid)
+{
+    $sql = "select documentid, documentname, location from documents where documentid=".$documentid;
+    //echo $sql;
+    $result = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+
+    if (mysqli_num_rows($result) === 1) {
+        return mysqli_fetch_assoc($result);
+    } else {
+        return null;
+    }
+}
+
+?>
+```
+
+<h3 align="center">api.php</h3>
+
+```bash
+:~/Borderlands/GitHack/xx.xxx.xx.xx# cat api.php
+<?php
+
+require_once("functions.php");
+
+if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "WEBLhvOJAH8d50Z4y5G5") && substr($_GET['apikey'], 0, 20) !== "ANDVOWLDLAS5Q8OQZ2tu" && substr($_GET['apikey'], 0, 20) !== "GITtFi80llzs4TxqMWtC"))
+{
+    die("Invalid API key");
+}
+
+if (!isset($_GET['documentid']))
+{
+    die("Invalid document ID");
+}
+
+/*
+if (!isset($_GET['newname']) || $_GET['newname'] == "")
+{
+    die("invalid document name");
+}
+*/
+
+$conn = setup_db_connection();
+
+//UpdateDocumentName($conn, $_GET['documentid'], $_GET['newname']);
+
+$docDetails = GetDocumentDetails($conn, $_GET['documentid']);
+if ($docDetails !== null)
+{
+    //print_r($docDetails);
+    echo ("Document ID: ".$docDetails['documentid']."<br />");
+    echo ("Document Name: ".$docDetails['documentname']."<br />");
+    echo ("Document Location: ".$docDetails['location']."<br />");
+}
+
+?>
+```
+
 
 <br>
 <br>
