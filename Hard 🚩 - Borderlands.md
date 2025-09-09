@@ -290,6 +290,11 @@ api.php:5:if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "W
 <p  align="center">I have just discovered the API Key "GIT*" in the previous step.</p>
 
 ```bash
+:~/Borderlands/GitHack/xx.xxx.xx.xx# grep -rn GIT
+api.php:5:if (!isset($_GET['apikey']) || ((substr($_GET['apikey'], 0, 20) !== "WEBLhvOJAH8d50Z4y5G5") && substr($_GET['apikey'], 0, 20) !== "ANDVOWLDLAS5Q8OQZ2tu" && substr($_GET['apikey'], 0, 20) !== "GITtFi80llzs4TxqMWtC"))
+```
+
+```bash
 :~/Borderlands/GitHack/xx.xxx.xx.xx# grep -rn WEB
 home.php:26:    echo ('<li><a href="api.php?documentid='.$documentid.'&amp;apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD">'.$document_name.'</a></li>');
 home.php:41:            echo ('<input type="hidden" id="apikey" name="apikey" value="WEBLhvOJAH8d50Z4y5G5g4McG1GMGD" />');
