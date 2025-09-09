@@ -82,7 +82,7 @@ pwd
 /home/ada
 ```
 
-``bash
+```bash
 ada@...:~$ id
 id
 uid=1001(ada) gid=1001(ada) groups=1001(ada)
