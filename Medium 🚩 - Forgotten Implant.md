@@ -738,24 +738,47 @@ THM{********************************}
 <code>THM{********************************}</code></p>
 <br>
 
-
-
-
-
-
-
-
-
-
 <br>
 <br>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c618ba83-9209-4557-96c4-6f484b743551"><br>
+                  <img width="800px" src="https://github.com/user-attachments/assets/c33a1127-77bc-422c-ba14-1005294bbbbd"></p>
+
+<h2 align="center">My TryHackMe Journey</h2>
 
 
+<div align="center"><h6>
 
-<img width="1902" height="899" alt="image" src="https://github.com/user-attachments/assets/c618ba83-9209-4557-96c4-6f484b743551" />
+| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
+| 2025, Sep 9       |Easy 🔗 - <code><strong>Forgotten Implant</strong></code>| 491| 112ⁿᵈ | 5ᵗʰ   |    660ᵗʰ    |     10ᵗʰ    | 125,016  |  953      |    73     |
+| 2025, Sep 8       |Easy 🔗 - Web Enumeration| 490| 112ⁿᵈ | 5ᵗʰ   |    663ʳᵈ    |     10ᵗʰ    | 124,986  |  952      |    73     |
+| 2025, Sep 8       |Easy 🔗 - iOS: Forensics| 490| 113ʳᵈ | 5ᵗʰ   |    548ᵗʰ    |     9ᵗʰ    | 124,850  |  951      |    73     |
+| 2025, Sep 7       |Medium 🚩 - VulnNet: Active| 489| 114ᵗʰ | 5ᵗʰ   |    542ⁿᵈ    |     9ᵗʰ    | 124,746  |  950      |    73     |
+| 2025, Sep 7       |Medium 🚩 - pyLon                      | 489|     114ᵗʰ |     5ᵗʰ      |    535ᵗʰ   |     9ᵗʰ    | 124,716  |  949      |    73     |
+| 2025, Sep 7       |Medium 🚩 - Pressed                    | 489     |     113ʳᵈ    |     5ᵗʰ      |    508ᵗʰ   |     9ᵗʰ    | 124,886  |  948      |    73     |
+| 2025, Sep 6       |Easy 🚩 - Classic Passwd               | 488     |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ   |    12ⁿᵈ    | 124,476  |    947    |    73     |
+| 2025, Sep 6       |Medium 🚩 - toc2                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ   |    12ⁿᵈ    | 124,446  |    946    |    73     |
+| 2025, Sep 6       |Hard 🚩 - Extract                      | 488     |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ   |    13ʳᵈ    | 124,386  |    945    |    73     |
+| 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488     |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ   |    12ⁿᵈ    | 124,326  |    944    |    73     |
+| 2025, Sep 5       |Medium 🚩 - Inferno                    | 487     |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ   |    12ⁿᵈ    | 124,236  |    943    |    73     |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487     |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ   |    10ᵗʰ    | 124,152  |    942    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486     |	   113ʳᵈ   |	     5ᵗʰ   	|      579ᵗʰ   |	  10ᵗʰ    |	124,018  |	  940	   |    73     |
+| 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486     |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ   |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485     |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ   |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484     |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ   |    14ᵗʰ    | 123,786  |    938    |    73     |
+| 2025, Sep 1       |Medium 🚩 - Voyage                     | 483     |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ   |    15ᵗʰ    | 123,636  |    937    |    73     |
 
-<img width="1903" height="900" alt="image" src="https://github.com/user-attachments/assets/c33a1127-77bc-422c-ba14-1005294bbbbd" />
+</h6></div><br>
 
+<br>
 
+<p align="center">Global All Time:   112ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/5616ee8a-a4ff-4fa3-95de-24e289ca7cc7"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/c70ebd82-a133-48a2-9d06-3722a7c53fa8"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/9678529c-813e-48f1-8107-145fe5e45361"><br>
+                  Global monthly:    660ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0679c587-e95e-4027-9a39-3ecb9f7174e5"><br>
+                  Brazil monthly:      10ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/68f96f70-5979-44e7-aa01-79daa732c507"><br>
 
-
+<h2 align="center">Thanks for coming!</h2>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
