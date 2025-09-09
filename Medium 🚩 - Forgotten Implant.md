@@ -40,18 +40,12 @@ PORT   STATE SERVICE
 Listening on 0.0.0.0 81
 ```
 
-<br>
 <h2>tcpdump</h2>
 
 ```bash
 :~/ForgottenImplant# tcpdump -i ens5
 Listening on 0.0.0.0 81
 ```
-
-
-<img width="1253" height="282" alt="image" src="https://github.com/user-attachments/assets/94b1a7ae-9524-4d8c-8f6c-92e6f03d253e" />
-
-
 
 <h2>nc</h2>
 
@@ -68,6 +62,8 @@ Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: keep-alive
 ```
+
+<img width="1253" height="282" alt="image" src="https://github.com/user-attachments/assets/94b1a7ae-9524-4d8c-8f6c-92e6f03d253e" />
 
 <br>
 <br>
