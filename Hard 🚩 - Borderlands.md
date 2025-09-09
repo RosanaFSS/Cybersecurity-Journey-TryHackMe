@@ -35,15 +35,19 @@ Access it <a href=""</a>here.<br>
 - 80 : HTTP : nginx 1.14.0<br> xx.xxx.xx.xx:80/.git<br></p>
 
 ```bash
-:~/Borderlands# nmap -sC -sV -sS -p- -O -A xx.xxx.xx.xx
-
-
-```
-
-```bash
-:~/Borderlands# nmap -A xx.xxx.xx.xx
-
-
+:~/Borderlands# nmap -sU -p 53,67,68,69,123,161,500,514,520,33434 xx.xxx.xx.xx
+...
+PORT      STATE         SERVICE
+53/udp    open|filtered domain
+67/udp    open|filtered dhcps
+68/udp    open|filtered dhcpc
+69/udp    open|filtered tftp
+123/udp   open|filtered ntp
+161/udp   open|filtered snmp
+500/udp   open|filtered isakmp
+514/udp   open|filtered syslog
+520/udp   open|filtered route
+33434/udp open|filtered traceroute
 ```
 
 <h2 align="center">API Key "AND*"<a id='2'></a></h2>
