@@ -29,7 +29,6 @@ Access it <a href="https://tryhackme.com/room/pythonplayground"</a>here.<br>
 <p>1.1. Let´s find out!<br>
 <code>No answer needed</code></p>
 
-<br>
 <h2>Task 2 . Security Hierarchy</h2>
 <h3>Security Hierarchy</h3>
 <p>Cyber security priorities are different for every company.<br>
@@ -57,11 +56,9 @@ Let's take a look at the high-level example of it:</p>
 <p>2.1. Which senior role typically makes key cyber security decisions?<br>
 <code>CISO</code></p>
 
-<br>
 <p>2.2. What is the common name for roles like SOC analysts and engineers?<br>
 <code>Blue Team</code></p>
 
-<br>
 <h2>Task 3 . Meet the Blue Team</h2>
 <p>Blue Team is about defensive security, meaning it constantly monitors for attacks and tries to respond to them quickly. Depending on a company's size and sector, Blue Team can include a lot of different roles and subdepartments, usually counting 3 to 50 members total. Now, let's explore the most common Blue Team departments.</p>
 <h3>Security Operations Center (SOC)</h3>
@@ -74,7 +71,6 @@ Let's take a look at the high-level example of it:</p>
 - <strong>L2 Analysts</strong>: Experienced members who investigate more advanced attacks<br>
 - <strong>Engineers</strong>: Experts in configuring security tools like EDR or SIEM<br>
 - <strong>Manager</strong>: A person who manages the whole SOC team</p>
-
 
 <h3>Cyber Incident Response Team (CIRT)</h3>
 
@@ -102,7 +98,6 @@ Let's take a look at the high-level example of it:</p>
 <p>3.1. Does Blue Team focus on desensive or offensive security?<br>
 <code>defensive</code></p>
 
-<br>
 <p>3.2. Which departament handles active or urgent cyber incidents? Hint : <em> Also known as CSIRT or CERT.</em><br>
 <code>CIRT</code></p>
 
