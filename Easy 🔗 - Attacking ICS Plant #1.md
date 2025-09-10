@@ -33,7 +33,7 @@ Modbus register types:<br>
 
 Most commonly Modbus function:</p>
 
-<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/691c000d-ed57-4830-bad6-44fc0cea990"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0b7972f6-fa6b-4866-bd12-ab7e3c1b722b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Modbus TCP encapsulates Modbus RTU request and response data packets in a TCP packet transmitted over standard Ethernet networks. The TCP Modbus standard port is 502.<br>
 
