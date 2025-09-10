@@ -652,7 +652,7 @@ THM{*******************************}
 <br>
 <h2 align="center">Completed</h2>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d950d9ad-ee52-40a5-986b-d1550eb3ae4b"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/557cccd4-160a-4360-94d3-14f2937d3973"></p>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/557cccd4-160a-4360-94d3-14f2937d3973"></p>
 
 <h2 align="center">My TryHackMe Journey</h2>
 
