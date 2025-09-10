@@ -4,7 +4,7 @@
 and I’m excited to join you on this adventure, part of my <code>492</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Discover security roles and learn how to advance your SOC career, starting from the L1 analyst</em>.<br>
 Access it <a href="https://tryhackme.com/room/pythonplayground"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/7b2b3736-fb94-4d71-a450-023e4be9adaf"></p>
 
 <h2>Task 1 . Introduction</h2>
 
@@ -152,7 +152,7 @@ Let's see how you can start:<br>
 <code>THM{***********************}</code></p>
 
 <h2>Task 6 . COnclusion</h2>
-<p>Great job completing the challenge! Now you know how SOC team works, where it is placed in the security structure, and what you to do to start your career journey. Now, continue to the next rooms and learn what does SOC actually protect: humans and systems.</p>p>
+<p>Great job completing the challenge! Now you know how SOC team works, where it is placed in the security structure, and what you to do to start your career journey. Now, continue to the next rooms and learn what does SOC actually protect: humans and systems.</p
 
 <h3>Next Rooms in Path</h3>
 - <a href="https://tryhackme.com/path/outline/soclevel1">Humans as Attack Vectors</a><br>
@@ -164,30 +164,49 @@ Let's see how you can start:<br>
 <code>No answer needed!</code></p>
 
 
-
 <br>
 <br>
-<h2 align="center">nmap</h2>
+<h2 align="center">Completed</h2>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d5aa0df0-d3e3-4aa1-8367-cca6918e83b5"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/fb762000-fc17-4d76-a22e-5aa8da42ab24"></p>
 
-```bash
-:~/PythonPlayground# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
-...
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-...
-80/tcp open  http    Node.js Express framework
-|_http-title: Python Playground!
-```
+<h2 align="center">My TryHackMe Journey</h2>
 
-```bash
-:~/PythonPlayground# nmap -sC -sV -A -p- -T4 xx.xxx.xx.xx
-...
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-...
-80/tcp open  http    Node.js Express framework
-|_http-title: Python Playground!
-```
 
-<p>
+<div align="center"><h6>
+
+| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
+| 2025, Sep 9       |Hard 🚩 - <code><strong>Python Playground</strong></code>| 491| 111ˢᵗ | 5ᵗʰ   |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
+| 2025, Sep 9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ    |    10ᵗʰ    | 125,146  |    954    |    73     |
+| 2025, Sep 9       |Medium 🚩 - Forgotten Implant          | 491    |     112ⁿᵈ    |      5ᵗʰ     |     660ᵗʰ    |    10ᵗʰ    | 125,016  |    953    |    73     |
+| 2025, Sep 8       |Easy 🔗 - Web Enumeration              | 490    |     112ⁿᵈ    |      5ᵗʰ     |     663ʳᵈ    |    10ᵗʰ    | 124,986  |    952    |    73     |
+| 2025, Sep 8       |Easy 🔗 - iOS: Forensics               | 490    |     113ʳᵈ    |      5ᵗʰ     |     548ᵗʰ    |     9ᵗʰ    | 124,850  |    951    |    73     |
+| 2025, Sep 7       |Medium 🚩 - VulnNet: Active            | 489    |     114ᵗʰ    |      5ᵗʰ     |     542ⁿᵈ    |     9ᵗʰ    | 124,746  |    950    |    73     |
+| 2025, Sep 7       |Medium 🚩 - pyLon                      | 489    |     114ᵗʰ    |      5ᵗʰ     |     535ᵗʰ    |     9ᵗʰ    | 124,716  |    949    |    73     |
+| 2025, Sep 7       |Medium 🚩 - Pressed                    | 489    |     113ʳᵈ    |      5ᵗʰ     |     508ᵗʰ    |     9ᵗʰ    | 124,886  |    948    |    73     |
+| 2025, Sep 6       |Easy 🚩 - Classic Passwd               | 488    |     114ᵗʰ    |      5ᵗʰ     |     683ᵗʰ    |    12ⁿᵈ    | 124,476  |    947    |    73     |
+| 2025, Sep 6       |Medium 🚩 - toc2                       | 488    |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ    |    12ⁿᵈ    | 124,446  |    946    |    73     |
+| 2025, Sep 6       |Hard 🚩 - Extract                      | 488    |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ    |    13ʳᵈ    | 124,386  |    945    |    73     |
+| 2025, Sep 6       |Medium 🚩 - Plotted-EMR                | 488    |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ    |    12ⁿᵈ    | 124,326  |    944    |    73     |
+| 2025, Sep 5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
+| 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486    |      113ʳᵈ   |	    5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,018  |   940    |    73     |
+| 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
+| 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
+| 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
+| 2025, Sep 1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
+
+</h6></div><br>
+
+<br>
+
+<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/b038b6ee-1e9a-4966-bb42-57aac87a3f90"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/8f7f0673-390b-4edc-9707-6f61913cb4b0"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/90036076-ddfe-4bae-b0e6-439222e11e20"><br>
+                  Global monthly:    693ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/225fa3c4-0914-4e80-94bf-f282252d1b03"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/eae02176-4e19-4f69-9a7f-a60fb77cb80b"><br>
+
+<h2 align="center">Thanks for coming!</h2>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
