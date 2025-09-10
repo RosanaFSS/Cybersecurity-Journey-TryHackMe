@@ -41,7 +41,7 @@ Access it <a href="https://tryhackme.com/room/pythonplayground"</a>here.<br>
 That's why every company has a unique security approach and security team structure.<br>
 Let's take a look at the high-level example of it:</p>
 
-<h6 align="center"><img width="550px" src="https://github.com/user-attachments/assets/4e5b0bab-9a4f-4298-8888-90c988612b96"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/4e5b0bab-9a4f-4298-8888-90c988612b96"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Looking at the diagram above, top executives like the CEO usually focus on global business objectives and don't manage technical aspects. That's why they hire a Chief Information Security Officer (CISO) or a similar role who knows the business needs and can create the most suitable security departments.</p>
 
