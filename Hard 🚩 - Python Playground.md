@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/f479f098-6da3-4093-bbde-218c41169cc8"><br>
 2025, September 9<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>491</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em>Be creative!/em>!<br>
+<em>Be creative</em>!<br>
 Access it <a href="https://tryhackme.com/room/pythonplayground"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/19cf9795-f523-4578-81c5-17fa886e150e"></p>
 
