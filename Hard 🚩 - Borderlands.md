@@ -1701,7 +1701,7 @@ meterpreter >
 <br>
 <h2 align="center">Completed</h2>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6acf281a-d3a1-4111-ae65-748bd7c59a2c"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/d154b510-ea6c-4958-816e-b7dbce1b6b29"></p>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/d154b510-ea6c-4958-816e-b7dbce1b6b29"></p>
 
 <h2 align="center">My TryHackMe Journey</h2>
 
