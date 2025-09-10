@@ -170,14 +170,13 @@ Let's see how you can start:<br>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d5aa0df0-d3e3-4aa1-8367-cca6918e83b5"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/fb762000-fc17-4d76-a22e-5aa8da42ab24"></p>
 
-<h2 align="center">My TryHackMe Journey</h2>
+<h2 align="center">My TryHackMe Journey ・ 2025, September</h2>
 
 
 <div align="center"><h6>
 
-| Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
+| Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
 | 2025, Sep 10      |Easy 🔗 - <code><strong>SOC Role in Blue Team</strong></code>| 492| 110ᵗʰ | 5ᵗʰ   |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
 | 2025, Sep 9       |Hard 🚩 - Python Playground| 491| 111ˢᵗ | 5ᵗʰ   |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
 | 2025, Sep 9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ    |    10ᵗʰ    | 125,146  |    954    |    73     |
