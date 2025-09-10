@@ -87,7 +87,7 @@ PORT   STATE SERVICE VERSION
 |_      https://www.tenable.com/plugins/nessus/55976
 ```
 
-<h2 align="center">ffuf</h2>
+<h2 align="center">login.html, signup.html, admin.thml</h2>
 
 ```bash
 :~/PythonPlayground# ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://xx.xxx.xx.64/FUZZ.html -mc 200 -fs 941
