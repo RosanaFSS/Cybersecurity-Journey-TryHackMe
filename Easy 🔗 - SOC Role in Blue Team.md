@@ -178,7 +178,8 @@ Let's see how you can start:<br>
 | Date              | Room                                  |Streak   |   All Time   |   All Time   |   Monthly   |   Monthly  | Points   | Rooms     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 |                   |                                       |         |    Global    |    Brazil    |   Global    |   Brazil   |          | Completed |           |
-| 2025, Sep 9       |Hard 🚩 - <code><strong>Python Playground</strong></code>| 491| 111ˢᵗ | 5ᵗʰ   |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
+| 2025, Sep 10      |Easy 🔗 - <code><strong>SOC Role in Blue Team</strong></code>| 492| 110ᵗʰ | 5ᵗʰ   |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
+| 2025, Sep 9       |Hard 🚩 - Python Playground| 491| 111ˢᵗ | 5ᵗʰ   |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
 | 2025, Sep 9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ    |    10ᵗʰ    | 125,146  |    954    |    73     |
 | 2025, Sep 9       |Medium 🚩 - Forgotten Implant          | 491    |     112ⁿᵈ    |      5ᵗʰ     |     660ᵗʰ    |    10ᵗʰ    | 125,016  |    953    |    73     |
 | 2025, Sep 8       |Easy 🔗 - Web Enumeration              | 490    |     112ⁿᵈ    |      5ᵗʰ     |     663ʳᵈ    |    10ᵗʰ    | 124,986  |    952    |    73     |
@@ -202,11 +203,11 @@ Let's see how you can start:<br>
 
 <br>
 
-<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/b038b6ee-1e9a-4966-bb42-57aac87a3f90"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/8f7f0673-390b-4edc-9707-6f61913cb4b0"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/90036076-ddfe-4bae-b0e6-439222e11e20"><br>
-                  Global monthly:    693ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/225fa3c4-0914-4e80-94bf-f282252d1b03"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/eae02176-4e19-4f69-9a7f-a60fb77cb80b"><br>
+<p align="center">Global All Time:   110ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/09b46fa0-e6dd-4728-a9cf-b53936563787"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/41538696-6644-4b03-84dd-b39932602147"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/37fd3c47-d001-4ce7-ba35-d670080d6749"><br>
+                  Global monthly:    664ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d0e77025-5e9a-4e0c-aa59-15fc9f02b4c1"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/71d5488e-c088-4416-a79c-3b81d9834e78"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
