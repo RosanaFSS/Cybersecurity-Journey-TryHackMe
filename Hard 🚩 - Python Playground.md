@@ -686,7 +686,7 @@ THM{*******************************}
 
 <br>
 
-<p align="center">Global All Time:   112ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/b038b6ee-1e9a-4966-bb42-57aac87a3f90"><br>
+<p align="center">Global All Time:   111ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/b038b6ee-1e9a-4966-bb42-57aac87a3f90"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/8f7f0673-390b-4edc-9707-6f61913cb4b0"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/90036076-ddfe-4bae-b0e6-439222e11e20"><br>
                   Global monthly:    693ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/225fa3c4-0914-4e80-94bf-f282252d1b03"><br>
