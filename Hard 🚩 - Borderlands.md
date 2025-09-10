@@ -1689,7 +1689,7 @@ Process List
 [*] Uploaded -1.00 B of 27.50 KiB (-0.0%): /root/Borderlands/nc.exe -> nc.exe
 [*] Completed  : /root/Borderlands/nc.exe -> nc.exe
 meterpreter > 
-``
+```
 
 
 
