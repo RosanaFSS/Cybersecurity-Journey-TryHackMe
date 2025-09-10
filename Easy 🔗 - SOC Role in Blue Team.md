@@ -108,7 +108,7 @@ Let's take a look at the high-level example of it:</p>
   
 - deal with real attacks,
 - protect the company from advanced threat groups
-- learn a lot during the process.<br><br>
+- learn a lot during the process.<br>
 
 Let's see how you can start:<br>
 
@@ -116,7 +116,6 @@ Let's see how you can start:<br>
 - Be proactive, try yourself in CTFs, stay in the loop of cyber news, and consider the <a href="https://tryhackme.com/certification/security-analyst-level-1">SAL certification</a>!<br>
 - Prepare for an interview, learn the difference between an internal SOC and MSSP, and apply for a job!<br>
 - After working for some time in a junior position, consider preparing and advancing to more senior roles!</p>
-
 
 <h3>Internal SOC vs MSSP</h3>
 <p>Not every organization has the expertise to operate a SOC on its own and relies on a Managed Security Services Provider (MSSP), a company that delivers outsourced security services, most commonly SOC, to its clients. Working at MSSP is typically high-pressure, but it is also a good option to quickstart your career. While we recommend applying for any open SOC position as your first job, it's also important to understand the differences:</p>
@@ -136,7 +135,6 @@ Let's see how you can start:<br>
 <p>4.2. Which role naturally continues your SOC L1 analyst journey?<br>
 <code>SOC L2 Analyst</code></p>
 
-<br>
 <h2>Task 5 . Final Challenge</h2>
 <h3>Final Challenge</h3>
 <p>For this task, imagine yourself as a CISO of TrySecureMe, a big multinatnional company. You oversee multiple departments and deal with incidents every month. This time, as many as seven incidents are happening at the same time, and you have to choose the right people to deal with every one of them. Do you know security roles well enough to complete this challenge?</p>
