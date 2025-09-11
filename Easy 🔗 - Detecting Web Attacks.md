@@ -132,14 +132,63 @@ PORT     STATE SERVICE VERSION
 <p><em>Answuer the questions below</em></p>
 
 <p>5.1. What is the attacker´s User-Agent performing the directory fuzz?<br>
-<code>FFUF v2.1.0</code></p>
+<code>astrongpassword123</code></p>
+
+<img width="1391" height="540" alt="image" src="https://github.com/user-attachments/assets/37cafa5b-3977-4568-8983-95781b680f51" />
+
+<br>
+<br>
+<p>5.2.What is the flag the attacker found in the database using SQLi?<br>
+<code>THM{dumped_the_db}</code></p>
+
+<img width="1379" height="572" alt="image" src="https://github.com/user-attachments/assets/446ad857-7e02-43ab-8430-367e5bff24de" />
 
 
-<img width="1234" height="336" alt="image" src="https://github.com/user-attachments/assets/a9d5fe8e-a8a2-4134-a320-a4408efa9cc6" />
+<br>
+<br>
+
+
+<h2>Task 6 . Web Application Firewall</h2>
 
 
 
-<h4>Access Log Formar</h4>
+
+<h3>Rules</h3>
 
 
-<h3>Attacks in Logs</h3>
+
+<h3>Integrating Known Indicators and Threat Intelligence</h3>
+
+
+
+<p><em>Answuer the questions below</em></p>
+
+<p>6.1. What do WAFs inspect and filter?<br>
+<code>Web requests</code></p>
+
+
+<p>6.2. Create a custom firewall rule to block any <code>User-Agent</code> that matches "<code>BotTHM</code>". Hint: <em> Syntax: IF field-name CONTAINS value THEN action</em><br>
+<code>IF User-Agent CONTAINS "BotTHM" THEN block</code></p>
+
+192.168.1.9
+
+
+<img width="1367" height="292" alt="image" src="https://github.com/user-attachments/assets/471f201c-2e23-4d9c-b855-b84df9ca039b" />
+
+<br>
+<br>
+
+<img width="1364" height="318" alt="image" src="https://github.com/user-attachments/assets/7be1b71c-9e7b-4a8e-a485-d952c31f33b5" />
+
+<br>
+<br>
+
+<img width="1362" height="287" alt="image" src="https://github.com/user-attachments/assets/7180b38e-7b88-41a9-bd31-b2656109707f" />
+
+
+
+
+
+
+
+
