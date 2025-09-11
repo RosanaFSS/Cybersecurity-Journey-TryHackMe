@@ -102,7 +102,7 @@ PORT     STATE SERVICE
 <br>
 
 
-<p><em>Answuer the questions below</em></p>
+<p><em>Answer the questions below</em></p>
 
 <p>5.1. What is the attacker´s User-Agent performing the directory fuzz?<br>
 <code>astrongpassword123</code></p>
