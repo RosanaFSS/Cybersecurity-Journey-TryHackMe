@@ -98,6 +98,10 @@ PORT     STATE SERVICE VERSION
 <h2>Task 4 . Log-Based Detection</h2>
 
 
+
+
+<p><em>Answuer the questions below</em></p>
+
 <p>4.1. What is the attacker´s User-Agent performing the directory fuzz?<br>
 <code>FFUF v2.1.0</code></p>
 
@@ -113,9 +117,25 @@ PORT     STATE SERVICE VERSION
 <p>What is the complete, decoded SQLi payload the attacker uses on the <code>/changeusername.php</code>code> form?<br>
 <code>%' OR '1'='1</code></p>
 
-<img width="1074" height="229" alt="image" src="https://github.com/user-attachments/assets/c9adddeb-f166-40a4-b1d4-7bb30866bd78" />
+<img width="1073" height="631" alt="image" src="https://github.com/user-attachments/assets/a64e947f-d5d1-4dd6-afda-43cab005807d" />
+
+<br>
+<br>
+
+<img width="1360" height="185" alt="image" src="https://github.com/user-attachments/assets/de3fab31-181f-4183-ad0e-28930f54c543" />
+
+<br>
+<br>
+<h2>Task . 5 Network-Based Detection</h2>
 
 
+<p><em>Answuer the questions below</em></p>
+
+<p>5.1. What is the attacker´s User-Agent performing the directory fuzz?<br>
+<code>FFUF v2.1.0</code></p>
+
+
+<img width="1234" height="336" alt="image" src="https://github.com/user-attachments/assets/a9d5fe8e-a8a2-4134-a320-a4408efa9cc6" />
 
 
 
