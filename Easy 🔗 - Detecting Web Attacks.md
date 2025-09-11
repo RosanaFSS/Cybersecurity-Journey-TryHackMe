@@ -7,7 +7,7 @@ Access it <a href="https://tryhackme.com/room/detectingwebattacks"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/d9dccee2-9a05-4361-a714-949ccdebe2c3"></p>
 
 <h2>Task 1 . Introduction</h2>
-<p>Web attacks are among the most common ways attackers gain entry into target systems. Public-facing websites and web applications often sit in front of databases and other infrastructure, which are appealing targets for attackers. In this room, you’ll learn how to identify these threats using practical detection methods and industry-standard tools.</p>p>
+<p>Web attacks are among the most common ways attackers gain entry into target systems. Public-facing websites and web applications often sit in front of databases and other infrastructure, which are appealing targets for attackers. In this room, you’ll learn how to identify these threats using practical detection methods and industry-standard tools.</p>
 
 <h3>Objectives</h3>
 <p>
