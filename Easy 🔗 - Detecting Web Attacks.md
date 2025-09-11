@@ -142,7 +142,13 @@ PORT     STATE SERVICE VERSION
 <p>5.2.What is the flag the attacker found in the database using SQLi?<br>
 <code>THM{dumped_the_db}</code></p>
 
+<img width="1378" height="439" alt="image" src="https://github.com/user-attachments/assets/bdc75f1e-66d0-4002-a71e-9736c58d8393" />
+
+
 <img width="1379" height="572" alt="image" src="https://github.com/user-attachments/assets/446ad857-7e02-43ab-8430-367e5bff24de" />
+
+
+<img width="1391" height="557" alt="image" src="https://github.com/user-attachments/assets/4974af9c-4a9d-44a3-8e43-9a8792aec7c1" />
 
 
 <br>
