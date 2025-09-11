@@ -134,7 +134,8 @@ PORT     STATE SERVICE VERSION
 <p>5.1. What is the attacker´s User-Agent performing the directory fuzz?<br>
 <code>astrongpassword123</code></p>
 
-<img width="1391" height="540" alt="image" src="https://github.com/user-attachments/assets/37cafa5b-3977-4568-8983-95781b680f51" />
+<img width="1389" height="443" alt="image" src="https://github.com/user-attachments/assets/063d3dee-4b96-40cb-8a4f-53ba4699316a" />
+
 
 <br>
 <br>
