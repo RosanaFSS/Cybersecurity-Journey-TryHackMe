@@ -169,6 +169,8 @@ PORT     STATE SERVICE
 <p>In this room, you learned about detecting web attacks, starting with a refresher on common client-side and server-side attacks. You then covered log-based analysis, followed by network traffic analysis, in order to understand common indicators and how to spot them as an analyst. Finally, we explored Web Application Firewalls and the rules used to defend against malicious web requests. By applying correlation across these sources, you can move beyond isolated alerts and develop a more well-rounded approach to detecting and responding to web attacks.</p>
 
 <p><em>Answer the question below</em><br>
+
+<p>7.1. Complete the room and continue on your cyber learning journey!</p>  
 <code>No answer needed</code></p>
 
 <br>
