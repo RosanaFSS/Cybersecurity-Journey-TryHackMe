@@ -132,9 +132,9 @@ We recently purchased a new threat intelligence search application called TryDet
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-| 2025, Sep 10      |Easy 🔗 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
-| 2025, Sep 10      |Easy 🚩 - Devie                        | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
-| 2025, Sep 10      |Medium 🚩 - Backtrack                  | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+| 2025, Sep 10      |Easy 🚩 - <code><strong>Invite Only</strong></code>                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     6ᵗʰ    | 126,056  |    960    |    73     |
+| 2025, Sep 10      |Easy 🚩 - Devie                        | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
+| 2025, Sep 10      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
 | 2025, Sep 10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
@@ -163,11 +163,11 @@ We recently purchased a new threat intelligence search application called TryDet
 
 <br>
 
-<p align="center">Global All Time:   110ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/a90981d1-bf1c-4659-ad55-185cc6c4a23a"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/18299e44-c9b8-4a9c-badf-93633f988ce8"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ebc74cb0-a55d-4519-9816-bc1ea279ea63"><br>
-                  Global monthly:    607ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2618bb6f-b10f-4187-90f5-ec08996768a5"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/934bf6c1-c651-4cb2-9e47-32882557603e"><br>
+<p align="center">Global All Time:   110ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/0ef3dcf4-eef0-473d-ad58-ed6a142144e7"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/94d953ea-65c1-46d0-afc9-ff690fd8c6a7"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d5175f19-b218-4134-8011-47953fc96448"><br>
+                  Global monthly:    352ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/8c84c995-39a1-4d25-a360-dcb198a44ac1"><br>
+                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/42b42fdf-d145-4175-9daf-8897d40ff00d"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
