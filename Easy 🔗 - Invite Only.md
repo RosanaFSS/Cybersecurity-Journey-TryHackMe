@@ -109,7 +109,7 @@ We recently purchased a new threat intelligence search application called TryDet
 <br>
 <br>
 <p>1.9 Which phishing technique did the attackers use? Use the report to answer the question.<br>
-<code>ClickFix</code></p>p>
+<code>ClickFix</code></p>
 
 <img width="822" height="424" alt="image" src="https://github.com/user-attachments/assets/def843e0-52a9-4a83-90a7-92fea0f098a5" />
 
