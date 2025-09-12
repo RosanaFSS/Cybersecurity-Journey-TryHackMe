@@ -1,12 +1,10 @@
-<h1 align="center">Devie</h1>
+<h1 align="center">Invite Only</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/888cff96-ae5f-4b99-8cfd-1b38f84648a3"><br>
 2025, September 12<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>494</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Extract insight from a set of flagged artefacts, and distil the information into usable threat intelligence</em>.<br>
 Access it <a href="https://tryhackme.com/room/invite-only"</a>here.<br>
-<img width="1200px" src="   "></p>
-
-
+<img width="1200px" src="https://github.com/user-attachments/assets/b2c7a3a9-3cf3-489c-ae71-940926f1ca83"></p>
 
 <h2>Task 1 . Invite Only</h2>
 <p>You are an SOC analyst on the SOC team at Managed Server Provider TrySecureMe. Today, you are supporting an L3 analyst in investigating flagged IPs, hashes, URLs, or domains as part of IR activities. One of the L1 analysts flagged two suspicious findings early in the morning and escalated them. Your task is to analyse these findings further and distil the information into usable threat intelligence.<br>
@@ -18,7 +16,6 @@ We recently purchased a new threat intelligence search application called TryDet
 
 <h3>Connecting To The Machine</h3>
 <p>Just start the Virtual Machine by clicking “ <strong>Start Virtual Machine </strong>strong>.” Once the VM is booted up, double-click the launcher on the desktop to start the TryDetectThis2.0 application.</p>
-
 
 <h3>Virtual environement</h3>
 <p></p><p>To successfully complete this room, you'll need to set up your virtual environment. This involves starting the Target Machine, ensuring you're equipped with the necessary tools and access to tackle the challenges ahead.<br>
@@ -126,9 +123,7 @@ We recently purchased a new threat intelligence search application called TryDet
 <br>
 <h2 align="center">Completed</h2>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/59c934e5-575f-4aeb-a28a-01cd899b791d"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/c98f341d-7820-4f69-9d49-8c57ead824fe"></p>
-
-                  <img width="1910" height="897" alt="image" src="https://github.com/user-attachments/assets/59c934e5-575f-4aeb-a28a-01cd899b791d" />
+                  <img width="1200px" src="https://github.com/user-attachments/assets/2c18a5fd-3735-4610-bf9f-964991f2df1e"></p>
 
 <h2 align="center">My TryHackMe Journey ・ 2025, September</h2>
 
