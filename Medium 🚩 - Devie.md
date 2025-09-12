@@ -507,7 +507,7 @@ drwxrwxr-x 2 bruce bruce 4096 Feb 19  2023 templates/
                                               <img width="1200px" src="https://github.com/user-attachments/assets/18299e44-c9b8-4a9c-badf-93633f988ce8"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ebc74cb0-a55d-4519-9816-bc1ea279ea63"><br>
                   Global monthly:    607ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2618bb6f-b10f-4187-90f5-ec08996768a5"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/6df8e9b5-e47f-4477-ba22-bbff35f7dff4"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6df8e9b5-e47f-4477-ba22-bbff35f7dff4"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
