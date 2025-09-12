@@ -1,7 +1,7 @@
 <h1 align="center">Devie</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/eb5d6cd5-41c1-44a2-a6bc-7d58c97774de"><br>
 2025, September 12<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>4934</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+and I’m excited to join you on this adventure, part of my <code>494</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>A developer has asked you to do a vulnerability check on their system</em>.<br>
 Access it <a href="https://tryhackme.com/room/devie"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b81bfd14-5b27-4c4a-bf51-3a423bab58b2"></p>
