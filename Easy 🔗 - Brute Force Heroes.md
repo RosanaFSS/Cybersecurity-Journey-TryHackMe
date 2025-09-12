@@ -236,18 +236,15 @@ N.B - It is possible to use things like Burp Suite Macros to help us get around 
 
 <img width="1051" height="361" alt="image" src="https://github.com/user-attachments/assets/45773933-7af8-41a2-a5ab-7b68cb5c8012" />
 
-```bash
-patator http_fuzz method=POST --threads=64 timeout=10 url="http://10.201.76.76/login.php" 0=passwords.txt body="username=admin&password=FILE0&Login=Login&user_token=70d5a777a1d13f532d6edbba6c3c4071 header="Cookie: PHPSESSID=69dr414b9i2kvao0mk74drkb3r; security=impossible" -x quit:fgrep!=login.php
-```
-
-
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5a56298b-c8da-44ee-b654-05c8131fee2c"><br><br>
                    <img width="1200px" src="https://github.com/user-attachments/assets/8f42c566-b56f-4f28-8b08-d0d0f75c748d"><br><br></h6>
 
 
-                   <img width="1018" height="631" alt="image" src="https://github.com/user-attachments/assets/d374c291-4120-46de-8dc2-897e8e6e5a0f" />
+<img width="1018" height="631" alt="image" src="https://github.com/user-attachments/assets/d374c291-4120-46de-8dc2-897e8e6e5a0f" />
 
-
+```bash
+patator http_fuzz method=POST --threads=64 timeout=10 url="http://10.201.76.76/login.php" 0=passwords.txt body="username=admin&password=FILE0&Login=Login&user_token=70d5a777a1d13f532d6edbba6c3c4071 header="Cookie: PHPSESSID=69dr414b9i2kvao0mk74drkb3r; security=impossible" -x quit:fgrep!=login.php
+```
 
 <br>
 <h2>Task 5 . Brute forcing - Patator</h2>
