@@ -474,9 +474,10 @@ drwxrwxr-x 2 bruce bruce 4096 Feb 19  2023 templates/
 <div align="center"><h6>
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
-|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :------606--: | :------  | :-------: | :-------: |
-| 2025, Sep 12      |Easy 🔗 - <code><strong>Devie</strong></code>| 494| 110ᵗʰ |5ᵗʰ|     607ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
-| 2025, Sep 11      |Easy 🔗 - Detecting Web Attacks| 493| 110ᵗʰ |5ᵗʰ|     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
+| 2025, Sep 10      |Easy 🚩 - <code><strong>Devie</strong></code>                       | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
+| 2025, Sep 10      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+| 2025, Sep 10      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
 | 2025, Sep 10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
 | 2025, Sep 9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
@@ -494,11 +495,10 @@ drwxrwxr-x 2 bruce bruce 4096 Feb 19  2023 templates/
 | 2025, Sep 5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
 | 2025, Sep 5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
 | 2025, Sep 4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
-| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	    5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,018  |   940   |    73     |
+| 2025, Sep 4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	    5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,018  |   940    |    73     |
 | 2025, Sep 3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
 | 2025, Sep 2       |Medium 🔗 - Session Forencics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
 | 2025, Sep 1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
-
 </h6></div><br>
 
 <br>
@@ -507,7 +507,7 @@ drwxrwxr-x 2 bruce bruce 4096 Feb 19  2023 templates/
                                               <img width="1200px" src="https://github.com/user-attachments/assets/18299e44-c9b8-4a9c-badf-93633f988ce8"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ebc74cb0-a55d-4519-9816-bc1ea279ea63"><br>
                   Global monthly:    607ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2618bb6f-b10f-4187-90f5-ec08996768a5"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/934bf6c1-c651-4cb2-9e47-32882557603e"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/6df8e9b5-e47f-4477-ba22-bbff35f7dff4"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
