@@ -206,14 +206,6 @@ Progress: 4614 / 4615 (99.98%)
 Progress: 4614 / 4615 (99.98%)
 ```
 
-```bash
-
-```
-
-```bash
-
-```
-
 <h2>port 6800</h2>
 
 <img width="1374" height="268" alt="image" src="https://github.com/user-attachments/assets/5b4c28dd-3908-4128-82b7-0a5b257e351c" />
@@ -227,7 +219,7 @@ Progress: 4614 / 4615 (99.98%)
 <br>
 <br>
 
-<img width="1361" height="528" alt="image" src="https://github.com/user-attachments/assets/4673cdc8-35a4-4ff6-8e29-88dea100cbe3" />
+<img width="1167" height="256" alt="image" src="https://github.com/user-attachments/assets/efd3eb21-3ee6-42ec-a60e-69f7100a0423" />
 
 <br>
 <br>
