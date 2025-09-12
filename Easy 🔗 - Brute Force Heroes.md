@@ -19,9 +19,10 @@ It can take up to 5 minutes for the VM and associated service to launch, so give
 <p>1.1. Start your engines! Sorry... VM!<br>
 <code>No answer needed</code></p>
 
-<br>
+<img width="1058" height="527" alt="image" src="https://github.com/user-attachments/assets/696a6865-7e8a-4b55-8270-31cda75e8bcd" />
 
-<h2>Task 2 . Introduction</h2>
+<br>
+<br><h2>Task 2 . Introduction</h2>
 <p>Welcome to Brute Force Hero's. We're going to look at brute force from a zero to hero approach. Covering what brute forcing is, the different tools we can use (despite what you might believe Hydra isn't the only option we have), and the when's and whys behind using these different tools.<br>
 
 If you're already familiar with the concepts behind brute forcing please feel free to skip ahead and get right into it in the next task. The rest of us will take 5 minutes to look at what exactly brute forcing is.</p>
