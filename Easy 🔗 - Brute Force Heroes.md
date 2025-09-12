@@ -531,31 +531,33 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 
 <p>
 
-- xx.xxx.xx.xx/security.php<br>
-- select Low<br>
-- Submit</p>
+- navigate to xx.xxx.xx.xx/security.php<br>
+- select <code>Low</code><br>
+- click <code>Submit</code></p>
 
 <img width="1039" height="674" alt="image" src="https://github.com/user-attachments/assets/cfae406b-c40b-48d5-b0ee-f55db98ec579" />
 
 <br>
 <br>
-
 <p>
 
-- click Brute Force --> xx.xxx.xx.xx/vulnerabilities/brute/</p>
-
-
-<p>
-
-- Launch OWASP ZAP</p>
+- click <code>Brute Force</code> --> xx.xxx.xx.xx/vulnerabilities/brute/<br>
+- launch <code>OWASP ZAP</code></p>
 
 <img width="1034" height="485" alt="image" src="https://github.com/user-attachments/assets/574f2b01-c1d4-4ee4-b764-ae088302f175" />
 
+<br>
+<br>
+
 <img width="812" height="326" alt="image" src="https://github.com/user-attachments/assets/6852d635-64ad-40a7-87b6-2b8c408dfe19" />
+
+<br>
+<br>
 
 <img width="1068" height="290" alt="image" src="https://github.com/user-attachments/assets/cc01a878-ad47-4989-afd8-bb417a763286" />
 
-
+<br>
+<br>
 
 
 
