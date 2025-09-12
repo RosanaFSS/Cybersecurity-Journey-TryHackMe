@@ -167,7 +167,7 @@ We recently purchased a new threat intelligence search application called TryDet
                                               <img width="1200px" src="https://github.com/user-attachments/assets/94d953ea-65c1-46d0-afc9-ff690fd8c6a7"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d5175f19-b218-4134-8011-47953fc96448"><br>
                   Global monthly:    352ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/8c84c995-39a1-4d25-a360-dcb198a44ac1"><br>
-                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/42b42fdf-d145-4175-9daf-8897d40ff00d"><br>
+                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3c6179d2-2ad9-40a8-a1db-1060f7e7a841"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
