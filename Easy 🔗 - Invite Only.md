@@ -122,6 +122,7 @@ We recently purchased a new threat intelligence search application called TryDet
 <br>
 <br>
 <h2 align="center">Completed</h2>
+
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/59c934e5-575f-4aeb-a28a-01cd899b791d"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/2c18a5fd-3735-4610-bf9f-964991f2df1e"></p>
 
@@ -129,7 +130,7 @@ We recently purchased a new threat intelligence search application called TryDet
 
 <div align="center"><h6>
 
-| Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
+| Date              | Room      |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :------606--: | :------  | :-------: | :-------: |
 | 2025, Sep 12      |Easy 🔗 - <code><strong>Devie</strong></code>| 494| 110ᵗʰ |5ᵗʰ|     607ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
 | 2025, Sep 11      |Easy 🔗 - Detecting Web Attacks| 493| 110ᵗʰ |5ᵗʰ|     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
