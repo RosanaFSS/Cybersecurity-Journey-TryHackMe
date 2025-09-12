@@ -528,12 +528,38 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 <p>6.1. What is the username you found? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
 <code>____</code></p>
 
+
 <p>
 
-- downloaded Task File</p>
+- xx.xxx.xx.xx/security.php<br>
+- select Low<br>
+- Submit</p>
+
+<img width="1039" height="674" alt="image" src="https://github.com/user-attachments/assets/cfae406b-c40b-48d5-b0ee-f55db98ec579" />
+
+<br>
+<br>
+
+<p>
+
+- click Brute Force --> xx.xxx.xx.xx/vulnerabilities/brute/</p>
 
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/b2c905c5-e0e3-46dd-9501-1417645a6ee6"><br><br>
+<p>
+
+- Launch OWASP ZAP</p>
+
+<img width="1034" height="485" alt="image" src="https://github.com/user-attachments/assets/574f2b01-c1d4-4ee4-b764-ae088302f175" />
+
+<img width="812" height="326" alt="image" src="https://github.com/user-attachments/assets/6852d635-64ad-40a7-87b6-2b8c408dfe19" />
+
+<img width="1068" height="290" alt="image" src="https://github.com/user-attachments/assets/cc01a878-ad47-4989-afd8-bb417a763286" />
+
+
+
+
+
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/14419050-1857-4d9e-9a54-4c09c684ce93"><br><br>
                    <img width="300px" src=""><br><br>
                    <img width="1200px" src=""><br><br>
                    <img width="1200px" src=""></h6>
