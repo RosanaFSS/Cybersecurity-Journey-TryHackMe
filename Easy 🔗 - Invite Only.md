@@ -15,7 +15,7 @@ Flagged SHA256 hash:  <strong>5d0509f68a9b7c415a726be75a078180e3f02e59866f193b0a
 We recently purchased a new threat intelligence search application called TryDetectThis2.0. You can use this application to gather information on the indicators above.
 
 <h3>Connecting To The Machine</h3>
-<p>Just start the Virtual Machine by clicking “ <strong>Start Virtual Machine </strong>strong>.” Once the VM is booted up, double-click the launcher on the desktop to start the TryDetectThis2.0 application.</p>
+<p>Just start the Virtual Machine by clicking “ <strong>Start Virtual Machine </strong>.” Once the VM is booted up, double-click the launcher on the desktop to start the TryDetectThis2.0 application.</p>
 
 <h3>Virtual environement</h3>
 <p></p><p>To successfully complete this room, you'll need to set up your virtual environment. This involves starting the Target Machine, ensuring you're equipped with the necessary tools and access to tackle the challenges ahead.<br>
