@@ -87,8 +87,65 @@ Once you have Patator installed (as well as the other tools), go ahead and move 
 <p>2.1. Read the above and ensure you are ready to start<br>
 <code>No answer needed</code></p>
 
-<br>
 
+```bash
+:~/BruteForceHeroes# sudo apt install python3-venv
+```
+
+```bash
+:~/BruteForceHeroes# python3 -m venv rose
+```
+
+```bash
+:~/BruteForceHeroes# source rose/bin/activate
+(rose) ...:~/BruteForceHeroes# 
+```
+
+```bash
+(rose) ...:~/BruteForceHeroes# sudo apt install patator
+```
+
+```bash
+(rose) ...:~/BruteForceHeroes# patator
+...
+Available modules:
+  + ftp_login     : Brute-force FTP
+  + ssh_login     : Brute-force SSH
+  + telnet_login  : Brute-force Telnet
+  + smtp_login    : Brute-force SMTP
+  + smtp_vrfy     : Enumerate valid users using SMTP VRFY
+  + smtp_rcpt     : Enumerate valid users using SMTP RCPT TO
+  + finger_lookup : Enumerate valid users using Finger
+  + http_fuzz     : Brute-force HTTP
+  + ajp_fuzz      : Brute-force AJP
+  + pop_login     : Brute-force POP3
+  + pop_passd     : Brute-force poppassd (http://netwinsite.com/poppassd/)
+  + imap_login    : Brute-force IMAP4
+  + ldap_login    : Brute-force LDAP
+  + smb_login     : Brute-force SMB
+  + smb_lookupsid : Brute-force SMB SID-lookup
+  + rlogin_login  : Brute-force rlogin
+  + vmauthd_login : Brute-force VMware Authentication Daemon
+  + mssql_login   : Brute-force MSSQL
+  + oracle_login  : Brute-force Oracle
+  + mysql_login   : Brute-force MySQL
+  + mysql_query   : Brute-force MySQL queries
+  + rdp_login     : Brute-force RDP (NLA)
+  + pgsql_login   : Brute-force PostgreSQL
+  + vnc_login     : Brute-force VNC
+  + dns_forward   : Forward DNS lookup
+  + dns_reverse   : Reverse DNS lookup
+  + snmp_login    : Brute-force SNMP v1/2/3
+  + ike_enum      : Enumerate IKE transforms
+  + unzip_pass    : Brute-force the password of encrypted ZIP files
+  + keystore_pass : Brute-force the password of Java keystore files
+  + sqlcipher_pass : Brute-force the password of SQLCipher-encrypted databases
+  + umbraco_crack : Crack Umbraco HMAC-SHA1 password hashes
+  + tcp_fuzz      : Fuzz TCP services
+  + dummy_test    : Testing module
+```
+
+<br>
 <h2>Task 3 . Getting Started - Burp Suite</h2>
 <p>First thing first, download the attached password file. This is a custom password file built specifically for this room. Make sure you save it somewhere readily accessible as it will be used a lot in this room.
 
@@ -122,13 +179,10 @@ Once Burp Suite is up and running, go ahead and access the DVWA instance by poin
 <p>3.1. What does HTTP response code 302 mean? Hint: <em>Checkout the MDN webdocs: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status</em><br>
 <code>Found</code></p>
 
-<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/501b59e9-b014-4da2-a614-40ac9210e58c"><br><br>
-                   <img width="800px" src="https://github.com/user-attachments/assets/c1ab8ce3-4d5e-4278-b5e8-d82085c9b3fe"><br><br>
-                   <img width="800px" src="https://github.com/user-attachments/assets/55939ec7-b352-47bb-941d-218548b7ad65"></h6>
-
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5a56298b-c8da-44ee-b654-05c8131fee2c"><br><br>
+                   <img width="1200px" src="https://github.com/user-attachments/assets/8f42c566-b56f-4f28-8b08-d0d0f75c748d"><br><br></h6>
 
 <br>
-
 <h3>Task 4 . Brute Forcing - Burp Suite</h3>
 <p>So now we have some real requests we can examine. We can use these to template our brute force requests. In our previous analogy, we've got the language, and how the sentence is formatted, we just need to keep swapping the names out. Right click a login attempt request from our HTTP history and then click <strong>Send to Intruder</strong>:</p>
 
@@ -178,10 +232,8 @@ N.B - It is possible to use things like Burp Suite Macros to help us get around 
 <p>4.2. Can we use Burp Suite to effectively brute force the login in this instance? (Yay/Nay)<br>
 <code>Nay</code></p>
 
-<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/8f42c566-b56f-4f28-8b08-d0d0f75c748d"><br><br>
-                   <img width="300px" src="https://github.com/user-attachments/assets/a731f892-4edc-4e6f-a34c-c7d5b5c4ef46"><br><br>
-                   <img width="1200px" src="https://github.com/user-attachments/assets/55939ec7-b352-47bb-941d-218548b7ad65"><br><br>
-                   <img width="1200px" src="https://github.com/user-attachments/assets/b2c905c5-e0e3-46dd-9501-1417645a6ee6"></h6>
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5a56298b-c8da-44ee-b654-05c8131fee2c"><br><br>
+                   <img width="1200px" src="https://github.com/user-attachments/assets/8f42c566-b56f-4f28-8b08-d0d0f75c748d"><br><br></h6>
 
 
 <br>
