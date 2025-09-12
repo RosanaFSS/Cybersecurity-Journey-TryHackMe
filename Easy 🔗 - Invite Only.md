@@ -130,20 +130,10 @@ We recently purchased a new threat intelligence search application called TryDet
 
 <div align="center"><h6>
 
-| Date              | Room      |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
-|:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :------606--: | :------  | :-------: | :-------: |
-| 2025, Sep 12      |Easy 🔗 - <code><strong>Devie</strong></code>| 494| 110ᵗʰ |5ᵗʰ|     607ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
-| 2025, Sep 11      |Easy 🔗 - Detecting Web Attacks| 493| 110ᵗʰ |5ᵗʰ|     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
-| 2025, Sep 10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
-
-
-
-
-<div align="center"><h6>
-
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
 | 2025, Sep 10      |Easy 🔗 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
+| 2025, Sep 10      |Easy 🚩 - Devie                        | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,516  |    959    |    73     |
 | 2025, Sep 10      |Medium 🚩 - Backtrack                  | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
