@@ -42,6 +42,9 @@ This challenge was originally a part of the Hackfinity Battle 2025 CTF Event.</p
 ld-linux-x86-64.so.2  libc.so.6  voidexec  voidexec.zip
 ```
 
+<br>
+<br>
+
 ```bash
 :~/VoidExecution# file ld-linux-x86-64.so.2
 ld-linux-x86-64.so.2: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=cccdd41e22e25f77a8cda3d045c57ffdb01a9793, stripped
@@ -61,11 +64,6 @@ libc.so.6: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamica
 <br>
 
 <img width="1294" height="590" alt="image" src="https://github.com/user-attachments/assets/8799e3d0-1eab-4224-9406-1cda5c4e8453" />
-
-<br>
-<br>
-
-<img width="521" height="316" alt="image" src="https://github.com/user-attachments/assets/765cc78e-e732-4764-8213-9293bf572815" />
 
 <br>
 <br>
