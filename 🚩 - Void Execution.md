@@ -24,7 +24,7 @@ You can download the files there.<br>
 
 This challenge was originally a part of the Hackfinity Battle 2025 CTF Event.</p>
 
-<h6><img width="300px" src="https://github.com/user-attachments/assets/43a3b35c-27df-415b-a563-fda11288c09a">TryHackMe</h6>
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/43a3b35c-27df-415b-a563-fda11288c09a"><br>TryHackMe</h6>
 
 <p><em>Answer the question below</em></p>
 <br>
