@@ -240,23 +240,8 @@ PORT      STATE SERVICE    VERSION
 
 <img width="1888" height="871" alt="image" src="https://github.com/user-attachments/assets/207fabe6-6bb5-4cf4-a21a-e003630ac049" />
 
-
 <br>
 <br>
-
-<img width="740" height="485" alt="image" src="https://github.com/user-attachments/assets/e68127d1-96e5-4c8b-a518-9538e7d2507a" />
-
-
-<br>
-<br>
-
-<img width="1350" height="567" alt="image" src="https://github.com/user-attachments/assets/17568e83-6be1-46b3-8204-86f808c553aa" />
-
-<br>
-<br>
-
-<p><em>CVE-2018-15839</em></p>
-
 
 
 <img width="1110" height="407" alt="image" src="https://github.com/user-attachments/assets/3c4e6d0d-647c-4b12-86f7-6bda1fe185a3" />
