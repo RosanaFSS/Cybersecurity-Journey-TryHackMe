@@ -62,12 +62,12 @@ libc.so.6: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamica
 
 <br>
 <br>
+<p><em>main</em> function</p>
 
 <img width="1294" height="590" alt="image" src="https://github.com/user-attachments/assets/8799e3d0-1eab-4224-9406-1cda5c4e8453" />
 
 <br>
 <br>
-<p><em>main</em> function</p>
 
 ```bash
 undefined8 main(void)
@@ -100,12 +100,12 @@ undefined8 main(void)
 
 <br>
 <br>
+<p><em>forbidden</em> function/p>
 
 <img width="1306" height="546" alt="image" src="https://github.com/user-attachments/assets/37287d88-2148-40e1-8bab-e03c5d5b0ead" />
 
 <br>
 <br>
-<p><em>forbidden</em> function/p>
 
 ```bash
 undefined8 forbidden(long param_1)
