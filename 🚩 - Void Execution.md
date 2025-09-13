@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/8e9f37ca-b0ce-444d-b596-7429179628a6"><br>
 2025, September 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>495</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<emLearn how to bypass restrictions in Linux exploit development/em>.<br>
+<em></em>Learn how to bypass restrictions in Linux exploit development</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1voidexecution"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/650c0463-3dfd-4798-b07d-b6df74ef543a"></p>
 
