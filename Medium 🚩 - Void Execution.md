@@ -81,8 +81,8 @@ voidexec: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically li
 
 - <code>001012eb</code> = function <code>main</code> address<br>001012eb - 0x00100000 = <code>0x12eb</code><br><br><strong>main() offset</strong> at <code>0x12eb</code><br><br>
 - identified <code>__s = (code *)mmap((void *)0xc0de0000, 100, 7, 0x22, -1, 0);</code> in function <code>main</code><br><br>
-- <code>mmap</code> is mapping<br>address <code>0xc0de0000</code><br>lenght <code>100</code><br>ROT_READ <code>7</code><br>MAP_PRIVATE <code>0x22</code><br>fd <code>-1</code><br>offset <code>0</code><br><br>
-- <code>0X00101100</code> = <code>mprotect(__s,100,4);</code> address<br>0x00101100 - 0x00100000 = <code>0x1100</code><br>0x00101100 - 0x00100000 = <code>0x1100</code><br><strong>mprotect offset</strong> at <code>0x1100</code></p>
+- <code>mmap</code> is mapping<br>address <code>0xc0de0000</code><br>lenght <code>100</code><br>PROT_READ <code>7</code><br>MAP_PRIVATE <code>0x22</code><br>fd <code>-1</code><br>offset <code>0</code><br><br>
+- <code>0X00101100</code> = <code>mprotect(__s,100,4);</code><br>address<br>0x00101100 - 0x00100000 = <code>0x1100</code><br><strong>mprotect offset</strong> at <code>0x1100</code></p>
 
 <img width="1294" height="590" alt="image" src="https://github.com/user-attachments/assets/8799e3d0-1eab-4224-9406-1cda5c4e8453" />
 
