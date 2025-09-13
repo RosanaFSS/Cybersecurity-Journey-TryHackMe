@@ -20,6 +20,9 @@ The VM needs 5 minutes to properly boot up.</p>
 <br>
 
 <h2>nikto</h2>
+<p>
+
+- All CGI directories 'found' ...</p>
 
 ```bash
 :~/RoyalRouter# nikto -h xx.xxx.xx.xxx
@@ -33,17 +36,11 @@ The VM needs 5 minutes to properly boot up.</p>
 + Server: httpd
 + The anti-clickjacking X-Frame-Options header is not present.
 + All CGI directories 'found', use '-C none' to test none
-Use of each() on hash after insertion without resetting hash iterator results in undefined behavior, Perl interpreter: 0x55c1d441a2a0 at /usr/share/perl5/LW2.pm line 947.
-Use of each() on hash after insertion without resetting hash iterator results in undefined behavior, Perl interpreter: 0x55c1d441a2a0 at /usr/share/perl5/LW2.pm line 947.
-Use of each() on hash after insertion without resetting hash iterator results in undefined behavior, Perl interpreter: 0x55c1d441a2a0 at /usr/share/perl5/LW2.pm line 947.
+...
 + Multiple index files found: index.asp, default.asp
-+ /kboard/: KBoard Forum 0.3.0 and prior have a security problem in forum_edit_post.php, forum_post.php and forum_reply.php
-+ /lists/admin/: PHPList pre 2.6.4 contains a number of vulnerabilities including remote administrative access, harvesting user info and more. Default login to admin interface is admin/phplist
-+ /ssdefs/: Siteseed pre 1.4.2 has 'major' security problems.
-+ /sshome/: Siteseed pre 1.4.2 has 'major' security problems.
-+ /tiki/: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin
+...
 + OSVDB-637: /~root/: Allowed to browse root's home directory.
-+ /help/: Help directory should not be accessible
+...
 + /cgi.cgi/blog/: A blog was found. May contain security problems in CGIs, weak passwords, and more.
 + /webcgi/blog/: A blog was found. May contain security problems in CGIs, weak passwords, and more.
 + /cgi-914/blog/: A blog was found. May contain security problems in CGIs, weak passwords, and more.
@@ -87,20 +84,7 @@ Use of each() on hash after insertion without resetting hash iterator results in
 + /webcart/config/: This may allow attackers to read credit card data. Reconfigure to make this dir not accessible via the web.
 + /webcart/orders/: This may allow attackers to read credit card data. Reconfigure to make this dir not accessible via the web.
 + /_mem_bin/auoconfig.asp: Displays the default AUO (LDAP) schema, including host and port.
-+ OSVDB-17659: /SiteServer/Admin/knowledge/persmbr/vs.asp: Expose various LDAP service and backend configuration parameters
-+ OSVDB-17661: /SiteServer/Admin/knowledge/persmbr/VsLsLpRd.asp: Expose various LDAP service and backend configuration parameters
-+ OSVDB-17662: /SiteServer/Admin/knowledge/persmbr/VsPrAuoEd.asp: Expose various LDAP service and backend configuration parameters
-+ OSVDB-17660: /SiteServer/Admin/knowledge/persmbr/VsTmPr.asp: Expose various LDAP service and backend configuration parameters
-+ /jamdb/: JamDB pre 0.9.2 mp3.php and image.php can allow user to read arbitrary file out of docroot.
-+ /securecontrolpanel/: Web Server Control Panel
-+ /webmail/: Web based mail package installed.
-+ /_cti_pvt/: FrontPage directory found.
-+ /upd/: WASD Server can allow directory listings by requesting /upd/directory/. Upgrade to a later version and secure according to the documents on the WASD web site.
-+ OSVDB-8450: /3rdparty/phpMyAdmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. http://www.securityfocus.com/bid/7963.
-+ OSVDB-8450: /phpMyAdmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. http://www.securityfocus.com/bid/7963.
-+ OSVDB-8450: /3rdparty/phpmyadmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. http://www.securityfocus.com/bid/7963.
-+ OSVDB-8450: /phpmyadmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. http://www.securityfocus.com/bid/7963.
-+ OSVDB-8450: /pma/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. http://www.securityfocus.com/bid/7963.
+...
 + OSVDB-6666: /cgi.cgi/hpnst.exe?c=p+i=SrvSystemInfo.html: HP Instant TopTools may be vulnerable to a DoS by requesting hpnst.exe?c=p+i=hpnst.exe multiple times.
 + OSVDB-728: /admentor/adminadmin.asp: Version 2.11 of AdMentor is vulnerable to SQL injection during login, in the style of: ' or =
 + OSVDB-10107: /author.asp: May be FactoSystem CMS, which could include SQL injection problems that could not be tested remotely.
@@ -150,12 +134,6 @@ Use of each() on hash after insertion without resetting hash iterator results in
 + OSVDB-3092: /cgi-home/stats_old/: This might be interesting...
 + OSVDB-3092: /cgi-perl/stats_old/: This might be interesting...
 + OSVDB-3092: /scgi-bin/stats_old/: This might be interesting...
-+ OSVDB-3092: /advworks/equipment/catalog_type.asp: This might be interesting...
-+ OSVDB-17670: /clocktower/: Site Server sample files.  This might be interesting...
-+ OSVDB-17670: /market/: Site Server sample files.  This might be interesting.
-+ OSVDB-17670: /mspress30/: Site Server sample files.  This might be interesting...
-+ OSVDB-3092: /scripts/postinfo.asp: This might be interesting...
-+ OSVDB-3092: /site/iissamples/: This might be interesting...
 ...
 + /project-admins/: Admin login page/section found.
 + /pureadmin/: Admin login page/section found.
@@ -211,7 +189,7 @@ Use of each() on hash after insertion without resetting hash iterator results in
 <h2>nmap</h2>
 
 ```bash
-:~/RoyalRouter# nmap -p- -vv TargetIP
+:~/RoyalRouter# nmap -p- -vv xx.xxx.xx.xxx
 ...
 PORT      STATE SERVICE REASON
 22/tcp    open  ssh     syn-ack ttl 64
@@ -225,7 +203,7 @@ PORT      STATE SERVICE REASON
 ```
 
 ```bash
-:~/RoyalRouter# nmap -sC -sV -Pn -T4 -p22,23,80,9999,20443,24433,28080,50628 TargetIP
+:~/RoyalRouter# nmap -sC -sV -Pn -T4 -p22,23,80,9999,20443,24433,28080,50628 xx.xxx.xx.xxx
 ...
 PORT      STATE SERVICE    VERSION
 22/tcp    open  ssh        OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
@@ -240,52 +218,163 @@ PORT      STATE SERVICE    VERSION
 50628/tcp open  tcpwrapped
 ```
 
-<h3>DD-WRT milli-httpd</h3>
+```bash
+:~/RoyalRouter# nmap -Pn --script vuln xx.xxx.xx.xxx
+...
+PORT     STATE SERVICE
+22/tcp   open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+23/tcp   open  telnet
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp   open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+9999/tcp open  abyss
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+```
+
+<h2>DD-WRT milli-httpd</h2>
 
 <img width="660" height="152" alt="image" src="https://github.com/user-attachments/assets/3ea97c48-a543-4b93-a1e8-3ac45e8faa46" />
 
+<br>
+<br>
+<h2>TargetIP</h2>
+<p>
 
-<h3>searchploit</h3>
+- Product-Page: DIR-615
+- Hardware version: C2<br>
+- searched <code>D-Link</code> and <code>DIR-615</code> and <code>default</code> and <code>password</code><br>
+- Firmware Version: 3.03WW<br>
+- searched <code>D-Link</code> and <code>DIR-615</code> and <code>authorization</code><brhttps://www.exploit-db.com/exploits/45317</p>
 
-```bash
-:~/RoyalRouter# searchsploit DD-WRT
-------------------------------------------------------------------------------------------------------------- ---------------------------------
- Exploit Title                                                                                               |  Path
-------------------------------------------------------------------------------------------------------------- ---------------------------------
-DD-WRT - Site Survey SSID Script Injection                                                                   | multiple/remote/32189.py
-DD-WRT 24-preSP2 - Information Disclosure                                                                    | hardware/remote/15842.txt
-DD-WRT 45723 - UPNP Buffer Overflow (PoC)                                                                    | hardware/dos/49730.py
-DD-WRT HTTP v24-SP1 - Command Injection                                                                      | linux/remote/10030.rb
-DD-WRT HTTPd Daemon/Service - Arbitrary Command Execution (Metasploit)                                       | cgi/webapps/16856.rb
-DD-WRT HTTPd Daemon/Service - Remote Command Execution                                                       | hardware/remote/9209.txt
-DD-WRT v24-sp1 - Cross-Site Reference Forgery                                                                | hardware/remote/7389.html
-------------------------------------------------------------------------------------------------------------- ---------------------------------
-Shellcodes: No Results
-```
-
-```bash
-:~/RoyalRouter#  searchsploit -m /hardware/remote/9209.txt
-  Exploit: DD-WRT HTTPd Daemon/Service - Remote Command Execution
-      URL: https://www.exploit-db.com/exploits/9209
-     Path: /opt/exploitdb/exploits/hardware/remote/9209.txt
-    Codes: OSVDB-57143, CVE-2009-2766, CVE-2009-2765, OSVDB-55990, CVE-2008-6975, OSVDB-55636, CVE-2008-6974
-...
-:~/RoyalRouter# ls
-9209.txt
-```
+<img width="1260" height="502" alt="image" src="https://github.com/user-attachments/assets/dca93ece-9f3a-4bb7-8671-cfbf35729ffd" />
 
 <br>
+<br>
 
-<img width="976" height="334" alt="image" src="https://github.com/user-attachments/assets/c7d95861-803f-4432-859e-a27e9dca2f99" />
-
-
-<H3>TargetIP</H3>
-
-<img width="1074" height="351" alt="image" src="https://github.com/user-attachments/assets/83d28eaa-ae14-4826-af9c-d246f85e8971" />
+<img width="740" height="485" alt="image" src="https://github.com/user-attachments/assets/e68127d1-96e5-4c8b-a518-9538e7d2507a" />
 
 
+<br>
+<br>
+
+<img width="1350" height="567" alt="image" src="https://github.com/user-attachments/assets/17568e83-6be1-46b3-8204-86f808c553aa" />
+
+<br>
+<br>
+
+<p><em>CVE-2018-15839</em></p>
 
 ```bash
+# Exploit Title: D-Link DIR-615 - Denial of Service (PoC)
+# Date: 2018-08-09
+# Vendor Homepage: http://www.dlink.co.in
+# Hardware Link:  https://www.amazon.in/D-Link-DIR-615-Wireless-N300-Router-Black/dp/B0085IATT6
+# Version: D-Link DIR-615
+# Category: Hardware
+# Exploit Author:  Aniket Dinda
+# Tested on: Linux (kali linux)
+# Web: https://hackingvila.wordpress.com/2018/08/24/d-link-dir-615-buffer-overflow-via-a-long-authorization-http-header-click-here/
+# Cve: CVE-2018-15839
 
+# Proof Of Concept:
+
+1- First connect to this network
+2- Open BurpSuite and then start the intercept, making the necessary proxy changes to the internet browser.
+3- Goto Easy setup > 
+4- Now as the Burp is intercept is on, you will find an Authorization: Basic or cookie: SessionId followed by a string. Now we paste a string consisting oaf 5000 zeros.
+5- Then forward the connection
+6- Then your router automatically log out and the net connection will be gone.
 ```
+
+
+<img width="1110" height="407" alt="image" src="https://github.com/user-attachments/assets/3c4e6d0d-647c-4b12-86f7-6bda1fe185a3" />
+
+<br>
+<br>
+
+
+<img width="662" height="352" alt="image" src="https://github.com/user-attachments/assets/46fdbd8e-ff7b-4f68-9b0e-24130cd37a56" />
+
+<br>
+<br>
+
+<img width="665" height="387" alt="image" src="https://github.com/user-attachments/assets/0c53ca29-de53-4259-a970-f0e7f532e2fe" />
+
+<br>
+<br>
+
+<img width="663" height="277" alt="image" src="https://github.com/user-attachments/assets/25b174d4-1c4f-447b-b873-f5015395149e" />
+
+
+<br>
+<br>
+
+<img width="1021" height="376" alt="image" src="https://github.com/user-attachments/assets/9309433f-bcaa-4af8-9d35-3f4f48c4dfe0" />
+
+
+<br>
+<br>
+
+<img width="1010" height="315" alt="image" src="https://github.com/user-attachments/assets/fa9f1e9f-75eb-4482-9759-a16b330ad770" />
+
+<br>
+<br>
+
+<img width="586" height="97" alt="image" src="https://github.com/user-attachments/assets/b58faaed-cbf4-476a-9f15-cb8bf98f80cb" />
+
+<br>
+<br>
+
+
+<img width="1017" height="326" alt="image" src="https://github.com/user-attachments/assets/d2c015a6-1879-4288-8c2f-bf084545b461" />
+
+<br>
+<br>
+
+
+<img width="866" height="127" alt="image" src="https://github.com/user-attachments/assets/36d2d289-74eb-4737-99ae-a4fcaeaed5ca" />
+
+
+<br>
+<br>
+
+<img width="1009" height="308" alt="image" src="https://github.com/user-attachments/assets/b0d50d2f-1ad7-41a7-b993-326948339357" />
+
+<br>
+<br>
+
+
+<img width="956" height="156" alt="image" src="https://github.com/user-attachments/assets/7bca2caa-9848-4ae5-91e0-6756fbe30e40" />
+
+<br>
+<br>
+<br>
+
+
+<img width="1900" height="886" alt="image" src="https://github.com/user-attachments/assets/6e35d71a-0b93-47c1-b62b-2ca3fc87bdb0" />
+
+
+<img width="1909" height="900" alt="image" src="https://github.com/user-attachments/assets/73cbbb24-e4bd-4b82-947d-decad8e8da00" />
+
+
 
