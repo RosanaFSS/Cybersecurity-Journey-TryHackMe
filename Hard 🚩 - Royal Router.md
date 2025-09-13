@@ -1,12 +1,13 @@
 <h1 align="center">Royal Router</h1>
-<p align="center"><img width="80px" src="   "><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/75e31f34-ccdb-49df-a2e9-58c249ef95df"><br>
 2025, September 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>495</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>You will learn how to compromise an IoT device</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1royalrouter">here</a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/7fcf12cf-d5b0-44c5-90bf-1dad8c3829df"></p>
 
-<h1>Task 1 . IoT . Rotal Router</h1>
+
+<h1>Task 1 . IoT . Royal Router</h1>
 <p>Cipher exposes a crucial router at the edge of his network, creating a narrow window for potential intrusions.  It could grant access to the internal network where he stores his operations and compromised systems.<br>
 
 The VM needs 5 minutes to properly boot up.</p>
@@ -264,8 +265,6 @@ PORT     STATE SERVICE
 - Hardware version: C2<br>
 - Firmware Version: 3.03WW<br>
 - searched <code>D-Link</code> and <code>DIR-615</code> and <code>authorization</code><br>https://www.exploit-db.com/exploits/45317</p>
-
-<img width="1260" height="502" alt="image" src="https://github.com/user-attachments/assets/dca93ece-9f3a-4bb7-8671-cfbf35729ffd" />
 
 <br>
 <br>
