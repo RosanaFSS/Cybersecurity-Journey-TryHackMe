@@ -24,11 +24,17 @@ You can download the files there.<br>
 
 This challenge was originally a part of the Hackfinity Battle 2025 CTF Event.</p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/43a3b35c-27df-415b-a563-fda11288c09a"><br>TryHackMe</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/43a3b35c-27df-415b-a563-fda11288c09a"><br>TryHackMe</h6>
 
 <p><em>Answer the question below</em></p>
 <br>
 
+
+<p>
+
+- downloaded Task Files<br>
+- identified its types<br>
+- launched Ghidra to analyze it</p>
 
 ```bash
 :~/VoidExecution# ls
@@ -49,6 +55,9 @@ libc.so.6: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamica
 :~/VoidExecution# file voidexec
 ]voidexec: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter ./ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=4d5a5e48c62c321224d9826c7f688051ff95e54b, not stripped
 ```
+
+<br>
+<br>
 
 <img width="1294" height="590" alt="image" src="https://github.com/user-attachments/assets/8799e3d0-1eab-4224-9406-1cda5c4e8453" />
 
@@ -84,6 +93,9 @@ undefined8 main(void)
   return 0;
 }
 ```
+
+<br>
+<br>
 
 <img width="1120" height="519" alt="image" src="https://github.com/user-attachments/assets/2d7ce6b3-4ae2-413c-bf00-84fadac57e56" />
 
