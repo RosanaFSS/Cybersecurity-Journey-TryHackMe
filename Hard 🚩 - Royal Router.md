@@ -350,7 +350,8 @@ PORT      STATE SERVICE    VERSION
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-| 2025, Sep 13      |Medium 🚩 - <code><strong>Void Execution</strong></code>| 494  | 107ᵗʰ | 5ᵗʰ  |     383ʳᵈ    |     6ᵗʰ    | 126,120  |    961    |    73     |
+| 2025, Sep 13      |Hard 🚩 - <code><strong>Royal Router</strong></code>| 495  | 107ᵗʰ | 5ᵗʰ  |     388ᵗʰ    |     6ᵗʰ    | 126,160  |    962    |    74     |
+| 2025, Sep 13      |Medium 🚩 - Void Execution             | 495  | 107ᵗʰ | 5ᵗʰ  |     383ʳᵈ    |     6ᵗʰ    | 126,120  |    961    |    73     |
 | 2025, Sep 12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     6ᵗʰ    | 126,056  |    960    |    73     |
 | 2025, Sep 12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
 | 2025, Sep 11      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
@@ -380,11 +381,11 @@ PORT      STATE SERVICE    VERSION
 
 <br>
 
-<p align="center">Global All Time:   110ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/bb0dd33a-7b53-402d-ad45-1bbe804e8570"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/581c63e5-e9af-4ae4-afcd-b83c4d7271ab"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8274a817-f7d1-4c9a-b410-323008c675a2"><br>
-                  Global monthly:   383ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/cc3c0fd5-33c1-40fe-8655-481a5fde5fa4"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/43f9633d-1260-44bc-ac6a-7f5615e4e1c8"><br>
+<p align="center">Global All Time:   107ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/12c2592b-bb20-4c52-831a-7fb52d84594d"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/c5a1d0c1-5c57-4b2c-8434-ec14e8e7471e"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/1ad349bc-d407-4b6b-892a-5161837b7714"><br>
+                  Global monthly:   388ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6d25d0b9-3509-40c9-83e0-89d9be126b06"><br>
+                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/05cb5f71-9fce-4153-a07f-b51d6f13be40"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
