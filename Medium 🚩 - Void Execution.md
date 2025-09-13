@@ -346,7 +346,7 @@ $
                                               <img width="1200px" src="https://github.com/user-attachments/assets/581c63e5-e9af-4ae4-afcd-b83c4d7271ab"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8274a817-f7d1-4c9a-b410-323008c675a2"><br>
                   Global monthly:   383ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/cc3c0fd5-33c1-40fe-8655-481a5fde5fa4"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/43f9633d-1260-44bc-ac6a-7f5615e4e1c8"><br>
+                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/43f9633d-1260-44bc-ac6a-7f5615e4e1c8"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
