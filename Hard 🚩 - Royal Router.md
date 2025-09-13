@@ -189,6 +189,10 @@ The VM needs 5 minutes to properly boot up.</p>
 
 <h2>nmap</h2>
 
+<p>
+
+- 80 : http : DD-WRT milli_httpd : D-LINK CORPORATION, INC | WIRELESS ROUTER | LOGIN</p>
+
 ```bash
 :~/RoyalRouter# nmap -p- -vv xx.xxx.xx.xxx
 ...
@@ -219,46 +223,13 @@ PORT      STATE SERVICE    VERSION
 50628/tcp open  tcpwrapped
 ```
 
-```bash
-:~/RoyalRouter# nmap -Pn --script vuln xx.xxx.xx.xxx
-...
-PORT     STATE SERVICE
-22/tcp   open  ssh
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-23/tcp   open  telnet
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-80/tcp   open  http
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
-|_http-csrf: Couldn't find any CSRF vulnerabilities.
-|_http-dombased-xss: Couldn't find any DOM based XSS.
-| http-slowloris-check: 
-|   VULNERABLE:
-|   Slowloris DOS attack
-|     State: LIKELY VULNERABLE
-|     IDs:  CVE:CVE-2007-6750
-|       Slowloris tries to keep many connections to the target web server open and hold
-|       them open as long as possible.  It accomplishes this by opening connections to
-|       the target web server and sending a partial request. By doing so, it starves
-|       the http server's resources causing Denial Of Service.
-|       
-|     Disclosure date: 2009-09-17
-|     References:
-|       http://ha.ckers.org/slowloris/
-|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
-|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
-|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
-9999/tcp open  abyss
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-```
-
 <h2>DD-WRT milli-httpd</h2>
 
 <img width="660" height="152" alt="image" src="https://github.com/user-attachments/assets/3ea97c48-a543-4b93-a1e8-3ac45e8faa46" />
 
 <br>
 <br>
-<h2>TargetIP</h2>
+<h2>Web port 80</h2>
 <p>
 
 - Product-Page: DIR-615
