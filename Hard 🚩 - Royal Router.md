@@ -231,7 +231,15 @@ PORT      STATE SERVICE    VERSION
 - Product-Page: DIR-615
 - Hardware version: C2<br>
 - Firmware Version: 3.03WW<br>
-- searched <code>D-Link</code> and <code>DIR-615</code> and <code>authorization</code><br>https://www.exploit-db.com/exploits/45317</p>
+- https://nvd.nist.gov/vuln/detail/CVE-2021-37388</p>
+
+<br>
+<br>
+
+<h3>CVE-201-37288</h3>
+
+<img width="1888" height="871" alt="image" src="https://github.com/user-attachments/assets/207fabe6-6bb5-4cf4-a21a-e003630ac049" />
+
 
 <br>
 <br>
@@ -249,27 +257,6 @@ PORT      STATE SERVICE    VERSION
 
 <p><em>CVE-2018-15839</em></p>
 
-```bash
-# Exploit Title: D-Link DIR-615 - Denial of Service (PoC)
-# Date: 2018-08-09
-# Vendor Homepage: http://www.dlink.co.in
-# Hardware Link:  https://www.amazon.in/D-Link-DIR-615-Wireless-N300-Router-Black/dp/B0085IATT6
-# Version: D-Link DIR-615
-# Category: Hardware
-# Exploit Author:  Aniket Dinda
-# Tested on: Linux (kali linux)
-# Web: https://hackingvila.wordpress.com/2018/08/24/d-link-dir-615-buffer-overflow-via-a-long-authorization-http-header-click-here/
-# Cve: CVE-2018-15839
-
-# Proof Of Concept:
-
-1- First connect to this network
-2- Open BurpSuite and then start the intercept, making the necessary proxy changes to the internet browser.
-3- Goto Easy setup > 
-4- Now as the Burp is intercept is on, you will find an Authorization: Basic or cookie: SessionId followed by a string. Now we paste a string consisting oaf 5000 zeros.
-5- Then forward the connection
-6- Then your router automatically log out and the net connection will be gone.
-```
 
 
 <img width="1110" height="407" alt="image" src="https://github.com/user-attachments/assets/3c4e6d0d-647c-4b12-86f7-6bda1fe185a3" />
