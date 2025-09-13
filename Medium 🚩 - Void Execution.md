@@ -3,7 +3,7 @@
 2025, September 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>495</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em></em>Learn how to bypass restrictions in Linux exploit development</em>.<br>
-Access it <a href="https://tryhackme.com/room/hfb1voidexecution"</a>here.<br>
+Access it <a href="https://tryhackme.com/room/hfb1voidexecution">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/650c0463-3dfd-4798-b07d-b6df74ef543a"></p>
 
 <h1>Task 1 . Binary Exploitation  .  Void Execution</h1>
@@ -100,7 +100,7 @@ undefined8 main(void)
 
 <br>
 <br>
-<p><em>forbidden</em> function/p>
+<p><em>forbidden</em> function</p>
 
 <img width="1306" height="546" alt="image" src="https://github.com/user-attachments/assets/37287d88-2148-40e1-8bab-e03c5d5b0ead" />
 
