@@ -262,9 +262,8 @@ PORT     STATE SERVICE
 
 - Product-Page: DIR-615
 - Hardware version: C2<br>
-- searched <code>D-Link</code> and <code>DIR-615</code> and <code>default</code> and <code>password</code><br>
 - Firmware Version: 3.03WW<br>
-- searched <code>D-Link</code> and <code>DIR-615</code> and <code>authorization</code><brhttps://www.exploit-db.com/exploits/45317</p>
+- searched <code>D-Link</code> and <code>DIR-615</code> and <code>authorization</code><br>https://www.exploit-db.com/exploits/45317</p>
 
 <img width="1260" height="502" alt="image" src="https://github.com/user-attachments/assets/dca93ece-9f3a-4bb7-8671-cfbf35729ffd" />
 
