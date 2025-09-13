@@ -32,7 +32,8 @@ This challenge was originally a part of the Hackfinity Battle 2025 CTF Event.</p
 
 <p>
 
-- downloaded Task Files<br>
+- downloaded the zipped Task File<br>
+- extracted it<br>
 - identified its types<br>
 - launched Ghidra to analyze it</p>
 
