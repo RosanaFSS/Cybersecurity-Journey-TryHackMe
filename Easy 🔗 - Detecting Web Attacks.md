@@ -186,7 +186,7 @@ PORT     STATE SERVICE
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-| 2025, Sep 10      |Easy 🔗 - <code><strong>Detecting Web Attacks</strong></code>| 493| 110ᵗʰ |5ᵗʰ|     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+| 2025, Sep 11      |Easy 🔗 - <code><strong>Detecting Web Attacks</strong></code>| 493| 110ᵗʰ |5ᵗʰ|     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
 | 2025, Sep 10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
 | 2025, Sep 10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
 | 2025, Sep 9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
@@ -221,8 +221,3 @@ PORT     STATE SERVICE
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
-
-
-
-
-
