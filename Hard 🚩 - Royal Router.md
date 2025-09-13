@@ -1,8 +1,18 @@
-<p>July 12, 2025 - Day 432</p>
-<h1>Royal Router</h1>
-<p>You will learn how to compromise an IoT device.</p>
-<p>https://tryhackme.com/room/hfb1royalrouter</p>
+<h1 align="center">Royal Router</h1>
+<p align="center"><img width="80px" src="   "><br>
+2025, September 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>495</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>You will learn how to compromise an IoT device</em>.<br>
+Access it <a href="https://tryhackme.com/room/hfb1royalrouter">here</a>.<br>
+<img width="1200px" src=""></p>
 
+<h1>Task 1 ...</h1>
+
+
+<h6 align="center"><img width="200px" src=""><br>TryHackMe</h6>
+
+<p><em>Answer the question below</em></p>
+<br>
 
 <br>
 
