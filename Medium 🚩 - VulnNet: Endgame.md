@@ -1,7 +1,7 @@
 <h1 align="center">VulnNet: Endgame</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/0bea92e5-a71d-4ca6-a97f-8ac51f307026"><br>
 2025, September 13<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>495</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+and I’m excited to join you on this adventure, part of my <code>496</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Hack your way into this simulated vulnerable infrastructure. No puzzles. Enumeration is the key</em>.<br>
 Access it <a href="https://tryhackme.com/room/vulnnetendgame">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/394589f3-2384-4502-a256-430b069f0a6a"></p>
@@ -1461,7 +1461,8 @@ THM{********************************}
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-| 2025, Sep 13      |Hard 🚩 - <code><strong>Royal Router</strong></code>| 495  | 107ᵗʰ | 5ᵗʰ  |     388ᵗʰ    |     6ᵗʰ    | 126,160  |    962    |    74     |
+| 2025, Sep 14      |Hard 🚩 - <code><strong>VulnNet: Endgame</strong></code>| 496  | 108ᵗʰ | 5ᵗʰ  |     394ᵗʰ    |     6ᵗʰ    | 126,270  |    963    |    74     |
+| 2025, Sep 13      |Hard 🚩 - Royal Router| 495  | 107ᵗʰ | 5ᵗʰ  |     388ᵗʰ    |     6ᵗʰ    | 126,160  |    962    |    74     |
 | 2025, Sep 13      |Medium 🚩 - Void Execution             | 495  | 107ᵗʰ | 5ᵗʰ  |     383ʳᵈ    |     6ᵗʰ    | 126,120  |    961    |    73     |
 | 2025, Sep 12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     6ᵗʰ    | 126,056  |    960    |    73     |
 | 2025, Sep 12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
@@ -1492,11 +1493,16 @@ THM{********************************}
 
 <br>
 
-<p align="center">Global All Time:   107ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/12c2592b-bb20-4c52-831a-7fb52d84594d"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/c5a1d0c1-5c57-4b2c-8434-ec14e8e7471e"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/1ad349bc-d407-4b6b-892a-5161837b7714"><br>
-                  Global monthly:   388ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6d25d0b9-3509-40c9-83e0-89d9be126b06"><br>
-                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/05cb5f71-9fce-4153-a07f-b51d6f13be40"><br>
+
+<img width="1885" height="890" alt="image" src="https://github.com/user-attachments/assets/7178700e-897b-45bf-9105-a66c36f398f8" />
+
+
+
+<p align="center">Global All Time:   108ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/81862bfb-3b90-4081-9ff5-19b2d4e2d857"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/ee9f4b93-82ae-444b-8605-c580aa62999d"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/25a79410-b98a-437a-83a3-c53453db9975"><br>
+                  Global monthly:   394ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7178700e-897b-45bf-9105-a66c36f398f8"><br>
+                  Brazil monthly:      6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c9ce3a58-b117-4b94-931d-422f4cf31d9c"><br>
 
 <h2 align="center">Thanks for coming!</h2>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>  
