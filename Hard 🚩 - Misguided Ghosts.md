@@ -8,7 +8,7 @@ Access it <a href="https://tryhackme.com/room/misguidedghosts">here</a>.<br>
 
 
 <h1>Task 1 . Misguided Ghosts</h1>
-<p>Deploy the machine and get root privileges</p>p>
+<p>Deploy the machine and get root privileges</p>
 
 <p><em>Answer the questions below</em></p>
 
