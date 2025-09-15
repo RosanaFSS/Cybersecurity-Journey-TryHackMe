@@ -1493,11 +1493,6 @@ THM{********************************}
 
 <br>
 
-
-<img width="1885" height="890" alt="image" src="https://github.com/user-attachments/assets/7178700e-897b-45bf-9105-a66c36f398f8" />
-
-
-
 <p align="center">Global All Time:   108ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/81862bfb-3b90-4081-9ff5-19b2d4e2d857"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/ee9f4b93-82ae-444b-8605-c580aa62999d"><br><br>
                   Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/25a79410-b98a-437a-83a3-c53453db9975"><br>
