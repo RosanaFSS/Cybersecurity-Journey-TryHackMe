@@ -6,14 +6,10 @@ and I’m excited to join you on this adventure, part of my <code>498</code>-day
 Access it <a href="https://tryhackme.com/room/chainingvulnerabilitiesZp">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/7eaea741-be1a-4f57-aa7c-1ead2622f41f"></p>
 
-
-<br>
 <h1 align="center">Task 1 . Introduction</h1>
 <h3 align="center">Virtual environment set up</h3>
 <p></p>All the details can be foubd at the top of the page.</p>
-
 <h3 align="center">Introduction</h3>
-
 <p>When we talk about vulnerability chaining, we're referring to the idea that a single bug on its own might not seem like a big deal, but when combined with others, it can become dangerous. This is how real-world attackers think: not every vulnerability needs to be critical, as long as it helps them move forward. In fact, attackers often rely on several "low-risk" or "medium-risk" issues to gradually work their way to a serious compromise.<br>
 
 This brings us to something important that's often overlooked when reading pentest reports: risk ratings are assigned per vulnerability in isolation. Organisations usually focus on remediating the criticals and highs, while deferring or accepting mediums and lows. But this mindset can be misleading. A medium-risk vulnerability like verbose error messages or weak password policy might not get immediate attention, but when chained together with other issues like missing CSRF protection or XSS, it could lead to a much higher-impact exploit. Sometimes, chaining multiple medium-rated issues results in a more damaging outcome than a single high-risk finding would have caused on its own.<br>
@@ -42,23 +38,22 @@ If you haven't already, we strongly recommend completing the  <a href="https://t
 <p>1.1. Click me to proceed to the next task.<br>
 <code>No answer needed</code></p>
 
-<br>
 <h1 align="center">Task 2 . Chaining Vulnerabilties</h1>
-<h3 align="center">What is Vulnerability Chaining?</h3>
+<h2 align="center">What is Vulnerability Chaining?</h2>
 <p>Vulnerability chaining is when two or more individual weaknesses are combined to cause greater damage than they could alone. Think of it like this: one vulnerability gets your foot in the door, another gives you access to sensitive functionality, and a third might let you execute code or exfiltrate data. None of them are particularly dangerous on their own, but together, they're powerful.<br>
 
 Let's look at a better example. Imagine you find a Self-XSS vulnerability in a user profile editor, the kind where the payload only runs in your own browser. On its own, that's pretty limited; you can't use it to target anyone else. But now imagine that the application also lacks CSRF protection. You craft a CSRF payload that forces an authenticated victim (like an admin) to unknowingly save your Self-XSS payload into their own profile. Later, when the admin views or edits their profile, the XSS fires, and now you've got code execution in their browser. Neither the Self-XSS nor the missing CSRF were critical on their own, but chained together, they give you full access to someone else's session.<br>
 
 This is the essence of chaining: connecting lower-severity vulnerabilities to achieve something much more impactful.</p>
 
-<h3 align="center">Why This Matters in the Real World</h3>
+<h2 align="center">Why This Matters in the Real World</h2>
 <p>In real-world attacks, this approach is more common than most people expect. One of the best-known examples is the Capital One breach in 2019. The attacker didn't rely on a critical zero-day. Instead, they began with a Server-Side Request Forgery (SSRF) vulnerability. On its own, that bug only allowed them to make HTTP requests from the server. However, that was enough to access the AWS EC2 metadata service, retrieve IAM credentials, and use those credentials to download sensitive files from an S3 bucket. None of these issues were individually critical, but the way they were chained led to a massive data breach.<br>
 
 Another common scenario: an attacker finds a page vulnerable to SQL Injection, but it's behind a login. They also notice that the login form gives away whether a username exists, and that there's no limit on login attempts. Using this, they discover a valid username, brute-force the weak password, and log in. Now authenticated, they exploit the SQLi to dump data or escalate privileges. Again, no single issue here is a guaranteed entry point, but together they build a clear path to compromise.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/d2968361-94ea-43d7-8de7-1b0f8d338b00"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6><br>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/d2968361-94ea-43d7-8de7-1b0f8d338b00"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
-<h3 align="center">Why Patch-by-Patch Aren´t Enough</h3>
+<h2 align="center">Why Patch-by-Patch Aren´t Enough</h2>
 <p>It's common for development teams to fix vulnerabilities one at a time, treating them as isolated problems. They patch the SQLi, but leave the account enumeration alone. Or they fix a file upload issue, but leave the XSS that lets you abuse the upload feature. These fixes might close individual doors, but they don't address the bigger picture, the system is still vulnerable because the connections between these bugs were never considered.<br>
 
 That's why security needs to be approached holistically. Vulnerability chaining isn't some edge case; it's how real attacks happen. Attackers aren't playing fair, and they aren't following your bug tracker. They're looking for whatever combination of flaws gets them to their goal, whether that's access, persistence, or data.</p>
@@ -68,22 +63,21 @@ That's why security needs to be approached holistically. Vulnerability chaining 
 <p>2.1. Click me to proceed to the next task.<br>
 <code>No answer needed</code></p>
 
-<br>
 <h1 align="center">Task 3 . Methodology</h1>
 <h2 align="center">How to Think Like an Attacker</h2>
 <p>A skilled attacker rarely finds a single vulnerability and immediately wins. Instead, they explore the application like a curious user, identify small cracks, and slowly build up a path to their objective. The real power of chaining vulnerabilities comes from <strong>understanding how they interact</strong>, not just spotting them in isolation.<br>
 
 This section introduces a repeatable process to help you think like an attacker. You'll learn how to map out an application, identify potential weaknesses, and combine them to achieve a larger goal, just like an adversary would.<br>
 
-<h3 align="center">Step 1: Use the Application Like a Normal User</h3>
-<p>Before anything else, explore the application with no assumptions. Register an account, log in, click around, and understand what features are available. Don't go hunting for bugs yet. Just get a feel for the flow, the user roles, and where sensitive actions happen (e.g. account settings, admin features, uploads).</p>p>
+<h3 align="center">Step 1 : Use the Application Like a Normal User</h3>
+<p>Before anything else, explore the application with no assumptions. Register an account, log in, click around, and understand what features are available. Don't go hunting for bugs yet. Just get a feel for the flow, the user roles, and where sensitive actions happen (e.g. account settings, admin features, uploads).</p>
 
-<h3 align="center">Step 2: Enumerate and Find Weaknesses</h3>
+<h3 align="center">Step 2 : Enumerate and Find Weaknesses</h3>
 <p>Now shift your focus to identifying weak spots. These might be classic vulnerabilities like SQLi, XSS, or IDOR, or subtler behaviours like inconsistent error messages, user ID patterns in URLs, or file uploads that allow weird extensions.<br>
 
 At this point, list all potential findings, even if they seem low-risk.</p>
 
-<h3 align="center">Step 3: Understand What Each Finding Enables</h3>
+<h3 align="center">Step 3 : Understand What Each Finding Enables</h3>
 <p>Once you've got a handful of weaknesses, assess them in isolation. Ask yourself:<br>
 "What can I do with this if I assume nothing else is broken?"<br>
 
@@ -93,7 +87,7 @@ At this point, list all potential findings, even if they seem low-risk.</p>
 
 You're trying to understand the standalone <strong>potential</strong> of each issue.</p>
 
-<h3 align="center">Step 4: Think Like an Attacker, What's the Goal?</h3>
+<h3 align="center">Step 4 : Think Like an Attacker, What's the Goal?</h3>
 <p>Now ask: What would an attacker want to do with this application?<br>
 
 -Steal sensitive data?<br>
@@ -102,14 +96,14 @@ You're trying to understand the standalone <strong>potential</strong> of each is
 
 Context matters. An XSS on a blog might be annoying, but on a banking dashboard? That's a very different threat.</p>
 
-<h3 align="center">Step 5: Build a Path from Weaknesses to Objective</h3>
+<h3 align="center">Step 5 : Build a Path from Weaknesses to Objective</h3>
 <p>This is where you connect the dots. Look at your list of vulnerabilities and imagine a logical path from an external user to the attacker's goal.<br>
 
 Example: Verbose login → valid usernames → weak password policy → login → stored XSS → admin visits → XSS fires → admin cookie theft → privilege escalation.<br>
 
 The key is mapping out the exploit path step by step.</p>
 
-<h3 align="center">Step 6: Execute and Validate Each Step</h3>
+<h3 align="center">Step 6 : Execute and Validate Each Step</h3>
 <p>Walk the chain in order. Don't assume something will work; test it.<br>
 
 - Can you brute-force a password?<br>
@@ -118,7 +112,7 @@ The key is mapping out the exploit path step by step.</p>
 
 This also helps uncover blockers or dependencies. Maybe the XSS only works on certain pages, or the login brute-force fails because of rate limiting.</p>
 
-<h3 align="center">Step 7: Report the Full Chain</h3>
+<h3 align="center">Step 7 : Report the Full Chain</h3>
 <p></p>When reporting, don't isolate the bugs. Tell the full story.<br>
 
 Start with "an unauthenticated attacker can do X", and walk through the chain clearly. Make it obvious that the risk comes not from one bug, but from how they interact.<br>
@@ -131,27 +125,26 @@ Also, be clear about the <strong>impact escalation</strong>:<br>
 <p>3.1. Click me to proceed to the next task.<br>
 <code>No answer needed</code></p>
 
-<br>
 <h1 align="center">Task 4 . Guided Chain</h1>
 <p>In this task, we're going to walk through a full attack chain, piece by piece. Each stage will show how what seems like a small weakness can open the door to something much bigger. This isn't about discovering a single critical bug. It's about recognising how multiple minor flaws, when combined, can lead to a complete compromise of the system.</p>
 
-<h3 align="center">Step 1: Developer Test Credentials</h3>
+<h3 align="center">Step 1 : Developer Test Credentials</h3>
 <p>The first thing you do when approaching any login form is to try the easy stuff. In this case, the web application hosted at <code>http://xx.xxx.xx.xxx/</code> has a test account left behind by the developer: <code>testuser</code> with the password <code>***********</code>. This isn't uncommon, devs often leave test data in place during staging, and if it makes its way into production, it's an easy win for attackers.</p>p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/4edf91b9-3aa2-4e76-af31-8a9d713c6c89"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6><br>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/4edf91b9-3aa2-4e76-af31-8a9d713c6c89"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>By logging in as this low-privileged user, you gain access to basic user features.</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/7fac175e-11c8-4295-ae00-2e67a75e89a6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6><br>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/7fac175e-11c8-4295-ae00-2e67a75e89a6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
-<h3 align="center">Step 2: Stored XSS in User Profile</h3>
+<h3 align="center">Step 2 : Stored XSS in User Profile</h3>
 <p>After logging in, you explore the edit profile page and notice that the "display name" field reflects input directly into the page without proper sanitisation. You try inserting a basic payload like <script>alert(1)</script>, and sure enough, it executes when the profile is viewed.</p>
 
-<h3 align="center">Step 3: CSRF via XSS - Changing Admin Credentials</h3>
+<h3 align="center">Step 3 : CSRF via XSS - Changing Admin Credentials</h3>
 
 
 
-<h3 align="center">Step 4: Login as Admin</h3>
+<h3 align="center">Step 4 : Login as Admin</h3>
 
 
 
@@ -166,7 +159,6 @@ Also, be clear about the <strong>impact escalation</strong>:<br>
 By chaining these together, you've taken what could have been minor issues in isolation and used them to achieve full compromise.</p>
 
 <p><em>Answer the questions below</em></p>
-
 
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/18d1d149-c82b-4ae0-a88c-43493fcc0c88"><br><br>
                    <img width="900px" src="https://github.com/user-attachments/assets/18d1d149-c82b-4ae0-a88c-43493fcc0c88"><br><br>
