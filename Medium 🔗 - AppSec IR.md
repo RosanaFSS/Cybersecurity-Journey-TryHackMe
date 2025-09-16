@@ -34,7 +34,7 @@ Access it <a href="https://tryhackme.com/room/appsecir">here</a>.<br>
 <h3 align="center">AppSec IR & Why it Matters</h3>
 <p>Application security incident response (AppSec IR) refers to the overall practice of handling security incidents involving application-layer vulnerabilities, exploits, or breaches. It sits at the intersection of traditional incident response and application security. The AppSec IR process covers preparation for application security incidents all the way to recovery from an incident that has occurred, essentially looking at IR through an AppSec Lens. This approach has become crucial because modern breaches increasingly originate at the application layer (take this <a href="https://www.verizon.com/business/resources/Ta5a/reports/2023-dbir-public-sector-snapshot.pdf">report from Verizon</a>, which found that web applications are now the top asset involved in security breaches, affected in around 60% of breaches).</p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/c817456e-1724-4417-84f7-7e419f7abcc3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/c817456e-1724-4417-84f7-7e419f7abcc3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>The ultimate goal of AppSec IR is to leverage AppSec practices like secure coding, code review, and application testing to influence each stage of incident response:<br>
 
@@ -49,7 +49,7 @@ This room is structured in a way that it will take you through how each of these
 <h3 align="center">The AppSec IR Collaboration</h3>
 <p>One of the biggest differences between AppSec IR and traditional IT incident response is the level of collaboration required between security responders and the development/AppSec IR teams. In AppSec IR, there are no outrightly defined roles or responsibilities outlined because the implementation will differ depending on the internal infrastructure of an organisation. For a general idea of how this would realistically work in practice, though, consider this example: An IR team would lead the overall investigation, monitoring and containment, but the application security and development teams must be involved to advise on application specifics and implement code fixes.</p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/c49d8c76-22ba-4068-a665-00ed8212dc7b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/c49d8c76-22ba-4068-a665-00ed8212dc7b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>When an application-level incident occurs, this collaboration (the intersection of the two teams makes AppSec IR crucial and is what can make the difference in responding to the incident swiftly and effectively. For example, the AppSec team might identify the exact code flaw and provide a patch, while the incident responders deploy a WAS rule to hold off the attacker until that patch can be applied. AppSec IR is about ensuring that both of these teams are integrated into each other's processes, so each team has a level of understanding to make this collaboration possible.</p>
 
@@ -70,7 +70,7 @@ Throughout this room, we will follow a scenario to illustrate how each stage of 
 <p>2.1. Which tool type analyses logs and aggregates security events across applications?<br>
 <code>SIEM</code></p>
 
-<p>2.2.Which IR phase focuses on deploying emergency WAF rules to stop an ongoing exploit?<br>
+<p>2.2. Which IR phase focuses on deploying emergency WAF rules to stop an ongoing exploit?<br>
 <code>Containment</code></p>
 
 <br>
@@ -81,7 +81,7 @@ Throughout this room, we will follow a scenario to illustrate how each stage of 
 <h4 align="center">Prenvention</h4>
 <p>One of the most effective ways of combating application security incidents is by preventing them from happening in the first place. In the context of AppSec, one of the best ways we can do this is by strengthening the Software Development Life Cycle (SDLC). A common turn of phrase in security, which bears repeating: security should not be an afterthought or a last-minute add-on; it needs to be built in from day one. This is known as adopting a "Secure by Design" (or shifting left) approach, which can help to turn our SDLC into SSDLC (Secure Software Development Life Cycle). This involves tactics like following secure coding practices to avoid common flaws (like XSS), performing threat modelling early on, and adopting SAST/DAST into an organisation's CI/CD pipeline. The aim here is to dramatically reduce the likelihood of serious application incidents occurring by adopting a strong preventive posture, backed by developer training and security testing. For more on this subject, check out our <a href="https://tryhackme.com/room/securesdlc">SSDLC</a> room.
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/48918361-37e8-44b9-b1bc-ad07a85e8fbb"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/48918361-37e8-44b9-b1bc-ad07a85e8fbb"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <h4 align="center">Observability</h4>
 <p>Despite taking all preventative measures at your disposal, incidents can still occur, so we now turn our focus to being able to detect them, as the only thing worse than an incident is an incident which goes unnoticed. The goal then is to avoid this and achieve effective observability. The first step we can take towards this is ensuring that your application logs all key events, such as:<br>
@@ -95,7 +95,7 @@ Effective logging is half the battle, but events can go unseen for some time, so
 <h4 align="center">Containment Readiness and Incident Response Playbooks</h4>
 <p>The idea in the preparation phase is to first limit the chances of an incident occurring, and secondly, to give engineers the best chance at success in later stages of IR. As will be expanded on later in the room, the containment phase involves ensuring damage is contained after an incident occurs. Containment readiness means having the ability to isolate or quarantine affected components to stop an attacker's spread, but also clearly defining roles and responsibilities so that when an incident does occur, time is not wasted answering questions that could have already been asked. Sometimes, though, the questions that should be asked aren't always clear without the benefit of hindsight. One method of asking the right questions (and so getting the right answers in advance) is with the development of IR playbooks. Want to learn more about IR playbooks? Check out or <a href="https://tryhackme.com/room/irplaybooks">IR Playbooks</a> room!</p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/a4fac3e0-f45f-4531-adfc-c305613fc2ec"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/a4fac3e0-f45f-4531-adfc-c305613fc2ec"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>IR playbooks are one of the best tools in an incident responder's toolkit, and the benefits they offer extend to an AppSec scenario. An IR playbook is essentially a documented procedure that provides step-by-step guidance on how to detect, contain, eradicate, and recover from a specific threat. When incidents occur, it can be a highly stressful environment; this stress breeds chaos, and this chaos breeds human error.<br>
 
@@ -131,7 +131,7 @@ From this, it is clear that IR playbooks can help us be prepared for AppSec inci
 
 Once the attack has been <strong>detected</strong>, it needs to undergo an initial triage to <strong>identify</strong> the vulnerability and validate what has been detected. Imagine the scenario we prepared for in the previous task with our IR playbook, which has come to fruition, an alert in our monitoring system, and some bug bounty reports claiming an SQL injection is taking place in a specific API route. Engineers would then follow a process, ideally outlined in the playbook.</p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/185d3531-cde1-4a9b-8813-632b4103b0d0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/185d3531-cde1-4a9b-8813-632b4103b0d0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>First evidence would be gathered by examining the web server logs and details provided within the alerts and bug bounty reports and looking for the appropriate anomalies in the flagged time frame. Using this information, identify the attack/vulnerability and validate its existence. The final part of the identification stage is determining the scope. You don't want to go any further until you assess the severity and impact of the attack. Is user data or sensitive data at risk? Is it user-facing? These are important questions to ask at this stage.
 
@@ -143,7 +143,7 @@ For ShopSmart, the first clue comes from a spike in database query errors logged
 - <strong>Disable vulnerable feature / route</strong>: If a specific feature or API endpoint has been confirmed as the breach vector, consider turning it off temporarily until the incident has been resolved. This will prevent the attacker (and everyone else) from accessing the affected feature / route until it has been secured. Many modern applications are built with feature flags/toggles - essentially kill switches - which enable engineers to quickly deactivate a feature without the need for a full redeploy. If this is an option, it can buy your team time while a proper fix is found.<br>
 - <strong>Apply WAF rules / block malicious traffic</strong>: A WAF can be updated on the fly, so if your observability is high and you have context-rich alerts and logging, you may be able to pinpoint an IP address where the attack is originating and block it. In the example of the SQLi attack, specific attack patterns can be blocked as well, but it should be noted that these are not permanent fixes, an attacker can change their payload or IP address, this simply buys us time. </p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/d3ec7555-97d7-45c2-b46a-a306d3f5198c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/d3ec7555-97d7-45c2-b46a-a306d3f5198c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>
   
@@ -175,7 +175,7 @@ These steps should happen within minutes of identifying the threat. As stated, t
 - <strong>Preserve forensic evidence</strong>: While the process of cleanup and eradication is taking place, it is important to preserve evidence of the attack. In practice this may look like a team member being assigned to take backups or snapshots of relevant data (logs, malicious code samples, query history, etc.) as this evidence may be needed for deeper investigation or legal purposes later.<br>
 - <strong>Reset credentials/revoke accounts</strong>: Depending on whether the attacker took control of certain accounts during privilege escalation or even created accounts entirely, these accounts should be cleaned up. Reset passwords/API keys to accounts that are needed, remove ones that are not.</p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/4772cbb2-53a2-4c84-b06e-f8df7298e881"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/4772cbb2-53a2-4c84-b06e-f8df7298e881"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>While applications should always be closely monitored, this is especially true following a recent incident. While cleaning up further indicators of compromise can be found, these can be fed into your security tools to help spot any remaining malicious presence. At ShopSmart, eradication means deploying a code hotfix for the vulnerable API endpoint, removing a malicious admin account that the attacker created, and restoring clean database backups. Only after penetration testing confirms the fix do they fully reopen the search feature.</p>
 
@@ -189,7 +189,7 @@ These steps should happen within minutes of identifying the threat. As stated, t
 <h4 align="center">Learning Lessons</h4>
 <p>Once operations have been restored, the focus should now turn to <strong>what lessons, as a team, can be learned</strong> from this incident going forward, often called a post-mortem. It is very important to approach this with a blameless mindset. Our objective at this stage is to understand what happened and how to improve, not to shame anyone for making mistakes. After the post-mortem has taken place, a detailed incident report should be made, including: A timeline of events, root cause analysis, response evaluation, lessons learned, and recommendations. This report can often be a goldmine in terms of transforming your team's posture, taking all these findings and recommendations and feeding them into preparation so an incident like this won't take place again. </p>
 
-<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/790e9ad1-737a-4524-8592-17f0214af1fe"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/790e9ad1-737a-4524-8592-17f0214af1fe"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p><em>Answer the questions below</em></p>
 
