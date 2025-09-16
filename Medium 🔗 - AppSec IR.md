@@ -305,7 +305,7 @@ That's it! Good luck!</p>
 <h2 align="center">nmap</h2>
 <p>
 
-- <strong>22</strong> &nbsp;&nbsp; : &nbsp;&nbsp; ssh &nbsp;&nbsp; : &nbsp;&nbsp; OpenSSH 9.6p1<br><br>
+- <strong>22</strong> &nbsp;&nbsp; : &nbsp;&nbsp; ssh &nbsp;&nbsp; : &nbsp;&nbsp; OpenSSH 9.6p1<br>
 - <strong>80</strong> &nbsp;&nbsp; : &nbsp;&nbsp; http &nbsp;&nbsp; : &nbsp;&nbsp; nginx 1.24.0<br></p>
 
 ```bash
