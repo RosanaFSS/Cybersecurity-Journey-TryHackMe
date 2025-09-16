@@ -255,8 +255,6 @@ xx.xxx.xx.xx - - [16/Sep/2025 xx7:xx:xx] "GET /script.js HTTP/1.1" 200 -
                                             <img width="900px" src="https://github.com/user-attachments/assets/a983934f-4e18-497a-a526-d0db5db70e36"><br><br>
                                             <img width="900px" src="https://github.com/user-attachments/assets/a549a713-a87a-42a8-9e07-0397f254dbfe"><br></h6>
 
-<p><em>Answer the question below</em></p>
-
 <p>4.1. What is the flag in the admin panel?<br>
 <code>THM{************************************}
 </code></p>
@@ -335,7 +333,7 @@ The next step is to apply what you've learned in other challenge rooms within th
 
 | Date              | Room                                  |Streak   |   All Time<br>Global   |   All Time<br>Brazil   |   Monthly<br>Global   |   Monthly<br>Brazil  | Points   | Rooms<br>Completed     | Badges    |
 |:------------------|:--------------------------------------|--------:|:-----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-| 2025, Sep 16      |Medium 🔗 - <code><strong>Chaining Vulnerabilities</strong></code>| 498| 108ᵗʰ |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
+| 2025, Sep 16      |Medium 🔗 - <code><strong>Chaining Vulnerabilities</strong></code>| 498| 108ᵗʰ| 5ᵗʰ|365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
 | 2025, Sep 15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
 | 2025, Sep 14      |Hard 🚩 - Misguided Ghosts, in progress| 496    |     108ᵗʰ    |      5ᵗʰ     |     389ᵗʰ    |     6ᵗʰ    | 126,300  |    963    |    74     |
 | 2025, Sep 14      |Hard 🚩 - VulnNet: Endgame             | 496    |     108ᵗʰ    |      5ᵗʰ     |     394ᵗʰ    |     6ᵗʰ    | 126,270  |    963    |    74     |
@@ -371,13 +369,11 @@ The next step is to apply what you've learned in other challenge rooms within th
 
 <br>
 
-<p align="center">Global All Time:   108ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/81b8a18b-1cc8-470d-974f-ac6b986c2344"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/c1d05c54-609a-4b2f-a5da-4ba25abeb002"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d3dff14e-651a-484f-ac68-c784095c7005"><br>
-                  Global monthly:    352ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/10efb653-2d8c-4bf1-8ea4-8db1d62ed346"><br>
-                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/786ed5d0-15b9-4cf7-8374-c68f3bd9991d"><br>
+<p align="center">Global All Time:   108ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/07e7aea8-bc4a-411c-876c-e4f94282d626"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d75449a7-d6e0-418d-9d51-2271549a98e4"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d0b61639-3279-4c0a-8b7d-22c4e11c2f62"><br>
+                  Global monthly:    365ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dd292cc7-02ad-4703-85c9-3976a5bcba24"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c190f845-1b7f-4935-ab5d-8a2e245d52ff"><br>
 
 <h1 align="center">Thanks for coming!</h1>
-<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-
-
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
