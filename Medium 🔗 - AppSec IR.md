@@ -324,10 +324,24 @@ PORT    STATE  SERVICE VERSION
 ```bash
 xx.xxx.xx.xxx  partpickerparadise.thm
 ```
+<h2 align="center">dirsearch</h2>
+<p>
+
+- /assets/<br>
+- /images</p>
+
+```bash
+:~/AppSecIR# dirsearch -u http://partpickerparadise.thm/ -i200,301,02,401 -w /usr/share/wordlists/dirb/common.txt
+...
+[xx:xx:xx/ 201  -  178B  -  /assets  ->  http://partpickerparadise.thm/assets/
+[xx:xx:xx/ 201  -  178B  -  /images  ->  http://partpickerparadise.thm/images/
+
+Task Completed
+```
 
 <h2 align="center">Web 80</h2>
 
-<img width="1059" height="437" alt="image" src="https://github.com/user-attachments/assets/ae714f03-9891-4b8f-b1d6-9fb57a92bec6" />
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/ae714f03-9891-4b8f-b1d6-9fb57a92bec6"></h6>
 
 <br>
 <br>
@@ -357,56 +371,6 @@ Incident Responder",username:"Incident_Responder",password:"xxxxxxxxxxxx",email:
 ...
 ```
 
-<h2 align="center">http://partpickerparadise.thm/login</h2>
-
-<img width="1050" height="432" alt="image" src="https://github.com/user-attachments/assets/1bedf954-af9e-45a2-a363-650787940540" />
-
-
-<br>
-<br>
-
-<img width="1051" height="111" alt="image" src="https://github.com/user-attachments/assets/c0b92de6-3dc5-4d11-ba36-92b57723444c" />
-
-<br>
-<br>
-
-<img width="1053" height="446" alt="image" src="https://github.com/user-attachments/assets/18623867-8884-4cb1-b73c-8050f43d797a" />
-
-<br>
-<br>
-
-<img width="1053" height="428" alt="image" src="https://github.com/user-attachments/assets/f64346a4-bad3-4be0-8b5a-89cd7d94492a" />
-
-<br>
-<br>
-
-<img width="1052" height="433" alt="image" src="https://github.com/user-attachments/assets/3f57cb33-8a93-4e4f-b360-ae01c3dcd440" />
-
-
-<br>
-<br>
-
-<img width="1053" height="360" alt="image" src="https://github.com/user-attachments/assets/963cffc5-7a89-40bd-81ce-57a83e8db8ca" />
-
-
-
-
-
-<h2 align="center">dirsearch</h2>
-<p>
-
-- /assets/<br>
-- /images</p>
-
-```bash
-:~/AppSecIR# dirsearch -u http://partpickerparadise.thm/ -i200,301,02,401 -w /usr/share/wordlists/dirb/common.txt
-...
-[xx:xx:xx/ 201  -  178B  -  /assets  ->  http://partpickerparadise.thm/assets/
-[xx:xx:xx/ 201  -  178B  -  /images  ->  http://partpickerparadise.thm/images/
-
-Task Completed
-```
-
 <h2 align="center">appsecir</h2>
 
 
@@ -422,7 +386,7 @@ appsecir@tryhackme-2404:~$ pwd
 <h2>linpeas</h2>
 
 ```bash
-
+...
 [+] Analyzing .service files
 [i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#services
 /run/user/1001/systemd/generator.late/app-snap\x2duserd\x2dautostart@autostart.service
@@ -430,54 +394,15 @@ appsecir@tryhackme-2404:~$ pwd
 /run/user/1001/systemd/generator.late/xdg-desktop-autostart.target.wants/app-snap\x2duserd\x2dautostart@autostart.service
 /run/user/1001/systemd/generator.late/xdg-desktop-autostart.target.wants/app-xdg\x2duser\x2ddirs@autostart.service
 You can't write on systemd PATH so I'm not going to list relative paths executed by services
-
 ...
 [+] Users with console
 appsecir:x:1001:1001:,,,:/home/appsecir:/bin/bash
 root:x:0:0:root:/root:/bin/bash
 ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
-
 ...
 [+] All users & groups
 uid=0(root) gid=0(root) groups=0(root)
-uid=1(daemon) gid=1(daemon) groups=1(daemon)
-uid=10(uucp) gid=10(uucp) groups=10(uucp)
-uid=100(systemd-network) gid=102(systemd-network) groups=102(systemd-network)
-uid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),118(lxd)
-uid=1001(appsecir) gid=1001(appsecir) groups=1001(appsecir),100(users)
-uid=101(systemd-resolve) gid=103(systemd-resolve) groups=103(systemd-resolve)
-uid=102(systemd-timesync) gid=104(systemd-timesync) groups=104(systemd-timesync)
-uid=103(messagebus) gid=106(messagebus) groups=106(messagebus)
-uid=104(syslog) gid=110(syslog) groups=110(syslog),4(adm),5(tty)
-uid=105(_apt) gid=65534(nogroup) groups=65534(nogroup)
-uid=106(tss) gid=111(tss) groups=111(tss)
-uid=107(uuidd) gid=112(uuidd) groups=112(uuidd)
-uid=108(tcpdump) gid=113(tcpdump) groups=113(tcpdump)
-uid=109(sshd) gid=65534(nogroup) groups=65534(nogroup)
-uid=110(landscape) gid=115(landscape) groups=115(landscape)
-uid=111(pollinate) gid=1(daemon) groups=1(daemon)
-uid=112(ec2-instance-connect) gid=65534(nogroup) groups=65534(nogroup)
-uid=113(fwupd-refresh) gid=119(fwupd-refresh) groups=119(fwupd-refresh)
-uid=114(dhcpcd) gid=65534(nogroup) groups=65534(nogroup)
-uid=13(proxy) gid=13(proxy) groups=13(proxy)
-uid=2(bin) gid=2(bin) groups=2(bin)
-uid=3(sys) gid=3(sys) groups=3(sys)
-uid=33(www-data) gid=33(www-data) groups=33(www-data)
-uid=34(backup) gid=34(backup) groups=34(backup)
-uid=38(list) gid=38(list) groups=38(list)
-uid=39(irc) gid=39(irc) groups=39(irc)
-uid=4(sync) gid=65534(nogroup) groups=65534(nogroup)
-uid=41(gnats) gid=41(gnats) groups=41(gnats)
-uid=5(games) gid=60(games) groups=60(games)
-uid=6(man) gid=12(man) groups=12(man)
-uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
-uid=7(lp) gid=7(lp) groups=7(lp)
-uid=8(mail) gid=8(mail) groups=8(mail)
-uid=9(news) gid=9(news) groups=9(news)
-uid=997(polkitd) gid=997(polkitd) groups=997(polkitd)
-uid=998(lxd) gid=100(users) groups=100(users)
-uid=999(systemd-coredump) gid=999(systemd-coredump) groups=999(systemd-coredump)
-
+...
 ...
 [+] Searching Cloud-Init conf file
 Found readable /etc/cloud/cloud.cfg
@@ -486,9 +411,18 @@ Found readable /etc/cloud/cloud.cfg
     sudo: ["ALL=(ALL) NOPASSWD:ALL"]
 ```
 
+<h2 align="center">http://partpickerparadise.thm/login</h2>
+
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/1bedf954-af9e-45a2-a363-65078794054"><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/18623867-8884-4cb1-b73c-8050f43d797a"><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/f64346a4-bad3-4be0-8b5a-89cd7d94492a"><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/3f57cb33-8a93-4e4f-b360-ae01c3dcd440"><br><br>
+                   <img width="700px" src="https://github.com/user-attachments/assets/963cffc5-7a89-40bd-81ce-57a83e8db8ca"><br><br>
+
+
 <br>
 <h1 align="center">Task 7 . Conclusion</h1>
-<h2>Turning Incidentes Into Win-Cidents!</h2>
+<h2 align="center">Turning Incidents Into Win-Cidents!</h2>
 <p>This room has covered the overlap between AppSec and incident response, showing how the two practices can be leveraged to increase the efficiency of the other. With applications being targeted more and more, it has never been more important to be prepared for incidents and respond to them in a timely and effective manner. Here is a summary of what has been covered in this room:<br>
 
 - Why <strong>AppSec IR</strong> matters and what tools can be used to achieve it<br>
