@@ -187,9 +187,9 @@ These steps should happen within minutes of identifying the threat. As stated, t
 - <strong>Monitoring for recurrence</strong>: As with after eradication, it is critical to keep an extra close eye on your application when it returns to production. You and your team have confirmed the vulnerability is not reproducible, but attackers should never be underestimated, so logs and alerts should be monitored rigorously.</p>
 
 <h4 align="center">Learning Lessons</h4>
-<p>Once operations have been restored, the focus should now turn to <strong>what lessons, as a team, can be learned</strong> from this incident going forward, often called a post-mortem. It is very important to approach this with a blameless mindset. Our objective at this stage is to understand what happened and how to improve, not to shame anyone for making mistakes. After the post-mortem has taken place, a detailed incident report should be made, including: A timeline of events, root cause analysis, response evaluation, lessons learned, and recommendations. This report can often be a goldmine in terms of transforming your team's posture, taking all these findings and recommendations and feeding them into preparation so an incident like this won't take place again. </p>
+<p>Once operations have been restored, the focus should now turn to <strong>what lessons, as a team, can be learned</strong> from this incident going forward, often called a post-mortem. It is very important to approach this with a blameless mindset. Our objective at this stage is to understand what happened and how to improve, not to shame anyone for making mistakes. After the post-mortem has taken place, a detailed incident report should be made, including: A timeline of events, root cause analysis, response evaluation, lessons learned, and recommendations. This report can often be a goldmine in terms of transforming your team's posture, taking all these findings and recommendations and feeding them into preparation so an incident like this won't take place again.</p>
 
-<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/790e9ad1-737a-4524-8592-17f0214af1fe"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="200px" src="https://github.com/user-attachments/assets/790e9ad1-737a-4524-8592-17f0214af1fe"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6><br>
 
 <p><em>Answer the questions below</em></p>
 
@@ -207,7 +207,7 @@ These steps should happen within minutes of identifying the threat. As stated, t
 
 <br>
 <h1 align="center">Task 6 . Practical</h1>
-<h3 align="center">Set up your vistual environment</h3>
+<h3 align="center">Set up your virtual environment</h3>
 <p>To successfully complete this room, you'll need to set up your virtual environment. This involves starting both your AttackBox (if you're not using your VPN) and Target Machines, ensuring you're equipped with the necessary tools and access to tackle the challenges ahead.</p>
 
 <h3 align="center">AppSec IR in Action!</h3>
