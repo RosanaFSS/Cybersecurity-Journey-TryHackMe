@@ -143,7 +143,7 @@ Also, be clear about the <strong>impact escalation</strong>:<br>
 <h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/b45dfb9d-2845-4c06-adfc-ae916a6e1608"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br><br>
                    <img width="500px" src="https://github.com/user-attachments/assets/385c9136-f6df-4f43-b67a-ab5cee0b439d"><br></h6>
 
-<p>This is where the attacker mindset kicks in. The vulnerability is clear, but how can we use it to escalate? We know that an admin might view this profile (perhaps as part of a moderation flow), so now it's about turning that into something actionable.</p>p>
+<p>This is where the attacker mindset kicks in. The vulnerability is clear, but how can we use it to escalate? We know that an admin might view this profile (perhaps as part of a moderation flow), so now it's about turning that into something actionable.</p>
 
 <h3 align="center">Step 3 : CSRF via XSS - Changing Admin Credentials</h3>
 <p>Let's pause and be clear: with a stored XSS like this, you could achieve account takeover entirely using JavaScript alone. You might read DOM content, extract CSRF tokens, and craft a legitimate request.<br>
