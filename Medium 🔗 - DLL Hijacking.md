@@ -135,6 +135,9 @@ Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-a U
     -h, --help                       Display this help message
 ```
 
+<img width="1760" height="830" alt="image" src="https://github.com/user-attachments/assets/9e2bf6ee-505b-405a-9410-15bea30d0b17" />
+
+<br>
 <h2>Task 3 . Windows Remote Management (WinRM)</h2>
 <p>Windows Remote Management (WinRM) can be used to login to a user-level account. A few methods exist to deploy an Empire agent, we recommend using Evil-WinRM to connect to the target box and then drop-in a multi/launcher to Evil-WinRM session. (We will go over how to build the launcher in the next few tasks).</p>
 
