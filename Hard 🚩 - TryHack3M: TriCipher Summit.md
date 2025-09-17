@@ -695,13 +695,6 @@ to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 <code>THM********************************}</code></p>
 
 
-<img width="1056" height="721" alt="image" src="https://github.com/user-attachments/assets/f4e87b09-609b-4e00-8ac2-734a86b253ca" />
-
-<br>
-<br>
-
-<img width="1060" height="725" alt="image" src="https://github.com/user-attachments/assets/63e74ce1-53b4-42be-9aed-49616ed54090" />
-
 <br>
 <br>
 <h1 align="center">Completed</h1>
@@ -751,7 +744,7 @@ to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 
 <br>
 
-<p align="center">Global All Time:   107ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/8962ee09-d14d-4fc3-a3c9-90b39fecd493"><br>
+<p align="center">Global All Time:   107ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/0ea92335-4207-4e20-8012-6031102de15a"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/30f25b1a-888d-4d40-aa20-b91d058d56cd"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b90cf33f-15b9-4459-a53f-064a1bbb919f"><br>
                   Global monthly:    364ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/5634f5b3-e659-4c2e-87b4-7cd81c65064d"><br>
