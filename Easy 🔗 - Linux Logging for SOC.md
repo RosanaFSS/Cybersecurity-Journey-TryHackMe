@@ -30,8 +30,8 @@ Which time server domain did the VM contact to sync its time?<br>
 ```bash
 ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
 ```
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714"><br><br>
-                   <img width="900px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714"><br><br>
+                   <img width="1000px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <p>2.2. What is the kernel message from Yama in /var/log/syslog?<br>
@@ -41,7 +41,7 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
 ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep Yama
 ```
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/49b99887-cdcb-4f63-bbd5-9f0ed2b39e0c"><br>Rosana´s hands-on<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/49b99887-cdcb-4f63-bbd5-9f0ed2b39e0c"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <h2>Task 3 . Authentication Logs</h2>
@@ -66,7 +66,7 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep Yama
 ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'Failed'
 ```
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/ab70b6cd-2c51-4d7e-b760-7a341d7c6ba7"><br>Rosana´s hands-on<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/ab70b6cd-2c51-4d7e-b760-7a341d7c6ba7"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <p>3.2. Which user was created and added to the "sudo" group?<br>
@@ -76,7 +76,7 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'Failed'
 ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
 ```
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/e90c4451-1d1c-4a1d-b35a-6e68fac54fd4"><br>Rosana´s hands-on<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/e90c4451-1d1c-4a1d-b35a-6e68fac54fd4"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <h2>Task 4 . Common Linux Logs</h2>
@@ -96,13 +96,30 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
 <p>4.1. According to the VM's package manager logs, which version of unzip was installed on the system?<br>
 <code>6.0-28ubuntu4.1</code></p>
 
-<img width="1248" height="67" alt="image" src="https://github.com/user-attachments/assets/00981137-8624-4395-af41-c3c337f2f66d" />
+```bash
+ubuntu@thm-vm:/var/log$ cat dpkg.log | grep ' installed ' | grep -E 'unzip'
+```
 
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/00981137-8624-4395-af41-c3c337f2f66d"><br>Rosana´s hands-on<br></h6>
 
+<br>
 <p>4.2. What is the flag you see in one of the users' bash history?<br>
 <code>THM{****************}</code></p>
 
-<img width="1360" height="825" alt="image" src="https://github.com/user-attachments/assets/7e40702c-df51-4bc5-bd9b-317f92863fa4" />
+```bash
+ubuntu@thm-vm:/$ sudo -l
+...
+ubuntu@thm-vm:/$ sudo su
+...
+ubuntu@thm-vm:/$ pwd
+...
+ubuntu@thm-vm:/$ cd /root
+ubuntu@thm-vm:/$ ll
+...
+ubuntu@thm-vm:/$ cat .bash_history
+```
+
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/7e40702c-df51-4bc5-bd9b-317f92863fa4"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <h2>Task 5 . Runtime Monitoring</h2>
@@ -118,6 +135,7 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
 <p>5.1. Which Linux system call is commonly used to execute a program?<br>
 <code>execve</code></p>
 
+<br>
 <p>5.2. Can a typical program open a file or create a process bypassing system calls? (Yea/Nay)<br>
 <code>Nay</code></p>
 
@@ -126,7 +144,7 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
 <h3 align="center">Audit Daemon</h3>
 <p>Auditd (Audit Daemon) is a built-in auditing solution often used by the SOC team for runtime monitoring. In this task, we will skip the configuration part and focus on how to read auditd rules and how to interpret the results. Let's start from the rules - instructions located in <code>/etc/audit/rules.d/</code> that define which system calls to monitor and which filters to apply:</p>
 
-<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>Monitoring every process, file, and network event can quickly produce gigabytes of logs each day. But more logs don't always mean better detection since an attack buried in a terabyte of noise is still invisible. That's why SOC teams often focus on the highest-risk events and build balanced rulesets, like <a href="https://github.com/Neo23x0/auditd/blob/master/audit.rules">this one</a> or the example you saw above.</p>
 
@@ -185,18 +203,27 @@ You may need to use <code>ausearch -i</code> and <code>grep</code> commands for 
 <p>6.1. When was the secret.thm file opened for the first time? (MM/DD/YY HH:MM:SS). Note: Access to this file is logged with the "file_thmsecret" key.<br>
 <code>naabu_2.3.5_linux_amd64.zip</code></p>
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/8fd5566c-a1c5-412b-b0e7-18e0334cfd1f"><br>Rosana´s hands-on<br></h6>
+```bash
+root@thm-vm:var/log/audit$ ausearch -i -k proc_wget | grep github
+```
 
+<h6 align="center"><img width="100px" src="https://github.com/user-attachments/assets/8fd5566c-a1c5-412b-b0e7-18e0334cfd1f"><br>Rosana´s hands-on<br></h6>
+
+<br>
 <p>6.2. What is the original file name downloaded from GitHub via wget?Note: Wget process creation is logged with the "proc_wget" key.<br>
 <code>naabu_2.3.5_linux_amd64.zip</code></p>
 
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/973ffa60-dadd-413f-be3d-8cccf5cce91c"><br>Rosana´s hands-on<br></h6>
+```bash
+root@thm-vm:var/log/audit$ ausearch -i -k file_thmsecret
+```
+
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/973ffa60-dadd-413f-be3d-8cccf5cce91c"><br>Rosana´s hands-on<br></h6>
 
 <p>6.3.Which network range was scanned using the downloaded tool? Note: There is no dedicated key for this event, but it's still in auditd logs.<br>
 <code>naabu_2.3.5_linux_amd64.zip</code></p>
 
 ```bash
-$ ausearch -m connect,sendto -c naadbu --raw | grep 'syscall=connect operation=connect' | grep 'saddr=' | grep 'dest=' | grep 'addr='
+root@thm-vm:var/log/audit$ ausearch -m connect,sendto -c naadbu --raw | grep 'syscall=connect operation=connect' | grep 'saddr=' | grep 'dest=' | grep 'addr='
 ```
 
 
