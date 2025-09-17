@@ -450,13 +450,6 @@ form.addEventListener('submit', async (e) => {
 ...
 ```
 
-<img width="720" height="362" alt="image" src="https://github.com/user-attachments/assets/175abe5c-2b98-4b20-82e5-2706184d56b9" />
-
-<br>
-<br>
-
-<img width="720" height="541" alt="image" src="https://github.com/user-attachments/assets/24f98935-3806-48c8-a958-b330535a0ac8" />
-
 <br>
 <br>
 <p><em>script.py</em></p>
@@ -699,7 +692,7 @@ to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 
 <p>
 
-- click <strong>Get Flag</p>
+- click <strong>Get Flag</strong></p>
 
 <br>
 
