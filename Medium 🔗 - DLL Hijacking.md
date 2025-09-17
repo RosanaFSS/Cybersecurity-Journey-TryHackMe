@@ -22,17 +22,13 @@ So initially, when we request a print job, it only has our standard user permiss
 
 That's a lot of complicated things being explained in a short paragraph, so the key takeaway is that <code>CVE-2020-1048</code> allows us to tell Print Spooler to write to any arbitrary file. As long as we can restart the Spooler service, we will have the necessary permissions even as a low-level user. Luckily, print jobs survive restarts, and restarting the computer is allowed by any user.</p><br>
 
-<p>Answer the questions below</p>
+<p><em>Answer the questions below</em></p>
 
 <p>1.1. Read the above<br>
 <code>No answer needed</code></p>
 
-<br>
-
 <p>1.2 Deploy DLL Hijacking VM<br>
 <code>No answer needed</code></p>
-
-<br>
 
 <h2>Task 2 . Install Tools</h2>
 <h3>Using the Attackbox</h3>
@@ -139,12 +135,7 @@ Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-a U
     -h, --help                       Display this help message
 ```
 
-<img width="655" height="381" alt="image" src="https://github.com/user-attachments/assets/6eafe899-f165-4ba6-be9d-44f137c4239d" />
-
-
-<br>
-
-<h2>Windows Remote Management (WinRM)</h2>
+<h2>Task 3 . Windows Remote Management (WinRM)</h2>
 <p>Windows Remote Management (WinRM) can be used to login to a user-level account. A few methods exist to deploy an Empire agent, we recommend using Evil-WinRM to connect to the target box and then drop-in a multi/launcher to Evil-WinRM session. (We will go over how to build the launcher in the next few tasks).</p>
 
 <img width="472" height="146" alt="image" src="https://github.com/user-attachments/assets/5fd67b35-2221-4958-808f-c60f9f185bd4" />
@@ -162,9 +153,20 @@ Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-a U
 <p>3.1. Successfully connected to the DLL Hijacking VM with Evil-WinRM.<br>
 <code>No answer needed</code></p>
 
-<img width="667" height="283" alt="image" src="https://github.com/user-attachments/assets/82e9415d-e862-4451-9398-bd2b3df67e9c" />
+```bash
+:~/DLLHijacking# evil-winrm -i xx.xxx.xx.xx -u ***
+Enter Password: 
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Sam\Documents> 
+```
 
-<br>
 <h2>Task 4 . Launch Empire Agent</h2>
 <p>To create an Empire listener, run the following:<br>
 
