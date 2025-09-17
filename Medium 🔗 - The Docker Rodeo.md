@@ -493,9 +493,8 @@ Note in the screenshot below that there are very few processes running?</p>
 <br>
 <h3>Those pesky cgroups</h3>
 <p>Note how we utilised "cgroups" in Task 10. Cgroups are used by containerisation software such as LXC or Docker. Let's look for them with by navigating to "/proc/1" and then catting  the "cgroups" file...It is worth mentioning that the "cgroups" file contains paths including the word "docker":</p>
-<br>
 
-<h6 align="center" ><img width="600px" src="https://github.com/user-attachments/assets/2286d22c-7498-4ee2-9d28-a50ae3676ce"></h6>
+<h6 align="center" ><img width="600px" src="https://github.com/user-attachments/assets/9c6a913b-de7e-437d-8442-2d01a7238ae5"></h6>
 
 <br>
 <p><em>Answer the question below</em></p>
