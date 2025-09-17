@@ -743,8 +743,8 @@ to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 </h6></div><br>
 
 <br>
-
-<p align="center">Global All Time:   107ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/0ea92335-4207-4e20-8012-6031102de15a"><br>
+<p align="center">Global All Time:   107ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/d11791e3-ff50-4e12-a58f-7a2657f65df2"><br>
+<p align="center">Global All Time:   107ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/0ea92335-4207-4e20-8012-6031102de15a"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/30f25b1a-888d-4d40-aa20-b91d058d56cd"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b90cf33f-15b9-4459-a53f-064a1bbb919f"><br>
                   Global monthly:    364ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/5634f5b3-e659-4c2e-87b4-7cd81c65064d"><br>
