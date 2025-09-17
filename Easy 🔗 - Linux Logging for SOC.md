@@ -17,6 +17,7 @@ Access it <a href="https://tryhackme.com/room/linuxloggingforsoc">here</a>.<br>
 <p>1.1.Let´s start!<br>
 <code>No answer needed</code></p>
 
+<br>
 <h2>Task 2 . Working With Text Logs</h2>
 <br>
 
@@ -32,6 +33,7 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
 <h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714"><br><br>
                    <img width="900px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
 
+<br>
 <p>2.2. What is the kernel message from Yama in /var/log/syslog?<br>
 <code>Becoming mindful.</code></p>
 
@@ -64,9 +66,9 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep Yama
 ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'Failed'
 ```
 
-<img width="1260" height="139" alt="image" src="https://github.com/user-attachments/assets/ab70b6cd-2c51-4d7e-b760-7a341d7c6ba7" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/ab70b6cd-2c51-4d7e-b760-7a341d7c6ba7"><br>Rosana´s hands-on<br></h6>
 
-
+<br>
 <p>3.2. Which user was created and added to the "sudo" group?<br>
 <code>xerxes</code></p>
 
@@ -74,7 +76,7 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'Failed'
 ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
 ```
 
-<img width="1345" height="110" alt="image" src="https://github.com/user-attachments/assets/e90c4451-1d1c-4a1d-b35a-6e68fac54fd4" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/e90c4451-1d1c-4a1d-b35a-6e68fac54fd4"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <h2>Task 4 . Common Linux Logs</h2>
