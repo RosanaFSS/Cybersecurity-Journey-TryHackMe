@@ -83,6 +83,62 @@ If you decide against using the Attackbox, the instructions to install both tool
 <p>2.1. Empire and Evil-WinRM successfully installed<br>
 <code>No answer needed</code></p>
 
+```bash
+:~/DLLHijacking# docker run --network host -it --volumes-from empirestorage bcsecurity/empire:v3.5.2 ./empire
+...
+================================================================================
+ [Empire]  Post-Exploitation Framework
+================================================================================
+ [Version] 3.5.2 BC Security Fork | [Web] https://github.com/BC-SECURITY/Empire
+================================================================================
+ [Starkiller] Multi-User GUI | [Web] https://github.com/BC-SECURITY/Starkiller
+================================================================================
+
+   _______ .___  ___. .______    __  .______       _______
+  |   ____||   \/   | |   _  \  |  | |   _  \     |   ____|
+  |  |__   |  \  /  | |  |_)  | |  | |  |_)  |    |  |__
+  |   __|  |  |\/|  | |   ___/  |  | |      /     |   __|
+  |  |____ |  |  |  | |  |      |  | |  |\  \----.|  |____
+  |_______||__|  |__| | _|      |__| | _| `._____||_______|
+
+
+       312 modules currently loaded
+
+       0 listeners currently active
+
+       0 agents currently active
+
+
+(Empire) > 
+```
+
+```bash
+:~/DLLHijacking# evil-winrm -h
+                                        
+Evil-WinRM shell v3.7
+
+Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-a USERAGENT] [-p PASS] [-H HASH] [-U URL] [-S] [-c PUBLIC_KEY_PATH ] [-k PRIVATE_KEY_PATH ] [-r REALM] [--spn SPN_PREFIX] [-l]
+    -S, --ssl                        Enable ssl
+    -a, --user-agent USERAGENT       Specify connection user-agent (default Microsoft WinRM Client)
+    -c, --pub-key PUBLIC_KEY_PATH    Local path to public key certificate
+    -k, --priv-key PRIVATE_KEY_PATH  Local path to private key certificate
+    -r, --realm DOMAIN               Kerberos auth, it has to be set also in /etc/krb5.conf file using this format -> CONTOSO.COM = { kdc = fooserver.contoso.com }
+    -s, --scripts PS_SCRIPTS_PATH    Powershell scripts local path
+        --spn SPN_PREFIX             SPN prefix for Kerberos auth (default HTTP)
+    -e, --executables EXES_PATH      C# executables local path
+    -i, --ip IP                      Remote host IP or hostname. FQDN for Kerberos auth (required)
+    -U, --url URL                    Remote url endpoint (default /wsman)
+    -u, --user USER                  Username (required if not using kerberos)
+    -p, --password PASS              Password
+    -H, --hash HASH                  NTHash
+    -P, --port PORT                  Remote host port (default 5985)
+    -V, --version                    Show version
+    -n, --no-colors                  Disable colors
+    -N, --no-rpath-completion        Disable remote path completion
+    -l, --log                        Log the WinRM session
+    -h, --help                       Display this help message
+```
+
 <img width="655" height="381" alt="image" src="https://github.com/user-attachments/assets/6eafe899-f165-4ba6-be9d-44f137c4239d" />
 
 
