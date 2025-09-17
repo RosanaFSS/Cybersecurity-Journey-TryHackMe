@@ -428,9 +428,9 @@ ubuntu@thm-vm:/var/log/audit$ cat audit.log | grep naabu
 
 <br>
 <h2 align="center">Task 7 . Conclusion</h2>
-<p>Great job exploring the Linux log sources! In the upcoming rooms, you will put this knowledge into action to trace and investigate a variety of threats targeting Linux systems. From the Initial Access to the final attack steps, you may need all learned log sources to fully uncover the breaches.</p>p>
+<p>Great job exploring the Linux log sources! In the upcoming rooms, you will put this knowledge into action to trace and investigate a variety of threats targeting Linux systems. From the Initial Access to the final attack steps, you may need all learned log sources to fully uncover the breaches.</p>
 
-<h3 align="center">Key Takeaways</h3>h3>
+<h3 align="center">Key Takeaways</h3>
 <p>
 
 - Linux logging can be chaotic, but it often stores enough details to detect the threat<br>
