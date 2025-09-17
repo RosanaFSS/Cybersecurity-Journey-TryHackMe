@@ -26,10 +26,23 @@ Access it <a href="https://tryhackme.com/room/linuxloggingforsoc">here</a>.<br>
 Which time server domain did the VM contact to sync its time?<br>
 <code>ntp.ubuntu.com</code></p>
 
+```bash
+ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
+```
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714><br>Rosana´s hands-on<br></h6>
+
+<br>
+<br>
+
 <img width="1237" height="114" alt="image" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca" />
 
 <p>2.2. What is the kernel message from Yama in /var/log/syslog?<br>
 <code>Becoming mindful.</code></p>
+
+```bash
+ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep Yama
+```
 
 <img width="989" height="93" alt="image" src="https://github.com/user-attachments/assets/49b99887-cdcb-4f63-bbd5-9f0ed2b39e0c" />
 
@@ -53,18 +66,19 @@ Which time server domain did the VM contact to sync its time?<br>
 <p>3.1.Continue with the VM and use the /var/log/auth.log file. Which IP address failed to log in on multiple users via SSH?<br>
 <code>10.14.94.82</code></p>
 
-<img width="1352" height="628" alt="image" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714" />
-
-
-<br>
-<br>
-
+```bash
+ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'Failed'
+```
 
 <img width="1260" height="139" alt="image" src="https://github.com/user-attachments/assets/ab70b6cd-2c51-4d7e-b760-7a341d7c6ba7" />
 
 
 <p>3.2. Which user was created and added to the "sudo" group?<br>
 <code>xerxes</code></p>
+
+```bash
+ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
+```
 
 <img width="1345" height="110" alt="image" src="https://github.com/user-attachments/assets/e90c4451-1d1c-4a1d-b35a-6e68fac54fd4" />
 
