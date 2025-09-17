@@ -4,7 +4,7 @@
 and I’m excited to join you on this adventure, part of my <code>499</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Explore key Linux log sources and learn how to use them in your SOC triage</em>.<br>
 Access it <a href="https://tryhackme.com/room/linuxloggingforsoc">here</a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/a9b94ce0-f3f4-4453-acab-d31116dd1803"></p>
 
 <h2 align="center">Task 1 . Introduction</h2>
 <p>Linux has long been a leader in servers and embedded systems, and now its use is even more widespread with the growth of cloud adoption. As a SOC analyst, you are now very likely to investigate Linux alerts and incidents, either from traditional on-premises servers or from cloud-native containerized workloads. In this room, you will explore the most common Linux logs sent to SIEM and learn how to view them directly on-host.</p>
@@ -418,15 +418,86 @@ root@thm-vm:var/log/audit$ ausearch -i -k file_thmsecret
 <h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/973ffa60-dadd-413f-be3d-8cccf5cce91c"><br>Rosana´s hands-on<br></h6>
 
 <p>6.3.Which network range was scanned using the downloaded tool? Note: There is no dedicated key for this event, but it's still in auditd logs.<br>
-<code>naabu_2.3.5_linux_amd64.zip</code></p>
+<code>192.168.50.0/24</code></p>
 
 ```bash
-root@thm-vm:var/log/audit$ ausearch -m connect,sendto -c naadbu --raw | grep 'syscall=connect operation=connect' | grep 'saddr=' | grep 'dest=' | grep 'addr='
+ubuntu@thm-vm:/var/log/audit$ cat audit.log | grep naabu
 ```
 
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/e6fb474f-b15f-4155-85ac-d4894686c7f7"><br>Rosana´s hands-on<br></h6>
+
+<br>
+<h2 align="center">Task 7 . Conclusion</h2>
+<p>Great job exploring the Linux log sources! In the upcoming rooms, you will put this knowledge into action to trace and investigate a variety of threats targeting Linux systems. From the Initial Access to the final attack steps, you may need all learned log sources to fully uncover the breaches.</p>p>
+
+<h3 align="center">Key Takeaways</h3>h3>
+<p>
+
+- Linux logging can be chaotic, but it often stores enough details to detect the threat<br>
+- Logs are kept in /var/log/ folder by default and are usually stored in plain text<br>
+-  The top three log sources for SOC are auth.log, app-specific logs, and runtime logs<br>
+-  Bash history is unreliable for SOC; better use auditd or an alternative solution</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>7.1. Complete the room!<br>
+<code>No answer needed</code></p>
 
 <br>
 <br>
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ca43a8f9-1d25-416e-bb5e-2a93be9af1eb"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/6ce795f3-0f90-4197-a753-f0b98d75235c"></p>
 
+<h1 align="center">My TryHackMe Journey ・ 2025, September</h1>
 
+<div align="center"><h6>
 
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|17      |Easy 🔗 - <code><strong>Linux Logging for SOC</strong></code>| 499| 108ᵗʰ| 5ᵗʰ|     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
+|16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ    |     7ᵗʰ    | 126,420  |    966    |    74     |
+|16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
+|15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
+|14      |Hard 🚩 - Misguided Ghosts, in progress| 496    |     108ᵗʰ    |      5ᵗʰ     |     389ᵗʰ    |     6ᵗʰ    | 126,300  |    963    |    74     |
+|14      |Hard 🚩 - VulnNet: Endgame             | 496    |     108ᵗʰ    |      5ᵗʰ     |     394ᵗʰ    |     6ᵗʰ    | 126,270  |    963    |    74     |
+|13      |Hard 🚩 - Royal Router                 | 495    |     107ᵗʰ    |      5ᵗʰ     |     388ᵗʰ    |     6ᵗʰ    | 126,160  |    962    |    74     |
+|13      |Medium 🚩 - Void Execution             | 495    |     107ᵗʰ    |      5ᵗʰ     |     383ʳᵈ    |     6ᵗʰ    | 126,120  |    961    |    73     |
+|12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     6ᵗʰ    | 126,056  |    960    |    73     |
+|12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
+|11      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+|11      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+|10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
+|10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
+|9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
+|9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ    |    10ᵗʰ    | 125,146  |    954    |    73     |
+|9       |Medium 🚩 - Forgotten Implant          | 491    |     112ⁿᵈ    |      5ᵗʰ     |     660ᵗʰ    |    10ᵗʰ    | 125,016  |    953    |    73     |
+|8       |Easy 🔗 - Web Enumeration              | 490    |     112ⁿᵈ    |      5ᵗʰ     |     663ʳᵈ    |    10ᵗʰ    | 124,986  |    952    |    73     |
+|8       |Easy 🔗 - iOS: Forensics               | 490    |     113ʳᵈ    |      5ᵗʰ     |     548ᵗʰ    |     9ᵗʰ    | 124,850  |    951    |    73     |
+|7       |Medium 🚩 - VulnNet: Active            | 489    |     114ᵗʰ    |      5ᵗʰ     |     542ⁿᵈ    |     9ᵗʰ    | 124,746  |    950    |    73     |
+|7       |Medium 🚩 - pyLon                      | 489    |     114ᵗʰ    |      5ᵗʰ     |     535ᵗʰ    |     9ᵗʰ    | 124,716  |    949    |    73     |
+|7       |Medium 🚩 - Pressed                    | 489    |     113ʳᵈ    |      5ᵗʰ     |     508ᵗʰ    |     9ᵗʰ    | 124,886  |    948    |    73     |
+|6       |Easy 🚩 - Classic Passwd               | 488    |     114ᵗʰ    |      5ᵗʰ     |     683ʳᵈ    |    12ⁿᵈ    | 124,476  |    947    |    73     |
+|6       |Medium 🚩 - toc2                       | 488    |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ    |    12ⁿᵈ    | 124,446  |    946    |    73     |
+|6       |Hard 🚩 - Extract                      | 488    |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ    |    13ʳᵈ    | 124,386  |    945    |    73     |
+|6       |Medium 🚩 - Plotted-EMR                | 488    |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ    |    12ⁿᵈ    | 124,326  |    944    |    73     |
+|5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
+|5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
+|4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
+|4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	    5ᵗʰ     |     579ᵗʰ     |    10ᵗʰ    | 124,018  |   940     |    73     |
+|3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
+|2       |Medium 🔗 - Session Forensics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
+|1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
+
+</h6></div><br>
+
+<br>
+
+<p align="center">Global All Time:   108ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/07e7aea8-bc4a-411c-876c-e4f94282d626"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d75449a7-d6e0-418d-9d51-2271549a98e4"><br><br>
+                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d0b61639-3279-4c0a-8b7d-22c4e11c2f62"><br>
+                  Global monthly:    365ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dd292cc7-02ad-4703-85c9-3976a5bcba24"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c190f845-1b7f-4935-ab5d-8a2e245d52ff"><br>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
