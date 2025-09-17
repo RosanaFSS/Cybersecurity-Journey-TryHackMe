@@ -29,13 +29,8 @@ Which time server domain did the VM contact to sync its time?<br>
 ```bash
 ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
 ```
-
-<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714><br>Rosana´s hands-on<br></h6>
-
-<br>
-<br>
-
-<img width="1237" height="114" alt="image" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714"><br><br>
+                   <img width="900px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
 
 <p>2.2. What is the kernel message from Yama in /var/log/syslog?<br>
 <code>Becoming mindful.</code></p>
@@ -44,8 +39,7 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
 ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep Yama
 ```
 
-<img width="989" height="93" alt="image" src="https://github.com/user-attachments/assets/49b99887-cdcb-4f63-bbd5-9f0ed2b39e0c" />
-
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/49b99887-cdcb-4f63-bbd5-9f0ed2b39e0c"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <h2>Task 3 . Authentication Logs</h2>
