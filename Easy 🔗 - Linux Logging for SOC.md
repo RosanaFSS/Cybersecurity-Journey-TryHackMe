@@ -324,7 +324,7 @@ ubuntu@thm-vm:/$ cat .bash_history
 <h3 align="center">System Calls</h3>
 <p>Before moving on, let's explore a core OS concept that might help you understand many other topics: system calls. In short, whenever you need to open a file, create a process, access the camera, or request any other OS service, you make a specific system call. There are over <a href="https://man7.org/linux/man-pages/man2/syscalls.2.html">300</a> system calls in Linux, like <code>execve</code> to execute a program. Below is a high-level flowchart of how it works:</p>
 
-<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/bb6a6147-c1d3-460c-9878-208d5812e085"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/bb6a6147-c1d3-460c-9878-208d5812e085"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>Why do you need to know about system calls? Well, all modern EDRs and logging tools rely on them - they monitor the main system calls and log the details in a human-readable format. Since there is nearly no way for attackers to bypass system calls, all you have to do is choose the system calls you'd like to log and monitor. In the next task, you will try it in practice using auditd.</p>
 
@@ -342,7 +342,7 @@ ubuntu@thm-vm:/$ cat .bash_history
 <h3 align="center">Audit Daemon</h3>
 <p>Auditd (Audit Daemon) is a built-in auditing solution often used by the SOC team for runtime monitoring. In this task, we will skip the configuration part and focus on how to read auditd rules and how to interpret the results. Let's start from the rules - instructions located in <code>/etc/audit/rules.d/</code> that define which system calls to monitor and which filters to apply:</p>
 
-<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>Monitoring every process, file, and network event can quickly produce gigabytes of logs each day. But more logs don't always mean better detection since an attack buried in a terabyte of noise is still invisible. That's why SOC teams often focus on the highest-risk events and build balanced rulesets, like <a href="https://github.com/Neo23x0/auditd/blob/master/audit.rules">this one</a> or the example you saw above.</p>
 
@@ -455,7 +455,7 @@ ubuntu@thm-vm:/var/log/audit$ cat audit.log | grep naabu
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|17      |Easy 🔗 - <code><strong>Linux Logging for SOC</strong></code>| 499| 108ᵗʰ| 5ᵗʰ|     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
+|17      |Easy 🔗 - <code><strong>Linux Logging for SOC</strong></code>| 499| 106ᵗʰ| 4ᵗʰ|     345ᵗʰ    |     7ᵗʰ    | 126,538  |    967    |    74     |
 |16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ    |     7ᵗʰ    | 126,420  |    966    |    74     |
 |16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
 |15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
@@ -484,7 +484,7 @@ ubuntu@thm-vm:/var/log/audit$ cat audit.log | grep naabu
 |5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
 |5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
 |4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
-|4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	    5ᵗʰ     |     579ᵗʰ     |    10ᵗʰ    | 124,018  |   940     |    73     |
+|4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	     5ᵗʰ    |     579ᵗʰ     |    10ᵗʰ    | 124,018  |   940     |    73     |
 |3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
 |2       |Medium 🔗 - Session Forensics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
 |1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
@@ -493,11 +493,11 @@ ubuntu@thm-vm:/var/log/audit$ cat audit.log | grep naabu
 
 <br>
 
-<p align="center">Global All Time:   108ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/07e7aea8-bc4a-411c-876c-e4f94282d626"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/d75449a7-d6e0-418d-9d51-2271549a98e4"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d0b61639-3279-4c0a-8b7d-22c4e11c2f62"><br>
-                  Global monthly:    365ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dd292cc7-02ad-4703-85c9-3976a5bcba24"><br>
-                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c190f845-1b7f-4935-ab5d-8a2e245d52ff"><br>
+<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/37fc8e0c-bc81-4e43-846d-5667a22bbfb8"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/fdce9c2e-e6d0-40ec-bdf7-ea9ad515d123"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/26e9fa6d-9247-4f4d-b7f2-a740b27ceaa6"><br>
+                  Global monthly:    345ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/22afea35-3791-47ec-848c-104253b6a62b"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6042de62-c478-4d90-938e-015014a7a7d2"><br>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
