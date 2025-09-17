@@ -6,24 +6,108 @@ and I’m excited to join you on this adventure, part of my <code>499</code>-day
 Access it <a href="https://tryhackme.com/room/linuxloggingforsoc">here</a>.<br>
 <img width="1200px" src=""></p>
 
-
-<h2>Task 1 . Introduction</h2>
-
+<h2 align="center">Task 1 . Introduction</h2>
 <p>Linux has long been a leader in servers and embedded systems, and now its use is even more widespread with the growth of cloud adoption. As a SOC analyst, you are now very likely to investigate Linux alerts and incidents, either from traditional on-premises servers or from cloud-native containerized workloads. In this room, you will explore the most common Linux logs sent to SIEM and learn how to view them directly on-host.</p>
-<br>
+
+<h3 align="center">Learning Objectives</h3>
+<p>
+
+- Explore authentication, runtime, and system logs on Linux<br>
+- Learn the commands and pitfalls when working with logs<br>
+- Uncover how tools like auditd monitor and report the events<br>
+- Practice every learned log source in the attached VM</p>
+
+<h3 align="center">Recommended Rooms</h3>
+<p>Before starting this room, you should already be familiar with the fundamentals of web application security, including vulnerabilities like:<br>
+
+- Complete the <a href="https://tryhackme.com/module/linux-fundamentals">Linux Fundamentals</a> module<br>
+- Complete the <a href="https://tryhackme.com/room/linuxshells">Linux Shells</a> room<br>
+- Learn the <a href="https://tryhackme.com/room/logsfundamentals">Logs Fundamentals</a></p>
+
+<h3 align="center">Machine Access</h3>
+<p>Before moving forward, start the lab by clicking the <strong>Start Machine</strong> button below. The machine will start in split view and will take about two minutes to load. In case the machine is not visible, you can click the <strong>Show Split</strong> View button at the top of the task. You may need to work as the root user for some tasks. To switch to root on the VM, please run <code>sudo su</code></p>
+
+<h3 align="center">Set up virtual environment</h3>
+<p>To successfully complete this room, you'll need to set up your virtual environment. This involves starting the Target Machine, ensuring you're equipped with the necessary tools and access to tackle the challenges ahead.<br>
+[ Start Machine]</p>
+
+<h3 align="center">Credentials</h3>
+<p>Alternatively, you can access the VM from your own VPN-connected machine with the credentials below:
+
+- Username: ******<br>
+- Password: *******<br>
+- IP address: MACHINE_IP<br>
+- Connection via: SSH</p>
 
 <p><em>Answer the question below</em></p>
 
-<p>1.1.Let´s start!<br>
+<p>1.1. Let´s start!<br>
 <code>No answer needed</code></p>
 
 <br>
-<h2>Task 2 . Working With Text Logs</h2>
-<br>
+<h2 align="center">Task 2 . Working With Text Logs</h2>
+<h3 align="center">Log Format</h3>
+<p>Contrary to a common belief, Linux-based systems are not immune to malware. Moreover, Linux-targeted intrusions are a growing problem. Thus, as a SOC analyst, you will often need to investigate Linux alerts, and for this, you need to understand how its logging works. Now, let's clarify a couple of things and move on!<br>
+
+- By Linux, the room refers to Linux distributions like Debian, Ubuntu, CentOS, or RHEL<br>
+- The room focuses on Linux servers without a GUI and does not explain desktop logging</p>
+
+<h3 align="center">Working With Logs</h3>
+<p>Unlike in Windows, Linux logs most events into plain text files. This means you can read the logs via any text editor without the need for specialized tools like Event Viewer. On the other hand, default Linux logs are less structured as there are no event codes and strict log formatting rules. Most Linux logs are located in the <code>/var/log</code> folder, so let's start the journey by checking the <code>/var/log/syslog</code> file - an aggregated stream of various system events:</p>
+
+<p align="center"><em>Syslog File Content</em></p>
+
+```bash
+root@thm-vm:~$ cat /var/log/syslog | head
+[...]
+2025-08-13T13:57:49.388941+00:00 thm-vm systemd-timesyncd[268]: Initial clock synchronization to Wed 2025-08-13 13:57:49.387835 UTC.
+2025-08-13T13:59:39.970029+00:00 thm-vm systemd[888]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2025-08-13T14:02:22.606216+00:00 thm-vm dbus-daemon[564]: [system] Successfully activated service 'org.freedesktop.timedate1'
+2025-08-13T14:05:01.999677+00:00 thm-vm CRON[1027]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+[...]
+```
+
+<h4 align="center">Filtering Logs</h4>
+<p>You will see thousands of events when reading the syslog file on the attached VM, but only a few are useful for SOC. That's why you must filter logs and narrow down your search as much as possible. For example, you can use the "grep" command to filter for the "CRON" keyword and see only the cronjob logs:</p>
+
+<p align="center"><em>Syslog Filtering</em></p>
+
+```bash
+# Or "grep -v CRON" to exclude "CRON" from results
+root@thm-vm:~$ cat /var/log/syslog | grep CRON
+2025-08-13T14:17:01.025846+00:00 thm-vm CRON[1042]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T14:25:01.043238+00:00 thm-vm CRON[1046]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T14:30:01.014532+00:00 thm-vm CRON[1048]: (root) CMD (date > mycrondebug.log)
+```
+
+<h4 align="center">Discovering Logs</h4>
+<p>Lastly, let's say you hunt for all user logins, but don't know where to look for them. Linux system logs are stored in the <code>/var/log/</code> folder in plain text, so you can simply grep for related keywords like "login", "auth", or "session" in all log files there and narrow down your next searches:</p>
+
+<p align="center"><em>Discovering Logs</em></p>
+
+```bash
+# List what's logged by your system (/var/log folder) 
+root@thm-vm:~$ ls -l /var/log
+drwxr-xr-x  2 root      root               4096 Aug 12 16:41 apt
+drwxr-x---  2 root      adm                4096 Aug 12 12:40 audit
+-rw-r-----  1 syslog    adm               45399 Aug 13 15:05 auth.log
+-rw-r--r--  1 root      root            1361277 Aug 12 16:41 dpkg.log
+drwxr-sr-x+ 3 root      systemd-journal    4096 Oct 22  2024 journal
+-rw-r-----  1 syslog    adm              214772 Aug 13 13:57 kern.log
+-rw-r-----  1 syslog    adm              315798 Aug 13 15:05 syslog
+[...]
+
+# Search for potential logins across all logs (/var/log)
+root@thm-vm:~$ grep -R -E "auth|login|session" /var/log
+[...]
+```
+
+<h3 align="center">Logging Caveats</h3>
+<p>Unlike Windows, Linux allows you to easily change log format, verbosity, and storage location. With hundreds of Linux distributions, each known to slightly customize logging, be prepared that the logs in this room may look different on your system, or might not exist at all.</p>
 
 <p><em>Answer the questions below</em></p>
 
-<p>2.1. Use the /var/log/syslog file on the VM to answer the questions.
+<p>2.1. Use the <strong>/var/log/syslog</strong> file on the VM to answer the questions.
 Which time server domain did the VM contact to sync its time?<br>
 <code>ntp.ubuntu.com</code></p>
 
@@ -34,7 +118,7 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
                    <img width="1000px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
 
 <br>
-<p>2.2. What is the kernel message from Yama in /var/log/syslog?<br>
+<p>2.2. What is the kernel message from Yama in  <strong>/var/log/syslog</strong>?<br>
 <code>Becoming mindful.</code></p>
 
 ```bash
@@ -44,22 +128,78 @@ ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep Yama
 <h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/49b99887-cdcb-4f63-bbd5-9f0ed2b39e0c"><br>Rosana´s hands-on<br></h6>
 
 <br>
-<h2>Task 3 . Authentication Logs</h2>
-<h3>Authentication Logs</h3>
+<h2 align="center">Task 3 . Authentication Logs</h2>
+<h3 align="center">Authentication Logs</h3>
+<p>The first and often the most useful log file you want to monitor is <code>/var/log/auth.log</code>code> (or <code>/var/log/secure</code> on RHEL-based systems). Although its name suggests it contains authentication events, it can also store user management events, launched sudo commands, and much more! Let's start with the log file format:</p>
 
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/0884762e-e3ff-464b-9e39-657a49f17628"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
+<h3 align="center">Login and Logout Events</h3>
+<p>There are many ways users authenticate into a Linux machine: locally, via SSH, using "sudo" or "su" commands, or automatically to run a cron job. Each successful logon and logoff is logged, and you can see them by filtering the events containing the "session opened" or "session closed" keywords:</p>
 
+<p align="center"><em>Local and Remote Logins</em></p>
 
-<h3>Login and Logout Events</h3>
+```bash
+root@thm-vm:~$ cat /var/log/auth.log | grep -E 'session opened|session closed'
+# Local, on-keyboard login and logout of Bob (login:session)
+2025-08-02T16:04:43 thm-vm login[1138]: pam_unix(login:session): session opened for user bob(uid=1001) by bob(uid=0)
+2025-08-02T19:23:08 thm-vm login[1138]: pam_unix(login:session): session closed for user bob
+# Remote login examples of Alice (via SSH and then SMB)
+2025-08-04T09:09:06 thm-vm sshd[839]: pam_unix(sshd:session): session opened for user alice(uid=1002) by alice(uid=0)
+2025-08-04T12:46:13 thm-vm smbd[1795]: pam_unix(samba:session): session opened for user alice(uid=1002) by alice(uid=0)
+```
 
+<p align="center"><em>Cron and Sudo Logins</em></p>
 
+```bash
+root@thm-vm:~$ cat /var/log/auth.log | grep -E 'session opened|session closed'
+# Traces of some cron job launch running as root (cron:session)
+2025-08-06T19:35:01 thm-vm CRON[41925]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-08-06T19:35:01 thm-vm CRON[3108]: pam_unix(cron:session): session closed for user root
+# Carol running "sudo su" to access root (sudo:session)
+2025-08-07T09:12:32 thm-vm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by carol(uid=1003)
+```
 
-<h3>Miscellaneous Events</h3>
+<p>In addition to the system logs, the SSH daemon stores its own log of successful and failed SSH logins. These logs are sent to the same auth.log file, but have a slightly different format. Let's see the example of two failed and one successful SSH logins:</p>
 
+<p align="center"><em>SSH-Specific Events</em></p>
+
+```bash
+root@thm-vm:~$ cat /var/log/auth.log | grep "sshd" | grep -E 'Accepted|Failed'
+# Common SSH log format: <is-successful> <auth-method> for <user> from <ip>
+2025-08-07T11:21:25 thm-vm sshd[3139]: Failed password for root from 222.124.17.227 port 50293 ssh2
+2025-08-07T14:17:40 thm-vm sshd[3139]: Failed password for admin from 138.204.127.54 port 52670 ssh2
+2025-08-09T20:30:51 thm-vm sshd[1690]: Accepted publickey for bob from 10.19.92.18 port 55050 ssh2: <key>
+```
+
+<h3 align="center">Miscellaneous Events</h3>
+<p>You can also use the same log file to detect user management events. This is easy if you know basic Linux commands: If <a href="https://www.man7.org/linux/man-pages/man8/useradd.8.html">useradd</a> is a command to add new users, just look for a "useradd" keyword to see user creation events! Below is an example of what you can see in the logs: password change, user deletion, and then privileged user creation.</p>
+
+<p align="center"><em>User management events</em></p>
+
+```bash
+root@thm-vm:~$ cat /var/log/auth.log | grep -E '(passwd|useradd|usermod|userdel)\['
+2023-02-01T11:09:55 thm-vm passwd[644]: password for 'ubuntu' changed by 'root'
+2025-08-07T22:11:11 thm-vm userdel[1887]: delete user 'oldbackdoor'
+2025-08-07T22:11:29 thm-vm useradd[1878]: new user: name=backdoor, UID=1002, GID=1002, shell=/bin/sh
+2025-08-07T22:11:54 thm-vm usermod[1906]: add 'backdoor' to group 'sudo'
+2025-08-07T22:11:54 thm-vm usermod[1906]: add 'backdoor' to shadow group 'sudo'
+```
+
+<p>Lastly, depending on system configuration and installed packages, you may encounter interesting or unexpected events. For example, you may find commands launched with sudo, which can help track malicious actions. In the example below, the "ubuntu" user used sudo to stop EDR, read firewall state, and finally access root via "sudo su":</p>
+
+<p align="center"><em>Commands Run With Sudo</em></p>
+
+```bash
+root@thm-vm:~$ cat /var/log/auth.log | grep -E 'COMMAND='
+2025-08-07T11:21:49 thm-vm sudo: ubuntu : TTY=pts/0 ; [...] COMMAND=/usr/bin/systemctl stop edr
+2025-08-07T11:23:18 thm-vm sudo: ubuntu : TTY=pts/0 ; [...] COMMAND=/usr/bin/ufw status numbered
+2025-08-07T11:23:33 thm-vm sudo: ubuntu : TTY=pts/0 ; [...] COMMAND=/usr/bin/su
+```
 
 <p><em>Answer the questions below</em></p>
 
-<p>3.1.Continue with the VM and use the /var/log/auth.log file. Which IP address failed to log in on multiple users via SSH?<br>
+<p>3.1. Continue with the VM and use the /var/log/auth.log file. Which IP address failed to log in on multiple users via SSH?<br>
 <code>10.14.94.82</code></p>
 
 ```bash
@@ -79,17 +219,66 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep -E 'useradd'
 <h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/e90c4451-1d1c-4a1d-b35a-6e68fac54fd4"><br>Rosana´s hands-on<br></h6>
 
 <br>
-<h2>Task 4 . Common Linux Logs</h2>
-<h3>Generic System Logs</h3>
+<h2 align="center">Task 4 . Common Linux Logs</h2>
+<h3 align="center">Generic System Logs</h3>
+<p>Linux keeps track of many other events scattered across files in <code>/var/log</code>: kernel logs, network changes, service or cron runs, package installation, and many more. Their content and format can differ depending on the OS, and the most common log files are:<br>
 
+-  <code>/var/log/kern.log</code>: Kernel messages and errors, useful for more advanced investigations<br>
+-  <code>/var/log/syslog (or /var/log/messages)</code>: A consolidated stream of various Linux events<br>
+-  <code>/var/log/dpkg.log (or /var/log/apt)</code>: Package manager logs on Debian-based systems<br>
+- <code>/var/log/dnf.log (or /var/log/yum.log)</code>: Package manager logs on RHEL-based systems<br>
 
+The listed logs are valuable during DFIR, but are rarely seen in a daily SOC routine as they are often noisy and hard to parse. Still, if you want to dive deeper into how these logs work, check out the <a href="https://tryhackme.com/room/linuxlogsinvestigations">Linux Logs Investigations</a> DFIR room.</p>
 
-<h3>App-Specific Logs</h3>
+<h3 align="center">App-Specific Logs</h3>
+<p>In SOC, you might also monitor a specific program, and to do this effectively, you need to use its logs. For example, analyze database logs to see which queries were run, mail logs to investigate phishing, container logs to catch anomalies, and web server logs to know which pages were opened, when, and by whom. You will explore these logs in the upcoming modules, but to give an overview, here is an example from the typical Nginx web server logs:</p>
 
+<p align="center"><em>Nginx Web Access Logs</em></p>
 
-<h3>Bash History</h3>
+```bash
+root@thm-vm:~$ cat /var/log/nginx/access.log
+# Every log line corresponds to a web request to the web server
+10.0.1.12 - - [11/08/2025:14:32:10 +0000] "GET / HTTP/1.1" 200 3022
+10.0.1.12 - - [11/08/2025:14:32:14 +0000] "GET /login HTTP/1.1" 200 1056
+10.0.1.12 - - [11/08/2025:14:33:09 +0000] "POST /login HTTP/1.1" 302 112
+10.0.4.99 - - [11/08/2025:17:11:20 +0000] "GET /images/logo.png HTTP/1.1" 200 5432
+10.0.5.21 - - [11/08/2025:17:56:23 +0000] "GET /admin HTTP/1.1" 403 104
+```
 
+<h3 align="center">Bash History</h3>
+<p>Another valuable log source is Bash history - a feature that records each command you run after pressing Enter. By default, commands are first stored in memory during your session, and then written to the per-user <code>~/.bash_history</code> file when you log out. You can open the <code>~/.bash_history</code> file to review commands from previous sessions or use the <code>history</code> command to view commands from both your current and past sessions:</p>
 
+<p align="center"><em>Bash History File and Command</em></p>
+
+```bash
+ubuntu@thm-vm:~$ cat /home/ubuntu/.bash_history
+echo "hello" > world.txt
+nano /etc/ssh/sshd_config
+sudo su
+ubuntu@thm-vm:~$ history
+1 echo "hello" > world.txt
+2 nano /etc/ssh/sshd_config
+3 sudo su
+4 ls -la /home/ubuntu
+5 cat /home/ubuntu/.bash_history
+6 history
+```
+
+<p>Although the Bash history file looks like a vital log source, it is rarely used by SOC teams in their daily routine. This is because it does not track non-interactive commands (like those initiated by your OS, cron jobs, or web servers) and has some other limitations. While you can <a href="https://datawookie.dev/blog/2023/04/configuring-bash-history/">configure it</a> to be more useful, there are still a few issues you should know about:</p>
+
+<p align="center"><em>Bash History Limitations</em></p>
+
+```bash
+# Attackers can simply add a leading space to the command to avoid being logged
+ubuntu@thm-vm:~$  echo "You will never see me in logs!"
+
+# Attackers can paste their commands in a script to hide them from Bash history
+ubuntu@thm-vm:~$ nano legit.sh && ./legit.sh
+ 
+# Attackers can use other shells like /bin/sh that don't save the history like Bash
+ubuntu@thm-vm:~$ sh
+$ echo "I am no longer tracked by Bash!"
+```
 
 <p><em>Answer the questions below</em></p>
 
@@ -122,13 +311,18 @@ ubuntu@thm-vm:/$ cat .bash_history
 <h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/7e40702c-df51-4bc5-bd9b-317f92863fa4"><br>Rosana´s hands-on<br></h6>
 
 <br>
-<h2>Task 5 . Runtime Monitoring</h2>
-<h3>Runtime Monitoring</h3>
+<h2 align="center">Task 5 . Runtime Monitoring</h2>
+<h3 align="center">Runtime Monitoring</h3>
+<p>Up to this point, you have explored various Linux log sources, but none can reliably answer questions like "Which programs did Bob launch today?" or "Who deleted my home folder, and when?". That's because, by default, Linux doesn't log process creation, file changes, or network-related events, collectively known as runtime events. Interestingly, Windows faces the same limitation, which is why in the <a href="https://tryhackme.com/room/windowsloggingforsoc">Windows Logging for SOC</a> room we had to use an additional tool: Sysmon. In Linux, we'll take a similar approach.</p>
 
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/ef535fcd-8f9c-4e21-856b-9db6d1d100e3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
+<h3 align="center">System Calls</h3>
+<p>Before moving on, let's explore a core OS concept that might help you understand many other topics: system calls. In short, whenever you need to open a file, create a process, access the camera, or request any other OS service, you make a specific system call. There are over <a href="https://man7.org/linux/man-pages/man2/syscalls.2.html">300</a> system calls in Linux, like <code>execve</code> to execute a program. Below is a high-level flowchart of how it works:</p>
 
-<h3>System Calls</h3>
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/bb6a6147-c1d3-460c-9878-208d5812e085"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
+<p>Why do you need to know about system calls? Well, all modern EDRs and logging tools rely on them - they monitor the main system calls and log the details in a human-readable format. Since there is nearly no way for attackers to bypass system calls, all you have to do is choose the system calls you'd like to log and monitor. In the next task, you will try it in practice using auditd.</p>
 
 <p><em>Answer the questions below</em></p>
 
@@ -144,7 +338,7 @@ ubuntu@thm-vm:/$ cat .bash_history
 <h3 align="center">Audit Daemon</h3>
 <p>Auditd (Audit Daemon) is a built-in auditing solution often used by the SOC team for runtime monitoring. In this task, we will skip the configuration part and focus on how to read auditd rules and how to interpret the results. Let's start from the rules - instructions located in <code>/etc/audit/rules.d/</code> that define which system calls to monitor and which filters to apply:</p>
 
-<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>Monitoring every process, file, and network event can quickly produce gigabytes of logs each day. But more logs don't always mean better detection since an attack buried in a terabyte of noise is still invisible. That's why SOC teams often focus on the highest-risk events and build balanced rulesets, like <a href="https://github.com/Neo23x0/auditd/blob/master/audit.rules">this one</a> or the example you saw above.</p>
 
@@ -207,7 +401,7 @@ You may need to use <code>ausearch -i</code> and <code>grep</code> commands for 
 root@thm-vm:var/log/audit$ ausearch -i -k proc_wget | grep github
 ```
 
-<h6 align="center"><img width="100px" src="https://github.com/user-attachments/assets/8fd5566c-a1c5-412b-b0e7-18e0334cfd1f"><br>Rosana´s hands-on<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/8fd5566c-a1c5-412b-b0e7-18e0334cfd1f"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <p>6.2. What is the original file name downloaded from GitHub via wget?Note: Wget process creation is logged with the "proc_wget" key.<br>
