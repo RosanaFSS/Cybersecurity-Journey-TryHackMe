@@ -277,34 +277,36 @@ Task Completed
 - checked and navigated to cdn.tryhackm3.loc:3000<br>
 - executed commands to transfer money using the <strong>transferDeposit</strong> function after discovering the <strong>owner</strong></p>
 
+<br>
 <p>1.1. What is Flag 1?<br>
 <code>THM{*********************************************}</code></p>
+<br>
 
 
-<h6>identified<br><code>files</code> <strong>auth.js</strong> and <strong>form-submit.js</strong><br><img width="900px"  src="https://github.com/user-attachments/assets/6f1c2e2a-02b0-4f62-b3bd-90e054b4ea4f"></h6>
+<h6 align="center">identified<code>files</code> <strong>auth.js</strong> and <strong>form-submit.js</strong><br><img width="900px"  src="https://github.com/user-attachments/assets/6f1c2e2a-02b0-4f62-b3bd-90e054b4ea4f"></h6>
 
 
-<h6>downloaded and modified modified <code>form-submit.js</code><br><img width="900px"  src="https://github.com/user-attachments/assets/dfdd71cd-8763-4fe8-b84f-9dd2491104f6"></h6>
+<h6 align="center">downloaded and modified modified <code>form-submit.js</code><br><img width="900px"  src="https://github.com/user-attachments/assets/dfdd71cd-8763-4fe8-b84f-9dd2491104f6"></h6>
 
-<h6>deleted <code>form-submit.js</code> in libraries<br><img width="900px" src="https://github.com/user-attachments/assets/8a8b3b94-b2c4-4507-b465-09260fb21101"></h6>
+<h6 align="center">deleted <code>form-submit.js</code> in libraries<br><img width="900px" src="https://github.com/user-attachments/assets/8a8b3b94-b2c4-4507-b465-09260fb21101"></h6>
 
-<h6>uploaded <code>form-submit.js</code> in libraries and <code>creds.txt</code> was generated<br><img width="900px" src="https://github.com/user-attachments/assets/af3073e5-8b74-46e9-884c-55b71e2d0132"></h6>
+<h6 align="center">uploaded <code>form-submit.js</code> in libraries and <code>creds.txt</code> was generated<br><img width="900px" src="https://github.com/user-attachments/assets/af3073e5-8b74-46e9-884c-55b71e2d0132"></h6>
 
-<h6>clicked <code>creds.txt</code> and accessed some credentials<br><img width="900px" src="https://github.com/user-attachments/assets/56712184-a068-4b94-a3df-6e750e34eaa6"></h6>
+<h6 align="center">clicked <code>creds.txt</code> and accessed some credentials<br><img width="900px" src="https://github.com/user-attachments/assets/56712184-a068-4b94-a3df-6e750e34eaa6"></h6>
 
-<h6>navigated to cdn.tryhackm3.loc:5000 and logged in<br><img width="900px" src="https://github.com/user-attachments/assets/94ea6534-dc44-433b-b75f-f5cb061f8c1b"></h6>
+<h6 align="center">navigated to cdn.tryhackm3.loc:5000 and logged in<br><img width="900px" src="https://github.com/user-attachments/assets/94ea6534-dc44-433b-b75f-f5cb061f8c1b"></h6>
 
-<h6>got a congrats message<br><img width="900px" src="https://github.com/user-attachments/assets/1290aeee-71cf-4127-b062-b82682faa72a"></h6>
+<h6 align="center">got a congrats message<br><img width="900px" src="https://github.com/user-attachments/assets/1290aeee-71cf-4127-b062-b82682faa72a"></h6>
 
-<h6>uncovered an endpoint and S3 Ninja´s credentials through Burp Suite<br><img width="900px" src="https://github.com/user-attachments/assets/63175613-9ee6-4605-9458-70f932742453"></h6>
+<h6 align="center">uncovered an endpoint and S3 Ninja´s credentials through Burp Suite<br><img width="900px" src="https://github.com/user-attachments/assets/63175613-9ee6-4605-9458-70f932742453"></h6>
 
-<h6>navigated to cdn.tryhackm3.loc:5000/supersecretotp and identified static/form-submit2.js<br><img width="900px" src="https://github.com/user-attachments/assets/292dc676-d27a-4a92-9a5a-e04c0df37ee7"></h6>
+<h6 align="center">navigated to cdn.tryhackm3.loc:5000/supersecretotp and identified static/form-submit2.js<br><img width="900px" src="https://github.com/user-attachments/assets/292dc676-d27a-4a92-9a5a-e04c0df37ee7"></h6>
 
-<h6>used the OTP discovered in the previous step to login<br><img width="900px" src="https://github.com/user-attachments/assets/b9c97a39-d0e5-4851-af18-92a0c635350d"></h6>
+<h6 align="center">used the OTP discovered in the previous step to login<br><img width="900px" src="https://github.com/user-attachments/assets/b9c97a39-d0e5-4851-af18-92a0c635350d"></h6>
 
-<h6>got a message to check API requests<br><img width="900px" src="https://github.com/user-attachments/assets/aa0f923e-7d54-4b5f-84e8-e8f71cae5436"></h6>
+<h6 align="center">got a message to check API requests<br><img width="900px" src="https://github.com/user-attachments/assets/aa0f923e-7d54-4b5f-84e8-e8f71cae5436"></h6>
 
-<h6>navigated to cdn.tryhackm3.loc:3000/<br><img width="900px" src="https://github.com/user-attachments/assets/3adb1b57-6d7e-4974-98ce-7133d12103e2"></h6>
+<h6 align="center">navigated to cdn.tryhackm3.loc:3000/<br><img width="900px" src="https://github.com/user-attachments/assets/3adb1b57-6d7e-4974-98ce-7133d12103e2"></h6>
 
 <br>
 <br>
