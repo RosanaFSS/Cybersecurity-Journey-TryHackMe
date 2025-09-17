@@ -1,19 +1,17 @@
 <h1 align="center">DLL Hijacking</h1>
-<p align="center">2025, August 7<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>458</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, Sepetember 17<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>499</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>DLL HIJACKING with Invoke-PrintDemon</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/68c7ee07-537b-4bd9-a0a9-7bfa4f17df73"><br>
 Access this walkthrough room clicking <a href="https://tryhackme.com/room/dllhijacking">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/194cbd98-9b89-4f50-9162-bafc90dd82b9"></p>
 
 <br>
-
-
 <h2>Task 1 . Overview of DLL Hijacking</h2>
 <p>Invoke-PrintDemon takes advantage of two different vulnerabilities: Faxhell and PrintDemon. The first is a DLL hijack of the ualapi DLL when the fax service is running (Faxhell).</p>
 
-<img width="624" height="331" alt="image" src="https://github.com/user-attachments/assets/cb37cad6-7c7d-4d6f-81ae-960ddb1eed35" />
-
 <p><code>DLL hijacking</code> vulnerabilities happen when a program attempts to load a DLL from a location and can’t find it. As shown above, the fax service can’t find the <code>ualapi</code> DLL when it tries to load it. The fax service runs as <code>SYSTEM</code>, so any code executed from the DLL will run in an elevated context. However, we need to write to the privileged folder <code>C:\Windows\System32</code> to hijack the DLL. </p>
+
+<img width="624" height="331" alt="image" src="https://github.com/user-attachments/assets/cb37cad6-7c7d-4d6f-81ae-960ddb1eed35" />
 
 <p><code>CVE-2020-1048</code> allows us to arbitrarily write to anywhere on disk. The linked post about vulnerability is a bit obtuse but works because of three primary concepts.<br>
 
