@@ -708,7 +708,7 @@ to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|16      |Hard 🔗 - <code><strong>TryHack3M: TriCipher Summit</strong></code>| 498| 107ᵗʰ| 4ᵗʰ|364ᵗʰ   |     7ᵗʰ    | 126,420  |    966    |    74     |
+|16      |Hard 🚩 - <code><strong>TryHack3M: TriCipher Summit</strong></code>| 498| 107ᵗʰ| 4ᵗʰ|364ᵗʰ   |     7ᵗʰ    | 126,420  |    966    |    74     |
 |16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
 |15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
 |14      |Hard 🚩 - Misguided Ghosts, in progress| 496    |     108ᵗʰ    |      5ᵗʰ     |     389ᵗʰ    |     6ᵗʰ    | 126,300  |    963    |    74     |
