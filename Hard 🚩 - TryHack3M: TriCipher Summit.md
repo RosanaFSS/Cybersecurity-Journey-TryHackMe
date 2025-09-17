@@ -699,7 +699,7 @@ to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 <br>
 <h1 align="center">Completed</h1>
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d0b88fc4-f05c-4d8e-b98a-0d3eb8a2bab"><br>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/08b9691f-a9e3-4a8a-a849-7dd8d542ebcc"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/bd39232e-b329-48fc-9f0a-fa5e8022e932"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, September</h1>
