@@ -20,7 +20,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/dllhij
 - When a print job is started, it inherits the privilege of the user requesting the job.<br><br>
 So initially, when we request a print job, it only has our standard user permissions. However, the shadow job file has no user context attached to it. This means that when the Print Spooler service is restarted and initiates a job from the shadow file and inherits the Print Spooler service's permissions, which is running as <code>SYSTEM</code>!<br>
 
-That's a lot of complicated things being explained in a short paragraph, so the key takeaway is that <code>CVE-2020-1048</code> allows us to tell Print Spooler to write to any arbitrary file. As long as we can restart the Spooler service, we will have the necessary permissions even as a low-level user. Luckily, print jobs survive restarts, and restarting the computer is allowed by any user.</p><br>
+That's a lot of complicated things being explained in a short paragraph, so the key takeaway is that <code>CVE-2020-1048</code> allows us to tell Print Spooler to write to any arbitrary file. As long as we can restart the Spooler service, we will have the necessary permissions even as a low-level user. Luckily, print jobs survive restarts, and restarting the computer is allowed by any user.</p>
 
 <p><em>Answer the questions below</em></p>
 
