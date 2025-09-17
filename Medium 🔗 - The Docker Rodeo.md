@@ -302,26 +302,44 @@ See "man sudo_root" for details.
 root@cb1207065aac:~/.ssh# 
 ```
 
-
 <br>
 <br>
 <h2>Task 8 . Vulnerability #4: RCE via Exposed Docker Daemon</h2>
 
+<br>
+<p><em>Answer the question below</em></p>
+
+<p>8.1. I've executed some Docker commands remotely on the vulnerable Instance<br>
+<code>No answer needed</code></p>
+
 
 <h2>Task 9 . Vulnerability #5: Escape via Exposed Docker Daemon</h2>
+
+<br>
+<p><em>Answer the question below</em></p>
+
+<p>9.1. Escape Successful<br>
+<code>No answer needed</code></p>
 
 
 <h2>Task 10 . Vulnerability #6: Shared Namespaces</h2>
 
 
+<br>
+<p><em>Answer the question below</em></p>
+
+<p>10.1. Attempt the exploit, you will know you are successful if you can ls /home/cmnatic<br>
+<code>No answer needed</code></p>
 
 
 <img width="1227" height="264" alt="image" src="https://github.com/user-attachments/assets/3ba4db80-344d-4e2e-a9ae-f1b1b6f741a5" />
 
 <br>
+<br>
 
 <img width="1229" height="417" alt="image" src="https://github.com/user-attachments/assets/7360a20b-0e4f-432f-98df-9a935ed36ec9" />
 
+<br>
 <br>
 
 <h2>Task 11 . Vulnerability #7: Misconfigured Privileges (Deploy #2)</h2>
@@ -504,10 +522,18 @@ Note in the screenshot below that there are very few processes running?</p>
 
 <img width="1162" height="170" alt="image" src="https://github.com/user-attachments/assets/940a086a-90b6-499d-b7c3-de1df5e74def" />
 
+<br>
+<br>
+
 <img width="1166" height="492" alt="image" src="https://github.com/user-attachments/assets/2b7371f6-acc3-47ca-be34-7e300adfd716" />
+
+<br>
+<br>
 
 <img width="1159" height="490" alt="image" src="https://github.com/user-attachments/assets/2771c1ca-f17e-4a76-be3d-b0c37a015f79" />
 
+<br>
+<br>
 
 <img width="1154" height="310" alt="image" src="https://github.com/user-attachments/assets/805b9b45-c74b-4af0-8c77-b2fe472514d7" />
 
