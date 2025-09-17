@@ -569,7 +569,7 @@ Note in the screenshot below that there are very few processes running?</p>
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|-------------:|------------:|------------:|------------:|------------:|------------:|
-|17      |Medium 🔗 - <code><strong>The Docker Rodeo</strong></code>| 499| 106ᵗʰ| 4ᵗʰ   |     346ᵗʰ    |     7ᵗʰ    | 126,546  |    967    |    74     |
+|17      |Medium 🔗 - <code><strong>The Docker Rodeo</strong></code>| 499| 106ᵗʰ| 4ᵗʰ   |     346ᵗʰ    |     7ᵗʰ    | 126,546  |    968    |    74     |
 |17      |Easy 🔗 - Linux Logging for SOC        | 499    |     106ᵗʰ    |      4ᵗʰ     |     345ᵗʰ    |     7ᵗʰ    | 126,538  |    967    |    74     |
 |16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ    |     7ᵗʰ    | 126,420  |    966    |    74     |
 |16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
