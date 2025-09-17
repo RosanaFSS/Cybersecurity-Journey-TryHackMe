@@ -112,10 +112,14 @@ Which time server domain did the VM contact to sync its time?<br>
 <code>ntp.ubuntu.com</code></p>
 
 ```bash
+ubuntu@thm-vm:/var/log$ ll
+```
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714"><br>Rosana´s hands-on<br></h6>
+
+```bash
 ubuntu@thm-vm:/var/log$ cat /var/log/syslog | grep 'time server'
 ```
-<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/94443bba-6669-4295-a070-f2e437b73714"><br><br>
-                   <img width="1000px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
+<h6 align="center"><img width="1000px" src="https://github.com/user-attachments/assets/e70d92ef-0d4d-4e91-a5b9-d92c431e3cca"><br>Rosana´s hands-on<br></h6>
 
 <br>
 <p>2.2. What is the kernel message from Yama in  <strong>/var/log/syslog</strong>?<br>
