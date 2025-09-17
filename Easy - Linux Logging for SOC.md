@@ -112,32 +112,86 @@ Which time server domain did the VM contact to sync its time?<br>
 <code>Nay</code></p>
 
 <br>
-<h2>Task 6 . Using Auditd</h2>
-<h3>Audit Daemon</h3>
+<h2 align="center">Task 6 . Using Auditd</h2>
+<h3 align="center">Audit Daemon</h3>
+<p>Auditd (Audit Daemon) is a built-in auditing solution often used by the SOC team for runtime monitoring. In this task, we will skip the configuration part and focus on how to read auditd rules and how to interpret the results. Let's start from the rules - instructions located in <code>/etc/audit/rules.d/</code> that define which system calls to monitor and which filters to apply:</p>
 
+<h6 align="center"><img width="500px" src="https://github.com/user-attachments/assets/566f0914-e725-4b1d-8622-fc488a31ced4"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
-<h3>Using Auditd</h3>
+<p>Monitoring every process, file, and network event can quickly produce gigabytes of logs each day. But more logs don't always mean better detection since an attack buried in a terabyte of noise is still invisible. That's why SOC teams often focus on the highest-risk events and build balanced rulesets, like <a href="https://github.com/Neo23x0/auditd/blob/master/audit.rules">this one</a> or the example you saw above.</p>
 
+<h3 align="center">Using Auditd</h3>
+<p>You can view the generated logs in real time in <code>/var/log/audit/audit.log</code>, but it is easier to use the <code>ausearch</code> command, as it formats the output for better readability and supports filtering options. Let's see an example based on the rules from the example above by searching events matching the "proc_wget" key:</p>
 
+<p align="center"><em>Looking for "Wget" Execution</em></p>
 
+```bash
+root@thm-vm:~$ ausearch -i -k proc_wget
+----
+type=PROCTITLE msg=audit(08/12/25 12:48:19.093:2219) : proctitle=wget https://files.tryhackme.thm/report.zip
+type=CWD msg=audit(08/12/25 12:48:19.093:2219) : cwd=/root
+type=EXECVE msg=audit(08/12/25 12:48:19.093:2219) : argc=2 a0=wget a1=https://files.tryhackme.thm/report.zip
+type=SYSCALL msg=audit(08/12/25 12:48:19.093:2219) : arch=x86_64 syscall=execve [...] ppid=3752 pid=3888 auid=ubuntu uid=root tty=pts1 exe=/usr/bin/wget key=proc_wget
+```
+
+<p>The terminal above shows a log of a single "wget" command. Here, auditd splits the event into four lines: the PROCTITLE shows the process command line, CWD reports the current working directory, and the remaining two lines show the system call details, like:<br>
+
+- <code>pid=3888, ppid=3752</code>: Process ID and Parent Process ID. Helpful in linking events and building a process tree<br>
+- <code>auid=ubuntu</code>: Audit user. The account originally used to log in, whether locally (keyboard) or remotely (SSH)<br>
+- <code>uid=root</code>: The user who ran the command. The field can differ from auid if you switched users with sudo or su<br>
+- <code>tty=pts1</code>: Session identifier. Helps distinguish events when multiple people work on the same Linux server<br>
+- <code>exe=/usr/bin/wget</code>: Absolute path to the executed binary, often used to build SOC detection rules<br>
+- <code>key=proc_wget</code>: Optional tag specified by engineers in auditd rules that is useful to filter the events</p>
+
+<h4 align="center">File Events</h4>
+<p>Now, let's look at the file events matching the "file_sshconf" key. As you may see from the terminal below, auditd tracked the change to the <code>/etc/ssh/sshd_config</code> file via the "nano" command. SOC teams often set up rules to monitor changes in critical files and directories (e.g., SSH configuration files, cronjob definitions, or system settings)</p>
+
+<p align="center"><em>Looking for SSH Configuration Changes</em></p>
+
+```bash
+root@thm-vm:~$ ausearch -i -k file_sshconf
+----
+type=PROCTITLE msg=audit(08/12/25 13:06:47.656:2240) : proctitle=nano /etc/ssh/sshd_config
+type=CWD msg=audit(08/12/25 13:06:47.656:2240) : cwd=/
+type=PATH msg=audit(08/12/25 13:06:47.656:2240) : item=0 name=/etc/ssh/sshd_config [...]
+type=SYSCALL msg=audit(08/12/25 13:06:47.656:2240) : arch=x86_64 syscall=openat [...] ppid=3752 pid=3899 auid=ubuntu uid=root tty=pts1 exe=/usr/bin/nano key=file_sshconf
+```
+
+<h3 align="center">Audit Alternatives</h3>
+<p>You might have noticed an inconvenient output of auditd - although it provides a verbose logging, it is hard to read and ingest into SIEM. That's why many SOC teams resort to the alternative runtime logging solutions, for example:<br>
+
+- <a href="https://github.com/microsoft/SysmonForLinux">Sysmon for Linux</a>: A perfect choice if you already work with Sysmon and love XML<br>
+- <a href="https://falco.org/">Falco</a>: A modern, open-source solution, ideal for monitoring containerized systems<br>
+- <a href="https://osquery.io/">Osquery</a>: An interesting tool that can be broadly used for various security purposes<br>
+- <a href="https://tryhackme.com/room/introductiontoedr">EDRs</a>: Most EDR solutions can track and monitor various Linux runtime events<br>
+
+The key to remember is that all listed tools work on the same principle - monitoring system calls. Once you've understood system calls, you will easily learn all the mentioned tools. This knowledge also helps you to handle advanced scenarios, like understanding why certain actions were logged in a specific way or not logged at all.<br>
+
+Now, try to uncover a threat actor with process creation logs! For this task, continue with the VM and use auditd logs to answer the questions.
+You may need to use <code>ausearch -i</code> and <code>grep</code> commands for this task.</p>
+
+<p><em>Answer the questions below</em></p>
 
 <p>6.1. When was the secret.thm file opened for the first time? (MM/DD/YY HH:MM:SS). Note: Access to this file is logged with the "file_thmsecret" key.<br>
 <code>naabu_2.3.5_linux_amd64.zip</code></p>
 
-<img width="1350" height="155" alt="image" src="https://github.com/user-attachments/assets/8fd5566c-a1c5-412b-b0e7-18e0334cfd1f" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/8fd5566c-a1c5-412b-b0e7-18e0334cfd1f"><br>Rosana´s hands-on<br></h6>
 
 <p>6.2. What is the original file name downloaded from GitHub via wget?Note: Wget process creation is logged with the "proc_wget" key.<br>
 <code>naabu_2.3.5_linux_amd64.zip</code></p>
 
-<img width="1350" height="508" alt="image" src="https://github.com/user-attachments/assets/973ffa60-dadd-413f-be3d-8cccf5cce91c" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/973ffa60-dadd-413f-be3d-8cccf5cce91c"><br>Rosana´s hands-on<br></h6>
 
 <p>6.3.Which network range was scanned using the downloaded tool? Note: There is no dedicated key for this event, but it's still in auditd logs.<br>
 <code>naabu_2.3.5_linux_amd64.zip</code></p>
 
-
 ```bash
-user@tryhackme:~$ python3 -m http.server 8000
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-MACHINE_IP - - [06/Jul/2025 20:14:05] "GET /script.js HTTP/1.1" 200 -
+$ ausearch -m connect,sendto -c naadbu --raw | grep 'syscall=connect operation=connect' | grep 'saddr=' | grep 'dest=' | grep 'addr='
 ```
+
+
+<br>
+<br>
+
+
 
