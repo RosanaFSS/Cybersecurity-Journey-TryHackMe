@@ -658,11 +658,6 @@ blobGasUsed
 to                      0xf22cB0Ca047e88AC996c17683Cee290518093574
 ```
 
-<img width="1241" height="445" alt="image" src="https://github.com/user-attachments/assets/a132c030-fc9d-463d-b0c4-dbed17c2d87d" />
-
-<br>
-<br>
-
 ```bash
 :~/TryHack3M:TriCipherSummit# cast call --rpc-url http://geth:8545 [to] 'owner()'
 0x000000000000000000000000fef50e71a52c0e8114dae2a3458a0529e71747d7
