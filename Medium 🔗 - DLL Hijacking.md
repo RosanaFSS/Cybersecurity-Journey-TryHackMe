@@ -374,22 +374,12 @@ Empire: stager/multi/launcher) > agents
 <br>
 
 ```bash
-(Empire: agents) > interact 32H68BSD
-(Empire: 32H68BSD) > 
-```
-
-<img width="1133" height="514" alt="image" src="https://github.com/user-attachments/assets/e783289e-1e87-41b6-a42e-0234ec97b868" />
-
-<br>
-<br>
-
-```bash
 (Empire: 32H68BSD) > ps
 [*] Tasked 32H68BSD to run TASK_SHELL
 [*] Agent 32H68BSD tasked with task ID 1
+(Empire: 32H68BSD) >
+...
 ```
-
-<img width="1132" height="377" alt="image" src="https://github.com/user-attachments/assets/ffceff0c-94be-40fd-854f-e135d57ad357" />
 
 ```bash
 Empire: 32H68BSD) > psinject http explorer
