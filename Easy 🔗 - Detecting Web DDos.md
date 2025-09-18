@@ -68,7 +68,6 @@ Now imagine your bicycle parts website. It is popular and handles steady traffic
 <p>2.1. What class of attack relies on disrupting the availability of a web service?<br>
 <code>Denial-of-Service</code></p>
 
-<br>
 <p>2.2. What class of attack relies on disrupting the availability of a web service?<br>
 <code>Botnet</code></p>
 
@@ -92,7 +91,6 @@ In 2023, <a href="https://www.cybersecuritydive.com/news/microsoft-ddos-azure-on
 <p>3.1. Which attacker motive aims to make customers lose confidence in a company?<br>
 <code>Reputational Damage</code></p>
 
-<br>
 <p>3.2. Which motive most likely drove the 2023 DDoS attack against Microsoft?<br>
 <code>Hacktivism</code></p>
 
@@ -133,7 +131,7 @@ This log snippet is highly condensed, and a DoS or DDoS may have hundreds or tho
 <h3 align="center">Hands On</h3>
 <p>Your bicycle parts website has undergone a denial-of-service attack. Open up the <code>access.log</code> file on the user's Desktop to begin your investigation. The logs include a mix of normal user-generated traffic and attacker traffic. While you comb the logs, be on the lookout for repeated requests to the same page and remember the indicators you learned about in this task. Best of luck!</p>
 
-<h6 align="center"><img width="1500px" src="https://github.com/user-attachments/assets/cc9fbe02-6a7c-4d9a-ad65-b80a8f8746f3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="150px" src="https://github.com/user-attachments/assets/cc9fbe02-6a7c-4d9a-ad65-b80a8f8746f3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p><em>Answer the questions below</em></p>
 
@@ -142,17 +140,14 @@ This log snippet is highly condensed, and a DoS or DDoS may have hundreds or tho
 
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ee3c61a1-03b1-4e8f-857b-d06c43316e36"><br>Rosana´s hands-on.<br></h6>
 
-<br>
 <p>3.2. Which page is repeatedly targeted by the attacker’s requests?<br>
 <code>/login</code></p>
 
-<br>
-<p>3.3.After the attack, what error code do legitimate users receive?<br>
+<p>3.3.cAfter the attack, what error code do legitimate users receive?<br>
 <code>503</code></p>
 
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/4ade4559-be96-4ba9-96ef-1c17eeaf1d79"><br>Rosana´s hands-on.<br></h6>
 
-<br>
 <h1 align="center">Task 5 . Leveraging SIEMs</h1>
 <br>
 
@@ -161,10 +156,8 @@ This log snippet is highly condensed, and a DoS or DDoS may have hundreds or tho
 <p>5.1. What was the most frequently requested uri?<br>
 <code>/search</code></p>
 
-<img width="1309" height="383" alt="image" src="https://github.com/user-attachments/assets/a8fc5627-543b-48dd-b84d-988bfb618a62" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a8fc5627-543b-48dd-b84d-988bfb618a62"><br>Rosana´s hands-on.<br></h6>
 
-<br>
-<br>
 <p>5.2. Which clientip made the first request to the target uri?<br>
 <code>203.0.113.12</code></p>
 
@@ -173,16 +166,10 @@ index="main" uri="/search"
 |  timechart span=1ms count by uri
 ```
 
-<img width="1305" height="479" alt="image" src="https://github.com/user-attachments/assets/719bee43-6398-4c29-bd27-755393b765e5" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/719bee43-6398-4c29-bd27-755393b765e5"><br><br>
+                   <img width="1200px" src="https://github.com/user-attachments/assets/6e32b801-97b0-46c8-8946-5ca4e0d378c2"><br>Rosana´s hands-on.<br></h6>
 
-<br>
-<br>
-
-<img width="1314" height="584" alt="image" src="https://github.com/user-attachments/assets/6e32b801-97b0-46c8-8946-5ca4e0d378c2" />
-
-<br>
-<br>
-<p>5.3.How many IP addresses were part of the botnet that attacked your website?br>
+<p>5.3. How many IP addresses were part of the botnet that attacked your website?br>
 <code>/search</code></p>
 
 ```bash
@@ -190,10 +177,8 @@ index="main" "GET /search"
 | stats dc(clientip) as Unique_Clientip
 ```
 
-<img width="1309" height="268" alt="image" src="https://github.com/user-attachments/assets/cfc32b66-c281-4159-8e8a-7f392ece6765" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/cfc32b66-c281-4159-8e8a-7f392ece6765"><br>Rosana´s hands-on.<br></h6>
 
-<br>
-<br>
 <p>5.4. Which useragent was most commonly used by the attacking traffic?<br>
 <code>Java/1.8.0_181</code></p>
 
@@ -203,12 +188,9 @@ index="main" uri="/search"
 |  sort -count
 ```
 
-<img width="1306" height="416" alt="image" src="https://github.com/user-attachments/assets/58e56628-8d6a-4c81-a43a-c853c815aa37" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/58e56628-8d6a-4c81-a43a-c853c815aa37"><br>Rosana´s hands-on.<br></h6>
 
-<br>
-<br>
-<p>5.5. Use the timechart command to visualize the requests.
-What is the peak number of requests made per second during the attack?<br>
+<p>5.5. Use the timechart command to visualize the requests. What is the peak number of requests made per second during the attack?<br>
 <code>207</code></p>
 
 ```bash
@@ -216,7 +198,7 @@ index="main" uri="/search"
 | timechart span=1s count by request
 ```
 
-<img width="1308" height="449" alt="image" src="https://github.com/user-attachments/assets/38e91199-12f6-4227-bd98-58c41405aedb" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/38e91199-12f6-4227-bd98-58c41405aedb"><br>Rosana´s hands-on.<br></h6>
 
 <p>5.6. Which legitimate (non-attacking) clientip received the first 503 response status post-attack?<br>
 <code></code></p>
@@ -228,9 +210,9 @@ index="main" status="503" NOT uri="/search"
 | table clientip, _time, status, _raw
 ```
 
-<img width="1314" height="387" alt="image" src="https://github.com/user-attachments/assets/ac9f3c2a-02be-47a4-9453-75a3989f0073" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ac9f3c2a-02be-47a4-9453-75a3989f0073"><br>Rosana´s hands-on.<br></h6>
 
-<br>
+
 <h1 align="center">Task 6 . Defense</h1>
 <br>
 
