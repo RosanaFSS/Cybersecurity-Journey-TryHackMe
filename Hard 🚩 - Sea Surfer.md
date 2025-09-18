@@ -1,10 +1,10 @@
 <h1 align="center">Sea Surfer</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/65646d1b-002b-4dbb-bd9f-4b240f90f042"><br>
-2025, Spetember 1<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+2025, September 18<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>483</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Ride the Wave!</em>.<br>
-Access it <a href=..."</a>here.<br>
-<img width="1200px" src="h..."></p>
+Access it <a href="https://tryhackme.com/room/seasurfer"</a>here.<br>
+<img width="1200px" src=" "></p>
 
 
 <br>
@@ -15,14 +15,8 @@ Access it <a href=..."</a>here.<br>
 
 <p><em>Answer the questions below</em></p>
 
-<p>1.1. What is user.txt<br>
-<code>_______________</code></p>
-
-<p>1.2. What is root.txt<br>
-<code>______________</code></p>
 
 <br>
-
 <h2>nikto</h2>
 <p>
 
@@ -48,49 +42,6 @@ Access it <a href=..."</a>here.<br>
 + End Time:           2025-09-01 xx:xx:xx (GMT1) (13 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
-```
-
-<h2>curl</h2>
-<p>
-
-- Server: Apache/2.4.41<br>
-X-Backend-Server: seasurfer.thm</p>
-
-```bash
-:~/SeaSurfer# curl xx.xxx.xxx.xxx -I
-HTTP/1.1 200 OK
-Date: Mon, 01 Sep 2025 xx:xx:xx GMT
-Server: Apache/2.4.41 (Ubuntu)
-Last-Modified: Sun, 17 Apr 2022 18:54:09 GMT
-ETag: "2aa6-5dcde2b3f2ff9"
-Accept-Ranges: bytes
-Content-Length: 10918
-Vary: Accept-Encoding
-X-Backend-Server: seasurfer.thm
-Content-Type: text/html
-```
-
-<h2>/etc/hosts</h2>
-
-```bash
-xx.xxx.xxx.xxx seasurfer.thm
-```
-
-<h2>nmap</h2>
-<p>
-
-- 22 : SSH : OpenSSH 8.2p1<br>
-- 80 : HTTP : Wordpress 5.9.3, Apache/2.4.41</p>
-
-```bash
-:~/SeaSurfer# nmap -sC -sV -p- -T4 seasurfer.thm
-...
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
-80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
-|_http-generator: WordPress 5.9.3
-|_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Sea Surfer &#8211; Ride the Wave!
 ```
 
 
