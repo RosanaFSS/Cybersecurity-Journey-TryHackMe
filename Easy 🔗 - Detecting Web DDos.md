@@ -170,7 +170,7 @@ index="main" uri="/search"
                    <img width="1200px" src="https://github.com/user-attachments/assets/6e32b801-97b0-46c8-8946-5ca4e0d378c2"><br>Rosana´s hands-on.<br></h6>
 
 <p>5.3. How many IP addresses were part of the botnet that attacked your website?br>
-<code>/search</code></p>
+<code>60</code></p>
 
 ```bash
 index="main" "GET /search"
@@ -201,7 +201,7 @@ index="main" uri="/search"
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/38e91199-12f6-4227-bd98-58c41405aedb"><br>Rosana´s hands-on.<br></h6>
 
 <p>5.6. Which legitimate (non-attacking) clientip received the first 503 response status post-attack?<br>
-<code></code></p>
+<code>10.10.0.27</code></p>
 
 ```bash
 index="main" status="503" NOT uri="/search"
@@ -211,7 +211,6 @@ index="main" status="503" NOT uri="/search"
 ```
 
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ac9f3c2a-02be-47a4-9453-75a3989f0073"><br>Rosana´s hands-on.<br></h6>
-
 
 <h1 align="center">Task 6 . Defense</h1>
 <br>
