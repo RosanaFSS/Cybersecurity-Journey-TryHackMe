@@ -101,7 +101,7 @@ From the previous tasks, we know that denial-of-service attacks often rely on se
 
 Take a look at the indicators below:</p>
 
-<h6 align="center"><img width="400px" src="https://github.com/user-attachments/assets/1b055f5d-f3eb-4113-880c-8dbeecfc27f0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/1b055f5d-f3eb-4113-880c-8dbeecfc27f0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>Analysts should look for multiple, layered signals forming a picture of a DDoS attempt. For example, imagine an attacker controlling a worldwide botnet aimed at a single site. You might see requests from a wide range of IP addresses across different geographic regions. These requests could hammer several resource-intensive endpoints with the same User-Agent string or a variety to appear more legitimate. Maintaining a watchlist of common indicators to be on the lookout for can be a valuable tool in an analyst's arsenal.</p>
 
