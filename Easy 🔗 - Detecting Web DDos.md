@@ -169,7 +169,7 @@ index="main" uri="/search"
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/719bee43-6398-4c29-bd27-755393b765e5"><br><br>
                    <img width="1200px" src="https://github.com/user-attachments/assets/6e32b801-97b0-46c8-8946-5ca4e0d378c2"><br>Rosana´s hands-on.<br></h6>
 
-<p>5.3. How many IP addresses were part of the botnet that attacked your website?br>
+<p>5.3. How many IP addresses were part of the botnet that attacked your website?<br>
 <code>60</code></p>
 
 ```bash
