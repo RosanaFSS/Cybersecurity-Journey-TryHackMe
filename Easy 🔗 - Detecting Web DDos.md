@@ -1,10 +1,10 @@
-<h1 align="center">Detecting Web DDos</h1>
+<h1 align="center">Detecting Web DDoS</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/ab52f61f-cea2-4e50-bf2c-34d7f50b396e"><br>
 2025, September 18<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>500</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Explore denial-of-service attacks, detection techniques, and strategies for protection</em>.<br>
 Access it <a href="https://tryhackme.com/room/detectingwebddos">here</a>.<br>
-<img width="1200px" src=""https://github.com/user-attachments/assets/8b3f17b3-9029-47fb-b302-345456c3a709"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/8b3f17b3-9029-47fb-b302-345456c3a709"></p>
 
 <h1 align="center">Task 1 . Introduction</h1>
 <p><strong>Denial-of-Service (DoS)</strong> attacks can take many forms, but their ultimate aim is to disrupt or completely block access to a website or web service. In this room, you will explore how DoS and DDoS attacks target the application layer, the techniques behind them, and how you, as a defender, can detect and mitigate these common threats.</p>
