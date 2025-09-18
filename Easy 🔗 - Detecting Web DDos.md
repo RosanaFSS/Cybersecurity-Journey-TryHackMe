@@ -26,6 +26,7 @@ Access it <a href="https://tryhackme.com/room/detectingwebddos">here</a>.<br>
 - Review <a href="https://tryhackme.com/room/splunk101">Splunk: Basics</a> for an overview of Splunk searches</p>
 
 <h3 align="center">Virtual environment set up</h3>
+<p align="center">[ Start Machine ]</p>
 
 <p><em>Answer the question below</em></p>
 
@@ -34,7 +35,36 @@ Access it <a href="https://tryhackme.com/room/detectingwebddos">here</a>.<br>
 
 <br>
 <h1 align="center">Task 2 . DoS and DDos Attacks</h1>
-<br>
+<p>At their core, <strong>Denial-of-Service (DoS)</strong> attacks are meant to overwhelm a website or app so that people can’t use it. When this happens, customers can’t log in, shop, or access services, and businesses lose money and trust.<br>
+
+Have you ever tried to visit your favorite website, only to watch it endlessly load or force you through repeated CAPTCHA challenges? That site might have been facing a denial-of-service attack, where attackers flood it with excessive traffic, forcing defenders to scramble to maintain availability.<br>
+
+DoS attacks can be launched against different layers of a system. However, in this room, we’ll focus on the application layer (Layer 7) of the <a href="https://tryhackme.com/room/osimodelzi">OSI model</a>, where websites and web applications are often targeted.</p>
+
+<h2 align="center">Denial-of-Service (DoS)</h2>
+
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/774451bd-7e77-4068-aa28-dd22fcd69c41"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+
+<p>Any DoS attack, whether small or large in scale, is considered successful if it prevents a web service from functioning as intended. Let’s begin by looking at how even a simple, targeted attack can cause a website to become unavailable.<br>
+
+Imagine your website, a popular e-commerce site that sells bicycle parts, has a search form. This form takes user input, queries the database, and returns matching results. If the application fails to validate or handle the input properly, an attacker could submit unexpected or malformed data that causes the application to hang or crash while processing the request. In this way, a simple search box can be abused to launch a denial-of-service attack. An attacker could also flood the same search form with many requests or even a single, massive request to cause a DoS outage if the form does not properly filter or validate the search.</p>
+
+<h2 align="center">Distributed Denial-of-Service (DDoS)</h2>
+
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/e83941e6-a7e7-443e-bc12-2c677086c5d7"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+
+<p>The limitation of a basic DoS attack is that it relies on a single machine and a single internet connection. While one computer can generate many requests, its impact is capped by its CPU, memory, bandwidth, and network.<br>
+
+To scale up, attackers turn to <strong>Distributed Denial-of-Service (DDoS)</strong> attacks and utilize botnets, an army of compromised devices under their control. The computers, IoT devices, and even servers are often infected with malware and secretly controlled by the attacker. When instructed, the bots flood the target website or web application with traffic, overwhelming it much more effectively than a single machine could.<br>
+
+Now imagine your bicycle parts website. It is popular and handles steady traffic daily, but it wasn't designed to withstand millions of requests in a short period of time. An attacker instructs their botnet to swarm your site, and the sudden influx of traffic quickly exhausts your resources, bringing the website down.</p>
+
+<h2 align="center">Types of Denial-of-Service Attacks</h2>
+<p>Let's examine a variety of denial-of-service attack types. These attacks can be carried out by a single attacker (<strong>Dos</strong>) or distributed across a botnet (<strong>DDoS</strong>).</p>
+
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/f901186f-4ec9-4841-95fd-8c58aff38a02"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+
+
 
 <p><em>Answer the questions below</em></p>
 
