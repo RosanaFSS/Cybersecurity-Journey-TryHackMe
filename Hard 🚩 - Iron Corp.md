@@ -79,6 +79,8 @@ PORT      STATE SERVICE
 49670/tcp open  unknown
 ```
 
+<br>
+
 ```bash
 :~/IronCorp# rustscan -a xx.xxx.xx.xxx --ulimit 5500 -b 65535 -- -A -Pn
 ...
@@ -135,6 +137,7 @@ PORT      STATE SERVICE       REASON  VERSION
 49670/tcp open  msrpc         syn-ack Microsoft Windows RPC
 ```
 
+<br>
 <h3 align="center">dirb</h3>
 <p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
 
@@ -205,6 +208,7 @@ PORT      STATE SERVICE       REASON  VERSION
 -----------------
 ```
 
+<br>
 <p align="center">xx.xxx.xx.xxx:<strong>11025</strong><br>
  
 - /aux<br>
@@ -278,6 +282,7 @@ PORT      STATE SERVICE       REASON  VERSION
 -----------------
 ```
 
+<br>
 <h3 align="center">dig</h3>
 
 <p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
@@ -299,6 +304,7 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ;; XFR size: 5 records (messages 1, bytes 238)
 ```
 
+<br>
 <h3 align="center">/etc/hosts</h3>
 <p  align="center"><strong>ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
@@ -332,12 +338,12 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <br>
 <br>
-<ph3 align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</h3>
+<h3 align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</h3>
 
 <img width="1126" height="716" alt="image" src="https://github.com/user-attachments/assets/f85ee496-57c0-4e3e-b1d8-77c9613c3dc1" />
 
 <br>
-h3  align="center">admin.ironcorp.me:11025</h3>
+<h3  align="center">admin.ironcorp.me:11025</h3>
 
 <img width="1134" height="716" alt="image" src="https://github.com/user-attachments/assets/fd1b1996-a020-4c34-9190-6589b44f9e86" />
 
@@ -394,6 +400,7 @@ h3  align="center">admin.ironcorp.me:11025</h3>
 
 <br>
 <br>
+
 ```bash
 :~/IronCorp# git clone https://github.com/samratashok/nishang.git
 ```
