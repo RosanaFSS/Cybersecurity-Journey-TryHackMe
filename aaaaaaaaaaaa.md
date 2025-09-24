@@ -46,7 +46,14 @@ TargetIP     ironcorp.me
 ```
 
 <h3 align="center">nmap</h3>
-<p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> :  &nbsp;&nbsp;&nbsp;DNS<br><code>&nbsp;&nbsp;135</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>&nbsp;3389</code> :  &nbsp;&nbsp;&nbsp;RDP<br><code>&nbsp;5985</code> : &nbsp;&nbsp;&nbsp;WinRM<br><code>&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br> &nbsp;<code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
+
+<div align="center"><h6>
+
+|Port                               |-                                  |
+|----------------------------------:|----------------------------------:|
+<code>&nbsp;&nbsp;&nbsp;53</code><br><code>&nbsp;&nbsp;135</code><br<code>&nbsp;3389</code><br><code>&nbsp;5985</code><br><code>&nbsp;8080</code><br><code>11025</code><br><code>49670</code>|DNS<br>RPC<br>RDP<br>WinRM<br>HTTP<br>HTTP<br>RPC|
+
+</h6></div><br>
 
 
 ```bash
