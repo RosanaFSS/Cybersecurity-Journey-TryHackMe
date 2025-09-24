@@ -7,7 +7,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<p align="center">Practice <code>nmap</code>, <code>rustscan</code>, <code>dirb</code>, <code>dig</code>, <code>Burp Suite</code>,  <code>Hydra</code></p>
+<p align="center">Practice port scanning (<code>nmap</code>, <code>rustscan</code>), <code>dirb</code>, <code>dig</code>, <code>Burp Suite</code>,  <code>Hydra</code></p>
 
 <br>
 
@@ -38,7 +38,7 @@ Happy hacking!</p>
 
 <h1 align="center">Reconnaissance</h1>
 <br>
-<h3 align="center">/etc/hosts</h3>
+<h3 align="center">Domain Name</h3>
 <p  align="center">ironcorp.me</p>
 
 ```bash
@@ -153,8 +153,9 @@ PORT      STATE SERVICE       REASON  VERSION
 ```
 
 <br>
-<h3 align="center">dirb</h3>
-<p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>Paths to explore</p>p>
+<h3 align="center">Content Discovery</h3>
+<br>
+<p align="center">Paths to explore, xx.xxx.xx.xxx:<strong>8080</strong></p>
 
 <div align="center"><h6>
 
@@ -225,7 +226,7 @@ PORT      STATE SERVICE       REASON  VERSION
 ```
 
 <br>
-<p align="center">xx.xxx.xx.xxx:<strong>11025</strong><br>
+<p align="center">Paths to explore, xx.xxx.xx.xxx:<strong>11025</strong></p>
  
 <div align="center"><h6>
 
@@ -295,8 +296,8 @@ PORT      STATE SERVICE       REASON  VERSION
 ```
 
 <br>
-<h3 align="center">dig</h3>
-<p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
+<h3 align="center">Domain Names</h3>
+<p align="center">dig, xx.xxx.xx.xxx:<strong>8080</strong></p>
 <strong>ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
 ```bash
@@ -316,14 +317,12 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ```
 
 <br>
-<h3 align="center">/etc/hosts</h3>
-<p  align="center"><strong>ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
 ```bash
 xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
 
-<h3 align="center">Web</h3>
+<h3 align="center">Web Inspection</h3>
 
 <div align="center"><h6>
 
