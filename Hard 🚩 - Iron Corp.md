@@ -12,11 +12,11 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 <br>
 
 <h1 align="center">Task 1 . Iron Corp</h1>
-<p align="center">Iron Corp suffered a security breach not long time ago.<br>
-You have been chosen by Iron Corp to conduct a penetration test of their asset. They did system hardening and are expecting you not to be able to access their system.<br>
-The asset in scope is: ironcorp.me<br>
-Note: Edit your config file and add ironcorp.me<br>
-Note 2: <em>It might take around 5-7 minutes for the VM to fully boot, so please be patient</em>.<br>
+<p align="center">Iron Corp suffered a security breach not long time ago.<br><br>
+You have been chosen by Iron Corp to conduct a penetration test of their asset. They did system hardening and are expecting you not to be able to access their system.<br><br>
+The asset in scope is: ironcorp.me<br><br>
+Note: <em>Edit your config file and add <code>ironcorp.me</code></em><br><br>
+Note 2: <em>It might take around 5-7 minutes for the VM to fully boot, so please be patient</em>.<br><br>
 Happy hacking!</p>
 
 <p align="center"><em>Answer the questions below</em></p>
