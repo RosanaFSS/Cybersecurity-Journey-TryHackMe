@@ -294,8 +294,7 @@ PORT      STATE SERVICE       REASON  VERSION
 
 <br>
 <h3 align="center">Domain Names</h3>
-<p align="center">dig, xx.xxx.xx.xxx:<strong>8080</strong></p>
-<strong>ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
+<p align="center">dig, xx.xxx.xx.xxx:<strong>8080</strong><br><code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; admin.<code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; internal.<code>ironcorp.me</code></p>
 
 ```bash
 :~/IronCorp# dig axfr ironcorp.me @xx.xxx.xx.xxx
