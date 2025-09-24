@@ -7,14 +7,14 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<p align="center">Practice
+<p>Practice
   
-- Domain Enumeration: dig<br>
-- Port Scanning: nmap, rustcan<br>
-- Content Discovery: dirb<br>
-- ...: Burp Suite<br>
-- Credential Harvesting: hydr<br>
-- ...</p>
+- <strong>Domain Enumeration</strong>: dig<br>
+- <strong>Port Scanning</strong>: nmap, rustcan<br>
+- <strong>Content Discovery</strong>: dirb<br>
+- <strong>...</strong>: Burp Suite<br>
+- <strong>Credential Harvesting</strong>: hydra<br>
+- <strong>.</strong>:..</p>
 
 <br>
 <br>
