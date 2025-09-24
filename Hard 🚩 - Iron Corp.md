@@ -44,7 +44,7 @@ TargetIP     ironcorp.me
 ```
 
 <br>
-<p align="center">dig, xx.xxx.xx.xxx:<strong>8080</strong><br><code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; admin.<code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; internal.<code>ironcorp.me</code></p>
+<p align="center"><code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; admin.<code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; internal.<code>ironcorp.me</code></p>
 
 ```bash
 :~/IronCorp# dig axfr ironcorp.me @xx.xxx.xx.xxx
