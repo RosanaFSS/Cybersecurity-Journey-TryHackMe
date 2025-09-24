@@ -38,15 +38,15 @@ Happy hacking!</p>
 
 <h1 align="center">Reconnaissance</h1>
 
-<h2 align="center">/etc/hosts</h2>
+<h3 align="center">/etc/hosts</h3>
 <p  align="center">ironcorp.me</p>
 
 ```bash
 TargetIP     ironcorp.me
 ```
 
-<h2 align="center">nmap</h2>
-<p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> : DNS<br><code>&nbsp;&nbsp;135</code> : RPC<br>code>&nbsp;3389</code> : RDP<br><code>&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
+<h3 align="center">nmap</h3>
+<p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> : DNS<br><code>&nbsp;&nbsp;135</code> : RPC<br><code>&nbsp;3389</code> : RDP<br><code>&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
 
 ```bash
 :~/IronCorp# nmap -p- -vv ironcorp.me
@@ -134,7 +134,7 @@ PORT      STATE SERVICE       REASON  VERSION
 49670/tcp open  msrpc         syn-ack Microsoft Windows RPC
 ```
 
-<h2 align="center">dirb</h2>
+<h3 align="center">dirb</h3>
 <p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
 
 - /index.html<br>
@@ -204,7 +204,6 @@ PORT      STATE SERVICE       REASON  VERSION
 -----------------
 ```
 
-<h2 align="center">dirb</h2>
 <p align="center">xx.xxx.xx.xxx:<strong>11025</strong><br>
  
 - /aux<br>
@@ -278,7 +277,7 @@ PORT      STATE SERVICE       REASON  VERSION
 -----------------
 ```
 
-<h2 align="center">dig</h2>
+<h3 align="center">dig</h3>
 
 <p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
 <strong>ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
@@ -299,7 +298,7 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ;; XFR size: 5 records (messages 1, bytes 238)
 ```
 
-<h2 align="center">/etc/hosts</h2>
+<h3 align="center">/etc/hosts</h3>
 <p><strong>ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
 ```bash
