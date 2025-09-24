@@ -37,7 +37,7 @@ Happy hacking!</p>
 <br>
 
 <h1 align="center">Reconnaissance</h1>
-
+<br>
 <h3 align="center">/etc/hosts</h3>
 <p  align="center">ironcorp.me</p>
 
@@ -45,6 +45,7 @@ Happy hacking!</p>
 TargetIP     ironcorp.me
 ```
 
+<br>
 <h3 align="center">nmap</h3>
 <p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> :  &nbsp;&nbsp;&nbsp;DNS<br><code>&nbsp;&nbsp;&nbsp;135</code> : &nbsp;&nbsp;&nbsp;RPC<br>&nbsp;<code>3389</code> :  &nbsp;&nbsp;&nbsp;RDP<br><code>&nbsp;&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
 
