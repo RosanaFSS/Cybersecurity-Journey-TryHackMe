@@ -47,6 +47,23 @@ TargetIP     ironcorp.me
 
 <br>
 <h3 align="center">nmap</h3>
+
+<div align="center"><h6>
+
+| **Port**     | **Service Acronym**     |
+|--------------|--------------------------|
+| `53`         | DNS                      |
+| `135`        | MSRPC                    |
+| `3389`       | RDP                      |
+| `5985`       | HTTPAPI                  |
+| `8080`       | IIS                      |
+| `11025`      | Apache                   |
+| `49667`      | MSRPC                    |
+| `49670`      | MSRPC                    |
+
+</h6></div><br>
+
+
 <p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> :  &nbsp;&nbsp;&nbsp;DNS<br><code>&nbsp;&nbsp;&nbsp;135</code> : &nbsp;&nbsp;&nbsp;RPC<br>&nbsp;<code>3389</code> :  &nbsp;&nbsp;&nbsp;RDP<br><code>&nbsp;&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
 
 ```bash
@@ -139,11 +156,9 @@ PORT      STATE SERVICE       REASON  VERSION
 
 <br>
 <h3 align="center">dirb</h3>
-<p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
+<p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>Paths to explore</p>p>
 
 <div align="center"><h6>
-
-Paths to Explore<br>
 
 | **Path**                                                                 | **Why It's Valuable**                                                                 |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
@@ -158,6 +173,7 @@ Paths to Explore<br>
 | `/assets/images/favicon.ico`                                            | Low Priority, Duplicate in both `/images/` and `/Images/`; check for steganography just in case.    |
 
 </h6></div><br>
+
 
 ```bash
 :~/IronCorp# dirb http://xx.xxx.xx.xxx:8080
@@ -213,29 +229,25 @@ Paths to Explore<br>
 <br>
 <p align="center">xx.xxx.xx.xxx:<strong>11025</strong><br>
  
-- /aux<br>
-- /cgi-bin/<br>
-- /com1<br>
-- /com2<br>
-- /com3<br>
-- /con<br>
-- /css/<br>
-- /img/<br>
-- /examples<br>
-- /index.html<br>
-- /js/<br>
-- /license<br>
-- /LICENSE<br>
-- /licenses<br>
-- /lpt1<br>
-- /lpt2<br>
-- /nul<br>
-- /phpmyadmin<br>
-- /prn<br>
-- /server-info<br>
-- /server-status<br>
-- /vendor/<br>
-- /webalizer</p>
+<div align="center"><h6>
+
+| **Path**                                                                 | **Why It's Valuable**                                                                 |
+|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `/index.html`                                                            | Main page — may contain links, comments, or hints.                                    |
+| `/js/`                                                                   | JavaScript files — could reveal endpoints or logic flaws.                             |
+| `/vendor/`                                                               | May contain third-party libraries or hidden tools.                                    |
+| `/img/`                                                                  | Listable — inspect for steganography or metadata clues.                               |
+| `/css/`                                                                  | Listable — check for commented-out code or hidden references.                         |
+| `/license`, `/LICENSE`                                                  | Accessible — might contain software info or clues.                                    |
+| `/examples`                                                              | Returns 503 — could be broken or under maintenance, worth probing.                    |
+| `/cgi-bin/`                                                              | Forbidden — often linked to server-side scripts, may hide sensitive functionality.    |
+| `/phpmyadmin`                                                            | Forbidden — could indicate a database admin panel, potential entry point.             |
+| `/aux`, `/com1`, `/com2`, `/com3`, `/con`, `/lpt1`, `/lpt2`, `/nul`, `/prn` | Low Priority, Reserved device names — likely placeholders or honeypots.              |
+| `/licenses`                                                              | Low Priority, Forbidden — may duplicate `/license`, less likely to hold unique data. |
+| `/server-info`, `/server-status`                                        | Low Priority, Forbidden — standard Apache endpoints, usually disabled.               |
+| `/webalizer`                                                             | Low Priority, Forbidden — web stats tool, unlikely to hold sensitive data.           |
+
+</h6></div><br>
 
 ```bash
 :~/IronCorp# dirb http://xx.xxx.xx.xxx:11025
@@ -315,29 +327,22 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <h3 align="center">Web</h3>
 
-<p>
+<div align="center"><h6>
 
-- ironcorp.me:8080<br>
------ <code>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</code><br>
-- internal.ironcorp.me:8080<br>
------ <code>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</code><br>
------ <code>/assets/js/pace.min.js</code> : 200<br>
------ <code>/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css</code> : 400<br>
------ <code>/110x110</code> -<br>
------ <code>/assets/js/jquery.min.js</code> 200<br>
------ <code>/assets/plugins/simplebar/js/simplebar.js</code> : 200<br>
------ <code>/assets/js/bootstrap.min.js</code> : 200<br>
------ <code>/assets/js/popper.min.js</code> : 200<br>
------ <code>assets/js/sidebar-menu.js</code> : 200<br>
------ <code>/assets/js/jquery.loading-indicator.js</code> : 404<br>
------ <code>/assets/js/app-script.js</code> : 200<br>
------ <code>/assets/plugins/Chart.js/Chart.min.js</code> : 200<br>
------ <code> /assets/js/index.js</code> : 200<br>
-- admin.ironcorp.me:11025 --> Authentication required!<br>
------ Authorization: Basic <code>YWRtaW46YWRtaW4=</code> = <code>admin</code> : <code>admin</code> == Authentication required!<br>
------ Authorization: Basic <code>YWRtaW46cGFzc3dvcmQxMjM=</code> = <code>admin</code> : <code>password123</code> == Hello<br>
----------- Response = <code>method="GET"</code>, <code>action="#"</code>, <code>name="r"</code>, <code>type="submit"</code><br>
----------- Search = <code>ls</code> = 200 OK = <code>/?r=ls#</code></p>
+| **Target**                         | **Path / Feature**                                                        | **Why It's Valuable**                                                                 |
+|-----------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `ironcorp.me:8080`                | Dashtreme Admin Dashboard                                                | Indicates use of a known template — may expose default credentials or predictable paths. |
+| `internal.ironcorp.me:8080`       | `/assets/js/*.js`, `/assets/plugins/*.js`                                | Multiple accessible JS files — potential for endpoint discovery or logic flaws.        |
+|                                   | `/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css` (400)            | Broken plugin — may indicate misconfigurations or missing resources.                   |
+|                                   | `/110x110`                                                                | Unusual path — worth probing for hidden content or misconfigured routing.              |
+|                                   | `/assets/js/jquery.loading-indicator.js` (404)                           | Missing file — may break functionality or hint at removed features.                    |
+|                                   | Dashtreme Admin Dashboard                                                | Same template reused internally — raises concerns about asset duplication and exposure.|
+| `admin.ironcorp.me:11025`         | Basic Auth with `admin:admin`                                            | Default credentials — critical vulnerability if accepted.                              |
+|                                   | Basic Auth with `admin:password123`                                      | Weak credentials — successful login confirmed.                                         |
+|                                   | `/` with `/?r=ls#`                                                        | Command injection-like behavior — potential RCE vector via query parameter.            |
+|                                   | Response HTML: `method="GET"`, `action="#"`, `name="r"`                  | Form structure suggests command execution via GET — high-risk functionality.           |
+
+</h6></div><br>
 
 
 <p align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</p>
