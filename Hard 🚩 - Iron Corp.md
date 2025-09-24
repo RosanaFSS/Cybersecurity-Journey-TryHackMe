@@ -48,7 +48,7 @@ TargetIP     ironcorp.me
 
 <div align="center"><h6>
 
-| **Port**     | **Service Acronym**     |
+| **Port**     | **Service**     |
 |--------------:|:--------------------------|
 | `53`         | DNS                      |
 | `135`        | MSRPC                    |
