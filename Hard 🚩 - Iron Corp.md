@@ -51,20 +51,18 @@ TargetIP     ironcorp.me
 <div align="center"><h6>
 
 | **Port**     | **Service Acronym**     |
-|--------------|--------------------------|
+|--------------:|:--------------------------|
 | `53`         | DNS                      |
 | `135`        | MSRPC                    |
 | `3389`       | RDP                      |
 | `5985`       | HTTPAPI                  |
 | `8080`       | IIS                      |
-| `11025`      | Apache                   |
+| `11025`      | HTTP                     |
 | `49667`      | MSRPC                    |
 | `49670`      | MSRPC                    |
 
 </h6></div><br>
 
-
-<p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> :  &nbsp;&nbsp;&nbsp;DNS<br><code>&nbsp;&nbsp;&nbsp;135</code> : &nbsp;&nbsp;&nbsp;RPC<br>&nbsp;<code>3389</code> :  &nbsp;&nbsp;&nbsp;RDP<br><code>&nbsp;&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
 
 ```bash
 :~/IronCorp# nmap -p- -vv ironcorp.me
