@@ -37,7 +37,7 @@ Happy hacking!</p>
 <br>
 
 <h1 align="center">Reconnaissance</h1>
-
+<br>
 <h3 align="center">/etc/hosts</h3>
 <p  align="center">ironcorp.me</p>
 
@@ -45,6 +45,7 @@ Happy hacking!</p>
 TargetIP     ironcorp.me
 ```
 
+<br>
 <h3 align="center">nmap</h3>
 
 <div align="center"><h6>
@@ -60,7 +61,6 @@ TargetIP     ironcorp.me
 |<code>49670</code>                 |RPC                                |
 
 </h6></div><br>
-
 
 ```bash
 :~/IronCorp# nmap -p- -vv ironcorp.me
