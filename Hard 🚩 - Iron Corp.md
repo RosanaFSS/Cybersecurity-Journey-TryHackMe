@@ -141,21 +141,25 @@ PORT      STATE SERVICE       REASON  VERSION
 <h3 align="center">dirb</h3>
 <p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
 
-- /index.html<br>
-- /assets/ <br>
-- /assets/css/<br>
-- /assets/flags/<br>
-- /assets/flags/1x1/<br>
-- /assets/fonts/<br>
-- /assets/images/ <br>
-- /assets/images/gallery/<br>
-- /assets/images/timeline/<br>
-- /assets/images/favicon.ico<br>
-- /assets/Images/<br>
-- /assets/Images/gallery/<br>
-- /assets/Images/timeline/<br>
-- /assets/js/<br>
-- /assets/plugins/</p>
+### 🗂️ Valuable Paths to Explore
+
+| **Path**                                                                 | **Why It's Valuable**                                                                 |
+|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `/index.html`                                                            | Main page — may contain links, comments, or hints.                                    |
+| `/assets/js/`                                                            | JavaScript files often reveal hidden endpoints or logic flaws.                        |
+| `/assets/plugins/`                                                      | May include third-party libraries with known vulnerabilities.                         |
+| `/assets/images/gallery/` and `/assets/Images/gallery/`                 | Potential for steganography or metadata clues in images.                              |
+| `/assets/images/timeline/` and `/assets/Images/timeline/`               | Could contain historical or event-related files with embedded flags.                  |
+| `/assets/css/`                                                           | Sometimes includes commented-out code or references to hidden pages.                  |
+
+### 🧊 Optional Paths (Lower Priority)
+
+| **Path**                                                                 | **Notes**                                                                              |
+|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `/assets/fonts/`                                                         | Typically decorative, but worth checking for anomalies.                               |
+| `/assets/flags/1x1/`                                                     | Likely visual assets, but inspect for unusual naming or hidden data.                  |
+| `/assets/images/favicon.ico`                                            | Duplicate in both `/images/` and `/Images/`; check for steganography just in case.    |
+
 
 ```bash
 :~/IronCorp# dirb http://xx.xxx.xx.xxx:8080
