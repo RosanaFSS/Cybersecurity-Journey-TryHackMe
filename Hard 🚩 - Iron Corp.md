@@ -19,6 +19,8 @@ Note: <em>Edit your config file and add <code>ironcorp.me</code></em><br><br>
 Note 2: <em>It might take around 5-7 minutes for the VM to fully boot, so please be patient</em>.<br><br>
 Happy hacking!</p>
 
+<br>
+
 <p align="center"><em>Answer the questions below</em></p>
 
 <p align="center">1.1. user.txt<br>
