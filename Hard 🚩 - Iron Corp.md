@@ -20,6 +20,7 @@ Note 2: <em>It might take around 5-7 minutes for the VM to fully boot, so please
 Happy hacking!</p>
 
 <br>
+<br>
 
 <p align="center"><em>Answer the questions below</em></p>
 
@@ -36,7 +37,7 @@ Happy hacking!</p>
 <h1 align="center">Reconnaissance</h1>
 <br>
 <h3 align="center">Domain Name</h3>
-<p  align="center">ironcorp.me</p>
+<p  align="center"><code>ironcorp.me</code></p>
 
 ```bash
 TargetIP     ironcorp.me
