@@ -7,7 +7,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<p align="center">Practice port scanning (<code>nmap</code>, <code>rustscan</code>), <code>dirb</code>, <code>dig</code>, <code>Burp Suite</code>,  <code>Hydra</code></p>
+<p align="center">Practice Port Scanning (<code>nmap</code>, <code>rustscan</code>), Content Discovery (<code>dirb</code>), Domain (<code>dig</code>), <code>Burp Suite</code>,  <code>Hydra</code>, ...</p>
 
 <br>
 
@@ -348,6 +348,7 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <br>
 <br>
+
 <p  align="center">admin.ironcorp.me:11025</p>
 
 <img width="1134" height="716" alt="image" src="https://github.com/user-attachments/assets/fd1b1996-a020-4c34-9190-6589b44f9e86" />
@@ -369,24 +370,26 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 <img width="1130" height="671" alt="image" src="https://github.com/user-attachments/assets/b4f5eb98-454c-472f-bf4a-fa24fc4b34f5" />
 
 <br>
-<p align="center">Search = <code>internal.ironcorp.me:11025</code></p>
+<br>
+<p align="center">Search = <code>internal.ironcorp.me:11025....</code></p>
 
 <img width="1129" height="202" alt="image" src="https://github.com/user-attachments/assets/820f7a68-76bb-45c2-a6b9-f4aa6cf3167a" />
 
 <br>
 <br>
+<p align="center">Search = <code>internal.ironcorp.me:11025....</code></p>
 
 <img width="966" height="243" alt="image" src="https://github.com/user-attachments/assets/060e069b-f1c9-491f-ad0c-0864b2baa3fd" />
 
 <br>
 <br>
+<p align="center">Search = <code>internal.ironcorp.me:11025....</code></p>
 
 <img width="1129" height="325" alt="image" src="https://github.com/user-attachments/assets/52facf0a-9ba8-4576-96fc-37caa817e1ca" />
 
 <br>
 <br>
 <p align="center">internal.ironcorp.me:11025/name.php?name=</p>
-
 
 <img width="678" height="231" alt="image" src="https://github.com/user-attachments/assets/141cfcae-1816-4f1c-83c7-ad01b8137582" />
 
@@ -399,6 +402,7 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <br>
 <br>
+<p align="center">Search = <code>internal.ironcorp.me:11025....</code></p>
 
 <img width="1220" height="278" alt="image" src="https://github.com/user-attachments/assets/076d2762-3b84-46c9-9c15-94dec7d8b43b" />
 
