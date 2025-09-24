@@ -19,14 +19,14 @@ Note: Edit your config file and add ironcorp.me<br>
 Note 2: <em>It might take around 5-7 minutes for the VM to fully boot, so please be patient</em>.<br>
 Happy hacking!</p>
 
-<p><em>Answer the questions below</em></p>
+<p align="center"><em>Answer the questions below</em></p>
 
-<p>1.1. user.txt<br>
+<p align="center">1.1. user.txt<br>
 <code>_____</code></p>
 
 <br>
 
-<p>1.2. root.txt<br>
+<p align="center">1.2. root.txt<br>
 <code>_____</code></p>
 <br>
 <br>
