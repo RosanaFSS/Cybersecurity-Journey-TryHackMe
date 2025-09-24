@@ -7,7 +7,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<p align="center">Practice <code>nmap</code>, <code>rustscan</code>, <code>dirb</code>, </p>
+<p align="center">Practice <code>nmap</code>, <code>rustscan</code>, <code>dirb</code>,  <code>dig</code></p>
 
 <br>
 
@@ -300,7 +300,7 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ```
 
 <h3 align="center">/etc/hosts</h3>
-<p><strong>ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
+<p  align="center"><strong>ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
 ```bash
 xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
@@ -332,12 +332,12 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <br>
 <br>
-<h3>ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</h3>
+<ph3 align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</h3>
 
 <img width="1126" height="716" alt="image" src="https://github.com/user-attachments/assets/f85ee496-57c0-4e3e-b1d8-77c9613c3dc1" />
 
 <br>
-<h3>admin.ironcorp.me:11025</h3>
+h3  align="center">admin.ironcorp.me:11025</h3>
 
 <img width="1134" height="716" alt="image" src="https://github.com/user-attachments/assets/fd1b1996-a020-4c34-9190-6589b44f9e86" />
 
@@ -347,12 +347,12 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 <img width="1127" height="680" alt="image" src="https://github.com/user-attachments/assets/805b1a3a-f6f2-444b-b08c-7eaff6955d20" />
 
 <br>
-<h3>Search = <code>http://internal.ironcorp.me:8080</code></h3>
+<h3  align="center">Search = <code>http://internal.ironcorp.me:8080</code></h3>
 
 <img width="1130" height="671" alt="image" src="https://github.com/user-attachments/assets/b4f5eb98-454c-472f-bf4a-fa24fc4b34f5" />
 
 <br>
-<h3>Search = <code>http://internal.ironcorp.me:11025</code></h3>
+<h3  align="center">Search = <code>http://internal.ironcorp.me:11025</code></h3>
 
 <img width="1129" height="202" alt="image" src="https://github.com/user-attachments/assets/820f7a68-76bb-45c2-a6b9-f4aa6cf3167a" />
 
@@ -366,6 +366,9 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 
 <img width="1129" height="325" alt="image" src="https://github.com/user-attachments/assets/52facf0a-9ba8-4576-96fc-37caa817e1ca" />
 
+<br>
+<br>
+<h1 align="center">Command & Controle</h1>
 <p>
  
 - http://internal.ironcorp.me:11025/name.php?name=</p>
@@ -390,8 +393,7 @@ xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 <img width="1214" height="248" alt="image" src="https://github.com/user-attachments/assets/9fe97888-e6ca-4e22-91ac-269ac63e1c86" />
 
 <br>
-<h3>Reverse Shell</h3>
-
+<br>
 ```bash
 :~/IronCorp# git clone https://github.com/samratashok/nishang.git
 ```
