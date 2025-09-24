@@ -7,7 +7,7 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<p align="center">Practice Port Scanning (<code>nmap</code>, <code>rustscan</code>), Content Discovery (<code>dirb</code>), Domain (<code>dig</code>), <code>Burp Suite</code>,  <code>Hydra</code>, ...</p>
+<p align="center">Practice Port Scanning (nmap, rustcan), Content Discovery (dirb), Domain Enumeration (dig), Burp Suite,  Credential Harvesting (Hydra), ...</p>
 
 <br>
 
