@@ -155,7 +155,7 @@ PORT      STATE SERVICE       REASON  VERSION
 <br>
 <h3 align="center">Content Discovery</h3>
 <br>
-<p align="center">Paths to explore, xx.xxx.xx.xxx:<strong>8080</strong></p>
+<p align="center">xx.xxx.xx.xxx:<strong>8080</strong></p>
 
 <div align="center"><h6>
 
@@ -172,7 +172,6 @@ PORT      STATE SERVICE       REASON  VERSION
 | `/assets/images/favicon.ico`                                            | Low Priority, Duplicate in both `/images/` and `/Images/`; check for steganography just in case.    |
 
 </h6></div><br>
-
 
 ```bash
 :~/IronCorp# dirb http://xx.xxx.xx.xxx:8080
@@ -226,7 +225,7 @@ PORT      STATE SERVICE       REASON  VERSION
 ```
 
 <br>
-<p align="center">Paths to explore, xx.xxx.xx.xxx:<strong>11025</strong></p>
+<p align="center">xx.xxx.xx.xxx:<strong>11025</strong></p>
  
 <div align="center"><h6>
 
@@ -322,6 +321,7 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
 
+<br>
 <h3 align="center">Web Inspection</h3>
 
 <div align="center"><h6>
