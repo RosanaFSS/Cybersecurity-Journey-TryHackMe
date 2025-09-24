@@ -36,11 +36,36 @@ Happy hacking!</p>
 
 <h1 align="center">Reconnaissance</h1>
 <br>
-<h3 align="center">Domain Name</h3>
+<h3 align="center">Domain Names</h3>
 <p  align="center"><code>ironcorp.me</code></p>
 
 ```bash
 TargetIP     ironcorp.me
+```
+
+<br>
+<p align="center">dig, xx.xxx.xx.xxx:<strong>8080</strong><br><code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; admin.<code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; internal.<code>ironcorp.me</code></p>
+
+```bash
+:~/IronCorp# dig axfr ironcorp.me @xx.xxx.xx.xxx
+
+; <<>> DiG 9.18.28-0ubuntu0.20.04.1-Ubuntu <<>> axfr ironcorp.me @TargetIP
+;; global options: +cmd
+ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
+ironcorp.me.		3600	IN	NS	win-8vmbkf3g815.
+admin.ironcorp.me.	3600	IN	A	127.0.0.1
+internal.ironcorp.me.	3600	IN	A	127.0.0.1
+ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
+;; Query time: 480 msec
+;; SERVER:TargetIP#53(TargetIP) (TCP)
+;; WHEN: Fri Aug 01 03:53:39 BST 2025
+;; XFR size: 5 records (messages 1, bytes 238)
+```
+
+<br>
+
+```bash
+xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
 
 <br>
@@ -290,32 +315,6 @@ PORT      STATE SERVICE       REASON  VERSION
     (Use mode '-w' if you want to scan it anyway)
                                                                                
 -----------------
-```
-
-<br>
-<h3 align="center">Domain Names</h3>
-<p align="center">dig, xx.xxx.xx.xxx:<strong>8080</strong><br><code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; admin.<code>ironcorp.me</code> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; internal.<code>ironcorp.me</code></p>
-
-```bash
-:~/IronCorp# dig axfr ironcorp.me @xx.xxx.xx.xxx
-
-; <<>> DiG 9.18.28-0ubuntu0.20.04.1-Ubuntu <<>> axfr ironcorp.me @TargetIP
-;; global options: +cmd
-ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
-ironcorp.me.		3600	IN	NS	win-8vmbkf3g815.
-admin.ironcorp.me.	3600	IN	A	127.0.0.1
-internal.ironcorp.me.	3600	IN	A	127.0.0.1
-ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
-;; Query time: 480 msec
-;; SERVER:TargetIP#53(TargetIP) (TCP)
-;; WHEN: Fri Aug 01 03:53:39 BST 2025
-;; XFR size: 5 records (messages 1, bytes 238)
-```
-
-<br>
-
-```bash
-xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
 
 <br>
