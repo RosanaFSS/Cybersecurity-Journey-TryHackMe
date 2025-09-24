@@ -1,5 +1,5 @@
 <h1 align="center">Iron Corp</h1>
-<p align="center">2025, August 9<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>460</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, September 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>460</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Can you get access to Iron Corp's system?</em>?<br>
 <img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
 Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironcorp">here </a>.<br>
@@ -11,8 +11,8 @@ Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironco
 
 <br>
 
-<h2>Task 1 . Iron Corp</h2>
-<p>Iron Corp suffered a security breach not long time ago.<br>
+<h1 align="center">Task 1 . Iron Corp</h1>
+<p align="center">Iron Corp suffered a security breach not long time ago.<br>
 
 You have been chosen by Iron Corp to conduct a penetration test of their asset. They did system hardening and are expecting you not to be able to access their system.<br>
 
@@ -20,32 +20,33 @@ The asset in scope is: ironcorp.me<br>
 
 Note: Edit your config file and add ironcorp.me<br>
 
-Note 2: It might take around 5-7 minutes for the VM to fully boot, so please be patient.<br>
+Note 2: <em>It might take around 5-7 minutes for the VM to fully boot, so please be patient</em>.<br>
 
 Happy hacking!</p>
 
 <p><em>Answer the questions below</em></p>
 
-<br>
-
-<p>1.1. user.txtbr>
+<p>1.1. user.txt<br>
 <code>_____</code></p>
 
 <br>
 
-<p>1.2. root.txtbr>
+<p>1.2. root.txt<br>
 <code>_____</code></p>
-
-
+<br>
 <br>
 
-<h3>/etc/hosts</h3>
+<h1 align="center">Reconnaissance</h1>
+
+<h2 align="center">/etc/hosts</h2>
+<p  align="center">ironcorp.me</p>
 
 ```bash
 TargetIP     ironcorp.me
 ```
 
-<h3>nmap</h3>
+<h2 align="center">nmap</h2>
+<p  align="center"><code>&nbsp;&nbsp;&nbsp;53</code> : DNS<br><code>&nbsp;&nbsp;135</code> : RPC<br>code>&nbsp;3389</code> : RDP<br><code>&nbsp;8080</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>11025</code> : &nbsp;&nbsp;&nbsp;HTTP<br><code>49667</code> : &nbsp;&nbsp;&nbsp;RPC<br><code>49670</code> : &nbsp;&nbsp;&nbsp;RPC</p>
 
 ```bash
 :~/IronCorp# nmap -p- -vv ironcorp.me
@@ -77,23 +78,8 @@ PORT      STATE SERVICE
 49670/tcp open  unknown
 ```
 
-<br>
-
-<h3>rustscan</h3>
-
-<p>
- 
-- <code>&nbsp;&nbsp;&nbsp;53</code> : domain?<br>
-- <code>&nbsp;&nbsp;135</code> : msrpc : Microsoft Windows RPC<br>
-- <code>&nbsp;3389</code> : ms-wbt-server : Microsoft Terminal Services<br>
-- <code>;&nbsp;5985</code> : http : Microsoft-HTTPAPI/2.0<br>
-- <code>&nbsp;8080</code> : http : Microsoft-IIS/10.0<br>
-- <code>11025</code> : http : syn-ack Apache httpd 2.4.41 : TRACE<br>
-- <code>49667</code> : msrpc : Microsoft Windows RPC<br>
-- <code>49670</code> : msrpc : Microsoft Windows RPC</p>
-
 ```bash
-:~/IronCorp# rustscan -a xx.xx.xx.xxx --ulimit 5500 -b 65535 -- -A -Pn
+:~/IronCorp# rustscan -a xx.xxx.xx.xxx --ulimit 5500 -b 65535 -- -A -Pn
 ...
 PORT      STATE SERVICE       REASON  VERSION
 53/tcp    open  domain?       syn-ack
@@ -123,18 +109,7 @@ PORT      STATE SERVICE       REASON  VERSION
 | -----BEGIN CERTIFICATE-----
 | MIIC4jCCAcqgAwIBAgIQWRcbnyVb4ZVHx7fpg2OI/DANBgkqhkiG9w0BAQsFADAa
 | MRgwFgYDVQQDEw9XSU4tOFZNQktGM0c4MTUwHhcNMjUwNzMxMDA0ODQzWhcNMjYw
-| MTMwMDA0ODQzWjAaMRgwFgYDVQQDEw9XSU4tOFZNQktGM0c4MTUwggEiMA0GCSqG
-| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2cMoTwqE64A4Z4Yg9VFqmSXm12cbf1fhF
-| yHH/jLSfQpdtqMhJp+L1LKeby2WTDJI7l72OvKVVCmaDPu1cFWoWOn76hBsGHG67
-| KOWiNJ3lWYnuQYmxB+hVfr7svtrZGO+kn8SyNnIuFrwHyC+7E1/a8upq8wbCtDtU
-| 6FXJ7tCeu4ipKWi2ZCgEEK1GNjcRWrePQQWUsmtv8gs2mFFrEMUZAClDHki7x3mb
-| wATiMgJr++n/dV1YAGvUBvhCkuMNrCjyeTLA4kSai/JY+uB80OGU4YNExPs/veHE
-| noga5/UsoJmy3KqOQqyt48RX9VRMxQlspHGTvXYpP5jzvAW0j9J9AgMBAAGjJDAi
-| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
-| AAOCAQEAtdym7fBomxFIQM25wR8NNdWyY9UWyCpUe4U2HPiUoCp9g5QaG0RvgTU+
-| u3JeR2i5zYmXh0gJqJ1CMskUDt4uncpfDtFE4NAhDma+6TwleB4nVaTAx7ExNiBQ
-| VyvtyW2b6hMm3gFVHjdXz3VyF/F4uQfooi2QcELmDnapNFKcugpXa3l8eK0SjGQD
-| 7CL3Y7D4P7B4lThHqtkEfa0VZdExB8Ku4NGZcOaV8cEcJ82QEcpEX2B6IHEG94rk
+...
 | eqDo7JphpRmrTFVMEevsUfG4CIQFesyvPxtC0OSiSnC7c38isAuokbAAB/wvfXMv
 | DhIOctQDwqctVRPklaMvpydWlkMnOQ==
 |_-----END CERTIFICATE-----
@@ -159,11 +134,8 @@ PORT      STATE SERVICE       REASON  VERSION
 49670/tcp open  msrpc         syn-ack Microsoft Windows RPC
 ```
 
-<br>
-
-<h3>dirb</h3>
-<br>
-<p>xx.xxx.xx.xxx:<code>8080</code><br>
+<h2 align="center">dirb</h2>
+<p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
 
 - /index.html<br>
 - /assets/ <br>
@@ -232,8 +204,8 @@ PORT      STATE SERVICE       REASON  VERSION
 -----------------
 ```
 
-<br>
-<p>xx.xxx.xx.xxx:<code>11025</code><br>
+<h2 align="center">dirb</h2>
+<p align="center">xx.xxx.xx.xxx:<strong>11025</strong><br>
  
 - /aux<br>
 - /cgi-bin/<br>
@@ -306,19 +278,13 @@ PORT      STATE SERVICE       REASON  VERSION
 -----------------
 ```
 
-<br>
+<h2 align="center">dig</h2>
 
-<h3>dig</h3>
-
-<p>
-
-- <code>ironcorp.me</code>
-- <code>admin.ironcorp.me</code><br>
-- <code>internal.ironcorp.me</code>
-</p>
+<p align="center">xx.xxx.xx.xxx:<strong>8080</strong><br>
+<strong>ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
 ```bash
-:~/IronCorp# dig axfr ironcorp.me @TargetIP
+:~/IronCorp# dig axfr ironcorp.me @xx.xxx.xx.xxx
 
 ; <<>> DiG 9.18.28-0ubuntu0.20.04.1-Ubuntu <<>> axfr ironcorp.me @TargetIP
 ;; global options: +cmd
@@ -333,16 +299,12 @@ ironcorp.me.		3600	IN	SOA	win-8vmbkf3g815. hostmaster. 3 900 600 86400 3600
 ;; XFR size: 5 records (messages 1, bytes 238)
 ```
 
-<br>
-<h3>/etc/hosts</h3>
+<h2 align="center">/etc/hosts</h2>
+<p><strong>ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; <strong>admin.ironcorp.me</strong> &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp;<strong>internal.ironcorp.me</strong></p>
 
 ```bash
-TargetIP ironcorp.me admin.ironcorp.me internal.ironcorp.me
+xx.xxx.xx.xxx ironcorp.me admin.ironcorp.me internal.ironcorp.me
 ```
-
-<br>
-
-
 
 <p>
 
