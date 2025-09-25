@@ -1,11 +1,10 @@
 <h1 align="center">Network Secuity Essentials</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/0dbfdc88-3523-46d7-b37d-20a60db8b9b"><br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/fdddadf5-8341-4055-90e8-810fa78316f5"><br>
 2025, September 25<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>507</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Learn about key aspects of network security essentials and how to monitor and protect against adversaries</em>.<br>
 Access it <a href="https://tryhackme.com/room/networksecurityessentials">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/6eb54ea1-8481-4b05-99e2-a7d7453f78b3"></p>
-
 
 <h2 align="center">Task 1 . Introduction</h2>
 <br>
