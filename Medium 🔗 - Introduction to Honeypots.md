@@ -230,12 +230,7 @@ Bots are not limited to these actions in any way and there is still some variati
 <p><em>Answer the questions below</em></p>
 
 <p>6.1. What's the full model name of CPU does the honeypot "use"?<br>
-<code>   </code></p>
-<p>
-
-- uname -a
-- /etc/issue = Ubuntu 20.04.6 LTS<br>
-- /et5c/cpuinfo = omodel name	: AMD EPYC 7571</p>
+<code>Intel(R) Core(TM) i9-11900KB CPU @ 3.30GHz</code></p>
 
 ```bash
 root@acmeweb:~# uname
@@ -393,6 +388,7 @@ address sizes	: 36 bits physical, 48 bits virtual
 power management:
 ```
 
+<br>
 <p>6.2. Does the honeypot return the correct values when uname -a is run? (Yay/Nay)<br>
 <code>Nay</code></p>
 
