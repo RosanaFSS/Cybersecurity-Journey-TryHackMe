@@ -240,7 +240,7 @@ As a security analyst, our role is to:<br>
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|25      Easy 🔗 - <strong>Network Secuity Essentials</strong>| 507 | 112ⁿᵈ|  4ᵗʰ     |     302ⁿᵈ   |     5ᵗʰ     | 126,990  |   973     |   76     | 
+|25      |Easy 🔗 - <strong>Network Secuity Essentials</strong>| 507 | 112ⁿᵈ|  4ᵗʰ     |     302ⁿᵈ   |     5ᵗʰ     | 126,990  |   973     |   76     | 
 |24      |Medium 🔗 - Linux Threat Detection 1| 506 | 110ᵗʰ|  4ᵗʰ     |     330ᵗʰ   |     5ᵗʰ     | 126,894  |   973     |   76     | 
 |24      |Hard 🚩 - Iron Corp                    | 506    |    111ˢᵗ    |      4ᵗʰ     |     363ʳᵈ   |     5ᵗʰ     | 126,768  |   972     |   76     |    
 |23      |Medium 🔗 - Intro to Credential Harvesting|505 |     109ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     5ᵗʰ     | 126,768  |   971     |   76     |    
