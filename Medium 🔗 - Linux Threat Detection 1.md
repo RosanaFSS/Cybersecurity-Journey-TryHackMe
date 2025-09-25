@@ -191,7 +191,7 @@ ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ***
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|24      |Medium 🔗 - <strong>Linux Threat Detection 1</strong>   | 506    |    111ˢᵗ    |      4ᵗʰ     |     363ʳᵈ   |     5ᵗʰ     | 126,768  |   972     |   76     | 
+|24      |Medium 🔗 - <strong>Linux Threat Detection 1</strong>| 506 | 110ᵗʰ|  4ᵗʰ     |     330ᵗʰ   |     5ᵗʰ     | 126,894  |   973     |   76     | 
 |24      |Hard 🚩 - Iron Corp                    | 506    |    111ˢᵗ    |      4ᵗʰ     |     363ʳᵈ   |     5ᵗʰ     | 126,768  |   972     |   76     |    
 |23      |Medium 🔗 - Intro to Credential Harvesting|505 |     109ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     5ᵗʰ     | 126,768  |   971     |   76     |    
 |22      |                                        | 504   |              |      4ᵗʰ     |             |             |          |           |   76     |    
@@ -239,12 +239,11 @@ ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ***
 
 <br>
 
-<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/37fc8e0c-bc81-4e43-846d-5667a22bbfb8"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/fdce9c2e-e6d0-40ec-bdf7-ea9ad515d123"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/26e9fa6d-9247-4f4d-b7f2-a740b27ceaa6"><br>
-                  Global monthly:    345ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/22afea35-3791-47ec-848c-104253b6a62b"><br>
-                  Brazil monthly:      7ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6042de62-c478-4d90-938e-015014a7a7d2"><br>
+<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/035d4bae-16f3-4da7-b57b-4077e0a63c47"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/5580eea4-6081-4241-80fc-2d4cf18d5856"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2b334c14-f571-4aa5-bd1a-fa0cbc86e36c"><br>
+                  Global monthly:    330ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/17bb71a4-1e52-40b3-a993-bb7df9a3a09a"><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/206f4848-19c4-435e-a635-b42721bd921b"><br>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
