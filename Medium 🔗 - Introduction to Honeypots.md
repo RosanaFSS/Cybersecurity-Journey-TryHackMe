@@ -601,20 +601,20 @@ demo@ip-xx-xxx-xxx-xx:~/Tunnelling$ cat Sample2.txt
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|25      |Medium 🔗 - <strong>Introduction to Honeypots</strong>| 507 | 109ᵗʰ|  4ᵗʰ     |     303ʳᵈ   |     5ᵗʰ     | 127,110  |   976    |   76     |
-|25      |Medium 🔗 - Windows x64 Assembly       | 507    |     109ᵗʰ    |      4ᵗʰ     |     303ʳᵈ   |     5ᵗʰ     | 127,110  |   975     |   76     | 
-|25      |Easy 🔗 - Network Secuity Essentials   | 507    |     112ⁿᵈ    |      4ᵗʰ     |     302ⁿᵈ   |     5ᵗʰ     | 126,990  |   974     |   76     | 
-|24      |Medium 🔗 - Linux Threat Detection 1   | 506    |     110ᵗʰ    |      4ᵗʰ     |     330ᵗʰ   |     5ᵗʰ     | 126,894  |   973     |   76     | 
-|24      |Hard 🚩 - Iron Corp                    | 506    |     111ˢᵗ    |      4ᵗʰ     |     363ʳᵈ   |     5ᵗʰ     | 126,768  |   972     |   76     |    
-|23      |Medium 🔗 - Intro to Credential Harvesting|505  |     109ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     5ᵗʰ     | 126,768  |   971     |   76     |    
-|22      |                                        | 504   |              |      4ᵗʰ     |             |             |          |           |   76     |    
-|21      |                                        | 503   |              |      4ᵗʰ     |             |             |          |           |   76     |    
-|20      |                                        | 502   |              |      4ᵗʰ     |             |             |          |           |   76     |    
-|19      |                                        | 501   |              |      4ᵗʰ     |             |             |          |           |   76     |        
-|18      |Easy 🔗 - Detecting Web DDos           | 500    |     106ᵗʰ    |      4ᵗʰ     |     312ⁿᵈ   |     4ᵗʰ    | 126,674  |    970    |    76     |
-|17      |Medium 🔗 - DLL Hijacking              | 499    |     106ᵗʰ    |      4ᵗʰ     |     348ᵗʰ   |     7ᵗʰ    | 126,554  |    969    |    75     |
-|17      |Medium 🔗 - The Docker Rodeo           | 499    |     106ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     7ᵗʰ    | 126,546  |    968    |    75     |
-|17      |Easy 🔗 - Linux Logging for SOC        | 499    |     106ᵗʰ    |      4ᵗʰ     |     345ᵗʰ   |     7ᵗʰ    | 126,538  |    967    |    74     |
+|25      |Medium 🔗 - <strong>Introduction to Honeypots</strong>| 507 | 109ᵗʰ|  4ᵗʰ     |     305ᵗʰ    |     5ᵗʰ    | 127,214  |    976    |    76     |
+|25      |Medium 🔗 - Windows x64 Assembly       | 507    |     109ᵗʰ    |      4ᵗʰ     |     303ʳᵈ    |     5ᵗʰ    | 127,110  |    975    |    76     | 
+|25      |Easy 🔗 - Network Secuity Essentials   | 507    |     112ⁿᵈ    |      4ᵗʰ     |     302ⁿᵈ    |     5ᵗʰ    | 126,990  |    974    |    76     | 
+|24      |Medium 🔗 - Linux Threat Detection 1   | 506    |     110ᵗʰ    |      4ᵗʰ     |     330ᵗʰ    |     5ᵗʰ    | 126,894  |    973    |    76     | 
+|24      |Hard 🚩 - Iron Corp                    | 506    |     111ˢᵗ    |      4ᵗʰ     |     363ʳᵈ    |     5ᵗʰ    | 126,768  |    972    |    76     |    
+|23      |Medium 🔗 - Intro to Credential Harvesting|505  |     109ᵗʰ    |      4ᵗʰ     |     346ᵗʰ    |     5ᵗʰ    | 126,768  |    971    |    76     |    
+|22      |                                        | 504   |              |      4ᵗʰ     |              |             |         |            |    76     |    
+|21      |                                        | 503   |              |      4ᵗʰ     |              |             |         |            |    76     |    
+|20      |                                        | 502   |              |      4ᵗʰ     |              |             |         |            |    76     |    
+|19      |                                        | 501   |              |      4ᵗʰ     |              |             |         |            |    76     |        
+|18      |Easy 🔗 - Detecting Web DDos           | 500    |     106ᵗʰ    |      4ᵗʰ     |     312ⁿᵈ    |     4ᵗʰ    | 126,674  |    970    |    76     |
+|17      |Medium 🔗 - DLL Hijacking              | 499    |     106ᵗʰ    |      4ᵗʰ     |     348ᵗʰ    |     7ᵗʰ    | 126,554  |    969    |    75     |
+|17      |Medium 🔗 - The Docker Rodeo           | 499    |     106ᵗʰ    |      4ᵗʰ     |     346ᵗʰ    |     7ᵗʰ    | 126,546  |    968    |    75     |
+|17      |Easy 🔗 - Linux Logging for SOC        | 499    |     106ᵗʰ    |      4ᵗʰ     |     345ᵗʰ    |     7ᵗʰ    | 126,538  |    967    |    74     |
 |16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ    |     7ᵗʰ    | 126,420  |    966    |    74     |
 |16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ    |     7ᵗʰ    | 126,420  |    965    |    74     |
 |15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ    |     7ᵗʰ    | 126,404  |    964    |    74     |
@@ -652,11 +652,11 @@ demo@ip-xx-xxx-xxx-xx:~/Tunnelling$ cat Sample2.txt
 
 <br>
 
-<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/fd99a885-3626-4f4c-9078-c4e772f217f1"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/96724426-c425-46cc-993b-db3284f03a88"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a470dbac-e484-41a2-82ae-747ad99b9037"><br>
-                  Global monthly:    302ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/9a807860-b6c6-463a-8fde-e0f4e7447065"><br>
-                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d5b4d6a6-3705-4e3d-95ce-d409a4b778b8"><br>
+<p align="center">Global All Time:   109ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/36eba4e6-131e-4c5b-8066-aa863ddb986f"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/065337a5-7035-4dd2-8782-d14a2e2d9257"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/83f1c583-c5b7-4ac0-8888-21f12e06d359"><br>
+                  Global monthly:    305ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/eb753648-02b2-402d-bdd2-89abb584048f"><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8d96a5ab-0ee4-4782-89cb-17c56dc7184a"><br>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
