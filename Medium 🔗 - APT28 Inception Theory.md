@@ -14,7 +14,6 @@ Can be accessed clicking  <a href="https://tryhackme.com/room/apt28inceptiontheo
 <br>
 <br>
 
-
 <h1 align="center">$$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bca8c767-0e25-4176-8c73-af6bf06411a8"> </p>
