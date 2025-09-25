@@ -291,7 +291,7 @@ As a security analyst, our role is to:<br>
 
 <p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/1fc9ed82-738c-4731-ba8b-a69d810e47a2"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/966ac73e-1fed-4071-9e8e-350c0d080c17"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8b80dc45-a14e-4e30-b6c2-aeef45138994><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8b80dc45-a14e-4e30-b6c2-aeef45138994"><br>
                   Global monthly:    302ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/432335dd-1c77-4842-a9df-0d4e0a7c3682"><br>
                   Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a38fbfd2-06e1-4d22-9501-6758df1b69ad"><br>
 
