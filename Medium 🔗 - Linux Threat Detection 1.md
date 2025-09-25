@@ -57,6 +57,7 @@ $ cat auth.log | grep sshd | grep -E 'Accepted'
 ```
 
 <br>
+<br>
 <p>3.2. Which four users did the botnet attempt to breach? Answer Format: Separate by a comma, in alphabetical order.<br>
 <code>root, roy, sol, user</code></p>
 
@@ -72,17 +73,12 @@ $ grep -E 'Accepted password for root' auth.log | wc -l
 1
 ```
 
-<img width="1304" height="145" alt="image" src="https://github.com/user-attachments/assets/c1f7fca9-722a-4b10-91e6-0c5e40854a37" />
-
-<br>
-<br>
-
 ```bash
 ubuntu@thm-vm:/var/log$ grep -E 'Accepted password for root' auth.log
 2025-08-21T17:10:08.113644+00:00 thm-vm sshd[16876]: Accepted password for root from 91.224.92.79 port 51555 ssh2
 ```
 
-<img width="1100" height="116" alt="image" src="https://github.com/user-attachments/assets/a72e8b98-8868-45fb-9066-02a81b88dfd2" />
+<img width="1304" height="145" alt="image" src="https://github.com/user-attachments/assets/c1f7fca9-722a-4b10-91e6-0c5e40854a37" />
 
 <br>
 <br>
@@ -95,8 +91,6 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep sshd | grep -E 'Accepted'
 
 <br>
 <br>
-
-
 <h2 align="center">Task 4 . Initial Access Via Services</h2>
 <br>
 
