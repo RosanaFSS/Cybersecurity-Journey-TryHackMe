@@ -6,7 +6,8 @@ and I’m excited to join you on this adventure,<br>
 part of my <code>406</code>-day-streak in<a href="https://tryhackme.com">TryHackMe</a>.<br>
 Investigate lateral movement, credential theft, and additional adversary actions in a memory dump.<a href="https://tryhackme.com/room/supplementalmemory"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/387d68a7-8bc3-476c-8c23-fc20467bc0ec"></p>
-
+<br>
+  
 <h2> Task 1 . Introduction</h2>
 
 <p>As a DFIR team member in this room, you are tasked with conducting a memory analysis of a Windows workstation image suspected to have been compromised by a threat actor.<br><br>
