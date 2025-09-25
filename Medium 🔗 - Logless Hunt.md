@@ -288,7 +288,7 @@ It is classified a medium-level walkthrough, , and you can join it for 🆓 usin
 <br>
 
 <h2>Task 8 . Conclusion</h2>
-<h3>/h3>.Conclusion</h3>
+<h3>Conclusion</h3>
 <p>And what was next? What did the adversary find in the Mimikatz dump? Was there any further lateral movement? Likely yes! But for now, let's return to the customer and see what they can say about the findings on HR01-SRV. Other servers have already recovered, and there will be much more work to do soon, perhaps without any logs at all!<br><br>
 
 In summary, in this room we covered:<br><br>
