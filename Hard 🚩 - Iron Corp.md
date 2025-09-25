@@ -1,4 +1,4 @@
-<h1 align="center">🛡️ Iron Corp</h1>
+<h1 align="center">Iron Corp</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
 2025, September 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>506</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
@@ -8,12 +8,12 @@ Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 
 <br>
 
-<p aling="center">Practice <strong>penetration testing</strong>
+<h3 align="center">Web Application Assessment</strong></h3>
 
 <div align="center"><h6>
 
 | **Cyber Kill Chain Phase** | **Tools Used**                                                                                          | **Actions Performed**                                                                                                     | **MITRE ATT&CK Technique (Name + ID)**                          |
-|:--------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
+|:--------------------------|:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------|
 | Reconnaissance             | `dig`, `nmap`, `rustscan`, `dirb`                                                                       | Domain enumeration, port scanning, content discovery                                                                      | File and Directory Discovery, T1083                             |
 | Weaponization              | Burp Suite Repeater                                                                                      | Crafted malicious HTTP GET payload                                                                                        | Exploitation for Client Execution, T1203                        |
 | Delivery                   | Burp Suite + FoxyProxy                                                                                   | Delivered payload via vulnerable web parameter (`name.php?name=...`)                                                     | Command and Scripting Interpreter: PowerShell, T1059.001        |
@@ -34,21 +34,8 @@ Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 </h6></div><br>
 
 
-<p>Practice <strong>penetration testing</strong>
-  
-- <strong>Domain Enumeration</strong>: dig<br>
-- <strong>Port Scanning</strong>: nmap, rustcan<br>
-- <strong>Content Discovery</strong>: dirb<br>
-- <strong>Password Guessing, T1110.001</strong>: hydra<br>
-- <strong>Network Sniffing, T1040</strong>: Burp Suite, FoxyProxy to intercept and inspect HTTP traffic to understand how the application behavior<br>
-- <strong>Command and Scripting Interpreter: PowerShell, - T1059.001</strong>: Burp Suite, FoxyProxy<br>
-- <strong>Exploitation for Client Execution, T1203</strong><br>
-- <strong>File and Directory Discovery, T1083</strong>: dir -force, ls -force to probe another user’s directory to enumerate contents<br>
-- <strong>Data from Local System, T1005</strong>:  accessed and exfiltrated sensitive data</p>
 
 <br>
-<br>
-
 <h1 align="center">Task 1 . Iron Corp</h1>
 <p align="center">Iron Corp suffered a security breach not long time ago.<br><br>
 You have been chosen by Iron Corp to conduct a penetration test of their asset. They did system hardening and are expecting you not to be able to access their system.<br><br>
