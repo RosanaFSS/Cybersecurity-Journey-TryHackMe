@@ -42,7 +42,7 @@ This room will demonstrate the Cowrie honeypot from the perspectives of an adver
 
 - IP - xx.xxx.xxx.xx<br>
 - User - root<br>
-- Password - <ANY><br><br>
+- Password - ANY<br><br>
 As you can see the emulated shell is pretty convincing and could catch an unprepared adversary off guard. Most of the commands work like how you'd expect, and the contents of the file system match what would be present on an empty Ubuntu 18.04 installation. However, there are ways to identify this type of Cowrie deployment. For example, it's not possible to execute bash scripts as this is a limitation of low and medium interaction honeypots. It's also possible to identify the default installation as it will mirror a Debian 5 Installation and features a user account named Phil. The default file system also references an outdated CPU.</p>
 
 <p><em>Answer the questions below</em></p>
