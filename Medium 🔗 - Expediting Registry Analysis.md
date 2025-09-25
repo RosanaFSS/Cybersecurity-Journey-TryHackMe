@@ -144,7 +144,7 @@ First, we can start with the <code>gkape.exe</code> executable, which we can fin
 <br>
 
 > 3.2. <em>What will be the contents of a _kape.cli file if we want to collect data from the C drive and save it to the D drive using the target RegistryHives?.</em><br><a id='3.2'></a>
->> <code><strong>____</strong></code>
+>> <code><strong>--tsource C: --tdest D:\ --target RegistryHives</strong></code>
 
 
 
