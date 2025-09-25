@@ -55,10 +55,6 @@ Access it <a href="https://tryhackme.com/room/networksecurityessentials">here</a
 <p>6.1. Examine the firewall logs.  Which IP address is performing the port scan?<br>
 <code>203.0.113.10</code></p>
 
-```bash
-$
-```
-
 <img width="911" height="78" alt="image" src="https://github.com/user-attachments/assets/b7fa8cd9-9d97-4737-b4e5-5479c991abe7" />
 
 <br>
