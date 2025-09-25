@@ -97,7 +97,7 @@ ubuntu@thm-vm:/var/log$ cat auth.log | grep sshd | grep -E 'Accepted'
 <p><em>Answer the questions below</em></p>
 
 <p>4.1. What is the path to the Python file the attacker attempted to open?<br>
-<code>What is the path to the Python file the attacker attempted to open?</code></p>
+<code>/opt/trypingme/main.py</code></p>
 
 ```bash
 $ grep -E 10.14.105.255 access.log
