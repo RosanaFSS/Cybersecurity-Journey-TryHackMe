@@ -6,6 +6,8 @@ and I’m excited to join you on this adventure, part of my <code>506</code>-day
 Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b7cf893f-e0ad-4b8e-9f53-46b54516f860"></p>
 
+ <a href="https://attack.mitre.org/techniques/T1040/">t1040</a>
+
 <br>
 
 <h3 align="center">Web Application Assessment</strong></h3>
@@ -14,7 +16,7 @@ Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 
 | **Cyber Kill<br>Chain Phase** | **Tools**                                                                                          | **Actions<br>**                                                                                                     | **MITRE ATT&CK<br>Technique**                          |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------|
-|Reconnaissance<br><br><br><br><br>|<p>- `dig`, `nmap`, `rustscan`, `dirb`<br><br><br>- `Burp Suite` +`FoxyProxy`<br><br></p>|<p>- Domain enumeration, port scanning, content discovery on ports 8080 and 11025<br><br>- Intercepted and inspected HTTP traffic to understand application behavior</p>|<p>- File and Directory Discovery, T1083<br><br><br>- Network Sniffing, T1040<br><br></p>|
+|Reconnaissance<br><br><br><br><br>|<p>- `dig`, `nmap`, `rustscan`, `dirb`<br><br><br>- `Burp Suite` +`FoxyProxy`<br><br></p>|<p>- Domain enumeration, port scanning, content discovery on ports 8080 and 11025<br><br>- Intercepted and inspected HTTP traffic to understand application behavior</p>|<p>- File and Directory Discovery, <a href="https://attack.mitre.org/techniques/T1083/">t1083</a><br><br><br>- Network Sniffing, <a href="https://attack.mitre.org/techniques/T1040/">t1040</a><br><br></p>|
 |Weaponization<br><br>    |- `Burp Suite` Repeater<br><br>                                                   |- Crafted malicious HTTP GET payload<br><br> | - Exploitation for Client Execution, T1203<br>  |
 |Delivery<br><br>         |- `Burp Suite` +`FoxyProxy`<br><br>                                                  |- Delivered payload via vulnerable web parameter (`name.php?name=...`)|- Command and Scripting Interpreter: PowerShell, T1059.001|
 |Exploitation<br><br><br><br><br>     |- `Burp Suite` Repeater<br><br>-`hydra` + `rockyou.txt`<br><br>-PowerShell (`whoami`)<br>                        |- Triggered PowerShell reverse shell<br><br>- Brute-forced password for `admin` account<br><br>- Identified current user context (`nt authority\system`)<br>|-Exploitation for Client Execution, T1203<br>- Password Guessing , T1110.001<br>- System Information Discovery, T1082|
