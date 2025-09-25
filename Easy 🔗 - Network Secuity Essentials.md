@@ -4,7 +4,8 @@
 and I’m excited to join you on this adventure, part of my <code>507</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Learn about key aspects of network security essentials and how to monitor and protect against adversaries</em>.<br>
 Access it <a href="https://tryhackme.com/room/networksecurityessentials">here</a>.<br>
-<img width="1200px" src=" "></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/6eb54ea1-8481-4b05-99e2-a7d7453f78b3"></p>
+
 
 <h2 align="center">Task 1 . Introduction</h2>
 <br>
@@ -105,9 +106,30 @@ $ grep 'AUTH' vpn_logs.txt | awk '{split($5,a,":"); ip=a[1]; match($0, /\(user '
 <p>7.1. Examine the firewall logs. What external IP performed the most reconnaissance?<br>
 <code>203.0.113.45</code></p>
 
+```bash
+index="network_logs"  alert="ET SCAN Possible Portscan" | sort +_time
+```
 
+<img width="1197" height="641" alt="image" src="https://github.com/user-attachments/assets/ea17d68a-e75e-4231-8df3-81ad0eb45ef8" />
+
+<br>
+<br>
+
+<img width="1192" height="754" alt="image" src="https://github.com/user-attachments/assets/c8c4daee-5dad-4c86-9cbf-d586f5bf2eeb" />
+
+<br>
+<br>
 <p>7.2. In the firewall log, Which internal host was targeted by scans?<br>
 <code>10.0.0.20</code></p>
+
+```bash
+index="network_logs"  alert="ET SCAN Possible Portscan" | sort +_time
+```
+
+<img width="1194" height="753" alt="image" src="https://github.com/user-attachments/assets/3110a2fa-b833-4454-91c7-e89e1dc12501" />
+
+<br>
+<br>
 
 ```bash
 index="network_logs"  src_ip=203.0.113.45 source="ids_alerts.json" alert="ET SCAN Possible Portscan"
@@ -185,6 +207,36 @@ index="network_logs"  source="ids_alerts.json"  classification="Potential Data E
 ```
 
 <img width="1192" height="706" alt="image" src="https://github.com/user-attachments/assets/1cbc8514-51b7-45b9-9e9a-ad7cb627d588" />
+
+<br>
+<br>
+<h2 align="center">Task 8 . Conclusion</h2>
+<p>In this room, you learned that an enterprise network is not just a collection of computers and servers. It’s an ecosystem with critical components like firewalls, Active Directory, application servers, file/database servers, endpoints, and wireless access points.<br>
+
+- The network perimeter acts as the boundary between trusted and untrusted networks.<br>
+- Attackers test this boundary constantly with port scans, brute-force attempts, and exploits against exposed services.<br>
+- Monitoring the perimeter allows SOC analysts to detect these early signs before attackers can move deeper into the network.<br><br>
+
+As a security analyst, our role is to:<br>
+
+ Recognize normal vs suspicious network traffic.<br>
+- Escalate unusual activity to higher SOC tiers.<br>
+- Understand how each network component fits into the bigger picture of enterprise defense.</p>
+
+<p><em>Answer the question below</em></p>
+
+<p>8.1.Complete the room.<br>
+<code>No answer needed</code></p>
+
+<br>
+<br>
+
+
+<img width="1910" height="884" alt="image" src="https://github.com/user-attachments/assets/2fe2e60d-a892-4214-896b-b76f6ce95a0a" />
+
+<img width="1904" height="893" alt="image" src="https://github.com/user-attachments/assets/f5b00d90-ca45-4562-95d4-1dc0bf24902e" />
+
+
 
 
 
