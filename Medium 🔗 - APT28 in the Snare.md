@@ -5,6 +5,8 @@ Continue learning about hardening: an easy-level walkthrough. It is Premium: onl
 
 <h1 align="center">Read my walkthrough in Medium clicking <a href="https://medium.com/@RosanaFS/apt28-in-the-snare-tryhackme-walkthrough-blue-team-advanced-persistent-threats-apts-ca5b1eafcb29"> APT28 in the Snare</a>.</h1>
 
+<br>
+
 
 <h1 align="center"> $$\textcolor{#3bd62d}{\textnormal{Room Completed}}$$</h1>
 <p align="center"> <img width="1000px" src="https://github.com/user-attachments/assets/bcc07be3-dc62-4f9b-b9c2-ec014810d8f7"><br>
