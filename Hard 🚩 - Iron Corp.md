@@ -1,10 +1,36 @@
-<h1 align="center">Iron Corp</h1>
+<h1 align="center">🛡️ Iron Corp</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
 2025, September 24<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>506</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Can you get access to Iron Corp's system</em>?<br>
 Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b7cf893f-e0ad-4b8e-9f53-46b54516f860"></p>
+
+
+
+<div align="center"><h6>
+
+| **Cyber Kill Chain Phase** | **Tools Used**                                                                                          | **Actions Performed**                                                                                                     | **MITRE ATT&CK Technique (Name + ID)**                          |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
+| Reconnaissance             | `dig`, `nmap`, `rustscan`, `dirb`                                                                       | Domain enumeration, port scanning, content discovery                                                                      | File and Directory Discovery – T1083                             |
+| Weaponization              | Burp Suite Repeater                                                                                      | Crafted malicious HTTP GET payload                                                                                        | Exploitation for Client Execution – T1203                        |
+| Delivery                   | Burp Suite + FoxyProxy                                                                                   | Delivered payload via vulnerable web parameter (`name.php?name=...`)                                                     | Command and Scripting Interpreter: PowerShell – T1059.001        |
+| Exploitation               | Burp Suite Repeater                                                                                      | Triggered PowerShell reverse shell                                                                                        | Exploitation for Client Execution – T1203                        |
+| Installation               | PowerShell, HTTP reverse shell                                                                          | Established shell access on target system                                                                                 | Command and Scripting Interpreter: PowerShell – T1059.001        |
+| Command & Control          | PowerShell TCP reverse shell                                                                            | Maintained remote access                                                                                                   | Application Layer Protocol: Web Protocols – T1071.001            |
+| Actions on Objectives      | PowerShell (`dir`, `ls`, `-force`), manual navigation                                                    | Enumerated directories, accessed hidden files, retrieved `user.txt`                                                       | Data from Local System – T1005                                   |
+| Reconnaissance             | Burp Suite + FoxyProxy                                                                                   | Intercepted and inspected HTTP traffic to understand application behavior                                                 | Network Sniffing – T1040                                         |
+| Credential Access          | Hydra + `rockyou.txt`                                                                                    | Brute-forced password for `admin` account                                                                                 | Password Guessing – T1110.001                                    |
+| Discovery                  | PowerShell (`dir`, `ls`, `-force`)                                                                       | Probed user directories including `Equinox`, `admin`, and `Administrator`                                                 | File and Directory Discovery – T1083                             |
+| Execution                  | PowerShell via HTTP GET                                                                                  | Executed reverse shell using `Invoke-PowerShellTcp.ps1`                                                                   | Command and Scripting Interpreter: PowerShell – T1059.001        |
+| Credential Access          | Hydra                                                                                                   | Attempted login via HTTP GET with multiple passwords                                                                      | Password Guessing – T1110.001                                    |
+| Reconnaissance             | `dirb`                                                                                                  | Discovered web content on ports 8080 and 11025                                                                            | File and Directory Discovery – T1083                             |
+| Discovery                  | PowerShell (`whoami`)                                                                                    | Identified current user context (`nt authority\system`)                                                                   | System Information Discovery – T1082                             |
+| Discovery                  | PowerShell (`dir`, `ls`)                                                                                 | Attempted access to `C:\Users\admin` and `C:\Users\Equinox`                                                               | File and Directory Discovery – T1083                             |
+| Collection                 | PowerShell (`type user.txt`)                                                                             | Retrieved flag from `C:\Users\Administrator\Desktop`                                                                      | Data from Local System – T1005                                   |
+
+</h6></div><br>
+
 
 <p>Practice <strong>penetration testing</strong>
   
