@@ -14,10 +14,8 @@ Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 
 | **Cyber Kill<br>Chain Phase** | **Tools**                                                                                          | **Actions<br>**                                                                                                     | **MITRE ATT&CK<br>Technique**                          |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------|
-|Reconnaissance<br><br><br><br><br><br>|`dig`, `nmap`, `rustscan`, `dirb`<br><br>`Burp Suite` +`FoxyProxy`|<p>
-
-- Domain enumeration, port scanning, content discovery on ports 8080 and 11025<br>
-- Intercepted and inspected HTTP traffic to understand application behavior</p>|File and Directory Discovery, T1083<br><br>Network Sniffing, T1040|
+|Reconnaissance<br><br><br><br><br><br>|`dig`, `nmap`, `rustscan`, `dirb`<br><br>`Burp Suite` +`FoxyProxy`|<p>- Domain enumeration, port scanning, content discovery on ports 8080 and 11025<br>
+- Intercepted and inspected HTTP traffic to understand application behavior</p>|<p>- File and Directory Discovery, T1083<br>- Network Sniffing, T1040|
 | Weaponization<br><br>    | `Burp Suite` Repeater<br>                                                   |Crafted malicious HTTP GET payload  | Exploitation for Client Execution, T1203  |
 | Delivery<br><br>      | `Burp Suite` +`FoxyProxy`<br>                                               |Delivered payload via vulnerable web parameter (`name.php?name=...`)                                                     | Command and Scripting Interpreter: PowerShell, T1059.001        |
 | Exploitation     |`Burp Suite` Repeater<br>`hydra` + `rockyou.txt`<br> PowerShell (`whoami`)<br>                        |Triggered PowerShell reverse shell<br>Brute-forced password for `admin` account<br>Identified current user context (`nt authority\system`)<br> | Exploitation for Client Execution, T1203<br>Password Guessing , T1110.001<br>System Information Discovery, T1082|
