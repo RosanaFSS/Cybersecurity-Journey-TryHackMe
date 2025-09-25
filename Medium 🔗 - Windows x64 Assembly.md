@@ -70,7 +70,7 @@ Access it <a href="https://tryhackme.com/room/win64assembly">here</a>.<br>
 
 <br>
 
-<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/fd99a885-3626-4f4c-9078-c4e772f217f1"><br>
+<p align="center">Global All Time:   109ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/fd99a885-3626-4f4c-9078-c4e772f217f1"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/96724426-c425-46cc-993b-db3284f03a88"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a470dbac-e484-41a2-82ae-747ad99b9037"><br>
                   Global monthly:    302ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/9a807860-b6c6-463a-8fde-e0f4e7447065"><br>
