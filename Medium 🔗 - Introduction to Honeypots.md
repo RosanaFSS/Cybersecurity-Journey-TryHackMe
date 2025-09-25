@@ -108,10 +108,9 @@ root@acmeweb:~#
 - IP - xx.xxx.xxx.xx<br>
 - Port - 1400<br>
 - User - demo<br>
-- Password - demo<br><br>
+- Password - demo</p>
 
-
-Cowrie can log to a variety of different local formats and log parsing suites. In this case, the installation is just using the JSON and text logs. I've installed the JSON parser jq on the demo machine to simplify log parsing.<br><br>
+<p>Cowrie can log to a variety of different local formats and log parsing suites. In this case, the installation is just using the JSON and text logs. I've installed the JSON parser jq on the demo machine to simplify log parsing.<br>
 
 Note: You may need to delete the demo machine's identity from .ssh/known_hosts as it will differ from the one used in the honeypot. You will also need to specify a port adding -p 1400 to the SSH command. The logs will also be found at /home/cowrie/honeypot/var/log/cowrie
 
@@ -580,13 +579,13 @@ demo@ip-xx-xxx-xxx-xx:~/Tunnelling$ cat Sample2.txt
 <p>I hope this room has demonstrated how interesting honeypots can be and how the data that we can collect from them can be used to gain insight into the operations of botnets and other malicious actors.</p>
 
 <h3 align="center">Extra Resources</h3>
-<p>I've included some extra resources to assist in learning more about honeypots below:
+<p>I've included some extra resources to assist in learning more about honeypots below:<br>
 
 - Awesome Honeypots - A curated list of honeypots<br>
 - Cowrie - The  SSH honeypot used in the demo<br>
-- Sending Cowrie Output to ELK - A good example of how to implement live log monitoring<br>
+- Sending Cowrie Output to ELK - A good example of how to implement live log monitoring</p>
 
-I would also recommend that you deploy a honeypot yourself as it's a great way to learn. Deploying a honeypot is also a great way to understand how to work with cloud providers since external honeypots are best when deployed to the cloud. ﻿Deploying and managing multiple honeypots is also an interesting challenge and a good way to gain practical experience with tools like Ansible.</p>
+<p>I would also recommend that you deploy a honeypot yourself as it's a great way to learn. Deploying a honeypot is also a great way to understand how to work with cloud providers since external honeypots are best when deployed to the cloud. ﻿Deploying and managing multiple honeypots is also an interesting challenge and a good way to gain practical experience with tools like Ansible.</p>
 
 <p><em>Answer the question below</em></p>
 
