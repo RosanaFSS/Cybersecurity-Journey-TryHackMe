@@ -8,9 +8,6 @@ Analyze a memory dump of a Windows host and uncover malicious processes. Access 
 <br>
 <br>
 
-
-
-
 <p>THe hashes are the same.</p>
 
 <br>
