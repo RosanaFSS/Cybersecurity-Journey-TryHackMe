@@ -163,7 +163,7 @@ ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ***
 <p>6.2.Which detection method can you use to detect a variety of Initial Access techniques?<br>
 <code>process tree analysis</code></p>
 
-<h2 align="center">Task 7 . Conclusion<h2>
+<h2 align="center">Task 7 . Conclusion</h2>h2>
 <p>Great job exploring the Initial Access techniques and an especially complex topic - the process tree analysis! While it may seem hard to apply, you will happily use it on a daily basis with some practice and a more convenient SIEM interface. Using the system log sources and auditd, you learned to identify how attacks start and are now ready to learn how they continue!</p>
 <h3>Key Takeways</h3>
 <p>
