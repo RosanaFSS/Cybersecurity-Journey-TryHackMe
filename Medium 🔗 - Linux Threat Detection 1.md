@@ -124,7 +124,7 @@ $ grep -E THM main.py
 <p><em>Answer the questions below</em></p>
 
 <p>5.1. What is the PPID of the suspicious whoami command?<br>
-<code>****</p>
+<code>****</code></p>
 
 ```bash
 ubuntu@thm-vm:/var/log/audit$ ausearch -i -x whoami
@@ -137,7 +137,7 @@ ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ****
 ```
 
 <p>5.2. Moving up the tree, what is the PID of the TryPingMe app?<br>
-<code>***</p>
+<code>***</code></p>
 
 ```bash
 ubuntu@thm-vm:/var/log/audit$ ausearch -p ****
@@ -146,7 +146,7 @@ type=SYSCALL msg=audit(1756238989.738:156): arch=c000003e syscall=59 success=yes
 ```
 
 <p>5.3. Which program did the attacker use to open a reverse shell?<br>
-<code>******</p>
+<code>******</code></p>
 
 ```bash
 ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ***
@@ -158,10 +158,10 @@ ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ***
 <p><em>Answer the questions below</em></p>
 
 <p>6.1. Which Initial Access technique is likely used if a trusted app suddenly runs malicious commands?<br>
-<code>Supply Chain Compromise</p>
+<code>Supply Chain Compromise</code></p>
 
 <p>6.2.Which detection method can you use to detect a variety of Initial Access techniques?<br>
-<code>process tree analysis</p>
+<code>process tree analysis</code></p>
 
 <h2 align="center">Task 7 . Conclusion<h2>
 <p>Great job exploring the Initial Access techniques and an especially complex topic - the process tree analysis! While it may seem hard to apply, you will happily use it on a daily basis with some practice and a more convenient SIEM interface. Using the system log sources and auditd, you learned to identify how attacks start and are now ready to learn how they continue!</p>
@@ -177,7 +177,7 @@ ubuntu@thm-vm:/var/log/audit$ ausearch -i --ppid ***
 <p><em>Answer the question below</em></p>
 
 <p>7.1. Let´s continue!<br>
-<code>No answer needed</p>
+<code>No answer needed</code></p>
 
 <br>
 <br>
