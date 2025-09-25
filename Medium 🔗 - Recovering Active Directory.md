@@ -5,6 +5,7 @@ Access it clicking <a href="https://tryhackme.com/room/recoveringactivedirectory
 <img width="80px" src="https://github.com/user-attachments/assets/a180eb09-b28c-4d55-95a2-7d4a94cc8368"><br><br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b2bf7e3e-a2c4-450f-b7fe-2c71b64e1a29"></p>
 
+
 <br>
 <h2>Task 1 . Introduction</h2>
 <p>We learned basic concepts on implementing group policies and the least privilege model in the previous room (Active Directory Hardening).<br>
