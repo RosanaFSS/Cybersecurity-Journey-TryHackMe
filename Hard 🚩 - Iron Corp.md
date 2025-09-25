@@ -6,7 +6,7 @@ and I’m excited to join you on this adventure, part of my <code>506</code>-day
 Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b7cf893f-e0ad-4b8e-9f53-46b54516f860"></p>
 
- <a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>
+ <a href="https://attack.mitre.org/techniques/T1082/">T1082</a>
 
 <br>
 
@@ -19,10 +19,10 @@ Access it <a href=https://tryhackme.com/room/ironcorp">here</a>.<br>
 |Reconnaissance<br><br><br><br><br>|<p>- `dig`, `nmap`, `rustscan`, `dirb`<br><br><br>- `Burp Suite` +`FoxyProxy`<br><br></p>|<p>- Domain enumeration, port scanning, content discovery on ports 8080 and 11025<br><br>- Intercepted and inspected HTTP traffic to understand application behavior</p>|<p>- File and Directory Discovery, <a href="https://attack.mitre.org/techniques/T1083/">T1083</a><br><br><br>- Network Sniffing, <a href="https://attack.mitre.org/techniques/T1040/">T1040</a><br><br></p>|
 |Weaponization<br><br>    |- `Burp Suite` Repeater<br><br>                                                   |- Crafted malicious HTTP GET payload<br><br> | - Exploitation for Client Execution, <a href="https://attack.mitre.org/techniques/T1203/">T1203</a><br>  |
 |Delivery<br><br>         |- `Burp Suite` +`FoxyProxy`<br><br>                                                  |- Delivered payload via vulnerable web parameter (`name.php?name=...`)|- Command and Scripting Interpreter: PowerShell, <a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>|
-|Exploitation<br><br><br><br><br>     |- `Burp Suite` Repeater<br><br>-`hydra` + `rockyou.txt`<br><br>-PowerShell (`whoami`)<br>                        |- Triggered PowerShell reverse shell<br><br>- Brute-forced password for `admin` account<br><br>- Identified current user context (`nt authority\system`)<br>|-Exploitation for Client Execution, T1203<br>- Password Guessing , T1110.001<br>- System Information Discovery, T1082|
-|Installation<br><br>    |- PowerShell, HTTP reverse shell<br><br>                                          |- Established shell access on target system<br><br>          |- Command and Scripting Interpreter: PowerShell, T1059.001|
-|Command &<br>Control (C2)<br><br><br><br>|- PowerShell TCP reverse shell<br>PowerShell (`dir`, `ls`)<br><br><br><br>|- Executed reverse shell using `Invoke-PowerShellTcp.ps1` and maintained remote access<br><br>- Attempted access to `C:\Users\admin` and `C:\Users\Equinox`                            |- Application Layer Protocol: Web Protocols, T1071.001<br><br>- File and Directory Discovery, T1083<br><br> |
-|Actions on<br>Objectives<br><br><br><br>|- PowerShell (`dir`, `ls`, `-force`), manual navigation<br><br><br><br>              |- Enumerated directories, accessed hidden files, retrieved `user.txt`<br><br>- Probed user directories including `Equinox`, `admin`, and `Administrator`|- Data from Local System, T1005<br><br><br><br><br>|
+|Exploitation<br><br><br><br><br>     |- `Burp Suite` Repeater<br><br>-`hydra` + `rockyou.txt`<br><br>-PowerShell (`whoami`)<br>                        |- Triggered PowerShell reverse shell<br><br>- Brute-forced password for `admin` account<br><br>- Identified current user context (`nt authority\system`)<br>|-Exploitation for Client Execution, T1203<br>- Password Guessing , T1110.001<br>- System Information Discovery,  <a href="https://attack.mitre.org/techniques/T1082/">T1082</a>|
+|Installation<br><br>    |- PowerShell, HTTP reverse shell<br><br>                                          |- Established shell access on target system<br><br>          |- Command and Scripting Interpreter: PowerShell, <a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>|
+|Command &<br>Control (C2)<br><br><br><br>|- PowerShell TCP reverse shell<br>PowerShell (`dir`, `ls`)<br><br><br><br>|- Executed reverse shell using `Invoke-PowerShellTcp.ps1` and maintained remote access<br><br>- Attempted access to `C:\Users\admin` and `C:\Users\Equinox`                            |- Application Layer Protocol: Web Protocols, T1071.001<br><br>- File and Directory Discovery, <a href="https://attack.mitre.org/techniques/T1083/">T1083</a><br><br> |
+|Actions on<br>Objectives<br><br><br><br>|- PowerShell (`dir`, `ls`, `-force`), manual navigation<br><br><br><br>              |- Enumerated directories, accessed hidden files, retrieved `user.txt`<br><br>- Probed user directories including `Equinox`, `admin`, and `Administrator`|- Data from Local System, <a href="https://attack.mitre.org/techniques/T1005/">T1005</a><br><br><br><br><br>|
 
 </h6></div><br>
 
