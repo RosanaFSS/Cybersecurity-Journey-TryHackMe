@@ -10,7 +10,7 @@ Access it <a href="https://tryhackme.com/room/sequence">here</a>.<br>
 
 
 ```bash
-:~/Sequence# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
+:~/Sequence# nmap -sC -sV -Pn -p- xx.xxx.xx.xx
 ...
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
@@ -20,94 +20,110 @@ PORT   STATE SERVICE VERSION
 |     PHPSESSID: 
 |_      httponly flag not set
 |_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Review Shopclear
-
+|_http-title: Review Shop
 ```
 
 <h2 align="center">/etc/hosts</h2>
 
 ```bash
-xx.xxx.xx.xx reviewshop.thm
+:~/Sequence# nikto -h http://review.thm
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.91.178
++ Target Hostname:    review.thm
++ Target Port:        80
++ Start Time:         2025-09-26 19:24:49 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.41 (Ubuntu)
++ Cookie PHPSESSID created without the httponly flag
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ OSVDB-3268: /mail/: Directory indexing found.
++ OSVDB-3092: /mail/: This might be interesting...
++ Cookie phpMyAdmin created without the httponly flag
++ Cookie goto created without the httponly flag
++ Cookie back created without the httponly flag
++ Cookie pma_lang created without the httponly flag
++ Uncommon header 'referrer-policy' found, with contents: no-referrer
++ Uncommon header 'x-robots-tag' found, with contents: noindex, nofollow
++ Uncommon header 'x-frame-options' found, with contents: DENY
++ Uncommon header 'x-content-security-policy' found, with contents: default-src 'self' ;options inline-script eval-script;referrer no-referrer;img-src 'self' data:  *.tile.openstreetmap.org;object-src 'none';
++ Uncommon header 'x-webkit-csp' found, with contents: default-src 'self' ;script-src 'self'  'unsafe-inline' 'unsafe-eval';referrer no-referrer;style-src 'self' 'unsafe-inline' ;img-src 'self' data:  *.tile.openstreetmap.org;object-src 'none';
++ Uncommon header 'x-permitted-cross-domain-policies' found, with contents: none
++ Uncommon header 'x-ob_mode' found, with contents: 1
++ Uncommon header 'x-content-type-options' found, with contents: nosniff
++ Uncommon header 'content-security-policy' found, with contents: default-src 'self' ;script-src 'self' 'unsafe-inline' 'unsafe-eval' ;style-src 'self' 'unsafe-inline' ;img-src 'self' data:  *.tile.openstreetmap.org;object-src 'none';
++ Uncommon header 'x-xss-protection' found, with contents: 1; mode=block
++ OSVDB-3093: /db.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ /login.php: Admin login page/section found.
++ /phpmyadmin/: phpMyAdmin directory found
++ 6544 items checked: 0 error(s) and 22 item(s) reported on remote host
++ End Time:           2025-09-26 19:24:57 (GMT1) (8 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+```
+
+<h2 align="center">nikto</h2>
+
+```bash
+xx.xxx.xx.xx review.thm
 ```
 
 <h2 align="center">gobuster</h2>
 
-```bash
-:~/Sequence# gobuster dir -u http://reviewshop.thm -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -x php,txt,js,html -q -k -e -t 60
-http://reviewshop.thm/.php                 (Status: 403) [Size: 279]
-http://reviewshop.thm/.html                (Status: 403) [Size: 279]
-http://reviewshop.thm/index.php            (Status: 200) [Size: 1694]
-http://reviewshop.thm/contact.php          (Status: 200) [Size: 2246]
-http://reviewshop.thm/new.html             (Status: 200) [Size: 562]
-http://reviewshop.thm/login.php            (Status: 200) [Size: 1944]
-http://reviewshop.thm/uploads              (Status: 301) [Size: 318] [--> http://reviewshop.thm/uploads/]
-http://reviewshop.thm/header.php           (Status: 200) [Size: 1400]
-http://reviewshop.thm/mail                 (Status: 301) [Size: 315] [--> http://reviewshop.thm/mail/]
-http://reviewshop.thm/chat.php             (Status: 302) [Size: 0] [--> login.php]
-http://reviewshop.thm/db.php               (Status: 200) [Size: 0]
-http://reviewshop.thm/javascript           (Status: 301) [Size: 321] [--> http://reviewshop.thm/javascript/]
-http://reviewshop.thm/logout.php           (Status: 302) [Size: 0] [--> index.php]
-http://reviewshop.thm/settings.php         (Status: 302) [Size: 0] [--> login.php]
-http://reviewshop.thm/dashboard.php        (Status: 302) [Size: 1400] [--> login.php]
-http://reviewshop.thm/phpmyadmin           (Status: 301) [Size: 321] [--> http://reviewshop.thm/phpmyadmin/]
-http://reviewshop.thm/.html                (Status: 403) [Size: 279]
-http://reviewshop.thm/.php                 (Status: 403) [Size: 279]
-http://reviewshop.thm/server-status        (Status: 403) [Size: 279]
-```
-
-<img width="1176" height="345" alt="image" src="https://github.com/user-attachments/assets/e410747d-2a53-4882-903e-5840a0176a20" />
-
 
 ```bash
-:~/Sequence# gobuster dir -u http://reviewshop.thm -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -x php -t 60
-
+:~/Sequence# gobuster dir -u http://review.thm/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -k -e -t 60
 ...
-/index.php            (Status: 200) [Size: 1694]
-/contact.php          (Status: 200) [Size: 2246]
-/login.php            (Status: 200) [Size: 1944]
-/uploads              (Status: 301) [Size: 318] [--> http://reviewshop.thm/uploads/]
-/header.php           (Status: 200) [Size: 1400]
-/mail                 (Status: 301) [Size: 315] [--> http://reviewshop.thm/mail/]
-/chat.php             (Status: 302) [Size: 0] [--> login.php]
-/db.php               (Status: 200) [Size: 0]
-/javascript           (Status: 301) [Size: 321] [--> http://reviewshop.thm/javascript/]
-/logout.php           (Status: 302) [Size: 0] [--> index.php]
-/settings.php         (Status: 302) [Size: 0] [--> login.php]
-/dashboard.php        (Status: 302) [Size: 1400] [--> login.php]
-/phpmyadmin           (Status: 301) [Size: 321] [--> http://reviewshop.thm/phpmyadmin/]
-/.php                 (Status: 403) [Size: 279]
-/server-status        (Status: 403) [Size: 279]
-Progress: 415286 / 415288 (100.00%)
-===============================================================
-Finished
-===============================================================
+http://review.thm/index.php            (Status: 200) [Size: 1694]
+http://review.thm/javascript           (Status: 301) [Size: 313] [--> http://review.thm/javascript/]
+...
+http://review.thm/mail                 (Status: 301) [Size: 307] [--> http://review.thm/mail/]
+...
+http://review.thm/phpmyadmin           (Status: 301) [Size: 313] [--> http://review.thm/phpmyadmin/]
+http://review.thm/server-status        (Status: 403) [Size: 275]
+http://review.thm/uploads              (Status: 301) [Size: 310] [--> http://review.thm/uploads/]
 ```
 
 ```bash
-:~/Sequence# ffuf -u 'http://reviewshop.thm/FUZZ' -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -mc all -t 100 -fc 403,404 -e .php -ic
+:~/Sequence# gobuster dir -u http://review.thm/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -x php,html -k -e -t 60
+...
+http://review.thm/chat.php             (Status: 302) [Size: 0] [--> login.php]
+http://review.thm/contact.php          (Status: 200) [Size: 2246]
+http://review.thm/dashboard.php        (Status: 302) [Size: 1400] [--> login.php]
+http://review.thm/db.php               (Status: 200) [Size: 0]
+http://review.thm/header.php           (Status: 200) [Size: 1400]
+http://review.thm/index.php            (Status: 200) [Size: 1694]
+http://review.thm/index.php            (Status: 200) [Size: 1694]
+http://review.thm/javascript           (Status: 301) [Size: 313] [--> http://review.thm/javascript/]
+http://review.thm/logout.php           (Status: 302) [Size: 0] [--> index.php]
+http://review.thm/login.php            (Status: 200) [Size: 1944]
+http://review.thm/mail                 (Status: 301) [Size: 307] [--> http://review.thm/mail/]
+http://review.thm/new.html             (Status: 200) [Size: 562]
+http://review.thm/phpmyadmin           (Status: 301) [Size: 313] [--> http://review.thm/phpmyadmin/]
+http://review.thm/server-status        (Status: 403) [Size: 275]
+http://review.thm/settings.php         (Status: 302) [Size: 0] [--> login.php]
+http://review.thm/uploads              (Status: 301) [Size: 310] [--> http://review.thm/uploads/]
+```
 
-        /'___\  /'___\           /'___\       
-       /\ \__/ /\ \__/  __  __  /\ \__/       
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
-         \ \_\   \ \_\  \ \____/  \ \_\       
-          \/_/    \/_/   \/___/    \/_/       
+```bash
+:~/Sequence# gobuster dir -u http://review.thm/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -k -e -t 60
+...
+http://review.thm/uploads              (Status: 301) [Size: 310] [--> http://review.thm/uploads/]
+http://review.thm/mail                 (Status: 301) [Size: 307] [--> http://review.thm/mail/]
+http://review.thm/javascript           (Status: 301) [Size: 313] [--> http://review.thm/javascript/]
+http://review.thm/phpmyadmin           (Status: 301) [Size: 313] [--> http://review.thm/phpmyadmin/]
+http://review.thm/server-status        (Status: 403) [Size: 275]
+Progress: 220560 / 220561 (100.00%)
+```
 
-       v1.3.1
-________________________________________________
+<h2 align="center">ffuf</h2>
 
- :: Method           : GET
- :: URL              : http://reviewshop.thm/FUZZ
- :: Wordlist         : FUZZ: /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt
- :: Extensions       : .php 
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 100
- :: Matcher          : Response status: all
- :: Filter           : Response status: 403,404
-________________________________________________
-
+```bash
+:~/Sequence# ffuf -u 'http://review.thm/FUZZ' -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt -mc all -t 100 -fc 403,404 -e .php -ic
+...
 contact.php             [Status: 200, Size: 2246, Words: 388, Lines: 87]
                         [Status: 200, Size: 1694, Words: 234, Lines: 69]
 index.php               [Status: 200, Size: 1694, Words: 234, Lines: 69]
@@ -123,13 +139,142 @@ settings.php            [Status: 302, Size: 0, Words: 1, Lines: 1]
 dashboard.php           [Status: 302, Size: 1400, Words: 204, Lines: 60]
 phpmyadmin              [Status: 301, Size: 321, Words: 20, Lines: 10]
                         [Status: 200, Size: 1694, Words: 234, Lines: 69]
-:: Progress: [415260/415260] :: Job [1/1] :: 9623 req/sec :: Duration: [0:00:33] :: Errors: 0 ::
+```
 
+<h2 align="center">dirbuster</h2>
+
+```bash
+:~/Sequence# dirsearch -u http://review.thm/ -r -x 401,402,403,404
+
+  _|. _ _  _  _  _ _|_    v0.4.3.post1
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: /root/Sequence/reports/http_review.thm/__25-09-26_xx-xx-xx.txt
+
+Target: http://review.thm/
+
+[xx:xx:xx] Starting: 
+[xx:xx:xx] 302 -    0B  - /chat.php  ->  login.php
+[xx:xx:xx] 200 -  764B  - /contact.php
+[xx:xx:xx] 302 -    1KB - /dashboard.php  ->  login.php
+[xx:xx:xx] 200 -    0B  - /db.php
+[xx:xx:xx] 200 -  576B  - /header.php
+[xx:xx:xx] 301 -  313B  - /javascript  ->  http://review.thm/javascript/
+Added to the queue: javascript/
+[xx:xx:xx] 200 -  747B  - /login.php
+[xx:xx:xx] 302 -    0B  - /logout.php  ->  index.php
+[xx:xx:xx] 200 -  450B  - /mail/
+Added to the queue: mail/
+[xx:xx:xx] 301 -  307B  - /mail  ->  http://review.thm/mail/
+[xx:xx:xx] 200 -  357B  - /new.html
+[xx:xx:xx] 301 -  313B  - /phpmyadmin  ->  http://review.thm/phpmyadmin/
+Added to the queue: phpmyadmin/
+[xx:xx:xx] 200 -    3KB - /phpmyadmin/doc/html/index.html
+[xx:xx:xx] 200 -    3KB - /phpmyadmin/
+[xx:xx:xx] 200 -    3KB - /phpmyadmin/index.php
+[xx:xx:xx] 302 -    0B  - /settings.php  ->  login.php
+[xx:xx:xx] 301 -  310B  - /uploads  ->  http://review.thm/uploads/
+Added to the queue: uploads/
+[xx:xx:xx] 200 -  403B  - /uploads/
+
+[xx:xx:xx] Starting: javascript/
+
+[xx:xx:xx] Starting: mail/
+[xx:xx:xx] 200 -  442B  - /mail/dump.txt
+
+[xx:xx:xx] Starting: phpmyadmin/
+[xx:xx:xx] 301 -  316B  - /phpmyadmin/js  ->  http://review.thm/phpmyadmin/js/
+Added to the queue: phpmyadmin/js/
+[xx:xx:xx] 301 -  317B  - /phpmyadmin/doc  ->  http://review.thm/phpmyadmin/doc/
+Added to the queue: phpmyadmin/doc/
+[xx:xx:xx] 200 -   22KB - /phpmyadmin/favicon.ico
+[xx:xx:xx] 200 -    7KB - /phpmyadmin/js/config.js
+[xx:xx:xx] 301 -  317B  - /phpmyadmin/sql  ->  http://review.thm/phpmyadmin/sql/
+Added to the queue: phpmyadmin/sql/
+[xx:xx:xx] 301 -  320B  - /phpmyadmin/themes  ->  http://review.thm/phpmyadmin/themes/
+Added to the queue: phpmyadmin/themes/
+
+[xx:xx:xx] Starting: uploads/
+
+[xx:xx:xx] Starting: phpmyadmin/js/
+[xx:xx:xx] 200 -    5KB - /phpmyadmin/js/common.js
+[xx:xx:xx] 200 -    6KB - /phpmyadmin/js/export.js
+[xx:xx:xx] 200 -    9KB - /phpmyadmin/js/sql.js
+
+[xx:xx:xx] Starting: phpmyadmin/doc/
+xx:xx:xx] 301 -  322B  - /phpmyadmin/doc/html  ->  http://review.thm/phpmyadmin/doc/html/
+Added to the queue: phpmyadmin/doc/html/
+
+[xx:xx:xx] Starting: phpmyadmin/sql/
+
+[xx:xx:xx] Starting: phpmyadmin/themes/
+
+[xx:xx:xx] Starting: phpmyadmin/doc/html/
+[xx:xx:xx] 200 -   44KB - /phpmyadmin/doc/html/config.html
+[xx:xx:xx] 200 -   48KB - /phpmyadmin/doc/html/faq.html
+[xx:xx:xx] 200 -    1KB - /phpmyadmin/doc/html/search.html
+[xx:xx:xx] 200 -    2KB - /phpmyadmin/doc/html/settings.html
+[xx:xx:xx] 200 -    2KB - /phpmyadmin/doc/html/user.html
+
+Task Completed
 ```
 
 
+<h2 align="center">review.thm</h2>
+
+<img width="1125" height="346" alt="image" src="https://github.com/user-attachments/assets/63bd0e1d-e97b-419b-a19b-0503fce19673" />
+
+<br>
+<br>
+
+<h2 align="center">review.thm/login.php</h2>
+
+<img width="1128" height="407" alt="image" src="https://github.com/user-attachments/assets/35b96393-88ff-4afb-8fd1-ff1cd44fe9d8" />
+
+<br>
+<br>
+<h2 align="center">review.thm/contact.php</h2>
+
+<img width="1131" height="497" alt="image" src="https://github.com/user-attachments/assets/3bc9a528-955e-407c-b4a0-8088223ced95" />
+
+<br>
+<br>
+<h2 align="center">review.thm/new.html</h2>
+
+<img width="1127" height="190" alt="image" src="https://github.com/user-attachments/assets/038282a4-c0a4-4d18-8eec-3f74a944aed6" />
+
+<br>
+<br>
+<h2 align="center">review.thm/phpmyadmin/index.php</h2>
+
+<img width="1129" height="487" alt="image" src="https://github.com/user-attachments/assets/ba1075b5-10b4-4fb0-8e8d-54b924fb9628" />
+
+<br>
+<br>
+
+<h2 align="center">review.thm/phpmyadmin/doc/html/index.html</h2>
+<p>
+
+- phpMyAdmin 4.9.5</p>
+
+<img width="1120" height="183" alt="image" src="https://github.com/user-attachments/assets/68d09a8a-a664-458c-9e44-29014d01bc1b" />
+
+
+<br>
+<br>
+<h2 align="center">review.thm/mail/dump.txt</h2>
+<p>
+
+- software@review.thm<br>
+- product@review.thm<br>
+- Finance panel = /finance.php<br>
+- Lottery panel = /lottery.php<br>
+- completed 8-characer alphanumeric password = (S60u}f5j)<br>
+- Robert</p>
+
 ```bash
-:~/Sequence# curl -s 'http://reviewshop.thm/mail/dump.txt'
 From: software@review.thm
 To: product@review.thm
 Subject: Update on Code and Feature Deployment
@@ -146,13 +291,18 @@ I will be away on holiday but will be back soon.
 
 Regards,  
 Robert
-
-
 ```
 
+<h2 align="center">review.thm/uploads/</h2>
 
-finance.php
-lottery.php(S60u}f5j)
+<img width="1127" height="313" alt="image" src="https://github.com/user-attachments/assets/fe9482f5-a406-4c60-b9e7-fc9088c9af5e" />
+
+
+
+<p>
+        
+- finance.php<br>
+- lottery.php(S60u}f5j)</p>
 
 <img width="1115" height="305" alt="image" src="https://github.com/user-attachments/assets/063c4453-6b0f-435c-99a1-ecaeaf943a9d" />
 
