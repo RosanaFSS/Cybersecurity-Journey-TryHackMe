@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src=""><br>
 2025, September 18<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>500</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em>Chain multiple vulnerabilities to take control of a system.<br>
+<em>Chain multiple vulnerabilities to take control of a system</em>.<br>
 Access it <a href="https://tryhackme.com/room/sequence">here</a>.<br>
 <img width="1200px" src=""></p>
 
@@ -299,10 +299,22 @@ Robert
 
 
 
-<p>
-        
-- finance.php<br>
-- lottery.php(S60u}f5j)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <img width="1115" height="305" alt="image" src="https://github.com/user-attachments/assets/063c4453-6b0f-435c-99a1-ecaeaf943a9d" />
 
