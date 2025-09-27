@@ -320,8 +320,7 @@ with open("exploit.pickle", "wb") as f:
 - refresh<br>
 - click <code>Upload your file</code><br>
 - set up a listener in the same port considered in the payload<br>
-- click <code>Reverse the Database Anonymization</code><br>
-- </p>
+- click <code>Reverse the Database Anonymization</code></p>
 
 <br>
 <br>
@@ -341,6 +340,12 @@ with open("exploit.pickle", "wb") as f:
 
 <br>
 <br>
+
+<img width="678" height="510" alt="image" src="https://github.com/user-attachments/assets/09dfcb23-457d-43ab-8794-fd96cf7a4418" />
+
+<br>
+<br>
+
 
 <img width="1233" height="310" alt="image" src="https://github.com/user-attachments/assets/e95a2099-3296-4acd-8466-c015f89f6e2f" />
 
