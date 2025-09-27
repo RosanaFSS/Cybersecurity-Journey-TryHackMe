@@ -118,7 +118,9 @@ Task Completed
 <br>
 
 <h2 align="center">index.php</h2>
-<p align="center">containme.thm/index.php<br>directory listing<br><em>--  where is the <code>path</code> ?  --</em><br>recalled nikto´s output<br></p>
+<p align="center">containme.thm/index.php<br>directory listing<br>Identified<em>--  where is the <code>path</code> ?  --</em> in Burp Suite<br>recalled nikto´s output<br></p>
+
+<img width="1128" height="223" alt="Screenshot 2025-09-26 191541" src="https://github.com/user-attachments/assets/00949f40-7b7b-415e-8ac5-b5a44ea3db5b" />
 
 <br>
 <br>
@@ -141,7 +143,7 @@ path                           [Status: 200, Size: 1240, Words: 328, Lines: 34]
 <h2 align="center">hostname</h2>
 <p align="center">containme.thm/index.php?<code>path</code>=/hostname<br>host1</p>
 
-<img width="1130" height="343" alt="image" src="https://github.com/user-attachments/assets/b8cdca21-272f-496c-abac-8571e2c6243d" />
+<img width="1130" height="299" alt="Screenshot 2025-09-26 194828" src="https://github.com/user-attachments/assets/e756f61a-294b-4896-a8c0-aae361368bdf" />
 
 <br>
 <br>
@@ -238,13 +240,20 @@ find / -perm -4000 -ls 2>/dev/null
 www-data@host1:/var/www/html$ /usr/share/man/zh_TW/crypt
 ```
 
+<br>
+
 ```bash
 www-data@host1:/usr/share/man/zh_TW$ ./crypt -h
 ```
 
+<br>
+
 ```bash
 www-data@host1:/usr/share/man/zh_TW$ ./crypt mike
 ```
+
+<br>
+<br>
 
 <img width="1113" height="497" alt="image" src="https://github.com/user-attachments/assets/f38c6907-e348-42e1-a113-86f4c6837922" />
 
