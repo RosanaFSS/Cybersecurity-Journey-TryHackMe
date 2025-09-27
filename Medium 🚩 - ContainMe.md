@@ -105,8 +105,6 @@ Added to the queue: index.php/login/
 Task Completed
 ```
 
-<img width="1128" height="223" alt="image" src="https://github.com/user-attachments/assets/c6a6a353-9a91-451e-af56-9e46bdd979ca" />
-
 <br>
 <br>
 <h2 align="center">info.php</h2>
@@ -247,25 +245,25 @@ www-data@host1:/usr/share/man/zh_TW$ ./crypt -h
 ```
 
 <br>
-
-```bash
-www-data@host1:/usr/share/man/zh_TW$ ./crypt mike
-```
-
-<br>
 <br>
 
 <img width="1113" height="497" alt="image" src="https://github.com/user-attachments/assets/f38c6907-e348-42e1-a113-86f4c6837922" />
 
 <br>
 <br>
+<br>
+
+<h2 align="center">Vertical Privilege Escalation<br>Shell as root in host 1</h2>
+
+```bash
+www-data@host1:/usr/share/man/zh_TW$ ./crypt mike
+```
 
 <img width="1110" height="370" alt="image" src="https://github.com/user-attachments/assets/8896ba87-9b05-4541-9c81-16321fc124d0" />
 
 <br>
 <br>
-<h2 align="center">Vertical Privilege Escalation<br>Shell as root in host 1</h2>
-
+<br>
 <h2 align="center">Network Interface Configuration</h2>
 <p align="center"><strong>eth1</strong> (xxx.xx.xx.⚪) is different from the IP of host 1.</p>
 
