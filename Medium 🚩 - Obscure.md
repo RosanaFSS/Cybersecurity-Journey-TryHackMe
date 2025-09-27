@@ -363,6 +363,9 @@ with open("exploit.pickle", "wb") as f:
 
 <br>
 <br>
+
+<img width="680" height="453" alt="image" src="https://github.com/user-attachments/assets/84a7db0a-3868-41c4-a073-3724655b62ed" />
+
 <br>
 <br>
 <br>
