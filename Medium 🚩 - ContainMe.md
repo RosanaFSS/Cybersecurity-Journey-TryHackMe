@@ -16,7 +16,7 @@ Access it <a href="https://tryhackme.com/room/containme1">here</a>.<br>
 <code>No answer needed</code></p>
 
 <br>
-<h1 align="center">Task 2 . Find the one </h1>
+<h1 align="center">Task 2 . Find the one and only flag</h1>
 
 <p>Please deploy the target machine and wait 2-5 minutes for everything to start on the target machine.<br>
 
