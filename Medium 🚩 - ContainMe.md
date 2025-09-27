@@ -79,7 +79,7 @@ PORT     STATE SERVICE       VERSION
 xx.xxx.xx.xxx containme.thm
 ```
 
-<h2 align="center">Directory and File Enumeration/h2>
+<h2 align="center">Directory and File Enumeration</h2>
 <p align="center"><code>/index.php</code><br><code>/index.php/login/</code><br><code>/info.php</code></p>
 
 ```bash
