@@ -1,4 +1,4 @@
-<h1 align="center"Windows PrivEsc Arena</h1>
+<h1 align="center">Windows PrivEsc Arena</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/2aa90eb0-ddef-4a78-bd1e-35f113e0c47a"><br>
 2025, September 28<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>510</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
