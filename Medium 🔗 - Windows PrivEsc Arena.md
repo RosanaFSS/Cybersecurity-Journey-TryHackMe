@@ -110,7 +110,6 @@ C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Aut
 <br>
 <br>
 
-<img width="582" height="237" alt="image" src="https://github.com/user-attachments/assets/276b4e33-1152-41ea-a83d-8fcb9b516398" />
 
 <br>
 <br>
