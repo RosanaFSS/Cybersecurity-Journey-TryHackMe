@@ -1,7 +1,7 @@
 <h1 align="center">Backtrack</h1>
 <p align="center"><img width="80px" src=""https://github.com/user-attachments/assets/f16e3c98-b80c-43c9-87a8-eef325cab742"><br>
-2025, September 11<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>493</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+2025, September 27<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>509</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Daring to set foot where no one has</em>.<br>
 Access it <a href="https://tryhackme.com/room/backtrack"</a>here.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/e2bd0d98-5d3e-4405-bac7-2aac30c9f1db"></p>
