@@ -45,15 +45,13 @@ apt install rdesktop
 rdesktop -u user -p "password321" 10.201.56.185 -g 90%
 ```
 
-rdesktop -u user -p "password321" 10.201.56.185 -g 90%
-
 <br>
 <br>
 
 <p>2.2. Open a command prompt and run 'net user'. Who is the other non-default user on the machine?<br>
 <code>tcp</code></p>
 
-<img width="519" height="181" alt="image" src="https://github.com/user-attachments/assets/d27f5c34-b481-45cb-948b-dfd805d62014" />
+<img width="963" height="163" alt="image" src="https://github.com/user-attachments/assets/724c1cdf-c46d-48d9-ab1c-ee8b0e09bf64" />
 
 
 <br>
@@ -96,35 +94,29 @@ Kali VM<br>
 <p>3.1. Click 'Completed' once you have successfully elevated the machine<br>
 <code>No answer needed</code></p>
 
-<p aling="center">Detection</p>
+<p align="center">Detection</p>
 
 ```bash
 C:\Users\User\Desktop\Tools\Autoruns\Autoruns64.exe
 ```
 
-<img width="499" height="286" alt="image" src="https://github.com/user-attachments/assets/6e8cb805-b40b-4372-8130-90bcde71ce85" />
-
-<br>
-<br>
-
-<img width="569" height="226" alt="image" src="https://github.com/user-attachments/assets/c6034772-6f6e-4f68-a2ee-381de30b7a73" />
-
-<br>
-<br>
-
-<img width="569" height="243" alt="image" src="https://github.com/user-attachments/assets/bf90288e-9847-49ca-a447-088f024cb321" />
-
-<br>
-<br>
-
 ```bash
 C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Autorun Program"
 ```
+
+
+<img width="1150" height="530" alt="image" src="https://github.com/user-attachments/assets/951f1867-2488-4935-b7e8-c69b6d7594b6" />
+
+<br>
+<br>
 
 <img width="582" height="237" alt="image" src="https://github.com/user-attachments/assets/276b4e33-1152-41ea-a83d-8fcb9b516398" />
 
 <br>
 <br>
+
+<img width="1064" height="180" alt="image" src="https://github.com/user-attachments/assets/09b2df8b-35ce-4873-a89f-b61c1b8d334d" />
+
 
 <p aling="center">Exploitation</p>
 
