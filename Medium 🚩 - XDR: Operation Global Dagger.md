@@ -33,7 +33,7 @@ Access it <a href="https://tryhackme.com/room/xdroperationglobaldagger"</a>here.
 <h2 align="center">Task 2 . <code>Investigate</code> Operation Global Dagger 1</h2>
 <p></p>Login to the Defender XDR portal with the credentials below, then navigate to <code>Incidents & alerts -> Incidents</code> to start your investigation.</p>
 
-<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/cfb7e4fd-c59b-4ee9-ada5-ade81a4bb403"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
+<h6 align="center"><img width="400px" src="https://github.com/user-attachments/assets/cfb7e4fd-c59b-4ee9-ada5-ade81a4bb403"><br>This image and all the theoretical content of the present article is TryHackMe´s property.<br></h6>
 
 <p>There are a lot of unusual user and machine behaviours that need investigation before escalation to a senior analyst.<br>
 
@@ -49,7 +49,7 @@ Will be using incident ID 49 <strong>Hands-on keyboard attack was launched from 
 
 <p>
 
-- click <em>Investigateion & response</em><br>
+- click <em>Investigation & response</em><br>
 - <em>Incident & alerts</em><br>
 - <em>Incidents</em></p>
 
