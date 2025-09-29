@@ -155,7 +155,7 @@ Will be using incident ID 49 <strong>Hands-on keyboard attack was launched from 
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|29      |Medium 🔗 - <strong>XDR: Operation Global Dagger</strong> | 511| 109ᵗʰ | 4ᵗʰ  |     217ᵗʰ    |     5ᵗʰ    | 127,784  |    980    |    76     |
+|29      |Medium 🚩 - <strong>XDR: Operation Global Dagger</strong> | 511| 109ᵗʰ | 4ᵗʰ  |     217ᵗʰ    |     5ᵗʰ    | 127,784  |    980    |    76     |
 |28      |Hard 🚩 - Sea Surfer, in progress      | 510    |     -        |      4ᵗʰ     |     -        |     -      | -        |    979    |    76     |
 |28      |Medium 🔗 - Windows PrivEsc Arena, in progress|510 | -         |      4ᵗʰ     |     -        |     -      | -        |    979    |    76     |
 |27      |Medium 🚩 - Backtrack                  | 509    |     109ᵗʰ    |      4ᵗʰ     |     318ᵗʰ    |     5ᵗʰ    | 127,334  |    979    |    76     |
