@@ -77,7 +77,7 @@ In this room, we will explore techniques attackers employ to acquire authenticat
 
 <br>
 <h2 align="center">Task 5 . Lab - Detect and Investigate Using Defender XDR</h2>
-<h3>Lab Scenarion</h3>
+<h3>Lab Scenario</h3>
 <p>The security team has received multiple alerts regarding failed sign-in attempts and a suspicious login from an unfamiliar IP. Your task is to investigate a potential password spray attack, identify the affected account(s), and gather some info to pass on to senior analysts.
 
 Note: To follow through, you can use the lab credentials and URL below:</p>
@@ -94,7 +94,7 @@ Note: To follow through, you can use the lab credentials and URL below:</p>
 - Scroll down to find the alert for <strong>password spraying</strong>. To see more information about this alert, scroll down to the sidebar.<br><br>
 - Click on <strong>Open alert page</strong> to begin the investigation.<br>On the new screen, the following can be seen:<br>1. The device involved<br>2. The user account involved<br>3. The time of each execution or event<br>4. The event/process names. You can click on each event to see the script on the sidebar<br>5. Details of the password spraying attack<br><br>
 - Click on the Alert timeline to see our specific alert details.<br><br><br>To investigate this alert, in addition to the device and user account details, we can see the following details:<br>- The date and time this script was executed<br>- The severity of this alert (Medium)<br>- The event, <strong>powershell.exe executed a script</strong>br>- The content of the script can be copied for further forensic investigations<br><br>
-- Click the <strong>PowerShell.exe executed a script</strong> dropdown for more details.<br><br><br>You can copy the command from the command line to analyse its full content. As you may have noticed, a script was executed. Additionally, if you click on the alert name <strong>Password spraying</strong> on the side pane, a list of evidence for forensic purposes and a detailed description of the alert appear.<br><br>After investigation and information gathering, this alert is considered a malicious event. The following can be done to mitigate the threat and prevent further escalation.<br>- We can run an antivirus scan<br>- Restrict applications from executing on this machine<br>- Start Microsoft Defender XDR automated investigation<br>- Start a live response session to access the affected machine for manual intervention remotely<br>- Isolate the device to prevent lateral movement or the attacker from gaining access to other devices<br><br>For further investigation, security admins can leverage KQL to find more suspicious activities on the affected device by clicking on <strong>Go hunt</strong>.<br><br>On the advanced hunting screen, you can modify the timestamp for broader coverage, then click <strong>Run query</strong to view the result. This query searches for the top 100 usual events on the specified machine across different tables.</p>
+- Click the <strong>PowerShell.exe executed a script</strong> dropdown for more details.<br><br><br>You can copy the command from the command line to analyse its full content. As you may have noticed, a script was executed. Additionally, if you click on the alert name <strong>Password spraying</strong> on the side pane, a list of evidence for forensic purposes and a detailed description of the alert appear.<br><br><br>After investigation and information gathering, this alert is considered a malicious event. The following can be done to mitigate the threat and prevent further escalation.<br>- We can run an antivirus scan<br>- Restrict applications from executing on this machine<br>- Start Microsoft Defender XDR automated investigation<br>- Start a live response session to access the affected machine for manual intervention remotely<br>- Isolate the device to prevent lateral movement or the attacker from gaining access to other devices<br><br><br>For further investigation, security admins can leverage KQL to find more suspicious activities on the affected device by clicking on <strong>Go hunt</strong>.<br><br><br>On the advanced hunting screen, you can modify the timestamp for broader coverage, then click <strong>Run query</strong to view the result. This query searches for the top 100 usual events on the specified machine across different tables.</p>
 
 <p><em>Answer the questions below</em></p>
 
@@ -187,7 +187,8 @@ Specifically, we explored the following topics:<br>
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|29      |Medium 🔗 - <strong>XDR: Operation Global Dagger</strong> | 511| 109ᵗʰ | 4ᵗʰ  |     217ᵗʰ    |     5ᵗʰ    | 127,784  |    980    |    76     |
+|29      |Medium 🔗 - <strong>XDR: Credential Access</strong> | 511| 109ᵗʰ |    4ᵗʰ     |     211ˢᵗ    |     5ᵗʰ    | 127,880  |    981    |    76     |
+|29      |Medium 🚩 - XDR: Operation Global Dagger| 511   |     109ᵗʰ    |      4ᵗʰ     |     217ᵗʰ    |     5ᵗʰ    | 127,784  |    980    |    76     |
 |28      |Hard 🚩 - Sea Surfer, in progress      | 510    |     -        |      4ᵗʰ     |     -        |     -      | -        |    979    |    76     |
 |28      |Medium 🔗 - Windows PrivEsc Arena, in progress|510 | -         |      4ᵗʰ     |     -        |     -      | -        |    979    |    76     |
 |27      |Medium 🚩 - Backtrack                  | 509    |     109ᵗʰ    |      4ᵗʰ     |     318ᵗʰ    |     5ᵗʰ    | 127,334  |    979    |    76     |
@@ -244,11 +245,11 @@ Specifically, we explored the following topics:<br>
 
 <br>
 
-<p align="center">Global All Time:   109ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/185c7b5c-fb04-4114-b7a0-c96bc09ec01f"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/0852934a-3e45-4e05-82f2-a77bc7ee8dc5"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/9d6b9c76-6497-491a-ba80-7b6d0991d652"><br>
-                  Global monthly:    217ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6381cf23-436c-4748-88ba-ddb9a9fbc74e"><br>
-                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/8e277129-34a7-4d99-b5d7-ef5174f0ecf9"><br>
+<p align="center">Global All Time:   109ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/53fe39b6-148b-4ce1-9418-067a2c559576"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/80a39fe5-5c28-44e7-9d37-cc73b83cc073"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/cc79e54d-4450-4734-b7af-c32589b48ae9"><br>
+                  Global monthly:    211ˢᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/5f53fff4-751b-42fc-bbdf-137b403e29a4"><br>
+                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="image" src="https://github.com/user-attachments/assets/66f847aa-44fd-46d6-87b8-c143bce9719a"><br>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
