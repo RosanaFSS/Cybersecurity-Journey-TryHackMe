@@ -8,7 +8,7 @@ Access it <a href="https://tryhackme.com/room/xdroperationglobaldagger"</a>here.
 
 <h2 align="center">Task 1 . Deploy the machine and Get the Flags!</h2>
 
-<h3 align="center">Scenario</h3>
+<h3>Scenario</h3>
 <p>Today, your organisation's threat intelligence (TI) team received classified briefings regarding an ongoing nation-state threat campaign - Operation Global Dagger. Global Dagger has targeted hundreds of global corporations using compromised software updates, remote code execution, credential theft, and cloud-based exfiltration on devices. The security team has also received alerts from Defender XDR of potential malicious activities to evade security measures. As a SOC Level 2 analyst, you have been urgently assigned to investigate these suspicious incidents that surfaced through Microsoft Defender XDR. You need to hunt, analyse, and report these malicious incidents before sensitive data is exfiltrated for containment.</p>
 
 <h3>Room Objectives</h3>
