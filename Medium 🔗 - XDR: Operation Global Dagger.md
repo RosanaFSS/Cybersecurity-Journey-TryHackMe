@@ -1,6 +1,6 @@
 <h1 align="center">XDR: Operation Global Dagger</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/e5eea092-44e4-46bd-bc14-4ae9d24246a3"><br>
-2025, September 27<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+2025, September 29<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>511</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Investigate and detect potential threats across your environment</em>.<br>
 Access it <a href="https://tryhackme.com/room/xdroperationglobaldagger"</a>here.<br>
@@ -11,7 +11,7 @@ Access it <a href="https://tryhackme.com/room/xdroperationglobaldagger"</a>here.
 <h3 align="center">Scenario</h3>
 <p>Today, your organisation's threat intelligence (TI) team received classified briefings regarding an ongoing nation-state threat campaign - Operation Global Dagger. Global Dagger has targeted hundreds of global corporations using compromised software updates, remote code execution, credential theft, and cloud-based exfiltration on devices. The security team has also received alerts from Defender XDR of potential malicious activities to evade security measures. As a SOC Level 2 analyst, you have been urgently assigned to investigate these suspicious incidents that surfaced through Microsoft Defender XDR. You need to hunt, analyse, and report these malicious incidents before sensitive data is exfiltrated for containment.</p>
 
-<h3 align="center">Room Objectives</h3>
+<h3>Room Objectives</h3>
 <p>In the next task, you will be required to use different Microsoft Defender XDR products and features to detect and investigate various activities within your organisation, such as:<br>
 
 - Privileged users' activities<br>
@@ -19,11 +19,11 @@ Access it <a href="https://tryhackme.com/room/xdroperationglobaldagger"</a>here.
 - Evasion of security tools<br>
 - Lateral movement</p>
 
-<h3 align="center">Prerequisites</h3>
+<h3>Prerequisites</h3>
 <p>
   
-- <a href="https://tryhackme.com/module/defender">here</a> module<br>
-- <a href="https://tryhackme.com/room/mitre">here</a> room</p>
+- <a href="https://tryhackme.com/module/defender">Microsoft Defender XDR</a> module<br>
+- <a href="https://tryhackme.com/room/mitre">MITRE</a> room</p>
 
 <p><em>Answer the question below</em></p>
 
