@@ -397,14 +397,6 @@ Connection: close
 ...
 ```
 
-<br>
-<br>
-
-<p>1.1. What is the first web application flag? Hint : <em>Think about the information you have gathered so far from the web application - usernames, company name, etc. You might want to generate a password list or make educated guesses</em>.<br>
-<code>THM{*******************************}</code></p>
-
-<br>
-
 <h2 align="center">Wordlist</h2>
 
 ```bash
@@ -463,6 +455,17 @@ ________________________________________________
 - Logged in from xx.xxx.xx.xxx, and there is <code>Logged in from source **.***.**.***</code></p>
 
 <img width="1060" height="410" alt="image" src="https://github.com/user-attachments/assets/7cd44025-c3c2-4ecc-981a-8124998b9f2f" />
+
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<p>1.1. What is the first web application flag? Hint : <em>Think about the information you have gathered so far from the web application - usernames, company name, etc. You might want to generate a password list or make educated guesses</em>.<br>
+<code>THM{*******************************}</code></p>
 
 <p>
 
