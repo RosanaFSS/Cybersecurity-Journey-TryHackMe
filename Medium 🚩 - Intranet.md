@@ -8,6 +8,9 @@ Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/secures
 <h2>Task 1 . Find vulnerabilities and gain root access</h2>
 <p>The web application development company SecureSolaCoders has created their own intranet page. The developers are still very young and inexperienced, but they ensured their boss (Magnus) that the web application was secured appropriately. The developers said, "Don't worry, Magnus. We have learnt from our previous mistakes. It won't happen again". However, Magnus was not convinced, as they had introduced many strange vulnerabilities in their customers' applications earlier.<br>
 
+
+</h6><img width="1200p400x" src="https://github.com/user-attachments/assets/c7e021fa-bd89-405e-abb1-615422fca13d">TryHackMe</p>
+
 Magnus hired you as a third-party to conduct a penetration test of their web application. Can you successfully exploit the app and achieve root access?<br>
 
 Start the VM by pressing the green "Start Machine" button. Please allow the machine 3 - 5 minutes to fully boot.</p>
