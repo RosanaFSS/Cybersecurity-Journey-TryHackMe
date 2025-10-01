@@ -207,7 +207,9 @@ Finished
 <br>
 <h2 align="center">Login</h2>
 <p>
-  
+
+- launched Burp Suite<br>
+- enabled FoxyProxy<br>
 - 200 OK, Invalid password for username= <code>anders</code>%40securesolacoders.no&password=password<br>
 - 200 OK, Invalid password for username= <code>devops</code>%40securesolacoders.no&password=password<br>
 - 200 OK, Invalid username for username= <code>magnus</code>%40securesolacoders.no&password=password<br>
