@@ -393,6 +393,12 @@ Connection: close
 ...
 ```
 
+<img width="536" height="170" alt="image" src="https://github.com/user-attachments/assets/687574a3-54d3-48e0-b12a-d3e0a0d80241" />
+
+<br>
+<br>
+<br>
+
 <img width="1272" height="366" alt="image" src="https://github.com/user-attachments/assets/f8535953-8b46-4177-865d-49619a0d4fa8" />
 
 <br>
