@@ -2,7 +2,7 @@
 <p align="center"> <em>Last updated : 2025, October 1</em><br>
 <img width="250px" src="https://github.com/user-attachments/assets/99945b28-a35f-4398-be5c-3358c3251610"><br><br>
 Active since <strong>2023</strong>, December.<br><a href="https://tryhackme.com/p/Rosana">View my TryHackMe profile here</a>.<br><br>
-Challenges Completed: &nbsp; <strong>84%</strong> &nbsp; -  &nbsp; <strong>381</strong> / <strong>438</strong><br>
+Challenges Completed: &nbsp; <strong>87%</strong> &nbsp; -  &nbsp; <strong>381</strong> / <strong>438</strong><br>
 <img width="700px" src="https://github.com/user-attachments/assets/4aefa41e-8c1a-4f64-aa7f-acee8aa7ada9"></p>
 
 <p align="center">Learning Paths Completed: &nbsp; <strong>100%</strong> &nbsp; -  &nbsp; <strong>18</strong> / <strong>18</strong><br>
@@ -13,7 +13,8 @@ My achievements<br>
 
 |Date         |Certificate                                                                                                                  |
 |:------------|:----------------------------------------------------------------------------------------------------------------------------|
-|2025, Sep    |Global all time:   &nbsp;&nbsp;&nbsp;110ᵗʰ  &nbsp; &nbsp; . &nbsp; &nbsp; Brazil all time:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5ᵗʰ|
+|2025, Oct    |Global all time:   &nbsp;&nbsp;&nbsp;108ᵗʰ  &nbsp; &nbsp; . &nbsp; &nbsp; Brazil all time:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4ᵗʰ|
+|2025, Sep    |Global all time:   &nbsp;&nbsp;&nbsp;108ᵗʰ  &nbsp; &nbsp; . &nbsp; &nbsp; Brazil all time:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4ᵗʰ|
 |2025, Aug<br><br><br>    |Global all time:   &nbsp;&nbsp;&nbsp;112ⁿᵈ   &nbsp; &nbsp; . &nbsp; &nbsp; Brazil all time:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KM3X2NDC7F.pdf">Red Teaming</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ST9WUO2M5G.pdf">Offensive Pentesting</a> |
 |2025, Jul<br><br><br>    |Global all time:   &nbsp;&nbsp;&nbsp;143ʳᵈ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-WIMDSMXDFF.pdf">CTF . Honeynet Collapse</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-4Q0QKPJVP6.pdf">Advanced Endpoint Investigations</a>           |
 |2025, Jun    |Global all time:   &nbsp;&nbsp; &nbsp;184ᵗʰ                   |
