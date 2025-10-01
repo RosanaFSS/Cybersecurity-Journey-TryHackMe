@@ -450,8 +450,6 @@ ________________________________________________
 :: Progress: [10000/10000] :: Job [1/1] :: 514 req/sec :: Duration: [0:00:20] :: Errors: 0 ::
 ```
 
-<img width="1350" height="532" alt="image" src="https://github.com/user-attachments/assets/7573adfb-2e16-4a0c-8077-4f0f2f68ae68" />
-
 <br>
 <br>
 <br>
