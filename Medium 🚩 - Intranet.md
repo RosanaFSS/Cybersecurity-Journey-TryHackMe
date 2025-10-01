@@ -208,8 +208,6 @@ Finished
 <h2 align="center">Login</h2>
 <p>
 
-- launched Burp Suite<br>
-- enabled FoxyProxy<br>
 - 200 OK, Invalid password for username= <code>anders</code>%40securesolacoders.no&password=password<br>
 - 200 OK, Invalid password for username= <code>devops</code>%40securesolacoders.no&password=password<br>
 - 200 OK, Invalid username for username= <code>magnus</code>%40securesolacoders.no&password=password<br>
@@ -260,6 +258,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-08-28 xx:xx:
 ```
 
 <h2 align="center">Login</h2>
+<p>
+  
+- Launched Burp Suite<br>
+- Enabled Foxy Proxy</p>
 
 <img width="1268" height="490" alt="image" src="https://github.com/user-attachments/assets/910b075d-a69a-44ec-abe3-c27ba51323ab" />
 
