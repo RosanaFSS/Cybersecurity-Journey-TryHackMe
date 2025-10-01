@@ -18,20 +18,9 @@ Start the VM by pressing the green "Start Machine" button. Please allow the mach
 
 <br>
 <p><em>Answer the questions below</em></p>
-
 <br>
-<h2 align="center">Virtual Environment</h2>
 
-```bash
-:~/Intranet# python3 -m venv rosana
-```
-
-```bash
-:~/Intranet# source rosana/bin/activate
-(rosana) :~/Intranet# 
-```
-
-<h2 align="center">Nmap</h2>
+<h2 align="center">Port Scanning</h2>
 
 <p>
 
@@ -108,13 +97,69 @@ PORT     STATE SERVICE    VERSION
 |_Requested resource was /login
 ```
 
-<h2 align="center">/etc/hosts</h2>
+<br>
+<h2 align="center">Vulnerability Assessmentt</h2>
+
+```bash
+:~# nikto -h xx.xxx.x.xxx
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          xx.xxx.x.xxx
++ Target Hostname:    xx.xxx.x.xxx
++ Target Port:        80
++ Start Time:         2025-10-01 xx:xx:xx (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.41 (Ubuntu)
++ Server leaks inodes via ETags, header found with file /, fields: 0x6f 0x5ecde2421fe3a 
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Allowed HTTP Methods: OPTIONS, HEAD, GET, POST 
++ 6544 items checked: 0 error(s) and 3 item(s) reported on remote host
++ End Time:           2025-10-01 xx:xx:xx (GMT1) (7 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+```bash
+:~/Intranet# nikto -h xx.xxx.x.xxx:8080
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          xx.xxx.x.xxx
++ Target Hostname:    xx.xxx.x.xxx
++ Target Port:        8080
++ Start Time:         2025-10-01 xx:xx:xx (GMT1)
+---------------------------------------------------------------------------
++ Server: Werkzeug/2.2.2 Python/3.8.10
++ The anti-clickjacking X-Frame-Options header is not present.
++ Root page / redirects to: /login
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ "robots.txt" retrieved but it does not contain any 'disallow' entries (which is odd).
++ Allowed HTTP Methods: HEAD, OPTIONS, GET 
++ 6544 items checked: 0 error(s) and 3 item(s) reported on remote host
++ End Time:           2025-10-01 xx:xx:xx (GMT1) (18 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+<br>
+<h2 align="center">Virtual Environment</h2>
+
+```bash
+:~/Intranet# python3 -m venv rosana
+```
+
+```bash
+:~/Intranet# source rosana/bin/activate
+(rosana) :~/Intranet# 
+```
+
+<h2 align="center">Static Host Mapping</h2>
 
 ```bash
 xx.xxx.x.xxx intranet.thm
 ```
 
-<h2 align="center">Gobuster</h2>
+<h2 align="center">Content Discovery</h2>
 <p>
 
 - <code>intranet.thm:8080/temporary</code> > <code>intranet.thm:8080/home</code> > <code>intranet.thm:8080/login</code></p>
