@@ -458,10 +458,9 @@ ________________________________________________
 
 <br>
 <br>
-<br>
 <p>
 
-- Logged in from xx.xxx.xx.xxx, and there is <code>Logged in from source **.***.**.***</p>
+- Logged in from xx.xxx.xx.xxx, and there is <code>Logged in from source **.***.**.***</code></p>
 
 <img width="1060" height="410" alt="image" src="https://github.com/user-attachments/assets/7cd44025-c3c2-4ecc-981a-8124998b9f2f" />
 
