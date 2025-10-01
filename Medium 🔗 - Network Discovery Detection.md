@@ -171,23 +171,23 @@ ubuntu@tryhackme:~/Downloads/logs$ cat log-session-2.csv | cut -d "," -f3,4 | gr
 <p>5.2. The zeek.conn.conn_state value shows the connection state. Using the information provided by this value, identify the type of scan being performed by 203.0.113.25 against 192.168.230.145<br>
 <code>TCP SYN Scan</code></p>
 
+```bash
+ubuntu@tryhackme:~/Downloads/logs$ grep -v '203.0.113.25' log-session-2.csv | grep -v '192.168.230.145' | cut -d "," -f18 | sort | uniq -c
+```
+
+<img width="1191" height="174" alt="image" src="https://github.com/user-attachments/assets/ee6093b2-eeba-4a92-be62-f5aa3fbefe86" />
+
+<br>
+<br>
+<br>
+
 <img width="1263" height="498" alt="image" src="https://github.com/user-attachments/assets/08d36e31-517e-4cd1-96cf-68acd980870c" />
 
 <br>
 <br>
 <br>
 
-```bash
-ubuntu@tryhackme:~/Downloads/logs$ grep -v '203.0.113.25' log-session-2.csv | grep -v '192.168.230.145' | cut -d "," -f18 | sort | uniq -c
-```
-
 <img width="1265" height="492" alt="image" src="https://github.com/user-attachments/assets/521e782c-e426-4e21-8ac8-bbdcf3da7e1a" />
-
-<br>
-<br>
-<br>
-
-<img width="1191" height="174" alt="image" src="https://github.com/user-attachments/assets/ee6093b2-eeba-4a92-be62-f5aa3fbefe86" />
 
 <br>
 <br>
