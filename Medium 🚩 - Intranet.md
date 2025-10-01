@@ -3,13 +3,14 @@
 <em>Welcome to the intranet!</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/3ae07dfa-7d29-40e8-9aed-2314f3707120"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/securesolacodersintra">here </a>.<br>
+  
 <img width="1200px" src="https://github.com/user-attachments/assets/6eda3422-fab3-4e64-8a3d-6a3129a99354"></p>
 
 <h2>Task 1 . Find vulnerabilities and gain root access</h2>
 <p>The web application development company SecureSolaCoders has created their own intranet page. The developers are still very young and inexperienced, but they ensured their boss (Magnus) that the web application was secured appropriately. The developers said, "Don't worry, Magnus. We have learnt from our previous mistakes. It won't happen again". However, Magnus was not convinced, as they had introduced many strange vulnerabilities in their customers' applications earlier.<br>
 
 
-</h6><img width="1200p400x" src="https://github.com/user-attachments/assets/c7e021fa-bd89-405e-abb1-615422fca13d">TryHackMe</p>
+</h6><img width="400px" src="https://github.com/user-attachments/assets/c7e021fa-bd89-405e-abb1-615422fca13d">TryHackMe</p>
 
 Magnus hired you as a third-party to conduct a penetration test of their web application. Can you successfully exploit the app and achieve root access?<br>
 
