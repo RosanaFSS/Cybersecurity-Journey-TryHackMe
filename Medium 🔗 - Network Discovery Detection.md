@@ -66,7 +66,7 @@ ubuntu@tryhackme:~/Downloads/logs$ cat log-session-2.csv | cut -d "," -f3 | uniq
 
 <p><em>Answer the questions below</em></p>
 
-<p>4.1 One of the log files contains evidence of a horizontal scan. Which IP range was scanned? Format X.X.X.X/X<br>
+<p>4.1. One of the log files contains evidence of a horizontal scan. Which IP range was scanned? Format X.X.X.X/X<br>
 <code>203.0.113.0/24</code></p>
 
 ```bash
@@ -162,12 +162,6 @@ ubuntu@tryhackme:~/Downloads/logs$ cat log-session-2.csv | cut -d "," -f3,4 | gr
       1 "source.port","destination.ip"
 ```  
 
-<img width="1265" height="492" alt="image" src="https://github.com/user-attachments/assets/521e782c-e426-4e21-8ac8-bbdcf3da7e1a" />
-
-<br>
-<br>
-<br>
-
 <img width="1191" height="379" alt="image" src="https://github.com/user-attachments/assets/c97a013e-07b9-4768-82fa-0fe62a3563b9" />
 
 <br>
@@ -186,6 +180,12 @@ ubuntu@tryhackme:~/Downloads/logs$ cat log-session-2.csv | cut -d "," -f3,4 | gr
 ```bash
 ubuntu@tryhackme:~/Downloads/logs$ grep -v '203.0.113.25' log-session-2.csv | grep -v '192.168.230.145' | cut -d "," -f18 | sort | uniq -c
 ```
+
+<img width="1265" height="492" alt="image" src="https://github.com/user-attachments/assets/521e782c-e426-4e21-8ac8-bbdcf3da7e1a" />
+
+<br>
+<br>
+<br>
 
 <img width="1191" height="174" alt="image" src="https://github.com/user-attachments/assets/ee6093b2-eeba-4a92-be62-f5aa3fbefe86" />
 
