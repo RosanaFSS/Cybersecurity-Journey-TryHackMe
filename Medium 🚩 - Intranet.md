@@ -403,7 +403,7 @@ Connection: close
 
 <br>
 
-<h2 align="center"Wordlist . 0000 to 9999</h2>
+<h2 align="center">Wordlist</h2>
 
 ```bash
 for i in {0000..9999}; do echo "$i"; done > support
