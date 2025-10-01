@@ -228,16 +228,20 @@ senior
 
 <h2 align="center">A.txt</h2>
 
-:~/Intranet# cat A.txt
+```bash
 securesolacoders
+```
 
 <h2 align="center">B.txt</h2>
 
+```bash
 :~/Intranet# john --wordlist:A.txt -rules:jumbo -stdout > B.txt
 Using default input encoding: UTF-8
 Press 'q' or Ctrl-C to abort, almost any other key for status
 70539p 0:00:00:00 100.00% (2025-10-01 13:54) 641263p/s sesola
+```
 
+```bash
 :~/Intranet# head -n 14 B.txt
 securesolacoders
 Securesolacoders
@@ -253,22 +257,23 @@ securesolacoderses
 Securesolacoderses
 SecuresolacodersSecuresolacoders
 secu
+```
 
-
+```bash
 :~/Intranet# sed -i 's/[^a-zA-Z0-9]//g' B.txt
+```
 
+```bash
 :~/Intranet# john --wordlist:A.txt -rules:jumbo -stdout > B.txt
 Using default input encoding: UTF-8
 Press 'q' or Ctrl-C to abort, almost any other key for status
 70539p 0:00:00:00 100.00% (2025-10-01 13:54) 641263p/s sesola
+```
 
-
-
-
-<h2 align="center">Users</h2>
+<h2 align="center">users.txt</h2>
 
 ```bash
-(rosana) :~/Intranet# cat users
+(rosana) :~/Intranet# cat users.txt
 anders@securesolacoders.no
 devops@40securesolacoders.no
 admin@securesolacoders.no
