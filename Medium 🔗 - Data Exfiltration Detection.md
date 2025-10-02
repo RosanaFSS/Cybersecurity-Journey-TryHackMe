@@ -70,7 +70,7 @@ Let's begin our learning journey.</p>
 <p><em>Answer the questions below</em></p>
 
 <p>4.1. What is the suspicious domain receiving the DNS traffic?<br>
-<code>tunnelcorp.net</p>
+<code>tunnelcorp.net</code></p>
 
 ```bash
 index="data_exfil" sourcetype="DNS_logs" label="suspicious"
@@ -98,7 +98,7 @@ index="data_exfil" sourcetype="dns_logs"
 <br>
 <br>
 <p>4.2. How many suspicious traffic/logs related to dns tunneling were observed?<br>
-<code>315</p>
+<code>315</code></p>
 
 ```bash
 index="data_exfil" sourcetype="dns_logs" label="suspicious"
@@ -116,7 +116,7 @@ index="data_exfil" sourcetype="dns_logs" label="suspicious"
 <br>
 <br>
 <p>4.3. Which local IP sent the maximum number of suspicious requests?<br>
-<code>192.168.1.103</p>
+<code>192.168.1.103</code></p>
 
 ```bash
 index="data_exfil" sourcetype="DNS_logs" label="suspicious"
@@ -147,7 +147,7 @@ index="data_exfil" sourcetype="DNS_logs" label="suspicious"
 <p><em>Answer the questions below</em></p>
 
 <p>5.1. How many connections were observed from the guest account?<br>
-<code>5</p>
+<code>5</code></p>
 
 ```bash
 ftp.request.arg == "guest"
@@ -165,7 +165,7 @@ ftp.request.arg == "guest"
 <br>
 <br>
 <p>5.2. Apply the filter; what is the name of the customer-related file exfiltrated from the root account?<br>
-<code>*************.****</p>
+<code>*************.****</code></p>
 
 ```bash
 ip.src == 192.168.1.105 && tcp.analysis.bytes_in_flight > 46
@@ -177,7 +177,7 @@ ip.src == 192.168.1.105 && tcp.analysis.bytes_in_flight > 46
 <br>
 <br>
 <p>5.3. Which internal IP was found to be sending the largest payload to an external IP?<br>
-<code>192.168.1.105</p>
+<code>192.168.1.105</code></p>
 
 <img width="1126" height="217" alt="image" src="https://github.com/user-attachments/assets/6cd53987-53d7-440d-a8aa-df98374d1003" />
 
@@ -185,7 +185,7 @@ ip.src == 192.168.1.105 && tcp.analysis.bytes_in_flight > 46
 <br>
 <br>
 <p>5.4. What is the flag hidden inside the ftp stream transferring the CSV file to the suspicious IP?<br>
-<code>THM{*********************}</p>
+<code>THM{*********************}</code></p>
 
 <img width="880" height="285" alt="image" src="https://github.com/user-attachments/assets/db16b532-f76f-4c8c-9390-1526dfa9fea5" />
 
@@ -198,10 +198,10 @@ ip.src == 192.168.1.105 && tcp.analysis.bytes_in_flight > 46
 <p><em>Answer the questions below</em></p>
 
 <p>6.1. Which internal compromised host was used to exfiltrate this sensitive data?<br>
-<code>192.168.1.103</p>
+<code>192.168.1.103</code></p>
 
 <p>6.2. What's the flag hidden inside the exfiltrated data?<br>
-<code>THM{*****************************}</p>
+<code>THM{*****************************}</code></p>
   
 <p>
   
