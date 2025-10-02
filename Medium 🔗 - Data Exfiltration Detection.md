@@ -73,9 +73,9 @@ Let's begin our learning journey.</p>
 <code>tunnelcorp.net</code></p>
 
 ```bash
-index="data_exfil" sourcetype="DNS_logs" label="suspicious"
-|  table timestamp, label, src_ip, dst_ip, label, query
-|  sort by +timestamp
+index="data_exfil" sourcetype="dns_logs"
+|  stats count by query
+|  sort -count
 ```
 
 <img width="853" height="545" alt="image" src="https://github.com/user-attachments/assets/fed83099-c316-4c51-b8b2-16eaba5185ec" />
@@ -101,14 +101,21 @@ index="data_exfil" sourcetype="dns_logs"
 <code>315</code></p>
 
 ```bash
-index="data_exfil" sourcetype="dns_logs" label="suspicious"
-| stats count
+dns.qry.name contans "tunnel"
 ```
+
 <img width="852" height="339" alt="image" src="https://github.com/user-attachments/assets/fd8db5d3-5429-4af3-ace4-78c5140b78bb" />
 
 <br>
 <br>
 <br>
+
+```bash
+index="data_exfil" sourcetype="DNS_logs" label="suspicious"
+|  table timestamp, label, src_ip, dst_ip, label, query
+|  stats count by src_ip
+|  sort by -count
+```
 
 <img width="1131" height="451" alt="image" src="https://github.com/user-attachments/assets/b4a63645-05be-4e3c-bdfe-53d59f811512" />
 
@@ -132,6 +139,7 @@ index="data_exfil" sourcetype="DNS_logs" label="suspicious"
 
 ```bash
 index="data_exfil" sourcetype="DNS_logs" label="suspicious"
+|  table timestamp, label, src_ip, dst_ip, label, query
 |  stats count by src_ip
 |  sort by -count
 ```
@@ -150,7 +158,7 @@ index="data_exfil" sourcetype="DNS_logs" label="suspicious"
 <code>5</code></p>
 
 ```bash
-ftp.request.arg == "guest"
+index="data_exfil" method=POST
 ```
 
 <img width="1170" height="527" alt="image" src="https://github.com/user-attachments/assets/8f46581a-fa90-4733-820f-6b94fe7506c1" />
@@ -158,6 +166,10 @@ ftp.request.arg == "guest"
 <br>
 <br>
 <br>
+
+```bash
+ftp.request.arg == "guest"
+```
 
 <img width="1127" height="197" alt="image" src="https://github.com/user-attachments/assets/f7665c57-dbe0-4796-b070-9942dcd21e5a" />
 
@@ -168,7 +180,7 @@ ftp.request.arg == "guest"
 <code>*************.****</code></p>
 
 ```bash
-ip.src == 192.168.1.105 && tcp.analysis.bytes_in_flight > 46
+ip.src == xxx.xxx.x.xxx && tcp.analysis.bytes_in_flight > 46
 ```
 
 <img width="1128" height="453" alt="image" src="https://github.com/user-attachments/assets/755a28f4-3000-4668-bc1b-28c57de120f9" />
@@ -177,7 +189,7 @@ ip.src == 192.168.1.105 && tcp.analysis.bytes_in_flight > 46
 <br>
 <br>
 <p>5.3. Which internal IP was found to be sending the largest payload to an external IP?<br>
-<code>192.168.1.105</code></p>
+<code>xxx.xxx.x.xxx</code></p>
 
 <img width="1126" height="217" alt="image" src="https://github.com/user-attachments/assets/6cd53987-53d7-440d-a8aa-df98374d1003" />
 
