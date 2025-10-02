@@ -59,7 +59,7 @@ Let's begin our learning journey.</p>
 <p><em>Answer the question below</em></p>
 
 <p>3.1. Exfiltrating the data through HTTP comes under which technique?<br>
-<code>Network-based</p>
+<code>Network-based</code></p>
 
 <br>
 <br>
