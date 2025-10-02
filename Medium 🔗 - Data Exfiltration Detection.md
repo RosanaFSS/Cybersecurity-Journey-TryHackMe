@@ -101,10 +101,8 @@ index="data_exfil" sourcetype="dns_logs"
 <code>315</code></p>
 
 ```bash
-index="data_exfil" sourcetype="DNS_logs" label="suspicious"
-|  table timestamp, label, src_ip, dst_ip, label, query
-|  stats count by src_ip
-|  sort by -count
+index="data_exfil" sourcetype="dns_logs" label="suspicious"
+|  stats count
 ```
 
 <img width="852" height="339" alt="image" src="https://github.com/user-attachments/assets/fd8db5d3-5429-4af3-ace4-78c5140b78bb" />
