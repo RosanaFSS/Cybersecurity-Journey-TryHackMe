@@ -217,7 +217,8 @@ ip.src == xxx.xxx.x.xxx && tcp.analysis.bytes_in_flight > 46
   
 - lenght<br>
 - stream</p>
-<img width="1215" height="604" alt="image" src="https://github.com/user-attachments/assets/9fba46c7-56f6-46ee-bc27-1d73ef0e0e91" />
+
+<img width="1208" height="595" alt="image" src="https://github.com/user-attachments/assets/ca7fefae-fa0a-4365-8623-70acf7931ee4" />
 
 <br>
 <br>
