@@ -9,6 +9,9 @@ Challenges Completed: &nbsp; <strong>87%</strong> &nbsp; -  &nbsp; <strong>381</
 Seasonal CTF´s Completed:  &nbsp; <strong>2</strong></p>
 
 
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/66ad480c-f5c2-4d32-b119-dcb7ff08b7e1"></p>
+
+
 
 
 
