@@ -6,45 +6,15 @@ Challenges Completed: &nbsp; <strong>87%</strong> &nbsp; -  &nbsp; <strong>381</
 <img width="700px" src="https://github.com/user-attachments/assets/4aefa41e-8c1a-4f64-aa7f-acee8aa7ada9"></p>
 
 <p align="center">Learning Paths Completed: &nbsp; <strong>100%</strong> &nbsp; -  &nbsp; <strong>18</strong> / <strong>18</strong><br>
-Seasonal CTF´s Completed:  &nbsp; <strong>2</strong><br><br>
-My achievements<br>
+Seasonal CTF´s Completed:  &nbsp; <strong>2</strong></p>
 
 
-|2025, Jun    |Global all time:   &nbsp;&nbsp; &nbsp;184ᵗʰ                   |
-|2025, May<br><br><br>    |Global all time:   &nbsp;&nbsp;&nbsp;207ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-LSCBWVPOX6.pdf">Attacking and Defending AWS</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PUCW503MLQ.pdf">Defending Azure</a>                   |
-|2025, Apr    |Global all time:   &nbsp;&nbsp;&nbsp;263ʳᵈ                   |
-|2025, Mar    |Global all time:   &nbsp;&nbsp;&nbsp;321ˢᵗ                   |
-|2025, Feb    |Global all time:   &nbsp;&nbsp;&nbsp;385ᵗʰ                   |
-|2025, Jan    |Global all time:   &nbsp;&nbsp;&nbsp;496ᵗʰ                   |
-|2024, Dec<br><br><br>    |Global all time:   &nbsp;&nbsp;&nbsp;666ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NXU8Y5OMJ1.pdf">CTF . Advent of Cyber 2024</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-EEGPSW0BUV.pdf">Web Application Pentesting</a>|
-|2024, Nov<br><br><br>    |Global all time:  &nbsp;&nbsp;1,063ʳᵈ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FMJZ8PNTQ8.pdf">CompTIA Pentest+</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NBLP4BED4X.pdf">DevSecOps</a>|
-|2024, Oct<br><br><br>    |Global all time:  &nbsp;&nbsp;1,451ˢᵗ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SM811IJLKA.pdf">Cyber Security 101</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-FNRB2IJUKM.pdf">Jr Penetration Tester</a>|
-|2024, Sep<br><br><br>    |Global all time:  &nbsp;&nbsp;2,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F2XVPYJI6T.pdf">Web Fundamentals</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-JLMV6TMUAF.pdf">Security Engineer</a>|
-|2024, Aug<br><br>    |Global all time: &nbsp;3,298ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CIQLUJGLAL.pdf">Complete Beginner</a> |
-|2024, Jul<br><br><br>    |Global all time:  &nbsp;&nbsp;6,798ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-Q6SP7FH2JX.pdf">Cyber Defense</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XTVLR1W5WS.pdf">SOC Level 2</a>|
-|2024, Jun<br><br>    |Global all time:  &nbsp;17,817ᵗʰ<br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-RG2AVDTF5L.pdf">SOC Level 1</a>|
-|2024, May<br><br>    |<a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-X9TLJHAVDH.pdf">Pre Security</a><br><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-NTSZBUQQZS.pdf">Introduction to Cyber Security</a>|
-
-</h6></div><br>
-
-<br>
-
-<h2 align="center"> $$\textcolor{white}{\textnormal{Montlhy Evolution}}$$</h2>
 
 
-<div align="center">
 
 
-|Date                       |Streak    |      All Time|      All Time|       Monthly|       Monthly|Points    | Rooms     |
-|:--------------------------|---------:|-------------:|-------------:|-------------:|-------------:|---------:| --------: |
-|                           |          |        Global|        Brazil|        Global|        Brazil|          |           | 
-| 2025, Feb 27              | 297      |        385ᵗʰ |          8ᵗʰ |         72ⁿᵈ |          1ˢᵗ | 84,409   |       593 |
-| 2025, Feb 23              | 293      |        396ᵗʰ |          8ᵗʰ |         70ᵗʰ |          1ˢᵗ | 83,561   |       584 |
-| 2025, Feb 17              | 287      |        412ⁿᵈ |          8ᵗʰ |         57ᵗʰ |          1ˢᵗ | 82,267   |       574 |
-| 2025, Jan 31              | 270      |        496ᵗʰ |         12ⁿᵈ |         90ᵗʰ |          2ⁿᵈ | 77,533   |       554 |
 
 
-</h6></div><br>
 
 <p align="center"><img height="100px" src="https://github.com/user-attachments/assets/d13252c0-8021-4375-8aea-1b712e567b21"></p>
 
