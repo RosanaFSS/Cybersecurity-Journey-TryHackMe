@@ -101,7 +101,10 @@ index="data_exfil" sourcetype="dns_logs"
 <code>315</code></p>
 
 ```bash
-dns.qry.name contans "tunnel"
+index="data_exfil" sourcetype="DNS_logs" label="suspicious"
+|  table timestamp, label, src_ip, dst_ip, label, query
+|  stats count by src_ip
+|  sort by -count
 ```
 
 <img width="852" height="339" alt="image" src="https://github.com/user-attachments/assets/fd8db5d3-5429-4af3-ace4-78c5140b78bb" />
@@ -111,10 +114,7 @@ dns.qry.name contans "tunnel"
 <br>
 
 ```bash
-index="data_exfil" sourcetype="DNS_logs" label="suspicious"
-|  table timestamp, label, src_ip, dst_ip, label, query
-|  stats count by src_ip
-|  sort by -count
+dns.qry.name contans "tunnel"
 ```
 
 <img width="1131" height="451" alt="image" src="https://github.com/user-attachments/assets/b4a63645-05be-4e3c-bdfe-53d59f811512" />
