@@ -89,7 +89,7 @@ index="data_exfil" sourcetype="dns_logs"
 | eval query_length=len(query)
 | where query_length > 30
 | table timestamp, src_ip, dst_ip, query,query_length
-| sort +timestamp
+| sort -timestamp
 ```
 
 <img width="857" height="563" alt="image" src="https://github.com/user-attachments/assets/c4ed3570-1d49-47c9-9298-d72b06076fd7" />
