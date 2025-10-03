@@ -45,8 +45,7 @@ Seasonal CTF´s Completed:  &nbsp; <strong>2</strong></p>
 <p align="center"><img height="100px" src="https://github.com/user-attachments/assets/d13252c0-8021-4375-8aea-1b712e567b21"></p>
 
 <br>
-<h2>The second involves my participation in the<br>
-WiCys SANS Security Training Scholarship, Stage 2.</h2>
+<h2>WiCys SANS Security Training Scholarship, Stage 2.</h2>
 
 <h3>Click here to know more about <a href="https://www.wicys.org/benefits/security-training-scholarship/">WiCyS SANS Security Training Scholarship Program, Stage 2</a><br>
 Click <a href="https://tryhackme.com/r/p/CyberRosana">here</a> to know more about my accomplishments in TryHackMe.</h3>
