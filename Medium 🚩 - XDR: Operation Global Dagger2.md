@@ -185,7 +185,7 @@ On the Microsoft Defender portal, look for incident ID 54 <strong>Hands-on keybo
 </h6></div>
 <br>
 
-<p align="center">Global All Time:   104ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/536b28a4-62f1-4895-a3e4-9074eacf6b8"><br>
+<p align="center">Global All Time:   104ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/0708b2e7-52fa-45af-ba6d-9d26dc40e4c7"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/1a1f6746-60f2-47a2-bdc4-cf3fcdeb0ab7"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/13a70e64-5c6b-4bec-a26e-c5bf43dbbd51"><br>
                   Global monthly:     149ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fbd0cc26-049b-4586-8b0e-ccb806023c15"><br>
