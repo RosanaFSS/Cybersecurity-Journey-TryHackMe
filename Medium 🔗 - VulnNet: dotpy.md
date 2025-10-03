@@ -32,8 +32,8 @@ Note: While looking through web pages you might notice a domain vulnnet.com, how
 <br>
 <br>
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b6153b7f-7f7e-41c7-8a76-4a84b6b17da8"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/db41ef70-411d-4a3c-939a-129927d970b8"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e5b15c0a-50e4-4c8d-b37f-dd97a6198b2b"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/c12632ec-3b43-4637-b7c4-4d9d1d4f0a85"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
 
