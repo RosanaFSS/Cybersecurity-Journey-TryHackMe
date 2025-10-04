@@ -22,17 +22,29 @@ Two developers are venturing into the world of Kubernetes. Little do these devel
 
 <br>
 
+<h3>Port Scanning</h3>
+
 <p>
 
-- nodeport range =  30000-32767
-- ports open = 22, ..., 31337 and 32000</p>
+- 16443<br>
+- 25000<br>
+- 31337<br>
+- 32000</p>
 
 ```bash
-:~/FrankHerby# nmap -p- 10.201.67.197
+:~/FrankHerby# nmap -sT -p- -T5 xx.xxx.xx.xxx
 ...
 PORT      STATE SERVICE
 22/tcp    open  ssh
 3000/tcp  open  ppp
+16443/tcp open  unknown
+25000/tcp open  icl-twobase1
+```
+
+```bash
+:~/FrankHerby# nmap -p 10000-32000 xx.xxx.xx.xxx
+...
+PORT      STATE SERVICE
 10250/tcp open  unknown
 10255/tcp open  unknown
 10257/tcp open  unknown
@@ -43,19 +55,223 @@ PORT      STATE SERVICE
 32000/tcp open  unknown
 ```
 
-<br>
+```bash
+:~/FrankHerby# nmap -sC -sV -p 22,3000,10250,10255,10257,10259,16443,25000,31337,32000 -T4 xx.xxx.xx.xxx
+...
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+3000/tcp  open  ppp?
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     X-XSS-Protection: 1
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: sameorigin
+|     Content-Security-Policy: default-src 'self' ; connect-src *; font-src 'self' data:; frame-src *; img-src * data:; media-src * data:; script-src 'self' 'unsafe-eval' ; style-src 'self' 'unsafe-inline' 
+|     X-Instance-ID: XrpRjW5WJpGh8dBHt
+|     Content-Type: text/html; charset=utf-8
+|     Vary: Accept-Encoding
+|     Date: Sat, 04 Oct 2025 23:46:17 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/a3e89fa2bdd3f98d52e474085bb1d61f99c0684d.css?meteor_css_resource=true">
+|     <meta charset="utf-8" />
+|     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+|     <meta http-equiv="expires" content="-1" />
+|     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+|     <meta name="fragment" content="!" />
+|_    <meta name="distribution" content
+10250/tcp open  ssl/http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+| ssl-cert: Subject: commonName=dev-01@1633275132
+| Subject Alternative Name: DNS:dev-01
+| Not valid before: 2021-10-03T14:32:12
+|_Not valid after:  2022-10-03T14:32:12
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+10255/tcp open  http        Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+10257/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sat, 04 Oct 2025 23:46:24 GMT
+|     Content-Length: 185
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sat, 04 Oct 2025 23:46:24 GMT
+|     Content-Length: 189
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
+| ssl-cert: Subject: commonName=localhost@1759621350
+| Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
+| Not valid before: 2025-10-04T22:42:07
+|_Not valid after:  2026-10-04T22:42:07
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+10259/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sat, 04 Oct 2025 23:46:24 GMT
+|     Content-Length: 185
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sat, 04 Oct 2025 23:46:24 GMT
+|     Content-Length: 189
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
+| ssl-cert: Subject: commonName=localhost@1759621342
+| Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
+| Not valid before: 2025-10-04T22:42:07
+|_Not valid after:  2026-10-04T22:42:07
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+16443/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Sat, 04 Oct 2025 23:46:49 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 401 Unauthorized
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Sat, 04 Oct 2025 23:46:24 GMT
+|     Content-Length: 129
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+| ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.44.131, IP Address:172.17.0.1
+| Not valid before: 2025-10-04T23:40:19
+|_Not valid after:  2026-10-04T23:40:19
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+25000/tcp open  ssl/http    Gunicorn 19.7.1
+|_http-server-header: gunicorn/19.7.1
+|_http-title: 404 Not Found
+| ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.44.131, IP Address:172.17.0.1
+| Not valid before: 2025-10-04T23:40:19
+|_Not valid after:  2026-10-04T23:40:19
+31337/tcp open  http        nginx 1.21.3
+|_http-server-header: nginx/1.21.3
+|_http-title: Heroic Features - Start Bootstrap Template
+32000/tcp open  http        Docker Registry (API: 2.0)
+|_http-title: Site doesn't have a title.
+```
+
+<h3>Vulnerability Assessment</h3>
+
+```bash
+:~# nikto -h 10.201.44.131:16443
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.44.131
++ Target Hostname:    10.201.44.131
++ Target Port:        16443
++ Start Time:         2025-10-05 00:53:09 (GMT1)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 6544 items checked: 15 error(s) and 1 item(s) reported on remote host
++ End Time:           2025-10-05 00:53:19 (GMT1) (10 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+```bash
+:~# nikto -h 10.201.44.131:25000
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.44.131
++ Target Hostname:    10.201.44.131
++ Target Port:        25000
+---------------------------------------------------------------------------
++ SSL Info:        Subject: /C=GB/ST=Canonical/L=Canonical/O=Canonical/OU=Canonical/CN=127.0.0.1
+                   Ciphers: TLS_AES_256_GCM_SHA384
+                   Issuer:  /CN=10.152.183.1
++ Start Time:         2025-10-05 00:50:59 (GMT1)
+---------------------------------------------------------------------------
++ Server: gunicorn/19.7.1
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Hostname '10.201.44.131' does not match certificate's CN '127.0.0.1'
++ 6544 items checked: 0 error(s) and 2 item(s) reported on remote host
++ End Time:           2025-10-05 00:52:26 (GMT1) (87 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+```bash
+:~# nikto -h 10.201.44.131:31337
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.44.131
++ Target Hostname:    10.201.44.131
++ Target Port:        31337
++ Start Time:         2025-10-05 00:50:24 (GMT1)
+---------------------------------------------------------------------------
++ Server: nginx/1.21.3
++ Server leaks inodes via ETags, header found with file /, fields: 0x6179a1f6 0x12bb 
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 6544 items checked: 0 error(s) and 2 item(s) reported on remote host
++ End Time:           2025-10-05 00:50:33 (GMT1) (9 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+
+
 
 <p>1.1. What port has a webpage frank was able to stand up? <br>
 <code>31337</code></p>
 
-<br>
+<img width="1080" height="523" alt="image" src="https://github.com/user-attachments/assets/46ba650a-b91a-48fa-a723-3748bf109ca4" />
 
 
-<h3>31337</h3>
-
-<img width="1157" height="627" alt="image" src="https://github.com/user-attachments/assets/de632fd9-2fdf-45bd-a46c-08e17b78006a" />
-
-<h4>gobuster</h4>
+<h3>File and Directory Enumeration</h3>
 
 ```bash
 :~/FrankHerby# gobuster dir -u http://10.201.67.197:31337/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt  -t 80
