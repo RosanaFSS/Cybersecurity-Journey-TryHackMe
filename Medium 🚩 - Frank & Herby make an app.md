@@ -312,22 +312,26 @@ Target: http://10.201.67.197:31337/
 
 <img width="480" height="113" alt="image" src="https://github.com/user-attachments/assets/309bb1da-0495-4dbf-bb1b-fb530f5f49ac" />
 
-http://frank:f%40an3-1s-E337%21%21@192.168.100.50  =
 
+```bash
+http://frank:f%40an3-1s-E337%21%21@192.168.100.50  =
+```
+
+```bash
 f@an3-1s-E337!!@192.168.100.50
+```
 
 
 <img width="1183" height="185" alt="image" src="https://github.com/user-attachments/assets/023b8aef-5907-41e7-a926-c1e4939a05c3" />
 
-
-
+<br>
+<br>
 <br>
 
 <p>1.2. What port has a webpage frank was able to stand up? <br>
 <code>.git-credentials7</code></p>
 
 <br>
-
 
 ```bash
 :~/FrankHerby# ssh frank@10.201.67.197
