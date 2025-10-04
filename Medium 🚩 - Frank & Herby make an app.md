@@ -308,7 +308,7 @@ Target: http://10.201.67.197:31337/
 
 <br>
 
-<h3>.git-credentials</h3>
+<h3>10.201.44.131:31337/.git-credentials</h3>
 
 <img width="480" height="113" alt="image" src="https://github.com/user-attachments/assets/309bb1da-0495-4dbf-bb1b-fb530f5f49ac" />
 
