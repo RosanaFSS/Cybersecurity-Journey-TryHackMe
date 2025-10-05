@@ -3,10 +3,8 @@
 <em>Learn how the misconfiguration of containers can lead to opportunities for some and disasters for others</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/e7d19f62-eef6-4483-928f-6dd4ff13632c"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/frankandherby">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/151765bb-28dd-4d89-b0e9-bc99f3a83ac4"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/2ab767a3-d06f-4d17-9db2-0e96d2e3eb8f"></p>
 
-
-<br>
 
 <h2>Task 1 . Frank & Herb Nake and App!</h2>
 <p>Make sure to wait 5 minutes after the machine starts up before starting recon.<br>
@@ -586,36 +584,33 @@ root@hostmount:~#
 <br>
 <br>
 
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3e84a482-39c7-478d-b826-cf89efc7fcc7"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/13442bb0-cdc8-494f-8171-c51f3f5108eb"></p>
 
+<h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
 
+<div align="center"><h6>
 
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
+|3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
+|2       |Medium 🔗 - Data Exfiltration Detection| 514    |     108ᵗʰ    |      4ᵗʰ     |     521ˢᵗ    |     8ᵗʰ    | 128,503  |    985    |    76     |
+|1       |Medium 🔗 - Network Discovery Detection| 513    |     108ᵗʰ    |      4ᵗʰ     |     875ᵗʰ    |     7ᵗʰ    | 128,407  |    984    |    76     |
+|1       |Medium 🚩 - Intranet                   | 513    |     108ᵗʰ    |      4ᵗʰ     |    3,357ᵗʰ   |    57ᵗʰ    | 128,335  |    983    |    76     |
 
+</h6></div>
 <br>
 
-<h1 align="center">My TryHackMe Journey</h1>
+<p align="center">Global All Time:   105ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/49d0ce14-fd53-4b77-a7e0-311ef82462f1"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/88149cc0-41a8-4c45-bb88-0c55d56e57ea"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d7fa2ec2-a3aa-4b4f-929c-ff725ec9e64a"><br>
+                  Global monthly:     235ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7ccc84b8-5956-432c-bc89-4a9e679b2803"><br>
+                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/538c6f32-88dd-4e70-8c3a-d5c56140cde9"><br>
 
-<div align="center">
-
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 12   |   463    |     127ᵗʰ    |      5ᵗʰ     |     340th   |     7ᵗʰ    | 120,596  |    910    |    73     |
-
-
-</div>
-
-<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/3efe5828-3cd2-44ab-a142-e2a7ad152154" />
-
-
-<img width="1878" height="887" alt="image" src="https://github.com/user-attachments/assets/7d0505ae-bc08-46a2-9e38-628a6ecc713c" />
-
-
-<img width="1888" height="904" alt="image" src="https://github.com/user-attachments/assets/f58b618b-cd03-4509-b517-cc196ea7bc1a" />
-
-<img width="1893" height="894" alt="image" src="https://github.com/user-attachments/assets/0cb3e863-af34-4a1c-ad47-f2b544e2fff5" />
-
-
-<img width="1892" height="896" alt="image" src="https://github.com/user-attachments/assets/aacaf1d0-afcd-4ffd-a4ac-8f3c0f8e983f" />
-
-
-  
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
