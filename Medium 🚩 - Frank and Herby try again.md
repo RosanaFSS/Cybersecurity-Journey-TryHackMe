@@ -23,21 +23,21 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <br>
 <br>
 <br>
-<h3 align="center">Port Scanning</h3>
+<h1 align="center">Port Scanning</h1>
 <p align="center"><strong>8</strong> open ports</p>
 
 <div align="center"><p>
 
-| **Port**     | **Service**  | **Version**                        | **Certificate CN**      | **Evidences**                                                                                                                                             |
-|-------------:|:-------------|:-----------------------------------|:------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| '22`         |`SSH`         |OpenSSH 8.2p1 Ubuntu 4ubuntu0.13    |-                        |Standard SSH banner confirms OpenSSH version.                                                                                                              |
-| `10250`      |`SSL/HTTP`    |Kubelet API                         |microk8s@1647797913      |Port 10250 is standard for Kubelet API. Golang net/http server and MicroK8s CN confirm node-level Kubernetes service.                                      |
-| `10255`      |`HTTP`        |Kubelet Read-Only API               |-                        |Port 10255 was used for Kubelet’s unauthenticated read-only endpoint. Golang net/http server matches legacy Kubelet behavior.                              |
-| `10257`      |`SSL/HTTP`    |Kubernetes API server               |localhost@1759612053     |JSON response with apiVersion:"v1" and RBAC denial. ALPN shows http/1.1 and h2. Matches Kubernetes API server behavior.                                    |
-| `10259`      |`SSL/HTTP`    |Kubernetes API server               |localhost@1759612058     |Identical response structure and RBAC error as 10257. Certificate CN differs, suggesting a separate instance of the same service.                          |
-| `16443`      |`SSL/HTTP`    |Kubernetes API server               |127.0.0.1, Canonical, GB |JSON response with apiVersion:"v1" and 401 Unauthorized. SANs include kubernetes.default.svc.cluster.local—definitive for Kubernetes control plane.        |
-| `25000`      |`SSL/HTTP`    |Gunicorn 19.7.1                     |127.0.0.1, Canonical, GB |HTTP header confirms Gunicorn 19.7.1. Certificate SANs include Kubernetes DNS entries, suggesting Kubernetes-related traffic.                              |
-| `30679`      |`HTTP`        |PHP CLI server                      |-                        |HTTP banner confirms PHP CLI Server 5.5+ with version `PHP 8.1.0-dev`. Page title indicates custom `dev/test` page.                                        |
+| **Port**       | **Service**      | **Version**                     | **Certificate CN**      | **Evidences**                                                                                                                                             |
+|---------------:|:-----------------|:--------------------------------|:------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| '22`<br><br>   |`SSH`<br><br>     |OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 |-<br><br>                |Standard SSH banner confirms OpenSSH version.<br><br>                                                                                                      |
+| `10250`<br><br>|`SSL/HTTP`<br><br>|Kubelet API                      |microk8s@1647797913      |Port 10250 is standard for Kubelet API. Golang net/http server and MicroK8s CN confirm node-level Kubernetes service.                                      |
+| `10255`<br><br>|`HTTP`<br><br>    |Kubelet Read-Only API            |-                        |Port 10255 was used for Kubelet’s unauthenticated read-only endpoint. Golang net/http server matches legacy Kubelet behavior.                              |
+| `10257`<br><br>|`SSL/HTTP`<br><br>|Kubernetes API server            |localhost@1759612053     |JSON response with apiVersion:"v1" and RBAC denial. ALPN shows http/1.1 and h2. Matches Kubernetes API server behavior.                                    |
+| `10259`<br><br>|`SSL/HTTP`<br><br>|Kubernetes API server            |localhost@1759612058     |Identical response structure and RBAC error as 10257. Certificate CN differs, suggesting a separate instance of the same service.                          |
+| `16443`<br><br>|`SSL/HTTP`<br><br>|Kubernetes API server            |127.0.0.1, Canonical, GB |JSON response with apiVersion:"v1" and 401 Unauthorized. SANs include kubernetes.default.svc.cluster.local—definitive for Kubernetes control plane.        |
+| `25000`<br><br>|`SSL/HTTP`<br><br>|Gunicorn 19.7.1                  |127.0.0.1, Canonical, GB |HTTP header confirms Gunicorn 19.7.1. Certificate SANs include Kubernetes DNS entries, suggesting Kubernetes-related traffic.                              |
+| `30679`<br><br>|`HTTP`<br><br>    |PHP CLI server                   |-                        |HTTP banner confirms PHP CLI Server 5.5+ with version `PHP 8.1.0-dev`. Page title indicates custom `dev/test` page.                                        |
 
 </p></div><br>
 
