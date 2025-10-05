@@ -253,7 +253,7 @@ PORT      STATE  SERVICE     VERSION
 <br>
 <br>
 <h1 align="center">Web Vulberability Scanning</h1>
-<p align="center">`25000` and `30679`are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
+<p align="center"><code>25000</code>code> and <code>30679</code>code>are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
 
 
 ```bash
@@ -303,7 +303,10 @@ PORT      STATE  SERVICE     VERSION
 + 1 host(s) tested
 ```
 
-<h2>Directory and File Enumeration</h2>
+<br>
+<br>
+<br>
+<h1 align="center">Directory and File Enumeration</h1>
 
 ```bash
 dirsearch -u https://10.201.46.77:25000 -e php,html,txt,js,json -x 403,404,500 -k
