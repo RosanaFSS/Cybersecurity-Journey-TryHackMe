@@ -16,14 +16,9 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 >> <strong>----------------------------</strong><br>
 <br>
 
-> 1.1. <em><strong>User</srong> flag?</em>
->> _________________________________
-<br>
-
 > 1.2. <em><strong>Root</strong> flag?</em>
->> _________________________________
+>> <strong>----------------------------</strong><br>
 <br>
-
 
 <br>
 <br>
@@ -46,9 +41,33 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 
 </p></div><br>
 
+<br>
+<br>
 
 ```bash
-nmap -Pn -A -v --version-all -p- -oA nmap 10.201.46.77
+:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
+```
+
+<div align="center"><p>
+
+| **Parameter**      | **Purpose**                                                                              |
+|-------------------:|:-----------------------------------------------------------------------------------------|
+| `-p-`              | scans all 65,535 TCP ports to ensure full coverage.                                      |
+| `-sS` 	           | performs a TCP SYN scan, which is fast and stealthy—ideal for initial reconnaissance.    |
+| `-sV` 	           | enables service version detection to identify software running on each port.             |
+| `-sC` 	           | runs default scripts (e.g., , ) to gather additional service metadata.                   |
+| `-T4` 	           | Uses aggressive timing to speed up the scan without sacrificing reliability.             |
+| `-Pn` 	           | disables host discovery to avoid false negatives when ICMP ping is blocked.              |
+| `--open`           | displays only open ports to reduce noise and focus on actionable results.                |
+| `-oN full_scan.txt`| saves the output to a readable file for later analysis and documentation.                |
+
+</p></div><br>
+  
+```bash
+:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
+
+
+...
 ```
 
 ```bash
