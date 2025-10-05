@@ -209,7 +209,7 @@ PORT      STATE SERVICE     VERSION
 <br>
 <br>
 <h1 align="center">Web Vulberability Scanning</h1>
-<p align="center"><code>25000</code>code> and <code>30679</code>code>are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
+<p align="center"><code>25000</code> and <code>30679</code>code>are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
 
 <br>
 <div align="center"><h6>
@@ -219,7 +219,7 @@ PORT      STATE SERVICE     VERSION
 | `SSL Certificate Mismatch`<br><br>                          | - Hostname  does not match certificate CN <br>- May indicate misconfiguration or internal-only exposure.                                     |
 | `Missing Anti-Clickjacking Header`<br><br>                  | - X-Frame-Options header is not present<br>- Could allow clickjacking attacks if the app has sensitive UI components.                        |
 | `Gunicorn Server Detected`<br><br> 	                        | - erver identified as gunicorn/19.7.1<br>- Python-based WSGI server; may suggest Flask or Django backend.                                    |
-                            |
+
 </h6></div>  
 
 
