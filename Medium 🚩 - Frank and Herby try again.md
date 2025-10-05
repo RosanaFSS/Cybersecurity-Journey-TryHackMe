@@ -34,6 +34,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <br>
 <h1 align="center">Port Scanning → Service Discovery</h1>
 <p align="center"><strong>8</strong> open ports</p>
+<br>
 
 ```bash
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
@@ -52,7 +53,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 | `--open`           | displays only open ports to reduce noise and focus on actionable results.                |
 | `-oN full_scan.txt`| saves the output to a readable file for later analysis and documentation.                |
 
-</h6></div>
+</h6></div><br>
 
 ```bash
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
