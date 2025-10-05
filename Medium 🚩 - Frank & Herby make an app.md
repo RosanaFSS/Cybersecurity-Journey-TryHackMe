@@ -263,6 +263,34 @@ PORT      STATE SERVICE     VERSION
 ```
 
 
+<p>10.201.44.131:3000</p>
+
+<img width="1129" height="553" alt="image" src="https://github.com/user-attachments/assets/dbd278bc-255d-4ad2-8d51-4d7b58615745" />
+
+<p>10.201.44.131:10250</p>
+
+<img width="1118" height="227" alt="image" src="https://github.com/user-attachments/assets/03944eec-2cac-4678-aaeb-5ca672bac06f" />
+
+<p>10.201.44.131:10255</p>
+
+<img width="1125" height="173" alt="image" src="https://github.com/user-attachments/assets/a248c174-4b4f-4812-8a3e-2e1fccfc8ce5" />
+
+<p>10.201.44.131:10257</p>
+
+'forbidden: User "system:anonymous" cannot get path "/"'
+
+<p>10.201.44.131:10257</p>
+
+<img width="1129" height="317" alt="image" src="https://github.com/user-attachments/assets/4fb9ab74-422f-440a-8f03-ee94a8aa86e0" />
+
+<p>10.201.44.131:10259</p>
+
+<img width="1124" height="267" alt="image" src="https://github.com/user-attachments/assets/86d2ceb6-a03f-4d9c-b544-7f62f2821ab2" />
+
+<p>10.201.44.131:16443</p>
+
+<img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/4eaade42-51bd-4ac7-bd06-213787ab441a" />
+
 
 
 <p>1.1. What port has a webpage frank was able to stand up? <br>
@@ -329,9 +357,12 @@ f@an3-1s-E337!!@192.168.100.50
 <br>
 
 <p>1.2. What port has a webpage frank was able to stand up? <br>
-<code>.git-credentials7</code></p>
+<code>.git-credentials</code></p>
 
 <br>
+
+
+
 
 ```bash
 :~/FrankHerby# ssh frank@10.201.67.197
