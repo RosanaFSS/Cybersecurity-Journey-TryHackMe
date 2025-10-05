@@ -279,8 +279,6 @@ PORT      STATE SERVICE     VERSION
 
 'forbidden: User "system:anonymous" cannot get path "/"'
 
-<p>10.201.44.131:10257</p>
-
 <img width="1129" height="317" alt="image" src="https://github.com/user-attachments/assets/4fb9ab74-422f-440a-8f03-ee94a8aa86e0" />
 
 <p>10.201.44.131:10259</p>
@@ -291,7 +289,9 @@ PORT      STATE SERVICE     VERSION
 
 <img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/4eaade42-51bd-4ac7-bd06-213787ab441a" />
 
-
+<br>
+<br>
+<br>
 
 <p>1.1. What port has a webpage frank was able to stand up? <br>
 <code>31337</code></p>
