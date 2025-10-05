@@ -1,5 +1,5 @@
 <h1 align="center">Frank & Herby make an app</h1>
-<p align="center">2025, August 11<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>462</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, October 4<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>462</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Learn how the misconfiguration of containers can lead to opportunities for some and disasters for others</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/e7d19f62-eef6-4483-928f-6dd4ff13632c"><br>
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/frankandherby">here </a>.<br>
@@ -222,29 +222,41 @@ PORT      STATE SERVICE     VERSION
 + 1 host(s) tested
 ```
 
-
 <p>10.201.44.131:3000</p>
 
 <img width="1129" height="553" alt="image" src="https://github.com/user-attachments/assets/dbd278bc-255d-4ad2-8d51-4d7b58615745" />
 
+<br>
+<br>
+<br>
 <p>10.201.44.131:10250</p>
 
 <img width="1118" height="227" alt="image" src="https://github.com/user-attachments/assets/03944eec-2cac-4678-aaeb-5ca672bac06f" />
 
+<br>
+<br>
+<br>
 <p>10.201.44.131:10255</p>
 
 <img width="1125" height="173" alt="image" src="https://github.com/user-attachments/assets/a248c174-4b4f-4812-8a3e-2e1fccfc8ce5" />
 
+<br>
+<br>
+<br>
 <p>10.201.44.131:10257</p>
-
-'forbidden: User "system:anonymous" cannot get path "/"'
 
 <img width="1129" height="317" alt="image" src="https://github.com/user-attachments/assets/4fb9ab74-422f-440a-8f03-ee94a8aa86e0" />
 
+<br>
+<br>
+<br>
 <p>10.201.44.131:10259</p>
 
 <img width="1124" height="267" alt="image" src="https://github.com/user-attachments/assets/86d2ceb6-a03f-4d9c-b544-7f62f2821ab2" />
 
+<br>
+<br>
+<br>
 <p>10.201.44.131:16443</p>
 
 <img width="1132" height="279" alt="image" src="https://github.com/user-attachments/assets/4eaade42-51bd-4ac7-bd06-213787ab441a" />
@@ -252,13 +264,14 @@ PORT      STATE SERVICE     VERSION
 <br>
 <br>
 <br>
-
 <p>1.1. What port has a webpage frank was able to stand up? <br>
 <code>31337</code></p>
 
 <img width="1080" height="523" alt="image" src="https://github.com/user-attachments/assets/46ba650a-b91a-48fa-a723-3748bf109ca4" />
 
-
+<br>
+<br>
+<br>
 <h3>File and Directory Enumeration</h3>
 
 ```bash
@@ -268,10 +281,6 @@ PORT      STATE SERVICE     VERSION
 /css                  (Status: 301) [Size: 169] [--> http://10.201.44.131/css/]
 /vendor               (Status: 301) [Size: 169] [--> http://10.201.44.131/vendor/]
 ```
-
-<br>
-
-<h4>dirsearch</h4>
 
 ```bash
 :~/FrankHerby# dirsearch -u http://10.201.44.131:31337/
@@ -290,9 +299,7 @@ Target: http://10.201.44.131:31337/
 ...
 ```
 
-<br>
-
-<h3>10.201.44.131:31337/.git-credentials</h3>
+<h3>.git-credentials</h3>
 
 <img width="1183" height="185" alt="image" src="https://github.com/user-attachments/assets/023b8aef-5907-41e7-a926-c1e4939a05c3" />
 
@@ -302,6 +309,9 @@ Target: http://10.201.44.131:31337/
 
 <img width="480" height="113" alt="image" src="https://github.com/user-attachments/assets/309bb1da-0495-4dbf-bb1b-fb530f5f49ac" />
 
+<br>
+<br>
+<br>
 
 ```bash
 http://frank:f%40an3-1s-E337%21%21@192.168.100.50  =
@@ -332,7 +342,6 @@ frank@dev-01:~$
 
 <p>1.3. What is the user.txt flag?<br>
 <code>THM{***********}</code></p>
-
 <br>
 
 <p>
@@ -416,129 +425,21 @@ frank@dev-01:~$ microk8s.kubectl get pods nginx-deployment-7b548976fd-77v4r -o y
 apiVersion: v1
 kind: Pod
 metadata:
-  annotations:
-    cni.projectcalico.org/podIP: 10.1.133.235/32
-    cni.projectcalico.org/podIPs: 10.1.133.235/32
-  creationTimestamp: "2021-10-27T19:48:23Z"
+ ...
   generateName: nginx-deployment-7b548976fd-
   labels:
     app: nginx
     pod-template-hash: 7b548976fd
   name: nginx-deployment-7b548976fd-77v4r
-  namespace: default
-  ownerReferences:
-  - apiVersion: apps/v1
-    blockOwnerDeletion: true
-    controller: true
-    kind: ReplicaSet
-    name: nginx-deployment-7b548976fd
-    uid: 3e23e71f-b91a-41de-a65a-e50629eb51ec
-  resourceVersion: "1811251"
-  selfLink: /api/v1/namespaces/default/pods/nginx-deployment-7b548976fd-77v4r
-  uid: 29879983-7b7f-4143-a8b9-1eb34951fd6d
+ ...
 spec:
   containers:
   - image: localhost:32000/bsnginx
-    imagePullPolicy: Always
-    name: nginx
-    ports:
-    - containerPort: 80
-      protocol: TCP
-    resources: {}
-    terminationMessagePath: /dev/termination-log
-    terminationMessagePolicy: File
-    volumeMounts:
-    - mountPath: /usr/share/nginx/html
-      name: local-stuff
-    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: kube-api-access-hc88j
-      readOnly: true
-  dnsPolicy: ClusterFirst
-  enableServiceLinks: true
-  nodeName: dev-01
-  preemptionPolicy: PreemptLowerPriority
-  priority: 0
-  restartPolicy: Always
-  schedulerName: default-scheduler
-  securityContext: {}
-  serviceAccount: default
-  serviceAccountName: default
-  terminationGracePeriodSeconds: 30
-  tolerations:
-  - effect: NoExecute
-    key: node.kubernetes.io/not-ready
-    operator: Exists
-    tolerationSeconds: 300
-  - effect: NoExecute
-    key: node.kubernetes.io/unreachable
-    operator: Exists
-    tolerationSeconds: 300
-  volumes:
-  - hostPath:
-      path: /home/frank/repos/dk-ml/assets
-      type: ""
-    name: local-stuff
-  - name: kube-api-access-hc88j
-    projected:
-      defaultMode: 420
-      sources:
-      - serviceAccountToken:
-          expirationSeconds: 3607
-          path: token
-      - configMap:
-          items:
-          - key: ca.crt
-            path: ca.crt
-          name: kube-root-ca.crt
-      - downwardAPI:
-          items:
-          - fieldRef:
-              apiVersion: v1
-              fieldPath: metadata.namespace
-            path: namespace
-status:
-  conditions:
-  - lastProbeTime: null
-    lastTransitionTime: "2021-10-27T19:48:23Z"
-    status: "True"
-    type: Initialized
-  - lastProbeTime: null
-    lastTransitionTime: "2025-10-04T23:44:23Z"
-    status: "True"
-    type: Ready
-  - lastProbeTime: null
-    lastTransitionTime: "2025-10-04T23:44:23Z"
-    status: "True"
-    type: ContainersReady
-  - lastProbeTime: null
-    lastTransitionTime: "2021-10-27T19:48:23Z"
-    status: "True"
-    type: PodScheduled
-  containerStatuses:
-  - containerID: containerd://ed43fcb391907fc8a6b34347dc3a99b92ecc02e6a7c2ae26ab5c4842aa61f1f4
+...
+...
     image: localhost:32000/bsnginx:latest
     imageID: localhost:32000/bsnginx@sha256:...
-    lastState:
-      terminated:
-        containerID: containerd://a56f86268143a36ec7c2c06cd92ea57e2014e5a692e22f592865985c841243a0
-        exitCode: 255
-        finishedAt: "2021-10-29T12:09:13Z"
-        reason: Unknown
-        startedAt: "2021-10-29T02:17:45Z"
-    name: nginx
-    ready: true
-    restartCount: 2
-    started: true
-    state:
-      running:
-        startedAt: "2025-10-04T23:44:22Z"
-  hostIP: 10.201.44.131
-  phase: Running
-  podIP: 10.1.133.235
-  podIPs:
-  - ip: 10.1.133.235
-  qosClass: BestEffort
-  startTime: "2021-10-27T19:48:23Z"
+...
 ```
 
 ```bash
@@ -579,6 +480,12 @@ root@hostmount:~#
 
 <img width="1137" height="88" alt="image" src="https://github.com/user-attachments/assets/77664507-1658-400a-82e8-553715244f62" />
 
+<br>
+<br>
+<br>
+
+<p>1.3. What is the root.txt flag?<br>
+<code>THM{***************}</code></p>
 
 <br>
 <br>
