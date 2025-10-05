@@ -6,6 +6,15 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <img width="1200px" src=""></p>
 
 
+<p>Summary
+
+- Port Scanning → Service Discovery<br>
+- Web Vulberability Scanning<br>
+
+
+
+
+
 <h1>Task 1 . You can do it!</h1>
 <p>So Frank and Herb have become Kubernetes experts now and would never misconfigure their own deployment (agaun)!</p>
 
@@ -23,7 +32,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <br>
 <br>
 <br>
-<h1 align="center">Port Scanning</h1>
+<h1 align="center">Port Scanning → Service Discovery</h1>
 <p align="center"><strong>8</strong> open ports</p>
 
 <div align="center"><p>
@@ -48,7 +57,8 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
 ```
 
-<div align="center"><p>
+<br>
+<div align="center"><h6>
 
 | **Parameter**      | **Purpose**                                                                              |
 |-------------------:|:-----------------------------------------------------------------------------------------|
@@ -61,7 +71,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 | `--open`           | displays only open ports to reduce noise and focus on actionable results.                |
 | `-oN full_scan.txt`| saves the output to a readable file for later analysis and documentation.                |
 
-</p></div><br>
+</h6></div>
   
 ```bash
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
@@ -242,7 +252,31 @@ PORT      STATE  SERVICE     VERSION
 |_http-title: FRANK RULEZZ!
 ```
 
-<h2>Vulnerability Assessment</h2>
+<br>
+<br>
+<br>
+<h1 align="center">Web Vulberability Scanning/h1>
+<p align="center">`25000` and `30679`are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
+
+
+```bash
+:~# nikto -h https://10.201.46.77:25000
+```
+
+```bash
+:~# nikto -h http://10.201.46.77:30679
+```
+
+<br>
+<div align="center"><h6>
+
+| **Discovery**                                               | **Details**                                                                                                                                  |
+|------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------|
+| `PHP Info Exposure`<br><br>                                 | - /info.php<br> - reveals full PHP configuration, including loaded modules, paths, and environment variables.                                |
+| `Remote File Inclusion (RFI)`<br><br>                       | - /info.php?file=http://cirt.net/rfiinc.txt<br>- Suggests the server may process external file input, indicating possible RFI vulnerability. |
+| `XSS` <br><br><br>                 	                        | - /phpimageview.php, /myphpnuke/links.php, /modules.php, /members.asp<br>- Reflected XSS via query parameters.                               |
+
+</h6></div>  
 
 ```bash
 :~# nikto -h 10.201.46.77:30679
@@ -272,7 +306,16 @@ PORT      STATE  SERVICE     VERSION
 + 1 host(s) tested
 ```
 
-<h2>Content Discovery</h2>
+<h2>Directory and File Enumeration</h2>
+
+```bash
+dirsearch -u https://10.201.46.77:25000 -e php,html,txt,js,json -x 403,404,500 -k
+```
+
+```bash
+dirsearch -u http://10.201.46.77:30679 -e php,html,txt,js,json -x 403,404,500
+```
+
 
 ```bash
 root@ip-10-201-105-176:~# dirsearch -u https://10.201.46.77:10250/
