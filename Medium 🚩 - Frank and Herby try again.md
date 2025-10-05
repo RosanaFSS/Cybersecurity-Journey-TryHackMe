@@ -10,11 +10,11 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 
 - Port Scanning → Service Discovery<br>
 - Web Vulberability Scanning<br>
+- Directory and File Enumeration</p>
 
 
-
-
-
+<br>
+<br>
 <h1>Task 1 . You can do it!</h1>
 <p>So Frank and Herb have become Kubernetes experts now and would never misconfigure their own deployment (agaun)!</p>
 
@@ -252,7 +252,7 @@ PORT      STATE  SERVICE     VERSION
 <br>
 <br>
 <br>
-<h1 align="center">Web Vulberability Scanning/h1>
+<h1 align="center">Web Vulberability Scanning</h1>
 <p align="center">`25000` and `30679`are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
 
 
