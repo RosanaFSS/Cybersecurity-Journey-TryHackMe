@@ -39,7 +39,6 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
 ```
 
-<br>
 <div align="center"><h6>
 
 | **Parameter**      | **Purpose**                                                                              |
@@ -55,6 +54,9 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 
 </h6></div>
 
+```bash
+:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
+```
 
 <div align="center"><p>
 
