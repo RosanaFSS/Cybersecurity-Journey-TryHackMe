@@ -24,6 +24,8 @@ Two developers are venturing into the world of Kubernetes. Little do these devel
 
 <p>
 
+- 10257<br>
+- 10259<br>
 - 16443<br>
 - 25000<br>
 - 31337<br>
@@ -498,7 +500,7 @@ root@hostmount:~#
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     233ʳᵈ    |     3ʳᵈ    | 128,871  |    989    |    76     |
 |4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
 |3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
 |3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
@@ -509,11 +511,12 @@ root@hostmount:~#
 </h6></div>
 <br>
 
-<p align="center">Global All Time:   105ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/49d0ce14-fd53-4b77-a7e0-311ef82462f1"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/88149cc0-41a8-4c45-bb88-0c55d56e57ea"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d7fa2ec2-a3aa-4b4f-929c-ff725ec9e64a"><br>
-                  Global monthly:     235ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7ccc84b8-5956-432c-bc89-4a9e679b2803"><br>
-                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/538c6f32-88dd-4e70-8c3a-d5c56140cde9"><br>
+
+<p align="center">Global All Time:   105ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/c66d1017-1756-445c-a8f2-865efc9dd009"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/1eef6b13-b69b-4a0d-b5bb-6b8ae460a2f9"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8bac76a7-1dd2-46bd-92eb-797ebfb48513"><br>
+                  Global monthly:     233ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/9e49920c-b043-4e61-b0e4-0f503c41cfb6"><br>
+                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/b86404a9-aa6d-4b00-b125-92e88fe59a87"><br>
 
 <br>
 <h1 align="center">Thanks for Coming!</h1>
