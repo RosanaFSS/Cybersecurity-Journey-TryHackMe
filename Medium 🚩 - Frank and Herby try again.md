@@ -59,6 +59,9 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
 ```
 
+<br>
+<br>
+
 <div align="center"><p>
 
 | **Port**           | **Service**          | **Version**                     | **Certificate CN**             | **Evidences**                                                                                                                                             |
