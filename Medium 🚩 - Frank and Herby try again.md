@@ -35,24 +35,6 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <h1 align="center">Port Scanning → Service Discovery</h1>
 <p align="center"><strong>8</strong> open ports</p>
 
-<div align="center"><p>
-
-| **Port**           | **Service**          | **Version**                     | **Certificate CN**             | **Evidences**                                                                                                                                             |
-|-------------------:|:---------------------|:--------------------------------|:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `22`<br><br><br>   |`SSH`<br><br><br>     |OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 |-<br><br><br>                   |Standard SSH banner confirms OpenSSH version.<br><br><br>                                                                                                  |
-| `10250`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubelet API<br><br><br>          |microk8s@1647797913<br><br><br> |Port 10250 is standard for Kubelet API. Golang net/http server and MicroK8s CN confirm node-level Kubernetes service.<br><br>                              |
-| `10255`<br><br><br>|`HTTP`<br><br><br>    |Kubelet Read-Only API<br><br>    |-<br><br><br>                   |Port 10255 was used for Kubelet’s unauthenticated read-only endpoint. Golang net/http server matches legacy Kubelet behavior.                              |
-| `10257`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubernetes API server<br><br>    |localhost@1759612053<br><br><br>|JSON response with apiVersion:"v1" and RBAC denial. ALPN shows http/1.1 and h2. Matches Kubernetes API server behavior.<br><br>                            |
-| `10259`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubernetes API server<br><br>    |localhost@1759612058<br><br><br>|Identical response structure and RBAC error as 10257. Certificate CN differs, suggesting a separate instance of the same service.<br><br>                  |
-| `16443`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubernetes API server<br><br>    |127.0.0.1, Canonical, GB<br><br>|JSON response with apiVersion:"v1" and 401 Unauthorized. SANs include kubernetes.default.svc.cluster.local—definitive for Kubernetes control plane.        |
-| `25000`<br><br><br>|`SSL/HTTP`<br><br><br>|Gunicorn 19.7.1<br><br><br>      |127.0.0.1, Canonical, GB<br><br>|HTTP header confirms Gunicorn 19.7.1. Certificate SANs include Kubernetes DNS entries, suggesting Kubernetes-related traffic.                              |
-| `30679`<br><br>    |`HTTP`<br><br>        |PHP CLI server<br><br>           |-<br><br>                       |HTTP banner confirms PHP CLI Server 5.5+ with version `PHP 8.1.0-dev`. Page title indicates custom `dev/test` page.                                        |
-
-</p></div><br>
-
-<br>
-<br>
-
 ```bash
 :~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
 ```
@@ -72,13 +54,22 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 | `-oN full_scan.txt`| saves the output to a readable file for later analysis and documentation.                |
 
 </h6></div>
-  
-```bash
-:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.46.77 -oN full_scan.txt
 
 
-...
-```
+<div align="center"><p>
+
+| **Port**           | **Service**          | **Version**                     | **Certificate CN**             | **Evidences**                                                                                                                                             |
+|-------------------:|:---------------------|:--------------------------------|:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `22`<br><br><br>   |`SSH`<br><br><br>     |OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 |-<br><br><br>                   |Standard SSH banner confirms OpenSSH version.<br><br><br>                                                                                                  |
+| `10250`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubelet API<br><br><br>          |microk8s@1647797913<br><br><br> |Port 10250 is standard for Kubelet API. Golang net/http server and MicroK8s CN confirm node-level Kubernetes service.<br><br>                              |
+| `10255`<br><br><br>|`HTTP`<br><br><br>    |Kubelet Read-Only API<br><br>    |-<br><br><br>                   |Port 10255 was used for Kubelet’s unauthenticated read-only endpoint. Golang net/http server matches legacy Kubelet behavior.                              |
+| `10257`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubernetes API server<br><br>    |localhost@1759612053<br><br><br>|JSON response with apiVersion:"v1" and RBAC denial. ALPN shows http/1.1 and h2. Matches Kubernetes API server behavior.<br><br>                            |
+| `10259`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubernetes API server<br><br>    |localhost@1759612058<br><br><br>|Identical response structure and RBAC error as 10257. Certificate CN differs, suggesting a separate instance of the same service.<br><br>                  |
+| `16443`<br><br><br>|`SSL/HTTP`<br><br><br>|Kubernetes API server<br><br>    |127.0.0.1, Canonical, GB<br><br>|JSON response with apiVersion:"v1" and 401 Unauthorized. SANs include kubernetes.default.svc.cluster.local—definitive for Kubernetes control plane.        |
+| `25000`<br><br><br>|`SSL/HTTP`<br><br><br>|Gunicorn 19.7.1<br><br><br>      |127.0.0.1, Canonical, GB<br><br>|HTTP header confirms Gunicorn 19.7.1. Certificate SANs include Kubernetes DNS entries, suggesting Kubernetes-related traffic.<br>                          |
+| `30679`<br><br>    |`HTTP`<br><br>        |PHP CLI server<br><br>           |-<br><br>                       |HTTP banner confirms PHP CLI Server 5.5+ with version `PHP 8.1.0-dev`. Page title indicates custom `dev/test` page.                                        |
+
+</p></div><br>
 
 ```bash
 :~# nmap -sT -p 22,3000,10250,10257,10259,16443,25000,31337,32000 -T4 10.201.46.77
