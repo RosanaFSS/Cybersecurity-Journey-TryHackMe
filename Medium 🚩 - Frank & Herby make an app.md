@@ -301,6 +301,10 @@ Target: http://10.201.44.131:31337/
 
 <h3>.git-credentials</h3>
 
+<p>1.2. What port has a webpage frank was able to stand up? <br>
+<code>.git-credentials</code></p>
+<br>
+
 <img width="1183" height="185" alt="image" src="https://github.com/user-attachments/assets/023b8aef-5907-41e7-a926-c1e4939a05c3" />
 
 <br>
@@ -314,7 +318,7 @@ Target: http://10.201.44.131:31337/
 <br>
 
 ```bash
-http://frank:f%40an3-1s-E337%21%21@192.168.100.50  =
+http://frank:f%40•••-••-••••%21%21@192.168.100.50  =
 ```
 
 <p>
@@ -322,16 +326,8 @@ http://frank:f%40an3-1s-E337%21%21@192.168.100.50  =
 - URL decode</p>
 
 ```bash
-frank:f@an3-1s-E337!!@192.168.100.50  =
+frank:f@•••-••-••••@192.168.100.50  =
 ```
-
-<br>
-<br>
-<br>
-
-<p>1.2. What port has a webpage frank was able to stand up? <br>
-<code>.git-credentials</code></p>
-<br>
 
 ```bash
 :~/FrankHerby# ssh frank@10.201.44.131
@@ -340,6 +336,7 @@ frank:f@an3-1s-E337!!@192.168.100.50  =
 frank@dev-01:~$
 ```
 
+<br>
 <p>1.3. What is the user.txt flag?<br>
 <code>THM{***********}</code></p>
 <br>
