@@ -345,10 +345,13 @@ Target: http://10.201.67.197:31337/
 http://frank:f%40an3-1s-E337%21%21@192.168.100.50  =
 ```
 
-```bash
-f@an3-1s-E337!!@192.168.100.50
-```
+<p>
 
+- URL decode</p>
+
+```bash
+frank:f@an3-1s-E337!!@192.168.100.50  =
+```
 
 <img width="1183" height="185" alt="image" src="https://github.com/user-attachments/assets/023b8aef-5907-41e7-a926-c1e4939a05c3" />
 
