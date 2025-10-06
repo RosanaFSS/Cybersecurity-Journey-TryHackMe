@@ -5,8 +5,6 @@
 Access it <a href="https://tryhackme.com/room/vulnnet1">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/adf3cd32-1b5e-49a4-9614-628073b0bdc6"></p>
 
-<br>
-<br>
 <h2>Task 1 .VulnNet</h2>
 <p>The purpose of this challenge is to make use of more realistic techniques and include them into a single machine to practice your skills.<br>
 
@@ -36,8 +34,8 @@ Access it <a href="https://tryhackme.com/room/vulnnet1">here</a>.<br>
 <br>
 <br>
 <br>
-
-<h1>Static Host Mapping<a id='1'></h1>
+<br>
+<h1 align="center">Static Host Mapping<a id='1'></h1>
 
 ```bash
 echo 'xx.xxx.xx.xxx vulnnet.thm' >> /etc/hosts
@@ -66,6 +64,7 @@ PORT   STATE SERVICE VERSION
 |_http-title: VulnNet
 ```
 
+<br>
 <h1 align="center">Web Vulnerability Scanning<a id='3'></h1>
 <p align="center">DEBUG HTTP verb may show server debugging information<br>/img/ might be interesting<br>License file<br>Apache default file<br>Admin login page</p>
 </p>
@@ -95,6 +94,7 @@ PORT   STATE SERVICE VERSION
 + 1 host(s) tested
 ```
 
+<br>
 <h1 align="center">Directory and File Enumeration<a id='4'></h1>
 
 ```bash
@@ -109,27 +109,29 @@ PORT   STATE SERVICE VERSION
 Task Completed
 ```
 
+<br>
 <h1 align="center">Web Interface Inspection, Weaponization, Delivery & Execution<a id='5'></h1>
 <p>
   
-- Identified <strong>js/index__7ed54732.js</strong> and <strong>/js/index__d8338055.js</strong>.<br>Using <a href=" https://beautifier.io/">Beautifier</a> discovered <strong>broadcast.vulnnet.thm</strong> and <strong>http://vulnnet.thm/index.php?referer=</strong> respectively.<br>
-- Navigated to <strong>vulnnet.thm/login.html</strong>.<br>
-- Launched <code>Burp Suite</code> and enabled <code>FoxyProxy</code>.<br>
-- Tested for SQLi using <strong>' OR '1'='1</strong>:<strong>password</strong>. SQLi is not present.<br>
-- Added <strong>broadcast.vulnnet.thm</strong> to <strong>/etc/hosts</strong>.<br>
-- Navigated to <strong>broadcast.vulnnet.thm</strong>. Credentials are needed.</br>
-- Navigated to <strong>vulnnet.thm/index.php?referer=/etc/passwd</strong> considering the discovery in <strong>/js/index__d8338055.js</strong>.<br>
-- Identified users <strong>root</strong> and <strong>system-management</strong>.<br>
-- Navigated to <strong>vulnnet.thm/index.php?referer=/etc/apache2/.htpasswd</strong>.<br>
-- Discovered a hash in Burp´s response: <strong>developers:$apr1$********$**********************</strong><br>
-- Saved it to <strong>Hash</strong> file.<br>
-- Cracked the hash using <code>John the Ripper</code> discovering: developers:-----------sls<br>
-- Logged in on <strong>broadcast.vulnnet.thm</strong> with the credentials just uncovered.<br>It is running <strong><ins>ClipBucket v4.0<ins></strong> which is vulnerable to <strong><ins>Unauthenticated File Upload</ins></strong>. Exploit in <a href="https://www.exploit-db.com/exploits/44250">ExploitDB</a> or also <strong>44250.txt</strong> through <code>searchsploit</code>.<br>
-- Downloaded <a href="https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php">PentestMonkey PHP Reverse Shell</a>. Edited ip and port. Renamed it to <strong><ins>rev.php</ins></code>.<br>
-- Uploaded a php file in <strong>broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR</strong>.<br>
-- Setup a listener.<br>
+- Identified <strong>js/index__7ed54732.js</strong> and <strong>/js/index__d8338055.js</strong>.<br>Using <a href=" https://beautifier.io/">Beautifier</a> discovered <strong>broadcast.vulnnet.thm</strong> and <strong>http://vulnnet.thm/index.php?referer=</strong> respectively.<br><br>
+- Navigated to <strong>vulnnet.thm/login.html</strong>.<br><br>
+- Launched <code>Burp Suite</code> and enabled <code>FoxyProxy</code>.<br><br>
+- Tested for SQLi using <strong>' OR '1'='1</strong>:<strong>password</strong>. SQLi is not present.<br><br>
+- Added <strong>broadcast.vulnnet.thm</strong> to <strong>/etc/hosts</strong>.<br><br>
+- Navigated to <strong>broadcast.vulnnet.thm</strong>. Credentials are needed.</br><br>
+- Navigated to <strong>vulnnet.thm/index.php?referer=/etc/passwd</strong> considering the discovery in <strong>/js/index__d8338055.js</strong>.<br><br>
+- Identified users <strong>root</strong> and <strong>system-management</strong>.<br><br>
+- Navigated to <strong>vulnnet.thm/index.php?referer=/etc/apache2/.htpasswd</strong>.<br><br>
+- Discovered a hash in Burp´s response: <strong>developers:$apr1$********$**********************</strong><br><br>
+- Saved it to <strong>Hash</strong> file.<br><br>
+- Cracked the hash using <code>John the Ripper</code> discovering: developers:-----------sls<br><br>
+- Logged in on <strong>broadcast.vulnnet.thm</strong> with the credentials just uncovered.<br>It is running <strong><ins>ClipBucket v4.0<ins></strong> which is vulnerable to <strong><ins>Unauthenticated File Upload</ins></strong>. Exploit in <a href="https://www.exploit-db.com/exploits/44250">ExploitDB</a> or also <strong>44250.txt</strong> through <code>searchsploit</code>.<br><br>
+- Downloaded <a href="https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php">PentestMonkey PHP Reverse Shell</a>. Edited ip and port. Renamed it to <strong><ins>rev.php</ins></code>.<br><br>
+- Uploaded a php file in <strong>broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR</strong>.<br><br>
+- Setup a listener.<br><br>
 - Got the shell as <strong>www-data</strong> after accessing the php file just uploaded and waiting around 1 minute. Stabilized the shell.</p>
 
+<br>
 
 <img width="880" height="548" alt="image" src="https://github.com/user-attachments/assets/84658acf-726b-4d48-96e2-a23b8eeb066a" />
 
@@ -279,16 +281,16 @@ creating file{"success":"yes","file_name":"1759778588419aa2","extension":"php","
 <br>
 <br>
 <br>
-
+<br>
 <h1 align="center">Initial Foothold<a id='6'></h1>
 <p>
 
-- Set up an HTTP server in the attacker machine. Downloaded <code>linpeas.sh</code>, changed its permissions, and executed it. It highlighted <strong><ins>/var/backups/ssh-backup.tar.gz</ins></strong> owned by <strong>system-management</strong>.<br>
-- Set up an HTTP server in the target machine. Downloaded <strong><ins>ssh-backup.tar.gz</ins></strong>.<br>
-- Uncompressed it using <code>tar</code>, and obtained <strong><ins>id_rsa</ins></strong>.<br>
-- Attempedd SSH login and identified that a passphrase was required.<br>
-- Made a backup of <strong><ins>id_rsa</ins></strong>.<br>
-- Converted the encrypted private key into a John the Ripper format using <code>ssh2john</code>. Used John to crack the passphrase.<br>
+- Set up an HTTP server in the attacker machine. Downloaded <code>linpeas.sh</code>, changed its permissions, and executed it. It highlighted <strong><ins>/var/backups/ssh-backup.tar.gz</ins></strong> owned by <strong>system-management</strong>.<br><br>
+- Set up an HTTP server in the target machine. Downloaded <strong><ins>ssh-backup.tar.gz</ins></strong>.<br><br>
+- Uncompressed it using <code>tar</code>, and obtained <strong><ins>id_rsa</ins></strong>.<br><br>
+- Attempedd SSH login and identified that a passphrase was required.<br><br>
+- Made a backup of <strong><ins>id_rsa</ins></strong>.<br><br>
+- Converted the encrypted private key into a John the Ripper format using <code>ssh2john</code>. Used John to crack the passphrase.<br><br>
 - Logged in as <strong>system-management</strong> via <code>SSH</code>. Initial foothold achieved.</p>
 
 <br>
