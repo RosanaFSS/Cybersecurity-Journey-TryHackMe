@@ -15,20 +15,38 @@ Please allow 4 to 5 minutes for the VM to boot.</p>
 
 <p><em>Answer the question below</em></p>
 
-<p>1.1. What si the flag:<br>
+<p>1.1. What is the flag:<br>
 <code>*******************************</code></p>
 
 
 <br>
 <br>
-<h2 align="center">nmap</h2>
+<h1 align="center">Port Scanning → Service Discovery</h1>
+<p align="center"><strong>3</strong> open ports</p>
+
+<div align="center"><p>
+
+| **Port**           | **Service**          | **Version**                     |
+|-------------------:|:---------------------|:--------------------------------|
+| `22`               |`SSH`                 |OpenSSH 7.6p1 Ubuntu 4ubuntu0.3  |
+| `80`               |`HTTP`                |                                 |
+| `8443`             |`SSL/HTTP`            |                                 |
+
+</p></div><br>
 
 ```bash
-:~/PythonPlayground# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
+:~/IslandOrchestration# nmap 10.201.84.25
 ...
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-...
-80/tcp open  http    Node.js Express framework
-|_http-title: Python Playground!
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+80/tcp   filtered http
+8443/tcp filtered https-alt
 ```
+
+<img width="1275" height="274" alt="image" src="https://github.com/user-attachments/assets/16c93518-6033-49f5-94be-1b570f4179b6" />
+
+<br>
+<br>
+<br>
+
+<p>I opened a ticket because this challenge is "broken".<br>Enumerated many times and just port 22 is open</p>
