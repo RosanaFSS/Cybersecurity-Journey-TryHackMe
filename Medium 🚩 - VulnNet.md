@@ -18,7 +18,6 @@ Access it <a href="https://tryhackme.com/room/vulnnet1">here</a>.<br>
 <p><em>Answer the questions below</em></p>
 
 <br>
-<br>
 <h1 align="center">Summary</h1>
 <p>
 
@@ -31,6 +30,7 @@ Access it <a href="https://tryhackme.com/room/vulnnet1">here</a>.<br>
 - [Privilege Escalation & User Flag](#7)<br>
 - [Privilege Escalation & Root Flag](#8)</p>
 
+<br>
 <br>
 <br>
 <br>
@@ -174,8 +174,6 @@ Task Completed
 <br>
 <br>
 <br>
-
-<img width="876" height="526" alt="image" src="https://github.com/user-attachments/assets/a726beef-07f3-4537-9bc2-5ffe00abf0c1" />
 
 <p><em>Request</em></p>
 
