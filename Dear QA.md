@@ -65,6 +65,22 @@ Segmentation fault (core dumped)
   
 - main() function</p>
 
+```bash
+undefined8 main(void)
+
+{
+  undefined local_28 [32];
+  
+  puts("Welcome dearQA");
+  puts("I am sysadmin, i am new in developing");
+  printf("What's your name: ");
+  fflush(stdout);
+  __isoc99_scanf(&DAT_00400851,local_28);
+  printf("Hello: %s\n",local_28);
+  return 0;
+}
+```
+
 <img width="1791" height="886" alt="image" src="https://github.com/user-attachments/assets/8aa89c9d-3035-4089-a524-01e10de382f8" />
 
 <br>
@@ -72,7 +88,7 @@ Segmentation fault (core dumped)
 <br>
 <p>
   
-- vul() function</p>
+- vuln() function</p>
 
 ```bash
 void vuln(void)
