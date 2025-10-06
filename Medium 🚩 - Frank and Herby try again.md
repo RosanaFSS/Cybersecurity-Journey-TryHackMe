@@ -890,8 +890,8 @@ THM{*****-***-*****-*****-****}
 
 <br>
 <p>1.2. <em><strong>Root</strong> flag?</em><br>
-<strongTHM{*****-***-*****-*****-****}</strong></p>
-<br>
+<strong>THM{*****-***-*****-*****-****}</strong></p>
+  <br>
 <br>
 <br>
 
