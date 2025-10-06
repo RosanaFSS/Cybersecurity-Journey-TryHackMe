@@ -22,16 +22,16 @@ Access it <a href="https://tryhackme.com/room/vulnnet1">here</a>.<br>
 <br>
 <br>
 <h1 align="center">Summary</h1>
-<p  align="center">
+<p>
 
-[Static Host Mapping](#1)<br>  
-[Port Scanning → Service Discovery](#2)<br>
-[Web Vulberability Scanning](#3)<br>
-[Directory and File Enumeration](#4)<br>
-[Web Interface Inspection, Weaponization, Delivery & Execution](#5)<br>
-[Initial Foothold](#6)<br>
-[Privilege Escalation & User Flag](#7)<br>
-[Privilege Escalation & Root Flag](#8)</p>
+- [Static Host Mapping](#1)<br>  
+- [Port Scanning → Service Discovery](#2)<br>
+- [Web Vulberability Scanning](#3)<br>
+- [Directory and File Enumeration](#4)<br>
+- [Web Interface Inspection, Weaponization, Delivery & Execution](#5)<br>
+- [Initial Foothold](#6)<br>
+- [Privilege Escalation & User Flag](#7)<br>
+- [Privilege Escalation & Root Flag](#8)</p>
 
 <br>
 <br>
