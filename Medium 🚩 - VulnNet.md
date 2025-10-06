@@ -217,12 +217,6 @@ echo 'xx.xxx.xx.xxx broadcast.vulnnet.thm' >> /etc/hosts
 <br>
 <br>
 
-<img width="876" height="526" alt="image" src="https://github.com/user-attachments/assets/a726beef-07f3-4537-9bc2-5ffe00abf0c1" />
-
-<br>
-<br>
-<br>
-
 <img width="1108" height="537" alt="image" src="https://github.com/user-attachments/assets/65f419ee-e61b-4bdd-9ec0-8316448c08c4" />
 
 <br>
