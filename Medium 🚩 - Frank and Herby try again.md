@@ -875,7 +875,8 @@ THM{*****-***-*****-*****-****}
 :~/FrankandHerbyTryAgain# kubeletctl pods -s xx.xxx.xx.xx --http --port 10255
 ```
 
-<img width="1182" height="399" alt="image" src="https://github.com/user-attachments/assets/8a36c602-9734-45ec-b4a0-abff22873504" />
+<p><img width="1200px" src="https://github.com/user-attachments/assets/8a36c602-9734-45ec-b4a0-abff22873504"></p>
+
 
 <br>
 <br>
@@ -908,3 +909,8 @@ THM{*****-***-*****-*****-****}
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/1f0c19ee-7f87-4fb8-8da5-c7b5c71d12c1"><br>
                   Global monthly:     300ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d28a9ffe-4532-4c4d-b043-5e9cf63a9b28"><br>
                   Brazil monthly:       5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a13ac859-b761-4e37-95b1-ad18cc718440"><br>
+
+
+<br>
+<h1 align="center">Thanks for Coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
