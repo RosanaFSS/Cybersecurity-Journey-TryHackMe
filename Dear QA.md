@@ -93,8 +93,8 @@ Segmentation fault (core dumped)
 - so we know the buffer occupies <strong>32</strong> bytes, and there's <strong>8</strong> bytes between the buffer and the return address (usually the saved RBP).<br>
 - if input > <strong>32</strong> bytes --> overflow into adjacent stack memory<br>
 - <code>__isoc99_scanf(&DAT_00400851, local_28);</code> = is a  is a scanf() that calls with a format string at DAT_00400851<br><br><br>
-local_28 = <strong>32</strong> bytes
-saved RBP =  <strong>8</strong> bytes
+local_28 = <strong>32</strong> bytes<br>
+saved RBP =  <strong>8</strong> bytes<br>
 return address =  next <strong>8</strong> bytes</p>
 
 
