@@ -729,7 +729,7 @@ php-deploy-6d998f68b9-fvtcg   1/1     Running       0             65m
 ```
 
 <br>
-<p align="center">Created <em>rosana.yaml</em> substituting some parameters of the penultimate step output.<em></p>
+<p align="center">Created <em>rosana.yaml</em> substituting some parameters of the penultimate step output.</p>
 
 ```bash
 apiVersion: v1
