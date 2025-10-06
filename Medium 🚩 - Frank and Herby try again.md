@@ -16,7 +16,9 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <br>
 <br>
 <h1 align="center">Summary</h1>
-<p  align="center">[Port Scanning → Service Discovery](#1)<br>[Web Vulberability Scanning](#2)<br>
+<p  align="center">
+  
+[Port Scanning → Service Discovery](#1)<br>[Web Vulberability Scanning](#2)<br>
 [Directory and File Enumeration](#3)<br>
 [Web Interface Inspection](#4)<br>
 [Weaponization](#5)<br>
