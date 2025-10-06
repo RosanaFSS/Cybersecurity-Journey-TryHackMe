@@ -1,9 +1,9 @@
 <h1 align="center">Frank and Herby try again.....</h1>
-<p align="center">2025, October 4<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>516</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, October 5<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>517</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Frank and Herby still don't know how to use kubernetes correctly.</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/9d256bcb-9e93-4043-8e79-98383fb65246"><br>
 Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/f5389d97-300c-458f-bddb-5cc64c37ad2c"></p>
 
 <br>
 <br>
@@ -827,8 +827,8 @@ THM{*-******-****-*****}
 
 <br>
 
-> 1.1. <em><strong>User</strong> flag?</em>
->> <strong>THM{*-******-****-*****}</strong><br>
+<p>1.1. <em><strong>User</strong> flag?</em><br>
+<strong>THM{*-******-****-*****}</strong></p>
 <br>
 
 <br>
@@ -881,8 +881,8 @@ THM{*****-***-*****-*****-****}
 
 <br>
 
-> 1.2. <em><strong>Root</strong> flag?</em>
->> <strongTHM{*****-***-*****-*****-****}</strong><br>
+<p>1.2. <em><strong>Root</strong> flag?</em><br>
+<strongTHM{*****-***-*****-*****-****}</strong></p>
 
 <br>
 <br>
