@@ -25,7 +25,7 @@ Access it <a href="https://tryhackme.com/room/vulnnet1">here</a>.<br>
 <p>
 
 - [Static Host Mapping](#1)<br>  
-- [Port Scanning → Service Discovery](#2)<br>
+- [Port Scanning](#2)<br>
 - [Web Vulberability Scanning](#3)<br>
 - [Directory and File Enumeration](#4)<br>
 - [Web Interface Inspection, Weaponization, Delivery & Execution](#5)<br>
