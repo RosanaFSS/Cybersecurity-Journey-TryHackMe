@@ -419,18 +419,6 @@ THM{********************************}
 <br>
 <br>
 
-<img width="1232" height="411" alt="image" src="https://github.com/user-attachments/assets/1def7cdb-49f6-4c48-a873-3bbb112b2e6c" />
-
-<br>
-<br>
-<br>
-
-<img width="1230" height="451" alt="image" src="https://github.com/user-attachments/assets/4a3b3111-7ea3-4926-91c5-01f2d2df8c04" />
-
-<br>
-<br>
-<br>
-
 <img width="1230" height="330" alt="image" src="https://github.com/user-attachments/assets/fb92e5dd-d6e0-4b15-9f39-e112f74cbbf4" />
 
 <br>
@@ -496,7 +484,7 @@ server-management@vulnnet:~/Documents$ echo > '--checkpoint=1'
 server-management@vulnnet:~/Documents$ echo > '--checkpoint-action=exec=sh shell.sh'
 ```
 
-<img width="1227" height="157" alt="image" src="https://github.com/user-attachments/assets/8ef47cde-8483-44ce-9155-7eaeb2bde190" />
+<img width="1261" height="157" alt="image" src="https://github.com/user-attachments/assets/e4df2eb1-ab4c-42d1-9995-cb5f3cc78275" />
 
 <br>
 <br>
