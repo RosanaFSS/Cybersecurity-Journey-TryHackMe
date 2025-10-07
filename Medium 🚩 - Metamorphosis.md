@@ -27,10 +27,21 @@ Like my work, Follow on twitter to be updated and know more about my work! (@0ci
 
 <br>
 
-<h3>nmap</h3>
+<h1  align="center">Port Scanning<a id='2'></h1>
+
+<div align="center"><p>
+
+| **Port**           | **Service**          | **Version**                     |
+|-------------------:|:---------------------|:--------------------------------|
+| `22`               |`SSH`                 |OpenSSH 7.6p1 Ubuntu 4ubuntu0.3  |
+| `80`               |`HTTP`                |Apache httpd 2.4.41              |
+| `139`              |              |          | 
+| `445`              |               |              | 
+| `873`              |                |             | 
+
 
 ```bash
-:~/Metamorphosis# nmap -sC -sV -Pn -p- -T4 metamorphosis.thm
+:~/Metamorphosis# nmap -sC -sV -Pn -p- -T4 xx.xxx.xxx.xx
 ...
 PORT    STATE SERVICE     VERSION
 22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
@@ -42,22 +53,17 @@ PORT    STATE SERVICE     VERSION
 873/tcp open  rsync       (protocol version 31)
 ...
 Host script results:
-|_clock-skew: -1s
 |_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 | smb2-security-mode: 
 |   2.02: 
 |_    Message signing enabled but not required
 | smb2-time: 
-|   date: 2025-08-04Txx:xx:xx
+|   date: 2025-10-07T18:24:34
 |_  start_date: N/A
 ```
 
-<br>
-
-<h3>Rustscan</h3>
-
 ```bash
-:~/Metamorphosis# rustscan -a TargetIP --ulimit 5500 -b 65535 -- -A -Pn
+:~/Metamorphosis# rustscan -a 10.201.123.26 --ulimit 5500 -b 65535 -- -A -Pn
 ...
 PORT    STATE SERVICE     REASON  VERSION
 22/tcp  open  ssh         syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
@@ -67,9 +73,10 @@ PORT    STATE SERVICE     REASON  VERSION
 139/tcp open  netbios-ssn syn-ack Samba smbd 4.6.2
 445/tcp open  netbios-ssn syn-ack Samba smbd 4.6.2
 873/tcp open  rsync       syn-ack (protocol version 31)
-...
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
 Host script results:
-|_clock-skew: -1s
+|_clock-skew: 0s
 | nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 | Names:
 |   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
@@ -85,20 +92,95 @@ Host script results:
 |_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
 | p2p-conficker: 
 |   Checking for Conficker.C or higher...
-|   Check 1 (port 8184/tcp): CLEAN (Couldn't connect)
-|   Check 2 (port 17761/tcp): CLEAN (Couldn't connect)
-|   Check 3 (port 15754/udp): CLEAN (Failed to receive data)
-|   Check 4 (port 11606/udp): CLEAN (Failed to receive data)
+|   Check 1 (port 35810/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 14752/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 45155/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 54881/udp): CLEAN (Failed to receive data)
 |_  0/4 checks are positive: Host is CLEAN or ports are blocked
 | smb2-security-mode: 
 |   2.02: 
 |_    Message signing enabled but not required
 | smb2-time: 
-|   date: 2025-08-04Txx:xx:xx
+|   date: 2025-10-07T18:26:09
 |_  start_date: N/A
 ```
 
+
+
+```bash
+:~/Metamorphosis# rsync -avzh rsync://10.201.123.26/Conf .
+receiving incremental file list
+./
+access.conf
+bluezone.ini
+debconf.conf
+ldap.conf
+lvm.conf
+mysql.ini
+php.ini
+ports.conf
+resolv.conf
+screen-cleanup.conf
+smb.conf
+webapp.ini
+```
+
+
+<img width="1205" height="322" alt="image" src="https://github.com/user-attachments/assets/a45f9d98-94c9-4d8c-874c-a23ca35ad53d" />
+
 <br>
+<br>
+<br>
+
+```bash
+:~/Metamorphosis# ls
+access.conf  bluezone.ini  debconf.conf  ldap.conf  lvm.conf  mysql.ini  php.ini  ports.conf  resolv.conf  screen-cleanup.conf  smb.conf  webapp.ini
+```
+
+```bash
+:~/Metamorphosis# cat webapp.ini
+[Web_App]
+env = prod
+user = tom
+password = theCat
+
+[Details]
+Local = No
+```
+
+
+
+
+
+
+
+
+
+
+
+:~/Metamorphosis# smbmap -u 'guest' -p '' -H 10.201.123.26
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.201.123.26...
+[+] IP: 10.201.123.26:445	Name: 10.201.123.26                                     
+	Disk                                                  	Permissions	Comment
+	----                                                  	-----------	-------
+	print$                                            	NO ACCESS	Printer Drivers
+	IPC$                                              	NO ACCESS	IPC Service (ip-10-201-123-26 server (Samba, Ubuntu))
+
+
+
+:~/Metamorphosis# smbclient -L 10.201.123.26 -N
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	IPC$            IPC       IPC Service (ip-10-201-123-26 server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+
+
+
+
+
 
 <h3>Dirsearch</h3>
 
@@ -279,9 +361,8 @@ total size is 71  speedup is 0.31
 ```bash
 
 ```
-
-
 ffuf -u http:/10.201.104.23/FUZZ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -fc 403 -e .phps
+```
 
 <h3>smb</h3>
 
