@@ -323,12 +323,6 @@ drwxr-xr-x 14 root              root              4.0K Jan 23  2021 ..
 -rw-r--r--  1 root              root               49K Oct  6 21:38 vulnnet-Monday.tgz
 ```
 
-<img width="1348" height="372" alt="image" src="https://github.com/user-attachments/assets/6b072cd9-d61f-4504-b83e-b4e2542b1aa3" />
-
-<br>
-<br>
-<br>
-
 ```bash
 :~/VulnNet# wget http://xx.xxx.xx.xxx:8000/ssh-backup.tar.gz
 ```
