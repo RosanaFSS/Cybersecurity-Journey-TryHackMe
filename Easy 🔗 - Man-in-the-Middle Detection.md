@@ -102,8 +102,8 @@ Access it <a href="https://tryhackme.com/room/mitmdetection">here</a>.<br>
 
 <br>
 
-<p align="center">Global All Time:   105ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/a2ff32a5-52c6-4fd2-8be8-b010761c47cc"><br>
+<p align="center">Global All Time:   103ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/a2ff32a5-52c6-4fd2-8be8-b010761c47cc"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/a78f8a5d-a8bb-4196-9f44-53a0dc82e637"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c9a0940a-bf09-44ac-a8ef-fb127c7391a6"><br>
-                  Global monthly:     348ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dc34e38a-1b3a-4240-be12-0f6351a04ea0"><br>
-                  Brazil monthly:       5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dd13a485-6aa1-4d75-ac76-22dc1fe4ad09"><br>
+                  Global monthly:     390ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dc34e38a-1b3a-4240-be12-0f6351a04ea0"><br>
+                  Brazil monthly:       4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dd13a485-6aa1-4d75-ac76-22dc1fe4ad09"><br>
