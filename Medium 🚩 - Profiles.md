@@ -6,9 +6,6 @@ Access it <a href="https://tryhackme.com/room/profilesroom">here</a>.<br>
 <img width="1200px" src=""></p>
 
 
-<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/c35ae659-464e-4886-96fe-7599c5a6a72a" />
-
-
 <h2>Task 1 . The Incident</h2>
 <p>The incident response team has alerted you that there was some suspicious activity on one of the Linux database servers.<br>
 
