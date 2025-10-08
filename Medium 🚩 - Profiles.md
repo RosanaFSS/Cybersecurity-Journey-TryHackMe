@@ -19,14 +19,93 @@ Note: The challenge is best done using your own environment. I recommend using V
 <p><em>Answer the questions below</em></p>
 
 <p>1.1. What is the exposed root password?<br>
-<code>************</code></p>
+<code>Ftrccw45PHyq</code></p>
 
 ```bash
-(volatility) ...$ strings -a -td linux.mem > challenge_strings.txt
+$ strings -a -td linux.mem > challenge_strings.txt
 ```
 
 ```bash
-(volatility) ...$ strings -a -td linux.mem > challenge_strings.txt
+$ grep -E 'su root' challenge_strings.txt
+789842768 su root
+794655216 _CMDLINE=su root
+2810770992 _CMDLINE=su root
+2814347152 su root
+3799619328 su root
+3853033984 su rootFtrccw45PHyq
+4169226848 su root
+```
+
+<img width="1687" height="128" alt="image" src="https://github.com/user-attachments/assets/e1b01cb8-79c1-40b1-b619-70236d5ca344" />
+
+<br>
+<br>
+<p>1.2. And what time was the users.db file approximately accessed? Format is YYYY-MM-DD HH:MM:SS<br>
+<code>2023-11-07 03:49:45</code></p>
+
+<p>
+
+<p>Extracted and ordered by time. Analyzed.</p>
+
+```bash
+$ grep -E '7 03:[0-6][0-9]:[0-6][0-9]' challenge_strings.txt | awk '{match($0, /03:[0-9]{2}:[0-9]{2}/); print substr($0, RSTART, RLENGTH), $0}' | sort | cut -d' ' -f2-
+```
+
+<p>Extracted just the ones with timestamp.</p>
+
+```bash
+$ grep '7 03:' challenge_strings.txt > timed.txt
+```
+
+<p>Filtered paco:
+
+- 03:49:45<br>. dbserver systemd[1]: Started Session 3 of user paco.<br>. sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)<br>. dbserver sshd[1002]: Accepted password for paco from 10.0.2.72 port 53888 ssh2<br>. dbserver sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)<br>. dbserver systemd-logind[676]: New session 3 of user paco.</p>
+
+```bash
+$ grep 'paco' timed.txt
+807196161 Nov  7 03:49:18 dbserver systemd[1]: Started Session 1 of user paco.
+807196550 Nov  7 03:49:45 dbserver systemd[1]: Started Session 3 of user paco.
+2793951809 Nov  7 03:49:18 dbserver systemd[1]: Started Session 1 of user paco.
+2793952198 Nov  7 03:49:45 dbserver systemd[1]: Started Session 3 of user paco.
+
+
+4013805672  7 03:49:45 sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)
+
+
+4016538728  7 03:51:18 su: (to root) paco on none
+4055703654 iP 7 03:49:18 systemd[1]: Started Session 1 of user paco.
+4094508163 Nov  7 03:41:43 dbserver sshd[826]: pam_unix(sshd:session): session opened for user paco by (uid=0)
+4094508263 Nov  7 03:41:43 dbserver systemd-logind[681]: New session 1 of user paco.
+4094508337 Nov  7 03:41:43 dbserver systemd: pam_unix(systemd-user:session): session opened for user paco by (uid=0)
+4094508443 Nov  7 03:41:53 dbserver su: pam_unix(su:auth): authentication failure; logname=paco uid=1000 euid=0 tty=pts/0 ruser=paco rhost=  user=root
+4094508583 Nov  7 03:41:55 dbserver su: FAILED SU (to root) paco on pts/0
+4094508646 Nov  7 03:42:05 dbserver su: (to root) paco on pts/0
+4094508699 Nov  7 03:42:05 dbserver su: pam_unix(su:session): session opened for user root by paco(uid=1000)
+4094509414 Nov  7 03:45:37 dbserver sshd[822]: Accepted password for paco from 10.0.2.72 port 49606 ssh2
+4094509508 Nov  7 03:45:37 dbserver sshd[822]: pam_unix(sshd:session): session opened for user paco by (uid=0)
+4094509608 Nov  7 03:45:37 dbserver systemd-logind[676]: New session 1 of user paco.
+4094509682 Nov  7 03:45:37 dbserver systemd: pam_unix(systemd-user:session): session opened for user paco by (uid=0)
+4094509788 Nov  7 03:46:02 dbserver su: (to root) paco on pts/0
+4094509841 Nov  7 03:46:02 dbserver su: pam_unix(su:session): session opened for user root by paco(uid=1000)
+4094510556 Nov  7 03:49:18 dbserver sshd[819]: Accepted password for paco from 10.0.2.72 port 54510 ssh2
+4094510650 Nov  7 03:49:18 dbserver sshd[819]: pam_unix(sshd:session): session opened for user paco by (uid=0)
+4094510750 Nov  7 03:49:18 dbserver systemd-logind[676]: New session 1 of user paco.
+4094510824 Nov  7 03:49:18 dbserver systemd: pam_unix(systemd-user:session): session opened for user paco by (uid=0)
+4094510930 Nov  7 03:49:31 dbserver su: (to root) paco on pts/0
+4094510983 Nov  7 03:49:31 dbserver su: pam_unix(su:session): session opened for user root by paco(uid=1000)
+4094511268 Nov  7 03:49:38 dbserver sshd[958]: Disconnected from user paco 10.0.2.72 port 54510
+4094511353 Nov  7 03:49:38 dbserver sshd[819]: pam_unix(sshd:session): session closed for user paco
+4094511606 Nov  7 03:49:45 dbserver sshd[1002]: Accepted password for paco from 10.0.2.72 port 53888 ssh2
+4094511701 Nov  7 03:49:45 dbserver sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)
+4094511802 Nov  7 03:49:45 dbserver systemd-logind[676]: New session 3 of user paco.
+4094511876 Nov  7 03:51:18 dbserver su: (to root) paco on none
+4104415033 Nov  7 03:45:37 dbserver systemd[1]: Started Session 1 of user paco.
+```
+
+<p>Extracted the sessions opened for </p>
+
+```bash
+$ grep -E '7 03:[0-6][0-9]:[0-6][0-9]' challenge_strings.txt | awk '{match($0, /03:[0-9]{2}:[0-9]{2}/); print substr($0, RSTART, RLENGTH), $0}' | sort | cut -d' ' -f2-
 ```
 
 
