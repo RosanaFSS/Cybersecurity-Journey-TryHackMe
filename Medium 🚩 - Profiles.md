@@ -57,9 +57,9 @@ $ grep -E '7 03:[0-6][0-9]:[0-6][0-9]' challenge_strings.txt | awk '{match($0, /
 $ grep '7 03:' challenge_strings.txt > timed.txt
 ```
 
-<p>Filtered paco:
+<p>Filtered paco:<br>
 
-- 03:49:45<br>. dbserver systemd[1]: Started Session 3 of user paco.<br>. sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)<br>. dbserver sshd[1002]: Accepted password for paco from 10.0.2.72 port 53888 ssh2<br>. dbserver sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)<br>. dbserver systemd-logind[676]: New session 3 of user paco.</p>
+- 03:49:45<br>. <code>dbserver</code> systemd[1]: Started Session 3 of user paco.<br>. sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)<br>. <code>dbserver</code> sshd[1002]: Accepted password for paco from 10.0.2.72 port 53888 ssh2<br>. <code>dbserver</code> sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)<br>. <code>dbserver</code> systemd-logind[676]: New session 3 of user paco.</p>
 
 ```bash
 $ grep 'paco' timed.txt
@@ -67,11 +67,7 @@ $ grep 'paco' timed.txt
 807196550 Nov  7 03:49:45 dbserver systemd[1]: Started Session 3 of user paco.
 2793951809 Nov  7 03:49:18 dbserver systemd[1]: Started Session 1 of user paco.
 2793952198 Nov  7 03:49:45 dbserver systemd[1]: Started Session 3 of user paco.
-
-
 4013805672  7 03:49:45 sshd[1002]: pam_unix(sshd:session): session opened for user paco by (uid=0)
-
-
 4016538728  7 03:51:18 su: (to root) paco on none
 4055703654 iP 7 03:49:18 systemd[1]: Started Session 1 of user paco.
 4094508163 Nov  7 03:41:43 dbserver sshd[826]: pam_unix(sshd:session): session opened for user paco by (uid=0)
@@ -102,15 +98,9 @@ $ grep 'paco' timed.txt
 4104415033 Nov  7 03:45:37 dbserver systemd[1]: Started Session 1 of user paco.
 ```
 
-<p>Extracted the sessions opened for </p>
 
 ```bash
-$ grep -E '7 03:[0-6][0-9]:[0-6][0-9]' challenge_strings.txt | awk '{match($0, /03:[0-9]{2}:[0-9]{2}/); print substr($0, RSTART, RLENGTH), $0}' | sort | cut -d' ' -f2-
-```
-
-
-```bash
-(volatility) ...$ python3 vol.py -f linux.mem banners.Banners
+$ python3 vol.py -f linux.mem banners.Banners
 Volatility 3 Framework 2.27.0
 Progress:  100.00               PDB scanning finished
 Offset  Banner
@@ -126,8 +116,8 @@ Offset  Banner
 
 
 
-<p>1.2. And what time was the users.db file approximately accessed? Format is YYYY-MM-DD HH:MM:SS<br>
-<code>2023-11-07 03:49:45</code></p>
+
+<img width="1606" height="97" alt="image" src="https://github.com/user-attachments/assets/3e7508b5-ac04-4fe5-9753-ddf6bec1a646" />
 
 
 
@@ -169,15 +159,67 @@ $ cat challenge_strings.txt  | grep 'login' | grep 10.0.2.72
 821611600 op=login id=1000 exe="/usr/sbin/sshd" hostname=10.0.2.72 addr=10.0.2.72 terminal=/dev/pts/0 res=success
 ```
 
-```bash
-$ cat challenge_strings.txt  | grep 'session opened for user root by'
-794656656 MESSAGE=pam_unix(su:session): session opened for user root by paco(uid=1000)
-817769604 Nov  7 03:51:49 dbserver systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-```
-
 <br>
 <p>1.5. What is the full path of the cronjob file and its inode number? Format is filename:inode number<br>
 <code>/var/spool/cron/crontabs/root:******</code></p>
+
+```bash
+$ cat challenge_strings.txt | grep 'crontab' | sort
+2794780940 crontab:x:105:
+2800802112 crontabs/root
+2800804240 echo '* * * * * cp /opt/.bashrc /root/.bashrc' >> /crontabs/root
+2800804384 echo '* * * * * cp /opt/.bashrc /root/.bashrc' >> /var/spool/cron/crontabs/root
+2800804656 crontabs/root
+2811377564 crontab:x:105:
+2821608752 echo '* * * * * cp /opt/.bashrc /root/.bashrc' >> /var/spool/cron/crontabs/root
+2821609056 /var/spool/cron/crontabs/root
+2831895612 Nov  7 03:52:01 dbserver cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+2832019324 crontab:x:105:
+3766027520 crontab
+3766062588 crontab:x:105:
+3777316064 crontabs/root
+3837163628 crontab:x:105:
+3850116140 crontab:x:105:
+3850347340 crontab:x:105:
+3851054988 crontab:x:105:
+3868154672 <78>Nov  7 03:52:01 cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+3885059984 crontabZ1
+3973092864 MESSAGE=(root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+4055705702 aP 7 03:52:01 cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+4101957468 crontab:x:105:
+4102338592 root) INSECURE MODE (mode 0600 expected) (crontabs/root)gent.e..restricted).eb browsers).0000:00:03.0': not supported by any plugin
+4102969760 <78>Nov  7 03:52:01 cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+4114833051 crontabs
+4114833060 /etc/crontab
+4114833520 Error: %s; while reading crontab for user %s
+4114833568 fdopen on crontab_fd in load_user
+4114833880 Missing newline before EOF, this crontab file will be ignored
+4114833944 Syntax error, this crontab file will be ignored
+4114833992 crontab must not be longer than 10000 lines, this crontab file will be ignored
+4114834071 Out of memory parsing crontab
+4121795744 crontabs
+4130013516 crontab:x:105:
+4170038368 # /etc/crontab: system-wide crontab
+4170038404 # Unlike any other crontab you don't have to run the `crontab'
+4170038595 # that none of the other crontabs do.
+4170753024 :01 cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+4170914108 crontab:x:10
+4185965159 I 7 03:52:01 cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+4192950616 crontab
+4192950808 crontabs
+4223050740 crontabt
+773836796 Nov  7 03:52:01 dbserver cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
+773960508 crontab:x:105:
+788715760 echo '* * * * * cp /opt/.bashrc /root/.bashrc' >> /var/spool/cron/crontabs/root
+788716064 /var/spool/cron/crontabs/root
+795261788 crontab:x:105:
+805657856 crontabs/root
+805659984 echo '* * * * * cp /opt/.bashrc /root/.bashrc' >> /var/spool/cron/crontabs/root
+805660128 echo '* * * * * cp /opt/.bashrc /root/.bashrc' >> /var/spool/cron/crontabs/root
+805660400 crontabs/root
+808025292 crontab:x:105:
+```
+
 
 
 
@@ -186,15 +228,7 @@ $ cat challenge_strings.txt  | grep 'session opened for user root by'
 <code>______________</code></p>
 
 
-```bash
-$ cat challenge_strings.txt  | grep ' cron'
-768488131 cron
-773836796 Nov  7 03:52:01 dbserver cron[653]: (root) INSECURE MODE (mode 0600 expected) (crontabs/root)
-773960508 crontab:x:105:
-795261788 crontab:x:105:
-805657856 crontabs/root
-805660400 crontabs/root
-```
+
 
 
 
