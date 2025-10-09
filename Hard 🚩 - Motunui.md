@@ -24,8 +24,8 @@ Access it <a href="https://tryhackme.com/room/motunui">here</a>.<br>
 - [Directory and File Enumeration](#6)<br>
 - [Web Interface Inspection](#7)<br>
 - [Static Host Mapping](#8)<br>
-- [Weaponization, Delivery & Execution](#9)<br>
-- [Initial Foothold](#10)<br>
+- [Weaponization](#9)<br>
+- [Delivery & Execution & Initial Foothold](#10)<br>
 - [Privilege Escalation & User Flag](#11)<br>
 - [Privilege Escalation & Root Flag](#12)</p>
 
@@ -600,7 +600,7 @@ xx.xxx.xxx.x d3v3lopm3nt.motunui.thm motonui.thm api.motonui.thm
 ```
 
 <br>
-<h1 align="center">Weaponization, Delivery & Execution<a id='9'></a></h1>
+<h1 align="center">Weaponization<a id='9'></a></h1>
 <p align="center">api.motonui.thm:3000/v2/login</p>
 
 ```bash
@@ -653,6 +653,8 @@ island                  [Status: 200, Size: 19, Words: 1, Lines: 1]
 <br>
 <br>
 <br>
+<h1 align="center">Delivery & Execution & Initial Foothold<a id='10'></a></h1>
+
 
 <img width="836" height="262" alt="image" src="https://github.com/user-attachments/assets/e6500bda-600b-4ae6-b479-b9cfd8edc153" />
 
@@ -695,9 +697,6 @@ Content-Type: application/x-www-form-urlencoded
 <br>
 <br>
 <br>
-
-<br>
-<h1 align="center">Initial Foothold<a id='10'></a></h1>
 
 ```bash
 www-data@motunui:/home$ ls
