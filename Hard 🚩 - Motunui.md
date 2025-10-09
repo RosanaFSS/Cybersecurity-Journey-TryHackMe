@@ -516,10 +516,6 @@ Progress: 654825 / 654828 (100.00%)
 
 <img width="1270" height="267" alt="image" src="https://github.com/user-attachments/assets/681e88bc-23d8-4b39-85ea-fdd5fdd594be" />
 
-<br>
-<br>
-<br<
-
 ```bash
 # Documentation for the in-development API
 
