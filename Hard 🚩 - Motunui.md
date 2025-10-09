@@ -587,21 +587,16 @@ Creates a new cron job running as the current user.
 }
 ```
 
-<br>
-<h1 align="center">Static Host Mapping<a id='8'></a></h1>
-
-```bash
-xx.xxx.xxx.x d3v3lopm3nt.motunui.thm
-```
 
 <img width="1275" height="765" alt="image" src="https://github.com/user-attachments/assets/f428e4b5-db6e-44ac-bfa4-926ce29f2e34" />
 
 <br>
 <br>
 <br>
+<h1 align="center">Static Host Mapping<a id='8'></a></h1>
 
 ```bash
-xx.xxx.xxx.x d3v3lopm3nt.motunui.thm api.motonui.thm
+xx.xxx.xxx.x d3v3lopm3nt.motunui.thm motonui.thm api.motonui.thm
 ```
 
 <br>
