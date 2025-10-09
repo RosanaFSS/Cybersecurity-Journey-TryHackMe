@@ -838,8 +838,8 @@ t.pkt: data
 - Launch <code>Packet Tracer</code>. Click <code>File</code> > <code>Open</code>. Choose <ins>t.pkt</ins>. Click <code>Open</code><br>
 - 1 . Double-click the switch<br>
 - 2 . navigate to the <code>CLI</code>.<br>
-- 3 . [ENTER] and a <code>Switch></code> will show up. Type <code>enable<code>. [ENTER] and a <code>Switch#</code> prompt will show up.<br>
-- 4 . type <code>show running-config</code>. [ENTER].</p>
+- 3 . ENTER and a <code>Switch></code> will show up. Type <code>enable<code>. ENTER and a <code>Switch#</code> prompt will show up.<br>
+- 4 . type <code>show running-config</code>. ENTER.</p>
 
 <img width="1623" height="858" alt="image" src="https://github.com/user-attachments/assets/5ddec520-26cd-436f-a803-cd28c1009e04" />
 
