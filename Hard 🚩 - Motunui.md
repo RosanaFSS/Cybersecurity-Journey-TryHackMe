@@ -13,6 +13,26 @@ Access it <a href="https://tryhackme.com/room/motunui">here</a>.<br>
 
 
 <br>
+<h1 align="center">Summary</h1>
+<p>
+
+- [Port Scanning](#1)<br>  
+- [Web Vulberability Scanning](#2)<br>
+- [SMB Enumeration](#3)<br>
+- [Traffic Inspection](#4)<br>
+- [Static Host Mapping](#5)<br>
+- [Web Interface Inspection](#6)<br>
+- [Web Interface Inspection, Weaponization, Delivery & Execution](#7)<br>
+- [Initial Foothold](#8)<br>
+- [Privilege Escalation & User Flag](#9)<br>
+- [Privilege Escalation & Root Flag](#10)</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <h1 align="center">Port Scanning<a id='1'></a></h1>
 <p align="center"><strong>6</strong> open ports</p>
@@ -425,16 +445,29 @@ smb: \tui\> ls
 		19475088 blocks of size 1024. 11271588 blocks available
 ```
 
-
 <br>
 <h1 align="center">Traffic Inspection<a id='4'></a></h1>
-<p>
-  
-- dashboard.png<br>
-- Client Hello www.jake-ruston.com<br>
-- Server Hello, Change Cipher<br>
-- A    0x4f1e 0x079d 0x0a06 0x8653<br>
-- AAAA 0x6d1c 0xe69f 0x9e04 0x8d51</p> 
+<p align="center">Identified:<br><ins>dashboard.png</ins>.<br>Client Hello www.jake-ruston.com<br>Server Hello, Change Cipher<br>A    0x4f1e 0x079d 0x0a06 0x8653<br>AAAA 0x6d1c 0xe69f 0x9e04 0x8d51</p>
+
+<img width="1164" height="198" alt="image" src="https://github.com/user-attachments/assets/5c1b3184-c41a-429d-82d7-ff2ecd9bdc71" />
+
+<br>
+<br>
+<br>
+
+<img width="1210" height="393" alt="image" src="https://github.com/user-attachments/assets/d55f7cb5-e1a8-4e44-ab75-f53888fd39e0" />
+
+<br>
+<br>
+<br>
+
+<p align="center">dashborad.png:<br>d3v3lopm3nt.motonui.thm<br>The pages included on this virtual host are solely for developers of Motunui. Please ensure you have authorisation  to ve viewing this.</p>
+
+<img width="1223" height="196" alt="image" src="https://github.com/user-attachments/assets/02dffd6c-d835-4591-a7d5-c0b5aac02cc8" />
+
+<br>
+<br>
+<br>
 
 ```bash
 GET /dashboard.png HTTP/1.1
@@ -454,28 +487,6 @@ Connection: Keep-Alive
 
 <br>
 <br>
-<br>
-
-<img width="1164" height="198" alt="image" src="https://github.com/user-attachments/assets/5c1b3184-c41a-429d-82d7-ff2ecd9bdc71" />
-
-<br>
-<br>
-<br>
-
-<img width="1210" height="393" alt="image" src="https://github.com/user-attachments/assets/d55f7cb5-e1a8-4e44-ab75-f53888fd39e0" />
-
-<br>
-<br>
-<br>
-
-<p align="center">dashboad.png:<br>d3v3lopm3nt.motonui.thm<br>The pages included on this virtual host are solely for developers of Motunui. Please ensure you have authorisation  to ve viewing this.</p>
-
-<img width="1223" height="196" alt="image" src="https://github.com/user-attachments/assets/02dffd6c-d835-4591-a7d5-c0b5aac02cc8" />
-
-<br>
-<br>
-<br>
-<h1 align="center">Directory and File Enumeration<a id='6'></a></h1>
 <br>
 <p align="center">d3v3lopm3nt.motunui.thm<br>/index.php  .  /docs</p>
   
