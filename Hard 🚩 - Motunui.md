@@ -449,7 +449,7 @@ smb: \tui\> ls
 ```
 
 <br>
-<p align="center">wireshark<br>Analyzed <ins>ticket_6746.pcapng</ins>.<br>Identified:<br><ins>dashboard.png</ins>.<br>Client Hello www.jake-ruston.com<br>Server Hello, Change Cipher<br>A    0x4f1e 0x079d 0x0a06 0x8653<br>AAAA 0x6d1c 0xe69f 0x9e04 0x8d51</p>
+<p align="center">wireshark<br>Analyzed <ins>ticket_6746.pcapng</ins>.<br>Identified: <ins>dashboard.png</ins>, <br>Client Hello www.jake-ruston.com, Server Hello, Change Cipher, A    0x4f1e 0x079d 0x0a06 0x8653, AAAA 0x6d1c 0xe69f 0x9e04 0x8d51</p>
 
 <img width="1164" height="198" alt="image" src="https://github.com/user-attachments/assets/5c1b3184-c41a-429d-82d7-ff2ecd9bdc71" />
 
