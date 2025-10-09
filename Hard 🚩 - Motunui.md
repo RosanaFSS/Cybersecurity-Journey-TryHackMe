@@ -738,7 +738,7 @@ drwxrwxr-x 2 network network 4.0K Jul  9  2020 tui
 ```
 
 <br>
-<p align="center">PKT files are a network simulation files created with Cisco Packet Tracer software, containing a saved network topology, device configurations, and embedded elements for interactive practice and learning of networking concepts.</p>
+<p align="center">network.pkt<br><ins>PKT</ins> files are a network simulation files created with Cisco Packet Tracer software, containing a saved network topology, device configurations, and embedded elements for interactive practice and learning of networking concepts.</p>
 
 ```bash
 www-data@motunui:/home$ find / -type f -name '*.pkt' -ls 2>/dev/null
