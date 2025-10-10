@@ -189,7 +189,6 @@ debugh.sh ...
 
 <img width="639" height="28" alt="image" src="https://github.com/user-attachments/assets/39e6d6fa-dc63-4b36-b087-c489b0202585" />
 
-
 <br>
 <br>
 <br>
@@ -198,7 +197,7 @@ debugh.sh ...
 
 <img width="1099" height="309" alt="image" src="https://github.com/user-attachments/assets/9cf01a3e-6a60-4e98-92db-088bba22b2d8" />
 
-
+<br>
 <br>
 <br>
 <h2>Task 6 . Dota3: Miner Setup</h2>
@@ -211,15 +210,20 @@ debugh.sh ...
 
 <img width="903" height="78" alt="image" src="https://github.com/user-attachments/assets/2d48e9bb-8533-4d29-bf54-efb14b5e7429" />
 
-
+<br>
+<br>
+<br>
 <p>6.2. What was the full command line of the cryptominer launch? Hint : <em>include the "nohup" command in your answer</em>.<br>
 <code>nohup /tmp/.apt/kernupd/kernupd</code></p>
 
+```bash
 ausearch i -if audit.log | grep proctitle=nohup
+```
 
 <img width="1052" height="127" alt="image" src="https://github.com/user-attachments/assets/98163edc-6fa4-4022-bd6f-a7096b551662" />
 
-
+<br>
+<br>
 <br>
 <p>6.3. Which IP address range did the attacker scan for an exposed SSH? Answer Example: 10.0.0.1-10.0.0.126. Hint: <em>Closely review the auditd logs. You should see the network scan there!</em><br>
 <code>10.10.12.1-10.10.12.10</code></p>
@@ -252,14 +256,38 @@ ausearch i -if audit.log | grep proctitle=nohup
 <br>
 <br>
 <br>
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/fe714ab2-0ab4-4168-8430-26f9175ed824"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/db1c55d1-bf95-4b81-b4d3-508876a27908"></p>
 
+<h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
 
+<div align="center"><h6>
 
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|9       |Medium 🔗 - Linux Threat Detection 2   | 521    |     103ʳᵈ    |      4ᵗʰ     |     326ᵗʰ    |     3ʳᵈ    | 129,373  |    996    |    76     |
+|9       |Medium 🚩 - WWBuddy                    | 521    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,293  |    995    |    76     |
+|8       |Hard 🚩 - Motunui                      | 520    |     103ʳᵈ    |      4ᵗʰ     |     383ʳᵈ    |     4ᵗʰ    | 129,201  |    994    |    76     |
+|8       |Easy 🔗 - Man-in-the-Middle            | 520    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,141  |    993    |    76     |
+|7       |Medium 🚩 - Profiles, in progress      | 519    |              |              |              |            | 129,021  |    992    |    76     |
+|6       |Medium 🚩 - VulnNet                    | 518    |     105ᵗʰ    |      4ᵗʰ     |     348ᵗʰ    |     5ᵗʰ    | 129,021  |    992    |    76     |
+|6       |Easy 🚩 - DearQA                       | 518    |     105ᵗʰ    |      4ᵗʰ     |     333ʳᵈ    |     6ᵗʰ    | 128,991  |    991    |    76     |
+|5       |Medium 🚩 - Frank & Herby try again.....| 517   |     106ᵗʰ    |      4ᵗʰ     |     300ᵗʰ    |     5ᵗʰ    | 128,931  |    990    |    76     |
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     233ʳᵈ    |     3ʳᵈ    | 128,871  |    989    |    76     |
+|4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
+|3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
+|2       |Medium 🔗 - Data Exfiltration Detection| 514    |     108ᵗʰ    |      4ᵗʰ     |     521ˢᵗ    |     8ᵗʰ    | 128,503  |    985    |    76     |
+|1       |Medium 🔗 - Network Discovery Detection| 513    |     108ᵗʰ    |      4ᵗʰ     |     875ᵗʰ    |     7ᵗʰ    | 128,407  |    984    |    76     |
+|1       |Medium 🚩 - Intranet                   | 513    |     108ᵗʰ    |      4ᵗʰ     |    3,357ᵗʰ   |    57ᵗʰ    | 128,335  |    983    |    76     |
 
-<img width="1900" height="888" alt="image" src="https://github.com/user-attachments/assets/fe714ab2-0ab4-4168-8430-26f9175ed824" />
+</h6></div>
 
-<img width="1899" height="891" alt="image" src="https://github.com/user-attachments/assets/db1c55d1-bf95-4b81-b4d3-508876a27908" />
+<br>
 
-
-
-
+<p align="center">Global All Time:   103ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/dfd98250-24d7-4999-b07e-5081a30c6dee"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/197e01fd-a40b-414d-9321-6b829f8f8244"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/45d59c58-6a89-4c1b-97dd-a646b89af6e2"><br>
+                  Global monthly:     326ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/71bc1758-827c-4b2a-af69-63506e4f2713"><br>
+                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/db378249-b379-4ece-806b-afa7a27facd1"><br>
