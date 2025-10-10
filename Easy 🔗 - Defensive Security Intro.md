@@ -26,11 +26,12 @@ Unfortunately, headlines show us what happens when defensive security falls shor
 
 Let's start by focusing on some key areas of defensive security:</p>
 
-<h6 align="center"><img width="1200px" src="mage" src="https://github.com/user-attachments/assets/6dfe72d9-fa16-4501-bb1d-a9ee877e20a3"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6a3b931a-229c-4cc1-8170-61547f50ed70"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>What's more, a defensive security team is made up of a mixture of roles and responsibilities. Below, let's meet some of the highly-skilled individuals you would find within a defensive security team:</p>
 
-<h6 align="center"><img width="1200px" src="mage" src="https://github.com/user-attachments/assets/9b29d517-e182-4df4-9943-e75fde5d504b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/9b29d517-e182-4df4-9943-e75fde5d504b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the question below</em></p>
 
