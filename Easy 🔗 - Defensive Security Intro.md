@@ -49,7 +49,7 @@ Organisations don’t rely on a single tool or method to stay secure — they bu
 
 Examples of these defensive measures include:</p>
 
-<h6 align="center"><img width="1200px" src="mage" src="https://github.com/user-attachments/assets/dfe20565-7ba1-4f74-a2b1-b4d08040571b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/dfe20565-7ba1-4f74-a2b1-b4d08040571b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>This means that even if an employee clicks on a dangerous attachment in an email, other protections are in place to prevent the malicious attachment from harming the organisation.<br>
 
@@ -58,7 +58,7 @@ Defensive security teams rely on a wide range of tools and technologies. These t
 <h3>Exploring the Security Operations Centre (SOC)</h3>
 <p>Think of a SOC as the defensive security centre for an organisation's technology. This busy centre is the frontline of protecting an organisation, often operating around the clock, 365 days a year, and employs a variety of security professionals who monitor and protect the organisation's networks, systems, and data.</p>
 
-<h6 align="center"><img width="300px" src="mage" src="https://github.com/user-attachments/assets/149d3842-b771-4888-9b58-abbc9fd16fe0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/149d3842-b771-4888-9b58-abbc9fd16fe0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>A typical day in the SOC could look like:<br>
 
@@ -75,7 +75,7 @@ Much like radar sweeping the digital environment, these systems are an absolutel
 
 The systems inside an organisation produce a large amount of information. This information needs to be brought together in one central and easy-to-access place to understand what's happening quickly and clearly. This way, several people can review and analyse it quickly.</p>
 
-<h6 align="center"><img width="300px" src="mage" src="https://github.com/user-attachments/assets/48019cc3-a6cf-4b24-b1be-faeb31271c39"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/48019cc3-a6cf-4b24-b1be-faeb31271c39"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p><em>Answer the question below</em></p>
 
@@ -89,7 +89,7 @@ The systems inside an organisation produce a large amount of information. This i
 <h3>Scenario</h3>
 <p>You will be joining the defensive security team for FakeBank, a large financial institution. You will be at the forefront of investigating and resolving suspicious events marked as such by FakeBank's sophisticated "Security Information and Event Management (SIEM)."</p>
 
-<h6 align="center"><img width="300px" src="mage" src="https://github.com/user-attachments/assets/0a0e5daf-8b6a-4425-ba42-d6f0769ad5f6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+<h6 align="center"><img width="300px" src="https://github.com/user-attachments/assets/0a0e5daf-8b6a-4425-ba42-d6f0769ad5f6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>It is your duty to protect FakeBank and it's customers. Be proactive and inquisitive. To begin this practical, click on the green "View Site" button located below.</p>
 
