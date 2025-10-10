@@ -290,4 +290,8 @@ ausearch i -if audit.log | grep proctitle=nohup
                                               <img width="1200px" src="https://github.com/user-attachments/assets/197e01fd-a40b-414d-9321-6b829f8f8244"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/45d59c58-6a89-4c1b-97dd-a646b89af6e2"><br>
                   Global monthly:     326ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/71bc1758-827c-4b2a-af69-63506e4f2713"><br>
-                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/db378249-b379-4ece-806b-afa7a27facd1"><br>
+                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/db378249-b379-4ece-806b-afa7a27facd1"></p>
+
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
