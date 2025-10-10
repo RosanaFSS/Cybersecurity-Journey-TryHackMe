@@ -7,9 +7,7 @@ Access it <a href="https://tryhackme.com/room/linuxthreatdetection2">here</a>.<b
 
 
 <h2>Task 1 . Introduction</h2>
-<p>What happens next after threat actors enter the Linux system? What commands do they run, and what goals do they aim to achieve? In this room, you'll find out by exploring common attack techniques, detecting them in logs, and analyzing a real-world cryptominer infection from start to finish.</p>p>
-
-In this room, we will explore techniques attackers employ to acquire authentication credentials, including usernames, passwords, tokens, or keys, which provide access to systems, applications, or networks.</p>
+<p>What happens next after threat actors enter the Linux system? What commands do they run, and what goals do they aim to achieve? In this room, you'll find out by exploring common attack techniques, detecting them in logs, and analyzing a real-world cryptominer infection from start to finish.</p>
 
 <h3>Learning Objectives</h3>
 <p></p>
