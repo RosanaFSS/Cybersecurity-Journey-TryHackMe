@@ -3,8 +3,7 @@
 <em>Hack the island of Motunui</em>.<br>
 <img width="80px" src="https://github.com/user-attachments/assets/58b2d9ef-f234-4716-b272-418055a02032"><br>
 Access it <a href="https://tryhackme.com/room/linuxthreatdetection2">here</a>.<br>
-<img width="1200px" src="></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/ab286ff8-4316-4d95-9046-336440cac4d5"></p>
 
 
 <h2>Task 1 . Introduction</h2>
@@ -174,7 +173,7 @@ debugh.sh ...
 <br>
 <br>
 <br>
-<h2>Task 5 . Dota3: First Actionss</h2>
+<h2>Task 5 . Dota3: First Actions</h2>
 <br>
 
 <p><em>Answer the questions below</em></p>
@@ -227,15 +226,24 @@ ausearch i -if audit.log | grep proctitle=nohup
 <p>6.3. Which IP address range did the attacker scan for an exposed SSH? Answer Example: 10.0.0.1-10.0.0.126. Hint: <em>Closely review the auditd logs. You should see the network scan there!</em><br>
 <code>10.10.12.1-10.10.12.10</code></p>
 
+```bash
 ausearch i -if audit.log | grep proctitle=nohup
+```
 
 <img width="1052" height="127" alt="image" src="https://github.com/user-attachments/assets/98163edc-6fa4-4022-bd6f-a7096b551662" />
-
-
 
 <br>
 <br>
 <h2>Task 7 . Conclusion</h2>
+<p>In this room, you learned a lot about "Hack and Forget" attacks on Linux, from the first Discovery commands to the final Impact. You also explored how to detect the attack stages using auditd and authentication logs, and even practiced your skills by uncovering a cryptominer attack!</p>
+
+<h3>Key Takeaways</h3>
+
+<p>
+
+- "Hack and Forget" attacks are usually automated and performed at scale by botnets<br>
+- In Linux, all attack stages mostly rely on prebuilt commands like ls, cat, wget, and ssh<br>
+- Your best approach in detecting malicious commands is auditd and process tree analysis</p>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -243,13 +251,16 @@ ausearch i -if audit.log | grep proctitle=nohup
 <p>7.1. Let´s move on!<br>
 <code>No answer needed</code></p>
 
-
 <br>
 <br>
 <br>
 
 
 
+
+<img width="1900" height="888" alt="image" src="https://github.com/user-attachments/assets/fe714ab2-0ab4-4168-8430-26f9175ed824" />
+
+<img width="1899" height="891" alt="image" src="https://github.com/user-attachments/assets/db1c55d1-bf95-4b81-b4d3-508876a27908" />
 
 
 
