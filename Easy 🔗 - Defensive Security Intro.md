@@ -116,7 +116,7 @@ The systems inside an organisation produce a large amount of information. This i
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|10      |Easy 🔗 - 25 Days of Cyber Security, Day 2| 522|     103ʳᵈ     |      4ᵗʰ     |     355ᵗʰ    |     3ʳᵈ    | 129,405  |    996    |    76     |
+|10      |Easy 🔗 - 25 Days of Cyber Security, Day 2| 522|     103ʳᵈ     |      4ᵗʰ     |     357ᵗʰ    |     3ʳᵈ    | 129,405  |    997    |    76     |
 |10      |Easy 🔗 - 25 Days of Cyber Security, Day 2| 522|     103ʳᵈ     |      4ᵗʰ     |     355ᵗʰ    |     3ʳᵈ    | 129,405  |    996    |    76     |
 |9       |Medium 🔗 - Linux Threat Detection 2   | 521    |     103ʳᵈ    |      4ᵗʰ     |     326ᵗʰ    |     3ʳᵈ    | 129,373  |    996    |    76     |
 |9       |Medium 🚩 - WWBuddy                    | 521    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,293  |    995    |    76     |
@@ -136,19 +136,14 @@ The systems inside an organisation produce a large amount of information. This i
 
 </h6></div>
 
-<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/8f7d342b-7025-4265-bde5-c3f641e0f828" />
-
-
-
 <br>
 
-<p align="center">Global All Time:   103ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/743211d6-5726-423c-8e00-479391b475b0"><br>
+<p align="center">Global All Time:   103ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/8f7d342b-7025-4265-bde5-c3f641e0f828"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/77dbc9b9-8e25-450e-a73e-457bb34c47a3"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e785c603-01ed-4210-8c2e-adbbc969c14b"><br>
-                  Global monthly:     355ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d843e6f1-e96c-4679-aab9-b21b9c83de23"><br>
-                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/4dd478cb-abe0-4fa8-8200-8f16c188318b"></p>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c8971d35-f46e-4bb1-986b-1aa8116c29c2"><br>
+                  Global monthly:      357ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c97bffbe-6bf1-4495-909b-315473416f52"><br>
+                  Brazil monthly:       3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/31a6fff3-b7e1-47b7-b917-69a09c24132f"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
