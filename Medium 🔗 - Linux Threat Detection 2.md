@@ -187,8 +187,8 @@ debugh.sh ...
 <br>
 <br>
 <br>
-<p>5.2. Which command did the attacker use to list the last logged-in users? Hint: <em>Use auditd and build process tree to list all entered command</em><br>
-<code>last/code></p>
+<p>5.2. Which command did the attacker use to list the last logged-in users? Hint: <em>Use auditd and build process tree to list all entered command.</em><br>
+<code>last</code></p>
 
 <img width="639" height="28" alt="image" src="https://github.com/user-attachments/assets/39e6d6fa-dc63-4b36-b087-c489b0202585" />
 
