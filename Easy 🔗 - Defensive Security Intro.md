@@ -15,7 +15,7 @@ Unfortunately, headlines show us what happens when defensive security falls shor
 
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/cc8d8aeb-9aec-4fa5-8017-dbba5fb45d6f"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<p>em>Answer the question below</p>
+<p><em>Answer the question below</em></p>
 
 <p>1.1. What is defensive security also know as?<br>
 <code>blue teaming</code></p>
@@ -32,7 +32,7 @@ Let's start by focusing on some key areas of defensive security:</p>
 
 <h6 align="center"><img width="1200px" src="mage" src="https://github.com/user-attachments/assets/9b29d517-e182-4df4-9943-e75fde5d504b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<p>em>Answer the question below</p>
+<p><em>Answer the question below</em></p>
 
 <p>2.1. An attack has been detected on an organisation's network. What is the name of the person above who would be responsible for responding to the attack? Hint : <em>These are known as Incident Responders</em>.<br>
 <code>Aaliyah</code></p>
@@ -76,7 +76,7 @@ The systems inside an organisation produce a large amount of information. This i
 
 <h6 align="center"><img width="300px" src="mage" src="https://github.com/user-attachments/assets/48019cc3-a6cf-4b24-b1be-faeb31271c39"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<p>em>Answer the question below</p>
+<p><em>Answer the question below</em></p>
 
 <p>3.1. What is the abbreviation for the term "Security Operations Centre"?<br>
 <code>SOC</code></p>
@@ -96,7 +96,7 @@ The systems inside an organisation produce a large amount of information. This i
 
 <p>This action will open a "static site" on the right side of your screen. Investigate the "Web Discovery Attack" and perform the necessary, guided, protective measures to stop it from continuing.</p>
 
-<p>em>Answer the question below</p>
+<p><em>Answer the question below</em></p>
 
 <p>4.1. What is the flag that you obtained by following along?<br>
 <code>THM{FAKEBANK-SECURED}</code></p>
