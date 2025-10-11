@@ -19,8 +19,22 @@ It can take up to 5 minutes for the VM and associated service to launch, so give
 <p>1.1. Start your engines! Sorry... VM!<br>
 <code>No answer needed</code></p>
 
-<img width="1058" height="527" alt="image" src="https://github.com/user-attachments/assets/696a6865-7e8a-4b55-8270-31cda75e8bcd" />
+```bash
+xx.xxx.xx.xx heroes.thm
+```
 
+```bash
+:~/BruteForceHeroes# nmap -sT heroes.thm
+...
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+```
+
+<img width="1129" height="559" alt="image" src="https://github.com/user-attachments/assets/d5898e93-7897-4bd8-aec3-b0a0b8afd867" />
+
+<br>
+<br>
 <br>
 <br><h2>Task 2 . Introduction</h2>
 <p>Welcome to Brute Force Hero's. We're going to look at brute force from a zero to hero approach. Covering what brute forcing is, the different tools we can use (despite what you might believe Hydra isn't the only option we have), and the when's and whys behind using these different tools.<br>
@@ -89,20 +103,20 @@ Once you have Patator installed (as well as the other tools), go ahead and move 
 
 
 ```bash
-:~/BruteForceHeroes# sudo apt install python3-venv
+:~/BruteForceHeroes# apt install python3-venv
 ```
 
 ```bash
-:~/BruteForceHeroes# python3 -m venv rose
+:~/BruteForceHeroes# python3 -m venv rosana
 ```
 
 ```bash
-:~/BruteForceHeroes# source rose/bin/activate
-(rose) ...:~/BruteForceHeroes# 
+:~/BruteForceHeroes# source rosana/bin/activate
+(rosana) ...:~/BruteForceHeroes# 
 ```
 
 ```bash
-(rose) ...:~/BruteForceHeroes# sudo apt install patator
+(rosana) ...:~/BruteForceHeroes# apt install patator
 ```
 
 ```bash
@@ -145,7 +159,10 @@ Available modules:
   + dummy_test    : Testing module
 ```
 
+<img width="1274" height="630" alt="image" src="https://github.com/user-attachments/assets/5a0e19d1-bf9a-472f-9b68-19b5d6d1d46b" />
 
+<br>
+<br>
 <br>
 <h2>Task 3 . Getting Started - Burp Suite</h2>
 <p>First thing first, download the attached password file. This is a custom password file built specifically for this room. Make sure you save it somewhere readily accessible as it will be used a lot in this room.
@@ -180,8 +197,7 @@ Once Burp Suite is up and running, go ahead and access the DVWA instance by poin
 <p>3.1. What does HTTP response code 302 mean? Hint: <em>Checkout the MDN webdocs: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status</em><br>
 <code>Found</code></p>
 
-<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5a56298b-c8da-44ee-b654-05c8131fee2c"><br><br>
-                   <img width="1200px" src="https://github.com/user-attachments/assets/8f42c566-b56f-4f28-8b08-d0d0f75c748d"><br><br></h6>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c80fe7ce-8241-44d2-bebb-e9c41355eaef"></p>
 
 <br>
 <h3>Task 4 . Brute Forcing - Burp Suite</h3>
@@ -232,6 +248,9 @@ N.B - It is possible to use things like Burp Suite Macros to help us get around 
 
 <p>4.2. Can we use Burp Suite to effectively brute force the login in this instance? (Yay/Nay)<br>
 <code>Nay</code></p>
+
+<img width="1229" height="374" alt="image" src="https://github.com/user-attachments/assets/5fca94ad-92a1-4098-904c-843527f53eef" />
+
 
 
 <h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/45773933-7af8-41a2-a5ab-7b68cb5c8012"><br><br>
