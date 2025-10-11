@@ -249,11 +249,7 @@ N.B - It is possible to use things like Burp Suite Macros to help us get around 
 <p>4.2. Can we use Burp Suite to effectively brute force the login in this instance? (Yay/Nay)<br>
 <code>Nay</code></p>
 
-<img width="1229" height="374" alt="image" src="https://github.com/user-attachments/assets/5fca94ad-92a1-4098-904c-843527f53eef" />
-
-
-
-<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/45773933-7af8-41a2-a5ab-7b68cb5c8012"><br><br>
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5fca94ad-92a1-4098-904c-843527f53eef"><br><br>
                    <img width="1200px" src="https://github.com/user-attachments/assets/5a56298b-c8da-44ee-b654-05c8131fee2c"><br><br>
                    <img width="1200px" src="https://github.com/user-attachments/assets/d374c291-4120-46de-8dc2-897e8e6e5a0f"><br></h6>
 
