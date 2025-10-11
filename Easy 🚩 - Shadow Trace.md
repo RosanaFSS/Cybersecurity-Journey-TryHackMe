@@ -5,6 +5,104 @@
 Access it <a href="https://tryhackme.com/room/shadowtrace">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b0ef3819-8224-4234-9edc-477f3ea0dd46"></p>
 
+<h2>Task 1 . Scenario</h2>
+<br>
+
+<p><em>Answer the question below</em></p>
+<br>
+
+<p>1.1. Click here to start the challenge<br>
+<code>No answer needed</code></p>
+<br>
+
+<h2>Task 2 . File analysis</h2>
+<br>
+
+
+<p><em>Answer the questions below</em></p>
+<br>
+
+<p>2.1. What is the architecture of the binary file windows-update.exe?<br>
+<code>64-bit</code>
+
+<img width="1279" height="297" alt="image" src="https://github.com/user-attachments/assets/711a0ff0-8e2a-4fbf-b6a9-758181fc7002" />
+
+<br>
+<br>
+<br>
+<p>2.2. What is the hash (sha-256) of the file windows-update.exe?<br>
+<code>B**************************************************************C</code>
+
+<img width="1285" height="168" alt="image" src="https://github.com/user-attachments/assets/331e485a-1f2b-47d4-a094-7a9c64addfbd" />
+
+<br>
+<br>
+<br>
+<p>2.3. Identify the URL within the file to use it as an IOC<br>
+<code>http://tryhatme.com/update/security-update.exe</code>
+
+<img width="1285" height="186" alt="image" src="https://github.com/user-attachments/assets/7f03ca76-56d2-4e28-bc49-3eaeaec0797d" />
+
+<br>
+<br>
+<br>
+<p>2.4. With the URL identified, can you spot a domain that can be used as an IOC?<br>
+<code>responses.tryhatme.com</code>
+
+<br>
+<br>
+<br>
+<p>2.5. Input the decoded flag from the suspicious domain<br>
+<code>THM{***_**_****_****_******}</code>
+
+<img width="1069" height="185" alt="image" src="https://github.com/user-attachments/assets/84c2a431-d209-418a-b7eb-0065ebf62b5a" />
+
+<br>
+<br>
+<br>
+  
+<img width="1290" height="258" alt="image" src="https://github.com/user-attachments/assets/d49be025-c067-4a75-bad8-43500f75e0a6" />
+
+<br>
+<br>
+<br>
+<p>2.6. What library related to socket communication is loaded by the binary?<br>
+<code>WS2_32.dll</code></p>
+
+<img width="868" height="162" alt="image" src="https://github.com/user-attachments/assets/2cfd1b76-0ced-4edc-a216-92757760b17d" />
+
+<br>
+<br>
+<br>
+<h3>Task 3 . Alerts Analysis</h3>
+<p>Click on the View Site button attached to this task to display the static site in split view. Review the alternatives and answer the questions below.<br>
+
+Alternatively, if you can not see all the columns in split view, you can open the static site in full screen by clicking the link below:</p>
+
+<p><em>Answer the questions below</em></p>
+<br>
+
+<p>3.1. What is the architecture of the binary file windows-update.exe?<br>
+<code>https://********.***/***/****.***)</code>
+
+<p>
+
+- decode From Base64</p>
+
+<br>
+<p>3.2. What is the architecture of the binary file windows-update.exe?<br>
+<code>https://********.***/***/****.***)</code>
+
+<img width="1086" height="195" alt="image" src="https://github.com/user-attachments/assets/a7a293bd-12a8-4fe6-bb0a-ab10d4af928d" />
+
+<br>
+<br>
+<br>
+<p>3.3.What's the name of the file saved in the alert triggered by chrome.exe?<br>
+<code>****.***</code>
+<p>
+
+- it´s in plain text</p>
 
 <br>
 <br>
