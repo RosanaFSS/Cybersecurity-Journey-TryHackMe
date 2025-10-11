@@ -11,7 +11,7 @@ Please allow approximately 2-5 minutes for the services to start.<br>
 
 <a href="https://twitter.com/thecybergeek19">Follow me on Twitter @TheCyberGeek19</a></p>
 
-<p><em>Aswer the question below</p>
+<p><em>Aswer the question below</em></p>
 
 <p>1.1. No answer needed<br>
 <code>No answer needed</code></p>
@@ -20,7 +20,7 @@ Please allow approximately 2-5 minutes for the services to start.<br>
 <h2>Task 2 . COmpromise the machine</h2>
 <p>Compromise the target and obtain the user.txt and root.txt file.</p>
 
-<p><em>Aswer the questions below</p>
+<p><em>Aswer the questions below</em></p>
 
 <p>2.1. What is contained within the user.txt file?<br>
 <code>______________</code></p>
