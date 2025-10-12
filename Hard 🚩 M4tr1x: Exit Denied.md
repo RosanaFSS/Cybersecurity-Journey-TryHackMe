@@ -188,6 +188,10 @@ http://exit-denied.thm/editpost.php         (Status: 200) [Size: 9603]
 Progress: 1091375 / 1091380 (100.00%)
 ```
 
+```bash
+:~/M4tr1xExitDenied# gobuster dir -u http://exit-denied.thm/inc/plugins/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -x php,txt,js,bak
+...
+
 
 
 ```bash
@@ -290,7 +294,178 @@ Progress: 1091375 / 1091380 (100.00%)
 <br>
 
 
+http://10.201.54.83/memberlist.php?sort=regdate&order=ascending&perpage=20&page=2
 
+
+<img width="1121" height="509" alt="image" src="https://github.com/user-attachments/assets/8ba5478f-65de-4662-a830-8437f189d835" />
+
+
+Register > I Agree
+
+
+<img width="1117" height="610" alt="image" src="https://github.com/user-attachments/assets/dda675d8-55fa-4ae4-b4ec-f7b9017ec1ed" />
+
+
+<img width="1105" height="334" alt="image" src="https://github.com/user-attachments/assets/1acf84f8-0adf-4232-87bb-7703f378646f" />
+
+<img width="1114" height="332" alt="image" src="https://github.com/user-attachments/assets/ee093acf-77be-4d7b-b0e1-40c8b57eda5d" />
+
+
+Find All Posts
+
+<img width="1118" height="648" alt="image" src="https://github.com/user-attachments/assets/5e63b000-a23e-429d-9540-b6950bf371e4" />
+
+
+
+<img width="1119" height="461" alt="image" src="https://github.com/user-attachments/assets/97b543f7-481f-49fb-897c-f9143ad517ee" />
+
+
+
+Thread: Bug Bounty Program
+
+<img width="1115" height="676" alt="image" src="https://github.com/user-attachments/assets/1ecde1b4-4239-4e0b-923b-4fc2705b5983" />
+
+/bugbountyHQ
+
+<img width="1125" height="608" alt="image" src="https://github.com/user-attachments/assets/16f477b5-f94e-4eee-bb20-71551bb91168" />
+
+Bug Bounty Report Formm
+
+<img width="1128" height="361" alt="image" src="https://github.com/user-attachments/assets/285daa1d-b6ed-4265-b8b3-14b05cc76877" />
+
+
+Page Source
+
+<img width="1117" height="297" alt="image" src="https://github.com/user-attachments/assets/4af2151d-b442-4917-8fe2-0e17c9c9cf21" />
+
+
+/devBuilds/modManagerv2.plugin
+
+<p>1.4. What is the name of that interesting plugin?<br>
+<code>modManagerv2</code></p>
+
+<img width="1132" height="750" alt="image" src="https://github.com/user-attachments/assets/138093bd-2764-433e-a838-b5fe5aee131b" />
+
+
+/*
+if (!defined('IN_MYBB'))
+{
+    die('Direct initialization of this file is not allowed.<br /><br />Please make sure IN_MYBB is defined.');
+}
+
+global $mybb;
+
+require_once MYBB_ROOT . "inc/tools/manage/settings.php";
+require_once MYBB_ROOT . "inc/tools/manage/settings.php";
+require_once MYBB_ROOT . "inc/tools/manage/SQL/settings.php";
+require_once MYBB_ROOT . "inc/tools/manage/SQL/settings.php";
+$sql_p = file_get_contents('inc/tools/manage/SQL/p.txt'); //read SQL password from p.txt
+
+
+// All pages
+$plugins->add_hook('global_start', 'modManager_load_library');
+
+// 1.8 has jQuery, not Prototype
+if ($mybb->version_code >= 1700)
+{
+    $plugins->add_hook('global_intermediate', 'modManager_load_plugin_hook_any');
+}
+else
+{
+    $plugins->add_hook('global_start', 'modManager_load_plugin_hook_any');
+}
+
+// No permission page
+$plugins->add_hook('no_permission', 'modManager_plugin_hook_error_no_permission');
+
+// Callback handler
+$plugins->add_hook('global_end', 'modManager_login_callback');
+
+// Social Link
+$plugins->add_hook('usercp_profile_start', 'modManager_login_social_link', 25);
+
+/*---------------------------------------------------*/
+//!!!!!!SQL LOGIN for modManager (needed for reading login_keys for user migration)
+define('localhost', 'localhost:3306');
+//mysql connect using user 'mod' and password from 'sql_p varirable'
+$db = mysql_connect('localhost','mod',$sql_p);
+
+
+/*---------------------------------------------------*/
+
+
+/showteam.php
+
+
+<img width="1113" height="693" alt="image" src="https://github.com/user-attachments/assets/5515882f-f249-4a45-a0af-f134c2945a72" />
+
+
+
+
+<p>1.6. Interesting... I believe only the keymaker could help you crack it. Find him. Where did he tell you to go to?<br>
+<code>/0100101101100101011110010110110101100001011010110110010101110010</code></p>
+
+reportPanel.php
+
+
+<img width="1119" height="340" alt="image" src="https://github.com/user-attachments/assets/1d447b72-b9e3-4160-bc50-e2c862c14370" />
+
+
+Page Source
+
+<img width="1127" height="714" alt="image" src="https://github.com/user-attachments/assets/00556026-4e7c-40fd-80e7-57070a618f69" />
+
+
+Keymaker message:
+1 16 5 18 13 21 20 1 20 9 15 14 15 6 15 14 12 25 20 8 5 5 14 7 12 9 19 8 12 5 20 20 5 18 19 23 9 12 12 15 16 5 14 20 8 5 12 15 3 11 19
+
+1 4 4 18 5 19 19: /0100101101100101011110010110110101100001011010110110010101110010
+
+<p>1.7. Did you try cracking the file?<br>
+<code>/0100101101100101011110010110110101100001011010110110010101110010</code></p>
+
+<p>
+
+- https://planetcalc.com/4884/</p>
+
+
+<img width="1429" height="646" alt="image" src="https://github.com/user-attachments/assets/f4dc860c-fea4-434a-b07f-42c13a6a8d33" />
+
+
+a p e r m u t a t i o n o f o n l y t h e e n g l i s h l e t t e r s w i l l o p e n t h e l o c k s
+
+
+
+<img width="1414" height="489" alt="image" src="https://github.com/user-attachments/assets/71168eba-bad7-4008-97fa-cf23579f46aa" />
+
+a d d r e s s
+
+
+http://10.201.54.83/0100101101100101011110010110110101100001011010110110010101110010
+
+
+<img width="1112" height="273" alt="image" src="https://github.com/user-attachments/assets/b8eb7ad0-bbab-434d-a291-8987570475e1" />
+
+
+
+<img width="1123" height="386" alt="image" src="https://github.com/user-attachments/assets/753ca216-26f8-4c7b-ab4b-e31dc7cc75f3" />
+
+
+
+
+
+<img width="1113" height="666" alt="image" src="https://github.com/user-attachments/assets/0914887a-8ca2-430b-a468-8ea19711681a" />
+
+
+
+
+
+
+PalacerKing
+
+
+
+<img width="1119" height="509" alt="image" src="https://github.com/user-attachments/assets/8f191e6c-6da2-4e7e-bcfa-3b67b732ffa7" />
 
 
 
