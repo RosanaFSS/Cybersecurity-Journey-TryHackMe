@@ -161,6 +161,47 @@ PORT     STATE SERVICE       VERSION
 <br>
 <br>
 <br>
+
+```bash
+:~/Atlas# curl 10.201.75.19:8080 -v
+*   Trying 10.201.75.19:8080...
+* TCP_NODELAY set
+* Connected to 10.201.75.19 (10.201.75.19) port 8080 (#0)
+> GET / HTTP/1.1
+> Host: 10.201.75.19:8080
+> User-Agent: curl/7.68.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 401 Access Denied
+< Content-Type: text/html
+< Content-Length: 144
+< Connection: Keep-Alive
+< WWW-Authenticate: Digest realm="ThinVNC", qop="auth", nonce="MRd8W9Ju5kAI30IC0m7mQA==", opaque="0e6ScETWPia1dmxbObbKch80tqJCmAjJej"
+< 
+<HTML><HEAD><TITLE>401 Access Denied</TITLE></HEAD><BODY><H1>401 Access Denied</H1>The requested URL  requires authorization.<P></BODY></HTML>
+* Connection #0 to host 10.201.75.19 left intact
+```
+
+```bash
+:~/Atlas# searchsploit thinvnc
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                          |  Path
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ThinVNC 1.0b1 - Authentication Bypass                                                                                   | windows/remote/47519.py
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+```
+
+```bash
+:~/Atlas# searchsploit -m windows/remote/47519.py
+...
+    Codes: CVE-2019-17662
+ Verified: True
+File Type: Python script, ASCII text executable
+...
+```
+<br>
 <h1>Task 4 . <code>Attack</code> Foothold</h1>
 <br>
 
@@ -391,48 +432,5 @@ mimidrv.sys  mimikatz.exe  mimilib.dll  mimispool.dll
 <br>
 <br>
 <br>
-
-
-
-```bash
-:~/Atlas# curl 10.201.75.19:8080 -v
-*   Trying 10.201.75.19:8080...
-* TCP_NODELAY set
-* Connected to 10.201.75.19 (10.201.75.19) port 8080 (#0)
-> GET / HTTP/1.1
-> Host: 10.201.75.19:8080
-> User-Agent: curl/7.68.0
-> Accept: */*
-> 
-* Mark bundle as not supporting multiuse
-< HTTP/1.1 401 Access Denied
-< Content-Type: text/html
-< Content-Length: 144
-< Connection: Keep-Alive
-< WWW-Authenticate: Digest realm="ThinVNC", qop="auth", nonce="MRd8W9Ju5kAI30IC0m7mQA==", opaque="0e6ScETWPia1dmxbObbKch80tqJCmAjJej"
-< 
-<HTML><HEAD><TITLE>401 Access Denied</TITLE></HEAD><BODY><H1>401 Access Denied</H1>The requested URL  requires authorization.<P></BODY></HTML>
-* Connection #0 to host 10.201.75.19 left intact
-```
-
-```bash
-:~/Atlas# searchsploit thinvnc
------------------------------------------------------------------------------------------------------------------------- ---------------------------------
- Exploit Title                                                                                                          |  Path
------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-ThinVNC 1.0b1 - Authentication Bypass                                                                                   | windows/remote/47519.py
------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-Shellcodes: No Results
-```
-
-```bash
-:~/Atlas# searchsploit -m windows/remote/47519.py
-...
-    Codes: CVE-2019-17662
- Verified: True
-File Type: Python script, ASCII text executable
-...
-```
-
 
 
