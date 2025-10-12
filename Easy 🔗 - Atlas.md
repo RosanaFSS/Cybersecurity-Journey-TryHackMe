@@ -17,23 +17,31 @@ https://tryhackme.com/room/atlas
 <h1>Task 1 . <code>Introccution</code> . Room Overview and Deploy!</h1>
 <br>
 
+<p><em>Answer the question below</em></p>
 
+<br>
+<p>1.1. Press the Green "Start Machine" button to deploy the machine!Note: It may take up to three minutes for this machine to fully boot.<br>
+<code>No answer needed</code></p>
 
+<br>
 <h1>Task 2 . <code>Enumeration</code> . Room Enumeration</h1>
 <br>
 
 <p><em>Answer the questions below</em></p>
 
+<br>
 <p>2.1. Scan your target IP (10.201.75.19) with Nmap! Note: you will need the -Pn switch here. A complete command can be found in the hint.<br>
 <code>No answer needed</code></p>
 
-
+<br>
 <p>2.2. With the Nmap default port range, you should find that two ports are open. What port numbers are these? Submit the answer as a comma-separated list from low to high, e.g. 80,443.<br>
 <code>33,89,8080</code></p>
 
+<br>
 <p>2.3. What service does Nmap think is running on the higher of the two ports?<br>
 <code>http-proxy</code></p>
 
+<br>
 <p>2.4. We would usually go on to do a lot more in-depth scanning, but we will leave it at that for this introductory room. We have what we need for the time being.<br>
 <code>No answer needed</code></p>
 
@@ -139,11 +147,13 @@ PORT     STATE SERVICE       REASON          VERSION
 ...
 ```
 
+<br>
 <h1>Task 3 . <code>Enumeration</code> . Service Enumeration</h1>
 <br>
 
 <p><em>Answer the question below</em></p>
 
+<br>
 <p>3.1. Use searchsploit to find the vulnerability in ThinVNC<br>
 <code>No answer needed</code></p>
 
@@ -201,12 +211,14 @@ Shellcodes: No Results
 File Type: Python script, ASCII text executable
 ...
 ```
+
 <br>
 <h1>Task 4 . <code>Attack</code> . Foothold</h1>
 <br>
 
 <p><em>Answer the question below</em></p>
 
+<br>
 <p>4.1. Clone the Git repository at https://github.com/MuirlandOracle/CVE-2019-17662  to your attacking machine. See if you can figure out how to do this in your terminal by yourself, otherwise, the command is given in the hint.<br>
 <code>No answer needed</code></p>
 
@@ -279,6 +291,7 @@ optional arguments:
 
 <p><em>Answer the question below</em></p>
 
+<br>
 <p>5.1. Most people take the easy option when it comes to passwords, which makes password reuse incredibly common. With that in mind, use xfreerdp to connect to the target over RDP.<br>
 <code>No answer needed</code></p>
 
@@ -302,9 +315,11 @@ Password:	H0ldUpTheHe@vens
 
 <p><em>Answer the questions below</em></p>
 
+<br>
 <p>6.1. There are many different implementations of PrintNightmare available. You are advised to use a PowerShell version written by Caleb Stewart and John Hammond.<br>
 <code>No answer needed</code></p>
 
+<br>
 <p>6.2. Navigate to the /tmp directory of your attacking VM, then clone the repository. Remember that /drive:/tmp,share argument in the xfreerdp command? It's about to come in useful.br>
 <code>No answer needed</code></p>
 
@@ -323,10 +338,11 @@ CVE-2021-1675: command not found
 :/tmp# cp /opt/Mimikatz/Win32/mimikatz.exe /tmp
 ```
 
-
 <img width="810" height="298" alt="image" src="https://github.com/user-attachments/assets/11b98007-e2fd-4ea1-a0f7-cc58a5403fe1" />
 
-
+<br>
+<br>
+<br>
 <p>6.3. Inside your RDP session, open a new PowerShell Window.br>
 <code>No answer needed</code></p>
 
@@ -335,20 +351,23 @@ CVE-2021-1675: command not found
 <br>
 <br>
 <br>
-
 <p>6.4. The repository that we downloaded contains a PowerShell (.ps1) script that needs to be imported. We can import it using: . \\tsclient\share\CVE-2021-1675\CVE-2021-1675.ps1  Make sure to include the dot at the start! This uses dot-syntax to import any functions exposed by the script. We are using \\tsclient\share to reference the share that we created. This allows us to view (and thus import) files that are stored in the /tmp folder of our own attacking machine!<br>
 <code>No answer needed</code></p>
 
+<br>
 <p>6.5. Only one thing left to do: run the exploit! We can start the ball rolling by executing Invoke-Nightmare.<br>
 <code>No answer needed</code></p>
 
+<br>
 <p>6.6. Notice that our payload mentions creating a new user called adm1n with a password of P@ssw0rd? This is the default behaviour when using this exploit; however, we could have created our own payload and substituted that in should we have preferred another method of exploitation.
 Regardless, we can now make use of our brand new admin account!<br>
 <code>No answer needed</code></p>
 
+<br>
 <p>6.7. We could take the simple option of right-clicking on PowerShell or cmd.exe and choosing to "Run as Administrator", but that's no fun. Instead, let's use a hacky little PowerShell command to start a new high-integrity command prompt running as our new administrator. The command is as follows: Start-Process powershell 'Start-Process cmd -Verb RunAs' -Credential adm1n. Execute this in your PowerShell session and follow the steps to spawn a new PowerShell process as an Administrator!<br>
 <code>No answer needed</code></p>
 
+<br>
 <p>6.8. Run the command whoami /groups in the new window. You should see BUILTIN\Administrators in the list of groups, and a line at the bottom of the output containing Mandatory Label\High Mandatory Level. These mean that you are running as an administrator with full access over the machine. Congratulations!<br>
 <code>No answer needed</code></p>
 
@@ -374,6 +393,7 @@ Regardless, we can now make use of our brand new admin account!<br>
 
 <p><em>Answer the question below</em></p>
 
+<br>
 <p>7.1. First up, let's get an up-to-date copy of Mimikatz to our attacking machine. The code for the tool is publicly available on Github, but fortunately for the sake of simplicity, there are also pre-compiled versions available for download. Go to the releases page for Mimikatz and find the latest release at the top of the list. Download the file called mimikatz_trunk.zip to your attacking machine. Note: Certain browsers block the repository as being malicious. You're a hacker -- of course it's malicious. Just continue to the page anyway: it's perfectly safe.<br>
 <code>No answer needed</code></p>
 
@@ -406,6 +426,7 @@ Archive:  mimikatz_trunk.zip
   ...
 ```
 
+<br>
 <p>7.2. Make sure that the zip file is in your /tmp directory, then unzip it with unzip mimikatz_trunk.zip<br>
 <code>No answer needed</code></p>
 
@@ -414,10 +435,21 @@ Archive:  mimikatz_trunk.zip
 mimidrv.sys  mimikatz.exe  mimilib.dll  mimispool.dll
 ```
 
+<br>
 <p>7.3. Now we can get to work! Switch back into your RDP session and (using the elevated Command Shell we obtained in the last task) execute the following command to start Mimikatz: \\tsclient\share\x64\mimikatz.exe. If this is successful then you should get some pretty ASCII art and a new terminal prompt:<br>
 <code>No answer needed</code></p>
 
-<img width="1071" height="196" alt="image" src="https://github.com/user-attachments/assets/b108d9f9-f2a9-440a-bf1d-0a4c96186b89" />
+```bash
+:~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.75.19 /u:adm1n /p:P@ssw0rd /cert:ignore +clipboard /dynamic-resolution /drive:share,/tmp
+```
+
+<img width="1152" height="375" alt="image" src="https://github.com/user-attachments/assets/7722d057-775f-47e9-a4cf-08e5aaed4dea" />
+
+
+<br>
+<br>
+<br>
+
 
 <br>
 <br>
