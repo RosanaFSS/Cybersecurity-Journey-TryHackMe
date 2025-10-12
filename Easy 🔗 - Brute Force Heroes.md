@@ -1,13 +1,9 @@
 <h1 align="center">Brute Force Heroes</h1>
-<h3 align="center">Practice $$\textcolor{#3bd62d}{\textnormal{Burp Suite . Hydra . Patator . OWASP ZAP . John The Ripper . Hashcat}}$$.</h3>
-<p align="center">August 1, 2025<br>
-Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>452</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-Walkthrough room to look at the different tools that can be used when brute forcing, as well as the different situations that might favour one tool over another.<br>
-Click <a href="https://tryhackme.com/room/bruteforceheroes">here </a>to access this TryHackMe walkthrough.<br>
-<img width="160px" src="https://github.com/user-attachments/assets/e404db20-0897-43ed-8baf-5e39a97a9c5f"><br>
-<img width="1200px" src="https://github.com/user-attachments/assets/b8a95a6d-fe53-4092-801c-045e614f59a0"></p>
-
-<br>
+<p align="center">2025, October 11<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>523</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Walkthrough room to look at the different tools that can be used when brute forcing, as well as the different situations that might favour one tool over another</em><br>
+<img width="80px" src="https://github.com/user-attachments/assets/eca72c97-2831-4f88-b7da-81679a2b8309"><br>
+Access it <a href="https://tryhackme.com/room/bruteforceheroes">here</a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/aee38ec4-4727-44fc-8ff6-12496eca05c2"></p>
 
 <h2>Task 1 . Launch The VM</h2>
 <p>Start the VM attached to this task . This will launch a modified version of the DVWA at  MACHINE_IP . This is what we will be using to practice our brute forcing skills and tools against.<br>
@@ -724,91 +720,19 @@ One final note - If you look at the page for example hashes you'll notice there 
 
 
 ```bash
-(rose) root@ip-10-201-55-35:~/BruteForceHeroes# ssh tommyboy1@10.201.76.75
-The authenticity of host '10.201.76.75 (10.201.76.75)' can't be established.
-ECDSA key fingerprint is SHA256:wVcK3uY4GTh+6D35fymJdFpO8IleALP0P0+MMPX6RXg.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '10.201.76.75' (ECDSA) to the list of known hosts.
-tommyboy1@10.201.76.75's password: 
-Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-138-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/pro
-
- System information as of Sat 13 Sep 00:29:12 UTC 2025
-
-  System load:  0.0               Processes:             104
-  Usage of /:   60.9% of 8.76GB   Users logged in:       0
-  Memory usage: 32%               IPv4 address for eth0: 10.201.76.75
-  Swap usage:   0%
-
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
-
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
-
-Expanded Security Maintenance for Applications is not enabled.
-
-58 updates can be applied immediately.
-17 of these updates are standard security updates.
-To see these additional updates run: apt list --upgradable
-
-Enable ESM Apps to receive additional future security updates.
-See https://ubuntu.com/esm or run: sudo pro status
-
-
-The list of available updates is more than a week old.
-To check for new updates run: sudo apt update
-Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
-
-Your Hardware Enablement Stack (HWE) is supported until April 2025.
-
-Last login: Sat Aug 28 16:15:10 2021 from 192.168.172.10
-tommyboy1@ip-10-201-76-75:~$
+(rose) ...:~/BruteForceHeroes# ssh tommyboy1@xx.xxx.xx.7xx
+Th...
+tommyboy1@...:~$
 ```
 
 ```bash
-tommyboy1@ip-10-201-76-75:~$ cat /etc/shadow
-root:*:18659:0:99999:7:::
-daemon:*:18659:0:99999:7:::
-bin:*:18659:0:99999:7:::
-sys:*:18659:0:99999:7:::
-sync:*:18659:0:99999:7:::
-games:*:18659:0:99999:7:::
-man:*:18659:0:99999:7:::
-lp:*:18659:0:99999:7:::
-mail:*:18659:0:99999:7:::
-news:*:18659:0:99999:7:::
-uucp:*:18659:0:99999:7:::
-proxy:*:18659:0:99999:7:::
-www-data:*:18659:0:99999:7:::
-backup:*:18659:0:99999:7:::
-list:*:18659:0:99999:7:::
-irc:*:18659:0:99999:7:::
-gnats:*:18659:0:99999:7:::
-nobody:*:18659:0:99999:7:::
-systemd-network:*:18659:0:99999:7:::
-systemd-resolve:*:18659:0:99999:7:::
-systemd-timesync:*:18659:0:99999:7:::
-messagebus:*:18659:0:99999:7:::
-syslog:*:18659:0:99999:7:::
-_apt:*:18659:0:99999:7:::
-tss:*:18659:0:99999:7:::
-uuidd:*:18659:0:99999:7:::
-tcpdump:*:18659:0:99999:7:::
-landscape:*:18659:0:99999:7:::
-pollinate:*:18659:0:99999:7:::
-usbmux:*:18846:0:99999:7:::
-sshd:*:18846:0:99999:7:::
-systemd-coredump:!!:18846::::::
+tommyboy1@...:~$ cat /etc/shadow
+...
 tommyboy1:$6$sOofVCulSPJdTck8$XpWS5BQL9eb9sZgGeTQsj0XhxjSOWCr8FHH33ZfgBqXP31rlwy086WRc.a6GShUFeKGzNqbCYEwGEq8Ye3Szb0:18846:0:99999:7:::
-lxd:!:18846::::::
-mysql:!:18846:0:99999:7:::
+...
 crackme:$6$m023.TJqTqsrnQYM$XvFEaHFxu6qH50AgAyBI.LYdkjtB7xZrzaIRyddpknB.5UBr5E8jc0UDJTEDgIBNQFaKPizAlHsdfTScybDOa/:18867:0:99999:7:::
-ubuntu:!:20343:0:99999:7:::
+...
 ```
-
 
 <p>8.2. What mode do we need for the user's hash? Hint: <em>Check the example page and run a Find for the first 3 chars of the hash</em><br>
 <code>1800</code></p>
@@ -818,24 +742,42 @@ ubuntu:!:20343:0:99999:7:::
 
 <img width="1540" height="89" alt="image" src="https://github.com/user-attachments/assets/8dc751e5-9d80-49a9-87ee-5e5791e41661" />
 
+<br>
+<p>8.3. What is the cracked password?<br>
+<code>cr4ck</code></p>
+
+
+```bash
+:~/BruteForceHeroes# cat Hash
+$6$m023.TJqTqsrnQYM$XvFEaHFxu6qH50AgAyBI.LYdkjtB7xZrzaIRyddpknB.5UBr5E8jc0UDJTEDgIBNQFaKPizAlHsdfTScybDOa/
+```
+
+<p>
+
+- over 20 minutes ...</p>
+
 ```bash
 :~/BruteForceHeroes# hashcat -a 3 -m 1800 Hash ?d?d?u?d?d
 ```
 
 
-
+```bash
+:~/BruteForceHeroes# john Hash --mask=?l?l?d?l?l
+Warning: detected hash type "sha512crypt", but the string is also recognized as "HMAC-SHA256"
+Use the "--format=HMAC-SHA256" option to force loading these as that type instead
+Warning: detected hash type "sha512crypt", but the string is also recognized as "sha512crypt-opencl"
+Use the "--format=sha512crypt-opencl" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+```
 
 
 <br>
-
-<p>8.3. What is the cracked password?<br>
-<code>____</code></p>
-
-<br>
-
 <p>8.4. What is the mask value we need to use? Hint: <em>Check the hashcat built in charsets</em><br>
-<code>____</code></p>
-
+<code>?l?l?d?l?l</code></p>
 
 
 <br>
@@ -855,32 +797,50 @@ So thank you for completing the room. The material covered within this room was 
 
 <br>
 <br>
-
+<br>
 <h1 align="center">Completed</h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ec3adeed-c4ee-43f0-bee9-5d6f78c5a43"><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/ccf7439e-5dbd-4f44-9ee3-9297839a9bac"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3549da95-ed93-4079-a739-859406eb38d9"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/9bdc21ce-baa3-4305-a13d-ca23013809ae"></p>
+
+<h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
+
+<div align="center"><h6>
+
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
+|11      |Hard 🚩 - Rocket                       | 523    |     102ⁿᵈ    |      4ᵗʰ     |     211ˢᵗ    |     3ʳᵈ    | 129,870  |    999    |    76     |
+|10      |Easy 🚩 - Shadow Trace                 | 522    |     101ˢᵗ    |      4ᵗʰ     |     159ᵗʰ    |     3ʳᵈ    | 129,810  |    998    |    76     |
+|10      |Easy 🔗 - Defensive Security Intro     | 522    |     103ʳᵈ    |      4ᵗʰ     |     357ᵗʰ    |     3ʳᵈ    | 129,405  |    997    |    76     |
+|10      |Easy 🔗 - 25 Days of Cyber Security, Day 2| 522|      103ʳᵈ    |      4ᵗʰ     |     355ᵗʰ    |     3ʳᵈ    | 129,405  |    996    |    76     |
+|9       |Medium 🔗 - Linux Threat Detection 2   | 521    |     103ʳᵈ    |      4ᵗʰ     |     326ᵗʰ    |     3ʳᵈ    | 129,373  |    996    |    76     |
+|9       |Medium 🚩 - WWBuddy                    | 521    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,293  |    995    |    76     |
+|8       |Hard 🚩 - Motunui                      | 520    |     103ʳᵈ    |      4ᵗʰ     |     383ʳᵈ    |     4ᵗʰ    | 129,201  |    994    |    76     |
+|8       |Easy 🔗 - Man-in-the-Middle            | 520    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,141  |    993    |    76     |
+|7       |Medium 🚩 - Profiles, in progress      | 519    |              |              |              |            | 129,021  |    992    |    76     |
+|6       |Medium 🚩 - VulnNet                    | 518    |     105ᵗʰ    |      4ᵗʰ     |     348ᵗʰ    |     5ᵗʰ    | 129,021  |    992    |    76     |
+|6       |Easy 🚩 - DearQA                       | 518    |     105ᵗʰ    |      4ᵗʰ     |     333ʳᵈ    |     6ᵗʰ    | 128,991  |    991    |    76     |
+|5       |Medium 🚩 - Frank & Herby try again.....| 517   |     106ᵗʰ    |      4ᵗʰ     |     300ᵗʰ    |     5ᵗʰ    | 128,931  |    990    |    76     |
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     233ʳᵈ    |     3ʳᵈ    | 128,871  |    989    |    76     |
+|4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
+|3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
+|2       |Medium 🔗 - Data Exfiltration Detection| 514    |     108ᵗʰ    |      4ᵗʰ     |     521ˢᵗ    |     8ᵗʰ    | 128,503  |    985    |    76     |
+|1       |Medium 🔗 - Network Discovery Detection| 513    |     108ᵗʰ    |      4ᵗʰ     |     875ᵗʰ    |     7ᵗʰ    | 128,407  |    984    |    76     |
+|1       |Medium 🚩 - Intranet                   | 513    |     108ᵗʰ    |      4ᵗʰ     |    3,357ᵗʰ   |    57ᵗʰ    | 128,335  |    983    |    76     |
+
+</h6></div>
 
 <br>
 
-<h1 align="center">My TryHackMe Journey</h1>
-
-<div align="center">
-
-| Date              | Streak   | All Time     | All Time     | Monthly     | Monthly    | Points   | Rooms     | Badges    |
-| :---------------: | :------: | :----------: | :----------: | :---------: | :--------: | :------  | :-------: | :-------: |
-|                   |          |    Global    |    Brazil    |    Global   |   Brazil   |          | Completed |           |
-| 2025, August 1    | 452      |     141ˢᵗ    |      5ᵗʰ     |   3,338ᵗʰ   |    43ʳᵈ    | 118,424  |    887    |    73     |
 
 
+<p align="center">Global All Time:   101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/1ca7a103-6800-4c07-8d74-693fad725c75"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/f7889a04-42e4-4860-85e1-1d13728784b2"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d249fb21-fe45-4ceb-ad5d-6d471dd67dde"><br>
+                  Global monthly:    217ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/aa536a83-c20f-4cd7-affe-8bcd9ebbc5b5"><br>
+                  Brazil monthly:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ddbfb068-56ff-43ac-9a87-e3d4ba4bb5ba"></p>
 
-</div>
 
-<p align="center">Global All Time:   141ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/b8c1746f-be18-4435-96f3-347d4bf43ed9"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/e34c9e2a-8f75-4c9a-9b99-971e217c1960"><br><br>
-                  Brazil All Time:     5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6bdcc963-23e1-485d-b40e-e4c089fd1dd3"><br>
-                  Global monthly:   3,338ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/327d6d05-8c11-43eb-8e2a-4e07c23d5ae5"><br>
-                  Brazil monthly:      43ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/206fe1c3-6e3d-4a67-92e9-7b65cbb00ae7"><br>
-
-<br>
-<h1 align="center">Thanks for Coming!</h1>
-<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p> 
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
