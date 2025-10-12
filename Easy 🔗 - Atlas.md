@@ -435,8 +435,11 @@ Regardless, we can now make use of our brand new admin account!<br>
 <br>
 <br>
 
+<img width="1222" height="291" alt="image" src="https://github.com/user-attachments/assets/291e4176-c724-476b-873c-4655134c0b79" />
 
-
+<br>
+<br>
+<br>
 <p>6.7. We could take the simple option of right-clicking on PowerShell or cmd.exe and choosing to "Run as Administrator", but that's no fun. Instead, let's use a hacky little PowerShell command to start a new high-integrity command prompt running as our new administrator. The command is as follows: Start-Process powershell 'Start-Process cmd -Verb RunAs' -Credential adm1n. Execute this in your PowerShell session and follow the steps to spawn a new PowerShell process as an Administrator!<br>
 <code>No answer needed</code></p>
 
