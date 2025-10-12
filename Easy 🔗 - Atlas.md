@@ -14,7 +14,7 @@ https://tryhackme.com/room/atlas
 
 
 
-<h1>Task 1 . <code>Introccution</code> . Room Overview and Deploy!</h1>
+<h2>Task 1 . <code>Introduction</code> . Room Overview and Deploy!</h2>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -24,7 +24,7 @@ https://tryhackme.com/room/atlas
 <code>No answer needed</code></p>
 
 <br>
-<h1>Task 2 . <code>Enumeration</code> . Room Enumeration</h1>
+<h2>Task 2 . <code>Enumeration</code> . Room Enumeration</h2>
 <br>
 
 <p><em>Answer the questions below</em></p>
@@ -148,7 +148,7 @@ PORT     STATE SERVICE       REASON          VERSION
 ```
 
 <br>
-<h1>Task 3 . <code>Enumeration</code> . Service Enumeration</h1>
+<h2>Task 3 . <code>Enumeration</code> . Service Enumeration</h2>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -213,7 +213,7 @@ File Type: Python script, ASCII text executable
 ```
 
 <br>
-<h1>Task 4 . <code>Attack</code> . Foothold</h1>
+<h2>Task 4 . <code>Attack</code> . Foothold</h2>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -286,7 +286,7 @@ optional arguments:
 <br>
 <br>
 <br>
-<h1>Task 5 . <code>Access</code> . VNC 🠖 RDP</h1>
+<h2>Task 5 . <code>Access</code> . VNC 🠖 RDP</h2>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -309,7 +309,7 @@ Password:	H0ldUpTheHe@vens
 <br>
 <br>
 <br>
-<h1>Task 6 . <code>Attack</code> . Privilege Escalation</h1>
+<h2>Task 6 . <code>Attack</code> . Privilege Escalation</h2>
 <br>
 
 
@@ -388,7 +388,7 @@ Regardless, we can now make use of our brand new admin account!<br>
 <br>
 <br>
 <br>
-<h1>Task 7 . <code>Attack</code> . Post Exploitation</h1>
+<h2>Task 7 . <code>Attack</code> . Post Exploitation</h2>
 <br>
 
 <p><em>Answer the question below</em></p>
