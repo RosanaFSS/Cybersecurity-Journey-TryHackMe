@@ -464,10 +464,8 @@ Regardless, we can now make use of our brand new admin account!<br>
 <br>
 <br>
 <br>
-
-```bash
-:/tmp# file mimikatz_trunk.zip
-```
+<p>7.2. Make sure that the zip file is in your /tmp directory, then unzip it with unzip mimikatz_trunk.zip<br>
+<code>No answer needed</code></p>
 
 ```bash
 :/tmp# unzip mimikatz_trunk.zip
@@ -479,18 +477,19 @@ Archive:  mimikatz_trunk.zip
   inflating: Win32/mimidrv.sys       
   inflating: Win32/mimikatz.exe      
   inflating: Win32/mimilib.dll       
-  ...
+  inflating: Win32/mimilove.exe      
+  inflating: Win32/mimispool.dll     
+   creating: x64/
+  inflating: x64/mimidrv.sys         
+  inflating: x64/mimikatz.exe        
+  inflating: x64/mimilib.dll         
+  inflating: x64/mimispool.dll   
 ```
+
+<img width="1207" height="307" alt="image" src="https://github.com/user-attachments/assets/cc5671e0-b6a1-448f-89e8-f052f2ced292" />
 
 <br>
-<p>7.2. Make sure that the zip file is in your /tmp directory, then unzip it with unzip mimikatz_trunk.zip<br>
-<code>No answer needed</code></p>
-
-```bash
-:/tmp/x64# ls
-mimidrv.sys  mimikatz.exe  mimilib.dll  mimispool.dll
-```
-
+<br>
 <br>
 <p>7.3. Now we can get to work! Switch back into your RDP session and (using the elevated Command Shell we obtained in the last task) execute the following command to start Mimikatz: \\tsclient\share\x64\mimikatz.exe. If this is successful then you should get some pretty ASCII art and a new terminal prompt:<br>
 <code>No answer needed</code></p>
