@@ -14,7 +14,14 @@ Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
 
 
 <br>
-<h1 align="center">Port Scanning<a id='1'></a></h1>
+<h1 align="center">Directory and File Enumeration<a id='1'></a></h1>
+
+```bash
+xx.xxx.xx.xx exitdenied.thm
+```
+
+<br>
+<h1 align="center">Port Scanning<a id='2'></a></h1>
 <p align="center"><strong>3</strong> open ports</p>
 <br>
 
@@ -29,7 +36,7 @@ Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
 </p></div><br>
 
 ```bash
-:~/M4tr1xExitDenied# nmap -sT xx.xxx.xx.xx
+:~/M4tr1xExitDenied# nmap -sT exitdenied.thm
 ...
 PORT     STATE SERVICE
 22/tcp   open  ssh
@@ -39,7 +46,7 @@ PORT     STATE SERVICE
 ```
 
 ```bash
-:~/M4tr1xExitDenied# nmap -sC -sV -Pn -p- -T4 xx.xxx.xx.xx
+:~/M4tr1xExitDenied# nmap -sC -sV -Pn -p22,80,3306 -T4  exitdenied.thm
 ...
 PORT     STATE SERVICE VERSION
 22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
@@ -52,22 +59,18 @@ PORT     STATE SERVICE VERSION
 |   Version: 5.5.5-10.3.39-MariaDB-0ubuntu0.20.04.2
 |   Thread ID: 115
 |   Capabilities flags: 63486
-|   Some Capabilities: SupportsTransactions, DontAllowDatabaseTableColumn, ConnectWithDatabase, Speaks41ProtocolOld, Support41Auth, FoundRows, IgnoreSigpipes, LongColumnFlag, InteractiveClient, SupportsLoadDataLocal, IgnoreSpaceBeforeParenthesis, ODBCClient, Speaks41ProtocolNew, SupportsCompression, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Some Capabilities: ConnectWithDatabase, SupportsTransactions, Speaks41ProtocolOld, IgnoreSigpipes, Support41Auth, SupportsLoadDataLocal, FoundRows, SupportsCompression, DontAllowDatabaseTableColumn, Speaks41ProtocolNew, InteractiveClient, ODBCClient, LongColumnFlag, IgnoreSpaceBeforeParenthesis, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
 |   Status: Autocommit
-|   Salt: ,DROrrg/R/1Kb-YX/}LD
+|   Salt: $kqv}1w)a0h@Bks"J1T4
 |_  Auth Plugin Name: mysql_native_password
-MAC Address: 16:FF:DA:4F:19:B5 (Unknown)
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 9.93 seconds
 ```
 
 <br>
-<h1 align="center">Web Vulberability Scanning<a id='2'></a></h1>
+<h1 align="center">Web Vulberability Scanning<a id='3'></a></h1>
 
 ```bash
-~/M4tr1xExitDenied# nikto -h xx.xxx.xx.xx
+:~/M4tr1xExitDenied# nikto -h exitdenied.thm
+
 - Nikto v2.1.5
 ---------------------------------------------------------------------------
 + Target IP:          xx.xxx.xx.xx
@@ -97,109 +100,169 @@ Nmap done: 1 IP address (1 host up) scanned in 9.93 seconds
 + 1 host(s) tested
 ```
 
-
-
+<br>
+<h1 align="center">Directory and File Enumeration<a id='4'></a></h1>
 
 ```bash
-:~/M4tr1xExitDenied# gobuster dir -u http://exit-denied.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k
-...
-===============================================================
-http://exit-denied.thm/images               (Status: 301) [Size: 319] [--> http://exit-denied.thm/images/]
-http://exit-denied.thm/archive              (Status: 301) [Size: 320] [--> http://exit-denied.thm/archive/]
-http://exit-denied.thm/login                (Status: 200) [Size: 241]
-http://exit-denied.thm/files                (Status: 200) [Size: 240]
-http://exit-denied.thm/uploads              (Status: 301) [Size: 320] [--> http://exit-denied.thm/uploads/]
-http://exit-denied.thm/general              (Status: 200) [Size: 233]
-http://exit-denied.thm/admin                (Status: 301) [Size: 318] [--> http://exit-denied.thm/admin/]
-http://exit-denied.thm/ftp                  (Status: 200) [Size: 240]
-http://exit-denied.thm/install              (Status: 301) [Size: 320] [--> http://exit-denied.thm/install/]
-http://exit-denied.thm/cache                (Status: 301) [Size: 318] [--> http://exit-denied.thm/cache/]
-http://exit-denied.thm/blue                 (Status: 200) [Size: 241]
-http://exit-denied.thm/flag                 (Status: 200) [Size: 240]
-http://exit-denied.thm/inc                  (Status: 301) [Size: 316] [--> http://exit-denied.thm/inc/]
-http://exit-denied.thm/error                (Status: 200) [Size: 240]
-http://exit-denied.thm/attachment           (Status: 200) [Size: 240]
-http://exit-denied.thm/e-mail               (Status: 200) [Size: 240]
-http://exit-denied.thm/secret               (Status: 200) [Size: 241]
-http://exit-denied.thm/panel                (Status: 200) [Size: 241]
-http://exit-denied.thm/administrator        (Status: 200) [Size: 241]
-http://exit-denied.thm/change_password      (Status: 200) [Size: 240]
-http://exit-denied.thm/server-status        (Status: 403) [Size: 280]
-Progress: 218275 / 218276 (100.00%)
+:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q
+http://exitdenied.thm/images               (Status: 301) [Size: 317] [--> http://exitdenied.thm/images/]
+http://exitdenied.thm/login                (Status: 200) [Size: 241]
+http://exitdenied.thm/archive              (Status: 301) [Size: 318] [--> http://exitdenied.thm/archive/]
+http://exitdenied.thm/files                (Status: 200) [Size: 240]
+http://exitdenied.thm/uploads              (Status: 301) [Size: 318] [--> http://exitdenied.thm/uploads/]
+http://exitdenied.thm/general              (Status: 200) [Size: 233]
+http://exitdenied.thm/admin                (Status: 301) [Size: 316] [--> http://exitdenied.thm/admin/]
+http://exitdenied.thm/ftp                  (Status: 200) [Size: 240]
+http://exitdenied.thm/install              (Status: 301) [Size: 318] [--> http://exitdenied.thm/install/]
+http://exitdenied.thm/cache                (Status: 301) [Size: 316] [--> http://exitdenied.thm/cache/]
+http://exitdenied.thm/blue                 (Status: 200) [Size: 241]
+http://exitdenied.thm/flag                 (Status: 200) [Size: 240]
+http://exitdenied.thm/inc                  (Status: 301) [Size: 314] [--> http://exitdenied.thm/inc/]
+http://exitdenied.thm/error                (Status: 200) [Size: 240]
+http://exitdenied.thm/attachment           (Status: 200) [Size: 240]
+http://exitdenied.thm/e-mail               (Status: 200) [Size: 240]
+http://exitdenied.thm/secret               (Status: 200) [Size: 241]
+http://exitdenied.thm/panel                (Status: 200) [Size: 241]
+http://exitdenied.thm/administrator        (Status: 200) [Size: 241]
+http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
+http://exitdenied.thm/server-status        (Status: 403) [Size: 279]
 ```
 
+<br>
+<br>
+<br>
+<p align="center">exitdenied.thm/general</p>
+
+<img width="1137" height="726" alt="image" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13" />
+
+
+<br>
+<br>
+<br>
+<p align="center">exitdenied.thm/admin</p>
+
+<img width="1143" height="473" alt="image" src="https://github.com/user-attachments/assets/340c43f6-4d5f-4484-950d-6c38429928ef" />
+
+
+
+<img width="1195" height="363" alt="image" src="https://github.com/user-attachments/assets/6628ad39-54a2-4e53-922f-da6dd9ac33fd" />
+
+<br>
+<br>
+<br>
+<p align="center">exitdenied.thm/flag & exitdenied.thm/ftp</p>
+
+<img width="818" height="805" alt="image" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4" />
+
+<br>
+<br>
+<br>
+<p align="center">exitdenied.thm/blue</p>
+
+<img width="422" height="716" alt="image" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a" />
+
+
+
 ```bash
-:~/M4tr1xExitDenied# gobuster dir -u http://exit-denied.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -x php,txt,js,bak
-...
-===============================================================
-http://exit-denied.thm/.php                 (Status: 403) [Size: 280]
-http://exit-denied.thm/images               (Status: 301) [Size: 319] [--> http://exit-denied.thm/images/]
-http://exit-denied.thm/contact.php          (Status: 200) [Size: 9936]
-http://exit-denied.thm/rss.php              (Status: 302) [Size: 0] [--> syndication.php]
-http://exit-denied.thm/login                (Status: 200) [Size: 241]
-http://exit-denied.thm/archive              (Status: 301) [Size: 320] [--> http://exit-denied.thm/archive/]
-http://exit-denied.thm/index.php            (Status: 200) [Size: 10588]
-http://exit-denied.thm/files                (Status: 200) [Size: 240]
-http://exit-denied.thm/search.php           (Status: 200) [Size: 14791]
-http://exit-denied.thm/misc.php             (Status: 200) [Size: 0]
-http://exit-denied.thm/uploads              (Status: 301) [Size: 320] [--> http://exit-denied.thm/uploads/]
-http://exit-denied.thm/stats.php            (Status: 200) [Size: 10250]
-http://exit-denied.thm/general              (Status: 200) [Size: 233]
-http://exit-denied.thm/calendar.php         (Status: 200) [Size: 25885]
-http://exit-denied.thm/global.php           (Status: 200) [Size: 98]
-http://exit-denied.thm/admin                (Status: 301) [Size: 318] [--> http://exit-denied.thm/admin/]
-http://exit-denied.thm/member.php           (Status: 302) [Size: 0] [--> index.php]
-http://exit-denied.thm/online.php           (Status: 200) [Size: 9866]
-http://exit-denied.thm/showthread.php       (Status: 200) [Size: 9002]
-http://exit-denied.thm/report.php           (Status: 200) [Size: 9603]
-http://exit-denied.thm/portal.php           (Status: 200) [Size: 11991]
-http://exit-denied.thm/memberlist.php       (Status: 200) [Size: 31959]
-http://exit-denied.thm/ftp                  (Status: 200) [Size: 240]
-http://exit-denied.thm/css.php              (Status: 200) [Size: 0]
-http://exit-denied.thm/install              (Status: 301) [Size: 320] [--> http://exit-denied.thm/install/]
-http://exit-denied.thm/announcements.php    (Status: 200) [Size: 8832]
-http://exit-denied.thm/polls.php            (Status: 200) [Size: 0]
-http://exit-denied.thm/private.php          (Status: 200) [Size: 9684]
-http://exit-denied.thm/cache                (Status: 301) [Size: 318] [--> http://exit-denied.thm/cache/]
-http://exit-denied.thm/blue                 (Status: 200) [Size: 241]
-http://exit-denied.thm/syndication.php      (Status: 200) [Size: 395]
-http://exit-denied.thm/flag                 (Status: 200) [Size: 240]
-http://exit-denied.thm/inc                  (Status: 301) [Size: 316] [--> http://exit-denied.thm/inc/]
-http://exit-denied.thm/newreply.php         (Status: 200) [Size: 8830]
-http://exit-denied.thm/error                (Status: 200) [Size: 240]
-http://exit-denied.thm/printthread.php      (Status: 200) [Size: 8830]
-http://exit-denied.thm/captcha.php          (Status: 200) [Size: 0]
-http://exit-denied.thm/usercp.php           (Status: 200) [Size: 9772]
-http://exit-denied.thm/attachment           (Status: 200) [Size: 240]
-http://exit-denied.thm/attachment.php       (Status: 200) [Size: 8834]
-http://exit-denied.thm/e-mail               (Status: 200) [Size: 240]
-http://exit-denied.thm/newthread.php        (Status: 200) [Size: 8807]
-http://exit-denied.thm/secret               (Status: 200) [Size: 241]
-http://exit-denied.thm/panel                (Status: 200) [Size: 241]
-http://exit-denied.thm/task.php             (Status: 200) [Size: 43]
-http://exit-denied.thm/administrator        (Status: 200) [Size: 241]
-http://exit-denied.thm/warnings.php         (Status: 200) [Size: 9603]
-http://exit-denied.thm/reputation.php       (Status: 200) [Size: 8849]
-http://exit-denied.thm/htaccess.txt         (Status: 200) [Size: 3088]
-http://exit-denied.thm/moderation.php       (Status: 200) [Size: 9596]
-http://exit-denied.thm/change_password      (Status: 200) [Size: 240]
-http://exit-denied.thm/server-status        (Status: 403) [Size: 280]
-http://exit-denied.thm/editpost.php         (Status: 200) [Size: 9603]
-Progress: 1091375 / 1091380 (100.00%)
+:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
+http://exitdenied.thm/.php                 (Status: 403) [Size: 279]
+http://exitdenied.thm/images               (Status: 301) [Size: 317] [--> http://exitdenied.thm/images/]
+http://exitdenied.thm/index.php            (Status: 200) [Size: 10588]
+http://exitdenied.thm/contact.php          (Status: 200) [Size: 9936]
+http://exitdenied.thm/rss.php              (Status: 302) [Size: 0] [--> syndication.php]
+http://exitdenied.thm/search.php           (Status: 200) [Size: 14791]
+http://exitdenied.thm/login                (Status: 200) [Size: 241]
+http://exitdenied.thm/archive              (Status: 301) [Size: 318] [--> http://exitdenied.thm/archive/]
+http://exitdenied.thm/files                (Status: 200) [Size: 240]
+http://exitdenied.thm/misc.php             (Status: 200) [Size: 0]
+http://exitdenied.thm/uploads              (Status: 301) [Size: 318] [--> http://exitdenied.thm/uploads/]
+http://exitdenied.thm/stats.php            (Status: 200) [Size: 10250]
+http://exitdenied.thm/calendar.php         (Status: 200) [Size: 25885]
+http://exitdenied.thm/general              (Status: 200) [Size: 233]
+http://exitdenied.thm/global.php           (Status: 200) [Size: 98]
+http://exitdenied.thm/admin                (Status: 301) [Size: 316] [--> http://exitdenied.thm/admin/]
+http://exitdenied.thm/online.php           (Status: 200) [Size: 9858]
+http://exitdenied.thm/member.php           (Status: 302) [Size: 0] [--> index.php]
+http://exitdenied.thm/showthread.php       (Status: 200) [Size: 9002]
+http://exitdenied.thm/report.php           (Status: 200) [Size: 9603]
+http://exitdenied.thm/portal.php           (Status: 200) [Size: 11991]
+http://exitdenied.thm/memberlist.php       (Status: 200) [Size: 31959]
+http://exitdenied.thm/ftp                  (Status: 200) [Size: 240]
+http://exitdenied.thm/css.php              (Status: 200) [Size: 0]
+http://exitdenied.thm/install              (Status: 301) [Size: 318] [--> http://exitdenied.thm/install/]
+http://exitdenied.thm/announcements.php    (Status: 200) [Size: 8832]
+http://exitdenied.thm/polls.php            (Status: 200) [Size: 0]
+http://exitdenied.thm/private.php          (Status: 200) [Size: 9684]
+http://exitdenied.thm/cache                (Status: 301) [Size: 316] [--> http://exitdenied.thm/cache/]
+http://exitdenied.thm/blue                 (Status: 200) [Size: 241]
+http://exitdenied.thm/syndication.php      (Status: 200) [Size: 395]
+http://exitdenied.thm/flag                 (Status: 200) [Size: 240]
+http://exitdenied.thm/inc                  (Status: 301) [Size: 314] [--> http://exitdenied.thm/inc/]
+http://exitdenied.thm/newreply.php         (Status: 200) [Size: 8830]
+http://exitdenied.thm/error                (Status: 200) [Size: 240]
+http://exitdenied.thm/printthread.php      (Status: 200) [Size: 8830]
+http://exitdenied.thm/captcha.php          (Status: 200) [Size: 0]
+http://exitdenied.thm/usercp.php           (Status: 200) [Size: 9772]
+http://exitdenied.thm/attachment           (Status: 200) [Size: 240]
+http://exitdenied.thm/attachment.php       (Status: 200) [Size: 8834]
+http://exitdenied.thm/e-mail               (Status: 200) [Size: 240]
+http://exitdenied.thm/newthread.php        (Status: 200) [Size: 8807]
+http://exitdenied.thm/secret               (Status: 200) [Size: 241]
+http://exitdenied.thm/task.php             (Status: 200) [Size: 43]
+http://exitdenied.thm/panel                (Status: 200) [Size: 241]
+http://exitdenied.thm/administrator        (Status: 200) [Size: 241]
+http://exitdenied.thm/warnings.php         (Status: 200) [Size: 9603]
+http://exitdenied.thm/reputation.php       (Status: 200) [Size: 8849]
+http://exitdenied.thm/htaccess.txt         (Status: 200) [Size: 3088]
+http://exitdenied.thm/moderation.php       (Status: 200) [Size: 9596]
+http://exitdenied.thm/moderation.php       (Status: 200) [Size: 9596]
+http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
+http://exitdenied.thm/server-status        (Status: 403) [Size: 279]
+http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 ```
 
-```bash
-:~/M4tr1xExitDenied# gobuster dir -u http://exit-denied.thm/inc/plugins/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -x php,txt,js,bak
-...
+<img width="1191" height="831" alt="image" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659" />
 
+<br>
+<br>
+<br>
+
+```bash
+:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/inc/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
+http://exitdenied.thm/inc/.php                 (Status: 403) [Size: 279]
+http://exitdenied.thm/inc/plugins              (Status: 301) [Size: 322] [--> http://exitdenied.thm/inc/plugins/]
+http://exitdenied.thm/inc/languages            (Status: 301) [Size: 324] [--> http://exitdenied.thm/inc/languages/]
+http://exitdenied.thm/inc/config.php           (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/settings.php         (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/functions.php        (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/init.php             (Status: 200) [Size: 98]
+http://exitdenied.thm/inc/tasks                (Status: 301) [Size: 320] [--> http://exitdenied.thm/inc/tasks/]
+http://exitdenied.thm/inc/3rdparty             (Status: 301) [Size: 323] [--> http://exitdenied.thm/inc/3rdparty/]
+```
+
+<img width="1264" height="192" alt="image" src="https://github.com/user-attachments/assets/76bd5c7f-f286-4293-acc3-c2b5f580f707" />
+
+<br>
+<br>
+<br>
+
+```bash
+:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/inc/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
+http://exitdenied.thm/inc/.php                 (Status: 403) [Size: 279]
+http://exitdenied.thm/inc/plugins              (Status: 301) [Size: 322] [--> http://exitdenied.thm/inc/plugins/]
+http://exitdenied.thm/inc/languages            (Status: 301) [Size: 324] [--> http://exitdenied.thm/inc/languages/]
+http://exitdenied.thm/inc/config.php           (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/settings.php         (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/functions.php        (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/init.php             (Status: 200) [Size: 98]
+http://exitdenied.thm/inc/tasks                (Status: 301) [Size: 320] [--> http://exitdenied.thm/inc/tasks/]
+http://exitdenied.thm/inc/3rdparty             (Status: 301) [Size: 323] [--> http://exitdenied.thm/inc/3rdparty/]
+```
 
 
 ```bash
 :~/M4tr1xExitDenied# dirsearch -u http://10.201.96.34 -r -R 3
 ```
-
-<br>
-<h1 align="center">Directory and File Enumeration<a id='6'></a></h1>
 
 <p>
 
