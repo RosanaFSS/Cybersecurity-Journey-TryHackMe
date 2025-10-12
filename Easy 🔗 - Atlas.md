@@ -494,17 +494,7 @@ Archive:  mimikatz_trunk.zip
 <p>7.3. Now we can get to work! Switch back into your RDP session and (using the elevated Command Shell we obtained in the last task) execute the following command to start Mimikatz: \\tsclient\share\x64\mimikatz.exe. If this is successful then you should get some pretty ASCII art and a new terminal prompt:<br>
 <code>No answer needed</code></p>
 
-```bash
-:~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.75.19 /u:adm1n /p:P@ssw0rd /cert:ignore +clipboard /dynamic-resolution /drive:share,/tmp
-```
-
-<img width="1152" height="375" alt="image" src="https://github.com/user-attachments/assets/7722d057-775f-47e9-a4cf-08e5aaed4dea" />
-
-
-<br>
-<br>
-<br>
-
+<img width="1149" height="234" alt="image" src="https://github.com/user-attachments/assets/78f7c272-a5cb-4aa0-93fd-0f743ffe2149" />
 
 <br>
 <br>
@@ -517,5 +507,14 @@ Archive:  mimikatz_trunk.zip
 <br>
 <br>
 <br>
+
+<img width="1114" height="322" alt="image" src="https://github.com/user-attachments/assets/79977b34-e0e5-428e-8fbb-60999625e6c0" />
+
+<br>
+<br>
+<br>
+<p>7.5. There are a variety of commands we could use here, all of which do slightly different things. The command that we will use is: lsadump::sam. When executed, this will provide us with a list of password hashes for every account on the machine (with some extra information thrown in as well). The Administrator account password hash should be fairly near the top of the list:<br>
+<code>No answer needed</code></p>
+
 
 
