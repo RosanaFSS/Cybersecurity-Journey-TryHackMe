@@ -354,10 +354,6 @@ Unpacking objects: 100% (40/40), 127.15 KiB | 4.38 MiB/s, done.
 CVE-2021-1675: command not found
 ```
 
-```bash
-:/tmp# cp /opt/Mimikatz/Win32/mimikatz.exe /tmp
-```
-
 <img width="810" height="298" alt="image" src="https://github.com/user-attachments/assets/11b98007-e2fd-4ea1-a0f7-cc58a5403fe1" />
 
 <br>
