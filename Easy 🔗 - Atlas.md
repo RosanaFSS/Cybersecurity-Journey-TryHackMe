@@ -355,13 +355,9 @@ CVE-2021-1675: command not found
 ```
 
 <br>
-<br>
-<br>
 <p>6.3. Inside your RDP session, open a new PowerShell Window.<br>
 <code>No answer needed</code></p>
 
-<br>
-<br>
 <br>
 <p>6.4. The repository that we downloaded contains a PowerShell (.ps1) script that needs to be imported. We can import it using: . \\tsclient\share\CVE-2021-1675\CVE-2021-1675.ps1  Make sure to include the dot at the start! This uses dot-syntax to import any functions exposed by the script. We are using \\tsclient\share to reference the share that we created. This allows us to view (and thus import) files that are stored in the /tmp folder of our own attacking machine!<br>
 <code>No answer needed</code></p>
