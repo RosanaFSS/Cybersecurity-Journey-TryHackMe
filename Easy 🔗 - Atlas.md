@@ -319,6 +319,7 @@ optional arguments:
 <p>5.1. Most people take the easy option when it comes to passwords, which makes password reuse incredibly common. With that in mind, use xfreerdp to connect to the target over RDP.<br>
 <code>No answer needed</code></p>
 
+:~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.6.66 /u:Atlas /p:H0ldUpTheHe@vens /cert:ignore +clipboard /dynamic-resolution /drive:share,/tmp
 
 ```bash
 :~/Atlas/CVE-2019-17662# xfreerdp /v:10.201.75.19 /u:Atlas /p:H0ldUpTheHe@vens /cert:ignore +clipboard /dynamic-resolution /drive:share,/tmp
@@ -494,7 +495,13 @@ Archive:  mimikatz_trunk.zip
 <p>7.3. Now we can get to work! Switch back into your RDP session and (using the elevated Command Shell we obtained in the last task) execute the following command to start Mimikatz: \\tsclient\share\x64\mimikatz.exe. If this is successful then you should get some pretty ASCII art and a new terminal prompt:<br>
 <code>No answer needed</code></p>
 
-<img width="1149" height="234" alt="image" src="https://github.com/user-attachments/assets/78f7c272-a5cb-4aa0-93fd-0f743ffe2149" />
+```bash
+PS  \\tsclient\share\x64\mimikatz.exe
+```
+
+```bash
+PS  \\tsclient\share\x64\mimikatz.exe
+```
 
 <br>
 <br>
@@ -502,13 +509,13 @@ Archive:  mimikatz_trunk.zip
 <p>7.4. When we start Mimikatz we usually have to execute two commands before we start dumping hashes:  privilege::debug -- this obtains debug privileges which (without going into too much depth in the Windows privilege structure) allows us to access other processes for "debugging" purposes. token::elevate -- simply put, this takes us from our administrative shell with high privileges into a SYSTEM level shell with maximum privileges. This is something that we have a right to do as an administrator, but that is not usually possible using normal Windows operations. With these commands executed, we are ready to dump some passwords hashes!<br>
 <code>No answer needed</code></p>
 
-<img width="855" height="191" alt="image" src="https://github.com/user-attachments/assets/7a8b7238-41e2-4b3d-a5f3-b7ba4e5273ad" />
+
 
 <br>
 <br>
 <br>
 
-<img width="1114" height="322" alt="image" src="https://github.com/user-attachments/assets/79977b34-e0e5-428e-8fbb-60999625e6c0" />
+
 
 <br>
 <br>
