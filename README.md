@@ -8,7 +8,7 @@ Challenges Completed: &nbsp; <strong>89%</strong> &nbsp; -  &nbsp; <strong>391</
 <p align="center">Learning Paths Completed: &nbsp; <strong>100%</strong> &nbsp; -  &nbsp; <strong>18</strong> / <strong>18</strong><br>
 Seasonal CTF´s Completed:  &nbsp; <strong>2</strong></p>
 
-<p align="center"><img width="700px" src="https://github.com/user-attachments/assets/c0ca5c06-892a-4697-8df5-76296b98e534"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c0ca5c06-892a-4697-8df5-76296b98e534"></p>
 
 
 
