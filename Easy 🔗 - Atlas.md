@@ -191,6 +191,17 @@ PORT     STATE SERVICE       VERSION
 3389/tcp open  ms-wbt-server Microsoft Terminal Services
 ...
 ```
+<br>
+
+```bash
+:~/Atlas# nmap -p 8080 -Pn -sV 10.201.75.19
+...
+PORT     STATE SERVICE 
+8080/tcp open  http-proxy
+...
+```
+
+<br>
 
 <img width="1130" height="364" alt="image" src="https://github.com/user-attachments/assets/3c6c5291-e1f4-4e6d-bf75-2f9fcb4f9aab" />
 
