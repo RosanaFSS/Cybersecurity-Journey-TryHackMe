@@ -439,19 +439,7 @@ Regardless, we can now make use of our brand new admin account!<br>
 <p>6.8. Run the command whoami /groups in the new window. You should see BUILTIN\Administrators in the list of groups, and a line at the bottom of the output containing Mandatory Label\High Mandatory Level. These mean that you are running as an administrator with full access over the machine. Congratulations!<br>
 <code>No answer needed</code></p>
 
-<img width="923" height="423" alt="image" src="https://github.com/user-attachments/assets/041800fe-f4e4-42f7-979a-5e21ff34f626" />
-
-<br>
-<br>
-<br>
-
-<img width="814" height="476" alt="image" src="https://github.com/user-attachments/assets/b716d992-32a4-4a49-93d4-08791f3d4ca4" />
-
-<br>
-<br>
-<br>
-
-<img width="1037" height="394" alt="image" src="https://github.com/user-attachments/assets/de5504a1-0680-4399-bbcb-ef6826e492c4" />
+<img width="1219" height="487" alt="image" src="https://github.com/user-attachments/assets/ca372663-2ea3-4ffd-abe5-a9a59715e00f" />
 
 <br>
 <br>
