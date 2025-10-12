@@ -159,6 +159,28 @@ PORT     STATE SERVICE       REASON          VERSION
 
 
 ```bash
+:~/Atlas# searchsploit thinvnc
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                          |  Path
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ThinVNC 1.0b1 - Authentication Bypass                                                                                   | windows/remote/47519.py
+------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+```
+
+```bash
+:~/Atlas# searchsploit -m windows/remote/47519.py
+...
+    Codes: CVE-2019-17662
+ Verified: True
+File Type: Python script, ASCII text executable
+...
+```
+
+<br>
+<br>
+
+```bash
 :~/Atlas# nmap -p 3389 -Pn -sV 10.201.75.19
 ...
 PORT     STATE SERVICE       VERSION
@@ -191,25 +213,6 @@ PORT     STATE SERVICE       VERSION
 < 
 <HTML><HEAD><TITLE>401 Access Denied</TITLE></HEAD><BODY><H1>401 Access Denied</H1>The requested URL  requires authorization.<P></BODY></HTML>
 * Connection #0 to host 10.201.75.19 left intact
-```
-
-```bash
-:~/Atlas# searchsploit thinvnc
------------------------------------------------------------------------------------------------------------------------- ---------------------------------
- Exploit Title                                                                                                          |  Path
------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-ThinVNC 1.0b1 - Authentication Bypass                                                                                   | windows/remote/47519.py
------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-Shellcodes: No Results
-```
-
-```bash
-:~/Atlas# searchsploit -m windows/remote/47519.py
-...
-    Codes: CVE-2019-17662
- Verified: True
-File Type: Python script, ASCII text executable
-...
 ```
 
 <br>
