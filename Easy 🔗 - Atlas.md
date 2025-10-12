@@ -340,7 +340,7 @@ optional arguments:
 <code>No answer needed</code></p>
 
 <br>
-<p>6.2. Navigate to the /tmp directory of your attacking VM, then clone the repository. Remember that /drive:/tmp,share argument in the xfreerdp command? It's about to come in useful.br>
+<p>6.2. Navigate to the /tmp directory of your attacking VM, then clone the repository. Remember that /drive:/tmp,share argument in the xfreerdp command? It's about to come in useful.<br>
 <code>No answer needed</code></p>
 
 ```bash
@@ -354,15 +354,11 @@ Unpacking objects: 100% (40/40), 127.15 KiB | 4.38 MiB/s, done.
 CVE-2021-1675: command not found
 ```
 
-<img width="810" height="298" alt="image" src="https://github.com/user-attachments/assets/11b98007-e2fd-4ea1-a0f7-cc58a5403fe1" />
-
 <br>
 <br>
 <br>
-<p>6.3. Inside your RDP session, open a new PowerShell Window.br>
+<p>6.3. Inside your RDP session, open a new PowerShell Window.<br>
 <code>No answer needed</code></p>
-
-<img width="818" height="265" alt="image" src="https://github.com/user-attachments/assets/a9d9bac0-456f-4180-b05a-2359b87d65e8" />
 
 <br>
 <br>
@@ -370,15 +366,47 @@ CVE-2021-1675: command not found
 <p>6.4. The repository that we downloaded contains a PowerShell (.ps1) script that needs to be imported. We can import it using: . \\tsclient\share\CVE-2021-1675\CVE-2021-1675.ps1  Make sure to include the dot at the start! This uses dot-syntax to import any functions exposed by the script. We are using \\tsclient\share to reference the share that we created. This allows us to view (and thus import) files that are stored in the /tmp folder of our own attacking machine!<br>
 <code>No answer needed</code></p>
 
+<img width="1193" height="363" alt="image" src="https://github.com/user-attachments/assets/e8143fb8-1066-4d8f-b3a1-83430197f189" />
+
+<br>
+<br>
 <br>
 <p>6.5. Only one thing left to do: run the exploit! We can start the ball rolling by executing Invoke-Nightmare.<br>
 <code>No answer needed</code></p>
+
+<img width="1227" height="370" alt="image" src="https://github.com/user-attachments/assets/daf8c026-472f-439e-9c11-c8837e590403" />
+
+<br>
+<br>
+<br>
+
+<p>
+
+- adm1n:P@ssw0rd</p>
 
 <br>
 <p>6.6. Notice that our payload mentions creating a new user called adm1n with a password of P@ssw0rd? This is the default behaviour when using this exploit; however, we could have created our own payload and substituted that in should we have preferred another method of exploitation.
 Regardless, we can now make use of our brand new admin account!<br>
 <code>No answer needed</code></p>
 
+
+<img width="1117" height="265" alt="image" src="https://github.com/user-attachments/assets/f30adf48-cdaf-439c-82a8-336f57bfbc3e" />
+
+<br>
+<br>
+<br>
+
+<img width="1120" height="455" alt="image" src="https://github.com/user-attachments/assets/5555a56b-30e3-48a4-b2c4-aa31b7e1ef0f" />
+
+<br>
+<br>
+<br>
+
+<img width="1191" height="239" alt="image" src="https://github.com/user-attachments/assets/1bd1278c-0ee0-4b8f-b79a-1d45741769d6" />
+
+
+<br>
+<br>
 <br>
 <p>6.7. We could take the simple option of right-clicking on PowerShell or cmd.exe and choosing to "Run as Administrator", but that's no fun. Instead, let's use a hacky little PowerShell command to start a new high-integrity command prompt running as our new administrator. The command is as follows: Start-Process powershell 'Start-Process cmd -Verb RunAs' -Credential adm1n. Execute this in your PowerShell session and follow the steps to spawn a new PowerShell process as an Administrator!<br>
 <code>No answer needed</code></p>
