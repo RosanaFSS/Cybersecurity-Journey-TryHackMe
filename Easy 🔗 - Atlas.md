@@ -385,34 +385,6 @@ CVE-2021-1675: command not found
 Regardless, we can now make use of our brand new admin account!<br>
 <code>No answer needed</code></p>
 
-
-<img width="1117" height="265" alt="image" src="https://github.com/user-attachments/assets/f30adf48-cdaf-439c-82a8-336f57bfbc3e" />
-
-<br>
-<br>
-<br>
-
-<img width="1120" height="455" alt="image" src="https://github.com/user-attachments/assets/5555a56b-30e3-48a4-b2c4-aa31b7e1ef0f" />
-
-<br>
-<br>
-<br>
-
-<img width="1191" height="239" alt="image" src="https://github.com/user-attachments/assets/1bd1278c-0ee0-4b8f-b79a-1d45741769d6" />
-
-<br>
-<br>
-<br>
-
-<img width="1204" height="481" alt="image" src="https://github.com/user-attachments/assets/8225c1c8-b867-4aef-8367-9cd9eef64f0b" />
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <img width="1186" height="377" alt="image" src="https://github.com/user-attachments/assets/1f5b8376-0c0a-44b6-ba7f-fac5e56a0b4f" />
 
 <br>
@@ -439,6 +411,30 @@ Regardless, we can now make use of our brand new admin account!<br>
 <p>6.7. We could take the simple option of right-clicking on PowerShell or cmd.exe and choosing to "Run as Administrator", but that's no fun. Instead, let's use a hacky little PowerShell command to start a new high-integrity command prompt running as our new administrator. The command is as follows: Start-Process powershell 'Start-Process cmd -Verb RunAs' -Credential adm1n. Execute this in your PowerShell session and follow the steps to spawn a new PowerShell process as an Administrator!<br>
 <code>No answer needed</code></p>
 
+<img width="1117" height="265" alt="image" src="https://github.com/user-attachments/assets/f30adf48-cdaf-439c-82a8-336f57bfbc3e" />
+
+<br>
+<br>
+<br>
+
+<img width="1120" height="455" alt="image" src="https://github.com/user-attachments/assets/5555a56b-30e3-48a4-b2c4-aa31b7e1ef0f" />
+
+<br>
+<br>
+<br>
+
+<img width="1191" height="239" alt="image" src="https://github.com/user-attachments/assets/1bd1278c-0ee0-4b8f-b79a-1d45741769d6" />
+
+<br>
+<br>
+<br>
+
+<img width="1204" height="481" alt="image" src="https://github.com/user-attachments/assets/8225c1c8-b867-4aef-8367-9cd9eef64f0b" />
+
+<br>
+<br>
+<br>
+
 <br>
 <p>6.8. Run the command whoami /groups in the new window. You should see BUILTIN\Administrators in the list of groups, and a line at the bottom of the output containing Mandatory Label\High Mandatory Level. These mean that you are running as an administrator with full access over the machine. Congratulations!<br>
 <code>No answer needed</code></p>
@@ -457,8 +453,9 @@ Regardless, we can now make use of our brand new admin account!<br>
 
 <img width="1037" height="394" alt="image" src="https://github.com/user-attachments/assets/de5504a1-0680-4399-bbcb-ef6826e492c4" />
 
-
-
+<br>
+<br>
+<br>
 <h2>Task 7 . <code>Attack</code> . Post Exploitation</h2>
 <br>
 
