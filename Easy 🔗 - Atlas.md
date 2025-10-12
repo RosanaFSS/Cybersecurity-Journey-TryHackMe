@@ -14,12 +14,12 @@ https://tryhackme.com/room/atlas
 
 
 
-<h1>Task 1 . <code>Introccution</code>   Room Overview and Deploy!</h1>
+<h1>Task 1 . <code>Introccution</code> . Room Overview and Deploy!</h1>
 <br>
 
 
 
-<h1>Task 2 . <code>Enumeration</code>   Room Enumeration</h1>
+<h1>Task 2 . <code>Enumeration</code> . Room Enumeration</h1>
 <br>
 
 <p><em>Answer the questions below</em></p>
@@ -139,7 +139,7 @@ PORT     STATE SERVICE       REASON          VERSION
 ...
 ```
 
-<h1>Task 3 . <code>Enumeration</code> Service Enumeration</h1>
+<h1>Task 3 . <code>Enumeration</code> . Service Enumeration</h1>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -202,7 +202,7 @@ File Type: Python script, ASCII text executable
 ...
 ```
 <br>
-<h1>Task 4 . <code>Attack</code> Foothold</h1>
+<h1>Task 4 . <code>Attack</code> . Foothold</h1>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -274,7 +274,7 @@ optional arguments:
 <br>
 <br>
 <br>
-<h1>Task 5 . <code>Access</code> VNC 🠖 RDP</h1>
+<h1>Task 5 . <code>Access</code> . VNC 🠖 RDP</h1>
 <br>
 
 <p><em>Answer the question below</em></p>
@@ -296,7 +296,7 @@ Password:	H0ldUpTheHe@vens
 <br>
 <br>
 <br>
-<h1>Task 6 . <code>Attack/code> Privilege Escalation</h1>
+<h1>Task 6 . <code>Attack</code> . Privilege Escalation</h1>
 <br>
 
 
@@ -369,12 +369,12 @@ Regardless, we can now make use of our brand new admin account!<br>
 <br>
 <br>
 <br>
-<h1>Task 7 . <code>Attack</code> Post Exploitation</h1>
+<h1>Task 7 . <code>Attack</code> . Post Exploitation</h1>
 <br>
 
 <p><em>Answer the question below</em></p>
 
-<p>4.1. First up, let's get an up-to-date copy of Mimikatz to our attacking machine. The code for the tool is publicly available on Github, but fortunately for the sake of simplicity, there are also pre-compiled versions available for download. Go to the releases page for Mimikatz and find the latest release at the top of the list. Download the file called mimikatz_trunk.zip to your attacking machine. Note: Certain browsers block the repository as being malicious. You're a hacker -- of course it's malicious. Just continue to the page anyway: it's perfectly safe.<br>
+<p>7.1. First up, let's get an up-to-date copy of Mimikatz to our attacking machine. The code for the tool is publicly available on Github, but fortunately for the sake of simplicity, there are also pre-compiled versions available for download. Go to the releases page for Mimikatz and find the latest release at the top of the list. Download the file called mimikatz_trunk.zip to your attacking machine. Note: Certain browsers block the repository as being malicious. You're a hacker -- of course it's malicious. Just continue to the page anyway: it's perfectly safe.<br>
 <code>No answer needed</code></p>
 
 <img width="1120" height="552" alt="image" src="https://github.com/user-attachments/assets/2fb0ac49-af23-4719-b761-e1d32c310dac" />
@@ -406,7 +406,7 @@ Archive:  mimikatz_trunk.zip
   ...
 ```
 
-<p>4.2. Make sure that the zip file is in your /tmp directory, then unzip it with unzip mimikatz_trunk.zip<br>
+<p>7.2. Make sure that the zip file is in your /tmp directory, then unzip it with unzip mimikatz_trunk.zip<br>
 <code>No answer needed</code></p>
 
 ```bash
@@ -414,7 +414,7 @@ Archive:  mimikatz_trunk.zip
 mimidrv.sys  mimikatz.exe  mimilib.dll  mimispool.dll
 ```
 
-<p>4.3. Now we can get to work! Switch back into your RDP session and (using the elevated Command Shell we obtained in the last task) execute the following command to start Mimikatz: \\tsclient\share\x64\mimikatz.exe. If this is successful then you should get some pretty ASCII art and a new terminal prompt:<br>
+<p>7.3. Now we can get to work! Switch back into your RDP session and (using the elevated Command Shell we obtained in the last task) execute the following command to start Mimikatz: \\tsclient\share\x64\mimikatz.exe. If this is successful then you should get some pretty ASCII art and a new terminal prompt:<br>
 <code>No answer needed</code></p>
 
 <img width="1071" height="196" alt="image" src="https://github.com/user-attachments/assets/b108d9f9-f2a9-440a-bf1d-0a4c96186b89" />
@@ -422,9 +422,7 @@ mimidrv.sys  mimikatz.exe  mimilib.dll  mimispool.dll
 <br>
 <br>
 <br>
-
-
-<p>4.4. When we start Mimikatz we usually have to execute two commands before we start dumping hashes:  privilege::debug -- this obtains debug privileges which (without going into too much depth in the Windows privilege structure) allows us to access other processes for "debugging" purposes. token::elevate -- simply put, this takes us from our administrative shell with high privileges into a SYSTEM level shell with maximum privileges. This is something that we have a right to do as an administrator, but that is not usually possible using normal Windows operations. With these commands executed, we are ready to dump some passwords hashes!<br>
+<p>7.4. When we start Mimikatz we usually have to execute two commands before we start dumping hashes:  privilege::debug -- this obtains debug privileges which (without going into too much depth in the Windows privilege structure) allows us to access other processes for "debugging" purposes. token::elevate -- simply put, this takes us from our administrative shell with high privileges into a SYSTEM level shell with maximum privileges. This is something that we have a right to do as an administrator, but that is not usually possible using normal Windows operations. With these commands executed, we are ready to dump some passwords hashes!<br>
 <code>No answer needed</code></p>
 
 <img width="855" height="191" alt="image" src="https://github.com/user-attachments/assets/7a8b7238-41e2-4b3d-a5f3-b7ba4e5273ad" />
