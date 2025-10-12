@@ -1,18 +1,9 @@
-
-
-Atlas
-
-Hack the Atlas server in this beginner room covering Windows attack methodology!
-
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/afecd2cb-299b-4219-9dd3-3fbd443e676a" />
-
-
-
-https://tryhackme.com/room/atlas
-
-
-
-
+<h1 align="center">Atlas</h1>
+<p align="center">2025, October 12<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>524</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<em>Hack the Atlas server in this beginner room covering Windows attack methodology</em>!<br>
+<img width="80px" src="https://github.com/user-attachments/assets/afecd2cb-299b-4219-9dd3-3fbd443e676a"><br>
+Access it <a href="https://tryhackme.com/room/atlas">here</a>.<br>
+<img width="1200px" src="https://github.com/user-attachments/assets/4cf8e508-52ee-4914-8e4f-cf153a16a1f2"></p>
 
 <h2>Task 1 . <code>Introduction</code> . Room Overview and Deploy!</h2>
 <br>
@@ -499,9 +490,7 @@ Archive:  mimikatz_trunk.zip
 PS  \\tsclient\share\x64\mimikatz.exe
 ```
 
-```bash
-PS  \\tsclient\share\x64\mimikatz.exe
-```
+<img width="1124" height="267" alt="image" src="https://github.com/user-attachments/assets/845d446e-ac9e-42f3-bdf7-419b2c955580" />
 
 <br>
 <br>
@@ -509,13 +498,7 @@ PS  \\tsclient\share\x64\mimikatz.exe
 <p>7.4. When we start Mimikatz we usually have to execute two commands before we start dumping hashes:  privilege::debug -- this obtains debug privileges which (without going into too much depth in the Windows privilege structure) allows us to access other processes for "debugging" purposes. token::elevate -- simply put, this takes us from our administrative shell with high privileges into a SYSTEM level shell with maximum privileges. This is something that we have a right to do as an administrator, but that is not usually possible using normal Windows operations. With these commands executed, we are ready to dump some passwords hashes!<br>
 <code>No answer needed</code></p>
 
-
-
-<br>
-<br>
-<br>
-
-
+<img width="1118" height="473" alt="image" src="https://github.com/user-attachments/assets/887fa581-2ee3-48ea-bbe6-78774ca58430" />
 
 <br>
 <br>
@@ -523,5 +506,74 @@ PS  \\tsclient\share\x64\mimikatz.exe
 <p>7.5. There are a variety of commands we could use here, all of which do slightly different things. The command that we will use is: lsadump::sam. When executed, this will provide us with a list of password hashes for every account on the machine (with some extra information thrown in as well). The Administrator account password hash should be fairly near the top of the list:<br>
 <code>No answer needed</code></p>
 
+<br>
+<p>7.6. What is the Administrator account's NTLM password hash?<br>
+<code>c16444961f67af7eea7e420b65c8c3eb</code></p>
+
+<img width="1111" height="704" alt="image" src="https://github.com/user-attachments/assets/10e30e3d-cea6-436a-a517-0ceeeb560a17" />
+
+<br>
+<br>
+<br>
+<h2>Task 8 . <code>Conclusion</code> . Final Toughts</h2>
+<p>Congratulations -- you hacked Atlas!<br>
+
+This was a beginner box which has hopefully provided you with some skills which will prove useful as you progress in your hacking journey. We covered initial exploitation of outdated software, as well as exploiting the Windows PrintSpooler and dumping password hashes with Mimikatz.<br>
+
+Kudos for completing the room: now go hack some more!</p>
+
+<p><em>Answer the question below</em></p>
+
+<br>
+<p>8.1. I hacked Atlas!<br>
+<code>No answer needed</code></p>
+
+<br>
+<br>
+<br>
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b5227d1a-5455-4f49-a466-2e960369bbc8"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/c6547bbf-bce5-43a2-96e3-63f28ffef068"></p>
+
+<h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
+
+<div align="center"><h6>
+
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|12      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
+|11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
+|11      |Hard 🚩 - Rocket                       | 523    |     102ⁿᵈ    |      4ᵗʰ     |     211ˢᵗ    |     3ʳᵈ    | 129,870  |    999    |    76     |
+|10      |Easy 🚩 - Shadow Trace                 | 522    |     101ˢᵗ    |      4ᵗʰ     |     159ᵗʰ    |     3ʳᵈ    | 129,810  |    998    |    76     |
+|10      |Easy 🔗 - Defensive Security Intro     | 522    |     103ʳᵈ    |      4ᵗʰ     |     357ᵗʰ    |     3ʳᵈ    | 129,405  |    997    |    76     |
+|10      |Easy 🔗 - 25 Days of Cyber Security, Day 2| 522|      103ʳᵈ    |      4ᵗʰ     |     355ᵗʰ    |     3ʳᵈ    | 129,405  |    996    |    76     |
+|9       |Medium 🔗 - Linux Threat Detection 2   | 521    |     103ʳᵈ    |      4ᵗʰ     |     326ᵗʰ    |     3ʳᵈ    | 129,373  |    996    |    76     |
+|9       |Medium 🚩 - WWBuddy                    | 521    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,293  |    995    |    76     |
+|8       |Hard 🚩 - Motunui                      | 520    |     103ʳᵈ    |      4ᵗʰ     |     383ʳᵈ    |     4ᵗʰ    | 129,201  |    994    |    76     |
+|8       |Easy 🔗 - Man-in-the-Middle            | 520    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,141  |    993    |    76     |
+|7       |Medium 🚩 - Profiles, in progress      | 519    |              |              |              |            | 129,021  |    992    |    76     |
+|6       |Medium 🚩 - VulnNet                    | 518    |     105ᵗʰ    |      4ᵗʰ     |     348ᵗʰ    |     5ᵗʰ    | 129,021  |    992    |    76     |
+|6       |Easy 🚩 - DearQA                       | 518    |     105ᵗʰ    |      4ᵗʰ     |     333ʳᵈ    |     6ᵗʰ    | 128,991  |    991    |    76     |
+|5       |Medium 🚩 - Frank & Herby try again.....| 517   |     106ᵗʰ    |      4ᵗʰ     |     300ᵗʰ    |     5ᵗʰ    | 128,931  |    990    |    76     |
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     233ʳᵈ    |     3ʳᵈ    | 128,871  |    989    |    76     |
+|4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
+|3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
+|2       |Medium 🔗 - Data Exfiltration Detection| 514    |     108ᵗʰ    |      4ᵗʰ     |     521ˢᵗ    |     8ᵗʰ    | 128,503  |    985    |    76     |
+|1       |Medium 🔗 - Network Discovery Detection| 513    |     108ᵗʰ    |      4ᵗʰ     |     875ᵗʰ    |     7ᵗʰ    | 128,407  |    984    |    76     |
+|1       |Medium 🚩 - Intranet                   | 513    |     108ᵗʰ    |      4ᵗʰ     |    3,357ᵗʰ   |    57ᵗʰ    | 128,335  |    983    |    76     |
+
+</h6></div>
+
+<br>
 
 
+<p align="center">Global All Time:   101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/bda6d771-c2f7-4a87-a098-dd71774935df"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/69abb7d6-57e7-46fe-849a-adec777b41f7"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d249fb21-fe45-4ceb-ad5d-6d471dd67dde"><br>
+                  Global monthly:    217ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/aa536a83-c20f-4cd7-affe-8bcd9ebbc5b5"><br>
+                  Brazil monthly:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ddbfb068-56ff-43ac-9a87-e3d4ba4bb5ba"></p>
+
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
