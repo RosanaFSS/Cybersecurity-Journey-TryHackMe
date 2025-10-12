@@ -541,7 +541,7 @@ Kudos for completing the room: now go hack some more!</p>
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|12      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
+|12      |Easy 🔗 - Atlas                        | 524    |     101ˢᵗ    |      4ᵗʰ     |     251ˢᵗ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
 |11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
 |11      |Hard 🚩 - Rocket                       | 523    |     102ⁿᵈ    |      4ᵗʰ     |     211ˢᵗ    |     3ʳᵈ    | 129,870  |    999    |    76     |
 |10      |Easy 🚩 - Shadow Trace                 | 522    |     101ˢᵗ    |      4ᵗʰ     |     159ᵗʰ    |     3ʳᵈ    | 129,810  |    998    |    76     |
@@ -567,12 +567,11 @@ Kudos for completing the room: now go hack some more!</p>
 
 <br>
 
-
 <p align="center">Global All Time:   101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/bda6d771-c2f7-4a87-a098-dd71774935df"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/69abb7d6-57e7-46fe-849a-adec777b41f7"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d249fb21-fe45-4ceb-ad5d-6d471dd67dde"><br>
-                  Global monthly:    217ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/aa536a83-c20f-4cd7-affe-8bcd9ebbc5b5"><br>
-                  Brazil monthly:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ddbfb068-56ff-43ac-9a87-e3d4ba4bb5ba"></p>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/70e194d0-e2d3-48f8-9cbf-a9f99f81a786"><br>
+                  Global monthly:    251ˢᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/dae573f2-64c9-4e15-ac40-ace4ac0e7400"><br>
+                  Brazil monthly:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/f5f0e38b-8941-4f5f-aca6-73be5d131efc"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
