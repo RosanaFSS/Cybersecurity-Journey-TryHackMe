@@ -3,15 +3,36 @@
 <em>Free your mind. Exit from the M4tr1x...</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/c435a79d-756c-4e87-86b5-0c81a25e5f82"><br>
 Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/bd7ad93d-dbed-4718-8f3b-cf80168f5c14"></p>
-
+<img width="1200px" src="https://github.com/user-attachments/assets/b9e0a5ba-0178-410a-8a96-5bc5edc6f8a0"></p>
 
 <h2>Task 1 . Story</h2>
+<h3>Story</h3>
+<p><strong>UnknownSender@UnknownMail.com:</strong><br>
+Most people only see a perfectly constructed system. But <ins>you</ins> have always been different. You see not only what is on the surface but also what governs beneath it; the internal correlating mechanisms that regulate and manage each of its modules almost so flawlessly that it attempts conceal all miniscule holes in its multifaceted design. However, these holes still exist, don't they?... Yes, you are still learning, but your greatest weakness is that self-doubt... It continues to hold you back... Do you know where it comes from? Deep down, I know you do. You know something is not right, you just cannot put your finger on it. Well let me tell you. You are living in a dream. One that has been placed over your eyes to blind you from you realising who you could become. Yes… I can sense you know what I am telling you is true... The dilemma is that there are these '<ins>agents</ins>'... Let us call them programs that look like you and me. They seek to spread that virus of <ins>self-doubt</ins>, <ins>disbelief</ins>, and <ins>fear</ins> into the subconsciousness of the few emerging hackers with great potential. Why you ask? It is because minds like yours are a threat to those in control of the 'M4tr1x system'; the artificial, simulated world developed to supress your full senses. We need you in this next war against the machines. But only you can escape from your engineered reality into the real world... I will be waiting on the other side.</p>
 <br>
+<br>
+<p><strong>You@mail.com:</strong><br>
+Who are you?</p>
+<br>
+<br>
+<p><strong>UnknownSender@UnknownMail.com:</strong></p>
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
+
+<h6>﻿﻿image credits:<br>
+
+Antonio Gamboa - https://theartwarriors.artstation.com/projects/v15Eq6<br>
+
+Makke1991 - https://www.newgrounds.com/art/view/makke1991/agent-smith<br>
+
+alecyl - https://www.deviantart.com/alecyl/art/agent-smith-138763013<br>
+
+Skull2 - https://www.deviantart.com/skull2/art/Smith-and-Smith-and-43601396<br>
+
+Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 
 <p><em>Answer the questions below</em></p>
 
-
+<br>
 <br>
 <h1 align="center">Host Name Mapping<a id='1'></a></h1>
 
@@ -1519,7 +1540,7 @@ lrwxrwxrwx 1 root root 46 Apr 27 13:41 /etc/systemd/user/sockets.target.wants/pk
 root@...:/etc# cat bigpaul.txt
 web login:
 bigpaul = ilovemywifeandgirlfriend022366
-ACP Pin = 101754⊕23435+689511
+ACP Pin = ------⊕-----+------
 ```
 
 ```bash
@@ -1527,7 +1548,7 @@ ACP Pin = 101754⊕23435+689511
 Python 3.8.10 (default, Sep 11 2024, 16:02:53) 
 [GCC 9.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> print((101754 ^123435) + 689511)
+>>> print((----- ^ ------) + ------)
 718008
 ```
 
@@ -1536,6 +1557,31 @@ Type "help", "copyright", "credits" or "license" for more information.
 <br>
 <br>
 <br>
+
+<p align="center">exitdenied.thm/admin/</p>
+
+<img width="1130" height="488" alt="image" src="https://github.com/user-attachments/assets/46503ebd-2b81-4624-85b1-9cd7c34d27bb" />
+
+<br>
+<br>
+<br>
+
+<img width="1228" height="808" alt="image" src="https://github.com/user-attachments/assets/46672f0d-aadf-431e-83cf-570470936074" />
+
+<br>
+<br>
+<br>
+
+<br>
+<p>1.14. What is the web flag?<br>
+<code>fL4g{**********}</code></p>
+<br>
+<br>
+
+
+
+
+
 
 ```bash
 root@...:/etc# ps aux | grep root
@@ -1601,30 +1647,12 @@ root        1692  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/0:0-
 <code>_______</code></p>
 <br>
 
-
-<br>
-<p>1.14. What is the web flag?<br>
-<code>_______</code></p>
-<br>
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 <br>
 <br>
 <br>
 <h1 align="center">In Progress</h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a7d106a3-88ee-45d1-8ec9-c17a91b09d80"><br>
-                  <img width="1200px" src=""></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/61404b71-0db5-4d3d-9514-2c8720e5c5b1"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/9de58130-2da7-44f3-8633-8e129de943a5"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
 
