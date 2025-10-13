@@ -3,14 +3,13 @@
 <em>Free your mind. Exit from the M4tr1x...</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/c435a79d-756c-4e87-86b5-0c81a25e5f82"><br>
 Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
-<img width="1200px" src=""></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/bd7ad93d-dbed-4718-8f3b-cf80168f5c14"></p>
+
 
 <h2>Task 1 . Story</h2>
 <br>
 
-<p><em>Answer the question below</em></p>
-
-
+<p><em>Answer the questions below</em></p>
 
 
 <br>
@@ -287,7 +286,7 @@ PalaceKing
 <br>
 <br>
 <br>
-<p>1.2.Where did that white rabbit lead you to?<br>
+<p>1.2. Where did that white rabbit lead you to?<br>
 <code>/resportPanel.php</code></p>
 <br>
 <p align="center">exitdenied.thm/bugbountyHQ<br>/reportPanel.php</p>
@@ -351,7 +350,6 @@ Luisfactor05
 james123
 ```
 
-
 <br>
 <p>1.3. Determine which vulnerability is the most appropriate at this time.<br>
 <code>No answer needed</code></p>
@@ -385,16 +383,22 @@ james123
 <br>
 <p align="center">Launched Burp Suite, and enabled FoxyProxy.<br>Captured the login of the account registered previously. Sent to intruder. <code>Start attack</code>.</p>
 
-
 <img width="1171" height="303" alt="image" src="https://github.com/user-attachments/assets/deb0fdea-e141-4351-a1ff-27cea6181791" />
 
 <br>
 <br>
 <br>
 
-<p align="center">PalacerKing</p>
+<p align="center">PalacerKing<br><code>10</code></p>
 
 <img width="1119" height="608" alt="image" src="https://github.com/user-attachments/assets/84461095-bcbe-436a-b1c3-4da16382199e" />
+
+<br>
+<br>
+<br>
+
+<img width="1134" height="435" alt="image" src="https://github.com/user-attachments/assets/5f012b3f-c634-452f-bcad-e594663aa12b" />
+
 <br>
 <br>
 <br>
@@ -525,7 +529,352 @@ ofqxvg</p>
 <br>
 
 
+```bash
+:~/M4tr1xExitDenied# cat script.py
+import itertools
 
+#English letters: 
+englishLetters = ['f', 'v', 'g', 'o', 'x', 'q']
+variations = itertools.permutations(englishLetters, 6)
+
+#wordlist containing possible password
+with open("wordlist.txt", "w") as f:
+    for v in variations:
+        f.write('{}\n'.format(''.join(v)))
+        f.close
+```
+
+wordlist.txt
+
+```bash
+:~/M4tr1xExitDenied# python3 script.py
+```
+
+
+```bash
+:~/M4tr1xExitDenied# /usr/local/bin/gpg2john p.txt.gpg > A
+
+File p.txt.gpg
+```
+
+```bash
+:~/M4tr1xExitDenied# john --wordlist=wordlist.txt A
+Warning: detected hash type "gpg", but the string is also recognized as "gpg-opencl"
+Use the "--format=gpg-opencl" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 1 password hash (gpg, OpenPGP / GnuPG Secret Key [32/64])
+Cost 1 (s2k-count) is 65011712 for all loaded hashes
+Cost 2 (hash algorithm [1:MD5 2:SHA1 3:RIPEMD160 8:SHA256 9:SHA384 10:SHA512 11:SHA224]) is 2 for all loaded hashes
+Cost 3 (cipher algorithm [1:IDEA 2:3DES 3:CAST5 4:Blowfish 7:AES128 8:AES192 9:AES256 10:Twofish 11:Camellia128 12:Camellia192 13:Camellia256]) is 9 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+------           (?)
+1g 0:00:00:00 DONE (2025-10-12 xx:xx) 6.250g/s 12.50p/s 12.50c/s 12.50C/s fvgoxq..fvgoqx
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+```
+
+```bash
+:~/M4tr1xExitDenied# gpg -d p.txt.gpg
+gpg: AES256 encrypted data
+gpg: encrypted with 1 passphrase
+------------ //SQL Password
+```
+
+<br>
+<p>1.8. What is the login_key of Ellie?<br>
+<code>**************************************************</code></p>
+<br>
+
+```bash
+:~/M4tr1xExitDenied# mysql -h xx.xxx.xx.xx -u mod -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 225
+Server version: 10.3.39-MariaDB-0ubuntu0.20.04.2 Ubuntu 20.04
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| modManagerv2       |
+| mybb               |
+| mysql              |
+| performance_schema |
++--------------------+
+5 rows in set (0.003 sec)
+
+MariaDB [(none)]> use modManagerv2;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [modManagerv2]> show TABLES;
++------------------------+
+| Tables_in_modManagerv2 |
++------------------------+
+| members                |
++------------------------+
+1 row in set (0.001 sec)
+
+MariaDB [modManagerv2]> SELECT * FROM members;
++----------------+-----------------------------------------------------+
+| user           | login_key                                           |
++----------------+-----------------------------------------------------+
+| LucyRob        | **************************************************  |
+| Wannabe_Hacker | **************************************************  |
+| batmanZero     | **************************************************  |
+| SandraJannit   | **************************************************  |
+| biggieballo    | **************************************************  |
+| AimsGregger    | **************************************************  |
+| BlackCat       | **************************************************  |
+| Golderg        | **************************************************  |
+| TonyMontana    | **************************************************  |
+| CaseBrax       | **************************************************  |
+| Ellie          | **************************************************  |
+| Sosaxvector    | **************************************************  |
+| PalacerKing    | **************************************************  |
+| Anderson       | **************************************************  |
+| CrazyChris     | **************************************************  |
+| StaceyLacer    | **************************************************  |
+| ArnoldBagger   | **************************************************  |
+| Carl_Dee       | **************************************************  |
+| Xavier         | **************************************************  |
++----------------+-----------------------------------------------------+
+19 rows in set (0.001 sec)
+
+MariaDB [modManagerv2]> 
+```
+
+<br>
+
+<img width="1063" height="790" alt="image" src="https://github.com/user-attachments/assets/19964504-52c0-4939-a665-3a2c0bf02ceb" />
+
+<br>
+<br>
+<br>
+
+<img width="1122" height="312" alt="image" src="https://github.com/user-attachments/assets/3b07aa78-81c5-4d5e-b914-d9b7d8cf48b1" />
+
+<br>
+<br>
+<br>
+
+<p align="center">Learned about <code>login_key</code> here: https://docs.mybb.com/1.6/Database-Tables-mybb-users/</p>
+
+<img width="1278" height="294" alt="image" src="https://github.com/user-attachments/assets/33c50171-f025-45e5-9670-a235cceec312" />
+
+<br>
+<br>
+<br>
+<p align="center">Substitute the current <code>mybbuser</code>code> value by <code>BlackCat</code>´s.<br>Refresh.</p>
+
+<img width="1134" height="488" alt="image" src="https://github.com/user-attachments/assets/c663e261-513f-4377-8464-92704f5a6f5f" />
+
+<br>
+<br>
+<br>
+<p align="center"><code>BlackCat</code> > <code>User CP</code> > <code>Manage attachments</code>.</p>
+
+<img width="1131" height="723" alt="image" src="https://github.com/user-attachments/assets/44f41b67-eb4d-4f97-b057-18e646501a16" />
+
+<br>
+<br>
+<br>
+
+<img width="1131" height="723" alt="image" src="https://github.com/user-attachments/assets/867776da-ccfa-40b2-af20-12da4d4200d2" />
+
+<br>
+<br>
+<br>
+<p align="center">SSH = TOTP, Time-based One-Time Password</p>
+
+<p>1.9. What is the name of that secret algorithm? (answer format: acronym)<br>
+<code>SSH-TOTP</code></p>
+<br>
+<br>
+<br>
+<p align="center">Inspect <code>BlackCat</code>´s files.</p>
+
+<p align="center">SSH-TOP documentation.pdf</p>
+
+<img width="1125" height="674" alt="image" src="https://github.com/user-attachments/assets/913539a8-b0c4-4b55-a716-a46ff6e7bacd" />
+
+<br>
+<br>
+<br>
+<p align="center">High-Level SSH-TOP Diagram.png<br>Provides Client OTP.</p>
+
+<img width="692" height="487" alt="image" src="https://github.com/user-attachments/assets/2e5611b0-641d-45a9-a8e9-1192b7f9496f" />
+
+<br>
+<br>
+<br>
+<p align="center">Low-Level SSH-TOP Diagram.png</p>
+
+<img width="1123" height="543" alt="image" src="https://github.com/user-attachments/assets/d7fd550b-bc9a-4fa5-96bb-0b01815cd4b7" />
+
+<br>
+<br>
+<br>
+<p align="center"> <code>hardwareToken.jpg</code> = <code>446662</code></p>
+
+<img width="1118" height="474" alt="image" src="https://github.com/user-attachments/assets/703339e9-8104-471c-a119-efae25e6c60f" />
+
+<br>
+<br>
+<br>
+<p align="center">releases.txt</p>
+
+<img width="1124" height="351" alt="image" src="https://github.com/user-attachments/assets/fa227aef-8f9e-416c-bf6a-318cd5fa7836" />
+
+<br>
+<br>
+<br>
+<p align="center">Extracted <code>testing.zip</code> -> <code>hardwareToken.jpg</code> and <code>testing.png</code></p>
+
+<img width="789" height="255" alt="image" src="https://github.com/user-attachments/assets/ae8a0dd0-cdf9-45c7-b3b4-5cb33bac58cf" />
+
+<br>
+<br>
+<br>
+<p align="center">Extracted <code>DevTools.zip</code> -> <code>ntp_syncer.py</code> and <code>timeSimulatorClient.py</code></p>
+
+<img width="792" height="340" alt="image" src="https://github.com/user-attachments/assets/f59c7867-dc62-436a-9a32-0840420226d1" />
+
+<br>
+<br>
+<br>
+
+<img width="877" height="796" alt="image" src="https://github.com/user-attachments/assets/0414c1f8-2105-4d5d-8145-933a05c54f0a" />
+
+<br>
+<br>
+<br>
+
+```bash
+:~/M4tr1xExitDenied# timedatectl set-timezone UTC
+```
+
+```bash
+:~/M4tr1xExitDenied/DevTools# pip3 install ntplib
+```
+
+```bash
+:~/M4tr1xExitDenied/DevTools# ls
+ntp_syncer.py  timeSimulatorClient.py
+```
+
+
+<br>
+<p>1.10. SSH login...<br>
+<code>No answer needed</code></p>
+<br>
+
+
+<br>
+<p>1.11. What is the user flag?<br>
+<code>_______</code></p>
+<br>
+
+
+<br>
+<p>1.12. What is the root flag?<br>
+<code>_______</code></p>
+<br>
+
+
+<br>
+<p>1.13. What is the admin´s ACP pin?<br>
+<code>_______</code></p>
+<br>
+
+
+<br>
+<p>1.14. What is the web flag?<br>
+<code>_______</code></p>
+<br>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<h1 align="center">In Progress</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a7d106a3-88ee-45d1-8ec9-c17a91b09d80"><br>
+                  <img width="1200px" src=""></p>
+
+<h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
+
+<div align="center"><h6>
+
+| Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
+|:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|12      |Hard 🚩 - M4tr1x: Exit Denied          | 524    |     101ˢᵗ    |      4ᵗʰ     |     244ᵗʰ    |     3ʳᵈ    | 130,082  |  1,001    |    76     |
+|12      |Easy 🔗 - Atlas                        | 524    |     101ˢᵗ    |      4ᵗʰ     |     251ˢᵗ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
+|11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
+|11      |Hard 🚩 - Rocket                       | 523    |     102ⁿᵈ    |      4ᵗʰ     |     211ˢᵗ    |     3ʳᵈ    | 129,870  |    999    |    76     |
+|10      |Easy 🚩 - Shadow Trace                 | 522    |     101ˢᵗ    |      4ᵗʰ     |     159ᵗʰ    |     3ʳᵈ    | 129,810  |    998    |    76     |
+|10      |Easy 🔗 - Defensive Security Intro     | 522    |     103ʳᵈ    |      4ᵗʰ     |     357ᵗʰ    |     3ʳᵈ    | 129,405  |    997    |    76     |
+|10      |Easy 🔗 - 25 Days of Cyber Security, Day 2| 522|      103ʳᵈ    |      4ᵗʰ     |     355ᵗʰ    |     3ʳᵈ    | 129,405  |    996    |    76     |
+|9       |Medium 🔗 - Linux Threat Detection 2   | 521    |     103ʳᵈ    |      4ᵗʰ     |     326ᵗʰ    |     3ʳᵈ    | 129,373  |    996    |    76     |
+|9       |Medium 🚩 - WWBuddy                    | 521    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,293  |    995    |    76     |
+|8       |Hard 🚩 - Motunui                      | 520    |     103ʳᵈ    |      4ᵗʰ     |     383ʳᵈ    |     4ᵗʰ    | 129,201  |    994    |    76     |
+|8       |Easy 🔗 - Man-in-the-Middle            | 520    |     103ʳᵈ    |      4ᵗʰ     |     390ᵗʰ    |     4ᵗʰ    | 129,141  |    993    |    76     |
+|7       |Medium 🚩 - Profiles, in progress      | 519    |              |              |              |            | 129,021  |    992    |    76     |
+|6       |Medium 🚩 - VulnNet                    | 518    |     105ᵗʰ    |      4ᵗʰ     |     348ᵗʰ    |     5ᵗʰ    | 129,021  |    992    |    76     |
+|6       |Easy 🚩 - DearQA                       | 518    |     105ᵗʰ    |      4ᵗʰ     |     333ʳᵈ    |     6ᵗʰ    | 128,991  |    991    |    76     |
+|5       |Medium 🚩 - Frank & Herby try again.....| 517   |     106ᵗʰ    |      4ᵗʰ     |     300ᵗʰ    |     5ᵗʰ    | 128,931  |    990    |    76     |
+|4       |Medium 🚩 - Frank & Herby make an app  | 516    |     105ᵗʰ    |      4ᵗʰ     |     233ʳᵈ    |     3ʳᵈ    | 128,871  |    989    |    76     |
+|4       |Info ℹ️ - OverlayFS - CVE-2021-3493    | 516    |     105ᵗʰ    |      4ᵗʰ     |     235ᵗʰ    |     3ʳᵈ    | 128,841  |    988    |    76     |
+|3       |Medium 🚩 - XDR: Operation Global Dagger2| 515  |     104ᵗʰ    |      4ᵗʰ     |     149ᵗʰ    |     3ʳᵈ    | 128,833  |    987    |    76     |
+|3       |Medium 🚩 - VulnNet: dotpy             | 515    |     108ᵗʰ    |      4ᵗʰ     |     741ˢᵗ    |    11ˢᵗ    | 128,563  |    986    |    76     |
+|2       |Medium 🔗 - Data Exfiltration Detection| 514    |     108ᵗʰ    |      4ᵗʰ     |     521ˢᵗ    |     8ᵗʰ    | 128,503  |    985    |    76     |
+|1       |Medium 🔗 - Network Discovery Detection| 513    |     108ᵗʰ    |      4ᵗʰ     |     875ᵗʰ    |     7ᵗʰ    | 128,407  |    984    |    76     |
+|1       |Medium 🚩 - Intranet                   | 513    |     108ᵗʰ    |      4ᵗʰ     |    3,357ᵗʰ   |    57ᵗʰ    | 128,335  |    983    |    76     |
+
+</h6></div>
+
+<br>
+
+<img width="1891" height="894" alt="image" src="https://github.com/user-attachments/assets/13d2cf82-ed7a-4aa9-a596-daeeec75f11e" />
+
+
+
+
+<p align="center">Global All Time:   101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/19092d22-15f4-4fe1-a4a2-63213d564a2e"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/17f9c9aa-0f69-4b49-afdb-0c64a385facc"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a399f80e-19ea-444d-b477-035d51c73092"><br>
+                  Global monthly:    244ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/13d2cf82-ed7a-4aa9-a596-daeeec75f11e"><br>
+                  Brazil monthly:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/85912b85-7957-4738-b9cb-1d5da14a0b33"></p>
+
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <p align="center">Launched Burp Suite, and enabled FoxyProxy.<br>Captured the login of the account registered previously. Sent to intruder. <code>Start attack</code>.</p>
 
