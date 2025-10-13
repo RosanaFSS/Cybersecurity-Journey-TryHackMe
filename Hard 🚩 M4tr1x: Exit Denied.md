@@ -13,7 +13,7 @@ Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
 
 
 <br>
-<h1 align="center">Directory and File Enumeration<a id='1'></a></h1>
+<h1 align="center">Host Name Mapping<a id='1'></a></h1>
 
 ```bash
 xx.xxx.xx.xx exitdenied.thm
