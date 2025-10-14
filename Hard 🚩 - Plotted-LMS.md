@@ -2,7 +2,7 @@
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/7ff9ec0c-480d-4725-8056-b206874ec689"><br>
 2025, September 17<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
 and I’m excited to join you on this adventure, part of my <code>499</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em>Everything here is plotted!/em>.<br>
+<em>Everything here is plotted!</em>.<br>
 Access it <a href="https://tryhackme.com/room/plottedlms">here</a>.<br>
 <img width="1200px" src="    "></p>
 
