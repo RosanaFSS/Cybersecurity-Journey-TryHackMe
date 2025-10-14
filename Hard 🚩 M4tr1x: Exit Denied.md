@@ -34,9 +34,10 @@ Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 - [Port Scanning](#2)<br>
 - [Web Vulberability Scanning](#3)<br>
 - [Directory and File Enumeration](#4)<br>
-- [Web Interface Inspection](#5)<br>
-- [Directory and File Enumeration](#6)<br>
-- [Web Interface Inspection](#7)</p>
+- [Web Interface Inspection](#5)
+- [user](#6)<br>
+- [root](#7)<br>
+- [admin](#8)</p>
 
 
 <br>
@@ -152,22 +153,7 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 ...
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6628ad39-54a2-4e53-922f-da6dd9ac33fd"></p>
-
-<br>
-<h1 align="center">Web Interface Inspection<a id='5'></a></h1>
-<p align="center">exitdenied.thm/general<br><img width="600px" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13"></p>
-
-<p align="center">exitdenied.thm/admin<br><img width="600px" src="https://github.com/user-attachments/assets/340c43f6-4d5f-4484-950d-6c38429928ef"></p>
-
-<p align="center">exitdenied.thm/install<br><img width="600px" src="https://github.com/user-attachments/assets/7eb1bbd5-e75d-47d9-b5c1-6ace926d1c32"></p>
-
-<p align="center">exitdenied.thm/flag<br>exitdenied.thm/ftp<br>exitdenied.thm/error<br>exitdenied.thm/attachment<br>exitdenied.thm/e-mail<br>exitdenied.thm/change_password<br><img width="600px" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4"></p>
-
-<p align="center">exitdenied.thm/blue<br>exitdenied.thm/secret<br>exitdenied.thm/panel<br>exitdenied.thm/administrator<br><img width="400px" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a"></p>
-
-<br>
-<h1 align="center">Directory and File Enumeration<a id='6'></a></h1>
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/6628ad39-54a2-4e53-922f-da6dd9ac33fd"></p>
 
 ```bash
 :~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
@@ -227,10 +213,48 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659"></p>
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659"></p>
+
+
+```bash
+:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/inc/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
+...
+http://exitdenied.thm/inc/plugins              (Status: 301) [Size: 322] [--> http://exitdenied.thm/inc/plugins/]
+http://exitdenied.thm/inc/languages            (Status: 301) [Size: 324] [--> http://exitdenied.thm/inc/languages/]
+http://exitdenied.thm/inc/config.php           (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/settings.php         (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/functions.php        (Status: 200) [Size: 0]
+http://exitdenied.thm/inc/init.php             (Status: 200) [Size: 98]
+http://exitdenied.thm/inc/tasks                (Status: 301) [Size: 320] [--> http://exitdenied.thm/inc/tasks/]
+http://exitdenied.thm/inc/3rdparty             (Status: 301) [Size: 323] [--> http://exitdenied.thm/inc/3rdparty/]
+```
+
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/76bd5c7f-f286-4293-acc3-c2b5f580f707"></p>
+
+```bash
+:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/admin/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
+...
+http://exitdenied.thm/admin/index.php            (Status: 200) [Size: 1971]
+http://exitdenied.thm/admin/modules              (Status: 301) [Size: 324] [--> http://exitdenied.thm/admin/modules/]
+http://exitdenied.thm/admin/styles               (Status: 301) [Size: 323] [--> http://exitdenied.thm/admin/styles/]
+http://exitdenied.thm/admin/inc                  (Status: 301) [Size: 320] [--> http://exitdenied.thm/admin/inc/]
+http://exitdenied.thm/admin/backups              (Status: 301) [Size: 324] [--> http://exitdenied.thm/admin/backups/]
+```
 
 <br>
-<h1 align="center">Web Interface Inspection<a id='7'></a></h1>
+<h1 align="center">Web Interface Inspection<a id='5'></a></h1>
+<p align="center">exitdenied.thm/general<br><img width="600px" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13"></p>
+
+<p align="center">exitdenied.thm/admin<br><img width="600px" src="https://github.com/user-attachments/assets/340c43f6-4d5f-4484-950d-6c38429928ef"></p>
+
+<p align="center">exitdenied.thm/install<br><img width="600px" src="https://github.com/user-attachments/assets/7eb1bbd5-e75d-47d9-b5c1-6ace926d1c32"></p>
+
+<p align="center">exitdenied.thm/flag<br>exitdenied.thm/ftp<br>exitdenied.thm/error<br>exitdenied.thm/attachment<br>exitdenied.thm/e-mail<br>exitdenied.thm/change_password<br><img width="600px" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4"></p>
+
+<p align="center">exitdenied.thm/blue<br>exitdenied.thm/secret<br>exitdenied.thm/panel<br>exitdenied.thm/administrator<br><img width="400px" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a"></p>
+
+<p align="center">exitdenied.thm/admin/index.php<br>../member.php?action=lostpw<br>mybb.com<br>my_post_key = 887e9104f978065926ec023454066b03<br><img width="400px" src="https://github.com/user-attachments/assets/0d8ecbdc-f740-4243-a38c-f0648c2c4b05"><br><br><img width="400px" src="https://github.com/user-attachments/assets/cfd0d570-86c1-4862-9ebd-f83f6f7c8be5"></p>
+
 <p align="center">exitdenied.thm/index.php<br><img width="1200px" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2"></p>
 
 <br>
@@ -469,7 +493,6 @@ gpg: encrypted with 1 passphrase
 ------------ //SQL Password
 ```
 
-<br>
 <p align="center">Access the database using <code>mysql</code>.</p>
 
 ```bash
@@ -776,6 +799,9 @@ if __name__ == '__main__':
     main()
 ```
 
+<br>
+<h1 align="center">user<a id='6'></a></h1>
+
 ```bash
 :~/M4tr1xExitDenied# python3 script.py
 _______________  Setting timezone to UTC ....
@@ -923,6 +949,9 @@ architect@...:~$ pandoc passwd -t plain -o /etc/passwd
 [WARNING] Could not deduce format from file extension 
   Defaulting to markdown
 ```
+
+<br>
+<h1 align="center">root<a id='7'></a></h1>
 
 ```bash
 architect@...:~$ su root
@@ -1179,10 +1208,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 <p>1.13. What is the admin's ACP pin?<br>
 <code>718008</code></p>
 <br>
+<br>
+<h1 align="center">admin<a id='8'></a></h1>
 
-<br>
-<br>
-<br>
 <p align="center">Navigate to exitdenied.thm/admin/ and login as <code>bigpaul</code>.</p>
 
 <img width="1130" height="488" alt="image" src="https://github.com/user-attachments/assets/46503ebd-2b81-4624-85b1-9cd7c34d27bb" />
@@ -1223,7 +1251,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|12      |Hard 🚩 - M4tr1x: Exit Denied          | 525    |      92ⁿᵈ    |      4ᵗʰ     |      76ᵗʰ    |     2ⁿᵈ    | 130,938  |  1,002    |    79     |
+|13      |Hard 🚩 - M4tr1x: Exit Denied          | 525    |      92ⁿᵈ    |      4ᵗʰ     |      76ᵗʰ    |     2ⁿᵈ    | 130,938  |  1,002    |    79     |
 |12      |Easy 🔗 - Atlas                        | 524    |     101ˢᵗ    |      4ᵗʰ     |     251ˢᵗ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
 |11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
 |11      |Hard 🚩 - Rocket                       | 523    |     102ⁿᵈ    |      4ᵗʰ     |     211ˢᵗ    |     3ʳᵈ    | 129,870  |    999    |    76     |
@@ -1259,60 +1287,3 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<p align="center">Launched Burp Suite, and enabled FoxyProxy.<br>Captured the login of the account registered previously. Sent to intruder. <code>Start attack</code>.</p>
-
-
-```bash
-:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/admin/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
-...
-http://exitdenied.thm/admin/index.php            (Status: 200) [Size: 1971]
-http://exitdenied.thm/admin/modules              (Status: 301) [Size: 324] [--> http://exitdenied.thm/admin/modules/]
-http://exitdenied.thm/admin/styles               (Status: 301) [Size: 323] [--> http://exitdenied.thm/admin/styles/]
-http://exitdenied.thm/admin/inc                  (Status: 301) [Size: 320] [--> http://exitdenied.thm/admin/inc/]
-http://exitdenied.thm/admin/backups              (Status: 301) [Size: 324] [--> http://exitdenied.thm/admin/backups/]
-```
-
-<br>
-<br>
-<br>
-<p align="center">exitdenied.thm/admin/index.php<br>../member.php?action=lostpw<br>mybb.com<br>my_post_key = 887e9104f978065926ec023454066b03</p>
-
-<img width="1143" height="504" alt="image" src="https://github.com/user-attachments/assets/0d8ecbdc-f740-4243-a38c-f0648c2c4b05" />
-
-<br>
-<br>
-<br>
-
-<img width="1142" height="733" alt="image" src="https://github.com/user-attachments/assets/cfd0d570-86c1-4862-9ebd-f83f6f7c8be5" />
-
-<br>
-<br>
-<br>
-
-```bash
-:~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/inc/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
-...
-http://exitdenied.thm/inc/plugins              (Status: 301) [Size: 322] [--> http://exitdenied.thm/inc/plugins/]
-http://exitdenied.thm/inc/languages            (Status: 301) [Size: 324] [--> http://exitdenied.thm/inc/languages/]
-http://exitdenied.thm/inc/config.php           (Status: 200) [Size: 0]
-http://exitdenied.thm/inc/settings.php         (Status: 200) [Size: 0]
-http://exitdenied.thm/inc/functions.php        (Status: 200) [Size: 0]
-http://exitdenied.thm/inc/init.php             (Status: 200) [Size: 98]
-http://exitdenied.thm/inc/tasks                (Status: 301) [Size: 320] [--> http://exitdenied.thm/inc/tasks/]
-http://exitdenied.thm/inc/3rdparty             (Status: 301) [Size: 323] [--> http://exitdenied.thm/inc/3rdparty/]
-```
-
-<img width="1264" height="192" alt="image" src="https://github.com/user-attachments/assets/76bd5c7f-f286-4293-acc3-c2b5f580f707" />
-
-
-
