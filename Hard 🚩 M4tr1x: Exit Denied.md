@@ -17,15 +17,10 @@ Who are you?</p>
 <p align="center"><img width="600px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
 
 <h6>﻿﻿image credits:<br>
-
 Antonio Gamboa - https://theartwarriors.artstation.com/projects/v15Eq6<br>
-
 Makke1991 - https://www.newgrounds.com/art/view/makke1991/agent-smith<br>
-
 alecyl - https://www.deviantart.com/alecyl/art/agent-smith-138763013<br>
-
 Skull2 - https://www.deviantart.com/skull2/art/Smith-and-Smith-and-43601396<br>
-
 Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 
 <br>
@@ -41,12 +36,7 @@ Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 - [Directory and File Enumeration](#4)<br>
 - [Web Interface Inspection](#5)<br>
 - [Directory and File Enumeration](#6)<br>
-- [Web Interface Inspection](#7)<br>
-- [Static Host Mapping](#8)<br>
-- [Weaponization](#9)<br>
-- [Delivery & Execution & Initial Foothold](#10)<br>
-- [Privilege Escalation & User Flag](#11)<br>
-- [Privilege Escalation & Root Flag](#12)</p>
+- [Web Interface Inspection](#7)</p>
 
 <br>
 <br>
