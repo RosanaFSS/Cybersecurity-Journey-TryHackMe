@@ -246,28 +246,17 @@ http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659"></p>
 
-<br>
-<br>
-<br>
+
 <p>1.1. Where did that white <ins>rabbit</ins> lead you to? Hint: <em>Gobuster</em><br>
-<code>No answer needed/code></p>
-<br>
+<code>No answer needed</code></p>
+
 <h1 align="center">Web Interface Inspection<a id='7'></a></h1>
 <p align="center">exitdenied.thm/index.php<br><img width="600px" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2"></p>
 
-<br>
-<br>
-<br>
 <p align="center">exitdenied.thm/memberlist.php<br><img width="600px" src="https://github.com/user-attachments/assets/0ffe1ac7-de15-4fa2-a192-c8a217e6dfab"></p>
 
-<br>
-<br>
-<br>
 <p align="center">exitdenied.thm/showteam.php<br>Administrator : <code>bigpaul</code><br>Moderators: <code>ArnoldBagger</code>, <code>BlackCat</code>, BlueMan, DotHaxer, DrBert, Jackwom, <code>PalacerKing</code><br>Super Moderator: <code>BlackCat</code><br><img width="600px" src="https://github.com/user-attachments/assets/7fc28b2a-087c-4318-b57d-db85fa82e43b"></p>
 
-<br>
-<br>
-<br>
 <p align="center">Created <code>usernames.txt</code></p>
 
 ```bash
@@ -290,10 +279,7 @@ PalaceKing
 
 <p align="center"><img width="600px" src="https://github.com/user-attachments/assets/147bea97-43e3-432d-9110-4d48b5ca8482"></p>
 
-<br>
-<br>
-<br>
-<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code><img width="600px" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645"></p>
+<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code><br><img width="600px" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645"></p>
 
 <br>
 <br>
