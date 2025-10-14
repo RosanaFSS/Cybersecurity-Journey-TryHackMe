@@ -10,10 +10,8 @@ Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
 <p><strong>UnknownSender@UnknownMail.com:</strong><br>
 Most people only see a perfectly constructed system. But <ins>you</ins> have always been different. You see not only what is on the surface but also what governs beneath it; the internal correlating mechanisms that regulate and manage each of its modules almost so flawlessly that it attempts conceal all miniscule holes in its multifaceted design. However, these holes still exist, don't they?... Yes, you are still learning, but your greatest weakness is that self-doubt... It continues to hold you back... Do you know where it comes from? Deep down, I know you do. You know something is not right, you just cannot put your finger on it. Well let me tell you. You are living in a dream. One that has been placed over your eyes to blind you from you realising who you could become. Yes… I can sense you know what I am telling you is true... The dilemma is that there are these '<ins>agents</ins>'... Let us call them programs that look like you and me. They seek to spread that virus of <ins>self-doubt</ins>, <ins>disbelief</ins>, and <ins>fear</ins> into the subconsciousness of the few emerging hackers with great potential. Why you ask? It is because minds like yours are a threat to those in control of the 'M4tr1x system'; the artificial, simulated world developed to supress your full senses. We need you in this next war against the machines. But only you can escape from your engineered reality into the real world... I will be waiting on the other side.</p>
 <br>
-<br>
 <p><strong>You@mail.com:</strong><br>
 Who are you?</p>
-<br>
 <br>
 <p><strong>UnknownSender@UnknownMail.com:</strong></p>
 <p align="center"><img width="600px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
@@ -30,6 +28,7 @@ Skull2 - https://www.deviantart.com/skull2/art/Smith-and-Smith-and-43601396<br>
 
 Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 
+<br>
 <p><em>Answer the questions below</em></p>
 
 <br>
