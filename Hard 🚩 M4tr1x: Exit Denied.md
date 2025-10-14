@@ -1213,7 +1213,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 <br>
 <br>
 
-<h1 align="center">In Progress</h1>
+<h1 align="center">Completed</h1>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/61404b71-0db5-4d3d-9514-2c8720e5c5b1"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/9de58130-2da7-44f3-8633-8e129de943a5"></p>
 
@@ -1223,7 +1223,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|12      |Hard 🚩 - M4tr1x: Exit Denied          | 524    |     101ˢᵗ    |      4ᵗʰ     |     244ᵗʰ    |     3ʳᵈ    | 130,082  |  1,001    |    76     |
+|12      |Hard 🚩 - M4tr1x: Exit Denied          | 525    |      92ⁿᵈ    |      4ᵗʰ     |      76ᵗʰ    |     2ⁿᵈ    | 130,938  |  1,002    |    79     |
 |12      |Easy 🔗 - Atlas                        | 524    |     101ˢᵗ    |      4ᵗʰ     |     251ˢᵗ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
 |11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
 |11      |Hard 🚩 - Rocket                       | 523    |     102ⁿᵈ    |      4ᵗʰ     |     211ˢᵗ    |     3ʳᵈ    | 129,870  |    999    |    76     |
@@ -1250,16 +1250,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <br>
 
-<img width="1891" height="894" alt="image" src="https://github.com/user-attachments/assets/13d2cf82-ed7a-4aa9-a596-daeeec75f11e" />
-
-
-
-
-<p align="center">Global All Time:   101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/19092d22-15f4-4fe1-a4a2-63213d564a2e"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/17f9c9aa-0f69-4b49-afdb-0c64a385facc"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a399f80e-19ea-444d-b477-035d51c73092"><br>
-                  Global monthly:    244ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/13d2cf82-ed7a-4aa9-a596-daeeec75f11e"><br>
-                  Brazil monthly:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/85912b85-7957-4738-b9cb-1d5da14a0b33"></p>
+<p align="center">Global All Time:   92ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/a64338c7-cf17-4c0a-9672-4940d767eabf"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/4c54f797-390d-4160-b850-6778b73ff593"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/cc7f1706-c4c3-423f-9fd8-c5c425e05a71"><br>
+                  Global monthly:     76ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/03d3c652-dd73-4e66-8035-b99dbe4317d0"><br>
+                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/749fe748-6bef-4eb0-82e9-3d64a61c1e67"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
