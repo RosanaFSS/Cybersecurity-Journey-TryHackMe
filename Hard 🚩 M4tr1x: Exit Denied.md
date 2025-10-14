@@ -1,7 +1,7 @@
 <h1 align="center">M4tr1x: Exit Denied</h1>
 <p align="center">2025, October 13<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>525</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
 <em>Free your mind. Exit from the M4tr1x...</em><br>
-<img width="80px" src="https://github.com/user-attachments/assets/c435a79d-756c-4e87-86b5-0c81a25e5f82"><br>
+<img width="60px" src="https://github.com/user-attachments/assets/c435a79d-756c-4e87-86b5-0c81a25e5f82"><br>
 Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/b9e0a5ba-0178-410a-8a96-5bc5edc6f8a0"></p>
 
@@ -9,12 +9,12 @@ Access it <a href="https://tryhackme.com/room/m4tr1xexitdenied">here</a>.<br>
 <h3>Story</h3>
 <p><strong>UnknownSender@UnknownMail.com:</strong><br>
 Most people only see a perfectly constructed system. But <ins>you</ins> have always been different. You see not only what is on the surface but also what governs beneath it; the internal correlating mechanisms that regulate and manage each of its modules almost so flawlessly that it attempts conceal all miniscule holes in its multifaceted design. However, these holes still exist, don't they?... Yes, you are still learning, but your greatest weakness is that self-doubt... It continues to hold you back... Do you know where it comes from? Deep down, I know you do. You know something is not right, you just cannot put your finger on it. Well let me tell you. You are living in a dream. One that has been placed over your eyes to blind you from you realising who you could become. Yes… I can sense you know what I am telling you is true... The dilemma is that there are these '<ins>agents</ins>'... Let us call them programs that look like you and me. They seek to spread that virus of <ins>self-doubt</ins>, <ins>disbelief</ins>, and <ins>fear</ins> into the subconsciousness of the few emerging hackers with great potential. Why you ask? It is because minds like yours are a threat to those in control of the 'M4tr1x system'; the artificial, simulated world developed to supress your full senses. We need you in this next war against the machines. But only you can escape from your engineered reality into the real world... I will be waiting on the other side.</p>
-<br>
+
 <p><strong>You@mail.com:</strong><br>
 Who are you?</p>
-<br>
+
 <p><strong>UnknownSender@UnknownMail.com:</strong></p>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
 
 <h6>﻿﻿image credits:<br>
 Antonio Gamboa - https://theartwarriors.artstation.com/projects/v15Eq6<br>
@@ -49,7 +49,6 @@ xx.xxx.xx.xx exitdenied.thm
 <br>
 <h1 align="center">Port Scanning<a id='2'></a></h1>
 <p align="center"><strong>3</strong> open ports</p>
-<br>
 
 <div align="center"><p>
 
@@ -156,33 +155,17 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6628ad39-54a2-4e53-922f-da6dd9ac33fd"></p>
 
 <br>
-<br>
-<br>
 <h1 align="center">Web Interface Inspection<a id='5'></a></h1>
 <p align="center">exitdenied.thm/general<br><img width="600px" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13"></p>
 
-<br>
-<br>
-<br>
 <p align="center">exitdenied.thm/admin<br><img width="600px" src="https://github.com/user-attachments/assets/340c43f6-4d5f-4484-950d-6c38429928ef"></p>
 
-<br>
-<br>
-<br>
 <p align="center">exitdenied.thm/install<br><img width="600px" src="https://github.com/user-attachments/assets/7eb1bbd5-e75d-47d9-b5c1-6ace926d1c32"></p>
 
-<br>
-<br>
-<br>
-<p align="center">exitdenied.thm/flag & exitdenied.thm/ftp & exitdenied.thm/error & exitdenied.thm/attachment & exitdenied.thm/e-mail & exitdenied.thm/change_password<br><img width="600px" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4"></p>
+<p align="center">exitdenied.thm/flag<br>exitdenied.thm/ftp<br>exitdenied.thm/error<br>exitdenied.thm/attachment<br>exitdenied.thm/e-mail<br>exitdenied.thm/change_password<br><img width="600px" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4"></p>
 
-<br>
-<br>
-<br>
-<p align="center">exitdenied.thm/blue & exitdenied.thm/secret & exitdenied.thm/panel & & exitdenied.thm/administrator<br><img width="400px" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a"></p>
+<p align="center">exitdenied.thm/blue<br>exitdenied.thm/secret<br>exitdenied.thm/panel<br>exitdenied.thm/administrator<br><img width="400px" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a"></p>
 
-<br>
-<br>
 <br>
 <h1 align="center">Directory and File Enumeration<a id='6'></a></h1>
 
@@ -246,18 +229,19 @@ http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659"></p>
 
+<br>
+<h1 align="center">Web Interface Inspection<a id='7'></a></h1>
+<p align="center">exitdenied.thm/index.php<br><img width="1200px" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2"></p>
 
+<br>
 <p>1.1. Where did that white <ins>rabbit</ins> lead you to? Hint: <em>Gobuster</em><br>
 <code>No answer needed</code></p>
 
-<h1 align="center">Web Interface Inspection<a id='7'></a></h1>
-<p align="center">exitdenied.thm/index.php<br><img width="600px" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2"></p>
+<p align="center">exitdenied.thm/memberlist.php<br>Rabbit!<img width="1200px" src="https://github.com/user-attachments/assets/0ffe1ac7-de15-4fa2-a192-c8a217e6dfab"></p>
 
-<p align="center">exitdenied.thm/memberlist.php<br><img width="600px" src="https://github.com/user-attachments/assets/0ffe1ac7-de15-4fa2-a192-c8a217e6dfab"></p>
+<p align="center">exitdenied.thm/showteam.php<br>Administrator : <code>bigpaul</code><br>Moderators: <code>ArnoldBagger</code>, <code>BlackCat</code>, BlueMan, DotHaxer, DrBert, Jackwom, <code>PalacerKing</code><br>Super Moderator: <code>BlackCat</code><br><img width="1200px" src="https://github.com/user-attachments/assets/7fc28b2a-087c-4318-b57d-db85fa82e43b"></p>
 
-<p align="center">exitdenied.thm/showteam.php<br>Administrator : <code>bigpaul</code><br>Moderators: <code>ArnoldBagger</code>, <code>BlackCat</code>, BlueMan, DotHaxer, DrBert, Jackwom, <code>PalacerKing</code><br>Super Moderator: <code>BlackCat</code><br><img width="600px" src="https://github.com/user-attachments/assets/7fc28b2a-087c-4318-b57d-db85fa82e43b"></p>
-
-<p align="center">Created <code>usernames.txt</code></p>
+<p align="center">Create <code>usernames.txt</code></p>
 
 ```bash
 bigpaul
@@ -271,56 +255,19 @@ PalaceKing
 ```
 
 <br>
-<p align="center">exitdenied.thm/memberlist.php?action=register > I Agree > answer question > ...<br><img width="600px" src="https://github.com/user-attachments/assets/96ab918a-0a85-4be1-9f1a-33c782a4e4b5"></p>
+<p align="center">exitdenied.thm/memberlist.php?action=register > I Agree > answer question > ...<br><img width="1200px" src="https://github.com/user-attachments/assets/96ab918a-0a85-4be1-9f1a-33c782a4e4b5"></p>
 
-<br>
-<br>
-<br>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/147bea97-43e3-432d-9110-4d48b5ca8482"></p>
 
-<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/147bea97-43e3-432d-9110-4d48b5ca8482"></p>
+<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code><br><img width="1200px" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645"></p>
 
-<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code><br><img width="600px" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645"></p>
-
-<br>
-<br>
 <br>
 <p>1.2. Where did that white <ins>rabbit</ins> lead you to? Hint: <em>Are you sure it is trying to lead you down just one stop? Perhaps the journey is longer?</em><br>
 <code>/reportPanel.php</code></p>
-<br>
-<p align="center">exitdenied.thm/bugbountyHQ<br>/reportPanel.php</p>
 
-<img width="1130" height="458" alt="image" src="https://github.com/user-attachments/assets/4e2d8962-0e50-4a36-8164-3ece84187631" />
+<p align="center">exitdenied.thm/bugbountyHQ<br>/reportPanel.php<br><img width="1200px" src="https://github.com/user-attachments/assets/4e2d8962-0e50-4a36-8164-3ece84187631"><br><br><img width="1200px" src="https://github.com/user-attachments/assets/79e7f8af-16f6-4046-af76-5ef0b16ac909"></p>
 
-<br>
-<br>
-<br>
-
-<img width="1132" height="473" alt="image" src="https://github.com/user-attachments/assets/79e7f8af-16f6-4046-af76-5ef0b16ac909" />
-
-<br>
-<br>
-<br>
-<p align="center">exitdenied.thm/reportPanel.php<br><br><em>deleted <code>mod</code> posts with attachments can still be accessed</em></p>
-
-<img width="1131" height="299" alt="image" src="https://github.com/user-attachments/assets/0cfda2f2-4d63-49e4-aab4-6bd4a6208d13" />
-
-<br>
-<br>
-<br>
-<p align="center"><em>3 in 5 online users use weak passwords such as: password123, Password123, crabfish, linux123, secret, piggybank, windowsxp, starwars, qwerty123, qwerty, supermario, Luisfactor05, james123, etc</em></p>
-
-<img width="1122" height="184" alt="image" src="https://github.com/user-attachments/assets/91e619bd-f8ad-4694-8ec7-2fe2c67bfca8" />
-
-<br>
-<br>
-<br>
-<p align="center">exitdenied.thm/reportPanel.php page source</p>
-
-<img width="1129" height="258" alt="image" src="https://github.com/user-attachments/assets/1a5016d1-191c-41ac-9a4c-1881e44eb5a5" />
-
-<br>
-<br>
-<br>
+<p align="center">exitdenied.thm/reportPanel.php page source<br><img width="1200px" src="https://github.com/user-attachments/assets/1a5016d1-191c-41ac-9a4c-1881e44eb5a5"></p>
 
 ```bash
 Keymaker message:
@@ -329,8 +276,7 @@ Keymaker message:
 1 4 4 18 5 19 19: /0100101101100101011110010110110101100001011010110110010101110010
 ```
 
-<br>
-<p align="center">Created <code>passwords.txt</code></p>
+<p align="center">Create <code>passwords.txt</code></p>
 
 ```bash
 password123
@@ -353,72 +299,13 @@ james123
 <code>No answer needed</code></p>
 <br>
 
-<img width="1130" height="167" alt="image" src="https://github.com/user-attachments/assets/62a7ae94-d0c8-4756-82ba-88a91c2112a9" />
+<p align="center">exitdenied.thm/reportPanel.php<br>deleted <code>mod</code> posts with attachments can still be accessed<br>3 in 5 online users use weak passwords such as: password123, Password123, crabfish, linux123, secret, piggybank, windowsxp, starwars, qwerty123, qwerty, supermario, Luisfactor05, james123, etc<br><img width="1200px" src="https://github.com/user-attachments/assets/0cfda2f2-4d63-49e4-aab4-6bd4a6208d13"><br><br><img width="1200px" src="https://github.com/user-attachments/assets/91e619bd-f8ad-4694-8ec7-2fe2c67bfca8"></p>
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/62a7ae94-d0c8-4756-82ba-88a91c2112a9"><br><br>anti-bot registration questions repeats using pseudo random method - can be predicted using frequency analysis of responses<br><img width="900px" src="https://github.com/user-attachments/assets/e310c6e0-e493-45ac-9aac-8f20a6e0ec9b"><br><br>IP history plugin records users IP & User-Agent history. user Agent would not be sanitized so xss possible for <code>acp</code> page.<br><img width="900px" src="https://github.com/user-attachments/assets/a1731731-27e9-42d8-a444-ee13015a007b"><br><br>xss possible because plugin does not sanatize passed data (AR4)<br><img width="900px" src="https://github.com/user-attachments/assets/e8750aeb-209d-41f5-a3d7-3df7f482f096"><br><br><br>Launch <code>Burp Suite</code>, and enable <code>FoxyProxy</code>.<br>Capture the login of the account registered previously.<br>Send to intruder.<br>Click <code>Start attack</code>.<br>Identify <code>PalacerKing</code>´s and <code>ArnoldBagger</code>´s passwords.<br><img width="900px" src="https://github.com/user-attachments/assets/deb0fdea-e141-4351-a1ff-27cea6181791"></p>
 
-<br>
-<br>
-<br>
-<p align="center"><em>anti-bot registration questions repeats using pseudo random method - can be predicted using frequency analysis of responses</em></p>
+<p align="center"><code>PalacerKing</code><br><code>10</code><br><img width="900px" src="https://github.com/user-attachments/assets/84461095-bcbe-436a-b1c3-4da16382199e"><br><br>><img width="900px" src="https://github.com/user-attachments/assets/5f012b3f-c634-452f-bcad-e594663aa12b"><br><br><code>PalacerKing</code> > <code>User CP</code> > <code>Messenger</code> > <code>Sent Items</code> > <code>new plugin test</code><br><img width="900px" src="https://github.com/user-attachments/assets/a53109a2-eb25-46ae-9719-d0df7a9987a2"></p>
 
-<img width="1126" height="37" alt="image" src="https://github.com/user-attachments/assets/e310c6e0-e493-45ac-9aac-8f20a6e0ec9b" />
+<p align="center"><code>ArnoldBagger</code> > <code>User CP</code> > <code>Messenger</code> > <code>Sent Items</code><br><img width="900px" src="https://github.com/user-attachments/assets/27b29184-a959-45d5-9380-25aae5d17d74"><br><br><img width="900px" src="https://github.com/user-attachments/assets/b5190b6b-82a3-4ff2-984f-0875c2f77eac"></p>
 
-<br>
-<br>
-<br>
-<p align="center"><em>IP history plugin records users IP & User-Agent history. user Agent would not be sanitized so xss possible for <code>acp</code> page</em>.</p>
-
-<img width="1123" height="296" alt="image" src="https://github.com/user-attachments/assets/a1731731-27e9-42d8-a444-ee13015a007b" />
-    
-<br>
-<br>
-<br>
-<p align="center"><em>xss possible because plugin does not sanatize passed data (AR4)</em></p>
-
-<img width="1118" height="31" alt="image" src="https://github.com/user-attachments/assets/e8750aeb-209d-41f5-a3d7-3df7f482f096" />
-
-<br>
-<br>
-<br>
-<p align="center">Launched <code>Burp Suite</code>, and enabled <code>FoxyProxy</code>.<br>Captured the login of the account registered previously.<br>Sent to intruder.<br>Clicked <code>Start attack</code>.<br>Identified <code>PalacerKing</code>´s and <code>ArnoldBagger</code>´s passwords.</p>
-
-<img width="1171" height="303" alt="image" src="https://github.com/user-attachments/assets/deb0fdea-e141-4351-a1ff-27cea6181791" />
-
-<br>
-<br>
-<br>
-<p align="center"><code>PalacerKing</code><br><code>10</code></p>
-
-<img width="1119" height="608" alt="image" src="https://github.com/user-attachments/assets/84461095-bcbe-436a-b1c3-4da16382199e" />
-
-<br>
-<br>
-<br>
-
-<img width="1134" height="435" alt="image" src="https://github.com/user-attachments/assets/5f012b3f-c634-452f-bcad-e594663aa12b" />
-
-<br>
-<br>
-<br>
-<p align="center"><code>PalacerKing</code> > <code>User CP</code> > <code>Messenger</code> > <code>Sent Items</code> > <code>new plugin test</code></p>
-
-<img width="1060" height="365" alt="image" src="https://github.com/user-attachments/assets/a53109a2-eb25-46ae-9719-d0df7a9987a2" />
-
-<br>
-<br>
-<br>
-
-<p align="center"><code>ArnoldBagger</code> > <code>User CP</code> > <code>Messenger</code> > <code>Sent Items</code></p>
-
-<img width="1118" height="571" alt="image" src="https://github.com/user-attachments/assets/27b29184-a959-45d5-9380-25aae5d17d74" />
-
-<br>
-<br>
-<br>
-
-<img width="1128" height="614" alt="image" src="https://github.com/user-attachments/assets/b5190b6b-82a3-4ff2-984f-0875c2f77eac" />
-
-<br>
-<br>
 <br>
 <p>1.4. What is the name of that interesting plugin?<br>
 <code>modManagerv2</code></p>
