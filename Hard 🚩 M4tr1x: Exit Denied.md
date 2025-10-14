@@ -14,7 +14,7 @@ Most people only see a perfectly constructed system. But <ins>you</ins> have alw
 Who are you?</p>
 <br>
 <p><strong>UnknownSender@UnknownMail.com:</strong></p>
-<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/08ca5c8e-9ad4-461c-bb05-911d7444d0ec"></p>
 
 <h6>﻿﻿image credits:<br>
 Antonio Gamboa - https://theartwarriors.artstation.com/projects/v15Eq6<br>
@@ -38,14 +38,7 @@ Jason Yeh - https://www.deviantart.com/ecclo/art/Vector-Morpheus-5429472</h6>
 - [Directory and File Enumeration](#6)<br>
 - [Web Interface Inspection](#7)</p>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <br>
 <h1 align="center">Static Host Name Mapping<a id='1'></a></h1>
 
@@ -160,44 +153,33 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 ...
 ```
 
-<img width="1195" height="363" alt="image" src="https://github.com/user-attachments/assets/6628ad39-54a2-4e53-922f-da6dd9ac33fd" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6628ad39-54a2-4e53-922f-da6dd9ac33fd"></p>
 
-<br>
 <br>
 <br>
 <br>
 <h1 align="center">Web Interface Inspection<a id='5'></a></h1>
-<p align="center">exitdenied.thm/general</p>
-
-<img width="1137" height="726" alt="image" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13" />
+<p align="center">exitdenied.thm/general<br><img width="600px" src="https://github.com/user-attachments/assets/9998cb7e-f2ee-42d5-93d4-72d9721b3c13"></p>
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/admin</p>
-
-<img width="1143" height="473" alt="image" src="https://github.com/user-attachments/assets/340c43f6-4d5f-4484-950d-6c38429928ef" />
+<p align="center">exitdenied.thm/admin<br><img width="600px" src="https://github.com/user-attachments/assets/340c43f6-4d5f-4484-950d-6c38429928ef"></p>
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/install</p>
-
-<img width="1145" height="386" alt="image" src="https://github.com/user-attachments/assets/7eb1bbd5-e75d-47d9-b5c1-6ace926d1c32" />
+<p align="center">exitdenied.thm/install<br><img width="600px" src="https://github.com/user-attachments/assets/7eb1bbd5-e75d-47d9-b5c1-6ace926d1c32"></p>
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/flag & exitdenied.thm/ftp & exitdenied.thm/error & exitdenied.thm/attachment & exitdenied.thm/e-mail & exitdenied.thm/change_password</p>
-
-<img width="818" height="805" alt="image" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4" />
+<p align="center">exitdenied.thm/flag & exitdenied.thm/ftp & exitdenied.thm/error & exitdenied.thm/attachment & exitdenied.thm/e-mail & exitdenied.thm/change_password<br><img width="600px" src="https://github.com/user-attachments/assets/7f7282a3-9e2d-4a64-9ad8-08423f11a8a4"></p>
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/blue & exitdenied.thm/secret & exitdenied.thm/panel & & exitdenied.thm/administrator</p>
-
-<img width="422" height="716" alt="image" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a" />
+<p align="center">exitdenied.thm/blue & exitdenied.thm/secret & exitdenied.thm/panel & & exitdenied.thm/administrator<br><img width="400px" src="https://github.com/user-attachments/assets/a589382b-638e-419a-9a02-a08c0f5b125a"></p>
 
 <br>
 <br>
@@ -262,7 +244,7 @@ http://exitdenied.thm/change_password      (Status: 200) [Size: 240]
 http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 ```
 
-<img width="1191" height="831" alt="image" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/a6ed2d94-9bdf-4a51-9d90-9dbfa9300659"></p>
 
 <br>
 <br>
@@ -271,23 +253,17 @@ http://exitdenied.thm/editpost.php         (Status: 200) [Size: 9603]
 <code>No answer needed/code></p>
 <br>
 <h1 align="center">Web Interface Inspection<a id='7'></a></h1>
-<p align="center">exitdenied.thm/index.php</p>
-
-<img width="1137" height="770" alt="image" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2" />
+<p align="center">exitdenied.thm/index.php<br><img width="600px" src="https://github.com/user-attachments/assets/b424c517-4b6f-48ac-b7b3-8cfa7d438dd2"></p>
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/memberlist.php</p>
-
-<img width="1129" height="387" alt="image" src="https://github.com/user-attachments/assets/0ffe1ac7-de15-4fa2-a192-c8a217e6dfab" />
+<p align="center">exitdenied.thm/memberlist.php<br><img width="600px" src="https://github.com/user-attachments/assets/0ffe1ac7-de15-4fa2-a192-c8a217e6dfab"></p>
 
 <br>
 <br>
 <br>
-<p align="center">exitdenied.thm/showteam.php<br>Administrator : <code>bigpaul</code><br>Moderators: <code>ArnoldBagger</code>, <code>BlackCat</code>, BlueMan, DotHaxer, DrBert, Jackwom, <code>PalacerKing</code><br>Super Moderator: <code>BlackCat</code></p>
-
-<img width="1133" height="807" alt="image" src="https://github.com/user-attachments/assets/7fc28b2a-087c-4318-b57d-db85fa82e43b" />
+<p align="center">exitdenied.thm/showteam.php<br>Administrator : <code>bigpaul</code><br>Moderators: <code>ArnoldBagger</code>, <code>BlackCat</code>, BlueMan, DotHaxer, DrBert, Jackwom, <code>PalacerKing</code><br>Super Moderator: <code>BlackCat</code><br><img width="600px" src="https://github.com/user-attachments/assets/7fc28b2a-087c-4318-b57d-db85fa82e43b"></p>
 
 <br>
 <br>
@@ -306,22 +282,18 @@ PalaceKing
 ```
 
 <br>
-<p align="center">exitdenied.thm/memberlist.php?action=register > I Agree > answer question > ...</p>
-
-<img width="1123" height="754" alt="image" src="https://github.com/user-attachments/assets/96ab918a-0a85-4be1-9f1a-33c782a4e4b5" />
+<p align="center">exitdenied.thm/memberlist.php?action=register > I Agree > answer question > ...<br><img width="600px" src="https://github.com/user-attachments/assets/96ab918a-0a85-4be1-9f1a-33c782a4e4b5"></p>
 
 <br>
 <br>
 <br>
 
-<img width="1129" height="828" alt="image" src="https://github.com/user-attachments/assets/147bea97-43e3-432d-9110-4d48b5ca8482" />
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/147bea97-43e3-432d-9110-4d48b5ca8482"></p>
 
 <br>
 <br>
 <br>
-<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code></p>
-
-<img width="1134" height="754" alt="image" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645" />
+<p align="center"><code>Team</code> > <code>bigpaul</code> > <code>Threads</code> > <code>Bug Bounty Program</code><br><code>/bugbountyHQ</code><img width="600px" src="https://github.com/user-attachments/assets/65d6391a-ceaa-4115-9b69-4dd0932d4645"></p>
 
 <br>
 <br>
