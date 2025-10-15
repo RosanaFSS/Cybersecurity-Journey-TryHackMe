@@ -17,22 +17,27 @@ Tip: Enumeration is key!</p>
 
 <p><em>Answer the questions below</em></p>
 
+
+
+
 <br>
-<h2 align="center">nmap</h2>
+<h1 align="center">Port Scanning<a id='1'></a></h1>
+<p align="center"><strong>5</strong> open ports</p>
+
+<div align="center"><p>
+
+| **Port**           | **Service**          | **Version**                                                   |
+|-------------------:|:---------------------|:--------------------------------------------------------------|
+| `22`               |`SSH`                 |OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)  |
+| `80`               |`HTTP`                |Apache httpd 2.4.41 ((Ubuntu))                                 |
+| `873`              |`rsync`               |Apache httpd 2.4.52 ((Debian))                                 |
+| `8820`             |`HTTP`                |Apache httpd 2.4.41 ((Ubuntu))                                 |
+| `9020`             |`tambora`             |Apache httpd 2.4.41 ((Ubuntu))                                 |
+
+</p></div><br>
 
 ```bash
-:~/PlottedLMS# nmap -p- xx.xxx.xxx.xx
-...
-PORT     STATE SERVICE
-22/tcp   open  ssh
-80/tcp   open  http
-873/tcp  open  rsync
-8820/tcp open  unknown
-9020/tcp open  tambora
-```
-
-```bash
-:~/PlottedLMS# nmap -sC -sV -p- xx.xxx.xxx.xx
+:~/Plotted-LMS# nmap -sC -sV -Pn -p- -T5 10.201.83.200
 ...
 PORT     STATE SERVICE VERSION
 22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
@@ -50,7 +55,446 @@ PORT     STATE SERVICE VERSION
 |_http-title: Apache2 Ubuntu Default Page: It works
 ```
 
-<h2 align="center">Web</h2>
+<br>
+<h1 align="center">Static Host Name Mapping<a id='2'></a></h1>
+
+```bash
+10.201.83.200 plotted-lms.thm
+```
+
+<br>
+<h1 align="center">Directory and File Enumeration<a id='3'></a></h1>
+
+<div align="center"><p>
+
+| **Port**           | *Directories and Files**                                        |
+|-------------------:|:----------------------------------------------------------------|
+| `80`               |`/index.html`                                                    |
+| `873`              |`/rail`, `/index.html`, `/secret.txt`                            |
+| `8820`             |`/admin`, `/.git`, `/learn`, `/index.html`                       |
+| `9020`             |`/admin`, `/.git`, `/moodle`, `/user.txt`, `/secret.txt`         |
+
+</p></div><br>
+
+<p align="center">80</p>
+
+```bash
+:~/Plotted-LMS# gobuster dir -u http://plotted-lms.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e -k -q -x bak,git,txt,old,html,php
+h...
+http://plotted-lms.thm/index.html           (Status: 200) [Size: 10918]
+```
+
+<p align="center">873</p>
+
+```bash
+:~/Plotted-LMS# gobuster dir -u http://plotted-lms.thm:873/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e -k -q -x bak,git,txt,old,html,php
+...
+http://plotted-lms.thm:873/index.html           (Status: 200) [Size: 10701]
+http://plotted-lms.thm:873/secret.txt           (Status: 200) [Size: 37]
+http://plotted-lms.thm:873/rail                 (Status: 301) [Size: 322] [--> http://plotted-lms.thm:873/rail/]
+```
+
+<p align="center">8820</p>
+
+```bash
+:~/Plotted-LMS# gobuster dir -u http://plotted-lms.thm:8820/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e -k -q -x bak,git,txt,old,html,php
+http://plotted-lms.thm:8820/.git                 (Status: 200) [Size: 105]
+...
+http://plotted-lms.thm:8820/index.html           (Status: 200) [Size: 10918]
+http://plotted-lms.thm:8820/admin                (Status: 200) [Size: 105]
+http://plotted-lms.thm:8820/learn                (Status: 301) [Size: 325] [--> http://plotted-lms.thm:8820/learn/]
+...
+```
+
+<p align="center">9020</p>
+
+```bash
+:~/Plotted-LMS# gobuster dir -u http://plotted-lms.thm:9020/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e -k -q -x bak,git,txt,old,html,php
+http://plotted-lms.thm:9020/.git                 (Status: 200) [Size: 105]
+http://plotted-lms.thm:9020/user.txt             (Status: 200) [Size: 129]
+http://plotted-lms.thm:9020/admin                (Status: 200) [Size: 105]
+http://plotted-lms.thm:9020/secret.txt           (Status: 200) [Size: 105]
+http://plotted-lms.thm:9020/moodle               (Status: 301) [Size: 326] [--> http://plotted-lms.thm:9020/moodle/]
+...
+```
+
+```bash
+:~/Plotted-LMS# gobuster dir -u http://plotted-lms.thm:9020/moodle/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x js,css,php
+http://plotted-lms.thm:9020/moodle/index.php            (Status: 200) [Size: 4717]
+http://plotted-lms.thm:9020/moodle/search               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/search/]
+http://plotted-lms.thm:9020/moodle/privacy              (Status: 301) [Size: 334] [--> http://plotted-lms.thm:9020/moodle/privacy/]
+http://plotted-lms.thm:9020/moodle/blog                 (Status: 301) [Size: 331] [--> http://plotted-lms.thm:9020/moodle/blog/]
+http://plotted-lms.thm:9020/moodle/rss                  (Status: 301) [Size: 330] [--> http://plotted-lms.thm:9020/moodle/rss/]
+http://plotted-lms.thm:9020/moodle/login                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/login/]
+http://plotted-lms.thm:9020/moodle/help.php             (Status: 200) [Size: 1872]
+http://plotted-lms.thm:9020/moodle/media                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/media/]
+http://plotted-lms.thm:9020/moodle/files                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/files/]
+http://plotted-lms.thm:9020/moodle/user                 (Status: 301) [Size: 331] [--> http://plotted-lms.thm:9020/moodle/user/]
+http://plotted-lms.thm:9020/moodle/calendar             (Status: 301) [Size: 335] [--> http://plotted-lms.thm:9020/moodle/calendar/]
+http://plotted-lms.thm:9020/moodle/version.php          (Status: 200) [Size: 1634]
+http://plotted-lms.thm:9020/moodle/admin                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/admin/]
+http://plotted-lms.thm:9020/moodle/comment              (Status: 301) [Size: 334] [--> http://plotted-lms.thm:9020/moodle/comment/]
+http://plotted-lms.thm:9020/moodle/report               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/report/]
+http://plotted-lms.thm:9020/moodle/local                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/local/]
+http://plotted-lms.thm:9020/moodle/pix                  (Status: 301) [Size: 330] [--> http://plotted-lms.thm:9020/moodle/pix/]
+http://plotted-lms.thm:9020/moodle/tag                  (Status: 301) [Size: 330] [--> http://plotted-lms.thm:9020/moodle/tag/]
+http://plotted-lms.thm:9020/moodle/group                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/group/]
+http://plotted-lms.thm:9020/moodle/my                   (Status: 301) [Size: 329] [--> http://plotted-lms.thm:9020/moodle/my/]
+http://plotted-lms.thm:9020/moodle/install.php          (Status: 200) [Size: 26085]
+http://plotted-lms.thm:9020/moodle/install              (Status: 301) [Size: 334] [--> http://plotted-lms.thm:9020/moodle/install/]
+http://plotted-lms.thm:9020/moodle/lib                  (Status: 301) [Size: 330] [--> http://plotted-lms.thm:9020/moodle/lib/]
+http://plotted-lms.thm:9020/moodle/file.php             (Status: 200) [Size: 3871]
+http://plotted-lms.thm:9020/moodle/portfolio            (Status: 301) [Size: 336] [--> http://plotted-lms.thm:9020/moodle/portfolio/]
+http://plotted-lms.thm:9020/moodle/cache                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/cache/]
+http://plotted-lms.thm:9020/moodle/notes                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/notes/]
+http://plotted-lms.thm:9020/moodle/message              (Status: 301) [Size: 334] [--> http://plotted-lms.thm:9020/moodle/message/]
+http://plotted-lms.thm:9020/moodle/lang                 (Status: 301) [Size: 331] [--> http://plotted-lms.thm:9020/moodle/lang/]
+http://plotted-lms.thm:9020/moodle/theme                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/theme/]
+http://plotted-lms.thm:9020/moodle/blocks               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/blocks/]
+http://plotted-lms.thm:9020/moodle/question             (Status: 301) [Size: 335] [--> http://plotted-lms.thm:9020/moodle/question/]
+http://plotted-lms.thm:9020/moodle/config.php           (Status: 200) [Size: 754]
+http://plotted-lms.thm:9020/moodle/backup               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/backup/]
+http://plotted-lms.thm:9020/moodle/rating               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/rating/]
+http://plotted-lms.thm:9020/moodle/filter               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/filter/]
+http://plotted-lms.thm:9020/moodle/mod                  (Status: 301) [Size: 330] [--> http://plotted-lms.thm:9020/moodle/mod/]
+http://plotted-lms.thm:9020/moodle/auth                 (Status: 301) [Size: 331] [--> http://plotted-lms.thm:9020/moodle/auth/]
+http://plotted-lms.thm:9020/moodle/course               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/course/]
+http://plotted-lms.thm:9020/moodle/error                (Status: 301) [Size: 332] [--> http://plotted-lms.thm:9020/moodle/error/]
+http://plotted-lms.thm:9020/moodle/badges               (Status: 301) [Size: 333] [--> http://plotted-lms.thm:9020/moodle/badges/]
+http://plotted-lms.thm:9020/moodle/repository           (Status: 301) [Size: 337] [--> http://plotted-lms.thm:9020/moodle/repository/]
+http://plotted-lms.thm:9020/moodle/availability         (Status: 301) [Size: 339] [--> http://plotted-lms.thm:9020/moodle/availability/]
+http://plotted-lms.thm:9020/moodle/webservice           (Status: 301) [Size: 337] [--> http://plotted-lms.thm:9020/moodle/webservice/]
+http://plotted-lms.thm:9020/moodle/favourites           (Status: 301) [Size: 337] [--> http://plotted-lms.thm:9020/moodle/favourites/]
+http://plotted-lms.thm:9020/moodle/plagiarism           (Status: 301) [Size: 337] [--> http://plotted-lms.thm:9020/moodle/plagiarism/]
+http://plotted-lms.thm:9020/moodle/brokenfile.php       (Status: 200) [Size: 1162]
+http://plotted-lms.thm:9020/moodle/competency           (Status: 301) [Size: 337] [--> http://plotted-lms.thm:9020/moodle/competency/]
+...
+```
+
+<br>
+<h1 align="center">Web Interface Inspection<a id='4'></a></h1>
+
+<p align="center">plotted-lms.thm:873/secret.txt</p>
+
+```bash
+:~/Plotted-LMS# curl http://plotted-lms.thm:873/secret.txt
+Do you really think it is this easy?
+```
+
+<p align="center">plotted-lms.thm:8820/.git</p>
+
+```bash
+:~/Plotted-LMS# curl http://plotted-lms.thm:8820/.git
+VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR
+```
+
+```bash
+:~/Plotted-LMS# echo 'VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR' | base64 -d
+Try Harder!
+Anyways here you go :D
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
+
+<p align="center">plotted-lms.thm:9020/user.txt</p>
+
+```bash
+:~/Plotted-LMS# curl http://plotted-lms.thm:9020/user.txt
+VHJ5IEhhcmRlciEKCldhaXQgZGlkIHlvdSB0cnkgYWRtaW4vYWRtaW4/CklmIG5vdCwgaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==
+```
+
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/e6bb04b4-c257-4a3c-ba68-0235f2917862"><br>
+
+```bash
+:~/Plotted-LMS# echo 'VHJ5IEhhcmRlciEKCldhaXQgZGlkIHlvdSB0cnkgYWRtaW4vYWRtaW4/CklmIG5vdCwgaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==' | base64 -d
+Try Harder!
+
+Wait did you try admin/admin?
+If not, https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
+
+<p align="center">plotted-lms.thm:9020/secret.txt</p>
+
+```bash
+:~/Plotted-LMS# curl http://plotted-lms.thm:9020/secret.txt
+VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR
+```
+
+```bash
+:~/Plotted-LMS# echo 'VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR' | base64 -d
+Try Harder!
+Anyways here you go :D
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
+
+<p align="center">plotted-lms.thm:9020/.git</p>
+
+```bash
+:~/Plotted-LMS# curl http://plotted-lms.thm:9020/.git
+VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR
+```
+```bash
+:~/Plotted-LMS# echo 'VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR' | base64 -d
+Try Harder!
+Anyways here you go :D
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
+
+<br>
+<h1 align="center">Web Vulberability Scanning<a id='5'></a></h1>
+
+```bash
+:~/Plotted-LMS# nikto -h http://plotted-lms.thm:873/rail/
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          xx.xxx.xx.xxx
++ Target Hostname:    plotted-lms.thm
++ Target Port:        873
++ Start Time:         2025-10-15 xx:xx:xx (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.52 (Debian)
++ Cookie PHPSESSID created without the httponly flag
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Allowed HTTP Methods: HEAD, GET, POST, OPTIONS 
++ DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.
++ OSVDB-877: HTTP TRACK method is active, suggesting the host is vulnerable to XST
++ /rail/config.php: PHP Config file may contain database IDs and passwords.
++ OSVDB-5034: /rail/admin/login.php?action=insert&username=test&password=test: phpAuction may allow user admin accounts to be inserted without proper authentication. Attempt to log in with user 'test' password 'test' to verify.
++ OSVDB-3268: /rail/database/: Directory indexing found.
++ OSVDB-3093: /rail/database/: Databases? Really??
++ /rail/admin/login.php: Admin login page/section found.
++ 6544 items checked: 0 error(s) and 10 item(s) reported on remote host
++ End Time:           2025-10-15 xx:xx:xx (GMT1) (9 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+```bash
+:~/Plotted-LMS# nikto -h http://plotted-lms.thm:9020/moodle/
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.201.48.234
++ Target Hostname:    plotted-lms.thm
++ Target Port:        9020
++ Start Time:         2025-10-15 00:40:52 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.41 (Ubuntu)
++ Server leaks inodes via ETags, header found with file /moodle/, fields: 0x126d 0x5a7fb078f1240 
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Allowed HTTP Methods: GET, POST, OPTIONS, HEAD 
++ /moodle/config.php: PHP Config file may contain database IDs and passwords.
++ OSVDB-3092: /moodle/admin/: This might be interesting...
++ OSVDB-3092: /moodle/auth/: This might be interesting...
++ OSVDB-3092: /moodle/files/: This might be interesting...
++ OSVDB-3092: /moodle/lib/: This might be interesting...
++ OSVDB-3092: /moodle/message/: This might be interesting...
++ OSVDB-3092: /moodle/user/: This might be interesting...
++ OSVDB-3093: /moodle/admin/auth.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ OSVDB-3093: /moodle/admin/index.php: This might be interesting... has been seen in web logs from an unknown scanner.
++ OSVDB-3092: /moodle/INSTALL.txt: Default file found.
++ OSVDB-3092: /moodle/install.php: install.php file found.
++ OSVDB-3092: /moodle/my/: This might be interesting... potential country code (Malaysia)
++ /moodle/help.php: A help file was found.
++ OSVDB-: /moodle/?-s: PHP allows retrieval of the source code via the -s parameter, and may allow command execution. See http://www.kb.cert.org/vuls/id/520827
++ 6544 items checked: 0 error(s) and 17 item(s) reported on remote host
++ End Time:           2025-10-15 00:41:17 (GMT1) (25 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+
+
+hrqvr0f4bmeu97be5t06rqchj9
+
+<p align="center">http://plotted-lms.thm:9020/moodle/config.php</p>
+
+
+```bash
+<html><head></head><body>dbtype    = 'mysqli';
+$CFG-&gt;dblibrary = 'native';
+$CFG-&gt;dbhost    = 'localhost';
+$CFG-&gt;dbname    = 'moodle';
+$CFG-&gt;dbuser    = 'moodle_user';
+$CFG-&gt;dbpass    = 'MoodleItIs@123';
+$CFG-&gt;prefix    = 'mdl_';
+$CFG-&gt;dboptions = array (
+  'dbpersist' =&gt; 0,
+  'dbport' =&gt; '',
+  'dbsocket' =&gt; '',
+  'dbcollation' =&gt; 'utf8mb4_0900_ai_ci',
+);
+
+$CFG-&gt;wwwroot   = "http://".$_SERVER["HTTP_HOST"]."/moodle";
+$CFG-&gt;dataroot  = '/var/www/uploadedfiles';
+$CFG-&gt;admin     = 'admin';
+
+$CFG-&gt;directorypermissions = 0777;
+
+require_once(__DIR__ . '/lib/setup.php');
+
+// There is no php closing tag in this file,
+// it is intentional because it prevents trailing whitespace problems!
+</body></html>
+```
+
+<p align="center">http://plotted-lms.thm:9020/moodle/auth.php</p>
+
+```bash
+<?php
+
+/**
+ * Allows admin to edit all auth plugin settings.
+ *
+ * JH: copied and Hax0rd from admin/enrol.php and admin/filters.php
+ *
+ */
+
+require_once('../config.php');
+require_once($CFG->libdir.'/adminlib.php');
+require_once($CFG->libdir.'/tablelib.php');
+
+require_admin();
+
+$returnurl = new moodle_url('/admin/settings.php', array('section'=>'manageauths'));
+
+$PAGE->set_url($returnurl);
+
+$action = optional_param('action', '', PARAM_ALPHANUMEXT);
+$auth   = optional_param('auth', '', PARAM_PLUGIN);
+
+get_enabled_auth_plugins(true); // fix the list of enabled auths
+if (empty($CFG->auth)) {
+    $authsenabled = array();
+} else {
+    $authsenabled = explode(',', $CFG->auth);
+}
+
+if (!empty($auth) and !exists_auth_plugin($auth)) {
+    print_error('pluginnotinstalled', 'auth', $returnurl, $auth);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// process actions
+
+if (!confirm_sesskey()) {
+    redirect($returnurl);
+}
+
+switch ($action) {
+    case 'disable':
+        // remove from enabled list
+        $key = array_search($auth, $authsenabled);
+        if ($key !== false) {
+            unset($authsenabled[$key]);
+            set_config('auth', implode(',', $authsenabled));
+        }
+
+        if ($auth == $CFG->registerauth) {
+            set_config('registerauth', '');
+        }
+        \core\session\manager::gc(); // Remove stale sessions.
+        core_plugin_manager::reset_caches();
+        break;
+
+    case 'enable':
+        // add to enabled list
+        if (!in_array($auth, $authsenabled)) {
+            $authsenabled[] = $auth;
+            $authsenabled = array_unique($authsenabled);
+            set_config('auth', implode(',', $authsenabled));
+        }
+        \core\session\manager::gc(); // Remove stale sessions.
+        core_plugin_manager::reset_caches();
+        break;
+
+    case 'down':
+        $key = array_search($auth, $authsenabled);
+        // check auth plugin is valid
+        if ($key === false) {
+            print_error('pluginnotenabled', 'auth', $returnurl, $auth);
+        }
+        // move down the list
+        if ($key < (count($authsenabled) - 1)) {
+            $fsave = $authsenabled[$key];
+            $authsenabled[$key] = $authsenabled[$key + 1];
+            $authsenabled[$key + 1] = $fsave;
+            set_config('auth', implode(',', $authsenabled));
+        }
+        break;
+
+    case 'up':
+        $key = array_search($auth, $authsenabled);
+        // check auth is valid
+        if ($key === false) {
+            print_error('pluginnotenabled', 'auth', $returnurl, $auth);
+        }
+        // move up the list
+        if ($key >= 1) {
+            $fsave = $authsenabled[$key];
+            $authsenabled[$key] = $authsenabled[$key - 1];
+            $authsenabled[$key - 1] = $fsave;
+            set_config('auth', implode(',', $authsenabled));
+        }
+        break;
+
+    default:
+        break;
+}
+
+redirect($returnurl);
+```
+
+
+<p align="center">http://plotted-lms.thm:873/rail/database</p>
+
+<img width="1127" height="290" alt="image" src="https://github.com/user-attachments/assets/dffdf020-2d5f-4509-adf2-c6110f57f034" />
+
+
+
+<p align="center">http://plotted-lms.thm:873/rail/admin/login.php</p>
+
+<img width="1125" height="678" alt="image" src="https://github.com/user-attachments/assets/d4bf9cce-d198-41f2-9280-e8a21cf8bb96" />
+
+download database
+
+<img width="1122" height="141" alt="image" src="https://github.com/user-attachments/assets/d600d457-5d85-4506-bf76-ffc253a0da98" />
+
+Open database
+
+
+pass123456
+
+<img width="1127" height="173" alt="image" src="https://github.com/user-attachments/assets/1c018e59-057a-4a7d-af4e-1bec33f2709b" />
+
+200 OK
+
+<img width="1020" height="339" alt="image" src="https://github.com/user-attachments/assets/efc2142b-3408-402f-8698-aadc47e92836" />
+
+
+```bash
+:~/Plotted-LMS# curl -s http://plotted-lms.thm:873/rail/admin/login.php?action=insert&username=lala&password=123456 | html2text -utf8
+...
+     <!-- jQuery -->
+    <script src="http://plotted-lms.thm:873/rail/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="http://plotted-lms.thm:873/rail/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="http://plotted-lms.thm:873/rail/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="http://plotted-lms.thm:873/rail/plugins/toastr/toastr.min.js"></script>
+    <script>
+...
+[2]   Done                    curl -s http://plotted-lms.thm:873/rail/admin/login.php?action=insert
+[3]-  Done                    username=lala
+```
+
+
+
+</html>[2]   Done                    curl http://plotted-lms.thm:873/rail/admin/login.php?action=insert
+[3]-  Done                    username=lili
+
+
 <h4 align="center">80</h4>
 
 <img width="1057" height="325" alt="image" src="https://github.com/user-attachments/assets/2c5099c7-030a-42b3-9f11-fb38ea939005" />
@@ -68,49 +512,6 @@ PORT     STATE SERVICE VERSION
 <img width="1061" height="296" alt="image" src="https://github.com/user-attachments/assets/db816776-1950-4ede-807f-34b0c42e8de7" />
 
 
-```bash
-:~/PlottedLMS# dirb http://plottedlms.thm
-
------------------
-DIRB v2.22    
-By The Dark Raver
------------------
-
-START_TIME: Wed Sep 17 xx:xx:xx 2025
-URL_BASE: http://plottedlms.thm/
-WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
-
------------------
-
-GENERATED WORDS: 4612                                                          
-
----- Scanning URL: http://plottedlms.thm/ ----
-+ http://plottedlms.thm/index.html (CODE:200|SIZE:10918)                                                                                                          
-+ http://plottedlms.thm/server-status (CODE:403|SIZE:104)                                                                                                         
-                                                                                                                                                                  
------------------
-END_TIME: Wed Sep 17 21:22:45 2025
-DOWNLOADED: 4612 - FOUND: 2
-```
-
-<h4 align="center">80</h4>
-
-```bash
-:~/PlottedLMS# gobuster dir -u http://plottedlms.thm/ -w /usr/share/dirb/wordlists/common.txt -t 60 -q -e -k
-...
-http://plottedlms.thm/index.html           (Status: 200) [Size: 10918]
-...
-```
-
-<h4 align="center">873</h4>
-
-```bash
-:~/PlottedLMS# gobuster dir -u http://plottedlms.thm:873/ -w /usr/share/dirb/wordlists/common.txt -t 60 -q -e -k
-...
-http://plottedlms.thm:873/index.html           (Status: 200) [Size: 10701]
-http://plottedlms.thm:873/rail                 (Status: 301) [Size: 320] [--> http://plottedlms.thm:873/rail/]
-...
-```
 
 ```bash
 :~/PlottedLMS# gobuster dir -u http://plottedlms.thm:873/rail/ -w /usr/share/dirb/wordlists/common.txt -t 60 -q -e -k
@@ -153,31 +554,8 @@ http://plottedlms.thm:873/rail/admin/reservations         (Status: 301) [Size: 3
 http://plottedlms.thm:873/rail/admin/user                 (Status: 301) [Size: 331] [--> http://plottedlms.thm:873/rail/admin/user/]
 ```
 
-<h4 align="center">8820</h4>
 
-
-:~/PlottedLMS# gobuster dir -u http://plottedlms.thm:8820/ -w /usr/share/dirb/wordlists/common.txt -t 60 -q -e -k -x php,txt,html
-http://plottedlms.thm:8820/.hta.php             (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.hta.txt             (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.hta.html            (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htpasswd.txt        (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htpasswd.php        (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.hta                 (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htaccess.txt        (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/admin                (Status: 200) [Size: 105]
-http://plottedlms.thm:8820/.html                (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htaccess            (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htaccess.php        (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htaccess.html       (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htpasswd            (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/.htpasswd.html       (Status: 403) [Size: 104]
-http://plottedlms.thm:8820/id_rsa               (Status: 200) [Size: 105]
-http://plottedlms.thm:8820/index.html           (Status: 200) [Size: 10918]
-http://plottedlms.thm:8820/index.html           (Status: 200) [Size: 10918]
-http://plottedlms.thm:8820/learn                (Status: 301) [Size: 323] [--> http://plottedlms.thm:8820/learn/]
-http://plottedlms.thm:8820/server-status        (Status: 403) [Size: 104]
-
-
+```bash
 :~/PlottedLMS# gobuster dir -u http://plottedlms.thm:8820/learn/ -w /usr/share/dirb/wordlists/common.txt -t 60 -q -e -k -x php,txt,html
 http://plottedlms.thm:8820/learn/.html                (Status: 403) [Size: 104]
 http://plottedlms.thm:8820/learn/.htaccess.html       (Status: 403) [Size: 104]
@@ -212,11 +590,12 @@ http://plottedlms.thm:8820/learn/reply.php            (Status: 200) [Size: 649]
 http://plottedlms.thm:8820/learn/script.php           (Status: 200) [Size: 4157]
 http://plottedlms.thm:8820/learn/session.php          (Status: 200) [Size: 258]
 http://plottedlms.thm:8820/learn/sitemap.xml          (Status: 200) [Size: 535]
-
+```
 
 
 <h4 align="center">9020</h4>
 
+```bash
 :~/PlottedLMS# gobuster dir -u http://plotted.thm:9020 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt
 ===============================================================
 Gobuster v3.6
@@ -240,43 +619,47 @@ Starting gobuster in directory enumeration mode
 /server-status        (Status: 403) [Size: 104]
 /credentials          (Status: 200) [Size: 105]
 Progress: 654825 / 654828 (100.00%)
-
+```
 
 
 user.txt
 
 <img width="1170" height="161" alt="image" src="https://github.com/user-attachments/assets/fb821c7d-1175-44ae-8678-ef695275cb9d" />
 
-
+```bash
 :~/PlottedLMS# echo 'VHJ5IEhhcmRlciEKCldhaXQgZGlkIHlvdSB0cnkgYWRtaW4vYWRtaW4/CklmIG5vdCwgaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==' | base64 -d
 Try Harder!
 
 Wait did you try admin/admin?
 If not, https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
 
 <h4>secret.txt</h4>
 
 <img width="1177" height="154" alt="image" src="https://github.com/user-attachments/assets/9323a98e-0c93-4168-805c-bc35e9c1a71f" />
 
+```bash
 VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR
 
+```bash
 :~/PlottedLMS# echo 'VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR' |  base64 -d
 Try Harder!
 Anyways here you go :D
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
+```
 
 /credentials
 
 <img width="1171" height="152" alt="image" src="https://github.com/user-attachments/assets/d90ea919-86cb-4008-a29f-8e402c2cc259" />
 
+```bash
 ~/PlottedLMS# echo 'VHJ5IEhhcmRlciEKQW55d2F5cyBoZXJlIHlvdSBnbyA6RApodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNR' | base64 -d
 Try Harder!
 Anyways here you go :D
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
 
-
-
+```bash
 :~/PlottedLMS# gobuster dir -u http://plottedlms.thm:9020/moodle/ -w /usr/share/dirb/wordlists/common.txt -t 60 -q -e -k -x php,txt,html
 http://plottedlms.thm:9020/moodle/.hta.php             (Status: 403) [Size: 104]
 http://plottedlms.thm:9020/moodle/.htpasswd.php        (Status: 403) [Size: 104]
@@ -336,7 +719,7 @@ http://plottedlms.thm:9020/moodle/theme                (Status: 301) [Size: 330]
 http://plottedlms.thm:9020/moodle/user                 (Status: 301) [Size: 329] [--> http://plottedlms.thm:9020/moodle/user/]
 http://plottedlms.thm:9020/moodle/version.php          (Status: 200) [Size: 1634]
 http://plottedlms.thm:9020/moodle/webservice           (Status: 301) [Size: 335] [--> http://plottedlms.thm:9020/moodle/webservice/]
-
+```
 
 
 plottedlms.thm:837/rail
