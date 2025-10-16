@@ -1,12 +1,10 @@
 <h1 align="center">Windows PrivEsc</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/b455aeed-0049-4514-8a44-a93278cb6aad"><br>
-2025, October 14<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>526</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+2025, October 15<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>527</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Practice your Windows Privilege Escalation skills on an intentionally misconfigured Windows VM with multiple ways to get admin/SYSTEM! RDP is available. Credentials: user:password321</em>.<br>
 Access it <a href="https://tryhackme.com/room/windows10privesc">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/9bacec5c-44ca-4799-b190-ffb8d912b160"></p>
-
-<br>
 
 <h1>Summary</h1>
 <p>
@@ -530,7 +528,7 @@ C:\Windows\system32>
 ```
 
 <br>
-<h2>Task 8 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆-- AlwaysInstallElevated<a id='8'></h2>
+<h2>Task 8 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆 - AlwaysInstallElevated<a id='8'></h2>
 
 <p><em>Answer the question below</em></p>
 
@@ -796,7 +794,7 @@ Now, in the "local service" reverse shell you triggered, run the RoguePotato exp
 <code>______</code></p>
 
 <br>
-<h2>Task 17 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - PrintSpooler<a id='17'></h2>
+<h2>Task 17 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - PrintSpoofer<a id='17'></h2>
 <p>Start a listener on Kali. Simulate getting a service account shell by logging into RDP as the admin user, starting an elevated command prompt (right-click -> run as administrator) and using PSExec64.exe to trigger the reverse.exe executable you created with the permissions of the "local service" account:<br>
 
 <code>C:\PrivEsc\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe</code><br>
