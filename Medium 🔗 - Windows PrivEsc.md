@@ -9,6 +9,7 @@ Access it <a href="https://tryhackme.com/room/windows10privesc">here</a>.<br>
 <h1>Summary</h1>
 <p>
 
+- [Deploy the Vulnerable Windows VM](#1)<br>
 - [Generate a Reverse Shell Executable](#2)<br>
 - Service Exploits - [Insecure Service Permissions](#3)<br>
 - Service Exploits - [Unquoted Service Path](#4)<br>
@@ -29,7 +30,7 @@ Access it <a href="https://tryhackme.com/room/windows10privesc">here</a>.<br>
 
 
 <br>
-<h2>Task 1 . Deploy the Vulnerable Windows VM</h2>
+<h2>Task 1 . Deploy the Vulnerable Windows VM<a id='1'></h2>
 <p>This room is aimed at walking you through a variety of Windows Privilege Escalation techniques.<br>
 
 To do this, you must first deploy an intentionally vulnerable Windows VM.<br>
