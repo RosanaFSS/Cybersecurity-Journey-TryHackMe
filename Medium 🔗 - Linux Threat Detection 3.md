@@ -1,10 +1,10 @@
 <h1 align="center">Linux Threat Detection 3</h1>
 <p align="center"><img width="80px" src="https://github.com/user-attachments/assets/252f521c-30a8-456d-9e0f-367c9e42d96c"><br>
-2025, October 15<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>527</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
+2025, October 16<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
+and I’m excited to join you on this adventure, part of my <code>528</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
 <em>Cover the last stages of attacks on Linux and learn how they look in system logs.</em>.<br>
 Access it <a href="https://tryhackme.com/room/linuxthreatdetection3">here</a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/5f68a06d-e228-49fe-9617-73a9175d5551"></p>
+<img width="1200px" src="https://github.com/user-attachments/assets/a7fedf72-3ee4-4ed4-b17f-21532621a945"></p>
 
 <h2 align="center">Task 1 . Introduction</h2>
 <br>
@@ -22,32 +22,79 @@ Access it <a href="https://tryhackme.com/room/linuxthreatdetection3">here</a>.<b
 <p>2.1. Run 127.0.0.1 && whoami in the TryPingMe web app. What output do you see after the ping results?<br>
 <code>svctrypingme</code></p>
 
+<p>
+    
+- launch a web browser<br>
+- navigate to MachineIP:8000</p>
+
+<img width="1308" height="323" alt="image" src="https://github.com/user-attachments/assets/32899111-b8a8-4a29-a258-cdbc937b4d8d" />
+
+<p>
+
+- in the <ins>Enter hostname or IP</ins> field type the command below, and hit ENTER.<br>
+- identify svctrypingme.</p>
+
 ```bash
-127.0.0.1 && ls -lah cat /opt/trypingme/main.py
+127.0.0.1 && whoami
 ```
 
-<img width="909" height="268" alt="image" src="https://github.com/user-attachments/assets/8b1f0c28-e141-4639-8fd1-cf326b4ec9a2" />
+<img width="1309" height="487" alt="image" src="https://github.com/user-attachments/assets/2ecffce2-e833-4caa-87db-8622665367cf" />
 
 <br>
 <br>
 <br>
 <p>2.2. What is the flag returned in the TryPingMe response?<br>
 <code>THM{revshells_practitioner!}</code></p>
+<p>
+
+- in the <ins>Enter hostname or IP</ins> field type thw command below, and hit ENTER.<br>
+- identify /opt/trypingme</p>
 
 ```bash
-127.0.0.1 && ls -lah cat /opt/trypingme/main.py
+127.0.0.1 && pwd
 ```
 
+<img width="1311" height="486" alt="image" src="https://github.com/user-attachments/assets/d72390a5-881c-4b3a-8b7b-57354bf98de8" />
+
+<p>
+
+- in the <ins>Enter hostname or IP</ins> field type thw command below, and hit ENTER.<br>
+- identify .env.local, main.py, and templates</p>
+
+```bash
+127.0.0.1 && ls -lah /opt/trypingme
+```
+
+<img width="1306" height="574" alt="image" src="https://github.com/user-attachments/assets/65c5d968-8913-4311-bd8d-162c4c5b9b6e" />
+
+<p>
+
+- in the <ins>Enter hostname or IP</ins> field type thw command below, and hit ENTER.<br>
+- scroll down.<br>
+- identify the flag.</p>
+
+```bash
+127.0.0.1 && cat /opt/trypingme/main.py
+```
+<img width="926" height="818" alt="image" src="https://github.com/user-attachments/assets/50011343-9964-4e12-bd93-b287c2d602c7" />
+
+<br>
+<br>
+<br>
 <p>2.3. Now look at the exported auditd logs at /home/ubuntu/scenario. Which IP spawned a similar reverse shell via the TryPingMe app?<br>
-<code>xx.xx.xxx.xxx</code></p>
+<code>10.14.105.255</code></p>
+
+<p>
+
+- execute the command below.<br>
 
 ```bash
-root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log | grep proctitle=socat
+root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log -x socat
 ```
 
-```bash
-root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log | grep socat
-```
+<img width="1363" height="440" alt="image" src="https://github.com/user-attachments/assets/f6260fc0-81d7-4fe0-9714-a35f1bb39c4d" />
+
+
 
 <h2 align="center">Task 3 . Privilege Escalation</h2>
 <br>
@@ -57,30 +104,49 @@ root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log | grep socat
 <p>3.1. Which command line was used to look for the "pass" keyword in files?<br>
 <code>grep -iR pass .</code></p>
 
+<p>
+
+- execute the command below.<br>
+
 ```bash
-root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log
+root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log | grep proctitle
 ```
 
-<img width="1286" height="312" alt="image" src="https://github.com/user-attachments/assets/a9d48d88-6c51-4fb4-ad58-67a6620f1d0f" />
+<img width="1374" height="604" alt="image" src="https://github.com/user-attachments/assets/bf6ba211-c409-41b6-9821-2a20c70ddb71" />
 
-
+<br>
+<br>
+<br>
 <p>3.2. Which command line was used to escalate privileges to root?<br>
 <code>su root</code></p>
 
+<p>
+
+- execute the command below.<br>
+
 ```bash
-root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log
+root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log | grep proctitle
 ```
 
-<img width="1255" height="81" alt="image" src="https://github.com/user-attachments/assets/744ded39-102f-45cb-98d0-c7be27a0cffa" />
+<img width="1374" height="604" alt="image" src="https://github.com/user-attachments/assets/644c5171-3c91-44ee-b4a0-4d850e4c4e7d" />
 
+<br>
+<br>
+<br>
 <p>3.3. Looking at the detected .env file, what was the root password?<br>
-<code>**********</code></p>
+<code>nGql1pQkGa</code></p>
+
+<p>
+    
+- navigate to MachineIP:8000<br>
+- in the <ins>Enter hostname or IP</ins> field type the command below, and hit ENTER.</p>
 
 ```bash
 127.0.0.1 && cat /opt/trypingme/.env.local
 ```
 
-<img width="905" height="314" alt="image" src="https://github.com/user-attachments/assets/a57dc430-1e49-4055-8bc9-ceda3f07e903" />
+<img width="1339" height="540" alt="image" src="https://github.com/user-attachments/assets/073f39e8-4f62-4bbc-9015-50d0bf26b5a0" />
+
 
 <br>
 <br>
@@ -91,31 +157,152 @@ root@thm-vm:/home/ubuntu/scenario$ ausearch -i -if audit.log
 <p><em>Answer the questions below</em></p>
     
 <p>4.1. What flag did you get after running the malware persisting as a service?<br>
-<code>_____________________</code></p>
+<code>THM{hidden_penguin!}</code></p>
 
+<p>
+
+- in Task 3 discover changes in <ins>systemd</ins>.<br>
+- execute the command below<br>
+- discover <ins>nano /etc/systemd/system/tux.service</ins></p>
+
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ ausearch -i -f /etc/systemd
+```
+
+<img width="1264" height="376" alt="image" src="https://github.com/user-attachments/assets/13a6e63b-d403-4e31-bee4-952225d7b9bb" />
+
+
+<br>
+<p>
+
+- inspect <ins>tux.service</ins>´s content</p>
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ cat /etc/systemd/system/tux.service
+```
+
+<img width="1343" height="215" alt="image" src="https://github.com/user-attachments/assets/ab36e9fa-89dc-45e6-b5d1-75d78949cbea" />
+
+<br>
+<p>OR</p>
+
+```bash
+127.0.0.1 && cat /etc/systemd/system/tux.service
+```
+
+<p>
+
+- execute <ins>tux.service</ins>´s content.<br>
+- discover <ins>/var/lib/misc/tux</ins>.</p>
+
+<img width="1328" height="614" alt="image" src="https://github.com/user-attachments/assets/69d8aeb7-8d87-4142-995e-1bb637203956" />
+
+<p>
+
+- execute <ins>tux</ins>.<br>
+- uncover the flag.<br>
+
+```bash
+root@thm-vm:/var/lib/misc$ ./tux
+```
+
+<img width="1347" height="258" alt="image" src="https://github.com/user-attachments/assets/d9a51cb1-bdf8-4801-bdea-56f797cd9259" />
+
+<br>
+<br>
+<br>
 <p>4.2. What flag did you get after running the malware persisting as a cron job?<br>
-<code>_____________________</code></p>
+<code>THM{ressurect_on_reboot!}</code></p>
 
+<p>
 
+- execute the command below.<br>
+- identify <ins>/var/spool/cron/</ins>.</p>
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ ausearch -i -x crontab
+```
+
+<img width="1374" height="155" alt="image" src="https://github.com/user-attachments/assets/3867a057-bf53-47c1-aca7-fea200475806" />
+
+<br>
+<p>
+
+- inspect <ins>/var/spool/cron/</ins> path.<br>
+- identify <ins>/var/spool/cron/crontabs/root</ins>.<br>
+- check <ins>root</ins>´s content.<br>
+- discover <ins>/usr/sbin/phoenix</ins>.</p>
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ ls -lah /var/spool/cron
+```
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ ls -lah /var/spool/cron/crontabs/
+```
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ cat /var/spool/cron/crontabs/root
+```
+
+<img width="1365" height="592" alt="image" src="https://github.com/user-attachments/assets/9541c125-1589-465b-97fa-4739aa486927" />
+
+<br>
+<br>
+<br>
+<p>OR</p>
+
+```bash
+root@thm-vm:/home/ubuntu/scenario$ crontab -l
+```
+
+<img width="1368" height="398" alt="image" src="https://github.com/user-attachments/assets/3c6c49ec-2bf8-4fdf-bc0e-5f9149d5d76b" />
+
+<br>
+<p>
+
+- execute <ins>phoenix</ins>.<br>
+- uncover the flag.</p>
+
+<img width="1315" height="215" alt="image" src="https://github.com/user-attachments/assets/02986e0d-654f-4c2c-836d-af8f81489f95" />
+
+<br>
+<br>
+<br>
 <h2 align="center">Task 5 . Account Persistence</h2>
 <br>
 
 <p><em>Answer the questions below</em></p>
     
 <p>5.1. Which user was created and added to the sudo group?<br>
-<code>******</code></p>
+<code>koichi</code></p>
+
+<p>
+
+- execute the command belo</p>
 
 ```bash
-root@thm-vm:/var/log$ cat auth.log | grep add
+ubuntu@thm-vm:/var/log$ grep -iE useradd auth.log
 ```
 
+<img width="1365" height="110" alt="image" src="https://github.com/user-attachments/assets/19b7992c-02c1-4ce6-a341-b093b9cc2e69" />
+
+<br>
 <p>5.2. Which file was changed to allow SSH key persistence?<br>
 <code>******</code></p>
+
+<p>
+
+- execute the command belo</p>
 
 ```bash
 root@thm-vm:/home/ubuntu$ ausearch -i -f  /.ssh/authorized_keys
 ```
 
+<img width="1364" height="383" alt="image" src="https://github.com/user-attachments/assets/f3bae13c-7b7d-427d-8339-bc1e9c2772eb" />
+
+<br>
 <h2 align="center">Task 6 . Targeted Attacks and Recape</h2>
 <br>
 
@@ -124,6 +311,7 @@ root@thm-vm:/home/ubuntu$ ausearch -i -f  /.ssh/authorized_keys
 <p>6.1. Does Linux ransomware exist and impact organizations worldwide? (Yea/Nay)<br>
 <code>Yea</code></p>
 
+<br>
 <p>6.2. Should you learn Linux threats even if working with Windows? (Yea/Nay)<br>
 <code>Yea</code></p>
 
@@ -141,10 +329,9 @@ Many SOC teams skip Linux monitoring, but now you know why it's a dangerous blin
 <br>
 <br>
 <br>
-
-<h1 align="center">In Progress</h1>
-<p align="center"><img width="1200px" src=""><br>
-                  <img width="1200px" src=""></p>
+<h1 align="center">Completed</h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/bb55fec6-0a92-4e92-8858-7b7b3854ac6d"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/eb66568e-1431-4234-b86c-ff97190bd3d9"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
 
@@ -153,7 +340,9 @@ Many SOC teams skip Linux monitoring, but now you know why it's a dangerous blin
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|15      |Medium 🔗 - Linux Threat Detection 3   | 527    |      92ⁿᵈ    |      4ᵗʰ     |      83ʳᵈ    |     2ⁿᵈ    | 131,034  |  1,002    |    79     |
+|16      |Medium 🔗 - Linux Threat Detection 3   | 527    |      90ᵗʰ    |      4ᵗʰ     |      89ᵗʰ    |     2ⁿᵈ    | 131,066  |  1,003    |    79     |
+|15      |Medium 🔗 - Windows PrivEsc, in progress| 527   |      91ˢᵗ    |      4ᵗʰ     |      83ʳᵈ    |     2ⁿᵈ    | 131,050  |  1,002    |    79     |
+|15      |Medium 🔗 - Linux Threat Detection 3, in progress|527| 92ⁿᵈ    |      4ᵗʰ     |      83ʳᵈ    |     2ⁿᵈ    | 131,034  |  1,002    |    79     |
 |14      |Medium 🔗 - Windows PrivEsc, in progress| 526   |      92ⁿᵈ    |      4ᵗʰ     |      85ʰ     |     2ⁿᵈ    | 130,954  |  1,002    |    79     |
 |13      |Hard 🚩 - M4tr1x: Exit Denied          | 525    |      92ⁿᵈ    |      4ᵗʰ     |      76ᵗʰ    |     2ⁿᵈ    | 130,938  |  1,002    |    79     |
 |12      |Easy 🔗 - Atlas                        | 524    |     101ˢᵗ    |      4ᵗʰ     |     251ˢᵗ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
@@ -182,12 +371,11 @@ Many SOC teams skip Linux monitoring, but now you know why it's a dangerous blin
 
 <br>
 
-
-<p align="center">Global All Time:   92ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/889f629c-a423-4c63-a1d9-12aabb03b6f7"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/0c47caa7-a7b2-4f67-9d52-44524e4287e4"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/80632e89-2a79-471c-b603-48d25981076b"><br>
-                  Global monthly:     83ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/711eca7f-16a8-4888-8df8-5d15985459e7"><br>
-                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/a53f9590-55f3-4775-a02f-4a95d658d779"></p>
+<p align="center">Global All Time:   90ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/25229477-1fdd-465e-a7d6-0bac60568dbf"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/1444686f-2d77-48f5-b2e0-dcc30f5422bd"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f3e9d7d3-2e1d-4c8f-85c5-f6d1bf09d2a4"><br>
+                  Global monthly:     89ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c09ebe13-5b20-4df8-87e6-014897a9fb25"><br>
+                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/fb8570de-0caa-43b0-8639-bb199c9b7909"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
