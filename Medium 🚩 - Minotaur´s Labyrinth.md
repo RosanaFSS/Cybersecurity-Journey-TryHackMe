@@ -77,13 +77,13 @@ PORT     STATE SERVICE  VERSION
 3306/tcp open  mysql?
 | fingerprint-strings: 
 |   DNSVersionBindReqTCP, NULL: 
-|_    Host 'ip-10-201-35-134.ec2.internal' is not allowed to connect to this MariaDB server
+|_    Host 'ip-xx-xxx-xx-xxx.ec2.internal' is not allowed to connect to this MariaDB server
 ```
 
 <h3>Nikto</h3>
 
 ```bash
-:~/Minotaur´sLabyrinth# nikto -h TargetIP
+:~/Minotaur´sLabyrinth# nikto -h xx.xxx.xx.xx
 - Nikto v2.1.5
 ---------------------------------------------------------------------------
 + Target IP:          TargetIO
@@ -113,7 +113,235 @@ PORT     STATE SERVICE  VERSION
 + 1 host(s) tested
 ```
 
-<br>
+
+
+```bash
+xx.xxx.xx.xx minotaur.thm
+```
+
+
+
+```bash
+:~/MinotaursLabyrinth# gobuster dir -u http://minotaur.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e -k -q -x html,php,git,js
+...
+http://minotaur.thm/.git                 (Status: 301) [Size: 311] [--> http://minotaur.thm/.git/]
+...
+http://minotaur.thm/index.php            (Status: 200) [Size: 0]
+http://minotaur.thm/login.php            (Status: 200) [Size: 0]
+http://minotaur.thm/login.html           (Status: 200) [Size: 2287]
+http://minotaur.thm/css                  (Status: 301) [Size: 310] [--> http://minotaur.thm/css/]
+http://minotaur.thm/imgs                 (Status: 301) [Size: 311] [--> http://minotaur.thm/imgs/]
+http://minotaur.thm/js                   (Status: 301) [Size: 309] [--> http://minotaur.thm/js/]
+http://minotaur.thm/api                  (Status: 301) [Size: 310] [--> http://minotaur.thm/api/]
+http://minotaur.thm/logout.php           (Status: 302) [Size: 0] [--> login.html]
+http://minotaur.thm/session.php          (Status: 200) [Size: 0]
+http://minotaur.thm/echo.php             (Status: 200) [Size: 0]
+http://minotaur.thm/session2.php         (Status: 500) [Size: 0]
+...
+```
+
+
+
+<img width="1125" height="281" alt="image" src="https://github.com/user-attachments/assets/e87847a1-9082-46fd-b63f-f0cc5bf09e56" />
+
+
+
+
+
+
+
+/.git
+
+<img width="1127" height="504" alt="image" src="https://github.com/user-attachments/assets/4d66b39b-7600-45ae-a4a1-04249c850b29" />
+
+
+/.git/config
+
+```bash
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/spayc/minotaur-box
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+```
+
+/.git/logs/HEAD
+
+```bash
+0000000000000000000000000000000000000000 920cfcd99d95912dfc2e5ff0588de24762168b55 root <root@labyrinth.(none)> 1623779178 +0200	clone: from https://github.com/spayc/minotaur-box
+```
+
+/js
+
+<img width="1086" height="335" alt="image" src="https://github.com/user-attachments/assets/6245013c-ea86-4c57-85be-526acd58d1ba" />
+
+
+/js/init.js
+
+$(document).ready(function () {
+    $("#forgot-password").click(function(){
+        alert("Ye .... Thought it would be this easy? \n                       -_______-")
+    });
+    
+});
+
+
+
+
+/j2/login.js
+
+function pwdgen() {
+    a = ["0", "h", "?", "1", "v", "4", "r", "l", "0", "g"]
+    b = ["m", "w", "7", "j", "1", "e", "8", "l", "r", "a", "2"]
+    c = ["c", "k", "h", "p", "q", "9", "w", "v", "5", "p", "4"]
+}
+//pwd gen for Daedalus a[9]b[10]b[5]c[9]c[9]c[1]a[2]a[5]c[0]c[9]b[8]
+//                             |\____/|
+///                           (\|----|/)
+//                             \ 0  0 /
+//                              |    |
+//                           ___/\../\____
+//                          /     --       \
+
+$(document).ready(function() {
+    $("#forgot-password").click(function() {
+        alert("Ye .... Thought it would be this easy? \n                       -_______-")
+    });
+    $("#submit").click(function() {
+        console.log("TEST")
+
+        var email = $("#email1").val();
+        var password = $("#password1").val();
+
+        if (email == '' || password == '') {
+            alert("Please fill all fields.");
+            return false;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "login.php",
+            data: {
+                email: email,
+                password: password
+
+            },
+            cache: false,
+            success: function(data) {
+                //alert(data);
+                window.location.href = "index.php"
+            },
+            error: function(xhr, status, error) {
+                console.error(xhr);
+            }
+        });
+
+    });
+
+});
+
+
+/js/userlvl.js
+
+
+$(document).ready(function() {
+
+    $("#btn-choose-name").click(function() {
+        var name_input = $("#name-input-field").val()
+        var table_input = $('#theComboBox option:selected').text()
+        table_input = table_input.toLowerCase()
+
+        // alert(table_input);
+        // alert(name_input);
+
+        
+        if(table_input == "people"){
+            // console.log("PEOPLE")
+            $.ajax({
+                url: `api/${table_input}/search`,
+                type: 'POST',
+                dataType: "json",
+                data: { "namePeople": `${name_input}` },
+                success: function(data) {
+                    var list = ''
+                    for (var key in data) {
+                        for (var key1 in data[key]) {
+                            list += '<tr>';
+                            list += '<td>' + data[key][key1].idPeople + '</td>';
+                            list += '<td>' + data[key][key1].namePeople + '</td>'
+                            list += '<td>' + data[key][key1].passwordPeople + '</td>'
+                            list += '</tr>';
+                        }
+                    }
+                    $('#table-search').append(list);
+                },
+                error: function() {
+                    alert("No callback")
+                }
+            });
+        } else if (table_input == "creatures") {
+            // console.log("CREATURES")
+            
+            $.ajax({
+                url: `api/${table_input}/search`,
+                type: 'POST',
+                dataType: "json",
+                data: { "nameCreature": `${name_input}` },
+                success: function(data) {
+                    var list = ''
+                    for (var key in data) {
+                        for (var key1 in data[key]) {
+                            list += '<tr>';
+                            list += '<td>' + data[key][key1].idCreature + '</td>';
+                            list += '<td>' + data[key][key1].nameCreature + '</td>'
+                            list += '<td>' + data[key][key1].passwordCreature + '</td>'
+                            list += '</tr>';
+                        }
+                    }
+                    $('#table-search').append(list);
+                },
+                error: function() {
+                    alert("No Callback")
+                }
+            });
+        }
+    });
+
+
+});
+
+
+/api
+
+
+
+<img width="1132" height="322" alt="image" src="https://github.com/user-attachments/assets/66743437-830e-418c-aba4-5292b4035ba0" />
+
+
+
+/api/creatures/
+
+
+<img width="1136" height="427" alt="image" src="https://github.com/user-attachments/assets/05ecc223-5e07-4d75-9d8f-4793993f0246" />
+
+/api/people/
+
+<img width="1134" height="412" alt="image" src="https://github.com/user-attachments/assets/5c76c459-072d-423c-beab-3860a53506c2" />
+
+
+
+<p>https://github.com/spayc/minotaur-box</p>
+
+
+<img width="1010" height="758" alt="image" src="https://github.com/user-attachments/assets/92e318bc-7dcf-4933-92cf-731e13dc80b0" />
+
+
 
 <h3></h3>
 
@@ -165,6 +393,18 @@ def pwdgen():
 
 pwdgen()
 ```
+
+
+http://[Machine_IP]/logs/post/post_log.log
+
+M!n0taur
+
+aminotauro
+
+
+<img width="1124" height="572" alt="image" src="https://github.com/user-attachments/assets/e6261fa6-29b5-4d5a-99dd-75260ff5ed92" />
+
+
 
 <img width="860" height="104" alt="image" src="https://github.com/user-attachments/assets/7c42f4ba-5bf1-42a1-b564-38357fb9fb83" />
 
@@ -313,21 +553,4 @@ Not to forget, he forgets a lot of stuff, that's why he likes to keep things on 
 
 <br>
 
-<h3>/etc/hosts</h3>
-
-```bash
-TargetIP   soupedecode.thm
-```
-
-<h3>/etc/hosts</h3>
-
-```bash
-TargetIP   soupedecode.thm
-```
-
-<h3>/etc/hosts</h3>
-
-```bash
-TargetIP   soupedecode.thm
-```
 
