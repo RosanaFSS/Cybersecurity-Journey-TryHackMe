@@ -1,4 +1,4 @@
-<h1 align="center">AllSignsPoint2Pwages</h1>
+<h1 align="center">AllSignsPoint2Pwnage</h1>
 <p align="center">2025, October 17  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>529</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>A room that contains a rushed Windows based Digital Sign system. Can you breach it? &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/allsignspoint2pwnage">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/9fea8fab-ae6e-404c-a48c-6849966f5a77"></p>
 
 
