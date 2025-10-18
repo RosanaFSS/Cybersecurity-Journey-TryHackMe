@@ -49,4 +49,5 @@ PORT     STATE    SERVICE
 <br>
 <br>
 
-<p>I opened a ticket because this challenge is "broken".<br>Enumerated many times and just port 22 is open</p>
+<p>Oct, 6 -->I opened a ticket because this challenge is "broken".<br>Enumerated many times and just port 22 is open<br>
+Oct, 18 --> Restarted the challenge and could not proceed due to the same reason.</p>
