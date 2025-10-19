@@ -7,6 +7,13 @@ Some pigs do fly...
 <img width="1890" height="397" alt="image" src="https://github.com/user-attachments/assets/5ac5a419-0ad5-456b-8fe2-85ef3f1b6616" />
 
 
+<br>
+<br>
+<br>
+
+<p>This isn't a step-by-step guide.<br>
+I tackled this challenge over the course of several days, working on it bit by bit and sometimes repeating steps.</p>
+
 
 ```bash
 nmap -sC -sV -Pn -p- -T5 TargetIP
