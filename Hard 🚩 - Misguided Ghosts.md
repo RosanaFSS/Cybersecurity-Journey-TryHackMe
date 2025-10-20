@@ -1,5 +1,5 @@
 <h1 align="center">Misguided Ghosts</h1>
-<p align="center">2025, October 19  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>530</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Collaboration between Jake and Blob! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/misguidedghosts">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/8ff8b201-b9a3-4476-b2fe-ddea27e781de"></p>
+<p align="center">2025, October 19  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>531</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Collaboration between Jake and Blob! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/misguidedghosts">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/8ff8b201-b9a3-4476-b2fe-ddea27e781de"></p>
 
 
 
@@ -877,9 +877,7 @@ zac@misguided_ghosts:~$
 ```
 
 <br>
-<br>
 <p align="center">Enumerate the SMB client.</p>
-
 
 ```bash
 :~/MisguidedGhosts# smbclient -L localhost -p 9001
@@ -893,9 +891,6 @@ Password for [WORKGROUP\root]:
 SMB1 disabled -- no workgroup available
 ```
 
-<br>
-<br>
-<br>
 <br>
 <p align="center">Access the local SMB share.</p>
 
@@ -1033,7 +1028,7 @@ drwxr-xr-x  3 root root     4.0K Aug 18  2020 xss
 
 <br>
 <h1 align="center">Root<a id='14'></a></h1>
-<p align="center">Access the <code>tmux</code>code> socket owned by <strong>root</strong>.</p>
+<p align="center">Access the <code>tmux</code> socket owned by <strong>root</strong>.</p>
 
 ```bash
 hayley@misguided_ghosts:/opt$ tmux -S .details
