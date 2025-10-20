@@ -24,7 +24,7 @@
 - [RCE](#10)<br>
 - [Initial Foothold](#11)<br>
 - [Shell as Zac](#12)<br>
-- [Shell as Heyley](#13)<br>
+- [Shell as Hayley](#13)<br>
 - [Root](#14)</p>
 
 
@@ -939,7 +939,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-10-19 xx:xx:
 ```
 
 <br>
-<br>
 <h1 align="center">Shell as Hayley<a id='13'></a></h1>
 
 ```bash
@@ -1046,14 +1045,11 @@ root.txt
 {***************}
 ```
 
-<br>
-
 <img width="1209" height="636" alt="image" src="https://github.com/user-attachments/assets/6c1b6f28-295a-4f66-a3df-ee3b25b9c602" />
 
-<br>
-<br>
-<br>
 
+<br>
+<br>
 <p>1.2. What is the root flag?<br>
 <code>{***************}</code></p>
 
