@@ -971,7 +971,7 @@ SeAssignPrimaryTokenPrivilege             Replace a process level token         
 <br>
 <br>
 <br>
-<h1 align="center">In Progress</h1>
+<h1 align="center">Completed</h1>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b33e6ed9-3d2a-4fa2-8c5b-9fe9997a3240"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/9bd8a72f-36e4-420c-afe1-7be6e9c9a585"></p>
 
