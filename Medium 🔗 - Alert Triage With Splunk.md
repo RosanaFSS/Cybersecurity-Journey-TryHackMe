@@ -1,5 +1,5 @@
 <h1 align="center">Alert Triage With Splunk</h1>
-<p align="center">2025, October 22  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>5343</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Use Splunk to triage alerts and investigate malicious activity efficiently. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/alerttriagewithsplunk">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/b3a5e536-0b6c-42fe-9e26-160733a6ee94"></p>
+<p align="center">2025, October 22  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>534</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Use Splunk to triage alerts and investigate malicious activity efficiently. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/alerttriagewithsplunk">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/b3a5e536-0b6c-42fe-9e26-160733a6ee94"></p>
 
 
 <h1>Task 1 . Introduction</h1>
