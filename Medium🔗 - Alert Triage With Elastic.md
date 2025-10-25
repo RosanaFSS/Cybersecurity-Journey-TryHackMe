@@ -215,6 +215,10 @@ Explore the rooms below to further enhance your Elastic knowledge and test your 
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
+|25      |Medium 🔗 - Alert Triage With Elastic  | 537    |      88ᵗʰ    |      4ᵗʰ     |     106ᵗʰ    |     2ⁿᵈ    | 132,037 |  1,015    |    79     |
+|24      |                                       |  536   |       87ᵗʰ   |      4ᵗʰ     |      89ᵗʰ    |     2ⁿᵈ    | 131,865  |  1,014    |    79     |
+|23      |                                       |  535   |       87ᵗʰ   |      4ᵗʰ     |      89ᵗʰ    |     2ⁿᵈ    | 131,865  |  1,014    |    79     |
+|22      |Medium 🚩 - DX1: Liberty Island        | 534    |      87ᵗʰ    |      4ᵗʰ     |      87ᵗʰ    |     2ⁿᵈ    | 131,925  |  1,014    |    79     |
 |22      |Medium 🔗 - Alert Tryage With Splunk   | 534    |      87ᵗʰ    |      4ᵗʰ     |      89ᵗʰ    |     2ⁿᵈ    | 131,865  |  1,013    |    79     |
 |21      |Easy 🔗 - Cyber Scotland 2021          | 533    |      87ᵗʰ    |      4ᵗʰ     |      87ᵗʰ    |     2ⁿᵈ    | 131,777  |  1,012    |    79     |
 |21      |Medium 🔗 - Windows PrivEsc            | 533    |      87ᵗʰ    |      4ᵗʰ     |      88ᵗʰ    |     2ⁿᵈ    | 131,737  |  1,011    |    79     |
@@ -253,15 +257,19 @@ Explore the rooms below to further enhance your Elastic knowledge and test your 
 
 <br>
 
-<p align="center">Global All Time:   87ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/788e064a-8fc4-4eb8-9bb3-a6259e17ccc5"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/d6637750-e782-44f7-843f-f9ac6305a76d"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e593e65a-bdf5-41f8-a8e3-08963f3beebe"><br>
-                  Global monthly:     89ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a3a46a99-3116-407e-ad8e-71d9dd9b2b79"><br>
-                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/9da6002c-9ea7-4614-bdb9-70aab41c460a"></p>
+
+<img width="1900" height="896" alt="image" src="https://github.com/user-attachments/assets/37302ad1-bfd4-47ac-9d5b-ecbce2cfedf3" />
+
+
+
+
+
+<p align="center">Global All Time:   88ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/deef3423-1e03-4c3d-b207-dd9131493a3d"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/6902930c-876d-4df7-b8dc-6413dfbe6e3f"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/90a66b50-db95-4fad-87de-96ebb0bd7936"><br>
+                  Global monthly:    106ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/37302ad1-bfd4-47ac-9d5b-ecbce2cfedf3"><br>
+                  Brazil monthly:      2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/7656a09a-aeb8-42c8-af56-36740437a44f"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
