@@ -1,5 +1,5 @@
 <h1 align="center">DX1: Liberty Island</h1>
-<p align="center">2025, October 22  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>5343</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Can you help the NSF get a foothold in UNATCO's system? &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/dx1libertyislandplde">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/bc4f9db5-f2b4-45f0-94e6-946a192bf714"></p>
+<p align="center">2025, October 22  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>534</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Can you help the NSF get a foothold in UNATCO's system? &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/dx1libertyislandplde">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/bc4f9db5-f2b4-45f0-94e6-946a192bf714"></p>
 
 <h1>Task 1 . Introduction</h1>
 <p>The NSF are about to raid Liberty Island to capture the shipment of Ambrosia from UNATCO (The United Nations Anti-Terrorist Coalition). As our top hacker, we need you to gain a root foothold on the UNATCO admin network.<br>
