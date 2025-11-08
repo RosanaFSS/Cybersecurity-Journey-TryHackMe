@@ -7,7 +7,7 @@
 
 The internal DeceptiTech network is organized around a traditional on-premises Active Directory domain with approximately 50 active users. The product platform, however, is isolated and hosted entirely in the AWS cloud:</p>
 
-<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/e395fb77-ea8f-41f6-81c2-e5badbb2ebb0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6
+<h6 align="center"><img width="700px" src="https://github.com/user-attachments/assets/34793d11-ee28-43ae-a4b0-c2ed81bbd0c6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Elevating Movement</h3>
 <p>One ordinary morning, DeceptiTech's entire network collapsed. Within minutes, all critical on-premises systems were locked down and encrypted. The IT department hurried to restore backups, while the security team rushed to their SIEM - only to find the backups corrupted and all SIEM data wiped clean.<br>
