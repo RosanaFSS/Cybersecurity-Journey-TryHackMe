@@ -1,0 +1,3 @@
+<h2 align="center">SOC Level 1 . Cyber Defense Framerworks</h2>
+<h1 align="center">MITRE</h1>
+<p align="center">2025, November 8  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Explore the various resources that MITRE has made available to the cyber security community. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/mitre">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/3af28105-9030-49e4-a705-22f1bd728577"></p>
