@@ -258,12 +258,6 @@ Explore the rooms below to further enhance your Elastic knowledge and test your 
 <br>
 
 
-<img width="1900" height="896" alt="image" src="https://github.com/user-attachments/assets/37302ad1-bfd4-47ac-9d5b-ecbce2cfedf3" />
-
-
-
-
-
 <p align="center">Global All Time:   88ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/deef3423-1e03-4c3d-b207-dd9131493a3d"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/6902930c-876d-4df7-b8dc-6413dfbe6e3f"><br><br>
                   Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/90a66b50-db95-4fad-87de-96ebb0bd7936"><br>
