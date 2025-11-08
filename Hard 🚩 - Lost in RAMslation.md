@@ -135,17 +135,18 @@ $ grep -i 'ESTABLISHED' netscan.txt | grep -i '3389'
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|8       ||Hard 🚩 - Lost in RAMslation          |   1    |      88ᵗʰ    |      4ᵗʰ     |     106ᵗʰ    |     2ⁿᵈ    | 132,037 |  1,015    |    79     |
+|8       |Hard 🚩 - Lost in RAMslation          |   1    |      91ˢᵗ    |      4ᵗʰ     |  2,547ᵗʰ   |     25ᵗʰ     |    132,580  |    1,017    |    80     |
 
 </h6></div><br>
 
 <br>
 
-<p align="center">Global All Time:   106ᵗʰ<br><img width="250px"  src="https://github.com/user-attachments/assets/035d4bae-16f3-4da7-b57b-4077e0a63c47"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/5580eea4-6081-4241-80fc-2d4cf18d5856"><br><br>
-                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/2b334c14-f571-4aa5-bd1a-fa0cbc86e36c"><br>
-                  Global monthly:    330ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/17bb71a4-1e52-40b3-a993-bb7df9a3a09a"><br>
-                  Brazil monthly:      5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/206f4848-19c4-435e-a635-b42721bd921b"><br>
+<p align="center">Global All Time:   91ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/ed52f875-467c-4c16-9734-ec80c2de002a"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/56345431-727d-43ac-b475-9a1dbdba56ed"><br><br>
+                  Brazil All Time:     4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/68929751-9171-448c-8486-7f9f01c68bb0"><br>
+                  Global monthly:    2,547ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/390d9ab8-5551-45c7-b8a5-ae764146e5c6"><br>
+                  Brazil monthly:      25ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6e00fbe4-b265-402a-a3b9-6fcaff0ce9f5"></p>
+
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
