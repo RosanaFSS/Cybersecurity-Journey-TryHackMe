@@ -13,6 +13,10 @@ Seasonal CTF´s Completed:  &nbsp; <strong>2</strong></p>
 
 <br>
 <br>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/f8b145c9-25e6-4421-96ba-5add12891a14"></p>
+
+<br>
 <br>
 <br>
 <br>
