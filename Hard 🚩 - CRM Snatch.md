@@ -1,5 +1,5 @@
 <h1 align="center">CRM Snatch</h1>
-<h3 align="center">Honeynet Collapse CTF &nbsp; .  &nbsp; Task 6 &nbsp; .  &nbsp; Initial Access Pot</h3>
+<h3 align="center">Honeynet Collapse CTF &nbsp; .  &nbsp; Task 6</h3>
 <p align="center">2025, November 14  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Investigate the fourth, Disk part of the Honeynet Collapse! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/crmsnatch">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/34fc2809-96bf-46fe-af34-cd9abf49e57f"></p>
 
 
