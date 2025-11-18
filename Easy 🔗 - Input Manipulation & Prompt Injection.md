@@ -1,11 +1,5 @@
-<h1>Input Manipulation & Prompt Injection</h1>
-
-<img width="1906" height="396" alt="image" src="https://github.com/user-attachments/assets/b0bb8c4e-a1bb-4489-b8b5-24cda2ff930b" />
-
-<p>2025, November 14<br>
-https://tryhackme.com/room/inputmanipulationpromptinjection<br>
-Understand the basics of LLM Prompt Injection attacks.</p>
-  
+<h1 align="center">Input Manipulation & Prompt Injection</h1>
+<p align="center">2025, November 14  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Understand the basics of LLM Prompt Injection attacks &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/inputmanipulationpromptinjection">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/b0bb8c4e-a1bb-4489-b8b5-24cda2ff930b"></p>
 
 
 <h2>Task 1 . Introduction</h2>
