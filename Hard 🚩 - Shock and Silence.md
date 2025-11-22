@@ -1,4 +1,4 @@
-<h1 align="center"Shock and Silence</h1>
+<h1 align="center">Shock and Silence</h1>
 <h3 align="center">Honeynet Collapse CTF &nbsp; .  &nbsp; Task 7</h3>
 <p align="center">2025, November 14  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Investigate the fifth, File System part of the Honeynet Collapse! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/shockandsilence">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/365fd061-4cba-47d1-aa39-a60232928dbb"></p>
 
