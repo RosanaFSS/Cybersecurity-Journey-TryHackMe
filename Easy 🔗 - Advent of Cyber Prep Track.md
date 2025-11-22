@@ -414,9 +414,6 @@ Sounds like fun? It is! And you can wait for the fun to begin at this year's <a 
 
 </h6></div><br>
 
-<img width="1892" height="888" alt="image" src="https://github.com/user-attachments/assets/9e4dc37c-a4a8-4690-a896-01211b1de57e" />
-
-
 <p align="center">Global All Time:     94ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/0df5c27c-a7e1-42f7-921f-b695ed2fe507"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/5df185bb-dda3-4b43-849a-e07221bd6ebe"><br><br>
                   Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ba20330e-399f-451c-9996-06ff490150f1"><br><br>
