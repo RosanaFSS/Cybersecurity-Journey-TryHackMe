@@ -228,6 +228,9 @@ azureuser@LinuxVM:~$ curl "http://169.254.169.254/metadata/identity/oauth2/token
 eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ
 ```
 
+<br>
+<br>
+
 ```bash
 azureuser@LinuxVM:~$ sudo snap install powershell --classic
 ```
@@ -249,6 +252,7 @@ PS /home/azureuser>  Install-Module -Name Az -Repository PSGallery -Force
 PS /home/azureuser>  Connect-AzAccount -AccessToken <access_token> -AccountId <client_id>
 ```
 
+<br>
 <p><em>Connect-AzAccount . practice</em></p>
 
 ```bash
@@ -260,7 +264,6 @@ Az-Subs-B2C-1     91716a9a-f8ff-490f-8f3a-f2e6da6e1165
 
 PS /home/azureuser> 
 ```
-
 
 <img width="1185" height="332" alt="image" src="https://github.com/user-attachments/assets/8e881333-e1e2-424a-9fb1-e140cb00f4df" />
 
@@ -341,53 +344,31 @@ Condition          :
 <br>
 
 ```bash
- /home/azureuser> curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+PS /home/azureuser> curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+Hit:1 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+...
 ```
 
 ```bash
- /home/azureuser>az login --identity
+PS /home/azureuser> az login --identity
 ```
 
 ```bash
 PS /home/azureuser> Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-```bash
-PS /home/azureuser> Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzA3ODgsIm5iZiI6MTc2MzkzMDc4OCwiZXhwIjoxNzY0MDE3NDg4LCJhaW8iOiJBV1FBbS84YUFBQUFZNVZsZCtaT1FUZURkOXBPczRBYnJaZU10bUxETVVNZHNMcVp3RGc3OVBPaGViZGhrYllzZmdBYkYrRnc2REtkYkFHWEFzTnVoT1h1azJEZzNycjBMU0pJQVZycFZLWmhmbENtRW9SVTdGMFRicDJJMjJYKzNURzFKN3Q5QlhzUyIsImFwcGlkIjoiZGQ4NzEzYzYtYzliZC00OTEzLTk0YzctNzJkYWE1NjNmZGFhIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiM2JiYmJhYzgtMDJhNC00MmY4LTg0YjctNWIxZTNmYTlkYmI5IiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiIzYmJiYmFjOC0wMmE0LTQyZjgtODRiNy01YjFlM2ZhOWRiYjkiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJyazdiTk1yV2swLXhXX0hueDdUREFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiIzIDkiLCJ4bXNfZnRkIjoiTlB3aFN1R1YtWndfRG5mWlpDbVlvcDRGQTRBT2F1NHVlekVzZGJzc3VVTUJkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiI3IDE2IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjM1MzQ2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.KrIOYge_NPk21jb8BGbm2NISPf4rKQ0Wvk4mXfcz9gVhB4Vc-Vzc2_lVgI7QV5mDBndy_mDWID7fhxaIHUg13Wpy65jxi7KcqPaveXxQFsHgM3QndrvL59aORrcFnoefyIUc2v6v3fF8X6w6xsCHh2EsellEo3d05Tj_9tPkbCAm6R5DszHpO5rC_6fixQMdFahWnZ7RFG1q6nUeseA6cDxoMVBkuRs0rLMvtEE8c2exT5KnBRmmaOtFRqOBQ5aGCgbbOvhVPr6iUhPDRikuDrgtUCpnbXfZmYjB2A18o_6U5l2FgPbfIBNiq98MWBTgsQlzSb4PXCtEyQsBOSwPHA -AccountId dd8713c6-c9bd-4913-94c7-72daa563fdaa
-
-Subscription name Tenant
------------------ ------
-                  91716a9a-f8ff-490f-8f3a-f2e6da6e1165
-```
 
 
 
-Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzA3ODgsIm5iZiI6MTc2MzkzMDc4OCwiZXhwIjoxNzY0MDE3NDg4LCJhaW8iOiJBV1FBbS84YUFBQUFZNVZsZCtaT1FUZURkOXBPczRBYnJaZU10bUxETVVNZHNMcVp3RGc3OVBPaGViZGhrYllzZmdBYkYrRnc2REtkYkFHWEFzTnVoT1h1azJEZzNycjBMU0pJQVZycFZLWmhmbENtRW9SVTdGMFRicDJJMjJYKzNURzFKN3Q5QlhzUyIsImFwcGlkIjoiZGQ4NzEzYzYtYzliZC00OTEzLTk0YzctNzJkYWE1NjNmZGFhIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiM2JiYmJhYzgtMDJhNC00MmY4LTg0YjctNWIxZTNmYTlkYmI5IiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiIzYmJiYmFjOC0wMmE0LTQyZjgtODRiNy01YjFlM2ZhOWRiYjkiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJyazdiTk1yV2swLXhXX0hueDdUREFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiIzIDkiLCJ4bXNfZnRkIjoiTlB3aFN1R1YtWndfRG5mWlpDbVlvcDRGQTRBT2F1NHVlekVzZGJzc3VVTUJkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiI3IDE2IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjM1MzQ2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.KrIOYge_NPk21jb8BGbm2NISPf4rKQ0Wvk4mXfcz9gVhB4Vc-Vzc2_lVgI7QV5mDBndy_mDWID7fhxaIHUg13Wpy65jxi7KcqPaveXxQFsHgM3QndrvL59aORrcFnoefyIUc2v6v3fF8X6w6xsCHh2EsellEo3d05Tj_9tPkbCAm6R5DszHpO5rC_6fixQMdFahWnZ7RFG1q6nUeseA6cDxoMVBkuRs0rLMvtEE8c2exT5KnBRmmaOtFRqOBQ5aGCgbbOvhVPr6iUhPDRikuDrgtUCpnbXfZmYjB2A18o_6U5l2FgPbfIBNiq98MWBTgsQlzSb4PXCtEyQsBOSwPHA -AccountId -AccountId fcfe35ec-a04b-4f48-98a1-5a90d8f7d14f
-```
 
-PS /tmp> Get-AzResource
-
-...
-Name              : akv-11236982
-ResourceGroupName : rg-11236982
-ResourceType      : Microsoft.KeyVault/vaults
-Location          : eastus
-ResourceId        : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11236982/providers/Microsoft.KeyVault/vaults/akv-11236982
-Tags              : 
-
-
-PS /tmp> Get-AzKeyVault -Name akv-11236982 -ResourceGroupName rg-11236982 
-
-<img width="1220" height="444" alt="image" src="https://github.com/user-attachments/assets/e18e17c1-b6c1-4aae-b671-1b42f51bffc8" />
-
-
-
-PS /tmp> Get-AzRoleAssignment  
-
-<img width="1217" height="497" alt="image" src="https://github.com/user-attachments/assets/f440f80b-e35f-4f0f-a921-59f25c2d0b69" />
-
-
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 
 
