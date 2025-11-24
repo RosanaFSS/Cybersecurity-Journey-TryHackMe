@@ -1,6 +1,12 @@
+<h1 align="center">Farewell</h1>
+<p align="center">2025, November 23  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>2</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Use red-teaming techniques to bypass the WAF and obtain admin access to the web application. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/farewell">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/761637ad-7549-461a-80ae-c927f2c84f7b"></p>
 
-<img width="1894" height="394" alt="image" src="https://github.com/user-attachments/assets/761637ad-7549-461a-80ae-c927f2c84f7b" />
+<h2>1 . Farewell</h2>
+<p><em>The farewell server will be decommissioned in less than 24 hours. Everyone is asked to leave one last message, but the admin panel holds all submissions. Can you sneak into the admin area and read every farewell message before the lights go out?</em>
 
+Note: In case you want to start over or restart all services, visit <code>http://MACHINE_IP/status.php</code>.</p>
+
+<p><em>Answer the questions below</em></p>
 
 ```bash
 :~# nmap -sT -p- -T4 xx.xx.xxx.xx
@@ -111,7 +117,6 @@ Task Completed
 :~# curl http://xx.xx.xxx.xx/index.php
 ```
 
-
 <p><em>by Jaxafed</em></p>
 
 ```bash
@@ -165,13 +170,16 @@ if __name__ == "__main__":
 
 <p>
 
-- authenticate : <strong>deliver11</code> : <strong>Tokyo....</strong><br>
-- identify flag 1</p>
+- authenticate : <strong>deliver11</strong> : <strong>Tokyo....</strong><br>
+- identify user´s flag</p>
 
 
 <img width="918" height="622" alt="image" src="https://github.com/user-attachments/assets/d6c9e0d6-959f-49ed-b4cd-e6666552c71b" />
 
 <br>
+<br>
+<p>1.1. <em>What is the flag value after logging in as a normal user?</em><br>
+<code>THM{................}</code></p>
 <br>
 <p>
 
@@ -210,11 +218,15 @@ xx.xx.xxx.xx - - [23/Nov/2025 xx:xx:xx] "GET /?c=PHPSESSID=.....................
 <br>
 <p>
   
-- identify the second flag by navigating to /admin.php?en_log_id=0&action=config</p>
+- identify the admin´s flag by navigating to /admin.php?en_log_id=0&action=config</p>
 
 <img width="945" height="462" alt="image" src="https://github.com/user-attachments/assets/6822dc3f-9556-48e8-8c34-6f23be6d156e" />
 
-
+<br>
+<br>
+<p>1.2. <em>What is the flag value after logging in as admin?</em><br>
+<code>THM{..............}</code></p>
+<br>
 <br>
 <br>
 <h1 align="center">Completed</h1>
@@ -227,7 +239,7 @@ xx.xx.xxx.xx - - [23/Nov/2025 xx:xx:xx] "GET /?c=PHPSESSID=.....................
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|23      |Medium 🚩 - Farewell                   |   2    |      91ˢᵗ    |     3ʳᵈ    |     532ⁿᵈ   |      6ᵗʰ     |    133,762  |    1,032    |    80     |
+|23      |Medium 🚩 - Farewell                   |   2    |      93ʳᵈ    |     3ʳᵈ    |     483ʳᵈ   |      6ᵗʰ     |    133,886  |    1,032    |    80     |
 |23      |Medium 🔗 - WAF: Exploitation Techniques|  2    |      92ⁿᵈ    |     3ʳᵈ    |     516ᵗʰ   |      6ᵗʰ     |    133,826  |    1,031    |    80     |
 |22      |Hard 🚩 - The Last Trial               |   1    |      91ˢᵗ    |     3ʳᵈ    |     532ⁿᵈ   |      6ᵗʰ     |    133,762  |    1,030    |    80     |
 |22      |Medium 🔗 - Data Integrity & Model Poisoning|   1|     94ᵗʰ    |     3ʳᵈ    |     762ⁿᵈ   |      7ᵗʰ     |    133,492  |    1,029    |    80     |
@@ -248,18 +260,22 @@ xx.xx.xxx.xx - - [23/Nov/2025 xx:xx:xx] "GET /?c=PHPSESSID=.....................
 
 </h6></div><br>
 
-<p align="center">Global All Time:     92ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/0edeb95e-0a6a-4319-a558-0c8cc84f9a53"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/63447458-dcf5-47b0-967f-8ecbcc5ccb31"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/57c27ce2-cad1-4d4a-99ed-60c2730a4d1f"><br><br>
-                  Global monthly:     516ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/84bce336-37b3-41d1-9db6-adf941adfe8d"><br><br>
-                  Brazil monthly:       6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7d9eda94-7ec2-4adf-a217-5c3be82bdb73"></p>
+<p align="center">Global All Time:     93ʳᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/84e78991-866c-4ba8-8a98-6b0593322718"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/93a4d84e-5fd1-4985-9664-c3ccfb8a9133"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/6c6053c8-6515-4098-b79e-800490e7daaf"><br><br>
+                  Global monthly:     483ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/655d5bd8-0706-4e84-8cde-70cca4353d85"><br><br>
+                  Brazil monthly:       6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/aab70d7e-30b3-4707-987f-b1b9d0b71954"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -286,43 +302,57 @@ xx.xx.xxx.xx - - [23/Nov/2025 xx:xx:xx] "GET /?c=PHPSESSID=.....................
 
 <img width="1120" height="386" alt="image" src="https://github.com/user-attachments/assets/bba232f8-83c0-46c5-94b3-5b23d727a757" />
 
-"password_hint":"the year plus a kind send-off"
+<br>
+<br>
+<p>
+
+- <code>admin</code><br>
+- "password_hint":"the year plus a kind send-off"</p>
 
 <img width="759" height="37" alt="image" src="https://github.com/user-attachments/assets/e95c5718-79e3-4724-b9e6-b5ff0ab39278" />
 
-<code>adam</code><br>
-password_hint":"favorite pet + 2"
+<br>
+<br>
+<p>
+
+- <code>adam</code><br>
+- password_hint":"favorite pet + 2"</p>
 
 <img width="1017" height="272" alt="image" src="https://github.com/user-attachments/assets/52326d8f-a8d3-4f09-b4e8-8e154e072dee" />
 
-<code>nora</code><br>
-"password_hint":"lucky number 789"
+<br>
+<br>
+<p>
+
+- <code>nora</code><br>
+- "password_hint":"lucky number 789"</p>
 
 <img width="1017" height="241" alt="image" src="https://github.com/user-attachments/assets/88558de6-5f66-45a6-98c1-ce7c3f13d5eb" />
 
-<code>deliver11</code><br>
-"password_hint":"Capital of Japan followed by 4 digits"
+<br>
+<br>
+<p>
+
+- <code>deliver11</code><br>
+- "password_hint":"Capital of Japan followed by 4 digits"</p>
 
 <img width="1014" height="244" alt="image" src="https://github.com/user-attachments/assets/92db1ef0-d0c4-4520-b0cb-2964c805f943" />
 
-:~# seq -f "Tokyo%04g" 0 9999 > wordlist
+<br>
+<br>
+<p>
 
+- create a wordlist</p>
+
+```bash
+:~# seq -f "Tokyo%04g" 0 9999 > wordlist
+```
+
+```bash
 :~# head -n 5 wordlist
 Tokyo0000
 Tokyo0001
 Tokyo0002
 Tokyo0003
 Tokyo0004
-
-
-
-
-
-
-```bash
-
 ```
-
-
-
-
