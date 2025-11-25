@@ -13,4 +13,3 @@ Day 138<br>
 
 
 ![Captura de tela 2024-09-21 225734](https://github.com/user-attachments/assets/c786fb5c-af03-43af-a4ca-f196315a80d8)
-
