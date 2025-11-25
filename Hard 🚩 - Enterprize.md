@@ -6,6 +6,44 @@
 
 <br>
 <br>
+<br>
+<h1 align="left">Summary</h1>
+<p>
+
+- [Port Scanning](#1)<br>
+- [Web Vulberability Scanning](#2)<br>
+- [Static Host Mapping](#3)<br>  
+- [Web Vulberability Scanning](#3)<br>
+- [Web Interface Inspection](#4)<br>
+- [Subdomain Enumeration](#5)<br>
+- [Static Host Mapping](#6)<br>
+- [Web Interface Inspection](#7)<br>
+- [Directory and File Enumeration](#8)<br>
+- [Web Interface Inspection](#9)<br>
+
+
+- [Web Interface Inspection, Weaponization, Delivery & Execution](#5)<br>
+- [Initial Foothold](#6)<br>
+- [Privilege Escalation & User Flag](#7)<br>
+- [Privilege Escalation & Root Flag](#8)</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 align="center">Port Scanning<a id='1'></h2>
+
+<div align="center"><h6>
+
+| **Port**     | **Service**     |
+|--------------:|:--------------------------|
+| `22`         | OpenSSH 7.6p1 Ubuntu 4ubuntu0.3                      |
+| `80`         | Apache httpd                    |
+| `443 `       | https                      |
+
+</h6></div><br>
+
 
 ```bash
 :~/Enterprize# nmap -p- xx.xx.xx.xx
@@ -16,13 +54,8 @@ PORT    STATE  SERVICE
 443/tcp closed https
 ```
 
-<img width="989" height="247" alt="image" src="https://github.com/user-attachments/assets/c940f171-d1a4-4eb4-9ad7-cb721abde9a6" />
-
-<br>
-<br>
-
 ```bash
-nmap -sC -sV -Pn -p22,80,443 -T4 xx.xx.xx.xx
+:~/Enterprize# nmap -sC -sV -Pn -p22,80,443 -T4 xx.xx.xx.xx
 ...
 PORT    STATE  SERVICE VERSION
 22/tcp  open   ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
@@ -34,16 +67,266 @@ PORT    STATE  SERVICE VERSION
 443/tcp closed https
 ```
 
-<img width="1072" height="338" alt="image" src="https://github.com/user-attachments/assets/62177242-2dd6-49c8-972a-52cfd210db5a" />
+```bash
+:~/Enterprize#  rustscan -a xx.xx.xx.xx --ulimit 5500 -b 65535 -- -A -Pn
+```
 
 <br>
+<h2 align="center">Web Vulnerability Scanning<a id='2'></h2>
+<p align="center">/icons/README &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /composer.json</p>
+
+```bash
+:~/Enterprize# nikto -h http://
+```
+
 <br>
+<h2 align="center">Static Host Mapping<a id='3'></h2>
 
 ```bash
 xx.xx.xx.xx    enterprize.thm
 ```
 
-<p> Web exntensions:
+<br>
+<h2 align="center">Web Interface Inspection<a id='4'></h2>
+<h3 align="center">enterprize.thm</h3>
+
+
+<h3 align="center">enterprize.thm/<code>composer.json</code></h3>
+
+<br>
+<h2 align="center">Subdomain Enumeration<a id='5'></h2>
+<h3 align="center">maintest</h3>
+
+```bash
+:~/Enterprize# ffuf -u http://enterprize.thm/ -c -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.enterprize.thm' -fs 85
+...
+maintest                [Status: 200, Size: 24555, Words: 1438, Lines: 49]
+```
+
+<br>
+<h2 align="center">Static Host Mapping<a id='6'></h2>
+
+```bash
+xx.xx.xx.xx    enterprize.thm maintest.enterprize.thm
+```
+
+<br>
+<h2 align="center">Web Interface Inspection<a id='7'></h2>
+<h3 align="center">main.enterprize.thm</h3><p align="center">TYPO3 CMS</p>
+
+<img width="1132" height="543" alt="image" src="https://github.com/user-attachments/assets/c6f53c06-8884-4339-8cd5-94471ce748a1" />
+
+<br>
+<h2 align="center">Directory & File Enumeration<a id='8'></h2>
+
+```bash
+:~/EnterPrize/Typo3Scan# ffuf -u http://maintest.enterprize.thm/FUZZ -c -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-small-directories-lowercase.txt -mc all -fs 196 -t 80
+...
+typo3                   [Status: 301, Size: 245, Words: 14, Lines: 8]
+fileadmin               [Status: 301, Size: 249, Words: 14, Lines: 8]
+typo3conf               [Status: 301, Size: 249, Words: 14, Lines: 8]
+typo3temp               [Status: 301, Size: 249, Words: 14, Lines: 8]
+server-status           [Status: 403, Size: 199, Words: 14, Lines: 8]
+                        [Status: 200, Size: 24555, Words: 1438, Lines: 49
+```
+
+<br>
+<h2 align="center">Web Interface Inspection<a id='9'></h2>
+<h3 align="center">maintest.enterprize.thm/<code>typo3</code>/</h3>
+
+<img width="1129" height="500" alt="image" src="https://github.com/user-attachments/assets/d72fb7b7-c69b-4e01-b542-45e8c21d7099" />
+
+
+<br>
+<br>
+<h3 align="center">maintest.enterprize.thm/<code>typo3conf</code>/</h3><p align="center">/LocalConfiguration.old &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /LocalConfiguration.php &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /PackgeStates.php &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /ext/ &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; /l10n/</p>
+
+<img width="1126" height="412" alt="image" src="https://github.com/user-attachments/assets/e55cb545-8c7e-4641-a5f6-0115ea2cd943" />
+
+<br>
+<h3 align="center">maintest.enterprize.thm/<code>typo3conf</code>/<code>LocalConfiguration.old</code></h3>
+<p align="center">installToolPassword &nbsp; : &nbsp; $argon2i$v=19$m=65536,t=16,p=<br>passwordHashing &nbsp; : &nbsp; className &nbsp; : &nbsp; TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash<br>dbname &nbsp; : &nbsp; typo3 &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; driver &nbsp; : &nbsp; mysqli &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; host &nbsp; : &nbsp; 127.0.0.1 &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; password &nbsp; : &nbsp; password1 &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; port &nbsp; : &nbsp; 3306<br>encryptionKey &nbsp; : &nbsp;712dd4d9c583482940b75514e31400c11bdcbc7374c8e62fff958fcd80e8353490b0fdcf4d0ee25b40cf81f523609c0b</p>
+
+
+```bash
+(venv) :~/EnterPrize# cat LocalConfiguration.old
+<?php
+return [
+    'BE' => [
+        'debug' => false,
+        'explicitADmode' => 'explicitAllow',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=', //removed hash for security!!
+        'loginSecurityLevel' => 'normal',
+        'passwordHashing' => [
+            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
+            'options' => [],
+        ],
+    ],
+    'DB' => [
+        'Connections' => [
+            'Default' => [
+                'charset' => 'utf8mb4',
+                'dbname' => 'typo3',
+                'driver' => 'mysqli',
+                'host' => '127.0.0.1',
+                'password' => 'password1', //replaced old password by 24 random chars & symbols
+                'port' => 3306,
+                'tableoptions' => [
+                    'charset' => 'utf8mb4',
+                    'collate' => 'utf8mb4_unicode_ci',
+                ],
+                'user' => 'typo3user',
+            ],
+        ],
+    ],
+    'EXT' => [
+        'extConf' => [
+            'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:0:"";}',
+            'bootstrap_package' => 'a:8:{s:20:"disableCssProcessing";s:1:"0";s:17:"disableFontLoader";s:1:"0";s:24:"disableGoogleFontCaching";s:1:"0";s:27:"disablePageTsBackendLayouts";s:1:"0";s:28:"disablePageTsContentElements";s:1:"0";s:16:"disablePageTsRTE";s:1:"0";s:20:"disablePageTsTCEFORM";s:1:"0";s:20:"disablePageTsTCEMAIN";s:1:"0";}',
+            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'indexed_search' => 'a:20:{s:8:"pdftools";s:9:"/usr/bin/";s:8:"pdf_mode";s:2:"20";s:5:"unzip";s:9:"/usr/bin/";s:6:"catdoc";s:9:"/usr/bin/";s:6:"xlhtml";s:9:"/usr/bin/";s:7:"ppthtml";s:9:"/usr/bin/";s:5:"unrtf";s:9:"/usr/bin/";s:18:"trackIpInStatistic";s:1:"2";s:9:"debugMode";s:1:"0";s:18:"fullTextDataLength";s:1:"0";s:23:"disableFrontendIndexing";s:1:"0";s:21:"enableMetaphoneSearch";s:1:"1";s:6:"minAge";s:2:"24";s:6:"maxAge";s:1:"0";s:16:"maxExternalFiles";s:1:"5";s:26:"useCrawlerForExternalFiles";s:1:"0";s:11:"flagBitMask";s:3:"192";s:16:"ignoreExtensions";s:0:"";s:17:"indexExternalURLs";s:1:"0";s:16:"useMysqlFulltext";s:1:"0";}',
+        ],
+    ],
+       'EXTENSIONS' => [
+        'backend' => [
+            'backendFavicon' => '',
+            'backendLogo' => '',
+            'loginBackgroundImage' => '',
+            'loginFootnote' => '',
+            'loginHighlightColor' => '',
+            'loginLogo' => '',
+        ],
+        'bootstrap_package' => [
+            'disableCssProcessing' => '0',
+            'disableFontLoader' => '0',
+            'disableGoogleFontCaching' => '0',
+            'disablePageTsBackendLayouts' => '0',
+            'disablePageTsContentElements' => '0',
+            'disablePageTsRTE' => '0',
+            'disablePageTsTCEFORM' => '0',
+            'disablePageTsTCEMAIN' => '0',
+        ],
+        'extensionmanager' => [
+            'automaticInstallation' => '1',
+            'offlineMode' => '0',
+        ],
+        'indexed_search' => [
+            'catdoc' => '/usr/bin/',
+            'debugMode' => '0',
+            'disableFrontendIndexing' => '0',
+            'enableMetaphoneSearch' => '1',
+            'flagBitMask' => '192',
+            'fullTextDataLength' => '0',
+            'ignoreExtensions' => '',
+            'indexExternalURLs' => '0',
+            'maxAge' => '0',
+            'maxExternalFiles' => '5',
+            'minAge' => '24',
+            'pdf_mode' => '20',
+            'pdftools' => '/usr/bin/',
+            'ppthtml' => '/usr/bin/',
+            'trackIpInStatistic' => '2',
+            'unrtf' => '/usr/bin/',
+            'unzip' => '/usr/bin/',
+            'useCrawlerForExternalFiles' => '0',
+            'useMysqlFulltext' => '0',
+            'xlhtml' => '/usr/bin/',
+        ],
+    ],
+    'FE' => [
+        'debug' => false,
+        'loginSecurityLevel' => 'normal',
+        'passwordHashing' => [
+            'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
+            'options' => [],
+        ],
+    ],
+    'LOG' => [
+        'TYPO3' => [
+            'CMS' => [
+                'deprecations' => [
+                    'writerConfiguration' => [
+                        5 => [
+                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
+                                'disabled' => true,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+    'MAIL' => [
+        'transport' => 'sendmail',
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
+        'transport_smtp_encrypt' => '',
+        'transport_smtp_password' => '',
+        'transport_smtp_server' => '',
+        'transport_smtp_username' => '',
+    ],
+  'SYS' => [
+        'devIPmask' => '',
+        'displayErrors' => 0,
+        'encryptionKey' => '712dd4d9c583482940b75514e31400c11bdcbc7374c8e62fff958fcd80e8353490b0fdcf4d0ee25b40cf81f523609c0b',
+        'exceptionalErrors' => 4096,
+        'features' => [
+            'newTranslationServer' => true,
+            'unifiedPageTranslationHandling' => true,
+        ],
+        'sitename' => 'EnterPrize',
+        'systemLogLevel' => 2,
+        'systemMaintainers' => [
+            1,
+        ],
+    ],
+];
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+```bash
+git clone https://github.com/whoot/Typo3Scan.git
+```
+
+```
+cd Typo3Scan
+```
+
+python3 -m venv ./venv
+source ./venv/bin/activate
+pip3 install -r requirements.txt
+
+
+
+python3 typo3scan.py -h
+
+
+python3 typo3scan.py -d http://dev01.vm-typo3.loc/ --vuln
+
+pip install -r requirements.txt
+
+python typo3scan.py --help
+
+
+
+<p> Web extensions:
   
 - html<br>
 - phps</p>
