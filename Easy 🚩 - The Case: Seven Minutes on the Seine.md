@@ -1,5 +1,5 @@
 <h1 align="center">The Case: Seven Minutes on the Seine</h1>
-<p align="center">2025, November 26  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>You are the analyst on call after a hi-vis crew struck the Galerie d'Apollon and fled toward the river. Investigate using only open sources. &nbsp;&nbsp;Access it <a href="hhttps://tryhackme.com/room/thecasesevenminutesontheseine">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/e4e8a0a2-e38d-4dfc-a8f8-17271b57d867"></p>
+<p align="center">2025, November 26  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>You are the analyst on call after a hi-vis crew struck the Galerie d'Apollon and fled toward the river. Investigate using only open sources. &nbsp;&nbsp;Access it <a href="hhttps://tryhackme.com/room/thecasesevenminutesontheseine">here</a>.<br><br><img width="1200px" src=""></p>
 
 <h2>Task 1 . Seine Imcident</h2>
 
@@ -13,9 +13,7 @@ Gather and verify information from public sources: museum pages, heritage archiv
 
 Click the <strong>Start Machine</strong> button and access the portal via this link to get started. Note that the machine may take 2-3 minutes to initialise.</p>
 
-<p><em>Answer the questions below</em></p>
-
-
+<p><em>Answer the question below</em></p>
 
 <img width="1180" height="696" alt="image" src="https://github.com/user-attachments/assets/a3467f52-6b60-4c44-8055-2836df67c7b7" />
 
@@ -73,6 +71,11 @@ Click the <strong>Start Machine</strong> button and access the portal via this l
 
 <br>
 <br>
+
+<br>
+<p>1.1. What is the value fo the flag?<br>
+<code>HM{•••••••••••••••••••}</code></p>
+<br>
 <h2>Task 2 . Louvre Protocol</h2>
 <h3>Set up your virtual environment</h3>
 <p>To successfully complete this room, you'll need to set up your virtual environment. This involves starting both your AttackBox (if you're not using your VPN) and Target Machines, ensuring you're equipped with the necessary tools and access to tackle the challenges ahead.</p>
@@ -81,12 +84,12 @@ Click the <strong>Start Machine</strong> button and access the portal via this l
 
 You may refer to online sources to identify the correct credential pair for this lab environment and review the footage from the day of the incident.<br>
 
-Click the Start Machine button and access the portal via this link to get started. Note that the machine may take 2-3 minutes to initialise.</p>
+Click the <strong>Start Machine</strong> button and access the portal via this link to get started. Note that the machine may take 2-3 minutes to initialise.</p>
 
-
+<p><em>Answer the question below</em></p>
 
 <br>
-<p>1.1. What is the value fo the flag?<br>
+<p>2.1. What is the value fo the flag?<br>
 <code>HM{•••••••••••••••••••}</code></p>
 <br>
 
