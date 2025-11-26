@@ -1,8 +1,8 @@
-<h1 align="center">Farewell</h1>
+<h1 align="center">Padelify</h1>
 <p align="center">2025, November 23  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>2</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Use red-teaming techniques to bypass the WAF and obtain admin access to the web application. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/farewell">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/2560eade-3a10-4d5a-bbb5-be7cb4b7dcef"></p>
 
-<h2>1 . Farewell</h2>
-<p><em>The farewell server will be decommissioned in less than 24 hours. Everyone is asked to leave one last message, but the admin panel holds all submissions. Can you sneak into the admin area and read every farewell message before the lights go out?</em>
+<h2>1 . Padelify</h2>
+<p>You’ve signed up for the Padel Championship, but your rival keeps climbing the leaderboard. The admin panel controls match approvals and registrations. Can you crack the admin and rewrite the draw before the whistle?<br>
 
 Note: In case you want to start over or restart all services, visit <code>http://MACHINE_IP/status.php</code>.</p>
 
