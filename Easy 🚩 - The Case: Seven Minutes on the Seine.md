@@ -109,6 +109,8 @@ Click the <strong>Start Machine</strong> button and access the portal via this l
 <br>
 <br>
 
+
+
 <h1 align="center">Completed</h1>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/42a020c2-c28e-4f9d-b0d4-b6e360a13387"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/6e45f11c-b8be-4ec4-bc6d-0ab1211f4bf8"></p>
@@ -119,7 +121,7 @@ Click the <strong>Start Machine</strong> button and access the portal via this l
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|26      |Easy 🚩 - The Case: Seven Minutes on the Seine|   1    |      94ᵗʰ    |     3ʳᵈ    |     443ʳᵈ   |      6ᵗʰ     |    134,066  |    1,035    |    81     |
+|26      |Easy 🚩 - The Case: Seven Minutes on the Seine| 1  |   94ᵗʰ    |     3ʳᵈ    |     410ᵗʰ   |      6ᵗʰ     |    134,126  |    1,036    |    81     |
 |26      |Easy 🚩 - BankGPT                      |   1    |      94ᵗʰ    |     3ʳᵈ    |     443ʳᵈ   |      6ᵗʰ     |    134,066  |    1,035    |    81     |
 |26      |Easy 🚩 - HealthGPT                    |   1    |      94ᵗʰ    |     3ʳᵈ    |     470ᵗʰ   |      6ᵗʰ     |    134,021  |    1,034    |    81     |
 |23      |Medium 🚩 - Padelify                   |   2    |      93ʳᵈ    |     3ʳᵈ    |     436ᵗʰ   |      6ᵗʰ     |    133,976  |    1,033    |    80     |
@@ -144,11 +146,11 @@ Click the <strong>Start Machine</strong> button and access the portal via this l
 
 </h6></div><br>
 
-<p align="center">Global All Time:     94ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/624ae2f7-84a0-49f2-9737-804bc0f7a981"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/4c66faad-23d3-4f1b-85e4-189546d584ee"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/4a7264c7-989d-4eac-a641-02a921b64ece"><br><br>
-                  Global monthly:    443ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/735b2ae2-68bd-4677-8c13-2e3a37958df2"><br><br>
-                  Brazil monthly:       6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b88b79a5-7242-474d-9ce3-d220a293be51"></p>
+<p align="center">Global All Time:     94ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/99ff9b88-cbb0-459c-9eaf-c33cc5d11953"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/b5fa2fd5-ed77-400e-bad7-b38a50efc77b"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/71511d02-971a-4189-915b-7978783ab3be"><br><br>
+                  Global monthly:    410ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/dff72527-7b6a-4175-b797-23343495ba59"><br><br>
+                  Brazil monthly:       6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/732b6b1e-3295-47bc-84a5-4d96e7cee015"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
