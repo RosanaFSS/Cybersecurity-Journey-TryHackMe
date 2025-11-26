@@ -11,7 +11,7 @@
 |[LLM Output<br>Handling and<br>Privacy Risks](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20LLM%20Output%20Handling%20and%20Privacy%20Risks.md)       |         |   ✔<br><br><br><br><br>    |         |         |    ✔<br><br><br><br><br>    |         |         |         |         |         |
 |[Data Integrity<br>& Model Poisoning<br><br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Data%20Integrity%20%26%20Model%20Poisoning.md)       |         |         | ✔<br><br><br><br><br>        |✔<br><br><br><br><br>         |         |         |         |         |         |         |
 |Juicy<br>           |         |                    |   |         |         |         |         |         |         |         |
-|BankGPT<br>         |         |                    |   |         |         |         |         |         |         |         |
+|[BankGPT](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20BankGPT.md)<br>         |         |                    |   |         |         |         |         |         |         |         |
 |[HealthGPT](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20HealthGPT.md)<br>       |         |        |   |         |         |         |         |         |         |         |
 |                                                                                                                                                                           |
 |<strong>Defensive AI</strong><br><br>[AI/ML<br>Security<br>Threats<br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20AI-ML%20Security%20Threats.md)<br>[Detecting<br>Adversarial<br>Attacks<br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Detecting%20Adversarial%20Attacks.md)<br>[Defending<br>Adversarial<br>Attacks<br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Medium%20%F0%9F%94%97%20-%20Defending%20Adversarial%20Attacks.md)<br>[AI Forensics<br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Medium%20%F0%9F%94%97%20-%20AI%20Forensics.md)<br>[ContAinment<br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Medium%20%F0%9F%9A%A9%20-%20ContAInment.md)| | | | | | | | | | |
@@ -55,8 +55,8 @@ Note: You'll be interacting with a live LLM behind the scenes. Responses may var
 
 | Date   | Room                                  |Streak   |All Time<br>Global|All Time<br>Brazil|Monthly<br>Global|Monthly<br>Brazil|Points|Rooms<br>Completed|Badges|
 |:------:|:--------------------------------------|--------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-|23      |Easy 🚩 - BankGPT                      |   1    |      94ᵗʰ    |     3ʳᵈ    |     443ʳᵈ   |      6ᵗʰ     |    134,066  |    1,035    |    81     |
-|23      |Easy 🚩 - HealthGPT                    |   1    |      94ᵗʰ    |     3ʳᵈ    |     470ᵗʰ   |      6ᵗʰ     |    134,021  |    1,034    |    81     |
+|26      |Easy 🚩 - BankGPT                      |   1    |      94ᵗʰ    |     3ʳᵈ    |     443ʳᵈ   |      6ᵗʰ     |    134,066  |    1,035    |    81     |
+|26      |Easy 🚩 - HealthGPT                    |   1    |      94ᵗʰ    |     3ʳᵈ    |     470ᵗʰ   |      6ᵗʰ     |    134,021  |    1,034    |    81     |
 |23      |Medium 🚩 - Padelify                   |   2    |      93ʳᵈ    |     3ʳᵈ    |     436ᵗʰ   |      6ᵗʰ     |    133,976  |    1,033    |    80     |
 |23      |Medium 🚩 - Farewell                   |   2    |      93ʳᵈ    |     3ʳᵈ    |     483ʳᵈ   |      6ᵗʰ     |    133,886  |    1,032    |    80     |
 |23      |Medium 🔗 - WAF: Exploitation Techniques|  2    |      92ⁿᵈ    |     3ʳᵈ    |     516ᵗʰ   |      6ᵗʰ     |    133,826  |    1,031    |    80     |
@@ -81,7 +81,7 @@ Note: You'll be interacting with a live LLM behind the scenes. Responses may var
 
 <p align="center">Global All Time:     94ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/624ae2f7-84a0-49f2-9737-804bc0f7a981"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/4c66faad-23d3-4f1b-85e4-189546d584ee"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/3ddb5b70-8810-4935-8cb9-c4d39fda15f"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/4a7264c7-989d-4eac-a641-02a921b64ece"><br><br>
                   Global monthly:    443ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/735b2ae2-68bd-4677-8c13-2e3a37958df2"><br><br>
                   Brazil monthly:       6ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b88b79a5-7242-474d-9ce3-d220a293be51"></p>
 
