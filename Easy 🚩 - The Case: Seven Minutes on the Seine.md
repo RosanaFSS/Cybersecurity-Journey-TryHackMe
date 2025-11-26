@@ -1,5 +1,5 @@
 <h1 align="center">The Case: Seven Minutes on the Seine</h1>
-<p align="center">2025, November 26  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>You are the analyst on call after a hi-vis crew struck the Galerie d'Apollon and fled toward the river. Investigate using only open sources. &nbsp;&nbsp;Access it <a href="hhttps://tryhackme.com/room/thecasesevenminutesontheseine">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/a53fbb0f-b828-49d6-aed2-bc1effd58be4"></p>
+<p align="center">2025, November 26  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>You are the analyst on call after a hi-vis crew struck the Galerie d'Apollon and fled toward the river. Investigate using only open sources. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/thecasesevenminutesontheseine">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/a53fbb0f-b828-49d6-aed2-bc1effd58be4"></p>
 
 <h2>Task 1 . Seine Incident</h2>
 
