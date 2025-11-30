@@ -11,7 +11,7 @@
 |<strong>Attacking LLMs</strong><br><br>[Input Manipulation<br>& Prompt Injection<br><br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Easy%20%F0%9F%94%97%20-%20Input%20Manipulation%20&%20Prompt%20Injection.md)  |   <br><br><br>✔<br><br><br><br><br>     |         |         |         |         |         |   <br><br><br>✔<br><br><br><br><br>    |         |         |         |
 |[LLM Output<br>Handling and<br>Privacy Risks](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20LLM%20Output%20Handling%20and%20Privacy%20Risks.md)       |         |   ✔<br><br><br><br><br>    |         |         |    ✔<br><br><br><br><br>    |         |         |         |         |         |
 |[Data Integrity<br>& Model Poisoning<br><br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Data%20Integrity%20%26%20Model%20Poisoning.md)       |         |         | ✔<br><br><br><br><br>        |✔<br><br><br><br><br>         |         |         |         |         |         |         |
-|[Juicy]<br>           |         |                    |   |         |         |         |         |         |         |         |
+|[Juicy](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%9A%A9%20Juicy.md)<br>           |         |                    |   |         |         |         |         |         |         |         |
 |[BankGPT](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20BankGPT.md)<br>         |         |                    |   |         |         |         |         |         |         |         |
 |[HealthGPT](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20HealthGPT.md)<br>       |         |        |   |         |         |         |         |         |         |         |
 |                                                                                                                                                                           |
@@ -19,7 +19,7 @@
 
 </h6></div>
 
-<h1 align="center">BankGPT</h1>
+<h1 align="center">Juicy</h1>
 
 <h2>Task 1 . Juicy</h2>
 <p>Meet <strong>Juicy</strong>, a lively golden retriever with a habit of wandering from room to room. She's friendly, curious, and absolutely terrible at keeping out of places she shouldn't be. Whenever her owner is on a call, typing away, or talking about something that ought to stay private, Juicy somehow ends up nearby; ears perked up, tail wagging, and absorbing every word.<br>
