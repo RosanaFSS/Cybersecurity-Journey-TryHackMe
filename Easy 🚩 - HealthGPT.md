@@ -10,7 +10,7 @@
 |<strong>Attacking LLMs</strong><br><br>[Input Manipulation<br>& Prompt Injection<br><br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Easy%20%F0%9F%94%97%20-%20Input%20Manipulation%20&%20Prompt%20Injection.md)  |   <br><br><br>✔<br><br><br><br><br>     |         |         |         |         |         |   <br><br><br>✔<br><br><br><br><br>    |         |         |         |
 |[LLM Output<br>Handling and<br>Privacy Risks](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20LLM%20Output%20Handling%20and%20Privacy%20Risks.md)       |         |   ✔<br><br><br><br><br>    |         |         |    ✔<br><br><br><br><br>    |         |         |         |         |         |
 |[Data Integrity<br>& Model Poisoning<br><br>](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Data%20Integrity%20%26%20Model%20Poisoning.md)       |         |         | ✔<br><br><br><br><br>        |✔<br><br><br><br><br>         |         |         |         |         |         |         |
-|Juicy<br>           |         |                    |   |         |         |         |         |         |         |         |
+|[Juicy](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%9A%A9%20Juicy.md)<br>           |         |                    |   |         |         |         |         |         |         |         |
 |[BankGPT](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20BankGPT.md)<br>         |         |                    |   |         |         |         |         |         |         |         |
 |[HealthGPT](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20HealthGPT.md)<br>       |         |        |   |         |         |         |         |         |         |         |
 |                                                                                                                                                                           |
@@ -45,16 +45,15 @@ Note: You'll be interacting with a live LLM behind the scenes. Responses may var
 <p>1.1. <em>What is the flag?<br>
 <code>THM{•••••••••••••••}</code></em></p>
 
-
 <br>
 <br>
 <br>
-<h1 align="center">Completed</h1>
+<h1 align="center">Completed this Challenge</h1>
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d1608983-4406-4d64-8b32-ae34b4656d81"><br>
                   <img width="1200px" src="https://github.com/user-attachments/assets/6304a420-004a-4883-82e8-9201956d18c8"></p>
 
-                  <img width="1903" height="890" alt="image" src="https://github.com/user-attachments/assets/6f34a670-817c-4a23-8d73-ccda52788249" />
-
+<h1 align="center">Earned the <strong>Model Comprise</strong> Badge</strong></h1>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/57eaf48e-a9b8-4e57-bd7e-2b381bd53291"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, November</h1>
 
