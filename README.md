@@ -1,16 +1,16 @@
 <h1 align="center"> TryHackMe</h1>
-<p align="center">Last updated : 2025, November 14<br>
-<img width="250px" src="https://github.com/user-attachments/assets/89735b41-fada-4944-beaf-c3865a6ae200"><br>
+<p align="center">Last updated : 2025, November 30<br>
+<img width="250px" src="https://github.com/user-attachments/assets/2d417cfe-e7c8-4a27-a034-bba798416146"><br>
 Active since <strong>2023</strong>, December.<br><a href="https://tryhackme.com/p/Rosana">View my TryHackMe profile here</a>.<br><br>
-Challenges Completed: &nbsp; <strong>90%</strong> &nbsp; -  &nbsp; <strong>402</strong> / <strong>449</strong><br>
-<img width="700px" src="https://github.com/user-attachments/assets/d3853632-75cc-448f-be70-63acc8f0d448"></p>
+Challenges Completed: &nbsp; <strong>90%</strong> &nbsp; -  &nbsp; <strong>411</strong> / <strong>455</strong><br>
+<img width="1000px" src="https://github.com/user-attachments/assets/e73b557c-1860-490f-bfb9-2887ccea3df2"></p>
 
 <p align="center">Learning Paths Completed: &nbsp; <strong>100%</strong> &nbsp; -  &nbsp; <strong>18</strong> / <strong>18</strong><br>
 Seasonal CTF´s Completed:  &nbsp; <strong>2</strong></p>
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/8ba99cac-bec4-499e-b737-e33b59aeeb3d"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0d3552ca-4e8f-4b47-b76b-f2d84d816b55"></p>
 
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/f8b145c9-25e6-4421-96ba-5add12891a14"></p>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/656875b1-5a58-4b49-80a8-adf118ab5274"></p>
 
 <br>
 <br>
