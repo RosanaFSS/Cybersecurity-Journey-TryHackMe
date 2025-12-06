@@ -1,5 +1,5 @@
-<h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 2 &nbsp;&nbsp; ·  &nbsp;&nbsp; Splunk Basics - Did you SIEM?</h3>
-<p align="center">2025, December 6  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Learn how to ingest and parse custom log data using Splunk. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/splunkforloganalysis-aoc2025-x8fj2k4rqp">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/237d6ff9-bb6f-40d7-9678-599727de9987"></p>
+<h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 3 &nbsp;&nbsp; ·  &nbsp;&nbsp; Splunk Basics - Did you SIEM?</h3>
+<p align="center">2025, December 6  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Learn how to ingest and parse custom log data using Splunk. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/splunkforloganalysis-aoc2025-x8fj2k4rqp">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/f8437e99-b000-40ea-b23b-e9afaf2cae9e"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/237d6ff9-bb6f-40d7-9678-599727de9987"></p>
 
 <h2>Task 1 &nbsp; ·  &nbsp; Introduction</h2>
 
@@ -40,39 +40,39 @@ With McSkidy missing and the network under attack, the TBFC SOC team will utiliz
 <h3>Exploring the Logs</h3>
 <p>In the Splunk instance, the data has been pre-ingested for us to investigate the incident. On the Splunk interface, click on Search & Reporting on the left panel, as shown below:</p>
 
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/6f9aeec7-8e6c-4f37-9a88-5379a25700fd"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
+<p>On the next page, type <code>index=main</code>c in the search bar to show all ingested logs. Note that we will need to select <code>All time</code> as the time frame from the dropdown on the right of the search bar.</p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/f970efd7-ec54-49ad-8811-44e49e31e26d"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<p>On the next page, type index=main in the search bar to show all ingested logs. Note that we will need to select All time as the time frame from the dropdown on the right of the search bar.</p>
+<p>After running the query, we will be presented with two separate datasets that have been pre-ingested into Splunk. We can verify this by clicking on the <code>sourcetype</code> field in the fields list on the left of the page.</p>
 
-
-
-
-<p>After running the query, we will be presented with two separate datasets that have been pre-ingested into Splunk. We can verify this by clicking on the sourcetype field in the fields list on the left of the page.</p>
-
-
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/f036ee92-bece-41fc-94e4-ec21bb4e97e8"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>The two datasets are as follows:<br>
 
-- web_traffic: This data source contains events related to web connections to and from the web server.<br>
-- firewall_logs: This data source contains the firewall logs, showing the traffic allowed or blocked. The local IP assigned to the web server is 10.10.1.15.<br>
+- <code>web_traffic</code>: This data source contains events related to web connections to and from the web server.<br>
+- <code>firewall_logs</code>: This data source contains the firewall logs, showing the traffic allowed or blocked. The local IP assigned to the web server is <code>10.10.1.15</code>.<br>
 
 Let's explore the logs and investigate the attack on our servers to identify the culprit.</p>
 
 <br>
 <h3>Initial Triage</h3>
-<p>Start a basic search across the index using your custom source type web_traffic, using the following query:<br>
+<p>Start a basic search across the index using your custom source type <code>web_traffic</code>, using the following query:<br>
 
-Search query: index=main sourcetype=web_traffic</p>
+<strong>Search query</strong>: <code>index=main sourcetype=web_traffic</code></p>
+
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/82b32ef1-5689-4fc5-a884-a69ded102e30"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Let's break down our result for a better understanding:<br>
 
-- Search query: This query retrieves all events from the main index that were tagged with the custom source type web_traffic. This marks the beginning of the investigation.<br>
-- Time range: The time range is currently set to "All time". In security analysis, this range would be tightened (e.g., to the spike window) after initial data loading.<br>
-- Timeline: This visual histogram shows the distribution of the 17,172 events over time. The graph indicates the successful daily log volume followed by a distinctive traffic spike (a period of high activity, likely the attack window).<br>
-- Selected fields: These are the fields currently chosen to be displayed in the summary column of the event list (host, source, sourcetype). They represent basic metadata about the log file itself.<br>
-- Interesting fields: This pane lists all fields that Splunk has automatically extracted or manually added. Fields prefixed with # (e.g., #date_hour) are automatically generated by Splunk's time commands. The presence of user_agent, path, and client_ip confirms the successful parsing of the web log structure.<br>
-- Event details & field extraction: This section shows the parsed details of a single event with extracted fields like user_agent, path, status, client_ip, and more.<br>
+- <strong>Search query</strong>: This query retrieves all events from the <code>main</code> index that were tagged with the custom source type <code>web_traffic</code>. This marks the beginning of the investigation.<br>
+- <strong>Time range</strong>: The time range is currently set to "All time". In security analysis, this range would be tightened (e.g., to the spike window) after initial data loading.<br>
+- <strong>Timeline</strong>: This visual histogram shows the distribution of the 17,172 events over time. The graph indicates the successful daily log volume followed by a distinctive traffic spike (a period of high activity, likely the attack window).<br>
+- <strong>Selected fields</strong>: These are the fields currently chosen to be displayed in the summary column of the event list (<code>host</code>, <code>source</code>, <code>sourcetype</code>). They represent basic metadata about the log file itself.<br>
+- <strong>Interesting fields</strong>: This pane lists all fields that Splunk has automatically extracted or manually added. Fields prefixed with <code>#</code> (e.g., <code>#date_hour</code>) are automatically generated by Splunk's time commands. The presence of <code>user_agent</code>, <code>path</code>, and <code>client_ip</code> confirms the successful parsing of the web log structure.<br>
+- <strong>Event details & field extraction</strong>: This section shows the parsed details of a single event with extracted fields like <code>user_agent</code>, <code>path</code>, <code>status</code>, <code>client_ip</code>, and more.<br>
 
 Now that we have an understanding of the Splunk layout and how to read the logs in Splunk. Let's continue our analysis of the logs.</p>
 
@@ -80,18 +80,19 @@ Now that we have an understanding of the Splunk layout and how to read the logs 
 <h3>Visualizing the Logs Timeline</h3>
 <p>Let's chart the total event count over time, grouped by day, to determine the number of events captured per day. This will help us in identifying the day that received an abnormal number of logs.<br>
 
-Search query: index=main sourcetype=web_traffic | timechart span=1d count</p>
+<strong>Search query</strong>: <code>index=main sourcetype=web_traffic | timechart span=1d count</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/fdbe0df3-58b3-4efb-a2e6-71f91f09bda0"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
+<p>The above results are now showing the event logs captured per day. This could be interesting, as we can see some days getting a high volume of logs. We can also click on the <code>Visualization</code> tab to examine the graph for better representation, as shown below:</p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/11eaef3b-88ff-468f-bc9e-76ebf6c51e6e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-<p>The above results are now showing the event logs captured per day. This could be interesting, as we can see some days getting a high volume of logs. We can also click on the Visualization tab to examine the graph for better representation, as shown below:</p>
+<p>We can append the <code>reverse</code> function at the end to display the result in descending order, showing the day with the maximum number of events at the beginning.<br>
 
+<strong>Search query</strong>: <code>index=main sourcetype=web_traffic | timechart span=1d count | sort by count | reverse</code></p>
 
-
-<p>We can append the reverse function at the end to display the result in descending order, showing the day with the maximum number of events at the beginning.<br>
-
-Search query: index=main sourcetype=web_traffic | timechart span=1d count | sort by count | reverse </p>
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/3e967d46-e816-4b08-9b62-cde346a836ea"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>There is a clear period of intense activity during which King Malhare launched his main attack phase.</p>
 
@@ -102,8 +103,9 @@ Search query: index=main sourcetype=web_traffic | timechart span=1d count | sort
 <br>
 <h4>User Agent</h4>
 
-<p>Let's click on the user_agent field in the left panel, as shown below. It will show us the details about the user agents captured so far. </p>
+<p>Let's click on the <code>user_agent</code> field in the left panel, as shown below. It will show us the details about the user agents captured so far. </p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/ca4a6d09-80b7-4c75-b14d-3cf6c1a4d50e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 
 <p>Upon closer examination, it becomes clear that, apart from legitimate user agents like Mozilla's variants, we are receiving a large number of suspicious ones, which we will need to investigate further.</p>
@@ -111,13 +113,15 @@ Search query: index=main sourcetype=web_traffic | timechart span=1d count | sort
 <br>
 <h4>client_ip</h4>
 
-<p>The second field we will examine is the client_ip, which contains the IP addresses of the clients accessing the web server. We can immediately see one particular IP address standing out, which we will investigate further.</p>
+<p>The second field we will examine is the <code>client_ip</code>, which contains the IP addresses of the clients accessing the web server. We can immediately see one particular IP address standing out, which we will investigate further.</p>
 
-
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/4622b9a8-9689-4d12-91db-3efefd5d9be8"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <br>
 <h4>path</h4>
 <p>The third field we will examine is path, which contains the URI being requested and accessed by the client IPs. The results shown below clearly indicate some attacks worth investigating.</p>
+
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/36443c63-9400-4113-95e7-539ce16838de"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <br>
 <h3>Filtering out Benign Values</h3>
@@ -127,23 +131,22 @@ Let's exclude common legitimate user agents. The following query will remove leg
 
 <strong>Search query</strong>: <code>index=main sourcetype=web_traffic user_agent!=*Mozilla* user_agent!=*Chrome* user_agent!=*Safari* user_agent!=*Firefox*</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/fa4d5879-4d86-4e36-936c-3e408520814d"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-<p>The output reveals interesting results. By clicking on the client_ip field we can see a single IP address being responsible for all the suspicious user agents. Let's note that down for further investigation and fill in the <REDACTED> portions of the upcoming queries with that IP.</p>
+<p>The output reveals interesting results. By clicking on the <code>client_ip</code> field we can see a single IP address being responsible for all the suspicious user agents. Let's note that down for further investigation and fill in the <code><REDACTED></code> portions of the upcoming queries with that IP.</p>
 
 <br>
-<h3>Narrowing Down Suspucuous IPS</h3>
+<h3>Narrowing Down Suspicious IPS</h3>
 <p>In real-world scenarios, we often encounter various IP addresses constantly attempting to attack our servers. To narrow down on the IP addresses that do not send requests from common desktop or mobile browsers, we can use the following query:.<br>
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic user_agent!=*Mozilla* user_agent!=*Chrome* user_agent!=*Safari* user_agent!=*Firefox* | stats count by client_ip | sort -count | head 5</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/82eed845-f6b7-4fad-a16c-52b97872f579"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-
-<p>The result confirms the top IP used by the Bandit Bunnies. In the search query, the - in the sort -count part will sort the result by count in reverse order, it's the same as using the reverse function. Let's pick this IP address and filter out to see what the footprints of the activities captured.</p>
+<p>The result confirms the top IP used by the Bandit Bunnies. In the search query, the <code>-</code> in the <code>sort -count</code> part will sort the result by count in reverse order, it's the same as using the reverse function. Let's pick this IP address and filter out to see what the footprints of the activities captured.</p>
 
 <h3>Tracing the Attack Chain</h3>
-<p>We will now focus on the selected attacker IP to trace their steps chronologically, confirming the use of multiple tools and payloads. Don’t forget to replace <REDACTED> with the IP we noted down previously.</p>
+<p>We will now focus on the selected attacker IP to trace their steps chronologically, confirming the use of multiple tools and payloads. Don’t forget to replace <code><REDACTED></code> with the IP we noted down previously.</p>
 
 <br>
 <h4>Reconnaissance (Footprinting)</h4>
@@ -151,9 +154,9 @@ Let's exclude common legitimate user agents. The following query will remove leg
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic client_ip="<REDACTED>" AND path IN ("/.env", "/*phpinfo*", "/.git*") | table _time, path, user_agent, statu</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/7def4426-f0e1-4f74-8877-a9d65eed20a6"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-<p>The result confirms the attacker used low-level tools (curl, wget) and was met with 404/403/401 status codes.</p>
+<p>The result confirms the attacker used low-level tools (<code>curl</code>, <code>wget</code>) and was met with <strong>404</strong>/<strong>403</strong>strong>/<strong>401</strong> status codes.</p>
 
 <br>
 <h4>Enumeration (Vulnerability Testing)</h4>
@@ -161,19 +164,16 @@ Let's exclude common legitimate user agents. The following query will remove leg
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic client_ip="<REDACTED>" AND path="*..*" OR path="*redirect*"</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/54d5379b-d471-4557-9577-075f5ca6c53c"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-
-<p>The output shows the resources the attacker is trying to access. Let's update the search query to get the count of the resources requested by the attacker. This search query is filtering on the paths that contain either ../../ or the term redirect in it, as shown below. This is done to look for footprints of path traversal attempts (../../). To, we need to update in the search query to escape the characters like ..\/..\/.<br>
+<p>The output shows the resources the attacker is trying to access. Let's update the search query to get the count of the resources requested by the attacker. This search query is filtering on the paths that contain either <code>../../</code> or the term redirect in it, as shown below. This is done to look for footprints of path traversal attempts (<code>../../</code>). To, we need to update in the search query to escape the characters like <code>..\/..\/</code>.<br>
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic client_ip="<REDACTED>" AND path="*..\/..\/*" OR path="*redirect*" | stats count by path"</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/e14a447d-7f73-40e9-83d1-2bfb1d2b824f"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 
-
-<p>Quite interesting results. Reveals attempts to read system files (../../*), showing the attacker moved beyond simple scanning to active vulnerability testing.</p>
-
-
+<p>Quite interesting results. Reveals attempts to read system files (<code>../../*</code>), showing the attacker moved beyond simple scanning to active vulnerability testing.</p>
 
 <br>
 <h4>SQL Injection Attack</h4>
@@ -181,9 +181,9 @@ Let's exclude common legitimate user agents. The following query will remove leg
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic client_ip="<REDACTED>" AND user_agent IN ("*sqlmap*", "*Havij*") | table _time, path, status</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/a4ea1b0e-7065-46df-8e98-6387de4b6695"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-<p>Above results confirms the use of known SQL injection and specific attack strings like SLEEP(5). A 504 status code often confirms a successful time-based SQL injection attack.</p>
+<p>Above results confirms the use of known SQL injection and specific attack strings like <code>SLEEP(5)</code>. A 504 status code often confirms a successful time-based SQL injection attack.</p>
 
 <br>
 <h3>Exfiltration Attempts</h3>
@@ -191,30 +191,29 @@ Let's exclude common legitimate user agents. The following query will remove leg
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic client_ip="<REDACTED>" AND path IN ("*backup.zip*", "*logs.tar.gz*") | table _time path, user_agent</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/6f51b6ef-aad6-41b8-89a5-c2214d70371e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-<p>The results indicate the attacker was exfiltrating large chunks of compressed log files using tools like curl, zgrab, and more. We can confirm the details about these connections in the firewall logs.</p>
+<p>The results indicate the attacker was exfiltrating large chunks of compressed log files using tools like <code>curl</code>, <code>zgrab</code>, and more. We can confirm the details about these connections in the firewall logs.</p>
 
 <br>
 <h3>Ransomware Staging & RCE</h3>
-<p>Requests for sensitive archives like /logs.tar.gz and /config indicate the attacker is gathering data for double-extortion. In the logs, we identified some requests related to bunnylock and shell.php. Let's use the following query to see what those search queries are about.<br>
+<p>Requests for sensitive archives like <code>/logs.tar.gz</code> and <code>/config</code> indicate the attacker is gathering data for double-extortion. In the logs, we identified some requests related to bunnylock and shell.php. Let's use the following query to see what those search queries are about.<br>
 
 <strong>Search query</strong>: <code>sourcetype=web_traffic client_ip="<REDACTED>" AND path IN ("*bunnylock.bin*", "*shell.php?cmd=*") | table _time, path, user_agent, status</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/9992dcfa-0452-45cd-910e-fcf0692e9388"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-<p>Above results clearly confirm a successful webshell. The attacker has gained full control over the web server and is also able to run commands. This type of attack is called Remote code Execution (RCE). The execution of /shell.php?cmd=./bunnylock.bin indicates a ransomware like program executed on the server. </p>
+<p>Above results clearly confirm a successful webshell. The attacker has gained full control over the web server and is also able to run commands. This type of attack is called Remote code Execution (RCE). The execution of <code>/shell.php?cmd=./bunnylock.bin</code> indicates a ransomware like program executed on the server. </p>
 
 <br>
-<h3>Correlate Outbound C2 COmmunication</h3>
-<p>We pivot the search to the firewall_logs using the Compromised Server IP (10.10.1.5) as the source and the attacker IP as the destination.<br>
+<h3>Correlate Outbound C2 Communication</h3>
+<p>We pivot the search to the <code>firewall_logs</code> using the Compromised Server IP (<code>10.10.1.5</code>) as the source and the attacker IP as the destination.<br>
 
 <strong>Search query</strong>: <code>sourcetype=firewall_logs src_ip="10.10.1.5" AND dest_ip="<REDACTED>" AND action="ALLOWED" | table _time, action, protocol, src_ip, dest_ip, dest_port, reason</code></p>
 
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/ad55da8f-6605-4b8b-8a4f-a188d1110669"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
-
-<p>This query proves the server immediately established an outbound connection to the attacker's C2 IP on the suspicious DEST_PORT. The ACTION=ALLOWED and REASON=C2_CONTACT fields confirm the malware communication channel was active.</p>
-
+<p>This query proves the server immediately established an outbound connection to the attacker's C2 IP on the suspicious <code>DEST_PORT</code>. The <code>ACTION=ALLOWED</code> and <code>REASON=C2_CONTACT</code> fields confirm the malware communication channel was active.</p>
 
 <br>
 <h3>Volume of Data Exfiltrated</h3>
@@ -222,7 +221,7 @@ Let's exclude common legitimate user agents. The following query will remove leg
 
 <strong>Search query</strong>: <code>sourcetype=firewall_logs src_ip="10.10.1.5" AND dest_ip="<REDACTED>" AND action="ALLOWED" | stats sum(bytes_transferred) by src_ip</code></p>
 
-
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/01e0ce84-d287-4a96-9ae9-bc59d694e18e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>The results show a hugh volume of data transferred from the compromised webserver to C2 server.</p>
 
@@ -230,12 +229,12 @@ Let's exclude common legitimate user agents. The following query will remove leg
 <h3>Conclusion</h3>
 <p>
 
-- Identity found: The attacker was identified via the highest volume of malicious web traffic originating from the external IP.<br>
-- Intrusion vector: The attack followed a clear progression in the web logs (sourcetype=web_traffic).<br>
-- Reconnaissance: Probes were initiated via cURL/Wget, looking for configuration files (/.env) and testing path traversal vulnerabilities.<br>
-- Exploitation: The use of SQLmap user agents and specific payloads (SLEEP(5)) confirmed the successful exploitation phase.<br>
-- Payload delivery: The Action on Objective was established by the final successful execution of the command cmd=./bunnylock.bin via the webshell.<br>
-- C2 confirmation: The pivot to the firewall logs (sourcetype=firewall_logs) proved the post-exploitation activity. The internal, compromised server (SRC_IP: 10.10.1.5) established an outbound C2 connection to the attacker's IP.</p>
+- <strong>Identity found</strong>: The attacker was identified via the highest volume of malicious web traffic originating from the external IP.<br>
+- <strong>Intrusion vector</strong>: The attack followed a clear progression in the web logs (<code>sourcetype=web_traffic</code>).<br>
+- <strong>Reconnaissance</strong>: Probes were initiated via cURL/Wget, looking for configuration files (<code>/.env</code>) and testing path traversal vulnerabilities.<br>
+- <strong>Exploitation</strong>: The use of <code>SQLmap</code> user agents and specific payloads (<code>SLEEP(5)</code>) confirmed the successful exploitation phase.<br>
+- <strong>Payload delivery</strong>: The Action on Objective was established by the final successful execution of the command <code>cmd=./bunnylock.bin</code> via the webshell.<br>
+- <strong>C2 confirmation</strong>: The pivot to the firewall logs (<code>sourcetype=firewall_logs</code>) proved the post-exploitation activity. The internal, compromised server (<code>SRC_IP: 10.10.1.5</code>) established an outbound C2 connection to the attacker's IP.</p>
 
 <p><em>Answer the questions below</em></p>
 
@@ -395,16 +394,18 @@ sourcetype=firewall_logs src_ip="10.10.1.5" AND dest_ip="198.51.100.55" AND acti
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|6       |Easy 🔗 - Splunk Basics - Did you SIEM?|  1    |      95ᵗʰ    |     3ʳᵈ    |   44,647ᵗʰ   |      560ᵗʰ     |    134,410  |    1,029    |    81     |
 |6       |Easy 🔗 - Phishing - Merry Clickmas   |   1    |      96ᵗʰ    |     3ʳᵈ    |   55,824ᵗʰ   |      674ᵗʰ     |    134,370  |    1,028    |    81     |
 |6       |Easy 🔗 - Linux CLI - Shells Bells    |   1    |      97ᵗʰ    |     3ʳᵈ    |   53,003ʳᵈ   |      712ⁿᵈ     |    134,354  |    1,027    |    81     |
 
 </h6></div><br>
 
-<p align="center">Global All Time:     96ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/23e3f2b0-560f-4cfb-b7bc-5fa78788710a"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/3c09a013-4d93-4faa-b297-7709b9871025"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/10721f5c-3afb-4c00-8b52-ed3dd9cd2af0"><br><br>
-                  Global monthly:  53,003ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ac55c469-2223-4ddd-b68b-edadb33cb81c"><br><br>
-                  Brazil monthly:     674ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c1ef4a77-50e9-41f4-b8ff-c340bb829d0f"></p>
+
+<p align="center">Global All Time:     95ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/2c9368e2-81ef-4908-8a84-0990ed3c351d"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d9cfc742-7ebf-46fa-9142-5ffdfde5dcee"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/6949e27e-7ac6-4920-bc0f-9d9ee6fec571"><br><br>
+                  Global monthly:  44,647ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/9131f25a-1044-4955-9050-802b43579874"><br><br>
+                  Brazil monthly:     560ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/f192c161-d235-4b16-8f12-1582e3165acd"></p>
 
 
 <h1 align="center">Thanks for coming!</h1>
