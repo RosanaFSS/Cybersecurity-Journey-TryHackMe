@@ -1,7 +1,6 @@
 <h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 5 &nbsp;&nbsp; ·  &nbsp;&nbsp; IDOR - Santa´s Little IDOR</h3>
 <p align="center">2025, December 6  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Learn about IDOR while helping pentest the TrypresentMe website. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/idor-aoc2025-zl6MywQid9">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/9ba40c0b-c005-410a-bfad-fcf2f20b81dd"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/a352ac17-edc0-4da5-b967-796680ab91be"></p>
 
-
 <h2>Task 1 &nbsp; ·  &nbsp; Introduction</h2>
 
 <h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/d327946f-b57b-425a-8eb3-2050bab5e754"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
