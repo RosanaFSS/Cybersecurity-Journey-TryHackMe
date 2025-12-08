@@ -7,7 +7,7 @@
 <h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/1959e343-fc99-4041-a3aa-6703f0d5635b"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <br>
-<p><em>Answer the question below</p>
+<p><em>Answer the question below</em></p>
 
 <p>1.1. <em>I have successfully launched the target machine and the AttackBox.</em></p>
 <code>No answer needed</code></p>
@@ -15,7 +15,7 @@
 <br>
 <h2>Task 2 &nbsp; ·  &nbsp; Discover Network Services</h2>
 <br>
-<p><em>Answer the questions below</p>
+<p><em>Answer the questions below</em></p>
 
 <p>2.1. <em>What evil message do you see on top of the website?</em></p>
 <code>Pwned by HopSec</code></p>
@@ -76,8 +76,6 @@ QUIT
 bye
 ```
 
-3aster_15_th3_n3w_xm45
-
 <p>2.3. <em>What is the second key part found in the TBFC app?</em><br>
 <code>15_th3_</code></p>
 
@@ -117,20 +115,10 @@ PORT   STATE SERVICE
 
 <br>
 <br>
-
-
-
-<img width="1895" height="894" alt="image" src="https://github.com/user-attachments/assets/bbcd761a-3e75-4195-b396-27a0c92bcd9e" />
-
-<img width="1869" height="356" alt="image" src="https://github.com/user-attachments/assets/def500ce-48ff-40fd-bdb6-7b78a7251c7e" />
-
-<img width="937" height="724" alt="image" src="https://github.com/user-attachments/assets/6bcb5f58-a600-4531-a6b8-58b5d91c588d" />
-
-<br>
-<br>
 <h1 align="center">Completed</h1>
-<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/963975de-7ece-4b8d-ba3b-efb89f79e80d"><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/29693b78-24fd-430d-a04f-666c5e2caf56"></p>
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/bbcd761a-3e75-4195-b396-27a0c92bcd9e"><br>
+                  <img width="800px" src="https://github.com/user-attachments/assets/def500ce-48ff-40fd-bdb6-7b78a7251c7e"><br>
+                  <img width="800px" src="https://github.com/user-attachments/assets/6bcb5f58-a600-4531-a6b8-58b5d91c588d"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, December</h1>
 
@@ -138,7 +126,8 @@ PORT   STATE SERVICE
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|6       |Easy 🔗 - React2Shell: CVE-2025-55182 |  2     |      95ᵗʰ    |     3ʳᵈ    |   28,593ʳᵈ   |      326ᵗʰ     |    134,474  |    1,032    |    81     |
+|7       |Easy 🔗 - Network Discovery - Scan-ta Clause.md|2|    95ᵗʰ    |     3ʳᵈ    |   18,575ᵗʰ   |      208ᵗʰ     |    134,522  |    1,033    |    84     |
+|7       |Easy 🔗 - React2Shell: CVE-2025-55182 |  2     |      95ᵗʰ    |     3ʳᵈ    |   28,593ʳᵈ   |      326ᵗʰ     |    134,474  |    1,032    |    81     |
 |6       |Medium 🔗 - IDOR - Santa´s Little IDOR|  1     |      95ᵗʰ    |     3ʳᵈ    |   27,309ᵗʰ   |      328ᵗʰ     |    134,450  |    1,031    |    81     |
 |6       |Easy 🔗 - AI in Security - old sAInt nick|  1  |      95ᵗʰ    |     3ʳᵈ    |   41,626ᵗʰ   |      526ᵗʰ     |    134,426  |    1,030    |    81     |
 |6       |Medium 🔗 - Splunk Basics - Did you SIEM?|  1  |      95ᵗʰ    |     3ʳᵈ    |   44,647ᵗʰ   |      560ᵗʰ     |    134,410  |    1,029    |    81     |
@@ -147,15 +136,14 @@ PORT   STATE SERVICE
 
 </h6></div><br>
 
-<p align="center">Global All Time:     95ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/45c9ee70-2af0-4a50-8e93-0c15b387be7b"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/1e9d789f-c0d3-42db-b12b-2450d58b6228"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/64d04f7a-2eb3-4cf9-84d1-9fadffb31541"><br><br>
-                  Global monthly:  28,593ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/d31a0c18-4009-4a22-b8fd-df3787c660c8"><br><br>
-                  Brazil monthly:     326ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/acfbf035-54b5-4e89-9b91-6ba8d461e939"></p>
 
+<p align="center">Global All Time:     95ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/3936405c-c2ef-40ef-a903-419f43bf2038"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/802d9f65-a78f-4c10-b0ae-809f1e8e542b"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/b904fde5-2d02-4282-b45d-3c4c6aa032a5"><br><br>
+                  Global monthly:  18,575ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/ff9824a2-c87e-43e8-9ca2-17cc8edd4ba0"><br><br>
+                  Brazil monthly:     208ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6fbd23c0-71cd-4a1a-8057-2bf1f990d5bd"></p>
 
-
-
-
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
 
