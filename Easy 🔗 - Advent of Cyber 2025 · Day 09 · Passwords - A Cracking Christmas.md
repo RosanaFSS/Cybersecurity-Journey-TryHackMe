@@ -1,5 +1,5 @@
 <h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 9 &nbsp;&nbsp; ·  &nbsp;&nbsp; Passwords - A Cracking Christmas</h3>
-<p align="center">2025, December 19  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Learn how to crack password-based encrypted files. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/attacks-on-ecrypted-files-aoc2025-asdfghj123">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/012eb2a4-97c8-4d38-b86c-857921a1d963"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/fb90ca90-d95d-4f14-ae5f-1ea6d27cf89e"></p>
+<p align="center">2025, December 19  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in <a href="https://tryhackme.com">TryHackMe</a>.<br>Learn how to crack password-based encrypted files. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/attacks-on-ecrypted-files-aoc2025-asdfghj123">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/012eb2a4-97c8-4d38-b86c-857921a1d963"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/fb90ca90-d95d-4f14-ae5f-1ea6d27cf89e"></p>
 
 <br>
 <br>
@@ -190,12 +190,7 @@ ubuntu@tryhackme:~/Desktop$ john --wordlist=/usr/share/wordlists/rockyou.txt Has
 <br>
 <h1 align="center">Completed</h1>
 
-<img width="1893" height="885" alt="image" src="https://github.com/user-attachments/assets/7b2c983f-39de-4bf2-96d2-2150a3a05b4b" />
-
-
-<p align="center"><img width="800px" src=""><br>
-                  <img width="800px" src=""><br>
-                  <img width="800px" src=""></p>
+<p align="center"><img width="800px" src="https://github.com/user-attachments/assets/7b2c983f-39de-4bf2-96d2-2150a3a05b4b"></p>
 
 
 <h1 align="center">My TryHackMe Journey ・ 2025, December</h1>
@@ -204,7 +199,7 @@ ubuntu@tryhackme:~/Desktop$ john --wordlist=/usr/share/wordlists/rockyou.txt Has
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|10      |Easy 🔗 -  Passwords - A Cracking Christmas      |3 |101ˢᵗ    |     3ʳᵈ    |   29,583ʳᵈ   |      340ᵗʰ     |    134,642  |    1,036    |    84     |
+|19      |Easy 🔗 -  Passwords - A Cracking Christmas      |3 |101ˢᵗ    |     3ʳᵈ    |   29,583ʳᵈ   |      340ᵗʰ     |    134,642  |    1,036    |    84     |
 |18      |Easy 🔗 -  Prompt Injection - Sched-yule conflict|2 |101ˢᵗ    |     3ʳᵈ    |   30,518ᵗʰ   |      353ʳᵈ     |    134,626  |    1,035    |    84     |
 |18      |Medium 🔗 -  Obfuscation - The Egg Shell File  | 2  |101ˢᵗ    |     3ʳᵈ    |   30,967ᵗʰ   |      358ᵗʰ     |    134,618  |    1,034    |    84     |
 |17      |Medium 🔗 - CyberChef - Hoperation Save McSkidy| 1  |101ˢᵗ    |     3ʳᵈ    |   32,378ᵗʰ   |      374ᵗʰ     |    134,602  |    1,033    |    84     |
@@ -219,9 +214,9 @@ ubuntu@tryhackme:~/Desktop$ john --wordlist=/usr/share/wordlists/rockyou.txt Has
 
 </h6></div><br>
 
-<p align="center">Global All Time:    101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/1e66663b-c02b-41bb-9026-e3eae31b8e40"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/fab70f05-1eae-4b11-887d-ac82a69fb7c4"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/f91c7fc5-ff12-4f5f-85bc-e185ad9fe0ad"><br><br>
+<p align="center">Global All Time:    101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/98fadf39-37c1-4da6-83b8-8d45a0d75351"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/6ee263d9-9062-481f-8273-a91b87adf908"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/8a9eb772-fdb5-49d2-9a22-ddb595a9baa5"><br><br>
                   Global monthly:  29,583ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/26ebbd66-2f29-4454-a3cb-620fbd94af04"><br><br>
                   Brazil monthly:     340ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/400a7e95-2abc-4ee9-a0ab-14794610e28a"></p>
 
