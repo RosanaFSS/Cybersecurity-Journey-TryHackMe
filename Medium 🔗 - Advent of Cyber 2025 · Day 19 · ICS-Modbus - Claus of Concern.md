@@ -1,17 +1,9 @@
 <h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 19 &nbsp;&nbsp; ·  &nbsp;&nbsp; ICS/Modbus - Claus for Concern</h3>
 <p align="center">2025, December 19  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in <a href="https://tryhackme.com">TryHackMe</a>.<br>Learn to identify and exploit weaknesses in Industrial Control Systems (ICS) systems. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/ICS-modbus-aoc2025-g3m6n9b1v4">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/863d1e21-3a7e-4053-9505-ecd61fbe2d2c"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/08555dc0-9f0e-4930-8d55-0d35e9765227"></p>
 
-<br>
-<br>
-
-<h2 align="center">Check out my upcoming walkthrough on Medium!</h2>
-
-<br>
-<br>
-
 <h2>Task 1 &nbsp; ·  &nbsp; Introduction</h2>
 
-<img width="1200" height="407" alt="image" src="https://github.com/user-attachments/assets/c8fd2244-15f7-4a66-9fc6-5fc00b1b912e" />
+<h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/c8fd2244-15f7-4a66-9fc6-5fc00b1b912e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>The snow falls heavily over Wareville as chaos erupts at TBFC headquarters. What should be the busiest shipping day of the season has turned into a disaster.<br>
 
@@ -25,7 +17,7 @@ The logistics manager pulls up a delivery manifest. "Look at this", she says, po
 
 Then, on one of the monitoring screens, a message flashes for just a second before disappearing:</p>
 
-<img width="800" height="51" alt="image" src="https://github.com/user-attachments/assets/326044da-c353-4a22-8ada-d82992c5ed3f" />
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/326044da-c353-4a22-8ada-d82992c5ed3f"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Someone has compromised the drone fleet's control systems. The attack is sophisticated, falsifying sensor data, manipulating inventory selection, and erasing all traces. This isn't just a prank - it's a calculated assault on Christmas itself.
 Your mission is clear: investigate the TBFC Drone Delivery System, uncover how King Malhare's Eggsploit team has compromised it, and restore Christmas deliveries before SOC-mas is ruined.
