@@ -231,7 +231,7 @@ She quickly noticed that multiple buyers purchased at the exact moment, slipping
 
 </h6></div><br>
 
-<p align="center">Global All Time:    101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/405a887c-8f25-45f3-b3d4-661a71496d2b"><br>
+<p align="center">Global All Time:    100ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/405a887c-8f25-45f3-b3d4-661a71496d2b"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/4d997946-e9af-4288-a363-ef141e9e66b8"><br><br>
                   Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/26833b34-3f3a-45ab-83eb-a0f8e93793b5"><br><br>
                   Global monthly:  24,717ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/5ad517a7-1a52-41a5-8968-000e0c2f23b8"><br><br>
