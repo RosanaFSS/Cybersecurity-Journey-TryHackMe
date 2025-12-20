@@ -337,7 +337,7 @@ Syslog_CL
 
 </h6></div><br>
 
-<p align="center">Global All Time:    101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/b62e353e-570a-48bf-95ca-655ae3a0ce5e"><br>
+<p align="center">Global All Time:    100ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b62e353e-570a-48bf-95ca-655ae3a0ce5e"><br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/1c8d7efb-302a-4e94-8d81-f96042dd58e9"><br><br>
                   Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/3d3d4af6-df07-41cc-b430-ab88c7f8f213"><br><br>
                   Global monthly:  25,202ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/963a4205-4c0b-4067-a507-333740d0ac99"><br><br>
