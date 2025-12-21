@@ -51,29 +51,82 @@ TBFC’s defenders have decided to split into specialized teams to uncover the a
 <br>
 <h2>Task 2 &nbsp; ·  &nbsp; Investigate the Gifts Delivery Malfunctioning</h2>
 <h3>Windows Registry</h3>
+<p>Your brain stores all the information that you need to function effectively. This includes:<br>
 
+- How should you behave?<br>
+- What would be the first thing you would do after waking up?<br>
+- How would you dress yourself?<br>
+- What are your habits?<br>
+- What happened in the recent past?<br><br>
 
+These are just a few things. Your brain knows pretty much everything about you. It's just like a database storing the human configuration.<br>
 
+Windows OS is not a human, but it also needs a brain to store all its configurations. This brain is known as the Windows Registry. The registry contains all the information that the Windows OS needs for its functioning.<br>
 
+Now, this Windows brain (Registry) is not stored in one single place, unlike a human brain, which is situated in one single place inside the head. It is made up of several separate files, each storing information on different configuration settings. These files are known as <strong>Hives</strong>.</p>
 
+<h6 align="center"><img width="280px" src="https://github.com/user-attachments/assets/bdb738b8-0cf0-4575-a853-ab7594034f56"><br><br>This image and all the theoretical content of<br> the present article is TryHackMe´s property.</h6>
 
+<p>Let's take a look at all these hives in the table below. The first column contains the hive names, the second column contains the type of configuration settings that each hive stores, and the third column contains the location of each hive on the disk. </p>
 
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/6d1a7452-cd3a-4e50-b633-3f742dd348de"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<p><strong>Note</strong>: The configuration settings stored in each hive listed above are just a few examples. Each hive stores more than these.<br>
+
+Now that you understand where these Registry Hives are stored, you may be tempted to double-click and open these files from their respective locations to view the data they contain. But here's the twist. These Registry Hives contain binary data that cannot be opened directly from the file. So, double-clicking them would only display things you won't ever understand. Then how can we possibly view the registry data?<br>
+
+The Windows OS has a built-in tool known as the <strong>Registry Editor</strong>, which allows you to view all the registry data available in these hives. You can go ahead and open this tool by simply typing Registry Editor in your search bar.</p>
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/03689710-61b2-4c53-bb07-bc7e6a33fa25"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<p>As you can see in the Registry Editor screenshot above, there are some folders named <code>HKEY_LOCAL_MACHINE</code>, <code>HKEY_CURRENT_USER</code>, and more. But didn't we expect <code>SYSTEM</code>, <code>SECURITY</code>, <code>SOFTWARE</code>, etc., to be seen so we can view their data? Don't worry, Windows organizes all the Registry Hives into these structured Root Keys. Instead of seeing the Registry Hives, you would always get these registry root keys whenever you open the registry. Now, which registry key contains which registry hive's data? To answer this question, we have a table below that maps the registry keys with their respective Registry Hives.</p>
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/61c1a826-b121-4891-80e2-a601c4447712"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<p>In the table above, you can see that most of the Registry Hives are located under the <code>HKEY_LOCAL_MACHINE (HKLM)</code> key. We can verify this by clicking on the little toggle arrow at the on the left side of the <code>HKLM</code> key in the Registry Editor, as shown in the screenshot below:</p>
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/997f459f-a159-49cf-8888-d344f00a9a30"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
+<p>As you can see, the <code>SYSTEM</code>, <code>SOFTWARE</code>, <code>SECURITY</code>, and <code>SAM</code> hives are under the <code>HKLM</code> key. <code>NTUSER.DAT</code> and <code>USRCLASS.DAT</code> are located under <code>HKEY_USERS (HKU)</code> and <code>HKEY_CURRENT_USER (HKCU)</code>.<br>
+
+<strong>Note</strong>: The other two keys (<code>HKEY_CLASSES_ROOT (HKCR)</code> <code>and HKEY_CURRENT_CONFIG (HKCC)</code>) are not part of any separate hive files. They are dynamically populated when Windows is running.<br>
+
+So far, we have learned what the registry is, where it is located (in separate Registry Hives), and how to view the registry through the Registry Editor, which displays the registry keys backed by these Registry Hives.<br>
+
+Now, let's see how we can actually extract information from the registry. Think of it like navigating to different files in the file explorer. If you know the path where the file is stored, you can go directly to that location to find the file. Let's take a look at a few examples:</p>
 
 <h3>Example 1: View Connected USB Devices</h3>
+<p><strong>Note</strong>: The registry key contents explained in this example are not available in the attached VM.<br>
+
+The registry stores information on the USB devices that have been connected to the system. This information is present in the <code>SYSTEM</code> hive. To view it:<br>
+
+- Open the Registry Editor.
+- Navigate to the following path: <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR</code>.
+- Here you will see the USB devices' information (make, model, and device ID).
+- Each device will have the following:<br>A main subkey that is the identification of the type and manufacturer of the USB device.<br>A subkey under the above (for example) that represents the unique devices under this model.</p>
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/b40b21f7-8729-47be-8bc5-71a31e00793b"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
+
 
 <h3>Example 2: View Programs Run by the User</h3>
+<p>The registry stores information on the programs that the user ran using the Run dialog Win + R. This information is present in the NTUSER.DAT hive. To view it:<br>
 
+- Open the Registry Editor.<br>
+- Navigate to the following path: <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU</code>.<br>
+- Here you will see the list of commands typed by the user in the Run dialog to run applications.</p>
+
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/58fa7427-1d3a-4cfa-b6f8-961429da7761"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <h3>Registry Forensics</h3>
 <p>Since the registry contains a wide range of data about the Windows system, it plays a crucial role in forensic investigations. Registry forensics is the process of extracting and analyzing evidence from the registry. In Windows digital forensic investigations, investigators analyze registry, event logs, file system data, memory data, and other relevant data to construct the whole incident timeline.<vr></vr>
 
 The table below lists some registry keys that are particularly useful during forensic investigations.</p>
 
-
+<h6 align="center"><img width="900px" src="https://github.com/user-attachments/assets/3e8cc951-0fb8-4dd9-a792-6f89a6efdc90"><br><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 <p>Numerous other registry keys can be used for extracting important evidence from a Windows system during an incident investigation. The investigation of these registry keys during forensics cannot be done via the built-in Registry Editor tool. It is because the Registry analysis cannot be done on the system under investigation (due to the chance of modification), so we collect the Registry Hives and open them offline into our forensic workstation. However, the Registry Editor does not allow opening offline hives. The Register editor also displays some of the key values in binary which are not readable.<br>
 
-To solve this problem, there are some tools built for registry forensics. In this task you will use the Registry Explorer tool which is a registry forensics tool. It is open source and can parse the binary data out of the registry, and we can analyze it without the fear of modification.</p>
+To solve this problem, there are some tools built for registry forensics. In this task you will use the  <a href="https://ericzimmerman.github.io/">Registry Explorer</a> tool which is a registry forensics tool. It is open source and can parse the binary data out of the registry, and we can analyze it without the fear of modification.</p>
 
 <h3>Practical</h3>
 <p>In this practical example, we will use the Registry Explorer tool to analyze the Registry Hives from the compromised system, <code>dispatch-srv01</code>. The Registry Hives have been collected and are available in the folder <code></code>C:\Users\Administrator\Desktop\Registry</code> Hives on the machine attached to this task.</p>
