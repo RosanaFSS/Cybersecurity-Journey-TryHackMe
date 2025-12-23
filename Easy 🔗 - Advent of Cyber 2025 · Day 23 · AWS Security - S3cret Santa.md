@@ -1,6 +1,5 @@
 <h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 23 &nbsp;&nbsp; ·  &nbsp;&nbsp; AWS Security - S3cret Santa</h3>
-<p align="center">2025, December 23  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in <a href="https://tryhackme.com">TryHackMe</a>.<br>Learn the basics of AWS enumeration. &nbsp;&nbsp;Access it <a href="Learn the basics of AWS enumeration.">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/3c8904f1-f33a-45eb-8dcb-062bfe47b7b6"<br><br><img width="1200px" src=""></p>
-
+<p align="center">2025, December 23  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in <a href="https://tryhackme.com">TryHackMe</a>.<br>Learn the basics of AWS enumeration. &nbsp;&nbsp;Access it <a href="Learn the basics of AWS enumeration.">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/3c8904f1-f33a-45eb-8dcb-062bfe47b7b6"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/680dcb83-fded-4595-8a25-74b625ab64fb"></p>
 
 <h2>Task 1 &nbsp; ·  &nbsp; Introduction</h2>
 
@@ -337,7 +336,7 @@ ubuntu@tryhackme:~$ aws iam get-user-policy --policy-name SirCarrotbanePolicy --
 
 <p>Bingo! There's a role named <code>bucketmaster</code>, and it can be assumed by <code>sir.carrotbane</code>. Let's find out what policies are assigned to this role. Just as users, roles can have inline policies and attached policies. To check the inline policies, we can run the following command.<br>
 
-<code>aws iam list-role-policies --role-name bucketmaster</code.<br>
+<code>aws iam list-role-policies --role-name bucketmaster</code><br>
 
 There is one policy assigned to this role. Before checking that policy, let's see if there are any attached policies assigned to the role as well.<br>
 
@@ -540,7 +539,7 @@ ubuntu@tryhackme:~$ aws sts assume-role --role-arn arn:aws:iam::•••••�
         "AccessKeyId": ".......................",
         "SecretAccessKey": "........................................",
         "SessionToken": "...",
-        "Expiration": "2025-12-23T19:32:52.825103+00:00"
+        "Expiration": "2025-12-23..."
     },
     "AssumedRoleUser": {
         "AssumedRoleId": ".....................:scb-bucketmaster",
@@ -556,7 +555,6 @@ ubuntu@tryhackme:~$ export AWS_SECRET_ACCESS_KEY="..............................
 ubuntu@tryhackme:~$ export AWS_SESSION_TOKEN="..."
 ```
 
-<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e0775b1f-ce57-419c-97f7-da53000026b0"><br><br>Rosana´s hands-on</h6>
 <br>
 <br>
 
@@ -587,7 +585,7 @@ ubuntu@tryhackme:~$ aws sts get-caller-identity
 
 There is one interesting bucket in there that references easter. Let's check out the contents of this directory.<br>
 
-<code>aws s3api list-objects --bucket easter-secrets-123145</code.<br>
+<code>aws s3api list-objects --bucket easter-secrets-123145</code><br>
 
 Hmmm, let's copy the file in this directory to our local machine. This might have a secret message.<br>
 
@@ -598,7 +596,7 @@ Hooray! We have successfully infiltrated Sir Carrotbane's S3 bucket and exfiltra
 <p><em>Answer the question below</em></p>
 
 <p>5.1. <em>What are the contents of the cloud_password.txt file?</em><br>
-<code>THM{more_like_sir_cloudbane}</code></p>
+<code>THM{♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥}</code></p>
 
 ```bash
 ubuntu@tryhackme:~$ aws s3api list-buckets
@@ -621,8 +619,9 @@ ubuntu@tryhackme:~$ aws s3api list-buckets
 }
 ```
 
-<img width="1375" height="380" alt="image" src="https://github.com/user-attachments/assets/88dacf1e-d180-494c-85ab-b79686931c1b" />
-
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/88dacf1e-d180-494c-85ab-b79686931c1b"><br><br>Rosana´s hands-on</h6>
+<br>
+<br>
 
 ```bash
 ubuntu@tryhackme:~$ aws s3api list-objects --bucket easter-secrets-......
@@ -656,7 +655,9 @@ ubuntu@tryhackme:~$ aws s3api list-objects --bucket easter-secrets-......
 }
 ```
 
-<img width="1379" height="561" alt="image" src="https://github.com/user-attachments/assets/dd99d4bf-9788-4862-8360-d965aeec3382" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/dd99d4bf-9788-4862-8360-d965aeec3382"><br><br>Rosana´s hands-on</h6>
+<br>
+<br>
 
 
 ```bash
@@ -671,26 +672,24 @@ ubuntu@tryhackme:~$ aws s3api get-object --bucket easter-secrets-...... --key cl
 }
 ```
 
-<img width="1278" height="191" alt="image" src="https://github.com/user-attachments/assets/07998ca5-2c21-40b7-aeeb-11c1bd3280ea" />
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/07998ca5-2c21-40b7-aeeb-11c1bd3280ea"><br><br>Rosana´s hands-on</h6>
+<br>
+<br>
 
 ```bash
 ubuntu@tryhackme:~$ cat cloud_password.txt
 ```
 
-<img width="1382" height="251" alt="image" src="https://github.com/user-attachments/assets/8a930eda-e55b-4a48-aaf9-b7d39629f53a" />
 
-
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/8a930eda-e55b-4a48-aaf9-b7d39629f53a"><br><br>Rosana´s hands-on</h6>
+<br>
 <br>
 <br>
 <h1 align="center">Completed</h1>
 
-<img width="1896" height="268" alt="image" src="https://github.com/user-attachments/assets/c5259494-e872-43e6-a21b-41631edf71fb" />
-
-
-
 <p align="center"><img width="800px" src="https://github.com/user-attachments/assets/74575964-faf7-4ca1-89ab-beafb8d7768c"><br><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/553ba75d-5fa8-4bbd-b9f0-1196a2791601"><br><br>
-                  <img width="800px" src="https://github.com/user-attachments/assets/a7359f80-1d61-4e6d-a453-307349ea7914"></p>
+                  <img width="800px" src="https://github.com/user-attachments/assets/c5259494-e872-43e6-a21b-41631edf71fb"><br><br>
+                  <img width="800px" src="https://github.com/user-attachments/assets/176f26da-7122-4718-9eef-753a41015188"></p>
 
 <h1 align="center">My TryHackMe Journey ・ 2025, December</h1>
 
@@ -698,6 +697,7 @@ ubuntu@tryhackme:~$ cat cloud_password.txt
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|23      |Easy 🔗 - AWS Security - S3cret Santa            |7 |      99ᵗʰ  |     3ʳᵈ    |   16,068ᵗʰ   |      182ⁿᵈ     |    135,008  |    1,045    |    84     |
 |23      |Easy 🔗 - Malware Analysis - Malhare.exe         |7 |      99ᵗʰ  |     3ʳᵈ    |   17,332ⁿᵈ   |      191ˢᵗ     |    134,968  |    1,044    |    84     |
 |20      |Medium 🔗 - Containers - DoorDasher's Demise     |4 |     100ᵗʰ  |     3ʳᵈ    |   18,059ᵗʰ   |      206ᵗʰ     |    134,864  |    1,043    |    84     |
 |20      |Medium 🔗 - Forensics - Registry Furensics       |4 |     100ᵗʰ  |     3ʳᵈ    |   20,497ᵗʰ   |      239ᵗʰ     |    134,832  |    1,042    |    84     |
@@ -721,11 +721,11 @@ ubuntu@tryhackme:~$ cat cloud_password.txt
 
 </h6></div><br>
 
-<p align="center">Global All Time:     99ʰ<br><img width="250px" src="https://github.com/user-attachments/assets/78a184d5-c8f1-4611-a3b1-2238a582ff12"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/216ad3e8-a1e1-4d25-b1cb-af8efcae49c7"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/3d42babf-e792-488e-936f-7edb36bca6c3"><br><br>
-                  Global monthly:  17,332ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/1ec8a0a0-b763-4e73-a027-f9083cc17edf"><br><br>
-                  Brazil monthly:     206ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/0103d1b7-af16-410a-8ff1-f3d482b3bde0"></p>
+<p align="center">Global All Time:     99ʰ<br><img width="250px" src="https://github.com/user-attachments/assets/9408c027-0266-4ff7-b990-e479e63ca866"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/c6645607-795f-47df-9817-038728ef4442"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/b795588c-3b56-4264-b857-bb72e0c30a8a"><br><br>
+                  Global monthly:  16,068ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/a66af69d-080a-4e6e-a742-6f58772f1ef2"><br><br>
+                  Brazil monthly:     182ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/382ed88b-0358-46ec-b546-7b6d952cb3a4"></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
