@@ -1,6 +1,12 @@
 <h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 19 &nbsp;&nbsp; ·  &nbsp;&nbsp; ICS/Modbus - Claus for Concern</h3>
 <p align="center">2025, December 19  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in <a href="https://tryhackme.com">TryHackMe</a>.<br>Learn to identify and exploit weaknesses in Industrial Control Systems (ICS) systems. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/ICS-modbus-aoc2025-g3m6n9b1v4">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/863d1e21-3a7e-4053-9505-ecd61fbe2d2c"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/08555dc0-9f0e-4930-8d55-0d35e9765227"></p>
 
+<br>
+<h2 align="center">Read my complete walkthrough in Medium. Click here ➡️  <a href="https://medium.com/@RosanaFS/ics-modbus-claus-for-concern-advent-of-cyber-2025-day-19-tryhackme-walkthrough-975d151a77a0">Claus for Concern</a></h2><h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 19 &nbsp;&nbsp; ·  &nbsp;&nbsp; ICS/Modbus - Claus for Concern<h3<br>
+
+<br>
+<br>
+<br>
 <h2>Task 1 &nbsp; ·  &nbsp; Introduction</h2>
 
 <h6 align="center"><img width="600px" src="https://github.com/user-attachments/assets/c8fd2244-15f7-4a66-9fc6-5fc00b1b912e"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
