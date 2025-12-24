@@ -2,11 +2,8 @@
 <p align="center">2025, December 18  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in<a href="https://tryhackme.com"> TryHackMe</a>.<br>McSkidy keeps her focus on a particular alert that caught her interest: an email posing as northpole-hr. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/obfuscation-aoc2025-e5r8t2y6u9">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/e19fe801-c3c4-4a8f-9009-b56bcb8cc227"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/103151e3-5a62-42e5-ae96-58de3fe7bf34"></p>
 
 <br>
-<br>
-
-<h2 align="center">Read my complete walkthrough in Medium.</h2>
-<h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/obfuscation-the-egg-shell-file-advent-of-cyber-2025-day-18-tryhackme-walkthrough-ac037fc4c371">Advent of Cyber 2025 · Day 18 · Obfuscation - The Egg Shell File</a></h3>
-
+<h2 align="center">Read my complete walkthrough in Medium.<br>
+Click here ➡️  <a href="https://medium.com/@RosanaFS/obfuscation-the-egg-shell-file-advent-of-cyber-2025-day-18-tryhackme-walkthrough-ac037fc4c371">Obfuscation - The Egg Shell File</a></h2>
 <br>
 <br>
 
