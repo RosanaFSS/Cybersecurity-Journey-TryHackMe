@@ -2,8 +2,8 @@
 <p align="center">2025, December 19  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in <a href="https://tryhackme.com">TryHackMe</a>.<br>Learn to identify and exploit weaknesses in Industrial Control Systems (ICS) systems. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/ICS-modbus-aoc2025-g3m6n9b1v4">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/863d1e21-3a7e-4053-9505-ecd61fbe2d2c"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/08555dc0-9f0e-4930-8d55-0d35e9765227"></p>
 
 <br>
-<h2 align="center">Read my complete walkthrough in Medium. Click here ➡️  <a href="https://medium.com/@RosanaFS/ics-modbus-claus-for-concern-advent-of-cyber-2025-day-19-tryhackme-walkthrough-975d151a77a0">Claus for Concern</a></h2><h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 19 &nbsp;&nbsp; ·  &nbsp;&nbsp; ICS/Modbus - Claus for Concern<h3<br>
-
+<h2 align="center">Read my complete walkthrough in Medium.<br>
+Click here ➡️  <a href="https://medium.com/@RosanaFS/ics-modbus-claus-for-concern-advent-of-cyber-2025-day-19-tryhackme-walkthrough-975d151a77a0"> ICS/Modbus - Claus for Concern</a></h2>
 <br>
 <br>
 <br>
