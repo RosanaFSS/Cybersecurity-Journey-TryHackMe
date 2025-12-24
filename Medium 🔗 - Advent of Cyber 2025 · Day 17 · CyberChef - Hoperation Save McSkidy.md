@@ -2,8 +2,8 @@
 <p align="center">2025, December 17  &nbsp; ·  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure in<a href="https://tryhackme.com"> TryHackMe</a>.<br>The story continues, and the elves mount a rescue and will try to breach the Quantum Fortress's defenses and free McSkid.. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/encoding-decoding-aoc2025-s1a4z7x0c3">here</a>.<br><img width="80px" src="https://github.com/user-attachments/assets/aee7e85e-ea41-4e85-83ff-04baa9ebe2be"<br><br><img width="1200px" src="https://github.com/user-attachments/assets/13ba7a4d-c924-485e-9ee0-bfcfaed4c745"></p>
 
 <br>
-<h2 align="center">Read my complete walkthrough in Medium. Click here ➡️  <a href="https://medium.com/@RosanaFS/cyberchef-hoperation-save-mcskidy-advent-of-cyber-2025-day-17-tryhackme-walkthrough-4d54c45e705d">Hoperation Save McSkidy</a></h2><h3 align="center">Advent of Cyber 2025 &nbsp;&nbsp; ·  &nbsp;&nbsp; Day 17 &nbsp;&nbsp; ·  &nbsp;&nbsp; CyberChef - Hoperation Save McSkidy<h3<br>
-
+<h2 align="center">Read my complete walkthrough in Medium.<br>
+Click here ➡️  <a href="https://medium.com/@RosanaFS/cyberchef-hoperation-save-mcskidy-advent-of-cyber-2025-day-17-tryhackme-walkthrough-4d54c45e705d">CyberChef - Hoperation Save McSkidy</a></h2>
 <br>
 <br>
 <br>
