@@ -3,7 +3,6 @@
 <img width="1200px" src="https://github.com/user-attachments/assets/c05b72d5-f50c-487f-a40b-a8873ecf36d5"></p>
 
 <br>
-<h1>This is NOT  an walkthrough.<br>I am very dissapointed with TryHackMe platform. Not just because of this room. There are many rooms that simply do not load for me, or VM´s that disconnects all the time. Rankings criteria change without any notification. Rooms are deleted and new ones are created exactly the same. ...</h1>
 
 <h2>Task 1 . Challenge</h2>
 <p>Part of Incognito 2.0 CTF<br>
