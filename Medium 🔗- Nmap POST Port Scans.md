@@ -3,7 +3,7 @@
 <h1>Jr Penetration Tester learning path> Network Security</h1>
 <h2>Nmap Post Port Scans</h2>
 <p>Learn how to leverage Nmap for service and OS detection, use Nmap Scripting Engine (NSE), and save the results.</p>
-<p>2024<br></p>
+<p>2025, May 31</p>
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <img src="https://github.com/user-attachments/assets/6b9fe713-660d-4b02-a8c1-223ebbeb5e3b" width="150px" height="150px"/>
