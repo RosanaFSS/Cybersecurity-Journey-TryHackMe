@@ -98,7 +98,7 @@
 <h3>9. Windows Security Monitoring</h3>
 <p>Learn how Windows logging works and how you can use it to detect common Windows attacks - all through real-world examples and challenging, hands-on threat detection labs.<br>
 
-9.1.   &nbsp; 🔗  &nbsp; [Windows Log for SOC](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Windows%20Logging%20for%20SOC.md)<br>
+9.1.   &nbsp; 🔗  &nbsp; [Windows Logging for SOC](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Windows%20Logging%20for%20SOC.md)<br>
 9.2.   &nbsp; 🔗  &nbsp; [Windows Threat Detection 1](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Windows%20Threat%20Detection%201.md)<br>
 9.3.   &nbsp; 🔗  &nbsp; [Windows Threat Detection 2](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Windows%20Threat%20Detection%202.md)<br>
 9.4.   &nbsp; 🔗  &nbsp; [Windows Threat Detection 3](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Windows%20Threat%20Detection%203.md)</p>
@@ -110,16 +110,23 @@
 <p>Learn how Linux logging works and how you can use it to detect common Linux attacks - all through real-world examples and challenging, hands-on threat detection labs.<br>
 
 
+10.1.   &nbsp; 🔗  &nbsp; [Linux Logging for SOC](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Linux%20Logging%20for%20SOC.md)<br>
+10.2.   &nbsp; 🔗  &nbsp; [Linux Threat Detection 1](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Linux%20Threat%20Detection%201.md)<br>
+10.3.   &nbsp; 🔗  &nbsp; [Linux Threat Detection 2](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Linux%20Threat%20Detection%202.md)<br>
+10.4.   &nbsp; 🔗  &nbsp; [Linux Threat Detection 3](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Linux%20Threat%20Detection%203.md)<br>
+10.5.   &nbsp; 🔗  &nbsp; BlackCat</p>
+
+
 </p>
 
 <br>
 <h3>11. Malware Concepts for SOC</h3>
 <p>In this module, you’ll learn to identify common malware types, understand their purpose, analyse files and understand why living off the land attacks are becoming more common.<br>
   
-11.1.   &nbsp; 🔗  &nbsp; Malware Classification<br>
+11.1.   &nbsp; 🔗  &nbsp; [Malware Classification](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Malware%20Classification.md)<br>
 11.2.   &nbsp; 🔗  &nbsp; Intro to Malware Analysis<br>
-11.3.   &nbsp; 🔗  &nbsp; Living Off the Land Attacks<br>
-11.4.   &nbsp; 🚩  &nbsp; Shadow Trace</p>
+11.3.   &nbsp; 🔗  &nbsp; [Living Off the Land Attacks](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Living%20Off%20the%20Land%20Attacks.md)<br>
+11.4.   &nbsp; 🚩  &nbsp; [Shadow Trace](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20Shadow%20Trace.md)</p>
 
 <br>  
 <h3>12. Threat Analysis Tools</h3>
