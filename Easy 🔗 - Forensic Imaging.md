@@ -8,11 +8,34 @@
 <br>
 <br>
 
+![Captura de tela 2024-08-20 205042](https://github.com/user-attachments/assets/64ca3a2a-f477-4c00-a4b2-2dd21b98a129)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 5 - creating a Foresinc Image](https://github.com/user-attachments/assets/fb1b8b86-7a24-489c-b226-bbc23e7570b0)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 6 - Confirmed that the operation was successful, file created is the same size of the original](https://github.com/user-attachments/assets/a5eb0c59-96d0-4857-a972-928cc0b42661)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 7 - Both new and original have the same MD5 hash](https://github.com/user-attachments/assets/4bad8d51-b84e-4d58-ac21-6728a416a7f9)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 8 - Checked the MD5 Hash of exercise img](https://github.com/user-attachments/assets/f813461c-7265-4efc-b16b-3d77776e7c7b)
+
+
+<br>
+<br>
 
 ![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 9 - Mounted Disk](https://github.com/user-attachments/assets/db7c4a77-9fd9-4fcb-8b5d-e9ce4ef8a5b8)
 
-
-![Captura de tela 2024-08-20 205042](https://github.com/user-attachments/assets/64ca3a2a-f477-4c00-a4b2-2dd21b98a129)
 
 <br>
 <br>
