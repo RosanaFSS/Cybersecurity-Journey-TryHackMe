@@ -5,10 +5,46 @@
 
 ![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 20 - Practical Exercise -Room Complete](https://github.com/user-attachments/assets/a98d983c-fdba-4488-a70a-ce8c90246dd2)
 
+
 <br>
 <br>
 
 ![Captura de tela 2024-08-20 205042](https://github.com/user-attachments/assets/64ca3a2a-f477-4c00-a4b2-2dd21b98a129)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 1 - Listed all block devices in Linux OS](https://github.com/user-attachments/assets/aec34666-76c0-4fd0-ade2-942344f5abcd)
+
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 1 - Accessing the File System](https://github.com/user-attachments/assets/2f7cd86e-1326-4cf7-b48e-7215b3f20c2e)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 2 - Listed all block devices in Linux OS](https://github.com/user-attachments/assets/83ca27b2-b447-4533-af1b-7fa7026c484b)
+
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 2 - Liste the devide and the assigned interface path in -dev-loop10](https://github.com/user-attachments/assets/2b5a1e15-8c3b-4b79-ba72-e4658f5901ac)
+
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 3 - acquired further inofmration like the UUID of the image using blki](https://github.com/user-attachments/assets/7fbc9881-256b-4200-8335-b651433d886c)
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 4 - creating a Foresinc Image](https://github.com/user-attachments/assets/608d8b38-8cd2-4781-951b-425d7ea9ed19)
+
 
 <br>
 <br>
@@ -77,5 +113,12 @@
 
 
 ![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 19 - Practical Exercise - Found the Flag ](https://github.com/user-attachments/assets/50be1471-727a-4e10-9751-e93edc12f69d)
+
+<br>
+<br>
+<br>
+
+![Julho-31-2024 - TryHackMe  Day 86 - Brazil Ranking, until now I am the first](https://github.com/user-attachments/assets/074d11f4-b1ab-4d43-9703-bfa7c3e493e3)
+
 
 
