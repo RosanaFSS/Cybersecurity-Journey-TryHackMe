@@ -29,5 +29,13 @@
 
 ![Julho-26-2024 - TryHackMe  Day 84 - Boogeyman 1 - Image 12 - Power Shell ID 4100](https://github.com/user-attachments/assets/8304ece9-42d0-4936-91f6-f8f83b4b57bf)
 
+![Julho-26-2024 - TryHackMe  Day 84 - Boogeyman 1 - Image 12 - Power Shell ID 40961](https://github.com/user-attachments/assets/619594ff-63af-440f-86e5-705ed100bf43)
+
+![Julho-26-2024 - TryHackMe  Day 84 - Boogeyman 1 - Image 12 - Power Shell ID 40962](https://github.com/user-attachments/assets/8bffe463-cc46-4e70-a3ef-0a338f10f35e)
+
+![Julho-26-2024 - TryHackMe  Day 84 - Boogeyman 1 - Image 13](https://github.com/user-attachments/assets/7ed0954b-0732-44d5-8da9-7ce4d9710bb7)
+
+![Julho-26-2024 - TryHackMe  Day 84 - Boogeyman 1 - Image 14](https://github.com/user-attachments/assets/d4951ff7-cf0a-467b-a7b8-c4523f753fbb)
+
 
 
