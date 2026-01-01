@@ -152,7 +152,7 @@
 <p>Investigate critical incidents and apply all the skills needed to be an effective SOC analyst while handling various artefacts.<br>
   
 14.1.   &nbsp; 🚩  &nbsp; Tempest<br>
-14.2.   &nbsp; 🔗  &nbsp; Boogeyman 1<br>
+14.2.   &nbsp; 🔗  &nbsp; [Boogeyman 1](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Medium%20%F0%9F%94%97%20Boogeyman%201.md)<br>
 14.3.   &nbsp; 🚩  &nbsp; Boogeyman 2<br>
 14.4.   &nbsp; 🚩  &nbsp; Boogeyman 3<br>
 14.5.   &nbsp; ⚙️  &nbsp; Hidden Hooks<br>
