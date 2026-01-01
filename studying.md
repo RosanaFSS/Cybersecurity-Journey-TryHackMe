@@ -1,11 +1,9 @@
 <h1 align="center">SOC Level 1 learning path</h1>
 <p>The Security Operations Center (SOC) is a central hub for securing many large organizations, and junior analysts are among the most numerous and demanding roles in a SOC. In the analyst role, you will work with logs, triage and prioritize alerts, collaborate with your teammates and other departments, and be the first line of defense in reacting to cyber incidents. This comprehensive path covers the necessary technical and operational skills to make you a qualified, universal SOC analyst.</p>
 
-<br>
 <h2 align="center">Prerequisites</h2>
 <p>You need a basic understanding of network fundamentals and operating systems. If you do not already have this knowledge, complete the Pre-Security Pathway and Cyber Security 101, or be prepared to research new concepts as you progress.</p>
 
-<br>
 <h2 align="center">Modules</h2>
 <p align="center"> 🔗 Walkthrough &nbsp;&nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; 🚩 Challenge &nbsp; &nbsp;&nbsp;&nbsp; ・ &nbsp;&nbsp;&nbsp;&nbsp; ⚙️ SOC Simulator Scenario</p>
 <p>
