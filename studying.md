@@ -33,18 +33,33 @@
    4.3.   &nbsp; 🔗  &nbsp; Unified Kill Chain<br>
    4.4.   &nbsp; 🔗  &nbsp; [MITRE](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20MITRE.md)<br>
    4.5.   &nbsp; 🚩  &nbsp; Summit<br>
-   4.6.   &nbsp; 🚩  &nbsp; Eviction<br>
-5. <strong>Phishing Analysis</strong>:<br>
-6. <strong>Network Traffic Analysis</strong>:<br>
-7. <strong>Network Security Monitoring</strong>:<br>
-8. <strong>Web Security Monitoring</strong>:<br>
-9. <strong>Windows Security Monitoring</strong>:<br>
-10. <strong>Linux Security Monitoring</strong>:<br>
-11. <strong>Malware Concepts for SOC</strong>:<br>
-12. <strong>Threat Analysis Tools</strong>:<br>
-13. <strong>SIEM Triage for SOC</strong>:<br>
-14. <strong>SOC Level 1 Capstone Challenges</strong>:<br>
-15. <strong> Security Analyst Level1 (SAL 1)</strong>:</p>
+   4.6.   &nbsp; 🚩  &nbsp; Eviction<br><br>
+5. Phishing Analysis</strong>:<br>Learn how to analyse and defend against phishing emails. Investigate real-world phishing attempts using a variety of techniques.<br>
+6. Network Traffic Analysis:<br>Learn the basics of network traffic analysis and get hands-on with Wireshark to detect various types of attacks.<br>
+7. Network Security Monitoring:<br>Learn about key fundamentals of Network Security, the importance of monitoring network perimeters and how to analyse the network traffic and logs for the footprints of potential network based attacks like MITM, network discovery and data exfiltration<br>
+8. Web Security Monitoring:<br>Learn how to protect and monitor the web, the ecosystem every organisation relies upon to deliver its services, all in a series of SOC-oriented labs and real-world scenarios.<br>
+9. Windows Security Monitoring:<br>Learn how Windows logging works and how you can use it to detect common Windows attacks - all through real-world examples and challenging, hands-on threat detection labs.<br>
+10. Linux Security Monitoring:<br>Learn how Linux logging works and how you can use it to detect common Linux attacks - all through real-world examples and challenging, hands-on threat detection labs.<br>
+11. Malware Concepts for SOC:<br>In this module, you’ll learn to identify common malware types, understand their purpose, analyse files and understand why living off the land attacks are becoming more common.<br>
+12. Threat Analysis Tools:<br>Understand how to leverage threat intelligence to detect, investigate and defend against adversaries.<br>Gain practical skills in using threat data, enrichment techniques, and analysis workflows to strengthen SOC capabilities.<br>
+   12.1.   &nbsp; 🔗  &nbsp; Intro to Cyber Threat Intel<br>
+   12.2.   &nbsp; 🔗  &nbsp; [File and Hash Threat Intel](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20File%20and%20Hash%20Threat%20Intel.md)<br>
+   12.3.   &nbsp; 🔗  &nbsp; [IP and Domain Threat Intel](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20IP%20and%20Domain%20Threat%20Intel.md)<br>
+   12.4.   &nbsp; 🚩  &nbsp; [Invite Only](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%9A%A9%20-%20Invite%20Only.md)<br><br>
+13. SIEM Triage for SOC:<br>Explore how SIEM solutions help detect early signs of attacks, investigate SOC alerts, and correlate logs from multiple sources to build an incident timeline. These skills will be vital for you to identify and respond to real-world threats as a SOC analyst.<br>
+   13.1.   &nbsp; 🔗  &nbsp; Log Analysis With SIEM<br>
+   13.2.   &nbsp; 🔗  &nbsp; [Alert Triage With Splunk](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Alert%20Triage%20With%20Splunk.md)<br>
+   13.3.   &nbsp; 🔗  &nbsp; [Alert Triage With Elastic](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Alert%20Triage%20With%20Elastic.md)<br>
+   13.4.   &nbsp; 🚩  &nbsp; ItsyBitsy<br>
+   13.5.   &nbsp; 🚩  &nbsp; Hidden Hooks<br>
+14. SOC Level 1 Capstone Challenges:<br>nvestigate critical incidents and apply all the skills needed to be an effective SOC analyst while handling various artefacts.<br>
+   14.1.   &nbsp; 🚩  &nbsp; Tempest<br>
+   14.2.   &nbsp; 🔗  &nbsp; Boogeyman 1<br>
+   14.3.   &nbsp; 🚩  &nbsp; Boogeyman 2<br>
+   14.4.   &nbsp; 🚩  &nbsp; Boogeyman 3<br>
+   14.5.   &nbsp; ⚙️  &nbsp; Hidden Hooks<br>
+   14.6.   &nbsp; ⚙️  &nbsp; Open Door<br><br>
+15. Security Analyst Level1 (SAL 1):Get hired with an industry-recgsed, practical defensive certification.</p>
 
 
 <h1>SOC Team Internal</h1>
