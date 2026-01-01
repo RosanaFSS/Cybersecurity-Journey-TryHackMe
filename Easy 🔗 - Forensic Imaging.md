@@ -1,10 +1,58 @@
-<p>2024, August 20 - Day 106</p>
+<p>2024, July 31 - Day 86 and 2024, August 20 - Day 106</p>
 <h1>Forensic Imaging</h1>
 
 <br>
 
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 20 - Practical Exercise -Room Complete](https://github.com/user-attachments/assets/a98d983c-fdba-4488-a70a-ce8c90246dd2)
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 9 - Mounted Disk](https://github.com/user-attachments/assets/db7c4a77-9fd9-4fcb-8b5d-e9ce4ef8a5b8)
+
+
 ![Captura de tela 2024-08-20 205042](https://github.com/user-attachments/assets/64ca3a2a-f477-4c00-a4b2-2dd21b98a129)
 
 <br>
+<br>
 
-![Captura de tela 2024-07-31 193605](https://github.com/user-attachments/assets/dfb69892-8345-42c2-902e-bb5abb16c2d8)
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 10 - Mounted the Image Exercise img](https://github.com/user-attachments/assets/37d20c3d-ccd7-4976-9653-dcdc1cb29c30)
+
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 11 - Found the Flag](https://github.com/user-attachments/assets/983992f6-6d22-4983-8087-f0723ec57203)
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 12 - Practical Exercise - Accessing the File System](https://github.com/user-attachments/assets/467b1a10-1ac7-409c-b86b-d81c7cd2b815)
+
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 13 - Practical Exercise - Listed all Blocked Devices](https://github.com/user-attachments/assets/34b0293c-563a-4fc2-9c1d-522c7ba8c7a3)
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 14 - Practical Exercise - Acquired further information](https://github.com/user-attachments/assets/4ccccaa1-45a0-4070-aaa1-af1b8d592a3f)
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 15 - Practical Exercise - Creating Image](https://github.com/user-attachments/assets/585f79b9-4d5b-4888-af9d-42a98dd53019)
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 16 - Practical Exercise - Image Created](https://github.com/user-attachments/assets/69a73ab4-bd64-4da6-9e6d-8dd89c084f31)
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 17 - Practical Exercise - Both sizes are equal](https://github.com/user-attachments/assets/26a4b2b9-fa16-419e-b17b-ed0a96a54749)
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 18 - Practical Exercise - Found the hash](https://github.com/user-attachments/assets/75be242f-75f7-4e75-b9e9-580974224455)
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 19 - Practical Exercise - Found the Flag ](https://github.com/user-attachments/assets/50be1471-727a-4e10-9751-e93edc12f69d)
+
+
