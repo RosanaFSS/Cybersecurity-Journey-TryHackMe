@@ -1,16 +1,76 @@
-<p>2024, July 31 - Day 86 and 2024, August 20 - Day 106</p>
-<h1>Forensic Imaging</h1>
+<h1 align="center">Forensic Imaging</h1>
+<p align="center">2024, July 31 - Day 86 & 2024, August 20 - Day 1060 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>. Let´s learn the basic concepts of forensic imaging. <a href="https://tryhackme.com"> TryHackMe</a>. &nbsp;&nbsp;Access the walkthrough <a href="https://tryhackme.com/room/forensicimaging">here</a>.<br><br><img width="800px" src="https://github.com/user-attachments/assets/bd74169e-1d27-4c1a-9e9e-94e0ef3583b8"><br><img width="800px" src="https://github.com/user-attachments/assets/64ca3a2a-f477-4c00-a4b2-2dd21b98a129"></p>
 
+
+<h2>Task 1 . Introduction</h2>
 <br>
 
-![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 20 - Practical Exercise -Room Complete](https://github.com/user-attachments/assets/a98d983c-fdba-4488-a70a-ce8c90246dd2)
+<p><em>Answer the question below</em></p>
+
+<p>1.1. <em>Click to complete the task.</em><br>
+<code>No answer needed</code></p>
+
+<br>
+<h2>Task 2 . Preparation</h2>
+<br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>2.1. <em>What command can be used to list all block devices in Linux OS?</em><br>
+<code>lsblk</code></p>
+
+<br>
+<p>2.2. <em>Which bash command displays all commands executed in a session?</em><br>
+<code>history</code></p>
+
+<br>
+<h2>Task 3 . Creating a Forensic Image</h2>
+<br>
+
+<p><em>Answer the question below</em></p>
+
+<p>3.1. <em>Click to complete the task.</em><br>
+<code>No answer needed</code></p>
 
 
 <br>
+<h2>Task 4 . Integrity Checking</h2>
 <br>
 
-![Captura de tela 2024-08-20 205042](https://github.com/user-attachments/assets/64ca3a2a-f477-4c00-a4b2-2dd21b98a129)
+<p><em>Answer the question below</em></p>
 
+<p>4.1. <em>What is the MD5 hash of the image "exercise.img" located in /home/analyst/?</em><br>
+<code>1f1da616156f73083521478c334841bb</code></p>
+
+<br>
+<h2>Task 5 . Other Types of Imagining</h2>
+<br>
+
+<p><em>Answer the question below</em></p>
+
+<p>5.1. <em>Mount the image "exercise.img" located in the analyst home directory folder. What is the content of the file "flag.txt" located within exercise.img?</em><br>
+<code>THM{mounttt-mounttt-me}</code></p>
+
+<br>
+<h2>Task 6 . Practical Exercise</h2>
+<br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>6.1. <em>Create an image of the attached 1gb loop device. What is the MD5 hash of the image?</em><br>
+<code>1fab86e499934dda789c9c4aaf27101d</code></p>
+
+<p>6.2. <em>Mount the image from the 1 GB loop device. What is the content of the file "flag.txt"?</em><br>
+<code>THM{well-done-imaginggggggg}</code></p>
+
+<br>
+<h2>Task 7 . Conclusion</h2>
+<br>
+
+<p><em>Answer the question below</em></p>
+
+<p>7.1. <em>Click to complete the task.</em><br>
+<code>No answer needed</code></p>
 <br>
 <br>
 
@@ -113,6 +173,14 @@
 
 
 ![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 19 - Practical Exercise - Found the Flag ](https://github.com/user-attachments/assets/50be1471-727a-4e10-9751-e93edc12f69d)
+
+<br>
+<br>
+
+
+![Julho-31-2024 - TryHackMe  Day 86 - Forensic Imagining - Image 20 - Practical Exercise -Room Complete](https://github.com/user-attachments/assets/a98d983c-fdba-4488-a70a-ce8c90246dd2)
+
+
 
 <br>
 <br>
