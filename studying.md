@@ -63,7 +63,7 @@
 <h3>6. Network Traffic Analysis</h3>
 <p>Learn the basics of network traffic analysis and get hands-on with Wireshark to detect various types of attacks.<br>
 
-6.1.   &nbsp; 🔗  &nbsp; Network Traffic Analysis<br>
+6.1.   &nbsp; 🔗  &nbsp; [Network Traffic Basics](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Network%20Traffic%20Basics.md)<br>
 6.2.   &nbsp; 🔗  &nbsp; Wireshark: The Basics<br>
 6.3.   &nbsp; 🔗  &nbsp; Wireshark: Packet Operations<br>
 6.4.   &nbsp; 🔗  &nbsp; Wireshark: Traffic Analysis<br>
@@ -73,10 +73,10 @@
 <h3>7. Network Security Monitoring</h3>
 <p>Learn about key fundamentals of Network Security, the importance of monitoring network perimeters and how to analyse the network traffic and logs for the footprints of potential network based attacks like MITM, network discovery and data exfiltration<br>
 
-7.1.   &nbsp; 🔗  &nbsp; Network Security Essentials<br>
-7.2.   &nbsp; 🔗  &nbsp; Network Discovery Detection<br>
-7.3.   &nbsp; 🔗  &nbsp; Data Exfiltration Detection<br>
-7.4.   &nbsp; 🔗  &nbsp; Man-in-the-Middle Detection<br>
+7.1.   &nbsp; 🔗  &nbsp; [Network Security Essentials](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Network%20Security%20Essentials.md)<br>
+7.2.   &nbsp; 🔗  &nbsp; [Network Discovery Detection](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Network%20Discovery%20Detection.md)<br>
+7.3.   &nbsp; 🔗  &nbsp; [Data Exfiltration Detection](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Data%20Exfiltration%20Detection.md)<br>
+7.4.   &nbsp; 🔗  &nbsp; [Man-in-the-Middle Detection](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Man-in-the-Middle%20Detection.md)<br>
 7.5.   &nbsp; 🔗  &nbsp; IDS Fundamentals<br>
 7.6.   &nbsp; 🔗  &nbsp; Snort</p>
 
@@ -86,10 +86,10 @@
 <h3>8. Web Security Monitoring</h3>
 <p>Learn how to protect and monitor the web, the ecosystem every organisation relies upon to deliver its services, all in a series of SOC-oriented labs and real-world scenarios.<br>
 
-8.1.   &nbsp; 🔗  &nbsp; Web Security Essentialsbr>
-8.2.   &nbsp; 🔗  &nbsp; Detecting Web Attacks<br>
-8.3.   &nbsp; 🔗  &nbsp; Detecting Web Shells<br>
-8.4.   &nbsp; 🔗  &nbsp; Detecting Web DDoS<br>
+8.1.   &nbsp; 🔗  &nbsp; [Web Security Essentials](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Web%20Security%20Essentials.md)<br>
+8.2.   &nbsp; 🔗  &nbsp; [Detecting Web Attacks](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Detecting%20Web%20Attacks.md)<br>
+8.3.   &nbsp; 🔗  &nbsp; [Detecting Web Shells](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20Detecting%20Web%20Shells.md)<br>
+8.4.   &nbsp; 🔗  &nbsp; [Detecting Web DDoS](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Detecting%20Web%20DDos.md)<br>
 8.5.   &nbsp; 🔗  &nbsp; Upload and Conquer</p>
 
 <p/>
@@ -141,7 +141,7 @@
 <h3>13. SIEM Triage for SOC</h3>
 <p>Explore how SIEM solutions help detect early signs of attacks, investigate SOC alerts, and correlate logs from multiple sources to build an incident timeline. These skills will be vital for you to identify and respond to real-world threats as a SOC analyst.<br>
 
-13.1.   &nbsp; 🔗  &nbsp; Log Analysis With SIEM<br>
+13.1.   &nbsp; 🔗  &nbsp; [Log Analysis With SIEM](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Log%20Analysis%20with%20SIEM.md)<br>
 13.2.   &nbsp; 🔗  &nbsp; [Alert Triage With Splunk](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Alert%20Triage%20With%20Splunk.md)<br>
 13.3.   &nbsp; 🔗  &nbsp; [Alert Triage With Elastic](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Alert%20Triage%20With%20Elastic.md)<br>
 13.4.   &nbsp; 🚩  &nbsp; ItsyBitsy<br>
