@@ -77,7 +77,7 @@
 7.2.   &nbsp; 🔗  &nbsp; [Network Discovery Detection](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Network%20Discovery%20Detection.md)<br>
 7.3.   &nbsp; 🔗  &nbsp; [Data Exfiltration Detection](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Medium%20%F0%9F%94%97%20-%20Data%20Exfiltration%20Detection.md)<br>
 7.4.   &nbsp; 🔗  &nbsp; [Man-in-the-Middle Detection](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20Man-in-the-Middle%20Detection.md)<br>
-7.5.   &nbsp; 🔗  &nbsp; IDS Fundamentals<br>
+7.5.   &nbsp; 🔗  &nbsp; [IDS Fundamentals](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20IDS%20Fundamentals.md)<br>
 7.6.   &nbsp; 🔗  &nbsp; Snort</p>
 
 </p>
