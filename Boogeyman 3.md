@@ -87,7 +87,7 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <img width="1810" height="704" alt="image" src="https://github.com/user-attachments/assets/3ca576b3-c2d0-4531-9c6e-5fa579d872da" />
 
 
-
+<br>
 <br>
 <p>2.2. <em>The stage 1 payload attempted to implant a file to another location. What is the full command-line value of this execution?</em><br>
 <code>"C:\Windows\System32\xcopy.exe" /s /i /e /h D:\review.dat C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat</code></p>
@@ -95,7 +95,7 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/50e76171-f5b6-4610-a767-5d46e6cc935a" />
 
 
-
+<br>
 <br>
 <p>2.3. <em>The implanted file was eventually used and executed by the stage 1 payload. What is the full command-line value of this execution?</em><br>
 <code>"C:\Windows\System32\rundll32.exe" D:\review.dat,DllRegisterServer</code></p>
@@ -103,7 +103,7 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/f206d320-4c0c-45db-b2dd-d98e41c4caa0" />
 
 
-
+<br>
 <br>
 <p>2.4. <em>The stage 1 payload established a persistence mechanism. What is the name of the scheduled task created by the malicious script?</em><br>
 <code>Review</code></p>
@@ -111,7 +111,7 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/e06da848-9e4a-46c0-941f-b016c3f60738" />
 
 
-
+<br>
 <br>
 <p>2.5. <em>The execution of the implanted file inside the machine has initiated a potential C2 connection. What is the IP and port used by this connection? (format: IP:port)</em><br>
 <code>165.232.170.151:80</code></p>
@@ -131,7 +131,7 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 
 
 
-
+<br>
 <br>
 <p>2.6. <em>The attacker has discovered that the current access is a local administrator. What is the name of the process used by the attacker to execute a UAC bypass?</em><br>
 <code>fodhelper.exe</code></p>
@@ -139,90 +139,136 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <img width="1807" height="660" alt="image" src="https://github.com/user-attachments/assets/3256e255-d41a-467b-af35-9bd308f1c945" />
 
 
-
+<br>
 <br>
 <p>2.7. <em>Having a high privilege machine access, the attacker attempted to dump the credentials inside the machine. What is the GitHub link used by the attacker to download a tool for credential dumping?</em><br>
 <code>https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip</code></p>
 
+
+<p>
+
+- update time range<br>
+- filter <code>user.name</code> : <code>evan.hutchinson</code><br><br
+- filter <code>process.command_line</code> : <code>exists</code><br></p>
+
 <img width="1811" height="701" alt="image" src="https://github.com/user-attachments/assets/aba39530-7a83-4fa0-afba-0bc432836bd6" />
 
-
-
-
-
-
-
+<br>
 <br>
 <p>2.8. <em>After successfully dumping the credentials inside the machine, the attacker used the credentials to gain access to another machine. What is the username and hash of the new credential pair? (format: username:hash)</em><br>
 <code>itadmin:F84769D250EB95EB2D7D8B4A1C5613F2</code></p>
 
-<img width="1800" height="698" alt="image" src="https://github.com/user-attachments/assets/2250afab-2152-4f8a-aa49-a27070e65d90" />
+<p>
 
+- filter <code>user.name</code> : <code>allan.smith</code><br>
+- filter <code>process.command_line</code> : <code>exists</code></p>
 
-<img width="1799" height="414" alt="image" src="https://github.com/user-attachments/assets/6f0f486a-46eb-4943-aa61-190a666ad9f9" />
+<img width="1802" height="697" alt="image" src="https://github.com/user-attachments/assets/2876b3b6-454b-421f-90a3-349ba0e7832c" />
 
-<img width="1804" height="701" alt="image" src="https://github.com/user-attachments/assets/5983df5f-8ed8-401a-8870-dbc0108d583b" />
-
-<img width="1812" height="705" alt="image" src="https://github.com/user-attachments/assets/66581687-9f3b-4cb5-8886-47008a736a28" />
-
-
-
+<br>
 <br>
 <p>2.9. <em>Using the new credentials, the attacker attempted to enumerate accessible file shares. What is the name of the file accessed by the attacker from a remote share?</em><br>
 <code>IT_Automation.ps1</code></p>
 
+<p>
+
+- filter <code>process.command_line</code> : <code>exists</code><br>
+- filter <code>user.name</code> : <code>evan.hutchinson</code><br></p>
+
 <img width="1809" height="699" alt="image" src="https://github.com/user-attachments/assets/1164e5a2-1ccf-4cfb-b227-6c1763529fe2" />
 
 
-
+<br>
 <br>
 <p>2.10. <em>After getting the contents of the remote file, the attacker used the new credentials to move laterally. What is the new set of credentials discovered by the attacker? (format: username:password)</em><br>
 <code>QUICKLOGISTICS\allan.smith:Tr!ckyP@ssw0rd987</code></p>
 
-<img width="1809" height="699" alt="image" src="https://github.com/user-attachments/assets/8f584bdf-2fa2-4127-b413-87136d06e2bc" />
+<p>
+
+- update time range<br>
+- filter <code>user.name</code> : <code>allan.smith</code><br>
+- filter <code>process.command_line</code> : <code>exists</code><br></p>
+
+<img width="1802" height="697" alt="image" src="https://github.com/user-attachments/assets/57c18bb1-0302-4135-9cbd-ab2de9925769" />
 
 
+<br>
 <br>
 <p>2.11. <em>What is the hostname of the attacker's target machine for its lateral movement attempt?</em><br>
 <code>WKSTN-1327</code></p>
 
-<img width="1807" height="709" alt="image" src="https://github.com/user-attachments/assets/29a40c37-400a-4b57-92e1-feca180decc1" />
+<p>
+
+- update time range<br>
+- filter <code>process.name</code> : <code>exists</code><br>
+- search <code>review.dat</code></p>
 
 <img width="1808" height="699" alt="image" src="https://github.com/user-attachments/assets/e1967417-e7d7-4a8e-b8e4-584181b52d6d" />
 
 
-
+<br>
 <br>
 <p>2.12. <em>Using the malicious command executed by the attacker from the first machine to move laterally, what is the parent process name of the malicious command executed on the second compromised machine?</em><br>
 <code>wsmprovhost.exe</code></p>
 
+<p>
+
+- update time range<br>
+- filter <code>event.code</code> : <code>1</code><br>
+- filter <code>host.name</code> : <code>DC01.quicklogistics.org</code></p>
+
 <img width="1809" height="704" alt="image" src="https://github.com/user-attachments/assets/008017eb-9c08-4ef1-9f95-5642100af59c" />
 
-
-
+<br>
 <br>
 <p>2.13. <em>The attacker then dumped the hashes in this second machine. What is the username and hash of the newly dumped credentials? (format: username:hash)</em><br>
 <code>administrator:00f80f2538dcb54e7adc715c0e7091ec</code></p>
 
+<p>
+
+- filter <code>user.name</code> : <code>allan.smith</code><br>
+- filter <code>process.command_line</code> : <code>exists</code></p>
+
 <img width="1802" height="697" alt="image" src="https://github.com/user-attachments/assets/b1dbcfd8-80ee-4b97-8f68-155a71575796" />
 
-
-
+<br>
 <br>
 <p>2.14. <em>After gaining access to the domain controller, the attacker attempted to dump the hashes via a DCSync attack. Aside from the administrator account, what account did the attacker dump?</em><br>
 <code>backupda</code></p>
 
+<p>
 
-<img width="1808" height="660" alt="image" src="https://github.com/user-attachments/assets/1cc0547a-fa1d-4da3-8747-9ddd1428355e" />
+- filter <code>event.code</code> : <code>1</code><br>
+- filter <code>host.name</code> : <code>DC01.quicklogistics.org</code><br>
+- search <code>DCSync</code></p>
 
 <img width="1809" height="699" alt="image" src="https://github.com/user-attachments/assets/1d0fcd44-f056-4f3a-86e4-b2a576e13450" />
 
 
-
+<br>
+<br>
 <p>2.15. <em>After dumping the hashes, the attacker attempted to download another remote file to execute ransomware. What is the link used by the attacker to download the ransomware binary?</em><br>
 <code>http://ff.sillytechninja.io/ransomboogey.exe</code></p>
 
+<p>
 
+- filter <code>event.code</code> : <code>1</code><br>
+- filter <code>host.name</code> : <code>DC01.quicklogistics.org</code>
+- scroll down</p>
 
 <img width="1803" height="702" alt="image" src="https://github.com/user-attachments/assets/0e2ff53a-0fa9-4af5-950b-4affaf5b3a69" />
 
+<br>
+<br>
+
+
+<p>
+  
+- Aug 30, 2023 00:09:57.186 - downloaded a tool for credential dumping from GitHub<br>
+- Aug 30, 2023 00:19:52.889 - gained access to another machine<br>
+- Aug 30, 2023 00:19:52.889 - accessed a remote share<br>
+- Aug 30, 2023 00:21:53.284 - allan.smith executed malicious command on WKSTN-1327<br>
+- Aug 30, 2023 01:30:25.545 - allan.smith used itadmin´s credentials to move laterally on WKSTN-1327<br>
+- Aug 30, 2023 01:31:39.426 - allan.smith dumped new credentials (administrator)<br>
+- Aug 30, 2023 01:47:57.809 - as Administrator attempted to dump hashes via a DCSync attack on DC01<br>
+- Aug 30, 2023 01:53:13.738 - as Administrator attempted to download a ransomware binary on DC01</p>
