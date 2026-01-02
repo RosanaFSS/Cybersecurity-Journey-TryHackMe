@@ -127,10 +127,14 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 
 <img width="1798" height="705" alt="image" src="https://github.com/user-attachments/assets/71010626-4c2d-4d1f-8d23-71d90ac9cde6" />
 
-
 <img width="1810" height="699" alt="image" src="https://github.com/user-attachments/assets/f3122a61-7904-48d9-abc0-4d25c4d35f92" />
 
+<br>
+<br>
 
+<img width="1905" height="380" alt="image" src="https://github.com/user-attachments/assets/0257977b-b665-4bf9-b441-7716b59b025d" />
+
+<img width="1914" height="265" alt="image" src="https://github.com/user-attachments/assets/e2d806b4-3a17-49f9-9bf1-3742525682dc" />
 
 <br>
 <br>
@@ -149,7 +153,7 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <p>
 
 - update time range<br>
-- filter <code>user.name</code> : <code>evan.hutchinson</code><br><br
+- filter <code>user.name</code> : <code>evan.hutchinson</code><br>
 - filter <code>process.command_line</code> : <code>exists</code><br></p>
 
 <img width="1811" height="701" alt="image" src="https://github.com/user-attachments/assets/aba39530-7a83-4fa0-afba-0bc432836bd6" />
