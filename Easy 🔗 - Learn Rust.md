@@ -1,6 +1,5 @@
 <h1 align="center">Learn Rust</h1>
-<p align="center">22026, January 2 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn Rust for someone who knows programming but doesn't know low level programming from <a href="https://tryhackme.com"> TryHackMe</a>. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/rust">here</a>.<br><br><img width="1200px" src=""></p>
-
+<p align="center">22026, January 2 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn Rust for someone who knows programming but doesn't know low level programming from <a href="https://tryhackme.com"> TryHackMe</a>. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/rust">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/916278ee-2885-44bf-8991-0952a26fb956"></p>
 
 <h2>Task 1 . What is Rust?</h2>
 <p>Found an issue in this room? Leave a message in Discord and someone will tag me if I don't see it :)<br>
@@ -491,6 +490,36 @@ fn main() {
 <p>4.2. <em>What is the error code returned by question 1?</em><br>
 <code>E0308</code></p>
 
+```bash
+:~# mkdir question1
+```
+
+```bash
+:~# cd question1
+```
+
+```bash
+:~/question1# nano main.rs
+```
+
+```bash
+:~/question1# cat main.rs
+```
+
+```bash
+:~/question1# cargo init
+```
+
+```bash
+:~/question1# ls
+```
+
+```bash
+:~/question1# cargo run
+```
+
+<img width="1339" height="608" alt="image" src="https://github.com/user-attachments/assets/953bf644-e6fa-473c-81a0-7e44b7010dbe" />
+
 <br>
 <p>4.3. <em>Does the code in question 2 compile? T(rue) or F(alse)</em><br>
 <code>F</code></p>
@@ -498,6 +527,36 @@ fn main() {
 <br>
 <p>4.4. <em>What is the error <strong>message</strong> returned?</em><br>
 <code>cannot assign twice to immutable variable</code></p>
+
+```bash
+:~# mkdir question2
+```
+
+```bash
+:~# cd question2
+```
+
+```bash
+:~/question2# nano main.rs
+```
+
+```bash
+:~/question2# cat main.rs
+```
+
+```bash
+:~/question2# cargo init
+```
+
+```bash
+:~/question2# ls
+```
+
+```bash
+:~/question2# cargo run
+```
+
+<img width="1339" height="643" alt="image" src="https://github.com/user-attachments/assets/290320f3-292c-41ed-aa02-c39519544e99" />
 
 
 <br>
@@ -588,6 +647,42 @@ error[E0308]: mismatched types
 <br>
 <p>5.6. <em>We have "let word = "hello"", how do we get the length of the variable?</em><br>
 <code>word.len();</code></p>
+
+```bash
+:~# mkdir constantvariables
+```
+
+```bash
+:~# cd constantvariables
+```
+
+```bash
+:~/constantvariables# nano main.rs
+```
+
+```bash
+:~/constantvariables# cat main.rs
+fn main(){
+    let x = 6;
+    let x = x + 1;
+    println!("{}", x)
+}
+```
+
+```bash
+:~/constantvariables# cargo init
+```
+
+```bash
+:~/constantvariables# ls
+```
+
+```bash
+~/constantvariables# cargo run
+```
+
+<img width="1346" height="285" alt="image" src="https://github.com/user-attachments/assets/99f5fa35-904f-41bf-9f85-d5f5af76e196" />
+
 
 <br>
 <h2>Task 6 . Data Structures</h2>
@@ -752,39 +847,61 @@ test("bee");
 <p><em>Answer the questions below</em></p>
 
 <p>7.1. <em>Will question 1 return 8172192? T(rue) or F(alse)</em><br>
-<code> </code></p>
+<code>F</code></p>
 
+<img width="1334" height="560" alt="image" src="https://github.com/user-attachments/assets/e6f5ef31-ac85-4b92-9db5-0c6a3efa5cd5" />
+
+<br>
 <br>
 <p>7.2. <em>Will example 2 run? T(rue) or F(alse)</em><br>
-<code> </code></p>
+<code>F</code></p>
+
+<img width="1342" height="197" alt="image" src="https://github.com/user-attachments/assets/c517b7db-1394-46af-bb54-3a2ca6d7e2cf" />
 
 <br>
+<br>
+
+<img width="1338" height="428" alt="image" src="https://github.com/user-attachments/assets/c8abfc37-a26c-44ee-8801-fb5aee021aed" />
+
+
+<br>
+<br>
+
 <p>7.3. <em>What type should we give to the argument for question 3?</em> Hint: "bee" is passed to the test function which makes the argument a &'static str<br>
-<code> </code></p>
+<code>&str</code></p>
+
+<img width="1336" height="772" alt="image" src="https://github.com/user-attachments/assets/d3bc9957-4662-4a73-90cb-717857210c05" />
+
 
 <br>
 <p>7.4. <em>The last expression in a function (the return) needs to have a semicolon. T(rue) or F(alse)</em> Hint: Since you can return values such as "42" without semicolons.<br>
-<code> </code></p>
+<code>F</code></p>
 
 <br>
 <p>7.5. <em>Every function need to return something. T(rue) or F(alse)</em><br>
-<code> </code></p>
+<code>F</code></p>
+
+<img width="453" height="161" alt="image" src="https://github.com/user-attachments/assets/ac70dee8-2f94-4f66-a4ab-d44d8ced763a" />
 
 <br>
+<br>
 <p>7.6. <em>Functions in Rust can be nested within other functions. T(rue) or F(alse)</em><br>
-<code> </code></p>
+<code>T</code></p>
 
 <br>
 <p>7.7. <em>What keyword do we use to return early from a function?</em><br>
 <code>return</code></p>
 
+<img width="438" height="117" alt="image" src="https://github.com/user-attachments/assets/3cac6a47-48c4-4812-a233-907c6ed9d864" />
+
+<br>
 <br>
 <p>7.8. <em>You nest a function named main, inside another function named main. Will this run? T(rue) or F(alse)</em><br>
 <code>T</code></p>
 
 <br>
 <h2>Task 8 . Loops</h2>
-
+<br>
 
 <p><em>Answer the questions below</em></p>
 
@@ -808,7 +925,7 @@ test("bee");
 
 <p><em>Answer the questions below</em></p>
 
-<p>9.1. <em>How do we break out of a loop?</em><br>
+<p>9.1. <em>Read the above.</em><br>
 <code>No answer needed</code></p>
 
 <br>
@@ -827,20 +944,248 @@ test("bee");
 <br>
 <h2>Task 10 . Rayon</h2>
 
+<br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>10.1. <em>What crate do we use to easily make an iter multi threaded?</em><br>
+<code>Rayon</code></p>
+
+<br>
+<p>10.2. <em>SHow do we tell Rust to include an external crate into our program? What file do we place this information in?</em><br>
+<code>cargo.toml</code></p>
+
+<br>
+<p>10.3. <em>Turn a.iter() into a multi threaded parallel iter using Rayon</em><br>
+<code>a.par_iter()</code></p>
+
+<br>
+<p>10.4. <em>What website do we go to for Crates?</em><br>
+<code>crates.io</code></p>
+
 
 <br>
 <h2>Task 11 . If Statements</h2>
+
+<br>
+
+<p><em>Answer the question below</em></p>
+
+<p>11.1. <em>We can assign variables based on an if statement on one line T(rue) or F(alse)</em><br>
+<code>T</code></p>
 
 
 <br>
 <h2>Task 12 . Error Handling</h2>
 
 <br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>12.1. <em>What is the data type returned from opening a file?</em><br>
+<code>Result</code></p>
+
+<br>
+<p>12.2. <em>Write the datatype of a generic Result with type hints</em> Hint: Due to XSS protection, the answer replaces the "<" with a space.<br>
+<code>Result T, E></code></p>
+
+<br>
+<p>12.3. <em>We're in a function and we get given a Result enum. If the Result is okay we want to continue working on it in this function. If the result is Err we want to return to the parent function with Err. What should we use?</em><br>
+<code>?</code></p>
+
+<br>
+<p>12.4. <em>We're certain our result will always return Ok, what should we use?</em> Hint: no ()<br>
+<code>unwrap</code></p>
+
+
+
+<br>
 <h2>Task 13 . Challenge</h2>
+<p>Challenge file 1.<br>
+
+"M3I6r2IbMzq9" is the text.<br>
+
+The text is encrypted with:<br>
+
+plaintext -> ROT13 -> base64 -> rot13<br>
+
+Go the opposite way and decrypt the file.<br>
+
+rot13 -> base64 -> ROT13 -> plaintext<br>
+
+You'll notice it's the same order either way, so you don't have to worry about order. Just make sure ROT13 is on the inside.<br>
+
+You might run into lifetime borrow checker issues.<br>
+
+Here's some hints in case you do:<br>
+
+1. Google is your friend.<br>
+
+2. https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html<br>
+
+3. Stop trying to do so many things at once. Break it down to the bare necessities and slowly build back up to see what causes the errors.</p>
+
+<br>
+
+<p><em>Answer the questions below</em></p>
+
+<p>13.1. <em>Challenge 1</em><br>
+<code>THM{Rust}</code></p>
+
+<br>
+
+<img width="1335" height="506" alt="image" src="https://github.com/user-attachments/assets/616d2af8-ef38-4210-85d1-ee92c138ea35" />
+
+<br>
+<br>
+
+```bash
+extern crate cipher_crypt;
+extern crate base64;
+
+use cipher_crypt::Rot13;
+use base64::{engine::general_purpose, Engine as _};
+
+fn main() {
+    let enc = "M3I6r2IbMzq9";
+
+    // ROT13 decryption
+    let rot13a = Rot13::decrypt(enc);
+
+    // Base64 decryption
+    let b64a = general_purpose::STANDARD.decode(rot13a).unwrap();
+    let b64b = String::from_utf8(b64a).unwrap();
+
+    // ROT13 decryption again
+    let challenge = Rot13::decrypt(&b64b);
+
+    println!("Plaintext -> ROT13 -> Base64 -> ROT13: {}", challenge);
+}
+```
+
+<img width="1341" height="428" alt="image" src="https://github.com/user-attachments/assets/c32af2ca-ada3-4b48-a67a-c6c3f6daeac5" />
+
+<br>
+<br>
+
+<img width="1336" height="292" alt="image" src="https://github.com/user-attachments/assets/bf36fe81-0e81-4828-b43a-3297899c8d4e" />
+
+<br>
+<br>
+<p>Google Gemini supported me on this one—I wouldn't have cracked it otherwise!</p>
+
+```bash
+:~/challenge# nano Cargo.toml
+```
+
+```bash
+:~/challenge# cat Cargo.toml
+[package]
+name = "challenge"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Dependencies must be defined here, not inside [[bin]]
+base64 = "0.22"
+
+[[bin]]
+name = "challenge"
+path = "main.rs"
+```
+
+
+<img width="1352" height="315" alt="image" src="https://github.com/user-attachments/assets/32dc738a-b203-4382-88d6-e214f7546f7e" />
+
+<br>
+<br>
+
+```bash
+:~/challenge# cat main.rs
+use base64::{engine::general_purpose, Engine as _};
+
+fn main() {
+    // The encrypted string from the challenge
+    let ciphertext = "M3I6r2IbMzq9";
+
+    // LOGIC: The prompt says the text was encrypted as: 
+    // Plaintext -> ROT13 -> Base64 -> ROT13
+    // To decrypt, we reverse the steps:
+    // 1. ROT13 (reverses itself)
+    // 2. Base64 Decode
+    // 3. ROT13 (reverses itself)
+
+    // Step 1: First ROT13
+    let stage1 = rot13(ciphertext);
+
+    // Step 2: Base64 Decode
+    // We expect the result to be valid UTF-8 text
+    let stage2_bytes = general_purpose::STANDARD
+        .decode(&stage1)
+        .expect("Failed to decode Base64. Check your input string.");
+    
+    let stage2_string = String::from_utf8(stage2_bytes)
+        .expect("Base64 result was not valid text.");
+
+    // Step 3: Final ROT13 to get the plaintext
+    let plaintext = rot13(&stage2_string);
+
+    println!("Success! The flag is: {}", plaintext);
+}
+
+// Helper function: ROT13 implementation
+// This shifts a-z and A-Z by 13 spots, wrapping around.
+fn rot13(input: &str) -> String {
+    input.chars().map(|c| {
+        match c {
+            'a'..='m' | 'A'..='M' => ((c as u8) + 13) as char,
+            'n'..='z' | 'N'..='Z' => ((c as u8) - 13) as char,
+            _ => c,
+        }
+    }).collect()
+}
+```
+
+<img width="1337" height="249" alt="image" src="https://github.com/user-attachments/assets/75d71d54-958f-429b-a890-b07c202e0fa8" />
 
 
 <br>
 <h2>Task 14 . Conclusion</h2>
 
+<br>
 
+<p><em>Answer the questions below</em></p>
+
+<p>14.1. <em>Goodbye! <3</em><br>
+<code>No answer needed</code></p>
+
+
+<br>
+<br>
+<h1 align="center">Completed</h1>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/f065f545-e4ba-40fb-b268-7f353150d7ef"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/97d98a1e-b9f2-4cf6-80c8-b21d4c12e81d"></p>
+
+
+<h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|2      |Easy 🔗 - Learn Rust           |1 |     96ᵗʰ  |     3ʳᵈ    |    5,152ⁿᵈ   |       67ᵗʰ     |    136,030  |    1,056    |    84     |
+
+
+</h6></div><br>
+
+
+<p align="center">Global All Time:    96ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/4e5bb853-6a00-4102-89a9-f182b98fd4f6"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/c4b95030-4ca6-43c3-9a5b-3888db9ad03b"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/225f6e72-0e28-472e-b92b-ac6e2c3f93e3"><br><br>
+                  Global monthly:   5,152ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ae069268-a793-4169-9c44-e194c1b8068a"><br><br>
+                  Brazil monthly:      67ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/acf3c4ff-ef4a-4da6-943f-ade1bd903b92"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p
 
