@@ -1,7 +1,7 @@
-<h1>Learn Rust</h1>
+<h1 align="center">Learn Rust</h1>
+<p align="center">22026, January 2 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn Rust for someone who knows programming but doesn't know low level programming from <a href="https://tryhackme.com"> TryHackMe</a>. &nbsp;&nbsp;Access it <a href="https://tryhackme.com/room/rust">here</a>.<br><br><img width="1200px" src=""></p>
 
 
-<br>
 <h2>Task 1 . What is Rust?</h2>
 <p>Found an issue in this room? Leave a message in Discord and someone will tag me if I don't see it :)<br>
 
@@ -191,6 +191,36 @@ fn main() {
 <p>1.4. What is Rust's version of NPM or PyPi?<br>
 <code>Cargo</code></p>
 
+```bash
+:~/learnrust# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+...
+1) Proceed with standard installation (default - just press enter)
+2) Customize installation
+3) Cancel installation
+>
+...
+  stable-x86_64-unknown-linux-gnu updated - rustc 1.92.0 (ded5c06cf 2025-12-08) (from rustc 1.87.0 (17067e9ac 2025-05-09))
+
+
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+
+To configure your current shell, you need to source
+the corresponding env file under $HOME/.cargo.
+
+This is usually done by running one of the following (note the leading DOT):
+. "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+source "$HOME/.cargo/env.fish"  # For fish
+source $"($nu.home-path)/.cargo/env.nu"  # For nushell
+```
+
+```bash
+:~/learnrust# . "$HOME/.cargo/env" 
+```
+
 <br>
 <h2>Task 2 . Installing & Tooling</h2>
 <p>Before we dive into the language, let's install Rust.<br>
@@ -251,6 +281,10 @@ Something cool to note is that the main tools of Rust are written by the Rust de
 <br>
 <p>2.3. <em>What command do we run to format our code?</em><br>
 <code>cargo fmt</code></p>
+                        
+```bash
+:~/learnrust# cargo install rustscan
+```
 
 <br>
 <h2>Task 3 . Hello World!</h2>
@@ -288,6 +322,79 @@ Something cool to note is that the main tools of Rust are written by the Rust de
 <br>
 <p>3.8. <em>How many release profiles does Rust have using optimisation level?</em> Hint: inclusive<br>
 <code>4</code></p>
+
+```bash
+:~/learnrust# cargo init
+```
+
+<img width="1339" height="109" alt="image" src="https://github.com/user-attachments/assets/c8b03238-97d6-4991-b211-17c9e5341891" />
+
+```bash
+:~/learnrust# ls
+```
+
+<img width="1345" height="91" alt="image" src="https://github.com/user-attachments/assets/77b93837-9547-4788-8dfc-22e78fc9b1ee" />
+
+```bash
+:~/learnrust/src# cat main.rs
+```
+
+<img width="1338" height="162" alt="image" src="https://github.com/user-attachments/assets/66cdc186-e1a1-4c34-a8f4-6cc73f05543b" />
+
+```bash
+:~/learnrust/src# cargo run
+```
+
+<img width="1343" height="142" alt="image" src="https://github.com/user-attachments/assets/aedf87e4-804e-4027-af68-a8f396f1f653" />
+
+
+```bash
+:~/learnrust/target# ls -l
+```
+
+```bash
+:~/learnrust/target# cd debug
+```
+
+```bash
+:~/learnrust/target/debug# ls -l
+```
+
+<img width="1340" height="286" alt="image" src="https://github.com/user-attachments/assets/021a503b-261d-4e8e-a0b6-f34d70b23681" />
+
+```bash
+:~/learnrust/target/debug# cargo build
+```
+
+<img width="1342" height="90" alt="image" src="https://github.com/user-attachments/assets/f6ac96fd-155e-4c63-a6c7-9f5693d5c6f2" />
+
+
+```bash
+:~/learnrust# ./target/debug/learnrust
+```
+
+<img width="1340" height="91" alt="image" src="https://github.com/user-attachments/assets/bd3ff8a9-fdd3-4dee-82a4-a965090332e7" />
+
+```bash
+:~/learnrust# cargo build --release
+```
+
+<img width="1336" height="107" alt="image" src="https://github.com/user-attachments/assets/dee7554b-1371-4474-9d26-9b150cc4ce45" />
+
+```bash
+:~/learnrust/target# ls
+```
+
+```bash
+:~/learnrust/target# cd release
+```
+
+```bash
+~/learnrust/target/release# ls
+```
+
+<img width="1340" height="143" alt="image" src="https://github.com/user-attachments/assets/2ed4e425-74ef-4804-b4f3-530ec20f1c4a" />
+
 
 <br>
 <h2>Task 4 . Variables</h2>
@@ -514,19 +621,207 @@ We've seen how integers work, but what about strings?</p>
 
 Strings are confusing for beginners in Rust, but these are the core principles. Here's a list to the relevant Rust book page on Strings for more information.</p>
 
+<p><em>Answer the questions below</em></p>
 
+<p>6.1. <em>Given the number -6, is this signed or unsigned?</em><br>
+<code>Signed</code></p>
+
+<br>
+<p>6.2. <em>Given the number 65536, what is the smallest unsigned datatype we can fit this into?</em><br>
+<code>u32</code></p>
+
+<br>
+<p>6.3. <em>What's the smallest sized signed integer in rust?</em><br>
+<code>i16</code></p>
+
+<br>
+<p>6.4. <em>Create a mutable u32 variable called "tryhackme" and assign it the number 9</em> Hint: u32 data type<br>
+<code>let mut tryhackme: u32 = 9;</code></p>
+
+<br>
+<p>6.5. <em>What data type is used to represent a string slice?</em><br>
+<code>&str</code></p>
+
+<br>
+<p>6.6. <em>Let's say you had a variable, X. You wanted to typehint the variable as a string. What would you write? Include X in the variable but not the <code>let</code>code> or <code>=</code> parts.</em><br>
+<code>x: String</code></p>
 
 <br>
 <h2>Task 7 . Functions</h2>
+<p>We've already seen a special kind of function earlier, the <code>main</code> function.<br>
+
+The<code>main</code> function is the first function called of the <code>main</code> file, which is the first file called.<br>
+
+Every binary file written in Rust needs a <code>main</code> file, and every main file needs a <code>main</code> function.<br>
+
+Functions in Rust are defined as:</p>
+
+```bash
+fn hello() -> u16{
+    println!("hello!");
+    6
+}
+```
+
+<p>The main function is the same as this, but in a binary file it doesn't return anything.</p>
 
 
+```bash
+fn main(){
+    println!("I do not return!")
+}
+```
+
+<p>Now, you might have noticed in the <code>hello</code> function that we have a 6 on the end.<br>
+
+<em>"What???"</em> I can hear you saying.<br>
+
+
+Well, Rust returns the final expression of the function.<br>
+
+Alternatively, we can use the <code>return</code> statement to return earlier. However, it's not very nice to use it to return the value at the end of the function — Rustaceans and Clippy will dislike that 😢<br>
+
+<code>6</code> is an expression that returns 6, so our <code>hello</code> function returns <code>6</code>.<br>
+
+Our <code>main</code> function does not return anything, which is the way it should be.<br>
+
+Let's add some arguments to our functions.</p>
+
+```bash
+fn print_name(name: String){
+    println!("{}", name);
+}
+```
+
+<p>Our function arguments have to include the type of each argument.<br>
+
+Now let's try to make this function return something.</p>
+
+```bash
+fn print_name(name: String) -> u16{
+    println!("{}", name);
+    6;
+}
+```
+
+<p>When we return data, we have to type hint the type of data that is being returned.<br>
+
+This may seem annoying, but it makes writing clean code so much easier.<br>
+
+Compare these two functions, one in Pythonic pseudocode and one in Rust. Note: we only have the definitions.</p>
+
+```bash
+def to_ip_address(ip):
+```
+
+<p>Now in Rust:</p>
+
+```bash
+fn to_ip_address(ip: String) -> IpAddr{
+```
+
+<p>By just adding the types we can clearly see we are taking in a string, and turning it into an IP address.<br>
+
+With proper function naming and typehints, we can tell what most functions do just from their definitions. How's that for clean code 😜</p>
+
+<h4>Question 1</h4>
+
+```bash
+fn hello(){
+    8172192: u16;
+}
+```
+
+<h4>Question 2</h4>
+
+```bash
+fn return(){
+    6;
+}
+```
+
+<h4>Question 3</h4>
+
+```bash
+fn test(name) {
+    println!("{}", name);
+}
+test("bee");
+```
+
+<p><em>Answer the questions below</em></p>
+
+<p>7.1. <em>Will question 1 return 8172192? T(rue) or F(alse)</em><br>
+<code> </code></p>
+
+<br>
+<p>7.2. <em>Will example 2 run? T(rue) or F(alse)</em><br>
+<code> </code></p>
+
+<br>
+<p>7.3. <em>What type should we give to the argument for question 3?</em> Hint: "bee" is passed to the test function which makes the argument a &'static str<br>
+<code> </code></p>
+
+<br>
+<p>7.4. <em>The last expression in a function (the return) needs to have a semicolon. T(rue) or F(alse)</em> Hint: Since you can return values such as "42" without semicolons.<br>
+<code> </code></p>
+
+<br>
+<p>7.5. <em>Every function need to return something. T(rue) or F(alse)</em><br>
+<code> </code></p>
+
+<br>
+<p>7.6. <em>Functions in Rust can be nested within other functions. T(rue) or F(alse)</em><br>
+<code> </code></p>
+
+<br>
+<p>7.7. <em>What keyword do we use to return early from a function?</em><br>
+<code>return</code></p>
+
+<br>
+<p>7.8. <em>You nest a function named main, inside another function named main. Will this run? T(rue) or F(alse)</em><br>
+<code>T</code></p>
 
 <br>
 <h2>Task 8 . Loops</h2>
 
 
+<p><em>Answer the questions below</em></p>
+
+<p>8.1. <em>How do we break out of a loop?</em><br>
+<code>break</code></p>
+
+<br>
+<p>8.2. <em>Simplest keyword to make an infinite loop?</em><br>
+<code>loop</code></p>
+
+<br>
+<p>8.3. <em>Turn <code>let a = [10, 20];</code>code> into something we can iterate over.</em><br>
+<code>a.iter()</code></p>
+
+<br>
+<p>8.4. <em>While loops can also be infinite. T(rue) or F(alse).</em><br>
+<code>T</code></p>
+
 <br>
 <h2>Task 9 . Zero Cost Abstractions</h2>
+
+<p><em>Answer the questions below</em></p>
+
+<p>9.1. <em>How do we break out of a loop?</em><br>
+<code>No answer needed</code></p>
+
+<br>
+<p>9.2. <em>Iterators are lazy. T(rue) or F(alse).</em><br>
+<code>T</code></p>
+
+<br>
+<p>9.3. <em>For loops are explicitly mentioned in the Rust book as zero cost abstractions. T(rue) or F(alse).</em><br>
+<code>F</code></p>
+
+<br>
+<p>9.4. <em>Zero Cost Abstractions are common in high level languages like Python or JavaScript T(rue) or F(alse).</em><br>
+<code>F</code></p>
 
 
 <br>
