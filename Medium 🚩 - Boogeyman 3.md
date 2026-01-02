@@ -72,44 +72,69 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 
 <p>2.1. <em>What is the PID of the process that executed the initial stage 1 payload?</em><br>
 <code>6392</code></p>
+<br>
+<p>
+
+- click the <strong>Time Filter</strong> (the date range display in the top-right corner)<br>
+- click over the <strong>Start date</strong> field<br>
+- select the <strong>Absolute</strong> tab<br>
+- enter <code>Aug 29, 2023 00:00:00.001</code> into <strong>Start date</strong><br>
+- click <strong>Update</strong></p>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/25ee54a8-6632-473f-ad50-7c986f65622b"><br>Rosana´s hands-on</p>
+<p>
+
+- click the <strong>Time Filter</strong> (the date range display in the top-right corner)<br>
+- click over the <strong>End date</strong> field<br>
+- select the <strong>Absolute</strong> tab<br>
+- enter <code>Aug 30, 2024 23:59:59.999</code>< into <strong>End date</strong><br>
+- click <strong>Update</strong></p>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3c664d2f-058f-4432-8d57-89133414db1c"><br>Rosana´s hands-on</p>
+
+<p>
+  
+- note <strong>28,302</strong> hits = events</p>
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/d9f76f0c-859f-4909-bbdc-d4dd3f6dc87b"><br><br>
-                <img width="1200px" src="https://github.com/user-attachments/assets/2cc70083-5a71-4805-81e0-e5c9bb626b84"><br></p>
-
-<img width="1334" height="390" alt="image" src="https://github.com/user-attachments/assets/25ee54a8-6632-473f-ad50-7c986f65622b" />
-
-<img width="1331" height="398" alt="image" src="https://github.com/user-attachments/assets/3c664d2f-058f-4432-8d57-89133414db1c" />
-
-<img width="1331" height="514" alt="image" src="https://github.com/user-attachments/assets/5bdf1c4a-204f-456d-aad3-d90f3f1f421d" />
-
-<img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/7141cc51-d5ec-4715-bde7-cb08ae7fbc8b" />
+                  <img width="1200px" src="https://github.com/user-attachments/assets/5bdf1c4a-204f-456d-aad3-d90f3f1f421d"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/fd4f661d-f48b-45e4-8fa7-3fc961abfa54"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/fd4f661d-f48b-45e4-8fa7-3fc961abfa54"><br>Rosana´s hands-on<br>Rosana´s hands-on</p>
 
 
-<img width="1810" height="704" alt="image" src="https://github.com/user-attachments/assets/3ca576b3-c2d0-4531-9c6e-5fa579d872da" />
 
-
-<br>
 <br>
 <p>2.2. <em>The stage 1 payload attempted to implant a file to another location. What is the full command-line value of this execution?</em><br>
 <code>"C:\Windows\System32\xcopy.exe" /s /i /e /h D:\review.dat C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat</code></p>
 
-<img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/50e76171-f5b6-4610-a767-5d46e6cc935a" />
+<p>
 
+- discovered the answer in question 2.1. revisiting the process created on <strong>Aug 29, 2023 23:51:16.738</strong> with <code>process.name</code> : <code>xcopy.exe</code> and  <code>PID</code> : <code>3832</code></p>
 
-<br>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/2c503030-74ef-4733-b108-42aa0ea4e912"><br>Rosana´s hands-on</p>
+
 <br>
 <p>2.3. <em>The implanted file was eventually used and executed by the stage 1 payload. What is the full command-line value of this execution?</em><br>
 <code>"C:\Windows\System32\rundll32.exe" D:\review.dat,DllRegisterServer</code></p>
 
-<img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/f206d320-4c0c-45db-b2dd-d98e41c4caa0" />
+<p>
 
+- discovered the answer in question 2.1. revisiting the process created on <strong>Aug 29, 2023 23:51:16.771</strong> with <code>process.name</code> : <code>rundll32.exe</code> and  <code>PID</code> : <code>3680</code></p>
 
-<br>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/551b2de9-8dab-44a3-a3e2-0813d917454b"><br>Rosana´s hands-on</p>
+
 <br>
 <p>2.4. <em>The stage 1 payload established a persistence mechanism. What is the name of the scheduled task created by the malicious script?</em><br>
 <code>Review</code></p>
 
-<img width="1814" height="419" alt="image" src="https://github.com/user-attachments/assets/e06da848-9e4a-46c0-941f-b016c3f60738" />
+
+<p>
+
+- discovered the answer in question 2.1. revisiting the process created on <strong>Aug 29, 2023 23:51:16.809</strong> with <code>process.name</code> : <code>powershell.exee</code> and  <code>PID</code> : <code>6204</code></p>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/8d5562f3-a518-4e07-a70d-0b777c7343d6"><br>Rosana´s hands-on</p>
+
+
 
 
 <br>
@@ -141,139 +166,129 @@ Given the initial findings, you are tasked to analyse and assess the impact of t
 <p>2.6. <em>The attacker has discovered that the current access is a local administrator. What is the name of the process used by the attacker to execute a UAC bypass?</em><br>
 <code>fodhelper.exe</code></p>
 
-<img width="1807" height="660" alt="image" src="https://github.com/user-attachments/assets/3256e255-d41a-467b-af35-9bd308f1c945" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3256e255-d41a-467b-af35-9bd308f1c945"><br>Rosana´s hands-on</p>
 
-
-<br>
 <br>
 <p>2.7. <em>Having a high privilege machine access, the attacker attempted to dump the credentials inside the machine. What is the GitHub link used by the attacker to download a tool for credential dumping?</em><br>
 <code>https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip</code></p>
-
-
 <p>
 
-- update time range<br>
+- update <strong>Start date</strong> field<br>
 - filter <code>user.name</code> : <code>evan.hutchinson</code><br>
 - filter <code>process.command_line</code> : <code>exists</code><br></p>
 
-<img width="1811" height="701" alt="image" src="https://github.com/user-attachments/assets/aba39530-7a83-4fa0-afba-0bc432836bd6" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/aba39530-7a83-4fa0-afba-0bc432836bd6"><br>Rosana´s hands-on</p>
 
-<br>
 <br>
 <p>2.8. <em>After successfully dumping the credentials inside the machine, the attacker used the credentials to gain access to another machine. What is the username and hash of the new credential pair? (format: username:hash)</em><br>
 <code>itadmin:F84769D250EB95EB2D7D8B4A1C5613F2</code></p>
-
 <p>
 
 - filter <code>user.name</code> : <code>allan.smith</code><br>
 - filter <code>process.command_line</code> : <code>exists</code></p>
 
-<img width="1802" height="697" alt="image" src="https://github.com/user-attachments/assets/2876b3b6-454b-421f-90a3-349ba0e7832c" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/2876b3b6-454b-421f-90a3-349ba0e7832c"><br>Rosana´s hands-on</p>
 
 <br>
+
 <br>
 <p>2.9. <em>Using the new credentials, the attacker attempted to enumerate accessible file shares. What is the name of the file accessed by the attacker from a remote share?</em><br>
 <code>IT_Automation.ps1</code></p>
-
 <p>
 
 - filter <code>process.command_line</code> : <code>exists</code><br>
 - filter <code>user.name</code> : <code>evan.hutchinson</code><br></p>
 
-<img width="1809" height="699" alt="image" src="https://github.com/user-attachments/assets/1164e5a2-1ccf-4cfb-b227-6c1763529fe2" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/1164e5a2-1ccf-4cfb-b227-6c1763529fe2"><br>Rosana´s hands-on</p>
 
-
-<br>
 <br>
 <p>2.10. <em>After getting the contents of the remote file, the attacker used the new credentials to move laterally. What is the new set of credentials discovered by the attacker? (format: username:password)</em><br>
 <code>QUICKLOGISTICS\allan.smith:Tr!ckyP@ssw0rd987</code></p>
-
 <p>
 
-- update time range<br>
+
+- update <strong>Start date</strong> field<br>
 - filter <code>user.name</code> : <code>allan.smith</code><br>
 - filter <code>process.command_line</code> : <code>exists</code><br></p>
 
-<img width="1802" height="697" alt="image" src="https://github.com/user-attachments/assets/57c18bb1-0302-4135-9cbd-ab2de9925769" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/57c18bb1-0302-4135-9cbd-ab2de9925769"><br>Rosana´s hands-on</p>
 
-
-<br>
 <br>
 <p>2.11. <em>What is the hostname of the attacker's target machine for its lateral movement attempt?</em><br>
 <code>WKSTN-1327</code></p>
-
 <p>
 
-- update time range<br>
+- update <strong>Start date</strong> field<br>
 - filter <code>process.name</code> : <code>exists</code><br>
 - search <code>review.dat</code></p>
 
-<img width="1808" height="699" alt="image" src="https://github.com/user-attachments/assets/e1967417-e7d7-4a8e-b8e4-584181b52d6d" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e1967417-e7d7-4a8e-b8e4-584181b52d6d"><br>Rosana´s hands-on</p>
 
-
-<br>
 <br>
 <p>2.12. <em>Using the malicious command executed by the attacker from the first machine to move laterally, what is the parent process name of the malicious command executed on the second compromised machine?</em><br>
 <code>wsmprovhost.exe</code></p>
-
 <p>
 
-- update time range<br>
+- update <strong>Start date</strong> field<br>
 - filter <code>event.code</code> : <code>1</code><br>
 - filter <code>host.name</code> : <code>DC01.quicklogistics.org</code></p>
 
-<img width="1809" height="704" alt="image" src="https://github.com/user-attachments/assets/008017eb-9c08-4ef1-9f95-5642100af59c" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/008017eb-9c08-4ef1-9f95-5642100af59c"><br>Rosana´s hands-on</p>
 
-<br>
 <br>
 <p>2.13. <em>The attacker then dumped the hashes in this second machine. What is the username and hash of the newly dumped credentials? (format: username:hash)</em><br>
 <code>administrator:00f80f2538dcb54e7adc715c0e7091ec</code></p>
-
 <p>
 
 - filter <code>user.name</code> : <code>allan.smith</code><br>
 - filter <code>process.command_line</code> : <code>exists</code></p>
 
-<img width="1802" height="697" alt="image" src="https://github.com/user-attachments/assets/b1dbcfd8-80ee-4b97-8f68-155a71575796" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b1dbcfd8-80ee-4b97-8f68-155a71575796"><br>Rosana´s hands-on</p>
 
-<br>
 <br>
 <p>2.14. <em>After gaining access to the domain controller, the attacker attempted to dump the hashes via a DCSync attack. Aside from the administrator account, what account did the attacker dump?</em><br>
 <code>backupda</code></p>
-
 <p>
 
 - filter <code>event.code</code> : <code>1</code><br>
 - filter <code>host.name</code> : <code>DC01.quicklogistics.org</code><br>
 - search <code>DCSync</code></p>
 
-<img width="1809" height="699" alt="image" src="https://github.com/user-attachments/assets/1d0fcd44-f056-4f3a-86e4-b2a576e13450" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/1d0fcd44-f056-4f3a-86e4-b2a576e13450"><br>Rosana´s hands-on</p>
 
-
-<br>
 <br>
 <p>2.15. <em>After dumping the hashes, the attacker attempted to download another remote file to execute ransomware. What is the link used by the attacker to download the ransomware binary?</em><br>
 <code>http://ff.sillytechninja.io/ransomboogey.exe</code></p>
-
 <p>
 
 - filter <code>event.code</code> : <code>1</code><br>
-- filter <code>host.name</code> : <code>DC01.quicklogistics.org</code>
-- scroll down</p>
+- filter <code>host.name</code> : <code>DC01.quicklogistics.org</code></p>
 
-<img width="1803" height="702" alt="image" src="https://github.com/user-attachments/assets/0e2ff53a-0fa9-4af5-950b-4affaf5b3a69" />
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0e2ff53a-0fa9-4af5-950b-4affaf5b3a69"><br>Rosana´s hands-on</p>
 
 <br>
-<br>
 
+
+<h2>Summary</h2>
 
 <p>
-  
-- Aug 30, 2023 00:09:57.186 - downloaded a tool for credential dumping from GitHub<br>
-- Aug 30, 2023 00:19:52.889 - gained access to another machine<br>
-- Aug 30, 2023 00:19:52.889 - accessed a remote share<br>
-- Aug 30, 2023 00:21:53.284 - allan.smith executed malicious command on WKSTN-1327<br>
-- Aug 30, 2023 01:30:25.545 - allan.smith used itadmin´s credentials to move laterally on WKSTN-1327<br>
-- Aug 30, 2023 01:31:39.426 - allan.smith dumped new credentials (administrator)<br>
-- Aug 30, 2023 01:47:57.809 - as Administrator attempted to dump hashes via a DCSync attack on DC01<br>
-- Aug 30, 2023 01:53:13.738 - as Administrator attempted to download a ransomware binary on DC01</p>
+
+- Aug 30, 2023 00.09.57.186 - attacker <strong>evan.hutchinson</strong> tried to dump credentials using <strong>mimikatz</strong> tool from GitHub<br>
+- Aug 29, 2023 23:51:16.738 - attacker <strong>evan.hutchinson</strong> implanted <strong>review.dat</strong> executing <strong>xcopy.exe</strong><br>
+- Aug 29, 2023 23:51:16.771 - attacker <strong>evan.hutchinson</strong> executed <strong>rundll32.exe</strong> against <strong>review.dat</strong><br>
+- Aug 29, 2023 23:51:16.809 - attacker <strong>evan.hutchinson</strong> created the scheduled task <strong>Review</strong> as a persistence mechanism executing <strong>powershell.exe</strong><br>
+- Aug 29, 2023 23:54:16.129 - attacker <strong>evan.hutchinson</strong> discovered <strong>local administrator</strong> as the current access<br>
+- Aug 29, 2023 23:54:49.043 - attacker <strong>evan.hutchinson</strong> bypassed UAC executing <strong>foodhelper.exe</strong><br>
+- Aug 30, 2023 00:11:26.438 - attacker <strong>evan.hutchinson</strong> enumerated credentials on <strong>WKSTN-0051</strong> host<br>
+- Aug 30, 2023 00:13:37.090 - attacker <strong>evan.hutchinson</strong> tried to gain access to <strong>WKSTN-1327</strong> using <strong>itadmin</code>´s credentials<br>
+- Aug 30, 2023 00:19:52.889 - gained access to another machine, and accessed a remote share<br>
+- Aug 30, 2023 00:20:57.172 - attacker <strong>evan.hutchinson</strong> gained access to <strong>allan.smith</strong> moving laterally from host <strong>WKSTN-0051</strong> to <strong>WKSTN-1327</strong><br>
+- Aug 30, 2023 00:21:53.284 - as <strong>allan.smith</strong> attacker <strong>evan.hutchinson</strong> executed malicious command on WKSTN-1327<br>
+- Aug 30, 2023 00:20:59.159 - as <strong>allan.smith</strong> attacker <strong>evan.hutchinson</strong> executed <strong>wsmprovhost.exe</strong><br>
+- Aug 30, 2023 01:29:09.409 - as <strong>allan.smith</strong> attacker <strong>evan.hutchinson</strong> tried to dump credentials using <strong>mimikatz</strong> tool from GitHub<br>
+- Aug 30, 2023 01:30:25.545 - attacker <strong>evan.hutchinson</strong> tried to gain access to <strong>WKSTN-1327</strong> using <strong>itadmin</code>´s credentials through <strong>allan.smith</strong> access<br>
+- Aug 30, 2023 01:30:51.647 - as <strong>allan.smith</strong> attacker <strong>evan.hutchinson</strong> enumerated credentials on <strong>WKSTN-1327</strong> and discovered <strong>administrator</strong><br>
+- Aug 30, 2023 01:31:39.426 - as <strong>allan.smith</strong> attacker <strong>evan.hutchinson</strong> tried to dump <strong>Administrator</strong> credentials<br>
+- Aug 30, 2023 01:46:18.577 - as <strong>Administrator</strong> attacker <strong>evan.hutchinson</strong> tried to dump credentials using <strong>mimikatz</strong> tool from GitHub<br>
+- Aug 30, 2023 01:47:57.809 - as <strong>Administrator</strong> attacker <strong>evan.hutchinson</strong> dumped hashes via a DCSync attack on <strong>DC01</strong><br>
+- Aug 30, 2023 01:53:13.738 - as <strong>Administrator</strong> attacker <strong>evan.hutchinson</strong> downloaded the binary<strongramsomboogey.exe</strong> to <strong>DC-01</strong</p>
