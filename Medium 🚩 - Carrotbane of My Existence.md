@@ -1,8 +1,5 @@
 <h1 align="center">Carrotbane of My Existence</h1>
-<p align="center">22026, January 2 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from <a href="https://tryhackme.com"> TryHackMe</a> <a href="">here</a>.<br><br><img width="1200px" src=""></p>
-
-<img width="1892" height="395" alt="image" src="https://github.com/user-attachments/assets/dd4d5efb-b1a8-489a-9f2b-ae3cc6dbc6db" />
-
+<p align="center">22026, January 2 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from <a href="https://tryhackme.com"> TryHackMe</a> <a href="">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/dd4d5efb-b1a8-489a-9f2b-ae3cc6dbc6db"></p>
 
 <h2>Task 1 . Introduction</h2>
 
@@ -957,24 +954,27 @@ THM{•••••••••••••••••••••••••�
 ```
 
 
+
+
+
+<br>
+<br>
+
+
+<img width="1901" height="894" alt="image" src="https://github.com/user-attachments/assets/657bd5e7-de3e-4346-b1cb-fbad7857883b"  />
+
+<img width="1902" height="902" alt="image" src="https://github.com/user-attachments/assets/a53798fb-4693-4db4-b289-b97b5cde1424" />
+
 <img width="1381" height="90" alt="image" src="https://github.com/user-attachments/assets/7281c228-1173-44c5-9429-2f8e9df87cef" />
 
 
 
 
-<br>
-<br>
 
-<img width="1902" height="902" alt="image" src="https://github.com/user-attachments/assets/a53798fb-4693-4db4-b289-b97b5cde1424" />
+
+<img width="329" height="88" alt="image" src="https://github.com/user-attachments/assets/17b2e75b-867c-49da-b319-ec2337992832" />
 
 
 ![Uploading image.png…]()
-
-
-
-
-
-
-
 
 
