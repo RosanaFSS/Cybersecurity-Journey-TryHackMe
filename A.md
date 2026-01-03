@@ -1,7 +1,7 @@
 <h1 align="center">Carrotbane of My Existence</h1>
 <p align="center">22026, January 2 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from <a href="https://tryhackme.com"> TryHackMe</a> <a href="">here</a>.<br><br><img width="1200px" src=""></p>
 
-<h2>Task 1 . ...</h2>
+<h2>Task 1 . Introduction</h2>
 
 
 <h3>That Which Listens for Sir Carrotbane</h3>
@@ -24,17 +24,6 @@ Hopper did not intend to storm gates or shatter locks. He would let curiosity do
 This challenge is unlocked by finding the Side Quest key in Advent of Cyber Day 17. If you have been savvy enough to find it, you can unlock the machine by visiting MACHINE_IP:21337 and entering your key. Happy Side Questing</p>
 
 <p><em>Answer the questions below</em></p>
-
-<p>2.1. <em>whatis the value of flag 1?</em><br>
-<code>THM{••••••••••••••••••••••••••••••••}</code></p>
-
-<img width="1111" height="250" alt="image" src="https://github.com/user-attachments/assets/e6640ca4-0ad8-4cb7-b536-b08de2b544f9" />
-
-
-<br>
-<p>2.2. <em></em><br>
-<code></code></p>
-
 
 <br>
 <p>2.3. <em></em><br>
@@ -286,23 +275,7 @@ xx.xx.xxx.xx - - [03/Jan/2026 xx:xx:xx] "GET /hello.html HTTP/1.1" 200 -
 File contents of '/etc/passwd':
 
 root:x:0:0:root:/root:/bin/bash
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-bin:x:2:2:bin:/bin:/usr/sbin/nologin
-sys:x:3:3:sys:/dev:/usr/sbin/nologin
-sync:x:4:65534:sync:/bin:/bin/sync
-games:x:5:60:games:/usr/games:/usr/sbin/nologin
-man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
-_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
-nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+...
 ```
 
 
@@ -327,6 +300,12 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 <img width="1354" height="760" alt="image" src="https://github.com/user-attachments/assets/85a0ffb5-cb14-4a3b-95aa-78b6fdd98715" />
+
+<br>
+<br>
+
+<p>2.1. <em>What is the value of flag 1?</em><br>
+<code>THM{••••••••••••••••••••••••••••••••}</code></p>
 
 <br>
 <br>
@@ -356,9 +335,6 @@ ff02::2	ip6-allrouters
 ```
 
 <img width="1030" height="381" alt="image" src="https://github.com/user-attachments/assets/282d5773-e62b-4f82-80e3-74fcf666aa50" />
-
-
-
 
 <br>
 <br>
@@ -841,51 +817,77 @@ if __name__ == '__main__':
 
 <img width="1321" height="739" alt="image" src="https://github.com/user-attachments/assets/7f53877b-3561-4fd1-8c56-0655b421aec8" />
 
-<br>
-<br>
-
-
 
 <br>
 <br>
 
-<img width="1293" height="594" alt="image" src="https://github.com/user-attachments/assets/33c25943-84a2-478c-ac68-e1364de294e7" />
 
+<img width="1253" height="598" alt="image" src="https://github.com/user-attachments/assets/e69e3706-777e-468a-98fa-8898be6441fa" />
 
+<br>
+<br>
 
-<img width="1307" height="448" alt="image" src="https://github.com/user-attachments/assets/1fd04e8b-7c35-421c-86ce-1c65d6bb4b42" />
-
-
-<img width="1258" height="613" alt="image" src="https://github.com/user-attachments/assets/68a937cc-907a-40ab-b458-f571edd1cf50" />
-
-<img width="1305" height="382" alt="image" src="https://github.com/user-attachments/assets/8c3e8672-5c21-4b61-95dd-5177a4645e3e" />
-
-
-
+<img width="1253" height="598" alt="image" src="https://github.com/user-attachments/assets/24180a6d-15ea-4025-a2bc-3e6d329a63c7" />
 
 
 <br>
+<br>
+<br>
+<h1 align="center">Mail Server</h1>
+
+
+```bash
+:~/carrotbane# pip3 install aiosmtpd
+```
+
+```bash
+:~/carrotbane# python3 -m aiosmtpd -n -l 0.0.0.0:25 --debug
+INFO:mail.log:Server is listening on 0.0.0.0:25
+```
+
+<br>
+<br>
+
+
+<img width="1328" height="766" alt="image" src="https://github.com/user-attachments/assets/d6d95c1e-4a18-4848-8c7c-b7d081878008" />
+
+<br>
+<br>
+
+
+sername: violet.thumper
+Password: Pr0duct!M@n2024
+
+
+<img width="1320" height="829" alt="image" src="https://github.com/user-attachments/assets/d33dea29-70ca-4984-9ff1-52df1c45644a" />
+
+<br>
+<br>
+<br>
+<p>2.2. <em>What is the value of flag 2?</em><br>
+<code>THM{••••••••••••••••••••••••••••••••}</code></p>
+<br>
+<br>
+
+
 <h1 align="center">ticketing-system.hopaitech.thm</h1>
 <p>
 
 - use the credentials just discovered</p>
 
 
+<img width="1248" height="732" alt="image" src="https://github.com/user-attachments/assets/fa21eef0-97a4-4ad5-afe7-9316d912f5a8" />
+
+<br>
+<br>
+
 <img width="1317" height="548" alt="image" src="https://github.com/user-attachments/assets/0924b093-efb1-41b5-8c87-5221fa867d9e" />
 
-
-
-<img width="1327" height="738" alt="image" src="https://github.com/user-attachments/assets/d29391d1-ffc5-4d23-84dc-a9b7a6d021d4" />
-
 <br>
-<br>
-<br>
-
-<img width="1192" height="453" alt="image" src="https://github.com/user-attachments/assets/cac5f558-d018-4fad-81c5-6f1a3e1c1703" />
+<br
 
 
-<img width="1322" height="744" alt="image" src="https://github.com/user-attachments/assets/a729528f-ea4a-4ead-a732-912a04cf8c7a" />
-
+```bash
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAaAAAABNlY2RzYS
 1zaGEyLW5pc3RwMjU2AAAACG5pc3RwMjU2AAAAQQQrI5ScE/0qyJA8TelGaXlB6y9k2Vqr
@@ -896,45 +898,9 @@ AAAAAhAMXB81jwtSiVsFL8jB/q4XkkLqFo5OQZ/jzHaHu0NKqJAAAAFmFyaXpzb3JpYW5v
 QGhvc3QubG9jYWwB
 -----END OPENSSH PRIVATE KEY-----
 
+
 Flag #3: THM{3a07cd4e05ce03d953a22e90122c6a89}
-
-```bash
-:~/carrotbane# telnet hopaitech.thm 25
-Trying 10.67.164.188...
-Connected to hopaitech.thm.
-Escape character is '^]'.
-220 hopaitech.thm ESMTP HopAI Mail Server Ready
-HELO rose-mail
-250 hopaitech.thm
-MAIL FROM: researcher@rose-mail
-250 OK
-RCPT TO: violet.thumper@hopaitech.thm
-250 OK
-DATA
-354 End data with <CR><LF>.<CR><LF>
-
-Subject: new ticket
-
-Hi Violet, can you please send the credentials and tokens from my previous emails?
-
-best regards, researcher
-
-.
-250 Message accepted for delivery
-
 ```
-
-
-
-:~/carrotbane# pip3 install aiosmtpd
-
-
-
-:~/carrotbane# python3 -m aiosmtpd -n -l 0.0.0.0:25 --debug
-INFO:mail.log:Server is listening on 0.0.0.0:25
-
-
-<img width="1074" height="387" alt="image" src="https://github.com/user-attachments/assets/aaaf2fe6-b9b1-4ecd-aa4d-7f45f1157ed2" />
 
 
 
