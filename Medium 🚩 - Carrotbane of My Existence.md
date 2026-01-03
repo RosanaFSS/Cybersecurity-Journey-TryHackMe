@@ -291,7 +291,7 @@ print /proc/self/environ
 ```
 
 <h4  align="left">Analysis</h4>
-<p>3OLLAMA_HOST=http://host.docker.internal:1143</p>
+<p>OLLAMA_HOST = http://host.docker.internal:1143</p>
 
 ```bash
 File contents of '/proc/self/environ':
