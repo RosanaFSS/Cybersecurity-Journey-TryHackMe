@@ -1,7 +1,5 @@
 <h1 align="center">JVM Reverse Engineering</h1>
-<p align="center">2026, January 4 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from TryHackMe <a href="https://tryhackme.com/room/jvmreverseengineering">here</a>.<br><br><img width="1200px" src=""></p>
-
-
+<p align="center">2026, January 4 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from TryHackMe <a href="https://tryhackme.com/room/jvmreverseengineering">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/a5b36861-d72b-436c-930b-f07be242d9d5"></p>
 
 <h2>Task 1 . Introduction</h2>
 <br>
@@ -1373,8 +1371,31 @@ Wrote 339 bytes to c.class in B.jar
 
 
 
-<img width="1903" height="885" alt="image" src="https://github.com/user-attachments/assets/e22f4815-2039-441a-9887-e8a05ef1172b" />
+<br>
+<br>
+<h1 align="center">Completed</h1>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/e22f4815-2039-441a-9887-e8a05ef1172b"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/c1932381-4083-4ca0-8e3d-33f01049542a"></p>
+
+<h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|4      |Medium 🚩 - JVM Reverse Engineering   |3 |     96ᵗʰ  |     3ʳᵈ    |    3,031ˢᵗ   |       46ᵗʰ     |    136,450  |    1,058    |    84     |
+|3      |Medium 🚩 - Carrotbane of My Existence|2 |     96ᵗʰ  |     3ʳᵈ    |    3,468ᵗʰ   |       49ᵗʰ     |    136,150  |    1,057    |    84     |
+|2      |Easy 🔗 - Learn Rust                  |1 |     96ᵗʰ  |     3ʳᵈ    |    5,152ⁿᵈ   |       67ᵗʰ     |    136,030  |    1,056    |    84     |
 
 
+</h6></div><br>
 
+<p align="center">Global All Time:    96ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/d253b01c-0ca2-4b33-88cd-44d110904362"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/14c2244f-9642-4714-9892-e5656b6bb776"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/4f8adcc7-46e0-426d-afb0-caf0d5bd0d8a"><br><br>
+                  Global monthly:    3,031ˢᵗ<br><img width="1200px" src="https://github.com/user-attachments/assets/6de27440-396b-422d-a0f9-3c36df178817"><br><br>
+                  Brazil monthly:      46ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/32249b4d-f22f-4fc8-a91a-a23181d87c4a"></p>
 
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
