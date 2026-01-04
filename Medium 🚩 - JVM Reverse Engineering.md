@@ -1,4 +1,5 @@
-Medium 🚩 - JVM Reverse Engineering
+<h1 align="center">JVM Reverse Engineering</h1>
+<p align="center">2026, January 4 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from TryHackMe <a href="https://tryhackme.com/room/jvmreverseengineering">here</a>.<br><br><img width="1200px" src=""></p>
 
 
 
@@ -585,17 +586,21 @@ You can use asm to programmatically remove obfuscation in java applications. Jav
 <p><em>Answer the question below</em></p>
 
 <p>5.1. <em>Read the above</em><br>
-<code>NO answer needed</code></p>
+<code>No answer needed</code></p>
 
 
 <br>
 <h2>Task 6 . Advanced String Obfuscation</h2>
-<p>This program follows the same logic as the previous task, however it has a custom obfuscation layered on top. You might require a decompiler for this, as well as custom tools. This uses anti virtualisation techniques as well, so be warned.
+<p>This program follows the same logic as the previous task, however it has a custom obfuscation layered on top. You might require a decompiler for this, as well as custom tools. This uses anti virtualisation techniques as well, so be warned.</p>
   
 <p><em>Answer the question below</em></p>
 
 <p>6.1. <em>Find the correct password</em> Hint: You will either need to statically reverse engineer the string deobfuscation functions or use some kind of custom made virtualisation tool<br>
-<code>NO answer needed</code></p>
+<code>••••••••••••••••••••••••••</code></p>
+
+
+<img width="966" height="410" alt="image" src="https://github.com/user-attachments/assets/11082ec5-6042-4adf-85c3-107445ac2f88" />
+
 
 ```bash
 :~$ file BasicStringObfuscation-obf.zip
@@ -899,5 +904,477 @@ public final class 1
 ```
 
 ```bash
-
+# file BasicStringObfuscation-obf.zip
+BasicStringObfuscation-obf.zip: Java archive data (JAR)
 ```
+
+```bash
+:~/JVMReverseEngineering/Krakatau/target/release# mv BasicStringObfuscation-obf.zip BasicStringObfuscation-obf.jar
+```
+
+```bash
+:~/JVMReverseEngineering/Krakatau/target/release# file BasicStringObfuscation-obf.jar
+BasicStringObfuscation-obf.jar: Java archive data (JAR)
+```
+
+```bash
+:~/JVMReverseEngineering/Krakatau# cargo build --release
+```
+
+```bash
+:~/JVMReverseEngineering/Krakatau# rustc --version
+rustc 1.87.0 (17067e9ac 2025-05-09)
+```
+
+```bash
+:~/JVMReverseEngineering/Krakatau# ls
+Cargo.lock  Cargo.toml  docs  examples  Foo.class  LICENSE.TXT  README.md  rustfmt.toml  src  target
+```
+
+```bash
+:~/JVMReverseEngineering/Krakatau/target/release# ls
+BasicStringObfuscation-obf.zip  build  deps  examples  incremental  krak2  krak2.d
+```
+
+```bash
+:~/JVMReverseEngineering/Krakatau/target/release# ./krak2 dis --out challenge.zip --roundtrip BasicStringObfuscation-obf.jar
+disassemble 0.class
+Wrote 4758 bytes to 0.j in challenge.zip
+disassemble 1.class
+Wrote 8241 bytes to 1.j in challenge.zip
+disassemble c.class
+Wrote 1739 bytes to c.j in challenge.zip
+```
+
+<img width="1225" height="159" alt="image" src="https://github.com/user-attachments/assets/ee863aa8-a2a7-43ca-bf90-37b7674285cd" />
+
+<br>
+<br>
+<br>
+
+```bash
+:~/JVMReverseEngineering/Krakatau/target/release# unzip challenge.zip -d challenge
+Archive:  challenge.zip
+ extracting: challenge/0.j           
+ extracting: challenge/1.j           
+ extracting: challenge/c.j           
+```
+
+<img width="1221" height="154" alt="image" src="https://github.com/user-attachments/assets/e34ff097-3d8e-4f19-b774-2ac651c1baea" />
+
+<br>
+<br>
+<br>
+
+```bash
+:~/JVMReverseEngineering/Krakatau/target/release/challenge# ls
+0.j  1.j  c.j
+```
+
+<img width="1219" height="72" alt="image" src="https://github.com/user-attachments/assets/551c8a08-f0c5-46cb-9ea4-418e617612f2" />
+
+<br>
+<br>
+<br>
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release/challenge# file 0.j
+0.j: ASCII text
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release/challenge# cat 0.j
+.version 52 0
+.class public super [3]
+.super [5]
+.field public static [6] [7]
+
+.method static [8] : [9]
+    .attribute [69] .code stack 2 locals 0
+L0:     iconst_5
+L1:     bipush 78
+L3:     invokestatic [15]
+L6:     putstatic [17]
+L9:     return
+L10:    
+    .end code
+.end method
+
+.method public static [18] : [19]
+    .attribute [69] .code stack 3 locals 3
+L0:     aload_0
+L1:     arraylength
+L2:     ldc2_w [22]
+L5:     l2i
+L6:     ldc [24]
+L8:     ixor
+L9:     if_icmplt L82
+L12:    iconst_0
+L13:    bipush 100
+L15:    aconst_null
+L16:    pop
+L17:    invokestatic [15]
+L20:    astore_1
+        .catch [21] from L21 to L31 using L34
+L21:    aload_0
+L22:    ldc2_w [25]
+L25:    l2i
+L26:    ldc [27]
+L28:    ixor
+L29:    aaload
+L30:    astore_1
+L31:    goto L37
+
+        .stack full
+            locals Object [50] Object [32]
+            stack Object [21]
+        .end stack
+L34:    astore_2
+L35:    aload_2
+L36:    athrow
+
+        .stack same
+L37:    iconst_1
+L38:    bipush 95
+L40:    aconst_null
+L41:    pop
+L42:    invokestatic [15]
+L45:    invokestatic [30]
+L48:    aload_1
+L49:    invokevirtual [36]
+L52:    ifeq L69
+L55:    getstatic [42]
+L58:    iconst_2
+L59:    iconst_2
+L60:    invokestatic [15]
+L63:    invokevirtual [48]
+L66:    goto L81
+
+        .stack same
+L69:    getstatic [42]
+L72:    iconst_3
+L73:    bipush 38
+L75:    invokestatic [15]
+L78:    invokevirtual [48]
+
+        .stack same
+L81:    return
+
+        .stack chop 1
+L82:    getstatic [42]
+L85:    iconst_4
+L86:    bipush 87
+L88:    invokestatic [15]
+L91:    invokevirtual [48]
+L94:    return
+L95:    
+        .attribute [70] .stackmaptable
+    .end code
+.end method
+
+.method public [51] : [9]
+    .attribute [69] .code stack 1 locals 1
+L0:     aload_0
+L1:     invokespecial [53]
+L4:     return
+L5:     
+    .end code
+.end method
+
+.method public static [6] : [28]
+    .attribute [69] .code stack 6 locals 5
+L0:     aload_0
+L1:     invokevirtual [57]
+L4:     astore_1
+L5:     aload_1
+L6:     arraylength
+L7:     newarray char
+L9:     astore_2
+L10:    ldc2_w [58]
+L13:    l2i
+L14:    ldc [60]
+L16:    ixor
+L17:    istore_3
+
+        .stack append Object [68] Object [68] Integer
+L18:    iload_3
+L19:    aload_2
+L20:    arraylength
+L21:    if_icmpge L51
+L24:    aload_1
+L25:    iload_3
+L26:    caload
+L27:    istore 4
+L29:    aload_2
+L30:    iload_3
+L31:    iload 4
+L33:    iload_3
+L34:    ldc2_w [61]
+L37:    l2i
+L38:    ldc [63]
+L40:    ixor
+L41:    iand
+L42:    ixor
+L43:    i2c
+L44:    castore
+L45:    iinc 3 1
+L48:    goto L18
+
+        .stack same
+L51:    new [32]
+L54:    dup
+L55:    aload_2
+L56:    invokespecial [66]
+L59:    areturn
+L60:    
+        .attribute [70] .stackmaptable
+    .end code
+.end method
+.const [1] = Utf8 "Protected by Binscure"
+.const [2] = Utf8 "0"
+.const [3] = Class [2]
+.const [4] = Utf8 java/lang/Object
+.const [5] = Class [4]
+.const [6] = Utf8 c
+.const [7] = Utf8 Ljava/lang/String;
+.const [8] = Utf8 <clinit>
+.const [9] = Utf8 ()V
+.const [10] = Utf8 "1"
+.const [11] = Class [10]
+.const [12] = Utf8 a
+.const [13] = Utf8 (II)Ljava/lang/String;
+.const [14] = NameAndType [12] [13]
+.const [15] = Method [11] [14]
+.const [16] = NameAndType [6] [7]
+.const [17] = Field [3] [16]
+.const [18] = Utf8 main
+.const [19] = Utf8 ([Ljava/lang/String;)V
+.const [20] = Utf8 java/lang/IndexOutOfBoundsException
+.const [21] = Class [20]
+.const [22] = Long 1506594314L
+.const [24] = Int 1506594315
+.const [25] = Long -753045066L
+.const [27] = Int -753045066
+.const [28] = Utf8 (Ljava/lang/String;)Ljava/lang/String;
+.const [29] = NameAndType [6] [28]
+.const [30] = Method [3] [29]
+.const [31] = Utf8 java/lang/String
+.const [32] = Class [31]
+.const [33] = Utf8 equals
+.const [34] = Utf8 (Ljava/lang/Object;)Z
+.const [35] = NameAndType [33] [34]
+.const [36] = Method [32] [35]
+.const [37] = Utf8 java/lang/System
+.const [38] = Class [37]
+.const [39] = Utf8 out
+.const [40] = Utf8 Ljava/io/PrintStream;
+.const [41] = NameAndType [39] [40]
+.const [42] = Field [38] [41]
+.const [43] = Utf8 java/io/PrintStream
+.const [44] = Class [43]
+.const [45] = Utf8 println
+.const [46] = Utf8 (Ljava/lang/String;)V
+.const [47] = NameAndType [45] [46]
+.const [48] = Method [44] [47]
+.const [49] = Utf8 [Ljava/lang/String;
+.const [50] = Class [49]
+.const [51] = Utf8 <init>
+.const [52] = NameAndType [51] [9]
+.const [53] = Method [5] [52]
+.const [54] = Utf8 toCharArray
+.const [55] = Utf8 ()[C
+.const [56] = NameAndType [54] [55]
+.const [57] = Method [32] [56]
+.const [58] = Long 1072331622L
+.const [60] = Int 1072331622
+.const [61] = Long -1108647316L
+.const [63] = Int -1108647314
+.const [64] = Utf8 ([C)V
+.const [65] = NameAndType [51] [64]
+.const [66] = Method [32] [65]
+.const [67] = Utf8 [C
+.const [68] = Class [67]
+.const [69] = Utf8 Code
+.const [70] = Utf8 StackMapTable
+.end class
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# cat r/0.j r/1.j r/c.j > reverse.j  && ./krak2 asm --out reverse.jar reverse.j
+got 3 classes
+Wrote 1017 bytes to 0.class in reverse.jar
+Wrote 1537 bytes to 1.class in reverse.jar
+Wrote 339 bytes to c.class in reverse.jar
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# file reverse.jar
+reverse.jar: Zip archive data, at least v2.0 to extract
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# java -cp reverse.jar 0
+••••••••••••••••••••••••••
+```
+
+<img width="1223" height="224" alt="image" src="https://github.com/user-attachments/assets/8db2f211-973d-4904-b8f0-000ee4139253" />
+
+<br>
+<br>
+<br>
+<h2>Task 7 . Extreme Obf</h2>
+<p>This final jar has nearly every exploit I know packed into it. I dont know of any decompilers that will work for it. You will have to use custom tools and bytecode analysis to pick apart this one.<br>
+
+Same format as the previous tasks, takes one argument as the password.</p>
+  
+<p><em>Answer the question below</em></p>
+
+<p>7.1. <em>What is the correct password?</em> Hint: You will need custom tools for this one! Feel free to ask mastercooker#7021 on discord for help.<br>
+<code>•••••••••••••••••••••••••••</code></p>
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# file Task7.zip
+Task7.zip: Java archive data (JAR)
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# which binwalk
+/usr/bin/binwalk
+```
+
+<br>
+<p>
+
+- 0.class<br>
+- 1.class<br>
+- c.class<br>
+- .zipe file<br> the very first entry found by binwalk is is 0x4F in hexadecimal<br>line 79 0x4F Zip archive data... tells binwalk that a zip structure begins exactly there.</p>
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# binwalk -e Task7.jar
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+79            0x4F            Zip archive data, at least v2.0 to extract, name: META-INF/MANIFEST.MF
+163           0xA3            Zip archive data, at least v2.0 to extract, name: 0.class
+219           0xDB            Zip archive data, at least v2.0 to extract, name: 0.class
+274           0x112           Zip archive data, at least v2.0 to extract, name: 0.class
+2560          0xA00           Zip archive data, at least v2.0 to extract, name: 1.class
+2616          0xA38           Zip archive data, at least v2.0 to extract, name: 1.class
+2671          0xA6F           Zip archive data, at least v2.0 to extract, name: 1.class
+4409          0x1139          Zip archive data, at least v2.0 to extract, name: c.class
+5232          0x1470          End of Zip archive, footer length: 32022, comment: "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+...
+```
+
+<img width="1374" height="474" alt="image" src="https://github.com/user-attachments/assets/43edf9c8-1e5d-46cd-8999-52b118f952da" />
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# ls
+build  deps  examples  extreme.zip  incremental  krak2  krak2.d  Task7.jar  _Task7.jar.extracted
+```
+
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# ls
+build  deps  examples  extreme.zip  incremental  krak2  krak2.d  Task7.jar  _Task7.jar.extracted
+```
+
+```bash
+(rose) ..:~/JVMReverseEngineering/Krakatau/target/release# cd _Task7.jar.extracted
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release/_Task7.jar.extracted# ls -lah
+total 68K
+drwxr-xr-x 3 root root 4.0K Jan  4 21:55 .
+drwxr-xr-x 8 root root 4.0K Jan  4 22:00 ..
+-rw-r--r-- 1 root root 4.2K Mar 12  2020 0.class
+-rw-r--r-- 1 root root 3.0K Mar 12  2020 1.class
+-rw-r--r-- 1 root root  37K Jan  4 21:55 4F.zip
+-rw-r--r-- 1 root root  339 Mar 12  2020 c.class
+drwxr-xr-x 2 root root 4.0K Jan  4 21:55 META-INF
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# file 4F.zip
+4F.zip: Zip archive data, at least v2.0 to extract
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# ./krak2 dis --out 1.j --roundtrip 1.class
+disassemble 1.class
+Wrote 16378 bytes to 1.j
+```
+
+```bash
+(rose) ..:~/JVMReverseEngineering/Krakatau/target/release# ./krak2 dis --out 0.j --roundtrip 0.class
+disassemble 0.class
+Wrote 2529
+9 bytes to 0.j
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# ./krak2 dis --out c.j --roundtrip c.class
+disassemble c.class
+Wrote 1741 bytes to c.j
+```
+
+
+<img width="1274" height="552" alt="image" src="https://github.com/user-attachments/assets/071ebd9f-557b-47da-a379-293bd25abb06" />
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# cat 0.j 1.j c.j > galatic.j && ./krak2 asm --out rev.jar galatic.j
+got 3 classes
+Wrote 4278 bytes to 0.class in rev.jar
+Wrote 3029 bytes to 1.class in rev.jar
+Wrote 339 bytes to c.class in rev.jar
+```
+
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# zip -u rev.jar 4F.zip
+  adding: 4F.zip (stored 0%)
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# java -cp rev.jar 0
+WpUtETnF1JGrDkSsTd5G1w2dN0h
+```
+
+<p>😔</p>
+<br>
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# nano 0.j
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# cat 0.j 1.j c.j > A.j && ./krak2 asm --out B.jar A.j
+got 3 classes
+Wrote 4282 bytes to 0.class in B.jar
+Wrote 3029 bytes to 1.class in B.jar
+Wrote 339 bytes to c.class in B.jar
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# zip -u B.jar 4F.zip
+  adding: 4F.zip (stored 0%)
+```
+
+```bash
+(rose) ...:~/JVMReverseEngineering/Krakatau/target/release# java -cp B.jar 0
+•••••••••••••••••••••••••••
+```
+
+<img width="1273" height="253" alt="image" src="https://github.com/user-attachments/assets/867930b8-5da5-47b7-b1dd-bbe9e42748de" />
+
+
+
+
+
+
+<img width="1903" height="885" alt="image" src="https://github.com/user-attachments/assets/e22f4815-2039-441a-9887-e8a05ef1172b" />
+
+
+
+
