@@ -1,5 +1,5 @@
 <h1 align="center">Linux Strength Training</h1>
-<p align="center">2026, January 6 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a> Let´s learn together. Access the challenge from TryHackMe <a href="https://tryhackme.com/room/linuxstrengthtraining">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/2b245907-b535-4d7a-ae44-f3291310720a"></p>
+<p align="center">2026, January 6 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/linuxstrengthtraining">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/2b245907-b535-4d7a-ae44-f3291310720a"></p>
 
 <h2>Task 1 . Intro</h2>
 <p>This room is intended to further the understanding of basic Linux command line skills for beginners.<br>
