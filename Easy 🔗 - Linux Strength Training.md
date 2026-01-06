@@ -1,3 +1,8 @@
+<h1>Linux Strength Training</h1>
+
+<img width="1902" height="410" alt="image" src="https://github.com/user-attachments/assets/2b245907-b535-4d7a-ae44-f3291310720a" />
+
+
 
 <h2>Task 4 . Hashing - Introduction</h2>
 
@@ -281,6 +286,61 @@ mysql> source employees.sql
 <img width="1212" height="639" alt="image" src="https://github.com/user-attachments/assets/d7c57398-b436-4f47-aaa9-1318b43b0a46" />
 
 
+<img width="1211" height="143" alt="image" src="https://github.com/user-attachments/assets/12fa47c6-d92e-4072-8dd1-455d08099a5a" />
+
+<img width="1210" height="150" alt="image" src="https://github.com/user-attachments/assets/1d591568-b143-4e93-aade-ab580f23ffd4" />
+
+sarah@james:/home/shared$ find / -type f -size 50M 2>/dev/null
+/home/shared/sql/conf/JKpN
+
+<img width="1120" height="500" alt="image" src="https://github.com/user-attachments/assets/49fec986-1af7-4f99-8dfd-4af96de8b352" />
+
+
+
+<img width="1124" height="138" alt="image" src="https://github.com/user-attachments/assets/bf86155b-9efd-4c00-88a5-ddf99605de24" />
+
+
+<img width="1120" height="500" alt="image" src="https://github.com/user-attachments/assets/dbc3764e-bf42-47f5-8ed9-edf92ba47e6a" />
+
+<img width="1119" height="84" alt="image" src="https://github.com/user-attachments/assets/a119f11a-4103-4345-aa9f-1f654d52799e" />
+
+sameer@james:~/History LB/labmind/latestBuild/configBDB$ grep -iR ebq
+pLmjwi:ebqiojsdfioj
+pLmjwi:ebqiojsiodj
+pLmjwi:ebqiojdifoj
+pLmjwi:ebqiopsjdfopj
+pLmjwi:ebqnice
+pLmjwi:ebqops
+LmqAQl:ebqiuiud
+LmqAQl:ebqjoisjdfij
+Ulpsmt:ebqkjjdd
+Ulpsmt:ebqijsji
+Ulpsmt:ebqopkopk
+Ulpsmt:ebqattle
+
+
+
+sameer@james:~/History LB/labmind/latestBuild/configBDB$ grep -ihR ebq wordlist.txt
+ebqiojsdfioj
+ebqiojsiodj
+ebqiojdifoj
+ebqiopsjdfopj
+ebqnice
+ebqops
+ebqiuiud
+ebqjoisjdfij
+ebqkjjdd
+ebqijsji
+ebqopkopk
+ebqattle
+
+<img width="1205" height="286" alt="image" src="https://github.com/user-attachments/assets/a005bf96-752b-4895-8645-77446d167ba3" />
+
+
+
+root@ip-10-66-105-168:~# scp 'sarah@10.66.143.143:/home/shared/sql/2020-08-13.zip.gpg' .
+sarah@10.66.143.143's password: 
+2020-08-13.zip.gpg                                                                                                          100%  102MB 112.7MB/s   00:00 
 
 
 
