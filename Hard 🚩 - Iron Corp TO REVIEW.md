@@ -3,7 +3,7 @@
 <em>Can you get access to Iron Corp's system?</em>?<br>
 <img width="80px" src="https://github.com/user-attachments/assets/3ca6aff2-34c6-43ea-89e8-01a22a793524"><br>
 Access this walkthrough room clicking <a href="https://tryhackme.com/room/ironcorp">here </a>.<br>
-<img width="1200px" src="https://github.com/user-attachments/assets/b7cf893f-e0ad-4b8e-9f53-46b54516f860"></p>
+<img width="1200px" src=" "></p>
 
 <br>
 <br>
