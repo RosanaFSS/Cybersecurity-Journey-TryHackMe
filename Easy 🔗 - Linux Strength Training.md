@@ -1,5 +1,5 @@
 <h1 align="center">Linux Strength Training</h1>
-<p align="center">2026, January 6 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/linuxstrengthtraining">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/2b245907-b535-4d7a-ae44-f3291310720a"></p>
+<p align="center">2026, January 5 - 6 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/linuxstrengthtraining">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/f1e73770-d7ab-4129-a585-dc131b6b36f1"></p>
 
 <h2>Task 1 . Intro</h2>
 <p>This room is intended to further the understanding of basic Linux command line skills for beginners.<br>
@@ -34,22 +34,147 @@ If you have read and understood this please begin by clicking the 'completed' bu
 <code>find /home/francis -type f -user francis -size 52k</code></p>
 <br>
 
+```bash
+:~# ssh topson@MACHINE_IP
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/85f5e2f6-09a6-48ef-9cf6-92d5a5e4b60e"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~$ cd chatlogs
+```
+
+```bash
+topson@james:~/chatlogs$ grep -iRl keyword
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/37653880-d8b6-4e22-a579-7f4f79c43c8a"><br>Rosana´s hands-on</h6>
+<br>
 <p>2.4. <em>SSH as <strong>topson</strong> using his password <strong>topson</strong>. Go to the /home/topson/chatlogs directory and type the following: grep -iRl 'keyword'. What is the name of the file that you found using this command?</em><br>
 <code>2019-10-11</code></p>
 <br>
 
+```bash
+topson@james:~/chatlogs$ less 2019-10-11
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/dc24e3b4-b119-4522-b9c3-9e5ef4894751"><br>Rosana´s hands-on</h6>
+
+<br>
 <p>2.5. <em>Type: less [filename] to open the file. Then, before anything, type / before typing: keyword followed by [ENTER]. Notice how that allowed us to search for the first instance of that word in the entire document. For much larger documents this can be useful and if there are many more instances of that word in the document, we would be able to hit enter again to find the next instance in the document.</em><br>
 <code>No answer needed</code></p>
 <br>
 
 <p>2.6. <em>What are the characters subsequent to the word you found?</em><br>
 <code>ttitor</code></p>
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b453e188-e079-481d-a7ba-350936e860cc"><br>Rosana´s hands-on</h6>
+
+<br>
+<p>2.7. <em>Read the file named 'ReadMeIfStuck.txt'. What is the Flag?</em><br>
+<code>Flag{81726350827fe53g}</code></p>
 <br>
 
-<p>2.7. <em>What are the characters subsequent to the word you found?</em><br>
-<code>Read the file named 'ReadMeIfStuck.txt'. What is the Flag?</code></p>
+```bash
+topson@james:~/chatlogs$ find /home/topson -type f -name ReadMeIfStuck.txt
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/4bf978d4-5623-4f88-9537-4735efb8b126"><br>Rosana´s hands-on</h6>
 <br>
 
+```bash
+topson@james:~/chatlogs$ cd ..
+```
+
+```bash
+topson@james:~$ cat ReadMeIfStuck.txt
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/16fdcaa2-e373-4bf6-aab7-af7401170e81"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~$ find /home/topson -type f -name ReadMe_hint.txt
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/8512f50e-4bdc-4174-b720-eb945e207bcd"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~$ cat ReadMe_hint.txt
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/f1e9ac0c-8a52-444f-8d01-e359b04c1d48"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~$ find /home/topson -type f -name additionalHINT
+```
+
+```bash
+topson@james:~$ cat ~/channels/additionalHINT
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/bffec590-0363-4174-94aa-a7d79e874207"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~$ find /home/topson -type d -name 'telephone numbers'
+/home/topson/corperateFiles/xch/telephone numbers
+```
+
+```bash
+topson@james:~$ cd ~/corperateFiles/xch/telephone\ numbers
+```
+
+```bash
+topson@james:~/corperateFiles/xch/telephone numbers$ ls
+readME.txt
+```
+
+```bash
+topson@james:~/corperateFiles/xch/telephone numbers$ cat readME.txt
+202-555-0150
+202-555-0125
+617-555-0115
++1-617-555-0115 
++1-617-555-0186
++1-617-555-0138
+use the Find command to find a file with a modified date of 2016-09-12 from the /workflows directory
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0ecad796-56c0-40b0-9b3d-a52507c417bb"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~/corperateFiles/xch/telephone numbers$ find /home/topson -type f -newermt 2016-09-11 ! -newermt 2016-09-13
+/home/topson/workflows/xft/eBQRhHvx
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/ed566260-7985-4922-9839-b458d27e98fa"><br>Rosana´s hands-on</h6>
+<br>
+
+```bash
+topson@james:~/corperateFiles/xch/telephone numbers$ cd /home/topson/workflows/xft/
+```
+
+```bash
+topson@james:~/workflows/xft$ ls
+aLSoIsuX  BfDEKoeG  CHLl      cMbA  DuJlEoJX  ELkrEJGW	FALSsHZN  FRFTpolR  hpCuBXdf  IRqf	rfoiut
+azSBdFaZ  buWsUiSs  ciDPfXBp  dKPr  eBQRhHvx  eQiWCIhg	FdAv	  fxEACsnW  ILEv      ituqQwoV	uefnoyhw
+```
+
+```bash
+topson@james:~/workflows/xft$ less EBQRhHvx
+```
+
+```bash
+:/Flag
+```
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/0ecfdd46-4eeb-47d2-a2eb-5c4c8db6270e"><br>Rosana´s hands-on</h6>
+<br>
 
 <h2>Task 3 . Working with files</h2>
 <br>
@@ -513,22 +638,21 @@ mysql> source employees.sql
 
 <br>
 <p>9.3. <em>What is the password for the sql database back-up copy</em> Hint: Since the password begins with 'ebq', using grep to find all wordlists with this keyword may help. Once that's done, combining all wordlists with this keyword may help. Then you could find a way to cut out any words from the new created wordlist that do not begin with ebq. Also: can 'cat [wordlist.txt] >' be used to combine multiple wordlists into one?<br>
-<code>_____________________</code></p>
+<code>ebqattle</code></p>
+
+<img width="1299" height="369" alt="image" src="https://github.com/user-attachments/assets/7e8bbd37-ade6-480f-86bf-f95c6873c536" />
 
 <br>
 <p>9.4. <em>Find the SSH password of the user James. What is the password?</em><br>
-<code>_____________________</code></p>
+<code>vuimaxcullings</code></p>
 
 <br>
 <p>9.5. <em>SSH as james and change the user to root?</em> Hint: How do we change user again?<br>
-<code>_____________________</code></p>
+<code>No answer needed</code></p>
 
 <br>
 <p>9.6. <em>What is the root flag?</em> Hint: Look everywhere<br>
-<code>_____________________</code></p>
-
-
-
+<code>Flag{6$8$hyJSJ3KDJ3881}</code></p>
 
 <img width="1206" height="336" alt="image" src="https://github.com/user-attachments/assets/028dd2a9-0e5f-41f1-8289-91a616c89354" />
 
@@ -547,7 +671,6 @@ sarah@james:/home/shared$ find / -type f -size 50M 2>/dev/null
 <img width="1120" height="500" alt="image" src="https://github.com/user-attachments/assets/49fec986-1af7-4f99-8dfd-4af96de8b352" />
 
 
-
 <img width="1124" height="138" alt="image" src="https://github.com/user-attachments/assets/bf86155b-9efd-4c00-88a5-ddf99605de24" />
 
 
@@ -555,24 +678,10 @@ sarah@james:/home/shared$ find / -type f -size 50M 2>/dev/null
 
 <img width="1119" height="84" alt="image" src="https://github.com/user-attachments/assets/a119f11a-4103-4345-aa9f-1f654d52799e" />
 
-```bash
-sameer@james:~/History LB/labmind/latestBuild/configBDB$ grep -iR ebq
-pLmjwi:ebqiojsdfioj
-pLmjwi:ebqiojsiodj
-pLmjwi:ebqiojdifoj
-pLmjwi:ebqiopsjdfopj
-pLmjwi:ebqnice
-pLmjwi:ebqops
-LmqAQl:ebqiuiud
-LmqAQl:ebqjoisjdfij
-Ulpsmt:ebqkjjdd
-Ulpsmt:ebqijsji
-Ulpsmt:ebqopkopk
-Ulpsmt:ebqattle
-```
+
 
 ```bash
-sameer@james:~/History LB/labmind/latestBuild/configBDB$ grep -ihR ebq wordlist.txt
+sameer@james:~/History LB/labmind/latestBuild/configBDB$ grep -ihR ebq
 ebqiojsdfioj
 ebqiojsiodj
 ebqiojdifoj
@@ -587,15 +696,167 @@ ebqopkopk
 ebqattle
 ```
 
-<img width="1205" height="286" alt="image" src="https://github.com/user-attachments/assets/a005bf96-752b-4895-8645-77446d167ba3" />
+<img width="1307" height="302" alt="image" src="https://github.com/user-attachments/assets/e5a2c691-617e-4803-96a5-4a815db3e832" />
+
+```bash
+sameer@james:/home/shared/sql$ ls
+2020-08-13.zip.gpg  conf
+```
+
+<img width="1311" height="80" alt="image" src="https://github.com/user-attachments/assets/e26b7cac-ee5c-4e71-9c88-26a6bc573084" />
 
 
 ```bash
-:~# scp 'sarah@10.66.143.143:/home/shared/sql/2020-08-13.zip.gpg' .
-sarah@10.66.143.143's password: 
-2020-08-13.zip.gpg                                                                                                          100%  102MB 112.7MB/s   00:00 
+sarah@james:/home/shared/sql$ gpg 2020-08-13.zip.gpg
+gpg: keybox '/home/sarah/.gnupg/pubring.kbx' created
+gpg: WARNING: no command supplied.  Trying to guess what you mean ...
+gpg: AES256 encrypted data
+gpg: encrypted with 1 passphrase
+```
+
+```bash
+sameerjames:/home/shared/sql$ ls
+2020-08-13.zip	2020-08-13.zip.gpg  conf
+```
+
+```bash
+sameer@james:/home/shared/sql$ unzip 2020-08-13.zip
+```
+
+```bash
+sameer@james:/home/shared/sql/2020-08-13$ ls
+Changelog		       images		       load_employees.dump  load_titles.dump  show_elapsed.sql	      test_versions.sh
+employees_partitioned_5.1.sql  load_departments.dump   load_salaries1.dump  objects.sql       sql_test.sh
+employees_partitioned.sql      load_dept_emp.dump      load_salaries2.dump  README.md	      test_employees_md5.sql
+employees.sql		       load_dept_manager.dump  load_salaries3.dump  sakila	      test_employees_sha.sql
+```
+
+```bash
+sameer@james:/home/shared/sql/2020-08-13$ grep -iRl james
+load_employees.dump
+sakila/sakila-mv-data.sql
+```
+
+```bash
+sameer@james:/home/shared/sql/2020-08-13$ grep -ia james load_employees.dump
+(499996,'1953-03-07','James','vuimaxcullings','M','1990-09-27'),
 ```
 
 
+<br>
+<p>password</p>
 
+```bash
+sameer@james:/home/shared/sql/2020-08-13$ mysql -u sameer -p
+Enter password:
+...
+mysql>
+```
+
+
+```bash
+mysql> source employees.sql
+```
+
+```bash
+mysql> show DATABASES;
+```
+
+<img width="1356" height="745" alt="image" src="https://github.com/user-attachments/assets/315694cc-ffaa-4c0c-8b65-71273980f9fd" />
+
+```bash
+mysql> use employees;
+```
+
+```bash
+mysql> show TABLES;
+```
+
+<img width="1352" height="586" alt="image" src="https://github.com/user-attachments/assets/b386cbd9-ff0f-4c91-ab1e-452465e2daef" />
+
+
+```bash
+mysql> DESCRIBE employees;
+```
+
+```bash
+mysql> DESCRIBE employees;
+```
+
+```bash
+mysql> SELECT * FROM employees WHERE first_name LIKE "james";
+```
+
+
+<img width="1351" height="200" alt="image" src="https://github.com/user-attachments/assets/eaad6854-7fa2-4506-ba32-bc9ad7c8099e" />
+
+
+
+<img width="1352" height="189" alt="image" src="https://github.com/user-attachments/assets/a7fd9136-8cef-44bd-9608-c289214f84de" />
+
+```bash
+james@james:~$ id
+uid=1000(james) gid=1000(james) groups=1000(james),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+```
+
+```bash
+james@james:~$ sudo -l
+[sudo] password for james: 
+Matching Defaults entries for james on james:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User james may run the following commands on james:
+    (ALL : ALL) ALL
+```
+
+```bash
+james@james:~$ sudo su
+root@james:/home/james#
+```
+
+```bash
+root@james:/home/james# ls /root
+root.txt
+```
+
+```bash
+root@james:/home/james# cat /root/root.txt
+Flag{6$8$hyJSJ3KDJ3881}
+
+NOW YOU ARE LINUX STRONGER!!!
+```
+
+<img width="1349" height="353" alt="image" src="https://github.com/user-attachments/assets/9c191e37-eace-44c2-b57c-a57119ac9e7d" />
+
+<br>
+<br>
+<h1 align="center">Completed</h1>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/9c4ae6a2-8d8c-4241-8c63-e2b74e9deaa3"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/b6eeba24-ab6e-4ecf-b8f0-95daf17b4302"></p>
+
+
+
+<h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|6      |Easy 🔗 - Linux Strength Training     |5 |     98ᵗʰ  |     3ʳᵈ    |    3,172ⁿᵈ   |       47ᵗʰ     |    136,608  |    1,059    |    84     |
+|4      |Medium 🚩 - JVM Reverse Engineering   |3 |     96ᵗʰ  |     3ʳᵈ    |    3,031ˢᵗ   |       46ᵗʰ     |    136,450  |    1,058    |    84     |
+|3      |Medium 🚩 - Carrotbane of My Existence|2 |     96ᵗʰ  |     3ʳᵈ    |    3,468ᵗʰ   |       49ᵗʰ     |    136,150  |    1,057    |    84     |
+|2      |Easy 🔗 - Learn Rust                  |1 |     96ᵗʰ  |     3ʳᵈ    |    5,152ⁿᵈ   |       67ᵗʰ     |    136,030  |    1,056    |    84     |
+
+
+</h6></div><br>
+
+<p align="center">Global All Time:    98ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ffd9aad0-390f-45cb-942d-6e6c1fecd613"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/d2120534-cf8f-4673-bca8-acff9c4058a3"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/960d4fd3-4f33-4c5d-8008-e10b34f366e0"><br><br>
+                  Global monthly:    3,172ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/c74ff777-9f84-43a1-ac38-a199daf62607"><br><br>
+                  Brazil monthly:      47ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/fc733124-ea05-4d67-80ea-14dd4e1ddcd5"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p
 
