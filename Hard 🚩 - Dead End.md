@@ -1,5 +1,5 @@
 <h1 align="center">Dead End?</h1>
-<p align="center">2026, January 6 - 7&nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/deadend">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/eb2644f2-3c48-4f79-b8bf-f36d1b9c3b07"></p>
+<p align="center">2026, January 6 - 7&nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this CTF room <a href="https://tryhackme.com/room/deadend">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/eb2644f2-3c48-4f79-b8bf-f36d1b9c3b07"></p>
 
 <h2>Task 1 . Memory</h2>
 
@@ -475,8 +475,6 @@ Value: \Device\HarddiskVolume1\Tools\windows-networking-tools-master\windows-net
 <br>
 <p>2.4. <em>What is the flag?</em><br>
 <code>THM{6l4D_y0u_kNOw••••••••••••}</code></p>
-
-THM{6l4D_y0u_kNOw_h0w_2_p1vOT}
 
 <br>
 <br>
