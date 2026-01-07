@@ -1,6 +1,5 @@
 <h1 align="center">Dead End?</h1>
-<p align="center">2026, January 6 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/deadend">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/dfdef74d-f133-46bd-8b64-7a5b10dae92a"></p>
-
+<p align="center">2026, January 6 - 7&nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/deadend">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/eb2644f2-3c48-4f79-b8bf-f36d1b9c3b07"></p>
 
 <h2>Task 1 . Memory</h2>
 
@@ -476,6 +475,40 @@ Value: \Device\HarddiskVolume1\Tools\windows-networking-tools-master\windows-net
 <br>
 <p>2.4. <em>What is the flag?</em><br>
 <code>THM{6l4D_y0u_kNOw••••••••••••}</code></p>
+
+THM{6l4D_y0u_kNOw_h0w_2_p1vOT}
+
+<br>
+<br>
+<h1 align="center">Completed</h1>
+
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/93055a1a-71d2-4a5a-a217-765e8a413a43"><br><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/0f99a2cd-d3d1-4065-a3b4-02e421fbe036"></p>
+
+
+<h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|7      |Hard 🚩 - Dead End?                   |6 |     99ᵗʰ  |     3ʳᵈ    |    2,924ᵗʰ   |       37ᵗʰ     |    136,788  |    1,060    |    84     |
+|6      |Easy 🔗 - Linux Strength Training     |5 |     98ᵗʰ  |     3ʳᵈ    |    3,172ⁿᵈ   |       47ᵗʰ     |    136,608  |    1,059    |    84     |
+|4      |Medium 🚩 - JVM Reverse Engineering   |3 |     96ᵗʰ  |     3ʳᵈ    |    3,031ˢᵗ   |       46ᵗʰ     |    136,450  |    1,058    |    84     |
+|3      |Medium 🚩 - Carrotbane of My Existence|2 |     96ᵗʰ  |     3ʳᵈ    |    3,468ᵗʰ   |       49ᵗʰ     |    136,150  |    1,057    |    84     |
+|2      |Easy 🔗 - Learn Rust                  |1 |     96ᵗʰ  |     3ʳᵈ    |    5,152ⁿᵈ   |       67ᵗʰ     |    136,030  |    1,056    |    84     |
+
+
+</h6></div><br>
+
+<p align="center">Global All Time:    99ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b25380c6-cb6f-4a10-a2d2-a3003723bf1b"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/10d08cc1-55f8-4e24-89e7-1bcc11ee3789"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/0133ac67-7e44-4614-9901-8d60b4b7c23b"><br><br>
+                  Global monthly:    2,924ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/60dae2cf-9c32-47a5-bda8-d73ea8efe008"><br><br>
+                  Brazil monthly:      37ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7f088acc-ea64-486c-ba79-46fd8f9b17cd"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
 
 
 <img width="1914" height="283" alt="image" src="https://github.com/user-attachments/assets/f56b64a6-3a69-404d-8905-c44794c9c1f3" />
