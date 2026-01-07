@@ -378,9 +378,6 @@ ubuntu@tryhackme:~/Desktop/volatility3$ python3 vol.py -f /home/ubuntu/Desktop/R
 
 <img width="1385" height="387" alt="image" src="https://github.com/user-attachments/assets/290cffcb-cdc1-494d-b8cb-c92295be92e8" />
 
-
-<img width="1382" height="409" alt="image" src="https://github.com/user-attachments/assets/ef0c656b-6d20-4af2-8a4e-0470f8e6f3b2" />
-
 <img width="1379" height="805" alt="image" src="https://github.com/user-attachments/assets/0bc2579a-4e57-4279-a4d0-e7c985aefd64" />
 
 
@@ -431,12 +428,25 @@ ubuntu@tryhackme:~/Desktop/volatility3$ python3 vol.py -f /home/ubuntu/Desktop/R
 
 <img width="1889" height="898" alt="image" src="https://github.com/user-attachments/assets/6a42d1f2-e343-4cdb-b63d-dff1976d3554" />
 
+<img width="1900" height="288" alt="image" src="https://github.com/user-attachments/assets/a592d191-4ccc-4e85-947e-980c3326ac98" />
+
+
+<p>
+
+- " \\Classes\\svcnotes"<br>
+- " \\Classes\\svcnotes\\fl.ag"<br>
+- " ••••••••••••••••• "<br>
+- "(Default) : Powershell -windowstyle hidden "<br>
+- "(Default) : VEhNezZsNERfeTB1X2tOT3d"</p>
+
+
+<img width="1882" height="893" alt="image" src="https://github.com/user-attachments/assets/91da21d4-eb6f-4f14-a7f0-5c5f2241dbea" />
+
+
+
 <img width="1316" height="494" alt="image" src="https://github.com/user-attachments/assets/2302f4b9-dead-4f96-9daf-6a1ce59a40c2" />
 
 <img width="1252" height="562" alt="image" src="https://github.com/user-attachments/assets/16b4fc6b-ce10-4255-8a0a-7d6f2f32561b" />
-
-<img width="1893" height="344" alt="image" src="https://github.com/user-attachments/assets/551b415a-2cf1-4d7b-bdb5-4e098bba0745" />
-
 
 <img width="1335" height="801" alt="image" src="https://github.com/user-attachments/assets/7055690d-b4ce-4021-bcb3-f14f062a91ab" />
 
@@ -455,23 +465,20 @@ Last write: 5/14/2024 9:30:04 PM +00:00
 Value: \Device\HarddiskVolume1\Tools\windows-networking-tools-master\windows-networking-tools-master\LatestBuilds\x64\Autoconnector.exe (RegBinary)
 ```
 
-
-
-
+<br>
 <p>2.3. <em>What is the content of "Part2"?</em><br>
-<code>-----------------</code></p>
+<code>•••••••••••••••••</code></p>
 
 <img width="1365" height="470" alt="image" src="https://github.com/user-attachments/assets/4f267f2b-2243-4c0a-9698-90f52c20b00a" />
 
-
+<br>
+<br>
+<br>
 <p>2.4. <em>What is the flag?</em><br>
-<code>_________</code></p>
+<code>THM{6l4D_y0u_kNOw••••••••••••}</code></p>
 
 
-<img width="1216" height="423" alt="image" src="https://github.com/user-attachments/assets/c15ce05f-b6d4-4590-a042-4c2465efc7c2" />
-
-<img width="1211" height="490" alt="image" src="https://github.com/user-attachments/assets/0205a4a1-c5da-423e-9091-591359be51a0" />
-
+<img width="1914" height="283" alt="image" src="https://github.com/user-attachments/assets/f56b64a6-3a69-404d-8905-c44794c9c1f3" />
 
 
 
