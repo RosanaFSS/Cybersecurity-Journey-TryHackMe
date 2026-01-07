@@ -3,7 +3,7 @@
 
 <h2>Task 1 . Memory</h2>
 
-<p>An in-depth analysis of specific endpoints is reserved for those you're certain to have been compromised. It is usually done to understand how specific adversary tools or malwares work on the endpoint level; the lessons learned here are applied to the rest of the incident.<br>
+<p>An in-depth analysis of specific endpoints is reserved for those you're certain to have been compromised. It is usually done to understand how specific adversary tools or malwares work on the endpoint level; the lessons learned here are applied to the rest of the incident. <br>
 
 You're presented with two main artefacts: a memory dump and a disk image. Can you follow the artefact trail and find the flag?</p>
 
