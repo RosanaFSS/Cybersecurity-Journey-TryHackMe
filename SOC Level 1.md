@@ -24,7 +24,7 @@
 2.2.   &nbsp; 🔗  &nbsp; [SOC L1 Alert Reporting](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Easy%20%F0%9F%94%97%20-%20SOC%20L1%20Alert%20Reporting.md)<br>
 2.3.   &nbsp; 🔗  &nbsp; [SOC Workbooks and Lookups](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%F0%9F%94%97%20-%20SOC%20Workbooks%20and%20Lookups.md)<br>
 2.4.   &nbsp; 🔗  &nbsp; [SOC Metrics and Objectives](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-&-Infos/Easy%20%F0%9F%94%97%20-%20SOC%20Metrics%20and%20Objectives.md)<br>
-2.5.   &nbsp; ⚙️  &nbsp; <strong>Introduction to Phishing</strong></p>
+2.5.   &nbsp; ⚙️  &nbsp; [Introduction to Phishing](https://github.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/blob/CTFs-%26-Infos/Easy%20%E2%9A%99%EF%B8%8F%20-%20Introduction%20to%20Phishing.md)</strong></p>
 
 <br>
 <h3>3. Core SOC Solutions</h3>
