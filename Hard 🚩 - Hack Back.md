@@ -742,6 +742,3 @@ to                      0x...
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-<img width="1914" height="283" alt="image" src="https://github.com/user-attachments/assets/f56b64a6-3a69-404d-8905-c44794c9c1f3" />
