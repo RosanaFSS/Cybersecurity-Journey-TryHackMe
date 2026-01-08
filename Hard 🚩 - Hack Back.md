@@ -10,6 +10,9 @@ Click the green 'Start Machine' button to begin your investigation. The machine 
 
 <p><em>Answer the questions below</em></p>
 
+<br>
+<p>Observe open ports 3389 (<code>RDP</code>) and 5985 (<code>WinRM</code>).</p>
+
 ```bash
 :~/HackBack# nmap -sC -sV -Pn -n -p- -T4 aa.aa.aaa.aaa
 ...
@@ -36,9 +39,7 @@ PORT     STATE SERVICE       VERSION
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 <br>
-<p>
-  
-- navigate to <strong>hackaton-act1-v7</strong></p>
+<p>Access the target machine and navigate to the <code>hackaton-act1-v7 directory</code>.
 
 <p><img width="1226" height="566" alt="image" src="https://github.com/user-attachments/assets/a6759f66-a172-495c-891c-671e73f85eb6" /></p>
 
@@ -50,6 +51,11 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 <p><img width="1231" height="808" alt="image" src="https://github.com/user-attachments/assets/f18b2e9c-5fb3-4a1d-8831-4d06f2e92dba" /></p>
 
 <p><img width="351" height="163" alt="image" src="https://github.com/user-attachments/assets/a5f05f5e-9715-4b7e-b0ee-8d6b4a5491d4" /></p>
+
+<br>
+<br>
+<br>
+<p>Initialize an SMB share on the local AttackBox using Impacket to facilitate file transfer.</p>
 
 ```bash
 :~/HackBack# python3.9 /opt/impacket/build/scripts-3.9/smbserver.py share . -smb2support -user rose -pass rose
@@ -69,10 +75,16 @@ Impacket v0.10.1.dev1+20230316.112532.f0ac44bd - Copyright 2022 Fortra
 [*] Disconnecting Share(1:IPC$)
 ```
 
+<br>
+<p>Connect to the malicious share from the Target virtual machine.</p>
+
 ```bash
 C:\Users\Administrator>net use \\xx.xx.xxx.xx\share /user: rose rose
 The command completed successfully.
 ```
+
+<br>
+<p>Download the suspicious binary <code>simpleServer.exe</code> to the AttackBox.</p>
 
 ```bash
 C:\Users\Administrator>copy simpleServer.exe \\xx.xx.xxx.xx\share\simpleServer.exe
@@ -80,6 +92,11 @@ C:\Users\Administrator>copy simpleServer.exe \\xx.xx.xxx.xx\share\simpleServer.e
 ```
 
 <img width="1209" height="530" alt="image" src="https://github.com/user-attachments/assets/66c6f433-1b31-47c6-b7ab-f0ab355353e0" />
+
+<br>
+<br>
+<br>
+<p>Verify the file type and analyze ASCII strings to identify potential Indicators of Compromise (IOCs).</p>
 
 ```bash
 :~/HackBack# ls
@@ -93,6 +110,8 @@ simpleServer.exe: PE32+ executable (console) x86-64, for MS Windows
 
 
 ```bash
+:~/HackBack# strings simpleServer.exe
+...
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 CryptAcquireContext failed: %d
 CryptCreateHash failed: %d
@@ -155,14 +174,8 @@ RSDS5
 C:\Users\User\source\repos\testing_cry\x64\Release\testing_cry.pdb
 ```
 
-
-
-<img width="1116" height="634" alt="image" src="https://github.com/user-attachments/assets/362a3d09-b290-48de-bfc7-d54e9c8b6043" />
-
-
-<img width="1120" height="635" alt="image" src="https://github.com/user-attachments/assets/9f19474f-23c1-4196-a7bb-95bf81c86823" />
-
-<img width="1231" height="799" alt="image" src="https://github.com/user-attachments/assets/4917a212-3b54-4ec6-a521-5717954e34b2" />
+<br>
+<p>Import the binary into <strong>Ghidra</strong> for decompilation. Locate the main coordinator function <code>FUN_1400017e0</code>.<br>Analyze the called function <code>FUN_140001640</code> to understand the string processing logic.<br>Identify the XOR operation within the while loop, and the hardcoded key is 5.<br>Apply the XOR key 5 to the obfuscated strings extracted during static analysis.</p>
 
 ```bash
 void FUN_1400017e0(void)
@@ -180,16 +193,15 @@ void FUN_1400017e0(void)
 }
 ```
 
+
+<img width="1116" height="634" alt="image" src="https://github.com/user-attachments/assets/362a3d09-b290-48de-bfc7-d54e9c8b6043" />
+
+
+<img width="1120" height="635" alt="image" src="https://github.com/user-attachments/assets/9f19474f-23c1-4196-a7bb-95bf81c86823" />
+
+<img width="1231" height="799" alt="image" src="https://github.com/user-attachments/assets/4917a212-3b54-4ec6-a521-5717954e34b2" />
+
 <img width="1236" height="479" alt="image" src="https://github.com/user-attachments/assets/0c53084b-20cd-45e9-afce-0e65f32c3785" />
-
-
-<p>
-
-
-*(byte *)(param_2 + local_18) = param_1[local_18] ^ 5;<br>
-XOR<br>
-5</p>
-
 
 ```bash
 void FUN_140001640(char *param_1,longlong param_2,ulonglong param_3,undefined8 param_4)
@@ -699,7 +711,7 @@ to                      0x...
 <h1 align="center">Completed</h1>
 
 <p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b82a5369-e976-4bae-a16f-03708ec128e5"><br><br>
-                  <img width="1200px" src="https://github.com/user-attachments/assets/0f99a2cd-d3d1-4065-a3b4-02e421fbe036"></p>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/c23160db-fe4c-4cba-addf-8c8de1f0cafd"></p>
 
 
 <h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
@@ -708,6 +720,7 @@ to                      0x...
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|7      |Hard 🚩 - Hack Back                   |6 |     98ᵗʰ  |     3ʳᵈ    |    2,798ᵗʰ   |       37ᵗʰ     |    136,908  |    1,061    |    84     |
 |7      |Hard 🚩 - Dead End?                   |6 |     99ᵗʰ  |     3ʳᵈ    |    2,924ᵗʰ   |       37ᵗʰ     |    136,788  |    1,060    |    84     |
 |6      |Easy 🔗 - Linux Strength Training     |5 |     98ᵗʰ  |     3ʳᵈ    |    3,172ⁿᵈ   |       47ᵗʰ     |    136,608  |    1,059    |    84     |
 |4      |Medium 🚩 - JVM Reverse Engineering   |3 |     96ᵗʰ  |     3ʳᵈ    |    3,031ˢᵗ   |       46ᵗʰ     |    136,450  |    1,058    |    84     |
@@ -717,11 +730,11 @@ to                      0x...
 
 </h6></div><br>
 
-<p align="center">Global All Time:    99ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/b25380c6-cb6f-4a10-a2d2-a3003723bf1b"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/10d08cc1-55f8-4e24-89e7-1bcc11ee3789"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/0133ac67-7e44-4614-9901-8d60b4b7c23b"><br><br>
-                  Global monthly:    2,924ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/60dae2cf-9c32-47a5-bda8-d73ea8efe008"><br><br>
-                  Brazil monthly:      37ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7f088acc-ea64-486c-ba79-46fd8f9b17cd"></p>
+<p align="center">Global All Time:    99ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/ade1950d-f0e7-4c6c-8c25-c1d7035a78f1"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/dcfac39a-7e5e-4200-bce0-e87a3cd87f2c"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/9182c88f-86e4-4300-b270-1fb59d1d9cc0"><br><br>
+                  Global monthly:    2,798ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/6fd90143-074e-4f69-95a8-144fb2ba0034"><br><br>
+                  Brazil monthly:      37ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/8ef756e2-a183-45b0-9b09-b7b853027d41"></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
