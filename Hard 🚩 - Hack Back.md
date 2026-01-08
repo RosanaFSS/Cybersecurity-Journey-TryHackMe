@@ -1,7 +1,6 @@
 <h1 align="center">Hack Back</h1>
 <p align="center">2026, January 7&nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this CTF room <a href="https://tryhackme.com/room/hackback">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/40719be4-307e-4d4f-a068-2ea4fe7c6eed"></p>
 
-
 <br>
 <h2>Task 1 . ACT I . Something Phishy</h2>
 <p>You have just been handed a machine by a disgruntled colleague. Pulling hairs out, he explains that, of late, this machine has been very slow and crashed multiple times. They said the machine is relatively new and not nearly at an age where its performance should suffer. They've asked if you can look at the machine and determine what's causing this behavior. Can you use your cyber sleuthing skills and know how to get to the bottom of the machine's performance issue?<br>
