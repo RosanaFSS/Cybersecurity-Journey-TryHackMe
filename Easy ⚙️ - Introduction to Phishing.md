@@ -5,6 +5,7 @@ Soon a walkthrough will be available. If you find it helpful, consider coming ba
 <h2>Scenario overview</h2>
 <p>Learn how to use SOC Simulator by completing your first scenario. Close all True Positive alerts to pass!</p>
 
+
 <h3>Scenario Objectives</h3>
 <p>
 
