@@ -181,6 +181,52 @@ THM{•••••••••••••••••••••••••�
 <code>THM{••••••••••••••••••••••••••••••}</code></p>
 <br>
 
+
+<img width="1024" height="315" alt="image" src="https://github.com/user-attachments/assets/0ad26848-c63e-46b7-9a1c-37082812ae36" />
+
+<br>
+<br>
+<br>
+
+<img width="1022" height="153" alt="image" src="https://github.com/user-attachments/assets/0b88359f-c05c-40af-8888-4fbd845eb256" />
+
+<br>
+<br>
+<br>
+<p>1.2. <em>What is the content of foothold.txt?</em><br>
+<code>THM{••••••••••••••••••••••••••••••}</code></p>
+
+
+<img width="1022" height="139" alt="image" src="https://github.com/user-attachments/assets/78f5c3c3-004f-4f16-8631-48e0f3fc89dd" />
+
+<br>
+<br>
+<br>
+
+
+```bash
+:~/SchemeCatcher# file 4.2.0-R1-1337-server.zip
+4.2.0-R1-1337-server.zip: Zip archive data, at least v2.0 to extract
+```
+
+```bash
+:~/SchemeCatcher# unzip 4.2.0-R1-1337-server.zip
+Archive:  4.2.0-R1-1337-server.zip
+  inflating: ld-linux-x86-64.so.2    
+  inflating: libc.so.6               
+  inflating: server                  
+```
+
+<img width="1192" height="145" alt="image" src="https://github.com/user-attachments/assets/cfb55127-ae05-497f-9a94-13bbaad096e1" />
+
+<br>
+<br>
+<br>
+
+:~/SchemeCatcher# ls
+4.2.0-R1-1337-server.zip  4.2.0.zip  latest  ld-linux-x86-64.so.2  libc.so.6  server
+
+
 ```bash
 Command executed
 /tmp/b68vC103RH
