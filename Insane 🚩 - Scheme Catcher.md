@@ -1,27 +1,57 @@
+<h1 align="center"><a href="https://tryhackme.com/room/sq2-aoc2025-JxiOKUSD9R">Scheme Catcher</a></h1>
+<h3 align="center">Advent of Cyber 2025 &nbsp;|&nbsp; Side Quest</h3>
+<p align="center"><img width="1200px" src="   "><br>
+If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2013-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
 
+<br>
+<h2>Task 1 . Introduction</h2>
 
+<h3>The Silent Control System of the Jester</h3>
+<p>Once upon a time, before Hopper’s laughter echoed through HopSec Asylum, investigators discovered whispers about a strange server hidden somewhere on his personal systems. No one has actually seen it, no one has managed to access it, and every attempt to break in has failed. The few traces that exist point to a rough and unstable copy of King Malhare’s old command and control setup, rebuilt by Hopper into something twisted and unpredictable. Rumours say the place is scattered with odd folders, stray notes, and several suspicious binaries that seem to pulse with their own rhythm. Hopper is obsessed with building things, changing things, and breaking things just to rebuild them again, and he insists he never commits a single mistake. In his mind, everything he creates is perfect, even if it looks like chaos from the outside.<br>
 
+Stranger still is how the server behaves when anyone approaches. Connections drop without reason. Tasks appear, vanish, and then reappear elsewhere. Logs rewrite themselves. Some scripts reply to commands with messages that feel a little too aware. Hopper calls the place his masterpiece. He says it’s alive. He says it only listens to him.<br>
 
+Whether he planned sabotage, rebellion, or something far stranger remains unknown because no analyst has managed to look inside. All that is certain is that Hopper guards this secret with a wild grin and a mind that slips further away each day. The question is now: Can you prove he is wrong, or get lost in his madness</p>
 
+<h3>Rules</h3>
+<p>
 
+- <strong>Do not</strong> share questions or hints, including in videos, streams, or any other medium while the event is running (until Dec 31st).<br>
+- Only hack machines deployed in the rooms you have legitimate, authorised access to.<br>
+- <code>*.tryhackme.com</code> and VPN servers are off-limits for probing, scanning, or exploiting.<br>
+- Teaming up is permitted.<br>
 
-```bash
-:~# nmap -sT -p- -T4 10.64.168.0
-...
-PORT      STATE SERVICE
-22/tcp    open  ssh
-80/tcp    open  http
-9004/tcp  open  unknown
-21337/tcp open  unknown
-```
+For a more comprehensive list, please read the <a href="https://help.tryhackme.com/en/articles/8537472-advent-of-cyber-2025-terms-and-condition">Advent of Cyber 2025 Terms and Conditions</a>.<br>
+
+This Side Quest is unlocked by finding the Side Quest key in <a href="https://tryhackme.com/room/attacks-on-ecrypted-files-aoc2025-asdfghj123">Advent of Cyber 2025 Day 9</a>. f you have been savvy enough to find it, you can unlock the machine by visiting <code>MACHINE_IP:21337</code> and entering your key. Happy Side Questing!
+</p>
+
+<p><em>Answer the questions below</em></p>
+
+<p>
+
+- Navigate to <code>MACHINE_IP:21337</code><br>
+- Enter the <strong>Memory Key</strong> discovered in <strong>Advent of Cyber 2025, Day 9</strong><br>
+- Click <strong>UNLOCK MEMORIES</strong></p>
+
+<br>
+<h1 align="center">Port Scanning<a id='1'></a></h1>
+
+<div align="center"><p>
+
+| **Port**           | **Service**          | **Version**                       |
+|-------------------:|:---------------------|:----------------------------------|
+| `22`               |`SSH`                 |OpenSSH 9.6p1 Ubuntu 3ubuntu13.11  |
+| `80`               |`HTTP`                |Apache httpd 2.4.58                |
+| `9004`             |`Unknown`             |-                                  |
+| `21337`            |`-`                   |-                                  |
+
+</p></div><br>
 
 
 ```bash
 :~# nmap -sC -sV -Pn -n -p- -T4 10.64.168.0
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-12-30 20:47 GMT
-Nmap scan report for 10.64.168.0
-Host is up (0.00012s latency).
-Not shown: 65531 closed ports
+...
 PORT      STATE SERVICE VERSION
 22/tcp    open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.11 (Ubuntu Linux; protocol 2.0)
 80/tcp    open  http    Apache httpd 2.4.58 ((Ubuntu))
@@ -37,187 +67,162 @@ PORT      STATE SERVICE VERSION
 |     Payload Storage Malhare's
 |_    Version 4.2.0
 21337/tcp open  unknown
-| fingerprint-strings: 
-|   GetRequest: 
-|     HTTP/1.1 200 OK
-|     Server: Werkzeug/3.0.1 Python/3.12.3
-|     Date: Tue, 30 Dec 2025 20:47:55 GMT
-|     Content-Type: text/html; charset=utf-8
-|     Content-Length: 15547
-|     Connection: close
-|     <!DOCTYPE html>
-|     <html lang="en">
-|     <head>
-|     <link rel="icon" type="image/png" href="/static/hat.svg" />
-|     <meta charset="UTF-8" />
-|     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-|     <title>Unlock Hopper's Memories</title>
-|     <style>
-|     :root {
-|     --pastel-pink: #ffb3d9;
-|     --pastel-yellow: #fff4a3;
-|     --pastel-green: #b3ffb3;
-|     --pastel-blue: #b3d9ff;
-|     --pastel-purple: #d9b3ff;
-|     --easter-egg-blue: #87ceeb;
-|     --easter-egg-pink: #ffc0cb;
-|     --easter-egg-yellow: #ffeb3b;
-|     --easter-egg-green: #90ee90;
-|     --soft-white: #fffef7;
-|     --warm-brown: #8b4513;
-|     margin: 0;
-|     padding: 0;
-|   HTTPOptions: 
-|     HTTP/1.1 200 OK
-|     Server: Werkzeug/3.0.1 Python/3.12.3
-|     Date: Tue, 30 Dec 2025 20:47:55 GMT
-|     Content-Type: text/html; charset=utf-8
-|     Allow: GET, OPTIONS, HEAD
-|     Content-Length: 0
-|     Connection: close
-|   RTSPRequest: 
-|     <!DOCTYPE HTML>
-|     <html lang="en">
-|     <head>
-|     <meta charset="utf-8">
-|     <title>Error response</title>
-|     </head>
-|     <body>
-|     <h1>Error response</h1>
-|     <p>Error code: 400</p>
-|     <p>Message: Bad request version ('RTSP/1.0').</p>
-|     <p>Error code explanation: 400 - Bad request syntax or unsupported method.</p>
-|     </body>
-|_    </html>
 ...
 ```
 
 
+<br>
+<h1 align="center">Directory & File Enumeration<a id='2'></a></h1>
+
+
 ```bash
-:~# nikto -h http://10.64.168.0
-- Nikto v2.1.5
----------------------------------------------------------------------------
-+ Target IP:          10.64.168.0
-+ Target Hostname:    10.64.168.0
-+ Target Port:        80
-+ Start Time:         2025-12-30 20:59:18 (GMT0)
----------------------------------------------------------------------------
-+ Server: Apache/2.4.58 (Ubuntu)
-+ Server leaks inodes via ETags, header found with file /, fields: 0xd7f 0x644f26c5948d9 
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ No CGI Directories found (use '-C all' to force check all possible dirs)
-+ Allowed HTTP Methods: GET, POST, OPTIONS, HEAD 
-+ OSVDB-3268: /dev/: Directory indexing found.
-+ OSVDB-3092: /dev/: This might be interesting...
-+ 6544 items checked: 0 error(s) and 5 item(s) reported on remote host
-+ End Time:           2025-12-30 20:59:26 (GMT0) (8 seconds)
----------------------------------------------------------------------------
-+ 1 host(s) tested
+:~# ffuf -u http://xx.xx.xxx.xx/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -mc 200,301 -e .html,.zip,.txt -ic -c -t 60
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v1.3.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://xx.xx.xxx.xx/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+ :: Extensions       : .html .zip .txt 
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 60
+ :: Matcher          : Response status: 200,301
+________________________________________________
+
+                        [Status: 200, Size: 3455, Words: 1317, Lines: 129]
+index.html              [Status: 200, Size: 3455, Words: 1317, Lines: 129]
+dev                     [Status: 301, Size: 310, Words: 20, Lines: 10]
+:: Progress: [873060/873060] :: Job [1/1] :: 11488 req/sec :: Duration: [0:01:17] :: Errors: 0 ::
 ```
 
+<img width="1258" height="428" alt="image" src="https://github.com/user-attachments/assets/616f8540-c232-4975-b27e-2c5ebba044f7" />
 
 
-```bash
-:~# gobuster dir -u http://10.64.168.0/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories.txt
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.64.168.0/
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/wordlists/SecLists/Discovery/Web-Content/raft-medium-directories.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.6
-[+] Timeout:                 10s
-===============================================================
-Starting gobuster in directory enumeration mode
-===============================================================
-/dev                  (Status: 301) [Size: 308] [--> http://10.64.168.0/dev/]
-/server-status        (Status: 403) [Size: 276]
-Progress: 23484 / 30001 (78.28%)[ERROR] parse "http://10.64.168.0/error\x1f_log": net/url: invalid control character in URL
-Progress: 30000 / 30001 (100.00%)
-===============================================================
-Finished
-===============================================================
-```
+<br>
+<br>
+<br>
+<h1 align="center">Web Interface Inspection<a id='3'></a></h1>
+
+<img width="1200" height="474" alt="image" src="https://github.com/user-attachments/assets/2c94c5f9-75b1-4437-a396-d8d7e10ea53a" />
+
+<br>
+<br>
+<br>
+
+<img width="1196" height="267" alt="image" src="https://github.com/user-attachments/assets/e1cff400-1d22-4713-b043-c42d3e0cb597" />
+
+<br>
+<br>
+<br>
 
 ```bash
-:~# gobuster dir -u http://10.64.168.0/ -w /usr/share/wordlists/dirb/common.txt -t 60
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.64.168.0/
-[+] Method:                  GET
-[+] Threads:                 60
-[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.6
-[+] Timeout:                 10s
-===============================================================
-Starting gobuster in directory enumeration mode
-===============================================================
-/.htaccess            (Status: 403) [Size: 276]
-/.htpasswd            (Status: 403) [Size: 276]
-/.hta                 (Status: 403) [Size: 276]
-/dev                  (Status: 301) [Size: 308] [--> http://10.64.168.0/dev/]
-/index.html           (Status: 200) [Size: 3455]
-/server-status        (Status: 403) [Size: 276]
-Progress: 4614 / 4615 (99.98%)
-===============================================================
-Finished
-===============================================================
+:~/SchemeCatcher# ls
+4.2.0.zip
 ```
 
 ```bash
-:~/schemecatcher/latest# nikto -h http://10.64.152.51/dev/
-- Nikto v2.1.5
----------------------------------------------------------------------------
-+ Target IP:          10.64.152.51
-+ Target Hostname:    10.64.152.51
-+ Target Port:        80
-+ Start Time:         2026-01-03 01:22:24 (GMT0)
----------------------------------------------------------------------------
-+ Server: Apache/2.4.58 (Ubuntu)
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ OSVDB-3268: /dev/: Directory indexing found.
-+ No CGI Directories found (use '-C all' to force check all possible dirs)
-+ Allowed HTTP Methods: GET, POST, OPTIONS, HEAD 
-+ OSVDB-3268: /dev/./: Directory indexing found.
-+ OSVDB-3268: /dev/?mod=node&nid=some_thing&op=view: Directory indexing found.
-+ OSVDB-3268: /dev/?mod=some_thing&op=browse: Directory indexing found.
-+ /dev/./: Appending '/./' to a directory allows indexing
-+ OSVDB-3268: /dev//: Directory indexing found.
-+ /dev//: Apache on Red Hat Linux release 9 reveals the root directory listing by default if there is no index page.
-+ OSVDB-3268: /dev/?Open: Directory indexing found.
-+ OSVDB-3268: /dev/?OpenServer: Directory indexing found.
-+ OSVDB-3268: /dev/%2e/: Directory indexing found.
-+ OSVDB-576: /dev/%2e/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. http://www.securityfocus.com/bid/2513.
-+ OSVDB-3268: /dev/?mod=<script>alert(document.cookie)</script>&op=browse: Directory indexing found.
-+ OSVDB-3268: /dev/?sql_debug=1: Directory indexing found.
-+ OSVDB-3268: /dev///: Directory indexing found.
-+ OSVDB-3268: /dev/?PageServices: Directory indexing found.
-+ OSVDB-119: /dev/?PageServices: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
-+ OSVDB-3268: /dev/?wp-cs-dump: Directory indexing found.
-+ OSVDB-119: /dev/?wp-cs-dump: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
-+ OSVDB-3268: /dev///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Directory indexing found.
-+ OSVDB-3288: /dev///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Abyss 1.03 reveals directory listing when 	 /'s are requested.
-+ OSVDB-3268: /dev/?pattern=/etc/*&sort=name: Directory indexing found.
-+ OSVDB-3268: /dev/?D=A: Directory indexing found.
-+ OSVDB-3268: /dev/?N=D: Directory indexing found.
-+ OSVDB-3268: /dev/?S=A: Directory indexing found.
-+ OSVDB-3268: /dev/?M=A: Directory indexing found.
-+ OSVDB-3268: /dev/?\"><script>alert('Vulnerable');</script>: Directory indexing found.
-+ OSVDB-3268: /dev/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: Directory indexing found.
-+ OSVDB-3268: /dev/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.
-+ OSVDB-3268: /dev/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.
-+ OSVDB-3268: /dev/?show=http://cirt.net/rfiinc.txt??: Directory indexing found.
-+ OSVDB-3268: /dev/?-s: Directory indexing found.
-+ 6544 items checked: 0 error(s) and 33 item(s) reported on remote host
-+ End Time:           2026-01-03 01:22:33 (GMT0) (9 seconds)
----------------------------------------------------------------------------
-+ 1 host(s) tested
+:~/SchemeCatcher# file 4.2.0.zip
+4.2.0.zip: Zip archive data, at least v1.0 to extract
+```
+
+```bash
+:~/SchemeCatcher# unzip 4.2.0.zip
+Archive:  4.2.0.zip
+   creating: latest/
+  inflating: latest/beacon.bin       
+```
+
+<img width="1262" height="156" alt="image" src="https://github.com/user-attachments/assets/c713419a-e734-4693-bd3f-72a18b454431" />
+
+<br>
+<br>
+<br>
+
+```bash
+:~/SchemeCatcher# ls
+4.2.0.zip  latest
+```
+
+```bash
+:~/SchemeCatcher# cd latest
+```
+
+```bash
+:~/SchemeCatcher/latest# file beacon.bin
+beacon.bin: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=6130a2932421dfd5fb7f8034bd8ca749bac01434, for GNU/Linux 3.2.0, not stripped
+```
+
+```bash
+:~/SchemeCatcher/latest# strings beacon.bin > strings.txt
+```
+
+
+```bash
+:~/SchemeCatcher/latest# grep -E THM strings.txt
+THM{••••••••••••••••••••••••••••••}
+```
+
+<img width="1259" height="86" alt="image" src="https://github.com/user-attachments/assets/827894f4-c327-401d-b184-314969ffdca8" />
+
+<br>
+<br>
+<br>
+<p>1.1. <em>What is the flag hidden in the file?</em><br>
+<code>THM{••••••••••••••••••••••••••••••}</code></p>
+<br>
+
+```bash
+Command executed
+/tmp/b68vC103RH
+Failed to execute the command
+Command exited with status: %d
+Command terminated abnormally
+Payload loaded
+Socket creation failed
+localhost
+Connection failed
+GET %s HTTP/1.1
+Host: localhost
+Connection: close
+Failed to send HTTP request
+Command deleted
+Successfully deleted /tmp/b68vC103RH
+Failed to delete /tmp/b68vC103RH
+=== Menu ===
+1. Execute command
+2. Load payload
+3. Delete command
+4. Exit
+Choose an option: 
+Enter key: 
+Hello %s!
+socket failed
+setsockopt
+bind failed
+listen
+Socket server listening on port 4444...
+accept
+Received command: %s
+Exit command received
+Invalid command: %s
+EastMass
+Access denied.
+Access granted! Starting socket server...
+9*3$"
+GCC: (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+```
+
+```bash
 
 ```
 
@@ -227,33 +232,6 @@ Finished
 <img width="1132" height="285" alt="image" src="https://github.com/user-attachments/assets/c234bcd6-a2fe-4e9a-83dc-01f13abdaf5a" />
 
 
-```bash
-:~/schemecatcher# file 4.2.0.zip
-4.2.0.zip: Zip archive data, at least v1.0 to extract
-```
-
-
-```bash
-:~/schemecatcher# unzip 4.2.0.zip
-Archive:  4.2.0.zip
-   creating: latest/
-  inflating: latest/beacon.bin
-``` 
-
-
-```bash
-:~/schemecatcher# file latest/beacon.bin
-latest/beacon.bin: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=6130a2932421dfd5fb7f8034bd8ca749bac01434, for GNU/Linux 3.2.0, not stripped
-```
-
-```bash
-:~/schemecatcher# strings latest/beacon.bin > beacon.txt
-```
-
-```bash
-:~/schemecatcher# grep -E THM beacon.txt
-THM{Welcom3_to_th3_eastmass_pwnland}
-```
 
 
 <p>
