@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://tryhackme.com/soc-sim/scenarios?scenario=introduction-to-phishing">Introduction to Phishing</a></h1>
 <h3 align="center">SOC Level 1 Learning Path &nbsp;|&nbsp; SOC Team Internals</h3>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/fdbcea45-459a-47d1-ad2d-ddd6a467b4eb"><br>
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/c35563dc-bc81-427e-a0dc-b28ee8b3fb4f"><br>
 Soon a walkthrough will be available. If you find it helpful, consider coming back for research.<br><br><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=social" alt="Follow Rosana on GitHub"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2026, January 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat-square&logo=linkedin" alt="Connect on LinkedIn"></a></p>
 <h2>Scenario overview</h2>
 <p>Learn how to use SOC Simulator by completing your first scenario. Close all True Positive alerts to pass!</p>
@@ -14,9 +14,24 @@ Soon a walkthrough will be available. If you find it helpful, consider coming ba
 - Create detailed case reports based on your observations to help your team understand the full scope of alerts and malicious activity.</p>
 
 <br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<br>
 <h1 align="center">Completed</h1>
 
-<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/465a5c83-0947-46ba-af27-b5372d07566d"></p>
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/38853a4a-062a-48cf-ad1e-45b0b3442f40"></p>
 
 
 <h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
