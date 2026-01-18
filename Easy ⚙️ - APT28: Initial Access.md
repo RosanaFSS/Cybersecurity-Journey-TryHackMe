@@ -5,11 +5,13 @@ If you find it helpful, consider coming back for research.<br><p align="center">
 
 
 
-<p align="center"> [Overview](#1) [Objectives](#2)</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Overview](#1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Objectives](#2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Methodology](#3)
 
 
 <br>
-
+<br>
+<br>
+<br>
 <h2>Scenario overview<a id='1'></a></h2>
 <p>Here at <code>TryGovMe</code>, our partners have been consistently targeted by <code>APT28</code> over the past few weeks and we are now preparing for a potential intrusion ourselves. To all SOC analysts on shift - please remain focused and prepared for a possible attack!<br>
 Chapter of the APT28: Link to Trouble scenario.</p>
@@ -21,7 +23,8 @@ Chapter of the APT28: Link to Trouble scenario.</p>
 - Analyse <code>initial access techniques</code> used by <code>APT28</code> in enterprise environments.<br>
 - Analyse and correlate various log types to identify anomalies and gain insight into adversary activity.</p>
 
-<h2>Methodology<a id='C'></a></h2>
+
+<h2>Methodology<a id='3'></a></h2>
 <p>
   
 - Step 1<br><strong>Find all the true positives</strong><br>To complete a Scenario, find all the True Positive alerts. Keep triaging alerts until you've closed them all!<br><br>
