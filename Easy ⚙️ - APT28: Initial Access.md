@@ -5,18 +5,18 @@ If you find it helpful, consider coming back for research.<br><p align="center">
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Overview](#1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Objectives](#2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Methodology](#3)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Overview](#1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Objectives](#2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Methodology](#3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Resources](#4)
 
 
 <br>
 <br>
 <br>
 <br>
-<h2>Scenario overview<a id='1'></a></h2>
+<h2>Overview<a id='1'></a></h2>
 <p>Here at <code>TryGovMe</code>, our partners have been consistently targeted by <code>APT28</code> over the past few weeks and we are now preparing for a potential intrusion ourselves. To all SOC analysts on shift - please remain focused and prepared for a possible attack!<br>
 Chapter of the APT28: Link to Trouble scenario.</p>
 
-<h2>Scenario Objectives<a id='2'></a></h2>
+<h2>Objectives<a id='2'></a></h2>
 <p>
 
 - Identify and triage security alerts indicating malicious behaviour consistent with <code>APT28</code> activity.<br>
@@ -37,8 +37,8 @@ Chapter of the APT28: Link to Trouble scenario.</p>
 
 
 <br>
-<h2>Recommended Resources<a id='D'></a></h2>
-<p>
+<h2>Resources<a id='4'></a></h2>
+<p></p>
 
 - <a href="https://attack.mitre.org/groups/G0007/"> MITRE ATT&CK > Groups > APT28</a><br>
 - <a href="https://medium.com/@RosanaFS/apt28-in-the-snare-tryhackme-walkthrough-blue-team-advanced-persistent-threats-apts-ca5b1eafcb29"> APT28 in the Snare : TryHackMe Walkthrough</a><br>
