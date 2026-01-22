@@ -1,5 +1,5 @@
 <h1 align="center">ret2libc</h1>
-<p align="center">2026, January 9 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/ret2libc">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/ca4bab91-1bc2-4c15-bd12-8d0bfb6215c6"></p>
+<p align="center">2026, January 9 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/ret2libc">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/ca4bab91-1bc2-4c15-bd12-8d0bfb6215c6"></p>  
 
 <br>
 <h2>Task 1 . Prerequisites</h2>
