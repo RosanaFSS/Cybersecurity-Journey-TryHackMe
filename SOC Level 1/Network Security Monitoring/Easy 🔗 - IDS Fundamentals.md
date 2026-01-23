@@ -1,6 +1,5 @@
 <h3> Welcome to the <em>TryHackMe ...</em></h3>
-<h1>Cyber Security 101 learning path > Security Solutions ></h1>
-<h2>IDS Fundamentals</h2>
+<h1>SOC Level 1 Learning Path ><br> Network Security Monitoring > IDS Fundamentals</h1>
 <p>Learn the fundamentals of IDS, along with the experience of working with Snort.</p>
 <p>October 22, 2024<br></p>
 
