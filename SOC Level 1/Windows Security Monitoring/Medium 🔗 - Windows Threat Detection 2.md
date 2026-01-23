@@ -1,7 +1,7 @@
 <p>July 16, 2025 - Day 436</p>
 <h1>Windows Threat Detection 2</h1>
 
-
+<br>
 <br>
 
 <img width="1896" height="383" alt="image" src="https://github.com/user-attachments/assets/323f4eff-a54b-489f-920a-6c0a9a632f4a" />
