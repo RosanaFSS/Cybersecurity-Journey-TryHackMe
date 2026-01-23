@@ -5,7 +5,6 @@
 Access it <a href="https://tryhackme.com/room/linuxthreatdetection2">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/ab286ff8-4316-4d95-9046-336440cac4d5"></p>
 
-
 <h2>Task 1 . Introduction</h2>
 <p>What happens next after threat actors enter the Linux system? What commands do they run, and what goals do they aim to achieve? In this room, you'll find out by exploring common attack techniques, detecting them in logs, and analyzing a real-world cryptominer infection from start to finish.</p>
 
