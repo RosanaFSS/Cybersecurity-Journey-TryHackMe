@@ -6,6 +6,7 @@ and I’m excited to join you on this adventure, part of my <code>507</code>-day
 Access it <a href="https://tryhackme.com/room/networksecurityessentials">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/6eb54ea1-8481-4b05-99e2-a7d7453f78b3"></p>
 
+<br>
 <h2 align="center">Task 1 . Introduction</h2>
 <br>
 
