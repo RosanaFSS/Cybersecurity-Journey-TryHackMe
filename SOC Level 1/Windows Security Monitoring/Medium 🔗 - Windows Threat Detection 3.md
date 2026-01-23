@@ -6,7 +6,6 @@ Click <a href="https://tryhackme.com/room/windowsthreatdetection3">here </a>to a
 <img width="1200px" src="https://github.com/user-attachments/assets/607fa12b-f404-4e9e-a673-a4f3f0c1b522"></p>
 
 <br>
-<br>
 
 <h2>Task 1 . Introduction</h2>
 <p>What if attackers aren't satisfied with just breaching the host but aim to stay, establish control, and use the system as a starting point for future operations? This room completes your Windows threat detection journey and explores how a compromised host can become part of a larger attack, focusing on three tactics: Command and Control, Persistence, and Impact.</p>
