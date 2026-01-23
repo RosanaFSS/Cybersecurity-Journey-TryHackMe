@@ -6,7 +6,6 @@
 Click <a href="https://tryhackme.com/room/windowsloggingforsoc">here </a>to access the "room".<br></p>
 
 <br>
-<br>
 
 <h2 align="center">Read my complete walkthrough in Medium.</h2>
 <h3 align="center"> Click here ➡️  <a href="https://medium.com/@RosanaFS/windows-logging-for-soc-tryhackme-walkthrough-e4aa10339261">Windows Logging for SOC</a></h3>
