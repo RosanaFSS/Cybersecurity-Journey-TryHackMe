@@ -6,6 +6,7 @@ and I’m excited to join you on this adventure, part of my <code>506</code>-day
 Access it <a href="https://tryhackme.com/room/linuxthreatdetection1">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/90d19a9c-3ab0-4ed9-a441-c80d1bb7de2c"></p>
 
+
 <h2 align="center">Task 1 . Introduction</h2>
 <br>
 
