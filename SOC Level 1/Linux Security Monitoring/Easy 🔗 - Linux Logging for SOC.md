@@ -9,6 +9,7 @@ Access it <a href="https://tryhackme.com/room/linuxloggingforsoc">here</a>.<br>
 <h2 align="center">Task 1 . Introduction</h2>
 <p>Linux has long been a leader in servers and embedded systems, and now its use is even more widespread with the growth of cloud adoption. As a SOC analyst, you are now very likely to investigate Linux alerts and incidents, either from traditional on-premises servers or from cloud-native containerized workloads. In this room, you will explore the most common Linux logs sent to SIEM and learn how to view them directly on-host.</p>
 
+
 <h3 align="center">Learning Objectives</h3>
 <p>
 
