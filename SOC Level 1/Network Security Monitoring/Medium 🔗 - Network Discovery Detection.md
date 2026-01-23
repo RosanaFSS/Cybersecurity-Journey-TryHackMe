@@ -5,6 +5,7 @@
 Access this TryHackMe´s walkthrough <a href="https://tryhackme.com/room/networkdiscoverydetection">here </a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/9f78f041-cbb7-4e20-8f74-5031bf5c87b6"></p>
 
+
 <h2>Task 1 . Introduction</h2>
 <br>
 
