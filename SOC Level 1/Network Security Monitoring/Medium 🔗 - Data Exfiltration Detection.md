@@ -5,6 +5,7 @@
 Access it <a href="https://tryhackme.com/room/dataexfildetection">here</a>.<br>
 <img width="1200px" src="https://github.com/user-attachments/assets/73d7e9c2-1af2-4841-bd32-e9c6d788bf46"></p>
 
+
 <h2>Task 1 . Introduction</h2>
 <p>Data exfiltration is the unauthorized transfer of sensitive data from a computer or other device. It's a primary objective for attackers who have breached a network. As a SOC analyst, our job is to detect and stop this before sensitive information walks out the door. This room will cover the common techniques attackers use to steal data and, more importantly, how we can catch them in the act.</p>
 
