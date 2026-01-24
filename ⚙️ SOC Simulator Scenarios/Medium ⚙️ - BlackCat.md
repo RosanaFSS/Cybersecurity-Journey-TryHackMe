@@ -2,7 +2,7 @@
 <p align="center"><img width="590px" src="https://github.com/user-attachments/assets/ef21c670-e8d2-4e5c-9209-8aae1dc7218b"><br>
 If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2023-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Overview](#1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Objectives](#2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Methodology](#3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Documentation](#4)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Practice](#5)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Overview](#1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Objectives](#2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Methodology](#3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Documentation](#4)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Practice](#5)
 
 <br>
 <br>
@@ -81,7 +81,7 @@ If you find it helpful, consider coming back for research.<br><p align="center">
 
 
 <br>
-<h1 align="center">Walkthrough Completed</h1>
+<h1 align="center">SOC Simulator Scenario Completed</h1>
 
 
 <p align="center"><img width="600px" src="https://github.com/user-attachments/assets/69d1d76d-e533-4c6c-b60c-5905d2b8ce19"><br>
@@ -124,7 +124,7 @@ If you find it helpful, consider coming back for research.<br><p align="center">
 
 </h6></div><br>
 
-<p align="center">Global All Time:     82ⁿᵈ<br><img width="250px" src="https://github.com/user-attachments/assets/e4999065-e83d-40ab-9c9d-3d7c679016ec"<br>
+<p align="center">Global All Time:     79ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/e4999065-e83d-40ab-9c9d-3d7c679016ec"<br>
                                               <img width="1200px" src="https://github.com/user-attachments/assets/692f5de2-9c9f-40c9-be3f-8e0a750e067c"><br><br>
                   Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/2822b3ba-d22e-492a-bacf-740ed59be1ce"><br><br>
                   Global monthly:     104ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/3141b866-570a-4afc-9648-42aafe785e42"><br><br>
@@ -132,8 +132,3 @@ If you find it helpful, consider coming back for research.<br><p align="center">
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-<img width="945" height="599" alt="image" src="https://github.com/user-attachments/assets/bef3aebe-75c6-43a3-8e59-64a48a71722c" />
-
-
