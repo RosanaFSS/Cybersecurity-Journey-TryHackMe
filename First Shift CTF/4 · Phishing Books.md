@@ -200,4 +200,4 @@ Answer Example: "CHECK=value"</em><br>
 
 <p>https://attack.mitre.org/groups/G0122/</p>
 
-<img width="1891" height="585" alt="image" src="https://github.com/user-attachments/assets/6dfa7123-ba33-422c-9709-afdcbab11914" 
+<img width="1891" height="585" alt="image" src="https://github.com/user-attachments/assets/6dfa7123-ba33-422c-9709-afdcbab11914" />
