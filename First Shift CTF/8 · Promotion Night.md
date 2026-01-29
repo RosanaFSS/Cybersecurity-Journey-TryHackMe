@@ -43,7 +43,8 @@ index=* cmd.exe
 
 <p>
 
-- 2025-10-24 16:37:38</p>
+- 2025-10-24 16:37:38<br>
+- 2025-10-24 16:47:24</p>
 
 ```bash
 index=* EventCode=13 "*gaze.exe"
@@ -57,33 +58,79 @@ index=* EventCode=13 "*gaze.exe"
 <br>
 <br>
 <p>8.3. <em>What was the most likely extension of the encrypted files?</em><br>
-<code>._______</code></p>
+<code>.danger17</code></p>
 
-```bash
-index=* "*gaze.exe"
-|  table _time, Description, OriginalFileName, CommandLine, TargetFileName
-|  sort by +_time
-```
+<p>
 
-```bash
-index=* "*gaze.exe"
-| table TargetFileName
-|  stats count by TargetFileName
-```
+- 2025-10-24 16:47:23</p>
 
+<img width="1896" height="892" alt="image" src="https://github.com/user-attachments/assets/c24eb9b1-1c3e-4da3-ad3e-4c2873da6237" />
 
+<br>
+<br>
+
+<img width="1894" height="889" alt="image" src="https://github.com/user-attachments/assets/da516f40-f825-475f-8324-313ba46cc5d2" />
+
+<br>
+<br>
 <br>
 <p>8.4. <em>Which MITRE technique ID was used to deploy ransomware?</em><br>
 <code>T1047</code></p>
+
+<p>
+
+- 2025-10-24 16:47:23</p>
+
+```bash
+index=* CommandLine!=""
+|  table _time, CommandLine, ParentCommandLine
+|  sort by +_time
+```
+<img width="1283" height="694" alt="image" src="https://github.com/user-attachments/assets/f9dac8f6-d046-433b-bb5b-8a1e007eda2a" />
+
+<br>
+<br>
 
 <img width="1890" height="510" alt="image" src="https://github.com/user-attachments/assets/12b30f53-f01d-4d0d-b8cb-dfad0f21dd66" />
 
 <br>
 <br>
+
+<img width="1794" height="118" alt="image" src="https://github.com/user-attachments/assets/139be43f-bfe6-40aa-85df-6dbdebc3626c" />
+
 <br>
-<p>8.5. <em>What ports of SRV-ITFS did the adversary successfully scan?</em>Specify via comma in the ascending order.</em><br>
+<br>
+<br>
+<p>8.5. <em>What ports of SRV-ITFS did the adversary successfully scan?</em> Specify via comma in the ascending order.</em><br>
 <code>135, 139, 445, 3389, 5985</code></p>
 
+<p>
+
+- 2025-10-24 16:25:29</p>
+
+```bash
+index=* CommandLine!="" "*net view SRV-ITFS"
+|  table _time, host, ProcessId, ParentProcessId, ParentCommandLine
+|  sort by +_time
+```
+
+<img width="1271" height="469" alt="image" src="https://github.com/user-attachments/assets/d715d08d-73e0-4903-9405-3cb1837b8887" />
+
+
+<br>
+<br>
+<br>
+
+```bash
+index=* SourceHostname="SRV-JMP.deceptitech.thm" DestinationHostname="ip-10-10-110-26.eu-west-1.compute.internal"
+|  stats count by DestinationPort, DestinationHostname
+|  sort by DestinationPort
+```
+
+<img width="1270" height="569" alt="image" src="https://github.com/user-attachments/assets/a634ca27-b0ac-442e-bf8e-0e642223f480" />
+
+<br>
+<br>
 <br>
 <p>8.6. <em>What is the full path to the malware that performed the Discovery?</em><br>
 <code>C:\Windows\System32\fr-FR\ruche.dll</code></p>
@@ -102,20 +149,31 @@ index=* "*gaze.exe"
 <br>
 <br>
 <p>8.8. <em>What is the MD5 hash of the embedded initial shellcode?</em><br>
-<code>____________________</code></p>
+<code>27B•••••••••••••••••••••••••••••</code></p>
 
-```bash
-index=* "_______" Hashes!=""
-| table CommandLine, Image, Hashes
-|  sort by +_time
-```
-   
+<p>reference: Djalil</p>
 
+<img width="1197" height="699" alt="Screenshot 2026-01-28 205030" src="https://github.com/user-attachments/assets/b8281f28-ab94-4966-8e41-696e87c9bfa4" />
+
+<br>
+<br>
+
+<img width="1191" height="498" alt="image" src="https://github.com/user-attachments/assets/cc62357b-ce2c-4dc4-a5f6-39d024cfcd29" />
+
+<br>
 <br>
 <p>8.9. <em>Which C2 framework was used by the adversary in the intrusion?</em><br>
 <code>Cobalt Strike</code></p>
 
+<img width="1865" height="881" alt="image" src="https://github.com/user-attachments/assets/b4f155a5-f301-492a-bd2c-d3b12c59e758" />
 
+<br>
+<br>
+
+<img width="1870" height="679" alt="image" src="https://github.com/user-attachments/assets/920fb93b-5cb8-41ce-ab69-eeb24167e793" />
+
+<br>
+<br>
 <br>
 <p>8.10. <em>What hostname did the adversary log in from on the beachhead?</em><br>
 <code>DESKTOP-J9PR0CO</code></p>
@@ -144,7 +202,9 @@ index=* "_______" Hashes!=""
 <p>8.13. <em>Which two sensitive files did the adversary exfiltrate from AWS?</em> Hint: Specify via comma in the alphabetic order.<br>
 <code>beta.tar.gz, latest.tar.gz</code></p>
 
+```bash
 index=* src_ip="152.42.128.207"  signature=GetObject | sort by +_time
+```
 
 <img width="1292" height="488" alt="image" src="https://github.com/user-attachments/assets/035f1480-d463-4b2f-8d4e-d3d9ea2039af" />
 
@@ -155,11 +215,6 @@ index=* src_ip="152.42.128.207"  signature=GetObject | sort by +_time
 <code>YOU-HAVE-BEEN-PWNED.txt</code></p>
 
 <img width="1283" height="664" alt="image" src="https://github.com/user-attachments/assets/529d51c5-35da-4253-840c-f848c3674d5c" />
-
-<br>
-<br>
-
-<img width="1289" height="438" alt="image" src="https://github.com/user-attachments/assets/201c2d65-63e6-4381-b829-f961b593e303" />
 
 <br>
 <br>
