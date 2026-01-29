@@ -5,7 +5,7 @@
 <p>You are on a shift, looking at the new alert coming from Imperium Labs - a company under MSSP monitoring long before you joined the team. It's hard to say what the company's primary focus is, but it has a global presence and undoubtedly has secrets to protect, especially those on heavily secured GitLab and Jira servers which store proprietary source code and project data.</p>
 
 <h2>The Alert</h2>
-<p>The alert you are looking at is called Reverse Shell Outbound Connection Detected, not something you see every day. Fortunately, you were able to obtain the raw PCAPs and Splunk logs for this event. Can you analyze the network traffic and logs to reconstruct and stop a sophisticated attack aimed at stealing the "Crown Jewel" data?</p>
+<p>The alert you are looking at is called <code>Reverse Shell Outbound Connection Detected</code>, not something you see every day. Fortunately, you were able to obtain the raw PCAPs and Splunk logs for this event. Can you analyze the network traffic and logs to reconstruct and stop a sophisticated attack aimed at stealing the "Crown Jewel" data?</p>
 
 <img width="1166" height="839" alt="image" src="https://github.com/user-attachments/assets/7940024e-a86d-4d9b-a3ef-7240215bcc29" />
 
@@ -50,10 +50,23 @@
 <p>7.4. <em>What is the non-standard User-Agent hitting the Jira instance?</em><br>
 <code>CVE-202X-EXPLOIT</code></p>
   
-<code>index=network_logs extracted_host=jira 
-|  sort by +_time</code></p>
+index=network_logs extracted_host=jira
+|  sort by +_time
 
 <img width="1261" height="292" alt="image" src="https://github.com/user-attachments/assets/779b62ac-f4de-46b7-88b4-e177f1162dcc" />
+
+<br>
+<br>
+
+<img width="1150" height="696" alt="image" src="https://github.com/user-attachments/assets/0cb7930e-7628-420e-b95f-e6939e410cc1" />
+
+<br>
+<br>
+
+index=network_logs extracted_host=jira   "event.agent"="CVE-202X-EXPLOIT" 
+| sort by +_time
+
+<img width="1147" height="638" alt="image" src="https://github.com/user-attachments/assets/5f60571e-c15c-4532-af5c-9fbd9ee4ebf2" />
 
 <br>
 <br>
@@ -63,8 +76,14 @@
 
 <br>
 <p>7.6. <em>What's the payload containing the plaintext creds found in the POST request?</em><br>
-<code>  </code></p>
+<code>username=dev_user&password=SecretPassword!</code></p>
 
+<img width="1248" height="570" alt="image" src="https://github.com/user-attachments/assets/faff1792-46bb-41a5-a6d0-bc0ca871db4e" />
+
+<br>
+<br>
+
+<img width="1235" height="473" alt="image" src="https://github.com/user-attachments/assets/2ae03baf-b167-4ef7-88a9-0d006ea605f0" />
 
 <br>
 <br>
@@ -86,6 +105,12 @@
 <code>dns</code></p>
 
 <img width="1295" height="748" alt="image" src="https://github.com/user-attachments/assets/2489d4cc-4114-4f0f-a08d-e4e859580a40" />
+
+<br>
+<br>
+
+<img width="1900" height="892" alt="image" src="https://github.com/user-attachments/assets/1a97bbd4-ee29-4fe4-8c5f-a40c3dd21b1f" />
+
 
 <br>
 <br>
