@@ -1,5 +1,5 @@
 <h1 align="center"><a href="https://tryhackme.com/room/cloudsecuritypitfalls">Cloud Security Pitfalls</a></h1>
-<p align="center">Explore the risks companies face when migrating to the cloud, and learn how to address them in a SOC.<br><br><img width="1200px" src=""><br>
+<p align="center">Explore the risks companies face when migrating to the cloud, and learn how to address them in a SOC.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/e78e4395-aa2e-46df-b6da-e06ccb4159c0"><br>
 If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2029-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
 
 <br>
@@ -46,6 +46,8 @@ Interestingly, TryHackMe also offers PaaS features, as you can create your own p
 
 <h3>SaaS</h3>
 <p>Software as a Service (SaaS) allows users and companies to launch complex applications in the cloud without installing any software on their computers. Slack, Zoom, Gmail, Dropbox, and Google Docs are among the thousands of SaaS offerings. Unlike the previous models, SaaS is always a final product that can be used by a non-technical audience. Let's see a comparison table below for a simpler understanding:</p>
+
+<h6 align="center"><img width="800px" src="https://github.com/user-attachments/assets/eb67694c-3472-444e-86b3-c12f592a9224"><br>This image and all the theoretical content of the present article is TryHackMe´s property.</h6>
 
 
 <p>It's fun to think about how you can combine the models. For example, if you develop a cat image generator, make it a public web service, and host it in AWS, you'll get SaaS on IaaS (or CataaS). What you should remember is that the "as a service" approach always implies some form of abstraction, where a maintenance burden is taken from you and delegated to a cloud service provider.</p>
@@ -159,11 +161,16 @@ Another issue is that people tend to apply their on-premises security practices 
 <p><em>Answer the questions below</em></em></p>
 
 <p>6.1. What is the flag you get after completing the first exercise?<br>
-<code>   </code></p>
+<code>THM{••••••••••••••••••}</code></p>
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/b896a8f2-9afb-4650-9c1e-09b63cae46ff"></h6>
+
 <br>
 <p>6.2. What is the flag you get after completing the second exercise?<br>
-<code>CWPP</code></p>
-<br>
+<code>THM{••••••••••••••••••••••••••}</code></p>
+
+<h6 align="center"><img width="1200px" src="https://github.com/user-attachments/assets/84b6c67a-a1db-43ad-a646-c058da2c7d5f"><br><br>
+                   <img width="1200px" src="https://github.com/user-attachments/assets/f91c0dae-d6ec-4191-98e6-e1cb61d719f4"></h6>
 
 <br>
 <h2>Task 7 . Conclusion</h2>
@@ -172,15 +179,13 @@ Another issue is that people tend to apply their on-premises security practices 
 
 <p>7.1. Complete the room!<br>
 <code>No answer needed</code></p>
-<br>
 
-
-<br>
 <br>
 <h1 align="center">Walkthrough Room Completed</h1>
 
-<p align="center"><img width="700px" src="https://github.com/user-attachments/assets/1a97bbd4-ee29-4fe4-8c5f-a40c3dd21b1f"><br>
-                  <img width="700px" src="https://github.com/user-attachments/assets/293b1a54-f4e8-4ea5-aa2f-d1ae36980a8e"></p>
+<p align="center"><img width="900px" src="https://github.com/user-attachments/assets/ff0d41b7-b291-41cf-9945-299843d14abb"><br>
+                  <img width="900px" src="https://github.com/user-attachments/assets/f5af401e-2b09-464f-b0f0-8fefbe0fe79d"><br>
+                  <img width="900px" src="https://github.com/user-attachments/assets/7102046a-3288-4f69-80e1-052c2133c98a"></p>
 
                 
 <h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
@@ -189,7 +194,7 @@ Another issue is that people tend to apply their on-premises security practices 
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|29     |Easy 🔗 - Cloud Security Pitfalls     |28|      61ˢᵗ  |     3ʳᵈ    |       66ᵗʰ   |        2ⁿᵈ     |    144,624  |    1,076    |    90     |    
+|29     |Easy 🔗 - Cloud Security Pitfalls     |28|      60ᵗʰ  |     3ʳᵈ    |       67ᵗʰ   |        2ⁿᵈ     |    144,704  |    1,075    |    90     |    
 |29     |Medium 🚩 - First Shift CTF           |28|      61ˢᵗ  |     3ʳᵈ    |       66ᵗʰ   |        2ⁿᵈ     |    144,624  |    1,075    |    90     |
 |27     |Medium 🔗 - GeoServer: CVE-2025-58360 |26 |     67ᵗʰ  |     3ʳᵈ    |       73ʳᵈ   |        2ⁿᵈ     |    144,174  |    1,074    |    90     |
 |26     |Medium 🚩 - First Shift CTF, in progress|25|    66ᵗʰ  |     3ʳᵈ    |       73ʳᵈ   |        2ⁿᵈ     |    144,102  |    1,073    |    90     |
@@ -225,11 +230,11 @@ Another issue is that people tend to apply their on-premises security practices 
 
 </h6></div><br>
 
-<p align="center">Global All Time:     61ˢᵗ<br><img width="250px" src="https://github.com/user-attachments/assets/d8d09c13-04f6-4a7a-9d81-160631af9c0e"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/c71db723-f0b0-4c0a-8aca-762fe878e23e"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/bc78c11a-43d5-48ab-932e-4ae9762620fd"><br><br>
-                  Global monthly:      66ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/e6627d0d-797b-43d3-a811-f875954c4d97"><br><br>
-                  Brazil monthly:       2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/19699f5c-481f-4609-bf0e-209191ccb787"></p>
+<p align="center">Global All Time:     60ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/1f7641b6-5ad9-487d-8058-0557bf52663e"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/80a32b64-23e8-440c-b0bb-b5a56f099e52"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/96ef053a-26ad-447d-9d85-d477fd4c042a"><br><br>
+                  Global monthly:      67ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7c3d5e68-3771-41e0-bbab-fdc79432008b"><br><br>
+                  Brazil monthly:       2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/283896ca-842e-47dd-8030-e136d9e15f35"></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p
