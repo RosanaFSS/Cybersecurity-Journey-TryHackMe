@@ -31,12 +31,37 @@ This is just the beginning. We'll be releasing more data soon. Stay tuned!
 <p><em>Answer the questions below</em></p>
 
 <p>1.1. Aside from Twitter / X, what other platform is used by v3n0mbyt3_? Answer in lowercase.<br>
-<code></code></p>
+<code>Threads</code></p>
 
 <br>
 <p>1.2. What is the value of the flag?<br>
 <code></code></p>
+<br>
 
+
+
+<img width="940" height="423" alt="image" src="https://github.com/user-attachments/assets/199f64ae-e7b3-4d42-9a12-dc2d3f5b07bc" />
+
+
+<br>
+<br>
+
+<img width="860" height="380" alt="image" src="https://github.com/user-attachments/assets/469ad2dc-a68c-4ed0-8e56-4ff544e16691" />
+
+
+
+<img width="752" height="450" alt="image" src="https://github.com/user-attachments/assets/4b0808cd-23a8-4958-95d6-25009fc6104d" />
+
+
+
+<img width="950" height="400" alt="image" src="https://github.com/user-attachments/assets/2aa5950f-f34a-4ac4-a706-9e24762d192d" />
+
+
+
+<img width="909" height="540" alt="image" src="https://github.com/user-attachments/assets/f3c5d3c5-4bfc-4582-8aa2-5092238c775d" />
+
+<br>
+<br>
 <br>
 <h2>Task 2 . The Sidekick</h2>
 
