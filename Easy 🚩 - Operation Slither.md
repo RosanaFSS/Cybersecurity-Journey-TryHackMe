@@ -1,7 +1,8 @@
 <h1 align="center"><a href="https://tryhackme.com/room/operationslitherIU">Operation Slither</a></h1>
-<p align="center">Follow the leads and find who's behind this operation.<br><br><img width="1200px" src=""><br>
+<p align="center">Follow the leads and find who's behind this operation.<br><br><img width="1200px" src="https://github.com/user-attachments/assets/96557a28-3437-44fc-abcc-aa7f5daa78b3"><br>
 If you find it helpful, consider coming back for research.<br><p align="center"><a href="https://github.com/RosanaFSS"><img src="https://img.shields.io/github/followers/RosanaFSS?label=Follow&style=for-the-badge&logo=github&color=24292e" alt="Follow Rosana on GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/COMPLETED-2026%2C%20JAN%2031-444444?style=for-the-badge&logo=calendar-check" alt="Completion Date"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/rosanafssantos/"><img src="https://img.shields.io/badge/Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p
 Follow the leads and find who's behind this operation.
+
 
 <br>
 <h2>Task 1 . The Leader</h2>
@@ -306,10 +307,12 @@ Contact me on REDACTED@protonmail.com
 <br>
 <h1 align="center">Challenge Completed</h1>
 
-<p align="center"><img width="900px" src=""><br>
-                  <img width="900px" src=""><br>
-                  <img width="900px" src=""></p>
-
+<p align="center"><img width="600px" src="https://github.com/user-attachments/assets/aa5a34a0-1ba2-45e6-88a9-c96561815e91"><br>
+                  <img width="600px" src="https://github.com/user-attachments/assets/1b37a231-5d72-418e-991b-e1b59cefd6a7"><br>
+                  <img width="600px" src="https://github.com/user-attachments/assets/4e515afe-f2bf-42e5-9e69-eefa99e0dbdc"><br>
+                  <img width="600px" src="https://github.com/user-attachments/assets/a365a0b7-3a8e-4306-98ca-b2c0d779e44c"><br>
+                  <img width="600px" src="https://github.com/user-attachments/assets/3eded7d0-1090-47b2-93bc-8bf5b96120a5"><br>
+                  <img width="600px" src="https://github.com/user-attachments/assets/7a84ee85-3849-4d64-888f-b81e99e2869c"></p>
                 
 <h1 align="center">My TryHackMe Journey ・ 2026, January</h1>
 
@@ -317,7 +320,7 @@ Contact me on REDACTED@protonmail.com
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|31     |Easy 🚩 - Operation Slither           |28|      61ˢᵗ  |     3ʳᵈ    |       66ᵗʰ   |        2ⁿᵈ     |    144,624  |    1,075    |    90     |
+|31     |Easy 🚩 - Operation Slither           |30|      61ˢᵗ  |     3ʳᵈ    |       66ᵗʰ   |        2ⁿᵈ     |    144,624  |    1,075    |    90     |
 |29     |Easy 🔗 - MS Entra ID: Introduction   |28|      58ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,333  |    1,077    |    90     |
 |29     |Medium 🔗 - Hashing 101               |28|      59ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,279  |    1,076    |    90     | 
 |29     |Hard ⚙️ - Initial Drift               |28|      59ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,279  |    1,075    |    90     | 
@@ -365,10 +368,3 @@ Contact me on REDACTED@protonmail.com
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
-
-
-
-
-
-
-
