@@ -320,7 +320,7 @@ Contact me on REDACTED@protonmail.com
 
 | Date<br><br>   | Room <br><br> |Streak<br><br>   |Global<br>All Time|Brazil<br>All Time|Global<br>Monthly|Brazil<br>Monthly|Points<br><br>|Rooms<br>Completed|Badges<br><br>|
 |:------:|:--------------------------------------|:--------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|31     |Easy 🚩 - Operation Slither           |30|      61ˢᵗ  |     3ʳᵈ    |       66ᵗʰ   |        2ⁿᵈ     |    144,624  |    1,075    |    90     |
+|31     |Easy 🚩 - Operation Slither           |30|      56ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,588  |    1,078    |    90     |
 |29     |Easy 🔗 - MS Entra ID: Introduction   |28|      58ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,333  |    1,077    |    90     |
 |29     |Medium 🔗 - Hashing 101               |28|      59ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,279  |    1,076    |    90     | 
 |29     |Hard ⚙️ - Initial Drift               |28|      59ᵗʰ  |     3ʳᵈ    |       59ᵗʰ   |        2ⁿᵈ     |    145,279  |    1,075    |    90     | 
@@ -360,11 +360,11 @@ Contact me on REDACTED@protonmail.com
 
 </h6></div><br>
 
-<p align="center">Global All Time:     60ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/1f7641b6-5ad9-487d-8058-0557bf52663e"><br>
-                                              <img width="1200px" src="https://github.com/user-attachments/assets/80a32b64-23e8-440c-b0bb-b5a56f099e52"><br><br>
-                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/96ef053a-26ad-447d-9d85-d477fd4c042a"><br><br>
-                  Global monthly:      67ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/7c3d5e68-3771-41e0-bbab-fdc79432008b"><br><br>
-                  Brazil monthly:       2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/283896ca-842e-47dd-8030-e136d9e15f35"></p>
+<p align="center">Global All Time:     56ᵗʰ<br><img width="250px" src="https://github.com/user-attachments/assets/09669085-dbda-4e78-97d1-6f92adde259d"><br>
+                                              <img width="1200px" src="https://github.com/user-attachments/assets/90603e73-d93c-4e3d-bfc3-ef518b2b9a55"><br><br>
+                  Brazil All Time:      3ʳᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/ad1d50fd-d0bc-421d-b2aa-35fd74b4d56f"><br><br>
+                  Global monthly:      39ᵗʰ<br><img width="1200px" src="https://github.com/user-attachments/assets/b1b7b311-979f-47ae-bf33-d8128354c9b5"><br><br>
+                  Brazil monthly:       2ⁿᵈ<br><img width="1200px" src="https://github.com/user-attachments/assets/611e8d9f-876e-46d0-b214-3b5bfffd021f"></p>
 
 <h1 align="center">Thanks for coming!</h1>
 <p align="center">Follow me on <a href="https://medium.com/@RosanaFS">Medium</a>, here on <a href="https://github.com/RosanaFSS/TryHackMe">GitHub</a>, and on <a href="https://www.linkedin.com/in/rosanafssantos/">LinkedIN</a>.</p>
