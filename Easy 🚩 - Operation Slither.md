@@ -35,7 +35,7 @@ This is just the beginning. We'll be releasing more data soon. Stay tuned!
 
 <br>
 <p>1.2. What is the value of the flag?<br>
-<code></code></p>
+<code>THM{••••••••••••••••••••••••••••••••••}</code></p>
 <br>
 
 
@@ -48,9 +48,20 @@ This is just the beginning. We'll be releasing more data soon. Stay tuned!
 
 <img width="860" height="380" alt="image" src="https://github.com/user-attachments/assets/469ad2dc-a68c-4ed0-8e56-4ff544e16691" />
 
+<br>
+<br>
 
 
 <img width="752" height="450" alt="image" src="https://github.com/user-attachments/assets/4b0808cd-23a8-4958-95d6-25009fc6104d" />
+
+<br>
+<br>
+
+
+<img width="1908" height="758" alt="image" src="https://github.com/user-attachments/assets/08b70195-4d3d-4bbc-b931-d31690073e69" />
+
+<br>
+<br>
 
 
 
@@ -90,7 +101,7 @@ You must register or log in to view this content
 <p><em>Answer the questions below</em></p>
 
 <p>2.1. What is the username of the second operator talking to v3n0mbyt3 from the previous platform?<br>
-<code>   </code></p>
+<code>_•••••••••••_</code></p>
 
 <br>
 <p>2.2. What is the value of the flag?<br>
